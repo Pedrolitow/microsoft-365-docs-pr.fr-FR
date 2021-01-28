@@ -3,70 +3,71 @@ title: Rapport de domaine non accepté dans le tableau de bord de flux de messag
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent apprendre à utiliser le rapport de domaine non accepté dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour surveiller les messages provenant de votre organisation locale où le domaine de l’expéditeur n’est pas configuré dans Microsoft 365.
-ms.openlocfilehash: 06acacb79c826cb465b3fd28086a7df9d64eabdc
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: Les administrateurs peuvent apprendre à utiliser le rapport de domaine non accepté dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller les messages provenant de votre organisation sur site où le domaine de l’expéditeur n’est pas configuré dans Microsoft 365.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 401d566158ca3f730af94fab60c471484e244a16
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877716"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029845"
 ---
-# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Rapport de domaine non accepté dans le centre de sécurité & conformité
+# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Rapport de domaine non accepté dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Le rapport de **domaine non accepté** dans le [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le [Centre de sécurité & conformité](https://protection.office.com) affiche des informations sur les messages provenant de votre organisation de messagerie locale où le domaine de l’expéditeur n’est pas configuré en tant que domaine accepté dans votre organisation 365 Microsoft.
+Le  rapport de domaine non [](mail-flow-insights-v2.md) accepté dans le tableau de bord de flux de messagerie du Centre de sécurité [&](https://protection.office.com) conformité affiche des informations sur les messages provenant de votre organisation de messagerie sur site où le domaine de l’expéditeur n’est pas configuré en tant que domaine accepté dans votre organisation Microsoft 365.
 
-Microsoft 365 peut limiter ces messages si nous disposons de données pour prouver que l’objectif de ces messages est malveillant. Par conséquent, il est important de comprendre ce qui se passe et de résoudre le problème.
+Microsoft 365 peut limiter ces messages si nous avons des données pour prouver que l’intention de ces messages est malveillante. Par conséquent, il est important que vous compreniez ce qui se passe et que vous corrigez le problème.
 
-![Widget domaine non accepté dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/mfi-non-accepted-domain-report-widget.png)
+![Widget de domaine non accepté dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-non-accepted-domain-report-widget.png)
 
 ## <a name="report-view-for-the-non-accepted-domain-report"></a>Affichage de rapport pour le rapport de domaine non accepté
 
-Si vous cliquez sur le graphique sur le widget de **domaine non accepté** , vous accédez au rapport de **domaine non accepté** .
+Cliquez sur le graphique sur le widget **de** domaine non accepté pour vous rendre dans le **rapport de domaine** non accepté.
 
-Par défaut, l’activité de tous les connecteurs concernés est affichée. Si vous cliquez sur **afficher les données pour** , vous pouvez sélectionner un connecteur spécifique dans la liste déroulante.
+Par défaut, l’activité de tous les connecteurs affectés est affichée. Si vous cliquez **sur Afficher les données pour**, vous pouvez sélectionner un connecteur spécifique dans ladown.
 
-Si vous placez le curseur de la souris sur un point de données (jour) dans le graphique, vous verrez le nombre total de messages pour le connecteur.
+Si vous pointez sur un point de données (jour) dans le graphique, vous verrez le nombre total de messages pour le connecteur.
 
-![Affichage de rapport dans le rapport de domaine non accepté](../../media/mfi-non-accepted-domain-report-overview-view.png)
+![Affichage du rapport dans le rapport de domaine non accepté](../../media/mfi-non-accepted-domain-report-overview-view.png)
 
-## <a name="details-table-view-for-the-non-accepted-domain-report"></a>Vue de la table Détails pour le rapport de domaine non accepté
+## <a name="details-table-view-for-the-non-accepted-domain-report"></a>Vue de table Détails pour le rapport de domaine non accepté
 
-Si vous cliquez sur **afficher la table des détails** dans un affichage de rapport, les informations suivantes s’affichent :
-
-- **Date**
-- **Nom du connecteur entrant**
-- **Domaine de l’expéditeur**
-- **Nombre de messages**
-- **Exemples de messages** : ID de message d’un exemple de messages concernés.
-
-Si vous cliquez sur **filtres** dans un affichage tableau détaillé, vous pouvez spécifier une plage de dates avec **Date de début** et date de **fin**.
-
-Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez sur **demander un téléchargement**.
-
-Lorsque vous sélectionnez une ligne dans le tableau, une fenêtre mobile apparaît avec les informations suivantes :
+Si vous cliquez **sur Afficher le tableau des détails** dans un affichage de rapport, les informations suivantes sont affichées :
 
 - **Date**
 - **Nom du connecteur entrant**
 - **Domaine de l’expéditeur**
 - **Nombre de messages**
-- **Exemples de messages** : vous pouvez cliquer sur **afficher les exemples de messages** pour afficher les résultats du [suivi](message-trace-scc.md) des messages pour un exemple des messages concernés.
+- **Exemples de messages**: ID de message d’un échantillon de messages affectés.
 
-![Menu volant des détails après la sélection d’une ligne dans la vue du tableau de détails dans le rapport de domaine non accepté](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
 
-Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
+Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez **sur Télécharger la demande.**
 
-## <a name="related-topics"></a>Rubriques connexes
+Lorsque vous sélectionnez une ligne dans le tableau, un flyout s’affiche avec les informations suivantes :
 
-Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+- **Date**
+- **Nom du connecteur entrant**
+- **Domaine de l’expéditeur**
+- **Nombre de messages**
+- **Exemples de messages**: vous pouvez cliquer sur Afficher les **exemples de messages** pour afficher les résultats du [suivi](message-trace-scc.md) des messages pour un échantillon des messages concernés.
+
+![Volant détails après sélection d’une ligne dans l’affichage Tableau Détails dans le rapport de domaine non accepté](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+
+Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport.**
+
+## <a name="related-topics"></a>Voir aussi
+
+Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

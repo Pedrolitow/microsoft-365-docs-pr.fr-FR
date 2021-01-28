@@ -3,58 +3,59 @@ title: Aperçu des messages transférés automatiquement
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: Les administrateurs peuvent en savoir plus sur le rapport de messages transférés automatiquement dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 28cb593d56d0b0054c8c8cbe4596d4f7df6442ab
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+description: Les administrateurs peuvent en savoir plus sur le rapport des messages transmis automatiquement dans le tableau de bord flux de messagerie du Centre de sécurité & conformité.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c892400152df15adb3dfeb0c747ed7fae034d3d6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920595"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029941"
 ---
-# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Aperçu des messages transmis automatiquement dans le centre de sécurité & conformité
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Informations sur les messages transmis automatiquement dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-La vue **messages transmis automatiquement** dans le [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de [sécurité & conformité](https://protection.office.com) affiche des informations sur les messages qui sont automatiquement transférés de votre organisation à des destinataires dans des domaines externes.
+Les informations sur les **messages** transmis automatiquement dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité affichent des informations sur les messages qui sont automatiquement transmis de votre organisation à des destinataires dans des [domaines](https://protection.office.com) externes. [](mail-flow-insights-v2.md)
 
-![Widget messages transférés automatiquement dans le centre de sécurité & conformité](../../media/mfi-auto-forwarded-messages.png)
+![Widget de messages transmis automatiquement dans le Centre de conformité & sécurité](../../media/mfi-auto-forwarded-messages.png)
 
-## <a name="auto-forwarded-messages-details"></a>Détails des messages transférés automatiquement
+## <a name="auto-forwarded-messages-details"></a>Détails des messages automatiquement transmis
 
-Lorsque vous cliquez sur le nombre de messages dans le widget, un volet flyout apparaît et affiche des informations supplémentaires sur les messages transférés automatiquement :
+Lorsque vous cliquez sur le nombre de messages dans le widget, un volet volant s’affiche, qui affiche plus d’informations sur les messages transmis automatiquement :
 
-- **Messages transférés automatiquement par les méthodes de transfert** :
+- **Les messages transmis automatiquement par les méthodes de forwarding**:
 
-  - **Par les règles de flux de messagerie**
-  - **Par les règles de boîte de réception**
-  - **Par transfert SMTP** : cette méthode indique le transfert automatique que les administrateurs peuvent configurer sur une boîte aux lettres, comme décrit dans [configurer le transfert du courrier pour une boîte aux lettres](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
-  - Un lien vers le [rapport de transfert](view-mail-flow-reports.md#forwarding-report) pour plus de détails.
+  - **Par règles de flux de messagerie**
+  - **Par règles de boîte de réception**
+  - **Par le forwarding SMTP**: cette méthode indique le forwarding automatique que les administrateurs peuvent configurer sur une boîte aux lettres comme décrit dans Configurer le forwarding de courrier pour [une boîte aux lettres.](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
+  - Lien vers le rapport [de report pour](view-mail-flow-reports.md#forwarding-report) plus d’informations.
 
-- **Messages transférés automatiquement par les domaines et les utilisateurs** :
+- **Messages transmis automatiquement par les domaines et les utilisateurs**:
 
-  - **5 principaux domaines transférés vers**
-  - **Nouveaux domaines (semaine dernière)**
-  - **Les 5 principaux utilisateurs de transfert**
+  - **5 principaux domaines vers**
+  - **Nouveaux domaines (dernière semaine)**
+  - **5 principaux utilisateurs de forwarding**
   - **Nouveaux utilisateurs (semaine dernière)**
-  - Un lien vers le [rapport des modifications de transfert](mfi-new-users-forwarding-email.md#forwarding-modifications-report) pour plus de détails.
+  - Lien vers le rapport [de modifications de report pour](mfi-new-users-forwarding-email.md#forwarding-modifications-report) plus d’informations.
 
-![Fenêtre mobile des détails pour le rapport de messages transférés automatiquement dans le centre de sécurité & conformité](../../media/mfi-auto-forwarded-messages-details.png)
+![Volant de détails pour le rapport des messages transmis automatiquement dans le Centre de sécurité & conformité](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>Informations
 
-Deux analyses sont générées en fonction des données de rapport :
+Deux informations sont générées en fonction des données du rapport :
 
-- [Nouveaux utilisateurs transférant le courrier électronique](mfi-new-users-forwarding-email.md)
-- [Nouveaux domaines en cours de transmission de courrier électronique](mfi-new-domains-being-forwarded-email.md)
+- [Nouveaux utilisateurs qui envoient du courrier électronique](mfi-new-users-forwarding-email.md)
+- [Nouveaux domaines en cours de envoi de courrier électronique](mfi-new-domains-being-forwarded-email.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

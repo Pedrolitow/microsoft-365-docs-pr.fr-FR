@@ -3,7 +3,7 @@ title: Stratégie de soumissions d’utilisateurs
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 28848908934057cc898eeca489cd2ee21f30692f
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988127"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029761"
 ---
 # <a name="user-submissions-policy"></a>Stratégie de soumissions d’utilisateurs
 
@@ -48,11 +48,11 @@ La livraison des messages signalés par l’utilisateur à une boîte aux lettre
 
 ## <a name="custom-mailbox-prerequisites"></a>Conditions préalables pour la boîte aux lettres personnalisée
 
-Utilisez les articles suivants pour configurer les conditions préalables requises afin que les messages signalés par l’utilisateur retournent dans votre boîte aux lettres personnalisée :
+Utilisez les articles suivants pour configurer les conditions préalables requises afin que les messages signalés par l’utilisateur se placent dans votre boîte aux lettres personnalisée :
 
 - Ignorez le filtrage du courrier indésirable sur la boîte aux lettres personnalisée en créant une règle de flux de messagerie Exchange pour définir le niveau de confiance du courrier indésirable. Voir [Utiliser le EAC](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) pour créer une règle de flux de messagerie qui définit le SCL d’un message pour définir le SCL sur **-1**.
 
-- Désactiver l’analyse des pièces jointes pour les programmes malveillants dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de pièces jointes sécurisées dans Defender pour [Office 365](set-up-atp-safe-attachments-policies.md) pour créer une stratégie de pièces jointes sécurisées avec le paramètre **Off** pour les pièces **jointes sécurisées réponse anti-programme** malveillant inconnue.
+- Désactiver l’analyse des pièces jointes pour les programmes malveillants dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de pièces jointes sécurisées dans Defender pour [Office 365](set-up-atp-safe-attachments-policies.md) pour créer une stratégie de pièces jointes sécurisées avec le paramètre **Off** for **Safe Attachments unknown malware response**.
 
 - Désactiver l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de liens sécurisés dans Defender pour [Office 365](set-up-atp-safe-links-policies.md) pour créer une stratégie de liens sécurisés avec le paramètre **« Sélectionner** l’action pour les URL potentiellement malveillantes **inconnues** dans les messages ».
 
@@ -88,7 +88,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
 2. Dans la page **Soumissions d’utilisateurs** qui s’affiche, sélectionnez l’une des options suivantes :
 
-   1. Activez la fonctionnalité Message de rapport pour **Outlook (recommandé)**: sélectionnez cette option si vous utilisez le add-in Report Message, le add-in Report Phishing ou la création de rapports intégrée dans Outlook sur le web, puis configurez les paramètres suivants :
+   1. Activez la fonctionnalité Message de rapport pour **Outlook (recommandé)**: sélectionnez cette option si vous utilisez le add-in Message de rapport, le module de signalement du hameçonnage ou la création de rapports intégrée dans Outlook sur le web, puis configurez les paramètres suivants :
 
       - **Personnalisez le message de confirmation de l’utilisateur final**: cliquez sur ce lien. Dans le **flyout personnaliser le message** de confirmation qui s’affiche, configurez les paramètres suivants :
 
@@ -98,7 +98,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
         > Votre courrier électronique sera envoyé tel qu’il est à Microsoft pour analyse. Certains e-mails peuvent contenir des informations personnelles ou sensibles.
 
-      - **Après l’envoi**: cliquez ![ sur Développer ](../../media/scc-expand-icon.png) l’icône . Dans  les zones De titre et de **confirmation,** entrez le texte descriptif que les utilisateurs voient après qu’ils ont publié un message à l’aide du add-in Signaler un message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi.
+      - **Après l’envoi**: cliquez ![ sur Développer ](../../media/scc-expand-icon.png) l’icône . Dans **les** zones De titre et de **confirmation,** entrez le texte descriptif que les utilisateurs voient après qu’ils ont publié un message à l’aide du module de signalement du message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi.
 
       Lorsque vous avez terminé, cliquez sur **Enregistrer**. Pour effacer ces valeurs, cliquez sur **Restaurer** sur la page **Soumissions de l’utilisateur.**
 
@@ -134,7 +134,7 @@ où SafetyAPIAction est l’une des valeurs d’un nombre integer suivantes :
 
 - 1 : Courrier indésirable
 - 2 : ne pas être indésirable
-- 3 : hameçonnage
+- 3 : Hameçonnage
 
 Dans l’exemple suivant :
 
@@ -146,4 +146,4 @@ Dans l’exemple suivant :
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
-Les messages qui ne suivent pas ce format ne s’afficheront pas correctement dans le portail soumissions.
+Les messages qui ne suivent pas ce format ne s’affichent pas correctement dans le portail Soumissions.

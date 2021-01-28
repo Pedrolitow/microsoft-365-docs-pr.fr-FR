@@ -14,19 +14,19 @@ ms.collection:
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble des expériences de rubrique.
-ms.openlocfilehash: decc1a3aa5535b4d8bc97dc7d6b010eedd395741
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: f01b28b8ca5b0352f05fecac810c3e651c663947
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976590"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029637"
 ---
 # <a name="topic-experiences-overview-preview"></a>Vue d’ensemble des expériences de rubrique (aperçu)
 
 > [!Note] 
 > Le contenu de cet article est pour la prévisualisation privée Project Private Preview. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
 
-Les expériences de rubrique utilisent la technologie Microsoft AI, Microsoft 365, Delve, Microsoft Graph, Search et d’autres composants et services pour créer un réseau de connaissances dans votre environnement Microsoft 365. 
+Les expériences de rubrique utilisent la technologie Microsoft AI, Microsoft 365, Microsoft Graph, la recherche et d’autres composants et services pour créer un réseau de connaissances dans votre environnement Microsoft 365. 
 
 </br>
 
@@ -38,7 +38,7 @@ Son objectif est de convertir les informations en connaissances et de les fourni
 
 Les expériences de rubrique permettent de résoudre un problème d’entreprise clé dans de nombreuses entreprises , en fournissant les informations aux utilisateurs lorsqu’ils en ont besoin. Par exemple, les nouveaux employés ont besoin d’apprendre beaucoup de nouvelles informations rapidement et de rencontrer des termes qu’ils ne connaissent pas lors de la lecture des informations de l’entreprise. Pour en savoir plus, l’utilisateur peut avoir besoin de s’éloigner de ce qu’il fait et de passer du temps précieux à rechercher des détails, tels que des informations sur ce qu’est le terme, qui dans l’organisation est un expert en la matière, et peut-être des sites et des documents liés au terme.
 
-Les expériences de rubrique utilisent l’IA pour rechercher et identifier automatiquement **les rubriques** de votre organisation. Il compile des informations les concernant, telles qu’une brève description, des experts techniques sur la rubrique, ainsi que des sites, des fichiers et des pages qui y sont associés. Un gestionnaire de connaissances ou un collaborateur peut choisir de mettre à jour les informations de la rubrique selon les besoins. Les rubriques sont accessibles à vos utilisateurs, ce qui signifie que pour chaque instance de la rubrique qui apparaît dans un site SharePoint moderne dans les actualités et les pages, le texte est mis en surbrillant. Les utilisateurs peuvent choisir de sélectionner la rubrique pour en savoir plus à ce sujet via les détails de cette rubrique. Vous pouvez également trouver des rubriques dans la recherche SharePoint.
+Les expériences de rubrique utilisent l’IA pour rechercher et identifier automatiquement **les rubriques** de votre organisation. Il compile les informations les concernant, telles qu’une brève description, les personnes qui travaillent sur la rubrique, ainsi que les sites, fichiers et pages qui y sont associés. Un gestionnaire de connaissances ou un collaborateur peut choisir de mettre à jour les informations de la rubrique selon les besoins. Les rubriques sont accessibles à vos utilisateurs, ce qui signifie que pour chaque instance de la rubrique qui apparaît dans un site SharePoint moderne dans les actualités et les pages, le texte est mis en surbrillant. Les utilisateurs peuvent choisir de sélectionner la rubrique pour en savoir plus à ce sujet via les détails de cette rubrique. Vous pouvez également trouver des rubriques dans la recherche SharePoint.
 
 
 ## <a name="how-topics-are-displayed-to-users"></a>Affichage des rubriques pour les utilisateurs
@@ -67,11 +67,11 @@ Les administrateurs de vos connaissances peuvent choisir d’analyser tous les s
 
 Lorsque vous utilisez les expériences Rubrique dans votre environnement Microsoft 365, vos utilisateurs auront les rôles suivants :
 
-- Visionneuse de rubriques : les utilisateurs qui pourront voir  les points forts de la rubrique sur les sites modernes SharePoint pour qui ils ont au moins un accès en lecture, et dans Microsoft Search (recherche Microsoft). Ils pourront sélectionner les points forts de la rubrique pour voir les détails des rubriques dans les pages de rubriques. Les visiteurs des rubriques pourront fournir des commentaires sur l’utilité d’une rubrique pour eux.
+- Visionneuse de rubriques : utilisateurs qui pourront voir les  points forts de la rubrique sur les sites modernes SharePoint à qui ils ont au moins un accès en lecture, et dans Microsoft Search (recherche Microsoft). Ils pourront sélectionner les points forts de la rubrique pour voir les détails des rubriques dans les pages des rubriques. Les visiteurs des rubriques pourront fournir des commentaires sur l’utilité d’une rubrique pour eux.
 
-- Collaborateurs : utilisateurs ayant le droit de modifier des rubriques existantes ou d’en créer de nouvelles. Les administrateurs du savoir attribuent des autorisations de collaborateur aux utilisateurs via les paramètres Expériences de rubrique dans le Centre d’administration Microsoft 365. Notez que vous pouvez également choisir de donner à tous les visiteurs des rubriques l’autorisation de modifier et de créer des rubriques afin qu’ils contribuent également aux rubriques qu’ils voient.
+- Collaborateurs : utilisateurs ayant le droit de modifier des rubriques existantes ou d’en créer de nouvelles. Les administrateurs du savoir attribuent des autorisations de collaborateur aux utilisateurs via les paramètres expériences de rubrique dans le Centre d’administration Microsoft 365. Notez que vous pouvez également choisir de donner à tous les visiteurs des rubriques l’autorisation de modifier et de créer des rubriques afin que tout le monde puisse contribuer aux rubriques qu’ils voient.
 
-- Gestionnaires de connaissances : utilisateurs qui guident des rubriques tout au long du cycle de vie des rubriques. Les gestionnaires de connaissances utilisent la page Gérer les rubriques dans le centre de **rubriques** pour confirmer ou supprimer des rubriques suggérées par l’IA, ainsi que pour modifier des rubriques existantes ou en créer de nouvelles, et sont les seuls utilisateurs qui y ont accès. Les administrateurs du savoir attribuent des autorisations de gestionnaire de connaissances aux utilisateurs via les paramètres d’administration Expériences de rubrique dans le Centre d’administration Microsoft 365. 
+- Gestionnaires de connaissances : utilisateurs qui guident des rubriques tout au long du cycle de vie de la rubrique. Les gestionnaires de connaissances utilisent la page Gérer les rubriques dans le centre de **rubriques** pour confirmer les rubriques suggérées par l’IA, supprimer les rubriques qui ne sont plus pertinentes, ainsi que modifier des rubriques existantes ou en créer de nouvelles, et sont les seuls utilisateurs qui y ont accès. Les administrateurs du savoir attribuent des autorisations de gestionnaire de connaissances aux utilisateurs via les paramètres d’administration Expériences de rubrique dans le Centre d’administration Microsoft 365. 
 
 - Administrateurs du savoir : les administrateurs du savoir configurer les expériences de rubrique et les gérer via les contrôles d’administration dans le Centre d’administration Microsoft 365. Actuellement, un administrateur général Microsoft 365 ou SharePoint peut faire office d’administrateur de connaissances.
 
@@ -85,7 +85,7 @@ Bien que tous les utilisateurs titulaires d’une licence puissent voir les rubr
 
 Les gestionnaires de connaissances pourront :
 
-- Confirmez ou rejetez les rubriques qui ont été découvertes dans votre client.
+- Confirmez ou supprimez les rubriques qui ont été découvertes dans votre client.
 - Créez de nouvelles rubriques manuellement selon vos besoins (par exemple, si les informations fournies ne sont pas suffisantes pour qu’elles soient découvertes via l’IA).
 - Modifier des pages de rubriques existantes.</br>
 
@@ -103,13 +103,13 @@ Les contrôles d’administration dans le Centre d’administration Microsoft 36
 - Contrôler les utilisateurs qui peuvent créer et modifier des rubriques dans le centre de rubriques.
 - Contrôler l’utilisateur qui pourra afficher les rubriques.
 
-Pour plus d’informations sur les [](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) contrôles d’administration, [](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)voir attribuer des autorisations aux [utilisateurs,](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)gérer la visibilité des rubriques et gérer la découverte de rubriques.
+Pour plus d’informations sur les [](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) contrôles d’administration, [](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)voir attribuer des autorisations aux [utilisateurs,](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)gérer la visibilité des rubriques et gérer la découverte des rubriques.
 
 ## <a name="topic-curation--feedback"></a>Informations sur la & sujet
 
 L’IA s’efforce continuellement de vous fournir des suggestions pour améliorer vos rubriques à mesure que des modifications se produisent dans votre environnement. 
 
-Les utilisateurs qui vous permettent d’accéder à des rubriques dans leur travail quotidien peuvent être invités à savoir si cette rubrique leur était utile. L’IA examine ces réponses et les utilise pour déterminer ce qui est affiché dans les résumés des rubriques et dans les détails des rubriques.
+Les utilisateurs qui vous permettent d’accéder à des rubriques dans leur travail quotidien peuvent être invités à savoir si cette rubrique leur était utile. Le système examine ces réponses et les utilise pour déterminer ce qui est affiché dans les résumés des rubriques et dans les détails des rubriques.
 
 Les utilisateurs qui ont des autorisations de modification ou de création de rubriques peuvent effectuer des mises à jour des pages de rubriques directement s’ils souhaitent apporter des corrections ou ajouter des informations supplémentaires. 
 

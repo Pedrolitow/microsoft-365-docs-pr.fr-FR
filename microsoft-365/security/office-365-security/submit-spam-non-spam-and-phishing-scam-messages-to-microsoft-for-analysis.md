@@ -3,12 +3,11 @@ title: Envoyer manuellement des messages à Microsoft pour analyse
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs et les utilisateurs finaux peuvent apprendre à envoyer des messages électroniques (messages électroniques de qualité marqués comme courriers indésirables ou indésirables autorisés) à Microsoft pour analyse.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94747b1d0a1aef746a63abada977aa47270ae4e2
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d5d3b7a51c39b85af8a6fae84f525da6d806789c
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865079"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029583"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Envoyer manuellement des messages à Microsoft pour analyse
 
@@ -65,7 +66,7 @@ Si vous recevez un message qui a été transmis par le biais du filtrage du cour
 3. Lorsque vous avez terminé, cliquez sur **Envoyer.**
 
 > [!TIP]
-> Les administrateurs ont plusieurs façons de bloquer des messages spécifiques qui sont identifiés comme courrier indésirable. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans EOP.](create-block-sender-lists-in-office-365.md)
+> Les administrateurs ont plusieurs façons de bloquer des messages spécifiques qui sont mal identifiés comme courrier indésirable. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans EOP.](create-block-sender-lists-in-office-365.md)
 
 ## <a name="submit-false-positives-to-microsoft"></a>Envoyer des faux positifs à Microsoft
 

@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e904eee5a132d271ec32ee99a19380463e53193
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: ee2e473f947f35d4f0d192005718a26e89590fab
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881772"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032656"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau géré Microsoft 
 
-Bureau géré Microsoft évalue régulièrement les appareils à inclure dans le service. Cet article décrit les conditions requises pour qu’un appareil soit inscrit au Bureau géré Microsoft et répertorie les appareils spécifiques actuellement pris en charge.
+Bureau géré Microsoft évalue régulièrement les appareils à inclure dans le service. Cet article répertorie les appareils spécifiques actuellement pris en charge. Pour obtenir une déclaration plus générale des conditions requises pour l’appareil, [consultez La demande de l’appareil.](device-requirements.md)
 
 Pour plus d’informations sur bureau géré Microsoft, voir la documentation et les ressources [de Bureau géré Microsoft.](https://docs.microsoft.com/microsoft-365/managed-desktop/) 
 
@@ -44,20 +44,20 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 | [Dell Latitude 7410 / 7410 2-en-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 19 mai 2022  | 19 mai 2025  |
 | [Dell Latitude 9410 2-en-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 5 mai 2022  | 5 mai 2025  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 5 mai 2022  | 5 mai 2025  |
-| [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 Go / Intel i3 / 8 Go de RAM | Aucun | 27 mai 2022  | 27 mai 2025  |
-| [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 Go / Intel i3 / 8 Go de RAM | Aucun | 15 mai 2022  | 15 mai 2025  |
-| [Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Aucun | 27 mai 2022  | 27 mai 2025  |
+| [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 Go / Intel i3 / 8 Go de RAM | Aucune | 27 mai 2022  | 27 mai 2025  |
+| [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 Go / Intel i3 / 8 Go de RAM | Aucune | 15 mai 2022  | 15 mai 2025  |
+| [Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Aucune | 27 mai 2022  | 27 mai 2025  |
 
 ### <a name="hp"></a>HP
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [ORDINATEUR portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
+| [PC portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [PC portable HP EliteBook x360 830 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS03AV | 31 juillet 2021 | 31 juillet 2024 |
 | [PC portable HP EliteBook x360 1030 / 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 8XW08AV | 31 août 2021 | 31 août 2024 |
 | [HP EliteFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 31 mars 2021 | 31 mars 2024 |
-| **\*[PC tout en un HP EliteOne 800 G6 24/27](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9XM14AV | 30 juin 2022 | 30 juin 2025 |
+| **\*[PC tout-en-un HP EliteOne 800 G6 24/27](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9XM14AV | 30 juin 2022 | 30 juin 2025 |
 | **\*[HP EliteDesk 800 G6 Desktop Mini PC](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!)** | 256 / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9XM14AV | 30 juin 2022 | 30 juin 2025 |
 | [Station de travail HP Z2 Mini G5](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 8QR48AV| 31 décembre 2021 | 31 décembre 2024 |
 | **\*[Station de travail mobile HP ZBook Firefly 14/15 G7](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ22AV, caméra IR requise | 30 novembre 2021 | 30 novembre 2024 |
@@ -66,12 +66,12 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 Go / Intel i5 / 8 Go de RAM | Aucun | 21 mai 2022 | 21 mai 2027 |
-| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 Go / Intel Core M3 / 8 Go de RAM | Aucun | 21 mai 2022 | 21 mai 2027 |
-| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 12 octobre 2022 | 12 octobre 2025 |
-| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
-| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
-| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 15 janvier 2022 | 15 janvier 2025 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 Go / Intel i5 / 8 Go de RAM | Aucune | 21 mai 2022 | 21 mai 2027 |
+| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 Go / Intel Core M3 / 8 Go de RAM | Aucune | 21 mai 2022 | 21 mai 2027 |
+| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 12 octobre 2022 | 12 octobre 2025 |
+| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 22 octobre 2021 | 22 octobre 2024 |
+| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 22 octobre 2021 | 22 octobre 2024 |
+| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 15 janvier 2022 | 15 janvier 2025 |
 
 En outre, l’appareil doit également répondre aux critères suivants :     
 

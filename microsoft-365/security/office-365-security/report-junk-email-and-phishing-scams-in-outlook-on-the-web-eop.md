@@ -1,116 +1,117 @@
 ---
-title: Signaler les messages de courrier indésirable et de hameçonnage dans Outlook sur le Web
+title: Signaler le courrier indésirable et le hameçonnage dans Outlook sur le web
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent découvrir les options de notification de courrier indésirable, non légitime et de hameçonnage dans Outlook sur le Web (Outlook Web App) dans Exchange Online et comment désactiver ces options de création de rapports pour les utilisateurs.
-ms.openlocfilehash: 0032e807961aed60128d6863899ae0de32d1a627
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Les administrateurs peuvent en savoir plus sur les options intégrées de signalement de courrier indésirable, non indésirable et de hameçonnage dans Outlook sur le web (Outlook Web App) dans Exchange Online, et comment désactiver ces options de rapport pour les utilisateurs.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 0af57aceed608ae80e72e3ae18724925c1168e26
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659308"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029209"
 ---
-# <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Signaler le courrier indésirable et de hameçonnage dans Outlook sur le Web dans Exchange Online
+# <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Signaler le courrier indésirable et le hameçonnage dans Outlook sur le web dans Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online, vous pouvez utiliser les options de création de rapports intégrées dans Outlook sur le Web (anciennement Outlook Web App) pour soumettre des faux positifs (courrier électronique marqué comme courrier indésirable), des faux négatifs (courrier incorrect autorisé) et des messages de hameçonnage vers Exchange Online Protection (EOP).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online, vous pouvez utiliser les options de rapport intégrées dans Outlook sur le web (anciennement Outlook Web App) pour envoyer des faux positifs (courrier électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Si vous êtes administrateur d’une organisation avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail d’envoi du centre de sécurité & conformité. Pour plus d’informations, consultez la rubrique [utiliser la soumission de l’administrateur pour envoyer des courriers indésirables, des hameçons, des URL et des fichiers à Microsoft](admin-submission.md).
+- Si vous êtes un administrateur d’une organisation ayant des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail Soumissions dans le Centre de sécurité & conformité. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
-- Les administrateurs peuvent désactiver ou activer la possibilité pour les utilisateurs de signaler des messages à Microsoft dans Outlook sur le Web. Pour plus d’informations, consultez la section [désactiver ou activer la création de rapports de courrier indésirable dans Outlook sur le Web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) plus loin dans cet article.
+- Les administrateurs peuvent désactiver ou activer la possibilité pour les utilisateurs de signaler des messages à Microsoft dans Outlook sur le web. Pour plus d’informations, voir la section Désactiver ou activer la signalement du courrier indésirable [dans Outlook sur](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) le web plus loin dans cet article.
 
-- Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, consultez la rubrique [User submissions Policies](user-submission.md).
+- Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)
 
-- Pour plus d’informations sur la création de rapports de messages à Microsoft, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
+- Pour plus d’informations sur la notification des messages à Microsoft, voir [Signaler des messages et des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
-## <a name="report-spam-and-phishing-messages-in-outlook-on-the-web"></a>Signaler les messages de courrier indésirable et de hameçonnage dans Outlook sur le Web
+## <a name="report-spam-and-phishing-messages-in-outlook-on-the-web"></a>Signaler le courrier indésirable et le hameçonnage dans Outlook sur le web
 
-1. Pour les messages de la boîte de réception ou de tout autre dossier de messagerie, à l’exception du courrier indésirable, utilisez l’une des méthodes suivantes pour signaler les messages de courrier indésirable et de hameçonnage :
+1. Pour les messages dans la boîte de réception ou tout autre dossier de courrier électronique à l’exception du courrier indésirable, utilisez l’une des méthodes suivantes pour signaler le courrier indésirable et les messages de hameçonnage :
 
-   - Sélectionnez le message, cliquez sur **courrier indésirable** dans la barre d’outils, puis sélectionnez **courrier indésirable** ou **hameçonnage**.
+   - Sélectionnez le message, cliquez **sur Courrier** indésirable dans la barre d’outils, puis **sélectionnez** Courrier indésirable ou **Hameçonnage.**
 
-     ![Signaler le courrier indésirable ou de hameçonnage à partir du ruban](../../media/owa-report-junk.png)
+     ![Signaler le courrier indésirable ou le hameçonnage à partir du ruban](../../media/owa-report-junk.png)
 
-   - Sélectionnez un ou plusieurs messages, cliquez dessus avec le bouton droit, puis sélectionnez **marquer comme courrier indésirable**.
+   - Sélectionnez un ou plusieurs messages, cliquez avec le bouton droit, puis **sélectionnez Marquer comme courrier indésirable.**
 
-2. Dans la boîte de dialogue qui s’affiche, cliquez sur **rapport**. Si vous changez d’avis, cliquez sur **ne pas signaler**.
+2. Dans la boîte de dialogue qui s’affiche, cliquez sur **Rapport.** Si vous changez d’avis, cliquez sur **Ne pas signaler.**
 
-   |Filtre|Hameçonnage|
+   |Courrier indésirable|Hameçonnage|
    |:---:|:---:|
-   |![Boîte de dialogue signaler comme courrier indésirable](../../media/owa-report-as-junk-dialog.png)|![Boîte de dialogue signaler en tant que hameçonnage](../../media/owa-report-as-phishing-dialog.png)|
+   |![Boîte de dialogue Signaler comme courrier indésirable](../../media/owa-report-as-junk-dialog.png)|![Boîte de dialogue Signaler comme hameçonnage](../../media/owa-report-as-phishing-dialog.png)|
 
-3. Les messages sélectionnés seront envoyés à Microsoft pour analyse. Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
+3. Les messages sélectionnés sont envoyés à Microsoft pour analyse. Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
 
-## <a name="report-non-spam-and-phishing-messages-from-the-junk-email-folder-in-outlook-on-the-web"></a>Signaler les messages de courrier indésirable et de hameçonnage dans le dossier courrier indésirable dans Outlook sur le Web
+## <a name="report-non-spam-and-phishing-messages-from-the-junk-email-folder-in-outlook-on-the-web"></a>Signaler les messages de courrier non indésirable et de hameçonnage à partir du dossier Courrier indésirable dans Outlook sur le web
 
-1. Dans le dossier courrier indésirable, utilisez l’une des méthodes suivantes pour signaler les fausses alertes de courrier indésirable ou les messages de hameçonnage :
+1. Dans le dossier Courrier indésirable, utilisez l’une des méthodes suivantes pour signaler les faux positifs du courrier indésirable ou les messages de hameçonnage :
 
-   - Sélectionnez le message, cliquez sur **légitime** dans la barre d’outils, puis sélectionnez **pas de courrier indésirable** ou de **hameçonnage**.
+   - Sélectionnez le message, cliquez **sur Ne** pas courrier indésirable dans la barre d’outils, puis sélectionnez Ne pas être indésirable **ou** **Hameçonnage.**
 
-     ![Signaler le courrier indésirable ou ne pas faire de hameçonnage à partir du ruban](../../media/owa-report-not-junk.png)
+     ![Signaler le courrier électronique non indésirable ou non de hameçonnage à partir du ruban](../../media/owa-report-not-junk.png)
 
-   - Sélectionnez un ou plusieurs messages, cliquez dessus avec le bouton droit, puis sélectionnez **marquer comme légitime**.
+   - Sélectionnez un ou plusieurs messages, cliquez avec le bouton droit, puis **sélectionnez Marquer comme courrier indésirable.**
 
-2. Dans la boîte de dialogue qui s’affiche, lisez les informations, puis cliquez sur **rapport**. Si vous changez d’avis, cliquez sur **ne pas signaler**.
+2. Dans la boîte de dialogue qui s’affiche, lisez les informations et cliquez sur **Rapport.** Si vous changez d’avis, cliquez sur **Ne pas signaler.**
 
-   |Courrier légitime|Hameçonnage|
+   |Non indésirable|Hameçonnage|
    |:---:|:---:|
-   |![Boîte de dialogue signaler comme légitime](../../media/owa-report-as-not-junk-dialog.png)|![Boîte de dialogue signaler en tant que hameçonnage](../../media/owa-report-as-phishing-dialog.png)|
+   |![Boîte de dialogue Signaler comme courrier indésirable](../../media/owa-report-as-not-junk-dialog.png)|![Boîte de dialogue Signaler comme hameçonnage](../../media/owa-report-as-phishing-dialog.png)|
 
-3. Les messages sélectionnés seront envoyés à Microsoft pour analyse. Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
+3. Les messages sélectionnés sont envoyés à Microsoft pour analyse. Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
 
-## <a name="disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Désactiver ou activer la création de rapports de courrier indésirable dans Outlook sur le Web
+## <a name="disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Désactiver ou activer les rapports de courrier indésirable dans Outlook sur le web
 
-Par défaut, les utilisateurs peuvent signaler des faux positifs de courrier indésirable, des faux négatifs et des messages de hameçonnage à Microsoft pour analyse dans Outlook sur le Web. Les administrateurs peuvent configurer les stratégies de boîte aux lettres Outlook sur le Web dans Exchange Online PowerShell pour empêcher les utilisateurs de signaler les faux positifs de courrier indésirable et les faux négatifs de courrier indésirable à Microsoft. Vous ne pouvez pas désactiver la possibilité pour les utilisateurs de signaler les messages de hameçonnage à Microsoft.
+Par défaut, les utilisateurs peuvent signaler des faux positifs, des faux négatifs et des messages de hameçonnage à Microsoft pour analyse dans Outlook sur le web. Les administrateurs peuvent configurer des stratégies de boîte aux lettres Outlook sur le web dans Exchange Online PowerShell pour empêcher les utilisateurs de signaler des faux positifs et des faux négatifs de courrier indésirable à Microsoft. Vous ne pouvez pas désactiver la possibilité pour les utilisateurs de signaler des messages de hameçonnage à Microsoft.
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Pour pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans Exchange Online. Vous avez spécifiquement besoin des rôles **stratégies de destinataire** ou **destinataires de messagerie** , qui sont affectés par défaut aux groupes de rôles gestion de l' **organisation** et **gestion des destinataires** . Pour plus d’informations sur les groupes de rôles dans Exchange Online, consultez la rubrique [autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) et [modifier les groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
+- Des autorisations doivent vous être attribuées dans Exchange Online avant de pouvoir suivre les procédures de cet article. Plus précisément,  vous avez besoin des **rôles Stratégies** des  destinataires ou Destinataires de messagerie, qui sont attribués par défaut aux groupes de rôles Gestion de l’organisation et Gestion des destinataires.  Pour plus d’informations sur les groupes de rôles dans Exchange Online, voir [Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) et Modifier les groupes de [rôles dans Exchange Online.](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)
 
-- Chaque organisation a une stratégie par défaut nommée OwaMailboxPolicy-default, mais vous pouvez créer des stratégies personnalisées. Les stratégies personnalisées sont appliquées aux utilisateurs délimités avant la stratégie par défaut. Pour plus d’informations sur les stratégies de boîte aux lettres Outlook sur le Web, consultez [la rubrique relative aux stratégies de boîte aux lettres Outlook sur le Web dans Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies).
+- Chaque organisation possède une stratégie par défaut nommée OwaMailboxPolicy-Default, mais vous pouvez créer des stratégies personnalisées. Les stratégies personnalisées sont appliquées aux utilisateurs d’étendue avant la stratégie par défaut. Pour plus d’informations sur les stratégies de boîte aux lettres Outlook sur le web, consultez stratégies de boîte aux lettres [Outlook sur le web dans Exchange Online.](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies)
 
-- La désactivation de la création de rapports de courrier indésirable ne supprime pas la possibilité de marquer un message comme indésirable ou légitime dans Outlook sur le Web. Si vous sélectionnez un message dans le dossier courrier indésirable et que vous cliquez sur **légitime** , le \>  message est renvoyé dans la boîte de réception. Le fait de sélectionner un message dans un autre dossier de messagerie et **de cliquer sur courrier** indésirable \>  déplace le message dans le dossier courrier indésirable. Ce qui n’est plus disponible est la possibilité de signaler le message à Microsoft.
+- La désactivation de la signalement du courrier indésirable ne supprime pas la possibilité de marquer un message comme courrier indésirable ou non indésirable dans Outlook sur le web. La sélection d’un message dans  le dossier Courrier indésirable et le fait de cliquer sur Ne pas courrier indésirable déplace toujours le \>  message dans la boîte de réception. La sélection d’un message dans  un autre dossier de courrier électronique et le fait de cliquer sur Courrier indésirable déplace toujours le message dans le \>  dossier Courrier indésirable. Ce qui n’est plus disponible, c’est la possibilité de signaler le message à Microsoft.
 
-### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Utiliser Exchange Online PowerShell pour désactiver ou activer la création de rapports de courrier indésirable dans Outlook sur le Web
+### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Utiliser Exchange Online PowerShell pour désactiver ou activer les rapports de courrier indésirable dans Outlook sur le web
 
-1. Pour rechercher vos stratégies de boîte aux lettres Outlook sur le Web et l’état de la création de rapports de courrier indésirable, exécutez la commande suivante :
+1. Pour rechercher vos stratégies de boîte aux lettres Outlook sur le web existantes et l’état des rapports de courrier indésirable, exécutez la commande suivante :
 
    ```powershell
    Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
    ```
 
-2. Pour désactiver ou activer la création de rapports de courrier indésirable dans Outlook sur le Web, utilisez la syntaxe suivante :
+2. Pour désactiver ou activer la signalement du courrier indésirable dans Outlook sur le web, utilisez la syntaxe suivante :
 
    ```powershell
    Set-OwaMailboxPolicy -Identity "<OWAMailboxPolicyName>" -ReportJunkEmailEnabled <$true | $false>
    ```
 
-   Cet exemple désactive la création de rapports de courrier indésirable dans la stratégie par défaut.
+   Cet exemple désactive le signalement du courrier indésirable dans la stratégie par défaut.
 
    ```powershell
    Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
    ```
 
-   Cet exemple active la création de rapports de courrier indésirable dans la stratégie personnalisée nommée Contoso managers.
+   Cet exemple active la création de rapports de courrier indésirable dans la stratégie personnalisée nommée Responsables Contoso.
 
    ```powershell
    Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
@@ -120,7 +121,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
-Pour vérifier que vous avez bien activé ou désactivé la création de rapports de courrier indésirable dans Outlook sur le Web, procédez comme suit :
+Pour vérifier que vous avez bien activé ou désactivé le signalement du courrier indésirable dans Outlook sur le web, utilisez l’une des étapes suivantes :
 
 - Dans Exchange Online PowerShell, exécutez la commande suivante et vérifiez la valeur de la propriété **ReportJunkEmailEnabled** :
 
@@ -128,13 +129,13 @@ Pour vérifier que vous avez bien activé ou désactivé la création de rapport
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- Ouvrez la boîte aux lettres d’un utilisateur concerné dans Outlook sur le Web, sélectionnez un message dans la boîte de réception **, cliquez sur** \> **courrier indésirable** et vérifiez que l’invite de signalement du message à Microsoft est ou non affichée.<sup>\*</sup>
+- Ouvrez la boîte aux lettres d’un utilisateur affecté dans Outlook  sur le web, sélectionnez un message dans la boîte de réception, cliquez sur Courrier indésirable et vérifiez que l’invite de signalement du message à Microsoft est ou n’est \>  pas affichée.<sup>\*</sup>
 
-- Ouvrez la boîte aux lettres d’un utilisateur concerné dans Outlook sur le Web, sélectionnez un message dans le dossier courrier indésirable **, cliquez sur courrier indésirable** \>  et vérifiez que l’invite de signalement du message à Microsoft est ou non affichée.<sup>\*</sup>
+- Ouvrez la boîte aux lettres d’un utilisateur affecté dans Outlook  sur le web, sélectionnez un message dans le dossier Courrier indésirable, cliquez sur Courrier indésirable et vérifiez que l’invite de signalement du message à Microsoft est ou n’est \>  pas affichée.<sup>\*</sup>
 
-<sup>\*</sup> Les utilisateurs peuvent masquer l’invite de signalement du message tout en continuant à signaler le message. Pour vérifier ce paramètre dans Outlook sur le Web, procédez comme suit :
+<sup>\*</sup> Les utilisateurs peuvent masquer l’invite de signalement du message tout en le signalant. Pour vérifier ce paramètre dans Outlook sur le web :
 
-1. Cliquez sur **paramètres** ![ Outlook sur l’icône Paramètres du site Web ](../../media/owa-settings-icon.png) \> **Afficher tous les paramètres Outlook** \> **courrier indésirable**.
-2. Dans la section **création de rapports** , vérifiez la valeur : **me demander avant d’envoyer un rapport**.
+1. Cliquez **sur l’icône Paramètres** ![ Outlook sur le web Icône Afficher tous les ](../../media/owa-settings-icon.png) \> **paramètres Outlook Courrier** \> **indésirable.**
+2. Dans la section **Création de** rapports, vérifiez la valeur : **Demandez-moi avant d’envoyer un rapport.**
 
-   ![Paramètres Outlook sur le courrier indésirable pour le courrier indésirable](../../media/owa-junk-email-reporting-options.png)
+   ![Paramètres de création de rapports de courrier indésirable Outlook sur le web](../../media/owa-junk-email-reporting-options.png)

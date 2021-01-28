@@ -14,12 +14,12 @@ ms.collection:
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: Découvrez comment trouver des ressources pour expériences de rubrique.
-ms.openlocfilehash: a9069b8723cb23a406fcce3b96a53b3de2a07568
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976178"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029607"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>Présentation des expériences de rubrique (prévisualisation)
 
@@ -43,8 +43,8 @@ Les ressources de cette section vous aident à en savoir plus sur les expérienc
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
-|En savoir plus sur la compréhension de document|[Vue d’ensemble des expériences de rubrique](topic-experiences-overview.md)|
-|Découvrez comment les rubriques sont découvertes et créées par l’IA|[Découverte des expériences de rubrique](topic-experiences-discovery.md)|
+|En savoir plus sur les expériences de rubrique|[Vue d’ensemble des expériences de rubrique](topic-experiences-overview.md)|
+|Découvrez comment les rubriques sont découvertes et suggérées par l’IA|[Découverte des expériences de rubrique](topic-experiences-discovery.md)|
 |En savoir plus sur la sécurité des rubriques|[Rubrique Expériences de sécurité et de confidentialité](topic-experiences-security-privacy.md)|
 
 

@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent afficher les questions fréquemment posées et les réponses sur les messages mis en quarantaine dans Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 58ddb5847706aef3d2c3b8ea8cd9a96fd65a9b3d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794411"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032600"
 ---
 # <a name="quarantined-messages-faq"></a>FAQ sur les messages mis en quarantaine
 
@@ -72,16 +73,39 @@ Les administrateurs peuvent utiliser les cmdlets [Get-QuarantineMessage](https:/
 
 Les caractères génériques ne sont pas pris en charge dans le Centre de sécurité & conformité. Par exemple, lorsque vous recherchez un expéditeur, vous devez spécifier l’adresse de messagerie complète. Toutefois, vous pouvez utiliser des caractères génériques dans Exchange Online PowerShell ou EOP PowerShell autonome.
 
-Par exemple, exécutez la commande suivante pour rechercher les messages de courrier indésirable mis en quarantaine de tous les expéditeurs dans le domaine contoso.com :
+Par exemple, copiez le code PowerShell suivant dans le Bloc-notes et enregistrez le fichier en tant que fichier .ps1 dans un emplacement facile à trouver (par exemple, C:\Data\QuarantineRelease.ps1).
+
+Ensuite, après vous être connecté à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) ou [Exchange Online Protection PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)exécutez la commande suivante pour exécuter le script :
 
 ```powershell
-$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
+& C:\Data\QuarantineRelease.ps1
 ```
 
-Ensuite, exécutez la commande suivante pour libérer ces messages à tous les destinataires d’origine :
+Le script fait les actions suivantes :
+
+- Recherchez les messages non publiés qui ont été mis en quarantaine comme courrier indésirable de tous les expéditeurs dans le domaine fabrikam. Le nombre maximal de résultats est de 50 000 (50 pages de 1 000 résultats).
+- Enregistrez les résultats dans un fichier CSV.
+- Libérer les messages mis en quarantaine correspondants à tous les destinataires d’origine.
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+$Page = 1
+$List = $null
+
+Do
+{
+Write-Host "Getting Page " $Page
+
+$List = (Get-QuarantineMessage -Type Spam -PageSize 1000 -Page $Page | where {$_.Released -like "False" -and $_.SenderAddress -like "*fabrikam.com"})
+Write-Host "                     " $List.count " rows in this page match"
+Write-Host "                                                             Exporting list to appended CSV for logging"
+$List | Export-Csv -Path "C:\Data\Quarantined Message Matches.csv" -Append -NoTypeInformation
+
+Write-Host "Releasing page " $Page
+$List | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+
+$Page = $Page + 1
+
+} Until ($Page -eq 50)
 ```
 
 Après avoir publié un message, vous ne pouvez plus le libérer.
