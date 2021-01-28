@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Découvrez comment les établissements financiers peuvent gérer la conformité de la sécurité financière et collaborer efficacement à l’aide de Microsoft 365 et Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 1d1c3886a38636e7e72774f8b2bb5ce574d1c7a6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558477"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029953"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 
@@ -319,7 +319,7 @@ Microsoft 365 a récemment lancé une solution de gestion des risques internes 
 
 Par exemple, la gestion des risques internes dans Microsoft 365 peut corréler les signaux à partir du bureau Windows 10 d’un utilisateur, par exemple, copier des fichiers sur un lecteur USB ou envoyer un courrier électronique à un compte de courrier personnel, avec des activités de services en ligne tels que la messagerie Office 365, SharePoint Online, Microsoft Teams, ou OneDrive Entreprise, pour identifier les modèles d’exfiltration des données. Elle peut également mettre en corrélation ces activités avec des employés quittant une organisation (modèle d’exfiltration de données courant). Elle peut surveiller plusieurs activités et comportements au fil du temps. Lorsque des modèles courants émergent, ils peuvent déclencher des alertes et aider les examinateurs à se concentrer sur les activités clés afin de vérifier une violation de stratégie avec un haut niveau de confiance. La gestion des risques internes peut permettre de pseudo-anonymiser les données des enquêteurs pour les aider à respecter la réglementation sur la protection des données, tout en faisant apparaître les activités clés qui les aident à mener efficacement leurs examens. Il permet aux enquêteurs de regrouper et d'envoyer en toute sécurité les données d'activités clés aux services des ressources humaines et juridiques, en suivant des procédures de flux de travail d'escalade communes pour le déclenchement d’actions de correction.
 
-La gestion des risques internes dans Microsoft 365 augmente considérablement les capacités des organisations à surveiller et à identifier les risques internes, tout en permettant aux organisations de respecter les réglementations en matière de confidentialité et de suivre les conditions d’escalade établies dans les cas vous avez besoin d’une action de niveau supérieur.
+La gestion des risques internes dans Microsoft 365 augmente considérablement les capacités des organisations à surveiller et à identifier les risques internes, tout en permettant aux organisations de respecter les réglementations en matière de confidentialité et de suivre les conditions d’escalade établies dans les cas vous avez besoin d’une action de niveau supérieur. Pour plus d’informations sur la gestion des risques internes dans Microsoft 365, consultez [Points de faibles en matière de risques modernes et Flux de travail dans la gestion des risques internes dans Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide).
 
 ![Un collaborateur d’un centre d’appels dans les types d’emplacements de bureau pendant l’affichage d’un écran.](../media/clo17-call-center-006.jpg)
  

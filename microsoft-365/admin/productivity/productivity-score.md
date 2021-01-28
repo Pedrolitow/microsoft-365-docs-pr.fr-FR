@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de niveau de productivité Microsoft.
-ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921241"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988067"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 
@@ -80,13 +80,14 @@ Pour les données sur les expériences des personnes, vous avez besoin d’un ab
 
 La note de productivité est disponible uniquement dans le Centre d’administration Microsoft 365 et ne peut être consultée que par les professionnels de l’informatique qui ont l’un des rôles suivants :  
 
-- Administrateur général 
+- Administrateur général
 - Administrateurs Exchange
-- Administrateur SharePoint 
-- Administrateur Skype Entreprise 
-- Administrateur Teams 
-- Lecteur général 
-- Lecteur de rapports 
+- Administrateur SharePoint
+- Administrateur Skype Entreprise
+- Administrateur Teams
+- Lecteur général
+- Lecteur de rapports
+- Lecteur Rapports de synthèse de l’utilisation
 
 > [!NOTE]
 > Seul un professionnel de l’informatique ayant le rôle Administrateur général peut s’inscrire à un client ou accepter un client pour le niveau de productivité.
