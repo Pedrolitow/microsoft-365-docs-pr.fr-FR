@@ -10,7 +10,6 @@ audience: ITPro
 ms.topic: how-to
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment supprimer des utilisateurs du portail des utilisateurs restreints dans Office 365. Les utilisateurs sont ajoutés au portail Utilisateurs restreints pour avoir envoyé du courrier indésirable sortant, généralement en raison de la compromission d’un compte.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 779e769b76299edf9b6d205f64bed4738f2f2499
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683045"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988191"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Retirer les utilisateurs bloqués du portail Utilisateurs restreints dans Office 365
 
@@ -71,7 +72,7 @@ Les administrateurs peuvent supprimer des utilisateurs du portail Expéditeurs r
 5. Cliquez sur **Oui** pour confirmer la modification.
 
    > [!NOTE]
-   > L’opération peut prendre jusqu’à 30 minutes avant la suppression des restrictions.
+   > La suppression de toutes les restrictions de l’utilisateur peut prendre jusqu’à 24 heures.
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Vérifier les paramètres d’alerte pour les utilisateurs restreints
 
