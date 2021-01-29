@@ -1,5 +1,5 @@
 ---
-title: Se connecter à Microsoft 365 pour les campagnes
+title: Connectez-vous à Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,24 +22,26 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Connectez-vous à Microsoft 365 pour les campagnes. Protégez votre campagne contre les menaces Cybersecurity pour la messagerie, les données et la communication.
-ms.openlocfilehash: a11db9a16718d435842508504d7e7f0cba5df898
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: Connectez-vous à Microsoft 365. Protégez votre entreprise, pratique ou campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
+ms.openlocfilehash: d2bc0ddbfbc839f1b389b844544f33c444012fb4
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131987"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044203"
 ---
-# <a name="sign-in-to-microsoft-365-for-campaigns"></a>Se connecter à Microsoft 365 pour les campagnes
+# <a name="sign-in-to-microsoft-365"></a>Connectez-vous à Microsoft 365
 
-## <a name="for-campaign-admins"></a>Pour les administrateurs de campagne
-Si vous vous êtes inscrit à Microsoft 365 pour les campagnes, vous êtes administrateur 365 Microsoft. Voici comment vous connecter : 
-1. Recherchez le nom d’utilisateur et le mot de passe que nous avons envoyés à l’adresse de messagerie que vous nous avez indiquée à l’étape 2 de la [procédure d’inscription](m365-campaigns-sign-up.md#steps-to-sign-up).
-2. Dans le navigateur, accédez au centre d’administration Microsoft 365 à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> . 
+## <a name="for-business-or-campaign-admins"></a>Pour les administrateurs d’entreprise ou de campagne
+
+Si vous vous êtes inscrit à Microsoft 365, vous êtes l’administrateur Microsoft 365. Voici comment vous inscrire :
+
+1. Recherchez le nom d’utilisateur et le mot de passe que nous avons envoyés à l’adresse de messagerie que vous nous avez donnée à l’étape 2 des étapes [d’inscription.](m365-campaigns-sign-up.md#steps-to-sign-up)
+2. Dans le navigateur, allez au Centre d’administration Microsoft 365 à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
 3. Tapez votre nom d’utilisateur et votre mot de passe. Sélectionnez **Se connecter**.
-4. Dans le coin supérieur droit de la page, recherchez l' **aperçu sur** contrôle. Sélectionnez **Aperçu activé** afin que vous puissiez utiliser tous les contrôles décrits dans la section renforcement de la [protection de votre campagne](m365-campaigns-security-overview.md).
+4. En haut à droite de la page, recherchez **l’aperçu sur le** contrôle. Sélectionnez **l’aperçu** afin de pouvoir utiliser tous les contrôles décrits dans La protection de haut [en haut pour votre campagne.](m365-campaigns-security-overview.md)
 
-## <a name="for-campaign-staff"></a>Pour le personnel de campagne
-Configurez le personnel de campagne comme décrit dans la rubrique [Ajouter des utilisateurs](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) vous pouvez également réinitialiser et renvoyer des mots de passe sur la page **Ajouter des utilisateurs** .
-Tous les membres de l’équipe peuvent se connecter à <a href="https://office.com" target="_blank">https://Office.com</a> .
+## <a name="for-staff"></a>Pour le personnel
 
+Configurer le personnel comme décrit dans [Ajouter](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) des utilisateurs Vous pouvez également réinitialiser et renvoyer des mots de passe sur la page Ajouter **des** utilisateurs.
+Tous les membres du personnel peuvent se connecter à <a href="https://office.com" target="_blank">https://Office.com</a> l':.

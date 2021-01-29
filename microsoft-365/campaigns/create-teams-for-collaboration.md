@@ -23,67 +23,73 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un espace de collaboration pour votre équipe avec Microsoft Teams.
-ms.openlocfilehash: 7a07b7b90f5c89f6b1c6a6dd17145ca11af5dfa6
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: b30bf495dfbf6d510eab9a7d783d343d6b9476a6
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245844"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044681"
 ---
-# <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Création de teams pour la collaboration dans Microsoft teams
+# <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Créer des équipes pour la collaboration dans Microsoft Teams
 
-Microsoft teams est une application de collaboration qui permet à votre personnel de rester organisé et d’avoir des conversations, depuis n’importe quel appareil. Vous pouvez utiliser Microsoft teams pour effectuer des conversations instantanées avec des membres de votre équipe ou des invités externes à votre organisation. Vous pouvez également passer des appels téléphoniques, héberger des réunions et partager des fichiers.
+Microsoft Teams est une application de collaboration qui permet à votre personnel de rester organisé et d’avoir des conversations, à partir de n’importe quel appareil. Vous pouvez utiliser Microsoft Teams pour avoir des conversations instantanées avec des membres de votre personnel ou des invités extérieurs à votre organisation. Vous pouvez également effectuer des appels téléphoniques, héberger des réunions et partager des fichiers.
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
-Par exemple, les campagnes peuvent créer les équipes suivantes pour communiquer et collaborer en toute sécurité :
+1. Créer des équipes privées pour les informations sensibles.
+1. Créez une équipe à l’échelle de l’organisation pour communiquer avec tous les membres de votre organisation.
+1. Créez des équipes pour des projets spécifiques et appliquez le niveau de protection qui convient en fonction des personnes qui doivent être incluses.
+1. Créez des équipes spécifiques pour la communication avec des partenaires externes afin de les séparer de tout ce qui est sensible pour votre entreprise.
 
-1. **Une équipe de chefs de campagne :** Configurez-le en tant qu’équipe privée de sorte que seuls les membres clés de votre campagne puissent y accéder et discuter des préoccupations potentielles.
-2. **Une équipe de campagne générale :** Cela est destiné à tous les utilisateurs à utiliser pour les communications quotidiennes et pour le travail. Des personnes, des groupes ou des comités peuvent configurer des canaux dans cette équipe pour effectuer leur travail. Par exemple, l’événement planification des personnes peut configurer un canal pour la conversation et coordonner la logistique pour les événements de campagne.
-3. **Une équipe partenaires :** Il s’agit d’une équipe dans laquelle vous pouvez vous coordonner avec vos fournisseurs, partenaires ou volontaires, sans les rendre sensibles.
+Par exemple, une entreprise, un cabinet d’avocats ou un cabinet de soins de santé peut créer les équipes suivantes :
 
-Vous pouvez également créer des équipes pour des projets spécifiques et appliquer le niveau de protection approprié en fonction de ce qui doit être inclus. 
+1. **Une équipe professionnelle, d’entreprise** ou à l’échelle de la pratique : Il s’agit pour tout le monde d’utiliser pour les communications au jour le jour et le travail au sein de votre entreprise. Vous pouvez utiliser cette équipe pour publier des annonces ou partager des informations d’intérêt pour l’ensemble de votre entreprise ou de votre pratique.
+1. **Équipes individuelles :** Configurer des équipes pour que des groupes plus petits collaborent sur leur travail quotidien.
+1. **Une équipe ou une équipe de communication externe :** Coordonnez-vous avec vos fournisseurs, partenaires ou clients sans leur permettre d’entrer en ligne de compte. Configurer différents canaux pour des groupes spécifiques.
 
-![Diagramme d’une fenêtre Microsoft teams avec trois équipes distinctes pour permettre la collaboration et la communication sécurisées](../media/m365-democracy-teams-collab.png)
+![Diagramme d’une fenêtre Microsoft Teams avec trois équipes distinctes permettant une communication et une collaboration sécurisées au sein d’une entreprise](../media/m365-democracy-teams-business-collab.png)
 
-Lorsque vous créez une équipe, voici ce que d’autres éléments sont créés :
+Les campagnes peuvent également créer les équipes suivantes pour communiquer et collaborer en toute sécurité :
+
+1. **Une équipe de directeurs de campagne :** Définissez-la en tant qu’équipe privée afin que seuls les membres de votre campagne clé y accèdent et discutent des problèmes potentiellement sensibles.
+2. **Une équipe de campagne générale :** Tout le monde peut l’utiliser pour les communications et le travail au quotidien. Les individus, les groupes ou les comités peuvent configurer des canaux dans cette équipe pour faire leur travail. Par exemple, les personnes qui planifient des événements peuvent configurer un canal pour discuter et coordonner la logistique des événements de campagne.
+3. **Une équipe partenaire :** Coordonnez-vous avec vos fournisseurs, partenaires ou volontaires sans leur permettre d’entrer en ligne de compte.
+
+![Diagramme d’une fenêtre Microsoft Teams avec trois équipes distinctes permettant une communication et une collaboration sécurisées au sein d’une campagne](../media/m365-democracy-teams-collab.png)
+
+Lorsque vous créez une équipe, voici les autres choses qui sont créées :
 
 - Un nouveau [groupe Microsoft 365](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- Un site [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) et une bibliothèque de documents pour stocker les fichiers de l’équipe
-- Une boîte aux lettres et un calendrier partagés [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)
+- Un site [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) et une bibliothèque de documents pour stocker des fichiers d’équipe
+- Une boîte aux lettres et un calendrier [partagés Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)
 - Un bloc-notes OneNote
-- Est lié à d’autres applications Office 365 telles que Planner et Power BI
+- Liens vers d’autres applications Office 365 telles que Le Planificateur et Power BI
 
-Dans Microsoft Teams, vous trouverez les éléments suivants :
-1. **Teams :** Recherchez les canaux auxquels vous pouvez appartenir ou créer votre propre canal. Les canaux internes peuvent contenir des réunions sur place, avoir des conversations et partager des fichiers.
+À l’intérieur de Microsoft Teams, vous pouvez trouver :
 
-2. **Réunions :** Découvrez tous les éléments que vous avez alignés pour le jour ou la semaine. Ou, planifiez une réunion. Ce calendrier est synchronisé avec votre calendrier Outlook.
- 
-3. **Appels :** Dans certains cas, si elle est configurée dans votre organisation, vous pouvez appeler tout le monde à partir de Microsoft Teams, même s’ils n’utilisent pas Microsoft Teams.
+1. **Teams :** Recherchez les canaux dont vous avez besoin ou créez vos propres canaux. À l’intérieur des canaux, vous pouvez organiser des réunions sur site, avoir des conversations et partager des fichiers.
+2. **Réunions :** Consultez tout ce que vous avez aligné pour le jour ou la semaine. Vous aussi, planifier une réunion. Ce calendrier se synchronise avec votre calendrier Outlook.
+3. **Appels :** Dans certains cas, si votre organisation l’a définie, vous pouvez appeler n’importe qui à partir de Microsoft Teams, même s’il n’utilise pas Microsoft Teams.
+4. **Activité :** Lisez tous vos messages non lus, vos @mentions, vos réponses, etc.
 
-4. **Activité :** Rattrapez-vous sur tous vos messages non lus, @mentions, réponses et bien plus encore. 
-
-Utilisez la zone commande en haut pour rechercher des éléments ou des personnes spécifiques, prendre des actions rapides et lancer des applications.
-
+Utilisez la zone de commande en haut pour rechercher des éléments ou des personnes spécifiques, effectuer des actions rapides et lancer des applications.
 
 ## <a name="set-it-up"></a>Configuration
 
-
-Créez une équipe privée pour le responsable de la campagne et le candidat comme celui-ci. 
+Créez une équipe privée pour le propriétaire et les responsables de l’entreprise, ou le responsable de campagne et le candidat comme celui-ci.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 
-Créez une équipe à l’échelle de l’organisation que tout le monde peut utiliser pour communiquer et partager des fichiers.
+Créez une équipe à l’échelle de l’organisation que tous les membres de l’entreprise ou de la campagne peuvent utiliser pour communiquer et partager des fichiers.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 
-Créez une équipe que vous partagez avec des invités en dehors de la campagne, comme une publicité de financement.
+Créez une équipe que vous partagez avec des invités extérieurs à votre organisation, par exemple pour les publicités ou les finances.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-En savoir plus sur Microsoft teams dans [la documentation technique Microsoft teams](https://docs.microsoft.com/microsoftteams/microsoft-teams)
+En savoir plus sur Microsoft Teams sur [la documentation technique de Microsoft Teams](https://docs.microsoft.com/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>Paramètres d’administration
 
-Vous devez être administrateur pour créer une équipe à l’échelle de l’organisation. Pour plus d’informations, voir [qu’est-ce qu’un administrateur dans Microsoft 365 ?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
-  
+Vous devez être un administrateur pour créer une équipe à l’échelle de l’organisation. Pour plus d’informations, [voir Qu’est-ce qu’un administrateur dans Microsoft 365 ?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)

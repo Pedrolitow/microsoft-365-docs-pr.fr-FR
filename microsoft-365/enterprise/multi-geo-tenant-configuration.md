@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Dans cet article, découvrez l’ajout d’emplacements satellites et la configuration de votre client pour Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 4276d8ff70fed99e74f2cbab29386c81da06d17b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689778"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040567"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuration de client multigéographique dans Microsoft 365
 
@@ -110,7 +110,10 @@ Nous vous recommandons d’inclure la configuration de l’emplacement des donn�
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Configuration de OneDrive et l’effet de PDL
 
-Si l’utilisateur possède déjà un site OneDrive créé dans le client, configurer son emplacement des données par défaut ne déplace pas automatiquement son OneDrive existant. Pour déplacer le OneDrive d’un utilisateur, consultez [Déplacement de OneDrive Entreprise multigéographique](move-onedrive-between-geo-locations.md) et suivez les instructions permettant de déplacer OneDrive entre deux emplacements géographiques. (Notez que la boîte aux lettres Exchange de l’utilisateur ne se déplace automatiquement que lorsque vous configurez l’emplacement des données par défaut de l’utilisateur.)
+Si l’utilisateur possède déjà un site OneDrive créé dans le client, configurer son emplacement des données par défaut ne déplace pas automatiquement son OneDrive existant. Pour déplacer le OneDrive d’un utilisateur, voir [OneDrive](move-onedrive-between-geo-locations.md)Entreprise Geo Move .
+
+> [!NOTE]
+> Exchange Online relocalise automatiquement la boîte aux lettres de l’utilisateur si le PLD change et que MailboxRegion ne correspond plus au code d’emplacement géographique de la base de données de boîtes aux lettres. Pour plus d’informations, [voir Administration des boîtes aux lettres Exchange Online dans un environnement multigéogé.](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)
 
 Si l’utilisateur ne dispose pas d’un site OneDrive dans le client, OneDrive est approvisionné pour lui conformément à la valeur de son emplacement des données par défaut en supposant que ce dernier correspond à l’un des emplacements satellites de l’entreprise.
 

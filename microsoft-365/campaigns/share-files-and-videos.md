@@ -24,49 +24,48 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Partagez des fichiers et des vidéos à l’intérieur de votre campagne avec Microsoft teams et SharePoint.
-ms.openlocfilehash: d8f9df1befe720dbcd2affc56ff02f29c037216b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: Partagez des fichiers et des vidéos au sein de votre campagne avec Microsoft Teams et SharePoint.
+ms.openlocfilehash: d6d168c196a8571cab86a1be57f5b26782bc4d3f
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132011"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044179"
 ---
 # <a name="share-files-and-videos"></a>Partager des fichiers et des vidéos
 
-Lorsque vous avez besoin de contrôler les personnes autorisées à visualiser et qui peuvent modifier vos fichiers, vous devez stocker les fichiers dans un emplacement sécurisé, où vous pouvez vous assurer que les autorisations sont appliquées de manière appropriée. Vous pouvez utiliser Microsoft teams pour stocker vos fichiers, puis partager les fichiers à l’intérieur ou à l’extérieur de votre campagne en utilisant Microsoft teams ou en envoyant des liens SharePoint. L’envoi d’un lien plutôt que d’une pièce jointe à un message signifie que vous pouvez identifier les personnes qui visualisent et modifier les fichiers et qu’elles ne peuvent pas être affichées ou modifiées sans votre autorisation. 
+Lorsque vous devez contrôler qui peut afficher et modifier vos fichiers, vous devez stocker les fichiers dans un emplacement sécurisé, où vous pouvez vous assurer que les autorisations sont appliquées correctement. Vous pouvez utiliser Microsoft Teams pour stocker vos fichiers, puis partager les fichiers à l’intérieur ou à l’extérieur de votre entreprise, pratique ou campagne à l’aide de Microsoft Teams ou en envoyant des liens SharePoint. L’envoi d’un lien plutôt qu’une pièce jointe signifie que vous savez qui affiche et modifie les fichiers, et qu’ils ne peuvent pas être affichés ou modifiés sans votre autorisation.
 
-![Diagramme d’une fenêtre Microsoft Teams, affichant l’onglet fichiers et obtenir un lien dans le menu](../media/m365-democracy-teams-sharefiles.png)
+![Diagramme d’une fenêtre Microsoft Teams, avec l’onglet Fichiers et le lien Obtenir dans le menu](../media/m365-democracy-teams-sharefiles.png)
 
-Avec vos fichiers dans Microsoft teams et SharePoint, vous pouvez également travailler sur les fichiers et passer en revue les modifications apportées par chacun d’eux. Utiliser Microsoft teams pour partager des fichiers au sein d’une campagne politique. Si vous devez partager de manière externe avec des personnes en dehors de la campagne, vous pouvez les ajouter en tant qu’invités à une équipe ou leur envoyer un lien SharePoint sécurisé.
+Avec vos fichiers dans Microsoft Teams et SharePoint, vous pouvez également travailler sur les fichiers ensemble et passer en revue les modifications apportées les uns aux autres. Utilisez Microsoft Teams pour partager des fichiers au sein d’une entreprise, d’une pratique ou d’une campagne. Si vous devez partager en externe avec des personnes extérieures à votre organisation, vous pouvez les ajouter en tant qu’invités à une équipe ou leur envoyer un lien SharePoint sécurisé.
 
-Vous pouvez également utiliser Microsoft Stream pour stocker et partager des vidéos pour votre campagne. Ces vidéos ne sont pas consultables par le public afin d’être idéales pour la messagerie de campagne interne.
+Vous pouvez également utiliser Microsoft Stream pour stocker et partager des vidéos en interne. Ces vidéos ne sont pas consultables par le public et sont donc idéales pour la messagerie de campagne interne.
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
-Utilisez ces méthodes pour partager des fichiers et des vidéos en toute sécurité :
+Utilisez ces méthodes pour partager des fichiers et des vidéos en toute sécurité :
 
-1. Stockez les fichiers dans Microsoft teams ou SharePoint, et assurez-vous que seules les personnes qui ont besoin d’accéder à ces fichiers le sont. 
-2. Lorsque vous souhaitez partager des fichiers, ne les joignez pas à un message électronique. Au lieu de cela, choisissez **obtenir le lien** de Microsoft teams ou SharePoint et envoyez le lien dans le message électronique.
-3. Pour partager un fichier en externe, ajoutez l’utilisateur en tant qu’invité à votre équipe, ou utilisez SharePoint pour obtenir un lien sécurisé afin de partager uniquement ce fichier.
-4. Utilisez Microsoft Stream pour héberger les vidéos que votre campagne doit voir. 
-5. Utilisez Microsoft teams ou SharePoint pour stocker les fichiers vidéo dont votre équipe a besoin pour collaborer ou partager.
+1. Stockez des fichiers dans Microsoft Teams ou SharePoint et assurez-vous que seules les personnes qui ont besoin d’accéder à ces fichiers en ont.
+2. Lorsque vous souhaitez partager, ne joignez pas de fichiers à un e-mail. Au lieu de cela, choisissez **Obtenir un lien** à partir de Microsoft Teams ou SharePoint et envoyez le lien par courrier électronique.
+3. Pour partager un fichier en externe, ajoutez l’utilisateur en tant qu’invité à votre équipe ou utilisez SharePoint pour obtenir un lien sécurisé pour partager uniquement ce fichier.
+4. Utilisez Microsoft Stream pour héberger des vidéos que vous souhaitez voir dans votre campagne.
+5. Utilisez Microsoft Teams ou SharePoint pour stocker les fichiers vidéo sur qui votre équipe doit collaborer ou partager.
 
- 
 ## <a name="set-up"></a>Configurer
 
-Pour créer une équipe et y ajouter des invités, comme des annonceurs ou des partenaires de financement, procédez comme suit.
+Pour créer une équipe et y ajouter des invités, tels que des annonceurs ou des partenaires partenaires, suivez ces étapes.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Pour partager un lien sécurisé avec un invité, sans utiliser Microsoft Teams, procédez comme suit :
+Pour partager un lien sécurisé avec un invité, sans utiliser Microsoft Teams, suivez ces étapes.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
 
-Pour créer et partager des vidéos, procédez comme suit.
+Pour créer et partager des vidéos, suivez ces étapes.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-Téléchargez un infographie au [format PDF](https://go.microsoft.com/fwlink/?linkid=2079435) ou [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) pour obtenir une vue d’ensemble rapide des moyens de partager vos fichiers.
+Téléchargez une infographie au [format PDF](https://go.microsoft.com/fwlink/?linkid=2079435) ou [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) pour obtenir une vue d’ensemble rapide des méthodes de partage de vos fichiers.
 
-[![Illustration de partage de fichiers avec différents utilisateurs](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![Illustration du partage de fichiers avec différents utilisateurs](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

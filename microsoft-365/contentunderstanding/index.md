@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment rechercher des ressources pour Microsoft SharePoint Syntex.
-ms.openlocfilehash: 558559efc0387eebb1be7a57c8f7c3aeacfc149e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 02f3da4e03d13b0710590336e49292ac6df70560
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975726"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044755"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Présentation de Microsoft SharePoint Syntex
 
@@ -72,7 +72,7 @@ Les ressources de cette section permettent à vos utilisateurs d’apprendre à 
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
-|Découvrez comment utiliser les modèles|[Créer un centre de contenu](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[Créer un classificateur](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[Créer un extracteur](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[Créer un modèle de traitement de formulaire](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[Types d’explications](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[Appliquer un modèle de compréhension de document](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[En savoir plus sur les modèles de présentation des documents via le modèle d’exemple](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
+|Découvrez comment utiliser les modèles|[Créer un centre de contenu](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[Créer un classificateur](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[Créer un extracteur](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[Créer un modèle de traitement de formulaire](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[Types d’explications](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview)<br><br>[Appliquer un modèle de compréhension de document](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[En savoir plus sur les modèles de présentation des documents via le modèle d’exemple](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
 |Appliquer une étiquette de rétention à votre modèle|[Appliquer une étiquette de rétention à un modèle de compréhension de document](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |Utiliser la taxonomie de la banque de termes de gestion des métadonnées gérées lors de la création d’un extracteur|[Utiliser la taxonomie de la banque de termes lors de la création d’un extracteur](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |Découvrir comment voir les données relatives à vos modèles|[Analyse de l’utilisation des modèles](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|

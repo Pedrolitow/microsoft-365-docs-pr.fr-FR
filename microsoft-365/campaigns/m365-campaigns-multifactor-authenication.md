@@ -23,22 +23,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Configurez l’authentification multifacteur.
-ms.openlocfilehash: feb0a4be07b09ed3e8f00c6d19edca3355f374ab
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: Configurer l’authentification multifacteur.
+ms.openlocfilehash: 35f96bc41eba9a903bdb3d377a523e2b82e8c428
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131953"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044431"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multifacteur.
 
-L’authentification multifacteur offre davantage de sécurité pour votre entreprise. Une fois que votre administrateur a besoin d’utiliser l’authentification multifacteur, vous pouvez configurer l’application Microsoft Authenticator pour vous permettre de vous connecter à des applications clés en toute sécurité avec votre téléphone. 
+L’authentification multifacteur offre une sécurité renforcée pour votre entreprise. Une fois que votre administrateur vous a demandé d’utiliser l’authentification MFA, vous pouvez configurer l’application Microsoft Authenticator pour vous laisser vous connecter à des applications clés en toute sécurité avec votre téléphone. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Pour plus d’informations, consultez la rubrique [configuration de l’authentification multifacteur dans Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+Pour plus d’informations, [voir Configurer l’authentification multifacteur dans Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
-## <a name="use-the-outlook-app-in-your-devices"></a>Utiliser l’application Outlook dans vos appareils
+## <a name="use-the-outlook-app-in-your-devices"></a>Utiliser l’application Outlook sur vos appareils
 
-Une fois que votre administrateur a besoin d’utiliser l’authentification multifacteur et que vous avez configuré une application d’authentificateur en tant que deuxième forme d’authentification, nous vous recommandons d’installer et d’utiliser uniquement l’application Outlook pour accéder à votre messagerie Microsoft 365 pour les campagnes. Pour plus d’informations sur l’installation des applications Office, y compris Outlook, sur votre téléphone, consultez la rubrique [set up Mobile Devices](../business/set-up-mobile-devices.md) .
+Une fois que votre administrateur vous a demandé d’utiliser l’authentification multifacteur et que vous avez installé une application d’authentification comme second type d’authentification, nous vous recommandons d’installer et d’utiliser uniquement l’application Outlook pour accéder à votre courrier Microsoft 365. Voir [Configurer les appareils mobiles pour](../business/set-up-mobile-devices.md) savoir comment installer des applications Office, y compris Outlook, sur votre téléphone.
