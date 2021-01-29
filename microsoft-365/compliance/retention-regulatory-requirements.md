@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressources pour vous aider à respecter les réglementations en matière de gouvernance des informations et de gestion des enregistrements.
-ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941419"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032565"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Réglementations en matière de gouvernance des informations et de gestion des enregistrements
 
@@ -29,6 +29,18 @@ ms.locfileid: "48941419"
 Utilisez les ressources de cette page pour vous aider à respecter les réglementations spécifiques en matière de gouvernance des informations et de gestion des enregistrements dans Microsoft 365. Chaque section de ce document se concentre sur une ou plusieurs réglementations apparentées, et inclut des recommandations existantes ou une évaluation tierce de la configuration de Microsoft 365 pour vous aider dans les conditions décrites.
 
 Ces ressources peuvent être téléchargées à partir de la page [Ressources de protection des données, FAQ et livres blancs](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) du Portail d’approbation de services.
+
+## <a name="new-zealand-public-records-act"></a>Loi sur les enregistrements publics de Nouvelle-Zélande
+
+**Prise en charge des obligations de conformité de la loi sur les enregistrements publics de Nouvelle-Zélande avec Microsoft 365** - [Télécharger l'évaluation](https://aka.ms/NZPRA)
+
+Charges de travail applicables : SharePoint, OneDrive, Teams, Exchange et Skype Entreprise
+
+Publié en janvier 2021, ce rapport a été publié en partenariat avec Microsoft Nouvelle-Zélande pour évaluer les fonctionnalités des services Microsoft 365 en matière d’enregistrement, de stockage et de gestion des exigences relatives aux enregistrements électroniques, comme spécifié dans : 
+
+- Loi sur les enregistrements publics de Nouvelle-Zélande 2005, qui définit des instructions pour la conservation des archives publiques et des archives d’autorité locale en Nouvelle-Zélande.
+
+Ce rapport vous aide à comprendre la manière dont les aspects système de la loi sur les enregistrements publics de Nouvelle-Zélande de 2005 (PRA) sont personnalisables lors de l’utilisation de Microsoft 365.
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17A-4(f), FINRA 4511(c) et CFTC 1.31(c)-(d)
 
