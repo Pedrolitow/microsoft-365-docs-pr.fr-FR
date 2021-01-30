@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
-ms.openlocfilehash: 10d677eb328ee002e187b098fa44b09372b59f72
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 816da1001593dc36d625a48d12a1e0ace86578bf
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568329"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058497"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -59,7 +59,8 @@ L’administrateur général de votre organisation dispose des autorisations tot
     
     ![Créer une étiquette de confidentialité](../media/create-sensitivity-label-full.png)
     
-    Remarque : par défaut, les clients n’ont pas d’étiquettes et vous devez les créer. Les étiquettes de l’exemple d’image montrent les étiquettes par défaut qui ont été [déplacées à partir d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+    > [!NOTE]
+    > Par défaut, les clients n’ont pas d’étiquettes. Vous devez alors en créer. Les étiquettes de l’exemple d’image montrent les étiquettes par défaut qui ont été [déplacées à partir d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 3. Sur la page **Définir l’étendue de cette étiquette**, les options sélectionnées déterminent l’étendue de l’étiquette pour les paramètres que vous pouvez configurer et l’emplacement où ils seront visibles lors de la publication :
     
@@ -88,7 +89,7 @@ Ce bouton démarre l’Assistant **Modifier l'étiquette de confidentialité**, 
 Ne supprimez pas une étiquette, sauf si vous comprenez l’impact pour les utilisateurs. Pour plus d’informations, consultez la section [Retrait et suppression d’étiquettes](#removing-and-deleting-labels). 
 
 > [!NOTE]
-> Si vous modifiez une étiquette, qui est déjà publiée, à l'aide d'une stratégie d'étiquette, aucune autre étape n'est nécessaire à la fin de l'Assistant. Par exemple, vous n’avez pas besoin de l’ajouter à une nouvelle stratégie d’étiquette pour que les modifications soient mises à disposition desdits utilisateurs. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications se répliquent vers les utilisateurs et les services.
+> Si vous modifiez une étiquette, qui est déjà publiée, à l'aide d'une stratégie d'étiquette, aucune autre étape n'est nécessaire à la fin de l'Assistant. Par exemple, vous n’avez pas besoin de l’ajouter à une nouvelle stratégie d’étiquette pour que les modifications soient mises à disposition desdits utilisateurs. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
 
 Les étiquettes sont disponibles dans des applications ou des services après les avoir publiées. Les étiquettes doivent être [ajoutées à une stratégie d'étiquette](#publish-sensitivity-labels-by-creating-a-label-policy) pour être publiées.
 
@@ -155,7 +156,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
         
     ![Publier des étiquettes](../media/publish-sensitivity-labels-full.png)
     
-    Remarque : par défaut, les clients n’ont pas de stratégies d’étiquette et vous devez les créer. 
+    > [!NOTE]
+    > Par défaut, les clients n’ont pas de stratégies d’étiquette. Vous devez alors créer. 
 
 3. Dans l’Assistant, sélectionnez **Choisir des étiquettes de confidentialité à publier**. Sélectionnez les étiquettes que vous souhaitez rendre disponibles dans les applications et les services, puis choisissez **Ajouter**.
     
@@ -184,7 +186,7 @@ Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choi
 
 Ce bouton démarre l’Assistant **Créer une stratégie** qui vous permet de modifier les étiquettes incluses et leurs paramètres. Une fois l’exécution de l’Assistant terminée, toutes les modifications sont automatiquement répliquées vers les services et les utilisateurs sélectionnés.
 
-Les utilisateurs voient les nouvelles étiquettes dans leurs applications Office dans un délai d'une heure. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications apportées aux étiquettes existantes pour répliquer vers les utilisateurs et les services.
+Lorsque vous utilisez l’étiquette intégrée pour Windows, macOS, iOS et Android, les utilisateurs voient de nouvelles étiquettes dans leurs applications Office dans un délai de quatre heures et dans un délai d’une heure pour Office sur le web. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Paramètres de stratégie d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
 
