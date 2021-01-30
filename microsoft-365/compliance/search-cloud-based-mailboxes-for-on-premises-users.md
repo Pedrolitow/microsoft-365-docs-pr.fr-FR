@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l’outil recherche de contenu dans le centre de conformité et de sécurité pour rechercher et exporter des données de conversation Teams pour les utilisateurs locaux dans un déploiement hybride Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 7bdcba3a14b2ee6d14210d3525e20ec507166a5d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976201"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029714"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Recherche de données de conversations Teams pour les utilisateurs locaux
 
@@ -39,10 +39,8 @@ Voici la configuration requise et les limitations applicables à l’activation 
 
 - Seules les données de conversation Teams associées à un utilisateur local sont stockées dans la zone de stockage basée sur le cloud. Un utilisateur local ne peut en aucune façon accéder à cette zone de stockage.
 
-- Vous devez envoyer une demande de Support Microsoft pour autoriser votre organisation à rechercher des données de conversations Teams pour les utilisateurs locaux. Consultez [Classement d’une demande auprès du Support Microsoft pour activer cette fonctionnalité](#filing-a-request-with-microsoft-support-to-enable-this-feature) dans cet article.
-
 > [!NOTE]
-> Les conversations pa canaux Teams sont toujours stockées dans la boîte aux lettres basée sur le cloud qui est associée à Teams. Cela signifie que vous pouvez utiliser la recherche de contenu pour rechercher des conversations de canal sans avoir à classer une demande de support. Pour plus d’informations sur la recherche conversations par canaux Teams, consultez[Recherche Microsoft Teams et Groupes Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Les conversations pa canaux Teams sont toujours stockées dans la boîte aux lettres basée sur le cloud qui est associée à Teams, ce qui signifie que vous pouvez rechercher des conversations dans les canaux. Pour plus d’informations sur la recherche conversations par canaux Teams, consultez[Recherche Microsoft Teams et Groupes Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Mode de fonctionnement
 
@@ -54,20 +52,7 @@ Le graphique suivant montre comment Teams peut consulter les données de convers
   
 En plus de cette nouvelle fonctionnalité, vous pouvez encore utiliser la recherche de contenu pour rechercher, afficher un aperçu et exporter du contenu d’équipes sur le site SharePoint dans le cloud et sur la boîte aux lettres Exchange associée à chaque Microsoft Teams et 1xN Teams discutent des données dans la boîte aux lettres Exchange Online pour utilisateurs dans le cloud.
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Classement d’une demande auprès du Support Microsoft pour activer cette fonctionnalité
 
-Vous devez effectuer une demande auprès du Support Microsoft pour autoriser votre organisation à utiliser l’interface utilisateur graphique dans le centre de conformité et sécurité pour rechercher des données de conversations Teams pour des utilisateurs locaux. Cette fonctionnalité est disponible dans le centre de conformité et sécurité PowerShell. Vous n’êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
-  
-Fournissez les informations suivantes lorsque vous envoyez la demande au Support Microsoft :
-  
-- Nom de domaine par défaut de votre organisation.
-
-- Le nom du locataire et l’ID de client de votre organisation. Celles-ci sont disponibles dans le portail Azure Active Directory (sous **Gérer** \> **Propriétés**). Consultez [Rechercher votre ID de client Microsoft 365](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
-
-- Le titre ou la description de l’objet de la demande de support : « Activer la recherche de contenu d’application pour les utilisateurs locaux ». Cette opération permet d’acheminer la demande vers l’équipe d’ingénierie d’eDiscovery qui implémente la demande.
-
-Une fois la modification d’ingénierie effectuée, le Support Microsoft vous enverra une estimation de la date de déploiement. Le processus de déploiement prend généralement deux à trois semaines après l’envoi de la demande de support.
-  
 ### <a name="what-happens-after-this-feature-is-enabled"></a>Que se passe-t-il si cette fonctionnalité est activée ?
 
 Une fois cette fonctionnalité déployée dans votre organisation, les modifications suivantes sont apportées dans la recherche de contenu et dans les recherches associées à un cas de découverte électronique dans le centre de sécurité et conformité :
