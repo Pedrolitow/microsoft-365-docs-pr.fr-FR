@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2a4b66de9996ec0ea7047ca44ae3750a917c4cc2
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 2e334e57b84bea7985983527e600be731e4de20c
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921678"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058517"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -42,6 +42,11 @@ Exemple illustrant les étiquettes de confidentialité disponibles dans Excel à
 ![Étiquette de confidentialité dans le ruban Excel et sur la barre d’état](../media/Sensitivity-label-in-Excel.png)
 
 Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent être connectés avec leur compte Microsoft 365 professionnel ou scolaire.
+
+> [!NOTE]
+> Les étiquettes de confidentialité sont nouvellement pris en charge pour les clients du gouvernement américain (GCC et GCC-H). Pour plus d’informations, consultez les notes de publication pour Microsoft 365 Apps for enterprise, [Version 2101 : 26 janvier](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26).
+>
+> Pour le client d’étiquettes et le scanneur Azure Information Protection unifiés, consultez la [Description du service public premium Azure Information Protection](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suivantes :
   
@@ -195,7 +200,7 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
     ![Lien En savoir plus sur le bouton Niveau de confidentialité dans le ruban](../media/Sensitivity-label-learn-more.png)
 
-Après avoir créé une stratégie d’étiquette qui attribue des étiquettes de confidentialité à des utilisateurs et des groupes, les utilisateurs voient ces étiquettes dans leurs applications Office dans les 30 minutes. Toutefois, veuillez patienter 24 heures pour que les changements soient appliqués aux étiquettes.
+Les nouvelles étiquettes de confidentialité s’affichent dans les applications Office des utilisateurs, après la création d’une stratégie d’étiquettes les attribuant aux utilisateurs et aux groupes. Veuillez patienter jusqu’à 24 heures pour que les modifications s’appliquent dans votre organisation.
 
 Vous pouvez créer et publier autant d’étiquettes de confidentialité que vous le souhaitez, à une exception près : si l’étiquette applique le chiffrement, vous pouvez créer jusqu’à 500 étiquettes. Toutefois, dans le but de diminuer les frais généraux de l’administration et de réduire la complexité pour vos utilisateurs, tentez d’utiliser un nombre minimal d’étiquettes. Les déploiements en temps réel ont démontré l’efficacité notable d’une réduction lorsque les utilisateurs ont plus de cinq étiquettes principales ou plus de cinq sous-étiquettes par étiquette principale.
 
@@ -268,4 +273,4 @@ Vous pouvez également en savoir plus sur les [solutions de partenaires intégr�
 
 ## <a name="deployment-guidance"></a>Instructions de déploiement
 
-Pour la planification et des instructions relatives au déploiement qui incluent les informations relatives aux licences, les autorisations, la stratégie de déploiement, une liste de ressources pour les scénarios pris en charge et la documentation de l’utilisateur final, voir [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md).
+Pour la planification et les instructions relatives au déploiement, notamment les informations relatives aux licences, les autorisations, la stratégie de déploiement, une liste de scénarios pris en charge et la documentation de l’utilisateur final, consultez [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md).
