@@ -1,10 +1,10 @@
 ---
 title: Chiffrement à double clé (DKE)
-description: DKE vous permet de protéger les données hautement sensibles tout en conservant le contrôle total de votre clé.
+description: DKE vous permet de protéger les données hautement sensibles tout en conservant un contrôle total de votre clé.
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 09/22/2020
+ms.date: 01/29/2021
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -12,230 +12,228 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 9607b095ba073229edae43c1d2f0e893db07c634
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: dc6122bf3a253d5834f5f1c8c7bf935d743357ae
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663089"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058527"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Chiffrement à double clé pour Microsoft 365
 
-> *S’applique à : chiffrement à double clé pour Microsoft 365, [conformité microsoft 365](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure information protection](https://azure.microsoft.com/pricing/details/information-protection)*
+> *S’applique à : Chiffrement à double clé pour Microsoft 365, Conformité [Microsoft 365](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *Instructions pour : [client d’étiquetage unifié Azure information protection pour Windows](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *Instructions pour : Client [d’étiquetage unifié Azure Information Protection pour Windows](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
-> *Description du service : [conformité Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+> *Description du service pour : [Conformité Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Le chiffrement à clé double (DKE) utilise deux clés ensemble pour accéder au contenu protégé. Microsoft stocke une clé dans Microsoft Azure et vous conservez l’autre clé. Vous conservez le contrôle total de l’une de vos clés à l’aide du service de chiffrement à clé double. Vous appliquez la protection à l’aide du client d’étiquetage unifié Azure information protection à votre contenu hautement sensible.
+Le chiffrement à double clé (DKE) utilise deux clés pour accéder au contenu protégé. Microsoft stocke une clé dans Microsoft Azure, et vous maintenez l’autre clé. Vous conservez le contrôle total de l’une de vos clés à l’aide du service de chiffrement à double clé. Vous appliquez la protection à votre contenu hautement sensible à l’aide du client d’étiquetage unifié Azure Information Protection.
 
-Le chiffrement à double clé prend en charge les déploiements sur le Cloud et sur site. Ces déploiements permettent de s’assurer que les données chiffrées restent opaques, où que vous stockez les données protégées.
+Le chiffrement à double clé prend en charge les déploiements sur site et dans le cloud. Ces déploiements permettent de s’assurer que les données chiffrées restent opaques partout où vous stockez les données protégées.
 
-Pour plus d’informations sur les clés de racine de client par défaut, consultez la rubrique [planification et implémentation de votre clé de client Azure information protection](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
+Pour plus d’informations sur les clés racines de client basées sur le cloud par défaut, voir Planification et mise en œuvre de votre clé [de client Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)
 
 ## <a name="when-your-organization-should-adopt-dke"></a>Quand votre organisation doit adopter DKE
 
-Le chiffrement à double clé est destiné à vos données les plus sensibles, sujettes aux exigences de protection les plus strictes. DKE n’est pas destiné à toutes les données. En règle générale, vous utiliserez le chiffrement à double clé pour ne protéger qu’une très petite partie de vos données globales. Vous devez faire diligence pour identifier les bonnes données à traiter avec cette solution avant de procéder au déploiement. Dans certains cas, vous devrez peut-être affiner votre portée et utiliser d’autres solutions pour la majorité de vos données, telles que la protection des informations Microsoft avec des clés gérées par Microsoft ou BYOK. Ces solutions sont suffisantes pour les documents qui ne sont pas soumis à des protections améliorées et aux exigences réglementaires. De plus, ces solutions vous permettent d’utiliser les services Office 365 les plus puissants ; services que vous ne pouvez pas utiliser avec du contenu chiffré DKE. Par exemple :
+Le chiffrement à double clé est destiné à vos données les plus sensibles soumises aux exigences de protection les plus strictes. DKE n’est pas destiné à toutes les données. En règle générale, vous utiliserez le chiffrement à double clé pour protéger uniquement une petite partie de vos données globales. Vous devez faire preuve de diligence pour identifier les données à couvrir avec cette solution avant de déployer. Dans certains cas, vous devrez peut-être restreindre votre étendue et utiliser d’autres solutions pour la plupart de vos données, telles que Microsoft Information Protection avec des clés gérées par Microsoft ou BYOK. Ces solutions sont suffisantes pour les documents qui ne sont pas soumis à des protections améliorées et à des exigences réglementaires. En outre, ces solutions vous permettent d’utiliser les services Office 365 les plus puissants ; que vous ne pouvez pas utiliser avec du contenu chiffré DKE. Par exemple :
 
-- Règles de transport incluant le blocage des programmes malveillants et le courrier indésirable qui nécessitent une visibilité dans la pièce jointe
+- Règles de transport, y compris les logiciels anti-programme malveillant et le courrier indésirable qui nécessitent une visibilité dans la pièce jointe
 - Microsoft Delve
 - eDiscovery
 - Recherche et indexation de contenu
-- Office Web Apps, y compris la fonctionnalité de co-création
+- Office Web Apps, y compris la fonctionnalité de co-auteur
 
-Les applications ou services externes qui ne sont pas intégrés à DKE via le kit de développement logiciel MIP ne seront pas en mesure d’effectuer des actions sur les données chiffrées.
+Les applications ou services externes qui ne sont pas intégrés au DKE via le SDK MIP ne pourront pas effectuer d’actions sur les données chiffrées.
 
-Le kit de développement logiciel (SDK) Microsoft information protection 1.7 + prend en charge le chiffrement à double clé ; les applications qui s’intègrent à notre kit de développement logiciel (SDK) seront en mesure de le faire sur ces données avec des autorisations et des intégrations suffisantes.
+Le SDK Microsoft Information Protection 1.7+ prend en charge le chiffrement à double clé ; les applications qui s’intègrent à notre SDK pourront raisonner sur ces données avec des autorisations et des intégrations suffisantes en place.
 
-Nous recommandons aux organisations d’utiliser les fonctionnalités de protection des informations Microsoft (classification et étiquetage) pour protéger la plupart de leurs données sensibles et utiliser DKE pour leurs données critiques. Le chiffrement à double clé est particulièrement pertinent pour les données extrêmement sensibles dans les secteurs hautement réglementés, tels que les services financiers et le secteur de la santé.
+Nous recommandons aux organisations d’utiliser les fonctionnalités de protection des informations Microsoft (classification et étiquetage) pour protéger la plupart de leurs données sensibles et utiliser uniquement DKE pour leurs données critiques. Le chiffrement à double clé est pertinent pour les données sensibles dans les secteurs hautement réglementés tels que les services financiers et la santé.
 
-Si votre organisation dispose de l’une des conditions suivantes, vous pouvez utiliser DKE pour sécuriser votre contenu :
+Si vos organisations ont l’une des exigences suivantes, vous pouvez utiliser DKE pour sécuriser votre contenu :
 
-- Vous souhaitez vous assurer que *vous* êtes le seul à pouvoir déchiffrer le contenu protégé, dans toutes les circonstances.
-- Vous ne souhaitez pas que Microsoft ait accès aux données protégées de façon autonome.
-- Vous avez des exigences réglementaires à maintenir des clés dans une limite géographique. Toutes les clés que vous mettez en attente pour le chiffrement et le déchiffrement des données sont conservées dans votre centre de données.
+- Vous souhaitez vous assurer *que seul vous* pouvez déchiffrer du contenu protégé, dans toutes les circonstances.
+- Vous ne souhaitez pas que Microsoft accède lui-même aux données protégées.
+- Vous avez des exigences réglementaires pour contenir des clés à l’intérieur d’une limite géographique. Toutes les clés que vous conservez pour le chiffrement et le déchiffrement des données sont conservées dans votre centre de données.
 
-## <a name="system-and-licensing-requirements-for-dke"></a>Exigences en matière de système et de licence pour DKE
+## <a name="system-and-licensing-requirements-for-dke"></a>Exigences relatives au système et aux licences pour le DKE
 
-Le **chiffrement à double clé pour microsoft 365** est fourni avec Microsoft 365 E5. Si vous n’avez pas de licence Microsoft 365 E5, vous pouvez vous inscrire pour obtenir une [version d’évaluation](https://aka.ms/M365E5ComplianceTrial). Pour plus d’informations sur ces licences, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+**Le chiffrement à double clé pour Microsoft 365** est livré avec Microsoft 365 E5. Si vous n’avez pas de licence Microsoft 365 E5, vous pouvez vous inscrire à une [version d’essai.](https://aka.ms/M365E5ComplianceTrial) Pour plus d’informations sur ces licences, consultez les conseils de licence [Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)pour la sécurité & conformité.
 
-**Azure information protection**. DKE fonctionne avec les étiquettes de confidentialité et nécessite Azure information protection.
+**Azure Information Protection**. DKE fonctionne avec les étiquettes de sensibilité et nécessite Azure Information Protection.
 
-Les étiquettes de sensibilité DKE sont mises à la disposition des utilisateurs finaux via le ruban de confidentialité dans les applications de bureau Office. Installez ces éléments prérequis sur chaque ordinateur client sur lequel vous souhaitez protéger et consommer des documents protégés.
+Les étiquettes de niveau de sensibilité DKE sont disponibles pour les utilisateurs finaux via le ruban de niveau de sensibilité dans les applications de bureau Office. Installez ces éléments prérequis sur chaque ordinateur client sur lequel vous souhaitez protéger et utiliser des documents protégés.
 
-**Microsoft Office apps pour Enterprise** version *. 12711 ou version ultérieure (versions de bureau de Word, PowerPoint et Excel) sur Windows.
+**Microsoft Office Applications pour** entreprise version *.12711 ou ultérieure (versions de bureau de Word, PowerPoint et Excel) sur Windows.
 
-Versions du **client d’étiquetage unifié Azure information protection** 2.7.93.0 ou version ultérieure. Téléchargez et installez le client d’étiquetage unifié à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
+**Client d’étiquetage unifié Azure Information Protection** version 2.7.93.0 ou ultérieure. Téléchargez et installez le client d’étiquetage unifié à partir du [Centre de téléchargement Microsoft.](https://www.microsoft.com/download/details.aspx?id=53018)
 
-## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>Environnements pris en charge pour le stockage et l’affichage du contenu protégé par DKE
+## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>Environnements pris en charge pour le stockage et l’affichage de contenu protégé par le DKE
 
-**Applications prises en charge**. [Applications Microsoft 365 pour](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) les clients d’entreprise sur Windows, y compris Word, Excel et PowerPoint.
+**Applications pris en charge.** [Les applications Microsoft 365 pour les](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients d’entreprise sur Windows, y compris Word, Excel et PowerPoint.
 
-**Prise en charge du contenu en ligne**. Les documents et les fichiers stockés en ligne dans Microsoft SharePoint et OneDrive entreprise sont pris en charge. Vous pouvez partager le contenu chiffré par courrier électronique, mais vous ne pouvez pas afficher les documents et fichiers chiffrés en ligne. Au lieu de cela, vous devez afficher le contenu protégé à l’aide des applications de bureau sur votre ordinateur local.
+**Prise en charge du contenu en ligne.** Les documents et fichiers stockés en ligne dans Microsoft SharePoint et OneDrive Entreprise sont pris en charge. Vous pouvez partager du contenu chiffré par courrier électronique, mais vous ne pouvez pas afficher les documents et fichiers chiffrés en ligne. Au lieu de cela, vous devez afficher le contenu protégé à l’aide des applications de bureau sur votre ordinateur local.
 
-## <a name="overview-of-deploying-dke"></a>Vue d’ensemble du déploiement de DKE
+## <a name="overview-of-deploying-dke"></a>Vue d’ensemble du déploiement du DKE
 
-Suivez les étapes générales suivantes pour configurer DKE. Une fois que vous aurez effectué ces étapes, vos utilisateurs finaux seront en mesure de protéger vos données hautement sensibles à l’aide du chiffrement à double clé.
+Vous devez suivre ces étapes générales pour configurer DKE. Une fois ces étapes effectuées, vos utilisateurs finaux peuvent protéger vos données hautement sensibles avec le chiffrement à double clé.
 
 1. Déployez le service DKE comme décrit dans cet article.
 
-2. Créez une étiquette avec un chiffrement à clé double. Accédez à protection des informations sous le [Centre de conformité Microsoft 365](https://compliance.microsoft.com) et créez une nouvelle étiquette avec le chiffrement à clé double. [Pour appliquer le chiffrement, voir restreindre l’accès au contenu à l’aide des étiquettes de confidentialité](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels).
+2. Créez une étiquette avec le chiffrement à double clé. Accédez à La Protection des informations sous le Centre de conformité [Microsoft 365](https://compliance.microsoft.com) et créez une étiquette avec le chiffrement à double clé. Voir [Restreindre l’accès au contenu à l’aide d’étiquettes de sensibilité pour appliquer le chiffrement.](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
 
-3. Utilisez des étiquettes de chiffrement à double clé. Protégez les données en sélectionnant une étiquette chiffrée à double clé dans le ruban de sensibilité de Microsoft Office.
+3. Utilisez des étiquettes de chiffrement à double clé. Protégez les données en sélectionnant l’étiquette Chiffrement à double clé à partir du ruban Niveau de Microsoft Office.
 
-Il existe plusieurs façons de procéder pour déployer le chiffrement à double clé. Cet article fournit des instructions détaillées afin que les administrateurs moins expérimentés déploient correctement le service. Si vous êtes familiarisé, vous pouvez choisir d’utiliser vos propres méthodes.
+Il existe plusieurs façons d’effectuer certaines des étapes de déploiement du chiffrement à double clé. Cet article fournit des instructions détaillées pour que les administrateurs moins expérimentés déploient correctement le service. Si vous êtes à l’aise avec cette méthode, vous pouvez choisir d’utiliser vos propres méthodes.
 
 ## <a name="deploy-dke"></a>Déployer DKE
 
-Cet article et la vidéo de déploiement utilisent Azure comme destination de déploiement pour le service DKE. Si vous effectuez le déploiement vers un autre emplacement, vous devez fournir vos propres valeurs.
+Cet article et la vidéo de déploiement utilisent Azure comme destination de déploiement pour le service DKE. Si vous déployez vers un autre emplacement, vous devez fournir vos propres valeurs.
 
-Regardez la [vidéo sur le déploiement de chiffrement à double clé](https://youtu.be/vDWfHN_kygg) pour voir une présentation détaillée des concepts présentés dans cet article. La vidéo prend environ 18 minutes.
+Regardez la [vidéo de déploiement](https://youtu.be/vDWfHN_kygg) du chiffrement à double clé pour voir une vue d’ensemble pas à pas des concepts présentés dans cet article. La vidéo prend environ 18 minutes.
 
-Suivez ces étapes générales pour configurer le chiffrement à double clé pour votre organisation.
+Vous devez suivre ces étapes générales pour configurer le chiffrement à double clé pour votre organisation.
 
-1. [Installer les composants logiciels requis pour le service DKE](#install-software-prerequisites-for-the-dke-service)
+1. [Installer les logiciels requis pour le service DKE](#install-software-prerequisites-for-the-dke-service)
 1. [Cloner le référentiel GitHub de chiffrement à double clé](#clone-the-dke-github-repository)
-1. [Modifier les paramètres d’application](#modify-application-settings)
+1. [Modifier les paramètres de l’application](#modify-application-settings)
 1. [Générer des clés de test](#generate-test-keys)
-1. [Générez le projet.](#build-the-project)
+1. [Créer le projet](#build-the-project)
 1. [Déployer le service DKE et publier le magasin de clés](#deploy-the-dke-service-and-publish-the-key-store)
 1. [Valider votre déploiement](#validate-your-deployment)
-1. [Enregistrer votre magasin de clés](#register-your-key-store)
-1. [Créer des étiquettes de confidentialité à l’aide de DKE](#create-sensitivity-labels-using-dke)
-1. [Activer DKE dans votre client](#enable-dke-in-your-client)
-1. [Migrer des fichiers protégés des étiquettes HYOK vers les étiquettes DKE](#migrate-protected-files-from-hyok-labels-to-dke-labels)
+1. [Inscrire votre magasin de clés](#register-your-key-store)
+1. [Créer des étiquettes de niveau de sensibilité à l’aide du DKE](#create-sensitivity-labels-using-dke)
+1. [Activer le DKE dans votre client](#enable-dke-in-your-client)
+1. [Migrer des fichiers protégés des étiquettes HYOK vers des étiquettes DKE](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
-Lorsque vous avez fini, vous pouvez chiffrer des documents et des fichiers à l’aide de DKE. Pour plus d’informations, consultez [la rubrique appliquer des étiquettes de confidentialité à vos fichiers et à votre messagerie électronique dans Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+Lorsque vous avez terminé, vous pouvez chiffrer des documents et des fichiers à l’aide de la DKE. Pour plus d’informations, voir [Appliquer des étiquettes de niveau de sensibilité à vos fichiers et e-mails dans Office.](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
-### <a name="install-software-prerequisites-for-the-dke-service"></a>Installer les composants logiciels requis pour le service DKE
+### <a name="install-software-prerequisites-for-the-dke-service"></a>Installer les logiciels requis pour le service DKE
 
 Installez ces éléments prérequis sur l’ordinateur sur lequel vous souhaitez installer le service DKE.
 
-**.Net Core 3,1 SDK**. Téléchargez et installez le kit de développement logiciel (SDK) à partir de [Télécharger .net Core 3,1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
+**SDK .NET Core 3.1**. Téléchargez et installez le SDK à partir [de Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
-**Visual Studio code**. Téléchargez Visual Studio code à partir de [https://code.visualstudio.com/](https://code.visualstudio.com) . Une fois installé, exécutez Visual Studio code et sélectionnez **Afficher** les \> **Extensions**. Installez ces extensions.
+**Visual Studio Code**. Téléchargez Visual Studio code à partir de [https://code.visualstudio.com/](https://code.visualstudio.com) . Une fois installé, exécutez Visual Studio code et **sélectionnez** \> **Afficher les extensions.** Installez ces extensions.
 
-- C# pour Visual Studio code
+- C# pour Visual Studio Code
 
-- Gestionnaire de package NuGet
+- NuGet Gestionnaire de package
 
-**Ressources git**. Téléchargez et installez l’un des éléments suivants.
+**Ressources Git**. Téléchargez et installez l’une des applications suivantes.
 
 - [Git](https://git-scm.com/downloads)
 
 - [Bureau GitHub](https://desktop.github.com/)
 
-- [GitHub entreprise](https://github.com/enterprise)
+- [GitHub Enterprise](https://github.com/enterprise)
 
-**OpenSSL** [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) doit être installé pour [générer des clés de test](#generate-test-keys) une fois que vous avez déployé DKE. Vérifiez que vous l’appelez correctement à partir de votre chemin d’accès aux variables d’environnement. Par exemple, pour plus d’informations, consultez la section « ajouter le répertoire d’installation au chemin d’accès » [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/) .
+**OpenSSL** [OpenSSL doit être](https://slproweb.com/products/Win32OpenSSL.html) installé pour générer des clés [de test](#generate-test-keys) après avoir déployé DKE. Assurez-vous que vous l’voquer correctement à partir du chemin d’accès de vos variables d’environnement. Par exemple, pour plus d’informations, voir « Ajouter le répertoire d’installation à PATH [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/) ».
 
-### <a name="clone-the-dke-github-repository"></a>Cloner le référentiel DKE GitHub
+### <a name="clone-the-dke-github-repository"></a>Cloner le référentiel GitHub DKE
 
-Microsoft fournit les fichiers source DKE dans un référentiel GitHub. Vous clonez le référentiel pour créer le projet localement pour l’utilisation de votre organisation. Le référentiel DKE GitHub se trouve à l’emplacement [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) .
+Microsoft fournit les fichiers sources DKE dans un référentiel GitHub. Vous clonez le référentiel pour créer le projet localement pour l’utilisation de votre organisation. Le référentiel GitHub DKE se trouve à [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) l’emplacement .
 
-Les instructions suivantes sont destinées aux utilisateurs de git ou de code Visual Studio inexpérimentés :
+Les instructions suivantes sont destinées aux utilisateurs git ou Visual Studio Code :
 
-1. Dans votre navigateur, accédez à : [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) .
+1. Dans votre navigateur, allez à : [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) .
 
-2. Dans la partie droite de l’écran, sélectionnez **code**. Votre version de l’interface utilisateur peut afficher un bouton **Clone ou télécharger** . Ensuite, dans la liste déroulante qui apparaît, sélectionnez l’icône copier pour copier l’URL dans votre presse-papiers.
-
-    Par exemple :
-
-   ![Cloner le référentiel du service de chiffrement à clé double à partir de GitHub](../media/dke-clone.png)
-
-3. Dans Visual Studio code, sélectionnez **Afficher** la \> **palette de commandes** et sélectionnez **git : Clone**. Pour accéder à l’option dans la liste, commencez `git: clone` à taper pour filtrer les entrées, puis sélectionnez-la dans la liste déroulante. Par exemple :
-
-   ![Option GIT : clone de Visual Studio code](../media/dke-vscode-clone.png)
-
-4. Dans la zone de texte, collez l’URL que vous avez copiée à partir de git et sélectionnez **Clone dans GitHub**.
-
-5. Dans la boîte de dialogue **Sélectionner un dossier** qui s’affiche, accédez à l’emplacement où vous souhaitez stocker le référentiel et sélectionnez-le. À l’invite, sélectionnez **ouvrir**.
-
-    Le référentiel s’ouvre dans Visual Studio code et affiche la branche git actuelle en bas à gauche. La branche doit être **Master**.
+2. Vers le côté droit de l’écran, sélectionnez **Code**. Votre version de l’interface utilisateur peut afficher un **bouton Clone ou** télécharger. Ensuite, dans la liste liste qui s’affiche, sélectionnez l’icône copier pour copier l’URL dans votre Presse-papiers.
 
     Par exemple :
 
-   ![Branche Visual Studio code Master](../media/dke-vscode-master.png)
+   ![Cloner le référentiel du service de chiffrement à double clé à partir de GitHub](../media/dke-clone.png)
 
-6. Sélectionnez le **masque** de mots dans la liste des branches.
+3. In Visual Studio Code, select **View** \> **Command Palette** and select **Git: Clone**. Pour passer à l’option dans la liste, commencez à taper pour filtrer les entrées, puis sélectionnez-la dans `git: clone` la liste. Par exemple :
+
+   ![Visual Studio’option GIT:Clone du code](../media/dke-vscode-clone.png)
+
+4. Dans la zone de texte, collez l’URL que vous avez copiée à partir de Git et sélectionnez **Cloner à partir de GitHub.**
+
+5. Dans la **boîte de dialogue** Sélectionner un dossier qui s’affiche, recherchez et sélectionnez un emplacement pour stocker le référentiel. À l’invite, sélectionnez **Ouvrir.**
+
+    Le référentiel s’ouvre dans Visual Studio Code et affiche la branche Git actuelle en bas à gauche. Par exemple, la branche doit être **principale.** Par exemple :
+
+   ![Capture d’écran du repo DKE dans Visual Studio code affichant la branche principale](../media/dke-vscode-main-branch.jpg)
+
+6. Si vous n’êtes pas sur la branche principale, vous devez la sélectionner. Dans Visual Studio code, sélectionnez la branche et choisissez **principal** dans la liste des branches qui s’affiche.
 
    > [!IMPORTANT]
-   > La sélection de la branche principale garantit que vous disposez des fichiers appropriés pour générer le projet. Si vous ne sélectionnez pas la branche appropriée, votre déploiement échouera.
+   > La sélection de la branche principale garantit que vous avez les fichiers corrects pour créer le projet. Si vous ne choisissez pas la branche correcte, votre déploiement échouera.
 
-Votre référentiel source DKE est maintenant configuré localement. Ensuite, [Modifiez les paramètres d’application](#modify-application-settings) pour votre organisation.
+Votre référentiel de source DKE est maintenant installé localement. Ensuite, [modifiez les paramètres d’application](#modify-application-settings) de votre organisation.
 
-### <a name="modify-application-settings"></a>Modifier les paramètres d’application
+### <a name="modify-application-settings"></a>Modifier les paramètres de l’application
 
-Pour déployer le service DKE, vous devez modifier les types de paramètres d’application suivants :
+Pour déployer le service DKE, vous devez modifier les types de paramètres d’application suivants :
 
-- [Paramètres d’accès clés](#key-access-settings)
+- [Paramètres d’accès aux clés](#key-access-settings)
 - [Paramètres de client et de clé](#tenant-and-key-settings)
 
-Vous modifiez les paramètres de l’application dans le fichier appsettings.js. Ce fichier se trouve dans le DoubleKeyEncryptionService référentiel que vous avez cloné localement sous DoubleKeyEncryptionService\src\customer-key-store. Par exemple, dans Visual Studio code, vous pouvez accéder au fichier comme indiqué dans l’image suivante.
+Vous modifiez les paramètres de l’application dans appsettings.jsfichier on. Ce fichier se trouve dans le dépôt DoubleKeyEncryptionService que vous avez cloné localement sous DoubleKeyEncryptionService\src\customer-key-store. Par exemple, dans Visual Studio Code, vous pouvez parcourir le fichier comme illustré dans l’image suivante.
 
-![Recherche de la appsettings.jssur le fichier pour DKE.](../media/dke-appsettingsjson.png)
+![Localisation du fichier appsettings.jssur pour DKE.](../media/dke-appsettingsjson.png)
 
-#### <a name="key-access-settings"></a>Paramètres d’accès clés
+#### <a name="key-access-settings"></a>Paramètres d’accès aux clés
 
-Choisissez d’utiliser ou non l’autorisation de messagerie ou de rôle. DKE ne prend en charge qu’une seule de ces méthodes d’authentification à la fois.
+Choisissez si vous souhaitez utiliser l’autorisation de messagerie ou de rôle. DKE ne prend en charge qu’une seule de ces méthodes d’authentification à la fois.
 
-- **Autorisation de messagerie**. Permet à votre organisation d’autoriser l’accès aux clés en fonction des adresses de messagerie uniquement.
+- **Autorisation de messagerie** électronique . Permet à votre organisation d’autoriser l’accès aux clés en fonction des adresses de messagerie uniquement.
 
-- **Autorisation de rôle**. Permet à votre organisation d’autoriser l’accès aux clés en fonction des groupes Active Directory et exige que le service Web interroge LDAP.
+- **Autorisation de rôle**. Permet à votre organisation d’autoriser l’accès aux clés basées sur des groupes Active Directory et nécessite que le service web puisse interroger LDAP.
 
-**Pour définir les paramètres d’accès clés pour DKE à l’aide de l’autorisation de messagerie**
+**Pour définir des paramètres d’accès clés pour DKE à l’aide de l’autorisation de messagerie**
 
-1. Ouvrez le fichier **appsettings.js** et localisez le `AuthorizedEmailAddress` paramètre.
+1. Ouvrez le **appsettings.jssur le** fichier et recherchez le `AuthorizedEmailAddress` paramètre.
 
-2. Ajoutez l’adresse ou les adresses de messagerie que vous souhaitez autoriser. Séparez les adresses de messagerie par des guillemets et des virgules. Par exemple :
+2. Ajoutez l’adresse de messagerie ou les adresses que vous souhaitez autoriser. Séparez les adresses de messagerie par des guillemets et des virgules. Par exemple :
 
    ```json
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
    ```
 
-3. Recherchez le `LDAPPath` paramètre et supprimez le texte `If you use role authorization (AuthorizedRoles) then this is the LDAP path.` entre guillemets doubles. Laissez les guillemets doubles en place. Lorsque vous avez terminé, le paramètre doit ressembler à ce qui suit.
+3. Recherchez `LDAPPath` le paramètre et supprimez le texte entre `If you use role authorization (AuthorizedRoles) then this is the LDAP path.` guillemets doubles. Laissez les guillemets doubles en place. Lorsque vous avez terminé, le paramètre doit ressembler à ceci.
 
    ```json
    "LDAPPath": ""
    ```
 
-4. Localisez le `AuthorizedRoles` paramètre et supprimez la ligne entière.
+4. Recherchez `AuthorizedRoles` le paramètre et supprimez la ligne entière.
 
-Cette image montre le **appsettings.jssur** un fichier correctement mis en forme pour l’autorisation de messagerie.
+Cette image montre **l'appsettings.jssur le** fichier correctement formaté pour l’autorisation de messagerie.
 
-   ![appsettings.jssur le fichier affichant la méthode d’autorisation de messagerie](../media/dke-email-accesssetting.png)
+   ![L'appsettings.jssur le fichier montrant la méthode d’autorisation de messagerie](../media/dke-email-accesssetting.png)
 
-**Pour définir les paramètres d’accès clés pour DKE à l’aide de l’autorisation de rôle**
+**Pour définir des paramètres d’accès clés pour DKE à l’aide de l’autorisation de rôle**
 
-1. Ouvrez le fichier **appsettings.js** et localisez le `AuthorizedRoles` paramètre.
+1. Ouvrez le **appsettings.jssur le** fichier et recherchez le `AuthorizedRoles` paramètre.
 
-2. Ajoutez les noms de groupe Active Directory que vous souhaitez autoriser. Séparez les noms de plusieurs groupes par des guillemets et des virgules. Par exemple :
+2. Ajoutez les noms de groupe Active Directory que vous souhaitez autoriser. Séparez les noms de groupes par des guillemets et des virgules. Par exemple :
 
    ```json
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. Localisez le `LDAPPath` paramètre et ajoutez le domaine Active Directory. Par exemple :
+3. Recherchez `LDAPPath` le paramètre et ajoutez le domaine Active Directory. Par exemple :
 
    ```json
    "LDAPPath": "contoso.com"
    ```
 
-4. Localisez le `AuthorizedEmailAddress` paramètre et supprimez la ligne entière.
+4. Recherchez `AuthorizedEmailAddress` le paramètre et supprimez la ligne entière.
 
-Cette image montre le **appsettings.jssur** un fichier correctement mis en forme pour l’autorisation de rôle.
+Cette image montre **l'appsettings.jssur le** fichier correctement formaté pour l’autorisation de rôle.
 
-   ![appsettings.jssur le fichier affichant la méthode d’autorisation de rôle](../media/dke-role-accesssetting.png)
+   ![appsettings.jsfichier affichant la méthode d’autorisation de rôle](../media/dke-role-accesssetting.png)
 
 #### <a name="tenant-and-key-settings"></a>Paramètres de client et de clé
 
-Les paramètres de client et de clé DKE se trouvent dans le fichier **appsettings.js** .
+Les paramètres de clé et de client DKE se trouvent dans le **appsettings.jsfichier.**
 
 **Pour configurer les paramètres de client et de clé pour DKE**
 
-1. Ouvrez le fichier **appsettings.js** .
+1. Ouvrez le **appsettings.jsfichier** on.
 
-2. Recherchez le `ValidIssuers` paramètre et remplacez-le `<tenantid>` par votre ID de client. Vous pouvez localiser votre ID de locataire en accédant au portail Azure et en affichant les [Propriétés du client](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Par exemple :
+2. Recherchez `ValidIssuers` le paramètre et `<tenantid>` remplacez-le par votre ID de client. Vous pouvez localiser votre ID de client en allant sur le portail Azure et en visualisant les [propriétés du client.](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) Par exemple :
 
    ```json
    "ValidIssuers": [
@@ -243,27 +241,27 @@ Les paramètres de client et de clé DKE se trouvent dans le fichier **appsettin
    ]
    ```
 
-Localisez le `JwtAudience` . Remplacez `<yourhostname>` par le nom d’hôte de l’ordinateur sur lequel le service DKE s’exécutera. Par exemple :
+Recherchez `JwtAudience` le . Remplacez `<yourhostname>` par le nom d’hôte de l’ordinateur sur lequel le service DKE s’exécutera. Par exemple :
 
   > [!IMPORTANT]
-  > La valeur de `JwtAudience` doit correspondre *exactement* au nom de votre hôte. Vous pouvez utiliser **localhost : 5001** lors du débogage. Toutefois, lorsque vous avez fini de déboguer, veillez à mettre à jour cette valeur sur le nom d’hôte du serveur.
+  > La valeur doit `JwtAudience` correspondre exactement au nom de votre *hôte.* Vous pouvez utiliser **localhost:5001 lors** du débogage. Toutefois, lorsque vous avez terminé le débogage, veillez à mettre à jour cette valeur sur le nom d’hôte du serveur.
 
 - `TestKeys:Name`. Entrez un nom pour votre clé. Par exemple : `TestKey1`
-- `TestKeys:Id`. Créez un GUID et entrez-le en tant que `TestKeys:ID` valeur. Par exemple, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. Vous pouvez utiliser un site comme le [Générateur de GUID en ligne](https://guidgenerator.com/) pour générer un GUID de manière aléatoire.
+- `TestKeys:Id`. Créez un GUID et entrez-le comme `TestKeys:ID` valeur. Par exemple, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. Vous pouvez utiliser un site tel que [le Générateur de GUID en](https://guidgenerator.com/) ligne pour générer un GUID de manière aléatoire.
 
-Cette image indique le format correct pour les paramètres de client et de clé dans **appsettings.jsactivé**. `LDAPPath` est configuré pour l’autorisation de rôle.
+Cette image montre le format correct pour les paramètres de client et de clés **dansappsettings.jssur**. `LDAPPath` est configuré pour l’autorisation de rôle.
 
-![Indique les paramètres client et clé corrects pour DKE dans le fichier appsettings.js.](../media/dke-appsettingsjson-tenantkeysettings.png)
+![Affiche les paramètres de clé et de client corrects pour DKE dans le fichier appsettings.jssur.](../media/dke-appsettingsjson-tenantkeysettings.png)
 
 ### <a name="generate-test-keys"></a>Générer des clés de test
 
-Une fois que vous avez défini les paramètres de votre application, vous êtes prêt à générer des clés de test publiques et privées.
+Une fois que vous avez défini vos paramètres d’application, vous êtes prêt à générer des clés de test publiques et privées.
 
-Pour générer des clés :
+Pour générer des clés :
 
 1. Dans le menu Démarrer de Windows, exécutez l’invite de commandes OpenSSL.
 
-2. Accédez au dossier dans lequel vous souhaitez enregistrer les clés de test. Les fichiers que vous créez en suivant les étapes de cette tâche sont stockés dans le même dossier.
+2. Modifiez le dossier dans lequel vous souhaitez enregistrer les clés de test. Les fichiers que vous créez en effectuant les étapes de cette tâche sont stockés dans le même dossier.
 
 3. Générez la nouvelle clé de test.
 
@@ -271,30 +269,30 @@ Pour générer des clés :
    openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
    ```
 
-4. Générez la clé privée.
+4. Générer la clé privée.
 
    ```dos
    openssl rsa -in key.pem -out privkeynopass.pem
    ```
 
-5. Générez la clé publique.
+5. Générer la clé publique.
 
    ```dos
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
-6. Dans un éditeur de texte, ouvrez **pubkeyonly. pem**. Copiez tout le contenu du fichier **pubkeyonly. pem** , à l’exception de la première et de la dernière ligne, dans la `PublicPem` section du fichier **appsettings.js** .
+6. Dans un éditeur de texte, ouvrez **pubkeyonly.pem**. Copiez tout le contenu du fichier **pubkeyonly.pem,** à l’exception des première et dernière lignes, dans la section du fichier `PublicPem` **appsettings.jssur.**
 
-7. Dans un éditeur de texte, ouvrez **privkeynopass. pem**. Copiez tout le contenu du fichier **privkeynopass. pem** , à l’exception de la première et de la dernière ligne, dans la `PrivatePem` section du fichier **appsettings.js** .
+7. Dans un éditeur de texte, ouvrez **privkeynopass.pem**. Copiez tout le contenu du fichier **privkeynopass.pem,** à l’exception des première et dernière lignes, dans la section du fichier `PrivatePem` **appsettings.jssur.**
 
-8. Supprimez tous les espaces et lignes de nouvelle ligne dans les `PublicPem` `PrivatePem` sections et.
+8. Supprimez tous les espaces vides et les nouvelles lignes dans les `PublicPem` `PrivatePem` sections et les espaces.
 
     > [!IMPORTANT]
-    > Lorsque vous copiez ce contenu, ne supprimez pas les données du PEM.
+    > Lorsque vous copiez ce contenu, ne supprimez aucune donnée PEM.
 
-9. Dans Visual Studio code, accédez au fichier **Startup.cs** . Ce fichier se trouve dans le DoubleKeyEncryptionService référentiel que vous avez cloné localement sous DoubleKeyEncryptionService\src\customer-key-store\.
+9. Dans Visual Studio code, accédez au **Startup.cs** fichier. Ce fichier se trouve dans le dépôt DoubleKeyEncryptionService que vous avez cloné localement sous DoubleKeyEncryptionService\src\customer-key-store\.
 
-10. Recherchez les lignes suivantes :
+10. Recherchez les lignes suivantes :
 
    ```c#
         #if USE_TEST_KEYS
@@ -304,7 +302,7 @@ Pour générer des clés :
         #endif
    ```
 
-11. Remplacez ces lignes par le texte suivant :
+11. Remplacez ces lignes par le texte suivant :
 
    ```csharp
    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
@@ -312,45 +310,45 @@ Pour générer des clés :
 
    Les résultats finaux doivent ressembler à ce qui suit.
 
-   ![fichier startup.cs pour la préversion publique](../media/dke-startupcs-usetestkeys.png)
+   ![startup.cs pour la prévisualisation publique](../media/dke-startupcs-usetestkeys.png)
 
-Vous êtes maintenant prêt à [créer votre projet DKE](#build-the-project).
+Vous êtes maintenant prêt à [créer votre projet DKE.](#build-the-project)
 
 ### <a name="build-the-project"></a>Générez le projet.
 
-Suivez les instructions ci-dessous pour générer le projet DKE localement :
+Utilisez les instructions suivantes pour créer le projet DKE localement :
 
-1. Dans Visual Studio code, dans le référentiel du service DKE, sélectionnez **Afficher** la \> **palette de commandes** , puis tapez **générer** à l’invite.
+1. Dans Visual Studio Code, dans le référentiel du service DKE, sélectionnez **Afficher** la palette de commandes, puis \>  tapez **build** à l’invite.
 
-2. Dans la liste, choisissez **tâches : exécuter la tâche de génération**.
+2. Dans la liste, choisissez **Tâches : Exécuter la tâche de build.**
 
-   Si aucune tâche de génération n’a été trouvée, sélectionnez **configurer la tâche de génération** et créez-en une pour .net Core comme suit.
+   Si aucune tâche de build n’est trouvée, sélectionnez **Configurer** la tâche de création et créez-en une pour .NET Core comme suit.
 
-   ![Configurer une tâche de génération manquante pour .NET](../media/dke-configurebuildtask.png)
+   ![Configurer la tâche de build manquante pour .NET](../media/dke-configurebuildtask.png)
 
-   1. Choisissez **create tasks.json from template**.
+   1. Choose **Create tasks.json from template**.
 
-      ![Créer tasks.jssur le fichier à partir du modèle pour DKE](../media/dke-createtasksjsonfromtemplate.png)
+      ![Créer tasks.jsfichier à partir d’un modèle pour DKE](../media/dke-createtasksjsonfromtemplate.png)
 
-   2. Dans la liste des types de modèles, sélectionnez **.net Core**.
+   2. Dans la liste des types de modèles, **sélectionnez .NET Core**.
 
-      ![Sélectionnez le modèle approprié pour DKE](../media/dke-tasksjsontemplate.png)
+      ![Sélectionner le modèle correct pour DKE](../media/dke-tasksjsontemplate.png)
 
-   3. Dans la section générer, recherchez le chemin d’accès au fichier **customerkeystore. csproj** . Si ce n’est pas le cas, ajoutez la ligne suivante :
+   3. Dans la section build, recherchez le chemin d’accès au **fichier customerkeystore.csproj.** Si ce n’est pas le cas, ajoutez la ligne suivante :
 
       ```json
       "${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
       ```
 
-   4. Exécutez de nouveau la génération.
+   4. Exécutez à nouveau la build.
 
-3. Vérifiez qu’il n’y a pas d’erreurs rouges dans la fenêtre sortie.
+3. Vérifiez qu’il n’y a aucune erreur rouge dans la fenêtre de sortie.
 
-   S’il y a des erreurs rouges, vérifiez la sortie de la console. Assurez-vous que vous avez effectué toutes les étapes précédentes correctement et que les versions de build correctes sont présentes.
+   En cas d’erreur rouge, vérifiez la sortie de la console. Assurez-vous que toutes les étapes précédentes ont été correctement effectuées et que les versions de build correctes sont présentes.
 
-4. Sélectionnez **exécuter** \> **Démarrer le débogage** pour déboguer le processus. Si vous êtes invité à sélectionner un environnement, sélectionnez **.net Core**.
+4. Sélectionnez  \> **Exécuter le débogage démarrer** pour déboguer le processus. Si vous êtes invité à sélectionner un environnement, sélectionnez **.NET Core**.
 
-Le débogueur .NET Core se lance généralement vers `https://localhost:5001` . Pour afficher votre clé de test, accédez à `https://localhost:5001` et ajoutez une barre oblique (/) et le nom de votre clé. Par exemple :
+Le débogger principal .NET est généralement lancé sur `https://localhost:5001` . Pour afficher votre clé de test, consultez et affichez une barre oblique (/) et le nom `https://localhost:5001` de votre clé. Par exemple :
 
 ```https
 https://localhost:5001/TestKey1
@@ -358,39 +356,39 @@ https://localhost:5001/TestKey1
 
 La clé doit s’afficher au format JSON.
 
-Votre installation est maintenant terminée. Avant de publier le keystore, dans appsettings.jsactivé, pour le paramètre JwtAudience, vérifiez que la valeur de hostname correspond exactement au nom de l’hôte de service de l’application. Vous pouvez l’avoir remplacée par localhost pour dépanner la Build.
+Votre configuration est maintenant terminée. Avant de publier le keystore, dans appsettings.js, pour le paramètre JwtAudience, assurez-vous que la valeur du nom d’hôte correspond exactement au nom d’hôte de votre service d’application. Vous l’avez peut-être changé en localhost pour résoudre les problèmes de build.
 
 ### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>Déployer le service DKE et publier le magasin de clés
 
-Pour les déploiements de production, déployez le service dans un nuage tiers ou [publiez-le sur un système local](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli).
+Pour les déploiements de production, déployez le service dans un cloud tiers ou publiez-le sur [un système local.](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli)
 
-Vous pouvez préférer d’autres méthodes de déploiement de vos clés. Sélectionnez la méthode qui convient le mieux à votre organisation.
+Vous pouvez préférer d’autres méthodes pour déployer vos clés. Sélectionnez la méthode qui fonctionne le mieux pour votre organisation.
 
 Pour les déploiements pilotes, vous pouvez déployer dans Azure et commencer immédiatement.
 
-**Pour créer une instance Azure Web App afin d’héberger votre déploiement DKE**
+**Pour créer une instance Azure Web App pour héberger votre déploiement DKE**
 
-Pour publier le magasin de clés, vous allez créer une instance de service d’application Azure pour héberger votre déploiement DKE. Ensuite, vous allez publier vos clés générées dans Azure.
+Pour publier le magasin de clés, vous allez créer une instance Azure App Service pour héberger votre déploiement DKE. Ensuite, vous allez publier vos clés générées dans Azure.
 
-1. Dans votre navigateur, connectez-vous au [portail Microsoft Azure](https://ms.portal.azure.com)et accédez à **app services**  >  **Add**.
+1. Dans votre navigateur, connectez-vous au portail [Microsoft Azure](https://ms.portal.azure.com)et allez sur Ajouter des **services d’application.**  >  
 
-2. Sélectionnez votre abonnement et le groupe de ressources, puis définissez les détails de votre instance.
+2. Sélectionnez votre abonnement et votre groupe de ressources et définissez les détails de votre instance.
 
-    - Entrez le nom d’hôte de l’ordinateur sur lequel vous souhaitez installer le service DKE. Assurez-vous qu’il s’agit du même nom que celui défini pour le paramètre JwtAudience dans le fichier [**appsettings.js**](#tenant-and-key-settings) . La valeur que vous fournissez pour le nom est également WebAppInstanceName.
+    - Entrez le nom d’hôte de l’ordinateur sur lequel vous souhaitez installer le service DKE. Assurez-vous qu’il s’agit du même nom que celui défini pour le paramètre JwtAudience dans le [**fichierappsettings.jssur.**](#tenant-and-key-settings) La valeur que vous fournissez pour le nom est également WebAppInstanceName.
 
-    - Pour **publier**, sélectionner le **code** et pour la **pile Runtime**, sélectionnez **.net Core 3,1**.
+    - Pour **publier**, sélectionner **du code** et pour la pile **Runtime**, **sélectionnez .NET Core 3.1**.
 
     Par exemple :
 
    ![Ajouter votre service d’application](../media/dke-azure-add-app-service.png)
 
-3. Au bas de la page, sélectionnez **révision + créer**, puis **Ajouter**.
+3. Au bas de la page, sélectionnez **Révision + créer,** puis sélectionnez **Ajouter**.
 
-4. Effectuez l’une des opérations suivantes pour publier vos clés générées :
+4. Pour publier vos clés générées, faites l’une des choses suivantes :
 
     - [Publier via ZipDeployUI](#publish-via-zipdeployui)
     - [Publier via FTP](#publish-via-ftp)
-    - [Publier via Visual Studio 2019 ou version ultérieure](https://docs.microsoft.com/aspnet/core/tutorials/)
+    - [Publier via Visual Studio 2019 ou ultérieure](https://docs.microsoft.com/aspnet/core/tutorials/)
 
 #### <a name="publish-via-zipdeployui"></a>Publier via ZipDeployUI
 
@@ -398,146 +396,148 @@ Pour publier le magasin de clés, vous allez créer une instance de service d’
 
     Par exemple : https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
-2. Dans la base de code pour le magasin de clés, accédez au dossier **Customer-Key-store\src\customer-Key-Store** et vérifiez que ce dossier contient le fichier **customerkeystore. csproj** .
+2. Dans le codebase du magasin de clés, allez dans le dossier **customer-key-store\src\customer-key-store** et vérifiez que ce dossier contient le fichier **customerkeystore.csproj.**
 
-3. Exécuter : **publication dotnet**
+3. Run: **dotnet publish**
 
-     La fenêtre sortie affiche le répertoire dans lequel la publication a été déployée.
+     La fenêtre de sortie affiche le répertoire dans lequel la publication a été déployée.
 
     Par exemple : `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-4. Envoyez tous les fichiers du répertoire de publication dans un fichier. zip. Lors de la création du fichier. zip, assurez-vous que tous les fichiers du répertoire sont au niveau racine du fichier. zip.
+4. Envoyez tous les fichiers du répertoire de publication vers un fichier .zip. Lors de la création du fichier .zip, assurez-vous que tous les fichiers du répertoire sont au niveau racine du fichier .zip.
 
-5. Faites glisser et déposez le fichier. zip que vous créez sur le site ZipDeployUI que vous avez ouvert ci-dessus. Par exemple : https://dkeservice.scm.azurewebsites.net/ZipDeployUI
+5. Faites glisser et déposez le fichier .zip que vous créez sur le site ZipDeployUI que vous avez ouvert ci-dessus. Par exemple : https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
-DKE est déployé et vous pouvez accéder aux clés de test que vous avez créées. Poursuivez [la validation de votre déploiement](#validate-your-deployment) ci-dessous.
+DKE est déployé et vous pouvez parcourir les clés de test que vous avez créées. Continuez à [valider votre déploiement ci-dessous.](#validate-your-deployment)
 
 #### <a name="publish-via-ftp"></a>Publier via FTP
 
-1. Connectez-vous au service d’application que vous avez créé [ci-dessus](#deploy-the-dke-service-and-publish-the-key-store).
+1. Connectez-vous au service d’application que vous avez créé [ci-dessus.](#deploy-the-dke-service-and-publish-the-key-store)
 
-    Dans votre navigateur, accédez à :   >    >  **Centre de déploiement** de  >  **déploiement manuel**  >    >  du centre de déploiement Azure Portal App.
+    Dans votre navigateur, go to: **Azure portal**  >  **App Service** Deployment  >  **Center**  >  **Manual Deployment**  >  **FTP**  >  **Dashboard**.
 
-2. Copiez les chaînes de connexion affichées dans un fichier local. Vous utiliserez ces chaînes pour vous connecter au service d’application Web et télécharger des fichiers via FTP.
+2. Copiez les chaînes de connexion affichées dans un fichier local. Vous utiliserez ces chaînes pour vous connecter au service Web App Et charger des fichiers via FTP.
 
     Par exemple :
 
    ![Copier des chaînes de connexion à partir du tableau de bord FTP](../media/dke-ftp-dashboard.png)
 
-3. Dans la base de code pour le stockage de clés, accédez au **répertoire Customer-Key-store\src\customer-Key-Store**
+3. Dans le codebase du stockage de clés, allez dans le répertoire **customer-key-store\src\customer-key-store.**
 
-4. Vérifiez que ce répertoire contient le fichier **customerkeystore. csproj** .
+4. Vérifiez que ce répertoire contient le **fichier customerkeystore.csproj.**
 
-5. Exécuter : **publication dotnet**
+5. Run: **dotnet publish**
 
     La sortie contient le répertoire dans lequel la publication a été déployée.
 
     Par exemple : `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-6. Envoyez tous les fichiers du répertoire de publication dans un fichier zip. Lors de la création du fichier. zip, assurez-vous que tous les fichiers du répertoire sont au niveau racine du fichier. zip.
+6. Envoyez tous les fichiers du répertoire de publication vers un fichier zip. Lors de la création du fichier .zip, assurez-vous que tous les fichiers du répertoire sont au niveau racine du fichier .zip.
 
-7. À partir de votre client FTP, utilisez les informations de connexion que vous avez copiées pour vous connecter à votre service d’application. Téléchargez le fichier. zip que vous avez créé à l’étape précédente dans le répertoire racine de votre application Web.
+7. À partir de votre client FTP, utilisez les informations de connexion que vous avez copiées pour vous connecter à votre service d’application. Téléchargez le fichier .zip que vous avez créé à l’étape précédente dans le répertoire racine de votre application Web.
 
-DKE est déployé et vous pouvez accéder aux clés de test que vous auriez créées. Ensuite, [validez votre déploiement](#validate-your-deployment).
+DKE est déployé et vous pouvez naviguer jusqu’aux clés de test que vous avez créées. Ensuite, [validez votre déploiement.](#validate-your-deployment)
 
 ### <a name="validate-your-deployment"></a>Valider votre déploiement
 
-Après avoir déployé DKE à l’aide de l’une des méthodes décrites ci-dessus, validez les principaux paramètres de déploiement et de magasin de clés.
+Après avoir déployé DKE à l’aide de l’une des méthodes décrites ci-dessus, validez le déploiement et les paramètres du magasin de clés.
 
-Générer
+Exécutez :
 
-src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/MyKey
+src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
 
 Par exemple :
 
 key_store_tester.ps1 https://mydkeservice.com/mykey
 
-Assurez-vous qu’aucune erreur ne s’affiche dans la sortie. Lorsque vous êtes prêt, [Enregistrez votre magasin de clés](#register-your-key-store).
+Assurez-vous qu’aucune erreur n’apparaît dans la sortie. Lorsque vous êtes prêt, inscrivez [votre magasin de clés.](#register-your-key-store)
 
-## <a name="register-your-key-store"></a>Enregistrer votre magasin de clés
+Le nom de la clé est sensible à la cas. Entrez le nom de la clé tel qu’il apparaît dans appsettings.jsfichier.
 
-Les étapes suivantes vous permettent d’enregistrer votre service DKE. L’inscription de votre service DKE est la dernière étape du déploiement de DKE avant de pouvoir commencer à créer des étiquettes.
+## <a name="register-your-key-store"></a>Inscrire votre magasin de clés
 
-Pour enregistrer le service DKE :
+Les étapes suivantes vous permettent d’inscrire votre service DKE. L’inscription de votre service DKE est la dernière étape du déploiement du DKE avant de commencer à créer des étiquettes.
 
-1. Dans votre navigateur, ouvrez le [portail Microsoft Azure](https://ms.portal.azure.com/), puis accédez à **toutes les** \>  \> **inscriptions des applications d'** identité des services.
+Pour inscrire le service DKE :
 
-2. Sélectionnez **nouvelle inscription**, puis entrez un nom explicite.
+1. Dans votre navigateur, ouvrez [le portail Microsoft Azure](https://ms.portal.azure.com/)et go to All **Services** \> **Identity** \> **App Registrations**.
 
-3. Sélectionnez un type de compte parmi les options affichées.
+2. Sélectionnez **Nouvelle inscription,** puis entrez un nom significatif.
 
-    Si vous utilisez Microsoft Azure avec un domaine non personnalisé, tel que **onmicrosoft.com**, sélectionnez **comptes dans cet annuaire d’organisation uniquement (Microsoft uniquement-client unique).**
+3. Sélectionnez un type de compte dans les options affichées.
+
+    Si vous utilisez Microsoft Azure avec un domaine non personnalisé, tel que **onmicrosoft.com**, sélectionnez Comptes dans cet annuaire d’organisation uniquement **(Microsoft uniquement -** Client unique).
 
     Par exemple :
 
-   ![Inscription de l’application](../media/dke-app-registration.png)
+   ![Nouvelle inscription d’application](../media/dke-app-registration.png)
 
-4. Au bas de la page, sélectionnez **Enregistrer** pour créer la nouvelle inscription de l’application.
+4. En bas de la page, sélectionnez **Enregistrer** pour créer la nouvelle inscription d’application.
 
-5. Dans la nouvelle inscription de l’application, dans le volet gauche, sous **gérer**, sélectionnez **authentification**.
+5. Dans votre nouvelle inscription d’application, dans le volet gauche, sous **Gérer**, sélectionnez **Authentification.**
 
-6. Sélectionnez **Ajouter une plateforme**.
+6. Sélectionnez **Ajouter une plateforme.**
 
-7. Dans la fenêtre contextuelle **configurer les plateformes** , sélectionnez **Web**.
+7. Dans la **fenêtre popup Configurer les plateformes,** sélectionnez **Web.**
 
-8. Sous **URI de redirection**, entrez l’URI de votre service de chiffrement à double clé. Entrez l’URL du service d’application, y compris le nom d’hôte et le domaine.
+8. Sous **URI de redirection,** entrez l’URI de votre service de chiffrement à double clé. Entrez l’URL du service d’application, y compris le nom d’hôte et le domaine.
 
     Par exemple : https://mydkeservicetest.com
 
-    - L’URL que vous entrez doit correspondre au nom d’hôte dans lequel votre service DKE est déployé.
+    - L’URL que vous entrez doit correspondre au nom d’hôte où votre service DKE est déployé.
     - Si vous testez localement avec Visual Studio, utilisez **https://localhost:5001** .
-    - Dans tous les cas, le modèle doit être **https**.
+    - Dans tous les cas, le schéma doit être **https**.
 
-    Vérifiez que le nom d’hôte correspond exactement au nom d’hôte de votre service d’application. Vous pouvez l’avoir modifié sur `localhost` pour dépanner la Build. Dans **appsettings.jsactivé**, cette valeur est le nom d’hôte que vous avez défini pour `JwtAudience` .
+    Assurez-vous que le nom d’hôte correspond exactement au nom d’hôte de votre service d’application. Vous l’avez peut-être modifié `localhost` pour résoudre les problèmes de la build. In **appsettings.json**, this value is the hostname you set for `JwtAudience` .
 
-9. Sous **attribution implicite**, activez la case à cocher **jetons d’ID** .
+9. Sous **Octroi implicite,** cochez la **case des jetons d’ID.**
 
 10. Sélectionnez **Enregistrer** pour enregistrer vos modifications.
 
-11. Dans le volet de gauche, sélectionnez **exposer une API**, puis en regard de l’ID d’application URI, sélectionnez **Set**.
+11. Dans le volet gauche, sélectionnez **Exposer une API,** puis en de côté de l’URI ID d’application, sélectionnez **Définir**.
 
-12. Toujours sur la page **exposer une API** , dans la zone **étendues définies par cette API** , sélectionnez **Ajouter une étendue**. Dans la nouvelle étendue :
+12. Toujours dans la page **Exposer une API,** dans les étendues définies par cette **zone d’API,** **sélectionnez Ajouter une étendue.** Dans la nouvelle étendue :
 
-    1. Définissez le nom de l’étendue en tant que **user_impersonation**.
+    1. Définissez le nom de **l’étendue comme user_impersonation**.
 
-    2. Sélectionnez les administrateurs et les utilisateurs qui peuvent consentir.
+    2. Sélectionnez les administrateurs et les utilisateurs qui peuvent donner leur consentement.
 
     3. Définissez les valeurs restantes requises.
 
     4. Sélectionnez **Ajouter une étendue**.
 
-    5. Sélectionnez **Enregistrer** dans la partie supérieure pour enregistrer vos modifications.
+    5. Sélectionnez **Enregistrer** en haut pour enregistrer vos modifications.
 
-13. Toujours sur la page **exposer une API** , dans la zone **applications clientes autorisées** , sélectionnez **Ajouter une application cliente**.
+13. Toujours dans la page **Exposer une API,** dans la zone **Applications clientes** autorisées, **sélectionnez Ajouter une application cliente.**
 
-    Dans la nouvelle application cliente :
+    Dans la nouvelle application cliente :
 
-    1. Définissez l’ID client comme **d3590ed6-52b3-4102-Aeff-aad2292ab01c**. Cette valeur est l’ID client Microsoft Office et permet à Office d’obtenir un jeton d’accès pour votre magasin de clés.
+    1. Définissez l’ID client comme **d3590ed6-52b3-4102-aeff-aad2292ab01c**. Cette valeur est l’ID Microsoft Office client et permet à Office d’obtenir un jeton d’accès pour votre magasin de clés.
 
-    2. Sous **étendues autorisées**, sélectionnez l’étendue **user_impersonation** .
+    2. Sous **Étendues autorisées,** sélectionnez **l’user_impersonation** étendue.
 
     3. Sélectionnez **Ajouter une application**.
 
-    4. Sélectionnez **Enregistrer** dans la partie supérieure pour enregistrer vos modifications.
+    4. Sélectionnez **Enregistrer** en haut pour enregistrer vos modifications.
 
-Votre service DKE est maintenant enregistré. Continuez en [créant des étiquettes à l’aide de DKE](#create-sensitivity-labels-using-dke).
+Votre service DKE est maintenant inscrit. Continuez en [créant des étiquettes à l’aide de DKE](#create-sensitivity-labels-using-dke).
 
-## <a name="create-sensitivity-labels-using-dke"></a>Créer des étiquettes de confidentialité à l’aide de DKE
+## <a name="create-sensitivity-labels-using-dke"></a>Créer des étiquettes de niveau de sensibilité à l’aide du DKE
 
-Dans le centre de conformité Microsoft 365, créez une étiquette de sensibilité et appliquez le chiffrement comme vous le feriez autrement. Sélectionnez **utiliser le chiffrement à double clé** et entrez l’URL du point de terminaison de votre clé.
+Dans le Centre de conformité Microsoft 365, créez une étiquette de sensibilité et appliquez le chiffrement comme vous le feriez autrement. Sélectionnez **Utiliser le chiffrement à double** clé et entrez l’URL du point de terminaison de votre clé.
 
 Par exemple :
 
-![Sélectionnez utiliser le chiffrement à double clé dans le centre de conformité Microsoft 365](../media/dke-use-dke.png)
+![Sélectionnez Utiliser le chiffrement à double clé dans le Centre de conformité Microsoft 365](../media/dke-use-dke.png)
 
-Toutes les étiquettes DKE que vous ajoutez commencent à apparaître pour les utilisateurs dans les versions les plus récentes des applications Microsoft 365 pour entreprises.
+Les étiquettes DKE que vous ajoutez commenceront à apparaître pour les utilisateurs dans les dernières versions de Microsoft 365 Apps for enterprise.
 
 > [!NOTE]
 > L’actualisation des clients avec les nouvelles étiquettes peut prendre jusqu’à 24 heures.
 
-### <a name="enable-dke-in-your-client"></a>Activer DKE dans votre client
+### <a name="enable-dke-in-your-client"></a>Activer le DKE dans votre client
 
-Si vous êtes un Office Insider, DKE est activé pour vous. Dans le cas contraire, activez DKE pour votre client en ajoutant les clés de Registre suivantes :
+Si vous êtes un Office Insider, DKE est activé pour vous. Sinon, activez DKE pour votre client en ajoutant les clés de Registre suivantes :
 
 ```properties
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
@@ -547,8 +547,8 @@ Si vous êtes un Office Insider, DKE est activé pour vous. Dans le cas contrair
     "DoubleKeyProtection"=dword:00000001
 ```
 
-## <a name="migrate-protected-files-from-hyok-labels-to-dke-labels"></a>Migrer des fichiers protégés des étiquettes HYOK vers les étiquettes DKE
+## <a name="migrate-protected-files-from-hyok-labels-to-dke-labels"></a>Migrer des fichiers protégés des étiquettes HYOK vers des étiquettes DKE
 
-Si vous le souhaitez, une fois que vous avez terminé la configuration de DKE, vous pouvez migrer le contenu que vous avez protégé à l’aide des étiquettes HYOK vers les étiquettes DKE. Pour effectuer la migration, vous utiliserez le scanneur AIP. Pour commencer à utiliser le scanneur, voir [qu’est-ce que le scanneur d’étiquetage unifié Azure information protection ?](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner).
+Si vous le souhaitez, une fois que vous avez terminé la configuration du DKE, vous pouvez migrer le contenu que vous avez protégé à l’aide d’étiquettes HYOK vers des étiquettes DKE. Pour migrer, vous allez utiliser le scanneur AIP. Pour commencer à utiliser le scanneur, voir [Qu’est-ce](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)que le scanneur d’étiquetage unifié Azure Information Protection ?
 
-Si vous ne migrez pas le contenu, votre contenu protégé HYOK restera non affecté.
+Si vous ne migrez pas de contenu, votre contenu protégé HYOK reste inchangé.
