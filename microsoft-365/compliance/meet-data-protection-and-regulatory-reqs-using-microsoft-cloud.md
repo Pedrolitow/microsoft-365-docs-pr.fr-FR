@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Découvrez comment utiliser le Gestionnaire de conformité dans le portail d’approbation de services Microsoft pour satisfaire les exigences en matière de protection des données et de réglementation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac0cd758717161e3b5cf727dd478d1e06f0d6375
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: f527aae2d36e392ecd646d48263a01b20a0785e8
+ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682807"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50050398"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Gestionnaire de conformité Microsoft (classique)
 
 > [!IMPORTANT]
-> **Le Gestionnaire de Conformité est désormais disponible dans le [centre de conformité Microsoft 365](https://compliance.microsoft.com/). Nous recommandons vivement aux clients de cesser d’utiliser le Gestionnaire de conformité (Classique) et de passer au nouveau Gestionnaire de Conformité pour bénéficier de l’expérience utilisateur enrichie et de la mise à jour de la cartographie du contrôle. Veuillez consulter notre [ Documentation de Gestionnaire de Conformité](compliance-manager.md) pour configurer et commencer l’utilisation du nouveau Gestionnaire de conformité dans le centre de conformité Microsoft 365.**
+> **Le Gestionnaire de conformité (classique) sera bientôt supprimé du portail de confiance du service Microsoft.** Nous vous recommandons de passer au nouveau Gestionnaire de conformité [dans le Centre de conformité Microsoft 365](https://compliance.microsoft.com/), qui offre une expérience utilisateur améliorée et un mappage des contrôles mis à jour. Les clients ayant des évaluations dans la version classique doivent créer de nouvelles évaluations dans le nouveau Gestionnaire de conformité. Les données existantes, y compris vos évaluations, contrôles et autres données, ne seront pas transférées vers le nouveau Gestionnaire de conformité. [En savoir plus sur la transition](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal).
 
 *Le Gestionnaire de conformité n’est pas disponible dans Office 365 géré par 21Vianet, Office 365 Germany, Office 365 U.S. GCC High ou Office 365 Department of Defense.*
 
