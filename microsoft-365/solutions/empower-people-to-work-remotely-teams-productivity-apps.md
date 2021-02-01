@@ -17,21 +17,24 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Permettez à vos utilisateurs d’être productifs grâce à Teams, Exchange, SharePoint et les autres services Microsoft 365.
-ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681407"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055489"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Étape 5. Déployer les applications et les services de productivité des travailleurs à distance
 
 Pour être productifs, les employés doivent communiquer et collaborer les uns avec les autres. Ils doivent pouvoir se réunir, discuter par voie vocale ou textuelle, créer du contenu, partager des informations et des fichiers, échanger des messages électroniques et gérer les calendriers et les tâches. Microsoft 365 fournit des services cloud pour toutes ces fonctions essentielles :
 
-- Pour maintenir le contact entre vos employés, alors qu’ils doivent travailler séparément, utilisez Microsoft Teams, qui fournit, un centre commun de communication pour les réunions, les conversations et le stockage de fichiers pour l’organisation et les départements, mais aussi pour les petites équipes et les particuliers. 
-- Pour échanger des messages électroniques et gérer les calendriers, les contacts et les tâches, utilisez Exchange Online et le client Outlook.
-- Pour le stockage des fichiers et la collaboration, utilisez SharePoint et OneDrive. Vous pouvez les utiliser avec un navigateur web ou dans Teams.
-- Pour la création de contenu ou la collaboration sur du contenu existant, les Applications Microsoft 365 sont des versions de Word, PowerPoint, Excel et Outlook, installées sur votre ordinateur local, et qui reçoivent des mises à jour de fonctionnalité et de sécurité régulières.
+| Fonction TI | Composants de Microsoft 365 | Description |
+|:-------|:-----|:-------|
+| Services de messagerie | Exchange Online | Messagerie Exchange et gestion des calendriers, des contacts et des tâches avec le client Outlook. |
+| Conversation d’entreprise, protocole voix sur IP (VOIP) et collaboration en équipe | Microsoft Teams | Maintenez le contact entre vos employés, alors qu’ils doivent travailler séparément grâce à un centre commun de communication pour les réunions, les conversations et le stockage de fichiers pour l’organisation et les départements, mais aussi pour les petites équipes et les particuliers. |
+| Sites intranet, collaboration sur des documents | SharePoint et OneDrive | Stocker et collaborer sur des fichiers dans un navigateur web ou au sein de Teams. |
+| Applications Office de bureau et appareil mobile | Microsoft 365 Apps | Crez de contenu ou collaborez sur du contenu existant avec les versions de Word, PowerPoint, Excel et Outlook, installées sur votre ordinateur local, et qui reçoivent des mises à jour de fonctionnalité et de sécurité régulières. |
+||||
 
 ![Utiliser les applications Teams, Outlook, SharePoint, OneDrive et Microsoft 365 pour rester productif](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 

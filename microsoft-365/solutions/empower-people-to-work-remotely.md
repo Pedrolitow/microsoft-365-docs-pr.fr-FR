@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Vérifiez que vous avez bien activé toutes les fonctionnalités de Microsoft 365. Ce faisant, vous pourrez optimiser la productivité des télétravailleurs et sécuriser l’accès à vos serveurs, vos données et votre cloud.
-ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: aa72ba0c47acdd507bf86a082c9b4c2a87e3f1ef
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616355"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055518"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
@@ -37,11 +37,16 @@ Microsoft 365 offre les fonctionnalités qui permettent à vos employés de tra
 
 ![Confier des responsabilités aux travailleurs à distance avec Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
+>[!Note]
+>Si vous découvrez Microsoft 365 pour la première fois, consultez [ces ressources](https://www.microsoft.com/microsoft-365).
+>
+
 Regardez cette vidéo de présentation du processus de déploiement.
+<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-Cette solution fournit ces fonctionnalités clés.
+Pour les professionnels de l’informatique qui gèrent une infrastructure sur site et dans le cloud afin de favoriser la productivité des employés, cette solution fournit les fonctionnalités clés ci-après :
 
 - Connecté
 
