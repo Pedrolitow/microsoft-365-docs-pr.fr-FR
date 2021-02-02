@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Découvrez comment Exchange Online et Microsoft 365 utilisent TLS (Transport Layer Security) et FS (Forward Secrecy) pour sécuriser les communications électroniques. Obtenez également des informations sur le certificat émis par Microsoft pour Exchange Online.
-ms.openlocfilehash: 507a152130113868293d8d08441f298e5f5ae512
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 67be87bc07399af9469728383af1caf604bf1372
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058457"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066827"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie
 
@@ -61,9 +61,9 @@ Pour les clients Exchange Online, afin que le TLS forcé sécurise l’ensemble
 
 Les informations du certificat utilisées par Exchange Online sont décrites dans le tableau suivant. Si votre partenaire commercial configure le TLS forcé sur son serveur de messagerie, vous devez lui fournir ces informations. N’oubliez pas que, pour des raisons de sécurité, nos certificats sont modifiés de temps à autre. Nous avons déployé une mise à jour de notre certificat dans nos centres de données. Le nouveau certificat est valide à partir du 3 septembre 2018.
   
- **Informations de certificat actuelles valides à partir du 3 septembre 2018**
+ **Informations de certificat actuelles valides depuis le 3 septembre 2018**
   
-|**Attribut**|**Valeur**|
+| Attribut | Valeur |
 |:-----|:-----|
 |Émetteur racine de l’autorité de certification  <br/> |GlobalSign Root CA – R1 <br/> |
 |Nom du certificat  <br/> |mail.protection.outlook.com  <br/> |
@@ -77,7 +77,7 @@ Pour garantir une transition fluide, nous continuerons à fournir les anciennes 
   
 ****
 
-|**Attribut**|**Valeur**|
+| Attribut | Valeur |
 |:-----|:-----|
 |Émetteur racine de l’autorité de certification  <br/> |Baltimore CyberTrust Root  <br/> |
 |Nom du certificat  <br/> |mail.protection.outlook.com  <br/> |
@@ -93,15 +93,18 @@ Le nouveau certificat nécessite une connexion aux points de terminaison de la n
 
 1. Connectez-vous à votre Exchange Server à l’Windows PowerShell puis exécutez la commande suivante :  
   `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
-2. Dans la fenêtre qui s’affiche, choisissez **Récupérer.**
-3. Lorsque l’utilitaire termine sa vérification, il renvoie un état. Si l’état affiche **OK,** votre serveur de messagerie peut valider correctement le nouveau certificat. Si ce n’est pas le cas, vous devez déterminer la cause de l’échec des connexions. Vous devez probablement mettre à jour les paramètres d’un pare-feu. La liste complète des points de terminaison qui doivent être accessibles est la suivante :
+
+1. Dans la fenêtre qui s’affiche, choisissez **Récupérer.**
+
+1. Lorsque l’utilitaire termine sa vérification, il renvoie un état. Si l’état affiche **OK,** votre serveur de messagerie peut valider correctement le nouveau certificat. Si ce n’est pas le cas, vous devez déterminer la cause de l’échec des connexions. Vous devez probablement mettre à jour les paramètres d’un pare-feu. La liste complète des points de terminaison qui doivent être accessibles est la suivante :
     - ocsp.globalsign.com
-     - crl.globalsign.com
-     - secure.globalsign.com   
+    - crl.globalsign.com
+    - secure.globalsign.com   
 
 Normalement, vous recevez automatiquement des mises à jour de vos certificats racine via Windows Update. Toutefois, certains déploiements ont mis en place une sécurité supplémentaire qui empêche ces mises à jour de se produire automatiquement. Dans ces déploiements verrouillés où Windows Update ne peut pas mettre à jour automatiquement les certificats racines, vous devez vous assurer que le certificat d’ac racine correct est installé en effectuant les étapes suivantes :
 1.  Connectez-vous à votre Exchange Server à l’Windows PowerShell puis exécutez la commande suivante :  
   `certmgr.msc`
+
 2. Sous **Autorité de certification racine de confiance/Certificats**, confirmez que le nouveau certificat est répertorié.
 
 ## <a name="get-more-information-about-tls-and-microsoft-365"></a>Obtenir plus d’informations sur TLS et Microsoft 365

@@ -1,6 +1,6 @@
 ---
 title: Changements d’appellation dans le schéma de recherche avancée Microsoft 365 Defender
-description: Suivre et passer en revue les tables et les colonnes des modifications d’attribution de noms dans le schéma de recherche avancé
+description: Suivre et passer en revue les tables et colonnes de modifications d’attribution de noms dans le schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 483fedd1fb152e3df5311c981b305e621ec2aec3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3f03543b03dca5fe426700ffff4f5c6edb8fa3c7
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932201"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066868"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de recherche avancé : modifications d’attribution de noms
 
@@ -47,10 +47,32 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 
 | Nom du tableau | Nom de colonne d’origine | Nouveau nom de colonne | Raison du changement
 |--|--|--|--|
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailAction | EmailAction | Commentaires des clients. |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicy | EmailActionPolicy | Commentaires des clients. |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicyGuid | EmailActionPolicyGuid | Commentaires des clients. |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailAction` | `EmailAction` | Commentaires des clients. |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicy` | `EmailActionPolicy` | Commentaires des clients. |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicyGuid` | `EmailActionPolicyGuid` | Commentaires des clients. |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="january-2021"></a>Janvier 2021
+
+| Nom de colonne | Nom de la valeur d’origine | Nouveau nom de valeur | Raison du changement
+|--|--|--|--|
+| `DetectionSource` | MCAS |    Microsoft Cloud App Security | Changement de nom |
+| `DetectionSource` | WindowsDefenderAtp|   EDR| Changement de nom |
+| `DetectionSource` | WindowsDefenderAv | Antivirus | Changement de nom |
+| `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Changement de nom |
+| `DetectionSource` | CustomerTI |  Ti personnalisée | Changement de nom |
+| `DetectionSource` | OfficeATP | Microsoft Defender pour Office 365 | Changement de nom |
+| `DetectionSource` | MTP   | Microsoft 365 Defender | Changement de nom |
+| `DetectionSource` | AzureATP |    Microsoft Defender pour Identity | Changement de nom |
+| `DetectionSource` | CustomDetection   | Détection personnalisée | Changement de nom |
+| `DetectionSource` | AutomatedIgoigation |Examen automatisé | Changement de nom |
+| `DetectionSource` | ThreatExperts | Spécialistes des menaces Microsoft | Changement de nom |
+| `DetectionSource` | Ti tiers | Capteurs tiers | Changement de nom |
+| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender pour point de terminaison | Changement de nom |
+|`ServiceSource` |Protection Microsoft contre les menaces   | Microsoft 365 Defender | Changement de nom |
+| `ServiceSource` | Office 365 – Protection avancée contre les menaces  |Microsoft Defender pour Office 365 | Changement de nom |
+| `ServiceSource` |Azure ATP    |Microsoft Defender pour Identity | Changement de nom |
+
+`DetectionSource`est disponible dans la table [AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`est disponible dans les tables [AlertEvidence](advanced-hunting-alertevidence-table.md) et [AlertInfo.](advanced-hunting-alertinfo-table.md) 
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

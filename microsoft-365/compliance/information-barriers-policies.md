@@ -15,16 +15,16 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80123674644b47c76becb92fa08c21f4668614b2
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 284036fecf53252bb29878482dbf6dec42eeeaeb
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980056"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071259"
 ---
 # <a name="define-information-barrier-policies"></a>Définir des stratégies d’obstacle aux informations
 
-Avec les obstacles à l’information, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer entre eux, ou autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies d’obstacle à l’information peuvent aider votre organisation à maintenir la conformité avec les normes et réglementations du secteur pertinentes et à éviter les conflits d’intérêts potentiels. Pour plus d’informations, voir [Obstacles à l’information.](information-barriers.md)
+Avec les obstacles à l’information, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer entre eux, ou autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies d’obstacle à l’information peuvent aider votre organisation à maintenir la conformité avec les normes et réglementations pertinentes du secteur et à éviter les conflits d’intérêts potentiels. Pour en savoir plus, voir [Obstacles à l’information.](information-barriers.md)
 
 Cet article explique comment planifier, définir, implémenter et gérer des stratégies d’obstacle à l’information. Plusieurs étapes sont impliquées et le flux de travail est divisé en plusieurs parties. Veillez à lire les conditions [préalables](#prerequisites) et l’ensemble du processus avant de commencer à définir (ou modifier) des stratégies d’obstacle à l’information.
 
@@ -39,7 +39,7 @@ Lorsque vous définissez des stratégies pour les obstacles à l’information, 
 - Les segments sont des ensembles d’utilisateurs définis dans le Centre de sécurité & conformité à l’aide d’un attribut de compte **d’utilisateur sélectionné.** (consultez la [liste des attributs pris en charge](information-barriers-attributes.md)).
 - Les stratégies de cloisonnement de l’information déterminent les limites ou les restrictions de communication. Lorsque vous définissez des stratégies de cloisonnement de l’information, vous avez le choix entre deux types de stratégie :
     - Les stratégies « Bloquer » empêchent un segment de communiquer avec un autre segment.
-    - Les stratégies d'« autoriser » permettent à un segment de communiquer uniquement avec certains autres segments.
+    - Les stratégies « Autoriser » permettent à un segment de communiquer uniquement avec certains autres segments.
 - L’application de la stratégie est effectuée une fois toutes les stratégies de cloisonnement de l’information sont définies et que vous êtes prêt à les appliquer au sein de votre organisation.
 
 ## <a name="the-work-flow-at-a-glance"></a>Flux de travail en un clin d’œil
@@ -48,12 +48,12 @@ Lorsque vous définissez des stratégies pour les obstacles à l’information, 
 |:--------|:------------------|
 | [S’assurer que les conditions préalables sont remplies](#prerequisites) | - Vérifier que vous avez les [licences et autorisations requises](information-barriers.md#required-licenses-and-permissions)<br/>- Vérifier que votre annuaire inclut des données pour segmenter les utilisateurs<br/>- Activer la recherche d’annuaire étendue pour Microsoft Teams<br/>- Assurez-vous que la journalisation d’audit est allumée<br/>- Assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est en place<br/>- Utiliser PowerShell (des exemples sont fournis)<br/>- Fournir le consentement de l’administrateur pour Microsoft Teams (les étapes sont incluses) |
 | [Partie 1 : segmenter les utilisateurs de votre organisation](#part-1-segment-users) | - Déterminer les stratégies nécessaires<br/>- Établir une liste de segments à définir<br/>- Identifier les attributs à utiliser<br/>- Définir des segments en termes de filtres de stratégie |
-| [Partie 2 : définir des stratégies de obstacle aux informations](#part-2-define-information-barrier-policies) | - Définir vos stratégies (ne pas encore s’appliquer)<br/>- Choisir parmi deux types (bloquer ou autoriser) |
+| [Partie 2 : définir des stratégies de obstacle aux informations](#part-2-define-information-barrier-policies) | - Définir vos stratégies (ne s’appliquent pas encore)<br/>- Choisir parmi deux types (bloquer ou autoriser) |
 | [Partie 3 : appliquer des stratégies de obstacle à l’information](#part-3-apply-information-barrier-policies) | - Définir des stratégies sur l’état actif<br/>- Exécuter l’application de stratégie<br/>- Afficher l’état de la stratégie |
 | (Selon les besoins) [Modifier un segment ou une stratégie](information-barriers-edit-segments-policies.md) | - Modifier un segment<br/>- Modifier ou supprimer une stratégie<br/>- Réexécuter l’application de stratégie<br/>- Afficher l’état de la stratégie |
 | (Selon les besoins) [Résolution des problèmes](information-barriers-troubleshooting.md)| - Prendre des mesures lorsque les choses ne fonctionnent pas comme prévu|
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 En plus des [licences et autorisations requises,](information-barriers.md#required-licenses-and-permissions)assurez-vous que les conditions suivantes sont remplies :
 
@@ -68,13 +68,13 @@ En plus des [licences et autorisations requises,](information-barriers.md#requir
 
 - Journalisation d’audit : pour rechercher l’état d’une application de stratégie, l’enregistrement d’audit doit être allumé. Nous vous recommandons d’activer l’audit avant de commencer à définir des segments ou des stratégies. Pour plus d’informations, voir Activer ou désactiver la [recherche dans le journal d’audit.](turn-audit-log-search-on-or-off.md)
 
-- Aucune stratégie de carnet d’adresses - Avant de définir et d’appliquer des stratégies de obstacle aux informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous avez de telles stratégies, veillez d’abord [à supprimer vos stratégies de carnet d’adresses.](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) Une fois que les stratégies d’obstacle aux informations sont activées et que le carnet d’adresses hiérarchique est activé, tous les utilisateurs *_*_* qui ne sont pas inclus _ dans un segment d’obstacles à l’information voient le carnet d’adresses hiérarchique dans Exchange Online. [](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)
+- Aucune stratégie de carnet d’adresses - Avant de définir et d’appliquer des stratégies de barrières aux informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous avez de telles stratégies, veillez d’abord à supprimer [vos stratégies de carnet d’adresses.](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) Une fois que les stratégies d’obstacles à l’information sont activées et que le [](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) carnet d’adresses hiérarchique est activé, tous les utilisateurs *_*_* qui ne sont pas inclus _ dans un segment d’obstacles à l’information voient le carnet d’adresses hiérarchique dans Exchange Online.
 
 - PowerShell : actuellement, les stratégies d’obstacle aux informations sont définies et gérées dans le Centre de sécurité et conformité Office 365 & à l’aide des cmdlets PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et paramètres PowerShell. Vous aurez également besoin du module Azure PowerShell.
     - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
     - [Installer le module Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
-- Consentement de l’administrateur pour les obstacles aux informations dans Microsoft Teams : lorsque vos stratégies sont en place, les obstacles à l’information peuvent supprimer les personnes des sessions de conversation qu’elles ne sont pas supposées être. Cette configuration permet de s’assurer que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies d’obstacle aux informations de fonctionner comme prévu dans Microsoft Teams.
+- Consentement de l’administrateur pour les obstacles aux informations dans Microsoft Teams : lorsque vos stratégies sont en place, les obstacles à l’information peuvent supprimer les personnes des sessions de conversation qu’elles ne sont pas supposées être. Cette configuration permet de garantir que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies d’obstacle aux informations de fonctionner comme prévu dans Microsoft Teams.
 
    1. Exécutez les cmdlets PowerShell suivantes :
 
@@ -110,7 +110,7 @@ Lorsque vous avez votre liste initiale de groupes et de stratégies, continuez �
 
 ### <a name="identify-segments"></a>Identifier les segments
 
-En plus de votre liste initiale de stratégies, faites une liste de segments pour votre organisation. Les utilisateurs qui seront inclus dans les stratégies d’obstacle à l’information doivent appartenir à un segment. Planifiez soigneusement vos segments en tant qu’utilisateur ne peut se trouver que dans un seul segment. Chaque segment ne peut avoir qu’une seule stratégie de obstacle aux informations appliquée.
+En plus de votre liste initiale de stratégies, faites une liste de segments pour votre organisation. Les utilisateurs qui seront inclus dans les stratégies d’obstacle à l’information doivent appartenir à un segment. Planifiez soigneusement vos segments en tant qu’utilisateur ne peut se trouver que dans un seul segment. Chaque segment ne peut avoir qu’une seule stratégie d’obstacle aux informations appliquée.
 
 > [!IMPORTANT]
 > Un utilisateur ne peut se trouver que dans un seul segment.
@@ -122,7 +122,7 @@ Déterminez les attributs dans les données d’annuaire de votre organisation q
 
 ### <a name="define-segments-using-powershell"></a>Définir des segments à l’aide de PowerShell
 
-La définition de segments n’affecte pas les utilisateurs ; Il définit simplement la phase de définition et d’application des stratégies de obstacle à l’information.
+La définition de segments n’affecte pas les utilisateurs ; Il définit simplement la phase de définition et d’application des stratégies d’obstacle à l’information.
 
 1. Utilisez la cmdlet **New-OrganizationSegment** avec le **paramètre UserGroupFilter** qui correspond à l’attribut que vous souhaitez utiliser. [](information-barriers-attributes.md)
 
@@ -175,7 +175,7 @@ Avec votre liste de segments d’utilisateurs et les stratégies d’obstacle à
 - [Scénario 2 : Autoriser un segment à communiquer avec un seul autre segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
-> **Assurez-vous que lorsque vous définissez des stratégies, vous n’affectez** pas plus d’une stratégie à un segment. Par exemple, si vous définissez une stratégie pour un segment appelé *Ventes,* ne définissez pas de stratégie supplémentaire pour *sales*.<p> En outre, lorsque vous définissez des stratégies d’obstacle à l’information, veillez à définir ces stratégies sur l’état inactif jusqu’à ce que vous soyez prêt à les appliquer. La définition (ou la modification) des stratégies n’affecte pas les utilisateurs tant que ces stratégies ne sont pas définies sur l’état actif, puis appliquées.
+> **Assurez-vous que lorsque vous définissez des stratégies, vous n’affectez** pas plus d’une stratégie à un segment. Par exemple, si vous définissez une stratégie pour un segment appelé *Ventes,* ne définissez pas de stratégie supplémentaire pour *sales*.<p> En outre, lorsque vous définissez des stratégies d’obstacle à l’information, veillez à définir ces stratégies sur l’état inactif jusqu’à ce que vous soyez prêt à les appliquer. La définition (ou modification) des stratégies n’affecte pas les utilisateurs tant que ces stratégies ne sont pas définies sur l’état actif, puis appliquées.
 
 (Voir [l’exemple : les stratégies de obstacle à l’information de Contoso](#contosos-information-barrier-policies) dans cet article.)
 
@@ -187,7 +187,7 @@ Par exemple, supposons que vous vouliez bloquer les communications entre le segm
 
 1. Pour définir votre première stratégie de blocage, utilisez la cmdlet **New-InformationBarrierPolicy** avec le **paramètre SegmentsBlocked.**
 
-    |**Syntaxe** | **Exemple**| |**--------|:----------| |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"` | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie appelée *Sales-Research* pour un segment appelé *Ventes*. Lorsqu’elle est active et appliquée, cette stratégie empêche les utilisateurs des ventes de communiquer avec des personnes dans un segment appelé *Recherche.*  |
+    |**Syntaxe** | **Exemple**| |**--------|:----------| |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"` | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie appelée *Sales-Research* pour un segment appelé *Ventes*. Lorsqu’elle est active et appliquée, cette stratégie empêche les utilisateurs des ventes de communiquer avec des personnes dans un segment appelé *Recherche*.  |
 
 2. Pour définir votre deuxième segment de blocage, utilisez de nouveau la cmdlet **New-InformationBarrierPolicy** avec le paramètre **SegmentsBlocked,** cette fois avec les segments inversés.
 
@@ -212,7 +212,7 @@ Par exemple, supposons que vous vouliez bloquer les communications entre le segm
 
     |**Syntaxe**|**Exemple**|
     |:---------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"` | `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie qui  permet au *segment* Recherche de communiquer uniquement avec les ressources humaines et *la fabrication.* |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"` | `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie qui  permet au segment *Recherche* de communiquer uniquement avec les ressources humaines *et la fabrication.* |
 
     Répétez cette étape pour chaque stratégie que vous souhaitez définir pour permettre à des segments spécifiques de communiquer uniquement avec certains autres segments spécifiques.
 
@@ -257,7 +257,7 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateurs, de
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 
-## <a name="what-if-i-need-to-remove-or-change-policies"></a>Que se passe-t-il si je dois supprimer ou modifier des stratégies ?
+## <a name="what-if-i-need-to-remove-or-change-policies"></a>Que se passe-t-il si j’ai besoin de supprimer ou de modifier des stratégies ?
 
 Des ressources sont disponibles pour vous aider à gérer vos stratégies de obstacle aux informations.
 
@@ -320,4 +320,6 @@ Lorsque l’cmdlet se termine, Contoso est conforme aux exigences légales et in
 ## <a name="resources"></a>Ressources
 
 - [Obtenir une vue d’ensemble des obstacles aux informations](information-barriers.md)
-- [Obstacles aux informations dans Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [En savoir plus sur les obstacles aux informations dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [En savoir plus sur les obstacles aux informations dans SharePoint Online](/sharepoint/information-barriers)
+- [En savoir plus sur les obstacles aux informations dans OneDrive](/onedrive/information-barriers)

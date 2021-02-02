@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/16/2020
+ms.date: 2/1/2021
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,21 +17,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Affichez la liste complète des certificats racine et des autorités de certification dans Microsoft 365.
-ms.openlocfilehash: 96499cbf2eae554ecddc9bc7bcf622db2515f980
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: 3dd85ae9ec4e691c8b3dce03256e1afb1fcb6274
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905263"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068929"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Chaînes de chiffrement Microsoft 365
 
-Microsoft 365 tire parti d’un certain nombre de fournisseurs de certificats différents. Ce qui suit décrit la liste complète des certificats racine Microsoft 365 connus que les clients peuvent rencontrer lors de l’accès à Microsoft 365. Pour plus d’informations sur les certificats que vous devrez peut-être installer dans votre propre infrastructure, voir Planifier les [certificats SSL tiers pour Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates) Les informations de certificat suivantes s’appliquent à toutes les instances cloud mondiales et nationales de Microsoft 365.
+Microsoft 365 tire parti de plusieurs fournisseurs de certificats différents. Ce qui suit décrit la liste complète des certificats racine Microsoft 365 connus que les clients peuvent rencontrer lors de l’accès à Microsoft 365. Pour plus d’informations sur les certificats que vous devrez peut-être installer dans votre propre infrastructure, voir Planifier les [certificats SSL tiers pour Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates) Les informations de certificat suivantes s’appliquent à toutes les instances cloud mondiales et nationales de Microsoft 365.
 
 Last updated: **16/10/2020**
 
 >[!NOTE]
->Pour plus d’informations sur les certificats qui s’appliquent aux clients DOD et **GCC High,** voir chaînes de chiffrement [Microsoft 365 - DOD et GCC High](encryption-office-365-certificate-chains-itar.md).
+>Pour obtenir des informations de certificat qui s’appliquent aux clients DOD et **GCC High,** voir chaînes de chiffrement [Microsoft 365 - DOD et GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **Type de certificat** | **Téléchargement P7b** | **Points de terminaison de la CRL** | **Points de terminaison OCSP** | **Points de terminaison AIA** |
 | --- | --- | --- | --- | --- |
@@ -44,7 +44,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **Subject** | CN=Racine CyberTrust de CyberTrust<br>OU=CyberTrust<br>O=Cast<br>C=IE |
+| **Subject** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Cast<br>C=IE |
 | --- | --- |
 | **Numéro de série** | 02:00:00:B9 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -56,9 +56,9 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Thumbprint (SHA-256)** | 16AF57A9F676B0AB126095AA5EBADEF22AB31119D644AC95CD4B93DBF3F26AEB |
 | **Broche (SHA-256)** | Y9mvm0exBk1JoQ57f9Vm28jKo5lFm/woKcVxrYxu80o= |
 
-### <a name="cnnic-root"></a>**RACINES TORSIQUE**
+### <a name="cnnic-root"></a>**RACINE TORSIQUE**
 
-| **Subject** | CN=RACINE DE LA RECHERCHE<br>O=MAGASINSIC<br>C=CN |
+| **Subject** | CN=RACINE ERIC<br>O=MAGASINSIC<br>C=CN |
 | --- | --- |
 | **Numéro de série** | 49:33:00:01 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -162,7 +162,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Autorité de certification racine de la resserrement - G2**
 
-| **Subject** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Subject** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **Numéro de série** | 4A:53:8C:28 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -251,7 +251,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=SHA256 SSL <br>O=MAGASINSIC SHA256 SSL <br>C=CN |
 | --- | --- |
-| **Issuer** | CN=RACINE DE LA RECHERCHE <br>O=MAGASINSIC <br>C=CN |
+| **Issuer** | CN=RACINE ERIC <br>O=MAGASINSIC <br>C=CN |
 | **Numéro de série** | 49:33:00:7C |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -312,7 +312,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Numéro de série** | 02:F7:E1:F9:82:BA:D0:09:AF:F4:7D:C9:57:41:B2:F6 |
 | **Longueur de clé publique** | RSA 2048 bits |
 | **Algorithme de signature** | sha256RSA |
-| **Validité pas avant** | mercredi 4 mars 2020 04:04 |
+| **Validité pas avant** | Mercredi 4 mars 2020 04:04 |
 | **Validité jusqu’à** | Lundi 4 mars 2030 04:04 |
 | **Identificateur de clé de l’objet** | 06BDA69B60795031BED5A9024AA0D095538B2F34 |
 | **Identificateur de clé d’autorité** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
@@ -321,6 +321,23 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **URL de la CRL** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
 | **URL OCSP** | http://ocsp.digicert.cn |
 
+### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
+
+| **Subject** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
+| --- | --- |
+| **Issuer** | CN=CA racine globale DigiCert<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Numéro de série** | 01:9E:C1:C6:BD:3F:59:7B:B2:0C:33:38:E5:51:D8:77 |
+| **Longueur de clé publique** | RSA 2048 bits |
+| **Algorithme de signature** | sha256RSA |
+| **Validité pas avant** | 4 août 2015 00:00 |
+| **Validité jusqu’à** | 4 août 2030 00:00 |
+| **Identificateur de clé de l’objet** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **Identificateur de clé d’autorité** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Thumbprint (SHA-1)** | 81B68D6CD2f221F8F534E677523BB236BBA1DC56 |
+| **Thumbprint (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F133D3 |
+| **Broche (SHA-256)** | UgpUVparimk8QCjtWQaTRY7EGrtrykc/L8N66EhFY3VE= |
+| **URL de la CRL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **URL OCSP** | http://ocsp.digicert.com |
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
 
@@ -330,15 +347,15 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Numéro de série** | 0F:17:1A:48:C6:F2:23:80:92:18:CD:2E:D6:DD:C0:E8 |
 | **Longueur de clé publique** | RSA 2048 bits |
 | **Algorithme de signature** | sha256RSA |
-| **Validité pas avant** | Jeudi 24 septembre 2020 17:00 |
-| **Validité jusqu’à** | Mardi 24 septembre 2030 16:59 |
-| **Identificateur de clé de l’objet** | DD51D0A23173A973AE8FB4017E5D8C57CB9FF0F7 |
-| **Identificateur de clé d’autorité** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Validité pas avant** | 25 septembre 2020 00:00 |
+| **Validity Not After** | 24 septembre 2030 23:59 |
+| **Identificateur de clé de l’objet** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **Identificateur de clé d’autorité** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Thumbprint (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
-| **Thumbprint (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
+| **Thumbprint (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 | -
 | **Broche (SHA-256)** | UgpUVparimk8QCjtWQaTRY7EGrtrykc/L8N66EhFY3VE= |
-| **URL de la CRL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl <br> http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **URL OCSP** | http://ocsp.digicert.com |
+| **URL de la CRL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **URL OCSP** | http://ocsp.digicert.com
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 Extended Validation Server CA**
 
@@ -379,7 +396,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Issuer** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Issuer** | CN=CA racine globale DigiCert<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **Numéro de série** | 01:FD:A3:EB:6E:CA:75:C8:88:43:8B:72:4B:CF:BC:91 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -419,7 +436,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Longueur de clé publique** | RSA 2048 bits |
 | **Algorithme de signature** | sha256RSA |
 | **Validité pas avant** | Mercredi 23 septembre 2020 17:00 |
-| **Validité jusqu’à** | lundi 23 septembre 2030 16:59 |
+| **Validité jusqu’à** | Lundi 23 septembre 2030 16:59 |
 | **Identificateur de clé de l’objet** | B76BA2EAA8AA848C79EAB4DA0F98B2C59576B9F4 |
 | **Identificateur de clé d’autorité** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Thumbprint (SHA-1)** | 6938FD4D98BAB03FAADB97B34396831E3780AEA1 |
@@ -447,9 +464,9 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="entrust-certification-authority---l1k"></a>**Autorité de certification de confiance - L1K**
 
-| **Subject** | CN=Autorité de certification de confiance - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Subject** | CN=Autorité de certification de confiance - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. - pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Issuer** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Issuer** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **Numéro de série** | 0E:E9:4C:C3:00:00:00:00:51:D3:77:85 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -639,7 +656,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **URL de la CRL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **URL OCSP** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS émettant CA 06**
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS émettrice CA 06**
 
 | **Subject** | CN=Microsoft Azure TLS émettrice CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -660,7 +677,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft IT TLS CA 1<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Issuer** | CN=Racine CyberTrust de CyberTrust<br>OU=CyberTrust<br>O=Cast<br>C=IE |
+| **Issuer** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Cast<br>C=IE |
 | **Numéro de série** | 08:B8:7A:50:1B:BE:9C:DA:2D:16:4D:3E:39:51:BF:55 |
 | **Longueur de clé publique** | RSA 4096 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -696,7 +713,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Issuer** | CN=Racine CyberTrust de CyberTrust<br>OU=CyberTrust<br>O=Cast<br>C=IE |
+| **Issuer** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Cast<br>C=IE |
 | **Numéro de série** | 0B:6A:B3:B0:3E:B1:A9:F6:C4:60:92:6A:A8:CD:FE:B3 |
 | **Longueur de clé publique** | RSA 4096 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -714,7 +731,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft IT TLS CA 5<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Issuer** | CN=Racine CyberTrust de CyberTrust<br>OU=CyberTrust<br>O=Cast<br>C=IE |
+| **Issuer** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Cast<br>C=IE |
 | **Numéro de série** | 08:88:CD:52:5F:19:24:44:4D:14:A5:82:91:DE:B9:52 |
 | **Longueur de clé publique** | RSA 4096 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -732,7 +749,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Cast, C=IE |
+| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Magasins, C=IE |
 | **Numéro de série** | 0F:14:96:5F:20:20:69:99:4F:D5:C7:AC:78:89:41:E2 |
 | **Longueur de clé publique** | RSA 4096 bits |
 | **Algorithme de signature** | sha256RSA |
@@ -749,7 +766,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Cast, C=IE |
+| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Magasins, C=IE |
 | **Numéro de série** | 0F:A7:47:22:C5:3D:88:C8:0F:58:9E:FB:1F:9D:4A:3A |
 | **Longueur de clé publique** | RSA 4096 bits |
 | **Algorithme de signature** | sha256RSA |
@@ -790,7 +807,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Numéro de série** | 51:3F:B9:74:38:70:B7:34:40:41:8D:30:93:06:99:FF |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
-| **Validité pas avant** | 31 octobre 00:00:00 2013 UTC |
+| **Validité pas avant** | Oct 31 00:00:00 2013 UTC |
 | **Validity Not After** | 30 octobre 23:59:59 2023 UTC |
 | **Identificateur de clé de l’objet** | 5f:60:cf:61:90:55:df:84:43:14:8a:60:2a:b2:f5:7a:f4:43:18:ef |
 | **Identificateur de clé d’autorité** | keyid:7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
@@ -823,7 +840,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Verizon Akamai SureServer CA G14-SHA2<br>OU=Cybertrust<br>O=Verizon Enterprise Solutions<br>L=Amsterdam<br>C=NL |
 | --- | --- |
-| **Issuer** | CN=Racine CyberTrust de CyberTrust<br>OU=CyberTrust<br>O=Cast<br>C=IE |
+| **Issuer** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Cast<br>C=IE |
 | **Numéro de série** | 07:27:A4:6B |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
