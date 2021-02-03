@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
-ms.openlocfilehash: 816da1001593dc36d625a48d12a1e0ace86578bf
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 60865b40582416ac2ac963c4a8c68353b06fc6d4
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058497"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071289"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -239,4 +239,4 @@ Pour configurer et utiliser vos étiquettes de confidentialité pour des scénar
 
 - [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 
-Pour contrôler l'utilisation de vos étiquettes, voir [Afficher l’utilisation d'étiquettes avec l'analyse des étiquettes](label-analytics.md).
+Si vous souhaitez surveiller le mode d’utilisation de vos étiquettes, veuillez consulter la rubrique [Prise en main de la classification des données](data-classification-overview.md).
