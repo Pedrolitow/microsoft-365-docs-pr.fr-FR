@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b905e73fe471cc034eae42726a5a86d91a359a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d3d94d585ca0a0e88fb442e658d57bf000ce49bb
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928818"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080515"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -54,8 +54,8 @@ La classification EDM vous permet de créer des types d’informations sensibles
 > - Chinois (traditionnel)
 > - Korean
 > - Japanese
-
->Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
+> 
+> Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
@@ -146,7 +146,7 @@ L’exemple XML ci-dessus utilise les champs `caseInsensitive` et `ignoredDelimi
 
 Lorsque vous incluez le champ ***caseInsensitive** _ défini sur la valeur `true` dans votre définition de schéma, EDM n’exclut pas un élément sur la base des différences de casse dans le champ `PatientID`. EDM considère donc `PatientID` _ *FOO-1234** et **fOo-1234** comme étant identiques.
 
-Lorsque vous incluez le champ **_ignoredDelimiters_*_ avec les caractères pris en charge, EDM ignore ces caractères dans `PatientID`. Par conséquent, EDM considère `PatientID` _* FOO-1234** et `PatientID` **FOO#1234** comme étant identiques. L’indicateur `ignoredDelimiters` prend en charge tous les caractères non alphanumériques. Voici quelques exemples :
+Lorsque vous incluez le champ **ignoredDelimiters** _ avec les caractères pris en charge, EDM ignore ces caractères dans `PatientID`. EDM considère donc `PatientID` _ *FOO-1234** et `PatientID` **FOO#1234** comme étant identiques. L’indicateur `ignoredDelimiters` prend en charge tous les caractères non alphanumériques. Voici quelques exemples :
 - \.
 - \-
 - \/
@@ -210,7 +210,7 @@ Dans cet exemple, où `caseInsensitive` et `ignoredDelimiters` sont utilisés en
 
       - **idMatch** : ce champ pointe vers l’élément principal pour EDM.
         - Matches : spécifie le champ à utiliser dans la recherche exacte. Vous fournissez un nom de champ pouvant faire l’objet d’une recherche dans le schéma EDM pour le magasin de données.
-        - Classification : ce champ spécifie la correspondance de type sensible qui déclenche la recherche EDM. Vous pouvez fournir le nom ou le GUID d’une classification personnalisée ou prédéfinie existante.
+        - Classification : ce champ spécifie la correspondance de type sensible qui déclenche la recherche EDM. Vous pouvez fournir le nom ou le GUID d’un type d’informations sensibles intégré ou personnalisé. N’ignorez pas que toute chaîne qui correspond au type d’informations sensibles fourni sera hachée et comparée à chaque entrée de la table des informations sensibles. Pour éviter de provoquer des problèmes de performances, si vous utilisez un type d’informations sensibles personnalisé comme élément Classification dans Dem, évitez d’en utiliser un qui corresponde à un grand pourcentage de contenu (par exemple, « n’importe quel nombre » ou « tout mot de cinq lettres ») en ajoutant des mots clés à l’appui ou en ajoutant une mise en forme dans la définition du type d’informations sensibles de classification personnalisée. 
 
       - **Match :** ce champ pointe vers d’autres preuves à proximité d’idMatch.
         - Matches : vous indiquez un nom de champ dans le schéma EDM pour DataStore.
@@ -369,7 +369,7 @@ Si vous voulez hacher et charger à partir d’un ordinateur, vous devez le fair
 Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte clair, vous pouvez le hacher sur un ordinateur dans un emplacement sécurisé, puis copier le fichier de hachage et le fichier salt sur un ordinateur qui peut se connecter directement à votre client Microsoft 365 pour le chargement. Dans ce scénario, vous aurez besoin d’EDMUploadAgent sur les deux ordinateurs.
 
 > [!IMPORTANT]
-> Si vous avez utilisé l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles pour créer vos fichiers de schéma et de modèle, vous **_devez_* télécharger le schéma pour cette procédure.
+> Si vous avez utilisé l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles pour créer vos fichiers de schéma et de modèle, vous ***devez** télécharger le schéma pour cette procédure.
 
 #### <a name="prerequisites"></a>Configuration requise
 
@@ -380,11 +380,11 @@ Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte cl
     - Votre fichier d’élément sensible au format CSV, **PatientRecords.csv** dans nos exemples
     -  Les fichiers de hachage et salt générés
     - Le nom du magasin de données provenant du fichier **edm.xml**, ici `PatientRecords`
-- Si vous avez utilisé l’[Assistant de schéma de correspondance exacte des données et de type d’informations sensibles](sit-edm-wizard.md), vous **_devez_* _ le télécharger.
+- Si vous avez utilisé l’[Assistant de schéma de correspondance exacte des données et de type d’informations sensibles](sit-edm-wizard.md), vous ***devez*** le télécharger.
 
-#### <a name="set-up-the-security-group-and-user-account"></a>Configurer le groupe de sécurité et le compte d’utilisateur
+#### <a name="set-up-the-security-group-and-user-account"></a>Configurer les groupe de sécurité personnalisé et compte d’utilisateur
 
-1. En tant qu’administrateur général, accédez au centre d’administration à l’aide du [lien approprié pour votre abonnement](#portal-links-for-your-subscription) et [créez un groupe de sécurité](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) nommé _*EDM\_DataUploaders**.
+1. En tant qu’administrateur général, accédez au centre d’administration à l’aide du [lien approprié pour votre abonnement](#portal-links-for-your-subscription) et [créez un groupe de sécurité](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) nommé **EDM\_DataUploaders**.
 
 2. Ajoutez un ou plusieurs utilisateurs au groupe de sécurité **EDM\_DataUploaders**. (ces utilisateurs peuvent gérer la base de données d’informations sensibles).
 
@@ -415,13 +415,13 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 
 2. Téléchargez et installez l’[agent de chargement EDM](#links-to-edm-upload-agent-by-subscription-type) approprié pour votre abonnement dans le répertoire créé à l’étape 1.
 
-> [!NOTE]
-> La version d’EDMUploadAgent fournie à travers les liens ci-dessus a été mise à jour afin d’ajouter automatiquement une valeur salt aux données hachées. Vous pouvez également fournir votre propre valeur salt. Une fois que vous avez utilisé cette version, vous ne pourrez pas utiliser la version précédente d’EDMUploadAgent.
->
-> Vous pouvez télécharger des données avec EDMUploadAgent vers n’importe quel magasin de données donné deux fois par jour uniquement.
+   > [!NOTE]
+   > La version d’EDMUploadAgent fournie à travers les liens ci-dessus a été mise à jour afin d’ajouter automatiquement une valeur salt aux données hachées. Vous pouvez également fournir votre propre valeur salt. Une fois que vous avez utilisé cette version, vous ne pourrez pas utiliser la version précédente d’EDMUploadAgent.
+   >
+   > Vous pouvez télécharger des données avec EDMUploadAgent vers n’importe quel magasin de données donné deux fois par jour uniquement.
 
-> [!TIP]
-> Exécutez l'agent sans arguments pour obtenir une liste des paramètres de commande pris en charge. Par exemple, « EdmUploadAgent. exe ».
+   > [!TIP]
+   > Exécutez l'agent sans arguments pour obtenir une liste des paramètres de commande pris en charge. Par exemple, « EdmUploadAgent. exe ».
 
 2. Autorisez l’agent de chargement EDM, en ouvrant l’invite de commandes Windows (en tant qu’administrateur), puis en accédant au répertoire **C:\EDM\Data** pour exécuter la commande suivante :
 
@@ -429,25 +429,25 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 
 3. Connectez-vous à l’aide de votre compte professionnel ou scolaire pour Microsoft 365 qui a été ajouté au groupe de sécurité EDM_DataUploaders. Vos informations de client sont extraites du compte d’utilisateur pour établir la connexion.
 
-FACULTATIF : si vous avez utilisé l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles pour créer vos fichiers de schéma et de modèle, exécutez la commande suivante dans une fenêtre Invite de commandes :
+   FACULTATIF : si vous avez utilisé l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles pour créer vos fichiers de schéma et de modèle, exécutez la commande suivante dans une fenêtre Invite de commandes :
 
-`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+   `EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 4. Pour hacher et charger les données sensibles, exécutez la commande suivante dans l’invite de commandes Windows :
 
-`EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
 
-Exemple : **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   Exemple : **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-Cela a pour effet d’ajouter automatiquement une valeur salt générée de façon aléatoire au hachage afin de renforcer la sécurité. Si vous voulez utiliser votre propre valeur salt, vous pouvez également ajouter **/Salt <saltvalue>** à la commande. Cette valeur doit comporter 64 caractères et ne peut contenir que les caractères allant de a à z et de 0 à 9.
+   Cela a pour effet d’ajouter automatiquement une valeur salt générée de façon aléatoire au hachage afin de renforcer la sécurité. Si vous voulez utiliser votre propre valeur salt, vous pouvez également ajouter **/Salt <saltvalue>** à la commande. Cette valeur doit comporter 64 caractères et ne peut contenir que les caractères allant de a à z et de 0 à 9.
 
 5. Vérifiez l’état du chargement en exécutant la commande suivante :
 
-`EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+   `EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
 
-Exemple : **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
+   Exemple : **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
 
-Vous verrez l’état **ProcessingInProgress**. Vérifiez à quelques minutes d’intervalle jusqu’à ce que l’état devienne **Completed**. Une fois que le chargement est à l’état Completed, vos données EDM sont prêtes à l’emploi.
+   Vous verrez l’état **ProcessingInProgress**. Vérifiez à quelques minutes d’intervalle jusqu’à ce que l’état devienne **Completed**. Une fois que le chargement est à l’état Completed, vos données EDM sont prêtes à l’emploi.
 
 #### <a name="separate-hash-and-upload"></a>Séparer le hachage et le chargement
 
@@ -459,39 +459,38 @@ FACULTATIF : si vous avez utilisé l’Assistant de schéma de correspondance e
 
 1. À l’invite de commandes, exécutez la commande suivante :
 
-`EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
+   `EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
 
-Par exemple :
+   Par exemple :
 
-> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   > **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-Cela génère un fichier haché et un fichier salt avec les extensions suivantes si vous n’avez pas spécifié l’option **/Salt <saltvalue>**  :
-- .EdmHash
-- .EdmSalt
+   Cela génère un fichier haché et un fichier salt avec les extensions suivantes si vous n’avez pas spécifié l’option **/Salt <saltvalue>**  :
+   - .EdmHash
+   - .EdmSalt
 
 2. Copiez ces fichiers de façon sécurisée sur l’ordinateur que vous allez utiliser pour charger sur votre client votre fichier CSV d’éléments sensibles (PatientRecords).
 
-Pour charger les données hachées, exécutez la commande suivante dans l’invite de commandes Windows :
+   Pour charger les données hachées, exécutez la commande suivante dans l’invite de commandes Windows :
 
-`EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
+   `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-Par exemple :
+   Par exemple :
 
-> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
-
-
-Pour vérifier que vos données sensibles ont été téléchargées, exécutez la commande suivante dans l’invite de commandes Windows :
+   > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 
-`EdmUploadAgent.exe /GetDataStore`
+   Pour vérifier que vos données sensibles ont été téléchargées, exécutez la commande suivante dans l’invite de commandes Windows :
 
-La liste des magasins de données apparaît, ainsi que la date de la dernière mise à jour.
+   `EdmUploadAgent.exe /GetDataStore`
 
-Si vous voulez afficher toutes les données téléchargées vers un magasin particulier, exécutez la commande suivante dans une invite de commandes Windows :
+   La liste des magasins de données apparaît, ainsi que la date de la dernière mise à jour.
 
-`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+   Si vous voulez afficher toutes les données téléchargées vers un magasin particulier, exécutez la commande suivante dans une invite de commandes Windows :
 
-Poursuivez la configuration de votre processus et planifiez l’[actualisation de votre base de données d'informations sensibles](#refreshing-your-sensitive-information-database).
+   `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+
+   Poursuivez la configuration de votre processus et planifiez l’[actualisation de votre base de données d'informations sensibles](#refreshing-your-sensitive-information-database).
 
 À ce stade, vous êtes prêt à utiliser la classification basée sur EDM avec vos services de Cloud Computing Microsoft. Par exemple, vous pouvez [configurer une stratégie DLP à l’aide d’une classification basée sur EDM](#to-create-a-dlp-policy-with-edm).
 
@@ -654,4 +653,3 @@ Les types d’informations sensibles EDM pour les scénarios suivants sont en co
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
 - [Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable](sit-modify-edm-schema-configurable-match.md)
-
