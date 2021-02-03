@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae9617a55fd5efb40a3aba07202ebfb1494d4db6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de9fb28f09b88cf1730f3bb3539234f6a03ec2e3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928807"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080712"
 ---
 # <a name="custom-detections-overview"></a>Vue d’ensemble des détections personnalisées
 
@@ -41,6 +41,7 @@ Les détections personnalisées fournissent :
 - Alertes pour les détections basées sur des règles conçues à partir de requêtes de repérage avancé
 - Actions de réponse automatique
 
-## <a name="related-topic"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 - [Créer et gérer des règles de détection personnalisées](custom-detection-rules.md)
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
+- [Migrer des requêtes de recherche avancée à partir de Microsoft Defender pour le point de terminaison](advanced-hunting-migrate-from-mdatp.md)

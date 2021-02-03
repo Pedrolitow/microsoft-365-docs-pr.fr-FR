@@ -9,7 +9,6 @@ author: levinec
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,19 +16,21 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f8f105215b23ec49318c133714e758e2a2a9c1df
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 7c0bb1701cf030692bc98218b38be00cae57a2bd
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870920"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080700"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Évaluer Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> L’évaluation de Microsoft Defender pour Office 365 est en prévisualisation publique. Cette version préliminaire est fournie sans contrat de niveau de service. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
+> L’évaluation de Microsoft Defender pour Office 365 est en prévisualisation publique. Cette version d’aperçu est fournie sans contrat de niveau de service. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
 
 La conduite d’une évaluation complète du produit de sécurité peut vous aider à prendre des décisions éclairées sur les mises à niveau et les achats. Il permet d’essayer les fonctionnalités du produit de sécurité pour évaluer la façon dont il peut aider votre équipe en charge des opérations de sécurité dans ses tâches quotidiennes.
 
@@ -47,7 +48,7 @@ Dans le cadre de l’installation, le mode d’évaluation configure également�
 
 Pour minimiser l’impact potentiel sur la production sur certains scénarios non pris en cas de problème, vous pouvez contourner tout filtrage EOP en créant une règle de transport pour définir le niveau de confiance du courrier indésirable (SCL) sur -1. Pour plus d’informations, voir Utiliser le EAC pour créer une règle de flux de messagerie qui définit le [SCL d’un message.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)  
 
-Lorsque le mode d’évaluation est installé, vous avez un rapport mis à jour quotidiennement avec jusqu’à 90 jours de données quantifiant les messages qui auraient été bloqués si les stratégies étaient implémentées (par exemple, supprimer, envoyer en courrier indésirable, mettre en quarantaine). Les rapports sont générés pour toutes les détections Defender pour Office 365 et EOP. Elles sont agrégées par technologie de détection (par exemple, l’emprunt d’identité) et peuvent être filtrées par plage de temps. En outre, les rapports de messages peuvent être créés à la demande pour créer des tableaux croisés dynamiques personnalisés ou pour explorer les messages en profondeur à l’aide de l’Explorateur de menaces.
+Lorsque le mode d’évaluation est installé, vous avez un rapport mis à jour quotidiennement avec jusqu’à 90 jours de données quantifiant les messages qui auraient été bloqués si les stratégies étaient implémentées (par exemple, supprimer, envoyer au courrier indésirable, mettre en quarantaine). Les rapports sont générés pour toutes les détections Defender pour Office 365 et EOP. Elles sont agrégées par technologie de détection (par exemple, l’emprunt d’identité) et peuvent être filtrées par plage de temps. En outre, les rapports de messages peuvent être créés à la demande pour créer des tableaux croisés dynamiques personnalisés ou pour explorer les messages en profondeur à l’aide de l’Explorateur de menaces.
 
 Grâce à l’expérience de mise en place simplifiée, vous pouvez vous concentrer sur :
 
@@ -58,7 +59,7 @@ Grâce à l’expérience de mise en place simplifiée, vous pouvez vous concent
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-### <a name="licensing"></a>Licences
+### <a name="licensing"></a>Licence
 
 Pour accéder à l’évaluation, vous devez respecter les exigences de licence. L’une des licences suivantes fonctionne :
 
@@ -88,10 +89,10 @@ Les rôles suivants sont nécessaires :
 
 |Tâche|Role|
 |---|---|
-|Obtenir une version d’essai gratuite ou acheter Microsoft Defender pour Office 365 (Plan 2)|Rôle d’administrateur de facturation OU rôle d’administrateur global|
-|Créer une stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité|
+|Obtenir un essai gratuit ou acheter Microsoft Defender pour Office 365 (Plan 2)|Rôle d’administrateur de facturation OU rôle d’administrateur global|
+|Créer une stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité|
 |Modifier la stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité|
-|Supprimer la stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité |
+|Supprimer la stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité |
 |Afficher le rapport d’évaluation|Rôle d’administrateur de sécurité OU rôle lecteur sécurité|
 |
 
@@ -104,20 +105,20 @@ Le filtrage amélioré pour les connecteurs permettra aux locataires d’utilise
 
 ### <a name="urls"></a>URL
 
-Les URL sont détonées pendant le flux de messagerie. Si vous ne souhaitez pas que des URL spécifiques détonent, gérez votre liste d’URL autorisées de manière appropriée. Pour [plus d’informations, voir](tenant-allow-block-list.md) Gérer les URL dans la liste d’adresses client autoriser/bloquer.
+Les URL sont détonées pendant le flux de messagerie. Si vous ne souhaitez pas que des URL spécifiques détonent, gérez votre liste d’URL autorisées de manière appropriée. Pour [plus d’informations, voir](tenant-allow-block-list.md) Gérer la liste d’attente des locataires.
 
 Les liens d’URL dans les corps des messages électroniques ne seront pas encapsulés, afin de réduire l’impact sur les clients.
 
 ### <a name="email-routing"></a>Routage du courrier électronique
 
-Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement acheminé, y compris le nom du connecteur entrant qui a acheminé votre courrier électronique. Si vous utilisez simplement Exchange Online Protection, vous n’avez pas de connecteur.  [En savoir plus sur le flux de messagerie et le routage du courrier électronique](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement acheminé, y compris le nom du connecteur entrant qui a acheminé vos messages. Si vous utilisez simplement Exchange Online Protection, vous n’avez pas de connecteur.  [En savoir plus sur le flux de messagerie et le routage du courrier électronique](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Les scénarios de routage de courrier pris en charge sont les suivants :
 
-- Partenaire tiers **et/ou** fournisseur de services local : le connecteur entrant que vous souhaitez évaluer utilise un fournisseur tiers et/ou vous utilisez une solution pour la sécurité du courrier électronique en local.
+- Partenaire tiers et/ou fournisseur de services local : le connecteur entrant que vous souhaitez évaluer utilise un fournisseur tiers **et/ou** vous utilisez une solution pour la sécurité du courrier électronique en local.
 - **Microsoft Exchange Online protection** uniquement : le client que vous souhaitez évaluer utilise Office 365 pour la sécurité du courrier électronique et l’enregistrement MX pointe vers Microsoft.
 
-### <a name="email-security-gateway"></a>Passerelle de sécurité du courrier électronique
+### <a name="email-security-gateway"></a>Passerelle de sécurité de messagerie
 
 Si vous utilisez une passerelle de sécurité de messagerie (ESG) tierce, vous devez connaître le nom du fournisseur. Si vous utilisez un fournisseur ESG local ou non pris en charge, vous devez connaître les adresses IP publiques des appareils.
 
@@ -157,7 +158,7 @@ Votre rapport d’évaluation de Microsoft Defender pour Office 365 est génér�
 
 ### <a name="exchange-rules-optional"></a>Règles Exchange (facultatives)
 
-Si vous avez une passerelle existante, vous voudrez peut-être contourner le filtrage, car il activera le filtrage amélioré pour les connecteurs et modifiera l’adresse IP de l’expéditeur entrant. Pour contourner ce nombre, accédez au Centre d’administration Exchange et créez une stratégie SCL -1 (si vous n’en avez pas déjà). Pour plus d’informations sur les composants de règle et leur fonctionnement, voir Règles de flux de messagerie (règles de transport) dans Exchange Online.
+Si vous avez une passerelle existante, l’activation du mode d’évaluation active le filtrage amélioré pour les connecteurs. Cela améliore la précision du filtrage en modifiant l’adresse IP de l’expéditeur entrant. Cela peut modifier les verdicts de filtre et si vous ne contournez pas Exchange Online Protection, cela peut modifier la livrabilité de certains messages. Dans ce cas, vous pouvez ignorer temporairement le filtrage pour analyser l’impact. Pour contourner ce nombre, accédez au Centre d’administration Exchange et créez une stratégie SCL -1 (si vous n’en avez pas déjà). Pour plus d’informations sur les composants de règle et leur fonctionnement, voir Règles de flux de messagerie (règles de transport) dans Exchange Online.
 
 ## <a name="evaluate-capabilities"></a>Évaluer les fonctionnalités
 
