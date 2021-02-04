@@ -1,5 +1,5 @@
 ---
-title: Score de productivité Microsoft-communication
+title: 'Score de productivité Microsoft : communication'
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,173 +18,173 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Détails du score de productivité de l’expérience de communication.
-ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+description: 'Détails de la communication : score de productivité de l’expérience utilisateur.'
+ms.openlocfilehash: de59a57f1c856d94836b59eba6a4869831fe700a
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712578"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099711"
 ---
-# <a name="communication--people-experiences"></a>Communication – expériences de personnes
+# <a name="communication--people-experiences"></a>Communication : expériences de personnes
 
-La fonction de score de productivité prend en charge le passage à la transformation numérique avec des informations sur la façon dont votre organisation utilise Microsoft 365 et les expériences technologiques qui la prennent en charge. Le score de votre organisation reflète les évaluations de l’expérience des personnes et technologies et peut être comparé aux benchmarks d’organisations d’une taille semblable à la vôtre. La catégorie communication fait partie des mesures prises par les personnes. Pour en savoir plus, consultez la [rubrique vue d’ensemble du score de productivité](productivity-score.md) et lisez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
+Le Score de productivité prend en charge la transition vers la transformation numérique avec des informations sur la façon dont votre organisation utilise Microsoft 365 et les expériences technologiques qui la supportent. Le score de votre organisation reflète les évaluations de l’expérience des personnes et technologies et peut être comparé aux benchmarks d’organisations d’une taille semblable à la vôtre. La catégorie de communication fait partie des mesures d’expérience des personnes. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
-Pour commencer à utiliser les informations de communication, les personnes de votre organisation doivent disposer d’une licence pour :
+Pour commencer à comprendre les informations sur les communications, les membres de votre organisation doivent être titulaires d’une licence pour :
 
-- Microsoft Teams
+- Microsoft Teams
 - Yammer
 - Exchange Online
 
-Pour plus d’informations, consultez la rubrique [attribuer des licences aux utilisateurs](../manage/assign-licenses-to-users.md).
+Pour plus d’informations, voir [attribuer des licences aux utilisateurs.](../manage/assign-licenses-to-users.md)
 
-Une fois que les utilisateurs ont été actifs dans les produits ci-dessus au moins une fois au cours des 28 derniers jours, vous commencerez à consulter les informations.
+Une fois que les utilisateurs ont été actifs dans les produits ci-dessus au moins une fois au cours des 28 derniers jours, vous commencez à voir les informations.
 
-## <a name="why-your-organizations-communication-score-matters"></a>Importance de la note de communication de votre organisation 
+## <a name="why-your-organizations-communication-score-matters"></a>Importance du score de communication de votre organisation 
 
-Microsoft sait que les personnes ont des besoins différents en matière de communication. Pour obtenir une réponse rapide à une question, vous pouvez choisir d’envoyer un message instantané. Si vous souhaitez envoyer des mises à jour d’État à votre leadership, vous pouvez choisir un message électronique. Pour atteindre un public plus large, vous pouvez choisir de publier un message communautaire. Microsoft 365 offre cette souplesse en modes de communication pour répondre aux besoins de tous. Des recherches montrent que l’utilisation d’outils de communication en temps réel crée une organisation plus unifiée et crée un moral, quel que soit son emplacement. [Consultez la rubrique Evidence](https://go.microsoft.com/fwlink/?linkid=2127669).
+Microsoft comprend que les personnes ont des besoins de communication différents. Pour obtenir une réponse rapide à une question, vous pouvez choisir d’envoyer un message instantané. Si vous souhaitez envoyer des mises à jour d’état à votre direction, vous pouvez choisir un message électronique. Pour atteindre un public plus large, vous pouvez choisir de publier un message de la communauté. Microsoft 365 offre cette flexibilité dans les modes de communication pour répondre aux besoins de tous. La recherche montre que l’utilisation des outils de communication en temps réel crée une organisation plus unifiée et renforce le morale, quel que soit l’emplacement. [Voir la preuve](https://go.microsoft.com/fwlink/?linkid=2127669).
 
-## <a name="how-we-calculate-the-communication-score"></a>Comment nous calculons le score de communication
+## <a name="how-we-calculate-the-communication-score"></a>Calcul du score de communication
 
-Pour la communication, nous proposons une vue d’ensemble, qui contient les mesures clés associées à la communication au sein de votre organisation, associées à une infrastructure de score pour l’utilisation de ces mesures afin de calculer le score de votre organisation.
+Pour la communication, nous fournissons un aperçu principal, qui contient les mesures clés associées à la communication dans votre organisation, associées à un cadre de notation pour l’utilisation de ces mesures pour calculer le score de votre organisation.
 
-### <a name="primary-insight"></a>Vue d’analyse
+### <a name="primary-insight"></a>Informations principales
 
-Microsoft 365 offre aux personnes la flexibilité nécessaire pour s’adapter au style de communication de tout le monde en proposant plusieurs modes. Le premier aperçu fournit une mesure des personnes de votre organisation qui utilisent plusieurs modes pour communiquer.
+Microsoft 365 offre aux utilisateurs la flexibilité nécessaire pour s’adapter au style de communication de tout le monde en offrant plusieurs modes. L’aperçu principal fournit une mesure des personnes de votre organisation qui utilisent plusieurs modes pour communiquer.
 
-:::image type="content" source="../../media/primaryinsight.png" alt-text="Principaux détails sur les modes de communication.":::
+:::image type="content" source="../../media/primaryinsight.png" alt-text="Informations principales sur les modes de communication.":::
 
-1. **En-tête :** Fournit la mesure clé des personnes qui utilisent plusieurs modes de communication, à savoir :
+1. **En-tête :** Fournit la mesure clé des personnes utilisant plusieurs modes de communication, à savoir :
 
    - Envoi de courriers électroniques via Exchange
-   - Envoi de messages par le biais de teams
+   - Envoi de messages via Teams
    - Publication sur des communautés dans Yammer
 
-   Cette mesure clé est affichée sous la forme d’un pourcentage de toutes les personnes qui utilisent au moins deux d’Exchange, teams ou Yammer. 
+   Cette mesure clé s’affiche sous la mesure d’un pourcentage de toutes les personnes qui utilisent au moins deux d’Exchange, Teams ou Yammer. 
 
-2. **Body :** Fournit plus d’informations sur la flexibilité dans les modes de communication utile pour les personnes de votre organisation.
+2. **Corps :** Fournit plus d’informations sur la flexibilité des modes de communication pour les membres de votre organisation.
 
-3. **Visualisation de l’état actuel :**
+3. **Visualisation de l’état actuel :**
 
    - Barre horizontale où la partie bleue représente le pourcentage exprimé dans l’en-tête
-   - Met en surbrillance le (numérateur/dénominateur) utilisé pour calculer le pourcentage exprimé dans l’en-tête :
-     - **Numérateur**: nombre de personnes utilisant plus d’un mode de communication au cours des 28 derniers jours
-     - **Dénominateur**: nombre de personnes marquées comme activées pour plusieurs produits de communication au cours des 28 derniers jours
-   - La valeur de benchmark de l' **homologue** de la mesure clé est également indiquée sous forme de pourcentage
+   - Met en évidence le (numérateur/dénominateur) utilisé pour calculer le pourcentage exprimé dans l’en-tête :
+     - **Numérateur**: nombre de personnes utilisant plusieurs modes de communication au cours des 28 derniers jours
+     - **Dénominateur :**# des personnes marquées comme activées pour plusieurs produits de communication au cours des 28 derniers jours
+   - **La valeur de référence** homologue de la mesure clé est également affichée sous la mesure d’un pourcentage
 
-4. **Afficher les ressources de communication :** Cliquez ici pour inscrire tout le contenu de prise en charge sous la forme de vidéos/Articles liés à la communication. À partir de ces éléments, vous pouvez accéder à la playlist personnalisée pour la communication, puis pour toutes les catégories de score de productivité.
+4. **Afficher les ressources de communication :** Cliquez ici pour inscrire tout le contenu du support sous la forme de vidéos/articles relatifs à la communication. À partir de celles-ci, vous pouvez accéder à la playlist personnalisée pour la communication, puis pour toutes les catégories de score de productivité.
 
-#### <a name="trend-visualization-of-primary-insight"></a>Visualisation des tendances du principal aperçu
+#### <a name="trend-visualization-of-primary-insight"></a>Visualisation de la tendance de l’aperçu principal
 
- Ce graphique fournit la tendance du numérateur de la mesure clé dans l’analyse principale – c’est-à-dire, le nombre de personnes de votre organisation qui utilisent plusieurs modes de communication au cours des 180 derniers jours. Ici, la valeur quotidienne est un agrégat du nombre de personnes qui utilisent plusieurs formes de communication au cours des 28 derniers jours.
+ Ce graphique fournit la tendance du numérateur de la mesure clé dans l’aperçu principal, c’est-à-dire le nombre de personnes dans votre organisation utilisant plusieurs modes de communication au cours des 180 derniers jours. Ici, la valeur quotidienne est un agrégat du nombre de personnes qui utilisent plusieurs formes de communication au cours des 28 derniers jours.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Graphique illustrant le nombre de personnes qui utilisent plusieurs modes de communication par rapport à l’heure.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Graphique shows number of people who use more than one mode to communicate vs. time.":::
 
-### <a name="scoring-model"></a>Modèle de notation
+### <a name="scoring-model"></a>Modèle d’score
 
-Le score de communication pour votre organisation mesure au niveau d’agrégation (Organisation), que les utilisateurs communiquent régulièrement à l’aide de plusieurs modes entre les messages électroniques, les conversations et les publications communautaires sur une période de 28 jours.  
+Le score de communication de votre organisation mesure au niveau de l’agrégation (organisation) si les utilisateurs communiquent de manière cohérente à l’aide de plusieurs modes entre les publications de messagerie, de conversation et de communauté au cours d’une période de 28 jours.  
 
 Les scores ne sont pas fournis au niveau de l’utilisateur individuel.
 
-## <a name="explore-how-your-organization-communicates"></a>Découvrir comment votre organisation communique
+## <a name="explore-how-your-organization-communicates"></a>Explorer la façon dont votre organisation communique
 
-Nous vous proposons également des informations qui vous aideront à mieux comprendre le mode de communication de votre organisation. Ces mesures supplémentaires n’influencent pas directement votre score de productivité, mais peuvent vous aider à créer un plan d’action dans le cadre de votre transformation numérique.
+Nous vous fournissons également des informations qui vous permettent de mieux comprendre la façon dont votre organisation communique. Ces mesures supplémentaires n’influencent pas directement votre score de productivité, mais peuvent vous aider à créer un plan d’action dans le cadre de votre transformation numérique.
 
-### <a name="breakdown-of-communication-by-modes"></a>Répartition des communications par mode
+### <a name="breakdown-of-communication-by-modes"></a>Répartition des communications par modes
 
 :::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Répartition des modes de communication.]":::
 
-1. **En-tête :** Met en évidence l’objectif de la vue de fournir une analyse détaillée des différents modes de communication pris en compte dans la communication.
+1. **En-tête :** Met en évidence l’objectif de l’analyse pour fournir une répartition détaillée des différents modes de communication pris en compte dans communication.
 
-2. **Body :** Fournit des informations sur la valeur de l’utilisation de différents modes de partage des connaissances.
+2. **Corps :** Fournit des informations sur la valeur de l’utilisation de différents modes pour partager des connaissances.
 
-3. **Visualisation :** La répartition représente l’utilisation de chaque mode. La partie colorée et la fraction de chaque barre représentent le nombre de personnes qui envoient des courriers électroniques, des messages ou des publications communautaires sous la forme d’un pourcentage du nombre de personnes activées pour ce mode :
+3. **Visualisation :** La répartition représente l’utilisation pour chaque mode. La partie colorée et la fraction sur chaque barre représentent le nombre de personnes envoyant des messages électroniques, des messages ou des publications de la communauté sous la mesure d’un pourcentage du nombre de personnes activées pour ce mode :
 
-   - **Personnes envoyant des courriers :** La partie colorée et la fraction représentent le pourcentage d’utilisateurs activés pour Exchange qui envoient des courriers électroniques. Cette fraction est construite de la façon suivante :
+   - **Personnes envoyant des courriers électroniques :** La partie colorée et la fraction représentent le pourcentage d’utilisateurs activés pour Exchange qui envoient des courriers électroniques. Cette fraction est construite à partir de :
    
      - **Numérateur**: personnes envoyant des courriers électroniques au cours des 28 derniers jours.
-     - **Dénominateur**: personnes activées pour Exchange au cours des 28 derniers jours.
+     - **Dénominateur : personnes** activées pour Exchange au cours des 28 derniers jours.
      
-   - **Personnes envoyant des messages dans Microsoft teams :** La partie colorée et la fraction représentent le pourcentage d’utilisateurs activés pour Microsoft teams qui envoient des messages. Cette fraction est construite de la façon suivante :
+   - **Personnes envoyant des messages dans Microsoft Teams :** La partie colorée et la fraction représentent le pourcentage d’utilisateurs activés pour Microsoft Teams qui envoient des messages. Cette fraction est construite à partir de :
    
-     - **Numérateur**: personnes envoyant des messages sur Microsoft teams au cours des 28 derniers jours.
-     - **Dénominateur**: personnes activées pour Microsoft teams au cours des 28 derniers jours.
+     - **Numérateur**: personnes envoyant des messages sur Microsoft Teams au cours des 28 derniers jours.
+     - **Dénominateur : personnes** activées pour Microsoft Teams au cours des 28 derniers jours.
      
-   - **Publication de personnes dans les communautés :** La partie colorée et la fraction représentent le pourcentage d’utilisateurs activés pour Yammer qui sont en cours de publication dans des communautés. Cette fraction est construite de la façon suivante :
+   - **Personnes publiant dans des communautés :** La partie couleur et la fraction représentent le pourcentage d’utilisateurs activés pour Yammer qui publient dans des communautés. Cette fraction est construite à partir de :
    
-     - **Numérateur :** Publication de personnes dans les communautés Yammer au cours des 28 derniers jours.
-     - **Dénominateur :** Personnes activées pour Yammer au cours des 28 derniers jours.
+     - **Numérateur :** Les personnes qui publient Yammer des communautés au cours des 28 derniers jours.
+     - **Dénominateur :** Les personnes activées pour Yammer au cours des 28 derniers jours.
           
-4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher les vidéos assemblées et d’autres contenus d’aide connexes.
+4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
-### <a name="mentions-in-emails"></a>@mentions dans les e-mails
+### <a name="mentions-in-emails"></a>@mentions messages électroniques
 
-:::image type="content" source="../../media/emailmentions.png" alt-text="! [Courriels avec mentions.]":::
+:::image type="content" source="../../media/emailmentions.png" alt-text="! [E-mails avec mentions.]":::
 
-1. **En-tête :** Met en évidence l’augmentation du taux de réponse pour les nouveaux threads de messagerie démarrés au cours des 28 derniers jours lorsqu’ils contiennent des @mentions.
+1. **En-tête :** Met en évidence l’augmentation du taux de réponse pour les nouveaux threads de messagerie démarrés au cours des 28 derniers jours lorsqu’ils contiennent des @mentions.
 
-2. **Body :** Fournit des informations sur la valeur de l’utilisation de @mentions dans les e-mails. En outre, les personnes qui utilisent @mentions sont exprimées sous la forme d’un pourcentage de tous les utilisateurs qui ont envoyé un message électronique au cours des 28 derniers jours.
+2. **Corps :** Fournit des informations sur la valeur de l’utilisation @mentions dans les e-mails. En outre, les utilisateurs @mentions sont exprimés sous la mesure d’un pourcentage de tous les utilisateurs ayant envoyé un courrier électronique au cours des 28 derniers jours.
 
-3. **Visualisation :** Décompose le taux de réponse pour les nouveaux threads de messagerie selon qu’ils ont @mentions ou non :
+3. **Visualisation :** Décompose le taux de réponse pour les nouveaux threads de messagerie en fonction de leur @mentions ou non :
 
-   - **Réponses aux courriels avec des \@ mentions :** la partie colorée et la fraction représentent le taux de réponse pour les nouveaux fils de courrier contenant des @mentions. Cette fraction est construite de la façon suivante :
+   - **Réponses aux e-mails avec \@ mentions :** la partie colorée et la fraction représentent le taux de réponse pour les nouveaux threads de messagerie contenant des @mentions. Cette fraction est construite à partir de :
    
-     - **Numérateur :** Nouveaux fils de courrier électronique contenant des @mentions qui ont été démarrés et ont reçu une réponse au cours des 28 derniers jours.
-     - **Dénominateur :** Nouveaux fils de courrier électronique contenant des @mentions démarrés au cours des 28 derniers jours.
+     - **Numérateur :** Nouveaux threads de messagerie contenant @mentions qui ont été démarrés et qui ont reçu une réponse au cours des 28 derniers jours.
+     - **Dénominateur :** Nouveaux threads de messagerie contenant @mentions qui ont été démarrés au cours des 28 derniers jours.
      
-   - **Réponses aux courriels sans \@ mention :** la partie colorée et la fraction représentent le taux de réponse pour les nouveaux fils de courrier contenant des @mentions. Cette fraction est construite de la façon suivante :
+   - **Réponses aux e-mails sans \@ mention :** la partie colorée et la fraction représentent le taux de réponse pour les nouveaux threads de messagerie contenant des @mentions. Cette fraction est construite à partir de :
    
-     - **Numérateur :** Les nouveaux threads de messagerie qui ne contiennent pas de @mentions, qui ont été démarrés et reçoivent également une réponse au cours des 28 derniers jours.
-     - **Dénominateur :** Nouveaux fils de courrier ne contenant pas de @mentions qui ont été démarrés au cours des 28 derniers jours.
+     - **Numérateur :** Nouveaux threads de messagerie qui ne contiennent pas de @mentions, qui ont été démarrés et ont également reçu une réponse au cours des 28 derniers jours.
+     - **Dénominateur :** Les nouveaux threads de messagerie ne contenant pas @mentions ont été démarrés au cours des 28 derniers jours.
      
-4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher les vidéos assemblées et d’autres contenus d’aide connexes.
+4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
 
-### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Répartition des messages par type dans Microsoft teams
+### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Répartition des messages par type dans Microsoft Teams
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Types de message Teams.]":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Types de messages Teams.]":::
 
-1. **En-tête :** Met en surbrillance les personnes qui envoient des messages de canal sous la forme d’un pourcentage des personnes qui ont envoyé un type de message (y compris des messages de conversation et de canal) au cours des 28 derniers jours.
+1. **En-tête :** Met en évidence les personnes qui ont envoyé des messages de canal sous forme de pourcentage de personnes ayant envoyé n’importe quel type de message (y compris les messages de conversation et de canal) au cours des 28 derniers jours.
 
-2. **Body :** Fournit des informations sur la valeur de l’utilisation des messages de canal au sein de Microsoft Teams.
+2. **Corps :** Fournit des informations sur la valeur de l’utilisation des messages de canal dans Microsoft Teams.
 
-3. **Visualisation :** Décompose l’utilisation des messages de conversation et de canal :
+3. **Visualisation :** Décompose l’utilisation des messages de conversation et de canal :
 
-      - **Personnes envoyant des messages de conversation :** La partie colorée et la fraction représentent l’utilisation de messages de conversation dans les personnes qui ont envoyé des messages sur Microsoft Teams. La fraction est construite de la façon suivante :
+      - **Personnes envoyant des messages de conversation :** La partie colorée et la fraction représentent l’utilisation de messages de conversation au sein des personnes qui ont envoyé des messages sur Microsoft Teams. La fraction est construite à partir de :
       
-        - **Numérateur :** Les personnes qui envoient des messages de conversation sur Microsoft teams au cours des 28 derniers jours.
-        - **Dénominateur :** Personnes qui ont envoyé des messages sur Microsoft teams au cours des 28 derniers jours.
+        - **Numérateur :** Personnes qui ont envoyé des messages de conversation sur Microsoft Teams au cours des 28 derniers jours.
+        - **Dénominateur :** Personnes qui ont envoyé des messages sur Microsoft Teams au cours des 28 derniers jours.
         
-      - **Personnes envoyant des messages de canal :** La partie colorée et la fraction représentent l’utilisation de messages de canal au sein des personnes qui envoient des messages sur Microsoft Teams. La fraction est construite de la façon suivante :
+      - **Personnes envoyant des messages de canal :** La partie colorée et la fraction représentent l’utilisation de messages de canal au sein de personnes envoyant des messages sur Microsoft Teams. La fraction est construite à partir de :
       
-        - **Numérateur :** Les personnes qui envoient des messages de conversation sur Microsoft teams au cours des 28 derniers jours.
-        - **Dénominateur :** Personnes qui ont envoyé des messages sur Microsoft teams au cours des 28 derniers jours.
+        - **Numérateur :** Personnes qui ont envoyé des messages de canal sur Microsoft Teams au cours des 28 derniers jours.
+        - **Dénominateur :** Personnes ayant envoyé des messages sur Microsoft Teams au cours des 28 derniers jours.
         
-4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher les vidéos assemblées et d’autres contenus d’aide connexes.
+4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
-### <a name="questions-and-answers-in-yammer"></a>Questions et réponses dans Yammer
+### <a name="questions-and-answers-in-yammer"></a>Questions et réponses en Yammer
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions et réponses dans Yammer]"::: 
 
-1. **En-tête :** Met en surbrillance les billets marqués en tant que questions sur Yammer qui ont reçu une réponse marquée comme &quot; meilleure réponse &quot; sous la forme d’un pourcentage de tous les billets marqués comme questions sur Yammer au cours des 28 derniers jours.
+1. **En-tête :** Met en évidence les billets marqués comme des questions sur les Yammer qui ont reçu une réponse marquée comme meilleure réponse en tant que pourcentage de tous les billets marqués comme des questions le Yammer au cours des 28 derniers &quot; &quot; jours.
 
-2. **Body :** Fournit des informations sur la valeur de l’utilisation des questions et des réponses dans Yammer pour partager des connaissances.
+2. **Corps :** Fournit des informations sur la valeur de l’utilisation de questions et de réponses dans Yammer partager des connaissances.
 
-3. **Visualisation :** Décompose l’utilisation de la fonctionnalité questions et réponses au sein de votre organisation :
+3. **Visualisation :** Décompose l’utilisation des fonctionnalités de questions et réponses dans votre organisation :
 
-   - **Questions :** La partie colorée de la barre et le numéro associé représentent le nombre total de publications marquées comme étant des questions au cours des 28 derniers jours.
-   - **Questions avec les réponses :** La partie colorée de la barre et le numéro associé représentent le nombre de billets marqués comme des questions et ont reçu des réponses au cours des 28 derniers jours.
-   - **Questions avec les meilleures réponses :** La partie colorée de la barre et le numéro associé représentent le nombre de billets marqués comme des questions et ont également reçu une &quot; meilleure réponse &quot; au cours des 28 derniers jours.
+   - **Questions :** La partie colorée de la barre et le nombre associé représentent le nombre total de publications marquées comme des questions au cours des 28 derniers jours.
+   - **Questions avec réponses :** La partie colorée de la barre et le nombre associé représentent le nombre de publications marquées comme des questions et qui ont reçu des réponses au cours des 28 derniers jours.
+   - **Questions avec les meilleures réponses :** La partie colorée de la barre et le nombre associé représentent le nombre de billets marqués comme des questions et qui ont également reçu une meilleure réponse au cours des &quot; &quot; 28 derniers jours.
       
-4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher les vidéos assemblées et d’autres contenus d’aide connexes.
+4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Microsoft 365 Apps Health – expériences technologiques](apps-health.md) (article) \
-[Collaboration sur le contenu – expériences des personnes](content-collaboration.md) (article) \
-[Réunions – expériences des personnes](meetings.md) (article) \
-[Mobilité – expériences de personnes](mobility.md) (article) \
-[Contrôles de confidentialité du score de productivité](privacy.md) (article) \
-[Travail d’équipe – expériences des personnes](teamwork.md) (article)
+[Santé des applications Microsoft 365 – Expériences technologiques](apps-health.md) (article)\
+[Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\
+[Réunions : expériences de personnes](meetings.md) (article)\
+[Mobilité : expériences utilisateur](mobility.md) (article)\
+[Contrôles de confidentialité pour le Score de productivité](privacy.md) (article)\
+[Travail d’équipe : expériences de](teamwork.md) personnes (article)

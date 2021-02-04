@@ -19,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a479d1bf7fee95a7d8ba862674cd75bfd3c699c7
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: df09f72e8bb5aee78ca4b45ce2804774ee16cbf2
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932561"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097115"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Travail prérequis pour l’implémentation de stratégies d’accès aux identités et appareils
 
 Cet article décrit les conditions préalables que les administrateurs doivent respecter pour utiliser les stratégies recommandées d’accès aux identités et aux appareils et pour utiliser l’accès conditionnel. Il décrit également les valeurs par défaut recommandées pour configurer les plateformes clientes pour une expérience d' sign-on unique (SSO) de meilleure choix.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Avant d’utiliser les stratégies d’accès aux identités et appareils recommandées, votre organisation doit respecter les conditions préalables. Les exigences sont différentes pour les différents modèles d’identité et d’authentification répertoriés :
 
@@ -73,7 +73,7 @@ Nous vous recommandons d’installer [l’application Microsoft Authenticator](h
 
 Nous recommandons aux utilisateurs d’installer l’application Portail d’entreprise [Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) et l’application [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) avant le déploiement des stratégies d’accès conditionnel ou le cas échéant lors de certaines tentatives d’authentification. Une fois l’application installée, les utilisateurs peuvent être invités à s’inscrire auprès d’Azure AD ou à inscrire leurs appareils auprès d’Intune. Cela dépend de la stratégie d’accès conditionnel configurée.
 
-Nous recommandons également que les appareils dont l’organisation est propriétaire soient normalisés sur les fabricants OEM et les versions qui gèrent Android for Work ou Samsung Knox afin d’autoriser la gestion et la protection des comptes de messagerie par la stratégie de gestion des appareils mobiles Intune.
+Nous recommandons également que les appareils dont l’organisation est propriétaire soient normalisés sur les fabricants OEM et les versions qui gèrent Android for Work ou Samsung Knox pour autoriser la gestion et la protection des comptes de messagerie par la stratégie de gestion des appareils mobiles Intune.
 
 ### <a name="recommended-email-clients"></a>Clients de messagerie recommandés
 
@@ -107,13 +107,13 @@ Les clients suivants sont recommandés lorsqu’une stratégie de documents séc
 Pour plus d’informations sur la prise en charge des clients dans Microsoft 365, consultez les articles suivants :
 
 - [Prise en charge des applications clientes Microsoft 365 - Accès conditionnel](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Prise en charge des applications clientes Microsoft 365 - Authentification moderne](../../enterprise/microsoft-365-client-support-modern-authentication.md)
+- [Prise en charge des applications clientes Microsoft 365 - Authentification multifacteur](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>Protection des comptes d’administrateur
 
-Pour Microsoft 365 E3 ou E5 ou avec des licences Azure AD Premium P1 ou P2 distinctes, vous pouvez exiger l’mf pour les comptes d’administrateur avec une stratégie d’accès conditionnel créée manuellement. Pour [plus d’informations,](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) voir Accès conditionnel : exiger l' approbation de la MFA pour les administrateurs.
+Pour Microsoft 365 E3 ou E5 ou avec des licences Azure AD Premium P1 ou P2 distinctes, vous pouvez exiger l’mf pour les comptes administrateur avec une stratégie d’accès conditionnel créée manuellement. Pour [plus d’informations,](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) voir Accès conditionnel : exiger l' approbation de la MFA pour les administrateurs.
 
-Pour les éditions de Microsoft 365 ou d’Office 365 qui ne permettent pas l’accès conditionnel, vous pouvez activer les [paramètres](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) de sécurité par défaut pour exiger l’mf pour tous les comptes.
+Pour les éditions de Microsoft 365 ou Office 365 qui ne prisent pas en charge l’accès conditionnel, vous pouvez activer les [paramètres](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) de sécurité par défaut pour exiger une mf pour tous les comptes.
 
 Voici quelques recommandations supplémentaires :
 
@@ -126,4 +126,4 @@ Voici quelques recommandations supplémentaires :
 
 [![Étape 2 : Configurer les stratégies communes d’accès conditionnel aux identités et aux accès](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
-[Configurer les stratégies communes d’accès aux identités et aux appareils](identity-access-policies.md)
+[Configurer les stratégies communes d’accès aux identités et appareils](identity-access-policies.md)

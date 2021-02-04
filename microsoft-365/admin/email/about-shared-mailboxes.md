@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les boîtes aux lettres partagées sont utilisées lorsque plusieurs personnes ont besoin d’accéder à la même boîte aux lettres. Découvrez ce que vous devez savoir avant de créer une boîte aux lettres partagée.
-ms.openlocfilehash: c8d29ac2dfe8670181064e61a7fba145ae00fed1
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: f5d46af5abdd528ce3db817dbabce015ed5abade
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058446"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094720"
 ---
 # <a name="about-shared-mailboxes"></a>À propos des boîtes aux lettres partagées
 
@@ -51,7 +51,7 @@ Avant de [créer une boîte aux lettres partagée,](create-a-shared-mailbox.md)v
 
 - **Rôles d’administrateur :** Les utilisateurs ayant des rôles d’administrateur global ou d’administrateur Exchange peuvent créer des boîtes aux lettres partagées.
 
-- **Conditions d’abonnement :** Pour créer une boîte aux lettres partagée, vous devez vous abonner à une offre Microsoft 365 pour les entreprises qui inclut la messagerie (le service Exchange Online). L’abonnement Microsoft 365 Apps for business n’inclut pas la messagerie. Microsoft 365 Business Standard inclut le courrier électronique.
+- **Conditions d’abonnement :** Pour créer une boîte aux lettres partagée, vous devez vous abonner à une offre Microsoft 365 pour les entreprises qui inclut la messagerie (le service Exchange Online). L’abonnement Microsoft 365 Apps for business n’inclut pas la messagerie. Microsoft 365 Business Standard inclut la messagerie.
 
 - **La signature :** Une boîte aux lettres partagée n’est pas destinée à la signature directe par son compte d’utilisateur associé. Vous devez toujours bloquer la connectez-vous pour le compte de boîte aux lettres partagé et le conserver bloqué.
 
@@ -61,7 +61,7 @@ Avant de [créer une boîte aux lettres partagée,](create-a-shared-mailbox.md)v
 
 
 > [!NOTE]
-> Pour accéder à une boîte aux lettres partagée, un utilisateur doit avoir une licence Exchange Online, mais la boîte aux lettres partagée ne nécessite pas de licence distincte. Sans licence, les boîtes aux lettres partagées sont limitées à 50 Go. Pour augmenter la taille limite de 100 Go, la boîte aux lettres partagée doit être attribuée à une licence Exchange Online (plan 2) ou une licence Exchange Online (plan 1) avec une licence de composant additionnel d’archivage Exchange Online. Cela vous permet également d’activer l’archivage à extension automatique pour une quantité illimitée de capacité de stockage d’archive. De même, si vous voulez placer une boîte aux lettres partagée au maintien d’un litige, la boîte aux lettres partagée doit avoir une licence Exchange Online Plan 2 ou une licence Exchange Online Plan 1 avec une licence de composant additionnel archivage Exchange Online. Si vous souhaitez appliquer des fonctionnalités avancées telles que Microsoft Defender pour Office 365, Advanced eDiscovery ou des stratégies de rétention automatique, la boîte aux lettres partagée doit être titulaire d’une licence pour ces fonctionnalités.
+> Pour accéder à une boîte aux lettres partagée, un utilisateur doit avoir une licence Exchange Online, mais la boîte aux lettres partagée ne nécessite pas de licence distincte. Chaque boîte aux lettres partagée a un compte d'utilisateur correspondant. Vous n'avez pas été invité à fournir un mot de passe lors de la création de la boîte aux lettres partagée ? Le compte a un mot de passe qui est généré par le système (inconnu). Vous ne devez pas utiliser le compte pour vous connecter à la boîte aux lettres partagée. Sans licence, les boîtes aux lettres partagées sont limitées à 50 Go. Pour augmenter la taille limite de 100 Go, la boîte aux lettres partagée doit être attribuée à une licence Exchange Online (plan 2) ou une licence Exchange Online (plan 1) avec une licence de composant additionnel d’archivage Exchange Online. Cela vous permet également d’activer l’archivage à extension automatique pour une quantité illimitée de capacité de stockage d’archive. De même, si vous voulez placer une boîte aux lettres partagée au maintien d’un litige, la boîte aux lettres partagée doit avoir une licence Exchange Online Plan 2 ou une licence Exchange Online Plan 1 avec une licence de composant additionnel archivage Exchange Online. Si vous souhaitez appliquer des fonctionnalités avancées telles que Microsoft Defender pour Office 365, Advanced eDiscovery ou des stratégies de rétention automatique, la boîte aux lettres partagée doit être titulaire d’une licence pour ces fonctionnalités.
 
 ## <a name="related-articles"></a>Articles connexes
 

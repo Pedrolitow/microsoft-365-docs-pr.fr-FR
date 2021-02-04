@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: En savoir plus sur les groupes Microsoft 365.
-ms.openlocfilehash: b3bc0c30f4ac292da7af46678fc742854984db12
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5d5c15c13d46738ac9de701b5a39f47274b9f1e5
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925349"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094732"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Présentation des Groupes Microsoft 365 pour les administrateurs
 
@@ -50,7 +50,7 @@ Les groupes ont les rôles suivants :
 
 - **Propriétaires** : les propriétaires de groupe peuvent ajouter ou supprimer des membres et avoir des autorisations uniques, telles que la possibilité de supprimer des conversations de la boîte de réception partagée ou de modifier différents paramètres sur le groupe. Les propriétaires de groupe peuvent renommer le groupe, mettre à jour la description ou l’image, etc.
 - **Membres** : les membres peuvent accéder à tous les paramètres du groupe, mais ne peuvent pas modifier les paramètres du groupe. Par défaut, les membres du groupe peuvent inviter des invités à rejoindre votre groupe, même si vous pouvez [contrôler ce paramètre.](manage-guest-access-in-groups.md)
-- **Invités** - Les invités de groupe sont des membres extérieurs à votre organisation.
+- **Invités** : les invités de groupe sont des membres extérieurs à votre organisation.
 
 Seuls les administrateurs globaux, les administrateurs d’utilisateurs et les administrateurs de groupes peuvent créer et gérer des groupes dans le Centre d’administration Microsoft 365. Vous ne pouvez pas être un administrateur délégué (par exemple, consultant désigné comme administrateur).
 
@@ -64,9 +64,9 @@ En tant qu’administrateur, vous pouvez :
 
 Si vous préférez une façon plus automatisée de gérer le cycle de vie de vos groupes Microsoft 365, vous pouvez utiliser des stratégies d’expiration pour expirer des groupes à un intervalle de temps spécifique. Les propriétaires du groupe obtiennent un courrier électronique 30, 15 et 1 jour avant l’expiration du groupe qui leur permet de renouveler le groupe si nécessaire. Voir : [Stratégie d’expiration de groupe Microsoft 365.](office-365-groups-expiration-policy.md)
 
-Vous pouvez administrer vos groupes à partir du Centre d’administration Microsoft 365 ou à [l’aide de PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershel)
+Vous pouvez administrer vos groupes à partir du Centre d’administration Microsoft 365 ou à [l’aide de PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
-Si vous avez de nombreux utilisateurs, par exemple dans une grande entreprise ou une grande entreprise, il se peut que de nombreux utilisateurs créent des groupes à diverses fins. Nous vous recommandons vivement de consulter le Plan de gouvernance dans les groupes [Microsoft 365](plan-for-groups-governance.md) pour les meilleures pratiques.
+Si vous avez de nombreux utilisateurs, par exemple dans une grande entreprise ou une grande entreprise, vous pouvez avoir de nombreux utilisateurs qui créent des groupes à diverses fins. Nous vous recommandons vivement de consulter le Plan de gouvernance dans les groupes [Microsoft 365](plan-for-groups-governance.md) pour les meilleures pratiques.
 
 ## <a name="group-limits"></a>Limites de groupe
 

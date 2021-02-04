@@ -1,5 +1,5 @@
 ---
-title: 'Prise en charge des applications clientes Microsoft 365 : authentification basée sur des certificats'
+title: 'Prise en charge des applications clientes Microsoft 365 : authentification basée sur les certificats'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,33 +14,33 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Dans cet article, vous trouverez des détails sur la prise en charge de l’application cliente Microsoft 365 pour l’authentification basée sur les certificats.
+description: Dans cet article, recherchez des détails sur la prise en charge de l’application cliente Microsoft 365 pour l’authentification basée sur les certificats.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fde124fcefdf3b949ec35a3b2ed99b15ee36f85e
-ms.sourcegitcommit: 2beefb695cead03cc21d6066f589572d3ae029aa
+ms.openlocfilehash: f7ab5e4a2575796e37a115b36a4f78add20414ef
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349679"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097257"
 ---
-# <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Prise en charge des applications clientes Microsoft 365 : authentification basée sur des certificats
+# <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Prise en charge des applications clientes Microsoft 365 : authentification basée sur les certificats
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 L’authentification moderne est un terme générique pour une combinaison de méthodes d’authentification et d’autorisation. Cela inclut ce qui suit :
 
-- **Méthodes d’authentification**: authentification multifacteur ; Authentification basée sur les certificats clients.
-- **Méthodes d’autorisation**: mise en œuvre par Microsoft de l’autorisation Open (OAuth).
+- **Méthodes d’authentification**: authentification multifacteur ; Authentification basée sur un certificat client.
+- **Méthodes d’autorisation**: implémentation d’Open Authorization (OAuth) par Microsoft.
 
-L’authentification moderne est activée par le biais de l’utilisation d’une bibliothèque d’authentification, telle que la bibliothèque d’authentification Active Directory (ADAL) ou la bibliothèque d’authentification Microsoft (MSAL). L’authentification moderne est celle que les clients utilisent pour authentifier et autoriser l’accès aux ressources Microsoft 365. L’authentification moderne s’appuie sur OAuth et fournit un mécanisme sécurisé permettant aux clients d’accéder aux services Microsoft 365, sans avoir à accéder aux informations d’identification de l’utilisateur. Lors de la connexion, l’utilisateur s’authentifie directement auprès d’Azure Active Directory et reçoit une paire de jetons accès/actualiser en retour. Le jeton d’accès octroie au client l’accès aux ressources appropriées dans le client Microsoft 365. Un jeton d’actualisation est utilisé pour obtenir une nouvelle paire de jetons d’accès ou d’actualisation lorsque le jeton d’accès actuel arrive à expiration.
+L’authentification moderne est activée par le biais d’une bibliothèque d’authentification, telle que la bibliothèque d’authentification Active Directory (ADAL) ou la bibliothèque d’authentification Microsoft (MSAL). L’authentification moderne est ce que les clients utilisent pour authentifier et autoriser l’accès aux ressources Microsoft 365. L’authentification moderne tire parti d’OAuth et fournit un mécanisme sécurisé permettant aux clients d’accéder aux services Microsoft 365, sans nécessiter l’accès aux informations d’identification de l’utilisateur. Lors de la connectez-vous, l’utilisateur s’authentifier directement auprès d’Azure Active Directory et reçoit une paire de jetons d’accès/actualisation en retour. Le jeton d’accès accorde au client l’accès aux ressources appropriées dans le client Microsoft 365. Un jeton d’actualisation est utilisé pour obtenir une nouvelle paire de jetons d’accès ou d’actualisation à l’expiration du jeton d’accès actuel.
 
-L’authentification moderne prend en charge différents mécanismes d’authentification, tels que l’authentification basée sur les certificats. Les clients sur des appareils Windows, Android ou iOS peuvent utiliser l’authentification basée sur les certificats (CBA) pour s’authentifier auprès d’Azure Active Directory à l’aide d’un certificat client sur l’appareil. Au lieu d’un nom d’utilisateur/mot de passe standard, le certificat est utilisé pour obtenir une paire de jetons accès/actualisation à partir d’Azure Active Directory.
+L’authentification moderne prend en charge différents mécanismes d’authentification, tels que l’authentification basée sur les certificats. Les clients sur les appareils Windows, Android ou iOS peuvent utiliser l’authentification basée sur les certificats (CBA) pour s’authentifier dans Azure Active Directory à l’aide d’un certificat client sur l’appareil. Au lieu d’un nom d’utilisateur/mot de passe classique, le certificat est utilisé pour obtenir une paire de jetons d’accès/actualisation à partir d’Azure Active Directory.
 
-En savoir plus sur [l’authentification basée sur les certificats](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
+En savoir plus sur [l’authentification basée sur les certificats.](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)
 
-## <a name="supported-clients--platforms"></a>Clients & plateformes pris en charge
+## <a name="supported-clients--platforms"></a>Clients pris en charge & plateformes
 
-Les versions les plus récentes des clients et des plateformes suivants prennent en charge l’authentification basée sur les certificats lors de la connexion à des comptes Azure Active Directory au sein du client (par exemple, lors de l’ajout d’un compte à l’application). Pour plus d’informations sur la prise en charge de la plateforme dans Microsoft 365, voir [System Requirements for microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+Les dernières versions des plateformes et des clients suivants prendre en charge l’authentification basée sur les certificats lors de la signature de comptes Azure Active Directory au sein du client (par exemple, lors de l’ajout d’un compte à l’application). Pour plus d’informations sur la prise en charge des plateformes dans Microsoft 365, voir la demande système [requise pour Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
 <br>
 <br>
 
@@ -50,7 +50,7 @@ Les versions les plus récentes des clients et des plateformes suivants prennent
 | Access | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | Administrateur Azure | N/A | N/A | N/A | N/A | N/A |
 | Portail d’entreprise | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A |
-| Auxquelles | Vision | Vision | S/O | ![Pris en charge](../media/check-mark.png) | N/A |
+| Cortana | Planifié | Planifié | S/O | ![Pris en charge](../media/check-mark.png) | N/A |
 | Delve | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A |
 | Edge<sup>1</sup> | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | Excel | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
@@ -61,7 +61,7 @@ Les versions les plus récentes des clients et des plateformes suivants prennent
 | Office Lens| ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | ![Pris en charge](../media/check-mark.png) | N/A |
 | Office Mobile | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A |
 | Portail Office | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) | N/A |
-| OneDrive | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | Vision | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
+| OneDrive | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | Planifié | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
 | OneNote | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
 | Outlook | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
 | Planificateur | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A |
@@ -72,26 +72,26 @@ Les versions les plus récentes des clients et des plateformes suivants prennent
 | Project | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | Éditeur | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | Skype Entreprise | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | ![Pris en charge](../media/check-mark.png) |
-| Administrateur Skype entreprise | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
+| Administrateur Skype Entreprise | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | SharePoint | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A |
-| Administrateur SharePoint Online | Vision | Vision | N/A | N/A | N/A |
-| Notes du pense-bête | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) | N/A |
+| Administrateur SharePoint Online | Planifié | Planifié | N/A | N/A | N/A |
+| Notes pense-tout | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) | N/A |
 | Stream | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A |
 | Sway | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) | N/A |
-| Teams | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | Vision |
-| Action | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A |
+| Teams | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | Planifié |
+| To Do | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A |
 | Visio | S/O | ![Pris en charge](../media/check-mark.png) | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
-| Tableau blanc collaboratif | Vision | Vision | S/O | ![Pris en charge](../media/check-mark.png) | N/A |
+| Tableau blanc collaboratif | Planifié | Planifié | S/O | ![Pris en charge](../media/check-mark.png) | N/A |
 | Word | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
 | Analyse de l’espace de travail | N/A | N/A | N/A | N/A | N/A |
-| Yammer | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | Vision | S/O | Vision |
+| Yammer | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | Planifié | S/O | Planifié |
 
 >[!NOTE]
-><sup>1</sup> Edge pour iOS et Android prend en charge l’authentification basée sur des certificats lors de l’ajout de flux. Edge pour iOS et Android ne prend pas en charge l’authentification basée sur les certificats lors de l’exécution de l’authentification sur des sites Web, qui sont généralement des sites intranet. <br><br>  Dans ce scénario, un utilisateur accède à un site Web (généralement sur l’intranet) où le site Web demande à l’utilisateur de s’authentifier via un certificat. Cela n’implique pas du tout l’authentification moderne et n’utilise pas de bibliothèque d’authentification Microsoft. Ceci est dû à une limitation de iOS : iOS empêche les applications tierces d’accéder à la chaîne de trousseau système où les certificats sont stockés (seules les applications Apple et le [contrôleur WebView Safari](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) peuvent accéder à la chaîne de trousseau système). <br><br> Comme le serveur Edge repose sur l’infrastructure [WebKit](https://developer.apple.com/documentation/webkit) pour le rendu des sites Web, le serveur Edge ne peut pas accéder à la chaîne de Trousseau du système et présente à l’utilisateur un choix de certificat. Ceci, malheureusement, est par conception en raison de l’architecture d’Apple.
+><sup>1</sup> Edge pour iOS et Android prend en charge l’authentification basée sur les certificats lors de l’ajout de flux de compte. Edge pour iOS et Android ne prend pas en charge l’authentification basée sur les certificats lors de l’authentification sur des sites web, qui sont généralement des sites intranet. <br><br>  Dans ce scénario, un utilisateur navigue vers un site web (généralement sur l’intranet) où il doit s’authentifier via un certificat. Cela n’implique pas du tout l’authentification moderne et ne tire pas parti d’une bibliothèque d’authentification Microsoft. Cela est dû à une limitation avec iOS : iOS empêche les applications tierces d’accéder auchain système dans lequel les certificats sont stockés (seules les applications Apple et le contrôleur [Safari WebView](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) peuvent accéder auchain système). <br><br> Comme Edge s’appuie sur l’infrastructure [WebKit](https://developer.apple.com/documentation/webkit) pour le rendu des sites web, Edge ne peut pas accéder au trousseaux système et présenter à l’utilisateur un choix de certificat. Malheureusement, cela est dû à l’architecture d’Apple.
 
 ## <a name="supported-powershell-modules"></a>Modules PowerShell pris en charge
 
-- [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0)
-- [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
-- [SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+- [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 

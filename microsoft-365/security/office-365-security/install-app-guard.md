@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation matérielle. Empêcher les attaques actuelles et émergentes telles que les attaques ou les liens malveillants de perturber la productivité des employés et la sécurité de l’entreprise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9a9c9270f61661982108da518d1bf24d2a717b6a
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: cf02f6776eb68537486b49c4fe45e8f88eeb38c6
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029725"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094878"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard pour Office pour les administrateurs
 
 **S’applique à :** Word, Excel et PowerPoint pour Microsoft 365, Windows 10 Entreprise
 
-Microsoft Defender Application Guard pour Office (Application Guard pour Office) permet d’empêcher les fichiers non fiables d’accéder aux ressources de confiance, afin de préserver la sécurité de votre entreprise contre les attaques nouvelles et émergentes. Cet article présente aux administrateurs la configuration des appareils pour un aperçu d’Application Guard pour Office. Il fournit des informations sur la exigences système et les étapes d’installation pour activer Application Guard pour Office sur un appareil.
+Microsoft Defender Application Guard pour Office (Application Guard pour Office) permet d’empêcher les fichiers non fiables d’accéder aux ressources de confiance, ce qui permet de préserver la sécurité de votre entreprise contre les attaques nouvelles et émergentes. Cet article présente aux administrateurs la configuration des appareils pour un aperçu d’Application Guard pour Office. Il fournit des informations sur la exigences système et les étapes d’installation pour activer Application Guard pour Office sur un appareil.
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -40,7 +40,7 @@ Microsoft Defender Application Guard pour Office (Application Guard pour Office)
 ### <a name="minimum-software-requirements"></a>Configuration logicielle minimale requise
 
 * **Windows 10**: édition Windows 10 Entreprise, version 2004 (20H1) build 19041 ou ultérieure
-* **Office**: version 2011 du canal actuel d’Office 16.0.13530.10000 ou version ultérieure
+* **Office**: Office Current Channel Build version 2011 16.0.13530.10000 ou version ultérieure. Les versions 32 bits et 64 bits d’Office sont toutes deux pris en charge.
 * **Package de mise à** jour : Mise à jour de sécurité mensuelle cumulative Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 Pour obtenir des informations détaillées sur la requise, reportez-vous à [la procédure système requise pour Microsoft Defender Application Guard.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard) Pour en savoir plus sur les canaux de mise à jour Office, voir Vue d’ensemble des canaux de mise à [jour pour Microsoft 365.](https://docs.microsoft.com/deployoffice/overview-update-channels)
@@ -53,7 +53,7 @@ Pour obtenir des informations détaillées sur la requise, reportez-vous à [la 
 
 ### <a name="enable-application-guard-for-office"></a>Activer Application Guard pour Office
 
-1. Téléchargez et installez les mises à jour de **sécurité mensuelles cumulatives Windows 10 KB4571756.**
+1. Téléchargez et installez les mises à jour de sécurité **mensuelles cumulatives Windows 10 KB4571756.**
 
 2. Sélectionnez **Microsoft Defender Application Guard sous** Fonctionnalités Windows et **sélectionnez OK.** L’activation de la fonctionnalité Application Guard demande un redémarrage du système. Vous pouvez choisir de redémarrer maintenant ou après l’étape 3.
 
@@ -103,7 +103,7 @@ Lorsque vous ouvrez un fichier nontrus pour la première fois, vous pouvez voir 
 
 ![Écran de splash de l’application Office](../../media/ag08-confirm.png)
 
-Lors de l’ouverture, le fichier doit afficher quelques indicateurs visuels pour l’ouverture du fichier dans Application Guard pour Office :
+À l’ouverture, le fichier doit afficher quelques indicateurs visuels pour l’ouverture du fichier dans Application Guard pour Office :
 
 * Une callout dans le ruban
 
@@ -163,7 +163,7 @@ Si vous rencontrez des problèmes lors du lancement d’Application Guard pour O
 
    2. Si le problème que vous rencontrez se produit pendant l’exécution d’Application Guard, ouvrez une instance d’Application Guard. L’ouverture d’une instance permet de collecter des traces supplémentaires à partir du conteneur Application Guard.
 
-   3. Sélectionnez **Démarrer l’enregistrement** et attendez que la vignette cesse de tourner et dites *Arrêter l’enregistrement.*
+   3. Sélectionnez **Démarrer l’enregistrement,** puis attendez que la vignette cesse de tourner et dites *Arrêter l’enregistrement.*
 
    4. Reproduisez entièrement le problème avec Application Guard. La reproduction peut inclure la tentative de lancement d’une instance d’Application Guard et l’attente de son échec, ou la reproduction d’un problème dans une instance d’Application Guard en cours d’exécution.
 
@@ -183,7 +183,7 @@ Vous pouvez également envoyer des commentaires à partir d’Office si le probl
 
 Application Guard pour Office est intégré à Microsoft Defender for Endpoint pour fournir une surveillance et une alerte sur les activités malveillantes qui se produisent dans l’environnement isolé.
 
-Microsoft Defender pour point de terminaison est une plateforme de sécurité conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Pour plus d’informations sur cette plateforme, voir [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Pour en savoir plus sur l’intégration d’appareils à cette plateforme, voir Appareils intégrés au [service Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
+Microsoft Defender pour point de terminaison est une plateforme de sécurité conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Pour plus d’informations sur cette plateforme, voir [Microsoft Defender pour Endpoint.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) Pour en savoir plus sur l’intégration d’appareils à cette plateforme, voir Appareils intégrés au [service Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
 
 Vous pouvez également configurer Microsoft Defender pour Office 365 afin qu’il fonctionne avec Defender pour endpoint. Pour plus d’informations, reportez-vous [à Intégrer Defender pour Office 365 à Microsoft Defender pour point de terminaison.](integrate-office-365-ti-with-wdatp.md)
 
@@ -227,4 +227,4 @@ Lorsque cette heuristique est remplie, Office pré-crée un conteneur Applicatio
 
 * La sélection de liens web `http` (ou `https` ) n’ouvre pas le navigateur.
 * Le contenu rtf (Rich Text Format) ou les images de documents Office ouverts avec Application Guard ne sont pas pris en charge pour le moment.
-* Les mises à jour de .NET entraînent l’échec de l’ouverture des fichiers dans Application Guard. Pour contourner ce cas de défaillance, les utilisateurs peuvent redémarrer leur appareil. En savoir plus sur le problème lors de la réception d’un message d’erreur lors de la tentative [d’ouverture Windows Defender Application Guard ou bac à sable Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* Les mises à jour de .NET entraînent l’échec de l’ouverture des fichiers dans Application Guard. Pour contourner ce cas de défaillance, les utilisateurs peuvent redémarrer leur appareil. En savoir plus sur le problème lors de la réception d’un message d’erreur lors de la tentative d’ouverture [Windows Defender Application Guard ou bac à sable Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).

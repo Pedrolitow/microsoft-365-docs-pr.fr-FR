@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Configurer la compréhension de contenu dans Projet Cortex
-ms.openlocfilehash: a9713f1d28cf863ab827d2975e84042026105b3f
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 0e5b48bab343f887a1438386bfa4f7915126ccd7
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976385"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094708"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
@@ -34,12 +34,12 @@ Vous pouvez modifier vos paramètres après la configuration initiale dans le Ce
 Avant la configuration, veillez à planifier la meilleure manière d’installer et de configurer la compréhension de contenu dans votre environnement. Par exemple, vous devez prendre les décisions suivantes :
 
 - Sites SharePoint dans lesquels vous souhaitez activer le traitement des formulaires : tous les sites, certains sites ou des sites sélectionnés
-- Nom et administrateurs ou votre centre de contenu
+- Le nom et les administrateurs de votre centre de contenu 
 
 ## <a name="requirements"></a>Configuration requise 
 
 > [!NOTE]
-> Pour accéder au Centre d’administration Microsoft 365 et configurer la compréhension de contenu, vous devez disposer des autorisations d’administrateur général ou d’administrateur SharePoint.
+> Pour accéder au centre d’administration Microsoft 365 et configurer SharePoint Syntex, vous devez disposer des autorisations d’administrateur général ou d’administrateur SharePoint.
 
 En tant qu’administrateur, vous pouvez également modifier vos paramètres sélectionnés à tout moment après la configuration, ainsi que les paramètres de gestion de la compréhension de contenu dans le Centre d’administration Microsoft 365.
 

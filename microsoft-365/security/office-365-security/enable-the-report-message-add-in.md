@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment activer le add-in Message de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1f8cffaa6346ec7f426da3c862014ed85a9a367
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 9b21472736cff2fd0eed7da5495ab6aae597032f
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029231"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094854"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activez le complément Signaler un message
 
@@ -52,6 +52,7 @@ Si vous êtes un administrateur général ou un administrateur Exchange Online e
   - Outlook 2013 SP1 ou une édition ultérieure
   - Outlook 2016 pour Mac
   - Outlook inclus dans les applications Microsoft 365 pour Entreprise
+  - Application Outlook pour iOS et Android
 
 - Le module de rapport de message n’est pas disponible pour les boîtes aux lettres dans les organisations Exchange locales.
 
@@ -59,7 +60,7 @@ Si vous êtes un administrateur général ou un administrateur Exchange Online e
 
 - Votre navigateur web existant doit fonctionner avec le add-in Message de rapport. Toutefois, si vous remarquez que le module n’est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
 
-- Pour les installation organisationnelles, l’organisation doit être configurée pour utiliser l’authentification OAuth. Pour plus d’informations, [voir Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
+- Pour les installation organisationnelles, l’organisation doit être configurée pour utiliser l’authentification OAuth. Pour plus d’informations, [voir Determine if Centralized Deployment of add-ins works for your organization.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
 - Les administrateurs doivent être membres du groupe de rôles Administrateurs globaux. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
@@ -100,13 +101,13 @@ Pour savoir comment utiliser le add-in, voir Utiliser le [add-in Message de rapp
 
 3. Dans le **volant Déployer un** nouveau module complémentaire qui s’affiche, examinez les informations, puis cliquez sur **Suivant**.
 
-4. Sur la page suivante, cliquez sur **Choisir dans le Store.**
+4. Sur la page suivante, cliquez **sur Choisir dans le Store.**
 
    ![Déployer une nouvelle page de modules](../../media/NewAddInScreen2.png)
 
-5. Dans la page **Sélectionner un add-in** qui s’affiche, cliquez dans la zone De recherche, entrez Message de rapport, puis cliquez sur **Icône**   ![ ](../../media/search-icon.png) Rechercher. Dans la liste des résultats, recherchez Message de **rapport,** puis cliquez sur **Ajouter.**
+5. Dans la page **Sélectionner un add-in** qui s’affiche, cliquez dans la zone De recherche, entrez Message de rapport, puis cliquez sur **Icône**   ![ ](../../media/search-icon.png) Rechercher. Dans la liste des résultats, recherchez **Message de rapport,** puis cliquez sur **Ajouter.**
 
-   ![Sélectionner les résultats de la recherche de add-in](../../media/NewAddInScreen3.png)
+   ![Sélectionner des résultats de recherche de add-in](../../media/NewAddInScreen3.png)
 
 6. Dans la boîte de dialogue qui s’affiche, examinez les informations de licence et de confidentialité, puis cliquez sur **Continuer**.
 
@@ -121,7 +122,7 @@ Pour savoir comment utiliser le add-in, voir Utiliser le [add-in Message de rapp
    - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
 
      - **Fixe (par défaut)**: le add-in est automatiquement déployé pour les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
-     - **Disponible**: les utilisateurs peuvent installer le add-in sur **home** \> **get add-ins** \> **admin-managed**.
+     - **Disponible**: les utilisateurs peuvent installer le add-in sur **Home** \> **Get add-ins** \> **géré par l’administrateur.**
      - **Facultatif**: le add-in est automatiquement déployé pour les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
 
    ![Configurer la page de l’ajout](../../media/configure-add-in.png)
@@ -158,7 +159,7 @@ Lorsque vous informez les utilisateurs du add-in Message de rapport, incluez un 
 
 2. Recherchez et sélectionnez le add-in **Message** de rapport.
 
-3. Dans le volant **Modifier le message** de rapport qui s’affiche, examinez et modifiez les paramètres selon le cas pour votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+3. Dans le **volant Modifier le message** de rapport qui s’affiche, examinez et modifiez les paramètres selon le cas pour votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
    ![Paramètres du add-in Message de rapport](../../media/EditReportMessageAddIn.png)
 

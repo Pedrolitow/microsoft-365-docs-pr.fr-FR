@@ -12,14 +12,14 @@ search.appverid:
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
-description: Trouvez des réponses aux questions fréquemment posées sur le déplacement des données de base vers une nouvelle géodécenter Office 365.
+description: Trouvez des réponses aux questions fréquemment posées sur le déplacement de données principales vers une nouvelle géodécenter Office 365.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 49ddcbf3a1aa8d91bd8202894e114fe50624720a
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: a7e59622e35604ebd9befbbe17a8a125ed15e101
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780259"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094654"
 ---
 # <a name="data-move-general-faq"></a>FAQ général relatif au déplacement de données
 
@@ -52,7 +52,7 @@ En raison des dépendances partagées entre Exchange Online et SharePoint Online
   
 Les déplacements de données sont une opération de service back-end ayant un impact minimal sur les utilisateurs finaux. Les fonctionnalités qui peuvent être impactées sont répertoriées dans [During et after your data move](during-and-after-your-data-move.md). Nous respectons le contrat Microsoft Online Services de niveau de [service (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) pour la disponibilité, de sorte que les clients n’ont rien à préparer ou à surveiller pendant le déplacement. 
   
-Tous les services Microsoft 365 exécutent les mêmes versions dans les centres de données, ce qui vous permet de vous assurer de la cohérence des fonctionnalités. Votre service est entièrement pris en charge tout au long du processus.
+Tous les services Microsoft 365 exécutent les mêmes versions dans les centres de données, afin que vous soyez assuré de la cohérence des fonctionnalités. Votre service est entièrement pris en charge tout au long du processus.
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>Quel est l’impact de la localisation de différents services dans différentes géos ?
 
@@ -108,7 +108,7 @@ Il n’est pas possible de modifier le pays d’inscription associé à votre cl
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>Que se passe-t-il si nous sommes en train de migrer des données de messagerie vers Microsoft 365 lors du déplacement d’Exchange Online ?
 
-Il s’agit d’un scénario très courant qui est entièrement pris en charge. La migration cloud entre des centres de données géographiques n’interfère pas avec les migrations de boîtes aux lettres sur site vers le cloud.
+Il s’agit d’un scénario très courant qui est entièrement pris en charge.  La migration cloud entre des centres de données géographiques n’interfère pas avec les migrations de boîtes aux lettres sur site vers le cloud.
   
  ## <a name="can-i-pilot-some-users"></a>Puis-je piloter certains utilisateurs ?
   
@@ -124,13 +124,13 @@ Si vous créez un client une fois que la nouvelle géo de centre de données est
  
 Non, ce n’est pas possible. Les clients qui ont été déplacés vers de nouveaux centres de données géographiques ne peuvent pas être déplacés vers de nouveaux centres de données géographiques. En tant que client dans n’importe quelle situation géographique, vous aurez la même qualité de service, les mêmes performances et les mêmes contrôles de sécurité qu’auparavant. [Microsoft 365 Multi Geo](https://aka.ms/multi-geo) est disponible pour certains clients en tant que modules de plateformes et permet à un seul client de créer plusieurs géos satellites et de déplacer des données utilisateur vers ces géos avec des engagements de résidence des données.
   
-## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>Les clients Microsoft 365 hébergés dans les nouveaux centres de données seront-ils disponibles pour les utilisateurs extérieurs au pays ?
+## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>Les clients Microsoft 365 hébergés dans les nouveaux centres de données seront-ils accessibles aux utilisateurs extérieurs au pays ?
   
 Oui. Microsoft maintient un vaste réseau mondial avec des connexions Internet publiques dans plus de 130 emplacements dans 35 pays dans le monde avec des accords d’homologue avec plus de 2 700 fournisseurs de services Internet (ISP). Les utilisateurs pourront accéder aux centres de données par Internet, où qu’ils soient.
 
 ## <a name="my-tenant-has-configured-the-multi-geo-add-on-can-i-still-enroll-in-my-tenant-in-the-microsoft-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>Mon client a configuré le module [add-on Multi-Géo.](https://aka.ms/multi-geo) Puis-je toujours m’inscrire à mon client dans le programme de déplacement Microsoft 365 pour modifier ma zone géographique par défaut et déplacer tout utilisateur qui n’est pas dans une région satellite vers la nouvelle zone géographique par défaut ?
 
-Oui, votre client est éligible pour s’inscrire, mais il existe des considérations importantes, car le déplacement au niveau du client n’est pas entièrement pris en charge pour les clients qui ont configuré Multi-Géo.
+Oui, votre client peut s’inscrire, mais il existe des considérations importantes, car le déplacement au niveau du client n’est pas entièrement pris en charge pour les clients qui ont configuré multigéogé.
 
 SharePoint Online et OneDrive Entreprise ne peuvent pas migrer vers la nouvelle géo de centres de données au niveau du client via ce programme. L’administrateur client peut configurer les partages OneDrive Entreprise pour qu’ils se déplacent vers n’importe quelle région disponible à l’aide de Multi-Géo, mais l’emplacement par défaut du client ne peut pas être modifié une fois que Multi-Géo a été configuré pour un client.
 

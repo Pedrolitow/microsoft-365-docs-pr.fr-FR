@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: En savoir plus sur Azure Information Protection (AIP) pour Office 365 géré par 21Vianet et comment le configurer pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: cee50384587ffc3e1e43eb9c6bb07d2e0ced7e13
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 300e7633237511fb9de64199ae7cf54594f2239e
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988043"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099677"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Prise en charge d’Azure Information Protection pour Office 365 géré par 21Vianet
 
@@ -51,6 +51,8 @@ La liste suivante inclut les lacunes existantes entre AIP pour Office 365 géré
 
 - La [visionneuse mobile n’est](/azure/information-protection/rms-client/mobile-app-faq) pas prise en charge par Azure China 21Vianet.
 
+- La zone AIP du portail Azure n’est pas disponible pour les clients en Chine. Utilisez [les commandes PowerShell](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) au lieu d’effectuer des actions dans le portail, telles que l’installation du scanneur local et la gestion de vos travaux d’analyse de contenu.
+
 ## <a name="configure-aip-for-customers-in-china"></a>Configurer AIP pour les clients en Chine
 
 Pour configurer AIP pour les clients en Chine :
@@ -74,7 +76,7 @@ Pour que le chiffrement fonctionne correctement, RMS doit être activé pour le 
     2. Si le module AIPService n’est pas installé, exécutez `Install-Module AipService` .
     3. Importer le module à l’aide `Import-Module AipService` de .
     4. Connectez-vous au service à l’aide `Connect-AipService -environmentname azurechinacloud` de .
-    5. Exécutez `(Get-AipServiceConfiguration).FunctionalState` et vérifiez si l’état `Enabled` est .
+    5. Exécutez `(Get-AipServiceConfiguration).FunctionalState` et vérifiez si l’état est `Enabled` .
 
 2. Si l’état fonctionnel est `Disabled` , exécutez `Enable-AipService` .
 
@@ -103,7 +105,7 @@ En outre, l’hypothèse est que les utilisateurs se connectent avec un nom d’
 
 3. Associez le domaine personnalisé au client dans [le portail Azure.](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains) Cela ajoute une entrée dans DNS, qui peut prendre plusieurs minutes pour être vérifiée après avoir ajouté la valeur aux paramètres DNS.
 
-4. Connectez-vous au Centre d’administration Microsoft 365 avec les informations d’identification d’administrateur global correspondantes et ajoutez le domaine (par exemple, ) pour la création `contoso.cn` d’utilisateurs. Dans le processus de vérification, des modifications DNS supplémentaires peuvent être nécessaires. Une fois la vérification effectuée, les utilisateurs peuvent être créés.
+4. Connectez-vous au Centre d’administration Microsoft 365 avec les informations d’identification d’administrateur global correspondantes et ajoutez le domaine (par exemple, ) pour la `contoso.cn` création d’utilisateurs. Dans le processus de vérification, des modifications DNS supplémentaires peuvent être nécessaires. Une fois la vérification effectuée, les utilisateurs peuvent être créés.
 
 #### <a name="configure-dns-encryption---mac-ios-android"></a>Configurer le chiffrement DNS - Mac, iOS, Android
 
@@ -112,7 +114,7 @@ Connectez-vous à votre fournisseur DNS, accédez aux paramètres DNS du domaine
 - Service = `_rmsdisco`
 - Protocole = `_http`
 - Name = `_tcp`
-- Target = `api.aadrm.cn`
+- Cible = `api.aadrm.cn`
 - Port = `80`
 - Priority, Weight, Seconds, TTL = default values
 
@@ -144,7 +146,7 @@ Les applications AIP sur Windows ont besoin de la clé de Registre suivante pour
 
 ### <a name="step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>Étape 5 : Installer le scanneur AIP local et gérer les travaux d’analyse de contenu
 
-Installez l’analyseur AIP local pour analyser vos partages réseau et de contenu à la recherche de données sensibles, et appliquez des étiquettes de classification et de protection comme configuré dans la stratégie de votre organisation.
+Installez le scanneur AIP local pour analyser vos partages réseau et de contenu pour les données sensibles, et appliquez des étiquettes de classification et de protection comme configuré dans la stratégie de votre organisation.
 
 Lors de l’installation du scanneur et de la gestion de vos travaux d’analyse de contenu, utilisez les cmdlets suivantes au lieu de l’interface du portail Azure utilisée par les offres commerciales :<br><br>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Prise en charge des applications clientes Microsoft 365 : accès conditionnel'
+title: 'Prise en charge des applications clientes Microsoft 365 : authentification multifacteur'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -7,34 +7,36 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
+search.appverid:
+- MET150
 f1.keywords:
 - NOCSH
-description: Dans cet article, découvrez les plateformes, les clients et les modules PowerShell qui supportent l’accès conditionnel pour Microsoft 365.
+description: Dans cet article, découvrez les plateformes, les clients et les modules PowerShell qui supportent l’authentification multifacteur pour Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 969dd9d712fe124458273144b3e7974e03ade9e0
+ms.openlocfilehash: fdec611fc595cdc15abb0fc1fb7a998f7a615ff7
 ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097245"
+ms.locfileid: "50097467"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Prise en charge des applications clientes Microsoft 365 : accès conditionnel
+# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Prise en charge des applications clientes Microsoft 365 : authentification multifacteur
 
-Dans l’espace de travail moderne, les utilisateurs peuvent accéder aux ressources de votre organisation à l’aide de différents appareils et applications de n’importe où. Par conséquent, le simple fait de se concentrer sur les personnes qui peuvent accéder à une ressource ne suffit plus. Votre organisation doit également prendre en charge comment et où une ressource est accessible dans votre infrastructure de contrôle d’accès.
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Avec l’appareil, l’emplacement et l’accès conditionnel basé sur l’authentification multifacteur Azure Active Directory, vous pouvez répondre à cette nouvelle exigence. L’accès conditionnel est une fonctionnalité d’Azure Active Directory qui vous permet d’appliquer des contrôles sur l’accès aux applications dans votre environnement, en fonction de conditions spécifiques et gérés à partir d’un emplacement central.
+Pour fournir un niveau de sécurité supplémentaire pour les connecteurs, les clients peuvent être configurés pour utiliser l’authentification multifacteur (MFA), qui utilise à la fois un mot de passe utilisateur et une méthode de vérification utilisateur supplémentaire basée sur :
 
-En savoir plus sur [l’accès conditionnel Azure Active Directory.](/azure/active-directory/conditional-access/)
+- Quelque chose en leur possession qui n’est pas facilement dupliqué, tel qu’un smartphone.
+- Quelque chose que l’utilisateur possède de manière unique et err ment, par exemple ses empreintes digitales, son visage ou tout autre attribut biométrique
+
+En savoir plus sur [l’authentification multifacteur.](/azure/active-directory/authentication/multi-factor-authentication)
 
 ## <a name="supported-clients--platforms"></a>Clients pris en charge & plateformes
 
-Les dernières versions des plateformes et des clients suivants offrent une prise en charge de l’accès conditionnel. Pour plus d’informations sur la prise en charge des plateformes dans Microsoft 365, voir la demande système [requise pour Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
-
+Les dernières versions des plateformes et des clients suivants prisent en charge l’authentification multifacteur. Pour plus d’informations sur la prise en charge des plateformes dans Microsoft 365, voir la demande système [requise pour Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
 <br>
 <br>
 
@@ -44,7 +46,7 @@ Les dernières versions des plateformes et des clients suivants offrent une pris
 | Access | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | Administrateur Azure | N/A | N/A | N/A | N/A | N/A |
 | Portail d’entreprise | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A |
-| Cortana | Planifié | Planifié | S/O | ![Pris en charge](../media/check-mark.png) | N/A |
+| Cortana | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | ![Pris en charge](../media/check-mark.png) | N/A |
 | Delve | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A |
 | Microsoft Edge | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | Excel | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
@@ -59,13 +61,14 @@ Les dernières versions des plateformes et des clients suivants offrent une pris
 | OneNote | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
 | Outlook | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
 | Planificateur | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A |
-| Power Apps | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | Planifié | S/O |
+| Power Apps | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | ![Pris en charge](../media/check-mark.png) | N/A |
 | Power Automate | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A |
 | Power BI | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
 | PowerPoint | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
 | Project | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | Éditeur | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
-| Skype Entreprise | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A ||
+| Skype Entreprise | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | ![Pris en charge](../media/check-mark.png) |
+| Administrateur Skype Entreprise | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | SharePoint | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A |
 | Administrateur SharePoint Online | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | Notes pense-tout | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) | N/A |

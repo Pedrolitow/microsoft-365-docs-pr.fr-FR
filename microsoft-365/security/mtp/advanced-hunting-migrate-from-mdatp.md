@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4e008488bdd733c9a7ce5b418fb838e0fe880d9d
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 521b5fc2a8efee83b6a2931e7dbc1c713bd63cd2
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080738"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094806"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrer des requêtes de recherche avancée à partir de Microsoft Defender pour le point de terminaison
 
@@ -48,12 +48,12 @@ Déplacez vos flux de travail de recherche avancée de Microsoft Defender pour p
 Vous pouvez faire la transition sans affecter vos flux de travail Defender for Endpoint existants. Les requêtes enregistrées restent intactes et les règles de détection personnalisées continuent à s’exécuter et à générer des alertes. Toutefois, elles seront visibles dans Microsoft 365 Defender. 
 
 ## <a name="schema-tables-in-microsoft-365-defender-only"></a>Tableaux de schéma dans Microsoft 365 Defender uniquement
-Le schéma de [recherche avancée Microsoft 365 Defender](advanced-hunting-schema-tables.md) fournit des tableaux supplémentaires contenant des données provenant de différentes solutions de sécurité Microsoft 365. Les tableaux suivants sont disponibles uniquement dans Microsoft 365 Defender :
+Le [schéma de recherche avancée Microsoft 365 Defender](advanced-hunting-schema-tables.md) fournit des tableaux supplémentaires contenant des données provenant de différentes solutions de sécurité Microsoft 365. Les tableaux suivants sont disponibles uniquement dans Microsoft 365 Defender :
 
 | Nom du tableau | Description |
 |------------|-------------|
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | Fichiers, adresses IP, URL, utilisateurs ou appareils associés à des alertes |
-| [AlertInfo](advanced-hunting-alertinfo-table.md) | Alertes de Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité, y compris les informations de gravité et les catégories de menaces  |
+| [AlertInfo](advanced-hunting-alertinfo-table.md) | Alertes de Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité, y compris les informations de gravité et les catégories de menace  |
 | [AppFileEvents](advanced-hunting-appfileevents-table.md) | Activités liées aux fichiers dans les applications et services cloud |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | Informations sur les fichiers joints aux e-mails |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | Événements de messagerie Microsoft 365, y compris la remise et le blocage des messages électroniques |
@@ -67,7 +67,7 @@ Le schéma de [recherche avancée Microsoft 365 Defender](advanced-hunting-schem
 ## <a name="map-devicealertevents-table"></a>Table Map DeviceAlertEvents
 Les `AlertInfo` `AlertEvidence` tableaux et les tables `DeviceAlertEvents` remplacent le tableau dans le schéma Microsoft Defender for Endpoint. En plus des données sur les alertes d’appareil, ces deux tableaux incluent des données sur les alertes pour les identités, les applications et les e-mails.
 
-Utilisez le tableau suivant pour vérifier la façon dont les `DeviceAlertEvents` colonnes sont m mapées aux colonnes des `AlertInfo` tableaux et des `AlertEvidence` colonnes.
+Utilisez le tableau suivant pour vérifier la façon dont les `DeviceAlertEvents` colonnes sont m mapées aux colonnes dans `AlertInfo` les tableaux et les `AlertEvidence` colonnes.
 
 >[!TIP]
 >Outre les colonnes du tableau suivant, le tableau inclut de nombreuses autres colonnes qui fournissent une image plus globale des alertes provenant de `AlertEvidence` différentes sources. [Voir toutes les colonnes AlertEvidence](advanced-hunting-alertevidence-table.md) 
@@ -96,7 +96,7 @@ Les requêtes Microsoft Defender pour les points de terminaison fonctionneront t
 - Joignez les `AlertInfo` tables et les tables pour obtenir des données `AlertEvidence` `AlertId` équivalentes.
 
 ### <a name="original-query"></a>Requête d’origine
-La requête suivante utilise Microsoft Defender pour le point de terminaison pour obtenir les alertes qui `DeviceAlertEvents` impliquent _powershell.exe_:
+La requête suivante utilise Microsoft Defender for Endpoint pour obtenir les alertes qui `DeviceAlertEvents` impliquent _powershell.exe_:
 
 ```kusto
 DeviceAlertEvents
@@ -104,7 +104,7 @@ DeviceAlertEvents
 | where AttackTechniques has "PowerShell (T1086)" and FileName == "powershell.exe"
 ```
 ### <a name="modified-query"></a>Requête modifiée
-La requête suivante a été ajustée pour être utilisé dans Microsoft 365 Defender. Au lieu de vérifier le nom de fichier directement à partir de , il joint et vérifie le nom de fichier `DeviceAlertEvents` `AlertEvidence` dans cette table.
+La requête suivante a été ajustée pour être utilisé dans Microsoft 365 Defender. Au lieu de vérifier le nom de fichier directement à partir de , il joint et recherche le nom de fichier `DeviceAlertEvents` `AlertEvidence` dans cette table.
 
 ```kusto
 AlertInfo 
@@ -114,64 +114,7 @@ AlertInfo
 | where FileName == "powershell.exe"
 ```
 
-## <a name="migrate-custom-detection-rules"></a>Migrer des règles de détection personnalisées
 
-Lorsque les règles microsoft Defender pour les points de terminaison sont modifiées sur Microsoft 365 Defender, elles continuent de fonctionner comme avant si la requête résultante examine uniquement les tables des appareils. Par exemple, les alertes générées par des règles de détection personnalisées qui interrogent uniquement les tables des appareils continueront d’être remis à votre SIEM et de générer des notifications par courrier électronique, selon la façon dont vous les avez configurées dans Microsoft Defender pour le point de terminaison. Toutes les règles de suppression existantes dans Defender pour le point de terminaison continueront également de s’appliquer.
-
-Une fois que vous avez modifié une règle Defender pour point de terminaison afin qu’elle interroge les tables d’identité et de messagerie, qui sont uniquement disponibles dans Microsoft 365 Defender, la règle est automatiquement déplacée vers Microsoft 365 Defender. 
-
-Alertes générées par la règle migré :
-
-- Ne sont plus visibles dans le portail Defender pour point de terminaison (Centre de sécurité Microsoft Defender)
-- Ne plus être remis à votre SIEM ou générer des notifications par courrier électronique. Pour contourner ce changement, configurez les notifications via Microsoft 365 Defender pour obtenir les alertes. Vous pouvez utiliser [l’API Microsoft 365 Defender](api-incident.md) pour recevoir des notifications pour les alertes de détection des clients ou les incidents connexes.
-- Ne sera pas supprimé par les règles de suppression des points de terminaison de Microsoft Defender. Pour empêcher la générer des alertes pour certains utilisateurs, périphériques ou boîtes aux lettres, modifiez les requêtes correspondantes pour exclure explicitement ces entités.
-
-Si vous modifiez une règle de cette façon, vous serez invité à confirmer l’application de ces modifications.
-
-Les nouvelles alertes générées par des règles de détection personnalisées dans le portail Microsoft 365 Defender sont affichées dans une page d’alerte qui fournit les informations suivantes :
-
-- Titre et description de l’alerte 
-- Ressources impactées
-- Actions prises en réponse à l’alerte
-- Résultats de la requête qui ont déclenché l’alerte 
-- Informations sur la règle de détection personnalisée 
- 
-![Image de la nouvelle page d’alerte](../../media/newalertpage.png)
-
-## <a name="write-queries-without-devicealertevents"></a>Écrire des requêtes sans DeviceAlertEvents
-
-Dans le schéma Microsoft 365 Defender, les tableaux et les tableaux sont fournis pour prendre en charge les diverses informations qui accompagnent les alertes provenant de `AlertInfo` `AlertEvidence` différentes sources. 
-
-Pour obtenir les mêmes informations d’alerte que vous avez utilisées pour obtenir à partir de la table dans le schéma Microsoft Defender for Endpoint, filtrez la table, puis joignez chaque ID unique à la table, qui fournit des informations détaillées sur l’événement et `DeviceAlertEvents` `AlertInfo` l’entité. `ServiceSource` `AlertEvidence` 
-
-Consultez l’exemple de requête ci-dessous :
-
-```kusto
-AlertInfo
-| where Timestamp > ago(7d)
-| where ServiceSource == "Microsoft Defender for Endpoint"
-| join AlertEvidence on AlertId
-```
-
-Cette requête produit beaucoup plus de colonnes que dans le schéma `DeviceAlertEvents` Microsoft Defender for Endpoint. Pour que les résultats restent gérables, utilisez cette rubrique `project` pour obtenir uniquement les colonnes qui vous intéressent. L’exemple ci-dessous projete les colonnes qui peuvent vous intéresser lorsque l’enquête a détecté une activité PowerShell :
-
-```kusto
-AlertInfo
-| where Timestamp > ago(7d)
-| where ServiceSource == "Microsoft Defender for Endpoint"
-    and AttackTechniques has "powershell"
-| join AlertEvidence on AlertId
-| project Timestamp, Title, AlertId, DeviceName, FileName, ProcessCommandLine 
-```
-
-Si vous souhaitez filtrer des entités spécifiques impliquées dans les alertes, vous pouvez le faire en spécifiant le type d’entité et la valeur que vous souhaitez `EntityType` filtrer. L’exemple suivant recherche une adresse IP spécifique :
-
-```kusto
-AlertInfo
-| where Title == "Insert_your_alert_title"
-| join AlertEvidence on AlertId 
-| where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
-```
 
 ## <a name="see-also"></a>Voir aussi
 - [Activer Microsoft 365 Defender](advanced-hunting-query-language.md)
