@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 751b88ea3dde0c4cf2a33dded26a032a1e320b5e
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: d834cc53677c8b7c01ed4bec40ed51983d41e9da
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071309"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084623"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -77,7 +77,7 @@ Pour plus d’informations sur le fonctionnement des paramètres de rétention e
 
 ## <a name="retention-policies-and-retention-labels"></a>Stratégies de rétention et étiquettes de rétention.
 
-Vous pouvez utiliser les stratégies de rétention et les étiquettes de rétention avec les stratégies d’étiquette pour affecter vos paramètres de rétention à du contenu. 
+Pour affecter vos paramètres de rétention au contenu, utilisez des **stratégies rétention** et **étiquettes de rétention avec des stratégies des étiquettes**. Vous pouvez n’utiliser qu’une de ces méthodes ou les combiner.
 
 Utilisez une stratégie de rétention pour attribuer les mêmes paramètres de rétention au contenu au niveau d’un site ou d’une boîte aux lettres, et utiliser une étiquette de rétention pour affecter des paramètres de rétention à l’échelle d’un élément (dossier, document, courrier électronique).
 
