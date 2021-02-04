@@ -3,7 +3,7 @@ title: Se connecter à tous les services Microsoft 365 dans une seule fenêtre 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/10/2020
+ms.date: 02/02/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé : se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell.'
-ms.openlocfilehash: 4266b4f216b4c9df48f0c19d1d2123269eb32cae
-ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
+ms.openlocfilehash: 390e2446737b4b85dfaba64974666fab4938a5dd
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49849588"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084600"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell
 
@@ -56,7 +56,7 @@ Avant de pouvoir gérer l’ensemble de Microsoft 365 à partir d’une seule i
     
   - Windows Server 2008 R2 SP1*
     
-    \* Vous devez installer Microsoft .NET Framework 4,5.*x* puis Windows Management Framework 3,0 ou 4,0. Pour plus d’informations, consultez [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).
+    \* Vous devez installer Microsoft .NET Framework 4,5.*x* puis Windows Management Framework 3,0 ou 4,0. Pour plus d’informations, consultez [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview).
     
     Vous devez utiliser une version 64 bits de Windows en raison de la configuration requise pour le module Skype Entreprise Online et un des modules Microsoft 365.
     
@@ -73,10 +73,6 @@ Avant de pouvoir gérer l’ensemble de Microsoft 365 à partir d’une seule i
    ```powershell
    Set-ExecutionPolicy RemoteSigned
    ```
-
-## <a name="exchange-online-and-security-amp-compliance-center-with-the-exchange-online-powershell-v2-module"></a>Centre de conformité et sécurité &amp;Exchange Online avec le module Exchange Online PowerShell v2
-
-Les procédures contenues dans cet article utilisent le module Exchange Online PowerShell v2 pour se connecter à Exchange Online et au Centre de Sécurité &amp; de Conformité. Mais pour l’instant, vous ne pouvez pas vous connecter aux deux *dans la même fenêtre PowerShell*. Vous devez donc choisir de vous connecter à l’un ou l’autre lorsque vous configurez une fenêtre PowerShell pour plusieurs services Microsoft 365.
 
 ## <a name="connection-steps-when-using-just-a-password"></a>Étapes de connexion lors de l’utilisation d’un mot de passe
 
@@ -109,6 +105,7 @@ Voici les étapes à suivre pour vous connecter à tous les services dans une fe
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
+   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
    Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $Credential
    ```
 
@@ -118,37 +115,35 @@ Voici les étapes à suivre pour vous connecter à tous les services dans une fe
    > Le connecteur Skype Entreprise Online fait actuellement partie du dernier module PowerShell Teams. Si vous utilisez la version publique la plus récente de PowerShell Teams, vous n’avez pas besoin d’installer le connecteur Skype Entreprise Online.
    
    ```powershell
-   Import-Module MicrosoftTeams
    $sfboSession = New-CsOnlineSession -Credential $credential
    Import-PSSession $sfboSession
    ```
 
-6. Exécutez cette commande pour vous connecter à Exchange Online.
+6. Exécutez ces commandes pour vous connecter à Exchange Online.
     
    ```powershell
    Import-Module ExchangeOnlineManagement
-   Connect-ExchangeOnline -Credential $credential -ShowProgress $true
+   Connect-ExchangeOnline -ShowProgress $true
    ```
 
    > [!Note]
-   > Pour vous connecter à Exchange Online pour les nuages Microsoft 365 autres que le monde, consulter [Se connecter à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+   > Si vous souhaitez vous connecter à Exchange Online pour les clouds Microsoft 365 autres que Worldwide, veuillez consulter la rubrique [Se connecter à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-   Vous pouvez également exécuter ces commandes pour vous connecter au Centre de Sécurité &amp; de Conformité.
+7. Exécutez ces commandes pour vous connecter au centre de conformité &amp; sécurité.
     
    ```powershell
    $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
-   Import-Module ExchangeOnlineManagement
    Connect-IPPSSession -UserPrincipalName $acctName
    ```
 
    > [!Note]
    > Pour vous connecter au centre de conformité &amp; de sécurité pour les nuages Microsoft 365 autres que le monde, voir [Se connecter à la sécurité &](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)PowerShell du centre de conformité.
 
-   Exécutez ces commandes pour vous connecter au PowerShell Teams.
+8. Exécutez ces commandes pour vous connecter au PowerShell Teams.
     
    ```powershell
    Import-Module MicrosoftTeams
-   Connect-MicrosoftTeams -Credential $credential
+   Connect-MicrosoftTeams
    ```
   
    > [!Note]
@@ -157,82 +152,61 @@ Voici les étapes à suivre pour vous connecter à tous les services dans une fe
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Module Azure Active Directory PowerShell pour Graph
 
-Voici les commandes de tous les services *à l’exception  du Centre de Sécurité &amp; de Conformité* dans un bloc unique lors de l’utilisation de Azure Active Directory PowerShell pour le module Graph. Spécifiez le nom de votre hôte de domaine, puis exécutez-les en même temps.
-  
-```powershell
-$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-$credential = Get-Credential
-Connect-AzureAD -Credential $credential
-Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -Credential $credential
-Import-PSSession $sfboSession
-Import-Module ExchangeOnlineManagement
-Connect-ExchangeOnline -Credential $credential -ShowProgress $true
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams -Credential $credential
-```
-
-Voici les commandes de tous les services *à l’exception de Exchange Online* dans un bloc unique lors de l’utilisation de Azure Active Directory PowerShell pour le module Graph. Spécifiez le nom de votre hôte de domaine et le nom d’utilisateur principal (UPN) pour la connexion, puis exécutez-les en même temps.
+Voici les commandes de tous les services dans un bloc unique lors de l’utilisation du module Azure Active Directory PowerShell pour Graph. Spécifiez le nom de votre hôte de domaine et le nom d’utilisateur principal (UPN) pour la connexion, puis exécutez-les en même temps.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
-$credential = Get-Credential -UserName $acctName
+$credential = Get-Credential -UserName $acctName -Message "Type the account's password."
+#Azure Active Directory
 Connect-AzureAD -Credential $credential
+#SharePoint Online
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-Import-Module MicrosoftTeams
+#Skype for Business Online
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
+#Exchange Online
 Import-Module ExchangeOnlineManagement
+Connect-ExchangeOnline -ShowProgress $true
+#Security & Compliance Center
 Connect-IPPSSession -UserPrincipalName $acctName
+#Teams
 Import-Module MicrosoftTeams
-Connect-MicrosoftTeams -Credential $credential
+Connect-MicrosoftTeams
 ```
 
 ### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Module Microsoft Azure Active Directory pour module Windows PowerShell
 
-Voici les commandes de tous les services *à l’exception  du Centre de Sécurité &amp; de Conformité* dans un bloc unique lors de l’utilisation du Module Microsoft Azure Active Directory pour le module Windows PowerShell. Spécifiez le nom de votre hôte de domaine, puis exécutez-les en même temps.
-  
-```powershell
-$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-$credential = Get-Credential
-Connect-MsolService -Credential $credential
-Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -Credential $credential
-Import-PSSession $sfboSession
-Import-Module ExchangeOnlineManagement
-Connect-ExchangeOnline -Credential $credential -ShowProgress $true
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams -Credential $credential
-```
-
-Voici les commandes de tous les services *à l’exception de Exchange Online* dans un bloc unique lors de l’utilisation du Module Microsoft Azure Active Directory pour le module Windows PowerShell. Spécifiez le nom de votre hôte de domaine et le nom d’utilisateur principal (UPN) pour la connexion, puis exécutez-les en même temps.
+Voici les commandes de tous les services dans un bloc unique lors de l’utilisation du module Microsoft Azure Active Directory pour Windows PowerShell. Spécifiez le nom de votre hôte de domaine et le nom d’utilisateur principal (UPN) pour la connexion, puis exécutez-les en même temps.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
-$credential = Get-Credential -UserName $acctName
-Connect-AzureAD -Credential $credential
+$credential = Get-Credential -UserName $acctName -Message "Type the account's password."
+#Azure Active Directory
+Connect-MsolService -Credential $credential
+#SharePoint Online
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-Import-Module MicrosoftTeams
+#Skype for Business Online
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
+#Exchange Online
 Import-Module ExchangeOnlineManagement
+Connect-ExchangeOnline -ShowProgress $true
+#Security & Compliance Center
 Connect-IPPSSession -UserPrincipalName $acctName
+#Teams
 Import-Module MicrosoftTeams
-Connect-MicrosoftTeams -Credential $credential
+Connect-MicrosoftTeams
 ```
+
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>Étapes de connexion lors de l’utilisation de l’authentification multifacteur
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Module Azure Active Directory PowerShell pour Graph
 
-Voici toutes les commandes dans un bloc unique pour vous connecter à plusieurs services Microsoft 365 *à l’exception du Centre de Sécurité &amp;de conformité* lors de l’utilisation de l’authentification multifacteur à l’aide de Azure Active Directory PowerShell pour le module Graph.
+Voici toutes les commandes dans un bloc unique qui vous permettent de vous connecter à plusieurs services Microsoft 365lors de l’utilisation de l’authentification multifacteur avec le module Azure Active Directory PowerShell pour Graph.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -242,39 +216,20 @@ Connect-AzureAD
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
-Import-Module MicrosoftTeams
 $sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
-#Teams
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
-```
-Voici toutes les commandes dans un bloc unique pour vous connecter à plusieurs services Microsoft 365 *à l’exception de Exchange Online* avec l’authentification multifacteur lors de l’utilisation de Azure Active Directory PowerShell pour le module Graph.
-
-```powershell
-$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
-$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-#Azure Active Directory
-Connect-AzureAD
-#SharePoint Online
-Connect-SPOService -Url https://$orgName-admin.sharepoint.com
-#Skype for Business Online
-Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession
-Import-PSSession $sfboSession
 #Security & Compliance Center
-Import-Module ExchangeOnlineManagement
 Connect-IPPSSession -UserPrincipalName $acctName
 #Teams
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Module Microsoft Azure Active Directory pour module Windows PowerShell
+### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Module Microsoft Azure Active Directory pour Windows PowerShell
 
-Voici toutes les commandes dans un bloc unique pour vous connecter à plusieurs services Microsoft 365 *à l’exception du Centre de Sécurité &amp;de conformité* avec l’authentification multifacteur à l’aide du Module Microsoft Azure Active Directory pour le module Windows PowerShell.
+Voici toutes les commandes dans un bloc unique qui vous permettent de vous connecter à plusieurs services Microsoft 365 lors de l’utilisation de l’authentification multifacteur avec le module Microsoft Azure Active Directory pour Windows PowerShell.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -284,31 +239,12 @@ Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
-Import-Module MicrosoftTeams
 $sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
-#Teams
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
-```
-Voici toutes les commandes dans un bloc unique pour vous connecter à plusieurs services Microsoft 365 *à l’exception de Exchange Online* lors de l’utilisation de l’authentification multifacteur avec le Module Microsoft Azure Active Directory pour le module Windows PowerShell.
-
-```powershell
-$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
-$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-#Azure Active Directory
-Connect-MsolService
-#SharePoint Online
-Connect-SPOService -Url https://$orgName-admin.sharepoint.com
-#Skype for Business Online
-Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession
-Import-PSSession $sfboSession
 #Security & Compliance Center
-Import-Module ExchangeOnlineManagement
 Connect-IPPSSession -UserPrincipalName $acctName
 #Teams
 Import-Module MicrosoftTeams
