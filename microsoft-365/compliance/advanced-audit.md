@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 83ff462ada02c9b262cfcaadb6bd48e47376cc0f
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+ms.openlocfilehash: f265a30a3d43b592a7d297e2137fd6b9ff4acfb4
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740361"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097150"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -116,7 +116,9 @@ Pour rechercher les enregistrements d’audit de SearchQueryInitiatedExchange, v
 Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 
 > [!NOTE]
-> Vous devez exécuter la commande suivante dans Exchange Online PowerShell de sorte que les événements SearchQueryInitiatedExchange (effectués par l’utilisateur E5 spécifié) soient inclus dans les résultats de la recherche dans le journal d’audit: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
+> Vous devez exécuter la commande suivante dans Exchange Online PowerShell de sorte que les événements SearchQueryInitiatedExchange (effectués par l’utilisateur E5 spécifié) soient inclus dans les résultats de la recherche dans le journal d’audit: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
+Dans un environnement multigéographique, vous devez exécuter la commande **Set-Mailbox** dans la forêt où se trouve la boîte aux lettres de l’utilisateur. Pour identifier l’emplacement de boîte aux lettres de l’utilisateur, exécutez la commande suivante : `Get-Mailbox <user identity> | FL MailboxLocations`.
+Si vous avez déjà exécuté la commande `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` dans une forêt différente de celle où se trouve la boîte aux lettres de l’utilisateur, vous devez supprimer la valeur SearchQueryInitiated de la boîte aux lettres de l’utilisateur (en exécutant `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`), puis l’ajouter à la boîte aux lettres de l’utilisateur dans la forêt où elle se trouve.
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -129,7 +131,9 @@ Pour rechercher les enregistrements d’audit SearchQueryInitiatedSharePoint, vo
 Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 
 > [!NOTE]
-> Vous devez exécuter la commande suivante dans Exchange Online PowerShell de sorte que les événements SearchQueryInitiatedSharePoint (effectués par l’utilisateur E5 spécifié) soient inclus dans les résultats de la recherche dans le journal d’audit: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
+> Vous devez exécuter la commande suivante dans Exchange Online PowerShell de sorte que les événements SearchQueryInitiatedExchange (effectués par l’utilisateur E5 spécifié) soient inclus dans les résultats de la recherche dans le journal d’audit: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
+Dans un environnement multigéographique, vous devez exécuter la commande **Set-Mailbox** dans la forêt où se trouve la boîte aux lettres de l’utilisateur. Pour identifier l’emplacement de boîte aux lettres de l’utilisateur, exécutez la commande suivante : `Get-Mailbox <user identity> | FL MailboxLocations`.
+Si vous avez déjà exécuté la commande `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` dans une forêt différente de celle où se trouve la boîte aux lettres de l’utilisateur, vous devez supprimer la valeur SearchQueryInitiated de la boîte aux lettres de l’utilisateur (en exécutant `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`), puis l’ajouter à la boîte aux lettres de l’utilisateur dans la forêt où elle se trouve.
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Accès haut débit à l’API Activité de gestion Office 365
 

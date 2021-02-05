@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 15a540c323c8f49cfa6c15358cfec89034667378
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667809"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094795"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -80,11 +80,19 @@ Vous pouvez déterminer si les fichiers sensibles protégés par vos stratégies
 
 Si le mode de liste est paramétré sur **Bloquer**, l’utilisateur ne peut pas télécharger des éléments sensibles dans ces domaines. Lorsqu’une action de téléchargement est bloquée parce qu’un élément correspond à une stratégie DLP, DLP génère un avertissement ou bloque le téléchargement de l’élément sensible.
 
-Si le mode liste est défini sur **Autoriser**, les utilisateurs pourront télécharger des éléments sensibles **_uniquement_* _ vers ces domaines, et l’accès au téléchargement vers tous les autres domaines n’est pas autorisé.
+Si le mode liste est défini sur **Autoriser**, les utilisateurs pourront charger des éléments sensibles **_uniquement_** vers ces domaines, et l’accès au chargement vers tous les autres domaines n’est pas autorisé.
 
 #### <a name="unallowed-browsers"></a>Navigateurs non autorisés
 
 Vous ajoutez des navigateurs, identifiés par leurs noms de exécutables, qui ne peuvent pas accéder à des fichiers qui remplissent les conditions d’une stratégie DLP appliquée dans laquelle la restriction de chargement vers les services Cloud est définie sur bloquer ou annuler le blocage. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient s’afficher une notification leur demandant d’ouvrir le fichier via le Chromium Edge.
+
+### <a name="business-justification-in-policy-tips"></a>Justification métier dans les conseils de stratégie
+
+Vous pouvez contrôler l’interaction des utilisateurs avec l’option de justification métier dans les notifications de conseil de stratégie DLP. Cette option s’affiche lorsque les utilisateurs effectuent une activité protégée par le paramètre **Bloquer avec remplacement** dans une stratégie DLP. Vous pouvez choisir l’une des options suivantes :
+
+- Par défaut, les utilisateurs peuvent sélectionner une justification intégrée ou entrer leur propre texte.
+- Les utilisateurs ne peuvent sélectionner qu’une justification intégrée.
+- Les utilisateurs ne peuvent entrer que leur propre justification.
 
 
 ## <a name="tying-dlp-settings-together"></a>Lier les paramètres DLP ensemble
@@ -99,7 +107,7 @@ Pour utiliser cette restriction, vous devez configurer trois éléments importan
 
 2. Ajoutez les navigateurs qui ne sont pas autorisés à accéder à certains éléments sensibles lorsqu’une correspondance de la stratégie DLP se produit.
 
-3. Configurez les stratégies DLP pour définir les types d’éléments sensibles pour lesquels le téléchargement doit être limité à ces emplacements en activant les options *Télécharger vers les services cloud* et **Accès à partir d’un navigateur non autorisé**.
+3. Configurez les stratégies DLP pour définir les types d’éléments sensibles pour lesquels le téléchargement doit être limité à ces emplacements en activant **Télécharger vers les services Cloud** et **Accès à partir d’un navigateur non autorisé**.
 
 Vous pouvez continuer à ajouter de nouveaux services, applications et stratégies pour développer et augmenter vos restrictions afin de répondre aux besoins de votre entreprise et de protéger les données sensibles. 
 
