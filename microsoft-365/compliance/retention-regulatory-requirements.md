@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressources pour vous aider à respecter les réglementations en matière de gouvernance des informations et de gestion des enregistrements.
-ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032565"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109933"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Réglementations en matière de gouvernance des informations et de gestion des enregistrements
 
@@ -34,7 +34,7 @@ Ces ressources peuvent être téléchargées à partir de la page [Ressources de
 
 **Prise en charge des obligations de conformité de la loi sur les enregistrements publics de Nouvelle-Zélande avec Microsoft 365** - [Télécharger l'évaluation](https://aka.ms/NZPRA)
 
-Charges de travail applicables : SharePoint, OneDrive, Teams, Exchange et Skype Entreprise
+Charges de travail applicables : SharePoint, OneDrive, Teams, Exchange, et Skype Entreprise
 
 Publié en janvier 2021, ce rapport a été publié en partenariat avec Microsoft Nouvelle-Zélande pour évaluer les fonctionnalités des services Microsoft 365 en matière d’enregistrement, de stockage et de gestion des exigences relatives aux enregistrements électroniques, comme spécifié dans : 
 
