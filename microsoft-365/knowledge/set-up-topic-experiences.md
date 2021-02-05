@@ -1,5 +1,5 @@
 ---
-title: Configuration des expériences de rubrique dans Microsoft 365
+title: Configurer Les rubriques microsoft
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,26 +9,25 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Découvrez comment configurer des expériences de rubrique dans Microsoft 365
-ms.openlocfilehash: d221f2932dc2ca9f562800b7b274e35e7f3d1db3
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+description: Découvrez comment configurer les rubriques microsoft
+ms.openlocfilehash: e8cfe1d849ba5df903f377fd001a8d067f80b608
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749610"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107919"
 ---
-# <a name="set-up-topic-experiences-in-microsoft-365"></a>Configuration des expériences de rubrique dans Microsoft 365
+# <a name="set-up-microsoft-viva-topics"></a>Configurer Les rubriques microsoft
 
-Vous pouvez utiliser le centre d’administration Microsoft 365 pour installer et configurer des [expériences de rubrique](topic-experiences-overview.md). 
+Vous pouvez utiliser le Centre d’administration Microsoft 365 pour configurer les [rubriques.](topic-experiences-overview.md) 
 
-Il est important de planifier la meilleure façon de configurer et de configurer des rubriques dans votre environnement. Avant de commencer les procédures décrites dans cet article, lisez [plan topic Experiences](plan-topic-experiences.md) .
+Il est important de planifier la meilleure façon de configurer des rubriques dans votre environnement. Avant de commencer les procédures de cet article, veillez à lire les rubriques Planifier pour [Microsoft Topics.](plan-topic-experiences.md)
 
-Vous devez être un administrateur général ou un administrateur SharePoint pour accéder au centre d’administration Microsoft 365 et configurer des expériences de rubrique.
+Vous devez être administrateur général ou administrateur SharePoint pour accéder au Centre d’administration Microsoft 365 et configurer rubriques.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
-Cette vidéo présente le processus de configuration des expériences de rubrique dans Microsoft 365.
+Cette vidéo montre le processus de configuration des rubriques dans Microsoft 365.
 
 <br>
 
@@ -36,122 +35,115 @@ Cette vidéo présente le processus de configuration des expériences de rubriqu
 
 <br>
 
-## <a name="set-up-topic-experiences"></a>Configurer les expériences de sujets
+## <a name="set-up-topics"></a>Configurer des rubriques
 
-Pour configurer des expériences de rubrique dans Microsoft 365
+Pour configurer des rubriques
 
-1. Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com), sélectionnez **configuration**, puis affichez la section **fichiers et contenu** .
-2. Dans la section **fichiers et contenu** , cliquez sur **connecter des personnes à la connaissance**.
+1. Dans le [Centre d’administration Microsoft 365,](https://admin.microsoft.com)sélectionnez **Installation,** puis affichez la section Fichiers **et** contenu.
+2. Dans la section **Fichiers et contenu,** cliquez **sur Connecter les personnes aux connaissances.**
 
-    ![Connecter des personnes aux connaissances](../media/admin-org-knowledge-options.png) 
+    ![Connecter les personnes aux connaissances](../media/admin-org-knowledge-options.png) 
 
-3. Sur la page **connecter des personnes au** niveau de connaissances, cliquez sur **prise en main** pour vous guider tout au long du processus de configuration.
+3. Dans la page **Connecter des personnes aux connaissances,** cliquez sur **Commencer** pour vous aider dans le processus de configuration.
 
     ![Prise en main](../media/k-get-started.png) 
 
-4. Sur la page **choisir comment le réseau de connaissances peut trouver des rubriques** , vous allez configurer la découverte de rubrique. Dans la section **Sélectionner les sources des rubriques SharePoint** , sélectionnez les sites SharePoint qui seront analysés en tant que sources pour vos rubriques lors de la découverte. Choisissez parmi les autorisations suivantes :
+4. Dans la page **Choisir la façon dont Rubriques peut trouver des rubriques,** vous allez configurer la découverte de rubriques. Dans la section Sélectionner des sources de rubrique **SharePoint,** sélectionnez les sites SharePoint à analyser en tant que sources pour vos rubriques lors de la découverte. Choisissez parmi les autorisations suivantes :
     - **Tous les sites**: tous les sites SharePoint de votre organisation. Cela inclut les sites actuels et futurs.
-    - **Tout, à l’exception des sites sélectionnés**: saisissez les noms des sites à exclure.  Vous pouvez également télécharger une liste de sites que vous souhaitez exclure de la découverte. Les sites créés à l’avenir seront inclus en tant que sources pour la découverte des rubriques. 
-    - **Sites sélectionnés uniquement**: saisissez les noms des sites que vous souhaitez inclure. Vous pouvez également télécharger une liste de sites. Les sites créés à l’avenir ne seront pas inclus en tant que sources pour la découverte des rubriques.
-    - **Aucun site**: n’inclut aucun site SharePoint.
+    - **Tous, sauf les sites sélectionnés**: tapez les noms des sites que vous souhaitez exclure.  Vous pouvez également charger une liste de sites que vous souhaitez refuser de découvrir. Les sites créés à l’avenir seront inclus en tant que sources pour la découverte de rubriques. 
+    - **Seuls les sites** sélectionnés : tapez les noms des sites que vous souhaitez inclure. Vous pouvez également charger une liste de sites. Les sites créés à l’avenir ne seront pas inclus en tant que sources de découverte de sujet.
+    - **Aucun site**: n’incluez aucun site SharePoint.
 
     ![Choisir comment rechercher des rubriques](../media/ksetup1.png) 
    
-5. Dans la section **exclure des rubriques par nom** , vous pouvez ajouter les noms des rubriques que vous souhaitez exclure de la découverte de rubrique. Utilisez ce paramètre pour empêcher que des informations sensibles soient incluses en tant que rubriques. Les options disponibles sont les suivantes :
-    - **Ne pas exclure les rubriques** 
-    - **Exclure les rubriques par nom**
+5. Dans la section **Exclure les rubriques par** nom, vous pouvez ajouter des noms de rubriques que vous souhaitez exclure de la découverte de rubriques. Utilisez ce paramètre pour empêcher que des informations sensibles ne figurent dans les rubriques. Les options disponibles sont les suivantes :
+    - **N’exclure aucune rubrique** 
+    - **Exclure des rubriques par nom**
 
     ![Exclure des rubriques](../media/topics-excluded-by-name.png) 
 
-    (Les gestionnaires de connaissances peuvent également exclure des rubriques dans le Centre des rubriques après la découverte.)
+    (Les gestionnaires de connaissances peuvent également exclure les rubriques du centre de rubriques après la découverte.)
 
-    #### <a name="how-to-exclude-topics-by-name"></a>Procédure exclure des rubriques par nom    
+    #### <a name="how-to-exclude-topics-by-name"></a>Comment exclure des rubriques par nom    
 
-    Si vous devez exclure des rubriques, après avoir sélectionné **exclure les rubriques par nom**, sélectionnez Télécharger le modèle. csv et mettez-le à jour à l’aide de la liste des rubriques que vous souhaitez exclure de vos résultats de découverte.
+    Si vous devez exclure des rubriques, après avoir sélectionné Exclure les **rubriques** par leur nom, téléchargez le modèle .csv et mettez-le à jour avec la liste des rubriques que vous souhaitez exclure de vos résultats de découverte.
 
-    ![Exclure les rubriques du modèle CSV](../media/exclude-topics-csv.png) 
+    ![Exclure des rubriques dans le modèle CSV](../media/exclude-topics-csv.png) 
 
-    Dans le modèle CSV, entrez les informations suivantes sur les rubriques à exclure :
+    Dans le modèle CSV, entrez les informations suivantes sur les rubriques que vous souhaitez exclure :
 
-    - **Nom**: tapez le nom de la rubrique à exclure. Vous pouvez procéder de deux manières :
-        - Correspondance exacte : vous pouvez inclure le nom exact ou un acronyme (par exemple, *contoso* ou *ATL*).
-        - Correspondance partielle : vous pouvez exclure toutes les rubriques qui contiennent un mot spécifique.  Par exemple, *arc* exclut toutes les rubriques contenant le mot *arc* , comme un *cercle arc*, un *soudage* à l’arc de plasma ou un *arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans un mot, tel que *architecture*.
-    - **Abréviation de (facultatif)**: Si vous souhaitez exclure un acronyme, tapez les mots de l’acronyme.
-    - **MatchType-exacte/partielle**: spécifiez si le nom que vous avez entré est un type de correspondance *exacte* ou *partielle* .
+    - **Nom**: tapez le nom de la rubrique que vous souhaitez exclure. Vous pouvez procéder de deux manières :
+        - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
+        - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
+    - **Signifie (facultatif)**: si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.
+    - **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
 
-    Une fois que vous avez terminé et enregistré votre fichier. csv, sélectionnez **Parcourir** pour le localiser et le sélectionner.
+    Une fois que vous avez terminé et enregistré votre fichier .csv, sélectionnez **Parcourir** pour le localiser et le sélectionner.
     
     Sélectionnez **Suivant**.
 
-6. Sur la page **qui peut voir les rubriques et où les afficher** , vous allez configurer la visibilité des rubriques. Dans le paramètre **qui peut voir les rubriques du paramètre de réseau de connaissances** , vous choisissez les utilisateurs qui auront accès aux détails de la rubrique, comme les rubriques en surbrillance, les fiches de rubrique, les réponses aux questions dans la recherche et les pages de rubrique. Vous pouvez sélectionner :
+6. Dans la page **Qui peut voir les rubriques** et où peuvent-ils les voir, vous allez configurer la visibilité des rubriques. Dans le paramètre Qui peut voir les **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en évidence, les fiches de rubrique, les réponses aux rubriques dans la recherche et les pages de rubriques. Vous pouvez sélectionner :
     - **Tous les membres de mon organisation**
-    - **Uniquement les personnes ou les groupes de sécurité sélectionnés**
+    - **Personnes ou groupes de sécurité sélectionnés uniquement**
     - **Personne**
 
-    ![Qui peut voir les rubriques](../media/ksetup2.png)  
+    ![Personnes qui peuvent voir les rubriques](../media/ksetup2.png)  
 
- > [!Note] 
- > Bien que ce paramètre vous permette de sélectionner un utilisateur de votre organisation, seuls les utilisateurs disposant d’une rubrique sur laquelle des licences ont été attribuées pourront consulter les rubriques.
+    > [!Note] 
+    > Bien que ce paramètre vous permet de sélectionner n’importe quel utilisateur de votre organisation, seuls les utilisateurs qui ont des licences Expériences des rubriques qui leur sont attribuées pourront afficher les rubriques.
 
-7. Dans la page **autorisations pour la rubrique gestion des** rubriques, choisissez qui pourra créer, modifier ou gérer des rubriques. Dans la section **qui peut créer et modifier des rubriques** , vous pouvez sélectionner :
+7. Dans la page **Autorisations pour la** gestion des rubriques, vous choisissez qui sera en mesure de créer, modifier ou gérer des rubriques. Dans la section **Qui peut créer et modifier des rubriques,** vous pouvez sélectionner :
     - **Tous les membres de mon organisation**
-    - **Uniquement les personnes ou les groupes de sécurité sélectionnés**
+    - **Personnes ou groupes de sécurité sélectionnés uniquement**
     - **Personne**
 
     ![Autorisations pour la gestion des rubriques, qui peut créer et modifier des rubriques](../media/ksetup3.png) 
 
-8. Dans la section **qui peut gérer les rubriques** , vous pouvez sélectionner :
+8. Dans la section **Qui peut gérer les rubriques,** vous pouvez sélectionner :
     - **Tous les membres de mon organisation**
-    - **Uniquement les personnes ou les groupes de sécurité sélectionnés**
+    - **Personnes ou groupes de sécurité sélectionnés uniquement**
 
     ![Autorisations pour la gestion des rubriques](../media/km-setup-create-edit-topics.png) 
 
     Sélectionnez **Suivant**.
 
-9. Sur la page **créer un centre de rubriques** , vous pouvez créer votre site Centre de rubrique dans lequel les pages de rubrique peuvent être affichées et les rubriques peuvent être gérées. Dans la zone **nom du site** , tapez un nom pour le centre de la rubrique. Vous pouvez éventuellement taper une brève description dans la zone **Description** . 
+9. Dans la page **Créer un** centre de rubriques, vous pouvez créer votre site de centre de rubriques dans lequel les pages de rubriques peuvent être vues et les rubriques peuvent être gérées. Dans la **zone Nom du site,** tapez un nom pour votre centre de rubriques. Vous pouvez éventuellement taper une brève description dans la **zone Description.** 
 
-Sélectionnez **Suivant**.
+   Sélectionnez **Suivant**.
 
-   ![Créer un centre de connaissances](../media/ksetup4.png)  
+   ![Créer un Centre de connaissances](../media/ksetup4.png)  
 
 10. À la page **Examiner et finaliser**, vous pouvez consulter le paramètre sélectionné, puis choisir d’apporter des modifications. Si vos sélections vous conviennent, sélectionnez **Activer**.
 
-11. La page **activation du réseau de connaissances** s’affiche, confirmant que le système commence à analyser les sites sélectionnés pour les rubriques et la création du site Centre de connaissances. Sélectionnez **Terminé**.
+11. La page **Activée rubriques** s’affiche, confirmant que le système va maintenant commencer à analyser les sites sélectionnés pour les rubriques et à créer le site centre de rubriques. Sélectionnez **Terminé**.
 
-12. Vous serez redirigé vers la page **connecter des personnes à la page de connaissances** . Dans cette page, vous pouvez sélectionner **Gérer** pour modifier vos paramètres de configuration. 
+12. Vous serez renvoyé à votre page De **connexion des personnes à la** base de connaissances. Dans cette page, vous pouvez sélectionner **Gérer** pour modifier vos paramètres de configuration. 
 
     ![Paramètres appliqués](../media/ksetup7.png)    
 
 ## <a name="assign-licenses"></a>Attribuer des licences
 
-Une fois que vous avez configuré les expériences de rubrique, vous devez attribuer des licences aux utilisateurs qui utiliseront des expériences de rubrique. Seuls les utilisateurs disposant d’une licence peuvent consulter des informations sur des sujets tels que des mises en évidence, des fiches de rubrique, des pages de rubrique et le Centre des rubriques. 
+Une fois que vous avez configuré les expériences de rubrique, vous devez attribuer des licences pour les utilisateurs qui utiliseront Rubriques. Seuls les utilisateurs titulaires d’une licence peuvent voir des informations sur des sujets tels que les points forts, les cartes de rubrique, les pages de rubriques et le centre de rubriques. 
 
 Pour attribuer des licences :
 
 1. Dans le Centre d’administration Microsoft 365, sous **Utilisateurs**, cliquez sur **Utilisateurs actifs**.
 
-2. Sélectionnez les utilisateurs auxquels attribuer une licence, puis cliquez sur **Gérer les licences de produits**.
+2. Sélectionnez les utilisateurs que vous souhaitez obtenir une licence, puis cliquez **sur Licences et applications.**
 
-3. Sélectionnez **Attribuer plus**.
+3. Sous **Applications,** assurez-vous que la recherche **des connecteurs Graph** avec Index et **Topics est** sélectionnée.
 
-4. Sous **licences**, sélectionnez **expériences**.
-
-5. Sous **applications**, assurez-vous que les **connecteurs graphiques de recherche avec index** et les **expériences de rubrique** sont tous deux sélectionnés.
-
-    > [!div class="mx-imgBorder"]
-    > ![Licences SharePoint Syntex dans le Centre d’administration Microsoft 365.](../media/topic-experiences-licenses.png)
-
-6. Cliquez sur **Enregistrer les modifications**.
+4. Cliquez sur **Enregistrer les modifications**.
 
 ## <a name="manage-topic-experiences"></a>Gérer les expériences de rubrique
 
-Une fois que vous avez configuré les expériences de rubrique, vous pouvez modifier les paramètres que vous avez choisis lors de l’installation dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement). Consultez les références suivantes :
+Une fois que vous avez configuré Rubriques, vous pouvez modifier les paramètres que vous avez choisis lors de l’installation dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Consultez les références suivantes :
 
-- [Gestion de la découverte de rubrique dans Microsoft 365](topic-experiences-discovery.md)
-- [Gestion de la visibilité des rubriques dans Microsoft 365](topic-experiences-knowledge-rules.md)
-- [Gérer les autorisations de rubrique dans Microsoft 365](topic-experiences-user-permissions.md)
-- [Modifier le nom du centre de rubrique dans Microsoft 365](topic-experiences-administration.md)
+- [Gérer la découverte de rubriques dans les rubriques microsoft](topic-experiences-discovery.md)
+- [Gérer la visibilité des rubriques dans les rubriques microsoft](topic-experiences-knowledge-rules.md)
+- [Gérer les autorisations des rubriques dans les rubriques microsoft](topic-experiences-user-permissions.md)
+- [Modifier le nom du centre de rubriques dans Rubriques microsoft](topic-experiences-administration.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-[Présentation des expériences](topic-experiences-overview.md)
+[Vue d’ensemble des expériences de rubrique](topic-experiences-overview.md)

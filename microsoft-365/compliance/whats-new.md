@@ -16,21 +16,21 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Que vous ajoutiez de nouvelles solutions au Centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au fait du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
+description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester informé du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4fcc0c9317ed0f302c03ba4bda0b536b57889660
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066817"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113973"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
-Que vous ajoutiez de nouvelles solutions au Centre de conformité [Microsoft 365,](microsoft-365-compliance-center.md)mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 aujourd’hui.
+Que ce soit en ajoutant de nouvelles solutions au Centre de conformité [Microsoft 365,](microsoft-365-compliance-center.md)en mettant à jour les fonctionnalités existantes en fonction de vos commentaires ou en mettant en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 aujourd’hui.
 
 > [!NOTE]
-> Certaines fonctionnalités de conformité sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)
+> Certaines fonctionnalités de conformité sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)
 
 > [!TIP]
 > Vous êtes intéressé par ce qui se passe dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du Centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[Nouveautés du Centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
@@ -44,7 +44,7 @@ L’équipe de contenu de conformité Microsoft 365 travaille dur à la créatio
 
 Tout d’abord, le contenu qui relie nos solutions à risque internes : conformité des communications, gestion des risques internes, obstacles à l’information et gestion des accès privilégiés. Voici un aperçu de ce que vous trouverez :
 
-- [Nouvelle page d’accueil pour les solutions de risques internes.](insider-risk-solution-overview.md) Inclut des détails sur les risques que les solutions peuvent atténuer, les exigences de licence, la séquence de déploiement, les illustrations d’architecture, les ressources de formation, etc.
+- [Nouvelle page d’accueil pour les solutions de risques internes.](insider-risk-solution-overview.md) Inclut des détails sur les risques que les solutions peuvent contribuer à atténuer, les exigences de licence, la séquence de déploiement, les illustrations d’architecture, les ressources de formation, etc.
 - Nouveaux articles de présentation pour chaque solution à risque interne. Conseils et liens vers des articles qui vous aident à en savoir plus sur, planifier, déployer et gérer chaque solution :
   - [Conformité des communications](communication-compliance-solution-overview.md)
   - [Gestion des risques internes](insider-risk-management-solution-overview.md)
@@ -55,7 +55,7 @@ D’autres documents sur les solutions de contenu seront bientôt disponible !
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-Amélioration du flux de travail et des fonctionnalités pour l’ajout de [dépositaires](add-custodians-to-case.md) et [de sources](non-custodial-data-sources.md) de données non privatives à un cas Advanced eDiscovery.
+Amélioration du flux de travail et des fonctionnalités d’ajout de dépositaires et [de sources](non-custodial-data-sources.md) de données non privatives à un cas Advanced eDiscovery. [](add-custodians-to-case.md)
 
 ### <a name="data-connectors"></a>Connecteurs de données
 
@@ -79,7 +79,7 @@ Le groupe [de rôles d’administrateur](get-started-with-records-management.md#
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-- [Étiqueter automatiquement les données dans Azure Purview (aperçu)](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label). Vous pouvez désormais créer et appliquer automatiquement des étiquettes de sensibilité à des ressources dans Azure Purview, telles que des fichiers dans le stockage Blob Azure et des colonnes de base de données dans SQL Server.
+- [Étiqueter automatiquement les données dans Azure Purview (aperçu)](https://docs.microsoft.com/azure/purview/create-sensitivity-label). Vous pouvez désormais créer et appliquer automatiquement des étiquettes de sensibilité à des ressources dans Azure Purview, telles que des fichiers dans le stockage Blob Azure et des colonnes de base de données dans SQL Server.
 - [Exiger que les utilisateurs appliquent une étiquette aux éléments.](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) Également appelée « étiquetage obligatoire » , cette nouvelle option exige que les utilisateurs choisissent et appliquent une étiquette de niveau de sensibilité dans les scénarios spécifiques.
 
 ## <a name="november-2020"></a>Novembre 2020
@@ -98,7 +98,7 @@ Pour faciliter la gestion du contenu chiffré dans le flux de travail eDiscovery
 ### <a name="compliance-manager"></a>Gestionnaire de conformité
 
 - [Prise en charge des abonnements Microsoft 365 Pour le gouvernement.](compliance-manager.md) Le Gestionnaire de conformité est désormais disponible pour les clients modérés et élevés de la communauté du gouvernement américain (GCC).
-- [Analyseur de configuration de la conformité Microsoft pour le Gestionnaire de conformité.](compliance-manager-mcca.md) Nouvel outil Basé sur PowerShell qui vous aide à démarrer avec le Gestionnaire de conformité en analysant les configurations actuelles de votre organisation et en les validant par rapport aux meilleures pratiques recommandées par Microsoft 365.
+- [Analyseur de configuration de conformité Microsoft pour le Gestionnaire de conformité.](compliance-manager-mcca.md) Nouvel outil Basé sur PowerShell qui vous aide à démarrer avec le Gestionnaire de conformité en analysant les configurations actuelles de votre organisation et en les validant par rapport aux meilleures pratiques recommandées par Microsoft 365.
 - [Nouveaux modèles](compliance-manager-templates-list.md). Ajout de 56 nouveaux modèles, ce qui porte le nombre total de modèles du Gestionnaire de conformité à plus de 230.
 
 ### <a name="data-connectors"></a>Connecteurs de données
@@ -111,14 +111,14 @@ Pour afficher les éléments lors d’une révision de disposition, les utilisat
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-- [(Aperçu) Paramètres de partage externe pour les sites SharePoint.](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) Lorsque vous créez une étiquette qui sera utilisée pour des groupes et des sites, vous verrez une option de contrôle du partage externe pour les sites SharePoint sur qui l’étiquette est appliquée. Vous pouvez spécifier que le partage est autorisé pour tout le monde, les invités nouveaux et existants, les invités existants uniquement ou uniquement les utilisateurs de votre organisation. Lorsque l’étiquette est appliquée, les paramètres d’étiquette remplacent les paramètres de partage externe configurés dans le [Centre d’administration SharePoint.](https://docs.microsoft.com/sharepoint/change-external-sharing-site)
+- [(Aperçu) Paramètres de partage externe pour les sites SharePoint.](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) Lorsque vous créez une étiquette qui sera utilisée pour les groupes et les sites, une option de contrôle du partage externe s’offre à vous pour les sites SharePoint sur qui l’étiquette est appliquée. Vous pouvez spécifier que le partage est autorisé pour tout le monde, les invités nouveaux et existants, les invités existants uniquement ou uniquement les utilisateurs de votre organisation. Lorsque l’étiquette est appliquée, les paramètres d’étiquette remplacent les paramètres de partage externe configurés dans le [Centre d’administration SharePoint.](https://docs.microsoft.com/sharepoint/change-external-sharing-site)
 - [Supprimez l’étiquette et le chiffrement d’un document étiqueté.](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document) Pour supprimer une étiquette et le chiffrement qu’elle applique à partir d’un document étiqueté dans SharePoint, les administrateurs globaux et les administrateurs SharePoint peuvent exécuter la nouvelle `Unlock-SPOSensitivityLabelEncryptedFile` cmdlet. Cette cmdlet s’exécute même si l’administrateur n’a pas d’autorisations d’accès au site ou au fichier, ou si le service Azure Rights Management n’est pas disponible.
 
 ## <a name="october-2020"></a>Octobre 2020
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-[Prise en charge des languesJCK.](ediscovery-cjk-support.md) Advanced eDiscovery prend désormais en charge les langues de jeu de caractères sur deux caractères, appelées collectivement languesJCK (y compris le chinois simplifié, le chinois traditionnel, le japonais et le coréen). Ceux-ci peuvent être utilisés dans plusieurs scénarios d’ensembles de révision avancés.
+[Prise en charge des languesJCK.](ediscovery-cjk-support.md) Advanced eDiscovery prend désormais en charge les langues de jeu de caractères sur deux sur deux caractères, appelées collectivement languesJCK (y compris le chinois simplifié, le chinois traditionnel, le japonais et le coréen). Ceux-ci peuvent être utilisés dans plusieurs scénarios d’ensembles de révision avancés.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -143,7 +143,7 @@ Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conform
 
 ### <a name="communication-compliance"></a>Conformité des communications
 
-- [Groupes de rôles mis à jour.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) Les groupes de rôles de conformité des communications correspondent désormais à la structure de groupe de rôles disponible pour la solution de gestion des risques internes.
+- [Groupes de rôles mis à jour.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) Les groupes de rôles de conformité des communications correspondent désormais à la structure de groupes de rôles disponible pour la solution de gestion des risques internes.
 - [Tableau de bord rapports](communication-compliance-feature-reference.md#reports-preview). Votre emplacement central pour afficher tous les rapports de conformité des communications. Les widgets de rapport fournissent un aperçu rapide des informations les plus couramment nécessaires pour une évaluation globale de l’état des activités de conformité des communications.
 - [Flux Power Automate](communication-compliance-feature-reference.md#power-automate-flows). Configurer des flux pour automatiser les tâches pour les alertes et les utilisateurs, avertir les responsables lorsque les utilisateurs déclenchent une alerte, et bien plus encore.
 - [Action de correction « Améliorer la classification](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)». Les alertes contenant des éléments qui correspondent à des classifieurs entra mentables peuvent tirer parti des commentaires pour réduire les faux positifs dans votre organisation. **L’option Améliorer la classification** vous permet de fournir des commentaires si les éléments détectés correspondent au classifieur configuré dans la stratégie de conformité des communications associée. Vous pouvez même suggérer d’autres classifieurs à associer à l’élément pour améliorer la précision des correspondances pour les alertes futures.
@@ -157,9 +157,9 @@ Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conform
 
 - [Intégration de Microsoft Teams.](insider-risk-management-settings.md#microsoft-teams-preview) Lorsque l’intégration de Teams est mise en place dans les paramètres de risques internes, vous pouvez coordonner et collaborer avec d’autres parties prenantes dans Teams sur des tâches telles que le partage et le stockage sécurisés de données relatives à des cas individuels, le suivi et l’examen des activités de réponse des analystes et des enquêteurs, et bien plus encore.
 - [Flux Power Automate](insider-risk-management-settings.md#power-automate-flows-preview). Configurer des flux pour automatiser les tâches importantes pour les cas et les utilisateurs, telles que la récupération d’utilisateurs, d’alertes et d’informations de cas à partager avec les parties prenantes et d’autres applications, l’automatisation d’actions telles que la publication dans des notes de cas, etc.
-- [Activité du contenu](insider-risk-management-alerts.md#activity-explorer-preview). Disponible lors de l’examen des alertes, l’Explorateur d’activités fournit aux enquêteurs et aux analystes un outil analytique complet pour explorer chaque alerte. Examinez rapidement une chronologie de l’activité à risque détectée et identifiez et filtrez toutes les activités de risque associées aux alertes.
+- [Activité du contenu](insider-risk-management-alerts.md#activity-explorer-preview). Disponible lors de l’examen des alertes, l’Explorateur d’activités fournit aux enquêteurs et aux analystes un outil analytique complet pour explorer chaque alerte. Examinez rapidement une chronologie des activités à risque détectées et identifiez et filtrez toutes les activités à risque associées aux alertes.
 
-### <a name="retention-policies-and-retention-labels"></a>Stratégies de rétention et étiquettes de rétention
+### <a name="retention-policies-and-retention-labels"></a>Stratégies de rétention et étiquettes de rétention.
 
 - [Prise en charge de Yammer](retention-policies-yammer.md). Vous pouvez désormais utiliser des stratégies de rétention pour conserver et supprimer Yammer messages communautaires et privés.
 - [Appliquer des étiquettes aux enregistrements de réunions Teams.](apply-retention-labels-automatically.md#microsoft-teams-meeting-recordings) Lors de la création d’une stratégie d’étiquetage automatique, utilisez l’éditeur de requête par mot clé pour identifier les enregistrements de réunion Teams stockés dans les comptes OneDrive des utilisateurs ou dans SharePoint.
@@ -170,7 +170,7 @@ Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conform
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-[Prise en charge des clients du gouvernement des États-Unis.](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description) Les étiquettes de sensibilité sont désormais pris en charge pour les clients GCC, GCC High et DoD, uniquement pour le client et le scanneur d’étiquetage unifié Azure Information Protection.
+[Prise en charge pour les clients du gouvernement des États-Unis.](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description) Les étiquettes de sensibilité sont désormais pris en charge pour les clients GCC, GCC High et DoD, uniquement pour le client et le scanneur d’étiquetage unifié Azure Information Protection.
 
 ### <a name="trainable-classifiers"></a>Classifieurs avec capacité d’apprentissage
 
@@ -179,7 +179,7 @@ De nouvelles fonctionnalités de formation et de commentaires permettent d’am�
 Cette nouvelle fonctionnalité est incluse dans les fonctionnalités suivantes :
 
 > [!NOTE]
-> Pour toutes les fonctionnalités, si vous fournissez au moins 30 réponses de commentaires, nous allons créer une version retrainée de ce classifieur que vous pouvez consulter. En cas d’amélioration, vous pouvez republier le classifieur.
+> Pour toutes les fonctionnalités, si vous fournissez au moins 30 réponses de commentaires, nous allons créer une version retrainée de ce classificateur que vous pouvez examiner. En cas d’amélioration, vous pouvez republier le classifieur.
 
 - [Classifieurs avec capacité d’apprentissage](classifier-learn-about.md#retraining-classifiers). Pour améliorer la précision de vos classifieurs publiés, vous pouvez fournir des commentaires sur la correspondance des éléments détectés avec le classifieur.
 - [Conformité des communications.](classifier-how-to-retrain-comms-compliance.md) La nouvelle action **de correction** améliorer la classification vous permet de fournir des commentaires si un élément d’une alerte de conformité des communications correspond au classificateur configuré dans la stratégie de conformité des communications.
@@ -239,7 +239,7 @@ L’activité d’administrateur liée à la rétention est désormais enregistr
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 - Lorsque [vous ajoutez une collection à](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review)un jeu à réviser, vous pouvez désormais inclure des pièces jointes modernes (également appelées « pièces jointes cloud ») et des versions de document SharePoint.
-- Nouvelle [expérience d’exportation de](export-documents-from-review-set.md)téléchargement direct, ce qui élimine la nécessité d’utiliser Azure Storage Explorer pour télécharger du contenu de cas.
+- Nouvelle [expérience d’exportation de](export-documents-from-review-set.md)téléchargement direct, ce qui élimine la nécessité d’utiliser Azure Storage Explorer pour télécharger le contenu du cas.
 
 ## <a name="july-2020"></a>Juillet 2020
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ea96780846507e7fc3edccb28e04055ce79261fa
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 7e5dc3ef4a79b1bdbcde9a7a15fec84efe9b92c9
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980097"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109962"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -31,7 +31,7 @@ Une fois que vous avez configuré vos stratégies de conformité des communicati
 
 ## <a name="investigate-alerts"></a>Examiner les alertes
 
-La première étape pour examiner les problèmes détectés par vos stratégies consiste à passer en revue les alertes de conformité des communications dans le Centre de conformité Microsoft 365. Il existe plusieurs domaines dans la zone de solution de conformité des communications pour vous aider à examiner rapidement les alertes, selon la façon dont vous préférez afficher le regroupement d’alertes :
+La première étape pour examiner les problèmes détectés par vos stratégies consiste à passer en revue les alertes de conformité des communications dans le Centre de conformité Microsoft 365. Il existe plusieurs domaines dans le domaine de la solution de conformité des communications pour vous aider à examiner rapidement les alertes, selon la façon dont vous préférez afficher le regroupement d’alertes :
 
 - **Page** Stratégie de conformité des communications : lorsque vous vous connectez à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation [https://compliance.microsoft.com](https://compliance.microsoft.com) Microsoft 365,  sélectionnez Conformité des communications pour afficher la page Stratégie de conformité des communications.  Cette page affiche les stratégies de conformité des communications configurées pour votre organisation Microsoft 365 et des liens vers les modèles de stratégie recommandés. Chaque stratégie répertoriée inclut le nombre d’alertes qui doivent être revue, le nombre d’éléments résordés et résolus, l’état de la stratégie et la date et l’heure de la dernière analyse de stratégie. La sélection d’une stratégie affiche toutes les alertes en attente pour les correspondances à la stratégie, une alerte spécifique pour lancer la page de détails de la stratégie et démarrer les actions de correction.
 - **Alertes :** accédez aux **alertes** de conformité des communications pour afficher les 30 derniers jours d’alertes regroupées  >   par correspondances de stratégie. Cet affichage vous permet de voir rapidement les stratégies de conformité des communications qui génèrent la plupart des alertes classées par gravité. Pour démarrer les actions de correction, sélectionnez la stratégie associée à l’alerte pour lancer la page **détails de la stratégie.** À partir de la page **Détails** de la stratégie, vous pouvez consulter un résumé des activités de la **page** Vue d’ensemble, examiner et agir sur les messages d’alerte sur la **page** En attente, ou passer en revue l’historique des alertes fermées sur la page **Résolu.**
@@ -59,7 +59,7 @@ Pour obtenir la liste complète des filtres et des détails des champs, voir [Fi
 
 7. Si vous souhaitez enregistrer le filtre sélectionné comme filtre par défaut, **sélectionnez Enregistrer par défaut.** Si vous souhaitez utiliser ce filtre en tant que filtre enregistré, sélectionnez **Terminé**.
 
-8. Si vous souhaitez enregistrer les filtres sélectionnés en  tant que requête de filtre, sélectionnez Enregistrer le contrôle de requête après avoir configuré au moins une valeur de filtre. Entrez un nom pour la requête de filtre, puis sélectionnez **Enregistrer.** Ce filtre n’est disponible que pour cette stratégie et est répertorié dans la **section** Requêtes de filtre enregistrées de la page **Détails** des filtres.
+8. Si vous souhaitez enregistrer les filtres sélectionnés en  tant que requête de filtre, sélectionnez Enregistrer le contrôle de requête après avoir configuré au moins une valeur de filtre. Entrez un nom pour la requête de filtre, puis sélectionnez **Enregistrer.** Ce filtre est disponible uniquement pour cette stratégie et est répertorié dans la **section** Requêtes de filtre enregistrées de la page **Détails** des filtres.
 
     ![Contrôles détaillés du filtre de conformité des communications](../media/communication-compliance-filter-detail-controls.png)
 
@@ -75,7 +75,7 @@ Les stratégies de conformité des communications analysent et pré-groupent aut
 
 3. Sélectionnez **l’onglet** Stratégies, puis sélectionnez une stratégie pour l’examen, double-cliquez pour ouvrir la page **Stratégie.**
 
-4. Dans la page **Stratégie,** sélectionnez  l’onglet **En attente** ou Résolu pour afficher les messages en double.
+4. Dans la page **Stratégie,** sélectionnez l’onglet **En** attente ou **Résolu** pour afficher les messages en double.
 
 5. Sélectionnez les **contrôles Doublons proches** ou **Doublons exacts** pour ouvrir la page de détails des doublons.
 
@@ -106,7 +106,8 @@ Après avoir examiné les informations de base du message, il est temps d’ouvr
 - **Mode annoter** : cet mode permet aux réviseurs d’ajouter des annotations directement sur le message qui sont enregistrées dans l’affichage du message.
 - **Historique des utilisateurs** : le mode historique des utilisateurs affiche toutes les autres alertes générées par une stratégie de conformité des communications pour l’utilisateur qui envoie le message.
 - **Affichage détaillé du message**: affichage avancé des métadonnées et des informations de configuration des messages.
-- Notification détectée par le modèle **(aperçu)**: de nombreuses actions de harcèlement et d’agresseur au fil du temps et impliquent la récurration d’instances du même comportement par un utilisateur. La notification *de modèle détecté* s’affiche dans les détails de l’alerte et attirer l’attention sur l’alerte. La détection des modèles se fait par stratégie et évalue le comportement au cours des 30 derniers jours lorsqu’au moins deux messages sont envoyés au même destinataire par un expéditeur. Les enquêteurs et les réviseurs peuvent utiliser cette notification pour identifier le comportement répété afin d’évaluer l’alerte selon le cas.
+- **Notification de modèle détectée :** de nombreuses actions d’harcèlement et d’agresseur au fil du temps et impliquent la récurration d’instances du même comportement par un utilisateur. La notification *de modèle détecté* s’affiche dans les détails de l’alerte et attirer l’attention sur l’alerte. La détection des modèles se fait par stratégie et évalue le comportement au cours des 30 derniers jours lorsqu’au moins deux messages sont envoyés au même destinataire par un expéditeur. Les enquêteurs et les réviseurs peuvent utiliser cette notification pour identifier le comportement répété afin d’évaluer l’alerte selon le cas.
+- **Afficher la traduction :** cet affichage convertit automatiquement le texte  du message d’alerte en la langue configurée dans le paramètre De langue affichée dans l’abonnement Microsoft 365 pour chaque réviseur. La vue Traduire permet d’élargir la prise en charge de l’examen pour les organisations avec des utilisateurs multilingues et élimine la nécessité de services de traduction supplémentaires en dehors du processus de révision de la conformité des communications. À l’aide des services de traduction Microsoft, la vue Traduire peut être allumée et désactivée selon les besoins et prend en charge un large éventail de langues. Pour obtenir la liste complète des langues pris en charge, voir [Microsoft Translator Languages](https://www.microsoft.com/translator/business/languages/). Les langues répertoriées dans la *liste des langues du* traducteur sont pris en charge dans l’affichage Traduire.
 
     ![Contrôles d’affichage des messages de conformité des communications](../media/communication-compliance-message-views.png)
 
@@ -114,29 +115,29 @@ Après avoir examiné les informations de base du message, il est temps d’ouvr
 
 Maintenant que vous avez examiné les détails du message pour l’alerte, vous pouvez choisir plusieurs actions de correction :
 
-- **Résoudre**: la sélection du contrôle **Résoudre** supprime immédiatement le message de la file d’attente des **alertes** en attente et aucune autre action ne peut être prise sur le message. En sélectionnant **Résoudre,** vous avez essentiellement fermé l’alerte sans classification supplémentaire et elle ne peut pas être rouverte pour d’autres actions. Tous les messages résolus sont affichés dans **l’onglet Résolu.**
+- **Résoudre**: la sélection du contrôle **Résoudre** supprime immédiatement le message de la file d’attente des **alertes** en attente et aucune autre action ne peut être prise sur le message. En sélectionnant **Résoudre,** vous avez essentiellement fermé l’alerte sans classification supplémentaire et vous ne pouvez pas la rouvrir pour d’autres actions. Tous les messages résolus sont affichés dans **l’onglet Résolu.**
 - **Faux positif**: vous pouvez toujours résoudre un message en tant que faux positif à tout moment pendant le flux de travail de révision du message. Le faux positif signifie que l’alerte n’était pas actionnable ou qu’elle a été générée de manière incorrecte par le processus d’alerte. Le message ne peut pas être rouvert et tous les messages faux positifs sont affichés dans **l’onglet Résolu.**
 - **Power Automate (aperçu)**: utilisez un flux Power Automate pour automatiser les tâches de traitement d’un message d’alerte. Par défaut, la conformité des communications inclut le gestionnaire notify lorsqu’un utilisateur dispose d’un modèle de flux d’alerte de conformité des *communications* que les réviseurs peuvent utiliser pour automatiser le processus de notification pour les utilisateurs avec des alertes de message. Pour plus d’informations sur la création et la gestion des flux Power Automate dans la conformité des communications, consultez l’article de référence sur la fonctionnalité de conformité [des](communication-compliance-feature-reference.md#power-automate-flows) communications.
-- **Marquez le** message comme étant *conforme,* *non* conforme ou aussi *discutable* qu’il est lié aux stratégies et aux normes de votre organisation. L’ajout de balises et de commentaires de marquage vous permet de micro-filtrer les alertes de stratégie pour les escalades ou dans le cadre d’autres processus de révision interne. Une fois le marquage terminé, vous pouvez également choisir de résoudre le message pour le déplacer hors de la file d’attente de révision.
+- **Marquez le** message comme étant *conforme,* *non* conforme ou aussi *discutable* en ce qui concerne les stratégies et les normes de votre organisation. L’ajout de balises et de commentaires de marquage vous permet de micro-filtrer les alertes de stratégie pour les escalades ou dans le cadre d’autres processus de révision interne. Une fois le marquage terminé, vous pouvez également choisir de résoudre le message pour le déplacer hors de la file d’attente de révision.
 - **Notifier**: vous pouvez utiliser le contrôle **Notify** pour affecter un modèle de notification personnalisé à l’alerte et pour envoyer une notification d’avertissement à l’utilisateur. Choisissez le modèle d’avis approprié configuré dans  la zone **Paramètres** de conformité des communications, puis sélectionnez Envoyer un rappel par courrier électronique à l’utilisateur qui a envoyé le message et résoudre le problème.
-- **Escalade :** à l’aide  du contrôle Réamorcer, vous pouvez choisir les autres membres de votre organisation qui doivent examiner le message. Choisissez parmi une liste de réviseurs configurés dans la stratégie de conformité des communications pour envoyer une notification par courrier électronique demandant une révision supplémentaire de l’alerte de message. Le réviseur sélectionné peut utiliser un lien figurant dans la notification par courrier électronique pour accéder directement aux éléments qui y sont réaffectés pour révision.
+- **Escalade :** à **l’aide** du contrôle Réamorcer, vous pouvez choisir les autres membres de votre organisation qui doivent examiner le message. Choisissez parmi une liste de réviseurs configurés dans la stratégie de conformité des communications pour envoyer une notification par courrier électronique demandant une révision supplémentaire de l’alerte de message. Le réviseur sélectionné peut utiliser un lien figurant dans la notification par courrier électronique pour accéder directement aux éléments qui y sont réaffectés pour révision.
 - **Escalade pour examen**: à l’aide du contrôle **Escalate for investigation,** vous pouvez créer un cas [Advanced eDiscovery](overview-ediscovery-20.md) pour un ou plusieurs messages. Vous devez fournir un nom et des notes pour le nouveau cas, et l’utilisateur qui a envoyé le message correspondant à la stratégie est automatiquement affecté en tant que dépositaire de cas. Vous n’avez pas besoin d’autorisations supplémentaires pour gérer le cas. La création d’un cas ne résout pas ou ne crée pas de balise pour le message. Vous pouvez sélectionner un total de 100 messages lors de la création d’un cas Advanced eDiscovery pendant le processus de correction. Les messages dans tous les canaux de communication surveillés par la conformité des communications sont pris en charge. Par exemple, vous pouvez sélectionner 50 conversations Microsoft Teams, 25 messages électroniques Exchange Online et 25 messages Yammer lorsque vous ouvrez un nouveau cas Advanced eDiscovery pour un utilisateur.
-- **Améliorer la classification (aperçu)**: les alertes créées à partir de correspondances de type classifieur peuvent avoir besoin de commentaires pour réduire les faux positifs dans votre organisation. Utilisez le **contrôle Améliorer la classification** pour fournir des commentaires sur la validité de la classification de conformité des communications ou pour suggérer d’autres classifieurs entraisables pour ce type de correspondance. Vous pouvez confirmer que les classifieurs correspondent ou non à une *correspondance,* ou suggérer d’autres classifieurs entraisables à associer à ce type d’activité d’alerte à l’avenir. 
+- **Améliorer la classification (aperçu)**: les alertes créées à partir de correspondances de type classifieur peuvent avoir besoin de commentaires pour réduire les faux positifs dans votre organisation. Utilisez le **contrôle Améliorer la classification** pour fournir des commentaires sur la validité de la classification de conformité des communications ou pour suggérer d’autres classifieurs entra nessables pour ce type de correspondance. Vous pouvez confirmer que les classifieurs correspondent ou non, ou suggérer d’autres classifieurs entra nements à associer à ce type d’activité d’alerte à l’avenir. 
 
     1. Sélectionnez un message dans la liste d’alertes.
     2. Choisissez les points de sélection, puis sélectionnez **Améliorer la classification.**
-    3. Dans le **volet de commentaires du classifieur** détaillé, si l’élément est un vrai positif, choisissez **Match**.  Si l’élément a été inclus à tort dans la catégorie en tant que faux positif, choisissez **Non une correspondance**.
+    3. Dans le **volet de commentaires du classifieur** détaillé, si l’élément est un vrai positif, choisissez **Match**.  Si l’élément a été inclus à tort dans la catégorie comme faux positif, choisissez **Non une correspondance**.
     4. S’il existe un autre classificateur qui serait plus approprié pour l’élément, choisissez-le dans la liste Suggérer d’autres **classifieurs entra nessifiables.** Ce commentaire déclenche l’évaluation de l’élément par l’autre classificateur.
 
     > [!TIP]
-    > Vous pouvez fournir des commentaires sur plusieurs éléments simultanément en les sélectionnant tous, puis en sélectionnant Fournir des commentaires détaillés **dans** la barre de commandes.
+    > Vous pouvez fournir des commentaires sur plusieurs éléments simultanément en les sélectionnant tous, puis en choisissant Fournir des commentaires détaillés **dans** la barre de commandes.
 
     5. Choisissez **Envoyer des commentaires** pour envoyer votre évaluation des classifications Match et Not a **match** et suggérer d’autres classifieurs entraisables.  Lorsque vous avez fourni 30 instances de commentaires à un classificateur, il se rééduette automatiquement. La formation à nouveau peut prendre entre 1 et 4 heures. Les classifieurs ne peuvent être formés que deux fois par jour.
 
     > [!IMPORTANT]
     > Ces informations sont ensuite données au classifieur de votre client, elles ne sont **pas revenir à Microsoft.**
 
-    Pour en savoir plus sur la nouvelle formation du classificateur pour la conformité des communications, consultez l’article Sur la reconversion d’un classificateur dans la [conformité des communications.](classifier-how-to-retrain-comms-compliance.md)
+    Pour en savoir plus sur la nouvelle formation du classificateur pour la conformité des communications, consultez l’article Sur la nouvelle formation d’un classificateur dans la [conformité des communications.](classifier-how-to-retrain-comms-compliance.md)
 
     ![La conformité des communications améliore la classification](../media/communication-compliance-improve-classifier.png)
 

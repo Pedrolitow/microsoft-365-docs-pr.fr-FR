@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 3eaa6481c2f1b0d41066a8cea1b28d776f786a1b
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 3a88c48e6915b03316b29d80d2a0f7550d4b5d32
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094775"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105161"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
 Utilisez les stratégies de gestion des risques internes pour identifier les activités à risque et les outils de gestion pour agir sur les alertes de risque dans votre organisation. Pour configurer les conditions préalables et une stratégie de gestion des risques internes, complétez les étapes suivantes.
 
 >[!IMPORTANT]
->La solution de gestion des risques internes Microsoft 365 fournit une option au niveau du client pour aider les clients à faciliter la gouvernance interne au niveau de l’utilisateur. Les administrateurs au niveau du client peuvent configurer des autorisations pour fournir l’accès à cette solution aux membres de votre organisation et configurer des connecteurs de données dans le Centre de conformité Microsoft 365 pour importer les données pertinentes afin de prendre en charge l’identification au niveau de l’utilisateur de l’activité potentiellement risquée. Les clients reconnaissent que les informations liées au comportement, au caractère ou aux performances de l’utilisateur individuel liées à l’emploi peuvent être calculées par l’administrateur et rendues accessibles à d’autres membres de l’organisation. En outre, les clients reconnaissent qu’ils doivent mener leur propre enquête complète relative au comportement, au caractère ou aux performances de l’utilisateur individuel matériellement liés à l’emploi, et non seulement à s’appuyer sur les informations du service de gestion des risques internes. Les clients sont uniquement responsables de l’utilisation du service de gestion des risques internes de Microsoft 365, ainsi que de toute fonctionnalité ou service associé conformément à toutes les lois applicables, y compris les lois relatives à l’identification d’un utilisateur individuel et aux mesures correctives.
+>La solution de gestion des risques internes Microsoft 365 fournit une option au niveau client pour aider les clients à faciliter la gouvernance interne au niveau de l’utilisateur. Les administrateurs au niveau du client peuvent configurer des autorisations pour fournir l’accès à cette solution aux membres de votre organisation et configurer des connecteurs de données dans le Centre de conformité Microsoft 365 pour importer les données pertinentes afin de prendre en charge l’identification au niveau de l’utilisateur de l’activité potentiellement risquée. Les clients reconnaissent que les informations liées au comportement, au caractère ou aux performances de l’utilisateur individuel liées à l’emploi peuvent être calculées par l’administrateur et rendues accessibles à d’autres membres de l’organisation. En outre, les clients reconnaissent qu’ils doivent mener leur propre examen complet lié au comportement, au caractère ou aux performances de l’utilisateur individuel matériellement liés à l’emploi, et non seulement s’appuyer sur les informations du service de gestion des risques internes. Les clients sont uniquement responsables de l’utilisation du service de gestion des risques internes de Microsoft 365, ainsi que de toute fonctionnalité ou service associé conformément à toutes les lois applicables, y compris les lois relatives à l’identification d’un utilisateur individuel et toute action corrective.
 
 Pour plus d’informations sur la façon dont les stratégies de risque internes peuvent vous aider à gérer les risques au niveau de votre organisation, consultez La gestion des risques internes [dans Microsoft 365.](insider-risk-management.md)
 
@@ -41,10 +41,13 @@ Avant de commencer à gérer les risques internes, vous devez confirmer votre ab
 - Abonnement Microsoft 365 A5 (version payante ou d’essai)
 - Abonnement Microsoft 365 A3 + module de conformité Microsoft 365 A5
 - Abonnement Microsoft 365 A3 + module de gestion des risques internes Microsoft 365 A5
+- Abonnement Microsoft 365 G5 (version payante ou d’essai)
+- Abonnement Microsoft 365 G5 + module de conformité Microsoft 365 G5
+- Abonnement Microsoft 365 G5 + module de gestion des risques internes Microsoft 365 G5
 
 L’une des licences ci-dessus doit être attribuée aux utilisateurs inclus dans les stratégies de gestion des risques internes.
 
-Si vous n’avez pas d’offre Microsoft 365 Entreprise E5 existante et que vous souhaitez essayer la [](https://www.microsoft.com/microsoft-365/enterprise) gestion des risques internes, vous pouvez ajouter [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’évaluation de Microsoft 365 Entreprise E5.
+Si vous n’avez pas d’offre Microsoft 365 Entreprise E5 existante et que vous souhaitez essayer la [](https://www.microsoft.com/microsoft-365/enterprise) gestion des risques internes, vous pouvez ajouter [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’évaluation de Microsoft 365 Entreprise E5.
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Étape 1 : Activer les autorisations pour la gestion des risques internes
 
@@ -63,7 +66,7 @@ Selon la structure de votre équipe de gestion de la conformité, vous avez la c
 | **Enquêteurs sur la gestion des risques internes.** | Utilisez ce groupe pour affecter des autorisations aux utilisateurs qui agiront comme des enquêteurs de données de risque internes. Les utilisateurs de ce groupe de rôles peuvent accéder à toutes les alertes de gestion des risques internes, cas, modèles de notifications et l’Explorateur de contenu. |
 
 > [!NOTE]
-> Ces groupes de rôles ne sont actuellement pas pris en charge sur Privileged Identity Management (PIM). Pour en savoir plus sur PIM, voir [Attribuer des rôles Azure AD dans Privileged Identity Management.](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)
+> Ces groupes de rôles ne sont actuellement pas pris en charge sur Privileged Identity Management (PIM). Pour en savoir plus sur PIM, voir [Attribuer des rôles Azure AD dans Privileged Identity Management.](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>Ajouter des utilisateurs à un groupe de rôles de gestion des risques internes
 
@@ -108,7 +111,7 @@ Consultez [l’article](import-hr-data.md) Configurer un connecteur pour importe
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurer des stratégies de protection contre la perte de données (DLP)
 
-La gestion des risques internes prend en charge l’utilisation de stratégies DLP pour vous aider à identifier l’exposition intentionnelle ou accidentelle d’informations sensibles à des parties indésirables pour les alertes DLP de niveau élevé. Lorsque vous configurez une stratégie de gestion des risques internes avec l’un des modèles de **fuites** de données, vous devez affecter une stratégie DLP spécifique à la stratégie.
+La gestion des risques internes prend en charge l’utilisation de stratégies DLP pour vous aider à identifier l’exposition intentionnelle ou accidentelle d’informations sensibles à des parties indésirables pour les alertes DLP de niveau de gravité élevé. Lorsque vous configurez une stratégie de gestion des risques internes avec l’un des modèles de **fuites** de données, vous devez affecter une stratégie DLP spécifique à la stratégie.
 
 Les stratégies DLP aident à identifier les utilisateurs à activer le score de risque dans la gestion des risques internes pour les alertes DLP de gravité élevée pour les informations sensibles et sont un élément important de la configuration de la couverture de gestion des risques complète dans votre organisation. Pour plus d’informations sur la gestion des risques internes et sur l’intégration et la planification des stratégies DLP, voir [stratégies de gestion des risques internes.](insider-risk-management-policies.md#general-data-leaks)
 
@@ -120,34 +123,34 @@ Les stratégies DLP aident à identifier les utilisateurs à activer le score de
 
 Une stratégie DLP est requise lors de l’utilisation des modèles de stratégie suivants :
 
-- Fuites de données générales
+- Fuites générales de données
 - Fuites de données par utilisateurs prioritaires
 
 Consultez [l’article Créer, tester](create-test-tune-dlp-policy.md) et régler une stratégie DLP pour obtenir des instructions pas à pas pour configurer des stratégies DLP pour votre organisation. Une fois que vous avez configuré une stratégie DLP, revenir à ces étapes de configuration.
 
 ### <a name="configure-priority-user-groups"></a>Configurer des groupes d’utilisateurs prioritaires
 
-La gestion des risques internes inclut la prise en charge de l’attribution de groupes d’utilisateurs prioritaires à des stratégies pour faciliter l’identité des activités à risque uniques pour les utilisateurs ayant des positions critiques, des niveaux élevés de données et d’accès au réseau, ou un historique passé de comportement à risque. La création d’un groupe d’utilisateurs prioritaire et l’affectation d’utilisateurs au groupe aident les stratégies d’étendue aux circonstances uniques présentées par ces utilisateurs.
+La gestion des risques internes inclut la prise en charge de l’attribution de groupes d’utilisateurs prioritaires à des stratégies pour faciliter l’identité des activités à risque uniques pour les utilisateurs ayant des positions critiques, des niveaux élevés de données et d’accès au réseau, ou un historique passé de comportement de risque. La création d’un groupe d’utilisateurs prioritaire et l’affectation d’utilisateurs au groupe aident les stratégies d’étendue aux circonstances uniques présentées par ces utilisateurs.
 
 Un groupe d’utilisateurs prioritaire est requis lors de l’utilisation des modèles de stratégie suivants :
 
 - Violations de stratégie de sécurité par les utilisateurs prioritaires
 - Fuites de données par utilisateurs prioritaires
 
-Consultez [l’article](insider-risk-management-settings.md#priority-user-groups-preview) Prise en charge des paramètres de gestion des risques internes pour obtenir des instructions pas à pas pour créer un groupe d’utilisateurs prioritaire. Une fois que vous avez configuré un groupe d’utilisateurs prioritaires, revenir à ces étapes de configuration.
+Consultez [l’article](insider-risk-management-settings.md#priority-user-groups-preview) Prise en charge des paramètres de gestion des risques internes pour obtenir des instructions pas à pas pour créer un groupe d’utilisateurs prioritaire. Une fois que vous avez configuré un groupe d’utilisateurs prioritaire, revenir à ces étapes de configuration.
 
 ### <a name="configure-physical-badging-connector-optional"></a>Configurer le connecteur de badging physique (facultatif)
 
-La gestion des risques internes prend en charge l’importation de données utilisateur et de journal importées à partir de plateformes de contrôle physique et d’accès. Le connecteur de badging physique vous permet d’obtenir des données d’accès à partir de fichiers JSON, y compris les ID d’utilisateur, les ID de point d’accès, les heures et dates d’accès et l’état d’accès. Celles-ci permettent d’attirer l’attention sur les indicateurs d’alertes dans les stratégies de gestion des risques internes et il s’agit d’un élément essentiel de la configuration de la couverture de la gestion des risques. Si vous configurez plusieurs connecteurs de mauvaise gestion physique pour votre organisation, la gestion des risques internes tire automatiquement les indicateurs de tous les connecteurs de mauvaise gestion physiques. Les informations du connecteur de gestion des risques physiques complètent d’autres signaux de risque internes lors de l’utilisation de tous les modèles de stratégie de risque internes.
+La gestion des risques internes prend en charge l’importation de données utilisateur et de journal importées à partir de plateformes de contrôle physique et d’accès. Le connecteur de badging physique vous permet d’obtenir des données d’accès à partir de fichiers JSON, y compris les ID d’utilisateur, les ID de point d’accès, les heures et dates d’accès et l’état d’accès. Celles-ci permettent d’attirer l’attention sur les indicateurs d’alertes dans les stratégies de gestion des risques internes et il s’agit d’un élément essentiel de la configuration de la couverture de la gestion des risques. Si vous configurez plusieurs connecteurs de mauvaise gestion physique pour votre organisation, la gestion des risques internes tire automatiquement les indicateurs de tous les connecteurs de mauvaise gestion physiques. Les informations du connecteur de badging physique complètent d’autres signaux de risque internes lors de l’utilisation de tous les modèles de stratégie de risque internes.
 
 >[!IMPORTANT]
->Pour que les stratégies de gestion des risques internes utilisent et corrélent les données de signal liées aux utilisateurs qui quittent et se terminent par des données d’événement à partir de vos plateformes de contrôle physique et d’accès, vous devez également configurer le connecteur RH Microsoft 365. Si vous activez le connecteur de badging physique sans activer le connecteur RH Microsoft 365, les stratégies de gestion des risques internes ne traitera que les événements d’accès physique non autorisé pour les utilisateurs de votre organisation.
+>Pour que les stratégies de gestion des risques internes utilisent et corrélent les données de signal liées aux utilisateurs qui quittent et se terminent par des données d’événement à partir de vos plateformes de contrôle physique et d’accès, vous devez également configurer le connecteur Microsoft 365 HR. Si vous activez le connecteur de badging physique sans activer le connecteur RH Microsoft 365, les stratégies de gestion des risques internes ne traitera que les événements d’accès physique non autorisé pour les utilisateurs de votre organisation.
 
 Pour obtenir [des](import-physical-badging-data.md) instructions pas à pas sur la configuration du connecteur de badging physique pour votre organisation, consultez l’article Configurer un connecteur pour importer des données de mauvaise gestion physiques. Une fois que vous avez configuré le connecteur, revenir à ces étapes de configuration.
 
 ## <a name="step-4-configure-insider-risk-settings"></a>Étape 4 : Configurer les paramètres des risques internes
 
-[Les paramètres de risque internes s’appliquent](insider-risk-management-settings.md) à toutes les stratégies de gestion des risques internes, quel que soit le modèle que vous avez choisi lors de la création d’une stratégie. Les paramètres sont configurés à l’aide des **Paramètres de risque internes** contrôle situés en haut de tous les onglets de gestion des risques internes. Ces paramètres contrôlent la confidentialité, les indicateurs, la surveillance de fenêtres et les détections intelligentes.
+[Les paramètres de risques internes s’appliquent](insider-risk-management-settings.md) à toutes les stratégies de gestion des risques internes, quel que soit le modèle que vous avez choisi lors de la création d’une stratégie. Les paramètres sont configurés à l’aide des **Paramètres de risque internes** contrôle situés en haut de tous les onglets de gestion des risques internes. Ces paramètres contrôlent la confidentialité, les indicateurs, la surveillance de fenêtres et les détections intelligentes.
 
 Avant de configurer une stratégie, définissez les paramètres de risque internes suivants :
 
@@ -165,7 +168,7 @@ Avant de configurer une stratégie, définissez les paramètres de risque intern
     - [État d’alerte de Microsoft Defender pour point de terminaison](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Paramètres de domaine](insider-risk-management-settings.md#domains-preview)
 6. Dans la page **Exporter les alertes,** activez l’exportation des informations d’alerte de risque interne à l’aide des API de gestion d’Office 365 si nécessaire.
-7. Dans la page **Groupes d’utilisateurs** prioritaires, créez un groupe d’utilisateurs prioritaire et ajoutez des utilisateurs s’ils ne sont pas créés à l’étape **3.**
+7. Dans la page **Groupes d’utilisateurs** prioritaires, créez un groupe d’utilisateurs prioritaire et ajoutez des utilisateurs si ce n’est pas le cas à l’étape **3.**
 8. Dans la page **Flux Power Automate,** configurez un flux à partir de modèles de flux de risques internes ou créez un flux. Consultez [l’article Prise en](insider-risk-management-settings.md#power-automate-flows-preview) charge des paramètres de gestion des risques internes pour obtenir des instructions pas à pas.
 9. Dans la **page Ressources** de priorité, configurez les ressources de priorité pour utiliser les données de votre plateforme de contrôle physique et d’accès importées par le connecteur de badging physique. Consultez [l’article Prise en](insider-risk-management-settings.md#priority-physical-assets-preview) charge des paramètres de gestion des risques internes pour obtenir des instructions pas à pas.
 10. Dans la page **Microsoft Teams,** activez l’intégration de Microsoft Teams à la gestion des risques internes pour créer automatiquement une équipe pour la collaboration de cas ou d’utilisateurs. Consultez [l’article Prise en](insider-risk-management-settings.md#microsoft-teams-preview) charge des paramètres de gestion des risques internes pour obtenir des instructions pas à pas.
@@ -187,18 +190,18 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 
 4. Sélectionnez **Suivant** pour continuer.
 5. Dans la **page**  Utilisateurs, sélectionnez Ajouter un utilisateur ou un groupe ou Choisir des groupes d’utilisateurs prioritaires pour définir quels utilisateurs ou groupes d’utilisateurs prioritaires sont inclus dans la stratégie, en fonction du modèle de stratégie que vous avez sélectionné.  Activez **la case à cocher** Tous les utilisateurs et groupes à messagerie le cas échéant (si vous n’avez pas sélectionné de modèle basé sur l’utilisateur prioritaire). Sélectionnez **Suivant** pour continuer.
-6. Dans la page Spécifier le contenu à hiérarchiser **(facultatif),** vous pouvez affecter les sources à hiérarchiser pour augmenter les scores de risque. Toutefois, certaines activités ne génèrent aucune alerte, sauf si le contenu associé contient des types d’informations sensibles intégrés ou personnalisés ou a été spécifié comme priorité sur cette page :
+6. Dans la page Spécifier le contenu à hiérarchiser **(facultatif),** vous pouvez affecter les sources à hiérarchiser pour augmenter les scores de risque. Toutefois, certaines activités ne génèrent aucune alerte, sauf si le contenu associé contient des types d’informations sensibles intégrés ou personnalisés ou a été spécifié en tant que priorité sur cette page :
     - **Sites SharePoint**: sélectionnez Ajouter un **site SharePoint** et sélectionnez les organisations SharePoint que vous souhaitez hiérarchiser. Par exemple, *« group1@contoso.sharepoint.com/sites/group1*».
     - **Type d’informations sensibles**: sélectionnez Ajouter **un type d’informations sensibles** et sélectionnez les types de sensibilité que vous souhaitez hiérarchiser. Par exemple, *« Numéro de compte* bancaire américain » et « Numéro de carte de *crédit*».
-    - **Étiquettes de sensibilité**: **sélectionnez Ajouter une** étiquette de sensibilité et sélectionnez les étiquettes que vous souhaitez hiérarchiser. Par exemple, *« Confidentiel »* et « *Secret*».
+    - **Étiquettes de sensibilité**: **sélectionnez Ajouter** une étiquette de sensibilité et sélectionnez les étiquettes que vous souhaitez hiérarchiser. Par exemple, *« Confidentiel »* et « *Secret*».
 7. Sélectionnez **Suivant** pour continuer.
-8. Dans **la** page Sélectionner des indicateurs de [](insider-risk-management-settings.md#indicators) stratégie, vous verrez les indicateurs que vous avez définis comme disponibles dans la page Indicateurs des **paramètres** de risque  >   internes. Si vous avez sélectionné un modèle de fuites de données au début de l’Assistant, vous devez sélectionner une stratégie DLP dans la liste de listes de listes des *stratégies* **DLP** pour activer les indicateurs de déclenchement de la stratégie. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie. Si vous préférez ne pas utiliser les paramètres de seuil de stratégie par défaut pour ces indicateurs, désactivez les seuils par défaut recommandés par Microsoft et entrez les **valeurs** de seuil pour chaque indicateur sélectionné. Si vous avez sélectionné au moins un indicateur *Office* ou *Appareil,* sélectionnez le **score de risque** selon le cas. Les score de risque ne s’appliquent qu’aux indicateurs sélectionnés.
+8. Dans **la** page Sélectionner des indicateurs de [](insider-risk-management-settings.md#indicators) stratégie, vous verrez les indicateurs que vous avez définis comme disponibles dans la page Indicateurs des **paramètres** de risque  >   internes. Si vous avez sélectionné un modèle de fuites de données au début de l’Assistant, vous devez sélectionner une stratégie DLP dans la liste de listes de listes des *stratégies* **DLP** pour activer les indicateurs de déclenchement de la stratégie. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie. Si vous préférez ne pas utiliser les paramètres de seuil de stratégie par défaut pour ces indicateurs, désactivez les seuils par défaut recommandés par Microsoft et entrez les **valeurs** de seuil pour chaque indicateur sélectionné. Si vous avez sélectionné au moins un indicateur *Office* ou *Appareil,* sélectionnez les **marqueurs** de score de risque selon le cas. Les score de risque ne s’appliquent qu’aux indicateurs sélectionnés.
 
     >[!IMPORTANT]
     >Si les indicateurs de cette page ne peuvent pas être sélectionnés, vous devez sélectionner les indicateurs que vous souhaitez activer pour toutes les stratégies dans la page Indicateurs de stratégie des  >  **paramètres** de gestion des risques  >   internes.
 
 9. Sélectionnez **Suivant** pour continuer.
-10. Dans la page **Délais de** la stratégie, vous verrez les conditions de la fenêtre [d’activation](insider-risk-management-settings.md#policy-timeframes) de la stratégie sur la page Délais de stratégie des **paramètres** de risque  >   internes.
+10. Dans la page **Périodes** de la stratégie, vous verrez les conditions de la fenêtre [d’activation](insider-risk-management-settings.md#policy-timeframes) de la stratégie qui s’y trouverez dans la page Délais de stratégie des   >  **paramètres de** risque internes.
 11. Sélectionnez **Suivant** pour continuer.
 12. Dans **la** page Révision, examinez les paramètres que vous avez choisis pour la stratégie. Sélectionnez **Modifier** pour modifier l’une des valeurs de stratégie ou **sélectionnez Envoyer** pour créer et activer la stratégie.
 

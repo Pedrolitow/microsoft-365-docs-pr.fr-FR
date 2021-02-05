@@ -24,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: 'Remplacez votre adresse de messagerie initiale par une adresse de messagerie conviviale telle que tom@fourthcoffee.com. Pour ce faire, vous devez acheter un nom de domaine et l’ajouter à Microsoft 365. '
-ms.openlocfilehash: d23c612eecae0a0b58d844fbbe25392ffa682fde
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 'Modifiez votre adresse de messagerie initiale en une adresse de messagerie conviviale comme tom@fourthcoffee.com. Pour ce faire, vous devez acheter un nom de domaine et l’ajouter à Microsoft 365. '
+ms.openlocfilehash: 445b78f759cee79a794f9656afd5b26051534e26
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656830"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114020"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Changer votre adresse de courrier pour utiliser votre domaine personnalisé
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -45,27 +45,27 @@ ms.locfileid: "49656830"
   
 ::: moniker range="o365-worldwide"
 
-Votre adresse de messagerie initiale dans Microsoft 365 inclut. onmicrosoft.com, comme tom@fourthcoffee.onmicrosoft.com. Vous pouvez la remplacer par une adresse plus conviviale telle que tom@fourthcoffee.com. Vous devez disposer de votre propre nom de domaine, par exemple fourthcoffee.com. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
+Votre adresse de messagerie initiale dans Microsoft 365 inclut .onmicrosoft.com, comme tom@fourthcoffee.onmicrosoft.com. Vous pouvez la remplacer par une adresse plus conviviale telle que tom@fourthcoffee.com. Vous devez disposer de votre propre nom de domaine, par exemple fourthcoffee.com. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Votre adresse de messagerie initiale dans Office 365 Germany inclut. onmicrosoft.de, comme tom@fourthcoffee.onmicrosoft.de. Vous pouvez le remplacer par une adresse plus conviviale telle que tom@fourthcoffee.de. Vous aurez besoin de votre propre nom de domaine, par exemple fourthcoffee.de. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
+Votre adresse de messagerie initiale dans Office 365 Germany inclut .onmicrosoft.de, comme tom@fourthcoffee.onmicrosoft.de. Vous pouvez la modifier en une adresse plus conviviale comme tom@fourthcoffee.de. Vous aurez besoin de votre propre nom de domaine, comme fourthcoffee.de d’abord. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Votre adresse de messagerie initiale dans Office 365 géré par 21Vianet inclut partner.onmschina.cn, comme tom@fourthcoffee.partner.onmschina.cn. Vous pouvez le remplacer par une adresse plus conviviale telle que tom@fourthcoffee.cn. Vous aurez besoin de votre propre nom de domaine, par exemple fourthcoffee.cn. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
+Votre adresse de messagerie initiale dans Office 365 géré par 21Vianet inclut partner.onmschina.cn, comme tom@fourthcoffee.partner.onmschina.cn. Vous pouvez la modifier en une adresse plus conviviale comme tom@fourthcoffee.cn. Vous aurez besoin de votre propre nom de domaine, comme fourthcoffee.cn d’abord. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
-Lorsque vous modifiez l’adresse de messagerie de votre domaine pour qu’elle vienne à Microsoft 365, en mettant à jour l’enregistrement MX de votre domaine au cours de l’installation, tous les messages envoyés à ce domaine débuteront à Microsoft 365. Vérifiez que vous avez ajouté des utilisateurs et créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui disposent d’un courrier électronique sur votre domaine avant de modifier l’enregistrement MX. Vous ne souhaitez pas déplacer le courrier électronique de tous les membres de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de messagerie](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide).
+Lorsque vous modifiez le courrier électronique de votre domaine pour qu’il soit envoyé à Microsoft 365, en mettant à jour l’enregistrement MX de votre domaine lors de l’installation, tous les messages envoyés à ce domaine commenceront à être envoyés à Microsoft 365. Assurez-vous que vous avez ajouté des utilisateurs et créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des messages sur votre domaine avant de modifier l’enregistrement MX. Vous ne souhaitez pas déplacer le courrier électronique de tous les employés de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide)avec seulement quelques adresses de messagerie à la place.
   
-## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Modifier votre adresse de courrier pour utiliser votre domaine personnalisé à l’aide du centre d’administration Microsoft 365
+## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Modifier votre adresse de messagerie pour utiliser votre domaine personnalisé à l’aide du Centre d’administration Microsoft 365
 
-Pour effectuer ces étapes, vous devez disposer d’un compte d’administrateur global. 
+Vous devez avoir un compte d’administrateur global pour effectuer ces étapes. 
 
 ::: moniker range="o365-worldwide"
 
@@ -81,20 +81,20 @@ Pour effectuer ces étapes, vous devez disposer d’un compte d’administrateur
 
 ::: moniker range="o365-21vianet"
 
-1. Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>l’adresse. 
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>admin center at . 
 
 ::: moniker-end 
 
-2. Accédez à la page domaines **d’installation**  >   . 
+2. Go to the **Setup**  >  **Domains** page. 
 
 3. Dans la page **Domaines**, sélectionnez **Ajouter un domaine**.
     
 4. Suivez les étapes indiquées pour confirmer que vous êtes le propriétaire de votre domaine et que vous voulez modifier votre adresse de courrier.
     
-Vous serez guidé pour que tout fonctionne correctement avec votre domaine dans Microsoft 365.
+Vous serez guidé pour tout configurer correctement avec votre domaine dans Microsoft 365.
 
 > [!NOTE]
-> Si vous n’utilisez pas de licence Exchange, vous ne pouvez pas utiliser le domaine pour envoyer ou recevoir des courriers électroniques à partir du client Microsoft 365.
+> Si vous n’utilisez pas de licence Exchange, vous ne pouvez pas utiliser le domaine pour envoyer ou recevoir des courriers électroniques du client Microsoft 365.
   
 ## <a name="related-articles"></a>Articles connexes
 

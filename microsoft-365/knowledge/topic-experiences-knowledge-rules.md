@@ -1,5 +1,5 @@
 ---
-title: Gestion de la visibilité des rubriques dans Microsoft 365
+title: Gérer la visibilité des rubriques dans les rubriques microsoft
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,52 +9,51 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Découvrez comment administrer la visibilité des rubriques dans Microsoft 365.
-ms.openlocfilehash: e2f09d06051d3fc8314a17d55f97aab305c0d358
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: Découvrez comment administrer la visibilité des rubriques dans les rubriques microsoft.
+ms.openlocfilehash: cd6a712687a63c3d131ee678c6c408f516c7b529
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668170"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107666"
 ---
-# <a name="manage-topic-visibility-in-microsoft-365"></a>Gestion de la visibilité des rubriques dans Microsoft 365
+# <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Gérer la visibilité des rubriques dans les rubriques microsoft
 
-Vous pouvez gérer l’ensemble des utilisateurs qui peuvent voir les points forts, les fiches rubrique et le centre de rubrique dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com). Vous devez être un administrateur général ou un administrateur SharePoint pour effectuer ces tâches.
+Vous pouvez gérer l’ensemble des utilisateurs qui peuvent voir les points forts de la rubrique, les cartes de rubrique et le centre de rubriques dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com) Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
 
-## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :
+## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :
 
-1. Dans le centre d’administration Microsoft 365, cliquez sur **paramètres**, puis sur paramètres de l' **organisation**.
-2. Sous l’onglet **services** , cliquez sur le **réseau de connaissances**.
+1. Dans le Centre d’administration Microsoft 365, cliquez sur **Paramètres,** puis **Paramètres de l’organisation.**
+2. Sous **l’onglet Services,** cliquez sur **Expériences de rubrique.**
 
-    ![Connecter des personnes aux connaissances](../media/admin-org-knowledge-options-completed.png) 
+    ![Connecter les personnes aux connaissances](../media/admin-org-knowledge-options-completed.png) 
 
-3. Sélectionnez l’onglet **visibilité des rubriques** . Consultez les sections suivantes pour obtenir des informations sur chaque paramètre.
+3. Sélectionnez **l’onglet Visibilité de la** rubrique. Consultez les sections suivantes pour plus d’informations sur chaque paramètre.
 
-    ![connaissances-réseau-paramètres](../media/knowledge-network-settings-topic-visibility.png) 
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-visibility.png) 
 
-##  <a name="change-who-can-see-topics-in-your-organization"></a>Modifier les personnes qui peuvent voir les rubriques de votre organisation
+##  <a name="change-who-can-see-topics-in-your-organization"></a>Modifier les personnes qui peuvent consulter les rubriques de votre organisation
 
 Vous pouvez modifier les utilisateurs qui peuvent voir les rubriques de votre organisation.
 
-1. Sous l’onglet visibilité de la **rubrique** , sous **qui peut voir les rubriques dans le réseau de connaissances**, sélectionnez **modifier**.
-2. Sur la page **qui peut voir les rubriques de la page du réseau de connaissances** , vous sélectionnez les utilisateurs qui auront accès aux détails de la rubrique, comme les rubriques mises en surbrillance, les fiches de rubrique, les réponses aux questions dans la recherche et les pages de rubrique. Vous pouvez sélectionner :
+1. Sous **l’onglet Visibilité de la** rubrique, sous **Qui peut voir les rubriques**, sélectionnez **Modifier**.
+2. Dans la page Qui peut voir les **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en évidence, les fiches de rubrique, les réponses aux rubriques dans les pages de recherche et les pages de rubriques. Vous pouvez sélectionner :
     - **Tout le monde dans votre organisation**
-    - **Uniquement les personnes ou les groupes de sécurité sélectionnés**
+    - **Personnes ou groupes de sécurité sélectionnés uniquement**
     - **Personne**
 
-    ![Qui peut voir les rubriques](../media/k-manage-who-can-see-topics.png) 
+    ![Personnes qui peuvent voir les rubriques](../media/k-manage-who-can-see-topics.png) 
 
 3. Sélectionnez **Enregistrer**.  
  
 > [!Note] 
-> Bien que ce paramètre vous permette de sélectionner un utilisateur de votre organisation, seuls les utilisateurs disposant d’une rubrique sur laquelle des licences ont été attribuées pourront consulter les rubriques.
+> Bien que ce paramètre vous permet de sélectionner n’importe quel utilisateur de votre organisation, seuls les utilisateurs qui ont des licences Expériences des rubriques qui leur sont attribuées pourront afficher les rubriques.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gestion de la découverte de rubrique dans Microsoft 365](topic-experiences-discovery.md)
+[Gérer la découverte de rubriques dans les rubriques microsoft](topic-experiences-discovery.md)
 
-[Gérer les autorisations de rubrique dans Microsoft 365](topic-experiences-user-permissions.md)
+[Gérer les autorisations des rubriques dans les rubriques microsoft](topic-experiences-user-permissions.md)
 
-[Modifier le nom du centre de rubrique dans Microsoft 365](topic-experiences-administration.md)
+[Modifier le nom du centre de rubriques dans Rubriques microsoft](topic-experiences-administration.md)
 

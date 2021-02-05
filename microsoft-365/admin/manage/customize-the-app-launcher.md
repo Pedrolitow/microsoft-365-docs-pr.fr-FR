@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Créez des liens rapides vers vos e-mails, documents, applications, sites SharePoint, sites externes et autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications. '
-ms.openlocfilehash: 2bbcf64b807754aed199c441f6df028d5fe20a97
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 96d059b252b63e48e20edb29861cf8233e220e34
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926233"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114188"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Ajouter des vignettes personnalisées au lanceur d'applications
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Celle-ci apparaît désormais dans l'onglet **Toutes** du lanceur d'applications
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Dans le Centre d’administration, allez dans **l’onglet** De profil d’organisation  >  paramètres de l’organisation **paramètres.**  >   </a>
+1. Dans le centre d’administration, allez dans **l’onglet** Profil d’organisation  >  **Paramètres de** l’organisation paramètres de  >  **l’organisation.** </a>
     
 2. Dans la page **Profil de l’organisation,** en plus d’ajouter des   **vignettes personnalisées pour votre organisation,** sélectionnez **Modifier**.
 

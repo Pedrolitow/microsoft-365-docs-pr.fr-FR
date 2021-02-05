@@ -19,92 +19,92 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Découvrez comment utiliser des compléments centralisés pour déployer des compléments pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: 5521b01e059ca8ae4a97ecb094f9aa1198263701
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
+ms.openlocfilehash: 5366bd5be80559f23490aeb54f9417a189169e12
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071476"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114200"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Les compléments Office vous permettent de personnaliser vos documents et de rationaliser le mode d’accès aux informations sur le Web (voir [commencer à utiliser votre complément Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). 
+Les add-ins Office vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web (voir Démarrer à l’aide de [votre application Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) 
 
-Une fois qu’un administrateur déploie des compléments pour les utilisateurs d’une organisation, l’administrateur peut désactiver ou activer les compléments, modifier, supprimer et gérer l’accès aux compléments.
+Une fois qu’un administrateur a déployé des modules pour les utilisateurs d’une organisation, il peut désactiver ou activer les modules, modifier, supprimer et gérer l’accès aux modules.
 
-Pour plus d’informations sur l’installation des compléments à partir du centre d’administration, consultez [la rubrique deploy Add-ins in the Admin Center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins).
+Pour plus d’informations sur l’installation des modules complémentaires à partir du Centre d’administration, voir Déployer des [modules complémentaires dans le Centre d’administration.](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
   
 ## <a name="add-in-states"></a>États de complément
 
-Un complément peut avoir l’état **activé** ou **désactivé** .
+Un add-in peut être à **l’état On** ou **Off.**
   
 |**État**|**Comment l'état se produit**|**Impact**|
 |:-----|:-----|:-----|
-|**Active**  <br/> |Un administrateur a chargé le complément et l’a affecté à des utilisateurs ou à des groupes.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté voient celui-ci dans les clients concernés.  <br/> |
+|**Active**  <br/> |L’administrateur a chargé le module et l’a affecté à des utilisateurs ou des groupes.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté voient celui-ci dans les clients concernés.  <br/> |
 |**Désactivé**  <br/> |Un administrateur a désactivé le complément.  <br/> |Les utilisateurs et les groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> Si l'état du complément est modifié en Actif, les utilisateurs et groupes ont de nouveau accès à celui-ci.  <br/> |
 |**Deleted**  <br/> |Un administrateur a supprimé le complément.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> |
    
-Envisagez de supprimer un complément s’il n’est plus utilisé. Par exemple, la désactivation d’un complément peut être utile si un complément est utilisé uniquement à des moments spécifiques de l’année.
+Envisagez de supprimer un add-in si personne ne l’utilise plus. Par exemple, la turning off an add-in might make sense if an add-in is used only during specific times of the year.
 
 ## <a name="delete-an-add-in"></a>Suppression d’un complément
 
-Vous pouvez également supprimer un complément qui a été déployé.
+Vous pouvez également supprimer un module qui a été déployé.
 
-1. Dans le centre d’administration, accédez à la page **paramètres** de  >  **& des compléments** .
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **Services & des modules.**
 
      > [!NOTE]
-    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés** dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
+    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
-2. Sélectionnez le complément déployé.
+2. Sélectionnez le add-in déployé.
 
-3. Cliquez sur **supprimer le complément**. Supprimez le bouton du complément dans le coin inférieur droit.
+3. Cliquez sur **Supprimer le add-in.** Supprimez le bouton du complément dans le coin inférieur droit.
 
 4. Validez vos sélections, puis sélectionnez **Supprimer le complément**.
 
 ## <a name="edit-add-in-access"></a>Modification de l’accès d’un complément
 
-Post-déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux compléments.
+Après le déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux add-ins.
 
-1. Dans le centre d’administration, accédez à la page **paramètres** de  >  **& des compléments** .
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **Services & des modules.**
 
      > [!NOTE]
-    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés** dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
+    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
-2. Sélectionnez le complément déployé.
+2. Sélectionnez le add-in déployé.
 
-3. Cliquez sur **modifier** sous la rubrique **qui a accès**.
+3. Cliquez sur **Modifier sous** Qui **a accès**.
 
 4. Enregistrez les modifications.
 
-## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de compléments en désactivant l’Office Store sur tous les clients (sauf Outlook)
+## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de modules de l’Office Store sur tous les clients (à l’exception d’Outlook)
 
 > [!NOTE]
-> L’installation d’un complément Outlook est gérée par un [autre processus](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx).
+> L’installation du add-in Outlook est gérée par [un processus différent.](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx)
 
-En tant qu’organisation, vous souhaiterez peut-être empêcher le téléchargement de nouveaux compléments Office à partir de l’Office Store. Il peut être utilisé conjointement avec un déploiement centralisé afin de s’assurer que seuls les compléments approuvés par l’organisation sont déployés pour les utilisateurs au sein de votre organisation.
+En tant qu’organisation, vous pouvez empêcher le téléchargement de nouveaux modules office à partir de l’Office Store. Cela peut être utilisé conjointement avec le déploiement centralisé pour vous assurer que seuls les compléments approuvés par l’organisation sont déployés pour les utilisateurs au sein de votre organisation.
   
-**Pour désactiver l’acquisition du complément**
+**Pour désactiver l’acquisition d’un add-in**
   
 1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> [Services &amp; Compléments](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
      > [!NOTE]
-    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés** dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
+    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
     
 3. Sélectionnez **Applications et services appartenant aux utilisateurs**.
     
 4. Désactivez l’option pour permettre aux utilisateurs d’accéder à Office Store.
 
-Cela empêchera tous les utilisateurs d’acquérir les compléments suivants à partir de la Banque.
+Cela empêche tous les utilisateurs d’acquérir les modules suivants dans le Store.
   
-- Compléments pour Word, Excel et PowerPoint 2016 à partir de :
+- Les add-ins pour Word, Excel et PowerPoint 2016 à partir de :
     
   - Windows
     
@@ -113,50 +113,50 @@ Cela empêchera tous les utilisateurs d’acquérir les compléments suivants à
   - Office
     
     
-- Acquisitions à partir de **AppSource**
+- Acquisitions à partir **d’AppSource**
     
-- Compléments dans Microsoft 365
+- Add-ins within Microsoft 365
     
-Un utilisateur qui tente d’accéder au magasin verra apparaître le message suivant : « **Désolé, Microsoft 365 a été configuré pour empêcher l’acquisition individuelle de compléments de l’Office Store.**
+Un utilisateur qui tente d’accéder à l’Office Store voit le message suivant : **Désolé, Microsoft 365** a été configuré pour empêcher l’acquisition individuelle de modules de l’Office Store.
   
-La prise en charge de la désactivation de l’Office Store est disponible dans les versions suivantes :
+La prise en charge de la non-prise en charge de l’Office Store est disponible dans les versions suivantes :
   
-- Windows : 16.0.9001 actuellement disponible.
+- Windows : 16.0.9001 - Actuellement disponible.
     
-- Mac : 16.10.18011401-actuellement disponible.
+- Mac : 16.10.18011401 - Actuellement disponible.
     
-- iOS : 2.9.18010804-actuellement disponible.
+- iOS : 2.9.18010804 - Actuellement disponible.
     
-- Le Web est actuellement disponible.
+- Le site web - Actuellement disponible.
     
-Cela n’empêche pas un administrateur d’utiliser un déploiement centralisé pour affecter un complément à partir de l’Office Store.
+Cela n’empêche pas un administrateur d’utiliser le déploiement centralisé pour affecter un add-in à partir de l’Office Store.
   
-Pour empêcher un utilisateur de se connecter à l’aide d’un compte Microsoft, vous pouvez limiter l’ouverture de session pour utiliser uniquement le compte d’organisation. Pour plus d’informations, voir [identité, authentification et autorisation dans Office 2016](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx).  
+Pour empêcher un utilisateur de se signer avec un compte Microsoft, vous pouvez restreindre l’accès pour utiliser uniquement le compte d’organisation. Pour plus d’informations, [voir Identité, authentification et autorisation dans Office 2016.](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx)  
 
 > [!NOTE]
-> Empêcher les utilisateurs d’accéder à l’Office Store les empêchera également d’utiliser les [Compléments Office chargement pour les tester](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins).
+> Le fait d’empêcher les utilisateurs d’accéder à l’Office Store les empêchera également de recharger une version test des [add-ins Office.](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
 
-## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les compléments
+## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les add-ins
 
-Une fois que vous avez déployé un complément, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir [commencer à utiliser votre complément Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Le complément apparaît sur toutes les plateformes prises en charge par le complément.
+Après avoir déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre application Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
   
 Si le complément prend en charge les commandes de complément, celles-ci apparaissent sur le ruban Office. Dans l'exemple suivant, la commande **Search Citation** (Rechercher une citation) apparaît pour le complément **Citations**. 
 
-![Ruban Office avec des citations de recherche](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![Ruban Office avec citations de recherche](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
-Si le complément déployé ne prend pas en charge les commandes de complément ou si vous souhaitez afficher tous les compléments déployés, vous pouvez les consulter via **mes compléments**. 
+Si le add-in déployé ne prend pas en charge les commandes de add-in ou si vous souhaitez afficher tous les modules, vous pouvez les afficher via Mes **modules.** 
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>Dans Word 2016, Excel 2016 ou PowerPoint 2016
 
-1. Sélectionnez **insérer \> mes compléments**. 
+1. Sélectionnez **\> Insérer mes modules.** 
     
 2. Sélectionnez l'onglet **Géré par l'administrateur** dans la fenêtre Compléments Office. 
     
-3. Double-cliquez sur le complément que vous avez déployé précédemment (dans cet exemple, **Citations** ). <br/>![Onglet géré par l’administrateur de la page compléments Office](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. Double-cliquez sur le complément que vous avez déployé précédemment (dans cet exemple, **Citations** ). <br/>![Onglet Géré par l’administrateur de la page Des add-ins Office](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>Dans Outlook
 
-1. Sur le ruban **Accueil** , sélectionnez **obtenir des compléments**.<br/>![Bouton Store dans Outlook](../../media/getaddinsicon.png)
+1. Dans le **ruban Accueil,** **sélectionnez Obtenir des modules.**<br/>![Bouton Store dans Outlook](../../media/getaddinsicon.png)
   
 2. Sélectionnez **Géré par l’administrateur** dans le volet de navigation gauche. 
 
@@ -166,8 +166,8 @@ Si le complément déployé ne prend pas en charge les commandes de complément 
 
 Pour en savoir plus sur la création et la génération de compléments, voir [Compléments Office](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins).
   
-[Utilisez les cmdlets PowerShell de déploiement centralisé pour gérer les compléments](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
+[Utilisez les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins.](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
   
-[Résolution des problèmes : l’utilisateur ne voit pas les compléments](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Résolution des problèmes : l’utilisateur ne voit pas les modules](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
 
-[Mineurs et acquisition de compléments à partir du Microsoft Store](https://docs.microsoft.com/microsoft-365/admin/manage/minors-and-acquiring-addins-from-the-store)
+[Mineurs et acquisition de add-ins à partir du Microsoft Store](https://docs.microsoft.com/microsoft-365/admin/manage/minors-and-acquiring-addins-from-the-store)

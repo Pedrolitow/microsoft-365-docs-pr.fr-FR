@@ -9,19 +9,19 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 88b1ba657b4823d90a41b28b01362760676410ba
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: a6b5cbbcb2f48797130b080d9d1dd1e6427d4fb8
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032690"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110050"
 ---
 # <a name="device-requirements"></a>Configuration requise de l’appareil
 
-Bureau géré Microsoft évalue régulièrement les besoins en matière d’appareils à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec le Bureau géré Microsoft. Vous pouvez consulter la liste des appareils [spécifiques déjà](device-list.md) approuvés pour une utilisation avec le service en fonction de ces exigences.
+Bureau géré Microsoft évalue régulièrement les besoins en matière d’appareils à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Le Bureau géré Microsoft. Vous pouvez consulter la liste des appareils [spécifiques déjà](device-list.md) approuvés pour une utilisation avec le service en fonction de ces exigences.
 
 > [!NOTE]
-> Ces exigences peuvent changer à tout moment, mais nous vous en fournirons un préavis de 90 jours. Les exigences les plus récemment modifiées sont marquées par **\*** . 
+> Ces exigences peuvent changer à tout moment, mais nous vous fournirons un préavis de 30 jours pour toute modification de la configuration matérielle requise. Les exigences les plus récemment modifiées sont marquées par **\*** . 
 
 ## <a name="check-hardware-requirements"></a>Vérifier la configuration matérielle requise
 
@@ -46,7 +46,7 @@ L’appareil doit avoir été effectué par l’un de ces fabricants :
 Ce logiciel doit être préinstallé sur l’appareil :
 
 - Windows 10 Édition Entreprise, Professionnel ou Professionnel
-- {the 64-bit version of Office click-to-run {I will double-check name w/ Office colleagues]}
+- la version 64 bits de Microsoft Office« « exécuter en un clic 
 - Tous les pilotes de périphérique applicables
 
 

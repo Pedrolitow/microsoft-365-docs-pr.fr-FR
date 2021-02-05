@@ -15,101 +15,105 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: En tant qu’administrateur et expéditeur de message, vous pouvez révoquer certains courriers électroniques chiffrés avec le chiffrement de messages avancé Office 365.
-ms.openlocfilehash: 79ab3ef801d4d19317cbf1416d858de74d9f1393
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+description: En tant qu’administrateur et expéditeur de message, vous pouvez révoquer certains messages électroniques qui ont été chiffrés avec le chiffrement de messages avancé Office 365.
+ms.openlocfilehash: 67582917dd483f6090f5cd369af8faf6cf8a4ea8
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868940"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105139"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Révoquer le courrier électronique chiffré par le chiffrement de messages avancé
 
-La révocation de messagerie est proposée dans le cadre du chiffrement avancé des messages Office 365. Le chiffrement de messages avancé Office 365 est inclus dans [microsoft 365 entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (tarification du personnel pour les personnes travaillant), Office 365 entreprise E5 (tarification du personnel pour les personnes à but lucratif) et Office 365 éducation a5. Si votre organisation dispose d’un abonnement qui n’inclut pas le chiffrement de messages avancé Office 365, vous pouvez l’acheter avec le complément Microsoft 365 E5 Compliance SKU pour Microsoft 365 E3, Microsoft 365 E3 (tarification du personnel pour les salariés) ou le complément Office 365 Advanced Compliance SKU pour Microsoft 365 E3, Microsoft 365 E3 (tarification du personnel pour les salariés) ou Office 365 SKU.
+La révocation du courrier électronique est proposée dans le cadre du chiffrement avancé des messages Office 365. Le chiffrement de messages avancé Office 365 est inclus dans [Microsoft 365 Entreprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (tarifs pour le personnel à but non lucratif), Office 365 Entreprise E5 (prix du personnel à but non lucratif) et Office 365 Éducation A5. Si votre organisation dispose d’un abonnement qui n’inclut pas le chiffrement de messages avancé Office 365, vous pouvez l’acheter avec le module SKU de conformité Microsoft 365 E5 pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou le module SKU de conformité avancée Office 365 pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou Office 365 SKU.
 
-Cet article fait partie d’une série d’articles plus large sur le [chiffrement de messages Office 365](ome.md).
+Cet article fait partie d’une série plus importante d’articles sur le chiffrement de [messages Office 365.](ome.md)
 
-Si un message a été chiffré à l’aide du chiffrement de messages avancé Office 365 et que vous êtes un administrateur de Microsoft 365 ou que vous êtes l’expéditeur du message, vous pouvez le révoquer dans certaines conditions. Les administrateurs révoquent les messages à l’aide de PowerShell. En tant qu’expéditeur, vous révoquez un message que vous avez envoyé directement à partir d’Outlook sur le Web. Cet article décrit les circonstances dans lesquelles la révocation est possible et comment procéder.
+Si un message a été chiffré à l’aide du chiffrement de messages avancé Office 365 et que vous êtes un administrateur Microsoft 365 ou si vous êtes l’expéditeur du message, vous pouvez révoquer le message dans certaines conditions. Les administrateurs révoquent les messages à l’aide de PowerShell. En tant qu’expéditeur, vous révoquez un message que vous avez envoyé directement à partir d’Outlook sur le web. Cet article décrit les circonstances dans lesquelles la révocation est possible et comment le faire.
   
-## <a name="encrypted-emails-that-you-can-revoke"></a>Messages chiffrés que vous pouvez révoquer
+## <a name="encrypted-emails-that-you-can-revoke"></a>Messages électroniques chiffrés que vous pouvez révoquer
 
-Les administrateurs et les expéditeurs de messages peuvent révoquer les messages électroniques chiffrés si le destinataire a reçu un message électronique chiffré, basé sur une liaison. Si le destinataire a reçu une expérience Inline native dans un client Outlook pris en charge, vous ne pouvez pas révoquer le message.
+Les administrateurs et les expéditeurs de messages peuvent révoquer des messages électroniques chiffrés si le destinataire a reçu un e-mail chiffré de marque basé sur un lien. Si le destinataire a reçu une expérience inline native dans un client Outlook pris en charge, vous ne pouvez pas révoquer le message.
 
-Si un destinataire reçoit une expérience basée sur la liaison ou si une expérience en ligne dépend du type d’identité du destinataire : Office 365 et les destinataires de comptes Microsoft (par exemple, les utilisateurs outlook.com) obtiennent une expérience inline dans les clients Outlook pris en charge. Tous les autres types de destinataires, tels que Gmail et les destinataires Yahoo, obtiennent une expérience basée sur les liens.
+Le fait qu’un destinataire reçoit une expérience basée sur un lien ou une expérience en ligne dépend du type d’identité du destinataire : les destinataires de compte Office 365 et Microsoft (par exemple, les utilisateurs outlook.com) bénéficient d’une expérience en ligne dans les clients Outlook pris en charge. Tous les autres types de destinataires, tels que les destinataires Gmail et Yahoo, offrent une expérience basée sur les liens.
 
-Les administrateurs et les expéditeurs de messages peuvent révoquer des messages chiffrés à l’aide du chiffrement appliqué directement à partir d’Outlook sur le Web. Par exemple, les messages chiffrés avec l’option chiffrer uniquement.
+Les administrateurs et les expéditeurs de messages peuvent révoquer les messages chiffrés à l’aide du chiffrement appliqué directement à partir d’Outlook sur le web. Par exemple, les messages chiffrés avec l’option Chiffrer uniquement.
 
-:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Capture d’écran affichant l’option chiffrer uniquement dans Outlook sur le Web.":::
+:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Capture d’écran montrant l’option Chiffrer uniquement dans Outlook sur le web.":::
 
-## <a name="recipient-experience-for-revoked-encrypted-emails"></a>Expérience de destinataire pour les messages électroniques chiffrés révoqués
+## <a name="recipient-experience-for-revoked-encrypted-emails"></a>Expérience de destinataire pour les e-mails chiffrés révoqués
 
-Une fois qu’un e-mail a été révoqué, le destinataire reçoit une erreur lorsqu’il accède au courrier électronique chiffré via le portail de chiffrement des messages Office 365 : « le message a été révoqué par l’expéditeur ».
+Une fois qu’un e-mail a été révoqué, le destinataire reçoit une erreur lorsqu’il accède au courrier chiffré via le portail de chiffrement de messages Office 365 : « Le message a été révoqué par l’expéditeur ».
 
-![Capture d’écran illustrant un message électronique chiffré révoqué.](../media/revoked-encrypted-email.png)
+![Capture d’écran shows a revoked encrypted email.](../media/revoked-encrypted-email.png)
 
-## <a name="how-to-revoke-an-encrypted-message-that-you-sent"></a>Procédure révoquer un message chiffré que vous avez envoyé
+## <a name="how-to-revoke-an-encrypted-message-that-you-sent"></a>Comment révoquer un message chiffré que vous avez envoyé
 
-Pour révoquer un message chiffré que vous avez envoyé, procédez comme suit.
+Vous pouvez révoquer un message que vous avez envoyé à un destinataire unique qui utilise un compte social tel que gmail.com ou yahoo.com. En d’autres termes, vous pouvez révoquer un message électronique envoyé à un seul destinataire qui a reçu l’expérience basée sur un lien.
 
-1. Dans Outlook sur le Web, dans votre dossier **envoyé** , accédez au message à révoquer.
+Vous ne pouvez pas révoquer un courrier que vous avez envoyé à un destinataire qui utilise un compte scolaire ou scolaire à partir d’Office 365 ou microsoft 365 ou d’un utilisateur qui utilise un compte Microsoft, par exemple un compte outlook.com. 
 
-   Si le message est révocable, le lien « supprimer l’accès externe » apparaît en haut du message.
+Pour révoquer un message chiffré que vous avez envoyé, complétez ces étapes
 
-    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Capture d’écran illustrant le courrier chiffré que vous souhaitez révoquer dans Outlook sur le Web.":::
+1. Dans Outlook sur le web, dans votre dossier **Envoyé,** accédez au message que vous souhaitez révoquer.
 
-2. Cliquez sur **Supprimer l’accès externe** pour révoquer le message.
+   Si le message est révocable, vous verrez le lien « Supprimer l’accès externe » en haut du message.
 
-   Le message indique que son statut est révoqué.
+    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Capture d’écran montrant le courrier chiffré que vous souhaitez révoquer dans Outlook sur le web.":::
 
-   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="Capture d’écran illustrant un message chiffré révoqué dans Outlook sur le Web.":::
+2. Cliquez **sur Supprimer l’accès** externe pour révoquer le message.
 
-## <a name="how-to-revoke-an-encrypted-message-as-an-administrator"></a>Procédure révoquer un message chiffré en tant qu’administrateur
+   Le message indique que son état est révoqué.
 
-Les administrateurs de Microsoft 365 suivent ces étapes générales pour révoquer un message électronique chiffré éligible :
+   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="Capture d’écran montrant un message chiffré révoqué dans Outlook sur le web.":::
 
-- Obtenir l’ID du message électronique.
+## <a name="how-to-revoke-an-encrypted-message-as-an-administrator"></a>Comment révoquer un message chiffré en tant qu’administrateur
+
+Les administrateurs Microsoft 365 suivent les étapes générales suivantes pour révoquer un e-mail chiffré éligible :
+
+- Obtenez l’ID de message de l’e-mail.
 - Vérifiez que vous pouvez révoquer le message.
-- Révoquer le courrier.
+- Révoquer le message.
 
 ### <a name="step-1-obtain-the-message-id-of-the-email"></a>Étape 1. Obtenir l’ID de message de l’e-mail
 
-Avant de pouvoir révoquer un courrier chiffré, vous devez recueillir l’ID du message. Le MessageId se présente généralement au format suivant :
+Avant de révoquer un message chiffré, collectez l’ID de message du message. Le MessageId est généralement au format :
 
 `<xxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.xxxx.prod.outlook.com>`  
 
-Il existe plusieurs façons de trouver l’ID de message de l’e-mail à révoquer. Cette section décrit quelques options, mais vous pouvez utiliser n’importe quelle méthode qui fournit l’ID.
+Il existe plusieurs façons de rechercher l’ID de message de l’e-mail que vous souhaitez révoquer. Cette section décrit quelques options, mais vous pouvez utiliser n’importe quelle méthode qui fournit l’ID.
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-security-amp-compliance-center"></a>Pour identifier l’ID de message du courrier électronique à révoquer à l’aide du suivi des messages dans le centre de sécurité &amp; conformité
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-security-amp-compliance-center"></a>Pour identifier l’ID du message que vous souhaitez révoquer à l’aide du suivi des messages dans le Centre de conformité &amp; de sécurité
 
-1. Recherchez le courrier envoyé par l’expéditeur ou le destinataire à l’aide du [nouveau suivi des messages dans le centre de sécurité & conformité](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
+1. Recherchez le courrier électronique par expéditeur ou destinataire à l’aide du Nouveau suivi des messages dans le [Centre de sécurité & conformité.](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
 
-2. Une fois que vous avez localisé l’e-mail, sélectionnez-le pour afficher le volet **Détails du suivi des messages** . Pour **plus d’informations** , reportez-vous à l’ID du message.
+2. Une fois que vous avez localisé l’e-mail, sélectionnez-le pour faire monter le volet **Détails** du suivi des messages. Développez **plus d’informations** pour localiser l’ID de message.
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>Pour identifier l’ID de message du courrier électronique à révoquer à l’aide des rapports de chiffrement de messages Office dans le centre de sécurité &amp; conformité
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>Pour identifier l’ID du message que vous souhaitez révoquer à l’aide des rapports de chiffrement de messages Office dans le Centre de conformité &amp; de sécurité
 
-1. Dans le centre de sécurité &amp; conformité, accédez au **rapport de chiffrement des messages**. Pour plus d’informations sur ce rapport, voir [afficher les rapports de sécurité de messagerie dans le centre de sécurité &amp; conformité](../security/office-365-security/view-email-security-reports.md).
+1. Dans le Centre de &amp; conformité de sécurité, accédez au rapport de **chiffrement des messages.** Pour plus d’informations sur ce rapport, voir Afficher les rapports de sécurité du courrier [électronique dans le Centre de conformité de &amp; sécurité.](../security/office-365-security/view-email-security-reports.md)
 
-2. Sélectionnez le tableau **afficher les détails** et identifiez le message à révoquer.
+2. Choisissez la **table Afficher les détails** et identifiez le message que vous souhaitez révoquer.
 
-3. Double-cliquez sur le message pour afficher les détails qui incluent l’ID du message.
+3. Double-cliquez sur le message pour afficher les détails qui incluent l’ID de message.
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>Étape 2. Vérifier que le message est révocable
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>Étape 2. Vérifier que le courrier est révocable
 
-Pour vérifier si vous pouvez révoquer un message, vérifiez si le champ État de révocation est visible dans le rapport de chiffrement, dans la table des **Détails** du centre de sécurité et de &amp; conformité.
+Pour vérifier si vous pouvez révoquer un message, vérifiez si le champ État de révocation est visible dans le rapport de chiffrement, dans la table **Détails** du Centre de conformité de &amp; sécurité.
 
-Pour vérifier si vous pouvez révoquer un message électronique particulier à l’aide de Windows PowerShell, procédez comme suit.
+Pour vérifier si vous pouvez révoquer un message électronique particulier à l’Windows PowerShell, complétez ces étapes.
 
-1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Exécutez la cmdlet Get-OMEMessageStatus comme suit :
+2. Exécutez la cmdlet Get-OMEMessageStatus suivante :
 
      ```powershell
      Get-OMEMessageStatus -MessageId "<message id>" | ft -a  Subject, IsRevocable
      ```
 
-   Cette commande renvoie l’objet du message et indique si le message est révocable. Par exemple :
+   Cette commande renvoie l’objet du message et si le message est révocable. Par exemple :
 
-     ```text
+     ```console
      Subject        IsRevocable
      -------        -----------
      "Test message" True
@@ -117,33 +121,33 @@ Pour vérifier si vous pouvez révoquer un message électronique particulier à 
 
 ### <a name="step-3-revoke-the-mail"></a>Étape 3. Révoquer le courrier
 
-Une fois que vous avez identifié l’ID du message que vous souhaitez révoquer et que vous avez vérifié que le message est révocable, vous pouvez le révoquer à l’aide du centre de sécurité &amp; conformité ou de Windows PowerShell.
+Une fois que vous connaissez l’ID du message que vous voulez révoquer et que vous avez vérifié que le message est révocable, vous pouvez révoquer le message à l’aide du Centre de conformité de sécurité ou &amp; Windows PowerShell.
 
-Pour révoquer le message à l’aide du centre de sécurité &amp; conformité
+Pour révoquer le message à l’aide du Centre de &amp; conformité de sécurité
 
-1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, connectez-vous au centre de sécurité & conformité.
+1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous au Centre de sécurité & conformité.
 
-2. Dans le **rapport de chiffrement**, dans la table des **Détails** du message, choisissez **révoquer un message**.
+2. In the **Encryption report**, in the **Details** table for the message, choose **Revoke message**.
 
-Pour révoquer un courrier électronique à l’aide de Windows PowerShell, utilisez la cmdlet Set-OMEMessageRevocation.
+Pour révoquer un e-mail à l’Windows PowerShell, utilisez la cmdlet Set-OMEMessageRevocation'accès.
 
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Exécutez la cmdlet Set-OMEMessageRevocation comme suit :
+2. Exécutez la cmdlet Set-OMEMessageRevocation suivante :
 
     ```powershell
     Set-OMEMessageRevocation -Revoke $true -MessageId "<messageId>"
     ```
 
-3. Pour vérifier si l’e-mail a été révoqué, exécutez la cmdlet Get-OMEMessageStatus comme suit :
+3. Pour vérifier si l’e-mail a été révoqué, exécutez la cmdlet Get-OMEMessageStatus suivante :
 
     ```powershell
     Get-OMEMessageStatus -MessageId "<messageId>" | ft -a  Subject, Revoked
     ```
 
-    Si la révocation a réussi, l’applet de commande renvoie le résultat suivant :  
+    Si la révocation a réussi, la cmdlet renvoie le résultat suivant :  
 
-     ```text
+     ```console
      Revoked: True
      ```
 
@@ -151,6 +155,6 @@ Pour révoquer un courrier électronique à l’aide de Windows PowerShell, util
 
 - [Chiffrement de messages avancé Office 365](ome-advanced-message-encryption.md)
 
-- [Office 365 Advanced message Encryption : expiration du courrier électronique](ome-advanced-expiration.md)
+- [Chiffrement avancé des messages Office 365 : expiration du courrier électronique](ome-advanced-expiration.md)
 
 - [Description du service de conformité et de stratégie de message](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

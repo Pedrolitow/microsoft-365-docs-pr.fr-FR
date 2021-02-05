@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender pour Office 365
-ms.openlocfilehash: 70f5264671e16e5e7fb6138de055a7da942a57cf
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: f5ab0b0cd4ef5c2bf1a799043af94a0938a53783
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099793"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114894"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de la version d’essai de Microsoft Defender pour Office 365
 
@@ -41,7 +41,7 @@ Une version d’essai de Microsoft Defender pour Office 365 est le moyen le plus
 
 ## <a name="terms-and-conditions"></a>Conditions générales
 
-La version d’essai de Defender pour Office 365 est disponible pendant 90 jours et peut être lancée pour tous vos utilisateurs. Pour plus d'informations, reportez-vous à l'article <link to TOU>.
+La version d’essai de Defender pour Office 365 est disponible pendant 90 jours et peut être lancée pour tous vos utilisateurs. Pour plus d’informations, voir conditions d’utilisation de la version d’essai de [Microsoft Defender pour Office 365.](terms-of-use-defender-for-office-365-trial.md)
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Configurer une version d’essai de Defender pour Office 365
 

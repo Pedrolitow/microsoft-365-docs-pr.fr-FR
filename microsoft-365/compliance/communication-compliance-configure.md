@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f958a2f6854ca34b0d24a527e2517c848885ad1c
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.openlocfilehash: 442f0dd13415c4ca435cdf69336d1fb07a9e045d
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883683"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109923"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -51,9 +51,9 @@ Avant de commencer à vous conformer à la conformité des communications, vous 
 L’une des licences ci-dessus doit être attribuée aux utilisateurs inclus dans les stratégies de conformité des communications.
 
 >[!IMPORTANT]
->La conformité avancée Office 365 n’est plus vendue en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités de conformité supplémentaires.
+>La conformité avancée Office 365 n’est plus vendue en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités supplémentaires.
 
-Si vous n’avez pas d’offre Office 365 Entreprise E5 existante et que vous souhaitez essayer [](https://www.microsoft.com/microsoft-365/enterprise) la conformité des communications, vous pouvez ajouter [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’essai d’Office 365 Entreprise E5.
+Si vous n’avez pas d’offre Office 365 Entreprise E5 existante et que vous souhaitez essayer [](https://www.microsoft.com/microsoft-365/enterprise) la conformité des communications, vous pouvez ajouter [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’essai d’Office 365 Entreprise E5.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Étape 1 (obligatoire) : activer les autorisations pour la conformité des communications
 
@@ -69,7 +69,7 @@ Choisissez parmi ces options de groupe de rôles lors de la configuration de la 
 | Role | Autorisations de rôle |
 |:-----|:-----|
 | **Conformité des communications** | Utilisez ce groupe de rôles pour gérer la conformité des communications pour votre organisation au sein d’un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes, enquêteurs et visionneuses désignés, vous pouvez configurer les autorisations de conformité des communications dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de conformité des communications. Cette configuration est le moyen le plus simple de se lancer rapidement dans la conformité des communications et convient parfaitement aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. |
-| **Administrateur de conformité des communications** | Utilisez ce groupe de rôles pour configurer initialement la conformité des communications, puis séparez les administrateurs de conformité des communications dans un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité des communications, des paramètres globaux et des attributions de groupe de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
+| **Administrateur de conformité des communications** | Utilisez ce groupe de rôles pour configurer initialement la conformité des communications, puis pour séparer les administrateurs de conformité des communications en un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité des communications, des paramètres globaux et des attributions de groupe de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
 | **Analyste de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’analystes de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les stratégies où ils sont affectés en tant que réviseurs, afficher les métadonnées des messages (et non le contenu du message), passer à des réviseurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
 | **Enquêteur de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des réviseurs supplémentaires, passer à un cas Advanced eDiscovery, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
 | **Visionneuse de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui gèreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de rapports sur la page d’accueil de conformité des communications et peuvent afficher tous les rapports de conformité des communications. |
@@ -140,7 +140,7 @@ Si vous êtes une organisation avec un déploiement Exchange local ou un fournis
 
 Pour gérer les utilisateurs supervisés dans les grandes entreprises, vous devrez peut-être surveiller tous les utilisateurs de grands groupes. Vous pouvez utiliser PowerShell pour configurer un groupe de distribution pour une stratégie de conformité des communications globale pour le groupe affecté. Cela vous permet de surveiller des milliers d’utilisateurs avec une stratégie unique et de maintenir la stratégie de conformité des communications à jour lorsque de nouveaux employés rejoignent votre organisation.
 
-1. Créez un groupe de distribution dédié pour votre stratégie de conformité des communications globales avec les propriétés suivantes : Assurez-vous que ce groupe de [distribution](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) n’est pas utilisé à d’autres fins ou à d’autres services Office 365.
+1. Créez un groupe de distribution dédié pour votre stratégie de conformité des communications globales avec les propriétés suivantes : Assurez-vous que ce groupe de [distribution](/powershell/module/exchange/new-distributiongroup) n’est pas utilisé à d’autres fins ou à d’autres services Office 365.
 
     - **MemberDepartRestriction = Fermé**. Garantit que les utilisateurs ne peuvent pas se supprimer eux-mêmes du groupe de distribution.
     - **MemberJoinRestriction = Closed**. Garantit que les utilisateurs ne peuvent pas s’ajouter eux-mêmes au groupe de distribution.
@@ -150,7 +150,7 @@ Pour gérer les utilisateurs supervisés dans les grandes entreprises, vous devr
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
 
-2. Sélectionnez un attribut personnalisé [Exchange inutilisé pour](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) suivre les utilisateurs ajoutés à la stratégie de conformité des communications dans votre organisation.
+2. Sélectionnez un attribut personnalisé [Exchange inutilisé pour](/Exchange/recipients/mailbox-custom-attributes) suivre les utilisateurs ajoutés à la stratégie de conformité des communications dans votre organisation.
 
 3. Exécutez le script PowerShell suivant selon une planification périodique pour ajouter des utilisateurs à la stratégie de conformité des communications :
 
@@ -169,17 +169,17 @@ Pour gérer les utilisateurs supervisés dans les grandes entreprises, vous devr
 
 Pour plus d’informations sur la configuration des groupes, voir :
 
-- [Création et gestion de groupes de distribution](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Vue d’ensemble des groupes Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups)
+- [Création et gestion de groupes de distribution](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Vue d’ensemble des groupes Microsoft 365](/office365/admin/create-groups/office-365-groups)
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Étape 4 (facultative) : vérifier que Yammer client est en mode natif
 
-En mode natif, tous Yammer utilisateurs sont dans Azure Active Directory (Azure AD), tous les groupes sont des groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online. Votre client Yammer doit être en mode natif pour les stratégies de conformité des communications afin d’analyser et d’identifier les conversations à risque dans les messages privés et les conversations de la communauté Yammer.
+En mode natif, tous Yammer utilisateurs sont dans Azure Active Directory (Azure AD), tous les groupes sont des groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online. Votre client Yammer doit être en mode natif pour que les stratégies de conformité des communications analysent et identifient les conversations à risque dans les messages privés et les conversations de la communauté dans Yammer.
 
 Pour plus d’informations sur la configuration Yammer en mode natif, voir :
 
-- [Vue d’Yammer mode natif dans Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
-- [Configurer votre réseau Yammer en mode natif pour Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
+- [Vue d’Yammer mode natif dans Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode)
+- [Configurer votre réseau Yammer en mode natif pour Microsoft 365](/yammer/configure-your-yammer-network/native-mode)
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Étape 5 (obligatoire) : créer une stratégie de conformité des communications
   
@@ -269,10 +269,10 @@ Suivez ces étapes pour tester votre stratégie de conformité des communication
 
 1. Ouvrez un client de messagerie, Microsoft Teams ou Yammer en tant qu’utilisateur supervisé défini dans la stratégie que vous souhaitez tester.
 
-2. Envoyez un courrier électronique, une conversation Microsoft Teams ou un message Yammer qui répond aux critères que vous avez définis dans la stratégie de conformité des communications. Ce test peut être un mot clé, une taille de pièce jointe, un domaine, etc. Assurez-vous de déterminer si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop peu restrictifs.
+2. Envoyez un courrier électronique, une conversation Microsoft Teams ou un message Yammer qui répond aux critères que vous avez définis dans la stratégie de conformité des communications. Ce test peut être un mot clé, une taille de pièce jointe, un domaine, etc. Veillez à déterminer si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop peu restrictifs.
 
     > [!NOTE]
-    > Le traitement complet des messages électroniques dans une stratégie peut prendre jusqu’à 24 heures. Les communications dans Microsoft Teams, Yammer et les plateformes tierces peuvent prendre jusqu’à 48 heures pour être entièrement traitées dans une stratégie.
+    > Le traitement complet des messages électroniques dans une stratégie peut prendre jusqu’à 24 heures. Les communications dans Microsoft Teams, Yammer et les plateformes tierces peuvent prendre jusqu’à 48 heures pour traiter entièrement une stratégie.
 
 3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité des communications. Accédez aux **alertes de conformité**  >  **des communications** pour afficher les alertes de vos stratégies.
 

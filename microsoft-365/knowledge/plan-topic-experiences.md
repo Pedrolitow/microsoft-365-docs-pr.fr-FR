@@ -1,5 +1,5 @@
 ---
-title: Planification des expériences de rubrique dans Microsoft 365
+title: Planifier les rubriques microsoft
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,108 +9,107 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Découvrez comment planifier des expériences de rubrique dans Microsoft 365
-ms.openlocfilehash: 153937cf6bc4a12f0a27866204b2286c343ddf55
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: Découvrez comment planifier le plan des rubriques microsoft
+ms.openlocfilehash: 65983f342b3277d33c7bfeb21d8481b1d3d5e817
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668155"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107953"
 ---
-# <a name="plan-topic-experiences-in-microsoft-365"></a>Planification des expériences de rubrique dans Microsoft 365
+# <a name="plan-for-microsoft-viva-topics"></a>Planifier les rubriques microsoft
 
-Vous contrôlez le mode d’expérience des rubriques dans votre organisation. Vos décisions de planification pour les expériences de rubrique permettent de s’assurer que des rubriques de qualité supérieure sont affichées pour vos utilisateurs et qu’ils disposent des autorisations appropriées pour utiliser et contribuer aux connaissances.
+Vous contrôlez la façon dont les sujets sont abordés dans votre organisation. Vos décisions de planification pour Rubriques garantissent que les rubriques de haute qualité sont présentées à vos utilisateurs et qu’ils ont les autorisations nécessaires pour consommer et contribuer aux connaissances.
 
-Dans cet article, nous allons examiner les décisions de planification suivantes :
+Dans cet article, nous examinerons les décisions de planification ci-après :
 
-- Les sites SharePoint que vous souhaitez analyser.
-- Les rubriques, le cas échéant, que vous souhaitez exclure des expériences de rubrique
-- Les utilisateurs auxquels vous souhaitez faire apparaître les rubriques.
-- Les utilisateurs auxquels vous souhaitez accorder des autorisations pour gérer les rubriques dans le Centre des rubriques.
-- Les utilisateurs auxquels vous souhaitez accorder des autorisations pour créer ou modifier des rubriques dans le Centre des rubriques.
-- Le nom que vous souhaitez donner à votre centre de sujets.
+- Les sites SharePoint que vous souhaitez analyser pour les rubriques
+- Les rubriques, le cas besoin, que vous souhaitez exclure des expériences de rubrique
+- Utilisateurs pour lesquels vous souhaitez rendre les rubriques visibles
+- Utilisateurs que vous souhaitez autoriser à gérer les rubriques dans le centre de rubriques
+- Utilisateurs que vous souhaitez autoriser à créer ou modifier des rubriques dans le centre de rubriques
+- Quel nom voulez-vous donner à votre centre de rubriques ?
 
-La sécurité et la confidentialité de vos données sont respectées, et les expériences de rubrique n’accordent pas aux utilisateurs un accès supplémentaire aux fichiers auxquels ils ne disposent pas de droits. Nous vous recommandons également de lire la [rubrique relative à la sécurité et](topic-experiences-security-privacy.md) à la confidentialité dans le cadre de votre processus de planification.
+La sécurité et la confidentialité de vos données sont respectées, et les expériences de rubrique n’octroient pas aux utilisateurs un accès supplémentaire aux fichiers dont ils n’ont pas le droit. Nous vous recommandons également de lire les [rubriques microsoft sur](topic-experiences-security-privacy.md) la sécurité et la confidentialité dans le cadre de votre processus de planification.
 
 ## <a name="requirements"></a>Configuration requise
 
-Vous devez être un administrateur général ou un administrateur SharePoint pour accéder au centre d’administration Microsoft 365 et configurer des expériences de rubrique.
+Vous devez être administrateur général ou administrateur SharePoint pour accéder au Centre d’administration Microsoft 365 et configurer rubriques.
 
-Tous les utilisateurs qui vont utiliser des expériences de rubrique requièrent une **rubrique relative** aux licences. Pour affecter des licences, reportez-vous à la [rubrique relative à la configuration des expériences](set-up-topic-experiences.md).
+Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [dans La rubrique](set-up-topic-experiences.md)Configurer Microsoft .
 
 ## <a name="topic-discovery"></a>Découverte de rubrique
 
-Les paramètres de découverte de rubrique spécifient les sites SharePoint qui sont utilisés comme sources pour les rubriques. Vous pouvez choisir d’inclure tous les sites SharePoint, une liste spécifique de sites ou aucun site. Nous vous recommandons de choisir tous les sites de sorte que les expériences de rubrique puissent découvrir un grand nombre de rubriques intéressantes pour vos utilisateurs.
+Les paramètres de découverte de rubrique spécifient les sites SharePoint qui sont utilisés comme sources pour les rubriques. Vous pouvez choisir d’inclure tous les sites SharePoint, une liste spécifique de sites ou aucun site. Nous vous recommandons de choisir tous les sites afin que les expériences de rubriques puisse découvrir un grand nombre de bonnes rubriques pour vos utilisateurs.
 
-Lorsque vous configurez des expériences de rubrique, vous pouvez choisir l’une des options suivantes :
+Lorsque vous définissez Rubriques, vous pouvez choisir parmi les options suivantes :
 
 - **Tous les sites**: tous les sites SharePoint de votre organisation. Cela inclut les sites actuels et futurs.
-- **Tout, à l’exception des sites sélectionnés**: tous les sites à l’exception de ceux que vous spécifiez. Les sites créés à l’avenir seront inclus en tant que sources pour la découverte des rubriques. 
-- **Sites sélectionnés uniquement**: uniquement les sites que vous spécifiez. Les sites créés à l’avenir ne seront pas inclus en tant que sources pour la découverte des rubriques.
-- **Aucun site**: n’inclut aucun site SharePoint.
+- **Tous, à l’exception des sites** sélectionnés : tous les sites à l’exception de ceux que vous spécifiez. Les sites créés à l’avenir seront inclus en tant que sources pour la découverte de rubriques. 
+- **Uniquement les sites sélectionnés**: uniquement les sites que vous spécifiez. Les sites créés à l’avenir ne seront pas inclus en tant que sources de découverte de sujet.
+- **Aucun site**: n’incluez aucun site SharePoint.
 
-Si vous choisissez **tous, à l’exception des sites sélectionnés** ou des **sites sélectionnés uniquement**, vous pouvez télécharger un fichier. csv avec une liste de sites. Ces options sont utiles si vous effectuez un projet pilote et si vous souhaitez inclure un nombre limité de sites à démarrer.
+Si vous choisissez **Tous, à** l’exception des sites sélectionnés ou uniquement des **sites** sélectionnés, vous pouvez télécharger un fichier .csv avec une liste de sites. Ces options sont utiles si vous faites un projet pilote et que vous souhaitez inclure un nombre limité de sites à démarrer.
 
-Vous pouvez copier le modèle. csv ci-dessous :
+Vous pouvez copier le modèle .csv ci-dessous :
 
 ``` csv
 Site name,URL
 ```
 
-Nous vous déconseillons de ne pas choisir de **sites** , car cela empêche la création ou la mise à jour automatique des rubriques. Toutefois, vous pouvez choisir cette option si vous souhaitez configurer des expériences de rubrique, puis ajouter des sites ultérieurement.
+Nous vous déconseillons de choisir Aucun **site,** car cela empêche la création ou la mise à jour automatique des rubriques. Toutefois, vous pouvez choisir cette option si vous souhaitez configurer Rubriques, puis ajouter des sites ultérieurement.
 
-Nous vous recommandons de créer un processus pour les utilisateurs ou les responsables de la connaissance afin de demander la suppression des sites individuels de la découverte de rubrique, si nécessaire dans votre organisation.
+Nous vous recommandons de créer un processus pour que les utilisateurs ou les gestionnaires de connaissances demandent que des sites individuels soient supprimés de la découverte de rubriques si nécessaire dans votre organisation.
 
 ## <a name="user-permissions"></a>Autorisations utilisateur
 
-Les autorisations utilisateur que vous spécifiez déterminent les personnes de votre organisation qui interagissent avec des rubriques et ce qu’elles peuvent faire.
+Les autorisations utilisateur que vous spécifiez déterminent les personnes de votre organisation qui interagissent avec les rubriques et ce qu’elles peuvent faire.
 
 *Gérer les rubriques*
 
-Les responsables des connaissances supervisent la qualité des informations, la façon dont ils sont structurés et d’autres meilleures pratiques au sein de votre organisation. Ils peuvent confirmer et rejeter des rubriques.
+Les gestionnaires de connaissances supervisent la qualité des informations, la façon dont elles sont structurées et d’autres meilleures pratiques au niveau de votre organisation. Ils peuvent confirmer et rejeter des rubriques.
 
-Bien que vous puissiez spécifier des gestionnaires de rubriques spécifiques, nous vous recommandons de créer un groupe de sécurité (ou d’utiliser un groupe existant) qui contient les personnes que vous voulez désigner comme responsables du savoir. Vous pouvez spécifier ce groupe de sécurité pendant le processus d’installation.
+Bien que vous pouvez spécifier des responsables de rubriques individuels, nous vous recommandons de créer un groupe de sécurité (ou d’utiliser un groupe existant) qui contient les personnes que vous souhaitez utiliser comme responsables de connaissances. Vous pouvez spécifier ce groupe de sécurité pendant le processus d’installation.
 
 *Créer et modifier des rubriques*
 
-Les contributeurs de rubrique sont les champions et les experts techniques de votre organisation. Ils peuvent créer et modifier des rubriques. 
+Les contributeurs de rubriques sont les champions et les experts techniques de votre organisation. Ils peuvent créer et modifier des rubriques. 
 
-Nous vous recommandons de permettre à tous les membres de votre organisation de créer et de modifier des rubriques, car les expériences de rubrique sont meilleures lorsque tous les utilisateurs peuvent partager des informations.
+Nous vous recommandons d’autoriser tous les membres de votre organisation à créer et modifier des rubriques, car les expériences de rubrique fonctionnent mieux lorsque tous les utilisateurs peuvent partager des informations.
 
-Si vous souhaitez limiter la création et la modification des rubriques à des personnes ou des groupes spécifiques, créez un groupe de sécurité pour ceux-ci et spécifiez-le pendant le processus d’installation.
+Si vous souhaitez limiter la création et la modification de rubriques à des personnes ou des groupes spécifiques, créez un groupe de sécurité pour eux et spécifiez-le pendant le processus d’installation.
 
-Vous pouvez choisir de ne pas autoriser quiconque à contribuer aux rubriques, mais cela n’est pas recommandé. Les responsables de la connaissance seront toujours en mesure de modifier et de créer des rubriques.
+Vous pouvez choisir de ne permettre à personne de contribuer à des rubriques, mais cela n’est pas recommandé. Les gestionnaires de connaissances pourront toujours modifier et créer des rubriques si vous choisissez cette option.
 
-*Visionneuses de rubrique*
+*Visionneuses de rubriques*
 
-Les visionneuses de rubrique peuvent afficher des informations sur les pages de rubrique, dans les résultats de recherche et lorsque des rubriques sont mises en surbrillance dans le contenu comme les pages SharePoint. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages sur lesquels la rubrique a été découverte.
+Les visiteurs peuvent voir des informations sur les pages de rubriques, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillables dans le contenu tel que les pages SharePoint. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
 
-Lorsque vous configurez des visionneuses de rubrique, vous pouvez choisir parmi les éléments suivants :
+Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parmi :
 
 - **Tous les membres de mon organisation**
-- **Uniquement les personnes ou les groupes de sécurité sélectionnés**
+- **Personnes ou groupes de sécurité sélectionnés uniquement**
 - **Personne**
 
-Nous recommandons **tout le monde au sein de mon organisation**, mais si vous effectuez un test pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **personne** si vous souhaitez configurer des expériences de rubrique, mais ne pas autoriser les utilisateurs à voir les rubriques. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à la décision de rendre les expériences de rubrique largement disponibles.)
+Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les utilisateurs à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
 
-## <a name="knowledge-rules"></a>Règles de connaissances
+## <a name="knowledge-rules"></a>Règles de connaissance
 
-En tant qu’administrateur, vous pouvez exclure certaines rubriques de la rubrique expériences. Cela est utile si vous souhaitez que les données sensibles ne s’affichent pas dans les rubriques. Alors que les gestionnaires de connaissances peuvent exclure des rubriques dans le Centre des rubriques, les rubriques exclues par l’administrateur ne sont même pas visibles par les gestionnaires de connaissances. (Les gestionnaires de connaissances peuvent également supprimer des rubriques dans le Centre des rubriques après la découverte.)
+En tant qu’administrateur, vous pouvez exclure certaines rubriques des expériences de rubrique. Cela est utile si vous souhaitez empêcher les données sensibles d’apparaître dans les rubriques. Bien que les gestionnaires de connaissances peuvent exclure des rubriques dans le centre de rubriques, les rubriques exclues par l’administrateur ne sont même pas visibles pour les gestionnaires de connaissances. (Les gestionnaires de connaissances peuvent également supprimer des rubriques dans le centre de rubriques après la découverte.)
 
-Si vous souhaitez exclure des rubriques au niveau de l’administrateur, vous devez les ajouter à un fichier. csv et charger le fichier. Vous pouvez effectuer cette opération pendant l’installation ou version ultérieure.
+Si vous souhaitez exclure des rubriques au niveau de l’administrateur, vous devez les ajouter à un fichier .csv et télécharger le fichier. Vous pouvez le faire lors de l’installation ou ultérieurement.
 
-Le fichier. csv doit contenir les paramètres suivants :
+Le fichier .csv doit contenir les paramètres suivants :
 
-- **Nom**: tapez le nom de la rubrique à exclure. Vous pouvez procéder de deux manières :
-- **MatchType-exacte/partielle**: spécifiez si le nom que vous avez entré est un type de correspondance *exacte* ou *partielle* .
-    - Correspondance exacte : vous pouvez inclure le nom exact ou un acronyme (par exemple, *contoso* ou *ATL*).
-    - Correspondance partielle : vous pouvez exclure toutes les rubriques qui contiennent un mot spécifique.  Par exemple, *arc* exclut toutes les rubriques contenant le mot *arc* , comme un *cercle arc*, un *soudage* à l’arc de plasma ou un *arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans un mot, tel que *architecture*.
-- **Abréviation de (facultatif)**: (également appelée *expansion*) si vous souhaitez exclure un acronyme, tapez les mots que l’acronyme signifie.
+- **Nom**: tapez le nom de la rubrique que vous souhaitez exclure. Vous pouvez procéder de deux manières :
+- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exacte* *ou* partielle.
+    - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
+    - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
+- **Signifie (facultatif)**: (également appelé *expansion)* Si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.
 
-    ![Exclure les rubriques du modèle CSV](../media/exclude-topics-csv.png) 
+    ![Exclure des rubriques dans le modèle CSV](../media/exclude-topics-csv.png) 
 
-Vous pouvez copier le modèle CSV ci-dessous :
+Vous pouvez copier le modèle csv ci-dessous :
 
 ``` csv
 Name (required),Expansion,MatchType- Exact/Partial (required)
@@ -118,28 +117,28 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Administration
 
-Lorsque vous configurez des expériences de rubrique, dans le cadre du processus de configuration, un centre de rubriques est créé automatiquement. Réfléchissez à ce que vous souhaitez nommer le centre de la rubrique et ce que vous voulez faire de l’URL. Vous pouvez définir le nom et l’URL dans le processus de configuration, et vous pouvez modifier le nom (mais pas l’URL) plus loin dans le centre d’administration 365 de Microsoft. Vous ne pouvez avoir qu’un seul centre de rubriques.
+Lorsque vous définissez Rubriques, dans le cadre du processus d’installation, un centre de rubriques est automatiquement créé. Réfléchissez à ce que vous souhaitez nommer le centre de rubriques et à ce que doit être l’URL. Vous pouvez définir le nom et l’URL dans le cadre du processus de configuration, et vous pouvez modifier le nom (mais pas l’URL) ultérieurement dans le Centre d’administration Microsoft 365. Vous ne pouvez avoir qu’un seul centre de rubriques.
 
-## <a name="setup-checklist"></a>Liste de vérification de configuration
+## <a name="setup-checklist"></a>Liste de vérification du programme d’installation
 
-Lorsque vous configurez des expériences de rubrique, vous aurez besoin des éléments suivants lors de l’installation de l’Assistant de configuration :
+Lorsque vous configurerez des expériences de rubrique, vous aurez besoin des éléments suivants à mesure que vous passerez par l’Assistant Installation :
 
 > [!div class="checklist"]
-> * Liste des sites à inclure ou à exclure si tous les sites ne sont pas inclus pour la découverte de rubrique
-> * Groupe de sécurité pour les visionneuses de rubrique si vous n’autorisez pas tous les utilisateurs à consulter les rubriques
-> * Groupe de sécurité pour les contributeurs de rubrique si vous n’autorisez pas tous les utilisateurs à créer et modifier des rubriques
-> * Groupe de sécurité pour les gestionnaires de connaissances si vous n’autorisez pas tous les utilisateurs à gérer les rubriques
+> * Liste des sites à inclure ou à exclure si tous les sites pour la découverte de rubriques ne sont pas inclus
+> * Groupe de sécurité pour les visiteurs des rubriques si tous les utilisateurs ne peuvent pas afficher les rubriques
+> * Groupe de sécurité pour les collaborateurs de rubriques si tous les utilisateurs ne peuvent pas créer et modifier des rubriques
+> * Groupe de sécurité pour les gestionnaires de connaissances des rubriques si tous les utilisateurs ne peuvent pas gérer les rubriques
 > * Liste des rubriques sensibles à exclure de la découverte de rubriques
-> * Un nom pour votre site Centre de rubriques
+> * Nom de votre site centre de rubriques
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des expériences de rubrique](set-up-topic-experiences.md)
+[Configurer les expériences de sujets](set-up-topic-experiences.md)
 
-[Gestion de la découverte de rubrique dans Microsoft 365](topic-experiences-discovery.md)
+[Gérer la découverte de rubriques dans Microsoft 365](topic-experiences-discovery.md)
 
-[Gestion de la visibilité des rubriques dans Microsoft 365](topic-experiences-knowledge-rules.md)
+[Gérer la visibilité des rubriques dans Microsoft 365](topic-experiences-knowledge-rules.md)
 
 [Gérer les autorisations de rubrique dans Microsoft 365](topic-experiences-user-permissions.md)
 
-[Modifier le nom du centre de rubrique dans Microsoft 365](topic-experiences-administration.md)
+[Modifier le nom du centre de rubriques dans Microsoft 365](topic-experiences-administration.md)

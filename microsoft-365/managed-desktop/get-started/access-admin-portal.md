@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5b7ba0db52f06f7b3f6fce596015b56c8e46c6c2
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: d22cef41fb1d6dc3fde39681ad84edc510440b11
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068952"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110006"
 ---
 # <a name="access-the-admin-portal"></a>Accéder au portail d’administration
 
@@ -59,15 +59,28 @@ Si vous avez besoin d’aide pour attribuer des rôles Azure Active Directory, c
 > [!NOTE]
 > Les fonctionnalités de sécurité incluent les communications liées à la sécurité, la gestion des contacts de sécurité, la gestion des demandes de support liées à la sécurité et l’accès aux rapports liés à la sécurité. 
 
-### <a name="assigning-built-in-roles-to-administrators"></a>Attribution de rôles intégrés aux administrateurs
+### <a name="assigning-built-in-roles-to-user"></a>Attribution de rôles intégrés à l’utilisateur
 
-Pour gérer les rôles intégrés, il existe un groupe de sécurité pour chaque rôle personnalisé nommé « Modern Workplace Roles - _Role Name_» (par exemple, « Modern Workplace Roles – Security Manager »). Pour affecter des utilisateurs à l’un de ces groupes de sécurité, suivez les étapes suivantes :
+Pour faciliter la gestion des rôles intégrés, il existe un groupe de sécurité pour chaque rôle personnalisé nommé « Modern Workplace Roles - _Role Name_» (par exemple, « Modern Workplace Roles – Security Manager »). Pour affecter des utilisateurs à l’un de ces groupes de sécurité, suivez les étapes suivantes :
 1.  Go the Microsoft Endpoint Manager portal.
 2.  Sélectionnez **Groupes** sur le côté gauche.
-3.  Recherchez **les rôles de l’espace** de travail moderne, puis sélectionnez le groupe associé au rôle que vous souhaitez attribuer. 
+3.  Recherchez **les rôles d’espace** de travail modernes, puis sélectionnez le groupe associé au rôle que vous souhaitez attribuer. 
 4.  Sélectionnez **Membres** sur le côté gauche, puis **sélectionnez + Ajouter des membres** dans la barre de commandes.
 5.  Entrez l’e-mail de la personne ajoutée. S’ils sont invités, vous devez les inviter avant de pouvoir affecter le groupe.
 6.  Sélectionnez **Sélectionner** en bas.
 
 > [!NOTE]
 > L’imbrmbrage de groupes de sécurité pour l’attribution de rôle n’est actuellement pas pris en charge. 
+
+### <a name="assigning-built-in-roles-to-groups"></a>Attribution de rôles intégrés à des groupes
+
+Si vous devez attribuer un ou plusieurs des rôles intégrés à un groupe existant, suivez les étapes suivantes :
+1. Go to [portal.azure.com](https://portal.azure.com/).
+2. Recherchez et ouvrez des **applications d’entreprise.**
+3. Modifiez **le filtre de type** Application en Applications _Microsoft,_ puis sélectionnez **Appliquer**.
+4. Recherchez et sélectionnez _les API clientes de l’espace de travail moderne._
+5. Sélectionnez **Utilisateurs et groupes** dans le volet de gauche, puis **sélectionnez + Ajouter un utilisateur/groupe.**
+6. Recherchez le groupe que vous souhaitez auprès des **utilisateurs et des groupes.**
+7. Recherchez le rôle applicable à partir **de Sélectionner** un rôle, puis sélectionnez-le.
+8. Sélectionnez **Affecter**.
+ 

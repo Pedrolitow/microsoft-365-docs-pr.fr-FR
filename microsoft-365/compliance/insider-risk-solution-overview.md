@@ -15,33 +15,33 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 684b4d724915478d8198d53d9e95cc1e9b3f092e
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 71eb42c0912edc258b1a33698f1942140d91feb3
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794136"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105195"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Solutions de risque interne dans Microsoft 365
 
-Les risques internes sont l’une des principales préoccupations des professionnels de la sécurité et de la conformité dans l’espace de travail moderne. Des études du secteur ont montré que les risques internes sont souvent associés à des événements ou des activités utilisateur spécifiques. La protection de votre organisation contre ces risques peut être difficile à identifier et difficile à atténuer. Les risques internes incluent des vulnérabilités dans divers domaines et peuvent entraîner des problèmes majeurs pour votre organisation, allant de la perte de propriété intellectuelle au harcèlement en lieu de travail, et bien plus encore. La figure suivante décrit les risques internes courants :
+Les risques internes sont l’une des principales préoccupations des professionnels de la sécurité et de la conformité dans l’espace de travail moderne. Des études du secteur ont montré que les risques internes sont souvent associés à des événements ou des activités utilisateur spécifiques. La protection de votre organisation contre ces risques peut être difficile à identifier et difficile à atténuer. Les risques internes incluent des vulnérabilités dans différents domaines et peuvent entraîner des problèmes majeurs pour votre organisation, allant de la perte de propriété intellectuelle au harcèlement en lieu de travail, et bien plus encore. La figure suivante décrit les risques internes courants :
 
 ![Menaces de risques internes](../media/ir-solution-threats.png)
 
-Les fonctionnalités de prévention des risques de Microsoft 365 sont conçues et intégrées à nos produits et solutions à risque internes. Ces solutions fonctionnent ensemble et utilisent des indicateurs de service avancés et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité de risque. La plupart des solutions offrent un flux de travail complet de détection, d’alerte et de correction que vos analystes et enquêteurs de données peuvent utiliser pour agir rapidement et réduire ces risques.
+Les fonctionnalités de prévention des risques de Microsoft 365 sont conçues et intégrées à nos solutions et produits à risque internes. Ces solutions fonctionnent ensemble et utilisent des indicateurs de service avancés et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité de risque. La plupart des solutions offrent un flux de travail complet de détection, d’alerte et de correction que vos analystes et enquêteurs de données peuvent utiliser pour agir rapidement et réduire ces risques.
 
 | Icône Risque | Risques | Conformité des communications | Gestion des risques internes | Obstacles aux informations | Gestion des accès privilégiés |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
 | ![Icône De débordement de données](../media/ir-risk-data-spillage.png)| Débordement de données | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |  |
 | ![Icône Violations de confidentialité](../media/ir-risk-confidentiality-violations.png)| Violations de confidentialité | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |
-| ![Icône de vol d’IP](../media/ir-risk-ip-theft.png)| Vol d’ADRESSE IP | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |
+| ![Icône vol d’IP](../media/ir-risk-ip-theft.png)| Vol d’ADRESSE IP | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |
 | ![Icône Violence de l’espace de travail](../media/ir-risk-workplace-violence.png)| Violence sur le lieu de travail | ![Pris en charge](../media/check-mark.png) |  |  |  |
 | ![Icône Fraude/icône d'](../media/ir-risk-fraud.png)| Fraude | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |  |
 | ![Icône Violations de stratégie](../media/ir-risk-policy-violations.png)| Violations de stratégie | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
 | ![Insider trading/handshake icon](../media/ir-risk-insider-trading.png)| Délit d’initié | ![Pris en charge](../media/check-mark.png) |  |  |  |
 | ![Icône Conflits d’intérêt](../media/ir-risk-conflicts-of-interest.png)| Conflits d’intérêt | ![Pris en charge](../media/check-mark.png) |  | ![Pris en charge](../media/check-mark.png) |  |
 | ![Icône Fuites de données sensibles/Appareils](../media/ir-risk-sensitive-data-leaks.png)| Fuites de données sensibles | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |  |
-| ![Icône harcèlement/personnes en milieu de travail](../media/ir-risk-workplace-harassment.png)| Harcèlement au travail | ![Pris en charge](../media/check-mark.png) |  |  |  |
+| ![Icône Harcèlement professionnel/personnes](../media/ir-risk-workplace-harassment.png)| Harcèlement au travail | ![Pris en charge](../media/check-mark.png) |  |  |  |
 | ![Icône Violations de sécurité](../media/ir-risk-security-violations.png)| Violations de sécurité |  | ![Pris en charge](../media/check-mark.png) |  | ![Pris en charge](../media/check-mark.png) |
 | ![Icône Violations de conformité réglementaire](../media/ir-risk-regulatory-compliance-violations.png)| Violations de la conformité avec la réglementation | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |
 
@@ -78,6 +78,9 @@ La gestion des risques internes est disponible dans les abonnements suivants :
 - Abonnement Microsoft 365 A5 (version payante ou d’essai)
 - Abonnement Microsoft 365 A3 + module de conformité Microsoft 365 A5
 - Abonnement Microsoft 365 A3 + module de gestion des risques internes Microsoft 365 A5
+- Abonnement Microsoft 365 G5 (version payante ou d’essai)
+- Abonnement Microsoft 365 G5 + module de conformité Microsoft 365 G5
+- Abonnement Microsoft 365 G5 + module de gestion des risques internes Microsoft 365 G5
 
 ### <a name="information-barriers"></a>Obstacles aux informations
 

@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des modules pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
-ms.openlocfilehash: ef7237f20780cb67bc84561ad8617dd8da6f8b82
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926353"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114500"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Déployer des compléments dans le centre d’administration
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des éta
 
 Avant de commencer, voir Déterminer si le déploiement centralisé des modules est efficace [pour votre organisation.](centralized-deployment-of-add-ins.md)
   
-1. Dans le Centre d’administration, allez à la page  \> **Paramètres des add-ins.** Si la **page** Des applications intégrées aux **paramètres** n’est pas consultez, consultez la page Des applications intégrées aux \>  \> **paramètres.**
+1. Dans le Centre d’administration, allez à la page  \> **Paramètres des add-ins.** Si vous ne voyez pas la **page** De ment, go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
     
 2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
  
@@ -77,7 +77,7 @@ Avant de commencer, voir Déterminer si le déploiement centralisé des modules 
     Vous pouvez afficher les add-ins disponibles par catégories : Suggéré pour **vous,** **Évaluation** ou **Nom**. Seuls les add-ins gratuits sont disponibles à partir de l’Office Store. Les compléments payants ne sont pas pris en charge pour le moment. Une fois que vous avez sélectionné un module, acceptez les conditions générales pour continuer. <br/> 
 
     > [!NOTE] 
-    > Avec l’option Office Store, les mises à jour et les améliorations sont automatiquement déployées pour les utilisateurs.
+    > Avec l’option Office Store, les mises à jour et améliorations sont automatiquement déployées pour les utilisateurs.
 
 5. Sur la page suivante, sélectionnez **Tout le monde**, **Utilisateurs/groupes spécifiques** ou **Moi uniquement** pour spécifier les personnes vers lesquelles le complément est déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. <br/>
 
