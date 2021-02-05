@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Utilisez un script PowerShell, qui exécute la commande cmdlet Search-UnifiedAuditLog, pour effectuer des recherches dans le journal d’audit. Ce script est optimisé pour renvoyer des enregistrements d’audit de grande taille (jusqu’à 50 000). Le script exporte ces enregistrements dans un fichier CSV que vous pouvez afficher ou transformer à l’aide de Power Query dans Excel.
-ms.openlocfilehash: a91a54a6c35f96b90df156eaf4bc9735c911fc11
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: d4fcf59297747d0499f6616438299ad8cbe96d7f
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084700"
+ms.locfileid: "50094785"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit
 
@@ -149,7 +149,7 @@ Write-Host "Script complete! Finished retrieving audit records for the date rang
    |`[DateTime]$start` et `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Spécifie la plage de dates pour la recherche dans le journal d’audit. Le script retourne les enregistrements des activités d’audit qui se sont produites dans la plage de dates spécifiée. Par exemple, pour renvoyer les activités effectuées en janvier 2021, vous pouvez utiliser une date de début de `"2021-01-01"` et une date de fin de `"2021-01-31"` (n’oubliez pas d’entourer les valeurs de guillemets doubles) La valeur d’exemple dans le script renvoie les enregistrements des activités effectuées au cours des 24 heures précédentes. si vous n’incluez pas d’horodatage dans la valeur, l’horodatage par défaut est 00:00 (minuit) pour la date spécifiée.|
    |`$record`|« AzureActiveDirectory »|Spécifie le type d’enregistrement des activités d’audit (également *opérations*) à rechercher. Cette propriété indique le service ou la fonctionnalité dans qui une activité a été déclenchée. Pour obtenir la liste des types d’enregistrement que vous pouvez utiliser pour cette variable, consultez [Type d’enregistrement journal d’audit](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). Vous pouvez utiliser le nom du type d’enregistrement ou la valeur ENUM. <br/><br/>**Conseil :** pour renvoyer les enregistrements d'audit pour tous les types d'enregistrements, utilisez la valeur `$null` (sans guillemets doubles).|
    |`$resultSize`|5000|Spécifie le nombre de résultats renvoyés chaque fois que la commande cmdlet **Search-UnifiedAuditLog** est appelée par le script (appelé *jeu de résultats*). La valeur de 5 000 est la valeur maximale prise en charge par la commande cmdlet. Laissez cette valeur telle qu’elle est.|
-   |`$intervalMinutes`|60|Pour dépasser la limite de 5 000 enregistrements renvoyés, cette variable prend la plage de données que vous avez spécifiée et la découpe en intervalles de temps plus courts. Chaque intervalle, et non la plage de dates entière, est soumis à la limite de sortie de l’enregistrement de 5 000 de la commande. La valeur par défaut de 5 000 enregistrements par intervalle de 60 minutes dans la plage de dates doit être suffisante pour la plupart des organisations. Toutefois, si le script renvoie une erreur qui indique `maximum results limitation reached`, diminuez l’intervalle de temps (par exemple, à 30 minutes, voire 15 minutes) et réexécutez le script.|
+   |`$intervalMinutes`|60|Pour dépasser la limite de 5 000 enregistrements renvoyés, cette variable prend la plage de données que vous avez spécifiée et la découpe en intervalles de temps plus courts. Chaque intervalle, et non la plage de dates entière, est soumis à la limite de sortie de l’enregistrement de 5 000 de la commande. La valeur par défaut de 5 000 enregistrements par intervalle de 60 minutes dans la plage de dates doit être suffisante pour la plupart des organisations. Toutefois, si le script renvoie une erreur qui indique `maximum results limitation reached`, diminuez l’intervalle de temps (par exemple, à 30 minutes, voire 15 minutes) et réexécutez le script.|
    ||||
 
    La plupart des variables répertoriées dans le tableau précédent correspondent aux paramètres de la commande cmdlet **Search-UnifiedAuditLog**. Pour plus d'informations sur ces paramètres, voir [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog).
