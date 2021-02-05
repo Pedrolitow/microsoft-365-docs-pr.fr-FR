@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701151"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080723"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -47,8 +47,6 @@ Chaque compte qui accède et utilise la classification de données doit posséde
 
 Pour accéder à l’onglet Explorateur de contenu, un compte doit être affecté à une appartenance dans l’un de ces rôles ou groupes de rôles. 
 
-Une [stratégie DLP](data-loss-prevention-policies.md) peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut des [définitions de pour de nombreux types d’informations sensibles courants](sensitive-information-type-entity-definitions.md) dans de nombreuses régions différentes, prêtes à l’emploi. Par exemple, un numéro de carte bancaire, des numéros de compte bancaire, des numéros d’identification nationaux et des numéros de service Windows Live ID.
-
 **Groupes de rôles Microsoft 365**
 
 - Administrateur général
@@ -66,7 +64,7 @@ L’accès à l’explorateur de contenu est fortement restreint, car il vous pe
 > [!IMPORTANT]
 > Ces autorisations remplacent les autorisations attribuées localement aux éléments, ce qui permet d’afficher le contenu. 
 
-Deux rôles accordent l’accès à l’explorateur de contenu :
+Il existe deux rôles qui octroient l’accès à l’Explorateur de contenu et l’accès à celui-ci à l’aide du [Centre de sécurité et de conformité Microsoft](https://protection.office.com/permissions):
 
 - **Visionneuse de liste de l’explorateur de contenu** : l’appartenance à ce groupe de rôle vous permet d’afficher chaque élément et son emplacement dans la liste. Le rôle `data classification list viewer` a été pré-attribué à ce groupe de rôles.
 

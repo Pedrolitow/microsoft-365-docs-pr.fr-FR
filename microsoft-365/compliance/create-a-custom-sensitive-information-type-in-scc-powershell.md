@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: 31badcb2ab0102584e3addf3ed4d1549afe78525
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929420"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080679"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -161,7 +161,7 @@ Une entité est un type d’informations sensibles, tel qu’un numéro de carte
 ### <a name="name-the-entity-and-generate-its-guid"></a>Nommer l’entité et générer son GUID
 
 1. Dans l’éditeur XML de votre choix, ajoutez les éléments Règles et Entité.
-2. Ajoutez un commentaire qui contient le nom de votre entité personnalisée - dans cet exemple, l’ID d’employé. Plus tard, vous allez ajouter le nom de l’entité à la section de chaînes localisées et ce nom s’affiche dans l’interface utilisateur lorsque vous créez une stratégie.
+2. Ajoutez un commentaire qui contient le nom de votre entité personnalisée — dans cet exemple, l’ID d’employé. Plus tard, vous allez ajouter le nom de l’entité à la section de chaînes localisées et ce nom s’affiche dans l’interface utilisateur lorsque vous créez une stratégie.
 3. Générez un GUID pour votre entité. Vous disposez de plusieurs méthodes pour générer des GUID, mais cette opération peut être effectuée facilement dans PowerShell en saisissant **[guid]::NewGuid()**. Plus tard, vous ajouterez également le GUID de l’entité à la section de chaînes localisées.
   
 ![Balisage XML montrant les éléments Rules et Entity](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
@@ -192,7 +192,7 @@ Vous pouvez utiliser l’attribut facultatif minCount pour spécifier le nombre 
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Mots clés [éléments Keyword, Group et Term, attributs matchStyle et caseSensitive]
 
-Lorsque vous identifiez les informations sensibles, telles qu’un ID d’employé, vous pouvez demander des mots clés comme preuve probante. Par exemple, en plus de faire correspondre un nombre à neuf chiffres, vous souhaiterez peut-être rechercher des mots tels que « carte », « badge » ou « ID ». Pour ce faire, utilisez l’élément Keyword. L’élément Keyword possède l’attribut id qui peut être référencé par plusieurs éléments Match dans plusieurs modèles ou entités.
+Lorsque vous identifiez les informations sensibles, telles qu’un ID d’employé, vous pouvez demander des mots clés comme preuve probante. Par exemple, en plus de faire correspondre un nombre à neuf chiffres, vous souhaiterez peut-être rechercher des mots tels que « carte », « badge » ou « ID ». Pour ce faire, utilisez l’élément Keyword. L’élément Keyword possède l’attribut ID qui peut être référencé par plusieurs éléments Match dans plusieurs modèles ou entités.
   
 Les mots clés sont inclus sous forme de liste d’éléments Term dans un élément Group. L’élément Group possède un attribut matchStyle avec deux valeurs possibles :
   
@@ -428,6 +428,14 @@ Lorsque vous chargez votre fichier XML de package de règles, le système valid
 - ne peut pas contenir de répéteur illimité (tel que « \* » ou « + ») dans un groupe.
     
   Par exemple, « (xx)\* » et « (xx)+ » échouent à la validation.
+  
+- Les mots clés ne peuvent pas contenir plus de 50 caractères.  Si un mot clé au sein d’un groupe dépasse cette limite, une solution suggérée consiste à créer le groupe de termes en tant que [Dictionnaire de mots clés](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary) et à référencer le GUID du dictionnaire de mots clés au sein de la structure XML dans le cadre de l’entité pour les correspondances ou idMatch dans le fichier.
+
+- Chaque type d’informations sensibles personnalisé peut contenir un total maximum de 2 048 mots clés.
+
+- Lorsque vous utilisez la commande cmdlet PowerShell, la taille de retour maximale des données déserialisées est d’environ 1 Mégaoctet.   Cela affecte la taille de votre fichier XML. Conservez le fichier téléchargé limité à un maximum de 512 mégaoctets comme limite suggérée pour obtenir des résultats cohérents sans erreur lors du traitement.
+
+- La structure XML ne requiert pas de caractères de mise en forme tels que des espaces, des tabulations ou des entrées de retour chariot/de trait.  Prenez note de ce message lorsque vous optimisez l’espace disponible sur les téléchargements.
     
 Si un type d’informations sensibles personnalisé contient un problème qui peut affecter les performances, il n’est pas chargé et l’un des messages d’erreur suivants s’affichent :
   

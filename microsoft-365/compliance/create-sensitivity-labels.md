@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
-ms.openlocfilehash: 60865b40582416ac2ac963c4a8c68353b06fc6d4
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: b7943259d3a20cbf4fd6d8b0b57ca7c027e74d3f
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071289"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084655"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -186,7 +186,7 @@ Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choi
 
 Ce bouton démarre l’Assistant **Créer une stratégie** qui vous permet de modifier les étiquettes incluses et leurs paramètres. Une fois l’exécution de l’Assistant terminée, toutes les modifications sont automatiquement répliquées vers les services et les utilisateurs sélectionnés.
 
-Lorsque vous utilisez l’étiquette intégrée pour Windows, macOS, iOS et Android, les utilisateurs voient de nouvelles étiquettes dans leurs applications Office dans un délai de quatre heures et dans un délai d’une heure pour Office sur le web. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
+Lorsque vous utilisez l’étiquette intégrée pour les applications Office sur Windows, macOS, iOS et Android, les utilisateurs voient de nouvelles étiquettes dans un délai de quatre heures et dans un délai d’une heure pour Office sur le web. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Paramètres de stratégie d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
 

@@ -18,13 +18,13 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Configurez les points de terminaison contre la protection contre la perte de données Microsoft 365 pour surveiller les activités des fichiers et implémenter des actions de protection pour ces fichiers aux points de terminaison.
-ms.openlocfilehash: c9b7b10328e80a70f14b8fb40a3bf91cb89dbc88
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
+ms.openlocfilehash: c337d5ccd05ee665b62c9ce5a68abbd8084da943
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867958"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080817"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
@@ -77,6 +77,9 @@ Les données du point de terminaison DLP peuvent être affichées dans [l’Expl
 - Administrateur de mise en conformité
 - Administrateur de la sécurité
 - Administrateur des données de mise en conformité
+- Lecteur général
+- Lecteur Sécurité
+- Lecteur de rapports
 
 ### <a name="prepare-your-endpoints"></a>Préparer vos points de terminaison
 
@@ -86,11 +89,13 @@ Assurez-vous que les appareils Windows 10 pour lesquels vous envisagez de déplo
 
 2. La version du client anti-programme malveillant est 4.18.2009.7 ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application Sécurité Windows, sélectionnez l’icône Paramètres, puis À propos de. Le numéro de version est répertorié sous version du client anti-programme malveillant. Effectuez une mise à jour vers la dernière version du client anti-programme malveillant en installant Windows Update KB4052623. 
 
-> [!NOTE]
-> Aucune des composants de sécurité Windows ne doit être actif, vous pouvez exécuter la protection contre la perte de données de point de terminaison indépendamment de l’état de Sécurité Windows mais la [protection en temps réel et le moniteur de comportement](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) doivent être activés.
+   > [!NOTE]
+   > Aucune des composants de sécurité Windows ne doit être actif, vous pouvez exécuter la protection contre la perte de données de point de terminaison indépendamment de l’état de Sécurité Windows mais la [protection en temps réel et le moniteur de comportement](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) doivent être activés.
  
-
-3. Les mises à jour Windows suivantes sont installées. Remarque : ces mises à jour ne sont pas des conditions préalables à l’intégration d’un appareil au DLP de point de terminaison , mais contiennent des correctifs pour les problèmes importants qui doivent donc être installés avant d’utiliser le produit.
+3. Les mises à jour Windows suivantes sont installées. 
+ 
+   > [!NOTE]
+   > Remarque : ces mises à jour ne sont pas des conditions préalables à l’intégration d’un appareil au DLP de point de terminaison , mais contiennent des correctifs pour les problèmes importants qui doivent donc être installés avant d’utiliser le produit.
 
     - Pour Windows 10 version 1809 : KB4559003, KB4577069, KB4580390
     - Pour Windows 10 version 1903 ou 1909 : KB4559004, KB4577062, KB4580386
@@ -198,7 +203,7 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
 ## <a name="next-steps"></a>Étapes suivantes
 Maintenant que vous disposez d’appareils intégrés et que vous pouvez afficher les données d’activité dans l’Explorateur d’activités, vous êtes prêt à passer à l’étape suivante dans laquelle vous créez des stratégies DLP qui protègent vos éléments sensibles.
 
-- [Utilisation des points de terminaison de protection contre la perte de données (aperçu)](endpoint-dlp-using.md)
+- [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Voir aussi
 

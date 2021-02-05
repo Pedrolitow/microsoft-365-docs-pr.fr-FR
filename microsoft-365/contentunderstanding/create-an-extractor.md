@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7417805f51bb3a1c7b993ce2cd72137478abbc02
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: dd26b049f71688804cd5110a5a0bb7c87950be94
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976542"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080485"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Créer un extracteur dans Microsoft SharePoint Syntex
 
@@ -57,6 +57,14 @@ La création de l’extracteur entraîne l’ouverture de la page correspondante
 
  
 Après l’étiquetage de cinq fichiers, une bannière de notification vous dit de passer à la formation. Vous pouvez choisir d’étiqueter d’autres documents ou de passer à la formation. 
+
+### <a name="use-find-to-search-your-file"></a>Utiliser la recherche pour effectuer une recherche dans votre fichier
+Vous pouvez utiliser la fonctionnalité <b>Rechercher</b> pour rechercher une entité dans votre document que vous voulez étiqueter.
+
+   ![Rechercher dans le fichier](../media/content-understanding/find-feature.png) 
+
+La fonctionnalité Rechercher est utile si vous recherchez un document de grande taille ou si le document contient plusieurs instances de l’entité. Si vous trouvez plusieurs instances, vous pouvez sélectionner celle dont vous avez besoin dans les résultats de recherche pour y aller dans la visionneuse afin de l’étiqueter.
+
 
 ## <a name="add-an-explanation"></a>Ajouter une explication
 

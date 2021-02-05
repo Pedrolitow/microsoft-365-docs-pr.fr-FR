@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: En savoir plus sur les types d’explications dans Microsoft SharePoint Syntex
-ms.openlocfilehash: 9a65c5de5321ee623a3d1a1e4260c0bcb2ad331e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975954"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080589"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduction aux types d’explications
 
@@ -123,6 +123,31 @@ Il y a trois jetons dans *(mobile)*  :
 Configurez le paramètre de proximité pour avoir une plage de 0 à 3.
 
    ![Exemple de proximité](../media/content-understanding/proximity-example.png)</br>
+
+
+## <a name="configure-where-phrases-occur-in-the-document"></a>Configurer l’endroit où des phrases apparaissent dans le document
+
+Lorsque vous créez une explication, par défaut, l’ensemble du document est recherché à la recherche de l’expression que vous essayez d’extraire. Toutefois, vous pouvez utiliser le <b>Où ces expressions se produisent</b> paramètre avancé pour vous aider à isoler un emplacement spécifique dans le document où se produit une expression. Cela est utile dans les situations où des instances similaires d’une expression peuvent apparaître à un autre endroit dans le document et dont vous voulez vous assurer que celle qui est correcte est sélectionnée. En référence à notre exemple de document de référence médical, la **Référence médecin** est toujours mentionnée dans le premier paragraphe du document. Avec le paramètre <b>Où ces expressions se produisent</b>, dans cet exemple, vous pouvez configurer votre explication pour rechercher cette étiquette uniquement dans la section de début du document ou dans tout autre emplacement où elle pourrait se produire.
+
+   ![Paramètre où ces phrases se produisent](../media/content-understanding/phrase-location.png)</br>
+
+Vous pouvez choisir l'une des trois options suivantes :
+
+- N’importe où dans le fichier : recherche l’expression dans l’ensemble du document.
+- Début du fichier : La recherche s’effectuera du début jusqu’à l’emplacement des expressions.</br> 
+   ![Début du fichier](../media/content-understanding/beginning-of-file.png)</br>
+Dans la visionneuse, vous pouvez ajuster manuellement la case à sélectionner de manière à inclure l’emplacement où la phase a lieu. La valeur <b>Position de fin</b> est mise à jour de manière à afficher le nombre de jetons inclus dans la zone sélectionnée. Notez que vous pouvez également mettre à jour la valeur de position de fin pour ajuster la zone sélectionnée.</br>
+   ![Zone Début de la position du fichier](../media/content-understanding/beginning-box.png)</br>
+
+- Fin du fichier : La recherche s’effectuera de la fin jusqu’à l’emplacement des expressions.</br> 
+   ![Fin du fichier](../media/content-understanding/end-of-file.png)</br>
+Dans la visionneuse, vous pouvez ajuster manuellement la case à sélectionner de manière à inclure l’emplacement où la phase a lieu. La valeur <b>Position de début</b> est mise à jour de manière à afficher le nombre de jetons inclus dans la zone sélectionnée. Notez que vous pouvez également mettre à jour la valeur de position de début pour ajuster la zone sélectionnée.</br> 
+   ![Zone Fin de fichier](../media/content-understanding/end-box.png)</br>
+- Plage personnalisée : recherche l’emplacement de l’expression dans une plage spécifiée du document.</br> 
+   ![Plage personnalisée](../media/content-understanding/custom-file.png).</br>
+Dans la visionneuse, vous pouvez ajuster manuellement la case à sélectionner de manière à inclure l’emplacement où la phase a lieu. Pour ce paramètre, vous devez sélectionner une position de <b>Début</b> et une position de <b>Fin</b>. Ces valeurs représentent le nombre de jetons dès le début du document. Bien que vous pouvez entrer manuellement ces valeurs, il est plus facile d’ajuster manuellement la case à sélectionner dans la visionneuse.</br> 
+   
+
 
 ## <a name="use-explanation-templates"></a>Utiliser des modèles d’explication
 

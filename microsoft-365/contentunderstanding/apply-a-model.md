@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrir comment appliquer un modèle publié à une bibliothèque de documents SharePoint
-ms.openlocfilehash: 742c6b7088619579f6157e20de63fe311039d6e2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975930"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080789"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Appliquer un modèle de présentation de document dans Microsoft SharePoint Syntex
 
@@ -61,10 +61,15 @@ Pour appliquer votre modèle à une bibliothèque de documents SharePoint :
 
     ![Bibliothèque sélectionnée](../media/content-understanding/selected-library.png)</br>
 
-7. Accédez à votre bibliothèque de documents et vérifiez que vous êtes dans la vue bibliothèque de documents du modèle. Notez que si vous sélectionnez le bouton informations en regard du nom de la bibliothèque de documents, un message indique que votre modèle a été appliqué à la bibliothèque de documents.
+7. Accédez à votre bibliothèque de documents et vérifiez que vous êtes dans la vue bibliothèque de documents du modèle. Notez que si vous sélectionnez le bouton informations en regard du nom de la bibliothèque de documents, un message indique qu’un modèle est appliqué à la bibliothèque de documents.
 
     ![Vue informations](../media/content-understanding/info-du.png)</br> 
 
+    Vous pouvez sélectionner **Afficher les modèles actifs** pour afficher des détails sur les modèles appliqués à la bibliothèque de documents.
+
+8. Dans le volet **Modèles actifs**, vous pouvez afficher les modèles appliqués à la bibliothèque de documents. Sélectionnez un modèle pour afficher plus d’informations le concernant, par exemple une description du modèle, qui a publié le modèle et si le modèle applique une étiquette de rétention aux fichiers qu’il classifie.
+
+    ![Volet Modèles actifs](../media/content-understanding/active-models.png)</br> 
 
 Une fois le modèle appliqué à la bibliothèque de documents, vous pouvez commencer à télécharger des documents sur le site et afficher les résultats.
 
@@ -82,6 +87,20 @@ Lorsqu’un modèle appliqué traite tous les fichiers téléchargés vers la bi
 
 > [!NOTE]
 > Vous pouvez copier des fichiers individuels dans une bibliothèque et les appliquer à un modèle, mais pas des dossiers.
+
+### <a name="the-classification-date-field"></a>Champ Date de classification
+
+Lorsqu’un document SharePoint Syntex comprenant ou un modèle de traitement de formulaire est appliqué à une bibliothèque de documents, un champ <b>Date de classification</b> est inclus dans le schéma de bibliothèque. Par défaut, ce champ est vide, mais lorsque des documents sont traitées et classifiées par modèle, ce champ est mis à jour avec l’horodatage d’achèvement. 
+
+   ![Colonne de date de classification](../media/content-understanding/class-date-column.png)</br> 
+
+Le champ Date de classification est utilisé par le déclencheur [<b>Lorsqu’un fichier est classifié par un modèle de contenu</b>'](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) pour exécuter un flux Power Automate après qu’un modèle de compréhension de contenu Syntex a terminé de traiter un fichier et mis à jour le champ « Date de classification ».
+
+   ![Déclencheur de flux](../media/content-understanding/trigger.png)</br>
+
+Le déclencheur <b>Lorsqu'un fichier est classifié selon un modèle de compréhension du contenu</b> peut ensuite être utilisé pour démarrer un autre flux de travail à l’aide d’informations extraites du fichier.
+
+
 
 ## <a name="see-also"></a>Voir aussi
 [Créer un classificateur](create-a-classifier.md)

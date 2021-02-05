@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 190b06a719775fbbf14c94a4fd817d3242a95e6c
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044744"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084675"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -227,9 +227,9 @@ Flux de travail pour une stratégie d’étiquetage automatique :
 
 1. Créer et configurer une stratégie d’étiquetage automatique.
 
-2. Exécutez la stratégie en mode simulation et patientez 24 heures, ou jusqu’à la fin de la simulation.
+2. Exécutez la stratégie en mode de simulation, ce qui peut prendre 48 heures.
 
-3. Examinez les résultats et, si nécessaire, affinez votre stratégie. Exécutez de nouveau la stratégie en mode simulation et patientez une nouvelle fois 24 heures, ou jusqu’à la fin de la simulation.
+3. Examinez les résultats et, si nécessaire, affinez votre stratégie. Réexécutez le mode de simulation et attendez sa fin.
 
 4. Répétez l’étape 3 si besoin.
 
