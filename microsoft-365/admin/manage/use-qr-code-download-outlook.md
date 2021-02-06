@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Découvrez comment utiliser un code QR pour authentifier et télécharger Outlook Mobile.
-ms.openlocfilehash: 2d62a49b93fa7bd5f2d747525de7244e8014e6a7
-ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
+ms.openlocfilehash: b9e433e0c7d3f5f3466924b318e242e5ac29181c
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50050773"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122371"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Utiliser un code QR pour vous inscrire aux applications mobiles Outlook
 
@@ -42,7 +42,7 @@ Cette expérience est en place par défaut. Pour désactiver cette fonctionnalit
 2. À l’aide de PowerShell, vous pouvez désactiver les notifications informant vos utilisateurs des applications mobiles Outlook. Cela empêche également l’affichage du flux de la signature du code QR.
 
 ```powershell
-Set-Organization -MobileAppEducationEnabled <Boolean>
+Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
 Voir aussi

@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 0d46459f61b29c6bdb457c7e0c82e9147e7709ba
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071279"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126139"
 ---
 # <a name="manage-information-barrier-policies"></a>Gérer les stratégies de obstacle à l’information
 
@@ -37,7 +37,7 @@ Une fois que vous avez défini des stratégies d’obstacle aux [informations,](
 | [Résolution des problèmes de cloisonnement de l’information](information-barriers-troubleshooting.md) | Reportez-vous à cet article lorsque vous êtes face à des problèmes inattendus avec les obstacles à l’information. |
 
 > [!IMPORTANT]
-> Pour effectuer les tâches décrites dans cet article, vous devez avoir un rôle approprié, tel que l’un des suivants :<br/>- Administrateur général Microsoft 365 Entreprise<br/>- Administrateur général<br/>- Administrateur de conformité<br/>- Gestion de la conformité DE LAS (il s’agit d’un nouveau rôle !)<br><br>Pour en savoir plus sur les conditions préalables pour les obstacles à l’information, voir [Conditions préalables (pour les stratégies d’obstacle à l’information).](information-barriers-policies.md#prerequisites)<br><br> Veillez à [vous connecter au Centre de sécurité & conformité PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+> Pour effectuer les tâches décrites dans cet article, vous devez avoir un rôle approprié, tel que l’un des suivants :<br/>- Administrateur général Microsoft 365 Entreprise<br/>- Administrateur général<br/>- Administrateur de conformité<br/>- Gestion de la conformité DUES (il s’agit d’un nouveau rôle !)<br><br>Pour en savoir plus sur les conditions préalables pour les obstacles à l’information, voir [Conditions préalables (pour les stratégies de obstacle à l’information).](information-barriers-policies.md#prerequisites)<br><br> Veillez à [vous connecter au Centre de sécurité & conformité PowerShell.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>Modifier les attributs d’un compte d’utilisateur
 
@@ -53,9 +53,9 @@ Utilisez cette procédure pour modifier les attributs utilisés pour segmenter l
 
 3. Modifiez un ou plusieurs comptes d’utilisateur pour inclure des valeurs pour l’attribut que vous avez sélectionné à l’étape précédente. Pour ce faire, utilisez l’une des procédures suivantes :
 
-    - Pour modifier un compte unique, voir Ajouter ou mettre à jour les informations de profil d’un utilisateur à [l’aide d’Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - Pour modifier un compte unique, voir Ajouter ou mettre à jour les informations de profil d’un utilisateur à [l’aide d’Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
-    - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), voir Configurer les propriétés du compte d’utilisateur avec [Office 365 PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+    - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), voir Configurer les propriétés du compte d’utilisateur avec [Office 365 PowerShell.](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
 ## <a name="edit-a-segment"></a>Modifier un segment
 
@@ -110,7 +110,7 @@ Lorsque vous avez terminé de modifier des segments pour votre organisation, vou
     |:---------|:----------|
     | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p> Dans cet exemple, nous avons mis en place une stratégie d’obstacle à l’information dont le GUID *43c37853-ea10-4b90-a23d-ab8c9377247* est inactif. |
 
-3. Pour appliquer vos modifications, utilisez la cmdlet **Start-InformationBarrierPoliciesApplication.**
+3. Pour appliquer vos modifications, utilisez l’cmdlet **Start-InformationBarrierPoliciesApplication.**
 
     Syntaxe : `Start-InformationBarrierPoliciesApplication`
 
@@ -148,9 +148,9 @@ Lorsque vous avez terminé de modifier des segments pour votre organisation, vou
 
 ## <a name="stop-a-policy-application"></a>Arrêter une application de stratégie
 
-Une fois que vous avez commencé à appliquer des stratégies d’obstacle à l’information, si vous souhaitez empêcher ces stratégies d’être appliquées, appliquez la procédure suivante. Le processus prendra environ 30 à 35 minutes.
+Une fois que vous avez commencé à appliquer des stratégies d’obstacle à l’information, si vous souhaitez empêcher l’application de ces stratégies, appliquez la procédure suivante. Le processus prendra environ 30 à 35 minutes.
 
-1. Pour afficher l’état de l’application de stratégie d’obstacles à l’information la plus récente, utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus.**
+1. Pour afficher l’état de l’application de stratégie d’obstacle à l’information la plus récente, utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus.**
 
     Syntaxe : `Get-InformationBarrierPoliciesApplicationStatus`
 

@@ -1,5 +1,5 @@
 ---
-title: Collecter les informations nécessaires pour créer des enregistrements DNS
+title: Collecter les informations dont vous avez besoin pour créer des enregistrements DNS
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -16,74 +16,73 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Découvrez comment trouver les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS pour Microsoft 365. '
-ms.openlocfilehash: db9aff1fdcd9fa52c90cc96b1a32cd3908c30edb
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 'Découvrez les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS pour Microsoft 365. '
+ms.openlocfilehash: 45994139b11a2fd5a03b2e979dd6af334bc1f00b
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658506"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126370"
 ---
-# <a name="gather-the-information-you-need-to-create-dns-records"></a>Collecter les informations nécessaires pour créer des enregistrements DNS
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>Collecter les informations dont vous avez besoin pour créer des enregistrements DNS
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : Rechercher la valeur de l’enregistrement TXT et vérifier
+### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : Rechercher la valeur de l’enregistrement TXT et vérifier
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration Microsoft 365, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> .
+1. Dans le Centre d’administration Microsoft 365, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines d’installation.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a> .
+1. Dans le centre d’administration, allez à la page  > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domaines d’installation.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a> .
+1. Dans le centre d’administration, allez à la page  > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domaines d’installation.</a>
 
 ::: moniker-end
     
-2. Sur la page **domaines** , sélectionnez votre domaine, puis **Démarrer le programme d’installation**. Revenez à l'Assistant de configuration de domaines pour afficher la valeur spécifique que vous devez ajouter.
+2. Dans la page **Domaines,** sélectionnez votre domaine, puis sélectionnez **Démarrer la configuration.** Revenez à l'Assistant de configuration de domaines pour afficher la valeur spécifique que vous devez ajouter.
     
-3. Sur la page **vérifier le domaine** , sélectionnez **Ajouter un enregistrement txt** à la place, puis sélectionnez **suivant**.
+3. Dans la page **Vérifier le domaine,** **sélectionnez Ajouter un enregistrement TXT** à la place, puis sélectionnez **Suivant**.
     
-4. Copiez la **valeur txt** affichée. Il se présente comme ceci : **MS = msXXXXXXXX**. 
+4. Copiez **la valeur TXT** affichée. Il se ressemble à ceci : **MS=msXXXXXXXX**. 
     
-5. Accédez à [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS](create-dns-records-at-any-dns-hosting-provider.md)et sélectionnez votre hôte DNS dans la liste des bureaux d’enregistrement pour voir les instructions pas à pas.
+5. Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and select your DNS host from the list of registrars to see the step-by-step instructions.
     
-6. Suivez les étapes de création de l’enregistrement TXT (ou enregistrement MX) au niveau de votre hôte DNS, puis vérifiez le domaine dans Microsoft 365.
+6. Suivez les étapes de création de l’enregistrement TXT (ou enregistrement MX) sur votre hôte DNS, puis vérifiez à nouveau le domaine dans Microsoft 365.
 
-7. Supprimez l’enregistrement TXT (ou l’enregistrement MX) de votre hôte DNS une fois le domaine vérifié dans Microsoft 365.
+7. Supprimez l’enregistrement TXT (ou enregistrement MX) de votre hôte DNS une fois que le domaine est vérifié dans Microsoft 365.
     
-### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Étape 2 : trouver la valeur de l’enregistrement MX pour la messagerie électronique et plus
+### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Étape 2 : Rechercher la valeur d’enregistrement MX pour le courrier électronique et bien plus encore
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration Microsoft 365, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> .
+1. Dans le Centre d’administration Microsoft 365, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines d’installation.</a>
 
 ::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a> .
+1. Dans le centre d’administration, allez à la page  > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domaines d’installation.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a> .
+1. Dans le centre d’administration, allez à la page  > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domaines d’installation.</a>
 
 ::: moniker-end
     
@@ -95,6 +94,6 @@ ms.locfileid: "49658506"
     
     Les groupes d'enregistrements DNS figurant dans cette page dépendent des choix disponibles sous **Intention de domaine**.
     
-4. Accédez à [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS](create-dns-records-at-any-dns-hosting-provider.md), puis sélectionnez votre hôte DNS dans la liste des bureaux d’enregistrement pour voir les instructions pas à pas pour ajouter des enregistrements sur le site Web de l’hôte DNS.
+4. Go to [Create DNS records at any DNS hosting provider,](create-dns-records-at-any-dns-hosting-provider.md)and then select your DNS host from the list of registrars to see step-by-step instructions for adding records at that DNS host’s website.
     
 5. Suivez la procédure de création des enregistrements auprès de votre hôte DNS.

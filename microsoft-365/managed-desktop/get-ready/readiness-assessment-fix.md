@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 22b5a6353720f8fbee218c138a3c9d0dee444db9
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: ff2ef15f93cef5255e8c8113facf51b833eff77d
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114918"
+ms.locfileid: "50122359"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 
@@ -35,13 +35,13 @@ Pour chaque vérification, l’outil signalera l’un des quatre résultats poss
 
 Vous pouvez accéder aux paramètres Intune dans le Centre d’administration Microsoft Endpoint [Manager.](https://endpoint.microsoft.com)
 
-### <a name="autopilot-deployment-profile"></a>Profil autopilot deployment
+### <a name="autopilot-deployment-profile"></a>Profil Autopilot Deployment
 
 Vous ne devez pas avoir de profils Autopilot existants qui ciblent des groupes affectés ou dynamiques avec des appareils Bureau géré Microsoft. Bureau géré Microsoft utilise Autopilot pour mettre en service de nouveaux appareils.
 
 **Non prêt**
 
-Vous avez un profil Autopilot qui est affecté à tous les appareils. Pour obtenir la procédure à suivre, voir Inscrire des [appareils Windows dans Intune à l’aide de Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Après l’inscription au Bureau géré Microsoft, définissez votre stratégie Autopilot pour exclure le groupe Modern **Workplace Devices -All** Azure AD.
+Vous avez un profil Autopilot qui est affecté à tous les appareils. Pour obtenir la procédure à suivre, voir [Inscrire des appareils Windows dans Intune à l’aide de Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Après l’inscription au Bureau géré Microsoft, définissez votre stratégie Autopilot pour exclure le groupe Modern **Workplace Devices -All** Azure AD.
 
 **Avis**
 
@@ -80,7 +80,7 @@ Vous avez des stratégies d’accès conditionnel qui pourraient empêcher Burea
 
 **Error**
 
-Le rôle d’administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
+Le rôle Administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
 
 - Lecteur de sécurité
 - Administrateur de sécurité
@@ -113,7 +113,7 @@ Vous avez au moins un profil de configuration qui cible tous les utilisateurs, t
 
 **Avis**
 
-Assurez-vous que les stratégies de configuration dont vous avez besoin n’incluent pas d’appareils ou d’utilisateurs de bureau géré Microsoft. Pour connaître la procédure à [suivre, voir Créer un profil avec des paramètres personnalisés dans Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
+Assurez-vous que les stratégies de configuration que vous avez n’incluent pas d’appareils ou d’utilisateurs de bureau géré Microsoft. Pour connaître la procédure à [suivre, voir Créer un profil avec des paramètres personnalisés dans Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
 
 
 
@@ -132,7 +132,7 @@ La page d’état d’inscription (ESP) est actuellement activée. Si vous avez 
 
 **Non prêt**
 
-Vous avez le profil esp par défaut définie sur **Afficher l’avancement de la configuration de l’application et du profil.** Désactivez ce paramètre ou assurez-vous que les affectations à un groupe Azure AD n’incluent pas d’appareils de bureau géré Microsoft en suivant les étapes de la page Configurer l’état [d’inscription.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)
+Vous avez le profil esp par défaut définie sur **Afficher l’avancement de la configuration de l’application et du profil.** Désactivez ce paramètre ou assurez-vous que les affectations à un groupe Azure AD n’incluent pas les appareils de bureau géré Microsoft en suivant les étapes de la page Configurer l’état [d’inscription.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)
 
 **Avis**
 
@@ -148,12 +148,12 @@ Microsoft Store pour Entreprises n’est pas activé ou n’est pas synchronisé
 
 ### <a name="multifactor-authentication"></a>Authentification multifacteur
 
-L’authentification multifacteur ne doit pas empêcher Le Bureau géré Microsoft de gérer votre organisation Azure AD (client) dans Intune et Azure AD.
+L’authentification multifacteur ne doit pas empêcher le Bureau géré Microsoft de gérer votre organisation Azure AD (client) dans Intune et Azure AD.
 
 
 **Non prêt**
 
-Certaines stratégies d’authentification multifacteur sont définies comme **requises** pour les stratégies d’accès conditionnel qui sont attribuées à tous les utilisateurs. Lors de l’inscription, nous allons exclure les comptes du service Bureau géré Microsoft des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Certaines stratégies d’authentification  multifacteur sont définies comme requises pour les stratégies d’accès conditionnel qui sont affectées à tous les utilisateurs. Lors de l’inscription, nous allons exclure les comptes du service Bureau géré Microsoft des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Avis**
 
@@ -210,7 +210,7 @@ Examinez les applications que vous souhaitez que vos utilisateurs de bureau gér
 
 **Avis**
 
-Vous devez préparer un inventaire des applications que vous souhaitez que vos utilisateurs de bureau géré Microsoft utilisent. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’utiliser le portail d’entreprise (voir Installer le portail d’entreprise [Intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) sur les appareils et la page État de l’inscription (ESP) pour distribuer des applications à vos utilisateurs. Pour plus d’informations, voir [Applications dans bureau](apps.md) géré Microsoft et expérience de première utilisation avec Autopilot et la page État de [l’inscription.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)
+Vous devez préparer un inventaire des applications que vous souhaitez que vos utilisateurs de bureau géré Microsoft utilisent. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’utiliser le portail d’entreprise (voir Installer le portail d’entreprise [Intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) sur les appareils et la page État de l’inscription (ESP) pour distribuer des applications à vos utilisateurs. Pour plus d’informations, voir [Applications dans Bureau](apps.md) géré Microsoft et Expérience de première utilisation avec Autopilot et la page État de [l’inscription.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)
 
 Vous pouvez demander à votre représentant de compte Microsoft une requête dans Microsoft Endpoint Configuration Manager pour identifier les applications qui sont prêtes à migrer vers Intune ou qui ont besoin d’ajustement.
 
@@ -238,7 +238,7 @@ Vous avez une stratégie de « sonnerie de mise à jour » qui cible tous les ap
 
 **Avis**
 
-Assurez-vous que toutes les stratégies de sonnerie de mise à jour que vous avez excluent le **groupe Modern Workplace Devices -All** Azure AD. Si vous avez affecté des groupes d’utilisateurs Azure AD à ces stratégies, assurez-vous que toutes les stratégies de sonnerie de mise à jour que vous avez également exclues du groupe Espace de travail moderne **-Tout** Azure AD à qui vous ajoutez vos utilisateurs de bureau géré Microsoft (ou un groupe équivalent). Pour obtenir la procédure à suivre, voir Gérer les mises à jour [logicielles Windows 10 dans Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Les appareils d’espace de travail modernes **-All** et **Modern Workplace -All** Azure AD groups are groups that we create when you enroll in Microsoft Managed Desktop, so you’ll have to come back to exclude this group after enrollment.
+Assurez-vous que les stratégies de sonnerie de mise à jour que vous avez excluent le **groupe Modern Workplace Devices -All** Azure AD. Si vous avez affecté des groupes d’utilisateurs Azure AD à ces stratégies, assurez-vous que les stratégies de sonnerie de mise à jour que vous avez également exclues du groupe Espace de travail moderne **-Tous** les groupes Azure AD à qui vous ajoutez vos utilisateurs de bureau géré Microsoft (ou un groupe équivalent). Pour obtenir la procédure à suivre, voir Gérer les mises à jour [logicielles Windows 10 dans Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Les appareils d’espace de travail modernes **-All** et **Modern Workplace -All** Azure AD groups are groups that we create when you enroll in Microsoft Managed Desktop, so you’ll have to come back to exclude this group after enrollment.
 
 
 ## <a name="azure-active-directory-settings"></a>Paramètres Azure Active Directory
@@ -260,7 +260,7 @@ Indique comment vérifier un paramètre qui (s’il a la valeur « false ») ris
 
 **Avis**
 
-**Assurez-vous que AllowAdHocSubscriptions** est définie sur **True**. Sinon, Enterprise State Roaming risque de ne pas fonctionner. Pour plus d’informations, [voir Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+**Assurez-vous que AllowAdHocSubscriptions** est définie sur **True**. Dans le cas contraire, enterprise State Roaming risque de ne pas fonctionner. Pour plus d’informations, [voir Set-MsolCompanySettings.](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)
 
 
 ### <a name="enterprise-state-roaming"></a>Itinérance du statut Entreprise
@@ -269,7 +269,7 @@ L’itinérance de l’état d’entreprise doit être activée.
 
 **Avis**
 
-Assurez-vous que l’itinérance d’état d’entreprise est activée pour **tous** ou pour **les groupes sélectionnés.** Pour plus d’informations, voir [Activer l’itinérance de l’état d’entreprise dans Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)
+Assurez-vous que l’itinérance de l’état d’entreprise est activée pour **Tous** ou pour **les groupes sélectionnés.** Pour plus d’informations, voir [Activer l’itinérance de l’état d’entreprise dans Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)
 
 ### <a name="licenses"></a>Licences
 
@@ -280,13 +280,13 @@ Un certain nombre de licences sont requises pour utiliser bureau géré Microsof
 Vous n’avez pas toutes les licences dont vous avez besoin pour utiliser Bureau géré Microsoft. Pour plus d’informations, voir [Les technologies bureau géré Microsoft](../intro/technologies.md) et en savoir plus sur les [licences.](prerequisites.md#more-about-licenses)
 
 
-### <a name="security-account-names"></a>Noms de compte de sécurité
+### <a name="microsoft-managed-desktop-service-accounts"></a>Comptes de service Bureau géré Microsoft
 
-Certains noms de compte de sécurité peuvent être en conflit avec ceux créés par Bureau géré Microsoft.
+Certains noms de compte peuvent être en conflit avec les noms de compte créés par Le Bureau géré Microsoft pour gérer le service Bureau géré Microsoft.
 
 **Non prêt**
 
-Vous avez au moins un nom de compte en conflit avec celui créé par Bureau géré Microsoft. Travaillez avec votre représentant de compte Microsoft pour exclure ces noms de comptes.
+Vous avez au moins un nom de compte en conflit avec les noms de compte créés par Bureau géré Microsoft. Travaillez avec votre représentant de compte Microsoft pour exclure ces noms de comptes. Nous ne listons pas les noms de comptes publiquement pour minimiser les risques de sécurité. 
 
 
 ### <a name="security-administrator-roles"></a>Rôles d’administrateur de sécurité

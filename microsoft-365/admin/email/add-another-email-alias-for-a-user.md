@@ -15,7 +15,6 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Découvrez comment vous pouvez avoir plusieurs adresses de messagerie, appelée alias de messagerie, associées à votre compte Microsoft 365 pour les entreprises. '
-ms.openlocfilehash: afb576a0499577b910fe3ed14eff75ae0a52b394
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3c97640f4bb16876ec028a1af2b361a21a0decab
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114032"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126404"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Ajouter un autre alias de courrier pour un utilisateur
 
@@ -43,13 +42,13 @@ Cet article est réservé aux administrateurs Microsoft 365 qui ont des abonneme
   
 Une adresse de messagerie principale dans Microsoft 365 est généralement l’adresse de messagerie attribuée à un utilisateur lors de la création de son compte. Lorsque l'utilisateur envoie du courrier à une autre personne, son adresse de courrier principale est celle qui apparaît généralement dans le champ  *De*  dans les applications de courrier. Ils peuvent également avoir plusieurs adresses de messagerie associées à leur compte Microsoft 365 pour les entreprises. Les adresses supplémentaires sont appelées alias. 
   
-Par exemple, supposons que Son adresse de messagerie soit jenna@contosoco.com, mais qu’elle souhaite également recevoir des messages électroniques sur jen@contosoco.com car certaines personnes lui font référence par ce nom. Vous pouvez créer des alias pour elle afin que les deux adresses de messagerie se placent dans la boîte de réception de Son prénom.
+Par exemple, supposons que Son adresse de messagerie soit jenna@contosoco.com, mais qu’elle souhaite également recevoir des messages électroniques sur jen@contosoco.com car certaines personnes lui font référence par ce nom. Vous pouvez créer des alias pour elle afin que les deux adresses de messagerie se placent dans la boîte de réception de Celle-là.
 <br><br>  
   
 Vous pouvez créer jusqu'à 400 alias par utilisateur. Vous ne devez pas acquérir de licence supplémentaire et cela n'occasionne aucun frais.
   
 > [!Tip]
-> Si vous souhaitez que plusieurs personnes gèrent les messages électroniques envoyés à une seule adresse de messagerie telle que info@NodPublishers.com ou sales@NodPublishers.com, créez une boîte aux lettres partagée. Pour plus d’informations, voir [Créer une boîte aux lettres partagée.](create-a-shared-mailbox.md)
+> Si vous souhaitez que plusieurs personnes gèrent les messages électroniques envoyés à une seule adresse de messagerie, comme info@NodPublishers.com ou sales@NodPublishers.com, créez une boîte aux lettres partagée. Pour plus d’informations, voir [Créer une boîte aux lettres partagée.](create-a-shared-mailbox.md)
   
 ## <a name="add-email-aliases-to-a-user"></a>Ajouter des alias de courrier à un utilisateur
 <a name="AddEmailPreview"> </a>
@@ -66,7 +65,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
 3. Sélectionnez **+ Ajoutez un alias** et entrez un nouvel alias pour l’utilisateur.   
     
     > [!Important] 
-    > Si le message d’erreur « Un paramètre qui correspond au nom de paramètre «**EmailAddresses**» s’ajoute, cela signifie qu’il faut un peu plus de temps pour terminer la configuration de votre client ou de votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
+    > Si vous obtenez le message d’erreur « Impossible de trouver un paramètre qui correspond au nom du paramètre **« EmailAddresses**», cela signifie qu’il faut un peu plus de temps pour terminer la configuration de votre client ou de votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
     
   
     > [!IMPORTANT]
@@ -80,7 +79,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
     
 6. Patientez 24 heures pour que les nouveaux alias se remplissent dans Microsoft 365.
     
-    L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et à son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
+    L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
     
   
 7. **Lorsque l’utilisateur répond, l’adresse *De*  est son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au courrier, son adresse de courrier principale s'affiche en tant qu'expéditeur, au lieu de Sales@NodPublishers.com. 
@@ -97,7 +96,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
 3. En de côté **du nom d’utilisateur/des alias de messagerie,** **sélectionnez Modifier.**
 
     > [!Important] 
-    > Si vous obtenez le message d’erreur « Impossible de trouver un paramètre qui correspond au nom du paramètre **« EmailAddresses**», cela signifie qu’il faut un peu plus de temps pour terminer la configuration de votre client ou de votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
+    > Si le message d’erreur « Un paramètre qui correspond au nom de paramètre «**EmailAddresses**» s’ajoute, cela signifie qu’il faut un peu plus de temps pour terminer la configuration de votre client ou de votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
 
 4. Dans la zone de texte sous **Alias,** tapez la première partie du nouvel alias de messagerie. Si vous avez ajouté votre domaine à Microsoft 365, vous pouvez choisir le domaine du nouvel alias d'e-mail dans la liste déroulante. Puis sélectionnez **Ajouter**.
 
@@ -111,10 +110,10 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
 
 6. Patientez 24 heures pour que les nouveaux alias se remplissent dans Microsoft 365. 
     
-    L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et à son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
+    L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
     
   
-7. **Lorsque l’utilisateur répond, l’adresse *de*  provenance est son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au courrier, son adresse de courrier principale s'affiche en tant qu'expéditeur, au lieu de Sales@NodPublishers.com. 
+7. **Lorsque l’utilisateur répond, l’adresse *De*  est son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au courrier, son adresse de courrier principale s'affiche en tant qu'expéditeur, au lieu de Sales@NodPublishers.com. 
 
 ::: moniker-end
 
@@ -128,7 +127,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
 3. En de côté **du nom d’utilisateur/des alias de messagerie,** **sélectionnez Modifier.**
 
     > [!Important] 
-    > Si vous obtenez le message d’erreur « Impossible de trouver un paramètre qui correspond au nom du paramètre **« EmailAddresses**», cela signifie qu’il faut un peu plus de temps pour terminer la configuration de votre client ou de votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
+    > Si le message d’erreur « Un paramètre qui correspond au nom de paramètre «**EmailAddresses**» s’ajoute, cela signifie qu’il faut un peu plus de temps pour terminer la configuration de votre client ou de votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
 
 4. Dans la zone de texte sous **Alias,** tapez la première partie du nouvel alias de messagerie. Si vous avez ajouté votre domaine à Microsoft 365, vous pouvez choisir le domaine du nouvel alias d'e-mail dans la liste déroulante. Puis sélectionnez **Ajouter**.
 
@@ -142,10 +141,10 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
 
 6. Patientez 24 heures pour que les nouveaux alias se remplissent dans Microsoft 365. 
     
-    L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et à son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
+    L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
     
   
-7. **Lorsque l’utilisateur répond, l’adresse *de*  provenance est son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au courrier, son adresse de courrier principale s'affiche en tant qu'expéditeur, au lieu de Sales@NodPublishers.com. 
+7. **Lorsque l’utilisateur répond, l’adresse *De*  est son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au courrier, son adresse de courrier principale s'affiche en tant qu'expéditeur, au lieu de Sales@NodPublishers.com. 
 
 ::: moniker-end
 
