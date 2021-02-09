@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge des étiquettes de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: 0b5f17286456a364c6a8b4c5bdb397c5b0263b73
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: b4981e8f2fda88f9ba078b29e70d572b7bcc7ce2
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975897"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150488"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -38,7 +38,7 @@ Après avoir activé les étiquettes de niveau de sensibilité pour les fichiers
 
 - Lorsque les utilisateurs téléchargent ou accèdent à ces fichiers à partir de SharePoint ou OneDrive, l’étiquette de sensibilité et les paramètres de chiffrement de l’étiquette sont appliqués et restent avec le fichier, où qu’il soit stocké. Veillez à fournir des conseils aux utilisateurs pour utiliser uniquement des étiquettes pour protéger les documents. Pour plus d’informations, consultez les options de gestion des droits de l’information [(IRM) et les étiquettes de sensibilité.](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)
 
-- Lorsque les utilisateurs téléchargent des fichiers étiquetés et chiffrés vers SharePoint ou OneDrive, ils doivent au moins avoir des droits d’affichage sur ces fichiers. Par exemple, ils peuvent ouvrir les fichiers en dehors de SharePoint. S’ils n’ont pas ce droit d’utilisation minimum, le téléchargement réussit, mais le service ne reconnaît pas l’étiquette et ne peut pas traiter le contenu du fichier.
+- Lorsque les utilisateurs téléchargent des fichiers étiquetés et chiffrés vers SharePoint ou OneDrive, ils doivent au moins avoir des droits d’affichage sur ces fichiers. Par exemple, ils peuvent ouvrir les fichiers en dehors de SharePoint. S’ils n’ont pas ce droit d’utilisation minimum, le chargement réussit, mais le service ne reconnaît pas l’étiquette et ne peut pas traiter le contenu du fichier.
 
 - Utilisez Office sur le web (Word, Excel, PowerPoint) pour ouvrir et modifier des fichiers Office qui ont des étiquettes de niveau de sensibilité qui appliquent le chiffrement. Les autorisations affectées au chiffrement sont appliquées. Vous pouvez également utiliser [l’étiquetage automatique](apply-sensitivity-label-automatically.md) pour ces documents.
 
@@ -78,7 +78,7 @@ Utilisez l’application de synchronisation OneDrive version 19.002.0121.0008 ou
     
     2. Téléchargez les fichiers, puis téléchargez-les sur SharePoint.
 
-- SharePoint et OneDrive ne peuvent pas traiter les fichiers chiffrés lorsque l’étiquette qui a appliqué le chiffrement possède l’une des [configurations suivantes pour le chiffrement](encryption-sensitivity-labels.md#configure-encryption-settings):
+- SharePoint et OneDrive ne peuvent pas traiter les fichiers chiffrés lorsque l’étiquette qui a appliqué le chiffrement dispose de l’une des [configurations suivantes pour le chiffrement](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Autoriser les utilisateurs** à attribuer des autorisations lorsqu’ils appliquent l’étiquette et la case à cocher **Dans Word, PowerPoint** et Excel, demander aux utilisateurs de spécifier les autorisations est sélectionné. Ce paramètre est parfois appelé « autorisations définies par l’utilisateur ».
     - **L’accès utilisateur au contenu expire** est définie sur une valeur autre que **Jamais**.
     - **Le chiffrement à double** clé est sélectionné.
@@ -91,11 +91,11 @@ Utilisez l’application de synchronisation OneDrive version 19.002.0121.0008 ou
 
 - Les applications de bureau Office et les applications mobiles ne permettent pas la co-auteur pour les fichiers étiquetés avec chiffrement. Ces applications continuent d’ouvrir des fichiers étiquetés et chiffrés en mode édition exclusif.
 
-- Si un administrateur modifie les paramètres d’une étiquette publiée qui est déjà appliquée aux fichiers téléchargés sur le client de synchronisation des utilisateurs, il se peut que les utilisateurs ne soient pas en mesure d’enregistrer les modifications qu’ils ont apportées au fichier dans leur dossier de synchronisation OneDrive. Ce scénario s’applique aux fichiers étiquetés avec le chiffrement, ainsi qu’à la modification de l’étiquette à partir d’une étiquette qui n’a pas appliqué le chiffrement à une étiquette qui applique le chiffrement. Les utilisateurs [voient un cercle](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)rouge avec une erreur d’icône croisée blanche et sont invités à enregistrer les nouvelles modifications en tant que copie distincte. Au lieu de cela, ils peuvent fermer et rouvrir le fichier ou utiliser Office sur le web.
+- Si un administrateur modifie les paramètres d’une étiquette publiée qui est déjà appliquée aux fichiers téléchargés sur le client de synchronisation des utilisateurs, il se peut que les utilisateurs ne soient pas en mesure d’enregistrer les modifications qu’ils ont apportées au fichier dans leur dossier de synchronisation OneDrive. Ce scénario s’applique aux fichiers étiquetés avec le chiffrement, ainsi qu’à la modification de l’étiquette à partir d’une étiquette qui n’a pas appliqué le chiffrement à une étiquette qui applique le chiffrement. Les utilisateurs [voient un cercle](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)rouge avec une erreur d’icône croisée blanche et sont invités à enregistrer les nouvelles modifications sous la forme d’une copie distincte. Au lieu de cela, ils peuvent fermer et rouvrir le fichier ou utiliser Office sur le web.
 
 - Si un document étiqueté est téléchargé vers SharePoint ou OneDrive et que l’étiquette a appliqué le chiffrement à l’aide d’un compte à partir d’un nom principal de service, le document ne peut pas être ouvert dans Office sur le web. Les exemples de scénarios incluent Microsoft Cloud App Security et un fichier envoyé à Teams par courrier électronique.
 
-- Les utilisateurs peuvent faire face à des problèmes d’économie après avoir été mis hors connexion ou en mode veille lorsque, au lieu d’utiliser Office pour le web, ils utilisent les applications de bureau et mobiles pour Word, Excel ou PowerPoint. Pour ces utilisateurs, lorsqu’ils reprennent leur session d’application Office et essaient d’enregistrer les modifications, ils voient un message d’échec de téléchargement avec une option pour enregistrer une copie au lieu d’enregistrer le fichier d’origine. 
+- Les utilisateurs peuvent faire face à des problèmes lors de leur mise hors connexion ou en mode veille lorsque, au lieu d’utiliser Office pour le web, ils utilisent les applications de bureau et mobiles pour Word, Excel ou PowerPoint. Pour ces utilisateurs, lorsqu’ils reprennent leur session d’application Office et essaient d’enregistrer les modifications, ils voient un message d’échec de téléchargement avec une option pour enregistrer une copie au lieu d’enregistrer le fichier d’origine. 
 
 - Les documents chiffrés des manières suivantes ne peuvent pas être ouverts dans Office sur le web :
     - Chiffrement qui utilise une clé sur site ( « Conserver votre propre clé » ou HYOK)
@@ -103,6 +103,8 @@ Utilisez l’application de synchronisation OneDrive version 19.002.0121.0008 ou
     - Chiffrement appliqué indépendamment d’une étiquette, par exemple, en appliquant directement un modèle de protection Rights Management.
 
 - Les étiquettes configurées pour [d’autres langues ne](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) sont pas pris en charge et affichent uniquement la langue d’origine.
+
+- Les captures d’écran ne peuvent pas être empêchées pour les documents chiffrés. Pour plus d’informations, voir [La Gestion des droits peut-elle empêcher les captures d’écran ?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
 
 - Si vous supprimez une étiquette qui a été appliquée à un document dans SharePoint ou OneDrive, plutôt que de supprimer l’étiquette de la stratégie d’étiquette applicable, le document lors du téléchargement ne sera pas étiqueté ou chiffré. En comparaison, si le document étiqueté est stocké en dehors de SharePoint ou OneDrive, le document reste chiffré si l’étiquette est supprimée. Notez que même si vous pouvez supprimer des étiquettes pendant une phase de test, il est très rare de supprimer une étiquette dans un environnement de production.
 
@@ -172,7 +174,7 @@ Pour activer les nouvelles fonctionnalités, utilisez la cmdlet [Set-SPOTenant](
 
 Lorsque vous utilisez des étiquettes de sensibilité avec SharePoint et OneDrive, n’oubliez pas que vous devez autoriser le temps de réplication lorsque vous publiez de nouvelles étiquettes de sensibilité ou mettez à jour des étiquettes de sensibilité existantes. Ceci est particulièrement important pour les nouvelles étiquettes qui appliquent le chiffrement.
 
-Par exemple : vous créez et publiez une nouvelle étiquette de sensibilité qui applique le chiffrement et qui apparaît très rapidement dans l’application de bureau d’un utilisateur. L’utilisateur applique cette étiquette à un document, puis la télécharge vers SharePoint ou OneDrive. Si la réplication d’étiquettes n’est pas terminée pour le service, les nouvelles fonctionnalités ne seront pas appliquées à ce document lors du chargement. Par conséquent, le document ne sera pas renvoyé dans la recherche ou pour eDiscovery et le document ne peut pas être ouvert dans Office pour le web.  
+Par exemple : vous créez et publiez une nouvelle étiquette de sensibilité qui applique le chiffrement et qui apparaît très rapidement dans l’application de bureau d’un utilisateur. L’utilisateur applique cette étiquette à un document, puis la télécharge vers SharePoint ou OneDrive. Si la réplication d’étiquettes n’est pas terminée pour le service, les nouvelles fonctionnalités ne seront pas appliquées à ce document lors du chargement. Par conséquent, le document n’est pas renvoyé dans la recherche ou pour eDiscovery et le document ne peut pas être ouvert dans Office pour le web.  
 
 Les modifications suivantes sont répliquées dans un délai d’une heure : les étiquettes de confidentialité nouvelles et supprimées, ainsi que les paramètres de stratégie d’étiquette de confidentialité qui incluent les étiquettes qui figurent dans la stratégie.
 
@@ -184,11 +186,11 @@ Les modifications suivantes sont répliquées dans les 24 heures : modifications
 
 La Gestion des droits de l’information [(IRM) SharePoint](set-up-irm-in-sp-admin-center.md) est une technologie plus ancienne qui permet de protéger les fichiers au niveau de la liste et de la bibliothèque en appliquant le chiffrement et les restrictions lors du téléchargement des fichiers. Cette ancienne technologie de protection est conçue pour empêcher les utilisateurs non autorisés d’ouvrir le fichier en dehors de SharePoint.
 
-En comparaison, les étiquettes de niveau de sensibilité fournissent les paramètres de protection des marquages visuels (en-têtes, pieds de page, filigranes) en plus du chiffrement. Les paramètres de chiffrement [](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) prendre en charge l’ensemble des droits d’utilisation pour restreindre ce que les utilisateurs peuvent faire avec le contenu, et les mêmes étiquettes de niveau de sensibilité sont pris en charge dans de nombreux [scénarios.](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels) L’utilisation de la même méthode de protection avec des paramètres cohérents entre les charges de travail et les applications permet d’obtenir une stratégie de protection cohérente.
+En comparaison, les étiquettes de niveau de sensibilité fournissent les paramètres de protection des marquages visuels (en-têtes, pieds de page, filigranes) en plus du chiffrement. Les paramètres de chiffrement [](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) prendre en charge l’ensemble des droits d’utilisation pour restreindre ce que les utilisateurs peuvent faire avec le contenu, et les mêmes étiquettes de niveau de sensibilité sont pris en charge dans de nombreux [scénarios.](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels) L’utilisation de la même méthode de protection avec des paramètres cohérents entre les charges de travail et les applications entraîne une stratégie de protection cohérente.
 
 Toutefois, vous pouvez utiliser les deux solutions de protection ensemble et le comportement est le suivant : 
 
-- Si vous chargez un fichier avec une étiquette de niveau de sensibilité qui applique le chiffrement, SharePoint ne peut pas traiter le contenu de ces fichiers, de sorte que la co-création, eDiscovery, DLP et la recherche ne sont pas pris en charge pour ces fichiers.
+- Si vous chargez un fichier avec une étiquette de niveau de sensibilité qui applique le chiffrement, SharePoint ne peut pas traiter le contenu de ces fichiers de sorte que la co-création, eDiscovery, DLP et la recherche ne sont pas pris en charge pour ces fichiers.
 
 - Si vous étiquetez un fichier à l’aide d’Office sur le web, tous les paramètres de chiffrement de l’étiquette sont appliqués. Pour ces fichiers, la co-auteur, eDiscovery, DLP et la recherche sont pris en charge.
 
@@ -205,7 +207,7 @@ Avec ce comportement, vous pouvez être certain que tous les fichiers Office et 
 
 Utilisez la propriété gérée **InformationProtectionLabelId** pour rechercher tous les documents dans SharePoint ou OneDrive qui ont une étiquette de sensibilité spécifique. Utilisez la syntaxe suivante : `InformationProtectionLabelId:<GUID>`
 
-Par exemple, pour rechercher tous les documents qui ont été étiquetés comme « Confidentiel » et que cette étiquette a le GUID « 8faca7b8-8d20-48a3-8ea2-0f96310a848e », dans la zone de recherche, tapez :
+Par exemple, pour rechercher tous les documents qui ont été étiquetés comme « Confidentiel » et que cette étiquette a un GUID de « 8faca7b8-8d20-48a3-8ea2-0f96310a848e », dans la zone de recherche, tapez :
 
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`    
 
