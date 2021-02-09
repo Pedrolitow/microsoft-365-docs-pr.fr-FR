@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 172c400df3adea70a2e2d2e37547fa39e0d3b9cf
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3eba2459fd9a0af1963ca8d1446b22fc0b1bdb93
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145402"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -34,12 +34,12 @@ ms.locfileid: "49928617"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de faire la recherche dans les événements de compte de principal de `AADSpnSignInEventsBeta` service Azure Active Directory (AAD) et d’identité gérée. Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.<br><br>
-> Les clients qui peuvent accéder à Microsoft 365 Defender par le biais de la solution Microsoft Defender pour point de terminaison intégrée du Centre de sécurité Azure, mais qui n’ont pas de licences pour Microsoft Defender pour Office, Microsoft Defender pour l’identité ou Microsoft Cloud App Security, ne pourront pas afficher ce schéma. 
+> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de faire la recherche dans les événements de participation au principal de `AADSpnSignInEventsBeta` service Azure Active Directory (AAD) et d’identité gérée. Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.<br><br>
+> Les clients qui peuvent accéder à Microsoft 365 Defender par le biais de la solution Microsoft Defender for Endpoint intégrée du Centre de sécurité Azure, mais qui n’ont pas de licences pour Microsoft Defender pour Office, Microsoft Defender pour l’identité ou Microsoft Cloud App Security, ne pourront pas afficher ce schéma. 
 
 
 
-Le tableau du schéma de recherche avancée contient des informations sur le principal de service Azure Active Directory et les signatures d’identité `AADSpnSignInEventsBeta` gérée. Vous pouvez en savoir plus sur les différents types de sign-ins dans les rapports d’activité de [sign-in Azure Active Directory - aperçu](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+Le tableau du schéma de recherche avancée contient des informations sur le principal de service Azure Active Directory et les signatures d’identité `AADSpnSignInEventsBeta` gérée. Vous pouvez en savoir plus sur les différents types de sign-ins dans les rapports d’activité de la [sign-in Azure Active Directory - aperçu](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 
@@ -54,16 +54,16 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Timestamp` | DateHeure      | Date et heure de génération de l’enregistrement                                                                                                     |
 | `Application`          | string        | Application qui a effectué l’action enregistrée                                                                                                   |
 | `ApplicationId`        | string        | Identificateur unique de l’application                                                                                                           |
-| `IsManagedIdentity`    | valeur booléenne       | Indique si la connectez-vous a été initiée par une identité gérée                                                                               |
+| `IsManagedIdentity`    | booléen       | Indique si la connectez-vous a été initiée par une identité gérée                                                                               |
 | `ErrorCode`            | int        | Contient le code d’erreur si une erreur de se connecte se produit. Pour trouver une description d’un code d’erreur spécifique, visitez <https://aka.ms/AADsigninsErrorCodes> . |
 | `CorrelationId`        | string        | Identificateur unique de l’événement de signature                                                                                                          |
 | `ServicePrincipalName` | string        | Nom du principal de service à l’origine de la signature                                                                                        |
 | `ServicePrincipalId`   | string        | Identificateur unique du principal de service à l’origine de la signature                                                                           |
 | `ResourceDisplayName`  | string        | Nom d’affichage de la ressource accessible                                                                                                           |
-| `ResourceId`           | string        | Identificateur unique de la ressource accessible                                                                                                      |
+| `ResourceId`           | string        | Identificateur unique de la ressource à accès                                                                                                      |
 | `ResourceTenantId`     | string        | Identificateur unique du client de la ressource à accès                                                                                        |
 | `IPAddress`            | string        | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées                                                              |
-| `CountryCode`          | string        | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé                                                                |
+| `Country`          | string        | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé                                                                |
 | `State`                | string        | État où la se connecte s’est produite, si disponible                                                                                                  |
 | `City`                 | string        | Ville où se trouve l’utilisateur du compte                                                                                                          |
 | `Latitude`             | string        | Coordonnées nord à sud de l’emplacement de la signature                                                                                          |

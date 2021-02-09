@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0ed696f36737a4102895369e1254b4215cad4def
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c9509c76e5fa945c693e67f394b6432f939b58a5
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145324"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -62,6 +62,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessFileName` | string | Nom du processus à l’origine de l’événement |
+| `InitiatingProcessFileSize` | long | Taille du fichier qui a tenu le processus responsable de l’événement |
 | `InitiatingProcessId` | int | ID de processus (PID) du processus à l’origine de l’événement |
 | `InitiatingProcessCommandLine` | string | Ligne de commande utilisée pour exécuter le processus à l’origine de l’événement |
 | `InitiatingProcessCreationTime` | DateHeure | Date et heure de début du processus à l’origine de l’événement |
@@ -69,15 +70,17 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessParentFileName` | string | Nom du processus parent qui a généré le processus responsable de l’événement |
 | `InitiatingProcessParentId` | int | ID de processus (PID) du processus parent qui a généré le processus responsable de l’événement |
 | `InitiatingProcessParentCreationTime` | DateHeure | Date et heure de début du parent du processus responsable de l’événement |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
 | `InitiatingProcessIntegrityLevel` | string | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité à des processus en fonction de certaines caractéristiques, par exemple s’ils ont été lancés à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
 | `InitiatingProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus à l’origine de l’événement |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
 | `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
+| `AdditionalFields` | string | Informations supplémentaires sur l’événement au format de tableau JSON |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

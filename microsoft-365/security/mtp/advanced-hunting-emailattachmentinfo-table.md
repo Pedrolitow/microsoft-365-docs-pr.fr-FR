@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3d4c72d78fc6a31ec3075d4e7a889e191e639829
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: b810d7b15ef47a33a0675086219d2193cea00f2e
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145018"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -46,6 +46,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `NetworkMessageId` | string | Identificateur unique de l’e-mail, généré par Microsoft 365 |
 | `SenderFromAddress` | string | Adresse e-mail de l’expéditeur dans l’en-tête DE, visible par les destinataires de l’e-mail sur leurs clients de messagerie |
+| `SenderDisplayName` | string | Nom de l’expéditeur affiché dans le carnet d’adresses, généralement une combinaison d’un prénom ou d’un prénom donné, d’une initiale du deuxième prénom et d’un nom ou d’un nom de famille |
+| `SenderObjectId` | string | Identificateur unique du compte de l’expéditeur dans Azure AD |
 | `RecipientEmailAddress` | string | Adresse e-mail du destinataire ou adresse e-mail du destinataire après extension de la liste de distribution |
 | `RecipientObjectId` | string | Identificateur unique du destinataire de courrier dans Azure AD |
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
@@ -53,14 +55,12 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `MalwareFilterVerdict` | string | Verdict de la pile de filtrage d’e-mails selon que l’e-mail contient des programmes malveillants : programme malveillant, programme non malveillant |
 | `MalwareDetectionMethod` | string | Méthode utilisée pour détecter les programmes malveillants dans le courrier électronique : moteur anti-programme malveillant, réputation du fichier, pièces jointes sécurisées |
-| `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
-| `SenderDisplayName` | string | Nom de l’expéditeur affiché dans le carnet d’adresses, généralement une combinaison d’un prénom ou d’un prénom donné, d’une initiale du deuxième prénom et d’un nom ou d’un nom de famille |
-| `SenderObjectId` | string | Identificateur unique du compte de l’expéditeur dans Azure AD |
 | `ThreatTypes` | string | Verdict de la pile de filtrage du courrier électronique selon que l’e-mail contient des programmes malveillants, du hameçonnage ou d’autres menaces |
 | `ThreatNames` | string | Nom de détection des programmes malveillants ou autres menaces détectées |
 | `DetectionMethods` | string | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |
+| `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

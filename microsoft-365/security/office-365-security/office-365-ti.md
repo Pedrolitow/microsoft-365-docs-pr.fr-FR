@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -20,16 +19,21 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les fonctionnalités d’examen et de réponse aux menaces dans Microsoft Defender pour le plan Office 365.
-ms.openlocfilehash: dc6a3dec096b6834d024cc4ff74a5b7600c33d45
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 32b23dca0d4cb70407ce91a652e458b729b3c12f
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794231"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150735"
 ---
 # <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applicable aux**
+-    [Microsoft Defender pour Office 365 (plan 2)](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 
 Les fonctionnalités d’examen et de réponse aux menaces dans Microsoft Defender pour [Office 365](office-365-atp.md) aident les analystes et les administrateurs de sécurité à protéger les utilisateurs de Microsoft 365 pour les entreprises de leur organisation en :

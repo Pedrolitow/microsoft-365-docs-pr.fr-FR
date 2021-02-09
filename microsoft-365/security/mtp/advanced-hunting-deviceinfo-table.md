@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e445902ee83b734f84d02607905413a14c016b8f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6462096a6c1b44ee11299f652a54f261d0355523
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145366"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -47,18 +47,20 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `ClientVersion` | string | Version de l’agent de point de terminaison ou du capteur en cours d’exécution sur l’ordinateur |
-| `PublicIP` | string | Adresse IP publique utilisée par l’ordinateur intégré pour se connecter au service Microsoft Defender for Endpoint. Il peut s’agit de l’adresse IP de l’ordinateur lui-même, d’un périphérique NAT ou d’un proxy |
+| `PublicIP` | string | Adresse IP publique utilisée par l’ordinateur intégré pour se connecter au service Microsoft Defender for Endpoint. Il peut s’agit de l’adresse IP de l’ordinateur lui-même, d’un périphérique NAT ou d’un proxy. |
 | `OSArchitecture` | string | Architecture du système d’exploitation s’exécutant sur la machine |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, tels que Windows 10 et Windows 7 |
 | `OSBuild` | string | Version de build du système d’exploitation en cours d’exécution sur l’ordinateur |
-| `IsAzureADJoined` | valeur booléenne | Indicateur booléen pour savoir si l’ordinateur est joint à Azure Active Directory |
+| `IsAzureADJoined` | booléen | Indicateur booléen pour savoir si l’ordinateur est joint à Azure Active Directory |
+| `DeviceObjectId` | string | Identificateur unique de l’appareil dans Azure AD |
 | `LoggedOnUsers` | string | Liste de tous les utilisateurs connectés à l’ordinateur au moment de l’événement au format de tableau JSON |
 | `RegistryDeviceTag` | string | Balise d’ordinateur ajoutée via le Registre |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
+|`AdditionalFields` | string | Informations supplémentaires sur l’événement au format de tableau JSON |
 | `OSVersion` | string | Version du système d’exploitation s’exécutant sur la machine |
 | `MachineGroup` | string | Groupe d’ordinateurs de l’ordinateur. Ce groupe est utilisé par le contrôle d’accès basé sur un rôle pour déterminer l’accès à l’ordinateur |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

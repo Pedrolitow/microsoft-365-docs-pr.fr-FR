@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9fbd24185288265d698288e0d5e63e8b3c2afd10
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 1a00f7d5fb37cc9eea3f9454d473703084960864
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142932"
 ---
 # <a name="readiness-assessment-tools"></a>Outils d’évaluation de la préparation
 
@@ -22,13 +22,13 @@ Pour une expérience la plus fluide possible lorsque vous vous inscrivez au Bure
 
 ## <a name="downloadable-readiness-assessment-checker-for-devices-and-network"></a>Téléchargeable readiness assessment checker for devices and network
 
-Pour plus d’informations sur l’utilisation de l’outil de vérification de l’évaluation de la disponibilité téléchargeable, consultez l’outil de vérification de l’évaluation de [la disponibilité téléchargeable.](readiness-assessment-downloadable.md)
+Pour plus d’informations sur l’utilisation de l’outil de vérification de l’évaluation de la disponibilité [téléchargeable, voir Téléchargeable readiness assessment checker](readiness-assessment-downloadable.md).
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Outil d’évaluation de la préparation en ligne pour les paramètres de gestion
 
-L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec bureau géré Microsoft. Bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Au bout de 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
+L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec bureau géré Microsoft. Bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Après 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
 
-Toute personne ayant au moins le rôle d’administrateur Intune peut exécuter cet outil, mais deux des vérifications[(](readiness-assessment-fix.md#conditional-access-policies) les stratégies d’accès conditionnel et l’authentification [multifacteur](readiness-assessment-fix.md#multifactor-authentication) nécessitent des autorisations supplémentaires.
+Toute personne ayant au moins le rôle Lecteur global ou Administrateur Intune pourra exécuter cet outil, mais deux des vérifications[(](readiness-assessment-fix.md#conditional-access-policies) les stratégies d’accès conditionnel et l’authentification [multifacteur](readiness-assessment-fix.md#multifactor-authentication) nécessitent des autorisations supplémentaires.
  
 L’outil d’évaluation vérifie les éléments ci-après :
 
@@ -36,7 +36,7 @@ L’outil d’évaluation vérifie les éléments ci-après :
 
 |Chèque  |Description  |
 |---------|---------|
-|Profil Autopilot Deployment     | Vérifie que l’affectation du profil Autopilot Deployment ne s’applique pas à tous les appareils (le profil ne doit être affecté à aucun appareil bureau géré Microsoft.)        |
+|Profil autopilot deployment     | Vérifie que l’affectation du profil Autopilot Deployment ne s’applique pas à tous les appareils (le profil ne doit être affecté à aucun appareil bureau géré Microsoft.)        |
 |Connecteurs de certificat     | Vérifie l’état des connecteurs de certificat pour s’assurer qu’ils sont actifs   |
 |Accès conditionnel     | Vérifie que les stratégies d’accès conditionnel ne  sont pas affectées à tous les utilisateurs (les stratégies d’accès conditionnel ne doivent pas être affectées aux comptes de service Bureau géré Microsoft.)    |
 |Stratégies de conformité des appareils     | Vérifie que les stratégies de conformité Intune  ne sont pas affectées à tous les utilisateurs (les stratégies ne doivent pas être affectées à des appareils bureau géré Microsoft.)    |
@@ -47,11 +47,11 @@ L’outil d’évaluation vérifie les éléments ci-après :
 |Microsoft Store pour Entreprises     | Confirme que Microsoft Store pour Entreprises est activé et synchronisé avec Intune        |
 |Authentification multifacteur | Vérifie que l’authentification multifacteur n’est pas appliquée aux comptes de service Bureau géré Microsoft.
 |Scripts PowerShell     | Vérifie que les scripts Windows PowerShell ne *sont* pas affectés d’une manière qui ciblerait les appareils bureau géré Microsoft    |
-|Région     | Vérifie que votre région est prise en charge par Bureau géré Microsoft        |
+|Région     | Vérifie que votre région est prise en charge par bureau géré Microsoft        |
 |Bases de référence de sécurité     | Vérifie que le profil de base de sécurité ne cible  pas tous les utilisateurs ou tous les appareils (les stratégies de base de sécurité ne doivent pas cibler les appareils bureau géré Microsoft.)       |
 |Applications Windows     | Passer en revue les applications que vous souhaitez affecter aux appareils de bureau géré Microsoft      |
 |Windows Hello Entreprise     | Vérifie que Windows Hello Entreprise est activé        |
-|Anneau de mise à jour Windows 10     | Vérifie que la stratégie « Anneau de mise à jour Windows 10 » d’Intune ne cible pas tous les utilisateurs ou tous les appareils (la stratégie ne doit cibler aucun appareil bureau géré Microsoft.)      |
+|Anneau de mise à jour Windows 10     | Vérifie que la stratégie « Anneau de mise à jour Windows 10 » d’Intune ne cible pas tous les utilisateurs ou tous les appareils (la stratégie ne doit cibler aucun appareil de bureau géré Microsoft.)      |
 
 
 ## <a name="azure-active-directory-settings"></a>Paramètres Azure Active Directory
@@ -73,7 +73,7 @@ L’outil d’évaluation vérifie les éléments ci-après :
 
 |Chèque  |Description  |
 |---------|---------|
-|OneDrive Entreprise     | Vérifie si OneDrive Entreprise utilise des paramètres non pris en aide.        |
+|OneDrive Entreprise     | Vérifie si OneDrive Entreprise utilise des paramètres non pris en aide.        |
 
 
 Pour chaque vérification, l’outil signalera l’un des quatre résultats possibles :
@@ -84,7 +84,7 @@ Pour chaque vérification, l’outil signalera l’un des quatre résultats poss
 |Prêt     | Aucune action n’est requise avant de terminer l’inscription.        |
 |Avis    | Suivez les étapes de l’outil pour une expérience de l’inscription et pour les utilisateurs. Vous *pouvez terminer* l’inscription, mais vous devez résoudre ces problèmes avant de déployer votre premier appareil.        |
 |Non prêt | *L’inscription échoue* si vous ne corrigez pas ces problèmes. Suivez les étapes de l’outil pour les résoudre.        |
-|Erreur | Le rôle Azure Active Director (AD) que vous utilisez ne peut pas exécuter cette vérification. |
+|Error | Le rôle Azure Active Director (AD) que vous utilisez ne peut pas exécuter cette vérification. |
 
 ## <a name="after-enrollment"></a>Après l’inscription
 

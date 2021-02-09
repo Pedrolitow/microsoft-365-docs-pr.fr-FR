@@ -11,61 +11,66 @@ ms.topic: overview
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Cette solution vous indique les attaques Cybersecurity les plus courantes pouvant ressembler à Microsoft 365 et comment y répondre.
+description: Cette solution vous indique à quoi peuvent ressembler les attaques de cybersécurité les plus courantes dans Microsoft 365 et comment y répondre
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 221303d43620e89b8200392961d8aa0916c82763
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 8dd7a90255fdd3e083a5d7306cac2e9ca6411024
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198702"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150182"
 ---
 # <a name="security-incident-response"></a>Réponse aux incidents de sécurité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
- **Résumé :** Cette solution vous indique les indicateurs pour les attaques Cybersecurity les plus courantes dans Office 365, la confirmation positive d’une attaque donnée et la façon de y répondre.
+ **Résumé :** Cette solution vous indique quels sont les indicateurs des attaques de cybersécurité les plus courantes dans Office 365, comment confirmer de manière positive toute attaque donnée et comment y répondre.
 
 ## <a name="learn-how-to-respond-to-cyberattacks"></a>Découvrez comment répondre aux cyberattaques
 
-Tous les cyberattaques ne peuvent pas être déconsidérés. Les agresseurs cherchent constamment de nouvelles faiblesses dans votre stratégie défensive ou ils exploitent les anciens. Savoir comment reconnaître une attaque vous permet de y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
+Toutes les cyberattaques ne peuvent pas être déprécées. Les attaquants recherchent constamment de nouvelles faiblesses dans votre stratégie de défense ou exploitent des anciennes. Le fait de savoir reconnaître une attaque vous permet d’y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
 
-Cette série d’articles vous aide à comprendre à quoi peut ressembler un type d’attaque particulier dans Microsoft 365 et vous indique les étapes que vous pouvez suivre pour répondre. Il s’agit de points d’entrée rapides à comprendre :
+Cette série d’articles vous aide à comprendre à quoi peut ressembler un type particulier d’attaque dans Microsoft 365 et vous donne les étapes à suivre pour y répondre. Ce sont des points d’entrée rapides pour comprendre :
 
-- Ce qu’est l’attaque et comment elle fonctionne.
+- Qu’est-ce que l’attaque et comment elle fonctionne.
 
-- Quels signes, appelés indicateurs de compromission (IOC), Rechercher et comment les Rechercher.
+- Les signes, appelés indicateurs de compromis (IOC), à rechercher et comment les rechercher.
 
 - Comment confirmer l’attaque de manière positive.
 
-- Les étapes à suivre pour découper l’attaque et mieux protéger votre organisation à l’avenir.
+- Étapes à suivre pour réduire l’attaque et mieux protéger votre organisation à l’avenir.
 
-- Fournit des liens vers des informations détaillées sur chaque type d’attaque.
+- Liens vers des informations détaillées sur chaque type d’attaque.
 
-Consultez cet article tous les mois à mesure que d’autres articles seront ajoutés au fil du temps.
+Consultez cet article tous les mois car d’autres articles seront ajoutés au fil du temps.
 
-## <a name="detect-and-remediate-articles"></a>Détecter et corriger les Articles
+## <a name="detect-and-remediate-articles"></a>Détecter et corriger les articles
 
 - [Détecter et résoudre les problèmes d’octroi illégal de consentement dans Office 365](detect-and-remediate-illicit-consent-grants.md)
 
 - [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
-## <a name="incident-response-articles"></a>Articles relatifs à la réponse aux incidents
+## <a name="incident-response-articles"></a>Articles sur la réponse aux incidents
 
 - [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
 
-Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la feuille de [route de sécurité microsoft 365-priorités principales pour les 30 jours, 90 jours et au-delà](security-roadmap.md) pour implémenter les meilleures pratiques recommandées par Microsoft pour la sécurisation de votre organisation Microsoft 365.
+Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la feuille de route de sécurité Microsoft 365 - Principales priorités pour les [30 premiers jours, 90](security-roadmap.md) jours et au-delà pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre organisation Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours.  Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
 
-- Tâches à accomplir dans les 90 premiers jours. La planification et l’implémentation de ces deux éléments prennent un peu plus de temps, mais améliorent grandement votre position de sécurité
+- Tâches à accomplir dans les 90 premiers jours. La planifier et l’implémenter prennent un peu plus de temps, mais améliorent considérablement votre posture de sécurité.
 
 - Au-delà de 90 jours. Ces améliorations sont à mettre en place pendant les 90 premiers jours.

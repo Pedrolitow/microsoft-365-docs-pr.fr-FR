@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1df1295b3386b94e3737c53ac8226c719c8bfa08
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 87ac6194374e8e042cf9d00271b17dd8bb785d64
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145348"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -63,8 +63,10 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceType` | string | Type d’appareil |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. |
 | `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
+| `Port` | string | Port TCP utilisé pendant la communication |
 | `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
-| `DestinationIPAddress` | string | Adresse IP du périphérique exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationPort` | string | Port de destination des communications réseau associées |
 | `TargetDeviceName` | string | Nom de domaine complet (FQDN) de l’appareil à qui l’action enregistrée a été appliquée |
 | `TargetAccountDisplayName` | string | Nom complet du compte à qui l’action enregistrée a été appliquée |
 | `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
@@ -72,7 +74,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ReportId` | long | Identificateur unique de l’événement |
 | `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

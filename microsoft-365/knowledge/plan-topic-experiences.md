@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment planifier le plan des rubriques microsoft
-ms.openlocfilehash: 65983f342b3277d33c7bfeb21d8481b1d3d5e817
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2f7b85399f0b1f49e25aae1f1d4627413594f618
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107953"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150477"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planifier les rubriques microsoft
 
@@ -32,11 +32,11 @@ Dans cet article, nous examinerons les décisions de planification ci-après :
 
 La sécurité et la confidentialité de vos données sont respectées, et les expériences de rubrique n’octroient pas aux utilisateurs un accès supplémentaire aux fichiers dont ils n’ont pas le droit. Nous vous recommandons également de lire les [rubriques microsoft sur](topic-experiences-security-privacy.md) la sécurité et la confidentialité dans le cadre de votre processus de planification.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
-Vous devez être administrateur général ou administrateur SharePoint pour accéder au Centre d’administration Microsoft 365 et configurer rubriques.
+Vous devez être abonné à [Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder au Centre d’administration Microsoft 365 et configurer Rubriques.
 
-Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [dans La rubrique](set-up-topic-experiences.md)Configurer Microsoft .
+Tous les utilisateurs qui vont utiliser Les rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [par la rubrique Configurer Microsoft Topics.](set-up-topic-experiences.md)
 
 ## <a name="topic-discovery"></a>Découverte de rubrique
 
@@ -69,7 +69,7 @@ Les autorisations utilisateur que vous spécifiez déterminent les personnes de 
 
 Les gestionnaires de connaissances supervisent la qualité des informations, la façon dont elles sont structurées et d’autres meilleures pratiques au niveau de votre organisation. Ils peuvent confirmer et rejeter des rubriques.
 
-Bien que vous pouvez spécifier des responsables de rubriques individuels, nous vous recommandons de créer un groupe de sécurité (ou d’utiliser un groupe existant) qui contient les personnes que vous souhaitez utiliser comme responsables de connaissances. Vous pouvez spécifier ce groupe de sécurité pendant le processus d’installation.
+Bien que vous pouvez spécifier des responsables de rubriques individuels, nous vous recommandons de créer un groupe de sécurité (ou d’utiliser un groupe existant) qui contient les personnes qui vous souhaitez être des gestionnaires de connaissances. Vous pouvez spécifier ce groupe de sécurité pendant le processus d’installation.
 
 *Créer et modifier des rubriques*
 
@@ -102,7 +102,7 @@ Si vous souhaitez exclure des rubriques au niveau de l’administrateur, vous de
 Le fichier .csv doit contenir les paramètres suivants :
 
 - **Nom**: tapez le nom de la rubrique que vous souhaitez exclure. Vous pouvez procéder de deux manières :
-- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exacte* *ou* partielle.
+- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
     - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
     - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
 - **Signifie (facultatif)**: (également appelé *expansion)* Si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.

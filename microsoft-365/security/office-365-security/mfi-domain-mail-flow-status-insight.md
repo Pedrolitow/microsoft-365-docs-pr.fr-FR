@@ -14,25 +14,29 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu de l’état du flux de messagerie de domaine supérieur dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour résoudre les problèmes de flux de messagerie liés à leurs enregistrements MX.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 457675e7f32cd513f5593ede53a64aaef9d54904
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: df0f571d29d72b23e7b2e210b61a4fb1676175aa
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029905"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150206"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Informations sur l’état du flux de messagerie du domaine dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **L’aperçu de** l’état [](mail-flow-insights-v2.md) du flux de messagerie de domaine supérieur dans le tableau de bord flux de messagerie dans le Centre de sécurité [&](https://protection.office.com) conformité vous donne l’état actuel du flux de messagerie pour votre organisation.
 
-Cette information vous permet d’identifier et de résoudre les problèmes de domaines qui rencontrent * problèmes de *_flux_* de messagerie. Par exemple, le domaine ne peut pas recevoir de courrier externe car le domaine a expiré ou le domaine a un enregistrement MX incorrect.
+Cette information vous permet d’identifier et de dépanner les domaines qui rencontrent des problèmes de ***flux*** de messagerie. Par exemple, le domaine ne peut pas recevoir de courrier externe car le domaine a expiré ou le domaine a un enregistrement MX incorrect.
 
 ![Widget d’état de flux de domaine supérieur dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-Lorsque vous cliquez sur _ Afficher les  *détails** dans le widget, un flyout d’état du domaine s’affiche, qui affiche plus de détails sur l’état de chaque domaine :
+Lorsque vous cliquez sur Afficher les  **détails** dans le widget, un flyout d’état de domaine s’affiche pour vous fournir plus de détails sur l’état de chaque domaine :
 
 - **Domaine**
 - **Enregistrement MX précédent**

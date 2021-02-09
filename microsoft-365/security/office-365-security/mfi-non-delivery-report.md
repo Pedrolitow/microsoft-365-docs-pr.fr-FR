@@ -14,21 +14,25 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le rapport de non-remise dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller les codes d’erreur les plus fréquemment rencontrés dans les rapports de non-remise (également appelés rapports de non-remise ou de non-remise) des expéditeurs de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbd27fc818a46a983874a04f0e313c622e047ea5
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: af4beefb8ba15fd7d98b11ec2571eee65a99e4e3
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029833"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150158"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Rapport de non-remise dans le Centre de conformité & sécurité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Le rapport d’absence [](mail-flow-insights-v2.md) de remise dans le tableau de bord de flux de messagerie dans le Centre de sécurité [&](https://protection.office.com) conformité affiche les codes d’erreur les plus rencontrés dans les rapports de **non-remise** (également appelés rapports de non-remise) pour les utilisateurs de votre organisation. Ce rapport présente les détails des rapports de non-remise pour vous aider à résoudre les problèmes de remise des e-mails.
 
-![Widget de rapport d’absence de remise dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-non-delivery-report-widget.png)
+![Widget de rapport de non-remise dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-non-delivery-report-widget.png)
 
 ## <a name="report-view-for-the-non-delivery-report"></a>Affichage du rapport de non-remise
 
@@ -49,7 +53,7 @@ Si vous cliquez **sur Afficher le tableau des détails** dans un affichage de ra
 - **Count**
 - **Exemples de messages**: ID de message d’un échantillon de messages affectés.
 
-Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
+Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
 
 Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez **sur Télécharger la demande.**
 
@@ -62,6 +66,6 @@ Lorsque vous sélectionnez une ligne dans le tableau, un flyout s’affiche avec
 
 ![Volant détails après sélection d’une ligne dans l’affichage Tableau Détails dans le rapport de non-remise](../../media/mfi-non-delivery-report-details-flyout.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

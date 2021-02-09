@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: 09/08/2020
 search.appverid:
@@ -19,17 +18,23 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent en savoir plus sur la protection contre les menaces dans Microsoft 365 et configurer son utilisation pour votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2951d5725237d572d357ac3fc6cff0ac4df7e8f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: cb2866fd3e60c021ae89ffabe7149f4b415d63bc
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794435"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150711"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Voici un guide de démarrage rapide qui décompose la configuration de Defender pour Office 365 en blocs. Si vous débutez avec les fonctionnalités de protection contre les menaces dans Office 365, si vous ne savez pas par où commencer, ou si vous apprenez le mieux en faisant *cela,* utilisez ces conseils comme liste de contrôle et point de départ.
 
@@ -55,8 +60,8 @@ Les fonctionnalités de protection contre les menaces *sont incluses dans tous* 
 |Protection anti-courrier indésirable|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Purge automatique de zéro heure (pour le courrier électronique)|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection contre les URL et fichiers malveillants dans les e-mails et les documents Office (liens sécurisés et pièces jointes sécurisées)|[Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Activer LAP pour les charges de travail SharePoint, OneDrive et Microsoft Teams|[Defender pour Office 365 ](atp-for-spo-odb-and-teams.md)|
-|Protection avancée contre le hameçonnage|[Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Activer les pièces jointes sécurisées pour les charges de travail SharePoint, OneDrive et Microsoft Teams|[Defender pour Office 365 ](atp-for-spo-odb-and-teams.md)|
+|Protection avancée contre le hameçonnage|[Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Rôles et autorisations
 
@@ -207,7 +212,7 @@ Pour configurer des [liens sécurisés,](atp-safe-links.md)examiner et modifier 
 
 Pour plus d’informations, reportez-vous à [Configurer les stratégies de liens fiables](set-up-atp-safe-links-policies.md).
 
-## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Partie 5 : vérifier que la atp pour SharePoint, OneDrive et Microsoft Teams est allumée
+## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Partie 5 : vérifier les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams est allumé
 
 Les charges de travail telles que SharePoint, OneDrive et Teams sont conçues pour la collaboration. L’utilisation de Defender pour Office 365 permet de bloquer et de détecter les fichiers identifiés comme malveillants dans les sites d’équipe et les bibliothèques de documents. Vous pouvez en savoir plus sur le fonctionnement [ici.](atp-for-spo-odb-and-teams.md)
 
@@ -216,13 +221,13 @@ Les charges de travail telles que SharePoint, OneDrive et Teams sont conçues po
 
 1. Dans le [Centre de sécurité & conformité,](https://protection.office.com)sélectionnez Stratégie de gestion des menaces pièces  \>  \> **jointes sécurisées ATP,** puis cliquez sur **Paramètres globaux.**
 
-2. Vérifiez que le bouton bascule Activer atp pour **SharePoint, OneDrive** et Microsoft Teams se trouve à droite : activer, puis cliquez sur ![ ](../../media/scc-toggle-on.png) **Enregistrer.**
+2. Vérifiez que le bouton bascule Activer Defender pour **Office 365 pour SharePoint, OneDrive** et Microsoft Teams est à droite : activer, puis cliquez sur ![ ](../../media/scc-toggle-on.png) **Enregistrer.**
 
 3. Examinez (et, le cas échéant, modifiez) les stratégies de pièces [jointes sécurisées et](set-up-atp-safe-attachments-policies.md) les [stratégies de liens sécurisés de votre organisation.](set-up-atp-safe-links-policies.md)
 
 4. (Recommandé) En tant qu’administrateur général ou administrateur SharePoint Online, exécutez la cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** avec le paramètre _DisallowInfectedFileDownload_ définie sur `$true` .
 
-   - `$true` bloque toutes les actions (à l’exception de Supprimer) pour les fichiers détectés. Les personnes ne peuvent pas ouvrir, déplacer, copier ou partager des fichiers détectés.
+   - `$true` bloque toutes les actions (à l’exception de Supprimer) pour les fichiers détectés. Les utilisateurs ne peuvent pas ouvrir, déplacer, copier ou partager les fichiers détectés.
    - `$false` bloque toutes les actions à l’exception de Supprimer et télécharger. Les personnes peuvent choisir d’accepter le risque et de télécharger un fichier détecté.
 
    > [!TIP]

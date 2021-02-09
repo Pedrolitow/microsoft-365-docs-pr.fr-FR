@@ -1,6 +1,6 @@
 ---
 title: Table DeviceEvents dans le schéma de recherche avancé
-description: En savoir plus sur l’antivirus, le pare-feu et d’autres types d’événements dans le tableau Divers événements de périphérique (DeviceEvents) du schéma de recherche avancée
+description: En savoir plus sur l’antivirus, le pare-feu et d’autres types d’événements dans la table Divers événements de périphérique (DeviceEvents) du schéma de recherche avancée
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 536d95f7226ba907d913df58a47508e44b50147a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 1340464fbe71e919a60668cf7d1b2f535eb6d260
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145319"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -37,7 +37,7 @@ ms.locfileid: "49931349"
 
 
 
-Le tableau ou les événements divers de périphérique dans le schéma de recherche avancée contient des informations sur différents types d’événements, y compris les événements déclenchés par des contrôles de sécurité, tels que `DeviceEvents` l’antivirus [](advanced-hunting-overview.md) Windows Defender et Exploit Protection. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau ou les événements divers du périphérique dans le schéma de recherche avancée contient des informations sur différents types d’événements, y compris les événements déclenchés par des contrôles de sécurité, tels que `DeviceEvents` l’antivirus [](advanced-hunting-overview.md) Windows Defender et Exploit Protection. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
 > Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
@@ -66,7 +66,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ProcessCreationTime` | DateHeure | Date et heure de création du processus |
 | `ProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus nouvellement créé |
 | `LogonId` | string | Identificateur d’une session d’ouverture de session. Cet identificateur est unique sur le même ordinateur uniquement entre les redémarrages |
-| `RegistryKey` | string | Clé de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryKey` | string | Clé de Registre à l’application de l’action enregistrée |
 | `RegistryValueName` | string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueData` | string | Données de la valeur de Registre à l’application de l’action enregistrée |
 | `RemoteIP` | string | Adresse IP à laquelle la connexion était en cours |
@@ -76,6 +76,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `FileOriginUrl` | string | URL à partir de laquelle le fichier a été téléchargé |
 | `FileOriginIP` | string | Adresse IP à partir de laquelle le fichier a été téléchargé |
 | `AdditionalFields` | string | Informations supplémentaires sur l’événement au format de tableau JSON |
+| `InitiatingProcessFileSize` | long | Taille du fichier qui a tenu le processus responsable de l’événement |
+| `FileSize` | long | Taille du fichier en octets |
 | `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `InitiatingProcessFileName` | string | Nom du processus à l’origine de l’événement |
@@ -87,14 +89,16 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessParentFileName` | string | Nom du processus parent qui a généré le processus responsable de l’événement |
 | `InitiatingProcessParentCreationTime` | DateHeure | Date et heure de début du parent du processus responsable de l’événement |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
+| `InitiatingProcessAccountObjectId` | string | ID d’objet Azure AD du compte d’utilisateur qui a tenu le processus responsable de l’événement |
 | `InitiatingProcessLogonId` | string | Identificateur d’une session d’ouverture de session du processus à l’origine de l’événement. Cet identificateur est unique sur le même ordinateur uniquement entre les redémarrages |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
 | `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

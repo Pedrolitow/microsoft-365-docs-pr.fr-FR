@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c01b0aae1eff3d9b4add632aff0f13cb56941a30
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7457084d49c5a9fef4ef79abc7702c6b473efcd2
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145290"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -59,6 +59,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AccountDomain` | string | Domaine du compte |
 | `AccountSid` | string | Identificateur de sécurité (SID) du compte |
 | `AccountObjectId` | string | Identificateur unique du compte dans Azure Active Directory |
+| `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
 | `DeviceId` | string | Identificateur unique de l’appareil dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `LocalIP` | string | Adresse IP attribuée à l’appareil local utilisé lors de la communication |
@@ -68,8 +69,11 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Application` | string | Application qui a effectué l’action enregistrée |
 | `ProcessCommandLine` | string | Ligne de commande utilisée pour créer le nouveau processus |
 | `AdditionalFields` | string | Informations supplémentaires sur l’événement au format de tableau JSON |
+| `RegistryKey` |string | Clé de Registre à l’application de l’action enregistrée |
+| `RegistryValueName` |string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryValueData` |string | Données de la valeur de Registre à l’application de l’action enregistrée |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

@@ -7,7 +7,6 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,21 +15,21 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: réponse automatisée aux incidents, examen, correction, protection contre les menaces
-ms.date: 11/05/2020
+ms.date: 01/29/2021
 description: Découvrez le fonctionnement des fonctionnalités d’examen et de réponse automatisées dans Microsoft Defender pour Office 365
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 5ca9ea941d073c7b199678631a9063cfbeae8907
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 97cc2f6bcb066ff2d6f64254add3a57eb27b8828
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142548"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’examen et de la réponse automatisés dans Microsoft Defender pour Office 365
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Lorsque des alertes de sécurité sont déclenchées, c’est à votre équipe des opérations de sécurité d’examiner ces alertes et de prendre les mesures nécessaires pour protéger votre organisation. Parfois, les équipes en matière d’opérations de sécurité peuvent se sentir submergées par le volume d’alertes déclenchées. Les fonctionnalités d’investigation et de réponse automatisées (AIR) dans Microsoft Defender pour Office 365 peuvent vous aider.
 
@@ -93,7 +92,4 @@ Par exemple, récemment, une organisation a mis en place un moyen pour son équi
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Commencer à utiliser AIR](office-365-air.md)
-
-- [Consultez la feuille de route Microsoft 365 pour voir ce qui est prévu et bientôt disponible](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-
-- [En savoir plus sur les fonctionnalités d’investigation et de réponse automatisées dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Afficher les actions de correction en attente ou terminées](air-review-approve-pending-completed-actions.md)

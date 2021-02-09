@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 174db150920d2d95c043bb5d6e5a4593ea1ea39d
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145426"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,12 +34,12 @@ ms.locfileid: "49931037"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de passer par les événements de signature `AADSignInEventsBeta` Azure Active Directory (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.<br><br>
-> Les clients qui peuvent accéder à Microsoft 365 Defender par le biais de la solution Microsoft Defender pour point de terminaison intégrée du Centre de sécurité Azure, mais qui n’ont pas de licences pour Microsoft Defender pour Office, Microsoft Defender pour l’identité ou Microsoft Cloud App Security, ne pourront pas afficher ce schéma. 
+> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de découvrir les événements de signature `AADSignInEventsBeta` Azure Active Directory (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.<br><br>
+> Les clients qui peuvent accéder à Microsoft 365 Defender par le biais de la solution Microsoft Defender for Endpoint intégrée du Centre de sécurité Azure, mais qui n’ont pas de licences pour Microsoft Defender pour Office, Microsoft Defender pour l’identité ou Microsoft Cloud App Security, ne pourront pas afficher ce schéma. 
 
  
 
-Le tableau du schéma de recherche avancée contient des informations sur les cartes de visite interactives et `AADSignInEventsBeta` non interactives Azure Active Directory. En savoir plus sur les sign-ins dans les rapports [d’activité de sign-in Azure Active Directory - aperçu](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+Le tableau du schéma de recherche avancée contient des informations sur les cartes de visite interactives et `AADSignInEventsBeta` non interactives Azure Active Directory. En savoir plus sur les sign-ins dans [les rapports d’activité de sign-in Azure Active Directory - aperçu](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, consultez [la référence de repérage avancé](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
@@ -61,18 +61,18 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AccountObjectId`                 | string        | Identificateur unique du compte dans Azure AD                                                                                                                                       |
 | `AccountUpn`                      | string        | Nom d’utilisateur principal (UPN) du compte                                                                                                                                            |
 | `IsExternalUser`                  | int        | Indique si l’utilisateur qui s’est inscrit est externe. Valeurs possibles : -1 (non définie) , 0 (non externe), 1 (externe).                                                                   |
-| `IsGuestUser`                     | valeur booléenne       | Indique si l’utilisateur qui s’est inscrit est un invité dans le client                                                                                                                  |
+| `IsGuestUser`                     | booléen       | Indique si l’utilisateur qui s’est inscrit est un invité dans le client                                                                                                                  |
 | `AlternateSignInName`             | string        | Nom d’utilisateur principal (UPN) local de l’utilisateur se signant à Azure AD                                                                                                            |
 | `LastPasswordChangeTimestamp`     | DateHeure        | Date et heure de la dernière fois où l’utilisateur qui s’est inscrit a modifié son mot de passe                                                                                                              |
 | `ResourceDisplayName`             | string        | Nom d’affichage de la ressource accessible                                                                                                                                               |
-| `ResourceId`                      | string        | Identificateur unique de la ressource accessible                                                                                                                                          |
+| `ResourceId`                      | string        | Identificateur unique de la ressource à accès                                                                                                                                          |
 | `ResourceTenantId`                | string        | Identificateur unique du client de la ressource à accès                                                                                                                            |
 | `DeviceName`                      | string        | Nom de domaine complet (FQDN) de la machine                                                                                                                                   |
 | `AadDeviceId`                     | string   |      Identificateur unique de l’appareil dans Azure AD                                                                                                                                                                               |
 | `OSPlatform`                      | string        | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7.  |
 | `DeviceTrustType`                 | string        | Indique le type d’confiance de l’appareil qui s’est connecté. Pour les scénarios d’appareil géré uniquement. Les valeurs possibles sont Workplace, AzureAd et ServerAd.                                     |
 | `IsManaged`                       | int       | Indique si l’appareil à l’origine de la connectez-vous est un appareil géré (1) ou non un appareil géré (0)                                                                         |
-| `IsCompliant`                     | int       | Indique si l’appareil à l’origine de la signature est conforme (1) ou non conforme (0)                                                                                       |
+| `IsCompliant`                     | int       | Indique si l’appareil à l’origine de la signature est conforme (1) ou non (0)                                                                                       |
 | `AuthenticationProcessingDetails` | string        | Détails sur le processeur d’authentification                                                                                                                                          |
 | `AuthenticationRequirement`       | string        | Type d’authentification requis pour la signature. Valeurs possibles : multiFactorAuthentication (l’authentification multifacteur était requise) et singleFactorAuthentication (aucune authentification multifacteur n’était requise).                |
 | `TokenIssuerType`                 | int        | Indique si l’émetteur de jeton est Azure Active Directory (0) ou services de fédération Active Directory (1)                                                                             |
@@ -85,7 +85,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ConditionalAccessPolicies`       | string        | Détails des stratégies d’accès conditionnel appliquées à l’événement de signature                                                                                                             |
 | `ConditionalAccessStatus`         | int        | État des stratégies d’accès conditionnel appliquées à la signature. Les valeurs possibles sont 0 (stratégies appliquées), 1 (échec de tentative d’application des stratégies) ou 2 (stratégies non appliquées).      |
 | `IPAddress`                       | string        | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées                                                                                                  |
-| `CountryCode`                     | string        | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé                                                                                                    |
+| `Country`                     | string        | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé                                                                                                    |
 | `State`                           | string        | État où la se connecte s’est produite, si disponible                                                                                                                                      |
 | `City`                            | string        | Ville où se trouve l’utilisateur du compte                                                                                                                                              |
 | `Latitude`                        | string        | Coordonnées nord à sud de l’emplacement de la signature                                                                                                                              |

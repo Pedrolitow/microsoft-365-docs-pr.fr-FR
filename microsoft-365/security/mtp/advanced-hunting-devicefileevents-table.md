@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cb51d9b94cc500361f836f7ba8bc4fc290436805
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cccbd268c8f69d6623df1ef4c8208d20ead2e9f5
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931325"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145294"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -56,9 +56,13 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `FileOriginUrl` | string | URL à partir de laquelle le fichier a été téléchargé |
 | `FileOriginReferrerUrl` | string | URL de la page web qui est lié au fichier téléchargé |
 | `FileOriginIP` | string | Adresse IP à partir de laquelle le fichier a été téléchargé |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a tenu le processus responsable de l’événement |
+| `PreviousFolderPath` | string | Dossier d’origine contenant le fichier avant l’application de l’action enregistrée |
+| `PreviousFileName` | string | Nom d’origine du fichier qui a été renommé à la suite de l’action |
+| `FileSize` | long | Taille du fichier en octets |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
@@ -79,16 +83,18 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `RequestAccountName` | string | Nom d’utilisateur du compte utilisé pour lancer l’activité à distance |
 | `RequestAccountDomain` | string | Domaine du compte utilisé pour lancer l’activité à distance |
 | `RequestAccountSid` | string | Identificateur de sécurité (SID) du compte utilisé pour lancer l’activité à distance |
-| `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
+| `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
 | `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
+| `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
+| `InitiatingProcessFileSize` | long | Taille du fichier qui a tenu le processus responsable de l’événement |
 | `SensitivityLabel` | string | Étiquette appliquée à un e-mail, un fichier ou un autre contenu pour la classer pour la protection des informations |
 | `SensitivitySubLabel` | string | Sous-bel appliquée à un e-mail, un fichier ou tout autre contenu pour le classer pour la protection des informations ; les sous-étiquettes de sensibilité sont regroupées sous des étiquettes de sensibilité, mais sont traitées indépendamment |
-| `IsAzureInfoProtectionApplied` | valeur booléenne | Indique si le fichier est chiffré par Azure Information Protection |
+| `IsAzureInfoProtectionApplied` | booléen | Indique si le fichier est chiffré par Azure Information Protection |
 
 >[!NOTE]
 > Les informations de hachage de fichier sont toujours affichées lorsqu’elles sont disponibles. Toutefois, il existe plusieurs raisons possibles pour lesquelles un SHA1, SHA256 ou MD5 ne peut pas être calculé. Par exemple, le fichier peut se trouver dans un stockage à distance, verrouillé par un autre processus, compressé ou marqué comme virtuel. Dans ces scénarios, les informations de hachage de fichier apparaissent vides.
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 59e9affc53398f2a1b06fbab9774e4b53e146425
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8406d1f9e3d56555b1699d191933c6f9735c9574
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145486"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -54,6 +54,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Protocol` | string | Protocole réseau utilisé |
 | `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountDomain` | string | Domaine du compte |
+| `AccountSid` | string | Identificateur de sécurité (SID) du compte |
 | `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
 | `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
 | `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
@@ -61,14 +62,16 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceType` | string | Type d’appareil | 
 | `OSPlatform` | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. |
 | `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
+| `Port` | string | Port TCP utilisé pendant la communication  |
 | `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
-| `DestinationIPAddress` | string | Adresse IP du périphérique exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationPort` | string | Port de destination des communications réseau associées |
 | `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
 | `Isp` | string | Fournisseur de services Internet (ISP) associé à l’adresse IP du point de terminaison |
 | `ReportId` | long | Identificateur unique de l’événement |
 | `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

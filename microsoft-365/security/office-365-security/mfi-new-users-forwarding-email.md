@@ -12,17 +12,21 @@ ms.assetid: ''
 description: Les administrateurs peuvent apprendre à utiliser les informations sur les nouveaux utilisateurs qui envoient des courriers électroniques dans le Centre de sécurité & conformité pour examiner quand les utilisateurs de leur organisation envoient des messages à de nouveaux domaines.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af991cb0af20a0f48bc5283d4e4fb26ea75d6ba6
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 7b86d726979991a55e7d4e43bf3581a4a664ee4f
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029869"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150254"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nouveaux utilisateurs qui envoient des informations sur le courrier électronique dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Il est suspect lorsque de nouveaux comptes d’utilisateurs de votre organisation commencent soudainement à envoyer des messages électroniques à des domaines externes.
 
@@ -38,7 +42,7 @@ Lorsque vous cliquez sur le widget, un volant s’affiche, dans lequel vous trou
 
 Vous pouvez également vous rendre sur cette page de  détails lorsque vous sélectionnez l’aperçu après avoir cliqué sur Afficher tout dans la zone Recommandations & informations les plus **détaillées** **(** Tableau de bord de rapports \>  ou <https://protection.office.com/insightdashboard> ).
 
-Vous pouvez cliquer sur le **rapport Voir associé au** lien d’informations pour vous rendre dans le rapport de modifications de **forwarding,** comme décrit dans la section suivante.
+Vous pouvez cliquer sur le **rapport Voir associé au** lien d’informations pour aller au rapport de modifications de **forwarding,** comme décrit dans la section suivante.
 
 ## <a name="forwarding-modifications-report"></a>Rapport de modifications de forwarding
 
@@ -79,7 +83,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
   - **Nom**: adresse e-mail de l’expéditeur.
   - **Type de forwarding**
   - **Adresse du destinataire**
-  - **Details**
+  - **Détails**
   - **Count**
   - **Première date d’avance**
 
@@ -88,7 +92,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
   - **Nom**: domaine de messagerie de l’expéditeur.
   - **Type de forwarding**
   - **Adresse du destinataire**
-  - **Details**
+  - **Détails**
   - **Count**
   - **Première date d’avance**
 
@@ -99,7 +103,7 @@ Si vous sélectionnez une ligne dans le tableau, un volant **Détails** s’affi
 - **Nom**: il s’agit de l’adresse e-mail de l’expéditeur (à partir de l’affichage Afficher les données pour : Nouvel affichage **utilisateurs** de **forwarding)** ou du domaine de messagerie de l’expéditeur (à partir de l’affichage Afficher les données pour : Nouvel affichage des nouveaux domaines de forwarding).
 - **Type de forwarding**
 - **Destinataire**
-- **Details**
+- **Détails**
 - **Count**
 - **Date de début**
 - **Recommandation**: à partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans le Centre d’administration Microsoft 365.
@@ -108,6 +112,6 @@ Si vous sélectionnez une ligne dans le tableau, un volant **Détails** s’affi
 
 Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport.**
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

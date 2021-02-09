@@ -15,17 +15,21 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu corriger les règles de flux de messagerie lent dans le Centre de sécurité & conformité pour identifier et corriger les règles de flux de messagerie inefficaces ou rompues (également appelées règles de transport) dans leur organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef9f26994f563a5f9dad411f2276fd42c28496f9
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: f7f084735decda922b5bcc57c029f2b384114d30
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029125"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150783"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Résoudre les problèmes de règles de flux de messagerie dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Des règles de flux de messagerie inefficaces (également appelées règles de transport) peuvent entraîner des retards de flux de messagerie pour votre organisation. Cette information signale les règles de flux de messagerie qui ont un impact sur le flux de messagerie de votre organisation. Voici quelques exemples de ces types de règles :
 
@@ -50,7 +54,7 @@ Lorsque vous cliquez **sur Afficher les détails** sur le widget, un flyout s’
 
 ![Volant de détails qui s’affiche après avoir cliqué sur Afficher les détails sur l’aperçu des règles de flux de messagerie lent fix](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-Pour plus d’informations sur les conditions et les exceptions dans les règles de flux de messagerie, voir Conditions et exceptions des règles de flux de messagerie [(prédicats) dans Exchange Online.](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+Pour plus d’informations sur les conditions et les exceptions dans les règles de flux de messagerie, voir Conditions et exceptions de règle de flux de messagerie [(prédicats) dans Exchange Online.](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
 ## <a name="see-also"></a>Voir aussi
 

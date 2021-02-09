@@ -12,17 +12,21 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent apprendre à utiliser le widget Files d’attente dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller le flux de messagerie infructueux vers leurs organisations locales ou partenaires sur des connecteurs sortants.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73e97cbbd05e298013e9e686053a969d587ad5cf
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 94e8a1f3b54c3738c21e94ba85ae4f1d3f953498
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029149"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150170"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Informations sur les files d’attente dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Lorsque les messages ne peuvent pas être envoyés à partir de votre organisation vers vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente dans Microsoft 365. Les exemples courants à l’origine de cette condition sont les suivants :
 
@@ -70,7 +74,7 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
 
 ## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Informations sur les files d’attente dans le tableau de bord de flux de messagerie
 
-Même si le volume de messages en file d’attente n’a pas  dépassé le [](mail-flow-insights-v2.md) seuil et généré une alerte, vous pouvez toujours utiliser l’aperçu des files d’attente dans le tableau de bord de flux de messagerie pour voir les messages mis en file d’attente depuis plus d’une heure et agir avant que le nombre de messages mis en file d’attente ne devienne trop élevé.
+Même si le volume de messages en file d’attente n’a pas  dépassé le [](mail-flow-insights-v2.md) seuil et généré une alerte, vous pouvez toujours utiliser l’aperçu des files d’attente dans le tableau de bord de flux de messagerie pour voir les messages mis en file d’attente depuis plus d’une heure et prendre des mesures avant que le nombre de messages mis en file d’attente devienne trop important.
 
 ![Widget Files d’attente dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-queues-widget.png)
 

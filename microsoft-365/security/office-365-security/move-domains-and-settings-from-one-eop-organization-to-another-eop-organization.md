@@ -1,5 +1,5 @@
 ---
-title: Déplacer les paramètres des domaines & d’une organisation EOP vers une autre.
+title: Déplacer des domaines & paramètres d’une organisation EOP vers une autre
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,29 +8,32 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
-description: Dans cet article, vous découvrirez comment déplacer des domaines et des paramètres d’une organisation Microsoft Exchange Online Protection (EOP) vers une autre.
-ms.openlocfilehash: 485911ff7ac94c820d6f1e0f7cfa54da08943054
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Dans cet article, vous allez découvrir comment déplacer des domaines et des paramètres d’une organisation (locataire) Microsoft Exchange Online Protection (EOP) vers une autre.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 4cfb5c31728174f7f7307e9492abc03a62f8bf9a
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614821"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150759"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Déplacer des domaines et des paramètres d’une organisation EOP vers une autre
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+-  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 L'évolution des besoins professionnels peut parfois imposer de séparer une organisation Microsoft Exchange Online Protection (EOP) (locataire) en deux organisations distinctes, de fusionner deux organisations en une seule ou de déplacer vos domaines et vos paramètres EOP d'une organisation vers une autre. Le déplacement d'une organisation EOP vers une deuxième organisation EOP peut être difficile, mais avec quelques scripts Windows PowerShell à distance basiques et un peu de préparation, cette opération peut être réalisée dans une fenêtre de maintenance relativement courte.
 
 > [!NOTE]
 >
-> - Les réglages ne peuvent être déplacés de manière fiable que depuis une organisation EOP (standard) autonome vers une autre organisation EOP standard ou vers une organisation avec licence d'accès client Exchange Enterprise avec services (EOP Premium), ou depuis une organisation EOP Premium vers une autre organisation EOP premium. Étant donné que certaines fonctionnalités Premium ne sont pas prises en charge dans les organisations de norme EOP, il se peut que les déplacements d’une organisation EOP Premium vers une organisation EOP standard ne réussissent pas.
+> - Les réglages ne peuvent être déplacés de manière fiable que depuis une organisation EOP (standard) autonome vers une autre organisation EOP standard ou vers une organisation avec licence d'accès client Exchange Enterprise avec services (EOP Premium), ou depuis une organisation EOP Premium vers une autre organisation EOP premium. Étant donné que certaines fonctionnalités Premium ne sont pas pris en charge dans les organisations EOP Standard, les déplacements d’une organisation EOP Premium vers une organisation EOP Standard peuvent ne pas réussir.
 >
 > - Les présentes instructions ne concernent que les organisations à filtrage EOP uniquement. Le déplacement depuis une organisation Exchange Online vers une autre organisation Exchange Online pose des problèmes supplémentaires. Les organisations Exchange Online ne sont pas concernées par ces instructions.
 
@@ -48,21 +51,21 @@ Afin de recréer l’organisation source dans l’organisation cible, veillez à
 - Utilisateurs de messagerie
 - Groupes
 - Anti-spam
-  - Stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage de contenu)
+  - Stratégies anti-courrier indésirable (également appelées stratégies de filtrage de contenu)
   - Stratégies de filtrage du courrier indésirable sortant
   - Stratégies de filtrage des connexions
-- Stratégies de protection contre les programmes malveillants
+- Stratégies anti-programme malveillant
 - Connecteurs
 - Règles de flux de messagerie (également appelées règles de transport)
 
   > [!NOTE]
-  > La prise en charge de l’applet de commande pour l’exportation et l’importation de la règle de flux de messagerie n’est actuellement prise en charge que pour les plans d’abonnement d’EOP Premium.
+  > La prise en charge des cmdlet pour l’exportation et l’importation de la collection de règles de flux de messagerie est actuellement prise en charge uniquement pour les plans d’abonnement EOP Premium.
 
-Le moyen le plus simple de collecter tous vos paramètres est d’utiliser PowerShell. Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+Le moyen le plus simple de collecter tous vos paramètres consiste à utiliser PowerShell. Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Ensuite, vous pouvez collecter tous vos paramètres et les exporter vers un fichier .xml à importer dans le locataire cible. En général, vous pouvez orienter la sortie de la cmdlet **Get** pour chaque paramètre vers la cmdlet **Export-Clixml** afin d'enregistrer les paramètres dans des fichiers .xml, tel qu'illustré dans l'exemple de code ci-après.
 
-Dans la version autonome d’EOP PowerShell, créez un répertoire appelé export dans un emplacement facile à trouver et à modifier dans ce répertoire. Par exemple :
+Dans EOP PowerShell autonome, créez un répertoire appelé Exporter à un emplacement facile à trouver et à modifier dans ce répertoire. Par exemple :
 
 ```PowerShell
 mkdir C:\EOP\Export
@@ -72,7 +75,7 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-Le script suivant peut être utilisé pour collecter tous les utilisateurs de messagerie, les groupes, les paramètres de blocage du courrier indésirable, les paramètres anti-programme malveillant, les connecteurs et les règles de flux de messagerie de l’organisation source. Copiez-collez le texte suivant dans un éditeur de texte comme le Bloc-notes, enregistrez le fichier sous le nom Source_EOP_Settings.ps1 dans le répertoire Export que vous venez de créer et exécutez la commande suivante :
+Le script suivant peut être utilisé pour collecter tous les utilisateurs de messagerie, groupes, paramètres anti-courrier indésirable, paramètres anti-programme malveillant, connecteurs et règles de flux de messagerie dans l’organisation source. Copiez-collez le texte suivant dans un éditeur de texte comme le Bloc-notes, enregistrez le fichier sous le nom Source_EOP_Settings.ps1 dans le répertoire Export que vous venez de créer et exécutez la commande suivante :
 
 ```PowerShell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
@@ -176,13 +179,13 @@ Foreach ($domain in $Domains) {
 }
 ```
 
-À présent, vous pouvez consulter et collecter les informations du centre d’administration Microsoft 365 de votre organisation cible afin de pouvoir vérifier rapidement vos domaines lorsque le temps est le suivant :
+Vous pouvez maintenant consulter et collecter les informations à partir du Centre d’administration Microsoft 365 de votre organisation cible afin de vérifier rapidement vos domaines lorsque le moment est venu :
 
-1. Connectez-vous au centre d’administration Microsoft 365 à l’adresse <https://portal.office.com> .
+1. Connectez-vous au Centre d’administration Microsoft 365 à l’adresse <https://portal.office.com> .
 
 2. Cliquez sur **Domaines**.
 
-   Si vous ne voyez pas de domaine, cliquez sur **personnaliser la navigation**, sélectionnez **configuration**, puis cliquez sur **Enregistrer**.
+   Si vous ne voyez pas de domaines, cliquez sur Personnaliser **la navigation,** sélectionnez **Installation,** puis cliquez sur **Enregistrer**.
 
 3. Cliquez sur chaque lien **Démarrer l'installation** et suivez les étapes de l'assistant d'installation.
 
@@ -190,7 +193,7 @@ Foreach ($domain in $Domains) {
 
 5. Sauvegardez l'enregistrement MX ou l'enregistrement TXT dossier que vous allez utiliser pour vérifier votre domaine, puis fermez l'assistant d'installation.
 
-6. Ajoutez les enregistrements TXT de vérification à vos enregistrements DNS. Vous pourrez ainsi vérifier plus rapidement les domaines de l'organisation source après leur retrait de l'organisation cible. Pour plus d’informations sur la configuration du DNS, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+6. Ajoutez les enregistrements TXT de vérification à vos enregistrements DNS. Vous pourrez ainsi vérifier plus rapidement les domaines de l'organisation source après leur retrait de l'organisation cible. Pour plus d’informations sur la configuration du DNS, voir Créer des enregistrements DNS chez un fournisseur d’hébergement [DNS pour Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Étape 3 : Forcer les expéditeurs à mettre les messages en attente
 
@@ -200,7 +203,7 @@ Une des manières de forcer les expéditeurs à mettre les messages en attente c
 
 Une autre option consiste à placer un enregistrement MX non valide dans chaque domaine où sont conservés les enregistrements DNS de votre domaine (également connu comme service d'hébergement DNS). L'expéditeur doit alors mettre vos messages en attente et retenter l'opération (les nouvelles tentatives ont généralement lieu sous 48 heures, mais cela peut varier d'un fournisseur à l'autre). Vous pouvez utiliser invalid.outlook.com comme cible MX non valide. L'abaissement de la durée de vie (TTL) à cinq minutes pour l'enregistrement MX permet de propager plus rapidement la modification aux fournisseurs DNS.
 
-Pour plus d’informations sur la configuration du DNS, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Pour plus d’informations sur la configuration du DNS, voir Créer des enregistrements DNS chez un fournisseur d’hébergement [DNS pour Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
 
 > [!IMPORTANT]
 > Chaque fournisseur met les messages en attente pour des durées différentes. Vous devrez configurer rapidement votre nouveau locataire et rétablir vos paramètres DNS afin d'éviter l'envoi de rapports de non-remise (NDR) à l'expéditeur lors de l'expiration du délai d'attente.
@@ -248,7 +251,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Étape 5 : Vérifier les domaines de l’organisation cible
 
-1. Connectez-vous au centre d’administration à l’adresse <https://portal.office.com> .
+1. Connectez-vous au Centre d’administration à <https://portal.office.com> l’adresse .
 
 2. Cliquez sur **Domaines**.
 
@@ -930,4 +933,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Étape 8 : Rétablir vos paramètres DNS pour interrompre la mise en attente des messages
 
-Si vous avez choisi de définir vos enregistrements MX sur une adresse non valide de façon à ce que les expéditeurs envoient des messages en file d’attente pendant votre transition, vous devez les rétablir sur la valeur correcte, comme indiqué dans le [Centre d’administration](https://admin.microsoft.com). Pour plus d’informations sur la configuration du DNS, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Si vous avez choisi de définir vos enregistrements MX sur une adresse non valide pour que les expéditeurs placent les [](https://admin.microsoft.com)messages en file d’attente pendant votre transition, vous devez les définir à nouveau sur la valeur correcte, comme spécifié dans le Centre d’administration. Pour plus d’informations sur la configuration du DNS, voir Créer des enregistrements DNS chez un fournisseur d’hébergement [DNS pour Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)

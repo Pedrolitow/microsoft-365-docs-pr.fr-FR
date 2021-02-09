@@ -1,7 +1,7 @@
 ---
 title: Table DeviceTvmSecureConfigurationAssessmentKB dans le schéma de repérage avancé
 description: Découvrez les différentes configurations sécurisées évaluées par la fonction Gestion des menaces et des vulnérabilités dans la table DeviceTvmSecureConfigurationAssessmentKB du schéma de repérage avancé.
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, MITRE ATT&CK framework, knowledge base, KB, DeviceTvmSecureConfigurationAssessmentKB
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, MITRE ATT&CK framework, knowledge base, KB, DeviceTvmSecureConfigurationAssesmentKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4cd23b8f3ba99b38264b9bf1ba18e8ec2574bab6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cf4204767843b9a9e0b0bbfecc2d3fc50db531fc
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145450"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -51,8 +51,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ConfigurationCategory` | string | Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité|
 | `ConfigurationSubcategory` | string |Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques. |
 | `ConfigurationBenchmarks` | string | Liste des références du secteur recommandant une configuration identique ou similaire |
-| `RelatedMitreTechniques` | string | Liste des techniques d’infrastructure Mitre ATT&CK relatives à la configuration |
-| `RelatedMitreTactics ` | string | Liste des tactiques d’infrastructure Mitre ATT&CK relatives à la configuration |
+| `Tags` | string | Étiquettes représentant différents attributs utilisés pour identifier ou classer une configuration de sécurité |
+| `RemediationOptions` | string | Actions recommandées pour réduire ou résoudre les risques associés |
 
 ## <a name="related-topics"></a>Sujets associés
 
