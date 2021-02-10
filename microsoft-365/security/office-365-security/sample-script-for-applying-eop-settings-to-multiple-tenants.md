@@ -1,5 +1,5 @@
 ---
-title: 'Exemple de script pour les paramètres EOP : plusieurs locataires'
+title: Exemple de script pour les paramètres EOP - plusieurs locataires
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,36 +8,39 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
-description: Dans cet article, vous apprendrez à utiliser PowerShell pour appliquer des paramètres de configuration à vos clients dans Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: b18fc71171a93e2a2f415800bcf2b5abd5c5a526
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Dans cet article, vous allez apprendre à utiliser PowerShell pour appliquer des paramètres de configuration à vos locataires dans Microsoft Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b7d856a7cec3bddc32455ba3afadf0323ddce935
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615863"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166590"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Exemple de script pour l’application de paramètres EOP à plusieurs clients
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+-  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-L’exemple de script suivant permet aux administrateurs de Microsoft Exchange Online Protection (EOP) qui gèrent plusieurs locataires (entreprises) d’utiliser Exchange Online PowerShell pour afficher et/ou appliquer des paramètres de configuration à leurs clients.
+L’exemple de script suivant permet aux administrateurs Microsoft Exchange Online Protection (EOP) qui gèrent plusieurs locataires (sociétés) d’utiliser Exchange Online PowerShell pour afficher et/ou appliquer des paramètres de configuration à leurs locataires.
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Pour exécuter un script ou une cmdlet sur plusieurs locataires
 
-1. Si vous ne l’avez pas encore fait, [Installez le module Exchange Online v2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+1. Si ce n’est pas déjà fait, [installez le module Exchange Online V2.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
 
-2. À l’aide d’une application de feuille de calcul (par exemple, Excel), créez un fichier. csv avec les détails suivants :
+2. À l’aide d’une application de feuille de calcul (par exemple, Excel), créez un fichier .csv avec les détails suivants :
 
-   - Colonne UserName : compte que vous utiliserez pour vous connecter (par exemple, `admin@contoso.onmicrosoft.com` ).
-   - Colonne cmdlet : cmdlet ou commande à exécuter (par exemple, `Get-AcceptedDomain` ou `Get-AcceptedDomain | FT Name` ).
+   - Colonne UserName : compte que vous utiliserez pour vous connecter (par exemple, `admin@contoso.onmicrosoft.com` ).
+   - Colonne de cmdlet : cmdlet ou commande à exécuter (par exemple, `Get-AcceptedDomain` ou `Get-AcceptedDomain | FT Name` ).
 
-   Le fichier se présente comme suit :
+   Le fichier se présentera comme ceci :
 
    ```text
    UserName,Cmdlet
@@ -45,9 +48,9 @@ L’exemple de script suivant permet aux administrateurs de Microsoft Exchange O
    admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
    ```
 
-3. Enregistrez le fichier. csv à un emplacement facile à trouver (par exemple, c:\scripts\inputfile.csv).
+3. Enregistrez le fichier .csv à un emplacement facile à trouver (par exemple, c:\scripts\inputfile.csv).
 
-4. Copiez le [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) script dans le bloc-notes, puis enregistrez le fichier dans un emplacement facile à trouver (par exemple, c:\Scripts).
+4. Copiez le script [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) dans le Bloc-notes, puis enregistrez le fichier à un emplacement facile à trouver (par exemple, c:\scripts).
 
 5. Exécutez le script à l'aide de la syntaxe suivante :
 
@@ -61,12 +64,12 @@ L’exemple de script suivant permet aux administrateurs de Microsoft Exchange O
    & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. Chaque client est connecté à, et le script est exécuté.
+6. Chaque client est connecté et le script est exécuté.
 
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> Vous devrez peut-être modifier la `Connect-IPPSSession` ligne dans le script pour qu’elle corresponde à votre environnement. Par exemple, Office 365 Germany requiert une valeur _ConnectionUri_ différente de la valeur actuelle d’un script. Pour plus d’informations, consultez la rubrique connexion à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+> Vous devrez peut-être modifier `Connect-IPPSSession` la ligne dans le script pour qu’elle corresponde à votre environnement. Par exemple, Office 365 Germany requiert une valeur _ConnectionUri_ différente de la valeur actuelle dans un script. Pour plus d’informations, voir Se connecter [à Exchange Online PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

@@ -8,41 +8,46 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft a développé diverses stratégies, procédures et a adopté plusieurs meilleures pratiques du secteur afin de protéger les utilisateurs contre des courriers indésirables, indésirables ou malveillants.
-ms.openlocfilehash: b971823201fb805c9e17da8402250065d274668d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour protéger nos utilisateurs contre les courriers électroniques abusifs, indésirables ou malveillants.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202374"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166854"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft s'engage à vous fournir l'expérience utilisateur la plus fiable sur le web. Par conséquent, Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour aider à protéger ses utilisateurs contre les messages abusifs, indésirables ou malveillants. Les expéditeurs qui tentent d’envoyer des courriers électroniques aux utilisateurs doivent s’assurer qu’ils sont parfaitement conscients et suivent les instructions fournies dans cet article pour vous aider dans cet effort et pour éviter d’éventuels problèmes de remise.
+Microsoft s'engage à vous fournir l'expérience utilisateur la plus fiable sur le web. Par conséquent, Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour aider à protéger ses utilisateurs contre les messages abusifs, indésirables ou malveillants. Les expéditeurs qui tentent d’envoyer des courriers électroniques aux utilisateurs doivent s’assurer qu’ils comprennent parfaitement et suivent les instructions de cet article pour vous aider dans cet effort et éviter les problèmes de remise potentiels.
 
-Si vous ne respectez pas ces instructions et stratégies, il se peut que notre équipe de support ne puisse pas vous assister. Si les problèmes de livraison basés sur votre adresse IP d'envoi persistent bien que vous suiviez les instructions, pratiques et stratégies présentées dans cet article, suivez la procédure d'envoi d'une demande de retrait de la liste. Pour obtenir des instructions, consultez [la rubrique utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Si vous ne respectez pas ces instructions et stratégies, il se peut que notre équipe de support ne puisse pas vous assister. Si les problèmes de livraison basés sur votre adresse IP d'envoi persistent bien que vous suiviez les instructions, pratiques et stratégies présentées dans cet article, suivez la procédure d'envoi d'une demande de retrait de la liste. Pour obtenir des instructions, voir Utiliser le portail Supprimer de la liste pour vous supprimer de la liste des [expéditeurs bloqués.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
 
 ## <a name="general-microsoft-policies"></a>Stratégies générales Microsoft
 
-Les messages envoyés aux utilisateurs de Microsoft 365 doivent être conformes à toutes les stratégies Microsoft qui régissent la transmission de courrier et l’utilisation de Microsoft 365.
+Les courriers électroniques envoyés aux utilisateurs de Microsoft 365 doivent être conformes à toutes les stratégies Microsoft régissant la transmission et l’utilisation de Microsoft 365.
 
-- Conditions de service applicables à Microsoft 365 ; en particulier, l’interdiction de l’utilisation du service pour le courrier indésirable ou la distribution de programmes malveillants.
+- Conditions d’utilisation applicables à Microsoft 365 ; en particulier, l’interdiction d’utiliser le service pour le courrier indésirable ou la distribution de programmes malveillants.
 
 - [Contrat de Services Microsoft](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>Réglementations gouvernementales
 
-Les messages envoyés aux utilisateurs de Microsoft 365 doivent respecter toutes les lois et réglementations applicables en matière de communications par courrier électronique dans la juridiction applicable.
+Les courriers électroniques envoyés aux utilisateurs de Microsoft 365 doivent respecter toutes les lois et réglementations applicables en matière de communications électroniques dans la juridiction applicable.
 
 - [CAN-SPAM Act: A Compliance Guide for Business](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -50,13 +55,13 @@ Les messages envoyés aux utilisateurs de Microsoft 365 doivent respecter toutes
 
 ## <a name="technical-guidelines"></a>Instructions techniques
 
-Les courriers électroniques envoyés à Microsoft 365 doivent respecter les recommandations applicables répertoriées dans les documents ci-dessous (certains liens sont uniquement disponibles en anglais).
+Les courriers électroniques envoyés à Microsoft 365 doivent être conformes aux recommandations applicables répertoriées dans les documents ci-dessous (certains liens sont disponibles uniquement en anglais).
 
 - [RFC 2505: Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: SMTP Service Extension for Command Pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-En outre, les serveurs de messagerie qui se connectent à Microsoft 365 doivent respecter les conditions suivantes :
+En outre, les serveurs de messagerie qui se connectent à Microsoft 365 doivent respecter les exigences suivantes :
 
 - L'expéditeur doit être conforme à toutes les normes techniques en matière de transmission de messages Internet, tel que publié par The Internet Society's Internet Engineering Task Force (IETF), y compris RFC 5321, RFC 5322, entre autres.
 
@@ -78,7 +83,7 @@ Les expéditeurs, les fournisseurs de services Internet et autres fournisseurs d
 
 ## <a name="microsoft-365-limits"></a>Limites de Microsoft 365
 
-Les expéditeurs doivent respecter les limites de Microsoft 365 indiquées dans [limites d’Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
+Les expéditeurs doivent respecter les limites de Microsoft 365 répertoriées dans [les limites d’Exchange Online Protection.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
 
 ## <a name="email-delivery-resources-and-organizations"></a>Organisations et ressources de remise de courrier électronique
 
@@ -86,13 +91,13 @@ Microsoft collabore activement avec des organismes et fournisseurs de services d
 
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
 
-- [Alliance d’approbation en ligne](https://www.otalliance.org/resources)
+- [Online Trust Alliance](https://www.otalliance.org/resources)
 
-- [Fournisseur de courriers électroniques & Coalition](https://www.espcoalition.org/)
+- [Email Sender & Provider Coalition](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Création de rapport de courrier indésirable et de mauvaise utilisation
 
-Pour signaler des courriers indésirables, injurieux, indésirables ou malveillants, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md). L’envoi de ces types de communications est une violation de la stratégie Microsoft et des mesures appropriées seront prises sur les rapports confirmés.
+Pour signaler des courriers électroniques illicites, abusifs, indésirables ou malveillants, reportez-vous aux messages et [fichiers envoyés à Microsoft.](report-junk-email-messages-to-microsoft.md) L’envoi de ces types de communications constitue une violation de la stratégie de Microsoft et des mesures appropriées seront prises sur les rapports confirmés.
 
 ## <a name="law-enforcement"></a>Application des lois
 

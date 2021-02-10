@@ -9,7 +9,6 @@ ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,17 +17,21 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Découvrez les affichages de campagne dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: 20cb50a4b304e148df24e54fac3a05c484cfa4f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e3b9c1a9a19e38ea83b13d9028af1a6ba042b900
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794363"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165918"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Microsoft Defender pour Office 365 (plan 2)](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 Les affichages de campagne sont une fonctionnalité de Microsoft Defender pour Office 365 Plan 2 (par exemple, Microsoft 365 E5 ou les organisations avec un module add-on Defender pour Office 365 Plan 2). Les affichages de campagne dans le Centre de sécurité & conformité identifient et classent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
 
@@ -49,15 +52,15 @@ Microsoft tire parti des grandes quantités de données anti-hameçonnage, anti-
 - **Destinataires du message**: lien entre les destinataires. Par exemple, les domaines des destinataires, les fonctions de travail des destinataires (administrateurs, cadres, etc.), les types d’entreprise (grandes, petites, publiques, privées, etc.) et les secteurs d’activité.
 - **Charge utile d’attaque**: liens malveillants, pièces jointes ou autres charges utiles dans les messages.
 
-Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée sur votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
+Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée contre votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
 
 ## <a name="campaign-views-in-the-security--compliance-center"></a>Affichages des campagnes dans le Centre de sécurité & conformité
 
-Les affichages de campagne sont disponibles dans le [Centre de sécurité & conformité](https://protection.office.com) sur les campagnes de gestion des  \> menaces, ou directement dans <https://protection.office.com/campaigns> .
+Les affichages de campagne sont disponibles dans le [Centre de sécurité & conformité](https://protection.office.com) sur **les** campagnes de gestion des \> menaces, ou directement dans <https://protection.office.com/campaigns> .
 
 ![Vue d’ensemble des campagnes dans la Centre de sécurité et conformité](../../media/campaigns-overview.png)
 
-Vous pouvez également obtenir les affichages campagne à partir des points de vue de campagne :
+Vous pouvez également obtenir les affichages de campagne à partir des pages :
 
 - **Gestion des menaces** \> **Explorateur** \> **Affichage** \> **Campagnes**
 - **Gestion des menaces** \> **Explorateur** \> **Affichage** \> **Tous les e-mails** \> **Onglet Campagne**
@@ -70,7 +73,7 @@ Pour accéder aux affichages campagne, vous devez être membre  des groupes de r
 
 La page vue d’ensemble affiche des informations sur toutes les campagnes.
 
-Sous l’onglet **Campagne** par défaut, la zone **Type** de campagne affiche un graphique à barres qui indique le nombre de destinataires par jour. Par défaut, le graphique affiche les données **de** hameçonnage et **de programmes** malveillants.
+Sous l’onglet **Campagne** par défaut, la zone **Type** de campagne affiche un graphique à barres qui indique le nombre de destinataires par jour. Par défaut, le graphique affiche les données **de** hameçonnage **et de programmes** malveillants.
 
 > [!TIP]
 > Si vous ne voyez pas de données de campagne, essayez de modifier la plage de dates ou les [filtres.](#filters-and-settings)
@@ -97,7 +100,7 @@ Le reste de la page de vue d’ensemble affiche les informations suivantes sous 
 
 - **Clicked**: nombre d’utilisateurs qui ont cliqué sur l’URL ou ouvert la pièce jointe dans le message d’hameçonnage.
 
-- **Taux de** clic : pourcentage calculé par «**Boîte de**  /  **réception cliquée**». Cette valeur est un indicateur de l’efficacité de la campagne. En d’autres termes, si les destinataires ont pu identifier le message comme hameçonnage et s’ils n’ont pas cliqué sur l’URL de la charge utile.
+- **Taux de** clic : pourcentage tel que calculé par «**Boîte** de  /  **réception cliquée**». Cette valeur est un indicateur de l’efficacité de la campagne. En d’autres termes, si les destinataires ont pu identifier le message comme hameçonnage et s’ils n’ont pas cliqué sur l’URL de la charge utile.
 
   Notez que **le taux de clics** n’est pas utilisé dans les campagnes anti-programme malveillant.
 
@@ -113,7 +116,7 @@ En haut de la page Affichages des campagnes, il existe plusieurs paramètres de 
 
 Le filtrage le plus simple que vous pouvez faire est la date/l’heure de début et la date/heure de fin.
 
-Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser.**
+Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser**.
 
 Les propriétés filtrables de campagne disponibles dans le bouton **Type** de campagne sont décrites dans la liste suivante :
 
@@ -127,7 +130,7 @@ Les propriétés filtrables de campagne disponibles dans le bouton **Type** de c
   - **Subject**
   - **Nom de fichier des pièces jointes**
   - **Famille de programmes malveillants**
-  - **Balises**: utilisateurs ou groupes sur lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
+  - **Balises**: utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
   - **Remplacements système**
   - **Action de remise**
   - **Action supplémentaire**
@@ -157,7 +160,7 @@ Pour un filtrage plus avancé, y compris le  filtrage par plusieurs propriétés
 
 - Vous pouvez cliquer **sur Ajouter une condition pour** sélectionner plusieurs conditions.
 - Vous pouvez choisir l’opérateur **And** ou **Or** entre les conditions.
-- Vous pouvez sélectionner l’élément **de groupe Condition** en bas de la liste des conditions pour former des conditions composées complexes.
+- Vous pouvez sélectionner **l’élément de groupe Condition** en bas de la liste des conditions pour former des conditions composées complexes.
 
 Lorsque vous avez terminé, cliquez sur **le bouton Requête.**
 
@@ -212,7 +215,7 @@ Le diagramme contient les informations suivantes :
 
   ****
 
-  |Valeur|Verdict du filtre anti-courrier indésirable|Description|
+  |Valeur|Verdict de filtrage du courrier indésirable|Description|
   |---|---|---|
   |**Autorisé**|`SFV:SKN` <p> `SFV:SKI`|Le message a été marqué comme n’étant pas du courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme n’étant pas un courrier indésirable par une règle de flux de messagerie (également appelée règle de transport). <p> Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent se trouver dans la même organisation.|
   |**Bloqué**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable. Par exemple, par une règle de flux de messagerie.|
@@ -250,7 +253,7 @@ Le diagramme contient les informations suivantes :
 
 Lorsqu’un message de hameçonnage est remis dans la boîte de réception ou le dossier Courrier indésirable d’un destinataire, il est toujours possible que l’utilisateur clique sur l’URL de la charge utile. Ne pas cliquer sur l’URL est une petite mesure de réussite, mais vous devez déterminer pourquoi le message de hameçonnage a même été remis à la boîte aux lettres.
 
-Si un utilisateur a cliqué sur l’URL de la charge utile dans le message de hameçonnage, les actions s’affichent dans la zone de **clics de l’URL** du diagramme dans l’affichage Détails de la campagne.
+Si un utilisateur a cliqué sur l’URL de la charge utile dans le message de hameçonnage, les actions s’affichent dans la zone **clics de l’URL** du diagramme dans l’affichage Détails de la campagne.
 
 - **Autorisé**
 - **BlockPage**: le destinataire [a](atp-safe-links.md) cliqué sur l’URL de la charge utile, mais son accès au site web malveillant a été bloqué par une stratégie de liens sécurisés dans votre organisation.
@@ -263,7 +266,7 @@ Si un utilisateur a cliqué sur l’URL de la charge utile dans le message de ha
 Les onglets de l’affichage Détails de la campagne vous permettent d’examiner plus en détail la campagne.
 
 > [!TIP]
-> Les informations affichées sur les onglets sont contrôlées par la plage de dates ombrées dans la chronologie, comme décrit dans la section [Informations sur la](#campaign-information) campagne.
+> Les informations affichées dans les onglets sont contrôlées par la plage de dates ombrées dans la chronologie, comme décrit dans la section [Informations sur la](#campaign-information) campagne.
 
 - **Url clicks**: If users didn’t click on the payload URL in the message, this section will be blank. Si un utilisateur a pu cliquer sur l’URL, les valeurs suivantes sont remplies :
   - **Utilisateur**<sup>\*</sup>
@@ -284,7 +287,7 @@ Les onglets de l’affichage Détails de la campagne vous permettent d’examine
   - **Boîte de réception**
   - **Non boîte de réception**
   - **DKIM transmis**: l’expéditeur a été authentifié par [DKIM (Domain Keys Identified Mail).](support-for-validation-of-dkim-signed-messages.md) Un expéditeur qui ne passe pas la validation DKIM indique un expéditeur non authentifié ou le message usurpe un expéditeur légitime.
-  - **DMARC transmis**: L’expéditeur a été authentifié par l’authentification de message basée sur le domaine, la rapport et [la conformité (DMARC)](use-dmarc-to-validate-email.md). Un expéditeur qui ne passe pas la validation DMARC indique un expéditeur non authentifié ou le message usurpe un expéditeur légitime.
+  - **DMARC transmis**: l’expéditeur a été authentifié par l’authentification de message basée sur le domaine, la rapports et la [conformité (DMARC).](use-dmarc-to-validate-email.md) Un expéditeur qui ne passe pas la validation DMARC indique un expéditeur non authentifié ou le message usurpe un expéditeur légitime.
 
 - **Attachments**
   - **Filename**

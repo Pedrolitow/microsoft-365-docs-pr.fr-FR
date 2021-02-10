@@ -17,29 +17,34 @@ ms.collection:
 description: Les administrateurs peuvent découvrir les différentes façons de signaler les messages et fichiers bon et mauvais à Microsoft pour analyse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 601d0c599a815529540281679bd2b0f907031058
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: b75b05f33ab6c6a5827101ad2f5b14c94b932135
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099689"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166686"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Signaler les messages et fichiers à Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les utilisateurs et les administrateurs ont plusieurs méthodes différentes pour signaler des messages électroniques et des fichiers à Microsoft.
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+Dans les organisations Microsoft 365 avec boîtes aux lettres dans Exchange Online ou les organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les utilisateurs et les administrateurs ont plusieurs méthodes différentes pour signaler des messages électroniques et des fichiers à Microsoft.
 
 ****
 
 |Méthode|Description|
 |---|---|
-|[Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft](admin-submission.md)|Méthode de rapport recommandée pour les administrateurs dans les organisations ayant des boîtes aux lettres Exchange Online (non disponible dans EOP autonome).|
+|[Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft](admin-submission.md)|La méthode de rapport recommandée pour les administrateurs dans les organisations avec des boîtes aux lettres Exchange Online (non disponible dans EOP autonome).|
 |[Activer le complément Signaler le message](enable-the-report-message-add-in.md)|Fonctionne avec Outlook et Outlook sur le web (anciennement Outlook Web App). <p> En fonction de votre abonnement, les messages que les utilisateurs ont signalés avec le add-in sont disponibles dans [](threat-explorer-views.md#email--submissions)le portail de soumissions d’administration, les résultats d’examen et de réponse [automatisés (AIR),](air-view-investigation-results.md)le rapport des [messages](view-email-security-reports.md#user-reported-messages-report)signalés par l’utilisateur et l’Explorateur de [menaces.](admin-submission.md) <p> Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)
 |[Activez le complément Signaler un message de hameçonnage](enable-the-report-phish-add-in.md)|Fonctionne avec Outlook et Outlook sur le web (anciennement Outlook Web App). <p> En fonction de votre abonnement, les messages que les utilisateurs ont signalés avec le add-in sont disponibles dans [](threat-explorer-views.md#email--submissions)le portail de soumissions d’administration, les résultats d’examen et de réponse [automatisés (AIR),](air-view-investigation-results.md)le rapport des [messages](view-email-security-reports.md#user-reported-messages-report)signalés par l’utilisateur et l’Explorateur de [menaces.](admin-submission.md) <p> Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)|
 |[Installer et utiliser le add-in Junk Email Reporting pour Microsoft Outlook](junk-email-reporting-add-in-for-microsoft-outlook.md)|Fonctionne uniquement dans Outlook.|
-|[Signaler le courrier indésirable et le hameçonnage dans Outlook sur le web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Utilisez les fonctionnalités intégrées dans Outlook sur le web pour les organisations ayant des boîtes aux lettres Exchange Online (non disponibles dans EOP autonome). <p> Les messages que les utilisateurs signalent sont disponibles [dans le portail Soumissions d’administrateur.](admin-submission.md) <p> Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)|
-|[Signaler le courrier indésirable et le hameçonnage dans Outlook pour iOS et Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Utilisez les fonctionnalités intégrées dans Outlook pour iOS et Android pour les organisations ayant des boîtes aux lettres Exchange Online (non disponibles dans EOP autonome). <p> Les messages que les utilisateurs signalent sont disponibles [dans le portail Soumissions d’administrateur.](admin-submission.md) <p> Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)|
+|[Signaler le courrier indésirable et le hameçonnage dans Outlook sur le web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Utilisez les fonctionnalités intégrées d’Outlook sur le web pour les organisations ayant des boîtes aux lettres Exchange Online (non disponibles dans EOP autonome). <p> Les messages que les utilisateurs signalent sont disponibles [dans le portail Soumissions d’administrateur.](admin-submission.md) <p> Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)|
+|[Signaler le courrier indésirable et le hameçonnage dans Outlook pour iOS et Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Utilisez les fonctionnalités intégrées dans Outlook pour iOS et Android pour les organisations avec des boîtes aux lettres Exchange Online (non disponibles dans EOP autonome). <p> Les messages que les utilisateurs signalent sont disponibles [dans le portail Soumissions d’administration.](admin-submission.md) <p> Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)|
 |[Envoyer manuellement des messages à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Envoyez manuellement des messages joints à des adresses de messagerie Microsoft spécifiques pour le courrier indésirable, et non le courrier indésirable et le hameçonnage.|
 |[Utiliser des règles de flux de messagerie pour voir ce que vos utilisateurs ont signalé à Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Découvrez comment créer une règle de flux de messagerie (également appelée règle de transport) qui vous avertit lorsque les utilisateurs signalent des messages à Microsoft pour analyse.|
 |[Soumettre des programmes malveillants et non malveillants à Microsoft pour analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Utilisez le site Microsoft Security Intelligence pour envoyer des pièces jointes et d’autres fichiers.|

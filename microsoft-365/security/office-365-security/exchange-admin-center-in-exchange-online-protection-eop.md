@@ -8,49 +8,52 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: Découvrez l’interface de gestion Web dans Exchange Online Protection (EOP).
-ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Découvrez l’interface de gestion web dans Exchange Online Protection (EOP) autonome.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659665"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166218"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centre d’administration Exchange dans EOP autonome
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+-  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-Le centre d’administration Exchange (EAA) est une console de gestion basée sur le Web pour Exchange Online Protection (EOP).
+Le Centre d’administration Exchange (CAE) est une console de gestion web pour Exchange Online Protection (EOP) autonome.
 
 Vous recherchez la version Exchange Online de cette rubrique ? Consultez la rubrique [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-## <a name="open-the-eac-in-eop"></a>Ouvrir le centre d’administration Exchange dans EOP
+## <a name="open-the-eac-in-eop"></a>Ouvrir le CAE dans EOP
 
-Les clients EOP autonomes peuvent accéder au centre d’administration Exchange à l’aide des méthodes suivantes :
+Les clients EOP autonomes peuvent accéder au CAE en utilisant les méthodes suivantes :
 
-- **À partir du centre d’administration Microsoft 365**:
+- **À partir du Centre d’administration Microsoft 365**:
 
-  1. Accédez à <https://admin.microsoft.com> et cliquez sur **Afficher tout**.
+  1. Go to <https://admin.microsoft.com> and click Show **all**.
 
-     ![Cliquez sur Afficher tout dans le centre d’administration Microsoft 365](../../media/m365-center-show-all.png)
+     ![Cliquez sur Afficher tout dans le Centre d’administration Microsoft 365](../../media/m365-center-show-all.png)
 
-  2. Dans la section **centres d’administration** qui s’affiche, cliquez sur **tous les centres d’administration**.
+  2. Dans la section **Centres d’administration** qui s’affiche, cliquez **sur Tous les centres d’administration.**
 
-     ![Cliquez sur tous les centres d’administration dans le centre d’administration Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
+     ![Cliquez sur Tous les centres d’administration dans le Centre d’administration Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
 
-  3. Sur la page **tous les centres d’administration** qui s’affiche, cliquez sur **Exchange Online Protection**.
+  3. Dans la page **Tous les centres d’administration** qui s’affiche, cliquez **sur Exchange Online Protection**.
 
-- Accédez directement à `https://admin.protection.outlook.com/ecp/` .
+- Go directly to `https://admin.protection.outlook.com/ecp/` .
 
-## <a name="common-user-interface-elements-in-the-eac-in-eop"></a>Éléments d’interface utilisateur courants dans le centre d’administration Exchange dans EOP
+## <a name="common-user-interface-elements-in-the-eac-in-eop"></a>Éléments d’interface utilisateur courants dans le CAE dans EOP
 
 Cette section décrit les éléments d'interface utilisateur disponibles dans le CAE.
 
@@ -60,20 +63,20 @@ Cette section décrit les éléments d'interface utilisateur disponibles dans le
 
 Il s'agit du premier niveau de navigation pour la plupart des tâches que vous effectuez au sein du CAE. Le volet des fonctionnalités est organisé par domaines de fonctionnalités.
 
-- **Destinataires**: c’est ici que vous pouvez afficher les groupes et les contacts externes.
+- **Destinataires**: il s’agit de l’endroit où vous allez afficher les groupes et les contacts externes.
 
-- **Autorisations**: ce qui vous permet de gérer les rôles d’administrateur.
+- **Autorisations :** c’est ici que vous allez gérer les rôles d’administrateur.
 
-- **Gestion** de la conformité : c’est ici que vous trouverez le rapport de groupe de rôles d’administrateur et le rapport du journal d’audit de l’administrateur.
+- **Gestion de la** conformité : il s’agit de l’endroit où se trouvent le rapport du groupe de rôles d’administrateur et le rapport du journal d’audit de l’administrateur.
 
-- **Protection**: c’est ici que vous pouvez gérer les stratégies de protection contre les programmes malveillants, la stratégie de filtrage des connexions par défaut et DKIM.
+- **Protection**: il s’agit de l’endroit où vous pouvez gérer les stratégies anti-programme malveillant, la stratégie de filtrage des connexions par défaut et DKIM.
 
   > [!NOTE]
-  > Vous devez gérer les stratégies anti-programme malveillant et la stratégie de filtrage des connexions par défaut dans le centre de sécurité & conformité. Pour plus d’informations, consultez la rubrique [configurer des stratégies anti-programmes malveillants dans EOP](configure-anti-malware-policies.md) et [configurer le filtrage des connexions dans EOP](configure-the-connection-filter-policy.md).
+  > Vous devez gérer les stratégies anti-programme malveillant et la stratégie de filtrage des connexions par défaut dans le Centre de sécurité & conformité. Pour plus d’informations, voir [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) and [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).
 
-- **Flux de messagerie**: c’est ici que vous gérerez les règles de flux de messagerie (également appelées règles de transport), les domaines acceptés et les connecteurs, ainsi que les emplacements où vous pouvez exécuter le suivi des messages.
+- **Flux de** messagerie : il s’agit de l’endroit où vous allez gérer les règles de flux de messagerie (également appelées règles de transport), les domaines acceptés et les connecteurs, ainsi que l’endroit où vous pouvez exécuter le suivi des messages.
 
-- **Hybride**: c’est ici que vous pouvez exécuter l' [Assistant Configuration hybride](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)et où vous pouvez installer le [module Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).
+- **Hybride**: il s’agit de l’endroit où vous pouvez exécuter l’Assistant [Configuration](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)hybride et où vous pouvez installer le [module Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).
 
 ### <a name="tabs"></a>Onglets
 
@@ -107,21 +110,21 @@ Quand vous sélectionnez un objet de l'affichage Liste, les informations relativ
 
 ### <a name="me-tile-and-help"></a>Vignette de l'utilisateur en cours et Aide
 
-La vignette **Moi** vous permet de fermer votre session du Centre d'administration Exchange (CAE) pour ouvrir ensuite une session en tant qu'utilisateur différent. Dans le menu déroulant de l’icône aide à **l’aide** ![ ](../../media/ITPro-EAC-HelpIcon.gif) , vous pouvez effectuer les actions suivantes :
+La vignette **Moi** vous permet de fermer votre session du Centre d'administration Exchange (CAE) pour ouvrir ensuite une session en tant qu'utilisateur différent. Dans le menu **déroulant** Icône Aide, vous pouvez ![ faire les actions ](../../media/ITPro-EAC-HelpIcon.gif) suivantes :
 
-- **Aide**: cliquez sur l' ![ icône aide ](../../media/ITPro-EAC-HelpIcon.gif) pour afficher le contenu de l’aide en ligne.
-- **Commentaires**: laisser une évaluation.
-- **Communauté**: Publiez une question pour trouver des réponses dans les forums de la communauté.
-- **Désactiver la bulle d'** aide : la bulle d’aide affiche une aide contextuelle pour les champs lorsque vous créez ou modifiez un objet. Vous pouvez activer ou désactiver la bulle d'aide.
-- **Afficher la journalisation des commandes**: une nouvelle fenêtre s’ouvre et affiche les commandes PowerShell équivalentes en fonction des informations que vous avez configurées dans le centre d’administration Exchange.
+- **Aide :** cliquez sur ![ Icône Aide pour afficher le contenu de ](../../media/ITPro-EAC-HelpIcon.gif) l’aide en ligne.
+- **Commentaires :** laisser des commentaires.
+- **Communauté**: publiez une question pour trouver des réponses dans les forums de la communauté.
+- **Désactiver la bulle d’aide**: la bulle d’aide affiche une aide contextuelle pour les champs lorsque vous créez ou modifiez un objet. Vous pouvez activer ou désactiver la bulle d'aide.
+- **Afficher la journalisation** des commandes : une nouvelle fenêtre s’ouvre et affiche les commandes PowerShell équivalentes en fonction de ce que vous avez configuré dans le CENTRE D’EAC.
 
 ## <a name="supported-browsers"></a>Navigateurs pris en charge
 
-Pour bénéficier d’une meilleure expérience d’utilisation du CAE, nous vous recommandons de toujours utiliser les navigateurs, clients Office et applications les plus récents. Nous vous recommandons également d'installer les mises à jour logicielles lorsqu'elles sont disponibles. Pour plus d’informations sur les navigateurs pris en charge et la configuration système requise pour le service, voir [Configuration requise pour Office](https://products.office.com/office-system-requirements).
+Pour bénéficier d’une meilleure expérience d’utilisation du CAE, nous vous recommandons de toujours utiliser les navigateurs, clients Office et applications les plus récents. Nous vous recommandons également d'installer les mises à jour logicielles lorsqu'elles sont disponibles. Pour plus d’informations sur les navigateurs pris en charge et la système requise pour le service, voir [System requirements for Office](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-languages"></a>Langues prises en charge
 
-Les langues suivantes sont prises en charge et disponibles pour le centre d’administration Exchange en mode autonome EOP.
+Les langues suivantes sont pris en charge et disponibles pour le CAE dans EOP autonome.
 
 - Amharique
 - Arabe

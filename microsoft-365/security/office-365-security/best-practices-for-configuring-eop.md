@@ -7,21 +7,24 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Suivez ces recommandations pour Exchange Online Protection (EOP) autonome afin de vous configurer pour réussir et d’éviter les erreurs de configuration courantes.
-ms.openlocfilehash: a229f8a269037296fa2b97ff7211343549b33685
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1a38454ceaba7f95dff172335dc374530efca20a
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864887"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165930"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Meilleures pratiques pour la configuration d’EOP autonome
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+-  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Suivez ces recommandations pour Exchange Online Protection (EOP) autonome afin de vous configurer pour réussir et d’éviter les erreurs de configuration courantes. Cette rubrique part de l'hypothèse que vous avez déjà effectué le processus de configuration. Si vous n'avez pas encore configuré EOP, consultez la rubrique [Configurer votre service EOP](set-up-your-eop-service.md).
 
@@ -78,4 +81,4 @@ Lorsque vous déployez une nouvelle règle en production, commencez par sélecti
 
 Lors du déploiement d'une nouvelle règle, songez à ajouter l'action supplémentaire **Générer un rapport d'incident** pour contrôler son action.
 
-Dans les environnements hybrides où votre organisation inclut à la fois Exchange local et Exchange Online, prenons en compte les conditions que vous utilisez dans les règles de flux de messagerie. Si vous souhaitez que les règles s’appliquent à l’ensemble de l’organisation, assurez-vous d’utiliser les conditions disponibles dans Exchange local et dans Exchange Online. Bien que la plupart des conditions soient disponibles dans les deux environnements, certaines d’entre elles sont disponibles uniquement dans un environnement ou dans l’autre. Pour plus d’informations, voir règles de flux de messagerie [(règles de transport) dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+Dans les environnements hybrides où votre organisation inclut à la fois Exchange local et Exchange Online, prenons en compte les conditions que vous utilisez dans les règles de flux de messagerie. Si vous souhaitez que les règles s’appliquent à l’ensemble de l’organisation, assurez-vous d’utiliser les conditions disponibles dans Exchange local et dans Exchange Online. Bien que la plupart des conditions soient disponibles dans les deux environnements, certaines d’entre elles sont disponibles uniquement dans un environnement ou dans l’autre. Pour plus d’informations, [voir les règles de flux de messagerie (règles de transport) dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)

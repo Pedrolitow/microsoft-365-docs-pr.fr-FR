@@ -15,40 +15,39 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment migrer des fichiers Google vers Microsoft 365 pour les entreprises à l’aide de Mover.
-ms.openlocfilehash: 99040e4846aba084f40536e88f0aed70998f48be
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 72ea81ad86a20e01b4650915fef96a713b207c3b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928197"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166158"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Migrer des fichiers Google vers Microsoft 365 pour les entreprises 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-Lorsque vous migrez vers Microsoft 365 pour les entreprises, vous souhaiterez migrer vos fichiers à partir de Google Drive. Vous pouvez utiliser l’application Mover pour déplacer des fichiers à partir de lecteurs personnels et partagés. Pour plus d’informations, [voir Migration cloud de Mover](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)
+Lorsque vous migrez vers Microsoft 365 pour les entreprises, vous souhaiterez migrer vos fichiers à partir de Google Drive. Vous pouvez utiliser l’application Mover pour déplacer des fichiers à partir de lecteurs personnels et partagés. Pour plus d’informations, [voir Migration cloud de Mover.](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)
 
 > [!NOTE]
 > Mover effectuera une copie des fichiers et les déplacera vers Microsoft 365 pour les entreprises. Les fichiers d’origine resteront également dans Google Drives.
 
 ## <a name="before-you-start"></a>Avant de commencer
 
-Tous les utilisateurs doivent s’être inscrits à Microsoft 365 pour les entreprises et configurer leur OneDrive Entreprise. Pour ce faire, [office.com,](https://office.com)connectez-vous avec vos informations d’identification Microsft 365 pour entreprise, puis choisissez OneDrive.
+Tous les utilisateurs doivent s’être inscrits à Microsoft 365 pour les entreprises et configurer leur OneDrive Entreprise. Pour ce faire, [office.com,](https://office.com)connectez-vous avec vos informations d’identification Microsoft 365 entreprise, puis choisissez OneDrive.
 
 ## <a name="try-it"></a>Essayez !
 
 ### <a name="install-mover"></a>Installer Mover
 
-1. Connectez-vous à votre console d’administration Google Workspace [sur admin.google.com](https://admin.google.com).
+1. Connectez-vous à votre console d’administration Google Workspace [admin.google.com](https://admin.google.com).
 
-1. Choose **Apps**, **Google Workspace Marketplace apps**, Then Add app to Domain Install **list**.
+1. Choose **Apps**  >  **Google Workspace Marketplace apps** Add app to Domain Install  >  **list**.
 
 1. Recherchez Mover et sélectionnez-le.
 
@@ -86,7 +85,7 @@ Tous les utilisateurs doivent s’être inscrits à Microsoft 365 pour les entre
 
     Pour plus [d’informations, voir aka.ms/movercsv](https://docs.microsoft.com/sharepointmigration/mover-create-migration-csv).
 
-    Lorsque vous ajoutez l’URL du chemin de destination, supprimez tout le texte après Documents partagés, par exemple, cette URL complète ne fonctionne pas : `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
+    Lorsque vous ajoutez l’URL du chemin d’accès de destination, supprimez tout le texte après documents partagés. Par exemple, cette URL complète ne fonctionnera pas : `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
 
     Remplacez-la par : `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents`
 

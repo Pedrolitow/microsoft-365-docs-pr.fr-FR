@@ -14,20 +14,24 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent en savoir plus sur les options intégrées de signalement de courrier indésirable, non indésirable et de hameçonnage dans Outlook pour iOS et Android.
+description: Les administrateurs peuvent en savoir plus sur les options intégrées de signalement du courrier indésirable, et non du courrier indésirable et du hameçonnage dans Outlook pour iOS et Android.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d702ab1d97c07c3e38430a9a7beff5f14db7b60a
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 58027f7589280b1266cddc8cfbf44db9e4f0ece4
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029279"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166818"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Signaler le courrier indésirable et le hameçonnage dans Outlook pour iOS et Android dans Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou locales utilisant l’authentification moderne [hybride,](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview)vous pouvez utiliser les options de rapport intégrées dans Outlook pour iOS et Android pour envoyer des faux positifs (courrier électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Exchange Online Protection (EOP).
 
@@ -72,4 +76,4 @@ Dans le dossier Courrier indésirable, utilisez les étapes suivantes pour signa
 
 3. Appuyez **sur Pas de courrier indésirable**.
 
-Une notification toast apparaît que l’e-mail a été déplacé vers votre boîte de réception. Si vous changez d’avis, **sélectionnez Annuler** dans la notification toast. Le courrier électronique reste dans le dossier Courrier indésirable.
+Une notification toast s’affiche pour vous faire savoir que l’e-mail a été déplacé vers votre boîte de réception. Si vous changez d’avis, sélectionnez **Annuler** dans la notification toast. Le courrier électronique reste dans le dossier Courrier indésirable.

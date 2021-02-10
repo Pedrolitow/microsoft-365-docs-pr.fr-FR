@@ -8,29 +8,34 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: Vous pouvez utiliser des règles de flux de messagerie (règles de transport) pour identifier et effectuer des actions sur les messages qui transitent par votre organisation.
-ms.openlocfilehash: 6bbf50b1a99b6691e959f6dcd4cfce33686a0014
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Vous pouvez utiliser des règles de flux de messagerie (règles de transport) pour identifier et prendre des mesures sur les messages qui circulent dans votre organisation.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3f873d4e46c9e3b7f085e03a9fbb19e5914317fa
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659196"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167034"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Règles de flux de courriers (règles de transport) dans EOP autonome
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Dans les organisations Exchange Online (EOP) autonomes sans boîtes aux lettres Exchange Online, vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour identifier et effectuer des actions sur les messages qui transitent par votre organisation.
+Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour identifier les messages qui circulent dans votre organisation et agir sur ces derniers.
 
-Cette rubrique décrit les composants des règles de flux de messagerie et leur fonctionnement.
+Cette rubrique explique les composants des règles de flux de messagerie et leur fonctionnement.
 
-Pour connaître les étapes à suivre pour créer, copier et gérer les règles de flux de messagerie, consultez la rubrique [Manage mail Flow Rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Pour chaque règle, vous avez la possibilité de l'appliquer, de la tester ou bien de la tester et d'avertir l'expéditeur. Pour en savoir plus sur les options de test, voir [tester les règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) et les [conseils de stratégie dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
+Pour obtenir la procédure de création, de copie et de gestion des règles de flux de messagerie, voir Gérer les règles de flux de [messagerie dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) Pour chaque règle, vous avez la possibilité de l'appliquer, de la tester ou bien de la tester et d'avertir l'expéditeur. Pour en savoir plus sur les options de test, voir Tester les règles de [flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) et les [conseils de stratégie dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 
-Pour obtenir des rapports de synthèse et détaillés sur les messages qui correspondent aux règles de flux de messagerie, voir [utiliser les rapports de protection de messagerie pour afficher les données sur les programmes malveillants, le courrier indésirable et les détections de règles](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
+Pour obtenir des rapports récapitulatifs et détaillés sur les messages qui correspondent aux règles de flux de messagerie, voir Utiliser les rapports de protection de messagerie pour afficher les données sur les programmes malveillants, le courrier indésirable et les [détections de règles.](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)
 
 Pour mettre en œuvre des stratégies de messagerie spécifiques à l'aide de règles de flux de messagerie, consultez ces rubriques :
 
@@ -38,7 +43,7 @@ Pour mettre en œuvre des stratégies de messagerie spécifiques à l'aide de r�
 
 - [Configurer le chiffrement dans Office 365 Entreprise](../../compliance/set-up-encryption.md)
 
-- [Clauses d’exclusion de responsabilité, signatures, pieds de page ou en-têtes de message à l’échelle de l’organisation dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+- [Clauses d’exclusion de responsabilité, signatures, pieds de ligne ou en-têtes de message à l’échelle de l’organisation dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
 - [Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
@@ -48,7 +53,7 @@ Pour mettre en œuvre des stratégies de messagerie spécifiques à l'aide de r�
 
 - [Définir des règles pour chiffrer ou déchiffrer des messages électroniques dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
-La vidéo suivante fournit une démonstration de la configuration des règles de flux de messagerie dans EOP autonome.
+La vidéo suivante présente une démonstration de la configuration des règles de flux de messagerie dans EOP autonome.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
 
@@ -56,19 +61,19 @@ La vidéo suivante fournit une démonstration de la configuration des règles de
 
 Une règle de flux de messagerie est constituée de conditions, d’exceptions, d’actions et de propriétés :
 
-- **Conditions**: identifier les messages auxquels vous voulez appliquer les actions. Certaines conditions examinent les champs d’en-tête de message (par exemple, les champs À, De ou Cc). D’autres examinent les propriétés des messages (par exemple l’objet, le corps, les pièces jointes, la taille ou la classification du message). La plupart des conditions font appel à un opérateur de comparaison (par exemple, « égal à », « différent de » ou « contient ») ainsi qu’à une valeur de concordance que vous devez spécifier. S’il n’y a ni conditions ni d’exceptions, la règle s’applique à tous les messages.
+- **Conditions**: identifiez les messages à appliquer aux actions. Certaines conditions examinent les champs d’en-tête de message (par exemple, les champs À, De ou Cc). D’autres examinent les propriétés des messages (par exemple l’objet, le corps, les pièces jointes, la taille ou la classification du message). La plupart des conditions font appel à un opérateur de comparaison (par exemple, « égal à », « différent de » ou « contient ») ainsi qu’à une valeur de concordance que vous devez spécifier. S’il n’y a ni conditions ni d’exceptions, la règle s’applique à tous les messages.
 
-Pour plus d’informations sur les conditions de règle de flux de messagerie dans EOP autonome, consultez la rubrique [mail Flow Rule conditions and exceptions (prédicats) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+Pour plus d’informations sur les conditions de règle de flux de messagerie dans EOP autonome, voir Conditions et exceptions de règle de flux de messagerie [(prédicats) dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-- **Exceptions**: Identifiez éventuellement les messages auxquels les actions ne doivent pas s’appliquer. Les identificateurs de message disponibles dans les conditions le sont également dans les exceptions. Les exceptions ont la priorité sur les conditions et empêchent l’application d’actions à un message, même s’il remplit toutes les conditions configurées.
+- **Exceptions**: identifient éventuellement les messages à qui les actions ne doivent pas s’appliquer. Les identificateurs de message disponibles dans les conditions le sont également dans les exceptions. Les exceptions ont la priorité sur les conditions et empêchent l’application d’actions à un message, même s’il remplit toutes les conditions configurées.
 
-- **Actions**: spécifiez la marche à suivre pour les messages qui répondent aux conditions de la règle et ne correspondent à aucune des exceptions. De nombreuses actions sont possibles, notamment le rejet, la suppression ou la redirection de messages, l’ajout de destinataires supplémentaires, l’ajout de préfixes à l’objet des messages ou l’insertion de clauses d’exclusion de responsabilité dans le corps des messages.
+- **Actions**: spécifiez ce qu’il faut faire aux messages qui correspondent aux conditions de la règle et qui ne correspondent à aucune des exceptions. De nombreuses actions sont possibles, notamment le rejet, la suppression ou la redirection de messages, l’ajout de destinataires supplémentaires, l’ajout de préfixes à l’objet des messages ou l’insertion de clauses d’exclusion de responsabilité dans le corps des messages.
 
-Pour plus d’informations sur les actions de règle de flux de messagerie disponibles dans EOP autonome, consultez la rubrique [mail Flow Rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+Pour plus d’informations sur les actions de règle de flux de messagerie disponibles dans EOP autonome, voir Actions de règle de flux de messagerie [dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
 - **Propriétés**: spécifiez d’autres paramètres de règles qui ne sont pas des conditions, des exceptions ou des actions. Par exemple, lorsque la règle doit être appliquée, les propriétés indiquent s’il faut appliquer ou tester la règle, ainsi que la période de temps sur laquelle la règle reste active.
 
-  Pour plus d’informations, reportez-vous à la section [Propriétés des règles de flux de messagerie](#mail-flow-rule-properties) de cet article.
+  Pour plus d’informations, voir la section [Propriétés des](#mail-flow-rule-properties) règles de flux de messagerie dans cet article.
 
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Plusieurs conditions, exceptions et actions
 
@@ -95,7 +100,7 @@ Le tableau suivant décrit les propriétés de règle qui sont disponibles dans 
 |**Priorité**|_Priority_|Indique l'ordre dans lequel les règles sont appliquées aux messages. La priorité par défaut est définie en fonction de la date de création de la règle (les règles plus anciennes ont une priorité plus élevée que les règles plus récentes et les règles haute priorité sont traitées avant les règles basse priorité).   <p> Vous modifiez la priorité de la règle dans le CAE en la déplaçant vers le haut ou le bas de la liste des règles. Dans PowerShell, vous définissez le numéro de priorité (0 est la priorité la plus élevée). <p> Par exemple, si vous disposez d'une règle qui rejette les messages dans lesquels figure un numéro de carte de crédit et d'une autre règle qui exige une approbation, vous voudrez certainement que la règle de rejet soit appliquée en premier et que les autres règles ne s'appliquent pas.  |
 |**Mode**|_Mode_|Vous pouvez spécifier si vous souhaitez que la règle commence immédiatement le traitement des messages ou si vous souhaitez tester les règles sans affecter la remise du message (avec ou sans prévention contre la perte de données ou conseils de stratégie DLP). <p> Les conseils de stratégie affichent une courte note dans Outlook ou Outlook sur le web afin d'avertir une personne créant un message de possibles violations de stratégie. Pour plus d'informations, consultez la rubrique **Conseils de stratégie**.  <p> Pour plus d’informations sur les modes, voir **Test a mail flow rule**.|
 |**Activer cette règle à la date suivante** <p> **Désactiver cette règle à la date suivante**|_ActivationDate_ <p> _ExpiryDate_|Spécifie la plage de dates au cours de laquelle la règle est active.|
-|Case à cocher **Activé** sélectionnée ou non|Nouvelles règles : paramètre _Enabled_ sur la cmdlet **New-TransportRule** . <p> Règles existantes : Utilisez les cmdlets **Enable-TransportRule** ou **Disable-TransportRule**. <p> La valeur est affichée dans la propriété **State** de la règle.|Vous pouvez créer une règle désactivée, puis l'activer lorsque vous êtes prêt à la tester. Vous pouvez également désactiver une règle sans la supprimer pour en conserver les paramètres.|
+|Case à cocher **Activé** sélectionnée ou non|Nouvelles règles _: paramètre Activé_ sur la cmdlet **New-TransportRule.** <p> Règles existantes : Utilisez les cmdlets **Enable-TransportRule** ou **Disable-TransportRule**. <p> La valeur est affichée dans la propriété **State** de la règle.|Vous pouvez créer une règle désactivée, puis l'activer lorsque vous êtes prêt à la tester. Vous pouvez également désactiver une règle sans la supprimer pour en conserver les paramètres.|
 |**Différer le message si le traitement de la règle ne se termine pas**|_RuleErrorAction_|Vous pouvez spécifier la manière dont le message doit être pris en charge si le traitement des règles ne se termine pas. Par défaut, la règle est ignorée, mais vous pouvez choisir de renvoyer ce message en vue de son traitement.|
 |**Faire correspondre l'adresse de l'expéditeur dans le message**|_SenderAddressLocation_|Si la règle utilise des conditions ou des exceptions qui examinent l'adresse de messagerie de l'expéditeur, vous pouvez rechercher la valeur dans l'en-tête du message, dans l'enveloppe du message ou dans les deux.|
 |**Ne plus traiter de règles**|_SenderAddressLocation_|Il s'agit d'une action de la règle, mais celle-ci ressemble à une propriété dans le CAE. Vous pouvez décider d'arrêter d'appliquer des règles à un message après qu'il a été traité par une règle.|
@@ -104,7 +109,7 @@ Le tableau suivant décrit les propriétés de règle qui sont disponibles dans 
 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Application des règles de flux de messagerie au courrier électronique
 
-Tous les messages qui transitent par votre organisation sont évalués par rapport aux règles de flux de messagerie activées de celle-ci. Les règles sont traitées dans l’ordre indiqué dans la page règles de **flux de messagerie** dans le centre d’administration Exchange \>  ou en fonction de la valeur de paramètre _Priority_ correspondante dans PowerShell.
+Tous les messages qui transitent par votre organisation sont évalués par rapport aux règles de flux de messagerie activées de celle-ci. Les règles sont traitées dans  l’ordre répertorié dans la page Règles de flux de messagerie dans leAC, ou en fonction de la valeur du paramètre Priority correspondante \>  dans PowerShell. 
 
 Chaque règle offre également la possibilité d'arrêter le traitement des autres règles lorsqu'elle détecte une correspondance. Ce paramètre est important pour les messages qui répondent aux conditions de plusieurs règles de flux de messagerie (quelle règle souhaitez-vous appliquer au message ? Toutes ? Une seule ?).
 
@@ -116,19 +121,19 @@ Plusieurs types de messages transitent par une organisation. Le tableau suivant 
 
 |Il existe plusieurs types de messages qui transitent par une organisation. Le tableau suivant montre quels types de messages peuvent être traités par les règles de transport.|Type de message|
 |---|---|
-|**Messages réguliers**: messages qui contiennent un corps de message au format RTF (Rich Text Format), html ou texte brut, ou un ensemble de corps de message en plusieurs parties ou alternatif.|Oui|
-|**Chiffrement des messages office 365**: messages chiffrés par le chiffrement de messages Office 365 dans Office 365. Pour plus d'informations, voir [Chiffrement dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Les règles peuvent toujours accéder aux en-têtes des enveloppes contenus dans des messages protégés et traiter les messages en se basant sur les conditions qui analysent les en-têtes. <p> Pour qu'une règle examine ou modifie le contenu d'un message chiffré, vous devez vérifier que le déchiffrement du transport est activé (Obligatoire ou Facultatif ; la valeur par défaut est Facultatif). Pour plus d’informations, consultez la rubrique [définir des règles pour chiffrer ou déchiffrer des messages électroniques dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
+|**Messages ordinaires**: messages qui contiennent un corps de message au format RTF, HTML ou texte brut, ou un ensemble de corps de message en plusieurs parties ou un autre ensemble.|Oui|
+|**Chiffrement de messages Office 365**: messages chiffrés par le chiffrement de messages Office 365 dans Office 365. Pour plus d'informations, voir [Chiffrement dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Les règles peuvent toujours accéder aux en-têtes des enveloppes contenus dans des messages protégés et traiter les messages en se basant sur les conditions qui analysent les en-têtes. <p> Pour qu'une règle examine ou modifie le contenu d'un message chiffré, vous devez vérifier que le déchiffrement du transport est activé (Obligatoire ou Facultatif ; la valeur par défaut est Facultatif). Pour plus d’informations, voir [Définir des règles pour chiffrer ou déchiffrer des messages électroniques dans Office 365.](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)|
 |**Messages chiffrés S/MIME**|Les règles peuvent uniquement accéder aux en-têtes d'enveloppe et traiter les messages en fonction de conditions qui inspectent ces en-têtes. <p> Les règles avec conditions qui requièrent l'inspection du contenu des messages ou les actions qui modifient le contenu des messages ne peuvent pas être traitées.|
-|**Messages RMS protégés**: messages auxquels une stratégie Active Directory Rights Management Services (AD RMS) ou Azure Rights Management (RMS) a été appliquée.|Les règles peuvent toujours accéder aux en-têtes des enveloppes contenus dans des messages protégés et traiter les messages en se basant sur les conditions qui analysent les en-têtes. <p> Pour qu'une règle examine ou modifie le contenu d'un message protégé par RMS, vous devez vérifier que le déchiffrement du transport est activé (Obligatoire ou Facultatif ; la valeur par défaut est Facultatif).|
+|**Messages protégés par RMS**: messages sur services AD RMS (Active Directory Rights Management Services) (AD RMS) ou Azure Rights Management (RMS).|Les règles peuvent toujours accéder aux en-têtes des enveloppes contenus dans des messages protégés et traiter les messages en se basant sur les conditions qui analysent les en-têtes. <p> Pour qu'une règle examine ou modifie le contenu d'un message protégé par RMS, vous devez vérifier que le déchiffrement du transport est activé (Obligatoire ou Facultatif ; la valeur par défaut est Facultatif).|
 |**Messages signés en clair**: messages signés mais non chiffrés.|Oui|
-|**Messages de messagerie unifiée**: messages créés ou traités par le service de messagerie unifiée, tels que la messagerie vocale, les télécopies, les notifications d’appels manqués et les messages créés ou transférés à l’aide de Microsoft Outlook Voice Access.|Oui|
+|**Messages** de messagerie unifiée : messages créés ou traitées par le service de messagerie unifiée, tels que la messagerie vocale, la télécopie, les notifications d’appels manqués et les messages créés ou transmis à l’aide de Microsoft Outlook Voice Access.|Oui|
 |**Messages anonymes**: messages envoyés par des expéditeurs anonymes.|Oui|
-|**Rapports de lecture**: rapports générés en réponse à des demandes de confirmation de lecture par des expéditeurs. Les rapports lus ont une classe de message `IPM.Note*.MdnRead` ou `IPM.Note*.MdnNotRead` .|Oui|
+|**Rapports de** lecture : rapports générés en réponse aux demandes de réception de lecture des expéditeurs. Les rapports de lecture ont une classe de `IPM.Note*.MdnRead` message de ou `IPM.Note*.MdnNotRead` .|Oui|
 |
 
 ## <a name="what-else-should-i-know"></a>Que dois-je savoir d’autre ?
 
-- La valeur de la propriété **version** ou **RuleVersion** d’une règle n’est pas importante dans Exchange Online Protection.
+- La **valeur de** la propriété Version ou **RuleVersion** d’une règle n’est pas importante dans Exchange Online Protection.
 
 - Une fois que vous avez créé ou modifié une règle de flux de messagerie, l’application de la nouvelle règle ou de la règle mise à jour au courrier électronique peut prendre jusqu’à 30 minutes.
 

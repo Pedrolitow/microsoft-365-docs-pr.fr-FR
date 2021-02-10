@@ -19,12 +19,12 @@ description: Utilisez Microsoft Defender pour Office 365 avec Microsoft Defender
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24b81bb4c445c44d7c0228fa1c4440faff642816
-ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
+ms.openlocfilehash: 035834e1e4855c0e47defed06043a5fdbd0e63bd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49939331"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166086"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison
 
@@ -35,7 +35,7 @@ ms.locfileid: "49939331"
 
 L’intégration de Microsoft Defender pour Office 365 à Microsoft Defender pour endpoint peut aider votre équipe en charge des opérations de sécurité à surveiller et à prendre des mesures rapidement si les appareils des utilisateurs sont exposés. Par exemple, une fois l’intégration activée, votre équipe des opérations de sécurité pourra voir les appareils potentiellement affectés par un message électronique détecté, ainsi que le nombre d’alertes récentes générées pour ces appareils dans Microsoft Defender pour Endpoint.
 
-L’image suivante illustre à quoi ressemble l’onglet **Appareils** pour que l’intégration de Microsoft Defender for Endpoint soit activée :
+L’image suivante illustre à quoi ressemble l’onglet **Appareils** lorsque l’intégration de Microsoft Defender pour les points de terminaison est activée :
 
 ![Lorsque Microsoft Defender pour le point de terminaison est activé, vous pouvez voir une liste d’appareils avec des alertes.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
@@ -44,11 +44,11 @@ Dans cet exemple, vous pouvez voir que les destinataires du message électroniqu
 > [!TIP]
 > **[En savoir plus sur le Centre de](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** sécurité Microsoft Defender (également appelé portail Microsoft Defender pour points de terminaison).)
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 - Votre organisation doit avoir Microsoft Defender pour Office 365 (ou Office 365 E5) et Microsoft Defender pour point de terminaison.
 
-- Vous devez être un administrateur général ou avoir un rôle d’administrateur de sécurité (par exemple, Administrateur de la sécurité) affecté dans le Centre de sécurité [& conformité.](https://protection.office.com) (Voir [autorisations dans le Centre de sécurité & conformité)](permissions-in-the-security-and-compliance-center.md)
+- Vous devez être administrateur général ou avoir un rôle d’administrateur de sécurité (par exemple, Administrateur de la sécurité) affecté dans le Centre de sécurité [& conformité.](https://protection.office.com) (Voir [autorisations dans le Centre de sécurité & conformité)](permissions-in-the-security-and-compliance-center.md)
 
 - Vous devez avoir accès à [l’Explorateur (ou](threat-explorer.md) aux détections en temps réel) dans le Centre de sécurité & conformité et le Centre de sécurité Microsoft Defender.
 

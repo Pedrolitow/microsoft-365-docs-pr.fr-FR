@@ -1,5 +1,5 @@
 ---
-title: Recommandations en matière de sécurité pour les comptes prioritaires dans Microsoft 365
+title: Recommandations en matière de sécurité pour les comptes prioritaires dans Microsoft 365, comptes de priorité, comptes de priorité dans Office 365, comptes de priorité dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans leurs organisations Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10890a5fe797439de0bfc28bf28a216318016908
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 814ca47ee48e844e313f7d75640643a0b659c527
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929305"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166368"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations en matière de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -54,7 +54,7 @@ Les comptes prioritaires nécessitent une sécurité accrue de la signature. Vou
 
 Pour obtenir des instructions, [consultez l’étape 1. Renforcer la sécurité de la sign-in pour les travailleurs à distance avec l’fa MFA](https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in). Bien que cet article porte sur les travailleurs à distance, les mêmes concepts s’appliquent aux utilisateurs prioritaires.
 
-**Remarque**: nous vous recommandons vivement de désactiver globalement les protocoles d’authentification hérités pour tous les utilisateurs prioritaires, comme décrit dans l’article précédent. Si les besoins de votre entreprise vous en empêchent, Exchange Online propose les contrôles suivants pour limiter l’étendue des protocoles d’authentification hérités :
+**Remarque**: nous vous recommandons vivement de désactiver globalement les protocoles d’authentification hérités pour tous les utilisateurs prioritaires, comme décrit dans l’article précédent. Si vos besoins commerciaux vous en empêchent, Exchange Online propose les contrôles suivants pour limiter l’étendue des protocoles d’authentification hérités :
 
 - Vous pouvez [](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) utiliser [](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) des stratégies d’authentification et des règles d’accès client dans Exchange Online pour bloquer ou autoriser l’authentification de base et les protocoles d’authentification hérités tels que POP3, IMAP4 et SMTP authentifié pour des utilisateurs spécifiques.
 
@@ -95,15 +95,15 @@ Après avoir sécurisé et identifié vos utilisateurs prioritaires, vous pouvez
 |Fonctionnalité|Description|
 |---|---|
 |Alertes|Les balises utilisateur des utilisateurs affectés sont visibles et disponibles en tant que filtres dans la page Afficher les **alertes** dans le Centre de sécurité & conformité. Pour plus d’informations, voir [Affichage des alertes.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)|
-|Threat Explorer <p> Détections en temps réel|Dans l’Explorateur de menaces **(Microsoft** Defender pour Office 365 Plan 2) ou les **détections** en temps réel (Microsoft Defender pour Office 365 Plan 1), les balises utilisateur sont visibles dans l’affichage Grille courrier et le volant Détails du courrier électronique. Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, [voir Balises dans l’Explorateur de menaces.](threat-explorer.md#tags-in-threat-explorer)|
+|Threat Explorer <p> Détections en temps réel|Dans l’Explorateur de menaces **(Microsoft** Defender pour Office 365 Plan 2) ou les **détections** en temps réel (Microsoft Defender pour Office 365 Plan 1), les balises d’utilisateur sont visibles dans l’affichage Grille courrier et le volant Détails du courrier électronique. Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, [voir Balises dans l’Explorateur de menaces.](threat-explorer.md#tags-in-threat-explorer)|
 |Vues de campagne|Les balises utilisateur sont l’une des nombreuses propriétés filtrables dans les affichages campagne dans Microsoft Defender pour Office 365 Plan 2. Pour plus d’informations, voir [Affichages de campagne.](campaigns.md)|
-|Rapport sur l’état de la protection contre les menaces|Dans la quasi-ensemble des vues et des tableaux détaillés du rapport d’état de la **protection** contre les **menaces,** vous pouvez filtrer les résultats par compte de priorité. Pour plus d’informations, consultez [le rapport d’état de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)|
+|Rapport sur l’état de la protection contre les menaces|Dans la quasi-ensemble des vues et des tableaux détaillés du rapport d’état de **la protection** contre les **menaces,** vous pouvez filtrer les résultats par compte de priorité. Pour plus d’informations, consultez [le rapport d’état de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)|
 |Rapport sur les problèmes de messagerie pour le rapport des comptes prioritaires|Le rapport Problèmes de messagerie pour les comptes de priorité dans le Centre d’administration Exchange (EAC) contient des informations sur les messages non reçus et **différés** pour les comptes **prioritaires.** Pour plus d’informations, [consultez le rapport Problèmes de messagerie pour le rapport des comptes prioritaires.](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
 |
 
 ## <a name="train-users"></a>Former les utilisateurs
 
-La formation des utilisateurs avec des comptes prioritaires peut aider à gagner beaucoup de temps et de frustration à ces utilisateurs et à votre équipe des opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et ils sont plus susceptibles d’éviter les sites web suspects.
+La formation des utilisateurs avec des comptes prioritaires peut aider à gagner beaucoup de temps et de frustration à ces utilisateurs et à votre équipe des opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et sont plus susceptibles d’éviter les sites web suspects.
 
 Le manuel de campagne de [cyber-sécurité](https://www.belfercenter.org/CyberPlaybook) de l’établissement d’enseignement de l’établissement d’une culture forte de sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage.
 
