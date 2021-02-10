@@ -1,104 +1,110 @@
 ---
-title: Adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisées
-keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menaces, avancé, menace, protection, compromis
+title: Résoudre les comptes d’utilisateur compromis grâce à un examen et à une réponse automatisés
+keywords: AIR, autoIR, ATP, automatisé, examen, réponse, correction, menaces, avancé, menace, protection, compromission
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: Découvrez comment accélérer le processus de détection et d’adressage des comptes d’utilisateurs compromis avec des fonctionnalités d’analyse et de réponse automatisées dans Microsoft Defender pour Office 365 plan 2.
-ms.openlocfilehash: 19c9bad33263178f92c6fe523b44497cf38ebd53
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Découvrez comment accélérer le processus de détection et de traitement des comptes d’utilisateur compromis à l’aide de fonctionnalités automatisées d’examen et de réponse dans Microsoft Defender pour Office 365 Plan 2.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2159ab7ad7e13c4cd4c2c428317ee7d99f78158c
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616736"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176062"
 ---
-# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisées
+# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Résoudre les comptes d’utilisateur compromis grâce à un examen et à une réponse automatisés
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[Microsoft Defender pour Office 365 plan 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) inclut des fonctionnalités d’analyse [et de réponse automatisées](office-365-air.md) puissantes. De telles fonctionnalités peuvent permettre à l’équipe de vos opérations de sécurité de gagner beaucoup de temps et d’efforts sur les menaces. Microsoft continue d’améliorer les fonctionnalités de sécurité. Récemment, les fonctionnalités AIR ont été améliorées pour inclure un manuel de sécurité de l’utilisateur compromis (actuellement en version d’évaluation). Lisez cet article pour en savoir plus sur le manifeste de sécurité de l’utilisateur compromis. Pour plus d’informations, reportez-vous au billet de blog [accélérer le temps nécessaire pour détecter et répondre à la compromission de l’utilisateur et limiter la portée de violation avec Microsoft Defender pour Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
 
-![Enquête automatisée pour un utilisateur compromis](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
+[Microsoft Defender pour Office 365 Plan 2 inclut](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) de puissantes fonctionnalités d’investigation [et](office-365-air.md) de réponse automatisées (AIR). Ces fonctionnalités peuvent faire gagner beaucoup de temps et d’efforts à votre équipe en matière d’opérations de sécurité pour gérer les menaces. Microsoft continue d’améliorer les fonctionnalités de sécurité. Récemment, les fonctionnalités AIR ont été améliorées pour inclure un manuel de sécurité utilisateur compromis (actuellement en prévisualisation). Lisez cet article pour en savoir plus sur le manuel de sécurité des utilisateurs compromis. Pour plus d’informations, voir le billet de blog Accélérer le temps de détection et de réponse à la compromission de l’utilisateur et limiter l’étendue des violations avec [Microsoft Defender pour Office 365.](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)
 
-Les manifestes de sécurité de l’utilisateur compromis permettent à l’équipe de sécurité de votre organisation de :
+![Examen automatisé pour un utilisateur compromis](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
-- Accélérer la détection des comptes d’utilisateurs compromis ;
+Le manuel de sécurité des utilisateurs compromis permet à l’équipe de sécurité de votre organisation de :
 
-- Limiter l’étendue d’une violation lorsqu’un compte est compromis ; les
+- Accélérer la détection des comptes d’utilisateur compromis ;
 
-- Répondez plus efficacement aux utilisateurs compromis.
+- Limiter l’étendue d’une violation lorsqu’un compte est compromis ; et
+
+- Répondre plus efficacement aux utilisateurs compromis.
 
 ## <a name="compromised-user-alerts"></a>Alertes utilisateur compromises
 
-Lorsqu’un compte d’utilisateur est compromis, des comportements atypiques ou anormaux se produisent. Par exemple, les messages de hameçonnage et de courrier indésirable peuvent être envoyés en interne à partir d’un compte d’utilisateur approuvé. Defender pour Office 365 peut détecter ces anomalies dans les modèles de courrier électronique et l’activité de collaboration dans Office 365. Lorsque cela se produit, les alertes sont déclenchées et le processus de minimisation des menaces commence.
+Lorsqu’un compte d’utilisateur est compromis, des comportements inhabituels ou anormaux se produisent. Par exemple, les messages de hameçonnage et de courrier indésirable peuvent être envoyés en interne à partir d’un compte d’utilisateur approuvé. Defender pour Office 365 peut détecter de telles anomalies dans les modèles de messagerie et l’activité de collaboration dans Office 365. Lorsque cela se produit, les alertes sont déclenchées et le processus de prévention des menaces commence.
 
-Par exemple, voici une alerte qui a été déclenchée en raison d’un envoi de courrier électronique suspect :
+Par exemple, voici une alerte déclenchée en raison de l’envoi de messages électroniques suspects :
 
-![Alerte déclenchée en raison d’un envoi suspect de courrier électronique](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
+![Alerte déclenchée en raison d’un envoi de courrier suspect](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
 
-Et voici un exemple d’alerte déclenchée lorsqu’une limite d’envoi a été atteinte pour un utilisateur :
+Voici un exemple d’alerte déclenchée lorsqu’une limite d’envoi a été atteinte pour un utilisateur :
 
 ![Alerte déclenchée par la limite d’envoi atteinte](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
 
-## <a name="investigate-and-respond-to-a-compromised-user"></a>Examiner et répondre à un utilisateur compromis
+## <a name="investigate-and-respond-to-a-compromised-user"></a>Examiner un utilisateur compromis et y répondre
 
-Lorsqu’un compte d’utilisateur est compromis, des alertes sont déclenchées. Dans certains cas, ce compte d’utilisateur est bloqué et ne peut pas envoyer d’autres messages électroniques tant que le problème n’est pas résolu par l’équipe des opérations de sécurité de votre organisation. Dans les autres cas, une enquête automatisée commence, ce qui peut entraîner des actions recommandées que votre équipe de sécurité doit prendre.
+Lorsqu’un compte d’utilisateur est compromis, des alertes sont déclenchées. Et dans certains cas, ce compte d’utilisateur est bloqué et empêché d’envoyer d’autres messages électroniques jusqu’à ce que le problème soit résolu par l’équipe des opérations de sécurité de votre organisation. Dans d’autres cas, une enquête automatisée commence, ce qui peut entraîner des actions recommandées que votre équipe de sécurité doit prendre.
 
-- [Afficher et examiner les utilisateurs avec accès restreint](#view-and-investigate-restricted-users)
+- [Afficher et examiner les utilisateurs restreints](#view-and-investigate-restricted-users)
 
-- [Afficher les détails des enquêtes automatisées](#view-details-about-automated-investigations)
+- [Afficher les détails sur les enquêtes automatisées](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> Vous devez disposer des autorisations appropriées pour effectuer les tâches suivantes. Consultez la rubrique [Required Permissions to use air Capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
+> Vous devez avoir les autorisations appropriées pour effectuer les tâches suivantes. Voir [Autorisations requises pour utiliser les fonctionnalités AIR.](office-365-air.md#required-permissions-to-use-air-capabilities)
 
-### <a name="view-and-investigate-restricted-users"></a>Afficher et examiner les utilisateurs avec accès restreint
+### <a name="view-and-investigate-restricted-users"></a>Afficher et examiner les utilisateurs restreints
 
-Vous disposez de plusieurs options pour accéder à une liste d’utilisateurs restreints. Par exemple, dans le centre de sécurité & conformité, vous pouvez accéder à la **gestion des menaces** \> **examiner** \> **les utilisateurs restreints**. La procédure suivante décrit la navigation à l’aide du tableau de bord **alertes** , qui permet de visualiser les différents types d’alertes qui ont pu être déclenchés.
+Vous avez plusieurs options pour naviguer vers une liste d’utilisateurs restreints. Par exemple, dans le Centre de sécurité &  conformité, vous pouvez passer à La révision de la gestion des menaces \>  \> **Utilisateurs restreints.** La procédure suivante décrit la navigation à l’aide du tableau de bord **Alertes,** qui est un bon moyen de voir différents types d’alertes qui ont pu être déclenchées.
 
 1. Accédez à <https://protection.office.com> et connectez-vous.
 
-2. Dans le volet de navigation,  choisissez \> **tableau de bord** alertes.
+2. Dans le volet de navigation, sélectionnez **Tableau de bord Alertes.** \> 
 
-3. Dans le widget **autres alertes** , choisissez **utilisateurs restreints**.
+3. Dans le widget **Autres alertes,** choisissez **Utilisateurs restreints.**
 
-   ![Autre widget alertes](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+   ![Widget Autres alertes](/microsoft-365/media/office365atp-otheralertswidget.jpg)
 
-   La liste des utilisateurs avec accès restreint s’ouvre.
+   La liste des utilisateurs restreints s’ouvre.
 
    ![Utilisateurs restreints dans Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
 
-4. Sélectionnez un compte d’utilisateur dans la liste pour afficher les détails et effectuer une action, par exemple, [libérer l’utilisateur restreint](removing-user-from-restricted-users-portal-after-spam.md).
+4. Sélectionnez un compte d’utilisateur dans la liste pour afficher les détails et prendre des mesures, telles que la [libération de l’utilisateur restreint.](removing-user-from-restricted-users-portal-after-spam.md)
 
-### <a name="view-details-about-automated-investigations"></a>Afficher les détails des enquêtes automatisées
+### <a name="view-details-about-automated-investigations"></a>Afficher les détails sur les enquêtes automatisées
 
-Lorsqu’une enquête automatisée a commencé, vous pouvez consulter ses détails et résultats dans le centre de sécurité & conformité. Accédez aux  \> **enquêtes** de gestion des menaces, puis sélectionnez une enquête pour en afficher les détails.
+Lorsqu’une enquête automatisée a commencé, vous pouvez voir ses détails et ses résultats dans le Centre de sécurité & conformité. Go to **Threat management** \> **Investigations,** and then select an investigation to view its details.
 
-Pour en savoir plus, consultez la rubrique [afficher les détails d’une enquête](air-view-investigation-results.md).
+Pour en savoir plus, [consultez les détails d’une enquête.](air-view-investigation-results.md)
 
 ## <a name="keep-the-following-points-in-mind"></a>Gardez les points suivants à l’esprit
 
-- **Restez au fait des alertes**. Comme vous le sachiez, plus un compromis est long, plus le risque d’impact et de coût étendu pour votre organisation, vos clients et vos partenaires est élevé. La détection précoce et la réponse opportune sont essentielles pour atténuer les menaces, et notamment lorsque le compte d’un utilisateur est compromis.
+- **Restez au fait de vos alertes.** Comme vous le savez, plus une compromission est longue et plus le risque d’impact et de coût pour votre organisation, vos clients et vos partenaires est élevé. Une détection précoce et une réponse rapide sont essentielles pour atténuer les menaces, en particulier lorsque le compte d’un utilisateur est compromis.
 
-- **L’automatisation aide, mais ne remplace pas, votre équipe de sécurité des opérations**. Les fonctionnalités d’analyse et de réponse automatisées peuvent détecter rapidement un utilisateur compromis, mais votre équipe des opérations de sécurité devra probablement s’engager et effectuer des recherches et des corrections. Vous avez besoin d’aide ? Voir [examiner et approuver des actions](air-review-approve-pending-completed-actions.md).
+- **Automation aide, mais ne remplace pas, votre équipe des opérations de sécurité.** Les fonctionnalités d’examen et de réponse automatisées peuvent détecter un utilisateur compromis dès le début, mais votre équipe en matière d’opérations de sécurité devra probablement s’impliquer et faire des recherches et des corrections. Vous avez besoin d’aide ? Consultez [et approuvez les actions.](air-review-approve-pending-completed-actions.md)
 
-- **Ne reposez pas sur une alerte de connexion suspecte comme seul indicateur**. Lorsqu’un compte d’utilisateur est compromis, il se peut qu’il déclenche ou non une alerte de connexion suspecte. Parfois, il s’agit de la série d’activités qui se produisent après la compromission d’un compte qui déclenche une alerte. Vous souhaitez en savoir plus sur les alertes ? Consultez la rubrique [Alert Policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
+- **Ne comptez pas sur une alerte de connexion suspecte comme seul indicateur.** Lorsqu’un compte d’utilisateur est compromis, il peut ou non déclencher une alerte de connexion suspecte. Parfois, c’est la série d’activités qui se produisent après qu’un compte est compromis qui déclenche une alerte. Vous souhaitez en savoir plus sur les alertes ? Voir [stratégies d’alerte.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Vérifier les autorisations requises pour utiliser les fonctionnalités AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
+- [Passer en revue les autorisations requises pour utiliser les fonctionnalités AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 
-- [Rechercher et identifier des courriers électroniques malveillants dans Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Rechercher et examiner les courriers malveillants dans Office 365](investigate-malicious-email-that-was-delivered.md)
 
 - [En savoir plus sur AIR dans Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Consultez la feuille de route Microsoft 365 pour découvrir les éléments bientôt disponibles et à déployer](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Consultez la feuille de route Microsoft 365 pour voir ce qui sera bientôt disponible et déployer](https://www.microsoft.com/microsoft-365/roadmap?filters=)

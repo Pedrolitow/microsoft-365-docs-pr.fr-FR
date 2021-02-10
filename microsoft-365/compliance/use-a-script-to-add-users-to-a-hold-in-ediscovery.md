@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & sites OneDrive Entreprise à une nouvelle mise en attente associée à un cas eDiscovery dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: 72fd9b8e7b63b36399d055e2eb710e8b53967e44
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 278e8e051165eca906e9b454268068cbbe6aef05
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126437"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175573"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utiliser un script pour ajouter des utilisateurs à une attente dans un cas core eDiscovery
 
@@ -67,7 +67,7 @@ Go to [Set up the SharePoint Online Management Shell Windows PowerShell environm
 
 ## <a name="step-2-generate-a-list-of-users"></a>Étape 2 : Générer une liste d’utilisateurs
 
-Le script de l’étape 3 crée une boîte aux lettres associée à un cas eDiscovery et ajoute les boîtes aux lettres et les sites OneDrive Entreprise d’une liste d’utilisateurs à la boîte aux lettres. Vous pouvez simplement taper les adresses de messagerie dans un fichier texte ou exécuter une commande dans Windows PowerShell pour obtenir une liste d’adresses e-mail et les enregistrer dans un fichier (situé dans le dossier où vous enregistrerez le script à l’étape 3).
+Le script de l’étape 3 crée une attente associée à un cas eDiscovery et ajoute les boîtes aux lettres et les sites OneDrive Entreprise d’une liste d’utilisateurs à la boîte aux lettres. Vous pouvez simplement taper les adresses de messagerie dans un fichier texte ou exécuter une commande dans Windows PowerShell pour obtenir une liste d’adresses e-mail et les enregistrer dans un fichier (situé dans le dossier où vous enregistrerez le script à l’étape 3).
   
 Voici une commande PowerShell (que vous exécutez à l’aide de PowerShell distant connecté à votre organisation Exchange Online) pour obtenir la liste des adresses de messagerie de tous les utilisateurs de votre organisation et l’enregistrer dans un fichier texte nommé HoldUsers.txt.
   
@@ -81,9 +81,9 @@ Après avoir exécuté cette commande, ouvrez le fichier texte et supprimez l’
 
 Lorsque vous exécutez le script dans cette étape, il vous invite à fournir les informations suivantes. Veillez à ce que ces informations soient prêtes avant d’exécuter le script.
   
-- **Vos informations d’identification d’utilisateur :** Le script utilise vos informations d’identification pour se connecter au Centre de sécurité & conformité avec PowerShell à distance. Il utilisera également ces informations d’identification pour accéder à SharePoint Online afin d’obtenir les URL OneDrive Entreprise pour la liste des utilisateurs.
+- **Vos informations d’identification d’utilisateur :** Le script utilise vos informations d’identification pour se connecter au Centre de sécurité & conformité avec PowerShell. Il utilisera également ces informations d’identification pour accéder à SharePoint Online afin d’obtenir les URL OneDrive Entreprise pour la liste des utilisateurs.
 
-- **Nom de votre domaine Mon site :** Le domaine Mon site est le domaine qui contient tous les sites OneDrive Entreprise de votre organisation. Par exemple, si l’URL de votre domaine Mon site est , vous devez entrer lorsque le script vous invite à entrer le nom de votre **https://contoso-my.sharepoint.com**  `contoso` domaine Mon site.
+- **Nom de votre domaine SharePoint :** Le script vous invite à entrer ce nom afin qu’il puisse se connecter au Centre d’administration SharePoint. Il utilise également le nom de domaine pour les URL OneDrive de votre organisation. Par exemple, si l’URL de votre centre d’administration est et l’URL de OneDrive est , vous devez entrer lorsque le script vous invite à entrer `https://contoso-admin.sharepoint.com` `https://contoso-my.sharepoint.com` votre nom de `contoso` domaine.
 
 - **Nom du cas :** Nom d’un cas existant. Le script crée une nouvelle attente associée à ce cas.
 
@@ -91,7 +91,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
 
 - **Requête de recherche pour une attente basée sur une requête :** Vous pouvez créer une mise en attente basée sur une requête afin que seul le contenu qui répond aux critères de recherche spécifiés soit mis en attente. Pour placer tout le contenu en attente, appuyez simplement sur **Entrée** lorsque vous êtes invité à effectuer une requête de recherche.
 
-- **En tenez-vous ou non en attente :** Le script peut être mis en attente après sa création ou le script peut créer la mise en attente sans l’activer. Si le script n’est pas en attente, vous pouvez l’activer ultérieurement dans le Centre de sécurité et conformité & ou en exécutant les commandes PowerShell suivantes :
+- **En 2013, vous tenez ou non en attente :** Le script peut être mis en attente après sa création ou le script peut créer la mise en attente sans l’activer. Si le script n’est pas en attente, vous pouvez l’activer ultérieurement dans le Centre de sécurité et conformité & ou en exécutant les commandes PowerShell suivantes :
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -289,6 +289,6 @@ Une fois l’exécution du script terminée, il crée les fichiers journaux suiv
 
 - **LocationsNotOnHold.txt :** Contient une liste de boîtes aux lettres et de sites OneDrive Entreprise que le script n’a pas placer en attente. Si un utilisateur dispose d’une boîte aux lettres, mais pas d’un site OneDrive Entreprise, il est inclus dans la liste des sites OneDrive Entreprise qui n’ont pas été mis en attente.
 
-- **GetCaseHoldPolicy.txt :** Contient la sortie de la cmdlet **Get-CaseHoldPolicy** pour la nouvelle mise en attente, que le script a mise en place après la création de la nouvelle mise en attente. Les informations renvoyées par cette cmdlet incluent la liste des utilisateurs dont les boîtes aux lettres et les sites OneDrive Entreprise ont été mis en attente et si la mise en attente est activée ou désactivée. 
+- **GetCaseHoldPolicy.txt :** Contient la sortie de la cmdlet **Get-CaseHoldPolicy** pour la nouvelle mise en attente, que le script a mise en place après la création de la nouvelle mise en attente. Les informations renvoyées par cette cmdlet incluent une liste des utilisateurs dont les boîtes aux lettres et les sites OneDrive Entreprise ont été mis en attente et si la mise en attente est activée ou désactivée. 
 
 - **GetCaseHoldRule.txt :** Contient la sortie de la cmdlet **Get-CaseHoldRule** pour la nouvelle mise en attente, que le script a mise en place après la création de la nouvelle mise en attente. Les informations renvoyées par cette cmdlet incluent la requête de recherche si vous avez utilisé le script pour créer une attente basée sur une requête.
