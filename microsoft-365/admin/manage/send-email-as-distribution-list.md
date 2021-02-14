@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: Découvrez comment envoyer des courriers électroniques en tant que liste de distribution dans Microsoft 365.
+description: Découvrez comment envoyer du courrier électronique en tant que liste de distribution dans Microsoft 365.
 ms.openlocfilehash: a917e59bbac40846fa289a97465f6d6e065b87ee
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -30,24 +30,24 @@ ms.locfileid: "44399589"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Envoyer un courrier électronique en tant que liste de distribution
 
-Dans Microsoft 365, vous pouvez envoyer des courriers électroniques sous forme de liste de distribution. Lorsqu’une personne qui est membre de la liste de distribution répond à un message envoyé à la liste de distribution, le message semble provenir de la liste de distribution, et non de l’utilisateur individuel. Cette rubrique vous explique comment procéder.
+Dans Microsoft 365, vous pouvez envoyer des messages électroniques en tant que liste de distribution. Lorsqu’une personne membre de la liste de distribution répond à un message envoyé à la liste de distribution, le message semble être issu de la liste de distribution, et non de l’utilisateur individuel. Cette rubrique vous montre comment faire.
   
 ## <a name="send-email-as-a-distribution-list"></a>Envoyer un courrier électronique en tant que liste de distribution
 
-Avant d’effectuer ces étapes, vérifiez que vous avez été ajouté à une liste de distribution Microsoft 365 et que vous disposez de l’autorisation Envoyer en tant que.
+Avant d’effectuer ces étapes, assurez-vous que vous avez été ajouté à une liste de distribution Microsoft 365 et que vous avez reçu l’autorisation Envoyer en tant que.
   
- **Administrateurs**: Assurez-vous que vous avez suivi les étapes indiquées dans la rubrique [Ajouter un utilisateur ou un contact Microsoft 365 à une liste](../email/add-user-or-contact-to-distribution-list.md) et [autoriser les membres à envoyer des messages électroniques en tant que groupe de Microsoft 365](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) , et ajouté les personnes appropriées à la liste de distribution.
+ Administrateurs : assurez-vous que vous avez suivi les **étapes** de la rubrique Ajouter un utilisateur ou un [contact Microsoft 365](../email/add-user-or-contact-to-distribution-list.md) à une liste et autoriser les membres à envoyer des courriers électroniques en tant que rubriques de groupe [Microsoft 365,](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) et ajoutez les personnes appropriées à la liste de distribution.
   
-1. Ouvrez Outlook sur le Web et accédez à votre boîte de réception. 
+1. Ouvrez Outlook sur le web et allez dans votre boîte de réception. 
     
-2. Ouvrez un message qui a été envoyé à la liste de distribution. 
+2. Ouvrez un message envoyé à la liste de distribution. 
     
-3. Sélectionnez **répondre**. 
+3. Sélectionnez **Répondre.** 
     
-4. En bas du message, sélectionnez **autres** \> **afficher dans**.<br/> ![Sélectionnez autres, puis afficher dans](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. At the bottom of the message, select **More** \> **Show from**.<br/> ![Sélectionnez Plus, puis choisissez Afficher à partir de](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Cliquez avec le bouton droit sur l’adresse de provenance-par exemple, `Ina@weewalter.me` puis choisissez **supprimer**.<br/> ![Supprimer l’alias de](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Cliquez avec le bouton droit sur l’adresse de l’utilisateur de provenance, par `Ina@weewalter.me` exemple, et choisissez **Supprimer.**<br/> ![Supprimer l’alias FROM](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. Ensuite, tapez l’adresse de la liste de distribution, par exemple support@contoso.com, et envoyez le message. La prochaine fois que vous répondez à la liste de distribution, son adresse apparaît sous la forme d’une option dans la liste **de** .<br/>![L’alias de la boîte aux lettres partagée apparaît.](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. Tapez ensuite l’adresse de la liste de distribution telle que support@contoso.com et envoyez le message. La prochaine fois que vous répondrez à partir de la liste de distribution, son adresse apparaîtra en tant qu’option dans la **liste De.**<br/>![L’alias de la boîte aux lettres partagée s’affiche](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   
 

@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: Découvrez comment télécharger des périphériques à l’aide de AutoPilot dans Microsoft 365 Business Premium. Vous pouvez affecter un profil à un appareil ou à un groupe d’appareils.
+description: Découvrez comment télécharger des appareils à l’aide d’AutoPilot dans Microsoft 365 Business Premium. Vous pouvez affecter un profil à un appareil ou à un groupe d’appareils.
 ms.openlocfilehash: 8c3d029d682ae30444bdc7d30a4790a8f982e0e0
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -37,27 +37,27 @@ ms.locfileid: "44400991"
 
 ## <a name="upload-a-list-of-devices"></a>Charger une liste d'appareils
 
-Vous pouvez utiliser le [Guide pas à pas](add-autopilot-devices-and-profile.md) pour télécharger des périphériques, mais vous pouvez également télécharger des périphériques dans l’onglet **appareils** . 
+Vous pouvez utiliser le [guide pas à](add-autopilot-devices-and-profile.md) pas pour télécharger des appareils, mais vous pouvez également télécharger des appareils dans l’onglet **Appareils.** 
   
-Les appareils doivent respecter les conditions suivantes :
+Les appareils doivent répondre aux exigences ci-après :
   
 - Windows 10, version 1703 ou ultérieure
     
-- Nouveaux appareils qui n’ont pas fait l’expérience de Windows out-of-Box
+- Nouveaux appareils qui n’ont pas fait l’expérience d’utilisation de Windows out-of-box
 
-1. Dans le centre d’administration 365 de Microsoft, sélectionnez **périphériques** \> **AutoPilot**.
+1. Dans le Centre d’administration Microsoft 365, sélectionnez **Appareils** \> **AutoPilot**.
   
-2. Sur la page **AutoPilot** , sélectionnez l’onglet **appareils** \> **Add Devices**.
+2. Dans la page **AutoPilot,** sélectionnez **l’onglet Appareils** \> **Ajouter des appareils.**
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. Dans le panneau **Ajouter des appareils** , accédez à un [fichier CSV de liste de périphériques](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) que vous avez préparé à \> **Enregistrer** \> **Close**.
+3. Dans le **panneau Ajouter des appareils,** accédez à un fichier [CSV](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) de liste d’appareils que vous avez préparé \> **Enregistrer** \> **fermer.**
     
-    Vous pouvez obtenir ces informations auprès de votre fournisseur de matériel ou vous pouvez utiliser le [script PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) pour générer un fichier CSV. 
+    Vous pouvez obtenir ces informations auprès de votre fournisseur de matériel ou utiliser le [script PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) pour générer un fichier CSV. 
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>Attribuer un profil à un appareil ou à un groupe d'appareils
 
-1. Sur la page **préparer Windows** , sélectionnez l’onglet **appareils** et activez la case à cocher en regard d’un ou de plusieurs appareils. 
+1. Dans la page **Préparer Windows,** sélectionnez l’onglet **Appareils,** puis cochez la case en regard d’un ou plusieurs appareils. 
     
 2. Dans le volet **Appareil**, sélectionnez un profil dans la liste déroulante **Profil attribué**. 
     

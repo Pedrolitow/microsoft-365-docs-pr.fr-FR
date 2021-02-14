@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: Découvrez comment utiliser Microsoft 365 pour les entreprises afin de supprimer les données de la société dont disposent vos utilisateurs sur leurs appareils ou PC Windows.
+description: Découvrez comment utiliser Microsoft 365 pour les entreprises pour supprimer les données d’entreprise dont vos utilisateurs ont sur leurs appareils ou PC Windows.
 ms.openlocfilehash: 3a2faf0c5617b5d1e6beccf1e457f8b483820604
 ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
@@ -37,19 +37,19 @@ Cet article s’applique à Microsoft 365 Business Premium.
 
 ## <a name="remove-company-data"></a>Supprimer les données de l’entreprise
 
-Vous pouvez utiliser Microsoft 365 pour les entreprises afin de supprimer les données de la société dont disposent vos utilisateurs sur leurs [appareils](app-protection-settings-for-android-and-ios.md) ou sur les [ordinateurs Windows](protection-settings-for-windows-10-devices.md) protégés par Microsoft 365. **Si vous supprimez des données d'entreprise d'un appareil, vous ne pourrez pas les restaurer**. 
+Vous pouvez utiliser Microsoft 365 pour les entreprises pour [](app-protection-settings-for-android-and-ios.md) supprimer les données d’entreprise dont vos utilisateurs ont sur leurs appareils ou PC [Windows](protection-settings-for-windows-10-devices.md) protégés par Microsoft 365. **Si vous supprimez des données d'entreprise d'un appareil, vous ne pourrez pas les restaurer**. 
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
-2. Dans le volet de navigation de gauche, choisissez gestion des **appareils** \> **Manage**.  
+2. Dans le navigation  de gauche, sélectionnez \> **Gérer les appareils.**  
   
-3. Sur la page **gérer** , choisissez ou recherchez un utilisateur dont vous souhaitez supprimer les données, puis choisissez son nom. 
+3. Dans la page **Gérer,** sélectionnez ou recherchez les données d’un utilisateur que vous souhaitez supprimer, puis choisissez le nom. 
     
-4. Dans le volet suivant, sélectionnez le ou les périphériques dans la liste **périphériques** . Dans le volet des appareils qui s’ouvre, vous pouvez choisir de rétablir les paramètres d’usine de l’appareil ou de supprimer les données de l’entreprise, en fonction du type d’appareil. 
+4. Dans le volet suivant, sélectionnez le ou les appareils dans la liste **Appareils.** Dans le volet d’appareil qui s’ouvre, vous pouvez choisir de réinitialiser l’appareil aux paramètres d’usine ou de supprimer les données d’entreprise, en fonction du type d’appareil. 
     
-    ![Dans le volet supprimer les données de l’entreprise, sélectionnez l’appareil à partir duquel vous souhaitez supprimer les données.](../media/resetorremove.png)
+    ![Dans le volet Supprimer les données de l’entreprise, sélectionnez l’appareil à partir duquel vous souhaitez supprimer les données.](../media/resetorremove.png)
   
-5. Dans le volet confirmation, sélectionnez **confirmer** la \> **fermeture**.
+5. Dans le volet de confirmation, choisissez **Confirmer** \> **la fermeture.**
     
 
 

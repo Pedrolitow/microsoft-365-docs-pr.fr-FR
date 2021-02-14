@@ -1,5 +1,5 @@
 ---
-title: Ajouter des informations de support technique personnalisées au volet d’aide
+title: Ajouter des informations de service d’aide personnalisées au volet d’aide
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
-description: Créez une carte d’assistance personnalisée dans le centre d’administration et ajoutez des informations de contact de support personnalisé dans le volet d’aide.
+description: Créez une carte de support technique personnalisée dans le centre d’administration et ajoutez des coordonnées de support personnalisées au volet d’aide.
 ms.openlocfilehash: aa85ec844b4961fc21c1033409f510ba25e65472
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -28,34 +28,34 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/27/2020
 ms.locfileid: "44399397"
 ---
-# <a name="add-customized-help-desk-info-to-the-help-pane"></a>Ajouter des informations de support technique personnalisées au volet d’aide
+# <a name="add-customized-help-desk-info-to-the-help-pane"></a>Ajouter des informations de service d’aide personnalisées au volet d’aide
 
-En tant qu’administrateur, vous pouvez rationaliser la prise en charge des utilisateurs en ajoutant des informations de contact personnalisées au volet d’aide. Les utilisateurs qui ont besoin d’aide peuvent accéder aux informations de contact du support personnalisé de votre organisation à l’aide de l’icône aide.
+En tant qu’administrateur, vous pouvez rationaliser la prise en charge des utilisateurs en ajoutant des informations de contact personnalisées au volet d’aide. Les utilisateurs ayant besoin d’aide pourront accéder aux coordonnées du support personnalisé de votre organisation à l’aide de l’icône d’aide.
   
-Pour créer une carte de support technique personnalisée, vous devez être administrateur général de Microsoft 365 et disposer d’une licence pour Exchange Online. Découvrez comment [attribuer des licences dans Microsoft 365 pour les entreprises](../manage/assign-licenses-to-users.md).
+Pour créer une carte de service d’aide personnalisée, vous devez être administrateur global de Microsoft 365 et avoir une licence pour Exchange Online. Découvrez comment attribuer [des licences dans Microsoft 365 pour les entreprises.](../manage/assign-licenses-to-users.md)
 
 > [!NOTE]
-> Si vous êtes un administrateur et que vous recherchez un support technique ou de facturation auprès de Microsoft, consultez la rubrique [contacter microsoft 365 pour les entreprises](../contact-support-for-business-products.md). 
+> Si vous êtes un administrateur à la recherche d’un support technique ou de facturation auprès de Microsoft, consultez contacter le support [Microsoft 365 pour les entreprises.](../contact-support-for-business-products.md) 
 
   
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>Créer la carte de support technique personnalisée dans le centre d'administration
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. Dans le centre d’administration, accédez aux **Settings**paramètres  >  **organisation** des paramètres et choisissez l’onglet informations sur le **support technique** .
+1. Dans le Centre d’administration, sélectionnez **Paramètres** de l’organisation  >  **paramètres** et choisissez **l’onglet Informations du service d’aide.**
     
-2. Sous l’onglet Profil de l' **organisation** , choisissez les **vignettes du lanceur d’applications personnalisé**.
+2. Sous **l’onglet Profil de** l’organisation, choisissez **Vignettes de lancement d’application personnalisées.**
   
-3. Activez les **informations relatives à l’ajout de vos coordonnées de support technique**.
+3. Activer **l’ajout des informations de contact de votre service d’aide.**
     
 4. En tant qu'administrateur, il vous incombe de choisir le type d'informations de contact que vous souhaitez mettre à disposition des utilisateurs. Le titre et au moins un type d'informations de contact sont requis. Sélectionnez les informations à afficher, puis renseignez les informations appropriées.
     
-  - **Titre**: entrez un titre qui indique clairement votre intention, par exemple « service d’assistance contoso » ou « vous avez besoin d’aide ? ».
+  - **Titre**: entrez un titre qui indique clairement votre intention, comme « Aide de Contoso » ou « Besoin d’aide ? »
     
-  - **Téléphone**: entrez le numéro de téléphone que les utilisateurs doivent appeler pour communiquer avec un agent du support technique au sein de votre organisation. N'oubliez pas d'inclure les préfixes nécessaires pour effectuer l'appel.
+  - **Téléphone**: entrez le numéro de téléphone que les utilisateurs doivent appeler pour parler à un agent du support technique de votre organisation. N'oubliez pas d'inclure les préfixes nécessaires pour effectuer l'appel.
     
-  - **Courrier électronique**: entrez l’adresse de messagerie de votre service de support technique.
+  - **E-mail**: entrez l’adresse e-mail de votre service de support.
     
-  - **URL**: Si votre service d’assistance dispose d’un site Web interne ou public avec des ressources et des outils utiles, entrez son nom et l’URL associée.
+  - **URL**: si votre service de support dispose d’un site web interne ou public avec des outils et des ressources utiles, entrez son nom et l’URL associée.
     
 5. Sélectionnez **Enregistrer les modifications**.
     

@@ -1,5 +1,5 @@
 ---
-title: Utiliser les communications dans Advanced eDiscovery
+title: Travailler avec les communications dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Advanced eDiscovery facilite la gestion du flux de travail de notification de conservation légale concernant la notification des dépositaires en cours d’investigation.
+description: Advanced eDiscovery facilite la gestion du flux de travail de notification de conservation légale autour de la notification aux dépositaires dans les enquêtes juridiques.
 ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
 ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
@@ -23,35 +23,35 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/17/2020
 ms.locfileid: "43551238"
 ---
-# <a name="work-with-communications-in-advanced-ediscovery"></a>Utiliser les communications dans Advanced eDiscovery
+# <a name="work-with-communications-in-advanced-ediscovery"></a>Travailler avec les communications dans Advanced eDiscovery
 
-Advanced eDiscovery permet aux services juridiques de simplifier leurs processus de suivi et de distribution des notifications de conservation légale. L’outil de communication des dépositaires permet aux services juridiques de gérer et d’automatiser l’ensemble du processus de conservation légale, des notifications initiales, des rappels et des escalades, le tout en un seul et même endroit.
+Advanced eDiscovery permet aux services juridiques de simplifier leurs processus de suivi et de distribution des notifications de mise en attente légale. L’outil de communication du dépositaire permet aux services juridiques de gérer et d’automatiser l’ensemble du processus de conservation légale, des notifications initiales aux rappels et aux escalades, le tout dans un seul emplacement.
 
-## <a name="what-is-a-legal-hold-notification"></a>Qu’est-ce qu’une notification de conservation légale ?
+## <a name="what-is-a-legal-hold-notification"></a>Qu’est-ce qu’une notification de mise en attente légale ?
 
-Une notice légale (également appelée conservation pour *litige*) est une notification envoyée par le service juridique d’une organisation aux employés, au personnel concerné ou aux dépositaires de données qui peuvent être utiles à une enquête légale. Ces notifications indiquent aux dépositaires de conserver les informations stockées électroniquement ainsi que tout contenu susceptible d’être pertinent pour une question juridique active ou imminente. Les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et qu’il a accepté de se conformer aux instructions données.
+Une notification de conservation légale (également appelée mise en attente pour *litige)* est une notification envoyée par le service juridique d’une organisation aux employés, au personnel subordonné ou aux dépositaires des données qui peuvent être pertinentes pour une enquête juridique. Ces notifications indiquent aux dépositaires de conserver les informations stockées électroniquement, ainsi que tout contenu qui peut être pertinent pour une affaire juridique active ou imminente. Les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et a accepté de se conformer aux instructions données.
 
-## <a name="the-legal-hold-notification-process"></a>Processus de notification de conservation légale
+## <a name="the-legal-hold-notification-process"></a>Processus de notification de mise en attente légale
 
-Une organisation a le droit de conserver les informations pertinentes lorsqu’elle apprend une enquête sur litige ou réglementaire imminente. Afin de se conformer aux exigences de conservation d’une enquête, l’organisation doit immédiatement informer les dépositaires potentiels de leur obligation de conserver les informations pertinentes.
+Une organisation a l’obligation de conserver les informations pertinentes lorsqu’elle apprend un litige ou une enquête réglementaire. Pour se conformer aux exigences de conservation d’un examen, l’organisation doit immédiatement informer les dépositaires potentiels de leur obligation de conserver les informations pertinentes.
 
-Grâce à la fonctionnalité eDiscovery avancée, les équipes juridiques peuvent créer et personnaliser leur flux de travail de notification de conservation légale. L’outil de communication du dépositaire permet à teams de configurer les notifications et les flux de travail suivants :
+Avec Advanced eDiscovery, les équipes juridiques peuvent créer et personnaliser leur flux de travail de notification de mise en attente légale. L’outil de communication du dépositaire permet aux équipes juridiques de configurer les notifications et les flux de travail suivants :
 
-1. **Notification d’émission :** Une notice légale est émise (ou engagée) par une notification du service juridique aux dépositaires qui peuvent avoir des informations pertinentes sur la cause de l’affaire. Cette note indique aux dépositaires de conserver les informations susceptibles d’être nécessaires à la découverte.
+1. **Avis d’émission :** Une notification de conservation légale est émise (ou initiée) par une notification du service juridique aux dépositaires qui peuvent avoir des informations pertinentes sur le cas. Cet avis enjoint aux consignataires de conserver les informations qui peuvent être nécessaires à la découverte.
 
-2. **Notification de nouvelle émission :** Pendant un cas, les dépositaires peuvent être tenus de conserver un contenu supplémentaire (ou moins de contenu) que celui précédemment demandé. Dans ce scénario, vous pouvez mettre à jour l’avis de suspension existant et le ré-émettre aux dépositaires.
+2. **Avis de ré-émission :** Dans un cas, les dépositaires peuvent être tenus de conserver du contenu supplémentaire (ou moins de contenu) que ce qui a été demandé précédemment. Pour ce scénario, vous pouvez mettre à jour l’avis de conservation existant et le ré-émettre aux dépositaires.
 
-3. **Notification de publication :** Une fois qu’une question est résolue et que le dépositaire n’est plus soumis à une exigence de conservation, le dépositaire peut être libéré à partir du cas. En outre, vous pouvez informer le dépositaire qu’il n’est plus nécessaire de conserver le contenu et fournir des instructions sur la reprise de son activité professionnelle normale en ce qui concerne ses données.
+3. **Avis de publication :** Une fois qu’un problème est résolu et que le dépositaire n’est plus soumis à une obligation de conservation, le dépositaire peut être libéré du cas. En outre, vous pouvez informer le dépositaire qu’il n’est plus tenu de conserver le contenu et fournir des instructions sur la façon de reprendre son activité de travail normale en ce qui concerne ses données.
 
-4. **Rappels et escalades :** Dans certains cas, l’émission d’une notification n’est pas suffisante pour répondre aux exigences de la découverte légale. À chaque notification, les équipes juridiques peuvent planifier un ensemble de flux de travail de rappel et de signalisation pour assurer un suivi automatique des dépositaires qui ne répondent pas.
+4. **Rappels et escalades :** Dans certains cas, la simple émission d’un avis ne suffit pas pour satisfaire aux exigences de découverte légale. Avec chaque notification, les équipes juridiques peuvent planifier un ensemble de flux de rappels et de notifications d’escalade pour assurer automatiquement le suivi du consignataire non réactifs.
 
-   - **Rappels :** Une fois qu’un avis de mise en attente légale a été émis ou réédité pour un ensemble de dépositaires, une organisation peut configurer des rappels pour prévenir les dépositaires qui ne répondent pas.
+   - **Rappels :** Une fois qu’une notification de conservation légale a été émise ou ré-émise à un ensemble de dépositaires, une organisation peut configurer des rappels pour alerter les dépositaires qui ne répond pas.
 
-   - **Escalades :** Dans certains cas, si un dépositaire ne répond pas, même après un ensemble de rappels sur une période de temps, l’équipe juridique peut configurer un flux de travail de signalisation pour informer les dépositaires qui ne répondent pas et leur responsable.
+   - **Escalades :** Dans certains cas, si un dépositaire ne répond pas même après un ensemble de rappels sur une période de temps, l’équipe juridique peut configurer un flux de travail d’escalade pour avertir les dépositaires qui ne répond pas et leur responsable.
 
-Pour plus d’informations sur la gestion du processus de communication des dépositaires, consultez les rubriques suivantes : 
+Pour plus d’informations sur la gestion du processus de communication des dépositaires, consultez les ressources suivantes : 
 
-- [Créer une notice de suspension légale](create-hold-notification.md)
+- [Créer une notification de non-droit](create-hold-notification.md)
 
 - [Utiliser l’éditeur de communications](using-communications-editor.md)
 

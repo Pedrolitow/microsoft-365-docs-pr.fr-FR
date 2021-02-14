@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Cet article contient des informations sur les nouvelles fonctionnalités d’Office 365 le chiffrement de messages (OME).
+description: Cet article contient des informations sur les nouvelles fonctionnalités du chiffrement de messages Office 365 (OME).
 ms.openlocfilehash: b1a9c58a17b5f8434325191828063ec91a116e88
 ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT

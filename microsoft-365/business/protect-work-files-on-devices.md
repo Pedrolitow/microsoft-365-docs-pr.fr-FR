@@ -39,11 +39,11 @@ ms.locfileid: "44470904"
 
 Cet article s’applique à Microsoft 365 Business Premium.
 
-Dans le monde actuel, les utilisateurs sont liés à leurs appareils, et en cas de collision personnelle et professionnelle, les données de votre entreprise peuvent se terminer sur l’appareil personnel d’un employé. Les paramètres que vous configurez ici peuvent vous aider à reprendre le contrôle et à assurer la protection des fichiers professionnels, sans affecter aucun des paramètres personnels ou des données de l'utilisateur.
+Dans le monde d’aujourd’hui, les utilisateurs sont liés à leurs appareils, et à mesure que la vie personnelle et la vie professionnelle entrent en conflit, les données de votre entreprise peuvent se trouver sur l’appareil personnel d’un employé. Les paramètres que vous configurez ici peuvent vous aider à reprendre le contrôle et à assurer la protection des fichiers professionnels, sans affecter aucun des paramètres personnels ou des données de l'utilisateur.
   
 ## <a name="configuring-policies-during-setup"></a>Configuration des stratégies pendant l'installation
 
-Pendant l'installation, trois stratégies de gestion des applications sont ajoutées, une pour Windows 10, une pour iOS et une pour Android. Chaque stratégie a les mêmes paramètres et s’applique à tous les utilisateurs. Les stratégies sont activées lorsque l'utilisateur se connecte à son compte professionnel sur son téléphone mobile.
+Pendant l'installation, trois stratégies de gestion des applications sont ajoutées, une pour Windows 10, une pour iOS et une pour Android. Chaque stratégie a les mêmes paramètres et elles s’appliquent à tous les utilisateurs. Les stratégies sont activées lorsque l'utilisateur se connecte à son compte professionnel sur son téléphone mobile.
   
 Nous vous recommandons d'accepter la configuration par défaut lors de l'installation. Une fois l'installation terminée, vous pouvez ajouter d'autres stratégies pour affiner la configuration et appliquer des niveaux de contrôle variables pour certains groupes d'utilisateurs.
   

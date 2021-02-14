@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: Modifiez le Registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du centre de sécurité & conformité.
+description: Modifiez le Registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du Centre de sécurité & conformité.
 ms.openlocfilehash: 0eaf9c9d1f70e03481b00d38d2e487709329c4cd
 ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
@@ -26,19 +26,19 @@ ms.locfileid: "44817853"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 
-Lorsque vous utilisez l’outil d’exportation de découverte électronique pour exporter les résultats d’une recherche de contenu dans le centre de sécurité & conformité, l’outil crée et exporte automatiquement deux rapports contenant des informations supplémentaires sur le contenu exporté. Ces rapports sont le fichier de Results.csv et le fichier de Manifest.xml (voir la section Forum [aux questions sur la désactivation des rapports d’exportation](#frequently-asked-questions-about-disabling-export-reports) de cette rubrique pour obtenir des descriptions détaillées de ces rapports). Étant donné que ces fichiers peuvent être très volumineux, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de registre. 
+Lorsque vous utilisez l’outil d’exportation eDiscovery pour exporter les résultats d’une recherche de contenu dans le Centre de sécurité & conformité, l’outil crée et exporte automatiquement deux rapports qui contiennent des informations supplémentaires sur le contenu exporté. Ces rapports sont le fichier Results.csv et le fichier Manifest.xml (consultez la section Des [questions](#frequently-asked-questions-about-disabling-export-reports) fréquemment posées sur la désactivation des rapports d’exportation dans cette rubrique pour obtenir une description détaillée de ces rapports). Étant donné que ces fichiers peuvent être très importants, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, modifiez le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de Registre. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Créer des paramètres de Registre pour désactiver les rapports d’exportation
 
-Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour exporter les résultats d’une recherche de contenu.
+Effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exporter les résultats d’une recherche de contenu.
   
-1. Fermez l’outil d’exportation de découverte électronique s’il est ouvert.
+1. Fermez l’outil d’exportation eDiscovery s’il est ouvert.
     
-2. Effectuez l’une des étapes suivantes, ou les deux, en fonction de l’état d’exportation que vous souhaitez désactiver.
+2. Effectuez l’une des étapes suivantes ou les deux, en fonction du rapport d’exportation que vous souhaitez désactiver.
     
     - **Results.csv**
     
-      Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide d’un suffixe de nom de fichier. reg ; par exemple, DisableResultsCsv. reg.
+      Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide du suffixe de nom de fichier .reg; par exemple, DisableResultsCsv.reg.
     
       ```text
       Windows Registry Editor Version 5.00
@@ -47,32 +47,32 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
 
     - **Manifest.xml**
     
-      Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide d’un suffixe de nom de fichier. reg ; par exemple, DisableManifestXml. reg.
+      Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide du suffixe de nom de fichier .reg; par exemple, DisableManifestXml.reg.
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
 
-3. Dans l’Explorateur Windows, cliquez ou double-cliquez sur le fichier. reg que vous avez créé au cours des étapes précédentes.
+3. Dans l’Explorateur Windows, cliquez ou double-cliquez sur le fichier .reg que vous avez créé aux étapes précédentes.
     
-4. Dans la fenêtre contrôle d’accès des utilisateurs, cliquez sur **Oui** pour permettre à l’éditeur du registre de procéder à la modification. 
+4. Dans la fenêtre Contrôle d’accès utilisateur, cliquez sur **Oui** pour laisser l’Éditeur du Registre effectuer la modification. 
     
-5. Lorsque vous êtes invité à continuer, cliquez sur **Oui**.
+5. Lorsque vous y sont invités, cliquez sur **Oui.**
     
-    L’éditeur du Registre affiche un message indiquant que le paramètre a été ajouté avec succès au registre.
+    L’Éditeur du Registre affiche un message vous disant que le paramètre a été correctement ajouté au Registre.
   
-## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Modifier les paramètres du Registre pour réactiver les rapports d’exportation
+## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Modifier les paramètres du Registre pour ré-activer les rapports d’exportation
 
-Si vous avez désactivé les rapports Results.csv et Manifest.xml en créant les fichiers. reg dans la procédure précédente, vous pouvez modifier ces fichiers pour réactiver un rapport afin de l’exporter avec les résultats de la recherche. À nouveau, effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour exporter les résultats d’une recherche de contenu.
+Si vous avez désactivé les rapports Results.csv et Manifest.xml en créant les fichiers .reg dans la procédure précédente, vous pouvez modifier ces fichiers pour réactiver un rapport afin qu’il soit exporté avec les résultats de la recherche. Là encore, effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exporter les résultats d’une recherche de contenu.
   
-1. Fermez l’outil d’exportation de découverte électronique s’il est ouvert.
+1. Fermez l’outil d’exportation eDiscovery s’il est ouvert.
     
-2. Modifiez l’un des fichiers d’édition. reg que vous avez créés dans la procédure précédente ou les deux.
+2. Modifiez l’un ou les deux fichiers .reg edit que vous avez créés dans la procédure précédente.
     
     - **Results.csv**
     
-        Ouvrez le fichier DisableResultsCsv. reg dans le bloc-notes, remplacez la valeur `False` par `True` , puis enregistrez le fichier. Par exemple, après avoir modifié le fichier, il se présente comme suit :
+        Ouvrez le fichier DisableResultsCsv.reg dans le Bloc-notes, modifiez la valeur et  `False`  `True` enregistrez le fichier. Par exemple, après avoir modifié le fichier, il ressemble à ceci :
     
         ```text
         Windows Registry Editor Version 5.00
@@ -81,28 +81,28 @@ Si vous avez désactivé les rapports Results.csv et Manifest.xml en créant les
 
     - **Manifest.xml**
     
-        Ouvrez le fichier DisableManifestXml. reg dans le bloc-notes, remplacez la valeur `False` par `True` , puis enregistrez le fichier. Par exemple, après avoir modifié le fichier, il se présente comme suit :
+        Ouvrez le fichier DisableManifestXml.reg dans le Bloc-notes, modifiez la valeur  `False`  `True` et enregistrez le fichier. Par exemple, après avoir modifié le fichier, il ressemble à ceci :
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
       ```
 
-3. Dans l’Explorateur Windows, cliquez ou double-cliquez sur un fichier. reg que vous avez modifié à l’étape précédente.
+3. Dans l’Explorateur Windows, cliquez ou double-cliquez sur un fichier .reg que vous avez modifié à l’étape précédente.
     
-4. Dans la fenêtre contrôle d’accès des utilisateurs, cliquez sur **Oui** pour permettre à l’éditeur du registre de procéder à la modification. 
+4. Dans la fenêtre Contrôle d’accès utilisateur, cliquez sur **Oui** pour laisser l’Éditeur du Registre effectuer la modification. 
     
-5. Lorsque vous êtes invité à continuer, cliquez sur **Oui**.
+5. Lorsque vous y sont invités, cliquez sur **Oui.**
     
-    L’éditeur du Registre affiche un message indiquant que le paramètre a été ajouté avec succès au registre.
+    L’Éditeur du Registre affiche un message vous disant que le paramètre a été correctement ajouté au Registre.
   
-## <a name="frequently-asked-questions-about-disabling-export-reports"></a>Forum aux questions sur la désactivation des rapports d’exportation
+## <a name="frequently-asked-questions-about-disabling-export-reports"></a>Questions fréquemment posées sur la désactivation des rapports d’exportation
 
- **Quels sont les rapports Results.csv et Manifest.xml ?**
+ **Quels sont les rapports Results.csv et Manifest.xml'informations ?**
   
-Les fichiers Results.csv et Manifest.xml contiennent des informations supplémentaires sur le contenu qui a été exporté.
+Les Results.csv et Manifest.xml contiennent des informations supplémentaires sur le contenu exporté.
   
-- **Results.csv** Document Excel qui contient des informations sur chaque élément téléchargé en tant que résultat de la recherche. Pour le courrier électronique, le journal des résultats contient des informations sur chaque message, y compris : 
+- **Results.csv** Document Excel qui contient des informations sur chaque élément téléchargé en tant que résultat de recherche. Pour le courrier électronique, le journal des résultats contient des informations sur chaque message, y compris : 
     
   - l’emplacement du message dans la boîte aux lettres source (notamment si le message est dans la boîte aux lettres principale ou d’archivage) ;
     
@@ -112,9 +112,9 @@ Les fichiers Results.csv et Manifest.xml contiennent des informations supplémen
     
   - l’expéditeur et les destinataires du message.
     
-  - Si le message est un message en double si vous avez activé la déduplication lors de l’exportation des résultats de la recherche. Les messages en double comportent une valeur dans la colonne **ItemId parent** qui identifie le message en tant que doublon. La valeur dans la colonne **ItemId parent** est identique à la valeur de la colonne **élément DocumentID** du message qui a été exporté. 
+  - Indique si le message est un message en double si vous avez activé la déplication lors de l’exportation des résultats de la recherche. Les messages en double auront une valeur dans la **colonne Parent ItemId** qui identifie le message en tant que doublon. La valeur de la **colonne Parent ItemId** est identique à la valeur de la colonne **Item DocumentId** du message exporté. 
     
-    Pour les documents provenant de sites SharePoint et OneDrive entreprise, le journal des résultats contient des informations sur chaque document, notamment :
+    Pour les documents provenant de sites SharePoint et OneDrive Entreprise, le journal des résultats contient des informations sur chaque document, notamment :
     
   - l’URL du document ;
     
@@ -124,20 +124,20 @@ Les fichiers Results.csv et Manifest.xml contiennent des informations supplémen
     
   - le nom du document (qui se trouve dans la colonne Objet du journal des résultats).
     
-- **Manifest.xml** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Les informations contenues dans ce rapport sont identiques à celles du rapport de Results.csv, mais elles sont au format spécifié par le modèle de référence de découverte électronique (EDRM). Pour plus d’informations sur EDRM, consultez la rubrique [https://www.edrm.net](https://www.edrm.net) .
+- **Manifest.xml** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Les informations de ce rapport sont les mêmes que le rapport Results.csv, mais elles sont au format spécifié par le modèle de référence de découverte électronique (EDRM). Pour plus d’informations sur EDRM, voir [https://www.edrm.net](https://www.edrm.net) .
     
- **Quand dois-je désactiver l’exportation de ces rapports ?**
+ **Quand désactiver l’exportation de ces rapports ?**
   
 Cela dépend de vos besoins spécifiques. De nombreuses organisations n’ont pas besoin d’informations supplémentaires sur les résultats de la recherche et n’ont pas besoin de ces rapports.
   
- **Sur quel ordinateur dois-je effectuer cette opération ?**
+ **Sur quel ordinateur dois-je faire cela ?**
   
- Vous devez modifier le paramètre de Registre sur n’importe quel ordinateur local sur lequel vous exécutez l’outil d’exportation de découverte électronique. 
+ Vous devez modifier le paramètre de Registre sur n’importe quel ordinateur local sur qui vous exécutez l’outil d’exportation de découverte électronique. 
   
- **Après avoir modifié ce paramètre, dois-je redémarrer l’ordinateur ?**
+ **Après avoir changé ce paramètre, dois-je redémarrer l’ordinateur ?**
   
-Non, il n’est pas nécessaire de redémarrer l’ordinateur. Toutefois, si l’outil d’exportation de découverte électronique est en cours d’exécution, vous devez le fermer, puis le redémarrer une fois que vous avez modifié le paramètre de registre.
+Non, vous n’avez pas besoin de redémarrer l’ordinateur. Toutefois, si l’outil d’exportation eDiscovery est en cours d’exécution, vous devez le fermer, puis le redémarrer après avoir changé le paramètre de Registre.
   
- **Une clé de Registre existante est-elle modifiée ou une nouvelle clé est-elle créée ?**
+ **Une clé de Registre existante est-elle modifiée ou une nouvelle clé est-elle créée ?**
   
-Une nouvelle clé de Registre est créée lors de la première exécution du fichier. reg que vous avez créé dans la procédure de cette rubrique. Le paramètre est ensuite modifié chaque fois que vous modifiez et réexécutez le fichier de modification. reg.
+Une nouvelle clé de Registre est créée la première fois que vous exécutez le fichier .reg que vous avez créé dans la procédure de cette rubrique. Ensuite, le paramètre est modifié chaque fois que vous modifiez et ré-exécutez le fichier .reg edit.

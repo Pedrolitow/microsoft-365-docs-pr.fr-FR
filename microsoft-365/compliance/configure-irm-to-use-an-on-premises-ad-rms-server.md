@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment configurer la gestion des droits relatifs à l’information (IRM) dans Exchange Online pour utiliser un serveur AD RMS (Active Directory Rights Management Service).
+description: Découvrez comment configurer la Gestion des droits de l’information (IRM) dans Exchange Online pour utiliser un serveur AD RMS (Active Directory Rights Management Service).
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 92bf92427ed9a0ba55a0f059859d59c11023ea33
 ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
@@ -26,9 +26,9 @@ ms.locfileid: "44166115"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configuration de la Gestion des droits relatifs à l’information (IRM) pour utiliser un serveur AD RMS local
   
-Pour une utilisation avec des déploiements locaux, la gestion des droits relatifs à l’information (IRM) dans Exchange Online utilise les services AD RMS (Active Directory Rights Management Services), une technologie de protection des informations dans Windows Server 2008 et versions ultérieures. La protection IRM permet d'appliquer un modèle de stratégie de droits AD RMS à un message électronique. Les droits sont joints au message lui-même pour que la protection s’effectue en ligne et hors connexion, et à l’intérieur et à l’extérieur du pare-feu de votre organisation.
+Pour une utilisation avec des déploiements locaux, la Gestion des droits de l’information (IRM) dans Exchange Online utilise services AD RMS (Active Directory Rights Management Services) (AD RMS), une technologie de protection des informations dans Windows Server 2008 et version ultérieure. La protection IRM permet d'appliquer un modèle de stratégie de droits AD RMS à un message électronique. Les droits sont attachés au message lui-même afin que la protection se produise en ligne et hors connexion, ainsi qu’à l’intérieur et à l’extérieur du pare-feu de votre organisation.
   
-Cette rubrique décrit la configuration de la gestion des droits relatifs à l'information de manière à utiliser un serveur AD RMS. Pour plus d’informations sur l’utilisation des nouvelles fonctionnalités pour le chiffrement de messages Office 365 avec Azure Active Directory et Azure Rights Management, consultez le [Forum aux questions sur le chiffrement de messages office 365](https://docs.microsoft.com/microsoft-365/compliance/ome-faq).
+Cette rubrique décrit la configuration de la gestion des droits relatifs à l'information de manière à utiliser un serveur AD RMS. Pour plus d’informations sur l’utilisation des nouvelles fonctionnalités de chiffrement de messages Office 365 avec Azure Active Directory et Azure Rights Management, consultez la FAQ sur le chiffrement de messages [Office 365.](https://docs.microsoft.com/microsoft-365/compliance/ome-faq)
   
 Pour en savoir plus sur la Gestion des droits relatifs à l'information dans Exchange Online, consultez la rubrique [Gestion des droits relatifs à l'information (IRM) dans Exchange Online](information-rights-management-in-exchange-online.md).
   
@@ -42,7 +42,7 @@ Pour en savoir plus sur la Gestion des droits relatifs à l'information dans Exc
 
 - Pour plus d'informations sur l'installation et la configuration de Windows PowerShell et la connexion au service, consultez la rubrique [Connexion à Exchange Online à l'aide de Remote PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
 
-- Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cette rubrique, voir Raccourcis clavier pour le Centre d’administration [Exchange dans Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), et [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -102,7 +102,7 @@ Pour vérifier que le domaine de publication a bien été importé, exécutez la
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Étape 3 : utiliser l'Environnement de ligne de commande Exchange Management Shell pour distribuer un modèle de stratégie de droits AD RMS
 
-Après avoir importé le domaine de publication approuvé, vous devez vous assurer qu'un modèle de stratégie de droits AD RMS est distribué. Un modèle distribué est visible par les utilisateurs d’Outlook sur le Web (anciennement appelé Outlook Web App), qui peuvent ensuite appliquer les modèles à un message électronique.
+Après avoir importé le domaine de publication approuvé, vous devez vous assurer qu'un modèle de stratégie de droits AD RMS est distribué. Un modèle distribué est visible pour les utilisateurs d’Outlook sur le web (anciennement Outlook Web App), qui peuvent ensuite appliquer les modèles à un message électronique.
   
 Pour renvoyer une liste de tous les modèles du domaine de publication approuvé par défaut, exécutez la commande suivante :
   
@@ -110,7 +110,7 @@ Pour renvoyer une liste de tous les modèles du domaine de publication approuvé
 Get-RMSTemplate -Type All | fl
 ```
 
-Si la valeur du paramètre  _Type_ est  `Archived`, le modèle n'est pas visible aux utilisateurs. Seuls les modèles distribués dans le publication approuvé par défaut sont disponibles dans Outlook sur le Web.
+Si la valeur du paramètre  _Type_ est  `Archived`, le modèle n'est pas visible aux utilisateurs. Seuls les modèles distribués dans le TPD par défaut sont disponibles dans Outlook sur le web.
   
 Pour distribuer un modèle, exécutez la commande suivante :
   
@@ -168,4 +168,4 @@ Pour vérifier que vous avez correctement importé le domaine de publication app
   
 - Exécutez la cmdlet **Test-IRMConfiguration** pour tester la fonctionnalité IRM. Pour plus d'informations, consultez « Exemple 1 » dans la rubrique [Test-IRMConfiguration](https://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
 
-- Rédigez un nouveau message dans Outlook sur le Web et protégez l’IRM en sélectionnant l’option **définir les autorisations** dans le ![menu étendu (](../media/ITPro-EAC-MoreOptionsIcon.gif)icône Options supplémentaires).
+- Rédigez un nouveau message dans Outlook sur le web et protégez-le par IRM en sélectionnant Définir les **autorisations** dans le menu étendu (icône ![ Options ](../media/ITPro-EAC-MoreOptionsIcon.gif) supplémentaires).

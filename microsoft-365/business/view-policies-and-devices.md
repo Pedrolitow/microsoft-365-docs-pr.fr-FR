@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Affichez les stratégies et les actions des appareils en vous connectant à Microsoft 365 pour les entreprises avec des informations d’identification d’administrateur général.
+description: Affichez les stratégies et actions des appareils en vous inscrivant à Microsoft 365 pour les entreprises à l’aide d’informations d’identification d’administrateur global.
 ms.openlocfilehash: 49e878ae6d4e1a6c55dbd7bc65532f94295412a8
 ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
@@ -37,17 +37,17 @@ Cet article s’applique à Microsoft 365 Business Premium.
 ## <a name="view-and-edit-device-policies"></a>Afficher et modifier des stratégies d’appareil
 
 1.  Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-2. Dans le volet de navigation de gauche, choisissez stratégies de **périphériques** \> **Policies**.
+2. Dans le navigation  de gauche, sélectionnez \> **Stratégies d’appareils.**
 
-    Cette page vous permet de créer, de modifier, de modifier ou de supprimer une stratégie.
+    Sur cette page, vous pouvez créer, modifier, modifier un groupe cible ou supprimer une stratégie.
 
     ![Screenshot of the Policies page](../media/devicepolicies.png)
   
-## <a name="view-and-manage-devices"></a>Afficher et gérer les appareils
+## <a name="view-and-manage-devices"></a>Afficher et gérer des appareils
 
-1. Dans le volet de navigation de gauche, choisissez gestion des **appareils** \> **Manage**. 
+1. Dans le navigation  de gauche, sélectionnez \> **Gérer les appareils.** 
     
-    Sur cette page, vous pouvez sélectionner un ou plusieurs appareils et supprimer les données de l’entreprise. Pour les appareils Windows 10 pour lesquels vous avez défini des paramètres de protection d'appareil, vous pouvez également choisir de rétablir les paramètres d'usine.
+    Dans cette page, vous pouvez sélectionner un ou plusieurs appareils et supprimer des données d’entreprise. Pour les appareils Windows 10 pour lesquels vous avez défini des paramètres de protection d'appareil, vous pouvez également choisir de rétablir les paramètres d'usine.
   
-   ![Page gérer les appareils](../media/devicesmanage.png)
+   ![Page Gérer les appareils](../media/devicesmanage.png)
 

@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment créer, définir et choisir des dépositaires et des privatives d’adresses pour effectuer une recherche dans un cas avancé de découverte électronique.
+description: Découvrez comment créer, définir et choisir des dépositaires et des emplacements de conservation pour une recherche dans un cas Advanced eDiscovery.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 1d9051824ff3f28484d0750b982edd70334a9b88
 ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
@@ -26,22 +26,22 @@ ms.locfileid: "44035766"
 ---
 # <a name="create-a-search"></a>Créer une recherche
 
-Sous l’onglet **recherches** de votre cas, vous pouvez créer une nouvelle recherche en cliquant sur **nouvelle recherche** et en suivant l’Assistant.
+Sous **l’onglet Recherches** dans votre cas, vous pouvez créer une recherche en cliquant sur **Nouvelle** recherche et en suivant l’Assistant.
 
-![Assistant recherche dans un cas avancé eDiscovery](../media/AeDSearch1.png)
+![Assistant recherche dans un cas Advanced eDiscovery](../media/AeDSearch1.png)
 
-## <a name="name-the-search-and-give-it-a-description"></a>Nommez la recherche et donnez-lui une description.
+## <a name="name-the-search-and-give-it-a-description"></a>Nommez la recherche et donnez-lui une description
 
-Chaque recherche avec un cas doit avoir un nom unique. Vous pouvez éventuellement fournir une description pour votre recherche. 
+Chaque recherche avec un cas doit avoir un nom unique. Vous pouvez éventuellement fournir une description de votre recherche. 
 
-## <a name="choose-the-custodians-and-custodial-locations-to-search"></a>Choisir les dépositaires et les lieux de recherche
+## <a name="choose-the-custodians-and-custodial-locations-to-search"></a>Choisir les dépositaires et les emplacements de conservation à rechercher
 
-Choisissez les emplacements de contenu de dépositaire à rechercher en spécifiant les dépositaires que vous avez ajoutés à l’incident. En sélectionnant un dépositaire, vous lancez la recherche par rapport à toutes les sources de données mappées au dépositaire. Vous avez également la possibilité de limiter la recherche aux sources de données sélectionnées pour chaque dépositaire. Pour plus d’informations sur la façon d’ajouter des dépositaires et de gérer leurs sources de données, consultez la rubrique [work with dépositaires](managing-custodians.md).
+Choisissez les emplacements de contenu des dépositaires à rechercher en spécifiant les dépositaires que vous avez ajoutés au cas. En sélectionnant un dépositaire, vous exécutez la recherche sur toutes les sources de données mappées au dépositaire. Vous avez également la possibilité de restreindre la recherche aux sources de données sélectionnées pour chaque dépositaire. Pour plus d’informations sur l’ajout de dépositaires et la gestion de leurs sources de données, voir [Travailler avec les dépositaires.](managing-custodians.md)
 
-## <a name="choose-non-custodial-locations"></a>Choisir les emplacements non privatives de cœur
+## <a name="choose-non-custodial-locations"></a>Choisir des emplacements non privatives
 
-Dans certains cas, vous souhaiterez peut-être Rechercher des sources de données qui ne sont pas associées à un dépositaire. Dans ce cas, vous pouvez spécifier les emplacements de recherche, ou choisir de rechercher tous les emplacements de contenu d’un service Microsoft spécifique (par exemple, rechercher toutes les boîtes aux lettres Exchange ou tous les sites SharePoint et OneDrive).
+Dans certains cas, vous pouvez rechercher des sources de données qui ne sont pas associées à un dépositaire. Dans ce cas, vous pouvez spécifier les emplacements que vous souhaitez rechercher ou choisir de rechercher tous les emplacements de contenu pour un service Microsoft spécifique (par exemple, la recherche dans toutes les boîtes aux lettres Exchange ou tous les sites SharePoint et comptes OneDrive).
 
 ## <a name="define-the-search-query-and-conditions"></a>Définir la requête de recherche et les conditions
 
-Vous pouvez définir la requête de mots clés et les conditions de la recherche à l’aide des cartes de condition prédéfinies ou du langage de requête de mot clé (KQL). Pour plus d’informations, consultez la rubrique [créer des requêtes de recherche](building-search-queries.md).
+Vous pouvez définir la requête de mots clés et toutes les conditions pour la recherche à l’aide des cartes de condition pré-conçues ou à l’aide du langage KQL (Keyword Query Language). Pour plus d’informations, voir [Créer des requêtes de recherche.](building-search-queries.md)

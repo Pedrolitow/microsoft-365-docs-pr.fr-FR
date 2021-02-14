@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment utiliser Advanced eDiscovery pour envoyer et suivre des notifications de conservation légale par courrier électronique, ainsi que pour surveiller l’état des obligations.
+description: Découvrez comment utiliser Advanced eDiscovery pour envoyer et suivre des notifications de mise en attente légale par courrier électronique, et surveiller l’état des obligations.
 ms.openlocfilehash: 393d8884a4d4d39056267666fdce6a2754cb582b
 ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
@@ -27,31 +27,31 @@ ms.locfileid: "44034884"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Reconnaitre une notification de conservation
 
-Lors de la réponse à une demande réglementaire ou à une enquête, il se peut que vous deviez informer les dépositaires de leur obligation de conserver les informations stockées électroniquement (ESI) et tout élément susceptible de s’adapter à une question juridique active ou imminente. Une fois envoyés, les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et accepté de suivre les instructions données.
+Lorsque vous répondez à une demande ou à un examen réglementaire, vous pouvez être tenu d’informer les dépositaires de leur obligation de conserver les informations stockées électroniquement (ESI) et tout document pertinent pour une affaire juridique active ou imminente. Une fois envoyées, les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et accepté de suivre les instructions données.
 
-Pour vous aider à réduire le temps, les coûts et les efforts de suivi pour vos dépositaires, Advanced eDiscovery vous permet d’envoyer et de suivre des notifications de mise en attente légale par courrier électronique. Outre les notifications par courrier électronique, chaque dépositaire a accès à un portail de conformité individualisé, ce qui permet aux dépositaires d’être tenus informés des modifications apportées à leur statut d’obligation.
+Pour réduire le temps, les coûts et l’effort de suivi avec vos dépositaires, Advanced eDiscovery vous permet d’envoyer et de suivre des notifications de conservation légale par courrier électronique. En plus des notifications par courrier électronique, chaque dépositaire aura accès à un portail de conformité individualisé, ce qui permet aux dépositaires d’être tenus informés des modifications apportées à leur statut d’obligation.
 
 ## <a name="email-notifications"></a>Notifications par e-mail
 
-Une fois qu’une notification de conservation légale a été émise, chaque dépositaire reçoit un message électronique unique et personnalisé contenant votre notification de mise en attente légale définie et vous avez ajouté des instructions. 
+Une fois qu’une notification de conservation légale a été émise, chaque dépositaire reçoit un e-mail unique et personnalisé contenant votre notification de conservation légale définie et des instructions ajoutées. 
 
 > [!TIP]
-> Découvrez comment vous pouvez utiliser l' [éditeur de communication](using-communications-editor.md) intégré pour permettre à vos dépositaires de reconnaître leur notification ou d’accéder à leur portail de conformité directement à partir de leur courrier électronique.
+> Découvrez comment utiliser l’éditeur de  [communication](using-communications-editor.md) intégré pour permettre à vos dépositaires de reconnaître leur avis ou d’accéder à leur portail de conformité directement à partir de leur courrier électronique.
 
-En fonction de la configuration de votre notification de conservation légale, vos dépositaires peuvent recevoir les notifications suivantes : 
+En fonction de la configuration de votre notification de conservation légale, vos dépositaires peuvent recevoir les notifications suivantes : 
 
-- **Notification d’émission :** Première notification envoyée à votre dépositaire. Cette note contiendra vos instructions d’émission et la notification de suspension ajoutée à la fin de votre message.
+- **Avis d’émission :** Première notification envoyée à votre dépositaire. Cet avis contient vos instructions d’émission et l’avis de attente qui est envoyé à la fin de votre message.
 
-- **Notification de rappel :** Si cette option est activée, un avis de rappel est envoyé à vos dépositaires en fonction de la fréquence et de l’intervalle spécifiés. Les rappels continueront d’être envoyés jusqu’à ce que le dépositaire ait accusé réception de leur avis ou jusqu’à ce que le nombre de rappels soit épuisé.
+- **Avis de rappel :** S’il est activé, un avis de rappel est envoyé à vos dépositaires en fonction de la fréquence et de l’intervalle spécifiés. Les rappels continueront d’être envoyés jusqu’à ce que le dépositaire ait reconnu sa notification ou jusqu’à ce que le nombre de rappels soit épuisé.
 
-- **Notification d’escalade :** Si ce dernier est activé, une notification d’escalade est envoyée à votre dépositaire et à son responsable une fois que les notifications de rappel ont été épuisées. Le système envoie automatiquement des notifications d’escalade jusqu’à ce que le nombre spécifié d’escalades soit effectué ou jusqu’à ce que le dépositaire accuse réception de sa notification de suspension.
+- **Notification d’escalade :** Si ce dernier est activé, une notification d’escalade est envoyée à votre dépositaire et à son responsable une fois les notifications de rappel épuisées. Le système envoie automatiquement des notifications d’escalade jusqu’à ce que le nombre spécifié d’escalades soit terminé ou jusqu’à ce que le dépositaire reconnaisse sa notification de conservation.
 
-- **Relancer l’avis :** Au cours d’une enquête, si le contenu de la notification de mise en attente est mis à jour, l’avis mis à jour est automatiquement envoyé au dépositaire.
+- **Notification de réédition :** Au cours d’une enquête, si le contenu de l’avis de mise en attente est mis à jour, l’avis mis à jour est automatiquement envoyé au dépositaire.
 
-- **Notification de publication :** Lorsqu’un dépositaire est publié à partir de l’incident, l’avis de publication lui est envoyé. 
+- **Avis de publication :** Lorsqu’un dépositaire est libéré du cas, l’avis de publication lui est envoyé. 
 
 ## <a name="compliance-portal"></a>Portail de conformité
 
-En plus des notifications par courrier électronique, chaque dépositaire aura accès à un portail de conformité unique. Par le biais du portail, chaque dépositaire peut consulter les notifications d’attente actives, y accéder et les reconnaître.
+En plus des notifications par courrier électronique, chaque dépositaire aura accès à un portail de conformité unique. Par le biais du portail, chaque dépositaire peut afficher, consulter et reconnaître ses notifications de conservation active.
 
 ![Portail de conformité pour un dépositaire](../media/CustodianPortal.jpg)

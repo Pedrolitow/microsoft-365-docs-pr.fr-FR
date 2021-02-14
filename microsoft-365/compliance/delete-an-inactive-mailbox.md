@@ -27,26 +27,26 @@ ms.locfileid: "44817893"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Suppression d’une boîte aux lettres inactive
 
-Une boîte aux lettres inactive est utilisée pour conserver le courrier électronique d'un ancien employé une fois qu'il quitte votre organisation. Si vous n'avez plus besoin du contenu d'une boîte aux lettres inactive, vous pouvez le supprimer de façon définitive en supprimant le blocage. En outre, il est possible que plusieurs blocages soient placés sur une boîte aux lettres inactive. Par exemple, une boîte aux lettres inactive peut être placée en suspension pour litige et sur une ou plusieurs blocages sur place. En outre, une stratégie de rétention (créée dans le centre de sécurité et de conformité dans Office 365 ou Microsoft 365) peut être appliquée à la boîte aux lettres inactive. Vous devez supprimer toutes les suspensions et stratégies de rétention d’une boîte aux lettres inactive pour la supprimer. Une fois que vous avez supprimé les suspensions et les stratégies de rétention, la boîte aux lettres inactive est marquée pour suppression et est définitivement supprimée après traitement.
+Une boîte aux lettres inactive est utilisée pour conserver le courrier électronique d'un ancien employé une fois qu'il quitte votre organisation. Si vous n'avez plus besoin du contenu d'une boîte aux lettres inactive, vous pouvez le supprimer de façon définitive en supprimant le blocage. En outre, il est possible que plusieurs blocages soient placés sur une boîte aux lettres inactive. Par exemple, une boîte aux lettres inactive peut être placée en suspension pour litige et sur une ou plusieurs blocages sur place. En outre, une stratégie de rétention (créée dans le centre de sécurité et conformité dans Office 365 ou Microsoft 365) peut être appliquée à la boîte aux lettres inactive. Vous devez supprimer toutes les conservations et stratégies de rétention d’une boîte aux lettres inactive pour la supprimer. Une fois que vous avez supprimé les stratégies de conservation et de rétention, la boîte aux lettres inactive est marquée pour suppression et définitivement supprimée après son traitement.
   
 > [!IMPORTANT]
-> À mesure que nous continuons à investir de différentes manières pour conserver le contenu de la boîte aux lettres, nous annonçaons le retrait des conservations inaltérables dans le centre d’administration Exchange. Cela signifie que vous devez utiliser des conservations pour litige et des stratégies de rétention pour créer une boîte aux lettres inactive. À partir du 1er juillet 2020 vous ne pourrez pas créer de nouvelles conservations inaltérables dans Exchange Online. Toutefois, vous pourrez toujours modifier la durée de conservation d’un blocage sur place placé sur une boîte aux lettres inactive. Toutefois, à partir du 1er octobre 2020, vous ne pourrez pas modifier la durée de la conservation. Vous ne pourrez supprimer une boîte aux lettres inactive qu’en supprimant la conservation inaltérable. Les boîtes aux lettres inactives existantes qui sont en conservation inaltérable resteront conservées jusqu’à ce que la conservation soit supprimée. Pour plus d’informations sur le retrait des conservations inaltérables, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md).
+> À mesure que nous continuons d’investir de différentes façons pour conserver le contenu des boîtes aux lettres, nous an anvions le retrait des conservations In-Place dans le Centre d’administration Exchange. Cela signifie que vous devez utiliser des conservations pour litige et des stratégies de rétention pour créer une boîte aux lettres inactive. À compter du 1er juillet 2020, vous ne pourrez plus créer de In-Place en cours d’accès dans Exchange Online. Toutefois, vous pourrez toujours modifier la durée d’une In-Place placée sur une boîte aux lettres inactive. Toutefois, à compter du 1er octobre 2020, vous ne pourrez pas modifier la durée de la durée de la durée de la période de attente. Vous ne pourrez supprimer une boîte aux lettres inactive qu’en supprimant la In-Place de la boîte aux lettres. Les boîtes aux lettres inactives existantes qui sont en conservation In-Place sont conservées jusqu’à ce que la conservation soit supprimée. Pour plus d’informations sur le retrait des In-Place, voir [Retrait des outils eDiscovery hérités.](legacy-ediscovery-retirement.md)
   
 Consultez la section [Plus d'informations](#more-information) pour obtenir une description de ce qui se produit après la suppression des blocages d'une boîte aux lettres inactive.
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>Avant de supprimer une boîte aux lettres inactive
 
-- Vous devez utiliser Exchange Online PowerShell pour supprimer une suspension pour litige d’une boîte aux lettres inactive. Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE). Pour obtenir des instructions détaillées, consultez la rubrique [connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Vous pouvez utiliser Exchange Online PowerShell ou le centre d’administration Exchange pour supprimer un blocage sur place d’une boîte aux lettres inactive. 
+- Vous devez utiliser Exchange Online PowerShell pour supprimer une mise en attente pour litige d’une boîte aux lettres inactive. Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE). Pour obtenir des instructions, consultez [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Vous pouvez utiliser Exchange Online PowerShell ou le EAC pour supprimer une In-Place d’une boîte aux lettres inactive. 
     
-- Vous pouvez copier le contenu d'une boîte aux lettres inactive vers une autre boîte aux lettres avant de supprimer la conservation et de supprimer une boîte aux lettres inactive. Pour plus d’informations, consultez la rubrique [restaurer une boîte aux lettres inactive dans Office 365](restore-an-inactive-mailbox.md).
+- Vous pouvez copier le contenu d'une boîte aux lettres inactive vers une autre boîte aux lettres avant de supprimer la conservation et de supprimer une boîte aux lettres inactive. Pour plus d’informations, voir [Restaurer une boîte aux lettres inactive dans Office 365.](restore-an-inactive-mailbox.md)
     
-- Si vous supprimez la stratégie de blocage ou de rétention d’une boîte aux lettres inactive et que la période de rétention de boîte aux lettres supprimée (récupérable) a expiré, la boîte aux lettres sera définitivement supprimée. Après sa suppression, elle ne peut pas être récupérée. Avant de supprimer la conservation, vérifiez que vous n'avez plus besoin du contenu de la boîte aux lettres. Si vous souhaitez réactiver une boîte aux lettres inactive, vous pouvez la récupérer. Pour plus d’informations, consultez la rubrique [récupérer une boîte aux lettres inactive dans Office 365](recover-an-inactive-mailbox.md).
+- Si vous supprimez la stratégie de conservation ou de rétention d’une boîte aux lettres inactive et que la période de rétention de la boîte aux lettres supprimée (suppression temporaire) de la boîte aux lettres a expiré, la boîte aux lettres est définitivement supprimée. Après sa suppression, elle ne peut pas être récupérée. Avant de supprimer la conservation, vérifiez que vous n'avez plus besoin du contenu de la boîte aux lettres. Si vous souhaitez réactiver une boîte aux lettres inactive, vous pouvez la récupérer. Pour plus d’informations, [voir Récupérer une boîte aux lettres inactive dans Office 365.](recover-an-inactive-mailbox.md)
     
-- Pour plus d’informations sur les boîtes aux lettres inactives, consultez la rubrique [inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
+- Pour plus d’informations sur les boîtes aux lettres inactives, voir Boîtes aux lettres [inactives dans Office 365.](inactive-mailboxes-in-office-365.md)
     
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Étape 1 : Identifier les blocages sur une boîte aux lettres inactive
 
-Comme indiqué précédemment, la conservation pour litige, la conservation inaltérable ou la stratégie de rétention peuvent être placées sur une boîte aux lettres inactive. La première étape consiste à identifier les blocages sur une boîte aux lettres inactive.
+Comme indiqué précédemment, une conservation pour litige, une In-Place de rétention ou une stratégie de rétention peuvent être placées sur une boîte aux lettres inactive. La première étape consiste à identifier les blocages sur une boîte aux lettres inactive.
   
 Exécutez la commande suivante pour afficher les informations de blocage pour toutes les boîtes aux lettres inactives dans votre organisation.
   
@@ -71,7 +71,7 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, ba6f4ba25b62490aaaa25
 ```
 
 > [!TIP]
-> Si un grand nombre de blocages sur place est placé sur une boîte aux lettres inactive, tous les GUID de blocage sur place ne seront pas affichés. Vous pouvez exécuter la commande suivante pour afficher tous les GUID de conservation inaltérable :`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
+> Si un grand nombre de blocages sur place est placé sur une boîte aux lettres inactive, tous les GUID de blocage sur place ne seront pas affichés. Vous pouvez exécuter la commande suivante pour afficher tous les In-Place de la In-Place de la main :  `Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
   
 ## <a name="step-2-remove-a-hold-from-an-inactive-mailbox"></a>Étape 2 : Supprimer une blocage d'une boîte aux lettres inactive
 
@@ -92,7 +92,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
  Il existe deux façons de supprimer un blocage sur place à partir d'une boîte aux lettres inactive : 
   
-- **Supprimer l’objet de conservation** inaltérable Si la boîte aux lettres inactive que vous souhaitez supprimer définitivement est la seule boîte aux lettres source pour une conservation inaltérable, vous pouvez simplement supprimer l’objet de blocage sur place. 
+- **Supprimer l’objet In-Place Hold** Si la boîte aux lettres inactive que vous souhaitez supprimer définitivement est la seule boîte aux lettres source pour une In-Place, vous pouvez simplement supprimer l’objet In-Place hold. 
     
     > [!NOTE]
     > Vous devez désactiver le blocage avant de pouvoir supprimer un objet de blocage sur place. Si vous essayez de supprimer un objet de blocage sur place ayant le blocage activé, vous recevrez un message d'erreur. 
@@ -109,7 +109,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. Sélectionnez la conservation inaltérable à supprimer, puis cliquez sur **modifier** l' ![ icône modifier ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
+3. Sélectionnez la In-Place conserver à supprimer, puis  cliquez sur Modifier ![ l’icône ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) Modifier.
     
 4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**, uncheck the **Place content matching the search query in selected mailboxes on hold** box, and then click **Save**.
     
@@ -117,7 +117,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 6. Dans le message d'avertissement, cliquez sur **Oui** pour supprimer le blocage sur place. 
     
-#### <a name="use-exchange-online-powershell-to-delete-an-in-place-hold"></a>Utiliser Exchange Online PowerShell pour supprimer une conservation inaltérable
+#### <a name="use-exchange-online-powershell-to-delete-an-in-place-hold"></a>Utiliser Exchange Online PowerShell pour supprimer une In-Place de sécurité
 
 1. Créez une variable qui contient les propriétés du blocage sur place à supprimer. Utilisez le GUID du blocage sur place obtenu à l'[Étape 1 : Identifier les blocages sur une boîte aux lettres inactive](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
@@ -147,7 +147,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. Sélectionnez le blocage sur place placé sur la boîte aux lettres inactive, puis cliquez sur **modifier** l' ![ icône modifier ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
+3. Sélectionnez le In-Place qui est placé sur la boîte  aux lettres inactive, puis cliquez sur Modifier ![ l’icône ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) Modifier.
     
 4. On the **In-Place eDiscovery &amp; Hold** properties page, click **Sources**.
     
@@ -157,9 +157,9 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 7. Répétez les étapes 1 à 6 pour supprimer d'autres blocages sur place placés sur la boîte aux lettres inactive.
     
-#### <a name="use-exchange-online-powershell-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>Utiliser Exchange Online PowerShell pour supprimer une boîte aux lettres inactive d’une conservation inaltérable
+#### <a name="use-exchange-online-powershell-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>Utiliser Exchange Online PowerShell pour supprimer une boîte aux lettres inactive d’une In-Place en attente
 
-Si le blocage sur place contient un grand nombre de boîtes aux lettres source, il est possible que la boîte aux lettres inactive ne soit pas répertoriée sur la page **Sources** dans le CAE. Jusqu'à 3 000 boîtes aux lettres s'affichent sur la page **Sources** lorsque vous modifiez un blocage sur place. Si une boîte aux lettres inactive n’est pas affichée sur la page **sources** , vous pouvez utiliser Exchange Online PowerShell pour la supprimer de la conservation inaltérable. 
+Si le blocage sur place contient un grand nombre de boîtes aux lettres source, il est possible que la boîte aux lettres inactive ne soit pas répertoriée sur la page **Sources** dans le CAE. Jusqu'à 3 000 boîtes aux lettres s'affichent sur la page **Sources** lorsque vous modifiez un blocage sur place. Si une boîte aux lettres inactive n’est pas répertoriée dans la page **Sources,** vous pouvez utiliser Exchange Online PowerShell pour la supprimer de la In-Place d’attente. 
   
 1. Créez une variable qui contient les propriétés du blocage sur place placé sur la boîte aux lettres inactive. Utilisez le GUID du blocage sur place obtenu à l'[Étape 1 : Identifier les blocages sur une boîte aux lettres inactive](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
@@ -173,7 +173,7 @@ Si le blocage sur place contient un grand nombre de boîtes aux lettres source, 
    $InPlaceHold.Sources
    ```
 
-   **Remarque :** La propriété *sources* de la conservation inaltérable identifie les boîtes aux lettres source en fonction de leurs propriétés *legacyExchangeDN* . Étant donné que cette propriété identifie les boîtes aux lettres inactives de façon unique, l'utilisation de la propriété *Sources* du blocage sur place permet d'empêcher la suppression de la boîte aux lettres incorrecte. Cela permet également d'éviter les problèmes si deux boîtes aux lettres ont le même alias ou la même adresse SMTP. 
+   **Remarque :** La *propriété Sources* de la In-Place hold identifie les boîtes aux lettres source par leurs *propriétés LegacyExchangeDN.* Étant donné que cette propriété identifie les boîtes aux lettres inactives de façon unique, l'utilisation de la propriété *Sources* du blocage sur place permet d'empêcher la suppression de la boîte aux lettres incorrecte. Cela permet également d'éviter les problèmes si deux boîtes aux lettres ont le même alias ou la même adresse SMTP. 
    
 3. Supprimez la boîte aux lettres inactive dans la liste des boîtes aux lettres sources dans la variable. Veillez à utiliser le **LegacyExchangeDN** de la boîte aux lettres inactive qui est renvoyé par la commande à l'étape précédente. 
     
@@ -209,13 +209,13 @@ Si le blocage sur place contient un grand nombre de boîtes aux lettres source, 
 
 - **Une boîte aux lettres inactive est un type de boîte aux lettres supprimée (récupérable).** Dans Exchange Online, une boîte aux lettres supprimée (récupérable) est une boîte aux lettres qui a été supprimée mais qui peut être récupérée pendant une période de rétention spécifique. Le délai de rétention d'une boîte aux lettres supprimée (récupérable) dans Exchange Online est de 30 jours. Ainsi, la boîte aux lettres peut être récupérée dans les 30 jours qui suivent le moment où elle a été supprimée (récupérable). Après 30 jours, une boîte aux lettres supprimée (récupérable) est marquée pour suppression définitive et ne peut pas être récupérée. 
     
-- **Que se passe-t-il après avoir supprimé la conservation sur une boîte aux lettres inactive ?** La boîte aux lettres est traitée comme d'autres boîtes aux lettres supprimées (récupérables) et est marquée pour suppression définitive après l'expiration de la période de rétention de la boîte aux lettres supprimée (récupérable) de 30 jours. Ce délai de rétention commence à la date à laquelle la boîte aux lettres a été rendue inactive pour la première fois. Cette date est appelée date de suppression récupérable, qui correspond à la date à laquelle le compte d’utilisateur correspondant a été supprimé ou lorsque la boîte aux lettres Exchange Online a été supprimée à l’aide de la cmdlet **Remove-Mailbox** . La date supprimée (récupérable) n'est pas la date de suppression du blocage. 
+- **Que se passe-t-il après avoir supprimé la conservation sur une boîte aux lettres inactive ?** La boîte aux lettres est traitée comme d'autres boîtes aux lettres supprimées (récupérables) et est marquée pour suppression définitive après l'expiration de la période de rétention de la boîte aux lettres supprimée (récupérable) de 30 jours. Ce délai de rétention commence à la date à laquelle la boîte aux lettres a été rendue inactive pour la première fois. Cette date est connue sous le nom de date de suppression (suppression possible), qui correspond à la date à laquelle le compte d’utilisateur correspondant a été supprimé ou à laquelle la boîte aux lettres Exchange Online a été supprimée avec la cmdlet **Remove-Mailbox.** La date supprimée (récupérable) n'est pas la date de suppression du blocage. 
     
 - **Une boîte aux lettres inactive est-elle définitivement supprimée immédiatement après la suppression de la conservation ?** Si la date supprimée (récupérable) pour une boîte aux lettres inactive est de plus de 30 jours, la boîte aux lettres n'est pas supprimée définitivement dès que vous supprimez la conservation. La boîte aux lettres sera marquée pour suppression définitive et sera supprimée lors de son prochain traitement. 
     
-- **Quel est l'impact de la période de rétention de la boîte aux lettres supprimée (récupérable) sur les boîtes aux lettres inactives ?** Si la date supprimée (récupérable) pour une boîte aux lettres inactive se situe plus de 30 jours avant la date de la suppression de la conservation, la boîte aux lettres est marquée pour suppression définitive. Par contre, si la date supprimée (récupérable) d'une boîte aux lettres inactive se situe dans les 30 derniers jours et que vous supprimez la conservation, vous pouvez récupérer la boîte aux lettres jusqu'à l'expiration de la période de rétention de la boîte aux lettres supprimée (récupérable). Pour plus d’informations, consultez la rubrique [supprimer ou restaurer des boîtes aux lettres utilisateur dans Exchange Online](https://go.microsoft.com/fwlink/?linkid=856835). Après l'expiration de la période de rétention de la boîte aux lettres supprimée (récupérable), vous devez suivre les procédures de récupération d'une boîte aux lettres inactive. Pour plus d’informations, consultez la rubrique [récupérer une boîte aux lettres inactive dans Office 365](recover-an-inactive-mailbox.md).
+- **Quel est l'impact de la période de rétention de la boîte aux lettres supprimée (récupérable) sur les boîtes aux lettres inactives ?** Si la date supprimée (récupérable) pour une boîte aux lettres inactive se situe plus de 30 jours avant la date de la suppression de la conservation, la boîte aux lettres est marquée pour suppression définitive. Par contre, si la date supprimée (récupérable) d'une boîte aux lettres inactive se situe dans les 30 derniers jours et que vous supprimez la conservation, vous pouvez récupérer la boîte aux lettres jusqu'à l'expiration de la période de rétention de la boîte aux lettres supprimée (récupérable). Pour plus d’informations, voir [Supprimer ou restaurer des boîtes aux lettres utilisateur dans Exchange Online.](https://go.microsoft.com/fwlink/?linkid=856835) Après l'expiration de la période de rétention de la boîte aux lettres supprimée (récupérable), vous devez suivre les procédures de récupération d'une boîte aux lettres inactive. Pour plus d’informations, [voir Récupérer une boîte aux lettres inactive dans Office 365.](recover-an-inactive-mailbox.md)
     
-- **Comment afficher des informations sur une boîte aux lettres inactive après la suppression de la conservation ?** Après la suppression d’une conservation et la restauration de la boîte aux lettres inactive vers une boîte aux lettres supprimée (récupérable), elle n’est pas renvoyée à l’aide du paramètre *InactiveMailboxOnly* avec la cmdlet **Get-Mailbox** . Cependant, vous pouvez afficher des informations sur la boîte aux lettres à l'aide de la commande **Get-Mailbox -SoftDeletedMailbox**. Par exemple : 
+- **Comment afficher des informations sur une boîte aux lettres inactive après la suppression de la conservation ?** Une fois qu’une boîte aux lettres inactive a été supprimée et que la boîte aux lettres inactive est revenir à une boîte aux lettres supprimée (suppression réverable), elle ne sera pas renvoyée à l’aide du paramètre *InactiveMailboxOnly* avec la cmdlet **Get-Mailbox.** Cependant, vous pouvez afficher des informations sur la boîte aux lettres à l'aide de la commande **Get-Mailbox -SoftDeletedMailbox**. Par exemple : 
     
   ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
@@ -228,5 +228,5 @@ Si le blocage sur place contient un grand nombre de boîtes aux lettres source, 
   IsInactiveMailbox      : False
   ```
 
-  Dans l’exemple ci-dessus, la propriété *WhenSoftDeleted* identifie la date supprimée (récupérable), qui, dans cet exemple, est le 30 octobre 2014. Si cette boîte aux lettres supprimée (récupérable) était auparavant une boîte aux lettres inactive pour laquelle la conservation a été supprimée, elle sera définitivement supprimée 30 jours après la valeur de la propriété *WhenSoftDeleted* . Dans ce cas, la boîte aux lettres est définitivement supprimée après le 30 novembre 2014.
+  Dans l’exemple ci-dessus, la *propriété WhenSoftDeleted* identifie la date supprimée (supprimée (supprimé(s) (supprimé(s) (dans cet exemple) : 30 octobre 2014. Si cette boîte aux lettres supprimée (logiciel) était auparavant une boîte aux lettres inactive pour laquelle la boîte aux lettres a été supprimée, elle sera définitivement supprimée 30 jours après la valeur de la propriété *WhenSoftDeleted.* Dans ce cas, la boîte aux lettres est définitivement supprimée après le 30 novembre 2014.
 

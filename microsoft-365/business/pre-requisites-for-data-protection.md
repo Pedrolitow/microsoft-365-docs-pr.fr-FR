@@ -33,20 +33,20 @@ ms.locfileid: "44785889"
 
 Cet article s’applique à Microsoft 365 Business Premium.
 
-La première étape de la configuration de votre organisation avec Microsoft 365 pour les entreprises est de s’assurer que vous pouvez répondre aux conditions préalables.
+La première étape de la configuration de votre organisation avec Microsoft 365 pour les entreprises consiste à vous assurer que vous pouvez respecter les conditions préalables.
   
-## <a name="requirements-for-setting-up-your-organization-with-microsoft-365-for-business"></a>Conditions requises pour la configuration de votre organisation avec Microsoft 365 pour les entreprises
+## <a name="requirements-for-setting-up-your-organization-with-microsoft-365-for-business"></a>Configuration requise pour la configuration de votre organisation avec Microsoft 365 pour les entreprises
 
-- Les appareils Windows doivent exécuter Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro.
+- Les appareils Windows doivent être Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel.
     
     [Mettre à niveau les appareils Windows vers Windows Professionnel Creators Update](upgrade-to-windows-pro-creators-update.md)
     
-    Si vous utilisez Windows 10 Home, vous devez **acheter** Windows 10 professionnel. Pour obtenir des instructions, voir [mettre à niveau Windows 10 famille vers Windows 10 professionnel](https://support.microsoft.com/office/0aee10c1-4d34-43ee-a325-579c6c2df90e) . 
+    Si vous exécutez Windows 10 Famille, vous devez **acheter** Windows 10 Professionnel. Voir [mettre à niveau Windows 10 Famille vers Windows 10 Professionnel](https://support.microsoft.com/office/0aee10c1-4d34-43ee-a325-579c6c2df90e) pour obtenir des instructions. 
     
-- Supprimez des périphériques des solutions de gestion mobile (fer mobile, contrôle de l’interveille, etc.). Vous allez inscrire toutes les personnes de votre organisation dans Microsoft 365 pour Business Mobile Management.
+- Supprimez les appareils des solutions de gestion mobiles (Mobile Iron, AirWatch, et ainsi de suite). Vous allez inscrire toutes les personnes de votre organisation dans microsoft 365 pour la gestion mobile des entreprises.
     
 - Apple iOS 8.0 ou version ultérieure.
     
-    Google Android 4.0 ou version ultérieure (y compris Samsung KNOX Standard 4.0 ou version ultérieure). Pour plus d’informations, consultez la rubrique [Intune pris en charge](https://go.microsoft.com/fwlink/p/?linkid=852307).
+    Google Android 4.0 ou version ultérieure (y compris Samsung KNOX Standard 4.0 ou version ultérieure). Pour plus d’informations, voir [appareils pris en charge par Intune.](https://go.microsoft.com/fwlink/p/?linkid=852307)
     
-- Si vous disposez d’applications Office sur des ordinateurs d’utilisateur, lisez la rubrique [Prepare for Office client installation](prepare-for-office-client-deployment.md) pour comprendre les étapes que vous devrez peut-être effectuer avant de configurer Microsoft 365 pour entreprise afin d’installer Office 2016 sur les ordinateurs des utilisateurs. 
+- Si vous avez des applications Office existantes sur les ordinateurs des utilisateurs, lisez préparer l’installation du [client Office](prepare-for-office-client-deployment.md) pour comprendre les étapes que vous devrez peut-être suivre avant de configurer Microsoft 365 pour les entreprises pour installer Office 2016 sur les ordinateurs des utilisateurs. 

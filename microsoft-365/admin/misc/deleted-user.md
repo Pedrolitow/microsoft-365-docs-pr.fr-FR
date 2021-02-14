@@ -38,9 +38,9 @@ ms.locfileid: "44432182"
   
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
-2. Sélectionnez un utilisateur, puis au-dessus de la liste des utilisateurs, sélectionnez **plus d’options** (**...**), puis cliquez sur **Supprimer l’utilisateur**.
+2. Sélectionnez un utilisateur, puis au-dessus de la liste des utilisateurs sélectionnez **Plus d’options** (**...**), puis choisissez **Supprimer un utilisateur.**
   
-3. Dans le volet confirmation de suppression, sélectionnez **Supprimer l’utilisateur**. <br/>[Lire l’article complet.](../add-users/delete-a-user.md)
+3. Dans le volet de confirmation de suppression, sélectionnez **Supprimer l’utilisateur.** <br/>[Lire l’intégralité de l’article.](../add-users/delete-a-user.md)
   
 ::: moniker-end
 
@@ -48,9 +48,9 @@ ms.locfileid: "44432182"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
 
-2. Sélectionnez un utilisateur, puis au-dessus de la liste des utilisateurs, choisissez **plus** > **supprimer un utilisateur**.
+2. Sélectionnez un utilisateur, puis au-dessus de la liste d’utilisateurs, **sélectionnez Plus** > **supprimer un utilisateur.**
   
-3. Dans le volet confirmation de suppression, sélectionnez **Supprimer l’utilisateur**. <br/>[Lire l’article complet.](../add-users/delete-a-user.md)
+3. Dans le volet de confirmation de suppression, sélectionnez **Supprimer l’utilisateur.** <br/>[Lire l’intégralité de l’article.](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
@@ -58,22 +58,22 @@ ms.locfileid: "44432182"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
-2. Sélectionnez un utilisateur, puis au-dessus de la liste des utilisateurs, choisissez **plus** > **supprimer un utilisateur**.
+2. Sélectionnez un utilisateur, puis au-dessus de la liste d’utilisateurs, **sélectionnez Plus** > **supprimer un utilisateur.**
   
-3. Dans le volet confirmation de suppression, sélectionnez **Supprimer l’utilisateur**. <br/>[Lire l’article complet.](../add-users/delete-a-user.md)
+3. Dans le volet de confirmation de suppression, sélectionnez **Supprimer l’utilisateur.** <br/>[Lire l’intégralité de l’article.](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
   
 ## <a name="restore-a-user"></a>Restaurer un utilisateur
 
-Vous pouvez restaurer des utilisateurs en recherchant **Deleted** sur la page d’accueil et en choisissant **Users Deleted Users** dans les résultats, ou en accédant à la page **utilisateurs supprimés** dans le volet de navigation de gauche et en choisissant l’utilisateur à restaurer. [Lire l'intégralité de l'article](../add-users/delete-a-user.md)
+Vous pouvez restaurer des  utilisateurs en recherchant les  utilisateurs supprimés sur la page d’accueil et en choisissant Utilisateurs supprimés dans les résultats, ou en allant sur la **page** Utilisateurs supprimés à partir du navigation de gauche et en choisissant l’utilisateur que vous souhaitez restaurer. [Lire l'intégralité de l'article](../add-users/delete-a-user.md)
   
 ## <a name="what-are-deleted-users"></a>Qu'est-ce qu'un utilisateur supprimé ?
 
 Un [utilisateur](../add-users/add-users.md) supprimé est un compte professionnel ou scolaire que vous supprimez de votre organisation. 
   
-## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>La suppression d’un utilisateur a-t-elle libéré sa licence Microsoft 365 ?
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>La suppression d’un utilisateur libère-t-elle sa licence Microsoft 365 ?
 
 Oui, la suppression de l’utilisateur libère la licence Microsoft 365 attribuée à cet utilisateur. Vous pouvez ensuite attribuer cette licence à un autre utilisateur. [Lire l'intégralité de l'article](../../commerce/licenses/remove-licenses-from-subscription.md).
   
@@ -91,6 +91,6 @@ Lorsque vous supprimez un utilisateur, ses données ne sont pas perdues. Elles s
   
 ## <a name="how-do-i-restore-a-user"></a>Comment restaurer un utilisateur ?
 
-Vous pouvez restaurer des utilisateurs en recherchant **Deleted** sur la page d’accueil et en choisissant **Users Deleted Users** dans les résultats, ou en accédant à la page **utilisateurs supprimés** dans le volet de navigation de gauche et en choisissant l’utilisateur à restaurer. [Lire l'intégralité de l'article](../add-users/delete-a-user.md).
+Vous pouvez restaurer des  utilisateurs en recherchant les  utilisateurs supprimés sur la page d’accueil et en choisissant Utilisateurs supprimés dans les résultats, ou en allant sur la **page** Utilisateurs supprimés à partir du navigation de gauche et en choisissant l’utilisateur que vous souhaitez restaurer. [Lire l'intégralité de l'article](../add-users/delete-a-user.md).
   
 

@@ -1,46 +1,46 @@
-# <a name="overview"></a>Vue d'ensemble
+# <a name="overview"></a>Vue d’ensemble
 
-## <a name="learn-how-to-contribute"></a>En savoir plus sur la collaboration
+## <a name="learn-how-to-contribute"></a>Découvrez comment contribuer
 
-Toute personne intéressée peut participer aux rubriques. Lorsque vous contribuez, votre travail passe directement dans le jeu de contenu après avoir été fusionné. Il s’affiche ensuite sur docs.microsoft.com et vous serez inscrit en tant que collaborateur à : <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors> .
+Toute personne intéressée peut contribuer aux rubriques. Lorsque vous contribuez, votre travail est directement placé dans l’ensemble de contenu après avoir été fusionné. Il s’affiche ensuite sur docs.microsoft.com et vous êtes répertorié en tant que collaborateur à <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors> l':.
 
-### <a name="quickly-update-an-article-using-githubcom"></a>Mettre à jour rapidement un article à l’aide de GitHub.com
+### <a name="quickly-update-an-article-using-githubcom"></a>Mettre à jour rapidement un article à l’aide GitHub.com
 
-Les contributeurs qui effectuent des mises à jour inhabituelles ou petites peuvent modifier directement le fichier sur GitHub.com sans avoir à installer de logiciels supplémentaires. Cet article vous explique comment procéder. [Cette vidéo de deux minutes](https://www.microsoft.com/videoplayer/embed/RE1XQTG) aborde également la façon de contribuer.
+Les collaborateurs qui ne font que des mises à jour rares ou de petite taille peuvent modifier le fichier directement sur GitHub.com sans avoir à installer de logiciels supplémentaires. Cet article vous montre comment faire. [Cette vidéo de deux minutes vous](https://www.microsoft.com/videoplayer/embed/RE1XQTG) montre également comment contribuer.
 
-1. Vérifiez que vous êtes connecté à GitHub.com avec votre compte GitHub.
-2. Accédez à la page que vous souhaitez modifier sur docs.microsoft.com.
-3. Sur le côté droit de la page, cliquez sur **modifier** (icône représentant un crayon).
+1. Assurez-vous que vous êtes GitHub.com avec votre compte GitHub.
+2. Go to the page you want to edit on docs.microsoft.com.
+3. Sur le côté droit de la page, cliquez sur **Modifier** (icône de crayon).
 
-   ![Bouton modifier sur docs.microsoft.com](microsoft-365/media/quick-update-edit.png)
+   ![Bouton Modifier sur docs.microsoft.com](microsoft-365/media/quick-update-edit.png)
 
-4. Le fichier de rubrique correspondant sur GitHub s’ouvre, dans lequel vous devez cliquer sur l’icône **modifier ce fichier** crayon.
+4. Le fichier de rubrique correspondant sur GitHub s’ouvre, où vous devez cliquer sur l’icône **Modifier ce** crayon de fichier.
 
-   ![Bouton modifier sur github.com](microsoft-365/media/quick-update-github.png)
+   ![Bouton Modifier sur github.com](microsoft-365/media/quick-update-github.png)
 
-5. La rubrique s’ouvre dans une page de modification numérotée à partir de la ligne, dans laquelle vous pouvez modifier le fichier. Les fichiers dans GitHub sont écrits et modifiés à l’aide de la langue de démarque. Pour obtenir de l’aide sur l’utilisation de la démarque, voir [Mastering démarque](https://guides.github.com/features/mastering-markdown/). Sélectionnez l’onglet **aperçu des modifications** pour afficher vos modifications au fur et à mesure.
+5. Cette rubrique s’ouvre dans une page de modification numérotée sur une ligne dans laquelle vous pouvez apporter des modifications au fichier. Les fichiers dans GitHub sont écrits et modifiés à l’aide du langage Markdown. Pour obtenir de l’aide sur l’utilisation de Markdown, voir [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). Sélectionnez **l’onglet Modifications de** l’aperçu pour afficher vos modifications au cours de votre vie.
 
-6. Lorsque vous avez terminé d’apporter des modifications, accédez à la section **proposer un changement de fichier** au bas de la page :
+6. Lorsque vous avez terminé d’apporter des modifications, allez à la section **Proposer** une modification de fichier au bas de la page :
 
-   - Un titre bref est requis. Par défaut, le titre est le nom du fichier, mais vous pouvez le modifier.
-   - Vous pouvez également entrer plus de détails dans la zone **Ajouter une description étendue facultative** .
+   - Un bref titre est requis. Par défaut, le titre est le nom du fichier, mais vous pouvez le modifier.
+   - Si vous le souhaitez, vous pouvez entrer plus de détails dans la zone Ajouter **une description étendue** facultative.
 
-   Lorsque vous êtes prêt, cliquez sur le bouton vert **proposer un changement de fichier** .
+   Lorsque vous êtes prêt, cliquez sur le bouton vert Proposer le **changement de** fichier.
 
-   ![Section proposer un changement de fichier](microsoft-365/media/propose-file-change.png)
+   ![Section Proposer une modification de fichier](microsoft-365/media/propose-file-change.png)
 
-7. Sur la page **comparaison des modifications** qui s’affiche, cliquez sur le bouton vert créer une requête de **collecte** .
+7. Dans la page **Comparaison des modifications** qui s’affiche, cliquez sur le bouton vert Créer une requête **de** pull.
 
-   ![Page comparaison des modifications](microsoft-365/media/comparing-changes-page.png)
+   ![Comparaison de la page de modifications](microsoft-365/media/comparing-changes-page.png)
 
-8. Dans la page **ouvrir une demande de tirage** qui s’affiche, cliquez sur le bouton vert **créer une requête de tirage** .
+8. Dans la page **Ouvrir une** demande de pull qui s’affiche, cliquez sur le bouton vert Créer une **requête de** pull.
 
-   ![Ouvrir une page de requête de tirage](microsoft-365/media/open-a-pull-request-page.png)
+   ![Ouvrir une page de requête de pull](microsoft-365/media/open-a-pull-request-page.png)
 
 > [!NOTE]
-> Vos autorisations dans le référentiel déterminent les éléments que vous voyez au cours des étapes suivantes. Les personnes sans privilèges spéciaux verront la section **proposer un changement de fichier** et les pages de confirmation suivantes, comme décrit. Les personnes disposant des autorisations de création et d’approbation de leurs propres requêtes d’extraction verront une section mêmes **modifications de validation** avec des options supplémentaires pour la création d’une nouvelle succursale et moins de pages de confirmation.<br/><br/>Le point est le suivant : cliquez sur les boutons verts qui vous sont présentés jusqu’à ce qu’il n’y en ait plus.
+> Vos autorisations dans le repo déterminent ce que vous voyez dans les dernières étapes. Les personnes sans privilèges spéciaux voient la **section** Proposer un changement de fichier et les pages de confirmation suivantes, comme décrit. Les personnes autorisées à créer et approuver leurs propres demandes de pull voient une **section** similaire Valider les modifications avec des options supplémentaires pour créer une branche et moins de pages de confirmation.<br/><br/>Le point est : cliquez sur les boutons verts qui vous sont présentés jusqu’à ce qu’il n’y en a plus.
 
-Le rédacteur identifié dans les métadonnées de la rubrique sera informé et finira par examiner et approuver vos modifications, de sorte que la rubrique sera mise à jour sur docs.microsoft.com. S’il existe des questions ou des problèmes avec les mises à jour, le rédacteur vous contactera.
+Le rédacteur identifié dans les métadonnées de la rubrique sera averti et révisera et approuvera vos modifications afin que la rubrique soit mise à jour docs.microsoft.com. Si vous avez des questions ou des problèmes avec les mises à jour, le rédacteur vous contactera.
 
 ## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite Open Source de Microsoft
 
@@ -50,18 +50,18 @@ Pour plus d’informations, reportez-vous à la [FAQ relative au code de conduit
 
 ### <a name="contributing"></a>Contribution
 
-Ce projet accueille des contributions et des suggestions.  La plupart des contributions vous obligent à accepter un contrat de licence de contributeur (CLA) déclarant que vous avez le droit d’accorder et de faire part de ces droits pour utiliser votre contribution. Pour plus d’informations, reportez-vous à <https://cla.microsoft.com> .
+Ce projet reçoit les contributions et les suggestions.  La plupart des contributions exigent que vous acceptiez un contrat de licence de contributeur (CLA) déclarant que vous avez le droit de nous accorder les droits d’utilisation de votre contribution. Pour plus d’informations, visitez <https://cla.microsoft.com> .
 
-Lorsque vous soumettez une demande de tirage, un CLA-bot détermine automatiquement si vous devez fournir un CLA et décorer le PR de manière appropriée (par exemple, étiquette, commentaire). Suivez simplement les instructions fournies par le bot. Vous ne devez effectuer cette opération qu’une seule fois pour toutes les pensions à l’aide de notre CLA.
+Lorsque vous envoyez une demande de pull, un bot CLA détermine automatiquement si vous devez fournir un CLA et commenter correctement le pr (par exemple, étiquette, commentaire). Suivez simplement les instructions fournies par le bot. Vous ne devrez le faire qu’une seule fois sur tous les repos à l’aide de notre CLA.
 
-### <a name="legal-notices"></a>Mentions légales
+### <a name="legal-notices"></a>Avis juridiques
 
-Microsoft et tous les contributeurs vous accordent une licence à la documentation Microsoft et à d’autres contenus de ce référentiel sous la [licence publique internationale 4,0 de Creative](https://creativecommons.org/licenses/by/4.0/legalcode), d’attribution de contenu, voir le fichier de [licence](LICENSE) et vous accorder une licence à tout code dans le référentiel sous la [licence MIT](https://opensource.org/licenses/MIT), consultez le fichier de [Code de licence](LICENSE-CODE) .
+Microsoft et tous les collaborateurs vous accordent une licence pour la documentation Microsoft et d’autres contenus dans ce référentiel sous la licence publique internationale [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/legalcode), consultez le fichier [LICENSE](LICENSE) et accordez-vous une licence pour tout code dans le référentiel sous la licence [MIT](https://opensource.org/licenses/MIT), consultez le fichier [LICENSE-CODE.](LICENSE-CODE)
 
-Microsoft, Windows, Microsoft Azure et/ou d’autres produits et services Microsoft mentionnés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d’autres pays.
+Microsoft, Windows, Microsoft Azure et/ou d’autres produits et services Microsoft référencés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d’autres pays.
 
-Les licences pour ce projet ne vous permettent pas de vous accorder des droits d’utilisation des noms, logos ou marques de Microsoft. Les conseils de la marque générale de Microsoft sont disponibles à l’adresse <https://go.microsoft.com/fwlink/?LinkID=254653> .
+Les licences de ce projet ne vous accordent pas le droit d’utiliser des noms, des logos ou des marques Microsoft. Microsoft’s general trademark guidelines can be found at <https://go.microsoft.com/fwlink/?LinkID=254653> .
 
-Vous trouverez des informations sur la confidentialité à l’adresse suivante :<https://privacy.microsoft.com/>
+Les informations de confidentialité sont disponibles à l' <https://privacy.microsoft.com/>
 
-Microsoft et tous les contributeurs réservent tous les droits, qu’ils soient sous leurs droits d’auteur, brevets ou marques de sous-traitants, par implication, estoppel ou autre.
+Microsoft et les collaborateurs se réservent tous les autres droits, que ce soit sous leurs droits d’auteur, brevets ou marques respectives, que ce soit par implication, par défaut ou autrement.

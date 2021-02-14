@@ -1,5 +1,5 @@
 ---
-title: Mettre à niveau les appareils Windows vers Windows 10 professionnel
+title: Mettre à niveau les appareils Windows vers Windows 10 Professionnel
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: Découvrez comment vous pouvez mettre à niveau vos appareils Windows vers Windows 10 professionnel pour utiliser des fonctionnalités de mise en réseau plus avancées et de sécurité.
+description: Découvrez comment mettre à niveau vos appareils Windows vers Windows 10 Professionnel pour utiliser des fonctionnalités de mise en réseau professionnelle et de sécurité plus avancées.
 ms.openlocfilehash: 24ef1f1547ed8873ed1fa18120eef6275f53c7dc
 ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
@@ -33,33 +33,33 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44785527"
 ---
-# <a name="upgrade-windows-devices-to-windows-10-pro"></a>Mettre à niveau les appareils Windows vers Windows 10 professionnel
+# <a name="upgrade-windows-devices-to-windows-10-pro"></a>Mettre à niveau les appareils Windows vers Windows 10 Professionnel
 
-Regardez une courte vidéo sur la mise à niveau des appareils Windows vers Windows 10 professionnel.<br><br>
+Regardez une courte vidéo sur la mise à niveau des appareils Windows vers Windows 10 Professionnel.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="upgrade-to-windows-10-pro"></a>Mise à niveau vers Windows 10 professionnel
+## <a name="upgrade-to-windows-10-pro"></a>Mettre à niveau vers Windows 10 Professionnel
   
-Pour effectuer une mise à niveau vers Windows 10 professionnel, vous disposez de plusieurs options. Vous pouvez :
+Pour mettre à niveau vers Windows 10 Professionnel, vous avez plusieurs options. Vous pouvez :
     
-- Installer la mise à niveau à partir du [site de téléchargement de logiciels Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; Sélectionnez cette option si l’appareil auquel vous êtes connecté se trouve sur le même appareil que celui que vous souhaitez mettre à jour. 
+- Installez la mise à niveau à partir du site de téléchargement de [logiciels Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951 ) Sélectionnez cette option si l’appareil que vous êtes connecté se trouve sur le même appareil que celui que vous &ndash; souhaitez mettre à jour. 
 
-    - À partir du site de téléchargement de logiciels, cliquez sur **mettre à jour maintenant** pour commencer la mise à niveau de l’appareil vers Windows 10 professionnel Creators Update. 
+    - Sur le site de téléchargement de logiciels, cliquez sur **Mettre** à jour maintenant pour commencer la mise à niveau de l’appareil vers Windows 10 Professionnel Creators Update. 
     
-- Créer un support d’installation à l’aide de l' [outil de création de médias](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; Sélectionnez cette option pour créer un support d’installation Windows 10 professionnel Creators Update (lecteur flash USB ou fichier ISO) pour installer Windows 10 sur un PC différent de celui que vous utilisez.
+- Créez un support [](https://go.microsoft.com/fwlink/?LinkID=836960) d’installation à l’aide de l’outil de création de médias Sélectionnez cette option pour créer un support &ndash; d’installation Windows 10 Professionnel Creators Update (disque mémoire USB ou fichier ISO) pour installer Windows 10 sur un PC différent de celui que vous utilisez.
 
-    - Lisez les instructions relatives à l’utilisation de l’outil et à la création de votre support d’installation. 
+    - Lisez les instructions sur l’utilisation de l’outil et la création de votre support d’installation. 
 
 > [!NOTE]
-> Si vous avez des appareils Windows exécutant Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement Microsoft 365 pour les entreprises vous permet d’effectuer une mise à niveau vers Windows Pro 10.
+> Si vous avez des appareils Windows exécutant Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement Microsoft 365 pour les entreprises vous donne droit à une mise à niveau Windows Pro 10.
     
-Pour terminer la configuration des appareils Windows 10, reportez-vous à la rubrique [configurer des appareils Windows pour les utilisateurs de Microsoft 365 pour les utilisateurs professionnels](set-up-windows-devices.md) . 
+Voir Configurer des appareils Windows pour que les utilisateurs [de Microsoft 365](set-up-windows-devices.md) pour les entreprises terminent la configuration des appareils Windows 10. 
   
-Pour terminer la configuration des appareils Android et iOS, consultez la rubrique [set up Mobile Devices for Microsoft 365 for Business Users](set-up-mobile-devices.md) . 
+Voir [Configurer des appareils mobiles pour les utilisateurs de Microsoft 365](set-up-mobile-devices.md) pour les entreprises afin de terminer la configuration des appareils Android et iOS. 
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 pour les entreprises
+## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Pour plus d’informations sur la configuration et l’utilisation de Microsoft 365 pour les entreprises
 
 [Vidéos de formation Microsoft 365 Entreprise](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

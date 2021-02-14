@@ -1,5 +1,5 @@
 ---
-title: Comment les stratégies de Microsoft 365 pour l’entreprise protègent les données de l’entreprise
+title: Protection des données d’entreprise par les stratégies de Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -34,13 +34,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/01/2020
 ms.locfileid: "44471156"
 ---
-# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Comment les stratégies de Microsoft 365 pour l’entreprise protègent les données de l’entreprise
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Protection des données d’entreprise par les stratégies de Microsoft 365 pour les entreprises
 
 Cet article s’applique à Microsoft 365 Business Premium.
 
 [] Les stratégies que vous créez sont spécifiques au type d'appareil et peuvent être appliquées à des groupes d'utilisateurs spécifiques. Cela signifie que vous pouvez créer une stratégie qui s'applique à vos cadres et une autre qui s'applique à tous les autres utilisateurs.
   
-Pour les appareils Android et iOS, vous pouvez ajouter ou modifier des stratégies d'application qui protègent les applications Office et les fichiers professionnels utilisés par les applications Office. Nous pouvons contrôler les appareils Windows 10 un peu davantage, de sorte que les stratégies d’application peuvent inclure davantage de paramètres, tels que le chiffrement et la protection des emplacements de réseau et de Cloud. Vous pouvez également créer des stratégies d'appareil pour les appareils Windows 10 qui appliquent des paramètres comme la protection contre les virus et les mises à jour automatiques. Nous vous recommandons de respecter les stratégies créées lors de l’installation, mais si vous souhaitez affiner vos stratégies ou en ajouter d’autres, consultez les articles suivants :
+Pour les appareils Android et iOS, vous pouvez ajouter ou modifier des stratégies d'application qui protègent les applications Office et les fichiers professionnels utilisés par les applications Office. Nous sommes en mesure de contrôler un peu plus les appareils Windows 10, afin que les stratégies d’application puissent inclure d’autres paramètres, tels que le chiffrement et la protection pour les emplacements réseau et cloud. Vous pouvez également créer des stratégies d'appareil pour les appareils Windows 10 qui appliquent des paramètres comme la protection contre les virus et les mises à jour automatiques. Nous vous recommandons de vous en tenir aux stratégies créées lors de l’installation, mais si vous souhaitez affiner vos stratégies ou en ajouter d’autres, consultez les articles suivants :
   
 [Définir des configurations d'application pour les appareils Android ou iOS](app-protection-settings-for-android-and-ios.md)
   

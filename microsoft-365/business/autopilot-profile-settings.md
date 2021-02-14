@@ -29,7 +29,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Les profils AutoPilot vous permettent de contrôler la manière dont Windows est installé sur les appareils utilisateur. Les profils contiennent des paramètres par défaut et facultatifs, comme ignorer l’installation de Cortana.
+description: Les profils AutoPilot vous aident à contrôler la façon dont Windows est installé sur les appareils des utilisateurs. Les profils contiennent des paramètres par défaut et facultatifs comme ignorer l’installation de Cortana.
 ms.openlocfilehash: 100de5e9548f901008d3ae154ac5a237ef265ffb
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -39,22 +39,22 @@ ms.locfileid: "44401031"
 ---
 # <a name="about-autopilot-profile-settings"></a>À propos des paramètres du profil AutoPilot
 
-## <a name="autopilot-profile-settings"></a>Paramètres du profil AutoPilot
+## <a name="autopilot-profile-settings"></a>Paramètres de profil AutoPilot
 
-Vous pouvez utiliser les profils AutoPilot pour contrôler la façon dont Windows est installé sur les appareils utilisateur. Les profils contiennent les paramètres suivants.
+Vous pouvez utiliser les profils AutoPilot pour contrôler la façon dont Windows est installé sur les appareils des utilisateurs. Les profils contiennent les paramètres suivants.
   
- **Les fonctionnalités de AutoPilot par défaut (obligatoires) qui sont définies automatiquement :**
+ **Fonctionnalités autoPilot par défaut (obligatoires) qui sont définies automatiquement :**
   
 |**Paramètre**|**Description**|
 |:-----|:-----|
-|Ignorer l’inscription de Cortana, OneDrive et OEM  <br/> |Ignore l’installation des applications grand public telles que Cortana et OneDrive personnel. L’utilisateur de l’appareil peut l’installer ultérieurement tant que l’utilisateur est un administrateur local sur l’appareil. L’inscription du fabricant d’origine est ignorée car l’appareil est géré par Microsoft 365 Business Premium.  <br/> |
-|Expérience de connexion avec la marque de votre entreprise  <br/> |Si votre société dispose d’une [page de connexion ajouter votre société à Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page), l’utilisateur de l’appareil bénéficiera de cette expérience lors de la connexion.  <br/> |
-|Auto-inscriptions MDM avec comptes AAD configurés.  <br/> |L’identité de l’utilisateur sera gérée par Azure Active Directory, et les utilisateurs se connecteront à Windows et à Microsoft 365 avec leurs informations d’identification Microsoft 365 Business Premium.  <br/> |
+|Ignorer l’inscription de Cortana, OneDrive et OEM  <br/> |Ignore l’installation d’applications grand public telles que Cortana et OneDrive personnel. L’utilisateur de l’appareil peut les installer ultérieurement tant que l’utilisateur est un administrateur local sur l’appareil. L’inscription du fabricant d’origine est ignorée, car l’appareil sera géré par Microsoft 365 Business Premium.  <br/> |
+|Expérience de signature avec la marque de votre entreprise  <br/> |Si votre entreprise dispose d’une marque Ajouter votre marque de société à la page de signature [Microsoft 365,](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page)l’utilisateur de l’appareil aura cette expérience lors de la signature.  <br/> |
+|Inscription automatique mdm avec des comptes AAD configurés.  <br/> |L’identité de l’utilisateur est gérée par Azure Active Directory et les utilisateurs se connectent à Windows et Microsoft 365 avec leurs informations d’identification Microsoft 365 Business Premium.  <br/> |
    
- **Paramètres facultatifs :**
+ **Paramètres facultatifs :**
   
 |**Paramètre**|**Description**|
 |:-----|:-----|
-|Ignorer les paramètres de confidentialité (désactivés par défaut)  <br/> |Si cette option est **activée**, l’utilisateur de l’appareil ne verra pas le contrat de licence du périphérique et de Windows lorsqu’il se connecte pour la première fois.  <br/> |
-|Ne pas autoriser l’utilisateur à devenir l’administrateur local  <br/> |Si cette option est **activée**, l’utilisateur de l’appareil ne peut pas installer d’applications personnelles, telles que Cortana.<br/> |
+|Ignorer les paramètres de confidentialité (par défaut)  <br/> |Si cette option est définie sur **On,** l’utilisateur de l’appareil ne verra pas le contrat de licence pour l’appareil et Windows lorsqu’il se connecté pour la première fois.  <br/> |
+|Ne pas autoriser l’utilisateur à devenir l’administrateur local  <br/> |Si cette option est définie sur **Activé,** l’utilisateur de l’appareil ne pourra pas installer d’applications personnelles, telles que Cortana.<br/> |
    

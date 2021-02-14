@@ -1,5 +1,5 @@
 ---
-title: Gérer l’accès aux applications de messagerie dans le centre d’administration Microsoft 365
+title: Gérer l’accès aux applications de messagerie dans le Centre d’administration Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -28,38 +28,38 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/27/2020
 ms.locfileid: "44400051"
 ---
-# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Gérer l’accès aux applications de messagerie dans le centre d’administration Microsoft 365
+# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Gérer l’accès aux applications de messagerie dans le Centre d’administration Microsoft 365
 
-Utilisez les paramètres d’accès aux courriers électroniques mobiles pour choisir les applications mobiles que les membres de votre organisation peuvent utiliser pour accéder à leur compte professionnel ou scolaire afin d’accéder à la messagerie, au calendrier et aux contacts.
+Utilisez les paramètres d’accès à la messagerie mobile pour choisir les applications mobiles que les membres de votre organisation peuvent utiliser pour accéder à leur compte scolaire ou scolaire ou accéder à la messagerie, au calendrier et aux contacts.
   
 > [!IMPORTANT]
-> Votre organisation aura accès à ce paramètre, sauf si vous utilisez Microsoft Intune ou si vous avez configuré les paramètres de gestion des appareils mobiles dans le centre d’administration Exchange. 
+> Votre organisation aura accès à ce paramètre, sauf si vous utilisez Microsoft Intune ou que vous avez configuré les paramètres de gestion des appareils mobiles dans le Centre d’administration Exchange. 
   
 ## <a name="manage-email-app-options"></a>Gérer les options de l’application de messagerie
 
 > [!IMPORTANT]
->  Si vous n’utilisez pas cette fonctionnalité, aucune modification ne sera apportée à l’expérience de vos utilisateurs. Ils pourront utiliser n’importe quelle application de messagerie mobile pour accéder à leur compte professionnel ou scolaire pour le courrier électronique, le calendrier et les contacts à partir de leur appareil mobile. 
+>  Si vous n’utilisez pas cette fonctionnalité, aucune modification ne sera apportée à l’expérience de vos utilisateurs. Ils pourront utiliser n’importe quelle application de messagerie mobile pour accéder à leur compte scolaire ou de messagerie électronique, calendrier et contacts à partir de leur appareil mobile. 
     
 1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; Compléments</a>. 
 
-2. Sur la page **options d’accès au courrier mobile** , activez la case à cocher, puis choisissez la manière dont les utilisateurs de votre organisation utilisent les applications de messagerie sur leurs appareils :
+2. Dans la page Options d’accès **à** la messagerie mobile, cochez la case, puis choisissez comment les utilisateurs de votre organisation utilisent les applications de messagerie sur leurs appareils :
   
-Choisissez l’option permettant de définir la façon dont les utilisateurs de votre organisation accèdent à leur compte professionnel ou scolaire à partir de leurs appareils mobiles.
+Choisissez l’option pour définir la façon dont les utilisateurs de votre organisation accèdent à leur compte scolaire ou scolaire à partir de leurs appareils mobiles
   
-- **Outlook uniquement** : les utilisateurs de votre organisation doivent utiliser l’application Outlook pour Android ou Outlook pour iOS sur leur appareil mobile. 
+- **Outlook uniquement** : les utilisateurs de votre organisation devront utiliser l’application Outlook pour Android ou Outlook pour iOS sur leur appareil mobile. 
     
-- **Toute application de messagerie** -tous les utilisateurs de votre organisation seront invités à utiliser Outlook, mais ils peuvent choisir d’utiliser n’importe quelle application de messagerie. 
+- **N’importe quelle application de** messagerie : tous les utilisateurs de votre organisation sont invités à utiliser Outlook, mais ils peuvent choisir d’utiliser n’importe quelle application de messagerie. 
     
-- **Toute application de messagerie** : les nouveaux utilisateurs ou périphériques de votre organisation seront invités une fois à utiliser Outlook, mais ils peuvent choisir d’utiliser n’importe quelle application de messagerie. 
+- **N’importe quelle application de** messagerie - nouveaux utilisateurs ou appareils de votre organisation sera invité une fois à utiliser Outlook, mais ils peuvent choisir d’utiliser n’importe quelle application de messagerie. 
     
-Pour plus d’informations, consultez les [options permettant d’accéder à la messagerie électronique à partir de votre appareil mobile](access-email-from-a-mobile-device.md).
+Pour plus d’informations, consultez [Les options d’accès à la messagerie](access-email-from-a-mobile-device.md)à partir de votre appareil mobile.
   
-## <a name="new-user-or-device-is-activated-in-your-organization"></a>Un nouvel utilisateur ou appareil est activé dans votre organisation
+## <a name="new-user-or-device-is-activated-in-your-organization"></a>Un nouvel utilisateur ou un nouvel appareil est activé dans votre organisation
 
-Dès qu’un utilisateur de votre organisation ajoute son courrier électronique professionnel ou scolaire à une application de messagerie tierce ou à un nouveau périphérique, il reçoit un courrier électronique de **la part de Microsoft au nom de votre organisation**. Le courrier électronique leur indiquera les avantages liés à l’utilisation de l’application mobile Outlook et fournira un lien vers l’emplacement de téléchargement. Vos utilisateurs peuvent alors choisir de continuer à utiliser l’application tierce ou d’utiliser l’application mobile Outlook. Pendant les 24 heures suivant la réception de ce message électronique, son appareil est en quarantaine, et les données de messagerie, de calendrier et de contact ne sont pas mises à jour. S’ils choisissent d’utiliser l’application mobile Outlook, l’application tierce reste mise en quarantaine et les données ne sont synchronisées qu’avec l’application mobile Outlook. S’ils décident de continuer à utiliser l’application tierce, les données commenceront à être synchronisées instantanément. Si aucune action n’est effectuée pendant les premières 24 heures, le courrier électronique est supprimé de sa boîte de réception et les données commencent à être synchronisées automatiquement à partir du serveur.
+Dès qu’un utilisateur de votre organisation ajoute son courrier scolaire ou scolaire à une application de messagerie tierce ou à un nouvel appareil, il reçoit un e-mail de Microsoft pour le compte de votre **organisation.** Le courrier électronique leur fera savoir les avantages de l’utilisation de l’application mobile Outlook et fournit un lien vers l’emplacement de téléchargement. Vos utilisateurs peuvent ensuite choisir de continuer à utiliser l’application tierce ou d’utiliser l’application mobile Outlook. Pendant les 24 heures qui s’erront après que l’utilisateur aura reçu ce message électronique pour la première fois, son appareil sera mis en quarantaine et les données de courrier, de calendrier et de contact ne seront pas mises à jour. S’ils choisissent d’utiliser l’application mobile Outlook, l’application tierce reste mise en quarantaine et les données ne sont synchronisées qu’avec l’application mobile Outlook. S’ils décident de continuer à utiliser l’application tierce, les données commencent à se synchroniser instantanément. Si aucune action n’est entreprise pendant ces premières 24 heures, le courrier électronique est supprimé de sa boîte de réception et les données commencent à se synchroniser automatiquement à partir du serveur.
   
-## <a name="previously-configured-users-in-your-organization"></a>Utilisateurs configurés précédemment dans votre organisation
+## <a name="previously-configured-users-in-your-organization"></a>Utilisateurs précédemment configurés dans votre organisation
 
-Si vous décidez de recommander Outlook à tous les membres de votre organisation, outre l’expérience décrite ci-dessus pour les nouveaux utilisateurs, les utilisateurs qui ont précédemment connecté leur compte de messagerie professionnel ou scolaire à une application tierce recevront un courrier électronique de **Microsoft au nom de votre organisation dans les** 48 heures suivant l’activation de ce paramètre. Le courrier électronique leur indiquera les avantages liés à l’utilisation de l’application mobile Outlook et fournira un lien vers l’emplacement de téléchargement. Vos utilisateurs peuvent alors choisir de continuer à utiliser l’application tierce ou d’utiliser l’application mobile Outlook. Pendant les 24 heures suivant la réception de ce message électronique, son appareil est en quarantaine, et les données de messagerie, de calendrier et de contact ne sont pas mises à jour. S’ils choisissent d’utiliser l’application mobile Outlook, l’application tierce reste mise en quarantaine et les données ne sont synchronisées qu’avec l’application mobile Outlook. S’ils décident de continuer à utiliser l’application tierce, les données commenceront à être synchronisées instantanément. Si aucune action n’est effectuée pendant les premières 24 heures, le courrier électronique est supprimé de sa boîte de réception et les données commencent à être synchronisées automatiquement à partir du serveur. 
+Si vous décidez de recommander Outlook à tous les membres de votre organisation, en plus de l’expérience décrite ci-dessus pour les nouveaux utilisateurs, les utilisateurs qui ont précédemment connecté leur compte de messagerie scolaire ou scolaire à une application tierce recevront un courrier électronique de **Microsoft** pour le compte de votre organisation dans les 48 heures qui s’viennent d’être activés. L’e-mail leur fera savoir les avantages de l’utilisation de l’application mobile Outlook et fournit un lien vers l’emplacement de téléchargement. Vos utilisateurs peuvent ensuite choisir de continuer à utiliser l’application tierce ou d’utiliser l’application mobile Outlook. Pendant les 24 heures qui s’erront après que l’utilisateur aura reçu ce message électronique pour la première fois, son appareil sera mis en quarantaine et les données de courrier, de calendrier et de contact ne seront pas mises à jour. S’ils choisissent d’utiliser l’application mobile Outlook, l’application tierce reste en quarantaine et les données ne sont synchronisées qu’avec l’application mobile Outlook. S’ils décident de continuer à utiliser l’application tierce, les données commencent à se synchroniser instantanément. Si aucune action n’est entreprise pendant ces premières 24 heures, le courrier électronique est supprimé de sa boîte de réception et les données commencent à se synchroniser automatiquement à partir du serveur. 
   
 

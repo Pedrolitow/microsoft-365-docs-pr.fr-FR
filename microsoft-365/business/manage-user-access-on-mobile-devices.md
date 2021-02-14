@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
-description: Découvrez les stratégies de protection qui vous permettent de gérer la manière dont les utilisateurs accèdent aux applications Office et aux fichiers de travail à partir d’appareils mobiles.
+description: Découvrez les stratégies de protection qui vous permettent de gérer la façon dont les utilisateurs accèdent aux applications Office et aux fichiers de travail à partir d’appareils mobiles.
 ms.openlocfilehash: b2b828cf2e201360f12b8fadcb395e72958230f6
 ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
@@ -47,10 +47,10 @@ Les paramètres suivants sont disponibles pour gérer la manière dont les utili
 |||
 |:-----|:-----|
 |Setting  <br/> |Description  <br/> |
-|Exiger un code confidentiel ou une empreinte pour accéder aux applications Office  <br/> |Si ce paramètre est **activé**, les utilisateurs doivent fournir une autre forme d’authentification, en plus de leur nom d’utilisateur et de leur mot de passe, avant de pouvoir utiliser les applications Office sur leur appareil mobile.  <br/> |
+|Exiger un code confidentiel ou une empreinte pour accéder aux applications Office  <br/> |Si ce paramètre est sur **,** les utilisateurs doivent fournir une autre forme d’authentification, en plus de leur nom d’utilisateur et mot de passe, avant de pouvoir utiliser les applications Office sur leur appareil mobile.  <br/> |
 |Réinitialiser le code confidentiel en cas d'échecs successifs de la connexion  <br/> |Afin d'empêcher un utilisateur non autorisé de deviner un code confidentiel de façon aléatoire, le code confidentiel est réinitialisé après le nombre d'entrées incorrectes que vous spécifiez.  <br/> |
-|Demander aux utilisateurs de se reconnecter à l'issue d'une période d'inactivité des applications Office  <br/> |Ce paramètre détermine la durée pendant laquelle un utilisateur peut être inactif avant d’être invité à se reconnecter.  <br/> |
-|Refuser l'accès aux fichiers de travail sur les appareils « jailbreakés » ou débridés  <br/> |Les utilisateurs intelligents peuvent avoir un appareil jailbreaké ou rooté. Cela signifie que l’utilisateur peut modifier le système d’exploitation, ce qui peut compliquer l’utilisation de l’appareil. Ces appareils sont bloqués lorsque ce paramètre est **activé**.  <br/> |
-|Ne pas autoriser les utilisateurs à copier le contenu des applications Office dans des applications personnelles  <br/> |Lorsque le paramètre est **activé**, l’utilisateur ne peut pas copier les informations d’un fichier de travail dans un fichier personnel. Si le paramètre est **désactivé**, l’utilisateur peut copier des informations à partir d’un fichier de travail vers une application personnelle ou un compte personnel.  <br/> |
+|Demander aux utilisateurs de se reconnecter à l'issue d'une période d'inactivité des applications Office  <br/> |Ce paramètre détermine la durée pendant combien de temps un utilisateur peut être inactif avant d’être invité à se ré-inscrire.  <br/> |
+|Refuser l'accès aux fichiers de travail sur les appareils « jailbreakés » ou débridés  <br/> |Les utilisateurs intelligents peuvent avoir un appareil jailbreaké ou rooté. Cela signifie que l’utilisateur peut modifier le système d’exploitation, ce qui peut rendre l’appareil plus susceptible d’être malveillant. Ces appareils sont bloqués lorsque ce paramètre est **activé**.  <br/> |
+|Ne pas autoriser les utilisateurs à copier le contenu des applications Office dans des applications personnelles  <br/> |Lorsque le paramètre est **sur ,** l’utilisateur ne peut pas copier les informations d’un fichier de travail dans un fichier personnel. Si le paramètre est **Éteint,** l’utilisateur peut copier les informations d’un fichier de travail vers une application personnelle ou un compte personnel.  <br/> |
    
 
