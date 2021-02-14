@@ -25,31 +25,31 @@ ms.locfileid: "46690057"
 ---
 # <a name="tune-exchange-online-performance"></a>Optimisation des performances Exchange Online
 
-Cet article contient des conseils généraux et des liens vers d’autres ressources qui vous indiquent comment améliorer les performances d’Exchange Online, en particulier avant une migration. Cet article fait partie du projet [planification réseau et optimisation des performances pour Office 365](https://aka.ms/tune) .
+Cet article contient des conseils généraux et des liens vers d’autres ressources qui vous indiquent comment améliorer les performances d’Exchange Online, en particulier avant une migration. Cet article fait partie de la planification réseau et de l’optimisation des performances pour le projet [Office 365.](https://aka.ms/tune)
    
 ## <a name="things-to-consider-in-order-to-improve-exchange-online-performance"></a>Éléments à prendre en compte pour améliorer les performances d’Exchange Online
 
-Pour améliorer la vitesse de migration et réduire les contraintes de bande passante de votre organisation pour Exchange Online, prenez en compte les éléments suivants :
+Pour améliorer la vitesse de migration et réduire les contraintes de bande passante de votre organisation pour Exchange Online, prenons en compte les considérations suivantes :
   
-- **Réduisez la taille des boîtes aux lettres.** La taille de boîte aux lettres réduite améliore la vitesse de migration. 
+- **Réduisez la taille des boîtes aux lettres.** Une taille de boîte aux lettres plus petite améliore la vitesse de migration. 
     
-- **Utiliser les fonctionnalités de déplacement de boîtes aux lettres avec un déploiement hybride Exchange.** Avec un déploiement hybride Exchange, le courrier hors connexion (sous la forme de. Fichiers OST) ne nécessite pas de téléchargement à nouveau lors de la migration vers Exchange Online. Cela réduit considérablement vos besoins en matière de bande passante de téléchargement. 
+- **Utilisez les fonctionnalités de déplacement de boîtes aux lettres avec un déploiement hybride Exchange.** Avec un déploiement hybride Exchange, la messagerie hors connexion (sous la forme . Fichiers OST) ne nécessite pas de re-téléchargement lors de la migration vers Exchange Online. Cela réduit considérablement vos besoins en bande passante de téléchargement. 
     
-- **Planifiez les déplacements de boîtes aux lettres au cours des périodes de trafic Internet faible et de l’utilisation d’Exchange en local.** Lors de la planification des déplacements, les demandes de migration sont envoyées au proxy de réplication de boîte aux lettres et ne peuvent pas être placées immédiatement. 
+- **Planifier les déplacements de boîtes aux lettres pendant les périodes de faible trafic Internet et d’utilisation d’Exchange sur site faible.** Lors de la planification des déplacements, les demandes de migration sont envoyées au proxy de réplication de boîte aux lettres et peuvent ne pas avoir lieu immédiatement. 
     
-- **Utilisez la la messagerie instantanée épuré pour Outlook sur le Web.** Les la messagerie instantanée épurées fournissent des versions plus petites et moins gourmandes en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer en affichant certains composants sur le serveur. Pour plus d’informations, reportez-vous à la rubrique [use Lean la messagerie instantanée pour réduire la mémoire utilisée lors de la lecture des messages électroniques](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf).
+- **Utilisez des fenêtres pop-out allégées pour Outlook sur le web.** Les fenêtres pop-out allégées fournissent des versions plus petites et moins intensives en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer en rendant certains composants sur le serveur. Pour plus d’informations, voir [Utiliser des fenêtres publicitaires légères](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf)pour réduire la mémoire utilisée lors de la lecture des messages électroniques.
 
 
 ## <a name="general-advice"></a>Conseils généraux
 
-- Assurez-vous que la recherche DNS pour outlook.office.com entre dans le centre de donnée Microsoft à un emplacement d’entrée logique de votre emplacement.
+- Assurez-vous que la recherche DNS pour outlook.office.com le centre de données MS à un emplacement d’entrée logique pour votre emplacement.
 
-- Rechercher la mise en cache des boîtes aux lettres et choisir les options appropriées (re. période de mise en cache, mise en cache des boîtes aux lettres partagées et cetera).
+- Mise en cache de boîte aux lettres de recherche et choix des options appropriées (re. période de mise en cache, mise en cache de boîtes aux lettres partagées, et courrier électronique).
 
-- Conservez vos données Outlook en transitant par des connexions VPN (vers un bureau central) avant qu’elles ne circulent sur Internet.
+- Veillez à ce que vos données Outlook ne passent pas de connexions VPN (à un bureau central) avant qu’elles ne passent par Internet.
 
-- Assurez-vous que les données de votre boîte aux lettres respectent les limites du dossier et de l’élément, amounts.
+- Assurez-vous que vos données de boîte aux lettres respectent les limites imposées aux montants des dossiers et des éléments.
     
-Pour plus d’informations sur les performances de migration Exchange, consultez la rubrique relative aux [performances et aux meilleures pratiques pour la migration Office 365](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57).
+Pour plus d’informations sur les performances de migration Exchange, consultez les meilleures pratiques et performances de [migration d’Office 365.](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57)
   
 

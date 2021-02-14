@@ -31,9 +31,9 @@ ms.locfileid: "46695820"
 
 Un réseau virtuel Azure entre différents locaux est connecté à votre réseau local, étendant ainsi votre réseau pour inclure des sous-réseaux et machines virtuelles hébergés dans les services d’infrastructure Azure. Cette connexion permet aux ordinateurs de votre réseau local d’accéder directement aux machines virtuelles dans Azure et inversement. 
 
-Par exemple, un serveur de synchronisation d’annuaires en cours d’exécution sur une machine virtuelle Azure doit interroger vos contrôleurs de domaine locaux sur les modifications apportées aux comptes et synchroniser ces modifications avec votre abonnement Microsoft 365. Cet article vous explique comment configurer un réseau virtuel Azure intersites à l’aide d’une connexion de réseau privé virtuel (VPN) de site à site qui est prête à héberger des machines virtuelles Azure.
+Par exemple, un serveur de synchronisation d’annuaires s’exécutant sur une machine virtuelle Azure doit interroger vos contrôleurs de domaine locaux pour obtenir des modifications apportées aux comptes et synchroniser ces modifications avec votre abonnement Microsoft 365. Cet article vous montre comment configurer un réseau virtuel Azure entre sites à l’aide d’une connexion vpn (virtual private network) de site à site prête à héberger des machines virtuelles Azure.
 
-## <a name="configure-a-cross-premises-azure-virtual-network"></a>Configuration d’un réseau virtuel Azure entre différents locaux
+## <a name="configure-a-cross-premises-azure-virtual-network"></a>Configurer un réseau virtuel Azure entre plusieurs locaux
 
 Vos machines virtuelles dans Azure n'ont pas besoin d'être isolées de votre environnement local. Pour connecter des machines virtuelles Azure à des ressources réseau locales, vous devez configurer un réseau virtuel Azure local. Le diagramme suivant montre les composants requis pour déployer un réseau virtuel Azure entre différents locaux avec une machine virtuelle dans Azure.
   
@@ -336,4 +336,4 @@ Voici la configuration finale.
   
 ## <a name="next-step"></a>Étape suivante
   
-[Déploiement de la synchronisation d’annuaires Microsoft 365 dans Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Déployer la synchronisation d’annuaires Microsoft 365 dans Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

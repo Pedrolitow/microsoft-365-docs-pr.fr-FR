@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Découvrez comment fonctionnent les contrôles d’isolation dans Microsoft 365, ce qui permet aux services d’interopérer ou de rester autonomes en fonction des besoins.
+description: Découvrez comment fonctionnent les contrôles d’isolation dans Microsoft 365, ce qui permet aux services d’inter-fonctionner ou de rester autonomes selon les besoins.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: bb0989f19002267ab92bf184a12a4076f753580e
 ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
@@ -25,19 +25,19 @@ ms.locfileid: "47332375"
 ---
 # <a name="microsoft-365-isolation-controls"></a>Contrôles d’isolation Microsoft 365 
 
-Microsoft travaille en continu pour s’assurer que l’architecture mutualisée de Microsoft 365 prend en charge la sécurité au niveau de l’entreprise, la confidentialité, la confidentialité, l’intégrité, les [normes](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons)locales, internationales et de disponibilité. L’échelle et l’étendue des services fournis par Microsoft rendent difficile et non économique la gestion de Microsoft 365 avec une interaction humaine importante. Les services Microsoft 365 sont fournis par le biais de plusieurs centres de données répartis dans le monde entier, chacun étant très automatisé avec peu d’opérations exigeant une touche humaine ou n’importe quel accès au contenu client. Notre équipe prend en charge ces services et centres de données à l’aide d’outils automatisés et d’accès à distance hautement sécurisé. 
+Microsoft s’assure en permanence que l’architecture multi-clients de Microsoft 365 prend en charge la sécurité, la confidentialité, la confidentialité, l’intégrité, les normes locales, internationales et de disponibilité au niveau de [l’entreprise.](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons) L’échelle et l’étendue des services fournis par Microsoft rendent difficile et non économique la gestion de Microsoft 365 avec une interaction humaine significative. Les services Microsoft 365 sont fournis via plusieurs centres de données distribués globalement, chacun hautement automatisé avec peu d’opérations nécessitant une intervention humaine ou tout accès au contenu client. Notre personnel prend en charge ces services et centres de données à l’aide d’outils automatisés et d’un accès à distance hautement sécurisé. 
 
-Microsoft 365 est composé de plusieurs services qui fournissent des fonctionnalités métier importantes et contribuent à l’expérience complète de Microsoft 365. Chacun de ces services est autonome et est conçu pour s’intégrer les uns avec les autres.
+Microsoft 365 est composé de plusieurs services qui fournissent des fonctionnalités professionnelles importantes et contribuent à l’ensemble de l’expérience Microsoft 365. Chacun de ces services est autonome et conçu pour s’intégrer les uns aux autres.
 
-Microsoft 365 est conçu selon les principes suivants :
+Microsoft 365 est conçu avec les principes suivants :
 
- - ** [Architecture orientée service](https://docs.microsoft.com/previous-versions/aa480021(v=msdn.10)):** conception et développement de logiciels sous la forme de services interopérables fournissant une fonctionnalité métier bien définie.
- - **[Assurance de sécurité opérationnelle](https://www.microsoft.com/download/details.aspx?id=40872):** infrastructure qui comprend les connaissances acquises par le biais de différentes fonctionnalités propres à Microsoft, y compris le [cycle de vie de développement](https://www.microsoft.com/sdl/default.aspx)de la sécurité Microsoft, le centre de réponse à la [sécurité Microsoft](https://technet.microsoft.com/library/dn440717.aspx)et une connaissance approfondie du paysage des menaces Cybersecurity.
+ - **[Architecture orientée service](https://docs.microsoft.com/previous-versions/aa480021(v=msdn.10))** : conception et développement de logiciels sous la forme de services interopérables fournissant des fonctionnalités métiers bien définies.
+ - **[Operational Security Assurance](https://www.microsoft.com/download/details.aspx?id=40872)** : infrastructure qui intègre les connaissances acquises grâce à différentes fonctionnalités propres à Microsoft, notamment le cycle de vie du développement de la sécurité Microsoft, le Centre de réponse de sécurité [Microsoft](https://technet.microsoft.com/library/dn440717.aspx)et la connaissance approfondie du paysage des menaces de cybersécurité. [](https://www.microsoft.com/sdl/default.aspx)
 
-Les services Microsoft 365 interagissent les uns avec les autres, mais ils sont conçus et mis en œuvre de sorte qu’ils puissent être déployés et exploités en tant que services autonomes, indépendamment les uns des autres. Microsoft isole les responsabilités et domaines de responsabilité pour Microsoft 365 afin de réduire les possibilités de modification non autorisée ou involontaire des ressources de l’organisation. Microsoft 365 teams ont des rôles définis dans le cadre d’un mécanisme de contrôle d’accès basé sur un rôle complet.
+Les services Microsoft 365 inter-opèrent les uns avec les autres, mais sont conçus et implémentés pour pouvoir être déployés et gérés en tant que services autonomes, indépendamment les uns des autres. Microsoft sépare les tâches et les domaines de responsabilité de Microsoft 365 afin de réduire les possibilités de modification non autorisée ou involontaire ou d’utilisation abusive des biens de l’organisation. Les équipes Microsoft 365 ont défini des rôles dans le cadre d’un mécanisme complet de contrôle d’accès basé sur les rôles.
 
 ## <a name="customer-content-isolation"></a>Isolation du contenu client
 
-Tout le contenu client d’un client est isolé des autres clients et des opérations et des données système utilisées dans la gestion de Microsoft 365. Plusieurs formes de protection sont implémentées dans Microsoft 365 pour minimiser le risque de compromission d'un service ou d'une application Microsoft 365. Plusieurs formes de protection empêchent également l’accès non autorisé aux informations des clients ou du système Microsoft 365 lui-même.
+Tout le contenu client d’un client est isolé des autres clients et des données des opérations et des systèmes utilisées dans la gestion de Microsoft 365. Plusieurs formes de protection sont implémentées dans Microsoft 365 pour minimiser le risque de compromission d'un service ou d'une application Microsoft 365. Plusieurs formes de protection empêchent également l’accès non autorisé aux informations des clients ou du système Microsoft 365 lui-même.
 
-Pour plus d’informations sur la façon dont Microsoft implémente l’isolation logique des données client dans Microsoft 365, voir [isolation des clients dans microsoft 365](microsoft-365-tenant-isolation-overview.md).
+Pour plus d’informations sur la façon dont Microsoft implémente l’isolation logique des données client dans Microsoft 365, voir Isolation du [client dans Microsoft 365.](microsoft-365-tenant-isolation-overview.md)

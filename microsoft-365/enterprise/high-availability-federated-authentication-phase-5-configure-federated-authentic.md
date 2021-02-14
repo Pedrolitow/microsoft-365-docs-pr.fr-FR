@@ -1,5 +1,5 @@
 ---
-title: Authentification fédérée haute disponibilité, phase 5 configurer l’authentification fédérée pour Microsoft 365
+title: Authentification fédérée haute disponibilité, phase 5 Configurer l’authentification fédérée pour Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: 'Résumé : configurez Azure AD Connect pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
+description: 'Résumé : Configurez Azure AD Connect pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
 ms.openlocfilehash: f00763487261b62940ac5def38d35158db77a699
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46690000"
 ---
-# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Authentification fédérée haute disponibilité, phase 5 : configurer l’authentification fédérée pour Microsoft 365
+# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Authentification fédérée haute disponibilité, phase 5 : Configurer l’authentification fédérée pour Microsoft 365
 
-Dans cette phase finale du déploiement de l’authentification fédérée haute disponibilité pour Microsoft 365 dans les services d’infrastructure Azure, vous obtenez et installez un certificat émis par une autorité de certification publique, vérifiez votre configuration, puis installez et exécutez Azure AD Connect sur le serveur de synchronisation d’annuaires. Azure AD Connect configure votre abonnement Microsoft 365 et vos serveurs AD FS (Active Directory Federation Services) et proxy d’application Web pour l’authentification fédérée.
+Dans cette phase finale du déploiement de l’authentification fédérée haute disponibilité pour Microsoft 365 dans les services d’infrastructure Azure, vous obtenez et installez un certificat émis par une autorité de certification publique, vérifiez votre configuration, puis installez et exécutez Azure AD Connect sur le serveur de synchronisation d’annuaires. Azure AD Connect configure votre abonnement Microsoft 365, vos services AD FS (Active Directory Federation Services) et vos serveurs proxy d’application web pour l’authentification fédérée.
   
-Consultez la rubrique [Deploy High Availability Federated Authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
+Voir [Déployer l’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
   
 ## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Obtenir un certificat public et le copier sur le serveur de synchronisation d’annuaires
 
@@ -41,7 +41,7 @@ Par ailleurs, les ordinateurs et appareils de votre organisation doivent approuv
   
 Pour plus d'informations sur les certificats requis pour l'authentification fédérée, consultez la rubrique [Configuration requise pour l'installation et la configuration de la fédération](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
   
-Lorsque vous recevez le certificat, copiez-le dans un dossier sur le lecteur C : du serveur de synchronisation d’annuaires. Par exemple, nommez le fichier SSL. pfx et stockez-le dans le dossier C : \\ certs sur le serveur de synchronisation d’annuaires.
+Lorsque vous recevez le certificat, copiez-le dans un dossier sur le lecteur C: du serveur de synchronisation d’annuaires. Par exemple, nommez le fichier SSL.pfx et stockez-le dans le dossier C: Certs sur le serveur de synchronisation \\ d’annuaires.
   
 ## <a name="verify-your-configuration"></a>Vérifier votre configuration
 
@@ -57,7 +57,7 @@ Vous devez maintenant être prêt à configurer Azure AD Connect et l’authenti
     
 - Un enregistrement DNS A privé au nom de domaine complet de votre service de fédération pointe vers l’adresse IP privée de l’équilibreur de charge Azure interne pour les serveurs AD FS.
     
-- Une autorité de certification publique-isssued certificat numérique approprié pour les connexions SSL avec le SAN défini sur le nom de domaine complet du service de Fédération est un fichier PFX stocké sur votre serveur de synchronisation d’annuaires.
+- Un certificat numérique publié par l’autorité de certification publique approprié pour les connexions SSL avec le san set sur le nom de domaine complet de votre service de fédération est un fichier PFX stocké sur votre serveur de synchronisation d’annuaires.
     
 - Le certificat racine de l'autorité de certification publique est installé dans la banque Autorités de certification racines de confiance de vos ordinateurs et appareils.
     
@@ -65,15 +65,15 @@ Voici un exemple pour l’organisation Contoso :
   
 **Exemple de configuration pour une infrastructure d'authentification fédérée haute disponibilité dans Azure**
 
-![Exemple de configuration de l’infrastructure d’authentification fédérée Microsoft 365 à haute disponibilité dans Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Exemple de configuration de l’infrastructure d’authentification fédérée Microsoft 365 haute disponibilité dans Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Exécutez Azure AD Connect pour configurer l’authentification fédérée
 
-L’outil Azure AD Connect configure les serveurs AD FS, les serveurs proxy d’application Web et Microsoft 365 pour l’authentification fédérée en procédant comme suit :
+L’outil Azure AD Connect configure les serveurs AD FS, les serveurs proxy d’application web et Microsoft 365 pour l’authentification fédérée à l’aide des étapes suivantes :
   
-1. Créez une connexion de bureau à distance à votre serveur de synchronisation d’annuaires à l’aide d’un compte de domaine disposant de privilèges d’administrateur local.
+1. Créez une connexion bureau à distance à votre serveur de synchronisation d’annuaires avec un compte de domaine ayant des privilèges d’administrateur local.
     
-2. À partir du Bureau du serveur de synchronisation d’annuaires, ouvrez Internet Explorer et accédez à [https://aka.ms/aadconnect](https://aka.ms/aadconnect) .
+2. À partir du bureau du serveur de synchronisation d’annuaires, ouvrez Internet Explorer et allez à [https://aka.ms/aadconnect](https://aka.ms/aadconnect) .
     
 3. Sur la page de **Microsoft Azure Active Directory Connect**, cliquez sur **Télécharger**, puis cliquez sur **Exécuter**.
     
@@ -85,9 +85,9 @@ L’outil Azure AD Connect configure les serveurs AD FS, les serveurs proxy d’
     
 7. Sur la page **Connexion utilisateur**, cliquez sur **Fédération avec AD FS**, puis sur **Suivant**.
     
-8. Sur la page **connexion à Azure ad** , tapez le nom et le mot de passe d’un compte d’administrateur général pour votre abonnement Microsoft 365, puis cliquez sur **suivant**.
+8. Dans la page Se connecter à **Azure AD,** tapez le nom et le mot de passe d’un compte d’administrateur général pour votre abonnement Microsoft 365, puis cliquez sur **Suivant**.
     
-9. Sur la page **connexion à vos annuaires** , vérifiez que votre forêt services de domaine Active Directory (AD DS) locale est sélectionnée dans **forêt**, tapez le nom et le mot de passe d’un compte d’administrateur de domaine, cliquez sur **Ajouter un répertoire**, puis cliquez sur **suivant**.
+9. Dans **la page** Connecter vos annuaires, assurez-vous que votre forêt des services de domaine Active Directory (AD DS) sur site est sélectionnée dans **Forêt,** tapez le nom et le mot de passe d’un compte d’administrateur de domaine, cliquez sur Ajouter un **répertoire,** puis cliquez sur Suivant **.**
     
 10. Sur la page **Configuration la connexion à Azure AD**, cliquez sur **Suivant**.
     
@@ -135,15 +135,15 @@ Voici la configuration finale, avec les noms d’espace réservé pour les serve
   
 **Phase 5 : Configuration finale d'une infrastructure d'authentification fédérée haute disponibilité dans Azure**
 
-![La configuration finale de l’infrastructure d’authentification fédérée Microsoft 365 haute disponibilité dans Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Configuration finale de l’infrastructure d’authentification fédérée Microsoft 365 haute disponibilité dans Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-Votre infrastructure d’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure est complète.
+Votre infrastructure d’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure est terminée.
   
 ## <a name="see-also"></a>Voir aussi
 
 [Déployer une authentification fédérée haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Identité fédérée pour votre environnement de développement/test Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Identité fédérée pour votre environnement de test/dev Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Centre de solutions et d'architecture Microsoft 365](../solutions/solution-architecture-center.md)
 

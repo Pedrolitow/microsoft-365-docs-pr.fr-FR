@@ -18,7 +18,7 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
-description: Contient des liens vers d’autres articles qui vous indiquent comment améliorer les performances des temps de téléchargement des pages pour SharePoint Online.
+description: Contient des liens vers d’autres articles qui vous expliquent comment améliorer les performances des temps de téléchargement de page pour SharePoint Online.
 ms.openlocfilehash: c488cb47205c8f250494420ffe3a068244411859
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.locfileid: "46690055"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Optimisation des performances SharePoint Online
 
-Cet article contient des liens vers d’autres articles qui vous indiquent comment améliorer les performances des temps de téléchargement des pages pour SharePoint Online. Cet article fait partie du projet [planification réseau et optimisation des performances pour Office 365](https://aka.ms/tune) .
+Cet article contient des liens vers d’autres articles qui vous expliquent comment améliorer les performances des temps de téléchargement de page pour SharePoint Online. Cet article fait partie de la planification réseau et de l’optimisation des performances pour le projet [Office 365.](https://aka.ms/tune)
 
 ## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Articles sur l’optimisation des performances de SharePoint Online
 
@@ -36,7 +36,7 @@ Utilisez ces articles pour affiner les performances de SharePoint Online.
   
 - [Introduction à l’optimisation des performances pour SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
 
-- [Utiliser l’outil de diagnostics de page pour SharePoint Online](page-diagnostics-for-spo.md)
+- [Utiliser l’outil Diagnostic de page pour SharePoint Online](page-diagnostics-for-spo.md)
 
 - [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
 
@@ -50,7 +50,7 @@ Utilisez ces articles pour affiner les performances de SharePoint Online.
 
 - [Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
-- [Utilisation du composant WebPart de recherche de contenu au lieu du composant WebPart requête de contenu pour améliorer les performances dans SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [Utilisation du service Web De recherche de contenu au lieu du partie Web De requête de contenu pour améliorer les performances dans SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
 
 - [Planification de la capacité et test de charge SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
 
@@ -60,12 +60,12 @@ Utilisez ces articles pour affiner les performances de SharePoint Online.
 
 - [Procédure : éviter les limitations ou les blocages dans SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
 
-- [Optimiser les iFrames dans les pages de portail modernes SharePoint Online](modern-iframe-optimization.md)
+- [Optimiser les iFrames dans les pages de portail moderne SharePoint Online](modern-iframe-optimization.md)
 
-- [Optimiser les performances des composants WebPart dans les pages de portail modernes SharePoint Online](modern-web-part-optimization.md)
+- [Optimiser les performances du web part dans les pages de portail moderne SharePoint Online](modern-web-part-optimization.md)
 
-- [Optimiser les appels de page dans les pages de portail modernes SharePoint Online](modern-page-call-optimization.md)
+- [Optimiser les appels de page dans les pages de portail moderne SharePoint Online](modern-page-call-optimization.md)
 
-- [Optimiser le poids de la page dans les pages de portail modernes SharePoint Online](modern-page-weight-optimization.md)
+- [Optimiser le poids des pages dans les pages de portail moderne SharePoint Online](modern-page-weight-optimization.md)
 
-- [Optimiser les images dans les pages de portail modernes SharePoint Online](modern-image-optimization.md)
+- [Optimiser les images dans les pages de portail moderne SharePoint Online](modern-image-optimization.md)

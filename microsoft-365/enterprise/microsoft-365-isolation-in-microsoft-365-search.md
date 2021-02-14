@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Dans cet article, vous trouverez une explication sur le fonctionnement de l’isolation du client pour séparer les données du client dans Microsoft 365 Search.
+description: Dans cet article, trouvez une explication du fonctionnement de l’isolation client pour séparer les données client dans Microsoft 365 Search.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 3416afdeceaa7000b516ec89b4a2a1e59d8708d0
 ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
@@ -25,40 +25,40 @@ ms.locfileid: "47332399"
 ---
 # <a name="tenant-isolation-in-microsoft-365-search"></a>Isolation du client dans Microsoft 365 Search
 
-La recherche SharePoint Online utilise un modèle de séparation des clients qui équilibre l’efficacité des structures de données partagées avec une protection contre la fuite d’informations entre les locataires. Ce modèle empêche les fonctionnalités de recherche de :
+La recherche SharePoint Online utilise un modèle de séparation des clients qui équilibre l’efficacité des structures de données partagées avec la protection contre la fuite d’informations entre les clients. Avec ce modèle, nous empêchons les fonctionnalités de recherche de :
 
-- Renvoi de résultats de requête qui contiennent des documents provenant d’autres locataires
-- Exposition de suffisamment d’informations dans les résultats de requête pour qu’un utilisateur compétent puisse déduire des informations sur d’autres clients
+- Renvoi des résultats de requête qui contiennent des documents provenant d’autres locataires
+- Exposition d’informations suffisantes dans les résultats de requête qu’un utilisateur compétent peut déduire des informations sur d’autres locataires
 - Affichage du schéma ou des paramètres d’un autre client
-- Le mélange des informations de traitement d’analyse entre les locataires ou les résultats du stockage dans le mauvais client
-- Utilisation d’entrées de dictionnaire provenant d’un autre client
+- La combinaison d’informations de traitement de l’analyse entre les clients ou le magasin entraîne la mauvaise relation client
+- Utilisation d’entrées de dictionnaire d’un autre client
 
-Pour chaque type de données client, nous utilisons une ou plusieurs couches de protection dans le code pour éviter la fuite accidentelle d’informations. Les données les plus critiques possèdent le plus de couches de protection pour s’assurer qu’un seul défaut ne résulte pas d’une fuite d’informations effective ou perçue.
+Pour chaque type de données client, nous utilisons une ou plusieurs couches de protection dans le code pour éviter toute fuite accidentelle d’informations. Les données les plus critiques disposent du plus grand nombre de couches de protection pour s’assurer qu’un seul défaut ne se produit pas de fuite d’informations réelle ou perçue.
 
-## <a name="tenant-separation-for-the-search-index"></a>Séparation des clients pour l’index de recherche
+## <a name="tenant-separation-for-the-search-index"></a>Séparation des locataires pour l’index de recherche
 
-L’index de recherche est stocké sur le disque dans les serveurs hébergeant les composants d’index et les clients partagent les fichiers d’index. Les documents indexés d’un client ne sont visibles que pour les requêtes de ce client. Trois mécanismes indépendants empêchent la fuite d’informations :
+L’index de recherche est stocké sur disque sur les serveurs hébergeant les composants d’index et les clients partagent les fichiers d’index. Les documents indexés d’un client sont visibles uniquement pour les requêtes de ce client. Trois mécanismes indépendants empêchent la fuite d’informations :
 
-- Filtrage des ID de locataire
-- Préfixe du terme ID client
-- Vérifications de liste de contrôle d’accès
+- Filtrage des ID de client
+- Préfixe de terme d’ID de client
+- Vérifications de la contrôle d’accès
 
-Les trois mécanismes doivent échouer pour que la recherche renvoie des documents au mauvais client.
+Les trois mécanismes doivent échouer pour que la recherche retourne des documents au mauvais client.
 
-## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>Filtrage d’ID de client et préfixe de termes d’ID de client
+## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>Filtrage des ID de locataire et préfixe des termes de l’ID de locataire
 
-Les préfixes de recherche sont indexés dans l’index de recherche en texte intégral avec l’ID de client. Par exemple, lorsque le terme «*foo*» est indexé pour un client dont l’ID est «*123*», l’entrée dans l’index de texte intégral est «*123foo ».*
+La recherche préfixe chaque terme indexé dans l’index de texte intégral avec l’ID client. Par exemple, lorsque le terme «*foo*» est indexé pour un client dont l’ID est «*123*», l’entrée dans l’index de texte intégral est «*123foo.*»
 
-Chaque requête est convertie pour inclure l’ID client à l’aide d’un processus appelé filtrage des ID de locataire. Par exemple, la requête «*foo*» est convertie en «<*GUID*>. *foo* ET *tenantID*: <*GUID*>», où <*GUID*> représente le client qui exécute la requête. Cette conversion de requête se produit au sein de chaque nœud d’index, et ni le traitement des requêtes, ni le traitement du contenu ne peuvent l’influencer. Étant donné que l’ID de locataire est ajouté à chaque requête, la fréquence d’un terme dans d’autres clients ne peut pas être déduite en examinant le meilleur classement par correspondance dans un seul client.
+Chaque requête est convertie pour inclure l’ID de client à l’aide d’un processus appelé filtrage d’ID de client. Par exemple, la requête « foo » est *convertie* en « <*guid*>. *foo* AND *tenantID*:<*guid*> », où <*guid*> représente le client qui exécute la requête. Cette conversion de requête se produit dans chaque nœud d’index et ni la requête ni le traitement du contenu ne peuvent l’influencer. Étant donné que l’ID de client est ajouté à chaque requête, la fréquence d’un terme dans d’autres locataires ne peut pas être déduite en regardant le meilleur classement des correspondances dans un client.
 
-L’expression de préfixe d’ID de client ne se produit que dans l’index de texte intégral. Les recherches à l’aide de champs, telles que «*title : foo*», permettent d’accéder à un index de recherche synthétique où les termes ne sont pas préfixés par ID de client. Au lieu de cela, les recherches dans les champs sont précédées du nom du champ. Par exemple, la requête «*title : foo*» est convertie en «*Fields. title : foo et Fields. tenantID*: <*GUID*> ». Étant donné que la fréquence d’un terme n’influe pas sur le classement des correspondances dans l’index de recherche synthétique, il n’est pas nécessaire de séparer les clients par le préfixe des termes. Pour une recherche*nommée « title : foo*», la séparation de contenu du client dépend du filtrage de l’ID de client par conversion de requête.
+Le préfixe de terme de l’ID client se produit uniquement dans l’index de texte intégral. Les recherches sur le terrain, telles que «*title:foo*», vont à un index de recherche synthétique dans lequel les termes ne sont pas précédés de l’ID de locataire. Au lieu de cela, les recherches dans les champs sont précédées du nom du champ. Par exemple, la requête «*title:foo*» est convertie en «*fields.title:foo AND fields.tenantID*:<*guid*> ». Étant donné que la fréquence d’un terme n’influence pas le classement des occurrences dans l’index de recherche synthétique, il n’est pas nécessaire de séparer le client par préfixe de termes. Pour une recherche sur le champ telle que «*title:foo*», la séparation du contenu du client dépend du filtrage de l’ID client par conversion de requête.
 
-## <a name="document-access-control-list-checks"></a>Vérification de la liste de contrôle d’accès des documents
+## <a name="document-access-control-list-checks"></a>Vérifications des listes de contrôle d’accès aux documents
 
-La recherche contrôle l’accès aux documents via des ACL qui sont enregistrés dans l’index de recherche. Chaque élément est indexé avec un ensemble de termes dans un champ de liste de contrôle d’accès spécial. Le champ ACL contient un terme par groupe ou utilisateur qui peut afficher le document. Chaque requête est complétée par une liste de termes d’entrée de contrôle d’accès (ACE), un pour chaque groupe auquel l’utilisateur authentifié appartient.
+La recherche contrôle l’accès aux documents via des ACA enregistrées dans l’index de recherche. Chaque élément est indexé avec un ensemble de termes dans un champ ACL spécial. Le champ ACL contient un terme par groupe ou utilisateur qui peut afficher le document. Chaque requête est complétée par une liste de termes ACE (Access Control Entry), un pour chaque groupe auquel appartient l’utilisateur authentifié.
 
-Par exemple, une requête comme «<*guid*>. *foo et tenantID*: <*GUID*> « devient : » <*GUID*>. *foo et tenantID*: <*GUID* >  *et* (*docACL :* < *ace1* >  *ou docACL*: <*Ace2* >  *ou docACL*: <*ACE3* >  *...*) "
+Par exemple, une requête telle que « <*guid*>. *foo AND tenantID*:<*guid*> » devient : « <*guid*>. *foo AND tenantID*:<*guid* >  *AND* (*docACL:* < *ace1* >  *OR docACL*:<*ace2* >  *OR docACL*:<*ace3* >  *...*) »
 
-Étant donné que les identificateurs d’utilisateurs et de groupes, ainsi que les ACE, sont uniques, ce qui offre un niveau de sécurité supplémentaire entre les clients pour les documents qui ne sont visibles que par certains utilisateurs. Il en est de même pour l’ACE spéciale « tout le monde sauf les utilisateurs externes » qui accorde l’accès aux utilisateurs réguliers dans le client. Toutefois, étant donné que les ACE pour « tout le monde » sont les mêmes pour tous les clients, la séparation des clients pour les documents publics dépend du filtrage de l’ID de client. Les entrées ACE refusées sont également prises en charge. L’augmentation de requête ajoute une clause qui supprime un document du résultat lorsqu’il existe une correspondance avec une ACE Deny.
+Étant donné que les identificateurs d’utilisateurs et de groupes et donc les entrées de contrôle d’accès sont uniques, cela fournit un niveau de sécurité supplémentaire entre les clients pour les documents qui ne sont visibles que par certains utilisateurs. Il en va de même pour l’ace spéciale « Tout le monde sauf les utilisateurs externes » qui accorde l’accès aux utilisateurs réguliers dans le client. Toutefois, étant donné que les ace pour « Tout le monde » sont identiques pour tous les locataires, la séparation des locataires pour les documents publics dépend du filtrage des ID de client. Les aces de refus sont également pris en charge. L’augmentation de requête ajoute une clause qui supprime un document du résultat lorsqu’il existe une correspondance avec une ace de refus.
 
-Dans Exchange Online Search, l’index est partitionné sur l’ID de la boîte aux lettres de l’utilisateur individuel au lieu de l’ID de client (ID d’abonnement) comme dans SharePoint Online. Le mécanisme de partitionnement est identique à SharePoint Online, mais il n’y a pas de filtrage ACL.
+Dans la recherche Exchange Online, l’index est partitionn sur l’ID de boîte aux lettres des boîtes aux lettres d’un utilisateur individuel au lieu de l’ID de client (ID d’abonnement) comme dans SharePoint Online. Le mécanisme de partitionnement est identique à SharePoint Online, mais il n’existe pas de filtrage ACL.

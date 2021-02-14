@@ -29,61 +29,61 @@ ms.locfileid: "47357524"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Déduplication dans les résultats de recherche eDiscovery
 
-Cet article décrit le fonctionnement de la déduplication des résultats de recherche de découverte électronique et explique les limites de l’algorithme de déduplication.
+Cet article décrit le fonctionnement de la dédoplication des résultats de recherche eDiscovery et explique les limitations de l’algorithme de dédoplication.
   
-Lorsque vous utilisez des outils eDiscovery pour exporter les résultats d’une recherche de découverte électronique, vous avez la possibilité de dédupliquer les résultats qui sont exportés. Scénario Lorsque vous activez la déduplication (par défaut, la déduplication n’est pas activée), une seule copie d’un message électronique est exportée même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres qui ont été recherchées. La déduplication vous permet de gagner du temps en réduisant le nombre d’éléments que vous devez examiner et analyser après l’exportation des résultats de la recherche. Toutefois, il est important de comprendre le fonctionnement de la déduplication et de savoir qu’il existe des limitations à l’algorithme susceptibles de provoquer la marque d’un élément unique en tant que doublon pendant le processus d’exportation.
+Lorsque vous utilisez les outils eDiscovery pour exporter les résultats d’une recherche de découverte électronique, vous avez la possibilité de dupliquer les résultats exportés. Scénario Lorsque vous activez la dédoplication (par défaut, la dédoplication n’est pas activée), une seule copie d’un message électronique est exportée, même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres faisant l’être. La dédoplication vous permet de gagner du temps en réduisant le nombre d’éléments que vous devez examiner et analyser après l’exportation des résultats de la recherche. Toutefois, il est important de comprendre le fonctionnement de la dédoplication et de savoir qu’il existe des limitations à l’algorithme qui peuvent entraîner la marque d’un élément unique comme doublon au cours du processus d’exportation.
   
-## <a name="how-duplicate-messages-are-identified"></a>Identification des doublons de messages
+## <a name="how-duplicate-messages-are-identified"></a>Comment les messages en double sont identifiés
 
-les outils eDiscovery utilisent une combinaison des propriétés de messagerie suivantes pour déterminer si un message est un doublon :
+Les outils eDiscovery utilisent une combinaison des propriétés de messagerie suivantes pour déterminer si un message est en double :
   
-- **InternetMessageId** -cette propriété spécifie l’identificateur de message Internet d’un message électronique, qui est un identificateur global unique qui fait référence à une version spécifique d’un message spécifique. Cet ID est généré par le programme client de messagerie de l’expéditeur ou par le système de messagerie hôte qui envoie le message. Si une personne envoie un message à plusieurs destinataires, l’ID de message Internet est le même pour chaque instance du message. Les révisions suivantes du message d’origine recevront un identificateur de message différent. 
+- **InternetMessageId** : cette propriété spécifie l’identificateur de message Internet d’un message électronique, qui est un identificateur global unique qui fait référence à une version spécifique d’un message spécifique. Cet ID est généré par le programme client de messagerie ou le système de messagerie hôte de l’expéditeur qui envoie le message. Si une personne envoie un message à plusieurs destinataires, l’ID de message Internet est le même pour chaque instance du message. Les révisions ultérieures apportées au message d’origine recevront un identificateur de message différent. 
 
-- **ConversationTopic** -cette propriété spécifie l’objet du fil de conversation d’un message. La valeur de la propriété **ConversationTopic** est la chaîne qui décrit le sujet global de la conversation. Une conservation est constituée d’un message initial et de tous les messages envoyés en réponse au message initial. Les messages dans la même conversation ont la même valeur pour la propriété **ConversationTopic** . La valeur de cette propriété est généralement la ligne d’objet du message initial qui a généré la conversation. 
+- **ConversationTopic** : cette propriété spécifie l’objet du thread de conversation d’un message. La valeur de la **propriété ConversationTopic** est la chaîne qui décrit la rubrique globale de la conversation. Une conservation se compose d’un message initial et de tous les messages envoyés en réponse au message initial. Les messages au sein de la même conversation ont la même valeur pour la **propriété ConversationTopic.** La valeur de cette propriété est généralement la ligne Objet du message initial qui a généré la conversation. 
 
-- **BodyTagInfo** -il s’agit d’une propriété de la banque Exchange interne. La valeur de cette propriété est calculée en vérifiant différents attributs dans le corps du message. Cette propriété est utilisée pour identifier les différences dans le corps des messages. 
+- **BodyTagInfo** : il s’agit d’une propriété de magasin Exchange interne. La valeur de cette propriété est calculée en vérifiant divers attributs dans le corps du message. Cette propriété permet d’identifier les différences dans le corps des messages. 
 
-Lors du processus d’exportation de la découverte électronique, ces trois propriétés sont comparées pour chaque message correspondant aux critères de recherche. Si ces propriétés sont identiques pour deux (ou plus) messages, ces messages sont considérés comme des doublons et le résultat est qu’une seule copie du message sera exportée si la déduplication est activée. Le message exporté est appelé « élément source ». Les informations sur les messages en double sont incluses dans les rapports **Results.csv** et **Manifest.xml** inclus dans les résultats de recherche exportés. Dans le fichier **Results.csv** , un message en double est identifié par une valeur dans la colonne **dupliquer vers l’élément** . La valeur dans cette colonne correspond à la valeur dans la colonne identité de l' **élément** pour le message qui a été exporté. 
+Pendant le processus d’exportation eDiscovery, ces trois propriétés sont comparées pour chaque message qui correspond aux critères de recherche. Si ces propriétés sont identiques pour deux (ou plusieurs) messages, ces messages sont déterminés comme des doublons et le résultat est qu’une seule copie du message sera exportée si la déplication est activée. Le message exporté est appelé « élément source ». Les informations sur les messages en double sont incluses dans les rapports **Results.csv** et **Manifest.xml** qui sont inclus dans les résultats de recherche exportés. Dans le **Results.csv,** un message en double est identifié en ayant une valeur dans la colonne Dupliquer **à l’élément.** La valeur de cette colonne correspond à la valeur de la colonne **Identité** de l’élément pour le message exporté. 
   
-Les graphiques suivants montrent comment les messages dupliqués sont affichés dans le **Results.csv** et **Manifest.xml** des rapports qui sont exportés avec les résultats de la recherche. Ces rapports n’incluent pas les propriétés de messagerie précédemment décrites, qui sont utilisées dans l’algorithme de déduplication. Au lieu de cela, les rapports incluent la propriété d’identité de l' **élément** qui est assignée aux éléments par la Banque d’aide Exchange. 
+Les graphiques suivants montrent comment les messages en double sont affichés dans les rapports **Results.csv** et **Manifest.xml** qui sont exportés avec les résultats de la recherche. Ces rapports n’incluent pas les propriétés de messagerie précédemment décrites, qui sont utilisées dans l’algorithme de dédoplication. Au lieu de cela, les rapports incluent la propriété **Identité** d’élément affectée aux éléments par la boutique Exchange. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>Rapport de Results.csv (affiché dans Excel)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv rapport (dans Excel)
   
-![Affichage des informations sur les éléments en double dans le rapport de Results.csv](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Affichage d’informations sur les éléments en double dans le rapport Results.csv rapports](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>Rapport de Manifest.xml (affiché dans Excel)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml rapport (dans Excel)
   
-![Affichage des informations sur les éléments en double dans le rapport de Manifest.xml](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Affichage d’informations sur les éléments en double dans le rapport Manifest.xml rapports](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
-En outre, les autres propriétés des messages en double sont incluses dans les rapports d’exportation. Cela inclut la boîte aux lettres dans laquelle se trouve le doublon du message, si le message a été envoyé à un groupe de distribution et si le message a été envoyé à un autre utilisateur (CC) ou CCI.
+En outre, d’autres propriétés provenant de messages en double sont incluses dans les rapports d’exportation. Cela inclut la boîte aux lettres dans qui se trouve le message en double, si le message a été envoyé à un groupe de distribution et si le message était Cc’d ou Cci’d à un autre utilisateur.
   
-## <a name="limitations-of-the-de-duplication-algorithm"></a>Limites de l’algorithme de déduplication
+## <a name="limitations-of-the-de-duplication-algorithm"></a>Limitations de l’algorithme de dédoplication
 
-Il existe certaines limitations connues de l’algorithme de déduplication qui peuvent entraîner la présence d’éléments uniques marqués comme étant des doublons. Il est important de comprendre ces limitations afin de décider si vous pouvez utiliser la fonctionnalité facultative de déduplication.
+Il existe certaines limitations connues de l’algorithme de dédoplication qui peuvent entraîner la marque d’éléments uniques comme doublons. Il est important de comprendre ces limitations afin de pouvoir décider d’utiliser ou non la fonctionnalité facultative de dédoplication.
   
-Il existe une situation dans laquelle la fonctionnalité de déduplication peut identifier par erreur un message comme étant un doublon et ne pas l’exporter (tout en le citation en tant que doublon dans les rapports d’exportation). Il s’agit des messages qu’un utilisateur modifie mais n’envoie pas. Par exemple, supposons qu’un utilisateur sélectionne un message dans Outlook, copie le contenu du message, puis le colle dans un nouveau message. Ensuite, l’utilisateur modifie l’une des copies en supprimant ou en ajoutant une pièce jointe, ou en modifiant la ligne d’objet ou le corps lui-même. Si ces deux messages correspondent à la requête d’une recherche de découverte électronique, seul l’un des messages sera exporté si la déduplication est activée lors de l’exportation des résultats de la recherche. Ainsi, même si le message d’origine ou le message copié a été modifié, aucun des messages révisés n’a été envoyé et, par conséquent, les valeurs des propriétés **InternetMessageId**, **ConversationTopic** et **BodyTagInfo** n’ont pas été mises à jour. Mais comme expliqué précédemment, les deux messages seront affichés dans les rapports d’exportation 
+Il existe une situation dans laquelle la fonctionnalité de dédoplication peut identifier par erreur un message en tant que doublon et ne pas l’exporter (mais le mentionner comme doublon dans les rapports d’exportation). Il s’agit des messages qu’un utilisateur modifie mais qu’il n’envoie pas. Par exemple, supposons qu’un utilisateur sélectionne un message dans Outlook, copie le contenu du message, puis le copie dans un nouveau message. Ensuite, l’utilisateur modifie l’une des copies en supprimant ou en ajoutant une pièce jointe, ou en modifiant la ligne d’objet ou le corps lui-même. Si ces deux messages correspondent à la requête d’une recherche de découverte électronique, un seul des messages est exporté si la déplication est activée lorsque les résultats de la recherche sont exportés. Ainsi, même si le message d’origine ou le message copié a été modifié, aucun des messages révisés n’a été envoyé et, par conséquent, les valeurs des **propriétés InternetMessageId**, **ConversationTopic** et **BodyTagInfo** n’ont pas été mises à jour. Mais comme indiqué précédemment, les deux messages sont répertoriés dans les rapports d’exportation 
   
-Les messages uniques peuvent également être marqués comme étant des doublons lorsque la fonctionnalité de protection de page de copie sur écriture est activée, comme dans le cas d’une boîte aux lettres en conservation pour litige ou en conservation inaltérable. La fonctionnalité de copie sur écriture copie le message d’origine (et l’enregistre dans le dossier des versions du dossier éléments récupérables de l’utilisateur) avant l’enregistrement de la révision de l’élément d’origine. Dans ce cas, la copie révisée et le message d’origine (dans le dossier éléments récupérables) peuvent être considérés comme des messages en double et, par conséquent, un seul d’entre eux serait exporté.
+Les messages uniques peuvent également être marqués comme doublons lorsque la fonctionnalité de protection de page de copie sur écriture est activée, comme dans le cas d’une boîte aux lettres en attente pour litige ou en In-Place en attente. La fonctionnalité Copier sur écriture copie le message d’origine (et l’enregistre dans le dossier Versions du dossier Éléments récupérables de l’utilisateur) avant que la révision à l’élément d’origine ne soit enregistrée. Dans ce cas, la copie révisée et le message d’origine (dans le dossier Éléments récupérables) peuvent être considérés comme des messages en double et, par conséquent, un seul d’entre eux serait exporté.
   
 > [!IMPORTANT]
-> Si les limitations de l’algorithme de déduplication peuvent avoir un impact sur la qualité de vos résultats de recherche, vous ne devez pas activer la déduplication lorsque vous exportez des éléments. Si les situations décrites dans cette section ne sont probablement pas un facteur dans vos résultats de recherche et que vous souhaitez réduire le nombre d’éléments les plus susceptibles d’être dupliqués, vous devez envisager d’activer la déduplication. 
+> Si les limitations de l’algorithme de dédoplication peuvent avoir un impact sur la qualité de vos résultats de recherche, vous ne devez pas activer la dédoplication lorsque vous exportez des éléments. Si les situations décrites dans cette section sont peu susceptibles d’être un facteur dans vos résultats de recherche et que vous souhaitez réduire le nombre d’éléments les plus susceptibles d’être des doublons, vous devez envisager d’activer la déduplication. 
   
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
-- Les informations contenues dans cet article s’appliquent lors de l’exportation des résultats de recherche à l’aide de l’un des outils eDiscovery suivants :
+- Les informations de cet article s’appliquent lors de l’exportation des résultats de recherche à l’aide de l’un des outils eDiscovery suivants :
 
-  - Recherche de contenu dans le centre de conformité dans Office 365
+  - Recherche de contenu dans le Centre de conformité dans Office 365
 
   - Découverte électronique inaltérable dans Exchange Online
 
   - Le centre eDiscovery dans SharePoint Online
 
-- Pour plus d’informations sur l’exportation des résultats de la recherche, voir :
+- Pour plus d’informations sur l’exportation des résultats de recherche, voir :
 
   - [Exporter la recherche de contenu](export-search-results.md)
 
   - [Exporter un rapport de recherche de contenu](export-a-content-search-report.md)
 
-  - [Exporter les résultats de recherche de découverte électronique inaltérable vers un fichier PST](https://go.microsoft.com/fwlink/p/?linkid=832671)
+  - [Exporter In-Place résultats de recherche eDiscovery vers un fichier PST](https://go.microsoft.com/fwlink/p/?linkid=832671)
 
   - [Exporter du contenu et créer des rapports dans le centre eDiscovery](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)

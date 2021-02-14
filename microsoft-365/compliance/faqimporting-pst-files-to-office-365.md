@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
-description: Cet article contient des réponses à certaines questions fréquemment posées aux administrateurs concernant l’importation de fichiers PST vers Microsoft 365 à l’aide du service d’importation Office 365.
+description: Cet article contient des réponses aux questions fréquemment posées aux administrateurs sur l’importation de fichiers PST dans Microsoft 365 à l’aide du service d’importation Office 365.
 ms.openlocfilehash: b6d00bf58225ca016f6debbeeac8468c558c3556
 ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: MT
@@ -26,13 +26,13 @@ ms.locfileid: "46860699"
 ---
 # <a name="faq-about-importing-pst-files"></a>FAQ sur l’importation de fichiers PST
 
-**Cet article est destiné aux administrateurs. Voulez-vous importer des fichiers PST dans votre propre boîte aux lettres ? Voir [importer le courrier, les contacts et le calendrier à partir d’un fichier. pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+**Cet article est réservé aux administrateurs. Voulez-vous importer des fichiers PST dans votre propre boîte aux lettres ? Voir [Importer le courrier électronique, les contacts et le calendrier à partir d’un fichier .pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
-Voici quelques questions fréquemment posées sur l’utilisation du service d’importation Office 365 pour importer en bloc des fichiers PST dans des boîtes aux lettres Microsoft 365. Pour plus d’informations sur l’importation de fichiers PST, voir [vue d’ensemble de l’importation de fichiers PST dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365).
+Voici quelques questions fréquemment posées sur l’utilisation du service d’importation Office 365 pour importer en bloc des fichiers PST dans des boîtes aux lettres Microsoft 365. Pour plus d’informations sur l’importation de fichiers PST, voir Vue d’ensemble de l’importation de fichiers [PST dans Office 365.](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)
   
 ## <a name="using-network-upload-to-import-pst-files"></a>Utilisation du chargement réseau pour importer des fichiers PST
 
-Pour obtenir des instructions pas à pas, consultez la rubrique [utiliser le chargement réseau pour importer des fichiers PST dans Office 365](use-network-upload-to-import-pst-files.md).
+Pour obtenir des instructions détaillées, voir Utiliser le chargement réseau pour importer des fichiers [PST dans Office 365.](use-network-upload-to-import-pst-files.md)
   
  **De quelles autorisations a-t-on besoin pour créer des tâches d’importation dans le Service d’importation Office 365 ?**
   
@@ -51,7 +51,7 @@ En outre, pour créer des tâches d’importation dans le Centre de sécurité e
   
  **Où le chargement réseau est-il disponible ?**
   
-Le chargement réseau est actuellement disponible dans les régions suivantes : États-Unis, Canada, Brésil, Royaume-Uni, France, Germany, Suisse, Norvège, Europe, Inde, Asie de l’est, sud-est, Japon, République de Corée, Australie et Émirats Arabes Unis (Émirats Arabes Unis). Network upload will be available in more regions soon.
+Le téléchargement en réseau est actuellement disponible dans ces régions : États-Unis, Canada, Brésil, Royaume-Uni, France, Allemagne, Suisse, Norvège, Europe, Inde, Asie de l'Est, Asie du Sud-Est, Japon, République de Corée, Australie et Émirats arabes unis (EAU). Le téléchargement par réseau sera bientôt disponible dans d'autres régions.
   
  **À combien revient l’importation de fichiers PST via le chargement du réseau ?**
   
@@ -61,7 +61,7 @@ Cela veut aussi dire qu’après avoir été supprimés de la zone de stockage A
   
  **Quelle version du format de fichier PST est prise en charge pour l’importation dans Office 365 ?**
   
-Il existe deux versions du format de fichier PST : ANSI et Unicode. Nous vous recommandons d’importer des fichiers qui utilisent le format de fichier PST Unicode. Cependant, les fichiers qui utilisent le format de fichier PST ANSI, tels que ceux dont la langue utilise un jeu de caractères codés sur deux octets (DBCS), peuvent aussi être importés dans Office 365. Pour plus d’informations sur l’importation de fichiers PST ANSI, reportez-vous à l’étape 4 dans [utiliser le chargement réseau pour importer les fichiers PST de votre organisation dans Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file).
+Il existe deux versions du format de fichier PST : ANSI et Unicode. Nous vous recommandons d’importer des fichiers qui utilisent le format de fichier PST Unicode. Cependant, les fichiers qui utilisent le format de fichier PST ANSI, tels que ceux dont la langue utilise un jeu de caractères codés sur deux octets (DBCS), peuvent aussi être importés dans Office 365. Pour plus d’informations sur l’importation de fichiers PST ANSI, voir l’étape 4 dans Utiliser le chargement réseau pour importer les fichiers PST de votre organisation dans [Office 365.](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)
   
 Par ailleurs, les fichiers PST issus d’Outlook version 2007 et ultérieures peuvent être importés dans Office 365.
   
@@ -107,7 +107,7 @@ Non, vous ne pouvez pas importer des fichiers PST dans des dossiers publics.
   
 ## <a name="using-drive-shipping-to-import-pst-files"></a>Utilisation de l’expédition de disque pour importer des fichiers PST
 
-Pour obtenir des instructions pas à pas, voir [use Drive Shipping to import PST Files to Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md).
+Pour obtenir des instructions détaillées, voir Utiliser l’expédition de disque pour importer des fichiers [PST dans Office 365.](use-drive-shipping-to-import-pst-files-to-office-365.md)
   
  **De quelles autorisations a-t-on besoin pour créer des tâches d’importation dans le Service d’importation Office 365 ?**
   
@@ -141,7 +141,7 @@ L’utilisation du service d’expédition de disque pour importer des fichiers 
   
  **Quels types de disque dur est-il possible d’expédier ?**
   
-2,5 Seuls les disques durs à disque SSD (SSD) ou 2,5-2,5 pouces ou 3,5-x sont pris en charge pour être utilisés avec le service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez les attacher directement à l’aide d’un connecteur SATA II/III de 2,5 2,5 pouces ou de 3,5 pouces ou vous pouvez les attacher de façon externe à l’aide d’un adaptateur USB 2,5 externe de l’interface SATA II/2,5 ou 3,5.
+Seuls les disques SSD de 2,5 pouces ou les disques durs internes SATA II/III de 2,5 pouces ou 3,5 pouces sont pris en charge pour une utilisation avec le service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez les attacher directement à l’aide d’un connecteur SATA II/III de 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces ou d’un adaptateur USB EXTERNE DE 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces.
   
 > [!IMPORTANT]
 > Les disques durs externes fournis avec une carte USB intégrée ne sont pas pris en charge par le Service d’importation Office 365. En outre, le disque à l’intérieur du boîtier d’un disque dur externe ne peut pas être utilisé. Veuillez ne pas envoyer de disques durs externes. 
@@ -156,7 +156,7 @@ Cela dépend de plusieurs facteurs, comme votre proximité par rapport au centre
   
  **Une fois mon disque dur arrivé au centre de données de Microsoft, combien de temps faut-il pour charger mon fichiers PST dans Azure ?**
   
-Une fois que votre disque dur est reçu dans le centre de données Microsoft, il faut entre 7 et 10 jours ouvrés pour télécharger les fichiers PST dans la zone de stockage Azure de votre organisation. Les fichiers PST seront chargés dans un conteneur blob Azure nommé `ingestiondata`. 
+Une fois votre disque dur reçu dans le centre de données Microsoft, le chargement des fichiers PST dans l’espace de stockage Azure de votre organisation prendra entre 7 et 10 jours. Les fichiers PST seront chargés dans un conteneur blob Azure nommé `ingestiondata`. 
   
  **Combien de temps faut-il compter avant qu’un fichier PST soit importé dans une boîte aux lettres ?**
   
@@ -172,7 +172,7 @@ Cela veut aussi dire qu’après avoir été supprimés de la zone de stockage A
   
  **Quelle version du format de fichier PST est prise en charge pour l’importation dans Microsoft 365 ?**
   
-Il existe deux versions du format de fichier PST : ANSI et Unicode. Nous vous recommandons d’importer des fichiers qui utilisent le format de fichier PST Unicode. Cependant, les fichiers qui utilisent le format de fichier PST ANSI, tels que ceux dont la langue utilise un jeu de caractères codés sur deux octets (DBCS), peuvent aussi être importés dans Microsoft 365. Pour plus d’informations sur l’importation de fichiers PST ANSI, reportez-vous à l’étape 3 de la section [use Drive Shipping to import PST Files to Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file).
+Il existe deux versions du format de fichier PST : ANSI et Unicode. Nous vous recommandons d’importer des fichiers qui utilisent le format de fichier PST Unicode. Cependant, les fichiers qui utilisent le format de fichier PST ANSI, tels que ceux dont la langue utilise un jeu de caractères codés sur deux octets (DBCS), peuvent aussi être importés dans Microsoft 365. Pour plus d’informations sur l’importation de fichiers PST ANSI, voir l’étape 3 de l’utilisation de l’expédition de disque pour importer des fichiers [PST dans Office 365.](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)
   
 Par ailleurs, les fichiers PST issus d’Outlook version 2007 et ultérieures peuvent être importés dans Office 365.
   

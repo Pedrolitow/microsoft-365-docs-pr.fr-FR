@@ -1,5 +1,5 @@
 ---
-title: Utiliser les applets de commande PowerShell de déploiement centralisé pour gérer les compléments
+title: Utiliser les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,7 +19,7 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Utilisez les applets de commande PowerShell de déploiement centralisé pour vous aider à déployer et gérer des compléments Office pour votre organisation Microsoft 365.
+description: Utilisez les cmdlets PowerShell de déploiement centralisé pour vous aider à déployer et gérer des add-ins Office pour votre organisation Microsoft 365.
 ms.openlocfilehash: 659f12d2533601c4b2165a95ddbf59ea521945b8
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -27,11 +27,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46690105"
 ---
-# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les applets de commande PowerShell de déploiement centralisé pour gérer les compléments
+# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins
 
-En tant qu’administrateur général Microsoft 365, vous pouvez déployer des compléments Office auprès des utilisateurs via la fonctionnalité de déploiement centralisée (consultez la rubrique [Deploy Office Add-ins in the Admin Center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)). Outre le déploiement des compléments Office via le centre d’administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement de compléments centralisés O365 pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+En tant qu’administrateur général Microsoft 365, vous pouvez déployer des add-ins Office pour les utilisateurs via la fonctionnalité Déploiement centralisé (voir Déployer des [add-ins Office](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)dans le Centre d’administration). En plus de déployer des compléments Office via le Centre d’administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement centralisé O365 Add-In pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
 
-Après avoir téléchargé le module, ouvrez une fenêtre Windows PowerShell normale et exécutez l’applet de commande suivante :
+Après avoir téléchargé le module, ouvrez une fenêtre Windows PowerShell et exécutez l’cmdlet suivante :
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment
@@ -39,19 +39,19 @@ Après avoir téléchargé le module, ouvrez une fenêtre Windows PowerShell nor
     
 ## <a name="connect-using-your-admin-credentials"></a>Se connecter à l’aide de vos informations d’identification d’administrateur
 
-Avant de pouvoir utiliser les cmdlets de déploiement centralisé, vous devez vous connecter.
+Avant de pouvoir utiliser les cmdlets de déploiement centralisé, vous devez vous inscrire.
   
 1. Démarrez PowerShell.
     
-2. Connectez-vous à PowerShell à l’aide des informations d’identification d’administrateur de votre entreprise. Exécutez l’applet de commande suivante.
+2. Connectez-vous à PowerShell à l’aide des informations d’identification d’administrateur de votre entreprise. Exécutez l’cmdlet suivante.
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. Dans la page **entrer les informations d’identification** , entrez vos informations d’identification d’administrateur global Microsoft 365. Vous pouvez également entrer vos informations d’identification directement dans l’applet de commande. 
+3. Dans la page **Entrer les informations d’identification,** entrez vos informations d’identification d’administrateur global Microsoft 365. Vous pouvez également entrer vos informations d’identification directement dans la cmdlet. 
     
-    Exécutez l’applet de commande suivante en spécifiant les informations d’identification d’administrateur de votre entreprise en tant qu’objet PSCredential.
+    Exécutez l’cmdlet suivante en spécifiant les informations d’identification d’administrateur de votre entreprise en tant qu’objet PSCredential.
     
   ```powershell
   $secpasswd = ConvertTo-SecureString "MyPassword" -AsPlainText -Force
@@ -60,113 +60,113 @@ Avant de pouvoir utiliser les cmdlets de déploiement centralisé, vous devez vo
   ```
 
 > [!NOTE]
-> Pour plus d’informations sur l’utilisation de PowerShell, consultez la rubrique [Connect to Microsoft 365 with PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585). 
+> Pour plus d’informations sur l’utilisation de PowerShell, voir Se connecter à [Microsoft 365 avec PowerShell.](https://go.microsoft.com/fwlink/p/?linkid=848585) 
   
-## <a name="upload-an-add-in-manifest"></a>Chargement d’un manifeste de complément
+## <a name="upload-an-add-in-manifest"></a>Télécharger un manifeste de add-in
 
-Exécutez la cmdlet **New-organisationcompléments-in** pour télécharger un manifeste de complément à partir d’un chemin d’accès, qui peut être un emplacement de fichier ou une URL. L’exemple suivant montre un emplacement de fichier pour la valeur du paramètre  _ManifestPath_ . 
+Exécutez la cmdlet **New-OrganizationAdd-In** pour télécharger un manifeste de add-in à partir d’un chemin d’accès, qui peut être un emplacement de fichier ou une URL. L’exemple suivant montre un emplacement de fichier pour la valeur du _paramètre ManifestPath._ 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-Vous pouvez également exécuter la cmdlet **New-organisationcompléments-in** pour télécharger un complément et l’attribuer directement à des utilisateurs ou à des groupes à l’aide du paramètre  _members_ , comme illustré dans l’exemple suivant. Séparez les adresses de messagerie des membres par une virgule. 
+Vous pouvez également exécuter la cmdlet **New-OrganizationAdd-In** pour télécharger un module et l’affecter directement à des utilisateurs ou des groupes à l’aide du paramètre  _Members,_ comme illustré dans l’exemple suivant. Séparez les adresses e-mail des membres par une virgule. 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>Télécharger un complément à partir de l’Office Store
+## <a name="upload-an-add-in-from-the-office-store"></a>Télécharger un add-in à partir de l’Office Store
 
-Exécutez la cmdlet **New-OrganizationAddIn** pour télécharger un manifeste à partir de l’Office Store.
+Exécutez **la cmdlet New-OrganizationAddIn** pour télécharger un manifeste à partir de l’Office Store.
   
-Dans l’exemple suivant, la cmdlet **New-OrganizationAddIn** spécifie le AssetID pour un complément pour un marché de contenu et de localisation des États-Unis.
+Dans l’exemple suivant, la **cmdlet New-OrganizationAddIn** spécifie l’AssetId d’un add-in pour un marché de contenu et un emplacement aux États-Unis.
   
 ```powershell
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Pour déterminer la valeur du paramètre  _AssetID_ , vous pouvez le copier à partir de l’URL de la page Web Office Store du complément. AssetIds commence toujours par « WA » suivi d’un nombre. Par exemple, dans l’exemple précédent, la source de la valeur AssetId de WA104099688 est l’URL de la page Web de l’Office Store pour le complément : [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
+Pour déterminer la valeur du paramètre  _AssetId,_ vous pouvez la copier à partir de l’URL de la page web de l’Office Store pour le module. AssetIds always begin with « WA » followed by a number. Par exemple, dans l’exemple précédent, la source de la valeur AssetId de WA104099688 est l’URL de la page web de l’Office Store pour le add-in [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) :
   
-Les valeurs des paramètres  _locale_ et  _ContentMarket_ sont identiques et indiquent le pays/la région à partir duquel vous essayez d’installer le complément. Le format est en-US, fr-FR. et ainsi de suite. 
+Les valeurs des  _paramètres Locale_ et  _ContentMarket_ sont identiques et indiquent le pays/la région à partir de quel pays vous essayez d’installer le module. Le format est en-US, fr-FR. et ainsi de suite. 
   
 > [!NOTE]
-> Les compléments téléchargés à partir de l’Office Store seront automatiquement mis à jour au cours des quelques jours suivant la dernière mise à jour disponible sur l’Office Store. 
+> Les add-ins téléchargés à partir de l’Office Store seront automatiquement mis à jour dans les quelques jours suivant la mise à jour la plus récente disponible sur l’Office Store. 
   
-## <a name="get-details-of-an-add-in"></a>Obtenir les détails d’un complément
+## <a name="get-details-of-an-add-in"></a>Obtenir les détails d’un add-in
 
-Exécutez la cmdlet **Get-OrganizationAddIn** comme indiqué ci-dessous pour obtenir les détails de tous les compléments téléchargés vers le client, en incluant l’ID de produit d’un complément.
+Exécutez la cmdlet **Get-OrganizationAddIn** comme indiqué ci-dessous pour obtenir les détails de tous les modules de développement téléchargés vers le client, y compris l’ID produit d’un module.
   
 ```powershell
 Get-OrganizationAddIn
 ```
 
-Exécutez la cmdlet **Get-OrganizationAddIn** avec une valeur pour le paramètre  _ProductID_ afin de spécifier le complément pour lequel vous souhaitez récupérer les détails. 
+Exécutez **la cmdlet Get-OrganizationAddIn** avec une valeur pour le paramètre  _ProductId_ afin de spécifier le module pour lequel vous souhaitez récupérer des détails. 
   
 ```powershell
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-Pour obtenir tous les détails de tous les compléments, ainsi que les utilisateurs et les groupes affectés, redirigez la sortie de la cmdlet **Get-OrganizationAddIn** vers la cmdlet Format-List, comme illustré dans l’exemple suivant.
+Pour obtenir les détails complets de tous les modules, ainsi que les utilisateurs et groupes affectés, canalez la sortie de la cmdlet **Get-OrganizationAddIn** vers la cmdlet Format-List, comme illustré dans l’exemple suivant.
   
 ```powershell
 foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
-## <a name="turn-on-or-turn-off-an-add-in"></a>Activation ou désactivation d’un complément
+## <a name="turn-on-or-turn-off-an-add-in"></a>Activer ou désactiver un add-in
 
-Pour désactiver un complément de sorte que les utilisateurs et les groupes qui lui sont attribués n’y aient plus accès, exécutez l’applet de commande **Set-OrganizationAddIn** avec le paramètre  _ProductID_ et le paramètre  _Enabled_ défini sur  `$false` , comme illustré dans l’exemple suivant.
+Pour désactiver un module de sorte que les utilisateurs et les groupes qui lui sont affectés n’y ont plus accès, exécutez la **cmdlet Set-OrganizationAddIn** avec le paramètre  _ProductId_ et le paramètre  _Enabled_ sur , comme illustré dans l’exemple  `$false` suivant.
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
 ```
 
-Pour réactiver un complément, exécutez la même applet de commande avec le paramètre  _Enabled_ défini sur  `$true` .
+Pour activer de nouveau un add-in, exécutez la même cmdlet avec le  _paramètre Enabled_ sur  `$true` .
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $true
 ```
 
-## <a name="add-or-remove-users-from-an-add-in"></a>Ajouter ou supprimer des utilisateurs d’un complément
+## <a name="add-or-remove-users-from-an-add-in"></a>Ajouter ou supprimer des utilisateurs d’un add-in
 
-Pour ajouter des utilisateurs et des groupes à un complément spécifique, exécutez l’applet de commande **Set-OrganizationAddInAssignments** avec les paramètres  _ProductID_,  _Add_et  _members_ . Séparez les adresses de messagerie des membres par une virgule. 
+Pour ajouter des utilisateurs et des groupes à un module spécifique, exécutez la cmdlet **Set-OrganizationAddInAssignments** avec les paramètres _ProductId,_ _Add_ et _Members._ Séparez les adresses e-mail des membres par une virgule. 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-Pour supprimer des utilisateurs et des groupes, exécutez la même cmdlet à l’aide du paramètre  _Remove_ . 
+Pour supprimer des utilisateurs et des groupes, exécutez la même cmdlet à l’aide du _paramètre Remove._ 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-Pour affecter un complément à tous les utilisateurs sur le client, exécutez la même cmdlet à l’aide du paramètre  _AssignToEveryone_ avec la valeur définie sur  `$true` .
+Pour affecter un add-in à tous les utilisateurs sur le client, exécutez la même cmdlet à l’aide du paramètre  _AssignToEveryone_ avec la valeur définie sur  `$true` .
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-Pour ne pas affecter un complément à tout le monde et rétablir les utilisateurs et les groupes précédemment affectés, vous pouvez exécuter la même cmdlet et désactiver le paramètre  _AssignToEveryone_ en définissant sa valeur sur  `$false` .
+Pour ne pas affecter de module à tout le monde et revenir aux utilisateurs et groupes précédemment affectés, vous pouvez exécuter la même cmdlet et désactiver le paramètre  _AssignToEveryone_ en lui attribuant la valeur  `$false` .
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
 ```
 
-## <a name="update-an-add-in"></a>Mettre à jour un complément
+## <a name="update-an-add-in"></a>Mettre à jour un add-in
 
-Pour mettre à jour un complément à partir d’un manifeste, exécutez la cmdlet **Set-OrganizationAddIn** avec les paramètres  _ProductID_,  _ManifestPath_et  _locale_ , comme illustré dans l’exemple suivant. 
+Pour mettre à jour un add-in à partir d’un manifeste, exécutez la **cmdlet Set-OrganizationAddIn** avec les paramètres  _ProductId,_  _ManifestPath_ et  _Locale,_ comme illustré dans l’exemple suivant. 
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
 > [!NOTE]
-> Les compléments téléchargés à partir de l’Office Store seront automatiquement mis à jour au cours des quelques jours suivant la dernière mise à jour disponible sur l’Office Store. 
+> Les add-ins téléchargés à partir de l’Office Store seront automatiquement mis à jour dans les quelques jours suivant la mise à jour la plus récente disponible sur l’Office Store. 
   
 ## <a name="delete-an-add-in"></a>Suppression d’un complément
 
-Pour supprimer un complément, exécutez l’applet de commande **Remove-OrganizationAddIn** avec le paramètre  _ProductID_ , comme illustré dans l’exemple suivant. 
+Pour supprimer un add-in, exécutez la **cmdlet Remove-OrganizationAddIn** avec le paramètre  _ProductId,_ comme illustré dans l’exemple suivant. 
   
 ```powershell
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
@@ -270,9 +270,9 @@ If an add-in has been deployed, it has to be removed from the cache in each comp
 
 -->
 
-## <a name="get-detailed-help-for-each-cmdlet"></a>Obtenir de l’aide détaillée pour chaque cmdlet
+## <a name="get-detailed-help-for-each-cmdlet"></a>Obtenir une aide détaillée pour chaque cmdlet
 
-Vous pouvez consulter l’aide détaillée pour chaque cmdlet à l’aide de la cmdlet Get-Help. Par exemple, l’applet de commande suivante fournit des informations détaillées sur la cmdlet Remove-OrganizationAddIn.
+Vous pouvez examiner l’aide détaillée de chaque cmdlet à l’aide de la cmdlet Get-help. Par exemple, l’cmdlet suivante fournit des informations détaillées sur l'Remove-OrganizationAddIn cmdlet.
   
 ```powershell
 Get-help Remove-OrganizationAddIn -Full

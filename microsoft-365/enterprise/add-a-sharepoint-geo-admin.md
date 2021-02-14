@@ -11,7 +11,7 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Vous avez besoin de configurer des administrateurs distincts pour chaque emplacement géographique ? Découvrez comment ajouter ou supprimer un administrateur géo dans Microsoft 365 Multi-Geo.
+description: Vous devez configurer des administrateurs distincts pour chaque emplacement géographique ? Découvrez comment ajouter ou supprimer un administrateur géo dans Microsoft 365 Multi-Geo.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 9a3d916bfec2c53850f923fb5322298e9ff440ca
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
@@ -56,7 +56,7 @@ Notez que certains groupes de sécurité n’ont pas d’alias de groupe. Si vou
 
 Pour supprimer un groupe à l’aide de l’ObjectID, exécutez la cmdlet `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Add-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 

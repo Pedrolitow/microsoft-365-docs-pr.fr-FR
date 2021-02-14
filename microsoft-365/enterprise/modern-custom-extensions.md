@@ -37,15 +37,15 @@ L’Outil Diagnostic de page pour SharePoint est une extension de navigateur pou
 >[!NOTE]
 >L’Outil Diagnostic de page fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
 
-Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostics de la page pour SharePoint, vous pouvez voir des informations sur les extensions personnalisées qui dépassent la mesure de ligne de base dans les extensions ayant un impact sur le **temps de chargement** et/ou sur le résultat des **Extensions utilisées** dans le volet _tests de diagnostic_ 
+Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostic de page pour SharePoint, vous pouvez voir des informations sur les extensions  personnalisées qui dépassent la mesure de référence dans les **Extensions** ont un impact sur le temps de chargement et/ou le résultat trop grand **d’extensions** utilisées dans le volet Tests de diagnostic 
 
 Les résultats possibles sont les suivants :
 
-- **Attention requise** (en rouge) : une extension _personnalisée_ qui prend plus de **une** seconde pour charger. Le temps de chargement total tel qu’il apparaît dans les résultats des tests est subdivisé en : chargement de module, chargement différé, initialisation et rendu. En outre, si un trop grand nombre d’extensions sur une page peut avoir un impact sur le temps de chargement de la page, ce dernier sera mis en surbrillance si au moins **sept** extensions sont utilisées sur la page.
-- **Opportunités d’amélioration** (jaune) si au moins **cinq** extensions sont utilisées, elles seront mises en surbrillance dans cette section sous la forme d’un avertissement jusqu’à ce qu’au moins sept soient utilisés, ce qui sera mis en évidence à l’attention requise.
+- **Attention requise** (en rouge) : une extension _personnalisée_ qui prend plus de **une** seconde pour charger. Le temps de chargement total tel qu’il apparaît dans les résultats des tests est subdivisé en : chargement de module, chargement différé, initialisation et rendu. En outre, s’il y a trop d’extensions sur une page,  elles peuvent avoir un impact sur le temps de chargement de la page, ce qui sera mis en surbrillrillant si sept extensions ou plus sont utilisées sur la page.
+- Opportunités d’amélioration  **(jaune)** Si cinq extensions ou plus sont utilisées, elles seront mises en évidence dans cette section sous la mesure d’un avertissement jusqu’à ce que sept extensions ou plus soient utilisées, qui seront ensuite mises en évidence comme étant obligatoires.
 - **Aucune action requise** (en vert) : aucune extension ne prend plus d’une seconde pour charger.
 
-Si une extension a un impact sur le temps de chargement de la page ou qu’il y a trop de extsnions sur la page, le résultat s’affiche dans la section **attention requise** des résultats. Cliquez sur le résultat pour afficher des détails sur l’extension qui est chargée lentement ou trop d’extensions ont été mises en surbrillance. Les mises à jour ultérieures de l’outil Diagnostic de page pour SharePoint peuvent inclure des mises à jour des règles d’analyse. Vérifiez donc que vous disposez toujours de la dernière version de l’outil.
+Si une extension a un impact sur le temps de chargement de la page ou s’il y a trop d’extsnions sur la page, le résultat apparaît dans la section **Attention** requise des résultats. Cliquez sur le résultat pour voir les détails sur l’extension qui se charge lentement ou si un trop grand nombre d’extensions a été mis en évidence. Les mises à jour ultérieures de l’outil Diagnostic de page pour SharePoint peuvent inclure des mises à jour des règles d’analyse. Vérifiez donc que vous disposez toujours de la dernière version de l’outil.
 
 ![Résultats du temps de chargement des pages](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 

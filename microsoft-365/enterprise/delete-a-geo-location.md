@@ -12,7 +12,7 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Découvrez comment supprimer un emplacement satellite dans Microsoft 365 Multi-Geo. Lors de la suppression d’un emplacement satellite, toutes les données utilisateur sont également supprimées définitivement.
+description: Découvrez comment supprimer un emplacement satellite dans Microsoft 365 Multi-Geo. Lorsqu’un emplacement satellite est supprimé, toutes les données utilisateur sont également définitivement supprimées.
 ms.openlocfilehash: 7a58ed91a0bb801fc41ed0a89889ede5e65b4a21
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
