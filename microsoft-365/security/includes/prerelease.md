@@ -14,4 +14,4 @@ ms.lasthandoff: 01/29/2020
 ms.locfileid: "41600005"
 ---
 >[!IMPORTANT]
->Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>Certaines informations concernent des produits pré-publiés qui peuvent être considérablement modifiés avant leur commercialisation. Microsoft makes no warranties, express or implied, with respect to the information provided here.
