@@ -19,7 +19,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: Accédez à des liens vers des articles contenant des informations pour vous aider à configurer votre réseau pour Microsoft 365, notamment une vue d’ensemble de la connectivité réseau et une liste de points de terminaison.
+description: Trouvez des liens vers des articles avec des informations pour vous aider à configurer votre réseau pour Microsoft 365, y compris une vue d’ensemble de la connectivité réseau et la liste des points de terminaison.
 ms.openlocfilehash: f0e0499c70745d31399240372c190758285408aa
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -29,21 +29,21 @@ ms.locfileid: "46689674"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurer votre réseau pour Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Une partie importante de votre intégration Microsoft 365 est de vous assurer que vos connexions réseau et Internet sont configurées pour un accès optimisé. La configuration de votre réseau local pour accéder à un nuage Software-as-a-service distribué globalement est différente d’un réseau traditionnel qui est optimisé pour le trafic vers des centres de contenu locaux et une connexion Internet centrale. 
+Une partie importante de votre intégration Microsoft 365 consiste à vous assurer que vos connexions réseau et Internet sont définies pour un accès optimisé. La configuration de votre réseau local pour accéder à un cloud SaaS (Software-as-a-Service) distribué globalement est différente d’un réseau traditionnel optimisé pour le trafic vers des centres de données locaux et une connexion Internet centrale. 
 
 Utilisez ces articles pour comprendre les différences clés et modifier vos équipements de périmètre, ordinateurs clients et réseau local pour obtenir les meilleures performances de la part de vos utilisateurs locaux.
 
 ## <a name="how-microsoft-365-networking-works"></a>Fonctionnement de la mise en réseau Microsoft 365
 
-Consultez les articles suivants pour obtenir une vue d’ensemble de la connectivité pour Microsoft 365 :
+Consultez les articles suivants pour obtenir une vue d’ensemble de la connectivité pour Microsoft 365 :
 
 - [Vue d’ensemble de la connectivité réseau Microsoft 365](microsoft-365-networking-overview.md)
-- [Principes de connectivité réseau de Microsoft 365](microsoft-365-network-connectivity-principles.md)
+- [Principes de connectivité réseau De Microsoft 365](microsoft-365-network-connectivity-principles.md)
 - [Évaluation de la connectivité réseau Microsoft 365](assessing-network-connectivity.md)
 
-Pour obtenir des conseils sur l’amélioration des performances, voir [planification réseau et optimisation des performances pour Microsoft 365](network-planning-and-performance.md).
+Pour obtenir des conseils sur l’amélioration des performances, voir [Planification réseau et optimisation des performances pour Microsoft 365.](network-planning-and-performance.md)
 
 ## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Prise en charge de la mise en réseau Microsoft 365 en tant que fournisseur d’équipement réseau
 
@@ -76,9 +76,9 @@ Pour plus de points de terminaison, voir les articles suivants :
 - [Requêtes réseau dans Office 2016 pour Mac](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-microsoft-365-networking"></a>Rubriques supplémentaires pour Microsoft 365 Networking
+## <a name="additional-topics-for-microsoft-365-networking"></a>Rubriques supplémentaires sur la mise en réseau Microsoft 365
 
-Consultez les articles suivants pour obtenir des rubriques spécialisées sur la mise en réseau Microsoft 365 :
+Consultez ces articles pour des rubriques spécialisées sur la mise en réseau Microsoft 365 :
 
 - [Réseaux de distribution de contenu](content-delivery-networks.md)
 - [Prise en charge du protocole IPv6 dans les services Office 365](ipv6-support.md)

@@ -1,7 +1,7 @@
 ---
-title: Commander des appareils dans le bureau géré Microsoft
+title: Commander des appareils dans Le Bureau géré Microsoft
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -16,11 +16,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 07/30/2020
 ms.locfileid: "46529528"
 ---
-# <a name="order-microsoft-managed-desktop-devices"></a>Commander des appareils de bureau gérés Microsoft
+# <a name="order-microsoft-managed-desktop-devices"></a>Commander des appareils bureau géré Microsoft
 
-Nous vous recommandons de travailler avec l’un de nos partenaires d’appareils approuvés. Vous pouvez utiliser votre contact de compte Microsoft pour plus d’informations sur la configuration d’un partenariat d’appareils.
+Nous vous recommandons de collaborer avec l’un de nos partenaires d’appareils approuvés. Vous pouvez travailler avec votre contact de compte Microsoft pour obtenir de l’aide sur la configuration d’un partenariat d’appareil.
 
-En attendant, vous pouvez passer en revue la liste des [appareils approuvés actuellement](../service-description/device-list.md) pris en charge pour une utilisation avec le bureau géré Microsoft.
+En attendant, vous pouvez consulter [](../service-description/device-list.md) la liste des appareils actuellement approuvés qui sont pris en charge pour une utilisation avec Bureau géré Microsoft.
 
 
 

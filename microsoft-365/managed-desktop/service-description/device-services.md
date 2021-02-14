@@ -1,7 +1,7 @@
 ---
-title: Services Microsoft Managed Desktop Device
-description: Cette rubrique répertorie les services de périphérique et la limitation pour le bureau géré Microsoft.
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+title: Services d’appareils bureau géré Microsoft
+description: Cette rubrique répertorie les services d’appareil et les limitations pour le Bureau géré Microsoft.
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -16,26 +16,26 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 07/30/2020
 ms.locfileid: "46529456"
 ---
-# <a name="microsoft-managed-desktop-device-services"></a>Services Microsoft Managed Desktop Device
+# <a name="microsoft-managed-desktop-device-services"></a>Services d’appareils bureau géré Microsoft
 
-Cette rubrique répertorie les services et les limitations de service pour les appareils de bureau gérés par Microsoft.
+Cette rubrique répertorie les services et les limitations de service pour les appareils bureau géré Microsoft.
 
 ## <a name="device-services"></a>Services d’appareils
 
-Microsoft fournira ces services pour les appareils de bureau gérés par Microsoft. Pour plus d’informations sur les appareils de bureau gérés par Microsoft, consultez la rubrique [Microsoft Managed Desktop Devices](device-list.md).
+Microsoft fournira ces services pour les appareils bureau géré Microsoft. Pour plus d’informations sur les appareils du programme Bureau géré Microsoft, voir [Appareils de bureau géré Microsoft.](device-list.md)
 
  | 
  --- | ---
-Support | Les agents de support répondent aux questions directement liées à la fonctionnalité du périphérique et diagnostiquent les problèmes liés aux appareils.
-Inventaire | Tous les appareils sont suivis dans le portail d’administration de bureau géré Microsoft pour le suivi de l’inventaire et de l’État.
-Mises à jour du microprogramme/pilote | Par défaut, les périphériques de bureau gérés par Microsoft reçoivent les mises à jour du microprogramme et des pilotes à partir de Windows Update. Tous les partenaires de matériel ne déploient pas leurs mises à jour via Windows Update. Les mises à jour qui ne sont pas publiées comme automatiques nécessitent une exception et doivent être déployées par le client.
-Installés | Les accessoires fournis avec votre appareil sont couverts par les mêmes services que le périphérique lui-même, mais les conditions de garantie peuvent varier. Reportez-vous aux conditions de garantie choisies lors de la sélection de vos appareils. 
-Configuration de l’appareil    | Les appareils seront préconfigurés avec la version actuelle de Windows et recevront leurs applications et configurations via le Cloud. 
+Support | Les agents de support technique répondront aux questions directement liées aux fonctionnalités de l’appareil et diagnostiquera les problèmes liés aux appareils.
+Inventaire | Tous les appareils sont suivis dans le portail d’administration du bureau géré Microsoft pour le suivi de l’inventaire et de l’état.
+Mises à jour du microprogramme/des pilotes | Par défaut, les appareils Bureau géré Microsoft reçoivent les mises à jour du microprogramme et des pilotes de Windows Update. Tous les partenaires matériels ne déploient pas leurs mises à jour via Windows Update. Les mises à jour non publiées comme automatiques nécessitent une exception et doivent être déployées par le client.
+Accessoires | Les accessoires qui sont produits avec votre appareil sont couverts par les mêmes services que l’appareil lui-même, mais les conditions de garantie peuvent différer. Reportez-vous aux conditions de garantie choisies lors de la sélection de vos appareils. 
+Configuration des appareils    | Les appareils sont préconfigurés avec la version actuelle de Windows et reçoivent leurs applications et configurations via le cloud. 
 
-Pour plus d’informations sur le remplacement des appareils, les mises à niveau et les conditions d’assistance, consultez votre contrat avec votre fournisseur d’appareils et vos conditions de garantie.
+Pour plus d’informations sur le remplacement, les mises à niveau et les conditions d’assistance, consultez votre contrat avec votre fournisseur d’appareils et vos conditions de garantie.
 
-Pour plus d’informations sur les garanties et les réparations de surface :
-- [Surface du centre d’aide de l’entreprise](https://support.microsoft.com/hub/4339296/surface-for-business-help)
+Pour plus d’informations sur les garanties et les réparations Surface :
+- [Centre d’aide surface pour les entreprises](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [Garanties, plans de service étendus et conditions générales pour votre appareil](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
 
 
@@ -45,6 +45,6 @@ Microsoft ne fournira pas de service pour ces éléments.
 
  | 
  --- | ---
-Personnalisation | Les appareils et les accessoires fournis avec le service ne peuvent pas être personnalisés. Tous les appareils et les accessoires sont fournis avec des combinaisons standard de personnalisation, de spécification et de couleur. Le déploiement d’applications et les configurations de stratégie sont gérées par le biais du service informatique-As-a-service.
-Récupération de données | Les données des utilisateurs et des équipes, y compris la personnalisation, sont stockées dans OneDrive entreprise, avec uniquement des données de cache résidant localement. Si les données sont intentionnellement stockées sur le système de stockage interne de l’appareil, toute récupération de données doit être tentée et terminée avant de renvoyer l’appareil à Microsoft.
-Configuration de l’appareil | Les appareils sont remis à l’adresse du client, où ils doivent être mis sous tension et configurés par le client.
+Personnalisation | Les appareils et accessoires fournis avec le service ne peuvent pas être personnalisés. Tous les appareils et accessoires sont fournis avec des combinaisons de couleurs, de spécifications et de 3 couleurs standard. Le déploiement d’applications et les configurations de stratégie sont gérés par le biais d’IT-as-a-Service.
+Récupération des données | Les données utilisateur et d’équipe, y compris la personnalisation, sont stockées dans OneDrive Entreprise, seules les données de cache résident localement. Si des données sont intentionnellement stockées sur le système de stockage interne de l’appareil, toute tentative de récupération des données doit être effectuée et terminée avant de renvoyer l’appareil à Microsoft.
+Configuration des appareils | Les appareils sont remis à l’adresse du client, où ils doivent être alimentés et mis en service par le client.

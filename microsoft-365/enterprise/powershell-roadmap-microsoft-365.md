@@ -22,7 +22,7 @@ ms.locfileid: "46689705"
 ---
 # <a name="powershell-roadmap-for-microsoft-365"></a>Feuille de route PowerShell pour Microsoft 365
 
-Contenu de la feuille de route PowerShell
+Contenu de feuille de route PowerShell
 
 ## <a name="next-step"></a>Étape suivante
 

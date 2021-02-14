@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
-description: Cet article fournit des informations sur la façon de se rapprocher du nombre de clients que vous pouvez utiliser par adresse IP dans votre organisation à l’aide de la traduction d’adresses réseau.
+description: Cet article fournit des détails sur la façon d’obtenir une valeur approximative du nombre de clients que vous pouvez utiliser par adresse IP dans votre organisation à l’aide de nat.
 ms.openlocfilehash: f48874853c3acb80927933761862b14379b6d4bd
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -28,45 +28,45 @@ ms.locfileid: "46689612"
 ---
 # <a name="nat-support-with-office-365"></a>Prise en charge de la traduction d'adresses réseau (NAT) avec Office 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Auparavant, vous avez indiqué que le nombre maximal de clients Exchange à utiliser par adresse IP pour se connecter à Office 365 était environ 2 000 clients par port réseau.
+Auparavant, les conseils suggéraient que le nombre maximal de clients Exchange que vous devez utiliser par adresse IP pour vous connecter à Office 365 était d’environ 2 000 clients par port réseau.
   
-## <a name="why-use-nat"></a>Pourquoi utiliser le protocole NAT ?
+## <a name="why-use-nat"></a>Pourquoi utiliser NAT ?
 
-À l’aide de l’interface NAT, des milliers de personnes sur un réseau d’entreprise peuvent « partager » quelques adresses IP routables publiquement.
+À l’aide de nat, des milliers de personnes sur un réseau d’entreprise peuvent « partager » quelques adresses IP routables publiquement.
   
-La plupart des réseaux d’entreprise utilisent l’espace d’adressage IP privé (RFC1918). L’espace d’adressage privé est alloué par l’IANA (Internet Assigned Numbers Authority) et destiné uniquement aux réseaux qui ne sont pas routés directement vers et depuis l’Internet global.
+La plupart des réseaux d’entreprise utilisent un espace d’adressare IP privé (RFC1918). L’espace d’adressag privé est alloué par l’IANA (Internet Assigned Numbers Authority) et destiné uniquement aux réseaux qui ne sont pas acheminés directement vers et depuis Internet.
   
-Pour fournir un accès Internet aux appareils sur un espace d’adressage IP privé, les organisations utilisent des technologies de passerelle telles que les pare-feu et les proxys qui fournissent des services de traduction d’adresses réseau (NAT) ou de traduction d’adresse de port (PAT). Ces passerelles rendent le trafic à partir d’appareils internes vers Internet (y compris Office 365) semblent provenir d’une ou de plusieurs adresses IP routables publiquement. Chaque connexion sortante à partir d’un périphérique interne se traduit par un port TCP source différent sur l’adresse IP publique. 
+Pour fournir un accès Internet aux appareils sur un espace d’adressag IP privé, les organisations utilisent des technologies de passerelle telles que les pare-feux et les proxies qui fournissent des services de traduction d’adresses réseau (NAT) ou de traduction d’adresses de port (PAT). Ces passerelles font apparaître le trafic provenant d’appareils internes vers Internet (y compris Office 365) provenant d’une ou de plusieurs adresses IP routables publiquement. Chaque connexion sortante d’un appareil interne se traduit par un port TCP source différent sur l’adresse IP publique. 
   
-## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Pourquoi avez-vous besoin d’un grand nombre de connexions ouvertes dans Office 365 ?
+## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Pourquoi devez-vous ouvrir autant de connexions à Office 365 en même temps ?
 
-Outlook peut ouvrir au moins huit connexions (dans les situations où il y a des compléments, des calendriers partagés, des boîtes aux lettres, etc.). Étant donné qu’il y a un maximum de 64 000 ports disponibles sur un périphérique NAT basé sur Windows, il peut y avoir un maximum de 8 000 utilisateurs derrière une adresse IP pour que les ports soient épuisés. Notez que si les clients utilisent des appareils non-Windows pour la traduction d’adresses réseau (NAT), le total des ports disponibles dépend du périphérique ou du logiciel NAT utilisé. Dans ce scénario, le nombre maximal de ports peut être inférieur à 64 000. La disponibilité des ports est également affectée par d’autres facteurs tels que le fait que Windows limite les ports 4 000 pour sa propre utilisation, ce qui réduit le nombre total de ports disponibles à 60 000. Il peut y avoir d’autres applications, telles qu’Internet Explorer, qui peuvent se connecter en même temps, ce qui nécessite des ports supplémentaires.
+Outlook peut ouvrir huit connexions ou plus (dans les situations où il existe des modules de 2013, des calendriers partagés, des boîtes aux lettres, etc.). Étant donné qu’un maximum de 64 000 ports sont disponibles sur un appareil NAT Windows, il peut y avoir 8 000 utilisateurs au maximum derrière une adresse IP avant que les ports ne soient épuisés. Notez que si les clients utilisent des appareils non-Windows OS pour NAT, le nombre total de ports disponibles dépend de l’appareil ou du logiciel NAT utilisé. Dans ce scénario, le nombre maximal de ports peut être inférieur à 64 000. La disponibilité des ports est également affectée par d’autres facteurs tels que la restriction de 4 000 ports par Windows pour son propre usage, ce qui réduit le nombre total de ports disponibles à 60 000. Il peut y avoir d’autres applications, telles qu’Internet Explorer, qui peuvent se connecter en même temps, nécessitant des ports supplémentaires.
   
-## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Calcul du nombre maximal d’appareils pris en charge derrière une même adresse IP publique avec Office 365
+## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Calcul du nombre maximal d’appareils pris en charge derrière une adresse IP publique unique avec Office 365
 
-Pour déterminer le nombre maximal d’appareils derrière une seule adresse IP publique, vous devez surveiller le trafic réseau afin de déterminer la consommation de ports maximale par client. De plus, un facteur de pic doit être utilisé pour l’utilisation des ports (4 minimum). 
+Pour déterminer le nombre maximal d’appareils derrière une seule adresse IP publique, vous devez surveiller le trafic réseau afin de déterminer la consommation maximale des ports par client. En outre, un facteur de pointe doit être utilisé pour l’utilisation du port (minimum 4). 
   
- **Utilisez la formule suivante pour calculer le nombre de périphériques pris en charge par adresse IP :**
+ **Utilisez la formule suivante pour calculer le nombre d’appareils pris en charge par adresse IP :**
   
-Nombre maximal d’appareils pris en charge derrière une même adresse IP publique = (64 000-Restricted ports)/(pic de consommation de ports + facteur de pic)
+Nombre maximal d’appareils pris en charge derrière une seule adresse IP publique = (64 000 - ports restreints)/(Consommation maximale des ports + facteur de pointe)
   
- **Par exemple, si les éléments suivants étaient vrais :**
+ **Par exemple, si les valeurs suivantes sont vraies :**
   
-- **Ports restreints :** 4 000 pour le système d’exploitation
+- **Ports restreints :** 4 000 pour le système d’exploitation
 
-- **Consommation de ports PIC :** 6 par appareil
+- **Consommation maximale des ports :** 6 par appareil
 
-- **Facteur de crête :** 4
+- **Facteur de pointe :** 4
 
-Ensuite, le nombre maximal d’appareils pris en charge derrière une seule adresse IP publique = (64 000-4000)/(6 + 4) = 6 000
+Ensuite, le nombre maximal d’appareils pris en charge derrière une seule adresse IP publique = (64 000 - 4 000)/(6 + 4) = 6 000
   
-Avec la version du pack d’hébergement Office 365, incluse dans les mises à jour de septembre 2011 pour Microsoft Office Outlook 2007 ou 2011 pour Microsoft Outlook 2010, ou une mise à jour ultérieure, le nombre de connexions à partir d’Outlook (Office Outlook 2007 avec Service Pack 2 et Outlook 2010) vers Exchange peut être de 2. Vous devez prendre en facteur les différents systèmes d’exploitation, comportements d’utilisateur, etc., pour déterminer le nombre minimal et maximal de ports requis par votre réseau au niveau maximal.
+Avec la publication du pack d’hébergement Office 365, incluse dans les mises à jour de septembre 2011 pour Microsoft Office Outlook 2007 ou novembre 2011 pour Microsoft Outlook 2010, ou d’une mise à jour ultérieure, le nombre de connexions d’Outlook (Office Outlook 2007 avec Service Pack 2 et Outlook 2010) à Exchange peut être aussi petit que 2. Vous devez prendre en compte les différents systèmes d’exploitation, les comportements des utilisateurs, etc. pour déterminer le nombre minimal et maximal de ports dont votre réseau aura besoin au maximum.
   
-Si vous souhaitez prendre en charge un plus grand nombre d’appareils derrière une même adresse IP publique, suivez les étapes décrites pour évaluer le nombre maximal d’appareils pouvant être pris en charge :
+Si vous souhaitez prendre en charge davantage d’appareils derrière une seule adresse IP publique, suivez les étapes décrites pour évaluer le nombre maximal d’appareils qui peuvent être pris en charge :
   
-Surveillez le trafic réseau pour déterminer la consommation de ports maximale par client. Vous devez collecter ces données :
+Surveiller le trafic réseau pour déterminer la consommation maximale des ports par client. Vous devez collecter les données ci-après :
   
 - À partir de plusieurs emplacements
     
@@ -76,7 +76,7 @@ Surveillez le trafic réseau pour déterminer la consommation de ports maximale 
     
 Utilisez la formule précédente pour calculer le nombre maximal d’utilisateurs par adresse IP qui peuvent être pris en charge dans leur environnement.
   
-Il existe différentes méthodes de répartition de la charge client sur des adresses IP publiques supplémentaires. Les stratégies disponibles dépendent des fonctionnalités de la solution de passerelle d’entreprise. La solution la plus simple consiste à segmenter votre espace d’adressage utilisateur et à « assigner » de façon statique des adresses IP à chaque passerelle. La possibilité d’utiliser un pool d’adresses IP constitue une autre alternative offerte par de nombreux périphériques de passerelle. L’avantage du pool d’adresses est qu’il est plus dynamique et moins susceptible de nécessiter des ajustements au fur et à mesure que votre base d’utilisateurs se développe.
+Il existe différentes méthodes pour répartir la charge du client entre des adresses IP publiques supplémentaires. Les stratégies disponibles dépendent des fonctionnalités de la solution de passerelle d’entreprise. La solution la plus simple consiste à segmenter l’espace d’adressa utilisateur et à « attribuer » de manière statique un certain nombre d’adresses IP à chaque passerelle. De nombreux périphériques de passerelle offrent également la possibilité d’utiliser un pool d’adresses IP. L’avantage du pool d’adresses est qu’il est beaucoup plus dynamique et moins susceptible de nécessiter un ajustement à mesure que votre base d’utilisateurs augmente.
   
 ## <a name="see-also"></a>Voir aussi
 

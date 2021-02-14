@@ -12,7 +12,7 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Dans cet article, Découvrez comment limiter les sites SharePoint à un emplacement géographique spécifié dans un environnement multi-géo.
+description: Dans cet article, découvrez comment limiter les sites SharePoint à un emplacement géographique spécifié dans un environnement multigéogé.
 ms.openlocfilehash: f2a09f177c68d30121c207287e053b2b25405fbc
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

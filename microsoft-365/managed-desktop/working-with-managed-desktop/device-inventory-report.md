@@ -1,7 +1,7 @@
 ---
 title: Rapport d’inventaire des appareils
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -18,28 +18,28 @@ ms.locfileid: "46613037"
 ---
 # <a name="device-inventory-report"></a>Rapport d’inventaire des appareils
 
-Dans la vue **périphériques** , vous pouvez sélectionner l’onglet **Exporter tout** pour télécharger un fichier délimité par des virgules, y compris les informations suivantes :
+Dans la vue **Appareils,**  vous pouvez sélectionner l’onglet Exporter tout pour télécharger un fichier délimité par des virgules, y compris les informations ci-après :
 
 - Numéro de série
 - Nom de l’appareil
-- Dernier archivage du périphérique
+- Dernière vérification de l’appareil
 - Géré par
-- Constructeur
+- Fabricant
 - Modèle
-- OS
-- Licence de système d’exploitation
+- SYSTÈME D’EXPLOITATION
+- Licence du système d’exploitation
 - Version du système d’exploitation
 - Propriété
-- Date d’enregistrement
-- Nom de la sonnerie
-- Sans stockage en Go
-- Total du stockage en Go
-- Inscriptions par nom d’utilisateur principal (UPN)
+- Date d’inscription
+- Nom de l’anneau
+- Stockage - Gratuit en Go
+- Stockage - Total en Go
+- Inscrit par l’UPN de l’utilisateur
 - Utilisateur affecté
-- État
+- Statut
 - Âge (mois)
-- Profil
+- Profils
 - Utilisateurs connectés
 
 
-![Vue périphériques indiquant la liste des périphériques et des détails connexes. Cases à cocher situées en haut de la zone Sélectionner des filtres pour l’activité, état de l’inscription. Au-dessus, il s’agit d’une zone de recherche. Onglets en haut pour l’enregistrement des nouveaux appareils, l’actualisation de l’affichage, l’exportation des erreurs et l’exportation des données. ](../../media/mmd-devices-view.png)
+![Affichage Des appareils affichant la liste des appareils et les détails associés. Cases à cocher situées dans la partie supérieure sélectionnez filtres pour l’activité, état d’inscription. Au-dessus, il s’agit d’une zone de recherche. Onglets en haut pour l’inscription de nouveaux appareils, l’actualisation de l’affichage, l’exportation d’erreurs et l’exportation des données. ](../../media/mmd-devices-view.png)

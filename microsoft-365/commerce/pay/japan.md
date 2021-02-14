@@ -24,14 +24,14 @@ ms.locfileid: "45204766"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en JPY uniquement et numéro (s) de facture de référence sur votre bordereau de paiement.
+Veuillez payer au format JPY uniquement et référencer les numéro(s) de facture à votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank, N. A  
-**ID de la Banque :** 0401  
-**Branche :** Succursale Tokyo  
-**Code de succursale :** 730  
-**Code SWIFT :** CITIJPJT  
-**Numéro de compte :** 160609028  
-**Nom du compte :** Microsoft Japan Co., Ltd.
+**Banque :** Bank, N.A  
+**ID bancaire :** 0401  
+**Branche :** Tokyo Branch  
+**Code de succursale :** 730  
+**Code SWIFT :** CITIJPJT  
+**Numéro de compte :** 160609028  
+**Nom du compte :** Microsoft Japan Co., Ltd.

@@ -1,5 +1,5 @@
 ---
-title: Affecter des stratégies Skype entreprise Online par utilisateur avec PowerShell pour Microsoft 365
+title: Affecter des stratégies Skype Entreprise Online par utilisateur avec PowerShell pour Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour affecter des paramètres de communication par utilisateur aux stratégies Skype entreprise online.'
+description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour affecter des paramètres de communication par utilisateur avec des stratégies Skype Entreprise Online.'
 ms.openlocfilehash: 6ff9fce3e0287313f6725b370b6ba89cb939eb3a
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -21,13 +21,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46689861"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Affecter des stratégies Skype entreprise Online par utilisateur avec PowerShell pour Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Affecter des stratégies Skype Entreprise Online par utilisateur avec PowerShell pour Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-L’utilisation de PowerShell pour Microsoft 365 est un moyen efficace d’affecter des paramètres de communication par utilisateur à des stratégies Skype entreprise online.
+L’utilisation de PowerShell pour Microsoft 365 est un moyen efficace d’affecter des paramètres de communication par utilisateur avec des stratégies Skype Entreprise Online.
   
-## <a name="prepare-to-run-the-powershell-commands"></a>Préparer l’exécution des commandes PowerShell
+## <a name="prepare-to-run-the-powershell-commands"></a>Préparer l’exécuter
 
 Suivez ces instructions pour exécuter les commandes (sautez les étapes que vous avez déjà effectuées) :
   
@@ -52,13 +52,13 @@ Supposons que vous souhaitiez modifier les paramètres de communication externe 
     
 2. Attribuer cette stratégie d’accès externe à Alex.
     
-Comment déterminer quelle stratégie d’accès externe attribuer à Alex ? La commande suivante renvoie toutes les stratégies d’accès externe où EnableFederationAccess a la valeur True et EnablePublicCloudAccess a la valeur False :
+Comment déterminer la stratégie d’accès externe à attribuer à Alex ? La commande suivante renvoie toutes les stratégies d’accès externe où EnableFederationAccess a la valeur True et EnablePublicCloudAccess a la valeur False :
   
 ```powershell
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Sauf si vous avez créé des instances personnalisées de ExternalAccessPolicy, cette commande renvoie une stratégie qui répond à nos critères (FederationOnly). Voici un exemple :
+Sauf si vous avez créé des instances personnalisées d’ExternalAccessPolicy, cette commande renvoie une stratégie qui répond à nos critères (FederationOnly). Voici un exemple :
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -105,7 +105,7 @@ Cette commande définit le nom de la stratégie d'accès externe attribuée à A
 
 ## <a name="managing-large-numbers-of-users"></a>Gestion d’un grand nombre d’utilisateurs
 
-Pour gérer un grand nombre d’utilisateurs (1000 ou plus), vous devez effectuer un traitement par lots des commandes via un bloc de script à l’aide de la cmdlet [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  Dans les exemples précédents, chaque fois qu’une cmdlet est exécutée, elle doit configurer l’appel, puis attendre le résultat avant de l’envoyer à nouveau.  Lors de l’utilisation d’un bloc de script, les cmdlets peuvent être exécutées à distance et, une fois terminées, renvoyer les données. 
+Pour gérer un grand nombre d’utilisateurs (1 000 ou plus), vous devez traitement par lots des commandes via un bloc de script à l’aide de la cmdlet [Invoke-Command.](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  Dans les exemples précédents, chaque fois qu’une cmdlet est exécutée, elle doit configurer l’appel, puis attendre le résultat avant de le renvoyer.  Lorsque vous utilisez un bloc de script, cela permet aux cmdlets d’être exécutées à distance et, une fois terminées, de renvoyer les données. 
 
 ```powershell
 Import-Module LyncOnlineConnector
@@ -134,7 +134,7 @@ $count = 0
 }
 ```
 
-Cela permet de trouver 500 utilisateurs à la fois qui n’ont pas de stratégie client. Il lui accorde la stratégie cliente « ClientPolicyNoIMURL » et la stratégie d’accès externe « FederationAndPicDefault ». Les résultats sont regroupés en groupes de 50 et chaque lot de 50 est envoyé à l’ordinateur distant.
+Cela permet de trouver 500 utilisateurs à la fois qui n’ont pas de stratégie de client. Il leur accorde la stratégie de client « ClientPolicyNoIMURL » et la stratégie d’accès externe « FederationAndPicDefault ». Les résultats sont par lots de 50 et chaque lot de 50 est ensuite envoyé à l’ordinateur distant.
   
 ## <a name="see-also"></a>Voir aussi
 

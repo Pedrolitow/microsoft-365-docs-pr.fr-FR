@@ -1,5 +1,5 @@
 ---
-title: Désactiver l’accès aux services Microsoft 365 lors de l’affectation de licences utilisateur
+title: Désactiver l’accès aux services Microsoft 365 lors de l’attribution de licences utilisateur
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +17,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: Découvrez comment attribuer des licences à des comptes d’utilisateur et désactiver des plans de service spécifiques en même temps à l’aide de PowerShell pour Microsoft 365.
+description: Découvrez comment attribuer des licences à des comptes d’utilisateurs et désactiver des plans de service spécifiques en même temps à l’aide de PowerShell pour Microsoft 365.
 ms.openlocfilehash: b027c805638284a78d4e49f4c65518be02e60392
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -25,28 +25,28 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46689838"
 ---
-# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Désactiver l’accès aux services Microsoft 365 lors de l’affectation de licences utilisateur
+# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Désactiver l’accès aux services Microsoft 365 lors de l’attribution de licences utilisateur
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les abonnements Microsoft 365 sont accompagnés de plans de service pour des services individuels. Les administrateurs de Microsoft 365 doivent souvent désactiver certains plans lors de l’attribution de licences aux utilisateurs. Avec les instructions de cet article, vous pouvez attribuer une licence Microsoft 365 et désactiver des plans de service spécifiques à l’aide de PowerShell pour un compte d’utilisateur individuel ou plusieurs comptes d’utilisateurs.
+Les abonnements Microsoft 365 sont offerts par des plans de service pour des services individuels. Les administrateurs Microsoft 365 doivent souvent désactiver certains plans lors de l’attribution de licences aux utilisateurs. Avec les instructions de cet article, vous pouvez attribuer une licence Microsoft 365 tout en désactivant des plans de service spécifiques à l’aide de PowerShell pour un compte d’utilisateur individuel ou plusieurs comptes d’utilisateur.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 
-Ensuite, répertoriez les plans de licence pour votre client à l’aide de cette commande.
+Ensuite, listez les plans de licence pour votre client avec cette commande.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Ensuite, obtenez le nom de connexion du compte auquel vous souhaitez ajouter une licence, également appelé nom d’utilisateur principal (UPN).
+Ensuite, obtenez le nom de la signature du compte auquel vous souhaitez ajouter une licence, également appelée nom d’utilisateur principal (UPN).
 
-Ensuite, compilez une liste de services à activer. Pour obtenir la liste complète des plans de licence (également appelés noms de produits), de leurs plans de service inclus et de leurs noms conviviaux correspondants, consultez la rubrique [noms de produits et identificateurs de plan de service pour la gestion des licences](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+Ensuite, compilez une liste de services à activer. Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms convivial correspondants, voir Noms de produits et identificateurs de plan de service pour la [gestion des licences.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
 
-Pour le bloc de commande ci-dessous, renseignez le nom d’utilisateur principal du compte d’utilisateur, le numéro de référence SKU et la liste des plans de service pour activer et supprimer le texte explicatif et les \< and > caractères. Ensuite, exécutez les commandes qui en résultent à l’invite de commande PowerShell.
+Pour le bloc de commandes ci-dessous, remplissez le nom d’utilisateur principal du compte d’utilisateur, le numéro de partie SKU et la liste des plans de service pour activer et supprimer le texte explicatif et les \< and > caractères. Ensuite, exécutez les commandes qui en résultent à l’invite de commande PowerShell.
   
 ```powershell
 $userUPN="<user account UPN>"
@@ -67,9 +67,9 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-Ensuite, exécutez la commande suivante pour afficher vos abonnements en cours :
+Ensuite, exécutez cette commande pour voir vos abonnements actuels :
   
 ```powershell
 Get-MsolAccountSku
@@ -81,7 +81,7 @@ Get-MsolAccountSku
 
 Dans l'affichage de la commande  `Get-MsolAccountSku` :
   
-- **AccountSkuId** est un abonnement pour votre organisation dans \<OrganizationName> : \<Subscription> format. Le \<OrganizationName> est la valeur que vous avez fournie lorsque vous êtes inscrit à Microsoft 365 et qui est unique pour votre organisation. La \<Subscription> valeur est pour un abonnement spécifique. Par exemple, pour litwareinc:ENTERPRISEPACK, le nom de l’organisation est litwareinc, et le nom de l’abonnement est ENTERPRISEPACK (Office 365 Entreprise E3).
+- **AccountSkuId est** un abonnement pour votre organisation au \<OrganizationName> format : \<Subscription> . Il s’agit de la valeur que vous avez fournie lorsque vous vous êtes inscrit à \<OrganizationName> Microsoft 365 et est unique pour votre organisation. La \<Subscription> valeur est pour un abonnement spécifique. Par exemple, pour litwareinc:ENTERPRISEPACK, le nom de l’organisation est litwareinc, et le nom de l’abonnement est ENTERPRISEPACK (Office 365 Entreprise E3).
     
 - **ActiveUnits** représente le nombre de licences que vous avez achetées pour l'abonnement.
     
@@ -89,9 +89,9 @@ Dans l'affichage de la commande  `Get-MsolAccountSku` :
     
 - **ConsumedUnits** représente le nombre de licences que vous avez affectées à des utilisateurs de l'abonnement.
     
-Notez le AccountSkuId pour votre abonnement Microsoft 365 qui contient les utilisateurs auxquels vous souhaitez accorder une licence. Assurez-vous également qu’il y a suffisamment de licences à affecter (soustraire **ConsumedUnits** de **ActiveUnits** ).
+Notez le AccountSkuId de votre abonnement Microsoft 365 qui contient les utilisateurs que vous souhaitez obtenir une licence. Assurez-vous également qu’il y a suffisamment de licences à attribuer (soustraire **ConsumedUnits** **d’ActiveUnits).**
   
-Ensuite, exécutez cette commande pour afficher les détails sur les plans de service Microsoft 365 disponibles dans tous vos abonnements :
+Ensuite, exécutez cette commande pour voir les détails sur les plans de service Microsoft 365 disponibles dans tous vos abonnements :
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
@@ -101,12 +101,12 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
   
 Voici une liste partielle des plans de service et de leurs services Microsoft 365 correspondants.
 
-Le tableau suivant présente les plans de service Microsoft 365 et leurs noms conviviaux pour les services les plus courants. La liste de vos plans de services peut être différente. 
+Le tableau suivant présente les plans de service Microsoft 365 et leurs noms convivial pour les services les plus courants. La liste de vos plans de services peut être différente. 
   
 |**Plan de services**|**Description**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Applications Microsoft 365 pour les entreprises *(précédemment nommé Office 365 ProPlus)*  <br/> |
@@ -115,13 +115,13 @@ Le tableau suivant présente les plans de service Microsoft 365 et leurs noms co
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |
    
-Pour obtenir la liste complète des plans de licence (également appelés noms de produits), de leurs plans de service inclus et de leurs noms conviviaux correspondants, consultez la rubrique [noms de produits et identificateurs de plan de service pour la gestion des licences](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms convivial correspondants, voir Noms de produits et identificateurs de plan de service pour la [gestion des licences.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
    
 Maintenant que vous avez le paramètre AccountSkuId et les plans de service à désactiver, vous pouvez attribuer des licences pour un utilisateur ou plusieurs utilisateurs.
   
 ### <a name="for-a-single-user"></a>Pour un utilisateur unique
 
-Pour un seul utilisateur, renseignez le nom d’utilisateur principal du compte d’utilisateur, le AccountSkuId et la liste des plans de service à désactiver et supprimez le texte explicatif et les \< and > caractères. Ensuite, exécutez les commandes qui en résultent à l’invite de commande PowerShell.
+Pour un utilisateur unique, remplissez le nom d’utilisateur principal du compte d’utilisateur, le AccountSkuId et la liste des plans de service à désactiver et supprimer le texte explicatif et les \< and > caractères. Ensuite, exécutez les commandes qui en résultent à l’invite de commande PowerShell.
   
 ```powershell
 $userUPN="<the user's account name in email format>"
