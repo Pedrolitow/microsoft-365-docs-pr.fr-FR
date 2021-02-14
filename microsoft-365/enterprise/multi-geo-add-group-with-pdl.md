@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Découvrez comment créer un groupe Microsoft 365 avec un emplacement de données par défaut spécifié dans un environnement multi-géo.
+description: Découvrez comment créer un groupe Microsoft 365 avec un emplacement de données préféré spécifié dans un environnement multigéogé.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 5af32827d11289f7a966311080d2c15197786799
 ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
@@ -22,11 +22,11 @@ ms.locfileid: "47547733"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>Créer un groupe Microsoft 365 avec un PDL spécifique
 
-Lorsque les utilisateurs dans un environnement multi-géo créent un groupe Microsoft 365, l’emplacement des données par défaut du groupe est automatiquement défini sur celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
+Lorsque les utilisateurs d’un environnement multigéogéal créent un groupe Microsoft 365, l’emplacement des données par leur choix est automatiquement celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
 
 Si vous devez créer un groupe avec un emplacement par défaut des données spécifique, vous le faire à l’aide de l’applet de commande Microsoft PowerShell New-UnifiedGroup d’Exchange Online ou à partir du Centre d’administration SharePoint. Lorsque vous procédez de la sorte, la boîte aux lettres de groupe et le site SharePoint associé à celui-ci sont configurés dans l’emplacement par défaut des données spécifié.
 
-Pour créer un groupe Microsoft 365 avec le langage PDL que vous spécifiez, accédez au centre d’administration SharePoint à l’emplacement géographique dans lequel vous souhaitez créer le site de groupe.
+Pour créer un groupe Microsoft 365 avec le PDL que vous spécifiez, allez au Centre d’administration SharePoint dans l’emplacement géographique où vous souhaitez créer le site de groupe.
 
 Par exemple :
 
@@ -55,6 +55,6 @@ Notez que l’approvisionnement du site du groupe SharePoint est à la demande. 
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)

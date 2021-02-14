@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Le marquage des documents dans un jeu de révision permet de supprimer le contenu inutile et d’identifier le contenu pertinent dans un cas avancé de découverte électronique.
+description: Le marquage de documents dans un jeu à réviser permet de supprimer du contenu inutile et d’identifier le contenu pertinent dans un cas Advanced eDiscovery.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 83e7a3c9c097968c4d773e6e2092bb3c50154cc3
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
@@ -24,35 +24,35 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285280"
 ---
-# <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Baliser des documents dans un ensemble de révision dans Advanced eDiscovery
+# <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Baliser des documents dans un jeu à réviser dans Advanced eDiscovery
 
-L’organisation du contenu dans un jeu de révision est importante pour effectuer plusieurs flux de travail dans le processus de découverte électronique. Cela inclut les opérations suivantes :
+L’organisation du contenu dans un ensemble de révision est importante pour effectuer différents flux de travail dans le processus eDiscovery. Cela inclut les opérations suivantes :
 
 - Élimination de contenu inutile
 
 - Identification du contenu pertinent
  
-- Identification du contenu qui doit être révisé par un expert ou un avocat
+- Identification du contenu qui doit être examiné par un expert ou un avocat
 
-Lorsque des experts, des avocats ou d’autres utilisateurs consultent le contenu d’un ensemble de révision, leurs opinions liées au contenu peuvent être capturées à l’aide de balises. Par exemple, si l’intention est d’effectuer une élimination de contenu inutile, un utilisateur peut marquer des documents avec une balise telle que « non réactif ». Une fois que le contenu a été révisé et balisé, une recherche de jeu de réexamen peut être créée pour exclure le contenu marqué comme « non réactif », ce qui élimine ce contenu des étapes suivantes dans le flux de travail de découverte électronique. Le panneau des balises peut être personnalisé pour chaque cas afin que les balises puissent prendre en charge le flux de travail de révision prévu.
+Lorsque des experts, des avocats ou d’autres utilisateurs examinent le contenu d’un groupe de révision, leurs opinions relatives au contenu peuvent être capturées à l’aide de balises. Par exemple, si l’objectif est d’annuler le contenu inutile, un utilisateur peut baliser des documents avec une balise telle que « non réactif ». Une fois que le contenu a été révisé et balisé, une recherche de jeu à réviser peut être créée pour exclure tout contenu marqué comme « non réactif », ce qui élimine ce contenu des étapes suivantes du flux de travail eDiscovery. Le panneau de balises peut être personnalisé pour chaque cas afin que les balises peuvent prendre en charge le flux de travail de révision prévu.
 
 ## <a name="tag-types"></a>Types de balises
 
-Advanced eDiscovery propose deux types de balises :
+Advanced eDiscovery fournit deux types de balises :
 
-- **Balises à choix unique** : limite les utilisateurs à la sélection d’une balise unique au sein d’un groupe. Cela peut être utile pour s’assurer que les utilisateurs ne sélectionnent pas les balises conflictuelles telles que « réactif » et « ne répond pas ». Celles-ci s’affichent sous forme de cases d’option.
+- **Balises à choix unique** : limite la sélection d’une seule balise au sein d’un groupe. Cela peut être utile pour s’assurer que les utilisateurs ne sélectionnent pas de balises conflictuelles telles que « réactive » et « non réactive ». Celles-ci s’affichent sous la mesure des boutons d’radio.
 
-- **Balises Choice multiples** : permet aux utilisateurs de sélectionner plusieurs balises au sein d’un groupe. Celles-ci s’affichent sous forme de cases à cocher.
+- **Balises de choix multiples** : autoriser les utilisateurs à sélectionner plusieurs balises au sein d’un groupe. Celles-ci s’affichent sous la mesure des case à cocher.
 
 ## <a name="tag-structure"></a>Structure des balises
 
-En plus des types de balises, la structure de la manière dont les balises sont organisées dans le panneau des balises peut être utilisée pour faciliter l’utilisation de documents de marquage. Les balises sont regroupées par sections. Review Set search prend en charge la fonctionnalité de recherche par balise et par section tag. Cela signifie que vous pouvez créer une recherche de jeu de réexamen pour récupérer des documents marqués avec une balise dans une section.
+Outre les types de balises, la structure de l’organisation des balises dans le panneau de balises peut être utilisée pour rendre les documents de marquage plus intuitifs. Les balises sont regroupées par sections. La recherche de jeu à réviser prend en charge la possibilité de rechercher par balise et par section de balise. Cela signifie que vous pouvez créer une recherche de jeu à réviser pour récupérer les documents marqués avec n’importe quelle balise dans une section.
 
-![Sections de balise dans le panneau des balises](../media/Tagtypes.png)
+![Sections de balise dans le panneau de balise](../media/Tagtypes.png)
 
-Les balises peuvent être organisées de manière plus approfondie en les imbriquant dans une section. Par exemple, si l’intention est d’identifier et de baliser un contenu privilégié, l’imbrication peut être utilisée pour indiquer clairement qu’un utilisateur peut marquer un document comme « privilégié » et sélectionner le type de privilège en vérifiant la balise imbriquée appropriée.
+Les balises peuvent être davantage organisées en les imbriquent dans une section. Par exemple, si l’objectif est d’identifier et de baliser le contenu privilégié, l’imbrmbrage peut être utilisé pour indiquer clairement qu’un utilisateur peut marquer un document comme « privilégié » et sélectionner le type de privilège en vérifiant la balise imbrmbrée appropriée.
 
-![Balises imbriquées dans une section de balise](../media/Nestingtags.png)
+![Balises imbriées dans une section de balise](../media/Nestingtags.png)
 
 ## <a name="applying-tags"></a>Application de balises
 
@@ -60,33 +60,33 @@ Il existe plusieurs façons d’appliquer une balise au contenu.
 
 ### <a name="tagging-a-single-document"></a>Marquage d’un document unique
 
-Lors de l’affichage d’un document dans un jeu de vérification, vous pouvez afficher les balises qu’une révision peut utiliser en cliquant sur **panneau de marquage**.
+Lorsque vous affichez un document dans un jeu à réviser, vous pouvez afficher les balises qu’un avis peut utiliser en cliquant sur **le panneau de marquage.**
 
-![Cliquez sur panneau des balises pour afficher le panneau Balises.](../media/Singledoctag.png)
+![Cliquez sur Le panneau Balise pour afficher le panneau de balises](../media/Singledoctag.png)
 
 Cela vous permet d’appliquer des balises au document affiché dans la visionneuse.
 
-### <a name="bulk-tagging"></a>Balisage en bloc
+### <a name="bulk-tagging"></a>Marquage en bloc
 
-L’étiquetage en bloc peut être réalisé en sélectionnant plusieurs fichiers dans la grille de résultats, puis en utilisant les balises dans le **panneau balisage** de la même manière que pour le marquage des documents uniques. L’annulation de balisage en bloc peut être réalisée en sélectionnant deux fois les balises ; le premier clic applique la balise, et la deuxième sélection garantit que la balise est effacée pour tous les fichiers sélectionnés.
+Le marquage en bloc peut être effectué en sélectionnant plusieurs fichiers  dans la grille des résultats, puis en utilisant les balises du panneau de marquage similaires au marquage de documents simples. L’un-marquage en bloc peut être effectué en sélectionnant deux fois des balises . Le premier clic applique la balise, et la deuxième sélection garantit que la balise est effacée pour tous les fichiers sélectionnés.
 
-![Capture d’écran d’une description de téléphone de cellule générée automatiquement](../media/Bulktag.png)
+![Capture d’écran d’une description de téléphone portable générée automatiquement](../media/Bulktag.png)
 
 > [!NOTE]
-> Lors de l’étiquetage en bloc, le panneau balisage affiche un nombre de fichiers balisés pour chaque balise dans le panneau.
+> Lors du marquage en bloc, le panneau de marquage affiche le nombre de fichiers marqués pour chaque balise du panneau.
 
-### <a name="tagging-in-other-review-panels"></a>Balisage dans d’autres panneaux de révision
+### <a name="tagging-in-other-review-panels"></a>Marquage dans d’autres panneaux d’avis
 
-Lors de l’examen des documents, vous pouvez utiliser les autres panneaux de révision pour examiner les autres caractéristiques des documents dans la grille de résultats. Cela inclut l’examen d’autres documents connexes, des threads de messagerie, des doublons de doublons et des doublons de hachage. Par exemple, lorsque vous consultez des documents connexes (à l’aide du panneau de vérification de la **famille de documents** ), vous pouvez réduire considérablement le temps d’examen en bloc des documents associés. Par exemple, si un message électronique comporte plusieurs pièces jointes et que vous souhaitez vous assurer que toute la famille est marquée de manière cohérente.
+Lorsque vous examinez des documents, vous pouvez utiliser les autres panneaux de révision pour examiner d’autres caractéristiques des documents dans la grille des résultats. Cela inclut la révision d’autres documents connexes, threads de messagerie, quasi-doublons et hachages. Par exemple, lorsque vous examinez des documents  connexes (à l’aide du Panneau de révision de la famille de documents), vous pouvez réduire considérablement le temps de révision en balisé en bloc les documents associés. Par exemple, si un message électronique a plusieurs pièces jointes et que vous souhaitez vous assurer que toute la famille est marquée de façon cohérente.
 
-Par exemple, voici comment afficher le panneau de **marquage** lors de l’utilisation du panneau de vérification de la **famille de documents** :
+Par exemple, voici comment afficher  le panneau marquage lors de l’utilisation du panneau de révision de la famille **de** documents :
 
-1. Lorsque le panneau vérifier est ouvert pour un document sélectionné (par exemple, affichage de la liste du contenu associé dans le panneau de vérification de la **famille de documents** , cliquez sur **documents de balise** sous le panneau examen de la famille de documents.
+1. Avec le panneau de révision ouvert pour un document sélectionné (par  exemple, affichage de la liste du contenu connexe dans le panneau révision de la famille de documents), cliquez sur **Baliser** les documents sous le panneau de révision de la famille de documents.
 
-   Le panneau de marquage est affiché sous la forme d’une fenêtre contextuelle.
+   Le panneau de marquage s’affiche en tant que fenêtre indépendant.
 
-2. Choisissez une ou plusieurs balises à appliquer au document sélectionné. 
+2. Choisissez une ou plusieurs balises pour appliquer le document sélectionné. 
 
-3. Pour baliser tous les documents, sélectionnez tous les documents dans le panneau de la **famille** de documents, cliquez sur **documents de balises**, puis sélectionnez les balises à appliquer à l’ensemble de la famille de documents.
+3. Pour baliser tous les documents, sélectionnez tous les documents dans le panneau Famille de documents, cliquez sur Baliser les **documents,** puis choisissez les balises à appliquer à toute la famille de documents. 
 
-![Capture d’écran d’une description de publication de réseau social générée automatiquement](../media/Relatedtag.png)
+![Capture d’écran d’un billet de réseau social Description généré automatiquement](../media/Relatedtag.png)

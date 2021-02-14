@@ -26,7 +26,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Découvrez comment réinitialiser le mot de passe d’un utilisateur dans Microsoft 365 pour un abonnement professionnel.
+description: Découvrez comment réinitialiser le mot de passe d’un utilisateur dans l’abonnement Microsoft 365 pour les entreprises.
 ms.openlocfilehash: faae2d31f29eb4817abc31cde1e1ce2bd6a47db1
 ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
@@ -36,15 +36,15 @@ ms.locfileid: "48131698"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
-Cet article explique comment réinitialiser les mots de passe pour vous et pour vos utilisateurs lorsque vous disposez d’un abonnement Microsoft 365 pour les entreprises.
+Cet article explique comment réinitialiser les mots de passe pour vous-même et pour vos utilisateurs lorsque vous avez un abonnement Microsoft 365 pour les entreprises.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../admin-overview/admin-overview.md)
 
-Pour effectuer ces étapes, vous devez être [administrateur général ou administrateur de mots de passe](about-admin-roles.md) .
+Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 
-## <a name="watch-reset-a-business-password-for-a-user"></a>Regarder : réinitialiser un mot de passe d’entreprise pour un utilisateur
+## <a name="watch-reset-a-business-password-for-a-user"></a>Regarder : Réinitialiser un mot de passe d’entreprise pour un utilisateur
 
 Regardez une courte vidéo sur la réinitialisation des mots de passe utilisateur.<br><br>
 
@@ -52,31 +52,31 @@ Regardez une courte vidéo sur la réinitialisation des mots de passe utilisateu
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
-## <a name="steps-reset-a-business-password-for-a-user"></a>Étapes : réinitialiser un mot de passe d’entreprise pour un utilisateur
+## <a name="steps-reset-a-business-password-for-a-user"></a>Étapes : réinitialiser un mot de passe d’entreprise pour un utilisateur
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
-2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur, puis **Réinitialiser le mot de passe**.
+2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur, puis réinitialisez **le mot de passe.**
 
-3. Suivez les instructions de la page **Réinitialiser le mot de passe** pour générer automatiquement un nouveau mot de passe pour l’utilisateur ou en créer un pour celui-ci, puis sélectionnez **Réinitialiser**.  
+3. Suivez les instructions de la **page** Réinitialiser le mot de passe pour générer automatiquement un mot de passe pour l’utilisateur ou en créer un pour lui, puis sélectionnez **Réinitialiser.**  
 
-4. Entrez une adresse de messagerie à laquelle l’utilisateur peut accéder afin qu’il reçoive le nouveau mot de passe et de le suivre pour s’assurer qu’il a reçu le nouveau mot de passe.
+4. Entrez une adresse de messagerie que l’utilisateur peut accéder pour recevoir le nouveau mot de passe, puis suivez-le pour vous assurer qu’il l’a bien.
 
 ## <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
@@ -84,49 +84,49 @@ Nous vous recommandons vivement de configurer la réinitialisation du mot de pas
 
 ## <a name="reset-my-admin-password"></a>Réinitialiser mon mot de passe d’administrateur
 
-Suivez ces étapes si vous avez oublié votre mot de passe, mais que vous êtes en mesure de vous connecter à Microsoft 365 car, par exemple, votre mot de passe est enregistré dans votre navigateur :
+Utilisez ces étapes si vous avez oublié votre mot de passe, mais que vous pouvez vous connectez à Microsoft 365 car, par exemple, votre mot de passe est enregistré dans votre navigateur :
 
-1. Sélectionnez votre nom (icône) dans le coin supérieur droit > **mon compte**  >  **informations personnelles**.
+1. Sélectionnez votre nom (icône) dans le coin supérieur droit > **mes informations**  >  **personnelles de compte.**
 
-2. Sous **Détails du contact**, vérifiez que votre **autre courrier électronique** est précis et que vous avez fourni un numéro de téléphone mobile. Si ce n’est pas le cas, modifiez-les maintenant.
+2. Sous **Coordonnées du contact,**  vérifiez que votre adresse de messagerie de remplacement est exacte et que vous avez fourni un numéro de téléphone mobile. Si ce n’est pas le cas, modifiez-les maintenant.
 
-3. Déconnexion : sélectionnez votre nom dans le coin supérieur droit \> **déconnectez-vous**.
+3. Sign out: select your name in the upper right corner \> **Sign out**.
 
-4. À présent, reconnectez-vous : saisissez votre nom d’utilisateur \> **Next** \> puis sélectionnez **mot de passe oublié**.
+4. Connectez-vous à nouveau : tapez votre nom d’utilisateur \> **Suivant,** \> puis sélectionnez Mot de passe **oublié.**
 
-5. Suivez les étapes de l’Assistant pour réinitialiser votre mot de passe. Il utilise les autres informations de contact pour vérifier que vous êtes la personne appropriée pour réinitialiser votre mot de passe.
+5. Suivez les étapes de l’Assistant pour réinitialiser votre mot de passe. Il utilise vos coordonnées de remplacement pour vérifier que vous êtes la personne à même de réinitialiser votre mot de passe.
 
-Si vous avez oublié votre mot de passe et que vous ne parvenez pas à vous connecter :
+Si vous avez oublié votre mot de passe et que vous ne pouvez pas vous y inscrire :
 
 - Demandez à un autre administrateur global de votre entreprise de réinitialiser votre mot de passe pour vous.
 
 - Assurez-vous que vous avez fourni d’autres informations de contact, notamment un numéro de téléphone mobile.
 
-- Ou, [appelez le support Microsoft](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+- Sinon, [appelez le Support Microsoft.](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Réinitialiser tous les mots de passe d’entreprise pour tous les membres de votre organisation en même temps
 <a name="bkmk_forgot"> </a>
 
-Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs. Si vous avez des centaines ou des milliers d’utilisateurs, reportez-vous à la section suivante sur la réinitialisation des mots de passe en bloc (maximum 40 utilisateurs à la fois).
+Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs. Si vous avez des centaines ou des milliers d’utilisateurs, consultez la section suivante sur la réinitialisation des mots de passe en bloc (40 utilisateurs maximum à la fois).
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
-2. Sélectionnez l’option en regard de **nom d’affichage** pour sélectionner tout le monde dans votre entreprise. Désélectionnez votre nom. Vous ne pouvez pas réinitialiser votre propre mot de passe en même temps que vous réinitialisez le mot de passe de tous les autres utilisateurs.
+2. Sélectionnez l’option en plus **du nom complet** pour sélectionner tous les personnes de votre entreprise. Désélectionnez votre nom. Vous ne pouvez pas réinitialiser votre propre mot de passe en même temps que vous réinitialisez le mot de passe de tous les autres utilisateurs.
 
-3. Sélectionnez **Réinitialiser le mot de passe**. 
+3. Sélectionnez **Réinitialiser le mot de passe.** 
 
-4. Suivez les instructions de la page **Réinitialiser le mot de passe** , puis sélectionnez **Réinitialiser**.  Si vous avez opté pour la génération automatique des mots de passe, les nouveaux mots de passe temporaires seront affichés.
+4. Suivez les instructions de la **page** Réinitialiser le mot de passe, puis sélectionnez **Réinitialiser.**  Si vous avez choisi de générer automatiquement les mots de passe, les nouveaux mots de passe temporaires s’affichent.
 
-5. Entrez une adresse de messagerie où vous pouvez recevoir les mots de passe temporaires. Vous devrez informer vos utilisateurs de leur mot de passe temporaire.
+5. Entrez une adresse de messagerie dans laquelle vous pouvez recevoir les mots de passe temporaires. Vous devez informer vos utilisateurs de leurs mots de passe temporaires.
   
-## <a name="reset-business-passwords-in-bulk"></a>Réinitialiser les mots de passe professionnels en bloc
+## <a name="reset-business-passwords-in-bulk"></a>Réinitialiser les mots de passe d’entreprise en bloc
 <a name="bkmk_forgot"> </a>
 
 Utilisez PowerShell. Lisez ce billet rédigé par Eyal Doron : [Gestion des mots de passe avec PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-Pour plus d’informations, consultez la rubrique [Manage Microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
+Pour obtenir des informations générales, [voir Gérer Microsoft 365 avec PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Forcer la modification du mot de passe de tous les utilisateurs au sein de votre entreprise
 

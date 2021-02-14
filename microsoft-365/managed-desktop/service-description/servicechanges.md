@@ -1,7 +1,7 @@
 ---
 title: Modifications de service et communication
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -16,59 +16,59 @@ ms.locfileid: "47950317"
 ---
 # <a name="service-changes-and-communication"></a>Modifications de service et communication
 
-Parfois, Microsoft peut avoir besoin de modifier les détails sur la façon dont Microsoft Managed Desktop fonctionne. De même, vous devrez peut-être effectuer des modifications qui affecteraient également le service. Ces modifications sont gérées différemment en fonction de leur importance. Cette rubrique définit les modifications que nous considérons comme majeures et explique comment les gérer par rapport à d’autres modifications.
+Parfois, Microsoft peut avoir besoin de modifier les détails sur le fonctionnement de Bureau géré Microsoft. De même, vous devrez peut-être apporter des modifications qui affecteraient également le service. Ces changements sont gérés différemment en fonction de leur importance. Cette rubrique définit les modifications que nous considérons comme majeures et explique comment les gérer par rapport à d’autres modifications.
 
 
 
 ## <a name="changes-made-by-microsoft"></a>Modifications apportées par Microsoft
 
-Nous vous ferons remarquer au moins 30 jours avant le moment de la modification majeure qui nécessite une action. Nous vous informerons à l’aide du système de messagerie du portail d’administration de bureau géré Microsoft.
+Nous vous fournirons une notification au moins 30 jours à l’avance pour toute modification majeure nécessitant une action. Nous vous le faire savoir à l’aide du système de messagerie du portail d’administration du bureau géré Microsoft.
 
-Les **modifications majeures** sont celles susceptibles d’avoir un impact sur l’un de ces domaines :
+**Les principales modifications** sont celles qui peuvent avoir un impact sur l’un de ces domaines :
 - Modifications affectant la productivité quotidienne
 - Modifications apportées aux fonctionnalités et applications personnalisées
-- Augmenter ou diminuer la capacité visible
-- Modifications apportées à la personnalisation des produits susceptibles d’entraîner une confusion ou une modification dans les processus du support technique, les documents de référence ou les URL
-- Modifications nécessitant des autorisations au-delà de celles requises par le service pour les opérations quotidiennes, à l’exception des actions qui empêchent ou résolvent les problèmes
-- Modifications apportées à l’emplacement de stockage de vos données
-- Ajout d’un nouveau service ou d’une nouvelle application de composant à l’étendue du service
+- Augmentation ou diminution de la capacité visible
+- Modifications apportées à la marque du produit qui peuvent provoquer une confusion ou un changement de l’utilisateur dans les processus du helpdesk et le matériel de référence ou les URL
+- Modifications nécessitant des autorisations au-delà de celles requises par le service pour les opérations quotidiennes, à l’exclusion des actions qui empêchent ou corrigent les problèmes
+- Modifications apportées à l’endroit où vos données sont stockées
+- Ajout d’un nouveau service ou application de composant à l’étendue du service
 - Suppression d’un service ou d’une application de composant de l’étendue du service
 - Ajout d’une nouvelle fonctionnalité au service
 
 > [!NOTE]
-> Nous pouvons être amenés à effectuer des modifications pour limiter les incidents ou les problèmes de sécurité qui seraient exclus de la stratégie de notification de 30 jours.
+> Nous devons peut-être apporter des modifications pour atténuer les incidents ou les problèmes de sécurité qui seraient exclus de la stratégie de notification de 30 jours.
 
-Nous allons régulièrement effectuer d’autres modifications au service pour améliorer l’expérience utilisateur, la sécurité, la fiabilité et la création de rapports. Voici quelques exemples de ces modifications :
+Nous apporterons régulièrement d’autres modifications au service pour améliorer l’expérience utilisateur, la sécurité, la fiabilité et la reporting. Voici quelques exemples de ces modifications :
 
-- Installation des mises à jour de Windows et d’Office
-- Mises à jour de la base de sécurité appliquée aux appareils
+- Installation des mises à jour Windows et Office
+- Mises à jour de la ligne de base de sécurité appliquée aux appareils
 - [Supported devices](device-list.md)
 
-Nous communiquerons ces modifications à l’aide de canaux établis. Si vous avez des questions sur les modifications, contactez l’équipe Microsoft Managed Desktop [Operations](../working-with-managed-desktop/admin-support.md). Les modifications apportées au service sont également décrites si nécessaire dans l' [historique des modifications](../change-history-managed-desktop.md).
+Nous communiquerons ces modifications à l’aide de canaux établis. Si vous avez des questions sur les modifications, contactez l’équipe Microsoft Managed Desktop [Operations](../working-with-managed-desktop/admin-support.md). Les modifications apportées au service sont également documentées selon les besoins dans [l’historique des modifications.](../change-history-managed-desktop.md)
 
-Les modifications apportées au bureau géré Microsoft et les communications sont régies par deux stratégies Microsoft :
-- [Stratégie de cycle de vie moderne](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
-- [Microsoft 365 modifier la stratégie de communication](https://docs.microsoft.com/office365/admin/manage/message-center?redirectSourcePath=%252fen-us%252farticle%252fMessage-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093&view=o365-worldwide)
+Les modifications et les communications du Bureau géré Microsoft sont régies par deux stratégies Microsoft :
+- [Politique de cycle de vie moderne](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
+- [Microsoft 365 Change Communication Policy](https://docs.microsoft.com/office365/admin/manage/message-center?redirectSourcePath=%252fen-us%252farticle%252fMessage-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093&view=o365-worldwide)
 
-## <a name="changes-you-make"></a>Modifications que vous effectuez
+## <a name="changes-you-make"></a>Modifications apportées
 
-Certaines modifications que vous pouvez effectuer dans votre environnement peuvent avoir un impact sur le bureau géré Microsoft. Pour ces modifications majeures, nous vous demandons de nous faire part d’un préavis d’au moins 30 jours en soumettant une demande de service dans le portail d’administration de bureau géré Microsoft. Pour obtenir des instructions, consultez la rubrique [prise en charge administrative pour Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md) . Cela nous permet de planifier et de préparer le changement afin d’éviter les interruptions.
+Certaines modifications que vous pouvez apporter à votre environnement peuvent avoir un impact sur bureau géré Microsoft. Pour ces modifications majeures, nous vous demandons de nous envoyer une notification d’au moins 30 jours en envoyant une demande de service dans le portail d’administration du bureau géré Microsoft. Pour obtenir [des instructions, consultez](../working-with-managed-desktop/admin-support.md) la prise en charge par l’administrateur du Bureau géré Microsoft. Cela nous laisse suffisamment de temps pour planifier et préparer la modification afin d’éviter les perturbations.
 
-Les modifications majeures sont celles susceptibles d’avoir un impact sur l’un de ces domaines :
+Les principales modifications sont celles qui peuvent avoir un impact sur l’un de ces domaines :
 
-- Systèmes d’identité et groupes
-- Contrôles réseau et réseau tels que les pare-feu, le proxy ou la mise en cache et les systèmes VPN
-- Contrôles permettant d’accéder aux configurations des services Cloud
+- Groupes et systèmes d’identité
+- Contrôles réseau et réseau tels que les pare-feu, les proxys ou la mise en cache et les systèmes VPN
+- Contrôles d’accès aux configurations des services cloud
 - Certificats d’utilisateur ou d’appareil utilisés pour l’identité ou la sécurisation des services réseau
 - Systèmes de gestion qui interagissent avec le service
 - Systèmes de sécurité ou agents qui interagissent avec le service
-- Configuration de l’un des services Cloud de Microsoft 365 associés au service ou utilisé par celui-ci
+- Configuration de l’un des services cloud Microsoft 365 associés ou utilisés par le service
 
-Ces modifications ne sont pas susceptibles d’être perturbées, vous n’avez donc pas besoin de nous en informer à l’avance :
+Ces modifications ne sont pas susceptibles d’être perturbantes, vous n’avez donc pas besoin de nous les faire savoir à l’avance :
 
-- Nettoyage d’objets orphelins
+- Nettoyage d’objet orphelin
 - Ajout ou suppression d’utilisateurs du service
-- Configuration du système qui n’a pas d’impact significatif sur la remise du bureau géré Microsoft
-- Mises à jour de version d’application, à l’exception des applications VPN ou proxy
+- Configuration du système qui n’a pas d’impact matériel sur la distribution du Bureau géré Microsoft
+- Mises à jour de la version de l’application, à l’exception des applications VPN ou proxy
 
 

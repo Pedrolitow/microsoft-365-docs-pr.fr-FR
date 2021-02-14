@@ -1,7 +1,7 @@
 ---
-title: Installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft
-description: Informations sur l’installation de Microsoft Project ou de Microsoft Visio sur des appareils de bureau gérés Microsoft
-keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft Visio
+title: Installer Microsoft Project ou Microsoft Visio sur les appareils de bureau géré Microsoft
+description: Informations sur l’installation de Microsoft Project ou Microsoft Visio sur les appareils de bureau géré Microsoft
+keywords: Bureau géré Microsoft, Microsoft 365, Microsoft Project, Microsoft Visio
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -15,30 +15,30 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 09/17/2020
 ms.locfileid: "47950531"
 ---
-# <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft
+# <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installer Microsoft Project ou Microsoft Visio sur les appareils de bureau géré Microsoft
 
-Microsoft Project et Microsoft Visio nécessitent l’installation de procédures spécifiques sur les appareils de bureau gérés par Microsoft. Cette rubrique décrit les conditions préalables et le processus d’installation de ces applications.
+Microsoft Project et Microsoft Visio nécessitent des étapes spécifiques pour être installées sur les appareils de bureau géré Microsoft. Cette rubrique documente les conditions préalables et le processus d’installation de ces applications.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-Les administrateurs doivent vérifier qu’ils satisfont aux conditions préalables suivantes :
-- **Quantités de licences** : la quantité correcte de licences Microsoft Project et Microsoft Visio doit être disponible pour vos utilisateurs. Microsoft Managed Desktop ne prend actuellement en charge que les versions 64 bits de ces applications. 
-- **Noms de licences** : les noms de licences appropriés pour ces applications sont les suivants :
-    - **Microsoft Project** -Project Online professionnel ou Project Online Premium
-    - **Microsoft Visio** -Visio Online-plan 2
-- **Portail d’entreprise** : le portail de l’entreprise doit être disponible dans votre client pour permettre à vos utilisateurs d’installer ces applications. Si le portail d’entreprise n’est pas déployé dans votre client, reportez-vous à la rubrique [entreprise Portal](company-portal.md).
+Les administrateurs doivent vérifier qu’ils répondent aux conditions préalables ci-après :
+- **Quantités de licences** : le nombre correct de licences Microsoft Project et Microsoft Visio doit être disponible pour vos utilisateurs. Bureau géré Microsoft prend actuellement en charge uniquement les versions 64 bits de ces applications. 
+- **Noms de licence** : les noms de licence appropriés pour ces applications sont les éléments ci-après :
+    - **Microsoft Project** - Project Online Professionnel ou Project Online Premium
+    - **Microsoft Visio** - Visio Online Plan 2
+- **Portail d’entreprise** : le portail d’entreprise doit être disponible dans votre client pour que vos utilisateurs installent ces applications. Si le portail d’entreprise n’est pas déployé dans votre client, consultez le [portail d’entreprise.](company-portal.md)
 
-## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>Déployer Project et Visio pour les appareils de bureau gérés Microsoft
-Microsoft Managed Desktop ajoute Microsoft Project et Microsoft Visio sous la forme de deux applications Win32 dans Microsoft Intune. Nous allons également créer deux groupes dans Azure Active Directory qui seront affectés à l’application correspondante avec l’intention « disponible ». 
+## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>Déployer Project et Visio pour les appareils de bureau géré Microsoft
+Bureau géré Microsoft ajoutera Microsoft Project et Microsoft Visio en tant que deux applications Win32 dans Microsoft Intune. Nous allons également créer deux groupes dans Azure Active Directory qui seront affectés à l’application correspondante avec l’intention « Disponible ». 
 
-**Pour déployer Project et Visio** Ajoutez l’utilisateur au groupe approprié et l’application deviendra disponible dans le portail de l’entreprise. La synchronisation peut prendre quelques minutes, mais les utilisateurs peuvent alors installer les applications à partir du portail d’entreprise. 
+**Pour déployer Project et Visio** Ajoutez l’utilisateur au groupe approprié et l’application sera disponible dans le portail d’entreprise. La synchronisation peut prendre quelques minutes, mais vos utilisateurs peuvent ensuite installer les applications à partir du portail d’entreprise. 
 
-Nom du groupe Azure AD | Quels utilisateurs affecter ?   
+Nom du groupe Azure AD | Quels utilisateurs attribuer ?   
  --- | ---
-Espace de travail moderne-Bureau-Project_Install | Utilisateurs ayant besoin d’un projet
-Espace de travail moderne-Bureau-Visio_Install | Utilisateurs qui ont besoin de Visio
+Modern Workplace-Office-Project_Install | Utilisateurs qui ont besoin de Project
+Modern Workplace-Office-Visio_Install | Utilisateurs qui ont besoin de Visio
 
-## <a name="communicate-changes"></a>Communication des modifications
-Il est important que les administrateurs informatiques sachent comment installer Project et Visio. Cela inclut les opérations suivantes : 
-- Avertir les utilisateurs lorsque ces applications sont disponibles. 
-- Instructions sur l’installation de ces applications à partir du portail de l’entreprise.
+## <a name="communicate-changes"></a>Communiquer les modifications
+Il est important pour les administrateurs informatiques de faire savoir à leurs utilisateurs comment installer Project et Visio. Cela inclut les opérations suivantes : 
+- Avertir les utilisateurs lorsque ces applications sont à leur disposition. 
+- Instructions sur l’installation de ces applications à partir du portail d’entreprise.

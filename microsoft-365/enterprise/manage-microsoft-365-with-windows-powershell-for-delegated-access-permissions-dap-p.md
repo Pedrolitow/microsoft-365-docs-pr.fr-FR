@@ -16,7 +16,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
-description: La manière dont les partenaires de syndication et de fournisseur de solutions Cloud peuvent utiliser Windows PowerShell pour gérer les locataires de clients Microsoft 365.
+description: Comment les partenaires fournisseurs de solutions Cloud et de syndication peuvent utiliser Windows PowerShell pour gérer les clients Microsoft 365.
 ms.openlocfilehash: a7b2fbb5423e3b923e17aa2d9c488e7dd085be35
 ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
@@ -28,13 +28,13 @@ ms.locfileid: "47429877"
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. De nombreux sont les fournisseurs de réseau ou de télécommunications. Ils regroupent les abonnements Microsoft 365 dans leurs offres de service. Lors de la vente d’un abonnement Microsoft 365, les autorisations d’administration pour le compte de (administrateur) sont automatiquement accordées aux locations du client afin qu’ils puissent administrer et rendre compte de ces locations. Ces tâches sont difficiles à effectuer dans le centre d’administration 365 de Microsoft. Il est beaucoup plus facile d’utiliser PowerShell pour Microsoft 365 pour effectuer des tâches administratives telles que :
-- Répertorier tous les clients **TenantIds** et leurs domaines 
-- Identifier tous les utilisateurs d’un client et les licences qui leur ont été attribuées
+Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. De nombreux fournisseurs sont des fournisseurs de réseau ou de télécommunication. Ils regroupent les abonnements Microsoft 365 dans leurs offres de services. Lorsqu’ils vendent un abonnement Microsoft 365, ils se voient automatiquement accorder des autorisations Administrer de la part de (AOBO) sur les locations du client afin qu’ils peuvent administrer et signaler ces locations. Ces tâches sont difficiles à effectuer dans le Centre d’administration Microsoft 365. Il est beaucoup plus facile d’utiliser PowerShell pour Microsoft 365 pour effectuer des tâches administratives telles que :
+- List all the customer **TenantIds** and their domains 
+- Identifier tous les utilisateurs d’une location client et leurs licences attribuées
 > [!NOTE]
-> Certaines tâches d’administration peuvent uniquement être effectuées dans PowerShell.
+> Certaines tâches administratives peuvent uniquement être réalisées dans PowerShell.
 
-Les articles suivants montrent comment les partenaires de syndication et CSP utilisent PowerShell pour administrer leurs clients :
+Les articles suivants montrent comment les partenaires de syndication et de CSP utilisent PowerShell pour administrer les locations de leurs clients :
   
 - [Gérer les clients Microsoft 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué](manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
     

@@ -1,5 +1,5 @@
 ---
-title: Prise en main du portail d’approbation de service Microsoft
+title: Mise en place du portail d’confiance des services Microsoft
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -15,7 +15,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Découvrez comment accéder au portail d’approbation de services Microsoft et l’utiliser pour vous aider à respecter les pratiques de sécurité, de confidentialité et de conformité.
+description: Découvrez comment accéder au portail d’confiance des services Microsoft et l’utiliser pour vous aider avec les pratiques de sécurité, de confidentialité et de conformité.
 ms.openlocfilehash: a3a46884a41be31779b82a74bc2b6750dea697c5
 ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
@@ -23,59 +23,59 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 09/22/2020
 ms.locfileid: "48197761"
 ---
-# <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prise en main du portail d’approbation de service Microsoft
+# <a name="get-started-with-the-microsoft-service-trust-portal"></a>Mise en place du portail d’confiance des services Microsoft
 
-Le portail d’approbation de services Microsoft propose un large éventail de contenus, d’outils et d’autres ressources sur la sécurité, la confidentialité et les pratiques de conformité de Microsoft.
+Le portail d’confiance des services Microsoft fournit une variété de contenu, d’outils et d’autres ressources sur les pratiques microsoft en matière de sécurité, de confidentialité et de conformité.
 
-## <a name="accessing-the-service-trust-portal"></a>Accès au portail d’approbation de services
+## <a name="accessing-the-service-trust-portal"></a>Accès au portail d’confiance des services
 
-Le portail d’approbation de services contient des détails sur l’implémentation de Microsoft des contrôles et des processus qui protègent nos services Cloud et les données client qu’ils contiennent. Pour accéder à certaines des ressources sur le portail d’approbation de services, vous devez vous connecter en tant qu’utilisateur authentifié avec votre compte de services de Cloud Computing Microsoft (soit un compte d’organisation Azure Active Directory ou un compte Microsoft), puis consulter et accepter le contrat de non-divulgation Microsoft pour les documents de conformité.
+Le portail d’confiance des services contient des détails sur l’implémentation par Microsoft de contrôles et de processus qui protègent nos services cloud et les données client qu’ils contiennent. Pour accéder à certaines ressources sur le portail d’confiance des services, vous devez vous connecter en tant qu’utilisateur authentifié avec votre compte de services cloud Microsoft (un compte d’organisation Azure Active Directory ou un compte Microsoft) et examiner et accepter le contrat de confidentialité Microsoft pour les documents de conformité.
 
 ### <a name="existing-customers"></a>Clients existants
 
-Les clients existants peuvent accéder au portail d’approbation de service à l' <https://aka.ms/STP> aide de l’un des abonnements en ligne suivants (version d’évaluation ou payante) :
+Les clients existants peuvent accéder au portail d’confiance des services avec l’un des <https://aka.ms/STP> abonnements en ligne suivants (d’essai ou payants) :
 
 - Microsoft 365
 - Dynamics 365
 - Azure
 
  > [!NOTE]
- > Les comptes Azure Active Directory associés aux organisations ont accès à l’ensemble des documents et des fonctionnalités, comme le gestionnaire de conformité. Les comptes Microsoft créés pour une utilisation personnelle ont un accès limité au contenu du portail d’approbation de services.
+ > Les comptes Azure Active Directory associés à des organisations ont accès à l’ensemble des documents et fonctionnalités tels que le Gestionnaire de conformité. Les comptes Microsoft créés pour une utilisation personnelle ont un accès limité au contenu du portail d’confiance des services.
 
-### <a name="new-customers-and-customers-evaluating-microsoft-online-services"></a>Nouveaux clients et clients évaluant Microsoft Online Services
+### <a name="new-customers-and-customers-evaluating-microsoft-online-services"></a>Nouveaux clients et clients qui évaluent les services en ligne Microsoft
 
-Pour créer un compte ou pour créer un compte d’évaluation, utilisez l’un des formulaires d’inscription suivants (également utilisé pour les comptes d’évaluation) pour accéder au protocole STP.
+Pour créer un compte ou un compte d’essai, utilisez l’un des formulaires d’inscription suivants (également utilisé pour les comptes d’essai) pour accéder au STP.
 
-- S’inscrire à un nouveau compte [Microsoft 365 apps pour la version d’évaluation](https://go.microsoft.com/fwlink/p/?LinkID=507653) ou à un nouveau [compte d’évaluation d’Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- S’inscrire à un nouveau [compte d’essai Microsoft 365 Apps for business](https://go.microsoft.com/fwlink/p/?LinkID=507653) ou à un nouveau compte d’essai Office [365 Entreprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
-- S’inscrire à un nouveau [compte d’évaluation Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
+- S’inscrire à un nouveau [compte d’essai Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
 
-- Inscrivez-vous à un nouveau [compte Azure Trial](https://go.microsoft.com/fwlink/?LinkId=722737).
+- Inscrivez-vous à un nouveau [compte d’essai Azure.](https://go.microsoft.com/fwlink/?LinkId=722737)
 
-Lorsque vous vous inscrivez à une version d’évaluation gratuite ou à un abonnement, vous devez activer Azure Active Directory pour qu’il prenne en charge votre accès au STP.
+Lorsque vous vous inscrivez à une version d’essai gratuite ou à un abonnement, vous devez activer Azure Active Directory pour prendre en charge votre accès au STP.
 
-## <a name="using-the-service-trust-portal"></a>Utilisation du portail d’approbation de service
+## <a name="using-the-service-trust-portal"></a>Utilisation du portail d’confiance des services
 
-Les fonctionnalités et le contenu du portail d’approbation de service sont accessibles à partir du menu principal.
+Les fonctionnalités et le contenu du portail d’confiance des services sont accessibles à partir du menu principal.
 
-![Menu du portail d’approbation de service](../media/STPMenus1.png)
+![Menu Portail d’confiance des services](../media/STPMenus1.png)
 
 Les sections suivantes décrivent chaque élément du menu principal.
 
 ### <a name="service-trust-portal"></a>Portail d’approbation de services
 
-Le lien **portail d’approbation de services** affiche la page d’accueil. Il offre un moyen rapide de revenir à la page d’accueil.
+Le **lien Portail d’confiance des** services affiche la page d’accueil. Il offre un moyen rapide de revenir à la page d’accueil.
 
 ### <a name="compliance-manager"></a>Gestionnaire de conformité
 
 > [!IMPORTANT]
-> Le gestionnaire de conformité a été déplacé du portail d’approbation de service vers son nouvel emplacement dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Toutes les données client ont été transférées vers le nouvel emplacement, de sorte que vous puissiez continuer à utiliser le gestionnaire de conformité sans interruption. Reportez-vous à la [documentation du gestionnaire de conformité](compliance-manager.md) pour obtenir des informations sur la configuration et pour en savoir plus sur les nouvelles fonctionnalités. Bien que la version classique du gestionnaire de conformité reste dans le portail d’approbation de services, tous les utilisateurs sont encouragés à utiliser le gestionnaire de conformité dans le centre de conformité Microsoft 365.
+> Le Gestionnaire de conformité a été déplacé du portail d’confiance des services vers son nouvel emplacement dans le Centre de conformité [Microsoft 365.](https://compliance.microsoft.com/) Toutes les données client ont été déplacées vers le nouvel emplacement, vous pouvez donc continuer à utiliser le Gestionnaire de conformité sans interruption. Reportez-vous à [la documentation du Gestionnaire de](compliance-manager.md) conformité pour obtenir des informations sur l’installation et pour en savoir plus sur les nouvelles fonctionnalités. Bien que la version classique du Gestionnaire de conformité reste dans le portail d’confiance des services, tous les utilisateurs sont encouragés à utiliser le Gestionnaire de conformité dans le Centre de conformité Microsoft 365.
 
 ### <a name="trust-documents"></a>Documents approuvés
 
-Fournit un grand nombre d’informations sur la mise en œuvre et la conception de la sécurité afin de vous aider à respecter les objectifs de conformité réglementaire en sachant comment les services Cloud de Microsoft maintiennent vos données en toute sécurité. Pour passer en revue le contenu, sélectionnez l’une des options suivantes dans le menu déroulant **documents de confiance** .
+Fournit une multitude d’informations de conception et d’implémentation de sécurité dans le but de vous aider à atteindre plus facilement les objectifs de conformité réglementaire en comprenant comment les services Microsoft Cloud assurent la sécurité de vos données. Pour examiner le contenu, sélectionnez l’une des options suivantes dans le menu déroulant **Documents** de confiance.
 
-- **Rapports d’audit :** Une liste des rapports d’évaluation et d’évaluation indépendants sur les services Cloud de Microsoft s’affiche. Ces rapports fournissent des informations sur la conformité des services de Cloud Computing Microsoft avec les normes de protection des données et les exigences réglementaires, telles que :
+- **Rapports d’audit :** Une liste de rapports d’audit et d’évaluation indépendants sur les services Cloud de Microsoft s’affiche. Ces rapports fournissent des informations sur la conformité des services Microsoft Cloud aux normes de protection des données et aux exigences réglementaires, telles que :
 
   - Organisation internationale de normalisation (ISO)
   - Service Organization Controls (SOC)
@@ -83,79 +83,79 @@ Fournit un grand nombre d’informations sur la mise en œuvre et la conception 
   - Programme FedRAMP (Federal Risk and Authorization Management Program)
   - Règlement général sur la protection des données (RGPD)
 
-- **Protection des données :** Contient de nombreuses ressources, telles que des contrôles audités, des livres blancs, des FAQ, des tests de pénétration, des outils d’évaluation des risques et des guides de conformité.
+- **Protection des données :** Contient une multitude de ressources telles que des contrôles audités, des livres blancs, des FAQ, des tests de pénétration, des outils d’évaluation des risques et des guides de conformité.
 
-- **Modèles de sécurité et de conformité Azure :** Ressources qui vous permettent de créer des applications en nuage sécurisées et conformes. Ce domaine contient des conseils pour le gouvernement, les finances, la santé et les secteurs verticaux de détail.
+- **Plans de sécurité et conformité Azure :** Ressources qui vous aident à créer des applications cloud sécurisées et conformes. Ce domaine contient des conseils pour le secteur public, les finances, la santé et les secteurs verticaux de vente au détail.
 
 ### <a name="industries--regions"></a>Secteurs et régions
 
-Fournit des informations de conformité spécifiques de l’industrie et de la région sur les services Cloud Microsoft.
+Fournit des informations de conformité propres au secteur et à la région sur les services Microsoft Cloud.
 
-- **Secteurs d’opérations :** Pour l’instant, cette page fournit une page d’accueil spécifique au secteur des services financiers. Il contient des informations telles que les offres de conformité, les questions fréquemment posées et les expériences réussies. Les ressources pour d’autres secteurs seront publiées à l’avenir, mais vous pouvez trouver des ressources pour d’autres industries en accédant à la page **documents de confiance > protection des données** du protocole STP.
+- **Secteurs d’activité :** Pour l’instant, cette page fournit une page d’accueil propre au secteur pour le secteur des services financiers. Il contient des informations telles que des offres de conformité, des FAQ et des témoignages. Les ressources pour **d’autres** secteurs seront publiées à l’avenir, mais vous pourrez trouver des ressources pour d’autres secteurs en allant sur la page Documents d'> protection des données dans le STP.
 
-- **Régions :** Fournit des opinions juridiques sur la conformité des services de Cloud Computing Microsoft avec différentes lois de différents pays. Certains pays incluent l’Australie, le Canada, la République tchèque, le Danemark, l’Allemagne, la Pologne, la Roumanie, l’Espagne et le Royaume-Uni.
+- **Régions :** Fournit des avis juridiques sur la conformité des services Microsoft Cloud avec les différentes lois de différents pays. Certains pays sont l’Australie, le Canada, la République tchèque, le Danemark, l’Allemagne, la Pologne, la Roumanie, l’Espagne et le Royaume-Uni.
 
 ### <a name="trust-center"></a>Centre de gestion de la confidentialité
 
-Liens vers le [Centre](https://www.microsoft.com/trust-center)de gestion de la confidentialité de Microsoft, qui fournit plus d’informations sur la sécurité, la conformité et la confidentialité dans le Cloud Microsoft. Cela inclut des informations sur les fonctionnalités des services de Cloud Computing de Microsoft que vous pouvez utiliser pour répondre aux exigences spécifiques du RGPD, de la documentation utile à votre responsabilité RGPD et de votre compréhension des mesures techniques et organisationnelles prises par Microsoft pour prendre en charge l’RGPD.
+Liens vers le [Centre de confidentialité Microsoft,](https://www.microsoft.com/trust-center)qui fournit plus d’informations sur la sécurité, la conformité et la confidentialité dans Microsoft Cloud. Cela inclut des informations sur les fonctionnalités des services Microsoft Cloud que vous pouvez utiliser pour répondre aux exigences spécifiques du R GDPR, de la documentation utile pour votre responsabilité dans le cadre du R GDPR et de votre compréhension des mesures techniques et organisationnelles prises par Microsoft pour prendre en charge le R GDPR.
 
 ### <a name="my-library"></a>Ma bibliothèque
 
-Cette nouvelle fonctionnalité vous permet d’enregistrer (ou d' *épingler*) des documents afin de pouvoir y accéder rapidement sur la page ma bibliothèque. Vous pouvez également configurer des notifications pour que Microsoft vous envoie un message électronique lorsque des documents de votre bibliothèque sont mis à jour. Pour plus d’informations, reportez-vous à la section [My Library](#my-library-1) de cet article.
+Cette nouvelle fonctionnalité vous permet d’enregistrer *(ou* d’épingler) des documents afin d’y accéder rapidement sur votre page Ma bibliothèque. Vous pouvez également configurer des notifications afin que Microsoft vous envoie un message électronique lorsque les documents de votre bibliothèque My Library sont mis à jour. Pour plus d’informations, voir la section [Ma bibliothèque](#my-library-1) dans cet article.
 
 ### <a name="more"></a>Plus
 
-Accédez à **plus de > administrateur** pour accéder aux fonctions d’administration qui sont uniquement disponibles pour le compte d’administrateur général. Cette option est visible uniquement lorsque vous êtes connecté en tant qu’administrateur général. Il existe deux options dans le menu déroulant **administrateur** :
+Accédez **à Plus > administrateur pour** accéder aux fonctions d’administration qui sont uniquement disponibles pour le compte d’administrateur général. Cette option n’est visible que lorsque vous êtes en tant qu’administrateur général. Il existe deux options dans **le** menu déroulant Admin :
 
-- **Paramètres :** Cette page vous permet d’affecter des rôles d’utilisateur pour le gestionnaire de conformité (classique).
+- **Paramètres :** Cette page vous permet d’attribuer des rôles d’utilisateur pour le Gestionnaire de conformité (classique).
 
-- **Paramètres de confidentialité de l’utilisateur :** Cette page vous permet d’exporter un rapport qui contient des affectations d’éléments d’action dans le gestionnaire de conformité (classique) pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer les éléments d’action attribués de l’utilisateur spécifié.
+- **Paramètres de confidentialité de l’utilisateur :** Cette page vous permet d’exporter un rapport qui contient les affectations d’éléments d’action dans le Gestionnaire de conformité (classique) pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer tout élément d’action affecté de l’utilisateur spécifié.
 
 ### <a name="search"></a>Recherche
 
-Cliquez sur la loupe dans le coin supérieur droit de la page du portail d’approbation de service pour développer la zone, entrez vos termes de recherche, puis appuyez sur **entrée**. La page de **recherche** s’affiche, avec le terme de recherche affiché dans la zone de recherche et les résultats de la recherche répertoriés ci-dessous.
+Cliquez sur la loupe dans le coin supérieur droit de la page Portail d’confiance des services pour développer la zone, entrez vos termes de recherche, puis appuyez sur **Entrée**. La page **De** recherche s’affiche, avec le terme de recherche affiché dans la zone de recherche et les résultats de recherche répertoriés ci-dessous.
 
 ![Portail d’approbation de services – Recherche de documents filtrée](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-Par défaut, la recherche renvoie les résultats du document. Vous pouvez filtrer les résultats à l’aide des listes déroulantes pour affiner la liste des documents affichés. Vous pouvez utiliser plusieurs filtres pour affiner la liste des documents. Les filtres incluent les services Cloud spécifiques, les catégories de conformité, les pratiques de sécurité, les régions et les industries. Cliquez sur le lien nom du document pour télécharger le document.
+Par défaut, la recherche renvoie les résultats du document. Vous pouvez filtrer les résultats à l’aide des listes de listes listes pour affiner la liste des documents affichés. Vous pouvez utiliser plusieurs filtres pour affiner la liste des documents. Les filtres incluent les services cloud spécifiques, les catégories de pratiques de conformité ou de sécurité, les régions et les secteurs. Cliquez sur le lien du nom du document pour télécharger le document.
 
-Pour répertorier les contrôles des évaluations dans le gestionnaire de conformité (classique) associés à vos termes de recherche, cliquez sur **Gestionnaire de conformité**. Les résultats de la recherche indiquent la date à laquelle l’évaluation a été créée, le nom du regroupement d’évaluation, le service Cloud Microsoft applicable et si le contrôle est géré par Microsoft ou par le client. Cliquez sur le nom du contrôle pour afficher le contrôle dans le gestionnaire de conformité (Classic).
+Pour lister les contrôles des évaluations dans le Gestionnaire de conformité (classique) associés à vos termes de recherche, cliquez **sur Gestionnaire de conformité.** Les résultats de la recherche indiquent la date de création de l’évaluation, le nom du regroupement d’évaluations, le service Microsoft Cloud applicable et indiquent si le contrôle est Géré par Microsoft ou par le client. Cliquez sur le nom du contrôle pour afficher le contrôle dans l’évaluation dans le Gestionnaire de conformité (classique).
 
 ![Portail d’approbation de services – Recherche sur les contrôles du Gestionnaire de conformité](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
-> Les rapports et les documents du portail d’approbation de services peuvent être téléchargés pendant au moins 12 mois après la publication ou jusqu’à ce qu’une nouvelle version du document soit disponible.
+> Les rapports et les documents du portail d’confiance des services peuvent être téléchargés pendant au moins 12 mois après la publication ou jusqu’à ce qu’une nouvelle version du document soit disponible.
 
 ## <a name="my-library"></a>Ma bibliothèque
 
-Utilisez la fonctionnalité ma bibliothèque pour ajouter des documents et des ressources sur le portail d’approbation de service à votre page ma bibliothèque. Cela vous permet d’accéder aux documents qui vous concernent dans un seul et même emplacement.  Pour ajouter un document à votre bibliothèque, cliquez sur le menu **...** à droite d’un document, puis sélectionnez **enregistrer dans la bibliothèque**. Vous pouvez ajouter plusieurs documents à votre bibliothèque mon bibliothèque en cliquant sur la case à cocher en regard d’un ou de plusieurs documents, puis en cliquant sur **enregistrer dans la bibliothèque** en haut de la page.
+Utilisez la fonctionnalité Ma bibliothèque pour ajouter des documents et des ressources sur le portail d’confiance des services à votre page Ma bibliothèque. Cela vous permet d’accéder aux documents qui vous sont pertinents en un seul endroit.  Pour ajouter un document à votre bibliothèque My Library, cliquez sur le menu **...** à droite d’un document, puis **sélectionnez Enregistrer dans la bibliothèque.** Vous pouvez ajouter plusieurs documents à votre bibliothèque My Library en cliquant sur  la case à cocher en regard d’un ou plusieurs documents, puis en cliquant sur Enregistrer dans la bibliothèque en haut de la page.
 
-En outre, la fonctionnalité de notifications vous permet de configurer votre bibliothèque de manière à ce qu’un message électronique vous soit envoyé chaque fois que Microsoft met à jour un document que vous avez ajouté à votre bibliothèque. Pour configurer les notifications, accédez à votre bibliothèque et cliquez sur **paramètres de notification**. Vous pouvez choisir la fréquence des notifications et spécifier une adresse de messagerie dans votre organisation pour envoyer des notifications. Les notifications par courrier électronique incluent des liens vers les documents qui ont été mis à jour et une brève description de la mise à jour.
+En outre, la fonctionnalité de notifications vous permet de configurer votre bibliothèque My Library afin qu’un message électronique vous soit envoyé chaque fois que Microsoft met à jour un document que vous avez ajouté à votre bibliothèque My Library. Pour configurer les notifications, go to your My Library and click **Notification Settings**. Vous pouvez choisir la fréquence des notifications et spécifier une adresse de messagerie dans votre organisation à laquelle envoyer des notifications. Les notifications par courrier électronique incluent des liens vers les documents qui ont été mis à jour et une brève description de la mise à jour.
 
-Notez également que nous identifions tous les documents de votre bibliothèque qui ont été mis à jour au cours des 30 derniers jours, que vous activiez ou non des notifications. Une brève description de la mise à jour s’affiche également dans une info-bulle.
+Notez également que nous identifions tous les documents de votre bibliothèque My Library qui ont été mis à jour au cours des 30 derniers jours, que vous turniez ou non les notifications. Une brève description de la mise à jour est également affichée dans une info-conseil.
 
-## <a name="starter-packs"></a>Kits de démarrage
+## <a name="starter-packs"></a>Starter packs
 
-Les kits de démarrage sont un ensemble de documentation organisée par Microsoft sur les services Cloud Microsoft pour des industries spécifiques. Le portail d’approbation de services offre actuellement les trois packs de démarrage pour les organisations de services financiers. Ces Starter packs aident les organisations à évaluer et à évaluer la sécurité, la conformité et la confidentialité dans le Cloud Microsoft et fournissent des conseils pour vous aider à implémenter les services Cloud de Microsoft dans le secteur des services financiers hautement réglementés.
+Les starter packs sont un ensemble de documentation organisée par Microsoft sur les services Microsoft Cloud pour des secteurs d’activité spécifiques. Actuellement, le portail d’confiance des services offre les trois packs de démarrage suivants pour les organisations de services financiers. Ces packs de démarrage aident les organisations à évaluer la sécurité, la conformité et la confidentialité dans Microsoft Cloud et fournissent des conseils pour vous aider à implémenter les services Microsoft Cloud dans le secteur des services financiers hautement réglementés.
 
-- **Pack de démarrage d’évaluation :** À utiliser pour l’évaluation anticipée du Cloud Microsoft pour les organisations de services financiers.
+- **Pack d’évaluation starter :** À utiliser pour une évaluation anticipée du cloud Microsoft pour les organisations de services financiers.
 
-- **Pack de démarrage d’évaluation :** Après l’évaluation, utilisez les listes de vérification et d’autres instructions dans ce pack de démarrage pour aider votre organisation à évaluer les risques liés à la sécurité, à la conformité et à la confidentialité.
+- **Pack de démarrage de l’évaluation :** Après l’évaluation, utilisez les listes de contrôle et autres conseils de ce pack de démarrage pour aider votre organisation à évaluer les risques liés à la sécurité, la conformité et la confidentialité.
 
-- **Pack de démarrage d’audit :** Utilisateur ce Starter Pack pour obtenir des instructions sur l’utilisation des contrôles d’audit et d’autres outils pour vous aider à mettre en œuvre les services Cloud de Microsoft d’une manière qui contribue à réduire l’exposition aux risques de votre organisation.
+- **Audit Starter Pack :** Utilisez ce pack de démarrage pour obtenir des conseils sur l’utilisation des contrôles d’audit et d’autres outils pour vous aider à mettre en œuvre les services Microsoft Cloud d’une manière qui permet de réduire l’exposition de votre organisation aux risques.
 
-Pour accéder à ces Starter packs, accédez à **Service Trust Portal > Industries & regions > Industry Solutions > Financial Services**. Vous pouvez ouvrir ou télécharger des documents à partir d’un Starter Pack ou les enregistrer dans votre bibliothèque.
+Pour accéder à ces starter packs, accédez à **Service Trust Portal > Industries & Regions > Industry Solutions > Financial Services**. Vous pouvez ouvrir ou télécharger des documents à partir d’un starter pack ou les enregistrer dans votre bibliothèque My Library.
 
 ## <a name="localization-support"></a>Prise en charge de localisation
 
-Le portail d’approbation de services vous permet d’afficher le contenu de la page dans différentes langues. Pour modifier la langue de la page, il suffit de cliquer sur l’icône en forme de globe dans le coin inférieur gauche de la page et de sélectionner la langue de votre choix.
+Le portail d’confiance des services vous permet d’afficher le contenu de la page dans différentes langues. Pour modifier la langue de la page, cliquez simplement sur l’icône du globe dans le coin inférieur gauche de la page et sélectionnez la langue de votre choix.
 
 ![Portail d’approbation de services – Options de localisation du contenu](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
-## <a name="give-feedback"></a>Envoyer des commentaires
+## <a name="give-feedback"></a>Faire part de vos commentaires
 
-Nous pouvons vous aider à répondre à des questions sur le portail d’approbation de service ou des erreurs que vous surveillez lorsque vous utilisez le portail. Vous pouvez également nous contacter avec des questions et des commentaires sur les rapports de conformité du portail d’approbation de service et les ressources d’approbation à l’aide du lien Commentaires en bas des pages STP.
+Nous pouvons vous aider avec des questions sur le portail d’confiance des services ou des erreurs que vous pouvez découvrir lorsque vous utilisez le portail. Vous pouvez également nous contacter avec des questions et des commentaires sur les rapports de conformité du portail d’confiance des services et les ressources d’confiance à l’aide du lien Commentaires en bas des pages STP.
 
-Votre avis compte beaucoup pour nous. Cliquez sur le bouton commentaires au bas de la page pour nous envoyer des commentaires sur ce que vous avez fait ou n’aimez pas, ou des suggestions dont vous pouvez avoir besoin pour améliorer nos produits ou nos fonctionnalités de produit.
+Votre avis compte beaucoup pour nous. Cliquez sur le bouton Commentaires en bas de la page pour nous envoyer des commentaires sur ce que vous avez fait ou n’aimez pas, ou des suggestions que vous pouvez avoir pour améliorer nos produits ou fonctionnalités de produit.
 
-![Quel type de commentaires avez-vous](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![Quel type de commentaires avez-vous ?](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

@@ -18,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Passez en revue les réponses aux questions fréquemment posées sur le déploiement centralisé à partir du centre d’administration Microsoft 365.
+description: Examinez les réponses aux questions fréquentes sur le déploiement centralisé à partir du Centre d’administration Microsoft 365.
 ms.openlocfilehash: 555496f15663b6607ebc785498bdc94b5e51b9c9
 ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
@@ -28,76 +28,76 @@ ms.locfileid: "47948687"
 ---
 # <a name="centralized-deployment-faq"></a>Forum aux questions sur le déploiement centralisé
 
-Le déploiement centralisé est la méthode recommandée pour un administrateur Office 365 pour déployer des compléments Office (Word, Excel, PowerPoint et Outlook) pour les utilisateurs et les groupes au sein d’une organisation, à condition que l’organisation remplisse toutes les conditions d’utilisation du déploiement centralisé comme décrit dans cet article.   
+Le déploiement centralisé est la façon recommandée pour un administrateur Office 365 de déployer des add-ins Office (Word, Excel, PowerPoint et Outlook) pour les utilisateurs et les groupes au sein d’une organisation, à condition que l’organisation réponde à toutes les exigences d’utilisation du déploiement centralisé, comme indiqué dans cet article.   
   
-## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>Comment savoir si mon organisation est configurée pour un déploiement centralisé ?  
+## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>Comment savoir si mon organisation est définie pour un déploiement centralisé ?  
 
-Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent les applications Microsoft 365 pour Enterprise (et sont connectés à Office à l’aide de leurs informations d’identification de connexion de l’organisation) et disposent de boîtes aux lettres Exchange Online. Le répertoire de votre abonnement doit être dans Azure Active Directory ou être fédéré.  
+Le déploiement centralisé des applications nécessite que les utilisateurs utilisent Microsoft 365 Apps pour entreprise (et soient connectés à Office à l’aide de leurs informations d’identification de connexion organisationnelles) et qu’ils ont des boîtes aux lettres Exchange Online. Votre annuaire d’abonnement doit être dans Azure Active Directory ou fédéré.  
  
-Le déploiement centralisé est uniquement pris en charge pour les boîtes aux lettres en ligne. Il ne prend pas en charge le déploiement vers des boîtes aux lettres Exchange locales.
+Le déploiement centralisé est uniquement pris en charge pour les boîtes aux lettres en ligne. Il ne prend pas en charge le déploiement vers les boîtes aux lettres Exchange sur site.
 
-Vous pouvez utiliser le [Vérificateur de compatibilité du déploiement centralisé](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   pour déterminer si votre abonnement est éligible. 
+Vous pouvez utiliser le contrôle [de compatibilité du](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)déploiement centralisé pour déterminer si votre abonnement est   éligible. 
   
-## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Comment ciblez-vous les affectations d’utilisateurs de compléments avec un déploiement centralisé ?  
+## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Comment cibler les affectations d’utilisateurs de add-in avec un déploiement centralisé ?  
 
-Le déploiement centralisé prend en charge les affectations à des utilisateurs individuels, des groupes et tout le monde dans le client. Le déploiement centralisé peut être utilisé pour les utilisateurs dans les groupes de niveau supérieur ou les groupes sans groupes parents, mais pas pour les utilisateurs dans les groupes ou groupes imbriqués ayant des groupes parents. Le déploiement centralisé fait également partie de la plupart des groupes Azure Active Directory, y compris les groupes Office 365, les listes de distribution et les groupes de sécurité.  
+Le déploiement centralisé prend en charge les affectations à des utilisateurs individuels, des groupes et à tous les utilisateurs du client. Le déploiement centralisé peut être utilisé pour les utilisateurs de groupes de niveau supérieur ou de groupes sans groupes parents, mais pas pour les utilisateurs de groupes imbrmbrés ou de groupes qui ont des groupes parents. Le déploiement centralisé fait également partie de la plupart des groupes Azure Active Directory, y compris les groupes Office 365, les listes de distribution et les groupes de sécurité.  
 
-Il est préférable d’utiliser des affectations de groupes au lieu de l’affectation individuelle des utilisateurs pour faciliter la gestion.
+Il est préférable d’utiliser des affectations de groupes plutôt que des affectations individuelles d’utilisateurs pour faciliter la gestion.
  
-Pour plus d’informations, consultez la rubrique [attributions d’utilisateurs et de groupes](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#user-and-group-assignments).  
+Pour plus d’informations, voir [Affectations d’utilisateurs et de groupes.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#user-and-group-assignments)  
    
-## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>Combien de temps faut-il pour que les compléments s’affichent pour tous les utilisateurs ?  
+## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>Combien de temps faut-il pour que les modules s’afficheront pour tous les utilisateurs ?  
 
-Un complément peut prendre jusqu’à 24 heures pour s’afficher pour tous les utilisateurs. La mise à jour des compléments peut prendre le même temps, passer de l’activation ou de la désactivation, ou des suppressions de compléments. 
+L’exposition d’un add-in pour tous les utilisateurs peut prendre jusqu’à 24 heures. Les mises à jour des modules, les modifications apportées à l’aide de l’activer ou de la désactiver, ou les suppressions de ces derniers peuvent prendre autant de temps. 
   
-## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>En tant qu’administrateur, comment puis-je gérer l’accès des utilisateurs aux compléments pour mon organisation ?
+## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>En tant qu’administrateur, comment puis-je gérer l’accès des utilisateurs aux add-ins pour mon organisation ?
 
-Pour faciliter le déploiement des compléments pour les utilisateurs, les groupes ou l’ensemble de votre organisation, nous recommandons aux administrateurs d’utiliser un déploiement centralisé.
+Pour faciliter le déploiement des modules pour les utilisateurs, les groupes ou l’ensemble de votre organisation, nous recommandons aux administrateurs d’utiliser le déploiement centralisé.
 
-Pour plus d’informations sur la gestion de l’accès des utilisateurs, voir :
- - [Empêcher les téléchargements de compléments en désactivant l’Office Store sur tous les clients (sauf Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+Pour plus d’informations sur la gestion de l’accès des utilisateurs, voir :
+ - [Empêcher les téléchargements de modules de l’Office Store sur tous les clients (à l’exception d’Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
  - [Désignation des administrateurs et utilisateurs qui peuvent installer et gérer des compléments pour Outlook](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
-## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>Le déploiement centralisé offrira-t-il la souplesse nécessaire pour choisir la méthode de déploiement des compléments Outlook ?  
+## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>Le déploiement centralisé fournira-t-il aux administrateurs la possibilité de choisir la méthode de déploiement pour les add-ins Outlook ?  
 
-Oui. Le déploiement centralisé offre aux administrateurs la souplesse nécessaire pour choisir l’une des trois méthodes de déploiement pour les compléments Outlook lors du déploiement de compléments :
+Oui. Le déploiement centralisé offre aux administrateurs la possibilité de choisir l’une des trois méthodes de déploiement pour les add-ins Outlook lors du déploiement de ces derniers :
 
-**Fixed (valeur par défaut)**   Le complément est déployé automatiquement sur les utilisateurs affectés, et ils ne peuvent pas le supprimer.  
+**Fixe (valeur par défaut)**   Le add-in est déployé automatiquement pour les utilisateurs affectés et ils ne peuvent pas le supprimer.  
  
-**Disponible** Les utilisateurs peuvent installer le complément dans Outlook en choisissant **accueil > obtenir d’autres compléments > gérés**par l’administrateur.
+**Disponible** Les utilisateurs peuvent installer le add-in dans Outlook en choisissant **Home > Get More add-ins > admin-managed**.
  
-**Facultatif** Le complément est déployé automatiquement sur les utilisateurs attribués, mais ils peuvent choisir de le supprimer.  
+**Facultatif** Le add-in est déployé automatiquement pour les utilisateurs affectés, mais ils peuvent choisir de le supprimer.  
     
-## <a name="can-admins-update-line-of-business-lob-add-ins"></a>Les administrateurs peuvent-ils mettre à jour des compléments métier (LOB) ?  
+## <a name="can-admins-update-line-of-business-lob-add-ins"></a>Les administrateurs peuvent-ils mettre à jour des add-ins métier ?  
 
-Oui. Les administrateurs peuvent télécharger un nouveau fichier manifeste afin de prendre en charge les modifications de métadonnées pour les compléments métier déployés par l’administrateur. Le complément est mis à jour lors du prochain démarrage des applications Office. L'application web peut changer à tout moment.  
+Oui. Les administrateurs peuvent télécharger un nouveau fichier manifeste pour prendre en charge les modifications apportées aux métadonnées pour les add-ins LOB déployés par l’administrateur. Le add-in est mis à jour lors du prochain démarrage des applications Office. L'application web peut changer à tout moment.  
  
-Pour plus d’informations, reportez-vous à la rubrique [line-of-Business Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security).  
+Pour plus d’informations, voir le [add-in métier.](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security)  
 
-## <a name="can-admins-turn-off-add-ins"></a>Les administrateurs peuvent-ils désactiver les compléments ?  
+## <a name="can-admins-turn-off-add-ins"></a>Les administrateurs peuvent-ils désactiver les modules ?  
 
-Oui. Les administrateurs peuvent activer ou désactiver les compléments qu’ils déploient pour tous les utilisateurs à partir du centre d’administration Microsoft.
+Oui. Les administrateurs peuvent activer ou désactiver les modules qu’ils déploient pour tous les utilisateurs à partir du Centre d’administration Microsoft.
 
-Pour plus d’informations, consultez la rubrique [États des compléments](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states).  
+Pour plus d’informations, voir [États des modules complémentaires.](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states)  
 
-##  <a name="can-admins-delete-or-remove-add-ins"></a>Les administrateurs peuvent-ils supprimer ou supprimer des compléments ?
+##  <a name="can-admins-delete-or-remove-add-ins"></a>Les administrateurs peuvent-ils supprimer ou supprimer des modules ?
 
-Oui. Les administrateurs peuvent supprimer des compléments qu’ils ont déployés pour tous les utilisateurs à partir du centre d’administration Microsoft.
+Oui. Les administrateurs peuvent supprimer des modules qu’ils ont déployés pour tous les utilisateurs à partir du Centre d’administration Microsoft.
 
-Pour plus d’informations, consultez la rubrique [Delete an Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in). 
+Pour plus d’informations, [voir Supprimer un module complémentaire.](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in) 
   
-## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>Les administrateurs peuvent-ils déployer des compléments payants à partir de l’Office Store à l’aide d’un déploiement centralisé ? 
+## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>Les administrateurs peuvent-ils déployer des add-ins payants à partir de l’Office Store à l’aide du déploiement centralisé ? 
 
-Non. Vous ne pouvez pas déployer des compléments payants à partir de l’Office Store à l’aide du déploiement centralisé pour le moment.  
+Non. Pour l’instant, vous ne pouvez pas déployer de modules payants à partir de l’Office Store à l’aide du déploiement centralisé.  
  
-Nous vous suggérons de contacter le développeur ISV pour le complément payant afin de demander un fichier manifeste ou une URL. L’administrateur client peut ensuite déployer le complément en tant que complément métier à l’aide du déploiement centralisé.
+Nous vous suggérons d’atteindre le développeur de logiciels indépendants pour que le add-in payant demande un fichier manifeste ou une URL. L’administrateur client peut ensuite déployer le add-in en tant que add-in cœur de rôle à l’aide du déploiement centralisé.
     
-## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>Quel rôle d’administrateur dois-je utiliser pour gérer les compléments pour mon organisation ?  
+## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>Quel rôle d’administrateur ai-je besoin pour gérer les add-ins pour mon organisation ?  
 
-L’administrateur général est le rôle recommandé avec un accès complet au cycle de vie de gestion des compléments. Les autres rôles d’administrateur ont un accès limité au cycle de vie du déploiement de compléments. Si vous êtes la personne qui a acheté votre abonnement Microsoft 365 pour les entreprises, vous êtes l’administrateur général. 
+L’administrateur général est le rôle recommandé avec un accès complet au cycle de vie de gestion des applications. Les autres rôles d’administrateur ont un accès limité au cycle de vie du déploiement des applications. Si vous êtes la personne qui a acheté votre abonnement Microsoft 365 pour les entreprises, vous êtes l’administrateur global. 
  
-Votre abonnement est fourni avec un ensemble de rôles d’administrateur que vous pouvez attribuer à d’autres utilisateurs au sein de votre organisation. Chaque rôle d’administrateur est mappé à des fonctions professionnelles courantes et donne aux membres de votre organisation des autorisations pour effectuer des tâches spécifiques dans le centre d’administration 365 de Microsoft.  
+Votre abonnement est livré avec un ensemble de rôles d’administrateur que vous pouvez attribuer à d’autres utilisateurs de votre organisation. Chaque rôle d’administrateur est mapé à des fonctions professionnelles courantes et donne aux membres de votre organisation des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration Microsoft 365.  
  
-Pour plus d’informations, consultez la rubrique [assigner des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).  
+Pour plus d’informations, voir [Attribuer des rôles d’administrateur.](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide)  
 
 

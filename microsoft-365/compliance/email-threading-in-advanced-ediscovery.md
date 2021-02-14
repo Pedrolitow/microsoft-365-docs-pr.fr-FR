@@ -1,5 +1,5 @@
 ---
-title: Threading de courrier électronique dans Advanced eDiscovery
+title: Threads de messagerie dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Lors de la réalisation d’une analyse eDiscovery avancée, le Threading de messagerie analyse une conversation électronique et sépare chaque message en différentes catégories.
+description: Lors de la conduite d’une analyse advanced eDiscovery, le thread de messagerie analyse une conversation par courrier électronique et sépare chaque message en différentes catégories.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: b087bfc84175f80daaf1c0d2f1394584a70757ac
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
@@ -23,13 +23,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285560"
 ---
-# <a name="email-threading-in-advanced-ediscovery"></a>Threading de courrier électronique dans Advanced eDiscovery
+# <a name="email-threading-in-advanced-ediscovery"></a>Threads de messagerie dans Advanced eDiscovery
 
-Considérez une conversation par courrier électronique qui s’est en cours pendant un certain temps. Dans la plupart des cas, le dernier courrier électronique sur le thread inclura le contenu de tous les messages électroniques précédents ; en examinant le dernier courrier électronique, vous obtiendrez un contexte complet de la conversation qui s’est produite dans le fil de discussion. Le Threading de messagerie identifie ces messages afin que les réviseurs puissent examiner une partie des documents collectés sans perdre de contexte.
+Envisagez une conversation par courrier électronique qui se passe depuis un certain temps. Dans la plupart des cas, le dernier e-mail sur le thread inclut le contenu de tous les e-mails précédents ; La révision du dernier e-mail donne un contexte complet de la conversation qui s’est produite dans le thread. Le thread de messagerie identifie ces e-mails afin que les réviseurs peuvent passer en revue une fraction des documents collectés sans perdre de contexte.
 
-## <a name="what-does-email-threading-do"></a>Qu’est-ce que le Threading du courrier électronique ?
+## <a name="what-does-email-threading-do"></a>Que fait le thread de messagerie ?
 
-Le Threading de messagerie analyse chaque message électronique et les construit sur des messages individuels ; chaque message électronique est une chaîne de messages individuels. Ensuite, il analyse tous les messages électroniques de l’ensemble de vérification pour déterminer si un e-mail a un contenu unique ou si la chaîne est entièrement contenue dans un autre message électronique. Dans les messages électroniques finaux se répartissent en quatre catégories :
+Le thread de courrier électronique pare chaque e-mail et le déconstruit en messages individuels . chaque e-mail est une chaîne de messages individuels. Ensuite, il analyse tous les e-mails du jeu à réviser pour déterminer si un e-mail a un contenu unique ou si la chaîne est entièrement contenue dans un autre e-mail. Au final, les courriers électroniques sont répartis en quatre catégories :
 
 - **Conversation complète** : le dernier message présente un contenu unique. Le courrier inclut toutes les pièces jointes ajoutées aux autres messages dont le contenu est entièrement disponible dans ce courrier.
 
@@ -39,8 +39,8 @@ Le Threading de messagerie analyse chaque message électronique et les construit
 
 - **Aucune** : le contenu du message est inclus entièrement dans au moins un courrier marqué comme conversation complète ou conversation complète moins pièce jointe.
 
-## <a name="how-is-it-different-from-conversations-in-outlook"></a>Quelle est la différence entre les conversations dans Outlook ?
+## <a name="how-is-it-different-from-conversations-in-outlook"></a>En quoi cela est-il différent des conversations dans Outlook ?
 
-En un clin d’œil, cela ressemble aux groupements de conversation dans Outlook. Toutefois, il existe des distinctions importantes. Considérez une conversation par courrier électronique qui a été divisée en deux conversations ; par exemple, quelqu’un a répondu à un message électronique qui n’est pas le dernier de la conversation, les deux derniers messages de la conversation ont un contenu unique.
+En un coup d’œil, cela ressemble aux regroupements de conversation dans Outlook. Toutefois, il existe certaines distinctions importantes. Envisagez une conversation par courrier électronique qui a été transformée en deux conversations ; Par exemple, quelqu’un a répondu à un e-mail qui n’est pas le dernier de la conversation, de sorte que les deux derniers e-mails de la conversation ont tous deux un contenu unique.
 
-Outlook regroupera les messages électroniques en une seule conversation ; la lecture du dernier courrier électronique ne signifie pas qu’il manque le contexte de l’avant-dernier e-mail, qui contient également du contenu unique. Étant donné que le Threading de messagerie analyse chaque courrier électronique dans des composants individuels et les compare, le Threading de messagerie marque les deux derniers courriers électroniques en s’assurant que vous ne manquez pas de contexte tant que vous lisez tous les messages électroniques marqués comme inclus.
+Outlook grouperait toujours les e-mails dans une seule conversation . Lire uniquement le dernier e-mail signifierait qu’il manque le contexte de l’avant-dernier e-mail, qui contient également un contenu unique. Étant donné que le thread de courrier électronique pare chaque message électronique en composants individuels et les compare, le thread de messagerie marque les deux derniers messages comme étant inclus, ce qui garantit que vous ne manquez aucun contexte tant que vous lisez tous les messages marqués comme étant inclus.

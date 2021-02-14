@@ -1,5 +1,5 @@
 ---
-title: Définition de vos offres de service dans bookings
+title: Définir vos offres de services dans Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
-description: Instructions pour la saisie des informations sur les offres de service, notamment le nom du service, la description, l’emplacement, la durée et les tarifs. Vous pouvez également marquer les employés qui sont qualifiés pour fournir le service.
+description: Instructions pour entrer des informations sur les offres de services, notamment le nom du service, la description, l’emplacement, la durée et la tarification. Vous pouvez également marquer les employés qualifiés pour fournir le service.
 ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
 ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
@@ -16,120 +16,120 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 09/18/2020
 ms.locfileid: "47962536"
 ---
-# <a name="define-your-service-offerings-in-bookings"></a>Définition de vos offres de service dans bookings
+# <a name="define-your-service-offerings-in-bookings"></a>Définir vos offres de services dans Bookings
 
-Lorsque vous définissez vos offres de service dans Microsoft bookings, vous définissez, un nom de service, une description, un emplacement (choisissez si vous souhaitez répondre en personne ou avoir une réunion en ligne), la durée, les rappels par défaut pour les clients et le personnel, les notes internes sur le service et les tarifs. Vous pouvez également marquer les employés qui sont qualifiés pour fournir le service. Ensuite, lorsque les clients accèdent à votre site Web d’entreprise pour réserver un rendez-vous, ils peuvent voir exactement quels types de rendez-vous sont disponibles, choisir la personne et le coût de leur service.
+Lorsque vous définissez vos offres de services dans Microsoft Bookings, vous définissez un nom de service, une description, un emplacement (indiquez si vous souhaitez vous réunir en personne ou avoir une réunion en ligne), la durée, les rappels par défaut aux clients et au personnel, les notes internes sur le service et les tarifs. Vous pouvez également marquer les employés qualifiés pour fournir le service. Ensuite, lorsque les clients viennent sur votre site web d’entreprise pour réserver un rendez-vous, ils peuvent voir exactement quels types de rendez-vous sont disponibles, choisir la personne à qui ils souhaitent fournir le service et le coût de leur service.
 
-Vous pouvez également ajouter des URL et des informations personnalisées à la confirmation et aux rappels que vous envoyez lorsque quelqu’un livre un service via votre page de réservation.
+Vous pouvez également ajouter des URL et des informations personnalisées à la confirmation par courrier électronique et aux rappels que vous envoyez lorsque quelqu’un livre un service via votre page de réservation.
 
 ## <a name="create-the-service-details"></a>Créer les détails du service
 
-1. Accédez à la [page gérer les services](https://outlook.office.com/bookings/services) et sélectionnez **Ajouter un service**.
+1. Go to the [Manage services page](https://outlook.office.com/bookings/services) and select Add a **service**.
 
-2. **Nom du service**: entrez le nom de votre service. Il s’agit du nom qui apparaîtra dans le menu déroulant de la page calendrier. Ce nom s’affiche également quand quelqu’un ajoute manuellement un rendez-vous sur la page de calendrier et s’affiche sous la forme d’une vignette sur la page libre-service.
+2. **Nom du** service : entrez le nom de votre service. Il s’agit du nom qui apparaîtra dans le menu déroulant de la page Calendrier. Ce nom s’affiche également lorsque quelqu’un ajoute manuellement un rendez-vous sur la page Calendrier et qu’il apparaît sous la marque d’une vignette sur la page libre-service.
 
-3. **Description**: la description que vous entrez est celle qui apparaît lorsqu’un utilisateur clique sur l’icône d’informations dans la page libre-service.
+3. **Description**: la description que vous entrez s’affiche lorsqu’un utilisateur clique sur l’icône d’informations sur la page libre-service.
 
-4. **Emplacement par défaut**: cet emplacement sera affiché sur les e-mails de confirmation et de rappel pour le personnel et les clients, et il sera affiché sur l’événement de calendrier créé pour la réservation.
+4. **Emplacement par** défaut : cet emplacement s’affiche sur les messages de confirmation et de rappel pour le personnel et les clients, et il s’affiche sur l’événement de calendrier créé pour la réservation.
 
-5. **Ajouter une réunion en ligne**: ce paramètre active ou désactive les réunions en ligne pour chaque rendez-vous, par le biais de teams ou de Skype, en fonction de celui que vous configurez comme client par défaut pour le membre du personnel.
+5. **Ajouter** une réunion en ligne : ce paramètre active ou désactive les réunions en ligne pour chaque rendez-vous, via Teams ou Skype, en fonction de celui que vous configurez comme client par défaut pour le membre du personnel.
 
-    - Activé
+    - Activé :
 
-        - Un lien vers une réunion teams ou Skype, unique à la réservation, est ajouté à l’événement de calendrier dans les calendriers des utilisateurs et des clients, ainsi que les informations de connexion.
-        - Le lien permettant de participer à la réunion est ajouté à tous les e-mails de confirmation et de rappel, comme illustré dans l’exemple suivant :
+        - Un lien vers une réunion Teams ou Skype, propre à la réservation, sera ajouté à l’événement de calendrier sur les calendriers du personnel et des clients, ainsi que des informations de connexion.
+        - Le lien pour participer à la réunion est ajouté à tous les messages de confirmation et de rappel, comme illustré dans l’exemple suivant :
 
-        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Exemple de lien pour participer à une réunion teams dans bookings":::
+        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Exemple de lien pour rejoindre une réunion Teams dans Bookings":::
 
         > [!NOTE]
-        > Les réunions de teams peuvent être jointes via l’application mobile Teams, l’application de bureau Teams, dans un navigateur Web ou via le téléphone. Nous vous recommandons vivement d’activer teams comme service de réunion en ligne par défaut pour votre client, afin que la meilleure expérience en matière de rendez-vous virtuels.
+        > Les réunions Teams peuvent être jointes via l’application mobile Teams, l’application de bureau Teams, dans un navigateur Web ou via le numéro de téléphone. Nous vous recommandons vivement d’activer Teams comme service de réunion en ligne par défaut pour votre client, pour une expérience de réservation de rendez-vous virtuels de qualité.
 
-    - Activation
-        - Les rendez-vous ne contiennent pas d’option de réunion et tous les champs liés à la réunion qui apparaissent lorsque l’option **Ajouter une réunion en ligne** est activée ne s’affichent pas.
+    - Désactivé :
+        - Les rendez-vous ne contiennent pas d’option de réunion  et tous les champs relatifs à la réunion qui apparaissent lorsque l’option Ajouter une réunion en ligne est activée ne s’affichent pas.
 
-6. **Durée par défaut : durée**pendant laquelle toutes les réunions seront réservées. Le temps est bloqué à partir de l’heure de début, qui est sélectionnée lors de la réservation. L’heure de rendez-vous complète sera bloquée sur les calendriers du personnel.
+6. **Durée par** défaut : il s’agit de la durée de réservation de toutes les réunions. L’heure est bloquée à partir de l’heure de début, qui est sélectionnée pendant la réservation. L’heure de rendez-vous complète sera bloquée sur les calendriers du personnel.
 
-7. **Temps de la mémoire tampon que votre client ne peut pas livrer**: l’activation de ce paramètre permet d’ajouter du temps supplémentaire au calendrier de l’équipe à chaque fois qu’un rendez-vous est enregistré.
+7. Temps tampon que votre client ne peut pas réserver : l’activation de ce paramètre permet **d’ajouter** du temps supplémentaire au calendrier du personnel chaque fois qu’un rendez-vous est réservé.
 
-    Le temps sera bloqué sur le calendrier du personnel et influant sur les informations de disponibilité. Cela signifie que si un rendez-vous se termine à 3:00 h et que 10 minutes de temps de la mémoire tampon ont été ajoutées à la fin de la réunion, le calendrier du personnel s’affichera comme étant occupé et non réservables jusqu’à 3:10PM. Cela peut être utile si votre personnel a besoin de temps avant la réunion pour se préparer, comme un médecin examinant le graphique d’un patient ou un conseiller financier qui prépare des informations de compte pertinentes. Elle peut également être utile après une réunion, par exemple lorsqu’une personne a besoin de temps pour se déplacer vers un autre emplacement.
+    L’heure sera bloquée sur le calendrier du personnel et aura un impact sur les informations de libre/occupé. Cela signifie que si un rendez-vous se termine à 15 h 00 et que 10 minutes de temps tampon ont été ajoutées à la fin de la réunion, le calendrier du personnel s’affiche comme occupé et non réservé jusqu’à 15 h 10. Cela peut être utile si votre personnel a besoin de temps avant une réunion pour se préparer, tel qu’un médecin qui examine le graphique d’un patient ou un conseiller financier qui prépare les informations de compte pertinentes. Il peut également être utile après une réunion, par exemple lorsque quelqu’un a besoin de temps pour se déplacer vers un autre emplacement.
 
-8. **Autoriser le client à gérer sa réservation**: ce paramètre détermine si le client ou notthe peut modifier ou annuler sa réservation, à condition qu’il ait été enregistré dans l’onglet Calendrier de l’application Web bookings.
+8. **Laisser le** client gérer sa réservation : ce paramètre détermine si le client peut modifier ou annuler sa réservation, à condition qu’elle a été réservée via l’onglet Calendrier de l’application Web Bookings.
 
-    - Activé
+    - Activé :
 
-        Le bouton **gérer la réservation** apparaît dans le message électronique de confirmation du client. Lorsque ce bouton est sélectionné par le client, trois options s’affichent :
-        - **Replanifier** La sélection de cette option amène l’utilisateur à une page libre-service spécifique à un service, dans laquelle il peut sélectionner une nouvelle heure et/ou date pour le même service et le même membre du personnel de la réservation d’origine. Notez que même si le membre de l’équipe d’origine est lié à la réservation replanifiée par défaut, l’utilisateur peut également modifier le membre du personnel.
-        - **Annuler la réservation** Cette opération annule la réservation et la supprime du calendrier de l’équipe.
-        - **Nouvelle réservation** Cette option permet d’afficher l’utilisateur sur la page libre-service avec tous les services et le personnel mentionnés, pour la planification d’une nouvelle réservation.
+        Le **bouton Gérer la** réservation apparaît dans l’e-mail de confirmation du client. Lorsque ce bouton est sélectionné par le client, trois options s’affichent :
+        - **Reprogrammer** La sélection de cette option amène l’utilisateur vers une page Self-Service spécifique au service, où il peut sélectionner une nouvelle heure et/ou une nouvelle date pour le même service et le même membre du personnel à partir de la réservation d’origine. Notez que même si le membre du personnel d’origine est joint par défaut à la réservation reprogrammée, l’utilisateur a également la possibilité de le modifier.
+        - **Annuler la réservation** Cela annule la réservation et la supprime du calendrier du personnel.
+        - **Nouvelle réservation** Cette option permet à l’utilisateur d'Self-Service page avec tous les services et le personnel répertoriés, pour planifier une nouvelle réservation.
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Bouton gérer les réservations dans bookings":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Bouton Gérer les réservations dans Bookings":::
 
-        Nous vous recommandons de laisser ce paramètre activé uniquement si vous êtes à l’aise avec les clients qui accèdent à la page libre-service.
+        Nous vous recommandons de laisser ce paramètre activé uniquement si vous êtes à l’aise avec les clients qui accèdent à Self-Service page.
 
-    - Activation
+    - Désactivé :
 
-        L’utilisateur n’a pas la possibilité de Replanifier ou d’annuler sa réservation lorsqu’il livre l’onglet Calendrier de l’application Web bookings. Toutefois, lorsque vous reportez la page libre-service, les clients disposent toujours du bouton **gérer la réservation** et de toutes ses options, même si ce paramètre est désactivé.
+        L’utilisateur n’a pas la possibilité de reprogrammer ou d’annuler sa réservation lorsqu’il se réserve sous l’onglet Calendrier de l’application Web Bookings. Toutefois, lors de la réservation via la page  Self-Service, les clients ont toujours le bouton Gérer la réservation et toutes ses options, même lorsque ce paramètre est désactivé.
 
-        Nous vous recommandons de désactiver ce paramètre si vous souhaitez limiter l’accès à la page libre-service. De plus, nous vous suggérons d’ajouter du texte à vos courriers de confirmation et de rappel qui indiquent à vos clients comment effectuer des modifications à leur réservation par d’autres moyens, par exemple en appelant le bureau ou en utilisant l’assistance technique.
+        Nous vous recommandons de désactiver ce paramètre si vous souhaitez limiter l’accès à Self-Service page. En outre, nous vous suggérons d’ajouter du texte à vos e-mails de confirmation et de rappel qui indique à vos clients comment apporter des modifications à leur réservation par d’autres moyens, par exemple en appelant le bureau ou en appelant le service d’aide.
 
-9. **Nombre maximal d’participants par événement** Ce paramètre vous permet de créer des services qui nécessitent la possibilité pour plusieurs personnes de réserver le même temps de rendez-vous et le même personnel (par exemple, une classe de pertinence). Le créneau horaire de rendez-vous pour le service, le personnel et le temps de rendez-vous sélectionné sera disponible jusqu’à ce que le nombre maximal de participants, spécifié par vous, ait été atteint. La capacité et les participants actuels des rendez-vous peuvent être affichés dans l’onglet Calendrier de l’application Web bookings.
+9. **Nombre maximal de participants par événement** Ce paramètre vous permet de créer des services qui nécessitent la possibilité pour plusieurs personnes de réserver la même heure de rendez-vous et le même personnel (par exemple, un cours de mise en forme). Le créneau horaire du rendez-vous pour le service, le personnel et l’heure sélectionnés pourra être réservé jusqu’à ce que le nombre maximal de participants, spécifié par vous, soit atteint. La capacité actuelle des rendez-vous et les participants peuvent être vus dans l’onglet Calendrier de l’application Web Bookings.
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Exemple de définition des participants maximaux dans les réservations":::
+    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Exemple de définition du nombre maximal de participants dans Bookings":::
 
-10. **Prix par défaut**  Il s’agit du prix qui s’affiche sur la page libre-service. Si le champ **prix non défini** est sélectionné, aucun prix ou référence à un coût ou une tarification n’apparaît.
+10. **Prix par défaut**  Il s’agit du prix qui s’affiche sur Self-Service page. Si **le prix non définie** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaîtra.
 
-11. **Remarques** Ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que sur l’événement qui s’affiche sous l’onglet Calendrier de l’application Web bookings.
+11. **Remarques** Ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que dans l’événement qui apparaît sous l’onglet Calendrier dans l’application web Bookings.
 
-12. **Champs personnalisés** Cette section permet d’ajouter ou de supprimer des questions si le client doit répondre à une demande afin d’effectuer la réservation.
+12. **Champs personnalisés** Cette section permet d’ajouter ou de supprimer des questions si le client doit y répondre pour pouvoir le faire.
 
-    - Le courrier, le numéro de téléphone, l’adresse et les notes du client sont des champs non amovibles, mais vous pouvez les rendre facultatifs en désélectionnant l’option **obligatoire** en regard de chaque champ.
+    - Le courrier électronique, le numéro de téléphone, l’adresse et les notes du client sont des champs non amovibles, mais vous pouvez les rendre facultatifs en désélectionner **Obligatoire** à côté de chaque champ.
 
-    - Vous pouvez ajouter une question à choix multiple ou réponse de texte en sélectionnant **Ajouter une question**.
+    - Vous pouvez ajouter une question à choix multiple ou à une réponse texte en sélectionnant **Ajouter une question.**
 
-        Les champs personnalisés peuvent être utiles lors de la collecte des informations nécessaires à chaque fois que le rendez-vous spécifique est enregistré. Il s’agit par exemple du fournisseur d’assurance avant une visite de Clinic, du type de prêt pour les consultations de prêts, de la majeureté de l’étude pour un conseiller universitaire ou de l’ID du postulant pour les entretiens candidats.
+        Les champs personnalisés peuvent être utiles lors de la collecte d’informations nécessaires chaque fois que le rendez-vous spécifique est réservé. Il peut s’agir, par exemple, d’un fournisseur d’assurance avant une visite à Titres, d’un type de prêt pour les demandes de prêt, d’études principales pour les conseils scolaires ou d’un ID de candidat à un entretien.
 
-13. **Rappels et confirmations** Les deux types de courriers électroniques sont envoyés aux clients, aux membres du personnel ou aux deux, à une période spécifiée avant le rendez-vous. Plusieurs messages peuvent être créés pour chaque rendez-vous, en fonction de vos préférences.
+13. **Rappels et confirmations** Les deux types d’e-mails sont envoyés aux clients, aux membres du personnel ou aux deux, à une période spécifiée avant le rendez-vous. Plusieurs messages peuvent être créés pour chaque rendez-vous, selon vos préférences.
 
-    - Les e-mails de confirmation et de rappel par défaut incluent des informations de base sur le rendez-vous, telles que le nom du client/client, le nom du membre du personnel, le service ou le rendez-vous enregistré et l’heure du rendez-vous. Pour les réunions en ligne, un lien vers une jointure sera également inclus. La possibilité de gérer la réservation peut également être incluse, si ce paramètre est activé (comme décrit ci-dessus à l’étape 8).
+    - Les messages de confirmation et de rappel par défaut incluent des informations de base sur le rendez-vous, telles que le nom du client/client, le nom du membre du personnel, le service ou le rendez-vous réservé et l’heure du rendez-vous. Pour les réunions en ligne, un lien pour participer sera également inclus. La possibilité de gérer la réservation peut également être incluse si ce paramètre est activé (comme décrit ci-dessus à l’étape 8).
 
-        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Courrier électronique de confirmation à partir de livres":::
+        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Un e-mail de confirmation de Bookings":::
 
-    - Si vous le souhaitez, vous pouvez inclure le texte supplémentaire que vous souhaitez ici, par exemple des informations sur la replanification ou les clients qui doivent apporter le rendez-vous. Voici un exemple de texte personnalisé ajouté au message électronique de confirmation d’origine, affiché dans le champ de **confirmation informations supplémentaires pour le courrier** :
+    - Si vous le souhaitez, vous pouvez inclure tout texte supplémentaire que vous souhaitez ici, par exemple des informations sur la planification ou ce que les clients doivent apporter pour le rendez-vous. Voici un exemple de texte personnalisé ajouté à l’e-mail de confirmation d’origine, visible dans le champ Informations supplémentaires pour la **confirmation du** courrier électronique :
 
-        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Informations supplémentaires dans un message électronique bookings":::
+        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Informations supplémentaires dans un e-mail Bookings":::
 
-14. **Activer les notifications par SMS pour votre client** Si cette option est sélectionnée, les messages SMS sont envoyés au client, mais uniquement s’ils s’abonnent.
+14. **Activer les notifications par SMS pour votre client** S’il est sélectionné, les messages SMS sont envoyés au client, mais uniquement s’il l’a choisi.
 
-    - Zone opt-in de la réservation manuelle et de la page libre-service :
+    - Zone d’inscription sur la page de réservation Self-Service manuelle :
 
-        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Zone d’abonnement dans bookings":::
+        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Zone d’inscription dans Bookings":::
 
-    - Les notifications par SMS se présenteront comme suit (Notez que les notifications SMS sont actuellement disponibles uniquement en Amérique du Nord) :
+    - Les notifications par SMS ressembleront à ce qui suit (notez que les notifications par SMS sont actuellement uniquement disponibles en Amérique du Nord) :
 
-        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Une notification textuelle à partir de livres":::
+        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Une notification texte de Bookings":::
 
-15. **Options de publication** Indiquez si ce service doit apparaître sous la forme réservables dans la page libre-service ou pour que le service réservables uniquement sous l’onglet Calendrier au sein de l’application Web bookings.
+15. **Options de publication** Choisissez si ce service doit être réservé sur la page Self-Service ou s’il doit être réservé uniquement sous l’onglet Calendrier de l’application Web Bookings.
 
-16. **Stratégie de planification** Ce paramètre détermine la manière dont les heures de rendez-vous sont affichées, ainsi que la période pendant laquelle les réservations peuvent être effectuées ou annulées.
+16. **Stratégie de planification** Ce paramètre détermine la façon dont les heures de rendez-vous sont vues et la période pendant laquelle les réservations peuvent être réalisées ou annulées.
 
-17. **Notifications par courrier électronique** Définit quand les courriers électroniques sont envoyés au personnel de l’organisation et aux clients ou clients.
+17. **Notifications par courrier électronique** Définit le moment où les e-mails sont envoyés au personnel de l’organisation et aux clients ou clients.
 
-18. **Personnel** Cette case à cocher permet aux clients ou aux clients de choisir un membre du personnel spécifique pour leur rendez-vous.
+18. **Personnel** La sélection de cette case à cocher permet aux clients ou aux clients de choisir un membre du personnel spécifique pour leur rendez-vous.
 
-    - Activé
+    - Activé :
 
-        Les clients peuvent choisir parmi tous les collaborateurs affectés au rendez-vous lors de la réservation sur la page libre-service. La sélection de l’option **tout le monde** permettra aux réservations de choisir un membre du personnel disponible au hasard pour l’attribuer au rendez-vous.
+        Les clients peuvent choisir parmi tous les membres du personnel affectés au rendez-vous lors de la réservation sur Self-Service page. Si vous sélectionnez l’option **Tout** le monde, Bookings choisira de manière aléatoire un membre du personnel disponible à affecter au rendez-vous.
 
-    - Activation
+    - Désactivé :
 
-        Les clients qui effectuent une réservation via la page libre-service peuvent sélectionner un service et une heure et une date. Le personnel disponible sera enregistré au hasard. Notez que certains membres du personnel peuvent toujours être sélectionnés lors de la réservation via l’onglet Calendrier de l’application Web bookings.
+        Les clients qui effectuent une réservation via la page Self-Service peuvent sélectionner un service, ainsi qu’une heure et une date. Le personnel disponible sera réservé au hasard. Notez que des membres du personnel spécifiques peuvent toujours être sélectionnés lors de la réservation via l’onglet Calendrier dans l’application Web Bookings.
 
-19. **Disponibilité** Les options suivantes déterminent le moment où le service peut être enregistré :
+19. **Disponibilité** Les options suivantes déterminent quand le service peut être réservé :
 
-    - **Réservables lorsque le personnel est libre** Le service maintient la disponibilité en fonction du moment où le personnel est disponible pendant les heures d’ouverture, sans restrictions de temps supplémentaires.
+    - **Réservation possible lorsque le personnel est gratuit** Le service maintient la disponibilité en fonction du moment où le personnel est disponible pendant les heures d’ouverture, sans restrictions de temps supplémentaires.
 
-    - **Heures personnalisées (toutes les semaines)** Le service dispose d’une couche supplémentaire de disponibilité qui peut être encore plus restreinte (en plus des heures d’ouverture ou des heures de travail du personnel). Utilisez cette option lorsque votre service peut uniquement être fourni ou effectué à un moment donné.
+    - **Heures personnalisées (toutes les semaines périodiques)** Le service dispose d’une couche de disponibilité supplémentaire qui peut être davantage restreinte (en plus de limiter les heures d’ouverture ou les heures de travail). Utilisez cette option lorsque votre service ne peut être fourni ou exécuté qu’à un moment précis.
 
-    - **Définir une disponibilité différente pour une plage de dates** Ce paramètre influe sur la disponibilité à un moment spécifique, au lieu d’une base récurrente. Par exemple, il peut être utilisé lorsqu’un ordinateur requis pour le service est temporairement en service et indisponible, ou lorsqu’une organisation est fermée pendant un congé.
+    - **Définir une disponibilité différente pour une plage de dates** Ce paramètre a une incidence sur la disponibilité à un moment donné, et non sur une base périodique. Par exemple, cela peut être utilisé lorsqu’un ordinateur nécessaire au service est temporairement mis en service et indisponible, ou lorsqu’une organisation est fermée pour un congé.
 
-20. **Affecter du personnel** Sélectionnez le personnel (à condition que vous ayez ajouté des membres du personnel à l’onglet personnel) qui sera réservables pour ce service spécifique. La sélection d’aucun personnel individuel entraîne l’affectation de tous les membres du personnel au service.
+20. **Affecter du personnel** Sélectionnez le personnel (à condition que vous avez ajouté des membres du personnel à l’onglet Personnel) qui pourra être réservé pour ce service spécifique. Si vous ne sélectionnez aucun personnel individuel, tous les membres du personnel seront affectés au service.

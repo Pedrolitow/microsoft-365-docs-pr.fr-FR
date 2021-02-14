@@ -12,7 +12,7 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Découvrez comment configurer la recherche dans un environnement multi-géo. Seuls certains clients, tels que OneDrive entreprise, peuvent renvoyer des résultats dans un environnement multi-géo.
+description: Découvrez comment configurer la recherche dans un environnement multigéogé. Seuls certains clients, tels que OneDrive Entreprise, peuvent renvoyer des résultats dans un environnement multigéogé.
 ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
 ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
@@ -84,12 +84,12 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La recherche multigéographique ne prend pas en charge la création dynamique de compartiments pour les affinements numériques.</td>
-<td align="left">Utilisez le <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « discrétisation »</a> pour les affinements numériques.</td>
+<td align="left">Utilisez le <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize » pour</a> les affinements numériques.</td>
 </tr>
 <tr class="even">
 <td align="left">ID de document</td>
 <td align="left">Si vous développez une application basée sur la recherche qui dépend des ID de document, notez que les ID de document d’un environnement multigéographique ne sont pas uniques parmi les emplacements géographiques, mais le sont par emplacement géographique.</td>
-<td align="left">Nous avons ajouté une colonne qui identifie l’emplacement géographique. Utilisez cette colonne pour atteindre l’unicité. Cette colonne est nommée « GeoLocationSource ».</td>
+<td align="left">Nous avons ajouté une colonne qui identifie l’emplacement géographique. Utilisez cette colonne pour atteindre l’unicité. Cette colonne est nommée « GeoLocationSource ».</td>
 </tr>
 <tr class="odd">
 <td align="left">Nombre de résultats</td>
@@ -131,7 +131,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué ne sont p
 
 Tous les clients de recherche utilisent les API REST de recherche SharePoint existantes pour interagir avec les index de recherche.
 
-![Diagramme illustrant la façon dont les API REST de recherche SharePoint interagissent avec les index de recherche](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagramme montrant comment les API REST de recherche SharePoint interagissent avec les index de recherche](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un client de recherche appelle le point de terminaison REST de recherche avec la propriété de requête EnableMultiGeoSearch= true.
 2. La requête est envoyée à tous les emplacements géographiques dans le client.
@@ -151,11 +151,11 @@ Chaque centre de recherche possède plusieurs secteurs verticaux et vous devez c
 
 3. Sélectionnez le secteur vertical à configurer, cliquez sur l’icône d’engrenage **Paramètres** située en haut à droite, puis cliquez sur **Modifier la page**. La page des résultats de la recherche s’ouvre en mode Édition.
 
-   ![Modifier la sélection de la page dans les paramètres](../media/configure-search-for-multi-geo-image2.png)
+   ![Modifier la sélection de page dans Paramètres](../media/configure-search-for-multi-geo-image2.png)
 
 4. Dans le composant WebPart de résultats de recherche, déplacez le pointeur vers le coin supérieur droit et cliquez sur la flèche, puis sur **Modifier le composant WebPart** dans le menu. Le volet des outils du composant WebPart des résultats de recherche s’ouvre sous le ruban en haut à droite de la page.
 
-   ![Modifier la sélection de composant WebPart](../media/configure-search-for-multi-geo-image3.png)
+   ![Modifier la sélection de la partie Web](../media/configure-search-for-multi-geo-image3.png)
 
 5. Dans le volet des outils du composant WebPart, dans la section **Paramètres**, sous **Paramètres de contrôle des résultats**, sélectionnez **Afficher les résultats multigéographiques** pour que le composant WebPart Résultats de la recherche affiche les résultats de tous les emplacements géographiques.
 
@@ -172,7 +172,7 @@ Les applications de recherche personnalisée obtiennent les résultats de l’en
 
 ### <a name="requirement"></a>Conditions requises
 
-Pour chaque emplacement géographique, vous devez vous assurer que tous les utilisateurs de l’organisation ont reçu l’autorisation de **lecture** du site web racine (par exemple contoso**APAC**.sharepoint.com/ et contoso**EU**.sharepoint.com/). [En savoir plus sur les autorisations](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Pour chaque emplacement géographique, vous devez vous assurer que tous les utilisateurs de l’organisation ont reçu l’autorisation de **lecture** du site web racine (par exemple contoso **APAC**.sharepoint.com/ et contoso **EU**.sharepoint.com/). [En savoir plus sur les autorisations](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Paramètres de requête
 
@@ -253,11 +253,11 @@ Avec une demande GET, spécifiez les paramètres de la requête dans l’URL. Av
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Exemple de demande GET étendue à **tous** les emplacements géographiques
 
-\<tenant\> / \_ API https:///Search/Query ? QueryText = 'SharePoint' &Properties = 'EnableMultiGeoSearch : true' &TypeClient = 'My \_ client \_ ID'
+https:// \<tenant\> / \_ api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my \_ client \_ id'
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Exemple de demande GET à distribuer à **certains** emplacements géographiques
 
-\<tenant\> / \_ API https:///Search/Query ? QueryText = 'site' &TypeClient = 'my_client_id' &Properties = 'EnableMultiGeoSearch : true, MultiGeoSearchConfiguration : [{DataLocation \\ : "Nam" \\ , Endpoint \\ : "https \\ ://contosoNAM.SharePoint.com" \\ , SourceId \\ : "B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ , {DataLocation \\ : "Can" \\ , Endpoint \\ : "https \\ ://contosoCAN.SharePoint-DF.com"}] "
+https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation \\ :"NAM » \\ ,Endpoint \\ :"https \\ ://contosoNAM.sharepoint.com » \\ ,SourceId \\ :"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ ,{DataLocation \\ :"CAN » \\ ,Endpoint \\ :"https \\ ://contosoCAN.sharepoint-df.com"}]'
 
 > [!NOTE]
 > Les symboles virgule et deux-points de la liste des emplacements géographiques pour la propriété MultiGeoSearchConfiguration sont précédés par le caractère **barre oblique inverse**, car les demandes GET utilisent des syboles deux-points pour séparer les propriétés, et des virgules pour séparer les arguments des propriétés. Sans barre oblique inverse comme caractère d’échappement, la propriété MultiGeoSearchConfiguration est interprétée de façon erronée.
