@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour la région spéciale de Hong Kong
+title: Informations de support pour la R.A.S. de Hong Kong
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 70e6c1b69c0a5575ea171906e450fd8c8d2e629e
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,7 +20,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48642178"
 ---
-# <a name="contact-support-for-hong-kong-sar"></a>Contacter le support technique de Hong Kong SAR
+# <a name="contact-support-for-hong-kong-sar"></a>Contacter le support pour la R.A.S. de Hong Kong
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
@@ -30,18 +30,18 @@ ms.locfileid: "48642178"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Cantonese : Mon-Fri 9 AM-6 PM
+Dimanche : Mon-Fri 9 h à 18 h
 
-Mandarin : Mon-Fri 9 AM-6 PM
+Mandarin : Mon-Fri 9 h à 18 h
 
-Anglais : Mon-Fri 9 AM-6 PM
+Anglais : Mon-Fri 9h00 à 18h00
 
 ### <a name="technical-support"></a>Support technique :
 
-Cantonese : Mon-Fri 9 AM-6 PM
+Dimanche : Mon-Fri 9 h à 18 h
 
-Mandarin : Mon-Fri 9 AM-6 PM
+Mandarin : Mon-Fri 9 h à 18 h
 
 Anglais : 24h/24, 7j/7
 
-Frais d’appels locaux appliqués
+Frais d’appel local applicables

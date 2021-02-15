@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour l’île Norfolk
+title: Informations de support pour l’île De Island
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 8daff97110ba9c13dd56a4da8d373340113a7924
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,20 +20,20 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640582"
 ---
-# <a name="contact-support-for-norfolk-island"></a>Contacter le support pour l’île Norfolk
+# <a name="contact-support-for-norfolk-island"></a>Contacter le support technique de l’île De Island
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
-+ 1 312 843 5148
++1 312 843 5148
 
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Anglais : Mon-Fri 12 h-8 PM
+Anglais : Mon-Fri 12:00-20:00
 
 ### <a name="technical-support"></a>Support technique :
 
 Anglais : 24h/24, 7j/7
 
-Frais d’appels internationaux appliqués
+Les frais d’appels internationaux s’appliquent

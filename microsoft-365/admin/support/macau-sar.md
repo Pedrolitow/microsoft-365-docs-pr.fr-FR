@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour Macao SAR
+title: Informations de support pour la R.A.S. de Macau
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 0c39ba1d08bd40a950b4a323874e2a64c4017633
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,7 +20,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48641410"
 ---
-# <a name="contact-support-for-macau-sar"></a>Contacter le support pour la RAS de Macao
+# <a name="contact-support-for-macau-sar"></a>Contacter le support technique pour la R.A.S. de Macau
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
@@ -34,16 +34,16 @@ Après la numérotation, entrez
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Cantonese : Mon-Fri 9 AM-5 PM
+Banques : Mon-Fri 9 h à 17 h
 
-Mandarin : Mon-Fri 9 AM-5 PM
+Mandarin : Mon-Fri 9 h à 17 h
 
-Anglais : Mon-Fri 9 AM-5 PM
+Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Cantonese : Mon-Fri 9 AM-5 PM
+Banques : Mon-Fri 9 h à 17 h
 
-Mandarin : Mon-Fri 9 AM-5 PM
+Mandarin : Mon-Fri 9 h à 17 h
 
 Anglais : 24h/24, 7j/7

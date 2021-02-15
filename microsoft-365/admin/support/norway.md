@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: d69c277418c8944d2020eedf0e5e18230c12a25b
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,7 +20,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640558"
 ---
-# <a name="contact-support-for-norway"></a>Contacter le support pour la Norvège
+# <a name="contact-support-for-norway"></a>Contacter le support technique pour la Norvège
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
@@ -30,12 +30,12 @@ ms.locfileid: "48640558"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Anglais : Mon-Fri 9 AM-5 PM
+Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
 Anglais : 24h/24, 7j/7
 
-Autre numéro de téléphone : 22 31 07 48
+Autre numéro de téléphone : 22 31 07 48
 
-Frais d’appels locaux appliqués
+Frais d’appel local applicables

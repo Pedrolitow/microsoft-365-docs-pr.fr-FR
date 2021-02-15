@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 63e5861384f30515fdeef9b63bf4040213e23b34
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,7 +20,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48641494"
 ---
-# <a name="contact-support-for-luxembourg"></a>Contacter le support pour le Luxembourg
+# <a name="contact-support-for-luxembourg"></a>Contacter le support technique pour le Luxembourg
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
@@ -30,20 +30,20 @@ ms.locfileid: "48641494"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 9 AM-5 PM
+Français : Lun.-ven. 9H-17h
 
-Allemand : Mon-Fri 9 AM-5 PM
+Allemand : Mon-Fri 9 h à 17 h
 
-Anglais : Mon-Fri 9 AM-5 PM
+Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Français : Mon-Fri 8 AM-9 PM
+Français : Lun.-ven. 8H-19h
 
-Allemand : Mon-Fri 8 AM-9 PM
+Allemand : Mon-Fri 8h00 à 21h00
 
 Anglais : 24h/24, 7j/7
 
-Autre numéro de téléphone : 24 87 15 10
+Autre numéro de téléphone : 24 87 15 10
 
-Frais d’appels locaux appliqués
+Frais d’appel local applicables

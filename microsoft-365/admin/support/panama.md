@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour Panama
+title: Informations de support pour le Panama
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: f011f3ac514367500834b057e85592b1d26c5c3a
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,22 +20,22 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640390"
 ---
-# <a name="contact-support-for-panama"></a>Contacter le support pour Panama
+# <a name="contact-support-for-panama"></a>Contacter le support pour le Panama
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 00800 051 0398
 
-Sélectionnez l’option 4
+Sélectionner l’option 4
 
-Entrez le code 7007
+Entrer le code 7007
 
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Espagnol : Mon-Fri 9 AM-5 PM
+Espagnol : Mon-Fri 9 h à 17 h
 
 ### <a name="technical-support"></a>Support technique :
 
-Espagnol : 24 heures sur 24, 7 jours sur 7
+Espagnol : 24 heures sur 24, 7 jours sur 7

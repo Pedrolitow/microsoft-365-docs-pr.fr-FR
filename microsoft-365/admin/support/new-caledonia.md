@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour la Nouvelle-Calédonie
+title: Informations de support pour la Nouvelle-Calédienne
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 493e66aed2f3b572f198ff17c75c3587d76e8604
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,24 +20,24 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640774"
 ---
-# <a name="contact-support-for-new-caledonia"></a>Contacter le support pour la Nouvelle-Calédonie
+# <a name="contact-support-for-new-caledonia"></a>Contacter le support pour la Nouvelle-Calédienne
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 7 h-3 AM
+Français : Mon-Fri 19h00 à 15h00
 
-Anglais : Mon-Fri 7 h-3 AM
+Anglais : Mon-Fri 19h00 à 15h00
 
 ### <a name="technical-support"></a>Support technique :
 
-Français : Mon-Fri 6 h-7 AM
+Français : Mon-Fri 18h00 à 17h00
 
 Anglais : 24h/24, 7j/7
 
-Frais d’appels internationaux appliqués
+Les frais d’appels internationaux s’appliquent
