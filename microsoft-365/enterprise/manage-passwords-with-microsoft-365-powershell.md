@@ -28,17 +28,17 @@ ms.locfileid: "49073197"
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative au centre d’administration Microsoft 365 pour gérer les mots de passe dans Microsoft 365. 
+Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative au Centre d’administration Microsoft 365 pour gérer les mots de passe dans Microsoft 365. 
 
-Lorsqu’un bloc de commande de cet article exige que vous spécifiez des valeurs variables, procédez comme suit.
+Lorsqu’un bloc de commandes dans cet article nécessite que vous spécifiant des valeurs de variable, utilisez ces étapes.
 
-1. Copiez le bloc de commandes dans le presse-papiers et collez-le dans le bloc-notes ou dans l’environnement de script intégré PowerShell (ISE).
-2. Renseignez les valeurs des variables et supprimez les caractères « < » et « > ».
-3. Exécutez les commandes dans la fenêtre PowerShell ou PowerShell ISE.
+1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans le Bloc-notes ou dans l’environnement de script intégré à PowerShell (ISE).
+2. Remplissez les valeurs des variables et supprimez les caractères « < » et « > ».
+3. Exécutez les commandes dans la fenêtre PowerShell ou dans PowerShell ISE.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 ### <a name="set-a-password"></a>Définir un mot de passe
 
@@ -52,7 +52,7 @@ Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword
 ```
 ### <a name="force-a-user-to-change-their-password"></a>Forcer un utilisateur à modifier son mot de passe
 
-Utilisez ces commandes pour définir un mot de passe et obliger un utilisateur à modifier son nouveau mot de passe.
+Utilisez ces commandes pour définir un mot de passe et forcer un utilisateur à modifier son nouveau mot de passe.
 
 ```powershell
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
@@ -61,7 +61,7 @@ $secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
 Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -EnforceChangePasswordPolicy $true
 ```
 
-Utilisez ces commandes pour définir un mot de passe et obliger un utilisateur à modifier son nouveau mot de passe lors de sa prochaine connexion.
+Utilisez ces commandes pour définir un mot de passe et obliger un utilisateur à modifier son nouveau mot de passe la prochaine fois qu’il se connecte.
 
 ```powershell
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
@@ -72,7 +72,7 @@ Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -ForceChangeP
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="set-a-password"></a>Définir un mot de passe
 

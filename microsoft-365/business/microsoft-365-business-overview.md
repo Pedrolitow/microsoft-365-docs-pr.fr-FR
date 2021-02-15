@@ -69,19 +69,19 @@ Microsoft 365 Business Premium vous permet de protéger vos données dans chacu
 
 ## <a name="how-your-data-and-devices-are-protected"></a>Comment vos données et vos appareils sont-ils protégés ?
 
-Microsoft 365 Business Premium permet de vous **défendre contre les menaces**  :
+Microsoft 365 Business Premium permet de vous **défendre contre les menaces** :
 
-- L’analyse des liens dans les e-mails et les documents en temps réel pour bloquer les sites Web dangereux (liens fiables).
+- Analyse des liens dans les e-mails et les documents en temps réel pour bloquer les sites web non sécurisés (liens sécurisés).
 
-- Exécution d’une analyse avancée des pièces jointes de courrier électronique dans un environnement de bac à sable pour détecter les programmes malveillants nouvellement développés (pièces jointes fiables). 
+- Effectuer une analyse avancée des pièces jointes dans un environnement bac à sable (sandbox) pour détecter les programmes malveillants récemment développés (pièces jointes sécurisées). 
 
-- Activation des stratégies anti-hameçonnage qui utilisent les modèles d’apprentissage automatique et la détection de l’emprunt d’identité pour assurer une protection contre les attaques avancées (anti-hameçonnage dans Defender for Office 365 intelligence). 
+- Activation de stratégies anti-hameçonnage qui utilisent des modèles d’apprentissage automatique et la détection de l’emprunt d’identité pour fournir une protection contre les attaques avancées (anti-hameçonnage dans Defender pour Office 365 Intelligence). 
 
 - En configurant des stratégies avancées qui désactivent l’accès à partir d’emplacements non approuvés ou qui ignorent l’authentification multifacteur à partir d’emplacements approuvés, comme votre réseau Office (authentification multifacteur Azure, y compris les adresses IP approuvées et l’accès conditionnel). 
 
 - En appliquant la protection contre les programmes malveillants sur tous les appareils Windows 10 de votre organisation et en protégeant les fichiers dans les dossiers système principaux contre les modifications apportées par les rançongiciels (Windows Defender)
 
-Vos **données professionnelles sont protégées**  :
+Vos **données professionnelles sont protégées** :
 
 - Par l’utilisation de la détection automatique permettant d’empêcher les informations sensibles, comme les numéros de sécurité sociale ou les cartes de crédit, d’être divulguées en dehors de votre entreprise (protection contre la perte de données). 
 
@@ -91,7 +91,7 @@ Vos **données professionnelles sont protégées**  :
 
 - Par l’activation de l’archivage cloud illimité afin que vous puissiez conserver tous les courriers électroniques de votre organisation, y compris les boîtes aux lettres des anciens employés (archivage Exchange Online).
 
-Vos **appareils sont sécurisés**  :
+Vos **appareils sont sécurisés** :
 
 - Par le contrôle des appareils et des utilisateurs qui peuvent accéder à vos données Microsoft, avec des options permettant d’empêcher les utilisateurs de se connecter à partir d’ordinateurs de bureau, d’applications non approuvées ou en dehors des heures de travail (accès conditionnel).
 

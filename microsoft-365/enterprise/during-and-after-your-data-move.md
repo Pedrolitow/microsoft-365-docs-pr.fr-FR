@@ -14,7 +14,7 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
-description: Les déplacements de données sont des opérations principales qui se produisent lorsque Microsoft déplace des services et des données associées pour votre client vers une nouvelle région de centre de données.
+description: Les déplacements de données sont des opérations de base qui se produisent lorsque Microsoft déplace les services et les données associées de votre client vers une nouvelle géo de centres de données.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: ca3159aeb951fb0cb3bf3aba953979dabc6ba024
 ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
@@ -30,9 +30,9 @@ Les déplacements de données sont des opérations principales n'ayant que peu d
 > [!NOTE]
 > Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment. 
   
-Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de chaque service de conversation Exchange Online, SharePoint Online et Teams. Comme indiqué dans le tableau ci-dessous, il peut être nécessaire de prendre jusqu’à 24 mois après la fin de la période d’inscription pour terminer les données client principales lors du déplacement vers le nouveau centre de données géographique.   
+Regardez le Centre de messages Microsoft 365 pour confirmer que les déplacements pour chaque service de conversation Exchange Online, SharePoint Online et Teams sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géographique de centre de données.   
 
-|**Clients avec pays d’abonnement dans**|**Tous les déplacements terminés d'ici le**|
+|**Clients dont le pays d’inscription est**|**Tous les déplacements terminés d'ici le**|
 |:-----|:-----|
 |Australie, Nouvelle-Zélande, Fidji  <br/> |1er juillet 2022  <br/> |
 |Japon  <br/> |1er juillet 2022  <br/> |
@@ -50,7 +50,7 @@ Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de c
 
 ## <a name="exchange-online"></a>Exchange Online
 
-Comme le déplacement de chaque utilisateur vers la nouvelle zone géographique de centres de données pour un seul client prend du temps, certains utilisateurs seront encore dans l’ancienne zone géographique de centres de données pendant le déplacement, tandis que d’autres seront dans la nouvelle. Cela signifie que certaines fonctionnalités qui impliquent l’accès à plusieurs boîtes aux lettres peuvent ne pas fonctionner entièrement pendant une période du processus de déplacement, qui peut durer des semaines. Ces fonctionnalités sont décrites dans les sections suivantes.
+Comme le déplacement de chaque utilisateur vers la nouvelle zone géographique de centres de données pour un seul client prend du temps, certains utilisateurs seront encore dans l’ancienne zone géographique de centres de données pendant le déplacement, tandis que d’autres seront dans la nouvelle. Cela signifie que certaines fonctionnalités qui impliquent l’accès à plusieurs boîtes aux lettres peuvent ne pas fonctionner entièrement pendant une période du processus de déplacement, qui peut durer plusieurs semaines. Ces fonctionnalités sont décrites dans les sections suivantes.
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>Ouvrez « Dossier partagé » dans Outlook Web Access 
 
@@ -59,7 +59,7 @@ Certains utilisateurs ouvrent un dossier de messagerie partagé à partir d'une 
 |**Configuration**|**Description**|
 |:-----|:-----|
 |L'utilisateur dispose d'autorisations de dossier de boîte aux lettres sur une autre boîte aux lettres  <br/> |Potentiellement limité.  <br/> Si l'utilisateur A et la boîte aux lettres B ne se trouvent pas dans la même zone géographique lors du déplacement de client, l'utilisateur A ne peut pas ouvrir le dossier la boîte aux lettres B dans Outlook Web Access s'il n'a de droit d'accès que pour un dossier spécifique de la boîte aux lettres B.  <br/> Pour ajouter un dossier partagé, cliquez avec le bouton droit de la souris sur le nom d'utilisateur dans le volet de navigation gauche, puis sélectionnez **Ajouter un dossier partagé**.  <br/> |
-|Utilisateur disposant de droits d’accès complets sur une autre boîte aux lettres  <br/> |Entièrement pris en charge  <br/> Si l’utilisateur a dispose de l’autorisation « accès total » à la boîte aux lettres B, l’utilisateur A peut cliquer sur le dossier partagé dans le volet de navigation gauche dans Outlook Web Access pour ouvrir une fenêtre affichant la boîte aux lettres B.  Un utilisateur peut ouvrir une boîte aux lettres partagée à l’aide d’Outlook Web Access lors du déplacement sans impact négatif. La limitation s’applique uniquement au partage au niveau du dossier dans une boîte aux lettres.           |
+|Utilisateur disposant de droits d’accès complets sur une autre boîte aux lettres  <br/> |Entièrement pris en charge  <br/> Si l’utilisateur A dispose de l’autorisation « Accès total » pour la boîte aux lettres B, l’utilisateur A peut cliquer sur le dossier partagé dans le panneau de navigation gauche de Outlook Web Access pour ouvrir une fenêtre affichant la boîte aux lettres B.  Un utilisateur peut ouvrir une boîte aux lettres partagée à l’Outlook Web Access pendant le déplacement sans aucun impact négatif. La limitation s’applique uniquement au partage au niveau du dossier dans une boîte aux lettres.           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -103,20 +103,20 @@ Les fonctionnalités de recherche suivantes sont concernées :
     
 - Protection contre la perte de données (DLP) : Les politiques ne sont pas appliquées sur les éléments qui changent avant que l’analyse n’ait récupéré les modifications.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
-Outre Exchange Online, SharePoint Online et OneDrive entreprise, Microsoft migre les données du service de conversation teams vers le centre de données local.
+Outre Exchange Online, SharePoint Online et OneDrive Entreprise, Microsoft migre les données du service de conversation Teams vers le centre de données local.
 
-- Les messages de conversation Teams, y compris les messages privés et les messages de canal.
-- Images de teams utilisées dans les conversations.
+- Messages de conversation Teams, y compris les messages privés et les messages de canal.
+- Images Teams utilisées dans les conversations.
 
-Les fichiers teams sont stockés dans SharePoint Online et les fichiers de conversation teams sont stockés dans OneDrive entreprise. La messagerie vocale, le calendrier, l’historique des conversations et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive entreprise sont déjà utilisés par le client dans la région du centre de connaissances local et font également partie du programme de migration de Microsoft 365 pour les pays clients éligibles.
+Les fichiers Teams sont stockés dans SharePoint Online et les fichiers de conversation Teams sont stockés dans OneDrive Entreprise. La messagerie vocale, le calendrier, l’historique de conversation et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive Entreprise sont déjà utilisés par le client dans la zone géographique du centre de données local et font également partie du programme de migration Microsoft 365 pour les pays clients éligibles.
 
 ## <a name="skype-for-business"></a>Skype Entreprise
 
-Les déplacements Skype entreprise ne sont plus disponibles.  [Skype entreprise Online sera supprimé](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cela, le service n’est plus accessible. 
+Les déplacements Skype Entreprise ne sont plus disponibles.  [Skype Entreprise Online sera retiré](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cette période, le service n’est plus accessible. 
   
-## <a name="related-topics"></a>Voir aussi 
+## <a name="related-topics"></a>Rubriques connexes 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

@@ -1,5 +1,5 @@
 ---
-title: Comment s’inscrire à l’aide de l’administrateur
+title: Comment s’inscrire - Aide de l’administrateur
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,7 +26,7 @@ search.appverid:
 - GEA150
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: 'Découvrez ce que vous devez savoir avant de passer par le processus d’inscription pour Office 365. '
+description: 'Comprenez ce que vous devez savoir avant de passer par le processus d’inscription à Office 365. '
 ms.openlocfilehash: 7cbbcecdf3520ce5f8bd266100c3934a9cd7a664
 ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
@@ -34,106 +34,106 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2020
 ms.locfileid: "48906274"
 ---
-# <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire à l’aide de l’administrateur
+# <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - Aide de l’administrateur
 
 ::: moniker range="o365-worldwide"
 
-Inscrivez-vous à Microsoft 365 pour entreprise afin que votre équipe puisse commencer à utiliser les versions les plus récentes de Word, Excel, PowerPoint et d’autres programmes Office.
+Inscrivez-vous à Microsoft 365 pour les entreprises afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres programmes Office.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Inscrivez-vous à Microsoft 365 pour les entreprises afin que votre équipe puisse commencer à utiliser les versions les plus récentes de Word, Excel, PowerPoint et d’autres programmes Office.
+Inscrivez-vous à Microsoft 365 pour les entreprises afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres programmes Office.
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Office 365 géré par 21Vianet est conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine. Ce service fonctionne avec la technologie pour laquelle Microsoft a octroyé une licence à 21Vianet. Microsoft ne fonctionne pas avec le service lui-même. 21Vianet fonctionne, fournit et gère la remise du service. 21Vianet est le fournisseur de services Internet Data Center le plus volumineux en Chine, qui fournit des services d’hébergement, de services réseau gérés et d’infrastructure informatique en nuage. En utilisant les licences Microsoft, 21Vianet exploite les centres de données Microsoft locaux pour vous permettre d’utiliser les services Microsoft tout en conservant les données en Chine. 21Vianet fournit également vos services d’abonnement et de facturation, ainsi que la prise en charge.
+Office 365 géré par 21Vianet est conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine. Ce service fonctionne avec la technologie pour laquelle Microsoft a octroyé une licence à 21Vianet. Microsoft n’utilise pas le service lui-même. 21Vianet fonctionne, fournit et gère la livraison du service. 21Vianet est le plus grand fournisseur de services de centre de données Internet neutre pour les opérateurs en Chine, fournissant des services d’hébergement, de réseau géré et d’infrastructure cloud computing. En accordant des licences aux technologies Microsoft, 21Vianet exploite des centres de données Microsoft locaux pour vous offrir la possibilité d’utiliser les services Microsoft tout en conservant vos données en Chine. 21Vianet fournit également vos services d’abonnement et de facturation, ainsi qu’un support.
   
 > [!NOTE]
 > Ces services sont soumis au droit chinois.
   
-Inscrivez-vous à Office 365 géré par 21Vianet afin que votre équipe puisse commencer à utiliser les versions les plus récentes de Word, Excel, PowerPoint et d’autres programmes Office.
+Inscrivez-vous à Office 365 géré par 21Vianet afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres programmes Office.
   
-Vous êtes prêt à vous inscrire ? [Sélectionnez un plan](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans).
+Vous êtes prêt à vous inscrire ? [Sélectionnez un plan.](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 ## <a name="choose-a-plan"></a>Choisir une offre
 
-Avant de procéder à l’achat, soumettez-vous au plan de votre inscription. Cela vous évitera de rencontrer des difficultés croissantes par la suite.
+Avant d’acheter, pensez à l’offre pour qui vous vous inscrivez. Cela vous évitera de rencontrer des difficultés croissantes par la suite.
 
-Visionnez une courte vidéo sur le choix d’un plan Microsoft 365 pour les entreprises.<br><br>
+Regardez une courte vidéo sur le choix d’une offre Microsoft 365 pour les entreprises.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont disponibles pour répondre à vos questions. Accédez à [comparer tous les produits](https://products.office.com/compare-all-microsoft-office-products?tab=2) et choisissez l’une des options de support de contact dans la partie gauche de la page.
+Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont disponibles pour répondre à vos questions. Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) and choose one of the contact support options listed at the left side of the page.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## <a name="choose-a-plan"></a>Choisir une offre
 
-Avant de procéder à l’achat, soumettez-vous au plan de votre inscription. Cela vous évitera de rencontrer des difficultés croissantes par la suite.
+Avant d’acheter, pensez à l’offre pour qui vous vous inscrivez. Cela vous évitera de rencontrer des difficultés croissantes par la suite.
   
-Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont disponibles pour répondre à vos questions. Nous allons simplement [comparer tous les produits](https://products.office.com/compare-all-microsoft-office-products?tab=2) et choisir l’une des options de support de contact dans la partie gauche de la page. 
+Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont disponibles pour répondre à vos questions. Il vous suffit [d’aller comparer tous les](https://products.office.com/compare-all-microsoft-office-products?tab=2) produits et de choisir l’une des options de support de contact répertoriées sur le côté gauche de la page. 
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
-## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>Vous êtes prêt à vous inscrire pour obtenir une version d’évaluation gratuite ou acheter un abonnement ?
+## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>Vous êtes prêt à vous inscrire à une version d’essai gratuite ou acheter un abonnement ?
 
-Consultez la [partie comparer tous les produits](https://products.office.com/compare-all-microsoft-office-products?tab=2) pour choisir l’offre que vous souhaitez acheter et démarrer l’Assistant inscription. 
+Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-Si vous commencez avec une version d’évaluation gratuite, vous pouvez l' [acheter ultérieurement](../../commerce/buy-a-subscription-from-your-free-trial.md). Les utilisateurs et données associés à la version d'évaluation seront conservés.
+Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter ultérieurement.](../../commerce/buy-a-subscription-from-your-free-trial.md) Les utilisateurs et données associés à la version d'évaluation seront conservés.
   
-Vous n’avez pas besoin d’annuler votre version d’évaluation. Si vous n’achetez pas l’abonnement à la version d’évaluation, il expire automatiquement à la fin de la période d’évaluation et toutes les informations sont définitivement supprimées.
+Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achetez pas l’abonnement d’essai, il expire automatiquement à la fin de la période d’essai et toutes les informations sont définitivement supprimées.
 
-Regardez une courte vidéo illustrant le processus d’inscription.<br><br>
+Regardez une courte vidéo qui montre le processus d’inscription.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>Vous êtes prêt à vous inscrire pour obtenir une version d’évaluation gratuite ou acheter un abonnement ?
+## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>Vous êtes prêt à vous inscrire à une version d’essai gratuite ou acheter un abonnement ?
 
-Consultez la [partie comparer tous les produits](https://products.office.com/compare-all-microsoft-office-products?tab=2) pour choisir l’offre que vous souhaitez acheter et démarrer l’Assistant inscription. 
+Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-Si vous commencez avec une version d’évaluation gratuite, vous pouvez l' [acheter ultérieurement](../../commerce/buy-a-subscription-from-your-free-trial.md). Les utilisateurs et données associés à la version d'évaluation seront conservés.
+Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter ultérieurement.](../../commerce/buy-a-subscription-from-your-free-trial.md) Les utilisateurs et données associés à la version d'évaluation seront conservés.
   
-Vous n’avez pas besoin d’annuler votre version d’évaluation. Si vous n’achetez pas l’abonnement à la version d’évaluation, il expire automatiquement à la fin de la période d’évaluation et toutes les informations sont définitivement supprimées.
+Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achetez pas l’abonnement d’essai, il expire automatiquement à la fin de la période d’essai et toutes les informations sont définitivement supprimées.
   
 ::: moniker-end
 
-## <a name="youll-be-asked-for-the-following-information-when-you-sign-up"></a>Vous serez invité à fournir les informations suivantes lors de votre inscription
+## <a name="youll-be-asked-for-the-following-information-when-you-sign-up"></a>Vous serez invité à fournir les informations suivantes lorsque vous vous inscrivez.
 
 - **Adresse et informations de contact pour votre abonnement :**
 
-  - **Pays** où les services seront utilisés. Vous **ne** serez pas en mesure de modifier le pays plus tard, même pendant le processus d’inscription. vous devrez redémarrer l’Assistant inscription.
+  - **Pays** où les services seront utilisés. Vous **ne pourrez pas** modifier le pays ultérieurement, même pendant le processus d’inscription ; Vous devez redémarrer l’Assistant d’inscription.
 
   - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
 
     > [!NOTE]
-    > L’adresse de messagerie que vous entrez ici est différente de votre adresse de messagerie Microsoft 365 (votre nom de connexion, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
+    > L’adresse e-mail que vous entrez ici est différente de votre adresse de messagerie Microsoft 365 (votre nom de logo, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
   
-- **Nom de connexion (ID d’utilisateur) :** Cet ID d’utilisateur devient votre adresse de messagerie initiale de Microsoft 365 pour vous aider à démarrer rapidement.
+- **Nom de la signature (ID d’utilisateur) :** Cet ID d’utilisateur devient votre adresse de messagerie Microsoft 365 initiale, pour vous aider à démarrer rapidement.
 
-    Cet ID d’utilisateur est l’adresse de messagerie que vous utilisez pour vous connecter. Par exemple, si le nom de votre entreprise est Fourth Coffee, vous pouvez choisir l'identifiant utilisateur rene@fourthcoffee.onmicrosoft.com.
+    Cet ID d’utilisateur est l’adresse de messagerie que vous utilisez pour vous inscrire. Par exemple, si le nom de votre entreprise est Fourth Coffee, vous pouvez choisir l'identifiant utilisateur rene@fourthcoffee.onmicrosoft.com.
 
-    La plupart des utilisateurs ajoutent leur propre domaine personnalisé peu après leur inscription afin qu’ils puissent commencer à recevoir des courriers électroniques. Par exemple, si vous avez un domaine personnalisé nommé fourthcoffee.com, vous pouvez définir l'adresse de courrier rene@fourthcoffee.com.
+    La plupart des personnes ajoutent leur propre domaine personnalisé peu de temps après leur inscription afin de pouvoir commencer à y recevoir des messages électroniques. Par exemple, si vous avez un domaine personnalisé nommé fourthcoffee.com, vous pouvez définir l'adresse de courrier rene@fourthcoffee.com.
 
 - **Informations de paiement :**
 
     Vous pouvez payer votre abonnement avec une carte de crédit. Si le coût atteint un certain montant, vous pourrez peut-être également payer par facture.
 
     > [!IMPORTANT]
-    >  Lorsque vous vous inscrivez, veillez à choisir l’option de paiement la plus appropriée pour votre organisation. Pour modifier vos options de paiement, vous devez appeler le support de facturation.
+    >  Lorsque vous vous inscrivez, n’oubliez pas de choisir la meilleure option de paiement pour votre organisation. Pour modifier vos options de paiement, vous devez appeler le support de facturation.
 
 ## <a name="see-also"></a>Voir aussi
 

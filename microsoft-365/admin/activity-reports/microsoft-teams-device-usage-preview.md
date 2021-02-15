@@ -1,5 +1,5 @@
 ---
-title: Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
+title: Rapports Microsoft 365 dans le Centre d’administration - Utilisation des appareils Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,7 +20,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenez des informations sur les applications Microsoft teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft teams à partir des rapports Microsoft 365.
+description: Obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft Teams à partir de Rapports Microsoft 365.
 ms.openlocfilehash: 928ba7bbe4d4753499e71b347baffafa7441f5b5
 ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
@@ -28,37 +28,37 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/10/2020
 ms.locfileid: "48988527"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation des appareils Microsoft Teams
 
-Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Utilisation des applications Microsoft Teams, vous pouvez obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation.
+Le tableau de  bord Rapports Microsoft 365 vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Utilisation des applications Microsoft Teams, vous pouvez obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation.
   
 > [!NOTE]
-> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports.  
+> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, Teams Service, Teams Communications ou Skype Entreprise pour voir les rapports.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Accéder au rapport Utilisation des applications Microsoft Teams
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
-2. À partir de la page d’accueil du tableau de bord, cliquez sur le bouton **afficher plus** sur la fiche d’activité Microsoft Teams.
+2. Dans la page d’accueil du tableau de bord, cliquez sur **le** bouton Afficher plus sur la carte d’activité Microsoft Teams.
   
 ## <a name="interpret-the-microsoft-teams-app-usage-report"></a>Interpréter le rapport Utilisation des applications Microsoft Teams
 
-Vous pouvez afficher l’utilisation de l’appareil dans le rapport teams en sélectionnant l’onglet utilisation de l' **appareil** .<br/>![Rapports Microsoft 365-utilisation de l’appareil Microsoft Teams.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
+Vous pouvez afficher l’utilisation de l’appareil dans le rapport Teams en choisissant l’onglet **Utilisation de l’appareil.**<br/>![Rapports Microsoft 365 : utilisation des appareils Microsoft Teams.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
 
-Sélectionnez **choisir les colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport de l’appareil utilisateur teams-choisir les colonnes](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’appareil utilisateur Teams : choisir les colonnes](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
-Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
 |Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d'utilisateur  <br/> |Nom d’affichage de l’utilisateur.  <br/> |
-|Windows  <br/> |Sélectionné si l’utilisateur était actif dans le client teams de bureau sur un ordinateur Windows.  <br/> |
-|Mac  <br/> |Sélectionné si l’utilisateur était actif dans le client teams de bureau sur un ordinateur macOS.  <br/> |
-|iOS  <br/> |Sélectionnez cette option si l’utilisateur était actif sur le client teams mobile pour iOS.  <br/> |
-|Téléphone Android  <br/> | Sélectionnez cette option si l’utilisateur était actif sur le client teams mobile pour Android.  <br/> |
-|Système d’exploitation chrome  <br/> |Sélectionné si l’utilisateur était actif dans le client teams de bureau sur un ordinateur ChromeOS.|
-|Linux  <br/> | Sélectionnez cette option si l’utilisateur était actif dans le client teams de bureau sur un ordinateur Linux.  <br/> |
-|Web  <br/> |Sélectionné si l’utilisateur était actif dans le client Web teams sur les appareils.|
-|Date de la dernière activité (UTC)  <br/> |Date (UTC) de la dernière date à laquelle l’utilisateur a participé à une activité de teams.  <br/> |
-|Est sous licence|Sélectionné si l’utilisateur est titulaire d’une licence pour utiliser Teams.|
+|Windows  <br/> |Sélectionné si l’utilisateur était actif dans le client de bureau Teams sur un ordinateur Windows.  <br/> |
+|Mac  <br/> |Sélectionné si l’utilisateur était actif dans le client de bureau Teams sur un ordinateur macOS.  <br/> |
+|iOS  <br/> |Sélectionné si l’utilisateur était actif sur le client mobile Teams pour iOS.  <br/> |
+|Téléphone Android  <br/> | Sélectionné si l’utilisateur était actif sur le client mobile Teams pour Android.  <br/> |
+|Système d’exploitation Chrome  <br/> |Sélectionné si l’utilisateur était actif dans le client de bureau Teams sur un ordinateur ChromeOS.|
+|Linux  <br/> | Sélectionné si l’utilisateur était actif dans le client de bureau Teams sur un ordinateur Linux.  <br/> |
+|Web  <br/> |Sélectionné si l’utilisateur était actif dans le client web Teams sur les appareils.|
+|Date de la dernière activité (UTC)  <br/> |Dernière date (UTC) à laquelle l’utilisateur a participé à une activité Teams.  <br/> |
+|Est titulaire d’une licence|Sélectionné si l’utilisateur est titulaire d’une licence d’utilisation de Teams.|
 |||

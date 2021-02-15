@@ -23,7 +23,7 @@ ms.locfileid: "48754246"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Déploiement de Windows 10 Entreprise pour Contoso
 
-Avant le déploiement étendu de Microsoft 365 pour Enterprise, contoso disposait de PC et de périphériques compatibles avec Windows qui exécutent un mélange de Windows 7 (10%), de Windows 8,1 (65%) et de Windows 10 (25%). Contoso souhaitait mettre à niveau ses PC pour Windows 10 entreprise tirer parti de la sécurité avancée et avoir réduit les charges de travail informatiques des déploiements automatisés de mises à jour. 
+Avant le déploiement large de Microsoft 365 pour entreprise, Contoso avait des PC et des appareils compatibles avec Windows exécutant une combinaison de Windows 7 (10 %) Windows 8.1 (65 %) et Windows 10 (25 %). Contoso souhaitait mettre à niveau ses PC pour Windows 10 Entreprise et tirer parti de la sécurité avancée et réduire la surcharge informatique des déploiements automatisés de mises à jour. 
 
 Après évaluation de ses besoins d’infrastructure et de ses besoins métier, Contoso a identifié les exigences principales suivantes en matière de déploiement :
 
@@ -54,7 +54,7 @@ Contoso dispose d’une infrastructure Configuration Manager (branche actuelle) 
 
 ## <a name="planning-process"></a>Processus de planification
 
-Contoso a utilisé la préparation à la mise à niveau dans Windows Analytics pour déterminer l’ensemble des applications installées et leur compatibilité avec Windows 10 entreprise.
+Contoso a utilisé upgrade readiness dans Windows Analytics pour déterminer l’ensemble des applications installées et leur compatibilité avec Windows 10 Entreprise.
 
 ## <a name="deployment-process"></a>Processus de déploiement
 
@@ -62,11 +62,11 @@ Pour effectuer le déploiement de mises à niveau sur place de Windows 10 Entre
 
 1. Activation d’un cache d’homologue pour le gestionnaire de configuration
 2. Création de packages Windows personnalisés basés sur des images du centre de service de gestion des licences en volume
-3. Utilisez le gestionnaire de configuration pour déployer les packages Windows sur les points de distribution sur le réseau et les versions déployées vers les trois groupes de test de validation et de déploiement.
+3. Utilisé Configuration Manager pour déployer les packages Windows vers les points de distribution sur leur réseau et les builds déployées sur les trois groupes de transit de validation et de déploiement.
 4. Exécution de l’évaluation de réussite pour les PC et les périphériques dans les trois anneaux de gestion intermédiaire de la validation et du déploiement utilisant des solutions de conformité de mise à jour et d’intégrité des périphériques de Windows Analytics.
-5. En fonction des informations Windows Analytics, Contoso a déterminé la version de Windows 10 entreprise à déployer dans le groupe de déploiement large.
-6. Exécutez les séquences de tâches de déploiement du gestionnaire de configuration pour déployer le package Windows sélectionné dans le groupe de déploiement large.
-7. Surveillance des PC et des appareils dans le groupe de déploiement large à l’aide des solutions d’intégrité des appareils et de conformité des mises à jour pour résoudre les problèmes.
+5. Sur la base des informations Windows Analytics, Contoso a déterminé la version de Windows 10 Entreprise à déployer dans le groupe de déploiement à grande échelle.
+6. A lancé les séquences de tâches de déploiement configuration Manager pour déployer le package Windows sélectionné dans le groupe de déploiement étendu.
+7. Pc et appareils surveillés dans le groupe de déploiement à grande échelle à l’aide des solutions de conformité d’état et de mise à jour des périphériques pour résoudre les problèmes.
 
 Voici la mise à niveau sur place et l’architecture de déploiement de mises à jour en cours de Contoso.
 
@@ -78,11 +78,11 @@ Cette infrastructure se compose des éléments suivants :
   - obtient des images pour les packages Windows 10 Entreprise à partir du centre de gestion des licences en volume Microsoft dans The Microsoft Network ;
   - est le point d’administration central pour les packages de déploiement.
 - Les points de distribution régionaux généralement situés dans les centres régionaux de Contoso.
-- PC et appareils Windows dans divers emplacements qui reçoivent et installent les packages de déploiement pour la mise à niveau sur place ou les mises à jour en continu en fonction de l’appartenance au groupe.
+- Pc et appareils Windows à différents emplacements qui reçoivent et installent les packages de déploiement pour la mise à niveau sur place ou les mises à jour en cours en fonction de l’appartenance au groupe.
 
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez comment contoso exploite son infrastructure de gestionnaire de configuration pour [déployer et conserver les applications Microsoft 365 actuelles pour les entreprises](contoso-o365pp.md) au sein de son organisation. 
+Découvrez comment Contoso tire parti de son infrastructure Configuration Manager pour déployer et conserver les applications [Microsoft 365 pour](contoso-o365pp.md) entreprise actuelles au sein de son organisation. 
 
 ## <a name="see-also"></a>Voir aussi
 

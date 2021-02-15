@@ -1,5 +1,5 @@
 ---
-title: Conditions préalables pour les comptes invités
+title: Conditions préalables pour les comptes invité
 description: Instructions de configuration pour les comptes invités et comment les ajuster
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -16,15 +16,15 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/14/2020
 ms.locfileid: "49073202"
 ---
-# <a name="prerequisites-for-guest-accounts"></a>Conditions préalables pour les comptes invités
+# <a name="prerequisites-for-guest-accounts"></a>Conditions préalables pour les comptes invité
 
-Microsoft Managed Desktop requiert les paramètres suivants dans votre organisation Azure AD pour l’accès au compte invité. Vous pouvez ajuster ces paramètres sur le [portail Azure](https://portal.azure.com) sous **identités externes/collaboration externe** :
+Bureau géré Microsoft requiert les paramètres suivants dans votre organisation Azure AD pour l’accès au compte invité. Vous pouvez ajuster ces paramètres sur le portail [Azure](https://portal.azure.com) sous **Identités externes /Collaboration externe**:
 
--   Les **administrateurs et les utilisateurs du rôle invités invité peuvent inviter la** valeur **Oui**
--   Pour les **restrictions de collaboration** , choisissez l’une des options suivantes :
-    -   Si vous sélectionnez **autoriser l’envoi d’invitations à n’importe quel domaine (la plus incluse)** , aucune autre configuration n’est requise.
-    -   Si vous sélectionnez **refuser les invitations aux domaines spécifiés** , vérifiez que Microsoft.com n’est pas indiqué dans les domaines cibles.
-    -   Si vous sélectionnez **autoriser uniquement les invitations aux domaines spécifiés (le plus restrictif)** , assurez-vous que Microsoft.com *est* indiqué dans les domaines cibles.
+-   **Les administrateurs et les utilisateurs du rôle d’invite d’invités** peuvent inviter des personnes définies sur **Oui**
+-   Pour **les restrictions de collaboration,** choisissez l’une des options ci-après :
+    -   Si vous **sélectionnez Autoriser l’envoi d’invitations** à un domaine (le plus inclus), aucune autre configuration n’est requise.
+    -   Si vous sélectionnez Refuser les invitations aux domaines **spécifiés,** assurez-vous Microsoft.com n’est pas répertorié dans les domaines cibles.
+    -   Si vous sélectionnez Autoriser les invitations uniquement aux domaines **spécifiés (les plus restrictifs),** assurez-vous que Microsoft.com est répertorié dans les domaines cibles. 
 
-Si vous définissez des restrictions qui interagissent avec ces paramètres, veillez à exclure les **comptes de service espace de travail moderne** Azure Active Directory. Par exemple, si vous avez une stratégie d’accès conditionnel qui empêche les comptes invités d’accéder au portail Intune, excluez le groupe de comptes de service de l' **espace de travail moderne** de cette stratégie.
+Si vous définissez des restrictions qui interagissent avec ces paramètres, veillez à exclure les comptes azure Active Directory **Modern Workplace Service**. Par exemple, si vous avez une stratégie d’accès conditionnel qui empêche les comptes invités d’accéder au portail Intune, excluez le groupe Comptes de **service** Workplace modernes de cette stratégie.
 

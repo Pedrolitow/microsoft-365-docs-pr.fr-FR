@@ -1,7 +1,7 @@
 ---
 title: Déployer les applications sur les appareils
-description: Informations pour ajouter et déployer des applications sur des appareils de bureau gérés Microsoft.
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, applications, applications métiers, applications métier
+description: Informations pour l’ajout et le déploiement d’applications sur des appareils de bureau géré Microsoft.
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation, applications, applications métier, applications métier
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -17,88 +17,88 @@ ms.lasthandoff: 10/27/2020
 ms.locfileid: "48769105"
 ---
 # <a name="deploy-apps-to-devices"></a>Déployer les applications sur les appareils
-L’intégration à Microsoft Managed Desktop inclut l’ajout et le déploiement d’applications sur les appareils de vos utilisateurs. Une fois que vous utilisez le portail de bureau géré Microsoft, vous pouvez ajouter et déployer vos applications. 
+Une partie de l’intégration au Bureau géré Microsoft inclut l’ajout et le déploiement d’applications sur les appareils de vos utilisateurs. Une fois que vous utilisez le portail Bureau géré Microsoft, vous pouvez ajouter et déployer vos applications. 
 
-Le processus global se présente comme suit :
-1. [Ajouter des applications au portail de bureau géré Microsoft](#1) -il peut s’agir d’applications métier existantes ou d’applications de Microsoft Store pour les entreprises que vous avez synchronisées avec Intune. 
-2. [Créer des groupes Azure Active Directory (AD) pour l’affectation d’application](#2) : vous utiliserez ces groupes pour gérer l’affectation d’application.
+Le processus global ressemble à ceci :
+1. [Ajoutez](#1) des applications au portail Bureau géré Microsoft : il peut s’y trouver des applications métier existantes ou des applications du Microsoft Store pour Entreprises que vous avez synchronisées avec Intune. 
+2. [Créez des groupes Azure Active Directory (AD)](#2) pour l’affectation d’applications : vous utiliserez ces groupes pour gérer l’attribution d’application.
 3. [Affecter des applications à vos utilisateurs](#3)
 
 <span id="1" />
 
-## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>Étape 1 : ajouter des applications au portail de bureau géré Microsoft
-Vous pouvez ajouter des [applications Win32 ou Windows MSI](#lob-apps), ou [des applications Microsoft Store pour les entreprises](#msfb-apps) à Microsoft Managed Desktop, puis les déployer sur des appareils de bureau gérés Microsoft.
+## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>Étape 1 : Ajouter des applications au portail Bureau géré Microsoft
+Vous pouvez ajouter des applications [Win32,](#lob-apps)basées sur Windows MSI ou [Microsoft Store](#msfb-apps) pour Entreprises à Bureau géré Microsoft, puis les déployer sur des appareils de bureau géré Microsoft.
 
 <span id="lob-apps">
 
-###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Applications Win32 ou Windows MSI à Microsoft Managed Desktop
+###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Applications Win32 ou Windows MSI pour bureau géré Microsoft
 
-Vous pouvez ajouter vos applications métier à Microsoft Managed Desktop Portal. Pour plus d’informations sur les conditions requises pour les applications installées sur les appareils de bureau géré Microsoft, consultez la rubrique [conditions requises pour les applications de bureau géré Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements).
+Vous pouvez ajouter vos applications métier au portail Bureau géré Microsoft. Pour plus d’informations sur les conditions requises pour les applications installées sur les appareils de bureau géré Microsoft, consultez les conditions requises pour les applications de bureau [géré Microsoft.](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements)
 
-Dans cette procédure, vous allez sélectionner le type d’application que vous souhaitez ajouter, puis configurer et télécharger la source de l’application. 
+Dans cette procédure, vous allez sélectionner le type d’application que vous souhaitez ajouter, puis configurer et charger la source de l’application. 
 
-**Pour ajouter votre application LOB ou votre application Windows au portail de bureau géré Microsoft**
+**Pour ajouter votre application LOB ou Windows au portail Bureau géré Microsoft**
 
-Vous pouvez vous connecter à Microsoft Managed Desktop Portal ou vous connecter à Intune, puis rechercher le bureau géré Microsoft. Nous allons afficher la connexion à Microsoft Managed Desktop Portal. 
+Vous pouvez vous connectez au portail Bureau géré Microsoft ou vous connectez à Intune, puis recherchez Bureau géré Microsoft. Nous allons afficher la signature au portail Bureau géré Microsoft. 
 
-1.    Connectez-vous au [portail d’administration de bureau géré Microsoft](https://aka.ms/mmdportal). 
-2.    Sous **inventaire** , sélectionnez **applications** .
-3.    Dans la charge de travail applications, sélectionnez **Ajouter** .
-4.    Dans **Ajouter une application** , sélectionnez **application métier** ou **application Windows (Win32)** .
-    - Si vous avez sélectionné **application métier** , voir [Add a Windows Line of Business app to Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) pour obtenir des instructions sur l’ajout et la configuration d’applications métiers.
-    - Si vous avez sélectionné **Windows App (Win32)** , voir [Win32 App Management](https://docs.microsoft.com/intune/apps-win32-app-management) pour obtenir des instructions sur l’ajout et la configuration d’applications Windows.
+1.    Connectez-vous au [portail d’administration du bureau géré Microsoft.](https://aka.ms/mmdportal) 
+2.    Sous **Inventaire,** sélectionnez **Applications.**
+3.    Dans la charge de travail applications, sélectionnez **Ajouter.**
+4.    Dans **Ajouter une application,** sélectionnez **l’application** métier ou l’application **Windows (Win32).**
+    - Si vous avez sélectionné une application **métier,** voir Ajouter une application métier Windows à [Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) pour obtenir des instructions sur l’ajout et la configuration d’applications métier.
+    - Si vous avez sélectionné **l’application Windows (Win32),** voir Gestion des applications [Win32](https://docs.microsoft.com/intune/apps-win32-app-management) pour obtenir des instructions sur l’ajout et la configuration d’applications Windows.
 
 <span id="msfb-apps">
 
-### <a name="microsoft-store-for-business-apps"></a>Applications Microsoft Store pour les entreprises
-Si vous ne vous êtes pas inscrit auprès de Microsoft Store pour les entreprises, vous pouvez vous inscrire lorsque vous achetez des applications. Une fois que vous avez vos applications, vous pouvez les synchroniser avec le bureau géré Microsoft. 
+### <a name="microsoft-store-for-business-apps"></a>Applications du Microsoft Store pour Entreprises
+Si vous ne vous êtes pas inscrit au Microsoft Store pour Entreprises, vous pouvez vous inscrire lorsque vous achetez des applications. Une fois que vous avez vos applications, vous pouvez les synchroniser avec Bureau géré Microsoft. 
 
-**Pour acheter des applications à partir de Microsoft Store pour les entreprises**
+**Pour acheter des applications à partir du Microsoft Store pour Entreprises**
 
-1. Connectez-vous à [Microsoft Store pour entreprises](https://businessstore.microsoft.com) avec votre compte d’administrateur Microsoft Store pour les entreprises.
-2. Sélectionnez **acheter pour mon groupe** .
-3. Utilisez la recherche pour trouver l’application de votre choix, puis sélectionnez l’application.
-4. Dans les détails du produit, sélectionnez **obtenir l’application** . Microsoft Store ajoute l’application à **vos produits** pour votre organisation.
+1. Connectez-vous [au Microsoft Store pour Entreprises](https://businessstore.microsoft.com) à l’aide de votre compte d’administrateur du Microsoft Store pour Entreprises.
+2. Sélectionnez **Acheter pour mon groupe.**
+3. Utilisez la recherche pour rechercher l’application de votre choix, puis sélectionnez l’application.
+4. Dans les détails du produit, **sélectionnez Obtenir l’application.** Le Microsoft Store ajoute l’application **à vos produits** pour votre organisation.
 
-**Pour forcer une synchronisation entre Intune et Microsoft Store pour les entreprises**
-1. Connectez-vous au [Centre d’administration du gestionnaire de points de terminaison Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Sélectionnez **Tenant administration** les  >  **connecteurs et les jetons**  >  **d’administration du client Microsoft Store pour les entreprises** .
-3. Sélectionnez **synchroniser** pour obtenir les applications que vous avez achetées à partir du Microsoft Store dans Intune.
+**Pour forcer une synchronisation entre Intune et Microsoft Store pour Entreprises**
+1. Connectez-vous au [Centre d’administration Microsoft Endpoint Manager.](https://go.microsoft.com/fwlink/?linkid=2109431)
+2. Sélectionnez **les**  >  **connecteurs d’administration des** clients et les jetons  >  **du Microsoft Store pour Entreprises.**
+3. Sélectionnez **Synchroniser** pour obtenir les applications que vous avez achetées à partir du Microsoft Store dans Intune.
 
-**Pour vérifier qu’une synchronisation entre Intune et Microsoft Store pour les entreprises est active**
-1. Connectez-vous à [Microsoft Store pour entreprises](https://businessstore.microsoft.com) avec votre compte d’administrateur Microsoft Store pour les entreprises.
-2. Sélectionnez **gérer** .
-3. Sélectionnez **paramètres** , puis **distribuer** .
-4. Sous **outils de gestion** , vérifiez que Intune est affiché et que l’État est **actif** .  
+**Pour vérifier qu’une synchronisation entre Intune et Microsoft Store pour Entreprises est active**
+1. Connectez-vous [au Microsoft Store pour Entreprises](https://businessstore.microsoft.com) à l’aide de votre compte d’administrateur du Microsoft Store pour Entreprises.
+2. Sélectionnez **Gérer**.
+3. Sélectionnez **Paramètres,** puis **Distribuer.**
+4. Sous **Outils de** gestion, vérifiez qu’Intune est répertorié et que l’état est **Actif.**  
 
 <span id="2" />
 
-## <a name="step-2-create-azure-ad-groups"></a>Étape 2 : créer des groupes Azure AD
+## <a name="step-2-create-azure-ad-groups"></a>Étape 2 : Créer des groupes Azure AD
 
-Créez trois groupes Azure AD pour chaque application. Ce tableau décrit les groupes dont vous aurez besoin (disponible, requis et désinstallation). 
+Créez trois groupes Azure AD pour chaque application. Ce tableau décrit les groupes dont vous aurez besoin (disponible, obligatoire et désinstallation). 
 
 Type d’affectation d’application |    Utilisation de groupe    | Exemple de nom Azure AD
 --- | --- | ---
-Available |  L’application sera disponible à partir de l’application ou du site Web du portail d’entreprise. | MMD – *nom* de l’application – disponible
-Requis |  L’application est installée sur les appareils dans les groupes sélectionnés. | MMD – *nom* de l’application – obligatoire
-Uninstall |  L’application est désinstallée des appareils dans les groupes sélectionnés. | MMD – *nom* de l’application – Uninstall
+Available |  L’application sera disponible à partir de l’application ou du site web Portail d’entreprise. | MMD – *nom de l’application* – Disponible
+Obligatoire |  L’application est installée sur les appareils des groupes sélectionnés. | MMD – *nom de l’application* – Obligatoire
+Uninstall |  L’application est désinstallée des appareils des groupes sélectionnés. | MMD – *nom de l’application* – Désinstaller
 
-Ajoutez vos utilisateurs à ces groupes pour que l’application soit disponible, installez l’application ou supprimez l’application de son appareil de bureau géré Microsoft. 
+Ajoutez vos utilisateurs à ces groupes pour rendre l’application disponible, installer l’application ou supprimer l’application de son appareil Bureau géré Microsoft. 
 
 <span id="3" />
 
-## <a name="step-3-assign-apps-to-your-users"></a>Étape 3 : attribuer des applications à vos utilisateurs
+## <a name="step-3-assign-apps-to-your-users"></a>Étape 3 : Attribuer des applications à vos utilisateurs
 
 **Pour affecter l’application à vos utilisateurs**
 
-1. Connectez-vous au [portail d’administration de bureau géré Microsoft](https://aka.ms/mmdportal).
-2. Dans le volet bureau géré, sélectionnez **applications** .
-3. Dans la charge de travail applications, sélectionnez l’application à laquelle vous souhaitez attribuer des utilisateurs et sélectionnez **affecter des groupes d’utilisateurs** .
-4. Pour l’application spécifique, sélectionnez un type d’affectation (disponible, obligatoire, désinstaller) et affectez le groupe approprié.
-5. Dans le volet attribuer des applications, sélectionnez **OK** .
+1. Connectez-vous au [portail d’administration du bureau géré Microsoft.](https://aka.ms/mmdportal)
+2. Dans le volet Bureau géré, sélectionnez **Applications.**
+3. Dans la charge de travail applications, sélectionnez l’application à qui vous souhaitez affecter des utilisateurs et **sélectionnez Affecter des groupes d’utilisateurs.**
+4. Pour l’application spécifique, sélectionnez un type d’affectation (Disponible, Obligatoire, Désinstaller) et affectez le groupe approprié.
+5. Dans le volet Attribuer des applications, sélectionnez **OK.**
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de prise en main de Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en place du Bureau géré Microsoft
 
 1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md)
 2. [Ajuster l’accès conditionnel](conditional-access.md)

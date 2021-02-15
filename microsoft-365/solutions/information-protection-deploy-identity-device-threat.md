@@ -1,5 +1,5 @@
 ---
-title: Utiliser l’identité, l’appareil et la protection contre les menaces pour le règlement de confidentialité des données
+title: Utiliser la protection des identités, des appareils et des menaces pour la réglementation sur la confidentialité des données
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Empêchez les violations de données personnelles grâce aux services d’identité, de périphérique et de protection contre les menaces de Microsoft 365.
+description: Empêcher les violations de données personnelles avec les services de protection contre les identités, appareils et menaces de Microsoft 365.
 ms.openlocfilehash: 321b60efbdabe62b14502df4a16dd2dcec4b9cef
 ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
@@ -24,62 +24,62 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/03/2020
 ms.locfileid: "48847177"
 ---
-# <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Utiliser l’identité, l’appareil et la protection contre les menaces pour le règlement de confidentialité des données
+# <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Utiliser la protection des identités, des appareils et des menaces pour la réglementation sur la confidentialité des données
 
-Microsoft 365 fournit un certain nombre de fonctionnalités d’identité, de protection des appareils et de protection contre les menaces que les organisations peuvent utiliser pour se conformer aux réglementations de conformité liées à la confidentialité des données. Cet article décrit les réglementations relatives à la confidentialité des données dans ces domaines et fournit une liste des services et fonctionnalités Microsoft 365 associés avec des liens vers des informations supplémentaires pour vous aider à répondre aux besoins de l’implémentation.
+Microsoft 365 fournit un certain nombre de fonctionnalités de protection contre les menaces, les appareils et les identités que les organisations peuvent utiliser pour se conformer aux réglementations de conformité liées à la confidentialité des données. Cet article décrit les exigences en matière de confidentialité des données dans ces domaines et fournit une liste des fonctionnalités et services Microsoft 365 associés avec des liens vers des informations supplémentaires pour vous aider à répondre aux exigences d’implémentation.
 
-## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>Relation entre l’identité, l’appareil et la protection contre les menaces et le règlement sur la confidentialité des données
+## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>Relation entre l’identité, l’appareil et la protection contre les menaces par rapport à la réglementation sur la confidentialité des données
 
-Bien que les réglementations relatives à la confidentialité des données varient en fonction de leur spécificité, l’essence de ce qu’elles appellent est incorporée dans l’article 5 (1) (f) du RGPD, qui indique les points suivants : 
+Bien que les réglementations en matière de confidentialité des données varient en fonction de leur spécificité, la nature de ce qu’elles appellent est incorporée dans l’article 5(1)(f) du R GDPR, qui stipule que : 
 
-- Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre la perte accidentelle, la destruction ou les dégâts, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité »).
+- Les données personnelles doivent être traitées d’une manière qui garantit la sécurité appropriée des données à caractère personnel, y compris la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (intégrité et confidentialité).
 
-Étant donné que les violations de données personnelles sont souvent dues à une compromission administrative ou à un compte d’utilisateur final et à un accès système malveillant. Par exemple, un compte administrateur hack peut entraîner l’exfiltration des numéros de carte de crédit des clients ou d’autres informations personnelles. Toutes les protections d’identité, de périphérique et de menace généralement recommandées avec Microsoft 365 peuvent être implémentées, qui seront reflétées dans votre score de conformité, dans le gestionnaire de conformité.
+Étant donné que les violations de données personnelles sont souvent dues à une compromission de compte d’administration ou d’utilisateur final et à un accès malveillant au système. Par exemple, un piratage de compte d’administrateur peut entraîner l’exfiltration de numéros de carte de crédit client ou d’autres informations personnelles. Toutes les protections généralement conseillées en matière d’identité, d’appareil et de menaces disponibles avec Microsoft 365 doivent éventuellement être implémentées, ce qui sera reflété dans votre score de conformité, disponible dans le Gestionnaire de conformité.
 
-## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>Utilisation des résultats de votre analyse et du gestionnaire de conformité
+## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>Utilisation des résultats de votre travail d’évaluation et du Gestionnaire de conformité
 
-Le gestionnaire de conformité inclut la protection des identités, des périphériques et des menaces à l’aide des catégories suivantes :
+Le Gestionnaire de conformité inclut la protection contre les identités, les appareils et les menaces à l’aide des catégories suivantes :
 
-- Identity correspond à la catégorie d' **accès au contrôle**
-- Le périphérique correspond à la catégorie **gérer les appareils** .
-- Protection contre les menaces correspond à la catégorie **protéger contre les menaces**
+- L’identité correspond à la **catégorie Contrôle d’accès**
+- L’appareil correspond à la **catégorie Gérer les appareils**
+- La protection contre les menaces correspond à la **catégorie Protéger contre les menaces**
  
-Si ces éléments sont sélectionnés dans notre ensemble d’exemples de quatre principales réglementations de confidentialité des données, le gestionnaire de conformité indique 90 actions d’amélioration, dont la plupart sont notées « 27 ». Étant donné qu’un tel grand nombre est appelé par le gestionnaire de conformité pour ces catégories, certaines des plus courantes sont répertoriées ici, à des fins de référence.
+Si celles-ci sont sélectionnées dans notre exemple de quatre réglementations majeures en matière de confidentialité des données, le Gestionnaire de conformité spécifie 90 actions d’amélioration, dont la plupart ont le niveau « 27 ». Étant donné qu’un nombre aussi élevé est appelé par le Gestionnaire de conformité pour ces catégories, certaines des plus courantes sont répertoriées ici, à titre de référence.
 
-Utilisez [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) pour l’identité et la catégorie d' **accès au contrôle** , avec lequel vous pouvez :
+Utilisez [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) pour l’identité et la catégorie **d’accès** au contrôle, avec laquelle vous pouvez :
 
-- Implémenter l’authentification resistante à la relecture (pour éviter les attaques de « l’homme en milieu »)
+- Implémenter une authentification résistant à la relecture (pour empêcher les attaques « De l’homme au milieu » )
 - Bloquer l’authentification héritée.
-- Configurez les risques utilisateur et les stratégies de risque de connexion utilisateur.
+- Configurez les stratégies de risque de l’utilisateur et de la connectez-vous.
 - Activer l’accès conditionnel et l’authentification multifacteur (MFA) pour les administrateurs et les non-administrateurs.
-- Configurez et appliquez des stratégies de mot de passe.
-- Restreignez l’accès aux comptes privilégiés avec Azure AD Privileged Identity Management.
+- Configurer et appliquer des stratégies de mot de passe.
+- Restreindre l’accès aux comptes privilégiés avec Azure AD Privileged Identity Management.
 - Désactiver l’accès lors de l’arrêt.
-- Audit des comptes d’utilisateur et des modifications d’État.
-- Passez en revue les groupes de rôles et les modifications administratives.
+- Auditer les comptes d’utilisateur et les changements d’état.
+- Passer en revue les modifications administratives et de groupe de rôles.
 
-Utilisez le [Gestionnaire de points de terminaison Microsoft](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) pour les appareils et la catégorie **gérer les appareils** , avec lequel vous pouvez :
+Utilisez [Microsoft Endpoint Manager pour](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) les appareils et la catégorie **Gérer** les appareils, avec laquelle vous pouvez :
 
-- Blocage de la prison et des appareils mobiles enracinés.
+- Bloquez les appareils mobiles rompus et racines de la cellule.
 - Configurez Intune pour la gestion des appareils mobiles.
-- Créer des stratégies de conformité pour les appareils Android, iOS, macOS et Windows.
-- Créez un profil de configuration d’appareil pour Android, iOS, macOS et appareils Windows.
+- Créez des stratégies de conformité pour les appareils Android, iOS, macOS et Windows.
+- Créez un profil de configuration d’appareil pour les appareils Android, iOS, macOS et Windows.
 - Créez des stratégies de protection des applications pour iOS et Windows.
-- Masquer les informations avec l’écran de verrouillage.
+- Masquer les informations à l’écran de verrouillage.
 - Implémenter des stratégies de mot de passe pour les appareils mobiles.
-- Exiger que les appareils mobiles soient verrouillés lors de l’inactivité.
-- Exigez la réinitialisation des appareils mobiles sur plusieurs échecs de connexion.
+- Exiger que les appareils mobiles se verrouillent en cas d’inactivité.
+- Exiger que les appareils mobiles s’effacent en cas d’échec de plusieurs connecteurs.
 
-Utilisez [Exchange Online Protection et Microsoft Defender pour Office 365](../security/office-365-security/office-365-atp.md) pour la catégorie **protéger contre les menaces** , avec lequel vous pouvez :
+Utilisez Exchange Online Protection et Microsoft Defender pour  [Office 365](../security/office-365-security/office-365-atp.md) pour la catégorie Protéger contre les menaces, avec laquelle vous pouvez :
 
-- Activer l’authentification des expéditeurs (SPF, DMARC et DKIM).
-- Configurez Microsoft Defender pour les stratégies anti-hameçonnage d’Office 365.
-- Implémenter des pièces jointes fiables.
-- Implémenter des liens fiables.
-- Implémenter des stratégies de détection et de réponse contre les programmes malveillants.
-- Implémenter des stratégies de courrier indésirable entrant et sortant.
+- Activer l’authentification de l’expéditeur (SPF, DMARC et DKIM).
+- Configurer Microsoft Defender pour les stratégies anti-hameçonnage d’Office 365.
+- Implémenter les pièces jointes sécurisées.
+- Implémenter des liens sécurisés.
+- Implémenter des stratégies de détection et de réponse aux programmes malveillants.
+- Implémenter des stratégies de courrier indésirable sortant et entrant.
 
-### <a name="references"></a>Référenç
+### <a name="references"></a>Références :
 
 - [Stratégies communes pour les identités et l’accès aux appareils](../security/office-365-security/identity-access-policies.md)
 - [Se protéger contre les menaces dans Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)

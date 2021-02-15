@@ -1,5 +1,5 @@
 ---
-title: Équipe isolée pour un projet à secret supérieur de Contoso Corporation
+title: Équipe isolée pour un projet top secret de Contoso Corporation
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,7 +15,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
-description: 'Résumé : Comment Contoso a utilisé une équipe avec l’isolation de sécurité pour un projet à secret principal afin de développer une nouvelle suite de produits et de services.'
+description: 'Résumé : Comment Contoso a utilisé une équipe avec isolation de sécurité pour un projet top secret afin de développer une nouvelle suite de produits et services.'
 ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
 ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
@@ -23,84 +23,84 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/22/2020
 ms.locfileid: "48656068"
 ---
-# <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Équipe isolée pour un projet à secret supérieur de Contoso Corporation
+# <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Équipe isolée pour un projet top secret de Contoso Corporation
 
-Après un cadre hors site, le PDG de Contoso a ordonné le développement d’une nouvelle suite de produits et de services qui pourrait doubler les bénéfices de contoso au cours des cinq prochaines années. Le projet de secret principal pour développer l’entreprise, l’ingénierie et le plan de marché a été nommé **Project 2x** et le personnel clé de l’entreprise ont été recrutés. 
+Après un site hors site, le PDG de Contoso a commandé le développement d’une nouvelle suite de produits et services qui pourrait doubler les bénéfices de Contoso au cours des cinq prochaines années. Le projet top secret pour développer l’entreprise, l’ingénierie et l’offre de marché était nommé **Project 2X** et le personnel clé au sein de l’entreprise a été embauché. 
 
-Les chronologies de recherche et de développement étaient étroites, ce qui signifiait que la collaboration devait être efficace et fournir des réunions sécurisées, des conversations en cours et le stockage de fichiers.
+La chronologie de la recherche et du développement était étroite, ce qui signifie que la collaboration devait être efficace et fournir des réunions sécurisées, des conversations en cours et un stockage de fichiers.
 
-Les livrables résultants pour Project 2X étaient des offres professionnelles, des spécifications de produits et d’ingénierie, ainsi que des documents et des plans de marketing sous forme de fichiers Word, Excel et PowerPoint. 
+Les livrables pour Project 2X étaient des plans d’entreprise, des spécifications de produit et d’ingénierie, ainsi que des supports et des planifications marketing sous la forme de fichiers Word, Excel et PowerPoint. 
 
-En raison de leur nature confidentielle, l’accès à ces fichiers était :
+En raison de leur nature sensible, l’accès à ces fichiers était :
 
-- Limité à Project 2X membres de l’équipe et leadership senior.
-- Chiffrés et protégés par des autorisations pour permettre l’accès uniquement aux membres de l’équipe Project 2X et aux dirigeants, même si les fichiers ont été distribués en dehors de leurs dossiers sécurisés.
+- Limité aux membres de l’équipe Project 2X et à la direction.
+- Chiffré et protégé par des autorisations permettant d’autoriser l’accès uniquement aux membres de l’équipe Project 2X et à la direction, même si les fichiers ont été distribués en dehors de leurs dossiers sécurisés.
 
-Le personnel informatique de Contoso a utilisé une [équipe avec l’isolation de sécurité](secure-teams-security-isolation.md) pour Project 2x et ces étapes.
+Le personnel informatique de Contoso a utilisé une équipe avec isolation de la [sécurité](secure-teams-security-isolation.md) pour Project 2X et ces étapes.
 
-## <a name="step-1-created-a-private-team"></a>Étape 1 : création d’une équipe privée
+## <a name="step-1-created-a-private-team"></a>Étape 1 : Création d’une équipe privée
 
-Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de contoso ont configuré les [stratégies d’accès SharePoint recommandées](../security/office-365-security/sharepoint-file-access-policies.md).
+Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies d’accès [SharePoint recommandées.](../security/office-365-security/sharepoint-file-access-policies.md)
 
-Ensuite, un administrateur informatique de Contoso a créé une nouvelle équipe privée appelée Project 2X et a ajouté les comptes d’utilisateur de Project 2X personnel en tant que membres. Ils ont également configuré l’équipe de sorte que seuls les propriétaires d’équipe Project 2X puissent créer des canaux privés.
+Ensuite, un administrateur informatique de Contoso a créé une équipe privée nommée Project 2X et ajouté les comptes d’utilisateur du personnel Project 2X en tant que membres. Ils ont également configuré l’équipe de sorte que seuls les propriétaires d’équipe Project 2X peuvent créer des canaux privés.
 
-Pour plus d’informations sur la configuration, consultez la rubrique [Create a private Team](secure-teams-security-isolation.md#create-a-private-team).
+Pour plus d’informations sur la configuration, voir [Créer une équipe privée.](secure-teams-security-isolation.md#create-a-private-team)
 
-## <a name="step-2-created-a-sensitivity-label-for-the-project-2x-team"></a>Étape 2 : création d’une étiquette de critère de diffusion pour l’équipe Project 2X
+## <a name="step-2-created-a-sensitivity-label-for-the-project-2x-team"></a>Étape 2 : Création d’une étiquette de niveau de sensibilité pour l’équipe Project 2X
 
-Les administrateurs contoso ont créé une étiquette de sensibilité nommée **Project 2x** qui :
+Les administrateurs Contoso ont créé une étiquette de sensibilité **nommée Project 2X** qui :
 
 - Chiffrement activé.
-- Autorisations Co-Author autorisées pour le projet 2X groupe Microsoft 365.
-- Autorisations de la visionneuse autorisées pour le groupe de leadership senior.
-- Blocage de l’accès aux appareils non gérés.
+- Autorisations Co-Author pour le groupe Microsoft 2X Project 365.
+- Autorisations de visionneuse autorisées pour le groupe Senior Leadership.
+- Accès bloqué aux appareils non utilisés.
 
-Les fichiers de la section **documents** du projet sous-jacent 2 SharePoint ont été protégés par :
+Les fichiers de la section **Documents** du site SharePoint Project 2X sous-jacent étaient protégés par :
 
-- Les autorisations de site, qui autorisent uniquement les autorisations maximales pour les membres du projet 2X groupe Microsoft 365 et les autorisations de lecture sur le groupe de leadership senior.
-- L’étiquette de sensibilité Project 2X, avec le chiffrement et les autorisations qui transitent avec le fichier s’il est déplacé ou copié à partir du site.
+- Autorisations de site, qui autorisent uniquement les autorisations complètes pour les membres du groupe Project 2X Microsoft 365 et les autorisations de lecture pour le groupe Senior Leadership.
+- Étiquette de sensibilité Project 2X, avec chiffrement et autorisations qui se déplacent avec le fichier s’il est déplacé ou copié à partir du site.
 
-Pour plus d’informations sur la configuration, consultez la rubrique [Create a Sensitivity label](secure-teams-security-isolation.md#create-a-sensitivity-label).
+Pour plus d’informations sur la configuration, voir [Créer une étiquette de sensibilité.](secure-teams-security-isolation.md#create-a-sensitivity-label)
 
-## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Étape 3 : configuration du site SharePoint sous-jacent
+## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Étape 3 : Configuration du site SharePoint sous-jacent
 
-Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de contoso ont configuré les [stratégies d’accès SharePoint recommandées](../security/office-365-security/sharepoint-file-access-policies.md).
+Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies d’accès [SharePoint recommandées.](../security/office-365-security/sharepoint-file-access-policies.md)
 
-Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires pour le site :
+Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires pour le site :
 
-- Pour empêcher Project 2X membres du groupe de partager l’accès au site. Pour plus d’informations sur la configuration, consultez la rubrique [paramètres SharePoint pour une équipe avec isolation de sécurité](secure-teams-security-isolation.md#sharepoint-settings).
-- Pour les autorisations de lecture pour le groupe de leadership senior.
+- Pour empêcher les membres du groupe Project 2X de partager l’accès au site. Pour plus d’informations sur la configuration, voir [paramètres SharePoint](secure-teams-security-isolation.md#sharepoint-settings)pour une équipe avec isolation de sécurité.
+- Pour les autorisations de lecture pour le groupe Senior Leadership.
 
-Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires pour le site afin d’empêcher Project 2X membres du groupe de partager l’accès au site. 
+Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires pour le site afin d’empêcher les membres du groupe Project 2X de partager l’accès au site. 
 
-Comme les canaux privés pour le projet 2X ont été créés, le propriétaire du groupe a désactivé le partage d’invité et définit le lien de partage par défaut sur la valeur de **personnes spécifiques** .
+À mesure que des canaux privés pour Project 2X ont été créés, le propriétaire du groupe a désactivé le partage d’invités et définissez le lien de partage par défaut sur la valeur Personnes **spécifiques.**
 
-Voici la configuration obtenue de l’équipe Project 2X avec l’isolation de sécurité.
+Voici la configuration résultante de l’équipe Project 2X avec isolation de sécurité.
 
-![La configuration obtenue de l’équipe Project 2X](../media/contoso-team-for-top-secret-project.png)
+![Configuration résultante de l’équipe Project 2X](../media/contoso-team-for-top-secret-project.png)
 
- ## <a name="step-4-trained-project-2x-team-members"></a>Étape 4 : projet formé 2X membres de l’équipe
+ ## <a name="step-4-trained-project-2x-team-members"></a>Étape 4 : Membres d’équipe Project 2X formés
 
-Le personnel de sécurité de Contoso a formé le projet 2 membres d’équipe dans un cours obligatoire qui les a exécutés par les utilisateurs :
+Le personnel de sécurité de Contoso a formé les membres de l’équipe Project 2X dans un cours obligatoire qui les a formés à :
 
-- Comment accéder au nouveau projet 2 équipe, utiliser des réunions et des conversations et collaborer sur des fichiers d’équipe.
+- Comment accéder à la nouvelle équipe Project 2X, utiliser des réunions et des conversations, et comment collaborer sur des fichiers d’équipe.
 - Comment créer des fichiers dans l’équipe et télécharger de nouveaux fichiers créés localement.
-- Comment étiqueter les fichiers avec l’étiquette de sensibilité Project 2X.
+- Comment étiqueter des fichiers avec l’étiquette de sensibilité Project 2X.
 - Démonstration de la façon dont l’étiquette Project 2X protège un fichier même lorsqu’il quitte l’équipe.
 
-Le résultat final était un environnement sécurisé dans lequel Project 2 membres de l’équipe ont collaboré dans un environnement sécurisé pour les conversations, les réunions et les fichiers.
+Le résultat final est un environnement sécurisé dans lequel les membres de l’équipe Project 2X ont travaillé dans un environnement sécurisé pour les conversations, les réunions et les fichiers.
 
-Voici un exemple de fichier stocké dans le site du projet 2 sous-jacent avec l’étiquette de sensibilité de projet 2 affectée.
+Voici un exemple de fichier stocké dans le site Project 2X sous-jacent avec l’étiquette de sensibilité Project 2X attribuée.
 
-![Exemple de fichier stocké dans le site du projet 2 sous-jacent](../media/contoso-team-for-top-secret-project-example.png)
+![Exemple de fichier stocké dans le site Project 2X sous-jacent](../media/contoso-team-for-top-secret-project-example.png)
 
-Dans quelques exemples, Project 2X les membres de l’équipe ont téléchargé des fichiers protégés par l’étiquette Project 2X sur un lecteur local pour le travail hors connexion. 
+Dans deux cas, les membres de l’équipe Project 2X ont téléchargé des fichiers protégés par l’étiquette Project 2X sur un lecteur local pour le travail hors connexion. 
 
-Toutefois, une fois que vous êtes invité à entrer les informations d’identification lors de leur ouverture, elles ont fait l’erreur et les ont supprimées.
+Toutefois, après avoir été invité à obtenir des informations d’identification lors de leur ouverture, ils ont réalisé leur erreur et les ont supprimés.
 
-En raison de l’environnement de collaboration de teams et des fonctionnalités de sécurité de Microsoft 365, les détails du projet 2X étaient secrets pendant toute la durée du projet. Contoso a annoncé ses plans et est en train de déployer les nouveaux produits et services à l’esprit de ses clients et investisseurs, ainsi que les chagrin de ses concurrents.
+En raison de l’environnement de collaboration de Teams et des fonctionnalités de sécurité de Microsoft 365, les détails de Project 2X ont été conservés secrètes pendant toute la durée du projet. Contoso a annoncé ses plans et est en train de déployer les nouveaux produits et services pour le plus grand plaisir de ses clients, de ses investisseurs et de ses concurrents.
 
 ## <a name="next-step"></a>Étape suivante
 
-[Déployer une équipe avec l’isolation de sécurité](secure-teams-security-isolation.md) dans votre organisation.
+[Déployez une équipe avec isolation de la sécurité](secure-teams-security-isolation.md) dans votre organisation.
 

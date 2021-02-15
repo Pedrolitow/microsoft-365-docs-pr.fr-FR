@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Configurez les fonctionnalités de conformité pour empêcher toute perte de données et protéger les informations sensibles de vos clients.
+description: Configurer des fonctionnalités de conformité pour éviter la perte de données et sécuriser les informations sensibles de vos clients et de vos clients.
 ms.openlocfilehash: 2c95ad3f36df28af2c68cd11192bcfe92dfe29e3
 ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
@@ -31,47 +31,47 @@ ms.locfileid: "48841170"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 
-Microsoft 365 Business Premium inclut des fonctionnalités pour protéger vos données et appareils, et vous aider à sécuriser les informations sensibles de vos clients.
+Votre Abonnement Microsoft 365 Business Premium comprend des fonctionnalités pour protéger vos données et appareils et vous aider à sécuriser les informations sensibles de vos clients et de vos clients.
 
 ## <a name="set-up-dlp-features"></a>Configurer les fonctionnalités DLP
 
-Reportez-vous à la rubrique [Create a DLP Policy from a template](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) pour obtenir un exemple sur la façon de configurer une stratégie de protection contre la perte de données personnelles. 
+Voir [Créer une stratégie DLP à partir](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) d’un modèle pour obtenir un exemple sur la façon de configurer une stratégie pour protéger contre la perte de données personnelles. 
   
-DLP comprend de nombreux modèles de stratégie prêts à l’emploi pour de nombreux paramètres régionaux différents. Par exemple, les données financières de l’Australie, le Canada Personal Information Act, les données financières américaines, etc. Consultez la rubrique relative aux [modèles de stratégie DLP](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) pour une liste complète. Tous ces modèles peuvent être activés de la même manière que l’exemple de modèle PII. 
+DLP est livré avec de nombreux modèles de stratégie prêts à l’emploi pour de nombreux paramètres régionaux différents. Par exemple, les données financières en Australie, la Loi canadienne sur les informations personnelles, les données financières américaines, etc. Voir [ce que les modèles de stratégie DLP incluent](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) pour obtenir une liste complète. Tous ces modèles peuvent être activés de la même façon que l’exemple de modèle PII. 
   
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurer la rétention du courrier électronique avec archivage Exchange Online
+## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurer la rétention du courrier électronique à l’Archivage Exchange Online
 
- Les fonctionnalités de licence d' **archivage Exchange Online** permettent de respecter les normes de conformité et de réglementation en conservant le contenu des courriers électroniques pour eDiscovery. Elle permet également de réduire les risques en cas de poursuites, et permet de récupérer les données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
+ **Archivage Exchange Online** licences permettent de maintenir les normes réglementaires et de conformité en conservant le contenu du courrier électronique pour eDiscovery. Cela permet également de réduire vos risques en cas de poursuites judiciaires et permet de récupérer des données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
   
-**Conservation pour litige :** Vous pouvez conserver tout le contenu des boîtes aux lettres, y compris les éléments supprimés, en mettant la boîte aux lettres entière d’un utilisateur en conservation pour litige. 
+**Attente pour litige :** Vous pouvez conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés, en mettant la boîte aux lettres entière d’un utilisateur en attente pour litige. 
     
-Pour placer une boîte aux lettres en conservation pour litige, dans le centre d’administration :
+Pour placer une boîte aux lettres en attente pour litige, dans le Centre d’administration :
     
-1. Dans le volet de **navigation de gauche, accédez à utilisateurs** \> **actifs** .
+1. Dans le navigation gauche, allez à **Utilisateurs** \> **actifs.**
     
-2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en conservation pour litige. Dans le volet utilisateur, développez **paramètres de messagerie** , puis en regard de **paramètres supplémentaires** , choisissez **modifier les propriétés Exchange** .
+2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en attente pour litige. Dans le volet utilisateur, développez **Paramètres de messagerie,** puis en plus des **paramètres,** choisissez **Modifier les propriétés Exchange**.
     
-3. Sur la page boîte aux lettres de l’utilisateur, choisissez les fonctionnalités de boîte aux lettres * * dans le volet de navigation de gauche, puis cliquez sur le lien **activer** en **conservation pour litige** .
+3. Dans la page de boîte aux lettres de l’utilisateur, choisissez ** fonctionnalités de boîte aux lettres ** dans le navigation gauche, puis choisissez le lien Activer sous Attente pour **litige.** 
     
-4. Dans la boîte de dialogue **conservation pour litige** , vous pouvez spécifier la durée de la conservation pour litige dans le champ Durée de la **conservation pour litige** . Laissez le champ vide si vous voulez placer un blocage infini. Vous pouvez également ajouter des notes et diriger le propriétaire de la boîte aux lettres vers un site Web vous devrez peut-être en savoir plus sur la suspension pour litige. \>**Enregistrer** .
+4. Dans la boîte **de dialogue De attente** pour litige, vous pouvez spécifier la durée de la durée de la attente pour litige dans le champ Durée de la durée de la période de attente **pour** litige. Laissez le champ vide si vous souhaitez placer une attente infinie. Vous pouvez également ajouter des notes et diriger le propriétaire de la boîte aux lettres vers un site web dont vous pourriez avoir besoin pour en savoir plus sur la mise en attente pour litige. \>**Enregistrer**.
     
-**Rétention :** Vous pouvez activer des stratégies de rétention personnalisées, par exemple, pour conserver un certain temps ou supprimer définitivement le contenu à la fin de la période de rétention. Pour en savoir plus, consultez la rubrique [vue d’ensemble des stratégies de rétention](https://docs.microsoft.com/microsoft-365/compliance/retention-policies).
+**Rétention :** Vous pouvez activer des stratégies de rétention personnalisées, par exemple, pour conserver un certain temps ou supprimer définitivement du contenu à la fin de la période de rétention. Pour plus d’informations, voir [Vue d’ensemble des stratégies de rétention.](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
-## <a name="set-up-sensitivity-labels"></a>Configurer les étiquettes de confidentialité
+## <a name="set-up-sensitivity-labels"></a>Configurer les étiquettes de niveau de sensibilité
 
-Les étiquettes de confidentialité sont fournies avec Azure information protection (AIP) plan 1 et vous aident à classer et éventuellement protéger vos documents et e-mails en appliquant des étiquettes. Les étiquettes peuvent être appliquées automatiquement par les administrateurs qui définissent des règles et des conditions, manuellement par les utilisateurs ou à l’aide d’une combinaison de recommandations pour les utilisateurs.
+Les étiquettes de niveau de sensibilité sont disponibles avec Azure Information Protection (AIP) Plan 1 et vous aident à classer et éventuellement protéger vos documents et e-mails en appliquant des étiquettes. Les étiquettes peuvent être appliquées automatiquement par les administrateurs qui définissent des règles et des conditions, manuellement par les utilisateurs ou à l’aide d’une combinaison dans laquelle des recommandations sont données aux utilisateurs.
 
-Pour configurer les étiquettes de confidentialité, affichez la vidéo [créer et gérer les étiquettes de confidentialité](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) .
+Pour configurer les étiquettes de niveau de sensibilité, affichez la vidéo créer et gérer [les étiquettes de](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) sensibilité.
 
 
 
-### <a name="install-the-azure-information-protection-client-manually"></a>Installation manuelle du client Azure information protection
+### <a name="install-the-azure-information-protection-client-manually"></a>Installer manuellement le client Azure Information Protection
 
-Pour installer manuellement le client AIP :
+Pour installer manuellement le client AIP :
 
-1. Téléchargez **AzinfoProtection_UL.exe** à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Téléchargez **AzinfoProtection_UL.exe** à partir du [Centre de téléchargement Microsoft.](https://www.microsoft.com/download/details.aspx?id=53018)
  
-2. Vous pouvez vérifier que l’installation a fonctionné en affichant un document Word et en vous assurant que l’option de **confidentialité** est disponible sous l’onglet **Accueil** .
-<br/>![Onglet protection dans un document Word.](../media/word-sensitivity.png)
+2. Pour vérifier que l’installation a fonctionné, affichez  un document Word et assurez-vous que l’option Sensibilité est disponible sous **l’onglet Accueil.**
+<br/>![Onglet Protection dans un document Word.](../media/word-sensitivity.png)
 
-Pour plus d’informations, consultez [la rubrique installer le client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).
+Pour plus d’informations, voir [Installer le client.](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)

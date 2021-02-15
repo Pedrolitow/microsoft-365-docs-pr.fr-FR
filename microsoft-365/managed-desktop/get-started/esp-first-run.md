@@ -1,6 +1,6 @@
 ---
 title: Expérience de première exécution avec le pilote automatique et la page état d’inscription
-description: Comment déployer l’expérience ESP, les paramètres utilisés et les modifications apportées à la configuration
+description: Comment déployer l’expérience ESP, les paramètres utilisés et les modifications de configuration
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -19,95 +19,95 @@ ms.locfileid: "49126624"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Expérience de première exécution avec le pilote automatique et la page état d’inscription
 
-Microsoft Managed Desktop utilise à la fois la page d' [État d’enregistrement](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) de [Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) et de Microsoft Intune pour offrir la meilleure expérience de première utilisation possible à vos utilisateurs.
+Bureau géré Microsoft utilise [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) et la page d’état d’inscription de Microsoft Intune [(ESP)](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) pour offrir la meilleure expérience de première utilisation possible à vos utilisateurs.
 
-La page État de l’enregistrement est actuellement en version préliminaire publique.
+La page État de l’inscription est actuellement en prévisualisation publique.
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
-Pour fournir l’expérience ESP, vous devez inscrire des appareils dans le service bureau géré Microsoft. Pour plus d’informations sur l’inscription, reportez-vous à la rubrique [enregistrer les nouveaux appareils vous-même](../get-started/register-devices-self.md) ou [les étapes à suivre pour inscrire des](../get-started/register-devices-partner.md)
+Pour offrir l’expérience ESP, vous devez inscrire des appareils dans le service Bureau géré Microsoft. Pour plus d’informations sur l’inscription, voir [Inscrire de nouveaux appareils vous-même](../get-started/register-devices-self.md) ou [Étapes pour que les partenaires inscrivent des appareils.](../get-started/register-devices-partner.md)
 
-Une fois que vos appareils sont inscrits auprès du service, vous pouvez activer ESP pour vos appareils de bureau gérés par Microsoft en archivant un ticket de support via le [portail d’administration](https://portal.azure.com/). Lors du déploiement initial de la configuration ESP dans le groupe de test, vous devez classer le ticket. Elle est déployée dans les autres groupes de déploiement suivants (tout d’abord, rapide et large) toutes les 24 heures. Pour suspendre le déploiement, fichier autre ticket demandant les opérations à conserver.
+Une fois que vos appareils sont inscrits auprès du service, vous pouvez activer ESP pour vos appareils de bureau géré Microsoft en classant un ticket de support via le portail [d’administration.](https://portal.azure.com/) Nous allons initialement déployer la configuration ESP dans le groupe test lorsque vous déposez le ticket. Il est déployé dans les autres groupes de déploiement suivants (First, Fast et Broad) toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de se tenir en attente.
 
-## <a name="autopilot-profile-settings"></a>Paramètres du profil AutoPilot
+## <a name="autopilot-profile-settings"></a>Paramètres de profil Autopilot
 
-Microsoft Managed Desktop utilise ces paramètres dans le profil AutoPilot utilisé pour les appareils de vos utilisateurs :
+Bureau géré Microsoft utilise ces paramètres dans le profil Autopilot utilisé pour les appareils de vos utilisateurs :
 
 
-|Paramètres  |Valeur  |
+|Setting  |Valeur  |
 |---------|---------|
 |Mode de déploiement |  Piloté par l’utilisateur       |
-|Rejoindre Azure AD en tant que     |  Azure AD jointe       |
-|Langue (région)     | Système d’exploitation par défaut        |
+|Rejoindre Azure AD en tant que     |  Joint à Azure AD       |
+|Langue (Région)     | Système d’exploitation par défaut        |
 |Configurer automatiquement le clavier     | Non        |
 |Termes du contrat de licence logiciel Microsoft     |  Masquer       |
 |Paramètres de confidentialité     | Masquer        |
-|Masquer les options de modification de compte     | Afficher        |
+|Masquer les options de modification du compte     | Afficher        |
 |Type de compte d’utilisateur     |  Standard       |
-|Autoriser le gant blanc OOBE     |  Oui       |
+|Autoriser la OOBE pour les gant blancs     |  Oui       |
 |Appliquer le modèle de nom d’appareil     | Oui        |
-|Entrez un nom     | MMD-% RAND : 11%        |
+|Entrer un nom     | MMD-%RAND:11%        |
 
 > [!NOTE]
-> Bien que la mise en service de « gant blanc » ne soit activée que pour les clients pour lesquels ESP est activé, elle n’est actuellement pas prise en charge dans le bureau géré Microsoft.
+> Bien que l’approvisionnement « gant blanc » soit uniquement activé pour les clients avec ESP activé, il n’est actuellement pas pris en charge dans Bureau géré Microsoft.
 
-## <a name="enrollment-status-page-settings"></a>Paramètres de la page d’état d’enregistrement
+## <a name="enrollment-status-page-settings"></a>Paramètres de la page État de l’inscription
 
-Microsoft Managed Desktop utilise ces paramètres pour l’expérience de page d’état d’enregistrement :
+Bureau géré Microsoft utilise ces paramètres pour l’expérience page État de l’inscription :
 
 
-|Paramètres  |Valeur  |
+|Setting  |Valeur  |
 |---------|---------|
-|Afficher la progression de la configuration de l’application et du profil     | Oui        |
+|Afficher l’avancement de la configuration des applications et des profils     | Oui        |
 |Afficher une erreur lorsque l’installation prend plus de temps que le nombre de minutes spécifié     |  60       |
-|Afficher un message personnalisé lorsque une erreur de délai se produit     |  Oui       |
-|Message d’erreur     | Oui, il faut un peu plus de temps pour configurer votre appareil que prévu. Cliquez ci-dessous pour commencer et terminer la configuration en arrière-plan        |
+|Afficher un message personnalisé en cas d’erreur de limite de temps     |  Oui       |
+|Message d’erreur     | Oui, la mise en place de votre appareil prend un peu plus de temps que prévu. Cliquez ci-dessous pour commencer et nous terminerons la configuration en arrière-plan        |
 |Autoriser les utilisateurs à collecter des journaux sur les erreurs d’installation     |  Oui       |
-|Afficher uniquement la page aux appareils mis en service par OOBE (out-of-Box Experience)     | Oui        |
-|Bloquer l’utilisation des appareils jusqu’à ce que toutes les applications et tous les profils soient installés     |  Oui       |
-|Autoriser les utilisateurs à réinitialiser le périphérique si une erreur d’installation se produit     |  Oui       |
-|Autoriser les utilisateurs à utiliser l’appareil si une erreur d’installation se produit     |  Oui       |
-|Bloquer l’utilisation des appareils jusqu’à ce que ces applications requises soient installées si elles sont attribuées à l’utilisateur/périphérique     |  Correction du temps de travail moderne       |
+|Afficher uniquement la page sur les appareils provisionés par l’expérience OOBE (Out-of-Box Experience)     | Oui        |
+|Bloquer l’utilisation de l’appareil jusqu’à ce que toutes les applications et les profils soient installés     |  Oui       |
+|Autoriser les utilisateurs à réinitialiser l’appareil en cas d’erreur d’installation     |  Oui       |
+|Autoriser les utilisateurs à utiliser l’appareil en cas d’erreur d’installation     |  Oui       |
+|Bloquer l’utilisation de l’appareil jusqu’à ce que ces applications requises soient installées si elles sont affectées à l’utilisateur/l’appareil     |  Espace de travail moderne - Correction du temps       |
 
 
 
-L’expérience de page d’état d’enregistrement se produit en trois phases. Pour plus d’informations, consultez la rubrique relative au [suivi des pages d’état des inscriptions](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
+L’expérience page État de l’inscription se produit en trois phases. Pour plus d’informations, consultez les informations de suivi [de la page État de l’inscription.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)
 
-L’expérience se déroule comme suit :
+L’expérience se déroule comme suit :
 
-1. L’expérience du pilotage automatique démarre et l’utilisateur entre ses informations d’identification.
-2. L’appareil ouvre la page d’état de l’enregistrement et procède aux phases de configuration de l’appareil et de l’appareil. La troisième étape (configuration de compte) est *actuellement ignorée* dans la configuration du bureau géré Microsoft car l’ESP utilisateur est désactivé. Le périphérique redémarre.
-3. Après le redémarrage, l’appareil ouvre la page de connexion Windows avec d' **autres utilisateurs**.
-4. Les utilisateurs entrent de nouveau leurs informations d’identification et le Bureau s’ouvre.
+1. L’expérience Autopilot démarre et l’utilisateur entre ses informations d’identification.
+2. L’appareil ouvre la page État de l’inscription et passe par les phases de préparation et de configuration de l’appareil. La troisième étape (configuration  du compte) est actuellement ignorée dans la configuration du Bureau géré Microsoft, car l’esp utilisateur est désactivée. L’appareil redémarre.
+3. Après le redémarrage, l’appareil ouvre la page de signature Windows avec **un autre utilisateur.**
+4. Les utilisateurs entrent à nouveau leurs informations d’identification et le Bureau s’ouvre.
 
 > [!NOTE]
-> Les applications Win32 sont déployées uniquement lors de l’utilisation de ESP si la version Windows 10 est 1903 ou ultérieure.
+> Les applications Win32 sont déployées uniquement pendant esp si la version windows 10 est 1903 ou ultérieure.
 
-![Page de démarrage de la configuration de AutoPilot affichant les phases de préparation de l’appareil et de configuration de l’appareil.](../../media/mmd-autopilot-screenshot.png)
+![Page de démarrage du programme d’installation d’Autopilot affichant les phases de « préparation de l’appareil » et de « configuration de l’appareil ».](../../media/mmd-autopilot-screenshot.png)
 
-## <a name="white-glove-provisioning"></a>Provisionnement de gants blancs
+## <a name="white-glove-provisioning"></a>Mise en service des gant blancs
 
-Microsoft Managed Desktop ne prend actuellement pas en charge la fonctionnalité « gant blanc » de Windows AutoPilot.
+Bureau géré Microsoft ne prend actuellement pas en charge la fonctionnalité « gant blanc » de Windows Autopilot.
 
-## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modification apportée aux paramètres de la page État de l’installation et Autopilot
+## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modifier les paramètres Autopilot et Page d’état de l’inscription
 
-Si le programme d’installation utilisé par le bureau géré par Microsoft ne correspond pas exactement à vos besoins, vous pouvez classer un ticket de support via le [portail d’administration](https://portal.azure.com/). Voici quelques exemples de types de configuration dont vous pouvez avoir besoin :
+Si le programme d’installation utilisé par Bureau géré Microsoft ne correspond pas exactement à vos besoins, vous pouvez déposer un ticket de support via le [portail d’administration.](https://portal.azure.com/) Voici quelques exemples des types de configuration dont vous pourriez avoir besoin :
 
-### <a name="autopilot-settings-change"></a>Modification des paramètres de pilotage automatique
+### <a name="autopilot-settings-change"></a>Modification des paramètres Autopilot
 
-Vous souhaiterez peut-être demander un autre modèle de nom d’appareil. Toutefois, vous ne pouvez pas modifier le mode de déploiement, rejoindre Azure AD en tant que, paramètres de confidentialité ou type de compte d’utilisateur.
+Vous pouvez demander un autre modèle de nom d’appareil. Toutefois, vous ne pouvez pas modifier le mode de déploiement, rejoindre Azure AD As, les paramètres de confidentialité ou le type de compte d’utilisateur.
 
-### <a name="enrollment-status-page-settings-change"></a>Modification des paramètres de page d’état d’enregistrement
+### <a name="enrollment-status-page-settings-change"></a>Modification des paramètres de la page d’état de l’inscription
 
-- Un nombre de minutes plus long pour le paramètre « afficher une erreur lorsque l’installation prend plus de temps que le nombre de minutes spécifié ».
+- Nombre de minutes plus long pour le paramètre « Afficher une erreur lorsque l’installation prend plus de temps que le nombre de minutes spécifié ».
 - Message d’erreur affiché
-- Ajout ou suppression d’applications dans le paramètre « bloquer l’utilisation des appareils jusqu’à ce que ces applications requises soient installées si elles sont affectées au paramètre utilisateur/périphérique ».
+- Ajout ou suppression d’applications dans le paramètre « Bloquer l’utilisation des appareils jusqu’à ce que ces applications requises soient installées si elles sont affectées à l’utilisateur/l’appareil ».
 
 ## <a name="required-applications"></a>Applications requises
 
-- Vous devez cibler les applications dans les *groupes d’appareils* de travail modernes test, tout d’abord, rapide et large. Les applications doivent être installées dans le contexte « système ». Assurez-vous d’effectuer les tests avec ESP dans le groupe test avant de les affecter à tous les groupes.
-- Aucune application ne doit redémarrer l’appareil. Nous recommandons que les applications soient définies sur « ne rien faire » lorsque vous créez le package d’application s’ils nécessitent un redémarrage.
+- Vous devez cibler des applications dans les groupes d’appareils Workplace modernes *Test,* First, Fast et Broad. Les applications doivent être installées dans le contexte « Système ». Veillez à effectuer le test avec ESP dans le groupe Test avant de les affecter à tous les groupes.
+- Aucune application ne doit nécessiter le redémarrage de l’appareil. Nous recommandons que les applications soient définies sur « Ne rien faire » lorsque vous créez le package d’application si elles nécessitent un redémarrage.
 - Limitez les applications requises aux applications principales dont un utilisateur a besoin immédiatement lorsqu’il se connecte à l’appareil.
-- Conservez la taille totale de toutes les applications sous une limite de 1 Go pour éviter les délais d’expiration pendant la phase d’installation de l’application.
-- Idéalement, les applications ne doivent pas avoir de dépendances. Si vous avez des applications qui *doivent* avoir des dépendances, veillez à les configurer, les tester et les valider dans le cadre de votre évaluation ESP.
-- Aucune application nécessitant le contexte « User » (par exemple, Teams) ne peut être incluse dans la préversion publique d’ESP.
+- Conservez la taille totale de toutes les applications collectivement sous 1 Go pour éviter les délai d’accès pendant la phase d’installation de l’application.
+- Dans l’idéal, les applications ne doivent pas avoir de dépendances. Si vous avez des applications qui *doivent* avoir des dépendances, assurez-vous de les configurer, de les tester et de les valider dans le cadre de votre évaluation ESP.
+- Aucune application nécessitant le contexte « utilisateur » (par exemple, Teams) ne peut être incluse dans la prévisualisation publique d’ESP.

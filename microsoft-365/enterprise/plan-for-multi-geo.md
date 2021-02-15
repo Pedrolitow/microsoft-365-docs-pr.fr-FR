@@ -30,13 +30,13 @@ Dans une configuration multigéographique, votre locataire Microsoft 365 se comp
 
 Voici quelques termes géographiques clés pour vous aider à comprendre les concepts de base de la configuration :
 
--   **Locataire**  : représentation d’une organisation dans Microsoft 365 à laquelle sont généralement associés un ou plusieurs domaines (par exemple, https://contoso.sharepoint.com)). 
+-   **Locataire** : représentation d’une organisation dans Microsoft 365 à laquelle sont généralement associés un ou plusieurs domaines (par exemple, https://contoso.sharepoint.com)). 
 
--   **Emplacements géographiques**  : emplacements géographiques disponibles pour héberger des données dans un locataire Microsoft 365.
+-   **Emplacements géographiques** : emplacements géographiques disponibles pour héberger des données dans un locataire Microsoft 365.
 
--   **Emplacements satellites**  : emplacements géographiques supplémentaires que vous avez configurées pour héberger des données dans votre locataire Microsoft 365. Les locataires multigéographiques s’étendent sur plus d’un emplacement géographique, par exemple, l’Amérique du Nord et l’Europe.
+-   **Emplacements satellites** : emplacements géographiques supplémentaires que vous avez configurées pour héberger des données dans votre locataire Microsoft 365. Les locataires multigéographiques s’étendent sur plus d’un emplacement géographique, par exemple, l’Amérique du Nord et l’Europe.
 
--   **Emplacement par défaut des données**  : emplacement géographique où sont stockées les données Exchange et OneDrive d’un utilisateur individuel. L’administrateur peut définir cette valeur sur l’un des emplacements géographiques configurés pour le locataire. Notez que si vous modifiez l’emplacement par défaut des données pour un utilisateur disposant déjà d’un site OneDrive, les données OneDrive de celui-ci ne sont déplacées automatiquement vers le nouvel emplacement géographique. Pour plus d’informations, voir [Déplacer une bibliothèque OneDrive vers un autre emplacement géographique](move-onedrive-between-geo-locations.md). Si l’utilisateur dispose d’une boîte aux lettres Exchange, celle-ci est automatiquement déplacée vers le nouvel emplacement par défaut des données.
+-   **Emplacement par défaut des données** : emplacement géographique où sont stockées les données Exchange et OneDrive d’un utilisateur individuel. L’administrateur peut définir cette valeur sur l’un des emplacements géographiques configurés pour le locataire. Notez que si vous modifiez l’emplacement par défaut des données pour un utilisateur disposant déjà d’un site OneDrive, les données OneDrive de celui-ci ne sont déplacées automatiquement vers le nouvel emplacement géographique. Pour plus d’informations, voir [Déplacer une bibliothèque OneDrive vers un autre emplacement géographique](move-onedrive-between-geo-locations.md). Si l’utilisateur dispose d’une boîte aux lettres Exchange, celle-ci est automatiquement déplacée vers le nouvel emplacement par défaut des données.
 
 L’activation Multi-Géo requiert quatre étapes principales :
 
@@ -73,7 +73,7 @@ Si vos utilisateurs sont synchronisés à partir d’un système Active Director
 
 L’administration d’un client multigéographique peut être différente de celle d’un client non multigéographique, car de nombreux services et paramètres SharePoint et OneDrive sont adaptés à un environnement multigéographique. Nous vous recommandons de consulter l’article relatif à l’[administration d’un environnement multi-géographique](administering-a-multi-geo-environment.md) avant de poursuivre votre configuration.
 
-Lisez l' [expérience utilisateur dans un environnement multi-géo](multi-geo-user-experience.md) pour obtenir des informations détaillées sur l’expérience de vos utilisateurs finaux dans un environnement multigéographique.
+Lisez [l’expérience utilisateur dans un environnement multigé](multi-geo-user-experience.md) géographique pour plus d’informations sur l’expérience de vos utilisateurs finaux dans un environnement multigéogé.
 
 Si vous souhaitez en savoir plus sur l’expérience Teams dans une location multigéographique de Microsoft 365, veuillez consulter [Expérience Teams dans une location multigéographique compatible avec Microsoft 365, OneDrive et SharePoint Online](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 

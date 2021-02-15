@@ -19,7 +19,7 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: Découvrez comment utiliser des modules différents dans PowerShell pour supprimer des comptes d’utilisateur Microsoft 365.
+description: Découvrez comment utiliser différents modules dans PowerShell pour supprimer des comptes d’utilisateur Microsoft 365.
 ms.openlocfilehash: 39bf57fe7e7aad1bdc9915e503107ad799515030
 ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
@@ -32,29 +32,29 @@ ms.locfileid: "48754539"
 Vous pouvez utiliser PowerShell pour Microsoft 365 pour supprimer et restaurer des comptes d’utilisateurs.
 
 >[!Note]
->Découvrez comment [restaurer un compte d’utilisateur](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) à l’aide du centre d’administration Microsoft 365.
+>Découvrez comment restaurer [un compte d’utilisateur à l’aide](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) du Centre d’administration Microsoft 365.
 >
->Pour obtenir la liste des ressources supplémentaires, consultez la rubrique [gérer les utilisateurs et les groupes](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](https://docs.microsoft.com/microsoft-365/admin/add-users/)
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
-Une fois que vous avez effectué la connexion, utilisez la syntaxe suivante pour supprimer un compte d’utilisateur individuel :
+Après vous être connecté, utilisez la syntaxe suivante pour supprimer un compte d’utilisateur individuel :
   
 ```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
-Cet exemple montre comment supprimer le compte d’utilisateur *fabricec \@ litwareinc.com*.
+Cet exemple supprime le compte d’utilisateur *fabricec \@ litwareinc.com*.
   
 ```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> Le paramètre *-ObjectID* de la cmdlet **Remove-AzureADUser** accepte le nom de connexion du compte, également appelé nom d’utilisateur principal ou ID d’objet du compte.
+> Le *paramètre -ObjectID* dans la cmdlet **Remove-AzureADUser** accepte le nom de la signature du compte, également appelé nom d’utilisateur principal ou ID d’objet du compte.
   
 Pour afficher le nom du compte à partir du nom de l’utilisateur, utilisez les commandes suivantes :
   
@@ -63,7 +63,7 @@ $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-Cet exemple montre comment afficher le nom de compte de l’utilisateur *Caleb Sills*.
+Cet exemple affiche le nom du compte de *l’utilisateur Caleb Sills*.
   
 ```powershell
 $userName="Caleb Sills"
@@ -81,7 +81,7 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 Lorsque vous supprimez un compte d’utilisateur via le module Microsoft Azure Active Directory pour Windows PowerShell, le compte n’est pas supprimé définitivement. En effet, vous pouvez le restaurer dans les 30 jours.
 
-Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 Pour supprimer un compte d’utilisateur, utilisez la syntaxe suivante :
   
@@ -90,10 +90,10 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec *MSOL* dans leur nom. Exécutez ces applets de commande à partir de Windows PowerShell.
+>PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour le module Windows PowerShell et les cmdlets incluant *Msol* dans leur nom. Exécutez ces cmdlets à partir de Windows PowerShell.
 >
 
-Cet exemple montre comment supprimer le compte d’utilisateur *BelindaN@litwareinc.com*.
+Cet exemple supprime le compte *d’BelindaN@litwareinc.com*.
   
 ```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
@@ -105,7 +105,7 @@ Pour restaurer un compte d’utilisateur supprimé pendant la période de grâce
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
-Cet exemple restaure le compte supprimé * \@ litwareinc.com*.
+Cet exemple restaure le compte supprimé *BelindaN \@ litwareinc.com*.
   
 ```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
@@ -118,7 +118,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 > Get-MsolUser -All -ReturnDeletedUsers
 > ```
 >
-> Si le nom d'utilisateur principal d'origine du compte d'utilisateur est utilisé par un autre compte, utilisez le paramètre_NewUserPrincipalName_ à la place de_UserPrincipalName_ pour spécifier un autre nom d'utilisateur principal lorsque vous restaurez le compte.
+> Si le nom d'utilisateur principal d'origine du compte d'utilisateur est utilisé par un autre compte, utilisez le paramètre _NewUserPrincipalName_ à la place de _UserPrincipalName_ pour spécifier un autre nom d'utilisateur principal lorsque vous restaurez le compte.
 
 
 ## <a name="see-also"></a>Voir aussi
