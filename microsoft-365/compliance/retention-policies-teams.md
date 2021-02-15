@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 675a98656655521095096a535d4ee8352885e70c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2541519ad9082383c5381452722d023f23760798
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166459"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242710"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -43,21 +43,22 @@ Les éléments suivants de Teams peuvent être conservés et supprimés en utili
 > [!NOTE]
 > L'inclusion du contenu de la carte est un ajout récent et est actuellement proposée aux locataires. Pour plus d'informations, voir [les capacités de conformité de Microsoft 365 pour le contenu des cartes adaptatives par le biais d'applications dans Teams maintenant disponibles](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Nous n’incluons pas les messages Teams des canaux privés, ni les extraits de code, ni les réactions des autres personnes sous la forme d’émoticônes.
+Actuellement, nous ne prenons pas en charge les messages Teams dans les canaux privés pour les stratégies de rétention. L’utilisation de stratégies de rétention pour Teams n’inclut pas les extraits de code, les mémos vocaux enregistrés depuis le client mobile Teams et les réactions des autres utilisateurs sous la forme d’émoticônes.
 
 Les messages électroniques et les fichiers que vous utilisez avec Teams ne sont pas inclus dans les stratégies de rétention Teams. Ces éléments ont leurs propres stratégies de rétention.
-
-Les boîtes aux lettres suivantes par RecipientTypeDetails sont pris en charge pour les stratégies de rétention de Teams :
-
-- MailUser
-- UserMailbox
-- GroupMailbox
-- ArbitrationMailbox
-- SharedMailbox
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Fonctionnement de la rétention avec Microsoft Teams
 
 Vous pouvez utiliser une stratégie de rétention pour conserver les données de conversations et de messages de canaux dans Teams. En arrière-plan, les boîtes aux lettres Exchange sont utilisées pour stocker ces messages. Les données des conversations Teams sont stockées dans un dossier masqué dans la boîte aux lettres des utilisateurs inclus dans la conversation. Un dossier masqué similaire dans une boîte aux lettres de groupe est utilisé pour les messages de canaux Teams.
+
+Ces boîtes aux lettres apparaissent dans la liste en fonction de leur attribut RecipientTypeDetails :
+
+- **UserMailbox** : ces boîtes aux lettres stockent des messages pour les utilisateurs de Teams qui ont une boîte aux lettres Exchange Online.
+- **MailUser** : ces boîtes aux lettres stockent des messages pour les utilisateurs de Teams qui ont une boîte aux lettres pour un serveur Exchange local, et non Exchange Online.
+- **User** : ces boîtes aux lettres stockent des messages pour les utilisateurs de Teams qui ont pas de boîte aux lettres pour les serveurs Exchange Online ou Exchange locaux.
+- **GroupMailbox** : ces boîtes aux lettres stockent des messages pour les canaux Teams.
+
+Nous ne prenons pas en charge les autres types de boîtes aux lettres, tels que la boîte aux lettre RoomMailbox utilisée pour les salles de conférence Teams, dans le cadre des stratégies de rétention Teams.
 
 Il est important de comprendre que Teams utilise un service de conversation Azure qui stocke également ces données. Par défaut, ce service stocke les données sans limite de durée. Pour cette raison, si vous devez supprimer des messages Teams pour des raisons de conformité, nous vous recommandons d’utiliser des stratégies de rétention pour Teams qui peuvent supprimer définitivement ces données des boîtes aux lettres Exchange et du service de conversation sous-jacent Azure. Pour plus d’informations sur l’architecture sous-jacente, voir [Sécurité et conformité dans Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) et plus précisément, la section [Architecture de protection des informations](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture) .
 

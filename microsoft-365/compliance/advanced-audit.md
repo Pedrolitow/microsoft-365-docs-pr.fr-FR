@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: f265a30a3d43b592a7d297e2137fd6b9ff4acfb4
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 0ae67497829e69da92e9735cb68a84e75c517814
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097150"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242456"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -107,7 +107,19 @@ Vous pouvez également exécuter les commandes [Search-UnifiedAuditLog -Operatio
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-L’événement SearchQueryInitiatedExchange est déclenché lorsqu’une personne utilise la barre de recherche dans Outlook ou Outlook sur le Web pour rechercher des éléments dans une boîte aux lettres. Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedExchange pour déterminer si un intrus qui a compromis un compte a recherché ou essayé d’accéder à des informations sensibles dans la boîte aux lettres. L’enregistrement d’audit d’un événement SearchQueryInitiatedExchange contient des informations telles que le texte de la requête de recherche.  En examinant les requêtes de recherche qu’un intrus peut avoir effectué, un investigateur peut mieux comprendre l’objectif des données de messagerie qui ont été recherchées.
+L’événement SearchQueryInitiatedExchange se déclenche lorsqu’une personne utilise Outlook pour rechercher des éléments dans une boîte aux lettres. Des événements se déclenchent lorsque vous effectuez des recherches dans les environnements Outlook suivants :
+
+- Outlook (client de bureau)
+
+- Outlook sur le web (OWA)
+
+- Outlook pour iOS
+
+- Outlook pour Android
+
+- Application Courrier pour Windows 10
+
+Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedExchange pour déterminer si un intrus qui a compromis un compte a recherché ou essayé d’accéder à des informations sensibles dans la boîte aux lettres. L’enregistrement d’audit d’un événement SearchQueryInitiatedExchange contient des informations telles que le texte de la requête de recherche.  L’enregistrement d’audit indique également l’environnement Outlook où vous avez effectué la recherche. En examinant les requêtes de recherche qu’un intrus peut avoir effectué, un investigateur peut mieux comprendre l’objectif des données de messagerie qui ont été recherchées.
 
 Pour rechercher les enregistrements d’audit de SearchQueryInitiatedExchange, vous pouvez rechercher l’activité **Recherche d’émail effectuée** dans la **liste déroulante** des activités de recherche dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
 
@@ -122,7 +134,17 @@ Si vous avez déjà exécuté la commande `Set-Mailbox -AuditOwner @{Add="Search
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-À l’instar de la recherche d’éléments de boîte aux lettres, l’événement SearchQueryInitiatedSharePoint est déclenché lorsqu’une personne recherche des éléments sur le site SharePoint de votre organisation. Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedSharePoint pour déterminer si un intrus a essayé de rechercher des informations sensibles (et éventuellement y a accédé) dans SharePoint. L’enregistrement d’audit d’un événement SearchQueryInitiatedSharePoint contient également le texte de la requête de recherche. En examinant les requêtes de recherche qu’un intrus peut avoir effectué, un investigateur peut mieux comprendre l’objectif et l’étendue des données de fichiers qui ont été recherchées.
+À l’instar de la recherche d’éléments de boîte aux lettres, l’événement SearchQueryInitiatedSharePoint se déclenche lorsqu’une personne recherche des éléments dans SharePoint. Des événements se déclenchent lorsque vous effectuez des recherches dans les types suivants de sites SharePoint :
+
+- Sites d’accueil
+
+- Sites de communication
+
+- Sites concentrateurs
+
+- Sites associés à Microsoft Teams
+
+Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedSharePoint pour déterminer si un intrus a essayé de rechercher des informations sensibles (et éventuellement y a accédé) dans SharePoint. L’enregistrement d’audit d’un événement SearchQueryInitiatedSharePoint contient également le texte de la requête de recherche. L’enregistrement d’audit indique également le type de site SharePoint où vous avez effectué la recherche. En examinant les requêtes de recherche qu’un intrus peut avoir effectué, un investigateur peut mieux comprendre l’objectif et l’étendue des données de fichiers qui ont été recherchées.
 
 Pour rechercher les enregistrements d’audit SearchQueryInitiatedSharePoint, vous pouvez rechercher l’activité **Recherche SharePoint effectuée** dans la **liste déroulante** des activités de recherche dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
 

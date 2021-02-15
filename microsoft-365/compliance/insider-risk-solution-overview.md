@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6c8d0dee3b1452c9a43b6b0b1b36e96f19e5abcd
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 633fd7ef00926d89d0b76051bf933798d2482ea1
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150628"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233824"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Solutions de risque interne dans Microsoft 365
 
-Les risques internes sont l’une des principales préoccupations des professionnels de la sécurité et de la conformité dans l’espace de travail moderne. Des études du secteur ont montré que les risques internes sont souvent associés à des événements ou des activités utilisateur spécifiques. La protection de votre organisation contre ces risques peut être difficile à identifier et difficile à atténuer. Les risques internes incluent des vulnérabilités dans différents domaines et peuvent entraîner des problèmes majeurs pour votre organisation, allant de la perte de propriété intellectuelle au harcèlement en lieu de travail, et bien plus encore. La figure suivante décrit les risques internes courants :
+Les risques internes sont l’une des principales préoccupations des professionnels de la sécurité et de la conformité dans l’espace de travail moderne. Des études du secteur ont montré que les risques internes sont souvent associés à des événements ou des activités utilisateur spécifiques. La protection de votre organisation contre ces risques peut être difficile à identifier et difficile à atténuer. Les risques internes incluent des vulnérabilités dans divers domaines et peuvent entraîner des problèmes majeurs pour votre organisation, allant de la perte de propriété intellectuelle au harcèlement en lieu de travail, et bien plus encore. La figure suivante décrit les risques internes courants :
 
 ![Menaces de risques internes](../media/ir-solution-threats.png)
 
@@ -41,7 +41,7 @@ Les fonctionnalités de prévention des risques de Microsoft 365 sont conçues e
 | ![Insider trading/handshake icon](../media/ir-risk-insider-trading.png)| Délit d’initié | ![Pris en charge](../media/check-mark.png) |  |  |  |
 | ![Icône Conflits d’intérêt](../media/ir-risk-conflicts-of-interest.png)| Conflits d’intérêt | ![Pris en charge](../media/check-mark.png) |  | ![Pris en charge](../media/check-mark.png) |  |
 | ![Icône Fuites de données sensibles/Appareils](../media/ir-risk-sensitive-data-leaks.png)| Fuites de données sensibles | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |  |
-| ![Icône harcèlement/personnes en milieu de travail](../media/ir-risk-workplace-harassment.png)| Harcèlement au travail | ![Pris en charge](../media/check-mark.png) |  |  |  |
+| ![Icône Harcèlement professionnel/personnes](../media/ir-risk-workplace-harassment.png)| Harcèlement au travail | ![Pris en charge](../media/check-mark.png) |  |  |  |
 | ![Icône Violations de sécurité](../media/ir-risk-security-violations.png)| Violations de sécurité |  | ![Pris en charge](../media/check-mark.png) |  | ![Pris en charge](../media/check-mark.png) |
 | ![Icône Violations de conformité réglementaire](../media/ir-risk-regulatory-compliance-violations.png)| Violations de la conformité avec la réglementation | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |
 
@@ -81,6 +81,7 @@ La gestion des risques internes est disponible dans les abonnements suivants :
 - Abonnement Microsoft 365 G5 (version payante ou d’essai)
 - Abonnement Microsoft 365 G3 + module de conformité Microsoft 365 G5
 - Abonnement Microsoft 365 G3 + module de gestion des risques internes Microsoft 365 G5
+- Abonnement Office 365 E3 + Enterprise Mobility and Security E3 + module de conformité Microsoft 365 E5
 
 ### <a name="information-barriers"></a>Obstacles aux informations
 
@@ -141,7 +142,7 @@ Microsoft 365 fournit les ressources suivantes pour informer et former ces utili
 | Solution/zone | Ressources |
 |:------------------|:--------------|
 | Gérer les risques internes dans Microsoft 365 |[Parcours d’apprentissage complet](/learn/paths/m365-compliance-insider) <br> Ce parcours d’apprentissage inclut tous les modules de solution individuels pour la conformité des communications, la gestion des risques internes, les obstacles à l’information et la gestion des accès privilégiés. Sélectionnez ce parcours d’apprentissage pour terminer tous les modules. |
-| Conformité des communications | [Module d’apprentissage : préparer la conformité des communications dans Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Ce module vous aide à découvrir les bases sur la façon d’identifier et de corriger les violations de stratégie de code de conduite avec la conformité des communications, de couvrir les conditions préalables requises avant de créer des stratégies de conformité des communications et d’en savoir plus sur les types de modèles de stratégie prédéfinits intégrés dans la conformité des communications. |
+| Conformité des communications | [Module d’apprentissage : Préparer la conformité des communications dans Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Ce module vous aide à découvrir les bases sur la façon d’identifier et de corriger les violations de stratégie de code de conduite avec la conformité des communications, de couvrir les conditions préalables requises avant de créer des stratégies de conformité des communications et d’en savoir plus sur les types de modèles de stratégie prédéfinits intégrés dans la conformité des communications. |
 | Gestion des risques internes | [Module d’apprentissage : gestion des risques internes dans Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Ce module vous aide à découvrir comment la gestion des risques internes dans Microsoft 365 peut vous aider à prévenir, détecter et contenir des risques internes dans une organisation, à en savoir plus sur les types de modèles de stratégie prédéfinits intégrés, à comprendre les conditions préalables de base nécessaires avant de créer des stratégies de risque internes et à expliquer les types d’actions que vous pouvez prendre sur les cas de gestion des risques internes. |
 | Obstacles aux informations | [Module d’apprentissage : planifier les obstacles aux informations](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Ce module vous aide à découvrir comment les stratégies d’obstacle à l’information peuvent aider votre organisation à maintenir la conformité avec les normes et réglementations du secteur pertinentes, répertorie les types de situations dans lesquelles des obstacles à l’information seraient applicables, explique le processus de création d’une stratégie de obstacle à l’information et explique comment résoudre les problèmes inattendus une fois les obstacles à l’information en place. |
 | Gestion des accès privilégiés | [Module d’apprentissage : implémenter la gestion des accès privilégiés](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Ce module vous aide à comprendre la différence entre la gestion des accès privilégiés et la gestion des identités privilégiées, à comprendre le flux de processus de gestion des accès privilégiés et à comprendre les principes de base de la configuration et de l’utilisation de la gestion des accès privilégiés. |

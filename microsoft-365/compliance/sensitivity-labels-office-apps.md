@@ -1,5 +1,5 @@
 ---
-title: Utiliser les étiquettes de confidentialité dans les applications Office
+title: Gérer les étiquettes de niveau de sensibilité dans les applications Office
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,16 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment les utilisateurs utilisent des étiquettes de niveau de sensibilité dans les applications Office pour ordinateur de bureau, mobile et web, et quelles applications la prise en charge des étiquettes de niveau de sensibilité.
+description: Informations qui permettent aux administrateurs informatiques de gérer les étiquettes de niveau de sensibilité dans les applications Office pour ordinateur de bureau, mobile et web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95da9753d773e3bb9724a8d0ae2ab0e2f2618c27
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3f2be9310e6230bf0530670796dea56f775f365d
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233716"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242664"
 ---
-# <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
+# <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de niveau de sensibilité dans les applications Office
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
@@ -205,7 +205,9 @@ Cela signifie que si vous partagez des documents avec une autre organisation qui
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>Partage de documents chiffrés avec des utilisateurs externes
 
-En plus de restreindre l’accès aux utilisateurs de votre propre organisation, vous pouvez étendre l’accès à tout autre utilisateur ayant un compte dans Azure Active Directory. Toutes les applications Office et [autres applications rmS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) peuvent ouvrir des documents chiffrés une fois que l’utilisateur s’est authentifié.
+En plus de restreindre l’accès aux utilisateurs de votre propre organisation, vous pouvez étendre l’accès à tout autre utilisateur ayant un compte dans Azure Active Directory. Toutefois, si votre organisation utilise des stratégies d’accès conditionnel, consultez [la section suivante pour](#conditional-access-policies) des considérations supplémentaires.
+
+Toutes les applications Office et [autres applications rmS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) peuvent ouvrir des documents chiffrés une fois que l’utilisateur s’est authentifié. 
 
 Si les utilisateurs externes n’ont pas de compte dans Azure Active Directory, ils peuvent s’authentifier à l’aide de comptes invités dans votre client. Ces comptes invités peuvent également être utilisés pour accéder aux documents partagés dans SharePoint ou OneDrive lorsque vous avez activé les étiquettes de niveau de sensibilité pour les fichiers Office dans SharePoint et [OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
 
@@ -228,6 +230,16 @@ Toutefois, le compte invité automatique n’est pas créé immédiatement dans 
 
 > [!TIP]
 > Étant donné que vous ne pouvez pas être sûr que les utilisateurs externes utiliseront une application cliente Office prise en charge, le partage de liens à partir de SharePoint et OneDrive après la création de comptes invités (pour des utilisateurs spécifiques) ou lorsque vous utilisez l’intégration de SharePoint et OneDrive avec [Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) (pour tout utilisateur authentifié) est une méthode plus fiable pour prendre en charge la collaboration sécurisée avec des utilisateurs externes.
+
+### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
+
+Si votre organisation a implémenté des stratégies d’accès conditionnel [Azure Active Directory,](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)vérifiez la configuration de ces stratégies. Si les stratégies incluent Azure Information Protection et que la stratégie s’étend aux utilisateurs externes, ces utilisateurs externes doivent avoir un compte invité dans votre client, même s’ils ont un compte Azure AD dans leur propre client.
+
+Sans ce compte invité, ils ne peuvent pas ouvrir le document chiffré et voir un message d’erreur. Le texte du message peut les informer que leur compte doit être ajouté en tant qu’utilisateur externe dans le client, avec l’instruction incorrecte Se sortir et se connecter à nouveau avec un autre compte d’utilisateur **Azure Active Directory.**
+
+Si vous ne pouvez pas créer et configurer de comptes invités dans votre client pour les utilisateurs externes qui doivent ouvrir des documents chiffrés par vos étiquettes, vous devez supprimer Azure Information Protection des stratégies d’accès conditionnel ou exclure les utilisateurs externes des stratégies.
+
+Pour plus d’informations sur l’accès conditionnel et Azure Information Protection, le service de chiffrement utilisé par les étiquettes de sensibilité, consultez la question fréquemment posée . Azure [Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work) est répertorié comme application cloud disponible pour l’accès conditionnel. Comment cela fonctionne-t-il ?
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Quand les applications Office appliquent le marquage et le chiffrement de contenu
 

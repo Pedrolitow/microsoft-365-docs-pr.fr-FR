@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107255"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242881"
 ---
 # <a name="create-a-new-topic"></a>Création d’un projet 
 
@@ -29,7 +29,7 @@ Dans Rubriques de Topics, vous pouvez créer une rubrique si aucune rubrique n�
 > Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que les informations d’une rubrique créée manuellement sont visibles par tous les utilisateurs qui ont l’autorisation d’afficher la rubrique. 
 
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour créer une rubrique, vous devez :
 - Vous avez une licence Topics.
@@ -38,14 +38,26 @@ Pour créer une rubrique, vous devez :
 > [!Note] 
 > Les utilisateurs qui sont autorisés à gérer des rubriques dans le centre de rubriques (gestionnaires de connaissances) sont déjà autorisés à créer et modifier des rubriques.
 
-## <a name="to-create-a-new-topic"></a>Pour créer une rubrique :
+## <a name="to-create-a-topic"></a>Pour créer une rubrique
+
+Vous pouvez créer une rubrique à partir de deux emplacements :
+
+- Page d’accueil du centre de rubriques : tout utilisateur titulaire d’une licence avec l’autorisation Qui peut créer ou modifier des **rubriques** (collaborateurs) peut créer une rubrique à partir du centre de rubriques en sélectionnant le <b>menu</b> Nouveau et la <b>page</b>Rubrique.</br> 
+
+    ![Nouvelle rubrique du centre de rubriques](../media/knowledge-management/new-topic.png) </br> 
+
+- Page Gérer les rubriques : tout utilisateur titulaire d’une licence qui dispose de l’autorisation Qui peut gérer les **rubriques** (gestionnaires de connaissances) peut créer une rubrique à partir de la page Gérer les rubriques dans le Centre de rubriques en sélectionnant Page Nouvelle <b>rubrique.</b></br> 
+
+    ![Nouvelle rubrique de gestion des rubriques](../media/knowledge-management/new-topic-topic-center.png) </br> 
+
+### <a name="to-create-a-new-topic"></a>Pour créer une rubrique :
 
 1. Dans la section **Nom de cette** rubrique, tapez le nom de la nouvelle rubrique.
 
     ![Nommez cette rubrique](../media/knowledge-management/k-new-topic-page.png) </br> 
 
 
-2. Dans la section <b>Autres noms,</b> tapez les autres noms que la rubrique peut faire référence. 
+2. Dans la section <b>Autres noms,</b> tapez tous les autres noms que la rubrique peut faire référence. 
 
     ![Autres noms](../media/knowledge-management/alt-names.png) </br> 
 3. Dans la section <b>Description,</b> tapez quelques phrases qui décrivent la rubrique. 
@@ -76,7 +88,7 @@ Pour créer une rubrique, vous devez :
 
 7. La <b>section Rubriques connexes</b> présente les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une <b></b> autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
 
-   ![Rubriques connexes](../media/knowledge-management/related-topic.png)</br>  
+   ![Voir aussi](../media/knowledge-management/related-topic.png)</br>  
 
     Vous pouvez ensuite donner une description de la façon dont les rubriques sont liées, puis sélectionner <b>Mettre à jour.</b></br>
 
@@ -94,7 +106,7 @@ Pour créer une rubrique, vous devez :
 
 9. Sélectionnez **Publier** pour enregistrer vos modifications. 
 
-Une fois que vous avez publié la page, le nom de la rubrique, l’autre nom, la description et les personnes épinglées s’affichent à tous les utilisateurs sous licence qui affichent la rubrique. Des fichiers, des pages et des sites spécifiques apparaissent uniquement sur la page de rubrique si la visionneuse dispose des autorisations Office 365 sur l’élément. 
+Une fois que vous avez publié la page, le nom de la rubrique, l’autre nom, la description et les personnes épinglées s’affichent à tous les utilisateurs sous licence qui affichent la rubrique. Des fichiers, des pages et des sites spécifiques apparaissent uniquement sur la page de rubrique si la visionneuse dispose d’autorisations Office 365 sur l’élément. 
 
 
 

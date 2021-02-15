@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-topics
 localization_priority: None
 description: Découvrez comment trouver des ressources pour les rubriques microsoft.
-ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107169"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242865"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Présentation des rubriques microsoft
 
@@ -42,6 +42,9 @@ Les ressources de cette section vous aident à en savoir plus sur ce qu’est To
 |En savoir plus sur les rubriques Desy|[Vue d’ensemble des rubriques microsoft](topic-experiences-overview.md)|
 |Découvrez comment les rubriques sont découvertes et suggérées par l’IA|[Découverte des rubriques Microsoft](topic-experiences-discovery.md)|
 |En savoir plus sur la sécurité des rubriques|[Sécurité et confidentialité microsoft](topic-experiences-security-privacy.md)|
+|Découvrez comment obtenir Des rubriques|[Page du produit Rubriques Microsoft](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|Voir les ressources dans le centre de ressources Microsoft Tech Community|[Communauté technique Des rubriques Microsoft](https://resources.techcommunity.microsoft.com/viva-topics/)|
+
 
 
 ## <a name="adoption"></a>Adoption
