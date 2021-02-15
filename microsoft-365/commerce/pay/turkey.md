@@ -24,12 +24,12 @@ ms.locfileid: "48648274"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en essayant uniquement et référencer le (s) Numéro (s) de facture sur votre bordereau de paiement.
+Veuillez payer en TRY uniquement et référencer les numéro(s) de facture à votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank A.S., Istanbul  
-**Code SWIFT :** CITITRIX  
-**IBAN :** TR420009200000000092407039  
-**Numéro de compte :** 92407039  
-**Nom du compte :** Paiements Microsoft  
+**Banque :** Bank A.S., City  
+**Code SWIFT :** CITITRIX  
+**IBAN :** TR420009200000000092407039  
+**Numéro de compte :** 92407039  
+**Nom du compte :** Paiements Microsoft  

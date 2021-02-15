@@ -24,4 +24,4 @@ ms.locfileid: "48647194"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez suivre les instructions de paiement sur votre facture et votre numéro (s) de facture de référence sur votre bordereau de paiement.  
+Suivez les instructions de paiement sur votre facture et référencez vos numéro(s) de facture lors de votre paiement.  

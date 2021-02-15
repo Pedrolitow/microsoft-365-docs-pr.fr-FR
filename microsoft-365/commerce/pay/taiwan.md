@@ -24,12 +24,12 @@ ms.locfileid: "48648370"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md). 
 
-Veuillez payer dans N.T. Dollars uniquement et numéro (s) de facture de référence sur votre bordereau de paiement.
+Veuillez payer en N.T. Dollars uniquement et référencer les numéro(s) de facture(s) de votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque bénéficiaire :** LIMITE DE CITIBANK TAÏWAN  
-**Code de banque et code de succursale :** 0210018  
-**Code SWIFT :** CITITWTX  
-**Numéro de compte :** 5038946139  
-**Nom du compte :** MICROSOFT TAÏWAN CORPORATION    
+**Banque du bénéficiaire :** BANK TAIWAN LIMITED  
+**Code bancaire et code de succursale** : 0210018  
+**Code SWIFT :** CITITWTX  
+**Numéro de compte :** 5038946139  
+**Nom du compte :** MICROSOFT TAIWAN CORPORATION    

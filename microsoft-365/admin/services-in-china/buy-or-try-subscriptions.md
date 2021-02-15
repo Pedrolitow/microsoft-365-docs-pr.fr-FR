@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - GEA150
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
-description: Découvrez comment essayer un abonnement Office 365 ou l’acheter immédiatement, ajouter des abonnements ou obtenir des modules complémentaires sur un compte Office 365 existant géré par 21Vianet en Chine.
+description: Découvrez comment essayer un abonnement Office 365 ou l’acheter immédiatement, ajouter des abonnements ou obtenir des modules pour un compte Office 365 existant géré par 21Vianet en Chine.
 monikerRange: o365-21vianet
 ms.openlocfilehash: b20233190b117b4b2562bc2e47774541e6e2d3f8
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -35,15 +35,15 @@ ms.locfileid: "48644830"
 
 ## <a name="buy-or-try-office-365"></a>Acheter ou essayer Office 365
 
-Vous pouvez acheter un abonnement immédiatement ou vous pouvez essayer Office 365 pendant 30 jours maximum. Si vous le souhaitez, vous pouvez acheter votre abonnement à la version d’évaluation et conserver le domaine, les données et la configuration que vous avez configurés dans votre version d’évaluation.
+Vous pouvez acheter un abonnement immédiatement ou essayer Office 365 pendant 30 jours. Si vous le souhaitez, vous pouvez acheter votre abonnement d’essai et conserver le domaine, les données et la configuration que vous avez mis en place dans votre version d’essai.
 
-1. Accédez à l’option [comparer les offres Office 365 pour les entreprises](https://go.microsoft.com/fwlink/p/?linkid=393691&amp;clcid=0x409) et sélectionnez le nom du plan que vous souhaitez acheter. Ensuite, sélectionnez **acheter maintenant**.
+1. Go to [Compare Office 365 for business plans](https://go.microsoft.com/fwlink/p/?linkid=393691&amp;clcid=0x409) and select the name of the plan you want to buy. Ensuite, **sélectionnez Acheter maintenant.**
 
-2. Créez un compte en remplissant la page quelques **Détails** .
+2. Créez un compte en remplissant la page **Quelques détails** seulement.
 
-3. Suivez les instructions pour configurer votre version d’évaluation de 30 jours ou pour finaliser votre achat.
+3. Suivez les instructions pour configurer votre version d’essai de 30 jours ou pour effectuer votre achat.
 
-## <a name="buy-your-trial-subscription"></a>Acheter votre abonnement à la version d’évaluation
+## <a name="buy-your-trial-subscription"></a>Acheter votre abonnement d’essai
 
 1. [Connectez-vous à Office 365](https://go.microsoft.com/fwlink/p/?linkid=513813) à l’aide de votre compte professionnel ou scolaire.
 
@@ -58,29 +58,29 @@ Vous pouvez acheter un abonnement immédiatement ou vous pouvez essayer Office 3
 4. La page **Acheter des abonnements** contient les différentes offres que vous pouvez acheter. L'offre que vous avez essayée est identifiée par la bannière **En évaluation**.
 
     > [!IMPORTANT]
-    > Si vous achetez une autre offre à partir de votre plan d’évaluation, vous devez réaffecter vos licences de votre plan d’évaluation à votre nouvelle offre (avant la fin de votre période de grâce de 90 jours après l’expiration de votre plan d’évaluation) afin de conserver vos données, comptes et configuration. Dans le cas contraire, vous perdrez vos données, comptes et configuration.
+    > Si vous achetez un plan différent de votre plan d’essai, vous devez réaffecter vos licences de votre plan d’essai à votre nouveau plan (avant la fin de votre période de grâce de 90 jours après l’expiration de votre plan d’essai) afin de conserver vos données, comptes et configuration. Sinon, vous perdrez vos données, vos comptes et votre configuration.
 
 5. Sélectionnez l'abonnement que vous voulez acheter, puis sélectionnez **Acheter maintenant**.
 
-6. Suivez les étapes pour extraire.
+6. Suivez les étapes à suivre pour l’avoir.
 
-## <a name="add-subscriptions-or-add-ons-to-an-existing-office-365-account"></a>Ajouter des abonnements ou des modules complémentaires à un compte Office 365 existant
+## <a name="add-subscriptions-or-add-ons-to-an-existing-office-365-account"></a>Ajouter des abonnements ou des modules add-on à un compte Office 365 existant
 
-1. Dans le [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=850627), accédez à **Billing** la \> page **services d’achat** de facturation.
+1. Dans le Centre [d’administration,](https://go.microsoft.com/fwlink/p/?linkid=850627)allez à la page Des services  \> **d’achat de facturation.**
 
-2. Sélectionnez le (s) service (s) que vous souhaitez acheter, sélectionnez **acheter**, puis sélectionnez **Extraire maintenant**.
+2. Sélectionnez le(s) service(s) que vous souhaitez acheter, sélectionnez **Acheter,** puis **sélectionnez Partir maintenant.**
 
-3. Suivez les instructions pour terminer votre achat.
+3. Suivez les instructions pour effectuer votre achat.
 
 ## <a name="payment-options"></a>Modes de paiement
 
-Vous pouvez payer votre abonnement en :
+Vous pouvez régler votre abonnement en :
 
 - Facture
 
-- Paiement en ligne à l’aide de Alipay ou de China UnionPay
+- Paiement en ligne à l’aide d’Alipay ou de China UnionPay
 
-La preuve de paiement sera fournie sous la forme d’Fapiaos. Vous pouvez soumettre votre demande fapiao à notre [système fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) environ trois (3) jours après le paiement. Pour plus d’informations, voir [apply for a fapiao for Office 365 géré par 21ViaNet](apply-for-a-fapiao.md).
+La preuve de paiement sera fournie sous la forme de Fapiaos. Vous pouvez envoyer votre demande Fapiao à notre système [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) environ trois (3) jours après avoir payé. Pour plus d’informations, voir [Appliquer pour un Fapiao pour Office 365 géré par 21Vianet.](apply-for-a-fapiao.md)
 
 > [!NOTE]
 >  Les cartes de crédit internationales ne sont pas acceptées.

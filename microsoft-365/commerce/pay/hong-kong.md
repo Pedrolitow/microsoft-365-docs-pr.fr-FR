@@ -24,13 +24,13 @@ ms.locfileid: "48647254"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez suivre les instructions de paiement sur votre facture et votre numéro (s) de facture de référence sur votre bordereau de paiement.
+Suivez les instructions de paiement sur votre facture et référencez vos numéro(s) de facture lors de votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** HSBC, Hong Kong  
-**Code de la Banque :** 004  
-**Code de succursale :** 848  
-**Code SWIFT :** HSBCHKHH  
-**Numéro de compte :** 848342259001    
-**Nom du compte :** Facture de Ltd-Payco de PTE de paiement Microsoft
+**Banque :** HSBC, Hong Kong  
+**Code bancaire :** 004  
+**Code de succursale :** 848  
+**Code SWIFT :** HSBCHKHH  
+**Numéro de compte :** 848342259001    
+**Nom du compte :** Microsoft Payments Pte Ltd-Payco Invoice

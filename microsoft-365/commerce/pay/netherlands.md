@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour les pays-bas
+title: Informations de paiement pour les Pays-Bas
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,17 +20,17 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48649054"
 ---
-# <a name="payment-information-for-netherlands"></a>Informations de paiement pour les pays-bas
+# <a name="payment-information-for-netherlands"></a>Informations de paiement pour les Pays-Bas
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Payez en EUR seulement et numéro (s) de facture de référence sur votre bordereau de paiement.
+Veuillez payer en EUR uniquement et référencer les numéro(s) de facture à votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank, Londres  
-**Code SWIFT/BIC :** CITIGB2L  
-**IBAN :** GB31CITI18500812207591  
-**Code de tri :** 185008  
-**Numéro de compte :** 12207591  
-**Nom du compte :** LIBRAIRIE
+**Banque :** Bank, Londres  
+**Code SWIFT/BIC :** CITIGB2L  
+**IBAN :** GB31CITI18500812207591  
+**Code SORT :** 185008  
+**Numéro de compte :** 12207591  
+**Nom du compte :** MICROSOFT

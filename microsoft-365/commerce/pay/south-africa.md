@@ -24,12 +24,12 @@ ms.locfileid: "48648538"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer dans ZAR uniquement et référencer le (s) Numéro (s) de facture sur votre bordereau de paiement.
+N’hésitez pas à payer en fonction du montant de votre paiement uniquement et à référencer les numéro(s) de facture.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank  
-**Branche :** Johannesburg  
-**Code SWIFT :** CITIZAJ  
-**Numéro de compte :** 0201419034  
-**Nom du compte :** Paiements Microsoft  
+**Banque :** Bank  
+**Branche :** Centre d’ment  
+**Code SWIFT :** CITIZAJ  
+**Numéro de compte :** 0201419034  
+**Nom du compte :** Paiements Microsoft  

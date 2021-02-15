@@ -24,19 +24,19 @@ ms.locfileid: "48648094"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en USD uniquement et référencer le ou les numéros de votre facture sur votre bordereau de paiement.
+N’hésitez pas à payer en USD uniquement et à référencer vos numéro(s) de facture à votre paiement.
 
-## <a name="check"></a>Vérifier
+## <a name="check"></a>Chèque
 
-**Tiers :** Librairie  
-**Adresse postale :**   
-Courrier standard : PO Box 842103, Dallas, TX 75284-2103  
-Message Express : Lockbox 842103, 1950 N. Stemmons Frwy, Ste. 5010, Dallas, TX 75207-2103
+**Lasse:** Microsoft  
+**Adresse postale :**   
+Courrier standard : Po Box 842103, Dallas, TX 75284-2103  
+Messagerie express : Lockbox 842103, 1950 N. Stemmons Frwy, Ste. 5010, Dallas, TX 75207-2103
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Bank of America  
-**Code SWIFT :** BOFAUS3N  
-**ABA/numéro d’acheminement :** 111 000 012  
-**Numéro de compte :** 4426587954  
-**Nom du compte :** Librairie  
+**Banque :** Bank of America  
+**Code SWIFT :** BOFAUS3N  
+**Numéro aba/routage :** 111 000 012  
+**Numéro de compte :** 4426587954  
+**Nom du compte :** Microsoft  

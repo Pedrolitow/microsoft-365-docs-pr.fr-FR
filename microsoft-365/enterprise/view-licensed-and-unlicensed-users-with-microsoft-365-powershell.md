@@ -1,5 +1,5 @@
 ---
-title: Afficher les utilisateurs titulaires d’une licence et de Microsoft 365 sans licence avec PowerShell
+title: Afficher les utilisateurs De Microsoft 365 sous licence et sans licence avec PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: Cet article explique comment utiliser PowerShell pour afficher des comptes d’utilisateurs Microsoft 365 sans licence ou sous licence.
+description: Cet article explique comment utiliser PowerShell pour afficher les comptes d’utilisateurs Microsoft 365 sous licence et sans licence.
 ms.openlocfilehash: b38ee7674abaea6b63d0661ba79a9814f8c54229
 ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
@@ -27,37 +27,37 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48651383"
 ---
-# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Afficher les utilisateurs titulaires d’une licence et de Microsoft 365 sans licence avec PowerShell
+# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Afficher les utilisateurs De Microsoft 365 sous licence et sans licence avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les comptes d’utilisateur de votre organisation Microsoft 365 peuvent avoir certaines, toutes ou aucune des licences disponibles qui leur sont attribuées à partir des plans de gestion des licences disponibles dans votre organisation. Vous pouvez utiliser PowerShell pour Microsoft 365 pour trouver rapidement les utilisateurs sous licence et sans licence de votre organisation.
+Les comptes d’utilisateur de votre organisation Microsoft 365 peuvent avoir une partie, l’ensemble ou aucune des licences disponibles qui leur sont attribuées à partir des plans de gestion des licences disponibles dans votre organisation. Vous pouvez utiliser PowerShell pour Microsoft 365 pour trouver rapidement les utilisateurs sous licence et sans licence dans votre organisation.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
  
-Pour afficher la liste de tous les comptes d’utilisateur de votre organisation auxquels aucun de vos plans de licence n’a été attribué (utilisateurs sans licence), exécutez la commande suivante :
+Pour afficher la liste de tous les comptes d’utilisateurs de votre organisation qui n’ont reçu aucun de vos plans de gestion des licences (utilisateurs sans licence), exécutez la commande suivante :
   
 ```powershell
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-Pour afficher la liste de tous les comptes d’utilisateurs de votre organisation auxquels ont été affectés des plans de gestion des licences (utilisateurs sous licence), exécutez la commande suivante :
+Pour afficher la liste de tous les comptes d’utilisateurs de votre organisation qui ont été affectés à l’un de vos plans de gestion des licences (utilisateurs sous licence), exécutez la commande suivante :
   
 ```powershell
 Get-AzureAdUser | ForEach { $licensed=$True ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 >[!Note]
->Pour répertorier tous les utilisateurs de votre abonnement, utilisez la `Get-AzureAdUser -All $true` commande.
+>Pour lister tous les utilisateurs de votre abonnement, utilisez la `Get-AzureAdUser -All $true` commande.
 >
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-Pour afficher la liste de tous les comptes d’utilisateurs et leur statut de licence dans votre organisation, exécutez la commande suivante dans PowerShell :
+Pour afficher la liste de tous les comptes d’utilisateurs et leur état de licence dans votre organisation, exécutez la commande suivante dans PowerShell :
   
 ```powershell
 Get-MsolUser -All

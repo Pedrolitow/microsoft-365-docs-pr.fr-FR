@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
-description: 'Apprenez à utiliser le courrier professionnel ou scolaire pour vous inscrire à Microsoft Online Services sans impliquer son service informatique. '
+description: 'Apprenez à utiliser la messagerie scolaire ou scolaire pour vous inscrire aux services en ligne Microsoft sans impliquer leur service informatique. '
 ms.openlocfilehash: ad46d698398da32d88d0c1617499b326e8fcb163
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48644866"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Votre domaine est peut-être utilisé si une autre personne s’est inscrite auprès de celui-ci
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Votre domaine est peut-être en cours d’utilisation si quelqu’un d’autre s’y est inscrit
 
 [] Les utilisateurs disposant d'une adresse de courrier professionnelle ou scolaire peuvent [s'inscrire à certains services en ligne de Microsoft](self-service-sign-up.md) sans demander l'autorisation à leur service informatique, par exemple, des services tels que Office 365, Power BI et RMS (Rights Management Services). En effectuant une inscription en libre service à l'aide de leur adresse de courrier professionnelle ou scolaire, les utilisateurs ont accès aux fonctionnalités incluses dans le service, mais ne peuvent pas gérer celui-ci (c'est-à-dire, ajouter des utilisateurs, ajouter des licences, gérer le domaine, etc.). 
   

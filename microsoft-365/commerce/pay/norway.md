@@ -24,12 +24,12 @@ ms.locfileid: "48648922"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en NOK seulement et référencer le (s) Numéro (s) de facture sur votre bordereau de paiement.
+Veuillez payer en NOK uniquement et référencer les numéro(s) de facture à votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank, Londres  
-**Code SWIFT/BIC :** CITIGB2L  
-**IBAN :** GB94CITI18500812207621  
-**Numéro de compte :** 12207621  
-**Nom du compte :** LIBRAIRIE  
+**Banque :** Bank, Londres  
+**Code SWIFT/BIC :** CITIGB2L  
+**IBAN :** GB94CITI18500812207621  
+**Numéro de compte :** 12207621  
+**Nom du compte :** MICROSOFT  

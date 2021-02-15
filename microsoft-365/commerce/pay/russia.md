@@ -24,15 +24,15 @@ ms.locfileid: "48646882"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer dans le champ restante uniquement et numéro (s) de facture de référence sur votre bordereau de paiement.
+Veuillez payer en RUB uniquement et référencer les numéro(s) de facture sur votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** ZAO KB Citibank à Moscou  
-**Code SWIFT :** CITIRUMX  
-**Bik :** 044525202  
-**DCI :** 7731420476  
-**KPP :** 773101001  
-**Numéro de compte :** 40702810000702700004  
-**Compte correspondant :** 30101810300000000202 dans Oper Moskovsky GTU Bank of Russie  
-**Nom du compte :** Microsoft payer Russie LLC
+**Banque :** ZAO KBBank en Russie  
+**Code SWIFT :** RUMX  
+**VÉLOS :** 044525202  
+**PRINCIPALE :** 7731420476  
+**KPP :** 773101001  
+**Numéro de compte :** 40702810000702700004  
+**Compte correspondant :** 301018103000000000202 dans OPERU Moskkh GTU Bank of Russie  
+**Nom du compte :** Microsoft Payments Russie LLC

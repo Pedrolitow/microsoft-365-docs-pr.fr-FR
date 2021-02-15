@@ -1,5 +1,5 @@
 ---
-title: Comment obtenir de l’aide dans le centre d’administration Microsoft 365
+title: Comment obtenir de l’aide dans le Centre d’administration Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,7 +20,7 @@ search.appverid:
 - BEA160
 - GEA150
 ROBOTS: NOINDEX
-description: Découvrez toutes les façons dont vous pouvez obtenir de l’aide à l’aide du centre d’administration Microsoft 365.
+description: Découvrez toutes les façons d’obtenir de l’aide à l’aide du Centre d’administration Microsoft 365.
 ms.openlocfilehash: 23c325aa4a9a0fbf5ec8bfd16bd329540fcd4606
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -30,32 +30,32 @@ ms.locfileid: "48646510"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
-# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Comment obtenir de l’aide dans le centre d’administration Microsoft 365
+# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Comment obtenir de l’aide dans le Centre d’administration Microsoft 365
 
-Si vous êtes administrateur, [admin.Microsoft.com](https://admin.microsoft.com) vous permet de gérer et de tirer le meilleur parti de votre abonnement Microsoft 365. Parfois, il se peut que vous ne trouviez pas la tâche appropriée, que vous avez besoin de davantage de contexte avant de lancer un flux de tâches, ou de ne pas être sûr de l’étendue et de l’impact de vos actions en tant qu’administrateur. Pour traiter ces situations, nous fournissons une aide moderne et une assistance intelligente dans le centre d’administration Microsoft 365 de la manière suivante :
+Si vous êtes un administrateur, [admin.microsoft.com](https://admin.microsoft.com) est votre lieu de rendez-vous pour gérer et mettre en place votre abonnement Microsoft 365. Parfois, il se peut que vous ne trouviez pas la tâche qui vous semble nécessaire, que vous avez besoin de davantage de contexte avant de lancer un flux de tâches ou que vous ne soyez simplement pas sûr de l’étendue et de l’impact de vos actions en tant qu’administrateur. Pour couvrir ces situations, nous fournissons une aide moderne et une assistance intelligente dans le Centre d’administration Microsoft 365 de la manière ci-après :
 
-* **Aide intégrée** -aide dans le centre d’administration
+* **Aide intégrée** : aide dans le Centre d’administration
 
-* **Assistance intelligente** : auto-assistance alimentée par les IA
+* **Assistance intelligente** : auto-assistance optimisée par l’IA
 
-* **Guides et articles** -contenu complet sur le Web
+* **Guides et articles** : contenu complet sur le web
 
 ## <a name="integrated-help"></a>Aide intégrée
 
-L’aide est intégrée dans le centre d’administration, c’est là dès que vous en avez besoin. En haut de la plupart des pages, vous trouverez un texte d’aide inline qui fournit une vue d’ensemble de la tâche, ainsi que des liens vers des articles qui vous permettent de trouver rapidement une documentation officielle pour une formation plus approfondie.
+L’aide est intégrée dans l’ensemble du Centre d’administration. Elle est donc là quand vous en avez besoin. En haut de nombreuses pages, vous trouverez un texte d’aide en ligne qui fournit une vue d’ensemble de la tâche à accomplir, ainsi que des liens vers des articles qui vous permettent de trouver rapidement une documentation officielle pour une formation plus approfondie.
 
-![Page groupes affichant l’aide incorporée et des liens vers des Articles](../../media/integrated-help.png)
+![Page Groupes affichant l’aide en ligne et des liens vers des articles](../../media/integrated-help.png)
 
-## <a name="modern-self-help-powered-by-ai"></a>Auto-assistance moderne alimentée par les IA
+## <a name="modern-self-help-powered-by-ai"></a>Autonome moderne optimisé par l’IA
 
-Pour ouvrir notre expérience d’auto-assistance moderne, qui est équipée de l’intelligence artificielle, sélectionnez le bouton **d’aide requis** dans le centre d’administration 365 de Microsoft. Par exemple, si vous recherchez « vérifier mon domaine », vous obtiendrez les étapes plus quelques articles que nous pensons être utiles. Nous utilisons l’apprentissage de machine pour faire ressembler la solution la plus proche qui a aidé d’autres administrateurs à avoir entré des requêtes similaires.
+Pour ouvrir notre expérience autonome moderne optimisée par l’intelligence artificielle, sélectionnez le bouton Besoin d’aide dans le Centre d’administration Microsoft 365.  Par exemple, si vous recherchez « vérifier mon domaine », vous obtenez les étapes et quelques articles qui, selon nous, vous aideront. Nous utilisons l’apprentissage automatique pour faire surface de la solution la plus proche qui a permis aux autres administrateurs qui ont entré des requêtes similaires.
 
-Vous pouvez également utiliser l’Assistant support technique pour les moments où vous ne maîtrisez pas vraiment la façon d’effectuer une opération dans votre situation spécifique. Actuellement, cette expérience n’est disponible qu’en anglais. Pour activer l’Assistant support, il vous suffit d’utiliser le bouton bascule en haut du volet d' **aide** . L’Assistant support fournit une interface de conversation pour vous aider. Une fois que vous avez entré votre requête, le chatbot demande de clarifier les questions afin de vous faire une réponse appropriée pour votre situation spécifique. Imaginez-le comme votre assistance virtuelle pour découvrir des solutions et effectuer des tâches.
+Ou, pour les moments où vous ne savez pas vraiment comment faire quelque chose dans votre situation spécifique, utilisez l’Assistant Support. Actuellement, cette expérience est disponible uniquement en anglais. Pour activer l’Assistant Support, utilisez simplement le basculement en haut **du** volet Besoin d’aide. L’Assistant Support fournit une interface de conversation pour vous aider. Une fois que vous avez entré votre requête, le chatbot vous pose des questions de clarification pour vous aider à trouver la réponse à votre situation spécifique. Pensez-y comme votre assistant virtuel pour découvrir des solutions et effectuer des tâches.
 
-![Auto-assistance moderne](../../media/help-options.png)
+![Auto-aide moderne](../../media/help-options.png)
 
-Bien entendu, il arrive que des questions soient les plus fréquemment traitées par les êtres humains. Si notre propre assistance moderne ne répond pas, vous avez toujours la possibilité de contacter nos agents de support technique.
+Bien entendu, les humains répondent parfois mieux aux questions. Si notre auto-assistance moderne n’a pas la réponse, vous avez toujours la possibilité de contacter nos agents de support.
 
-## <a name="guides-and-articles"></a>Guides et Articles
+## <a name="guides-and-articles"></a>Guides et articles
 
-En outre, si vous recherchez des guides de déploiement complets, des procédures pas à pas ou des applets de commande PowerShell, consultez notre site Web. Nous mettons régulièrement à jour le contenu et essayons de vous fournir les dernières informations. Consultez nos articles et guides sur le site de [documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/) .
+En outre, si vous recherchez des guides de déploiement complets, des procédures pas à pas rapides ou des cmdlets PowerShell, recherchez-nous sur le web. Nous mettez fréquemment à jour le contenu et essayons de vous fournir les informations les plus récentes. Consultez nos articles et guides sur le site de [documentation de Microsoft 365.](https://docs.microsoft.com/microsoft-365/)

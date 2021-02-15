@@ -24,13 +24,13 @@ ms.locfileid: "48649263"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en pesos mexicaines uniquement. Pour que votre paiement soit traité, le numéro de votre société et de votre facture doit être fourni lors du paiement de la remise.
+Payez uniquement en pesos américains. Pour que votre paiement soit traitée, le nom et le numéro de facture de votre société doivent être indiqués lors du paiement de paiement par versement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank/Banamex  
-**Branche :** Act. Roberto Medellin 800, P.B. Sur, col. Santa Fe, Mexique City C.P. 01210, Mexique  
-**Code SWIFT :** BNMXMM  
+**Banque :** Bank/Banamex  
+**Branche :** Act. Roberto Medellin 800, P.B. Sur,Col. Santa Fe, Mexico City C.P. 01210, Mexique  
+**Code SWIFT :** BNMXMM  
 **CLABE** 002180002337160225  
-**Numéro de compte :** 0233716022  
-**Nom du compte :** Microsoft payer Inc.
+**Numéro de compte :** 0233716022  
+**Nom du compte :** Microsoft Payments Inc.

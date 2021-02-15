@@ -24,11 +24,11 @@ ms.locfileid: "48647038"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md). 
 
-Payez uniquement en USD et numéro (s) de facture de référence sur votre bordereau de paiement.
+Veuillez payer en USD uniquement et référencer les numéro(s) de facture sur votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank, Singapour  
-**Code SWIFT :** CITISGSG  
-**Numéro de compte :** 0-817543-138  
-**Nom du compte :** MICROSOFT REGIONAL SALES CORP  
+**Banque :** Bank, Singapour  
+**Code SWIFT :** CITISGSG  
+**Numéro de compte :** 0-817543-138  
+**Nom du compte :** MICROSOFT REGIONAL SALES CORP  

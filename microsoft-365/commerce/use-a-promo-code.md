@@ -23,7 +23,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Découvrez comment appliquer un code promotionnel à votre abonnement Microsoft 365 pour réduire le prix, et comment résoudre les problèmes de code promotionnel en cas d’erreur.
+description: Découvrez comment appliquer un code promotionnel à votre abonnement Microsoft 365 pour réduire le prix et comment résoudre les problèmes de code promotionnel en cas d’erreur.
 ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -33,19 +33,19 @@ ms.locfileid: "48646738"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Utiliser votre code promotionnel pour réduire le prix
 
-Lorsque vous achetez un abonnement, vous pouvez utiliser un code promotionnel pour réduire le prix. Lisez cet article pour savoir comment appliquer un code promotionnel à votre abonnement, pour en savoir plus sur les [conditions de code promotionnel](#promo-code-terms)et pour [résoudre les problèmes liés aux codes promotionnels](#troubleshooting-promo-codes).
+Lorsque vous achetez un abonnement, vous pouvez utiliser un code promotionnel pour réduire le prix. Lisez cet article pour découvrir comment appliquer un code promotionnel à votre abonnement, pour en savoir plus sur les termes du [code](#promo-code-terms)promotionnel et pour résoudre les [problèmes de codes promotionnels.](#troubleshooting-promo-codes)
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>Appliquer un code promotionnel à votre abonnement
 
 1. Commencez votre achat en achetant un nouvel abonnement ou en ajoutant des services à un abonnement existant.
     
-2. Lorsque vous extrayez, choisissez * * avoir une promotion ou un code de remise ?, puis entrez votre code dans la zone. 
+2. Lorsque vous l’avez cocher, sélectionnez **Avoir un code promotionnel ou de remise?, puis entrez votre code dans la zone. 
   
-3. Sélectionnez **appliquer le code promotionnel**. Vous devriez voir la confirmation qu’elle a été appliquée. Si un autre message apparaît, voir [Dépannage des codes promotionnels](#troubleshooting-promo-codes) pour en déterminer la raison. 
+3. Sélectionnez **Appliquer un code promotionnel.** Vous devriez voir la confirmation qu’elle a été correctement appliquée. Si un autre message apparaît, voir [Dépannage des codes promotionnels](#troubleshooting-promo-codes) pour en déterminer la raison. 
     
-4. Poursuivez l’extraction. Sur la page confirmation de commande, vous verrez le code de remise inclus dans le montant. 
+4. Poursuivez l’enregistrement. Dans la page de confirmation de commande, votre code de remise est inclus avec le montant. 
     
-Une fois l'achat finalisé, vous pouvez voir la réduction créée par votre code promotionnel sur votre facture. Pour en savoir plus, consultez [la rubrique afficher vos](billing-and-payments/view-your-bill-or-invoice.md).
+Une fois l'achat finalisé, vous pouvez voir la réduction créée par votre code promotionnel sur votre facture. Pour en savoir plus, voir [Afficher votre](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## <a name="promo-code-terms"></a>Conditions d'utilisation des codes promotionnels
 
@@ -67,7 +67,7 @@ Vous pouvez recevoir un message d'erreur après avoir entré votre code promotio
   
 - **Vous essayez d'appliquer le code promotionnel à un ancien abonnement.** Les codes promotionnels sont destinés aux nouveaux abonnements. Si vous essayez d'utiliser un abonnement actif, l'option d'application de votre code promotionnel n'apparaît pas. Il n'est pas possible d'appliquer un code promotionnel une fois l'achat finalisé.
   
-- **Le code promotionnel a expiré.** Les campagnes sont configurées pour une durée limitée. Les codes promotionnels ont une date d’expiration. Si le code promotionnel que vous tentez d’utiliser est supérieur à la date d’expiration, il n’est plus utilisable. Il n’existe aucun moyen d’accepter ou de remplacer les codes de promotion expirés, mais vous pouvez toujours acheter un abonnement sans un.
+- **Le code promotionnel a expiré.** Les campagnes sont définies pour une durée limitée. Les codes promotionnels ont une date d’expiration. Si le code promotionnel que vous essayez d’utiliser dépasse la date d’expiration, il n’est plus utilisable. Il n’existe aucun moyen d’accepter ou de remplacer les codes promotionnels expirés, mais vous pouvez toujours acheter un abonnement sans un.
   
 - **Le code promotionnel que vous utilisez ne correspond pas à votre région géographique.** Certains codes promotionnels ne sont valides que pour un pays ou une région. Les codes promotionnels ne fonctionnent pas dans un pays ou une région autre que celui ou celle pour lequel ou laquelle ils ont été créés.
   

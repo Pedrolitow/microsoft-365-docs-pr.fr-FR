@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour l’Arabie saoudite
+title: Informations de paiement pour l’Arabie Saoudite
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648670"
 ---
-# <a name="payment-information-for-saudi-arabia"></a>Informations de paiement pour l’Arabie saoudite
+# <a name="payment-information-for-saudi-arabia"></a>Informations de paiement pour l’Arabie Saoudite
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Payez en EUR seulement et numéro (s) de facture de référence sur votre bordereau de paiement.
+Veuillez payer en EUR uniquement et référencer les numéro(s) de facture à votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank, Londres  
-**Code SWIFT/BIC :** CITIGB2L  
-**IBAN :** **Code de tri GB31CITI18500812510049 :** 185008  
-**Numéro de compte :** 12510049   
-**Nom du compte :** LIBRAIRIE
+**Banque :** Bank, Londres  
+**Code SWIFT/BIC :** CITIGB2L  
+**IBAN :** GB31CITI18500812510049 **SORT Code:** 185008  
+**Numéro de compte :** 12510049   
+**Nom du compte :** MICROSOFT

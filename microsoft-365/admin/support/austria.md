@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 84b46e98741134e2edb6f9158cbc7f4be9b2f0db
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -30,16 +30,16 @@ ms.locfileid: "48644122"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Allemand : Mon-Fri 9 AM-5 PM
+Allemand : Mon-Fri 9 h à 17 h
 
-Anglais : Mon-Fri 9 AM-5 PM
+Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Allemand : Mon-Fri 8 AM-9 PM
+Allemand : Mon-Fri 8h00 à 21h00
 
 Anglais : 24h/24, 7j/7
 
-Autre numéro de téléphone : 01 206 09 15 78
+Autre numéro de téléphone : 01 206 09 15 78
 
-Frais d’appels locaux appliqués
+Frais d’appel local applicables

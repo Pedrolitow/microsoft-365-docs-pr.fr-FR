@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: e4458501be882a267ddfdb9a477d165d32731b14
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -30,12 +30,12 @@ ms.locfileid: "48644218"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Espagnol : Mon-Fri 9 AM-5 PM
+Espagnol : Mon-Fri 9 h à 17 h
 
 ### <a name="technical-support"></a>Support technique :
 
-Espagnol : 24 heures sur 24, 7 jours sur 7
+Espagnol : 24 heures sur 24, 7 jours sur 7
 
-Autre numéro de téléphone : 011 5354 2347
+Autre numéro de téléphone : 011 5354 2347
 
-Frais d’appels locaux appliqués
+Frais d’appel local applicables

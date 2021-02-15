@@ -24,12 +24,12 @@ ms.locfileid: "48647206"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md). 
 
-Veuillez payer uniquement les numéros de factures de référence sur votre bordereau de paiement.
+Veuillez payer en IDR uniquement et référencer les numéro(s) de facture à votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank, Indonésie  
-**Branche :** Djakarta  
-**Code SWIFT :** CITIIDJX  
-**Numéro de compte :** 104468055  
-**Nom du compte :** PT Microsoft Indonésie  
+**Banque :** Bank, Indonésie  
+**Branche :** Qu’est-ce que c  
+**Code SWIFT :** CITIIDJX  
+**Numéro de compte :** 104468055  
+**Nom du compte :** PT Microsoft Indonésie  

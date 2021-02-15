@@ -24,15 +24,15 @@ ms.locfileid: "48649036"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer dans NZD uniquement et référencer le (s) Numéro (s) de facture sur votre bordereau de paiement.
+Veuillez payer en NZD uniquement et référencer les numéro(s) de facture à votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank  
-**Code de la Banque :** 31  
-**Code de succursale :** 2840  
-**Code SWIFT :** CITINZ2X  
-**Suffixe (3 chiffres) :** 004    
-**Suffixe (à 2 chiffres) :** 04  
-**Numéro de compte :** 0026181  
-**Nom du compte :** MICROSOFT REGIONAL SALES CORP  
+**Banque :** Bank  
+**Code bancaire :** 31  
+**Code de succursale :** 2840  
+**Code SWIFT :** CITINZ2X  
+**Suffixe (3 chiffres) :** 004    
+**Suffixe (2 chiffres) :** 04  
+**Numéro de compte :** 0026181  
+**Nom du compte :** MICROSOFT REGIONAL SALES CORP  
