@@ -43,8 +43,8 @@ Si un pirate informatique accède à la boîte aux lettres d’un utilisateur, i
 1. Ensuite, ouvrez la drop-down pour **appliquer cette règle si**, sélectionnez **l’expéditeur,** puis **est interne externe**.
 1. Sélectionnez **À l’intérieur de** l’organisation, puis **OK**.
 1. Choose **add condition**, open the drop-down, select The message **properties**, then include the **message type**.
-1. Ouvrez la drop-down sélectionner le type de **message,** sélectionnez **Auto-forward**, puis **OK**.
-1. Ouvrez **la liste suivante,** sélectionnez Bloquer le **message,** puis **rejetez le message et incluez une explication.**
+1. Ouvrez la drop-down sélectionner le type de **message,** **sélectionnez Auto-forward**, puis **OK**.
+1. Ouvrez **la liste suivante,** sélectionnez Bloquer le **message,** puis rejetez le message et **incluez une explication.**
 1. Entrez le texte du message pour votre explication, puis sélectionnez **OK.**
 1. Faites défiler jusqu’au bas et sélectionnez **Enregistrer.**
 

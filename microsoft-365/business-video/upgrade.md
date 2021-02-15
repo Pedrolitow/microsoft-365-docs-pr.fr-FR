@@ -43,4 +43,4 @@ Microsoft 365 Business nécessite Windows 10 Professionnel pour sécuriser vos d
 4. Dans la  **zone Sécurité Windows,**  entrez votre code confidentiel pour vérifier votre identité.
 5. Consultez la page de paiement, lisez les conditions d’utilisation, modifiez votre mode de paiement si vous le souhaitez, puis choisissez  **Acheter**.
 6. Sous **Mettre à niveau vers Windows 10 Professionnel,** choisissez **Installer.**
-7. Enregistrez les fichiers si nécessaire, puis sélectionnez  **Oui, laissez&#39;commencer**  à installer Windows.
+7. Enregistrez les fichiers si nécessaire, puis sélectionnez  **Oui, laissez&#39;pour**  commencer à installer Windows.

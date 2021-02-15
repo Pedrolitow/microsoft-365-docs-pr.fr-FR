@@ -35,7 +35,7 @@ ms.locfileid: "49928093"
 
 ## <a name="try-it"></a>Essayez !
 
-Utilisez le Planificateur Microsoft pour planifier un événement, tel que le suivi d’un lancement de produit.
+Utilisez le Planificateur Microsoft pour planifier un événement, comme le suivi d’un lancement de produit.
 
 ### <a name="work-with-buckets"></a>Travailler avec des compartiments
 
@@ -64,6 +64,6 @@ Publiez un commentaire pour discuter d’une tâche avec les personnes à qui el
 Utilisez  **l’affichage**  **Graphiques**  et Tableau pour surveiller l’avancement de chaque membre de l’équipe et du projet global, ou pour trier et organiser les tâches.
 
 - Sélectionnez  **Graphiques,** **puis Regroupement par** et enfin Date **d’échéance**  pour voir quelle tâche est due à la suite.
-- Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression pour**  trier les tâches par progression.
+- Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression**  pour trier les tâches par progression.
 
-**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  pour vous faire savoir quand vous êtes prêt à lancer votre produit.
+**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  afin de savoir quand vous êtes prêt à lancer votre produit.

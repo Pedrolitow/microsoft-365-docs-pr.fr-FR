@@ -42,9 +42,9 @@ Dans la page d’accueil, vous pouvez créer des cartes pour les tâches que vou
 
 Pour afficher d’autres tâches d’administration, développez le menu de navigation. Vous trouverez des paramètres de configuration avancés dans les centres d’administration supplémentaires en bas.
 
-Une tâche courante que vous pouvez effectuer dans le Centre d’administration consiste à ajouter un utilisateur. Pour ce faire, sélectionnez **Utilisateurs,** **Utilisateurs actifs,** puis **Ajouter un utilisateur.** Entrez le nom de l’utilisateur et d’autres informations, puis sélectionnez **Suivant**. Suivez les invites pour terminer l’ajout de l’utilisateur. Lorsque vous avez terminé, **sélectionnez Terminer l’ajout,** puis **fermez**.
+Une tâche courante que vous pouvez effectuer dans le Centre d’administration consiste à ajouter un utilisateur. Pour ce faire, sélectionnez **Utilisateurs,** **Utilisateurs actifs,** puis **Ajoutez un utilisateur.** Entrez le nom de l’utilisateur et d’autres informations, puis sélectionnez **Suivant**. Suivez les invites pour terminer l’ajout de l’utilisateur. Lorsque vous avez terminé, **sélectionnez Terminer l’ajout,** puis **fermez**.
 
-Vous pouvez trier vos utilisateurs actifs par colonnes, telles que le nom **d’affichage** ou **les licences.** Pour ajouter d’autres colonnes, **sélectionnez Choisir** des colonnes, sélectionnez les colonnes que vous souhaitez ajouter, puis sélectionnez **Enregistrer.**
+Vous pouvez trier vos utilisateurs actifs par colonnes, telles que le nom **d’affichage** ou **les licences.** Pour ajouter d’autres colonnes, sélectionnez **Choisir** des colonnes, sélectionnez les colonnes que vous souhaitez ajouter, puis sélectionnez **Enregistrer.**
 
 Sélectionnez un utilisateur pour voir d’autres options, telles que la gestion de ses licences de produit.
 

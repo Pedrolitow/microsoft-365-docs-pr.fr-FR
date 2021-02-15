@@ -40,7 +40,7 @@ Lorsque vous communiquez avec vos employés, partenaires, clients et autres memb
 - Ajoutez les noms, les numéros et les e-mails des personnes avec qui vous travaillez en tant que contacts.
 - Créez des tâches, des notes et d’autres façons de rester au fait de vos projets à court et à long terme.
 
-:::image type="content" source="../media/outlook-model.png" alt-text="Image stylisée de la page d’accueil Outlook.":::
+:::image type="content" source="../media/outlook-model.png" alt-text="Image stylisée de la page d’accueil d’Outlook.":::
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 

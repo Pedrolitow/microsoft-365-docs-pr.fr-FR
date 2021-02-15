@@ -41,11 +41,11 @@ Ajoutez votre domaine Google Workspace à Microsoft 365 pour les entreprises afi
 1. In the Microsoft 365 Admin Center, in the left nav, select **Show all**, **Settings** and then **Domains**.
 1. Choisissez **Ajouter un domaine,** entrez votre nom de domaine, puis **sélectionnez Utiliser ce domaine.** 
 1. Choose, **Add a TXT record to the domains DNS records,** select **Continue**, and copy the TXT value. 
-1. Revenir à la [console d’administration Google,](https://admin.google.com)choisissez **Domaines,** Gérer les domaines, Afficher les **détails,** **Gérer** le domaine, **DNS,** puis faites défiler vers le bas jusqu’aux enregistrements de ressources **personnalisés.**  
-1. Ouvrez la drop-down du type d’enregistrement, choisissez **TXT,** collez la valeur TXT que vous avez copiée, puis sélectionnez **Ajouter**. 
+1. Revenir à la [console d’administration Google,](https://admin.google.com)choisissez **Domaines,** Gérer les domaines, Afficher les **détails,** Gérer le domaine, **DNS,** puis faites défiler vers le bas jusqu’aux enregistrements de ressources **personnalisés.**   
+1. Ouvrez la drop-down du type d’enregistrement, choisissez **TXT**, collez la valeur TXT que vous avez copiée, puis sélectionnez **Ajouter**. 
 
     La mise à jour prend généralement quelques minutes, mais peut prendre jusqu’à 48 heures. 
-1. Revenir au Centre d’administration Microsoft 365, **sélectionnez Vérifier,** puis **Fermez**. 
+1. Revenir au Centre d’administration Microsoft 365, **sélectionnez Vérifier,** puis **Fermez.** 
 1. Pour définir votre domaine comme courrier électronique principal pour vos utilisateurs, dans le navigation de gauche, sélectionnez **Utilisateurs**  >  **actifs.** 
 1. Choisissez un utilisateur, sélectionnez Gérer le nom **d’utilisateur** et le courrier électronique, **Modifier,** sélectionner votre domaine dans la liste modifiable, puis sélectionner Terminé **et** enregistrer **les modifications.** 
 1. Répétez ce processus pour chaque utilisateur. 

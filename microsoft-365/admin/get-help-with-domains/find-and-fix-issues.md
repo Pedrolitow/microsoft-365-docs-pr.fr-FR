@@ -38,7 +38,7 @@ ms.locfileid: "49926389"
 La mise en place de votre domaine pour utiliser Microsoft 365 peut être difficile. Le système DNS est exigeant et la configuration DNS pour votre domaine a une incidence sur les activités professionnelles importantes, comme le courrier.
 
 > [!NOTE]
-> Vous pouvez vérifier les problèmes liés à votre domaine en vérifiant son état. Go to **Setup**  >  **Domains** and view the notifications in the **Status** column. Si vous voyez un problème, sélectionnez Plus d’actions (trois points), puis **sélectionnez Vérifier l’état d’état.** Le volet qui s’ouvre décrit les problèmes qui se produisent avec votre domaine.
+> Vous pouvez vérifier les problèmes liés à votre domaine en vérifiant son état. Go to **Setup**  >  **Domains** and view the notifications in the **Status** column. Si vous voyez un problème, sélectionnez Plus d’actions (trois points), puis **sélectionnez Vérifier l’état d’santé.** Le volet qui s’ouvre décrit les problèmes qui se produisent avec votre domaine.
   
 ## <a name="whats-going-on"></a>Que se passe-t-il ?
 
@@ -73,9 +73,9 @@ Si vous avez défini votre enregistrement MX et les autres enregistrements DNS c
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Tout le monde a basculé vers Microsoft 365 et vous souhaitez que votre courrier électronique bascule uniquement ?
 <a name="BKMK_EmailSwitched"> </a>
 
-Lorsque vous ajoutez votre domaine à Microsoft 365, l’enregistrement MX de votre domaine est généralement mis à jour (par vous ou Microsoft 365) pour pointer vers Microsoft 365, et tous les messages envoyés à ce domaine commencent à arriver vers Microsoft 365. Assurez-vous que vous avez créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des messages sur votre domaine AVANT de modifier l’enregistrement MX.
+Lorsque vous ajoutez votre domaine à Microsoft 365, l’enregistrement MX de votre domaine est généralement mis à jour (par vous ou Microsoft 365) pour pointer vers Microsoft 365, et tous les messages envoyés à ce domaine commencent à arriver vers Microsoft 365. Assurez-vous que vous avez créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des messages sur votre domaine avant de modifier l’enregistrement MX.
   
-Que se passe-t-il si vous ne souhaitez pas déplacer le courrier électronique de tous les employés de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)avec seulement quelques adresses de messagerie à la place.
+Que se passe-t-il si vous ne souhaitez pas déplacer le courrier électronique de tous les employés de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de messagerie à la place.](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>Vous ne pouvez pas confirmer l’état du compte scolaire ou à but non lucratif ?
 <a name="BKMK_validateAcct"> </a>

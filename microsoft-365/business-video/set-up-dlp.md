@@ -40,7 +40,7 @@ Les stratégies de protection contre la perte de données permettent d’identif
 
 1. To get started, go to the [admin center](https://admin.microsoft.com), and select **Setup**.
 1. Faites défiler vers le bas **pour configurer la** protection contre la perte de données, puis **sélectionnez Afficher,** puis **Gérer**.
-1. Pour modifier une stratégie, sélectionnez-la, sélectionnez **Modifier la stratégie,** puis ce qu’il faut modifier. Par exemple, sélectionnez **Emplacements** pour modifier ce qui est analysé.
+1. Pour modifier une stratégie, sélectionnez-la, choisissez **Modifier la stratégie,** puis sélectionnez ce qu’il faut modifier. Par exemple, sélectionnez **Emplacements** pour modifier ce qui est analysé.
 1. Pour activer l’analyse du contenu dans Microsoft Teams, activez le bouton bascule en position **Activé,** puis sélectionnez **Enregistrer.**
 1. Pour modifier les paramètres de stratégie, sélectionnez **Modifier.**
 1. Vous devez définir des règles distinctes qui s’appliquent aux petites et grandes quantités de contenu sensible détecté. Développez votre règle de faible volume. Choose **Edit rule**.

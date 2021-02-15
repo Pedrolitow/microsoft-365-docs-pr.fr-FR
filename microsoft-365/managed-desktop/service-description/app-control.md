@@ -32,7 +32,7 @@ L’exécution des applications ou des scripts non fiables par la stratégie de 
 
 **Vos responsabilités supplémentaires :**
 
-- Vous êtes responsable du test de vos applications pour déterminer si elles seraient bloquées par la stratégie de contrôle des applications.
+- Vous êtes responsable du test de vos applications pour déterminer si elles seraient bloquées par la stratégie de contrôle d’application.
 - Si une application est (ou serait) bloquée, vous êtes responsable de l’identification des détails nécessaires du signataire et de la demande de modification via le portail d’administration.
 
 **Responsabilités du Bureau géré Microsoft :**
@@ -52,9 +52,9 @@ Bureau géré Microsoft, en collaboration avec des experts en cybersécurité Mi
 La stratégie de base prend l’approche suivante pour restreindre l’exécution des logiciels :
 
 - Les fichiers exécutés par les administrateurs seront autorisés à s’exécuter.
-- Les fichiers des emplacements qui *ne sont* pas dans des répertoires accessibles en création par l’utilisateur seront autorisés à s’exécuter.
-- Les fichiers sont signés par un signataire [approuvé.](#signer-requests)
-- La plupart des fichiers signés par Microsoft s’exécutent, mais certains d’entre eux sont bloqués pour empêcher les actions à risque élevé telles que la compilation du code.
+- Les fichiers des emplacements qui ne *sont* pas accessibles en création par l’utilisateur sont autorisés à s’exécuter.
+- Les fichiers sont signés par un [signataire approuvé.](#signer-requests)
+- La plupart des fichiers signés par Microsoft s’exécutent, mais certains d’entre eux sont bloqués pour empêcher les actions à haut risque telles que la compilation du code.
 
 
 Si un utilisateur autre qu’un administrateur aurait pu ajouter une application ou un script à un appareil (c’est-à-dire, dans un répertoire accessible en écriture par l’utilisateur), nous ne l’autoriserons pas à s’exécuter, sauf s’il a déjà été spécifiquement autorisé par un administrateur. Si un utilisateur est tenté d’installer un programme malveillant, si une vulnérabilité dans une application l’utilisateur tente d’installer un programme malveillant, ou si un utilisateur tente intentionnellement d’exécuter une application ou un script non autorisé, notre stratégie arrête l’exécution.

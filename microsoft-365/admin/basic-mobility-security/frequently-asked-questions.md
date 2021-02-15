@@ -43,7 +43,7 @@ La mise en place de la mobilité et de la sécurité de base se fait en quatre �
 
 2. Go to Data loss prevention > Device management > Device policies.
     
-3. Créez des stratégies de gestion des appareils et appliquez-les à des groupes d’utilisateurs qui sont configurer dans des groupes de sécurité. Nous vous recommandons de commencer par déployer les stratégies dans un petit groupe de test. Pour plus d’informations, voir [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security.](create-device-security-policies.md)
+3. Créez des stratégies de gestion des appareils et appliquez-les à des groupes d’utilisateurs qui sont configurer dans des groupes de sécurité. Nous vous recommandons de commencer par déployer les stratégies dans un petit groupe de test. Pour plus d’informations, voir [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md).
 
 4. Les utilisateurs qui ont appliqué une stratégie sont invités à inscrire leurs appareils lorsqu’ils essaient d’accéder aux données Microsoft 365. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md).
 

@@ -47,5 +47,5 @@ ms.locfileid: "49927453"
 1. Pour attribuer les nouvelles licences, **sélectionnez Attribuer des licences.**
 1. Ensuite, **attribuez à nouveau des licences.**
 1. Tapez le nom de l’utilisateur à qui vous souhaitez attribuer la licence, puis sélectionnez le nom.
-1. Décidez des applications ou services que vous souhaitez que l’utilisateur a, puis sélectionnez **Affecter**.
+1. Choisissez les applications ou services que vous souhaitez que l’utilisateur utilise, puis sélectionnez **Affecter.**
 1. La licence est maintenant attribuée à l’utilisateur.

@@ -41,7 +41,7 @@ Pour commencer, laissez-&#39;examiner ce que vous&#39;obtenir :
 - Adresse de messagerie personnalisée pour vous et vos employés, telle que rob@contoso.com.
 - Stockage de documents dans le cloud (OneDrive et Microsoft Teams), et bien plus encore.
 - Mises à niveau vers Windows 10 Professionnel Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel.
-- Protection de vos fichiers de travail sur tous vos appareils iOS, Android et Windows 10 avec une sécurité de niveau entreprise.
+- Protection de vos fichiers de travail sur tous vos appareils iOS, Android et Windows 10 avec une sécurité de qualité entreprise.
 
 Vous&#39;pas d’applications pour la comptabilité, la paie, crm ou un site web public.
 
@@ -55,7 +55,7 @@ Vous&#39;pas d’applications pour la comptabilité, la paie, crm ou un site web
 
 Lorsque vous choisissez un abonnement cloud pour votre entreprise, vous avez le choix entre les fonctionnalités que vous souhaitez dans votre abonnement. Découvrez nos [plans Pour les petites entreprises Microsoft.](https://www.microsoft.com/microsoft-365/business?rtc=1)
 
-- Choisissez [Office 365 Business Essentials](https://www.microsoft.com/en-us/p/office-365-business-essentials/cfq7ttc0k59v?rtc=1&amp;activetab=pivot:overviewtab) si vous souhaitez uniquement des applications en ligne (applications accessibles dans un navigateur web) pour la messagerie, la création de documents, la collaboration et le stockage cloud. Cela inclut Word Online, Excel Online, PowerPoint Online et SharePoint Online.
+- Choisissez [Office 365 Business Essentials](https://www.microsoft.com/en-us/p/office-365-business-essentials/cfq7ttc0k59v?rtc=1&amp;activetab=pivot:overviewtab) si vous souhaitez simplement des applications en ligne (applications accessibles dans un navigateur web) pour la messagerie, la création de documents, la collaboration et le stockage cloud. Cela inclut Word Online, Excel Online, PowerPoint Online et SharePoint Online.
 - Choisissez [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) si vous souhaitez la version enrichie des fonctionnalités des applications Office telles que Word, Excel et Teams qui s’exécutent directement sur vos PC et Mac. Cela s’ajoute aux applications en ligne.
 - Choisissez [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business?rtc=1) si vous souhaitez toutes les applications Office, ainsi que la sécurité cloud et la gestion des appareils. Cela inclut la protection contre les virus, les programmes malveillants, les ransomware, etc., ainsi que la gestion et le chiffrement des appareils. Vous obtenez également une mise à niveau gratuite vers Windows 10 Professionnel à partir des versions antérieures de Windows Professionnel.
 - Si vous avez une grande entreprise ou si vous avez besoin d’applications et de services informatiques plus complexes, découvrez nos [plans Microsoft 365 Entreprise.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
@@ -88,7 +88,7 @@ Lorsque vous choisissez un abonnement cloud pour votre entreprise, vous avez le 
 ## <a name="6-upgrade-your-pcs-to-windows-10-pro"></a>6. Mettre à niveau vos PC vers Windows 10 Professionnel
 
 - Commencez à mettre à niveau vos PC vers Windows 10 Professionnel (gratuitement avec Microsoft 365 Business Premium si vous&#39;exécutez Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel) afin de bénéficier de toutes les fonctionnalités de Microsoft 365 Business Premium, telles que la sécurité avancée et la gestion des appareils.
-- Vous pouvez également mettre à niveau vers Windows 10 Professionnel à partir d’une version grand public ou si vous&#39;exécutez Microsoft 365 Business Standard, mais un achat à prix seul est requis.
+- Vous pouvez également mettre à niveau vers Windows 10 Professionnel à partir d’une version grand public ou si vous&#39;exécutez Microsoft 365 Business Standard, mais un achat en une seule fois est requis.
 
 ## <a name="7-connect-your-pcs-to-microsoft-365"></a>7. Connecter vos PC à Microsoft 365
 
@@ -99,10 +99,10 @@ Lorsque vous choisissez un abonnement cloud pour votre entreprise, vous avez le 
 ## <a name="8-set-up-and-use-office-apps"></a>8. Configurer et utiliser les applications Office
 
 - Commencez à utiliser toutes les applications Office à votre disposition, telles que Word, Excel et PowerPoint. S'&#39;n’est pas déjà installé, vous pouvez facilement l’installer à partir [du Microsoft Office web.](https://www.office.com/)
-- L’une des premières choses&#39;que vous allez faire est d’ouvrir Outlook pour la première fois. Vous&#39;entrez votre adresse de messagerie et votre mot de passe Microsoft 365 et aurez un accès immédiat à votre courrier électronique, votre calendrier et vos contacts.
-- En outre, vous pouvez ouvrir Microsoft Teams, Word, Excel, PowerPoint et le reste des applications Office. Il se peut que vous soyez invité à utiliser votre adresse e-mail et votre mot de passe la première fois que vous ouvrez chaque application.
+- L’une des premières choses que&#39;vous allez faire est d’ouvrir Outlook pour la première fois. Vous&#39;entrez votre adresse de messagerie et votre mot de passe Microsoft 365 et aurez un accès immédiat à votre courrier électronique, votre calendrier et vos contacts.
+- En outre, vous pouvez ouvrir Microsoft Teams, Word, Excel, PowerPoint et le reste des applications Office. Il se peut que vous soyez invité à nous envoyer votre adresse e-mail et votre mot de passe la première fois que vous ouvrez chaque application.
 
-## <a name="9-migrate-old-email-and-files"></a>9. Migrer les anciens e-mails et fichiers
+## <a name="9-migrate-old-email-and-files"></a>9. Migrer les anciens messages électroniques et fichiers
 
 - À un moment donné,&#39;souhaiterez importer vos anciens e-mails, calendriers et contacts, ainsi que des documents professionnels et d’autres fichiers dans Microsoft 365 Business Premium.
 - Pour le courrier électronique, vous pouvez le faire dans Outlook en exportant l’ancien courrier électronique en tant que PST, puis en important ce PST dans le nouveau compte de messagerie. Répétez ensuite cette situation sur d’autres ordinateurs. Vous pouvez également utiliser un partenaire pour vous aider à cette étape.
@@ -111,4 +111,4 @@ Lorsque vous choisissez un abonnement cloud pour votre entreprise, vous avez le 
 ## <a name="10-set-up-your-phones"></a>10. Configurer vos téléphones
 
 - Si vous prévoyez d’utiliser vos téléphones pour rester productif lors de vos activités, vous&#39;souhaiterez ajouter des applications Office telles qu’Outlook, Teams et Excel à vos appareils mobiles, tels qu’Android et iOS.
-- Avec Microsoft 365 Business Premium, la sécurité est appliquée sur chaque appareil. Ainsi, lors de l’installation et de l’ouverture d’applications, vous&#39;serez invité à créer un code confidentiel, à créer un second formulaire d’authentification (MFA) et d’autres paramètres pour protéger les données métiers sur le téléphone.
+- Avec Microsoft 365 Business Premium, la sécurité est appliquée sur chaque appareil. Ainsi, lors de l’installation et de l’ouverture des applications, vous&#39;serez invité à créer un code confidentiel, à créer un second formulaire d’authentification (MFA) et d’autres paramètres pour protéger les données métiers sur le téléphone.

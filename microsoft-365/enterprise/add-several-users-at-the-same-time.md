@@ -48,7 +48,7 @@ Chaque personne de votre équipe a besoin d’un compte d’utilisateur pour pou
 
 4. Dans le panneau **Importer plusieurs utilisateurs**, vous pouvez éventuellement télécharger un exemple de fichier CSV avec ou sans exemple de données inclus.
 
-    Votre feuille de calcul doit inclure exactement les mêmes en-tête de colonne **que** l’exemple (nom d’utilisateur, prénom, et ainsi de suite). Si vous utilisez le modèle, ouvrez-le dans un outil d’édition de texte, tel que le Bloc-notes, et envisagez de laisser toutes les données de la ligne 1 seule et d’entrer uniquement les données des lignes 2 et suivantes.
+    Votre feuille de calcul doit inclure exactement les mêmes en-tête de colonne **que** l’exemple (nom d’utilisateur, prénom, et ainsi de suite). Si vous utilisez le modèle, ouvrez-le dans un outil d’édition de texte, tel que le Bloc-notes, et envisagez de laisser seules toutes les données de la ligne 1 et d’entrer uniquement les données des lignes 2 et suivantes.
 
     Votre feuille de calcul doit également inclure des valeurs pour le nom d'utilisateur (tel que alexandre@contoso.com) et un nom complet (tel que Alexandre Chauvin) pour chaque utilisateur.
 
@@ -76,7 +76,7 @@ Chaque personne de votre équipe a besoin d’un compte d’utilisateur pour pou
 
 - Chaque utilisateur peut également configurer des applications Office et du courrier électronique sur un [appareil mobile](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) sur 5 tablettes et 5 téléphones au plus, tels que des iPhone, des iPads et des téléphones et tablettes Android. Ainsi, ils peuvent modifier des fichiers Office n’importe où.
 
-    Voir [Configurer Microsoft 365 pour](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) les entreprises pour obtenir une liste complète des étapes de configuration.
+    Voir [Configurer Microsoft 365](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) pour les entreprises pour obtenir une liste complète des étapes de configuration.
 
 ## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Plus d’informations sur l’ajout d’utilisateurs à Microsoft 365
 

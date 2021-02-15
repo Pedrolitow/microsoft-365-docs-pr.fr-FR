@@ -41,9 +41,9 @@ Lorsque vos utilisateurs changent de rôle, ils peuvent avoir besoin de fonction
 ### <a name="add-a-new-subscription"></a>Ajouter un nouvel abonnement
 
 1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation de gauche, sélectionnez **Facturation,** puis **Achetez des services.**
-1. Choisissez l’abonnement que vous souhaitez ajouter, puis sélectionnez **Acheter**.
-1. Choisissez la façon dont vous souhaitez payer et le nombre de licences dont vous avez besoin, puis sélectionnez **Partir maintenant.**
-1. Passer en revue votre commande, puis choisir **Suivant**.
+1. Choisissez l’abonnement que vous souhaitez ajouter, puis sélectionnez **Acheter.**
+1. Choisissez la façon dont vous souhaitez payer et le nombre de licences dont vous avez besoin, puis sélectionnez **Cocher maintenant.**
+1. Examinez votre commande, puis choisissez **Suivant.**
 1. Confirmez votre total, puis sélectionnez **Ordre des commandes.**
 
 ### <a name="change-the-license-assigned-to-a-user"></a>Modifier la licence attribuée à un utilisateur

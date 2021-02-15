@@ -34,7 +34,7 @@ Il existe deux types de redirection :
 - bidirectionnel : lancer un nouveau portail SharePoint Online moderne pour remplacer un portail SharePoint classique ou moderne existant 
 - redirection de page temporaire : lancer un nouveau portail SharePoint Online moderne sans portail SharePoint existant
 
-Le programme de lancement du portail est disponible uniquement pour lancer des portails SharePoint Online modernes (c’est-à-dire, des sites de communication). Les lancements doivent être programmés au moins 7 jours à l’avance. Le nombre de vagues requis est déterminé par le nombre d’utilisateurs attendu. Avant de planifier un lancement de portail, l’outil Diagnostic de page pour [SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du portail est saine. À la fin du lancement du portail, tous les utilisateurs ayant des autorisations sur le site pourront accéder au nouveau site. 
+Le programme de lancement du portail est uniquement disponible pour lancer des portails SharePoint Online modernes (c’est-à-dire, des sites de communication). Les lancements doivent être programmés au moins 7 jours à l’avance. Le nombre de vagues requis est déterminé par le nombre d’utilisateurs attendu. Avant de planifier un lancement de portail, l’outil Diagnostic de page pour [SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du portail est saine. À la fin du lancement du portail, tous les utilisateurs ayant des autorisations sur le site pourront accéder au nouveau site. 
 
 Pour plus d’informations sur le lancement d’un portail réussi, suivez les principes, pratiques et recommandations de base détaillés dans La création, le lancement et la maintenance d’un [portail sain.](https://docs.microsoft.com/sharepoint/portal-health) 
 
@@ -119,7 +119,7 @@ Exemple :
    ```
 2. Vérifier que tous les utilisateurs sont redirigés vers l’ancien site. 
 
-3. Pour redémarrer un lancement de portail qui a été suspendu, exécutez la commande suivante :
+3. Pour redémarrer un lancement du portail qui a été suspendu, exécutez la commande suivante :
 
    ```PowerShell
    Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl <object>

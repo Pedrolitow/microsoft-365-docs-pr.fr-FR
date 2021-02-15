@@ -20,7 +20,7 @@ ms.locfileid: "49841398"
 
 Lorsque vous êtes prêt à vous inscrire au Bureau géré Microsoft, vous devez évaluer vos besoins d’impression et déterminer l’approche qui convient à votre environnement. Vous avez trois options :
  
-- Déployez la solution d’impression universelle Microsoft pour faciliter la découverte des imprimantes pour les appareils Bureau géré Microsoft. Pour plus d’informations, voir [Qu’est-ce que l’impression universelle](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis).
+- Déployez la solution d’impression universelle Microsoft pour faciliter la découverte des imprimantes pour les appareils Bureau géré Microsoft. Pour plus d’informations, [voir Qu’est-ce que l’impression universelle](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis).
 - Déployez les imprimantes directement à l’aide d’un script PowerShell personnalisé. Suivez les étapes de la section Configurer [les imprimantes locales.](#set-up-local-printers)
 - Utilisez une solution d’impression cloud non Microsoft compatible avec les appareils Windows 10 joints à un domaine Azure Active Directory. La solution doit répondre aux exigences logicielles du Bureau géré Microsoft. Pour plus d’informations, consultez [la version requise de l’application Bureau géré Microsoft.](../service-description/mmd-app-requirements.md)
  

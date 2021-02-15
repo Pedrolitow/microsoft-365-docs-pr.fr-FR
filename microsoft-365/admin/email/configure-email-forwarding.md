@@ -60,7 +60,7 @@ Pour ce faire, vous devez être administrateur Exchange ou administrateur géné
 
 2. Sélectionnez le nom de l’utilisateur dont vous souhaitez qu’il soit transmis pour ouvrir la page de propriétés.
 
-3. Sous **l’onglet Courrier,** **sélectionnez Gérer le forwarding de courrier.**
+3. Sous **l’onglet** Courrier, **sélectionnez Gérer le forwarding de courrier.**
 
 4. Dans la page De forwarding de courrier, sélectionnez Forward **all emails sent to this mailbox,** enter the forwarding address, and choose whether you want to keep a copy of forwarded emails. Si cette option n’est pas disponible, assurez-vous qu’une licence est attribuée au compte d’utilisateur. Sélectionnez **Enregistrer les modifications**.
 

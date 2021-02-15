@@ -1,5 +1,5 @@
 ---
-title: Créer un certificat APNs pour les appareils iOS
+title: Configurer un certificat APNs pour les appareils iOS
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -21,7 +21,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/15/2021
 ms.locfileid: "49877079"
 ---
-# <a name="create-an-apns-certificate-for-ios-devices"></a>Créer un certificat APNs pour les appareils iOS
+# <a name="create-an-apns-certificate-for-ios-devices"></a>Configurer un certificat APNs pour les appareils iOS
 
 Pour gérer les appareils iOS tels que les iPad et les iPhone dans Basic Mobility and Security, créez un certificat APNs.
 

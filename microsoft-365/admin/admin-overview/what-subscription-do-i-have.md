@@ -32,7 +32,7 @@ ms.locfileid: "49926149"
 
 Si vous êtes un administrateur, vous pouvez vérifier les abonnements de votre organisation en allant au Centre d’administration.
   
- **Vous n’êtes pas administrateur ?** Voir quel produit ou licence Microsoft 365 pour les entreprises [est-ce que j’ai ?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+ **Vous n’êtes pas administrateur ?** Voir quel produit ou licence Microsoft 365 pour les entreprises [est-ce que j’utilise ?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 ::: moniker range="o365-worldwide"
 

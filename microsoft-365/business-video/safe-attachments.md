@@ -43,8 +43,8 @@ Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 - Protect
 1. Sélectionnez votre règle de pièces jointes sécurisées, puis sélectionnez **l’icône** Modifier.
 1. Sélectionnez **les paramètres,** puis vérifiez que Bloquer est sélectionné.
 1. Faites défiler vers le bas. Sélectionnez **Activer la redirection,** puis entrez votre adresse e-mail ou l’adresse de la personne que vous souhaitez consulter les pièces jointes bloquées.
-1. Sélectionnez **Appliqué à,** puis sélectionnez votre nom de domaine.
-1. Choisissez les domaines supplémentaires que vous possédez (tels que onmicrosoft.com domaine) que vous souhaitez que la règle s’applique. Sélectionnez **Ajouter,** puis **OK**.
+1. Sélectionnez **Appliqué** à, puis sélectionnez votre nom de domaine.
+1. Choisissez les domaines supplémentaires que vous possédez (tels que votre domaine onmicrosoft.com) que vous souhaitez que la règle s’applique. Sélectionnez **Ajouter,** puis **OK**.
 1. Sélectionnez **Enregistrer**.
 
 Votre règle de pièces jointes sécurisées ATP a été mise à jour.

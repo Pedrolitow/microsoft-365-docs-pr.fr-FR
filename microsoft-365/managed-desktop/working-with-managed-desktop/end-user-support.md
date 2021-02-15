@@ -31,7 +31,7 @@ La méthode préférée pour fournir une assistance à vos utilisateurs est **Ob
 
 Obtenir de l’aide est une application installée sur tous les appareils bureau géré Microsoft et épinglée à la barre des tâches. 
 
-- Les utilisateurs peuvent demander un rappel vers un numéro de téléphone fourni ou discuter en ligne avec un représentant du service.
+- Les utilisateurs peuvent demander un rappel à un numéro de téléphone fourni ou discuter en ligne avec un représentant du service.
 - Les demandes qui ne font pas partie de l’étendue de prise en charge du Bureau géré Microsoft sont redirigées vers le support technique informatique local via un appel téléphonique.
 
 > [!NOTE]
@@ -55,7 +55,7 @@ Si vous avez vérifié ces conditions préalables et que l’application Obtenir
 Les utilisateurs ayant des appareils Bureau géré Microsoft ont également accès aux numéros de téléphone gratuits qu’ils peuvent appeler. Les numéros sont destinés à être utilisés lorsque l’aide n’est pas disponible. Par exemple, s’ils ne peuvent pas se connectent à l’appareil ou si l’appareil est rompu. Voici les numéros de téléphone du support téléphonique :
 
 - États-Unis : +1 855 425 0216
-- Canada (à l’exception de Région) : +1 855 425 0216
+- Canada (excepté) : +1 855 425 0216
 - Royaume-Uni : +44 800 026 0698
 - Belgique : +32 800 58533
 - Luxembourg : +352 800 40119

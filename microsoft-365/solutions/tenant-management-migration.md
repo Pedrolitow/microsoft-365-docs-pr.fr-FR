@@ -1,5 +1,5 @@
 ---
-title: Étape 4. Migration pour vos clients Microsoft 365 pour entreprise
+title: Étape 4. Migration pour vos clients Microsoft 365 entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,7 +25,7 @@ ms.locfileid: "49908629"
 
 La plupart des organisations d’entreprise ont un environnement hétérogène qui inclut plusieurs sorties de systèmes d’exploitation, de logiciels clients et de logiciels serveur. Microsoft 365 pour entreprise inclut les versions les plus sécurisées des composants clés de votre infrastructure informatique. Il inclut également des fonctionnalités de productivité conçues pour tirer parti des technologies cloud.
 
-Pour optimiser la valeur commerciale de la suite intégrée microsoft 365 pour entreprise, commencez à planifier et à implémenter une stratégie pour migrer ces produits :
+Pour optimiser la valeur commerciale de la suite intégrée de produits Microsoft 365 pour entreprise, commencez à planifier et implémenter une stratégie pour migrer ces produits :
 
 | De | À |
 |:-------|:-----|
@@ -54,7 +54,7 @@ Microsoft 365 Apps pour entreprise installe automatiquement les mises à jour de
 
 ## <a name="migrating-on-premises-servers-and-data-to-microsoft-365"></a>Migration de serveurs et de données locaux vers Microsoft 365
 
-Microsoft 365 pour entreprise inclut des versions basées sur le cloud des services serveur Office qui utilisent certains des mêmes outils que les versions sur site des logiciels serveur Office, tels que les navigateurs web et le client Outlook. Ces services basés sur le cloud sont automatiquement mis à jour pour la sécurité et les nouvelles fonctionnalités. Après la migration, votre service informatique peut gagner du temps pour la maintenance et la mise à jour des serveurs locaux.
+Microsoft 365 pour entreprise inclut des versions basées sur le cloud des services serveur Office qui utilisent certains des mêmes outils que les versions sur site du logiciel serveur Office, tels que les navigateurs web et le client Outlook. Ces services basés sur le cloud sont automatiquement mis à jour pour la sécurité et les nouvelles fonctionnalités. Après la migration, votre service informatique peut gagner du temps pour gérer et mettre à jour des serveurs locaux.
 
 Utilisez les ressources suivantes pour plus d’informations sur la migration des utilisateurs et des données pour des charges de travail Microsoft 365 spécifiques :
 

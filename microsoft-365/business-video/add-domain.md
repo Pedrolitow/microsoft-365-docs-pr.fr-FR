@@ -34,13 +34,13 @@ ms.locfileid: "49927609"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
-Votre entreprise peut avoir besoin de plusieurs noms de domaine à des fins différentes. Par exemple, vous souhaitez peut-être ajouter une orthographe différente du nom de votre société, car les clients l’utilisent déjà et leurs communications n’ont pas pu vous joindre.
+Votre entreprise peut avoir besoin de plusieurs noms de domaine à des fins différentes. Par exemple, vous pouvez ajouter une orthographe différente du nom de votre société, car les clients l’utilisent déjà et leurs communications n’ont pas pu vous joindre.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le Centre d’administration Microsoft 365, choisissez **Installation.**
+1. In the Microsoft 365 admin center, choose **Setup**.
 1. Sous **Obtenir votre domaine personnalisé, sélectionnez** **Afficher.**
-1. Sélectionnez **Gérer,** puis **Ajouter un domaine.**
+1. Choose **Manage,** and then **Add domain**.
 1. Entrez le nouveau nom de domaine à ajouter, puis sélectionnez **Suivant.**
 1. Connectez-vous à votre bureau d’enregistrement de domaines, dans ce cas GoDaddy, puis sélectionnez **Suivant**.
 1. Si vous y êtes invité, connectez-vous à votre bureau d’enregistrement, puis choisissez **Autoriser.**

@@ -35,7 +35,7 @@ ms.locfileid: "49927333"
 
 ## <a name="try-it"></a>Essayez !
 
-Microsoft 365 n’inclut pas de site web public pour votre entreprise. Pour en configurer une, envisagez d’utiliser une société d’hébergement web telle que GoDaddy, Wix ou WordPress.
+Microsoft 365 n’inclut pas de site web public pour votre entreprise. Pour en configurer un, envisagez d’utiliser une société d’hébergement web telle que GoDaddy, Wix ou WordPress.
 
 1. Recherchez un fournisseur d’hébergement web dans lequel vous pouvez créer votre site web.
 

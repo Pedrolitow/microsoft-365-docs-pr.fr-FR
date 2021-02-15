@@ -45,8 +45,8 @@ Vous pouvez utiliser l’application mobile Microsoft 365 Admin pour gérer les 
 
 1. Sous **Liens rapides,** sélectionnez **Utilisateurs.**
 2. Dans la page **Utilisateurs,** choisissez le nom de l’utilisateur, puis réinitialisez **le mot de passe.**
-3. Si vous souhaitez que l’utilisateur modifie son nouveau mot  de passe lors de sa première signature, cochez la case Modifier lors de la première inscription, puis sélectionnez **Réinitialiser.**
-4. Lorsque vous avez été invité à confirmer,  **sélectionnez Oui,** puis  **OK**.
+3. Si vous souhaitez obliger l’utilisateur à modifier son nouveau  mot de passe lors de sa première signature, cochez la case Modifier lors de la première inscription, puis sélectionnez Réinitialiser. 
+4. Lorsque vous avez été invité à confirmer, choisissez  **Oui,** puis  **OK**.
 5. Dans la  **fenêtre Partager le mot**  de passe, vous pouvez éventuellement envoyer le nouveau mot de passe à l’utilisateur dans un message électronique ou un SMS.
 
 ### <a name="add-a-user-to-a-group"></a>Ajouter un utilisateur à un groupe
@@ -54,7 +54,7 @@ Vous pouvez utiliser l’application mobile Microsoft 365 Admin pour gérer les 
 1. Sous **Liens rapides,** choisissez **Groupes.**
 2. Dans la page **Groupes,** choisissez le groupe à ajouter à un utilisateur, puis sélectionnez Modifier les **membres,** puis **Ajoutez un membre.**
 3. Choisissez l’utilisateur que vous souhaitez ajouter.
-4. Lorsque vous avez été invité à confirmer,  **sélectionnez Oui,** puis  **OK**.
+4. Lorsque vous avez été invité à confirmer, choisissez  **Oui,** puis  **OK**.
 
 ### <a name="turn-on-notifications"></a>Activer les notifications
 

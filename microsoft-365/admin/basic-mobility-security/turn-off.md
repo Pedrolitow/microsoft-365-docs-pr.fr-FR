@@ -1,5 +1,5 @@
 ---
-title: Désactiver la mobilité et la sécurité de base
+title: Désactiver l’option Mobility et Security de base
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -21,7 +21,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/15/2021
 ms.locfileid: "49876839"
 ---
-# <a name="turn-off-basic-mobility-and-security"></a>Désactiver la mobilité et la sécurité de base
+# <a name="turn-off-basic-mobility-and-security"></a>Désactiver l’option Mobility et Security de base
 
 Pour désactiver efficacement la mobilité et la sécurité de base, vous supprimez des groupes de personnes définis par des groupes de sécurité des stratégies de gestion des appareils ou vous supprimez les stratégies elles-mêmes.
 
@@ -32,7 +32,7 @@ Pour désactiver efficacement la mobilité et la sécurité de base, vous suppri
 Ces options suppriment l’application de la mobilité et de la sécurité de base pour les appareils de votre organisation. Malheureusement, vous ne pouvez pas simplement « mettre en service » Basic Mobility and Security après l’avoir installé. 
 
 >[!IMPORTANT]
->N’ignorez pas l’impact sur les appareils des utilisateurs lorsque vous supprimez des groupes de sécurité d’utilisateurs des stratégies ou supprimez les stratégies elles-mêmes. Par exemple, les profils de messagerie et les e-mails mis en cache peuvent être supprimés, en fonction de l’appareil. Pour plus d’informations,  [que se passe-t-il lorsque](https://support.microsoft.com/office/create-device-security-policies-in-basic-mobility-and-security-d310f556-8bfb-497b-9bd7-fe3c36ea2fd6#bkmk_changeimpact) vous supprimez une stratégie ou supprimez un utilisateur de la stratégie ?
+>N’ignorez pas l’impact sur les appareils des utilisateurs lorsque vous supprimez des groupes de sécurité utilisateur des stratégies ou supprimez les stratégies elles-mêmes. Par exemple, les profils de messagerie et les e-mails mis en cache peuvent être supprimés, en fonction de l’appareil. Pour plus d’informations,  [que se passe-t-il lorsque](https://support.microsoft.com/office/create-device-security-policies-in-basic-mobility-and-security-d310f556-8bfb-497b-9bd7-fe3c36ea2fd6#bkmk_changeimpact) vous supprimez une stratégie ou supprimez un utilisateur de la stratégie ?
 
 ## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Supprimer des groupes de sécurité utilisateur des stratégies d’appareil de mobilité et de sécurité de base
 

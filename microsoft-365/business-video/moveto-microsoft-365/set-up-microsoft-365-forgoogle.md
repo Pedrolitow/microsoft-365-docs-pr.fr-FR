@@ -48,4 +48,4 @@ Pour migrer le courrier électronique, le calendrier et les contacts à partir d
 1. Développez et examinez vos paramètres Android et **iOS,** puis sélectionnez Créer une stratégie **de gestion des applications mobiles.**
 1. Fournissez des commentaires, si vous le souhaitez, et choisissez **Go to admin center**.
 
-L’étape suivante du processus consiste à configurer des protections pour votre organisation.
+L’étape suivante du processus consistera à configurer des protections pour votre organisation.

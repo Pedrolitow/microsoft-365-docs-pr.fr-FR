@@ -34,7 +34,7 @@ ms.locfileid: "49925505"
 Bien que les utilisateurs peuvent créer un groupe Microsoft 365 à partir d’Outlook ou d’autres applications, en tant qu’administrateur, vous devrez peut-être créer ou supprimer des groupes, ajouter ou supprimer des membres et personnaliser leur fonctionnement. Le Centre d’administration Microsoft 365 est l’endroit où vous pouvez le faire. 
 
 > [!TIP]
-> Les groupes Yammer connectés Microsoft 365 doivent être créés dans Yammer, mais peuvent être gérés dans le Centre d’administration Microsoft 365 comme les autres groupes Microsoft 365. Pour en savoir plus, [voir Yammer groupes Microsoft 365.](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
+> Les groupes de Yammer connectés Microsoft 365 doivent être créés dans Yammer, mais peuvent être gérés dans le Centre d’administration Microsoft 365 comme les autres groupes Microsoft 365. Pour en savoir plus, [voir Yammer groupes Microsoft 365.](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
 
 ## <a name="create-a-microsoft-365-group"></a>Créer un groupe Microsoft 365
 

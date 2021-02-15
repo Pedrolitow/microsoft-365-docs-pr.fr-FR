@@ -33,12 +33,12 @@ ms.locfileid: "49928125"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
-Microsoft Bookings est une application mobile et en ligne pour les petites entreprises qui fournissent des services aux clients sur la base d’un rendez-vous. Exemples d’entreprises : les salons de santé, les bureaux de soins, les spas, les cabinets d’avocats, les fournisseurs de services financiers, les consultants et les auto-boutiques.
+Microsoft Bookings est une application mobile et en ligne pour les petites entreprises qui fournissent des services aux clients sur la base d’un rendez-vous. Exemples d’entreprises : les salons de course, les bureaux de soins, les spas, les cabinets d’avocats, les fournisseurs de services financiers, les consultants et les auto-boutiques.
 
 ## <a name="get-started-with-bookings"></a>Mise en place de Bookings
 
 1. Pour commencer, connectez-vous à Microsoft 365 et sélectionnez **Bookings** dans le lanceur d’applications.
-1. Sélectionnez **Obtenir maintenant** sur la page **Réservations.**
+1. Sélectionnez **Obtenir maintenant sur** la page **Réservations.**
 1. Ajoutez vos informations professionnelles et vous êtes prêt à commencer à utiliser Bookings.
 
     Pour gérer vos réservations sur votre appareil mobile, téléchargez Bookings à partir de votre app store.

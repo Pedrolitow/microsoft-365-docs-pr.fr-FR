@@ -23,7 +23,7 @@ Le nouveau [navigateur Microsoft Edge offre](https://www.microsoft.com/edge) des
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
-Pour migrer vos appareils de bureau géré Microsoft vers le nouveau navigateur Microsoft Edge, déposez un ticket de support informatique via le portail Bureau géré Microsoft. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de conserver.
+Pour migrer vos appareils de bureau géré Microsoft vers le nouveau navigateur Microsoft Edge, déposez un ticket de support informatique via le portail Bureau géré Microsoft. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de se tenir en attente.
 
 Le [canal bêta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Bureau géré Microsoft déploie l’application selon les besoins des groupes Test et First Afin que tous ces utilisateurs utilisent le canal bêta en plus du canal stable. Pour tous les autres utilisateurs qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe Utilisateurs bêta de l’espace de travail moderne **- Edge** et installez-le à partir du portail d’entreprise.
 
@@ -33,7 +33,7 @@ Bureau géré Microsoft déploie le canal [stable](https://docs.microsoft.com/de
 
 Le [canal bêta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) est déployé sur les appareils des groupes Test et First pour une validation représentative au sein de l’organisation. Ce canal est entièrement pris en charge et est mis à jour automatiquement avec de nouvelles fonctionnalités environ toutes les six semaines.
 
-Pour vous assurer que Microsoft Edge est mis à jour correctement, ne modifiez pas les stratégies [de](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)mise à jour de Microsoft Edge.
+Pour vous assurer que Microsoft Edge est mis à jour correctement, ne modifiez pas les stratégies de mise [à](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)jour de Microsoft Edge.
 
 
 
@@ -153,7 +153,7 @@ Le modèle d’administration offre un paramètre pour déployer des extensions 
 Vous pouvez également utiliser le modèle d’administration pour configurer Microsoft Edge afin d’installer les extensions sans avertir l’utilisateur. Vous pouvez le trouver dans Configuration ordinateur > Extensions > Microsoft Edge > contrôler les **extensions installées en mode silencieux.**
 
 ### <a name="microsoft-edge-update-policies"></a>Stratégies de mise à jour de Microsoft Edge
-Pour vous assurer que Microsoft Edge est mis à jour correctement, ne modifiez pas les stratégies [de](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)mise à jour de Microsoft Edge.
+Pour vous assurer que Microsoft Edge est mis à jour correctement, ne modifiez pas les stratégies de mise [à](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)jour de Microsoft Edge.
 
 ### <a name="other-common-enterprise-policies"></a>Autres stratégies d’entreprise courantes
 

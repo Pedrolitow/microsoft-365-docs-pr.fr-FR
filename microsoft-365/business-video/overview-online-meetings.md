@@ -33,7 +33,7 @@ ms.locfileid: "49926125"
 
 Vous avez besoin de rencontrer un client, un client ou un partenaire, mais vous ne pouvez pas mettre tout le monde au même endroit ? Ne vous inquiétez pas, vous devez avoir une réunion en ligne. S’ils ont un smartphone, une tablette ou un ordinateur portable, ils peuvent se joindre à Microsoft Teams.
 
-Ils doivent télécharger la [version](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) gratuite ou se joindre en ligne dans un [navigateur](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) pour obtenir la vidéo et le partage d’écran.
+Ils devront télécharger la [version](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) gratuite ou participer en [ligne dans](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) un navigateur pour obtenir la vidéo et le partage d’écran.
 
 Si vous collaborez fréquemment étroitement sur des projets avec un client, un client ou un partenaire, envisagez de créer une équipe pour vos [clients,](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) vous pouvez facilement les inviter à des réunions et avoir des conversations, partager des fichiers et suivre les projets dans Microsoft Teams.
 
@@ -49,8 +49,8 @@ Pour planifier des réunions avec vos employés, clients et autres invités, uti
 
 1. Dans Microsoft Teams, dans le navigation de gauche, choisissez **Réunions.**
 1. Choisissez **Planifier une réunion.**
-1. Dans la **zone Nouvelle réunion,** entrez un **titre et** un **emplacement** pour la réunion.
-1. Entrez une **heure et** **une** date de début et de fin.
+1. Dans la **zone Nouvelle réunion,** entrez un titre **et** un **emplacement** pour la réunion.
+1. Entrez une heure et **une** date **de** début et de fin.
 1. Dans la **zone Détails,** entrez une description de la réunion et tous les autres détails que vous souhaitez ajouter, tels qu’un ordre du jour de la réunion.
 1. Sous **Inviter des personnes,** entrez les noms des employés ou des clients que vous voulez inviter.
 1. Si vous voyez **Provisoire** ou **Occupé** sous  n’importe quel nom, choisissez l’une des heures gratuites fournies ou cliquez sur Assistant Planification **pour** plus d’options.

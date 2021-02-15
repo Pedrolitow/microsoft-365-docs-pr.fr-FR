@@ -60,7 +60,7 @@ Si les membres de votre organisation utilisent des appareils mobiles qui ne sont
 
 ## <a name="access-control-for-microsoft-365-email-and-documents"></a>Contrôle d’accès pour la messagerie et les documents Microsoft 365
 
-Les applications prise en charge pour les différents types d’appareils mobiles dans le tableau suivant invitent les utilisateurs à s’inscrire à Basic Mobility and Security lorsqu’une nouvelle stratégie de gestion des appareils mobiles s’applique à l’appareil d’un utilisateur et que l’utilisateur ne l’a pas précédemment inscrit. Si l’appareil d’un utilisateur n’est pas conforme à une stratégie, selon la façon dont vous définissez la stratégie, il se peut qu’un utilisateur ne puisse pas accéder aux ressources Microsoft 365 dans ces applications, ou qu’il puisse y avoir accès, mais Microsoft 365 signale une violation de stratégie.
+Les applications prise en charge pour les différents types d’appareils mobiles dans le tableau suivant invitent les utilisateurs à s’inscrire à Basic Mobility and Security lorsqu’une nouvelle stratégie de gestion des appareils mobiles s’applique à l’appareil d’un utilisateur et que l’utilisateur ne l’a pas précédemment inscrit. Si l’appareil d’un utilisateur n’est pas conforme à une stratégie, selon la façon dont vous la définissez, il se peut qu’un utilisateur ne puisse pas accéder aux ressources Microsoft 365 dans ces applications, ou qu’il puisse y avoir accès, mais Microsoft 365 signale une violation de stratégie.
 
 |**Produit**|**iOS 10.0 ou une ultérieure**|**Android 5.0 ou version ultérieure**|
 |:-----|:-----|:-----|
@@ -69,7 +69,7 @@ Les applications prise en charge pour les différents types d’appareils mobile
 
 >[!NOTE]
 - >La prise en charge d’iOS 10.0 et des versions ultérieures inclut les appareils iPhone et iPad.
-- >La gestion des appareils du système d’exploitation BlackBerry n’est pas prise en charge par la sécurité de base et la mobilité. Utilisez blackBerry Business Cloud Services (BBCS) de BlackBerry pour gérer les appareils blackBerry OS. Les appareils Blackberry exécutant le système d’exploitation Android sont pris en charge en tant qu’appareils Android standard
+- >La gestion des appareils blackBerry OS n’est pas prise en charge par la sécurité et la mobilité de base. Utilisez blackBerry Business Cloud Services (BBCS) de BlackBerry pour gérer les appareils blackBerry OS. Les appareils Blackberry exécutant le système d’exploitation Android sont pris en charge en tant qu’appareils Android standard
 - >Les utilisateurs ne seront pas invités à s’inscrire et ne seront pas bloqués ou signalés pour violation de stratégie s’ils utilisent le navigateur mobile pour accéder aux sites SharePoint Microsoft 365, aux documents dans Office Online ou à la messagerie électronique dans Outlook Web App.
 
 Le diagramme suivant illustre ce qui se produit lorsqu’un utilisateur avec un nouvel appareil se connecté à une application qui prend en charge le contrôle d’accès avec Basic Mobility and Security. L’utilisateur ne peut pas accéder aux ressources Microsoft 365 dans l’application jusqu’à ce qu’il inscrive son appareil.
@@ -238,9 +238,9 @@ Vous pouvez définir ces paramètres de stratégie supplémentaires à l’aide 
 
 Si un appareil est perdu ou volé, vous pouvez supprimer des données organisationnelles sensibles et empêcher l’accès aux ressources de votre organisation Microsoft 365 en faisant une effacement à partir du Centre de sécurité & conformité > Gestion des appareils de protection contre la perte de  >  données. Vous pouvez effectuer une réinitialisation sélective de l’appareil afin de supprimer uniquement les données de l’organisation, ou effectuer une réinitialisation complète afin de supprimer toutes les informations qu’il contient et restaurer ses paramètres d’origine.
 
-Pour plus d’informations, voir [Effacer un appareil mobile dans Basic Mobility and Security](wipe-mobile-device.md).
+Pour plus d’informations, voir [Effacer un appareil mobile dans Basic Mobility and Security.](wipe-mobile-device.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365](overview.md)
 

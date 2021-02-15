@@ -31,7 +31,7 @@ ms.locfileid: "49927777"
 ---
 # <a name="work-from-anywhere---overview"></a>Travailler n’importe où : vue d’ensemble
 
-Absent(s) de votre bureau ? Plus de batterie d’ordinateur portable ? Pas de problème! Gérer votre travail n’importe où avec Office sur votre téléphone ou tablette.
+Vous n’avez pas de bureau ? Plus de batterie d’ordinateur portable ? Pas de problème! Gérer votre travail n’importe où avec Office sur votre téléphone ou tablette.
 
 **Conseil professionnel :** Maintenez votre équilibre entre vie professionnelle et vie privée en tenez compte des notifications pour vos applications de travail sur vos appareils personnels.
 
@@ -39,7 +39,7 @@ Utilisez les quatre conseils ci-dessous pour travailler où que vous soyez : Té
 
 **Vous envisagez de travailler régulièrement à domicile ?**
 
-Utilisez ce modèle pour analyser vos habitudes et la façon dont vous souhaitez travailler pour créer un plan qui fonctionne lorsque vous faites la transition vers un bureau à domicile. Collectez le matériel et les fournitures pour optimiser votre espace et vous assurer une efficacité et une utilisation efficace. [Télécharger le modèle](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
+Utilisez ce modèle pour analyser vos habitudes et la façon dont vous souhaitez travailler pour créer un plan qui fonctionne lorsque vous faites la transition vers un bureau à domicile. Collectez le matériel et les fournitures pour optimiser votre espace et vous maintenir efficace et en déplacement. [Télécharger le modèle](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
 
 ## <a name="install-outlook-and-keep-in-touch"></a>Installer Outlook et rester en contact
 

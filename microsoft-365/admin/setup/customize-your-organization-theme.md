@@ -65,11 +65,11 @@ En tant qu’administrateur de votre abonnement Microsoft 365 pour les entrepris
 
     - **Empêcher les utilisateurs de basculer le thème**: retournez ce basculement pour empêcher les utilisateurs de choisir leur propre thème dans notre sélection de thème. Cela n’empêche pas les utilisateurs de définir un thème à contraste élevé.
 
-    - **Afficher le nom d’utilisateur**: indiquez s’il faut afficher le nom complet d’un utilisateur au point d’entrée du gestionnaire de comptes en haut à droite de la page lorsque l’utilisateur est inscrit. Par défaut, les utilisateurs voient leur photo ou leurs initiales, si aucune photo n’a été téléchargée.
+    - **Afficher le nom d’utilisateur**: indiquez s’il faut afficher le nom complet d’un utilisateur au point d’entrée du gestionnaire de comptes en haut à droite de la page lorsque l’utilisateur est signé. Par défaut, les utilisateurs voient leur photo ou leurs initiales, si aucune photo n’a été téléchargée.
 
 4. Sélectionnez **Enregistrer les modifications**.
 
-Vous pouvez voir votre nouveau thème immédiatement dans le Centre d’administration. Après un court délai, vous pouvez le voir dans Microsoft 365, y compris dans les pages dans Outlook, SharePoint, l’application [mobile SharePoint](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a)pour iOS et l’application [mobile SharePoint](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284)pour Android.
+Vous pouvez voir votre nouveau thème dans le Centre d’administration immédiatement. Après un court délai, vous pouvez le voir dans Microsoft 365, y compris dans les pages dans Outlook, SharePoint, l’application [mobile SharePoint](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a)pour iOS et l’application [mobile SharePoint](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284)pour Android.
 
 Vous pouvez supprimer votre icône ou vos couleurs personnalisées à tout moment. Il vous suffit de revenir à la page de thème et de sélectionner **Supprimer les thèmes personnalisés.**
   

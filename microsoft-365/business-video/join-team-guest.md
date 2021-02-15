@@ -40,7 +40,7 @@ Si vous recevez une invitation Microsoft Teams à rejoindre une équipe, vous de
 1. Ouvrez l’invitation par courrier électronique, puis **sélectionnez Ouvrir Microsoft Teams.** Si vous ne voyez pas l’invitation, vérifiez votre dossier de courrier indésirable ou de courrier indésirable.
   1. Si votre adresse de messagerie n’a pas été utilisée précédemment pour créer un compte Microsoft, vous devez en créer un.
 
-     Dans la **boîte de dialogue** Créer un compte, **sélectionnez Suivant,** créez un mot de passe, puis sélectionnez **Suivant.**
+     Dans la **boîte de dialogue** Créer un compte, **sélectionnez Suivant,** créez un mot de passe, puis **sélectionnez Suivant.**
   1. Pour vérifier votre adresse e-mail, ouvrez l’e-mail de vérification et copiez le code de sécurité.
   1. Entrez votre code  de sécurité dans la boîte de dialogue  Vérifier l’e-mail, sélectionnez **Suivant,** entrez la CAPTCHA dans la ligne Entrez les caractères que vous voyez, sélectionnez **Suivant,** puis **Acceptez**.
 1. Si vous ne souhaitez pas télécharger l’application Microsoft Teams, sélectionnez **Utiliser l’application web à la place.**

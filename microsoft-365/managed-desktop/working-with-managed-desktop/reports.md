@@ -18,7 +18,7 @@ ms.locfileid: "49921349"
 ---
 # <a name="work-with-reports"></a>Utiliser les rapports
 
-Bureau géré Microsoft fournit plusieurs rapports et tableaux de bord que les administrateurs informatiques de votre organisation peuvent utiliser pour comprendre différents aspects de la population d’appareils.Vous trouverez des rapports à deux emplacements : dans [Microsoft Endpoint Manager](https://endpoint.microsoft.com) et dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop) 
+Bureau géré Microsoft fournit plusieurs rapports et tableaux de bord que les administrateurs informatiques de votre organisation peuvent utiliser pour comprendre différents aspects de la population d’appareils.Vous trouverez des rapports à deux emplacements : dans [le Gestionnaire de](https://endpoint.microsoft.com) point de terminaison Microsoft et dans le Centre d’administration Microsoft [365.](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop) 
 
 ## <a name="reports-in-microsoft-endpoint-manager"></a>Rapports dans Microsoft Endpoint Manager
 

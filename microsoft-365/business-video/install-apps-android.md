@@ -42,7 +42,7 @@ Si votre appareil Android est géré par Microsoft 365 Business Premium, vous po
 3. On the Outlook welcome screen, choose  **Get started**.
 4. Dans la page **Ajouter un** compte, entrez votre adresse de messagerie Microsoft 365, puis choisissez **Continuer.**
 5. Sous **Entrer votre mot de** passe, tapez votre mot de passe, puis choisissez Se **connectez.**
-6. Sur la page suivante,  **sélectionnez Continuer**  si vous souhaitez ajouter un autre compte. Dans le cas contraire, **sélectionnez Ignorer.**
+6. Sur la page suivante,  **sélectionnez Continuer**  si vous souhaitez ajouter un autre compte. Dans le cas contraire, choisissez  **Skip**.
 7. When prompted to add the Intune Company Portal app, choose  **Go to store**.
 8. Installez et ouvrez l’application portail d’entreprise Intune, puis choisissez  **OK**  lorsque vous voyez le message que votre organisation protège les données dans cette application.
-9. Si vous êtes invité à entrer un code confidentiel, entrez un code confidentiel à 4 chiffres que vous&#39;utiliserez pour déverrouiller votre téléphone, choisissez  **Envoyer,** confirmez votre code confidentiel, puis choisissez Envoyer  **à**  nouveau.
+9. Si vous êtes invité à entrer un code confidentiel, entrez un code confidentiel à 4 chiffres que vous&#39;utiliserez pour déverrouiller votre téléphone, choisissez **Envoyer,** confirmez votre code confidentiel, puis choisissez Envoyer à **nouveau.**

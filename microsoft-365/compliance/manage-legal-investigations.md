@@ -1,5 +1,5 @@
 ---
-title: Gérer les enquêtes juridiques dans Microsoft 365
+title: Gérer les enquêtes judiciaires dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -24,7 +24,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/13/2021
 ms.locfileid: "49840703"
 ---
-# <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes juridiques dans Microsoft 365
+# <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes judiciaires dans Microsoft 365
 
 Les organisations ont de nombreuses raisons de répondre à un dossier juridique impliquant certains cadres ou d’autres employés de votre organisation. Cela peut impliquer de trouver et de conserver rapidement des informations spécifiques à l’examen dans le courrier électronique, les documents, les conversations de messagerie instantanée et d’autres emplacements de contenu utilisés par les personnes dans leurs tâches de travail quotidiennes. Vous pouvez effectuer ces activités et de nombreuses autres activités similaires à l’aide des outils de cas eDiscovery dans le centre de sécurité et conformité.
   

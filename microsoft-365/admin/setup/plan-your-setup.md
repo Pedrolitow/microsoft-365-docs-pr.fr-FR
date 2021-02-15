@@ -43,7 +43,7 @@ Lorsque vous êtes prêt à exécuter l’Assistant Installation et à déplacer
   
 - Liste des personnes que vous souhaitez ajouter à Microsoft 365. Même si vous les avez déjà ajoutés à Microsoft 365, si vous actualisez vos informations de domaine, vous devez entrer leurs noms ici.
 
-- Comment informer vos employés de leur ID d’utilisateur et mot de passe pour qu’ils se connectent. Comptez-vous les appeler pour leur fournir ces informations ? Comptez-vous envoyer celles-ci à leur adresse de courrier personnelle ? Ils n’ont pas accès à leur messagerie, vous ne pouvez donc pas l’utiliser.
+- Comment vous allez informer vos employés de leur ID d’utilisateur et mot de passe afin qu’ils se connectent. Comptez-vous les appeler pour leur fournir ces informations ? Comptez-vous envoyer celles-ci à leur adresse de courrier personnelle ? Ils n’ont pas accès à leur messagerie, vous ne pouvez donc pas l’utiliser.
 
 - Si vous avez un nom de domaine pour votre organisation (par exemple, **contoso.com)** et que vous envisagez d’utiliser la messagerie Électronique Microsoft, vous devez savoir où votre domaine est enregistré et avoir des informations de connectez-vous.
 
@@ -54,7 +54,7 @@ L’Assistant Installation vous permet d’installer les applications Microsoft 
 > [!NOTE]
 > Si vous devez attribuer des rôles d’administrateur dans [Microsoft 365](../add-users/assign-admin-roles.md) pour les entreprises aux utilisateurs que vous ajoutez dans l’Assistant, vous pouvez le faire ultérieurement sur la page **Utilisateurs.** 
   
-Si vous n’avez pas terminé l’Assistant Installation, vous pouvez effectuer les tâches d’installation à tout moment à partir du programme d’installation [du Centre d’administration.](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >   À partir de là, vous pouvez migrer le courrier électronique et les contacts à partir d’un autre service de messagerie, modifier le domaine de votre compte d’administrateur, gérer vos informations de facturation, ajouter ou supprimer des utilisateurs, réinitialiser les mots de passe et faire d’autres fonctions professionnelles. Pour plus d’informations sur les différences entre l’Assistant Installation et la **page** d’installation, voir Différences entre l’Assistant Installation de Microsoft 365 et la [page d’installation.](o365-setup-wizard-and-setup-page.md)
+Si vous n’avez pas terminé l’Assistant Installation, vous pouvez effectuer les tâches d’installation à tout moment à partir du programme d’installation [du Centre d’administration.](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >   À partir de là, vous pouvez migrer le courrier électronique et les contacts à partir d’un autre service de messagerie, modifier le domaine de votre compte d’administrateur, gérer vos informations de facturation, ajouter ou supprimer des utilisateurs, réinitialiser des mots de passe et faire d’autres fonctions professionnelles. Pour plus d’informations sur les différences entre l’Assistant Installation et la **page** Installation, voir Différences entre l’Assistant Installation de Microsoft 365 et la [page d’installation.](o365-setup-wizard-and-setup-page.md)
 
 Si vous êtes bloqué à un moment quelconque, contactez-nous. [Nous sommes là pour vous aider.](../contact-support-for-business-products.md)
   
@@ -106,12 +106,12 @@ Si vous comptez utiliser Microsoft 365 pour votre courrier électronique :
 
 ### <a name="plan-to-move-your-existing-email-contacts-and-calendar"></a>Planifier le déplacement de vos courriers, contacts et calendrier existants
   
-Si vous comptez utiliser Microsoft 365 pour votre compte de messagerie, vous pouvez apporter votre courrier électronique, vos contacts et votre calendrier existants avec vous. La page **Installation** vous aide à déplacer votre courrier électronique et vos contacts existants pour la plupart des scénarios. Nous proposons également des guides détaillés pour le déplacement d'une ou plusieurs boîtes aux lettres.
+Si vous comptez utiliser Microsoft 365 pour votre compte de messagerie, vous pouvez apporter votre courrier électronique, vos contacts et votre calendrier existants avec vous. La page **Installation** vous aide à déplacer vos messages électroniques et contacts existants pour la plupart des scénarios. Nous proposons également des guides détaillés pour le déplacement d'une ou plusieurs boîtes aux lettres.
   
 |**Nombre de boîtes aux lettres ?**|**Recommandation**|
 |:-----|:-----|
 |Quelques-unes  <br/> |Si vous ne souhaitez pas utiliser la **page** d’installation pour migrer les boîtes aux lettres, vous pouvez laisser les propriétaires de boîtes aux lettres migrer leurs propres e-mails et contacts. Voir [Migrer le courrier électronique et les contacts vers Microsoft 365 pour les entreprises.](migrate-email-and-contacts-admin.md)  <br/> |
-|Plusieurs  <br/> |Si vous migrez à partir de Gmail, voir Migrer des boîtes aux lettres [G Suite vers Microsoft 365.](https://docs.microsoft.com/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)  <br/> Si vous migrez à partir d’un autre fournisseur de messagerie, y compris Exchange, voir Méthodes de migration de plusieurs comptes de messagerie vers [Microsoft 365.](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)  <br/> |
+|Plusieurs  <br/> |Si vous migrez à partir de Gmail, voir Migrer des boîtes aux lettres [G Suite vers Microsoft 365.](https://docs.microsoft.com/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)  <br/> Si vous migrez à partir d’un autre fournisseur de messagerie, y compris Exchange, voir Méthodes de migration de plusieurs comptes de messagerie vers [Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).  <br/> |
 
 ## <a name="plan-for-file-storage-and-migration"></a>Planifier le stockage et la migration de fichiers
 
@@ -123,7 +123,7 @@ Microsoft 365 fournit un stockage cloud pour les individus, les petites organisa
   
 ## <a name="plan-for-teams"></a>Planifier Teams
 
-Vous pouvez utiliser Microsoft Teams pour appeler d’autres personnes de votre organisation qui font appel à votre abonnement. Par exemple, si votre organisation compte 10 personnes, vous pouvez vous appeler et vous instantanér à l’aide de Teams sans configuration spéciale. Pour plus d’informations, [consultez La mise en place de Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start)
+Vous pouvez utiliser Microsoft Teams pour appeler d’autres personnes de votre organisation qui font appel à votre abonnement. Par exemple, si votre organisation compte 10 personnes, vous pouvez vous appeler et vous instantanér à l’aide de Teams sans configuration spéciale. Pour plus d’informations, voir [La mise en place de Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start)
 
 Pour les grandes organisations ou si vous démarrez à partir de Skype [Entreprise,](https://docs.microsoft.com/MicrosoftTeams/how-to-roll-out-teams)en local ou hybrides, voir comment déployer Microsoft Teams.
   

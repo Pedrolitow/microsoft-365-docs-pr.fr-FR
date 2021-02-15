@@ -1,5 +1,5 @@
 ---
-title: Téléchargeable readiness assessment checker
+title: Vérifier la préparation d’évaluation téléchargeable
 description: Vérifie les paramètres du périphérique et du réseau, y compris les points de terminaison requis
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -16,9 +16,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/21/2021
 ms.locfileid: "49921970"
 ---
-# <a name="downloadable-readiness-assessment-checker"></a>Téléchargeable readiness assessment checker
+# <a name="downloadable-readiness-assessment-checker"></a>Vérifier la préparation d’évaluation téléchargeable
 
-Pour fonctionner avec le Bureau géré Microsoft, les appareils doivent répondre à certaines exigences en matière de matériel et de paramètres. En outre, chaque appareil doit être en mesure d’atteindre les points de terminaison clés. Téléchargez et exécutez cet outil pour obtenir un rapport HTML, afficher les résultats, puis prendre des mesures. Vous devrez télécharger l’outil et les fichiers de prise en charge, puis l’exécuter manuellement sur chaque appareil que vous souhaitez inscrire dans Bureau géré Microsoft.
+Pour fonctionner avec le Bureau géré Microsoft, les appareils doivent répondre à certaines exigences en matière de matériel et de paramètres. En outre, chaque appareil doit être en mesure d’atteindre les points de terminaison clés. Téléchargez et exécutez cet outil pour obtenir un rapport HTML, afficher les résultats, puis prendre des mesures. Vous devez télécharger l’outil et les fichiers de prise en charge, puis l’exécuter manuellement sur chaque appareil que vous souhaitez inscrire dans Bureau géré Microsoft.
 
 Pour chaque vérification, l’outil signalera l’un des trois résultats possibles :
 
@@ -66,15 +66,15 @@ Si l’outil **signale** un résultat non prêt, consultez le rapport détaillé
 
 #### <a name="enterprise-wi-fi-profiles"></a>Profils Wi-Fi d’entreprise
 
-Un **résultat d’avis** signifie que vous utilisez certains profils wi-fi qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir Déployer des certificats et profil [Wi-Fi/VPN.](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)
+Un **résultat d’avis** signifie que vous utilisez certains profils Wi-Fi qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir [Déployer des certificats et profil Wi-Fi/VPN.](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)
 
 #### <a name="lan-profiles"></a>Profils LAN
 
-Un **résultat d’avis** signifie que vous avez des lans qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour bureau géré Microsoft.](certs-wifi-lan.md)
+Un **résultat d’avis** signifie que vous avez des lans qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft.](certs-wifi-lan.md)
 
 #### <a name="vpn-profiles"></a>Profils VPN
 
-Un **résultat d’avis** signifie que vous utilisez un réseau privé virtuel (VPN). Créez un profil VPN qui déploie des certificats intégrés à Microsoft Intune. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour bureau géré Microsoft.](certs-wifi-lan.md)
+Un **résultat d’avis** signifie que vous utilisez un réseau privé virtuel (VPN). Créez un profil VPN qui déploie des certificats intégrés à Microsoft Intune. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft.](certs-wifi-lan.md)
 
 #### <a name="mapped-drives"></a>Lecteurs mappés
 

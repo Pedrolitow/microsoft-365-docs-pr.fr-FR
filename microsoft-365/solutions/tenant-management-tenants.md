@@ -59,9 +59,9 @@ Pour plus d’informations, voir collaboration entre clients [Microsoft 365.](..
 
 ### <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
-Avant la migration de boîtes aux lettres entre les locataires (en prévisualisation), lorsque vous migrez des boîtes aux lettres Exchange Online entre des locataires, vous devez déboarder complètement une boîte aux lettres utilisateur de son client actuel (le client source) vers l’ordinateur local, puis les intégrer à un nouveau client (le client cible). Grâce à la nouvelle fonctionnalité de migration de boîtes aux lettres entre les locataires, les administrateurs client des locataires source et cible peuvent déplacer des boîtes aux lettres entre les locataires avec un minimum de dépendances d’infrastructure dans leurs systèmes locaux. Cela supprime la nécessité de supprimer les boîtes aux lettres d’intégration et d’intégration.
+Avant la migration de boîtes aux lettres entre les locataires (en prévisualisation), lorsque vous migrez des boîtes aux lettres Exchange Online entre des locataires, vous devez déboarder complètement une boîte aux lettres utilisateur de son client actuel (le client source) vers l’ordinateur local, puis les intégrer à un nouveau client (le client cible). Grâce à la nouvelle fonctionnalité de migration de boîtes aux lettres entre les locataires, les administrateurs client des locataires source et cible peuvent déplacer des boîtes aux lettres entre les locataires avec des dépendances d’infrastructure minimales dans leurs systèmes locaux. Cela permet de supprimer la nécessité d’intégrer et d’intégrer des boîtes aux lettres.
 
-Voici deux exemples de client et leurs boîtes aux lettres avant la migration de boîtes aux lettres entre locataires.
+Voici deux exemples de client et leurs boîtes aux lettres avant la migration de boîtes aux lettres entre les locataires.
 
 ![Plusieurs clients Microsoft 365 et leurs boîtes aux lettres](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
 
@@ -79,7 +79,7 @@ Pour plus d’informations, consultez [la migration de boîtes aux lettres entre
 
 Il existe plusieurs approches architecturales pour les fusions, les acquisitions, les déssinttures et d’autres scénarios qui peuvent vous amener à migrer un client Microsoft 365 existant vers un nouveau client. 
 
-Pour obtenir des instructions [détaillées, voir migrations client à client Microsoft 365.](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)
+Pour obtenir des instructions détaillées, voir migrations client [à client Microsoft 365.](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)
 
 ## <a name="multi-geo-for-a-tenant"></a>Multi-Géo pour un client
 
@@ -111,8 +111,8 @@ Votre client Microsoft 365 est créé lorsque vous achetez votre premier produit
 
 La détermination de l’ensemble des produits et du nombre de licences pour chacun d’eux nécessite une planification pour :
 
-- Assurez-vous que vous disposez de suffisamment de licences pour les comptes d’utilisateurs qui ont besoin de fonctionnalités avancées.
-- Vous empêchez de ne plus disposer de licences ou d’avoir trop de licences non inscrites, en fonction des modifications apportées au personnel de votre organisation.
+- Assurez-vous que vous disposez de suffisamment de licences pour les comptes d’utilisateur qui ont besoin de fonctionnalités avancées.
+- Vous empêchez d’être à court de licences ou d’avoir trop de licences non inscrites, en fonction des modifications apportées au personnel de votre organisation.
 
 
 ## <a name="results-of-step-1"></a>Résultats de l’étape 1
@@ -124,7 +124,7 @@ Pour vos clients Microsoft 365 entreprise, vous avez déterminé :
 - Indique si un client doit être multigéogé pour se conformer aux exigences de résidence des données.
 - Si vous devez configurer la collaboration entre les locataires.
 - Si vous devez migrer un client vers un autre.
-- Indique si vous devez déplacer des données principales d’une géo de centres de données vers une nouvelle.
+- Indique si vous devez déplacer les données principales d’une géo de centres de données vers une nouvelle.
 
 Voici un exemple de nouveau client.
 

@@ -46,7 +46,7 @@ Vous n’êtes pas administrateur ? Essayez le [support Microsoft](https://go.m
 Le support de facturation est fourni en anglais de 9 h à 17 h (9 h à 18 h en Australie), du lundi au vendredi.
 Le support technique est proposé en anglais 24 heures sur 24, 7 jours sur 7.
 
-Pour trouver le numéro de téléphone du support Microsoft 365 ou Microsoft 365 Business Premium pour votre pays ou région, consultez le support technique pour les [produits d’entreprise.](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+Pour trouver le numéro de téléphone du support Microsoft 365 ou Microsoft 365 Business Premium pour votre pays ou région, consultez contacter le support technique pour [les produits d’entreprise.](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## <a name="try-it"></a>Essayez !
 

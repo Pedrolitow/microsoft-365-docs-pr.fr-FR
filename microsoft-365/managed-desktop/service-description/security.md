@@ -39,7 +39,7 @@ Service | Description
 --- | ---
 Antivirus | L’Antivirus Microsoft Defender est installé et configuré<br>Les définitions de Microsoft Defender AV sont à jour
 Chiffrement de volume complet |    Windows BitLocker est la solution de chiffrement de volume pour les appareils bureau géré Microsoft.<br><br>Une fois qu’une organisation est intégrée au service, les appareils sont chiffrés à l’aide de Windows BitLocker avec le module de plateforme de gestion de la plateforme de confiance (TPM) intégré pour empêcher l’accès non autorisé aux données locales lorsque l’appareil est en mode veille ou hors service. 
-Surveillance |    Microsoft Defender for Endpoint est utilisé pour la surveillance des menaces de sécurité sur tous les appareils de bureau géré Microsoft. Defender pour le point de terminaison permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, [voir Microsoft Defender pour le point de terminaison.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Surveillance |    Microsoft Defender pour le point de terminaison est utilisé pour la surveillance des menaces de sécurité sur tous les appareils bureau géré Microsoft. Defender pour le point de terminaison permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, [voir Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 Mises à jour du système d’exploitation |  Les appareils bureau géré Microsoft sont toujours sécurisés avec les dernières mises à jour de sécurité.
 Configuration de l’appareil sécurisé |   Bureau géré Microsoft implémente la ligne de base de sécurité Microsoft. Pour plus d’informations, voir [les lignes de base de sécurité Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
@@ -51,7 +51,7 @@ La gestion des identités et des accès protège les biens d’entreprise et les
 
 Service | Description
 --- | ---
-Authentification biométrique |  Windows Hello permet aux utilisateurs de se connecter à l’aide de leur visage ou d’un code confidentiel, rendant les mots de passe plus difficiles à oublier ou à voler. Les clients sont chargés d’implémenter les conditions préalables nécessaires à leur active directory local pour l’utilisation de ce service dans une configuration hybride. Pour plus d’informations, [voir Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
+Authentification biométrique |  Windows Hello permet aux utilisateurs de se connecter à l’aide de leur visage ou d’un code confidentiel, ce qui rend les mots de passe plus difficiles à oublier ou à voler. Les clients sont chargés d’implémenter les conditions préalables nécessaires pour leur annuaire Active Directory local pour l’utilisation de ce service dans une configuration hybride. Pour plus d’informations, [voir Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 Autorisation utilisateur standard |  Pour protéger le système et le sécuriser, l’utilisateur se voit attribuer des autorisations d’utilisateur standard. Cette autorisation est attribuée dans le cadre de l’expérience Windows Autopilot out-of-box.
 
 

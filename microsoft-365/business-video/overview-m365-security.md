@@ -36,7 +36,7 @@ ms.locfileid: "49928137"
 
 Microsoft 365 Business Premium offre des fonctionnalités de protection contre les menaces, de protection des données et de gestion des appareils pour vous aider à protéger votre entreprise contre les menaces en ligne et les accès non autorisés, ainsi que protéger et gérer les données d’entreprise sur vos téléphones, tablettes et ordinateurs.
 
-|![Protection contre les menaces](../media/m365-business-security-threat-protection.png)<br/>[Protection contre les menaces](#threat-protection)|![Collaborer avec un client](../media/m365-business-security-data-protection.png) <br/>[Protection des données](#data-protection) | ![Gestion des appareils](../media/m365-business-security-device-management.png) <br/>[Gestion des périphériques](#device-management) |
+|![Protection contre les menaces](../media/m365-business-security-threat-protection.png)<br/>[Protection contre les menaces](#threat-protection)|![Collaborer avec un client](../media/m365-business-security-data-protection.png) <br/>[Protection des données](#data-protection) | ![Gestion des périphériques](../media/m365-business-security-device-management.png) <br/>[Gestion des périphériques](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>Protection contre les menaces
@@ -57,7 +57,7 @@ Le chiffrement de messages Office 365 combine les fonctionnalités de chiffremen
 
 Archivage Exchange Online est une solution d’archivage informatique qui fonctionne avec Microsoft Exchange ou Exchange Online pour fournir des fonctionnalités d’archivage avancées, notamment des archives et la redondance des données. Vous pouvez utiliser des stratégies de rétention pour aider votre organisation à réduire les responsabilités associées à la messagerie électronique et à d’autres communications. Si votre entreprise est tenue de conserver les communications liées à un litige, vous pouvez utiliser les conservations In-Place et les conservations pour litige pour conserver les e-mails associés.
 
-## <a name="device-management"></a>Gestion des appareils
+## <a name="device-management"></a>Gestion des périphériques
 
 Les fonctionnalités avancées de gestion des appareils Microsoft 365 Business Premium vous permet de surveiller et de contrôler ce que les utilisateurs peuvent faire avec les appareils inscrits. Ces fonctionnalités incluent l’accès conditionnel, la gestion des périphériques mobiles (MDM), BitLocker et les mises à jour automatiques.
 

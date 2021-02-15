@@ -56,7 +56,7 @@ Si vous désinstallez la solution antivirus non Microsoft, l’Antivirus Microso
 
 > [!TIP]
 > - Si vous utilisez Microsoft 365, envisagez d’utiliser l’Antivirus Microsoft Defender comme solution antivirus principale. L’intégration peut fournir une meilleure protection. Voir [mieux ensemble : Antivirus Microsoft Defender et Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus).
-> - Veillez à maintenir l’Antivirus Microsoft Defender à jour, même si vous utilisez une solution antivirus non-Microsoft.
+> - Veillez à maintenir l’Antivirus Microsoft Defender à jour, même si vous utilisez une solution antivirus non Microsoft.
 
 ## <a name="what-to-expect-when-threats-are-detected"></a>À quoi s’attendre lorsque des menaces sont détectées
 

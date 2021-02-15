@@ -34,7 +34,7 @@ ms.locfileid: "49927405"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
-Parfois, vous devrez peut-être modifier le nom ou l’adresse e-mail d’un utilisateur. Vous pouvez le faire en modifiant leur nom d’affichage, leur alias ou leur adresse e-mail. 
+Parfois, vous devrez peut-être modifier le nom ou l’adresse e-mail d’un utilisateur. Vous pouvez le faire en modifiant leur nom d’affichage, leur alias ou leur adresse de messagerie. 
 
 ## <a name="try-it"></a>Essayez !
 

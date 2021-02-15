@@ -37,13 +37,13 @@ Pour optimiser l’accès réseau pour votre client, vous devez :
 
 Pour les réseaux d’entreprise, vous devez optimiser l’expérience utilisateur final en activant l’accès réseau le plus performant entre les clients et les points de terminaison Microsoft 365 les plus proches. La qualité de l’expérience de l’utilisateur final est directement liée aux performances et à la réactivité de l’application que l’utilisateur utilise. Par exemple, Microsoft Teams s’appuie sur une faible latence pour que les appels téléphoniques des utilisateurs, les conférences et les collaborations à l’écran partagé soient sans problème.
 
-L’objectif principal dans la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les appareils clients et le réseau mondial Microsoft, la dorsale principale du réseau public de Microsoft qui interconnecte tous les centres de données Microsoft avec une faible latence et des points d’entrée d’application cloud haute disponibilité, appelés « portes d’entrée » dans le monde entier.
+L’objectif principal dans la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les appareils clients et le réseau global Microsoft, la dorsale principale du réseau public de Microsoft qui interconnecte tous les centres de données Microsoft avec une faible latence, des points d’entrée d’application cloud haute disponibilité, appelés portes d’entrée, répartis dans le monde entier.
 
 Voici un exemple de réseau d’entreprise traditionnel.
 
 ![Un réseau d’entreprise traditionnel avec un accès centralisé à Internet](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
-Dans cette illustration, les succursales se connectent à un bureau central par le biais de périphériques de réseau large (WAN) et d’une dorsale de base du réseau wan. L’accès à Internet s’fait par le biais d’un périphérique de sécurité ou d’un proxy au niveau du périmètre réseau du siège social et d’un fournisseur de services Internet (ISP). Sur Internet, microsoft Global Network dispose d’une série de portes d’entrée dans les régions du monde entier. Les organisations peuvent également utiliser des emplacements intermédiaires pour le traitement et la sécurité des paquets supplémentaires pour le trafic. Le client Microsoft 365 d’une organisation se trouve dans le réseau global Microsoft.
+Dans cette illustration, les succursales se connectent à un bureau central par le biais de périphériques de réseau large (WAN) et d’une dorsale de base du réseau wan. L’accès à Internet s’fait par le biais d’un périphérique de sécurité ou d’un proxy au niveau du périmètre réseau du siège social et d’un fournisseur de services Internet (ISP). Sur Internet, microsoft Global Network dispose d’une série de portes d’entrée dans des régions du monde entier. Les organisations peuvent également utiliser des emplacements intermédiaires pour le traitement de paquets supplémentaire et la sécurité du trafic. Le client Microsoft 365 d’une organisation se trouve dans le réseau global Microsoft.
 
 Les problèmes liés à cette configuration pour les services cloud De Microsoft 365 sont les :
 
@@ -131,7 +131,7 @@ Pour plus d’informations, [voir Utiliser le CDN Office 365 avec SharePoint Onl
 
 Pour que vos clients locaux, périphériques Edge et services d’analyse de paquets basés sur le cloud ignorent le traitement du trafic Microsoft 365 approuvé, vous devez les configurer avec l’ensemble de points de terminaison (plages d’adresses IP et noms DNS) correspondant aux services Microsoft 365. Ces points de terminaison peuvent être configurés manuellement dans les pare-feux et autres périphériques de sécurité Edge, les fichiers PAC pour les ordinateurs clients afin de contourner les proxies ou les périphériques SD-WAN des succursales. Toutefois, les points de terminaison changent au fil du temps, nécessitant une maintenance manuelle continue des listes de points de terminaison à ces emplacements.
 
-Pour automatiser la gestion des listes et des changements pour les points de terminaison Microsoft 365 dans vos fichiers PAC clients et périphériques réseau, utilisez l’adresse [IP Office 365](../enterprise/microsoft-365-ip-web-service.md)et le service web REST d’URL. Ce service vous aide à mieux identifier et différencier le trafic réseau Microsoft 365, ce qui vous permet d’évaluer, de configurer et de rester à jour avec les dernières modifications.
+Pour automatiser la gestion des listes et des changements pour les points de terminaison Microsoft 365 dans vos fichiers PAC clients et périphériques réseau, utilisez l’adresse [IP Office 365](../enterprise/microsoft-365-ip-web-service.md)et le service web REST d’URL. Ce service vous aide à mieux identifier et différencier le trafic réseau Microsoft 365, ce qui vous permet d’évaluer, de configurer et de rester à jour plus facilement avec les dernières modifications.
 
 Vous pouvez utiliser PowerShell, Python ou d’autres langages pour déterminer les modifications apportées aux points de terminaison au fil du temps et configurer vos fichiers PAC et périphériques réseau edge.
 
@@ -141,7 +141,7 @@ Le processus de base est :
 2. Exécutez une activité périodique quotidienne pour vérifier les modifications apportées aux points de terminaison ou utilisez une méthode de notification.
 3. Lorsque des modifications sont détectées, régénérez et redistribuez le fichier PAC pour les ordinateurs clients et a apporter les modifications à vos périphériques réseau.
 
-Pour plus d’informations, consultez [l’adresse IP Office 365 et le service web d’URL.](../enterprise/microsoft-365-ip-web-service.md)
+Pour plus d’informations, voir [l’adresse IP Office 365 et le service web d’URL.](../enterprise/microsoft-365-ip-web-service.md)
 
 ## <a name="results-of-step-2"></a>Résultats de l’étape 2
 

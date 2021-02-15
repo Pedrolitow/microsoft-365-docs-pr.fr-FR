@@ -39,7 +39,7 @@ Vous devez d’abord supprimer les enregistrements DNS existants de Google, puis
 
 ## <a name="try-it"></a>Essayez !
 
-1. Connectez-vous à votre console d’administration Google Workspace [sur admin.google.com](https://admin.google.com).
+1. Connectez-vous à votre console d’administration Google Workspace [à l’admin.google.com](https://admin.google.com).
 1. Select **Domains**, **Manage domains**, **View details**, **Manage domain**, then **DNS** in the left nav.
 1. Faites défiler vers le bas **jusqu’aux enregistrements** synthétiques, **ouvrez Google Workspace,** **sélectionnez Supprimer,** puis **Supprimez à** nouveau.
 1. Faites défiler vers le bas **jusqu’aux** enregistrements de ressources personnalisés et supprimez tous les enregistrements DNS existants qui apparaissent, y compris ceux que vous avez peut-être créés précédemment pour Microsoft 365.
@@ -49,7 +49,7 @@ Vous devez d’abord supprimer les enregistrements DNS existants de Google, puis
 1. Sélectionnez **Continuer le programme** d’installation, puis, pour connecter votre domaine, choisissez **Continuer.**
 1. Faites défiler vers le bas pour afficher les enregistrements DNS qui doivent être copiés dans Google.
 1. Ouvrez **MX Records** et sous **Points vers l’adresse ou la valeur,** copiez l’enregistrement.
-1. Revenir à Google et, dans la section **Enregistrements de** ressource personnalisés, ouvrez ladown du type d’enregistrement et sélectionnez **MX**.
+1. Revenir à Google, puis dans la section **Enregistrements de** ressource personnalisés, ouvrez ladown de type d’enregistrement et sélectionnez **MX**.
 1. Dans le **champ** Données, collez l’enregistrement que vous avez copié.
 1. Puis sélectionnez **Ajouter**.
 1. Répétez le processus pour les enregistrements CNAME et TXT et ajoutez les valeurs dans la page de gestion DNS Google.

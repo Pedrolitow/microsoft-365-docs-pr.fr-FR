@@ -44,7 +44,7 @@ Vous pouvez utiliser Microsoft 365 Business pour vous assurer que l’antivirus 
 1. Sélectionnez **Sécuriser les appareils Windows 10** pour voir les sous-paramètres.
 1. Veillez à protéger les PC contre les virus et autres menaces à l’aide de **l’antivirus Windows Defender** et que les appareils **Windows 10** sont automatiquement mis à jour.
 1. Sous **Qui obtenira ces paramètres ?**, tous les utilisateurs sont sélectionnés par défaut, mais vous pouvez choisir Modifier pour sélectionner les groupes de sécurité que vous avez créés. 
-1. Pour terminer la création de la stratégie, choisissez **Ajouter**.
+1. Pour terminer la création de la stratégie, choisissez **Ajouter.**
 1. Dans la page **Ajouter une stratégie,** choisissez **Fermer.**
 1. Dans la page d’accueil du Centre d’administration,  confirmez que votre nouvelle stratégie a été ajoutée en choisissant Stratégies et en l’avisant sur la page **Stratégies.**
 1. Pour vérifier que la stratégie a pris effet, sur l’appareil Windows 10 d’un utilisateur, sélectionnez Windows Update, choisissez **Options** avancées et vérifiez que les paramètres sont grisés.

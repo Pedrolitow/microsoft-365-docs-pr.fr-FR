@@ -1,5 +1,5 @@
 ---
-title: Étape 5. Gestion des appareils et des applications pour vos clients Microsoft 365 entreprise
+title: Étape 5. Gestion des appareils et des applications pour vos clients Microsoft 365 pour entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,9 +21,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/20/2021
 ms.locfileid: "49908582"
 ---
-# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 5. Gestion des appareils et des applications pour vos clients Microsoft 365 entreprise
+# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 5. Gestion des appareils et des applications pour vos clients Microsoft 365 pour entreprise
 
-Microsoft 365 entreprise inclut des fonctionnalités pour vous aider à gérer les appareils et l’utilisation des applications sur ces appareils au sein de votre organisation avec la gestion des périphériques mobiles (MDM) et la gestion des applications mobiles (MAM). Vous pouvez gérer les appareils iOS, Android, macOS et Windows pour protéger l’accès aux ressources de votre organisation, y compris à vos données. Par exemple, vous pouvez empêcher l’envoi de courriers électroniques à des personnes extérieures à votre organisation ou isoler les données de l’organisation des données personnelles sur les appareils personnels de votre collaborateur.
+Microsoft 365 entreprise inclut des fonctionnalités pour vous aider à gérer les appareils et l’utilisation des applications sur ces appareils au sein de votre organisation avec la gestion des périphériques mobiles (MDM) et la gestion des applications mobiles (MAM). Vous pouvez gérer les appareils iOS, Android, macOS et Windows pour protéger l’accès aux ressources de votre organisation, y compris à vos données. Par exemple, vous pouvez empêcher l’envoi de courriers électroniques à des personnes extérieures à votre organisation ou isoler les données de l’organisation des données personnelles sur les appareils personnels de votre employé.
 
 Voici un exemple de validation et de gestion des utilisateurs, de leurs appareils et de leur utilisation d’applications de productivité locales et cloud telles que Microsoft Teams.
 
@@ -80,4 +80,4 @@ Dans cette illustration, le client a :
 Régulièrement, vous devrez peut-être : 
 
 - Gérer l’inscription des appareils.
-- Révisez vos paramètres et stratégies pour d’autres applications, appareils et exigences de sécurité.
+- Révisez vos paramètres et stratégies pour les applications, les appareils et les exigences de sécurité supplémentaires.

@@ -35,7 +35,7 @@ Cette solution vous permet de suivre la configuration de ces bases dans les éta
 4. Migrer vos appareils Windows, clients Office, serveurs et données Office locaux
 5. Déployer la gestion des appareils et des applications
 
-Mais tout d’abord, nous allons prendre le temps de comprendre ce qu’est un client et ce à quoi ressemble un client qui fournit une base solide.
+Mais tout d’abord, nous allons prendre un moment pour comprendre ce qu’est un client et ce à quoi ressemble un client qui fournit une base solide.
 
 ## <a name="a-microsoft-365-tenant-defined"></a>Un client Microsoft 365 défini
 
@@ -56,13 +56,13 @@ Au-delà du nom et de l’emplacement corrects pour votre client, il existe des 
 Voici les éléments :
 
 - Vous avez l’ensemble correct de produits (abonnements) et de licences.
-  - L’ensemble de produits correspond à vos besoins d’entreprise, informatique et de sécurité.
+  - L’ensemble des produits correspond à vos besoins en matière d’entreprise, d’informatique et de sécurité.
   - Il existe un nombre adéquat de licences pour vos employés et les modifications prévues dans le personnel.
 - Pour la mise en réseau :
   - Vous avez configuré les noms de domaine DNS corrects.
   - Pour les réseaux d’entreprise, vous avez optimisé le trafic réseau vers le réseau Microsoft pour les travailleurs sur site.
   - Vous avez optimisé le trafic réseau pour les travailleurs à distance qui utilisent un client VPN.
-- Vous avez synchronisé vos comptes, groupes et autres objets des services de domaine Active Directory (AD DS).
+- Vous avez synchronisé vos comptes, groupes et autres objets active Directory Domain Services (AD DS).
   - Vos comptes de client Azure AD sont mappés aux boîtes aux lettres Exchange Online avec les domaines DNS corrects pour les adresses de messagerie.
   - Les licences correctes des produits achetés corrects ont été attribuées à vos comptes d’utilisateurs (par exemple, Microsoft 365 E3 ou E5).
 - Vous avez configuré une gestion forte des identités et des accès.
@@ -126,7 +126,7 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 | Migrer des données et des serveurs locaux vers Microsoft 365 | Migrez vos boîtes aux lettres Exchange, vos sites SharePoint et Skype Entreprise Online vers les services cloud de Microsoft 365. | Microsoft 365 E3 ou E5 | 
 ||||
 
-### <a name="device-and-app-management"></a>Gestion des appareils et des applications
+### <a name="device-and-app-management"></a>Données de gestion des appareils et des applications
 
 | Fonctionnalité | Description | Licence |
 |:-------|:-----|:-------|

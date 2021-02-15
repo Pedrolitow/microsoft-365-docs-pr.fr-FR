@@ -40,14 +40,14 @@ Microsoft 365 vous aide à protéger votre entreprise contre les ransomware en e
 
 1. Dans le Centre d’administration, [https://admin.microsoft.com](https://admin.microsoft.com) sélectionnez **Exchange** sous **Centres d’administration.**
 1. Dans le menu de gauche, choisissez **flux de messagerie.**
-1. Sous l’onglet Règles, choisissez la flèche en haut du symbole plus (+), puis choisissez Créer **une règle.**
+1. Sous l’onglet Règles, sélectionnez la flèche en haut du symbole plus (+), puis choisissez Créer **une règle.**
 1. Dans la **page nouvelle règle,** entrez un nom pour votre règle, faites défiler vers le bas, puis choisissez **Plus d’options.**
 1. Sous **Appliquer cette règle si**, sélectionnez **n’importe** quelle pièce jointe, puis sélectionnez **l’extension** de fichier inclut ces mots .
 1. Dans la zone sous spécifier des mots ou des **expressions,** entrez les extensions de fichier à appliquer à la règle, telles que les extensions de fichier qui peuvent contenir des macros. Utilisez le symbole plus (+) pour les ajouter un par un.
 
     En savoir plus sur les types de fichiers en lisant [Protéger contre les ransomware.](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)
 
-1. Faites défiler vers le bas pour passer en revue votre liste, puis choisissez **OK**.
+1. Faites défiler vers le bas pour passer en revue votre liste, puis choisissez **OK.**
 1. Dans la **page nouvelle règle,** choisissez **ajouter une condition,** puis choisissez une condition sous **Faire ce qui suit**.
 1. Vous avez le choix entre de nombreuses options de règle, mais dans cet exemple, nous allons choisir d’avertir le destinataire **avec un message**.
 1. Entrez le texte du message pour votre notification, puis choisissez **OK**.

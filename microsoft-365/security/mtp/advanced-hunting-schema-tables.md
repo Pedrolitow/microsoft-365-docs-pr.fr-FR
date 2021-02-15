@@ -58,7 +58,7 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | Nom du tableau | Description |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Fichiers, adresses IP, URL, utilisateurs ou appareils associés à des alertes |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertes de Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité, y compris les informations de gravité et la catégorisation des menaces  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertes de Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité, y compris les informations de gravité et la catégorisation des menaces  |
 | **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | Activités liées aux fichiers dans les applications et services cloud |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Événements impliquant des comptes et des objets dans Office 365 et d’autres applications et services cloud |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Plusieurs types d’événements, y compris les événements déclenchés par des contrôles de sécurité tels que l’Antivirus Windows Defender et la protection contre l’exploitation |
@@ -84,7 +84,7 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Événements d’authentification sur Active Directory et les services en ligne Microsoft |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Requêtes pour les objets Active Directory, tels que les utilisateurs, les groupes, les appareils et les domaines |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)

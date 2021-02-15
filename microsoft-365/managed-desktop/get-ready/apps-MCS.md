@@ -46,14 +46,14 @@ Une fois l’application livrée, vous en serez informé. À ce stade, vous avez
 
 Pour que l’équipe de packaging termine la migration vers Microsoft Intune, nous vous recommandons de fournir certaines autorisations :
  
--   Accès aux fonctionnalités de déploiement d’application de Microsoft Intune pour le packager afin d’ajouter et d’affecter l’application 
--   Tester les groupes, les comptes d’utilisateur et les licences des packageurs pour pouvoir tester les applications
+-   Accès aux fonctionnalités de déploiement d’applications de Microsoft Intune pour que le package ajoute et affecte l’application 
+-   Tester les groupes, les comptes d’utilisateur et les licences pour que les packageurs puissent tester les applications
 
 MCS utilisera ces autorisations pour effectuer les actions suivantes :
  
 -   S’assurer que l’application fonctionne sur une machine virtuelle configurée pour le Bureau géré Microsoft
 -   Téléchargement de l’application vers Microsoft Intune pour le déploiement vers vos utilisateurs
 
-Sans ces autorisations, mcS peut avancer, mais il ne pourra pas télécharger les applications vers votre environnement.
+Sans ces autorisations, mcS peut avancer, mais il ne pourra pas télécharger les applications dans votre environnement.
 
 

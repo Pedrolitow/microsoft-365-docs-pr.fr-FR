@@ -1,5 +1,5 @@
 ---
-title: Examiner les rapports d’utilisation
+title: Passer en revue les rapports d’utilisation
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -30,7 +30,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49927681"
 ---
-# <a name="review-usage-reports-in-microsoft-365"></a>Passer en revue les rapports d’utilisation dans Microsoft 365
+# <a name="review-usage-reports-in-microsoft-365"></a>Consulter les rapports d’utilisation dans Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
 

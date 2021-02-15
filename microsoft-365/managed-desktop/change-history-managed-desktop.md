@@ -147,7 +147,7 @@ Article nouveau ou modifié | Description
 [Sécurité dans le Bureau géré Microsoft](service-description/security.md)| Article mis à jour
 [Utiliser les informations](working-with-managed-desktop/insights.md) | Article mis à jour
 [Perspectives sur la mise à jour de sécurité Windows](working-with-managed-desktop/security-update-insights.md) | Nouvel article
-[Gestion des mises à jour dans Le Bureau géré Microsoft](service-description/updates.md) | Article mis à jour
+[Gestion des mises à jour dans le Bureau géré Microsoft](service-description/updates.md) | Article mis à jour
 [Services d’appareils bureau géré Microsoft](service-description/device-services.md) | Article mis à jour
 
 
@@ -208,7 +208,7 @@ Article nouveau ou modifié | Description
 [Configurer les appareils Bureau géré Microsoft](get-started/set-up-devices.md) | Nouvel article
 [Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
 [Inscrivez vous-même les appareils existant](get-started/register-reused-devices-self.md) | Nouvel article
-[Gestion des mises à jour dans Le Bureau géré Microsoft](service-description/updates.md) | Article mis à jour
+[Gestion des mises à jour dans le Bureau géré Microsoft](service-description/updates.md) | Article mis à jour
 
 ## <a name="august-2019"></a>Août 2019
 Article nouveau ou modifié | Description
@@ -247,7 +247,7 @@ Article nouveau ou modifié | Description
 [Appareils archivés bureau géré Microsoft](service-description/archived-device-list.md) | Nouvel article
 [Préparer les lecteurs mappés pour le Bureau géré Microsoft](get-ready/mapped-drives.md) | Nouvel article
 [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Nouvel article
-[Commander des appareils bureau géré Microsoft](get-started/devices.md) | Article mis à jour
+[Commander des appareils Bureau géré Microsoft](get-started/devices.md) | Article mis à jour
 [Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md) | Nouvel article
 
 ## <a name="april-2019"></a>Avril 2019
@@ -258,7 +258,7 @@ Article nouveau ou modifié | Description
 [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](get-ready/authentication.md) | Nouvel article
 [Inscrire des appareils dans Le Bureau géré Microsoft](get-started/register-devices-self.md) | Nouvel article
 [Inscrire des appareils dans Bureau géré Microsoft pour les partenaires](get-started/register-devices-partner.md) | Nouvel article
-[Déployer des applications sur des appareils de bureau géré Microsoft](get-started/deploy-apps.md) | Article mis à jour
+[Déployer des applications sur des appareils bureau géré Microsoft](get-started/deploy-apps.md) | Article mis à jour
 
 ## <a name="march-2019"></a>Mars 2019
 Article nouveau ou modifié | Description
@@ -291,7 +291,7 @@ Article nouveau ou modifié | Description
 
 Article nouveau ou modifié | Description
 --- | ---
-[Prise en charge du Bureau géré Microsoft](service-description/support.md)<br />et [prise en charge des utilisateurs pour bureau géré Microsoft](working-with-managed-desktop/end-user-support.md) | Mise à jour pour inclure l’Australie.
+[Prise en charge du Bureau géré Microsoft](service-description/support.md)<br />et [prise en charge des utilisateurs pour le Bureau géré Microsoft](working-with-managed-desktop/end-user-support.md) | Mise à jour pour inclure l’Australie.
 
 ## <a name="october-30-2018"></a>30 octobre 2018
 Contenu réorganisé : section ajoutée pour la description du service Bureau géré [Microsoft.](service-description/index.md) 

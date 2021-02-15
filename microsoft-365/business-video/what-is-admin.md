@@ -35,7 +35,7 @@ ms.locfileid: "49927741"
 
 Dans chaque abonnement Microsoft 365 Business, il doit y avoir au moins un compte d’administrateur. L’administrateur gère le service, les comptes d’utilisateur et les appareils. Si vous êtes celui qui s’est inscrit à l’abonnement, vous êtes l’administrateur global de votre abonnement. Vous pouvez également devenir administrateur si un autre administrateur vous en fait un.
 
-Bien que vous avez toujours besoin d’au moins un rôle d’administrateur pour votre abonnement, il peut s’agit d’un risque de sécurité si le compte d’administrateur est compromis par un tiers. Nous vous recommandons d’attribuer le rôle d’administrateur uniquement à ceux qui en ont réellement besoin et d’attribuer le rôle d’utilisateur à la plupart des personnes.
+Bien que vous avez toujours besoin d’au moins un rôle d’administrateur pour votre abonnement, il peut s’agit d’un risque de sécurité si le compte d’administrateur est compromis par un tiers. Nous vous recommandons d’attribuer uniquement le rôle d’administrateur à ceux qui en ont réellement besoin et d’attribuer le rôle d’utilisateur à la plupart des personnes.
 
 ## <a name="try-it"></a>Essayez !
 
@@ -61,7 +61,7 @@ Vous pouvez également créer un compte d’administrateur dédié pour une pers
 1. Sélectionnez **Ajouter un utilisateur.**
 1. Entrez le prénom  et le nom de l’utilisateur, le nom d’affichage **et** le nom d’utilisateur, puis sélectionnez **Suivant**.
 1. Choisissez **Créer un utilisateur sans licence de produit.** Cela ajoute un nouvel utilisateur, mais vous n’avez pas besoin de payer pour un abonnement mensuel. Sélectionnez **Suivant**.
-1. Ouvrez **les rôles.**
+1. Ouvrir **des rôles**.
 1. Cochez la case, puis sélectionnez l’un des rôles d’administrateur. Sélectionnez **Suivant**.
 1. Examinez les informations, puis sélectionnez **Terminer l’ajout.**
 1. Sélectionnez **Fermer**.

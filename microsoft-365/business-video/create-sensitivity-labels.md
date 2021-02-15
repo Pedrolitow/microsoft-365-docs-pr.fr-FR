@@ -40,13 +40,13 @@ Les étiquettes de niveau de sensibilité vous permettent de classifier et de pr
 
 1. Dans le Centre [d’administration,](https://admin.microsoft.com)sélectionnez le **Centre d’administration** de conformité.
 1. Sélectionnez **Classification,** puis **étiquettes de sensibilité.**
-1. Sélectionnez **Créer une étiquette** et, lorsque l’avertissement s’affiche, sélectionnez **Oui.**
+1. Sélectionnez **Créer une étiquette** et lorsque l’avertissement s’affiche, sélectionnez **Oui**.
 1. Entrez un **nom d’étiquette,** **une boîte à outils** et une **description.** Sélectionnez **Suivant**.
 1. Activer le **chiffrement**. Choisissez quand vous souhaitez attribuer des autorisations, si vous souhaitez que l’accès de vos utilisateurs au contenu expire et si vous souhaitez autoriser l’accès hors connexion.
 1. **Sélectionnez Attribuer des autorisations,** puis **Ajoutez ces adresses e-mail ou domaines.**
 1. Entrez une adresse de messagerie ou un nom de domaine (par exemple, Contoso.org).  Sélectionnez **Ajouter** et répétez l’étape pour chaque adresse e-mail ou domaine que vous souhaitez ajouter.
 1. Sélectionnez **Choisir des autorisations à partir d’autorisations prédéfines ou personnalisées.**
-1. Utilisez la liste de listes pour sélectionner  des autorisations prédéfinées, telles que réviseur ou visionneuse, ou pour sélectionner des **autorisations** personnalisées. Si vous avez **choisi Personnalisé,** sélectionnez les autorisations dans la liste. Sélectionnez **Enregistrer,** **Enregistrer,** puis **Suivant.**
+1. Utilisez la liste de listes pour sélectionner  des autorisations prédéfinées, telles que réviseur ou visionneuse, ou des **autorisations** personnalisées. Si vous avez **choisi Personnalisé,** sélectionnez les autorisations dans la liste. Sélectionnez **Enregistrer,** **Enregistrer,** puis **Suivant.**
 1. Activer le **marquage de** contenu et choisir les marquages que vous souhaitez utiliser.
 1. Pour chaque marquage que vous choisissez, **sélectionnez Personnaliser le texte.** Entrez le texte que vous souhaitez voir apparaître dans le document, puis définissez les options de police et de mise en page. Sélectionnez **Enregistrer,** puis répétez les marques supplémentaires. Sélectionnez **Suivant**.
 1. Éventuellement, activer la protection contre la perte **de données de point de terminaison.** Sélectionnez **Suivant**.

@@ -42,7 +42,7 @@ Avec Microsoft 365 Business Voice, vous pouvez effectuer et recevoir des appels,
 1. Faites défiler vers le bas **et choisissez Modules de modules.** 
 1. Sélectionnez **Microsoft 365 Business Voice.**
 
-    Si vous ne le voyez pas, vous devez d’abord acheter un abonnement commercial qui inclut Microsoft Teams.
+    Si vous ne le voyez pas, vous devez d’abord acheter un abonnement pour les entreprises qui inclut Microsoft Teams.
 1. Entrez le nombre d’utilisateurs pour qui vous souhaitez obtenir des licences et **sélectionnez Check out maintenant.**
 1. Sélectionnez **recharge automatique pour** acheter des crédits de communication si nécessaire et éviter les interruptions de service.
 

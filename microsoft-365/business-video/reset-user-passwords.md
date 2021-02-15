@@ -46,4 +46,4 @@ Dans Microsoft 365 pour les entreprises, vous pouvez réinitialiser les mots de 
 1. Votre adresse de messagerie s’insérez dans la zone Envoyer le nouveau mot de **passe aux destinataires suivants.** Ajoutez l’adresse e-mail de remplacement de l’utilisateur ou n’importe quelle adresse de votre choix.
 1. Choose **Send email and close**.
 
-    L’utilisateur reçoit un e-mail avec les instructions de réinitialisation du mot de passe.
+    L’utilisateur reçoit un courrier électronique avec les instructions de réinitialisation du mot de passe.

@@ -38,7 +38,7 @@ Les organisations choisissent La mobilité et la sécurité de base afin que les
 
 Basic Mobility and Security pour Microsoft 365 hébergé par le service Intune fonctionne avec la plupart, mais pas tous, des appareils mobiles. Les éléments suivants sont pris en charge avec Basic Mobility and Security :
 
-- iOS 10.0 ou une ultérieure
+- iOS 10.0 ou ultérieur
 
 - Android 4.4 ou version ultérieure
 

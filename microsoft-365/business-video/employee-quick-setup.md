@@ -43,7 +43,7 @@ Vous êtes nouveau dans Microsoft 365 pour les entreprises ? :::image type="icon
 
 ## <a name="2-download-and-install-office-apps"></a>2. Télécharger et installer des applications Office
 
-1. Sélectionnez **Installer Office** dans le coin supérieur droit.
+1. Choisissez **Installer Office** en haut à droite.
     - Dans Chrome, accédez au téléchargement en bas de la page et sélectionnez **Ouvrir**.
     - Dans Microsoft Edge/Internet Explorer, sélectionnez **Enregistrer**, puis **Exécuter**.
     

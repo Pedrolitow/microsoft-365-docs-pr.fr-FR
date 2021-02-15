@@ -72,7 +72,7 @@ Ces étapes activent la réinitialisation du mot de passe libre-service pour tou
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration,</a>go to the **Settings** \> **Settings** \> **Security &amp; privacy** page.
+1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">d’administration,</a>go to the  \> **Settings Settings** \> **Security &amp; privacy** page.
 
 ::: moniker-end
 
@@ -84,7 +84,7 @@ Ces étapes activent la réinitialisation du mot de passe libre-service pour tou
 
 5. Dans le volet de navigation de gauche, sélectionnez **Utilisateurs,** puis, dans le volet **Utilisateurs | Page Tous les utilisateurs,** sélectionnez **Réinitialiser le mot de passe.**
   
-6. Dans la page **Propriétés,** **sélectionnez Tout** pour l’activer pour tous les utilisateurs de votre entreprise, puis sélectionnez **Enregistrer.**
+6. Dans la page **Propriétés,** sélectionnez **Tout** pour l’activer pour tous les utilisateurs de votre entreprise, puis sélectionnez **Enregistrer.**
   
 7. Lorsque vos utilisateurs se connectent, ils sont invités à entrer des informations de contact supplémentaires qui les aideront à réinitialiser leur mot de passe à l’avenir.
 

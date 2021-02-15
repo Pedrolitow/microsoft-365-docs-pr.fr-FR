@@ -52,7 +52,7 @@ Il est essentiel de choisir l’abonnement Microsoft 365 qui vous sera le plus �
 | **Applications Office** | Installer Office sur jusqu’à 5 PC/Mac + 5 smartphones par utilisateur (Word, Excel, PowerPoint, OneNote, Access), Office Online | Professionnel | Professionnel | ProPlus |
 | **Calendrier de &amp; messagerie** | Outlook, Exchange Online | 50 Go | 50 Go | 100 Go |
 | **Hub pour le travail d’équipe** | Espace de travail basé sur la conversation, réunions en ligne et bien plus encore dans Microsoft Teams | Oui | Oui | Oui |
-| **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
+| **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
 | **Réseaux sociaux, vidéo, sites** | Stream, Yammer, Planner, SharePoint \* Online, PowerApps, \* Microsoft Flow\* | Oui | Oui | Oui |
 | **Applications professionnelles** | Planification d’applications - Réservations\*\* | Oui | Oui | Oui |
 |

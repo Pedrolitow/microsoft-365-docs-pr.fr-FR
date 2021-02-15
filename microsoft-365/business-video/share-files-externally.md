@@ -39,7 +39,7 @@ Pour partager des fichiers avec vos clients et travailler sur des documents ense
 
 1. À partir de votre site SharePoint, sélectionnez le dossier que vous souhaitez partager, choisissez **Partager,** puis cliquez sur le bouton paramètres du lien.
 1. Dans la **fenêtre Paramètres du lien,** assurez-vous **que Tout le** monde est sélectionné. Si cette option est grisée, elle doit être désactivée dans le Centre d’administration SharePoint.
-1. Vous pouvez éventuellement cocher la case **Autoriser la modification** et entrer une date d’expiration pour le lien.
+1. Vous pouvez éventuellement cocher la case Autoriser **la modification** et entrer une date d’expiration pour le lien.
 1. Choose **Apply**.
 1. Dans la **fenêtre Lien d’envoi,** entrez l’adresse e-mail de votre client, tapez un message, puis choisissez **Envoyer.**
 1. Votre client reçoit un courrier électronique avec votre message et un lien vers vos fichiers.

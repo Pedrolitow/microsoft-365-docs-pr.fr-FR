@@ -45,6 +45,6 @@ Suivez ces étapes pour vous inscrire à Microsoft 365 Business Premium (précé
 6. Si vous avez déjà un domaine, sélectionnez Obtenir un domaine  **Microsoft pour** le moment, puis entrez le nom de votre société. Cela devient votre adresse e-mail temporaire. Il fait également partie de vos URL SharePoint et OneDrive permanentes. Sélectionnez  **Vérifier la disponibilité,** puis  **Suivant**.
 7. Entrez votre nom d’utilisateur, un mot de passe, confirmez votre mot de passe, puis sélectionnez  **S’inscrire**  pour créer votre compte.
 8. Entrez le nombre d’utilisateurs, choisissez un plan de facturation, puis sélectionnez  **Suivant**.
-9.  Entrez l'&#39;de votre entreprise, puis  **Suivant**.
+9.  Entrez l'&#39;de votre entreprise,  **puis** Suivant .
 10. Entrez les informations de votre carte de crédit, puis **commandez.** Après quelques instants, votre compte sera créé.
 11. À ce stade, vous pouvez sélectionner  **Continuer** à configurer le compte ou vous pouvez vous inscrire au Centre d’administration Microsoft 365 et terminer l’installation ultérieurement.

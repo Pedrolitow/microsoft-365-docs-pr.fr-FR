@@ -25,7 +25,7 @@ Dans bureau géré Microsoft, les appareils sont automatiquement joints à Azure
 
 Azure Active Directory permet à vos utilisateurs de tirer parti de l' mono-Sign-On (SSO), ce qui signifie qu’ils n’ont généralement pas à fournir d’informations d’identification chaque fois qu’ils utilisent des ressources.
 
-Pour plus d’informations sur l’adhésion à Azure Active Directory, reportez-vous à La façon de : Planifier votre implémentation de jointage [Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan) Pour obtenir des informations d’arrière-plan sur l'Sign-On unique (SSO) sur les appareils joints à Azure AD, voir comment fonctionne l' sso aux ressources sur site sur les appareils joints à [Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works)
+Pour plus d’informations sur l’adhésion à Azure Active Directory, reportez-vous à La façon de : Planifier votre implémentation de [jointage Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan) Pour obtenir des informations d’arrière-plan sur le Sign-On unique (SSO) sur les appareils joints à Azure AD, voir comment fonctionne l’oD unique pour les ressources sur site sur les appareils joints à [Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works)
 
 
 Cet article explique les éléments que vous devez vérifier afin de vous assurer que les applications et autres ressources qui dépendent de la connectivité Active Directory locale fonctionneront sans problème avec bureau géré Microsoft.
@@ -48,7 +48,7 @@ Dans la plupart des organisations, vos utilisateurs peuvent utiliser l’authent
 
 ### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Un seul Sign-On à l’aide de Windows Hello Entreprise
 
-Les appareils de bureau géré Microsoft offrent également à vos utilisateurs une expérience rapide et sans mot de passe en employant Windows Hello Entreprise. Pour vous assurer que Windows Hello Entreprise fonctionne sans que vos utilisateurs n’ont à fournir respectivement upn et mot de passe, visitez Configurer les appareils [joints à Azure AD](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) pour les Single-Sign Sur l’utilisation de Windows Hello Entreprise pour vérifier les conditions requises, puis suivez les étapes fournies ici.
+Les appareils De bureau géré Microsoft offrent également à vos utilisateurs une expérience rapide et sans mot de passe en employant Windows Hello Entreprise. Pour vous assurer que Windows Hello Entreprise fonctionne sans que vos utilisateurs n’ont à fournir respectivement upn et mot de passe, visitez Configurer les appareils [joints à Azure AD](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) pour les Single-Sign Sur l’utilisation de Windows Hello Entreprise pour vérifier les conditions requises, puis suivez les étapes fournies ici.
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>Applications et ressources qui utilisent l’authentification
@@ -56,11 +56,11 @@ Les appareils de bureau géré Microsoft offrent également à vos utilisateurs 
 Reportez-vous à Comprendre les considérations concernant les applications et les ressources dans l’ensemble de contenu Azure pour obtenir des [instructions complètes](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) sur la configuration des applications pour qu’ils fonctionnent avec Azure Active Directory. En Résumé :
 
 
-- Si vous utilisez des applications basées sur le **cloud,** telles que celles ajoutées à la galerie d’applications Azure AD, la plupart d’entre elles ne nécessitent aucune préparation supplémentaire pour fonctionner avec le Bureau géré Microsoft. Toutefois, toutes les applications Win32 qui n’utilisent pas le Gestionnaire de comptes Web (WAM) peuvent toujours inviter les utilisateurs à s’authentifier.
+- Si vous utilisez des applications basées sur le **cloud,** telles que celles ajoutées à la galerie d’applications Azure AD, la plupart d’entre elles ne nécessitent aucune préparation supplémentaire pour fonctionner avec le Bureau géré Microsoft. Toutefois, toutes les applications Win32 qui n’utilisent pas le Gestionnaire de comptes Web (WAM) peuvent toujours inciter les utilisateurs à s’authentifier.
 
 - Pour les applications **hébergées** en local, n’oubliez pas d’ajouter ces applications à la liste des sites de confiance dans vos navigateurs. Cette étape permet à l’authentification Windows de fonctionner en toute transparence, sans que les utilisateurs ne sont invités à obtenir d’informations d’identification. Pour ajouter des applications, reportez-vous [aux sites](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) de confiance dans la référence [des paramètres configurables.](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref)
 
-- Si vous utilisez les services fédérés Active Directory, vérifiez que l' utilisateur unique est activé à l’aide des étapes de la procédure de vérification et de gestion de l' sign-on unique avec [AD FS](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)). 
+- Si vous utilisez les services fédérés Active Directory, vérifiez que l' utilisateur unique est activé à l’aide des étapes de vérification et de gestion de l' sign-on unique avec [AD FS](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)). 
 
 - Pour les applications qui sont sur site et utilisent des **protocoles** plus anciens, aucune configuration supplémentaire n’est requise, tant que les appareils ont accès à un contrôleur de domaine local pour s’authentifier. Toutefois, pour fournir un accès sécurisé à ces applications, vous devez déployer le proxy d’application Azure AD. Pour plus d’informations, voir Accès à distance aux applications sur site via le [proxy d’application d’Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)
 

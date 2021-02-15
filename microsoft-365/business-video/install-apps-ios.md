@@ -50,6 +50,6 @@ Une fois&#39;avez installé Microsoft 365 Business Premium, vous pouvez installe
 11. Sélectionnez  **Activer pour**  activer les notifications par courrier électronique.
 12. Sélectionnez  **Autoriser** pour activer les notifications Push.
 
-Vous pouvez désormais utiliser Outlook sur votre iPhone pour vérifier votre courrier électronique, votre calendrier et vos contacts.
+Vous pouvez désormais utiliser Outlook sur votre iPhone pour vérifier vos e-mails, votre calendrier et vos contacts.
 
 Vous pouvez installer le reste des applications Office de la même manière et les données de ces applications seront protégées par Microsoft 365 Business Premium.

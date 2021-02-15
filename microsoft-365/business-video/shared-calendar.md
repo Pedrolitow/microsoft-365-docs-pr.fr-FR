@@ -35,7 +35,7 @@ ms.locfileid: "49927849"
 
 ## <a name="try-it"></a>Essayez !
 
-Un calendrier partagé peut vous aider à voir rapidement quand des personnes sont disponibles pour les réunions ou d’autres événements.
+Un calendrier partagé peut vous aider à voir rapidement quand des personnes sont disponibles pour des réunions ou d’autres événements.
 
 1. Dans Outlook, sélectionnez l’icône calendrier.
 1. Sous **l’onglet** Accueil, choisissez **Ajouter un calendrier,** puis **à partir du carnet d’adresses.**

@@ -45,7 +45,7 @@ Lorsqu’un employé quitte l’entreprise, vous devez le supprimer de Microsoft
 1. Cochez la case pour accorder à un autre utilisateur l’accès au OneDrive de l’ancien employé et recherchez cet utilisateur.
 1. Sélectionnez leur nom.
 1. Cet utilisateur a maintenant 30 jours pour déplacer les fichiers vers un nouvel emplacement.
-1. Cochez la case pour accorder à un autre utilisateur l’accès au courrier électronique de l’ancien employé, puis sélectionnez Sélectionner un utilisateur **et définir les options de messagerie.**
+1. Cochez la case pour accorder à un autre utilisateur l’accès à la messagerie de l’ancien employé, puis sélectionnez Sélectionner un utilisateur **et définir les options de courrier électronique.**
 1. Choisissez l’utilisateur, puis sélectionnez **Suivant.**
 1. Si vous le souhaitez, vous pouvez créer un nom complet qui indique que la boîte aux lettres appartient à un ancien employé, puis sélectionner **Suivant**.
 1. Activer les réponses automatiques et modifier le texte de réponse si vous le souhaitez.

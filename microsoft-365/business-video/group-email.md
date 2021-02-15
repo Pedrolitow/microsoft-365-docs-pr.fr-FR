@@ -41,6 +41,6 @@ Lorsque vous créez un groupe, vous créez une adresse de messagerie centrale et
 2. Dans la  **zone Créer un**  groupe, entrez un nom de groupe, une adresse de messagerie plus courte comme des informations et une description.
 3. Ouvrez la baisse de confidentialité et choisissez  **Privé**.
 4. Cochez la case Envoyer  **tous les e-mails et événements**  de groupe dans les boîtes de réception des membres.
-5. Sous **Ajouter des** membres, sélectionnez les employés que vous souhaitez recevoir les e-mails, puis choisissez Ajouter des **membres.**
+5. Sous **Ajouter des** membres, sélectionnez les employés que vous souhaitez recevoir, puis sélectionnez Ajouter des **membres.**
 6. Sous **l’onglet** Accueil dans Outlook, sélectionnez **Paramètres du groupe,** puis **Modifier le groupe.**
 7. Dans la zone Modifier  **le groupe,** sélectionnez La case à cocher Laisser les personnes extérieures à l’organisation envoyer un e-mail à la case à cocher du groupe, puis choisissez **OK.**

@@ -18,11 +18,11 @@ ms.locfileid: "49841266"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Exceptions au plan de service
 
-Bureau géré Microsoft fournit une liste d’appareils organisés, des [paramètres](device-policies.md)d’appareil standard, des exigences d’applications et certains [paramètres configurables, conçus](../working-with-managed-desktop/config-setting-overview.md)pour offrir une expérience sécurisée, productive et agréable aux utilisateurs. Il est préférable de toujours rester avec le service tel que fourni. Toutefois, nous savons que certains détails du service peuvent ne pas répondre exactement aux besoins de votre organisation. Si vous pensez avoir besoin de modifier le service d’une certaine manière, il est important que vous suiviez les processus suivants pour demander ces modifications.
+Bureau géré Microsoft fournit une liste d’appareils [organisés,](device-policies.md)des paramètres d’appareil standard, des exigences d’applications et certains [paramètres configurables, conçus](../working-with-managed-desktop/config-setting-overview.md)pour offrir une expérience sécurisée, productive et agréable aux utilisateurs. Il est préférable de toujours rester avec le service tel que fourni. Toutefois, nous savons que certains détails du service peuvent ne pas répondre exactement aux besoins de votre organisation. Si vous pensez que vous devez modifier le service d’une certaine manière, il est important que vous suiviez les processus suivants pour demander ces modifications.
  
 ## <a name="types-of-exceptions"></a>Types d’exceptions
 
-Une exception est tout ajout ou toute modification à la configuration de base du Bureau géré Microsoft ; Les exemples vont de la configuration des ports USB au déploiement d’un nouveau pilote de périphérique. Nous groupons différentes exceptions comme suit :
+Une exception est l’ajout ou la modification de la configuration de base du Bureau géré Microsoft ; Les exemples vont de la configuration des ports USB au déploiement d’un nouveau pilote de périphérique. Nous groupons différentes exceptions comme suit :
 
 |Type  |Description  |
 |---------|---------|
@@ -32,7 +32,7 @@ Une exception est tout ajout ou toute modification à la configuration de base d
 |Pilotes matériels ou logiciels     |   Pilotes de périphérique, restreints par les exigences de [l’application](mmd-app-requirements.md)      |
 |Stratégies     | Paramètres Windows 10 ou Microsoft 365 Apps pour entreprise sur un appareil géré        |
 |Appareils     | Appareils qui ne se sont pas répertoriés dans la liste des appareils bureau [géré](device-list.md) Microsoft        |
-|Autres     |  Tout ce qui n’est pas couvert par les autres domaines       |
+|Autre     |  Tout ce qui n’est pas couvert par les autres domaines       |
  
 ## <a name="request-an-exception"></a>Demander une exception
 
@@ -47,7 +47,7 @@ Envoyez des demandes via le portail d’administration du bureau géré Microsof
 
 Lorsque nous examinerons les demandes d’exception, nous évaluons ces facteurs dans cet ordre :
  
-1.  Certaines applications et stratégies déployées par Le Bureau géré Microsoft sur tous les appareils ne sont pasgociables. Votre demande ne doit donc pas les affecter. Pour plus [d’informations,](device-policies.md) voir Configuration de l’appareil.
+1.  Certaines applications et stratégies déployées par Microsoft Managed Desktop sur tous les appareils ne sont pasgociables, votre demande ne doit donc pas les affecter. Pour plus [d’informations,](device-policies.md) voir Configuration de l’appareil.
 2.  Les logiciels de productivité restreints requis par un utilisateur pour faire leur travail seront probablement approuvés. 
 3.  Si nous pouvons répondre à vos exigences à l’aide de la technologie Microsoft, nous approuverons probablement votre demande pour une période de migration d’exception de trois à 12 mois (selon l’étendue du projet).
 4.  Si nous ne pouvons pas répondre à vos exigences à l’aide de la technologie Microsoft, nous approuverons probablement votre demande, sauf si elle enfreint l’une des conditions ci-dessous.  
@@ -71,7 +71,7 @@ Après l’approbation et le déploiement d’une exception demandée, il est po
  
 Si cela se produit, nous vous en informerons à l’aide du portail d’administration bureau géré Microsoft. À partir de la première notification, vous avez 90 jours pour supprimer l’exception avant que les appareils à l’exception ne soient plus liés par les contrats de niveau de service Bureau géré Microsoft. Nous vous enverrons plusieurs notifications en fonction d’une chronologie stricte. Toutefois, un incident grave ou une menace peut nous obliger à modifier la chronologie ou nos décisions concernant une exception. Nous ne *supprimerons* pas une exception sans votre consentement, mais tout appareil avec une exception révoquée ne sera plus lié par notre contrat de niveau de service. Voici la chronologie des notifications que nous vous envoyons :
 
-- **Première remarque :** Nous fournissons le premier avis de notre décision de révoquer l’approbation, notamment des informations sur la raison de sa révocation, les actions que nous vous conseillons de prendre, l’échéance de ces actions et les étapes à suivre si vous souhaitez faire appel de la décision. Cet avis se produit 90 jours à l’avance avant que l’exception ne soit supprimée de tous les appareils. 
+- **Première remarque :** Nous fournissons la première notification de notre décision de révoquer l’approbation, notamment des informations sur la raison de sa révocation, les actions que nous vous conseillons de prendre, l’échéance de ces actions et les étapes à suivre si vous souhaitez faire appel de la décision. Cet avis se produit 90 jours à l’avance avant que l’exception ne soit supprimée de tous les appareils. 
 - **Deuxième avis (30 jours plus tard) :** Nous fournissons un deuxième avis, y compris les mêmes informations que celles fournies dans le premier avis. 
 - **Troisième avis (60 jours après le premier avis) :** Nous fournissons un troisième avis, y compris les mêmes informations que celles fournies dans le premier avis. 
 - **Notification finale (une semaine avant l’échéance de 90 jours) :** Nous fournissons un quatrième avis, y compris les mêmes informations que celles fournies dans le premier avis.

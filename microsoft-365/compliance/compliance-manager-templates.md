@@ -150,7 +150,7 @@ Pour modifier un modèle, suivez les étapes ci-dessous :
 
 1. Dans la page **de vos modèles d’évaluation,** sélectionnez le modèle que vous souhaitez modifier, ce qui fera monter sa page de détails.
 2. Sélectionnez **Exporter vers Excel.** Un fichier Excel avec toutes vos données de modèle sera téléchargé. Enregistrez le fichier sur votre ordinateur local.
-3. A apporter des modifications à votre modèle en modifiant le fichier Excel à [l’aide des instructions ci-dessous.](#formatting-your-excel-file-to-modify-a-template)
+3. A apporter des modifications à votre modèle [en modifiant le fichier Excel à l’aide des instructions ci-dessous.](#formatting-your-excel-file-to-modify-a-template)
 4. Lorsque vous avez terminé d’apporter des modifications à votre fichier Excel, enregistrez-le.
 5. Sur la page de détails de votre modèle, **sélectionnez Modifier le modèle** pour lancer l’Assistant Modification. 
 6. Dans **l’écran Télécharger** un fichier, **sélectionnez Parcourir** pour rechercher et télécharger votre fichier Excel.
@@ -190,7 +190,7 @@ Sous **l’onglet Modèles,** vous  pouvez modifier n’importe quoi dans la col
 
 Vous pouvez modifier les informations de n’importe quelle action d’amélioration *à l’exception de son titre.* Vous pouvez modifier n’importe quelle cellule à partir des colonnes B et, lorsque vous importez de nouveau le fichier dans le modèle, les actions d’amélioration de ce modèle contiennent désormais les données mises à jour.
 
-Vous ne pouvez pas modifier **l’actionTitle** (colonne A), car si vous le faites, le Gestionnaire de conformité considère qu’il s’agit d’une nouvelle action d’amélioration. Si vous souhaitez modifier le nom d’une action d’amélioration, consultez les instructions ci-dessous.
+Vous ne pouvez pas modifier **actionTitle** (colonne A), car si vous le faites, le Gestionnaire de conformité considère qu’il s’agit d’une nouvelle action d’amélioration. Si vous souhaitez modifier le nom d’une action d’amélioration, consultez les instructions ci-dessous.
 
 #### <a name="change-an-improvement-actions-name"></a>Modifier le nom d’une action d’amélioration
 
@@ -201,7 +201,7 @@ Si vous souhaitez modifier le nom d’une action d’amélioration, vous devez i
 3. Copiez le contenu de la colonne A et collez-le dans la colonne B. Cela place vos titres d’action d’amélioration existants, qui sont ce que vous souhaitez modifier, dans la colonne B.
 4. Dans la colonne A, **actionTitle**, supprimez l’ancien nom et remplacez-le par le nouveau nom de votre action d’amélioration.
 
-Notez que les titres d’action, à la fois pour vos actions d’amélioration et pour les actions Microsoft, doivent être écrits en anglais afin d’être reconnus lorsqu’ils sont référencés dans les contrôles.
+Notez que les titres d’action, à la fois pour vos actions d’amélioration et pour les actions Microsoft, doivent être écrits en anglais pour être reconnus lorsqu’ils sont référencés dans les contrôles.
 
 #### <a name="remove-an-improvement-action"></a>Supprimer une action d’amélioration
 

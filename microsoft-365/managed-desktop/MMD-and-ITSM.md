@@ -24,7 +24,7 @@ Pour plus d’informations sur ITIL et ses phases et processus, consultez leur [
 
 ## <a name="service-design"></a>Conception de service
 
-Ce tableau lie les phases et processus ITIL clés aux fonctionnalités bureau géré Microsoft, avec des liens vers notre documentation pour plus d’informations :
+Ce tableau lie les phases et processus ITIL clés aux fonctionnalités du Bureau géré Microsoft, avec des liens vers notre documentation pour plus d’informations :
 
 
 
@@ -43,7 +43,7 @@ Ce tableau lie les phases et processus ITIL clés aux fonctionnalités bureau g�
 |Processus ITIL |Description  |Documentation |
 |---------|---------|---------|
 |Gestion des modifications     | Équilibre de responsabilité défini, vue d’ensemble des processus et types liés à la gestion des changements disponibles.  | [Surveillance et opérations du Bureau géré Microsoft](service-description/operations-and-monitoring.md#change-management) |
-|Gestion des publication et du déploiement     |  Bureau géré Microsoft gère les mises à jour pour les appareils inscrits au service.  | [Gestion des mises à jour dans le Bureau géré Microsoft](service-description/updates.md)        |
+|Gestion des publication et du déploiement     |  Bureau géré Microsoft gère les mises à jour pour les appareils inscrits au service.  | [Gestion des mises à jour dans Le Bureau géré Microsoft](service-description/updates.md)        |
 |Gestion des ressources de service et de la configuration     | Des informations sur le déploiement du Bureau géré Microsoft de votre organisation sont disponibles sur le portail d’administration informatique.  | [Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) |
 |Gestion des connaissances     | Les informations sur le service Bureau géré Microsoft sont tenues à jour sur ce site.   | [Historique des modifications de la documentation relative au Bureau géré Microsoft](change-history-managed-desktop.md)        |
 

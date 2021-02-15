@@ -46,4 +46,4 @@ Utilisez les étapes suivantes :
 
 5. Sélectionnez **Enregistrer.**
 
-Pour découvrir les appareils que Basic Mobility and Security prend en charge, voir [Fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)
+Pour découvrir les appareils que La mobilité et la sécurité de base prend en charge, voir [Fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)

@@ -1,6 +1,6 @@
 ---
 title: Régions et langues prises en charge
-description: Régions et langues pris en charge par bureau géré Microsoft
+description: Régions et langues pris en charge par Bureau géré Microsoft
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo

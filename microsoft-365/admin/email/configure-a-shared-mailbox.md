@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Une fois que vous avez créé une boîte aux lettres partagée, vous pouvez configurer certains paramètres pour ses utilisateurs, tels que le forwarding des messages électroniques et les réponses automatiques. Par la suite, vous pouvez modifier d’autres paramètres, tels que le nom ou les membres de la boîte aux lettres.
+description: Une fois que vous avez créé une boîte aux lettres partagée, vous pouvez configurer certains paramètres pour ses utilisateurs, tels que le forwarding des messages électroniques et les réponses automatiques. Par la suite, vous voudrez peut-être modifier d’autres paramètres, tels que le nom ou les membres de la boîte aux lettres.
 ms.openlocfilehash: fe5d35be556b8edf5456bc2c0b820dc0ce77e323
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
@@ -81,7 +81,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 ::: moniker-end
 
-2. Sélectionnez la boîte aux lettres partagée à modifier, puis sélectionnez **Modifier le courrier** \> **électronique.**
+2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez **Modifier le courrier** \> **électronique.**
     
 3. Définissez le basculement sur **Sur,** puis entrez une adresse de messagerie à qui les messages sont transmis. Il peut s’y trouver n’importe quelle adresse de messagerie valide. Pour le faire, vous devez créer un groupe de [distribution](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) pour les adresses, puis entrer le nom du groupe dans cette zone.
     
@@ -177,7 +177,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 3. Définissez le basculement sur **Sur**. 
 
-4. Vous pourz éventuellement entrer une durée, une note sur la attente et une URL avec plus d’informations.  
+4. Éventuellement, entrez une durée, une note sur la attente et une URL avec plus d’informations.  
 
 5. Sélectionnez **Enregistrer**.
 
@@ -264,12 +264,12 @@ Si vous choisissez de ne pas afficher la boîte aux lettres partagée dans la li
 
 2. Sélectionnez la boîte aux lettres partagée à modifier, puis sélectionnez **Afficher dans la liste d’adresses globale** \> **Modifier.**
 
-3. Définissez le basculement sur **On**  ou **Off**. 
+3. Définissez le toggle sur **On**  ou **Off**. 
 
 4. Sélectionnez **Enregistrer**.
 
 > [!NOTE]
-> Masquer une boîte aux lettres partagée dans la liste d’adresses empêche les nouveaux membres de la boîte aux lettres partagée d’ajouter la boîte aux lettres masquée à leur profil Outlook tant que la boîte aux lettres partagée n’est pas de nouveau affichée dans la liste d’adresses. 
+> Le fait de masquer une boîte aux lettres partagée dans la liste d’adresses empêche les nouveaux membres de la boîte aux lettres partagée d’ajouter la boîte aux lettres masquée à leur profil Outlook tant que la boîte aux lettres partagée n’est pas de nouveau affichée dans la liste d’adresses. 
 
 ## <a name="related-articles"></a>Articles connexes
 

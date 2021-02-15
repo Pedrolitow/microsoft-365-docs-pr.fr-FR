@@ -32,7 +32,7 @@ Si vous ne pouvez pas supprimer ou remplacer des lecteurs mappés pour certains 
     
 Pour ce type de demande, vous devez fournir les détails suivants dans la demande de support : 
 
-- Tous les chemins UNC vers les emplacements de partage de fichiers qui devront être mappés pour les appareils bureau géré Microsoft 
+- Tous les chemins d’accès UNC aux emplacements de partage de fichiers qui devront être mappés pour les appareils bureau géré Microsoft 
 - Groupes d’utilisateurs qui nécessitent l’accès à ces emplacements de partage de fichiers 
 - Toute lettre de lecteur spécifique à attribuer (si nécessaire)
 
@@ -46,10 +46,10 @@ Il est entièrement de votre responsabilité de vous assurer que les utilisateur
 
 ### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>Pour que les lecteurs mappés sont déployés dans le Bureau géré Microsoft
  
-Assurez-vous que les lecteurs mappés ne peuvent pas être évités et que vous avez soigneusement examiné les conditions requises avant d’envoyer une demande de service. Ensuite, suivez les étapes suivantes :
+Assurez-vous que les lecteurs mappés ne peuvent pas être évités et que vous avez attentivement examiné les conditions requises avant d’envoyer une demande de service. Ensuite, suivez les étapes suivantes :
 
 1. Accédez [à Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et sélectionnez « Résolution des problèmes + prise en charge », puis recherchez « Demandes de service » dans la section Bureau géré Microsoft.  
 2. Envoyez une demande de support intitulée « Déploiement de lecteurs mappés » et fournissez tous les détails requis du partage de fichiers.  
 3. Les opérations informatiques du bureau géré Microsoft vous conseillent, à l’aide des mises à jour des demandes de support, une fois la demande terminée. Initialement, cette configuration sera déployée uniquement sur les appareils du groupe de déploiement Test.  
 4. Vous devez tester et vérifier si la configuration déployée par les opérations informatiques du bureau géré Microsoft fonctionne comme prévu. Répondez à l’aide de l’onglet Discussion dans les détails de la même demande de support pour avertir les opérations informatiques du bureau géré Microsoft une fois que vous avez terminé vos tests.  
-5. L’équipe des opérations informatiques du bureau géré Microsoft déploiera ensuite la configuration sur les autres groupes de déploiement. 
+5. L’équipe des opérations informatiques du bureau géré Microsoft déploie ensuite la configuration sur les autres groupes de déploiement. 
