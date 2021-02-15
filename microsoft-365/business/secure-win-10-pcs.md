@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Découvrez comment sécuriser des PC Windows 10 après avoir configuré Microsoft 365 Business Premium.
+description: Découvrez comment sécuriser les PC Windows 10 après avoir installé Microsoft 365 Business Premium.
 ms.openlocfilehash: 286393779eaa92d33432ff9ad4b21c0a1fb8612c
 ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
@@ -34,20 +34,20 @@ ms.locfileid: "49376274"
 
 Cet article s’applique à Microsoft 365 Business Premium.
 
-Une fois que vous avez [configuré](set-up.md) Microsoft 365 Business Premium, il est temps de protéger les ordinateurs Windows 10 de votre organisation contre le vol, ainsi que les menaces malveillantes comme les virus et les programmes malveillants.
+Après avoir installé [Microsoft](set-up.md) 365 Business Premium, il est temps de protéger les ordinateurs Windows 10 de votre organisation contre le vol et les menaces malveillantes telles que les virus et les programmes malveillants.
 
 ## <a name="to-secure-your-windows-10-computers"></a>Pour sécuriser vos ordinateurs Windows 10
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de vos informations d’identification d’administrateur général. 
-2. Dans le volet de navigation de gauche, sélectionnez **configuration** , puis sous **connexion et sécurité**, choisissez **sécuriser vos ordinateurs Windows 10**. Choisissez **affichage** pour commencer.
-3. Sur la page **sécuriser vos ordinateurs Windows 10** , lisez toutes les informations pour comprendre ce que vous activez et ce qu’est l’impact de l’utilisateur.
+2. Dans le navigation de gauche, sélectionnez **Programme** d’installation, puis, sous Se connectez **et sécurité,** sélectionnez Sécuriser **vos ordinateurs Windows 10.** Choose **View** to get started.
+3. Dans la page Sécuriser vos ordinateurs **Windows 10,** lisez toutes les informations pour comprendre ce que vous lisez et quel est l’impact sur l’utilisateur.
 
-    En haut de la page, sélectionnez **prise en main**.
+    On the top of the page, choose **Get started**.
 
-4. Dans le volet **sécuriser vos ordinateurs Windows 10** , sélectionnez les options que vous souhaitez activer. Pour plus d’informations sur les paramètres, consultez la rubrique [Secure Windows 10 Devices](secure-windows-10-devices.md). 
+4. Dans le **volet Sécuriser vos ordinateurs Windows 10,** sélectionnez les options que vous souhaitez activer. Pour plus d’informations sur les paramètres, voir [Sécuriser les appareils Windows 10.](secure-windows-10-devices.md) 
     
-    Pour la plupart des organisations, les options proposées ici offrent un niveau de sécurité approprié, mais si votre organisation a des besoins plus complexes en matière de sécurité, vous pouvez également utiliser des lignes de base de sécurité prédéfinies pour sécuriser vos appareils Windows 10. Pour plus d’informations, consultez la rubrique [Security baselines for Windows 10 Devices](https://docs.microsoft.com/mem/intune/protect/security-baselines).   
+    Pour la plupart des organisations, les options proposées ici offrent un bon niveau de sécurité. Toutefois, si votre organisation a des besoins de sécurité plus complexes, vous pouvez également utiliser des lignes de base de sécurité prédéfinées pour sécuriser vos appareils Windows 10. Pour plus d’informations, [voir les lignes de base de sécurité pour les appareils Windows 10.](https://docs.microsoft.com/mem/intune/protect/security-baselines)   
 
-1. Sélectionnez **appliquer les paramètres**.
+1. Sélectionnez **Appliquer les paramètres.**
 
-    Ces paramètres s’appliquent à tous les utilisateurs de votre organisation. Pour configurer différentes stratégies pour différents groupes de sécurité, consultez la rubrique [Set Device protection Settings for Windows 10 PCs](protection-settings-for-windows-10-pcs.md).
+    Ces paramètres s’appliquent à tous les utilisateurs de votre organisation. Pour configurer différentes stratégies pour différents groupes de sécurité, voir Définir les paramètres de protection des appareils pour [les PC Windows 10.](protection-settings-for-windows-10-pcs.md)

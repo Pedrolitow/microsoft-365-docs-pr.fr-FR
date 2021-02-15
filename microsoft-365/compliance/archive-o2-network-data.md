@@ -1,5 +1,5 @@
 ---
-title: Configuration d’un connecteur pour l’archivage des données réseau O2 dans Microsoft 365
+title: Configurer un connecteur pour archiver les données réseau O2 dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur de télémessage pour importer et archiver des données SMS et MMS à partir du réseau mobile O2 dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
+description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des données SMS et MMS à partir du réseau mobile O2 dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
 ms.openlocfilehash: 35dc19089a60f058583ce50350b803df5c894d92
 ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
@@ -19,66 +19,66 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2020
 ms.locfileid: "49619960"
 ---
-# <a name="set-up-a-connector-to-archive-o2-network-data"></a>Configuration d’un connecteur pour l’archivage des données réseau O2
+# <a name="set-up-a-connector-to-archive-o2-network-data"></a>Configurer un connecteur pour archiver les données réseau O2
 
-Utilisez un connecteur de Télémessage dans le centre de conformité Microsoft 365 pour importer et archiver des messages SMS (Short Messaging Service) et des appels vocaux à partir du réseau mobile O2. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au réseau O2 de votre organisation une fois par jour et importe des appels SMS et vocaux vers des boîtes aux lettres dans Microsoft 365.
+Utilisez un connecteur TeleMessage dans le Centre de conformité Microsoft 365 pour importer et archiver des messages SMS (Short Messaging Service) et des appels vocaux à partir du réseau mobile O2. Après avoir configuré et configuré un connecteur, il se connecte au réseau O2 de votre organisation une fois par jour et importe des SMS et des appels vocaux vers des boîtes aux lettres dans Microsoft 365.
 
-Une fois que les messages SMS et les appels vocaux sont stockés dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention 365 Microsoft pour les données réseau O2. Par exemple, vous pouvez rechercher des messages SMS et des appels vocaux réseau en utilisant la recherche de contenu ou associer la boîte aux lettres contenant des données réseau en O2 à un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un connecteur réseau O2 pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois que les messages SMS et les appels vocaux sont stockés dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données réseau O2. Par exemple, vous pouvez rechercher des messages SMS réseau O2 et des appels vocaux à l’aide de la recherche de contenu ou associer la boîte aux lettres contenant des données réseau O2 à un dépositaire dans un cas Advanced eDiscovery. L’utilisation d’un connecteur réseau O2 pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-o2-network-data"></a>Vue d’ensemble de l’archivage des données réseau O2
 
-La vue d’ensemble suivante décrit le processus d’utilisation d’un connecteur pour archiver les données réseau O2 dans Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données réseau O2 dans Microsoft 365.
 
 ![Flux de travail d’archivage réseau O2](../media/O2NetworkConnectorWorkflow.png)
 
-1. Votre organisation fonctionne avec les télémessages et O2 pour configurer un connecteur réseau O2. Pour plus d’informations, consultez la rubrique [O2 Network archiver](https://www.telemessage.com/office365-activation-for-o2-network-archiver).
+1. Votre organisation travaille avec TeleMessage et O2 pour configurer un connecteur réseau O2. Pour plus d’informations, [voir Archiveur réseau O2.](https://www.telemessage.com/office365-activation-for-o2-network-archiver)
 
-2. Une fois toutes les 24 heures, les messages SMS et les appels vocaux du réseau en O2 de votre organisation sont copiés sur le site de Télémessage.
+2. Une fois toutes les 24 heures, les messages SMS et les appels vocaux provenant du réseau O2 de votre organisation sont copiés sur le site TeleMessage.
 
-3. Le connecteur réseau O2 que vous créez dans le centre de conformité Microsoft 365 se connecte au site de Télémessage quotidiennement et transfère les messages SMS et les appels vocaux des dernières 24 heures vers un emplacement de stockage Azure sécurisé dans le Cloud Microsoft. Le connecteur convertit également le contenu des messages SMS et des appels vocaux au format d’un message électronique.
+3. Le connecteur réseau O2 que vous créez dans le Centre de conformité Microsoft 365 se connecte au site TeleMessage tous les jours et transfère les messages SMS et les appels vocaux des 24 heures précédentes vers un emplacement de stockage Azure sécurisé dans microsoft cloud. Le connecteur convertit également le contenu des messages SMS et des appels vocaux au format de message électronique.
 
-4. Le connecteur importe les éléments de communication mobile vers la boîte aux lettres d’utilisateurs spécifiques. Un nouveau dossier appelé **O2 SMS et le service d’archivage de réseau vocal** est créé dans la boîte aux lettres d’un utilisateur spécifique et les éléments y sont importés. Le connecteur effectue ce mappage à l’aide de la valeur de la propriété d' *adresse de messagerie* de l’utilisateur. Tous les messages SMS et appels vocaux contiennent cette propriété, qui est renseignée avec l’adresse de messagerie de chaque participant du message.
+4. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’utilisateurs spécifiques. Un nouveau dossier nommé **SMS O2** et l’archiveur du réseau vocal est créé dans la boîte aux lettres d’un utilisateur spécifique et les éléments y sont importés. Le connecteur fait ce mappage à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur. Chaque message SMS et appel vocal contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message.
 
-   Outre le mappage utilisateur automatique à l’aide de la valeur de la propriété de l' *adresse de messagerie* de l’utilisateur, vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage contient le numéro de téléphone mobile et l’adresse de messagerie Microsoft 365 correspondante pour les utilisateurs de votre organisation. Si vous activez le mappage utilisateur et le mappage personnalisés, pour chaque élément O2, le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas un utilisateur Microsoft 365 valide correspondant au numéro de téléphone mobile d’un utilisateur, le connecteur utilise les valeurs de la propriété adresse de messagerie de l’élément qu’il tente d’importer. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété adresse de messagerie de l’élément O2, l’élément n’est pas importé.
+   Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur, vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage contient le numéro de téléphone mobile et l’adresse de messagerie Microsoft 365 correspondante pour les utilisateurs de votre organisation. Si vous activez à la fois le mappage utilisateur automatique et le mappage personnalisé, pour chaque élément O2, le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide correspondant au numéro de téléphone mobile d’un utilisateur, le connecteur utilise les valeurs de la propriété d’adresse de messagerie de l’élément qu’il tente d’importer. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse de messagerie de l’élément O2, l’élément n’est pas importé.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Certaines étapes de mise en œuvre requises pour l’archivage des données réseau O2 sont externes à Microsoft 365 et doivent être effectuées avant de pouvoir créer un connecteur dans le centre de conformité.
+Certaines des étapes d’implémentation requises pour archiver les données réseau O2 sont externes à Microsoft 365 et doivent être effectuées avant de pouvoir créer un connecteur dans le centre de conformité.
 
-- Commandez le [service d’archivage réseau O2 à partir du Télémessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devez vous connecter à ce compte lorsque vous créez le connecteur dans le centre de conformité.
+- Commandez [le service d’archivage réseau O2 à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous connectez à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
 
-- Obtenez votre compte réseau O2 et les détails de votre contact de facturation afin de pouvoir remplir les formulaires d’intégration de Télémessage et commander le service d’archivage de messages à partir de O2.
+- Obtenez les détails de votre compte réseau O2 et de votre contact de facturation pour remplir les formulaires d’intégration TeleMessage et commander le service d’archivage des messages à partir d’O2.
 
-- Inscrivez tous les utilisateurs qui requièrent l’archivage de réseau vocal et de SMS en O2 dans le compte de Télémessage. Lors de l’inscription des utilisateurs, veillez à utiliser la même adresse de messagerie que celle utilisée pour leur compte Microsoft 365.
+- Enregistrez tous les utilisateurs qui nécessitent l’archivage des SMS et du réseau vocal O2 dans le compte TeleMessage. Lors de l’inscription des utilisateurs, n’oubliez pas d’utiliser la même adresse de messagerie que celle utilisée pour leur compte Microsoft 365.
 
-- Vos employés doivent avoir des téléphones mobiles appartenant à une entreprise et appartenant à une entreprise sur le réseau mobile O2. Les messages d’archivage dans Microsoft 365 ne sont pas disponibles pour les appareils appartenant aux employés ou «apportez vos propres périphériques (BYOD).
+- Vos employés doivent avoir des téléphones mobiles d’entreprise et responsables sur le réseau mobile O2. Les messages d’archivage dans Microsoft 365 ne sont pas disponibles pour les appareils de l’employé ou « Apportez vos propres appareils (BYOD).
 
-- L’utilisateur qui crée un connecteur réseau O2 doit disposer du rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **connecteurs de données** dans le centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
+- L’utilisateur qui crée un connecteur réseau O2 doit avoir le rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
 
 ## <a name="create-an-o2-network-connector"></a>Créer un connecteur réseau O2
 
-Une fois que vous avez terminé les conditions préalables décrites dans la section précédente, vous pouvez créer un connecteur réseau O2 dans le centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site de Télémessage et transférer les messages SMS et les appels vocaux vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
+Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer un connecteur réseau O2 dans le Centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site TeleMessage et transférer des messages SMS et des appels vocaux vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) , puis cliquez sur **connexions de données** \> **O2 réseau**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click Data **connectors** \> **O2 Network**.
 
-2. Sur la page Description du produit **réseau O2** , cliquez sur **Ajouter un connecteur** .
+2. Dans la page description du produit **réseau O2,** cliquez sur **Ajouter un connecteur**
 
-3. Sur la page **conditions de service** , cliquez sur **accepter**.
+3. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
-4. Sur la page **connexion à un message** , sous étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **suivant**.
+4. Dans la page **Connexion à TeleMessage,** sous l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Suivant**.
 
-   - **Nom d’utilisateur :** Nom d’utilisateur de votre Télémessage.
+   - **Nom d’utilisateur :** Votre nom d’utilisateur TeleMessage.
 
-   - **Mot de passe :** Mot de passe de votre Télémessage.
+   - **Mot de passe :** Votre mot de passe TeleMessage.
 
-5. Une fois le connecteur créé, vous pouvez fermer la fenêtre contextuelle et passer à la page suivante.
+5. Une fois le connecteur créé, vous pouvez fermer la fenêtre pop-up et passer à la page suivante.
 
-6. Sur la page mappage de l' **utilisateur** , activez mappage utilisateur automatique, puis cliquez sur **suivant**. Si vous avez besoin d’un mappage personnalisé, téléchargez un fichier CSV, puis cliquez sur **suivant**.
+6. Dans la page **Mappage des** utilisateurs, activez le mappage utilisateur automatique et cliquez sur **Suivant.** Si vous avez besoin d’un mappage personnalisé, téléchargez un fichier CSV, puis cliquez sur **Suivant**.
 
-7. Vérifiez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+7. Examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
-8. Accédez à l’onglet Connecteurs de la page **connecteurs de données** pour voir la progression du processus d’importation pour le nouveau connecteur.
+8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

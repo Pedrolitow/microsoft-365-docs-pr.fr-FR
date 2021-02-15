@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
-description: Apprenez à accéder à eNom et à créer un DNS via la page Google Domains.
+description: Découvrez comment accéder à eNom et créer un DNS via la page Google Domains.
 ms.openlocfilehash: 3294be667653c568fbbd1a911bcfab9b6ea7788b
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -32,23 +32,23 @@ ms.locfileid: "49656854"
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-Pour migrer vos comptes de messagerie vers Microsoft, vous devez créer un enregistrement DNS au niveau de votre bureau d’enregistrement de domaines.
+Pour migrer vos comptes de messagerie vers Microsoft, vous devez créer un enregistrement DNS auprès de votre bureau d’enregistrement de domaines.
   
-Si vous avez acheté votre domaine par le biais de Google lors de votre inscription à votre compte **Google Apps for Work** , vos enregistrements DNS sont gérés par Google, mais enregistrés auprès de eNom. 
+Si vous avez acheté votre domaine via Google lors de l’inscription à votre compte **Google Apps for Work,** vos enregistrements DNS sont gérés par Google, mais enregistrés avec eNom. 
   
-Vous pouvez accéder à eNom et créer DNS, via la page Google **Domains** . Suivez simplement les étapes décrites dans cet article. 
+Vous pouvez accéder à eNom et créer un DNS via la page Google **Domains.** Suivez simplement les étapes de cet article. 
   
 ## <a name="create-the-dns-record"></a>Créer l'enregistrement DNS
 
-1. Dans la [console d’administration Google](https://www.google.com/work/apps/business), sélectionnez **se connecter**.
+1. Sur la [console d’administration Google,](https://www.google.com/work/apps/business) **sélectionnez Se connectez.**
     
     ![Google-Apps-Configure-1-1-0](../../media/37a6e9f6-319e-4c02-aa18-d8d06df7953d.png)
   
-2. Entrez votre nom de domaine, puis sélectionnez **OK**.
+2. Entrez votre nom de domaine, puis sélectionnez **Go**.
     
     ![Google-Apps-Configure-1-1-1](../../media/2caf8dcb-4d40-4cfa-bc40-d634e454e699.png)
   
-3. Au bas de la page, sélectionnez **autres contrôles**.
+3. En bas de la page, sélectionnez **Plus de contrôles.**
     
     ![Google-Apps-Configure-1-2-0](../../media/1518ff78-035b-423e-85a3-c16d7faa0968.png)
   
@@ -56,32 +56,32 @@ Vous pouvez accéder à eNom et créer DNS, via la page Google **Domains** . Sui
     
     ![Google-Apps-Configure-1-2-1](../../media/c2972c06-9bca-43bd-9876-2cee63043bf1.png)
   
-5. Dans la page **domaines** , sélectionnez **Ajouter/supprimer des domaines**.
+5. Dans la page **Domaines,** **sélectionnez Ajouter/supprimer des domaines.**
     
     ![Google-Apps-Configure-1-2-2](../../media/07b8068f-9a05-40aa-a041-fc495c729a18.png)
   
-6. Dans la page **domaines** , sélectionnez **paramètres DNS avancés**.
+6. Dans la page **Domaines,** sélectionnez **Paramètres DNS avancés.**
     
     > [!NOTE]
-    > Si vous n'avez pas acheté un nom de domaine via Google lors de la création de votre compte **Google Apps for Work**, vous n'aurez de **Paramètres DNS avancés** sur votre page **Domaines**. Au lieu de cela, vous devez aller directement au site web de l'hôte de votre domaine pour accéder à vos paramètres DNS et effectuer cette étape ainsi que les étapes suivantes. Pour plus d’informations, consultez [la rubrique accéder aux paramètres de votre domaine G suite](https://support.google.com/a/answer/54693?hl=en) . 
+    > Si vous n'avez pas acheté un nom de domaine via Google lors de la création de votre compte **Google Apps for Work**, vous n'aurez de **Paramètres DNS avancés** sur votre page **Domaines**. Au lieu de cela, vous devez aller directement au site web de l'hôte de votre domaine pour accéder à vos paramètres DNS et effectuer cette étape ainsi que les étapes suivantes. Pour [plus d’informations, voir Accéder](https://support.google.com/a/answer/54693?hl=en) à vos paramètres de domaine G Suite. 
   
-    ![Google-Apps-eNom-configure-1-3](../../media/b244b29c-e479-40be-b380-4ffa0f74b421.png)
+    ![Google-Apps-eNom-Configure-1-3](../../media/b244b29c-e479-40be-b380-4ffa0f74b421.png)
   
-7. Sur la page **paramètres DNS avancés** , sélectionnez **se connecter à la console DNS**. Notez les informations **Nom de connexion** et **Mot de passe**. Vous en aurez besoin à l'étape suivante. 
+7. Dans la page **Paramètres DNS** avancés, sélectionnez **Se connectez à la console DNS.** Notez les informations **Nom de connexion** et **Mot de passe**. Vous en aurez besoin à l'étape suivante. 
     
-    ![Google-Apps-eNom-configure-1-4](../../media/056a2767-462f-4847-acee-d01e3f773add.png)
+    ![Google-Apps-eNom-Configure-1-4](../../media/056a2767-462f-4847-acee-d01e3f773add.png)
   
 8. Connectez-vous au **Gestionnaire de domaine** Google en utilisant les **Nom de connexion** et **Mot de passe** mentionnés dans la page **Paramètres DNS avancés**. 
     
-    ![Google-Apps-eNom-configure-1-5](../../media/08b74652-8cdb-4560-a5fd-0899f86deee8.png)
+    ![Google-Apps-eNom-Configure-1-5](../../media/08b74652-8cdb-4560-a5fd-0899f86deee8.png)
   
-9. Sur la **page _domain_name_*_, dans la section _ enregistrements de l'* hôte** , sélectionnez **modifier**.
+9. Sur la **_domain_name_*_ page, dans la*** section _ Enregistrements hôtes, sélectionnez **Modifier**.
     
-    ![Google-Apps-eNom-configure-1-6](../../media/d54fec18-b9d1-4796-8397-0393c964eade.png)
+    ![Google-Apps-eNom-Configure-1-6](../../media/d54fec18-b9d1-4796-8397-0393c964eade.png)
   
-10. Dans la section **Host Records (enregistrements d’hôte** ), sélectionnez **Add New (Ajouter nouveau**).
+10. Dans la section **Enregistrements d’hôte,** **sélectionnez Ajouter nouveau**.
     
-    ![Google-Apps-eNom-configure-1-7](../../media/3562806a-4328-4e60-a717-0566841204cf.png)
+    ![Google-Apps-eNom-Configure-1-7](../../media/3562806a-4328-4e60-a717-0566841204cf.png)
   
 11. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
@@ -96,9 +96,9 @@ Vous pouvez accéder à eNom et créer DNS, via la page Google **Domains** . Sui
   
 12. Sélectionnez **Enregistrer**.
     
-    ![Google-Apps-eNom-configure-1-9](../../media/7a6f7b45-8f79-487b-afe4-05949c2c04e8.png)
+    ![Google-Apps-eNom-Configure-1-9](../../media/7a6f7b45-8f79-487b-afe4-05949c2c04e8.png)
   
-13. Sélectionnez **enregistrer les modifications**.
+13. Sélectionnez **Enregistrer les modifications.**
     
     ![Google-Apps-Configure-1-11](../../media/7f321236-33fb-4a7d-9d03-26605e9e558c.png)
   

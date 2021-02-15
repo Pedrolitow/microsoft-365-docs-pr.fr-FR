@@ -32,7 +32,7 @@ ms.locfileid: "49658439"
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-Suivez ces instructions si vous voulez que Microsoft gère vos enregistrements DNS pour vous. (Si vous préférez, vous pouvez [gérer tous vos enregistrements DNS sur Google Domains](create-dns-records-at-google-domains.md).)
+Si vous souhaitez que Microsoft gère vos enregistrements DNS à votre place, suivez ces instructions. (Si vous préférez, vous pouvez gérer tous vos [enregistrements DNS sur Google Domains.)](create-dns-records-at-google-domains.md)
   
     
 ## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
@@ -42,11 +42,11 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 > [!NOTE]
 >  Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
   
-1. Pour commencer, accédez à la page de vos domaines sur Google Domains via [ce lien](https://domains.google.com/registrar). You'll be prompted to sign in. To do so:
+1. To get started, go to your domains page at Google Domains via [this link](https://domains.google.com/registrar). You'll be prompted to sign in. To do so:
     
 1. Sélectionnez **Se connecter**.
     
-2. Entrez vos informations d’identification de connexion et sélectionnez **de nouveau connexion**.
+2. Entrez vos informations d’identification de connexion, puis sélectionnez **de nouveau Se connecter.**
     
 2. Dans la page **Domaines**, dans la section **Domaine**, sélectionnez **Configurer le DNS** pour le domaine à modifier. 
     
@@ -65,7 +65,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     
 5. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous allez retourner à Microsoft et demander une recherche pour l’enregistrement.
+Maintenant que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous revenir à Microsoft et demander une recherche pour l’enregistrement.
   
 Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
@@ -83,13 +83,13 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modifier les enregistrements de serveur de noms (NS) de votre domaine
 
-Pour terminer la configuration de votre domaine avec Microsoft, vous devez modifier les enregistrements de serveur de noms de votre domaine au niveau de votre bureau d’enregistrement de domaines afin de pointer vers les serveurs de noms principaux et secondaires Microsoft. Cela permet à Microsoft de mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
+Pour terminer la configuration de votre domaine avec Microsoft, vous modifiez les enregistrements NS de votre domaine auprès de votre bureau d’enregistrement de domaines pour qu’ils pointent vers les serveurs de noms principaux et secondaires de Microsoft. Cela permet à Microsoft de mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
   
 > [!CAUTION]
-> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain.*  com) démarrera à Microsoft une fois cette modification apportée. 
+> Lorsque vous modifiez les enregistrements NS de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages envoyés à votre domaine (par exemple, rob@ *your_domain.*  com) commence à arriver à Microsoft après avoir fait cette modification. 
   
 > [!IMPORTANT]
-> The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. > lorsque vous avez effectué les étapes de cette section, les seuls serveurs de noms qui doivent être répertoriés sont les quatre suivants : 
+> The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. > lorsque vous avez effectué les étapes de cette section, les quatre serveurs de noms qui doivent être répertoriés sont les quatre : 
   
 1. Pour commencer, accédez à la page de vos domaines sur le site Google Domains en utilisant [ce lien](https://domains.google.com/registrar). Vous êtes invité à vous connecter. Pour ce faire :
     
@@ -122,15 +122,15 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
 |**Troisième serveur de noms** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Quatrième serveur de noms** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-Domains-BP-redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
+   ![Google-Domains-BP-Redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
-2. Sélectionnez le contrôle **+ (ajouter)** pour créer une ligne vide. 
+2. Sélectionnez **le contrôle + (ajouter)** pour créer une ligne vide. 
     
     ![Google-Domains-BP-Redelegate-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. Ajoutez les trois autres enregistrements de serveur de noms.
     
-    Dans la section **utiliser des serveurs de noms personnalisés** , créez un enregistrement en utilisant les valeurs de la ligne suivante du tableau, puis sélectionnez le contrôle **+ (ajouter)** pour ajouter une autre ligne. 
+    Dans **la** section Utiliser des serveurs de noms personnalisés, créez un enregistrement en utilisant les valeurs de la ligne suivante du tableau, puis sélectionnez le **contrôle + (ajouter)** pour ajouter une autre ligne. 
     
     Répétez cette procédure jusqu'à avoir créé les quatre enregistrements de serveur de noms.
     
@@ -139,14 +139,14 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
-> L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Votre messagerie Microsoft et les autres services seront tous configurés pour fonctionner avec votre domaine. 
+> L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Ensuite, votre messagerie Microsoft et d’autres services seront tous définies pour fonctionner avec votre domaine. 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>Si DES serveurs de noms sont déjà répertoriés
 
-1. Si d’autres serveurs de noms sont répertoriés, sélectionnez **modifier**.
+1. Si d’autres serveurs de noms sont répertoriés, sélectionnez **Modifier.**
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Autrement dit, supprimez uniquement les serveurs de noms en cours qui  *ne sont pas*  nommés **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** ou **NS4.BDM.microsoftonline.com**.) 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Autrement dit, supprimez uniquement les  serveurs de noms actuels qui ne sont pas nommés **ns1.bdm.microsoftonline.com,** **ns2.bdm.microsoftonline.com,** **ns3.bdm.microsoftonline.com** ou **ns4.bdm.microsoftonline.com**.) 
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
@@ -163,15 +163,15 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
 |**Troisième serveur de noms** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Quatrième serveur de noms** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-Domains-BP-redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
+   ![Google-Domains-BP-Redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
-4. Sélectionnez le contrôle **+ (ajouter)** pour créer une ligne vide. 
+4. Sélectionnez **le contrôle +(add)** pour créer une ligne vide. 
     
     ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. Ajoutez les deux autres enregistrements de serveur de noms.
     
-    Dans la section **utiliser des serveurs de noms personnalisés** , créez un enregistrement en utilisant les valeurs de la ligne suivante du tableau, puis sélectionnez le contrôle **+ (ajouter)** pour ajouter une autre ligne. 
+    Dans **la** section Utiliser des serveurs de noms personnalisés, créez un enregistrement en utilisant les valeurs de la ligne suivante du tableau, puis sélectionnez le contrôle **+(add)** pour ajouter une autre ligne. 
     
     Répétez cette procédure jusqu'à avoir créé les quatre enregistrements de serveur de noms.
     
@@ -180,5 +180,5 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
-> L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Votre messagerie Microsoft et les autres services seront tous configurés pour fonctionner avec votre domaine. 
+> L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Ensuite, votre messagerie Microsoft et d’autres services seront tous définies pour fonctionner avec votre domaine. 
   

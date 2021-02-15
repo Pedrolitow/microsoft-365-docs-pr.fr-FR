@@ -1,5 +1,5 @@
 ---
-title: Créer des enregistrements DNS sur web.com pour Microsoft
+title: Créer des enregistrements DNS web.com microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur web.com pour Microsoft.
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur web.com pour Microsoft.
 ms.openlocfilehash: 943070f3790f532a0cc686270e0ecdea08f802fd
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -28,13 +28,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49656890"
 ---
-# <a name="create-dns-records-at-webcom-for-microsoft"></a>Créer des enregistrements DNS sur web.com pour Microsoft
+# <a name="create-dns-records-at-webcom-for-microsoft"></a>Créer des enregistrements DNS web.com microsoft
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-Si web.com est votre fournisseur d’hébergement DNS, suivez la procédure décrite dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online, etc.
+Si web.com est votre fournisseur d’hébergement DNS, suivez les étapes de cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc.
   
-Une fois ces enregistrements ajoutés sur web.com, votre domaine est configuré pour utiliser les services Microsoft.
+Une fois ces enregistrements ajoutés web.com, votre domaine est installé pour fonctionner avec les services Microsoft.
 
   
 > [!NOTE]
@@ -46,20 +46,20 @@ Une fois ces enregistrements ajoutés sur web.com, votre domaine est configuré 
 > [!IMPORTANT]
 > Vous devez effectuer cette procédure au niveau du bureau d'enregistrement de domaines auprès duquel vous avez acheté et inscrit votre domaine. 
   
-Lorsque vous vous êtes inscrit à web.com, vous avez ajouté un domaine à l’aide du processus de **configuration** de Web.com. 
+Lorsque vous vous êtes inscrit à web.com, vous avez ajouté un domaine à l’aide du processus **web.com’installation.** 
   
-Pour vérifier et créer des enregistrements DNS pour votre domaine dans Microsoft, vous devez d’abord modifier les serveurs de noms au niveau de votre bureau d’enregistrement de domaines afin qu’ils utilisent les serveurs de noms de Web. com.
+Pour vérifier et créer des enregistrements DNS pour votre domaine dans Microsoft, vous devez d’abord modifier les serveurs de noms de votre bureau d’enregistrement de domaines afin qu’ils utilisent les serveurs de noms web.com.
   
 Pour modifier vous-même les serveurs de noms de votre domaine sur le site web de votre bureau d'enregistrement de domaines, procédez comme suit.
   
 1. Identifiez la zone sur le site web du bureau d'enregistrement de domaines dans laquelle vous pouvez modifier les serveurs de noms pour votre domaine.
     
-2. Créez deux enregistrements de serveur de noms à l’aide des valeurs indiquées dans le tableau suivant, ou modifiez les enregistrements de serveur de noms existants afin qu’ils correspondent à ces valeurs.
+2. Créez deux enregistrements de nameserver à l’aide des valeurs du tableau suivant, ou modifiez les enregistrements de nameserver existants afin qu’ils correspondent à ces valeurs.
     
     |||
     |:-----|:-----|
-    |Premier serveur de noms  <br/> |Utilisez la valeur de serveur de noms fournie par web.com.  <br/> |
-    |Deuxième serveur de noms  <br/> |Utilisez la valeur de serveur de noms fournie par web.com.  <br/> |
+    |Premier serveur de noms  <br/> |Utilisez la valeur de nameserver fournie par web.com.  <br/> |
+    |Deuxième serveur de noms  <br/> |Utilisez la valeur de nameserver fournie par web.com.  <br/> |
    
     > [!TIP]
     > You should use at least two name server records. Si d’autres serveurs de noms sont répertoriés, vous devez les supprimer. 
@@ -67,7 +67,7 @@ Pour modifier vous-même les serveurs de noms de votre domaine sur le site web d
 3. Enregistrez vos modifications.
     
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Votre messagerie Microsoft et les autres services seront tous configurés pour fonctionner avec votre domaine. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Ensuite, votre messagerie Microsoft et d’autres services seront tous définies pour fonctionner avec votre domaine. 
   
 ## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
 <a name="BKMK_verify"> </a>
@@ -77,14 +77,14 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
   
-1. Pour commencer, accédez à la page de vos domaines sur web.com à l’aide de [ce lien](https://checkout.web.com/manage-it/index.jsp). Connectez-vous d’abord.
+1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
   
-2. Sur la page **Gestionnaire de comptes** , sélectionnez **mes noms de domaine**. 
+2. Dans la page **Gestionnaire de comptes,** sélectionnez **Mes noms de domaine.** 
   
-3. Sous * * Manage * my Domain * * *, sélectionnez **modifier les enregistrements DNS avancés**.
+3. Sous **Gérer *mon domaine***, sélectionnez **Modifier les enregistrements DNS avancés.**
 
   
-4. Dans la page **noms de domaine** , sous **texte (enregistrements TXT)**, cliquez sur **modifier les enregistrements TXT**, puis sélectionnez les valeurs du tableau suivant. 
+4. Dans la page **Noms de** domaine, sous **Texte (Enregistrements TXT),** cliquez sur Modifier les enregistrements **TXT,** puis sélectionnez les valeurs dans le tableau suivant. 
     
     |**Host (Hôte)**|**TTL (Durée de vie)**|**Text (Texte)**|
     |:-----|:-----|:----|
@@ -94,7 +94,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 5. Sélectionnez **Continuer**.
   
   
-6. Patientez quelques minutes avant de vérifier votre nouvel enregistrement TXT, afin que l’enregistrement que vous venez de créer puisse être mis à jour sur Internet.
+6. Patientez quelques minutes avant de vérifier votre nouvel enregistrement TXT, afin que l’enregistrement que vous venons de créer puisse être mis à jour sur Internet.
     
 L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez sur Microsoft et demandez l’enregistrement.
   
@@ -121,38 +121,38 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Microsoft
 <a name="BKMK_add_MX"> </a>
 
-1. Pour commencer, accédez à la page de vos domaines sur web.com à l’aide de [ce lien](https://checkout.web.com/manage-it/index.jsp). Connectez-vous d’abord.
+1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
   
-2. Sur la page **Gestionnaire de comptes** , sélectionnez **mes noms de domaine**. 
+2. Dans la page **Gestionnaire de comptes,** sélectionnez **Mes noms de domaine.** 
   
-3. Sous * * Manage * my Domain * * *, sélectionnez **modifier les enregistrements DNS avancés**.
+3. Sous **Gérer *mon domaine***, sélectionnez **Modifier les enregistrements DNS avancés.**
 
-4. Sous **serveurs de messagerie (enregistrements MX)**, cliquez sur **modifier les enregistrements MX**, puis sélectionnez les valeurs du tableau suivant. 
+4. Sous **Serveurs de messagerie (enregistrements MX),** cliquez sur Modifier les enregistrements **MX,** puis sélectionnez les valeurs dans le tableau suivant. 
     
     |**Priorité**|**TTL**|**Mail Server (Serveur de courrier)**|
     |:-----|:-----|:-----|
-    |1   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre  *\<domain-key\>*  à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |
+    |1   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |
    
 
 5. Sélectionnez **Enregistrer**.
   
-6. Si d’autres enregistrements MX sont répertoriés dans la section **MX Records (enregistrements MX** ), activez la case à cocher en regard de l’enregistrement sous **Delete (supprimer**), puis sélectionnez Save ( **Enregistrer**). 
+6. Si d’autres enregistrements MX sont répertoriés dans la section **Enregistrements MX,** cochez la case en regard de l’enregistrement sous **Supprimer,** puis sélectionnez **Enregistrer.** 
   
-7. Dans l’écran de confirmation, sélectionnez **enregistrer les modifications**. 
+7. Dans l’écran de confirmation, sélectionnez **Enregistrer les modifications.** 
 
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Ajouter les six enregistrements CNAMe requis pour Microsoft
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Ajouter les six enregistrements CNAME requis pour Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
-1. Pour commencer, accédez à la page de vos domaines sur web.com à l’aide de [ce lien](https://checkout.web.com/manage-it/index.jsp). Avant toute chose, vous serez invité à vous connecter.
+1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Avant toute chose, vous serez invité à vous connecter.
      
-2. Sur la page **Gestionnaire de comptes** , sélectionnez **mes noms de domaine**. 
+2. Dans la page **Gestionnaire de comptes,** sélectionnez **Mes noms de domaine.** 
   
-3. Sous * * Manage * my Domain * * *, sélectionnez **modifier les enregistrements DNS avancés**.
+3. Sous **Gérer *mon domaine***, sélectionnez **Modifier les enregistrements DNS avancés.**
 
 4. Ajoutez le premier des six enregistrements CNAME.
     
-    Sous **alias d’hôte (enregistrements CNAME)**, cliquez sur **modifier les enregistrements CNAME**, puis sélectionnez les valeurs du tableau suivant.
+    Sous **Alias d’hôte (enregistrements CNAME),** cliquez sur Modifier les enregistrements **CNAME,** puis sélectionnez les valeurs dans le tableau suivant.
     
     
     |**Alias (Alias)**|**TTL (Durée de vie)**|**Refers to Host Name (Fait référence au nom d'hôte)**|**Autre hôte**|
@@ -174,17 +174,17 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un seul  *enregistrement*  SPF qui inclut les deux ensembles de valeurs. 
   
-1. Pour commencer, accédez à la page de vos domaines sur web.com à l’aide de [ce lien](https://checkout.web.com/manage-it/index.jsp). Connectez-vous d’abord.
+1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
     
   
-2. Sur la page **Gestionnaire de comptes** , sélectionnez **mes noms de domaine**. 
+2. Dans la page **Gestionnaire de comptes,** sélectionnez **Mes noms de domaine.** 
   
-3. Sous * * Manage * my Domain * * *, sélectionnez **modifier les enregistrements DNS avancés**.
+3. Sous **Gérer *mon domaine***, sélectionnez **Modifier les enregistrements DNS avancés.**
 
   
-4. Dans la page **noms de domaine** , sous **texte (enregistrements TXT)**, cliquez sur **modifier les enregistrements TXT**, puis sélectionnez les valeurs du tableau suivant.   
+4. Dans la page **Noms de** domaine, sous **Texte (Enregistrements TXT),** cliquez sur Modifier les enregistrements **TXT,** puis sélectionnez les valeurs dans le tableau suivant.   
     
     |**Host (Hôte)**|**TTL (Durée de vie)**|**Text (Texte)**|
     |:-----|:-----|:-----|
@@ -201,17 +201,17 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
-> N’oubliez pas que web.com est responsable de la mise à disposition de cette fonctionnalité. Si vous constatez des incohérences entre les étapes ci-dessous et l’interface utilisateur graphique (GUI) web.com actuelle, utilisez la [communauté Web.com](https://community.web.com.com/). 
+> N’oubliez pas que web.com est chargé de rendre cette fonctionnalité disponible. Si vous constatez des différences entre les étapes ci-dessous et l’interface utilisateur graphique web.com (interface utilisateur graphique), tirez parti de [la communauté web.com.](https://community.web.com.com/) 
 
-1. Pour commencer, accédez à la page de vos domaines sur web.com à l’aide de [ce lien](https://checkout.web.com/manage-it/index.jsp). Connectez-vous d’abord.
+1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Connectez-vous en premier.
       
-2. Sur la page **Gestionnaire de comptes** , sélectionnez **mes noms de domaine**. 
+2. Dans la page **Gestionnaire de comptes,** sélectionnez **Mes noms de domaine.** 
   
-3. Sous * * Manage * my Domain * * *, sélectionnez **modifier les enregistrements DNS avancés**.
+3. Sous **Gérer *mon domaine***, sélectionnez **Modifier les enregistrements DNS avancés.**
   
 4. Ajoutez le premier des deux enregistrements SRV.
 
-    Sous **service (enregistrements SRV)**, cliquez sur **modifier les enregistrements SRV**, puis sélectionnez les valeurs du tableau suivant. 
+    Sous **Service (Enregistrements SRV),** cliquez sur Modifier les enregistrements **SRV,** puis sélectionnez les valeurs dans le tableau suivant. 
         
     |**Service**|**Protocol (Protocole)**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|

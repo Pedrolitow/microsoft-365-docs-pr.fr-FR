@@ -1,6 +1,6 @@
 ---
-title: Paramètres configurables pour le bureau géré Microsoft
-description: Informations sur les paramètres configurables avec Microsoft Managed Desktop
+title: Paramètres configurables pour bureau géré Microsoft
+description: Informations sur les paramètres configurables avec Bureau géré Microsoft
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation, paramètres, paramètres configurables
 ms.service: m365-md
 author: jaimeo
@@ -18,60 +18,60 @@ ms.locfileid: "49371489"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Paramètres configurables : Bureau géré Microsoft
 
-Microsoft Managed Desktop déploie les paramètres et les stratégies qui sont appliqués à tous les appareils gérés par Microsoft Managed Desktop. Pour plus d’informations, consultez la rubrique Configuration de l' [appareil](../service-description/device-policies.md).
+Bureau géré Microsoft déploie les paramètres et stratégies qui sont appliqués à tous les appareils gérés par Bureau géré Microsoft. Pour plus d’informations, voir [Configuration de l’appareil.](../service-description/device-policies.md)
 
-Configurable Settings in Microsoft Managed Desktop offre aux administrateurs informatiques un moyen de personnaliser et de déployer des paramètres propres à leur organisation et leurs besoins professionnels. Ces paramètres s’ajoutent aux stratégies et aux paramètres de configuration des appareils qui sont gérés par le bureau géré Microsoft.  
+Les paramètres configurables dans bureau géré Microsoft offrent aux administrateurs informatiques un moyen de personnaliser et de déployer des paramètres propres à leur organisation et à leurs besoins métiers. Ces paramètres s’ajoutent aux paramètres et stratégies de configuration des appareils gérés par Bureau géré Microsoft.  
 
-Les modifications de paramètres configurables sont apportées dans le Cloud et appliquées à vos appareils de bureau gérés par Microsoft dans des groupes de déploiement définis. Ce processus est similaire à la façon dont Microsoft Managed Desktop gère les modifications apportées aux paramètres de configuration des appareils et aux stratégies définies et gérées par le service. À l’aide de la même procédure que celle utilisée par Microsoft Managed Desktop pour le déploiement des modifications, vous continuez à faire avancer votre organisation à l’aide des pratiques modernes de gestion informatique.
+Les modifications de paramètre configurables sont apportées dans le cloud et appliquées à vos appareils bureau géré Microsoft dans des groupes de déploiement définis. Ce processus est similaire à la façon dont Bureau géré Microsoft gère les modifications apportées aux paramètres et stratégies de configuration des appareils qui sont définis et gérés par le service. En utilisant le même processus que bureau géré Microsoft pour le déploiement des modifications, vous continuez à faire avancer votre organisation à l’aide des pratiques de gestion informatique modernes.
 
-## <a name="when-to-use-configurable-settings"></a>Quand utiliser des paramètres configurables ?
+## <a name="when-to-use-configurable-settings"></a>Quand utiliser les paramètres configurables ?
 
-Il existe plusieurs fois que vous pouvez utiliser des paramètres configurables. 
+Il existe plusieurs fois des paramètres configurables. 
 
-**Processus d’intégration** : Microsoft Managed Desktop recommande de personnaliser les paramètres configurables lorsque vous intégrez à Microsoft Managed Desktop service, ou lorsque vous configurez un grand nombre d’appareils (20 ou plus). Les catégories de définition sont configurées dans le portail d’administration de bureau géré Microsoft. Une fois que vous avez intégré et que vous avez accès au portail d’administration, vous pouvez choisir les catégories de paramètres que vous souhaitez personnaliser pour votre organisation, effectuer les modifications, mettre en place un déploiement, puis déployer vos modifications.
+**Processus** d’intégration : Bureau géré Microsoft vous recommande de personnaliser les paramètres configurables lors de l’intégration au service Bureau géré Microsoft ou lorsque vous intégrer un grand nombre d’appareils (20 ou plus). Les catégories de paramètres sont configurées dans le portail d’administration bureau géré Microsoft. Une fois que vous êtes intégré et que vous avez accès au portail d’administration, vous pouvez choisir les catégories de paramètres que vous souhaitez personnaliser pour votre organisation, apporter les modifications, effectuer un déploiement, puis déployer vos modifications.
 
-**Gérer les paramètres** : Vérifiez régulièrement vos paramètres et effectuez les mises à jour nécessaires. Vous devrez peut-être effectuer des modifications pour prendre en charge un changement au sein de votre entreprise.   
+**Gérer les paramètres** : examinez vos paramètres régulièrement et mettez à jour les mises à jour nécessaires. Vous devrez peut-être apporter des modifications pour prendre en charge une modification dans votre entreprise.   
 
 ## <a name="setting-categories"></a>Définition des catégories
 
-Voici les catégories de paramètres configurables que vous pouvez personnaliser :
-- [Image d’arrière-plan du Bureau](config-setting-ref.md#desktop-background-picture) : personnaliser l’image d’arrière-plan du Bureau pour les appareils de bureau gérés Microsoft. 
-- [Pages de démarrage du navigateur](config-setting-ref.md#browser-start-pages) : ajouter des pages de démarrage à utiliser avec Microsoft Edge. Voir page de démarrage du navigateur
-- [Liste des sites en mode entreprise](config-setting-ref.md#enterprise-mode-site-list-location) : ajouter des sites et leur mode de compatibilité. Les sites de la liste démarreront dans Internet Explorer. 
+Voici les catégories de paramètres configurables que vous pouvez personnaliser :
+- [Image d’arrière-plan du](config-setting-ref.md#desktop-background-picture) bureau : personnaliser l’image d’arrière-plan du bureau pour les appareils de bureau géré Microsoft. 
+- [Pages de démarrage du navigateur](config-setting-ref.md#browser-start-pages) : ajoutez des pages de démarrage à utiliser avec Microsoft Edge. Voir la page de démarrage du navigateur
+- [Liste des sites en mode Entreprise](config-setting-ref.md#enterprise-mode-site-list-location) : ajoutez des sites et leur mode de compatibilité. Les sites de la liste démarrent dans Internet Explorer. 
 - [Sites de confiance](config-setting-ref.md#trusted-sites) : ajoutez des sites de confiance et définissez des zones de sécurité pour chaque site. 
-- [Exceptions de site proxy](config-setting-ref.md#proxy) : configurez le numéro de votre adresse et le numéro de port de votre serveur proxy, et ajoutez des exceptions de site proxy.
+- [Exceptions de site proxy](config-setting-ref.md#proxy) : configurer le numéro d’adresse et le numéro de port de votre serveur proxy, et ajouter des exceptions de site proxy.
 
-Chaque catégorie de paramètres peut être personnalisée et déployée de lui-même. Vous pouvez déployer des modifications à plusieurs catégories de paramètres en même temps, mais vous ne pouvez déployer qu’une seule modification à la fois à une catégorie de paramètres.
+Chaque catégorie de paramètres peut être personnalisée et déployée seule. Vous pouvez déployer les modifications apportées à plusieurs catégories de paramètres en même temps, mais vous ne pouvez déployer qu’une seule modification à la fois dans une catégorie de paramètres.
 
 Par exemple :
-- Vous pouvez déployer en même temps des modifications apportées à l’image d’arrière-plan du bureau et aux sites approuvés, chacun comme leur propre déploiement. 
-- Vous ne pouvez pas déployer deux déploiements sur les pages de démarrage du navigateur en même temps. Le déploiement le plus récent arrêtera les déploiements antérieurs qui sont toujours en cours.
+- Vous pouvez déployer les modifications apportées à l’image d’arrière-plan du bureau et aux sites de confiance, chacun en tant que son propre déploiement, en même temps. 
+- Vous ne pouvez pas déployer deux déploiements sur les pages de démarrage du navigateur en même temps. Le déploiement le plus récent arrête les déploiements précédents qui sont toujours en cours.
 
-## <a name="configurable-setting-process"></a>Processus de définition configurable
+## <a name="configurable-setting-process"></a>Processus de paramètre configurable
 
-Microsoft Managed Desktop recommande de suivre un processus similaire à celui-ci lors de l’utilisation de paramètres configurables pour votre organisation :
+Bureau géré Microsoft vous recommande de suivre un processus semblable au suivant lors de l’utilisation des paramètres configurables pour votre organisation :
 
-**Étape 1-plan** : Découvrez les paramètres configurables et déterminez les catégories de paramètres que vous souhaitez configurer pour votre organisation. Créez une chronologie pour le moment où vous prévoyez de déployer les modifications apportées à chaque groupe. Planifiez la communication avec vos utilisateurs qui répond à vos processus de gestion des modifications internes. Par exemple, si vous ajoutez des pages de démarrage de navigateur, indiquez à vos utilisateurs qu’ils disposeront d’un nouveau jeu de pages de démarrage dans leur navigateur après le déploiement.  
+**Étape 1 : Planifier** : découvrez les paramètres configurables et déterminez les catégories de paramètres que vous souhaitez configurer pour votre organisation. Créez une chronologie pour le moment où vous prévoyez de déployer les modifications apportées à chaque groupe. Planifiez une communication avec vos utilisateurs qui répond à vos processus de gestion des changements internes. Par exemple, si vous ajoutez des pages de démarrage de navigateur, faites savoir à vos utilisateurs qu’ils auront un nouvel ensemble de pages de démarrage dans leur navigateur après le déploiement.  
 
-**Étape 2 : configurer et déployer le déploiement** : modifiez les paramètres configurables dans le portail d’administration de bureau géré Microsoft. Préparez les modifications de sorte qu’elles soient prêtes à être déployées. N’oubliez pas de donner aux utilisateurs des informations sur les modifications, ainsi que la façon dont les modifications modifieront leur expérience de l’appareil.   
+**Étape 2 : configurer et configurer** le déploiement : a apporté des modifications aux paramètres configurables dans le portail d’administration bureau géré Microsoft. Préparez les modifications afin qu’elles sont prêtes à être déployées. N’oubliez pas d’en faire savoir à vos utilisateurs sur les modifications et sur la façon dont elles modifieront l’expérience de leur appareil.   
 
-Vous configurez et modifiez les étapes dans le portail d’administration de bureau géré Microsoft. Pour plus d’informations, consultez la rubrique [Customize configurable Settings](config-setting-ref.md). 
+Vous configurez et configurez les modifications dans le portail d’administration bureau géré Microsoft. Pour plus d’informations, voir [Personnaliser les paramètres configurables.](config-setting-ref.md) 
 
-**Étape 3-communiquer les modifications** Communiquer des informations sur les modifications à venir à vos utilisateurs. Pour chaque déploiement, effectuez la communication qui fait partie de vos processus de gestion des modifications. Vous devez communiquer clairement toute modification qui influe sur le fonctionnement d’un utilisateur ou sur ses appareils.
+**Étape 3 : communiquer les modifications** Communiquez des informations sur les modifications à venir à vos utilisateurs. Pour chaque déploiement, terminez la communication qui fait partie de vos processus de gestion des changements. Vous devez clairement communiquer toute modification qui a une incidence sur le fonctionnement d’un utilisateur ou sur ce qu’il verra sur ses appareils.
 
-**Étape 4-déployer les modifications** – déployez vos modifications, en commençant par le groupe de test. Le groupe de test vous permet de valider et de résoudre les problèmes rencontrés dans un groupe avec moins d’appareils, avant de déployer des modifications sur des groupes plus importants d’appareils. Si vous rencontrez des problèmes, vous pouvez annuler la modification, mettre à jour le paramètre et déployer un nouveau déploiement. Microsoft Managed Desktop recommande de suivre l’approche structurée et de déployer des groupes dans cet ordre : test, First, Fast, puis large.   
+**Étape 4 : Déployer les modifications** : déployez vos modifications, en commençant par le groupe test. Le groupe test vous permet de valider et de résoudre les problèmes dans un groupe avec moins d’appareils, avant de déployer les modifications apportées à des groupes plus importants d’appareils. Si vous avez des problèmes, vous pouvez inverser la modification, mettre à jour le paramètre et mettre en place un nouveau déploiement. Bureau géré Microsoft vous recommande de suivre l’approche structurée et de déployer les groupes dans cet ordre : Test, Premier, Rapide, puis Large.   
 
-Tous les paramètres configurables sont gérés à l’aide du portail d’administration de bureau géré Microsoft. Pour plus d’informations, consultez la rubrique [Deploy changes](config-setting-deploy.md). 
+Tous les paramètres configurables sont gérés à l’aide du portail d’administration bureau géré Microsoft. Pour plus d’informations, voir [Déployer les modifications.](config-setting-deploy.md) 
 
-**Étape 5-suivi des modifications** – suivez la progression de vos modifications sur l’état du déploiement. Pour chaque paramètre, vous pouvez :
-- **Suivre l’avancement** : suivre l’état après le déploiement de la modification. L’État prend la valeur **en cours**, puis **terminé** ou **échec**. En cas d’échec d’un déploiement, une demande de support est automatiquement ouverte pour les opérations de bureau géré Microsoft pour examiner le problème.  
-- **Voir version déployée** : chaque modification déployée possède un numéro de version.
-- **Rétablir les modifications** : la restauration d’une modification arrête le déploiement actuel et rétablit tous les groupes avec les dernières modifications qui ont été déployées sur tous les groupes. Vous revenez à la dernière valeur de paramètre correcte.
-- **Valider les modifications** -une fois le déploiement terminé, vérifiez que les modifications ont été appliquées comme prévu.  
+**Étape 5 : suivre les modifications** : suivre l’avancement de vos modifications sur l’état du déploiement. Pour chaque paramètre, vous pouvez :
+- **Suivre la progression** : suivre l’état après le déploiement de la modification. L’état est en **cours,** puis terminé **ou** **a échoué.** En cas d’échec d’un déploiement, une demande de support est automatiquement ouverte pour les opérations de bureau géré Microsoft afin d’examiner le problème.  
+- **Voir la version déployée** : chaque modification déployée a un numéro de version.
+- **Revenir aux modifications** : la reconversion d’une modification arrête le déploiement actuel et retourne tous les groupes aux dernières modifications qui ont été déployées pour tous les groupes. Vous revenir à la dernière valeur de paramètre connue.
+- **Valider les modifications** : une fois le déploiement terminé, validez que les modifications ont été appliquées comme prévu.  
 
-Si un déploiement a échoué ou si vous ne pouvez pas annuler une modification, [ouvrez une demande de support](admin-support.md) avec Microsoft Managed Desktop Operations. 
+Si un déploiement a échoué ou si vous ne pouvez pas revenir à une modification, ouvrez une demande de [support](admin-support.md) avec les opérations de bureau géré Microsoft. 
 
-Pour plus d’informations, consultez la rubrique [Deploy and Track configurable Settings](config-setting-deploy.md).
+Pour plus d’informations, [voir Déployer et suivre les paramètres configurables.](config-setting-deploy.md)
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Référence des paramètres configurables](config-setting-ref.md) 

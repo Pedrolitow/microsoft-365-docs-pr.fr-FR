@@ -24,54 +24,54 @@ ms.locfileid: "49613677"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gouvernance des communications pour les scénarios de collaboration
 
-Microsoft 365 propose un certain nombre de contrôles pour vous aider à gérer la communication au sein de votre organisation, y compris les paramètres de messagerie et de réunion. Passez en revue ces options et réfléchissez à la façon dont elles correspondent à vos besoins professionnels, à la sensibilité de vos données et à l’étendue des personnes avec lesquelles vos utilisateurs doivent collaborer.
+Microsoft 365 offre un certain nombre de contrôles pour vous aider à régir les communications au niveau de votre organisation, y compris les paramètres de messagerie et de réunion. Examinez ces options et réfléchissez à la façon dont elles s’miquent aux besoins de votre entreprise, à la sensibilité de vos données et à l’étendue des personnes avec qui vos utilisateurs doivent collaborer.
 
-Le tableau suivant fournit une référence rapide pour les contrôles de communication disponibles dans Microsoft 365. Pour plus d’informations, reportez-vous aux sections suivantes.
+Le tableau suivant fournit une référence rapide pour les contrôles de communication disponibles dans Microsoft 365. Des informations supplémentaires sont fournies dans les sections suivantes.
 
 |Catégorie|Description|Référence|
 |:-------|:----------|:--------|
 |Messagerie |||
-||Gérer ce que les utilisateurs peuvent faire pendant la messagerie dans Teams.|[Gérer les stratégies de messagerie dans Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)|
-||Contrôler les personnes qui peuvent démarrer et répondre à des billets dans un canal.|[Configurer et gérer la modération des canaux dans Microsoft teams](https://docs.microsoft.com/microsoftteams/manage-channel-moderation-in-teams)|
+||Gérez ce que les utilisateurs peuvent faire lors de la messagerie dans Teams.|[Gérer les stratégies de messagerie dans Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)|
+||Contrôler qui peut démarrer et répondre à des publications dans un canal.|[Configurer et gérer la modération des canaux dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-channel-moderation-in-teams)|
 |Réunions|||
-||Gérer les actions des participants à la réunion.|[Gérer les stratégies de réunion dans Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)|
-||Autoriser ou empêcher les utilisateurs anonymes qui rejoignent des réunions.|[Autoriser les utilisateurs anonymes à participer à des réunions](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
+||Gérer ce que les participants à la réunion peuvent faire.|[Gérer les stratégies de réunion dans Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)|
+||Autoriser ou empêcher les utilisateurs anonymes de rejoindre des réunions.|[Autoriser les utilisateurs anonymes à participer à des réunions](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |Conformité des communications|||
-||Faire face et répondre aux communications inversées et négligentes|[Conformité de la communication dans Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)|
+||Surface et réponse à une communication d’insécurence et d’insécurence|[Conformité des communications dans Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)|
 
 ## <a name="messaging"></a>Messagerie 
 
-Vous pouvez contrôler les fonctionnalités de messagerie et de conversation, telles que la modification ou la suppression de messages, disponibles pour les utilisateurs de Microsoft teams à l’aide de stratégies de messagerie. Vous pouvez créer différentes stratégies pour différents utilisateurs et groupes.
+Vous pouvez contrôler quelles fonctionnalités de messagerie de conversation et de canal, telles que la modification ou la suppression de messages, sont disponibles pour les utilisateurs dans Microsoft Teams à l’aide de stratégies de messagerie. Vous pouvez créer différentes stratégies pour différents utilisateurs et groupes.
 
 [Gérer les stratégies de messagerie dans Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)
 
-Vous pouvez déterminer qui peut démarrer de nouveaux billets et répondre à des billets dans un canal teams en configurant la modération des canaux.
+Vous pouvez contrôler qui peut démarrer de nouveaux billets et répondre à des publications dans un canal Teams en configurant la modération des canaux.
 
-[Configurer et gérer la modération des canaux dans Microsoft teams](https://docs.microsoft.com/microsoftteams/manage-channel-moderation-in-teams)
+[Configurer et gérer la modération des canaux dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-channel-moderation-in-teams)
 
 ## <a name="meetings"></a>Réunions
 
-Vous pouvez contrôler les fonctionnalités disponibles pour les participants à la réunion Teams, y compris la planification, le partage de contenu, les participants et les stratégies audio et vidéo.
+Vous pouvez contrôler les fonctionnalités disponibles pour les participants à la réunion Teams, notamment la planification, le partage de contenu, les participants et les stratégies audio et vidéo.
 
 [Gérer les stratégies de réunion dans Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)
 
-Vous pouvez contrôler une jointure anonyme pour les réunions Teams, ce qui permet à quiconque disposant d’un lien vers la réunion de participer.
+Vous pouvez contrôler la rejoindre anonymement pour les réunions Teams, ce qui permet à toute personne ayant un lien vers la réunion de participer.
 
 [Autoriser les utilisateurs anonymes à participer à des réunions](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
 
 ## <a name="communication-compliance"></a>Conformité des communications
 
-La conformité de la communication dans Microsoft 365 vous permet d’examiner les communications pour un langage offensant, des informations sensibles et des informations relatives aux normes internes et réglementaires. Les communications de conversation, les boîtes aux lettres et les messages Yammer peuvent tous être surveillés, générant des alertes. Avec les outils d’administration, vous pouvez rapidement identifier et effectuer des actions sur les messages avec des correspondances de stratégie.
+La conformité des communications dans Microsoft 365 vous permet d’examiner les communications en cas de langage choquant, d’informations sensibles et d’informations relatives aux normes internes et réglementaires. Les communications de conversation, les boîtes aux lettres et les messages Yammer peuvent tous être surveillés, générant ainsi des alertes. Grâce aux outils d’administration, vous pouvez rapidement identifier et agir sur les messages avec des correspondances de stratégie.
 
-[Conformité de la communication dans Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)
+[Conformité des communications dans Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-[Planification de la gouvernance de collaboration étape par étape](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Création de votre plan de gouvernance de collaboration](collaboration-governance-first.md)
+[Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
-[Gérer les paramètres de Microsoft teams pour votre organisation](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
+[Gérer les paramètres de Microsoft Teams pour votre organisation](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 
 [Gérer la conformité des données](https://docs.microsoft.com/yammer/manage-security-and-compliance/manage-data-compliance)

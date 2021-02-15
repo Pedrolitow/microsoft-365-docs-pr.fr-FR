@@ -1,5 +1,5 @@
 ---
-title: Gérer les actualités industrielles
+title: Gérer les actualités du secteur
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -14,7 +14,7 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Fournir à vos utilisateurs des titres d’actualité à jour sur votre secteur d’activité et des informations de votre organisation, utilisez le service News pour activer un flux d’actualités personnalisé pour votre organisation.
+description: Fournissez à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation.
 ms.openlocfilehash: 90fa9a046e5207ae032180099f7766ef18d71898
 ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
@@ -22,44 +22,44 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/01/2020
 ms.locfileid: "49519304"
 ---
-# <a name="manage-industry-news"></a>Gérer les actualités industrielles
+# <a name="manage-industry-news"></a>Gérer les actualités du secteur
 
-Pour fournir à vos utilisateurs des titres d’actualité à jour concernant votre secteur d’activité et des informations de votre organisation, utilisez le service [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) pour activer un flux d’actualités personnalisé pour votre organisation.Vous pouvez également gérer les paramètres de la page d’accueil Bing et de Microsoft Edge New Tab (en commençant par la version de Edge 87).
+Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le [service](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) Actualités pour activer un flux d’actualités personnalisé pour votre organisation.Vous pouvez également gérer les paramètres de la page d’accueil Bing et de la page nouvel onglet Microsoft Edge (à partir de la publication de Edge 87).
 
-## <a name="what-your-users-will-see"></a>Ce que les utilisateurs verront
+## <a name="what-your-users-will-see"></a>Ce que vos utilisateurs voient
  
-Les utilisateurs connectés qui accèdent à la page d’accueil de Bing verront le flux d’actualités de votre secteur sous les informations personnalisées pour votre organisation.   
- :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Capture d’écran du carrousel d’images avec l’actualité de l’industrie à partir du Web":::
-Ils peuvent également consulter les informations de travail de l’entreprise, de l’industrie et de l’industrie ou des informations personnalisées sur leur page d’onglet nouveau Microsoft Edge. 
+Les utilisateurs qui se sont inscrits à la page d’accueil Bing voient le flux d’actualités de votre secteur sous les informations personnalisées de votre organisation.   
+ :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Capture d’écran d’un carrousel d’image avec les actualités du secteur à partir du web":::
+Ils peuvent également consulter les actualités de l’entreprise, du secteur et internes ou des informations de travail personnalisées sur leur nouvel onglet Microsoft Edge. 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Page d’accueil de Microsoft dans News":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft dans la page d’accueil des actualités":::
 
 ## <a name="news-settings"></a>Paramètres des actualités
 
-En tant qu’administrateur, vous contrôlez les paramètres de flux de discussion pour votre organisation, y compris le secteur d’accueil sélectionné et la page d’accueil Bing, ainsi que la page Microsoft Edge New Tab (en commençant par la version de Edge 87).
+En tant qu’administrateur, vous contrôlez les paramètres du flux d’actualités pour votre organisation, y compris l’industrie sélectionnée et la page d’accueil Bing, ainsi que la page nouvel onglet De Microsoft Edge (à partir de la publication de Edge 87).
 
-1. Dans le centre d’administration Microsoft 365, accédez à **paramètres**  >  **org Settings**  >  **services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
-2. Dans le panneau **News** , cliquez sur l’onglet **général** .
-3. Dans la liste **secteur d’activité** , sélectionnez les industries de votre organisation. Cela permet de déterminer les informations générales qui apparaissent dans le nouveau flux de votre organisation. Microsoft peut présélectionner un secteur d’activité à l’aide des informations de votre compte. Vous pouvez supprimer ou ajouter des secteurs d’activité en mettant à jour la liste des secteurs d’activité.
-4. Dans le champ **rubriques** , entrez les rubriques qui vous intéressent. Vos utilisateurs ne pourront pas modifier ces rubriques.
-5. Vous pouvez bloquer les articles contenant des mots clés dans le champ **exclure le contenu** .  Par exemple, pour éviter que les articles contenant le mot clé « cuisson » s’affichent dans le flux d’actualités, ajoutez le mot clé « cuisson » dans le champ exclure le contenu. Évitez d’inclure des termes généraux (le, le, etc.), ils peuvent bloquer le contenu pertinent dans vos flux de discussion d’entreprise.
-6. Sélectionnez **Enregistrer**. L’affichage des modifications peut prendre jusqu’à 24 heures.
+1. Dans le Centre d’administration Microsoft 365, go to **Settings**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
+2. Dans le **panneau Actualités,** cliquez sur **l’onglet** Général
+3. Dans la **liste Secteur,** sélectionnez les secteurs d’activité de votre organisation. Cela permet de déterminer les actualités générales qui apparaissent dans le nouveau flux de votre organisation. Microsoft peut pré-sélectionner un secteur d’activité à l’aide des informations de votre compte. Vous pouvez supprimer ou ajouter des secteurs d’activité en mettant à jour la liste Secteur.
+4. Dans le **champ Rubriques,** entrez les rubriques dont vous souhaitez consulter les articles d’actualités. Vos utilisateurs ne pourront pas modifier ces rubriques.
+5. Vous pouvez bloquer les articles contenant des mots clés dans le **champ Exclure du** contenu.  Par exemple, pour éviter que les articles contenant le mot clé « # A0 » ne s’affichent dans le flux d’actualités, ajoutez le mot clé « # » dans le champ Exclure du contenu. Évitez d’inclure des termes généraux (le, il et, etc.), ils peuvent empêcher le contenu pertinent d’apparaître dans vos flux d’actualités d’entreprise.
+6. Sélectionnez **Enregistrer**. L’apparition des modifications peut prendre jusqu’à 24 heures.
 
 ## <a name="bing-homepage"></a>Page d’accueil de Bing
 
-Vous pouvez personnaliser la page d’accueil de Bing pour y inclure des informations sur votre secteur d’activité. 
+Vous pouvez personnaliser la page d’accueil Bing pour inclure des actualités sur votre secteur d’activité. 
 
-1. Dans le centre d’administration Microsoft 365, accédez à **paramètres**  >  **org Settings**  >  **services**  >  [information](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
-2. Dans le panneau **News** , cliquez sur l’onglet **page d’accueil Bing** , puis sélectionnez **inclure sur la page d’accueil Bing**.
-3. L’actualité du secteur apparaît sous les informations personnalisées de votre organisation sur Bing.com.
+1. Dans le Centre d’administration Microsoft 365, go to **Settings**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+2. Dans le **panneau Actualités,** cliquez sur **l’onglet** Page d’accueil bing, puis **sélectionnez Inclure sur la page d’accueil Bing.**
+3. Les actualités du secteur apparaissent sous les informations personnalisées de votre organisation sur Bing.com.
 
-## <a name="microsoft-edge-new-tab-page"></a>Page nouvelle onglet Microsoft Edge 
-Lorsque vos utilisateurs se connectent à Microsoft Edge (version 87 ou supérieure) avec un compte professionnel ou scolaire valide, ils peuvent voir les actualités adaptées à votre organisation.
+## <a name="microsoft-edge-new-tab-page"></a>Page Nouvel onglet Microsoft Edge 
+Lorsque vos utilisateurs se connectent à Microsoft Edge (version 87 ou supérieure) avec un compte scolaire ou scolaire valide, ils peuvent voir des actualités adaptées à votre organisation.
 
-1. Dans le centre d’administration Microsoft 365, accédez à **paramètres**  >  **org Settings**  >  **services**  >  [information](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
-2. Dans le panneau **News** , cliquez sur **page nouvelle onglet Microsoft Edge**.
-3. Sélectionnez **autoriser le contenu Office 365 sur la page nouvel onglet**. Lorsque ce dernier est activé, les utilisateurs peuvent personnaliser leur nouvel onglet pour afficher les informations d’Office 365, notamment les fichiers recommandés et récents, ainsi que les sites SharePoint fréquemment utilisés et d’autres informations.
-4. Sélectionnez **afficher les informations sur la société et l’actualité du secteur sur la page nouvel onglet**. Des articles d’actualité concernant votre organisation et votre secteur d’activité apparaissent pour les utilisateurs qui choisissent d’afficher les articles sur leur nouvelle page d’onglets.
+1. Dans le Centre d’administration Microsoft 365, go to **Settings**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
+2. Dans le **panneau Actualités,** cliquez **sur la page nouvel onglet de Microsoft Edge.**
+3. Sélectionnez **Autoriser le contenu Office 365 sur la page nouvel onglet.** Lorsqu’il est activé, les utilisateurs peuvent personnaliser leur nouvel onglet pour afficher les informations d’Office 365, y compris les fichiers recommandés et récents, ainsi que les sites SharePoint fréquemment utilisés et d’autres informations.
+4. Sélectionnez **Afficher les informations de l’entreprise et les actualités du secteur sur la page nouvel onglet.** Des articles d’actualités sur votre organisation et votre secteur d’activité s’afficheront pour les utilisateurs qui choisiront de consulter les articles sur leur nouvel onglet.
 
 ## <a name="related-articles"></a>Articles connexes
 

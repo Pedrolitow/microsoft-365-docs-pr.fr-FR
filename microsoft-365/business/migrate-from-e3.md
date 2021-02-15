@@ -1,5 +1,5 @@
 ---
-title: Migrer vers Microsoft 365 entreprise à partir d’Office 365 E3
+title: Migrer vers Microsoft 365 Business à partir d’Office 365 E3
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -29,11 +29,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/02/2020
 ms.locfileid: "49558255"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration à partir d’Office 365 E3 vers Microsoft 365 Business Premium 
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration d’Office 365 E3 vers Microsoft 365 Business Premium 
 
-Microsoft 365 Business Premium offre tout ce dont vous avez besoin pour votre petite entreprise, en combinant les meilleures applications de productivité basées sur le Cloud et la sécurité et la gestion des appareils simples. Si vous disposez actuellement d’un abonnement Office 365 E3, mais que vous n’avez pas plus de 300 employés, envisagez de passer à Microsoft 365 Business Premium pour bénéficier de fonctionnalités de sécurité supplémentaires.
+Microsoft 365 Business Premium offre tout ce dont vous avez besoin pour votre petite entreprise, en combinant les applications de productivité basées sur le cloud les plus classes avec une gestion et une sécurité des appareils simples. Si vous disposez actuellement d’un abonnement Office 365 E3, mais que vous n’avez pas plus de 300 employés, envisagez de passer à Microsoft 365 Business Premium pour ajouter des fonctionnalités de sécurité.
 
-La migration est simple : vous changez tout d’abord les licences et toutes vos données et les informations utilisateur dans votre abonnement actuel sont conservées. Après la migration, vous devrez configurer les fonctionnalités ajoutées dans Microsoft 365 Business Premium.
+La migration est simple : vous changez d’abord de licence et toutes vos données et informations utilisateur dans votre abonnement actuel sont conservées. Après la migration, vous devez configurer les fonctionnalités ajoutées dans Microsoft 365 Business Premium.
 
 ## <a name="differences-between-office-365-e3-and-microsoft-365-business-premium"></a>Différences entre Office 365 E3 et Microsoft 365 Business Premium
 
@@ -43,65 +43,65 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 |:-------|:-----|:-----|
 | **Sur site**        | | | 
 | Applications Office<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Applications Microsoft 365 for entreprise | 
-| **Applications de productivité sur le Cloud**        | | | 
-| Exchange Online et Outlook    | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
-| Équipes    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
-| OneDrive Entreprise    | limite de stockage de 1 to par utilisateur    | Illimité | 
-| Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
+| **Applications de productivité cloud**        | | | 
+| Exchange Online et Outlook    | Limite de stockage de 50 Go par boîte aux lettres et nombre Archivage Exchange Online    | Limite de stockage de 100 Go par boîte aux lettres et nombre Archivage Exchange Online | 
+| Teams    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
+| OneDrive Entreprise    | Limite de stockage de 1 To par utilisateur    | Illimité | 
+| Yammer, SharePoint Online, Planificateur, Stream    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
-| Gestionnaire de clients Outlook, MileIQ    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | | 
+| Gestionnaire client Outlook, MileIQ    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Protection contre les menaces**        | | | 
-| Defender pour Office 365 plan 1 | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
+| Defender pour Office 365 Plan 1 | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
 | **Gestion des identités**        | | | 
-| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), l’authentification multifacteur (MFA) Azure AD, l’accès conditionnel et l’écriture différée de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
-| **Gestion des appareils et des applications**        | | |
+| Réinitialisation du mot de passe en libre-service pour les comptes Azure Active Directory (Azure AD) hybrides, authentification multifacteur Azure AD (MFA), accès conditionnel, écriture d’écriture de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
+| **Données de gestion des appareils et des applications**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | Activation d'ordinateurs partagés|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png)| 
-| Droits de mise à niveau vers Windows 10 professionnel à partir de licences Win 7/8.1 Pro|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    || 
+| Mettre à niveau les droits vers Windows 10 Professionnel à partir des licences Win 7/8.1 Professionnel|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    || 
 | **Protection des informations**        | | |
 |Prévention des pertes de données Office 365|    ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)|![Inclus dans Office 365 E3](../media/check-mark.png)|
-|Azure information Protection Plan 1, application BitLocker|![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)||
-|Azure information Protection Plan 1, étiquettes de sensibilité|![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)||
-|**Licence d’accès client (CAL)**|||
-|Suite CAL Enterprise (Exchange, SharePoint, Skype)||![Inclus dans Office 365 E3](../media/check-mark.png)|
+|Azure Information Protection Plan 1, application de Bitlocker|![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)||
+|Azure Information Protection Plan 1, Étiquettes de sensibilité|![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)||
+|**Licence d’accès client (droits cal)**|||
+|Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Inclus dans Office 365 E3](../media/check-mark.png)|
 
-<sup>1</sup> la version Microsoft 365 Business Premium des applications Office n’inclut pas l’activation en volume via la stratégie de groupe, la télémétrie d’application, les contrôles de mise à jour, la comparaison des feuilles de calcul, l’interrogation et l’aide à la décision.
+<sup>1</sup> La version Microsoft 365 Business Premium des applications Office n’inclut pas l’activation en volume par le biais de la stratégie de groupe, de la télémétrie d’application, des contrôles de mise à jour, de la comparaison et de l’analyse de feuilles de calcul ou de l’aide à la commande.
 
 ## <a name="migration"></a>Migration
 
-Pour migrer votre abonnement, consultez la rubrique [modifier les offres manuellement](../commerce/subscriptions/change-plans-manually.md) pour obtenir des instructions si vous souhaitez déplacer seulement quelques personnes vers Microsoft 365 Business Premium. Vous pouvez également [mettre à niveau tous les utilisateurs automatiquement](../commerce/subscriptions/upgrade-to-different-plan.md)ou collaborer avec un partenaire pour déplacer votre abonnement et vos licences E3 vers un abonnement Microsoft 365 Business Premium.
-Les sections suivantes décrivent les modifications que vous devez effectuer, le cas échéant, et ce que vous pouvez faire après la migration.
+Pour migrer votre abonnement, consultez [Les plans](../commerce/subscriptions/change-plans-manually.md) de modification manuellement pour obtenir des instructions si vous souhaitez déplacer quelques personnes vers Microsoft 365 Business Premium. Vous pouvez également mettre [à](../commerce/subscriptions/upgrade-to-different-plan.md)niveau tout le monde automatiquement ou travailler avec un partenaire pour déplacer votre abonnement E3 et vos licences vers un abonnement Microsoft 365 Business Premium.
+Les sections suivantes décrivent les modifications que vous devez apporter, le cas nécessaire, et ce que vous pouvez faire après la migration.
 
-### <a name="office-365-e3-subscription-configuration-and-data"></a>Données et configuration de l’abonnement à Office 365 E3
-Vous n’avez pas besoin d’effectuer des modifications dans votre abonnement ou vos données actuelles avant la migration, ce qui inclut :
+### <a name="office-365-e3-subscription-configuration-and-data"></a>Configuration et données de l’abonnement Office 365 E3
+Vous n’avez pas besoin d’apporter des modifications à votre abonnement ou données actuels avant la migration, notamment :
 
-- Configuration des abonnements, tels que les enregistrements DNS et les noms de domaine.
-- Les comptes d’utilisateur et de groupe et les paramètres d’authentification, tels que l’authentification multifacteur ou les stratégies d’accès conditionnel.
-- Les configurations de service de productivité et leurs données, telles que les équipes, les boîtes aux lettres Exchange Online, les sites SharePoint Online, les dossiers OneDrive entreprise et les blocs-notes OneNote.
-- Les applications Office sont mises à l’horizontale automatiquement. La gestion des licences Office 365 moderne vérifie l’attribution de licence de l’utilisateur toutes les 72 heures et convertit les applications Office en version correspondant à l’abonnement de l’utilisateur.
+- Configuration de l’abonnement, telle que les enregistrements DNS et les noms de domaine.
+- Comptes d’utilisateur et de groupe et paramètres d’authentification, tels que l’authentification multifacteur ou les stratégies d’accès conditionnel.
+- Configurations du service de productivité et leurs données, telles que Teams, boîtes aux lettres Exchange Online, sites SharePoint Online, dossiers OneDrive Entreprise et blocs-notes OneNote.
+- Les applications Office sont automatiquement mis à l’échelle. Les licences modernes Office 365 vérifient l’attribution de licence de l’utilisateur toutes les 72 heures et convertissent les applications Office en la version qui correspond à l’abonnement utilisateur.
 
 ### <a name="windows-10"></a>Windows 10
 
-Si votre Windows ne se trouve pas déjà sur la mise à jour du créateur Windows professionnel, [Mettez-les à niveau vers Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
+Si votre windows n’est pas déjà sur la mise à jour du Créateur Windows Pro, mettez-les à [niveau vers Windows Pro Creators Update.](upgrade-to-windows-pro-creators-update.md)
 
 ### <a name="set-up-policies-to-protect-user-devices-and-files"></a>Configurer des stratégies pour protéger les appareils et les fichiers des utilisateurs
 
 > [!NOTE]
-> Si vous configurez les stratégies et appareils MDM Office 365, ces appareils seront affichés sur la page **périphériques** dans le centre d’administration Microsoft 365. Toutes les stratégies que vous configurez apparaîtront dans la liste des stratégies classiques dans le [portail Intune](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
+> Si vous avez installé des stratégies et des appareils de gestion des appareils mobiles Office 365, ces appareils sont répertoriés dans la **page** Appareils du Centre d’administration Microsoft 365. Toutes les stratégies que vous avez définies s’afficheront dans la liste des stratégies classiques dans [le portail Intune.](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)
 
 Une fois que vous avez attribué des licences à Microsoft 365 Business Premium, vous pouvez commencer à protéger les appareils et les fichiers des utilisateurs.
 
-Si vous avez mis à niveau tous les membres de votre organisation vers Microsoft 365 Business Premium, l’Assistant installation s’affiche sur la page d’accueil et vous pouvez suivre les étapes de configuration de [microsoft 365 Business Premium dans l’Assistant de configuration](set-up.md) pour protéger les fichiers et les appareils mobiles.
+Si vous avez mis à niveau tous les membres de votre organisation vers Microsoft 365 Business Premium, vous verrez l’Assistant Configuration sur la page d’accueil et pouvez suivre la procédure Configurer [Microsoft 365 Business Premium](set-up.md) dans les étapes de l’Assistant Configuration pour protéger les fichiers et les appareils mobiles.
 
-Vous pouvez également effectuer ces étapes dans la page périphériques :
+Vous pouvez également effectuer ces étapes dans la page Appareils :
   
-1. Dans le centre d’administration, dans le volet de navigation de gauche, accédez à stratégies de **périphériques** \> **Policies**.
+1. Dans le centre d’administration, dans le navigation gauche, allez à **Stratégies des** \> **appareils.**
     
-2. Sur la page **stratégies d’appareil** , sélectionnez **Ajouter**.
+2. Dans la page **Stratégies d’appareil,** choisissez **Ajouter.**
     
-3. Dans le volet **Ajouter une stratégie** , donnez un nom à la stratégie, puis choisissez un type de **stratégie** dans la liste déroulante. 
+3. Dans le **volet Ajouter une** stratégie, donnez un nom à la stratégie, puis choisissez un **type** de stratégie dans la zone de la zone de baisse. 
     
-     Vous pouvez configurer des stratégies d’application pour protéger les fichiers sur les appareils Android et iPhone, ainsi que Windows 10, et vous pouvez configurer des stratégies de configuration d’appareil pour les appareils Windows 10 appartenant à une société. Pour plus d’informations, consultez les liens suivants :
+     Vous pouvez configurer des stratégies d’application pour la protection des fichiers sur les appareils Android et iPhone, ainsi que Windows 10, et vous pouvez configurer des stratégies de configuration d’appareil pour les appareils Windows 10 d’entreprise. Pour plus d’informations, voir les liens suivants :
     
   - [Définir les paramètres de protection des applications pour les appareils Android ou iOS](app-protection-settings-for-android-and-ios.md)
     
@@ -109,21 +109,21 @@ Vous pouvez également effectuer ces étapes dans la page périphériques :
     
   - [Définir les paramètres de protection des appareils pour les PC Windows 10](protection-settings-for-windows-10-pcs.md)
   
-4. Une fois que vous avez configuré les stratégies, vous et vos employés pouvez configurer des appareils :
+4. Une fois les stratégies définies, vous et vos employés pouvez configurer des appareils :
     
-  - Consultez la rubrique [configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md) pour connaître les étapes des appareils Windows. 
+  - Voir [Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md) pour obtenir la procédure à suivre pour les appareils Windows. 
     
-  - Consultez la rubrique [configurer des appareils mobiles pour les utilisateurs de Microsoft 365 Business Premium](set-up-mobile-devices.md) pour connaître les étapes des téléphones Android et des iPhone. 
+  - Voir Configurer des appareils mobiles pour [les utilisateurs de Microsoft 365 Business Premium](set-up-mobile-devices.md) pour obtenir la procédure pour les téléphones et iPhone Android. 
   
 ### <a name="mailbox-size"></a>Taille de la boîte aux lettres
 
-Microsoft 365 Business Premium dispose d’une limite de stockage de 50 Go car elle utilise Exchange Online plan 1. Lors de la migration vers Microsoft 365 Business Premium, si l’un de vos utilisateurs dépasse 50 Go de stockage de boîte aux lettres, il est recommandé d’attribuer à cet utilisateur un plan Exchange Online 2 et de supprimer Exchange Online plan 1 car il n’est pas possible de l’attribuer.
+Microsoft 365 Business Premium a une limite de stockage de 50 Go car il utilise Exchange Online Plan 1. Lors de la migration vers Microsoft 365 Business Premium, si l’un de vos utilisateurs dépasse 50 Go de stockage de boîtes aux lettres, il est recommandé d’affecter à cet utilisateur un plan Exchange Online 2 et de supprimer l’offre Exchange Online Plan 1, car il n’est pas possible d’affecter les deux.
 
 
 ### <a name="threat-protection"></a>Protection contre les menaces
 
-Après la migration vers Microsoft 365 Business Premium, vous disposez de Defender pour Office 365. Reportez-vous à [Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) pour obtenir une vue d’ensemble. Pour configurer, reportez-vous à la rubrique [configurer des liens fiables](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [configurer des pièces jointes fiables](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)et [configurer l’anti-hameçonnage dans Defender pour Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+Après avoir migré vers Microsoft 365 Business Premium, vous avez Defender pour Office 365. Consultez [Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) pour obtenir une vue d’ensemble. Pour configurer, voir [configurer](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)des liens sécurisés, configurer des pièces [jointes sécurisées](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)et configurer l’anti-hameçonnage dans [Defender pour Office 365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-Pour commencer à utiliser les étiquettes de confidentialité, voir [vue d’ensemble des étiquettes de sensibilité](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) et [créer et gérer des étiquettes de confidentialité](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) vidéo.
+Pour commencer à utiliser des étiquettes de sensibilité, voir [Vue](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) d’ensemble des étiquettes de sensibilité et créer et gérer la vidéo sur [les étiquettes de](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) sensibilité.

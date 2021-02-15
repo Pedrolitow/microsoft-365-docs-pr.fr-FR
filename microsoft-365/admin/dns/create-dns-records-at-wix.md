@@ -1,5 +1,5 @@
 ---
-title: Créer des enregistrements DNS auprès de WiX pour Microsoft
+title: Créer des enregistrements DNS sur Wix pour Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services chez WiX pour Microsoft.
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services via Wix pour Microsoft.
 ms.openlocfilehash: 01317f7e2da87b532c93f12269fd65b7d4fe2dd6
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -28,25 +28,25 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49656878"
 ---
-# <a name="create-dns-records-at-wix-for-microsoft"></a>Créer des enregistrements DNS auprès de WiX pour Microsoft
+# <a name="create-dns-records-at-wix-for-microsoft"></a>Créer des enregistrements DNS sur Wix pour Microsoft
 
 **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-Si WiX est votre fournisseur d’hébergement DNS, suivez la procédure décrite dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online, etc.
+Si Wix est votre fournisseur d’hébergement DNS, suivez les étapes de cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc.
 
 Voici les principaux enregistrements à ajouter. 
   
-- [Ajoutez un enregistrement txt à des fins de vérification](#add-a-txt-record-for-verification).
+- [Ajoutez un enregistrement TXT à des fins de vérification.](#add-a-txt-record-for-verification)
     
-- [Ajoutez un enregistrement MX afin que les messages électroniques pour votre domaine soient envoyés à Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft).
+- [Ajoutez un enregistrement MX afin que le courrier électronique de votre domaine soit envoyé à Microsoft.](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Ajoutez les cinq enregistrements CNAME requis pour Microsoft](#add-the-five-cname-records-that-are-required-for-microsoft).
+- [Ajoutez les cinq enregistrements CNAME requis pour Microsoft.](#add-the-five-cname-records-that-are-required-for-microsoft)
     
-- [Ajoutez un enregistrement txt pour SPF afin d’éviter le courrier indésirable](#add-a-txt-record-for-spf-to-help-prevent-email-spam).
+- [Ajoutez un enregistrement TXT pour SPF pour éviter le courrier indésirable.](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Ajoutez les deux enregistrements SRV requis pour Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft).
+- [Ajoutez les deux enregistrements SRV requis pour Microsoft.](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Une fois que vous avez ajouté ces enregistrements à WiX, votre domaine est configuré pour utiliser les services Microsoft.
+Une fois ces enregistrements ajoutés sur Wix, votre domaine est installé pour fonctionner avec les services Microsoft.
   
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -61,13 +61,13 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
 
 > [!NOTE]
-> WIX ne prend pas en charge les entrées DNS pour les sous-domaines.
+> WIX ne prend pas en charge les entrées DNS pour les sous-domaine.
   
-1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
+1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
     
-2. Sur la page **Mes domaines** , dans la zone **avancé** , sélectionnez le bouton **modifier le DNS** . 
+2. Dans la page **Mes domaines,** dans la **zone** Avancé, sélectionnez le bouton **Modifier le DNS.** 
     
-3. Sélectionnez **+ Ajouter un autre** dans la ligne **txt (texte)** de l’éditeur DNS. 
+3. Sélectionnez **+ Ajoutez-en** une autre dans la ligne **TXT (texte)** de l’éditeur DNS. 
     
 4. In the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -76,7 +76,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
    | Nom d’hôte <br/> | TXT Value <br/> | TTL (Durée de vie) <br/> |
    |Rempli automatiquement  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure <br/> |          |
    
-5. Sélectionnez le bouton **enregistrer le DNS** en haut de l’éditeur DNS. 
+5. Sélectionnez **le bouton Enregistrer DNS** en haut de l’éditeur DNS. 
     
 6. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
@@ -99,37 +99,37 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Microsoft
 <a name="BKMK_mx"> </a>
 
-1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
+1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
     
-2. Sur la page **Mes domaines** , dans la zone **boîtes aux lettres** , sélectionnez le lien **configurer votre enregistrement MX** . 
+2. Dans la page **Mes domaines,** dans la zone **Boîtes** aux lettres, sélectionnez le lien Configurer vos enregistrements **MX.** 
     
-3. Sélectionnez **autre** dans la liste déroulante **votre fournisseur de messagerie** . 
+3. Choisissez **Autre dans** la **liste** de listes de votre fournisseur de messagerie. 
     
-4. Sélectionnez **+ Ajouter un autre**.
+4. Sélectionnez **+ Ajoutez-en un autre.**
     
-5. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
+5. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
     
    | Nom d’hôte | Points to  | Priority (Priorité) | TTL (Durée de vie) |
    |:-----|:-----|:-----|:-----|
-   |Rempli automatiquement <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre  *\<domain-key\>*  à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). | 1 heure|
+   |Rempli automatiquement <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). | 1 heure|
    
-6. Si d’autres enregistrements MX sont répertoriés, supprimez-les chacun. 
+6. Si d’autres enregistrements MX sont répertoriés, supprimez chacun d’eux. 
     
 7. Sélectionnez **OK**.
     
-8. Dans la boîte de dialogue de confirmation, sélectionnez **OK**.
+8. Dans la boîte de dialogue de confirmation, sélectionnez **OK.**
     
     
 ## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Ajouter les cinq enregistrements CNAME requis pour Microsoft
 <a name="BKMK_cname"> </a>
 
-1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to login first.
+1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to login first.
     
-2. Sur la page **Mes domaines** , dans la zone **avancé** , sélectionnez le bouton **modifier le DNS** . 
+2. Dans la page **Mes domaines,** dans la **zone** Avancé, sélectionnez le bouton **Modifier le DNS.** 
     
-3. Sélectionnez **+ Ajouter un autre** dans la ligne **CNAME (alias)** de l’éditeur DNS pour chaque enregistrement CNAME. 
+3. Sélectionnez **+ Ajouter un autre** dans la ligne **CNAME (Alias)** de l’éditeur DNS pour chaque enregistrement CNAME. 
     
-4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
+4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
     
    | Nom d’hôte | Points to  | Durée de vie |
    |:-----|:-----|:-----|
@@ -139,7 +139,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
    |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 heure <br/> |
    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 Hour  <br/> |
    
-5. Sélectionnez le bouton **enregistrer le DNS** en haut de l’éditeur DNS. 
+5. Sélectionnez **le bouton Enregistrer DNS** en haut de l’éditeur DNS. 
     
 6. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
@@ -148,21 +148,21 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs.  
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un seul  *enregistrement*  SPF qui inclut les deux ensembles de valeurs.  
   
-1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
+1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
     
-2. Sur la page **Mes domaines** , dans la zone **avancé** , sélectionnez le bouton **modifier le DNS** . 
+2. Dans la page **Mes domaines,** dans la **zone** Avancé, sélectionnez le bouton **Modifier le DNS.** 
     
-3. Sélectionnez **+ Ajouter un autre** dans la ligne **txt (texte)** de l’éditeur DNS. 
+3. Sélectionnez **+ Ajoutez-en** une autre dans la ligne **TXT (texte)** de l’éditeur DNS. 
     
-4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
+4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
     
    | Nom d’hôte | TXT Value | TTL (Durée de vie) |
    |:-----|:-----|:-----|
-   |[Laissez ce champ vide]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.<br/> |TXT  <br/> | 1 Hour |
+   |[laissez ce vide]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.<br/> |TXT  <br/> | 1 Hour |
    
-5. Sélectionnez le bouton **enregistrer le DNS** en haut de l’éditeur DNS. 
+5. Sélectionnez **le bouton Enregistrer DNS** en haut de l’éditeur DNS. 
     
 6. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
@@ -170,20 +170,20 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajoutez les deux enregistrements SRV requis pour Microsoft
 <a name="BKMK_srv"> </a>
 
-1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
+1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
     
-2. Sur la page **Mes domaines** , dans la zone **avancé** , sélectionnez le bouton **modifier le DNS** . 
+2. Dans la page **Mes domaines,** dans la **zone** Avancé, sélectionnez le bouton **Modifier le DNS.** 
     
-3. Sélectionnez **+ Ajouter un autre** dans la ligne **SRV** de l’éditeur DNS. 
+3. Sélectionnez **+ Ajoutez-en** une autre dans la **ligne SRV** de l’éditeur DNS. 
     
-4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
+4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
     
    | Service | Protocole | Nom | Pondération | Port | Target | Priority (Priorité) | TTL (Durée de vie) |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
    |sip  |tls  |Rempli automatiquement |1   |443   |sipdir.online.lync.com |100 |1 Hour |
    |sipfed|tcp |Rempli automatiquement|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
-5. Sélectionnez le bouton **enregistrer le DNS** en haut de l’éditeur DNS. 
+5. Sélectionnez **le bouton Enregistrer DNS** en haut de l’éditeur DNS. 
     
 6. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     

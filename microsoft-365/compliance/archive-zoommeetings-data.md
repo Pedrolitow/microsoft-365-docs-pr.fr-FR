@@ -1,5 +1,5 @@
 ---
-title: Configuration d’un connecteur pour l’archivage des données de réunions zoom dans Microsoft 365
+title: Configurer un connecteur pour archiver les données de zoom des réunions dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de réunions zoom Globanet dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Globanet Zoom Meetings dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
 ms.openlocfilehash: c61c9a40d85b3bea266df9b1f2dba32301e54e08
 ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
@@ -19,84 +19,84 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2020
 ms.locfileid: "49620200"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configuration d’un connecteur pour l’archivage des données de réunions zoom
+# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configurer un connecteur pour archiver les données de Zoom Meetings
 
-Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir de réunions de zoom vers des boîtes aux lettres utilisateur dans votre organisation Microsoft 365. Globanet fournit un connecteur de [réunions avec zoom](https://globanet.com/zoom/) qui est configuré pour capturer des éléments à partir de la source de données tierce (de manière régulière) et les importer dans Microsoft 365. Le connecteur convertit le contenu des réunions (y compris les conversations, les fichiers enregistrés et les métadonnées) du compte de réunions zoom en un format de message électronique, puis importe ces éléments dans les boîtes aux lettres utilisateur dans Microsoft 365.
+Utilisez un connecteur Globanet dans le Centre de conformité Microsoft 365 pour importer et archiver des données de Réunions Zoom vers les boîtes aux lettres des utilisateurs de votre organisation Microsoft 365. Globanet fournit un connecteur [Zoom Meetings](https://globanet.com/zoom/) qui est configuré pour capturer des éléments à partir de la source de données tierce (régulièrement) et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu des réunions (y compris les conversations, les fichiers enregistrés et les métadonnées) du compte Zoom Meetings au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
 
-Une fois le zoom sur les données de réunions stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies de rétention et les étiquettes de rétention et la conformité des communications L’utilisation d’un connecteur de réunions zoom pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois que les données Zoom Meetings sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Zoom Meetings pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
-## <a name="overview-of-archiving-zoom-meetings-data"></a>Vue d’ensemble des données de réunions zoom sur l’archivage
+## <a name="overview-of-archiving-zoom-meetings-data"></a>Vue d’ensemble de l’archivage des données de zoom des réunions
 
-La vue d’ensemble suivante décrit le processus d’utilisation d’un connecteur pour archiver des données de réunions zoom dans Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données Zoom Meetings dans Microsoft 365.
 
-![Flux de travail d’archivage des réunions zoom](../media/ZoomMeetingsConnectorWorkflow.png)
+![Zoomer le flux de travail d’archivage des réunions](../media/ZoomMeetingsConnectorWorkflow.png)
 
-1. Votre organisation travaille avec des réunions zoom pour installer et configurer un site de réunions zoom.
+1. Votre organisation travaille avec Zoom Meetings pour configurer un site Zoom Meetings.
 
-2. Une fois toutes les 24 heures, les éléments de réunion provenant de réunions de zoom sont copiés sur le site Globanet Merge1. Le connecteur convertit également le contenu des réunions au format d’un message électronique.
+2. Une fois toutes les 24 heures, les éléments de réunion de Zoom Meetings sont copiés sur le site Globanet Merge1. Le connecteur convertit également le contenu des réunions au format de message électronique.
 
-3. Le connecteur de réunions de zoom que vous créez dans le centre de conformité 365 de Microsoft, se connecte au Merge1 Globanet tous les jours et transfère les messages de réunion vers un emplacement de stockage Azure sécurisé dans le Cloud Microsoft.
+3. Le connecteur Zoom Meetings que vous créez dans le Centre de conformité Microsoft 365, se connecte à Globanet Merge1 tous les jours et transfère les messages de réunion vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments de réunion convertis dans les boîtes aux lettres d’utilisateurs spécifiques en utilisant la valeur de la propriété *email* et le mappage utilisateur automatique, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier boîte de réception nommé **réunions de zoom** est créé dans les boîtes aux lettres utilisateur, et les éléments de réunion sont importés dans ce dossier. Le connecteur effectue cette opération à l’aide de la valeur de la propriété *email* . Chaque élément de réunion contient cette propriété, qui est renseignée avec l’adresse de messagerie de chaque participant de la réunion.
+4. Le connecteur importe les éléments de réunion convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* et du mappage automatique des utilisateurs, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier Boîte de réception nommé Réunions avec zoom est créé dans les boîtes aux lettres des **utilisateurs** et les éléments de réunion sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque élément de réunion contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de la réunion.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Créez un compte Globanet Merge1 pour Microsoft Connectors. Pour créer ce compte, contactez le [support client Globanet](https://globanet.com/ms-connectors-contact). Vous vous connecterez à ce compte lors de la création du connecteur à l’étape 1.
+- Créez un compte Globanet Merge1 pour les connecteurs Microsoft. Pour créer ce compte, contactez le support [technique Globanet.](https://globanet.com/ms-connectors-contact) Vous vous connectez à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- Obtenir le nom d’utilisateur et le mot de passe du compte d’entreprise zoom ou zoom de votre organisation. Vous devrez vous connecter à ce compte à l’étape 2 lorsque vous configurez le connecteur de réunions zoom.
+- Obtenez le nom d’utilisateur et le mot de passe du compte Zoom Entreprise ou Zoom Entreprise de votre organisation. Vous devez vous inscrire à ce compte à l’étape 2 lorsque vous configurez le connecteur Zoom Meetings.
 
-- Créez les applications suivantes dans le [marché du zoom](https://marketplace.zoom.us):
+- Créez les applications suivantes dans [Zoom Marketplace](https://marketplace.zoom.us):
 
   - Application OAuth
 
   - Application JWT
 
-  Une fois ces applications créées, la plateforme de zoom génère un ensemble d’informations d’identification uniques utilisées pour générer les jetons. Ces jetons sont utilisés pour authentifier le connecteur lorsqu’il se connecte à votre compte de zoom et copie des éléments sur le site Merge1. Vous utiliserez ces jetons lors de la configuration du connecteur de zoom à l’étape 2.
+  Après avoir créé ces applications, la plateforme Zoom génère un ensemble d’informations d’identification uniques utilisées pour générer les jetons. Ces jetons sont utilisés pour authentifier le connecteur lorsqu’il se connecte à votre compte Zoom et copie les éléments sur le site Merge1. Vous utiliserez ces jetons lorsque vous configurerez le connecteur Zoom à l’étape 2.
 
-  Pour obtenir des instructions pas à pas sur la création des applications OAuth et JWT, consultez le Guide de l' [utilisateur des connecteurs tiers Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
+  Pour obtenir des instructions détaillées sur la création des applications OAuth et JWT, consultez le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
-- L’utilisateur qui crée le connecteur de réunions zoom à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Ce rôle est nécessaire pour ajouter des connecteurs sur la page **connecteurs de données** dans le centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas affecté à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
+- L’utilisateur qui crée le connecteur Zoom Meetings à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
 
-## <a name="step-1-set-up-the-zoom-meetings-connector"></a>Étape 1 : configurer le connecteur de réunions zoom
+## <a name="step-1-set-up-the-zoom-meetings-connector"></a>Étape 1 : Configurer le connecteur Zoom Meetings
 
-La première étape consiste à accéder aux **connecteurs de données** dans le centre de conformité Microsoft 365 et à créer un connecteur de réunions zoom.
+La première étape consiste à accéder aux **connecteurs** de données dans le Centre de conformité Microsoft 365 et à créer un connecteur Zoom Meetings.
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) , puis cliquez sur les **connecteurs de données** zoom sur les  >  **réunions**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click Data **connectors**  >  **Zoom Meetings**.
 
-2. Dans la page zoom sur les **réunions des réunions** , cliquez sur Ajouter un **connecteur**.
+2. Dans la page de description du produit Zoom **Meetings,** cliquez **sur Ajouter un connecteur.**
 
-3. Sur la page **conditions de service** , cliquez sur **accepter**.
+3. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
-4. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **suivant**.
+4. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**.
 
 5. Connectez-vous à votre compte Merge1 pour configurer le connecteur.
 
-## <a name="step-2-configure-the-zoom-meetings-connector"></a>Étape 2 : configurer le connecteur de réunions zoom
+## <a name="step-2-configure-the-zoom-meetings-connector"></a>Étape 2 : Configurer le connecteur Zoom Meetings
 
-La deuxième étape consiste à configurer le connecteur de réunions zoom sur le site Merge1. Pour plus d’informations sur la configuration du connecteur de réunions zoom sur le site Merge1 Globanet, voir Merge1 le Guide de l' [utilisateur des connecteurs tiers](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur Zoom Meetings sur le site Merge1. Pour plus d’informations sur la configuration du connecteur Zoom Meetings sur le site Globanet Merge1, voir [merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
-Une fois que vous avez cliqué sur **enregistrer & terminer**, la page de **mappage utilisateur** de l’Assistant connecteur dans le centre de conformité Microsoft 365 s’affiche.
+Une fois que vous avez **cliqué sur Enregistrer & terminé,** la **page** Mappage de l’utilisateur dans l’Assistant Connecteur dans le Centre de conformité Microsoft 365 s’affiche.
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : mapper les utilisateurs et terminer l’installation du connecteur
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : Masons les utilisateurs et terminez la configuration du connecteur
 
-1. Sur la page **connecter des utilisateurs externes à des utilisateurs de Microsoft 365** , activez le mappage utilisateur automatique.
+1. Dans la page Ma mappage des utilisateurs externes aux utilisateurs **de Microsoft 365,** activez le mappage automatique des utilisateurs.
 
-   Zoom les éléments de réunion incluent une propriété appelée *courrier électronique* qui contient des adresses de messagerie pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur de Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+   Les éléments Zoom Meetings incluent une propriété appelée *Email* qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
-2. Cliquez sur **suivant**, vérifiez vos paramètres, puis accédez à la page **connecteurs de données** pour voir la progression du processus d’importation pour le nouveau connecteur.
+2. Cliquez **sur** Suivant, examinez vos paramètres et allez à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
 
-## <a name="step-4-monitor-the-zoom-meetings-connector"></a>Étape 4 : Surveillez le lien zoom sur les réunions
+## <a name="step-4-monitor-the-zoom-meetings-connector"></a>Étape 4 : Surveiller le connecteur Zoom Meetings
 
-Une fois que vous avez créé le connecteur de réunions zoom, vous pouvez afficher l’état du connecteur dans le centre de conformité Microsoft 365.
+Après avoir créé le connecteur Zoom Meetings, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
-2. Cliquez sur l’onglet **connecteurs** , puis sélectionnez le connecteur zoom sur les **réunions** pour afficher la page de menu volant. Cette page contient les propriétés et les informations relatives au connecteur.
+2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur **Zoom Réunions** pour afficher la page volante. Cette page contient les propriétés et les informations sur le connecteur.
 
-3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’État du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le Cloud Microsoft.
+3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft.
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
 
-- Pour que le connecteur de réunions avec zoom fonctionne, vous devez activer les enregistrements lors de la configuration des réunions zoom.
+- Pour que le connecteur Zoom Meetings fonctionne, vous devez activer les enregistrements lors de la configuration de Zoom Meetings.

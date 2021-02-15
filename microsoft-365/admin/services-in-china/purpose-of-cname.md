@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX
-description: Pour plus d’informations sur l’enregistrement CNAMe « MSOID » dans Office 365 qui vous dirige vers le meilleur serveur pour les processus d’authentification, vous allez obtenir une réponse plus rapide.
+description: En savoir plus sur l’enregistrement CNAME « MSOID » dans Office 365 qui vous dirige vers le meilleur serveur pour les processus d’authentification, afin que vous receviez une réponse plus rapide.
 monikerRange: o365-21vianet
 ms.openlocfilehash: aea04391768993c40978d94b50817244cd77405c
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
@@ -31,7 +31,7 @@ ms.locfileid: "49655483"
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
 > [!NOTE]
-> Le code suivant s’applique uniquement à * * Office 365 géré par 21Vianet.
+> L’exemple suivant s’applique uniquement à **Office 365 géré par 21Vianet.
   
 Vous vous demandez peut-être pourquoi vous devez ajouter l'enregistrement CNAME « MSOID » dans Office 365. Cet enregistrement doit être ajouté pour tous les domaines personnalisés, quel que soit l'abonnement que vous utilisez. Pourquoi en avez-vous besoin ? Il s'agit d'un aspect un peu technique. Grosso modo, cet enregistrement vous permet d'être redirigé vers le meilleur serveur pour certains processus d'authentification, afin de recevoir une réponse plus rapide.
   
@@ -39,10 +39,10 @@ Informations techniques : lorsque vous exécutez une application cliente compati
   
 Si cet enregistrement CNAME est manquant pour votre domaine, ces applications utiliseront un point de terminaison d'authentification par défaut aux États-Unis, ce qui peut ralentir le processus d'authentification. Si cet enregistrement CNAME n'est pas correctement configuré (par exemple, si la valeur **Adresse de pointage** inclut une coquille), ces applications ne pourront pas s'authentifier.
   
- **Si Office 365 gère les enregistrements DNS de votre domaine,** Office 365 configure cet enregistrement CNAMe pour vous. 
+ **Si Office 365 gère les enregistrements DNS** de votre domaine, Office 365 définit cet enregistrement CNAME pour vous. 
   
- **Si vous gérez des enregistrements DNS pour votre domaine au niveau de votre hôte DNS,** vous pouvez créer cet enregistrement vous-même en [suivant les instructions de votre hôte DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+ Si vous gérez des enregistrements DNS pour votre domaine sur votre hôte **DNS,** vous créez cet enregistrement vous-même en suivant les instructions pour votre hôte [DNS.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
   
-Si vous planifiez un déploiement d’Office 365 et que vous souhaitez en savoir plus sur tous les enregistrements DNS que vous aurez peut-être besoin d’ajouter ou de mettre à jour, lisez les informations à ce sujet dans la [référence : enregistrements DNS externes pour Office 365](https://go.microsoft.com/fwlink/?LinkId=579013).
+Si vous planifiez un déploiement Office 365 et que vous souhaitez en savoir plus sur tous les enregistrements DNS que vous devrez peut-être ajouter ou mettre à jour, lisez-les dans Référence : Enregistrements du système de noms de domaine externe pour [Office 365.](https://go.microsoft.com/fwlink/?LinkId=579013)
   
 

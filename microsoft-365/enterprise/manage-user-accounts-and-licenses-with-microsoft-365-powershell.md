@@ -28,7 +28,7 @@ ms.locfileid: "49371535"
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les administrateurs de Microsoft 365 doivent gérer les comptes d’utilisateur, les licences et les groupes. Bien que vous puissiez effectuer la plupart de ces tâches dans le centre d’administration 365 de Microsoft, certains sont plus faciles à utiliser dans PowerShell.
+Les administrateurs Microsoft 365 doivent gérer les comptes d’utilisateur, les licences et les groupes. Bien que vous pouvez effectuer la plupart de ces tâches dans le Centre d’administration Microsoft 365, certaines sont plus faciles à effectuer dans PowerShell.
 
 Pour plus d'informations, consultez les articles suivants :
 
@@ -54,5 +54,5 @@ Pour plus d'informations, consultez les articles suivants :
 
 ## <a name="groups"></a>Groupes
 - [Gérer les groupes de sécurité](manage-security-groups-with-microsoft-365-powershell.md)
-- [Tenir à jour l’appartenance au groupe de sécurité](maintain-group-membership-with-microsoft-365-powershell.md)
+- [Conservation de l’adhésion au groupe de sécurité](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Gestion des groupes Microsoft 365](manage-microsoft-365-groups-with-powershell.md)

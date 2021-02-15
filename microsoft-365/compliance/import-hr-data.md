@@ -13,7 +13,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés depuis le système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
+description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés du système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités par des utilisateurs spécifiques qui peuvent poser une menace interne pour votre organisation.
 ms.openlocfilehash: 756851b848822fa801493b2832368ccb2a1a0b51
 ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
@@ -23,60 +23,60 @@ ms.locfileid: "49620240"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
-Vous pouvez configurer un connecteur de données dans le centre de conformité Microsoft 365 afin d’importer des données de ressources humaines (RH) liées à des événements tels que la démission d’un utilisateur ou un changement de niveau de travail d’un utilisateur. Les données RH peuvent ensuite être utilisées par la [solution de gestion des risques inSided](insider-risk-management.md) pour générer des indicateurs de risque qui peuvent vous aider à identifier les activités malveillantes potentielles ou les vols de données par les utilisateurs au sein de votre organisation.
+Vous pouvez configurer un connecteur de données dans le Centre de conformité Microsoft 365 pour importer des données de ressources humaines (RH) liées à des événements tels que la famille d’un utilisateur ou un changement dans le niveau de travail d’un utilisateur. Les données RH peuvent ensuite être utilisées par la [solution](insider-risk-management.md) de gestion des risques internes pour générer des indicateurs de risque qui peuvent vous aider à identifier les activités malveillantes possibles ou le vol de données par les utilisateurs au sein de votre organisation.
 
-Configuration d’un connecteur pour les données RH que les stratégies de gestion des risques internes peuvent utiliser pour générer des indicateurs de risque consistent en la création d’un fichier CSV contenant les données RH. création d’une application dans Azure Active Directory utilisée pour l’authentification, la création d’un connecteur de données RH dans le centre de conformité Microsoft 365, puis l’exécution d’un script (planifié de manière planifiée) qui informe les données RH dans des fichiers CSV vers le Cloud Microsoft afin qu’elle soit disponible pour les Insiders solution de gestion des risques.
+La configuration d’un connecteur pour les données RH que les stratégies de gestion des risques internes peuvent utiliser pour générer des indicateurs de risque consiste à créer un fichier CSV qui contient les données RH, à créer une application dans Azure Active Directory utilisée pour l’authentification, à créer un connecteur de données RH dans le Centre de conformité Microsoft 365, puis à l’exécution d’un script (sur une base programmée) qui insérez les données RH dans les fichiers CSV dans le cloud Microsoft afin de les mettre à la disposition des insiders. solution de gestion des risques.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Déterminer les scénarios et les données RH à importer vers Microsoft 365. Cela vous permettra de déterminer le nombre de fichiers CSV et de connecteurs RH à créer, ainsi que la façon de générer et de structurer les fichiers CSV. Les données RH que vous importez sont déterminées par les stratégies de gestion des risques Insider que vous souhaitez mettre en œuvre. Pour plus d’informations, reportez-vous à l’étape 1.
+- Déterminez les scénarios rh et les données à importer dans Microsoft 365. Cela vous aidera à déterminer le nombre de fichiers CSV et de connecteurs RH que vous devrez créer, ainsi que la façon de générer et structurer les fichiers CSV. Les données RH que vous importez sont déterminées par les stratégies de gestion des risques internes que vous souhaitez implémenter. Pour plus d’informations, voir l’étape 1.
 
-- Déterminez comment récupérer ou exporter les données à partir du système RH de votre organisation (et de manière régulière) et les ajouter aux fichiers CSV que vous créez à l’étape 1. Le script que vous exécutez à l’étape 4 télécharge les données RH dans les fichiers CSV vers le Cloud Microsoft.
+- Déterminez comment récupérer ou exporter les données à partir du système RH de votre organisation (et régulièrement) et ajoutez-les aux fichiers CSV que vous créez à l’étape 1. Le script que vous exécutez à l’étape 4 charge les données RH des fichiers CSV dans le cloud Microsoft.
 
-- L’utilisateur qui crée le connecteur RH à l’étape 3 doit se voir attribuer le rôle importation/exportation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
+- L’utilisateur qui crée le connecteur RH à l’étape 3 doit avoir le rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
 
-- L’exemple de script que vous exécutez à l’étape 4 télécharge vos données RH dans le Cloud Microsoft afin qu’elles puissent être utilisées par la solution de gestion des risques Insiders. Cet exemple de script n’est pas pris en charge dans les services ou programmes de support standard Microsoft. L’exemple de script est fourni en l’État sans aucune garantie. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. L’ensemble des risques liés à l’utilisation ou aux performances de l’exemple de script et de la documentation reste avec vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison des scripts ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
+- L’exemple de script que vous exécutez à l’étape 4 charge vos données RH dans le cloud Microsoft afin qu’elles soient utilisées par la solution de gestion des risques internes. Cet exemple de script n’est pas pris en charge dans le cadre d’un programme ou d’un service de support standard Microsoft. L’exemple de script est fourni tel quel, sans garantie d’aucune sorte. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. La totalité des risques découlant de l’utilisation ou de la performance de l’exemple de script et de la documentation repose sur vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison des scripts ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
-## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Étape 1 : préparer un fichier CSV avec vos données RH
+## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Étape 1 : Préparer un fichier CSV avec vos données RH
 
-La première étape consiste à créer un fichier CSV qui contient les données RH importées par le connecteur vers Microsoft 365. Ces données seront utilisées par la solution Risk Insider pour générer des indicateurs de risque potentiels. Les données pour les scénarios de RH suivants peuvent être importées dans Microsoft 365 :
+La première étape consiste à créer un fichier CSV qui contient les données RH que le connecteur importera dans Microsoft 365. Ces données seront utilisées par la solution à risque interne pour générer des indicateurs de risque potentiels. Les données des scénarios RH suivants peuvent être importées dans Microsoft 365 :
 
-- Retrait d’un employé. Informations sur les utilisateurs qui ont quitté votre organisation.
+- Employé. Informations sur les utilisateurs qui ont quitté votre organisation.
 
-- Modifications de niveau de travail. Informations sur les modifications de niveau de travail pour les utilisateurs, telles que les promotions et les rétrogradations.
+- Changements de niveau de travail. Informations sur les changements de niveau de travail pour les utilisateurs, telles que les promotions et rétrogradations.
 
-- Analyse des performances. Informations sur les performances de l’utilisateur.
+- Révisions des performances. Informations sur les performances utilisateur.
 
 - Plans d’amélioration des performances. Informations sur les plans d’amélioration des performances pour les utilisateurs.
 
-Le type de données RH à importer dépend de la stratégie de gestion des risques inSided et du modèle de stratégie correspondant que vous souhaitez mettre en œuvre. Le tableau suivant indique le type de données RH requis pour chaque modèle de stratégie :
+Le type de données RH à importer dépend de la stratégie de gestion des risques internes et du modèle de stratégie correspondant que vous souhaitez implémenter. Le tableau suivant indique le type de données RH requis pour chaque modèle de stratégie :
 
 |  Modèle de stratégie |  Type de données RH |
 |:-----------------------------------------------|:---------------------------------------------------------------------|
-| Vol de données en faisant part des utilisateurs                   | Resignature d’employé                                                 |
-| Fuites de données générales                              | Non applicable                                                        |
-| Fuites de données par les utilisateurs prioritaires                    | Non applicable                                                        |
-| Fuites de données par les utilisateurs mécontents                 | Modifications au niveau des tâches, analyses des performances, plans d’amélioration des performances |
-| Violations de stratégie de sécurité générale              | Non applicable                                                        |
-| Violations de stratégie de sécurité en faisant départion des utilisateurs   | Resignature d’employé                                                 |
-| Violations de stratégie de sécurité par utilisateurs prioritaires    | Non applicable                                                        |
-| Violations de stratégie de sécurité par des utilisateurs mécontents | Modifications au niveau des tâches, analyses des performances, plans d’amélioration des performances |
+| Vol de données par des utilisateurs qui quittent le site                   | Employé employé                                                 |
+| Fuites générales de données                              | Non applicable                                                        |
+| Fuites de données par utilisateurs prioritaires                    | Non applicable                                                        |
+| Fuites de données par des utilisateurs non régrunts                 | Changements de niveau de travail, révisions des performances, plans d’amélioration des performances |
+| Violations générales de la stratégie de sécurité              | Non applicable                                                        |
+| Violations de la stratégie de sécurité par les utilisateurs qui quittent le site   | Employé employé                                                 |
+| Violations de stratégie de sécurité par les utilisateurs prioritaires    | Non applicable                                                        |
+| Violations de stratégie de sécurité par les utilisateurs non résusés | Changements de niveau de travail, révisions des performances, plans d’amélioration des performances |
 | Langage offensant dans les messages électroniques                     | Non applicable                                                        |
 
-Pour plus d’informations sur les modèles de stratégie pour la gestion des risques initiés, consultez la rubrique [stratégies de gestion des risques internes](insider-risk-management-policies.md#policy-templates).
+Pour plus d’informations sur les modèles de stratégie pour la gestion des risques internes, voir [stratégies de gestion des risques internes.](insider-risk-management-policies.md#policy-templates)
 
-Pour chaque scénario de RH, vous devrez fournir les données RH correspondantes dans un ou plusieurs fichiers CSV. Le nombre de fichiers CSV à utiliser pour votre implémentation de gestion des risques inSided est abordé plus loin dans cette section.
+Pour chaque scénario RH, vous devez fournir les données RH correspondantes dans un ou plusieurs fichiers CSV. Le nombre de fichiers CSV à utiliser pour votre implémentation de la gestion des risques internes est abordé plus loin dans cette section.
 
-Après avoir créé le fichier CSV avec les données RH requises, stockez-le sur l’ordinateur local sur lequel vous exécutez le script à l’étape 4. Vous devez également implémenter une stratégie de mise à jour pour vous assurer que le fichier CSV contient toujours les informations les plus récentes afin que ce que vous exécutez le script, les données RH les plus récentes soient téléchargées vers le Cloud Microsoft et accessibles à la solution de gestion des risques Insiders.
+Après avoir créé le fichier CSV avec les données RH requises, stockez-le sur l’ordinateur local sur qui vous exécutez le script à l’étape 4. Vous devez également implémenter une stratégie de mise à jour pour vous assurer que le fichier CSV contient toujours les informations les plus récentes afin que les données RH les plus récentes soient téléchargées vers le cloud Microsoft et accessibles à la solution de gestion des risques internes.
 
 > [!IMPORTANT]
-> Les noms de colonne décrits dans les sections suivantes ne sont pas des paramètres obligatoires, mais uniquement des exemples. Vous pouvez utiliser n’importe quel nom de colonne dans vos fichiers CSV. Toutefois, les noms de colonne que vous utilisez dans un fichier CSV *doivent* être mappés sur le type de données lorsque vous créez le connecteur RH à l’étape 3. Notez également que les exemples de fichiers CSV dans les sections suivantes sont affichés dans le mode bloc-notes. Il est beaucoup plus facile d’afficher et de modifier les fichiers CSV dans Microsoft Excel.
+> Les noms de colonne décrits dans les sections suivantes ne sont pas des paramètres obligatoires, mais uniquement des exemples. Vous pouvez utiliser n’importe quel nom de colonne dans vos fichiers CSV. Toutefois, les noms de colonne que  vous utilisez dans un fichier CSV doivent être mappés au type de données lorsque vous créez le connecteur RH à l’étape 3. Notez également que les exemples de fichiers CSV des sections suivantes sont illustrés en mode Bloc-notes. Il est beaucoup plus facile d’afficher et de modifier des fichiers CSV dans Microsoft Excel.
 
 Les sections suivantes décrivent les données CSV requises pour chaque scénario RH.
 
-### <a name="csv-file-for-employee-resignation-data"></a>Fichier CSV pour les données de démission d’un employé
+### <a name="csv-file-for-employee-resignation-data"></a>Fichier CSV pour les données d’employé
 
-Voici un exemple de fichier CSV pour les données de démission d’un employé.
+Voici un exemple de fichier CSV pour les données d’employé.
 
 ```text
 EmailAddress,ResignationDate,LastWorkingDate
@@ -84,13 +84,13 @@ sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,2019-04-29T15:18:02.4675041+
 pilarp@contoso.com,2019-04-24T09:15:49Z,2019-04-29T15:18:02.7117540
 ```
 
-Le tableau suivant décrit chaque colonne du fichier CSV pour les données de démission d’un employé.
+Le tableau suivant décrit chaque colonne du fichier CSV pour les données d’employé.
 
 |  Colonne   |   Description |
 |:------------|:----------------|
-|**EmailAddress**| Spécifie l’adresse de messagerie (UPN) de l’utilisateur terminé.|
-| **ResignationDate** | Indique la date à laquelle l’emploi de l’utilisateur a été officiellement terminé au sein de votre organisation. Par exemple, il peut s’agir de la date à laquelle l’utilisateur a donné une notification sur la fermeture de votre organisation. Cette date peut être différente de la date du dernier jour de travail de la personne. Utilisez le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **LastWorkingDate** | Spécifie le dernier jour de travail de l’utilisateur terminé. Utilisez le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|**EmailAddress**| Spécifie l’adresse de messagerie (UPN) de l’utilisateur licencié.|
+| **Dateét** | Spécifie la date à laquelle le contrat de travail de l’utilisateur a été officiellement résilié dans votre organisation. Par exemple, il peut s’agit de la date à laquelle l’utilisateur a donné son avis de départ de votre organisation. Cette date peut être différente de la date du dernier jour de travail de la personne. Utilisez le format de date suivant : , qui est le format de date et d’heure `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **LastWorkingDate** | Spécifie le dernier jour de travail de l’utilisateur licencié. Utilisez le format de date suivant : , qui est le format de date et d’heure `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
 ### <a name="csv-file-for-job-level-changes-data"></a>Fichier CSV pour les données de modifications de niveau de travail
@@ -103,18 +103,18 @@ sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 61 – Sr. Manager,Lev
 pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 62 – Director,Level 60- Sr. Manager
 ```
 
-Le tableau suivant décrit chaque colonne du fichier CSV pour les données de modifications de niveau de travail.
+Le tableau suivant décrit chaque colonne du fichier CSV pour les données de modification du niveau de travail.
 
 |  Colonne | Description |
 |:--------- |:------------- |
 | **EmailAddress**  | Spécifie l’adresse de messagerie de l’utilisateur (UPN).|
-| **EffectiveDate** | Indique la date à laquelle le niveau de travail de l’utilisateur a été officiellement modifié. Utilisez le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Remarques**| Spécifie les remarques que l’évaluateur a fournies sur la modification du niveau de travail. Vous pouvez entrer une limite de 200 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
-| **OldLevel**| Spécifie le niveau de travail de l’utilisateur avant sa modification. Il s’agit d’un paramètre de texte libre pouvant contenir une taxonomie hiérarchique pour votre organisation. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
-| **NewLevel**| Spécifie le niveau de travail de l’utilisateur une fois qu’il a été modifié. Il s’agit d’un paramètre de texte libre pouvant contenir une taxonomie hiérarchique pour votre organisation. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
+| **EffectiveDate** | Spécifie la date à laquelle le niveau de travail de l’utilisateur a été officiellement modifié. Utilisez le format de date suivant : , qui est le format de date et d’heure `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Remarques**| Spécifie les remarques que l’évaluateur a fournies sur le changement de niveau de travail. Vous pouvez entrer une limite de 200 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
+| **OldLevel**| Spécifie le niveau de travail de l’utilisateur avant qu’il ne soit modifié. Il s’agit d’un paramètre de texte libre qui peut contenir une taxonomie hiérarchique pour votre organisation. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
+| **NewLevel**| Spécifie le niveau de travail de l’utilisateur après qu’il a été modifié. Il s’agit d’un paramètre de texte libre qui peut contenir une taxonomie hiérarchique pour votre organisation. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
 |||
 
-### <a name="csv-file-for-performance-review-data"></a>Fichier CSV pour les données d’analyse des performances
+### <a name="csv-file-for-performance-review-data"></a>Fichier CSV pour les données d’examen des performances
 
 Voici un exemple de fichier CSV pour les données de performances.
 
@@ -124,14 +124,14 @@ sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,Met expectations but bad att
 pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with the team
 ```
 
-Le tableau suivant décrit chaque colonne du fichier CSV pour les données d’analyse des performances.
+Le tableau suivant décrit chaque colonne du fichier CSV pour les données d’examen des performances.
 
 |  Colonne | Description |
 |:----------|:--------------|
 | **EmailAddress**  | Spécifie l’adresse de messagerie de l’utilisateur (UPN).|
-| **EffectiveDate** | Indique la date à laquelle l’utilisateur a été officiellement informé du résultat de son examen des performances. Il peut s’agir de la date à laquelle le cycle de révision des performances est terminé. Utilisez le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Remarques**| Spécifie les remarques que l’évaluateur a fournies à l’utilisateur pour l’analyse des performances. Il s’agit d’un paramètre de texte d’une limite de 200 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
-| **Rating**| Spécifie l’évaluation fournie pour l’analyse des performances. Il s’agit d’un paramètre de type texte qui peut contenir n’importe quel texte libre que votre organisation utilise pour reconnaître l’évaluation. Par exemple, « 3 Attentes satisfaites » ou « 2 au-dessous de la moyenne ». Il s’agit d’un paramètre de texte d’une limite de 25 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
+| **EffectiveDate** | Spécifie la date à laquelle l’utilisateur a été officiellement informé des résultats de son examen des performances. Il peut s’y trouver la date à laquelle le cycle de révision des performances s’est terminé. Utilisez le format de date suivant : , qui est le format de date et d’heure `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Remarques**| Spécifie les remarques que l’évaluateur a fournies à l’utilisateur pour l’examen des performances. Il s’agit d’un paramètre de texte avec une limite de 200 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
+| **Rating**| Spécifie l’évaluation fournie pour l’examen des performances. Il s’agit d’un paramètre de texte qui peut contenir n’importe quel texte de forme libre que votre organisation utilise pour reconnaître l’évaluation. Par exemple, « 3 satisfait les attentes » ou « 2 en dessous de la moyenne ». Il s’agit d’un paramètre de texte avec une limite de 25 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
 |||
 
 ### <a name="csv-file-for-performance-improvement-plan-data"></a>Fichier CSV pour les données du plan d’amélioration des performances
@@ -144,39 +144,39 @@ sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,Met expectation but bad atti
 pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with the team
 ```
 
-Le tableau suivant décrit chaque colonne du fichier CSV pour les données d’analyse des performances.
+Le tableau suivant décrit chaque colonne du fichier CSV pour les données d’examen des performances.
 
 |  Colonne |  Description |
 |:----------|:---------------|
 | **EmailAddress**  | Spécifie l’adresse de messagerie de l’utilisateur (UPN).|
-| **EffectiveDate** | Indique la date à laquelle l’utilisateur a été officiellement informé de son plan d’amélioration des performances. Vous devez utiliser le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Remarques**| Spécifie les remarques que l’évaluateur a fournies sur le plan d’amélioration des performances. Il s’agit d’un paramètre de texte d’une limite de 200 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV. |
-| **Rating**| Indique toute évaluation ou toute autre information relative à l’analyse des performances. plan d’amélioration des performances. Il s’agit d’un paramètre de type texte qui peut contenir n’importe quel texte de formulaire libre que votre organisation utilise pour reconnaître l’évaluation. Par exemple, « 3 Attentes satisfaites » ou « 2 au-dessous de la moyenne ». Il s’agit d’un paramètre de texte avec une limite de 25 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
+| **EffectiveDate** | Spécifie la date à laquelle l’utilisateur a été officiellement informé de son plan d’amélioration des performances. Vous devez utiliser le format de date suivant : , qui est le format de date et d’heure `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Remarques**| Spécifie les remarques que l’évaluateur a fournies sur le plan d’amélioration des performances. Il s’agit d’un paramètre de texte avec une limite de 200 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV. |
+| **Rating**| Spécifie toute évaluation ou toute autre information liée à l’examen des performances. plan d’amélioration des performances. Il s’agit d’un paramètre de texte qui peut contenir n’importe quel texte de formulaire libre que votre organisation utilise pour reconnaître l’évaluation. Par exemple, « 3 satisfait les attentes » ou « 2 en dessous de la moyenne ». Il s’agit d’un paramètre de texte avec une limite de 25 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
 |||
 
 ### <a name="determining-how-many-csv-files-to-use-for-hr-data"></a>Détermination du nombre de fichiers CSV à utiliser pour les données RH
 
-À l’étape 3, vous pouvez choisir de créer des connecteurs distincts pour chaque type de données RH ou vous pouvez choisir de créer un connecteur unique pour tous les types de données. Vous pouvez utiliser des fichiers CSV distincts qui contiennent des données pour un scénario de RH (comme les exemples de fichiers CSV décrits dans les sections précédentes). Vous pouvez également utiliser un seul fichier CSV contenant des données pour au moins deux scénarios de RH. Voici quelques conseils pour vous aider à déterminer le nombre de fichiers CSV à utiliser pour les données RH.
+À l’étape 3, vous pouvez choisir de créer des connecteurs distincts pour chaque type de données RH ou de créer un connecteur unique pour tous les types de données. Vous pouvez utiliser des fichiers CSV distincts qui contiennent des données pour un scénario RH (comme les exemples de fichiers CSV décrits dans les sections précédentes). Vous pouvez également utiliser un seul fichier CSV qui contient des données pour au moins deux scénarios RH. Voici quelques conseils pour vous aider à déterminer le nombre de fichiers CSV à utiliser pour les données RH.
 
-- Si la stratégie de gestion des risques initiaux que vous souhaitez implémenter nécessite plusieurs types de données RH, envisagez l’utilisation d’un fichier CSV unique qui contient tous les types de données requis.
+- Si la stratégie de gestion des risques internes que vous souhaitez implémenter nécessite plusieurs types de données RH, envisagez d’utiliser un seul fichier CSV qui contient tous les types de données requis.
 
-- La méthode de génération ou de collecte des données RH peut déterminer le nombre de fichiers CSV. Par exemple, si les différents types de données RH utilisés pour configurer un connecteur RH se trouvent dans un seul système DRH de votre organisation, vous pouvez peut-être exporter les données dans un seul fichier CSV. Toutefois, si les données sont réparties sur différents systèmes RH, il peut être plus facile d’exporter des données dans différents fichiers CSV. Par exemple, les données de démission d’un employé peuvent se trouver dans un système de RH différent du niveau de travail ou des données d’analyse des performances. Dans ce cas, il peut être plus facile de disposer de fichiers CSV distincts au lieu de devoir combiner manuellement les données dans un seul fichier CSV. Par conséquent, la façon dont vous récupérez ou exportez des données à partir de vos systèmes RH peut déterminer le nombre de fichiers CSV dont vous aurez besoin.
+- La méthode de génération ou de collecte des données RH peut déterminer le nombre de fichiers CSV. Par exemple, si les différents types de données RH utilisés pour configurer un connecteur RH se trouvent dans un système RH unique dans votre organisation, vous pouvez exporter les données dans un seul fichier CSV. Toutefois, si les données sont distribuées entre différents systèmes RH, il peut être plus facile d’exporter des données vers différents fichiers CSV. Par exemple, les données de l’employé peuvent se trouver dans un système RH différent des données de niveau de travail ou d’examen des performances. Dans ce cas, il peut être plus facile d’avoir des fichiers CSV distincts plutôt que d’avoir à combiner manuellement les données dans un seul fichier CSV. Ainsi, la façon dont vous récupérez ou exportez des données à partir de vos systèmes RH peut déterminer le nombre de fichiers CSV dont vous aurez besoin.
 
-- En règle générale, le nombre de connecteurs RH que vous devrez créer est déterminé par les types de données dans un fichier CSV. Par exemple, si un fichier CSV contient tous les types de données nécessaires à la prise en charge de votre implémentation de gestion des risques Insiders, vous n’avez besoin que d’un seul connecteur RH. Toutefois, si vous avez deux fichiers CSV distincts qui contiennent chacun un seul type de données, vous devez créer deux connecteurs RH. En d’autres exceptions, si vous ajoutez une colonne **HRScenario** à un fichier CSV (voir la section suivante), vous pouvez configurer un connecteur HR unique pouvant traiter différents fichiers CSV.
+- En règle générale, le nombre de connecteurs RH que vous devez créer est déterminé par les types de données dans un fichier CSV. Par exemple, si un fichier CSV contient tous les types de données requis pour prendre en charge votre implémentation de gestion des risques internes, vous n’avez besoin que d’un connecteur RH. Toutefois, si vous avez deux fichiers CSV distincts qui contiennent chacun un seul type de données, vous devez créer deux connecteurs RH. Une exception à cela est que si vous ajoutez une colonne **HRScenario** à un fichier CSV (voir la section suivante), vous pouvez configurer un connecteur RH unique qui peut traiter différents fichiers CSV.
 
 ### <a name="configuring-a-single-csv-file-for-multiple-hr-data-types"></a>Configuration d’un fichier CSV unique pour plusieurs types de données RH
 
-Vous pouvez ajouter plusieurs types de données RH à un seul fichier CSV. Ceci est utile si la solution de gestion des risques Insider que vous implémentez nécessite plusieurs types de données RH ou si les types de données se trouvent dans un seul système DRH de votre organisation. Le fait d’avoir moins de fichiers CSV vous permet toujours d’avoir moins de connecteurs RH à créer et à gérer.
+Vous pouvez ajouter plusieurs types de données RH à un seul fichier CSV. Cela est utile si la solution de gestion des risques internes que vous implémentez nécessite plusieurs types de données RH ou si les types de données se trouvent dans un système RH unique dans votre organisation. Le fait d’avoir moins de fichiers CSV vous permet toujours d’avoir moins de connecteurs RH à créer et à gérer.
 
-Voici les conditions requises pour la configuration d’un fichier CSV avec plusieurs types de données :
+Voici les conditions requises pour configurer un fichier CSV avec plusieurs types de données :
 
 - Vous devez ajouter les colonnes requises (et facultatives si vous les utilisez) pour chaque type de données et le nom de colonne correspondant dans la ligne d’en-tête. Si un type de données ne correspond pas à une colonne, vous pouvez laisser la valeur vide.
 
-- Pour utiliser un fichier CSV avec plusieurs types de données RH, le connecteur RH doit savoir quelles lignes du fichier CSV contiennent les données RH de type. Pour ce faire, vous ajoutez une colonne **HRScenario** supplémentaire dans le fichier CSV. Les valeurs de cette colonne identifient le type de données RH de chaque ligne. Par exemple, les valeurs qui correspondent aux quatre scénarios de RH peuvent être déconseillées \` \` , \` modification du niveau du travail \` , examen des \` performances \` et plan d' \` amélioration des performances \` .
+- Pour utiliser un fichier CSV avec plusieurs types de données RH, le connecteur RH doit savoir quelles lignes du fichier CSV contiennent quel type de données RH. Pour ce faire, ajoutez une colonne **HRScenario** supplémentaire au fichier CSV. Les valeurs de cette colonne identifient le type de données RH dans chaque ligne. Par exemple, les valeurs qui correspondent aux quatre scénarios RH peuvent être Scénario, Changement du niveau de travail, Révision des performances et \` Plan \` d’amélioration \` des \` \` \` \` \` performances.
 
-- Si vous avez plusieurs fichiers CSV qui contiennent une colonne HRScenario * *, assurez-vous que chaque fichier utilise le même nom de colonne et les mêmes valeurs qui identifient les scénarios de RH spécifiques.
+- Si vous avez plusieurs fichiers CSV qui contiennent une colonne HRScenario**, assurez-vous que chaque fichier utilise le même nom de colonne et les mêmes valeurs qui identifient les scénarios RH spécifiques.
 
-L’exemple suivant montre un fichier CSV qui contient la colonne **HRScenario** . Les valeurs de la colonne HRScenario identifient le type de données dans la ligne correspondante.
+L’exemple suivant montre un fichier CSV qui contient la **colonne HRScenario.** Les valeurs de la colonne HRScenario identifient le type de données dans la ligne correspondante.
 
 ```text
 HRScenario,EmailAddress,ResignationDate,LastWorkingDate,EffectiveDate,Remarks,Rating,OldLevel,NewLevel
@@ -191,196 +191,196 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 ```
 
 > [!NOTE]
-> Vous pouvez utiliser n’importe quel nom pour la colonne qui identifie le type de données RH, car vous mapperez le nom de la colonne dans votre fichier CSV en tant que colonne qui identifie le type de données RH lorsque vous configurez le connecteur à l’étape 3. Vous mapperez également les valeurs utilisées pour la colonne type de données lorsque vous configurez le connecteur.
+> Vous pouvez utiliser n’importe quel nom pour la colonne qui identifie le type de données RH, car vous maprez le nom de la colonne dans votre fichier CSV en tant que colonne qui identifie le type de données RH lorsque vous configurerez le connecteur à l’étape 3. Vous masez également les valeurs utilisées pour la colonne de type de données lors de la mise en place du connecteur.
 
 ### <a name="adding-the-hrscenario-column-to-a-csv-file-that-contains-a-single-data-type"></a>Ajout de la colonne HRScenario à un fichier CSV qui contient un seul type de données
 
-En fonction des systèmes RH de votre organisation et de la façon dont vous allez exporter les données RH au format CSV, il se peut que vous deviez créer plusieurs fichiers CSV contenant un seul type de données HR. Dans ce cas, vous pouvez toujours créer un connecteur HR unique pour importer des données à partir de différents fichiers CSV. Pour ce faire, il vous suffit d’ajouter une colonne HRScenario au fichier CSV et de spécifier le type de données RH. Vous pouvez ensuite exécuter le script pour chaque fichier CSV, mais utiliser le même ID de travail pour le connecteur. Voir [étape 4](#step-4-run-the-sample-script-to-upload-your-hr-data).
+En fonction des systèmes RH de votre organisation et de la façon dont vous allez exporter les données RH dans un fichier CSV, vous de devez peut-être créer plusieurs fichiers CSV qui contiennent un seul type de données RH. Dans ce cas, vous pouvez toujours créer un connecteur RH unique pour importer des données à partir de différents fichiers CSV. Pour ce faire, il vous suffit d’ajouter une colonne HRScenario au fichier CSV et de spécifier le type de données RH. Vous pouvez ensuite exécuter le script pour chaque fichier CSV, mais utiliser le même ID de travail pour le connecteur. Voir [l’étape 4](#step-4-run-the-sample-script-to-upload-your-hr-data).
 
-## <a name="step-2-create-an-app-in-azure-active-directory"></a>Étape 2 : créer une application dans Azure Active Directory
+## <a name="step-2-create-an-app-in-azure-active-directory"></a>Étape 2 : Créer une application dans Azure Active Directory
 
-L’étape suivante consiste à créer et à enregistrer une nouvelle application dans Azure Active Directory (Azure AD). L’application correspond au connecteur RH que vous créez à l’étape 3. La création de cette application permettra à Azure AD d’authentifier le connecteur RH lorsqu’il s’exécute et tente d’accéder à votre organisation. Cette application est également utilisée pour authentifier le script que vous exécutez à l’étape 4 pour télécharger vos données RH dans le Cloud de Microsoft. Lors de la création de cette application Azure AD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées à l’étape 3 et à l’étape 4.
+L’étape suivante consiste à créer et inscrire une nouvelle application dans Azure Active Directory (Azure AD). L’application correspond au connecteur RH que vous créez à l’étape 3. La création de cette application permettra à Azure AD d’authentifier le connecteur RH lorsqu’il s’exécute et tente d’accéder à votre organisation. Cette application sera également utilisée pour authentifier le script que vous exécutez à l’étape 4 pour charger vos données RH dans le cloud Microsoft. Lors de la création de cette application Azure AD, n’oubliez pas d’enregistrer les informations suivantes. Ces valeurs seront utilisées aux étapes 3 et 4.
 
-- ID de l’application Azure AD (également appelé *ID* de l’application ou *ID client*)
+- ID d’application Azure AD (également appelé *ID* d’application ou *ID client)*
 
-- Secret d’application Azure AD (également appelé *clé secrète client*)
+- Secret d’application Azure AD (également appelé *secret client)*
 
-- ID de client (également appelé *ID d’annuaire*)
+- ID de client (également appelé *ID d’annuaire)*
 
-Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, consultez [la rubrique enregistrer une application avec la plateforme d’identité Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir Inscrire une application avec la [plateforme d’identités Microsoft.](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
 
-## <a name="step-3-create-the-hr-connector"></a>Étape 3 : créer le connecteur RH
+## <a name="step-3-create-the-hr-connector"></a>Étape 3 : Créer le connecteur RH
 
-L’étape suivante consiste à créer un connecteur RH dans le centre de conformité Microsoft 365. Une fois que vous avez exécuté le script à l’étape 4, le connecteur RH que vous créez exporte les données RH du fichier CSV vers votre organisation Microsoft 365. Avant de créer un connecteur, assurez-vous d’avoir une liste des scénarios RH et des noms de colonne CSV correspondants pour chacun d’eux. Vous devez mapper les données requises pour chaque scénario aux noms de colonne réels dans votre fichier CSV lors de la configuration du connecteur. Vous pouvez également télécharger un exemple de fichier CSV lors de la configuration du connecteur et l’Assistant vous aidera à mapper le nom des colonnes aux types de données requis.
+L’étape suivante consiste à créer un connecteur RH dans le Centre de conformité Microsoft 365. Après avoir exécuté le script à l’étape 4, le connecteur RH que vous créez inséra les données RH du fichier CSV vers votre organisation Microsoft 365. Avant de créer un connecteur, assurez-vous que vous avez une liste des scénarios RH et des noms de colonne CSV correspondants pour chacun d’eux. Vous devez ma cartographier les données requises pour chaque scénario avec les noms de colonne réels dans votre fichier CSV lors de la configuration du connecteur. Vous pouvez également télécharger un exemple de fichier CSV lors de la configuration du connecteur et l’Assistant vous aidera à maser le nom des colonnes sur les types de données requis.
 
-Une fois cette étape terminée, veillez à copier l’ID de travail qui est généré lors de la création du connecteur. Vous utiliserez l’ID de travail lorsque vous exécuterez le script.
+Une fois cette étape terminée, assurez-vous de copier l’ID de travail généré lorsque vous créez le connecteur. Vous utiliserez l’ID de travail lorsque vous exécuterez le script.
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click Data **connectors** in the left nav.
 
-2. Sur la page **connecteurs de données** , sous **RH**, cliquez sur **affichage**.
+2. Dans la page **Connecteurs de données** sous **RH,** cliquez sur **Afficher.**
 
-3. Sur la page **personnalisée RH** , cliquez sur **Ajouter un connecteur**.
+3. Dans la page **Personnalisée RH,** cliquez **sur Ajouter un connecteur.**
 
-4. Sur la page **configurer la connexion** , effectuez les opérations suivantes, puis cliquez sur **suivant**:
+4. Dans la page **Configuration de la connexion,** faites ce qui suit, puis cliquez sur **Suivant**:
 
-   1. Tapez ou collez l’ID de l’application Azure AD pour l’application Azure que vous avez créée à l’étape 2.
+   1. Tapez ou collez l’ID d’application Azure AD pour l’application Azure que vous avez créée à l’étape 2.
 
    1. Tapez un nom pour le connecteur RH.
 
-5. Sur la page scénarios des RH, sélectionnez un ou plusieurs scénarios de RH pour lesquels vous souhaitez importer des données, puis cliquez sur **suivant**.
+5. Dans la page Scénarios RH, sélectionnez un ou plusieurs scénarios RH pour qui vous souhaitez importer des données, puis cliquez sur **Suivant**.
 
-6. Sur la page méthode de mappage de fichiers, sélectionnez l’une des options suivantes, puis cliquez sur **suivant**.
+6. Dans la page de méthode de mappage de fichiers, sélectionnez l’une des options suivantes, puis cliquez sur **Suivant**.
 
-   - **Téléchargez un fichier d’exemple**. Si vous sélectionnez cette option, cliquez sur **Télécharger un exemple de fichier** pour charger le fichier CSV que vous avez préparé à l’étape 1. Cette option vous permet de sélectionner rapidement des noms de colonne dans votre fichier CSV à partir d’une liste déroulante pour les mapper aux types de données pour les scénarios de RH précédemment sélectionnés.
+   - **Téléchargez un exemple de fichier.** Si vous sélectionnez cette option, cliquez sur Télécharger un **exemple** de fichier pour télécharger le fichier CSV que vous avez préparé à l’étape 1. Cette option vous permet de sélectionner rapidement des noms de colonnes dans votre fichier CSV à partir d’une liste de listes listes afin de les ma tôt sélectionnées sur les types de données pour les scénarios RH que vous avez précédemment sélectionnés.
 
-   OR
+   Ou
 
-   - **Fournissez manuellement les détails de mappage**. Si vous sélectionnez cette option, vous devez taper le nom des colonnes dans votre fichier CSV pour les mapper aux types de données pour les scénarios de RH que vous avez précédemment sélectionnés.
+   - **Fournissez manuellement les détails du mappage.** Si vous sélectionnez cette option, vous devez taper le nom des colonnes dans votre fichier CSV pour les maser aux types de données pour les scénarios RH que vous avez précédemment sélectionnés.
 
-7. Sur la page Détails du mappage de fichiers, effectuez l’une des opérations suivantes, selon que vous avez téléchargé un exemple de fichier CSV et que vous configurez le connecteur pour un seul scénario de RH ou pour plusieurs scénarios. Si vous avez téléchargé un fichier d’exemple, il n’est pas nécessaire de taper les noms de colonne. Vous les sélectionnez dans une liste déroulante.
+7. Dans la page Détails du mappage de fichiers, faites l’une des choses suivantes, selon que vous avez téléchargé un exemple de fichier CSV et que vous configurez le connecteur pour un scénario RH unique ou pour plusieurs scénarios. Si vous avez chargé un exemple de fichier, vous n’avez pas besoin de taper les noms de colonne. Vous les sélectionnez dans une liste liste.
 
-    - Si vous avez sélectionné un scénario de RH unique à l’étape précédente, tapez les noms d’en-tête de colonne (également appelés *paramètres*) à partir du fichier CSV que vous avez créé à l’étape 1 dans chacune des zones appropriées. Les noms de colonne que vous tapez ne sont pas sensibles à la casse, mais veillez à inclure des espaces si les noms de colonne dans votre fichier CSV incluent des espaces. Comme expliqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de paramètres dans votre fichier CSV. Par exemple, la capture d’écran suivante montre les noms des paramètres de l’exemple de fichier CSV pour le scénario de RH d’abandon d’un employé indiqué à l’étape 1.
+    - Si vous avez sélectionné un scénario RH unique à l’étape précédente, tapez les noms d’en-tête de colonne (également *appelés paramètres)* à partir du fichier CSV que vous avez créé à l’étape 1 dans chacune des zones appropriées. Les noms de colonne que vous tapez ne sont pas sensibles à la cas, mais assurez-vous d’inclure des espaces si les noms de colonne dans votre fichier CSV incluent des espaces. Comme indiqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de paramètres dans votre fichier CSV. Par exemple, la capture d’écran suivante montre les noms des paramètres à partir de l’exemple de fichier CSV pour le scénario RH de l’employé, illustré à l’étape 1.
 
-    - Si vous avez sélectionné plusieurs types de données dans l’étape ci-dessus, vous devez entrer le nom de la colonne d’identificateur qui identifiera le type de données RH dans votre fichier CSV. Après avoir entré le nom de colonne d’identificateur, tapez la valeur qui identifie ce type de données RH, puis tapez les noms d’en-tête de colonne pour les types de données sélectionnés dans les fichiers CSV que vous avez créés à l’étape 1 dans chacune des zones appropriées pour chaque type de données sélectionné. Comme expliqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de colonne dans votre fichier CSV.
+    - Si vous avez sélectionné plusieurs types de données à l’étape ci-dessus, vous devez entrer le nom de colonne d’identificateur qui identifiera le type de données RH dans votre fichier CSV. Après avoir entré le nom de la colonne d’identificateur, tapez la valeur qui identifie ce type de données RH, puis tapez les noms d’en-tête de colonne pour les types de données sélectionnés à partir des fichiers CSV que vous avez créés à l’étape 1 dans chacune des zones appropriées pour chaque type de données sélectionné. Comme indiqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de colonne dans votre fichier CSV.
 
-8. Sur la page **révision** , vérifiez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+8. Dans la page **Révision,** examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
-   Une page d’État s’affiche pour confirmer que le connecteur a été créé. Cette page contient deux éléments importants que vous devez suivre pour exécuter l’exemple de script pour charger vos données RH.
+   Une page d’état qui confirme que le connecteur a été créé s’affiche. Cette page contient deux éléments importants que vous devez effectuer à l’étape suivante pour exécuter l’exemple de script pour télécharger vos données RH.
 
-   ![Examiner la page avec l’ID de travail et le lien vers GitHub pour obtenir un exemple de script](../media/HRConnector_Confirmation.png)
+   ![Page de révision avec ID de travail et lien vers github pour un exemple de script](../media/HRConnector_Confirmation.png)
 
-   1. **ID de travail.** Vous aurez besoin de cet ID de travail pour exécuter le script à l’étape suivante. Vous pouvez la copier à partir de cette page ou de la page mobile du connecteur.
+   1. **ID de travail.** Vous aurez besoin de cet ID de travail pour exécuter le script à l’étape suivante. Vous pouvez le copier à partir de cette page ou à partir de la page de flyout du connecteur.
 
-   1. **Lien vers l’exemple de script.** Cliquez sur le lien **ici** pour accéder au site github afin d’accéder à l’exemple de script (le lien ouvre une nouvelle fenêtre). Laissez cette fenêtre ouverte pour pouvoir copier le script à l’étape 4. Vous pouvez également insérer un signet dans la destination ou copier l’URL afin de pouvoir y accéder à nouveau lorsque vous exécutez le script. Ce lien est également disponible sur la page mobile du connecteur.
+   1. **Lien vers l’exemple de script.** Cliquez sur **le lien** ici pour accéder au site GitHub pour accéder à l’exemple de script (le lien ouvre une nouvelle fenêtre). Gardez cette fenêtre ouverte afin de pouvoir copier le script à l’étape 4. Vous pouvez également réserver un signet à la destination ou copier l’URL afin de pouvoir y accéder à nouveau lorsque vous exécutez le script. Ce lien est également disponible sur la page volante du connecteur.
 
 9. Cliquez sur **Terminé**.
 
-   Le nouveau connecteur est affiché dans la liste sous l’onglet **connecteurs** .
+   Le nouveau connecteur s’affiche dans la liste sous l’onglet **Connecteurs.**
 
-10. Cliquez sur le connecteur RH que vous venez de créer pour afficher la page de menu volant, qui contient des propriétés et d’autres informations sur le connecteur.
+10. Cliquez sur le connecteur RH que vous avez créé pour afficher la page de présentation, qui contient des propriétés et d’autres informations sur le connecteur.
 
-   ![Page de menu volant pour le nouveau connecteur RH](../media/HRConnectorWizard7.png)
+   ![Page de flyout pour le nouveau connecteur RH](../media/HRConnectorWizard7.png)
 
-Si vous ne l’avez pas déjà fait, vous pouvez copier les valeurs pour l’ID d' **application Azure** et l' **ID de travail de connecteur**. Vous en aurez besoin pour exécuter le script à l’étape suivante. Vous pouvez également télécharger le script à partir de la page de menu volant (ou le télécharger en utilisant le lien de l’étape suivante).
+Si ce n’est pas déjà fait, vous pouvez copier les valeurs de **l’ID d’application Azure** et de l’ID de travail **connecteur.** Vous en aurez besoin pour exécuter le script à l’étape suivante. Vous pouvez également télécharger le script à partir de la page volante (ou le télécharger à l’aide du lien de l’étape suivante).)
 
-Vous pouvez également cliquer sur **modifier** pour modifier l’ID de l’application Azure ou les noms d’en-tête de colonne que vous avez définis sur la page **mappage de fichiers** .
+Vous pouvez également cliquer sur **Modifier** pour modifier l’ID d’application Azure ou les noms d’en-tête de colonne que vous avez définis sur la page **de mappage de** fichiers.
 
-## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Étape 4 : exécuter l’exemple de script pour charger vos données RH
+## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Étape 4 : Exécuter l’exemple de script pour charger vos données RH
 
-La dernière étape de la configuration d’un connecteur RH consiste à exécuter un exemple de script qui télécharge les données RH dans le fichier CSV (que vous avez créé à l’étape 1) vers le Cloud Microsoft. Plus précisément, le script télécharge les données vers le connecteur RH. Après avoir exécuté le script, le connecteur RH que vous avez créé à l’étape 3 importe les données RH dans votre organisation Microsoft 365 où il peut accéder à d’autres outils de conformité, tels que la solution de gestion des risques Insiders. Après avoir exécuté le script, envisagez de planifier une tâche pour qu’elle s’exécute automatiquement quotidiennement de sorte que les données de fin d’employé les plus récentes soient téléchargées vers le Cloud Microsoft. Consultez [la rubrique planifier le script pour qu’il s’exécute automatiquement](#optional-step-6-schedule-the-script-to-run-automatically).
+La dernière étape de la configuration d’un connecteur RH consiste à exécuter un exemple de script qui chargera les données RH dans le fichier CSV (que vous avez créé à l’étape 1) dans le cloud Microsoft. Plus précisément, le script charge les données vers le connecteur RH. Après avoir exécuté le script, le connecteur RH que vous avez créé à l’étape 3 importe les données RH dans votre organisation Microsoft 365 où il est accessible par d’autres outils de conformité, tels que la solution de gestion des risques internes. Après avoir exécuté le script, envisagez de planifier une tâche pour qu’elle s’exécute automatiquement quotidiennement afin que les données les plus récentes de résiliation d’employé sont chargées dans le cloud Microsoft. Voir [Planifier le script pour qu’il s’exécute automatiquement.](#optional-step-6-schedule-the-script-to-run-automatically)
 
-1. Accédez à la fenêtre que vous avez laissée ouverte à l’étape précédente pour accéder au site GitHub à l’aide de l’exemple de script. Vous pouvez également ouvrir le site signet ou utiliser l’URL que vous avez copiée.
+1. Accédez à la fenêtre que vous avez laissée ouverte à partir de l’étape précédente pour accéder au site GitHub avec l’exemple de script. Vous pouvez également ouvrir le site avec signet ou utiliser l’URL que vous avez copiée.
 
-2. Cliquez sur le bouton **RAW** pour afficher le script en mode texte.
+2. Cliquez sur **le bouton Brut** pour afficher le script en affichage texte.
 
 3. Copiez toutes les lignes de l’exemple de script, puis enregistrez-les dans un fichier texte.
 
-4. Modifiez l’exemple de script pour votre organisation, le cas échéant.
+4. Modifiez l’exemple de script pour votre organisation, si nécessaire.
 
-5. Enregistrez le fichier texte sous forme de fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier `.ps1` , par exemple, `HRConnector.ps1` .
+5. Enregistrez le fichier texte en tant que fichier Windows PowerShell script à l’aide d’un suffixe de nom de fichier de `.ps1` ; par exemple, `HRConnector.ps1` .
 
-6. Ouvrez une invite de commandes sur votre ordinateur local et accédez au répertoire dans lequel vous avez enregistré le script.
+6. Ouvrez une invite de commandes sur votre ordinateur local et allez dans le répertoire où vous avez enregistré le script.
 
-7. Exécutez la commande suivante pour télécharger les données RH dans le fichier CSV vers le Cloud Microsoft ; par exemple :
+7. Exécutez la commande suivante pour télécharger les données RH dans le fichier CSV dans le cloud Microsoft . par exemple :
 
     ```powershell
     .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -csvFilePath '<csvFilePath>'
     ```
 
-   Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations que vous avez obtenues dans les étapes précédentes sont utilisées dans les valeurs de ces paramètres.
+   Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations obtenues lors des étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
    | Paramètre | Description |
    |:-----|:-----|:-----|
-   |`tenantId`|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 2. Vous pouvez également obtenir l’ID de client de votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation.|
-   |`appId` |Il s’agit de l’ID de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 2. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. | 
-   |`appSecret`|Il s’agit de la clé secrète de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 2. Cela est également utilisé pour l’authentification.|
-   |`jobId`|Il s’agit de l’ID de travail pour le connecteur HR que vous avez créé à l’étape 3. Il est utilisé pour associer les données RH téléchargées vers le Cloud Microsoft avec le connecteur RH.|
-   |`csvFilePath`|Il s’agit du chemin d’accès au fichier CSV (stocké sur le même système que le script) que vous avez créé à l’étape 1. Essayez d’éviter les espaces dans le chemin d’accès du fichier ; Sinon, utilisez des guillemets simples.|
+   |`tenantId`|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 2. Vous pouvez également obtenir l’ID de locataire de votre organisation dans le panneau **Vue** d’ensemble du Centre d’administration Azure AD. Il est utilisé pour identifier votre organisation.|
+   |`appId` |Il s’agit de l’ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 2. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. | 
+   |`appSecret`|Il s’agit de la question secrète de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 2. Cette fonction est également utilisée pour l’authentification.|
+   |`jobId`|Il s’agit de l’ID de travail pour le connecteur RH que vous avez créé à l’étape 3. Cette fonction permet d’associer les données RH téléchargées vers le cloud Microsoft au connecteur RH.|
+   |`csvFilePath`|Il s’agit du chemin d’accès au fichier CSV (stocké sur le même système que le script) que vous avez créé à l’étape 1. Essayez d’éviter les espaces dans le chemin d’accès du fichier . sinon, utilisez des guillemets simples.|
    |||
 
-   Voici un exemple de syntaxe pour le script du connecteur RH en utilisant les valeurs réelles de chaque paramètre :
+   Voici un exemple de syntaxe pour le script de connecteur RH utilisant des valeurs réelles pour chaque paramètre :
 
    ```powershell
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   Si le chargement réussit, le script affiche le message **chargement réussi** .
+   Si le chargement réussit, le script affiche le message **Télécharger** réussi.
 
    > [!NOTE]
-   > Si vous rencontrez des problèmes lors de l’exécution de la commande précédente en raison de stratégies d’exécution, voir [about Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) et [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
+   > Si vous avez des problèmes lors de [](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) l’exécution de la commande précédente en raison des stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
 
-## <a name="step-5-monitor-the-hr-connector"></a>Étape 5 : surveiller le connecteur RH
+## <a name="step-5-monitor-the-hr-connector"></a>Étape 5 : Surveiller le connecteur RH
 
-Après avoir créé le connecteur RH et exécuté le script pour charger vos données RH, vous pouvez consulter le connecteur et l’état du chargement dans le centre de conformité Microsoft 365. Si vous planifiez le script pour qu’il s’exécute automatiquement régulièrement, vous pouvez également afficher l’état actuel après la dernière exécution du script.
+Après avoir créé le connecteur RH et exécuté le script pour télécharger vos données RH, vous pouvez afficher le connecteur et l’état de chargement dans le Centre de conformité Microsoft 365. Si vous programmez l’exécuter automatiquement sur une base régulière, vous pouvez également afficher l’état actuel après la dernière fois que le script a été exécuté.
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
-2. Cliquez sur l’onglet **connecteurs** , puis sélectionnez le connecteur RH pour afficher la page de menu volant. Cette page contient les propriétés et les informations relatives au connecteur.
+2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur RH pour afficher la page de présentation. Cette page contient les propriétés et les informations sur le connecteur.
 
-   ![Page mobile du connecteur RH avec les propriétés et l’État](../media/HRConnectorFlyout1.png)
+   ![Page de flyout du connecteur RH avec les propriétés et l’état](../media/HRConnectorFlyout1.png)
 
-3. Sous en **cours**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’État du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et charge les données à partir du fichier CSV vers le Cloud Microsoft. 
+3. Sous **Progression,** cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et télécharge les données du fichier CSV dans le cloud Microsoft. 
 
-   ![Le fichier journal du connecteur RH affiche les lignes numériques à partir du fichier CSV qui ont été téléchargées](../media/HRConnectorLogFile.png)
+   ![Le fichier journal du connecteur RH affiche les lignes de numéro à partir du fichier CSV qui ont été téléchargées](../media/HRConnectorLogFile.png)
 
-   Le `RecordsSaved` champ indique le nombre de lignes du fichier CSV téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des `RecordsSaved` champs est 4, si le script a téléchargé avec succès toutes les lignes dans le fichier CSV.
+   Le `RecordsSaved` champ indique le nombre de lignes dans le fichier CSV qui a été téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des champs est 4, si le script a correctement chargé toutes les lignes du fichier `RecordsSaved` CSV.
 
-Si vous n’avez pas exécuté le script à l’étape 4, un lien vers le téléchargement du script est affiché lors de la **dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes pour exécuter le script.
+Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécharger le script s’affiche sous **Dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes pour exécuter le script.
 
-## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Module Étape 6 : planifier le script pour qu’il s’exécute automatiquement
+## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>(Facultatif) Étape 6 : Planifier l’exécuter automatiquement
 
-Pour vous assurer que les dernières données RH de votre organisation sont accessibles aux outils comme la solution de gestion des risques Insiders, nous vous recommandons de planifier le script pour qu’il s’exécute automatiquement de manière récurrente, par exemple une fois par jour. Cela vous oblige également à mettre à jour les données RH dans le fichier CSV sur une planification similaire (si elle n’est pas la même) de façon à ce qu’elles contiennent les informations les plus récentes sur les employés qui quittent votre organisation. L’objectif est de télécharger les données RH les plus récentes afin que le connecteur RH puisse le mettre à la disposition de la solution de gestion des risques Insiders.
+Pour vous assurer que les dernières données RH de votre organisation sont disponibles pour des outils tels que la solution de gestion des risques internes, nous vous recommandons de planifier l’exécuter automatiquement de manière périodique, par exemple une fois par jour. Vous devez également mettre à jour les données RH dans le fichier CSV selon une planification similaire (si ce n’est pas la même) afin qu’elles contiennent les dernières informations sur les employés qui quittent votre organisation. L’objectif est de télécharger les données RH les plus récentes afin que le connecteur RH puisse les rendre disponibles pour la solution de gestion des risques internes.
 
-Vous pouvez utiliser l’application planificateur de tâches de Windows pour exécuter automatiquement le script tous les jours.
+Vous pouvez utiliser l’application De planification des tâches dans Windows pour exécuter automatiquement le script tous les jours.
 
-1. Sur votre ordinateur local, cliquez sur le bouton **Démarrer** de Windows, puis tapez **Planificateur de tâches**.
+1. Sur votre ordinateur local, cliquez sur le bouton **Démarrer** de Windows, puis tapez Planification **des tâches.**
 
-2. Cliquez sur l’application **Planificateur de tâches** pour l’ouvrir.
+2. Cliquez sur **l’application De planification des** tâches pour l’ouvrir.
 
-3. Dans la section **actions** , cliquez sur **créer une tâche**.
+3. Dans la section **Actions,** cliquez sur **Créer une tâche.**
 
-4. Sous l’onglet **général** , entrez un nom descriptif pour la tâche planifiée ; par exemple, le **script du connecteur RH**. Vous pouvez également ajouter une description facultative.
+4. Sous **l’onglet** Général, tapez un nom descriptif pour la tâche programmée . par exemple, **HR Connector Script**. Vous pouvez également ajouter une description facultative.
 
-5. Sous **options de sécurité**, procédez comme suit :
+5. Sous **Options de sécurité,** faites les actions suivantes :
 
-   1. Déterminez s’il faut exécuter le script uniquement lorsque vous avez ouvert une session sur l’ordinateur ou que vous l’exécutez lorsque vous êtes connecté.
+   1. Déterminez s’il faut exécuter le script uniquement lorsque vous êtes connecté à l’ordinateur ou l’exécuter lorsque vous êtes connecté ou non.
 
-   1. Assurez-vous que la case à cocher **exécuter avec les privilèges les plus élevés** est activée.
+   1. Assurez-vous que la **case à cocher** Exécuter avec les privilèges les plus élevés est sélectionnée.
 
-6. Sélectionnez l’onglet **déclencheurs** , cliquez sur **nouveau**, puis effectuez les opérations suivantes :
+6. Sélectionnez **l’onglet Déclencheurs,** cliquez **sur Nouveau,** puis faites les choses suivantes :
 
-   1. Sous **paramètres**, sélectionnez l’option **quotidien** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script se verra tous les jours au même moment.
+   1. Sous **Paramètres,** sélectionnez **l’option** Quotidienne, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
 
-   1. Sous **Paramètres avancés**, vérifiez que la case à cocher **activé** est activée.
+   1. Sous **Paramètres avancés,** vérifiez que la **case à** cocher Activée est activée.
 
    1. Cliquez sur **OK**.
 
-7. Sélectionnez l’onglet **actions** , cliquez sur **nouveau**, puis effectuez les opérations suivantes :
+7. Sélectionnez **l’onglet Actions,** cliquez **sur Nouveau,** puis faites les actions suivantes :
 
-   ![Paramètres des actions pour créer une tâche planifiée pour le script du connecteur RH](../media/HRConnectorScheduleTask1.png)
+   ![Paramètres d’action pour créer une tâche programmée pour le script de connecteur RH](../media/HRConnectorScheduleTask1.png)
 
-   1. Dans la liste déroulante **action** , assurez-vous que l’option **Démarrer un programme** est sélectionnée.
+   1. Dans la **liste liste de** listes d’actions, assurez-vous que démarrer un **programme** est sélectionné.
 
-   1. Dans la zone **programme/script** , cliquez sur **Parcourir**, accédez à l’emplacement suivant et sélectionnez-le pour afficher le chemin d’accès dans la zone : `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
+   1. Dans la **zone Programme/script,** cliquez sur **Parcourir,** puis accédez à l’emplacement suivant et sélectionnez-le afin que le chemin d’accès s’affiche dans la zone `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` :
 
-   1. Dans la zone **Ajouter des arguments (facultatif)** , collez la même commande de script que celle que vous avez exécutée à l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez ran à l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
-   1. Dans la zone **commencer dans (facultatif)** , collez l’emplacement du dossier du script que vous avez exécuté à l’étape 4. Par exemple, `C:\Users\contosoadmin\Desktop\Scripts`.
+   1. Dans la **zone Démarrer dans (facultatif),** collez l’emplacement du dossier du script que vous avez écrit à l’étape 4. Par exemple, `C:\Users\contosoadmin\Desktop\Scripts`.
 
-   1. Cliquez sur **OK** pour enregistrer les paramètres de la nouvelle action.
+   1. Cliquez **sur OK** pour enregistrer les paramètres de la nouvelle action.
 
-8. Dans la fenêtre **créer une tâche** , cliquez sur **OK** pour enregistrer la tâche planifiée. Vous serez peut-être invité à entrer vos informations d’identification de compte d’utilisateur.
+8. Dans la **fenêtre Créer une** tâche, cliquez sur **OK** pour enregistrer la tâche programmée. Vous pouvez être invité à entrer vos informations d’identification de compte d’utilisateur.
 
-   La nouvelle tâche est affichée dans la bibliothèque du planificateur de tâches.
+   La nouvelle tâche s’affiche dans la bibliothèque du Programmeur de tâches.
 
-   ![La nouvelle tâche est affichée dans la bibliothèque du planificateur de tâches.](../media/HRConnectorTaskSchedulerLibrary.png)
+   ![La nouvelle tâche s’affiche dans la bibliothèque du Programmeur de tâches](../media/HRConnectorTaskSchedulerLibrary.png)
 
-   La dernière fois que le script est exécuté et la prochaine fois qu’il est planifiée pour s’exécuter. Vous pouvez double-cliquer sur la tâche pour la modifier.
+   La dernière fois que le script a été exécuté et la prochaine fois qu’il est programmé pour s’exécuter, s’affiche. Vous pouvez double-cliquer sur la tâche pour la modifier.
 
-   Vous pouvez également vérifier la dernière fois que le script s’est exécuté sur la page de menu volant du connecteur RH correspondant dans le centre de conformité.
+   Vous pouvez également vérifier la dernière fois que le script a été écrit sur la page volante du connecteur RH correspondant dans le centre de conformité.
 
 ## <a name="existing-hr-connectors"></a>Connecteurs RH existants
 
-Le 20 juillet 2020, nous avons publié des scénarios supplémentaires pris en charge par les connecteurs RH. Voici les scénarios de RH décrits précédemment dans cet article. Tout connecteur RH créé avant cette date ne prend en charge que le scénario de démission de l’employé. Si vous avez créé un connecteur RH avant le 20 juillet 2020, nous l’avons migré afin qu’il continue à migrer vos données RH vers le Cloud Microsoft. Vous n’avez rien à faire pour maintenir cette fonctionnalité. Vous pouvez continuer à utiliser le connecteur sans interruption.
+Le 20 juillet 2020, nous avons publié des scénarios supplémentaires pris en charge par les connecteurs RH. Voici les scénarios RH précédemment décrits dans cet article. Tout connecteur RH créé avant cette date prend uniquement en charge le scénario employé. Si vous avez créé un connecteur RH avant le 20 juillet 2020, nous l’avons migré afin qu’il continue à migrer vos données RH vers le cloud Microsoft. Vous n’avez rien à faire pour maintenir cette fonctionnalité. Vous pouvez continuer à utiliser le connecteur sans interruption.
 
-Si vous souhaitez implémenter des scénarios de RH supplémentaires, créez un nouveau connecteur RH et configurez-le pour les scénarios de RH supplémentaires publiés. Vous devrez également créer un ou plusieurs nouveaux fichiers CSV qui contiennent les données afin de prendre en charge les scénarios de RH supplémentaires. Après avoir créé un nouveau connecteur RH, exécutez le script à l’aide de l’ID du nouveau connecteur et des fichiers CSV avec les données de vos scénarios de RH supplémentaires.
+Si vous souhaitez implémenter des scénarios rh supplémentaires, créez un connecteur RH et configurez-le pour les scénarios RH supplémentaires qui ont été publiés. Vous devez également créer un ou plusieurs nouveaux fichiers CSV qui contiennent les données pour prendre en charge les scénarios rh supplémentaires. Après avoir créé un connecteur RH, exécutez le script à l’aide de l’ID de travail du nouveau connecteur et du ou des fichiers CSV avec les données de vos scénarios rh supplémentaires.

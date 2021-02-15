@@ -1,5 +1,5 @@
 ---
-title: Créer des enregistrements DNS sur les solutions réseau pour Microsoft
+title: Créer des enregistrements DNS sur Network Solutions pour Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur les solutions réseau pour Microsoft.
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services via Network Solutions pour Microsoft.
 ms.openlocfilehash: 9cb403bb8b469f2d7f4e6138ba5833120ea53585
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49657790"
 ---
-# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Créer des enregistrements DNS sur les solutions réseau pour Microsoft
+# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Créer des enregistrements DNS sur Network Solutions pour Microsoft
 
  **[Consultez les Forums aux questions des domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -46,7 +46,7 @@ Voici les principaux enregistrements à ajouter. Suivez les étapes ci-dessous o
     
 - [Ajoutez les deux enregistrements SRV requis pour Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Une fois ces enregistrements ajoutés sur les solutions réseau, votre domaine est configuré pour utiliser les services Microsoft.
+Une fois ces enregistrements ajoutés sur Network Solutions, votre domaine est installé pour fonctionner avec les services Microsoft.
   
 
   
@@ -66,7 +66,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
     
     > [!IMPORTANT]
-    > Avant de cliquer sur le bouton de **connexion** , choisissez **gérer mes noms de domaine** dans la liste déroulante **se connecter à :** . 
+    > Avant de sélectionner le bouton **De** connexion, sélectionnez **d’abord Gérer** mes noms de domaine dans la liste de connexion à **:** liste bas. 
   
     ![Sélectionnez Manage My Domain Names (Gérer mes noms de domaine) et connectez-vous à Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -74,19 +74,19 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![Activez la case à cocher correspondant à votre domaine](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Sélectionnez **modifier DNS**.
+3. Sélectionnez **Modifier le DNS**.
     
-    ![Sélectionnez Modifier DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Sélectionnez Modifier le DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Sélectionnez **gérer les enregistrements DNS avancés**.
+4. Sélectionnez **Gérer les enregistrements DNS avancés.**
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Sélectionnez Gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Faites défiler jusqu’à la section **texte (enregistrements TXT)** , puis sélectionnez **modifier les enregistrements TXT**.
+5. Faites défiler vers le bas **jusqu’à la section Texte (Enregistrements TXT),** puis sélectionnez Modifier les enregistrements **TXT.**
     
-    ![Sélectionnez modifier les enregistrements TXT](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+    ![Sélectionnez Modifier les enregistrements TXT](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs figurant dans le tableau suivant.
     
@@ -94,15 +94,15 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     |:-----|:-----|:-----|
     |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)   |
        
-    ![Tapez ou collez des valeurs dans les zones du nouvel enregistrement.](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
+    ![Tapez ou collez des valeurs dans les zones du nouvel enregistrement](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
 7. Sélectionnez **Continuer**.
     
-    ![Sélectionnez continuer](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
+    ![Sélectionner Continuer](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
-8. Sélectionnez **enregistrer les modifications**.
+8. Sélectionnez **Enregistrer les modifications.**
     
-    ![Sélectionnez Enregistrer les modifications.](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
+    ![Sélectionnez Enregistrer les modifications](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
 9. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
@@ -135,7 +135,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
     
     > [!IMPORTANT]
-    > Avant de cliquer sur le bouton de **connexion** , choisissez **gérer mes noms de domaine** dans la liste déroulante **se connecter à :** . 
+    > Avant de sélectionner le bouton **De** connexion, sélectionnez **d’abord Gérer mes** noms de domaine dans la liste de connexion à **:** liste bas. 
   
     ![Sélectionnez Manage My Domain Names (Gérer mes noms de domaine) et connectez-vous à Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -143,47 +143,47 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![Activez la case à cocher correspondant à votre domaine](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Sélectionnez **modifier DNS**.
+3. Sélectionnez **Modifier le DNS.**
     
-    ![Sélectionnez Modifier DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Sélectionnez Modifier le DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Sélectionnez **gérer les enregistrements DNS avancés**.
+4. Sélectionnez **Gérer les enregistrements DNS avancés.**
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Sélectionnez Gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Faites défiler vers le bas jusqu’à la section **serveurs de messagerie (enregistrements MX)** , puis sélectionnez **modifier les enregistrements MX**.
+5. Faites défiler vers le bas jusqu’à la section Serveurs de messagerie **(enregistrements MX),** puis sélectionnez **Modifier les enregistrements MX.**
     
-    ![Sélectionnez modifier les enregistrements MX](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
+    ![Sélectionnez Modifier les enregistrements MX](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
   
 6. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
     |**Priorité**|**TTL**|**Mail Server (Serveur de courrier)**|
     |:-----|:-----|:-----|
-    |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenir votre  *\<domain-key\>*  à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
        
-    ![Tapez ou collez des valeurs dans les zones du nouvel enregistrement.](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
+    ![Tapez ou collez des valeurs dans les zones du nouvel enregistrement](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
 7. Sélectionnez **Continuer**.
     
-    ![Sélectionnez continuer](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
+    ![Sélectionner Continuer](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
   
-8. Sélectionnez **enregistrer les modifications**.
+8. Sélectionnez **Enregistrer les modifications.**
     
-    ![Sélectionnez Enregistrer les modifications.](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
+    ![Sélectionnez Enregistrer les modifications](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
   
 9. Si d'autres enregistrements MX sont répertoriés, supprimez-les individuellement en sélectionnant l'icône **Delete (Supprimer)** associée à chaque enregistrement. 
     
     ![Select the Delete check box for other MX records](../../media/709d6133-9f5d-490a-a91e-95e21ca94695.png)
   
-10. Lorsqu’elles sont toutes sélectionnées, sélectionnez **Continuer**.
+10. Lorsqu’ils sont tous sélectionnés, sélectionnez **Continuer.**
     
-    ![Sélectionnez continuer](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
+    ![Sélectionner Continuer](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
   
-11. Sélectionnez **enregistrer les modifications**.
+11. Sélectionnez **Enregistrer les modifications.**
     
-    ![Sélectionnez Enregistrer les modifications.](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
+    ![Sélectionnez Enregistrer les modifications](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Ajouter les enregistrements CNAME requis pour Microsoft
 <a name="BKMK_add_CNAME"> </a>
@@ -193,7 +193,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
     
     > [!IMPORTANT]
-    > Avant de cliquer sur le bouton de **connexion** , choisissez **gérer mes noms de domaine** dans la liste déroulante **se connecter à :** . 
+    > Avant de sélectionner le bouton **De** connexion, sélectionnez **d’abord Gérer** mes noms de domaine dans la liste de connexion à **:** liste bas. 
   
     ![Sélectionnez Manage My Domain Names (Gérer mes noms de domaine) et connectez-vous à Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -201,19 +201,19 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![Activez la case à cocher correspondant à votre domaine](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Sélectionnez **modifier DNS**.
+3. Sélectionnez **Modifier le DNS**.
     
-    ![Sélectionnez Modifier DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Sélectionnez Modifier le DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Sélectionnez **gérer les enregistrements DNS avancés**.
+4. Sélectionnez **Gérer les enregistrements DNS avancés.**
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Sélectionnez Gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Faites défiler jusqu’à la section **alias d’hôte (enregistrements CNAME)** , puis sélectionnez **modifier les enregistrements CNAME**.
+5. Faites défiler vers le bas jusqu’à la section **Alias d’hôte (enregistrements CNAME),** puis sélectionnez **Modifier les enregistrements CNAME.**
     
-    ![Sélectionnez modifier les enregistrements CNAMe sous alias d’hôte](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
+    ![Sélectionnez Modifier les enregistrements CNAME sous Alias d’hôte](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
 6. Dans les zones des quatre nouveaux enregistrements, tapez ou copiez-collez les valeurs du tableau suivant.
     
@@ -227,26 +227,26 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![Taper ou coller des valeurs pour les nouveaux enregistrements](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
-7. Une fois que vous avez ajouté tous les enregistrements CNAMe dont vous avez besoin, sélectionnez **Continuer**.
+7. Lorsque vous avez ajouté tous les enregistrements CNAME dont vous avez besoin, sélectionnez **Continuer**.
     
-    ![Sélectionnez continuer](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
+    ![Sélectionner Continuer](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
   
-8. Sélectionnez **enregistrer les modifications**.
+8. Sélectionnez **Enregistrer les modifications.**
     
-    ![Sélectionnez Enregistrer les modifications.](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
+    ![Sélectionnez Enregistrer les modifications](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un seul  *enregistrement*  SPF qui inclut les deux ensembles de valeurs. 
   
 Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:35)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
     
     > [!IMPORTANT]
-    > Avant de cliquer sur le bouton de **connexion** , choisissez **gérer mes noms de domaine** dans la liste déroulante **se connecter à :** . 
+    > Avant de sélectionner le bouton **De** connexion, sélectionnez **d’abord Gérer** mes noms de domaine dans la liste de connexion à **:** liste bas. 
   
     ![Sélectionnez Manage My Domain Names (Gérer mes noms de domaine) et connectez-vous à Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -254,19 +254,19 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![Activez la case à cocher correspondant à votre domaine](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Sélectionnez **modifier DNS**.
+3. Sélectionnez **Modifier le DNS**.
     
-    ![Sélectionnez Modifier DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Sélectionnez Modifier le DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Sélectionnez **gérer les enregistrements DNS avancés**.
+4. Sélectionnez **Gérer les enregistrements DNS avancés.**
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Sélectionnez Gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Faites défiler jusqu’à la section **texte (enregistrements TXT)** , puis sélectionnez **modifier les enregistrements TXT**.
+5. Faites défiler vers le bas **jusqu’à la section Texte (Enregistrements TXT),** puis sélectionnez Modifier les enregistrements **TXT.**
     
-    ![Sélectionnez modifier les enregistrements TXT sous texte](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
+    ![Sélectionnez Modifier les enregistrements TXT sous Texte](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
 6. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs suivantes.
     
@@ -278,11 +278,11 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 7. Sélectionnez **Continuer**.
     
-    ![Sélectionnez continuer](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
+    ![Sélectionner Continuer](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
   
-8. Sélectionnez **enregistrer les modifications**.
+8. Sélectionnez **Enregistrer les modifications.**
     
-    ![Sélectionnez Enregistrer les modifications.](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
+    ![Sélectionnez Enregistrer les modifications](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajoutez les deux enregistrements SRV requis pour Microsoft
 <a name="BKMK_add_SRV"> </a>
@@ -292,7 +292,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
     
     > [!IMPORTANT]
-    > Avant de cliquer sur le bouton de **connexion** , choisissez **gérer mes noms de domaine** dans la liste déroulante **se connecter à :** . 
+    > Avant de sélectionner le bouton **De** connexion, sélectionnez **d’abord Gérer** mes noms de domaine dans la liste de connexion à **:** liste bas. 
   
     ![Sélectionnez Manage My Domain Names (Gérer mes noms de domaine) et connectez-vous à Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -300,19 +300,19 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![Activez la case à cocher correspondant à votre domaine](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Sélectionnez **modifier DNS**.
+3. Sélectionnez **Modifier le DNS**.
     
-    ![Sélectionnez Modifier DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Sélectionnez Modifier le DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Sélectionnez **gérer les enregistrements DNS avancés**.
+4. Sélectionnez **Gérer les enregistrements DNS avancés.**
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Sélectionnez Gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Faites défiler jusqu’à la section **service (enregistrements SRV)** , puis sélectionnez **modifier les enregistrements SRV**.
+5. Faites défiler vers le bas jusqu’à la section **Service (enregistrements SRV),** puis sélectionnez **Modifier les enregistrements SRV.**
     
-    ![Sélectionnez modifier les enregistrements SRV sous service.](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
+    ![Sélectionner Modifier les enregistrements SRV sous Service](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
 6. Dans les zones des deux nouveaux enregistrements, tapez ou copiez-collez les valeurs du tableau suivant.
     
@@ -327,11 +327,11 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 7. Sélectionnez **Continuer**.
     
-    ![Sélectionnez continuer](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
+    ![Sélectionner Continuer](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
   
-8. Sélectionnez **enregistrer les modifications**.
+8. Sélectionnez **Enregistrer les modifications.**
     
-    ![Sélectionnez Enregistrer les modifications.](../../media/6d323126-0ebe-45ab-8567-c234711d84c7.png)
+    ![Sélectionnez Enregistrer les modifications](../../media/6d323126-0ebe-45ab-8567-c234711d84c7.png)
   
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
