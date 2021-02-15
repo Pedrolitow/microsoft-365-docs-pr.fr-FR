@@ -24,14 +24,14 @@ ms.locfileid: "48637462"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer dans CNY et faire référence au nom de votre société et au (x) Numéro (s) de facture sur la remise de paiement.
+Veuillez payer en CNY et référencer le nom de votre société et le ou les numéro(s) de facture en paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank  
-**Branche :** Hong Kong  
-**Code SWIFT :** CITIHKHX  
-**Code CNAP :** 989584000600   
-**Numéro de compte :** 1199527009  
-**Nom du compte :** MICROSOFT REGIONAL SALES CORP  
-**Remarque : payez via le canal RBTR RMB dans HK.**  
+**Banque :** Bank  
+**Branche :** Hong Kong  
+**Code SWIFT :** CITIHKHX  
+**Code CNAP :** 989584000600   
+**Numéro de compte :** 1199527009  
+**Nom du compte :** MICROSOFT REGIONAL SALES CORP  
+**Remarque : Payez par le biais du canal RTGS DE LAS DANS HK.**  

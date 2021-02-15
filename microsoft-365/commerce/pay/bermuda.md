@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour les Bermudes
+title: Informations de paiement pour les Îles
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637726"
 ---
-# <a name="payment-information-for-bermuda"></a>Informations de paiement pour les Bermudes
+# <a name="payment-information-for-bermuda"></a>Informations de paiement pour les Îles
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en USD uniquement et référencer le ou les numéros de votre facture sur votre bordereau de paiement.
+N’hésitez pas à payer en USD uniquement et à référencer vos numéro(s) de facture sur votre facture.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Bank of America  
-**Branche :** Comptent  
-**Code SWIFT :** BOFAUS3N  
-**Numéro de compte :** 4426587954  
-**Nom du compte :** Librairie  
+**Banque :** Bank of America  
+**Branche :** Dallas  
+**Code SWIFT :** BOFAUS3N  
+**Numéro de compte :** 4426587954  
+**Nom du compte :** Microsoft  

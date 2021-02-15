@@ -33,24 +33,24 @@ ms.locfileid: "48328508"
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez gérer les mots de passe de compte d’utilisateur Microsoft 365 de différentes manières, en fonction de la configuration de votre identité. Vous pouvez gérer les comptes d’utilisateur dans le [Centre d’administration 365 de Microsoft](https://docs.microsoft.com/microsoft-365/admin/add-users/), dans les services de domaine Active Directory (AD DS) ou dans le centre d’administration Azure Active Directory (Azure AD).
+Vous pouvez gérer les mots de passe de compte d’utilisateur Microsoft 365 de différentes manières, en fonction de la configuration de votre identité. Vous pouvez gérer les comptes d’utilisateurs dans le Centre d’administration [Microsoft 365,](https://docs.microsoft.com/microsoft-365/admin/add-users/)dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration Azure Active Directory (Azure AD).
 
-## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planifier l’emplacement et la façon dont vous allez gérer les mots de passe de votre compte d’utilisateur
+## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planifier l’endroit et la façon dont vous allez gérer les mots de passe de votre compte d’utilisateur
 
-L’emplacement et la façon dont vous pouvez gérer vos comptes d’utilisateurs dépend du modèle d’identité que vous souhaitez utiliser pour votre Microsoft 365. Les deux modèles sont uniquement en nuage et hybride.
+L’endroit où et comment vous pouvez gérer vos comptes d’utilisateur dépend du modèle d’identité que vous souhaitez utiliser pour votre Microsoft 365. Les deux modèles sont uniquement cloud et hybrides.
   
 ### <a name="cloud-only"></a>Cloud uniquement
 
-Vous gérez les mots de passe des comptes d’utilisateur dans :
+Vous gérez les mots de passe de compte d’utilisateur dans :
 
 - [Le Centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/)
 - Centre d’administration Azure AD
     
 ### <a name="hybrid"></a>Hybride
 
-Avec l’identité hybride, les mots de passe sont stockés dans AD DS afin que vous devez utiliser les outils AD DS locaux pour gérer les mots de passe des comptes d’utilisateur. Même si vous utilisez la synchronisation de hachage de mot de passe (hachage), dans laquelle Azure AD stocke une version hachée de la version déjà hachée dans AD DS, vous et les utilisateurs devez gérer leurs mots de passe dans AD DS.
+Avec l’identité hybride, les mots de passe sont stockés dans AD DS. Vous devez donc utiliser les outils AD DS locaux pour gérer les mots de passe de compte d’utilisateur. Même lors de l’utilisation de la synchronisation de hachage de mot de passe (PHS), dans laquelle Azure AD stocke une version hachée de la version déjà hachée dans AD DS, vous et les utilisateurs devez gérer leurs mots de passe dans AD DS.
 
-Avec l' [écriture différée du mot de passe](#pw_writeback), vos utilisateurs peuvent modifier leurs mots de passe AD DS via Azure ad.
+Avec [l’écriture écriture par](#pw_writeback)mot de passe, vos utilisateurs peuvent modifier leurs mots de passe AD DS via Azure AD.
 
 ## <a name="prevent-bad-passwords"></a>Éviter les mots de passe incorrects
 
@@ -64,18 +64,18 @@ Pour empêcher les utilisateurs de créer un mot de passe facile à déterminer,
 - Termes internes spécifiques à l’entreprise
 - Abréviations dotées d’une signification spécifique à l’entreprise.
 
-Vous pouvez interdire les mots de passe incorrects [dans le Cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) et pour votre [service AD DS local](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
+Vous pouvez interdire les mots de passe incorrects dans [le cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) et pour vos [services AD DS locaux.](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises)
 
 ## <a name="simplify-user-sign-in"></a>Simplifiez la connexion utilisateur
 
-L’authentification unique transparente Azure AD (authentification unique transparente Azure AD) fonctionne avec hachage et l’authentification directe (directe), afin de permettre à vos utilisateurs de se connecter à des services qui utilisent des comptes d’utilisateur Azure AD sans avoir à taper leur mot de passe, et dans de nombreux cas, leurs noms d’utilisateur. Cela donne à vos utilisateurs un accès facile aux applications basées sur le cloud, telles qu’Office 365, sans nécessiter des composants supplémentaires en local, tels que des serveurs de fédération d’identité.
+Azure AD Seamless Single Sign-On (Azure AD Seamless SSO) fonctionne avec PHS et l’authentification Pass-Through (PTA), pour permettre à vos utilisateurs de se connecter à des services qui utilisent des comptes d’utilisateur Azure AD sans avoir à taper leur mot de passe et, dans de nombreux cas, leur nom d’utilisateur. Cela donne à vos utilisateurs un accès facile aux applications basées sur le cloud, telles qu’Office 365, sans nécessiter des composants supplémentaires en local, tels que des serveurs de fédération d’identité.
 
 Vous configurez l’authentification unique transparente Azure AD avec l’outil Azure AD Connect. Reportez-vous aux [instructions pour configurer l’authentification unique transparente d’Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
 <a name="pw_writeback"></a>
-## <a name="simplify-password-updates-to-ad-ds"></a>Simplifier les mises à jour des mots de passe pour les services AD DS
+## <a name="simplify-password-updates-to-ad-ds"></a>Simplifier les mises à jour de mot de passe pour AD DS
 
-Avec l’écriture différée de mot de passe, vous pouvez autoriser les utilisateurs à réinitialiser leur mot de passe via Azure AD, qui est ensuite répliqué dans AD DS. Les utilisateurs n’ont pas besoin d’accéder à leur service AD DS sur site pour mettre à jour leurs mots de passe. C’est utile pour les utilisateurs itinérants ou distants qui ne possèdent pas de connexion d’accès à distance au réseau local.
+Avec l’écriture écriture par mot de passe, vous pouvez autoriser les utilisateurs à réinitialiser leur mot de passe via Azure AD, qui est ensuite répliqué dans AD DS. Les utilisateurs n’ont pas besoin d’accéder à leurs services AD DS locaux pour mettre à jour leurs mots de passe. C’est utile pour les utilisateurs itinérants ou distants qui ne possèdent pas de connexion d’accès à distance au réseau local.
 
 L’écriture différée de mot de passe est requise pour exploiter pleinement les fonctionnalités Azure AD Identity Protection, comme obliger les utilisateurs à modifier leur mot de passe en local lorsqu’un risque élevé de compromission de compte a été détecté.
 
@@ -87,7 +87,7 @@ Pour obtenir plus d’informations et les instructions de configuration, consult
 
 ## <a name="simplify-password-resets"></a>Simplifiez les réinitialisations du mot de passe
 
-Self-service Password Reset (SSPR) permet aux utilisateurs de réinitialiser ou de déverrouiller leur mot de passe ou leurs comptes. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer l' [écriture différée de mot de passe](#pw_writeback) pour pouvoir déployer des réinitialisations de mot de passe.
+La réinitialisation du mot de passe en libre-service (SSPR) permet aux utilisateurs de réinitialiser ou de déverrouiller leurs mots de passe ou comptes. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer [l’écriture écriture par mot de](#pw_writeback) passe avant de pouvoir déployer les réinitialisations de mot de passe.
 
 Reportez-vous aux [Instructions pour activer la réinitialisation de mot de passe](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
 

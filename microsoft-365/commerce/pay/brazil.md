@@ -24,4 +24,4 @@ ms.locfileid: "48637678"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Suivez les instructions de paiement de votre facture et de votre numéro (s) de facture de référence sur la remise de paiement.  
+Suivez les instructions de paiement sur votre facture et référencez vos numéro(s) de facture en cas de paiement.  

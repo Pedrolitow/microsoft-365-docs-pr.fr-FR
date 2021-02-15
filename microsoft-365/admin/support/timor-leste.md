@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 3154c0a84e4f9efe947a57a4ac646d916dc6c13a
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,24 +20,24 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48639202"
 ---
-# <a name="contact-support-for-timor-leste"></a>Contacter le support technique pour Timor-Leste
+# <a name="contact-support-for-timor-leste"></a>Contactez le support technique Timor-Leste
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
-+ 1 312 843 5155
++1 312 843 5155
 
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Portugais : Mon-Fri 9 h-5 AM
+Portugais : Mon-Fri 21h00 à 17h00
 
-Anglais : Mon-Fri 9 h-5 AM
+Anglais : Mon-Fri 21h00 à 17h00
 
 ### <a name="technical-support"></a>Support technique :
 
-Portugais : 24 heures sur 24, entre le mois et l’heure de midi
+Portugais : 24 heures sur 24, entre lun midi et sam midi
 
 Anglais : 24h/24, 7j/7
 
-Frais d’appels internationaux appliqués
+Les frais d’appels internationaux s’appliquent

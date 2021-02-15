@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour Curacao
+title: Informations de paiement pour Curaçao
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637402"
 ---
-# <a name="payment-information-for-curacao"></a>Informations de paiement pour Curacao
+# <a name="payment-information-for-curacao"></a>Informations de paiement pour Curaçao
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Payez uniquement en USD et numéro (s) de facture de référence sur votre bordereau de paiement.
+Veuillez payer en USD uniquement et référencer les numéro(s) de facture sur votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Bank of America  
-**Branche :** Comptent  
-**Code SWIFT :** BOFAUS3N  
-**Numéro de compte :** 4426587954  
-**Nom du compte :** Librairie  
+**Banque :** Bank of America  
+**Branche :** Dallas  
+**Code SWIFT :** BOFAUS3N  
+**Numéro de compte :** 4426587954  
+**Nom du compte :** Microsoft  

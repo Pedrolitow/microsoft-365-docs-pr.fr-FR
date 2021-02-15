@@ -1,5 +1,5 @@
 ---
-title: Identité Cloud Microsoft 365 uniquement
+title: Identité cloud Microsoft 365 uniquement
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,7 +25,7 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Indique comment créer des utilisateurs et des groupes lorsque votre abonnement Microsoft 365 utilise l’identité de Cloud uniquement.
+description: Décrit comment créer des utilisateurs et des groupes lorsque votre abonnement Microsoft 365 utilise l’identité cloud uniquement.
 ms.openlocfilehash: 111c42e644913a8f7f6e41d4e8bf65685263f757
 ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
@@ -33,34 +33,34 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/01/2020
 ms.locfileid: "48327926"
 ---
-# <a name="microsoft-365-cloud-only-identity"></a>Identité Cloud Microsoft 365 uniquement
+# <a name="microsoft-365-cloud-only-identity"></a>Identité cloud Microsoft 365 uniquement
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Avec l’identité Cloud uniquement, tous vos utilisateurs, groupes et contacts sont stockés dans le client Azure Active Directory (Azure AD) de votre abonnement Microsoft 365. Voici les composants de base de l’identité en nuage uniquement.
+Avec l’identité cloud uniquement, tous vos utilisateurs, groupes et contacts sont stockés dans le client Azure Active Directory (Azure AD) de votre abonnement Microsoft 365. Voici les composants de base de l’identité cloud uniquement.
  
-![Composants de base de l’identité en nuage uniquement](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![Composants de base de l’identité cloud uniquement](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-Les utilisateurs et leurs comptes d’utilisateur dans les organisations peuvent être catégorisés de plusieurs façons. Par exemple, certains sont employés et ont un statut permanent. Certains sont des fournisseurs, des sous-traitants ou des partenaires dont le statut est temporaire. Certains sont des utilisateurs externes qui n’ont pas de compte d’utilisateur, mais qui doivent toujours avoir accès à des ressources et des services spécifiques pour prendre en charge l’interaction et la collaboration. Par exemple :
+Les utilisateurs et leurs comptes d’utilisateurs dans les organisations peuvent être classés de plusieurs façons. Par exemple, certains sont des employés et ont un statut permanent. Certains sont des fournisseurs, des sous-traitants ou des partenaires qui ont un statut temporaire. Certains sont des utilisateurs externes qui n’ont pas de compte d’utilisateur, mais qui doivent tout de même avoir accès à des services et des ressources spécifiques pour prendre en charge l’interaction et la collaboration. Par exemple :
 
 - Les comptes client représentent les utilisateurs au sein de votre organisation auxquels vous octroyez une licence pour les services cloud
 
 - Les comptes B2B représentent les utilisateurs externes à votre organisation que vous invitez à participer à la collaboration
 
-Prenez le stock des types d’utilisateurs de votre organisation. Quels sont les regroupements ? Par exemple, vous pouvez regrouper des utilisateurs selon des fonctions ou des objectifs de haut niveau pour votre organisation.
+Faites le point sur les types d’utilisateurs de votre organisation. Quels sont les regroupements ? Par exemple, vous pouvez grouper des utilisateurs par fonction ou objectif de haut niveau pour votre organisation.
 
 Par ailleurs, certains services cloud peuvent être partagés avec des utilisateurs externes à votre organisation sans comptes d’utilisateur. Vous devrez identifier ces groupes d’utilisateurs également.
 
-Vous pouvez utiliser des groupes dans Azure AD à plusieurs fins afin de simplifier la gestion de votre environnement Cloud. Par exemple, avec les groupes Azure AD, vous pouvez :
+Vous pouvez utiliser des groupes dans Azure AD à plusieurs fins qui simplifient la gestion de votre environnement cloud. Par exemple, avec les groupes Azure AD, vous pouvez :
 
 - Utilisez les licences basées sur les groupes pour attribuer automatiquement des licences pour Microsoft 365 à vos comptes d’utilisateur dès qu’elles sont ajoutées en tant que membres.
-- Ajouter des comptes d’utilisateurs à des groupes spécifiques de manière dynamique en fonction des attributs de compte d’utilisateur, tels que le nom du service.
-- Approvisionner automatiquement les utilisateurs pour les applications SaaS (Software as a service) et protéger l’accès à ces applications à l’aide de l’authentification multifacteur (MFA) et d’autres stratégies d’accès conditionnel.
-- Mettre en service des autorisations et des niveaux d’accès pour les sites d’équipe SharePoint Online.
+- Ajoutez dynamiquement des comptes d’utilisateur à des groupes spécifiques en fonction des attributs de compte d’utilisateur, tels que le nom du service.
+- Approvisionnement automatique des utilisateurs pour les applications SaaS (Software as a Service) et pour protéger l’accès à ces applications à l’aide de l’authentification multifacteur (MFA) et d’autres stratégies d’accès conditionnel.
+- Fournir des autorisations et des niveaux d’accès pour les sites d’équipe SharePoint Online.
 
-## <a name="next-steps-for-cloud-only-identity"></a>Étapes suivantes pour l’identité Cloud uniquement
+## <a name="next-steps-for-cloud-only-identity"></a>Étapes suivantes pour l’identité cloud uniquement
 
 - [Gérer les comptes d’utilisateurs](manage-microsoft-365-accounts.md)
 - [Attribution de licences aux comptes d’utilisateurs](assign-licenses-to-user-accounts.md)
-- [Gérer les groupes et l’appartenance au groupe](manage-microsoft-365-groups.md)
+- [Gérer les groupes et l’appartenance à un groupe](manage-microsoft-365-groups.md)
 - [Gérer les mots de passe de compte d’utilisateur](manage-microsoft-365-passwords.md)

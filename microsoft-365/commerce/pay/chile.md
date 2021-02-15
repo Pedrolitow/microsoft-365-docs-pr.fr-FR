@@ -24,12 +24,12 @@ ms.locfileid: "48637474"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Payez uniquement en USD. Pour que le paiement soit effectué, le nom de votre société et le ou les numéros de facture doivent être fournis sur votre avis de remise.
+Veuillez payer en USD uniquement. Pour que le paiement soit effectué, le nom de votre société et le ou les numéro(s) de facture(s) doivent être fournis sur vos conseils.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Bank of America  
-**Branche :** Comptent  
-**Code SWIFT :** BOFAUS3N  
-**Numéro de compte :** 4426587954  
-**Nom du compte :** Librairie  
+**Banque :** Bank of America  
+**Branche :** Dallas  
+**Code SWIFT :** BOFAUS3N  
+**Numéro de compte :** 4426587954  
+**Nom du compte :** Microsoft  

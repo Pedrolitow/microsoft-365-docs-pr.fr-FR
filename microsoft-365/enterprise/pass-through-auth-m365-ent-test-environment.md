@@ -27,7 +27,7 @@ ms.locfileid: "48487445"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Authentification directe pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 pour les environnements de test d’entreprise et Office 365.*
+*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 entreprise et Office 365 Entreprise.*
 
 Les organisations désireuses d’utiliser directement leur infrastructure d’Active Directory Domain Services (AD DS) en local pour l’authentification aux applications et services sur le cloud Microsoft peuvent utiliser l’authentification directe. Cet article décrit comment configurer l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365. Voici la configuration que vous obtenez:
   
@@ -51,7 +51,7 @@ Suivez les instructions fournies dans l’article [Synchronisation de hachage de
   
 Cette configuration se compose des éléments suivants :  
   
-- Microsoft 365 E5 version d’évaluation ou d’abonnement payant.
+- Abonnement d’essai ou payant Microsoft 365 E5.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine TESTLAB AD DS avec le client Azure AD de votre abonnement Microsoft 365 de manière périodique.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Phase 2 : Configuration de l’authentification directe pour Azure AD Connect sur APP1
@@ -80,13 +80,13 @@ Durant cette phase, vous allez configurer Azure AD Connect sur APP1 pour qu’
 
 10.    Cliquez sur **Authentification directe**. Le volet **Authentification directe** répertorie les serveurs où vos agents d’authentification sont installés. APP1 devrait figurer dans la liste. Fermez le volet **Authentification directe**.
 
-Ensuite, testez la capacité à se connecter à votre abonnement avec le <strong>User1@testlab.</strong>\<your public domain> nom d’utilisateur du compte utilisateur1.
+Ensuite, testez la possibilité de vous inscrire à votre abonnement avec le <strong>user1@testlab.</strong>\<your public domain> nom d’utilisateur du compte utilisateur1.
 
 1. Dans APP1, déconnectez-vous, puis reconnectez-vous avec un compte différent.
 
 2. Quand vous êtes invité à saisir le nom d’utilisateur et le mot de passe, indiquez <strong>utilisateur1@testlab.</strong>\<your public domain> et le mot de passe utilisateur1. Vous devez correctement vous connecter en tant qu’ Utilisateur1.
 
-Veuillez noter que même si l’utilisateur User1 dispose des autorisations d’administrateur pour le domaine TESTLAB AD DS, il n’est pas un administrateur général. Par conséquent, vous ne verrez pas l’icône**Administrateur**comme une option.
+Veuillez noter que même si l’utilisateur User1 dispose des autorisations d’administrateur pour le domaine TESTLAB AD DS, il n’est pas un administrateur général. Par conséquent, vous ne verrez pas l’icône **Administrateur** comme une option.
 
 Voici la configuration obtenue :
 
@@ -94,7 +94,7 @@ Voici la configuration obtenue :
  
 Cette configuration se compose des éléments suivants : 
 
-- Un abonnement d’évaluation ou payant Microsoft 365 E5 avec le domaine DNS testlab.\<your domain name> Inscrit(e).
+- Un abonnement d’essai ou payant Microsoft 365 E5 avec le domaine DNS testlab.\<your domain name> Inscrit(e).
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Un agent d’authentification s’exécute sur APP1 pour traiter les demandes d’authentification directe provenant du client Azure AD de votre abonnement Microsoft 365.
 
 ## <a name="next-step"></a>Étape suivante
@@ -107,4 +107,4 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)

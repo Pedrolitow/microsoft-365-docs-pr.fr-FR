@@ -24,12 +24,12 @@ ms.locfileid: "48638002"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en USD uniquement et référencer le ou les numéros de votre facture sur votre bordereau de paiement.
+N’hésitez pas à payer en USD uniquement et à référencer vos numéro(s) de facture à votre paiement.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Bank of America  
-**Branch** Comptent  
-**Code SWIFT :** BOFAUS3N  
-**Numéro de compte :** 4426587954  
-**Nom du compte :** Librairie  
+**Banque :** Bank of America  
+**Branch** Dallas  
+**Code SWIFT :** BOFAUS3N  
+**Numéro de compte :** 4426587954  
+**Nom du compte :** Microsoft  

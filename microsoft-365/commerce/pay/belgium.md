@@ -24,13 +24,13 @@ ms.locfileid: "48637750"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md). 
 
-Veuillez payer en euros seulement et référencer le (s) Numéro (s) de facturation sur votre bordereau de paiement.
+N’hésitez pas à payer en EUR uniquement et à référencer vos numéro(s) de facture sur votre facture.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank, Londres  
-**Code SWIFT :** CITIGB2L  
-**Code de tri :** 185008  
-**IBAN :** GB31CITI18500812207591  
-**Numéro de compte :** 12207591  
-**Numéro** de compte : LIBRAIRIE  
+**Banque :** Bank, Londres  
+**Code Swift :** CITIGB2L  
+**Code SORT :** 185008  
+**IBAN :** GB31CITI18500812207591  
+**Numéro de compte :** 12207591  
+**Nombre total :** MICROSOFT  

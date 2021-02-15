@@ -1,5 +1,5 @@
 ---
-title: Notions de base sur les unités
+title: Informations de base sur l’allotment
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
-description: En savoir plus sur la nouvelle fonctionnalité unités.
+description: Découvrez la nouvelle fonctionnalité d’allotments.
 ms.openlocfilehash: 2ab8efd637bb278faf6065559cab26cb7016975b
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -21,32 +21,32 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48638230"
 ---
-# <a name="allotment-basics"></a>Notions de base sur les unités
+# <a name="allotment-basics"></a>Informations de base sur l’allotment
 
-Les allouer des licences vous permettent de définir des limites de licence et de déléguer la gestion de l’attribution de licence uniquement aux limites de produits et de licences que vous sélectionnez.
+Les attributions de licence vous permet de définir des limites de licence et de déléguer la gestion de l’attribution de licence uniquement aux produits et licences que vous sélectionnez.
 
-Les unités utilisent une licence basée sur les groupes pour attribuer des licences à vos utilisateurs. Les limites de licence fournissent un contrôle supplémentaire sur le nombre de licences attribuées aux utilisateurs de vos groupes. Par conséquent, même lorsque vous augmentez le nombre d’utilisateurs de vos groupes, vous pouvez vous assurer que vous respectez la limite de licence que vous avez définie pour votre unité.
+Les affectations utilisent des licences basées sur des groupes pour attribuer des licences à vos utilisateurs. Les limites de licence offrent un contrôle supplémentaire sur le nombre de licences attribuées aux utilisateurs de vos groupes. Ainsi, même à mesure que le nombre d’utilisateurs dans vos groupes augmente, vous pouvez vous assurer que vous respectez la limite de licence que vous avez définie pour votre allotment.
 
-Vous pouvez également déléguer la gestion de vos unités. Les propriétaires de compartiments délégués ont accès au centre d’administration, mais ils peuvent uniquement voir et gérer les licences dans les unités qu’ils possèdent. Cela permet une délégation plus granulaire de la gestion des licences au sein de votre organisation.
+Vous pouvez également déléguer la gestion de vos allotments. Les propriétaires d’autorisation délégués ont accès au Centre d’administration, mais peuvent uniquement voir et gérer les licences dans les autorisations dont ils sont propriétaires. Cela fournit une délégation plus granulaire de la gestion des licences au sein de votre organisation.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-Vous devez respecter les exigences en matière de licences pour les [licences basées sur les groupes](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
+Vous devez respecter les exigences de licence pour [les licences basées sur des groupes.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)
 
-Vous pouvez utiliser des unités avec n’importe quel produit accessible aux utilisateurs :
+Vous pouvez utiliser des allotments avec n’importe quel produit disponible pour les utilisateurs :
 
 - Suites Office et produits autonomes
-- Produits d’entreprise et de mobilité
+- Produits Enterprise et Mobility
 - Produits Dynamics 365
 
-Les produits suivants ne peuvent pas être utilisés avec des unités :
+Les produits suivants ne peuvent pas être utilisés avec des allotments :
 
 - Applications du Microsoft Store
-- Logiciel perpétuel ou logiciel affecté directement à un utilisateur s’il n’y a pas de licence impliquée.
+- Logiciels perpétuelles ou logiciels directement attribués à un utilisateur en l’absence de licence.
 - Ressources Azure
 
-Vous devez être un administrateur général ou un administrateur de licence pour commencer à utiliser une unité.
+Vous devez être un administrateur global ou un administrateur de licence pour prendre en compte une autorisation.
 
 ## <a name="getting-started"></a>Prise en main
 
-La fonctionnalité unités est disponible dans une préversion privée pour un petit nombre de clients. Si vous êtes intéressé par la jointure, remplissez ce formulaire : [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) .
+La fonctionnalité d’allotments est disponible en prévisualisation privée uniquement pour un petit nombre de clients. Si vous êtes intéressé par la jointation, remplissez ce formulaire : [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) .

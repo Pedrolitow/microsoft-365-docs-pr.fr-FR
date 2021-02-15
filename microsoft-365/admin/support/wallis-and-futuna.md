@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour les îles Wallis et Futuna
+title: Informations de support pour Wallis et Futuna
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 5babc628894e43788756a3df94bcddf11a83fa0e
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -25,19 +25,19 @@ ms.locfileid: "48638662"
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Sun-Fri 8 h-4 AM
+Français : Sun-Fri 20h00 à 16h00
 
-Anglais : Sun-Fri 8 h-4 AM
+Anglais : Sun-Fri 20h00 à 16h00
 
 ### <a name="technical-support"></a>Support technique :
 
-Français : Mon-Fri 7 h-8 AM
+Français : Mon-Fri 19h00 à 20h00
 
 Anglais : 24h/24, 7j/7
 
-Frais d’appels internationaux appliqués
+Les frais d’appels internationaux s’appliquent

@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour la Trinité-et-Tobago
+title: Informations de support pour Trinité-et-Tobago
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 916b863f66571463f432e7e902cc6ce4ebc3991f
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,7 +20,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48639118"
 ---
-# <a name="contact-support-for-trinidad-amp-tobago"></a>Contacter le support pour la Trinité- &amp; Tobago
+# <a name="contact-support-for-trinidad-amp-tobago"></a>Contacter le support technique de &amp; Trinité-Tobago
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
@@ -30,7 +30,7 @@ ms.locfileid: "48639118"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Anglais : Mon-Fri 9 AM-5 PM
+Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 

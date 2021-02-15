@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: Fournit une liste de liens vers des informations utiles pour le déploiement de charges de travail Office Server dans Microsoft Azure.
+description: Fournit une liste de liens vers des informations utiles pour le déploiement des charges de travail Office Server dans Microsoft Azure.
 ms.openlocfilehash: ba294b437d815c81c7747f60b2a82ca0bef05e7a
 ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.locfileid: "48327914"
 
 Avec Microsoft Azure, vous pouvez déployer certaines charges de travail Office Server qui étaient généralement déployées localement dans les services d’infrastructure Azure.
   
-Pour l’infrastructure d’identité Microsoft 365 dans Azure :
+Pour l’infrastructure d’identités Microsoft 365 dans Azure :
 
 - [Utiliser Azure AD pour l’authentification SharePoint Server](using-azure-ad-for-sharepoint-server-authentication.md)
 
-- [Déploiement de la synchronisation d’annuaires Microsoft 365 dans Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Déployer la synchronisation d’annuaires Microsoft 365 dans Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
@@ -48,7 +48,7 @@ Pour les charges de travail SharePoint Server 2013 dans Azure :
 - [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Centre de solutions et d'architecture Microsoft 365](../solutions/solution-architecture-center.md)
   

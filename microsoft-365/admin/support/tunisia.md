@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: b5b82f1df6a794fac78332eb4b16b6dbcfa14aef
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -27,27 +27,27 @@ ms.locfileid: "48639099"
 ## <a name="phone-number"></a>Numéro de téléphone
 71 168 700
 
-Sélectionnez l’option 1
+Sélectionner l’option 1
 
-Sélectionnez l’option 9
+Sélectionner l’option 9
 
-Entrez le code 7703
+Entrer le code 7703
 
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Arabe : Sun-Thu 9 AM-5 PM
+Arabe : Sun-Thu 9h00 à 17h00
 
-Français : Mon-Fri 9 AM-5 PM
+Français : Lun.-ven. 9H-17h
 
-Anglais : Mon-Fri 9 AM-5 PM
+Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Arabe : Sun-Thu 9 AM-5 PM
+Arabe : Sun-Thu 9h00 à 17h00
 
-Français : Mon-Fri 8 AM-9 PM
+Français : Lun.-ven. 8H-19h
 
 Anglais : 24h/24, 7j/7
 
-Frais d’appels locaux appliqués
+Frais d’appel local applicables

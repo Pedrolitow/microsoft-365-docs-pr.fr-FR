@@ -27,13 +27,13 @@ ms.locfileid: "48487423"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
+*Ce guide de laboratoire de test ne peut être utilisé que pour les environnements de test Microsoft 365 pour les entreprises.*
 
 La réinitialisation de mot de passe en libre-service (SSPR) d’Azure Active Directory (Azure AD) permet aux utilisateurs de réinitialiser ou de déverrouiller leurs mots de passe ou leurs comptes.
 
 Cet article explique comment configurer et tester les réinitialisations de mot de passe dans votre environnement de test Microsoft 365.
 
-La configuration de SSPR implique trois phases :
+La configuration de SSPR implique trois phases :
 - [Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Étape 2 : Activation de la réécriture du mot de passe](#phase-2-enable-password-writeback)
 - [Étape 3 : Configuration et test de la réinitialisation de mot de passe](#phase-3-configure-and-test-password-reset)
@@ -41,13 +41,13 @@ La configuration de SSPR implique trois phases :
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Pour obtenir un plan de tous les Articles de la pile de guide de laboratoire de test Microsoft 365 pour Enterprise, accédez à [Microsoft 365 pour la pile de guide de laboratoire de test d’entreprise](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Pour obtenir un plan visuel de tous les articles de la pile du Guide de laboratoire de test Microsoft 365 pour entreprise, allez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
-Tout d’abord, suivez les instructions de la [synchronisation de hachage de mot de passe](password-hash-sync-m365-ent-test-environment.md). 
+Tout d’abord, suivez les instructions de la synchronisation [de hachage de mot de passe.](password-hash-sync-m365-ent-test-environment.md) 
 
-La configuration obtenue se présente comme suit :
+La configuration qui en résulte ressemble à ceci :
   
 ![Environnement de test de l’entreprise simulée avec la synchronisation de hachage de mot de passe](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
@@ -65,31 +65,31 @@ La fonction de réécriture du mot de passe doit être activée pour qu’il soi
   
 ## <a name="phase-3-configure-and-test-password-reset"></a>Étape 3 : Configuration et test de la réinitialisation de mot de passe
 
-Dans cette phase, configurez la réinitialisation de mot de passe dans le client Azure AD via l’appartenance à un groupe, puis vérifiez qu’il fonctionne.
+Dans cette phase, configurez la réinitialisation du mot de passe dans le client Azure AD par le biais de l’appartenance à un groupe, puis vérifiez qu’elle fonctionne.
 
 Tout d’abord, activez la réinitialisation de mot de passe pour les comptes d’un groupe Azure AD spécifique.
 
 1. Dans une instance privée de votre navigateur, ouvrez [https://portal.azure.com](https://portal.azure.com), puis connectez-vous avec les informations d’identification de votre compte Administrateur général.
-2. Dans le portail Azure, sélectionnez **groupe Azure Active Directory**  >  **groupes**  >  **New group**.
-3. Définissez le **Type de groupe** sur **Sécurité**, le **Nom du groupe** sur **PWReset**et le **Type d’appartenance** sur **Affecté**.
-4. Sélectionnez **membres**, recherchez et sélectionnez **utilisateur 3**, sélectionnez **sélection**, puis **créer**.
+2. Dans le portail Azure, sélectionnez **Groupe Groupes Azure Active Directory**  >    >  **Nouveau.**
+3. Définissez le **Type de groupe** sur **Sécurité**, le **Nom du groupe** sur **PWReset** et le **Type d’appartenance** sur **Affecté**.
+4. Sélectionnez **Membres,** recherchez et **sélectionnez Utilisateur 3,** **sélectionnez Sélectionner,** puis **créez.**
 5. Fermez le volet **Groupes**.
-6. Dans le volet Azure Active Directory, sélectionnez **réinitialisation du mot de passe** dans le volet de navigation gauche.
+6. Dans le volet Azure Active  Directory, sélectionnez Réinitialiser le mot de passe dans le volet de navigation gauche.
 7. Sur la page **Propriétés–Réinitialiser le mot de passe**, sous l’option **Réinitialisation du mot de passe en libre-service activée**, choisissez **Sélectionné**.
-8. Sélectionnez **Sélectionner un groupe**, sélectionnez le groupe **PWReset** , **puis sélectionnez**  >  **Enregistrer**.
+8. Sélectionnez **Sélectionner un** groupe, sélectionnez le groupe **PWReset,** puis **sélectionnez**  >  **Enregistrer.**
 9. Fermez l’instance privée du navigateur.
 
-Ensuite, testez la réinitialisation du mot de passe pour le compte utilisateur 3.
+Ensuite, testez la réinitialisation du mot de passe pour le compte Utilisateur 3.
 
 1. Ouvrez une nouvelle instance privée du navigateur et accédez à [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
 1. Connectez-vous avec les informations d’identification du compte Utilisateur 3.
-1. Pour **plus d’informations**, sélectionnez **suivant**. 
+1. Dans plus **d’informations requises,** sélectionnez **Suivant.** 
 1. Dans **Ne perdez pas l’accès à votre compte**, indiquez votre numéro de téléphone portable pour configurer l’authentification par téléphone et votre adresse électronique personnelle ou professionnelle pour configurer l’authentification par adresse électronique.
-1. Une fois que les deux sont vérifiés, l’option **semble correcte**, puis fermez l’instance privée du navigateur.
-1. Dans une nouvelle instance de navigateur privé, accédez à [https://aka.ms/sspr](https://aka.ms/sspr) .
-1. Entrez le nom du compte utilisateur 3, entrez les caractères à partir du CAPTCHA, puis cliquez sur **suivant**.
-1. Pour **vérifier l’étape 1**, sélectionnez Envoyer un e-mail à **mon courrier de secours**, puis sélectionnez **courrier électronique**. Lorsque vous recevez le courrier électronique, entrez le code de vérification, puis cliquez sur **suivant**.
-1. Dans **récupérer dans votre compte**, entrez un nouveau mot de passe pour le compte utilisateur 3, puis cliquez sur **Terminer**. Notez le mot de passe modifié du compte d’utilisateur 3 et stockez-le dans un endroit sûr.
+1. Une fois les deux vérifiés, **sélectionnez Apparences,** puis fermez l’instance privée du navigateur.
+1. Dans une nouvelle instance de navigateur privé, allez à [https://aka.ms/sspr](https://aka.ms/sspr) .
+1. Entrez le nom du compte Utilisateur 3, entrez les caractères de la CAPTCHA, puis sélectionnez **Suivant**.
+1. Pour **l’étape de vérification 1,** sélectionnez **Envoyer un e-mail** à mon courrier de remplacement, puis sélectionnez Courrier **électronique.** Lorsque vous recevez l’e-mail, entrez le code de vérification, puis sélectionnez **Suivant**.
+1. Dans **Revenir à votre compte,** entrez un nouveau mot de passe pour le compte Utilisateur 3, puis sélectionnez **Terminer.** Notez le mot de passe modifié du compte d’utilisateur 3 et stockez-le dans un endroit sûr.
 1. Dans un onglet distinct du même navigateur, accédez à [https://portal.office.com](https://portal.office.com), puis connectez-vous avec le nom de compte Utilisateur 3 et son nouveau mot de passe. Vous devez voir la **page d’accueil Microsoft Office**.
 
 ## <a name="next-step"></a>Étape suivante
@@ -102,4 +102,4 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)

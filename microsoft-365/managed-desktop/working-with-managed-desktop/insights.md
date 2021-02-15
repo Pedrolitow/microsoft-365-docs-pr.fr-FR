@@ -1,6 +1,6 @@
 ---
 title: Utiliser les informations
-description: Vue d’ensemble des informations disponibles dans le bureau géré Microsoft
+description: Vue d’ensemble des informations disponibles dans Bureau géré Microsoft
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -18,44 +18,44 @@ ms.locfileid: "48350823"
 ---
 # <a name="work-with-insights"></a>Utiliser les informations
 
-Microsoft Managed Desktop fournit un certain nombre de tableaux de bord que les administrateurs informatiques de votre client peuvent utiliser pour comprendre les différents aspects de la population des appareils. Vous accédez directement à ces éléments dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop).
+Bureau géré Microsoft fournit un certain nombre de tableaux de bord que les administrateurs informatiques de votre client peuvent utiliser pour comprendre différents aspects de la population d’appareils. Vous y accédez directement, dans le [Centre d’administration Microsoft 365.](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop)
 
-Ces tableaux de bord vous permettent de trouver les réponses aux questions suivantes :
+Ces tableaux de bord vous posent les réponses aux questions suivantes :
 
-- Combien d’appareils sont actifs et quand ils ont-ils été utilisés pour la dernière fois ?
-- Quelles sont les applications les plus utilisées et à quel moment ?
-- Quelles applications provoquent des problèmes en bloquant ou en raccrochant un lot ?
-- Comment Microsoft Managed Desktop Operations atténue-t-il ou résout ces problèmes ?
-- Quelles applications consomment le plus d’énergie ?
-- Quelle est la durée de vie de la batterie prévisible mes appareils ?
-- Quel est l’état actuel des mises à jour de sécurité sur les appareils ?
-- Combien de temps faut-il pour 95% des appareils pour obtenir la dernière mise à jour de sécurité ?
-
-
-Pour accéder à ces vues à partir du [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/), accédez à l’onglet bureau géré Microsoft de la page d’accueil et sélectionnez **afficher les détails** dans la zone création de **rapports** :
+- Combien d’appareils sont actifs et quand ont-ils été utilisés pour la dernière fois ?
+- Quelles applications sont les plus utilisées et à quelles heures ?
+- Quelles applications sont à l’origine des problèmes en se crashant ou en se maintenant en suspension ?
+- Comment les opérations Bureau géré Microsoft atténuent-ils ou résolvant ces problèmes ?
+- Quelles applications consomment le plus d’énergie ?
+- Quelle est l’autonomie prévue de la batterie de mes appareils ?
+- Quel est l’état actuel des mises à jour de sécurité sur les appareils ?
+- Combien de temps a pris 95 % des appareils pour se mettre à jour avec la dernière mise à jour de sécurité ?
 
 
-![Page principale du centre d’administration avec zone de création de rapports dans la partie inférieure gauche et afficher le lien Détails](../../media/insights-main.png)
+Pour accéder à ces vues à partir du Gestionnaire de point de terminaison [Microsoft,](https://endpoint.microsoft.com/)accédez à l’onglet Bureau géré Microsoft sur la page d’accueil et sélectionnez Afficher les **détails** dans la zone **Rapports** :
+
+
+![Page principale du centre d’administration avec zone De rapports en bas à gauche et lien Afficher les détails](../../media/insights-main.png)
 
 
 ## <a name="usage-insights"></a>Informations d’utilisation
-Cette vue fournit des mesures d’utilisation pour vos appareils de bureau gérés par Microsoft. 
+Cet affichage fournit des mesures d’utilisation pour vos appareils bureau géré Microsoft. 
 
-Pour afficher les données d’utilisation, sélectionnez l’onglet **utilisation** .
+Pour afficher les données d’utilisation, sélectionnez **l’onglet** Utilisation.
 
-En savoir plus sur les informations d' [utilisation](usage-insights.md).
+En savoir plus sur [les informations d’utilisation.](usage-insights.md)
 
 ## <a name="reliability-insights"></a>Informations de fiabilité
-Cet affichage vous fournit un résumé de l’intégrité de vos appareils gérés. Pour afficher les données de fiabilité, sélectionnez l’onglet **fiabilité** .
+Cette vue vous fournit un résumé d’état de vos appareils gérés. Pour afficher les données de fiabilité, sélectionnez **l’onglet** Fiabilité.
 
-En savoir plus sur les informations de [fiabilité](reliability-insights.md).
+En savoir plus sur [les informations de fiabilité.](reliability-insights.md)
 
 ## <a name="battery-insights"></a>Aperçu de la batterie
-Cette vue présente des informations sur la consommation d’énergie des applications et la durée de vie de la batterie pour les périphériques de votre environnement. Pour afficher ces informations, sélectionnez l’onglet **batterie** .
+Cet affichage vous présente des informations sur la consommation d’énergie des applications et l’autonomie de la batterie projetée pour les appareils de votre environnement. Pour afficher ces informations, sélectionnez **l’onglet** Batterie.
 
-En savoir plus sur les informations sur les [batteries](battery-insights.md).
+En savoir plus sur [les informations sur la batterie.](battery-insights.md)
 
 ## <a name="windows-security-update-insights"></a>Perspectives sur la mise à jour de sécurité Windows
-Cet affichage vous montre des informations sur l’état des mises à jour de sécurité pour vos appareils de bureau gérés par Microsoft. Pour afficher ces informations, sélectionnez l’onglet **mises à jour de sécurité Windows** .
+Cette vue affiche des informations sur l’état des mises à jour de sécurité pour vos appareils de bureau géré Microsoft. Pour afficher ces informations, sélectionnez l’onglet Mises à jour **de sécurité Windows.**
 
-En savoir plus sur les informations sur les [mises à jour de sécurité](security-update-insights.md).
+En savoir plus sur [les informations sur les mises à jour de sécurité.](security-update-insights.md)

@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 'Résumé : utilisez PowerShell pour gérer les propriétés de votre compte d’utilisateur Skype entreprise Online avec des stratégies.'
+description: 'Résumé : Utilisez PowerShell pour gérer les propriétés de votre compte d’utilisateur Skype Entreprise Online avec des stratégies.'
 ms.openlocfilehash: 20a75fa1c131f693fcf30d20477af5c9ee7aed35
 ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
@@ -25,16 +25,16 @@ ms.locfileid: "48477040"
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Pour gérer de nombreuses propriétés de compte d’utilisateur pour Skype entreprise Online, vous devez les spécifier en tant que propriétés de stratégies avec PowerShell pour Microsoft 365.
+Pour gérer de nombreuses propriétés de compte d’utilisateur pour Skype Entreprise Online, vous devez les spécifier en tant que propriétés des stratégies avec PowerShell pour Microsoft 365.
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Suivez ces instructions pour exécuter les commandes (sautez les étapes que vous avez déjà effectuées) :
 
   > [!Note]
-  > Le connecteur Skype entreprise Online fait actuellement partie du dernier module PowerShell Teams. Si vous utilisez la version publique la plus récente PowerShell Teams, vous n’avez pas besoin d’installer le connecteur Skype entreprise online.
+  > Le connecteur Skype Entreprise Online fait actuellement partie du dernier module PowerShell Teams. Si vous utilisez la version publique la plus récente de PowerShell Teams, vous n’avez pas besoin d’installer le connecteur Skype Entreprise Online.
 
-1. Installez le [module PowerShell teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+1. Installez le [module PowerShell Teams.](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
     
 2. Ouvrez l’invite de commandes Windows PowerShell et exécutez les commandes suivantes : 
 
@@ -67,7 +67,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-Dans cet exemple, les valeurs au sein de cette stratégie déterminent ce qu'un utilisateur peut ou ne peut pas faire en matière de communication avec des utilisateurs fédérés. Par exemple, la propriété EnableOutsideAccess doit être définie sur True pour qu'un utilisateur puisse communiquer avec des personnes extérieures à l'organisation. Notez que cette propriété n’apparaît pas dans le centre d’administration Microsoft 365. Elle est automatiquement définie sur True ou False en fonction des autres sélections que vous effectuez. Les deux autres propriétés qui vous intéressent sont les suivantes :
+Dans cet exemple, les valeurs au sein de cette stratégie déterminent ce qu'un utilisateur peut ou ne peut pas faire en matière de communication avec des utilisateurs fédérés. Par exemple, la propriété EnableOutsideAccess doit être définie sur True pour qu'un utilisateur puisse communiquer avec des personnes extérieures à l'organisation. Notez que cette propriété n’apparaît pas dans le Centre d’administration Microsoft 365. Elle est automatiquement définie sur True ou False en fonction des autres sélections que vous effectuez. Les deux autres propriétés qui vous intéressent sont les suivantes :
   
 - **EnableFederationAccess** indique si l'utilisateur peut communiquer avec des personnes à partir de domaines fédérés.
     
@@ -89,13 +89,13 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 Cette commande trouve la stratégie attribuée à l’utilisateur, puis les fonctionnalités activées ou désactivées dans cette stratégie.
   
-Pour gérer les stratégies Skype entreprise Online avec PowerShell, consultez les applets de commande pour :
+Pour gérer les stratégies Skype Entreprise Online avec PowerShell, consultez les cmdlets pour :
 
 - [Stratégie du client](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
 - [Stratégie de conférence](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
 - [Stratégie mobile](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
 - [Stratégie de messagerie vocale en ligne](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
-- [Stratégie de routage des communications vocales](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+- [Stratégie de routage des voix](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
 
 
 > [!NOTE]
@@ -117,7 +117,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 Le paramètre ApplicableTo limite les données renvoyées aux stratégies qui peuvent être attribuées à l’utilisateur indiqué (par exemple, Alex Darrow). Selon les restrictions liées à la gestion des licences et à l’emplacement d’utilisation, cela pourrait représenter un sous-ensemble de toutes les stratégies disponibles. 
   
-Dans certains cas, les propriétés de stratégies ne sont pas utilisées avec Microsoft 365, tandis que d’autres peuvent uniquement être gérées par le personnel du support technique Microsoft. 
+Dans certains cas, les propriétés des stratégies ne sont pas utilisées avec Microsoft 365, tandis que d’autres ne peuvent être gérées que par le personnel du support Technique de Microsoft. 
   
 Avec Skype Entreprise Online, les utilisateurs doivent être gérés par une stratégie ou une autre. Si une propriété portant sur les stratégies est vide, cela signifie que l'utilisateur en question est géré par une stratégie globale, c'est-à-dire une stratégie qui est appliquée automatiquement à un utilisateur, sauf si une stratégie individuelle est appliquée à cet utilisateur. Si aucune stratégie de client n'est répertoriée pour un compte d'utilisateur, cela signifie qu'il est géré par la stratégie globale. Vous pouvez déterminer la stratégie de client globale avec cette commande :
   

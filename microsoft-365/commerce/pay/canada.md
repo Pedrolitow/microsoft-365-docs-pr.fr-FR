@@ -24,21 +24,21 @@ ms.locfileid: "48637510"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Payez en CAO uniquement et référencez le ou les numéros de votre facture sur votre bordereau de paiement.
+N’hésitez pas à payer en CAD uniquement et à référencer vos numéro(s) de facture lors de votre paiement.
 
-## <a name="check"></a>Vérifier
+## <a name="check"></a>Chèque
 
-**Tiers :** Librairie
+**Lasse:** Microsoft
 
-**Adresse postale :**  
+**Adresse postale :**  
 Bank of America, Lockbox 910430, PO Box 4090, STN A, Toronto ON M5W 0E9, Canada
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Bank of America, Toronto  
-**Code SWIFT :** BOFACATT  
-**Numéro de compte :** 45571239  
-**Nom du compte :** Librairie  
-**ID de la Banque :** 241  
-**Branch :** 56792  
-**Routage/transit # :** 024156792  
+**Banque :** Bank of America, Toronto  
+**Code SWIFT :** BOFACATT  
+**Numéro de compte :** 45571239  
+**Nom du compte :** Microsoft  
+**ID bancaire :** 241  
+**Branche :** 56792  
+**Routage/Transit #:** 024156792  

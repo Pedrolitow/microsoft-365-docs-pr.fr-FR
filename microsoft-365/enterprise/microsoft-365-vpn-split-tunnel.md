@@ -90,7 +90,7 @@ Cet ensemble de points de terminaison étroitement limité peut être séparé d
 
 Les éléments de sécurité tels que la DLP, la protection antivirus, l’authentification et le contrôle d’accès peuvent être fournis beaucoup plus efficacement contre ces points d'extrémité dans les différentes couches du service. Cela permet également de dérouter l’essentiel du volume de trafic à partir de la solution VPN, ce qui libère la capacité VPN pour le trafic important de l’entreprise qui en dépend encore. Cela devrait également supprimer la nécessité, dans de nombreux cas, de passer par un programme de mise à niveau long et coûteux pour faire face à ce nouveau mode de fonctionnement.
 
-![Détails de la configuration VPN de tunnel scindé](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Détails de configuration VPN de tunnel partagé](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Image 3 : Une solution de segmentation de tunnel VPN avec des exceptions Office 365 définies, envoyées directement au service. Tout autre trafic est renvoyé dans le réseau d'entreprise, quelle que soit la destination._
 

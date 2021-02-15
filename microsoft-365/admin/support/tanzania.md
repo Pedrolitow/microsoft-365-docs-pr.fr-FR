@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Découvrez comment contacter le support pour votre pays ou région.
+description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: ff0fcf9a2edc528bcf81106232c32eb2515bf9c9
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -25,19 +25,19 @@ ms.locfileid: "48639190"
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
-+ 254 20 286 8800
++254 20 286 8800
 
-Sélectionnez l’option 9
+Sélectionner l’option 9
 
-Entrez le code 7704
+Entrer le code 7704
 
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Anglais : Mon-Fri 10 AM-6 PM
+Anglais : Mon-Fri 10h00 à 18h00
 
 ### <a name="technical-support"></a>Support technique :
 
 Anglais : 24h/24, 7j/7
 
-Frais d’appels internationaux appliqués
+Les frais d’appels internationaux s’appliquent

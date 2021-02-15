@@ -24,13 +24,13 @@ ms.locfileid: "48637450"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer uniquement en pesos de Colombie. Pour que le paiement soit effectué, le nom de votre société et le ou les numéros de facture doivent être fournis sur l’avis de remise.
+N’hésitez pas à payer en $$$$$10 uniquement. Pour que le paiement soit traitée, le nom de votre société et le ou les numéro(s) de facture(s) doivent être fournis sur conseils.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank, Bogota ;  
-**Code de la Banque :** 09  
-**Code SWIFT :** CITICOBB  
-**Nil :** 800.198.591-3  
-**Numéro de compte :** 0060534055  
-**Nom du compte :** Branche de Microsoft Colombie Inc.   
+**Banque :** Bank, City ;  
+**Code bancaire :** 09  
+**Code SWIFT :** CIFLUBB  
+**NIT :** 800.198.591-3  
+**Numéro de compte :** 0060534055  
+**Nom du compte :** Branch of Microsoft Colombie Inc.   

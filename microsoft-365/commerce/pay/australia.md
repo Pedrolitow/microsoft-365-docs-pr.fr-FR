@@ -24,12 +24,12 @@ ms.locfileid: "48637966"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-N’oubliez pas de payer en AUD et référencez le ou les numéros de votre facture sur votre bordereau de paiement.
+Veuillez payer en auD uniquement et référencer vos numéro(s) de facture sur votre facture.
 
-## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
+## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Citibank, Sydney  
-**Code SWIFT :** CITIAU2X  
-**Code BSB :** 242000  
-**Numéro de compte :** 205565043  
-**Nom du compte :** MICROSOFT REGIONAL SALES CORP  
+**Banque :** Bank, Sydney  
+**Code SWIFT :** CITIAU2X  
+**Code BSB :** 242000  
+**Numéro de compte :** 205565043  
+**Nom du compte :** MICROSOFT REGIONAL SALES CORP  

@@ -18,7 +18,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Résumé : utilisez PowerShell pour créer de nouveaux sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.'
+description: 'Résumé : Utilisez PowerShell pour créer des sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.'
 ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
 ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
@@ -30,22 +30,22 @@ ms.locfileid: "48594917"
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Lorsque vous utilisez PowerShell pour Microsoft 365 pour créer des sites SharePoint Online et ajouter des utilisateurs, vous pouvez rapidement et régulièrement exécuter des tâches beaucoup plus rapidement que vous ne pouvez le faire dans le centre d’administration de Microsoft 365. Vous pouvez également effectuer des tâches qui ne peuvent pas être effectuées dans le centre d’administration 365 de Microsoft. 
+Lorsque vous utilisez PowerShell pour Microsoft 365 pour créer des sites SharePoint Online et ajouter des utilisateurs, vous pouvez effectuer rapidement et à plusieurs reprises des tâches beaucoup plus rapidement que dans le Centre d’administration Microsoft 365. Vous pouvez également effectuer des tâches qui ne sont pas possibles dans le Centre d’administration Microsoft 365. 
 
 ## <a name="connect-to-sharepoint-online"></a>Se connecter à SharePoint Online
 
-Les procédures décrites dans cette rubrique vous obligent à vous connecter à SharePoint Online. Pour obtenir des instructions, consultez la rubrique [connexion à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Les procédures de cette rubrique nécessitent une connexion à SharePoint Online. Pour obtenir des instructions, voir [Se connecter à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-## <a name="step-1-create-new-site-collections-using-powershell"></a>Étape 1 : créer des collections de sites à l’aide de PowerShell
+## <a name="step-1-create-new-site-collections-using-powershell"></a>Étape 1 : Créer des collections de sites à l’aide de PowerShell
 
-Créez plusieurs sites à l’aide de PowerShell et d’un fichier. csv que vous créez à l’aide de l’exemple de code fourni et du bloc-notes. Pendant cette procédure, vous allez remplacer les informations de l’espace réservé indiquées entre parenthèses par vos informations propres au site et au client. Ce processus vous permet de créer un seul fichier et d’exécuter une seule commande PowerShell qui utilise ce fichier. Cela rend les actions entreprises à la fois reproductibles et portables et élimine beaucoup, sinon la totalité, des erreurs qui peuvent provenir de la saisie de longues commandes dans SharePoint Online Management Shell. Cette procédure est en deux parties. Tout d’abord, vous allez créer un fichier. csv, puis vous ferez référence à ce fichier. csv à l’aide de PowerShell, qui utilisera son contenu pour créer les sites.
+Créez plusieurs sites à l’aide de PowerShell et d’un fichier .csv que vous créez à l’aide de l’exemple de code fourni et du Bloc-notes. Pendant cette procédure, vous allez remplacer les informations de l’espace réservé indiquées entre parenthèses par vos informations propres au site et au client. Ce processus vous permet de créer un fichier unique et d’exécuter une seule commande PowerShell qui utilise ce fichier. Cela rend les actions entreprises à la fois reproductibles et portables et élimine beaucoup, sinon la totalité, des erreurs qui peuvent provenir de la saisie de longues commandes dans SharePoint Online Management Shell. Cette procédure est en deux parties. Tout d’abord, vous allez créer un fichier .csv, puis référencer ce fichier .csv à l’aide de PowerShell, qui utilisera son contenu pour créer les sites.
 
-L’applet de commande PowerShell importe le fichier. csv et le canalise en boucle à l’intérieur des accolades qui lit la première ligne du fichier comme en-têtes de colonne. L’applet de commande PowerShell parcourt ensuite les enregistrements restants, crée une nouvelle collection de sites pour chaque enregistrement et affecte des propriétés de la collection de sites en fonction des en-têtes de colonne.
+L’cmdlet PowerShell importe le fichier .csv et le dirige vers une boucle entre crochets qui lit la première ligne du fichier en tant qu’en-têtes de colonne. L’cmdlet PowerShell par itérera ensuite dans les enregistrements restants, crée une collection de sites pour chaque enregistrement et affecte les propriétés de la collection de sites en fonction des en-têtes de colonne.
 
 ### <a name="create-a-csv-file"></a>Créer un fichier CSV
 
 > [!NOTE]
-> Le paramètre de quota de ressources fonctionne uniquement sur les sites classiques. Si vous utilisez ce paramètre sur un site moderne, vous pouvez recevoir un message d’avertissement indiquant qu’il a été abandonné. 
+> Le paramètre de quota de ressources fonctionne uniquement sur les sites classiques. Si vous utilisez ce paramètre sur un site moderne, vous pouvez recevoir un message d’avertissement signalant qu’il a été supprimé. 
 
 1. Ouvrez le Bloc-notes et collez-y le bloc de texte suivant :<br/>
 
@@ -56,20 +56,20 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>Où *client* est le nom de votre client, et *propriétaire* le nom d’utilisateur de l’utilisateur sur votre client auquel vous souhaitez accorder le rôle administrateur principal de la collection de sites.<br/>(Vous pouvez appuyer sur Ctrl + H lorsque vous utilisez le bloc-notes pour remplacer les remplacements en bloc plus rapidement.)<br/>
+<br/>Où *le client* est le  nom de votre client et le propriétaire est le nom d’utilisateur de l’utilisateur sur votre client auquel vous souhaitez accorder le rôle d’administrateur principal de collection de sites.<br/>(Vous pouvez appuyer sur Ctrl+H lorsque vous utilisez le Bloc-notes pour accélérer le remplacement en bloc.)<br/>
 
-2. Enregistrez le fichier sur votre bureau en tant que **SiteCollections.csv**.<br/>
+2. Enregistrez le fichier sur votre ordinateur de **SiteCollections.csv**.<br/>
 
 > [!TIP]
-> Avant d’utiliser ce fichier de script. csv ou Windows PowerShell, il est recommandé de s’assurer qu’il n’y a pas de caractères étrangers ou non imprimables. Ouvrez le fichier dans Word et, dans le ruban, cliquez sur l’icône paragraphe pour afficher les caractères non imprimables. Il ne doit pas y avoir de caractères non imprimables superflus. Par exemple, il ne doit y avoir aucune marque de paragraphe après la dernière marque à la fin du fichier.
+> Avant d’utiliser ce fichier de script .csv ou Windows PowerShell, il est bon de s’assurer qu’il n’y a pas de caractères superflus ou non imprimants. Ouvrez le fichier dans Word et, dans le ruban, cliquez sur l’icône paragraphe pour afficher les caractères non imprimables. Il ne doit pas y avoir de caractères non imprimables superflus. Par exemple, il ne doit y avoir aucune marque de paragraphe après la dernière marque à la fin du fichier.
 
 ### <a name="run-the-windows-powershell-command"></a>Exécuter la commande Windows PowerShell
 
-1. À l’invite Windows PowerShell, tapez ou copiez-collez la commande suivante, puis appuyez sur entrée :<br/>
+1. À l’Windows PowerShell, tapez ou copiez-collez la commande suivante, puis appuyez sur Entrée :<br/>
 ```powershell
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
-<br/>Où *MyAlias* est égal à votre alias d’utilisateur.<br/>
+<br/>Où *MyAlias est* égal à votre alias d’utilisateur.<br/>
 
 2. Attendez que l’invite de Windows PowerShell réapparaisse. Cela peut prendre une minute ou deux.<br/>
 
@@ -80,15 +80,15 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. Notez les nouvelles collections de sites dans la liste. À l’aide de notre exemple de fichier CSV, vous devriez voir les collections de sites suivantes : **TeamSite01**, **Blog01**, **Projet01**et **Community01**
+4. Notez les nouvelles collections de sites dans la liste. À l’aide de notre exemple de fichier CSV, vous verrez les collections de sites suivantes : **TeamSite01,** **Blog01,** **Project01** et **Community01**
 
-C’est fait. Vous avez créé plusieurs collections de sites à l’aide du fichier. csv que vous avez créé et d’une commande Windows PowerShell unique. Vous êtes maintenant prêt à créer et à affecter des utilisateurs à ces sites.
+C’est fait. Vous avez créé plusieurs collections de sites à l’aide du fichier .csv que vous avez créé et d’Windows PowerShell commande. Vous êtes maintenant prêt à créer et à affecter des utilisateurs à ces sites.
 
 ## <a name="step-2-add-users-and-groups"></a>Étape 2 : Ajout d’utilisateurs et de groupes
 
 Vous allez maintenant créer des utilisateurs et les ajouter à un groupe de collections de sites. Vous utiliserez ensuite un fichier .csv pour télécharger en bloc de nouveaux groupes et utilisateurs.
 
-Les procédures suivantes continuent à utiliser les exemples de sites TeamSite01, Blog01, Projet01 et Community01.
+Les procédures suivantes continuent à utiliser les exemples de sites TeamSite01, Blog01, Project01 et Community01.
 
 ### <a name="create-csv-and-ps1-files"></a>Créer des fichiers .csv et .ps1
 
@@ -105,9 +105,9 @@ https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
 https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
 https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
-<br/>Où *client* est égal à votre nom de client.<br/>
+<br/>Où *le client* est égal à votre nom de client.<br/>
 
-2. Enregistrez le fichier sur votre bureau en tant que **GroupsAndPermissions.csv**.<br/>
+2. Enregistrez le fichier sur votre bureau sous **GroupsAndPermissions.csv**.<br/>
 
 3. Ouvrez une nouvelle instance du Bloc-notes et collez-y le bloc de texte suivant :<br/>
 
@@ -122,9 +122,9 @@ Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint
 Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
 Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
 ```
-<br/>Où *client* est égal à votre nom de client, et *NomUtilisateur* est égal au nom d’utilisateur d’un utilisateur existant.<br/>
+<br/>Où *le client* est égal à votre nom de client et le nom *d’utilisateur* est égal au nom d’utilisateur d’un utilisateur existant.<br/>
 
-4. Enregistrez le fichier sur votre bureau en tant que **Users.csv**.<br/>
+4. Enregistrez le fichier sur votre bureau sous **Users.csv**.<br/>
 
 5. Ouvrez une nouvelle instance du Bloc-notes et collez-y le bloc de texte suivant :<br/>
 
@@ -134,7 +134,7 @@ Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Gro
 ```
 <br/>Où MyAlias est égal au nom d’utilisateur de l’utilisateur actuellement connecté.<br/>
 
-6. Enregistrez le fichier sur votre bureau en tant que **UsersAndGroups.ps1**. Il s’agit d’un script Windows PowerShell simple.
+6. Enregistrez le fichier sur votre bureau sous **UsersAndGroups.ps1**. Il s’agit d’un script Windows PowerShell simple.
 
 Vous êtes maintenant prêt à exécuter le script UsersAndGroup.ps1 pour ajouter des utilisateurs et des groupes à plusieurs collections de sites.
 
@@ -147,14 +147,14 @@ Set-ExecutionPolicy Bypass
 ```
 <br/>
 
-3. À l’invite de confirmation, appuyez sur **Y**.<br/>
+3. À l’invite de confirmation, appuyez **sur Y**.<br/>
 
 4. À l’invite de Windows PowerShell, saisissez ou copiez-collez ce qui suit, puis appuyez sur Entrée :<br/>
 
 ```powershell
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
-<br/>Où *MyAlias* est égal à votre nom d’utilisateur.<br/>
+<br/>Où *MyAlias est* égal à votre nom d’utilisateur.<br/>
 
 5. Attendez le renvoi de l’invite pour continuer. Les groupes s’afficheront d’abord tels qu’ils ont été créés. Ensuite, vous verrez la liste de groupes se répéter au fur et à mesure de l’ajout des utilisateurs.
 
