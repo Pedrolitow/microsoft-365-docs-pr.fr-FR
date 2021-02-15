@@ -1,5 +1,5 @@
 ---
-title: Rôles rubriques Microsoft
+title: Rôles Des rubriques Microsoft
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -21,7 +21,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 02/04/2021
 ms.locfileid: "50107433"
 ---
-# <a name="microsoft-viva-topics-roles"></a>Rôles rubriques Microsoft 
+# <a name="microsoft-viva-topics-roles"></a>Rôles Des rubriques Microsoft 
 
 Lorsque vous utilisez Topics dans votre environnement Microsoft 365, vos utilisateurs peuvent avoir les rôles suivants :
 -   Visionneuse de rubriques
@@ -71,7 +71,7 @@ Les utilisateurs qui ont une bonne connaissance globale de votre entreprise peuv
 
 ## <a name="knowledge-admins"></a>Administrateurs du savoir
 
-Les administrateurs du savoir sont des administrateurs qui configurent et configurent Des rubriques Dans votre environnement Microsoft 365. Ils gèrent également les paramètres De Rubriques à l’issue de la configuration. Le rôle d’administrateur du savoir nécessite que vous soyez un administrateur microsoft 365 global ou SharePoint, car la configuration et la gestion sont réalisées dans le Centre d’administration Microsoft 365.
+Les administrateurs du savoir sont des administrateurs qui configurent et configurent Des rubriques Dans votre environnement Microsoft 365. Ils gèrent également les paramètres De La Rubriques Une fois la configuration terminée. Le rôle d’administrateur du savoir nécessite que vous soyez un administrateur microsoft 365 global ou SharePoint, car la configuration et la gestion sont réalisées dans le Centre d’administration Microsoft 365.
 Lors de l’installation, les administrateurs du savoir peuvent configurer Topics pour :
 
 -   Sélectionnez les sites SharePoint à analyser pour les rubriques.

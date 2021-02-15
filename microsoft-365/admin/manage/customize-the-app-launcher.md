@@ -79,7 +79,7 @@ Celle-ci apparaît désormais dans l'onglet **Toutes** du lanceur d'applications
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Dans le centre d’administration, allez dans **l’onglet** Profil d’organisation  >  **Paramètres de** l’organisation paramètres de  >  **l’organisation.** </a>
+1. Dans le Centre d’administration, allez dans **l’onglet** De profil d’organisation  >  paramètres de l’organisation **paramètres.**  >   </a>
     
 2. Dans la page **Profil de l’organisation,** en plus d’ajouter des   **vignettes personnalisées pour votre organisation,** sélectionnez **Modifier**.
 

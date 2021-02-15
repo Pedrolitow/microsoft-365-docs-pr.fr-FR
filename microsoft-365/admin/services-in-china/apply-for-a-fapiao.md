@@ -60,9 +60,9 @@ Il existe deux façons d’appliquer un Fapiao :
 
     ![Page d’inscription du système de gestion 21Vianet Fapioa.](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
-3. Une fois votre inscription terminée, le système envoie un message électronique d’activation à votre adresse de messagerie. Ouvrez le message électronique et sélectionnez le lien pour activer votre compte.
+3. Une fois votre inscription terminée, le système envoie un message électronique d’activation à votre adresse e-mail. Ouvrez le message électronique et sélectionnez le lien pour activer votre compte.
 
-## <a name="step-3-submit-your-bill-for-a-fapiao"></a>Étape 3 : Soumettre votre facture pour un Fapiao
+## <a name="step-3-submit-your-bill-for-a-fapiao"></a>Étape 3 : Soumettre votre facture pour un fapiao
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">système de gestion Fapiao.</a>
 
@@ -119,7 +119,7 @@ Vous pouvez vérifier la progression de votre demande Fapiao et savoir pourquoi 
   
 Si vous souhaitez modifier le titre Fapiao, veuillez nous renvoyer fapiao et nous allons renvoyer le fapiao. Vous pouvez envoyer la demande par le biais du <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">Centre d’administration.</a>
   
-![Formulaire de support du Centre d’administration utilisé pour renvoyer un fapiao pour demander une modification de titre.](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
+![Formulaire de support du Centre d’administration utilisé pour renvoyer un Fapiao pour demander un changement de titre.](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
   
 ### <a name="how-do-i-change-my-login-email-address-and-password"></a>Comment modifier mon adresse e-mail et mon mot de passe de connexion ?
 
@@ -135,7 +135,7 @@ Si vous souhaitez modifier le titre Fapiao, veuillez nous renvoyer fapiao et nou
 
 ### <a name="how-do-i-find-my-order-id"></a>Comment trouver mon ID de commande ?
 
-1. Dans le Centre [d’administration,](https://go.microsoft.com/fwlink/p/?linkid=850627)allez sur la page **Factures** & \> **paiements.**
+1. Dans le Centre [d’administration,](https://go.microsoft.com/fwlink/p/?linkid=850627)go to the **Billing** \> **Bills & payments** page.
 
 2. Recherchez la facture que vous souhaitez, sélectionnez-la pour l’afficher ou choisissez de télécharger le PDF.
 

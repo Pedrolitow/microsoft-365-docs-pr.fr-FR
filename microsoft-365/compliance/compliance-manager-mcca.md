@@ -33,7 +33,7 @@ MCCA peut vous aider à voir rapidement quelles actions d’amélioration du Ges
 
 Une ressource supplémentaire pour comprendre MCCA consiste à consulter les [instructions README sur GitHub.](https://github.com/OfficeDev/MCCA#overview) Cette page fournit des informations détaillées sur les conditions préalables et fournit des instructions d’installation complètes. Vous n’avez pas besoin d’un compte GitHub pour accéder à cette page.
 
-Disponibilité : MCCA est disponible pour toutes les organisations titulaires de licences Office 365 et Microsoft 365, ainsi que pour les clients modérés de la Communauté du gouvernement américain (GCC), avec des plans en cours d’extension du service aux clients GCC High.
+Disponibilité : MCCA est disponible pour toutes les organisations titulaires de licences Office 365 et Microsoft 365 et clients modérés de la Communauté du gouvernement américain (GCC), avec des plans en cours d’extension du service pour les clients GCC High.
 
 ## <a name="install-mcca-and-run-a-report"></a>Installer MCCA et exécuter un rapport
 
@@ -64,7 +64,7 @@ Après avoir installé MCCA, vous pouvez exécuter MCCA et générer un rapport.
     ```powershell
     Get-MCCAReport
     ```
-3. Une fois que MCCA s’exécute, il vérifie la version initiale et demande des informations d’identification. À l’invite d’entrée du nom d’utilisateur, connectez-vous avec votre adresse de messagerie de compte Microsoft 365 (affichez les rôles éligibles pour[créer des rapports).](#role-based-reporting) Entrez ensuite votre mot de passe à l’invite de mot de passe.
+3. Une fois que MCCA s’exécute, il vérifie la version initiale et demande des informations d’identification. À l’invite d’entrée du nom d’utilisateur, connectez-vous avec votre adresse de messagerie de compte Microsoft 365 (affichez les rôles éligibles[pour créer des rapports).](#role-based-reporting) Entrez ensuite votre mot de passe à l’invite de mot de passe.
 
 Votre rapport prendra ensuite environ 2 à 5 minutes pour être généré. Une fois l’application effectuée, une fenêtre de navigateur s’ouvre et affiche votre rapport HTML. Chaque fois que vous exécutez l’outil, il vous demande vos informations d’identification et génère un nouveau rapport. Ce rapport est stocké localement dans le répertoire suivant :
 
@@ -87,25 +87,25 @@ Pour modifier les informations d’emplacement de votre rapport, vous devez four
 Suivez ces instructions pour exécuter un rapport basé sur un emplacement spécifique :
 
 1. Ouvrir PowerShell
-2. Pour spécifier une région, vous devez exécuter une cmdlet à l’aide des numéros du tableau ci-dessous qui correspondent au pays ou à la région. Entrez plusieurs nombres en les séparant par une virgule. Par exemple, la cmdlet ci-dessous exécute un rapport personnalisé pour Asia-Pacific et le Japon :
+2. Pour spécifier une région, vous devez exécuter une cmdlet à l’aide des numéros du tableau ci-dessous qui correspondent au pays ou à la région. Entrez plusieurs nombres en les séparant par une virgule. Par exemple, l’cmdlet ci-dessous exécute un rapport personnalisé pour Asia-Pacific et le Japon :
 
     ```powershell
     Get-MCCAReport -Geo @(1,7)
     ```
   | Input |  Pays ou région | 
   | :------------- | :------------: |
-  | 1  | Asie-Pacifique |
-  | 2  | Australie |
-  | 3  | Canada |
+  | 1  | Asie-Pacifique |
+  | 2  | Australie |
+  | 3  | Canada |
   | 4  | Europe (à l’exception de la France) / Moyen-Orient / Afrique |
-  | 5  | France |
-  | 6  | Inde |
-  | 7  | Japon |
-  | 8  | Corée |
-  | 9  | Amérique du Nord (à l’exception du Canada) |
-  | 10  | Amérique du Sud |
-  | 11  | Afrique du Sud |
-  | 12  | Suisse |
+  | 5  | France |
+  | 6  | Inde |
+  | 7  | Japon |
+  | 8  | Corée |
+  | 9  | Amérique du Nord (à l’exception du Canada) |
+  | 10  | Amérique du Sud |
+  | 11  | Afrique du Sud |
+  | 12  | Suisse |
   | 13  | Émirats arabes unis |
   | 14  | Royaume-Uni |
 
@@ -124,7 +124,7 @@ Le tableau ci-dessous indique les rôles qui ont accès aux sections du rapport.
 Exceptions :
 1. L’utilisateur ne peut pas générer de rapport pour l’adresse IP en dehors de la section « Utiliser IRM pour Exchange Online ».
 2. L’utilisateur peut générer un rapport pour l’adresse IP en dehors de la section « Utiliser IRM pour Exchange Online ».
-3. L’utilisateur peut générer un rapport pour l’adresse IP en dehors de la section « Activer la conformité des communications dans O365 ».
+3. L’utilisateur pourra générer un rapport pour l’adresse IP en dehors de la section « Activer la conformité des communications dans O365 ».
 4. L’utilisateur ne pourra pas générer de rapport pour l’adresse IP à part la section « Activer l’audit dans Office 365 ».
 5. L’utilisateur peut générer un rapport pour l’adresse IP en dehors de la section « Activer l’audit dans Office 365 ».
 
@@ -132,13 +132,13 @@ Exceptions :
 
 La section **Résumé des** solutions du rapport donne une vue d’ensemble des actions d’amélioration que votre organisation peut prendre dans le Gestionnaire de conformité pour vous aider à améliorer votre posture de conformité.
 
-![MCCA : synthèse des solutions](../media/compliance-manager-mcca-solutions.png "Écran Résumé des solutions MCCA")
+![MCCA - Résumé des solutions](../media/compliance-manager-mcca-solutions.png "Écran Résumé des solutions MCCA")
 
 MCCA évalue vos configurations actuelles par rapport aux actions d’amélioration recommandées dans le Gestionnaire de conformité. Toute action d’amélioration identifiée par l’outil MCCA comme devant être attentive est répertoriée dans cette section.
 
 En plus de chaque solution Microsoft, des zones codées en couleur indiquent le nombre d’éléments qui correspondent aux actions d’amélioration dans le Gestionnaire de conformité. Les actions sont décomposées en trois états d’état :
 
-- **OK**: actions qui répondent aux conditions recommandées et qui n’ont pas besoin d’attention pour le moment
+- **OK**: actions qui répondent aux conditions recommandées et qui n’ont pas besoin d’être attentives pour le moment
 - **Amélioration :** actions qui ont besoin d’attention
 - **Recommandation**: actions qui n’ont pas besoin d’attention, mais pour lesquelles nous vous recommandons les meilleures pratiques
  
@@ -160,4 +160,4 @@ Sélectionnez la dropdown en face de **l’étiquette Recommandation** à droite
 
 Pour plus d’informations sur l’installation, la configuration et l’utilisation de MCCA, voir les [instructions README](https://github.com/OfficeDev/MCCA#overview) sur GitHub (aucun compte GitHub requis).
 
-Pour plus d’informations Windows PowerShell, commencez par [utiliser la documentation PowerShell.](https://docs.microsoft.com/powershell/scripting/how-to-use-docs?view=powershell-7) Voir aussi [Démarrage Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
+Pour plus d’informations Windows PowerShell, commencez par utiliser [la documentation PowerShell.](https://docs.microsoft.com/powershell/scripting/how-to-use-docs?view=powershell-7) Voir aussi [Démarrage Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).

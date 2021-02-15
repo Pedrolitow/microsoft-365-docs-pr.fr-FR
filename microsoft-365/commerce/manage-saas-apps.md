@@ -32,7 +32,7 @@ Vous pouvez gérer les licences et la facturation des applications tierces dans 
 
 ::: moniker-end
 
-Vous pouvez gérer les licences et la facturation pour les applications tierces dans le Centre d’administration Microsoft 365 avec le mode aperçu est désactivé. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un accès amélioré aux informations de facturation et une plus grande flexibilité pour la gestion des factures. La gestion des abonnements est basée sur la plateforme commerciale mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou auprès d’un fournisseur tiers.
+Vous pouvez gérer les licences et la facturation pour les applications tierces dans le Centre d’administration Microsoft 365 avec le mode aperçu est allumé. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un accès amélioré aux informations de facturation et une plus grande flexibilité pour la gestion des factures. La gestion des abonnements est basée sur la plateforme commerciale mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou auprès d’un fournisseur tiers.
 
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Comment obtenir des applications de logiciel en tant que service
@@ -107,7 +107,7 @@ Les administrateurs peuvent modifier le nombre de licences dont leur organisatio
 
 ## <a name="manage-payment-methods"></a>Gestion des modes de paiement
 
-Un profil de facturation est attribué aux applications de logiciel en tant que service. Les profils de facturation vous permet de personnaliser les produits inclus sur votre facture et la façon dont vous payez vos factures. En voici la liste :
+Un profil de facturation est attribué aux applications de logiciel en tant que service. Les profils de facturation vous permet de personnaliser les produits inclus sur votre facture et la façon dont vous payez vos factures. Voici quelques éléments de communication :
 
 - **Modes de paiement :** cartes de crédit ou transfert de chèque/virement
 - **Informations de contact** : adresse de facturation et nom du contact
@@ -129,4 +129,4 @@ Vous pouvez annuler une application de service logiciel à partir de la page de 
 
 1. Dans le Centre d’administration, allez à la page **Facturation**  >  **de vos applications de**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produits.</a>
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
-3. Sous **Paramètres & actions,** sélectionnez **Annuler l’abonnement.**
+3. Sous **Paramètres & actions,** **sélectionnez Annuler l’abonnement.**

@@ -1,6 +1,6 @@
 ---
 title: 'Stratégies communes d’accès aux identités et aux appareils : Microsoft 365 pour les | Documents Microsoft'
-description: Décrit les stratégies et configurations courantes d’accès aux identités et appareils recommandées.
+description: Décrit les configurations et stratégies courantes d’accès aux identités et appareils recommandées.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -30,7 +30,7 @@ ms.locfileid: "50142896"
 
 **S’applique à**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - Azure
 
 Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services cloud de Microsoft 365, y compris les applications sur site publiées avec le proxy d’application Azure Active Directory (Azure AD).
@@ -58,11 +58,11 @@ Pour vous donner le temps d’effectuer ces tâches, nous vous recommandons d’
 
 |Niveau de protection|Stratégies|Plus d’informations|
 |---|---|---|
-|**Baseline**|[Exiger l’mf lorsque le risque de se connecte *est moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)||
+|**Baseline**|[Exiger une mfmf lorsque le risque de se connecte *est moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)||
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-multi-factor)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les stratégies d’accès conditionnel, il est donc important de les bloquer.|
 ||[Les utilisateurs à risque élevé doivent modifier leur mot de passe](#high-risk-users-must-change-password)|Oblige les utilisateurs à modifier leur mot de passe lors de la signature si une activité à risque élevé est détectée pour leur compte.|
 ||[Appliquer des stratégies de protection des données d’application](#apply-app-data-protection-policies)|Une stratégie Intune App Protection par plateforme (Windows, iOS/iPadOS, Android).|
-||[Exiger la protection des applications et des applications approuvées](#require-approved-apps-and-app-protection)|Applique la protection des applications mobiles pour les téléphones et tablettes à l’aide d’iOS, iPadOS ou Android.|
+||[Exiger la protection des applications et des applications approuvées](#require-approved-apps-and-app-protection)|Applique la protection des applications mobiles pour les téléphones et les tablettes à l’aide d’iOS, iPadOS ou Android.|
 ||[Définir des stratégies de conformité des appareils](#define-device-compliance-policies)|Une stratégie pour chaque plateforme.|
 ||[Exiger des PC conformes](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applique la gestion Intune des PC à l’aide de Windows ou MacOS.|
 |**Sensible**|[Exiger l' intermédiaire lorsque le risque de se connecte *est faible,* *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)||
@@ -100,16 +100,16 @@ Tous les groupes Azure AD créés dans le cadre de ces recommandations doivent �
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Exiger l’mf en fonction du risque de la sign-in
 
-Vous devez demander à vos utilisateurs de s’inscrire à l’ation MFA avant d’en exiger l’utilisation. Si vous avez Microsoft 365 E5, Microsoft 365 E3 avec le module supplémentaire Protection contre les menaces identity &, Office 365 avec EMS E5 ou des licences Azure AD Premium P2 individuelles, vous pouvez utiliser la stratégie d’inscription MFA avec Azure AD Identity Protection pour exiger que les utilisateurs s’inscrivent à l’ation MFA. Le [travail prérequis](identity-access-prerequisites.md) inclut l’inscription de tous les utilisateurs avec mfa.
+Vous devez demander à vos utilisateurs de s’inscrire à l’ation MFA avant d’en exiger l’utilisation. Si vous avez Microsoft 365 E5, Microsoft 365 E3 avec le module supplémentaire Protection contre les menaces identity &, Office 365 avec EMS E5 ou des licences Azure AD Premium P2 individuelles, vous pouvez utiliser la stratégie d’inscription MFA avec Azure AD Identity Protection pour exiger que les utilisateurs s’inscrivent à l’ation MFA. Le [travail prérequis](identity-access-prerequisites.md) inclut l’inscription de tous les utilisateurs avec l’ation MFA.
 
-Une fois que vos utilisateurs sont inscrits, vous pouvez exiger l' approbation de l' approbation de l’mf pour vous inscrire avec une nouvelle stratégie d’accès conditionnel.
+Une fois que vos utilisateurs sont inscrits, vous pouvez exiger l' approbation de l’mf pour vous inscrire avec une nouvelle stratégie d’accès conditionnel.
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification.
 2. Dans la liste des services Azure, choisissez **Azure Active Directory**.
 3. Dans la **liste Gérer,** choisissez **Sécurité,** puis accès **conditionnel.**
 4. Choisissez **Nouvelle stratégie** et tapez le nom de la nouvelle stratégie.
 
-Les tableaux suivants décrivent les paramètres de stratégie d’accès conditionnel pour exiger une mfmf en fonction du risque de la sign-in.
+Les tableaux suivants décrivent les paramètres de stratégie d’accès conditionnel pour exiger l’mfmf en fonction du risque de la sign-in.
 
 Dans la section **Affectations** :
 
@@ -117,7 +117,7 @@ Dans la section **Affectations** :
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionnez utilisateurs et groupes > utilisateurs et groupes**: sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateurs pilotes.|
 ||Exclure|**Utilisateurs et groupes**: sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée selon les besoins, de manière temporaire.|
-|Applications ou actions cloud|**Applications cloud > Include**|**Sélectionner des applications**: sélectionnez les applications à appliquer à cette stratégie. Par exemple, sélectionnez Exchange Online.||
+|Applications ou actions cloud|**Applications cloud > Include**|**Sélectionnez les** applications : sélectionnez les applications à appliquer à cette stratégie. Par exemple, sélectionnez Exchange Online.||
 |Conditions|||Configurez des conditions spécifiques à votre environnement et à vos besoins.|
 ||Risque de connexion||Consultez les instructions du tableau suivant.|
 |
@@ -216,17 +216,17 @@ Les stratégies de protection des applications (APP) définissent les applicatio
 
 L’infrastructure de protection des données APP est organisée en trois niveaux de configuration distincts, chacun d’eux s’axant sur le niveau précédent :
 
-- **La protection des données de** base d’entreprise (niveau 1) garantit que les applications sont protégées par un code confidentiel et chiffrées, et effectue des opérations de effacement sélective. Pour les appareils Android, ce niveau valide l’attestation d’appareil Android. Il s’agit d’une configuration de niveau d’entrée qui fournit un contrôle de protection des données similaire dans les stratégies de boîte aux lettres Exchange Online et introduit le service it et la population d’utilisateurs dans APP.
+- **La protection des données de** base d’entreprise (niveau 1) garantit que les applications sont protégées par un code confidentiel et chiffrées et effectue des opérations de effacement sélective. Pour les appareils Android, ce niveau valide l’attestation d’appareil Android. Il s’agit d’une configuration de niveau d’entrée qui fournit un contrôle de protection des données similaire dans les stratégies de boîte aux lettres Exchange Online et introduit le service it et la population d’utilisateurs dans APP.
 - **La protection améliorée des données** d’entreprise (niveau 2) introduit des mécanismes de prévention des fuites de données d’APPLICATION et des exigences minimales en matière de système d’exploitation. Il s’agit de la configuration applicable à la plupart des utilisateurs mobiles accédant aux données scolaires ou professionnels.
-- **La protection élevée des données** d’entreprise (niveau 3) introduit des mécanismes avancés de protection des données, une configuration améliorée du code confidentiel et la protection contre les menaces app Mobile. Cette configuration est souhaitable pour les utilisateurs qui accèdent à des données à risque élevé.
+- **La protection élevée des données** d’entreprise (niveau 3) introduit des mécanismes avancés de protection des données, une configuration améliorée du code confidentiel et la protection contre les menaces APP Mobile. Cette configuration est souhaitable pour les utilisateurs qui accèdent à des données à risque élevé.
 
 Pour voir les recommandations spécifiques pour chaque niveau de configuration et les applications minimales qui doivent être protégées, consultez l’infrastructure de protection des données à l’aide de stratégies [de protection des applications.](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)
 
-En utilisant les principes décrits dans les configurations d’identité et d’accès aux appareils, les [niveaux](microsoft-365-policies-configurations.md)de protection de base et sensibles sont étroitement mapés avec les paramètres de protection des données améliorées d’entreprise de niveau 2. Le niveau de protection hautement réglementé est étroitement mapré avec les paramètres de protection des données élevées d’entreprise de niveau 3.
+À l’aide des principes décrits dans les configurations d’accès aux identités et appareils, les [niveaux](microsoft-365-policies-configurations.md)de protection de référence et sensibles sont étroitement mapés avec les paramètres de protection des données améliorées d’entreprise de niveau 2. Le niveau de protection hautement réglementé est étroitement map avec les paramètres de protection des données élevées d’entreprise de niveau 3.
 
 |Niveau de protection|Stratégie de protection des applications|Plus d’informations|
 |---|---|---|
-|Baseline|[Niveau 2 - Protection améliorée des données](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.|
+|Baseline|[Protection améliorée des données de niveau 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.|
 |Sensible|[Niveau 2 - Protection améliorée des données](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.|
 |Hautement réglementé|[Niveau 3 de protection des données d’entreprise élevé](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour les niveaux 1 et 2 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 2.|
 |
@@ -234,7 +234,7 @@ En utilisant les principes décrits dans les configurations d’identité et d�
 Pour créer une stratégie de protection des applications pour chaque plateforme (iOS et Android) dans Microsoft Endpoint Manager à l’aide des paramètres de l’infrastructure de protection des données, vous pouvez :
 
 1. Créez manuellement les stratégies en suivant les étapes de la procédure de création et de déploiement de stratégies de protection des applications [avec Microsoft Intune.](https://docs.microsoft.com/mem/intune/apps/app-protection-policies)
-2. Importez l’exemple [de modèles JSON d’Infrastructure](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) de configuration de la stratégie de protection des applications Intune avec les [scripts PowerShell d’Intune.](https://github.com/microsoftgraph/powershell-intune-samples)
+2. Importez [l’exemple de modèles JSON d’Infrastructure de configuration](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) de la stratégie de protection des applications Intune avec les [scripts PowerShell d’Intune.](https://github.com/microsoftgraph/powershell-intune-samples)
 
 ## <a name="require-approved-apps-and-app-protection"></a>Exiger des applications approuvées et la protection des applications
 
@@ -247,7 +247,7 @@ Pour créer la stratégie d’accès conditionnel qui nécessite une protection 
    > [!NOTE]
    > Cette stratégie garantit que les utilisateurs mobiles peuvent accéder à tous les points de terminaison Office à l’aide des applications applicables.
 
-Si vous activez l’accès mobile à Exchange Online, implémentez les [clients Block ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)ce qui empêche les clients Exchange ActiveSync utilisant l’authentification de base de se connecter à Exchange Online. Cette stratégie n’est pas illustré dans l’illustration en haut de cet article. Il est décrit et présenté dans les recommandations de stratégie [pour la sécurisation du courrier électronique.](secure-email-recommended-policies.md)
+Si vous activez l’accès mobile à Exchange Online, implémentez bloquer les [clients ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)ce qui empêche les clients Exchange ActiveSync utilisant l’authentification de base de se connecter à Exchange Online. Cette stratégie n’est pas illustré dans l’illustration en haut de cet article. Il est décrit et présenté dans les recommandations de stratégie [pour la sécurisation du courrier électronique.](secure-email-recommended-policies.md)
 
 Pour créer la stratégie d’accès conditionnel qui nécessite Edge pour iOS et Android, suivez « Étape 2 : Configurer une stratégie d’accès conditionnel Azure AD pour Microsoft 365 » dans le scénario [2](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies): les applications de navigateur nécessitent des applications approuvées avec des stratégies de protection des applications, ce qui autorise Edge pour iOS et Android, mais empêche les autres navigateurs web d’appareils mobiles de se connecter aux points de terminaison Microsoft 365.
 
@@ -312,7 +312,7 @@ Pour **la sécurité du** système, consultez ce tableau.
 |---|---|---|---|
 |Password|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)|Sélectionner|
 ||Mots de passe simples|Bloquer|Sélectionner|
-||Type de mot de passe|Par défaut de l’appareil|Sélectionner|
+||Type de mot de passe|Valeur par défaut de l’appareil|Sélectionner|
 ||Longueur minimale du mot de passe|6 |Type|
 ||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Type <p> Ce paramètre est pris en charge pour les versions Android 4.0 et supérieures ou KNOX 4.0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8.0 et les appareils supérieurs.|
 ||Expiration du mot de passe (jours)|41|Type|

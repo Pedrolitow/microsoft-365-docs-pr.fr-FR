@@ -80,7 +80,7 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
 ::: moniker range="o365-21vianet"
 
 
-1. Sélectionnez le nom du groupe de sécurité dans la page **Groupes,** puis sélectionnez **Modifier en** côté de **Membres.** 
+1. Sélectionnez le nom du groupe de sécurité dans la page **Groupes,** puis **sélectionnez Modifier** en côté de **Membres.** 
     
 2. Dans le volet de  groupe, sélectionnez Ajouter des membres et choisissez la personne dans  la liste ou tapez le nom de la personne que vous souhaitez ajouter dans la zone de recherche, puis sélectionnez **Enregistrer.**
     
@@ -131,7 +131,7 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
     
 2. Dans la page **Groupes,** sélectionnez le nom du groupe. 
     
-3. Sélectionnez **Supprimer le** groupe (icône wasetbin), puis confirmez en sélectionnant **Supprimer.**
+3. Sélectionnez **Supprimer le** groupe (icône wasetbin), puis confirmez en sélectionnant **Supprimer**.
     
     Sélectionnez **Fermer** une fois le groupe supprimé. 
     
@@ -155,9 +155,9 @@ Les groupes de sécurité peuvent être utilisés avec SharePoint, Exchange, MDM
   
 ## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>Dois-je utiliser des groupes de sécurité pour que mon organisation soit sécurisée ?
 
-Non. Il s’agit d’un moyen de plus pour gérer la sécurité de votre organisation. Vous pouvez toujours accorder des autorisations utilisateur et l’accès aux sites individuellement. Toutefois, avec les groupes de sécurité, vous pouvez facilement gérer des groupes d’utilisateurs plus importants.
+Non. Il s’agit simplement d’un moyen de plus pour gérer la sécurité de votre organisation. Vous pouvez toujours accorder des autorisations utilisateur et l’accès aux sites individuellement. Toutefois, avec les groupes de sécurité, vous pouvez facilement gérer des groupes d’utilisateurs plus importants.
   
-## <a name="can-i-send-email-to-a-security-group"></a>Puis-je envoyer un courrier électronique à un groupe de sécurité ?
+## <a name="can-i-send-email-to-a-security-group"></a>Puis-je envoyer des courriers électroniques à un groupe de sécurité ?
 
 Oui. Toutefois, si vous souhaitez utiliser des groupes pour la messagerie et la collaboration, nous vous recommandons plutôt de créer un groupe [Microsoft 365.](../create-groups/create-groups.md) 
   

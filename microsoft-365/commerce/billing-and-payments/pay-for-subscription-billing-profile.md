@@ -47,7 +47,7 @@ Si la facturation périodique est désactivée pour  un profil de facturation, v
 
 ## <a name="paying-by-invoice"></a>Paiement par facture
 
-Si vous avez un profil de facturation qui est prêt à être payé par facture, vous pouvez payer votre abonnement avec un chèque ou un eft. Vous pouvez également utiliser une carte de crédit pour effectuer un paiement en ligne à l’aide du bouton Payer **maintenant** sur votre facture.
+Si vous avez un profil de facturation qui est prêt à être payé par facture, vous pouvez régler votre abonnement avec un chèque ou un eft. Vous pouvez également utiliser une carte de crédit pour effectuer un paiement en ligne à l’aide du bouton Payer **maintenant** sur votre facture.
 
 Pour être éligible au paiement par facture, vous devez :
 
@@ -55,9 +55,9 @@ Pour être éligible au paiement par facture, vous devez :
 - Avoir un coût d’abonnement qui dépasse un certain montant (ce montant varie en fonction de l’emplacement du service)
 - Réussir une vérification de solvabilité
 
-Si une vérification de solvabilité est requise, vous êtes averti lorsque vous achetez votre abonnement. Si vous acceptez d’être contacté, vous recevez un courrier électronique qui inclut plus d’informations sur la demande d’approbation de crédit. Deux jours ouvrables sont généralement nécessaires pour effectuer les vérifications de solvabilité.
+Si une vérification de solvabilité est nécessaire, vous recevrez une notification lors de l'achat de votre abonnement. Si vous acceptez d'être contacté, vous recevrez un e-mail qui inclut davantage d'informations sur la demande d’approbation de crédit. Deux jours ouvrables sont généralement nécessaires pour effectuer les vérifications de solvabilité.
 
-Si votre profil de facturation est dosé par une facture, vous recevez un e-mail lorsque votre relevé de facturation est prêt à être consulté. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de recevoir une copie de votre relevé de [facturation par courrier électronique.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) Votre relevé de facturation inclut des détails sur vos options de paiement et sur l’endroit où l’envoyer. Si vous entrez un numéro de bon de commande dans votre profil de facturation, le numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
+Si votre profil de facturation est dosé par une facture, vous recevez un e-mail lorsque votre relevé de facturation est prêt à être consulté. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir l’option [Recevoir une copie de votre relevé de facturation par e-mail](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande dans votre profil de facturation, le numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Où envoyer mon chèque ou mon paiement par TEF ?
 
@@ -224,7 +224,7 @@ Si votre profil de facturation est dosé par une facture, vous recevez un e-mail
 
 ## <a name="can-i-pay-my-invoice-online"></a>Puis-je payer ma facture en ligne ?
 
-Si la facturation périodique est désactivée pour votre profil de facturation, vous pouvez utiliser une carte de crédit pour payer votre facture en ligne. Pour effectuer un paiement, utilisez le bouton Payer **maintenant** sur votre facture dans le Centre d’administration Microsoft 365. Pour trouver votre facture, [consultez Consulter votre facture.](view-your-bill-or-invoice.md)
+Si la facturation périodique est désactivée pour votre profil de facturation, vous pouvez utiliser une carte bancaire pour payer votre facture en ligne. Pour effectuer un paiement, utilisez le bouton Payer **maintenant** sur votre facture dans le Centre d’administration Microsoft 365. Pour trouver votre facture, [consultez Consulter votre facture.](view-your-bill-or-invoice.md)
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Puis-je changer de mode de paiement actuel en mode de paiement par facture ?
 

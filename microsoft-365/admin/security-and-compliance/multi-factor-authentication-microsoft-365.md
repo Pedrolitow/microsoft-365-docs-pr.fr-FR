@@ -49,10 +49,10 @@ Par défaut, Microsoft 365 et Office 365 peuvent prendre en charge l’mf pour l
 - Appel téléphonique.
 - Application de smartphone Microsoft Authenticator.
 
-Dans les deux cas, la sign-in MFA utilise la méthode « Quelque chose que vous avez avec vous qui n’est pas facilement dupliqué » pour la vérification supplémentaire. Il existe plusieurs façons d’activer l' multi-facteur pour Microsoft 365 et Office 365 :
+Dans les deux cas, la sign-in mfa utilise la méthode « Quelque chose que vous avez avec vous qui n’est pas facilement dupliqué » pour la vérification supplémentaire. Il existe plusieurs façons d’activer l' multi-facteur pour Microsoft 365 et Office 365 :
 
 - Avec les paramètres de sécurité par défaut
-- Avec les stratégies d’accès conditionnel
+- Avec des stratégies d’accès conditionnel
 - Pour chaque compte d’utilisateur individuel (non recommandé)
 
 Ces méthodes sont basées sur votre plan Microsoft 365.
@@ -60,8 +60,8 @@ Ces méthodes sont basées sur votre plan Microsoft 365.
 |Planification|Recommandation|Type de client|
 |---|---|---|
 |Toutes les plans Microsoft 365|Utilisez les paramètres de sécurité par défaut, qui nécessitent l' usage de l’mf pour tous les comptes d’utilisateurs. <p> Vous pouvez également configurer l’mf par utilisateur sur des comptes d’utilisateur individuels, mais cela n’est pas recommandé.|Petite entreprise|
-|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Licences Azure Active Directory (Azure AD) Premium P1|Utilisez des stratégies d’accès conditionnel pour exiger une mf pour les comptes d’utilisateur en fonction de l’appartenance à un groupe, des applications ou d’autres critères.|Petite entreprise à entreprise|
-|Microsoft 365 E5 <p> Licences Azure AD Premium P2|Utilisez Azure AD Identity Protection pour exiger une mffa en fonction des critères de risque de la signature.|Entreprise|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Licences Azure Active Directory (Azure AD) Premium P1|Utilisez des stratégies d’accès conditionnel pour exiger une mf pour les comptes d’utilisateur en fonction de l’appartenance au groupe, des applications ou d’autres critères.|Petite entreprise à entreprise|
+|Microsoft 365 E5 <p> Licences Azure AD Premium P2|Utilisez Azure AD Identity Protection pour exiger une mffa basée sur les critères de risque de la signature.|Entreprise|
 ||||
 
 ### <a name="security-defaults"></a>Paramètres de sécurité par défaut
@@ -91,7 +91,7 @@ Les stratégies d’accès conditionnel sont un groupe de règles qui spécifien
 
 Cette stratégie vous permet de demander une authentification multifacteur basée sur l’appartenance au groupe, plutôt que d’essayer de configurer des comptes d’utilisateur individuels pour l’authentification multifacteur lorsqu’ils sont attribués ou non à des rôles d’administrateur.
 
-Vous pouvez également utiliser des stratégies d’accès conditionnel pour des fonctionnalités plus avancées, telles que l’obligation d’une mf pour des applications spécifiques ou la nécessité de se connecter à partir d’un appareil conforme, tel que votre ordinateur portable exécutant Windows 10.
+Vous pouvez également utiliser des stratégies d’accès conditionnel pour des fonctionnalités plus avancées, telles que l’obligation d’une mf pour des applications spécifiques ou l’exécution de la connectez-vous à partir d’un appareil conforme, tel que votre ordinateur portable exécutant Windows 10.
 
 Vous configurez les stratégies d’accès conditionnel à partir du **volet** Sécurité d’Azure AD dans le portail Azure.
 
@@ -105,12 +105,12 @@ Vous pouvez utiliser des stratégies d’accès conditionnel avec :
 
 Pour les petites entreprises avec Microsoft 365 Business Premium, vous pouvez facilement utiliser les stratégies d’accès conditionnel en suivant les étapes suivantes :
 
-1. Créez un groupe pour contenir les comptes d’utilisateur qui requièrent l' mba.
+1. Créez un groupe pour contenir les comptes d’utilisateur qui requièrent l’mf.
 2. Activez la **stratégie Exiger l’mf pour les administrateurs** globaux.
 3. Créez une stratégie d’accès conditionnel basée sur les groupes avec les paramètres ci-après :
     - Affectations > utilisateurs et groupes : nom de votre groupe de l’étape 1 ci-dessus.
-    - Affectations > ou actions cloud : toutes les applications cloud.
-    - Les contrôles d> accorder > accorder l'> nécessite une authentification multifacteur.
+    - Affectations > actions ou applications cloud : toutes les applications cloud.
+    - Les contrôles d’accès > accorder > accorder l’accès > nécessite une authentification multifacteur.
 4. Activez la stratégie.
 5. Ajoutez un compte d’utilisateur au groupe créé à l’étape 1 ci-dessus et testez.
 6. Pour exiger une mf pour des comptes d’utilisateurs supplémentaires, ajoutez-les au groupe créé à l’étape 1.
@@ -127,7 +127,7 @@ Si vous souhaitez en savoir plus, consultez [Présentation de l’accès conditi
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-Avec Azure AD Identity Protection, vous pouvez créer une stratégie d’accès conditionnel supplémentaire pour exiger l' approbation de la MFA lorsque le risque de se connecte est [moyen ou élevé.](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies#require-mfa-based-on-sign-in-risk)
+Avec Azure AD Identity Protection, vous pouvez créer une stratégie d’accès conditionnel supplémentaire pour exiger l' approbation de la MFA lorsque le risque de se connecte [est moyen ou élevé.](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies#require-mfa-based-on-sign-in-risk)
 
 Vous pouvez utiliser Azure AD Identity Protection et les stratégies d’accès conditionnel basées sur les risques avec :
 
@@ -136,9 +136,9 @@ Vous pouvez utiliser Azure AD Identity Protection et les stratégies d’accès 
 
 Si vous souhaitez en savoir plus, consultez la page [Présentation de Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
-### <a name="legacy-per-user-mfa-not-recommended"></a>MFA héritée par utilisateur (non recommandé)
+### <a name="legacy-per-user-mfa-not-recommended"></a>Fa MFA héritée par utilisateur (non recommandé)
 
-Vous devez utiliser des stratégies de sécurité par défaut ou des stratégies d’accès conditionnel pour exiger l' approbation de compte d’utilisateur pour les connecteurs de votre compte d’utilisateur. Toutefois, si l’un d’eux ne peut pas être utilisé, Microsoft recommande vivement l’mfmf pour les comptes d’utilisateurs qui ont des rôles d’administrateur, en particulier le rôle d’administrateur général, pour tout abonnement de taille.
+Vous devez utiliser les paramètres de sécurité par défaut ou les stratégies d’accès conditionnel pour exiger l' approbation de compte d’utilisateur pour les connecteurs de votre compte d’utilisateur. Toutefois, si l’un d’eux ne peut pas être utilisé, Microsoft recommande vivement l’mfmf pour les comptes d’utilisateurs qui ont des rôles d’administrateur, en particulier le rôle d’administrateur général, pour tout abonnement de taille.
 
 Vous activez l’mf pour  les comptes d’utilisateur individuels à partir du volet Utilisateur actif du Centre d’administration Microsoft 365.
 
@@ -154,7 +154,7 @@ Ce tableau présente les résultats de l’activation de l’authentification mu
 |---|---|---|---|
 |**Paramètres de sécurité par défaut**|Ne peut pas utiliser les stratégies d’accès conditionnel|Peut utiliser les stratégies d’accès conditionnel|Application Microsoft Authenticator|
 |**Stratégies d’accès conditionnel**|Si des paramètres sont activés, vous ne pouvez pas activer les paramètres de sécurité par défaut|Si tous ces éléments sont désactivés, vous pouvez activer les paramètres de sécurité par défaut|Utilisateur spécifié lors de l’inscription à l’authentification multifacteur|
-|**Fa MFA héritée par utilisateur (non recommandé)**|Remplace les paramètres de sécurité par défaut et les stratégies d’accès conditionnel nécessitant l’ation MFA à chaque fois que vous vous connectez|Overridden by security defaults and Conditional Access policies|Utilisateur spécifié lors de l’inscription à l’authentification multifacteur|
+|**Fa MFA héritée par utilisateur (non recommandé)**|Remplace les paramètres de sécurité par défaut et les stratégies d’accès conditionnel nécessitant l’ation MFA à chaque signature|Overridden by security defaults and Conditional Access policies|Utilisateur spécifié lors de l’inscription à l’authentification multifacteur|
 ||||
 
 Si les paramètres de sécurité par défaut sont activés, tous les nouveaux utilisateurs sont invités à s’inscrire à l’authentification MFA et à utiliser l’application Microsoft Authenticator lors de leur prochaine ouverture de conférence.
@@ -174,8 +174,8 @@ Dans le Centre d’administration Microsoft 365, vous pouvez configurer les para
 
 [Configurer mfa pour Microsoft 365](set-up-multi-factor-authentication.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-[Vidéo : activer l’authentification multifacteur](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+[Vidéo : Activer l’authentification multifacteur](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
 
-[Vidéo : activer l’authentification multifacteur pour votre téléphone](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
+[Vidéo : Activer l’authentification multifacteur sur votre téléphone](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)

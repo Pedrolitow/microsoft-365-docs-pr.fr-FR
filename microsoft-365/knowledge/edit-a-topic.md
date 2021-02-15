@@ -37,7 +37,7 @@ Dans Rubriques de Rubriques, vous pouvez modifier une rubrique existante. Vous d
 
 Pour modifier une rubrique existante, vous devez :
 - Vous avez une licence Topics.
-- Avoir des autorisations [**sur Qui peut créer ou modifier des rubriques**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres d’autorisations de la rubrique Rubriques. 
+- Avoir des autorisations [**sur qui peut créer ou modifier des rubriques**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres des rubriques Topics. 
 
 > [!Note] 
 > Les utilisateurs qui sont autorisés à gérer des rubriques dans le centre de rubriques (gestionnaires de connaissances) sont déjà autorisés à créer et modifier des rubriques.
@@ -88,7 +88,7 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
 
     Vous pouvez faire un fichier ou une page suggéré à un fichier ou une page épinglé en sélectionnant l’icône épinglée.
 
-7.  La section <b>Sites associés</b> présente les sites qui ont des informations sur la rubrique. 
+7.  La section <b>Sites associés</b> présente les sites qui ont des informations sur cette rubrique. 
 
     ![Section Sites associés](../media/knowledge-management/related-sites.png)</br>
 

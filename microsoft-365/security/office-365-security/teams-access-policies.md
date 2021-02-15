@@ -28,11 +28,11 @@ ms.locfileid: "50097185"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers Teams
 
-Cet article explique comment implémenter les stratégies recommandées d’identité et d’accès aux appareils pour protéger les conversations, les groupes et le contenu Microsoft Teams tels que les fichiers et les calendriers. Ces instructions s’appuient sur [les](identity-access-policies.md)stratégies d’accès aux appareils et aux identités communes, avec des informations supplémentaires propres à Teams. Étant donné que Teams s’intègre à nos autres produits, consultez également les recommandations de stratégie pour la sécurisation des sites et des fichiers [SharePoint,](sharepoint-file-access-policies.md) ainsi que les recommandations de stratégie [pour la sécurisation de la messagerie électronique.](secure-email-recommended-policies.md)
+Cet article explique comment implémenter les stratégies recommandées d’identité et d’accès aux appareils pour protéger les conversations, les groupes et le contenu Microsoft Teams tels que les fichiers et les calendriers. Ces instructions s’appuient sur les [stratégies](identity-access-policies.md)d’accès aux appareils et aux identités communes, avec des informations supplémentaires propres à Teams. Étant donné que Teams s’intègre à nos autres produits, consultez également les recommandations de stratégie pour la sécurisation des sites et des fichiers [SharePoint,](sharepoint-file-access-policies.md) ainsi que les recommandations de stratégie [pour la sécurisation de la messagerie électronique.](secure-email-recommended-policies.md)
 
 Ces recommandations sont basées sur trois niveaux différents de sécurité et de protection pour Teams qui peuvent être appliqués en fonction de la granularité de vos besoins : base de référence, sensible et hautement réglementé. Vous pouvez en savoir plus sur ces niveaux de sécurité et les stratégies recommandées référencés par ces recommandations dans les configurations d’identité et d’accès [aux appareils.](microsoft-365-policies-configurations.md)
 
-D’autres recommandations spécifiques au déploiement de Teams sont incluses dans cet article pour couvrir des circonstances d’authentification spécifiques, y compris pour les utilisateurs externes à votre organisation. Vous devrez suivre ces instructions pour une expérience de sécurité complète.
+D’autres recommandations spécifiques au déploiement de Teams sont incluses dans cet article pour couvrir des circonstances d’authentification spécifiques, y compris pour les utilisateurs extérieurs à votre organisation. Vous devrez suivre ces instructions pour une expérience de sécurité complète.
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>Mise en place de Teams avant d’autres services dépendants
 
@@ -40,7 +40,7 @@ Vous n’avez pas besoin d’activer les services dépendants pour commencer à 
 
 - Groupes Microsoft 365
 - Sites d’équipe SharePoint
-- OneDrive Entreprise
+- OneDrive Entreprise
 - Les boîtes aux lettres Exchange
 - Flux de vidéos et plans du Planificateur (si ces services sont activés)
 
@@ -54,7 +54,7 @@ Pour protéger la conversation, les groupes et le contenu dans Teams, le diagram
 
 Ces services sont les services dépendants à inclure dans l’affectation des applications cloud pour Teams :
 
-- Microsoft Teams
+- Microsoft Teams
 - SharePoint et OneDrive Entreprise
 - Exchange Online
 - Skype Entreprise Online
@@ -67,10 +67,10 @@ Ce tableau répertorie les stratégies qui doivent être réexaminées et des li
 |---|---|---|
 |**Baseline**|[Exiger l’mf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assurez-vous que Teams et les services dépendants sont inclus dans la liste des applications. Teams a également des règles d’accès invité et d’accès externe à prendre en compte. Vous en apprendrez plus sur ces règles plus loin dans cet article.|
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Inclure Teams et les services dépendants dans l’affectation des applications cloud.|
-||[Les utilisateurs à risque élevé doivent modifier leur mot de passe](identity-access-policies.md#high-risk-users-must-change-password)|Oblige les utilisateurs de Teams à modifier leur mot de passe lors de la signature si une activité à risque élevé est détectée pour leur compte. Assurez-vous que Teams et les services dépendants sont inclus dans la liste des applications.|
+||[Les utilisateurs à risque élevé doivent modifier leur mot de passe](identity-access-policies.md#high-risk-users-must-change-password)|Force les utilisateurs de Teams à modifier leur mot de passe lors de la signature si une activité à risque élevé est détectée pour leur compte. Assurez-vous que Teams et les services dépendants sont inclus dans la liste des applications.|
 ||[Appliquer des stratégies de protection des données APP](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous que Teams et les services dépendants sont inclus dans la liste des applications. Mettez à jour la stratégie pour chaque plateforme (iOS, Android, Windows).|
 ||[Définir des stratégies de conformité des appareils](identity-access-policies.md#define-device-compliance-policies)|Inclure Teams et les services dépendants dans cette stratégie.|
-||[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluez Teams et les services dépendants dans cette stratégie.|
+||[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure Teams et les services dépendants dans cette stratégie.|
 |**Sensible**|[Exiger l’mf lorsque le risque de se connecte *est faible,* *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams a également des règles d’accès invité et d’accès externe à prendre en compte. Vous en apprendrez plus sur ces règles plus loin dans cet article. Inclure Teams et les services dépendants dans cette stratégie.|
 ||[Exiger des PC et *des appareils* mobiles conformes](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inclure Teams et les services dépendants dans cette stratégie.|
 |**Hautement réglementé**|[*Toujours exiger* l’mf d’fa](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Quelle que soit l’identité de l’utilisateur, l’ation MFA sera utilisée par votre organisation. Inclure Teams et les services dépendants dans cette stratégie. |
@@ -80,7 +80,7 @@ Ce tableau répertorie les stratégies qui doivent être réexaminées et des li
 
 À titre de référence, le diagramme suivant illustre les services sur qui Teams s’appuie. Pour plus d’informations et d’illustrations, voir Microsoft Teams et les services de productivité associés dans [Microsoft 365 pour les architectes it.](../../solutions/productivity-illustrations.md)
 
-[![Diagramme montrant les dépendances teams sur SharePoint, OneDrive Entreprise et Exchange](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![Diagramme montrant les dépendances de Teams sur SharePoint, OneDrive Entreprise et Exchange](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 [Voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 

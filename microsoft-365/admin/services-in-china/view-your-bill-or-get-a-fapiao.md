@@ -37,11 +37,11 @@ Vous pouvez consulter votre relevé de facturation ou votre facture pour obtenir
   
 ## <a name="find-your-billing-statement-or-request-a-fapiao"></a>Rechercher votre relevé de facturation ou demander un fapiao
 
-1. Dans le Centre [d’administration,](https://go.microsoft.com/fwlink/p/?linkid=850627)allez sur la page **Factures** & \> **paiements.**
+1. Dans le Centre [d’administration,](https://go.microsoft.com/fwlink/p/?linkid=850627)go to the **Billing** \> **Bills & payments** page.
 
 2. Recherchez la facture que vous souhaitez, sélectionnez-la pour l’afficher ou choisissez de télécharger le PDF.
 
   - Pour demander un Fapiao, **sélectionnez Get Fapiaos**.
 
     > [!NOTE]
-    > Vous avez besoin d’un compte enregistré pour accéder au [système de gestion fapiao.](https://go.microsoft.com/fwlink/p/?linkid=837465) Si vous n’avez pas encore installé de compte, voir Appliquer pour un [fapiao pour Office 365 géré par 21Vianet.](apply-for-a-fapiao.md)
+    > Vous avez besoin d’un compte enregistré pour accéder au [système de gestion fapiao.](https://go.microsoft.com/fwlink/p/?linkid=837465) Si vous n’avez pas encore installé de compte, voir Appliquer pour [un fapiao pour Office 365 géré par 21Vianet.](apply-for-a-fapiao.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Étude de cas : Contoso configure rapidement une stratégie de langage choquant pour les communications Microsoft Teams, Exchange et Yammer données'
+title: 'Étude de cas : Contoso configure rapidement une stratégie de langage choquant pour microsoft Teams, Exchange et les communications Yammer données'
 description: Étude de cas pour Contoso et configuration rapide d’une stratégie de conformité des communications pour surveiller le langage choquant dans Microsoft Teams, Exchange Online et Yammer communications.
 f1.keywords:
 - NOCSH
@@ -26,11 +26,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 02/06/2021
 ms.locfileid: "50126593"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas : Contoso configure rapidement une stratégie de langage choquant pour les communications Microsoft Teams, Exchange et Yammer données
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas : Contoso configure rapidement une stratégie de langage choquant pour microsoft Teams, Exchange et les communications Yammer données
 
-La conformité des communications dans Microsoft 365 permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinées et personnalisées vous permettent d’analyser les communications internes et externes pour les correspondances de stratégie afin qu’elles soient examinées par des réviseurs désignés. Les réviseurs peuvent examiner les messages électroniques analysés, Microsoft Teams, Yammer ou des communications tierces dans votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’elles sont conformes aux normes de message de votre organisation.
+La conformité des communications dans Microsoft 365 permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinées et personnalisées vous permettent d’analyser les communications internes et externes pour les correspondances de stratégie afin qu’elles soient examinées par des réviseurs désignés. Les réviseurs peuvent examiner les messages électroniques analysés, Microsoft Teams, Yammer ou les communications tierces dans votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’elles sont conformes aux normes de message de votre organisation.
 
-Contoso Corporation est une organisation fictive qui doit configurer rapidement une stratégie pour contrôler le langage choquant. Ils utilisent Microsoft 365 principalement pour le courrier électronique, Microsoft Teams et le support Yammer pour leurs utilisateurs, mais ont de nouvelles exigences pour appliquer la stratégie d’entreprise en matière de harcèlement au travail. Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont une connaissance de base des principes de base de l’utilisation de Microsoft 365 et recherchent des conseils de bout en bout sur la façon de se lancer rapidement dans la conformité des communications.
+Contoso Corporation est une organisation fictive qui doit configurer rapidement une stratégie pour contrôler le langage choquant. Ils utilisent Microsoft 365 principalement pour la messagerie électronique, Microsoft Teams et Yammer prise en charge de leurs utilisateurs, mais ont de nouvelles exigences pour appliquer la stratégie d’entreprise en matière de harcèlement au travail. Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont une connaissance de base des principes de base de l’utilisation de Microsoft 365 et recherchent des conseils de bout en bout sur la façon de se lancer rapidement dans la conformité des communications.
 
 Cette étude de cas aborde les concepts de base de la configuration rapide d’une stratégie de conformité des communications pour contrôler le langage choquant dans les communications. Ce guide se compose de :
 
@@ -41,7 +41,7 @@ Cette étude de cas aborde les concepts de base de la configuration rapide d’u
 
 ## <a name="step-1-planning-for-communication-compliance"></a>Étape 1 : Planification de la conformité des communications
 
-Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont participé à des webinaires en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aideront à respecter les exigences mises à jour de la stratégie d’entreprise pour réduire le harcèlement au travail. En travaillant ensemble, ils ont développé un plan pour créer et activer une stratégie de conformité des communications qui surveille le langage choquant pour les conversations envoyées dans Microsoft Teams, les messages privés et les conversations de la communauté dans Yammer et dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut les déterminations suivantes :
+Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont participé à des webinaires en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aideront à répondre aux exigences mises à jour de la stratégie d’entreprise pour réduire le harcèlement au travail. En travaillant ensemble, ils ont développé un plan pour créer et activer une stratégie de conformité des communications qui surveille le langage choquant pour les conversations envoyées dans Microsoft Teams, les messages privés et les conversations de la communauté dans Yammer et dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut les déterminations suivantes :
 
 - Administrateurs informatiques qui ont besoin d’accéder aux fonctionnalités de conformité des communications.
 - Les spécialistes de la conformité qui doivent créer et gérer des stratégies de communication.
@@ -64,10 +64,10 @@ La première étape consiste à vérifier que la licence Microsoft 365 de Contos
 - Abonnement Office 365 Entreprise E5 (version payante ou d’essai)
 - Abonnement Office 365 Entreprise E3 + module de conformité avancée Office 365 (non disponible pour les nouveaux abonnements, voir la remarque)
 
-Ils doivent également confirmer que l’une des licences ci-dessus doit être attribuée aux utilisateurs inclus dans les stratégies de conformité des communications.
+Ils doivent également vérifier que l’une des licences ci-dessus doit être attribuée aux utilisateurs inclus dans les stratégies de conformité des communications.
 
 >[!IMPORTANT]
->La conformité avancée Office 365 n’est plus vendue en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités supplémentaires.
+>La conformité avancée Office 365 n’est plus vendue en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités de conformité supplémentaires.
 
 Les administrateurs informatiques de Contoso prennent les mesures suivantes pour vérifier la prise en charge des licences pour Contoso :
 
@@ -122,7 +122,7 @@ Un autre moyen simple pour les administrateurs informatiques et les spécialiste
 
 ### <a name="starting-from-the-microsoft-365-solution-catalog"></a>À partir du catalogue de solutions Microsoft 365
 
-Les administrateurs informatiques et les spécialistes de la conformité de Contoso pouvaient également choisir d’accéder à la solution de conformité des communications en sélectionnant le catalogue de solutions Microsoft 365. En sélectionnant catalogue dans la section **Solutions** du volet de navigation gauche, dans le Centre de conformité **Microsoft 365,** ils peuvent ouvrir le catalogue de solutions répertoriant toutes les solutions de conformité Microsoft 365.  En faisant défiler vers le bas jusqu’à la section **Gestion** des risques internes, les administrateurs informatiques de Contoso peuvent sélectionner la conformité des communications pour commencer. Les administrateurs informatiques de Contoso décident également d’utiliser le contrôle d’affichage dans la navigation pour épingler la solution de conformité des communications au volet de navigation gauche pour un accès plus rapide lorsqu’ils se connectent à l’avenir.
+Les administrateurs informatiques et les spécialistes de la conformité de Contoso pouvaient également choisir d’accéder à la solution de conformité des communications en sélectionnant le catalogue de solutions Microsoft 365. En sélectionnant catalogue dans la section **Solutions** du volet de navigation gauche, dans le Centre de conformité **Microsoft 365,** ils peuvent ouvrir le catalogue de solutions répertoriant toutes les solutions de conformité Microsoft 365.  En faisant défiler vers le bas jusqu’à la section **Gestion** des risques internes, les administrateurs informatiques de Contoso peuvent sélectionner la conformité des communications pour commencer. Les administrateurs informatiques de Contoso décident également d’utiliser le contrôle de navigation Afficher dans pour épingler la solution de conformité des communications au volet de navigation gauche pour un accès plus rapide lorsqu’ils se connectent à l’avenir.
 
 ![Catalogue de solutions](../media/communication-compliance-case-solution.png)
 
@@ -130,13 +130,13 @@ Les administrateurs informatiques et les spécialistes de la conformité de Cont
 
 Pour accéder à la conformité des communications lorsque vous démarrez à partir du Centre d’administration Microsoft 365, les administrateurs informatiques et les spécialistes de la conformité de Contoso se connectent au Centre d’administration Microsoft 365 [ https://admin.microsoft.com) (](https://admin.microsoft.com) et accèdent au Centre d’administration **Microsoft 365**  >  Conformité.
 
-![Lien conformité des communications](../media/communication-compliance-case-compliance-link.png)
+![Lien de conformité des communications](../media/communication-compliance-case-compliance-link.png)
 
 Cette action ouvre le Centre de sécurité et conformité **Office 365** et doit sélectionner le lien vers le Centre de conformité **Microsoft 365** fourni dans la bannière en haut de la page.
 
 ![Centre de sécurité et conformité Office 365](../media/communication-compliance-case-scc.png)
 
-Une fois dans le Centre de conformité **Microsoft 365,** les administrateurs informatiques de Contoso sélectionnent Afficher tout pour afficher la liste complète des solutions de conformité. 
+Une fois dans le Centre de conformité **Microsoft 365,** les administrateurs informatiques De Contoso sélectionnent Afficher tout pour afficher la liste complète des solutions de conformité. 
 
 ![Menu conformité des communications](../media/communication-compliance-case-show-all.png)
 
@@ -164,14 +164,14 @@ Les administrateurs informatiques de Contoso s’assurent qu’ils examinent les
 
 Les spécialistes de la conformité Contoso souhaitent ajouter tous les utilisateurs à la stratégie de communication qui surveillera le langage choquant. Ils peuvent décider d’ajouter chaque compte d’utilisateur à la stratégie séparément, mais ils ont décidé qu’il est beaucoup plus facile et gagnent du temps d’utiliser un groupe de **distribution** Tous les utilisateurs pour les utilisateurs de cette stratégie.
 
-Ils doivent créer un groupe pour inclure tous les utilisateurs de Contoso, de sorte qu’ils prennent les mesures suivantes :
+Ils doivent créer un groupe pour inclure tous les utilisateurs de Contoso, afin qu’ils prennent les mesures suivantes :
 
 1. Les administrateurs informatiques de Contoso se connectent au Centre d’administration **Microsoft 365** [(et https://admin.microsoft.com)](https://admin.microsoft.com) accédez aux groupes de groupes du Centre d’administration Microsoft **365).**  >    >  
 2. Ils **sélectionnent Ajouter un groupe et** terminent l’Assistant pour créer un groupe Microsoft *365* ou un groupe *de distribution.*
 
     ![Groupes](../media/communication-compliance-case-all-employees.png)
 
-3. Une fois le groupe créé, ils doivent ajouter tous les utilisateurs Contoso à celui-ci. Ils ouvrent le **Centre d’administration Exchange** [ https://outlook.office365.com/ecp) (et](https://outlook.office365.com/ecp) naviguent jusqu’aux groupes de destinataires du Centre d’administration   >    >  Exchange). Les administrateurs informatiques de Contoso  sélectionnent la zone d’appartenance et le nouveau groupe Tous les employés qu’ils ont créé et sélectionnent le contrôle Modifier pour ajouter tous les utilisateurs Contoso au nouveau groupe dans l’Assistant. 
+3. Une fois le groupe créé, ils doivent ajouter tous les utilisateurs Contoso à celui-ci. Ils ouvrent le **Centre d’administration Exchange** [ https://outlook.office365.com/ecp) (et](https://outlook.office365.com/ecp) naviguent vers les groupes de destinataires du Centre d’administration   >    >  Exchange). Les administrateurs informatiques de Contoso  sélectionnent la zone d’appartenance et le nouveau groupe Tous les employés qu’ils ont créé et sélectionnent le contrôle Modifier pour ajouter tous les utilisateurs Contoso au nouveau groupe dans l’Assistant. 
 
     ![Centre d’administration Exchange](../media/communication-compliance-case-eac.png)
 
@@ -184,7 +184,7 @@ Une fois toutes les conditions préalables remplies, les administrateurs informa
     ![Modèle de langage choquant de conformité des communications](../media/communication-compliance-case-template.png)
 
 2. Dans l’Assistant modèle de stratégie, les administrateurs informatiques et les spécialistes de la conformité de Contoso collaborent pour compléter les trois champs obligatoires : **Nom de la stratégie**, **Utilisateurs ou groupes à surveiller**, puis **Réviseurs**.
-3. Étant donné que l’Assistant de stratégie a déjà suggéré un nom pour la stratégie, les administrateurs informatiques et les spécialistes de la conformité décident de conserver le nom suggéré et de se concentrer sur les champs restants. Ils sélectionnent le groupe  Tous les utilisateurs pour le champ Utilisateurs ou groupes à surveiller et sélectionnent les spécialistes de la conformité qui doivent examiner et corriger les alertes de stratégie pour le champ **Relecteurs.**  La dernière étape pour configurer la stratégie et commencer à collecter des informations d’alerte consiste à sélectionner **Créer une stratégie.**
+3. Étant donné que l’Assistant de stratégie a déjà suggéré un nom pour la stratégie, les administrateurs informatiques et les spécialistes de la conformité décident de conserver le nom suggéré et de se concentrer sur les champs restants. Ils sélectionnent le groupe  *Tous* les utilisateurs pour le champ Utilisateurs ou groupes, puis sélectionnent les spécialistes de la conformité qui doivent examiner et corriger les alertes de stratégie pour le champ **Relecteurs.** La dernière étape pour configurer la stratégie et commencer à collecter des informations d’alerte consiste à sélectionner **Créer une stratégie.**
 
     ![Assistant Langage choquant de conformité des communications](../media/communication-compliance-case-wizard.png)
 
@@ -192,4 +192,4 @@ Une fois toutes les conditions préalables remplies, les administrateurs informa
 
 À présent que la stratégie de conformité des communications est configurée pour surveiller le langage choquant, l’étape suivante pour les spécialistes de la conformité de Contoso est d’enquêter et de corriger les alertes générées par la stratégie. Le traitement total des communications dans tous les canaux sources par la stratégie et l’affichage des alertes dans le **Tableau de bord d’alerte** peut prendre jusqu’à 24 heures.
 
-Une fois les alertes générées, les spécialistes de la conformité Contoso suivent les [instructions](communication-compliance-investigate-remediate.md) du flux de travail pour examiner et corriger les problèmes de langage choquant.
+Une fois les alertes générées, les spécialistes de la conformité Contoso suivent les [instructions](communication-compliance-investigate-remediate.md) de flux de travail pour examiner et corriger les problèmes de langage choquant.

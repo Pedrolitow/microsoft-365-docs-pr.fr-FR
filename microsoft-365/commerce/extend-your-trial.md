@@ -42,7 +42,7 @@ Avez-vous besoin de plus de temps pour tester les fonctionnalités de Microsoft 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement d’essai que vous souhaitez étendre. 
 3. Dans la page détails de l’abonnement, dans la section Abonnements et **paramètres de** paiement, sélectionnez **Étendre la date de fin.**
-4. Dans le **volet** Date de fin de l’extension, examinez les informations de poste et, si nécessaire, sélectionnez un mode de paiement. Lorsque vous avez terminé, sélectionnez **Étendre la version d’essai.**
+4. Dans le volet Date **de** fin de l’extension, examinez les informations de poste et, si nécessaire, sélectionnez un mode de paiement. Lorsque vous avez terminé, sélectionnez **Étendre la version d’essai.**
 
 ::: moniker-end
 

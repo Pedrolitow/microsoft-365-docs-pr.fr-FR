@@ -53,7 +53,7 @@ Dans la plupart des cas, ces adresses sont identiques. Si vous le souhaitez, vou
   
 ::: moniker range="o365-worldwide"
 
-Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoice.md) votre facture et Comprendre [votre facture.](understand-your-invoice2.md)
+Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoice.md) votre facture et [Comprendre votre facture.](understand-your-invoice2.md)
 
 ::: moniker-end
 
@@ -192,7 +192,7 @@ Vous pouvez également modifier l'adresse de messagerie de secours d'autres admi
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, allez à **la** page Notifications de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">facturation.</a>
+1. Dans le centre d’administration, allez à **la** page Notifications de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">facturation.</a>
 
 ::: moniker-end
 

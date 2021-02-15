@@ -57,11 +57,11 @@ Votre adresse de messagerie initiale dans Office 365 Germany inclut .onmicrosoft
 
 ::: moniker range="o365-21vianet"
 
-Votre adresse de messagerie initiale dans Office 365 géré par 21Vianet inclut partner.onmschina.cn, comme tom@fourthcoffee.partner.onmschina.cn. Vous pouvez la modifier en une adresse plus conviviale comme tom@fourthcoffee.cn. Vous aurez besoin de votre propre nom de domaine, comme fourthcoffee.cn d’abord. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
+Votre adresse de messagerie initiale dans Office 365 géré par 21Vianet inclut des partner.onmschina.cn, comme tom@fourthcoffee.partner.onmschina.cn. Vous pouvez la modifier en une adresse plus conviviale comme tom@fourthcoffee.cn. Vous aurez besoin de votre propre nom de domaine, comme fourthcoffee.cn d’abord. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
-Lorsque vous modifiez le courrier électronique de votre domaine pour qu’il soit envoyé à Microsoft 365, en mettant à jour l’enregistrement MX de votre domaine lors de l’installation, tous les messages envoyés à ce domaine commenceront à être envoyés à Microsoft 365. Assurez-vous que vous avez ajouté des utilisateurs et créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des messages sur votre domaine avant de modifier l’enregistrement MX. Vous ne souhaitez pas déplacer le courrier électronique de tous les employés de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide)avec seulement quelques adresses de messagerie à la place.
+Lorsque vous modifiez le courrier électronique de votre domaine pour qu’il soit envoyé à Microsoft 365, en mettant à jour l’enregistrement MX de votre domaine lors de l’installation, tous les messages envoyés à ce domaine commenceront à être envoyés à Microsoft 365. Assurez-vous que vous avez ajouté des utilisateurs et créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des messages sur votre domaine avant de modifier l’enregistrement MX. Vous ne souhaitez pas déplacer le courrier électronique de tous les employés de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de messagerie à la place.](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide)
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Modifier votre adresse de messagerie pour utiliser votre domaine personnalisé à l’aide du Centre d’administration Microsoft 365
 
@@ -91,10 +91,10 @@ Vous devez avoir un compte d’administrateur global pour effectuer ces étapes.
     
 4. Suivez les étapes indiquées pour confirmer que vous êtes le propriétaire de votre domaine et que vous voulez modifier votre adresse de courrier.
     
-Vous serez guidé pour tout configurer correctement avec votre domaine dans Microsoft 365.
+Vous serez guidé pour que tout soit correctement installé avec votre domaine dans Microsoft 365.
 
 > [!NOTE]
-> Si vous n’utilisez pas de licence Exchange, vous ne pouvez pas utiliser le domaine pour envoyer ou recevoir des courriers électroniques du client Microsoft 365.
+> Si vous n’utilisez pas de licence Exchange, vous ne pouvez pas utiliser le domaine pour envoyer ou recevoir des courriers électroniques à partir du client Microsoft 365.
   
 ## <a name="related-articles"></a>Articles connexes
 

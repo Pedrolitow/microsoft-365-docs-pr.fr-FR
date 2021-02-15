@@ -56,7 +56,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 ### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure 
 - Analyses du bureau 
 - Cloud Management Gateway & Cloud Distribution Point 
-- Attachement du client, cogestion et changement de charges de travail 
+- Attachement des locataires, cogestion et changement de charges de travail 
 - Accès à distance (VPN) 
 
 ### <a name="prepare-configuration"></a>Préparer la configuration   

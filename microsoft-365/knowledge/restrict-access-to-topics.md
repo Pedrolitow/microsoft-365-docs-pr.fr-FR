@@ -27,7 +27,7 @@ Dans Microsoft Domaine, les parties prenantes de votre organisation peuvent voul
 Bien que les administrateurs du savoir contrôlent les paramètres du réseau de connaissances pour empêcher la découverte de sujets, les gestionnaires de connaissances et les autres parties prenantes doivent savoir comment cela se fait pour pouvoir travailler en collaboration.
 
 > [!Important] 
-> Cet article explique comment empêcher l’identification de rubriques par le biais de l’IA ou leur affichage dans votre environnement comme un dispositif de sécurité supplémentaire. Il est important de noter que, dans rubriques Topics, les utilisateurs ne sont pas autorisés à afficher quoi que ce soit dans une rubrique à partir des autorisations Office 365. Même si un utilisateur est en mesure d’afficher une rubrique, ses fichiers, ses sites et ses pages ne sont pas autorisés à afficher Office 365. Vous assurer que les autorisations sur les fichiers sensibles sont correctement définies doit être votre principal dispositif de sécurité.
+> Cet article explique comment empêcher l’identification de rubriques par le biais de l’IA ou leur affichage dans votre environnement en tant que dispositif de sécurité supplémentaire. Il est important de noter que, dans rubriques Topics, les utilisateurs ne sont pas autorisés à afficher quoi que ce soit dans une rubrique à partir des autorisations Office 365. Même si un utilisateur est en mesure d’afficher une rubrique, ses fichiers, ses sites et ses pages ne sont pas autorisés à afficher Office 365. Vous assurer que les autorisations sur les fichiers sensibles sont correctement définies doit être votre principal dispositif de sécurité.
 
 ## <a name="prevent-topics-from-being-identified"></a>Empêcher l’identification des rubriques
 
@@ -38,7 +38,7 @@ L’administrateur du savoir peut restreindre l’accès à des rubriques spéci
 
 ## <a name="prevent-topics-from-being-viewed-by-specific-users"></a>Empêcher des utilisateurs spécifiques d’afficher des rubriques
 
-Les administrateurs du savoir peuvent également sélectionner les personnes qui peuvent afficher [les rubriques de votre organisation.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules) Ce paramètre vous permet de sélectionner les utilisateurs sous licence qui peuvent afficher toutes les rubriques. Par exemple, dans un environnement pilote, vous pouvez autoriser uniquement un petit groupe d’utilisateurs à afficher des rubriques.
+Les administrateurs du savoir peuvent également [sélectionner les personnes qui peuvent afficher les rubriques de votre organisation.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules) Ce paramètre vous permet de sélectionner les utilisateurs sous licence qui peuvent afficher toutes les rubriques. Par exemple, dans un environnement pilote, vous pouvez autoriser uniquement un petit groupe d’utilisateurs à afficher des rubriques.
 
 ## <a name="remove-topics-from-being-viewed"></a>Supprimer l’affichage des rubriques
 

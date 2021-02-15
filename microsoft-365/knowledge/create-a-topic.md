@@ -33,7 +33,7 @@ Dans Rubriques de Topics, vous pouvez créer une rubrique si aucune rubrique n�
 
 Pour créer une rubrique, vous devez :
 - Vous avez une licence Topics.
-- Avoir des autorisations [**sur qui peut créer ou modifier des rubriques**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres des rubriques Topics. 
+- Avoir des autorisations [**sur Qui peut créer ou modifier des rubriques**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres d’autorisations de la rubrique Rubriques. 
 
 > [!Note] 
 > Les utilisateurs qui sont autorisés à gérer des rubriques dans le centre de rubriques (gestionnaires de connaissances) sont déjà autorisés à créer et modifier des rubriques.
@@ -74,9 +74,9 @@ Pour créer une rubrique, vous devez :
     
     ![Sélectionner un site](../media/knowledge-management/sites.png)</br>
 
-7. La <b>section Rubriques connexes</b> montre les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une <b></b> autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
+7. La <b>section Rubriques connexes</b> présente les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une <b></b> autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
 
-   ![Voir aussi](../media/knowledge-management/related-topic.png)</br>  
+   ![Rubriques connexes](../media/knowledge-management/related-topic.png)</br>  
 
     Vous pouvez ensuite donner une description de la façon dont les rubriques sont liées, puis sélectionner <b>Mettre à jour.</b></br>
 
@@ -94,7 +94,7 @@ Pour créer une rubrique, vous devez :
 
 9. Sélectionnez **Publier** pour enregistrer vos modifications. 
 
-Une fois que vous avez publié la page, le nom de la rubrique, l’autre nom, la description et les personnes épinglées s’affichent à tous les utilisateurs sous licence qui affichent la rubrique. Des fichiers, des pages et des sites spécifiques apparaissent uniquement sur la page de rubrique si la visionneuse dispose d’autorisations Office 365 sur l’élément. 
+Une fois que vous avez publié la page, le nom de la rubrique, l’autre nom, la description et les personnes épinglées s’affichent à tous les utilisateurs sous licence qui affichent la rubrique. Des fichiers, des pages et des sites spécifiques apparaissent uniquement sur la page de rubrique si la visionneuse dispose des autorisations Office 365 sur l’élément. 
 
 
 

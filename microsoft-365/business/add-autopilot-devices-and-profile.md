@@ -73,7 +73,7 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     Pour plus d'informations, voir [Fichier CSV de liste d'appareils](https://docs.microsoft.com/microsoft-365/admin/misc/device-list). Vous pouvez également télécharger un exemple de fichier sur la page **Charger un fichier .csv avec la liste des appareils**. 
     
 > [!NOTE]
-> Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client enregistre un appareil auprès de Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit Windows (PKID), car cela n’est pas obligatoire pour inscrire un appareil et la valeur PKID null dans le fichier CSV de sortie est parfaitement correct. Seuls le numéro de série et le hachage matériel seront remplis.
+> Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client enregistre un appareil avec Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit Windows (PKID), car cela n’est pas obligatoire pour inscrire un appareil et la valeur PKID null dans le fichier CSV de sortie est parfaitement correct. Seuls le numéro de série et le hachage matériel seront remplis.
     
 4. Dans la page **Attribuer un profil,** vous pouvez choisir un profil existant ou en créer un nouveau. Si vous n’en avez pas encore, vous serez invité à en créer un. 
     

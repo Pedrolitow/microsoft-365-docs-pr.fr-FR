@@ -48,7 +48,7 @@ Avant de commencer à gérer les accès privilégiés, vous devez confirmer votr
 Les utilisateurs qui envoient des demandes de gestion des accès privilégiés et y répondent doivent se voir attribuer l’une des licences ci-dessus.
 
 >[!IMPORTANT]
->La conformité avancée Office 365 n’est plus vendue en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités supplémentaires.
+>La conformité avancée Office 365 n’est plus vendue en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités de conformité supplémentaires.
 
 Si vous n’avez pas de plan Office 365 Entreprise E5 existant et que vous souhaitez essayer la gestion des accès [](https://www.microsoft.com/microsoft-365/enterprise) privilégiés, vous pouvez ajouter [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement Office 365 existant ou vous inscrire à une version d’essai de Microsoft 365 Entreprise E5.
 
@@ -222,11 +222,11 @@ Une fois qu’une demande d’approbation est créée, l’état de la demande d
 
 1. Connectez-vous [au Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification.
 
-2. Dans le Centre d’administration, accédez à **Paramètres** De l’organisation  >  **Paramètres** Sécurité  >  **& Accès**  >  **privilégié à la confidentialité.**
+2. Dans le Centre d’administration, accédez à **Paramètres** De l’organisation Paramètres Sécurité & Accès privilégié à  >    >    >  **la confidentialité.**
 
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 
-4. Sélectionnez **Affichage** pour filtrer les demandes envoyées par **état En attente,** **Approuvé,** Refusé **ou** **Customer Lockbox.**
+4. Sélectionnez **Afficher** pour filtrer les demandes envoyées en **Pending,** **Approved**, **Denied** ou **Customer Lockbox** status.
 
 #### <a name="in-exchange-management-powershell"></a>Dans Exchange Management PowerShell
 
@@ -250,7 +250,7 @@ Lorsqu’une demande d’approbation est créée, les membres du groupe d’appr
 
 1. Connectez-vous [au Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification.
 
-2. Dans le Centre d’administration, accédez à **Paramètres** De l’organisation  >  **Paramètres** Sécurité  >  **& Accès**  >  **privilégié à la confidentialité.**
+2. Dans le Centre d’administration, accédez à **Paramètres** De l’organisation Paramètres Sécurité & Accès privilégié à  >    >    >  **la confidentialité.**
 
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 

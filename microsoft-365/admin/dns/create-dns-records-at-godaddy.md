@@ -66,7 +66,7 @@ Suivez la procédure ci-dessous.
 
     |**Record type (Type d'enregistrement)** |**Hôte**|**VALEUR TXT**|**TTL** |
     |:-----|:-----|:-----|:-----|
-    |TXT (texte)|@|MS=ms *XXXXXXXX*<br>**Remarque**: il s’agit d’un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure  <br>(Sélectionnez une valeur dans la liste liste.)|
+    |TXT (texte)|@|MS=ms *XXXXXXXX*<br>**Remarque**: il s’agit d’un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure  <br>(Sélectionnez une valeur dans la liste de listes.)|
 
       ![GoDaddy-BP-Verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
@@ -123,7 +123,7 @@ Suivez la procédure ci-dessous.
 
     |**Record type (Type d'enregistrement)**|**Host (Hôte)**|**Points to (Destination)**|**Priorité**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1 heure  <br/> |
+    |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1 heure  <br/> |
 
 6. Sélectionnez **Enregistrer**.
 
@@ -229,12 +229,12 @@ Suivez la procédure ci-dessous.
 
     Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant.
 
-    (Choisissez le **type d’enregistrement et** les **valeurs TTL** dans les listes de listes.)
+    (Choisissez le **type d’enregistrement et** les valeurs **TTL** dans les listes de listes.)
 
     |**Type d'enregistrement**|**Name (Nom)**|**Target (Cible)**|**Protocol (Protocole)**|**Service (Service)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 heure  <br/> |
-    |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 heure  <br/> |
+    |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 heure  <br/> |
+    |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 heure  <br/> |
 
     ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 

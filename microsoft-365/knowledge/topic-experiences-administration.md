@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Découvrez comment modifier le nom du centre de rubriques dans Microsoft Topics.
+description: Découvrez comment modifier le nom du centre de rubriques dans Les rubriques microsoft.
 ms.openlocfilehash: 91f0693ba24e412812e1b8db19cfcf0febd2ec66
 ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT

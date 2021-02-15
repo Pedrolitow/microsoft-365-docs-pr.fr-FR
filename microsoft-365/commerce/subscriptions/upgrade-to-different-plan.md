@@ -36,7 +36,7 @@ ms.locfileid: "50114536"
 
 ::: moniker-end
 
-Lorsque votre entreprise change ou que vous avez besoin de fonctionnalités supplémentaires, vous pouvez mettre à niveau les plans. Le moyen le plus simple de le faire consiste à utiliser l’onglet **Mise** à niveau dans le Centre d’administration. Toutefois, l’utilisation **de l’onglet** Mise à niveau n’est pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez modifier les plans manuellement.
+Lorsque votre entreprise change ou que vous avez besoin de fonctionnalités supplémentaires, vous pouvez mettre à niveau les plans. Le moyen le plus simple de  le faire consiste à utiliser l’onglet Mise à niveau dans le Centre d’administration. Toutefois, l’utilisation **de l’onglet** Mise à niveau n’est pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez modifier les plans manuellement.
 
 > [!NOTE]
 > Cet article s’applique au nouveau centre d’administration. Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil. Pour afficher l’article sur l’ancien centre d’administration, voir Basculer vers une autre offre [Microsoft 365 pour les entreprises.](switch-to-a-different-plan.md)
@@ -53,7 +53,7 @@ Lorsque vous  utilisez l’onglet Mise à niveau, vous êtes dirigé tout au lon
 
 4. Recherchez le plan vers lequel vous souhaitez mettre à niveau, puis sélectionnez le bouton **Mettre à** niveau.
 
-5. Entrez le nombre de licences dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’année entière, puis sélectionnez **Accéder à l’checkout.**
+5. Entrez le nombre de licences dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’année entière, puis **sélectionnez Accéder à l’checkout**.
 
     > [!NOTE]
     > Veillez à acheter suffisamment de licences pour couvrir tous vos utilisateurs.
@@ -66,7 +66,7 @@ Lorsque vous avez terminé l’enregistrement, la finalisation de la mise à niv
 
 ## <a name="the-upgrade-tab-is-empty"></a>L’onglet Mise à niveau est vide
 
-Si **l’onglet** Mise à niveau est vide, vous verrez une explication sur la raison pour laquelle vous ne pouvez pas mettre à niveau pour le moment. Vous pouvez essayer de [modifier les plans manuellement.](change-plans-manually.md) Pour plus d’informations, [voir Pourquoi ne puis-je pas mettre à niveau les plans ?](#why-cant-i-upgrade-plans)
+Si **l’onglet** Mise à niveau est vide, vous verrez une explication sur la raison pour laquelle vous ne pouvez pas mettre à niveau pour le moment. Vous pouvez essayer de [modifier les plans manuellement.](change-plans-manually.md) Pour plus d’informations, [voir Pourquoi ne puis-je pas mettre à niveau les plans ?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>L'offre à laquelle je veux souscrire n'apparaît pas
 
@@ -162,7 +162,7 @@ Les utilisateurs de l'ancien abonnement seront automatiquement déplacés vers l
   
 Si votre ancien abonnement inclut plusieurs services et si vous avez modifié l’un de ces services auquel vos utilisateurs sont affectés, vous pouvez en prendre note avant de mettre à niveau les plans afin de pouvoir recréer ces modifications par la suite. Tous les utilisateurs pourront accéder à tous les services dans le nouvel abonnement. Par exemple, si vous avez déjà acheté Microsoft 365 Business Premium pour l’ensemble de vos 100 utilisateurs, mais que vous n’avez pas signé le service SharePoint Online de 50 d’entre eux, cette modification ne sera pas conservée après la mise à niveau des plans.
   
-Si vous avez plusieurs abonnements avant de mettre à niveau des plans et que les utilisateurs ont attribué des licences à plusieurs abonnements, ce modèle d’attribution sera conservé autant que possible dans le nouvel abonnement.
+Si vous avez plusieurs abonnements avant de mettre à niveau des plans et que des utilisateurs ont attribué des licences à plusieurs abonnements, ce modèle d’attribution sera conservé autant que possible dans le nouvel abonnement.
   
 Toutes les données utilisateur seront conservées pendant la mise à niveau, y compris les boîtes aux lettres Exchange et les documents, listes et autres informations SharePoint Online.
   

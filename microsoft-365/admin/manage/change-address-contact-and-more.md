@@ -44,11 +44,11 @@ Pour modifier l’adresse associée à votre facture ou abonnement, voir Modifie
 ## <a name="edit-organization-information"></a>Modifier les informations de l'organisation
 
 > [!IMPORTANT]
-> Vous ne pouvez pas modifier le pays ou la région de votre abonnement. En effet, le pays ou la région dans lequel se trouve votre organisation détermine les services disponibles, les taxes et la devise de facturation, ainsi que l’emplacement du centre de données. Pour modifier le pays ou la région de votre organisation, inscrivez-vous à un nouveau compte, choisissez le pays ou la région souhaité, puis achetez un nouvel abonnement.
+> Vous ne pouvez pas modifier le pays ou la région de votre abonnement. En effet, le pays ou la région dans lequel se trouve votre organisation détermine quels services sont disponibles, les taxes et la devise de facturation, ainsi que l’emplacement du centre de données. Pour modifier le pays ou la région de votre organisation, inscrivez-vous à un nouveau compte, choisissez le pays ou la région souhaité, puis achetez un nouvel abonnement.
 
 Pour modifier d’autres informations sur la page de profil de votre entreprise :
   
-1. Dans le Centre d’administration, allez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**de l’organisation.**</a>
+1. Dans le Centre d’administration, allez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org.**</a>
 
 2. Sous **l’onglet Profil de** l’organisation, sélectionnez **Informations sur l’organisation.**
 

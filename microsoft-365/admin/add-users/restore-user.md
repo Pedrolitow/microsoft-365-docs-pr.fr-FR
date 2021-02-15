@@ -95,7 +95,7 @@ Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur 
 
 ::: moniker range="o365-germany"
 
-1. Go to the [admin center,](https://go.microsoft.com/fwlink/p/?linkid=848041)and then select **Users** \> **Deleted users**.
+1. Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.
 
 ::: moniker-end
 
@@ -125,7 +125,7 @@ Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur 
 
 Un conflit d'adresses proxy survient lorsque vous supprimez un compte d'utilisateur contenant une adresse proxy, attribuez cette adresse à un autre compte, puis tentez de restaurer le compte supprimé. Suivez les étapes ci-dessous pour résoudre ce problème.
   
-Pour ce [faire, vous](about-admin-roles.md) devez avoir des autorisations d’administrateur dans Microsoft 365. 
+Pour ce [faire, vous devez](about-admin-roles.md) avoir des autorisations d’administrateur dans Microsoft 365. 
   
 
 ::: moniker range="o365-worldwide"
@@ -142,7 +142,7 @@ Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and 
 
 ::: moniker range="o365-21vianet"
 
-1. Go to the [admin center,](https://go.microsoft.com/fwlink/p/?linkid=850627)and then select **Users** \> **Deleted users**.
+1. Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.
 
 ::: moniker-end
 

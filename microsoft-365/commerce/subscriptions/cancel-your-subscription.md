@@ -35,7 +35,7 @@ ms.locfileid: "50114728"
 
 ::: moniker-end
 
-*Éligibilité :* Si vous avez moins de 25 licences attribuées à des utilisateurs, vous pouvez annuler votre abonnement d’essai ou payant Microsoft 365 pour les entreprises en ligne dans le Centre d’administration Microsoft 365 à tout moment. Si vous avez plus de 25 licences attribuées à des utilisateurs, appelez le [support technique pour annuler votre abonnement.](../../admin/contact-support-for-business-products.md)
+*Éligibilité :* Si vous avez moins de 25 licences attribuées à des utilisateurs, vous pouvez annuler votre abonnement d’essai ou payant Microsoft 365 pour les entreprises en ligne à tout moment dans le Centre d’administration Microsoft 365. Si vous avez plus de 25 licences attribuées à des utilisateurs, appelez le [support technique pour annuler votre abonnement.](../../admin/contact-support-for-business-products.md)
 
 *Remboursement :* tout crédit calculé au prorata vous sera remboursé au cours du cycle de facturation suivant.
 
@@ -52,7 +52,7 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, allez à **la** page Facturation de vos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">produits,</a> puis sélectionnez **l’onglet Produits.**
+1. Dans le Centre d’administration, allez à **la** \> page Facturation de <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">vos produits,</a> puis sélectionnez **l’onglet Produits.**
 2. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
 3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
 4. Sélectionnez **Enregistrer**.
@@ -97,7 +97,7 @@ Votre abonnement apparaît désormais dans **l’état Désactivé** et dispose 
 
 Si vous annulez un abonnement avant la fin de votre période, l’état de l’abonnement passe directement à l’état désactivé. Pour la plupart des abonnements et dans la plupart des pays et régions, l'état désactivé dure 90 jours. Quand un abonnement est en état désactivé, les administrateurs peuvent toujours consulter et sauvegarder les données pour leur organisation, mais nous recommandons que les administrateurs [sauvegardent les données](back-up-data-before-switching-plans.md) d'un abonnement avant l'annulation de celui-ci, en particulier s'il s'agit de leur seul abonnement. Les administrateurs peuvent également réactiver l’abonnement lorsqu’il est dans l’état désactivé.
 
-Après 90 heures, l’abonnement passe à l’état supprimé. Toutes les données que vous laissez derrière vous peuvent être supprimées après ces 90 jours au plus tard 180 jours après l’annulation. Vous ne pouvez pas supprimer un mode de paiement d’un abonnement annulé tant qu’il n’a pas atteint l’état supprimé.
+Une fois le 90 indiqué, l’abonnement passe à l’état supprimé. Toutes les données que vous laissez derrière vous peuvent être supprimées après ces 90 jours au plus tard 180 jours après l’annulation. Vous ne pouvez pas supprimer un mode de paiement d’un abonnement annulé tant qu’il n’a pas atteint l’état supprimé.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Voici ce à quoi vous et vos utilisateurs devez vous attendre si vous annulez un abonnement.
   
@@ -124,7 +124,7 @@ Par exemple, modifiez l’enregistrement MX sur votre hôte DNS. Le courrier él
 
 - Si vos enregistrements de serveur de noms (NS) pointent vers des serveurs de noms [Microsoft 365,](../../admin/setup/add-domain.md)les modifications apportées à votre enregistrement MX ne prennent effet que lorsque vous modifiez vos enregistrements NS pour qu’ils pointent vers votre nouvel hôte DNS (voir l’étape 2).
 
-- Avant de mettre à jour l’enregistrement MX, faites savoir à vos utilisateurs la date à laquelle vous prévoyez de changer de courrier électronique et le nouveau fournisseur de messagerie que vous prévoyez d’utiliser. En outre, si vos utilisateurs souhaitent déplacer leur courrier Microsoft existant vers le nouveau fournisseur, ils doivent prendre des mesures supplémentaires.
+- Avant de mettre à jour l’enregistrement MX, faites savoir à vos utilisateurs la date à laquelle vous prévoyez de changer leur courrier électronique et le nouveau fournisseur de messagerie que vous prévoyez d’utiliser. En outre, si vos utilisateurs souhaitent déplacer leur courrier Microsoft existant vers le nouveau fournisseur, ils doivent prendre des mesures supplémentaires.
 
 - Le jour où vous modifiez l'enregistrement MX, suivez le reste des étapes décrites dans cet article.
 

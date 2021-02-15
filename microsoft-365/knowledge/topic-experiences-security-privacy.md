@@ -19,11 +19,11 @@ ms.locfileid: "50107791"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Sécurité et confidentialité des rubriques microsoft
 
-Les rubriques utilisent les fonctionnalités de sécurité de contenu existantes dans Microsoft 365, ainsi que les contrôles administratifs, pour contrôler le contenu généré par l’IA qui est présenté aux utilisateurs de votre organisation. C’est la combinaison des paramètres de sécurité Microsoft 365 (autorisations sur les sites, fichiers et dossiers) et des paramètres d’administration Rubriques qui déterminent ce qu’un utilisateur donné peut voir dans les rubriques.
+Les rubriques utilisent les fonctionnalités de sécurité de contenu existantes dans Microsoft 365, ainsi que les contrôles administratifs, pour contrôler le contenu généré par l’IA qui est présenté aux utilisateurs de votre organisation. C’est la combinaison des paramètres de sécurité Microsoft 365 (autorisations pour les sites, fichiers et dossiers) et des paramètres d’administration Rubriques qui déterminent ce qu’un utilisateur donné peut voir dans les rubriques.
 
 La configuration de Rubriques ne modifie pas les contrôles d’accès existants sur le contenu de votre organisation. Les utilisateurs voient uniquement ce à quoi ils ont déjà accès.
 
-Cet article décrit le fonctionnement des rubriques du point de vue de la sécurité et les options dont les administrateurs de connaissances et les gestionnaires de connaissances ont besoin pour contrôler la visibilité des rubriques. Lisez cet article dans le cadre de [votre planification pour les rubriques.](plan-topic-experiences.md)
+Cet article décrit le fonctionnement des rubriques du point de vue de la sécurité et les options dont les administrateurs de connaissances et les gestionnaires de connaissances ont besoin pour contrôler la visibilité des rubriques. Lisez cet article dans le cadre de [votre planification des rubriques.](plan-topic-experiences.md)
 
 Vous devez être familiarisé avec [](topic-center-overview.md)les [rubriques,](topic-experiences-overview.md)le centre de rubriques et comment travailler avec des rubriques dans le centre de [rubriques](manage-topics.md) avant de lire cet article.
 
@@ -58,7 +58,7 @@ Le tableau suivant décrit ce que les utilisateurs (visiteurs de rubriques, coll
 |Pages|Les pages sont visibles uniquement pour les utilisateurs qui ont des autorisations sur le contenu source.|
 |Sites|Les sites sont visibles uniquement pour les utilisateurs qui ont des autorisations sur le contenu source.|
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Bonnes pratiques
 
 Les rubriques présentent des informations aux utilisateurs en fonction de leurs autorisations existantes sur le contenu. Microsoft 365 offre de nombreuses façons de s’assurer que le contenu sensible est limité aux utilisateurs appropriés. Au-delà des autorisations d’équipe ou [](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) de site standard, vous pouvez utiliser des étiquettes de sensibilité ou la protection contre la perte de données pour restreindre l’accès au contenu et aux révisions d’accès afin d’examiner régulièrement l’accès des utilisateurs aux informations [sensibles.](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) [](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
 
@@ -68,13 +68,13 @@ S’il existe des rubriques que vous souhaitez exclure entièrement des expérie
 
 - [Exclure les sites SharePoint sensibles de la découverte de rubriques.](topic-experiences-discovery.md#select-sharepoint-topic-sources) Le contenu de ces sites n’apparaîtra pas dans les expériences de rubrique.
 
-- [Exclure les rubriques par nom.](topic-experiences-discovery.md#exclude-topics-by-name) Les rubriques explicitement exclues n’apparaissent pas dans les expériences de rubrique.
+- [Exclure les rubriques par leur nom.](topic-experiences-discovery.md#exclude-topics-by-name) Les rubriques explicitement exclues n’apparaissent pas dans les expériences de rubrique.
 
 - Faire supprimer des rubriques dans le centre de rubriques par les gestionnaires de connaissances.
 
 En outre, nous vous recommandons les meilleures pratiques ci-après :
 
-- Embauchez des responsables de connaissances de différents secteurs de votre organisation. Le fait de disposer de gestionnaires de connaissances avec une grande variété d’expertise et d’accès au contenu sous-jacent utilisé par l’IA peut vous aider à organiser les connaissances les plus utiles pour vos utilisateurs et à supprimer les informations sensibles si elles sont trouvées.
+- Embauchez des responsables de connaissances de différents secteurs de votre organisation. Le fait de disposer de gestionnaires de connaissances avec une grande variété d’expertises et d’accès au contenu sous-jacent utilisé par l’IA peut vous aider à organiser les connaissances les plus utiles pour vos utilisateurs et à supprimer les informations sensibles si elles sont trouvées.
 
 - Configurer un flux de travail pour demander des modifications. Les gestionnaires de connaissances, les propriétaires d’équipe ou de site doivent avoir un processus par lequel ils peuvent demander l’exclusion de rubriques ou de sites au début de nouveaux projets au sein de votre organisation ou s’ils trouvent du contenu avec des paramètres d’autorisation inappropriés.
 

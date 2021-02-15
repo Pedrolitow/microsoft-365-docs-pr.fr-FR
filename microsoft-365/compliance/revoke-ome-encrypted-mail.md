@@ -25,7 +25,7 @@ ms.locfileid: "50105139"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Révoquer le courrier électronique chiffré par le chiffrement de messages avancé
 
-La révocation du courrier électronique est proposée dans le cadre du chiffrement avancé des messages Office 365. Le chiffrement de messages avancé Office 365 est inclus dans [Microsoft 365 Entreprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (tarifs pour le personnel à but non lucratif), Office 365 Entreprise E5 (prix du personnel à but non lucratif) et Office 365 Éducation A5. Si votre organisation dispose d’un abonnement qui n’inclut pas le chiffrement de messages avancé Office 365, vous pouvez l’acheter avec le module SKU de conformité Microsoft 365 E5 pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou le module SKU de conformité avancée Office 365 pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou Office 365 SKU.
+La révocation du courrier électronique est proposée dans le cadre du chiffrement avancé des messages Office 365. Le chiffrement de messages avancé Office 365 est inclus dans [Microsoft 365 Entreprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (tarifs du personnel à but non lucratif), Office 365 Entreprise E5 (prix du personnel à but non lucratif) et Office 365 Éducation A5. Si votre organisation dispose d’un abonnement qui n’inclut pas le chiffrement de messages avancé Office 365, vous pouvez l’acheter avec le module SKU de conformité Microsoft 365 E5 pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou le module SKU de conformité avancée Office 365 pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou Office 365 SKU.
 
 Cet article fait partie d’une série plus importante d’articles sur le chiffrement de [messages Office 365.](ome.md)
 
@@ -33,7 +33,7 @@ Si un message a été chiffré à l’aide du chiffrement de messages avancé Of
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>Messages électroniques chiffrés que vous pouvez révoquer
 
-Les administrateurs et les expéditeurs de messages peuvent révoquer des messages électroniques chiffrés si le destinataire a reçu un e-mail chiffré de marque basé sur un lien. Si le destinataire a reçu une expérience inline native dans un client Outlook pris en charge, vous ne pouvez pas révoquer le message.
+Les administrateurs et les expéditeurs de messages peuvent révoquer des messages électroniques chiffrés si le destinataire a reçu un message électronique chiffré de marque basé sur un lien. Si le destinataire a reçu une expérience inline native dans un client Outlook pris en charge, vous ne pouvez pas révoquer le message.
 
 Le fait qu’un destinataire reçoit une expérience basée sur un lien ou une expérience en ligne dépend du type d’identité du destinataire : les destinataires de compte Office 365 et Microsoft (par exemple, les utilisateurs outlook.com) bénéficient d’une expérience en ligne dans les clients Outlook pris en charge. Tous les autres types de destinataires, tels que les destinataires Gmail et Yahoo, offrent une expérience basée sur les liens.
 
@@ -73,7 +73,7 @@ Les administrateurs Microsoft 365 suivent les étapes générales suivantes pour
 
 - Obtenez l’ID de message de l’e-mail.
 - Vérifiez que vous pouvez révoquer le message.
-- Révoquer le message.
+- Révoquer le courrier.
 
 ### <a name="step-1-obtain-the-message-id-of-the-email"></a>Étape 1. Obtenir l’ID de message de l’e-mail
 
@@ -151,7 +151,7 @@ Pour révoquer un e-mail à l’Windows PowerShell, utilisez la cmdlet Set-OMEMe
      Revoked: True
      ```
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>Plus d’informations sur le chiffrement de messages avancé Office 365
+## <a name="more-information-about-office-365-advanced-message-encryption"></a>Plus d’informations sur le chiffrement avancé des messages Office 365
 
 - [Chiffrement de messages avancé Office 365](ome-advanced-message-encryption.md)
 

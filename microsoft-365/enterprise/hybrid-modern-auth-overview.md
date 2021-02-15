@@ -161,7 +161,7 @@ Vérifiez et cochez les éléments de votre liste avant de continuer :
     Les clients et/ou protocoles qui ne sont pas répertoriés (par exemple, POP3) ne sont pas en charge de l’authentification moderne avec Exchange local et continuent à tirer parti des mécanismes d’authentification hérités même après l’authentification moderne est activée dans l’environnement.
 
 - **Conditions préalables générales**
-  - Les scénarios de forêt de ressources nécessitent une relation d’confiance double avec la forêt de comptes pour s’assurer que des recherche SID correctes sont effectuées lors des demandes d’authentification moderne hybride. 
+  - Les scénarios de forêt de ressources nécessitent une relation d’confiance double avec la forêt de comptes pour garantir que des recherche SID correctes sont effectuées lors des demandes d’authentification moderne hybride. 
   - Si vous utilisez AD FS, vous devez disposer de Windows 2012 R2 AD FS 3.0 et versions ultérieures pour la fédération.
   - Vos configurations d’identité sont les types pris en charge par Azure AD Connect, tels que la synchronisation de hachage de mot de passe, l’authentification relais et le STS local pris en charge par Office 365.
   - Azure AD Connect est configuré et fonctionne pour la réplication et la synchronisation des utilisateurs.

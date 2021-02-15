@@ -28,7 +28,7 @@ Dans Rubriques microsoft, le centre de rubriques est un site SharePoint moderne 
 
 Le centre de rubriques possède une page d’accueil par défaut avec le volet Web Rubriques dans laquelle tous les utilisateurs sous licence peuvent voir les rubriques à laquelle ils ont une connexion. 
 
-Bien que tous les utilisateurs titulaires d’une licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent gérer les rubriques via la page **Gérer les rubriques.** L’onglet Gérer les rubriques s’affiche uniquement pour les utilisateurs qui ont les **autorisations Gérer les** rubriques. 
+Bien que tous les utilisateurs titulaires d’une licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent gérer les rubriques par le biais de la page **Gérer les rubriques.** L’onglet Gérer les rubriques s’affiche uniquement pour les utilisateurs qui ont les **autorisations Gérer les** rubriques. 
 
 ## <a name="where-is-my-topic-center"></a>Où se trouve mon centre de rubriques
 
@@ -57,7 +57,7 @@ Le centre de rubriques est créé lors de l’installation de Topics. Une fois l
 
 Dans la page d’accueil du centre de rubriques, vous pouvez voir les rubriques de votre organisation avec lesquelles vous êtes en relation.
 
-- Connexions suggérées : vous verrez les rubriques répertoriées sous Nous vous avons **répertoriés dans ces rubriques. Avons-nous bien fait ?**. Voici des rubriques dans lesquelles votre connexion à la rubrique a été suggérée par le biais de l’IA. Par exemple, vous pouvez être l’auteur d’un fichier ou d’un site associé. Vous êtes invité à confirmer que vous devez rester répertorié en tant que personne associée pour la rubrique.
+- Connexions suggérées : vous verrez les rubriques répertoriées sous Nous vous avons **répertoriés dans ces rubriques. Avons-nous bien fait ?**. Voici des rubriques dans lesquelles votre connexion à cette rubrique a été suggérée par le biais de l’IA. Par exemple, vous pouvez être l’auteur d’un fichier ou d’un site associé. Vous êtes invité à confirmer que vous devez rester répertorié en tant que personne associée pour la rubrique.
 
    ![Connexions suggérées](../media/knowledge-management/my-topics.png) </br>
  

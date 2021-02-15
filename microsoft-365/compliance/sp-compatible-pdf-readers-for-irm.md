@@ -1,5 +1,5 @@
 ---
-title: SharePoint-Compatible PDF qui supportent les services de gestion des droits de l’information Microsoft
+title: SharePoint-Compatible PDF qui supportent les services De gestion des droits de l’information Microsoft
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -24,19 +24,19 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 02/08/2021
 ms.locfileid: "50142429"
 ---
-# <a name="sharepoint-compatible-pdf-readers-that-support-microsoft-information-rights-management-services"></a>SharePoint-Compatible PDF qui supportent les services de gestion des droits de l’information Microsoft
+# <a name="sharepoint-compatible-pdf-readers-that-support-microsoft-information-rights-management-services"></a>SharePoint-Compatible PDF qui supportent les services De gestion des droits de l’information Microsoft
 
 Microsoft SharePoint 2013 prend en charge la protection de la Gestion des droits relatifs à l’information (IRM) des documents PDF. Grâce à cette prise en charge, les utilisateurs peuvent télécharger des documents PDF dans des bibliothèques protégées par IRM et, lors du téléchargement, les fichiers seront protégés à l’aide Microsoft Office IRM.
   
-Pour utiliser des fichiers PDF dans des bibliothèques que le propriétaire a protégées par IRM, l’utilisateur doit obtenir l’un des lecteurs pdf compatibles suivants :
+Pour utiliser des fichiers PDF dans des bibliothèques que le propriétaire a protégées par IRM, l’utilisateur doit obtenir l’un des lecteurs compatibles PDF suivants :
   
 | Système d’exploitation | Lecteurs compatibles | Lien de téléchargement |
 |:-----|:-----|:-----|
-|Windows Vista  <br/> |Foxit Reader  <br/> PtePDF  <br/> |[Télécharger Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Télécharger DownloadPDF](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> |
+|Windows Vista  <br/> |Foxit Reader  <br/> PtePDF  <br/> |[Télécharger Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Télécharger LeDfsPD](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> |
 |Windows 7  <br/> |Application Azure Information Protection  <br/> Foxit Reader  <br/> PtePDF  <br/> Chrome Edge  <br/>|[Télécharger l’application Azure Information Protection](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Télécharger Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Télécharger DownloadPDF](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> [Télécharger edge Chromium](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) <br/>|
-|Windows 8 (mode classique)  <br/> |Application Azure Information Protection  <br/> Foxit Reader  <br/> PtePDF  <br/> Chrome Edge  <br/>|[Télécharger l’application Azure Information Protection](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Télécharger Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Télécharger DownloadPDF](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> [Télécharger edge Chromium](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) <br/> |
+|Windows 8 (mode classique)  <br/> |Application Azure Information Protection  <br/> Foxit Reader  <br/> PtePDF  <br/> Chrome Edge  <br/>|[Télécharger l’application Azure Information Protection](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Télécharger Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Télécharger LeDfsPD](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> [Télécharger edge Chromium](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) <br/> |
 |Windows 8.1  <br/> |Application Azure Information Protection  <br/> Foxit Reader  <br/> PtePDF  <br/> |[Télécharger l’application Azure Information Protection](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Télécharger Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Télécharger LeDfsPD](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> |
-|Windows 10  <br/> |Application Azure Information Protection  <br/> Foxit Reader  <br/> PtePDF  <br/> Chrome Edge  <br/> |[Télécharger l’application Azure Information Protection](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Télécharger Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Télécharger DownloadPDF](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> [Télécharger edge Chromium](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) <br/> |
+|Windows 10  <br/> |Application Azure Information Protection  <br/> Foxit Reader  <br/> PtePDF  <br/> Chrome Edge  <br/> |[Télécharger l’application Azure Information Protection](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Télécharger Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [Télécharger LeDfsPD](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> [Télécharger edge Chromium](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) <br/> |
 |Android  <br/> |Application Azure Information Protection  <br/> Foxit MobilePDF avec RMS  <br/> |[Télécharger l’application Azure Information Protection](https://go.microsoft.com/fwlink/?linkid=836827) <br/> [Acheter Foxit MobilePDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite) <br/> |
 |Windows Phone  <br/> |N/A  <br/> |N/A  <br/> |
 |macOS  <br/> |Chrome Edge  <br/> |[Télécharger edge Chromium](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf)  <br/> |

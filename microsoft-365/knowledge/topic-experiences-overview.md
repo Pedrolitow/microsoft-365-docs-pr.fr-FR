@@ -64,7 +64,7 @@ Lorsqu’une rubrique est identifiée et que l’IA détermine qu’elle dispose
 - Personnes qui sont peut-être au fait de cette rubrique.
 - Fichiers, pages et sites associés à la rubrique.
 
-Vos administrateurs de connaissances peuvent choisir d’analyser tous les sites SharePoint de votre client pour des rubriques ou de sélectionner simplement certains sites.
+Les administrateurs de vos connaissances peuvent choisir d’analyser tous les sites SharePoint de votre client pour des rubriques ou simplement d’en sélectionner certains.
 
 Voir [la découverte et la curation des rubriques](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
@@ -91,7 +91,7 @@ Alors que tous les utilisateurs titulaires d’une licence peuvent voir les rubr
 Les gestionnaires de connaissances peuvent :
 
 - Confirmez ou supprimez les rubriques qui ont été découvertes dans votre client.
-- Créez de nouvelles rubriques manuellement selon vos besoins (par exemple, si les informations fournies ne sont pas suffisantes pour qu’elles soient découvertes via l’IA).
+- Créez des rubriques manuellement selon vos besoins (par exemple, si les informations fournies ne sont pas suffisantes pour qu’elles soient découvertes via l’IA).
 - Modifier des pages de rubriques existantes.</br>
 
 Pour [plus d’informations, voir](manage-topics.md) Gérer les rubriques dans le centre de rubriques.  

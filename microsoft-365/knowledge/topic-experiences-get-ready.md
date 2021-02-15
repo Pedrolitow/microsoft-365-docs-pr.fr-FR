@@ -56,7 +56,7 @@ Pour planifier des rubriques De Rubriques, vous devez :
 
 ## <a name="1-migrate-content-to-microsoft-365"></a>1. Migrer du contenu vers Microsoft 365
 
-Il existe plusieurs outils et services pour vous aider lors de votre migration : vous pouvez obtenir une vue d’ensemble et des informations sur la migration de votre contenu vers [Microsoft 365.](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) Les outils de migration sont les suivants :
+Il existe plusieurs outils et services pour vous aider dans votre migration : vous pouvez obtenir une vue d’ensemble et des informations sur la migration de votre contenu vers [Microsoft 365.](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) Les outils de migration sont les suivants :
 
 - [Gestionnaire de migration](https://docs.microsoft.com/sharepointmigration/mm-get-started)
 - [Outil de migration SharePoint (SPMT)](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
@@ -74,7 +74,7 @@ Ez le meilleur de votre migration :
 Si vous ne pouvez pas migrer du contenu, connectez-le à Microsoft Graph :
 
 - Envisagez [d’implémenter des connecteurs de contenu Graph.](https://docs.microsoft.com/microsoftsearch/connectors-overview) À l’aide des connecteurs, le contenu externe peut être indexé dans Microsoft Graph, où les utilisateurs peuvent ensuite le découvrir via Microsoft Search (recherche Microsoft).
-- Les développements futurs apporteront des données externes dans Rubriques Topics.
+- Les développements futurs apporteront des données externes dans Rubriques.
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. Moderniser les pages SharePoint
 
@@ -84,7 +84,7 @@ Si vous avez un grand nombre de sites classiques, hiérarchisez les pages à pro
 
 ## <a name="4-secure-content-appropriately"></a>4. Sécuriser le contenu de manière appropriée
 
-Lorsque les utilisateurs interagissent avec une carte de sujet ou une page de rubrique, ils peuvent voir différentes ressources. Cela est dû au fait qu’ils ont accès à différents fichiers associés à la rubrique. Si vos autorisations sous-jacentes sont trop strictes, les aspects serendipitous de la découverte d’informations par le biais de rubriques pourraient être diminués. En revanche, s’ils sont trop larges, un sujet peut faire surface à un utilisateur que vous ne souhaitez pas voir.
+Lorsque les utilisateurs interagissent avec une carte de sujet ou une page de rubrique, ils peuvent voir différentes ressources. Cela est dû au fait qu’ils ont accès à différents fichiers associés à la rubrique. Si vos autorisations sous-jacentes sont trop strictes, les aspects serendipitous de la découverte d’informations par le biais de rubriques pourraient être diminués. En revanche, s’ils sont trop larges, une rubrique peut faire surface à un utilisateur dont vous ne souhaitez pas qu’il voie le contenu.
 Une bonne gestion des autorisations est essentielle ici. Et une bonne gestion des autorisations est basée sur un partenariat continu entre les administrateurs et les propriétaires de contenu. Bien qu’il puisse s’agit d’une activité continue, vous pouvez suivre certaines étapes pratiques lors de la préparation des rubriques :
 
 - Encouragez les propriétaires de sites à passer en revue le partage et les autorisations.
@@ -130,12 +130,12 @@ Selon votre organisation, vous pouvez avoir peu ou plusieurs personnes qui jouen
 
 Les sur-points et les cartes apparaissent pour les utilisateurs dans le contexte de leur travail, par exemple quand ils parcourent des pages modernes dans SharePoint. Vous contrôlez l’expérience utilisateur final pour les rubriques.
 
-- Qui peut voir Rubriques ? La visibilité des rubriques est configurée dans le Centre d’administration Microsoft 365. Choisissez les groupes à autoriser à consulter les rubriques :
+- Qui peut voir Rubriques ? La visibilité des rubriques est configurée dans le Centre d’administration Microsoft 365. Choisissez les groupes à autoriser à voir les rubriques :
   - Tous les membres de mon organisation. « Tout le monde » n’inclut pas les invités, il s’agit de tous les utilisateurs internes dans votre annuaire
   - Uniquement les personnes sélectionnées ou les groupes de sécurité (cette option est intéressante lorsque vous continuez à déployer Rubriques Topics, afin que vous pouvez tester avec un sous-ensemble d’utilisateurs). Si vous souhaitez que les invités visualisent les rubriques, vous devez utiliser l’option « Personnes ou groupes de sécurité sélectionnés » et leur octroyer une licence.
   - Personne.
 
-    Pour afficher l’expérience de sujet, une licence doit être appliquée à tous les utilisateurs, même les utilisateurs invités. N’oubliez pas que les autorisations contrôlent toujours ce qui est visible.
+    Pour afficher l’expérience de sujet, une licence doit être appliquée à tous les utilisateurs, même les utilisateurs invités. N’oubliez pas que les autorisations contrôlent toujours ce qui peut être vu.
 
 - Quelles rubriques sont visibles ? Vous pouvez choisir de :
   - Afficher toutes les rubriques des candidats.
@@ -143,5 +143,5 @@ Les sur-points et les cartes apparaissent pour les utilisateurs dans le contexte
 
 Maintenant que nous avons les responsables, les experts et les utilisateurs, nous pouvons parler des sujets eux-mêmes.
 
-- Il est pratique d’amorçage des rubriques dans votre liste de rubriques. La qualité et la quantité des rubriques sont basées sur votre contenu : elles ne seront créées en tant que rubrique que si elles sont incluses dans le contenu inclus dans l’étendue. S’il existe suffisamment d’informations et de preuves pour la rubrique, elle sera créée par l’IA. Les rubriques d’amorçage permettent au Gestionnaire de connaissances et aux experts techniques de vous aider. La combinaison de connaissances humaines avec l’IA est la meilleure voie pour les sujets de qualité. Par conséquent, s’il existe des rubriques que vous prévoyez de créer manuellement dans le centre de rubriques. Cela donnera à l’IA un signal fort de la pertinence de cette rubrique et identifiera les ressources et les personnes à associer à cette rubrique.
+- Il est bon d’amorçage de rubriques dans votre liste de rubriques. La qualité et la quantité des rubriques sont basées sur votre contenu : elles ne seront créées en tant que rubrique que si elles sont incluses dans le contenu inclus dans l’étendue. S’il existe suffisamment d’informations et de preuves pour la rubrique, elle sera créée par l’IA. Les rubriques d’amorçage permettent au Gestionnaire de connaissances et aux experts techniques de vous aider. La combinaison de connaissances humaines avec l’IA est la meilleure voie pour les sujets de qualité. Par conséquent, s’il existe des rubriques que vous prévoyez de créer manuellement dans le centre de rubriques. Cela donnera à l’IA un signal fort de la pertinence de cette rubrique et identifiera les ressources et les personnes à associer à cette rubrique.
 - Utilisez les taxonomies existantes pour faciliter la planification de votre rubrique, à partir de SharePoint ou ailleurs. Les taxonomies existantes incluent souvent des termes organisationnels, des produits, des sujets, etc. Les sources des rubriques peuvent également être des listes de projets, des signets de recherche existants, etc.

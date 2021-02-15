@@ -28,7 +28,7 @@ Vous pouvez gérer l’ensemble des utilisateurs qui peuvent voir les points for
 
     ![Connecter les personnes aux connaissances](../media/admin-org-knowledge-options-completed.png) 
 
-3. Sélectionnez **l’onglet Visibilité de la** rubrique. Consultez les sections suivantes pour plus d’informations sur chaque paramètre.
+3. Sélectionnez **l’onglet Visibilité des rubriques.** Consultez les sections suivantes pour plus d’informations sur chaque paramètre.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-visibility.png) 
 
@@ -36,7 +36,7 @@ Vous pouvez gérer l’ensemble des utilisateurs qui peuvent voir les points for
 
 Vous pouvez modifier les utilisateurs qui peuvent voir les rubriques de votre organisation.
 
-1. Sous **l’onglet Visibilité de la** rubrique, sous **Qui peut voir les rubriques**, sélectionnez **Modifier**.
+1. Sous **l’onglet Visibilité de la rubrique,** sous **Qui peut voir les rubriques**, sélectionnez **Modifier**.
 2. Dans la page Qui peut voir les **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en évidence, les fiches de rubrique, les réponses aux rubriques dans les pages de recherche et les pages de rubriques. Vous pouvez sélectionner :
     - **Tout le monde dans votre organisation**
     - **Personnes ou groupes de sécurité sélectionnés uniquement**

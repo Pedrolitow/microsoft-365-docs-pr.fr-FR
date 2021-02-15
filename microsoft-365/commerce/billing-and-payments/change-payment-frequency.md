@@ -39,7 +39,7 @@ ms.locfileid: "50114882"
 
 Lorsque vous achetez un abonnement, vous choisissez une facturation mensuelle ou annuelle. Pour modifier la fréquence de facture d’un abonnement, utilisez les étapes suivantes.
 
-1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturation de vos produits.</a>
+1. Dans le Centre d’administration, allez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
 2. Sur l’onglet **Produits**, sélectionnez l’abonnement que vous souhaitez modifier.
 3. Dans la page détails de l’abonnement, dans la section **Paramètres** d’abonnement et de paiement, **sélectionnez Modifier la fréquence de facturation.**
 4. Dans le **volet Modifier la fréquence de** facturation, choisissez l’option de fréquence de facturation, puis sélectionnez **Modifier.**

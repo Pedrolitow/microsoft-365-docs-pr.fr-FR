@@ -57,7 +57,7 @@ Les réponses à ces questions vous aideront à planifier votre stratégie de pa
   
 |**Essayez ceci :**|**Si votre besoin est le suivant :**|
 |:-----|:-----|
-|Ajouter un invité à un groupe  <br/> |Fournir à une personne extérieure à votre organisation un accès continu aux informations et au contenu d’un site d’équipe. Elle a besoin de pouvoir agir en tant qu'utilisateur à part entière du site, ainsi que de créer, modifier et afficher du contenu.  <br/> |
+|Ajouter un invité à un groupe  <br/> |Fournir à une personne extérieure à votre organisation un accès continu aux informations et au contenu sur un site d’équipe. Elle a besoin de pouvoir agir en tant qu'utilisateur à part entière du site, ainsi que de créer, modifier et afficher du contenu.  <br/> |
 |Partagez un document et exigez que les invités s’authentifier.  <br/> |Fournissez à des personnes spécifiques extérieures à votre organisation un accès sécurisé à un document pour révision ou collaboration, mais ces personnes n’ont pas besoin d’accéder à d’autres contenus sur le site.  <br/> |
 |Partagez un document, mais ne nécessitez pas d’authentification.  <br/> |Partager un lien vers un document qui n'est pas sensible ni confidentiel avec des personnes extérieures à votre organisation afin qu'elles puissent soit l'afficher, soit le mettre à jour en y ajoutant leurs commentaires. Ces personnes n’ont pas besoin d’accéder au contenu du site.  <br/> |
    
@@ -71,9 +71,9 @@ Le partage externe est désactivé par défaut au niveau de l’organisation, ma
 > [!NOTE]
 >  Pour autoriser le partage externe pour n’importe quel site, vous devez l’autoriser au niveau de l’organisation. 
   
-1. Dans le Centre [d’administration,](https://go.microsoft.com/fwlink/p/?linkid=2024339)tapez « externe » dans la zone de recherche de la page d’accueil, puis choisissez **Partage externe de sites.**
+1. Dans le [Centre d’administration,](https://go.microsoft.com/fwlink/p/?linkid=2024339)tapez « externe » dans la zone de recherche de la page d’accueil, puis choisissez **Partage externe de sites.**
   
-2. Sur la page qui s’ouvre, choisissez si les utilisateurs peuvent partager avec des invités existants uniquement, des invités nouveaux et existants, ou toute autre personne. 
+2. Dans la page qui s’ouvre, choisissez si les utilisateurs peuvent partager avec des invités existants uniquement, des invités nouveaux et existants, ou toute autre personne. 
     
 3. Sélectionnez **Enregistrer**.
     

@@ -33,13 +33,13 @@ Si votre entreprise exige que vous restreignez les personnes qui peuvent créer 
 - Outlook
 - SharePoint
 - Yammer
-- Microsoft Teams
+- Microsoft Teams
 - Microsoft Stream
 - Planificateur
 - Power BI (classique)
 - Projet pour le web / Feuille de route
 
-Vous pouvez limiter la création de groupes Microsoft 365 aux membres d’un groupe ou d’un groupe de sécurité Microsoft 365 particulier. Pour configurer cette configuration, vous devez utiliser Windows PowerShell. Cet article vous explique les étapes nécessaires.
+Vous pouvez limiter la création de groupes Microsoft 365 aux membres d’un groupe ou d’un groupe de sécurité Microsoft 365 particulier. Pour configurer cette configuration, utilisez Windows PowerShell. Cet article vous explique les étapes nécessaires.
 
 Les étapes de cet article n’empêchent pas les membres de certains rôles de créer des groupes. Les administrateurs globaux Office 365 peuvent créer des groupes par n’importe quel moyen, comme le Centre d’administration Microsoft 365, le Planificateur, Teams, Exchange et SharePoint Online. D’autres rôles peuvent créer des groupes via des moyens limités, répertoriés ci-dessous.
 
@@ -159,12 +159,12 @@ L’application des modifications peut prendre 30 minutes ou plus. Vous pouvez v
 
 4. Vous devez obtenir un message vous messageant que la création de groupe et de plan est désactivée.
 
-Recommencez la même procédure avec un membre du groupe.
+Essayez à nouveau la même procédure avec un membre du groupe.
 
 > [!NOTE]
 > Si les membres du groupe ne sont pas en mesure de créer des groupes, vérifiez qu’ils ne sont pas bloqués par le biais de [leur stratégie OWA boîte aux lettres.](https://go.microsoft.com/fwlink/?linkid=852135)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

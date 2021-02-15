@@ -47,11 +47,11 @@ Les attributs répertoriés dans cet article peuvent être utilisés pour défin
     |**Exemple**|**Cmdlet**|
     |:----------|:---------|
     | Définir un segment appelé Segment1 à l’aide de l’attribut Department | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
-    | Définissez un segment appelé SegmentA à l’aide de l’attribut MemberOf (supposons que cet attribut contient des noms de groupe, tels que « BlueGroup ») | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
+    | Définissez un segment appelé SegmentA à l’aide de l’attribut MemberOf (supposons que cet attribut contient des noms de groupe, tels que « BlueGroup »). | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
     | Définissez un segment appelé DayTraders à l’aide d’ExtensionAttribute1 (supposons que cet attribut contient des titres de poste, tels que « DayTrader ») | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > Lorsque vous définissez des segments, utilisez le même attribut pour tous vos segments. Par exemple, si vous définissez certains segments à l’aide de *Department*, définissez tous les segments à l’aide de *Department*. Ne définissez pas certains segments à l’aide de *Department* et d’autres à l’aide *de MemberOf*. Assurez-vous que vos segments ne se chevauchent pas ; chaque utilisateur doit être affecté à exactement un segment.
+    > Lorsque vous définissez des segments, utilisez le même attribut pour tous vos segments. Par exemple, si vous définissez certains segments à l’aide de *Department*, définissez tous les segments à l’aide de *Department*. Ne définissez pas certains segments à l’aide de *Department* et d’autres à *l’aide de MemberOf*. Assurez-vous que vos segments ne se chevauchent pas ; chaque utilisateur doit être affecté à exactement un segment.
 
 ## <a name="reference"></a>Référence
 

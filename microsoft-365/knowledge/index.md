@@ -41,7 +41,7 @@ Les ressources de cette section vous aident à en savoir plus sur ce qu’est To
 |:-----|:-----|
 |En savoir plus sur les rubriques Desy|[Vue d’ensemble des rubriques microsoft](topic-experiences-overview.md)|
 |Découvrez comment les rubriques sont découvertes et suggérées par l’IA|[Découverte des rubriques Microsoft](topic-experiences-discovery.md)|
-|En savoir plus sur la sécurité des rubriques|[Sécurité et confidentialité de Microsoft Contrôle](topic-experiences-security-privacy.md)|
+|En savoir plus sur la sécurité des rubriques|[Sécurité et confidentialité microsoft](topic-experiences-security-privacy.md)|
 
 
 ## <a name="adoption"></a>Adoption

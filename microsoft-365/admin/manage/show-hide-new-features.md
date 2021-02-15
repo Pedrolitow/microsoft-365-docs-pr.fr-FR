@@ -52,13 +52,13 @@ Vous pouvez également sélectionner plusieurs fonctionnalités sur la page Gér
 > [!NOTE]
 > - Si une fonctionnalité est disponible dans plusieurs applications Office, la définition de la fonctionnalité sur **Masqué** masque le message de fonctionnalité dans toutes ces applications Office.
 > - Tous les messages de fonctionnalité sont présentés aux utilisateurs par défaut. Il s’agit de l’état par défaut de toutes les fonctionnalités, et l’état change uniquement si vous avez choisi de masquer ou d’afficher un message de fonctionnalité.
-> - Vous pouvez également obtenir la fonctionnalité **Nouveautés d’Office** à partir du Centre d’administration Des applications Microsoft 365 ( [https://config.office.com](https://config.office.com) ). La fonctionnalité se trouve sous **Personnalisation**  >  **nouveautés de la gestion.**
+> - Vous pouvez également obtenir la fonctionnalité **Nouveautés d’Office** à partir du Centre d’administration des applications Microsoft 365 ( [https://config.office.com](https://config.office.com) ). La fonctionnalité se trouve sous **Personnalisation**  >  **nouveautés de la gestion.**
 
 ## <a name="list-of-features"></a>Liste des fonctionnalités
 
 Vous pouvez filtrer les fonctionnalités qui apparaissent dans la page Gérer les fonctionnalités Office qui apparaissent **dans** la page Nouveautés. Vous pouvez filtrer par canal, application ou état, ou par combinaison d’entre eux.
 
-De nouvelles fonctionnalités apparaissent sur la page selon la planification suivante :
+De nouvelles fonctionnalités apparaissent sur la page en fonction de la planification suivante :
 
 ||||
 |:-----|:-----|:-----|

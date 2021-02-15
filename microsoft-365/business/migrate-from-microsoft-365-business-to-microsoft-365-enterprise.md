@@ -35,7 +35,7 @@ Microsoft 365 Business Premium offre tout ce dont vous avez besoin pour votre pe
 
 Par exemple, votre entreprise a évolué et a besoin de plus de 300 licences (félicitations, par ailleurs).
 
-Ou, votre entreprise a besoin de fonctionnalités d’entreprise, telles que les applications Microsoft 365 pour les entreprises, Windows 10 Entreprise E3 ou les licences d’accès au client d’entreprise.
+Ou bien, votre entreprise a besoin de fonctionnalités d’entreprise, telles que les applications Microsoft 365 pour les entreprises, Windows 10 Entreprise E3 ou les licences d’accès au client d’entreprise.
 
 La mise à niveau est simple : vous pouvez commencer la mise à [niveau à partir du Centre d’administration.](../commerce/subscriptions/upgrade-to-different-plan.md) Toutes vos données et configuration dans votre abonnement actuel sont conservées. Vous n’avez rien à faire pour préparer la migration et rien à faire par la suite, sauf tirer parti des nouvelles fonctionnalités.
 
@@ -54,35 +54,35 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Mi
 | Applications Office*    | [Applications Microsoft 365 pour les entreprises](#office-365-business)    | Applications Microsoft 365 for entreprise | 
 | **Applications de productivité cloud**        | | | 
 | Exchange Online et Outlook    | Limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | Limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
-| Teams    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Microsoft 365 E3](../media/check-mark.png) | 
-| OneDrive Entreprise    | Limite de stockage de 1 To par utilisateur    | Illimité | 
-| Yammer, SharePoint Online, Planificateur, Stream    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Microsoft 365 E3](../media/check-mark.png) | 
-| MileIQ    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | | 
+| Teams    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| OneDrive Entreprise    | Limite de stockage de 1 To par utilisateur    | Illimité | 
+| Yammer, SharePoint Online, Planificateur, Stream    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| MileIQ    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Protection contre les menaces**        | | | 
 | Fonctionnalités de réduction de la surface d’attaque    | [Voir cette liste](#threat-protection) | Gestion d’entreprise de l’isolation matérielle pour Microsoft Edge | 
-| Defender pour Office 365 Plan 1 | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
+| Defender pour Office 365 Plan 1 | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
 | **Gestion des identités**        | | | 
 | Réinitialisation du mot de passe en libre-service pour les comptes Azure Active Directory (Azure AD) hybrides, authentification multifacteur Azure AD (MFA), accès conditionnel, écriture d’écriture de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | Découverte d’applications cloud, Azure AD Connect Health    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
-| Applications Azure AD Office 365 single Sign-On (SSO) : 10 applications par utilisateur (applications SaaS de galerie telles que Salesforce)* | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Microsoft 365 E3](../media/check-mark.png) | 
+| Applications Azure AD Office 365 single Sign-On (SSO) : 10 applications par utilisateur (applications SaaS de galerie telles que Salesforce)* | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | SSO Azure AD Premium 1 : aucune limite (applications locales via le proxy d’application Azure AD et les applications non galerie à l’aide de modèles d’intégration Self-Service application)    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | **Données de gestion des appareils et des applications**        | | | 
 | Microsoft Intune, Windows Autopilot|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 |Virtual Desktop Access (VDA)    |  |     ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 |Windows Virtual Desktop (WVD)    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png) |     ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
-|Activation d’ordinateurs partagés (SCA)    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png) |     ![Inclus dans Microsoft 365 E3](../media/check-mark.png) | 
+|Activation d’ordinateurs partagés (SCA)    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png) |     ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | Package d’optimisation du bureau Microsoft    | |     ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | **Protection des informations**        | | | 
-| Protection contre la perte de données Office 365, Azure Information Protection Plan 1    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
-| Protection des informations de fenêtre pour le point de terminaison DLP    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Microsoft 365 E3](../media/check-mark.png) | 
+| Protection contre la perte de données Office 365, Azure Information Protection Plan 1    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| Protection des informations de fenêtre pour le point de terminaison DLP    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | **Licence d’accès client (droits cal)**    | | |     
-| Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |         ![Inclus dans Microsoft 365 E3](../media/check-mark.png) | 
+| Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |         ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | **Conformité**        | | | 
-| Archivage illimité du courrier électronique    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Microsoft 365 E3](../media/check-mark.png) | 
-| Gestionnaire de conformité    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Microsoft 365 E3](../media/check-mark.png) | 
-| eDiscovery    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Microsoft 365 E3](../media/check-mark.png) | 
-| In-place hold and litigation hold    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
-| Gestion des enregistrements de messagerie, balises de rétention et stratégies de rétention    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Microsoft 365 E3](../media/check-mark.png) | 
+| Archivage illimité du courrier électronique    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| Gestionnaire de conformité    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| eDiscovery    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| In-place hold and litigation hold    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| Gestion des enregistrements de messagerie, balises de rétention et stratégies de rétention    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 ||||
 
 \* Les utilisateurs qui se sont vus attribuer l’accès aux applications SaaS peuvent accéder à 10 applications au plus. Les administrateurs peuvent configurer l' utilisateur unique et modifier l’accès des utilisateurs à différentes applications SaaS, mais l’accès à l' utilisateur unique n’est autorisé que pour 10 applications par utilisateur à la fois. Toutes les applications Office 365 sont comptabilisées comme une seule application.
@@ -146,6 +146,6 @@ Microsoft 365 Business Premium inclut Windows 10 Business, que vous pouvez insta
 Votre client Microsoft 365 Apps for business installé sur vos appareils commencera automatiquement à utiliser les fonctionnalités de Microsoft 365 Apps for enterprise. Après la migration, vous pouvez désormais utiliser :
 
  - Prise en charge des stratégies de groupe
- - Comparer et interroger une feuille de calcul
+ - Comparaison et analyse de feuilles de calcul
  - Aide à la décision
 

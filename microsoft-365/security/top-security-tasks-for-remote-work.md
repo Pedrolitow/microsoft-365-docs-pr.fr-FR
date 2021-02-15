@@ -42,18 +42,18 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 
 |Étape|Tâche|Toutes les plans Office 365 Entreprise|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1 |[Activer l’authentification multifacteur Azure AD (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[Se protéger contre les menaces](#2-protect-against-threats)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Configurer Microsoft Defender pour Office 365](#3-configure-microsoft-defender-for-office-365)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1 |[Activer l’authentification multifacteur Azure AD (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2 |[Se protéger contre les menaces](#2-protect-against-threats)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Configurer Microsoft Defender pour Office 365](#3-configure-microsoft-defender-for-office-365)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Configurer Microsoft Defender pour l’identité](#4-configure-microsoft-defender-for-identity)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Activer Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6 |[Configurer la protection des applications mobiles Intune pour les téléphones et les tablettes](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7 |[Configurer l' approbation de la MFA et l’accès conditionnel pour les invités, y compris la protection des applications Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8 |[Inscrire des PC dans la gestion des appareils et exiger des PC conformes](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[Optimiser votre réseau pour la connectivité cloud](#9-optimize-your-network-for-cloud-connectivity)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[Former les utilisateurs](#10-train-users)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11|[Pris en main de Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|12 |[Surveiller les menaces et prendre des mesures](#12-monitor-for-threats-and-take-action)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Activer Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|6 |[Configurer la protection des applications mobiles Intune pour les téléphones et les tablettes](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|7 |[Configurer l' approbation de la MFA et l’accès conditionnel pour les invités, y compris la protection des applications Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8 |[Inscrire des PC dans la gestion des appareils et exiger des PC conformes](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[Optimiser votre réseau pour la connectivité cloud](#9-optimize-your-network-for-cloud-connectivity)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10 |[Former les utilisateurs](#10-train-users)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11 |[Pris en main de Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|12 |[Surveiller les menaces et prendre des mesures](#12-monitor-for-threats-and-take-action)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
 Avant de commencer, vérifiez votre score de sécurité [Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) dans le Centre de sécurité Microsoft 365. À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de vos identités, données, applications, appareils et infrastructure Microsoft 365. Des points vous sont attribués pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage de rapports) ou répondre à des recommandations avec une application ou un logiciel tiers. Les tâches recommandées dans cet article augmenteront votre score.
@@ -104,7 +104,7 @@ Votre administrateur général peut configurer ces protections :
 
 - [Configuration des stratégies de liens fiables](office-365-security/set-up-atp-safe-links-policies.md)
 - [Configurer les paramètres globaux pour les liens sécurisés](office-365-security/configure-global-settings-for-safe-links.md)
-- [Configurer des stratégies de pièces jointes sécurisées](office-365-security/set-up-atp-safe-attachments-policies.md)
+- [Définir des stratégies de pièces jointes fiables](office-365-security/set-up-atp-safe-attachments-policies.md)
 
 Vous devez travailler avec votre administrateur Exchange Online et votre administrateur SharePoint Online pour configurer Defender pour Office 365 pour ces charges de travail :
 
@@ -139,7 +139,7 @@ Microsoft Intune Mobile Application Management (MAM) vous permet de gérer et de
 
 Les stratégies de protection des applications incluent de nombreux paramètres. Heureusement, vous n’avez pas besoin d’en savoir plus sur chaque paramètre et d’évaluer les options. Microsoft facilite l’application d’une configuration de paramètres en recommandant des points de départ. [L’infrastructure de protection des données utilisant des](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) stratégies de protection des applications inclut trois niveaux parmi les différents niveaux que vous pouvez choisir.
 
-Mieux encore, Microsoft coordonne cette infrastructure de protection des applications avec un ensemble d’accès conditionnel et de stratégies connexes que nous recommandons à toutes les organisations d’utiliser comme point de départ. Si vous avez implémenté l’famf à l’aide des instructions de cet article, vous êtes à mi-chemin !
+Mieux encore, Microsoft coordonne cette infrastructure de protection des applications avec un ensemble d’accès conditionnel et de stratégies connexes que nous recommandons à toutes les organisations d’utiliser comme point de départ. Si vous avez implémenté l' mba à l’aide des instructions de cet article, vous êtes à mi-chemin !
 
 Pour configurer la protection des applications mobiles, utilisez les instructions des stratégies communes d’accès aux identités [et aux appareils](./office-365-security/identity-access-policies.md):
 
@@ -166,7 +166,7 @@ Les stratégies de protection des applications mobiles Intune que vous avez cré
 
 Il existe plusieurs méthodes pour inscrire les appareils de votre personnel. Chaque méthode dépend de la propriété de l’appareil (personnel ou entreprise), du type d’appareil (iOS, Windows, Android) et de la configuration requise (réinitialisations, affinité, verrouillage). Le tri peut prendre un peu de temps. Voir : [Inscrire des appareils dans Microsoft Intune.](https://docs.microsoft.com/mem/intune/enrollment/)
 
-Le moyen le plus rapide d’y aller consiste à configurer [l’inscription automatique pour les appareils Windows 10.](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment)
+La façon la plus rapide de se rendre est de configurer l’inscription automatique pour [les appareils Windows 10.](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment)
 
 Vous pouvez également tirer parti des didacticiels suivants :
 
@@ -182,9 +182,9 @@ Une seule organisation peut gérer un appareil, donc n’oubliez pas d’exclure
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9 : optimiser votre réseau pour la connectivité cloud
 
-Si vous permetz rapidement à la plupart de vos employés de travailler à partir de leur domicile, ce changement soudain de modèles de connectivité peut avoir un impact significatif sur l’infrastructure réseau de l’entreprise. De nombreux réseaux ont été mis à l’échelle et conçus avant l’adoption des services cloud. Dans de nombreux cas, les réseaux sont à la tolérance des travailleurs à distance, mais n’ont pas été conçus pour être utilisés à distance par tous les utilisateurs simultanément.
+Si vous activez rapidement la plupart de vos employés à travailler à partir de leur domicile, ce changement soudain de modèles de connectivité peut avoir un impact significatif sur l’infrastructure réseau de l’entreprise. De nombreux réseaux ont été mis à l’échelle et conçus avant l’adoption des services cloud. Dans de nombreux cas, les réseaux sont à la tolérance des travailleurs à distance, mais n’ont pas été conçus pour être utilisés à distance par tous les utilisateurs simultanément.
 
-Les éléments réseau tels que les constructeurs VPN, les équipements de sortie du réseau central (tels que les proxies et les périphériques de protection contre la perte de données), la bande passante Internet centrale, les circuits MPLS de backhaul, la fonctionnalité NAT, etc., sont soudainement mis sous une pression considérable en raison de la charge de toute l’entreprise qui les utilise. Le résultat final est une baisse des performances et de la productivité associée à une expérience utilisateur médiocre pour les utilisateurs qui s’adaptent à travailler à partir de leur domicile.
+Les éléments réseau tels que les constructeurs VPN, les équipements de sortie du réseau central (tels que les proxies et les périphériques de protection contre la perte de données), la bande passante Internet centrale, les circuits MPLS de backhaul, la fonctionnalité NAT, etc., sont soudainement mis sous une pression considérable en raison de la charge de toute l’entreprise qui les utilise. Le résultat final est une baisse des performances et de la productivité associée à une expérience utilisateur médiocre pour les utilisateurs qui s’adaptent au travail à domicile.
 
 Certaines des protections habituellement fournies par le routage du trafic via un réseau d’entreprise sont fournies par les applications cloud accessibles par vos utilisateurs. Si vous avez atteint cette étape de cet article, vous avez implémenté un ensemble de contrôles de sécurité cloud sophistiqués pour les services et données Microsoft 365. Une fois ces contrôles en place, vous pouvez être prêt à router le trafic des utilisateurs distants directement vers Office 365. Si vous avez toujours besoin d’un lien VPN pour accéder à d’autres applications, vous pouvez considérablement améliorer vos performances et votre expérience utilisateur en implémentant la tunnellation fractionner. Une fois que vous avez conclu un accord au sein de votre organisation, cette opération peut être réalisée en un jour par une équipe réseau bien coordonnée.
 

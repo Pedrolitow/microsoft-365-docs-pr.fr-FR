@@ -69,8 +69,8 @@ Vous pouvez attribuer des licences existantes ou acheter des abonnements supplé
 
 1. Dans le Centre d’administration, allez à la page **Services** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">d’achat de facturation.</a>
 2. Recherchez et choisissez le produit que vous souhaitez acheter, puis choisissez **Acheter.**
-3. Pour terminer votre achat, complétez les étapes restantes.
-4. Suivez les étapes de [l’affichage qui](#view-who-has-licenses-for-a-self-service-purchase-subscription) dispose de licences pour un abonnement acheté en libre-service pour exporter une liste d’utilisateurs à référencer à l’étape suivante.
+3. Effectuer les étapes restantes pour effectuer votre achat.
+4. Suivez les étapes de l’affichage qui dispose de licences pour un abonnement acheté en [libre-service](#view-who-has-licenses-for-a-self-service-purchase-subscription) pour exporter une liste d’utilisateurs à référencer à l’étape suivante.
 5. Attribuez des licences à toutes les personnes qui disposent d’une licence dans l’autre abonnement. Pour obtenir la procédure complète, voir [Attribuer des licences aux utilisateurs.](../../admin/manage/assign-licenses-to-users.md)
 6. Contactez la personne qui a acheté l’abonnement à l’achat en libre-service et demandez-lui de [l’annuler.](manage-self-service-purchases-users.md#cancel-a-subscription)
 
@@ -100,7 +100,7 @@ Lorsque vous déplacez des utilisateurs vers un autre abonnement, l’ancien abo
 
 ### <a name="cancel-a-self-service-purchase-subscription"></a>Annuler un abonnement d’achat en libre-service
 
-Lorsque vous choisissez d’annuler un abonnement d’achat en libre-service, les utilisateurs titulaires de licences perdent l’accès au produit. L’utilisateur qui a acheté à l’origine l’abonnement à l’achat en libre-service reçoit un courrier électronique qui indique que l’abonnement a été annulé.
+Lorsque vous choisissez d’annuler un abonnement d’achat en libre-service, les utilisateurs avec licences perdent l’accès au produit. L’utilisateur qui a acheté à l’origine l’abonnement à l’achat en libre-service reçoit un courrier électronique qui indique que l’abonnement a été annulé.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’icône de filtre, puis sélectionnez **Libre-service.**
@@ -114,6 +114,6 @@ Lorsque vous choisissez d’annuler un abonnement d’achat en libre-service, le
 
 ## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
 
-Pour les questions courantes sur les achats en libre-service, consultez [le FAQ sur les achats en libre-service.](self-service-purchase-faq.md)
+Pour les questions courantes sur les achats en libre-service, consultez la FAQ sur les [achats en libre-service.](self-service-purchase-faq.md)
 
 Si vous avez des questions ou si vous avez besoin d’aide sur les achats en libre-service, [contactez le support technique.](../../admin/contact-support-for-business-products.md)

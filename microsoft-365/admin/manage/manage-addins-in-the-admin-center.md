@@ -115,7 +115,7 @@ Cela empêche tous les utilisateurs d’acquérir les modules suivants dans le S
     
 - Acquisitions à partir **d’AppSource**
     
-- Add-ins within Microsoft 365
+- Les add-ins dans Microsoft 365
     
 Un utilisateur qui tente d’accéder à l’Office Store voit le message suivant : **Désolé, Microsoft 365** a été configuré pour empêcher l’acquisition individuelle de modules de l’Office Store.
   

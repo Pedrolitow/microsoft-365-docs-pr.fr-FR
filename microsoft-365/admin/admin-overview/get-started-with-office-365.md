@@ -48,7 +48,7 @@ Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l�
     
 - [Centre de formation Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [Où se connectez-vous](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [Où se connectez-vous ?](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
 - [Installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     
@@ -58,7 +58,7 @@ Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l�
 
 Voici quelques ressources pour vous aider à commencer.
   
-- [Formation pour les administrateurs](https://docs.microsoft.com/microsoft-365/admin): obtenez des liens vers des cours en ligne gratuits pour les administrateurs.
+- [Formation pour les administrateurs](https://docs.microsoft.com/microsoft-365/admin): obtenir des liens vers des cours en ligne gratuits pour les administrateurs.
     
 - [Aide de l’administrateur](https://docs.microsoft.com/microsoft-365/admin/admin-home): obtenez des informations sur les tâches principales, la mise en place des outils d’administration et la résolution des problèmes.
     

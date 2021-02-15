@@ -46,7 +46,7 @@ L’appareil doit avoir été effectué par l’un de ces fabricants :
 Ce logiciel doit être préinstallé sur l’appareil :
 
 - Windows 10 Édition Entreprise, Professionnel ou Professionnel
-- la version 64 bits de Microsoft Office« « exécuter en un clic 
+- la version 64 bits Microsoft Office d’exécuter en un clic ; 
 - Tous les pilotes de périphérique applicables
 
 

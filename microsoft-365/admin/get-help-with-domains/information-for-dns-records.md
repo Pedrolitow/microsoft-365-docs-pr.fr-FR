@@ -34,7 +34,7 @@ ms.locfileid: "50126370"
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : Rechercher la valeur de l’enregistrement TXT et vérifier
+### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : rechercher la valeur de l’enregistrement TXT et vérifier
 
 ::: moniker range="o365-worldwide"
 

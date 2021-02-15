@@ -54,7 +54,7 @@ Supprimez-vous votre domaine car vous souhaitez l’ajouter à un autre plan d�
 
 3. Sélectionnez les cases en de côté des noms de tous les utilisateurs que vous souhaitez déplacer.
 
-4. Sélectionnez **plus d’options** (**...**), en haut de la page, puis choisissez Modifier **les domaines.**
+4. Sélectionnez **Plus d’options** (**...**), en haut de la page, puis choisissez Modifier **les domaines.**
 
 5. Dans le **volet Modifier les domaines,** sélectionnez un autre domaine.
 
@@ -118,7 +118,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 2. Dans la section **Nom d’utilisateur/Courrier** électronique, **sélectionnez Modifier,** puis choisissez un autre domaine.
 
-3. Select **Set as primary** > **Save** > **Close**.
+3. Sélectionnez **Définir comme principal** > **Save** > **Close**.
   
 4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
 

@@ -61,7 +61,7 @@ Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des éta
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Déploiement d’un complément Office à l’aide du centre d’administration
 
-Avant de commencer, voir Déterminer si le déploiement centralisé des modules est efficace [pour votre organisation.](centralized-deployment-of-add-ins.md)
+Avant de commencer, voir Déterminer si le déploiement centralisé de vos modules de déploiement fonctionne [pour votre organisation.](centralized-deployment-of-add-ins.md)
   
 1. Dans le Centre d’administration, allez à la page  \> **Paramètres des add-ins.** Si vous ne voyez pas la **page** De ment, go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
     
@@ -82,11 +82,11 @@ Avant de commencer, voir Déterminer si le déploiement centralisé des modules 
 5. Sur la page suivante, sélectionnez **Tout le monde**, **Utilisateurs/groupes spécifiques** ou **Moi uniquement** pour spécifier les personnes vers lesquelles le complément est déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. <br/>
 
     > [!NOTE] 
-    > Pour en savoir plus sur les autres états qui s’appliquent à un add-in, consultez [États de l’application.](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md)
+    > Pour en savoir plus sur les autres états qui s’appliquent à un add-in, voir [États de l’application.](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md)
   
 6. Sélectionnez **Déployer**.
   
-7. Une coche verte s’affiche lorsque le add-in est déployé. Suivez les instructions de la page pour tester le add-in.
+7. Une coche verte s’affiche lorsque le module est déployé. Suivez les instructions de la page pour tester le add-in.
 
     > [!NOTE]
     > Il se peut que les utilisateurs doivent redémarrer Office pour afficher l’icône de l’application sur le ruban de l’application. L’apparition des applications dans les rubans d’application peut prendre jusqu’à 24 heures.

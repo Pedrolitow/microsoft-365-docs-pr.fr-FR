@@ -58,7 +58,7 @@ Aucun connecteur de certificat n’est présent. Il est possible que vous n’av
 
 **Avis**
 
-Au moins un connecteur de certificat présente une erreur. Si vous avez besoin de ce connecteur pour fournir des certificats aux appareils de bureau géré Microsoft, vous devez résoudre l’erreur. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft.](certs-wifi-lan.md)
+Au moins un connecteur de certificat présente une erreur. Si vous avez besoin de ce connecteur pour fournir des certificats aux appareils de bureau géré Microsoft, vous devez résoudre l’erreur. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour bureau géré Microsoft.](certs-wifi-lan.md)
 
 
 **Avis**
@@ -68,7 +68,7 @@ Vous avez au moins un connecteur de certificat et aucune erreur n’est signalé
 
 ### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
 
-Les stratégies d’accès conditionnel ne doivent pas empêcher le Bureau géré Microsoft de gérer votre organisation Azure AD (client) dans Intune et Azure AD.
+Les stratégies d’accès conditionnel ne doivent pas empêcher Le Bureau géré Microsoft de gérer votre organisation Azure AD (client) dans Intune et Azure AD.
 
 **Non prêt**
 
@@ -113,7 +113,7 @@ Vous avez au moins un profil de configuration qui cible tous les utilisateurs, t
 
 **Avis**
 
-Assurez-vous que les stratégies de configuration que vous avez n’incluent pas d’appareils ou d’utilisateurs de bureau géré Microsoft. Pour connaître la procédure à [suivre, voir Créer un profil avec des paramètres personnalisés dans Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
+Assurez-vous que les stratégies de configuration dont vous avez besoin n’incluent pas d’appareils ou d’utilisateurs de bureau géré Microsoft. Pour connaître la procédure à [suivre, voir Créer un profil avec des paramètres personnalisés dans Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
 
 
 
@@ -148,20 +148,20 @@ Microsoft Store pour Entreprises n’est pas activé ou n’est pas synchronisé
 
 ### <a name="multifactor-authentication"></a>Authentification multifacteur
 
-L’authentification multifacteur ne doit pas empêcher le Bureau géré Microsoft de gérer votre organisation Azure AD (client) dans Intune et Azure AD.
+L’authentification multifacteur ne doit pas empêcher Le Bureau géré Microsoft de gérer votre organisation Azure AD (client) dans Intune et Azure AD.
 
 
 **Non prêt**
 
-Certaines stratégies d’authentification  multifacteur sont définies comme requises pour les stratégies d’accès conditionnel qui sont affectées à tous les utilisateurs. Lors de l’inscription, nous allons exclure les comptes du service Bureau géré Microsoft des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Certaines stratégies d’authentification multifacteur sont définies comme **requises** pour les stratégies d’accès conditionnel qui sont attribuées à tous les utilisateurs. Lors de l’inscription, nous allons exclure les comptes du service Bureau géré Microsoft des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Avis**
 
-L’authentification multifacteur est requise sur les stratégies d’accès conditionnel qui pourraient empêcher Le Bureau géré Microsoft de gérer le service Bureau géré Microsoft. Lors de l’inscription, nous allons exclure les comptes du service Bureau géré Microsoft des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Vous avez besoin d’une authentification multifacteur sur les stratégies d’accès conditionnel qui pourraient empêcher Microsoft Managed Desktop de gérer le service Bureau géré Microsoft. Lors de l’inscription, nous allons exclure les comptes du service Bureau géré Microsoft des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Error**
 
-Le rôle d’administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
+Le rôle Administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
 
 - Lecteur de sécurité
 - Administrateur de sécurité
@@ -210,7 +210,7 @@ Examinez les applications que vous souhaitez que vos utilisateurs de bureau gér
 
 **Avis**
 
-Vous devez préparer un inventaire des applications que vous souhaitez que vos utilisateurs de bureau géré Microsoft utilisent. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’utiliser le portail d’entreprise (voir Installer le portail d’entreprise [Intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) sur les appareils et la page État de l’inscription (ESP) pour distribuer des applications à vos utilisateurs. Pour plus d’informations, voir [Applications dans Bureau](apps.md) géré Microsoft et Expérience de première utilisation avec Autopilot et la page État de [l’inscription.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)
+Vous devez préparer un inventaire des applications que vous souhaitez que vos utilisateurs de bureau géré Microsoft utilisent. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’utiliser le portail d’entreprise (voir Installer le portail d’entreprise [Intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) sur les appareils et la page État de l’inscription (ESP) pour distribuer des applications à vos utilisateurs. Pour plus d’informations, voir [Applications dans bureau](apps.md) géré Microsoft et expérience de première utilisation avec Autopilot et la page État de [l’inscription.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)
 
 Vous pouvez demander à votre représentant de compte Microsoft une requête dans Microsoft Endpoint Configuration Manager pour identifier les applications qui sont prêtes à migrer vers Intune ou qui ont besoin d’ajustement.
 
@@ -238,7 +238,7 @@ Vous avez une stratégie de « sonnerie de mise à jour » qui cible tous les ap
 
 **Avis**
 
-Assurez-vous que les stratégies de sonnerie de mise à jour que vous avez excluent le **groupe Modern Workplace Devices -All** Azure AD. Si vous avez affecté des groupes d’utilisateurs Azure AD à ces stratégies, assurez-vous que les stratégies de sonnerie de mise à jour que vous avez également exclues du groupe Espace de travail moderne **-Tous** les groupes Azure AD à qui vous ajoutez vos utilisateurs de bureau géré Microsoft (ou un groupe équivalent). Pour obtenir la procédure à suivre, voir Gérer les mises à jour [logicielles Windows 10 dans Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Les appareils d’espace de travail modernes **-All** et **Modern Workplace -All** Azure AD groups are groups that we create when you enroll in Microsoft Managed Desktop, so you’ll have to come back to exclude this group after enrollment.
+Assurez-vous que toutes les stratégies de sonnerie de mise à jour que vous avez excluent le **groupe Modern Workplace Devices -All** Azure AD. Si vous avez affecté des groupes d’utilisateurs Azure AD à ces stratégies, assurez-vous que les stratégies de sonnerie de mise à jour que vous avez également exclues du groupe Espace de travail moderne **-Tous** les groupes Azure AD à qui vous ajoutez vos utilisateurs de bureau géré Microsoft (ou un groupe équivalent). Pour obtenir la procédure à suivre, voir Gérer les mises à jour [logicielles Windows 10 dans Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Les appareils d’espace de travail modernes **-All** et **Modern Workplace -All** Azure AD groups are groups that we create when you enroll in Microsoft Managed Desktop, so you’ll have to come back to exclude this group after enrollment.
 
 
 ## <a name="azure-active-directory-settings"></a>Paramètres Azure Active Directory
@@ -269,7 +269,7 @@ L’itinérance de l’état d’entreprise doit être activée.
 
 **Avis**
 
-Assurez-vous que l’itinérance de l’état d’entreprise est activée pour **Tous** ou pour **les groupes sélectionnés.** Pour plus d’informations, voir [Activer l’itinérance de l’état d’entreprise dans Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)
+Assurez-vous que l’itinérance d’état d’entreprise est activée pour **tous** ou pour **les groupes sélectionnés.** Pour plus d’informations, voir [Activer l’itinérance de l’état d’entreprise dans Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)
 
 ### <a name="licenses"></a>Licences
 
@@ -277,7 +277,7 @@ Un certain nombre de licences sont requises pour utiliser bureau géré Microsof
 
 **Non prêt**
 
-Vous n’avez pas toutes les licences dont vous avez besoin pour utiliser Bureau géré Microsoft. Pour plus d’informations, voir [Les technologies bureau géré Microsoft](../intro/technologies.md) et en savoir plus sur les [licences.](prerequisites.md#more-about-licenses)
+Vous n’avez pas toutes les licences dont vous avez besoin pour utiliser Bureau géré Microsoft. Pour plus d’informations, voir [Les technologies bureau](../intro/technologies.md) géré Microsoft et plus [d’informations sur les licences.](prerequisites.md#more-about-licenses)
 
 
 ### <a name="microsoft-managed-desktop-service-accounts"></a>Comptes de service Bureau géré Microsoft
@@ -300,12 +300,12 @@ Si vous avez des utilisateurs affectés à l’un de ces rôles dans votre organ
 - Opérateur de sécurité
 - Lecteur général
 
-Pour plus d’informations, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)
+Pour plus d’informations, voir Créer et gérer des rôles pour le contrôle [d’accès basé sur les rôles.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)
 
 
 ### <a name="security-default"></a>Sécurité par défaut
 
-Les paramètres de sécurité par défaut dans Azure Active Directory empêcheront Le Bureau géré Microsoft de gérer vos appareils.
+Les paramètres de sécurité par défaut dans Azure Active Directory empêcheront bureau géré Microsoft de gérer vos appareils.
 
 **Non prêt**
 
@@ -322,7 +322,7 @@ Assurez-vous que le  paramètre SSPR sélectionné inclut les utilisateurs de bu
 
 ### <a name="standard-user-role"></a>Rôle d’utilisateur standard
 
-À part les utilisateurs qui se voit attribuer des rôles Azure AD d’administrateur général et d’administrateur d’appareil, les utilisateurs du Bureau géré Microsoft sont des utilisateurs standard sans privilèges d’administrateur local. Un rôle d’utilisateur standard est attribué à tous les autres utilisateurs lorsqu’ils démarrent leur appareil Bureau géré Microsoft.
+À part les utilisateurs qui se voit attribuer des rôles Azure AD d’administrateur général et d’administrateur d’appareil, les utilisateurs du Bureau géré Microsoft sont des utilisateurs standard sans privilèges d’administrateur local. Tous les autres utilisateurs se voit attribuer un rôle d’utilisateur standard lorsqu’ils démarrent leur appareil Bureau géré Microsoft.
 
 **Avis**
 

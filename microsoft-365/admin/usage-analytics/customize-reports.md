@@ -78,9 +78,9 @@ L'exemple suivant montre comment créer un élément visuel pour assurer le suiv
 
     ![Sélectionner un graphique à barres](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
-5. Sélectionnez la partie inférieure droite de cette visualisation et faites-la glisser pour la rendre plus grande.
+5. Sélectionnez le bas à droite de cette visualisation et faites glisser pour l’agrandir.
 
-6. Dans la **zone Champs** à droite, **développez** la table Calendrier.
+6. Dans la **zone Champs** à droite, développez **la** table Calendrier.
 
 7. Faites glisser **MonthName** vers la zone Champs, juste en-dessous du titre **Axe** de la zone **Visualisations**.
  
@@ -112,7 +112,7 @@ Pour la plupart des clients, la version web de Power BI suffit pour modifier les
   
 ### <a name="use-the-reporting-apis"></a>Utiliser les API de création de rapports
 
-Vous pouvez commencer par vous connecter directement aux API de rapports ODATA à partir de Microsoft 365 qui sont à l’alimentation de ces rapports.
+Vous pouvez commencer par vous connecter directement aux API de rapports ODATA de Microsoft 365 qui sont à l’alimentation de ces rapports.
   
 1. Accédez à **Obtenir des données** \> **Autres** \> **Flux ODATA** \> **Connexion**.
     

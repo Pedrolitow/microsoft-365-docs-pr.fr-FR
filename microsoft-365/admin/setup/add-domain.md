@@ -114,7 +114,7 @@ Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour 
 
 3. Dans la page **Domaines**, sélectionnez un domaine. 
     
-4. Sous **paramètres DNS,** sélectionnez **Enregistrements personnalisés**; puis **sélectionnez Nouvel enregistrement personnalisé.**
+4. Sous **paramètres DNS**, sélectionnez **Enregistrements personnalisés**; puis **sélectionnez Nouvel enregistrement personnalisé.**
 
 5. Sélectionnez le type d’enregistrement DNS à ajouter et tapez les informations du nouvel enregistrement.
     

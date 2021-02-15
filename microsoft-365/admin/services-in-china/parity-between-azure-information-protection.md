@@ -76,7 +76,7 @@ Pour que le chiffrement fonctionne correctement, RMS doit être activé pour le 
     2. Si le module AIPService n’est pas installé, exécutez `Install-Module AipService` .
     3. Importer le module à l’aide `Import-Module AipService` de .
     4. Connectez-vous au service à l’aide `Connect-AipService -environmentname azurechinacloud` de .
-    5. Exécutez `(Get-AipServiceConfiguration).FunctionalState` et vérifiez si l’état est `Enabled` .
+    5. Exécutez `(Get-AipServiceConfiguration).FunctionalState` et vérifiez si l’état `Enabled` est .
 
 2. Si l’état fonctionnel est `Disabled` , exécutez `Enable-AipService` .
 
@@ -105,7 +105,7 @@ En outre, l’hypothèse est que les utilisateurs se connectent avec un nom d’
 
 3. Associez le domaine personnalisé au client dans [le portail Azure.](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains) Cela ajoute une entrée dans DNS, qui peut prendre plusieurs minutes pour être vérifiée après avoir ajouté la valeur aux paramètres DNS.
 
-4. Connectez-vous au Centre d’administration Microsoft 365 avec les informations d’identification d’administrateur global correspondantes et ajoutez le domaine (par exemple, ) pour la `contoso.cn` création d’utilisateurs. Dans le processus de vérification, des modifications DNS supplémentaires peuvent être nécessaires. Une fois la vérification effectuée, les utilisateurs peuvent être créés.
+4. Connectez-vous au Centre d’administration Microsoft 365 avec les informations d’identification d’administrateur global correspondantes et ajoutez le domaine (par exemple, ) pour la création `contoso.cn` d’utilisateurs. Dans le processus de vérification, des modifications DNS supplémentaires peuvent être nécessaires. Une fois la vérification effectuée, les utilisateurs peuvent être créés.
 
 #### <a name="configure-dns-encryption---mac-ios-android"></a>Configurer le chiffrement DNS - Mac, iOS, Android
 
@@ -114,7 +114,7 @@ Connectez-vous à votre fournisseur DNS, accédez aux paramètres DNS du domaine
 - Service = `_rmsdisco`
 - Protocole = `_http`
 - Name = `_tcp`
-- Cible = `api.aadrm.cn`
+- Target = `api.aadrm.cn`
 - Port = `80`
 - Priority, Weight, Seconds, TTL = default values
 

@@ -95,7 +95,7 @@ La publication ciblée permet aux administrateurs, aux responsables des modifica
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>Configurer l’option de publication dans le Centre d’administration
 
-Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour Microsoft 365 en suivant ces étapes. Vous devez être administrateur global dans Microsoft 365 pour vous y rendre.
+Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour Microsoft 365 en suivant ces étapes. Vous devez être un administrateur global dans Microsoft 365 pour vous y rendre.
   
 > [!IMPORTANT]
 > L’application des modifications ci-dessous dans Microsoft 365 peut prendre jusqu’à 24 heures. Si vous décidez de ne plus participer au programme de publication ciblée après l'avoir activé, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication planifiée. 

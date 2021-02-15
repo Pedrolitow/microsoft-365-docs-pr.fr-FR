@@ -46,7 +46,7 @@ Vous pouvez désattribuer des licences à des utilisateurs sur la page **Utilisa
 
 - Vous devez être un administrateur global, de licence, d’utilisateur pour désattribuer des licences. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](../add-users/about-admin-roles.md).
 - Vous pouvez [supprimer des licences de comptes d'utilisateurs à l'aide d'Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell).
-- Vous pouvez également [supprimer les comptes d’utilisateurs](../add-users/delete-a-user.md) qui ont été affectés à une licence pour les rendre disponibles pour d’autres utilisateurs. Lorsque vous supprimez un compte d’utilisateur, sa licence est immédiatement disponible pour être assignée à une autre personne.
+- Vous pouvez également [supprimer les comptes d’utilisateurs](../add-users/delete-a-user.md) qui ont été affectés à une licence pour que leur licence soit disponible pour d’autres utilisateurs. Lorsque vous supprimez un compte d’utilisateur, sa licence est immédiatement disponible pour être assignée à une autre personne.
 
 ::: moniker range="o365-worldwide"
 
@@ -120,7 +120,7 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour désattribuer des lic
 2. Sélectionnez les cases en de côté des noms des utilisateurs pour qui vous souhaitez désattribuer toutes les licences.
 3. Dans le volet **Actions en bloc**, sélectionnez **Modifier les licences de produits**.
 4. Dans le volet **Remplacer les produits existants**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
-5. En bas du  volet Remplacer les produits **existants,** cochez la case Supprimer toutes les licences de produits de la case utilisateur sélectionnée, puis **sélectionnez** Remplacer \>  \> **fermer.**
+5. En bas du  volet Remplacer les produits **existants,** cochez la case Supprimer toutes les licences de produits de la case utilisateur sélectionnée, puis **sélectionnez Remplacer** \>  \> **fermer.**
 
 ::: moniker-end
 
@@ -132,7 +132,7 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour désattribuer des lic
 2. Sélectionnez les cases en de côté des noms des utilisateurs pour qui vous souhaitez désattribuer toutes les licences.
 3. Dans le volet **Actions en bloc**, sélectionnez **Modifier les licences de produits**.
 4. Dans le volet **Remplacer les produits existants**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
-5. En bas du  volet Remplacer les produits **existants,** cochez la case Supprimer toutes les licences de produits de la case utilisateur sélectionnée, puis **sélectionnez** Remplacer \>  \> **fermer.**
+5. En bas du  volet Remplacer les produits **existants,** cochez la case Supprimer toutes les licences de produits de la case utilisateur sélectionnée, puis **sélectionnez Remplacer** \>  \> **fermer.**
 
 ::: moniker-end
 

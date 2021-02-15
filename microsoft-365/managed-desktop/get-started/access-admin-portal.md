@@ -37,7 +37,7 @@ Votre compte d’administration aura besoin d’autorisations spécifiques pour 
 |---------|---------|
 |Administrateur général     | Les administrateurs dotés de ce rôle disposeront d’autorisations de lecture et d’écriture sur toutes les **fonctionnalités** du portail d’administration du bureau géré Microsoft.         |
 |Lecteur général     | Les administrateurs dotés de ce rôle disposeront **d’autorisations** en lecture seule sur toutes les fonctionnalités du portail d’administration du bureau géré Microsoft.         |
-|Administrateur de service Intune     |  Les administrateurs dotés de ce rôle disposeront d’autorisations de lecture et d’écriture sur les **fonctionnalités non liées** à la sécurité dans le portail d’administration du bureau géré Microsoft.       |
+|Administrateur de service Intune     |  Les administrateurs dotés de ce rôle disposeront d’autorisations de lecture et d’écriture sur les fonctionnalités non **liées** à la sécurité dans le portail d’administration du bureau géré Microsoft.       |
 |Administrateur du support technique     | Les administrateurs dotés de ce rôle disposeront d’autorisations en lecture seule sur les **fonctionnalités** non **liées** à la sécurité et d’autorisations d’écriture pour gérer les demandes de support dans le portail d’administration du bureau géré Microsoft.         |
 |Administrateur de sécurité | Les administrateurs dotés de ce rôle disposeront d’autorisations en lecture seule sur toutes les **fonctionnalités** et d’autorisations d’écriture pour les **fonctionnalités liées** à la sécurité dans bureau géré Microsoft dans le portail d’administration. |
 |Lecteur de sécurité |Les administrateurs dotés de ce rôle disposeront **d’autorisations** en lecture seule sur toutes les fonctionnalités du portail d’administration du bureau géré Microsoft.|
@@ -45,7 +45,7 @@ Votre compte d’administration aura besoin d’autorisations spécifiques pour 
 Si vous avez besoin d’aide pour attribuer des rôles Azure Active Directory, consultez autorisations de rôle [d’administrateur dans Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 > [!IMPORTANT]
-> Seul le rôle Administrateur général dispose  des autorisations nécessaires pour inscrire votre organisation dans Bureau géré Microsoft. N’ignorez pas que les rôles Azure Active Directory donnent des privilèges de comptes d’utilisateur dans divers services Microsoft. Une fois l’inscription avec Bureau géré Microsoft terminé, vous devez toujours utiliser le rôle avec le moins de privilèges nécessaires pour accomplir vos autres tâches. 
+> Seul le rôle Administrateur général dispose  des autorisations nécessaires pour inscrire votre organisation dans Bureau géré Microsoft. N’ignorez pas que les rôles Azure Active Directory donnent des privilèges de comptes d’utilisateur à différents services Microsoft. Une fois l’inscription avec Bureau géré Microsoft terminé, vous devez toujours utiliser le rôle avec le moins de privilèges nécessaires pour accomplir vos autres tâches. 
 
 ## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>Rôles intégrés fournis par Bureau géré Microsoft
 
@@ -64,9 +64,9 @@ Si vous avez besoin d’aide pour attribuer des rôles Azure Active Directory, c
 Pour faciliter la gestion des rôles intégrés, il existe un groupe de sécurité pour chaque rôle personnalisé nommé « Modern Workplace Roles - _Role Name_» (par exemple, « Modern Workplace Roles – Security Manager »). Pour affecter des utilisateurs à l’un de ces groupes de sécurité, suivez les étapes suivantes :
 1.  Go the Microsoft Endpoint Manager portal.
 2.  Sélectionnez **Groupes** sur le côté gauche.
-3.  Recherchez **les rôles d’espace** de travail modernes, puis sélectionnez le groupe associé au rôle que vous souhaitez attribuer. 
+3.  Recherchez **les rôles de l’espace** de travail moderne, puis sélectionnez le groupe associé au rôle que vous souhaitez attribuer. 
 4.  Sélectionnez **Membres** sur le côté gauche, puis **sélectionnez + Ajouter des membres** dans la barre de commandes.
-5.  Entrez l’e-mail de la personne ajoutée. S’ils sont invités, vous devez les inviter avant de pouvoir affecter le groupe.
+5.  Entrez le courrier électronique de la personne ajoutée. S’ils sont invités, vous devez les inviter avant de pouvoir affecter le groupe.
 6.  Sélectionnez **Sélectionner** en bas.
 
 > [!NOTE]

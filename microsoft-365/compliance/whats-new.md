@@ -30,7 +30,7 @@ ms.locfileid: "50113973"
 Que ce soit en ajoutant de nouvelles solutions au Centre de conformité [Microsoft 365,](microsoft-365-compliance-center.md)en mettant à jour les fonctionnalités existantes en fonction de vos commentaires ou en mettant en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 aujourd’hui.
 
 > [!NOTE]
-> Certaines fonctionnalités de conformité sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)
+> Certaines fonctionnalités de conformité sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)
 
 > [!TIP]
 > Vous êtes intéressé par ce qui se passe dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du Centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[Nouveautés du Centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
@@ -55,7 +55,7 @@ D’autres documents sur les solutions de contenu seront bientôt disponible !
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-Amélioration du flux de travail et des fonctionnalités d’ajout de dépositaires et [de sources](non-custodial-data-sources.md) de données non privatives à un cas Advanced eDiscovery. [](add-custodians-to-case.md)
+Amélioration du flux de travail et des fonctionnalités pour l’ajout de [dépositaires](add-custodians-to-case.md) et [de sources](non-custodial-data-sources.md) de données non privatives à un cas Advanced eDiscovery.
 
 ### <a name="data-connectors"></a>Connecteurs de données
 
@@ -143,10 +143,10 @@ Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conform
 
 ### <a name="communication-compliance"></a>Conformité des communications
 
-- [Groupes de rôles mis à jour.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) Les groupes de rôles de conformité des communications correspondent désormais à la structure de groupes de rôles disponible pour la solution de gestion des risques internes.
+- [Groupes de rôles mis à jour.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) Les groupes de rôles de conformité des communications correspondent désormais à la structure de groupe de rôles disponible pour la solution de gestion des risques internes.
 - [Tableau de bord rapports](communication-compliance-feature-reference.md#reports-preview). Votre emplacement central pour afficher tous les rapports de conformité des communications. Les widgets de rapport fournissent un aperçu rapide des informations les plus couramment nécessaires pour une évaluation globale de l’état des activités de conformité des communications.
 - [Flux Power Automate](communication-compliance-feature-reference.md#power-automate-flows). Configurer des flux pour automatiser les tâches pour les alertes et les utilisateurs, avertir les responsables lorsque les utilisateurs déclenchent une alerte, et bien plus encore.
-- [Action de correction « Améliorer la classification](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)». Les alertes contenant des éléments qui correspondent à des classifieurs entra mentables peuvent tirer parti des commentaires pour réduire les faux positifs dans votre organisation. **L’option Améliorer la classification** vous permet de fournir des commentaires si les éléments détectés correspondent au classifieur configuré dans la stratégie de conformité des communications associée. Vous pouvez même suggérer d’autres classifieurs à associer à l’élément pour améliorer la précision des correspondances pour les alertes futures.
+- [Action de correction «](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)Améliorer la classification ». Les alertes contenant des éléments qui correspondent à des classifieurs entra mentables peuvent tirer parti des commentaires pour réduire les faux positifs dans votre organisation. **L’option Améliorer la classification** vous permet de fournir des commentaires si les éléments détectés correspondent au classifieur configuré dans la stratégie de conformité des communications associée. Vous pouvez même suggérer d’autres classifieurs à associer à l’élément pour améliorer la précision des correspondances pour les alertes futures.
 
 ### <a name="data-connectors"></a>Connecteurs de données
 
@@ -179,7 +179,7 @@ De nouvelles fonctionnalités de formation et de commentaires permettent d’am�
 Cette nouvelle fonctionnalité est incluse dans les fonctionnalités suivantes :
 
 > [!NOTE]
-> Pour toutes les fonctionnalités, si vous fournissez au moins 30 réponses de commentaires, nous allons créer une version retrainée de ce classificateur que vous pouvez examiner. En cas d’amélioration, vous pouvez republier le classifieur.
+> Pour toutes les fonctionnalités, si vous fournissez au moins 30 réponses de commentaires, nous allons créer une version retrainée de ce classifieur que vous pouvez consulter. En cas d’amélioration, vous pouvez republier le classifieur.
 
 - [Classifieurs avec capacité d’apprentissage](classifier-learn-about.md#retraining-classifiers). Pour améliorer la précision de vos classifieurs publiés, vous pouvez fournir des commentaires sur la correspondance des éléments détectés avec le classifieur.
 - [Conformité des communications.](classifier-how-to-retrain-comms-compliance.md) La nouvelle action **de correction** améliorer la classification vous permet de fournir des commentaires si un élément d’une alerte de conformité des communications correspond au classificateur configuré dans la stratégie de conformité des communications.
@@ -243,7 +243,7 @@ L’activité d’administrateur liée à la rétention est désormais enregistr
 
 ## <a name="july-2020"></a>Juillet 2020
 
-### <a name="spotlight-on-help-docs"></a>Documentation d’aide à la une
+### <a name="spotlight-on-help-docs"></a>À la une sur les documents d’aide
 
 Pour vous aider à comprendre quelles solutions de conformité sont utilisées pour protéger et régir les données sensibles de votre organisation, nous avons créé deux nouvelles pages d’accueil avec des présentations de la façon dont les solutions fonctionnent ensemble pour atteindre ces objectifs, y compris des liens vers des documents connexes pour vous permettre d’aller plus loin.
 

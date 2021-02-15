@@ -27,7 +27,7 @@ ms.locfileid: "50122371"
 > [!IMPORTANT]
 > Cette fonctionnalité Microsoft 365 est en prévisualisation publique. La prévisualisation publique fournit un accès en avant-première aux fonctionnalités de Microsoft 365.
 
-En tant qu’administrateur Microsoft 365, vous pouvez permettre à vos utilisateurs de se connectent à Outlook pour Android ou à l’application iOS sur leurs appareils mobiles sans avoir à entrer leur nom d’utilisateur et leur mot de passe. En analysant un code QR, les utilisateurs peuvent s’authentifier et se connectent en toute sécurité à Outlook Mobile.
+En tant qu’administrateur Microsoft 365, vous pouvez permettre à vos utilisateurs de se connectent à Outlook pour Android ou à l’application iOS sur leurs appareils mobiles sans avoir à entrer leur nom d’utilisateur et leur mot de passe. En analysant un code QR, les utilisateurs peuvent s’authentifier en toute sécurité et se connectent à Outlook Mobile.
 
 Dans Outlook sur le web ou dans d’autres applications Outlook de bureau, les utilisateurs peuvent voir des notifications les informant qu’ils peuvent utiliser Outlook sur leur appareil mobile. Ces notifications peuvent être gérées par l’administrateur à l’aide d’Exchange Powershell. Si les utilisateurs choisissent de s’envoyer eux-mêmes un SMS pour télécharger l’application sur leur appareil mobile, un code QR s’affiche sur leur ordinateur. Ils pourront analyser le code QR pour se connecter à Outlook sur leur téléphone ou tablette. Ce code QR est un jeton à durée de vie courte qui ne peut être échangé qu’une seule fois.
 
@@ -45,6 +45,6 @@ Cette expérience est en place par défaut. Pour désactiver cette fonctionnalit
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
-Voir aussi
+Rubriques connexes
 
 [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps)

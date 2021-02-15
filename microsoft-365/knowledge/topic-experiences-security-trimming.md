@@ -27,13 +27,13 @@ Les utilisateurs de rubriques Topics ne peuvent pas afficher les informations da
 
 Lorsqu’une rubrique est créée par le biais d’une IA ou d’une curation manuelle, elle peut contenir une description de la rubrique, d’autres noms, des personnes associées à la rubrique, ainsi que des sites, des pages et des fichiers associés à la rubrique. Lorsque ces informations sont visualées sur une page de rubrique, il est possible que deux utilisateurs qui visualisent la même rubrique ne voient pas les mêmes informations.
   
-Par exemple, lorsque l’utilisateur 1 affiche la page de rubriqueSoe, il peut voir cet affichage de la page de rubrique.
+Par exemple, lorsque l’utilisateur 1 affiche la page Rubriques de Domaine, il peut voir cet affichage de la page de rubrique.
 
 ![Rubrique de l’utilisateur 1](../media/knowledge-management/user2-topic-view.png) </br> 
 
-Toutefois, lorsque l’utilisateur 2 examine la même page de rubriques, son affichage diffère de celui de l’utilisateur 1.  L’utilisateur 2 peut voir le fichier vue d’ensemble du produit *DG-2000* dans la section Des fichiers et **des pages** épinglés de la page de rubrique, qui n’apparaît pas pour l’utilisateur 1. 
+Toutefois, lorsque l’utilisateur 2 examine la même page de rubriques, son affichage diffère de celui de l’utilisateur 1.  L’utilisateur 2 peut voir le fichier de présentation du produit *DG-2000* dans la section Des fichiers et **des pages** épinglés de la page de rubrique, qui n’apparaît pas pour l’utilisateur 1. 
 
-![Rubrique de l’utilisateur 2](../media/knowledge-management/user1-topic-view.png) </br> 
+![Rubrique de Rubrique pour l’utilisateur 2](../media/knowledge-management/user1-topic-view.png) </br> 
 
 La différence entre ce que les utilisateurs peuvent voir dans la même rubrique est que les utilisateurs n’ont peut-être pas les autorisations Office 365 pour afficher un site ou un fichier associé.  Cette rubrique respecte les autorisations définies sur les éléments d’une rubrique et ne peut pas modifier l’accès à ces derniers. Dans notre exemple, l’utilisateur 1 n’est pas en mesure d’afficher le fichier de présentation du produit *DG-2000* dans sa page de rubriques, car l’utilisateur 1 n’a pas les autorisations Office 365 pour afficher le fichier.
 
@@ -59,7 +59,7 @@ Le tableau suivant décrit ce que les utilisateurs (visiteurs de rubriques, coll
 |Élément de rubrique|Ce que les utilisateurs peuvent voir|
 |:---------|:------------------|
 |Nom de la rubrique|Les utilisateurs peuvent voir le nom de toutes les rubriques dans le centre de rubriques. Certaines rubriques peuvent ne pas être visibles si elles ont une faible pertinence pour l’utilisateur.|
-|Description du sujet|Les descriptions générées par l’IA sont visibles uniquement pour les utilisateurs qui ont des autorisations sur le contenu source. Les descriptions entrées ou modifiées manuellement sont visibles pour tous les utilisateurs.|
+|Description du sujet|Les descriptions générées par l’IA sont visibles uniquement pour les utilisateurs qui ont des autorisations sur le contenu source. Les descriptions entrées ou modifiées manuellement sont visibles par tous les utilisateurs.|
 |Personnes|Les personnes épinglées sont visibles par tous les utilisateurs. Les personnes suggérées sont visibles uniquement pour les utilisateurs qui ont des autorisations sur le contenu source.|
 |Fichiers|Les fichiers sont visibles uniquement pour les utilisateurs qui ont des autorisations sur le contenu source.|
 |Pages|Les pages sont visibles uniquement pour les utilisateurs qui ont des autorisations sur le contenu source.|

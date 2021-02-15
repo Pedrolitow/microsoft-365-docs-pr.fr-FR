@@ -59,6 +59,6 @@ Voir [ajouter des invités en bloc](https://docs.microsoft.com/azure/active-dire
 ## <a name="remove-a-guest"></a>Supprimer un invité
 
 1. Dans le Centre d’administration Microsoft 365, développez **Utilisateurs,** puis choisissez **Utilisateurs invités.**
-1. Dans la page **Utilisateurs** invités, choisissez l’utilisateur que vous souhaitez supprimer, puis **choisissez Supprimer un utilisateur.** 
+1. Dans la page **Utilisateurs** invités, choisissez l’utilisateur que vous souhaitez supprimer, puis **sélectionnez Supprimer un utilisateur.** 
 
-Pour supprimer des utilisateurs dans le portail Azure AD, consultez [supprimer un utilisateur invité et des ressources.](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)
+Pour supprimer des utilisateurs dans le portail Azure AD, voir [supprimer un utilisateur invité et des ressources.](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)

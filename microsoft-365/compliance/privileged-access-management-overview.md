@@ -57,7 +57,7 @@ Lorsque vous configurez une stratégie d’accès privilégié avec le Centre d�
 
 ### <a name="step-2-access-request"></a>Étape 2 : Demande d’accès
 
-Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com) ou avec Exchange Management PowerShell, les utilisateurs peuvent demander l’accès à des tâches avec élévation de privilèges ou privilèges. La fonctionnalité d’accès privilégié envoie la demande au substrat Microsoft 365 pour traitement par rapport à la stratégie d’accès privilégié configurée et enregistre l’activité dans les journaux du Centre de conformité de &amp; sécurité.
+Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com) ou avec Exchange Management PowerShell, les utilisateurs peuvent demander l’accès à des tâches privilégiées ou élevées. La fonctionnalité d’accès privilégié envoie la demande au substrat Microsoft 365 pour traitement par rapport à la stratégie d’accès privilégié configurée et enregistre l’activité dans les journaux du Centre de conformité de &amp; sécurité.
 
 ![Étape 2 : Demande d’accès](../media/pam-step2-access-request.jpg)
 
@@ -69,7 +69,7 @@ Une demande d’approbation est établie et la notification de demande en attent
 
 ### <a name="step-4-access-processing"></a>Étape 4 : Traitement de l’accès
 
-Pour une demande approuvée, la tâche est traitée par l’instance d’exécution d’Exchange Management. L’approbation est vérifiée par rapport à la stratégie d’accès privilégié et traitée par le substrat Microsoft 365. Toutes les activités de la tâche sont consignées dans le Centre de &amp; conformité de sécurité.
+Pour une demande approuvée, la tâche est traitée par l’instance d’exécution d’Exchange Management. L’approbation est vérifiée par rapport à la stratégie d’accès privilégié et traitée par le substrat Microsoft 365. Toutes les activités de la tâche sont enregistrées dans le Centre de &amp; conformité de sécurité.
 
 ![Étape 4 : Traitement de l’accès](../media/pam-step4-access-processing.jpg)
 
@@ -77,7 +77,7 @@ Pour une demande approuvée, la tâche est traitée par l’instance d’exécut
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Quelles S SKUs peuvent utiliser l’accès privilégié dans Office 365 ?
 
-La gestion des accès privilégiés est disponible pour les clients pour un large éventail d’abonnements et de modules logiciels microsoft 365 et Office 365. Pour plus [d’informations,](privileged-access-management-configuration.md) voir Prise en charge de la gestion des accès privilégiés.
+La gestion des accès privilégiés est disponible pour les clients pour un large éventail d’abonnements et de modules logiciels microsoft 365 et Office 365. Pour [plus d’informations,](privileged-access-management-configuration.md) voir Prise en charge de la gestion des accès privilégiés.
 
 ### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>Quand l’accès privilégié prendra-t-il en charge les charges de travail Office 365 au-delà d’Exchange ?
 
@@ -89,7 +89,7 @@ Oui, l’augmentation de la limite actuelle de 30 stratégies d’accès privil�
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Dois-je être administrateur général pour gérer l’accès privilégié dans Office 365 ?
 
-Non, vous avez besoin du rôle De gestion des rôles Exchange attribué aux comptes qui gèrent l’accès privilégié dans Office 365. Si vous ne souhaitez pas configurer le rôle gestion des rôles en tant qu’autorisation de compte autonome, le rôle Administrateur général inclut ce rôle par défaut et peut gérer l’accès privilégié. Les utilisateurs inclus dans un groupe d’approbations n’ont pas besoin d’être administrateur global ou le rôle de gestion des rôles est attribué pour examiner et approuver les demandes avec PowerShell.
+Non, vous avez besoin du rôle De gestion des rôles Exchange attribué aux comptes qui gèrent l’accès privilégié dans Office 365. Si vous ne souhaitez pas configurer le rôle Gestion des rôles en tant qu’autorisation de compte autonome, le rôle Administrateur général inclut ce rôle par défaut et peut gérer l’accès privilégié. Les utilisateurs inclus dans un groupe d’approbations n’ont pas besoin d’être administrateur global ou le rôle de gestion des rôles est attribué pour examiner et approuver les demandes avec PowerShell.
 
 ### <a name="how-is-privileged-access-management-related-to-customer-lockbox"></a>Comment la gestion des accès privilégiés est-elle liée à Customer Lockbox ?
 

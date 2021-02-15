@@ -28,7 +28,7 @@ Avant de commencer l’adoption, vous devez comprendre les concepts impliqués d
 - **Découverte**: les utilisateurs peuvent découvrir les connaissances dans les applications qu’ils utilisent quotidiennement par le biais de fiches de rubriques , ils peuvent également découvrir des rubriques dans Microsoft Search (recherche Microsoft).
 - **Curation**: les experts techniques (SME) affinent les rubriques par le biais de pages de rubriques, et l’IA apprend à partir de leurs entrées. Le centre de rubriques contient des pages de rubriques que les utilisateurs peuvent explorer et que les experts peuvent gérer.
 - **Identification**: avec Microsoft Graph et les connaissances et les personnes (rubriques, compétences, etc.) de Microsoft Graph et intelligence artificielle sont identifiées et automatiquement organisées en rubriques connexes. Le contenu SharePoint est indexé avec le contenu de sécurité.
-- **Extension**: avec les connecteurs de contenu Microsoft Graph (bientôt disponibles), vous pouvez ingérez les connaissances des services externes et des référentiels de données.
+- **Extension**: avec les connecteurs de contenu Microsoft Graph (bientôt disponibles), vous pouvez inger les connaissances des services externes et des référentiels de données.
 
 Pour plus d’informations, vous pouvez consulter la [vue d’ensemble](topic-experiences-overview.md) pour une présentation.
 
@@ -50,8 +50,8 @@ Examinez la liste des conditions préalables à la mise à jour des rubriques De
 
 |Produit ou fonctionnalité |Description |
 |:-------|:--------|
-|SharePoint Online avec des pages SharePoint modernes |L’exploration de rubriques inclut uniquement du contenu sur les sites SharePoint et les cartes de sujet peuvent uniquement être présentes sur des pages modernes.|
-|Microsoft Graph |Vous pouvez contrôler si des rubriques sont incluses ou exclues de Search ou Delve avec les paramètres de Microsoft Graph. |
+|SharePoint Online avec des pages SharePoint modernes |L’exploration de rubriques inclut uniquement le contenu sur les sites SharePoint et les cartes de sujet ne peuvent être pointées que sur des pages modernes.|
+|Microsoft Graph |Vous pouvez contrôler si des rubriques sont incluses ou exclues de Search ou Delve avec les paramètres de Microsoft Graph. |
 
 ## <a name="plan-for-adoption"></a>Planifier l’adoption
 
@@ -65,7 +65,7 @@ Pour planifier l’adoption de Topics, vous devez :
     - Déterminer l’impact sur l’entreprise que vous souhaitez atteindre et la façon dont vous allez mesurer [la réussite.](#create-a-success-plan)
 
 2. Impliquer votre organisation :
-    - Identifiez les groupes d’entreprise et les équipes d’entreprise qui doivent être impliqués et alignez-les sur ceux-ci et les scénarios que vous planifiez.
+    - Identifiez les groupes d’entreprise et les équipes d’entreprise qui doivent être impliqués et alignez-les entre ceux-ci et les scénarios que vous planifiez.
     - Commencez à réfléchir à la façon d’impliquer certains utilisateurs précoces pour obtenir des commentaires critiques et précoces afin de pouvoir itérer pour obtenir la meilleure solution.
     - Commencez à créer la communauté et réfléchissez à la façon dont Topics peut être utilisé au sein de votre organisation par ces différents groupes.
 
@@ -74,7 +74,7 @@ Pour planifier l’adoption de Topics, vous devez :
     - Bientôt disponible, des vidéos de formation et de l’aide pour les utilisateurs finaux.
 
 4. [Créez un réseau champion](#build-a-champion-network):
-    - Vous avez peut-être déjà mis en place des communautés de pratiques ou des réseaux de champions. Ces méthodes sont excellentes pour mettre en réseau et mettre en avant les pairs et les impliquer pour s’aider mutuellement. Ils peuvent également partager des témoignages qui peuvent être très utiles. Ils peuvent donner des conseils et générer de l’intérêt.
+    - Vous avez peut-être déjà mis en place des communautés de pratiques ou des réseaux de champions. Ces méthodes sont excellentes pour mettre en réseau et mettre en avant les pairs et les impliquer pour s’aider mutuellement. Ils peuvent également partager des témoignages qui peuvent être très utiles. Ils peuvent donner des conseils et générer de l’enthousiasme.
 
 ### <a name="target-scenarios"></a>Scénarios cibles
 
@@ -142,7 +142,7 @@ Créez un réseau champion dans votre organisation. Les champions sont important
 
 Vous pouvez recrutementr des champions de différents rôles : gestionnaires de connaissances et experts techniques.
 
-De nombreux réseaux champion utilisent Yammer comme plateforme. Dans Yammer, les personnes peuvent publier des questions et obtenir des réponses, et partager des témoignages. Il est difficile de faire passer le mot seul, afin que vous pouvez vous appuyer sur le réseau de personnes dans toute votre entreprise pour donner des conseils à leurs homologues et montrer comment leur équipe utilise Des rubriques De manière à ce que les autres équipes peuvent réfléchir à leurs propres scénarios.
+De nombreux réseaux champion utilisent Yammer comme plateforme. Dans Yammer, les personnes peuvent publier des questions et obtenir des réponses, et partager des témoignages. Il est difficile de passer le mot seul, afin que vous pouvez vous appuyer sur le réseau de personnes dans toute votre entreprise pour donner des conseils à leurs homologues et montrer comment leur équipe utilise Rubriques Afin que les autres équipes peuvent réfléchir à leurs propres scénarios.
 
 Certaines organisations utilisent des piratages (formels ou informels, virtuels ou en personne) pour rassembler des groupes de personnes pour travailler sur un projet spécifique. Par exemple, vous pouvez rassembler vos experts techniques et les faire collaborer pour organiser un ensemble de pages de rubriques.
 
@@ -153,7 +153,7 @@ Maintenant que vous êtes prêt à déployer, vous souhaitez vous assurer que vo
 - Conservez des groupes Yammer actifs pour vos champions.
 - Partagez des témoignages.
 - Hébergez régulièrement des événements d’engagement pour partager des articles ou introduire de nouvelles fonctionnalités.
-- Définissez des défis pour les personnes et exécutez des concurrences.
+- Définir des défis pour les personnes et exécuter des concurrences.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

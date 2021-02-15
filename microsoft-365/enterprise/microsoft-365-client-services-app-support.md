@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Dans cet article, recherchez des détails sur la prise en charge des applications clientes et de services Microsoft 365.
+description: Dans cet article, recherchez des détails sur la prise en charge du client et des services Microsoft 365.
 ms.openlocfilehash: 4e32e39281175ed66970a358ff632c2ddbb3ac1a
 ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
@@ -98,7 +98,7 @@ Pour le contenu géré par l’organisation, vous pouvez appliquer des stratégi
 - Fournir la configuration de l’application pour gérer le comportement et les paramètres de l’application
 - Limiter l’application gérée à une identité définie en désactivant les fonctionnalités multi-identité ou l’utilisation personnelle
 
-Pour plus d’informations sur la gestion des applications mobiles avec Microsoft Intune, voir [Qu’est-ce que la gestion des applications Microsoft Intune ?](/mem/intune/apps/app-management)
+Pour plus d’informations sur la gestion des applications mobiles avec Microsoft Intune, voir [Qu’est-ce que la](/mem/intune/apps/app-management) gestion des applications Microsoft Intune ?
 
 ### <a name="multi-factor-authentication"></a>Authentification multifacteur
 
@@ -114,7 +114,7 @@ Pour plus d’informations sur l’authentification multifacteur pour la prise e
 
 L' sign-on unique (SSO) ajoute sécurité et commodité lorsque vos utilisateurs se connectent aux applications dans Azure Active Directory. Avec l' sign-on unique, les utilisateurs se connectent une fois avec un compte pour accéder aux appareils joints au domaine AD DS (Active Directory Domain Services) locaux, aux applications SaaS (Software as a Service) et aux applications web de votre organisation.
 
-Pour plus d’informations sur l' sign-on unique pour la prise en charge des applications client et de services, voir Prise en charge des applications [clientes Microsoft 365 : Sign-on unique](microsoft-365-client-support-single-sign-on.md).
+Pour plus d’informations sur l' sign-on unique pour la prise en charge des applications client et de services, voir Prise en charge de l’application [cliente Microsoft 365 : Sign-on unique](microsoft-365-client-support-single-sign-on.md).
 
 ## <a name="services-support"></a>Prise en charge des services
 

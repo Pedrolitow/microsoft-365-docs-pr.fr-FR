@@ -23,7 +23,7 @@ Vous pouvez gérer les paramètres d’autorisations de rubrique dans le [Centre
 
 Avec les paramètres d’autorisations de rubrique, vous pouvez choisir :
 
-- Les utilisateurs qui peuvent créer et modifier des rubriques : créez des rubriques qui n’ont pas été trouvées lors de la découverte ou modifiez les détails d’une rubrique existante.
+- Les utilisateurs qui peuvent créer et modifier des rubriques : Créez des rubriques qui n’ont pas été trouvées lors de la découverte ou modifiez les détails d’une rubrique existante.
 - Les utilisateurs qui peuvent gérer les rubriques : accéder au centre de gestion des rubriques et consulter les commentaires sur les sujets, ainsi que déplacer des rubriques tout au long du cycle de vie.
 
 ## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :
