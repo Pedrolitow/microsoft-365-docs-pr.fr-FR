@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
-description: 'Supprimer une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur. '
+description: 'Supprimez la licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur. '
 ms.openlocfilehash: 11d5185cc3f79899a737ddccc0a93160acb380bc
 ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
@@ -38,14 +38,14 @@ ms.locfileid: "49698302"
 
 ::: moniker-end
 
-En règle générale, les boîtes aux lettres partagées ne nécessitent pas de licence. Suivez ces instructions pour supprimer une licence d’une boîte aux lettres partagée afin de pouvoir l’attribuer à un utilisateur ou renvoyer la licence afin de ne pas payer une licence dont vous n’avez pas besoin.
+Les boîtes aux lettres partagées ne nécessitent généralement pas de licence. Suivez ces instructions pour supprimer une licence d’une boîte aux lettres partagée afin de pouvoir l’attribuer à un utilisateur ou renvoyer la licence afin de ne pas payer pour une licence dont vous n’avez pas besoin.
 
 > [!NOTE]
-> Une licence est requise dans les scénarios suivants :
-> 1. La boîte aux lettres partagée dispose de plus de 50 Go d’espace de stockage.
-> 2. La boîte aux lettres partagée utilise l’archivage inaltérable.
-> 3. La boîte aux lettres partagée est placée en conservation pour litige.
-> 4. La boîte aux lettres partagée a une licence Microsoft Defender affectée.
+> Une licence est requise dans les scénarios suivants :
+> 1. La boîte aux lettres partagée utilise plus de 50 Go de stockage.
+> 2. La boîte aux lettres partagée utilise l’archivage sur place.
+> 3. La boîte aux lettres partagée est placée en attente pour litige.
+> 4. Une licence Microsoft Defender est attribuée à la boîte aux lettres partagée.
 
   
 ## <a name="remove-the-license"></a>Supprimer la licence
@@ -55,17 +55,17 @@ En règle générale, les boîtes aux lettres partagées ne nécessitent pas de 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
    > [!NOTE]
-   > Vous devez supprimer la licence de la page utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page de boîte aux lettres partagée car les licences sont des paramètres utilisateur. 
+   > Vous devez supprimer la licence de la page Utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page de boîte aux lettres partagée, car les licences sont des paramètres utilisateur. 
   
 2. Sélectionnez la boîte aux lettres partagée.
 
-3. Dans l’onglet **licences et applications** , développez **licences** et désactivez la case à cocher correspondant à la licence que vous souhaitez supprimer.
+3. Un des **onglets Licences et** applications, développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
 
 4. Sélectionnez **Enregistrer les modifications**.
 
-5. Lorsque vous revenez à la page **utilisateurs actifs** , l’état de la boîte aux lettres partagée est sans **licence**.
+5. Lorsque vous revenirez à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée sera **sans permis.**
 
-6. Vous payez toujours pour cette licence. Pour ne plus payer, [supprimez la licence de votre abonnement](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement.](../../commerce/licenses/remove-licenses-from-subscription.md)
 
 ::: moniker-end
 
@@ -74,17 +74,17 @@ En règle générale, les boîtes aux lettres partagées ne nécessitent pas de 
  1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
     > [!NOTE]
-    > Vous devez supprimer la licence de la page utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page de boîte aux lettres partagée car les licences sont des paramètres utilisateur.
+    > Vous devez supprimer la licence de la page Utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page de boîte aux lettres partagée, car les licences sont des paramètres utilisateur.
 
-2. Sélectionnez la boîte aux lettres partagée, puis cliquez sur **modifier** en regard de **licences de produit**.
+2. Sélectionnez la boîte aux lettres partagée, puis **sélectionnez Modifier** en plus des **licences de produit.**
 
-3. Sur la page **licences de produits** , définissez le bouton bascule sur **désactivé** pour la licence que vous souhaitez supprimer.
+3. Dans la page **Licences de produits,** définissez le basculement sur **« Off** » pour la licence que vous souhaitez supprimer.
 
 4. Sélectionnez **Enregistrer**.
 
-5. Lorsque vous revenez à la page **utilisateurs actifs** , l’état de la boîte aux lettres partagée est sans **licence**.
+5. Lorsque vous revenirez à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée sera **sans permis.**
 
-6. Vous payez toujours pour cette licence. Pour ne plus payer, [supprimez la licence de votre abonnement](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement.](../../commerce/licenses/remove-licenses-from-subscription.md)
 
 ::: moniker-end
 
@@ -93,17 +93,17 @@ En règle générale, les boîtes aux lettres partagées ne nécessitent pas de 
  1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
     > [!NOTE]
-    > Vous devez supprimer la licence de la page utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page de boîte aux lettres partagée car les licences sont des paramètres utilisateur.
+    > Vous devez supprimer la licence de la page Utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page de boîte aux lettres partagée, car les licences sont des paramètres utilisateur.
 
-2. Sélectionnez la boîte aux lettres partagée, puis cliquez sur **modifier** en regard de **licences de produit**.
+2. Sélectionnez la boîte aux lettres partagée, puis **sélectionnez Modifier** en plus des **licences de produit.**
 
-3. Sur la page **licences de produits** , définissez le bouton bascule sur **désactivé** pour la licence que vous souhaitez supprimer.
+3. Dans la page **Licences de produits,** définissez le basculement sur **« Off** » pour la licence que vous souhaitez supprimer.
 
 4. Sélectionnez **Enregistrer**.
 
-5. Lorsque vous revenez à la page **utilisateurs actifs** , l’état de la boîte aux lettres partagée est sans **licence**.
+5. Lorsque vous revenirez à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée sera **sans permis.**
 
-6. Vous payez toujours pour cette licence. Pour ne plus payer, [supprimez la licence de votre abonnement](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement.](../../commerce/licenses/remove-licenses-from-subscription.md)
 
 ::: moniker-end 
 

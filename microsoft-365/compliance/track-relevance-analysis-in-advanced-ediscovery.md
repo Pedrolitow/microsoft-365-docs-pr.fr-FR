@@ -1,5 +1,5 @@
 ---
-title: Suivi de l’analyse de pertinence dans Advanced eDiscovery
+title: Suivre l’analyse de pertinence dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
-description: Découvrez comment afficher et interpréter la pertinence de l’état de formation et les résultats des problèmes de cas dans Advanced eDiscovery.
+description: Découvrez comment afficher et interpréter l’état et les résultats de l’entraînement Pertinence pour les problèmes de cas dans Advanced eDiscovery.
 ms.openlocfilehash: 224337969b5e662d45c5b804fa5a0ee045f4fb84
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -24,146 +24,146 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49769179"
 ---
-# <a name="track-relevance-analysis-in-advanced-ediscovery"></a>Suivi de l’analyse de pertinence dans Advanced eDiscovery
+# <a name="track-relevance-analysis-in-advanced-ediscovery"></a>Suivre l’analyse de pertinence dans Advanced eDiscovery
   
-Dans Advanced eDiscovery, l’onglet suivi de pertinence affiche la validité calculée de la formation à la pertinence effectuée dans l’onglet balise et indique l’étape suivante à effectuer dans le processus de formation itérative en matière de pertinence. 
+Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité calculée de la formation Pertinence effectuée dans l’onglet Balise et indique l’étape suivante à effectuer dans le processus de formation itérative en Pertinence. 
   
-## <a name="tracking-relevance-training-status"></a>Suivi de l’état de formation à la pertinence
+## <a name="tracking-relevance-training-status"></a>Suivi de l’état de l’entraînement Pertinence
 
-1. Consultez les détails suivants dans le suivi de pertinence pour les problèmes de cas, comme indiqué dans l’exemple suivant d’une boîte de dialogue **nom du problème** ci-dessous.
+1. Consultez les détails suivants dans suivi de pertinence pour les problèmes de cas, comme illustré dans l’exemple suivant d’une boîte de dialogue Nom **du** problème ci-dessous.
 
-   - **Évaluation**: cet indicateur de progression indique dans quelle mesure la formation pertinente effectuée à ce stade a atteint la cible de l’évaluation en termes de marge d’erreur. La richesse des résultats d’apprentissage de pertinence est également affichée.
+   - **Évaluation**: cet indicateur de progression indique dans quelle mesure l’entraînement Pertinence effectué à ce stade a atteint l’objectif d’évaluation en termes de marge d’erreur. La richesse des résultats de l’entraînement Pertinence s’affiche également.
 
-   - **Formation**: cet indicateur de progression codé en couleur et le Conseil d’outils indiquent la pertinence des résultats de formation pertinents et une balance numérique illustrant le nombre d’exemples d’apprentissage de pertinence marqués pour chaque problème. L’expert surveille la progression du processus de formation à la pertinence itératif. 
+   - **Formation**: cet indicateur de progression et cette info-conseil codés en couleur indiquent la stabilité des résultats de l’entraînement Pertinence et une échelle numérique indiquant le nombre d’exemples d’entraînement Pertinence marqués pour chaque problème. L’expert surveille la progression du processus itératif de formation Pertinence. 
   
-   - **Calcul par lot**: cet indicateur de progression fournit des informations sur la fin du calcul du lot.
+   - **Calcul par lot**: cet indicateur de progression fournit des informations sur la fin du calcul par lots.
   
    - **Étape suivante**: affiche la recommandation pour l’étape suivante à effectuer. 
   
-    Dans l’exemple, une évaluation réussie pour un problème est illustrée par l’indicateur de progression des couleurs terminées et la coche. Le marquage est en cours, mais le cas est toujours considéré comme instable (l’état de stabilité apparaît également dans une info-bulle). La recommandation suivante est la « formation ». 
+    Dans l’exemple, une évaluation réussie d’un problème est affichée, indiquée par l’indicateur de progression de couleur terminé et la coche. Le marquage est en cours, mais le cas est toujours considéré comme instable (état de stabilité également indiqué dans une info-conseil). La recommandation de l’étape suivante est « Formation ». 
   
     ![Formation de suivi de pertinence étape 1](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
-    L’affichage développé affiche des informations et des options supplémentaires. La marge d’erreur actuelle affichée est la marge d’erreur du rappel dans l’état actuel de l’évaluation, étant donné les fichiers d’évaluation existants (déjà balisés).
+    La vue étendue affiche des informations et des options supplémentaires. La marge d’erreur actuelle affichée est la marge d’erreur du rappel dans l’état actuel de l’évaluation, étant donné les fichiers d’évaluation existants (déjà marqués).
   
     > [!NOTE]
-    >  La phase d’évaluation peut être ignorée en désactivant la case à cocher **évaluation** par problème, puis pour « tous les problèmes ». Toutefois, il n’y aura pas de statistiques pour ce problème. > la désactivation de la case à cocher **évaluation** ne peut être effectuée qu’avant l’évaluation. Dans le cas où plusieurs problèmes existent, l’évaluation est ignorée uniquement si la case à cocher est désactivée pour chaque problème. 
+    >  L’étape d’évaluation peut  être contourné en effanant la case à cocher Évaluation par problème, puis pour « tous les problèmes ». Toutefois, il n’y aura donc pas de statistiques pour ce problème. > la case à cocher **d’évaluation** peut uniquement être effectuée avant l’évaluation. Lorsque plusieurs problèmes existent dans un cas, l’évaluation est contourné uniquement si la case à cocher est effacée pour chaque problème 
   
-    Lorsque l’évaluation n’est pas effectuée avec le premier ensemble de fichiers, l’évaluation peut être la prochaine étape de marquage de fichiers supplémentaires.
+    Lorsque l’évaluation n’est pas terminée avec le premier exemple de fichiers, l’évaluation peut être l’étape suivante pour baliser d’autres fichiers.
   
-    Dans  \> le **suivi** de pertinence, l’indicateur de progression de formation et le Conseil d’outils indiquent le nombre estimé d’échantillons supplémentaires nécessaires pour atteindre la stabilité. Cette estimation fournit une indication pour la formation supplémentaire requise.
+    Dans **la piste de pertinence,** l’indicateur de progression de la formation et l’info-conseil indiquent le nombre estimé d’échantillons supplémentaires nécessaires pour atteindre la \> stabilité. Cette estimation fournit des instructions pour la formation supplémentaire nécessaire.
   
     ![Formation de suivi de pertinence](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
-2. Lorsque vous avez fini d’étiqueter et si vous devez poursuivre la formation, cliquez sur **formation**. Un autre exemple de jeu de fichiers est généré à partir du jeu de fichiers chargé pour une formation supplémentaire. Vous revenez ensuite à l’onglet balise pour marquer et former davantage de fichiers.
+2. Lorsque vous avez terminé le marquage et si vous avez besoin de continuer la formation, cliquez sur **Formation.** Un autre exemple de jeu de fichiers est généré à partir du jeu de fichiers chargé pour une formation supplémentaire. Vous êtes ensuite renvoyé à l’onglet Balise pour baliser et former d’autres fichiers.
 
 ### <a name="reaching-stable-training-levels"></a>Atteindre des niveaux de formation stables
 
-Une fois que les fichiers d’évaluation ont atteint un niveau de formation stable, Advanced eDiscovery est prêt pour le calcul par lot.
+Une fois que les fichiers d’évaluation ont atteint un niveau stable de formation, Advanced eDiscovery est prêt pour le calcul par lots.
   
 > [!NOTE]
-> En règle générale, après trois exemples de formation stables, l’étape suivante est « calcul par lot ». Il peut y avoir des exceptions, par exemple, lorsque des modifications ont été apportées au balisage des fichiers provenant d’exemples précédents ou lors de l’ajout de fichiers Seed. 
+> En règle générale, après trois exemples de formation stables, l’étape suivante est « Calcul par lots ». Il peut y avoir des exceptions, par exemple, lorsque des modifications ont été apportées au marquage des fichiers à partir d’exemples précédents ou lorsque des fichiers d’amorçage ont été ajoutés. 
   
-### <a name="performing-batch-calculation"></a>Exécution du calcul par lot
+### <a name="performing-batch-calculation"></a>Effectuer le calcul par lots
 
-Le calcul du lot est exécuté en tant que prochaine étape une fois la formation terminée (lorsqu’un état de formation stable est affiché dans la barre de progression, un état de coche et de stabilité dans le Conseil d’outils). Le calcul par lot applique les connaissances acquises lors de la formation à la pertinence à l’ensemble du remplissage du fichier, afin d’évaluer la pertinence des fichiers et d’affecter des scores de pertinence.
+Le calcul par lot est exécuté en tant qu’étape suivante une fois la formation terminée (lorsqu’un état stable de formation est affiché par la barre de progression, une coche et un état stable dans l’info-conseil).) Le calcul par lots applique les connaissances acquises lors de l’entraînement Pertinence à l’ensemble de la population de fichiers, afin d’évaluer la pertinence des fichiers et d’affecter des scores de pertinence.
   
-Lorsqu’il y a plusieurs problèmes, le calcul du lot est effectué par problème. Pendant le calcul du lot, la progression est surveillée lors du traitement de tous les fichiers. 
+Lorsqu’il y a plusieurs problèmes, le calcul par lot est effectué par problème. Pendant le calcul par lots, l’avancement est surveillé lors du traitement de tous les fichiers. 
   
-Ici, l’étape suivante recommandée est « None », ce qui indique qu’aucune formation de pertinence itérative supplémentaire n’est requise à ce stade. La phase suivante est l' **onglet \> décider** de la pertinence. 
+Ici, l’étape suivante recommandée est « Aucun », ce qui indique qu’aucune formation itérative supplémentaire sur la pertinence n’est requise à ce stade. La phase suivante est **l’onglet Déterminer \> la** pertinence. 
   
-Si vous souhaitez importer de nouveaux fichiers après le calcul par lot, l’administrateur peut ajouter les fichiers importés à une nouvelle charge.
+Si vous souhaitez importer de nouveaux fichiers après le calcul par lots, l’administrateur peut ajouter les fichiers importés à un nouveau chargement.
   
 > [!NOTE]
-> Si vous cliquez sur **Annuler** pendant le calcul du lot, le processus enregistre ce qui a déjà été exécuté. Si vous réexécutez le calcul du lot, le processus se poursuit depuis le dernier point exécuté. 
+> Si vous cliquez sur **Annuler pendant** le calcul par lots, le processus enregistre ce qui a déjà été exécuté. Si vous exécutez à nouveau le calcul par lots, le processus se poursuit à partir du dernier point exécuté. 
   
-### <a name="assessing-tagging-consistency"></a>Évaluation de la cohérence des marquages
+### <a name="assessing-tagging-consistency"></a>Évaluation de la cohérence du marquage
 
-S’il existe des incohérences dans le balisage de fichier, cela peut avoir une incidence sur l’analyse. Le processus avancé de cohérence des balises eDiscovery peut être utilisé lorsque les résultats ne sont pas optimaux ou si la cohérence est incertaine. Une liste de fichiers susceptibles d’être balisés de manière incohérente est renvoyée et peuvent être révisées et remarquées, le cas échéant.
+S’il existe des incohérences dans le marquage de fichiers, cela peut affecter l’analyse. Le processus de cohérence de marquage Advanced eDiscovery peut être utilisé lorsque les résultats ne sont pas optimaux ou si la cohérence est en doute. Une liste des fichiers marqués incohérents possibles est renvoyée, et ils peuvent être révisés et retardés, si nécessaire.
   
 > [!NOTE]
-> Après **l’évaluation** de sept ou plusieurs arrondis de formation, la cohérence du marquage peut être affichée dans la formation sur \> **le suivi** des \>  \> **résultats détaillés** \> . Cette révision est réalisée pour un problème à la fois.
+> Après sept séries d’entraînements ou plus après  l’évaluation, la cohérence du marquage peut être vue dans la progression de formation détaillée des résultats du suivi de \>  \>  \>  \> **pertinence.** Cette révision est effectuée pour un problème à la fois.
   
-1. Dans **\> le suivi de pertinence**, développez la ligne d’un problème.
+1. Dans **la piste de \> pertinence,** développez la ligne d’un problème.
   
-2. À droite de l' **étape suivante**, cliquez sur **modifier**.
+2. À droite de **l’étape suivante,** cliquez sur **Modifier.**
   
-3. Sélectionnez **incohérences de balise** comme **étape suivante** , après sept exemples de formation, puis cliquez sur **OK**.
+3. Sélectionnez **incohérences de balise comme** **option** de l’étape suivante, après sept exemples de formation et cliquez sur **OK**.
   
-4. Sélectionnez **incohérences de balise**. L’onglet **balise** s’ouvre et affiche la liste des incohérences à marquer si nécessaire.
+4. Sélectionner **les incohérences de balise**. **L’onglet** Balise s’ouvre et affiche une liste des incohérences à retager si nécessaire.
   
-5. Cliquez sur **calculer** pour envoyer les modifications. L’étape suivante, après le marquage des incohérences, est « formation ». 
+5. Cliquez **sur Calculer** pour envoyer les modifications. L’étape suivante après le marquage des incohérences est « Formation ». 
   
 ## <a name="viewing-and-using-relevance-results"></a>Affichage et utilisation des résultats de pertinence
 
-Dans l' **onglet \> suivi de pertinence** , développez la ligne d’un problème, puis en regard de **résultats détaillés**, cliquez sur **Afficher**. Les volets de résultats détaillés sont affichés, comme illustré ci-dessous.
+Dans **l’onglet Suivi de \>** pertinence, développez la ligne d’un problème, puis en regard des résultats détaillés, cliquez sur **Afficher.** Les volets de résultats détaillés sont affichés, comme indiqué et décrit ci-dessous.
   
 ![Résultats détaillés de la formation de pertinence](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
-### <a name="tagging-summary"></a>Synthèse des marquages
+### <a name="tagging-summary"></a>Résumé du marquage
 
- Dans l’exemple ci-dessous, le **Résumé de marquage** affiche les totaux pour chaque processus d’évaluation, de formation et de marquage de fichier de rattrapage.
+ Dans l’exemple ci-dessous, **le** résumé de marquage affiche les totaux de chacun des processus de marquage des fichiers d’évaluation, de formation et de rattrapage.
   
 ![Résumé du marquage du suivi de pertinence](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
 ### <a name="keywords"></a>Mots clés
 
-Un mot clé est une chaîne, un mot, une phrase ou une séquence de mots unique identifiée par Advanced eDiscovery comme un indicateur significatif de la pertinence d’un fichier. Le mot clé de liste de colonnes « include » et les pondérations dans les fichiers marqués comme pertinents et les colonnes « Exclude » répertorient les mots clés et les pondérations dans les fichiers marqués comme non pertinents.
+Un mot clé est une chaîne, un mot, une expression ou une séquence unique de mots dans un fichier identifié par Advanced eDiscovery comme indicateur significatif de la pertinence d’un fichier. Les colonnes « Inclure » répertorient les mots clés et les poids dans les fichiers marqués comme pertinents, et les colonnes « Exclure » répertorient les mots clés et les pondérations dans les fichiers marqués comme non pertinents.
   
-Advanced eDiscovery affecte des valeurs de pondération de mots clés négatives ou positives. Plus le poids est élevé, plus le score de pertinence d’un fichier dans lequel apparaît le mot clé est élevé pendant le calcul du lot.
+Advanced eDiscovery attribue des valeurs de poids de mots clés négatives ou positives. Plus le poids est élevé, plus la probabilité qu’un fichier dans lequel le mot clé apparaît soit affecté d’un score de pertinence plus élevé lors du calcul par lot est élevée.
   
-La liste de mots-clés eDiscovery avancée peut être utilisée pour compléter une liste créée par un expert ou comme un contrôle de validité indirect à tout moment du processus de révision de fichier.
+La liste advanced eDiscovery de mots clés peut être utilisée pour compléter une liste conçue par un expert ou comme une vérification de l’insérezation indirecte à tout moment dans le processus de révision de fichier.
   
 ### <a name="training-progress"></a>Progression de la formation
 
-Le volet progression de la **formation** inclut un graphique de progression de formation et un affichage d’indicateur de qualité, comme illustré dans l’exemple ci-dessous.
+Le **volet Progression de** l’entraînement inclut un graphique de progression de la formation et un indicateur de qualité, comme illustré dans l’exemple ci-dessous.
   
 ![Avancement de la formation de suivi de pertinence](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
-**Indicateur de qualité de formation**: affiche l’évaluation de la cohérence des balises comme suit :
+**Indicateur de qualité de formation**: affiche l’évaluation de la cohérence du marquage comme suit :
   
-- **Approprié**: les fichiers sont balisés de manière cohérente. (Voyant vert affiché)
+- **Bon**: les fichiers sont balisé de manière cohérente. (Lumière verte affichée)
   
-- **Moyen**: certains fichiers peuvent être balisés de manière incohérente. (Jaune clair affiché)
+- **Moyen**: certains fichiers peuvent être marqués de manière incohérente. (Lumière jaune affichée)
 
-- **Avertissement**: de nombreux fichiers peuvent être balisés de manière incohérente. (Lumière rouge affichée)
+- **Avertissement**: de nombreux fichiers peuvent être marqués de manière incohérente. (Lumière rouge affichée)
 
-**Graphique de progression de formation**: indique le degré de stabilité de la formation à la pertinence après de nombreux cycles de formation pertinents par rapport à la valeur de la mesure F. À mesure que nous passons de la gauche vers la droite sur le graphique, l’intervalle de confiance réduit et est utilisé, ainsi que la mesure F, par rapport à l’intérêt eDiscovery avancé afin de déterminer la stabilité lorsque les résultats d’apprentissage pertinents sont optimisés.
+**Graphique de progression de l’entraînement**: indique le degré de stabilité de l’entraînement Pertinence après de nombreux cycles d’entraînement Pertinence par rapport à la valeur de mesure F. À mesure que nous allons de gauche à droite sur le graphique, l’intervalle de confiance est réduit et utilisé, avec la mesure F, par Advanced eDiscovery Relevance pour déterminer la stabilité lorsque les résultats de l’entraînement Pertinence sont optimisés.
   
 > [!NOTE]
-> La pertinence utilise F2, une mesure F-Measure où le rappel reçoit deux fois plus de poids que la précision. Pour les cas de grande richesse (plus de 25%), la pertinence utilise F1 (ratio 1:1). Le rapport de mesure F peut être configuré dans  \> **Paramètres avancés** de configuration de pertinence.
+> La pertinence utilise F2, une mesure F dans laquelle le rappel reçoit deux fois plus de poids que la précision. Pour les cas avec une richesse élevée (plus de 25 %) La pertinence utilise F1 (rapport 1:1). Le rapport de mesure F peut être configuré dans les **paramètres** avancés d’installation \> **de pertinence.**
   
-### <a name="batch-calculation-results"></a>Résultats du calcul par lots
+### <a name="batch-calculation-results"></a>Résultats de calcul par lot
 
-Le volet **résultats du calcul par lots** inclut le nombre de fichiers dont la pertinence a été évaluée, comme suit : 
+Le **volet Résultats du calcul batch** inclut le nombre de fichiers qui ont été marqués pour Pertinence, comme suit : 
   
 - **Success**
   
-- **Empty**: ne contient pas de texte, par exemple, uniquement des espaces/tabulations
+- **Vide**: ne contient pas de texte, par exemple, uniquement les espaces/onglets
   
-- **Échec**: en raison d’une taille excessive ou n’a pas pu être lu
+- **Échec :** en raison d’une taille excessive ou de l’échec de lecture
   
-- **Ignoré**: en raison d’une taille excessive
+- **Ignoré :** en raison d’une taille excessive
   
-- **Nebulous**: contient un texte inutile ou aucune fonctionnalité pertinente pour le problème
+- **Nebulous**: contient du texte sans signification ou aucune fonctionnalité pertinente au problème
   
 > [!NOTE]
-> Empty, failed, ignored ou nebulous recevront un score de pertinence de-1.
+> Empty, Failed, Ignored ou Nebulous reçoit un score de pertinence de -1.
   
 ### <a name="training-statistics"></a>Statistiques de formation
 
-Le volet **statistiques de formation** affiche les statistiques et les graphiques basés sur les résultats de la formation avancée eDiscovery. 
+Le **volet Statistiques** de formation affiche des statistiques et des graphiques basés sur les résultats de l’entraînement Pertinence eDiscovery avancée. 
   
 ![Statistiques de la formation de suivi de pertinence](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
-Cet affichage montre les éléments suivants :
+Cet affichage présente les exemples suivants :
   
-- **Review-ratio de rappel**: comparaison des résultats selon les scores de pertinence dans une révision hypothétique. Le rappel est estimé en fonction de la définition de la taille de l’ensemble de révision.
+- **Taux de révision/rappel :** comparaison des résultats en fonction des scores de pertinence dans une révision hypothétiquement linéaire. Le rappel est estimé en raison de la taille du jeu à réviser.
   
-- **Paramètres**: statistiques calculées cumulatives relatives au jeu de révision en relation avec le remplissage du fichier pour l’ensemble du cas.
+- **Paramètres**: statistiques calculées cumulées relatives au jeu à réviser par rapport à la population de fichiers pour l’ensemble du cas.
   
-- **Révision**: pourcentage de fichiers à vérifier en fonction de ce seuil de troncature.
+- **Révision**: Pourcentage de fichiers à réviser en fonction de ce cutoff.
   
-- **Rappel**: pourcentage de fichiers pertinents dans l’ensemble de révision. 
+- **Rappel**: pourcentage de fichiers pertinents dans le jeu à réviser. 
   
-- **Répartition par score de pertinence**: les fichiers dans l’affichage gris foncé vers la gauche sont en dessous du score de coupure. Une info-bulle affiche le score de pertinence et le pourcentage de fichiers correspondant dans le jeu de fichiers de révision en relation avec le nombre total de fichiers.
+- **Répartition par score de pertinence**: les fichiers dans l’affichage gris foncé à gauche sont inférieurs au score de seuil. Une info-conseil affiche le score de pertinence et le pourcentage connexe de fichiers dans le jeu de fichiers de révision par rapport au nombre total de fichiers.

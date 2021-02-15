@@ -55,7 +55,7 @@ La première étape consiste à inscrire une nouvelle application dans Azure Act
 
 Pour obtenir des instructions détaillées, voir [Créer une application dans Azure Active Directory.](deploy-twitter-connector.md#step-1-create-an-app-in-azure-active-directory)
 
-Au terme de cette étape (en suivant les instructions pas à pas), vous enregistrez les informations suivantes dans un fichier texte. Ces valeurs seront utilisées dans les étapes ultérieures du processus de déploiement.
+À la fin de cette étape (en suivant les instructions pas à pas), vous enregistrez les informations suivantes dans un fichier texte. Ces valeurs seront utilisées dans les étapes ultérieures du processus de déploiement.
 
 - ID d’application AAD
 
@@ -97,7 +97,7 @@ Pour obtenir des instructions détaillées, voir [Créer l’application Twitter
 
 - Jeton d’accès Twitter
 
-- Secret du jeton d’accès Twitter
+- Secret de jeton d’accès Twitter
 
 ## <a name="step-4-configure-the-twitter-connector-app"></a>Étape 4 : Configurer l’application connecteur Twitter
 
@@ -113,7 +113,7 @@ Au cours de cette étape (en suivant les instructions pas à pas), vous fournire
 
 - Jeton d’accès Twitter (obtenu à l’étape 3)
 
-- Secret de jeton d’accès Twitter (obtenu à l’étape 3)
+- Secret du jeton d’accès Twitter (obtenu à l’étape 3)
 
 - ID d’application Azure Active Directory (ID d’application AAD obtenu à l’étape 1)
 

@@ -1,5 +1,5 @@
 ---
-title: Options d’accès à la messagerie électronique à partir de votre appareil mobile
+title: Options d’accès à la messagerie à partir de votre appareil mobile
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -24,22 +24,22 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49760065"
 ---
-# <a name="options-for-accessing-email-from-your-mobile-device"></a>Options d’accès à la messagerie électronique à partir de votre appareil mobile
+# <a name="options-for-accessing-email-from-your-mobile-device"></a>Options d’accès à la messagerie à partir de votre appareil mobile
 
-Votre organisation configure les paramètres qui contrôlent les applications mobiles que vous pouvez utiliser pour accéder à votre compte professionnel pour la messagerie, le calendrier et les contacts.
+Votre organisation configure les paramètres qui contrôlent les applications mobiles que vous pouvez utiliser pour accéder à votre compte de travail pour la messagerie, le calendrier et les contacts.
 
-Les applications mobiles Outlook pour Android et Outlook pour iOS sont conçues pour votre courrier professionnel ou scolaire. Ces applications fournissent des fonctionnalités telles que la [boîte de réception prioritaire](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978), qui conserve des courriers électroniques importants à l’avant et au centre, et l' [Assistant Planification](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470), qui vous aide à trouver les heures de réunion qui travaillent avec des collègues et trouve simplement les salles de conférence disponibles.
+Les applications mobiles Outlook pour Android et Outlook pour iOS sont conçues pour votre messagerie scolaire ou scolaire. Ces applications fournissent des fonctionnalités telles que la boîte de réception [Focus,](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)qui conserve les messages électroniques importants au premier plan et au centre, et [Assistant Planification,](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470)qui vous aide à trouver des heures de réunion qui fonctionnent avec des collègues et trouve simplement des salles de conférence disponibles.
   
-## <a name="end-user-experience"></a>Expérience de l’utilisateur final
+## <a name="end-user-experience"></a>Expérience utilisateur final
 
 ### <a name="outlook-only"></a>Outlook uniquement
 
-Votre organisation exige que vous utilisiez les applications mobiles Outlook pour Android ou Outlook pour accéder à la messagerie électronique, au calendrier et aux contacts de l’entreprise. Vos données commenceront la synchronisation une fois que vous aurez téléchargé et installé Outlook pour Android ou Outlook pour iOS.
+Votre organisation exige que vous utilisez les applications mobiles Outlook pour Android ou Outlook pour iOS pour accéder à la messagerie électronique, au calendrier et aux contacts de l’entreprise. Vos données démarrent la synchronisation une fois que vous téléchargez et installez Outlook pour Android ou Outlook pour iOS.
 
 ![Exemple de courrier électronique pour utiliser Outlook pour synchroniser le courrier électronique](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
 
-Consultez [optimiser l’application mobile Outlook pour votre téléphone iOS ou Android](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) pour plus de fonctionnalités Outlook. Accédez au [Centre d’aide d’Outlook pour iOS et Android](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) si vous rencontrez des problèmes.
+Pour plus [de fonctionnalités Outlook,](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) voir Optimiser l’application mobile Outlook pour votre téléphone iOS ou Android. Et go to [Outlook for iOS and Android Help Center](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) if you run into any issues.
 
-### <a name="any-email-app"></a>Toute application de messagerie
+### <a name="any-email-app"></a>N’importe quelle application de messagerie
 
-Votre organisation recommande d’utiliser l’application mobile Outlook pour Android ou iOS pour accéder à votre compte professionnel ou scolaire pour le courrier électronique, le calendrier et les contacts. Si vous n’effectuez aucune action dans les prochaines heures, votre courrier commencera automatiquement la synchronisation. Si vous choisissez d’utiliser l’application Outlook pour Android ou iOS mobile, vos données ne seront synchronisées qu’avec l’application mobile Outlook pour Android ou Outlook pour iOS. Si vous choisissez de continuer à utiliser l’application tierce, vos données commenceront à être synchronisées instantanément.
+Votre organisation recommande d’utiliser l’application mobile Outlook pour Android ou iOS pour accéder à votre compte scolaire ou scolaire pour la messagerie, le calendrier et les contacts. Si vous n’effectuez aucune action dans les prochaines heures, votre courrier électronique commencera automatiquement à se synchroniser. Si vous choisissez d’utiliser l’application mobile Outlook pour Android ou iOS, vos données ne seront synchronisées qu’avec l’application mobile Outlook pour Android ou Outlook pour iOS. Si vous choisissez de continuer à utiliser l’application tierce, vos données commenceront à se synchroniser instantanément.

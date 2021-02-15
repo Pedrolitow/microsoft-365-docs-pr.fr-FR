@@ -49,7 +49,7 @@ Pour les appareils Windows hybrides joints à Azure AD et dont l’entreprise es
   
 Pour tous les autres appareils, y compris les appareils Windows personnels inscrits dans Azure AD, l’utilisateur final doit effectuer ces étapes manuellement. Pour les appareils joints à Azure AD, les utilisateurs doivent avoir un compte d’administrateur local pour se désins inscrire, puis réenregistrer leurs appareils.
 
-Microsoft publiera des instructions sur la restauration de l’état de l’appareil. 
+Microsoft publiera des instructions pour la restauration de l’état de l’appareil. 
  
 **Comment savoir que tous mes appareils sont inscrits dans le cloud public ?**
 
@@ -63,9 +63,9 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 ## <a name="hybrid-azure-ad-join"></a>Jonction Azure AD Hybride
 
-### <a name="windows-down-level"></a>Windows au niveau inférieur
+### <a name="windows-down-level"></a>Windows de bas niveau
 
-Les appareils _Windows_ de niveau inférieur sont des appareils Windows qui exécutent actuellement des versions antérieures de Windows (par exemple, Windows 8.1 ou Windows 7) ou qui exécutent des versions de Windows Server antérieures à 2019 et 2016. Si ces appareils ont été enregistrés auparavant, vous devez les désins inscrire et les réins inscrire. 
+Les appareils _Windows_ de niveau inférieur sont des appareils Windows qui exécutent actuellement des versions antérieures de Windows (comme Windows 8.1 ou Windows 7) ou qui exécutent des versions de Windows Server antérieures à 2019 et 2016. Si ces appareils ont été enregistrés auparavant, vous devez les désins inscrire et les réins inscrire. 
 
 Pour déterminer si un appareil windows de bas niveau a été précédemment joint à Azure AD, utilisez la commande suivante sur l’appareil :
 
@@ -94,7 +94,7 @@ Uniquement pour les appareils qui indiquent que l’appareil est joint (en raiso
 "%programfiles%\Microsoft Workplace Join\autoworkplace /leave"
 ```
 
-La commande précédente ne doit être exécuté qu’une seule fois par utilisateur de domaine qui se connecté sur l’appareil windows de niveau inférieur. Cette commande doit être exécuté dans le contexte de la signature de l’utilisateur du domaine. 
+La commande précédente ne doit être exécuté qu’une seule fois par utilisateur de domaine se signant sur l’appareil windows de niveau inférieur. Cette commande doit être exécuté dans le contexte de la signature de l’utilisateur du domaine. 
 
 Une attention suffisante doit être prise pour ne pas exécuter cette commande lorsque l’utilisateur se signe par la suite. Lorsque la commande précédente s’exécute, elle effacera l’état joint de l’ordinateur hybride local joint à Azure AD pour l’utilisateur qui s’est inscrit. De plus, si l’ordinateur est toujours configuré pour être joint à Azure AD hybride dans le client, il tentera d’y participer lorsque l’utilisateur se joindra à nouveau.
 
@@ -102,7 +102,7 @@ Une attention suffisante doit être prise pour ne pas exécuter cette commande l
 
 #### <a name="unjoin"></a>Unjoin
 
-Pour déterminer si l’appareil Windows 10 a été précédemment joint à Azure AD, exécutez la commande suivante sur l’appareil :
+Pour déterminer si l’appareil Windows 10 était précédemment joint à Azure AD, exécutez la commande suivante sur l’appareil :
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
@@ -167,7 +167,7 @@ Si la sortie est « AzureAdJoined : NO », ignorez les instructions suivantes.
 
 Utilisateur : si l’appareil est joint à Azure AD, un utilisateur peut déjoinder l’appareil des paramètres. Vérifiez qu’il existe un compte d’administrateur local sur l’appareil avant de l’déjoindage de l’appareil d’Azure AD. Le compte d’administrateur local est requis pour se remettre à l’appareil.
 
-Administrateur : si l’administrateur de l’organisation souhaite déjoinder les appareils des utilisateurs joints à Azure AD, ils peuvent le faire en exécutant la commande suivante sur chacun des appareils à l’aide d’un mécanisme tel que la stratégie de groupe. L’administrateur doit vérifier qu’il existe un compte d’administrateur local sur l’appareil avant de l’déjoindage de l’appareil d’Azure AD. Le compte d’administrateur local est nécessaire pour se remettre à l’appareil.
+Administrateur : si l’administrateur de l’organisation souhaite déjoinder les appareils des utilisateurs joints à Azure AD, ils peuvent le faire en exécutant la commande suivante sur chacun des appareils à l’aide d’un mécanisme tel que la stratégie de groupe. L’administrateur doit vérifier qu’il existe un compte d’administrateur local sur l’appareil avant de l’avoir désjoindée d’Azure AD. Le compte d’administrateur local est nécessaire pour se remettre à l’appareil.
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /leave
@@ -188,7 +188,7 @@ Pour déterminer si l’appareil Windows 10 est inscrit sur Azure AD, exécutez 
 %SystemRoot%\system32\dsregcmd.exe /status
 ```
 
-Si l’appareil est enregistré dans Azure AD, vous verrez le résultat suivant :
+Si l’appareil est enregistré dans Azure AD, vous verrez la sortie suivante :
 
 ```console
 +----------------------------------------------------------------------+
@@ -199,7 +199,7 @@ Si l’appareil est enregistré dans Azure AD, vous verrez le résultat suivant 
           WamDefaultAuthority : organizations
 ```
 
-Pour supprimer le compte Azure AD existant enregistré sur l’appareil :
+Pour supprimer le compte Azure AD existant sur l’appareil :
 
 - Pour supprimer le compte Azure AD enregistré sur l’appareil, utilisez CleanupWPJ, un outil que vous pouvez télécharger à partir [ d’ici :CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
 
@@ -214,7 +214,7 @@ Pour désactiver les invites du Gestionnaire de comptes Web pour inscrire l’ap
 - Nom : BlockAADWorkplaceJoin
 - Données de valeur : 1
 
-La présence de cette valeur de Registre doit bloquer l’accès à l’espace de travail et empêcher les utilisateurs de voir des invites pour rejoindre l’appareil.
+La présence de cette valeur de Registre doit bloquer la jointage de l’espace de travail et empêcher les utilisateurs de voir des invites pour joindre l’appareil.
 
 ## <a name="android"></a>Android
 
@@ -230,15 +230,15 @@ Pour désins inscrire et réenregistrer l’appareil sur Android à l’aide de 
 
 1.  Ouvrez l’application Microsoft Authenticator et go to **Settings**.
 2.  Sélectionnez **Inscription de l’appareil.**
-3.  Désinsister l’appareil en sélectionnant **Unregister**.
+3.  Désinsinser l’appareil en sélectionnant **Désinsinsion**.
 4.  Pour **l’inscription de** l’appareil, ré-inscrivez l’appareil en tapant votre adresse e-mail, puis sélectionnez **Enregistrer.**
 
 Pour désins inscrire et réenregistrer un appareil Android avec la page Paramètres Android :
 
-1.  Ouvrez **Paramètres de l’appareil** et go to **Accounts**.
+1.  Ouvrez **Paramètres de l’appareil** et allez **à Comptes.**
 2.  Sélectionnez le compte de travail que vous souhaitez ré-inscrire et **sélectionnez Supprimer le compte.**
 3.  Une fois le compte supprimé, dans la **page** Comptes, sélectionnez Ajouter un **compte > compte de travail.**
-4.  Pour **Workplace Join,** tapez votre adresse e-mail et **sélectionnez Rejoindre** pour terminer l’inscription de l’appareil.
+4.  For **Workplace Join**, type your email address and select **Join** to complete registering the device.
 
 Pour désins inscrire et réenregistrer l’appareil sur Android à partir du portail d’entreprise :
 
@@ -247,7 +247,7 @@ Pour désins inscrire et réenregistrer l’appareil sur Android à partir du po
 3.  Dans le menu points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
 4.  Vous devez maintenant être déconnecté de l’application Portail d’entreprise. Sélectionnez **Se connectez** pour ré-inscrire l’appareil.
 
-Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact sur l’administration ou l’utilisation, examinez les informations sur Azure Active Directory (Azure AD) dans Des informations [Azure AD](ms-cloud-germany-transition-azure-ad.md)supplémentaires pour la migration à partir de Microsoft Cloud Deutschland .
+Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact sur l’administration ou l’utilisation, examinez les informations sur Azure Active Directory (Azure AD) dans Informations [Azure AD](ms-cloud-germany-transition-azure-ad.md)supplémentaires pour la migration à partir de Microsoft Cloud Deutschland .
 
 ## <a name="ios"></a>iOS
 
@@ -270,7 +270,7 @@ Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les compt
 
 Les utilisateurs peuvent se rendre sur des applications individuelles telles qu’Outlook, Teams et OneDrive, et supprimer des comptes de ces applications.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Mise en place :
 

@@ -38,7 +38,7 @@ Remplissez les conditions préalables suivantes avant de pouvoir configurer un c
 
     - [S’inscrire à un abonnement Azure gratuit d’un an](https://azure.microsoft.com/free)
 
-    - [S’inscrire à un abonnement Azure de paiement par abonnement](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
+    - [S’inscrire à un abonnement Azure paiement par abonnement](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
     > [L’abonnement Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) gratuit inclus dans votre abonnement Microsoft 365 ne prend pas en charge les connecteurs dans le Centre de sécurité & conformité.

@@ -1,5 +1,5 @@
 ---
-title: Configurer les paramètres de recherche et d’analyse-eDiscovery avancé
+title: Configurer les paramètres de recherche et d’analyse - Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Configurez des paramètres eDiscovery avancés qui s’appliquent à tous les jeux de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
+description: Configurez les paramètres Advanced eDiscovery qui s’appliquent à tous les ensembles de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
 ms.openlocfilehash: 11932d2172d797ae1913cf28e713d57805ace122
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "49751301"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurer les paramètres de recherche et d’analyse dans Advanced eDiscovery
 
-Vous pouvez configurer les paramètres de chaque cas de découverte électronique avancée pour contrôler les fonctionnalités suivantes.
+Vous pouvez configurer les paramètres de chaque cas Advanced eDiscovery pour contrôler les fonctionnalités suivantes.
 
 - Quasi-doublons et thread de courrier
 
@@ -44,53 +44,53 @@ Pour configurer les paramètres de recherche et d’analyse d’un cas :
 
 2. Sous l’onglet **Paramètres**, sous **Recherche et analyse**, cliquez sur **Sélectionner**.
 
-   La page Paramètres de l’incident s’affiche. Ces paramètres sont appliqués à tous les jeux de révision dans un cas.
+   La page des paramètres de cas s’affiche. Ces paramètres sont appliqués à tous les ensembles de révision dans un cas.
 
-   ![Configurer les paramètres d’analyse et de recherche pour un cas avancé eDiscovery](../media/AeDCaseSettings.png)
+   ![Configurer les paramètres d’analyse et de recherche pour un cas Advanced eDiscovery](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et thread de courrier
 
-Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des doublons et le Threading de messagerie. Pour plus d’informations, consultez la rubrique [near Detection Detection](near-duplicate-detection-in-advanced-ediscovery.md) and [email Threading](email-threading-in-advanced-ediscovery.md).
+Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des quasi-doublons et le thread de messagerie. Pour plus d’informations, voir Détection des [quasi-doublons et](near-duplicate-detection-in-advanced-ediscovery.md) [thread de messagerie.](email-threading-in-advanced-ediscovery.md)
 
-- **Presque en double/Threading de courrier électronique :** Lorsque ce paramètre est activé, la détection des doublons, la détection quasi des doublons et le Threading de messagerie sont inclus dans le flux de travail lorsque vous exécutez Analytics sur les données d’un jeu de révision.
+- **Quasi-doublons/thread de courrier électronique :** Lorsqu’il est allumé, la détection des doublons, la détection des quasi-doublons et le thread de messagerie électronique sont inclus dans le flux de travail lorsque vous exécutez des analyses sur les données dans un jeu à réviser.
 
-- **Seuil de similarité des documents et des messages électroniques :** Si le niveau de similarité de deux documents est supérieur au seuil, les deux documents sont placés dans le même ensemble presque en double.
+- **Seuil de similarité des documents et des e-mails :** Si le niveau de similarité de deux documents est supérieur au seuil, les deux documents sont placés dans le même jeu de quasi-doublons.
 
-- **Nombre minimal/maximum de mots :** Ces paramètres spécifient que les doublons et l’analyse de thread électronique sont effectués uniquement sur les documents qui contiennent au moins le nombre minimal de mots et le nombre maximal de mots.
+- **Nombre minimal/maximal de mots :** Ces paramètres spécifient que les quasi-doublons et l’analyse du thread de messagerie sont effectués uniquement sur les documents qui ont au moins le nombre minimal de mots et au plus le nombre maximal de mots.
 
 ## <a name="themes"></a>Thèmes
 
-Dans cette section, vous pouvez définir des paramètres pour les thèmes. Pour plus d’informations, consultez la rubrique [Themes](themes-in-advanced-ediscovery.md).
+Dans cette section, vous pouvez définir des paramètres pour les thèmes. Pour plus d’informations, voir [Thèmes.](themes-in-advanced-ediscovery.md)
 
-- **Thèmes :** Lorsque ce paramètre est activé, le clustering de thèmes est effectué dans le cadre du flux de travail lorsque vous exécutez Analytics sur les données d’un jeu de révision.
+- **Thèmes :** Lorsqu’il est allumé, le clustering de thèmes est effectué dans le cadre du flux de travail lorsque vous exécutez des analyses sur les données d’un jeu à réviser.
 
-- **Nombre maximal de thèmes :** Spécifie le nombre maximal de thèmes pouvant être générés lorsque vous exécutez Analytics sur les données d’un jeu de révision.
+- **Nombre maximal de thèmes :** Spécifie le nombre maximal de thèmes qui peuvent être générés lorsque vous exécutez des analyses sur les données d’un jeu à réviser.
 
-- **Inclure les numéros dans les thèmes :** Lorsque ce paramètre est activé, les numéros (qui identifient un thème) sont inclus lors de la génération de thèmes. 
+- **Inclure des nombres dans les thèmes :** Lorsqu’il est allumé, les nombres (qui identifient un thème) sont inclus lors de la génération de thèmes. 
 
-- **Ajuster le nombre maximal de thèmes de manière dynamique :** Dans certains cas, il se peut qu’il n’y ait pas assez de documents dans un ensemble de révision pour produire le nombre souhaité de thèmes. Lorsque ce paramètre est activé, Advanced eDiscovery ajuste le nombre maximal de thèmes dynamiquement, plutôt que d’essayer d’appliquer le nombre maximal de thèmes.
+- **Ajustez dynamiquement le nombre maximal de thèmes :** Dans certains cas, il peut y avoir un nombre insuffisant de documents dans un jeu à réviser pour produire le nombre de thèmes souhaité. Lorsque ce paramètre est activé, Advanced eDiscovery ajuste le nombre maximal de thèmes dynamiquement, plutôt que d’essayer d’appliquer le nombre maximal de thèmes.
 
 ## <a name="review-set-query"></a>Requête de jeu à réviser
 
-Si vous activez la case à cocher **créer automatiquement un pour vérifier les recherches enregistrées après analyse** , Advanced EDiscovery génère automatiquement la requête Set appelée **for Review.** 
+Si vous  sélectionnez créer automatiquement une recherche pour révision enregistrée après la case à cocher Analyse, Advanced eDiscovery crée automatiquement une requête de jeu de révision nommée **Pour révision.** 
 
-![La requête de révision générée automatiquement](../media/AeDForReviewQuery.png)
+![Requête for Review autogenerated](../media/AeDForReviewQuery.png)
 
-Cette requête filtre en fait des éléments dupliqués de l’ensemble de révision. Cela vous permet de passer en revue les éléments uniques dans l’ensemble de révision. Elle n’est créée que lorsque vous effectuez une analyse pour un jeu à réviser dans le cas. Pour plus d’informations sur la vérification des requêtes Set, voir [query the Data in a Review Set](review-set-search.md).
+Cette requête filtre essentiellement les éléments en double du jeu à réviser. Cela vous permet de passer en revue les éléments uniques du jeu à réviser. Elle n’est créée que lorsque vous effectuez une analyse pour un jeu à réviser dans le cas. Pour plus d’informations sur les requêtes de jeu à réviser, voir [Interroger les données dans un jeu à réviser.](review-set-search.md)
 
 ## <a name="ignore-text"></a>Ignorer le texte
 
-Il existe des situations dans lesquelles certains textes réduisent la qualité de l’analyse, tels que les clauses d’exclusion de responsabilité longues qui sont ajoutées aux messages électroniques quel que soit le contenu du courrier électronique. Si vous souhaitez ignorer un texte donné, vous pouvez l’exclure de l’analyse en spécifiant la chaîne de texte et la fonctionnalité d’analyse (Quasi-doublons, Thread de courrier, Thèmes et Pertinence) pour laquelle le texte doit être exclu. L’utilisation d’expressions régulières (RegEx) comme texte ignoré est également prise en charge. 
+Dans certains cas, certains textes diminuent la qualité de l’analyse, par exemple les clauses d’exclusion de responsabilité longues qui sont ajoutées aux messages électroniques, quel que soit le contenu de l’e-mail. Si vous souhaitez ignorer un texte donné, vous pouvez l’exclure de l’analyse en spécifiant la chaîne de texte et la fonctionnalité d’analyse (Quasi-doublons, Thread de courrier, Thèmes et Pertinence) pour laquelle le texte doit être exclu. L’utilisation d’expressions régulières (RegEx) en tant que texte ignoré est également prise en charge. 
 
 ## <a name="optical-character-recognition-ocr"></a>Reconnaissance optique des caractères
 
-Lorsque ce paramètre est activé, le traitement de la reconnaissance optique de caractères est exécuté sur les fichiers image. Le traitement de la reconnaissance optique de caractères est exécuté dans les situations suivantes :
+Lorsque ce paramètre est désactivé, le traitement ocr est exécuté sur les fichiers image. Le traitement ocr est exécuté dans les situations suivantes :
 
-- Lorsque des dépositaires et des [sources de données non privatives de cœur](non-custodial-data-sources.md) sont ajoutés à un cas. Le traitement de la reconnaissance optique de caractères est effectué pendant le processus d’indexation avancé. Cela signifie que le texte dans les fichiers image correspondant aux critères de recherche sera renvoyé dans une recherche de collection.
+- Lorsque des dépositaires et des sources de [données non privatives](non-custodial-data-sources.md) sont ajoutés à un cas. Le traitement ocr est effectué pendant le processus d’indexation avancée. Cela signifie que le texte des fichiers image qui correspond aux critères de recherche est renvoyé dans une recherche de collection.
 
-- Lorsque le contenu d’autres sources de données (qui ne sont pas associées à un dépositaire et ajouté à l’incident dans une source de données non-privatives de cœur) est ajouté à un jeu de révision.
+- Lorsque du contenu provenant d’autres sources de données (qui ne sont pas associés à un dépositaire et ajoutés au cas dans une source de données non liée à la conservation) est ajouté à un groupe de révision.
 
-Une fois les données ajoutées à un ensemble de révision, le texte de l’image peut être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. Pour plus d’informations, voir :
+Une fois les données ajoutées à un jeu à réviser, le texte de l’image peut être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu à réviser. Pour plus d’informations, voir :
 
 - [Indexation avancée des données des consignataires](indexing-custodian-data.md)
 

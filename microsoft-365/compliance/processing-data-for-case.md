@@ -1,5 +1,5 @@
 ---
-title: Utiliser des erreurs de traitement dans Advanced eDiscovery
+title: Travailler avec les erreurs de traitement dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -25,11 +25,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/05/2021
 ms.locfileid: "49751511"
 ---
-# <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Utiliser des erreurs de traitement dans Advanced eDiscovery
+# <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Travailler avec les erreurs de traitement dans Advanced eDiscovery
 
-Le *traitement* est le processus d’identification des fichiers, d’expansion des documents et pièces jointes incorporés, d’extraction de texte et de reconnaissance optique de caractères (OCR)) des fichiers image et de l’indexation ultérieure de ce contenu.  
+ Le traitement est le processus d’identification de fichiers, d’extension des documents et pièces jointes incorporés, d’extraction de texte et de reconnaissance optique de caractères (OCR) des fichiers image et de l’indexation ultérieure de ce contenu.  
 
-Lorsque vous ajoutez des dépositaires et des sources de données autres que des dépositaires à un cas sous l’onglet **sources** , tous les éléments partiellement indexés de Microsoft 365 sont traités afin de les rendre entièrement consultables. De même, lorsque le contenu est ajouté à un jeu de révision à partir des sources de données Microsoft 365 et non-Microsoft 365, ce contenu est également traité.
+Lorsque vous ajoutez des dépositaires et des sources de données non dépositaires à un cas sous l’onglet **Sources,** tous les éléments partiellement indexés de Microsoft 365 sont traitées pour les rendre entièrement utilisables dans une recherche. De même, lorsque du contenu est ajouté à un jeu à réviser à partir de sources de données Microsoft 365 et non-Microsoft 365, ce contenu est également traitée.
 
 L’onglet **Traitement** dans Advanced eDiscovery fournit un aperçu de l’état de l’indexation avancée pour différents scénarios de traitement.
 

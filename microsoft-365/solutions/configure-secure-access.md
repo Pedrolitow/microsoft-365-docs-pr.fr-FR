@@ -1,6 +1,6 @@
 ---
 title: Configurer un accès sécurisé aux services Microsoft 365
-description: Recherchez des instructions pour l’implémentation de l’authentification multifacteur, l’accès conditionnel et les stratégies associées pour trois niveaux de protection, sensibles et hautement sensibles.
+description: 'Trouvez des conseils normatifs pour l’implémentation de l’mf, de l’accès conditionnel et des stratégies associées pour trois niveaux de protection : base de référence, sensible, hautement sensible.'
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -21,4 +21,4 @@ ms.locfileid: "49771798"
 ---
 # <a name="configure-secure-access-to-microsoft-365-services"></a>Configurer un accès sécurisé aux services Microsoft 365
 
-Cette solution est basée sur la «[M365 Golden config](https://aka.ms/m365goldenconfig)» : instructions pour l’implémentation de l’authentification multifacteur, l’accès conditionnel et les stratégies associées pour trois niveaux de protection : planification, sensible et hautement sensible. 
+Cette solution est basée sur la « configuration de référence[M365](https://aka.ms/m365goldenconfig)» : conseils normatifs pour l’implémentation de l’mf, de l’accès conditionnel et des stratégies associées pour trois niveaux de protection : base de référence, sensible, hautement sensible. 

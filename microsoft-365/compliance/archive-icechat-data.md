@@ -35,11 +35,11 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. Une fois toutes les 24 heures, les messages de conversation de ICE Chat sont copiés sur votre site ICE Chat SFTP.
 
-3. Le connecteur DE conversation ICE que vous créez dans le Centre de conformité Microsoft 365 se connecte au site ICE Chat SFTP tous les jours et transfère les messages de conversation des 24 heures précédentes vers un emplacement de stockage Azure sécurisé dans microsoft cloud. Le connecteur convertit également le contenu d’une conversation en format de message électronique.
+3. Le connecteur de conversation ICE que vous créez dans le Centre de conformité Microsoft 365 se connecte au site ICE Chat SFTP tous les jours et transfère les messages de conversation des 24 heures précédentes vers un emplacement de stockage Azure sécurisé dans microsoft cloud. Le connecteur convertit également le contenu d’une conversation en format de message électronique.
 
 4. Le connecteur importe des éléments de message de conversation dans les boîtes aux lettres d’utilisateurs spécifiques. Un nouveau dossier nommé **ICE Chat** est créé dans les boîtes aux lettres utilisateur et les éléments de message de conversation sont importés dans ce dossier. Le connecteur utilise la valeur des propriétés *SenderEmail* et *RecipientEmail.* Chaque message de conversation contient ces propriétés, qui sont remplies avec l’adresse e-mail de l’expéditeur et chaque destinataire/participant du message de conversation.
 
-   Outre le mappage automatique des utilisateurs qui utilise les valeurs des *propriétés SenderEmail* et *RecipientEmail* (ce qui signifie que le connecteur importe un message de conversation dans la boîte aux lettres de l’expéditeur et les boîtes aux lettres de chaque destinataire), vous pouvez également définir un mappage utilisateur personnalisé en téléchargeant un fichier de mappage CSV. Ce fichier de mappage contient *l’ID* de conversation ICE et l’adresse de boîte aux lettres Microsoft 365 correspondante pour chaque utilisateur de votre organisation. Si vous activez le mappage automatique des utilisateurs et fournissez un fichier de mappage personnalisé, pour chaque élément de conversation, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas de compte d’utilisateur Microsoft 365 valide correspondant à l’ID de conversation ICE d’un utilisateur, le connecteur utilise les propriétés *SenderEmail* et *RecipientEmail* de l’élément de conversation pour importer l’élément dans les boîtes aux lettres des participants de la conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans les propriétés *SenderEmail* et *RecipientEmail,* l’élément n’est pas importé.
+   Outre le mappage automatique des utilisateurs qui utilise les valeurs des *propriétés SenderEmail* et *RecipientEmail* (ce qui signifie que le connecteur importe un message de conversation dans la boîte aux lettres de l’expéditeur et les boîtes aux lettres de chaque destinataire), vous pouvez également définir un mappage utilisateur personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage contient *l’ID* de conversation ICE et l’adresse de boîte aux lettres Microsoft 365 correspondante pour chaque utilisateur de votre organisation. Si vous activez le mappage automatique des utilisateurs et fournissez un fichier de mappage personnalisé, pour chaque élément de conversation, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas de compte d’utilisateur Microsoft 365 valide correspondant à l’ID de conversation ICE d’un utilisateur, le connecteur utilise les propriétés *SenderEmail* et *RecipientEmail* de l’élément de conversation pour importer l’élément dans les boîtes aux lettres des participants de la conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans les propriétés *SenderEmail* et *RecipientEmail,* l’élément n’est pas importé.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -61,7 +61,7 @@ La première étape consiste à obtenir une copie des clés publiques pour Le Sh
 
 2. Dans la page **Connecteurs de données** sous **ICE Chat,** cliquez sur **Afficher.**
 
-3. Dans la page **ICE Chat,** cliquez **sur Ajouter un connecteur.**
+3. Dans la page **CONVERSATION ICE,** cliquez sur **Ajouter un connecteur.**
 
 4. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
@@ -87,7 +87,7 @@ La dernière étape consiste à créer un connecteur ICE Chat dans le Centre de 
 
 2. Dans la page **Connecteurs de données** sous **ICE Chat,** cliquez sur **Afficher.**
 
-3. Dans la page **ICE Chat,** cliquez **sur Ajouter un connecteur.**
+3. Dans la page **CONVERSATION ICE,** cliquez sur **Ajouter un connecteur.**
 
 4. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 

@@ -1,5 +1,5 @@
 ---
-title: Statistiques de recherche dans la découverte électronique avancée
+title: Statistiques de recherche dans Advance eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Valider les résultats de la recherche en affichant les statistiques générées après l’exécution d’une recherche de collection dans Advanced eDiscovery.
+description: Validez vos résultats de recherche en visualxant les statistiques générées après avoir exécuté une recherche de collection dans Advanced eDiscovery.
 ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
@@ -24,55 +24,55 @@ ms.locfileid: "49750775"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>Statistiques de recherche dans Advanced eDiscovery
 
-Vous pouvez valider vos résultats de recherche en examinant les statistiques de vos résultats afin de vous assurer qu’ils correspondent à vos attentes. Une fois la recherche terminée, les statistiques de haut niveau apparaissent dans la fenêtre d’affichage des détails de la recherche :
+Une façon de valider vos résultats de recherche consiste à examiner les statistiques relatives à vos résultats pour vous assurer qu’ils correspondent à vos attentes. Une fois la recherche terminée, des statistiques de haut niveau sont affichées dans le volant des détails de la recherche :
 
 - Nombre et volume d’éléments récupérés par la recherche
 
-- Nombre et volume d’éléments partiellement indexés ou non indexés qui ont été trouvés dans les emplacements de recherche
+- Nombre et volume d’éléments partiellement indexés ou non indexés trouvés dans les emplacements de recherche
 
 - Nombre de boîtes aux lettres et d’emplacements recherchés.
-Pour afficher des statistiques plus détaillées, cliquez sur « statistiques » dans la fenêtre mobile des détails de recherche.
+Pour afficher des statistiques plus détaillées, cliquez sur « Statistiques » dans le volant des détails de la recherche.
 
-## <a name="summary-view"></a>Affichage de synthèse
+## <a name="summary-view"></a>Affichage récapitulatif
 
-Dans l’affichage de synthèse, vous pouvez voir les résultats de la recherche décomposés par type d’emplacement (par exemple, Exchange). Pour chaque type d’emplacement, vous pouvez voir :
+Dans l’affichage Résumé, vous pouvez voir les résultats de la recherche décomposés par type d’emplacement (par exemple, Exchange). Pour chaque type d’emplacement, vous pouvez voir :
 
-- Nombre d’emplacements qui ont des éléments correspondant aux conditions de recherche
+- Nombre d’emplacements dont les éléments correspondent aux conditions de recherche
 
-- Nombre d’éléments à partir de ces emplacements qui correspondent aux conditions de recherche
+- Nombre d’éléments provenant de ces emplacements qui correspondent aux conditions de recherche
 
-- Volume total des éléments qui correspondent aux conditions de recherche.
+- Volume total d’éléments qui correspondent aux conditions de recherche.
 
-## <a name="top-locations-view"></a>Affichage des emplacements les plus fréquents
+## <a name="top-locations-view"></a>Affichage des emplacements supérieurs
 
-Dans la vue des emplacements supérieurs, vous voyez les différents emplacements avec le plus de correspondances. Pour chaque emplacement, vous verrez :
+Dans l’affichage Emplacements supérieurs, vous voyez les emplacements individuels avec le plus de correspondances. Pour chaque emplacement, vous verrez :
 
 - Nom de l’emplacement (par exemple, URL SharePoint)
 
 - Type d'emplacement
 
-- Nombre d’éléments correspondant aux conditions de recherche
+- Nombre d’éléments qui correspondent aux conditions de recherche
 
-- Volume total des éléments qui correspondent aux conditions de recherche.
+- Volume total d’éléments qui correspondent aux conditions de recherche.
 
-## <a name="queries-view"></a>Affichage de requêtes
+## <a name="queries-view"></a>Affichage des requêtes
 
-Si vous avez utilisé (c :s) des lignes de mots clés ou de mots clés dans votre requête, vous pouvez voir la répartition de votre requête en mode requêtes par type d’emplacement. Pour chaque type d’emplacement, vous verrez :
+Si vous avez utilisé (c:s) des lignes de mot clé ou de mot clé dans votre requête, vous pouvez voir la répartition de votre requête dans l’affichage Requêtes par type d’emplacement. Pour chaque type d’emplacement, vous verrez :
 
-- Part : cette colonne aura le mot « Primary » ou « Keyword ». « Primary » signifie que la ligne présente des statistiques sur l’ensemble de la requête, tandis que « Keyword » désigne l’un des composants de la requête.
+- Partie : cette colonne aura le mot « Primary » ou « Keyword ». « Principal » signifie que la ligne présente des statistiques sur l’ensemble de la requête, tandis que « Mot clé » signifie l’un des composants de requête.
 
-- Requête : le composant de requête réel auquel la ligne fait référence. Si la partie est « principale », il s’agit de la requête entière ; Si la partie était « mot clé », vous verrez l’un des composants de requête ici.
+- Requête : composant de requête réel à qui la ligne fait référence. Si la partie est « Primaire », il s’agit de la requête entière ; Si la partie était « Mot clé », vous verrez l’un des composants de requête ici.
   
-  - Lorsque vous effectuez une recherche dans toutes les boîtes aux lettres de contenu (en ne spécifiant aucun mot-clé), la requête réelle est (taille >= 0) de sorte que tous les éléments soient renvoyés.
+  - Lorsque vous recherchez dans toutes les boîtes aux lettres de contenu (en ne spécifiant aucun mot clé), la requête réelle est (taille >= 0) afin que tous les éléments soient renvoyés.
   
-  - Lorsque vous effectuez des recherches dans des sites SharePoint Online et OneDrive entreprise, les deux composants suivants sont ajoutés :
+  - Lorsque vous recherchez des sites SharePoint Online et OneDrive Entreprise, les deux composants suivants sont ajoutés :
     
-    - NON IsExternalContent : 1-exclut le contenu d’une organisation SharePoint locale
+    - NOT IsExternalContent:1 : exclut tout contenu d’une organisation SharePoint sur site
     
-    - NON isOneNotePage : 1-exclut tous les fichiers OneNote, car il s’agit de doublons de tous les documents qui correspondent à la requête de recherche.
+    - NOT isOneNotePage: 1 - exclut tous les fichiers OneNote, car il s’agit de doublons de tout document qui correspond à la requête de recherche.
 
-- Nombre d’emplacements qui ont des éléments correspondant aux conditions de recherche.
+- Nombre d’emplacements dont les éléments correspondent aux conditions de recherche.
 
-- Nombre d’éléments à partir de ces emplacements qui correspondent aux conditions de recherche.
+- Nombre d’éléments provenant de ces emplacements qui correspondent aux conditions de recherche.
 
-- Volume total des éléments qui correspondent aux conditions de recherche.
+- Volume total d’éléments qui correspondent aux conditions de recherche.

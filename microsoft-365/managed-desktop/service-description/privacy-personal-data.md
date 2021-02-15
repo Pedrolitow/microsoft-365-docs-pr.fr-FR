@@ -25,7 +25,7 @@ Bureau géré Microsoft n’utilise pas les données personnelles collectées da
 
 ## <a name="data-collection-of-microsoft-managed-desktop"></a>Collecte de données du Bureau géré Microsoft
 
-Lorsque les utilisateurs inscrivent des appareils d’entreprise dans bureau géré Microsoft, la collecte de données est gérée (sur la couche technique) à l’aide de Windows et Microsoft Intune. Ces sources collectent des données personnelles sur les appareils des utilisateurs, telles que les noms des appareils du Bureau géré Microsoft, afin de pouvoir identifier l’appareil à gérer et à fournir avec les expériences Bureau géré Microsoft.
+Lorsque les utilisateurs inscrivent des appareils d’entreprise dans bureau géré Microsoft, la collecte de données est gérée (sur la couche technique) à l’aide de Windows et Microsoft Intune. Ces sources collectent des données personnelles sur les appareils des utilisateurs, telles que les noms des appareils pour le Bureau géré Microsoft afin de pouvoir identifier l’appareil à gérer et à fournir avec les expériences Bureau géré Microsoft.
 
 Bureau géré Microsoft ne collecte pas les données par lui-même pour fournir son service (à l’exception des informations [de contact de l’administrateur informatique).](#it-admin-contact-information) Au lieu de cela, Bureau géré Microsoft réutilise les données que d’autres sources, telles que Windows et Microsoft Intune, ont déjà collectées. Bureau géré Microsoft utilise les données collectées par ces services à partir d’appareils inscrits :
 
@@ -85,7 +85,7 @@ Bureau géré Microsoft traite ces entités pour fournir le service :
 
 Les données d’identité utilisées par Bureau géré Microsoft sont stockées par Azure Active Directory dans un emplacement géographique basé sur l’adresse fournie par l’organisation lors de l’abonnement à un service en ligne Microsoft tel qu’Office 365 ou Azure. Consultez [Microsoft Azure — Où sont mes](http://azuredatacentermap.azurewebsites.net/) données client ? pour obtenir une carte montrant les centres de données pour Azure Active Directory.
 
-Pour plus d’informations sur les régions qu’Azure utilise pour le stockage de données, voir [Azure Active Directory – Où se](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)trouvent vos données .
+Pour plus d’informations sur les régions qu’Azure utilise pour le stockage des données, voir [Azure Active Directory –Où se](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)trouvent vos données .
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -93,7 +93,7 @@ Les données Intune peuvent être stockées dans différentes régions, telles q
 
 ### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
-Les données de Microsoft Defender pour point de terminaison peuvent être stockées dans plusieurs régions différentes. Pour cette raison, Defender pour point de terminaison fonctionne dans les centres de données Microsoft Azure dans l’Union européenne, au Royaume-Uni et aux États-Unis, comme indiqué dans [Microsoft Defender pour le](http://intunedatacentermap.azurewebsites.net/)point de terminaison — Emplacements de stockage de données . Pour plus d’informations sur le stockage et l’utilisation des données par Defender pour le point de terminaison, voir quelles données [Microsoft Defender for Endpoint collecte-t-il ?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Les données de Microsoft Defender pour point de terminaison peuvent être stockées dans différentes régions. Pour cette raison, Defender pour point de terminaison fonctionne dans les centres de données Microsoft Azure dans l’Union européenne, au Royaume-Uni et aux États-Unis, comme indiqué dans [Microsoft Defender pour le](http://intunedatacentermap.azurewebsites.net/)point de terminaison — Emplacements de stockage de données . Pour plus d’informations sur le stockage et l’utilisation des données par Defender pour endpoint, voir quelles données [Microsoft Defender for Endpoint collecte-t-il ?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -107,7 +107,7 @@ L’accès direct aux magasins de données internes du Bureau géré Microsoft e
 
 - Elle nécessite une approbation de niveau de tête d’ingénierie.
 - Il est à la fois audité et limité dans le temps.
-- Il nécessite l’utilisation d’une station de travail hautement sécurisée et restreinte.
+- Elle nécessite l’utilisation d’une station de travail hautement sécurisée et restreinte.
 - Toutes les données sont chiffrées pendant qu’elles sont stockées.
 - Il n’existe aucun accès permanent.
 - L’accès au portail de gestion interne du Bureau géré Microsoft nécessite une station de travail hautement sécurisée et restreinte.
@@ -123,7 +123,7 @@ Bureau géré Microsoft n’utilise pas les données personnelles collectées da
 
 Le Règlement général sur la protection des données [(R GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’Union européenne accorde des droits aux personnes (connues dans la réglementation sous le nom de personnes responsables des données) pour gérer les données personnelles collectées par un employeur ou tout autre type d’agence ou d’organisation (appelé contrôleur de données ou contrôleur uniquement). Dans le RGPD, les données personnelles sont définies de façon générale comme toute donnée relative à une personne physique identifiée ou identifiable. Le RGPD confère aux personnes concernées des droits précis sur leurs données personnelles ; ces droits vous donnent la possibilité d’obtenir des copies de ces données personnelles, de les modifier, d’en limiter le traitement, de les supprimer ou de les recevoir dans un format électronique afin de pouvoir les transférer à un autre responsable du traitement. Une demande officielle d’une personne concernée à un responsable du traitement pour effectuer une action sur ses données personnelles est appelée demande de droits de la personne concernée ou DPC dans le présent document.
 
-De même, le CCPA (California Consumer Privacy Act) prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes morales du R GDPR, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles. Le CCPA prévoit également certaines divulgations, des protections contre la discrimination lors du choix de l’exercice des droits et des exigences de « désa opt-out/opt-in » pour certains transferts de données classés comme « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide) et le [Forum aux questions California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide).
+De même, le CCPA (California Consumer Privacy Act) prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes morales du R GDPR, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles. Le CCPA prévoit également certaines divulgations, des protections contre la discrimination lors du choix de l’exercice des droits, et des exigences de « dés opt-out/opt-in » pour certains transferts de données classés comme « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide) et le [Forum aux questions California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide).
 
 La section suivante explique comment Bureau géré Microsoft permet aux contrôleurs de rechercher, d’accéder aux données personnelles ou aux informations personnelles utilisées par Bureau géré Microsoft et d’agir sur ces données.
 

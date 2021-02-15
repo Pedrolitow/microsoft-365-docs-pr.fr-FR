@@ -33,7 +33,7 @@ ms.locfileid: "49840386"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business Premium
 
-Microsoft 365 Business Premium offre des fonctionnalités de sécurité simplifiées pour vous aider à protéger vos données sur les PC, téléphones et tablettes.
+Microsoft 365 Business Premium offre des fonctionnalités de sécurité simplifiées pour vous aider à protéger vos données sur pc, téléphones et tablettes.
     
 ## <a name="microsoft-365-admin-center-security-features"></a>Fonctionnalités de sécurité du Centre d’administration Microsoft 365
 
@@ -41,7 +41,7 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité Microsoft 365 Bu
   
 - [Définissez les paramètres de gestion des applications pour les appareils Android ou iOS.](app-protection-settings-for-android-and-ios.md) 
     
-    Ces paramètres incluent la suppression de fichiers d’un appareil inactif après une période définie, le chiffrement des fichiers de travail, l’obligation pour les utilisateurs de définir un code confidentiel, etc.
+    Ces paramètres incluent la suppression de fichiers d’un appareil inactif après une période définie, le chiffrement des fichiers professionnels, la nécessité pour les utilisateurs de définir un code confidentiel, etc.
     
 - [Définissez les paramètres de protection des applications pour les appareils Windows 10.](protection-settings-for-windows-10-devices.md) 
     
@@ -77,7 +77,7 @@ Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibl
 - **Même [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) que le plan Azure AD Premium P1**
 
 
-    L’accès conditionnel peut aider à protéger votre organisation contre les risques de se connecte, les tentatives d’accès à partir d’un réseau ou des paramètres régionaux inattendus, les tentatives d’accès à partir de types d’appareils à risque, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée et utilisent les signaux du premier événement d’authentification pour déterminer si l’accès tenté doit être approuvé, refusé ou si une preuve supplémentaire (par exemple, un second formulaire d’identification) est requise.
+    L’accès conditionnel peut aider à protéger votre organisation contre les risques de se connecte, les tentatives d’accès à partir d’un réseau ou des paramètres régionaux inattendus, les tentatives d’accès à partir de types d’appareils à risque, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée et utilisent les signaux du premier événement d’authentification pour déterminer si la tentative d’accès doit être approuvée, refusée ou si une preuve supplémentaire (par exemple, un second formulaire d’identification) est requise.
 
     Les fonctionnalités d’accès conditionnel incluses sont les suivants :
 

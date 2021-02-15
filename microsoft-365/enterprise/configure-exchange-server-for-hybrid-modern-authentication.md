@@ -58,7 +58,7 @@ L’ment HMA signifie :
 
 1. Activation du HMA dans EXCH.
 
- **Remarque** Votre version d’Office prend-elle en charge MA ? Découvrez le fonctionnement de l’authentification moderne pour les applications [clientes Office 2013 et Office 2016.](modern-auth-for-office-2013-and-2016.md)
+ **Remarque** Votre version d’Office prend-elle en charge MA ? Découvrez comment fonctionne l’authentification moderne pour les applications [clientes Office 2013 et Office 2016.](modern-auth-for-office-2013-and-2016.md)
 
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>Assurez-vous que vous répondez à toutes les conditions préalables
 
@@ -66,7 +66,7 @@ L’ment HMA signifie :
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Ajouter des URL de service web local en tant que SSN dans Azure AD
 
-Exécutez les commandes qui affectent vos URL de service web local en tant que SSN Azure AD. Les SSN sont utilisés par les appareils et les ordinateurs clients lors de l’authentification et de l’autorisation. Toutes les URL qui peuvent être utilisées pour se connecter en local à Azure Active Directory (Azure AD) doivent être enregistrées dans Azure AD (cela inclut les espaces de noms internes et externes).
+Exécutez les commandes qui affectent vos URL de service web local en tant que SSN Azure AD. Les SSN sont utilisés par les appareils et les ordinateurs clients lors de l’authentification et de l’autorisation. Toutes les URL qui peuvent être utilisées pour se connecter depuis l’environnement local à Azure Active Directory (Azure AD) doivent être enregistrées dans Azure AD (cela inclut les espaces de noms internes et externes).
 
 Tout d’abord, rassemblez toutes les URL que vous devez ajouter dans AAD. Exécutez les commandes ci-après en local :
 
@@ -138,7 +138,7 @@ Revenir à l’Exchange Management Shell local pour cette dernière commande. Vo
 Get-AuthServer | where {$_.Name -eq "EvoSts"}
 ```
 
-Votre sortie doit afficher un AuthServer du nom EvoSts et l’état « Enabled » doit être True. Si ce n’est pas le cas, vous devez télécharger et exécuter la version la plus récente de l’Assistant Configuration hybride.
+Votre sortie doit afficher un authServer nommé EvoSts et l’état « Activé » doit être True. Si ce n’est pas le cas, vous devez télécharger et exécuter la version la plus récente de l’Assistant Configuration hybride.
 
  **Important** Si vous exécutez Exchange 2010 dans votre environnement, le fournisseur d’authentification EvoSTS ne sera pas créé.
 
@@ -155,7 +155,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 Une fois que vous avez activé HMA, la connexion suivante d’un client utilise le nouveau flux d’authentification. Notez que le simple fait d’allumer HMA ne déclenche pas de réauthentication pour un client. Les clients se réauthentent en fonction de la durée de vie des jetons d’th et/ou des jetons dont ils ont.
 
-Vous devez également maintenir la touche CTRL en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac notifications Windows) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type « Authn » de « Bearer » qui représente le jeton du porteur utilisé dans \* OAuth.
+Vous devez également maintenir la touche Ctrl vers le bas en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac notifications Windows) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type « Authn » de « Bearer » qui représente le jeton du porteur utilisé dans \* OAuth.
 
  **Remarque** Vous devez configurer Skype Entreprise avec HMA ? Vous aurez besoin de deux articles : un qui répertorie les [topologies](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)pris en charge et un qui vous montre comment [faire la configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
@@ -168,6 +168,6 @@ Si vous êtes un client local utilisant le serveur Exchange sur TCP 443, ignorez
 52.127.96.0/23
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Configuration requise pour l’authentification moderne pour la transition d’Office 365 dédié/ITAR vers vNext](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

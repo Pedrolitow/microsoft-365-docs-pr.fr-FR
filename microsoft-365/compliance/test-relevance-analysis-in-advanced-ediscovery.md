@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: Découvrez comment utiliser l’onglet test après le calcul par lot dans Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.
+description: Découvrez comment utiliser l’onglet Test après le calcul par lots dans Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.
 ms.openlocfilehash: 3ac12c176f2e46ac0321976a7e0689fbd8893bba
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -26,88 +26,88 @@ ms.locfileid: "49769169"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery"></a>Tester l’analyse de pertinence dans Advanced eDiscovery
   
-L’onglet test dans Advanced eDiscovery vous permet de tester, de comparer et de valider la qualité globale du traitement. Ces tests sont effectués après le calcul par lots. En marquant les fichiers dans la collection, un expert détermine si chaque fichier balisé est pertinent pour le cas.
+L’onglet Test dans Advanced eDiscovery vous permet de tester, comparer et valider la qualité globale du traitement. Ces tests sont effectués après le calcul par lots. En balant les fichiers de la collection, un expert décide de façon finale si chaque fichier balisé est pertinent pour le cas.
   
-Dans les scénarios à un ou plusieurs problèmes, les tests sont généralement effectués par problème. Les résultats peuvent être affichés après chaque test, et les résultats des tests peuvent être retravaillés avec les exemples de fichiers de test spécifiés.
+Dans les scénarios à problème unique ou multiple, les tests sont généralement effectués par problème. Les résultats peuvent être consultables après chaque test, et les résultats des tests peuvent être retravaillés avec des exemples de fichiers de test spécifiés.
   
 ## <a name="testing-the-rest"></a>Test du reste
 
-Le test « tester le reste » permet de valider les décisions de Culling, par exemple, pour examiner uniquement les fichiers situés au-dessus d’un score de pertinence spécifique basé sur les résultats avancés avancés de découverte électronique. L’expert examine un échantillon de fichiers sous un score de démarcation sélectionné pour évaluer le nombre de fichiers appropriés dans cet ensemble.
+Le test « Tester le reste » est utilisé pour valider les décisions d’élimination, par exemple, pour passer en revue uniquement les fichiers au-dessus d’un score de pertinence spécifique basé sur les résultats finaux advanced eDiscovery. L’expert examine un échantillon de fichiers sous un score de limite sélectionné pour évaluer le nombre de fichiers pertinents dans cet ensemble.
   
-Ce test fournit des statistiques et une comparaison entre l’ensemble de révision et le test la population Rest. Les résultats du jeu de révision sont ceux calculés par pertinence lors de la formation. Les résultats incluent des calculs basés sur les paramètres et les paramètres d’entrée, tels que :
+Ce test fournit des statistiques et une comparaison entre le jeu à réviser et la population Test du reste. Les résultats du jeu à réviser sont ceux calculés par Pertinence lors de l’entraînement. Les résultats incluent des calculs basés sur des paramètres et des paramètres d’entrée, tels que :
   
-- Tester des statistiques sur le nombre de fichiers dans un exemple et identifier les fichiers appropriés.
+- Testez des exemples de statistiques sur le nombre de fichiers dans un exemple et identifiez les fichiers pertinents.
 
-- Comparaison tabulaire des paramètres de population du jeu de révision et des autres, par exemple, le nombre de fichiers, le nombre estimé de fichiers pertinents, la richesse estimée et le coût moyen de la recherche d’un autre fichier pertinent. Les paramètres de coût des paramètres peuvent être définis par l’administrateur.
+- Comparaison tabulaire des paramètres Population du jeu à réviser et du reste, par exemple, le nombre de fichiers, le nombre estimé de fichiers pertinents, la richesse estimée et le coût moyen de recherche d’un autre fichier pertinent. Les paramètres de coût peuvent être définies par l’administrateur.
 
-Pour exécuter le test « tester le reste » :
+Pour exécuter le test « Tester le reste » :
 
-1. Ouvrez l' **onglet \> test de pertinence** .
+1. Ouvrez **l’onglet \> Test de** pertinence.
 
-2. Dans l’onglet **test** , cliquez sur **nouveau test**. La boîte de dialogue **créer un test** s’affiche, comme illustré dans l’exemple suivant.
+2. Dans **l’onglet Test,** cliquez **sur Nouveau test.** La **boîte de dialogue** Créer un test s’affiche, comme illustré dans l’exemple suivant.
 
     ![Résultats de pertinence du test Tester les éléments restants](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
-3. Dans **nom du test** et **Description**, tapez le nom et la description.
+3. Dans **Nom du test** et **Description,** tapez le nom et la description.
 
-4. Dans la liste **type de test** , sélectionnez **tester le reste**
+4. Dans la liste **des types de test,** **sélectionnez Tester le reste**
 
-5. Dans la liste **problème/catégorie** , sélectionnez le nom du problème.
+5. Dans la **liste Problème/Catégorie,** sélectionnez le nom du problème.
 
-6. Dans la liste **charge** , sélectionnez la charge. 
+6. Dans la **liste Charger,** sélectionnez le chargement. 
 
-7. En **lecture%**, acceptez la valeur par défaut ou sélectionnez une valeur pour le score de pertinence de la limite. 
+7. Dans **% de** lecture, acceptez la valeur par défaut ou sélectionnez une valeur pour le score de pertinence cutoff. 
 
-8. Dans **définir la taille**, ou acceptez la valeur par défaut. Les icônes de restauration restaureront les valeurs par défaut.
+8. Dans **Définir la taille** ou accepter la valeur par défaut. Les icônes de restauration restaurent les valeurs par défaut.
 
-9. Cliquez sur **Démarrer le balisage**. Un échantillon de test est généré.
+9. Cliquez **sur Démarrer le marquage.** Un exemple de test est généré.
 
-10. Examinez et marquez chacun des fichiers dans l’onglet de la **\> balise de pertinence** et, lorsque vous avez fini, cliquez sur **calculer**.
+10. Examinez et marquez chacun des fichiers dans l’onglet **Balise \>** de pertinence et, lorsque vous avez terminé, cliquez sur **Calculer**.
 
-11. Sous l’onglet test, vous pouvez cliquer sur **afficher les résultats** pour afficher les résultats des tests. Un exemple est illustré dans la capture d’écran suivante.
+11. Dans l’onglet Test, vous pouvez cliquer sur **Afficher les résultats** pour afficher les résultats du test. Un exemple est illustré dans la capture d’écran suivante.
 
     ![Résultats du test Tester les éléments restants](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
-Dans la capture d’écran précédente, la section relative aux paramètres de l' **exemple** de tableau contient des détails sur le nombre de fichiers dans l’exemple, ainsi que le nombre de fichiers pertinents trouvés dans cet exemple.
+Dans la capture d’écran précédente, la section Exemples de **paramètres** du tableau contient des détails sur le nombre de fichiers dans l’exemple balisé par l’expert et le nombre de fichiers pertinents trouvés dans cet exemple.
   
-La section **paramètres de remplissage** du tableau contient les résultats des tests, y compris le remplissage de l’ensemble des fichiers dont le score est inférieur à la limite sélectionnée et la population de fichiers Rest dont le score est supérieur à la limite sélectionnée. Pour chaque population, les résultats suivants s’affichent :
+La section **Paramètres** de population du tableau contient les résultats des tests, y compris la population de fichiers du jeu à réviser avec un score inférieur au seuil sélectionné et la population de fichiers « Le reste » avec un score au-dessus du seuil sélectionné. Pour chaque population, les résultats suivants sont affichés :
   
-- Inclut des fichiers dont la limite de lecture est% indiquée
+- Inclut les fichiers avec % de lecture - Cutoff indiqué
 
 - Nombre total de fichiers
 
-- Estimation du nombre de fichiers pertinents
+- Le nombre estimé de fichiers pertinents
 
-- La richesse estimée
+- Richesse estimée
 
-- Coût moyen de la recherche d’un autre fichier pertinent
+- Coût moyen d’examen de la recherche d’un autre fichier pertinent
 
-## <a name="testing-the-slice"></a>Test du secteur
+## <a name="testing-the-slice"></a>Test de la tranche
 
-Le test « test the Slice » effectue un test semblable au test « test the Rest », mais à un segment de l’ensemble de fichiers, tel que spécifié par la pertinence% de lecture.
+Le test « Tester la tranche » effectue des tests similaires au test « Tester le reste », mais à un segment du jeu de fichiers tel que spécifié par Pertinence lecture %.
 
-Pour exécuter le test « tester le secteur » :
+Pour exécuter le test « Tester le slice » :
   
-1. Ouvrez l' **onglet \> test de pertinence** .
+1. Ouvrez **l’onglet \> Test de** pertinence.
 
-2. Dans l’onglet **test** , cliquez sur **nouveau test**. La boîte de dialogue **créer un test** s’affiche.
+2. Dans **l’onglet Test,** cliquez **sur Nouveau test.** La **boîte de dialogue Créer** un test s’affiche.
 
-3. Dans **nom** et **Description** du test, entrez les informations.
+3. Dans **Nom du test** et **Description,** tapez les informations.
 
-4. Dans la liste **type de test** , sélectionnez **tester la section**.
+4. Dans la **liste des types de test,** **sélectionnez Tester le slice.**
 
-5. Dans la liste **problème** , sélectionnez le nom du problème.
+5. Dans la **liste Problèmes,** sélectionnez le nom du problème.
 
-6. Dans la liste **charge** , sélectionnez la charge.
+6. Dans la **liste Charger,** sélectionnez le chargement.
 
-7. En **lecture% entre**, acceptez les valeurs par défaut de plage basse et haute ou sélectionnez des valeurs pour les scores de pertinence de la limite.
+7. Dans **Lire le % entre**, acceptez les valeurs de plage basse et élevée par défaut ou sélectionnez des valeurs pour les scores de pertinence à couper.
 
-8. Dans **définir la taille**, sélectionnez une valeur ou acceptez la valeur par défaut.
+8. Dans **Définir la taille,** sélectionnez une valeur ou acceptez la valeur par défaut.
 
-    Les icônes de restauration restaureront la valeur par défaut.
+    Les icônes de restauration restaurent la valeur par défaut.
 
-9. Cliquez sur **Démarrer le balisage**. Un échantillon de test est généré.
+9. Cliquez **sur Démarrer le marquage.** Un exemple de test est généré.
 
-10. Examinez et marquez chacun des fichiers dans l’onglet de la **\> balise de pertinence** et, lorsque vous avez fini, cliquez sur **calculer**.
+10. Examinez et marquez chacun des fichiers dans l’onglet **Balise \>** de pertinence et, lorsque vous avez terminé, cliquez sur **Calculer**.
 
-11. Sous l’onglet test, vous pouvez cliquer sur **afficher les résultats** pour afficher les résultats des tests.
+11. Dans l’onglet Test, vous pouvez cliquer sur **Afficher les résultats** pour afficher les résultats du test.

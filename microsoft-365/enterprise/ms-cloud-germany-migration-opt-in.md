@@ -48,7 +48,7 @@ Une nouvelle section s’affiche sur le côté droit de votre écran pour accept
  
 ![Acceptation d’adhésion](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-Une fois que vous avez choisi de vous rendre au nom de votre client, tous les administrateurs voient la confirmation dans Migrer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les **services Office 365** dans la nouvelle section régions de centre de données allemandes, y compris la date d’opt-in. Les administrateurs recevront également une confirmation dans le Centre de messages du Centre d’administration Microsoft 365. 
+Une fois que vous avez choisi de vous rendre au nom de votre client, tous les administrateurs voient la confirmation dans Migrer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les **services Office 365** dans la section Nouvelles régions de centre de données allemandes, y compris la date d’opt-in. Les administrateurs recevront également une confirmation dans le Centre de messages du Centre d’administration Microsoft 365. 
  
 ![Confirmation d’adhésion](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
@@ -68,7 +68,7 @@ Les administrateurs client et client partenaire sont encouragés à opter pour l
 
 [Comprendre l’expérience client pendant la migration](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Mise en place :
 

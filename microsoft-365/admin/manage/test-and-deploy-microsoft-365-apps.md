@@ -31,7 +31,7 @@ Pour plus d’informations sur l’achat et la gestion des licences d’applicat
 
 En choisissant Applications intégrées dans le Centre d’administration Microsoft 365, vous pouvez gérer les tests et le déploiement des applications partenaires Microsoft et Microsoft achetées et sous licence. 
 
-1. Dans le centre d’administration, dans le navigation de gauche, choisissez **Paramètres,** puis choisissez **Applications intégrées.** 
+1. Dans le centre d’administration, dans le navigation gauche, choisissez **Paramètres,** puis choisissez **Applications intégrées.** 
 
 2. Choisissez une application avec **l’état** **d’autres applications disponibles.**
 
@@ -43,7 +43,7 @@ En choisissant Applications intégrées dans le Centre d’administration Micros
 
     Des utilisateurs/groupes spécifiques peuvent être un groupe Microsoft 365, un groupe de sécurité ou un groupe distribué.
 
-    Vous pouvez également choisir **De tester le déploiement** si vous préférez attendre le déploiement de l’application dans toute l’organisation.
+    Vous pouvez également choisir **de tester le déploiement** si vous préférez attendre le déploiement de l’application dans toute l’organisation.
 
     b. Sélectionnez **Mettre à** jour , **Terminé** et vous pouvez maintenant sélectionner **Déployer** sous l’onglet **Vue d’ensemble.**  
 
@@ -57,7 +57,7 @@ En choisissant Applications intégrées dans le Centre d’administration Micros
 
 Vous pouvez rechercher, tester et déployer entièrement des applications publiées qui n’apparaissent pas déjà dans la liste de la page Applications intégrées. En achetant et en accordant des licences aux applications à partir du Centre d’administration, vous pouvez ajouter des applications partenaires Microsoft et Microsoft à votre liste à partir d’un emplacement unique.
 
-1. Dans le centre d’administration, dans le navigation de gauche, choisissez **Paramètres,** puis choisissez **Applications intégrées.** 
+1. Dans le centre d’administration, dans le navigation gauche, choisissez **Paramètres,** puis choisissez **Applications intégrées.** 
 
 2. Sélectionnez **Obtenir des applications au-dessus** de la liste des applications.
 
@@ -73,7 +73,7 @@ Vous pouvez rechercher, tester et déployer entièrement des applications publi�
 
     Des utilisateurs/groupes spécifiques peuvent être un groupe Microsoft 365, un groupe de sécurité ou un groupe distribué.
 
-    Vous pouvez également choisir **De tester le déploiement** si vous préférez attendre le déploiement de l’application dans toute l’organisation.
+    Vous pouvez également choisir **de tester le déploiement** si vous préférez attendre le déploiement de l’application dans toute l’organisation.
 
     b. Sélectionnez **Mettre à** **jour,** Terminé et vous pouvez maintenant sélectionner **Déployer** sous l’onglet **Vue d’ensemble.**  
 

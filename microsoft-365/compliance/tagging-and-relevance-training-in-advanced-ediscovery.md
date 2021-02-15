@@ -1,5 +1,5 @@
 ---
-title: Étiquetage et formation à la pertinence dans Advanced eDiscovery
+title: Formation sur le marquage et la pertinence dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
-description: Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinente de la découverte électronique avancée.
+description: Découvrez les étapes à suivre pour baliser, puis travailler avec un exemple de formation de 40 fichiers pendant la phase de formation Pertinence d’Advanced eDiscovery.
 ms.openlocfilehash: ae4a9f2e9fd87fdd0679bbfd8f287b6eaa98e41f
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -24,75 +24,75 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49769219"
 ---
-# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Étiquetage et formation à la pertinence dans Advanced eDiscovery
+# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Formation sur le marquage et la pertinence dans Advanced eDiscovery
   
-Cet article décrit la procédure à suivre pour travailler avec le module de formation à la pertinence dans Advanced eDiscovery.
+Cet article décrit la procédure d’emploi du module de formation Pertinence dans Advanced eDiscovery.
   
-Une fois l’évaluation terminée dans Advanced eDiscovery et que vous entrez l’étape de formation pertinente, un exemple de formation de 40 fichiers est placé dans l’onglet tag pour le marquage.
+Une fois l’évaluation terminée dans Advanced eDiscovery et que vous entrez dans la phase de formation Pertinence, un échantillon de formation de 40 fichiers est mis dans l’onglet Balise pour le marquage.
   
-## <a name="performing-relevance-training"></a>Formation à la pertinence
+## <a name="performing-relevance-training"></a>Formation sur la pertinence
 
-1. Dans l' **onglet \> balise de pertinence** , le volet de marquage est affiché par défaut dans le volet de gauche et les fichiers d’exemple sont affichés, un à la fois pour le marquage.
+1. Dans **l’onglet \> Balise** de pertinence, le volet Marquage s’affiche par défaut dans le volet gauche et les exemples de fichiers s’affichent, un par un pour le marquage.
 
     ![Volet Balise de pertinence](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
-    Sous l’onglet **balise** , le nom complet du fichier est affiché. Il peut s’agir du chemin d’accès, de l’objet du courrier électronique, du titre ou du nom défini par l’utilisateur. Vous pouvez copier l’ID, le chemin d’accès ou le chemin d’accès au texte en cliquant avec le bouton droit sur le chemin d’accès du fichier.
+    Dans **l’onglet** Balise, le nom complet du fichier s’affiche. Cela peut être le chemin d’accès, l’objet de l’e-mail, le titre ou le nom défini par l’utilisateur. L’ID, le chemin d’accès au fichier ou le chemin de texte peuvent être copiés en cliquant avec le bouton droit sur le chemin d’accès du fichier.
 
-    Les statistiques de marquage des onglets de **balise** indiquent le numéro d’exemple de fichier (en haut du volet de gauche), le numéro du fichier actuellement affiché dans le total des fichiers dans l’exemple (volet inférieur du volet droit) et le nombre total actuel de fichiers balisés dans l’exemple (en bas du volet de gauche), qui change lorsque vous balisez des fichiers. Cela s’applique à toutes les balises de pertinence réalisées, qu’il s’agisse d’évaluation, de formation, de rattrapage ou de test.
+    Les  statistiques de marquage de l’onglet Balise indiquent le numéro d’exemple de fichier (en haut du volet gauche), le nombre de fichiers actuellement affichés en dehors du nombre total de fichiers dans l’exemple (en bas du volet droit) et le nombre total actuel de fichiers marqués dans l’exemple (en bas du volet gauche), qui change lorsque vous marquez des fichiers. Cela s’applique à tout marquage de pertinence effectué, que ce soit lors de l’évaluation, de l’entraînement, du rattrapage ou du test.
 
-    Les icônes indiquant l’existence de commentaires, de balises et de fichiers de famille sont affichés dans l’affichage des fichiers dans une barre située au-dessus du fichier.
+    Les icônes indiquant l’existence de commentaires, de balises et de fichiers de famille sont affichées dans l’affichage fichier dans une barre au-dessus du fichier.
 
-2. Déterminez la pertinence du problème lié au fichier et marquez le fichier à l’aide des boutons d’option d’étiquetage ou des raccourcis clavier, comme indiqué dans le tableau suivant :
+2. Déterminez la pertinence du fichier pour le problème de cas et marquez-le à l’aide des boutons d’icône d’option de marquage ou des raccourcis clavier, comme indiqué dans le tableau suivant :
 
    |**Option de marquage**|**Description**|**Raccourci clavier**|**Raccourci clavier de marquage en bloc (pour plusieurs problèmes)**|
    |-----|-----|-----|-----|
-   |R  <br/> |Y  <br/> |Z  <br/> |`Shift + Z`  <br/> |
+   |R  <br/> |Pertinent  <br/> |Z  <br/> |`Shift + Z`  <br/> |
    |NR  <br/> |Non pertinent  <br/> |X  <br/> |`Shift + X`  <br/> |
    |Ignorer  <br/> |Ignorer  <br/> |C  <br/> |`Shift + A`  <br/> |
    |||||
 
-   - Lorsque plusieurs problèmes existent pour un fichier, après avoir balisé un problème, la sélection se déplace vers le prochain problème (le cas échéant).  
+   - Lorsque plusieurs problèmes existent pour un fichier, après avoir balisé un problème, la sélection passe au problème suivant (le cas cas).  
 
-   - Mots clés définis par l’administrateur ou le gestionnaire de cas lors de la mise en surbrillance des mots-clés (mise \> en surbrillance des mots-clés), s’affiche (dans les couleurs spécifiées) pour vous aider à identifier les fichiers appropriés lors du marquage. Si un mot clé comporte un double trait de soulignement, vous pouvez cliquer dessus pour afficher une info-bulle avec la description du mot-clé.
+   - Les mots clés définis par l’administrateur ou le gestionnaire de cas lors de la mise en surbrillance des mots clés (mots clés de configuration de pertinence mis en surbrillance) s’affichent (dans les couleurs spécifiées) pour vous aider à identifier les fichiers pertinents lors du \> marquage. Si un mot clé a un double soulignement, vous pouvez cliquer dessus pour afficher une info-conseil avec la description du mot clé.
 
-     Éventuellement, sous l’onglet **balise** , cliquez sur **paramètres des balises** pour définir les options suivantes :
+     Éventuellement, dans **l’onglet Balise,** cliquez sur **Paramètres de** balise pour définir les options suivantes :
 
       ![Paramètres de balise de pertinence](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
-   - **Balise en bloc**: utilisez cette option pour affecter plusieurs problèmes pour un fichier en sélectionnant **tout** pour définir la balise du fichier sélectionné pour tous les problèmes (remplacement des problèmes déjà marqués) ou en sélectionnant **le reste** pour appliquer la balise aux problèmes non balisés restants. L’option sélectionnée reste en vigueur pour tous les cas de cet utilisateur jusqu’à ce qu’elle soit modifiée par cet utilisateur (le paramètre est défini par utilisateur pour tous les cas de l’utilisateur).
+   - **Balise** en bloc : utilisez cette option pour affecter  plusieurs problèmes à un fichier en sélectionnant Tout pour définir la balise pour  le fichier sélectionné pour tous les problèmes (remplace les problèmes déjà marqués) ou en sélectionnant Le reste pour appliquer la balise aux problèmes non retardés restants. L’option sélectionnée reste en vigueur pour tous les cas de cet utilisateur jusqu’à ce qu’il soit modifié par cet utilisateur (le paramètre est par utilisateur pour tous les cas de l’utilisateur).
 
-   - **Balise automatique**: activez cette case à cocher pour définir d’autres problèmes pour un fichier comme n’étant pas pertinents après une seule balise pertinente.
+   - **Balise automatique**: cochez cette case pour définir d’autres problèmes pour un fichier comme non pertinents après un marquage pertinent unique.
 
-   - **Avance automatique**: activez cette case à cocher pour déplacer la sélection du fichier affiché vers le fichier suivant lors du marquage du dernier problème non marqué ou non marqué.
+   - **Avance automatique**: cochez cette case pour déplacer la sélection de fichier affichée vers le fichier suivant lors du marquage du dernier ou seul problème non retardé.
 
-    Les fichiers ignorés ne sont pas considérés comme des objectifs de formation et de notation de pertinence.
+    Les fichiers ignorés ne seront pas pris en compte à des fins d’entraînement de pertinence et de score de pertinence.
 
-3. Les commentaires en texte libre, associés à un fichier, peuvent être affichés et modifiés via l’option **Commentaire** dans la liste déroulante du volet de gauche. (facultatif)
+3. Les commentaires en texte libre, associés à un fichier,  peuvent être consultables et modifiés via l’option Commentaire dans la liste modifiable du volet gauche. (facultatif)
 
-4. Vous pouvez afficher les instructions de marquage en sélectionnant l’option **indications de marquage** dans la liste déroulante volet de gauche.
+4. Pour afficher les recommandations en matière  de marquage, sélectionnez l’option Recommandations en matière de marquage dans la liste de listes de gauche du volet.
 
-5. Une fois que vous avez terminé le marquage de tous les fichiers de la liste et que vous êtes prêt à calculer les résultats, cliquez sur **calculer**. L’onglet **suivi** est affiché.  
+5. Une fois que vous avez terminé le marquage de tous les fichiers de la liste et que vous êtes prêt à calculer les résultats, cliquez sur **Calculer.** **L’onglet** Suivi s’affiche.  
 
-## <a name="working-with-the-sample-files-list"></a>Utilisation de la liste des exemples de fichiers
+## <a name="working-with-the-sample-files-list"></a>Travailler avec la liste d’exemples de fichiers
 
-La liste exemple de fichiers vous permet d’afficher la liste des fichiers dans un exemple de formation et d’effectuer diverses actions sur un ou plusieurs fichiers. Dans l'  onglet de la \> **balise** de pertinence, le volet de gauche **fichiers d’exemple** affiche une liste d’exemples de fichiers à traiter avec les processus d’évaluation, de formation, de rattrapage et d’incohérence.
+La liste des exemples de fichiers vous permet d’afficher une liste des fichiers dans un exemple de formation et d’effectuer différentes actions sur un ou plusieurs fichiers. Dans **l’onglet** Balise de pertinence, le volet gauche des exemples de fichiers affiche une liste d’exemples de fichiers à traiter avec des processus d’évaluation, de formation, de rattrapage et \> d’incohérences.  
   
-1. Dans l' **onglet \> balise de pertinence** , sélectionnez les fichiers de l’exemple dans la liste déroulante du volet de gauche. Les fichiers de l’exemple sont répertoriés dans le volet de gauche.
+1. Dans **l’onglet \> Balise de** pertinence, sélectionnez les exemples de fichiers dans la liste de listes de listes listes de gauche du volet. Les exemples de fichiers sont répertoriés dans le volet gauche.
 
     ![Liste d’exemples de fichiers de balise de pertinence](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
-2. Sélectionnez un exemple ou un numéro de fichier spécifique en entrant ou en sélectionnant son numéro dans les zones **exemple** ou **fichier** .
+2. Sélectionnez un exemple ou un numéro de fichier spécifique en entrant ou en sélectionnant son numéro dans les **zones** Exemple **ou** Fichier.
 
-   - Un numéro de séquence de fichier est répertorié dans la colonne de gauche de la liste des fichiers affichés sous l’onglet **balise** . En cliquant sur l’en-tête, l’ordre d’origine affiché des fichiers reprend son ordre d’origine.
+   - Un numéro de séquence de fichier est répertorié dans la colonne gauche de la liste des fichiers affichée sous **l’onglet Balise.** En cliquant sur l’en-tête, l’ordre d’origine affiché des fichiers revient à son ordre d’origine.
 
-   - Le simple clic sur une ligne de fichier affiche son contenu dans le volet de droite.
+   - Un clic sur une ligne de fichier affiche son contenu dans le volet droit.
 
-   - Naviguer entre les fichiers dans l’exemple actuel à l’aide des options de la barre de menus inférieure. Les raccourcis clavier de navigation sont également disponibles :
+   - Naviguez entre les fichiers de l’exemple actuel à l’aide des options de la barre de menus inférieure. En outre, des raccourcis clavier de navigation sont disponibles :
   
-     - Pour accéder au premier fichier de l’exemple : `Shift + Ctrl + <`
+     - Pour aller au premier fichier de l’exemple : `Shift + Ctrl + <`
 
-     - Pour accéder au fichier précédent dans l’exemple : `Shift + <`
+     - Pour aller au fichier précédent dans l’exemple : `Shift + <`
 
-     - Pour accéder au fichier suivant dans l’exemple : `Shift + >`
+     - Pour passer au fichier suivant dans l’exemple : `Shift + >`
 
-     - Pour accéder au dernier fichier de l’exemple : `Shift + Ctrl + >`
+     - Pour aller au dernier fichier de l’exemple : `Shift + Ctrl + >`

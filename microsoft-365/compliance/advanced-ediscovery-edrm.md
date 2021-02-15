@@ -50,7 +50,7 @@ Le flux de travail intégré d’Advanced eDiscovery dans Microsoft 365 s’alig
 
 - **Production** et **présentation.** Lorsque vous êtes prêt, vous pouvez exporter des documents à partir d’un groupe de révision pour révision légale. Vous pouvez exporter des documents dans leur format natif ou dans un format EDRM spécifié afin qu’ils soient importés dans des applications de révision tierces.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Pour commencer à utiliser Advanced eDiscovery, voir :
 

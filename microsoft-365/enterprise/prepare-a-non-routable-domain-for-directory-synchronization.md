@@ -31,7 +31,7 @@ ms.locfileid: "49780331"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparation d’un domaine non routable pour la synchronisation d’annuaires
 
-Lorsque vous synchronisez votre annuaire local avec Microsoft 365, vous devez avoir un domaine vérifié dans Azure Active Directory (Azure AD). Seuls les noms d’utilisateur principaux (UPN) associés au domaine AD DS (Active Directory Domain Services) local sont synchronisés. Toutefois, tout UPN qui contient un domaine non routable, tel que « .local » (exemple : billa@contoso.local), sera synchronisé avec un domaine .onmicrosoft.com (exemple : billa@contoso.onmicrosoft.com). 
+Lorsque vous synchronisez votre annuaire local avec Microsoft 365, vous devez avoir un domaine vérifié dans Azure Active Directory (Azure AD). Seuls les noms d’utilisateur principaux (UPN) associés au domaine AD DS (Active Directory Domain Services) local sont synchronisés. Toutefois, tout UPN qui contient un domaine non routable, tel que « .local » (exemple : billa@contoso.local), sera synchronisé avec un domaine .onmicrosoft.com (par exemple : billa@contoso.onmicrosoft.com). 
 
 Si vous utilisez actuellement un domaine « .local » pour vos comptes d’utilisateur dans AD DS, il est recommandé de les modifier pour utiliser un domaine vérifié, tel que billa@contoso.com, afin de synchroniser correctement avec votre domaine Microsoft 365.
   
@@ -57,7 +57,7 @@ Une fois que vous avez mis à jour les UPN pour utiliser le domaine vérifié, v
     
     **Ou, si vous n’avez pas Windows Server 2012**
     
-    Appuyez sur la touche  Windows + **R** pour ouvrir la boîte de dialogue Exécuter, puis tapez Domain.msc, puis choisissez **OK**.
+    Appuyez sur la touche  Windows + **R** pour ouvrir la boîte de dialogue Exécuter, puis tapez Domain.msc, puis choisissez **OK.**
     
     ![Choisissez Domaines et trusts Active Directory.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   

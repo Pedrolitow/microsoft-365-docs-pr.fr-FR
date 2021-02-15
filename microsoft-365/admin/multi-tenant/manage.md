@@ -1,5 +1,5 @@
 ---
-title: Gérer plusieurs locataires
+title: Gérer plusieurs clients
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -80,4 +80,4 @@ La liste des locataires concernés peut être exportée au format CSV afin que l
 Vous pouvez revenir au Centre d’administration Microsoft 365 pour n’importe quel client à partir de la page **Tous les** clients.
 
 1. Dans la page **Tous les locataires,** sélectionnez le nom du client pour lequel vous souhaitez afficher le Centre d’administration.
-2. Vous êtes dirigé vers le Centre d’administration pour ce client.
+2. Vous êtes dirigé vers le centre d’administration pour ce client.

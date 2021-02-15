@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-description: Découvrez le catalogue de solutions Microsoft 365, y compris son contenu, comment l’obtenir et les étapes suivantes.
+description: Découvrez le catalogue de solutions Microsoft 365, y compris ce qu’il contient, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 7d1d52356bd3b165c24f10a20a57373a6171b8b3
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
@@ -20,86 +20,86 @@ ms.locfileid: "49751469"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
 
-Vous cherchez un moyen de commencer rapidement à démarrer avec les tâches de conformité dans Microsoft 365 ? Consultez le [catalogue de solutions Microsoft 365](https://compliance.microsoft.com/solutioncatalog) pour découvrir, découvrir et commencer rapidement les solutions de gestion de la conformité et des risques.
+Vous recherchez un moyen de commencer rapidement avec les tâches de conformité dans Microsoft 365 ? Consultez le catalogue [de solutions Microsoft 365](https://compliance.microsoft.com/solutioncatalog) pour découvrir, découvrir et démarrer rapidement avec les solutions de gestion des risques et de la conformité.
 
-Les solutions de conformité dans Microsoft 365 sont des collections de fonctionnalités intégrées que vous pouvez utiliser pour vous aider à gérer les scénarios de conformité de bout en bout. Les fonctionnalités et les outils d’une solution peuvent inclure une combinaison de stratégies, d’alertes, de rapports et bien plus encore.
+Les solutions de conformité dans Microsoft 365 sont des ensembles de fonctionnalités intégrées que vous pouvez utiliser pour vous aider à gérer des scénarios de conformité de bout en bout. Les fonctionnalités et outils d’une solution peuvent inclure une combinaison de stratégies, d’alertes, de rapports, etc.
 
-Lisez cet article pour découvrir le nouveau catalogue de solutions dans le centre de conformité Microsoft 365, [Comment l’obtenir](#how-do-i-get-this), les [questions fréquemment posées](#frequently-asked-questions)et les [étapes suivantes](#next-steps).
+Lisez cet article pour vous familiariser avec le nouveau catalogue de [](#how-do-i-get-this)solutions dans le Centre de conformité Microsoft 365, comment l’obtenir, les [questions](#frequently-asked-questions)fréquemment posées et les étapes [suivantes.](#next-steps)
 
 ## <a name="catalog-organization"></a>Organisation de catalogue
 
-Le catalogue de solutions est organisé en sections qui contiennent des cartes d’informations pour chaque solution de conformité disponible dans votre abonnement Microsoft 365. Chaque section contient des cartes pour les solutions groupées par zone de conformité.
+Le catalogue de solutions est organisé en sections qui contiennent des cartes d’informations pour chaque solution de conformité disponible dans votre abonnement Microsoft 365. Chaque section contient des cartes pour les solutions regroupées par domaine de conformité.
 
 ![Page d’accueil du catalogue de solutions Microsoft 365](../media/m365-solution-catalog-home.png)
 
-Lorsque vous sélectionnez **Afficher** pour une carte de solution, vous verrez des informations détaillées sur la solution de conformité et la mise en route. Ces informations incluent une vue d’ensemble, des conditions préalables à la configuration, des ressources d’apprentissage, des contrôles qui vous permettent d’épingler la carte dans le volet de navigation, ainsi qu’une option permettant de partager la solution en tant que lien, e-mail ou message Microsoft Teams.
+Lorsque vous **sélectionnez Afficher** pour une carte de solution, vous verrez des informations détaillées sur la solution de conformité et sur la façon de commencer. Ces informations incluent une vue d’ensemble, des exigences préalables à la configuration, des ressources d’apprentissage, des contrôles qui vous permettent d’épingler la carte au volet de navigation et une option de partage de la solution sous forme de lien, de courrier électronique ou de message Microsoft Teams.
 
-![Solution de conformité de communication Microsoft 365](../media/m365-solution-catalog-communication-compliance.png)
+![Solution de conformité des communications Microsoft 365](../media/m365-solution-catalog-communication-compliance.png)
 
-## <a name="information-protection--governance-section"></a>Section gouvernance des informations & gouvernance
+## <a name="information-protection--governance-section"></a>Section Protection des & gouvernance des informations
 
-La section **information protection & gouvernance** vous montre comment utiliser les solutions de conformité Microsoft 365 pour protéger et régir les données dans votre organisation.
+La section **Sur la &** protection des informations vous montre d’un coup d’œil comment vous pouvez utiliser les solutions de conformité Microsoft 365 pour protéger et régir les données de votre organisation.
 
-![Section sur la protection et la gouvernance des informations de catalogue de solutions Microsoft 365](../media/m365-solution-catalog-information-protection-governance.png)
+![Section Protection et gouvernance des informations du catalogue de solutions Microsoft 365](../media/m365-solution-catalog-information-protection-governance.png)
 
-À partir de là, vous verrez des cartes pour les solutions suivantes :
+À partir de là, vous verrez des cartes pour les solutions suivantes :
 
-- [Protection contre la perte de données](data-loss-prevention-policies.md): détecte le contenu sensible tel qu’il est utilisé et partagé au sein de votre organisation, dans le Cloud et sur les appareils, et permet d’éviter toute perte accidentelle de données.
-- [Gouvernance des informations](manage-information-governance.md): gère votre cycle de vie de contenu à l’aide de solutions pour importer, stocker et classer les données critiques afin de conserver ce dont vous avez besoin et d’en supprimer.
-- [Protection des informations](information-protection.md): identifie, classifie et protège les contenus sensibles et critiques tout au long de leur cycle de vie au sein de votre organisation.
-- [Gestion des enregistrements](records-management.md): utilise une classification intelligente pour automatiser et simplifier la planification de rétention des enregistrements de réglementation, juridiques et d’entreprise de votre organisation.
+- [Protection contre la](data-loss-prevention-policies.md)perte de données : détecte le contenu sensible tel qu’il est utilisé et partagé au sein de votre organisation, dans le cloud et sur les appareils, et permet d’éviter toute perte accidentelle de données.
+- [Gouvernance des informations](manage-information-governance.md): gère le cycle de vie de votre contenu à l’aide de solutions pour importer, stocker et classer des données critiques afin de pouvoir conserver ce dont vous avez besoin et supprimer ce dont vous n’avez pas besoin.
+- [Protection des](information-protection.md)informations : découvre, classifie et protège le contenu sensible et critique tout au long de son cycle de vie au sein de votre organisation.
+- [Gestion des](records-management.md)enregistrements : utilise une classification intelligente pour automatiser et simplifier la planification de rétention des enregistrements réglementaires, juridiques et critiques dans votre organisation.
 
-## <a name="insider-risk-management-section"></a>Section gestion des risques internes
+## <a name="insider-risk-management-section"></a>Section Gestion des risques internes
 
-La section **gestion des risques inSided** sur la page d’accueil vous montre en un clin d’œil comment votre organisation peut identifier, analyser et prendre des mesures sur les risques internes avant qu’ils ne causent des dégâts.
+La section **Gestion des** risques internes sur la page d’accueil vous montre d’un coup d’œil comment votre organisation peut identifier, analyser et prendre des mesures sur les risques internes avant qu’ils ne causent des dommages.
 
-![Section sur la gestion des risques du catalogue de solutions Microsoft 365](../media/m365-solution-catalog-insider-risk-management.png)
+![Section gestion des risques internes du catalogue de solutions Microsoft 365](../media/m365-solution-catalog-insider-risk-management.png)
 
-À partir de là, vous verrez des cartes pour les solutions suivantes :
+À partir de là, vous verrez des cartes pour les solutions suivantes :
 
-- [Conformité des communications](communication-compliance.md): minimise les risques de communication en vous aidant à capturer automatiquement les messages inappropriés, à analyser les violations de stratégie possibles et à réduire les dégâts.
-- [Gestion des risques initiés](insider-risk-management.md): détectez les activités à risque au sein de votre organisation pour vous aider à identifier rapidement, à examiner et à prendre des mesures concernant les risques et les menaces pour les initiés.
+- [Conformité des communications](communication-compliance.md): réduit les risques de communication en vous aidant à capturer automatiquement les messages inappropriés, à examiner les éventuelles violations de stratégie et à prendre des mesures pour minimiser les dommages.
+- [Gestion des risques internes :](insider-risk-management.md)détecter les activités risquées au sein de votre organisation pour vous aider à identifier, examiner et prendre des mesures rapidement sur les risques internes et les menaces.
 
-## <a name="discovery--response-section"></a>Section Response & Response
+## <a name="discovery--response-section"></a>Section détection & réponse
 
-La section **réponse &** de la recherche sur la page d’accueil vous montre comment votre organisation peut rapidement trouver, examiner et répondre à des problèmes de conformité avec des données pertinentes.
+La section **De détection & réponse** sur la page d’accueil vous montre d’un coup d’œil comment votre organisation peut rapidement rechercher, examiner et répondre aux problèmes de conformité avec les données pertinentes.
 
-![Section sur la découverte et la réponse du catalogue de solutions Microsoft 365](../media/m365-solution-catalog-discovery-response.png)
+![Section découverte et réponse du catalogue de solutions Microsoft 365](../media/m365-solution-catalog-discovery-response.png)
 
-À partir de là, vous verrez des cartes pour les solutions suivantes :
+À partir de là, vous verrez des cartes pour les solutions suivantes :
 
-- [Audit](search-the-audit-log-in-security-and-compliance.md): enregistre l’activité de l’utilisateur et de l’administrateur de votre organisation afin que vous puissiez effectuer des recherches dans le journal d’audit et examiner une liste complète d’activités sur tous les emplacements et les services.
-- [Demandes](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)des personnes concernées : recherche et exporte les données personnelles d’un utilisateur pour vous aider à répondre aux demandes des personnes concernées par RGPD.
+- [Audit](search-the-audit-log-in-security-and-compliance.md): enregistre l’activité des utilisateurs et des administrateurs de votre organisation afin que vous pouvez effectuer des recherches dans le journal d’audit et examiner une liste complète des activités dans tous les emplacements et services.
+- [Demandes des personnes responsables](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)des données : recherche et exporte les données personnelles d’un utilisateur pour vous aider à répondre aux demandes des personnes objet de données concernant le R GDPR.
 - [eDiscovery](manage-legal-investigations.md)
-    - [Découverte électronique principale](ediscovery-cases.md): effectue des recherches dans les différents emplacements de contenu pour identifier, conserver et exporter des données en réponse à des demandes de récupération légale et à des cas eDiscovery.
-    - [Advanced eDiscovery](overview-ediscovery-20.md): s’appuie sur les fonctionnalités eDiscovery en fournissant une analyse intelligente et un apprentissage automatique pour vous aider à analyser les données pertinentes pour les demandes de découverte.
+    - [Core eDiscovery](ediscovery-cases.md): recherche dans les emplacements de contenu pour identifier, conserver et exporter des données en réponse à des demandes de découverte légale et des cas eDiscovery.
+    - [Advanced eDiscovery](overview-ediscovery-20.md): s’appuie sur les fonctionnalités eDiscovery en fournissant des analyses intelligentes et un apprentissage automatique pour vous aider à analyser plus en détail les données pertinentes pour les demandes de découverte.
 
-## <a name="how-do-i-get-this"></a>Comment puis-je obtenir cela ?
+## <a name="how-do-i-get-this"></a>Comment obtenir cette demande ?
 
-Pour visiter le catalogue de solutions Microsoft 365, accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité. Sélectionnez **catalogue** dans le volet de navigation sur le côté gauche de l’écran pour ouvrir la page d’accueil du catalogue.
+Pour visiter le catalogue de solutions Microsoft 365, connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données [https://compliance.microsoft.com](https://compliance.microsoft.com) de conformité. Sélectionnez **Catalogue** dans le volet de navigation sur le côté gauche de l’écran pour ouvrir la page d’accueil du catalogue.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-**Pourquoi ne puis-je pas voir le catalogue de solutions Microsoft 365 ?**
+**Pourquoi ne vois-je pas le catalogue de solutions Microsoft 365 ?**
 
-Tout d’abord, vérifiez que vous disposez des autorisations et des licences appropriées. Ensuite, connectez-vous en [https://compliance.microsoft.com](https://compliance.microsoft.com) tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité.
+Tout d’abord, assurez-vous que vous avez les licences et autorisations appropriées. Ensuite, connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur [https://compliance.microsoft.com](https://compliance.microsoft.com) de données de conformité.
 
-**Certaines des fonctionnalités de conformité indiquées dans la page catalogue de solutions ne sont pas disponibles dans le centre de conformité Microsoft 365. Que faire ?**
+**Certaines des fonctionnalités de conformité répertoriées dans la page du catalogue de solutions ne sont pas disponibles dans le Centre de conformité Microsoft 365. Que dois-je faire ?**
 
-Nous travaillons en permanence à ajouter de nouvelles fonctionnalités au centre de conformité Microsoft 365 et au catalogue de solutions. Si vous ne trouvez pas une solution spécifique dans la zone de navigation, elle sera accessible lorsque la solution sera disponible dans votre abonnement.
+Nous travaillons toujours pour ajouter de nouvelles fonctionnalités au Centre de conformité Microsoft 365 et au catalogue de solutions. Si vous ne trouvez pas de solution spécifique dans la zone de navigation, elle sera accessible lorsque la solution sera disponible dans votre abonnement.
 
-Si vous recherchez une solution de conformité existante et qu’elle n’est pas disponible dans le centre de conformité Microsoft 365, vous pouvez toujours accéder aux solutions dans le &amp; Centre de sécurité conformité existant en accédant à [https://protection.office.com](https://protection.office.com) . Vous pouvez également cliquer sur l’onglet **ressources supplémentaires** dans le volet de navigation de gauche du centre de conformité Microsoft 365 et sélectionner la fiche centre de sécurité et conformité Office 365.  
+Si vous recherchez une solution de conformité existante et qu’elle n’est pas encore disponible dans le Centre de conformité Microsoft 365, vous pouvez toujours accéder aux solutions dans le Centre de conformité de sécurité existant en accédant à &amp; [https://protection.office.com](https://protection.office.com) . Vous pouvez également cliquer  sur l’onglet Plus de ressources dans le navigation de gauche du Centre de conformité Microsoft 365 et sélectionner la carte du Centre de sécurité et conformité Office 365.  
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- **Visitez le gestionnaire de conformité Microsoft**, qui vous aide à comprendre l’état de conformité de votre organisation avec les normes et réglementations clés. Il fournit les actions recommandées que vous pouvez prendre pour renforcer votre position globale de conformité et fournit des fonctionnalités de flux de travail pour vous aider à exécuter efficacement ces actions. Pour en savoir plus, consultez [la rubrique Gestionnaire de conformité](compliance-manager.md).
+- **Visitez le Gestionnaire de conformité Microsoft,** qui vous aide à comprendre l’état de conformité de votre organisation avec les principales normes et réglementations. Il fournit des actions recommandées que vous pouvez effectuer pour renforcer votre posture de conformité globale et fournit des fonctionnalités de flux de travail pour vous aider à effectuer efficacement ces actions. Pour en savoir plus, [consultez le Gestionnaire de conformité.](compliance-manager.md)
 
-- **Configurez des stratégies de gestion des risques initiés** pour minimiser les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque dans votre organisation. Consultez la rubrique [gestion des risques internes](insider-risk-management.md).
+- **Configurez les stratégies** de gestion des risques internes pour réduire les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque dans votre organisation. Consultez [La gestion des risques internes.](insider-risk-management.md)
 
-- **Découvrez et créez des stratégies de conformité des communications** pour identifier et corriger rapidement les violations de la stratégie de code de conduite d’entreprise. Consultez [la rubrique communication Compliance](communication-compliance.md).
+- **Découvrez et créez des stratégies de conformité des** communications pour identifier et corriger rapidement les violations de stratégie de code de conduite d’entreprise. Voir [Conformité des communications.](communication-compliance.md)
 
-- **Microsoft information protection**, Découvrez comment les solutions Microsoft 365 vous aident à découvrir, classer et protéger les informations sensibles où qu’elles soient ou que vous parcouriez.
-    - **Familiarisez-vous avec la sécurité des applications Cloud de Microsoft et configurez**-la. Voir [démarrage rapide : prise en main de la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
-    - **Prise en main des classifieurs**. La classification du contenu, puis son étiquetage afin qu’il puisse être protégé et géré correctement est le point de départ de la discipline de protection des informations. Voir [en savoir plus sur les classifieurs de formation (aperçu)](classifier-learn-about.md).
+- **Microsoft Information Protection**, découvrez comment les solutions Microsoft 365 vous aident à découvrir, classer et protéger les informations sensibles où qu’elles se déplacent.
+    - **Familiarisez-vous avec Microsoft Cloud App Security et définissez-le.** Voir [Démarrage rapide : commencer avec Microsoft Cloud App Security.](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+    - **Commencer avec les classifieurs.** La classification du contenu, puis son étiquetage afin qu’il puisse être protégé et géré correctement est le point de départ de la protection des informations. Voir [En savoir plus sur les classifieurs entraisables (prévisualisation).](classifier-learn-about.md)
 
-- **Visitez régulièrement votre catalogue de solutions Microsoft 365** et assurez-vous de consulter les nouvelles solutions pour vous aider à répondre à vos besoins en matière de conformité. Connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis sélectionnez **catalogue** dans le volet de navigation de gauche.
+- **Visitez souvent votre catalogue de solutions Microsoft 365** et veillez à passer en revue les nouvelles solutions pour vous aider à répondre à vos besoins en matière de conformité. Connectez-vous, [https://compliance.microsoft.com](https://compliance.microsoft.com) puis sélectionnez **Catalogue** dans le volet de navigation gauche.

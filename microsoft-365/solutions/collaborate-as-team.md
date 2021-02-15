@@ -38,7 +38,7 @@ Cette vidéo montre les étapes de configuration décrites dans ce document.</br
 
 ## <a name="azure-external-collaboration-settings"></a>Paramètres de collaboration externe Azure
 
-Le partage dans Microsoft 365 est régi à son niveau le plus élevé par les [paramètres de collaboration externe B2B dans Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations) Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
+Le partage dans Microsoft 365 est régi à son niveau le plus élevé par les [paramètres de collaboration externe B2B dans Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations) Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace les paramètres de partage que vous configurez dans Microsoft 365.
 
 Vérifiez les paramètres de collaboration externe B2B pour vous assurer que le partage avec des invités n’est pas bloqué.
 
@@ -59,7 +59,7 @@ Si vous travaillez avec des invités de plusieurs organisations, vous pouvez res
 
 ## <a name="teams-guest-access-settings"></a>Paramètres d’accès invité Teams
 
-Teams dispose d’un commutateur master on/off pour l’accès invité et de divers paramètres disponibles pour contrôler ce que les invités peuvent faire dans une équipe. Le commutateur maître, **Autoriser l’accès invité dans Teams,** doit être **en** cours pour que l’accès invité fonctionne dans Teams.
+Teams dispose d’un commutateur master on/off pour l’accès invité et de divers paramètres disponibles pour contrôler ce que les invités peuvent faire dans une équipe. Le commutateur maître, **Autoriser l’accès invité** dans Teams, doit être **en** cours pour que l’accès invité fonctionne dans Teams.
 
 Vérifiez que l’accès invité est activé dans Teams et ajustez les paramètres invité en fonction des besoins de votre entreprise. Gardez à l’esprit que ces paramètres affectent toutes les équipes.
 
@@ -107,7 +107,7 @@ Si vous souhaitez autoriser le partage de fichiers et de dossiers avec des perso
 
 Pour définir les paramètres de partage au niveau de l’organisation SharePoint
 
-1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation de gauche, sous Centres d’administration, cliquez **sur SharePoint**.
+1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation de gauche, sous Centres d’administration, cliquez **sur SharePoint.**
 2. Dans le Centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Stratégies,** puis cliquez sur **Partage.**
 3. Assurez-vous que le partage externe pour SharePoint est définie sur **Tout** le monde ou **Nouveau et les invités existants.**
 4. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
@@ -157,7 +157,7 @@ Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’il
 Pour définir les paramètres de partage au niveau du site
 1. Dans le Centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Sites** et cliquez **sur Sites actifs.**
 2. Sélectionnez le site de l’équipe que vous venez de créer.
-3. Cliquez sur ... et choisissez **Partage.**
+3. Cliquez sur ... et choisissez **Partage**.
 4. Assurez-vous que le partage est définie sur **Tout** le monde ou **Nouveau et sur les invités existants.**
 5. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
@@ -187,6 +187,6 @@ Pour inviter des invités à une équipe
 
 [Créer un extranet B2B avec des invités gérés](b2b-extranet.md)
 
-[Intégration de SharePoint et OneDrive à Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[Intégration de SharePoint et de OneDrive à Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
 
 [Les options de partage sont grisées lors du partage à partir de SharePoint ou OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

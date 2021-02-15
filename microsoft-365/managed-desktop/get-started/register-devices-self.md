@@ -19,9 +19,9 @@ ms.locfileid: "49840680"
 Bureau géré Microsoft peut fonctionner avec de nouveaux appareils ou vous pouvez réutiliser les appareils que vous avez peut-être déjà (ce qui nécessitera de les réimager). Vous pouvez inscrire des appareils avec Bureau géré Microsoft dans le portail Microsoft Endpoint Manager.
 
 > [!NOTE]
-> Vous travaillez avec un partenaire pour obtenir des appareils ? Si c’est le cas, vous n’avez pas besoin de vous soucier des hashes matériels ; Ils s’en chargeront pour vous. Assurez-vous que votre partenaire établit une relation avec vous dans [l’Partner Center](https://partner.microsoft.com/dashboard). Votre partenaire peut en savoir plus sur [l’aide de l’Centre de partenaires.](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer) Une fois cette relation établie, votre partenaire enregistre simplement les appareils en votre nom ; aucune action supplémentaire n’est requise de votre part. Si vous souhaitez consulter les détails ou si votre partenaire a des questions, consultez étapes pour les partenaires [pour inscrire des appareils.](register-devices-partner.md) Une fois les appareils inscrits, vous pouvez vérifier [l’image](#check-the-image) et [remettre](#deliver-the-device) les appareils à vos utilisateurs.
+> Vous travaillez avec un partenaire pour obtenir des appareils ? Si c’est le cas, vous n’avez pas besoin de vous soucier de l’obtention des hashes matériels ; Ils s’en chargeront pour vous. Assurez-vous que votre partenaire établit une relation avec vous dans [l’Partner Center](https://partner.microsoft.com/dashboard). Votre partenaire peut en savoir plus sur [l’aide de l’Centre de partenaires.](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer) Une fois cette relation établie, votre partenaire enregistre simplement les appareils en votre nom ; aucune action supplémentaire n’est requise de votre part. Si vous souhaitez consulter les détails ou si votre partenaire a des questions, consultez étapes pour les partenaires [pour inscrire des appareils.](register-devices-partner.md) Une fois les appareils inscrits, vous pouvez vérifier [l’image](#check-the-image) et [remettre](#deliver-the-device) les appareils à vos utilisateurs.
 
-## <a name="prepare-to-register-brand-new-devices"></a>Préparer l’inscription des nouveaux appareils
+## <a name="prepare-to-register-brand-new-devices"></a>Préparer l’inscription de nouveaux appareils
 
 
 Une fois que vous avez les nouveaux appareils en main, vous devez suivre les étapes suivantes :
@@ -36,13 +36,13 @@ Une fois que vous avez les nouveaux appareils en main, vous devez suivre les ét
 
 Bureau géré Microsoft identifie chaque appareil de manière unique en référant son hachage matériel. Vous avez trois options pour obtenir ces informations :
 
-- Demandez à votre fournisseur OEM le fichier d’inscription AutoPilot, qui inclut les h biens matériels.
+- Demandez à votre fournisseur OEM le fichier d’inscription AutoPilot, qui inclut les hages matériels.
 - Exécutez [un script Windows PowerShell sur](#powershell-script-method) chaque appareil et collectez les résultats dans un fichier.
 - Démarrez chaque appareil(mais ne terminez pas l’expérience d’installation de Windows) et collectez les [hages](#flash-drive-method)sur un lecteur flash amovible.
 
 #### <a name="powershell-script-method"></a>Méthode de script PowerShell
 
-Vous pouvez utiliser le script [ PowerShellGet-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) sur le site web de la galerie PowerShell. Pour plus d’informations sur l’identification de l’appareil et le hachage matériel, voir Ajout d’appareils [à Windows Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices#device-identification).
+Vous pouvez utiliser le script [ PowerShellGet-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) sur le site web de la galerie PowerShell. Pour plus d’informations sur l’identification de l’appareil et le hachage matériel, voir [Ajout d’appareils à Windows Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices#device-identification).
 
 1.  Ouvrez une invite PowerShell avec des droits d’administration.
 2.  Exécuter `Install-Script -Name Get-WindowsAutoPilotInfo`
@@ -55,7 +55,7 @@ Vous pouvez utiliser le script [ PowerShellGet-WindowsAutoPilotInfo.ps1](https:/
 1. Sur un appareil autre que celui que vous inscrivez, insérez un lecteur USB.
 2. Ouvrez une invite PowerShell avec des droits d’administration.
 3. Exécuter `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience de configuration.* Si vous démarrez accidentellement l’installation, vous devez réinitialiser ou réinitialiser l’appareil.
+4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience d’installation.* Si vous démarrez accidentellement l’expérience d’installation, vous devez réinitialiser ou réinitialiser l’appareil.
 5. Insérez le lecteur USB, puis appuyez sur Shift + F10.
 6. Ouvrez une invite PowerShell avec des droits d’administration, puis exécutez `cd <pathToUsb>` .
 7. Exécuter `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
@@ -75,7 +75,7 @@ Les données des fichiers CSV doivent être combinées en un seul fichier pour t
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Inscrire des appareils à l’aide du portail d’administration
 
-Dans [Microsoft Endpoint Manager,](https://endpoint.microsoft.com/)sélectionnez **Appareils** dans le volet de navigation gauche. Recherchez la section Bureau géré Microsoft du menu et sélectionnez **Appareils.** Dans l’espace de travail Appareils de bureau gérés Microsoft, sélectionnez **+** Inscrivez les appareils, qui ouvre un fly-in pour inscrire de nouveaux appareils.
+Dans [Microsoft Endpoint Manager,](https://endpoint.microsoft.com/)sélectionnez **Appareils** dans le volet de navigation de gauche. Recherchez la section Bureau géré Microsoft du menu et sélectionnez **Appareils.** Dans l’espace de travail Appareils de bureau gérés Microsoft, sélectionnez **+** Inscrivez les appareils, qui ouvre un fly-in pour inscrire de nouveaux appareils.
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -113,7 +113,7 @@ Vous pouvez surveiller la progression de l’inscription de l’appareil sur la 
 
 Si votre appareil est issu d’un fournisseur de partenaire Bureau géré Microsoft, l’image doit être correcte.
 
-Vous pouvez également appliquer l’image vous-même si vous préférez. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
+Vous pouvez également appliquer l’image vous-même si vous le souhaitez. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
 
 ### <a name="deliver-the-device"></a>Remettre l’appareil
 

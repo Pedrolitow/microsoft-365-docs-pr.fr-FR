@@ -74,7 +74,7 @@ Vous pouvez utiliser la Gestion des droits numériques (IRM) pour contrôler et 
 | Empêcher les personnes de télécharger des documents qui ne la prise en charge de l’IRM dans cette liste ou cette bibliothèque. Si vous sélectionnez cette option, les personnes ne pourront télécharger aucun des types de fichiers suivants : les types de fichiers qui n’ont pas de logiciels de protection IRM correspondants installés sur tous les serveurs web frontaux. Types de fichiers que SharePoint Server 2010 ne peut pas déchiffrer. Types de fichiers protégés par IRM dans un autre programme.|Cochez la case Ne pas autoriser les utilisateurs à télécharger des documents qui **ne la prisent pas en** charge.|
 |Supprimez les autorisations restreintes de cette liste ou bibliothèque à une date spécifique.|Cochez la case Arrêter **de restreindre l’accès** à la bibliothèque, puis sélectionnez la date de votre choix.|
 |Contrôler l’intervalle de mise en cache des informations d’identification pour le programme sous licence pour ouvrir le document. Ce paramètre est uniquement pris en charge dans le cloud global De Microsoft. Le paramètre n’est pas disponible dans les déploiements cloud nationaux.|Sélectionnez **la case à cocher Utilisateurs** pour vérifier leurs informations d’identification à l’aide de cet intervalle (jours), puis entrez l’intervalle de mise en cache des informations d’identification en nombre de jours.|
-|Autorisez la protection de groupe afin que les utilisateurs peuvent partager avec les membres du même groupe.|Sélectionnez **Autoriser la protection de** groupe, puis entrez le nom du groupe pour le partage.|
+|Autoriser la protection de groupe afin que les utilisateurs peuvent partager avec les membres du même groupe.|Sélectionnez **Autoriser la protection de** groupe, puis entrez le nom du groupe pour le partage.|
 
 8. Une fois que vous avez terminé de sélectionner les options de votre choix, sélectionnez **OK.**
   
@@ -97,7 +97,7 @@ La gestion des droits numériques permet de protéger le contenu restreint des m
   
 - Permet d’empêcher une visionneuse autorisée de copier, modifier, imprimer, télécopier ou copier et coller le contenu pour une utilisation non autorisée
     
-- Permet d’empêcher une visionneuse autorisée de copier le contenu à l’aide de la fonctionnalité d’impression de l’écran dans Microsoft Windows
+- Permet d’empêcher une visionneuse autorisée de copier le contenu à l’aide de la fonctionnalité Imprimer l’écran dans Microsoft Windows
     
 - Permet d’empêcher une visionneuse non autorisée d’afficher le contenu s’il est envoyé par courrier électronique après son téléchargement à partir du serveur
     
@@ -120,14 +120,14 @@ La gestion des droits numériques ne peut pas protéger les contenus restreints 
     
 - Copie via l’utilisation de programmes tiers de capture d’écran
     
-- Copie des métadonnées de contenu (valeurs de colonne) via l’utilisation de programmes de capture d’écran tiers ou d’une action copier-coller
+- Copie des métadonnées de contenu (valeurs de colonne) à l’aide de programmes de capture d’écran tiers ou d’une action copier-coller
   
 ## <a name="how-irm-works-for-lists-and-libraries"></a>Fonctionnement de l’IRM pour les listes et les bibliothèques
 <a name="__toc256598178"> </a>
 
 La protection IRM est appliquée aux fichiers au niveau de la liste ou de la bibliothèque. Lorsque irm est activé pour une bibliothèque, la gestion des droits s’applique à tous les fichiers de cette bibliothèque. Lorsque irm est activé pour une liste, la gestion des droits s’applique uniquement aux fichiers joints aux éléments de liste, et non aux éléments de liste réels.
   
-Lorsque des personnes téléchargent des fichiers dans une liste ou une bibliothèque activée pour IRM, les fichiers sont chiffrés de sorte que seules les personnes autorisées peuvent les afficher. Chaque fichier géré par des droits contient également une licence d’émission qui impose des restrictions aux personnes qui visualisent le fichier. Les restrictions classiques incluent la lecture seule d’un fichier, la désactivation de la copie du texte, l’interdiction d’enregistrer une copie locale et l’impression du fichier. Les programmes clients qui peuvent lire les types de fichiers pris en charge par IRM utilisent la licence d’émission dans le fichier géré par des droits pour appliquer ces restrictions. C’est ainsi qu’un fichier géré par des droits conserve sa protection même après son téléchargement à partir du serveur.
+Lorsque des personnes téléchargent des fichiers dans une liste ou une bibliothèque activée pour IRM, les fichiers sont chiffrés afin que seules les personnes autorisées peuvent les afficher. Chaque fichier géré par des droits contient également une licence d’émission qui impose des restrictions aux personnes qui visualisent le fichier. Les restrictions classiques incluent la lecture seule d’un fichier, la désactivation de la copie du texte, l’interdiction d’enregistrer une copie locale et l’impression du fichier. Les programmes clients qui peuvent lire les types de fichiers pris en charge par IRM utilisent la licence d’émission dans le fichier géré par des droits pour appliquer ces restrictions. C’est ainsi qu’un fichier géré par des droits conserve sa protection même après son téléchargement à partir du serveur.
   
 Les types de restrictions qui sont appliquées à un fichier lorsqu’il est téléchargé à partir d’une liste ou d’une bibliothèque sont basés sur les autorisations de l’utilisateur individuel sur le site qui contient le fichier. Le tableau suivant explique comment les autorisations sur les sites correspondent aux autorisations IRM.
   
@@ -135,8 +135,8 @@ Les types de restrictions qui sont appliquées à un fichier lorsqu’il est té
 |:-----|:-----|
 |Gérer les autorisations, Gérer un site Web|**Contrôle total** (tel que défini par le programme client) : cette autorisation permet généralement à un utilisateur de lire, modifier, copier, enregistrer et modifier des autorisations de contenu géré par des droits.|
 |Modifier des éléments, gérer des listes, ajouter et personnaliser des pages|**Modifier,** **copier** et enregistrer : un utilisateur ne peut imprimer un fichier que si la case Autoriser les utilisateurs à imprimer des **documents** est sélectionnée dans la page Paramètres de gestion des droits relatifs à l’information pour la liste ou la bibliothèque.|
-|Afficher les éléments|**Lecture**: un utilisateur peut lire le document, mais ne peut pas copier ou modifier son contenu. Un utilisateur peut imprimer uniquement si la case Autoriser les utilisateurs à imprimer des **documents** est sélectionnée dans la page Paramètres de gestion des droits relatifs à l’information pour la liste ou la bibliothèque.|
-|Autres|Aucune autre autorisation ne correspond directement aux autorisations IRM.|
+|Afficher les éléments|**Lecture**: un utilisateur peut lire le document, mais ne peut pas copier ou modifier son contenu. Un utilisateur ne peut imprimer que si la case Autoriser les utilisateurs à imprimer des **documents** est sélectionnée dans la page Paramètres de gestion des droits relatifs à l’information pour la liste ou la bibliothèque.|
+|Autre|Aucune autre autorisation ne correspond directement aux autorisations IRM.|
    
 Lorsque vous activez irm pour une liste ou une bibliothèque dans SharePoint Server 2013, vous ne pouvez protéger que les types de fichiers de cette liste ou bibliothèque pour lesquelles un logiciel de protection est installé sur tous les serveurs web frontux. Un logiciel de protection est un programme qui contrôle le chiffrement et le déchiffrement des fichiers gérés par des droits d’un format de fichier spécifique. SharePoint inclut des protecteurs pour les types de fichiers suivants :
   

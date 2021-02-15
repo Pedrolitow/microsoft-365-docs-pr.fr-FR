@@ -66,6 +66,6 @@ Après avoir créé le connecteur, vous pouvez revenir à la page **Connecteurs*
 
 Pour afficher plus de détails, sélectionnez le connecteur dans la liste de la page **Connecteurs** de données pour afficher la page de présentation. Sous **État,** la plage de dates qui s’affiche indique le filtre d’âge qui a été sélectionné lors de la création du connecteur.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Les éléments LinkedIn sont importés dans le sous-foldeur LinkedIn dans la boîte de réception de la boîte aux lettres de stockage dans Microsoft 365. Ils s’affichent sous la mesure de messages électroniques.

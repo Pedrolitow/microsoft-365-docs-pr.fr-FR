@@ -31,7 +31,7 @@ Vous pouvez également déployer d’autres applications non Microsoft pour vos 
 
 ## <a name="apps-provided-by-microsoft"></a>Applications fournies par Microsoft
 
-Les versions 64 bits des applications de la suite Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Entreprise et OneNote sont incluses dans votre licence Bureau géré Microsoft). Les versions « Exécuter en un clic  » de Microsoft Project et De Visio ne sont pas incluses par défaut, mais vous pouvez les demander à être ajoutées. Pour plus d’informations sur ces applications, voir Installer Microsoft Project ou [Microsoft Visio sur les appareils de bureau géré Microsoft.](../get-started/project-visio.md)
+Les versions 64 bits des applications de la suite Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Entreprise et OneNote sont incluses dans votre licence Bureau géré Microsoft). Les versions « Exécuter en un clic  » de Microsoft Project et Visio ne sont pas incluses par défaut, mais vous pouvez les demander à être ajoutées. Pour plus d’informations sur ces applications, voir Installer Microsoft Project ou [Microsoft Visio sur les appareils de bureau géré Microsoft.](../get-started/project-visio.md)
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Ce que Microsoft fait pour prendre en charge les applications que nous fournissons
 

@@ -1,6 +1,6 @@
 ---
-title: Conseils de navigation docs Microsoft 365
-description: 'Conseils et astuces pour naviguer dans la documentation technique de Microsoft 365 : explique les éléments tels que la page Hub, la table des matières, l’en-tête, ainsi que la façon d’utiliser les arborescences hiérarchiques et d’utiliser le filtre de version.'
+title: Conseils de navigation dans la documentation Microsoft 365
+description: 'Conseils et astuces pour naviguer dans la documentation technique de Microsoft 365 : explique des éléments tels que la page hub, la table des matières, l’en-tête, ainsi que l’utilisation des navigations et l’utilisation du filtre de version.'
 ms.date: 08/12/2020
 ms.prod: sql
 ms.technology: release-landing
@@ -16,62 +16,62 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/16/2020
 ms.locfileid: "49688732"
 ---
-# <a name="microsoft-365-docs-navigation-guide"></a>Guide de navigation docs Microsoft 365
+# <a name="microsoft-365-docs-navigation-guide"></a>Guide de navigation de la documentation Microsoft 365
 
-Cette rubrique fournit des conseils et des astuces pour naviguer dans l’espace de la documentation technique de Microsoft 365.  
+Cette rubrique fournit quelques conseils et astuces pour naviguer dans l’espace de documentation technique Microsoft 365.  
 
-## <a name="hub-page"></a>Page Hub
+## <a name="hub-page"></a>Page hub
 
-La page Hub Microsoft 365 se trouve à [https://aka.ms/microsoft365docs](https://aka.ms/microsoft365docs) l’adresse et est le point d’entrée de la recherche de contenu Microsoft 365 pertinent.
+La page hub Microsoft 365 est le point d’entrée pour la recherche de contenu [https://aka.ms/microsoft365docs](https://aka.ms/microsoft365docs) Microsoft 365 pertinent.
 
-Vous pouvez toujours revenir à cette page en sélectionnant **Microsoft 365** dans l’en-tête en haut de chaque page de la documentation technique de Microsoft 365 :
+Vous pouvez toujours revenir à cette page en sélectionnant **Microsoft 365** dans l’en-tête en haut de chaque page de l’ensemble de documentation technique Microsoft 365 :
 
-![Microsoft 365 en en-tête](media/m365-header-cursor.png)
+![En-tête Microsoft 365](media/m365-header-cursor.png)
 
 ## <a name="offline-documentation"></a>Documentation hors connexion
 
-Si vous souhaitez afficher la documentation de Microsoft 365 sur un système hors ligne, vous pouvez créer un fichier PDF à l’endroit où vous vous trouvez dans la documentation technique de Microsoft 365.
+Si vous souhaitez afficher la documentation Microsoft 365 sur un système hors connexion, vous pouvez créer un pdf où que vous vous trouveriez dans la documentation technique de Microsoft 365.
 
-Si vous souhaitez créer un fichier PDF, sélectionnez le lien **Télécharger le PDF** situé en bas de chaque table des matières.
+Si vous souhaitez créer un fichier PDF, sélectionnez le lien Télécharger **pdf** en bas de chaque table des matières.
 
-![Télécharger le fichier PDF](media/m365-download-pdf-cursor.png)
+![Télécharger PDF](media/m365-download-pdf-cursor.png)
 
-## <a name="toc-search"></a>Recherche de table des matières 
-Dans docs.microsoft.com, vous pouvez effectuer des recherches dans le contenu de la table des matières en utilisant la zone de recherche de filtre en haut :
+## <a name="toc-search"></a>Recherche TOC 
+Sur docs.microsoft.com, vous pouvez effectuer une recherche dans le contenu de la table des matières à l’aide de la zone de recherche de filtre en haut :
 
 ![Utiliser la zone de filtre](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>Filtre de version
-La documentation technique de Microsoft 365 fournit du contenu pour des produits supplémentaires, notamment Office 365 Germany et Office 365 géré par 21 VIANET (Chine). Les fonctionnalités peuvent varier d’une version à une autre et, en tant que telles, le contenu lui-même peut varier.
+La documentation technique de Microsoft 365 fournit du contenu pour d’autres produits, notamment Office 365 Germany et Office 365 géré par 21 Vianet (Chine). Les fonctionnalités peuvent varier d’une version à l’autre, parfois le contenu proprement dit peut varier.
 
-Vous pouvez utiliser le filtre de version pour vous assurer que vous voyez du contenu pour la version appropriée de Microsoft 365 :
+Vous pouvez utiliser le filtre de version pour vous assurer que vous voyez le contenu de la version appropriée de Microsoft 365 :
 
-![Filtre de version Microsoft 365](media/m365-version-filter.png)
+![Filtre de version De Microsoft 365](media/m365-version-filter.png)
 
-## <a name="breadcrumbs"></a>Barres
+## <a name="breadcrumbs"></a>Breadcrumbs
 
-Les arborescences hiérarchiques peuvent être recherchées sous l’en-tête et au-dessus de la table des matières, et indiquent où se trouve l’article actuel dans la table des matières.  Non seulement cette opération permet de définir le contexte sur le type de contenu que vous lisez, mais elle vous permet également de naviguer dans l’arborescence de la table des matières :
+Vous trouverez des barre de barre de chemin sous l’en-tête et au-dessus de la table des matières, et indiquez où se trouve l’article actuel dans la table des matières.  Cela permet non seulement de définir le contexte sur le type de contenu que vous lisez, mais il vous permet également de naviguer vers le haut de l’arborescence de la table des matières :
 
-![Barres de navigation Microsoft 365](media/m365-breadcrumb.png)
+![Microsoft 365 breadcrumbs](media/m365-breadcrumb.png)
 
-## <a name="article-section-navigation"></a>Article navigation dans les sections
+## <a name="article-section-navigation"></a>Navigation dans la section Article
 
-Le volet de navigation de droite vous permet de naviguer rapidement dans les sections d’un article, ainsi que d’identifier votre emplacement au sein de l’article.  
+Le volet de navigation de droite vous permet d’accéder rapidement aux sections d’un article et d’identifier votre emplacement dans l’article.  
 
 ![Navigation à droite](media/m365-article-sections.png)
 
 ## <a name="submit-docs-feedback"></a>Envoyer des commentaires sur les documents
 
-Si vous trouvez un problème dans un article, vous pouvez envoyer des commentaires à l’équipe de contenu SQL de cet article en faisant défiler la page vers le bas, puis en sélectionnant **contenu**.
+Si vous trouvez un problème dans un article, vous pouvez envoyer des commentaires à l’équipe de contenu SQL pour cet article en faisant défiler vers le bas jusqu’au bas de la page et en sélectionnant commentaires sur le **contenu.**
 
-![Commentaires sur le contenu des problèmes git](media/m365-article-feedback.png)
+![Commentaires sur le contenu git](media/m365-article-feedback.png)
 
 ## <a name="contribute-to-microsoft-365-documentation"></a>Contribuer à la documentation Microsoft 365
 
-Saviez-vous que vous pouviez modifier le contenu sur docs.microsoft.com vous-même ? Si vous le faites, non seulement notre documentation sera améliorée, mais vous serez également crédité en tant que collaborateur à la page. Pour commencer, consultez les éléments suivants :
+Savez-vous que vous pouvez modifier le contenu sur docs.microsoft.com vous-même ? Si vous le faites, non seulement notre documentation s’améliorera, mais vous serez également crédité en tant que collaborateur de la page. Pour commencer, voir :
 
-- [Guide de collaboration Microsoft docs](https://docs.microsoft.com/contribute/)
+- [Guide de collaborateur Microsoft Docs](https://docs.microsoft.com/contribute/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Prise en main de la [documentation technique de Microsoft 365](index.yml).
+- Mise en place de la [documentation technique Microsoft 365.](index.yml)
