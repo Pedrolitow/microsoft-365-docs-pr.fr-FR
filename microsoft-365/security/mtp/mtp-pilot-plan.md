@@ -1,7 +1,7 @@
 ---
 title: Planification de votre projet Pilote Microsoft 365 Defender
 description: Planifiez votre projet Microsoft 365 Defender pilote avec les parties prenantes pour gérer les attentes et garantir un résultat réussi.
-keywords: Pilote de la Protection Microsoft contre les menaces, planifier le projet pilote Protection Microsoft contre les menaces, évaluer la Protection Microsoft contre les menaces en production, projet pilote de protection Microsoft contre les menaces, cybersécurité, menace avancée persistante, sécurité d’entreprise, appareils, appareils, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
+keywords: Projet pilote sur la Protection Microsoft contre les menaces, planifier le projet pilote Protection Microsoft contre les menaces, évaluer la Protection Microsoft contre les menaces en production, projet pilote de protection Microsoft contre les menaces, cybersécurité, menace avancée persistante, sécurité d’entreprise, appareils, appareils, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -63,14 +63,14 @@ Les types de systèmes d’exploitation à évaluer doivent également être dé
 
 ## <a name="use-cases"></a>Cas d’utilisation
 
-Les cas d’utilisation représentent des instructions sur la façon dont l’outil testé est destiné à être utilisé par ses utilisateurs prévus. Elles peuvent être formulées sous forme d’articles d’utilisateur du point de vue d’un personnage particulier, tel qu’un analyste SOC. Par exemple :
+Les cas d’utilisation représentent des instructions sur la façon dont l’outil testé est destiné à être consommé par ses utilisateurs prévus. Elles peuvent être formulées sous forme d’articles d’utilisateur du point de vue d’un personnage particulier, tel qu’un analyste SOC. Par exemple :
 - En tant qu’analyste SOC, je dois afficher, corréler, évaluer et gérer les alertes et les événements sur les appareils, les utilisateurs et les boîtes aux lettres dans mon réseau. [Gestion des incidents]
 - En tant qu’analyste SOC, je dois avoir l’outil et le processus permettant d’examiner et de répondre automatiquement aux événements malveillants dans mon réseau. [Ir automatique]
 - En tant qu’analyste SOC, je dois rechercher des données à partir de mon environnement pour rechercher des menaces connues et potentielles, ainsi que des activités suspectes. [Recherche avancée]
 
-N’oubliez pas que ces cas d’utilisation doivent être créés dans les paramètres de l’étendue définie. Si, par exemple, l’étendue des tests n’inclut pas d’évaluation d’outils tels que Microsoft Cloud App Security, les cas d’utilisation qui s’appuient sur cette source de données ne doivent pas être créés.
+Gardez à l’esprit que ces cas d’utilisation doivent être créés dans les paramètres de l’étendue définie. Si, par exemple, l’étendue des tests n’inclut pas d’évaluation d’outils tels que Microsoft Cloud App Security, les cas d’utilisation qui s’appuient sur cette source de données ne doivent pas être créés.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Dans la liste des cas d’utilisation, vous pouvez commencer à créer des conditions requises. Les conditions requises incluent des fonctionnalités qu’un outil doit avoir pour satisfaire les cas d’utilisation. Ces exigences peuvent être décomposées en catégories telles que la configuration et la maintenance, la prise en charge des intégrations et les exigences spécifiques aux fonctionnalités telles que la capacité de recherche et la possibilité de créer des alertes personnalisées.
 
@@ -86,7 +86,7 @@ Les critères de réussite sont en fin de compte l’ensemble de barres à mesur
 
 Une façon de rassembler tous les éléments de votre plan peut être de créer une carte de performance. Voir un exemple de carte de performance ci-dessous :
 
-| Cas d’utilisation | Conditions requises | Configuration requise | Plan de test | Résultat attendu | État du test | Niveau | Notes |
+| Cas d’utilisation | Configuration requise | Configuration requise | Plan de test | Résultat attendu | État du test | Niveau | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Gestion des incidents|- Microsoft 365 Defender  </br></br>- Microsoft Defender pour l’identité </br></br>- Microsoft Defender pour point de terminaison </br></br>- Microsoft Cloud App Security (facultatif)|Pour plus [d’informations,](https://aka.ms/mtp-trial-lab) voir les conditions préalables à la préparation, à la configuration et à la configuration |[Simuler une attaque](mtp-pilot-simulate.md) <br></br>[Examiner l’incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Les enquêteurs peuvent comprendre l’étendue et l’impact de l’incident et gérer l’incident||||
 |AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender pour l’identité </br></br>- Microsoft Defender pour point de terminaison |Pour plus [d’informations,](https://aka.ms/mtp-trial-lab) voir les conditions préalables à la préparation, à la configuration et à la configuration <br>Activer autoIR  |[Simuler une attaque](mtp-pilot-simulate.md) <br></br>[Examen automatisé](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Les alertes et les incidents sont automatiquement corrigés par Microsoft 365 Defender||||

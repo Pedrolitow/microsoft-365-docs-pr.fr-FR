@@ -46,7 +46,7 @@ Pour les campagnes éligibles à des tarifs spéciaux, vous pouvez commencer par
 
 Pour toutes les autres organisations, une fois que vous êtes inscrit à [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) [Microsoft 365 Business Premium,](../business/sign-up.md)terminez l’installation en exécutant l’Assistant Configuration pour configurer les paramètres principaux.
 
-Pour toutes les organisations, augmentez la protection de la sécurité en protégeant les comptes d’administrateur, [](m365-campaigns-protect-admin-accounts.md)en protégeant l’accès à la messagerie et aux données [et](m365-campaigns-conditional-access.md)en augmentant la protection contre les [menaces.](m365-campaigns-increase-protection.md)
+Pour toutes les organisations, augmentez la protection de la sécurité en [protégeant](m365-campaigns-protect-admin-accounts.md)les comptes d’administrateur, [](m365-campaigns-conditional-access.md)en protégeant l’accès à la messagerie et aux données et en augmentant la protection contre les [menaces.](m365-campaigns-increase-protection.md)
 
 ## <a name="everyone-set-up-your-devices"></a>Tout le monde : configurer vos appareils
 
@@ -59,7 +59,7 @@ Pour configurer des appareils utilisateur :
 1. Chaque utilisateur [définit ses appareils mobiles.](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)
 2. Pour les appareils non utilisés, les utilisateurs peuvent configurer leurs [PC et Mac.](m365-campaigns-protect-pcs-macs.md)
 Pour le personnel clé, nous vous recommandons d’utiliser des [appareils gérés](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) pour une meilleure protection. Pour tous les appareils, vous devez configurer l’authentification [multifacteur.](m365-campaigns-multifactor-authenication.md)
-3. Tous les utilisateurs doivent apprendre à se protéger eux-mêmes et à votre campagne en en savoir plus sur le [hameçonnage et d’autres attaques.](m365-campaigns-phishing-and-attacks.md) Cette [infographie peut également](m365-campaigns-protect-campaign-infographic.md) aider vos utilisateurs à comprendre comment protéger votre campagne contre les menaces en ligne.
+3. Tous les utilisateurs doivent apprendre à se protéger eux-mêmes et à votre campagne en découvrir le [hameçonnage et d’autres attaques.](m365-campaigns-phishing-and-attacks.md) Cette [infographie peut](m365-campaigns-protect-campaign-infographic.md) également aider vos utilisateurs à comprendre comment protéger votre campagne contre les menaces en ligne.
 
 ## <a name="contact-support"></a>Contacter l’assistance
 

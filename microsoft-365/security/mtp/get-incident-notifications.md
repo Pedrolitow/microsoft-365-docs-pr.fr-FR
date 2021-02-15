@@ -53,7 +53,7 @@ De même, si votre organisation utilise le contrôle d’accès basé sur un rô
 
 Pour configurer votre première notification par courrier électronique pour les incidents, créez une règle et personnalisez les paramètres de notification par courrier électronique.
 
-1. Dans le volet de navigation, sélectionnez **Notifications par**  >  **courrier électronique d’incident des paramètres.**
+1. Dans le volet de navigation, sélectionnez **Notifications** par  >  **courrier électronique d’incident des paramètres.**
 2. Sélectionnez **Ajouter un élément.**
 3. Donnez un nom à la règle dans **Nom** et fournissez une **description.**
 
@@ -65,12 +65,12 @@ Pour configurer votre première notification par courrier électronique pour les
     - **Inclure le nom de l’organisation** : indique si le nom du client apparaît ou non dans la notification par courrier électronique.
     - **Inclure un lien portail propre au client** : ajoute un lien avec l’ID de client pour autoriser l’accès à un client spécifique.
     
-    ![Fenêtre des paramètres Notif pour les notifs de messages électroniques d’incident](../../media/incidentemailnotif2.png)
+    ![Fenêtre des paramètres Notif pour les notifs de courrier électronique d’incident](../../media/incidentemailnotif2.png)
 5. Sélectionnez **Suivant** pour aller à la section **Destinataires.** Ici, vous pouvez spécifier les adresses de messagerie qui recevront les notifications d’incident par courrier électronique. Sélectionnez **Ajouter un destinataire après** avoir tapé chaque adresse de messagerie.
 
     ![Fenêtre Ajouter des destinataires pour les notifs de courrier d’incident](../../media/incidentemailnotif3.png) 
 
-6. Enfin, **sélectionnez Suivant** pour passer **à la** règle de révision afin que vous pouvez voir tous les paramètres associés à votre nouvelle règle. Les destinataires commenceront à recevoir des notifications d’incident par courrier électronique en fonction des paramètres.
+6. Enfin, **sélectionnez Suivant** pour passer **à la** règle de révision afin de voir tous les paramètres associés à votre nouvelle règle. Les destinataires commenceront à recevoir des notifications d’incident par courrier électronique en fonction des paramètres.
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble des incidents dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)

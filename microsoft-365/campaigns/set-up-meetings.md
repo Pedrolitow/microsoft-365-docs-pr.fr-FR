@@ -40,7 +40,7 @@ Les réunions dans Microsoft Teams incluent l’audio, la vidéo et le partage. 
 
 Téléchargez une infographie au [format PDF](https://go.microsoft.com/fwlink/?linkid=2078712) ou [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) pour obtenir une vue d’ensemble rapide de la façon de rejoindre ou d’héberger une réunion en ligne avec Microsoft Teams.
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Bonnes pratiques
 
 Suivez les meilleures pratiques ci-après pour vos réunions en ligne :
 

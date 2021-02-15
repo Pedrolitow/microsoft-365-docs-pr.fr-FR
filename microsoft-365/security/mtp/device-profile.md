@@ -1,6 +1,6 @@
 ---
 title: Profil d’appareil dans le portail de sécurité Microsoft 365
-description: Afficher les niveaux de risque et d’exposition d’un appareil dans votre organisation. Analysez les menaces passées et présentes et protégez l’appareil avec les dernières mises à jour.
+description: Afficher les niveaux de risque et d’exposition d’un appareil de votre organisation. Analysez les menaces passées et présentes et protégez l’appareil avec les dernières mises à jour.
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, Protection Microsoft contre les menaces, MTP, centre de sécurité, Microsoft Defender ATP, Office 365 ATP, Azure ATP, page appareil, profil d’appareil, page ordinateur, profil de l’ordinateur
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -77,7 +77,7 @@ Les actions disponibles sur la page de profil d’appareil sont les suivantes :
 * **Gérer les balises** : met à jour les balises personnalisées que vous avez appliquées à cet appareil.
 * **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en le maintenant connecté à Microsoft Defender pour le point de terminaison. Vous pouvez choisir d’autoriser Outlook, Teams et Skype Entreprise à s’exécuter lorsque l’appareil est isolé, à des fins de communication.
 * **Centre de actions** : afficher l’état des actions envoyées. Disponible uniquement si une autre action a déjà été sélectionnée.
-* **Restreindre l’exécution** de l’application : empêche l’exécution des applications qui ne sont pas signées par Microsoft.
+* **Restreindre l’exécution de** l’application : empêche l’exécution des applications qui ne sont pas signées par Microsoft.
 * **Exécuter une analyse antivirus** : met à jour Windows Defender définitions antivirus et exécute immédiatement une analyse antivirus. Choisissez entre l’analyse rapide ou l’analyse complète.
 * **Collecter un package d’examen** : collecte des informations sur l’appareil. Une fois l’examen terminé, vous pouvez le télécharger.
 * **Lancer une session De réponse en** direct : charge un shell distant sur l’appareil pour des [enquêtes de sécurité approfondies.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
@@ -86,13 +86,13 @@ Les actions disponibles sur la page de profil d’appareil sont les suivantes :
 
 ## <a name="tabs-section"></a>Section Onglets
 
-Les onglets de profil d’appareil vous permettent d’obtenir une vue d’ensemble des détails de sécurité sur l’appareil et des tableaux contenant une liste d’alertes.
+Les onglets de profil d’appareil vous permettent d’utiliser une vue d’ensemble des détails de sécurité sur l’appareil et des tableaux contenant une liste d’alertes.
 
 Les appareils inscrits dans Microsoft Defender pour le point de terminaison affichent également des onglets qui présentent une chronologie, une liste de recommandations de sécurité, un inventaire logiciel, une liste des vulnérabilités découvertes et des ko manquants (mises à jour de sécurité).
 
 ### <a name="overview-tab"></a>Onglet Vue d’ensemble
 
-L’onglet par défaut est **Vue d’ensemble.** Il fournit un aperçu rapide des faits de sécurité les plus importants sur l’appareil.
+L’onglet par défaut est **Vue d’ensemble.** Il fournit un aperçu rapide des faits de sécurité les plus importants concernant l’appareil.
 
 ![Image de l’onglet Vue d’ensemble pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
@@ -110,7 +110,7 @@ Vous pouvez personnaliser le nombre d’éléments affichés, ainsi que les colo
 
 Les colonnes de cet onglet incluent des informations sur la gravité de la menace ayant déclenché l’alerte, ainsi que sur l’état, l’état de l’enquête et la personne à qui l’alerte a été affectée.
 
-La *colonne Entités* concernées fait référence à l’appareil (entité) dont vous affichez actuellement le profil, ainsi qu’à tous les autres appareils de votre réseau affectés.
+La *colonne Entités* concernées fait référence à l’appareil (entité) dont vous affichez actuellement le profil, ainsi qu’à tous les autres appareils de votre réseau concernés.
 
 La sélection d’un élément dans cette liste ouvre un volant contenant encore plus d’informations sur l’alerte sélectionnée.
 
@@ -130,7 +130,7 @@ La sélection d’un élément dans cette liste ouvre un écran volant affichant
 
 La liste peut être filtrée par type d’événement spécifique ; par exemple, les événements du Registre ou les événements d’écran intelligent.
 
-La liste peut également être exportée vers un fichier CSV, pour téléchargement. Bien que le fichier ne soit pas limité par le nombre d’événements, la période maximale que vous pouvez choisir d’exporter est de sept jours.
+La liste peut également être exportée vers un fichier CSV, en téléchargement. Bien que le fichier ne soit pas limité par le nombre d’événements, la période maximale que vous pouvez choisir d’exporter est de sept jours.
 
 ### <a name="security-recommendations-tab"></a>Onglet Recommandations de sécurité
 
@@ -178,9 +178,9 @@ Le nombre d’éléments affichés par page et les colonnes affichées peuvent �
 
 La sélection d’un élément ouvre un volant qui relie la mise à jour.
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 
-* [Vue d’ensemble de Microsoft 365 Defender](microsoft-threat-protection.md)
+* [Présentation de Microsoft 365 Defender](microsoft-threat-protection.md)
 * [Activer Microsoft 365 Defender](mtp-enable.md)
 * [Examiner les entités sur les appareils, à l’aide d’une réponse en direct](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Examen et réponse automatisés (AIR) dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

@@ -36,7 +36,7 @@ ms.locfileid: "50044215"
 
 Vos données et informations de campagne sont importantes et souvent confidentielles. Protégez ces informations sensibles à l’aide d’étiquettes de chiffrement et de sensibilité afin que vos destinataires et vous-même traitiez les informations avec le niveau de sensibilité dont ils ont besoin.
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Bonnes pratiques
 
 Avant d’envoyer des messages électroniques avec des informations confidentielles ou sensibles, envisagez d’allumer :
 
@@ -51,7 +51,7 @@ Si vous souhaitez chiffrer un message qui ne répond pas à une règle prédéfi
 
 ## <a name="admin-settings"></a>Paramètres d’administration
 
-Vous pouvez en savoir plus sur la configuration du chiffrement des e-mails sur le chiffrement de [courrier électronique dans Microsoft 365.](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)
+Vous pouvez en savoir plus sur la configuration du chiffrement du courrier électronique à l’adresse de chiffrement de [courrier électronique dans Microsoft 365.](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)
 
 ### <a name="automatically-encrypt-email-messages"></a>Chiffrer automatiquement les messages électroniques
 
@@ -60,8 +60,8 @@ Les administrateurs peuvent créer des règles de flux de messagerie pour proté
 Vous créez des règles de flux de messagerie pour chiffrer les messages électroniques avec les nouvelles fonctionnalités de chiffrement de messages Office 365 (OME). Définir des règles de flux de messagerie pour déclencher le chiffrement des messages avec les nouvelles fonctionnalités OME à l’aide du Centre d’administration Exchange (EAC). 
 
 1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur général, connectez-vous.
-2. Choisissez la vignette Administrateur.
-3. Dans le Centre d’administration, **sélectionnez Centres d’administration > Exchange.**
+2. Sélectionnez la vignette Administrateur.
+3. Dans le Centre d’administration, choisissez **Centres d’administration > Exchange.**
 
 Pour plus d’informations, voir [Définir des règles de flux de messagerie pour chiffrer les messages électroniques.](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 

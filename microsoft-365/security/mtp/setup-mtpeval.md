@@ -47,7 +47,7 @@ Vous êtes actuellement en phase de mise en place. Prenez les étapes initiales 
 Inscrivez-vous à un abonnement Office 365 ou Azure Active Directory pour générer un client *.onmicrosoft.com* que vous pouvez utiliser pour vous inscrire à votre licence Microsoft 365 E5. 
 
 >[!NOTE]
->Si vous avez déjà un abonnement Office 365 ou Azure Active Directory, vous pouvez ignorer les étapes de création de client pilote ou d’essai Office 365 E5.
+>Si vous avez déjà un abonnement Office 365 ou Azure Active Directory, vous pouvez ignorer les étapes de création de la version d’essai ou du client pilote Office 365 E5.
 
 Dans cette phase, vous serez guidé vers :
 - Créer un client d’essai Office 365 E5
@@ -62,13 +62,13 @@ Dans cette phase, vous serez guidé vers :
 
    ![Image of_Office page d’essai gratuit 365 E5](../../media/mtp-eval-9.png)
   
-2. Terminez l’inscription de la version d’essai en entrant votre adresse e-mail (personnelle ou d’entreprise). Cliquez **sur Configurer le compte.**
+2. Terminez l’inscription de la version d’essai en entrant votre adresse de messagerie (personnelle ou d’entreprise). Cliquez **sur Configurer le compte.**
 
-   ![Image of_Office page de configuration de l’inscription de la version d’essai 365 E5](../../media/mtp-eval-10.png)
+   ![Image of_Office page de configuration de l’enregistrement de la version d’essai 365 E5](../../media/mtp-eval-10.png)
 
-3. Remplissez votre prénom, nom, numéro de téléphone d’entreprise, nom de la société, taille de la société et pays ou région.  
+3. Remplissez votre prénom, nom, numéro de téléphone d’entreprise, nom de société, taille de la société et pays ou région.  
 
-   ![Image of_Office page de configuration de l’inscription de la version d’essai 365 E5 demandant le nom, le téléphone et les détails de la société](../../media/mtp-eval-11.png)
+   ![Image of_Office page de configuration de l’enregistrement de la version d’essai 365 E5 demandant le nom, le téléphone et les détails de la société](../../media/mtp-eval-11.png)
    
    > [!NOTE]
    > Le pays ou la région que vous définissez ici détermine la région de centre de données où votre Office 365 sera hébergé.

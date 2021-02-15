@@ -1,6 +1,6 @@
 ---
 title: Obtenir des informations pertinentes sur une entité avec go hunt
-description: Découvrez comment utiliser l’outil de recherche pour rapidement interroger des informations pertinentes sur une entité ou un événement à l’aide d’un recherche avancée.
+description: Découvrez comment utiliser l’outil de recherche pour rapidement interroger des informations pertinentes sur une entité ou un événement à l’aide d’une recherche avancée.
 keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -43,7 +43,7 @@ Avec *l’action de recherche* go, vous pouvez rapidement examiner les événeme
 
     ![Image montrant les détails de la boîte aux lettres avec l’option aller à la recherche](../../media/mtp-ah/go-hunt-email.png)
 
-- Dans la page incident, vous pouvez également accéder à une liste d’entités sous l’onglet Preuve. La sélection de l’une de ces entités permet de trouver rapidement des informations sur cette entité.
+- Dans la page Incident, vous pouvez également accéder à une liste d’entités sous l’onglet Preuve. La sélection de l’une de ces entités permet de trouver rapidement des informations sur cette entité.
 
     ![Image montrant le fichier sélectionné avec l’option Aller à la recherche dans l’onglet Preuves](../../media/mtp-ah/go-hunt-evidence-file.png)
 
@@ -83,7 +83,7 @@ Vous pouvez utiliser *la recherche après* avoir sélectionné l’un des types 
 - URL
 
 ## <a name="query-for-event-information"></a>Requête d’informations sur les événements
-Lorsque vous *utilisez go hunt* to query pour obtenir des informations sur un événement de chronologie, la requête vérifie toutes les tables de schéma pertinentes pour les autres événements à l’heure de l’événement sélectionné. Par exemple, la requête suivante répertorie les événements dans différentes tables de schéma qui se sont produits autour de la même période sur le même appareil :
+Lorsque vous *utilisez la* recherche d’informations sur un événement de chronologie, la requête recherche dans toutes les tables de schéma pertinentes d’autres événements à l’heure de l’événement sélectionné. Par exemple, la requête suivante répertorie les événements dans différentes tables de schéma qui se sont produits autour de la même période sur le même appareil :
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event
@@ -107,7 +107,7 @@ En plus de modifier la requête pour obtenir des résultats plus pertinents, vou
 - [Afficher les résultats en tant que graphiques](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
 - [Créer une règle de détection personnalisée](custom-detection-rules.md)
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)

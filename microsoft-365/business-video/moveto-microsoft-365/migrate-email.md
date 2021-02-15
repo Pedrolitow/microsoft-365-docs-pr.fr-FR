@@ -78,7 +78,7 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
  
 1. Choose **Authorize**. 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Créer un sous-domaine pour le courrier électronique envoyé à Microsoft 365
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Créer un sous-domaine pour le courrier vers Microsoft 365
 
 1. Revenir à la console **d’administration Google Workspace.**
 1. Select **Domains**, **Manage domains**, then, **Add a domain alias**. 
@@ -111,7 +111,7 @@ Avant de commencer la migration, vous devez créer des alias de messagerie pour 
 1. Pour commencer l’étape  suivante, dans l’Assistant Ajouter des domaines dans le Centre d’administration Microsoft 365, sélectionnez Go **to Active users**. 
 1. Sélectionnez un utilisateur, puis **gérez le nom d’utilisateur et le courrier électronique.** 
 1. Dans ladown **Domains (Domaines),** sélectionnez le sous-domaine que vous avez précédemment créé. 
-1. Entrez un nom d’utilisateur, **sélectionnez Ajouter,** **Enregistrer les modifications** et fermez la fenêtre. 
+1. Entrez un nom d’utilisateur, **sélectionnez Ajouter,** **Enregistrer les modifications** et fermer la fenêtre. 
 
     Répétez ce processus pour chaque utilisateur. 
 

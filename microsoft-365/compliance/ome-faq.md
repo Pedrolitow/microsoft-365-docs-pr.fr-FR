@@ -62,7 +62,7 @@ Pour plus d’informations sur BYOK, voir Planification et mise en œuvre de vot
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>OME et BYOK avec Azure Information Protection modifient-ils l’approche de Microsoft pour les demandes de données tierces, telles que les demandes d’accès ?
 
-Non. OME et l’option de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d’Azure Information Protection n’ont pas été conçues pour répondre aux forces de l’ordre. OME, avec BYOK pour Azure Information Protection, a été conçu pour les clients axés sur la conformité. Microsoft prend les demandes tierces pour les données client très au sérieux. En tant que fournisseur de services cloud, nous prônons toujours la confidentialité des données client. Dans le cas où nous obtenons une autorisation, nous essayons toujours de rediriger le tiers vers le client pour obtenir les informations. (Veuillez lire le blog de Brad Smith : Protection des données client contre les espions du [gouvernement).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d’informations sur les [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) demandes de données tierces, voir Répondre aux demandes gouvernementales et d’application de la loi pour accéder aux données client sur le Centre de gestion de la confiance Microsoft. Voir également « Divulgation des données client » dans les [conditions d’utilisation des services en ligne (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
+Non. OME et l’option de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d’Azure Information Protection n’ont pas été conçues pour répondre aux forces de l’ordre. OME, avec BYOK pour Azure Information Protection, a été conçu pour les clients axés sur la conformité. Microsoft prend les demandes tierces pour les données client très au sérieux. En tant que fournisseur de services cloud, nous prônons toujours la confidentialité des données client. Dans le cas où nous obtenons une information, nous essayons toujours de rediriger le tiers vers le client pour obtenir les informations. (Veuillez lire le blog de Brad Smith : Protection des données client contre les espions du [gouvernement).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d’informations sur les [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) demandes de données tierces, voir Répondre aux demandes gouvernementales et d’application de la loi pour accéder aux données client sur le Centre de gestion de la confiance Microsoft. Voir également « Divulgation des données client » dans les [conditions d’utilisation des services en ligne (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>Comment cette fonctionnalité est-elle liée aux fonctionnalités héritées de chiffrement de messages Office 365 (OME) et de gestion des droits relatifs à l’information (IRM) ?
 
@@ -72,7 +72,7 @@ Les nouvelles fonctionnalités de chiffrement de messages Office 365 sont une é
 
 | Fonctionnalité | Versions précédentes d’OME | IRM | Nouvelles fonctionnalités OME |
 |:-----|:-----|:-----|:-----|
-|**Envoi d’un e-mail chiffré**|Uniquement par le biais de règles de flux de messagerie Exchange|Utilisateur final initié à partir d’Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou via des règles de flux de messagerie Exchange|Utilisateur final initié à partir d’Outlook pour Windows, d’Outlook pour Mac ou d’Outlook sur le web ; ou via des règles de flux de messagerie|
+|**Envoi d’un e-mail chiffré**|Uniquement par le biais de règles de flux de messagerie Exchange|Utilisateur final initié à partir d’Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou via des règles de flux de messagerie Exchange|Utilisateur final initié à partir d’Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou via des règles de flux de messagerie|
 |**Gestion des droits**|-|Option Ne pas forwarder et modèles personnalisés|Option Ne pas forwarder, option chiffrer uniquement, modèles par défaut et personnalisés|
 |**Type de destinataire pris en charge**|Destinataires externes uniquement|Destinataires internes uniquement|Destinataires internes et externes|
 |**Expérience du destinataire**|Les destinataires externes ont reçu un message HTML qu’ils ont téléchargé et ouvert dans un navigateur ou une application mobile téléchargée.|Les destinataires internes n’ont reçu que du courrier électronique chiffré dans Outlook pour Windows, Outlook pour Mac et Outlook sur le web.|Les destinataires internes et externes reçoivent des messages électroniques dans Outlook pour Windows, Outlook pour Mac, Outlook sur le web, Outlook pour Android et Outlook pour iOS, ou via un portail web, qu’ils soient dans la même organisation ou dans n’importe quelle organisation. Le portail OME ne nécessite aucun téléchargement distinct.|
@@ -84,7 +84,7 @@ Voir Configurer les nouvelles fonctionnalités de chiffrement de [messages Offic
   
 ## <a name="will-the-previous-version-of-ome-be-deprecated"></a>La version précédente d’OME sera-t-elle dépréciée ?
 
-Vous pouvez toujours utiliser la version précédente d’OME, qui n’est pas dépréciée pour le moment. Toutefois, nous encourageons vivement les organisations à utiliser la nouvelle solution OME améliorée. Les clients qui n’ont pas encore déployé OME ne peuvent pas configurer un nouveau déploiement de la version précédente d’OME.
+Vous pouvez toujours utiliser la version précédente d’OME, elle ne sera pas dépréciée pour le moment. Toutefois, nous encourageons vivement les organisations à utiliser la nouvelle solution OME améliorée. Les clients qui n’ont pas encore déployé OME ne peuvent pas configurer un nouveau déploiement de la version précédente d’OME.
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>Mon organisation utilise la Gestion des droits Active Directory, puis-je utiliser cette fonctionnalité ?
 
@@ -122,7 +122,7 @@ La réponse courte est oui ! Le chiffrement PDF vous permet de protéger les doc
 
 Pour Outlook sur le web, Outlook pour iOS et Outlook pour Android, vous pouvez chiffrer les fichiers PDF que vous envoyez sans aucune étape supplémentaire. Ces clients supportent en natif le chiffrement PDF.
 
-Le bureau Outlook ne prend pas en charge en natif le chiffrement des pièces jointes au format PDF. Au lieu de cela, vous devez configurer des règles de flux de messagerie Exchange ou la DLP pour appliquer d’abord le chiffrement aux pièces jointes PDF. Lorsque vous envoyez des messages à partir d’Outlook Desktop avec une pièce jointe PDF, le client envoie d’abord le message avec la pièce jointe au service. Lorsque le service reçoit le fichier, il applique la protection OME de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. Ensuite, Exchange Online envoie le message avec la pièce jointe au fichier PDF protégé.
+Le bureau Outlook ne prend pas en charge en natif le chiffrement des pièces jointes au format PDF. Au lieu de cela, vous devez configurer des règles de flux de messagerie Exchange ou la DLP pour appliquer d’abord le chiffrement aux pièces jointes PDF. Lorsque vous envoyez des messages à partir d’Outlook Desktop avec une pièce jointe PDF, le client envoie d’abord le message avec la pièce jointe au service. Lorsque le service reçoit le fichier, il applique la protection OME de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. Ensuite, Exchange Online envoie le message avec la pièce jointe du fichier PDF protégé.
 
 Pour activer le chiffrement pour les pièces jointes PDF, exécutez la commande suivante [dans Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
@@ -143,7 +143,7 @@ Not yet. Les pièces jointes OneDrive Entreprise ne sont pas pris en charge et l
 
 Lorsque les pièces jointes sont protégées par un courrier protégé, les clients Outlook offrent la possibilité d’afficher un aperçu du document directement. Outlook prend en charge l’aperçu des documents Office (docx, xlsx, pptx, doc, xls, ppt). Outlook sur le web prend en charge l’aperçu des documents Office (docx, xlsx, pptx) et PDF.  
 
-## <a name="what-email-clients-support-revocation-of-protected-emails"></a>Quels clients de messagerie supportent la révocation des e-mails protégés ?
+## <a name="what-email-clients-support-revocation-of-protected-emails"></a>Quels clients de messagerie la révocation des e-mails protégés est-elle prise en charge ?
 
 Outlook sur le web prend en charge la révocation du courrier protégé.  Voir [comment révoquer un message chiffré que vous avez envoyé pour](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) plus d’informations.
 
@@ -166,9 +166,9 @@ Oui. Pour plus d’informations sur la personnalisation des messages électroniq
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Existe-t-il des fonctionnalités de rapport ou des informations pour les e-mails chiffrés ?
 
-Il existe un rapport de chiffrement dans le Centre de sécurité et conformité. Consultez [les rapports de sécurité du courrier électronique dans le Centre de sécurité & conformité.](../security/office-365-security/view-email-security-reports.md)
+Il existe un rapport de chiffrement dans le Centre de sécurité et conformité. Voir [afficher les rapports de sécurité du courrier électronique dans le Centre de sécurité & conformité.](../security/office-365-security/view-email-security-reports.md)
   
-## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Puis-je utiliser le chiffrement de messages avec des fonctionnalités de conformité telles qu’eDiscovery ?
+## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Puis-je utiliser le chiffrement des messages avec des fonctionnalités de conformité telles qu’eDiscovery ?
 
 Oui. Tous les messages électroniques chiffrés sont découvrables par les fonctionnalités de conformité de Microsoft 365.
 
@@ -207,7 +207,7 @@ Il existe actuellement deux limitations connues :
 
 - Vous ne pouvez pas ouvrir les pièces jointes aux e-mails que vous recevez sur des appareils mobiles à l’aide d’Outlook Mobile.
 
-- L’affectation n’est pas prise en charge par le biais d’un groupe de sécurité à messagerie. Nous 5 000 personnes peuvent accéder directement à la boîte aux lettres partagée et le mappage automatique est activé pour Exchange Online. Le mappage automatique est activé par défaut pour Exchange Online.
+- L’affectation n’est pas prise en charge par le biais d’un groupe de sécurité à messagerie. Nous 5 000 utilisateurs ne donnent accès qu’à l’affectation directe de l’utilisateur à la boîte aux lettres partagée et le mappage automatique est activé pour Exchange Online. Le mappage automatique est activé par défaut pour Exchange Online.
 
 **Pour affecter un utilisateur à la boîte aux lettres partagée**
 

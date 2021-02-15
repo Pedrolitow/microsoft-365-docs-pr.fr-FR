@@ -37,7 +37,7 @@ L’authentification multifacteur offre une sécurité renforcée pour votre ent
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Pour plus d’informations, [voir Configurer l’authentification multifacteur dans Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+Pour plus d’informations, [voir configurer l’authentification multifacteur dans Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>Utiliser l’application Outlook sur vos appareils
 

@@ -96,7 +96,7 @@ Le nouveau certificat nécessite une connexion aux points de terminaison de la n
 
 1. Dans la fenêtre qui s’affiche, choisissez **Récupérer.**
 
-1. Lorsque l’utilitaire termine sa vérification, il renvoie un état. Si l’état affiche **OK,** votre serveur de messagerie peut valider correctement le nouveau certificat. Si ce n’est pas le cas, vous devez déterminer la cause de l’échec des connexions. Vous devez probablement mettre à jour les paramètres d’un pare-feu. La liste complète des points de terminaison qui doivent être accessibles est la suivante :
+1. Lorsque l’utilitaire termine sa vérification, il renvoie un état. Si l’état affiche **OK,** votre serveur de messagerie peut valider correctement le nouveau certificat. Si ce n’est pas le cas, vous devez déterminer ce qui provoque l’échec des connexions. Vous devez probablement mettre à jour les paramètres d’un pare-feu. La liste complète des points de terminaison qui doivent être accessibles est la suivante :
     - ocsp.globalsign.com
     - crl.globalsign.com
     - secure.globalsign.com   

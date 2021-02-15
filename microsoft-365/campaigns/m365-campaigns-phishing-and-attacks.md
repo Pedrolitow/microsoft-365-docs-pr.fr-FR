@@ -35,12 +35,12 @@ ms.locfileid: "50044475"
 
 Microsoft 365 inclut de nombreuses protections pour vous protéger contre les attaques, mais il existe des choses que vous pouvez faire vous-même pour limiter et réduire les risques d’attaques en ligne.
 
-- **Courrier indésirable ou courrier indésirable** Il existe de nombreuses raisons pour lesquelles vous pouvez recevoir du courrier indésirable et tous les courriers indésirables ne sont pas identiques. Toutefois, vous pouvez réduire ce qui vous arrive, et ainsi réduire les risques d’attaques, en filtrant le courrier indésirable.
+- **Courrier indésirable ou courrier indésirable** Il existe de nombreuses raisons pour lesquelles vous pouvez recevoir du courrier indésirable et tous les courriers indésirables ne sont pas identiques. Toutefois, vous pouvez réduire ce qui vous arrive, et par conséquent réduire les risques d’attaques, en filtrant le courrier indésirable.
 - **Hameçonnage** Une tentative de hameçonnage est un e-mail qui semble légitime mais qui tente d’obtenir vos informations personnelles ou de voler votre argent.
 - **Usurpation d’usurpation** Les scammers peuvent également utiliser une technique appelée usurpation d’adresse pour faire apparaître l’usurpation d’adresse comme si vous avez reçu un e-mail de vous-même. 
 - **Les** programmes malveillants sont des logiciels malveillants qui peuvent être installés sur votre ordinateur, généralement installés après avoir cliqué sur un lien ou ouvert un document à partir d’un e-mail. Il existe différents types de programmes malveillants (par exemple, ransomware, lorsque votre ordinateur est pris en charge), mais vous ne souhaitez en avoir aucun. 
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Bonnes pratiques
 
 ### <a name="reduce-spam-mail"></a>Réduire le courrier indésirable
 
@@ -53,9 +53,9 @@ Voici plus d’informations sur le signalement de courriers indésirables et [de
 
 ### <a name="avoid-phishing"></a>Éviter le hameçonnage
 
-- Ne répondez jamais à un message électronique qui vous demande d’envoyer des informations personnelles ou de compte.
-- Si vous recevez un e-mail qui semble suspect ou vous demande ce type d’informations, ne cliquez jamais sur les liens qui vous redéliquiez vers un site web d’entreprise.
-- Ne jamais ouvrir de fichier joint à un e-mail suspect.
+- Ne répondez jamais à un e-mail qui vous demande d’envoyer des informations personnelles ou de compte.
+- Si vous recevez un e-mail qui semble suspect ou vous demande ce type d’informations, ne cliquez jamais sur les liens censés vous aider à vous rendre sur un site web d’entreprise.
+- N’ouvrez jamais de fichier joint à un e-mail suspect.
 - Si l’e-mail semble être provenant d’une société, contactez le service clientèle de l’entreprise par téléphone ou par navigateur web pour voir si le courrier électronique est légitime.
 - Recherchez sur le web la ligne d’objet de l’e-mail suivie du mot canular pour voir si quelqu’un d’autre a signalé cette fraude.
 
@@ -77,6 +77,6 @@ Téléchargez cette infographie avec des conseils pour vous et les membres de vo
 
 En savoir plus sur les façons de :
 
-- [Assurer la sécurité de vos fichiers et communications avec Office.](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
+- [Conservez la sécurité de vos fichiers et communications avec Office.](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
 - [Restez sécurisé et privé au travail.](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
   

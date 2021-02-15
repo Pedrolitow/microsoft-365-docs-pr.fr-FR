@@ -50,7 +50,7 @@ Pour continuer avec une modification manuelle, lisez [Étape 2 : Acheter un nouv
 
 **Déjà acheté ?** Si vous avez déjà un abonnement vers qui vous souhaitez déplacer des [utilisateurs,](#step-3-check-your-new-subscription-and-licenses) ignorez cette étape et passez à l’étape 3 : Vérifiez votre nouvel abonnement et vos nouvelles licences dans cette rubrique.
 
-OR
+Ou
 
 **Achetez un nouvel abonnement et des licences :** Suivez les étapes de la procédure d’achat d’un autre abonnement [Microsoft 365](../buy-another-subscription.md) pour les entreprises pour acheter un nouvel abonnement.
 
@@ -88,7 +88,7 @@ Les licences de l’abonnement actuel seront supprimées ultérieurement . Vous 
 
 2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur auquel vous souhaitez attribuer une licence.
 
-3. Sous **l’onglet Licences et** applications, développez **Licences,** sélectionnez les zones des licences que vous souhaitez attribuer, puis sélectionnez **Enregistrer les modifications.**
+3. Sous **l’onglet Licences** et applications, développez **Licences,** sélectionnez les zones des licences que vous souhaitez attribuer, puis sélectionnez **Enregistrer les modifications.**
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Réaffecter des licences à plusieurs utilisateurs à la fois
 
@@ -103,7 +103,7 @@ Les licences de l’abonnement actuel seront supprimées ultérieurement . Vous 
 5. Basculez vers la position **Sur** pour les produits que vous souhaitez affecter à ces utilisateurs.
 
     > [!TIP]
-    > - Pour limiter les services disponibles pour l’utilisateur, basculez vers la **position** d’arrêt pour les services que vous souhaitez supprimer pour cet utilisateur. Par exemple, si vous souhaitez que l’utilisateur puisse accéder à tous les services disponibles à l’exception de Skype Entreprise Online, vous pouvez basculer le bouton bascule du service Skype Entreprise Online vers la **position** Hors service.
+    > - Pour limiter les services disponibles pour l’utilisateur, basculez vers la **position** d’arrêt pour les services que vous souhaitez supprimer pour cet utilisateur. Par exemple, si vous souhaitez que l’utilisateur puisse accéder à tous les services disponibles à l’exception de Skype Entreprise Online, vous pouvez basculer le bouton bascule du service Skype Entreprise Online vers la **position** De.
     > - Les attributions de licences précédentes sont alors supprimées pour les utilisateurs sélectionnés.
 
 6. En bas du volet **Remplacer les produits existants**, sélectionnez **Remplacer** \> **Fermer**.

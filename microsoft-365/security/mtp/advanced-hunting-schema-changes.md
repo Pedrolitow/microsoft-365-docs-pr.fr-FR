@@ -1,5 +1,5 @@
 ---
-title: Changements d’appellation dans le schéma de recherche avancée Microsoft 365 Defender
+title: Changements de nommage dans le schéma de recherche avancée Microsoft 365 Defender
 description: Suivre et passer en revue les tables et colonnes de modifications d’attribution de noms dans le schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -62,7 +62,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | `DetectionSource` | CustomerTI |  Ti personnalisée | Changement de nom |
 | `DetectionSource` | OfficeATP | Microsoft Defender pour Office 365 | Changement de nom |
 | `DetectionSource` | MTP   | Microsoft 365 Defender | Changement de nom |
-| `DetectionSource` | AzureATP |    Microsoft Defender pour Identity | Changement de nom |
+| `DetectionSource` | AzureATP |    Microsoft Defender pour l’identité | Changement de nom |
 | `DetectionSource` | CustomDetection   | Détection personnalisée | Changement de nom |
 | `DetectionSource` | AutomatedIgoigation |Examen automatisé | Changement de nom |
 | `DetectionSource` | ThreatExperts | Spécialistes des menaces Microsoft | Changement de nom |
@@ -70,9 +70,9 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | `ServiceSource` | Microsoft Defender ATP| Microsoft Defender pour point de terminaison | Changement de nom |
 |`ServiceSource` |Protection Microsoft contre les menaces   | Microsoft 365 Defender | Changement de nom |
 | `ServiceSource` | Office 365 – Protection avancée contre les menaces  |Microsoft Defender pour Office 365 | Changement de nom |
-| `ServiceSource` |Azure ATP    |Microsoft Defender pour Identity | Changement de nom |
+| `ServiceSource` |Azure ATP    |Microsoft Defender pour l’identité | Changement de nom |
 
 `DetectionSource`est disponible dans la table [AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`est disponible dans les tables [AlertEvidence](advanced-hunting-alertevidence-table.md) et [AlertInfo.](advanced-hunting-alertinfo-table.md) 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

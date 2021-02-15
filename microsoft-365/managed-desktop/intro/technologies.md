@@ -23,7 +23,7 @@ Cet article répertorie les technologies et applications utilisées dans bureau 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-Les licences Microsoft 365 Entreprise sont requises pour tous les utilisateurs du Bureau géré Microsoft. Pour plus d’informations sur les conditions requises en matière de licences pour le service, voir [Prerequisites for Microsoft Managed Desktop](../get-ready/prerequisites.md).
+La gestion des licences Microsoft 365 Entreprise est requise pour tous les utilisateurs du Bureau géré Microsoft. Pour plus d’informations sur les conditions requises pour les licences pour le service, voir [Prerequisites for Microsoft Managed Desktop](../get-ready/prerequisites.md).
 
 Cet article récapitule les composants inclus dans les licences d’entreprise requises, avec une description de la façon dont le service utilise chaque composant avec les appareils bureau géré Microsoft. Les rôles et responsabilités spécifiques pour chaque domaine sont détaillés dans la documentation du Bureau géré Microsoft. 
 
@@ -60,11 +60,11 @@ Inclus et géré dans le service
 [Microsoft Defender pour point de terminaison | Protection du réseau](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection) | La protection du réseau étend l’étendue de Microsoft Defender SmartScreen pour bloquer tout le trafic HTTP sortant qui tente de se connecter à des sources de faible réputation.
 [Protection contre la falsification Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) | La Protection contre les falsifications Windows permet d’empêcher les paramètres de sécurité tels que la protection antivirus d’être modifiés.
 [Protection antivirus en temps réel, heuristique et basée sur le comportement de l’antivirus Microsoft Defender]( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) | Recherchez toujours les menaces de fichier et de traitement qui ne sont peut-être pas détectées comme des programmes malveillants.
-[Protection de l’antivirus Microsoft Defender dans le cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus) | Fournit une protection automatisée et immédiate dynamique contre les menaces nouvelles et émergentes.
+[Protection cloud de l’antivirus Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus) | Fournit une protection automatisée et immédiate dynamique contre les menaces nouvelles et émergentes.
 [Microsoft Defender Bloquer à la première vue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus) | Permet de détecter et de bloquer les nouveaux programmes malveillants lorsque Windows détecte un fichier suspect ou inconnu.
 [Applications potentiellement indésirables de Microsoft Defender AV](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) | Les applications potentiellement indésirables (PUA) sont utilisées pour bloquer les applications qui peuvent ralentir votre ordinateur, afficher des publicités inattendues ou, au pire, installer d’autres logiciels qui peuvent être inattendus ou indésirables.
-[Windows Defender pare-feu avec fonctions avancées de sécurité](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) | Le filtrage du trafic réseau à double sens basé sur l’hôte pour un appareil, Windows Defender Firewall bloque le trafic réseau non autorisé qui circule à l’entrée ou à l’sortie de l’appareil local.
-[Contrôle de compte d’utilisateur](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/how-user-account-control-works) | Le contrôle de compte d’utilisateur bascule vers le Bureau sécurisé lorsqu’une tâche ou une action nécessite l’accès au type de compte administrateur. L’accès utilisateur standard est attribué aux utilisateurs du Bureau géré Microsoft lors de l’inscription. 
+[pare-feu Windows Defender avec fonctions avancées de sécurité](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) | Le filtrage du trafic réseau à double sens basé sur l’hôte pour un appareil, Windows Defender Firewall bloque le trafic réseau non autorisé qui circule à l’entrée ou à l’sortie de l’appareil local.
+[Contrôle de compte d’utilisateur](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/how-user-account-control-works) | Le contrôle de compte d’utilisateur bascule vers le Bureau sécurisé lorsqu’une tâche ou une action nécessite l’accès au type de compte d’administrateur. L’accès utilisateur standard est attribué aux utilisateurs du Bureau géré Microsoft lors de l’inscription. 
 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
@@ -72,5 +72,5 @@ Inclus et géré dans le service
  |
  --- | ---
 Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Vous pouvez utiliser toutes les fonctionnalités d’Enterprise Mobility + Security E3 et Azure Active Directory Premium P2 pour gérer les appareils GDM.
-Microsoft Cloud App Security |  Vous pouvez utiliser cette fonctionnalité facultative avec bureau géré Microsoft.
+Microsoft Cloud App Security |  Vous pouvez utiliser cette fonctionnalité facultative avec Bureau géré Microsoft.
 Azure Information Protection P2  | Vous pouvez utiliser cette fonctionnalité facultative avec bureau géré Microsoft.

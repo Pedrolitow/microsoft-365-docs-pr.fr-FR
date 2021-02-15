@@ -1,5 +1,5 @@
 ---
-title: Gestion des mises à jour dans le Bureau géré Microsoft
+title: Gestion des mises à jour dans Le Bureau géré Microsoft
 description: Le maintien à jour du Bureau géré Microsoft est un équilibre entre vitesse et stabilité.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -70,7 +70,7 @@ Ce processus de déploiement s’applique aux mises à jour des fonctionnalités
     <tr><td>Définition de l’antivirus</td><td colspan="4">Mise à jour avec chaque analyse</td></tr>
     <tr><td>Applications Microsoft 365 for entreprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">En savoir plus</a></td></tr>
     <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">En savoir plus</a></td></tr>
-    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/teams#updates">En savoir plus</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/teams#updates">En savoir plus</a></td></tr>
 </table>
 
 >[!NOTE]

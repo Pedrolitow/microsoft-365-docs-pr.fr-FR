@@ -59,9 +59,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `SipProxyAddress` | string | Adresse SIP (Session Initiation Protocol) VOIP (Voice over IP) du compte |
 | `City` | string | Ville où se trouve l’utilisateur du compte |
 | `Country` | string | Pays/région où se trouve l’utilisateur du compte |
-| `IsAccountEnabled` | valeur booléenne | Indique si le compte est activé ou non |
+| `IsAccountEnabled` | booléen | Indique si le compte est activé ou non |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

@@ -78,7 +78,7 @@ Pour plus d’informations, voir Créer une application pour accéder aux **[API
 
 Utilisez ce contexte lorsque vous devez fournir une application à de nombreux utilisateurs sur [plusieurs clients.](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps)
 
-1. Créez une application Azure Active Directory multi-client.
+1. Créez une application azure Active Directory multi-client.
 2. Attribuez l’autorisation souhaitée à l’application.
 3. Obtenir [le consentement de l’administrateur](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) pour l’application auprès de chaque client.
 4. Obtenez un jeton de sécurité à l’aide des informations d’identification de l’utilisateur en fonction de l’ID de locataire d’un client.

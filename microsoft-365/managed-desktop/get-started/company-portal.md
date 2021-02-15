@@ -1,6 +1,6 @@
 ---
 title: Installer le portail d’entreprise Intune sur les appareils
-description: Informations sur l’installation de l’application portail d’entreprise sur les appareils de bureau géré Microsoft
+description: Informations sur l’installation de l’application portail d’entreprise sur les appareils bureau géré Microsoft
 keywords: Bureau géré Microsoft, Microsoft 365, Portail d’entreprise
 ms.service: m365-md
 author: jaimeo
@@ -22,9 +22,9 @@ Bureau géré Microsoft nécessite que les administrateurs informatiques install
 - Les utilisateurs disposent d’un seul endroit pour parcourir et installer les applications disponibles. 
 - Les administrateurs informatiques peuvent organiser les applications par catégories pour leurs utilisateurs.  
 - Certaines applications (telles que Microsoft Project et Microsoft Visio) nécessitent le déploiement du Portail d’entreprise avec Bureau géré Microsoft.
-- Les administrateurs informatiques peuvent personnaliser le portail d’entreprise pour leur organisation. Cela inclut la création d’images de marque, l’ajout de contacts de support local, etc. Pour plus d’informations, [voir Comment configurer l’application Portail d’entreprise Microsoft Intune.](https://docs.microsoft.com/intune/company-portal-app)   
+- Les administrateurs informatiques peuvent personnaliser le portail d’entreprise pour leur organisation. Cela inclut l’imagerie de marque, l’ajout de contacts de support local, et bien plus encore. Pour plus d’informations, [voir Comment configurer l’application Portail](https://docs.microsoft.com/intune/company-portal-app)d’entreprise Microsoft Intune .   
 
-Cette rubrique documente le processus de déploiement du portail d’entreprise Intune sur vos utilisateurs de bureau géré Microsoft. Le processus global ressemble à ceci :
+Cette rubrique documente le processus de déploiement du portail d’entreprise Intune pour vos utilisateurs de bureau géré Microsoft. Le processus global ressemble à ceci :
 1. Acheter le portail d’entreprise à partir du Microsoft Store pour Entreprises et synchroniser avec Intune
 2. Affecter le portail d’entreprise à vos utilisateurs
 3. Communiquer les changements à vos utilisateurs
@@ -42,8 +42,8 @@ Après votre inscription au Bureau géré Microsoft, les opérations bureau gér
 
 ## <a name="step-3---communicate-change-to-your-users"></a>Étape 3 : communiquer les changements à vos utilisateurs
 En tant qu’administrateur informatique de votre organisation, il est important de faire savoir à vos utilisateurs comment utiliser le portail d’entreprise dans votre organisation. Bureau géré Microsoft recommande :
-- Étapes d’installation des applications à partir du portail d’entreprise. Pour plus d’informations, voir [Installer et partager des applications sur votre appareil.](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows)
-- Comment envoyer des demandes aux administrateurs informatiques pour les applications qui ne sont pas actuellement disponibles. Pour plus d’informations, voir [Demander une application pour le travail ou l’école.](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school)  
+- Étapes d’installation des applications à partir du portail d’entreprise. Pour plus d’informations, [voir Installer et partager des applications sur votre appareil.](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows)
+- Comment envoyer des demandes aux administrateurs informatiques pour les applications qui ne sont pas disponibles actuellement. Pour plus d’informations, voir [Demander une application pour le travail ou l’école.](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school)  
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en place du Bureau géré Microsoft
 

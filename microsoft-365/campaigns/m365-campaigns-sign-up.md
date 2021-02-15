@@ -46,7 +46,7 @@ Voici comment terminer votre inscription à Microsoft 365 pour les campagnes.
 
 ## <a name="steps-to-sign-up"></a>Étapes d’inscription
 
-1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. Cela vous prend à l’inscription à Microsoft 365.
+1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. Cette action vous prend en compte pour vous inscrire à Microsoft 365.
     > [!NOTE]
     > Si vous avez déjà un abonnement Microsoft 365 pour les entreprises et que vous souhaitez y ajouter l’offre Microsoft 365 pour les campagnes, ajoutez [Microsoft 365 pour](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)les campagnes à un abonnement existant.
 1. **Dans la page Microsoft 365 Entreprise,** entrez les détails de votre entreprise. Pour **l’adresse de messagerie professionnelle,** utilisez une adresse de messagerie actuelle. Nous n’avons besoin de cette adresse que pour rester en contact avec vous pendant le processus d’installation. Sélectionnez **Suivant**.
@@ -67,7 +67,7 @@ Voici comment terminer votre inscription à Microsoft 365 pour les campagnes.
     1. Vérifiez que le coût par utilisateur est de 5,00 $. 
     2. Si vous souhaitez uniquement vous configurer pour l’instant, sélectionnez **Suivant.** 
     3. Facultatif : ajoutez des licences supplémentaires maintenant en modifiant le numéro dans le **champ utilisateur.** Les membres du personnel avec qui vous travaillez peuvent se voir attribuer des [licences à Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) à tout moment.
-7. **Comment voulez-vous payer ? Page :** Sélectionnez une nouvelle carte de crédit, entrez les détails de votre carte de crédit professionnelle, puis **sélectionnez Commande.**  Si vous préférez, il est également possible d’utiliser un compte bancaire.
+7. **Comment voulez-vous payer ? Page**: Sélectionnez une nouvelle carte de **crédit,** entrez les détails de votre carte de crédit professionnelle, puis **sélectionnez Commande.** Si vous préférez, il est également possible d’utiliser un compte bancaire.
 8. **Cette page peut prendre un moment :** vous trouverez des détails sur l’endroit où vous vous connectez et votre ID d’utilisateur. Nous enverrons également ces informations à l’adresse de messagerie que vous avez entrée à l’étape 2 ci-dessus.
 
 Vos étapes d’inscription sont terminées ! Si vous souhaitez poursuivre les étapes suivantes, **sélectionnez** Démarrer le programme d’installation ou revenir plus tard pour terminer les étapes. Lorsque vous êtes prêt, vérifiez votre courrier électronique (à partir de l’étape 2) pour trouver votre nom d’utilisateur et votre mot de passe afin de pouvoir vous connecter la prochaine fois. Ces informations sont appelées informations d’identification d’administrateur ou d’administrateur global.
@@ -78,12 +78,12 @@ Si vous avez déjà un abonnement à Microsoft 365 pour les entreprises, par exe
 > [!IMPORTANT]
 > Vous ne pouvez pas ajouter l’offre Microsoft 365 pour les campagnes à un compte Microsoft 365 existant.
 
-1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. Cela vous prend à l’inscription à Microsoft 365.
+1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. Cette action vous prend en compte pour vous inscrire à Microsoft 365.
 2. Dans la **page d’accueil, commençons** par vous faire savoir, cliquez ou appuyez sur Vous souhaitez l’ajouter **à un abonnement existant ? Connectez-vous.**
     
     ![Sélectionnez Se connectez dans le coin supérieur droit.](../media/addtoexisting.png)
 3. Sur la page de signature, entrez l’alias d’administrateur de votre abonnement existant, par exemple *Alice@VoteContoso <span></span> .org*, choisissez Suivant, entrez votre mot de passe, puis **connectez-vous.**
-4. Sur **l’apparence, entrez** le nombre d’utilisateurs dont vous avez et choisissez **Suivant**. Vous n’avez pas besoin d’entrer un code promotionnel ici, car il est déjà inclus dans l’URL d’invitation.
+4. Dans la **partie à quoi cela ressemble-t-il ?** Entrez le nombre d’utilisateurs dont vous avez et choisissez **Suivant**. Vous n’avez pas besoin d’entrer un code promotionnel ici, car il est déjà inclus dans l’URL d’invitation.
 5. Dans la page **Comment voulez-vous payer ?** entrez votre mode de paiement et choisissez **Commande.**
 
 Une fois ces étapes effectuées, vous êtes prêt à attribuer les nouvelles [licences](../admin/manage/assign-licenses-to-users.md) à votre équipe de campagne.

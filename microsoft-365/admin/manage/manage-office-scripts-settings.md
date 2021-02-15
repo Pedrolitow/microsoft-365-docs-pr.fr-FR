@@ -15,7 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: Découvrez comment gérer les paramètres Des scripts Office pour les utilisateurs de votre organisation.
+description: Découvrez comment gérer les paramètres d’Office Scripts pour les utilisateurs de votre organisation.
 ms.openlocfilehash: 75d0a9d9e98652fc11eab7e8a7d6c826be031f6e
 ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
@@ -98,7 +98,7 @@ Les scripts Office permettent aux utilisateurs d’automatiser les tâches en en
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Comme Office Scripts fonctionne avec Power Automate, nous vous recommandons de passer en revue vos stratégies de protection contre la perte de données (DLP) existantes pour vous assurer que les données de votre organisation restent protégées pendant que les utilisateurs utilisent des scripts Office. Pour plus d’informations, voir Stratégies de protection contre la perte de [données (DLP).](/power-automate/prevent-data-loss)
+Étant donné que Les scripts Office fonctionnent avec Power Automate, nous vous recommandons de passer en revue vos stratégies de protection contre la perte de données (DLP) existantes pour vous assurer que les données de votre organisation restent protégées pendant que les utilisateurs utilisent Des scripts Office. Pour plus d’informations, voir Stratégies de protection contre la perte de [données (DLP).](/power-automate/prevent-data-loss)
 
 ## <a name="related-content"></a>Contenu connexe
 

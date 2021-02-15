@@ -46,12 +46,12 @@ L’une de ces licences vous donne accès aux fonctionnalités de Microsoft 365 
 - Enterprise Mobility + Security (EMS) E5 ou A5 
 - Office 365 E5 ou A5
 - Microsoft Defender pour point de terminaison
-- Microsoft Defender pour Identity 
+- Microsoft Defender pour l’identité 
 - Microsoft Cloud App Security
 - Defender pour Office 365 (Plan 2)
 
 > [!NOTE]
-> Les licences d’essai pour Office 365 ne fournissent actuellement pas d’accès à Microsoft 365 Defender.
+> Actuellement, les licences d’essai pour Office 365 ne permettent pas d’accéder à Microsoft 365 Defender.
 
 Pour plus d’informations, consultez les plans de [service Microsoft 365 Entreprise.](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)
 
@@ -61,22 +61,22 @@ Pour plus d’informations, consultez les plans de [service Microsoft 365 Entrep
 Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. Dans le Centre d'administration, accédez à **Facturation** > **Licences**.
 
 >[!NOTE]
-> Vous devez avoir le  rôle d’administrateur de facturation ou de lecteur **global** dans [Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) pour pouvoir voir les informations de licence. Si vous rencontrez des problèmes d’accès, veuillez contacter un administrateur général.
+> Le rôle d’administrateur  de facturation ou de lecteur **global** dans [Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) doit vous être attribué pour pouvoir voir les informations de licence. Si vous rencontrez des problèmes d’accès, veuillez contacter un administrateur général.
 
 ## <a name="required-permissions"></a>Autorisations requises
 Vous devez être administrateur **général ou** **administrateur** de sécurité dans Azure Active Directory pour activer Microsoft 365 Defender. Pour obtenir la liste des rôles requis pour utiliser Microsoft 365 Defender et des informations sur la façon dont l’accès aux données est réglementé, voir la gestion de l’accès à [Microsoft 365 Defender.](mtp-permissions.md)
 
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
-Accédez à Microsoft 365 Defender dans le Centre de sécurité Microsoft 365 à l’aide de Microsoft Edge, d’Internet Explorer 11 ou de tout navigateur web conforme HTML 5.
+Accédez à Microsoft 365 Defender dans le Centre de sécurité Microsoft 365 à l’aide de Microsoft Edge, d’Internet Explorer 11 ou de tout navigateur web html 5.
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilité pour LES ÉTATS-UNIS GCC, GCC High et d’autres institutions gouvernementales des États-Unis
 Actuellement, Microsoft 365 Defender *n’est pas* disponible pour :
-- Cloud communautaire du gouvernement américain (GCC)
+- Cloud communautaire pour le gouvernement américain (GCC)
 - Cloud communautaire du gouvernement américain élevé (GCC High)
 - Département de la Défense des États-Unis
 - Toutes les institutions gouvernementales américaines titulaires de licences commerciales
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble de Microsoft 365 Defender](microsoft-threat-protection.md)
 - [Activer Microsoft 365 Defender](mtp-enable.md)
 - [Gérer l’accès et les autorisations](mtp-permissions.md)

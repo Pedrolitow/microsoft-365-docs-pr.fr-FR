@@ -64,7 +64,7 @@ NotFound | In found (404) | Message d’erreur Général in trouvé.
 ResourceNotFound | In found (404) | Ressource \<the requested resource\> in trouvée.
 InternalServerError | Erreur interne du serveur (500) | *Remarque : aucun message d’erreur, retenter l’opération ou contacter Microsoft si elle n’est pas résolue*
 
-## <a name="examples"></a>範例
+## <a name="examples"></a>Exemples
 
 ```json
 {

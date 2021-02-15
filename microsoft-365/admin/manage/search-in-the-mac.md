@@ -24,13 +24,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2021
 ms.locfileid: "50054111"
 ---
-# <a name="search-in-the-microsoft-365-admin-center"></a>Recherche dans le Centre d’administration Microsoft 365
+# <a name="search-in-the-microsoft-365-admin-center"></a>Effectuer une recherche dans le Centre d’administration Microsoft 365
 
 En tant qu’administrateur d’une organisation Microsoft 365, vous pouvez utiliser la recherche pour rechercher des utilisateurs, effectuer des actions, accéder à différents paramètres et lire la documentation. Avec les nouvelles fonctionnalités de recherche, la vitesse de recherche a été améliorée et vous pouvez désormais effectuer des recherches à partir de chaque page du Centre d’administration. La zone de recherche a été déplacée vers la zone bannière en haut du centre d’administration. Vous pouvez utiliser le raccourci **Alt+S pour** utiliser la recherche à partir de n’importe quelle page.
 
 :::image type="content" source="../../media/search-bar.png" alt-text="Capture d’écran : Barre de recherche dans le Centre d’administration Microsoft 365":::
 
-Les résultats de la recherche sont organisés en différentes catégories. La plupart des catégories sont des éléments du Centre d’administration. Par exemple, les utilisateurs, les groupes, les boîtes aux lettres partagées ou les domaines. D’autres catégories indiquent les endroits où vous pouvez accéder, les actions que vous pouvez prendre ou les paramètres de niveau application que vous pouvez modifier. Il existe également une catégorie liée à la documentation.
+Les résultats de la recherche sont organisés en différentes catégories. La plupart des catégories sont des éléments du Centre d’administration. Par exemple, les utilisateurs, les groupes, les boîtes aux lettres partagées ou les domaines. D’autres catégories indiquent les endroits où vous pouvez naviguer, les actions que vous pouvez prendre ou les paramètres de niveau application que vous pouvez modifier. Il existe également une catégorie liée à la documentation.
 
 Les sections suivantes décrivent les différentes zones et catégories du Centre d’administration qui sont utilisables dans une recherche.
 
@@ -48,7 +48,7 @@ Si vous sélectionnez le menu « Autres actions » en plus de leur nom, vous pou
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Screenshot: User search with the option to reset password from search result":::
 
-**Conseils pour améliorer les résultats de recherche des utilisateurs**
+**Conseils pour améliorer les résultats de la recherche utilisateur**
 
 - Assurez-vous d’épeler correctement les noms des utilisateurs lorsque les recherches des utilisateurs correspondent exactement aux propriétés mentionnées précédemment. Par exemple, dans l’exemple ci-dessus, Ils ou Malz fonctionnent, mais une faute d’orthographe, telle que Jostin au lieu de Celle-ci, ne permettra pas de trouver cet utilisateur.
 - Pour obtenir une correspondance exacte, recherchez par adresse de messagerie principale ou nom d’utilisateur.
@@ -71,15 +71,15 @@ Vous pouvez rechercher la catégorie Actions qui contient les actions fréquemme
 
 ## <a name="navigation"></a>Navigation
 
-Les résultats offrent un moyen d’accéder rapidement à une page spécifique dans le Centre d’administration. Par exemple, la recherche de RBAC vous permettra d’accès à la page Rôles pour les rôles Azure AD.
+Les résultats vous offrent la possibilité d’accéder rapidement à une page spécifique dans le Centre d’administration. Par exemple, la recherche de RBAC vous permettra d’accès à la page Rôles pour les rôles Azure AD.
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Screenshot: Search results showing navigation path in the admin center":::
 
 ## <a name="settings"></a>Paramètres
 
-Recherchez les paramètres pris en charge au niveau de l’application liés à votre organisation, les services à qui vous vous abonnez, ainsi que les paramètres de sécurité et de confidentialité.
+Recherchez les paramètres de niveau application pris en charge liés à votre organisation, les services à qui vous vous abonnez, ainsi que les paramètres de sécurité et de confidentialité.
 
-:::image type="content" source="../../media/search-for-settings-mac.png" alt-text="Capture d’écran : résultats de recherche affichant les paramètres dans le Centre d’administration":::
+:::image type="content" source="../../media/search-for-settings-mac.png" alt-text="Screenshot: Search results showing settings in the admin center":::
 
 ## <a name="domain"></a>Domaine
 

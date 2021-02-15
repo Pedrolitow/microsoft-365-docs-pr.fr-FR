@@ -1,7 +1,7 @@
 ---
 title: Qu’arrive-t-il à Microsoft Secure Score ?
 description: Décrit les nouvelles modifications apportées au Niveau de sécurité Microsoft dans le Centre de sécurité Microsoft 365.
-keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
+keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -43,5 +43,5 @@ Aucune modification n’est planifiée pour le moment.
 
 - [Vue d’ensemble du score de sécurisation Microsoft](microsoft-secure-score.md)
 - [Évaluez votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
-- [Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
+- [Suivre votre historique du Score de sécurisation Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
 - [Nouveautés](microsoft-secure-score-whats-new.md)

@@ -45,7 +45,7 @@ Dans cette simulation, notre exemple de scénario commence par un script PowerSh
 
 ![Diagramme d’attaque PowerShell sans fichier avec injection de processus et schéma d’attaques SMB](../../media/mtp/mtpdiydiagram.png)
 
-Au cours de la simulation, l’attaque injecte du shellcode dans un processus en apparence plus complexe. Le scénario nécessite l’utilisation de notepad.exe. Nous avons choisi ce processus pour la simulation, mais les attaquants cibleraient probablement un processus système de longue durée, tel que svchost.exe. Le shellcode contacte ensuite le serveur de commande et de contrôle (C2) de l’attaquant pour recevoir des instructions sur la façon de continuer. Le script tente d’exécuter des requêtes de reconnaissance sur le contrôleur de domaine ( DC). La reconnaissance permet à une personne malveillante d’obtenir des informations sur les informations de connexion utilisateur récentes. Une fois que les attaquants ont ces informations, ils peuvent se déplacer ultérieurement dans le réseau pour obtenir un compte sensible spécifique
+Au cours de la simulation, l’attaque injecte du shellcode dans un processus en apparence plus complexe. Le scénario nécessite l’utilisation de notepad.exe. Nous avons choisi ce processus pour la simulation, mais les attaquants cibleraient probablement un processus système de longue durée, tel que svchost.exe. Le shellcode contacte ensuite le serveur de commande et de contrôle (C2) de l’attaquant pour recevoir des instructions sur la façon de continuer. Le script tente d’exécuter des requêtes de reconnaissance sur le contrôleur de domaine ( DC). La reconnaissance permet à une personne malveillante d’obtenir des informations sur les informations de connexion utilisateur récentes. Une fois que les personnes malveillantes ont ces informations, elles peuvent se déplacer ultérieurement dans le réseau pour obtenir un compte sensible spécifique.
 
 > [!IMPORTANT]
 > Pour obtenir des résultats optimaux, suivez les instructions de simulation d’attaque aussi étroitement que possible.
@@ -63,7 +63,7 @@ Au cours de la simulation, l’attaque injecte du shellcode dans un processus en
    - Vérifiez que [l’intégration de Microsoft Defender pour l’identité](https://docs.microsoft.com/cloud-app-security/mdi-integration) et Microsoft Cloud App Security a été activée.
    - Un utilisateur test est créé sur votre domaine : aucune autorisation d’administrateur n’est nécessaire.
 
-3. Vérifiez la configuration du périphérique de test :
+3. Vérifiez la configuration des périphériques de test :
 
    1. L’appareil s’exécute avec Windows 10 version 1903 ou une version ultérieure.
 
@@ -144,7 +144,7 @@ Pour afficher l’incident :
 
    ![Capture d’écran des incidents dans le menu de navigation](../../media/mtp/fig1.png)
 
-2. Sélectionnez l’élément le plus récent en cliquant sur le cercle situé à gauche du nom de l’incident. Un panneau latéral affiche des informations supplémentaires sur l’incident, y compris toutes les alertes associées. Chaque incident possède un nom unique qui le décrit en fonction des attributs des alertes qu’il inclut.
+2. Sélectionnez le dernier élément en cliquant sur le cercle situé à gauche du nom de l’incident. Un panneau latéral affiche des informations supplémentaires sur l’incident, y compris toutes les alertes associées. Chaque incident possède un nom unique qui le décrit en fonction des attributs des alertes qu’il inclut.
 
    ![Capture d’écran de la page incidents où les alertes générées sont agrégées pendant la simulation](../../media/mtp/fig4.png)
 
@@ -152,7 +152,7 @@ Pour afficher l’incident :
 
 3. Sélectionnez **Ouvrir la page Incident** pour obtenir plus d’informations sur l’incident.
 
-   Dans la page **Incident,** vous pouvez voir toutes les alertes et informations relatives à l’incident. Les informations incluent les entités et les ressources impliquées dans l’alerte, la source de détection des alertes (Microsoft Defender pour l’identité, EDR) et la raison pour laquelle elles ont été liées. L’examen de la liste des alertes d’incident indique la progression de l’attaque. À partir de cette vue, vous pouvez voir et examiner les alertes individuelles.
+   Dans la page **Incident,** vous pouvez voir toutes les alertes et informations relatives à l’incident. Les informations incluent les entités et les ressources impliquées dans l’alerte, la source de détection des alertes (Microsoft Defender pour l’identité, EDR) et la raison pour laquelle elles ont été liées. L’examen de la liste d’alertes d’incident indique la progression de l’attaque. À partir de cette vue, vous pouvez voir et examiner les alertes individuelles.
 
    Vous pouvez également cliquer sur **Gérer l’incident** dans le menu de droite pour marquer l’incident, l’affecter à vous-même et ajouter des commentaires.
 
@@ -173,7 +173,7 @@ Examinons quelques-unes des alertes générées pendant l’attaque simulée.
 
 Les attaquants avancés utilisent des méthodes sophistiquées et sophistiquées pour persister en mémoire et masquer les outils de détection. Une technique courante consiste à opérer à partir d’un processus système approuvé plutôt qu’à un exécutable malveillant, ce qui rend difficile pour les outils de détection et les opérations de sécurité de repérer le code malveillant.
 
-Pour permettre aux analystes SOC de capturer ces attaques avancées, les capteurs de mémoire profonde dans Microsoft Defender pour Point de terminaison fournissent à notre service cloud une visibilité sans précédent sur diverses techniques d’injection de code entre processus. La figure suivante montre comment Defender pour le point de terminaison a détecté et alerté sur la tentative d’injection de code <i>notepad.exe</i>.
+Pour permettre aux analystes SOC de capturer ces attaques avancées, les capteurs de mémoire profonde dans Microsoft Defender pour Point de terminaison fournissent à notre service cloud une visibilité sans précédent sur diverses techniques d’injection de code entre processus. La figure suivante montre comment Defender pour point de terminaison a détecté et alerté sur la tentative d’injection de code <i>notepad.exe</i>.
 
 ![Capture d’écran de l’alerte pour l’injection de code potentiellement malveillant](../../media/mtp/fig7.png)
 
@@ -192,14 +192,14 @@ Notez que les détails de l’alerte incluent l’adresse IP externe, un indicat
 
 Sélectionnez l’adresse IP dans l’arborescence du processus d’alerte pour afficher la page des détails de l’adresse IP.
 
-![Capture d’écran de l’alerte pour un comportement inattendu par un processus exécuté sans argument de ligne de commande](../../media/mtp/fig8.png)
+![Capture d’écran de l’alerte pour un comportement inattendu d’un processus exécuté sans argument de ligne de commande](../../media/mtp/fig8.png)
 
 La figure suivante affiche la page de détails de l’adresse IP sélectionnée (en cliquant sur l’adresse IP dans l’arborescence du processus d’alerte).
 ![Capture d’écran de la page de détails de l’adresse IP](../../media/mtp/fig9.png)
 
-#### <a name="alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity"></a>Alerte : Reconnaissance d’adresses UTILISATEUR et IP (SMB) (Source : Microsoft Defender pour l’identité)
+#### <a name="alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity"></a>Alerte : Reconnaissance des utilisateurs et des adresses IP (SMB) (Source : Microsoft Defender pour l’identité)
 
-L’éumération à l’aide du protocole SMB (Server Message Block) permet aux personnes malveillantes d’obtenir des informations récentes sur l’utilisateur qui les aident à se déplacer ultérieurement via le réseau pour accéder à un compte sensible spécifique.
+L’éumération à l’aide du protocole SMB (Server Message Block) permet aux personnes malveillantes d’obtenir des informations récentes sur l’utilisateur qui les aident à se déplacer ultérieurement sur le réseau pour accéder à un compte sensible spécifique.
 
 Dans cette détection, une alerte est déclenchée lorsque l’éumération de session SMB s’exécute sur un contrôleur de domaine.
 
@@ -225,7 +225,7 @@ Par exemple, faites défiler vers le bas jusqu’à ce que vous trouviez **l’�
 
 Dans la page Incident, sélectionnez **l’onglet Utilisateurs** pour afficher la liste des utilisateurs impliqués dans l’attaque. Le tableau contient des informations supplémentaires sur chaque utilisateur, y compris le score de priorité d’examen **de chaque** utilisateur.
 
-Sélectionnez le nom d’utilisateur pour ouvrir la page de profil de l’utilisateur dans laquelle un examen plus approfondie peut être effectué. [En savoir plus sur l’étude des utilisateurs à risque.](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify)
+Sélectionnez le nom d’utilisateur pour ouvrir la page de profil de l’utilisateur dans laquelle une enquête plus approfondie peut être menée. [En savoir plus sur l’étude des utilisateurs à risque.](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify)
 
 ![Capture d’écran de la page utilisateur Cloud App Security](../../media/mtp/fig13.png)
 
@@ -245,7 +245,7 @@ Sélectionnez l’alerte qui a déclenché un examen pour ouvrir la page **Déta
 - Alerte qui a déclenché l’examen automatisé.
 - Utilisateurs et appareils touchés. Si des indicateurs sont trouvés sur des appareils supplémentaires, ces appareils supplémentaires sont également répertoriés.
 - Liste des preuves. Les entités trouvées et analysées, telles que les fichiers, les processus, les services, les pilotes et les adresses réseau. Ces entités sont analysées pour les relations possibles avec l’alerte et sont classés comme étant malveillants ou non malveillants.
-- Menaces trouvées. Menaces connues trouvées au cours de l’enquête.
+- Menaces trouvées. Menaces connues trouvées pendant l’enquête.
 
 > [!NOTE]
 > Selon le délai, l’enquête automatisée est peut-être toujours en cours d’exécution. Patientez quelques minutes avant de collecter et d’analyser les preuves et de passer en revue les résultats. Actualisez la page **Détails de l’examen** pour obtenir les dernières conclusions.
@@ -266,7 +266,7 @@ Lorsque l’incident est résolu, il ferme toutes les alertes associées dans le
 
 ![Capture d’écran de la page Incidents avec le panneau Gérer les incidents ouvert dans lequel vous pouvez cliquer sur le commutateur pour résoudre l’incident](../../media/mtp/fig16.png)
 
-Cette opération termine la simulation d’attaque pour les scénarios de gestion des incidents et d’examen et de correction automatisés. La simulation suivante vous permettra de passer par une recherche proactive de menaces pour les fichiers potentiellement malveillants.
+Cette opération termine la simulation d’attaque pour les scénarios de gestion des incidents et d’examen et de correction automatisés. La simulation suivante vous permettra de faire une recherche proactive de menaces pour les fichiers potentiellement malveillants.
 
 ## <a name="advanced-hunting-scenario"></a>Scénario de recherche avancée
 
@@ -310,7 +310,7 @@ Un seul périphérique et boîte aux lettres interne est requis pour ce scénari
       EmailEvents
       ```
 
-   1. Modifiez la période pour les dernières 24 heures. En supposant que l’e-mail que vous avez envoyé lorsque vous avez lancé la simulation ci-dessus s’est passé au cours des dernières 24 heures, sinon, modifiez la période.
+   1. Modifiez la période pour les dernières 24 heures. En supposant que l’e-mail que vous avez envoyé lorsque vous avez lancé la simulation ci-dessus se trouvait au cours des dernières 24 heures, sinon, modifiez la période.
 
       ![Capture d’écran de l’endroit où vous pouvez modifier la période. Ouvrez le menu déroulant pour choisir parmi une plage d’options de période](../../media/mtp/fig18.png)
 
@@ -341,16 +341,16 @@ Un seul périphérique et boîte aux lettres interne est requis pour ce scénari
 
 4. Maintenant que vous avez vérifié que vous pouvez voir le message électronique, ajoutez un filtre pour les pièces jointes. Concentrez-vous sur tous les e-mails avec pièces jointes dans l’environnement. Dans ce scénario, concentrez-vous sur les e-mails entrants, et non sur ceux envoyés à partir de votre environnement. Supprimez tous les filtres que vous avez ajoutés pour localiser votre message et ajoutez « | où **AttachmentCount > 0** et **EmailDirection**  ==  **« Entrant »**
 
-   La requête suivante vous montre le résultat avec une liste plus courte que votre requête initiale pour tous les événements de courrier électronique :
+   La requête suivante affiche le résultat avec une liste plus courte que votre requête initiale pour tous les événements de courrier électronique :
 
    ```console
    EmailEvents
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. Ensuite, incluez les informations sur la pièce jointe (telles que : nom de fichier, hèses) à votre jeu de résultats. Pour ce faire, joignez la table **EmailAttachmentInfo.** Les champs communs à utiliser pour la jointation, dans ce cas sont **NetworkMessageId** et **RecipientObjectId**.
+5. Ensuite, incluez les informations sur la pièce jointe (telles que : nom de fichier, hèses) à votre jeu de résultats. Pour ce faire, joignez la table **EmailAttachmentInfo.** Les champs communs à utiliser pour la jointage, dans ce cas sont **NetworkMessageId** et **RecipientObjectId**.
 
-   La requête suivante inclut également une ligne supplémentaire « | **renommer par projet EmailTimestamp=Timestamp**« qui vous aidera à identifier l’intervalle d’heure qui était lié à l’e-mail par rapport aux timestamps liés aux actions de fichier que vous ajouterez à l’étape suivante.
+   La requête suivante inclut également une ligne supplémentaire « | **renommez emailTimestamp=Timestamp**« qui vous aidera à identifier l’timestamp qui était lié à l’e-mail par rapport aux timestamps liés aux actions de fichier que vous ajouterez à l’étape suivante.
 
    ```console
    EmailEvents
@@ -374,7 +374,7 @@ Un seul périphérique et boîte aux lettres interne est requis pour ce scénari
 
    Vous avez maintenant créé une requête qui identifiera tous les e-mails entrants dans lequel l’utilisateur a ouvert ou enregistré la pièce jointe. Vous pouvez également affiner cette requête pour filtrer des domaines d’expéditeur, des tailles de fichiers, des types de fichiers, etc. spécifiques.
 
-7. Les fonctions sont un type spécial de jointage, qui vous permet d’en tirer plus de données TI sur un fichier comme sa prévalence, ses informations sur le signataire et l’émetteur, etc. Pour obtenir plus de détails sur le fichier, utilisez l’enrichissement de fonction **FileProfile()** :
+7. Les fonctions sont un type spécial de jointage, qui vous permet de tirer plus de données TI sur un fichier comme sa prévalence, les informations sur le signataire et l’émetteur, etc. Pour obtenir plus de détails sur le fichier, utilisez l’enrichissement de fonction **FileProfile()** :
 
     ```console
     EmailEvents
@@ -406,7 +406,7 @@ Les détections personnalisées exécutent la requête en fonction de la fréque
 
    Veillez à remplir les champs avec clarté pour aider l’utilisateur suivant à prendre une décision éclairée sur cette alerte de règle de détection.
 
-3. Sélectionnez les entités qui sont impactées dans cette alerte. Dans ce cas, sélectionnez **Appareil et** boîte **aux lettres**.
+3. Sélectionnez les entités qui sont impactées dans cette alerte. Dans ce cas, sélectionnez **Appareil** et boîte aux **lettres.**
 
    ![Capture d’écran de la page créer une règle de détection dans laquelle vous pouvez choisir les paramètres des entités impactées](../../media/mtp/fig24.png)
 
@@ -414,7 +414,7 @@ Les détections personnalisées exécutent la requête en fonction de la fréque
 
    ![Capture d’écran de la page créer une règle de détection dans laquelle vous pouvez exécuter une analyse antivirus lorsqu’une alerte est déclenchée pour aider à résoudre les menaces](../../media/mtp/fig25.png)
 
-5. Sélectionnez l’étendue de la règle d’alerte. Étant donné que cette requête implique des appareils, les groupes d’appareils sont pertinents dans cette détection personnalisée en fonction du contexte de Point de terminaison Microsoft Defender. Lors de la création d’une détection personnalisée qui n’inclut pas les appareils en tant qu’entités touchées, l’étendue ne s’applique pas.
+5. Sélectionnez l’étendue de la règle d’alerte. Étant donné que cette requête implique des appareils, les groupes d’appareils sont pertinents dans cette détection personnalisée en fonction du contexte de point de terminaison de Microsoft Defender. Lors de la création d’une détection personnalisée qui n’inclut pas les appareils en tant qu’entités touchées, l’étendue ne s’applique pas.
 
    ![Capture d’écran de la page créer une règle de détection dans laquelle vous pouvez définir l’étendue de la règle d’alerte gère vos attentes pour les résultats que vous verrez](../../media/mtp/fig26.png)
 
@@ -440,12 +440,12 @@ Pour en savoir plus sur le repérage avancé, les webcasts suivants vous aideron
 |Titre|Description|Télécharger MP4|Regarder sur YouTube|Fichier CSL à utiliser|
 |---|---|---|---|---|
 |Épisode 1 : Principes de base du langage KQL|Nous allons couvrir les principes de base des fonctionnalités de recherche avancées dans Microsoft 365 Defender. Découvrez les données de recherche avancées disponibles, ainsi que la syntaxe et les opérateurs KQL de base.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Épisode 1 : Fichier CSL dans Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
-|Épisode 2 : Joints|Nous continuerons à apprendre à connaître les données dans le recherche avancée et la façon de joindre des tables. Découvrez les jointeurs internes, externes, uniques et semi-joints, ainsi que les nuances de la jointage interne Kusto par défaut.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Épisode 2 : Fichier CSL dans Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
+|Épisode 2 : Joints|Nous continuerons à apprendre à connaître les données dans le recherche avancée et comment joindre des tables. Découvrez les jointeurs internes, externes, uniques et semi-joints, ainsi que les nuances de la jointage interne Kusto par défaut.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Épisode 2 : Fichier CSL dans Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |Épisode 3 : Synthèse, pivotation et visualisation des données|Maintenant que nous sommes en mesure de filtrer, manipuler et joindre des données, il est temps de commencer à récapituler, quantifier, pivoter et visualiser. Dans cet épisode, nous allons couvrir l’opérateur de synthèse et certains des calculs que vous pouvez effectuer lors de la plonger dans des tableaux supplémentaires dans le schéma de recherche avancé. Nous transformeons nos jeux de données en graphiques qui peuvent vous aider à améliorer l’analyse.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Épisode 3 : Fichier CSL dans Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|Épisode 4 : Nous allons faire la recherche ! Application de KQL au suivi des incidents|Il est temps de suivre une activité de l’attaquant ! Dans cet épisode, nous allons utiliser notre compréhension améliorée du KQL et du hunting avancé dans Microsoft 365 Defender pour suivre une attaque. Découvrez quelques conseils et astuces utilisés dans le champ pour suivre l’activité des personnes malveillantes, y compris les stratégies de sécurité en cas de cyber-sécurité et comment les appliquer à la réponse aux incidents.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Épisode 4 : Fichier CSL dans Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
+|Épisode 4 : Nous allons faire la recherche ! Application de KQL au suivi des incidents|Il est temps de suivre une activité de l’attaquant ! Dans cet épisode, nous allons utiliser notre compréhension améliorée du KQL et du hunting avancé dans Microsoft 365 Defender pour suivre une attaque. Découvrez quelques conseils et astuces utilisés dans le champ pour suivre l’activité des personnes malveillantes, notamment les stratégies de sécurité en cas de cyber-sécurité et comment les appliquer à la réponse aux incidents.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Épisode 4 : Fichier CSL dans Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
 |
 
 ## <a name="next-step"></a>Étape suivante
 
-|![Phase de fermeture et de résumé](../../media/mtp/close.png) <br>[Phase de fermeture et de résumé](mtp-pilot-close.md)|Analysez le résultat de votre projet pilote Microsoft 365 Defender, présentez-les à vos parties prenantes et faites l’étape suivante.
+|![Phase de fermeture et de résumé](../../media/mtp/close.png) <br>[Phase de fermeture et de résumé](mtp-pilot-close.md)|Analysez le résultat de votre pilote Microsoft 365 Defender, présentez-les à vos parties prenantes et faites l’étape suivante.
 |:-----|:-----|

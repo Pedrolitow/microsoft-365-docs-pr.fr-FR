@@ -113,7 +113,7 @@ Nous vous recommandons d’inclure la configuration de l’emplacement des donn�
 Si l’utilisateur possède déjà un site OneDrive créé dans le client, configurer son emplacement des données par défaut ne déplace pas automatiquement son OneDrive existant. Pour déplacer le OneDrive d’un utilisateur, voir [OneDrive](move-onedrive-between-geo-locations.md)Entreprise Geo Move .
 
 > [!NOTE]
-> Exchange Online relocalise automatiquement la boîte aux lettres de l’utilisateur si le PLD change et que MailboxRegion ne correspond plus au code d’emplacement géographique de la base de données de boîtes aux lettres. Pour plus d’informations, [voir Administration des boîtes aux lettres Exchange Online dans un environnement multigéogé.](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)
+> Exchange Online relocalise automatiquement la boîte aux lettres de l’utilisateur si le PLD change et que MailboxRegion ne correspond plus au code d’emplacement géographique de la base de données de boîtes aux lettres. Pour plus d’informations, [voir Administering Exchange Online mailboxes in a multi-geo environment](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo).
 
 Si l’utilisateur ne dispose pas d’un site OneDrive dans le client, OneDrive est approvisionné pour lui conformément à la valeur de son emplacement des données par défaut en supposant que ce dernier correspond à l’un des emplacements satellites de l’entreprise.
 

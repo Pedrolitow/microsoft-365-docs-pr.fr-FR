@@ -57,7 +57,7 @@ Les conditions suivantes concernent toutes les requêtes.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler l’API de recherche avancée. Pour en savoir plus, notamment sur le choix des autorisations, consultez [l’api Access de Microsoft 365 Defender Protection.](api-access.md)
+L’une des autorisations suivantes est nécessaire pour appeler l’API de recherche avancée. Pour plus d’informations, notamment sur le choix des autorisations, voir Access sur les API [Microsoft 365 Defender Protection](api-access.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 -|-|-
@@ -99,7 +99,7 @@ L’objet de réponse contient trois propriétés de niveau supérieur :
 
 1. Statistiques : dictionnaire des statistiques de performances des requêtes.
 2. Schéma : schéma de la réponse, liste des Name-Type pour chaque colonne.
-3. Résultats : liste des événements de recherche avancée.
+3. Résultats : liste des événements de recherche avancés.
 
 ## <a name="example"></a>Exemple
 

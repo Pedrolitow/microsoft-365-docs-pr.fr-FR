@@ -51,7 +51,7 @@ Téléchargez [une infographie](m365-campaigns-protect-campaign-infographic.md) 
 
 ## <a name="set-up-iphones-and-android-devices"></a>Configurer des appareils iPhone et Android
 
-Tous les utilisateurs que vous ajoutez à votre environnement devront prendre quelques minutes pour configurer les [appareils iPhone](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) et Android pour qu’ils fonctionnent en toute sécurité :
+Tous les utilisateurs que vous ajoutez à votre environnement devront prendre quelques minutes pour configurer les [iPhone et](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) les appareils Android pour qu’ils fonctionnent en toute sécurité :
 
 - Configurer des appareils pour utiliser l’authentification multifacteur avec l’application d’authentification.
 - Utilisez les applications mobiles Microsoft, notamment Outlook Mobile, Word, OneDrive et d’autres applications Microsoft de l’App Store. Les applications de messagerie natives incluses sur les appareils iPhone et Android ne sont pas pris en charge. 
@@ -82,4 +82,4 @@ Vos utilisateurs peuvent être tentés de partager et de stocker des fichiers de
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurer des appareils Windows 10 gérés
 
-Nous vous recommandons d’utiliser les appareils Windows 10 acquis par vos employés les plus importants que vous gérez. Nous allons vous montrer comment gérer [et sécuriser ces appareils.](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) Cela garantit que les membres du personnel qui sont la cible la plus élevée pour les pirates informatiques bénéficient de la protection la plus élevée.
+Nous vous recommandons d’utiliser les appareils Windows 10 acquis que vous gérez. Nous allons vous montrer comment gérer [et sécuriser ces appareils.](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) Cela garantit que les membres du personnel qui sont la cible la plus élevée pour les pirates informatiques bénéficient de la protection la plus élevée.

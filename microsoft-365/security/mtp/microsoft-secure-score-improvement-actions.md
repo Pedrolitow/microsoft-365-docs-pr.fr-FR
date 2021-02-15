@@ -1,7 +1,7 @@
 ---
 title: Évaluer votre posture de sécurité via le Score de sécurité Microsoft
 description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le Centre de sécurité Microsoft 365.
-keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
+keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -81,7 +81,7 @@ Pour effectuer l’action, vous avez plusieurs options :
 
 - Sélectionnez **Gérer** pour passer à l’écran de configuration et effectuer les changements. Vous gagnerez ensuite les points que l’action vaut, visibles dans le volant. La mise à jour des points prend généralement environ 24 heures.
 
-- Sélectionnez **Partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme pour partager le lien, telle que la messagerie, Microsoft Teams, Le Planificateur Microsoft ou ServiceNow. La sélection de ServiceNow vous permet de créer un ticket de modification qui sera visible dans ServiceNow et la page d’accueil du Centre de sécurité Microsoft 365. Pour en savoir plus, consultez Le Centre de [sécurité Microsoft 365 et l’intégration de ServiceNow.](tickets-security-center.md)
+- Sélectionnez **Partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme pour partager le lien, telle que la messagerie, Microsoft Teams, Le Planificateur Microsoft ou ServiceNow. La sélection de ServiceNow vous permet de créer un ticket de modification qui sera visible dans ServiceNow et le centre de sécurité Microsoft 365. Pour en savoir plus, voir [Centre de sécurité Microsoft 365 et intégration de ServiceNow.](tickets-security-center.md)
 
 Ajoutez **des notes** pour suivre la progression ou tout autre commentaire que vous souhaitez commenter. Si vous ajoutez vos propres **balises à** l’action d’amélioration, vous pouvez filtrer par ces balises.
 
@@ -94,7 +94,7 @@ Choisissez les états et les notes d’enregistrement spécifiques à l’action
 - **Risque accepté :** la sécurité doit toujours être équilibrée avec la convivialité, et toutes les recommandations ne fonctionnent pas pour votre environnement. Lorsque c’est le cas, vous pouvez choisir d’accepter le risque, ou le risque restant, et de ne pas adopter l’action d’amélioration. Aucun point ne vous sera attribué, mais l’action ne sera plus visible dans la liste des actions d’amélioration. Vous pouvez afficher cette action dans l’historique ou l’annuler à tout moment.
 - **Résolu par le**  biais d’un tiers et résolu par le biais d’une atténuation alternative : l’action d’amélioration a déjà été traitée par une application ou un logiciel tiers, ou par un outil interne. Vous gagnerez les points que l’action vaut, afin que votre score reflète mieux votre posture de sécurité globale. Si un outil tiers ou interne ne couvre plus le contrôle, vous pouvez choisir un autre état. N’oubliez pas que Microsoft n’aura aucune visibilité sur l’intégralité de l’implémentation si l’action d’amélioration est marquée comme l’un de ces états.
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>Actions d’amélioration & la gestion des vulnérabilités des menaces
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Actions d’amélioration & la gestion des menaces et des vulnérabilités
 
 Pour les actions d’amélioration dans la catégorie « Appareil », vous ne pouvez pas choisir les états. Au lieu de cela, vous [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) serez dirigé vers la recommandation de sécurité associée à la gestion des menaces et des vulnérabilités dans le Centre de sécurité [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) pour prendre des mesures. L’exception que vous choisissez et la justification que vous écrivez sera spécifique à ce portail. Il ne sera pas présent dans le portail Score de sécurité Microsoft.
 
@@ -121,6 +121,6 @@ Si vous avez des problèmes, faites-le nous savoir en publiant dans la communaut
 ## <a name="related-resources"></a>Ressources connexes
 
 - [Vue d’ensemble du score de sécurisation Microsoft](microsoft-secure-score.md)
-- [Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
+- [Suivre votre historique du Score de sécurisation Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
 - [Nouveautés](microsoft-secure-score-whats-coming.md)
 - [Nouveautés](microsoft-secure-score-whats-new.md)

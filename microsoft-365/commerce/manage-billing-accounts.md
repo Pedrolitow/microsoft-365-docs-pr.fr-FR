@@ -38,7 +38,7 @@ La page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_bla
 
 La partie supérieure de la page **de détails des comptes** de facturation est votre profil de compte et contient des informations juridiques et fiscales sur votre organisation. Vous pouvez mettre à jour votre profil pour modifier votre adresse juridique et votre numéro de téléphone. Ce compte est l’entité juridique qui paie pour les produits que vous achetez.
 
-Le tableau suivant répertorie les termes importants que vous voyez dans la page de **détails** des comptes de facturation.
+Le tableau suivant répertorie les termes importants que vous voyez dans la page de **détails des comptes** de facturation.
 
 | Nom du champ | Description |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ Le tableau suivant répertorie les termes importants que vous voyez dans la page
 > Si vous souhaitez modifier le nom ou l’adresse  de vente, [](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) mais que vous ne voyez pas de lien Modifier, vous devez contacter le support technique pour le modifier.  Les demandes de modification **de nom de** vente nécessiteront une vérification de solvabilité. Soyez prêt à partager l’un des documents suivants avec Microsoft lorsque vous contactez le support technique : 
 >
 > - Document émis par le gouvernement ou lettre d’inscription
-> - Imprimer à partir du Registre de la société locale
+> - Imprimer à partir du Registre de l’entreprise locale
 >
 > Le support peut vous aider à modifier le nom et l’adresse lorsque seul le nom du client change, mais que l’entité reste la même. La documentation fournie doit clairement montrer que seul le nom de l’entité a changé. Si la modification est le résultat d’une transaction, y compris la vente d’entreprise, un changement de contrôle ou une scission ou une « rotation » d’une filiale du client, contactez votre vendeur Microsoft.
 

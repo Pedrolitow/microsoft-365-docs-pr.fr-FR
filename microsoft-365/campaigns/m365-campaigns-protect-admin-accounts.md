@@ -40,7 +40,7 @@ Lorsque vous vous inscrivez à Microsoft 365 et entrez vos informations, vous de
 
 ## <a name="create-additional-admin-accounts"></a>Créer des comptes d’administrateur supplémentaires
 
-Utilisez des comptes d’administrateur uniquement pour l’administration. Les administrateurs doivent avoir un compte d’utilisateur distinct pour une utilisation régulière des applications Office et utiliser leur compte administratif uniquement lorsque cela est nécessaire pour gérer les comptes et les appareils, et tout en travaillant sur d’autres fonctions d’administration. Il est également bon de supprimer la licence Microsoft 365 des comptes d’administrateur afin de ne pas avoir à les payer.
+Utilisez des comptes d’administrateur uniquement pour l’administration. Les administrateurs doivent avoir un compte d’utilisateur distinct pour une utilisation régulière des applications Office et utiliser leur compte d’administration uniquement lorsque cela est nécessaire pour gérer les comptes et les appareils, et tout en travaillant sur d’autres fonctions d’administration. Il est également bon de supprimer la licence Microsoft 365 des comptes d’administrateur afin de ne pas avoir à les payer.
 
 Vous pouvez configurer au moins un compte d’administrateur global supplémentaire pour accorder à l’administrateur l’accès à un autre employé approuvé. Vous pouvez également créer des comptes d’administrateur distincts pour la gestion des utilisateurs (ce rôle est appelé **administrateur de gestion des utilisateurs).** Pour plus d’informations, voir [les rôles d’administrateur.](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)
 
@@ -57,7 +57,7 @@ Pour créer des comptes d’administrateur supplémentaires :
 
     ![Choisir le rôle d’administrateur](../media/adminroles.png)
 
- 4. Dans la section **Licences de** produits, déplacez le sélecteur de **Microsoft 365 Business** sur Hors et l’utilisateur Créer sans licence de produit  **sur** **Sur**.
+ 4. Dans la section **Licences de** produits, déplacez le sélecteur de **Microsoft 365 Business** sur « **Hors** activité » et l’utilisateur Créer sans licence de produit **sur** **« On**».
 
     ![Choisir la licence de produit](../media/productlicense.png)
 

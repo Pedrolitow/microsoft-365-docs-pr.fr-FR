@@ -50,7 +50,7 @@ Les groupes ont les rôles suivants :
 
 - **Propriétaires** : les propriétaires de groupe peuvent ajouter ou supprimer des membres et avoir des autorisations uniques, telles que la possibilité de supprimer des conversations de la boîte de réception partagée ou de modifier différents paramètres sur le groupe. Les propriétaires de groupe peuvent renommer le groupe, mettre à jour la description ou l’image, etc.
 - **Membres** : les membres peuvent accéder à tous les paramètres du groupe, mais ne peuvent pas modifier les paramètres du groupe. Par défaut, les membres du groupe peuvent inviter des invités à rejoindre votre groupe, même si vous pouvez [contrôler ce paramètre.](manage-guest-access-in-groups.md)
-- **Invités** : les invités de groupe sont des membres extérieurs à votre organisation.
+- **Invités** - Les invités de groupe sont des membres extérieurs à votre organisation.
 
 Seuls les administrateurs globaux, les administrateurs d’utilisateurs et les administrateurs de groupes peuvent créer et gérer des groupes dans le Centre d’administration Microsoft 365. Vous ne pouvez pas être un administrateur délégué (par exemple, consultant désigné comme administrateur).
 
@@ -62,11 +62,11 @@ En tant qu’administrateur, vous pouvez :
 - [Gérer l’accès invité aux groupes](manage-guest-access-in-groups.md)
 - [Récupérer un groupe supprimé](restore-deleted-group.md) (dans les 30 jours suivant la suppression)
 
-Si vous préférez une façon plus automatisée de gérer le cycle de vie de vos groupes Microsoft 365, vous pouvez utiliser des stratégies d’expiration pour expirer des groupes à un intervalle de temps spécifique. Les propriétaires du groupe obtiennent un courrier électronique 30, 15 et 1 jour avant l’expiration du groupe qui leur permet de renouveler le groupe si nécessaire. Voir : [Stratégie d’expiration de groupe Microsoft 365.](office-365-groups-expiration-policy.md)
+Si vous préférez une façon plus automatisée de gérer le cycle de vie de vos groupes Microsoft 365, vous pouvez utiliser des stratégies d’expiration pour expirer des groupes à un intervalle de temps spécifique. Les propriétaires du groupe obtiennent un courrier électronique 30, 15 et 1 jour avant l’expiration du groupe qui leur permet de renouveler le groupe s’il est toujours nécessaire. Voir : [Stratégie d’expiration de groupe Microsoft 365.](office-365-groups-expiration-policy.md)
 
 Vous pouvez administrer vos groupes à partir du Centre d’administration Microsoft 365 ou à [l’aide de PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
-Si vous avez de nombreux utilisateurs, par exemple dans une grande entreprise ou une grande entreprise, vous pouvez avoir de nombreux utilisateurs qui créent des groupes à diverses fins. Nous vous recommandons vivement de consulter le Plan de gouvernance dans les groupes [Microsoft 365](plan-for-groups-governance.md) pour les meilleures pratiques.
+Si vous avez de nombreux utilisateurs, par exemple dans une grande entreprise ou une grande entreprise, il se peut que de nombreux utilisateurs créent des groupes à diverses fins. Nous vous recommandons vivement de consulter le Plan de gouvernance dans les groupes [Microsoft 365](plan-for-groups-governance.md) pour les meilleures pratiques.
 
 ## <a name="group-limits"></a>Limites de groupe
 
@@ -97,7 +97,7 @@ Vous pouvez créer des étiquettes de niveau de sensibilité que les utilisateur
 Par exemple, vous pouvez créer une étiquette appelée *Hautement* confidentiel et spécifier que tout groupe créé avec cette étiquette sera privé et n’autorisera pas les utilisateurs externes. Lorsque les utilisateurs de votre organisation sélectionnent cette étiquette lors de la création du groupe, le groupe est définie sur privé et les membres du groupe ne sont pas autorisés à ajouter des utilisateurs externes au groupe.
 
 > [!IMPORTANT]
-> Si vous utilisez actuellement des étiquettes de classification, elles ne seront plus disponibles pour les utilisateurs qui créent des groupes une fois les étiquettes de niveau de sensibilité activées. 
+> Si vous utilisez actuellement des étiquettes de classification, elles ne seront plus disponibles pour les utilisateurs qui créent des groupes une fois les étiquettes de sensibilité activées. 
 
 Pour plus d’informations sur la création, la gestion et l’utilisation d’étiquettes de sensibilité, voir Utiliser des étiquettes de niveau de sensibilité pour protéger le contenu dans Microsoft Teams, les groupes [Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)et les sites SharePoint.
 

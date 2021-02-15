@@ -1,5 +1,5 @@
 ---
-title: Protéger les PC et Mac Windows 10 nonmanagés
+title: Protéger les PC Windows 10 et les Mac non gérés
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -31,7 +31,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2021
 ms.locfileid: "50044383"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Protéger les PC et Mac Windows 10 nonmanagés
+# <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Protéger les PC Windows 10 et les Mac non gérés
 
 Vous pouvez gérer les PC et Mac Windows 10 en les inscrivant dans Microsoft Intune, ce qui vous permet de vous assurer qu’ils sont sains et sécurisés avant d’accéder aux données de votre environnement. Toutefois, de nombreuses campagnes et petites entreprises incluent des employés qui apportent leurs propres appareils (BYOD), qui ne seront pas gérés par l’organisation. Pour ces PC et Mac non utilisés, utilisez cet article pour vous assurer que les fonctionnalités de sécurité minimales sont configurées.
 
@@ -64,12 +64,12 @@ Windows Update télécharge automatiquement les mises à jour de sécurité Win
 Si vous avez une version antérieure de Windows et que vous utilisez Microsoft Security Essentials, il est bon de passer à la sécurité Windows. Pour plus d’informations, [voir l’aide pour protéger mon appareil avec la sécurité Windows.](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)
 
 **Activer le Pare-feu Windows**<p>
-Vous devez toujours exécuter le Pare-feu Windows même si un autre pare-feu est allumé. La désélration du Pare-feu Windows peut rendre votre appareil (et votre réseau, si vous en avez un) plus vulnérable aux accès non autorisés. Voir [Activer ou désactiver le Pare-feu Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) pour obtenir des instructions
+Vous devez toujours exécuter le Pare-feu Windows même si un autre pare-feu est allumé. La dés off windows Firewall peut rendre votre appareil (et votre réseau, si vous en avez un) plus vulnérable aux accès non autorisés. Voir [Activer ou désactiver le Pare-feu Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) pour obtenir des instructions
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 
 **Utiliser FileVault pour chiffrer votre disque Mac**<p>
-Le chiffrement de disque protège les données en cas de perte ou de vol d’appareils. Le chiffrement de disque intégral FileVault permet d’empêcher l’accès non autorisé aux informations sur votre disque de démarrage. Voir [utiliser FileVault pour chiffrer le disque de démarrage sur votre Mac](https://support.apple.com/HT204837) pour obtenir des instructions.
+Le chiffrement de disque protège les données en cas de perte ou de vol d’appareils. Le chiffrement de disque intégral FileVault permet d’empêcher l’accès non autorisé aux informations sur votre disque de démarrage. Voir [utiliser FileVault pour chiffrer le disque de démarrage sur votre Mac pour](https://support.apple.com/HT204837) obtenir des instructions.
 
 **Protéger votre mac contre les programmes malveillants**<p>
 Microsoft vous recommande d’installer et d’utiliser des logiciels antivirus fiables sur votre Mac. Consultez l’article suivant pour obtenir la liste des choix : [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).

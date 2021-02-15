@@ -35,7 +35,7 @@ ms.locfileid: "49929789"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Pour que le service reste performant et réactif, le service de recherche avancée définit différents quotas et paramètres d’utilisation (également appelés « limites de service »). Ces quotas et paramètres s’appliquent aux requêtes qui s’exécutent manuellement et par des [règles de détection personnalisées.](custom-detection-rules.md) Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la consommation et appliquer les meilleures [pratiques](advanced-hunting-best-practices.md) d’optimisation pour minimiser les interruptions.
+Pour que le service reste performant et réactif, le service de recherche avancée définit différents quotas et paramètres d’utilisation (également appelés « limites de service »). Ces quotas et paramètres s’appliquent aux requêtes qui s’exécutent manuellement et par des [règles de détection personnalisées.](custom-detection-rules.md) Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la consommation et appliquer les meilleures [pratiques d’optimisation](advanced-hunting-best-practices.md) pour minimiser les perturbations.
 
 Reportez-vous au tableau suivant pour comprendre les quotas et paramètres d’utilisation existants.
 
@@ -49,7 +49,7 @@ Reportez-vous au tableau suivant pour comprendre les quotas et paramètres d’u
 >[!NOTE] 
 >Un ensemble distinct de quotas et de paramètres s’applique aux requêtes de recherche avancées effectuées via l’API. [En savoir plus sur les API de recherche avancée](https://docs.microsoft.com/microsoft-365/security/mtp/api-advanced-hunting)
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Meilleures pratiques de recherche avancée](advanced-hunting-best-practices.md)
 - [Gérer les erreurs de recherche avancée](advanced-hunting-errors.md)

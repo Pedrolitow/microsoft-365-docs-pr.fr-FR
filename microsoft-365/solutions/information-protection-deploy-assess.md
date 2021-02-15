@@ -30,7 +30,7 @@ L’évaluation des réglementations et des risques liés à la confidentialité
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>Réglementations potentiellement applicables en matière de confidentialité des données
 
-Pour obtenir une bonne référence sur l’infrastructure réglementaire plus large pour les réglementations en matière de confidentialité des données, voir le portail d’approbation des services [Microsoft](https://servicetrust.microsoft.com/) et la série d’articles sur le règlement général sur la protection des données [(R GDPR),](../compliance/gdpr.md)ainsi que d’autres documents sur les réglementations que vous pouvez être soumis à votre secteur ou région.
+Pour obtenir une bonne référence sur l’infrastructure réglementaire plus large pour les réglementations en matière de confidentialité des données, voir le portail d’approbation des services [Microsoft](https://servicetrust.microsoft.com/) et la série d’articles sur le règlement général sur la protection des données [(R GDPR),](../compliance/gdpr.md)ainsi que d’autres documents sur les réglementations que vous pouvez être soumis dans votre secteur d’activité ou votre région.
 
 ### <a name="gdpr"></a>RGPD
 
@@ -38,7 +38,7 @@ Le R GDPR, le plus connu et le plus cité des réglementations en matière de co
 
 Conformément à l’article 4 du R GDPR : 
 
-- « données personnelles » signifie toute information relative à une personne naturelle identifiée ou identifiable ( « personne objet de données » ; une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement, en particulier par référence à un identificateur tel qu’un nom, un numéro d’identification, des données de localisation, un identificateur en ligne ou à un ou plusieurs facteurs spécifiques à l’identité physique, génétique, économique, culturelle ou sociale de cette personne physique.
+- « données personnelles » signifie toute information relative à une personne naturelle identifiée ou identifiable ( « personne objet de données » ; une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement, en particulier par référence à un identificateur tel qu’un nom, un numéro d’identification, des données de localisation, un identificateur en ligne ou à un ou plusieurs facteurs spécifiques à l’identité physique, génétique, génétique, génétique, économique, culturelle ou sociale de cette personne physique.
 
 ### <a name="iso-27001"></a>ISO 27001
 
@@ -62,7 +62,7 @@ Pour référence ultérieure dans les articles de cette solution globale, ce tab
 |:-------|:-----|:-------|:-------|
 | RGPD | Article 5(1)(f) | Les données personnelles doivent être traitées d’une manière qui garantit la sécurité appropriée des données à caractère personnel, y compris la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (intégrité et confidentialité).  |  (Tous) <br> Identité <br> Appareil <br> Protection contre les menaces <br> Protéger les informations <br> Régir les informations <br> Découvrir et répondre |
 |  | Article (32)(1)(a) | En tenant compte de l’état de l’art, des coûts de mise en œuvre et de la nature, de l’étendue, du contexte et des objectifs du traitement, ainsi que du risque de probabilité et de gravité variables pour les droits et libertés des personnes physiques, le responsable du traitement et le sous-traitant doivent mettre en œuvre des mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité approprié au risque , notamment, le cas échéant : (a) la pseudonymisation et le chiffrement des données personnelles. | Protéger les informations |
-|  | Article (13)(2)(a) | "... le responsable du traitement doit, au moment où les données à caractère personnel sont obtenues, fournir à la objet des données les informations supplémentaires suivantes nécessaires pour garantir un traitement équitable et transparent : (a) la période pendant laquelle les données à caractère personnel seront stockées, ou si cela n’est pas possible, les critères utilisés pour déterminer cette période. | Régir les informations |
+|  | Article (13)(2)(a) | "... le responsable du traitement doit, au moment où les données à caractère personnel sont obtenues, fournir à la sujet des données les informations supplémentaires suivantes nécessaires pour garantir un traitement équitable et transparent : (a) la période pendant laquelle les données à caractère personnel seront stockées, ou si cela n’est pas possible, les critères utilisés pour déterminer cette période. | Régir les informations |
 |  | Article (15)(1)(e) | La sujet des données a le droit d’obtenir du responsable du traitement la confirmation que des données personnelles la concernant sont ou non en cours de traitement, et dans ce cas, l’accès aux données à caractère personnel et les informations suivantes : (e) l’existence du droit de demander au responsable du traitement la rectification ou l’effacement de données à caractère personnel ou la restriction du traitement des données à caractère personnel concernant la sujet des données ou de s’opposer à ce traitement | Découvrir et répondre |
 | LGPD | Article 46 | Les agents de traitement adoptent des mesures de sécurité, techniques et administratives capables de protéger les données personnelles contre les accès non autorisés et les situations accidentelles ou illégales de destruction, perte, modification, communication ou tout type de traitement inapproprié ou illégal. | Protéger les informations <br> Régir les informations <br> Découvrir et répondre|
 |  | Article 48 | Le responsable du traitement doit informer l'autorité nationale et la personne concernée de la survenance d'un incident de sécurité susceptible de créer des risques ou des dommages importants pour les personnes concernées. | Découvrir et répondre |
@@ -71,10 +71,10 @@ Pour référence ultérieure dans les articles de cette solution globale, ce tab
 |  | 45 CFR 164.312(c)(2) | Mettre en œuvre des mécanismes électroniques pour confirmer que les informations médicales électroniques protégées n'ont pas été altérées ou détruites de manière non autorisée. | Régir les informations |
 |  | 45 CFR 164.316(b)(1)(i) | Si une action, une activité ou une évaluation est requise par cette sous-partie pour être documentée, conservez un enregistrement écrit (qui peut être électronique) de l’action, de l’activité ou de l’évaluation | Régir les informations |
 |  | 45 CFR 164.316(b)(1)(ii) | Conserver la documentation requise par le paragraphe (b)(1) du présent article pendant 6 ans à compter de la date de sa création ou de la dernière date à laquelle elle a été en vigueur, si celle-ci est postérieure. | Régir les informations |
-|  | 45 C.F.R. 164.308(a)(1)(ii)(D) | Implémenter des procédures pour passer régulièrement en revue les enregistrements de l’activité du système d’information, tels que les journaux d’audit, les rapports d’accès et les rapports de suivi des incidents de sécurité | Découvrir et répondre |
+|  | 45 C.F.R. 164.308(a)(1)(ii)(D) | Implémenter des procédures pour examiner régulièrement les enregistrements de l’activité du système d’information, tels que les journaux d’audit, les rapports d’accès et les rapports de suivi des incidents de sécurité | Découvrir et répondre |
 |  | 45 C.F.R. 164.308(a)(6)(ii) | Identifier et répondre aux incidents de sécurité connus ou suspects ; atténuer, dans la mesure du possible, les effets néfastes des incidents de sécurité qui sont connus de l'entité couverte ou de l'associé commercial ; et documenter les incidents de sécurité et leurs résultats. | Découvrir et répondre |
 |  | 45 C.F.R. 164.312(b) | Implémenter des mécanismes matériels, logiciels et procédural qui enregistrent et examinent l’activité dans les systèmes d’information qui contiennent ou utilisent des informations de santé électroniques protégées. | Découvrir et répondre |
-| CCPA | 1798.105(c) | Une entreprise qui reçoit une demande vérifiable d’un consommateur pour supprimer ses informations personnelles en vertu de la sous-section (a) du présente article supprime les informations personnelles du consommateur de ses enregistrements et demande à tous les fournisseurs de services de supprimer les informations personnelles du consommateur de ses enregistrements. | Découvrir et répondre |
+| CCPA | 1798.105(c) | Une entreprise qui reçoit une demande vérifiable d’un consommateur pour supprimer ses informations personnelles conformément à la sous-section (a) du présente article supprime les informations personnelles du consommateur de ses enregistrements et demande à tous les fournisseurs de services de supprimer les informations personnelles du consommateur de ses enregistrements. | Découvrir et répondre |
 |  | 1798.105(d) | (exceptions à 1798.105(c) <br> Une entreprise ou un fournisseur de services ne doit pas être tenu de se conformer à la demande d’un consommateur de supprimer les informations personnelles du consommateur s’il est nécessaire que l’entreprise ou le fournisseur de services conserve les informations personnelles du consommateur afin de : (reportez-vous à la réglementation actuelle pour obtenir des informations supplémentaires). | Découvrir et répondre |
 |||||
 
@@ -90,7 +90,7 @@ Quelles que soient les réglementations qui vous sont soumises, où différents 
 
 ### <a name="data-portability"></a>Portabilité des données 
 
-Les données se déplacent également au fil du temps à mesure qu’elles sont traitées, affinées et que d’autres versions en sont dérivées. Une capture instantanée initiale ne suffit jamais. Il doit y avoir un processus continu pour connaître vos données. Cela représente l’un des plus grands défis pour les grandes organisations qui gèrent des volumes importants de données personnelles. Les organisations qui ne s’adressent pas au problème « connaissez vos données » peuvent potentiellement se retrouver avec des risques très élevés et des amendes éventuelles de la part des organismes de réglementation.
+Les données se déplacent également au fil du temps à mesure qu’elles sont traitées, affinées et que d’autres versions en sont dérivées. Une capture instantanée initiale n’est jamais suffisante. Il doit y avoir un processus continu pour connaître vos données. Cela représente l’un des plus grands défis pour les grandes organisations qui gèrent des volumes importants de données personnelles. Les organisations qui ne s’adressent pas au problème « connaissez vos données » peuvent potentiellement se retrouver avec des risques très élevés et des amendes éventuelles de la part des organismes de réglementation.
 
 ![Cycle de vie des données](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
  
@@ -167,15 +167,15 @@ Si votre organisation ne collecte pas beaucoup de données directement auprès d
 
 Comprendre votre exposition aux risques et à la réglementation sur la confidentialité des données est une première étape importante basée sur une compréhension de base des scénarios de données personnelles de votre organisation.
 
-Si vous n’avez pas de données personnelles provenant de consommateurs dans votre environnement Microsoft 365 ou si elle est limitée à certaines parties de l’environnement et que la nécessité d’un contrôle technique est prédicée sur l’exposition des données de type consommateur, ce contrôle technique ne devra peut-être être utilisé que dans les parties à risque élevé de l’environnement, et non partout.
+Si vous n’avez pas de données personnelles de consommateurs dans votre environnement Microsoft 365 ou si elle est limitée à certaines parties de l’environnement et que la nécessité d’un contrôle technique est prédicée sur l’exposition des données de type consommateur, ce contrôle technique ne devra peut-être être utilisé que dans les parties à risque élevé de l’environnement, et non partout.
 
-Bien qu’une organisation externe ou une recommandation d’ensemble de contrôle standard, telle que celle du Gestionnaire de conformité dans Microsoft 365, puisse vous aider à déterminer votre stratégie de contrôle, votre choix d’implémentation doit être piloté par la sensibilisation à l’inventaire des données afin de quantifier votre exposition réelle aux risques.
+Bien qu’une organisation externe ou une recommandation d’ensemble de contrôles standard, telle que celle du Gestionnaire de conformité dans Microsoft 365, puisse vous aider à déterminer votre stratégie de contrôle, votre choix d’implémentation doit être piloté par la sensibilisation à l’inventaire des données afin de quantifier votre exposition réelle aux risques.
 
 La plupart des organisations seront exposées à l’un des scénarios ci-dessus. Il est important d’adopter une approche globale de l’évaluation.
 
-## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>Étape 2 : évaluer votre préparation pour vous conformer aux réglementations en matière de confidentialité des données
+## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>Étape 2 : Évaluer votre préparation pour vous conformer aux réglementations en matière de confidentialité des données
 
-Bien que spécifiques au R GDPR, les questions posées dans l’outil d’évaluation gratuit de [Microsoft R GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) fournissent un bon départ pour comprendre la préparation globale de la confidentialité des données. 
+Bien que spécifiques au R GDPR, les questions posées dans l’outil d’évaluation gratuit de [Microsoft R GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) fournissent un bon départ pour comprendre la préparation globale à la confidentialité des données. 
 
 Les organisations soumises à d’autres réglementations en matière de confidentialité des données, telles que le CCPA aux États-Unis ou le LGPD du Brésil, peuvent également bénéficier de l’inventaire de préparation de cet outil en raison de dispositions qui se chevauchent avec le RGPD.
 
@@ -183,13 +183,13 @@ L’évaluation R GDPR se compose des sections suivantes :
 
 | Section | Description |
 |:-------|:-----|
-| Gouvernance | <ol><li>Votre politique de confidentialité indique-t-elle explicitement quelles informations de données sont traitées ? </li><li>Exécutez-vous régulièrement des analyses d’impact sur la confidentialité (PIA) ? </li><li> Utilisez-vous un outil pour gérer les informations personnelles ? </li><li> Avez-vous l’autorité juridique de mener des activités à l’aide de données PI sur une personne donnée ? Suivez-vous le consentement pour les données ? </li><li> Suivez-vous, implémentez et gérez-vous les contrôles d’audit ? Surveillez-vous les fuites de données ? </li></ol>|
+| Gouvernance | <ol><li>Votre politique de confidentialité indique-t-elle explicitement quelles informations de données sont traitées ? </li><li>Exécutez-vous régulièrement des analyses d’impact sur la confidentialité (PIA) ? </li><li> Utilisez-vous un outil pour gérer les informations personnelles ? </li><li> Avez-vous l’autorité juridique de mener des activités à l’aide de données pi sur une personne donnée ? Suivez-vous le consentement pour les données ? </li><li> Suivez-vous, implémentez et gérez-vous les contrôles d’audit ? Surveillez-vous les fuites de données ? </li></ol>|
 | Suppression et notification | <ol><li>Donnez-vous des instructions explicites sur la façon dont les données des utilisateurs sont accessibles ? </li><li> Avez-vous des processus documentés en place pour la gestion du consentement de désint resserrement ? </li><li> Avez-vous un processus de suppression automatique des données ? </li><li>   Avez-vous un processus pour valider l’identité lors de l’implication d’un client ? </li></ol>|
 | Atténuation des risques et sécurité des informations | <ol><li>Utilisez-vous des outils pour analyser des données non structurées ? </li><li>Tous les serveurs sont-ils à jour et tirez-vous parti des pare-feu pour les protéger ? </li><li>Exécutez-vous des sauvegardes régulières de vos serveurs ? </li><li>Surveillez-vous activement les fuites de données ? </li><li>Chiffrez-vous vos données au repos et en transmission ? </li></ol>|
 | Gestion des stratégies | <ol><li>Comment gérez-vous vos règles d’entreprise de liaison (BCR) ? </li><li>Suivez-vous le consentement pour les données ? </li><li> Sur une échelle de 1 à 5, 5 étant entièrement couverte, vos contrats couvrent-ils les classifications de données et les exigences de gestion ? </li><li>Avez-vous et testez-vous régulièrement un plan de réponse aux incidents ? </li><li>Quelle stratégie utilisez-vous pour gérer l’accès ? </li></ol>|
 |||
  
-## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Étape 3 : identifier les types d’informations sensibles qui se produisent dans votre environnement Microsoft 365. 
+## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Étape 3 : Identifier les types d’informations sensibles qui se produisent dans votre environnement Microsoft 365. 
 
 Cette étape implique l’identification de types d’informations sensibles spécifiques soumis à des contrôles réglementaires spécifiques, ainsi que leur occurrence dans votre environnement Microsoft 365. 
 
@@ -201,7 +201,7 @@ Avec la nouvelle solution de **classification** des données dans le [](../compl
 
 Le Centre d’administration de conformité Microsoft est pré-chargé avec plus de 100 types d’informations sensibles, dont la plupart sont liés à l’identification et à la localisation des données personnelles. Ces types d’informations sensibles intégrés permettent d’identifier et de protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, etc., en fonction des modèles définis par une expression régulière (regex) ou une fonction. Pour en savoir plus, voir [Éléments recherchés par les types d’informations sensibles](../compliance/what-the-sensitive-information-types-look-for.md).
 
-Si vous devez identifier et protéger un type régional ou spécifique à l’organisation d’éléments sensibles, comme un format personnalisé pour les ID d’employé ou d’autres informations personnelles non déjà couvertes par un type d’informations sensibles intégré, vous pouvez créer un type d’informations sensibles personnalisé avec les méthodes ci-après : 
+Si vous devez identifier et protéger un type d’éléments sensibles propre à l’organisation ou régional, tel qu’un format personnalisé pour les ID d’employé ou d’autres informations personnelles non déjà couvertes par un type d’informations sensibles intégré, vous pouvez créer un type d’informations sensibles personnalisé avec les méthodes ci-après : 
 
 - PowerShell
 - Règles personnalisées avec correspondance exacte des données (EDM)
@@ -234,5 +234,5 @@ Des instructions détaillées sur l’utilisation de la recherche de contenu pou
 Des informations supplémentaires sur les techniques d’investigation et de correction pour les données personnelles dans Microsoft 365 sont fournies dans l’article surveiller [et répondre.](information-protection-deploy-monitor-respond.md)
 
 > [!NOTE]
-> Pour rechercher les informations sensibles dont vous avez dans les fichiers stockés en local, reportez-vous [à Azure Information Protection](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo).
+> Pour rechercher les informations sensibles que vous avez dans les fichiers stockés en local, reportez-vous [à Azure Information Protection](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo).
 

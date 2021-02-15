@@ -66,7 +66,7 @@ La réalisation de ce projet doit prendre entre 5 et 10 minutes. Cette estimatio
 
     ![Image de l’octroi d’autorisations](../../media/grant-consent.PNG)
 
-6. Ajoutez une secret à l’application. Select **Certificates & secrets,** add a description to the secret, then select **Add**.
+6. Ajoutez un secret à l’application. Select **Certificates & secrets,** add a description to the secret, then select **Add**.
 
     > [!TIP]
     > Après avoir sélectionné **Ajouter,** **sélectionnez copier la valeur de secret générée.** Vous ne pourrez pas récupérer la valeur secrète après votre départ.

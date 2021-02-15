@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et d’autres services dans Cloudflare pour Microsoft.
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur Cloudflare pour Microsoft.
 ms.openlocfilehash: 8d5dd7779f07fd42dd230ee33c40849da3519d26
 ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
@@ -81,7 +81,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 2. Dans  la page d’accueil, sélectionnez le domaine à mettre à jour. 
   
-3. Dans la page **Vue d’ensemble** de votre domaine, sélectionnez **DNS**.
+3. Dans la page **Vue d’ensemble** de votre domaine, sélectionnez **DNS.**
 
   
 4. Dans la page de **gestion DNS,** cliquez sur Ajouter un **enregistrement,** puis sélectionnez les valeurs dans le tableau suivant. 
@@ -132,7 +132,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     | Type | Nom | Serveur de messagerie | Priority (Priorité) | TTL (Durée de vie) |
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/>|30 minutes  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/>|30 minutes  <br/> |
    
 
   
@@ -151,7 +151,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 2. Dans  la page d’accueil, sélectionnez le domaine à mettre à jour. 
   
-3. Dans la page **Vue d’ensemble** de votre domaine, sélectionnez **DNS**.
+3. Dans la page **Vue d’ensemble** de votre domaine, sélectionnez **DNS.**
 
   
 4. Ajoutez le premier des cinq enregistrements CNAME.
@@ -219,8 +219,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
         
     | Type | Service | Protocole | Nom | Durée de vie | Priorité | Pondération | Port | Target |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |Utilisez votre *domain_name*; par exemple, contoso.com  |30 minutes | 100|1  |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|Utilisez votre *domain_name*; par exemple, contoso.com   |30 minutes |100 |1  |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |Utilisez votre *domain_name*; par exemple, contoso.com  |30 minutes | 100|1  |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|Utilisez votre *domain_name*; par exemple, contoso.com   |30 minutes |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. Sélectionnez **Enregistrer**.

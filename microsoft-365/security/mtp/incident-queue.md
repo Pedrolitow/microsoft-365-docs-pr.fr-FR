@@ -39,7 +39,7 @@ ms.locfileid: "49929293"
 
 
 
-Microsoft 365 Defender applique l’analyse de corrélation et regroupe toutes les alertes et enquêtes associées de différents produits en un seul incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout de Microsoft 365 Defender sur l’ensemble du patrimoine et de la suite de produits. Cette vue donne à votre analyste des opérations de sécurité une vue d’ensemble des attaques, ce qui lui permet de mieux comprendre et de gérer les menaces complexes au sein de l’organisation.
+Microsoft 365 Defender applique l’analyse de corrélation et regroupe toutes les alertes et enquêtes associées de différents produits en un seul incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout de Microsoft 365 Defender sur l’ensemble du patrimoine et de la suite de produits. Cette vue donne à votre analyste des opérations de sécurité un niveau d’attaque plus large, ce qui lui permet de mieux comprendre et de gérer les menaces complexes au sein de l’organisation.
 
 
 La **file d’attente des incidents** affiche un ensemble d’incidents qui ont été signalés par plusieurs appareils, utilisateurs et boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité.
@@ -47,9 +47,9 @@ La **file d’attente des incidents** affiche un ensemble d’incidents qui ont 
 
 ![Image de la file d’attente des incidents](../../media/incidents-queue.png) 
 
-Par défaut, la file d’attente dans le Centre de sécurité Microsoft 365 affiche les incidents observés au cours des 30 derniers jours. L’incident le plus récent se trouve en haut de la liste pour que vous le voyez en premier.
+Par défaut, la file d’attente du Centre de sécurité Microsoft 365 affiche les incidents observés au cours des 30 derniers jours. L’incident le plus récent se trouve en haut de la liste pour que vous le voyez en premier.
 
-La file d’attente des incidents expose des colonnes personnalisables qui vous donnent une visibilité sur les différentes caractéristiques de l’incident ou les entités contenues. Cela vous permet de prendre une décision éclairée concernant la hiér donc des incidents à gérer.
+La file d’attente des incidents expose des colonnes personnalisables qui vous donnent une visibilité sur les différentes caractéristiques de l’incident ou des entités contenues. Cela vous permet de prendre une décision éclairée concernant la hiér donc des incidents à gérer.
 
 Pour une visibilité supplémentaire en un coup d’œil, l’appellation automatique des incidents génère des noms d’incident basés sur des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
 
@@ -69,7 +69,7 @@ Vous pouvez choisir d’afficher les alertes qui vous sont affectées ou celles 
 Choisissez des catégories pour vous concentrer sur des tactiques, des techniques ou des composants d’attaque spécifiques. 
 
 ### <a name="classification"></a>Classification
-Filtrer les incidents en fonction des classifications définies des alertes associées. Les valeurs incluent des alertes vraies, des alertes fausses ou non définies.
+Filtrez les incidents en fonction des classifications définies des alertes associées. Les valeurs incluent des alertes vraies, des alertes fausses ou non définies.
 
 ### <a name="data-sensitivity"></a>Confidentialité des données
 Certaines attaques se concentrent sur le ciblage de données sensibles ou précieuses. En appliquant un filtre pour déterminer si des données confidentielles sont impliquées dans l’incident, vous pouvez rapidement déterminer si des informations sensibles ont été compromises et hiérarchiser les problèmes.

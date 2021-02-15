@@ -82,7 +82,7 @@ GET /api/incidents
 
 Nom | Type | Description
 -|-|-
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**
+Autorisation | String | Porteur {token}. **Obligatoire**
 
 
 ## <a name="request-body"></a>Corps de la demande
@@ -107,7 +107,7 @@ lastUpdateTime | Heure de la dernière mise à jour de l’incident sur le back-
 assignedTo | Propriétaire de l’incident ou *null* si aucun propriétaire n’est affecté. | secop2@contoso.com
 classification | Spécification de l’incident. Les valeurs de propriété *sont : Unknown*, *FalsePositive*, *TruePositive* | Inconnu
 détermination | Spécifie la détermination de l’incident. Les valeurs de propriété *sont : NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* | NotAvailable
-status | Catégoriser les incidents *(en tant qu’incidents actifs* *ou résolus).* Il peut vous aider à organiser et à gérer votre réponse aux incidents. | Actif
+statut | Catégoriser les incidents *(en tant qu’incidents actifs* *ou résolus).* Il peut vous aider à organiser et à gérer votre réponse aux incidents. | Actif
 Sévérité  | Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate.<br /><br />Une des valeurs suivantes *: Informational,* *Low,**Medium et *High*. | Moyen
 étiquettes | Tableau de balises personnalisées associées à un incident, par exemple pour baliser un groupe d’incidents avec une caractéristique commune. | \[\]
 alerts | Tableau contenant toutes les alertes liées à l’incident, ainsi que d’autres informations, telles que la gravité, les entités impliquées dans l’alerte et la source des alertes. | \[\] (voir les détails sur les champs d’alerte ci-dessous)
@@ -122,14 +122,14 @@ serviceSource | Service dont provient l’alerte, tel que Microsoft Defender pou
 creationTime | Heure à partir de la première création de l’alerte. | 2020-09-06T14:46:55.7182276Z
 lastUpdatedTime | Heure de la dernière mise à jour de l’alerte sur le système arrière. | 2020-09-06T14:46:57.2433333Z
 resolvedTime | Heure de résolution de l’alerte. | 2020-09-10T05:22:59Z
-firstActivity | Heure à partir de la première fois où l’alerte a signalé que l’activité a été mise à jour sur le système back-end.| 2020-09-04T05:22:59Z
+firstActivity | Heure à partir de la première alerte signalé que l’activité a été mise à jour sur le système back-end.| 2020-09-04T05:22:59Z
 titre | Brève identification de la valeur de chaîne disponible pour chaque alerte. | Activité de ransomware
 description | Valeur de chaîne décrivant chaque alerte. | L’utilisateur Test User2 (testUser2@contoso.com) a manipulé 99 fichiers avec plusieurs extensions se terminant par l’extension *rare herunterladen*. Il s’agit d’un nombre inhabituel de manipulations de fichiers et qui indique une attaque potentielle par ransomware.
-category | Affichage visuel et numérique de la progression de l’attaque tout au long de la chaîne d’attaque. Aligné sur l’infrastructure [mitre ATT&CK™.](https://attack.mitre.org/) | Impact
-status | Catégoriser les alertes *(en tant* que Nouveau, *Actif* *ou Résolu).* Il peut vous aider à organiser et à gérer votre réponse aux alertes. | Nouveau
+category | Affichage visuel et numérique de la progression de l’attaque tout au long de la chaîne d’attaque. Aligné sur l’infrastructure [CK&ATT MITRE™.](https://attack.mitre.org/) | Impact
+statut | Catégoriser les alertes *(en tant* que Nouveau, *Actif* *ou Résolu).* Il peut vous aider à organiser et à gérer votre réponse aux alertes. | Nouveau
 Sévérité  | Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate.<br>Une des valeurs suivantes *: Informational,* *Low,**Medium et *High*. | Moyen
 investigationId | ID d’examen automatisé déclenché par cette alerte. | 1234
-investigationState | Informations sur l’état actuel de l’enquête. L’une des valeurs suivantes : *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Suppressed*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyMediaigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
+investigationState | Informations sur l’état actuel de l’enquête. Une des valeurs suivantes : *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Suppressed*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyMediaigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
 classification | Spécification de l’incident. Les valeurs de propriété *sont : Unknown*, *FalsePositive*, *TruePositive* ou *null* | Inconnu
 détermination | Spécifie la détermination de l’incident. Les valeurs de propriété sont *: NotAvailable*, *Apt*, *Malware*, SecurityPersonnel , *SecurityTesting*, *UnwantedSoftware*, *Other* ou *null*  | Apt
 assignedTo | Propriétaire de l’incident ou *null* si aucun propriétaire n’est affecté. | secop2@contoso.com
@@ -177,15 +177,15 @@ userPrincipalName | Disponible si entityType est *User* / *MailBox* / *MailMessa
 mailboxDisplayName | Disponible si entityType est *MailBox*. | test User2
 mailboxAddress | Disponible si entityType est *User* / *MailBox* / *MailMessage*. | testUser2@contoso.com
 clusterBy | Disponible si entityType est  *MailCluster*. | Objet ; P2SenderDomain; ContentType
-sender | Disponible si entityType est *User* / *MailBox* / *MailMessage*. | user.abc@mail.contoso.co.in
+expéditeur | Disponible si entityType est *User* / *MailBox* / *MailMessage*. | user.abc@mail.contoso.co.in
 destinataire | Disponible si entityType est *MailMessage*. | testUser2@contoso.com
-sujet | Disponible si entityType est *MailMessage*. | \[Attention \] externe
+subject | Disponible si entityType est *MailMessage*. | \[Attention \] externe
 deliveryAction | Disponible si entityType est *MailMessage*. | Remis
 securityGroupId | Disponible si entityType est  *SecurityGroup*. | 301c47c8-e15f-4059-ab09-e2ba9ffd372b
 securityGroupName | Disponible si entityType est  *SecurityGroup*. | Opérateurs de configuration réseau
 registryHive | Disponible si entityType est *dans le Registre.* | ORDINATEUR LOCAL HKEY \_ \_ |
 registryKey | Disponible si entityType est *dans le Registre.* | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | Disponible si entityType est *dans le Registre.* | Chaîne
+registryValueType | Disponible si entityType est *dans le Registre.* | String
 registryValue | Disponible si entityType est *dans le Registre.* | 31-00-00-00
 deviceId | ID, le caser, de l’appareil lié à l’entité. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 

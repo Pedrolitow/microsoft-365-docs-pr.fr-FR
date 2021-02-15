@@ -66,7 +66,7 @@ Une recherche de contenu ou eDiscovery peut produire l’erreur suivante : `This
 
 Si vous recevez cette erreur, nous vous recommandons de vérifier les emplacements qui ont échoué dans la recherche, puis de réexécuter la recherche uniquement sur les emplacements qui ont échoué.
 
-1. Connectez-vous [au Centre de & conformité PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) puis exécutez la commande suivante :
+1. Connectez-vous au Centre de & de sécurité [PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) puis exécutez la commande suivante :
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -74,7 +74,7 @@ Si vous recevez cette erreur, nous vous recommandons de vérifier les emplacemen
 
 2. À partir de la sortie PowerShell, affichez les emplacements qui ont échoué dans le champ erreurs ou à partir des détails d’état dans l’erreur à partir de la sortie de recherche.
 
-3. Réessayez la recherche eDiscovery sur les emplacements qui ont échoué uniquement.
+3. Réessayez la recherche eDiscovery uniquement sur les emplacements qui ont échoué.
 
 4. Si vous continuez à recevoir ces erreurs, consultez Réessayer les emplacements d’échec [pour](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) plus d’étapes de résolution des problèmes.
 
@@ -142,7 +142,7 @@ Lors de l’exécution d’une recherche de découverte électronique, si la rec
 
 1. Décomposez la recherche en recherches plus petites et exécutez à nouveau la recherche.  Essayez d’utiliser une plage de dates plus petite ou limitez le nombre d’emplacements recherchés.
 
-2. Connectez-vous [au Centre de & conformité PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) puis exécutez la commande suivante :
+2. Connectez-vous au Centre de & de sécurité [PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) puis exécutez la commande suivante :
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL

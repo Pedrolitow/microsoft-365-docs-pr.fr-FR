@@ -44,7 +44,7 @@ Pour obtenir des instructions sur la façon d’activer le service, lisez [Activ
 Les clients titulaires des licences non E5 suivantes peuvent utiliser Microsoft 365 Defender :
 
 - Microsoft Defender pour point de terminaison
-- Microsoft Defender pour Identity
+- Microsoft Defender pour l’identité
 - Microsoft Cloud App Security
 - Defender pour Office 365 (Plan 2)
  
@@ -96,9 +96,9 @@ Obtenez les dernières expériences disponibles publiquement en allumer les [fon
 ## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Microsoft 365 Defender est-il disponible pour le cloud communautaire du gouvernement américain (GCC) ou GCC High ?
 Il n’est pas disponible pour le moment.
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 
-- [Vue d’ensemble de Microsoft 365 Defender](microsoft-threat-protection.md)
+- [Présentation de Microsoft 365 Defender](microsoft-threat-protection.md)
 - [Activer Microsoft 365 Defender.](mtp-enable.md)
 - [Conditions requises et autres conditions préalables relatives aux licences](prerequisites.md)
 - [Déployer les services pris en charge](deploy-supported-services.md)

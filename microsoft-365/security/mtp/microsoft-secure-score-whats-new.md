@@ -47,9 +47,9 @@ Les clients Microsoft Teams voient « Empêcher les utilisateurs anonymes de par
 ### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout de six actions d’amélioration liées aux comptes pour Microsoft Defender for Endpoint (précédemment Microsoft Defender ATP) :
 
 - Définir « Longueur minimale du mot de passe » sur « 14 caractères ou plus »
-- Définir « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus »
+- Définissez « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus »
 - Définir « Âge maximal du mot de passe » sur « 60 jours ou moins, mais pas 0 »
-- Définir « Âge minimal du mot de passe » sur « 1 jour ou plus »
+- Définir « Âge minimum du mot de passe » sur « 1 jour ou plus »
 - Désactiver le compte Administrateur intégré
 - Désactiver le compte invité intégré
 
@@ -57,7 +57,7 @@ Les clients Microsoft Teams voient « Empêcher les utilisateurs anonymes de par
 
 ### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Suppression de la possibilité de créer des tickets ServiceNow via secure score 
 
-La possibilité de créer des tickets ServiceNow via secure score en allant sur **Share > ServiceNow** n’est plus disponible. Merci de vos commentaires et de votre support continu pendant que nous déterminons les étapes suivantes.
+La possibilité de créer des tickets ServiceNow via Secure Score en allant sur **Share > ServiceNow** n’est plus disponible. Merci de vos commentaires et de votre support continu pendant que nous déterminons les étapes suivantes.
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout de trois actions d’amélioration liées aux services pour Microsoft Defender pour Endpoint (précédemment Microsoft Defender ATP) :
 
@@ -81,7 +81,7 @@ La possibilité de créer des tickets ServiceNow via secure score en allant sur 
 
 Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié. Ces modifications permettent une vue plus souple et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu Le Niveau de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph.
 
-Dans le temps, identity Secure Score et l’API Graph adopteront le nouveau modèle de score. En attendant, les clients constateront des différences dans les scores signalés par le score de sécurisation Microsoft, le score de sécurisation de l’identité et l’API Graph. Nous vous excusons de tout désagrément causé par cette situation et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
+Dans le temps, identity Secure Score et l’API Graph adopteront le nouveau modèle de score. En attendant, les clients constateront des différences dans les scores signalés par le score de sécurité Microsoft, le score de sécurisation de l’identité et l’API Graph. Nous vous excusons de tout désagrément causé par cette situation et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
 
 ## <a name="updated-improvement-actions"></a>Actions d’amélioration mises à jour
 
@@ -92,7 +92,7 @@ Dans le temps, identity Secure Score et l’API Graph adopteront le nouveau mod�
 
 ## <a name="updated-interface-and-functionality"></a>Interface et fonctionnalités mises à jour
 
-* Toutes les nouvelles vues de mesures et de tendances pour les discussions ciso et au niveau des responsables
+* Toutes les nouvelles vues de mesures et de tendances pour les discussions CISO et au niveau des responsables
 * Nouvelles méthodes de suivi et d’évaluation de votre score
 * Amélioration du suivi et de la compréhension des régressions de score
 * Filtrer, baliser, rechercher et grouper vos actions d’amélioration

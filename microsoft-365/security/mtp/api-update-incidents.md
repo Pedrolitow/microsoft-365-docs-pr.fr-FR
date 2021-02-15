@@ -45,7 +45,7 @@ Met à jour les propriétés d’un incident existant. Les propriétés updatabl
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>Quotas, allocation de ressources et autres contraintes
 
 1. Vous pouvez effectuer jusqu’à 50 appels par minute ou 1 500 appels par heure avant d’atteindre le seuil de limitation.
-2. Vous ne pouvez définir `determination` la propriété que si elle est définie sur `classification` TruePositive.
+2. Vous ne pouvez définir la propriété que si elle est `determination` `classification` définie sur TruePositive.
 
 Si votre demande est limitée, elle retourne un `429` code de réponse. Le corps de la réponse indique le moment où vous pouvez commencer à effectuer de nouveaux appels.
 
@@ -71,10 +71,10 @@ PATCH /api/incidents/{id}
 
 Nom | Type | Description
 -|-|-
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | String | application/json. **Obligatoire**.
 
-## <a name="request-body"></a>Corps de la demande
+## <a name="request-body"></a>Corps de la requête
 
 Dans le corps de la demande, fournissons les valeurs des champs qui doivent être mis à jour. Les propriétés existantes qui ne sont pas incluses dans le corps de la demande conserveront leurs valeurs, sauf si elles doivent être recalculées en raison de modifications apportées aux valeurs associées. Pour de meilleures performances, vous devez omettre les valeurs existantes qui n’ont pas changé.
 

@@ -56,7 +56,7 @@ Vous avez des points pour les actions suivantes :
 
 Certaines actions d’amélioration donnent uniquement des points lorsqu’elles sont entièrement terminées. Certains donnent des points partiels s’ils sont terminés pour certains appareils ou utilisateurs. Si vous ne pouvez pas ou ne souhaitez pas mettre en place l’une des actions d’amélioration, vous pouvez choisir d’accepter le risque ou le risque restant.
 
-Si vous avez une licence pour l’un des produits Microsoft pris en charge, vous verrez des recommandations pour ces produits. Nous vous montrons l’ensemble complet des améliorations possibles pour un produit, indépendamment de l’édition de licence, de l’abonnement ou de l’offre. De cette façon, vous pouvez comprendre les meilleures pratiques en matière de sécurité et améliorer votre score. Votre posture de sécurité absolue, représentée par le niveau de sécurisation, reste la même quelle que soit la licence dont votre organisation est propriétaire pour un produit spécifique. N’oubliez pas que la sécurité doit être équilibrée avec la convivialité, et que toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
+Si vous avez une licence pour l’un des produits Microsoft pris en charge, vous verrez des recommandations pour ces produits. Nous vous montrons l’ensemble complet des améliorations possibles pour un produit, indépendamment de l’édition de licence, de l’abonnement ou de l’offre. Ainsi, vous pouvez comprendre les meilleures pratiques en matière de sécurité et améliorer votre score. Votre posture de sécurité absolue, représentée par le niveau de sécurisation, reste la même quelle que soit la licence dont votre organisation est propriétaire pour un produit spécifique. N’oubliez pas que la sécurité doit être équilibrée avec la convivialité, et que toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
 
 Votre score est mis à jour en temps réel pour refléter les informations présentées dans les pages d’action d’amélioration et de visualisation. Secure Score se synchronise également quotidiennement pour recevoir des données système sur vos points obtenus pour chaque action.
 
@@ -78,9 +78,9 @@ Par exemple, une action d’amélioration indique que vous obtenez 10 points en 
 Il existe actuellement des recommandations pour les produits suivants :
 
 - Microsoft 365 (y compris Exchange Online)
-- Azure Active Directory
+- Azure Active Directory
 - Microsoft Defender pour point de terminaison
-- Microsoft Defender pour Identity
+- Microsoft Defender pour l’identité
 - Cloud App Security
 - Microsoft Teams
 
@@ -101,7 +101,7 @@ Si vous allumez les paramètres de sécurité par défaut, des points complets v
 
 ## <a name="required-permissions"></a>Autorisations requises
 
-Pour avoir l’autorisation d’accéder au service Score de sécurité Microsoft, vous devez avoir l’un des rôles suivants dans Azure Active Directory.
+Pour avoir l’autorisation d’accéder à La Sécurisation Microsoft, vous devez avoir l’un des rôles suivants dans Azure Active Directory.
 
 ### <a name="read-and-write-roles"></a>Lire et écrire des rôles
 
@@ -126,7 +126,7 @@ Avec l’accès en lecture seule, vous ne pouvez pas modifier l’état ou les n
 
 ## <a name="risk-awareness"></a>Sensibilisation aux risques
 
-Le score de sécurité Microsoft est un résumé numérique de votre posture de sécurité en fonction des configurations système, du comportement des utilisateurs et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue du risque de violation de votre système ou de vos données. Au lieu de cela, il représente la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft, ce qui peut vous aider à réduire le risque de violation. Aucun service en ligne n’est contre les violations de sécurité et le score sécurisé ne doit pas être interprété comme une garantie contre les violations de sécurité.
+Le score de sécurité Microsoft est un résumé numérique de votre posture de sécurité en fonction des configurations système, du comportement des utilisateurs et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue du risque de violation de votre système ou de vos données. Au lieu de cela, il représente la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft, ce qui peut vous aider à réduire le risque de violation. Aucun service en ligne n’est contre les violations de sécurité et le score de sécurité ne doit pas être interprété comme une garantie contre les violations de sécurité.
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaques dans Microsoft Defender pour Office 365.
+description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaque dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.openlocfilehash: f22fe8633d8ffa8856f851369739a0f12364342b
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
@@ -40,7 +40,7 @@ Sélectionnez parmi 4 techniques différentes, organisées à partir de l’infr
 
 - **La collecte des** informations d’identification tente de collecter des informations d’identification en prenant les utilisateurs vers un site web bien connu avec des zones de saisie pour envoyer un nom d’utilisateur et un mot de passe.
 - **Une pièce jointe malveillante** ajoute une pièce jointe malveillante à un message. Lorsque l’utilisateur ouvre la pièce jointe, du code arbitraire est exécuté pour aider l’attaquant à compromettre l’appareil de la cible.
-- **Le lien dans la pièce jointe** est un type d’hybride de la saisie des informations d’identification. Un attaquant insère une URL dans une pièce jointe d’un e-mail. L’URL dans la pièce jointe suit la même technique que la saisie des informations d’identification.
+- **Le lien dans la pièce jointe** est un type d’hybridation de la saisie des informations d’identification. Un attaquant insère une URL dans une pièce jointe d’un e-mail. L’URL dans la pièce jointe suit la même technique que la saisie des informations d’identification.
 - **Un lien vers un programme** malveillant exécutera du code arbitraire à partir d’un fichier hébergé sur un service de partage de fichiers connu. Le message envoyé à l’utilisateur contient un lien vers ce fichier malveillant. Ouverture du fichier et aide l’attaquant à compromettre l’appareil de la cible.
 
 > [!TIP]
@@ -59,14 +59,14 @@ Les charges utiles ont un certain nombre de points de données pour vous aider �
 - **Le taux de** clics compte le nombre de personnes qui ont cliqué sur cette charge utile.
 - **Le taux de compromission** prévu prévoit le pourcentage de personnes qui seront compromises par cette charge utile en fonction des données historiques de la charge utile pour les clients Microsoft Defender pour Office 365.
 - **Les simulations lancées** comptent le nombre de fois que cette charge utile a été utilisée dans d’autres simulations.
-- **La** complexité, disponible par le biais **de filtres,** est calculée en fonction du nombre d’indicateurs au sein de la charge utile ciblée par des indices en tant qu’attaque. Plus il y a d’indicateurs, plus la complexité est faible.
+- **La** complexité, disponible par le biais **de filtres,** est calculée en fonction du nombre d’indicateurs au sein de la charge utile qui ciblent une attaque. Plus il y a d’indicateurs, plus la complexité est faible.
 - **La source,** disponible **via** des filtres, indique si la charge utile a été créée sur votre client ou fait partie du catalogue de charge utile pré-existant de Microsoft (global).
 
 ![Charge utile sélectionnée dans la formation sur la simulation d’attaques dans le Centre de sécurité Microsoft 365](../../media/attack-sim-preview-select-payload.png)
 
 Sélectionnez une charge utile dans la liste pour afficher un aperçu de la charge utile avec des informations supplémentaires à son sujet.
 
-Si vous souhaitez créer votre propre charge utile, lisez créer une charge utile pour la formation à la [simulation d’attaques.](attack-simulation-training-payloads.md)
+Si vous souhaitez créer votre propre charge utile, lisez créer une charge utile pour [l’entraînement de simulation d’attaque.](attack-simulation-training-payloads.md)
 
 ## <a name="audience-targeting"></a>Ciblage d’audience
 
@@ -76,7 +76,7 @@ Lorsque vous choisissez **d’inclure uniquement des utilisateurs et des groupes
 
 - Ajoutez des utilisateurs, ce qui vous permet de tirer parti de la recherche pour votre client, ainsi que des fonctionnalités avancées de recherche et de filtrage, telles que le ciblage d’utilisateurs qui n’ont pas été ciblés par une simulation au cours des 3 derniers mois.
   ![Filtrage des utilisateurs lors d’une formation sur la simulation d’attaques sur le Centre de sécurité Microsoft 365](../../media/attack-sim-preview-user-targeting.png)
-- **L’importation à partir de CSV** vous permet d’importer un ensemble prédéféré d’utilisateurs pour cette simulation.
+- **L’importation à** partir de CSV vous permet d’importer un ensemble prédéféré d’utilisateurs pour cette simulation.
 
 ## <a name="assigning-training"></a>Affectation d’une formation
 

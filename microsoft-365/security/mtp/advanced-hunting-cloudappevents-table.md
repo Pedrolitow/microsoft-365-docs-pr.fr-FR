@@ -69,7 +69,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `RawEventData` | string | Informations d’événement brutes de l’application ou du service source au format JSON |
 | `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

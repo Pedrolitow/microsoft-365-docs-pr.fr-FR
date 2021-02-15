@@ -41,7 +41,7 @@ Avant de commencer, examinez et évaluez l’impact pour votre organisation. Si 
 
 ### <a name="prepare-for-ad-rms-deprecation"></a>Préparer l’annulation d’AD RMS
 
-Si vous avez déjà installé Azure Information Protection, mais que vous ne l’utilisez pas, activez le service à l’aide d’Exchange Online PowerShell. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
+Si vous avez déjà installé Azure Information Protection mais que vous ne l’utilisez pas, activez le service à l’aide d’Exchange Online PowerShell. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
 
 Pour activer Azure Information Protection, utilisez la cmdlet Set-IrmConfiguration en tapant la commande suivante.
 
@@ -104,7 +104,7 @@ Les destinataires dans GCC High reçoivent la même expérience de lecture en li
 
 Les expéditeurs dans GCC High peuvent envoyer des messages chiffrés en dehors de la limite GCC High et vice versa.
 
-Tous les destinataires en dehors de GCC High, y compris les utilisateurs commerciaux de Microsoft 365, les utilisateurs Outlook.com et les autres utilisateurs d’autres fournisseurs de messagerie tels que Gmail et Yahoo, reçoivent un courrier électronique wrapper. Ce message de wrapper redirige le destinataire vers le portail OME où le destinataire peut lire le message et y répondre. Cela est également vrai pour les expéditeurs en dehors de GCC High envoyant des messages chiffrés OME à GCC High.
+Tous les destinataires en dehors de GCC High, y compris les utilisateurs commerciaux de Microsoft 365, les utilisateurs Outlook.com et d’autres utilisateurs d’autres fournisseurs de messagerie tels que Gmail et Yahoo, reçoivent un message de wrapper. Ce message de wrapper redirige le destinataire vers le portail OME où le destinataire peut lire le message et y répondre. Cela est également vrai pour les expéditeurs en dehors de GCC High envoyant des messages chiffrés OME à GCC High.
 
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>Coexistence de l’OME hérité et des nouvelles fonctionnalités dans le même client
 

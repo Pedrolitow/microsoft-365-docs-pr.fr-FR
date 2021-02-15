@@ -43,7 +43,7 @@ Il existe deux informations réseau au niveau du client qui peuvent être affich
 - [Exemples de connexions SharePoint touchés par des problèmes de connectivité](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
->Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre d’administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les clients Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
+>Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre d’administration Microsoft 365 sont actuellement en état de prévisualisation et sont disponibles uniquement pour les clients Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
 
 ## <a name="backhauled-network-egress"></a>Sortie du réseau backhauled
 
@@ -63,7 +63,7 @@ Ces informations incluent l’emplacement du bureau, le pourcentage estimé du n
 
 Pour ce faire, nous vous recommandons d’utiliser une sortie réseau plus proche de l’emplacement du bureau afin que la connectivité puisse être acheminée de manière optimale vers le réseau global de Microsoft et vers la porte d’entrée du service Microsoft 365 la plus proche. Une sortie étroite du réseau vers les emplacements de bureau des utilisateurs permet également d’améliorer les performances à l’avenir, car Microsoft étend à la fois les points de présence réseau et les portes avant du service Microsoft 365 à l’avenir.
 
-Pour plus d’informations sur la résolution de ce problème, voir La sortie des connexions réseau [localement](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) dans les principes de connectivité réseau [d’Office 365.](microsoft-365-network-connectivity-principles.md)
+Pour plus d’informations sur la résolution de ce problème, voir la sortie des [connexions](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) réseau localement dans les principes de connectivité réseau [d’Office 365.](microsoft-365-network-connectivity-principles.md)
 
 ## <a name="network-intermediary-device"></a>Périphérique intermédiaire réseau
 
@@ -91,7 +91,7 @@ Cette vue d’ensemble examine les performances agrégées des clients Microsoft
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
-Il peut y avoir de nombreuses raisons à cette condition, notamment la latence dans votre réseau d’entreprise ou votre isp isp, les goulots d’étranglement ou les problèmes de conception de l’architecture. Examinez la latence entre chaque saut dans l’itinéraire entre votre réseau de bureau et la porte d’entrée Microsoft 365 actuelle. Pour plus d’informations, voir Principes de connectivité réseau [Microsoft 365.](microsoft-365-network-connectivity-principles.md)
+Il peut y avoir de nombreuses raisons à cette condition, notamment la latence dans votre réseau d’entreprise ou votre isp isp, les goulots d’étranglement ou les problèmes de conception de l’architecture. Examinez la latence entre chaque saut de l’itinéraire entre votre réseau de bureau et la porte d’entrée Microsoft 365 actuelle. Pour plus d’informations, voir Principes de connectivité réseau [Microsoft 365.](microsoft-365-network-connectivity-principles.md)
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Utilisation d’une porte d’entrée de service Exchange Online non optimale
 
@@ -99,7 +99,7 @@ Cette information s’affiche si le service d’informations réseau détecte qu
 
 Cette information est abrégée en « Routage » dans certains affichages récapitulatifs.
 
-![Porte frontale EXO non optimale](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+![Porte d’entrée EXO non optimale](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### <a name="what-does-this-mean"></a>Scénario
 
@@ -107,7 +107,7 @@ Nous listons les portes d’entrée du service Exchange Online qui conviennent �
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
-L’utilisation d’une porte frontale du service Exchange Online non optimale peut être causée par une rétrograder du réseau avant la sortie du réseau d’entreprise, auquel cas nous vous recommandons une sortie de réseau local et directe. Cela peut également être dû à l’utilisation d’un serveur de résolution récursive DNS distant, auquel cas nous vous recommandons d’aligner le serveur de résolution récursive DNS avec la sortie réseau.
+L’utilisation d’une porte d’entrée du service Exchange Online non optimale peut être causée par une rétrograder réseau avant la sortie du réseau d’entreprise, auquel cas nous recommandons une sortie de réseau local et directe. Cela peut également être dû à l’utilisation d’un serveur de résolution récursive DNS distant, auquel cas nous vous recommandons d’aligner le serveur de résolution récursive DNS avec la sortie réseau.
 
 ## <a name="use-of-a-non-optimal-sharepoint-online-service-front-door"></a>Utilisation d’une porte d’entrée de service SharePoint Online non optimale
 
@@ -184,7 +184,7 @@ Il s’agit d’une indication que la majorité de vos utilisateurs rencontreron
 
 Activez la visibilité de la connectivité réseau de l’emplacement du bureau si vous ne l’avez pas déjà fait. Vous souhaitez identifier les bureaux qui sont touchés par une connectivité réseau médiocre qui a un impact sur SharePoint et trouver des moyens d’améliorer le périmètre réseau à chaque bureau qui connecte les utilisateurs au réseau de Microsoft.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Connectivité réseau dans le Centre d’administration Microsoft 365 (prévisualisation)](office-365-network-mac-perf-overview.md)
 

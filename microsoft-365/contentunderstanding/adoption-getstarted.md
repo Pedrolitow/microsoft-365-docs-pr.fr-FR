@@ -31,7 +31,7 @@ Pensez aux services de contenu intelligent disponibles dans SharePoint Syntex co
 
 Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification de contenu directement dans le flux de gestion de contenu à l’aide de SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation :
 
-| Traitement des formulaires | Compréhension du document |
+| Traitement des formulaires | Compréhension des documents |
 |:-------|:-------|
 | Créé à partir d’une bibliothèque de documents. | Créé dans le centre de contenu, qui fait partie de SharePoint Syntex. |
 | Modèle créé dans le Générateur d’IA. | Modèle créé dans l’interface native. |
@@ -42,7 +42,7 @@ Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des
 
 Le tableau suivant explique la disponibilité et la gestion des licences pour SharePoint Syntex :
 
-| Traitement des formulaires | Compréhension du document |
+| Traitement des formulaires | Compréhension des documents |
 |:-------|:-------|
 | Le traitement de formulaire s’appuie sur power platform. <br>Pour plus d’informations sur la disponibilité globale pour la plateforme Power Platform et le Générateur d’IA, voir [Disponibilité de la plateforme Power.](https://dynamics.microsoft.com/geographic-availability/) | Disponible dans toutes les régions. |
 | Utilise les crédits générateur d’IA.<br>Les crédits peuvent être achetés par lots de 1 M.<br>1M de crédits sont inclus lorsque vous achetez plus de 300 licences SharePoint Syntex.<br>Les crédits 1M permettent le traitement de 2 000 pages de fichiers. | Les modèles fonctionnent sur toutes les langues de l’alphabet latin. En plus de l’anglais : allemand, suédois, français, espagnol, italien et portugais. |
@@ -80,7 +80,7 @@ Par exemple, vous pouvez configurer un processus à l’aide des fonctionnalité
 1. Configurer un flux pour vous notifier d’événements spécifiques, tels que :
     - Une nouvelle facture est ajoutée.
     - La date d’échéance d’une facture est passée.
-    - Une facture est pour un montant supérieur à votre montant d’approbation automatique.
+    - Une facture représente un montant supérieur à votre montant d’approbation automatique.
 
 ![Suivre et surveiller les factures avec SharePoint Syntex et Power Automate](../media/content-understanding/process-invoices-flow.png)
 
@@ -137,7 +137,7 @@ Où créeront-ils et appliqueront-ils les modèles ? Existe-t-il des processus o
 
 ## <a name="strategic-positioning"></a>Positionnement stratégique
 
-Travaillez en équipe avec les parties prenantes pour vous assurer qu’elles sont alignées sur la stratégie d’utilisation de SharePoint Syntex. Recherchez et fournissez les ressources suivantes pour vous aider à ce positionnement :
+Travaillez avec les parties prenantes pour vous assurer qu’elles sont alignées sur la stratégie d’utilisation de SharePoint Syntex. Recherchez et fournissez les ressources suivantes pour vous aider à ce positionnement :
 
 - Résultats de l’entreprise :
   - Résultats fiscaux potentiels

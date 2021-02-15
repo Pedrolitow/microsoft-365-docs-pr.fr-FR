@@ -34,7 +34,7 @@ Le tableau suivant répertorie les limites pour les cas et les ensembles de rév
 | Description de la limite | Limite |
 |:-----|:-----|
 |Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).  <br/> |3 millions <br/> |
-|Taille totale du fichier par jeu de chargement. Cela inclut le chargement de non-Office 365 dans un jeu à réviser.  <br/> |300 Go <br/> |
+|Taille totale de fichier par jeu de chargement. Cela inclut le chargement de non-Office 365 dans un jeu à réviser.  <br/> |300 Go <br/> |
 |Quantité totale de données chargées dans tous les ensembles de révision de l’organisation par jour.<br/> |2 To <br/> |
 |Nombre maximal d’ensembles de charges par cas.  <br/> |200 <br/> |
 |Nombre maximal d’ensembles de révision par cas.  <br/> |20 <br/> |
@@ -63,10 +63,10 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |:-----|:-----|
 |Nombre maximal de boîtes aux lettres ou de sites qui peuvent être recherchés au cours d’une seule recherche. |Sans limite|
 |Nombre maximal de recherches qui peuvent s’exécuter en même temps. |Sans limite |
-|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. |10  | 
+|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. |10  | 
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions). |10 000 &nbsp; <sup>2</sup>|
-|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **one \** _ ou _*set \**_.|3 |  
-|Variantes maximales renvoyées lors de l’utilisation de caractères génériques de préfixe pour rechercher une expression exacte ou lorsque vous utilisez un caractère générique de préfixe et l’opérateur _ *NEAR** Boolean. |10 000 &nbsp; <sup>3</sup>|
+|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **un \** _ ou _*définir \**_.|3  |  
+|Variantes maximales renvoyées lors de l’utilisation de caractères génériques préfixés pour rechercher une expression exacte ou lorsque vous utilisez un caractère générique de préfixe et l’opérateur booléen _ *NEAR** . |10 000 &nbsp; <sup>3</sup>|
 |Nombre maximal d’éléments par boîte aux lettres d’utilisateur qui sont affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés. |100|
 |Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.|1 000|
 |Nombre maximal de boîtes aux lettres qui peuvent être prévisualiser pour les résultats de la recherche.  Si plus de 1 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche, seules les 1 000 boîtes aux lettres les plus populaires sont disponibles en aperçu.|1 000|
@@ -74,7 +74,7 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |Nombre maximal de sites SharePoint et OneDrive Entreprise qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 200 sites contiennent des éléments qui correspondent à la requête de recherche, seuls les 200 premiers sites avec le plus de résultats sont disponibles en prévisualisation.|200|
 |Nombre maximal d’éléments par boîte aux lettres de dossiers publics affichés sur la page d’aperçu pour les recherches. |100|
 |Nombre maximal d’éléments trouvés dans tous les éléments de boîte aux lettres de dossiers publics affichés sur la page d’aperçu pour les recherches. |200|
-|Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 500 boîtes aux lettres de dossiers publics contiennent des éléments qui correspondent à la requête de recherche, seules les 500 boîtes aux lettres ayant le plus grand nombre de résultats sont disponibles en prévisualisation.|500|
+|Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 500 boîtes aux lettres de dossiers publics contiennent des éléments qui correspondent à la requête de recherche, seules les 500 premières boîtes aux lettres ayant le plus de résultats sont disponibles en prévisualisation.|500|
 |||
 
 ## <a name="viewer-limits"></a>Limites de la visionneuse
@@ -91,9 +91,9 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |Taille maximale d’une exportation unique.|3 millions de documents ou 100 Go, selon la taille la plus petite|
 |Quantité maximale de données en une seule journée. | 2 To |
 |Nombre maximal d’exportations simultanées dans votre organisation. | 10 <sup>4</sup> |
-|Nombre maximal d’exportations simultanées par utilisateur. | 3 |
+|Nombre maximal d’exportations simultanées par utilisateur. | 3  |
 |Taille maximale d’un fichier PST unique. | 10 Go |
-|Nombre maximal d’exportations simultanées par groupe de révision. | 1  |
+|Nombre maximal d’exportations simultanées par ensemble de révision. | 1  |
 |||
 
 ## <a name="review-set-download-limits"></a>Examiner les limites de téléchargement définies

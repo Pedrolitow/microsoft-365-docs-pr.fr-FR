@@ -49,9 +49,9 @@ La fonction est une fonction d’enrichissement dans le recherche avancée qui a
 | Signataire | string | Informations sur le signataire du fichier |
 | Issuer | string | Informations sur l’autorité de certification émettrice |
 | SignerHash | string | Valeur de hachage unique identifiant le signataire |
-| IsCertificateValid | valeur booléenne | Si le certificat utilisé pour signer le fichier est valide |
-| IsRootSignerMicrosoft | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
-| IsExecutable | valeur booléenne | Si le fichier est un fichier Exécutable portable (PE) |
+| IsCertificateValid | booléen | Si le certificat utilisé pour signer le fichier est valide |
+| IsRootSignerMicrosoft | booléen | Indique si le signataire du certificat racine est Microsoft |
+| IsExecutable | booléen | Si le fichier est un fichier Exécutable portable (PE) |
 | ThreatName | string | Nom de détection des programmes malveillants ou autres menaces détectés |
 | Éditeur | string | Nom de l’organisation qui a publié le fichier |
 | SoftwareName | string | Nom du produit logiciel |
@@ -67,7 +67,7 @@ invoke FileProfile(x,y)
 - **x**— colonne d’ID de fichier à utiliser : `SHA1` , , ou ; fonction utilise si non `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` spécifié
 - **y**— limite au nombre d’enregistrements à enrichir, de 1 à 1 000 ; utilise 100 si non spécifié
 
-## <a name="examples"></a>範例
+## <a name="examples"></a>Exemples
 
 ### <a name="project-only-the-sha1-column-and-enrich-it"></a>Projeter uniquement la colonne SHA1 et l’enrichir
 
@@ -79,7 +79,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et lister les fichiers à faible prévalence
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et lister les fichiers de faible prévalence
 
 ```kusto
 DeviceFileEvents
@@ -89,7 +89,7 @@ DeviceFileEvents
 | where GlobalPrevalence < 15
 ```
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

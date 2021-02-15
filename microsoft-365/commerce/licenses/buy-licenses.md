@@ -48,7 +48,7 @@ Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
-Si les personnes pour qui vous achetez des licences ne sont pas encore des utilisateurs actifs de votre organisation, la prochaine chose à faire est d’ajouter des utilisateurs et d’attribuer des [licences en même temps.](../../admin/add-users/add-users.md)
+Si les personnes pour qui vous achetez des licences ne sont pas encore des utilisateurs actifs de votre organisation, l’étape suivante consiste à ajouter des utilisateurs et à attribuer des [licences en même temps.](../../admin/add-users/add-users.md)
 
 ## <a name="watch-remove-existing-licenses"></a>Regarder : Supprimer des licences existantes
 

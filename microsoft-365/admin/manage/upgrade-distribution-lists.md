@@ -29,9 +29,9 @@ ms.locfileid: "50080526"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Mettre à niveau les listes de distribution vers les groupes Microsoft 365 dans Outlook
 
-Vous pouvez mettre à niveau les listes de distribution vers groupes Microsoft 365 avec Outlook. C’est un excellent moyen d’offrir aux listes de distribution de votre organisation toutes les fonctionnalités des Groupes Microsoft 365. [Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+Vous pouvez mettre à niveau les listes de distribution vers Groupes Microsoft 365 avec Outlook. C’est un excellent moyen d’offrir aux listes de distribution de votre organisation toutes les fonctionnalités des Groupes Microsoft 365. [Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
-Vous pouvez mettre à niveau les DL une par une ou plusieurs en même temps.
+Vous pouvez mettre à niveau les DL une à la fois ou plusieurs à la fois.
 
 ## <a name="upgrade-one-or-many-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Mettre à niveau une ou plusieurs listes de distribution vers groupes Microsoft 365 dans Outlook
 
@@ -45,9 +45,9 @@ Vous devez être un administrateur global ou un administrateur Exchange pour met
 
 4. Sélectionnez l’icône de mise à niveau.<br/>![Icône Mise à niveau vers Groupes Microsoft 365](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-5. Dans la boîte de dialogue d’informations, **sélectionnez Oui** pour confirmer la mise à niveau. Le processus commence immédiatement. Selon la taille et le nombre de DLs que vous êtes en train de mettre à niveau, le processus peut prendre des minutes ou des heures.<br/>Si la liste de distribution ne peut pas être mise à niveau, une boîte de dialogue s’affiche. Voir [quelles listes de distribution ne peuvent pas être mises à niveau ?](#which-distribution-lists-cant-be-upgraded).
+5. Dans la boîte de dialogue d’informations, **sélectionnez Oui** pour confirmer la mise à niveau. Le processus commence immédiatement. Selon la taille et le nombre de DLs que vous êtes en train de mettre à niveau, le processus peut prendre des minutes ou des heures.<br/>Si la liste de distribution ne peut pas être mise à niveau, une boîte de dialogue s’affiche. Voir [quelles listes de distribution ne peuvent pas être mises à niveau ?](#which-distribution-lists-cant-be-upgraded)
 
-6. Si vous êtes en train de mettre à niveau plusieurs listes de distribution, utilisez la liste de listes listes pour filtrer les listes de distribution qui ont été mises à niveau. Si la liste n’est pas terminée, patientez un peu plus longtemps, puis sélectionnez **Actualiser** pour voir ce qui a été correctement mis à niveau.<br/>Aucun avis ne vous indique à quel moment le processus de mise à niveau est terminé pour toutes les DL que vous avez sélectionnées. Vous pouvez le comprendre en cherchant à voir ce qui est répertorié sous **Disponible** pour la mise à niveau ou les **DLs mises à niveau.**
+6. Si vous êtes en train de mettre à niveau plusieurs listes de distribution, utilisez la liste de listes listes pour filtrer les listes de distribution qui ont été mises à niveau. Si la liste n’est pas terminée, patientez un peu plus longtemps, puis sélectionnez **Actualiser** pour voir ce qui a été correctement mis à niveau.<br/>Aucun avis ne vous indique à quel moment le processus de mise à niveau est terminé pour toutes les DL que vous avez sélectionnées. Vous pouvez le comprendre en cherchant à voir ce qui est répertorié sous **Disponible** pour la mise à niveau ou les **DL mises à niveau.**
 
 7. Si vous avez sélectionné une DL pour la mise à niveau, mais qu’elle apparaît toujours sur la page comme disponible pour la mise à niveau, elle n’a pas réussi à mettre à niveau. Voir [que faire si la mise à niveau ne fonctionne pas](#what-to-do-if-the-upgrade-doesnt-work).
 
@@ -60,7 +60,7 @@ Les listes de distribution qui échouent à la mise à niveau restent inchangée
 
 Si une ou plusieurs listes **de** distribution éligibles ne peuvent pas être mises à niveau, ouvrez un [ticket de support.](../contact-support-for-business-products.md) Le problème doit être recalcalé à l’équipe d’ingénierie des groupes pour qu’il en soit ainsi.
 
-Il est possible que la liste de distribution n’a pas été mise à niveau en raison d’une panne de service, mais plutôt peu probable. Si vous le souhaitez, patientez un certain temps, puis réessayez de mettre à niveau la DL.
+Il est possible que la liste de distribution n’a pas été mise à niveau en raison d’une panne de service, mais plutôt peu probable. Si vous le souhaitez, patientez un certain temps, puis essayez de mettre à niveau la DL à nouveau.
 
 ## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution en même temps
 
@@ -96,7 +96,7 @@ Par exemple, si vous souhaitez mettre à niveau cinq DLs avec l’adresse SMTP `
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
-### <a name="upgrade-all-eligible-dls"></a>Mettre à niveau toutes les DLs éligibles
+### <a name="upgrade-all-eligible-dls"></a>Mettre à niveau toutes les DL éligibles
 
 Il existe deux façons de mettre à niveau toutes les DL éligibles.
 
@@ -123,7 +123,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="which-distribution-lists-cant-be-upgraded"></a>Quelles listes de distribution ne peuvent pas être mises à niveau ?
 
-Vous pouvez uniquement mettre à niveau des listes de distribution gérées dans le cloud, simples et non imbrmbrées. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent** pas être mises à niveau.
+Vous pouvez uniquement mettre à niveau des listes de distribution non imbrique, simples et gérées dans le cloud. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent** pas être mises à niveau.
 
 |**Propriété**|**Éligible ?**|
 |:-----|:-----|
@@ -131,7 +131,7 @@ Vous pouvez uniquement mettre à niveau des listes de distribution gérées dans
 |Listes de distribution imbrmbrées. La liste de distribution a des groupes enfants ou est membre d’un autre groupe.  <br/> |Non  <br/> |
 |Listes de distribution dont le **membre RecipientTypeDetails** est autre que **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |Non  <br/> |
 |Liste de distribution qui compte plus de 100 propriétaires  <br/> |Non  <br/> |
-|Liste de distribution qui ne possède que des membres mais pas de propriétaire  <br/> |Non  <br/> |
+|Liste de distribution qui ne possède que des membres, mais pas de propriétaire  <br/> |Non  <br/> |
 |Liste de distribution dont l’alias contient des caractères spéciaux  <br/> |Non  <br/> |
 |Si la liste de distribution est configurée pour être une adresse de forwarding pour la boîte aux lettres partagée  <br/> |Non  <br/> |
 |Si la DL fait partie de **la restriction de l’expéditeur** dans une autre DL.  <br/> |Non  <br/> |
@@ -166,7 +166,7 @@ Non. Le paramètre permettant d’activer les messages d’accueil est false par
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>Que se passe-t-il si une ou certaines DL ne sont pas mises à niveau ?
 
-Dans certains cas, la DL est éligible mais n’a pas pu être mise à niveau. La DL n’est pas mise à niveau et reste en tant que DL.
+Dans certains cas, la DL est éligible, mais n’a pas pu être mise à niveau. La DL n’est pas mise à niveau et reste en tant que DL.
 
 - Lorsque l’administrateur a appliqué la stratégie d’adresse de messagerie de groupe pour les groupes d’une organisation et qu’il essaie de mettre à niveau les DL qui ne remplissent pas les critères, la DL n’est pas mise à niveau 
 
@@ -174,4 +174,4 @@ Dans certains cas, la DL est éligible mais n’a pas pu être mise à niveau. L
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>Qu’advient-il de la DL en cas d’échec de la mise à niveau à partir du EAC ?
 
-La mise à niveau se produit uniquement lorsque l’appel est soumis au serveur. Si la mise à niveau échoue, vos DL sont intactes. Ils fonctionnent comme avant.
+La mise à niveau se produit uniquement lorsque l’appel est soumis au serveur. Si la mise à niveau échoue, vos DL sont intactes. Ils fonctionneront comme avant.

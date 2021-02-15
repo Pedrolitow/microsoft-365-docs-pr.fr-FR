@@ -51,7 +51,7 @@ Avant de [créer une boîte aux lettres partagée,](create-a-shared-mailbox.md)v
 
 - **Rôles d’administrateur :** Les utilisateurs ayant des rôles d’administrateur global ou d’administrateur Exchange peuvent créer des boîtes aux lettres partagées.
 
-- **Conditions d’abonnement :** Pour créer une boîte aux lettres partagée, vous devez vous abonner à une offre Microsoft 365 pour les entreprises qui inclut la messagerie (le service Exchange Online). L’abonnement Microsoft 365 Apps for business n’inclut pas la messagerie. Microsoft 365 Business Standard inclut la messagerie.
+- **Conditions d’abonnement :** Pour créer une boîte aux lettres partagée, vous devez vous abonner à une offre Microsoft 365 pour les entreprises qui inclut la messagerie (le service Exchange Online). L’abonnement Microsoft 365 Apps for business n’inclut pas la messagerie. Microsoft 365 Business Standard inclut le courrier électronique.
 
 - **La signature :** Une boîte aux lettres partagée n’est pas destinée à la signature directe par son compte d’utilisateur associé. Vous devez toujours bloquer la connectez-vous pour le compte de boîte aux lettres partagé et le conserver bloqué.
 

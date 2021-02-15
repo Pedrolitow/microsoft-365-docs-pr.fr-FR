@@ -29,7 +29,7 @@ ms.locfileid: "49976327"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Activer ou désactiver la recherche dans le journal d’audit
 
-La journalisation d’audit est désactivée par défaut pour les organisations Microsoft 365 et Office 365 Entreprise. Cela inclut les organisations ayant des abonnements E3/G3 ou E5/G5. Lorsque la recherche dans le journal d’audit dans le centre de conformité est désactivée, les activités des utilisateurs et des administrateurs de votre organisation sont enregistrées dans le journal d’audit et conservées pendant 90 jours, et jusqu’à un an en fonction de la licence attribuée aux utilisateurs. Toutefois, votre organisation peut avoir des raisons de ne pas vouloir enregistrer et conserver les données du journal d’audit. Dans ce cas, un administrateur global peut décider de désactiver l’audit dans Microsoft 365.
+Nous activons par défaut la journalisation d’audit pour les organisations d’entreprise Microsoft 365 et Office 365. Cela inclut les organisations disposant d’abonnements E3/G3 ou E5/G5. Lorsque la recherche dans le journal d’audit dans le centre de conformité est désactivée, les activités des utilisateurs et des administrateurs de votre organisation sont enregistrées dans le journal d’audit et conservées pendant 90 jours, et jusqu’à un an en fonction de la licence attribuée aux utilisateurs. Toutefois, votre organisation peut avoir des raisons de ne pas vouloir enregistrer et conserver les données du journal d’audit. Dans ce cas, un administrateur global peut décider de désactiver l’audit dans Microsoft 365.
 
 > [!IMPORTANT]
 > Si vous désactiver la recherche dans le journal d’audit dans Microsoft 365, vous ne pouvez pas utiliser l’API Activité de gestion Office 365 ou Azure Sentinel pour accéder aux données d’audit de votre organisation. La suppression de la recherche dans le journal d’audit en suivant les étapes de cet article signifie qu’aucun résultat ne sera renvoyé lorsque vous effectuerez une recherche dans le journal d’audit à l’aide du Centre de sécurité & conformité ou lorsque vous exécutez la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell. Cela signifie également que les journaux d’audit ne seront pas disponibles via l’API Activité de gestion Office 365 ou Azure Sentinel.
@@ -43,7 +43,7 @@ La journalisation d’audit est désactivée par défaut pour les organisations 
     
 - Pour obtenir des instructions détaillées sur la recherche dans le journal d’audit, consultez la recherche dans le journal d’audit dans le Centre de sécurité [& conformité.](search-the-audit-log-in-security-and-compliance.md) Pour plus d’informations sur l’API Activité de gestion Microsoft 365, voir Prise en charge des API de gestion [Microsoft 365.](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)
 
-- Pour vérifier que la recherche dans le journal d’audit est désactivée, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
+- Pour vérifier que vous avez activé la recherche dans le journal d’audit, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
 
     ```powershell
     Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled

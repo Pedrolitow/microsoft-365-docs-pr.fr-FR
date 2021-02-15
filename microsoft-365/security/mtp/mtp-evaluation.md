@@ -68,7 +68,7 @@ La création d’un environnement de laboratoire d’essai Microsoft 365 Defende
 |[Phase 3 : Configurer & intégré](config-mtpeval.md) | Configurez chaque pilier microsoft 365 Defender et les points de terminaison intégrés. Vous serez guidé vers :<br><br>- Configurer Microsoft Defender pour Office 365<br>- Configurer Microsoft Cloud App Security<br>- Configurer Microsoft Defender pour l’identité<br>- Configurer Microsoft Defender pour le point de terminaison
 
 
-Une fois ce guide terminé, vous avez identifié les parties prenantes impliquées et les approbations requises, vous avez les autorisations d’accès requises, vous êtes inscrit pour la version d’évaluation, les domaines configurés et chacun des piliers de Microsoft 365 Defender, et vos points de terminaison sont intégrés au service.
+Une fois ce guide terminé, vous avez identifié les parties prenantes impliquées et les approbations requises, vous avez les autorisations d’accès nécessaires, vous êtes inscrit à la version d’évaluation, vous avez configuré les domaines et chacun des piliers de Microsoft 365 Defender, et vos points de terminaison sont intégrés au service.
 
 ## <a name="key-capabilities"></a>Fonctionnalités clés
 
@@ -78,7 +78,7 @@ Bien que Microsoft 365 Defender offre de nombreuses fonctionnalités, l’object
 Fonctionnalité | Description 
 :---|:---
 Microsoft Defender pour Office 365 | Permet de protéger l’ensemble de votre système Office 365 contre les menaces actuelles
-Microsoft Defender pour Identity | Identifie et détecte les menaces sur les identités compromises et les actions internes malveillantes.
+Microsoft Defender pour l’identité | Identifie et détecte les menaces sur les identités compromises et les actions internes malveillantes.
 Microsoft Cloud App Security | Fournit une visibilité enrichie, contrôle les déplacements de données et détecte les cybermenaces dans les services cloud.
 Microsoft Defender pour point de terminaison | Empêche, détecte et fournit des fonctionnalités de réponse aux menaces avancées avec une sécurité complète des points de terminaison.
 
@@ -94,7 +94,7 @@ Les tâches suivantes sont dans l’étendue de ce guide :
     -   Fin de l’Assistant Installation dans le portail
 -   Configurer tous les piliers de Microsoft 365 Defender en fonction des meilleures pratiques
     -   Microsoft Defender pour Office 365
-    -   Microsoft Defender pour Identity
+    -   Microsoft Defender pour l’identité
     -   Microsoft Cloud App Security
     -   Microsoft Defender pour point de terminaison
 

@@ -28,7 +28,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49932273"
 ---
-# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Recherche proactive des menaces avec le hunting avancé dans Microsoft 365 Defender
+# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Recherche proactive des menaces avec le recherche avancée dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -51,7 +51,7 @@ Cette fonctionnalité est similaire au [recherche avancée dans Microsoft Defend
 - Microsoft Defender pour point de terminaison
 - Microsoft Defender pour Office 365
 - Microsoft Cloud App Security
-- Microsoft Defender pour Identity
+- Microsoft Defender pour l’identité
 
 Pour utiliser le hunting avancé, [activer Microsoft 365 Defender](mtp-enable.md).
 
@@ -61,7 +61,7 @@ Nous vous recommandons de suivre plusieurs étapes pour commencer rapidement le 
 
 | Objectif d’apprentissage | Description | Ressource |
 |--|--|--|
-| **Découvrir la langue** | La recherche avancée est basée sur le langage de requête [Kusto,](https://docs.microsoft.com/azure/kusto/query/)en charge de la même syntaxe et des mêmes opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête. | [Vue d'ensemble du language de requête](advanced-hunting-query-language.md) |
+| **Découvrir la langue** | Le recherche avancée est basée sur le langage de requête [Kusto](https://docs.microsoft.com/azure/kusto/query/), en charge de la même syntaxe et des mêmes opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête. | [Vue d'ensemble du language de requête](advanced-hunting-query-language.md) |
 | **Découvrez comment utiliser les résultats de la requête** | Découvrez les graphiques et les différentes façons d’afficher ou d’exporter vos résultats. Découvrez comment modifier rapidement les requêtes, explorer pour obtenir des informations plus riches et prendre des mesures de réponse. | - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)<br>- [Prendre des mesures sur les résultats de la requête](advanced-hunting-take-action.md) |
 | **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes. | - [Référence de schéma](advanced-hunting-schema-tables.md)<br>- [Transition à partir de Microsoft Defender pour le point de terminaison](advanced-hunting-migrate-from-mdatp.md) |
 | **Obtenir des conseils et des exemples d’experts** | Formez-vous gratuitement avec des guides d’experts Microsoft. Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | - [Obtenir une formation d’expert](advanced-hunting-expert-training.md)<br>- [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)<br>- [Go hunt](advanced-hunting-go-hunt.md)<br>- [Recherchez les menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md) |
@@ -74,7 +74,7 @@ Pour utiliser le hunting avancé ou d’autres [fonctionnalités de Microsoft 36
 ## <a name="data-freshness-and-update-frequency"></a>Actualisation des données et fréquence de mise à jour
 Les données de recherche avancée peuvent être classées en deux types distincts, chacun consolidé différemment.
 
-- **Données d’événement ou** d’activité : remplit des tableaux sur les alertes, les événements de sécurité, les événements système et les évaluations de routine. Le recherche avancée reçoit ces données presque immédiatement après que les capteurs qui les collectent les transmettent avec succès aux services cloud correspondants. Par exemple, vous pouvez interroger les données d’événements à partir de capteurs sains sur des stations de travail ou des contrôleurs de domaine presque immédiatement après qu’elles soient disponibles sur Microsoft Defender pour point de terminaison et Microsoft Defender pour l’identité.
+- **Données d’événement ou** d’activité : remplit des tableaux sur les alertes, les événements de sécurité, les événements système et les évaluations de routine. Le recherche avancée reçoit ces données presque immédiatement après que les capteurs qui les collectent les transmettent avec succès aux services cloud correspondants. Par exemple, vous pouvez interroger les données d’événements à partir de capteurs sains sur des stations de travail ou des contrôleurs de domaine presque immédiatement après qu’elles soient disponibles sur Microsoft Defender pour Point de terminaison et Microsoft Defender pour l’identité.
 - **Données d’entité**: remplit les tableaux avec des informations sur les utilisateurs et les appareils. Ces données proviennent à la fois de sources de données relativement statiques et de sources dynamiques, telles que les entrées Active Directory et les journaux d’événements. Pour fournir des données actualisées, les tableaux sont mis à jour avec de nouvelles informations toutes les 15 minutes, en ajoutant des lignes qui peuvent ne pas être entièrement remplies. Toutes les 24 heures, les données sont consolidées pour insérer un enregistrement qui contient le jeu de données le plus récent et le plus complet sur chaque entité.
 
 ## <a name="time-zone"></a>Fuseau horaire

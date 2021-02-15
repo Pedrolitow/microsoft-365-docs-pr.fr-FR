@@ -42,12 +42,12 @@ Avec vos fichiers dans Microsoft Teams et SharePoint, vous pouvez également tra
 
 Vous pouvez également utiliser Microsoft Stream pour stocker et partager des vidéos en interne. Ces vidéos ne sont pas consultables par le public et sont donc idéales pour la messagerie de campagne interne.
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Bonnes pratiques
 
 Utilisez ces méthodes pour partager des fichiers et des vidéos en toute sécurité :
 
 1. Stockez des fichiers dans Microsoft Teams ou SharePoint et assurez-vous que seules les personnes qui ont besoin d’accéder à ces fichiers en ont.
-2. Lorsque vous souhaitez partager, ne joignez pas de fichiers à un e-mail. Au lieu de cela, choisissez **Obtenir un lien** à partir de Microsoft Teams ou SharePoint et envoyez le lien par courrier électronique.
+2. Lorsque vous souhaitez partager, n’attachez pas de fichiers à un e-mail. Au lieu de cela, choisissez **Obtenir un lien** à partir de Microsoft Teams ou SharePoint et envoyez le lien par courrier électronique.
 3. Pour partager un fichier en externe, ajoutez l’utilisateur en tant qu’invité à votre équipe ou utilisez SharePoint pour obtenir un lien sécurisé pour partager uniquement ce fichier.
 4. Utilisez Microsoft Stream pour héberger des vidéos que vous souhaitez voir dans votre campagne.
 5. Utilisez Microsoft Teams ou SharePoint pour stocker les fichiers vidéo sur qui votre équipe doit collaborer ou partager.
