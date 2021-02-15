@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 63ff32bda31446c25a523ff2064f7b750d102961
+ms.sourcegitcommit: 3e29926f51530afb0d75d8518a92b9ec7dc5e5bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080679"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173121"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -377,7 +377,7 @@ Pour télécharger votre package de règles, procédez comme suit :
    Pour une syntaxe détaillée et des informations de paramètrage, voir [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
 
    > [!NOTE]
-   > La limite pour les collections de type d'information confidentielles personnalisées est de 10.
+   > Le nombre maximal de packages de règles pris en charge est de 10. Cependant, chaque package peut contenir la définition de plusieurs types d’informations sensibles.
 
 4. Pour vérifier que vous avez correctement créé un nouveau type d’informations sensibles, effectuez l’une des opérations suivantes :
 

@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,30 +14,31 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables pour l’authentification uniquement dans le cloud.
-ms.openlocfilehash: aa18e1a9943ec12465737f6c3f2e12c1fa49e2a3
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 1e659304eee330960937b641c9a39b03920f52e7
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398876"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233129"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès aux identités et aux appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
 
 *Ce guide de laboratoire de test ne peut être utilisé que pour les environnements de test Microsoft 365 pour les entreprises.*
 
-[Les configurations](../security/office-365-security/microsoft-365-policies-configurations.md) d’accès aux identités et appareils sont un ensemble de configurations et de stratégies d’accès conditionnel pour protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
+[Les configurations](../security/office-365-security/microsoft-365-policies-configurations.md) d’accès aux identités et appareils sont un ensemble de configurations recommandées et de stratégies d’accès conditionnel pour protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
 
 Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte les exigences de [configuration préalable uniquement pour le cloud](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et aux appareils.
 
-La configuration de cet environnement de test comprend sept étapes :
+La configuration de cet environnement de test comprend huit étapes :
 
-1.  Créer de votre environnement de test léger
-2.  Configurer des emplacements nommés
-3.  Configurer la réécriture du mot de passe
-4.  Configurer la réinitialisation du mot de passe en libre-service
-5.  Configurer l’authentification multifacteur
-6.  Activer Azure AD Identity Protection
-7.  Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
+1. Créer de votre environnement de test léger
+2. Configurer des emplacements nommés
+3. Configurer la réinitialisation du mot de passe libre-service
+4. Configurer l’authentification multifacteur
+5. Activer l’inscription automatique des ordinateurs Windows joints à un domaine
+6. Configurer la protection par mot de passe Azure AD 
+7. Activer Azure AD Identity Protection
+8. Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
 ## <a name="phase-1-build-out-your-lightweight-microsoft-365-test-environment"></a>Étape 1 : Créer de votre environnement de test Microsoft 365 léger
 
@@ -47,18 +47,13 @@ Voici la configuration obtenue.
 
 ![Environnement de test Microsoft 365 Entreprise léger](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
-
 ## <a name="phase-2-configure-named-locations"></a>Étape 2 : Configurer des emplacements nommés
 
 Commencez par déterminer les adresses IP publiques ou les plages d’adresses que votre organisation utilise.
 
 Ensuite, suivez les instructions de [Configurer des emplacements nommés dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) pour ajouter les adresses ou plages d’adresses en tant qu’emplacements nommés. 
 
-## <a name="phase-3-configure-password-writeback"></a>Étape 3 : Configurer la réécriture du mot de passe
-
-Suivez les instructions de l’[Étape 2 du Guide de laboratoire de Test Réécriture du mot de passe](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).
-
-## <a name="phase-4-configure-self-service-password-reset"></a>Étape 4 : Configurer la réinitialisation du mot de passe en libre-service
+## <a name="phase-3-configure-self-service-password-reset"></a>Phase 3 : Configurer la réinitialisation du mot de passe libre-service
 
 Suivez les instructions de l’[Étape 3 du Guide de laboratoire de Test Réinitialisation de mot de passe](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset). 
 
@@ -71,7 +66,7 @@ Lors de l’activation de réinitialisation de mot de passe pour les comptes dan
 
 Testez la réinitialisation de mot de passe pour le compte Utilisateur 2.
 
-## <a name="phase-5-configure-multi-factor-authentication"></a>Étape 5 : Configurer l’authentification multifacteur
+## <a name="phase-4-configure-multi-factor-authentication"></a>Phase 4 : Configurer l’authentification multifacteur
 
 Suivez les instructions de [Étape 2 de Guide de laboratoire de Test Authentification multifacteur ](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) pour les comptes d’utilisateurs :
 
@@ -82,11 +77,19 @@ Suivez les instructions de [Étape 2 de Guide de laboratoire de Test Authentific
 
 Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
 
-## <a name="phase-6-enable-azure-ad-identity-protection"></a>Étape 6 : Activer Azure AD Identity Protection
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 5 : Activer l’inscription automatique d’appareils d’ordinateurs Windows joints à un domaine 
 
-Suivez les instructions de [Étape 2 du Guide de laboratoire de Test Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
+Suivez [ces instructions pour](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs Windows joints à un domaine.
 
-## <a name="phase-7-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Étape 7 : Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
+## <a name="phase-6-configure-azure-ad-password-protection"></a>Phase 6 : Configurer la protection par mot de passe Azure AD 
+
+Suivez [ces instructions pour](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) bloquer les mots de passe faibles connus et leurs variantes.
+
+## <a name="phase-7-enable-azure-ad-identity-protection"></a>Étape 7 : activer Azure AD Identity Protection
+
+Suivez les instructions de [Étape 2 du guide laboratoire test de l’authentification transparente unique Azure AD](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
+
+## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Étape 8 : activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
 Pour Exchange Online, suivez [ces instructions](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 
@@ -106,7 +109,7 @@ Pour Skype Entreprise Online :
   Get-CsOAuthConfiguration
   ```
 
-Le résultat est un environnement de test qui respecte les exigences de [configuration préalable uniquement pour le cloud](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et appareils. 
+Le résultat est un environnement de test qui répond aux exigences de la configuration préalable en [nuage](../security/office-365-security/identity-access-prerequisites.md#prerequisites) uniquement pour l’accès aux identités et aux appareils. 
 
 ## <a name="next-step"></a>Étape suivante
 

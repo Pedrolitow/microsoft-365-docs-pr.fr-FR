@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à instaurer la mise en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 04ac373250f13ece1a4e976891044a6584989f6d
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 03408a2f9e57421ea613bdb38e253401526f8f71
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142037"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242364"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -81,7 +81,7 @@ Dans tous les scénarios, vous devez [Créer et configurer des étiquettes de co
 
 |Je veux...|Documentation|
 |----------------|---------------|
-|Gérer les étiquettes de confidentialité des applications Office pour que le contenu soit étiqueté lors de sa création – inclut le support pour l’étiquetage manuel sur toutes les plateformes |[Utiliser les étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md)|
+|Gérer les étiquettes de confidentialité des applications Office pour que le contenu soit étiqueté lors de sa création – inclut le support pour l’étiquetage manuel sur toutes les plateformes |[Gérer les étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md)|
 |Permettre aux utilisateurs d’étiqueter et de protéger des fichiers à partir d’ordinateurs Windows à l’aide des applications Office, de l’Explorateur de fichiers et de PowerShell|[Client d’étiquetage unifié Azure Information Protection pour Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Chiffrer des documents et messages électroniques à l’aide d’étiquettes de confidentialité et limiter l’accès à ces contenus ainsi que leur utilisation |[Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité](encryption-sensitivity-labels.md)|
 |Activer les étiquettes de confidentialité pour Office sur le web, avec la prise en charge de la co-création, de la découverte électronique, de la protection contre la perte de données, la recherche, même lorsque les documents sont chiffrés. | [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le rapport d’utilisation du site SharePoint pour connaître le nombre de fichiers stockés par les utilisateurs dans les sites SharePoint, le nombre d’utilisations actives et le stockage total utilisé.
-ms.openlocfilehash: bc9345a5e281f1e7343bf62a2dc6832587d0786e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 403ebfd75fca5ba5777832140155bb09734db3c7
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649826"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233507"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation du site SharePoint
 
@@ -45,9 +45,9 @@ Les rapports Microsoft 365 dans le Centre d’administration ne sont pas pris en
 
 Vous pouvez afficher l’utilisation du site dans le rapport SharePoint en choisissant l’onglet **Utilisation du** site.<br/>![Rapports Microsoft 365 - Rapport d’utilisation du site Microsoft SharePoint.](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’utilisation du site SharePoint : choisir des colonnes](../../media/639f3cfd-6725-4318-a225-6d5c2f01770c.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’utilisation du site SharePoint : choisir des colonnes](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
 
-Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
 |Item|Description|
 |:-----|:-----|
@@ -57,11 +57,19 @@ Vous pouvez également exporter les données du rapport dans un fichier .csv Exc
 |Propriétaire du site  <br/> |Nom d’utilisateur du propriétaire principal du site.   <br/> |
 |Nom principal du propriétaire du site  <br/> |Adresse de messagerie du propriétaire du site. <br/> |
 |Date de la dernière activité (UTC)  <br/> | Date de la dernière détection de l’activité de fichier ou de l’affichage d’une page sur le site.  <br/> |
+|ID d’étiquette de sensibilité du site  <br/> | Étiquette de niveau de sensibilité sur le site.  <br/> |
+|Partage externe  <br/> | Paramètres partageables externes sur le site.  <br/> |
+|Stratégie d’appareil non gestion  <br/> | Stratégie d’accès au site pour les appareils non utilisés.  <br/> |
+|Emplacement géographique  <br/> | Emplacement géographique du site.  <br/> |
 |Fichiers  <br/> |Nombre de fichiers sur le site. <br/>|
 |Fichiers actifs  <br/> | Nombre de fichiers actifs sur le site.<br/> REMARQUE : si des fichiers ont été supprimés pendant la période spécifiée pour le rapport, le nombre de fichiers actifs affichés dans le rapport peut être supérieur au nombre actuel de fichiers sur le site.  <br/> |
 |Stockage utilisé (Mo)  <br/> |Quantité de stockage actuellement utilisée sur le site.  <br/>|
 |Stockage alloué (Mo)  <br/> |Quantité maximale de stockage allouée au site.  <br/>|
 |Vues de page  <br/> |Nombre de fois où des pages ont été vues sur le site.  <br/>|
 |Pages visitées  <br/> |Nombre de pages uniques visitées sur le site.  <br/>|
+|Nombre de liens anonymes  <br/> |Nombre de fois que des documents ou des dossiers sont partagés à l’aide de « Tout le monde avec le lien » sur le site.  <br/>|
+|Nombre de liens d’entreprise  <br/> |Nombre de fois que des documents ou des dossiers sont partagés à l’aide de « Personnes de l’organisation avec le lien » sur le site.  <br/>|
+|Lien sécurisé pour le nombre d’invités  <br/> |Nombre de fois que des documents ou des dossiers sont partagés à l’aide de « personnes spécifiques » sur le site.  <br/>|
+|Lien sécurisé pour le nombre de membres  <br/> |Nombre de fois que des documents ou des dossiers sont partagés à l’aide de « personnes spécifiques » sur le site.  <br/>|
 |Modèle web racine  <br/> |Modèle utilisé pour créer le site.  <br/> REMARQUE : si vous souhaitez filtrer les données par différents types de sites, exportez les données et utilisez la colonne Modèle Web racine. |
 |||

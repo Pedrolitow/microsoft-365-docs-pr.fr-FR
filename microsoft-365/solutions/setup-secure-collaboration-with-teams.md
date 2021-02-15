@@ -16,18 +16,20 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Découvrez comment configurer la collaboration de contenu sécurisée dans Teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: f65657125fef8b8cf7e4e229d70d8fe211153392
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: c92dc6dbf62d3fa0cb00307447b3d5a793830394
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613583"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233855"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
 
 La possibilité de partager facilement des informations avec les bonnes personnes tout en empêchant le partage de partage est essentielle au succès d’une organisation. Cela inclut la possibilité de partager des données sensibles en toute sécurité avec uniquement ceux qui doivent y avoir accès. Selon le projet, cela peut inclure le partage de données sensibles avec des personnes extérieures à votre organisation.
 
-Cette solution de collaboration comprend deux composants pour vous aider :
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
+
+Ces conseils de solution de collaboration incluent deux composants pour vous aider :
 - Déployer Microsoft Teams avec le niveau de protection le plus élevé pour chaque projet
 - Configurer le partage externe avec les paramètres de sécurité appropriés pour chaque projet
 
@@ -48,11 +50,11 @@ La plupart des organisations ont une variété d’informations, avec différent
 - Personnes spécifiques au sein de l’organisation
 - Des personnes spécifiques à l’intérieur et à l’extérieur de l’organisation
 
-Les informations telles que les brochures marketing sont destinées à un partage à l’extérieur de l’organisation. Les informations telles que les menus de la salle de menus ne sont pas destinées au partage externe, mais n’auraient aucun impact sur l’entreprise si elles étaient partagées en externe. Ces types d’informations n’ont besoin que de peu ou pas de protection.
+Les informations telles que les brochures marketing sont destinées à un partage à l’extérieur de l’organisation. Les informations telles que les menus de menu de menu ne sont pas destinées au partage externe, mais n’auraient aucun impact sur l’entreprise si elles étaient partagées en externe. Ces types d’informations ont peu ou pas besoin d’une protection.
 
 Ces mêmes brochures marketing, en cours de développement, peuvent uniquement être partagées au sein de l’organisation. Dans ce cas, les paramètres de partage par défaut dans Teams peuvent être suffisants.
 
-Les informations sur un nouveau produit en cours de développement peuvent être considérées comme sensibles, même au sein de l’organisation. Un degré de protection plus élevé peut être approprié dans ce cas. Vous pouvez restreindre l’accès à ces informations aux membres d’une équipe spécifique, par exemple. Selon le projet, vous devrez peut-être collaborer avec des personnes extérieures à votre organisation, telles qu’un fournisseur ou une organisation partenaire.
+Les informations sur un nouveau produit en cours de développement peuvent être considérées comme sensibles, même au sein de l’organisation. Un niveau de protection plus élevé peut être approprié dans ce cas. Vous pouvez restreindre l’accès à ces informations aux membres d’une équipe spécifique, par exemple. Selon le projet, vous devrez peut-être collaborer avec des personnes extérieures à votre organisation, telles qu’un fournisseur ou une organisation partenaire.
 
 Les informations qui sont essentielles au succès de votre organisation ou qui ont des exigences strictes en matière de sécurité ou de conformité peuvent nécessiter des niveaux de protection encore plus élevés.
 
@@ -80,7 +82,7 @@ Ces *niveaux*( base *de* référence, sensible et hautement *sensible)* augmente
 
 |-|**Niveau de référence**|**Niveau sensible**|**Niveau hautement sensible**|
 |:--|:-----------|:------------|:-------------------|
-|Équipe publique ou privée|Les deux|Privé|Privé|
+|Équipe publique ou privée|Les deux|Private|Private|
 |Partage non authentifié|Blocked|Blocked|Blocked|
 |Partage de fichiers|Autorisé|Autorisé|Seuls les propriétaires d’équipe peuvent partager.|
 |Appartenance à une équipe|Tout le monde peut rejoindre des équipes publiques.<br>Approbation du propriétaire de l’équipe requise pour rejoindre des équipes privées.|Approbation du propriétaire de l’équipe requise pour rejoindre l’équipe.|Approbation du propriétaire de l’équipe requise pour rejoindre l’équipe.|

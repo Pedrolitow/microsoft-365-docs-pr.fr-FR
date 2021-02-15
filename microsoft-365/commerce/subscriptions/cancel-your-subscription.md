@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment annuler votre abonnement d’essai ou payant Microsoft 365 pour les entreprises.
 ms.date: ''
-ms.openlocfilehash: 4141de3f1a228f465559212098cf46e68f2844f6
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 5d96b541030646668f636ee09cc3ccc4b43ef75a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114728"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233339"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
@@ -35,7 +35,7 @@ ms.locfileid: "50114728"
 
 ::: moniker-end
 
-*Éligibilité :* Si vous avez moins de 25 licences attribuées à des utilisateurs, vous pouvez annuler votre abonnement d’essai ou payant Microsoft 365 pour les entreprises en ligne à tout moment dans le Centre d’administration Microsoft 365. Si vous avez plus de 25 licences attribuées à des utilisateurs, appelez le [support technique pour annuler votre abonnement.](../../admin/contact-support-for-business-products.md)
+*Éligibilité :* Si vous avez moins de 25 licences attribuées à des utilisateurs, vous pouvez annuler votre abonnement d’essai ou payant Microsoft 365 pour les entreprises en ligne à tout moment dans le Centre d’administration Microsoft 365. Si vous avez plus de 25 licences attribuées à des utilisateurs, réduisez-la à moins de 25 ou appelez le support technique pour [annuler votre abonnement.](../../admin/contact-support-for-business-products.md)
 
 *Remboursement :* tout crédit calculé au prorata vous sera remboursé au cours du cycle de facturation suivant.
 

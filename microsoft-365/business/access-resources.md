@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder aux ressources locales telles que les applications métier, les partages de fichiers et les imprimantes à partir d’un appareil Windows 10 joint à Azure Active Directory.
-ms.openlocfilehash: 22edf0c23d6318e1f70bcb21b2cd697ea0a75da4
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: fc02fd30f41f25f52e653e750a6bdfd1bd7f800e
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688230"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233837"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources sur site à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 
@@ -61,6 +61,6 @@ Si l’appareil Windows que vous avez joint à Azure-AD était précédemment jo
 
 - Si l’appareil utilise des objets de stratégie de groupe (GPO), certains objets de stratégie de groupe peuvent ne pas avoir de fournisseur de services de [configuration](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) comparable dans Intune. Exécutez [l’outil MMAT](https://www.microsoft.com/download/details.aspx?id=45520) pour rechercher des CSP comparables pour les GGP existants.
 
-- Les utilisateurs ne pourront pas s’authentifier aux applications qui dépendent de l’authentification Active Directory. Évaluez l’application héritée et envisagez la mise à jour vers une application qui utilise l’th moderne, si possible.
+- Les utilisateurs peuvent ne pas être en mesure de s’authentifier aux applications qui dépendent de l’authentification Active Directory. Évaluez l’application héritée et envisagez la mise à jour vers une application qui utilise l’th moderne, si possible.
 
 - La découverte d’imprimantes Active Directory ne fonctionne pas. Vous pouvez fournir des chemins d’impression directs pour tous les utilisateurs ou utiliser [l’impression universelle.](https://aka.ms/UPDocs)

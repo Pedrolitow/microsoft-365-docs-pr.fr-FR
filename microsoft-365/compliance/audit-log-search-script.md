@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: Utilisez un script PowerShell, qui exécute la commande cmdlet Search-UnifiedAuditLog, pour effectuer des recherches dans le journal d’audit. Ce script est optimisé pour renvoyer des enregistrements d’audit de grande taille (jusqu’à 50 000). Le script exporte ces enregistrements dans un fichier CSV que vous pouvez afficher ou transformer à l’aide de Power Query dans Excel.
-ms.openlocfilehash: d4fcf59297747d0499f6616438299ad8cbe96d7f
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+description: Utilisez un script PowerShell qui exécute l’applet de commande Search-UnifiedAuditLog dans Exchange Online pour effectuer des recherches dans le journal d’audit. Ce script est optimisé pour renvoyer les enregistrements d’un grand jeu d’audits (jusqu’à 50 000). Le script exporte ces enregistrements dans un fichier CSV que vous pouvez afficher ou transformer à l’aide de Power Query dans Excel.
+ms.openlocfilehash: 3d44054d8d1111fe86e06460f5ca4d442d0d1625
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094785"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233328"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit
 
@@ -80,7 +80,7 @@ $intervalMinutes = 60
 
 Function Write-LogFile ([String]$Message)
 {
-    $final = [DateTime]::Now.ToString("s") + ":" + $Message
+    $final = [DateTime]::Now.ToUniversalTime().ToString("s") + ":" + $Message
     $final | Out-File $logFile -Append
 }
 
@@ -101,7 +101,7 @@ while ($true)
         break
     }
 
-    $sessionID = [DateTime]::Now.ToString("s")
+    $sessionID = [Guid]::NewGuid().ToString() + "_" +  "ExtractLogs" + (Get-Date).ToString("yyyyMMddHHmmssfff")
     Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     $currentCount = 0
@@ -137,14 +137,13 @@ while ($true)
 
 Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
 Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
-
 ```
 
 2. Modifiez les variables répertoriées dans le tableau suivant pour configurer les critères de recherche. Le script inclut des exemples de valeurs pour ces variables, mais vous devez les modifier (sauf indication contraire) pour répondre à vos exigences spécifiques.
 
    |Variable|Exemple de valeur|Description|
    |---|---|---|
-   |`$logFile`|"d:\temp\AuditSearchLog.txt"|Indique le nom et l’emplacement du fichier journal qui contient des informations sur la progression de la recherche dans le journal d’audit effectuée par le script.|
+   |`$logFile`|"d:\temp\AuditSearchLog.txt"|Indique le nom et l’emplacement du fichier journal qui contient des informations sur la progression de la recherche dans le journal d’audit effectuée par le script. Le script écrit les horodatages UTC sur le fichier d’audit.|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|Indique le nom et l’emplacement du fichier CSV contenant les enregistrements d’audit renvoyés par le script.|
    |`[DateTime]$start` et `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Spécifie la plage de dates pour la recherche dans le journal d’audit. Le script retourne les enregistrements des activités d’audit qui se sont produites dans la plage de dates spécifiée. Par exemple, pour renvoyer les activités effectuées en janvier 2021, vous pouvez utiliser une date de début de `"2021-01-01"` et une date de fin de `"2021-01-31"` (n’oubliez pas d’entourer les valeurs de guillemets doubles) La valeur d’exemple dans le script renvoie les enregistrements des activités effectuées au cours des 24 heures précédentes. si vous n’incluez pas d’horodatage dans la valeur, l’horodatage par défaut est 00:00 (minuit) pour la date spécifiée.|
    |`$record`|« AzureActiveDirectory »|Spécifie le type d’enregistrement des activités d’audit (également *opérations*) à rechercher. Cette propriété indique le service ou la fonctionnalité dans qui une activité a été déclenchée. Pour obtenir la liste des types d’enregistrement que vous pouvez utiliser pour cette variable, consultez [Type d’enregistrement journal d’audit](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). Vous pouvez utiliser le nom du type d’enregistrement ou la valeur ENUM. <br/><br/>**Conseil :** pour renvoyer les enregistrements d'audit pour tous les types d'enregistrements, utilisez la valeur `$null` (sans guillemets doubles).|

@@ -23,18 +23,18 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau Microsoft Office vers le client Office le plus récent pour les utilisateurs de votre organisation.
-ms.openlocfilehash: 596dfc8f4a005d01c0bf330243bf1fb3c639f97e
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3f8ea0d16e1c27414b5f3e11e842e336fadb3e75
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906440"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233317"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau vos utilisateurs Microsoft 365 pour les entreprises vers le dernier client Office
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 atteint la fin de la prise en charge
 
-Office 2010 a pris fin le 13 octobre 2020. Microsoft ne fournira plus les informations suivantes :
+Office 2010 a atteint sa fin de support le 13 octobre 2020. Microsoft ne fournira plus les informations suivantes :
 
 - Support technique pour les problèmes
 
@@ -103,6 +103,9 @@ Avant d’installer la dernière version d’Office, nous vous recommandons de d
   
 Si vous avez des produits tiers, contactez le fabricant pour savoir s’il existe une mise à jour qui fonctionne avec la dernière version d’Office.
 
+> [!TIP]
+> Si vous avez des problèmes lors de la désinstallation d’Office, vous pouvez utiliser l’outil Assistant Support et récupération Microsoft pour vous aider à supprimer Office : téléchargez et exécutez l’Assistant Support et récupération [Microsoft.](https://go.microsoft.com/fwlink/?LinkID=2155008)
+
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>Sélectionnez la version d’Office à désinstaller
 
 - [À partir d’un PC](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)
@@ -117,9 +120,9 @@ Si vous avez des produits tiers, contactez le fabricant pour savoir s’il exist
 
  **Abonnements non pris en charge** Si votre copie d’Office a été obtenue par le biais d’abonnements abandonnés, tels qu’Office 365 Petite Entreprise Premium ou Office 365 Moyenne Entreprise, vous ne pourrez pas installer une version antérieure d’Office, sauf si vous avez la clé de produit qui est arrivée avec votre abonnement.
 
-Si vous préférez installer votre ancienne version d’Office côte à côte avec la dernière version, vous pouvez voir une liste des versions dans laquelle cela est pris en charge, Installer et utiliser différentes versions d’Office sur le même [PC.](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf) Une installation côte à côte peut être le bon choix pour vous, si, par exemple, vous avez installé des applications tierces que vous utilisez avec votre ancienne version d’Office et que vous n’êtes pas encore sûr qu’elles soient compatibles avec la dernière version.
+Si vous préférez installer votre ancienne version d’Office côte à côte avec la dernière version, vous pouvez voir une liste des versions dans laquelle cela est pris en charge, Installer et utiliser différentes versions d’Office sur le même [PC.](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf) Une installation côte à côte peut être le bon choix pour vous, si, par exemple, vous avez installé des applications tierces que vous utilisez avec votre ancienne version d’Office et que vous n’êtes pas encore certain qu’elles sont compatibles avec la dernière version.
 
-## <a name="step-4---assign-office-licenses-to-users"></a>Étape 4 : Attribuer des licences Office aux utilisateurs
+## <a name="step-4---assign-office-licenses-to-users"></a>Étape 4 : attribuer des licences Office aux utilisateurs
 
 Si vous ne l’avez pas déjà fait, attribuez des licences à tous les utilisateurs de votre organisation qui doivent installer Office, voir Attribuer des licences aux utilisateurs dans [Microsoft 365 pour](../manage/assign-licenses-to-users.md)les entreprises.
   

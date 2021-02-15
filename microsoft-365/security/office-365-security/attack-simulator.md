@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques pour exécuter des attaques par hameçonnage simulé et par mot de passe dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
+description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques pour exécuter des attaques par hameçonnage et par mot de passe simulés dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 824ee04e2fcf0757a7eb32b48246bf1a1c638926
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 9d3d55c17e5d77ee18bd822899fea2f64136e1a3
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175882"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233599"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulateur d’attaques dans Microsoft Defender pour Office 365
 
@@ -34,6 +34,10 @@ ms.locfileid: "50175882"
 **S’applique** [à Microsoft Defender pour Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 Si votre organisation dispose de Microsoft Defender pour Office [](office-365-ti.md)365 Plan 2, qui inclut des fonctionnalités d’investigation et de réponse aux menaces, vous pouvez utiliser le Simulateur d’attaques dans le Centre de sécurité & conformité pour exécuter des scénarios d’attaque réalistes dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre ligne de bas de page. Pour en savoir plus, lisez cet article.
+
+> [!NOTE]
+> L’expérience du Simulateur d’attaques v1 a été basculée en mode lecture seule et remplacée par une formation au simulateur d’attaques décrite dans La formation à la [simulation d’attaques.](attack-simulation-training-get-started.md)
+> La possibilité de lancer de nouvelles simulations à partir de ce site a été désactivée. Toutefois, vous pouvez toujours accéder aux rapports pour les simulations qui s’exécutent pendant une période de 90 jours à partir du 24 janvier 2021.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 

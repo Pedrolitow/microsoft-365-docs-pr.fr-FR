@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: En savoir plus sur les types d’explications dans Microsoft SharePoint Syntex
-ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080589"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242593"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduction aux types d’explications
 
@@ -147,43 +147,65 @@ Dans la visionneuse, vous pouvez ajuster manuellement la case à sélectionner d
    ![Plage personnalisée](../media/content-understanding/custom-file.png).</br>
 Dans la visionneuse, vous pouvez ajuster manuellement la case à sélectionner de manière à inclure l’emplacement où la phase a lieu. Pour ce paramètre, vous devez sélectionner une position de <b>Début</b> et une position de <b>Fin</b>. Ces valeurs représentent le nombre de jetons dès le début du document. Bien que vous pouvez entrer manuellement ces valeurs, il est plus facile d’ajuster manuellement la case à sélectionner dans la visionneuse.</br> 
    
-
-
 ## <a name="use-explanation-templates"></a>Utiliser des modèles d’explication
 
-Bien que vous puissiez ajouter manuellement différentes valeurs de liste de modèles pour votre explication, il peut être plus facile d’utiliser les modèles qui vous sont fournis dans la bibliothèque d’explications.
+Bien que vous puissiez ajouter manuellement différentes valeurs de liste d'expressions pour votre explication, il peut être plus facile d’utiliser les modèles qui vous sont fournis dans la bibliothèque d’explications.
 
-Par exemple, au lieu d’ajouter manuellement toutes les variantes de *Date*, vous pouvez utiliser le modèle de liste de modèles pour *Date*, qui comprend déjà un certain nombre de valeurs de listes de modèles :</br>
+Par exemple, au lieu d’ajouter manuellement toutes les variantes de *Date*, vous pouvez utiliser le modèle de liste d’expressions pour *Date*, qui comprend déjà un certain nombre de valeurs de listes d’expressions :</br>
 
    ![Bibliothèque d’explications](../media/content-understanding/explanation-template.png)</br>
  
-La bibliothèque d’explications comprend des explications de liste de modèles couramment utilisées, notamment :</br>
+La bibliothèque d’explications comprend des explications de liste d’expressions couramment utilisées, notamment :</br>
 
 - Date</br>
 - Données (numériques)</br>
 - Temps</br>
 - Nombre</br>
+- Pourcentage</br>
 - Numéro de téléphone</br>
 - Code postal</br>
 - Premier mot de la phrase</br>
+- Fin de la phrase</br>
 - Carte bancaire</br>
 - Numéro de sécurité sociale</br>
+- Case à cocher</br>
+- Devise</br>
+- CC d’e-mail</br>
+- Date d’e-mail</br>
+- Msg d'accueil d’e-mail</br>
+- Destinataire d’e-mail</br>
+- Instructions concernant la qualité de l’expéditeur de courriers électroniques</br>
+- Sujet de l’e-mail</br>
 
-Notez que la bibliothèque d’explications comprend également des modèles pour les explications de liste d’expressions :
-- Fin de la phrase
-- Devise
+La bibliothèque d’explications inclut également trois types de modèles automatiques qui fonctionnent avec les données que vous avez étiquetées dans vos exemples de fichiers :
 
+- Après l’étiquette : mots ou caractères qui apparaissent après les étiquettes dans les exemples de fichiers.</br>
+- Après l’étiquette : mots ou caractères qui apparaissent avant les étiquettes dans les exemples de fichiers.</br>
+- Étiquettes : jusqu’aux 10 premières étiquettes des exemples de fichiers.</br>
+
+Pour vous donner un exemple du fonctionnement des modèles automatiques, dans l’exemple de fichier suivant, nous allons utiliser le modèle d’explication avant étiquette pour fournir au modèle plus d’informations pour obtenir une correspondance plus précise.
+
+   ![Options de sélecteur de fichiers exemple](../media/content-understanding/before-label.png)</br>
+
+Lorsque vous sélectionnez le modèle d’explication Avant étiquette, il recherche le premier jeu de mots qui apparaît avant l’étiquette dans vos exemples de fichiers. Dans l’exemple, les mots identifiés dans le premier exemple de fichier sont « En tant que ».
+
+   ![Modèle Avant d’étiquette](../media/content-understanding/before-label-explanation.png)</br>
+
+Vous pouvez sélectionner <b>Ajouter</b> pour créer une explication à partir du modèle.  À mesure que vous ajoutez d’autres exemples de fichiers, des mots supplémentaires sont identifiés et ajoutés à la liste des expressions.
+
+   ![Ajouter l'étiquette](../media/content-understanding/before-label-add.png)</br>
+ 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Pour utiliser un modèle de la bibliothèque d’explications
 
 1. Dans la section **Explications** de la page **Entraîner** de votre modèle, sélectionnez **Nouveau**, puis **À partir d’un modèle**.</br>
 
-   ![Créer à partir d’un modèle](../media/content-understanding/from-template.png)</br>
+   ![Ajouter Avant l’étiquette](../media/content-understanding/from-template.png)</br>
 
 2.  Sur la page **Modèles d’explication**, sélectionnez l’explication que vous souhaitez utiliser, puis **Ajouter**.</br>
 
        ![Sélectionner un modèle](../media/content-understanding/phone-template.png)</br>
 
-3. Les informations relatives au modèle que vous avez sélectionné s’affichent sur la page **Créer une explication**. Si nécessaire, modifiez le nom de l’explication et ajoutez ou supprimez des éléments de la liste des modèles. </br> 
+3. Les informations relatives au modèle que vous avez sélectionné s’affichent sur la page **Créer une explication**. Si nécessaire, modifiez le nom de l’explication et ajoutez ou supprimez des éléments de la liste d’expressions. </br> 
 
    ![Modifier le modèle](../media/content-understanding/phone-template-live.png)</br>
 

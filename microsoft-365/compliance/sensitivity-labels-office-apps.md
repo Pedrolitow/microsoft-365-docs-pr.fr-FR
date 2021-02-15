@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les utilisateurs utilisent des étiquettes de niveau de sensibilité dans les applications Office pour ordinateur de bureau, mobile et web, et quelles applications la prise en charge des étiquettes de niveau de sensibilité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9e3f73ad3756381a2ea6884d6ec65bc85063a10
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 95da9753d773e3bb9724a8d0ae2ab0e2f2618c27
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110017"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233716"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -41,7 +41,7 @@ Pour utiliser des étiquettes de sensibilité avec ces éditions autonomes d’O
 
 Pour chaque fonctionnalité, les tableaux suivants listent la version Minimale d’Office dont vous avez besoin pour prendre en charge les étiquettes de sensibilité à l’aide de l’étiquetage intégré. Ou, si la fonctionnalité d’étiquette est en prévisualisation publique ou en révision pour une prochaine version. Utilisez la [feuille de route Microsoft 365](https://aka.ms/MIPC/Roadmap) pour plus d’informations sur les prochaines publication.
 
-Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de pouvoir tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, voir Vue d’ensemble des canaux de mise à jour pour [Microsoft 365 Apps.](https://docs.microsoft.com/DeployOffice/overview-update-channels) Les nouvelles fonctionnalités qui sont en prévisualisation privée ne sont pas incluses dans le tableau, mais vous pourrez peut-être rejoindre ces aperçus en nomant votre organisation pour le programme d’aperçu privé [de Microsoft Information Protection.](https://aka.ms/mip-preview)
+Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de pouvoir tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, voir Vue d’ensemble des canaux de mise à jour pour [Microsoft 365 Apps.](https://docs.microsoft.com/DeployOffice/overview-update-channels) Les nouvelles fonctionnalités qui sont en prévisualisation privée ne sont pas incluses dans le tableau, mais vous pourrez peut-être rejoindre ces aperçus en nomant votre organisation pour le programme de prévisualisation privée [microsoft Information Protection](https://aka.ms/mip-preview).
 
 > [!NOTE]
 > Les noms des canaux de mise à jour pour les applications Office ont récemment été modifiés. Par exemple, le canal mensuel est désormais canal actuel et Office Insider est désormais canal bêta. Pour plus d’informations, voir [Modifications apportées aux canaux de mise à jour de Microsoft 365 Apps.](https://docs.microsoft.com/deployoffice/update-channels-changes)
@@ -72,7 +72,7 @@ Les numéros répertoriés sont la version minimale de l’application Office re
 
 **Note de bas de page :**
 
-<sup>\*</sup> Actuellement, n’inclut pas de texte de justification pour supprimer une étiquette ou réduire le niveau de classification
+<sup>\*</sup> Actuellement, n’inclut pas de texte de justification pour supprimer une étiquette ou abaisser le niveau de classification
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Fonctionnalités des étiquettes de sensibilité dans Outlook
 
@@ -84,7 +84,7 @@ Les numéros répertoriés sont la version minimale de l’application Office re
 |[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16,21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Exiger une justification pour modifier une étiquette](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16,21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Fournir un lien d’aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16,21+                 | 4.7.1+         | 4.0.39+           | Oui               |
-|[Marquer le contenu](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16,21+                 | 4.7.1+         | 4.0.39+           | Oui               |
+|[Marquer le contenu](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16,21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Marquages dynamiques avec variables](#dynamic-markings-with-variables)                                              | En cours d’examen                     | En cours d’examen                 | En cours d’examen         | En cours d’examen           | En cours d’examen               |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16,21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16,21+                 | 4.7.1+         | 4.0.39+           | Oui               |
@@ -118,7 +118,7 @@ Si l’un des clients Azure Information Protection est installé[(client](https:
 
 Pour utiliser l’étiquetage intégré plutôt que le client Azure Information Protection pour les applications Office, utilisez les instructions de la section précédente, mais définissez le paramètre de stratégie de groupe Utiliser la fonctionnalité Confidentialité dans **Office** pour appliquer et afficher les étiquettes de confidentialité sur **1**. 
 
-Vous pouvez également désactiver ou supprimer le add-in Office, **Azure Information Protection**. Cette méthode convient à un seul ordinateur et à des tests ad hoc. Pour obtenir des instructions, voir Afficher, gérer et installer des modules dans [les programmes Office.](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) 
+Vous pouvez également désactiver ou supprimer le add-in Office, **Azure Information Protection**. Cette méthode convient à un ordinateur unique et à des tests ad hoc. Pour obtenir des instructions, voir Afficher, gérer et installer des modules dans [les programmes Office.](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) 
 
 Lorsque vous désactivez ou supprimez ce add-in Office, le client Azure Information Protection reste installé afin de pouvoir continuer à étiqueter des fichiers en dehors de vos applications Office. Par exemple, à l’aide de l’Explorateur de fichiers ou de PowerShell.
 
@@ -270,7 +270,7 @@ Lorsque vous configurez une étiquette de sensibilité pour les marquages de con
 | `${Item.Label}` | Nom complet de l’étiquette appliquée| **Général**|
 | `${Item.Name}` | Nom de fichier ou objet de l’e-mail du contenu étiqueté | **Sales.docx** |
 | `${Item.Location}` | Chemin d’accès et nom de fichier du document en cours d’étiquetage, ou l’objet de l’e-mail d’un e-mail étiqueté | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Nom complet de l’utilisateur qui applique l’étiquette| **Président Dussy** |
+| `${User.Name}` | Nom d’affichage de l’utilisateur qui applique l’étiquette| **Président Dussy** |
 | `${User.PrincipalName}` | Nom d’utilisateur principal (UPN) Azure AD de l’utilisateur qui applique l’étiquette | **rsimone \@ contoso.com** |
 | `${Event.DateTime}` | Date et heure d’étiquetage du contenu, dans le fuseau horaire local de l’utilisateur qui applique l’étiquette | **10/8/2020 13:30** |
 

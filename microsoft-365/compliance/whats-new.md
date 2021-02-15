@@ -18,25 +18,44 @@ ms.collection:
 - M365-security-compliance
 description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester informé du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 40140c950bb42078cb1e72ae74762db00a4516b6
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113973"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233162"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
 Que ce soit en ajoutant de nouvelles solutions au Centre de conformité [Microsoft 365,](microsoft-365-compliance-center.md)en mettant à jour les fonctionnalités existantes en fonction de vos commentaires ou en mettant en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 aujourd’hui.
 
 > [!NOTE]
-> Certaines fonctionnalités de conformité sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)
+> Certaines fonctionnalités de conformité sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)
 
 > [!TIP]
 > Vous êtes intéressé par ce qui se passe dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du Centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[Nouveautés du Centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Consultez la feuille de route [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités de Microsoft 365 qui ont été lancées, sont en cours de déploiement, sont en cours de développement, ont été annulées ou publiées précédemment.
 
-## <a name="december-2020"></a>Décembre 2020
+## <a name="january-2021"></a>Janvier 2021
+
+### <a name="support-for-card-content-in-teams"></a>Prise en charge du contenu de carte dans Teams
+
+Les solutions de conformité Microsoft 365 [](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards) suivantes permettent désormais de détecter le contenu de carte généré par le biais d’applications dans les messages Teams :
+
+- **Core et Advanced eDiscovery**. Le contenu de la carte peut désormais [être mis en attente](create-ediscovery-holds.md#preserve-card-content) ou inclus dans les [recherches](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#search-for-card-content) (s’applique également à la recherche de contenu).
+- **Audit**. L’activité de carte est [désormais enregistrée dans le journal d’audit.](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities)
+- **Stratégies de rétention**. Peut désormais utiliser des stratégies de rétention [pour conserver et supprimer le contenu de la carte.](retention-policies-teams.md#whats-included-for-retention-and-deletion)
+
+### <a name="information-governance-and-records-management"></a>Gouvernance des informations et gestion des enregistrements
+
+[Nouvelle évaluation de l’utilisation](retention-regulatory-requirements.md#new-zealand-public-records-act) de la gouvernance des informations et de la gestion des enregistrements pour répondre aux obligations de conformité de la Loi sur les enregistrements publics en Nouvelle-Zélande.
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+- Les étiquettes de niveau de sensibilité sont désormais pris en charge pour les clients du gouvernement américain (GCC et GCC-H).
+- Nouvelle [prise en charge de l’étiquetage](sensitivity-labels-office-apps.md) automatique pour macOS.
+
+## <a name="december-2020"></a>Décembre 2020
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>À la une : nouveau contenu pour les solutions à risque internes
 
@@ -44,7 +63,7 @@ L’équipe de contenu de conformité Microsoft 365 travaille dur à la créatio
 
 Tout d’abord, le contenu qui relie nos solutions à risque internes : conformité des communications, gestion des risques internes, obstacles à l’information et gestion des accès privilégiés. Voici un aperçu de ce que vous trouverez :
 
-- [Nouvelle page d’accueil pour les solutions de risques internes.](insider-risk-solution-overview.md) Inclut des détails sur les risques que les solutions peuvent contribuer à atténuer, les exigences de licence, la séquence de déploiement, les illustrations d’architecture, les ressources de formation, etc.
+- [Nouvelle page d’accueil pour les solutions de risques internes.](insider-risk-solution-overview.md) Inclut des détails sur les risques que les solutions peuvent atténuer, les exigences de licence, la séquence de déploiement, les illustrations d’architecture, les ressources de formation, etc.
 - Nouveaux articles de présentation pour chaque solution à risque interne. Conseils et liens vers des articles qui vous aident à en savoir plus sur, planifier, déployer et gérer chaque solution :
   - [Conformité des communications](communication-compliance-solution-overview.md)
   - [Gestion des risques internes](insider-risk-management-solution-overview.md)
@@ -79,7 +98,7 @@ Le groupe [de rôles d’administrateur](get-started-with-records-management.md#
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-- [Étiqueter automatiquement les données dans Azure Purview (aperçu)](https://docs.microsoft.com/azure/purview/create-sensitivity-label). Vous pouvez désormais créer et appliquer automatiquement des étiquettes de sensibilité à des ressources dans Azure Purview, telles que des fichiers dans le stockage Blob Azure et des colonnes de base de données dans SQL Server.
+- [Étiqueter automatiquement les données dans Azure Purview (aperçu)](https://docs.microsoft.com/azure/purview/create-sensitivity-label). Vous pouvez désormais créer et appliquer automatiquement des étiquettes de niveau de sensibilité à des ressources dans Azure Purview, telles que des fichiers dans le stockage Blob Azure et des colonnes de base de données dans SQL Server.
 - [Exiger que les utilisateurs appliquent une étiquette aux éléments.](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) Également appelée « étiquetage obligatoire » , cette nouvelle option exige que les utilisateurs choisissent et appliquent une étiquette de niveau de sensibilité dans les scénarios spécifiques.
 
 ## <a name="november-2020"></a>Novembre 2020
@@ -118,7 +137,7 @@ Pour afficher les éléments lors d’une révision de disposition, les utilisat
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-[Prise en charge des languesJCK.](ediscovery-cjk-support.md) Advanced eDiscovery prend désormais en charge les langues de jeu de caractères sur deux sur deux caractères, appelées collectivement languesJCK (y compris le chinois simplifié, le chinois traditionnel, le japonais et le coréen). Ceux-ci peuvent être utilisés dans plusieurs scénarios d’ensembles de révision avancés.
+[Prise en charge des languesJCK.](ediscovery-cjk-support.md) Advanced eDiscovery prend désormais en charge les langues de jeu de caractères sur deux caractères, appelées collectivement languesJCK (y compris le chinois simplifié, le chinois traditionnel, le japonais et le coréen). Ceux-ci peuvent être utilisés dans plusieurs scénarios d’ensembles de révision avancés.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -143,10 +162,10 @@ Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conform
 
 ### <a name="communication-compliance"></a>Conformité des communications
 
-- [Groupes de rôles mis à jour.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) Les groupes de rôles de conformité des communications correspondent désormais à la structure de groupe de rôles disponible pour la solution de gestion des risques internes.
+- [Groupes de rôles mis à jour.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) Les groupes de rôles de conformité des communications correspondent désormais à la structure de groupes de rôles disponible pour la solution de gestion des risques internes.
 - [Tableau de bord rapports](communication-compliance-feature-reference.md#reports-preview). Votre emplacement central pour afficher tous les rapports de conformité des communications. Les widgets de rapport fournissent un aperçu rapide des informations les plus couramment nécessaires pour une évaluation globale de l’état des activités de conformité des communications.
 - [Flux Power Automate](communication-compliance-feature-reference.md#power-automate-flows). Configurer des flux pour automatiser les tâches pour les alertes et les utilisateurs, avertir les responsables lorsque les utilisateurs déclenchent une alerte, et bien plus encore.
-- [Action de correction «](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)Améliorer la classification ». Les alertes contenant des éléments qui correspondent à des classifieurs entra mentables peuvent tirer parti des commentaires pour réduire les faux positifs dans votre organisation. **L’option Améliorer la classification** vous permet de fournir des commentaires si les éléments détectés correspondent au classifieur configuré dans la stratégie de conformité des communications associée. Vous pouvez même suggérer d’autres classifieurs à associer à l’élément pour améliorer la précision des correspondances pour les alertes futures.
+- [Action de correction « Améliorer la classification](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)». Les alertes contenant des éléments qui correspondent à des classifieurs entra mentables peuvent tirer parti des commentaires pour réduire les faux positifs dans votre organisation. **L’option Améliorer la classification** vous permet de fournir des commentaires si les éléments détectés correspondent au classifieur configuré dans la stratégie de conformité des communications associée. Vous pouvez même suggérer d’autres classifieurs à associer à l’élément pour améliorer la précision des correspondances pour les alertes futures.
 
 ### <a name="data-connectors"></a>Connecteurs de données
 
@@ -166,7 +185,7 @@ Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conform
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
-[Prise en charge des enregistrements réglementaires.](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record) La classification d’une étiquette en tant qu’enregistrement réglementaire augmente les restrictions appliquées au contenu auquel l’étiquette est appliquée et limite les actions de gestion disponibles pour l’étiquette elle-même. Par exemple, une fois qu’il est appliqué au contenu, personne, pas même un administrateur global, ne peut supprimer l’étiquette. [En savoir plus](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) sur les actions autorisées et bloquées pour les enregistrements réglementaires.
+[Prise en charge des enregistrements réglementaires.](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record) La classification d’une étiquette en tant qu’enregistrement réglementaire augmente les restrictions imposées au contenu auquel l’étiquette est appliquée et limite les actions de gestion disponibles pour l’étiquette elle-même. Par exemple, une fois qu’il est appliqué au contenu, personne, pas même un administrateur global, ne peut supprimer l’étiquette. [En savoir plus](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) sur les actions autorisées et bloquées pour les enregistrements réglementaires.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -204,7 +223,7 @@ Plusieurs fonctionnalités nouvelles et améliorées ont été publiquement pré
 - L’intégration à [Microsoft Defender pour point](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) de terminaison vous permet d’importer et de filtrer les alertes Microsoft Defender pour les points de terminaison pour les activités détectées par les stratégies créées à partir des nouveaux modèles de stratégie de violation de la sécurité. Il existe également [](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) un paramètre de risque interne associé dans lequel vous pouvez choisir d’importer des alertes de sécurité pour la gestion des risques internes en fonction de l’état de triage des alertes Microsoft Defender for Endpoint.
 
     > [!NOTE]
-    > Pour tirer parti de l’intégration de Microsoft Defender pour les points de terminaison (y compris les nouveaux modèles de violation de stratégie de sécurité), microsoft Defender pour point de terminaison doit être configuré dans votre organisation. Vous devez également activer Microsoft Defender pour Endpoint pour l’intégration de la gestion des risques internes en configurant des fonctionnalités avancées dans [Microsoft Defender pour endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
+    > Pour tirer parti de l’intégration de Microsoft Defender pour les points de terminaison (y compris les nouveaux modèles de violation de stratégie de sécurité), microsoft Defender pour point de terminaison doit être configuré dans votre organisation. Vous devez également activer Microsoft Defender pour endpoint pour l’intégration de la gestion des risques internes en configurant des fonctionnalités avancées dans [Microsoft Defender pour Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
  
 - Personnaliser les seuils des indicateurs lors [de la création d’une stratégie.](insider-risk-management-policies.md#create-a-new-policy)
 - Configurer [](insider-risk-management-settings.md#priority-user-groups-preview) des groupes d’utilisateurs prioritaires pour définir les utilisateurs de votre organisation dont l’activité nécessite une inspection plus approfondie en fonction de facteurs tels que leur position, le niveau d’accès aux informations sensibles ou l’historique des risques.
@@ -240,29 +259,3 @@ L’activité d’administrateur liée à la rétention est désormais enregistr
 
 - Lorsque [vous ajoutez une collection à](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review)un jeu à réviser, vous pouvez désormais inclure des pièces jointes modernes (également appelées « pièces jointes cloud ») et des versions de document SharePoint.
 - Nouvelle [expérience d’exportation de](export-documents-from-review-set.md)téléchargement direct, ce qui élimine la nécessité d’utiliser Azure Storage Explorer pour télécharger le contenu du cas.
-
-## <a name="july-2020"></a>Juillet 2020
-
-### <a name="spotlight-on-help-docs"></a>À la une sur les documents d’aide
-
-Pour vous aider à comprendre quelles solutions de conformité sont utilisées pour protéger et régir les données sensibles de votre organisation, nous avons créé deux nouvelles pages d’accueil avec des présentations de la façon dont les solutions fonctionnent ensemble pour atteindre ces objectifs, y compris des liens vers des documents connexes pour vous permettre d’aller plus loin.
-
-[Microsoft Information Protection dans Microsoft 365.](information-protection.md)<br>
-[Gouvernance des informations dans Microsoft 365](manage-Information-governance.md)
-
-### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Advanced eDiscovery : ajouter des sources de données non privatives à vos cas
-
-Ajoutez des données à un cas sans avoir à les associer à un dépositaire (connu sous le nom de sources de [données non privatives).](non-custodial-data-sources.md) Et si vous devez placer ces données non en attente, vous pourrez le faire à l’aide de notre nouvelle fonctionnalité d’indexation avancée.
-
-### <a name="data-connectors-hr-connector-enhancements"></a>Connecteurs de données : améliorations apportées au connecteur RH
-
-(En prévisualisation) Une nouvelle version du connecteur [RH](import-hr-data.md) vous permet d’importer des données relatives aux changements de niveau de travail, aux révisions de performances et aux plans d’amélioration des performances. Ces données peuvent ensuite être utilisées dans plusieurs stratégies de risque internes [pour](insider-risk-management-policies.md) détecter les activités connexes.
-
-### <a name="retention-labels-new-support-for-email"></a>Étiquettes de rétention : nouvelle prise en charge du courrier électronique
-
-Vous pouvez maintenant créer une étiquette [de rétention](retention.md#retention-labels) pour commencer à conserver les messages électroniques en fonction du moment où les messages ont été étiquetés. Cela ne s’applique pas aux éléments de calendrier, qui seront conservés en fonction du moment où l’élément est envoyé.
-
-### <a name="sensitivity-labels-new-feature-and-an-improvement"></a>Étiquettes de niveau de sensibilité : nouvelle fonctionnalité et amélioration
-
-- (En prévisualisation) Lors de la configuration des paramètres de chiffrement [](encryption-sensitivity-labels.md#double-key-encryption) pour une étiquette, recherchez la nouvelle option d’utilisation du chiffrement à double clé pour protéger davantage les fichiers étiquetés et les e-mails.
-- Lors de la création ou de la suppression d’étiquettes de confidentialité, de la création, de la modification ou de la suppression de leurs stratégies d’étiquette, les modifications sont désormais synchronisées dans un délai d’une heure pour tous les utilisateurs, applications et services.

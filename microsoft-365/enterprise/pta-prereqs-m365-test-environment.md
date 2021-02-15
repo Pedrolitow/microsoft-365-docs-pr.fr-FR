@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès identité et appareil avec les conditions préalables pour l’authentification directe.
-ms.openlocfilehash: 7741b38a947e58d81192326c412760487d803e36
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 71ba116ee45f031b156934e0924a0c3d460110d5
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399180"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233761"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès identité et appareil pour l’authentification directe dans votre environnement de test Microsoft 365
 
@@ -30,16 +29,18 @@ Les configurations d’accès aux [identités](../security/office-365-security/m
 
 Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte la configuration requise de la [configuration préalable de l’authentification directe](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès identité et appareil.
 
-Il y a huit phases de configuration de cet environnement de test :
+La configuration de cet environnement de test se fait en dix phases :
 
-1.  Construire votre entreprise simulée avec environnement de test authentification directe Microsoft 365
-2.  Configurer l’authentification unique transparente Azure AD
-3.  Configurer des emplacements nommés
-4.  Configurer l’écriture différée du mot de passe
-5.  Configurer la réinitialisation du mot de passe libre-service
-6.  Configurer l’authentification multifacteur
-7.  Activer Azure AD Identity Protection
-8.  Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
+1. Construire votre entreprise simulée avec environnement de test authentification directe Microsoft 365
+2. Configurer l’authentification unique transparente Azure AD
+3. Configurer des emplacements nommés
+4. Configurer l’écriture différée du mot de passe
+5. Configurer la réinitialisation du mot de passe libre-service
+6. Configurer l’authentification multifacteur
+7. Activer l’inscription automatique des ordinateurs Windows joints à un domaine
+8. Configurer la protection par mot de passe Azure AD 
+9. Activer Azure AD Identity Protection
+10. Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
 ## <a name="phase-1-build-out-your-simulated-enterprise-with-pass-through-authentication-microsoft-365-test-environment"></a>Étape 1 : construire votre entreprise simulée avec environnement de test authentification directe Microsoft 365
 
@@ -85,13 +86,21 @@ Suivez les instructions de [Phase 2 de Guide de laboratoire de Test authentifica
 - Utilisateur 4
 - Utilisateur 5
 
-Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
+Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
 
-## <a name="phase-7-enable-azure-ad-identity-protection"></a>Étape 7 : activer Azure AD Identity Protection
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique d’appareils d’ordinateurs Windows joints à un domaine 
 
-Suivez les instructions de [Étape 2 du guide laboratoire test de l’authentification transparente unique Azure AD](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
+Suivez [ces instructions pour](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs Windows joints à un domaine.
 
-## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Étape 8 : activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
+## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8 : Configurer la protection par mot de passe Azure AD 
+
+Suivez [ces instructions pour](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) bloquer les mots de passe faibles connus et leurs variantes.
+
+## <a name="phase-9-enable-azure-ad-identity-protection"></a>Phase 9 : Activer Azure AD Identity Protection
+
+Suivez les instructions de [Étape 2 du Guide de laboratoire de Test Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
+
+## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Phase 10 : Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
 Pour Exchange Online, suivez [ces instructions](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 

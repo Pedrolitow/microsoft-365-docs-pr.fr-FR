@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 06/15/2020
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -21,16 +20,16 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Découvrez les différentes suites de chiffrement de certificats, technologies et TLS (Transport Layer Security) utilisées pour le chiffrement dans Office 365 et Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 244d7a6cef6d77322475245435dafb6c89ab5353
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 6e6b001b308519fb35e0cc835ac03fb4b27db260
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663427"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233140"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Détails techniques de référence sur le chiffrement
 
-Consultez cet article pour en savoir plus sur les certificats, les technologies et les suites de chiffrement TLS utilisées pour le chiffrement [dans Office 365.](encryption.md) Cet article fournit également des détails sur les annulations planifiées.
+Reportez-vous à cet article pour en savoir plus sur les certificats, les technologies et les suites de chiffrement TLS utilisés pour le chiffrement [dans Office 365.](encryption.md) Cet article fournit également des détails sur les annulations planifiées.
   
 - Si vous recherchez des informations générales, voir [Chiffrement dans Office 365.](encryption.md)
 - Si vous recherchez des informations d’installation, voir [Configurer le chiffrement dans Office 365 Entreprise.](set-up-encryption.md)
@@ -42,7 +41,7 @@ Vous n’avez pas besoin d’acheter ou de gérer des certificats pour Office 36
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>Normes de chiffrement actuelles et dépréciations planifiées
 
-Pour fournir un chiffrement de qualité, Office 365 passe régulièrement en revue les normes de chiffrement pris en charge. Parfois, les anciennes normes sont dépréciées à mesure qu’elles deviennent plus anciennes et moins sécurisées. Cet article décrit les suites de chiffrement actuellement pris en charge, ainsi que d’autres normes et détails sur les déprédations planifiées.
+Pour fournir un chiffrement de qualité, Office 365 passe régulièrement en revue les normes de chiffrement pris en charge. Parfois, les anciennes normes sont dépréciées à mesure qu’elles deviennent plus anciennes et moins sécurisées. Cet article décrit les suites de chiffrement actuellement pris en charge, ainsi que d’autres normes et détails sur les déprécations planifiées.
 
 ## <a name="fips-compliance-for-office-365"></a>Conformité FIPS pour Office 365
 
@@ -56,7 +55,7 @@ TLS version 1.3 (TLS 1.3) n’est actuellement pas pris en charge.
   
 ## <a name="support-for-tls-10-and-11-deprecation"></a>Prise en charge de l’annulation de TLS 1.0 et 1.1
 
-Office 365 a cessé de prise en charge de TLS 1.0 et 1.1 le 31 octobre 2018. Les nouveaux problèmes trouvés dans les clients, appareils ou services qui se connectent à Office 365 sur TLS 1.0 et 1.1 ne seront pas résolus. L’annulation officielle des environnements GCC High et DoD a commencé le 15 janvier 2020. L’annulation de TLS 1.0 et 1.1 pour les environnements internationaux et GCC a commencé le 15 octobre 2020.
+Office 365 a cessé de prise en charge de TLS 1.0 et 1.1 le 31 octobre 2018. Nous avons terminé la désactivation de TLS 1.0 et 1.1 dans les environnements GCC High et DoD. Nous avons commencé à désactiver TLS 1.0 et 1.1 pour les environnements internationaux et GCC à partir du 15 octobre 2020 et nous continuerons le déploiement au cours des prochaines semaines et mois.
 
 Pour maintenir une connexion sécurisée aux services Office 365 et Microsoft 365, toutes les combinaisons client-serveur et navigateur-serveur utilisent TLS 1.2 et les suites de chiffrement modernes. Il se peut que vous deviez procéder à la mise à jour de certaines combinaisons client-serveur et navigateur-serveur. Pour plus d’informations sur l’impact de cette modification, voir Préparation de l’utilisation obligatoire de [TLS 1.2 dans Office 365.](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)
   
@@ -77,7 +76,7 @@ Office 365 répond à une demande de connexion en essayant d’abord de se conne
 > [!IMPORTANT]
 > N’oubliez pas que les versions TLS sont  dépréciées et qu’elles ne doivent pas être utilisées lorsque des versions plus récentes sont disponibles. TLS 1.3 n’est actuellement pas pris en charge. Si vos services hérités ne nécessitent pas TLS 1.0 ou 1.1, vous devez les désactiver.
 
-| Suite de chiffrement | Algorithme/force d’échange de clés | Secret avant parfait | Chiffrement/force | Algorithme d’authentification |
+| Suite de chiffrement | Algorithme/force d’échange de clés | Forward Secrecy | Chiffrement/force | Algorithme d’authentification |
 |:-----|:-----|:-----|:-----|:-----|
 |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|Oui <br/>|AES/256 <br/>|RSA/112 <br/> |
 |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|Oui <br/>|AES/128 <br/>|RSA/112 <br/> |
@@ -90,7 +89,7 @@ Office 365 répond à une demande de connexion en essayant d’abord de se conne
 
 Ces suites de chiffrement ont pris en charge les protocoles TLS 1.0 et 1.1 jusqu’à leur date d’annulation. Pour les environnements GCC High et DoD dont la date d’annulation était le 15 janvier 2020, et pour les environnements internationaux et GCC qui datent du 15 octobre 2020.
 
-| Protocoles | Nom de suite de chiffrement | Algorithme d’échange de clés/Force | Prise en charge du secret avant parfait | Algorithme d’authentification/Force | Chiffrement/Force |
+| Protocoles | Nom de suite de chiffrement | Algorithme d’échange de clés/Force | Prise en charge du secret avant | Algorithme d’authentification/Force | Chiffrement/Force |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |Oui  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |Oui  <br/> |RSA/112  <br/> |AES/128  <br/> |
@@ -101,7 +100,7 @@ Ces suites de chiffrement ont pris en charge les protocoles TLS 1.0 et 1.1 jusqu
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Suites de chiffrement TLS dans Windows 10 v1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
+[TLS Cipher Suites dans Windows 10 v1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Chiffrement dans Office 365](encryption.md)
   

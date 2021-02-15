@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables applicables à l’authentification de la synchronisation du hachage du mot de passe.
-ms.openlocfilehash: 63f433d5297139fcc7f6eb8bd5383a6593c29388
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 8e8db4aae39acda0762f9b6394b23ab047727ea5
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399442"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233783"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Conditions préalables d’accès aux identités et appareils pour la synchronisation du hachage du mot de passe dans votre environnement de test Microsoft 365
 
@@ -28,22 +27,24 @@ ms.locfileid: "48399442"
 
 Les configurations d’accès aux [identités](../security/office-365-security/microsoft-365-policies-configurations.md) et appareils sont un ensemble de configurations et de stratégies d’accès conditionnel pour protéger l’accès à tous les services de Microsoft 365 pour les entreprises intégrés à Azure Active Directory (Azure AD).
 
-Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte les exigences de [configuration préalable de synchronisation du hachage du mot de passe Active Directory](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et appareils.
+Cet article explique comment configurer un environnement de test Microsoft 365 qui répond aux exigences de l’environnement hybride avec la [configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) requise de l’authentification de synchronisation de hachage de mot de passe pour l’accès aux identités et appareils.
 
-La configuration de cet environnement de test comprend huit étapes :
+La configuration de cet environnement de test se fait en dix phases :
 
-1.  Créer une entreprise simulée avec un environnement de test de synchronisation du hachage du mot de passe
-2.  Configurer l’authentification unique transparente Azure AD
-3.  Configurer des emplacements nommés
-4.  Configurer la réécriture du mot de passe
-5.  Configurer la réinitialisation de mot de passe en libre-service pour tous les comptes d’utilisateur
-6.  Configurer l’authentification multifacteur pour tous les comptes d’utilisateur
-7.  Activer Azure AD Identity Protection
-8.  Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
+1. Créer une entreprise simulée avec un environnement de test de synchronisation du hachage du mot de passe
+2. Configurer l’authentification unique transparente Azure AD
+3. Configurer des emplacements nommés
+4. Configurer la réécriture du mot de passe
+5. Configurer la réinitialisation de mot de passe en libre-service pour tous les comptes d’utilisateur
+6. Configurer l’authentification multifacteur pour tous les comptes d’utilisateur
+7. Activer l’inscription automatique des ordinateurs Windows joints à un domaine
+8. Configurer la protection par mot de passe Azure AD 
+9. Activer Azure AD Identity Protection
+10. Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
 ## <a name="phase-1-build-out-your-simulated-enterprise-with-password-hash-sync-microsoft-365-test-environment"></a>Étape 1 : Construire votre entreprise simulée avec un environnement de test Microsoft 365 pour la synchronisation du hachage du mot de passe
 
-Suivez les instructions de [Synchronisation du hachage du mot de passe](password-hash-sync-m365-ent-test-environment.md).
+Suivez les instructions du Guide [de](password-hash-sync-m365-ent-test-environment.md) laboratoire de test de synchronisation de hachage de mot de passe.
 Voici la configuration obtenue.
 
 ![Entreprise simulée avec environnement de test de synchronisation du hachage du mot de passe](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
@@ -84,13 +85,21 @@ Suivez les instructions de [Phase 2 de Guide de laboratoire de Test authentifica
 - Utilisateur 4
 - Utilisateur 5
 
-Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
+Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
 
-## <a name="phase-7-enable-azure-ad-identity-protection"></a>Étape 7 : activer Azure AD Identity Protection
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique d’appareils d’ordinateurs Windows joints à un domaine 
 
-Suivez les instructions de [Étape 2 du guide laboratoire test de l’authentification transparente unique Azure AD](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
+Suivez [ces instructions pour](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs Windows joints à un domaine.
 
-## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Étape 8 : activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
+## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8 : Configurer la protection par mot de passe Azure AD 
+
+Suivez [ces instructions pour](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) bloquer les mots de passe faibles connus et leurs variantes.
+
+## <a name="phase-9-enable-azure-ad-identity-protection"></a>Phase 9 : Activer Azure AD Identity Protection
+
+Suivez les instructions de [Étape 2 du Guide de laboratoire de Test Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
+
+## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Phase 10 : Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
 Pour Exchange Online, suivez [ces instructions](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 

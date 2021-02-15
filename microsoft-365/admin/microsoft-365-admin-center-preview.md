@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Découvrez le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 2e54ad576b944153332aaec2012538e84c444db1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: da2b54e5f69fcc1209459b02220c0ead3f564067
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645070"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233385"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
@@ -57,7 +57,7 @@ Le Centre d’administration Microsoft 365 est le point d’entrée commun pour 
 
 2. Go to the **Release preferences** card, and then select **Edit**. 
     
-3. Sélectionnez **la version ciblée pour tout le** monde ou la version ciblée pour les **utilisateurs sélectionnés.** Si vous choisissez La version ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
+3. Sélectionnez **la version ciblée pour tout le** monde ou la version ciblée pour les **utilisateurs sélectionnés.** Si vous choisissez la version ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
     
 ### <a name="admin-center-feedback"></a>Commentaires du Centre d’administration
 
@@ -79,7 +79,7 @@ Pour revenir à l’utilisation de l’ancien centre d’administration, activer
 
 ::: moniker range="o365-worldwide"
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 Vos questions ne sont-elles pas posées ici ? Go to the **Feedback** section at the bottom of this page and ask your question. 
   
@@ -116,5 +116,53 @@ La mise à jour de tous les centres d’administration pour une expérience coh�
 - [Vue d’ensemble de la gestion des appareils Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2006262)
     
 - [Présentation du Centre de sécurité et conformité Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2025413)
+
+## <a name="what-language-options-are-available-the-admin-center"></a>Quelles options de langue sont disponibles dans le Centre d’administration ?
+
+Le Centre d’administration Microsoft 365 est entièrement localisée dans 40 langues.
+
+|Langue |Locale |
+|---------|---------|
+|Arabe | ar |
+|Bulgare | bg |
+|Catalan | ca |
+|Tchèque | cs |
+|Danois | da |
+|Allemand | de |
+|Grec | el |
+|Espagnol | es |
+|Anglais | en |
+|Estonien | et |
+|Basque | eu |
+|Finnois | fi |
+|Français | fr |
+|Galicien | gl |
+|Hébreu | he |
+|Croate | hr |
+|Hongrois | hu |
+|Indonésien  | id |
+|Italien | it |
+|Japonais | ja |
+|Coréen | ko |
+|Lituanien | lt |
+|Letton | lv |
+|Néerlandais | nl |
+|Norvégien | Non |
+|Polonais | pl |
+|Portugais (Brésil) | pt |
+|Portugais (Portugal) | pt-pt |
+|Roumain | ro |
+|Russe | ru |
+|Slovaque | sk |
+|Slovène | sl |
+|Serbe (cyrillique)  | sr-cyrl |
+|Serbian Latin | sr |
+|Suédois | sv |
+|Thaï | th |
+|Turc | tr |
+|Ukrainien | uk |
+|Vietnamien | vi |
+|Chinese Simplified | zh-hans |
+|Chinese Traditional | zh-hant |
 
 ::: moniker-end

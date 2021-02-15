@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenez une vue d’ensemble de la compréhension des documents dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: c0396c8e702d3e32db93d26dba23ab038546bea0
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d2bf581468eeee008d09a242876bed5ad07ae01f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976518"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242409"
 ---
 # <a name="document-understanding-overview"></a>Présentation de la compréhension de document
 
@@ -46,10 +46,45 @@ Ajoutez des *classificateurs* et des *extracteurs* à votre document présentati
 
 Vous pouvez utiliser des fichiers d’exemple pour former et tester vos classificateurs et extracteurs de votre modèle. Les exemples de fichiers fournissent vos exemples de modèles à rechercher lorsque vous essayez d’identifier et d’extraire des données de fichiers. Par exemple, vous devez former vos classificateurs et extracteurs de renouvellement de contrat avec des exemples de documents de renouvellement de contrat que votre entreprise utilise. Vous pouvez également utiliser des exemples de fichiers pour tester l’efficacité de votre modèle.
 
-> [!NOTE]
-> Si vous utilisez la technologie de reconnaissance optique des caractères (OCR) pour numériser des documents, Syntex possède une limite de 15 pages pour la formation sur le modèle.
-
 Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour l’appliquer à toute bibliothèque de documents SharePoint à laquelle vous avez accès.  
+
+### <a name="file-limitations"></a>Limitations de fichier
+
+Les modèles de compréhension des documents utilisent la technologie OCR (Optical Character Recognition) pour analyser les fichiers PDF, images et TIFF, à la fois lorsque vous entraînez un modèle avec des exemples de fichiers et lorsque vous l’exécutez sur des fichiers dans une bibliothèque de documents.
+
+Notez les différences suivantes en ce qui concerne les fichiers texte Microsoft Office et les fichiers OCR numérisés (PDF, image ou TIFF) :
+
+- Fichiers Office : nous tronquons à 64 000 caractères (lors de la formation et de l’exécuter sur des fichiers dans une bibliothèque de documents).
+- Fichiers numérisés par OCR : la limite est de 20 pages.  
+
+#### <a name="supported-file-types"></a>Types de fichiers pris en charge
+
+Les modèles de compréhension des documents suivent les types de fichiers suivants :
+
+- doc
+- docx
+- eml
+- heic
+- heif
+- htm
+- html
+- jpeg
+- jpg
+- Markdown
+- md
+- msg
+- pdf
+- png
+- ppt
+- pptx
+- rtf
+- tif
+- tiff
+- txt
+- xls
+- xlsx
+
+
 
 ## <a name="see-also"></a>Voir aussi
 [Créer un classificateur](create-a-classifier.md)
@@ -65,3 +100,5 @@ Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour
 [Différence entre la compréhension de document et les modèles de traitement de formulaire](difference-between-document-understanding-and-form-processing-model.md)
   
 [Vue d’ensemble du traitement des formulaires](form-processing-overview.md)
+
+[Mode d’accessibilité Syntex de SharePoint](accessibility-mode.md)

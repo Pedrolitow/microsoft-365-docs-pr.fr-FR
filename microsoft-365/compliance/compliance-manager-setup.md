@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft et configurez des tests automatisés des actions. Gérer l’historique des utilisateurs et filtrer l’affichage de votre tableau de bord.
-ms.openlocfilehash: e130fc3438fc8b4674b752e25fc473ee0dd55ae4
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: c032f537dd0a24632cc702f8363697b85df7e7ca
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870909"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233772"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -49,7 +49,7 @@ Le Gestionnaire de conformité utilise un modèle d’autorisation de contrôle 
 
 ### <a name="where-to-set-permissions"></a>Où définir des autorisations
 
-La personne détenant le rôle d’administrateur général de votre organisation peut définir des autorisations utilisateur pour le Gestionnaire de modèles client. Les autorisations peuvent être définies dans le Centre de sécurité et conformité Office 365 & ainsi que dans Azure Active Directory (Azure AD).
+La personne détenant le rôle d’administrateur général de votre organisation peut définir des autorisations utilisateur pour le Gestionnaire de conformité. Les autorisations peuvent être définies dans le Centre de sécurité et conformité Office 365 & ainsi que dans Azure Active Directory (Azure AD).
 
 > [!NOTE]
 > Les clients des environnements GCC (Us Government Community) High peuvent uniquement définir des autorisations utilisateur et des rôles pour le Gestionnaire de conformité dans Azure AD. Voir ci-dessous pour obtenir des instructions Azure AD et des définitions de type de rôle.

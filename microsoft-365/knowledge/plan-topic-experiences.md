@@ -24,7 +24,7 @@ Vous contrôlez la façon dont les sujets sont abordés dans votre organisation.
 Dans cet article, nous examinerons les décisions de planification ci-après :
 
 - Les sites SharePoint que vous souhaitez analyser pour les rubriques
-- Les rubriques, le cas besoin, que vous souhaitez exclure des expériences de rubrique
+- Rubriques, le cas caser, que vous souhaitez exclure des expériences de rubrique
 - Utilisateurs pour lesquels vous souhaitez rendre les rubriques visibles
 - Utilisateurs que vous souhaitez autoriser à gérer les rubriques dans le centre de rubriques
 - Utilisateurs que vous souhaitez autoriser à créer ou modifier des rubriques dans le centre de rubriques
@@ -32,11 +32,11 @@ Dans cet article, nous examinerons les décisions de planification ci-après :
 
 La sécurité et la confidentialité de vos données sont respectées, et les expériences de rubrique n’octroient pas aux utilisateurs un accès supplémentaire aux fichiers dont ils n’ont pas le droit. Nous vous recommandons également de lire les [rubriques microsoft sur](topic-experiences-security-privacy.md) la sécurité et la confidentialité dans le cadre de votre processus de planification.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Vous devez être abonné à [Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder au Centre d’administration Microsoft 365 et configurer Rubriques.
 
-Tous les utilisateurs qui vont utiliser Les rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [par la rubrique Configurer Microsoft Topics.](set-up-topic-experiences.md)
+Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [dans La rubrique](set-up-topic-experiences.md)Configurer Microsoft .
 
 ## <a name="topic-discovery"></a>Découverte de rubrique
 
@@ -69,7 +69,7 @@ Les autorisations utilisateur que vous spécifiez déterminent les personnes de 
 
 Les gestionnaires de connaissances supervisent la qualité des informations, la façon dont elles sont structurées et d’autres meilleures pratiques au niveau de votre organisation. Ils peuvent confirmer et rejeter des rubriques.
 
-Bien que vous pouvez spécifier des responsables de rubriques individuels, nous vous recommandons de créer un groupe de sécurité (ou d’utiliser un groupe existant) qui contient les personnes qui vous souhaitez être des gestionnaires de connaissances. Vous pouvez spécifier ce groupe de sécurité pendant le processus d’installation.
+Bien que vous pouvez spécifier des responsables de rubriques individuels, nous vous recommandons de créer un groupe de sécurité (ou d’utiliser un groupe existant) qui contient les personnes que vous souhaitez utiliser comme responsables de connaissances. Vous pouvez spécifier ce groupe de sécurité pendant le processus d’installation.
 
 *Créer et modifier des rubriques*
 
@@ -83,7 +83,7 @@ Vous pouvez choisir de ne permettre à personne de contribuer à des rubriques, 
 
 *Visionneuses de rubriques*
 
-Les visiteurs peuvent voir des informations sur les pages de rubriques, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillables dans le contenu tel que les pages SharePoint. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
+Les visiteurs peuvent voir des informations sur les pages de rubrique, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillables dans le contenu tel que les pages SharePoint. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
 
 Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parmi :
 
@@ -102,7 +102,7 @@ Si vous souhaitez exclure des rubriques au niveau de l’administrateur, vous de
 Le fichier .csv doit contenir les paramètres suivants :
 
 - **Nom**: tapez le nom de la rubrique que vous souhaitez exclure. Vous pouvez procéder de deux manières :
-- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
+- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exacte* *ou* partielle.
     - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
     - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
 - **Signifie (facultatif)**: (également appelé *expansion)* Si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.

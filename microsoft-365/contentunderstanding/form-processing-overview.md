@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: En savoir plus sur le traitement de formulaires dans Microsoft SharePoint Syntex
-ms.openlocfilehash: 9a979e0f7e45694f1cc7f98bbe2012c773698297
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976482"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242445"
 ---
 # <a name="form-processing-overview"></a>Vue d’ensemble du traitement des formulaires
 
@@ -41,6 +41,10 @@ Vous pouvez également utiliser des exemples de fichiers pour former votre modè
 Une fois que vous avez créé votre modèle et que vous l’avez publié, celui-ci crée un [Power Automate Flow](https://docs.microsoft.com/power-automate/getting-started). Le flux s’exécute lorsqu’un fichier est téléchargé dans la bibliothèque de documents SharePoint et extrait les données qui ont été identifiées dans le modèle. Les données extraites s’affichent dans les colonnes de la vue bibliothèque de documents de votre modèle.
 
 Un administrateur Office 365 doit [activer le traitement de formulaires](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding)pour la bibliothèque de documents SharePoint pour permettre aux utilisateurs de [créer un modèle de traitement de formulaire](create-a-form-processing-model.md) dans celui-ci. Vous pouvez sélectionner les sites pendant ou après la configuration dans vos paramètres de gestion.
+
+### <a name="file-limitations"></a>Limitations de fichier
+
+Lorsque vous utilisez des modèles de traitement de formulaires, veillez à noter les [exigences et les limites d'utilisation des fichiers](https://docs.microsoft.com/ai-builder/form-processing-model-requirements).
 
 
 

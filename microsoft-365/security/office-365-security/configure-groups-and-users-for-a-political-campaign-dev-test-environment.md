@@ -11,24 +11,27 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Résumé : Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1fac15cc0b2a512745e0538ec689bd5f17555419
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2d23539951e4d51fcd29417ab71ce599853d7537
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614905"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165702"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Microsoft Defender pour Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
  **Résumé :** Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.
 
@@ -68,7 +71,7 @@ Dans cette phase, vous créez et configurez des groupes Azure AD pour votre camp
 
 Commencez par créer un ensemble de groupes pour une campagne électorale standard avec le portail Azure.
 
-1. Dans un onglet distinct dans votre navigateur, accédez au portail Azure à l’adresse <https://portal.azure.com>. Si nécessaire, connectez-vous avec les informations d’identification du compte Administrateur général de votre abonnement d’essai Office 365 E5.
+1. Dans un nouvel onglet de votre navigateur, accédez au portail Azure sous <https://portal.azure.com>. Si nécessaire, connectez-vous avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai Office 365 E5.
 
 2. Dans le portail Azure, cliquez sur **Azure Active Directory > Utilisateurs et groupes > Tous les groupes**.
 

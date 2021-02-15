@@ -19,20 +19,20 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
-description: Découvrez comment utiliser le Centre de sécurité et conformité dans Office 365 pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
-ms.openlocfilehash: 6ecd84e36c39a90bf6df57286ef1559431c8dda1
-ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
+description: Découvrez comment utiliser le Centre de conformité pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
+ms.openlocfilehash: d7506b92cc16120f1d40a6d5a1744ab38d446a76
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47407938"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233814"
 ---
-# <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre de sécurité et conformité
+# <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre conformité
 
-L’archivage dans Office 365 (également appelé archivage inaltérable) fournit aux utilisateurs de l’espace de stockage de boîtes aux lettres supplémentaire. Une fois que vous avez activé les boîtes aux lettres d’archivage, les utilisateurs peuvent consulter et stocker des messages dans leurs boîtes aux lettres d’archivage à l’aide de Microsoft Outlook et d’Outlook sur le web (autrefois appelé Outlook Web App). Les utilisateurs peuvent également déplacer ou copier des messages entre leurs boîtes aux lettres principale et d’archivage. Ils peuvent également récupérer les éléments supprimés du dossier Éléments récupérables dans leur boîte aux lettres d’archivage à l’aide de l’outil Récupérer les éléments supprimés.
+L’archivage dans Microsoft 365 (également appelé *Archivage inaltérable*) fournit aux utilisateurs de l’espace de stockage de boîtes aux lettres supplémentaire. Une fois que vous avez activé les boîtes aux lettres d’archivage, les utilisateurs peuvent consulter et stocker des messages dans leurs boîtes aux lettres d’archivage à l’aide de Microsoft Outlook et d’Outlook sur le web (autrefois appelé Outlook Web App). Les utilisateurs peuvent également déplacer ou copier des messages entre leurs boîtes aux lettres principale et d’archivage. Ils peuvent également récupérer les éléments supprimés du dossier Éléments récupérables dans leur boîte aux lettres d’archivage à l’aide de l’outil Récupérer les éléments supprimés.
 
 > [!NOTE]
-> La fonctionnalité d’archivage à extension automatique fournit, dans Office 365, un espace de stockage complémentaire dans les boîtes aux lettres d’archivage. Lorsque l’archivage à développement automatique est activé et que le quota de stockage initial de la boîte aux lettres d’archivage d’un utilisateur est atteint, Office 365 ajoute automatiquement un espace de stockage supplémentaire. Cela signifie que les utilisateurs ne tombent pas à cours d’espace de stockage de boîte aux lettres et que vous n’avez plus besoin de gérer quoi que ce soit après l’activation initiale de la boîte aux lettres d’archivage et de l’archivage à développement automatique pour votre organisation. Pour plus d’informations, voir [Vue d’ensemble d’un archivage illimité dans Office 365](unlimited-archiving.md).
+> La fonctionnalité d’archivage à extension automatique fournit, dans Microsoft 365, un espace de stockage complémentaire dans les boîtes aux lettres d’archivage. Lorsque l’archivage à développement automatique est activé et que le quota de stockage initial de la boîte aux lettres d’archivage d’un utilisateur est atteint, Microsoft 365 ajoute automatiquement un espace de stockage supplémentaire. Cela signifie que les utilisateurs ne tombent pas à cours d’espace de stockage de boîte aux lettres et que vous n’avez plus besoin de gérer quoi que ce soit après l’activation initiale de la boîte aux lettres d’archivage et de l’archivage à développement automatique pour votre organisation. Pour plus d’informations, voir [Vue d’ensemble d’un archivage illimité](unlimited-archiving.md).
 
 ## <a name="get-the-necessary-permissions"></a>Obtenir les autorisations nécessaires
 
@@ -70,7 +70,7 @@ Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez ê
 
 Vous pouvez également utiliser la page **Archive** dans le Centre de sécurité et conformité pour désactiver la boîte aux lettres d’archivage d’un utilisateur. Si vous désactivez la boîte aux lettres d’un utilisateur, vous pouvez la reconnecter à la boîte aux lettres principale de l’utilisateur dans les 30 jours qui suivent sa désactivation. Dans ce cas, le contenu d’origine de la boîte aux lettres d’archivage est restauré. Au bout de 30 jours, le contenu de la boîte aux lettres d’archivage d’origine est supprimé définitivement et ne peut pas être récupéré. Par conséquent, si vous réactivez l’archive plus de 30 jours après l’avoir désactivée, une nouvelle boîte aux lettres d’archivage est créée.
 
-Notez que la stratégie d’archivage par défaut affectée aux boîtes aux lettres des utilisateurs déplace les éléments vers la boîte aux lettres d’archivage deux ans après leur date de remise. Si vous désactivez la boîte aux lettres d’archivage d’un utilisateur, aucune action n’est effectuée sur les éléments de boîte aux lettres et ceux-ci restent dans la boîte aux lettres principale de l’utilisateur.
+La stratégie d’archivage par défaut affectée aux boîtes aux lettres des utilisateurs déplace les éléments vers la boîte aux lettres d’archivage deux ans après leur date de remise. Si vous désactivez la boîte aux lettres d’archivage d’un utilisateur, aucune action n’est effectuée sur les éléments de boîte aux lettres et ceux-ci restent dans la boîte aux lettres principale de l’utilisateur.
 
 Pour désactiver une boîte aux lettres d’archivage :
 
@@ -117,7 +117,7 @@ Enable-Mailbox -Identity <username> -Archive
 Pour activer la boîte aux lettres d’archivage pour tous les utilisateurs au sein de votre organisation (dont la boîte aux lettres d’archivage n’est pas activée), exécutez la commande suivante.
 
 ```powershell
-Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+Get-Mailbox -Filter {ArchiveGuid -Eq "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Enable-Mailbox -Archive
 ```
 
 ### <a name="disable-archive-mailboxes"></a>Désactiver les boîtes aux lettres d’archivage
@@ -131,7 +131,7 @@ Disable-Mailbox -Identity <username> -Archive
 Pour désactiver la boîte aux lettres d’archivage pour tous les utilisateurs au sein de votre organisation (dont la boîte aux lettres d’archivage est activée), exécutez la commande suivante.
 
 ```powershell
-Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
+Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
 ```
 
 ## <a name="more-information"></a>Plus d’informations

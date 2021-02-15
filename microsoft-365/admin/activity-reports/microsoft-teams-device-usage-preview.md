@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft Teams à partir de Rapports Microsoft 365.
-ms.openlocfilehash: 928ba7bbe4d4753499e71b347baffafa7441f5b5
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 54219b060767193e711c839d25780dd3b4a618bf
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988527"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233433"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation des appareils Microsoft Teams
 
@@ -46,7 +46,9 @@ Vous pouvez afficher l’utilisation de l’appareil dans le rapport Teams en ch
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’appareil utilisateur Teams : choisir les colonnes](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
-Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+
+Le rapport **Utilisation de Microsoft Teams sur des appareils** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
 |Item|Description|
 |:-----|:-----|

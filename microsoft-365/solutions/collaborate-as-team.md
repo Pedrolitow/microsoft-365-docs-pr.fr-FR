@@ -17,18 +17,18 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe pour la collaboration de tâches, de conversations et de documentation avec des invités dans Teams.
-ms.openlocfilehash: 34b7d5d47d7fb0c9196beda70184fa6510b6cc33
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 66c5692dd8cd233d8b3639f8ce0755ce51b60c0a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780543"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233073"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
 Si vous avez besoin de collaborer avec des invités dans des documents, des tâches et des conversations, nous vous recommandons d’utiliser Microsoft Teams. Teams fournit toutes les fonctionnalités de collaboration disponibles dans Office et SharePoint avec une conversation permanente et un ensemble personnalisable et extensible d’outils de collaboration dans une expérience utilisateur unifiée.
 
-Dans cet article, nous allons passer en revue les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe pour la collaboration avec les invités.
+Dans cet article, nous allons passer en revue les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe pour la collaboration avec les invités. Une fois que vous avez configuré l’accès invité, vous pouvez inviter des invités à des équipes en suivant les étapes de l’étape Ajouter des invités à une [équipe dans Teams.](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
@@ -38,7 +38,7 @@ Cette vidéo montre les étapes de configuration décrites dans ce document.</br
 
 ## <a name="azure-external-collaboration-settings"></a>Paramètres de collaboration externe Azure
 
-Le partage dans Microsoft 365 est régi à son niveau le plus élevé par les [paramètres de collaboration externe B2B dans Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations) Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace les paramètres de partage que vous configurez dans Microsoft 365.
+Le partage dans Microsoft 365 est régi à son niveau le plus élevé par les [paramètres de collaboration externe B2B dans Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations) Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
 
 Vérifiez les paramètres de collaboration externe B2B pour vous assurer que le partage avec des invités n’est pas bloqué.
 
@@ -59,7 +59,7 @@ Si vous travaillez avec des invités de plusieurs organisations, vous pouvez res
 
 ## <a name="teams-guest-access-settings"></a>Paramètres d’accès invité Teams
 
-Teams dispose d’un commutateur master on/off pour l’accès invité et de divers paramètres disponibles pour contrôler ce que les invités peuvent faire dans une équipe. Le commutateur maître, **Autoriser l’accès invité** dans Teams, doit être **en** cours pour que l’accès invité fonctionne dans Teams.
+Teams dispose d’un commutateur master on/off pour l’accès invité et de divers paramètres disponibles pour contrôler ce que les invités peuvent faire dans une équipe. Le commutateur maître, **Autoriser l’accès invité dans Teams,** doit être **en** cours pour que l’accès invité fonctionne dans Teams.
 
 Vérifiez que l’accès invité est activé dans Teams et ajustez les paramètres invité en fonction des besoins de votre entreprise. Gardez à l’esprit que ces paramètres affectent toutes les équipes.
 
@@ -107,7 +107,7 @@ Si vous souhaitez autoriser le partage de fichiers et de dossiers avec des perso
 
 Pour définir les paramètres de partage au niveau de l’organisation SharePoint
 
-1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation de gauche, sous Centres d’administration, cliquez **sur SharePoint.**
+1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation de gauche, sous Centres d’administration, cliquez **sur SharePoint**.
 2. Dans le Centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Stratégies,** puis cliquez sur **Partage.**
 3. Assurez-vous que le partage externe pour SharePoint est définie sur **Tout** le monde ou **Nouveau et les invités existants.**
 4. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
@@ -157,7 +157,7 @@ Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’il
 Pour définir les paramètres de partage au niveau du site
 1. Dans le Centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Sites** et cliquez **sur Sites actifs.**
 2. Sélectionnez le site de l’équipe que vous venez de créer.
-3. Cliquez sur ... et choisissez **Partage**.
+3. Cliquez sur ... et choisissez **Partage.**
 4. Assurez-vous que le partage est définie sur **Tout** le monde ou **Nouveau et sur les invités existants.**
 5. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 

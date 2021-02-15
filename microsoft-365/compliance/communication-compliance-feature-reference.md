@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: effe4bbcf381a717c03d9e3ace3ff7a7db8bd273
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 8d004d4c6e6a15994bc2135df09fe04c3807fb25
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110039"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233796"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence des fonctionnalités de conformité des communications
 
@@ -32,7 +32,7 @@ ms.locfileid: "50110039"
 >[!Important]
 >L’utilisation de PowerShell pour créer et gérer les stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la solution de conformité des [communications Microsoft 365.](https://compliance.microsoft.com/supervisoryreview)
 
-Vous créez des stratégies de conformité des communications pour les organisations Microsoft 365 dans le Centre de conformité Microsoft 365. Les stratégies de conformité des communications définissent les communications et les utilisateurs qui sont soumis à révision dans votre organisation, définissent les conditions personnalisées que les communications doivent respecter et spécifient qui doit passer en revue. Les utilisateurs affectés au rôle d’administrateur de conformité des communications peuvent configurer des stratégies, et toute personne à qui ce rôle est attribué peut accéder à la **page** conformité des communications et aux paramètres globaux dans le Centre de conformité Microsoft 365.  Si nécessaire, vous pouvez exporter l’historique des modifications apportées à une stratégie vers un fichier .csv qui inclut également l’état des alertes en attente de révision, des éléments résordés et des éléments résolus. Les stratégies ne peuvent pas être renommées et supprimées lorsqu’elles ne sont plus nécessaires.
+Vous créez des stratégies de conformité des communications pour les organisations Microsoft 365 dans le Centre de conformité Microsoft 365. Les stratégies de conformité des communications définissent les communications et les utilisateurs qui sont soumis à révision dans votre organisation, définissent les conditions personnalisées que les communications doivent respecter et spécifient qui doit passer en revue. Les utilisateurs affectés au rôle d’administrateur de conformité des communications peuvent configurer des stratégies, et toute personne à qui ce rôle est attribué peut accéder à la **page** conformité des communications et aux paramètres globaux dans le Centre de conformité Microsoft 365.  Si nécessaire, vous pouvez exporter l’historique des modifications vers une stratégie vers un fichier .csv qui inclut également l’état des alertes en attente de révision, les éléments résordés et les éléments résolus. Les stratégies ne peuvent pas être renommées et supprimées lorsqu’elles ne sont plus nécessaires.
 
 >[!NOTE]
 >Les stratégies de surveillance créées dans le Centre de sécurité & conformité pour les abonnements Office 365 ne peuvent pas migrer vers Microsoft 365. Si vous migrez d’un abonnement Office 365 vers un abonnement Microsoft 365, vous devez créer de nouvelles stratégies de conformité des communications pour remplacer les stratégies de surveillance existantes.
@@ -65,13 +65,13 @@ Choisissez parmi ces options de groupe de rôles lors de la configuration de la 
 |:-----|:-----|
 | **Conformité des communications** | Utilisez ce groupe de rôles pour gérer la conformité des communications pour votre organisation au sein d’un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes, enquêteurs et visionneuses désignés, vous pouvez configurer les autorisations de conformité des communications dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de conformité des communications. Cette configuration est le moyen le plus simple de se lancer rapidement dans la conformité des communications et convient parfaitement aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. |
 | **Administrateur de conformité des communications** | Utilisez ce groupe de rôles pour configurer initialement la conformité des communications, puis séparez les administrateurs de conformité des communications dans un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité des communications, des paramètres globaux et des attributions de groupe de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
-| **Analyste de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’analystes de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les stratégies où ils sont affectés en tant que réviseurs, afficher les métadonnées des messages (et non le contenu du message), passer à des réviseurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
-| **Enquêteur de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des réviseurs supplémentaires, passer à un cas Advanced eDiscovery, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
+| **Analyste de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’analystes de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les stratégies dans laquelle ils sont affectés en tant que réviseurs, afficher les métadonnées de message (et non le contenu du message), faire une escalade vers d’autres réviseurs ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
+| **Enquêteur de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, s’adresser à d’autres réviseurs, passer à un cas Advanced eDiscovery, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
 | **Visionneuse de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui gèreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de rapports sur la page d’accueil de conformité des communications et peuvent afficher tous les rapports de conformité des communications. |
 
-### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>Pour les organisations qui utilisent les autorisations d’origine et les groupes de rôles
+### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>Pour les organisations utilisant les autorisations d’origine et les groupes de rôles
 
-La nouvelle structure de groupe de rôles remplace la structure initiale du groupe de rôles pour la conformité des communications. Pour les organisations qui utilisent déjà la conformité des communications, le rôle d’administrateur de vérification de surveillance doit vous être attribué pour prendre en charge la conformité des communications dans le Centre de conformité Microsoft 365. En outre, vous deviez créer un nouveau groupe de rôles pour les réviseurs avec les rôles Administrateur de vérification de surveillance, Gestion des cas, Administrateur de conformité et Révision pour examiner et corriger les messages avec des correspondances de stratégie. En fait, tous les administrateurs et les réviseurs faisaient partie d’un seul groupe de rôles et tout le monde avait les mêmes autorisations d’accès et de gestion. Avec les dernières mises à jour de la conformité des communications, vous devez planifier la migration de la structure de groupe de rôles précédente vers la nouvelle structure de groupe de rôles. La prise en charge de la structure de groupe de rôles précédente sera progressivement mise hors d’œuvre.
+La nouvelle structure de groupe de rôles remplace la structure initiale du groupe de rôles pour la conformité des communications. Pour les organisations qui utilisent déjà la conformité des communications, vous devez avoir le rôle Administrateur de vérification de surveillance pour commencer à respecter la conformité des communications dans le Centre de conformité Microsoft 365. En outre, vous deviez créer un groupe de rôles pour les réviseurs avec les rôles Administrateur de vérification de surveillance, Gestion des cas, Administrateur de conformité et Révision pour examiner et corriger les messages avec des correspondances de stratégie. En fait, tous les administrateurs et les réviseurs faisaient partie d’un seul groupe de rôles et tout le monde avait les mêmes autorisations d’accès et de gestion. Avec les dernières mises à jour de la conformité des communications, vous devez planifier la migration de la structure de groupe de rôles précédente vers la nouvelle structure de groupe de rôles. La prise en charge de la structure de groupe de rôles précédente sera progressivement mise hors d’œuvre.
 
 Pour faciliter la planification de la migration, prenons l’exemple suivant. Vous avez actuellement trois types d’utilisateurs dans votre organisation, les administrateurs informatiques, le triage et les réviseurs. Ces trois types d’utilisateurs font partie de la structure de groupe de rôles précédente et sont tous membres d’un groupe de rôles unique avec les rôles suivants attribués :
 
@@ -83,7 +83,7 @@ Pour faciliter la planification de la migration, prenons l’exemple suivant. Vo
 Pour mettre à jour les rôles de ces utilisateurs pour la nouvelle structure de groupe de rôles et séparer les autorisations d’accès et de gestion pour les utilisateurs, vous pouvez envisager trois nouveaux groupes et les nouvelles attributions de groupe de rôles associées :
 
 - **Administrateurs informatiques**: affectés au nouveau groupe de rôles Administrateur de conformité *des* communications.
-- **Triage**: affecté au groupe de *rôles* Analyste de conformité des communications.
+- **Triage**: affecté au groupe de *rôles Analyste de conformité des* communications.
 - **Réviseurs**: affecté au nouveau groupe de rôles Enquêteur de conformité *des* communications.
 
 ## <a name="supervised-users"></a>Utilisateurs supervisés
@@ -91,7 +91,7 @@ Pour mettre à jour les rôles de ces utilisateurs pour la nouvelle structure de
 Avant de commencer à utiliser la conformité des communications, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou groupes de personnes à superviser. Ces groupes sont, par exemple, des groupes Microsoft 365, des listes de distribution Basées sur Exchange, des Yammer et des canaux Microsoft Teams. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de l’analyse d’un groupe d’exclusion spécifique ou d’une liste de groupes.
 
 >[!IMPORTANT]
->Les utilisateurs couverts par les stratégies de conformité des communications doivent avoir une licence de conformité Microsoft 365 E5, une licence Office 365 Entreprise E3 avec le module de conformité avancée ou être inclus dans un abonnement Office 365 Entreprise E5. Si vous n’avez pas de plan Entreprise E5 existant et que vous souhaitez essayer la conformité des communications, vous pouvez vous inscrire à une version d’essai [d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>Les utilisateurs couverts par les stratégies de conformité des communications doivent avoir une licence de conformité Microsoft 365 E5, une licence Office 365 Entreprise E3 avec le module de conformité avancée, ou être inclus dans un abonnement Office 365 Entreprise E5. Si vous n’avez pas de plan Entreprise E5 existant et que vous souhaitez essayer la conformité des communications, vous pouvez vous inscrire à une version d’essai [d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="reviewers"></a>Relecteurs
 
@@ -169,7 +169,7 @@ Pour en savoir plus sur les détails des informations sensibles et les modèles 
 
 ### <a name="custom-keyword-dictionaries"></a>Dictionnaires de mots clés personnalisés
 
-Configurez des dictionnaires de mots clés personnalisés (ou lexicons) pour fournir une gestion simple des mots clés propres à votre organisation ou à votre secteur d’activité. Les dictionnaires de mots clés prendre en charge jusqu’à 100 Ko de termes (post-compression) dans le dictionnaire et n’importe quelle langue. La limite du client est également de 100 Ko après compression. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une stratégie unique ou avoir un seul dictionnaire de mots clés par stratégie. Ces dictionnaires sont affectés dans une stratégie de conformité des communications et peuvent être issus d’un fichier (par exemple, une liste .csv ou .txt), ou d’une liste que vous pouvez importer dans le Centre de [conformité.](create-a-keyword-dictionary.md) Utilisez des dictionnaires personnalisés lorsque vous devez prendre en charge des termes ou des langues spécifiques à votre organisation et à vos stratégies.
+Configurez des dictionnaires de mots clés personnalisés (ou lexicons) pour fournir une gestion simple des mots clés propres à votre organisation ou à votre secteur d’activité. Les dictionnaires de mots clés prendre en charge jusqu’à 100 Ko de termes (post-compression) dans le dictionnaire et prendre en charge n’importe quelle langue. La limite du client est également de 100 Ko après compression. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une stratégie unique ou avoir un seul dictionnaire de mots clés par stratégie. Ces dictionnaires sont affectés dans une stratégie de conformité des communications et peuvent être issus d’un fichier (par exemple, une liste .csv ou .txt), ou d’une liste que vous pouvez importer dans le Centre de [conformité.](create-a-keyword-dictionary.md) Utilisez des dictionnaires personnalisés lorsque vous devez prendre en charge des termes ou des langues spécifiques à votre organisation et à vos stratégies.
 
 ### <a name="classifiers"></a>Classifieurs
 
@@ -186,7 +186,7 @@ Les classifieurs intégrés et globaux entraisables de conformité des communica
 
 Les *classifieurs* d’image pour *adultes, Racy* et *Gory* analysent les fichiers dans . JPEG, . PNG, . GIF et . Formats BMP. La taille des fichiers image doit être inférieure à 4 mégaoctets (Mo) et les dimensions des images doivent être supérieures à 50 x 50 pixels et supérieures à 50 kilo-octets (Ko) pour que l’image soit éligible pour évaluation. L’identification d’image est prise en charge pour les messages électroniques Exchange Online et les canaux et conversations Microsoft Teams.
 
-Les classifieurs intégrés entraçables et globaux ne fournissent pas une liste exhaustive de termes ou d’images dans ces domaines. En outre, les normes linguistiques et culturelles changent continuellement et, à la lumière de ces exigences, Microsoft se réserve le droit de mettre à jour les classifieurs à sa discrétion. Bien que les classifieurs peuvent aider votre organisation à surveiller ces domaines, les classifieurs ne sont pas destinés à fournir l’unique moyen de surveillance ou d’adressant ces langages ou images. Votre organisation, et non Microsoft, reste responsable de toutes les décisions relatives à la surveillance, l’analyse et le blocage de la langue et des images dans ces domaines, y compris la conformité avec la confidentialité locale et d’autres lois applicables. Microsoft encourage les conseils juridiques avant le déploiement et l’utilisation.
+Les classifieurs intégrés entraçables et globaux ne fournissent pas une liste exhaustive de termes ou d’images dans ces domaines. En outre, les normes linguistiques et culturelles changent continuellement et, à la lumière de ces exigences, Microsoft se réserve le droit de mettre à jour les classifieurs à sa discrétion. Bien que les classifieurs peuvent aider votre organisation à surveiller ces domaines, les classifieurs ne sont pas destinés à fournir l’unique moyen de votre organisation de surveiller ou d’adresser ces langages ou images. Votre organisation, et non Microsoft, reste responsable de toutes les décisions relatives à la surveillance, l’analyse et le blocage de la langue et des images dans ces domaines, y compris la conformité avec la confidentialité locale et d’autres lois applicables. Microsoft encourage les conseils juridiques avant le déploiement et l’utilisation.
 
 >[!NOTE]
 >Les stratégies utilisant des classifieurs examinent et évaluent les messages avec un nombre de mots supérieur ou six. Les messages contenant moins de six mots ne sont pas évalués dans les stratégies à l’aide de classifieurs. Pour identifier et prendre des mesures sur les messages plus courts contenant du contenu inapproprié, nous vous recommandons d’inclure un dictionnaire de mots clés personnalisé pour surveiller les stratégies de conformité des communications pour ce type de contenu.
@@ -203,20 +203,20 @@ Le tableau suivant en explique plus sur chaque condition.
 |**Condition**|**Comment utiliser cette condition ?**|
 |:-----|:-----|
 | **Le contenu correspond à l’un de ces classifieurs** | S’applique à la stratégie lorsque des classifieurs sont inclus ou exclus dans un message. Certains classifieurs sont prédéfinis dans votre client et les classifieurs personnalisés doivent être configurés séparément avant d’être disponibles pour cette condition. Un seul classifieur peut être défini comme condition dans une stratégie. Pour plus d’informations sur la configuration des classifieurs, voir En savoir plus sur les [classifieurs entraisables (prévisualisation).](classifier-learn-about.md) |
-| **Le contenu contient l’un de ces types d’informations sensibles** | S’applique à la stratégie lorsque des types d’informations sensibles sont inclus ou exclus dans un message. Certains classifieurs sont prédéfinis dans votre client, et les classifieurs personnalisés peuvent être configurés séparément ou dans le cadre du processus d’attribution de condition. Chaque type d’informations sensibles que vous choisissez est appliqué séparément et un seul de ces types d’informations sensibles doit s’appliquer pour que la stratégie s’applique au message. Pour plus d’informations sur les types d’informations sensibles personnalisés, voir [En savoir plus sur les types d’informations sensibles.](sensitive-information-type-learn-about.md) |
+| **Le contenu contient l’un de ces types d’informations sensibles** | S’applique à la stratégie lorsque des types d’informations sensibles sont inclus ou exclus dans un message. Certains classifieurs sont prédéfinis dans votre client et les classifieurs personnalisés peuvent être configurés séparément ou dans le cadre du processus d’attribution de condition. Chaque type d’informations sensibles que vous choisissez est appliqué séparément et un seul de ces types d’informations sensibles doit s’appliquer pour que la stratégie s’applique au message. Pour plus d’informations sur les types d’informations sensibles personnalisés, voir [En savoir plus sur les types d’informations sensibles.](sensitive-information-type-learn-about.md) |
 | **Le message est reçu de l’un de ces domaines**  <br><br> **Le message n’est reçu d’aucun de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages reçus. Entrez chaque domaine ou adresse e-mail et séparez plusieurs domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse e-mail entré est appliqué séparément, une seule adresse de domaine ou de messagerie doit s’appliquer pour que la stratégie s’applique au message. <br><br> Si vous souhaitez analyser tous les messages électroniques d’un domaine spécifique, mais que vous souhaitez exclure les messages qui n’ont pas besoin d’être réexpédés (bulletins d’informations, annonces, et ainsi de suite), vous devez configurer un **message** qui n’est reçu d’aucune condition de ces domaines qui exclut l’adresse e-mail (exemple « newsletter@contoso.com »). |
-| **Le message est envoyé à l’un de ces domaines**  <br><br> **Le message n’est envoyé à aucun de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages envoyés. Entrez chaque domaine ou adresse e-mail et séparez plusieurs domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie est appliqué séparément, une seule adresse de domaine ou de messagerie doit s’appliquer pour que la stratégie s’applique au message. <br><br> Si vous souhaitez analyser tous les messages envoyés à un domaine spécifique, mais que vous souhaitez exclure les messages envoyés qui ne doivent pas être réviser, vous devez configurer deux conditions : <br> - Un **message est envoyé à l’une de** ces conditions de domaine qui définit le domaine (« contoso.com ») ET <br> - Un **message n’est envoyé à** aucune condition de ces domaines qui exclut l’adresse de messagerie « subscriptions@contoso.com »). |
+| **Le message est envoyé à l’un de ces domaines**  <br><br> **Le message n’est envoyé à aucun de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages envoyés. Entrez chaque domaine ou adresse e-mail et séparez plusieurs domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie est appliqué séparément, une seule adresse de domaine ou de messagerie doit s’appliquer pour que la stratégie s’applique au message. <br><br> Si vous souhaitez analyser tous les messages envoyés à un domaine spécifique, mais que vous souhaitez exclure les messages envoyés qui ne doivent pas être réviser, vous devez configurer deux conditions : <br> - Un **message est envoyé à l’une de ces** conditions de domaine qui définit le domaine (« contoso.com ») ET <br> - Un **message n’est envoyé à** aucune condition de ces domaines qui exclut l’adresse de messagerie « subscriptions@contoso.com »). |
 | **Le message est classé avec l’une de ces étiquettes**  <br><br> **Le message n’est classé avec aucune de ces étiquettes** | Pour appliquer la stratégie lorsque certaines étiquettes de rétention sont incluses ou exclues dans un message. Les étiquettes de rétention doivent être configurées séparément et les étiquettes configurées sont choisies dans le cadre de cette condition. Chaque étiquette que vous choisissez est appliquée séparément (une seule de ces étiquettes doit s’appliquer pour que la stratégie s’applique au message). Pour plus d’informations sur les étiquettes de rétention, voir [En savoir plus sur les stratégies de rétention et les étiquettes de rétention.](retention.md)|
 | **Le message contient l’un de ces mots**  <br><br> **Le message ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans un message, entrez chaque mot séparé par une virgule. Pour les expressions de deux mots ou plus, utilisez des guillemets autour de l’expression. Chaque mot ou expression que vous entrez est appliqué séparément (un seul mot doit s’appliquer pour que la stratégie s’applique au message). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
 | **La pièce jointe contient l’un de ces mots**  <br><br> **La pièce jointe ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus d’une pièce jointe de message (par exemple, un document Word), entrez chaque mot séparé par une virgule. Pour les expressions de deux mots ou plus, utilisez des guillemets autour de l’expression. Chaque mot ou expression que vous entrez est appliqué séparément (un seul mot doit s’appliquer pour que la stratégie s’applique à la pièce jointe). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
 | **La pièce jointe est l’un de ces types de fichiers**  <br><br> **La pièce jointe n’est pas de ces types de fichiers** | Pour contrôler les communications qui incluent ou excluent des types spécifiques de pièces jointes, entrez les extensions de fichier (telles que .exe ou .pdf). Si vous souhaitez inclure ou exclure plusieurs extensions de fichier, entrez-les sur des lignes distinctes. Une seule extension de pièce jointe doit correspondre pour que la stratégie s’applique.|
-| **La taille du message est supérieure à**  <br><br> **La taille du message n’est pas supérieure à** | Pour passer en revue les messages en fonction d’une certaine taille, utilisez ces conditions pour spécifier la taille maximale ou minimale d’un message avant d’être soumis à révision. Par exemple, si  vous spécifiez que la taille du message est supérieure à \> **1,0 Mo,** tous les messages de 1,01 Mo et plus sont soumis à révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
+| **La taille du message est supérieure à**  <br><br> **La taille du message n’est pas supérieure à** | Pour passer en revue les messages en fonction d’une certaine taille, utilisez ces conditions pour spécifier la taille maximale ou minimale d’un message avant d’être soumis à révision. Par exemple, si vous spécifiez que la taille du **message** est supérieure à \> **1,0 Mo,** tous les messages de 1,01 Mo et plus sont soumis à révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
 | **La pièce jointe est supérieure à**  <br><br> **La pièce jointe n’est pas supérieure à** | Pour passer en revue les messages en fonction de la taille de leurs pièces jointes, spécifiez la taille maximale ou minimale d’une pièce jointe avant que le message et ses pièces jointes soient soumis à révision. Par exemple, si  vous spécifiez que la pièce jointe est supérieure à \> **2,0 Mo,** tous les messages avec des pièces jointes de 2,01 Mo et plus sont soumis à révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
    
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Correspondance de mots et expressions avec des courriers électroniques ou des pièces jointes
 <a name="Matchwords"> </a>
 
-Chaque mot que vous entrez et séparez par une virgule est appliqué séparément (un seul mot doit s’appliquer à la condition de stratégie à appliquer au message électronique ou à la pièce jointe). Par exemple, nous allons utiliser la condition « **Message**» contient l’un de ces mots, avec les mots clés « banker », « confidential » et « insider trading » séparés par une virgule (bancaire, confidentiel, « délit d’initié »). La stratégie s’applique à tous les messages qui incluent le mot « banker », « confidential » ou l’expression « insider trading ». Un seul de ces mots ou expression doit être présent pour que cette condition de stratégie s’applique. Les mots dans le message ou la pièce jointe doivent correspondre exactement à ce que vous entrez.
+Chaque mot que vous entrez et séparez par une virgule est appliqué séparément (un seul mot doit s’appliquer à la condition de stratégie à appliquer au message électronique ou à la pièce jointe). Par exemple, nous allons utiliser la condition « **Message**» contenant l’un de ces mots, avec les mots clés « banker », « confidential » et « insider trading » séparés par une virgule (bancaire, confidentiel, « délit d’initié »). La stratégie s’applique à tous les messages qui incluent le mot « banker », « confidential » ou l’expression « insider trading ». Un seul de ces mots ou expression doit être présent pour que cette condition de stratégie s’applique. Les mots du message ou de la pièce jointe doivent correspondre exactement à ce que vous entrez.
 
 >[!IMPORTANT]
 >Lors de l’importation d’un fichier de dictionnaire personnel, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. <br> Par exemple : <br><br>
@@ -224,7 +224,7 @@ Chaque mot que vous entrez et séparez par une virgule est appliqué séparémen
 >*confidentiel* <br>
 >*délit d’initié*
 
-Pour analyser les messages électroniques et les pièces [](create-test-tune-dlp-policy.md) jointes pour les [](create-a-keyword-dictionary.md) mêmes mots clés, créez une stratégie de protection contre la perte de données avec un dictionnaire de mots clés personnalisé pour les termes que vous souhaitez analyser dans les messages. Cette configuration de stratégie identifie les mots clés définis qui apparaissent dans le message électronique **ou** dans la pièce jointe de l’e-mail. L’utilisation des paramètres de stratégie conditionnelle standard ( Le *message* contient l’un de ces mots et la  pièce jointe contient l’un de ces *mots)* pour identifier les termes dans les messages et dans les pièces jointes, les termes doivent être présents dans le message et la pièce jointe.
+Pour analyser les messages électroniques et les pièces [](create-test-tune-dlp-policy.md) jointes pour les [](create-a-keyword-dictionary.md) mêmes mots clés, créez une stratégie de protection contre la perte de données avec un dictionnaire de mots clés personnalisé pour les termes que vous souhaitez analyser dans les messages. Cette configuration de stratégie identifie les mots clés définis qui apparaissent dans le message électronique **ou** dans la pièce jointe de l’e-mail. L’utilisation des paramètres de stratégie conditionnelle standard ( Le *message* contient l’un de ces mots et *la* pièce jointe contient l’un de ces mots) pour identifier les termes dans les messages et dans les pièces jointes, les termes doivent être présents dans le message et la pièce jointe. 
   
 #### <a name="enter-multiple-conditions"></a>Entrer plusieurs conditions
 
@@ -240,9 +240,9 @@ Si vous souhaitez réduire la quantité de contenu à réviser, vous pouvez spé
 
 ## <a name="privacy"></a>Confidentialité
 
-La protection de la confidentialité des utilisateurs qui ont des correspondances de stratégie est importante et peut contribuer à promouvoir la fiabilité dans les examens d’analyse et d’examen des données pour les alertes de conformité des communications. Ce paramètre s’applique uniquement aux noms d’utilisateurs affichant la solution de conformité des communications. Cela n’affecte pas la façon dont les noms sont affichés dans d’autres solutions de conformité ou dans le Centre d’administration.
+La protection de la confidentialité des utilisateurs qui ont des correspondances de stratégie est importante et peut contribuer à promouvoir la fiabilité dans les examens d’analyse et d’examen des données pour les alertes de conformité des communications. Ce paramètre s’applique uniquement aux noms d’utilisateurs affichant la solution de conformité des communications. Cela n’affecte pas la façon dont les noms sont affichés dans d’autres solutions de conformité ou centre d’administration.
 
-Pour les utilisateurs ayant une correspondance de conformité des communications, vous pouvez choisir l’un des paramètres suivants dans les **paramètres** de conformité des communications :
+Pour les utilisateurs avec une correspondance de conformité des communications, vous pouvez choisir l’un des paramètres suivants dans les **paramètres** de conformité des communications :
 
 - **Afficher les versions anonymisées** des noms d’utilisateur  : les noms d’utilisateur sont rendus anonymes pour empêcher les utilisateurs du groupe de rôles Analyste de conformité des communications de voir qui est associé aux alertes de stratégie. Les utilisateurs du groupe de rôles *Enquêteur de* conformité des communications voient toujours les noms d’utilisateur, et non les versions rendues anonymes. Par exemple, un utilisateur « Grace Grace » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans tous les domaines de l’expérience de conformité des communications. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails de l’alerte de conformité des communications ne seront pas disponibles lorsque cette option sera choisie. Toutefois, les noms d’utilisateurs s’affichent lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateurs s’affichent pour tous les utilisateurs qui ont des correspondances de stratégie actuelles ou passées.
 - **N’affichez pas les versions rendues anonymes** des noms d’utilisateur : les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelles et passées pour les alertes de conformité des communications. Les informations de profil utilisateur (nom, titre, alias et organisation ou service) s’affichent pour l’utilisateur pour toutes les alertes de conformité des communications.
@@ -290,8 +290,8 @@ Les filtres de conformité des communications vous permettent de filtrer et de t
 | **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur de votre organisation. Pour filtrer un jour unique, sélectionnez une plage de dates qui commence par le jour où vous souhaitez obtenir des résultats et se termine par le jour suivant. Par exemple, si vous souhaitez filtrer les résultats pour le 20/09/2020, vous choisissez une plage de dates de filtre du 20/09/2020 au 21/09/2020.|
 | **Classe de fichier** | Classe du message en fonction du type de message, *message ou* *pièce jointe.* |
 | **A une pièce jointe** | Présence de la pièce jointe dans le message. |
-| **Classe Item** | Source du message en fonction du type de message, de l’e-mail, de la conversation de Microsoft Team, de Bloomberg, etc. Pour plus d’informations sur les types d’éléments courants et les classes de messages, voir [Types d’éléments et Classes de messages.](/office/vba/outlook/concepts/forms/item-types-and-message-classes) |
-| **Domaines des destinataires** | Domaine vers lequel le message a été envoyé. Ce domaine est normalement votre domaine d’abonnement Microsoft 365 par défaut. |
+| **Classe Item** | Source du message en fonction du type de message, du courrier électronique, de la conversation de Microsoft Team, de Bloomberg, etc. Pour plus d’informations sur les types d’éléments courants et les classes de messages, voir [Types d’éléments et Classes de messages.](/office/vba/outlook/concepts/forms/item-types-and-message-classes) |
+| **Domaines des destinataires** | Domaine auquel le message a été envoyé. Ce domaine est normalement votre domaine d’abonnement Microsoft 365 par défaut. |
 | **Destinataire** | Utilisateur auquel le message a été envoyé. |
 | **Sender** | La personne qui a envoyé le message. |
 | **Domaine de l’expéditeur** | Domaine qui a envoyé le message. |
@@ -358,14 +358,14 @@ Le modèle Power Automate suivant est fourni aux clients pour prendre en charge 
 
 Pour créer un flux Power Automate à partir d’un modèle par défaut recommandé, vous devez utiliser l’option Gérer les flux **Power Automate** à partir du contrôle **Automatiser** lorsque vous travaillez directement dans une alerte. Pour créer un flux Power Automate avec gérer les flux **Power Automate,** vous devez être membre d’au moins un groupe de rôles de conformité des communications.
 
-Pour créer un flux Power Automate à partir d’un modèle par défaut, complétez les étapes suivantes :
+Pour créer un flux Power Automate à partir d’un modèle par défaut, vous pouvez effectuer les étapes suivantes :
 
 1. Dans le Centre de conformité Microsoft 365, sélectionnez stratégies de conformité des communications et sélectionnez la stratégie avec l’alerte  >   à réviser.
 2. Dans la stratégie, sélectionnez **l’onglet En attente** et sélectionnez une alerte en attente.
 3. Sélectionnez **Power Automate dans** le menu d’action d’alerte.
 4. Dans la page **Power Automate,** sélectionnez un modèle par défaut dans les **modèles** de conformité des communications que vous souhaitez peut-être voir dans la section de la page.
 5. Le flux affiche la liste des connexions incorporées nécessaires au flux et s’affiche si les états de connexion sont disponibles. Si nécessaire, mettez à jour les connexions qui ne sont pas affichées comme disponibles. Sélectionnez **Continuer**.
-6. Par défaut, les flux recommandés sont pré-configurés avec la conformité de communication recommandée et les champs de données du service Microsoft 365 requis pour effectuer la tâche affectée pour le flux. Si nécessaire, personnalisez les composants de flux à l’aide du contrôle Afficher les **options** avancées et en configurant les propriétés disponibles pour le composant de flux.
+6. Par défaut, les flux recommandés sont pré-configurés avec la conformité de communication recommandée et les champs de données du service Microsoft 365 requis pour effectuer la tâche affectée au flux. Si nécessaire, personnalisez les composants de flux à l’aide du contrôle Afficher les **options** avancées et en configurant les propriétés disponibles pour le composant de flux.
 7. Si nécessaire, ajoutez des étapes supplémentaires au flux en sélectionnant le **bouton Nouvelle étape.** Dans la plupart des cas, cette modification ne doit pas être nécessaire pour les modèles par défaut recommandés.
 8. Sélectionnez **Enregistrer le** brouillon pour enregistrer le flux pour une configuration ultérieure, ou sélectionnez **Enregistrer** pour terminer la configuration du flux.
 9. Sélectionnez **Fermer** pour revenir à la page de flux Power Automate. Le nouveau modèle est répertorié sous  la forme d’un flux sous l’onglet Mes flux et est automatiquement disponible à partir du contrôle Power Automate pour l’utilisateur qui a créé le flux lors de l’utilisation des alertes de conformité des communications.
@@ -389,7 +389,7 @@ Pour partager un flux Power Automate, complétez les étapes suivantes :
 
 Si vous devez modifier un flux, vous utiliserez le contrôle **Power Automate** lorsque vous travaillerez directement dans une alerte. Pour modifier un flux Power Automate, vous devez être membre d’au moins un groupe de rôles de conformité des communications.
 
-Pour modifier un flux Power Automate, complétez les étapes suivantes :
+Pour modifier un flux Power Automate, vous pouvez effectuer les étapes suivantes :
 
 1. Dans le Centre de conformité Microsoft 365, sélectionnez stratégies de conformité des communications et sélectionnez la stratégie avec l’alerte  >   à réviser.
 2. Dans la stratégie, sélectionnez **l’onglet En attente** et sélectionnez une alerte en attente.
@@ -410,9 +410,11 @@ Pour supprimer un flux Power Automate, vous devez effectuer les étapes suivante
 4. Dans la page **Flux Power Automate,** sélectionnez flux à supprimer. Sélectionnez **Supprimer** dans le menu du contrôle de flux.
 5. Dans la boîte de dialogue de confirmation de suppression, sélectionnez **Supprimer** pour supprimer le flux ou sélectionnez **Annuler** pour quitter l’action de suppression.
 
-## <a name="reports-preview"></a>Rapports (prévisualisation)
+## <a name="reports-preview"></a>Rapports (aperçu)
 
 Le nouveau tableau **de bord Rapports** est l’emplacement central pour afficher tous les rapports de conformité des communications. Les widgets de rapport fournissent un aperçu rapide des informations les plus couramment nécessaires pour une évaluation globale de l’état des activités de conformité des communications. Les informations contenues dans les widgets de rapport ne peuvent pas être exportées. Les rapports détaillés fournissent des informations détaillées sur des domaines spécifiques de conformité des communications et offrent la possibilité de filtrer, de grouper, de trier et d’exporter des informations lors de la révision.
+
+![Tableau de bord des rapports de conformité des communications](../media/communication-compliance-reports-dashboard.png)
 
 Le tableau **de bord Rapports contient** les widgets de rapport et les liens de rapports détaillés suivants :
 
@@ -421,9 +423,46 @@ Le tableau **de bord Rapports contient** les widgets de rapport et les liens de 
 - **Utilisateurs avec la plupart des** widgets de correspondance de stratégie : affiche les utilisateurs (ou les noms d’utilisateur anonymisés) et le nombre de correspondances de stratégie pour une période donnée.
 - **Stratégie avec la plupart des widgets** de correspondances : affiche les stratégies et le nombre de correspondances pour une période donnée, classées du plus haut au plus bas pour les correspondances.
 - **Escalades par** widget de stratégie : affiche le nombre d’escalades par stratégie sur une période donnée.
-- **Paramètres** de stratégie et rapport détaillé sur l’état : fournit une analyse détaillée de la configuration et des paramètres de stratégie, ainsi que de l’état général de chacune des stratégies (correspondances et actions) sur les messages. Utilisez *l’option* Exporter pour créer un . Fichier CSV contenant les détails du rapport.
-- **Éléments et actions par rapport détaillé de** stratégie : examiner et exporter les éléments correspondants et les actions de correction par stratégie. Utilisez *l’option* Exporter pour créer un . Fichier CSV contenant les détails du rapport.
-- **Rapport détaillé sur l’élément** et les actions par emplacement : examiner et exporter les éléments correspondants et les actions de correction par emplacement Microsoft 365. Utilisez *l’option* Exporter pour créer un . Fichier CSV contenant les détails du rapport.
+- **Paramètres** de stratégie et rapport détaillé sur l’état : fournit une analyse détaillée de la configuration et des paramètres de stratégie, ainsi que de l’état général de chacune des stratégies (correspondances et actions) sur les messages. Inclut les informations de stratégie et la façon dont les stratégies sont associées aux utilisateurs et groupes, aux emplacements, aux pourcentages d’avis, aux relecteurs, à l’état et à la dernière modification de la stratégie. Utilisez *l’option* Exporter pour créer un . Fichier CSV contenant les détails du rapport.
+- **Éléments et actions par rapport détaillé de stratégie** : examiner et exporter les éléments correspondants et les actions de correction par stratégie. Inclut les informations de stratégie et la façon dont les stratégies sont associées à :
+
+    - Éléments en correspondance
+    - Éléments escalades
+    - Éléments résolus
+    - Marqué comme conforme
+    - Marqué comme non conforme
+    - Marqué comme discutable
+    - Éléments en attente de révision
+    - Notification de l’utilisateur
+    - Cas créé
+    
+    Utilisez *l’option* Exporter pour créer un fichier .csv contenant les détails du rapport.
+- **Rapport détaillé sur l’élément** et les actions par emplacement : examiner et exporter les éléments correspondants et les actions de correction par emplacement Microsoft 365. Inclut des informations sur la façon dont les plateformes de charge de travail sont associées à :
+
+    - Éléments en correspondance
+    - Éléments escalades
+    - Éléments résolus
+    - Marqué comme conforme
+    - Marqué comme non conforme
+    - Marqué comme discutable
+    - Éléments en attente de révision
+    - Notification de l’utilisateur
+    - Cas créé
+
+    Utilisez *l’option* Exporter pour créer un fichier .csv contenant les détails du rapport.
+- **Rapport détaillé de l’activité** par l’utilisateur : examiner et exporter les éléments correspondants et les actions de correction par utilisateur. Inclut des informations sur la façon dont les utilisateurs sont associés à :
+
+    - Éléments en correspondance
+    - Éléments escalades
+    - Éléments résolus
+    - Marqué comme conforme
+    - Marqué comme non conforme
+    - Marqué comme discutable
+    - Éléments en attente de révision
+    - Notification de l’utilisateur
+    - Cas créé
+
+    Utilisez *l’option* Exporter pour créer un fichier .csv contenant les détails du rapport.
 
 ## <a name="audit"></a>Audit
 
@@ -447,7 +486,7 @@ Pour afficher les activités de révision de  la conformité des communications 
 |:-----|:-----|
 | **CreationDate** | Date à laquelle l’activité de révision a été effectuée dans une stratégie. |
 | **UserIds** | Utilisateur qui a effectué l’activité de révision dans une stratégie. |
-| **Operations** | Opérations de révision effectuées sur la stratégie. |
+| **Operations** | Les opérations de révision effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la source de données principale pour toutes les activités de révision de stratégie. Toutes les activités de révision sont enregistrées et séparées par des délimiteur de virgule. |
 
 Vous pouvez également afficher les activités d’audit dans le journal d’audit unifié ou avec l’cmdlet [PowerShell Search-UnifiedAuditLog.](/powershell/module/exchange/search-unifiedauditlog)

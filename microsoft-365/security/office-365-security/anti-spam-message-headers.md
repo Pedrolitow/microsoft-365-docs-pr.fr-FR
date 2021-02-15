@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -17,17 +16,23 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent en savoir plus sur les champs d’en-tête ajoutés aux messages par Exchange Online Protection (EOP). Ces champs d’en-tête fournissent des informations sur le message et la manière dont il a été traité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bb3b2eb9e4ce4a63d4bef276dde9e19b491aae53
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 5f0befa764982ae30e0c7c5c1a9f109067f3ee02
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615539"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175649"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>En-têtes de message anti-courrier indésirable dans Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Dans toutes les organisations Microsoft 365, Exchange Online Protection (EOP) analyse tous les messages entrants à la recherche de courrier indésirable, de programmes malveillants et d’autres menaces. Les résultats de ces analyses sont ajoutés aux champs d’en-tête suivants dans les messages :
 
