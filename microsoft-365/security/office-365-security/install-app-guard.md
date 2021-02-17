@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation matérielle. Empêcher les attaques actuelles et émergentes telles que les attaques ou les liens malveillants de perturber la productivité des employés et la sécurité de l’entreprise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cf02f6776eb68537486b49c4fe45e8f88eeb38c6
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 50065c4c0b9cbac9dee29892d9ebb0c7ce5f20f8
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094878"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261524"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard pour Office pour les administrateurs
 
 **S’applique à :** Word, Excel et PowerPoint pour Microsoft 365, Windows 10 Entreprise
 
-Microsoft Defender Application Guard pour Office (Application Guard pour Office) permet d’empêcher les fichiers non fiables d’accéder aux ressources de confiance, afin de préserver la sécurité de votre entreprise contre les attaques nouvelles et émergentes. Cet article présente aux administrateurs la configuration des appareils pour un aperçu d’Application Guard pour Office. Il fournit des informations sur la exigences système et les étapes d’installation pour activer Application Guard pour Office sur un appareil.
+Microsoft Defender Application Guard pour Office (Application Guard pour Office) permet d’empêcher les fichiers non fiables d’accéder aux ressources de confiance, ce qui permet de préserver la sécurité de votre entreprise contre les attaques nouvelles et émergentes. Cet article présente aux administrateurs la configuration des appareils pour un aperçu d’Application Guard pour Office. Il fournit des informations sur la exigences système et les étapes d’installation pour activer Application Guard pour Office sur un appareil.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 ### <a name="minimum-hardware-requirements"></a>Configuration matérielle minimale requise
 
@@ -103,7 +103,7 @@ Lorsque vous ouvrez un fichier nontrus pour la première fois, vous pouvez voir 
 
 ![Écran de splash de l’application Office](../../media/ag08-confirm.png)
 
-Lors de l’ouverture, le fichier doit afficher quelques indicateurs visuels pour l’ouverture du fichier dans Application Guard pour Office :
+À l’ouverture, le fichier doit afficher quelques indicateurs visuels pour l’ouverture du fichier dans Application Guard pour Office :
 
 * Une callout dans le ruban
 
@@ -125,11 +125,11 @@ Office prend en charge les stratégies suivantes pour vous permettre de configur
 |N’utilisez pas Application Guard pour Office|L’activation de cette stratégie force Word, Excel et PowerPoint à utiliser le conteneur d’isolation du affichage protégé au lieu d’Application Guard pour Office. Cette stratégie peut être utilisée pour désactiver temporairement Application Guard pour Office lorsqu’il y a des problèmes pour le laisser activé pour Microsoft Edge.|
 |Configurer la pré-création d’un conteneur Application Guard pour Office|Cette stratégie détermine si le conteneur Application Guard pour Office, pour isoler les fichiers nontrus, est pré-créé pour améliorer les performances d’exécution. Si vous activez ce paramètre, vous pouvez spécifier le nombre de jours pour continuer la pré-création d’un conteneur ou permettre à l’heuristique intégrée d’Office de pré-créer le conteneur.
 |Ne pas autoriser le copier-coller pour les documents Office ouverts dans Application Guard pour Office|L’activation de cette stratégie empêche un utilisateur de copier et coller du contenu d’un document ouvert dans Application Guard pour Office vers un document ouvert en dehors de celui-ci.|
-|Désactiver l’accélération matérielle dans Application Guard pour Office|Cette stratégie contrôle si Application Guard pour Office utilise l’accélération matérielle pour restituer les graphiques. Si vous activez ce paramètre, Application Guard pour Office utilise le rendu logiciel (CPU) et ne charge aucun pilote graphique tiers ni n’interagit avec du matériel graphique connecté.
+|Désactiver l’accélération matérielle dans Application Guard pour Office|Cette stratégie contrôle si Application Guard pour Office utilise l’accélération matérielle pour restituer les graphiques. Si vous activez ce paramètre, Application Guard pour Office utilise le rendu logiciel (CPU) et ne charge aucun pilote graphique tiers ou n’interagit avec aucun matériel graphique connecté.
 |Désactiver la protection des types de fichiers non pris en charge dans Application Guard pour Office|Cette stratégie contrôle si Application Guard pour Office bloquera l’ouverture des types de fichiers non pris en charge ou s’il activera la redirection vers le affichage protégé.
 |Désactiver l’accès à la caméra et au microphone pour les documents ouverts dans Application Guard pour Office|L’activation de cette stratégie supprime l’accès d’Office à la caméra et au microphone à l’intérieur d’Application Guard pour Office.|
 |Restreindre l’impression à partir de documents ouverts dans Application Guard pour Office|L’activation de cette stratégie limite les imprimantes sur qui un utilisateur peut imprimer à partir d’un fichier ouvert dans Application Guard pour Office. Par exemple, vous pouvez utiliser cette stratégie pour restreindre les utilisateurs à imprimer uniquement au format PDF.|
-|Empêcher les utilisateurs de supprimer Application Guard pour la protection Office sur les fichiers|L’activation de cette stratégie supprime l’option (dans l’expérience d’application Office) de désactiver Application Guard pour la protection Office ou d’ouvrir un fichier en dehors d’Application Guard pour Office. <p> **Remarque :** Les utilisateurs peuvent toujours contourner cette stratégie en supprimant manuellement la propriété mark-of-the-web du fichier ou en déplaçant un document vers un emplacement approuvé.|
+|Empêcher les utilisateurs de supprimer la protection d’Application Guard pour Office sur les fichiers|L’activation de cette stratégie supprime l’option (dans l’expérience d’application Office) permettant de désactiver Application Guard pour la protection Office ou d’ouvrir un fichier en dehors d’Application Guard pour Office. <p> **Remarque :** Les utilisateurs peuvent toujours contourner cette stratégie en supprimant manuellement la propriété mark-of-the-web du fichier ou en déplaçant un document vers un emplacement approuvé.|
 |
 
 > [!NOTE]
@@ -227,4 +227,4 @@ Lorsque cette heuristique est remplie, Office pré-crée un conteneur Applicatio
 
 * La sélection de liens web `http` (ou `https` ) n’ouvre pas le navigateur.
 * Le contenu rtf (Rich Text Format) ou les images de documents Office ouverts avec Application Guard ne sont pas pris en charge pour le moment.
-* Les mises à jour de .NET entraînent l’échec de l’ouverture des fichiers dans Application Guard. Pour contourner ce cas de défaillance, les utilisateurs peuvent redémarrer leur appareil. En savoir plus sur le problème lors de la réception d’un message d’erreur lors de la tentative [d’ouverture Windows Defender Application Guard ou bac à sable Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* Les mises à jour de .NET entraînent l’échec de l’ouverture des fichiers dans Application Guard. Pour contourner ce cas de défaillance, les utilisateurs peuvent redémarrer leur appareil. En savoir plus sur le problème lors de la réception d’un message d’erreur lors de la tentative d’ouverture [Windows Defender Application Guard ou bac à sable Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).

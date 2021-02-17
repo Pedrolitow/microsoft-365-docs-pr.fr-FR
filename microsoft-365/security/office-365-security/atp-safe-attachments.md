@@ -20,24 +20,24 @@ ms.collection:
 description: Les administrateurs peuvent en savoir plus sur la fonctionnalité pièces jointes sécurisées dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5e85695a6d0fba221f3c614ec33b3552d37153e2
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 5d2d348856dbd51cabe2b320d315406076921fee
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175846"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261536"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Pièces jointes sécurisées dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Les pièces jointes sécurisées dans Microsoft Defender pour [Office 365](office-365-atp.md) fournissent une couche supplémentaire de protection pour les pièces jointes de courrier électronique qui ont déjà été analysées par la protection anti-programme malveillant dans [Exchange Online Protection (EOP).](anti-malware-protection.md) Plus précisément, les pièces jointes sécurisées utilisent un environnement virtuel pour vérifier les pièces jointes dans les messages électroniques avant qu’elles ne soit remis aux destinataires (processus appelé _détonation)._
 
-La protection des pièces jointes sécurisées pour les messages électroniques est contrôlée par les stratégies de pièces jointes sécurisées. Il n’existe aucune stratégie de pièces jointes sécurisées par défaut, donc pour obtenir la protection des pièces jointes sécurisées, vous devez créer une ou plusieurs stratégies de **pièces jointes sécurisées.** Pour obtenir des instructions, voir Configurer des stratégies de pièces [jointes sécurisées dans Defender pour Office 365.](set-up-atp-safe-attachments-policies.md)
+La protection des pièces jointes sécurisées pour les messages électroniques est contrôlée par les stratégies de pièces jointes sécurisées. Il n’existe aucune stratégie de pièces jointes sécurisées par défaut, donc pour obtenir la protection des pièces jointes sécurisées, vous devez créer une ou plusieurs stratégies de pièces **jointes sécurisées.** Pour obtenir des instructions, voir [Configurer des stratégies de pièces jointes sécurisées dans Defender pour Office 365.](set-up-atp-safe-attachments-policies.md)
 
 Le tableau suivant décrit les scénarios de pièces jointes sécurisées dans les organisations Microsoft 365 et Office 365 qui incluent Microsoft Defender pour Office 365 (en d’autres termes, l’absence de licence n’est jamais un problème dans les exemples).
 
@@ -46,15 +46,15 @@ Le tableau suivant décrit les scénarios de pièces jointes sécurisées dans l
 |Scénario|Résultat|
 |---|---|
 |Aucune stratégie de pièces jointes sécurisées n’est configurée pour l’organisation Microsoft 365 E5 de Pat.|Pat n’est pas protégé par les pièces jointes sécurisées. <p> Un administrateur doit créer au moins une stratégie de pièces jointes sécurisées pour que la protection des pièces jointes sécurisées soit active. En outre, les conditions de la stratégie doivent inclure Pat si Pat doit être protégé par des pièces jointes sécurisées.|
-|L’organisation de Lee dispose d’une stratégie de pièces jointes sécurisées qui s’applique uniquement aux employés du service financier. Lee est membre du service des ventes.|Lee n’est pas protégé par les pièces jointes sécurisées. <p> Les employés du service financier sont protégés par des pièces jointes sécurisées, mais pas les employés des ventes (et d’autres employés).|
+|L’organisation de Lee dispose d’une stratégie de pièces jointes sécurisées qui s’applique uniquement aux employés du service financier. Lee est membre du service des ventes.|Lee n’est pas protégé par les pièces jointes sécurisées. <p> Les employés du service financier sont protégés par des pièces jointes sécurisées, mais pas les employés des ventes (et les autres employés).|
 |Hier, un administrateur de l’organisation de Jean a créé une stratégie de pièces jointes sécurisées qui s’applique à tous les employés. Plus tôt dans la journée, Jean a reçu un message électronique qui inclut une pièce jointe.|Jean est protégé par des pièces jointes sécurisées. <p> En règle générale, l’application d’une nouvelle stratégie prend environ 30 minutes.|
-|L’organisation de Chris a des stratégies de pièces jointes sécurisées de longue date pour tous les membres de l’organisation. Chris reçoit un e-mail qui a une pièce jointe, puis le envoie à des destinataires externes.|Chis est protégé par des pièces jointes sécurisées. <p> Si les destinataires externes ont également des stratégies de pièces jointes sécurisées dans leur organisation, les messages transmis sont soumis à ces stratégies.|
+|L’organisation de Chris a des stratégies de pièces jointes sécurisées de longue date pour tous les membres de l’organisation. Chris reçoit un e-mail qui a une pièce jointe, puis le envoie à des destinataires externes.|Chis est protégé par les pièces jointes sécurisées. <p> Si les destinataires externes ont également des stratégies de pièces jointes sécurisées dans leur organisation, les messages transmis sont soumis à ces stratégies.|
 |
 
 L’analyse des pièces jointes sécurisées a lieu dans la même région que vos données Microsoft 365. Pour plus d’informations sur la géographie du centre de données, voir [Où se trouvent vos données ?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> Les fonctionnalités suivantes se trouvent dans les paramètres globaux des stratégies de pièces jointes sécurisées dans le Centre de sécurité & conformité, mais ces paramètres sont activés ou désactivés globalement et ne nécessitent pas de stratégies de pièces jointes sécurisées :
+> Les fonctionnalités suivantes se trouvent dans les paramètres globaux des stratégies de pièces jointes sécurisées dans le Centre de sécurité & conformité. Toutefois, ces paramètres sont activés ou désactivés globalement et ne nécessitent pas de stratégies de pièces jointes sécurisées :
 >
 > - [Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams.](atp-for-spo-odb-and-teams.md)
 >
@@ -70,7 +70,7 @@ Cette section décrit les paramètres des stratégies de pièces jointes sécuri
 
   |Option|Effet|À utiliser lorsque vous souhaitez :|
   |---|---|---|
-  |**Off**|Les pièces jointes ne sont pas analysées pour les programmes malveillants par les pièces jointes sécurisées. Les messages sont toujours analysés à la recherche de programmes malveillants par [la protection anti-programme malveillant dans EOP.](anti-malware-protection.md)|Désactiver l’analyse pour les destinataires sélectionnés. <p> Éviter les retards inutiles dans le routage du courrier interne. <p> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Vous ne devez utiliser cette option que pour désactiver l’analyse des pièces jointes fiables pour les destinataires qui reçoivent uniquement des messages d’expéditeurs fiables.**|
+  |**Off**|Les pièces jointes ne sont pas analysées à la recherche de programmes malveillants par les pièces jointes sécurisées. Les messages sont toujours analysés à la recherche de programmes malveillants par [la protection anti-programme malveillant dans EOP.](anti-malware-protection.md)|Désactiver l’analyse pour les destinataires sélectionnés. <p> Éviter les retards inutiles dans le routage du courrier interne. <p> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Vous ne devez utiliser cette option que pour désactiver l’analyse des pièces jointes fiables pour les destinataires qui reçoivent uniquement des messages d’expéditeurs fiables.**|
   |**Moniteur**|Fournit des messages avec pièces jointes, puis suit ce qui se produit avec les programmes malveillants détectés. <p> La remise des messages sûrs peut être retardée en raison de l’analyse des pièces jointes sécurisées.|Découvrez où les programmes malveillants détectés sont détectés dans votre organisation.|
   |**Bloquer**|Empêche la livraison des messages avec des pièces jointes de programmes malveillants détectés. <p> Les messages sont [mis en quarantaine](manage-quarantined-messages-and-files.md) lorsque seuls les administrateurs (et non les utilisateurs finaux) peuvent examiner, libérer ou supprimer les messages. <p> Bloque automatiquement les instances futures des messages et pièces jointes. <p> La remise des messages sûrs peut être retardée en raison de l’analyse des pièces jointes sécurisées.|Protège votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes de programmes malveillants. <p> Il s’agit de la valeur par défaut et de la valeur recommandée dans les stratégies de sécurité standard [et](preset-security-policies.md)stricte.|
   |**Replace**|Supprime les pièces jointes de programmes malveillants détectés. <p> Informe les destinataires que les pièces jointes ont été supprimées. <p>  Les messages sont [mis en quarantaine](manage-quarantined-messages-and-files.md) lorsque seuls les administrateurs (et non les utilisateurs finaux) peuvent examiner, libérer ou supprimer les messages. <p> La remise des messages sûrs peut être retardée en raison de l’analyse des pièces jointes sécurisées.|Augmenter la visibilité pour les destinataires que les pièces jointes ont été supprimées en raison de programmes malveillants détectés.|
@@ -126,7 +126,7 @@ Dans certains cas, la remise dynamique ne peut pas remplacer les pièces jointes
 
 - Le dossier de recherche de boîte aux lettres de l’utilisateur est dans un état d’erreur.
 
-- Organisations Exchange Online où le Lanceur est activé. Pour résoudre ce problème, [voir KB4014438](https://support.microsoft.com/help/4014438).
+- Organisations Exchange Online où le lanceur est activé. Pour résoudre ce problème, [voir KB4014438](https://support.microsoft.com/help/4014438).
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) messages chiffrés.
 

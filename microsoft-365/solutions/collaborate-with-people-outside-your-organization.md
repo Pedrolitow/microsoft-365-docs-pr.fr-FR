@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment configurer des applications Microsoft 365 telles que Teams, OneDrive et SharePoint pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 374ad8f5ec37fc0900fb38cb4e0f4743a02c4da4
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 7b8e5e30d8222d055fc5f64472c4083db614d4bd
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613453"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261512"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborer avec des personnes extérieures à votre organisation
 
@@ -36,11 +36,11 @@ La collaboration avec des personnes extérieures à votre organisation comprend 
 
 ## <a name="enable-sharing"></a>Activer le partage
 
-Par défaut, dans Microsoft 365, le partage avec des personnes extérieures à votre organisation est activé pour SharePoint et OneDrive, mais désactivé pour Teams. De nombreux scénarios de partage externe SharePoint et OneDrive fonctionnent sans configuration supplémentaire. Pour confirmer les paramètres d’un scénario que vous utilisez ou en activer un nouveau, choisissez l’une des options suivantes :
+Par défaut, dans Microsoft 365, le partage avec des personnes extérieures à votre organisation est activé. De nombreux scénarios de partage externe fonctionnent sans configuration supplémentaire. Pour confirmer les paramètres d’un scénario que vous utilisez ou en activer un nouveau, choisissez l’une des options suivantes :
 
 - [Collaborer sur](collaborate-on-documents.md) des documents : découvrez comment configurer Microsoft 365 pour autoriser le partage et la collaboration avec des personnes extérieures à votre organisation (invités et utilisateurs non authentifiés) sur des fichiers et des dossiers.
 - [Collaborer dans un site](collaborate-in-site.md) : découvrez comment configurer Microsoft 365 pour activer le partage de sites SharePoint avec des invités.
-- [Collaborer en équipe](collaborate-as-team.md) : découvrez comment configurer Microsoft 365 pour activer la collaboration d’invités dans Teams.
+- [Collaborer en équipe](collaborate-as-team.md) : découvrez comment configurer Microsoft 365 pour activer la collaboration avec les invités dans Teams.
 
 Pour un aperçu complet des paramètres de partage d’invités disponibles dans Microsoft 365, consultez la référence des paramètres de partage d’invités [Microsoft 365.](microsoft-365-guest-settings.md)
 
@@ -52,15 +52,15 @@ Une fois que vous avez activé le scénario que vous souhaitez utiliser pour le 
 - [Limiter l’exposition](share-limit-accidental-exposure.md) accidentelle : découvrez comment réduire les risques de partager accidentellement du contenu sensible avec des personnes extérieures à votre organisation.
 - [](create-secure-guest-sharing-environment.md) Créez un environnement de partage d’invités sécurisé : découvrez les outils fournis dans Microsoft 365 pour vous assurer que le partage avec des personnes extérieures à votre organisation est effectué de manière sécurisée et répond à vos exigences de gouvernance.
 
-## <a name="collaborate-with-partner-companies"></a>Collaborer avec des entreprises partenaires
+## <a name="collaborate-with-partner-companies"></a>Collaborer avec des sociétés partenaires
 
-Lorsque vous travaillez sur un projet de grande envergure qui implique de nombreux invités d’une autre organisation, ou si vous avez une relation de fournisseur permanente dans laquelle les invités changent souvent, vous pouvez utiliser la gestion des droits dans Azure Active Directory pour simplifier la gestion des invités et permettre à la société partenaire de partager cette responsabilité. Pour plus d’informations, voir Créer un [extranet B2B](b2b-extranet.md) avec des invités gérés.
+Lorsque vous travaillez sur un projet de grande envergure qui implique de nombreux invités d’une autre organisation, ou si vous avez une relation de fournisseur en cours dans laquelle les invités changent souvent, vous pouvez utiliser la gestion des droits dans Azure Active Directory pour simplifier la gestion des invités et permettre à la société partenaire de partager cette responsabilité. Pour plus d’informations, voir Créer un [extranet B2B](b2b-extranet.md) avec des invités gérés.
 
 ## <a name="limit-sharing"></a>Limiter le partage
 
 Si certaines fonctionnalités de partage dans Microsoft 365 entrent en conflit avec vos stratégies de gouvernance, voir Limiter le partage dans [Microsoft 365](microsoft-365-limit-sharing.md) pour en savoir plus sur les options de limitation du partage.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Introduction à la collaboration sur les fichiers dans Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

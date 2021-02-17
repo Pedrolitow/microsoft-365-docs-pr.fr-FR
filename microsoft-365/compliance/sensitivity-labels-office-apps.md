@@ -1,5 +1,5 @@
 ---
-title: Gérer les étiquettes de niveau de sensibilité dans les applications Office
+title: Gérer les étiquettes de confidentialité dans les applications Office
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,20 +16,20 @@ search.appverid:
 - MET150
 description: Informations qui permettent aux administrateurs informatiques de gérer les étiquettes de niveau de sensibilité dans les applications Office pour ordinateur de bureau, mobile et web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3f2be9310e6230bf0530670796dea56f775f365d
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 959fb0371ab50d4132cacbae38d979a9a75d2aab
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242664"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261355"
 ---
-# <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de niveau de sensibilité dans les applications Office
+# <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
 Lorsque vous [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) avez publié des étiquettes de niveau de sensibilité à partir du Centre de conformité Microsoft 365 ou du centre d’étiquetage équivalent, elles commencent à apparaître dans les applications Office pour que les utilisateurs classifient et protègent les données telles qu’elles sont créées ou modifiées.
 
-Utilisez les informations de cet article pour vous aider à gérer correctement les étiquettes de sensibilité dans les applications Office. Par exemple, identifiez les versions minimales des applications dont vous avez besoin pour prendre en charge l’étiquetage intégré et comprenez les interactions avec le client d’étiquetage unifié Azure Information Protection et la compatibilité avec d’autres applications et services.
+Utilisez les informations de cet article pour gérer correctement les étiquettes de sensibilité dans les applications Office. Par exemple, identifiez les versions minimales des applications dont vous avez besoin pour prendre en charge l’étiquetage intégré et comprenez les interactions avec le client d’étiquetage unifié Azure Information Protection et la compatibilité avec d’autres applications et services.
 
 ## <a name="labeling-client-for-desktop-apps"></a>Client d’étiquetage pour les applications de bureau
 
@@ -41,7 +41,7 @@ Pour utiliser des étiquettes de sensibilité avec ces éditions autonomes d’O
 
 Pour chaque fonctionnalité, les tableaux suivants listent la version Minimale d’Office dont vous avez besoin pour prendre en charge les étiquettes de sensibilité à l’aide de l’étiquetage intégré. Ou, si la fonctionnalité d’étiquette est en prévisualisation publique ou en révision pour une prochaine version. Utilisez la [feuille de route Microsoft 365](https://aka.ms/MIPC/Roadmap) pour plus d’informations sur les prochaines publication.
 
-Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de pouvoir tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, voir Vue d’ensemble des canaux de mise à jour pour [Microsoft 365 Apps.](https://docs.microsoft.com/DeployOffice/overview-update-channels) Les nouvelles fonctionnalités qui sont en prévisualisation privée ne sont pas incluses dans le tableau, mais vous pourrez peut-être rejoindre ces aperçus en nomant votre organisation pour le programme de prévisualisation privée [microsoft Information Protection](https://aka.ms/mip-preview).
+Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, voir Vue d’ensemble des canaux de mise à jour pour [Microsoft 365 Apps.](https://docs.microsoft.com/DeployOffice/overview-update-channels) Les nouvelles fonctionnalités qui sont en prévisualisation privée ne sont pas incluses dans le tableau, mais vous pourrez peut-être rejoindre ces aperçus en nomant votre organisation pour le programme d’aperçu privé [de Microsoft Information Protection.](https://aka.ms/mip-preview)
 
 > [!NOTE]
 > Les noms des canaux de mise à jour pour les applications Office ont récemment été modifiés. Par exemple, le canal mensuel est désormais canal actuel et Office Insider est désormais canal bêta. Pour plus d’informations, voir [Modifications apportées aux canaux de mise à jour de Microsoft 365 Apps.](https://docs.microsoft.com/deployoffice/update-channels-changes)
@@ -114,11 +114,11 @@ Déployez ce paramètre à l’aide de la stratégie de groupe ou du service de 
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Client d’étiquetage intégré Office et client Azure Information Protection
 
-Si l’un des clients Azure Information Protection est installé[(client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) d’étiquetage unifié ou [client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)classique), par défaut, le client d’étiquetage intégré est désactivé dans leurs applications Office. 
+Si les utilisateurs ont installé l’un des clients Azure Information Protection[(client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) d’étiquetage unifié ou [client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)classique), par défaut, le client d’étiquetage intégré est désactivé dans leurs applications Office. 
 
 Pour utiliser l’étiquetage intégré plutôt que le client Azure Information Protection pour les applications Office, utilisez les instructions de la section précédente, mais définissez le paramètre de stratégie de groupe Utiliser la fonctionnalité Confidentialité dans **Office** pour appliquer et afficher les étiquettes de confidentialité sur **1**. 
 
-Vous pouvez également désactiver ou supprimer le add-in Office, **Azure Information Protection**. Cette méthode convient à un ordinateur unique et à des tests ad hoc. Pour obtenir des instructions, voir Afficher, gérer et installer des modules dans [les programmes Office.](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) 
+Vous pouvez également désactiver ou supprimer le add-in Office, **Azure Information Protection**. Cette méthode convient à un seul ordinateur et à des tests ad hoc. Pour obtenir des instructions, voir Afficher, gérer et installer des modules dans [les programmes Office.](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) 
 
 Lorsque vous désactivez ou supprimez ce add-in Office, le client Azure Information Protection reste installé afin de pouvoir continuer à étiqueter des fichiers en dehors de vos applications Office. Par exemple, à l’aide de l’Explorateur de fichiers ou de PowerShell.
 
@@ -147,9 +147,9 @@ Les étiquettes de niveau de sensibilité que vous configurez pour appliquer le 
   
 Lorsque les utilisateurs étiquetent initialement un document ou un e-mail, ils peuvent toujours remplacer vos paramètres de configuration d’étiquette par leurs propres paramètres de chiffrement. Par exemple :
 
-- Un utilisateur applique l’étiquette **Confidentiel \ Tous** les employés à un document et cette étiquette est configurée pour appliquer les paramètres de chiffrement à tous les utilisateurs de l’organisation. Cet utilisateur configure ensuite manuellement les paramètres IRM pour restreindre l’accès à un utilisateur extérieur à votre organisation. Le résultat final est un document étiqueté Confidentiel **\** Tous les employés et chiffré, mais les utilisateurs de votre organisation ne peuvent pas l’ouvrir comme prévu.
+- Un utilisateur applique l’étiquette **Confidentiel \ Tous** les employés à un document et cette étiquette est configurée pour appliquer les paramètres de chiffrement pour tous les utilisateurs de l’organisation. Cet utilisateur configure ensuite manuellement les paramètres IRM pour restreindre l’accès à un utilisateur extérieur à votre organisation. Le résultat final est un document étiqueté Confidentiel **\** Tous les employés et chiffré, mais les utilisateurs de votre organisation ne peuvent pas l’ouvrir comme prévu.
 
-- Un utilisateur applique l’étiquette **Confidentiel \ Destinataires uniquement** à un e-mail et ce courrier électronique est configuré pour appliquer le paramètre de chiffrement Ne pas **forwarder**. Cet utilisateur configure ensuite manuellement les paramètres IRM afin que le courrier électronique ne soit pas limité. Le résultat final est que l’e-mail peut être transmis par des destinataires, même s’ils ont l’étiquette **Confidentiel \ Destinataires uniquement.**
+- Un utilisateur applique l’étiquette **Confidentiel \ Destinataires uniquement** à un e-mail et ce courrier électronique est configuré pour appliquer le paramètre de chiffrement Ne pas **forwarder**. Cet utilisateur configure ensuite manuellement les paramètres IRM afin que la messagerie ne soit pas restreinte. Le résultat final est que le courrier électronique peut être transmis par des destinataires, même s’il a l’étiquette **Confidentiel \ Destinataires uniquement.**
 
 - Un utilisateur applique **l’étiquette Général** à un document et cette étiquette n’est pas configurée pour appliquer le chiffrement. Cet utilisateur configure ensuite manuellement les paramètres IRM pour restreindre l’accès au document. Le résultat final est un document  étiqueté Général, mais qui applique également le chiffrement afin que certains utilisateurs ne peuvent pas l’ouvrir comme prévu.
 
@@ -183,7 +183,7 @@ Exemples d’héritage d’étiquette, où l’étiquette **Confidentiel** appli
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilité des étiquettes de sensibilité
 
-Avec les applications **rms -enlightened**: si vous ouvrez un document ou un [e-mail](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) étiqueté et chiffré dans une application RMS qui ne prend pas en charge les étiquettes de sensibilité, l’application applique toujours le chiffrement et la gestion des droits.
+Avec les applications avec RMS : si vous ouvrez un document ou un **e-mail** étiqueté et chiffré dans une [application rms](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) qui ne prend pas en charge les étiquettes de sensibilité, l’application applique toujours le chiffrement et la gestion des droits.
 
 Avec le **client Azure Information Protection**: vous pouvez afficher et modifier les étiquettes de sensibilité que vous appliquez aux documents et aux e-mails avec le client d’étiquetage intégré Office à l’aide du client Azure Information Protection, et inversement.
 
@@ -235,7 +235,7 @@ Toutefois, le compte invité automatique n’est pas créé immédiatement dans 
 
 Si votre organisation a implémenté des stratégies d’accès conditionnel [Azure Active Directory,](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)vérifiez la configuration de ces stratégies. Si les stratégies incluent Azure Information Protection et que la stratégie s’étend aux utilisateurs externes, ces utilisateurs externes doivent avoir un compte invité dans votre client, même s’ils ont un compte Azure AD dans leur propre client.
 
-Sans ce compte invité, ils ne peuvent pas ouvrir le document chiffré et voir un message d’erreur. Le texte du message peut les informer que leur compte doit être ajouté en tant qu’utilisateur externe dans le client, avec l’instruction incorrecte Se sortir et se connecter à nouveau avec un autre compte d’utilisateur **Azure Active Directory.**
+Sans ce compte invité, ils ne peuvent pas ouvrir le document chiffré et voir un message d’erreur. Le texte du message peut l’informer que son compte doit être ajouté en tant qu’utilisateur externe dans le client, avec l’instruction incorrecte pour ce scénario de se signer et de se connecter à nouveau avec un autre compte d’utilisateur **Azure Active Directory.**
 
 Si vous ne pouvez pas créer et configurer de comptes invités dans votre client pour les utilisateurs externes qui doivent ouvrir des documents chiffrés par vos étiquettes, vous devez supprimer Azure Information Protection des stratégies d’accès conditionnel ou exclure les utilisateurs externes des stratégies.
 
@@ -249,7 +249,7 @@ Les applications Office appliquent le marquage et le chiffrement de contenu avec
 | --- | --- | --- |
 | Word, Excel, PowerPoint sur toutes les plateformes | Immédiatement | Immédiatement |
 | Outlook pour PC et Mac | Une fois qu’Exchange Online a envoyé le courrier électronique | Immédiatement |
-| Outlook sur le web, iOS et Android | Une fois qu’Exchange Online a envoyé le courrier électronique | Une fois qu’Exchange Online a envoyé le courrier électronique |
+| Outlook sur le web, iOS et Android | Une fois qu’Exchange Online a envoyé l’e-mail | Une fois qu’Exchange Online a envoyé l’e-mail |
 |
 
 Les solutions qui appliquent des étiquettes de niveau de sensibilité à des fichiers en dehors des applications Office le font en appliquant des métadonnées d’étiquetage au fichier. Dans ce scénario, le marquage de contenu à partir de la configuration de l’étiquette n’est pas inséré dans le fichier, mais le chiffrement est appliqué. 
@@ -282,7 +282,7 @@ Lorsque vous configurez une étiquette de sensibilité pour les marquages de con
 | `${Item.Label}` | Nom complet de l’étiquette appliquée| **Général**|
 | `${Item.Name}` | Nom de fichier ou objet de l’e-mail du contenu étiqueté | **Sales.docx** |
 | `${Item.Location}` | Chemin d’accès et nom de fichier du document en cours d’étiquetage, ou l’objet de l’e-mail d’un e-mail étiqueté | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Nom d’affichage de l’utilisateur qui applique l’étiquette| **Président Dussy** |
+| `${User.Name}` | Nom complet de l’utilisateur qui applique l’étiquette| **Président Dussy** |
 | `${User.PrincipalName}` | Nom d’utilisateur principal (UPN) Azure AD de l’utilisateur qui applique l’étiquette | **rsimone \@ contoso.com** |
 | `${Event.DateTime}` | Date et heure d’étiquetage du contenu, dans le fuseau horaire local de l’utilisateur qui applique l’étiquette | **10/8/2020 13:30** |
 
@@ -312,13 +312,13 @@ Exemples :
 
     Dans les en-têtes de document Word uniquement, l’étiquette applique le texte d’en-tête « Ce document Word est sensible ». Aucun texte d’en-tête n’est appliqué à d’autres applications Office.
 
-- **Définissez du texte de pied de groupe pour Word, Excel et Outlook, et un texte de pied de bas de tableau différent pour PowerPoint :**
+- **Définissez du texte de pied de groupe pour Word, Excel et Outlook, et un texte de pied de pied de groupe différent pour PowerPoint :**
 
     `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
 
     Dans Word, Excel et Outlook, l’étiquette applique le texte de pied de ligne « Ce contenu est confidentiel ». Dans PowerPoint, l’étiquette applique le texte de pied de groupe « Cette présentation est confidentielle ».
 
-- **Définissez du texte en filigrane spécifique pour Word et PowerPoint, puis du texte filigrane pour Word, Excel et PowerPoint :**
+- **Définissez du texte filigrane spécifique pour Word et PowerPoint, puis du texte filigrane pour Word, Excel et PowerPoint :**
 
     `${If.App.WP}This content is ${If.End}Confidential`
 

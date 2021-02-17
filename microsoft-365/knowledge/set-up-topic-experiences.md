@@ -10,20 +10,22 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment configurer les rubriques microsoft
-ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: a90e75330527992f8519d625f94fe0d5ecb3de6b
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150499"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261468"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurer Les rubriques microsoft
 
 Vous pouvez utiliser le Centre d’administration Microsoft 365 pour configurer les [rubriques.](topic-experiences-overview.md) 
 
-Il est important de planifier la meilleure façon de configurer des rubriques dans votre environnement. Avant de commencer les procédures de cet article, veillez à lire les rubriques Planifier pour [Microsoft Topics.](plan-topic-experiences.md)
+Il est important de planifier la meilleure façon de configurer des rubriques dans votre environnement. Veillez à lire [les rubriques planifier microsoft avant](plan-topic-experiences.md) de commencer les procédures de cet article.
 
 Vous devez être abonné à [Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder au Centre d’administration Microsoft 365 et configurer Rubriques.
+
+Si vous avez configuré [](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)SharePoint pour exiger des appareils gérés, assurez-vous de configurer les rubriques à partir d’un appareil géré.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
@@ -40,15 +42,15 @@ Cette vidéo montre le processus de configuration des rubriques dans Microsoft 3
 Pour configurer des rubriques
 
 1. Dans le [Centre d’administration Microsoft 365,](https://admin.microsoft.com)sélectionnez **Installation,** puis affichez la section Fichiers **et** contenu.
-2. Dans la section **Fichiers et contenu,** cliquez **sur Connecter des personnes aux connaissances.**
+2. Dans la section **Fichiers et contenu,** cliquez **sur Connecter les personnes aux connaissances.**
 
     ![Connecter les personnes aux connaissances](../media/admin-org-knowledge-options.png) 
 
-3. Dans la page **Connecter des personnes aux connaissances,** cliquez sur **Commencer** pour vous aider dans le processus de configuration.
+3. Dans la page **Connecter des personnes aux connaissances,** cliquez sur **Commencer** pour vous aider tout au long du processus de configuration.
 
     ![Prise en main](../media/k-get-started.png) 
 
-4. Dans la page **Choisir la façon dont Rubriques peut trouver des rubriques,** vous allez configurer la découverte de rubriques. Dans la section Sélectionner des sources de rubrique **SharePoint,** sélectionnez les sites SharePoint qui seront analyser en tant que sources pour vos rubriques lors de la découverte. Choisissez parmi les autorisations suivantes :
+4. Dans la page Choisir la façon dont Topics peut trouver des **rubriques,** vous allez configurer la découverte de rubriques. Dans la section Sélectionner des sources de rubrique **SharePoint,** sélectionnez les sites SharePoint qui seront analyser en tant que sources pour vos rubriques lors de la découverte. Choisissez parmi les autorisations suivantes :
     - **Tous les sites**: tous les sites SharePoint de votre organisation. Cela inclut les sites actuels et futurs.
     - **Tous, sauf les sites sélectionnés**: tapez les noms des sites que vous souhaitez exclure.  Vous pouvez également charger une liste de sites que vous souhaitez refuser de découvrir. Les sites créés à l’avenir seront inclus en tant que sources pour la découverte de rubriques. 
     - **Seuls les sites** sélectionnés : tapez les noms des sites que vous souhaitez inclure. Vous pouvez également charger une liste de sites. Les sites créés à l’avenir ne seront pas inclus en tant que sources de découverte de sujet.
@@ -57,7 +59,7 @@ Pour configurer des rubriques
     ![Choisir comment rechercher des rubriques](../media/ksetup1.png) 
    
 5. Dans la section **Exclure les rubriques par** nom, vous pouvez ajouter des noms de rubriques que vous souhaitez exclure de la découverte de rubriques. Utilisez ce paramètre pour empêcher que des informations sensibles ne figurent dans les rubriques. Les options disponibles sont les suivantes :
-    - **N’exclure aucune rubrique** 
+    - **N’excluez aucune rubrique** 
     - **Exclure des rubriques par nom**
 
     ![Exclure des rubriques](../media/topics-excluded-by-name.png) 
@@ -66,7 +68,7 @@ Pour configurer des rubriques
 
     #### <a name="how-to-exclude-topics-by-name"></a>Comment exclure des rubriques par nom    
 
-    Si vous devez exclure des rubriques, après avoir sélectionné Exclure les **rubriques** par nom, téléchargez le modèle .csv et mettez-le à jour avec la liste des rubriques que vous souhaitez exclure de vos résultats de découverte.
+    Si vous devez exclure des rubriques, après avoir sélectionné Exclure les **rubriques** par leur nom, téléchargez le modèle .csv et mettez-le à jour avec la liste des rubriques que vous souhaitez exclure de vos résultats de découverte.
 
     ![Exclure des rubriques dans le modèle CSV](../media/exclude-topics-csv.png) 
 
@@ -115,7 +117,7 @@ Pour configurer des rubriques
 
 10. À la page **Examiner et finaliser**, vous pouvez consulter le paramètre sélectionné, puis choisir d’apporter des modifications. Si vos sélections vous conviennent, sélectionnez **Activer**.
 
-11. La page **Rubriques** activée s’affiche, confirmant que le système va maintenant commencer à analyser les sites sélectionnés pour les rubriques et à créer le site centre de rubriques. Sélectionnez **Terminé**.
+11. La page **Activée rubriques** s’affiche, confirmant que le système va maintenant commencer à analyser les sites sélectionnés pour les rubriques et à créer le site centre de rubriques. Sélectionnez **Terminé**.
 
 12. Vous serez renvoyé à votre page De **connexion des personnes à la** base de connaissances. Dans cette page, vous pouvez sélectionner **Gérer** pour modifier vos paramètres de configuration. 
 
@@ -123,21 +125,21 @@ Pour configurer des rubriques
 
 ## <a name="assign-licenses"></a>Attribuer des licences
 
-Une fois que vous avez configuré les expériences de rubrique, vous devez attribuer des licences pour les utilisateurs qui utiliseront Rubriques. Seuls les utilisateurs titulaires d’une licence peuvent voir des informations sur des sujets tels que les points forts, les fiches de rubrique, les pages de rubriques et le centre de rubriques. 
+Une fois que vous avez configuré les expériences de rubrique, vous devez attribuer des licences pour les utilisateurs qui utiliseront Rubriques. Seuls les utilisateurs titulaires d’une licence peuvent voir des informations sur des sujets tels que les points forts, les cartes de rubrique, les pages de rubriques et le centre de rubriques. 
 
 Pour attribuer des licences :
 
 1. Dans le Centre d’administration Microsoft 365, sous **Utilisateurs**, cliquez sur **Utilisateurs actifs**.
 
-2. Sélectionnez les utilisateurs dont vous souhaitez obtenir une licence, puis cliquez **sur Licences et applications.**
+2. Sélectionnez les utilisateurs que vous souhaitez obtenir une licence, puis cliquez **sur Licences et applications.**
 
-3. Sous **Applications,** assurez-vous que la recherche de connecteurs Graph avec **expériences d’index** et **de** sujet est sélectionnée.
+3. Sous **Applications,** assurez-vous que la recherche de connecteurs Graph avec **les expériences d’index** et **de** sujet est sélectionnée.
 
 4. Cliquez sur **Enregistrer les modifications**.
 
 ## <a name="manage-topic-experiences"></a>Gérer les expériences de rubrique
 
-Une fois que vous avez configuré Rubriques, vous pouvez modifier les paramètres que vous avez choisis lors de l’installation dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Consultez les références suivantes :
+Une fois que vous avez configuré Rubriques, vous pouvez modifier les paramètres que vous avez choisis lors de l’installation dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Si vous souhaitez en savoir plus, veuillez consulter les références suivantes :
 
 - [Gérer la découverte de rubriques dans les rubriques microsoft](topic-experiences-discovery.md)
 - [Gérer la visibilité des rubriques dans les rubriques microsoft](topic-experiences-knowledge-rules.md)

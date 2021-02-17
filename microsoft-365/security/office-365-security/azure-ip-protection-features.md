@@ -19,19 +19,19 @@ ms.custom:
 description: Cet article explique les modifications apportées aux fonctionnalités de protection dans Azure Information Protection
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cb78f9e13d8ae429f5f46f2b1051d07ee541a10
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165978"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261560"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Fonctionnalités de protection dans Azure Information Protection en cours de déploiement sur des clients existants
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 (plan 2)](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender pour Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Pour faciliter l’étape initiale de protection de vos informations, à compter de juillet 2018, les fonctionnalités de protection d’Azure Information Protection seront désactivées par défaut pour tous les locataires éligibles Azure Information Protection. Les fonctionnalités de protection dans Azure Information Protection étaient auparavant connues dans Office 365 en tant que Gestion des droits ou Azure RMS. Si votre organisation dispose d’un plan de service Office E3 ou d’un plan de service plus élevé, vous aurez désormais une idée d’avance pour protéger les informations via Azure Information Protection lors du déploiement de ces fonctionnalités.
@@ -60,7 +60,8 @@ Le chiffrement de messages Office 365 tire parti des fonctionnalités de protect
 
 Si votre organisation a acheté une licence Office 365 éligible, votre client sera touché par cette modification.
 
- **IMPORTANT !** Si vous utilisez services AD RMS (Active Directory Rights Management Services) (AD RMS) dans votre environnement local, vous devez soit refuser cette modification immédiatement, soit migrer vers Azure Information Protection avant de la déployer dans les 30 prochains jours. Pour plus d’informations sur la façon de refuser, voir « J’utilise AD RMS, comment puis-je refuser ? » » plus loin dans cet article. Si vous préférez migrer, voir [Migrer d’AD RMS vers Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+> [!IMPORTANT]
+> Si vous utilisez services AD RMS (Active Directory Rights Management Services) (AD RMS) dans votre environnement local, vous devez soit refuser cette modification immédiatement, soit migrer vers Azure Information Protection avant de la déployer dans les 30 prochains jours. Pour plus d’informations sur la façon de refuser, voir « J’utilise AD RMS, comment puis-je refuser ? » » plus loin dans cet article. Si vous préférez migrer, voir [Migrer d’AD RMS vers Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Puis-je utiliser Azure Information Protection avec services AD RMS (Active Directory Rights Management Services) (AD RMS) ?
 
@@ -72,11 +73,11 @@ Utilisez ces instructions de préparation de l’environnement pour Azure Rights
 
 1. Bien que facultatif, la plupart des déploiements AD RMS publient le point de connexion de service (SCP) dans Active Directory afin que les ordinateurs de domaine peuvent découvrir le cluster AD RMS.
 
-Utilisez ADSI Edit pour voir si vous avez un SCP publié dans Active Directory : CN=Configuration [nom du serveur], CN=Services, CN=RightsManagementServices, CN=SCP
+   Utilisez ADSI Edit pour voir si vous avez un SCP publié dans Active Directory : CN=Configuration [nom du serveur], CN=Services, CN=RightsManagementServices, CN=SCP
 
-2. Si vous n’utilisez pas de SCP, les ordinateurs Windows qui se connectent à un cluster AD RMS doivent être configurés pour la découverte de service côté client ou la redirection de licences à l’aide du Registre Windows : HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation ou HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation
+2. Si vous n’utilisez pas de point de connexion SCP, les ordinateurs Windows qui se connectent à un cluster AD RMS doivent être configurés pour la découverte du service côté client ou la redirection des licences à l’aide du Registre Windows : `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation`
 
-Pour plus d’informations sur ces configurations de Registre, voir Activation de la découverte de service côté client à l’aide du [Registre Windows](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) et redirection du trafic du serveur de [licences.](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)
+Pour plus d’informations sur ces configurations de Registre, voir Activation de la découverte de service côté client à l’aide du Registre [Windows](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) et redirection du trafic du serveur de [licences.](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)
 
 ## <a name="i-use-ad-rms-how-do-i-opt-out"></a>J’utilise AD RMS, comment puis-je refuser ?
 
@@ -96,4 +97,4 @@ Une fois ce chiffrement activé, à condition que vous n’avez pas choisi de le
 
 ![Capture d’écran shows an OME protected message in Outlook on the web.](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 
-Pour plus d’informations sur les nouvelles améliorations, voir chiffrement de [messages Office 365.](../../compliance/ome.md)
+Pour plus d’informations sur les nouvelles améliorations, voir Chiffrement de [messages Office 365.](../../compliance/ome.md)
