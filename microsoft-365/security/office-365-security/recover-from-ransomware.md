@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.article: how-to
+ms.topic: article
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,21 +15,21 @@ ms.collection:
 description: Les administrateurs Microsoft 365 peuvent apprendre à récupérer d’une attaque par ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b834adb3d9ba5f85984e09b4bb1e4b48673c32f2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 120dd9ae71f04d6921fae95965f56f0a08f1280c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166902"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289304"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupérer d’une attaque par ransomware dans Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Même si vous prenez toutes les précautions nécessaires pour protéger votre organisation, vous pouvez toujours être la victime d’une attaque par [ransomware.](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) Les ransomware sont une grande entreprise et les attaques sont très sophistiquées.
 
@@ -73,7 +73,7 @@ N’oubliez pas d’analyser les appareils qui synchronisent des données ou les
 
 Vous pouvez utiliser [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) ou (pour les clients [plus anciens) Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
-Une alternative qui vous aidera également à supprimer des ransomware ou des programmes malveillants est l’outil de suppression de logiciels malveillants [(MSRT).](https://www.microsoft.com/download/details.aspx?id=9905)
+Une alternative qui vous aidera également à supprimer un ransomware ou un programme malveillant est l’outil de suppression de logiciels malveillants [(MSRT).](https://www.microsoft.com/download/details.aspx?id=9905)
 
 Si ces options ne fonctionnent pas, vous pouvez essayer Windows Defender [hors](https://support.microsoft.com/help/17466) connexion ou résoudre les problèmes liés à la détection et à la suppression [de programmes malveillants.](https://support.microsoft.com/help/4466982)
 
@@ -115,7 +115,7 @@ Vous devez contacter vos autorités judiciaires locales ou fédérales. Par exem
 
 ### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>Envoyer un rapport sur le site web de signalement des fraudes de votre pays
 
-Les sites web de signalement des fraudes fournissent des informations sur la prévention et la prévention des fraudes. Ils fournissent également des mécanismes permettant de signaler si vous avez été victime d’une fraude.
+Les sites web de signalement des fraudes fournissent des informations sur la prévention et l’évitement des fraudes. Ils fournissent également des mécanismes permettant de signaler si vous avez été victime d’une fraude.
 
 - Australie : [SCAMwatch](http://www.scamwatch.gov.au/)
 
@@ -137,13 +137,13 @@ Si votre pays n’est pas répertorié, demandez à vos autorités judiciaires l
 
 ### <a name="submit-email-messages-to-microsoft"></a>Envoyer des messages électroniques à Microsoft
 
-Vous pouvez signaler des messages de hameçonnage qui contiennent un ransomware à l’aide de l’une des différentes méthodes. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
+Vous pouvez signaler des messages de hameçonnage qui contiennent un ransomware à l’aide de l’une des méthodes. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 
-- [Réponse ransomware : payer ou ne pas payer ?](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Réponse de ransomware : payer ou ne pas payer ?](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 
 - [NorskQue répond aux attaques par ransomware avec transparence](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
@@ -155,7 +155,7 @@ Vous pouvez signaler des messages de hameçonnage qui contiennent un ransomware 
 
 - [Paramètres recommandés pour EOP et Microsoft Defender pour la sécurité Office 365](recommended-settings-for-eop-and-office365-atp.md)
 
-- [Une mise à niveau fiable : la sécurité de nouvelle génération sur Windows 10 prouve sa résilience contre les attaques de ransomware en 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+- [Une mise à niveau fiable : la sécurité de nouvelle génération sur Windows 10 prouve une résilience contre les attaques de ransomware en 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
 - [No mas, Samas: What’s in this ransomware’s modus operandi?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
 

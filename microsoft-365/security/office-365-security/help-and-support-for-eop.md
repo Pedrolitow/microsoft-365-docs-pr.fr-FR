@@ -13,31 +13,31 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2b8228d33648f7bd20bde9d9e7b852276231aa6
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 945f3c4e32a6c41193e3df4813cc4ed4fe9f7b1f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167106"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289792"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Dans les organisations Microsoft 365 avec boîtes aux lettres dans Exchange Online ou les organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les ressources de support technique répertoriées dans cet article vous aideront à trouver des réponses si vous avez des difficultés avec EOP. Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîte aux lettres Exchange Online, les ressources de support technique répertoriées dans cet article vous aideront à trouver des réponses si vous avez des difficultés avec EOP. Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
 
 ## <a name="self-support-options"></a>Options de support autonome
 
-Lors de la connexion, le Centre d’administration Microsoft 365 fournit des informations sur l’état des services de votre organisation. En outre, la section État du service affiche l’état actuel de vos services, des détails sur les interruptions et les pannes, et répertorie les temps de maintenance planifiés. Le Centre d’administration Microsoft 365 fournit également des informations sur les problèmes connus et les résolutions attendues. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche). Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées. Pour plus d’informations sur la zone d’état du service, voir [État et continuité du service.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Vous pourrez peut-être trouver plus d’aide vous-même à l’aide des outils, forums et sites communautaires répertoriés ici.
+Lors de la connexion, le Centre d’administration Microsoft 365 fournit des informations sur l’état des services de votre organisation. En outre, la section État du service affiche l’état actuel de vos services, des détails sur les interruptions et les pannes, et répertorie les heures de maintenance planifiées. Le Centre d’administration Microsoft 365 fournit également des informations sur les problèmes connus et les résolutions attendues. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche). Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées. Pour plus d’informations sur la zone d’état du service, voir [État et continuité du service.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Vous pourrez peut-être trouver plus d’aide vous-même à l’aide des outils, forums et sites communautaires répertoriés ici.
 
 [Présentation du produit Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contacter le support relatif aux produits d’entreprises - Aide de l’administrateur](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
+[Contacter le support relatif aux produits d’entreprises - Aide de l’administrateur](../../admin/contact-support-for-business-products.md)
 
 [Communauté Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
@@ -67,7 +67,7 @@ Pour plus d’informations sur la façon dont le support Premier peut aider votr
 
 1. Connectez-vous au Centre d’administration Microsoft 365.
 
-2. Pour les problèmes généraux du produit, allez au **support** technique Demander un support technique pour \>  \> **le support technique.**
+2. Pour les problèmes généraux du produit, allez au **support** \> **technique Demander l’assistance** technique du support \> **technique.**
 
    Pour des questions préalables à l'achat d'EOP ou ayant trait à la facturation et aux abonnements, accédez à **Support** \> **Demander une assistance clientèle** \> **Appeler le support de facturation et d'abonnement**.
 
@@ -75,7 +75,7 @@ Pour plus d’informations sur la façon dont le support Premier peut aider votr
 
 ## <a name="support-telephone-numbers"></a>Numéros de téléphone du support technique
 
-Microsoft met à disposition des numéros de téléphone locaux ou gratuits pour contacter le support technique dans le monde entier. La plupart de ces Centres d'aide et de support fournissent une assistance dans votre langue pendant les heures d'ouverture ou une assistance en anglais 24h/24, 7j/7. Si votre emplacement ne figure pas dans la liste ci-dessous, utilisez l’agent virtuel comme décrit ci-dessus pour trouver votre numéro de téléphone de support local.
+Microsoft met à disposition des numéros de téléphone locaux ou gratuits pour contacter le support technique dans le monde entier. La plupart de ces Centres d'aide et de support fournissent une assistance dans votre langue pendant les heures d'ouverture ou une assistance en anglais 24h/24, 7j/7. Si votre emplacement n’est pas répertorié ci-dessous, utilisez l’agent virtuel comme décrit ci-dessus pour trouver votre numéro de téléphone de support local.
 
 ****
 

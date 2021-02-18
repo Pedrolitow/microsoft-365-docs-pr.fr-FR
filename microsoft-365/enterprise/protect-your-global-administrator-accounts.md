@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Cet article fournit des informations sur la protection de l’accès administrateur général à votre abonnement Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15c497e02b139ea6af4aabba9f3e9ab65a1205be
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1f84ca33a620c3ea3c24f46eb29c1a39c28840e7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445406"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289638"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Microsoft 365
 
@@ -55,12 +55,12 @@ Il existe relativement peu de tâches administratives, telles que l’attributio
 1. Déterminez l’ensemble des comptes d’utilisateurs qui ont reçu le rôle d’administrateur global. Vous pouvez le faire dans le Centre d’administration Microsoft 365 ou avec la commande Azure Active Directory PowerShell pour Graph suivante :
   
   ```powershell
-  Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+  Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
-2. Connectez-vous à votre abonnement Microsoft 365 à l’aide d’un compte d’utilisateur ayant le rôle d’administrateur global.
+2. Connectez-vous à votre abonnement Microsoft 365 à l’aide d’un compte d’utilisateur qui a reçu le rôle d’administrateur global.
     
-3. Créez jusqu’à quatre comptes d’utilisateur d’administrateur général dédiés. **Utilisez des mots de passe forts d’au moins 12 caractères.** Pour plus [d’informations, voir](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) Créer un mot de passe fort. Stockez les mots de passe des nouveaux comptes dans un emplacement sécurisé. 
+3. Créez jusqu’à quatre comptes d’utilisateur d’administrateur général dédiés au maximum. **Utilisez des mots de passe forts d’au moins 12 caractères.** Pour plus [d’informations, voir](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) Créer un mot de passe fort. Stockez les mots de passe des nouveaux comptes dans un emplacement sécurisé. 
     
 4. Attribuez le rôle d’administrateur général à chacun des nouveaux comptes d’utilisateur d’administrateur général dédiés.
     
@@ -109,7 +109,7 @@ L’authentification multifacteur (MFA) nécessite des informations supplémenta
 >Pour les organisations qui doivent respecter les normes du National Institute of Standards and Technology (NIST), l’utilisation d’un appel téléphonique ou de méthodes de vérification supplémentaires basées sur des SMS est restreinte. Cliquez [ici](https://pages.nist.gov/800-63-FAQ/#q-b01) pour plus d’informations.
 >
 
-Si vous êtes une petite entreprise qui utilise des comptes d’utilisateurs stockés uniquement dans le cloud (le modèle d’identité cloud uniquement), configurez l’appelez-moi en mode [MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) à l’aide d’un appel téléphonique ou d’un code de vérification par SMS envoyé à un smartphone pour chaque compte d’administrateur général dédié.
+Si vous êtes une petite entreprise qui utilise des comptes d’utilisateurs stockés uniquement dans le cloud (le modèle d’identité cloud uniquement), configurez l’ation [MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) pour configurer l' usage de l’pertinence à l’aide d’un appel téléphonique ou d’un code de vérification par SMS envoyé à un smartphone pour chaque compte d’administrateur général dédié.
     
 Si vous êtes une grande organisation qui utilise un modèle d’identité hybride Microsoft 365, vous avez davantage d’options de vérification. Si vous avez déjà mis en place l’infrastructure de sécurité pour une méthode d’authentification secondaire plus [forte,](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) configurez l’authentification multifacteur et configurez chaque compte d’administrateur général dédié pour la méthode de vérification appropriée.
   
@@ -143,7 +143,7 @@ Reportez-vous à la rubrique [Sécurisation de l’accès privilégié pour les 
 
 Plutôt que d’attribuer définitivement le rôle d’administrateur général à vos comptes d’administrateur général, vous pouvez utiliser Azure AD Privileged Identity Management (PIM) pour activer l’attribution à la demande et juste-à-temps du rôle d’administrateur général lorsqu’il est nécessaire.
   
-Vos comptes d’administrateur général ne sont plus des administrateurs permanents, mais des administrateurs éligibles. Le rôle d’administrateur général est inactif jusqu’à ce que quelqu’un en a besoin. Vous terminez ensuite un processus d’activation pour ajouter le rôle d’administrateur général au compte d’administrateur général pendant un laps de temps prédéterminé. Lorsque le délai expire, PIM supprime le rôle d’administrateur général du compte d’administrateur général.
+Vos comptes d’administrateur général ne sont plus des administrateurs permanents, mais des administrateurs éligibles. Le rôle d’administrateur général est inactif jusqu’à ce que quelqu’un en a besoin. Vous terminez ensuite un processus d’activation pour ajouter le rôle d’administrateur général au compte d’administrateur général pendant un laps de temps prédéterminé. À l’expiration du délai, PIM supprime le rôle d’administrateur général du compte d’administrateur général.
   
 L’utilisation de PIM et de ce processus réduit considérablement le temps que vos comptes d’administrateur général sont vulnérables aux attaques et à l’utilisation par des utilisateurs malveillants.
 

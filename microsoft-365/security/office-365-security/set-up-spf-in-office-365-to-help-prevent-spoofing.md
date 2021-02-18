@@ -19,21 +19,21 @@ ms.custom:
 description: Découvrez comment mettre à jour un enregistrement DNS (service de nom de domaine) afin que vous puissiez utiliser SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fbed28047b88a3eff75f574fc4d2581a75f15518
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 52997150302805ea5085028e9a8f1cd5f745d841
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166230"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290440"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurer SPF pour empêcher l’usurpation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Cet article vous explique comment mettre à jour un enregistrement DNS (Domain Name Service) afin que vous puissiez utiliser l’authentification de messagerie SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365.
 
@@ -48,7 +48,7 @@ Avant de créer ou de mettre à jour l’enregistrement TXT SPF pour Office 365
 
 Collectez les informations ci-dessous :
 
-- L’enregistrement TXT SPF actuel pour votre domaine personnalisé, le cas échéant. Si vous souhaitez obtenir des instructions, consultez l’article [Collectez les informations nécessaires pour créer des enregistrements DNS Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+- L’enregistrement TXT SPF actuel pour votre domaine personnalisé, le cas échéant. Si vous souhaitez obtenir des instructions, consultez l’article [Collectez les informations nécessaires pour créer des enregistrements DNS Office 365](../../admin/get-help-with-domains/information-for-dns-records.md).
 
 - Accédez à vos serveurs de messagerie et recherchez les adresses IP externes (requis pour tous les serveurs de messagerie locaux). Par exemple, **131.107.2.200**.
 
@@ -94,7 +94,7 @@ Collectez les informations ci-dessous :
 
    Si vous avez déjà effectué un déploiement dans Office 365, que vous avez configuré les enregistrements TXT SPF de votre domaine personnalisé et que vous effectuez une migration vers Office 365 Germany, vous devez mettre à jour votre enregistrement TXT SPF. Pour ce faire, remplacez `include:spf.protection.outlook.com` par `include:spf.protection.outlook.de`.
 
-3. Une fois que vous avez formulé votre enregistrement TXT SPF, vous devez mettre à jour l'enregistrement dans le système DNS. Vous ne pouvez avoir qu'un seul enregistrement TXT SPF pour un domaine. Si un enregistrement TXT SPF existe, au lieu d'ajouter un nouvel enregistrement, vous devez mettre à jour l'enregistrement existant. Accédez à [Créer des enregistrements DNS pour Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), puis cliquez sur le lien correspondant à votre hôte DNS.
+3. Une fois que vous avez formulé votre enregistrement TXT SPF, vous devez mettre à jour l'enregistrement dans le système DNS. Vous ne pouvez avoir qu'un seul enregistrement TXT SPF pour un domaine. Si un enregistrement TXT SPF existe, au lieu d'ajouter un nouvel enregistrement, vous devez mettre à jour l'enregistrement existant. Accédez à [Créer des enregistrements DNS pour Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md), puis cliquez sur le lien correspondant à votre hôte DNS.
 
 4. Testez votre enregistrement TXT SPF.
 
@@ -137,6 +137,6 @@ Pour obtenir des exemples avancés, des informations plus détaillées sur la sy
 
  SPF est conçu pour lutter contre l’usurpation, mais il existe des techniques d’usurpation contre lesquelles SPF ne peut rien faire. Pour vous protéger contre ces techniques, une fois que vous avez configuré SPF, vous devez également configurer DKIM et DMARC pour Office 365.
 
-L’objectif de l’authentification de messagerie [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide) est de prouver que le contenu du courrier n’a pas été falsifié.
+L’objectif de l’authentification de messagerie [DKIM](use-dkim-to-validate-outbound-email.md) est de prouver que le contenu du courrier n’a pas été falsifié.
 
-L’objectif de l’authentification de messagerie [DMARC](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide) est de s’assurer que les informations SPF et DKIM correspondent à l’adresse de l’expéditeur.
+L’objectif de l’authentification de messagerie [DMARC](use-dmarc-to-validate-email.md) est de s’assurer que les informations SPF et DKIM correspondent à l’adresse de l’expéditeur.

@@ -17,21 +17,21 @@ ms.collection:
 description: Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour protéger nos utilisateurs contre les courriers électroniques abusifs, indésirables ou malveillants.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1065fdef5f804214ca48f7ca54170e6e417490d7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166854"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289196"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Microsoft s'engage à vous fournir l'expérience utilisateur la plus fiable sur le web. Par conséquent, Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour aider à protéger ses utilisateurs contre les messages abusifs, indésirables ou malveillants. Les expéditeurs qui tentent d’envoyer des courriers électroniques aux utilisateurs doivent s’assurer qu’ils comprennent parfaitement et suivent les instructions de cet article pour vous aider dans cet effort et éviter les problèmes de remise potentiels.
 
@@ -39,7 +39,7 @@ Si vous ne respectez pas ces instructions et stratégies, il se peut que notre �
 
 ## <a name="general-microsoft-policies"></a>Stratégies générales Microsoft
 
-Les courriers électroniques envoyés aux utilisateurs de Microsoft 365 doivent être conformes à toutes les stratégies Microsoft régissant la transmission et l’utilisation de Microsoft 365.
+Les courriers électroniques envoyés aux utilisateurs de Microsoft 365 doivent être conformes à toutes les stratégies Microsoft régissant la transmission et l’utilisation du courrier électronique de Microsoft 365.
 
 - Conditions d’utilisation applicables à Microsoft 365 ; en particulier, l’interdiction d’utiliser le service pour le courrier indésirable ou la distribution de programmes malveillants.
 
@@ -97,7 +97,7 @@ Microsoft collabore activement avec des organismes et fournisseurs de services d
 
 ## <a name="abuse-and-spam-reporting"></a>Création de rapport de courrier indésirable et de mauvaise utilisation
 
-Pour signaler des courriers électroniques illicites, abusifs, indésirables ou malveillants, reportez-vous aux messages et [fichiers envoyés à Microsoft.](report-junk-email-messages-to-microsoft.md) L’envoi de ces types de communications constitue une violation de la stratégie de Microsoft et des mesures appropriées seront prises sur les rapports confirmés.
+Pour signaler des messages illicites, abusifs, indésirables ou malveillants, reportez-vous [aux messages et fichiers envoyés à Microsoft.](report-junk-email-messages-to-microsoft.md) L’envoi de ces types de communications constitue une violation de la stratégie de Microsoft et des mesures appropriées seront prises sur les rapports confirmés.
 
 ## <a name="law-enforcement"></a>Application des lois
 

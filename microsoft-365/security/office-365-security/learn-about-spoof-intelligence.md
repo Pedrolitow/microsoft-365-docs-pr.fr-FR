@@ -20,25 +20,25 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur la veille contre l’usurpation d’adresse dans Exchange Online Protection (EOP), où vous pouvez autoriser ou bloquer des expéditeurs usurpés spécifiques.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55a744cf2d226e72e8d84f6eb125f2baf9b9d3a0
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2a65400d1b48abfc6ac0e4dd38a8245dd7b4f87b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167262"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289686"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurer la veille contre l’usurpation d’adresse dans EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Dans les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’adresse par EOP à partir d’octobre 2018. EOP utilise la veille contre l’usurpation d’adresse dans le cadre de la protection globale de votre organisation contre le hameçonnage. Pour plus d’informations, voir [Protection contre l’usurpation d’adresse dans EOP.](anti-spoofing-protection.md)
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’adresse par EOP à partir d’octobre 2018. EOP utilise la veille contre l’usurpation d’adresse dans le cadre de la protection globale de votre organisation contre le hameçonnage. Pour plus d’informations, voir [Protection contre l’usurpation d’adresse dans EOP.](anti-spoofing-protection.md)
 
-Lorsqu’un expéditeur usurpe une adresse de messagerie, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie du courrier électronique à votre organisation. Les personnes malveillantes qui usurpent des expéditeurs pour envoyer du courrier indésirable ou du hameçonnage doivent être bloquées. Toutefois, il existe des scénarios où des expéditeurs légitimes usurpent l’adresse. Par exemple :
+Lorsqu’un expéditeur usurpe une adresse de messagerie, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie du courrier électronique à votre organisation. Les personnes malveillantes qui usurpent des expéditeurs pour envoyer du courrier indésirable ou du hameçonnage doivent être bloquées. Toutefois, il existe des scénarios dans lequel des expéditeurs légitimes usurpent l’adresse. Par exemple :
 
 - Scénarios légitimes pour l’usurpation d’un domaine interne :
 
@@ -70,7 +70,7 @@ Vous pouvez gérer la veille contre l’usurpation d’adresse dans le Centre de
 
   **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour obtenir nos paramètres recommandés pour la veille contre l’usurpation d’adresse, consultez les paramètres de stratégie [anti-hameçonnage par défaut d’EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)
@@ -82,7 +82,7 @@ Vous pouvez gérer la veille contre l’usurpation d’adresse dans le Centre de
 
 1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Stratégie** \> **Anti-courrier indésirable**.
 
-2. Dans la page **Paramètres anti-courrier** indésirable, cliquez sur Développer l’icône pour développer la stratégie ![ de veille contre ](../../media/scc-expand-icon.png) **l’usurpation d’adresse .**
+2. Dans la page **Paramètres anti-courrier** indésirable, cliquez sur Développer l’icône pour développer la stratégie de ![ veille contre ](../../media/scc-expand-icon.png) **l’usurpation d’adresse .**
 
    ![Sélectionner la stratégie de veille contre l’usurpation d’informations](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
@@ -96,13 +96,13 @@ Vous pouvez gérer la veille contre l’usurpation d’adresse dans le Centre de
    - **Vos domaines : expéditeurs** usurpant des utilisateurs dans vos domaines internes.
    - **Domaines externes : expéditeurs** usurpant des utilisateurs dans des domaines externes.
 
-5. Cliquez ![ sur Développer ](../../media/scc-expand-icon.png) l’icône dans **la colonne Usurpation d’usurpation d’accès.** Choisissez **Oui** pour autoriser l’expéditeur usurpé  ou non pour marquer le message comme usurpant l’usurpation d’adresse. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message vers le dossier **Courrier indésirable).** Pour plus d’informations, voir Paramètres d’usurpation [d’informations dans les stratégies anti-hameçonnage.](set-up-anti-phishing-policies.md#spoof-settings)
+5. Cliquez ![ sur Développer ](../../media/scc-expand-icon.png) l’icône dans **la colonne Usurpation d’usurpation d’accès.** Choisissez **Oui** pour autoriser l’expéditeur usurpé  ou non pour marquer le message comme usurpant l’usurpation. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message vers le dossier **Courrier indésirable).** Pour plus d’informations, voir Paramètres d’usurpation [d’informations dans les stratégies anti-hameçonnage.](set-up-anti-phishing-policies.md#spoof-settings)
 
    ![Screenshot showing the spoofed senders flyout, and whether the sender is allowed to spoof](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    Les colonnes et les valeurs que vous voyez sont expliquées dans la liste suivante :
 
-   - **Utilisateur usurpé :** compte d’utilisateur usurpé. Il s’agit de l’expéditeur du message dans l’adresse de provenance (également appelée adresse) qui est affichée dans les `5322.From` clients de messagerie. La validité de cette adresse n’est pas vérifiée par SPF.
+   - **Utilisateur usurpé :** compte d’utilisateur usurpé. Il s’agit de l’expéditeur du message dans l’adresse de provenance (également appelée adresse) qui `5322.From` s’affiche dans les clients de messagerie. La validité de cette adresse n’est pas vérifiée par SPF.
 
      - Sous **l’onglet** Vos domaines, la valeur contient une seule adresse de messagerie, ou si le serveur de messagerie source usurpe plusieurs comptes d’utilisateur, il en contient **plusieurs.**
 
@@ -121,13 +121,13 @@ Vous pouvez gérer la veille contre l’usurpation d’adresse dans le Centre de
       - **Échec :** l’expéditeur a échoué aux vérifications d’authentification de l’expéditeur EOP.
       - **Inconnu**: le résultat de ces vérifications est inconnu.
 
-   - **Décision définie par**: indique qui a déterminé si l’infrastructure d’envoi est autorisée à usurper l’utilisateur :
+   - **Décision définie par**: indique qui a déterminé si l’infrastructure d’envoi est autorisée à usurper l’usurpation de l’utilisateur :
        - **Stratégie de veille contre l’usurpation** d’informations (automatique)
        - **Administrateur** (manuel)
 
    - **Dernière vue**: date de la dernière réception d’un message de l’infrastructure d’envoi contenant l’utilisateur usurpé.
 
-   - **Autorisé à usurper l’usurpation d’accès ?**: les valeurs que vous voyez ici sont les :
+   - **Autorisé à usurper ? :** les valeurs que vous voyez ici sont :
      - **Oui**: les messages provenant de la combinaison de l’utilisateur usurpé et de l’infrastructure d’envoi sont autorisés et ne sont pas traités comme des e-mails usurpés.
      - **Non**: les messages provenant de la combinaison de l’utilisateur usurpé et de l’infrastructure d’envoi sont marqués comme usurpés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message vers le dossier **Courrier indésirable).** Pour plus d’informations, voir la section suivante.
 

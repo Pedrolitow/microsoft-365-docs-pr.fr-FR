@@ -15,19 +15,19 @@ ms.custom:
 description: Obtenez des réponses aux questions générales les plus courantes sur le service de filtrage du courrier électronique hébergé dans le cloud Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0a5712d2bfb110c3292dee06b456161599d40b1
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1a1ce845ef50d7485113c211b0a8d7770ea57815
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165486"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290020"
 ---
 # <a name="eop-general-faq"></a>Forum Aux Questions d’ordre général concernant Exchange Online Protection (EOP)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
--  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonome](exchange-online-protection-overview.md)
 
 Nous répondons ici aux questions générales les plus courantes sur le service de filtrage du courrier électronique hébergé dans le cloud Exchange Online Protection (EOP). Pour d'autres rubriques du Forum Aux Questions (FAQ), suivez les liens suivants :
 

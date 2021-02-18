@@ -12,19 +12,19 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Suivez ces recommandations pour Exchange Online Protection (EOP) autonome afin de vous configurer pour réussir et d’éviter les erreurs de configuration courantes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a38454ceaba7f95dff172335dc374530efca20a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c64a9592d93ef046ad1c023a49bf378ccf6cf503
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165930"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290832"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Meilleures pratiques pour la configuration d’EOP autonome
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
--  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonome](exchange-online-protection-overview.md)
 
 Suivez ces recommandations pour Exchange Online Protection (EOP) autonome afin de vous configurer pour réussir et d’éviter les erreurs de configuration courantes. Cette rubrique part de l'hypothèse que vous avez déjà effectué le processus de configuration. Si vous n'avez pas encore configuré EOP, consultez la rubrique [Configurer votre service EOP](set-up-your-eop-service.md).
 
@@ -62,7 +62,7 @@ Ces paramètres couvrent une gamme de fonctionnalités en dehors des stratégies
 |[Connectivité PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Désactivé|Désactivé|Disponible pour les utilisateurs de boîtes aux lettres ou les utilisateurs de messagerie (objets utilisateur renvoyés par la cmdlet [Get-User).](https://docs.microsoft.com/powershell/module/exchange/get-user)|
 |Utiliser [la veille contre l’usurpation](learn-about-spoof-intelligence.md) d’adresse pour ajouter des expéditeurs à votre liste d’adresses|Oui|Oui||
 |[Blocage du périphérie basé sur l’annuaire (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Activé|Activé|Type de domaine = Faisant autorité|
-|[Configurer l’authentification multifacteur pour tous les comptes d’administrateur](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Activé|Activé||
+|[Configurer l’authentification multifacteur pour tous les comptes d’administrateur](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|Activé|Activé||
 |
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
@@ -81,4 +81,4 @@ Lorsque vous déployez une nouvelle règle en production, commencez par sélecti
 
 Lors du déploiement d'une nouvelle règle, songez à ajouter l'action supplémentaire **Générer un rapport d'incident** pour contrôler son action.
 
-Dans les environnements hybrides où votre organisation inclut à la fois Exchange local et Exchange Online, prenons en compte les conditions que vous utilisez dans les règles de flux de messagerie. Si vous souhaitez que les règles s’appliquent à l’ensemble de l’organisation, assurez-vous d’utiliser les conditions disponibles dans Exchange local et dans Exchange Online. Bien que la plupart des conditions soient disponibles dans les deux environnements, certaines d’entre elles sont disponibles uniquement dans un environnement ou dans l’autre. Pour plus d’informations, [voir les règles de flux de messagerie (règles de transport) dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+Dans les environnements hybrides où votre organisation inclut à la fois Exchange local et Exchange Online, prenons en compte les conditions que vous utilisez dans les règles de flux de messagerie. Si vous souhaitez que les règles s’appliquent à l’ensemble de l’organisation, assurez-vous d’utiliser les conditions disponibles dans Exchange local et dans Exchange Online. Bien que la plupart des conditions soient disponibles dans les deux environnements, certaines d’entre elles sont disponibles uniquement dans un environnement ou dans l’autre. Pour plus d’informations, voir règles de flux de messagerie [(règles de transport) dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)

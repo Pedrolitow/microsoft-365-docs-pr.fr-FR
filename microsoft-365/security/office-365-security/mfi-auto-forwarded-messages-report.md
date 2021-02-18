@@ -12,25 +12,25 @@ ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Les administrateurs peuvent en savoir plus sur le rapport des messages transmis automatiquement dans le tableau de bord flux de messagerie du Centre de sécurité & conformité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c95c403e0b342bf0466c45804ba3975c492b8e1b
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 8f5e7088a88307576a054a1f6833101789d68d01
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150596"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290632"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Informations sur les messages transmis automatiquement dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Les informations sur les **messages** transmis automatiquement dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité affichent des informations sur les messages qui sont automatiquement transmis à partir de votre organisation à des destinataires dans des [domaines](https://protection.office.com) externes. [](mail-flow-insights-v2.md)
 
-![Widget de messages transmis automatiquement dans le Centre de conformité & sécurité](../../media/mfi-auto-forwarded-messages.png)
+![Widget de messages transmis automatiquement dans le Centre de sécurité & conformité](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Détails des messages automatiquement transmis
 
@@ -48,7 +48,7 @@ Lorsque vous cliquez sur le nombre de messages dans le widget, un volet volant s
   - **5 principaux domaines vers**
   - **Nouveaux domaines (dernière semaine)**
   - **5 principaux utilisateurs de forwarding**
-  - **Nouveaux utilisateurs (semaine dernière)**
+  - **Nouveaux utilisateurs (dernière semaine)**
   - Lien vers le rapport [de modifications de forwarding](mfi-new-users-forwarding-email.md#forwarding-modifications-report) pour plus d’informations.
 
 ![Volant de détails pour le rapport des messages transmis automatiquement dans le Centre de sécurité & conformité](../../media/mfi-auto-forwarded-messages-details.png)

@@ -17,21 +17,21 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 92229f0324eb9c05b233e5c4b0bc9f1bd7ab2e39
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ddcd6240cfc80350920999f9fc1e8ea188834553
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165558"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289710"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs sûrs dans EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) sans boîtes aux lettres Exchange Online, EOP offre plusieurs façons de s’assurer que les utilisateurs reçoivent des messages électroniques d’expéditeurs fiables. Ces options incluent les règles de flux de messagerie Exchange (également appelées règles de transport), les expéditeurs autorisés Outlook, la liste d’adresses IP autorisées (filtrage des connexions) et les listes d’expéditeurs autorisés ou de domaines autorisés dans les stratégies anti-courrier indésirable. Collectivement, vous pouvez voir ces options comme des _listes d’expéditeurs sûrs._
 
@@ -42,7 +42,7 @@ Les listes d’expéditeurs sûrs disponibles sont décrites dans la liste suiva
 3. Liste d’adresses IP permises (filtrage des connexions)
 4. Listes d’expéditeurs autorisés ou listes de domaines autorisés (stratégies anti-courrier indésirable)
 
-Les règles de flux de messagerie permettent de faire en sorte que seuls les messages autorisés soient autorisés. Les listes d’expéditeurs autorisés et de domaines autorisés dans les stratégies anti-courrier indésirable ne sont pas aussi sécurisées que la liste d’adresses IP autorisées, car le domaine de messagerie de l’expéditeur est facilement usurpé. Toutefois, la liste d’adresses IP  permises présente également un risque, car les messages électroniques provenant de n’importe quel domaine envoyé à partir de cette adresse IP contournent le filtrage du courrier indésirable.
+Les règles de flux de messagerie offrent la plus grande souplesse pour garantir que seuls les messages de droite sont autorisés. Les listes d’expéditeurs autorisés et de domaines autorisés dans les stratégies anti-courrier indésirable ne sont pas aussi sécurisées que la liste d’adresses IP autorisées, car le domaine de messagerie de l’expéditeur est facilement usurpé. Toutefois, la liste d’adresses IP  permises présente également un risque, car les messages électroniques provenant de n’importe quel domaine envoyé à partir de cette adresse IP contournent le filtrage du courrier indésirable.
 
 > [!IMPORTANT]
 >
@@ -52,13 +52,13 @@ Les règles de flux de messagerie permettent de faire en sorte que seuls les mes
 >
 > - Pour autoriser un domaine à envoyer des messages électroniques non authentifiés (contournement de la protection contre l’usurpation d’identité) sans contourner les vérifications anti-courrier indésirable et anti-programme malveillant, vous pouvez l’ajouter à la liste des expéditeurs autorisés [AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)
 >
-> - EOP et Outlook inspectent différentes propriétés de message pour déterminer l’expéditeur du message. Pour plus d’informations, voir la section Considérations pour [les courriers](#considerations-for-bulk-email) électroniques en nombre plus loin dans cet article.
+> - EOP et Outlook inspectent différentes propriétés de message pour déterminer l’expéditeur du message. Pour plus d’informations, voir la section Considérations pour [les courriers](#considerations-for-bulk-email) électroniques en masse plus loin dans cet article.
 
 En revanche, vous avez également plusieurs options pour bloquer le courrier provenant de sources spécifiques à l’aide de _listes d’expéditeurs bloqués._ Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Exchange Online PowerShell](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Recommandé) Utiliser des règles de flux de messagerie
 
-Les règles de flux de messagerie dans Exchange Online et EOP autonome utilisent des conditions et des exceptions pour identifier les messages, ainsi que des actions pour spécifier ce qui doit être fait pour ces messages. Pour plus d’informations, consultez la rubrique [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Les règles de flux de messagerie dans Exchange Online et EOP autonome utilisent des conditions et des exceptions pour identifier les messages et des actions pour spécifier ce qui doit être fait pour ces messages. Pour plus d’informations, consultez la rubrique [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
 L’exemple suivant suppose que vous avez besoin d’e-contoso.com pour ignorer le filtrage du courrier indésirable. Pour ce faire, configurez les paramètres suivants :
 
@@ -84,9 +84,9 @@ L’exemple suivant suppose que vous avez besoin d’e-contoso.com pour ignorer 
 
 3. **Conditions facultatives**:
 
-   - **L’expéditeur** \> **est interne/externe** \> **En dehors de** l’organisation : cette condition est implicite, mais vous pouvez l’utiliser pour prendre en compte les serveurs de messagerie locaux qui ne sont peut-être pas correctement configurés.
+   - **L’expéditeur** \> **est interne/externe** \> **En dehors de** l’organisation : cette condition est implicite, mais il est possible de l’utiliser pour prendre en compte les serveurs de messagerie locaux qui peuvent ne pas être correctement configurés.
 
-   - **L’objet ou le corps** \> **l’objet ou le corps inclut l’un de ces mots** \> : si vous pouvez limiter davantage les messages par mots clés ou expressions dans la ligne d’objet ou le corps du message, vous pouvez utiliser ces \<keywords\> mots comme condition.
+   - **Objet ou corps** \> **l’objet ou le corps inclut l’un de ces mots** \> : si vous pouvez limiter davantage les messages par mots clés ou expressions dans la ligne d’objet ou le corps du message, vous pouvez utiliser ces \<keywords\> mots comme condition.
 
 4. **Action**: configurez ces deux actions dans la règle :
 
@@ -103,9 +103,9 @@ L’exemple suivant suppose que vous avez besoin d’e-contoso.com pour ignorer 
 ## <a name="use-outlook-safe-senders"></a>Utiliser les expéditeurs sécurisés Outlook
 
 > [!CAUTION]
-> Cette méthode crée un risque élevé de remettre correctement des messages électroniques à la boîte de réception qui seraient autrement filtrés ; toutefois, les listes Des expéditeurs ou des domaines sûrs de l’utilisateur n’empêchent pas le filtrage des programmes malveillants ou des messages de hameçonnage à haut niveau de confiance.
+> Cette méthode crée un risque élevé de remettre correctement des messages électroniques à la boîte de réception qui seraient autrement filtrés . toutefois, les listes Des expéditeurs ou des domaines sûrs de l’utilisateur n’empêchent pas le filtrage des programmes malveillants ou des messages de hameçonnage à haut niveau de confiance.
 
-Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie des expéditeurs à la liste des expéditeurs sûrs dans la boîte aux lettres. Pour obtenir des instructions, voir Configurer les paramètres du courrier indésirable sur les boîtes aux lettres [Exchange Online dans Office 365.](configure-junk-email-settings-on-exo-mailboxes.md) Cela n’est pas souhaitable dans la plupart des cas, car les expéditeurs contournent certaines parties de la pile de filtrage. Bien que vous faites confiance à l’expéditeur, l’expéditeur peut toujours être compromis et envoyer du contenu malveillant. Il est préférable de laisser nos filtres faire ce qui est nécessaire pour vérifier chaque message, puis signaler le [faux positif/négatif](report-junk-email-messages-to-microsoft.md) à Microsoft si nos filtres se sont mal produits. Le contournement de la pile de filtrage interfère également avec [ZAP](zero-hour-auto-purge.md).
+Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie des expéditeurs à la liste des expéditeurs sûrs dans la boîte aux lettres. Pour obtenir des instructions, voir Configurer les paramètres du courrier indésirable sur les boîtes aux lettres [Exchange Online dans Office 365.](configure-junk-email-settings-on-exo-mailboxes.md) Cela n’est pas souhaitable dans la plupart des cas, car les expéditeurs contournent certaines parties de la pile de filtrage. Même si vous faites confiance à l’expéditeur, l’expéditeur peut toujours être compromis et envoyer du contenu malveillant. Il est préférable de laisser nos filtres faire ce qui est nécessaire pour vérifier chaque message, puis signaler le [faux positif/négatif](report-junk-email-messages-to-microsoft.md) à Microsoft si nos filtres se sont mal produits. Le contournement de la pile de filtrage interfère également avec [ZAP](zero-hour-auto-purge.md).
 
 Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs sûrs d’un utilisateur, le champ **d’en-tête X-Forefront-Antispam-Report** contient la valeur, ce qui indique que le filtrage du courrier indésirable, de l’usurpation d’adresse et du hameçonnage a été `SFV:SFE` contourné.
 
@@ -132,19 +132,19 @@ La limite maximale pour ces listes est d’environ 1 000 entrées ; cependant, v
 
 > [!CAUTION]
 >
-> - Cette méthode crée un risque élevé de remettre correctement des messages électroniques à la boîte de réception qui seraient autrement filtrés ; toutefois, les listes des expéditeurs autorisés ou des domaines autorisés n’empêchent pas le filtrage des programmes malveillants ou des messages d’hameçonnage à haut niveau de confiance.
+> - Cette méthode crée un risque élevé de remettre correctement des messages électroniques à la boîte de réception qui seraient autrement filtrés . toutefois, les listes des expéditeurs autorisés ou des domaines autorisés n’empêchent pas le filtrage des programmes malveillants ou des messages d’hameçonnage à haut niveau de confiance.
 >
 > - N’utilisez pas les domaines que vous possédez (également appelés domaines acceptés) ou les domaines populaires (par exemple, microsoft.com) dans les listes de domaines autorisés.
 
 ## <a name="considerations-for-bulk-email"></a>Considérations sur les messages électroniques en masse
 
-Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe de message contient les informations requises pour transmettre et remettre le message entre des serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’*en-tête de message*) et le corps du message. L’enveloppe du message est décrite dans la RFC 5321 et l’en-tête du message est décrit dans la RFC 5322. Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission du message et ne fait pas réellement partie du message.
+Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe de message contient les informations requises pour transmettre et remettre le message entre des serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’*en-tête de message*) et le corps du message. L’enveloppe de message est décrite dans la RFC 5321 et l’en-tête du message est décrit dans la RFC 5322. Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission du message et ne fait pas réellement partie du message.
 
 - L’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) est l’adresse de messagerie utilisée dans la `5321.MailFrom` transmission SMTP du message.  Cette adresse de messagerie est généralement enregistrée dans le champ **d’en-tête Return-Path** dans l’en-tête du message (bien qu’il soit possible pour l’expéditeur de désigner une autre adresse de messagerie **Return-Path).** Si le message ne peut pas être remis, il s’agit du destinataire de la non-remise (également appelée NDR ou message de non-remise).
 
 - L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse e-mail de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  
 
-Souvent, les adresses et les `5321.MailFrom` `5322.From` adresses sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé pour le compte d’une autre personne, les adresses peuvent être différentes. Cela se produit le plus souvent pour les messages électroniques en masse.
+Souvent, `5321.MailFrom` les adresses et les `5322.From` adresses sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé pour le compte d’une autre personne, les adresses peuvent être différentes. Cela se produit le plus souvent pour les messages électroniques en masse.
 
 Par exemple, supposons que Blue Yonder Airlines ait embauché Margie’s Travel pour envoyer ses messages électroniques publicitaires. Le message que vous recevez dans votre boîte de réception a les propriétés suivantes :
 
@@ -158,6 +158,6 @@ Pour empêcher le filtrage de ce message, vous pouvez suivre les étapes suivant
 
 - Ajoutez blueyonder@news.blueyonderairlines.com `5322.From` (l’adresse) en tant qu’expéditeur sécurisé Outlook.
 
-- [Utilisez une règle de flux de](#recommended-use-mail-flow-rules) messagerie avec une condition qui recherche des messages à partir de blueyonder@news.blueyonderairlines.com (l’adresse, blueyonder.airlines@margiestravel.com `5322.From` (le ), ou les `5321.MailFrom` deux.
+- [Utilisez une règle de flux de](#recommended-use-mail-flow-rules) messagerie avec une condition qui recherche les messages provenant de blueyonder@news.blueyonderairlines.com (l’adresse, blueyonder.airlines@margiestravel.com `5322.From` (le ), ou les `5321.MailFrom` deux.
 
 Pour plus d’informations, voir [Créer des listes d’expéditeurs sûrs dans EOP.](create-safe-sender-lists-in-office-365.md)

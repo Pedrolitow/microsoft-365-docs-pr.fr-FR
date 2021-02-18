@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 01/21/2021
 audience: ITPro
-ms.topic: How-to
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les clients Microsoft Defender pour Office 365 E5 et ATP P1 et ATP P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d’entité de messagerie.
-ms.openlocfilehash: 3b9198c9d91969d3b57f379d17de33a1c00d37f6
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 0a866b4d635e5c9e26b6fc065503b44ee2063e9f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143140"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289484"
 ---
 # <a name="the-email-entity-page"></a>Page Entité de messagerie
 
@@ -30,7 +30,7 @@ ms.locfileid: "50143140"
 - [Utiliser les onglets de page d’entité de messagerie](#use-email-entity-page-tabs)
 - [Nouvelle page de l’entité de messagerie](#new-to-the-email-entity-page)
 
-Les administrateurs de Microsoft Defender pour Office 365 (ou MDO) E5 et MDO P1 et P2 ont une vue à 360 degrés de la messagerie à l’aide de la **page** Entité de messagerie. Cette page de courrier électronique d’accès a été créée pour améliorer les informations livrées dans le volant « Détails des e-mails » de [l’Explorateur de menaces.](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer-views)
+Les administrateurs de Microsoft Defender pour Office 365 (ou MDO) E5 et MDO P1 et P2 ont une vue à 360 degrés de la messagerie à l’aide de la **page** Entité de messagerie. Cette page de courrier électronique d’accès a été créée pour améliorer les informations livrées dans le volant « Détails des e-mails » de [l’Explorateur de menaces.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Atteindre la page d’entité de messagerie
 
@@ -39,7 +39,7 @@ Le centre de sécurité et conformité Office (protection.office.com) existant o
 |Centre  |URL  |Navigation  |
 |---------|---------|---------|
 |Sécurité et conformité |protection.office.com | Threat Management > Explorer   |
-|Centre de sécurité Microsoft 365 |security.microsoft.com | Email & Collaboration > Explorer |
+|Centre de sécurité Microsoft 365 |security.microsoft.com | Email & Collaboration > Explorer |
 
 Dans l’Explorateur de menaces, sélectionnez l’objet d’un e-mail que vous examinez. Une barre d’or s’affiche en haut du volant du courrier électronique pour ce courrier. Cette invitation à la nouvelle page indique « Essayez notre nouvelle page d’entité de messagerie avec des données enrichies... ». Sélectionnez pour afficher la nouvelle page.
 
@@ -71,7 +71,7 @@ La structure est conçue pour être facile à lire et à parcourir en un coup d�
 Les onglets en haut de la page d’entité vous permettent d’examiner efficacement les messages électroniques.
 
 1. **Chronologie**: l’affichage de chronologie d’un e-mail (selon la chronologie de l’Explorateur de menaces) indique la remise d’origine aux événements de post-remise qui se produisent sur un e-mail. Pour les e-mails qui n’ont aucune action de post-remise, l’affichage affiche la ligne de remise d’origine dans l’affichage chronologique. Les événements tels que : la purge automatique heure zéro (ZAP), la correction, les clics d’URL et les événements provenant de sources telles que : système, administrateur et utilisateur, s’affichent ici, dans l’ordre dans lequel ils se sont produits.
-2. **Analyse**: l’analyse montre les champs qui aident les administrateurs à analyser un courrier électronique en profondeur. Pour les cas où les administrateurs doivent mieux comprendre la détection, l’expéditeur/le destinataire et les détails de l’authentification de messagerie, ils doivent utiliser l’onglet Analyse. Des liens pour les pièces jointes et les URL sont également trouvés sur cette page, sous « Entités associées ». Les pièces jointes et les menaces identifiées sont numéroées ici et un clic vous permet d’accéder directement aux pages pièces jointes et URL. Cet onglet dispose également d’une option d’affichage d’en-tête pour *afficher l’en-tête de l’e-mail.* Les administrateurs peuvent comparer les détails des en-têtes de courrier électronique, côte à côte avec les informations du panneau principal, pour plus de clarté.
+2. **Analyse**: l’analyse montre les champs qui aident les administrateurs à analyser un e-mail en profondeur. Pour les cas où les administrateurs doivent mieux comprendre la détection, l’expéditeur/destinataire et les détails de l’authentification de messagerie, ils doivent utiliser l’onglet Analyse. Des liens pour les pièces jointes et les URL sont également trouvés sur cette page, sous « Entités associées ». Les pièces jointes et les menaces identifiées sont numéroées ici et un clic vous permet d’accéder directement aux pages pièces jointes et URL. Cet onglet dispose également d’une option d’affichage d’en-tête pour *afficher l’en-tête de l’e-mail.* Les administrateurs peuvent comparer les détails des en-têtes de courrier électronique, côte à côte avec les informations du panneau principal, pour plus de clarté.
 3. **Pièces jointes**: examine les pièces jointes trouvées dans l’e-mail avec d’autres détails trouvés sur les pièces jointes. Le nombre de pièces jointes affichées est actuellement limité à 10. Notez que les détails de détonation pour les pièces jointes qui sont malveillantes sont également affichés ici.
 4. **URL : cet** onglet répertorie les URL trouvées dans l’e-mail avec d’autres détails sur les URL. Le nombre d’URL est limité à 10 pour l’instant, mais ces 10 url sont priorisées pour afficher d’abord les *URL malveillantes.* La hiér donc vous permet de gagner du temps et de deviner le travail. Les URL qui ont été trouvées comme malveillantes et détonées sont également affichées ici.
 5. **Courriers électroniques similaires**: cet onglet répertorie tous les messages électroniques similaires à *l’ID de message réseau +* combinaison de destinataires spécifiques à ce courrier électronique. La similarité est basée sur *le corps du message,* uniquement. Les déterminations réalisées sur les messages pour les classer comme « similaires » n’incluent pas de considération sur *les pièces jointes.*
@@ -90,13 +90,13 @@ Les administrateurs peuvent afficher un aperçu des e-mails dans les boîtes aux
 
 Ces détails sont spécifiques aux pièces jointes et URL des e-mails.
 
-Les utilisateurs voient les détails de détonation enrichis pour les pièces jointes malveillantes connues ou les liens hypertexte trouvés dans leurs boîtes aux lettres, y compris la chaîne de détonation, le résumé de la détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et détonation.
+Les utilisateurs voient s’afficher les détails enrichis de la détonation pour les pièces jointes malveillantes connues ou les liens hypertexte trouvés dans leurs boîtes aux lettres, y compris la chaîne de détonation, le résumé de la détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et détonée.
  
-- *Chaîne de détonation :* une seule désaération de fichier ou d’URL peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL impactés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.
+- *Chaîne de détonation :* une seule désaération de fichier ou d’URL peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL qui ont été causés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.
 - *Résumé de la détonation*: Fournit des informations sur :
     - Plage de temps de détonation.
     - Verdict du fichier joint, ou URL.
-    - Informations connexes (numéro de fichier, URL, ADRESSES ou domaines), qui sont d’autres entités examinées lors de la détonation.
+    - Informations connexes (numéro de fichier, URL, adresses IP ou domaines), qui sont d’autres entités examinées lors de la détonation.
 - *Capture d’écran de détonation*: cette capture d’écran montre la ou les captures d’écran prises pendant le processus de détonation.
 - *Détails de la détonation*: voici les détails de comportement exacts de chaque processus qui a eu lieu pendant la détonation.
 
@@ -116,7 +116,7 @@ Les utilisateurs voient les détails de détonation enrichis pour les pièces jo
     
 - *Règle de boîte aux* lettres indésirable : « Courrier indésirable » est une règle de boîte de réception masquée qui est activée par défaut dans chaque boîte aux lettres.
     - Lorsque la règle de courrier indésirable est activée sur la boîte aux lettres, Exchange Online Protection (EOP) est en mesure de déplacer des messages vers le courrier indésirable en fonction de certains critères. Le déplacement peut être basé sur l’action de verdict de filtrage du courrier indésirable Déplacer *le message* vers le dossier Courrier indésirable ou sur la liste des expéditeurs bloqués de la boîte aux lettres. La désactivation de la règle de courrier indésirable empêche la  remise de messages dans le dossier Courrier indésirable en fonction de la liste des expéditeurs sûrs de la boîte aux lettres.
-    - Lorsque la règle  de courrier indésirable est désactivée sur la boîte aux lettres, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le *message* vers le dossier Courrier indésirable ou la collection de listes sécurisées de la boîte aux lettres.
+    - Lorsque la règle  de courrier indésirable est désactivée sur la boîte aux lettres, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le *message* vers le dossier Courrier indésirable ou de la collection de listes sécurisées de la boîte aux lettres.
     
 - *Bulk Compliant Level (BCL) :* niveau de réclamation en bloc (BCL) du message. Une valeur BCL supérieure indique qu’un message en nombre est plus susceptible de générer des réclamations (résultat naturel si le courrier électronique est susceptible d’être du courrier indésirable).
     
@@ -135,7 +135,7 @@ Les utilisateurs voient les détails de détonation enrichis pour les pièces jo
 - Sender Policy Framework (**SPF)**: décrit les résultats de la vérification SPF du message. Les valeurs possibles peuvent être :
     - Pass (adresse IP) : vérification SPF du message passé et inclut l’adresse IP de l’expéditeur. Le client est autorisé à envoyer ou à relayer le courrier électronique avec le domaine de l’expéditeur.
     - Échec (adresse IP) : la vérification SPF du message a échoué et inclut l’adresse IP de l’expéditeur. Dans ce cas, on parle parfois d’échec sévère.
-    - Softfail (raison) : l’enregistrement SPF a désigné l’hôte comme n’étant pas autorisé à envoyer mais est en transition.
+    - Softfail (raison) : l’enregistrement SPF a désigné l’hôte comme n’étant pas autorisé à envoyer, mais est en transition.
     - Neutre : l’enregistrement SPF indique explicitement qu’il n’indique pas si l’adresse IP est autorisée à envoyer des messages.
     - Aucun : le domaine n’a pas d’enregistrement SPF ou l’enregistrement SPF n’est pas évalué comme un résultat.
     - Leror : une erreur temporaire s’est produite. Par exemple, une erreur DNS. Cette même vérification peut être effectuée ultérieurement.
@@ -152,4 +152,4 @@ Les utilisateurs voient les détails de détonation enrichis pour les pièces jo
     - Bestguesspass : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine, mais que s’il en existait un, la vérification DMARC aurait réussi.
     - Aucun : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine d’envoi dans le DNS.
 
-*Authentification* composite : il s’agit d’une valeur utilisée par Microsoft 365 pour combiner l’authentification de messagerie électronique telle que SPF, DKIM et DMARC, afin de déterminer si le message est authentifié. Il utilise le *domaine De :* du courrier comme base d’évaluation.
+*Authentification* composite : il s’agit d’une valeur utilisée par Microsoft 365 pour combiner l’authentification de messagerie électronique telle que SPF, DKIM et DMARC, afin de déterminer si le message est authentique. Il utilise le *domaine De :* du courrier comme base d’évaluation.

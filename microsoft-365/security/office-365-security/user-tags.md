@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs à l’aide de balises utilisateur dans Microsoft Defender pour Office 365 Plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les enquêtes dans Microsoft Defender pour Office 365 pour identifier rapidement les utilisateurs marqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ed91492e652773b3a48373df49b20d97887df6ee
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 62d858fe5962b94f536d4ccbd712e21bdd5caa57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931433"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290128"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "49931433"
 
 Les balises utilisateur sont des identificateurs pour des groupes spécifiques d’utilisateurs [dans Microsoft Defender pour Office 365.](office-365-atp.md) Il existe deux types de balises utilisateur :
 
-- **Balises système**: actuellement, [les comptes de priorité](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sont le seul type de balise système.
+- **Balises système**: actuellement, [les comptes de priorité](../../admin/setup/priority-accounts.md) sont le seul type de balise système.
 - **Balises personnalisées**: vous créez ces balises utilisateur vous-même.
 
 Si votre organisation dispose de Defender pour Office 365 Plan 2 (inclus dans votre abonnement ou en tant qu’complément), vous pouvez créer des balises utilisateur personnalisées en plus de l’utilisation de la balise de comptes prioritaires.
@@ -47,9 +47,9 @@ Cet article explique comment configurer des balises utilisateur dans le Centre d
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour aller directement à la page **des balises utilisateur,** ouvrez <https://protection.office.com/userTags> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **des balises utilisateur,** ouvrez <https://protection.office.com/userTags> .
 
-- Des autorisations doivent vous avoir été attribuées dans le Centre de sécurité et de conformité pour que vous puissiez effectuer les procédures décrites dans cet article.
+- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
   - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité.
   - Pour ajouter et supprimer des membres de balises utilisateur existantes, vous devez  être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Opérateur de sécurité
   - Pour accéder en lecture seule aux balises utilisateur,  vous devez être membre des groupes de rôles Lecteur global ou **Lecteur** de sécurité.
@@ -58,10 +58,10 @@ Cet article explique comment configurer des balises utilisateur dans le Centre d
 
   **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - La gestion des balises utilisateur est contrôlée par les rôles **Lecteur** de balises, **Collaborateur de** balise et Gestionnaire **de** balises.
 
-- Vous pouvez également gérer et surveiller les comptes prioritaires dans le Centre d’administration Microsoft 365. Pour obtenir des instructions, voir [Gérer et surveiller les comptes prioritaires.](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
+- Vous pouvez également gérer et surveiller les comptes prioritaires dans le Centre d’administration Microsoft 365. Pour obtenir des instructions, voir [Gérer et surveiller les comptes prioritaires.](../../admin/setup/priority-accounts.md)
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Utiliser le Centre de sécurité pour créer des balises utilisateur
 
@@ -100,11 +100,11 @@ Cet article explique comment configurer des balises utilisateur dans le Centre d
 
 2. Dans la page **Balises utilisateur** qui s’ouvre, sélectionnez la balise utilisateur à afficher (ne cliquez pas sur la case à cocher).
 
-3. Dans la liste des détails en lecture seule qui s’affiche, examinez les paramètres.
+3. Dans la volée de détails en lecture seule qui s’affiche, examinez les paramètres.
 
    Lorsque vous avez terminé, cliquez sur **Fermer**.
 
-## <a name="use-the-security-center-to-modify-user-tags"></a>Utiliser le Centre de sécurité pour modifier les balises utilisateur
+## <a name="use-the-security-center-to-modify-user-tags"></a>Utiliser le Centre de sécurité pour modifier des balises utilisateur
 
 1. Dans le Centre de sécurité, allez aux **balises utilisateur de gestion** \> **des menaces.**
 

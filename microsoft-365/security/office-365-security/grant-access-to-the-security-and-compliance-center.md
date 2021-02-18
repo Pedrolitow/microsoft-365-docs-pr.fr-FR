@@ -20,21 +20,21 @@ description: Des autorisations doivent être attribuées aux utilisateurs dans l
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e19825ce0f8224b2aee8e1419ef5d1ad425aadb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e1a619b184c575e3750b2499adc661627b4d27d6
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165414"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289876"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Des autorisations doivent être attribuées aux utilisateurs dans le Centre de sécurité & conformité avant de pouvoir gérer l’une de ses fonctionnalités de sécurité ou de conformité. En tant qu’administrateur global ou membre du groupe de rôles OrganizationManagement dans le Centre de sécurité & conformité, vous pouvez accorder ces autorisations aux utilisateurs. Ceux-ci pourront uniquement gérer les fonctionnalités de sécurité ou de conformité auxquelles vous leur donnez accès.
 
@@ -48,7 +48,7 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 - Les appartenances aux groupes de rôles ne sont pas partagées entre Exchange Online et le Centre de sécurité & conformité.
 
-- Les partenaires avec autorisation d’accès délégué (DAP) avec des autorisations Administrer au nom de (AOBO) ne peuvent pas accéder au Centre de sécurité & conformité.
+- Les partenaires avec autorisation d’accès délégué avec des autorisations Administrer de la part de (AOBO) ne peuvent pas accéder au Centre de sécurité & conformité.
 
 ## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utiliser le Centre de sécurité & conformité pour accorder à un autre utilisateur l’accès au Centre de sécurité & conformité
 
@@ -94,4 +94,4 @@ Pour vérifier que vous avez bien accordé l’accès au Centre de sécurité & 
   Get-RoleGroupMember -Identity "<RoleGroupName>"
   ```
 
-  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).
+  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-RoleGroupMember.](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)

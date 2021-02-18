@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender pour Office 365
-ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 0f45379bec52b54059c743823e2c8eb366f9bd59
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233577"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289388"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de la version d’essai de Microsoft Defender pour Office 365
 
@@ -57,7 +57,7 @@ Dans le cadre de la configuration de la version d’essai, les licences Defender
 
 ## <a name="permissions"></a>Autorisations
 
-Pour démarrer ou mettre fin à la version  d’essai, vous devez être membre des rôles Administrateur général ou Administrateur de sécurité dans Azure Active Directory.  Pour plus d’informations, voir [à propos des rôles d’administrateur.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+Pour démarrer ou mettre fin à la version  d’essai, vous devez être membre des rôles Administrateur général ou Administrateur de sécurité dans Azure Active Directory.  Pour plus d’informations, voir [à propos des rôles d’administrateur.](../../admin/add-users/about-admin-roles.md)
 
 ## <a name="additional-information"></a>Informations supplémentaires
 
@@ -98,7 +98,7 @@ Les expériences puissantes permettent d’identifier, de hiérarchiser et d’e
 - [Détections en temps réel et de l’Explorateur de menaces](threat-explorer.md)
 - [Rapports en temps réel dans Defender pour Office 365](view-reports-for-atp.md)
 - [Suivis des menaces : nouveautés et remarques](threat-trackers.md)
-- Intégration à [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- Intégration à [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ### <a name="response-and-remediation"></a>Réponse et correction
 

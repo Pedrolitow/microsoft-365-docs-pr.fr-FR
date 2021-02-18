@@ -20,18 +20,18 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques pour exécuter des attaques par hameçonnage et par mot de passe simulés dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d3d55c17e5d77ee18bd822899fea2f64136e1a3
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 1e877900698d033cb99154b31e32fa04ff7d1010
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233599"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289580"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulateur d’attaques dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**S’applique** [à Microsoft Defender pour Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+**S’applique** [à Microsoft Defender pour Office 365 plan 2](office-365-atp.md)
 
 Si votre organisation dispose de Microsoft Defender pour Office [](office-365-ti.md)365 Plan 2, qui inclut des fonctionnalités d’investigation et de réponse aux menaces, vous pouvez utiliser le Simulateur d’attaques dans le Centre de sécurité & conformité pour exécuter des scénarios d’attaque réalistes dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre ligne de bas de page. Pour en savoir plus, lisez cet article.
 
@@ -47,7 +47,7 @@ Si votre organisation dispose de Microsoft Defender pour Office [](office-365-ti
 
 - Vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
-- Votre compte doit être configuré pour l’authentification multifacteur (MFA) afin que vous puissiez créer et gérer des campagnes dans le Simulateur d’attaques. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+- Votre compte doit être configuré pour l’authentification multifacteur (MFA) afin que vous puissiez créer et gérer des campagnes dans le Simulateur d’attaques. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 - Les campagnes d’hameçonnage collectent et traitent des événements sur une durée de 30 jours. L’historique des données de la campagne est disponible pendant un maximum de 90 jours après le lancement de la campagne.
 

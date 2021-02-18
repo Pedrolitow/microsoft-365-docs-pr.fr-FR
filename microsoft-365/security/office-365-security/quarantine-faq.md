@@ -19,21 +19,21 @@ description: Les administrateurs peuvent afficher les questions fréquemment pos
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 019f1c103ef1aaf7641072cd1259d22e83f0de4c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 8496ae4f1702bb63328be0c494d8829c9ddd8cf2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166926"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289400"
 ---
 # <a name="quarantined-messages-faq"></a>FAQ sur les messages mis en quarantaine
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Cette rubrique fournit des questions fréquemment posées et des réponses sur les messages électroniques mis en quarantaine pour les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange Online ou les organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online.
 
@@ -53,7 +53,7 @@ Par défaut, les messages classés comme courrier indésirable ou courrier en ma
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>Comment accorder aux utilisateurs l’accès à la mise en quarantaine ?
 
-Un utilisateur doit avoir un compte valide pour accéder à ses propres messages en quarantaine. EOP autonome exige que les utilisateurs soient représentés en tant qu’utilisateurs de messagerie dans EOP (créés ou créés manuellement via la synchronisation d’annuaires). Pour plus d’informations sur la gestion des utilisateurs dans les environnements EOP autonomes, voir Gérer les utilisateurs [de messagerie dans EOP.](manage-mail-users-in-eop.md)
+Un utilisateur doit avoir un compte valide pour accéder à ses propres messages en quarantaine. EOP autonome exige que les utilisateurs soient représentés en tant qu’utilisateurs de messagerie dans EOP (créés ou créés manuellement via la synchronisation d’annuaires). Pour plus d’informations sur la gestion des utilisateurs dans des environnements EOP autonomes, voir Gérer les utilisateurs [de messagerie dans EOP.](manage-mail-users-in-eop.md)
 
 ## <a name="what-messages-can-end-users-access-in-quarantine"></a>Quels messages les utilisateurs finaux peuvent-ils accéder en quarantaine ?
 

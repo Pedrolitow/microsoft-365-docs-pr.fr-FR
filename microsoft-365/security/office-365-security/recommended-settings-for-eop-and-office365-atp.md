@@ -16,24 +16,24 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les extras que vous obtenez si vous utilisez également Defender pour Office 365 ?
+description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous souhaitez être plus strict ? Quels sont les extras que vous obtenez si vous utilisez également Defender pour Office 365 ?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a609a069e0e35b673b0902f2600f9c5433a14bb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d635a28c41c9aceb0e3c499301156e53a1e2fa68
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166938"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289352"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour la sécurité d’EOP et de Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **Exchange Online Protection (EOP)** est le cœur de la sécurité pour les abonnements Microsoft 365 et permet d’empêcher les e-mails malveillants d’atteindre les boîtes de réception de vos employés. Toutefois, avec de nouvelles attaques plus sophistiquées émergentes chaque jour, des protections améliorées sont souvent nécessaires. **Microsoft Defender pour Office 365** Les plans 1 ou Plan 2 contiennent des fonctionnalités supplémentaires qui donnent aux administrateurs davantage de couches de sécurité, de contrôle et d’examen.
 
@@ -65,7 +65,7 @@ Pour créer et configurer des stratégies anti-courrier indésirable, voir Confi
 |**Action de détection du courrier indésirable** à niveau de confiance élevé <p> _HighConfidenceSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |**Action de détection de courrier d’hameçonnage** <p> _PhishSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |**Action de détection de courrier de hameçonnage** à haut niveau de confiance <p> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
-|**Action de détection de courrier électronique** en bloc <p> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
+|**Action de détection de courrier en** bloc <p> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |Seuil des courriers électroniques en bloc <p> _BulkThreshold_|7 |6 |4 |Pour plus d’informations, [voir Niveau de réclamation en bloc (BCL) dans Office 365.](bulk-complaint-level-values.md)|
 |Période de rétention de mise en quarantaine <p> _QuarantineRetentionPeriod_|15 jours|30 jours|30 jours||
 |**Conseils de sécurité** <p> _InlineSafetyTipsEnabled_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
@@ -145,7 +145,7 @@ Pour plus d’informations sur ces paramètres, voir [Paramètres d’usurpation
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Activer la protection contre l’usurpation d’usurpation** <p> _EnableSpoofIntelligence_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
-|**Activer l’expéditeur non authentifié** <p> _EnableUnauthenticatedSender_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, [voir Paramètres d’usurpation d’informations dans les stratégies anti-hameçonnage.](set-up-anti-phishing-policies.md)|
+|**Activer l’expéditeur non authentifié** <p> _EnableUnauthenticatedSender_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, voir Paramètres d’usurpation [d’informations dans les stratégies anti-hameçonnage.](set-up-anti-phishing-policies.md)|
 |**Si un e-mail est envoyé par une personne qui n’est pas autorisée à usurper votre domaine** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs bloqués dans la [veille contre l’usurpation d’adresse.](learn-about-spoof-intelligence.md)|
 |
 
@@ -155,7 +155,7 @@ Des avantages supplémentaires en matière de sécurité sont ajoutés avec un a
 
 > [!IMPORTANT]
 >
-> - La stratégie anti-hameçonnage par défaut dans Microsoft Defender pour Office 365 fournit une [protection](set-up-anti-phishing-policies.md#spoof-settings) contre l’usurpation d’adresse et une intelligence des boîtes aux lettres pour tous les destinataires. Toutefois, les autres fonctionnalités disponibles de [protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) contre l’emprunt d’identité et les paramètres avancés ne sont pas [configurés](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ou activés dans la stratégie par défaut. Pour activer toutes les fonctionnalités de protection, modifiez la stratégie anti-hameçonnage par défaut ou créez des stratégies anti-hameçonnage supplémentaires.
+> - La stratégie anti-hameçonnage par défaut dans Microsoft Defender pour Office 365 fournit une [protection](set-up-anti-phishing-policies.md#spoof-settings) contre l’usurpation d’adresse et une intelligence des boîtes aux lettres pour tous les destinataires. Toutefois, les autres fonctionnalités de [protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) contre l’emprunt d’identité disponibles et les paramètres avancés ne sont pas [configurés](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ou activés dans la stratégie par défaut. Pour activer toutes les fonctionnalités de protection, modifiez la stratégie anti-hameçonnage par défaut ou créez des stratégies anti-hameçonnage supplémentaires.
 >
 > - Il n’existe aucune stratégie de liens sécurisés ou de pièces jointes sécurisées par défaut qui protège automatiquement tous les destinataires de l’organisation. Pour obtenir les protections, vous devez créer au moins une stratégie de liens sécurisés et une stratégie de pièces jointes sécurisées.
 >
@@ -180,11 +180,11 @@ Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d�
 |Domaines protégés : inclure **des domaines personnalisés** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Désactivé <p> `$false` <p> aucune|Activé <p> `$true` <p> \<list of domains\>|Activé <p> `$true` <p> \<list of domains\>|En fonction de votre organisation, nous vous recommandons d’ajouter des domaines (domaines d’expéditeur) que vous ne possédez pas, mais avec qui vous interagissez fréquemment.|
 |Utilisateurs protégés : **si le courrier électronique est envoyé par un utilisateur dont l’identité est usurpée** <p> _TargetedUserProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre le message en quarantaine** <p> `Quarantine`|**Mettre le message en quarantaine** <p> `Quarantine`||
 |Domaines protégés : si le courrier électronique est envoyé par un domaine **dont l’identité est usurpée** <p> _TargetedDomainProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre le message en quarantaine** <p> `Quarantine`|**Mettre le message en quarantaine** <p> `Quarantine`||
-|**Afficher les conseils pour les utilisateurs dont l’identité est usurpée** <p> _EnableSimilarUsersSafetyTips_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
+|**Afficher le conseil pour les utilisateurs dont l’identité est usurpée** <p> _EnableSimilarUsersSafetyTips_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Afficher le conseil pour les domaines dont l’identité est usurpée** <p> _EnableSimilarDomainsSafetyTips_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Afficher les conseils pour les caractères inhabituels** <p> _EnableUnusualCharactersSafetyTips_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Activer l’intelligence des boîtes aux lettres ?** <p> _EnableMailboxIntelligence_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
-|**Activer la protection contre l’usurpation d’identité basée sur l’intelligence des boîtes aux lettres** <p> _EnableMailboxIntelligenceProtection_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
+|**Activer la protection contre l’emprunt d’identité basée sur l’intelligence des boîtes aux lettres** <p> _EnableMailboxIntelligenceProtection_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Si le courrier électronique est envoyé par un utilisateur dont l’identité est protégée par l’intelligence des boîtes aux lettres** <p> _MailboxIntelligenceProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`||
 |**Expéditeurs approuvés** <p> _ExcludedSenders_|Aucun|Aucun|Aucun|En fonction de votre organisation, nous vous recommandons d’ajouter des utilisateurs marqués de manière incorrecte comme hameçonnage en raison de l’emprunt d’identité uniquement et non d’autres filtres.|
 |**Domaines approuvés** <p> _ExcludedDomains_|Aucun|Aucun|Aucun|En fonction de votre organisation, nous vous recommandons d’ajouter des domaines qui sont marqués de manière incorrecte comme hameçonnage en raison de l’emprunt d’identité uniquement et non d’autres filtres.|
@@ -246,7 +246,7 @@ Dans PowerShell, vous utilisez les cmdlets [New-SafeLinksPolicy](https://docs.mi
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
-|**Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages** <p> _IsEnabled_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
+|**Sélectionner l’action pour les URL potentiellement malveillantes inconnues dans les messages** <p> _IsEnabled_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft Teams** <p> _EnableSafeLinksForTeams_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers** <p> _ScanUrls_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Attendre la fin de l’analyse de l’URL avant de remettre le message** <p> _DeliverMessageAfterScan_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
@@ -270,7 +270,7 @@ Dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](https://docs.mic
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Activé <p> `$true`|Activé <p> `$true`||
-|**Activer les documents sécurisés pour les clients Office** <p> _EnableSafeDocs_|Activé <p> `$true`|Activé <p> `$true`|Ce paramètre est disponible uniquement avec les licences de sécurité Microsoft 365 E5 ou Microsoft 365 E5. Pour plus d’informations, [voir Documents sécurisés dans Microsoft Defender pour Office 365.](safe-docs.md)|
+|**Activer les documents sécurisés pour les clients Office** <p> _EnableSafeDocs_|Activé <p> `$true`|Activé <p> `$true`|Ce paramètre est uniquement disponible avec les licences de sécurité Microsoft 365 E5 ou Microsoft 365 E5. Pour plus d’informations, [voir Documents sécurisés dans Microsoft Defender pour Office 365.](safe-docs.md)|
 |**Autoriser les utilisateurs à cliquer dans le affichage protégé même si les documents sécurisés ont identifié le fichier comme malveillant** <p> _AllowSafeDocsOpen_|Désactivé <p> `$false`|Désactivé <p> `$false`|Ce paramètre est lié aux documents sécurisés.|
 |
 

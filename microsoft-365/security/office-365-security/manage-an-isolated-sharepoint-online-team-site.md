@@ -8,7 +8,6 @@ manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
@@ -16,17 +15,23 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: Gérez un site d’équipe SharePoint Online isolé, ajoutez de nouveaux utilisateurs et groupes, supprimez des utilisateurs et des groupes et créez un sous-dossier de documents avec des autorisations personnalisées.
-ms.openlocfilehash: 1e244738071b434efd09e8fd700462bbef7e116a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 20e354de77b70ea69d69e201bd3b1d40ea32cc5b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616763"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289520"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Gestion d’un site d’équipe SharePoint Online isolé
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 (plan 1)](office-365-atp.md)
+- SharePoint Online 
 
  **Résumé :** Découvrez comment gérer votre site d'équipe SharePoint Online isolé.
 
@@ -42,13 +47,13 @@ Lorsqu’un nouvel utilisateur rejoint le site, vous devez choisir son niveau de
 
 - Consultation : ajoutez le compte de l'utilisateur au groupe d'accès Visiteurs du site
 
-Si vous gérez des comptes d’utilisateur et des groupes par le biais des services de domaine Active Directory (AD DS), ajoutez les utilisateurs appropriés aux groupes d’accès appropriés en utilisant vos procédures de gestion des utilisateurs et des groupes AD DS normales et attendez la synchronisation avec votre abonnement.
+Si vous gérez des comptes d’utilisateurs et des groupes via les services de domaine Active Directory (AD DS), ajoutez les utilisateurs appropriés aux groupes d’accès appropriés à l’aide de vos procédures normales de gestion des utilisateurs et des groupes AD DS et attendez la synchronisation avec votre abonnement.
 
-Si vous gérez des comptes d’utilisateur et des groupes via Microsoft 365, vous pouvez utiliser le centre d’administration Microsoft 365 ou Microsoft PowerShell :
+Si vous gérez des comptes d’utilisateurs et des groupes via Microsoft 365, vous pouvez utiliser le Centre d’administration Microsoft 365 ou Microsoft PowerShell :
 
-- Pour le centre d’administration Microsoft 365, connectez-vous à l’aide d’un compte d’utilisateur auquel a été attribué le rôle administrateur de compte d’utilisateur ou administrateur de société et utilisez des groupes pour ajouter les utilisateurs appropriés aux groupes d’accès appropriés.
+- Pour le Centre d’administration Microsoft 365, connectez-vous avec un compte d’utilisateur ayant le rôle Administrateur de compte d’utilisateur ou Administrateur d’entreprise et utilisez les groupes pour ajouter les utilisateurs appropriés aux groupes d’accès appropriés.
 
-- Pour PowerShell, [Connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Pour ajouter un compte d'utilisateur à un groupe d'accès en utilisant son nom d'utilisateur principal (UPN), exécutez le bloc de commandes PowerShell suivant :
+- Pour PowerShell, [connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) Pour ajouter un compte d'utilisateur à un groupe d'accès en utilisant son nom d'utilisateur principal (UPN), exécutez le bloc de commandes PowerShell suivant :
 
 ```powershell
 $userUPN="<UPN of the user account>"
@@ -74,13 +79,13 @@ Pour ajouter un accès à un groupe, vous devez choisir le niveau de participati
 
 - Consultation : ajoutez le groupe d'utilisateurs au groupe d'accès Visiteurs du site
 
-Si vous gérez des comptes d’utilisateur et des groupes via AD DS, ajoutez les groupes appropriés aux groupes appropriés à l’aide de vos procédures de gestion des utilisateurs et des groupes AD DS normales, puis attendez la synchronisation avec votre abonnement.
+Si vous gérez des comptes d’utilisateurs et des groupes via AD DS, ajoutez les groupes appropriés aux groupes appropriés à l’aide de vos procédures de gestion normales des utilisateurs et des groupes AD DS et attendez la synchronisation avec votre abonnement.
 
-Si vous gérez des comptes d’utilisateur et des groupes via Office 365, vous pouvez utiliser le centre d’administration Microsoft 365 ou PowerShell :
+Si vous gérez des comptes d’utilisateurs et des groupes via Office 365, vous pouvez utiliser le Centre d’administration Microsoft 365 ou PowerShell :
 
-- Pour le centre d’administration Microsoft 365, connectez-vous à l’aide d’un compte d’utilisateur auquel a été attribué le rôle administrateur de compte d’utilisateur ou administrateur de société et utilisez des groupes pour ajouter les groupes appropriés aux groupes d’accès appropriés.
+- Pour le Centre d’administration Microsoft 365, connectez-vous avec un compte d’utilisateur ayant le rôle Administrateur de compte d’utilisateur ou Administrateur d’entreprise et utilisez les groupes pour ajouter les groupes appropriés aux groupes d’accès appropriés.
 
-- Pour PowerShell, [Connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+- Pour PowerShell, [connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
  Ensuite, utilisez les commandes PowerShell suivantes :
 
 ```powershell
@@ -99,13 +104,13 @@ Lorsque l'accès d'un utilisateur doit être supprimé du site, supprimez-le du 
 
 - Consultation : supprimez le compte d'utilisateur du groupe d'accès Visiteurs du site
 
-Si vous gérez des comptes d’utilisateur et des groupes via AD DS, supprimez les utilisateurs appropriés des groupes d’accès appropriés à l’aide de vos procédures de gestion des utilisateurs et des groupes AD DS normales, puis attendez la synchronisation avec votre abonnement.
+Si vous gérez des comptes d’utilisateurs et des groupes via AD DS, supprimez les utilisateurs appropriés des groupes d’accès appropriés à l’aide de vos procédures normales de gestion des utilisateurs et des groupes AD DS et attendez la synchronisation avec votre abonnement.
 
-Si vous gérez des comptes d’utilisateur et des groupes via Office 365, vous pouvez utiliser le centre d’administration Microsoft 365 ou PowerShell :
+Si vous gérez des comptes d’utilisateurs et des groupes via Office 365, vous pouvez utiliser le Centre d’administration Microsoft 365 ou PowerShell :
 
-- Pour le centre d’administration Microsoft 365, connectez-vous à l’aide d’un compte d’utilisateur auquel a été attribué le rôle administrateur de compte d’utilisateur ou administrateur de société et utilisez des groupes pour supprimer les utilisateurs appropriés des groupes d’accès appropriés.
+- Pour le Centre d’administration Microsoft 365, connectez-vous avec un compte d’utilisateur ayant le rôle Administrateur de compte d’utilisateur ou Administrateur d’entreprise et utilisez des groupes pour supprimer les utilisateurs appropriés des groupes d’accès appropriés.
 
-- Pour PowerShell, [Connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+- Pour PowerShell, [connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 Pour supprimer un compte d'utilisateur d'un groupe d'accès en utilisant son UPN, exécutez le bloc de commandes PowerShell suivant :
 
 ```powershell
@@ -132,13 +137,13 @@ Pour supprimer l’accès d’un groupe, supprimez le groupe du groupe d’accè
 
 - Consultation : supprimez le groupe du groupe d'accès Visiteurs du site
 
-Si vous gérez des comptes d’utilisateur et des groupes par le biais de Windows Server Active Directory, supprimez les groupes appropriés des groupes d’accès appropriés à l’aide de vos procédures de gestion des utilisateurs et des groupes AD DS normales, puis attendez la synchronisation avec votre abonnement.
+Si vous gérez des comptes d’utilisateurs et des groupes via Windows Server Active Directory, supprimez les groupes appropriés des groupes d’accès appropriés à l’aide de vos procédures normales de gestion des utilisateurs et des groupes AD DS et attendez la synchronisation avec votre abonnement.
 
-Si vous gérez des comptes d’utilisateur et des groupes via Office 365, vous pouvez utiliser le centre d’administration Microsoft 365 ou PowerShell :
+Si vous gérez des comptes d’utilisateurs et des groupes via Office 365, vous pouvez utiliser le Centre d’administration Microsoft 365 ou PowerShell :
 
-- Pour le centre d’administration Microsoft 365, connectez-vous à l’aide d’un compte d’utilisateur auquel a été attribué le rôle administrateur de compte d’utilisateur ou administrateur de société et utilisez des groupes pour supprimer les groupes appropriés des groupes d’accès appropriés.
+- Pour le Centre d’administration Microsoft 365, connectez-vous avec un compte d’utilisateur ayant le rôle Administrateur de compte d’utilisateur ou Administrateur d’entreprise et utilisez les groupes pour supprimer les groupes appropriés des groupes d’accès appropriés.
 
-- Pour PowerShell, [Connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+- Pour PowerShell, [connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 Pour supprimer un groupe d’un groupe d’accès en utilisant son nom d’affichage, exécutez le bloc de commandes PowerShell suivant :
 
 ```powershell
@@ -153,7 +158,7 @@ Il arrive que des utilisateurs travaillant dans un site isolé aient besoin d'un
 
 Pour créer un sous-dossier de documents avec des autorisations personnalisées, procédez comme suit :
 
-1. Connectez-vous à un compte membre du groupe d’accès administrateurs du site. Pour obtenir de l’aide, consultez [Où se connecter à Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous à un compte membre du groupe d’accès Administrateurs pour le site. Pour obtenir de l’aide, consultez [Où se connecter à Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Accédez au site d'équipe isolé, puis cliquez sur **Documents**.
 

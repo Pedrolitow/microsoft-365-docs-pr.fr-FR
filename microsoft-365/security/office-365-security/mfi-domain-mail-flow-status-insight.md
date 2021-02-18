@@ -14,21 +14,21 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu de l’état du flux de messagerie de domaine supérieur dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour résoudre les problèmes de flux de messagerie liés à leurs enregistrements MX.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df0f571d29d72b23e7b2e210b61a4fb1676175aa
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 9ecda78047384a581a1043d0049b8dd25fadbe27
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150206"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290620"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Informations sur l’état du flux de messagerie du domaine dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **L’aperçu de** l’état [](mail-flow-insights-v2.md) du flux de messagerie de domaine supérieur dans le tableau de bord flux de messagerie dans le Centre de sécurité [&](https://protection.office.com) conformité vous donne l’état actuel du flux de messagerie pour votre organisation.
 
@@ -36,7 +36,7 @@ Cette information vous permet d’identifier et de dépanner les domaines qui re
 
 ![Widget d’état de flux de domaine supérieur dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-Lorsque vous cliquez sur Afficher les  **détails** dans le widget, un flyout d’état de domaine s’affiche pour vous fournir plus de détails sur l’état de chaque domaine :
+Lorsque vous cliquez sur Afficher les  **détails** dans le widget, un volant d’état de domaine s’affiche et vous indique plus de détails sur l’état de chaque domaine :
 
 - **Domaine**
 - **Enregistrement MX précédent**
@@ -48,7 +48,7 @@ Lorsque vous cliquez sur Afficher les  **détails** dans le widget, un flyout d�
 
 Vous pouvez cliquer **sur Afficher plus** pour afficher les mêmes informations pour d’autres domaines.
 
-![Volant d’informations dans l’aperçu de l’état du flux de messagerie du domaine Supérieur](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+![Flux de détails dans l’aperçu de l’état du flux de messagerie de domaine supérieur](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
 ## <a name="see-also"></a>Voir aussi
 

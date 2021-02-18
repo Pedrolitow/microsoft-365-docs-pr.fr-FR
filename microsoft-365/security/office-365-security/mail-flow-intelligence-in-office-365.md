@@ -14,23 +14,23 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés renseignements sur le flux de messagerie).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 864b69bf650a4e460376ae988a9ce4abc4c61ad4
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 32a98459ce3d3494e576b10d5c5b097393ee2335
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167070"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289662"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de courriers dans EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou les organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour router les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router des messages de Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas remettre ces messages via le connecteur, ils sont mis en file d’attente dans Microsoft 365. Microsoft 365 continuera à réessayer de remise pour chaque message pendant 24 heures. Au bout de 24 heures, le message mis en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une non-remise (également appelée rapport de non-remise).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour router les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router des messages de Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas remettre ces messages via le connecteur, ils sont mis en file d’attente dans Microsoft 365. Microsoft 365 continuera à réessayer de remise pour chaque message pendant 24 heures. Au bout de 24 heures, le message mis en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une non-remise (également appelée rapport de non-remise).
 
 Microsoft 365 génère une erreur lorsqu’un message ne peut pas être remis à l’aide d’un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cet article. Collectivement, les erreurs de mise en file d’accès et de notification pour les messages non transmis envoyés via des connecteurs sont appelées informations de _flux de messagerie._
 
@@ -42,7 +42,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a tenté de se con
 
 - Votre domaine a expiré récemment, l'enregistrement MX ne peut donc pas être extrait.
 
-- L’enregistrement MX de votre domaine a récemment été modifié et les serveurs DNS ont encore mis en cache les informations DNS de votre domaine.
+- L’enregistrement MX de votre domaine a récemment été modifié et les serveurs DNS ont toujours mis en cache les informations DNS de votre domaine.
 
 ### <a name="how-do-i-fix-error-code-450-44312"></a>Comment corriger le code d’erreur 450 4.4.312 ?
 
@@ -56,7 +56,7 @@ En règle générale, cela signifie que Microsoft 365 ne peut pas se connecter a
 
 - Votre serveur de messagerie local est en panne.
 
-- Une erreur s’est produite dans les paramètres d’hôte intelligent du connecteur. Microsoft 365 tente donc de se connecter à une adresse IP erronée.
+- Une erreur s’est produite dans les paramètres d’hôte intelligent du connecteur, de sorte que Microsoft 365 tente de se connecter à une adresse IP erronée.
 
 ### <a name="how-do-i-fix-error-code-450-44315"></a>Comment corriger le code d’erreur 450 4.4.315 ?
 
@@ -70,7 +70,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Comment corriger le code d’erreur 450 4.4.316 ?
 
-- Si vous avez des boîtes aux lettres dans votre environnement local, vous devez modifier les paramètres de votre pare-feu pour autoriser les connexions entre les adresses IP Microsoft 365 sur le port TCP 25 et vos serveurs de messagerie locaux. Pour obtenir la liste des adresses IP Microsoft 365, voir URL et [plages d’adresses IP Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
+- Si vous avez des boîtes aux lettres dans votre environnement local, vous devez modifier les paramètres de votre pare-feu pour autoriser les connexions entre les adresses IP Microsoft 365 sur le port TCP 25 et vos serveurs de messagerie locaux. Pour obtenir la liste des adresses IP Microsoft 365, voir URL et [plages d’adresses IP Microsoft 365.](../../enterprise/urls-and-ip-address-ranges.md)
 
 - Si aucun autre message ne doit être remis à  votre environnement local, cliquez sur Corriger maintenant dans l’alerte pour que Microsoft 365 puisse rejeter immédiatement les messages avec des destinataires non valides. Cette action réduira le risque de dépasser le quota de destinataires non valides de votre organisation, ce qui peut avoir des répercussions négatives sur la remise normale des messages. Vous pouvez également suivre les instructions suivantes pour résoudre manuellement le problème :
 
@@ -134,7 +134,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
 ### <a name="how-do-i-fix-error-code-450-47320"></a>Comment corriger le code d’erreur 450 4.7.320 ?
 
-- Corrigez le certificat ou les paramètres sur le connecteur afin que les messages mis en file d’attente dans Microsoft 365 soient remis.
+- Corrigez le certificat ou les paramètres sur le connecteur afin que les messages en file d’attente dans Microsoft 365 soient remis.
 
 - Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 

@@ -19,30 +19,30 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les e-mails provenant de serveurs de messagerie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef81d602e1f6da368e9d469bf1deaf0ef2c0a6af
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c6ec8b4adcdda692ee561f7d50bacf0511642269
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165750"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290044"
 ---
 # <a name="configure-connection-filtering"></a>Configurer le filtrage des connexions
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
 Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) sans boîtes aux lettres Exchange Online, vous utilisez le filtrage des connexions dans EOP (en particulier, la stratégie de filtrage des connexions par défaut) pour identifier les serveurs de messagerie source bons ou mauvais par leurs adresses IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
 
 - **Liste d’adresses IP** permises : ignorez le filtrage du courrier indésirable pour tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Pour les scénarios où le filtrage du courrier indésirable peut encore se produire sur les messages provenant de ces sources, consultez la section [Scénarios](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) dans lequel les messages provenant de sources de la liste d’adresses IP sont toujours filtrés plus loin dans cet article. Pour plus d’informations sur la façon dont la liste d’adresses IP permises doit s’intégrer dans votre stratégie globale d’expéditeurs sûrs, voir Créer des listes d’expéditeurs sûrs [dans EOP.](create-safe-sender-lists-in-office-365.md)
 
-- **Liste d’adresses IP** bloqués : bloquez tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Les messages entrants sont rejetés, ne sont pas marqués comme courrier indésirable et aucun filtrage supplémentaire ne se produit. Pour plus d’informations sur la façon dont la liste d’adresses IP bloquées doit tenir dans votre stratégie globale des expéditeurs bloqués, voir Créer des listes d’expéditeurs bloqués [dans EOP.](create-block-sender-lists-in-office-365.md)
+- **Liste d’adresses IP** bloqués : bloquez tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Les messages entrants sont rejetés, ne sont pas marqués comme courrier indésirable et aucun filtrage supplémentaire ne se produit. Pour plus d’informations sur la façon dont la liste d’adresses IP bloquées doit tenir dans votre stratégie globale d’expéditeurs bloqués, voir Créer des listes d’expéditeurs bloqués [dans EOP.](create-block-sender-lists-in-office-365.md)
 
-- **Liste sécurisée**: la *liste sécurisée est* une liste d’informations dynamiques dans le centre de données Microsoft qui ne nécessite aucune configuration client. Microsoft identifie ces sources de courriers électroniques de confiance à partir des abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste sécurisée ; vous ne pouvez pas configurer les serveurs de messagerie source dans la liste fiable. Le filtrage du courrier indésirable est ignoré sur les messages entrants provenant des serveurs de messagerie de la liste sécurisée.
+- **Liste sécurisée**: la *liste sécurisée* est une liste d’informations dynamiques dans le centre de données Microsoft qui ne nécessite aucune configuration client. Microsoft identifie ces sources de courriers électroniques de confiance à partir d’abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste sécurisée ; vous ne pouvez pas configurer les serveurs de messagerie source dans la liste fiable. Le filtrage du courrier indésirable est ignoré sur les messages entrants provenant des serveurs de messagerie de la liste sécurisée.
 
 Cette rubrique décrit comment configurer la stratégie de filtrage des connexions par défaut dans le Centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online). Pour plus d’informations sur la façon dont EOP utilise le filtrage des connexions fait partie des paramètres anti-courrier indésirable globaux de votre organisation, consultez la [protection anti-courrier indésirable.](anti-spam-protection.md)
 
@@ -63,14 +63,14 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
   **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour rechercher les adresses IP sources des serveurs de messagerie (expéditeurs) que vous souhaitez autoriser ou bloquer, vous pouvez vérifier le champ d’en-tête IP de connexion **(CIP)** dans l’en-tête du message. Pour afficher un en-tête de message dans différents clients de messagerie, voir Afficher les en-têtes [de message Internet dans Outlook.](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
 
 - La liste d’adresses IP bloquées est prioritaire sur la liste d’adresses IP bloquées (une adresse sur les deux listes n’est pas bloquée).
 
-- La liste d’adresses IP permises et la liste d’adresses IP bloqués peuvent chacune prendre en charge un maximum de 1 273 entrées, où une entrée est une adresse IP unique, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing).
+- La liste d’adresses IP et la liste d’adresses IP bloqués peuvent chacune prendre en charge un maximum de 1 273 entrées, où une entrée est une adresse IP unique, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing).
 
 ## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>Utiliser le Centre de sécurité & conformité pour modifier la stratégie de filtrage des connexions par défaut
 
@@ -82,13 +82,13 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
    - **Description**: entrez un texte descriptif facultatif.
 
-   - **Liste d’adresses IP autoriser**: cliquez sur **Modifier.** Dans le volant **liste verte IP** qui s’affiche,  entrez une adresse IPV4 dans la zone Adresse ou plage d’adresses à l’aide de la syntaxe suivante :
+   - **Liste d’adresses IP autoriser**: cliquez sur **Modifier.** Dans le volant de liste **verte IP** qui s’affiche, entrez une adresse IPV4 dans la zone Adresse ou plage d’adresses à l’aide de la syntaxe suivante : 
 
      - Adresse IP unique : par exemple, 192.168.1.1.
 
      - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
 
-     - ADRESSE IP CIDR : par exemple, 192.168.0.1/25. Les valeurs de masque réseau valides sont de /24 à /32. Pour ignorer le filtrage du courrier indésirable pour les valeurs de masque IP CIDR /1 à /23, consultez la section Ignorer le filtrage du courrier indésirable pour une [adresse IP CIDR](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) en dehors de la section disponible plus loin dans cet article.
+     - ADRESSE IP CIDR : par exemple, 192.168.0.1/25. Les valeurs de masque réseau valides sont de /24 à /32. Pour ignorer le filtrage du courrier indésirable pour les valeurs de masque IP CIDR entre /1 et /23, consultez la section Ignorer le filtrage du courrier indésirable pour une [adresse IP CIDR](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) en dehors de la section de plage disponible plus loin dans cet article.
 
      Pour ajouter l’adresse IP ou la plage d’adresses, cliquez **sur Ajouter** ![ une ](../../media/ITPro-EAC-AddIcon.png) icône. Pour supprimer une entrée, sélectionnez-la dans **l’adresse IP autorisée,** puis cliquez sur  ![ ](../../media/scc-remove-icon.png) Supprimer. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -96,7 +96,7 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
      Pour ajouter l’adresse IP ou la plage d’adresses, cliquez **sur Ajouter** ![ une ](../../media/ITPro-EAC-AddIcon.png) icône. Pour supprimer une entrée, sélectionnez-la dans **Adresse IP** bloquée, puis cliquez sur  ![ ](../../media/scc-remove-icon.png) Supprimer. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-   - **Activez la liste sécurisée**: activez ou désactivez l’utilisation de la liste sécurisée pour identifier les expéditeurs connus et de qualité qui ignoreront le filtrage du courrier indésirable.
+   - **Activer la liste sécurisée**: activez ou désactivez l’utilisation de la liste sécurisée pour identifier les expéditeurs connus et de qualité qui ignoreront le filtrage du courrier indésirable.
 
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -106,7 +106,7 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 2. Dans la page **Paramètres anti-courrier** indésirable, cliquez sur la liste suivante en haut de la stratégie par défaut nommée Stratégie de **filtrage des connexions.**
 
-3. Les paramètres de stratégie sont affichés dans la baisse qui s’ouvre.
+3. Les paramètres de stratégie s’affichent dans la baisse qui s’ouvre.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-modify-the-default-connection-filter-policy"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour modifier la stratégie de filtrage des connexions par défaut
 
@@ -132,7 +132,7 @@ Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional
 
 - Pour vider la liste d’adresses IP permises ou la liste d’adresses IP bloqués, utilisez la valeur `$null` .
 
-Cet exemple configure la liste d’adresses IP permises et la liste d’adresses IP bloqués avec les adresses IP et plages d’adresses spécifiées.
+Cet exemple configure la liste d’adresses IP et la liste d’adresses IP bloqués avec les adresses IP et plages d’adresses spécifiées.
 
 ```powershell
 Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList 192.168.1.10,192.168.1.23 -IPBlockList 10.10.10.0/25,172.17.17.0/24

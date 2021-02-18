@@ -18,20 +18,20 @@ description: Découvrez comment définir des stratégies de pièces jointes séc
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 314f7fd882986c22adddd0c4570b4aa9f49a40f3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 012c591d620fdf5abe5aad697404bea8cea95d1a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166332"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290548"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies de pièces jointes sécurisées dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](office-365-atp.md). Si vous êtes un utilisateur d’accueil à la recherche d’informations sur l’analyse des pièces jointes dans Outlook, voir [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -44,7 +44,7 @@ Vous pouvez configurer des stratégies de pièces jointes sécurisées dans le C
 
 Les éléments de base d’une stratégie de pièces jointes sécurisées sont :
 
-- La stratégie de pièces jointes fiables : spécifie les actions pour les détections de programmes malveillants inconnus, s’il faut envoyer des messages avec des pièces jointes à une adresse e-mail spécifiée et s’il faut remettre des messages si l’analyse des pièces jointes fiables ne peut pas se terminer.
+- La stratégie de pièces jointes fiables : spécifie les actions pour les détections de programmes malveillants inconnus, s’il faut envoyer des messages avec des pièces jointes de programmes malveillants à une adresse de messagerie spécifiée, et s’il faut remettre des messages si l’analyse des pièces jointes fiables ne peut pas se terminer.
 - **La règle de pièce jointe sécurisée**: spécifie la priorité et les filtres de destinataires (à qui la stratégie s’applique).
 
 La différence entre ces deux éléments n’est pas évidente lorsque vous gérez les polices de pièces jointes sécurisées dans le Centre de sécurité & conformité :
@@ -60,19 +60,19 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour aller directement à la page **Pièces jointes sécurisées,** utilisez <https://protection.office.com/safeattachmentv2> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **Pièces jointes sécurisées,** utilisez <https://protection.office.com/safeattachmentv2> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Des autorisations doivent vous être attribuées avant de pouvoir suivre les procédures de cet article :
   - Pour créer, modifier et supprimer des stratégies de pièces  jointes sécurisées, vous devez être membre des groupes de  rôles Gestion de l’organisation ou Administrateur de la sécurité dans le Centre de sécurité & conformité et membre du groupe de rôles Gestion de l’organisation dans Exchange Online.  
-  - Pour accéder en lecture seule aux stratégies de pièces  jointes  sécurisées, vous devez être membre des groupes de rôles Lecteur global ou Lecteur sécurité dans le Centre de sécurité & conformité.
+  - Pour accéder en lecture seule aux stratégies de pièces  jointes  sécurisées, vous devez être membre des groupes de rôles Lecteur général ou Lecteur sécurité dans le Centre de sécurité & conformité.
 
   Pour plus d’informations, [voir Autorisations](permissions-in-the-security-and-compliance-center.md) dans le Centre de sécurité & conformité et [autorisations dans Exchange Online.](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
 
   **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour obtenir nos paramètres recommandés pour les stratégies de pièces jointes sécurisées, voir [Paramètres des pièces jointes sécurisées.](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)
@@ -105,7 +105,7 @@ La création d’une stratégie de pièces jointes sécurisées personnalisée d
      - **Replace**
      - **Remise dynamique (fonctionnalité d’aperçu)**
 
-     Ces valeurs sont expliquées dans les paramètres de stratégie de pièces [jointes sécurisées.](atp-safe-attachments.md#safe-attachments-policy-settings)
+     Ces valeurs sont expliquées dans les paramètres de stratégie [de pièces jointes sécurisées.](atp-safe-attachments.md#safe-attachments-policy-settings)
 
    - Envoyez la pièce jointe à l’adresse de messagerie suivante : Pour les valeurs d’action **Bloquer,** Surveiller ou **Remplacer,** vous pouvez sélectionner Activer la **redirection** pour envoyer des messages contenant des pièces jointes contenant des programmes malveillants à l’adresse de messagerie interne ou externe spécifiée pour analyse et examen.
 
@@ -130,7 +130,7 @@ La création d’une stratégie de pièces jointes sécurisées personnalisée d
    - Cliquez dans la zone et faites défiler la liste des valeurs à sélectionner.
    - Cliquez dans la zone et commencez à taper pour filtrer la liste et sélectionnez une valeur.
    - Pour ajouter des valeurs supplémentaires, cliquez dans une zone vide dans la zone.
-   - Pour supprimer des entrées individuelles, cliquez **sur Supprimer** ![ ](../../media/scc-remove-icon.png) l’icône sur la valeur.
+   - Pour supprimer des entrées individuelles, cliquez **sur Supprimer** ![ l’icône ](../../media/scc-remove-icon.png) sur la valeur.
    - Pour supprimer la condition entière, cliquez **sur Supprimer** ![ l’icône ](../../media/scc-remove-icon.png) sur la condition.
 
    Pour ajouter une condition supplémentaire, cliquez sur **Ajouter une condition** et sélectionnez une valeur restante sous Appliqué **si**.
@@ -234,7 +234,7 @@ La création d’une stratégie de pièces jointes sécurisées dans PowerShell 
   - Créez la stratégie comme _désactivée_ ( activée sur la `$false` cmdlet **New-SafeAttachmentRule).**
   - Définissez la priorité de la stratégie lors de la création (_Priorité_ ) sur la _\<Number\>_ cmdlet **New-SafeAttachmentRule).**
 
-- Une nouvelle stratégie de pièces jointes sécurisées que vous créez dans PowerShell n’est pas visible dans le Centre de sécurité & conformité tant que vous n’avez pas attribué la stratégie à une règle de pièces jointes sécurisées.
+- Une nouvelle stratégie de pièces jointes sécurisées que vous créez dans PowerShell n’est pas visible dans le Centre de sécurité & conformité tant que vous n’avez pas attribué la stratégie à une règle de pièce jointe sécurisée.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a>Étape 1 : Utiliser PowerShell pour créer une stratégie de pièces jointes sécurisées
 
@@ -329,7 +329,7 @@ Cet exemple renvoie des informations détaillées sur la règle de pièce jointe
 Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentrule).
 
 ### <a name="use-powershell-to-modify-safe-attachment-policies"></a>Utiliser PowerShell pour modifier des stratégies de pièces jointes sécurisées
 

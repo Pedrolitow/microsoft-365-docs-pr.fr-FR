@@ -14,15 +14,15 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
-description: Les administrateurs peuvent apprendre à utiliser des balises de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire sur leurs messages mis en quarantaine.
+description: Les administrateurs peuvent apprendre à utiliser des balises de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire pour leurs messages mis en quarantaine.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f18ad6ce1c8b12d38aef377ab663ca679a703e5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 207f22c9acaa183e195f5a2ee33be65cdf4991dd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928901"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289412"
 ---
 # <a name="quarantine-tags"></a>Balises de mise en quarantaine
 
@@ -59,7 +59,7 @@ Vous créez et affectez des balises de mise en quarantaine dans le Centre de sé
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour aller directement à la page Des balises **de** mise en quarantaine, ouvrez <https://protection.office.com/quarantineTags> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page des **balises de mise** en quarantaine, ouvrez <https://protection.office.com/quarantineTags> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -69,11 +69,11 @@ Vous créez et affectez des balises de mise en quarantaine dans le Centre de sé
 
 1. Dans le Centre de sécurité &  conformité, sélectionnez Stratégie de gestion des menaces, puis sélectionnez Les balises \>  de mise **en quarantaine.**
 
-2. Dans la page **Des balises de** mise en quarantaine, **sélectionnez Ajouter une balise personnalisée.**
+2. Dans la page Mettre en quarantaine **les balises,** **sélectionnez Ajouter une balise personnalisée.**
 
 3. **L’Assistant Nouvelle balise** s’ouvre. Dans la page **Nom de la** balise, entrez un nom court mais unique dans le champ Nom de **balise.** Vous devrez identifier et sélectionner la balise par son nom dans les étapes à venir. Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-4. Dans la page **d’accès aux messages du** destinataire, sélectionnez l’une des valeurs suivantes :
+4. Dans la page **d’accès au message du** destinataire, sélectionnez l’une des valeurs suivantes :
    - **Aucun accès**
    - **Accès limité**
    - **Accès total**
@@ -201,7 +201,7 @@ Pour voir les valeurs que vous avez définies, exécutez le nom de la variable e
 
 Pour les autorisations personnalisées, ne définissez pas les paramètres _PermissionToRelease_ et _PermissionToRequestRelease_ sur `$true` . Définissez `$true` l’un sur et laissez l’autre en tant `$false` que , ou laissez les deux comme `$false` .
 
-Vous pouvez également modifier une variable objet d’autorisations existante après la création, mais avant de l’utiliser à l’aide de la cmdlet **Set-QuarantinePermissions.**
+Vous pouvez également modifier une variable objet d’autorisations existante après la création mais avant de l’utiliser à l’aide de la cmdlet **Set-QuarantinePermissions.**
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/new-quarantinepermissions) et [Set-QuarantinePermissions.](https://docs.microsoft.com/powershell/module/exchange/set-quarantinepermissions)
 
@@ -252,7 +252,7 @@ Des instructions complètes pour la création et la modification des stratégies
 
 4. Si vous avez sélectionné le **message** de mise en quarantaine  pour l’action d’un verdict de filtrage du courrier indésirable disponible, la zone de balise Appliquer la stratégie de mise en quarantaine est disponible pour que vous sélectionniez la balise de mise en quarantaine pour ce verdict.
 
-   **Remarque**: lorsque vous créez une stratégie, une valeur de balise de mise en quarantaine vide pour un verdict de filtrage du courrier indésirable indique que la balise de mise en quarantaine par défaut pour ce verdict est utilisée. Lorsque vous modifiez ultérieurement la stratégie, les valeurs vides sont remplacées par les noms de balises de mise en quarantaine par défaut réels, comme décrit dans le tableau précédent.
+   **Remarque**: lorsque vous créez une stratégie, une valeur de balise de mise en quarantaine vide pour un verdict de filtrage du courrier indésirable indique que la balise de mise en quarantaine par défaut pour ce verdict est utilisée. Lorsque vous modifiez ultérieurement la stratégie, les valeurs vides sont remplacées par les noms de balise de mise en quarantaine par défaut réels, comme décrit dans le tableau précédent.
 
    ![Sélections de balises de mise en quarantaine dans une stratégie anti-courrier indésirable](../../media/quarantine-tags-in-anti-spam-policies.png)
 
@@ -293,7 +293,7 @@ New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
-Cet exemple modifie la stratégie de filtrage de courrier indésirable existante nommée Human Resources. L’action pour le verdict de mise en quarantaine du courrier indésirable est définie sur Mise en quarantaine et la balise de mise en quarantaine personnalisée nommée NoAccess est affectée.
+Cet exemple modifie la stratégie de filtrage du courrier indésirable existante nommée Human Resources. L’action pour le verdict de mise en quarantaine du courrier indésirable est définie sur Mise en quarantaine et la balise de mise en quarantaine personnalisée nommée NoAccess est affectée.
 
 ```powershell
 Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine -SpamQuarantineTag NoAccess
@@ -303,7 +303,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="configure-global-quarantine-notification-settings-in-the-security--compliance-center"></a>Configurer les paramètres globaux de notification de mise en quarantaine dans le Centre de conformité & sécurité
 
-Les paramètres globaux des balises de mise en quarantaine vous permettent de personnaliser les notifications de courrier indésirable de l’utilisateur final qui sont envoyées aux destinataires des messages mis en quarantaine. Pour plus d’informations sur ces notifications, voir notifications de [courrier indésirable pour l’utilisateur final.](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+Les paramètres globaux des balises de mise en quarantaine vous permettent de personnaliser les notifications de courrier indésirable de l’utilisateur final qui sont envoyées aux destinataires des messages mis en quarantaine. Pour plus d’informations sur ces notifications, voir notifications de courrier indésirable pour [l’utilisateur final.](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
 1. Dans le Centre de sécurité &  conformité, sélectionnez Stratégie de gestion des menaces, puis sélectionnez Les balises \>  de mise **en quarantaine.**
 
@@ -311,13 +311,13 @@ Les paramètres globaux des balises de mise en quarantaine vous permettent de pe
 
 3. Dans le volant **des paramètres de notification de** mise en quarantaine qui s’ouvre, configurez tout ou partie des paramètres suivants :
 
-   - **Utilisez le logo de mon** entreprise : sélectionnez cette option pour remplacer le logo Microsoft par défaut qui est utilisé en haut des notifications de courrier indésirable à l’utilisateur final. Avant de faire cela, vous devez suivre les instructions dans Personnaliser le thème [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) pour que votre organisation télécharge votre logo personnalisé.
+   - **Utilisez le logo de mon** entreprise : sélectionnez cette option pour remplacer le logo Microsoft par défaut qui est utilisé en haut des notifications de courrier indésirable à l’utilisateur final. Avant de faire cela, vous devez suivre les instructions dans Personnaliser le thème [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) pour que votre organisation télécharge votre logo personnalisé.
 
      La capture d’écran suivante montre un logo personnalisé dans une notification de courrier indésirable à l’utilisateur final :
 
      ![Logo personnalisé dans une notification de courrier indésirable à l’utilisateur final](../../media/quarantine-tags-esn-customization-logo.png)
 
-   - **Choisir la langue**: les notifications de courrier indésirable de l’utilisateur final sont déjà localisées en fonction des paramètres de langue du destinataire. Vous pouvez spécifier du texte personnalisé dans différentes langues pour le nom **d’affichage** et les valeurs **de clause d’exclusion** de responsabilité.
+   - **Choisir la langue**: les notifications de courrier indésirable de l’utilisateur final sont déjà localisées en fonction des paramètres de langue du destinataire. Vous pouvez spécifier du texte personnalisé dans différentes langues pour le nom **d’affichage** et les valeurs **d’exclusion** de responsabilité.
 
      Sélectionnez au moins une langue dans la première langue, puis cliquez sur **Ajouter.** Vous pouvez sélectionner plusieurs langues en cliquant sur **Ajouter** après chacune d’elles. Une zone de langue de section affiche toutes les langues que vous avez sélectionnées :
 
@@ -339,7 +339,7 @@ Les paramètres globaux des balises de mise en quarantaine vous permettent de pe
 
      ![Une clause d’exclusion de responsabilité personnalisée au bas d’une notification de courrier indésirable à l’utilisateur final](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
-## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>Afficher les balises de mise en quarantaine dans le Centre de sécurité & conformité
+## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>Afficher les balises de mise en quarantaine dans le Centre de conformité & sécurité
 
 1. Dans le Centre de sécurité &  conformité, sélectionnez Stratégie de gestion des menaces, puis sélectionnez Les balises \>  de mise **en quarantaine.**
 
@@ -371,7 +371,7 @@ Si vous préférez utiliser PowerShell pour afficher les balises de mise en quar
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterpolicy).
 
-## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>Supprimer les balises de mise en quarantaine dans le Centre de conformité & sécurité
+## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>Supprimer les balises de mise en quarantaine dans le Centre de sécurité & conformité
 
 **Remarques** :
 
@@ -415,11 +415,11 @@ Si la balise de mise en quarantaine attribue les **autorisations** Aucun accès 
 
 - **Détails du message mis en quarantaine**: le bouton Afficher **l’en-tête du message** est toujours disponible.
 
-  ![Boutons disponibles dans les détails du message mis en quarantaine si la balise de mise en quarantaine accorde à l’utilisateur des autorisations d’accès sans accès](../../media/quarantine-tags-quarantined-message-details-no-access.png)
+  ![Boutons disponibles dans les détails du message mis en quarantaine si la balise de mise en quarantaine accorde à l’utilisateur des autorisations d’accès illimités](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
 - **Notifications de courrier** indésirable  à l’utilisateur final : le bouton Révision qui met l’utilisateur en quarantaine est toujours disponible.
 
-  ![Boutons disponibles dans la notification de courrier indésirable de l’utilisateur final si la balise de mise en quarantaine accorde à l’utilisateur aucune autorisation d’accès](../../media/quarantine-tags-esn-no-access.png)
+  ![Boutons disponibles dans la notification de courrier indésirable de l’utilisateur final si la balise de mise en quarantaine donne à l’utilisateur des autorisations d’accès sans accès](../../media/quarantine-tags-esn-no-access.png)
 
 #### <a name="limited-access"></a>Accès limité
 
@@ -456,7 +456,7 @@ Si la balise de mise en quarantaine attribue les **autorisations** d’accès to
 
 - **Notifications de courrier indésirable pour l’utilisateur final**: les boutons suivants sont disponibles :
   - **Bloquer l’expéditeur**
-  - **Débloquer**
+  - **Version**
   - **Révision**
 
   ![Boutons disponibles dans la notification de courrier indésirable de l’utilisateur final si la balise de mise en quarantaine donne à l’utilisateur des autorisations d’accès total](../../media/quarantine-tags-esn-full-access.png)
@@ -530,6 +530,6 @@ L’autorisation autoriser les destinataires à demander la libération d’un m
 
 - **Détails du message mis en quarantaine**:
   - Autorisation activée : le bouton **De publication** de la demande est disponible.
-  - Autorisation désactivée : le **bouton De publication** de la demande n’est pas disponible.
+  - Autorisation désactivée : le bouton **De publication** de la demande n’est pas disponible.
 
 - **Notifications de courrier indésirable pour l’utilisateur final**: **le** bouton Release n’est pas disponible.

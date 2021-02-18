@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -18,20 +19,20 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 0f6e3d7bef0f09dc922a7c1878e6ea7ce0aad3d7
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: e4b85091366927596a2c8f52c579c369fc9697c3
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233151"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290716"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 
-Le périmètre de sécurité moderne de votre organisation s’étend désormais au-delà de votre réseau pour inclure les utilisateurs accédant à des applications basées sur le cloud à partir de n’importe quel emplacement avec une variété d’appareils. Votre infrastructure de sécurité doit déterminer si une demande d’accès donnée doit être accordée et dans quelles conditions.
+Le périmètre de sécurité moderne de votre organisation s’étend désormais au-delà de votre réseau pour inclure les utilisateurs accédant aux applications basées sur le cloud à partir de n’importe quel emplacement avec une variété d’appareils. Votre infrastructure de sécurité doit déterminer si une demande d’accès donnée doit être accordée et dans quelles conditions.
 
 Cette détermination doit être basée sur le compte d’utilisateur de la connectez-vous, l’appareil utilisé, l’application que l’utilisateur utilise pour l’accès, l’emplacement à partir duquel la demande d’accès est faite et une évaluation du risque de la demande. Cela permet de s’assurer que seuls les utilisateurs et les appareils approuvés ont accès aux ressources critiques de l’entreprise.
 
@@ -42,7 +43,7 @@ Les paramètres et stratégies d’accès aux identités et appareils sont recom
 Ces fonctionnalités et leurs recommandations :
 
 - Sont pris en charge dans Microsoft 365 E3 et Microsoft 365 E5.
-- Sont alignés avec [le Score de sécurité Microsoft,](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) ainsi que le score d’identité dans Azure [AD,](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)et augmenteront ces scores pour votre organisation.
+- Sont alignés avec [le Score de sécurité Microsoft,](../mtp/microsoft-secure-score.md) ainsi que le score d’identité dans Azure [AD,](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)et augmenteront ces scores pour votre organisation.
 - Vous aidera à implémenter ces [cinq étapes pour sécuriser votre infrastructure d’identité.](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)
 
 Si votre organisation a des exigences ou des complexités d’environnement uniques, utilisez ces recommandations comme point de départ. Toutefois, la plupart des organisations peuvent implémenter ces recommandations comme prévu.
@@ -79,7 +80,7 @@ La plupart des organisations ont des besoins spécifiques en matière de sécuri
 
 Chaque secteur d’activité possède aussi sa propre réglementation spécialisée. Au lieu de fournir une liste de toutes les options de sécurité possibles ou une recommandation par secteur d’activité ou fonction, des recommandations ont été fournies pour trois niveaux différents de sécurité et de protection qui peuvent être appliqués en fonction de la granularité de vos besoins.
 
-- **Protection de** référence : nous vous recommandons d’établir une norme minimale pour la protection des données, ainsi que les identités et les appareils qui accèdent à vos données. Vous pouvez suivre ces recommandations de référence pour fournir une protection par défaut forte qui répond aux besoins de nombreuses organisations.
+- **Protection de** base : nous vous recommandons d’établir une norme minimale pour la protection des données, ainsi que les identités et les appareils qui accèdent à vos données. Vous pouvez suivre ces recommandations de référence pour fournir une protection par défaut forte qui répond aux besoins de nombreuses organisations.
 - **Protection sensible**: certains clients ont un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou ils peuvent exiger que toutes les données soient protégées à un niveau supérieur. Vous pouvez appliquer une protection accrue à tous les ensembles de données ou à des jeux de données spécifiques dans votre environnement Microsoft 365. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.
 - **Hautement réglementé : certaines** organisations peuvent avoir une petite quantité de données hautement classifiées, constituent des secrets commerciaux ou sont réglementées. Microsoft fournit des fonctionnalités pour aider les organisations à respecter de telles exigences, notamment de protection renforcée des appareils et des identités.
 
@@ -101,7 +102,7 @@ L’implémentation d’une stratégie de sécurité nécessite des compromis en
 
 ![Équilibrage de la sécurité, des fonctionnalités et de la facilité d’utilisation.](../../media/microsoft-365-policies-configurations/security-triad.png)
 
-Les recommandations fournies sont basées sur les principes suivants :
+Les recommandations fournies reposent sur les principes suivants :
 
 - Connaissez vos utilisateurs et soyez flexible à leurs exigences fonctionnelles et de sécurité.
 - Appliquez une stratégie de sécurité juste à temps et assurez-vous qu’elle est significative.

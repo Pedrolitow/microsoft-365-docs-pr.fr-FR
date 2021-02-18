@@ -1,5 +1,5 @@
 ---
-title: Ajout de la prise en charge des messages entrants anonymes sur IPv6
+title: Ajouter la prise en charge des e-mails entrants anonymes par IPv6
 f1.keywords:
 - NOCSH
 author: chrisda
@@ -7,7 +7,6 @@ ms.author: chrisda
 manager: chrisda
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,42 +15,48 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: L’administrateur peut apprendre à configurer la prise en charge des messages électroniques entrants anonymes provenant de sources IPv6 dans Exchange Online et Exchange Online Protection.
-ms.openlocfilehash: be226bf9814b0fcfadaaeb5b4bdda0ff133dd0c8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: L’administrateur peut apprendre à configurer la prise en charge du courrier entrant anonyme à partir de sources IPv6 dans Exchange Online et Exchange Online Protection.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 63c9434fbd1f69c0cbd3145717b712857eb17e28
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202148"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290272"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Ajouter la prise en charge du courrier électronique entrant anonyme sur IPv6 dans Microsoft 365
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Ajouter la prise en charge du courrier entrant anonyme sur IPv6 dans Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et les organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online prennent en charge les messages électroniques entrants anonymes sur IPv6. Le serveur de messagerie IPv6 source doit respecter les deux conditions suivantes :
+Les organisations Microsoft 365 avec boîtes aux lettres Exchange Online et les organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online peuvent prendre en charge le courrier entrant anonyme sur IPv6. Le serveur de messagerie IPv6 source doit répondre aux deux exigences suivantes :
 
-- L’adresse IPv6 source doit avoir un enregistrement DNS de recherche inversée (PTR) valide qui permet à la destination de trouver le nom de domaine à partir de l’adresse IPv6.
+- L’adresse IPv6 source doit avoir un enregistrement de recherche DNS inverse (PTR) valide qui permet à la destination de trouver le nom de domaine à partir de l’adresse IPv6.
 
 - L'expéditeur doit répondre aux exigences de l'étape de vérification SPF (définie dans le fichier [RFC 7208](https://tools.ietf.org/html/rfc7208)) ou de l'étape de [vérification DKIM](http://dkim.org/) (définie dans le fichier [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
 
-Pour que votre organisation puisse recevoir des messages électroniques entrants anonymes sur IPv6, un administrateur doit contacter le support Microsoft et lui demander. Pour obtenir des instructions sur l’ouverture d’une demande de support, voir [contacter le support pour les entreprises-aide de l’administrateur](../../admin/contact-support-for-business-products.md).
+Avant que votre organisation puisse recevoir des messages entrants anonymes sur IPv6, un administrateur doit contacter le support Microsoft et le demander. Pour obtenir des instructions sur l’ouverture d’une demande de support, voir Contacter le support technique pour les [produits d’entreprise - Aide de l’administrateur.](../../admin/contact-support-for-business-products.md)
 
-Une fois que la prise en charge des messages IPv6 entrants anonymes est activée dans votre organisation, le message passe par le filtre de messages normal fourni par le service.
+Une fois que la prise en charge des messages IPv6 entrants anonymes est activée dans votre organisation, le message passe par le filtrage des messages normal fourni par le service.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-- Si le serveur de messagerie source ne dispose pas d’un enregistrement de recherche DNS inversée IPv6, les messages seront rejetés avec l’erreur suivante :
+- Si le serveur de messagerie source n’a pas d’enregistrement de recherche DNS inverse IPv6, les messages sont rejetés avec l’erreur suivante :
 
-  > 450 4.7.25 Service indisponible, envoi de l’adresse IPv6 [2a01:111 : F200:2004 :: 240] doit avoir un enregistrement DNS inverse.
+  > Service 450 4.7.25 indisponible, l’envoi de l’adresse IPv6 [2a01:111:f200:2004::240] doit avoir un enregistrement DNS inverse.
 
-- Si l’expéditeur ne passe pas la validation SPF ou DKIM, les messages sont rejetés avec l’erreur suivante :
+- Si l’expéditeur ne passe pas la validation SPF ou DKIM, les messages sont rejetés avec l’erreur suivante :
 
-  > 450 4.7.26 Service indisponible, le message envoyé via IPv6 [2a01:111 : F200:2004 :: 240] doit transmettre la validation SPF ou DKIM.
+  > Service 450 4.7.26 indisponible, le message envoyé sur IPv6 [2a01:111:f200:2004::240] doit réussir la validation SPF ou DKIM.
 
-- Si vous tentez de recevoir des messages IPv6 anonymes avant d’avoir choisi, le message sera rejeté avec l’erreur suivante :
+- Si vous essayez de recevoir des messages IPv6 anonymes avant d’avoir choisi de le faire, le message sera rejeté avec l’erreur suivante :
 
-  > 550 5.2.1 Service indisponible, [contoso.com] n’accepte pas le courrier électronique sur IPv6.
+  > Service 550 5.2.1 indisponible, [contoso.com] n’accepte pas le courrier électronique sur IPv6.
 
 ## <a name="related-topics"></a>Voir aussi
 

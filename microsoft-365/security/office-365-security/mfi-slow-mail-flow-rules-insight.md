@@ -15,21 +15,21 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu corriger les règles de flux de messagerie lent dans le Centre de sécurité & conformité pour identifier et corriger les règles de flux de messagerie inefficaces ou rompues (également appelées règles de transport) dans leur organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7f084735decda922b5bcc57c029f2b384114d30
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: a50fa0d36cb025f5d0627a2212254b9d08dc5d9c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150783"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290692"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Résoudre les problèmes de règles de flux de messagerie dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Des règles de flux de messagerie inefficaces (également appelées règles de transport) peuvent entraîner des retards de flux de messagerie pour votre organisation. Cette information signale les règles de flux de messagerie qui ont un impact sur le flux de messagerie de votre organisation. Voici quelques exemples de ces types de règles :
 

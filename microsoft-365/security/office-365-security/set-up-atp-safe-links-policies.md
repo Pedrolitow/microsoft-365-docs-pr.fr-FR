@@ -18,23 +18,23 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies de liens sécurisés et des paramètres globaux de liens sécurisés dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71ea33f1f6fbebf6d87a4b42ad3bd96a60597b90
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 29d777a7f351b9ab33232cb0136703ce3fa29842
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166266"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290152"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies de liens sécurisés dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](office-365-atp.md). Si vous êtes un utilisateur d’accueil à la recherche d’informations sur Safelinks dans Outlook, voir [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](office-365-atp.md). Si vous êtes un utilisateur d’accueil à la recherche d’informations sur Les liens sécurisés dans Outlook, voir [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 La fonctionnalité Liens sécurisés de Microsoft Defender pour [Office 365](office-365-atp.md) permet d’analyser les URL des messages électroniques entrants dans le flux de messagerie, ainsi que l’heure de vérification des URL et des liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, [voir Liens sécurisés dans Microsoft Defender pour Office 365.](atp-safe-links.md)
 
@@ -48,9 +48,9 @@ Vous pouvez configurer des stratégies de liens sécurisés dans le Centre de s�
 Les éléments de base d’une stratégie de liens sécurisés sont les suivants :
 
 - La stratégie de liens sécurisés : activer la protection contre les liens sécurisés, activer l’analyse des URL en temps réel, spécifier s’il faut attendre la fin de l’analyse en temps réel avant de remettre le message, activer l’analyse des messages internes, spécifier s’il faut suivre les clics des utilisateurs sur les URL et spécifier s’il faut autoriser les utilisateurs à cliquer sur l’URL d’origine.
-- **La règle de liens sécurisés**: spécifie la priorité et les filtres de destinataires (à qui s’applique la stratégie).
+- **La règle de liens sécurisés**: spécifie la priorité et les filtres de destinataires (à qui la stratégie s’applique).
 
-La différence entre ces deux éléments n’est pas évidente lorsque vous gérez les polices de liens sécurisés dans le Centre de sécurité & conformité :
+La différence entre ces deux éléments n’est pas évidente lorsque vous gérez des polices de liens sécurisés dans le Centre de sécurité & conformité :
 
 - Lorsque vous créez une stratégie de liens sécurisés, vous créez en même temps une règle de liens sécurisés et la stratégie de liens sécurisés associée en utilisant le même nom pour les deux.
 - Lorsque vous modifiez une stratégie de liens sécurisés, les paramètres liés au nom, à la priorité, activé ou désactivé, et aux filtres de destinataire modifient la règle de liens sécurisés. Tous les autres paramètres modifient la stratégie de liens sécurisés associée.
@@ -60,7 +60,7 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour aller directement à la page **Liens sécurisés,** utilisez <https://protection.office.com/safelinksv2> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **Liens sécurisés,** utilisez <https://protection.office.com/safelinksv2> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -72,7 +72,7 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
   > [!NOTE]
   > 
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   . - Le **groupe de rôles** Gestion de l’organisation en affichage seul dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) donne également un accès en lecture seule à la fonctionnalité.
 
 - Pour obtenir nos paramètres recommandés pour les stratégies de liens sécurisés, consultez les [paramètres de stratégie de liens sécurisés.](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)
@@ -103,13 +103,13 @@ La création d’une stratégie de liens sécurisés personnalisée dans le Cent
 
    - **Sélectionnez l’action pour les** URL inconnues ou potentiellement malveillantes dans Microsoft Teams : sélectionnez **Activé** pour activer la protection des liens sécurisés pour les liens dans Teams.
 
-   - **Appliquez l’analyse** des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers : sélectionnez ce paramètre pour activer l’analyse en temps réel des liens dans les messages électroniques.
+   - **Appliquez l’analyse d’URL** en temps réel pour les liens suspects et les liens pointant vers des fichiers : sélectionnez ce paramètre pour activer l’analyse en temps réel des liens dans les messages électroniques.
 
    - **Attendez que l’analyse des URL** se termine avant de remettre le message : sélectionnez ce paramètre pour attendre la fin de l’analyse de l’URL en temps réel avant de remettre le message.
 
    - **Appliquer des liens sûrs** aux messages électroniques envoyés au sein de l’organisation : sélectionnez ce paramètre pour appliquer la stratégie de liens sécurisés aux messages entre les expéditeurs internes et les destinataires internes.
 
-   - **Ne pas suivre les clics** de l’utilisateur : laissez ce paramètre désélectionnés pour activer les clics de l’utilisateur de suivi sur les URL des messages électroniques.
+   - **Ne pas suivre les clics** de l’utilisateur : laissez ce paramètre non sélectionné pour activer les clics de l’utilisateur de suivi sur les URL des messages électroniques.
 
    - **N’autorisez pas** les utilisateurs à cliquer sur l’URL d’origine : sélectionnez ce paramètre pour empêcher les utilisateurs de cliquer jusqu’à l’URL d’origine dans les [pages d’avertissement.](atp-safe-links.md#warning-pages-from-safe-links)
 
@@ -119,11 +119,11 @@ La création d’une stratégie de liens sécurisés personnalisée dans le Cent
 
      Pour supprimer une entrée existante, sélectionnez-la, puis cliquez sur ![Icône Supprimer le bouton](../../media/ITPro-EAC-DeleteIcon.png).
 
-     Pour la syntaxe d’entrée, voir [syntaxe d’entrée pour la](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)liste « Ne pas réécrire les URL suivantes ».
+     Pour la syntaxe d’entrée, voir [syntaxe d’entrée pour](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)la liste « Ne pas réécrire les URL suivantes ».
 
    Pour plus d’informations sur ces paramètres, voir Les [paramètres](atp-safe-links.md#safe-links-settings-for-email-messages) de liens sécurisés pour les messages électroniques et les paramètres de liens [sécurisés pour Microsoft Teams.](atp-safe-links.md#safe-links-settings-for-microsoft-teams)
 
-   Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Strict, voir Paramètres de [stratégie de liens sécurisés.](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)
+   Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Strict, voir paramètres de [stratégie de liens sécurisés.](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -142,7 +142,7 @@ La création d’une stratégie de liens sécurisés personnalisée dans le Cent
    - Cliquez dans la zone et faites défiler la liste des valeurs à sélectionner.
    - Cliquez dans la zone et commencez à taper pour filtrer la liste et sélectionnez une valeur.
    - Pour ajouter des valeurs supplémentaires, cliquez dans une zone vide dans la zone.
-   - Pour supprimer des entrées individuelles, cliquez **sur Supprimer** ![ ](../../media/scc-remove-icon.png) l’icône sur la valeur.
+   - Pour supprimer des entrées individuelles, cliquez **sur Supprimer** ![ l’icône ](../../media/scc-remove-icon.png) sur la valeur.
    - Pour supprimer la condition entière, cliquez **sur Supprimer** ![ l’icône ](../../media/scc-remove-icon.png) sur la condition.
 
    Pour ajouter une condition supplémentaire, cliquez sur **Ajouter une condition** et sélectionnez une valeur restante sous Appliqué **si**.
@@ -171,7 +171,7 @@ La création d’une stratégie de liens sécurisés personnalisée dans le Cent
 
 3. Dans le volant des détails de stratégie qui s’affiche, cliquez **sur Modifier la stratégie.**
 
-Les paramètres disponibles dans le volant qui s’affiche sont identiques à ceux décrits dans la section Utiliser le Centre de sécurité & conformité pour créer des stratégies de [liens sécurisés.](#use-the-security--compliance-center-to-create-safe-links-policies)
+Les paramètres disponibles dans le volant qui s’affiche sont identiques à ceux décrits dans la section Utiliser le Centre de sécurité & conformité pour créer des stratégies de liens [sécurisés.](#use-the-security--compliance-center-to-create-safe-links-policies)
 
 Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de la stratégie, consultez les sections suivantes.
 
@@ -206,9 +206,9 @@ Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers
 
    - La stratégie de liens sécurisés avec la valeur **de** priorité **0** ne dispose que **du** bouton Diminuer la priorité disponible.
 
-   - La stratégie de liens sécurisés avec la valeur **de** priorité la plus faible **(par** exemple, 3 ) ne dispose que du bouton **Augmenter** la priorité disponible.
+   - La stratégie de liens sécurisés avec la valeur **de** priorité la plus faible **(par** exemple, 3 ) ne dispose que du bouton **Augmenter** la priorité.
 
-   - Si vous disposez de trois stratégies de liens sécurisés ou  plus,  les stratégies entre les valeurs de priorité les plus élevées et les plus faibles disposent à la fois des boutons Augmenter la priorité et Diminuer la priorité.
+   - Si vous avez au moins trois stratégies de liens sécurisés,  les stratégies entre les valeurs de priorité les plus élevées et les plus faibles ont les boutons Augmenter la priorité et Diminuer **la** priorité disponibles.
 
 4. Cliquez **sur Augmenter la priorité** ou Diminuer la **priorité** pour modifier la **valeur** Priorité.
 
@@ -268,10 +268,10 @@ Cet exemple crée une stratégie de liens sécurisés nommée Contoso All avec l
 
 - Activer l’analyse et la réécriture d’URL dans les messages électroniques.
 - Activer l’analyse des URL dans Teams (aperçu TAP uniquement).
-- Activer l’analyse en temps réel des URL sur lesquelles vous avez cliqué, y compris les liens sur lesquels vous avez cliqué et qui pointent vers des fichiers.
-- Attendez que l’analyse des URL soit terminée avant de remettre le message.
+- Activer l’analyse en temps réel des URL sur lesquelles vous avez cliqué, y compris les liens qui pointent vers des fichiers.
+- Attendez la fin de l’analyse de l’URL avant de remettre le message.
 - Activer l’analyse et la réécriture d’URL pour les messages internes.
-- Suivez les clics des utilisateurs liés à la protection contre les liens sécurisés (nous n’utilisons pas le paramètre _DoNotTrackUserClicks,_ et la valeur par défaut est $false, ce qui signifie que les clics utilisateur sont suivis).
+- Suivez les clics des utilisateurs liés à la protection contre les liens sécurisés (nous n’utilisons pas le paramètre _DoNotTrackUserClicks_ et la valeur par défaut est $false, ce qui signifie que les clics utilisateur sont suivis).
 - N’autorisez pas les utilisateurs à accéder à l’URL d’origine en cliquant.
 
 ```PowerShell
@@ -410,7 +410,7 @@ Cet exemple montre comment activer la même règle.
 Enable-SafeLinksRule -Identity "Marketing Department"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Enable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/enable-safelinksrule) et [Disable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/disable-safelinksrule).
+Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, voir Enable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/enable-safelinksrule) et [Disable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/disable-safelinksrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-safe-links-rules"></a>Utiliser PowerShell pour définir la priorité des règles de liens sécurisés
 

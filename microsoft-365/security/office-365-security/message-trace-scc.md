@@ -14,21 +14,21 @@ ms.custom:
 description: Les administrateurs peuvent utiliser le suivi des messages dans le Centre de sécurité & conformité pour savoir ce qui est arrivé aux messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b0c27d8e0f43557be537d6e7c9fa096441cc229
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 1ce26f7a6cdad15019e2b40eb6f8746e5723d4f0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150278"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290656"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le Centre de sécurité et de conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ## <a name="message-trace-features"></a>Fonctionnalités de suivi des messages
 
@@ -38,7 +38,7 @@ Le suivi des messages dans le Centre de sécurité & conformité améliore le su
 
 > [!NOTE]
 >
-> - Pour suivre les messages, vous devez être membre des groupes de rôles Gestion de l’organisation, Gestion de la conformité ou Help Desk. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+> - Pour suivre les messages, vous devez être membre des groupes de rôles Gestion de l’organisation, Gestion de la conformité ou Service d’aide. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 >
 > - Le nombre maximal de messages affichés dans les résultats dépend du type de rapport que vous avez sélectionné (voir la section Choisir le [type](#choose-report-type) de rapport pour plus d’informations). La [cmdlet Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) dans Exchange Online PowerShell ou EOP PowerShell autonome renvoie tous les messages dans les résultats.
 
@@ -64,7 +64,7 @@ Cette page contient également une section de rapports **téléchargeables** pou
 
 ### <a name="filter-by-senders-and-recipients"></a>Filtrer par expéditeurs et destinataires
 
-Les valeurs par défaut **sont Tous les expéditeurs** et Tous **les destinataires,** mais vous pouvez utiliser les champs suivants pour filtrer les résultats :
+Les valeurs par défaut **sont Tous les expéditeurs** et **Tous les destinataires,** mais vous pouvez utiliser les champs suivants pour filtrer les résultats :
 
 - **Par ces personnes :** Cliquez dans ce champ pour sélectionner un ou plusieurs expéditeurs de votre organisation. Vous pouvez également commencer à taper un nom et les éléments de la liste seront filtrés par ce que vous avez tapé, de la même manière qu’une page de recherche se comporte.
 
@@ -93,7 +93,7 @@ La valeur par défaut **est 2 jours,** mais vous pouvez spécifier des plages de
   Pour plus d’informations sur les différents types de rapports, voir la section Choisir un [type](#choose-report-type) de rapport dans cet article.
 
   > [!NOTE]
-  > Les rapports récapitulatifs et étendus améliorés sont préparés à l’aide des données de suivi des messages archivées, et le téléchargement de votre rapport peut prendre jusqu’à plusieurs heures. Selon le nombre d’autres administrateurs qui ont également soumis des demandes de rapport en même temps, vous remarquerez peut-être également un délai avant le début du traitement de votre demande en file d’attente.
+  > Les rapports récapitulatifs et étendus améliorés sont préparés à l’aide de données de suivi des messages archivées, et le téléchargement de votre rapport peut prendre jusqu’à plusieurs heures. Selon le nombre d’autres administrateurs qui ont également soumis des demandes de rapport en même temps, vous remarquerez peut-être également un délai avant le début du traitement de votre demande en file d’attente.
 
 - L’enregistrement d’une requête en affichage **Curseur** permet d’économiser la plage de temps relative (par exemple, 3 jours à partir d’aujourd’hui). L’enregistrement d’une requête en affichage personnalisé permet d’enregistrer la plage de date/heure absolue (par exemple, 2018-05-06 13:00 et 2018-05-08 18:00). 
 
@@ -111,14 +111,14 @@ Vous pouvez laisser la valeur par défaut **Tous** sélectionné, ou vous pouvez
 
 - **Échec :** le message n’a pas été remis.
 
-- **Mise en quarantaine**: le message a été mis en quarantaine (comme courrier indésirable, courrier en masse ou hameçonnage). Pour plus d’informations, voir [Messages électroniques mis en quarantaine dans EOP.](quarantine-email-messages.md)
+- **Mis en quarantaine**: le message a été mis en quarantaine (comme courrier indésirable, courrier en masse ou hameçonnage). Pour plus d’informations, voir [Messages électroniques mis en quarantaine dans EOP.](quarantine-email-messages.md)
 
 - **Filtré comme courrier indésirable**: le message a été identifié comme courrier indésirable et a été rejeté ou bloqué (non mis en quarantaine).
 
-- **Obtention de l’état :** Le message a été reçu récemment par Microsoft 365, mais aucune autre donnée d’état n’est encore disponible. Revenir dans quelques minutes.
+- **Obtention de l’état :** Le message a été reçu récemment par Microsoft 365, mais aucune autre donnée d’état n’est encore disponible. Revenir quelques minutes plus tard.
 
 > [!NOTE]
-> Les valeurs **En attente,** **Mis en** quarantaine et Filtrer comme courrier indésirable sont disponibles uniquement pour les recherches de moins de 10 jours.  En outre, il peut y avoir un délai de 5 à 10 minutes entre l’état de remise réel et le statut de remise signalé.
+> Les valeurs **En attente,** **Mis en quarantaine** et Filtrer comme courrier indésirable ne sont disponibles que pour les recherches de moins de 10 jours.  En outre, il peut y avoir un délai de 5 à 10 minutes entre l’état de remise réel et le statut de remise signalé.
 
 #### <a name="message-id"></a>ID de message
 
@@ -151,9 +151,9 @@ Les types de rapports disponibles sont :
 > 
 > - Les rapports récapitulatifs et étendus améliorés sont préparés à l’aide de données de suivi des messages archivées, et le téléchargement de votre rapport peut prendre jusqu’à plusieurs heures. Selon le nombre d’autres administrateurs qui ont également soumis des demandes de rapport en même temps, vous remarquerez peut-être également un délai avant le traitement de votre demande en file d’attente.
 > 
-> - Bien que vous pouvez sélectionner un rapport de synthèse ou étendu amélioré pour n’importe quelle plage de date/heure, les quatre dernières heures de données archivées ne sont généralement pas encore disponibles pour ces deux types de rapports.
+> - Bien que vous pouvez sélectionner un rapport de synthèse ou étendu amélioré pour une plage de dates/heures, les quatre dernières heures de données archivées ne sont généralement pas encore disponibles pour ces deux types de rapports.
 
-Lorsque vous cliquez sur **Suivant,** une page récapitulatif répertorie les options de filtrage que vous avez sélectionnées, un titre unique (modifiable) pour le rapport et l’adresse de messagerie qui reçoit la notification lorsque le suivi des messages est terminé (également modifiable et doit se trouver dans l’un des domaines acceptés de votre organisation). Cliquez **sur Préparer le rapport** pour envoyer le suivi des messages. Dans la page principale **de suivi des messages,** vous pouvez voir l’état du rapport dans la section **Rapports téléchargeables.**
+Lorsque vous cliquez sur **Suivant,** une page récapitulatif répertorie les options de filtrage que vous avez sélectionnées, un titre unique (modifiable) pour le rapport et l’adresse de messagerie qui reçoit la notification lorsque le suivi des messages est terminé (également modifiable et doit se trouver dans l’un des domaines acceptés de votre organisation). Cliquez **sur Préparer le rapport** pour envoyer le suivi des messages. Dans la page principale **de suivi des** messages, vous pouvez voir l’état du rapport dans la section Rapports **téléchargeables.**
 
 Pour plus d’informations sur les informations renvoyées dans les différents types de rapports, voir la section suivante.
 
@@ -175,7 +175,7 @@ Le rapport récapitulatif contient les informations suivantes :
 
 - **Destinataire**: adresse de messagerie du ou des destinataires. Pour un message envoyé à plusieurs destinataires, il existe une ligne par destinataire. Si le destinataire est un groupe de distribution, un groupe de distribution dynamique ou un groupe de sécurité à messagerie, le groupe sera le premier destinataire, puis chaque membre du groupe se trouve sur une ligne distincte.
 
-- **Objet**: Champ Objet : les 256 premiers caractères du champ **Objet du** message.
+- **Objet**: les 256 premiers caractères du champ **Objet :** du message.
 
 - **État**: ces valeurs sont décrites dans la section [État de](#delivery-status) remise.
 
@@ -193,7 +193,7 @@ Les enregistrements de messages associés sont des enregistrements qui ont parta
 
 Après avoir cocher une ligne, vous pouvez rechercher les enregistrements  associés au message en cliquant sur le bouton Rechercher les informations associées qui s’affiche ou en sélectionnant Plus **d’options** Rechercher les enregistrements associés pour ce ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **message).**
 
-Pour plus d’informations sur l’ID de message, consultez la section ID de message plus tôt dans cet article.
+Pour plus d’informations sur l’ID de message, voir la section ID de message plus tôt dans cet article.
 
 #### <a name="message-trace-details"></a>Détails du suivi des messages
 
@@ -211,9 +211,9 @@ Les détails du suivi des messages contiennent les informations supplémentaires
 
   - **Réception**: le message a été reçu par le service.
 
-  - **Send**: le message a été envoyé par le service.
+  - **Envoyer**: le message a été envoyé par le service.
 
-  - **Fail**: le message n’a pas été remis.
+  - **Fail**: le message n’a pas réussi à être remis.
 
   - **Deliver**: le message a été remis à une boîte aux lettres.
 
@@ -313,7 +313,7 @@ Les rapports étendus disponibles (terminés) sont disponibles dans la section *
 
 - **référence**: ce champ contient des informations supplémentaires pour des types d’événements spécifiques. Par exemple :
 
-  - **DSN**: contient le lien de rapport, qui est la valeur message_id de la notification d’état de remise associée (également appelée notification d’état de remise, notification d’non-remise ou notification de non-remise) si une notification d’état de remise **est** générée après cet événement. S’il s’agit d’un message de DSN, ce champ contient la message_id du message d’origine pour qui la DSN **a** été générée.
+  - **DSN**: contient le lien de rapport, qui est la valeur message_id de la notification d’état de remise associée (également appelée notification d’état de remise, notification d’non-remise ou notification de non-remise) si une notification d’état de remise **est** générée après cet événement. S’il s’agit d’un message de DSN, ce champ contient la message_id du message d’origine pour qui le DSN **a** été généré.
 
   - **EXPAND**: contient la **related_recipient_address** valeur des messages associés.
 
@@ -321,11 +321,11 @@ Les rapports étendus disponibles (terminés) sont disponibles dans la section *
 
   - **SEND**: contient la **valeur internal_message_id** de tous les messages de DSN.
 
-  - **TRANSFER**: contient la **internal_message_id** du message en cours de bifurcation (par exemple, par conversion de contenu, limites de destinataire de message ou agents).
+  - **TRANSFER**: contient la **internal_message_id** du message qui est en cours de bifurcation (par exemple, par conversion de contenu, limites de destinataire de message ou agents).
 
-  - **MAILBOXRULE**: contient la **valeur internal_message_id** du message entrant qui a entraîné la création du message sortant par la règle de boîte de réception.
+  - **MAILBOXRULE**: contient la **internal_message_id** du message entrant qui a entraîné la création du message sortant par la règle de boîte de réception.
 
-    Pour d’autres types d’événements, ce champ est généralement vide.
+    Pour les autres types d’événements, ce champ est généralement vide.
 
 - **return_path**: adresse de messagerie de retour spécifiée par la **commande MAIL FROM** qui a envoyé le message. Bien que ce champ ne soit jamais vide, il peut avoir la valeur d’adresse de l’expéditeur null représentée par `<>` .
 
@@ -412,7 +412,7 @@ Une **custom_data** qui commence par l’agent de règles de transport pour les 
 |`ETR|ruleId=<guid>`|ID de la règle qui s'applique.|
 |`St=<datetime>`|Date et heure UTC à laquelle la correspondance de règle s’est produite.|
 |`Action=<ActionDefinition>`|Action appliquée. Pour obtenir la liste des actions disponibles, voir Actions de règle [de flux de messagerie dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
-|`Mode=<Mode>`|Mode de la règle. Les valeurs valides sont les suivantes :<ul><li>**Appliquer**: toutes les actions de la règle seront appliquées.</li><li>**Testez à l’aide des conseils** de stratégie : toutes les actions de conseil de stratégie seront envoyées, mais les autres actions d’application ne seront pas entreprises.</li><li>**Test sans conseils** de stratégie : les actions sont répertoriées dans un fichier journal, mais les expéditeurs ne sont pas avertis d’aucune manière et les actions d’application ne sont pas prises en action.</li></ul>|
+|`Mode=<Mode>`|Mode de la règle. Les valeurs valides sont les suivantes :<ul><li>**Appliquer**: toutes les actions de la règle seront appliquées.</li><li>**Testez avec les conseils de stratégie**: toutes les actions de conseil de stratégie seront envoyées, mais les autres actions d’application ne seront pas entreprises.</li><li>**Test sans conseils** de stratégie : les actions sont répertoriées dans un fichier journal, mais les expéditeurs ne sont pas avertis d’aucune manière et les actions d’application ne sont pas prises en action.</li></ul>|
 |
 
 Un exemple **custom_data** valeur d’un message qui correspond aux conditions d’une règle de flux de messagerie ressemble à ceci :

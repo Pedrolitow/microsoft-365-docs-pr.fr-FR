@@ -19,19 +19,19 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur le niveau de confiance du courrier indésirable (SCL) appliqué aux messages dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e4fc20b7d7db5b85b5bdde02ab720fa26af2a4b5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 05faec8101bfb13265d3cca7c661f2e86ac21c8d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167154"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290404"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Niveau de confiance du courrier indésirable (SCL) dans EOP
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

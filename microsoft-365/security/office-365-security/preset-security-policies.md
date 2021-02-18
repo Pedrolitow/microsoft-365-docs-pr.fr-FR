@@ -15,21 +15,21 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts aux fonctionnalités de protection d’Exchange Online Protection (EOP) et de Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f57b388716eca02741ba48b3e6b47b7cf9f28884
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: e8f254f2a1ea2dcf1a4b51594a5c340e91cb3f15
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150079"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290774"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Les stratégies de sécurité prédéfinisées fournissent un emplacement centralisé pour l’application de toutes les stratégies recommandées de courrier indésirable, de programmes malveillants et de hameçonnage aux utilisateurs à la fois. Les paramètres de stratégie ne sont pas configurables. Au lieu de cela, elles sont définies par nous et sont basées sur nos observations et expériences dans les centres de données pour trouver un équilibre entre la mise à l’écart du contenu dangereux des utilisateurs sans perturber leur travail.
 
@@ -37,7 +37,7 @@ Le reste de cette rubrique décrit les stratégies de sécurité prédéfinie et
 
 ## <a name="what-preset-security-policies-are-made-of"></a>En quoi les stratégies de sécurité prédéfines sont-elles
 
-Les stratégies de sécurité prédéfines sont composées des éléments suivants :
+Les stratégies de sécurité prédéfinës sont composées des éléments suivants :
 
 - Profils
 - Stratégies
@@ -69,10 +69,10 @@ Les stratégies de sécurité prédéfines utilisent les stratégies corresponda
 - **Stratégies Exchange Online Protection (EOP)**: cela inclut les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et les organisations EOP autonomes sans boîtes aux lettres Exchange Online :
 
   - [Stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md) **nommées Standard Preset Security Policy** et Strict **Preset Security Policy**.
-  - [Stratégies anti-programme malveillant](configure-anti-malware-policies.md) nommées Stratégie de sécurité **prédéfinë standard** et **Stratégie de sécurité prédéfinë stricte.**
-  - [Stratégies anti-hameçonnage EOP](set-up-anti-phishing-policies.md#spoof-settings) nommées Stratégie de sécurité prédéfini **standard** et Stratégie de sécurité prédéfini stricte **(paramètres** d’usurpation).
+  - [Stratégies anti-programme](configure-anti-malware-policies.md) malveillant nommées Stratégie de sécurité **prédéfinë standard** et **Stratégie de sécurité prédéfinë stricte.**
+  - [Stratégies anti-hameçonnage EOP](set-up-anti-phishing-policies.md#spoof-settings) nommées Stratégie de sécurité prédéfini **standard** et stratégie de sécurité prédéfini stricte **(paramètres** d’usurpation).
 
-- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations ayant des abonnements de modules microsoft 365 E5 ou Defender pour office 365 :
+- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations 365 E5 ou Defender pour les abonnements de modules office 365 :
 
   - Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365 nommées **Stratégie** de sécurité prédéfinë standard et Stratégie de sécurité prédéfinë **stricte,** qui incluent :
 
@@ -80,7 +80,7 @@ Les stratégies de sécurité prédéfines utilisent les stratégies corresponda
     - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Seuils de hameçonnage avancés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Stratégies de liens sécurisés](set-up-atp-safe-links-policies.md) nommées Stratégie de sécurité prédéfine **standard** et **Stratégie de sécurité prédéfinfine stricte.**
+  - [Stratégies de liens sécurisés](set-up-atp-safe-links-policies.md) nommées Stratégie de sécurité **prédéfinfine standard** et **Stratégie de sécurité prédéfine stricte.**
 
   - [Stratégies de pièces jointes sécurisées](set-up-atp-safe-attachments-policies.md) nommées Stratégie de sécurité **prédéfinfine standard** et **Stratégie de sécurité prédéfine stricte.**
 
@@ -105,17 +105,17 @@ En d’autres termes, les paramètres de la stratégie De **protection** stricte
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour aller directement à la page Stratégies de **sécurité prédéfines,** utilisez <https://protection.office.com/presetSecurityPolicies> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page Des stratégies de **sécurité prédéfines,** utilisez <https://protection.office.com/presetSecurityPolicies> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Des autorisations doivent vous avoir été attribuées dans le Centre de sécurité et de conformité pour que vous puissiez effectuer les procédures décrites dans cet article.
-  - Pour configurer des stratégies de sécurité prédéfinie, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité. 
+  - Pour configurer des stratégies de sécurité prédéfinie, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité. 
   - Pour accéder en lecture seule aux stratégies de sécurité prédéfinis, vous devez être membre du **groupe** de rôles Lecteur global.
 
-  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+  Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration  Microsoft 365 donne aux utilisateurs les autorisations requises dans le Centre de sécurité & conformité et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration  Microsoft 365 donne aux utilisateurs les autorisations requises dans le Centre de sécurité & conformité et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Utiliser le Centre de sécurité & conformité pour affecter des stratégies de sécurité prédéfines aux utilisateurs
 
@@ -149,7 +149,7 @@ En d’autres termes, les paramètres de la stratégie De **protection** stricte
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. À **l’étape** Confirmer, vérifiez vos sélections, puis cliquez sur **Confirmer.**
+5. À **l’étape** Confirmer, vérifiez vos sélections, puis cliquez sur **Confirmer**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>Utiliser le Centre de sécurité & conformité pour modifier les affectations de stratégies de sécurité prédéfines
 

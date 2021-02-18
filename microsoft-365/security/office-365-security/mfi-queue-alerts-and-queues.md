@@ -12,23 +12,23 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent apprendre à utiliser le widget Files d’attente dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller le flux de messagerie infructueux vers leurs organisations locales ou partenaires sur des connecteurs sortants.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94e8a1f3b54c3738c21e94ba85ae4f1d3f953498
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: ca8ee5ea37fa5a63b8035572059e419c400d66f3
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150170"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289436"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Informations sur les files d’attente dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Lorsque les messages ne peuvent pas être envoyés à partir de votre organisation vers vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente dans Microsoft 365. Les exemples courants à l’origine de cette condition sont les suivants :
+Lorsque les messages ne peuvent pas être envoyés depuis votre organisation vers vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente dans Microsoft 365. Les exemples courants à l’origine de cette condition sont les suivants :
 
 - Le connecteur n’est pas correctement configuré.
 - Des modifications ont été apportées au réseau ou au pare-feu dans votre environnement local.
@@ -45,7 +45,7 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
 
 - Les administrateurs recevront une notification par courrier électronique en fonction de la configuration de la stratégie d’alerte par défaut nommée **Messages qui a été retardée.** Pour configurer les paramètres de notification pour cette alerte, consultez la section suivante.
 
-  Pour plus d’informations sur les stratégies d’alerte, voir Stratégies d’alerte dans le Centre de [sécurité & conformité.](../../compliance/alert-policies.md)
+  Pour plus d’informations sur les stratégies d’alerte, voir Stratégies d’alerte dans le [Centre de sécurité & conformité.](../../compliance/alert-policies.md)
 
 ## <a name="customize-queue-alerts"></a>Personnaliser les alertes de file d’attente
 
@@ -74,7 +74,7 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
 
 ## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Informations sur les files d’attente dans le tableau de bord de flux de messagerie
 
-Même si le volume de messages en file d’attente n’a pas  dépassé le [](mail-flow-insights-v2.md) seuil et généré une alerte, vous pouvez toujours utiliser l’aperçu des files d’attente dans le tableau de bord de flux de messagerie pour voir les messages mis en file d’attente depuis plus d’une heure et prendre des mesures avant que le nombre de messages mis en file d’attente devienne trop important.
+Même si le volume de messages en file d’attente n’a pas  dépassé le [](mail-flow-insights-v2.md) seuil et généré une alerte, vous pouvez toujours utiliser l’aperçu des files d’attente dans le tableau de bord de flux de messagerie pour voir les messages mis en file d’attente depuis plus d’une heure et agir avant que le nombre de messages mis en file d’attente ne devienne trop élevé.
 
 ![Widget Files d’attente dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-queues-widget.png)
 

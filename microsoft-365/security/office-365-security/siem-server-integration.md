@@ -1,5 +1,5 @@
 ---
-title: Intégration des serveurs SIEM aux services et applications Microsoft 365
+title: Intégration des serveurs SIEM aux applications et services Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -18,19 +18,19 @@ ms.custom:
 description: Obtenir une vue d’ensemble de l’intégration du serveur SIEM (Security Information and Event Management) à vos applications et services cloud Microsoft 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f29da87aa6eab1852330092d93187a27b2d36eb2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b4490d52cbd403bf4ce2cc3f3fb3c5a91c5646b9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167142"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290380"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration de serveurs SIEM (Security Information and Event Management) aux services et applications Microsoft 365
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -45,7 +45,7 @@ Votre organisation utilise-t-elle ou prévoit-elle d’obtenir un serveur SIEM (
 
 La nécessité d’un serveur SIEM dépend de nombreux facteurs, tels que les exigences de sécurité de votre organisation et l’emplacement où résident vos données. Microsoft 365 inclut un large éventail de fonctionnalités de sécurité qui répondent aux besoins de sécurité de nombreuses organisations sans serveurs supplémentaires, tels qu’un serveur SIEM. Certaines organisations ont des circonstances particulières qui nécessitent l’utilisation d’un serveur SIEM. Voici quelques exemples :
 
-- *Fabrikam possède* du contenu et des applications sur site, et d’autres dans le cloud (ils disposent d’un déploiement cloud hybride). Pour obtenir des rapports de sécurité sur l’ensemble de son contenu et de ses applications, Fabrikam a implémenté un serveur SIEM.
+- *Fabrikam possède* du contenu et des applications sur site, et d’autres dans le cloud (ils disposent d’un déploiement cloud hybride). Pour obtenir des rapports de sécurité sur tout leur contenu et applications, Fabrikam a implémenté un serveur SIEM.
 
 - *Contoso est* une organisation de services financiers qui a des exigences de sécurité particulièrement strictes. Ils ont ajouté un serveur SIEM à leur environnement pour tirer parti de la protection de sécurité supplémentaire dont ils ont besoin.
 

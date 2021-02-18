@@ -13,27 +13,27 @@ ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Vous pouvez utiliser des règles de flux de messagerie (règles de transport) pour identifier et prendre des mesures sur les messages qui circulent dans votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f873d4e46c9e3b7f085e03a9fbb19e5914317fa
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d189a9f4b21828fa4e23f7d5a325b4e9c56259bc
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167034"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289936"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Règles de flux de courriers (règles de transport) dans EOP autonome
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour identifier les messages qui circulent dans votre organisation et agir sur ces derniers.
 
 Cette rubrique explique les composants des règles de flux de messagerie et leur fonctionnement.
 
-Pour obtenir la procédure de création, de copie et de gestion des règles de flux de messagerie, voir Gérer les règles de flux de [messagerie dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) Pour chaque règle, vous avez la possibilité de l'appliquer, de la tester ou bien de la tester et d'avertir l'expéditeur. Pour en savoir plus sur les options de test, voir Tester les règles de [flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) et les [conseils de stratégie dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)
+Pour obtenir la procédure de création, de copie et de gestion des règles de flux de messagerie, voir Gérer les règles de [flux de messagerie dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) Pour chaque règle, vous avez la possibilité de l'appliquer, de la tester ou bien de la tester et d'avertir l'expéditeur. Pour en savoir plus sur les options de test, voir Tester les règles de [flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) et les [conseils de stratégie dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 
 Pour obtenir des rapports récapitulatifs et détaillés sur les messages qui correspondent aux règles de flux de messagerie, voir Utiliser les rapports de protection de messagerie pour afficher les données sur les programmes malveillants, le courrier indésirable et les [détections de règles.](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)
 
@@ -51,7 +51,7 @@ Pour mettre en œuvre des stratégies de messagerie spécifiques à l'aide de r�
 
 - [Réduction des menaces de programmes malveillants par le biais du blocage des pièces jointes de fichier dans Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [Définir des règles pour chiffrer ou déchiffrer des messages électroniques dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
+- [Définir des règles pour chiffrer ou déchiffrer des messages électroniques dans Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
 La vidéo suivante présente une démonstration de la configuration des règles de flux de messagerie dans EOP autonome.
 
@@ -122,7 +122,7 @@ Plusieurs types de messages transitent par une organisation. Le tableau suivant 
 |Il existe plusieurs types de messages qui transitent par une organisation. Le tableau suivant montre quels types de messages peuvent être traités par les règles de transport.|Type de message|
 |---|---|
 |**Messages ordinaires**: messages qui contiennent un corps de message au format RTF, HTML ou texte brut, ou un ensemble de corps de message en plusieurs parties ou un autre ensemble.|Oui|
-|**Chiffrement de messages Office 365**: messages chiffrés par le chiffrement de messages Office 365 dans Office 365. Pour plus d'informations, voir [Chiffrement dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Les règles peuvent toujours accéder aux en-têtes des enveloppes contenus dans des messages protégés et traiter les messages en se basant sur les conditions qui analysent les en-têtes. <p> Pour qu'une règle examine ou modifie le contenu d'un message chiffré, vous devez vérifier que le déchiffrement du transport est activé (Obligatoire ou Facultatif ; la valeur par défaut est Facultatif). Pour plus d’informations, voir [Définir des règles pour chiffrer ou déchiffrer des messages électroniques dans Office 365.](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)|
+|**Chiffrement de messages Office 365**: messages chiffrés par le chiffrement de messages Office 365 dans Office 365. Pour plus d'informations, voir [Chiffrement dans Office 365](../../compliance/encryption.md).|Les règles peuvent toujours accéder aux en-têtes des enveloppes contenus dans des messages protégés et traiter les messages en se basant sur les conditions qui analysent les en-têtes. <p> Pour qu'une règle examine ou modifie le contenu d'un message chiffré, vous devez vérifier que le déchiffrement du transport est activé (Obligatoire ou Facultatif ; la valeur par défaut est Facultatif). Pour plus d’informations, voir [Définir des règles pour chiffrer ou déchiffrer des messages électroniques dans Office 365.](../../compliance/define-mail-flow-rules-to-encrypt-email.md)|
 |**Messages chiffrés S/MIME**|Les règles peuvent uniquement accéder aux en-têtes d'enveloppe et traiter les messages en fonction de conditions qui inspectent ces en-têtes. <p> Les règles avec conditions qui requièrent l'inspection du contenu des messages ou les actions qui modifient le contenu des messages ne peuvent pas être traitées.|
 |**Messages protégés par RMS**: messages sur services AD RMS (Active Directory Rights Management Services) (AD RMS) ou Azure Rights Management (RMS).|Les règles peuvent toujours accéder aux en-têtes des enveloppes contenus dans des messages protégés et traiter les messages en se basant sur les conditions qui analysent les en-têtes. <p> Pour qu'une règle examine ou modifie le contenu d'un message protégé par RMS, vous devez vérifier que le déchiffrement du transport est activé (Obligatoire ou Facultatif ; la valeur par défaut est Facultatif).|
 |**Messages signés en clair**: messages signés mais non chiffrés.|Oui|

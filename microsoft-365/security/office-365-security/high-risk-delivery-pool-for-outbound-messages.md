@@ -17,23 +17,23 @@ ms.collection:
 description: Découvrez comment les pools de remise sont utilisés pour protéger la réputation des serveurs de messagerie dans les centres de données Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5480916f55fc180a6f08d3c420cb92c730e4065b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 89aac1478d3e5840df4379b9f49832b79d0e133a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167538"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289804"
 ---
 # <a name="outbound-delivery-pools"></a>Pools de livraison sortante
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Les serveurs de messagerie dans les centres de données Microsoft 365 peuvent être temporairement en cours d’envoi de courrier indésirable. Par exemple, une attaque de programme malveillant ou de courrier indésirable malveillant dans une organisation de messagerie sur site qui envoie du courrier sortant via Microsoft 365 ou des comptes Microsoft 365 compromis. Les attaquants tentent également d’éviter la détection en relayant des messages via le forwarding Microsoft 365.
+Les serveurs de messagerie dans les centres de données Microsoft 365 peuvent être temporairement en cours d’envoi de courrier indésirable. Par exemple, une attaque de programme malveillant ou de courrier indésirable dans une organisation de messagerie sur site qui envoie du courrier sortant via Microsoft 365 ou des comptes Microsoft 365 compromis. Les attaquants tentent également d’éviter la détection en relayant des messages via le forwarding Microsoft 365.
 
 Ces scénarios peuvent entraîner l’apparition de l’adresse IP des serveurs de centre de données Microsoft 365 affectés sur des listes d’adresses IP tierces. Les organisations de messagerie de destination qui utilisent ces listes d’adresses bloqués rejetteront les messages provenant de ces sources de messages.
 
@@ -66,4 +66,4 @@ Tous ces problèmes peuvent entraîner une augmentation soudaine du nombre de ND
 
 Les messages qui sont transmis ou relayés à partir de Microsoft 365 sont envoyés à l’aide d’un pool de relais spécial, car la destination finale ne doit pas considérer Microsoft 365 comme l’expéditeur réel. Il est également important pour nous d’isoler ce trafic, car il existe des scénarios légitimes et non valides pour laforwarding automatique ou le relais du courrier électronique à partir de Microsoft 365. Comme pour le pool de remise à risque élevé, un pool d’adresses IP distinct est utilisé pour le courrier relayé. Ce pool d’adresses n’est pas publié, car il peut changer souvent.
 
-Microsoft 365 doit vérifier que l’expéditeur d’origine est légitime afin de pouvoir remettre en toute confiance le message transmis. Pour ce faire, l’authentification de messagerie (SPF, DKIM et DMARC) doit passer lorsque le message nous est envoyé. Dans les cas où nous pouvons authentifier l’expéditeur, nous utilisons la réécriture de l’expéditeur pour aider le destinataire à savoir que le message transmis est issu d’une source fiable. Vous pouvez en savoir plus sur le fonctionnement et ce que vous pouvez faire pour vous assurer que le domaine d’envoi passe l’authentification dans le schéma de réécriture de l’expéditeur [(SRS).](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)
+Microsoft 365 doit vérifier que l’expéditeur d’origine est légitime afin de pouvoir remettre en toute confiance le message transmis. Pour ce faire, l’authentification de messagerie (SPF, DKIM et DMARC) doit être directe lorsque le message nous est envoyé. Dans les cas où nous pouvons authentifier l’expéditeur, nous utilisons la réécriture de l’expéditeur pour aider le destinataire à savoir que le message transmis est issu d’une source fiable. Vous pouvez en savoir plus sur le fonctionnement et ce que vous pouvez faire pour vous assurer que le domaine d’envoi passe l’authentification dans le schéma de réécriture de l’expéditeur [(SRS).](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)

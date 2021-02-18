@@ -18,17 +18,21 @@ description: Les administrateurs et les utilisateurs finaux peuvent apprendre à
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5d3b7a51c39b85af8a6fae84f525da6d806789c
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 98964d17c41222fa708bdf0059c0e67151582ef1
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029583"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290368"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Envoyer manuellement des messages à Microsoft pour analyse
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > Si vous êtes un administrateur d’une organisation ayant des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail Soumissions dans le Centre de sécurité & conformité. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
@@ -45,7 +49,7 @@ Vous et vos utilisateurs pouvez vous aider à ce processus en envoyant des faux 
 > [!TIP]
 > Au lieu d’utiliser les procédures suivantes pour signaler les faux négatifs, les utilisateurs d’Outlook et d’Outlook sur le web (anciennement Outlook Web App) peuvent utiliser le add-in Report Message ou le add-in Report Phishing. Pour plus d’informations sur l’installation et l’utilisation de ces outils, voir [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
 
-Si vous recevez un message qui a été transmis par le biais du filtrage du courrier indésirable et qui doit avoir été identifié comme courrier indésirable ou hameçonnage, vous pouvez le soumettre aux équipes d’analyse du courrier indésirable de Microsoft et d’analyse du hameçonnage Microsoft, le cas échéant. Les analystes examinent le message et l’ajoutent aux filtres à l’échelle du service s’il répond aux critères de classification.
+Si vous recevez un message qui a été transmis par le biais du filtrage du courrier indésirable et qui doit avoir été identifié comme courrier indésirable ou hameçonnage, vous pouvez envoyer le message aux équipes d’analyse du courrier indésirable de Microsoft et d’analyse du hameçonnage Microsoft, le cas échéant. Les analystes examinent le message et l’ajoutent aux filtres à l’échelle du service s’il répond aux critères de classification.
 
 1. Créez un message électronique vide avec l’un des destinataires suivants :
 
@@ -53,7 +57,7 @@ Si vous recevez un message qui a été transmis par le biais du filtrage du cour
 
    - **Hameçonnage**: `phish@office365.microsoft.com`
 
-2. Faites glisser et déposez le message de courrier indésirable ou de hameçonnage dans le nouveau message. Cela permet d’enregistrer le message de courrier indésirable ou de hameçonnage en tant que pièce jointe dans le nouveau message. Ne copiez pas et ne collez pas le contenu du message ou ne le faites pas passer (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes du message).
+2. Faites glisser et déposez le message de courrier indésirable ou de hameçonnage dans le nouveau message. Cela permet d’enregistrer le message de courrier indésirable ou de hameçonnage en tant que pièce jointe dans le nouveau message. Ne copiez et collez pas le contenu du message ou ne le faites pas passer (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes du message).
 
    > [!NOTE]
    >

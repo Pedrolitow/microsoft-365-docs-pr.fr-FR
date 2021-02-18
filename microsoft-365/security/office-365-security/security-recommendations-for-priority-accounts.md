@@ -20,12 +20,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans leurs organisations Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 814ca47ee48e844e313f7d75640643a0b659c527
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4038a9abc3357bb72a0c21db3e4ca4679c1aa745
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166368"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290750"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations en matière de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -44,7 +44,7 @@ Microsoft 365 et Microsoft Defender pour Office 365 contiennent plusieurs foncti
 |[Renforcer la sécurité de la signature pour les comptes prioritaires](#increase-sign-in-security-for-priority-accounts)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Utiliser des stratégies de sécurité prédéfines strictes pour les comptes prioritaires](#use-strict-preset-security-policies-for-priority-accounts)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Appliquer des balises utilisateur à des comptes prioritaires](#apply-user-tags-to-priority-accounts)|||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[Surveiller les comptes de priorité dans les alertes, les rapports et les détections](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Surveiller les comptes prioritaires dans les alertes, les rapports et les détections](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Former les utilisateurs](#train-users)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
@@ -52,7 +52,7 @@ Microsoft 365 et Microsoft Defender pour Office 365 contiennent plusieurs foncti
 
 Les comptes prioritaires nécessitent une sécurité accrue de la signature. Vous pouvez augmenter la sécurité de leur authentification en exigeant une authentification multifacteur (MFA) et en désactivant les protocoles d’authentification hérités.
 
-Pour obtenir des instructions, [consultez l’étape 1. Renforcer la sécurité de la sign-in pour les travailleurs à distance avec l’fa MFA](https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in). Bien que cet article porte sur les travailleurs à distance, les mêmes concepts s’appliquent aux utilisateurs prioritaires.
+Pour obtenir des instructions, [consultez l’étape 1. Renforcer la sécurité de la sign-in pour les travailleurs à distance avec l’fa MFA](../../solutions/empower-people-to-work-remotely-secure-sign-in.md). Bien que cet article porte sur les travailleurs à distance, les mêmes concepts s’appliquent aux utilisateurs prioritaires.
 
 **Remarque**: nous vous recommandons vivement de désactiver globalement les protocoles d’authentification hérités pour tous les utilisateurs prioritaires, comme décrit dans l’article précédent. Si vos besoins commerciaux vous en empêchent, Exchange Online propose les contrôles suivants pour limiter l’étendue des protocoles d’authentification hérités :
 
@@ -72,19 +72,19 @@ Par exemple, au lieu de remettre des messages classés comme courrier indésirab
 
 Vous pouvez implémenter cette approche rigoureuse pour les comptes prioritaires à l’aide du profil Strict dans les stratégies de sécurité prédéfines.
 
-Les stratégies de sécurité prédéfines sont un emplacement pratique et central pour appliquer nos paramètres de stratégie stricts recommandés pour toutes les protections dans EOP et Defender pour Office 365. Pour plus d’informations, voir Stratégies de sécurité [prédéfini dans EOP et Microsoft Defender pour Office 365.](preset-security-policies.md)
+Les stratégies de sécurité prédéfinées sont un emplacement pratique et central pour appliquer nos paramètres de stratégie stricts recommandés pour toutes les protections dans EOP et Defender pour Office 365. Pour plus d’informations, voir Stratégies de sécurité [prédéfini dans EOP et Microsoft Defender pour Office 365.](preset-security-policies.md)
 
-Pour plus d’informations sur la différence entre les paramètres de stratégie Strict et les paramètres de stratégie standard et par défaut, voir Paramètres recommandés pour EOP et Microsoft Defender pour la sécurité [Office 365.](recommended-settings-for-eop-and-office365-atp.md)
+Pour plus d’informations sur la différence entre les paramètres de stratégie Strict et les paramètres de stratégie par défaut et Standard, voir Paramètres recommandés pour EOP et Microsoft Defender pour la sécurité [Office 365.](recommended-settings-for-eop-and-office365-atp.md)
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>Appliquer des balises utilisateur à des comptes prioritaires
 
 Les balises utilisateur dans Microsoft Defender pour Office 365 Plan 2 (dans le cadre de Microsoft 365 E5 ou d’un abonnement de modules supplémentaires) sont un moyen d’identifier et de classer rapidement des utilisateurs ou des groupes d’utilisateurs spécifiques dans des rapports et des enquêtes d’incident.
 
-**Les comptes de priorité** sont un type de balise utilisateur intégrée (appelée balise _système)_ que vous pouvez utiliser pour identifier les incidents et les alertes impliquant des comptes prioritaires. Pour plus d’informations **sur les comptes prioritaires,** voir [Gérer et surveiller les comptes de priorité.](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
+**Les comptes de priorité** sont un type de balise utilisateur intégrée (appelée balise _système)_ que vous pouvez utiliser pour identifier les incidents et les alertes impliquant des comptes prioritaires. Pour plus d’informations **sur les comptes prioritaires,** voir [Gérer et surveiller les comptes de priorité.](../../admin/setup/priority-accounts.md)
 
 Vous pouvez également créer des balises personnalisées pour identifier et classer vos comptes prioritaires. Pour plus d’informations, voir [Balises utilisateur.](user-tags.md) Notez que vous pouvez gérer les **comptes de priorité (balises** système) dans la même interface que les balises utilisateur personnalisées.
 
-## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Surveiller les comptes de priorité dans les alertes, les rapports et les détections
+## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Surveiller les comptes prioritaires dans les alertes, les rapports et les détections
 
 Après avoir sécurisé et identifié vos utilisateurs prioritaires, vous pouvez utiliser les rapports, alertes et enquêtes disponibles dans EOP et Defender pour Office 365 pour identifier rapidement les incidents ou les détections impliquant des comptes prioritaires. Les fonctionnalités qui la prise en charge des balises utilisateur sont décrites dans le tableau suivant.
 
@@ -94,18 +94,18 @@ Après avoir sécurisé et identifié vos utilisateurs prioritaires, vous pouvez
 
 |Fonctionnalité|Description|
 |---|---|
-|Alertes|Les balises utilisateur des utilisateurs affectés sont visibles et disponibles en tant que filtres dans la page Afficher les **alertes** dans le Centre de sécurité & conformité. Pour plus d’informations, voir [Affichage des alertes.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)|
-|Threat Explorer <p> Détections en temps réel|Dans l’Explorateur de menaces **(Microsoft** Defender pour Office 365 Plan 2) ou les **détections** en temps réel (Microsoft Defender pour Office 365 Plan 1), les balises d’utilisateur sont visibles dans l’affichage Grille courrier et le volant Détails du courrier électronique. Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, [voir Balises dans l’Explorateur de menaces.](threat-explorer.md#tags-in-threat-explorer)|
+|Alertes|Les balises utilisateur des utilisateurs affectés sont visibles et disponibles en tant que filtres dans la page Afficher les **alertes** dans le Centre de sécurité & conformité. Pour plus d’informations, voir [Affichage des alertes.](../../compliance/alert-policies.md#viewing-alerts)|
+|Threat Explorer <p> Détections en temps réel|Dans l’Explorateur de menaces **(Microsoft** Defender pour Office 365 Plan 2) ou les **détections** en temps réel (Microsoft Defender pour Office 365 Plan 1), les balises utilisateur sont visibles dans l’affichage Grille courrier et le volant Détails du courrier électronique. Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, [voir Balises dans l’Explorateur de menaces.](threat-explorer.md#tags-in-threat-explorer)|
 |Vues de campagne|Les balises utilisateur sont l’une des nombreuses propriétés filtrables dans les affichages campagne dans Microsoft Defender pour Office 365 Plan 2. Pour plus d’informations, voir [Affichages de campagne.](campaigns.md)|
 |Rapport sur l’état de la protection contre les menaces|Dans la quasi-ensemble des vues et des tableaux détaillés du rapport d’état de **la protection** contre les **menaces,** vous pouvez filtrer les résultats par compte de priorité. Pour plus d’informations, consultez [le rapport d’état de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)|
-|Rapport sur les problèmes de messagerie pour le rapport des comptes prioritaires|Le rapport Problèmes de messagerie pour les comptes de priorité dans le Centre d’administration Exchange (EAC) contient des informations sur les messages non reçus et **différés** pour les comptes **prioritaires.** Pour plus d’informations, [consultez le rapport Problèmes de messagerie pour le rapport des comptes prioritaires.](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
+|Problèmes de messagerie pour le rapport des comptes prioritaires|Le rapport Problèmes de messagerie pour les comptes de priorité dans le Centre d’administration Exchange (EAC) contient des informations sur les messages non reçus et **différés** pour les comptes **prioritaires.** Pour plus d’informations, [consultez le rapport Problèmes de messagerie pour le rapport des comptes prioritaires.](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
 |
 
 ## <a name="train-users"></a>Former les utilisateurs
 
-La formation des utilisateurs avec des comptes prioritaires peut aider à gagner beaucoup de temps et de frustration à ces utilisateurs et à votre équipe des opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et sont plus susceptibles d’éviter les sites web suspects.
+La formation des utilisateurs avec des comptes prioritaires peut aider à gagner beaucoup de temps et de frustration à ces utilisateurs et à votre équipe des opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et ils sont plus susceptibles d’éviter les sites web suspects.
 
-Le manuel de campagne de [cyber-sécurité](https://www.belfercenter.org/CyberPlaybook) de l’établissement d’enseignement de l’établissement d’une culture forte de sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage.
+Le manuel de campagne de [cyber-sécurité](https://www.belfercenter.org/CyberPlaybook) de l’établissement d’un établissement scolaire de contrôle de la sécurité fournit d’excellents conseils pour établir une culture forte de sensibilisation à la sécurité au sein de votre organisation, notamment pour former les utilisateurs à l’identification des attaques par hameçonnage.
 
 Microsoft 365 fournit les ressources suivantes pour aider à informer les utilisateurs de votre organisation :
 

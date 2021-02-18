@@ -14,19 +14,19 @@ description: Découvrez comment gérer les utilisateurs de messagerie dans Excha
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34edafea7567da04094ea386d469d3d27937eee5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6a0dc1c0c343be77c6d6f713ee6b68a08a4fe5be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166392"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289912"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Gérer les utilisateurs d’e-mail dans EOP autonome
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
--  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonome](exchange-online-protection-overview.md)
 
 Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, les utilisateurs de messagerie représentent le type fondamental de compte d’utilisateur. Un utilisateur de messagerie dispose d’informations d’identification de compte dans votre organisation EOP autonome et peut accéder aux ressources (avoir des autorisations affectées). L’adresse de messagerie d’un utilisateur de messagerie est externe (par exemple, dans votre environnement de messagerie local).
 
@@ -45,12 +45,12 @@ Pour les organisations EOP autonomes avec un petit nombre d’utilisateurs, vous
 
 - Lorsque vous créez des utilisateurs de messagerie dans EOP PowerShell, vous pouvez rencontrer une limitation. En outre, les cmdlets EOP PowerShell utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes ne soient visibles.
 
-- Des autorisations doivent vous être attribuées dans Exchange Online Protection avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin des **rôles** Création **(créer)** et Destinataires de messagerie (modifier),  qui sont affectés par défaut aux groupes de rôles Gestion de l’organisation **(administrateurs** globaux) et Gestion des destinataires. Pour plus d’informations, voir [Autorisations](feature-permissions-in-eop.md) dans EOP autonome et utiliser le CAE pour modifier la liste des membres des groupes [de rôles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Des autorisations doivent vous être attribuées dans Exchange Online Protection avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin des **rôles** Création **(créer)** et Destinataires de messagerie (modifier),  qui sont affectés par défaut aux groupes de rôles Gestion de l’organisation **(administrateurs** globaux) et Gestion des destinataires. Pour plus d’informations, voir Autorisations dans [EOP](feature-permissions-in-eop.md) autonome et utiliser le CAE pour modifier la liste des membres des [groupes de rôles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cet article, voir raccourcis clavier pour le Centre d’administration [Exchange dans Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez le forum [Exchange Online Protection.](https://go.microsoft.com/fwlink/p/?linkId=285351)
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez le forum [Exchange Online Protection.](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)
 
 ## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Utiliser le Centre d’administration Exchange pour gérer les utilisateurs de messagerie
 
@@ -70,7 +70,7 @@ Pour les organisations EOP autonomes avec un petit nombre d’utilisateurs, vous
 
    - <sup>\*</sup>**Alias**: entrez un alias unique, en utilisant jusqu’à 64 caractères, pour l’utilisateur
 
-   - **Adresse de messagerie externe**: entrez l’adresse e-mail de l’utilisateur. Le domaine doit être externe à votre organisation informatique.
+   - **Adresse de messagerie externe**: entrez l’adresse de messagerie de l’utilisateur. Le domaine doit être externe à votre organisation informatique.
 
    - <sup>\*</sup>**ID d’utilisateur**: entrez le compte que la personne utilisera pour se connecter au service. L’ID d’utilisateur se compose d’un nom d’utilisateur sur le côté gauche du symbole @) et d’un domaine sur le côté droit.
 

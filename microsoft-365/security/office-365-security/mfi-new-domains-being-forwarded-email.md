@@ -9,26 +9,26 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: ''
-description: Les administrateurs peuvent apprendre à utiliser les informations sur les nouveaux domaines qui sont transmis par courrier électronique dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour examiner le moment où leurs utilisateurs envoient des messages à des domaines externes qui n’ont jamais été transmis.
+description: Les administrateurs peuvent apprendre à utiliser les informations sur les nouveaux domaines qui sont transmis par courrier électronique dans le tableau de bord du flux de messagerie dans le Centre de sécurité & conformité pour examiner le moment où leurs utilisateurs envoient des messages à des domaines externes qui n’ont jamais été transmis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4429f1657861091082fdfaedb52c85cec3a0cc1
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: fd026b31b7cb678ff1f091579c67a3958b159c09
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150599"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289460"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Informations sur les nouveaux domaines transmis par courrier électronique dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Il existe des raisons professionnelles valides de faire passer des messages électroniques à des destinataires externes dans des domaines spécifiques. Toutefois, il est suspect lorsque les utilisateurs de votre organisation commencent soudainement à envoyer des messages vers un domaine vers lequel aucun utilisateur de votre organisation n’a jamais transmis de messages (un nouveau domaine).
+Il existe des raisons professionnelles valides de faire passer des messages électroniques à des destinataires externes dans des domaines spécifiques. Toutefois, il est suspect lorsque les utilisateurs de votre organisation commencent soudainement à forwardr des messages vers un domaine vers lequel aucun utilisateur de votre organisation n’a jamais transmis de messages (un nouveau domaine).
 
 Cette condition peut indiquer que les comptes d’utilisateur sont compromis. Si vous pensez que les comptes ont été compromis, voir Répondre [à un compte de messagerie compromis.](responding-to-a-compromised-email-account.md)
 
@@ -46,6 +46,6 @@ Vous pouvez également vous rendre sur cette page de  détails lorsque vous sél
 
 Pour empêcher le transmission automatique de messages à des domaines externes, configurez un domaine distant pour certains domaines externes ou tous. Pour plus d’informations, voir [Gérer les domaines distants dans Exchange Online.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)
