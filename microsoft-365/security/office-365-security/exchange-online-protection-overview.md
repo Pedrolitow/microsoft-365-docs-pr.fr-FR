@@ -15,27 +15,27 @@ ms.custom:
 description: Découvrez comment Exchange Online Protection (EOP) peut vous aider à protéger votre organisation de messagerie sur site dans des environnements autonomes et hybrides.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b84ac26333163caec6117cf042044b9bbfad0a4f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e8e3d44cb39e3569179d4155e32a8c11e0a5be56
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165462"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286884"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d’ensemble d’Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
--    [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
--    [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Exchange Online Protection (EOP) est le service de filtrage informatique qui permet de protéger votre organisation contre le courrier indésirable et les programmes malveillants. EOP est inclus dans toutes les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online. Toutefois, EOP est également disponible dans les scénarios locaux suivants :
 
 - **Dans un scénario** autonome : EOP fournit une protection de messagerie en nuage pour votre organisation Exchange locale ou pour toute autre solution de messagerie SMTP locale.
 
-- **Dans un** déploiement hybride : EOP peut être configuré pour protéger votre environnement de messagerie et contrôler le routage des messages lorsque vous avez une combinaison de boîtes aux lettres sur site et en nuage.
+- **Dans un** déploiement hybride : EOP peut être configuré pour protéger votre environnement de messagerie et contrôler le routage des messages lorsque vous avez une combinaison de boîtes aux lettres sur site et cloud.
 
 Dans ces scénarios, EOP peut simplifier la gestion de votre environnement de messagerie et réduire la plupart des charges qui s’offrent à la maintenance du matériel et des logiciels locaux.
 
@@ -45,15 +45,15 @@ Le reste de cette rubrique explique comment EOP fonctionne dans les environnemen
 
 Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier entrant est traité :
 
-:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphique du courrier électronique provenant d’Internet ou du retour du client passant dans EOP et via la connexion, la protection contre les programmes malveillants, le filtrage de stratégie de barre oblique de flux de messagerie et le filtrage de contenu, avant le verdict de courrier indésirable ou de mise en quarantaine, ou la remise du courrier de l’utilisateur final.":::
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphique du courrier électronique provenant d’Internet ou du retour du client passant dans EOP et via la connexion, la protection contre les programmes malveillants, le filtrage de stratégies de barre oblique de flux de messagerie et le filtrage de contenu, avant le verdict de courrier indésirable ou de mise en quarantaine, ou la remise du courrier de l’utilisateur final.":::
 
 - Lorsqu’un message entrant entre dans EOP, il passe initialement par le filtrage des connexions, qui vérifie la réputation de l’expéditeur. La majorité du courrier indésirable est arrêté à ce stade et rejeté par EOP. Pour plus d’informations, consultez [Configuration du filtrage des connexions](configure-the-connection-filter-policy.md).
 
-- Le message est ensuite inspecté à la recherche de signes de programmes malveillants. Si un programme malveillant est détecté dans le message ou la ou les pièces jointes, le message est acheminé vers une mise en quarantaine de l’administrateur uniquement. Vous pouvez en savoir plus sur la configuration anti-programme malveillant [ici.](configure-anti-malware-policies.md)
+- Ensuite, le message est inspecté à la recherche de signes de programmes malveillants. Si un programme malveillant est détecté dans le message ou la ou les pièces jointes, le message est acheminé vers une mise en quarantaine de l’administrateur uniquement. Vous pouvez en savoir plus sur la configuration anti-programme malveillant [ici.](configure-anti-malware-policies.md)
 
 - Les messages continuent par le filtrage des stratégies, où ils sont évalués par rapport aux règles de flux de messagerie personnalisées (également appelées règles de transport) que vous créez ou appliquez à partir d’un modèle. Par exemple, vous pouvez avoir une règle qui envoie une notification à un responsable lorsque le courrier arrive à partir d’un expéditeur spécifique. Les vérifications de protection contre la perte de données (DLP) se produisent également à ce stade (cal Exchange Enterprise avec Services).
 
-- Ensuite, le message passe par le filtrage de contenu (également appelé anti-courrier indésirable). Un message que ce filtre  détermine comme courrier indésirable ou hameçonnage peut être mis en quarantaine, ou le dossier Courrier indésirable d’un utilisateur, entre autres options. Pour plus d’informations, [voir Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies](configure-anti-phishing-policies-eop.md).
+- Ensuite, le message passe par le filtrage de contenu (également appelé anti-courrier indésirable). Un message que ce filtre  détermine comme courrier indésirable ou hameçonnage peut être mis en quarantaine, ou le dossier Courrier indésirable d’un utilisateur, entre autres options. Pour plus d’informations, voir [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies](configure-anti-phishing-policies-eop.md).
 
 Tout message qui transmet toutes ces couches de protection est remis au destinataire.
 
@@ -113,7 +113,7 @@ Le contenu de l’aide pour les administrateurs d’EOP se compose des catégori
 
 - Flux de messagerie dans [EOP](mail-flow-in-eop.md): décrit comment configurer des scénarios de flux de messagerie personnalisés à l’aide de connecteurs, comment gérer les domaines associés au service et comment activer la fonctionnalité de blocage du périphérie basé sur l’annuaire (DBEB).
 
-- [Meilleures pratiques pour la configuration d’EOP](best-practices-for-configuring-eop.md): décrit les paramètres de configuration recommandés et les éléments à prendre en compte après avoir configuré et mis en service votre service.
+- [Meilleures pratiques pour la configuration d’EOP](best-practices-for-configuring-eop.md): décrit les paramètres de configuration recommandés et les considérations à prendre en compte après avoir configuré et mis en service votre service.
 
 - [Rapports d’audit dans EOP autonome](auditing-reports-in-eop.md): décrit comment utiliser les rapports d’audit pour suivre les modifications de configuration apportées au service.
 

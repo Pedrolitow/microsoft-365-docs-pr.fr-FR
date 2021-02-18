@@ -1,5 +1,5 @@
 ---
-title: Détecter et résoudre les attaques d’injections de formulaires personnalisés et de règles Outlook.
+title: Détecter et corriger les règles Outlook et les attaques par injection de formulaires personnalisés.
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -11,232 +11,233 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365
+description: Découvrez comment reconnaître et corriger les règles Outlook et les attaques par injection de formulaires personnalisés dans Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cbdc41315d64d341248d6900147aabc5a0b9877c
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e22cfa97ae59fdd094c161cdaeff899dc1dd6507
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663642"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286392"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et résoudre les attaques d’injections de formulaires personnalisés et de règles Outlook
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et corriger les règles Outlook et les attaques par injection de formulaires personnalisés
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-**Résumé** Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365.
+**Résumé** Découvrez comment reconnaître et corriger les règles Outlook et les attaques par injection de formulaires personnalisées dans Office 365.
 
-## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Qu’est-ce que les règles Outlook et les attaques par injection de formulaires personnalisés ?
+## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Qu’est-ce que l’attaque par injection de règles Outlook et de formulaires personnalisés ?
 
-Une fois qu’un agresseur a enfreint un compte de votre location et que vous vous trouvez dans, il y a un moyen d’essayer de revenir sur ou de revenir une fois qu’il a été découvert et supprimé. Il s’agit de l’établissement d’un mécanisme de persistance. Il existe deux façons de le faire en exploitant les règles Outlook ou en injectant des formulaires personnalisés dans Outlook.
-Dans les deux cas, la règle ou le formulaire est synchronisé à partir du service Cloud vers le client de bureau, de sorte qu’un format complet et une réinstallation du logiciel client n’éliminent pas le mécanisme d’injection. Cela est dû au fait que lorsque le logiciel client Outlook se reconnecte à la boîte aux lettres dans le Cloud, il télécharge de nouveau les règles et les formulaires à partir du Cloud. Une fois que les règles et les formulaires sont en place, l’agresseur les utilise pour exécuter du code distant ou personnalisé, généralement pour installer des programmes malveillants sur l’ordinateur local. Le programme malveillant revole ensuite les informations d’identification ou effectue une autre activité illicite.
-La bonne nouvelle est que si vous maintenez vos clients patchés vers la dernière version, vous n’êtes pas vulnérable à la menace comme les valeurs par défaut du client Outlook bloquent les deux mécanismes.
+Une fois qu’une personne malveillante a enfreint un compte dans votre location et y est retentée, vous allez essayer d’établir un moyen de rester dans votre client ou de le récupérer une fois qu’il a été détecté et supprimé. Il s’agit de l’établissement d’un mécanisme de persistance. Pour ce faire, ils peuvent exploiter les règles Outlook ou injecter des formulaires personnalisés dans Outlook.
+Dans les deux cas, la règle ou le formulaire est synchronisé du service cloud au client de bureau, de sorte qu’un format complet et une nouvelle installation du logiciel client n’éliminent pas le mécanisme d’injection. Cela est dû au fait que lorsque le logiciel client Outlook se reconnecte à la boîte aux lettres dans le cloud, il télécharge à nouveau les règles et les formulaires à partir du cloud. Une fois que les règles et les formulaires sont en place, l’attaquant les utilise pour exécuter du code à distance ou personnalisé, généralement pour installer des programmes malveillants sur l’ordinateur local. Le programme malveillant dérobera ensuite à nouveau les informations d’identification ou effectue d’autres activités illicites.
+La bonne nouvelle ici est que si vous conservez vos clients corrigés sur la dernière version, vous n’êtes pas vulnérable à la menace, car les valeurs par défaut actuelles du client Outlook bloquent les deux mécanismes.
 
-Les attaques suivent généralement ces modèles :
+Les attaques suivent généralement les modèles ci-après :
 
-**Les règles exploitent les** éléments suivants :
+**L’exploit des règles**:
 
-1. L’agresseur vole le nom d’utilisateur et le mot de passe de l’un de vos utilisateurs.
+1. L’attaquant volera le nom d’utilisateur et le mot de passe de l’un de vos utilisateurs.
 
-2. L’agresseur se connecte ensuite à la boîte aux lettres Exchange de ces utilisateurs. La boîte aux lettres peut être dans Exchange Online ou dans Exchange en local.
+2. L’attaquant se signe ensuite à cette boîte aux lettres Exchange d’utilisateurs. La boîte aux lettres peut se trouver dans Exchange online ou dans Exchange local.
 
-3. L’agresseur crée ensuite une règle de transfert dans la boîte aux lettres qui est déclenchée lorsque la boîte aux lettres reçoit un e-mail correspondant aux critères de la règle. Les critères de règle et le contenu du déclencheur de messagerie sont conçus pour les deux.
+3. L’attaquant crée ensuite une règle de forwarding dans la boîte aux lettres qui est déclenchée lorsque la boîte aux lettres reçoit un message électronique qui correspond aux critères de la règle. Les critères de règle et le contenu de l’e-mail déclencheur sont personnalisés les uns pour les autres.
 
-4. L’agresseur envoie le message du déclencheur à l’utilisateur qui utilise sa boîte aux lettres normalement.
+4. L’attaquant envoie le message électronique de déclencheur à l’utilisateur qui utilise normalement sa boîte aux lettres.
 
-5. Lorsque le message électronique est reçu, la règle est déclenchée. L’action de la règle consiste généralement à lancer une application sur un serveur distant (WebDAV).
+5. Lorsque l’e-mail est reçu, la règle est déclenchée. L’action de la règle consiste généralement à lancer une application sur un serveur distant (WebDAV).
 
-6. L’application installe généralement des programmes malveillants, tels que [PowerShell Empire](https://www.powershellempire.com/), localement sur l’ordinateur de l’utilisateur.
+6. L’application installe généralement des programmes malveillants, tels que [Powershell Dernier,](https://www.powershellempire.com/)localement sur l’ordinateur de l’utilisateur.
 
-7. Le programme malveillant permet à l’agresseur de revoler le nom d’utilisateur et le mot de passe de l’utilisateur ou d’autres informations d’identification à partir de l’ordinateur local et d’effectuer d’autres activités malveillantes.
+7. Le programme malveillant permet à l’attaquant de voler à nouveau le nom d’utilisateur et le mot de passe de l’utilisateur ou d’autres informations d’identification de l’ordinateur local et d’effectuer d’autres activités malveillantes.
 
-**Exploitez les formulaires**:
+**L’exploit de formulaires**:
 
-1. L’agresseur vole le nom d’utilisateur et le mot de passe de l’un de vos utilisateurs.
+1. L’attaquant volera le nom d’utilisateur et le mot de passe de l’un de vos utilisateurs.
 
-2. L’agresseur se connecte ensuite à la boîte aux lettres Exchange de ces utilisateurs. La boîte aux lettres peut être dans Exchange Online ou dans Exchange en local.
+2. L’attaquant se connecte ensuite à la boîte aux lettres Exchange des utilisateurs. La boîte aux lettres peut se trouver dans Exchange online ou dans Exchange local.
 
-3. L’agresseur crée ensuite un modèle de formulaire de messagerie personnalisé et l’insère dans la boîte aux lettres de l’utilisateur. Le formulaire personnalisé est déclenché lorsque la boîte aux lettres reçoit un message électronique qui exige que la boîte aux lettres charge le formulaire personnalisé. Le formulaire personnalisé et le format des courriers électroniques sont conçus pour les deux.
-4. L’agresseur envoie le message de déclenchement à l’utilisateur qui utilise normalement sa boîte aux lettres.
+3. L’attaquant crée ensuite un modèle de formulaire de courrier personnalisé et l’insère dans la boîte aux lettres de l’utilisateur. Le formulaire personnalisé est déclenché lorsque la boîte aux lettres reçoit un message électronique qui exige que la boîte aux lettres charge le formulaire personnalisé. Le formulaire personnalisé et le format de courrier électronique sont personnalisés les uns pour les autres.
+4. L’attaquant envoie le message électronique de déclencheur à l’utilisateur, qui utilise normalement sa boîte aux lettres.
 
-5. Lorsque le message électronique est reçu, le formulaire est chargé. Le formulaire lance une application sur un serveur distant (WebDAV).
+5. Lorsque l’e-mail est reçu, le formulaire est chargé. Le formulaire lance une application sur un serveur distant (WebDAV).
 
-6. L’application installe généralement des programmes malveillants, tels que [PowerShell Empire](https://www.powershellempire.com/), localement sur l’ordinateur de l’utilisateur.
+6. L’application installe généralement des programmes malveillants, tels que [Powershell Dernier,](https://www.powershellempire.com/)localement sur l’ordinateur de l’utilisateur.
 
-7. Le programme malveillant permet à l’agresseur de revoler le nom d’utilisateur et le mot de passe de l’utilisateur ou d’autres informations d’identification à partir de l’ordinateur local et d’effectuer d’autres activités malveillantes.
+7. Le programme malveillant permet à l’attaquant de voler à nouveau le nom d’utilisateur et le mot de passe de l’utilisateur ou d’autres informations d’identification de l’ordinateur local et d’effectuer d’autres activités malveillantes.
 
-## <a name="what-a-rules-and-custom-forms-injection-attack-might-look-like-office-365"></a>Quelles sont les règles et les attaques par injection de formulaires personnalisés qui peuvent ressembler à Office 365 ?
+## <a name="what-a-rules-and-custom-forms-injection-attack-might-look-like-office-365"></a>À quoi pourrait ressembler une attaque par injection de règles et de formulaires personnalisés dans Office 365 ?
 
-Il est peu probable que ces mécanismes de persistance soient remarqués par vos utilisateurs et, dans certains cas, ils ne soient pas visibles. Cet article vous indique comment rechercher les sept signes (indicateurs de compromis) ci-dessous. Si vous trouvez l’un de ces éléments, vous devez prendre des mesures de correction.
+Ces mécanismes de persistance sont peu susceptibles d’être remarqués par vos utilisateurs et peuvent même, dans certains cas, leur être invisibles. Cet article vous indique comment rechercher l’un des sept signes (Indicateurs de compromis) répertoriés ci-dessous. Si vous trouvez l’un de ces éléments, vous devez prendre des mesures correctives.
 
-- Les indicateurs des règles sont compromis :
+- Indicateurs de compromission des règles :
 
   - L’action de la règle consiste à démarrer une application.
 
-  - La règle fait référence à un EXE, un ZIP ou une URL.
+  - La règle fait référence à un FICHIER EXE, ZIP ou URL.
 
-  - Sur l’ordinateur local, recherchez les démarrages de nouveau processus issus du PID Outlook.
+  - Sur l’ordinateur local, recherchez les nouveaux processus qui démarrent à partir du piD Outlook.
 
-- Indicateurs des formulaires personnalisés compromis :
+- Indicateurs de compromission des formulaires personnalisés :
 
-  - Formulaire personnalisé présent enregistré comme sa propre classe de message.
+  - Formulaire personnalisé présent enregistré en tant que classe de message.
 
   - La classe de message contient du code exécutable.
 
-  - Généralement stocké dans les dossiers de la boîte de réception ou de la bibliothèque des formulaires personnels.
+  - Généralement stocké dans des dossiers de la bibliothèque de formulaires personnels ou de la boîte de réception.
 
-  - Le formulaire est appelé IPM. Note. [nom personnalisé].
+  - Le formulaire est nommé IPM. Remarque. [nom personnalisé].
 
-## <a name="steps-for-finding-signs-of-this-attack-and-confirming-it"></a>Étapes permettant de trouver des signes de cette attaque et de la confirmer
+## <a name="steps-for-finding-signs-of-this-attack-and-confirming-it"></a>Étapes de recherche et de confirmation de cette attaque
 
-Vous pouvez utiliser l’une ou l’autre de ces deux méthodes pour confirmer l’attaque :
+Vous pouvez utiliser l’une de ces deux méthodes pour confirmer l’attaque :
 
-- Examinez manuellement les règles et les formulaires de chaque boîte aux lettres à l’aide du client Outlook. Cette méthode est exhaustive, mais vous pouvez vérifier uniquement l’utilisateur de boîte aux lettres à la fois, ce qui peut prendre beaucoup de temps si vous avez un grand nombre d’utilisateurs à vérifier. Cela peut également entraîner une violation de l’ordinateur à partir duquel vous exécutez la vérification.
+- Examinez manuellement les règles et les formulaires pour chaque boîte aux lettres à l’aide du client Outlook. Cette méthode est minutieuse, mais vous ne pouvez vérifier l’utilisateur de boîte aux lettres qu’à un moment qui peut être très long si vous avez de nombreux utilisateurs à vérifier. Cela peut également entraîner une violation de l’ordinateur à partir de qui vous exécutez la vérification.
 
-- Utilisez le script [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell pour vider automatiquement toutes les règles de transfert de courrier et les formulaires personnalisés pour tous les utilisateurs de votre client. Il s’agit de la méthode la plus rapide et la plus sécurisée avec la charge minimale.
+- Utilisez le script [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell pour vider automatiquement toutes les règles de forwarding de courrier et les formulaires personnalisés pour tous les utilisateurs de votre location. Il s’agit de la méthode la plus rapide et la plus sûre avec la charge de traitement la moins importante.
 
-### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Confirmer l’attaque des règles à l’aide du client Outlook
+### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Confirmer l’attaque par règles à l’aide du client Outlook
 
-1. Ouvrez le client Outlook utilisateurs en tant qu’utilisateur. L’utilisateur peut avoir besoin de votre aide pour examiner les règles de sa boîte aux lettres.
+1. Ouvrez le client Outlook des utilisateurs en tant qu’utilisateur. L’utilisateur peut avoir besoin de votre aide pour examiner les règles de sa boîte aux lettres.
 
-2. Reportez-vous à l’article [gérer les messages électroniques à l’aide des règles](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) pour les procédures relatives à l’ouverture de l’interface des règles dans Outlook.
+2. [Reportez-vous à l’article](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) Gérer les messages électroniques à l’aide de l’article règles pour les procédures d’ouverture de l’interface de règles dans Outlook.
 
-3. Recherchez les règles que l’utilisateur n’a pas créées, ou toute règle ou règle inattendue avec des noms suspects.
+3. Recherchez les règles que l’utilisateur n’a pas créés, ou les règles ou règles inattendues avec des noms suspects.
 
-4. Recherchez dans la description de règle les actions de règle qui commencent et application ou font référence à un. EXE,. Fichier ZIP ou pour lancer une URL.
+4. Dans la description de la règle, recherchez les actions de règle qui démarrent et s’applicationnt ou font référence à un . EXE, . Fichier ZIP ou lancement d’une URL.
 
-5. Recherchez les nouveaux processus qui commencent à utiliser l’ID de processus Outlook. Reportez-vous à [Rechercher l’ID de processus](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-the-process-id).
+5. Recherchez les nouveaux processus qui commencent à utiliser l’ID de processus Outlook. Reportez-vous [à Rechercher l’ID de processus.](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-the-process-id)
 
-### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>Étapes pour confirmer l’attaque de formulaires à l’aide du client Outlook
+### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>Étapes de confirmation de l’attaque par formulaires à l’aide du client Outlook
 
-1. Ouvrez le client Outlook utilisateur en tant qu’utilisateur.
+1. Ouvrez le client Outlook de l’utilisateur en tant qu’utilisateur.
 
-2. Suivez les étapes décrites dans, [afficher l’onglet Développeur](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) pour la version des utilisateurs d’Outlook.
+2. Suivez les étapes de la procédure [, Afficher l’onglet Développeur](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) pour la version utilisateur d’Outlook.
 
-3. Ouvrez l’onglet Développeur maintenant visible dans Outlook, puis cliquez sur **créer un formulaire**.
+3. Ouvrez l’onglet développeur désormais visible dans Outlook et cliquez **sur Concevoir un formulaire.**
 
-4. Sélectionnez la **boîte de réception** dans la liste **regarder dans** . Recherchez les formulaires personnalisés. Les formulaires personnalisés sont assez rares pour que si vous avez du tout des formulaires personnalisés, l’aspect est plus approfondi.
+4. Sélectionnez **la boîte de réception** dans la liste **Rechercher** dans. Recherchez les formulaires personnalisés. Les formulaires personnalisés sont suffisamment rares pour que si vous avez des formulaires personnalisés, cela vaut la peine d’avoir une apparence plus approfondie.
 
-5. Examinez les formulaires personnalisés, en particulier ceux marqués comme masqués.
+5. Examinez tous les formulaires personnalisés, en particulier ceux marqués comme masqués.
 
-6. Ouvrez tous les formulaires personnalisés et, dans le groupe **formulaire** , cliquez sur **afficher le code** pour afficher les éléments exécutés lors du chargement du formulaire.
+6. Ouvrez tous les formulaires personnalisés et, dans le groupe **Formulaire,** cliquez sur Afficher le **code** pour voir ce qui s’exécute lorsque le formulaire est chargé.
 
-### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>Étapes à suivre pour vérifier les règles et les attaques de formulaires à l’aide de PowerShell
+### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>Étapes de confirmation de l’attaque par règles et formulaires à l’aide de PowerShell
 
-Le moyen le plus simple de vérifier une attaque de règles ou de formulaires personnalisés consiste à exécuter le script PowerShell [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) . Ce script se connecte à chaque boîte aux lettres de votre client et transfère toutes les règles et les formulaires dans deux fichiers. csv.
+Le moyen le plus simple de vérifier une attaque par des règles ou des formulaires personnalisés consiste à exécuter [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) script PowerShell. Ce script se connecte à chaque boîte aux lettres de votre client et vide toutes les règles et formulaires dans deux fichiers .csv.
 
 #### <a name="pre-requisites"></a>Conditions préalables
 
-Vous devez disposer des droits d’administrateur général pour exécuter le script, car le script se connecte à chaque boîte aux lettres dans le client pour lire les règles et les formulaires.
+Vous devez avoir des droits d’administrateur général pour exécuter le script, car le script se connecte à chaque boîte aux lettres de la location pour lire les règles et les formulaires.
 
-1. Connectez-vous à l’ordinateur à partir duquel vous allez exécuter le script avec des droits d’administrateur local.
+1. Connectez-vous à l’ordinateur à partir de qui vous exécuterez le script avec des droits d’administrateur local.
 
-2. Téléchargez ou copiez le script Get-AllTenantRulesAndForms.ps1 de GitHub dans un dossier à partir duquel vous allez l’exécuter. Le script crée deux fichiers de date marqués dans ce dossier, MailboxFormsExport-yyyy-mm-dd.csv et MailboxRulesExport-yyyy-mm-dd.csv.
+2. Téléchargez ou copiez le script Get-AllTenantRulesAndForms.ps1 à partir de GitHub dans un dossier à partir duquel vous l’exécuterez. Le script crée deux fichiers horodatés dans ce dossier, MailboxFormsExport-yyyy-mm-dd.csv et MailboxRulesExport-yyyy-mm-dd.csv.
 
-3. Ouvrez une instance PowerShell en tant qu’administrateur et ouvrez le dossier dans lequel vous avez enregistré le script.
+3. Ouvrez une instance PowerShell en tant qu’administrateur et ouvrez le dossier dans qui vous avez enregistré le script.
 
-4. Exécutez cette ligne de commande PowerShell comme suit `.\Get-AllTenantRulesAndForms.ps1`.\Get-AllTenantRulesAndForms.ps1
+4. Exécutez cette ligne de commande PowerShell comme `.\Get-AllTenantRulesAndForms.ps1` suit.\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Interprétation de la sortie
 
-- **MailboxRulesExport-*yyyy-mm-dd*. csv**: Examinez les règles (une par ligne) pour les conditions d’action qui incluent des applications ou des exécutables :
+- **MailboxRulesExport-*yyyy-mm-dd*.csv**: examinez les règles (une par ligne) pour les conditions d’action qui incluent des applications ou des exécutables :
 
-  - **ActionType (colonne A)**: Si vous voyez la valeur « ID_ACTION_CUSTOM », la règle est probablement malveillante.
+  - **ActionType (colonne A)**: si vous voyez la valeur « ID_ACTION_CUSTOM », la règle est probablement malveillante.
 
-  - **IsPotentiallyMalicious (colonne D)**: si cette valeur est « true », la règle est probablement malveillante.
+  - **IsPotentiallyMalicious (colonne D)**: si cette valeur est « TRUE », la règle est probablement malveillante.
 
-  - **ActionCommand (colonne G)**: si cette énumération répertorie une application ou un fichier avec une extension. exe,. zip ou une entrée qui fait référence à une URL qui n’est pas censée exister, la règle est probablement malveillante.
+  - **ActionCommand (colonne G)**: si cela répertorie une application ou un fichier avec une extension .exe, .zip ou une entrée qui fait référence à une URL, qui n’est pas supposée être présente, la règle est probablement malveillante.
 
-- **MailboxFormsExport-*yyyy-mm-dd*. csv**: en règle générale, l’utilisation de formulaires personnalisés est très rare. Si vous en trouvez dans ce classeur, vous ouvrez la boîte aux lettres de cet utilisateur et examinez le formulaire lui-même. Si votre organisation ne l’a pas placée intentionnellement, elle est probablement malveillante.
+- **MailboxFormsExport-*yyyy-mm-dd*.csv**: en général, l’utilisation de formulaires personnalisés est très rare. Si vous en trouvez dans ce workbook, vous ouvrez la boîte aux lettres de cet utilisateur et examinez le formulaire lui-même. Si votre organisation ne l’a pas placé intentionnellement, il est probablement malveillant.
 
-## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Comment arrêter et corriger les attaques de formulaires et de formulaires Outlook
+## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Comment arrêter et corriger les attaques par formulaires et règles Outlook
 
-Si vous trouvez des preuves de l’une de ces attaques, la correction est simple, supprimez simplement la règle ou le formulaire de la boîte aux lettres. Vous pouvez effectuer cette opération avec le client Outlook ou à l’aide de PowerShell à distance pour supprimer des règles.
+Si vous trouvez des preuves de l’une de ces attaques, la correction est simple, supprimez simplement la règle ou le formulaire de la boîte aux lettres. Vous pouvez le faire avec le client Outlook ou à l’aide de PowerShell à distance pour supprimer des règles.
 
 ### <a name="using-outlook"></a>Utilisation d’Outlook
 
-1. Identifier tous les appareils utilisés par l’utilisateur avec Outlook. Ils devront tous être nettoyés du programme malveillant potentiel. Ne pas autoriser l’utilisateur à se connecter et à utiliser le courrier électronique jusqu’à ce que tous les appareils soient nettoyés.
+1. Identifiez tous les appareils que l’utilisateur a utilisés avec Outlook. Ils devront tous être nettoyés des programmes malveillants potentiels. N’autorisez pas l’utilisateur à se connecter et à utiliser le courrier tant que tous les appareils n’ont pas été nettoyés.
 
-2. Suivez les étapes de la procédure [supprimer une règle](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) pour chaque appareil.
+2. Suivez les étapes de [la procédure de suppression d’une règle](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) pour chaque appareil.
 
-3. Si vous n’êtes pas sûr de la présence d’autres programmes malveillants, vous pouvez formater et réinstaller tous les logiciels sur l’appareil. Pour les appareils mobiles, vous pouvez suivre les étapes des constructeurs pour réinitialiser l’appareil à l’image installée en usine.
+3. Si vous n’êtes pas sûr de la présence d’autres programmes malveillants, vous pouvez formater et réinstaller tous les logiciels sur l’appareil. Pour les appareils mobiles, vous pouvez suivre les étapes des fabricants pour réinitialiser l’appareil à l’image d’usine.
 
-4. Installez les versions les plus à jour d’Outlook. N’oubliez pas que la version actuelle d’Outlook bloque les deux types de cette attaque par défaut.
+4. Installez les versions les plus récentes d’Outlook. N’oubliez pas que la version actuelle d’Outlook bloque les deux types d’attaque par défaut.
 
-5. Une fois que toutes les copies hors connexion de la boîte aux lettres ont été supprimées, réinitialisez le mot de passe de l’utilisateur (utilisez une qualité élevée) et suivez les étapes de l’option [d’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) si MFA n’a pas encore été activé. Cela permet de s’assurer que les informations d’identification de l’utilisateur ne sont pas exposées par d’autres moyens (par exemple, le hameçonnage ou la réutilisation du mot de passe).
+5. Une fois toutes les copies hors connexion de la boîte aux lettres supprimées, réinitialisez le mot de passe de l’utilisateur (utilisez une copie de haute qualité) et suivez les étapes de l’authentification [multifacteur](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) du programme d’installation pour les utilisateurs si l’authentification multifacteur n’a pas encore été activée. Cela garantit que les informations d’identification de l’utilisateur ne sont pas exposées par d’autres moyens (par exemple, hameçonnage ou nouvelle utilisation du mot de passe).
 
 ### <a name="using-powershell"></a>Utiliser PowerShell
 
-Il existe deux cmdlets PowerShell à distance que vous pouvez utiliser pour supprimer ou désactiver les règles dangereuses. Suivez simplement les étapes.
+Il existe deux cmdlets PowerShell distantes que vous pouvez utiliser pour supprimer ou désactiver des règles dangereuses. Suivez simplement les étapes.
 
-#### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Étapes pour les boîtes aux lettres qui se trouvent sur un serveur Exchange
+#### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Étapes pour les boîtes aux lettres sur un serveur Exchange
 
-1. Connectez-vous au serveur Exchange à l’aide de PowerShell à distance. Suivez les étapes de la procédure [connexion à des serveurs Exchange à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
+1. Connectez-vous au serveur Exchange à l’aide de PowerShell à distance. Suivez les étapes de [la procédure de connexion à des serveurs Exchange à l’aide de PowerShell à distance.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)
 
-2. Si vous souhaitez supprimer complètement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres utilisent l’applet de commande [Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) .
+2. Si vous souhaitez supprimer complètement une règle unique, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez la cmdlet [Remove-InboxRule.](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)
 
-3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la cmdlet [Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) .
+3. Si vous souhaitez conserver la règle et son contenu pour un examen plus approfondie, utilisez la cmdlet [Disable-InboxRule.](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule)
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Étapes pour les boîtes aux lettres dans Exchange Online
 
-1. Suivez les étapes de la procédure [connexion à Exchange Online à l’aide de PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. Suivez les étapes de [la procédure de connexion à Exchange Online à l’aide de PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. Si vous souhaitez supprimer entièrement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez la cmdlet [Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) .
+2. Si vous souhaitez supprimer complètement une règle unique, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez la cmdlet [Remove-Inbox Rule.](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)
 
-3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la cmdlet [Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) .
+3. Si vous souhaitez conserver la règle et son contenu pour un examen plus approfondie, utilisez la cmdlet [Disable-InboxRule.](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule)
 
-## <a name="how-to-minimize-future-attacks"></a>Comment limiter les attaques futures
+## <a name="how-to-minimize-future-attacks"></a>Comment réduire les attaques futures
 
-### <a name="first-protect-your-accounts"></a>Tout d’abord : Protégez vos comptes
+### <a name="first-protect-your-accounts"></a>Tout d’abord : protéger vos comptes
 
-Les attaques de formulaires et de règles sont utilisées uniquement par un agresseur après avoir volé ou enfreint un des comptes de vos utilisateurs. Par conséquent, la première étape pour empêcher l’utilisation de ces exploits auprès de votre organisation consiste à protéger activement vos comptes d’utilisateur. Les attaques par hameçonnage ou par [pulvérisation de mot de passe](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) constituent certaines des méthodes de violation des comptes les plus courantes.
+Les attaques par règles et formulaires sont utilisées uniquement par une personne malveillante après le vol ou la violation de l’un des comptes de votre utilisateur. Par conséquent, la première étape pour empêcher l’utilisation de ces attaques contre votre organisation consiste à protéger de manière agressive vos comptes d’utilisateurs. Les attaques par hameçonnage ou par pulvérisation de mots de passe font partie des moyens les plus courants [d’enfreindage](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) des comptes.
 
-La meilleure façon de protéger vos comptes d’utilisateur, et en particulier vos comptes administrateur, est de [configurer l’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication). Vous devez également :
+La meilleure façon de protéger vos comptes d’utilisateur, et en particulier vos comptes d’administrateur, consiste à configurer l’authentification [multifacteur pour les utilisateurs.](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) Vous devez également :
 
-- Surveillez le mode d' [accès et d’utilisation](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)de vos comptes d’utilisateur. Vous n’êtes pas autorisé à empêcher la violation initiale, mais vous réduisez la durée et l’impact de la violation en la détectant plus tôt. Vous pouvez utiliser ces [stratégies Office 365 Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) pour surveiller les comptes et alerter les activités inhabituelles :
+- Surveillez l’accès et l’utilisation de [vos comptes d’utilisateur.](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports) Vous n’empêcherez peut-être pas la violation initiale, mais vous raccourcirez la durée et l’impact de la violation en la détectant plus rapidement. Vous pouvez utiliser ces stratégies de sécurité des applications cloud [Office 365](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) pour surveiller vos comptes et vous alerter sur les activités inhabituelles :
 
-  - **Plusieurs tentatives de connexion ayant échoué**: cette stratégie Profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités de connexion ayant échoué au cours d’une session unique en ce qui concerne la base de référence apprise, ce qui peut indiquer une tentative de violation.
+  - **Plusieurs tentatives** de connexion ayant échoué : cette stratégie profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités de connexion ayant échoué en une seule session par rapport à la ligne de base acquise, ce qui peut indiquer une tentative de violation.
 
-  - **Déplacement impossible**: cette stratégie Profile votre environnement et déclenche des alertes lorsque des activités sont détectées à partir du même utilisateur dans des emplacements différents pendant une période de temps qui est plus courte que le temps de trajet prévu entre les deux emplacements. Cela peut indiquer qu’un autre utilisateur utilise les mêmes informations d’identification. La détection de ce comportement anormal nécessite une période d’apprentissage initiale de sept jours pendant laquelle il apprend le modèle d’activité d’un nouvel utilisateur.
+  - **Voyage impossible**: cette stratégie profile votre environnement et déclenche des alertes lorsque des activités sont détectées par le même utilisateur à différents emplacements dans une période plus courte que le temps de déplacement prévu entre les deux emplacements. Cela peut indiquer qu’un autre utilisateur utilise les mêmes informations d’identification. La détection de ce comportement anormal nécessite une période d’apprentissage initiale de sept jours au cours de laquelle elle apprend le modèle d’activité d’un nouvel utilisateur.
 
-  - **Activité usurpée inhabituelle (par utilisateur)**: cette stratégie Profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités empruntées dans une session unique en ce qui concerne la base de référence apprise, ce qui peut indiquer une tentative de violation.
+  - Activité d’emprunt d’identité inhabituelle **(par utilisateur)**: cette stratégie profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités usurpées d’identité dans une seule session par rapport à la ligne de base acquise, ce qui peut indiquer une tentative de violation.
 
-- Utilisez un outil comme [Office 365 Secure score](https://securescore.office.com/) pour gérer les configurations et les comportements de sécurité des comptes.
+- Tirez parti d’un [outil tel qu’Office 365 Secure Score](https://securescore.office.com/) pour gérer les configurations et comportements de sécurité des comptes.
 
-### <a name="second-keep-your-outlook-clients-current"></a>Seconde : conserver vos clients Outlook à jour
+### <a name="second-keep-your-outlook-clients-current"></a>Deuxième : maintenir vos clients Outlook à jour
 
-Les versions entièrement mises à jour et corrigées d’Outlook 2013 et 2016 désactivent par défaut l’action « démarrer l’application ». Ainsi, même si un agresseur enfreint le compte, les actions de la règle et du formulaire sont bloquées. Vous pouvez installer les mises à jour les plus récentes et les correctifs de sécurité en suivant les étapes décrites dans [install Office updates](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
+Les versions entièrement mises à jour et mises à jour d’Outlook 2013 et 2016 désactivent l’action de formulaire/règle « Démarrer l’application » par défaut. Cela garantit que, même si un attaquant enfreint le compte, les actions de règle et de formulaire seront bloquées. Vous pouvez installer les dernières mises à jour et correctifs de sécurité en suivant les étapes de [l’installation des mises à jour d’Office.](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5)
 
-Voici les versions de correctifs pour vos clients Outlook 2013 et 2016 :
+Voici les versions des correctifs pour vos clients Outlook 2013 et 2016 :
 
-- **Outlook 2016**: 16.0.4534.1001 ou version ultérieure.
+- **Outlook 2016**: 16.0.4534.1001 ou supérieur.
 
-- **Outlook 2013**: 15.0.4937.1000 ou version ultérieure.
+- **Outlook 2013**: 15.0.4937.1000 ou supérieur.
 
-Pour plus d’informations sur les correctifs de sécurité individuels, voir :
+Pour plus d’informations sur les correctifs de sécurité individuels, voir :
 
 - [Correctif de sécurité Outlook 2016](https://support.microsoft.com/help/3191883)
 
 - [Correctif de sécurité Outlook 2013](https://support.microsoft.com/help/3191938)
 
-### <a name="third-monitor-your-outlook-clients"></a>Troisième : surveiller vos clients Outlook
+### <a name="third-monitor-your-outlook-clients"></a>Troisième : surveiller vos clients Outlook
 
-Notez que même avec les correctifs et mises à jour installés, il est possible pour un agresseur de modifier la configuration de l’ordinateur local pour réactiver le comportement « démarrer l’application ». Vous pouvez utiliser la [gestion de stratégie de groupe avancée](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) pour surveiller et appliquer des stratégies d’ordinateur local sur vos clients.
+Notez que même avec les correctifs et mises à jour installés, il est possible pour un attaquant de modifier la configuration de l’ordinateur local afin de ré-activer le comportement « Démarrer l’application ». Vous pouvez utiliser la [gestion avancée des stratégies de](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) groupe pour surveiller et appliquer des stratégies d’ordinateur local sur vos clients.
 
-Vous pouvez voir si « démarrer l’application » a été réactivé via une substitution dans le registre à l’aide des informations de la rubrique [How to View the System Registry by using 64-bit versions of Windows](https://support.microsoft.com/help/305097). Vérifiez les sous-clés suivantes :
+Vous pouvez voir si « Démarrer l’application » a été ré-activé via une substitution dans le Registre à l’aide des informations de la procédure d’affichage du Registre système à l’aide de [versions 64 bits](https://support.microsoft.com/help/305097)de Windows. Vérifiez les sous-clés ci-après :
 
 - **Outlook 2016**: `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
 - **Outlook 2013**: `HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
-Recherchez la clé EnableUnsafeClientMailRules. S’il est présent et qu’il est défini sur 1, le correctif de sécurité Outlook a été remplacé et l’ordinateur est vulnérable à l’attaque de formulaire/de règles. Si la valeur est égale à 0, l’action « démarrer l’application » est désactivée. Si la version mise à jour et corrigée d’Outlook est installée et que cette clé de Registre n’est pas présente, un système n’est pas vulnérable à ces attaques.
+Recherchez la clé EnableUnsafeClientMailRules. S’il est là et est définie sur 1, le correctif de sécurité Outlook a été mis en place et l’ordinateur est vulnérable à l’attaque par formulaire/règles. Si la valeur est 0, l’action « Démarrer l’application » est désactivée. Si la version mise à jour et corrigé d’Outlook est installée et que cette clé de Registre n’est pas présente, un système n’est pas vulnérable à ces attaques.
 
-Les clients disposant d’installations Exchange locales doivent envisager de bloquer les anciennes versions d’Outlook qui n’ont pas de correctifs disponibles. Pour plus d’informations sur ce processus, voir l’article [configurer le blocage du client Outlook](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help).
+Les clients qui disposent d’installations Exchange sur site doivent envisager de bloquer les versions antérieures d’Outlook qui ne disposent pas de correctifs. Pour plus d’informations sur ce processus, voir l’article [Configurer le blocage du client Outlook.](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
 
@@ -250,12 +251,12 @@ Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités d
 
 ## <a name="see-also"></a>Voir aussi :
 
-- [Règles Outlook malveillantes](https://silentbreaksecurity.com/malicious-outlook-rules/) par SilentBreak Security post à propos des règles le vecteur fournit une analyse détaillée de la façon dont les règles Outlook sont définies.
+- [Le billet sur les règles Outlook](https://silentbreaksecurity.com/malicious-outlook-rules/) malveillantes par le billet de sécurité SilentBreak sur le vecteur de règles fournit un examen détaillé de la façon dont les règles Outlook.
 
-- [MAPI sur http et Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) sur le blog Sensepost sur Mailrule Pwnage aborde un outil appelé Ruler qui vous permet d’exploiter les boîtes aux lettres par le biais de règles Outlook.
+- [MAPI sur HTTP et Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) sur le blog Sensepost sur Mailrule Pwnage traite d’un outil appelé Ruler qui vous permet d’exploiter des boîtes aux lettres via des règles Outlook.
 
-- [Formulaires et coques Outlook](https://sensepost.com/blog/2017/outlook-forms-and-shells/) sur le blog Sensepost sur le vecteur de menace de formulaires.
+- [Formulaires et shells Outlook](https://sensepost.com/blog/2017/outlook-forms-and-shells/) sur le blog Sensepost sur le vecteur de menace de formulaires.
 
-- [CodeBase de règle](https://github.com/sensepost/ruler)
+- [Ruler Codebase](https://github.com/sensepost/ruler)
 
-- [Indicateurs de règle compromis](https://github.com/sensepost/notruler/blob/master/iocs.md)
+- [Indicateurs de règle de compromis](https://github.com/sensepost/notruler/blob/master/iocs.md)

@@ -15,19 +15,19 @@ ms.custom:
 description: Dans cet article, vous allez apprendre à utiliser PowerShell pour appliquer des paramètres de configuration à vos locataires dans Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b7d856a7cec3bddc32455ba3afadf0323ddce935
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4823ed09cd8a9d72aef21df3d51213cb4512b4f9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166590"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288536"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Exemple de script pour l’application de paramètres EOP à plusieurs clients
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
--  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonome](exchange-online-protection-overview.md)
 
 L’exemple de script suivant permet aux administrateurs Microsoft Exchange Online Protection (EOP) qui gèrent plusieurs locataires (sociétés) d’utiliser Exchange Online PowerShell pour afficher et/ou appliquer des paramètres de configuration à leurs locataires.
 

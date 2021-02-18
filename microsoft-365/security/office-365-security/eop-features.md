@@ -13,19 +13,19 @@ ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2c66c1cd8715717bae92ac81fbefe050f5e485eb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 7dbdf30df0659565d775bfba2cf968ac56f6a4ac
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166170"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286848"
 ---
 # <a name="eop-features"></a>Fonctionnalités EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
--  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonome](exchange-online-protection-overview.md)
 
 Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
 
@@ -53,7 +53,7 @@ Le tableau suivant fournit la liste des fonctionnalités disponibles dans le ser
 |Signalez les faux positifs et les faux négatifs à Microsoft.|Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).|
 |Notification de mise en quarantaine du courrier indésirable pour l'utilisateur final|Pour plus d’informations, voir [Notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md) de courrier indésirable pour l’utilisateur final et Configurer les notifications de courrier indésirable à [l’utilisateur final.](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)|
 |Afficher, rechercher et gérer les messages dans le portail de mise en quarantaine.|Pour plus d’informations, voir Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans [EOP](manage-quarantined-messages-and-files.md) ou Rechercher et libérer les messages mis en quarantaine [en tant qu’utilisateur.](find-and-release-quarantined-messages-as-a-user.md)|
-|Afficher les en-têtes de messages mis en quarantaine pour le courrier indésirable|Une fois que vous avez vu l’en-tête du message en [](https://mha.azurewebsites.net/) quarantaine, vous pouvez également copier et coller le texte de l’en-tête dans l’Analyseur d’en-tête de message pour savoir ce qui est arrivé au message.|
+|Afficher les en-têtes de messages mis en quarantaine pour le courrier indésirable|Une fois que vous avez vu l’en-tête du message en [](https://mha.azurewebsites.net/) quarantaine, vous pouvez également copier et coller le texte de l’en-tête dans l’analyseur d’en-tête de message pour savoir ce qui est arrivé au message.|
 |**Protection anti-programme malveillant**||
 |Protection anti-programme malveillant multi-moteur|Plusieurs moteurs anti-programme malveillant aident à protéger automatiquement nos clients à tout moment.|
 |Possibilité de désactiver le filtrage des programmes malveillants|Vous ne pouvez pas désactiver le filtrage des programmes malveillants. Nous pensons que fournir un niveau de protection constant et rigoureux à l'ensemble de nos clients constitue une part essentielle de la stratégie de défense approfondie nécessaire pour protéger votre environnement de messagerie électronique. Par conséquent, le filtrage des programmes malveillants est automatiquement activé pour tous les clients.|

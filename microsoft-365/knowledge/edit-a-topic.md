@@ -4,6 +4,7 @@ description: Modification d’une rubrique existante dans Microsoft Topics.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+audience: admin
 ms.reviewer: cjtan
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 4194328804285f93f023092f1c7ac31d31a581da
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107459"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279409"
 ---
 # <a name="edit-an-existing-topic"></a>Modifier une rubrique existante 
 
@@ -31,9 +32,9 @@ ms.locfileid: "50107459"
 Dans Rubriques de Rubriques, vous pouvez modifier une rubrique existante. Vous devrez peut-être le faire si vous souhaitez corriger ou ajouter des informations supplémentaires à une page de rubriques existante. 
 
 > [!Note] 
-> Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que les informations que vous ajoutez manuellement lors de la modification d’une rubrique existante sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher des rubriques. 
+> Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations de personnes que vous ajoutez manuellement lors de la modification d’une rubrique existante sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher les rubriques. 
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour modifier une rubrique existante, vous devez :
 - Vous avez une licence Topics.
@@ -82,17 +83,20 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
 
     Vous pouvez également utiliser l’option De <b>un</b> lien pour ajouter un fichier ou une page en fournissant l’URL. 
 
+   > [!Note] 
+   > Les fichiers et les pages que vous ajoutez doivent se trouver dans le même client Microsoft 365. Si vous souhaitez ajouter un lien vers une ressource externe dans la rubrique, vous pouvez l’ajouter via l’icône de zone de dessin à l’étape 9.
+
 6. La section <b>Fichiers suggérés et pages</b> affiche les fichiers et les pages que l’IA suggère d’associer à la rubrique.
 
    ![Section Fichiers et pages suggérés](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    Vous pouvez faire un fichier ou une page suggéré à un fichier ou une page épinglé en sélectionnant l’icône épinglée.
+    Vous pouvez modifier un fichier ou une page suggéré en fichier ou page épinglé en sélectionnant l’icône épinglée.
 
-7.  La section <b>Sites associés</b> présente les sites qui ont des informations sur cette rubrique. 
+7.  La section <b>Sites associés</b> présente les sites qui ont des informations sur la rubrique. 
 
     ![Section Sites associés](../media/knowledge-management/related-sites.png)</br>
 
-    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
+    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site, ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
     
     ![Sélection d’un site](../media/knowledge-management/sites.png)</br>
 
@@ -107,6 +111,14 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
    La rubrique connexe que vous avez ajoutée s’affichera en tant que rubrique connectée.
 
    ![Rubriques connexes connectées](../media/knowledge-management/related-topics-final.png)</br> 
+
+   Pour supprimer une rubrique associée, sélectionnez la rubrique à supprimer, puis sélectionnez l’icône Supprimer <b>la rubrique.</b></br>
+ 
+   ![Supprimer une rubrique connexe](../media/knowledge-management/remove-related.png)</br>  
+
+   Ensuite, <b>sélectionnez Supprimer.</b></br>
+
+   ![Confirmer la suppression](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
 9. Vous pouvez également ajouter des éléments statiques à la page, tels que du texte, des images ou des liens, en sélectionnant l’icône de zone de dessin, que vous trouverez sous la brève description. Sa sélection ouvre la boîte à outils SharePoint à partir de laquelle vous pouvez choisir l’élément que vous souhaitez ajouter à la page.

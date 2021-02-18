@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment utiliser les diagnostics de page pour optimiser les performances des composants Web Parts dans les pages de sites modernes SharePoint Online.
-ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519750"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287148"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des composants WebPart dans les pages de sites modernes SharePoint Online
 
@@ -56,13 +56,16 @@ Si le résultat **Les composants WebPart ont un impact sur le temps de chargemen
 
 Les informations disponibles dans les résultats incluent les éléments suivants :
 
-- **Créé par** indique si le composant WebPart est personnalisé ou a été créé par Microsoft OOTB
-- **Nom et ID** affiche les informations d’identification qui peuvent vous aider à trouver le composant WebPart sur la page
-- **Total** indique la durée totale de chargement du composant WebPart
-- **Chargement de module** indique le temps nécessaire pour extraire et charger les composants WebPart
-- **Chargement différé** affiche la durée du chargement différé de composants WebPart qui ne sont pas visibles dans la section principale de la page
-- **Init** indique la durée nécessaire pour l’initialisation du composant WebPart
-- **Rendu** affiche la durée nécessaire pour extraire et afficher les résultats dans le composant WebPart
+- **L’élément «** Made by » indique si le partie Web Est personnalisé ou Microsoft OOTB.
+- **Le nom et l’ID** indiquent les informations d’identification qui peuvent vous aider à trouver le partie Web Sur la page.
+- **Total** indique la durée totale du chargement, de l’initialisation et du rendu du module par le partie Web. Il s’agit du temps relatif total pris par le partie Web Pour restituer sur la page, du début à la fin.
+- **La charge du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
+- **Chargement différé indique** le temps de chargement différé des composants Web Parts qui ne sont pas visibles dans la section principale de la page. Dans certaines conditions, il y a trop de composants Web Parts à restituer, et ils sont mis en file d’attente pour être restituer afin de réduire le temps de chargement de la page.
+- **Init indique** le temps qu’a pris le partie Web Pour initialiser les données.
+    Il s’agit d’un appel asynchrone et le temps d’init est le calcul du temps pour la fonction onInit lorsque la promesse renvoyée est résolue.
+- **Le** rendu indique le temps de rendu de l’interface utilisateur (interface utilisateur) une fois le chargement du module et Init terminés.
+    Il est temps d’exécution JavaScript pour monter le DOM dans le document (page).
+    Le rendu des ressources asynchrones, par exemple les images, peut prendre plus de temps.
 
 Ces informations sont fournies pour aider les concepteurs et les développeurs à résoudre les problèmes. Ces informations doivent être fournies à votre équipe de conception et de développement.
 

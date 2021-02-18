@@ -15,19 +15,19 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à exécuter un rapport de groupe de rôles d’administrateur dans Exchange Online Protection (EOP) autonome. Ce rapport enregistre lorsqu’un administrateur ajoute des membres à des groupes de rôles d’administrateur ou en supprime.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 507fbe6fb6c99677cf91b6eb824bf110f1c826f3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d778e807a087a5e29b31645457d4a81bd05c5649
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166626"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288018"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Exécuter un rapport de groupe de rôles d’administrateur dans EOP autonome
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
--  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonome](exchange-online-protection-overview.md)
 
 Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, lorsqu’un administrateur ajoute des membres à des groupes de rôles d’administration ou en supprime, le service enregistre chaque occurrence. Pour plus d’informations sur les groupes de rôles dans EOP autonome, voir [Autorisations dans EOP autonome.](feature-permissions-in-eop.md)
 
@@ -42,7 +42,7 @@ Lorsque vous exécutez un rapport de groupe de rôles d’administrateur dans le
 - Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cet article, voir raccourcis clavier pour le Centre d’administration [Exchange dans Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) .
 
 ## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a>Utiliser le Centre d'administration Exchange (CAE) pour exécuter un rapport de groupe de rôles d'administrateur
 
@@ -118,9 +118,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="view-details-of-audit-log-entries"></a>Afficher le détail des entrées du journal d’audit
 
-La cmdlet **Search-AdminAuditLog renvoie** les champs décrits dans le contenu [du journal d’audit.](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents) Parmi les champs renvoyés par la cmdlet, deux champs ( **CmdletParameters** et **ModifiedProperties** ) comportent des données supplémentaires qu'il est impossible de visualiser par défaut.
+La cmdlet **Search-AdminAuditLog** renvoie les champs décrits dans le contenu [du journal d’audit.](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents) Parmi les champs renvoyés par la cmdlet, deux champs ( **CmdletParameters** et **ModifiedProperties** ) comportent des données supplémentaires qu'il est impossible de visualiser par défaut.
 
-Pour afficher le contenu des champs **CmdletParameters** et **ModifiedProperties**, suivez la procédure ci-après. Vous pouvez également utiliser la procédure de l’utilisation **d’Exchange Online PowerShell** pour rechercher des entrées du journal d’audit et envoyer des résultats à un destinataire plus loin dans cet article pour créer un fichier XML.
+Pour afficher le contenu des champs **CmdletParameters** et **ModifiedProperties**, suivez la procédure ci-après. Vous pouvez également utiliser la procédure d’utilisation **d’Exchange Online PowerShell** pour rechercher des entrées du journal d’audit et envoyer des résultats à un destinataire plus loin dans cet article pour créer un fichier XML.
 
 Cette procédure exploite les concepts suivants :
 

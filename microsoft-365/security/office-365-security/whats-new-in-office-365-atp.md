@@ -21,30 +21,30 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3544f1ccb760c461b7ab72c6dc037fd653136db9
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 5934abb3afec3253da78c680735730b63ddb5701
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988159"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287352"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-**S’applique à :**
-
-- [Microsoft Defender pour Office 365](office-365-atp.md)
+**S’applique à**
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Cet article répertorie les nouvelles fonctionnalités de la dernière version de Microsoft Defender pour Office 365. Les fonctionnalités actuellement en prévisualisation sont notées avec **(prévisualisation).**
 
 > [!TIP]
-> Vous n’avez pas encore Microsoft Defender pour Office 365 ? [Contactez les ventes pour démarrer une version d’essai.](https://go.microsoft.com/fwlink/p/?LinkId=518644)
+> Vous n’avez pas encore Microsoft Defender pour Office 365 ? [Contactez les ventes pour démarrer une version d’essai.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
-## <a name="december-2020"></a>Décembre 2020
+## <a name="december-2020"></a>Décembre 2020
 
 - [Sécurisé par défaut dans Office 365](secure-by-default.md)
+- Améliorations de l’examen automatisé : alertes générales pour les enquêtes de courrier déclenchées manuellement, traitement des modifications de boîte aux lettres comme une catégorie d’entité distincte, suppression des actions de blocage d’URL redondantes et création de clusters de courrier sortant pour les enquêtes compromises par l’utilisateur.
 
 ## <a name="november-2020"></a>Novembre 2020
 
@@ -95,9 +95,9 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - Intégration à Microsoft Defender pour les événements d’investigation et de réponse automatisés Office 365 à l’aide de l’API Activité de gestion [Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Defender pour Office 365 Plan 2)
 
-- [Afficher les en-têtes de courrier et télécharger](investigate-malicious-email-that-was-delivered.md) le corps de l’e-mail (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
+- [Afficher les en-têtes de courrier et télécharger le](investigate-malicious-email-that-was-delivered.md) corps de l’e-mail (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Afficher la chronologie du courrier](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) électronique (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 

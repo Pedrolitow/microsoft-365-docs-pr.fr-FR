@@ -15,24 +15,24 @@ ms.collection:
 description: Découvrez comment installer et utiliser le add-in De rapport de courrier indésirable Microsoft pour signaler le courrier indésirable, le courrier non indésirable et le hameçonnage à Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 171bdc43e565a0890cddcd1e48208b49774a5315
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e22a1364e8d7a1447bbcf518cc339a681c57a8af
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167346"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286620"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installer et utiliser le add-in Junk Email Reporting pour Microsoft Outlook
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
-> Si vous n’utilisez pas actuellement le add-in Junk [](enable-the-report-message-add-in.md) E-mail Reporting, [](enable-the-report-phish-add-in.md) nous vous recommandons plutôt de le signaler ou de signaler le hameçonnage. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
+> Si vous n’utilisez pas actuellement le add-in Junk [](enable-the-report-message-add-in.md) E-mail Reporting, [](enable-the-report-phish-add-in.md) il est recommandé de le faire à la place. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 Le junk email reporting Add-in pour Microsoft Outlook permet aux utilisateurs d’envoyer des faux positifs (message électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Microsoft. Si votre organisation n’utilise pas Exchange Online Protection (par exemple, Exchange local ou des services de messagerie autres qu’Exchange Online), l’envoi de votre rapport de courrier indésirable n’affecte pas votre filtrage du courrier indésirable.
 
@@ -61,7 +61,7 @@ Cette rubrique explique comment installer et utiliser le add-in Junk Email Repor
 
      ![Signaler le courrier indésirable ou le hameçonnage à partir du clic droit](../../media/junk-email-reporting-right-click.png)
 
-   - Sélectionnez plusieurs messages, cliquez avec le bouton droit, puis sélectionnez **Signaler comme** courrier indésirable ou Signaler **comme hameçonnage.**
+   - Sélectionnez plusieurs messages, cliquez avec le bouton droit, puis sélectionnez **Signaler** comme courrier indésirable **ou Signaler comme hameçonnage.**
 
      ![Signaler plusieurs messages électroniques de courrier indésirable ou de hameçonnage à partir du clic droit](../../media/junk-email-reporting-right-click-multiple.png)
 
@@ -116,7 +116,7 @@ Cette rubrique explique comment installer et utiliser le add-in Junk Email Repor
   - **32 bits**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
   - **64 bits**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- Pour Outlook 2013 ou une ultérieure, le seul prérequis est Microsoft .NET Framework 2.0. Dans Windows 10, vous n’installez pas .NET Framework 2.0 à partir d’un téléchargement.
+- Pour Outlook 2013 ou une édition ultérieure, le seul prérequis est Microsoft .NET Framework 2.0. Dans Windows 10, vous n’installez pas .NET Framework 2.0 à partir d’un téléchargement.
 
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Installer le add-in Junk Email Reporting à l’aide de l’Assistant Installation
 
@@ -186,7 +186,7 @@ Pour vérifier que vous avez correctement installé le add-in Junk Email Reporti
 
   ![Signaler le courrier indésirable ou le hameçonnage à partir du ruban](../../media/junk-email-reporting-ribbon.png)
 
-- Cliquez avec le bouton droit sur le message, **sélectionnez** Courrier indésirable et vérifiez que les options suivantes sont disponibles :
+- Cliquez avec le bouton droit sur le message, sélectionnez **Courrier** indésirable et vérifiez que les options suivantes sont disponibles :
 
   - **Signaler comme courrier indésirable**
   - **Signaler comme hameçonnage**
@@ -216,7 +216,7 @@ Après avoir fermé Outlook, utilisez l’une des procédures suivantes pour dé
 
 - **Panneau de commande**: appuyez sur la touche Windows + R. Dans la **boîte de** dialogue Exécuter qui s’ouvre, `control appwiz.cpl` entrez, puis cliquez sur **OK.**
 
-  Recherchez et **sélectionnez le** module de rapport de courrier indésirable Microsoft dans la liste, puis cliquez sur **Désinstaller.**
+  Recherchez et **sélectionnez le** module de signalement du courrier indésirable Microsoft dans la liste, puis cliquez sur **Désinstaller.**
 
 - **Package Windows Installer**: recherchez ou téléchargez le fichier .msi approprié, puis double-cliquez dessus.
 
@@ -244,7 +244,7 @@ Lorsque vous ouvrez Outlook après la désinstallation, les options de signaleme
 
 ## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>Résolution des problèmes du add-in Junk Email Reporting
 
-Parfois, vous pouvez avoir des difficultés avec Outlook après l’ajout du add-in Junk Email Reporting. Cette section décrit les problèmes que vous pouvez rencontrer, ainsi que des conseils pour résoudre ces problèmes.
+Parfois, vous pouvez avoir des difficultés avec Outlook après avoir ajouté le add-in Junk Email Reporting. Cette section décrit les problèmes que vous pouvez rencontrer, ainsi que des conseils pour résoudre ces problèmes.
 
 ### <a name="troubleshooting-for-users"></a>Résolution des problèmes pour les utilisateurs
 
@@ -260,7 +260,7 @@ Pour résoudre ce problème, faites les étapes suivantes :
 2. Créez et envoyez un message de test, puis vérifiez que le destinataire a reçu le message.
 3. Si le problème persiste, contactez votre administrateur.
 
-Pour d’autres méthodes que vous pouvez utiliser pour envoyer des messages à Microsoft, voir Signaler les messages et [les fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
+Pour d’autres méthodes que vous pouvez utiliser pour envoyer des messages à Microsoft, voir [Signaler les messages et les fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
 ### <a name="troubleshooting-for-admins"></a>Résolution des problèmes pour les administrateurs
 

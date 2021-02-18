@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 039ec1c3f9b0ba233f950d11b9d58be341b28121
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 520a5627d2cd280f28c4e2c3db0e565640a1eace
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930593"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289160"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés du score de sécurité Microsoft
 
@@ -35,21 +35,27 @@ ms.locfileid: "49930593"
 Pour que le Niveau de sécurité Microsoft soit mieux représentatif de votre posture de sécurité, nous avons apporté quelques modifications. Pour en savoir plus sur les modifications planifiées, consultez [l’aide](microsoft-secure-score-whats-coming.md) de Microsoft Secure Score ?
 
 Microsoft Secure Score se trouve dans le Centre de sécurité https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+    
+## <a name="february-2021"></a>Février 2021
+
+### <a name="compatibility-with-graph-api"></a>Compatibilité avec l’API Graph
+
+Les recommandations de Niveau de sécurité Microsoft délivrées via l’API Graph s’afficheront et seront pondérées de la même manière que les recommandations que vous voyez actuellement dans le Centre de sécurité Microsoft 365.
 
 ## <a name="january-2021"></a>Janvier 2021
 
 ### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Ajout de notre première recommandation de sécurité pour Microsoft Teams
 
-Les clients Microsoft Teams voient « Empêcher les utilisateurs anonymes de participer à des réunions » comme nouvelle action d’amélioration du score de sécurité.
+Les clients Microsoft Teams voient « Empêcher les utilisateurs anonymes de participer à des réunions » comme nouvelle action d’amélioration dans le Score de sécurisation.
 
 ## <a name="december-2020"></a>Décembre 2020
 
 ### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout de six actions d’amélioration liées aux comptes pour Microsoft Defender for Endpoint (précédemment Microsoft Defender ATP) :
 
 - Définir « Longueur minimale du mot de passe » sur « 14 caractères ou plus »
-- Définissez « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus »
+- Définir « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus »
 - Définir « Âge maximal du mot de passe » sur « 60 jours ou moins, mais pas 0 »
-- Définir « Âge minimum du mot de passe » sur « 1 jour ou plus »
+- Définir « Âge minimal du mot de passe » sur « 1 jour ou plus »
 - Désactiver le compte Administrateur intégré
 - Désactiver le compte invité intégré
 
@@ -57,7 +63,7 @@ Les clients Microsoft Teams voient « Empêcher les utilisateurs anonymes de par
 
 ### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Suppression de la possibilité de créer des tickets ServiceNow via secure score 
 
-La possibilité de créer des tickets ServiceNow via Secure Score en allant sur **Share > ServiceNow** n’est plus disponible. Merci de vos commentaires et de votre support continu pendant que nous déterminons les étapes suivantes.
+La possibilité de créer des tickets ServiceNow via secure score en allant sur **Share > ServiceNow** n’est plus disponible. Merci de vos commentaires et de votre support continu pendant que nous déterminons les étapes suivantes.
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout de trois actions d’amélioration liées aux services pour Microsoft Defender pour Endpoint (précédemment Microsoft Defender ATP) :
 
@@ -77,11 +83,11 @@ La possibilité de créer des tickets ServiceNow via Secure Score en allant sur 
 
 - Activer la stratégie pour bloquer l’authentification héritée
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Incompatibilité avec identity secure score et API Graph
+## <a name="incompatibility-with-identity-secure-score"></a>Incompatibilité avec identity secure score
 
-Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié. Ces modifications permettent une vue plus souple et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu Le Niveau de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph.
+Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié. Ces modifications permettent une vue plus souple et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score.
 
-Dans le temps, identity Secure Score et l’API Graph adopteront le nouveau modèle de score. En attendant, les clients constateront des différences dans les scores signalés par le score de sécurité Microsoft, le score de sécurisation de l’identité et l’API Graph. Nous vous excusons de tout désagrément causé par cette situation et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
+Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En attendant, les clients voient des différences dans les scores signalés par le Score de sécurité Microsoft et le score de sécurité d’identité. Nous vous excusons de tout désagrément causé par cette situation et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
 
 ## <a name="updated-improvement-actions"></a>Actions d’amélioration mises à jour
 
@@ -92,7 +98,7 @@ Dans le temps, identity Secure Score et l’API Graph adopteront le nouveau mod�
 
 ## <a name="updated-interface-and-functionality"></a>Interface et fonctionnalités mises à jour
 
-* Toutes les nouvelles vues de mesures et de tendances pour les discussions CISO et au niveau des responsables
+* Toutes les nouvelles vues de mesures et de tendances pour les discussions ciso et au niveau des responsables
 * Nouvelles méthodes de suivi et d’évaluation de votre score
 * Amélioration du suivi et de la compréhension des régressions de score
 * Filtrer, baliser, rechercher et grouper vos actions d’amélioration

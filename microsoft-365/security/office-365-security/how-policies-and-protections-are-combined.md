@@ -1,6 +1,6 @@
 ---
 title: Ordre et priorité de la protection de la messagerie
-keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, PROTECTION ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
+keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, PROTECTION ATP, Microsoft Defender ATP, Office 365 - Protection contre les menaces, Azure ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,21 +17,21 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur l’ordre d’application des protections dans Exchange Online Protection (EOP) et sur la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f3d4a607f702349d3a8e43c1eceba5ecbb697d7
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec21be03280a8b7da122569d51186efc1f756a69
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167478"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286836"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les messages entrants peuvent être signalés par plusieurs formes de protection. Par exemple, les stratégies anti-hameçonnage intégrées dans EOP qui sont disponibles pour tous les clients Microsoft 365 et les stratégies anti-hameçonnage les plus robustes disponibles pour les clients Microsoft Defender pour Office 365. Les messages passent également par plusieurs analyses de détection des programmes malveillants, du courrier indésirable, du hameçonnage, etc. Étant donné toute cette activité, il peut y avoir une certaine confusion quant à la stratégie appliquée.
 
@@ -39,7 +39,7 @@ En règle générale, une stratégie appliquée à un message est identifiée da
 
 Deux facteurs majeurs déterminent la stratégie appliquée à un message :
 
-- **La priorité du type de protection du courrier électronique**: cette commande n’est pas configurable et est décrite dans le tableau suivant :
+- **La priorité du type de protection de** la messagerie électronique : cette commande n’est pas configurable et est décrite dans le tableau suivant :
 
   ****
 
@@ -73,7 +73,7 @@ Par exemple, prenons les stratégies anti-hameçonnage suivantes dans Microsoft 
 
 1. Le message est marqué et traité comme une usurpation d’identité, car l’usurpation d’identité a une priorité plus élevée (4) que l’emprunt d’identité de l’utilisateur (5).
 2. La stratégie A est appliquée aux utilisateurs, car elle a une priorité plus élevée que la stratégie B.
-3. En fonction des paramètres de la stratégie A, aucune action n’est entreprise sur le message, car la stratégie de anti-usurpation est désactivée.
+3. En fonction des paramètres de la stratégie A, aucune action n’est entreprise sur le message, car la stratégie anti-usurpation est désactivée.
 4. Le traitement des stratégies s’arrête, de sorte que la stratégie B n’est jamais appliquée aux utilisateurs.
 
 Étant donné qu’il est possible que les mêmes utilisateurs soient inclus intentionnellement ou involontairement dans plusieurs stratégies personnalisées du même type, utilisez les instructions de conception suivantes pour les stratégies personnalisées :

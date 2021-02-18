@@ -17,20 +17,20 @@ ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Utilisez ce guide de déploiement pas à pas pour créer et configurer un site d’équipe SharePoint Online isolé dans Microsoft Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b1f0342afc92b4540330417ad0fc9cabe1dc8a8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d226a545c3f8dc274f02e5d54d39739fe5d981ea
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165498"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288346"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Déploiement d’un site d’équipe SharePoint Online isolé
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Résumé :** Découvrez comment déployer un nouveau site d’équipe SharePoint Online isolé en suivant ces instructions détaillées.
 
@@ -112,7 +112,7 @@ Si vous gérez des comptes d’utilisateurs et des groupes via Office 365, vous 
 
 Pour le Centre d’administration Microsoft 365, connectez-vous à l’aide d’un compte d’utilisateur ayant le rôle Administrateur de compte d’utilisateur ou Administrateur d’entreprise et utilisez des groupes pour ajouter les comptes d’utilisateur et les groupes appropriés aux groupes d’accès appropriés.
 
-Pour PowerShell, [connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph.](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Pour PowerShell, [connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Ensuite, utilisez le bloc de commandes suivant pour ajouter un compte d’utilisateur individuel à un groupe d’accès :
 
@@ -152,7 +152,7 @@ $grpName="<display name of the access group>"
 Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID | Sort UserPrincipalName | Select UserPrincipalName,DisplayName,UserType
 ```
 
-Voici votre configuration résultante avec les trois groupes d’accès au site remplis avec des comptes d’utilisateurs ou des groupes.
+Voici votre configuration résultante avec les trois groupes d’accès au site remplis avec des comptes d’utilisateur ou des groupes.
 
 ![Les trois groupes d’accès sont remplis avec des comptes d’utilisateur.](../../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
 
@@ -170,7 +170,7 @@ Commencez par créer le site d’équipe SharePoint Online en suivant ces étap
 
 4. Cliquez **sur Créer,** puis choisissez **Autres options.**
 
-5. Dans la **liste Choisir un modèle,** sélectionnez **Site d’équipe.**
+5. Dans la **liste Choisir un modèle,** choisissez **Site d’équipe.**
 
 6. Dans **le nom du** site, tapez un nom pour le site d’équipe.
 
@@ -186,7 +186,7 @@ Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les aut
 
 3. Choisissez les **seuls propriétaires de site qui peuvent partager des fichiers, des dossiers et le site.**
 
-4. Définissez **Autoriser les demandes d’accès** à **l’utilisateur .**
+4. Définissez **Autoriser les demandes d’accès** sur **Off**.
 
 5. Cliquez sur **Enregistrer**.
 

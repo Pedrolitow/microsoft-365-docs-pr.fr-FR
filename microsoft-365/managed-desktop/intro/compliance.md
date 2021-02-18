@@ -1,7 +1,7 @@
 ---
 title: Conformité
 description: Cet article répertorie les normes de conformité applicables au Bureau géré Microsoft.
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f2fae1e41562d1ae743ecd964b42082b3d6486e8
-ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
+ms.openlocfilehash: 423a65e60ccd11ab7e9fd78ef3b7983ba0c609c2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50031350"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288716"
 ---
 # <a name="compliance"></a>Conformité
 
@@ -34,14 +34,15 @@ Bureau géré Microsoft a obtenu les certifications suivantes :
 - [Attestation CSA (Cloud Security Alliance) STAR](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
 - [Certification Cloud Security Alliance (CSA) STAR](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [Contrôles d’organisation de service (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [Programme d’évaluation inscrit à la sécurité des informations (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 - [Norme de sécurité des données (DSS) d’industrie de carte de paiement (PCI)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 - [Health Insurance Portability and Accountability Act (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [Programme d’évaluation inscrit à la sécurité des informations (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+- [Infrastructure de sécurité commune (CSF) HITRUST (Health Information Trust Alliance)](https://docs.microsoft.com/compliance/regulatory/offering-hitrust)
 
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Rapports des auditeurs et certificats de conformité
 
-Vous trouverez des informations pertinentes, y compris des exigences techniques et de contrôle, dans le portail d’confiance des services [(STP),](https://servicetrust.microsoft.com/)le référentiel central pour obtenir ces informations sur les offres de service Cloud De Microsoft. Vous pouvez télécharger des rapports d’auditeur, des certificats de conformité et bien plus encore à partir de la section [Rapports d’audit](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) du STP.
+Vous trouverez des informations pertinentes, y compris des exigences techniques et de contrôle, dans le portail d’confiance des services [(STP),](https://servicetrust.microsoft.com/)le référentiel central pour obtenir de telles informations sur les offres de service Cloud De Microsoft. Vous pouvez télécharger des rapports d’auditeur, des certificats de conformité et bien plus encore à partir de la section [Rapports d’audit](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) du STP.
 
 > [!NOTE]
 > Étant donné que Bureau géré Microsoft s’exécute sur Azure, les documents pertinents ont généralement des noms de fichiers tels que « Microsoft Azure, Dynamics 365 et d’autres services en ligne ». Dans ces documents, vous pouvez généralement trouver Bureau géré Microsoft sous la catégorie « Microsoft Online Services » ou « Analyse + Gestion ».

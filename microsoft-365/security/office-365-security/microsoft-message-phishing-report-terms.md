@@ -1,5 +1,5 @@
 ---
-title: Termes du contrat de licence De message de rapport microsoft et de signalement Add-In hameçonnage
+title: Message de rapport Microsoft et termes du contrat de licence Add-In de rapport et de signalement du hameçonnage
 description: Décrit les termes du contrat de licence Microsoft Report Message and Report Phishing Add-In
 keywords: microsoft, signaler, hameçonnage, sécurité, tentative, piratage, licence, termes, application, utilisation, installation, service, commentaires
 search.product: eADQiWindows 10XVcnh
@@ -15,19 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
-ms.openlocfilehash: a6c28bad5b79bc7459a1a00fabb6713b1759201d
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 2b2b8a6215a653cee7ea67bafaadddc096abb911
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032697"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288156"
 ---
 # <a name="microsoft-report-message-and-report-phishing-add-in-license-terms"></a>Termes du contrat de licence De message de rapport microsoft et de signalement Add-In hameçonnage
 
-## <a name="microsoft-software-license-terms-microsoft-report-message-and-report-phishing-add-in"></a>Termes du contrat de licence logiciel Microsoft : rapport microsoft message et signaler le hameçonnage du add-in
+## <a name="microsoft-software-license-terms-microsoft-report-message-and-report-phishing-add-in"></a>Termes du contrat de licence logiciel Microsoft : rapport Microsoft message et signaler le hameçonnage du add-in
 
 > [!IMPORTANT]
-> Si vous êtes une entreprise ou que vous êtes une entreprise ayant un lieu d’activité principal basé aux États-Unis, veuillez lire la section 7, Arbitrage de liaison et renonciation aux *actions de classe.* Il décrit la façon dont les litiges sont résolus.
+> Si vous êtes une entreprise ou que vous êtes une entreprise ayant un lieu d’activité principal basé aux États-Unis, veuillez lire la section 7, Arbitrage de liaison et renonciation aux *actions de classe.* Il décrit comment les litiges sont résolus.
 
 > [!NOTE]
 > *En anglais :* Comme ce logiciel est distribué au Canada, certaines des clauses de ce contrat (en particulier dans les sections 10, 11 et 12) sont fournies en français.
@@ -42,11 +42,11 @@ Dans le cadre du présent accord de licence, vous disposez des droits ci-dessous
 
     1. **General.** You may install and use any number of copies of the software.
     1. **Third Party Software.** Le logiciel peut inclure des applications tierces que Microsoft, et non le tiers, vous a sous licence dans le cadre du contrat. Les notifications incluses pour les applications tierces sont uniquement pour vos informations.
-    1. **Contrat de services Microsoft.** Certaines fonctionnalités du logiciel permettent d’accéder aux services en ligne ou de s’en appuyer. L’utilisation de ces services (mais pas le logiciel) est régie par les termes distincts et les politiques de confidentialité dans le contrat de services Microsoft à [https://go.microsoft.com/fwlink/?linkid=398923](https://go.microsoft.com/fwlink/?linkid=398923) . Lisez-les attentivement. Les services peuvent ne pas être disponibles dans toutes les régions.
+    1. **Contrat de services Microsoft.** Certaines fonctionnalités du logiciel permettent d’accéder aux services en ligne ou de s’en appuyer. L’utilisation de ces services (mais pas le logiciel) est régie par les termes distincts et les politiques de confidentialité dans le contrat de services Microsoft à <https://www.microsoft.com/servicesagreement/> . Lisez-les attentivement. Les services peuvent ne pas être disponibles dans toutes les régions.
 
-2. **DATA COLLECTION.** Le logiciel peut collecter des informations sur vous et votre utilisation du logiciel et les envoyer à Microsoft. Microsoft peut utiliser ces informations pour fournir des services et améliorer les produits et services de Microsoft. Vos droits d’opt-out, le cas nécessaire, sont décrits dans la documentation du produit. Certaines fonctionnalités du logiciel peuvent permettre la collecte de données provenant d’utilisateurs de vos applications qui accèdent au logiciel ou l’utilisent. 
+2. **DATA COLLECTION.** Le logiciel peut collecter des informations sur vous et votre utilisation du logiciel et les envoyer à Microsoft. Microsoft peut utiliser ces informations pour fournir des services et améliorer les produits et services de Microsoft. Vos droits d’opt-out, le cas nécessaire, sont décrits dans la documentation du produit. Certaines fonctionnalités du logiciel peuvent permettre la collecte de données provenant d’utilisateurs de vos applications qui accèdent au logiciel ou l’utilisent.
 
-    Si vous utilisez ces fonctionnalités pour activer la collecte de données dans vos applications, vous devez vous conformer aux lois applicables, y compris obtenir le consentement de l’utilisateur requis et maintenir une politique de confidentialité importante qui informe précisément les utilisateurs de la façon dont vous utilisez, collectez et partagez leurs données. Vous pouvez en savoir plus sur la collecte et l’utilisation des données de Microsoft dans la documentation du produit et la déclaration de confidentialité Microsoft à l’aide [https://go.microsoft.com/fwlink/?LinkId=512132](https://go.microsoft.com/fwlink/?LinkId=512132) de . Vous acceptez de vous conformer à toutes les dispositions applicables de la déclaration de confidentialité De Microsoft.
+    Si vous utilisez ces fonctionnalités pour activer la collecte de données dans vos applications, vous devez vous conformer aux lois applicables, y compris obtenir le consentement de l’utilisateur requis et maintenir une politique de confidentialité importante qui informe précisément les utilisateurs de la façon dont vous utilisez, collectez et partagez leurs données. Vous pouvez en savoir plus sur la collecte et l’utilisation des données de Microsoft dans la documentation du produit et la déclaration de confidentialité De Microsoft à <https://privacy.microsoft.com/privacystatement> l':. Vous acceptez de vous conformer à toutes les dispositions applicables de la déclaration de confidentialité De Microsoft.
 
 3. **SCOPE OF LICENSE.** The software is licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
     1. work around any technical limitations in the software that only allow you to use it in certain ways;
@@ -62,7 +62,7 @@ Dans le cadre du présent accord de licence, vous disposez des droits ci-dessous
 
 6. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
-7. **ARBITRAGE DE LIAISON ET RENONCIATION AUX ACTIONS DE CLASSE.** **Cette section s’applique si vous habitez aux États-Unis (ou, si vous êtes une entreprise, votre principal lieu d’activité).** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Si vous et Microsoft ne le pouvez pas, vous et Microsoft acceptez de lier l’arbitrage individuel devant **l’Association** d’arbitrage américaine en vertu de la federal Arbitration Act (« FAA ») et de ne pas intenter une action en justice devant un juge ou un **jury.** Instead, a neutral arbitrator will decide. **Les actions en justice pour les** actions en classe, les arbitrages à l’échelle de la classe, les actions privées de l’avocat général et toute autre procédure dans laquelle une personne agit à titre représentatif ne sont pas **autorisées**; ni la combinaison de procédures individuelles sans le consentement de toutes les parties. The complete Arbitration Agreement contains more terms and is at [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) . You and Microsoft agree to these terms.
+7. **ARBITRAGE DE LIAISON ET RENONCIATION AUX ACTIONS DE CLASSE.** **Cette section s’applique si vous habitez aux États-Unis (ou, si vous êtes une entreprise, votre principal lieu d’activité).** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Si vous et Microsoft ne le pouvez pas, vous et Microsoft acceptez de lier l’arbitrage individuel devant **l’Association** d’arbitrage américaine en vertu de la federal Arbitration Act (« FAA ») et de ne pas intenter une action en justice devant un juge ou un **jury.** Instead, a neutral arbitrator will decide. **Les actions en justice pour les** actions en classe, les arbitrages à l’échelle de la classe, les actions privées de l’avocat général et toute autre procédure dans laquelle quelqu’un agit à titre représentatif ne sont pas **autorisées**; ni la combinaison de procédures individuelles sans le consentement de toutes les parties. The complete Arbitration Agreement contains more terms and is at [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) . You and Microsoft agree to these terms.
 
 8. **ENTIRE AGREEMENT.** This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
 

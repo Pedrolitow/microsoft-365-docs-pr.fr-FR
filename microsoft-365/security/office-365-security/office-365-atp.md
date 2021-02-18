@@ -21,20 +21,20 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7624b9a62530e54a161bbc4aacc8bee56ed959b2
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 741b00a55ee73d16c82abd4806d06660d49be65b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150723"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287664"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens ou pièces jointes fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée pour abonnés Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -92,7 +92,7 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 
 - La fonctionnalité [Documents sécurisés](safe-docs.md) est uniquement disponible pour les utilisateurs ayant des licences Microsoft 365 E5 ou Microsoft 365 E5 Sécurité (non inclus dans les offres Microsoft Defender pour Office 365)
 
-- Si votre abonnement actuel n’inclut pas Microsoft Defender pour Office 365, [contactez le service ventes pour démarrer une version d’évaluation](https://go.microsoft.com/fwlink/p/?LinkId=518644), puis voyez comment Defender pour Office 365 peut fonctionner pour votre organisation.
+- Si votre abonnement actuel n’inclut pas Microsoft Defender pour Office 365, [contactez le service ventes pour démarrer une version d’évaluation](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), puis voyez comment Defender pour Office 365 peut fonctionner pour votre organisation.
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurer les stratégies de Microsoft Defender pour Office 365
 
@@ -149,7 +149,7 @@ Pour accéder aux fonctionnalités de Microsoft Defender pour Office 365 dans 
 
 |Rôle ou groupe de rôles|Ressources pour en savoir plus|
 |---|---|
-|Administrateur général (peut être affecté dans Azure Active Directory ou dans le centre de sécurité et conformité)|[À propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|Administrateur général (peut être affecté dans Azure Active Directory ou dans le centre de sécurité et conformité)|[À propos des rôles d’administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md)|
 |Administrateur de sécurité (peut être affecté dans Azure Active Directory ou le centre de sécurité et conformité)|[Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)|
 |Gestion de l’organisation Exchange Online (elle est affectée à Exchange Online)|[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |Rechercher et vider (cette opération est attribuée uniquement dans le centre de conformité et sécurité)|[Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)|

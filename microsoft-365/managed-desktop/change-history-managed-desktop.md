@@ -13,16 +13,28 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 8f6826865f38dad6040f65ac083be76450127299
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: d2ce8ecc12c73969a6ad9b939dc02c6b9cb360f4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877199"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288406"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cet article répertorie les articles nouveaux et mis à jour de la documentation du Bureau géré [Microsoft.](index.yml) Les articles « mis à jour » ont subi des ajouts matériels ou des corrections . Des correctifs mineurs tels que la correction de fautes de frappe, de style ou de mise en forme ne sont pas répertoriés. Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails des modifications) en visitant le [référentiel sur GitHub.](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+
+## <a name="january-2021"></a>Janvier 2021
+Article nouveau ou modifié | Description
+--- | ---
+[Résoudre les problèmes détectés par l’outil de préparation et d’évaluation](get-ready/readiness-assessment-fix.md) | Article mis à jour
+[Ajuster les paramètres après l’inscription](get-started/conditional-access.md) | Article mis à jour
+[Utiliser les rapports](working-with-managed-desktop/reports.md) | Article mis à jour
+[Installer le portail d’entreprise Intune sur les appareils](get-started/company-portal.md) | Article mis à jour
+[Configuration requise de l’appareil](service-description/device-requirements.md) | Nouvel article
+[Conformité](intro/compliance.md) | Article mis à jour
+[Gestion des mises à jour dans Le Bureau géré Microsoft](service-description/updates.md) | Article mis à jour
+[Accéder au portail d’administration](get-started/access-admin-portal.md) | Article mis à jour
 
 
 ## <a name="december-2020"></a>Décembre 2020
@@ -32,7 +44,7 @@ Article nouveau ou modifié | Description
 [Utiliser les rapports](working-with-managed-desktop/reports.md) | Article mis à jour
 [Confidentialité et données personnelles](service-description/privacy-personal-data.md) | Article mis à jour
 [Conformité](intro/compliance.md) | Article mis à jour
-[Configuration requise](get-ready/prerequisites.md) | Article mis à jour
+[Conditions préalables](get-ready/prerequisites.md) | Article mis à jour
 [Configuration réseau](get-ready/network.md) | Article mis à jour
 
 
@@ -51,7 +63,7 @@ Article nouveau ou modifié | Description
 ## <a name="october-2020"></a>Octobre 2020
 Article nouveau ou modifié | Description
 --- | ---
-[Configuration requise](get-ready/prerequisites.md) | Article mis à jour
+[Conditions préalables](get-ready/prerequisites.md) | Article mis à jour
 [Utiliser les informations](working-with-managed-desktop/insights.md) | Article mis à jour
 [Procédure permettant aux partenaires d’inscrire des appareils](get-started/register-devices-partner.md) | Article mis à jour
 [Accéder au portail d’administration](get-started/access-admin-portal.md) | Article mis à jour
@@ -147,7 +159,7 @@ Article nouveau ou modifié | Description
 [Sécurité dans le Bureau géré Microsoft](service-description/security.md)| Article mis à jour
 [Utiliser les informations](working-with-managed-desktop/insights.md) | Article mis à jour
 [Perspectives sur la mise à jour de sécurité Windows](working-with-managed-desktop/security-update-insights.md) | Nouvel article
-[Gestion des mises à jour dans le Bureau géré Microsoft](service-description/updates.md) | Article mis à jour
+[Gestion des mises à jour dans Le Bureau géré Microsoft](service-description/updates.md) | Article mis à jour
 [Services d’appareils bureau géré Microsoft](service-description/device-services.md) | Article mis à jour
 
 
@@ -208,7 +220,7 @@ Article nouveau ou modifié | Description
 [Configurer les appareils Bureau géré Microsoft](get-started/set-up-devices.md) | Nouvel article
 [Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
 [Inscrivez vous-même les appareils existant](get-started/register-reused-devices-self.md) | Nouvel article
-[Gestion des mises à jour dans le Bureau géré Microsoft](service-description/updates.md) | Article mis à jour
+[Gestion des mises à jour dans Le Bureau géré Microsoft](service-description/updates.md) | Article mis à jour
 
 ## <a name="august-2019"></a>Août 2019
 Article nouveau ou modifié | Description
@@ -247,7 +259,7 @@ Article nouveau ou modifié | Description
 [Appareils archivés bureau géré Microsoft](service-description/archived-device-list.md) | Nouvel article
 [Préparer les lecteurs mappés pour le Bureau géré Microsoft](get-ready/mapped-drives.md) | Nouvel article
 [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Nouvel article
-[Commander des appareils Bureau géré Microsoft](get-started/devices.md) | Article mis à jour
+[Commander des appareils bureau géré Microsoft](get-started/devices.md) | Article mis à jour
 [Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md) | Nouvel article
 
 ## <a name="april-2019"></a>Avril 2019
@@ -258,7 +270,7 @@ Article nouveau ou modifié | Description
 [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](get-ready/authentication.md) | Nouvel article
 [Inscrire des appareils dans Le Bureau géré Microsoft](get-started/register-devices-self.md) | Nouvel article
 [Inscrire des appareils dans Bureau géré Microsoft pour les partenaires](get-started/register-devices-partner.md) | Nouvel article
-[Déployer des applications sur des appareils bureau géré Microsoft](get-started/deploy-apps.md) | Article mis à jour
+[Déployer des applications sur des appareils de bureau géré Microsoft](get-started/deploy-apps.md) | Article mis à jour
 
 ## <a name="march-2019"></a>Mars 2019
 Article nouveau ou modifié | Description

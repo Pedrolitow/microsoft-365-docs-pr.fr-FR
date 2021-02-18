@@ -18,27 +18,27 @@ ms.collection:
 description: Les administrateurs peuvent consulter les questions fréquemment posées et leurs réponses sur la protection contre l’usurpation d’adresse dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d0805b5ca9e951234679ed8b3d03b6bdfced2be
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: d2d307d201af8ad09a4faf7a865a29da8942bdf8
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175889"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288908"
 ---
 # <a name="anti-spoofing-protection-faq"></a>FAQ sur la protection contre l’usurpation d’identité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Cet article fournit des questions fréquemment posées et des réponses sur la protection contre l’usurpation d’adresses pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou les organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online.
 
 Pour obtenir des questions et des réponses sur la protection anti-courrier indésirable, consultez la faq sur la [protection anti-courrier indésirable.](anti-spam-protection-faq.md)
 
-Pour obtenir des questions et des réponses sur la protection anti-programme malveillant, consultez la [faq sur la protection anti-programme malveillant.](anti-malware-protection-faq-eop.md)
+Pour obtenir des questions et des réponses sur la protection anti-programme malveillant, consultez la faq sur la [protection anti-programme malveillant.](anti-malware-protection-faq-eop.md)
 
 ## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Pourquoi Microsoft a-t-il choisi de courrier indésirable entrant non authentifié ?
 
@@ -48,7 +48,7 @@ Microsoft estime que le risque de continuer à autoriser les messages entrants n
 
 Lorsque Microsoft a activé cette fonctionnalité en 2018, certains faux positifs se sont produits (les messages de qualité ont été marqués comme faux). Toutefois, au fil du temps, les expéditeurs se sont ajustés aux exigences. Le nombre de messages qui ont été identifiés comme usurpés est devenu négligeable pour la plupart des chemins d’accès aux e-mails.
 
-Microsoft lui-même a d’abord adopté les nouvelles exigences d’authentification de messagerie plusieurs semaines avant de le déployer pour les clients. S’il y a eu des perturbations au début, elles ont progressivement diminué.
+Microsoft lui-même a d’abord adopté les nouvelles exigences d’authentification du courrier électronique plusieurs semaines avant de le déployer pour les clients. S’il y a eu des perturbations au début, elles ont progressivement diminué.
 
 ## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-defender-for-office-365"></a>La veille contre l’usurpation d’informations est-elle disponible pour les clients Microsoft 365 sans Defender pour Office 365 ?
 
@@ -72,7 +72,7 @@ Nous vous déconseillons de désactiver la protection contre l’usurpation d’
 
 Malheureusement, non. Les attaquants s’adaptent pour utiliser d’autres techniques (par exemple, les comptes compromis ou les comptes dans les services de messagerie gratuits). Toutefois, la protection anti-hameçonnage fonctionne beaucoup mieux pour détecter ces autres types de méthodes de hameçonnage. Les couches de protection dans EOP sont conçues pour fonctionner ensemble et s’appuyer les unes sur les autres.
 
-## <a name="do-other-large-email-services-block-unauthenticated-inbound-email"></a>D’autres services de courrier de grande taille bloquent-ils les messages entrants non authentifiés ?
+## <a name="do-other-large-email-services-block-unauthenticated-inbound-email"></a>D’autres services de messagerie de grande taille bloquent-ils les messages entrants non authentifiés ?
 
 Presque tous les grands services de messagerie implémentent des vérifications SPF, DKIM et DMARC traditionnelles. Certains services ont d’autres contrôles plus stricts, mais peu vont jusqu’à EOP pour bloquer les messages électroniques non authentifiés et les traiter comme des messages usurpés. Toutefois, le secteur est de plus en plus conscient des problèmes de courrier non authentifié, en particulier en raison du problème de hameçonnage.
 
@@ -84,4 +84,4 @@ Nous vous recommandons de désactiver cette fonctionnalité, car elle n’offre 
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Le modèle de réécriture des expéditeurs aide-t-il à corriger le courrier électronique transmis ?
 
-Schéma de réécriture de l’expéditeur ne résout que partiellement le problème du courrier transféré. La réécriture du message SMTP **MAIL FROM**, SRS permet de s’assurer que le message transmis passe SPF à la destination suivante. Toutefois, étant donné que la prévention  de l’usurpation d’adresse est basée sur l’adresse De en combinaison avec le domaine de signature **MAIL FROM** ou DKIM (ou d’autres signaux), il ne suffit pas d’empêcher que le courrier électronique transmis par SRS soit marqué comme usurpé.
+Schéma de réécriture de l’expéditeur ne résout que partiellement le problème du courrier transféré. La réécriture du message SMTP **MAIL FROM**, SRS permet de s’assurer que le message transmis passe SPF à la destination suivante. Toutefois, étant donné que la prévention  de l’usurpation d’adresse est basée sur l’adresse De en combinaison avec le domaine de signature **MAIL FROM** ou DKIM (ou d’autres signaux), il ne suffit pas d’empêcher le courrier électronique transmis par SRS d’être marqué comme usurpé.

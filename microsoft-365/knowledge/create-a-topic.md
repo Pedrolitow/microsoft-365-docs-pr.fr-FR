@@ -1,6 +1,6 @@
 ---
 title: Créer une rubrique dans rubriques microsoft
-description: Comment créer une rubrique dans Microsoft Topics.
+description: Création d’une rubrique dans Rubriques Microsoft.
 author: efrene
 ms.author: efrene
 manager: pamgreen
@@ -14,19 +14,19 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242881"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279387"
 ---
 # <a name="create-a-new-topic"></a>Création d’un projet 
 
-Dans Rubriques de Topics, vous pouvez créer une rubrique si aucune rubrique n’est découverte via l’indexation ou si la technologie d’IA n’a pas trouvé suffisamment de preuves pour l’établir en tant que sujet.
+Dans Rubriques de Topics, vous pouvez créer une rubrique si une rubrique n’est pas découverte par le biais de l’indexation ou si la technologie d’IA n’a pas trouvé suffisamment de preuves pour l’établir en tant que rubrique.
 
 > [!Note] 
-> Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que les informations d’une rubrique créée manuellement sont visibles par tous les utilisateurs qui ont l’autorisation d’afficher la rubrique. 
+> Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations sur les personnes dans une rubrique créée manuellement sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher la rubrique. 
 
 
 ## <a name="requirements"></a>Conditions requises
@@ -77,6 +77,9 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
 
     Vous pouvez également utiliser l’option De <b>un</b> lien pour ajouter un fichier ou une page en fournissant l’URL. 
 
+    > [!Note] 
+    > Les fichiers et les pages que vous ajoutez doivent se trouver dans le même client Microsoft 365. Si vous souhaitez ajouter un lien vers une ressource externe dans la rubrique, vous pouvez l’ajouter via l’icône de zone de dessin à l’étape 8.
+
 
 6.  La section <b>Sites associés</b> présente les sites qui ont des informations sur cette rubrique. 
 
@@ -86,7 +89,7 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
     
     ![Sélectionner un site](../media/knowledge-management/sites.png)</br>
 
-7. La <b>section Rubriques connexes</b> présente les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une <b></b> autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
+7. La <b>section Rubriques connexes</b> montre les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une <b></b> autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
 
    ![Voir aussi](../media/knowledge-management/related-topic.png)</br>  
 
@@ -97,6 +100,16 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
    La rubrique connexe que vous avez ajoutée s’affichera en tant que rubrique connectée.
 
    ![Rubriques connexes connectées](../media/knowledge-management/related-topics-final.png)</br> 
+
+   Pour supprimer une rubrique associée, sélectionnez la rubrique à supprimer, puis sélectionnez l’icône Supprimer <b>la rubrique.</b></br>
+ 
+   ![Supprimer une rubrique connexe](../media/knowledge-management/remove-related.png)</br>  
+
+   Ensuite, <b>sélectionnez Supprimer.</b></br>
+
+   ![Confirmer la suppression](../media/knowledge-management/remove-related-confirm.png)</br> 
+     
+ 
 
 
 8. Vous pouvez également ajouter des éléments statiques à la page (texte, images ou liens, par exemple) en sélectionnant l’icône de zone de dessin, que vous trouverez sous la brève description. Sa sélection ouvre la boîte à outils SharePoint à partir de laquelle vous pouvez choisir l’élément que vous souhaitez ajouter à la page.

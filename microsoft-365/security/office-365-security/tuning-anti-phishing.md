@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.collection:
@@ -15,19 +14,25 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et la façon dont un message de hameçonnage a été envoyé dans Microsoft 365, et ce qu’il faut faire pour empêcher d’autres messages de hameçonnage à l’avenir.
-ms.openlocfilehash: 758945c64966763991bfdfba0d70a60ca1c2ddca
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d3abbafce36c589f60eb164fb29c714c980f8b98
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865043"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286488"
 ---
 # <a name="tune-anti-phishing-protection"></a>Régler la protection anti-hameçonnage
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Bien que Microsoft 365 soit fourni avec une variété de fonctionnalités anti-hameçonnage activées par défaut, il est possible que certains messages d’hameçonnage soient encore envoyés à vos boîtes aux lettres. Cette rubrique décrit ce que vous pouvez faire pour découvrir pourquoi un message d’hameçonnage est passé à travers et ce que vous pouvez faire pour ajuster les paramètres anti-hameçonnage dans votre organisation Microsoft 365 sans que cela ne rende accidentellement les choses plus mauvaises.
+Bien que Microsoft 365 soit fourni avec une variété de fonctionnalités anti-hameçonnage activées par défaut, il est possible que certains messages d’hameçonnage soient encore envoyés à vos boîtes aux lettres. Cette rubrique décrit ce que vous pouvez faire pour découvrir pourquoi un message d’hameçonnage est passé à travers et ce que vous pouvez faire pour ajuster les paramètres anti-hameçonnage dans votre organisation Microsoft 365 sans que les choses se dégradent accidentellement.
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>Tout d’abord , traitez les comptes compromis et assurez-vous que vous bloquez toute autre tentative de hameçonnage
 
@@ -39,23 +44,23 @@ Si votre abonnement inclut Microsoft Defender pour Office 365, vous pouvez utili
 
 - [Pièces jointes sécurisées dans Microsoft Defender pour Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](configure-atp-anti-phishing-policies.md) Notez que vous pouvez augmenter temporairement les **seuils** de hameçonnage avancés dans la stratégie de **Standard** à **Agressif,** **Plus** agressif ou **Plus agressif**.
+- [Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](configure-atp-anti-phishing-policies.md) Notez que vous pouvez augmenter temporairement les **seuils** de hameçonnage avancés dans la stratégie de **Standard** à **Agressif,** Plus agressif **ou** Plus **agressif**.
 
 Vérifiez que ces fonctionnalités de Defender pour Office 365 sont allumées.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Signaler le message de hameçonnage à Microsoft
 
-La signalement de messages de hameçonnage est utile pour ajuster les filtres utilisés pour protéger tous les clients dans Microsoft 365. Pour obtenir des instructions, [reportez-vous aux messages et fichiers envoyés à Microsoft.](report-junk-email-messages-to-microsoft.md)
+Le signalement de messages de hameçonnage est utile pour régler les filtres utilisés pour protéger tous les clients dans Microsoft 365. Pour obtenir des instructions, [reportez-vous aux messages et fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
 ## <a name="inspect-the-message-headers"></a>Inspecter les en-têtes de message
 
-Vous pouvez examiner les en-têtes du message d’hameçonnage pour voir si vous pouvez vous-même faire quelque chose pour éviter que d’autres messages de hameçonnage ne arrivent. En d’autres termes, l’examen des en-têtes de messages peut vous aider à identifier les paramètres de votre organisation qui étaient chargés d’autoriser les messages de hameçonnage.
+Vous pouvez examiner les en-têtes du message d’hameçonnage pour voir s’il existe une chose que vous pouvez faire vous-même pour éviter que d’autres messages de hameçonnage ne s’en approchent. En d’autres termes, l’examen des en-têtes de messages peut vous aider à identifier les paramètres de votre organisation qui étaient chargés d’autoriser les messages de hameçonnage.
 
 Plus précisément, vous devez vérifier le champ **d’en-tête X-Forefront-Antispam-Report** dans les en-têtes de message pour obtenir des indications sur le filtrage ignoré pour le courrier indésirable ou le hameçonnage dans la valeur SFV (Spam Filtering Verdict). Les messages qui ignorent le filtrage auront une entrée de , ce qui signifie que l’un de vos paramètres a autorisé ce message en remplacement des verdicts de courrier indésirable ou de hameçonnage qui ont été déterminés par `SCL:-1` le service. Pour plus d’informations sur la façon d’obtenir des en-têtes de message et la liste complète de tous les en-têtes de messages anti-courrier indésirable et anti-hameçonnage disponibles, consultez les en-têtes de message anti-courrier indésirable dans [Microsoft 365.](anti-spam-message-headers.md)
 
 ## <a name="best-practices-to-stay-protected"></a>Meilleures pratiques pour rester protégé
 
-- Sur une base mensuelle, exécutez [le niveau de sécurisation pour](../mtp/microsoft-secure-score.md) évaluer les paramètres de sécurité de votre organisation.
+- Sur une base mensuelle, exécutez [le niveau de sécurisation](../mtp/microsoft-secure-score.md) pour évaluer les paramètres de sécurité de votre organisation.
 
 - Pour les messages qui sont mis en quarantaine par erreur ou pour les messages autorisés, nous vous recommandons de rechercher ces messages dans l’Explorateur de menaces et les [détections en temps réel.](threat-explorer.md) Vous pouvez effectuer une recherche par expéditeur, destinataire ou ID de message. Après avoir localisé le message, consultez les détails en cliquant sur l’objet. Pour un message mis en quarantaine, recherchez la « technologie de détection » afin de pouvoir utiliser la méthode appropriée pour remplacer. Pour un message autorisé, recherchez la stratégie qui a autorisé le message.
 

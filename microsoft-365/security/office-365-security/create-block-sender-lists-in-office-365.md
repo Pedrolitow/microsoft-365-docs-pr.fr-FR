@@ -14,25 +14,25 @@ search.appverid:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour bloquer les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d77457567d4c3f9f4a8620021a7fb41615f0594d
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 5c95b49db811807a0cb46dce5363b8ae2dbe5602
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165654"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287280"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Créer des listes d’expéditeurs bloqués dans EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, EOP offre plusieurs façons de bloquer les messages électroniques provenant d’expéditeurs indésirables. Ces options incluent les expéditeurs bloqués Outlook, les listes d’expéditeurs bloqués ou les listes de domaines bloqués dans les stratégies anti-courrier indésirable, les règles de flux de messagerie Exchange (également appelées règles de transport) et la liste d’adresses IP bloquées (filtrage des connexions). Collectivement, vous pouvez voir ces options comme des _listes d’expéditeurs bloqués._
 
-La meilleure méthode pour bloquer les expéditeurs varie selon l’étendue de l’impact. Pour un utilisateur unique, la solution appropriée peut être les expéditeurs bloqués Outlook. Pour de nombreux utilisateurs, l’une des autres options serait plus appropriée. Les options suivantes sont classées par étendue et largeur d’impact. La liste passe de étroite à large, mais *lit les spécificités* pour obtenir des recommandations complètes.
+La meilleure méthode pour bloquer les expéditeurs varie selon l’étendue de l’impact. Pour un utilisateur unique, la solution appropriée peut être expéditeurs bloqués Outlook. Pour de nombreux utilisateurs, l’une des autres options serait plus appropriée. Les options suivantes sont classées par étendue et largeur d’impact. La liste passe de étroite à large, mais *lit les spécificités* pour obtenir des recommandations complètes.
 
 1. Expéditeurs bloqués Outlook (liste des expéditeurs bloqués stockée dans chaque boîte aux lettres)
 
@@ -49,11 +49,11 @@ En revanche, vous avez également plusieurs options pour toujours autoriser les 
 
 ## <a name="email-message-basics"></a>Informations de base sur les messages électroniques
 
-Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe de message contient les informations requises pour transmettre et remettre le message entre des serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’*en-tête de message*) et le corps du message. L’enveloppe du message est décrite dans la RFC 5321 et l’en-tête du message est décrit dans la RFC 5322. Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission du message et ne fait pas réellement partie du message.
+Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe de message contient les informations requises pour transmettre et remettre le message entre des serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’*en-tête de message*) et le corps du message. L’enveloppe de message est décrite dans la RFC 5321 et l’en-tête du message est décrit dans la RFC 5322. Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission du message et ne fait pas réellement partie du message.
 
 - L’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) est l’adresse de messagerie utilisée dans la `5321.MailFrom` transmission SMTP du message.  Cette adresse de messagerie est généralement enregistrée dans le champ **d’en-tête Return-Path** dans l’en-tête du message (bien qu’il soit possible pour l’expéditeur de désigner une autre adresse de messagerie **Return-Path).** Si le message ne peut pas être remis, il s’agit du destinataire de la non-remise (également appelée NDR ou message de non-remise).
 
-- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse de messagerie de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  
+- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse e-mail de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  
 
 Souvent, `5321.MailFrom` les adresses et les `5322.From` adresses sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé pour le compte d’une autre personne, les adresses peuvent être différentes.
 
@@ -61,7 +61,7 @@ Les listes d’expéditeurs bloqués et les listes de domaines bloqués dans les
 
 ## <a name="use-outlook-blocked-senders"></a>Utiliser les expéditeurs bloqués Outlook
 
-Lorsque seul un petit nombre d’utilisateurs a reçu des messages indésirables, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste des expéditeurs bloqués dans la boîte aux lettres. Pour obtenir des instructions, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online.](configure-junk-email-settings-on-exo-mailboxes.md)
+Lorsque seul un petit nombre d’utilisateurs a reçu des messages indésirables, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste des expéditeurs bloqués dans la boîte aux lettres. Pour obtenir des instructions, voir [Configurer les paramètres de courrier indésirable sur les boîtes aux lettres Exchange Online.](configure-junk-email-settings-on-exo-mailboxes.md)
 
 Lorsque les messages sont correctement bloqués en raison de la liste des expéditeurs bloqués d’un utilisateur, le champ **d’en-tête X-Forefront-Antispam-Report** contient la valeur `SFV:BLK` .
 
@@ -85,6 +85,6 @@ Quelles que soient les conditions ou les exceptions que vous utilisez pour ident
 
 ## <a name="use-the-ip-block-list"></a>Utiliser la liste d’adresses IP bloqués
 
-Lorsqu’il n’est pas possible d’utiliser l’une des autres options pour bloquer un *expéditeur,* vous devez utiliser la liste d’adresses IP bloqués dans la stratégie de filtrage des connexions. Pour plus d'informations, consultez la rubrique relative à la [configuration de la stratégie de filtre de connexion](configure-the-connection-filter-policy.md). Il est important de conserver un nombre minimal d’adresses IP bloquées, de sorte que le blocage de plages d’adresses IP entières *n’est pas* recommandé.
+Lorsqu’il n’est pas possible d’utiliser l’une des autres options pour bloquer un *expéditeur,* utilisez la liste d’adresses IP bloqués dans la stratégie de filtrage des connexions. Pour plus d'informations, consultez la rubrique relative à la [configuration de la stratégie de filtre de connexion](configure-the-connection-filter-policy.md). Il est important de conserver un nombre minimal d’adresses IP bloquées, de sorte que le blocage de plages d’adresses IP entières *n’est pas* recommandé.
 
 Vous  devez particulièrement éviter d’ajouter des plages d’adresses IP appartenant à des services grand public (par exemple, outlook.com) ou des infrastructures partagées, et veillez également à consulter la liste des adresses IP bloquées dans le cadre d’une maintenance régulière.

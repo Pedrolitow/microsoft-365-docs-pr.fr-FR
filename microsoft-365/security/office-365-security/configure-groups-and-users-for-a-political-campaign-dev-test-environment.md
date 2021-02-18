@@ -19,19 +19,19 @@ description: 'Résumé : Créez des abonnements d’essai Office 365 et Enterpr
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d23539951e4d51fcd29417ab71ce599853d7537
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e600b3baf012d416a7b5de974b94111bb6cf90a2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165702"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287448"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender pour Office 365 Plan 2](office-365-atp.md)
 
  **Résumé :** Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.
 
@@ -41,7 +41,7 @@ Suivez les instructions de cet article pour créer un environnement de développ
 
 Dans cette phase, vous obtenez des abonnements d’essai pour Office 365 E5 et Enterprise Mobility + Security (EMS) E5 pour une entreprise fictive qui représente une campagne électorale.
 
-Tout d’abord, suivez les instructions de **Phase 2** de [la configuration de base légère](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+Tout d’abord, suivez les instructions de **Phase 2** de [la configuration de base légère](../../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
 Ensuite, inscrivez-vous à l’abonnement d’évaluation EMS E5 et ajoutez-le à la même organisation que votre abonnement d’évaluation.
 
@@ -139,7 +139,7 @@ Ensuite, vous configurez les groupes afin que des licences Office 365 E5 et EMS 
 
 Dans cette phase, vous ajoutez les comptes d’utilisateurs de l’exemple pour votre campagne politique.
 
-Pour commencer, [connectez -vous au module PowerShell Azure Active Directory pour le module Graphique](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).
+Pour commencer, [connectez -vous au module PowerShell Azure Active Directory pour le module Graphique](../../enterprise/connect-to-microsoft-365-powershell.md).
 
 Ensuite, renseignez le nom de votre organisation, votre emplacement et un mot de passe commun, puis exécutez les commandes suivantes à partir de l’invite de commandes PowerShell ou de l’environnement de script intégré (ISE) :
 
@@ -212,6 +212,6 @@ Créez les quatre différents types de sites d’équipe SharePoint Online dans
 
 [Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guides de laboratoire de test d’adoption cloud](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
 [Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

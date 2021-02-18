@@ -19,27 +19,27 @@ description: Découvrez comment EOP et Office 365 vous protègent contre le cour
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c37eba07b306ff47e14640e494e468b63b358726
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2eae3f17d4ba9b72383bf1b8864a136cd9e7b2b8
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166614"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288560"
 ---
 # <a name="safety-tips-in-email-messages"></a>Conseils de sécurité dans les e-mails
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Exchange Online Protection (EOP) et Microsoft 365 vous protègent contre le courrier indésirable, le hameçonnage et la protection contre les programmes malveillants. Aujourd’hui, certaines de ces attaques sont si bien conçues qu’elles semblent légitimes. L’envoi de messages dans le dossier Courrier indésirable n’est pas toujours suffisant. Désormais, lorsque vous vérifiez votre courrier électronique dans Outlook ou Outlook sur le web ou dans n’importe quel client de messagerie, EOP vérifie automatiquement l’expéditeur et ajoute un conseil de sécurité en haut de l’e-mail.
 
 Les conseils de sécurité dans Outlook ne dépendent pas de la version d’Outlook que vous utilisez, car le conseil de sécurité est ouvert et inséré directement dans le corps du message. Cela signifie que le conseil de sécurité s’affiche dans le client de messagerie que vous utilisez. Elle est effectuée au niveau du filtre de messagerie et n’est pas restituer au niveau du client de messagerie. Elle apparaît donc non seulement dans n’importe quelle version d’Outlook, mais également dans n’importe quel client de messagerie.
 
-Le conseil de sécurité( un message codé en couleur) vous avertit des messages potentiellement dangereux. La plupart des messages de votre boîte de réception n’auront pas de conseil de sécurité. Vous ne les verrez que lorsque EOP et Microsoft 365 ont des informations dont vous avez besoin pour empêcher les attaques de courrier indésirable, de hameçonnage et de programmes malveillants. Si des conseils de sécurité s’afficheront dans votre boîte de réception, vous pouvez utiliser les exemples suivants pour en savoir plus sur chaque type de conseil de sécurité.
+Le conseil de sécurité( un message codé en couleur) vous avertit des messages potentiellement dangereux. La plupart des messages de votre boîte de réception n’ont pas de conseil de sécurité. Vous ne les verrez que lorsque EOP et Microsoft 365 ont des informations dont vous avez besoin pour empêcher les attaques de courrier indésirable, de hameçonnage et de programmes malveillants. Si des conseils de sécurité s’afficheront dans votre boîte de réception, vous pouvez utiliser les exemples suivants pour en savoir plus sur chaque type de conseil de sécurité.
 
 - Courrier suspect (conseil de sécurité rouge).
 
@@ -51,7 +51,7 @@ Le conseil de sécurité( un message codé en couleur) vous avertit des messages
 
     ![Capture d’écran shows a green safety tip.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
-    Outre les messages non sécurisés, nous vous indiquerons également les messages valides provenant d’expéditeurs dont nous avons confiance avec un conseil de sécurité vert. Un conseil de sécurité vert dans un e-mail signifie que nous avons vérifié l’expéditeur du message et vérifié qu’il est sûr. Microsoft tient à jour cette liste d’expéditeurs fiables qui inclut les organisations financières et d’autres personnes fréquemment usurpées ou usurpées d’identité.
+    Outre les messages non sécurisés, nous vous indiquerons également les messages valides provenant d’expéditeurs dont nous avons confiance avec un conseil de sécurité vert. Un conseil de sécurité vert dans un e-mail signifie que nous avons vérifié l’expéditeur du message et vérifié qu’il est sûr. Microsoft tient à jour cette liste d’expéditeurs de confiance qui inclut les organisations financières et d’autres personnes fréquemment usurpées ou usurpées d’identité.
 
 ## <a name="working-with-safety-tips"></a>Fonctionnement des conseils de sécurité
 

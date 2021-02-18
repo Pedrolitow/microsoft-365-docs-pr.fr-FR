@@ -19,21 +19,21 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les paramètres de filtrage avancé du courrier indésirable (ASF) disponibles dans les stratégies anti-courrier indésirable dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec316c98befada7a793f525be909ba0b8fa5e3ae
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 0b6db02815f5b50d199e10685e2895a174997fd2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176050"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288680"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres de filtrage avancé du courrier indésirable (ASF) dans EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > Les paramètres ASF actuellement disponibles dans les stratégies anti-courrier indésirable sont en train d’être supprimés. Nous vous recommandons de ne pas utiliser ces paramètres dans les stratégies anti-courrier indésirable. La fonctionnalité de ces paramètres ASF est incorporée à d’autres parties de la pile de filtrage. Pour plus d’informations, consultez les paramètres de stratégie [anti-courrier indésirable EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
@@ -47,7 +47,7 @@ Dans toutes les organisations Microsoft 365, les paramètres de filtrage avancé
 >
 > - La présence de messages filtrés en quarantaine.
 >
-> - Champs `X-CustomSpam:` d’en-tête X spécifiques ajoutés aux messages comme décrit dans cet article.
+> - Champs `X-CustomSpam:` d’en-tête X spécifiques ajoutés aux messages, comme décrit dans cet article.
 
 Les sections suivantes décrivent les paramètres et options ASF disponibles dans les stratégies anti-courrier indésirable dans le Centre de sécurité & conformité, et dans Exchange Online PowerShell ou EOP PowerShell autonome ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) et [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
@@ -55,7 +55,7 @@ Les sections suivantes décrivent les paramètres et options ASF disponibles dan
 
 Pour chaque paramètre ASF, les options suivantes sont disponibles dans les stratégies anti-courrier indésirable :
 
-- **On**: ASF ajoute le champ d’en-tête X correspondant  au message et marque le message comme courrier indésirable (SCL 5 ou 6 pour augmenter les [paramètres](#increase-spam-score-settings)de score de courrier indésirable) ou comme courrier indésirable à niveau de confiance **élevé** (SCL 9 pour Marquer comme paramètres de courrier [indésirable).](#mark-as-spam-settings)
+- **On**: ASF ajoute le champ d’en-tête X correspondant  au message et marque le message comme courrier indésirable (SCL 5 ou 6 pour augmenter les [paramètres](#increase-spam-score-settings)de score de courrier indésirable) ou comme courrier indésirable à niveau de confiance **élevé** (SCL 9 pour marquer comme paramètres de courrier [indésirable).](#mark-as-spam-settings)
 
 - **Désactivé**: le paramètre ASF est désactivé. Il s’agit de la valeur par défaut et nous vous recommandons de ne pas la modifier.
 
@@ -109,5 +109,5 @@ Les paramètres ASF suivants définissent le SCL des messages  détectés sur 9,
 |**Appliquer la liste de mots sensibles** <p> *MarkAsSpamSensitiveWordList*|Microsoft conserve une liste dynamique mais non modifiable de mots associés à des messages potentiellement choquants. <p> Les messages qui contiennent des mots de la liste des mots sensibles dans l’objet ou le corps du message sont marqués comme courrier indésirable à niveau de confiance élevé.|`X-CustomSpam: Sensitive word in subject/body`|
 |**Enregistrement SPF : échec sévère** <p> *MarkAsSpamSpfRecordHardFail*|Les messages envoyés à partir d’une adresse IP qui n’est pas spécifiée dans l’enregistrement SPF (Sender Policy Framework) dans le DNS pour le domaine de messagerie source sont marqués comme courrier indésirable à niveau de confiance élevé. <p> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: SPF Record Fail`|
 |**Filtrage conditionnel de l'ID de l'expéditeur : échec sévère** <p> *MarkAsSpamFromAddressAuthFail*|Les messages qui échouent en cas d’échec de vérification conditionnelle de l’ID de l’expéditeur sont marqués comme courrier indésirable. <p> Ce paramètre combine une vérification SPF avec une vérification de l’ID de l’expéditeur pour vous protéger contre les en-têtes de message qui contiennent des expéditeurs falsifiés. <p> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: SPF From Record Fail`|
-|**Rétrodiffusion de rapport de non-remise** <p> *MarkAsSpamNdrBackscatter*|*La backscatter* est des rapports de non-remise inutiles (également appelés rapports de non-remise ou de non-remise) causés par des expéditeurs falsifiés dans les messages électroniques. Pour plus d’informations, voir Messages de [la backscatter et EOP](backscatter-messages-and-eop.md). <p> Vous n’avez pas besoin de configurer ce paramètre dans les environnements suivants, car les NDR légitimes sont remis et la backscatter est marquée comme courrier indésirable : <ul><li>Organisations Microsoft 365 avec boîtes aux lettres Exchange Online.</li><li>Organisations de messagerie locales où vous routez *le courrier sortant* via EOP.</li></ul> <p> Dans les environnements EOP autonomes qui protègent les messages entrants vers les boîtes aux lettres sur site, l’turning this setting on or off a le résultat suivant : <ul><li> **On**: les NDR légitimes sont remis et la backscatter est marquée comme courrier indésirable.</li><li>**Off:** Legitimate NDRs and backscatter go through normal spam filtering. La plupart des NDR légitimes sont remis à l’expéditeur du message d’origine. Certains d’entre eux, mais pas tous, sont marqués comme courrier indésirable à niveau de confiance élevé. Par définition, la backscatter peut uniquement être remis à l’expéditeur usurpé, et non à l’expéditeur d’origine.</li></ul> <p> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: Backscatter NDR`|
+|**Rétrodiffusion de rapport de non-remise** <p> *MarkAsSpamNdrBackscatter*|*La backscatter* est des rapports de non-remise inutiles (également appelés rapports de non-remise ou de non-remise) causés par des expéditeurs falsifiés dans les messages électroniques. Pour plus d’informations, voir Messages de [la backscatter et EOP](backscatter-messages-and-eop.md). <p> Vous n’avez pas besoin de configurer ce paramètre dans les environnements suivants, car les NDR légitimes sont remis et la backscatter est marquée comme courrier indésirable : <ul><li>Organisations Microsoft 365 avec boîtes aux lettres Exchange Online.</li><li>Organisations de messagerie locales où vous routez le courrier *sortant* via EOP.</li></ul> <p> Dans les environnements EOP autonomes qui protègent les messages entrants vers les boîtes aux lettres sur site, l’allisation ou la mise hors service de ce paramètre a le résultat suivant : <ul><li> **On**: les NDR légitimes sont remis et la backscatter est marquée comme courrier indésirable.</li><li>**Off:** Legitimate NDRs and backscatter go through normal spam filtering. La plupart des NDR légitimes sont remis à l’expéditeur du message d’origine. Certains d’entre eux, mais pas tous, sont marqués comme courrier indésirable à niveau de confiance élevé. Par définition, la backscatter peut uniquement être remis à l’expéditeur usurpé, et non à l’expéditeur d’origine.</li></ul> <p> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: Backscatter NDR`|
 |

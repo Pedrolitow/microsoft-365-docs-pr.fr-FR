@@ -19,20 +19,20 @@ ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Concevoir des sites d’équipe SharePoint Online isolés, y compris déterminer les niveaux d’autorisation, attribuer des autorisations aux utilisateurs avec des groupes d’accès et des groupes Azure AD imbrmbrés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0f92a925948dbf6c8c5c1beb6b9c709f508c4b3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0d53f3b45e3f406dfb0b38bcc910bd34876acb08
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165510"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288334"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Conception d’un site d’équipe SharePoint Online isolé
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
  **Résumé :** Découvrez comment concevoir des sites d’équipe SharePoint Online.
@@ -49,7 +49,7 @@ Chaque site d’équipe SharePoint Online par défaut est créé avec les group
 
 - \<site name> Propriétaires
 
-Ces groupes sont distincts des groupes Microsoft 365 et Azure Active Directory (AD) et sont la base de l’affectation d’autorisations pour les ressources du site.
+Ces groupes sont distincts des groupes Microsoft 365 et Azure Active Directory (AD) et sont la base de l’attribution d’autorisations pour les ressources du site.
 
 L’ensemble des autorisations qui déterminent ce que le membre d’un groupe SharePoint peut faire dans un site est un niveau d’autorisation. Il existe trois niveaux d’autorisation par défaut pour un site d’équipe SharePoint Online : Modification, Lecture et Contrôle total. Le tableau suivant indique la corrélation par défaut des groupes SharePoint et les niveaux d’autorisation affectés :
 
@@ -76,7 +76,7 @@ En prenant l’exemple des groupes SharePoint par défaut :
 
 - Le niveau **\<site name> d’autorisation** Modifier est attribué aux membres du groupe  SharePoint Membres, qui peut inclure des comptes d’utilisateur et des groupes.
 
-- Le niveau  d’autorisation Lecture est attribué aux membres du groupe Visiteurs SharePoint, qui peut inclure des comptes d’utilisateur et des groupes. **\<site name>**
+- Le niveau **\<site name> d’autorisation** Lecture est attribué aux membres du groupe  Visiteurs SharePoint, qui peut inclure des comptes d’utilisateur et des groupes.
 
 - Le niveau  d’autorisation Contrôle total est attribué aux membres du groupe SharePoint Propriétaires, qui peut inclure des comptes d’utilisateur et des groupes. **\<site name>**
 
@@ -115,7 +115,7 @@ Lorsque vous concevez les trois groupes d’accès, rappelez-vous de ceci :
 
 - Il ne doit y avoir que quelques membres dans le groupe d’accès **\<site name> Administrateurs,** correspondant à un petit nombre d’administrateurs SharePoint Online qui gèrent le site d’équipe.
 
-- La plupart des membres de votre site font partie des groupes **\<site name> d’accès Membres** **ou \<site name>** Visionneuses. Étant donné que les membres du site dans le groupe d’accès **\<site name> Membres** ont la possibilité de supprimer ou de modifier des ressources dans le site, réfléchissez bien à son appartenance. En cas de doute, ajoutez le membre du site au groupe **\<site name> d’accès Visionneuses.**
+- La plupart des membres de votre site font partie des groupes **\<site name> d’accès Membres** **\<site name> ou** Visionneuses. Étant donné que les membres du site dans le groupe d’accès **\<site name> Membres** ont la possibilité de supprimer ou de modifier des ressources dans le site, réfléchissez attentivement à son appartenance. En cas de doute, ajoutez le membre du site au groupe **\<site name> d’accès Visionneuses.**
 
 Voici un exemple des groupes SharePoint et des groupes d’accès pour un site isolé nommé ProjectX.
 

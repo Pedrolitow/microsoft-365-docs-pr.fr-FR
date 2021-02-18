@@ -17,19 +17,19 @@ ms.collection:
 description: Découvrez l’interface de gestion web dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166218"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286956"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centre d’administration Exchange dans EOP autonome
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
--  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonome](exchange-online-protection-overview.md)
 
 Le Centre d’administration Exchange (CAE) est une console de gestion web pour Exchange Online Protection (EOP) autonome.
 
@@ -67,7 +67,7 @@ Il s'agit du premier niveau de navigation pour la plupart des tâches que vous e
 
 - **Autorisations :** c’est ici que vous allez gérer les rôles d’administrateur.
 
-- **Gestion de la** conformité : il s’agit de l’endroit où se trouvent le rapport du groupe de rôles d’administrateur et le rapport du journal d’audit de l’administrateur.
+- **Gestion de la** conformité : c’est ici que se trouvent le rapport du groupe de rôles d’administrateur et le rapport du journal d’audit de l’administrateur.
 
 - **Protection**: il s’agit de l’endroit où vous pouvez gérer les stratégies anti-programme malveillant, la stratégie de filtrage des connexions par défaut et DKIM.
 

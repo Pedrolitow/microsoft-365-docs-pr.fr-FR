@@ -18,32 +18,32 @@ description: Les administrateurs peuvent apprendre à router le courrier indési
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 926ac6dec33bf00fc8f0dcd292229e20ccc2b93f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b8fbc1b065e348f759806d80fd85421eb9d66098
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167118"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288872"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurer EOP autonome pour remettre le courrier indésirable dans le dossier Courrier indésirable dans les environnements hybrides
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
--  [Exchange Online Protection autonome](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonome](exchange-online-protection-overview.md)
 
 > [!IMPORTANT]
 > Cette rubrique s’adresse uniquement aux clients EOP autonomes dans les environnements hybrides. Cette rubrique ne s’applique pas aux clients Microsoft 365 ayant des boîtes aux lettres Exchange Online.
 
 Si vous êtes un client Exchange Online Protection (EOP) autonome dans un environnement hybride, vous devez configurer votre organisation Exchange sur site pour reconnaître et traduire les verdicts de filtrage du courrier indésirable d’EOP, afin que la règle de courrier indésirable dans la boîte aux lettres sur site puisse déplacer les messages vers le dossier Courrier indésirable.
 
-Plus précisément, vous devez créer des règles de flux de messagerie (également appelées règles de transport) dans votre organisation Exchange sur site avec des conditions qui recherchent des messages avec l’une des valeurs et en-têtes de courrier indésirable EOP suivants, ainsi que des actions qui définissent le niveau de confiance du courrier indésirable (SCL) de ces messages sur 6 :
+Plus précisément, vous devez créer des règles de flux de messagerie (également appelées règles de transport) dans votre organisation Exchange sur site avec des conditions qui recherchent des messages avec l’un des en-têtes et valeurs EOP anti-courrier indésirable suivants, ainsi que des actions qui définissent le niveau de confiance du courrier indésirable (SCL) de ces messages sur 6 :
 
 - `X-Forefront-Antispam-Report: SFV:SPM` (message marqué comme courrier indésirable par filtrage du courrier indésirable)
 
-- `X-Forefront-Antispam-Report: SFV:SKS` (message marqué comme courrier indésirable par les règles de flux de messagerie dans EOP avant le filtrage du courrier indésirable)
+- `X-Forefront-Antispam-Report: SFV:SKS` (message marqué comme courrier indésirable par des règles de flux de messagerie dans EOP avant le filtrage du courrier indésirable)
 
-- `X-Forefront-Antispam-Report: SFV:SKB` (message marqué comme courrier indésirable par filtrage du courrier indésirable en raison de l’adresse de messagerie ou du domaine de messagerie de l’expéditeur se trouver dans la liste des expéditeurs bloqués ou dans la liste des domaines bloqués dans EOP)
+- `X-Forefront-Antispam-Report: SFV:SKB` (message marqué comme courrier indésirable par filtrage du courrier indésirable en raison de l’adresse de messagerie ou du domaine de messagerie de l’expéditeur se trouver dans la liste des expéditeurs bloqués ou la liste des domaines bloqués dans EOP)
 
 Pour plus d’informations sur ces valeurs d’en-tête, consultez les [en-têtes de message anti-courrier indésirable.](anti-spam-message-headers.md)
 
@@ -80,7 +80,7 @@ Cette rubrique décrit comment créer ces règles de flux de messagerie dans le 
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez **sur** Ajouter une icône, puis sélectionnez Créer une règle ![ dans la ](../../media/ITPro-EAC-AddIcon.png) drop-down qui s’affiche. 
+2. Cliquez **sur** Ajouter une icône, puis sélectionnez Créer une règle dans la baisse ![ qui ](../../media/ITPro-EAC-AddIcon.png) s’affiche. 
 
 3. Dans la page **Nouvelle règle** qui s'ouvre, configurez les paramètres suivants :
 
@@ -104,11 +104,11 @@ Cette rubrique décrit comment créer ces règles de flux de messagerie dans le 
 
    - **Pour ce faire,** **sélectionnez Modifier les propriétés du message** Définir le niveau de \> **confiance du courrier indésirable (SCL).**
 
-     Dans la **boîte de dialogue Spécifier le SCL** qui s’affiche, **sélectionnez 6** (la valeur par défaut est **5**).
+     Dans la **boîte de dialogue Spécifier le SCL** qui s’affiche, **sélectionnez 6** (la valeur par défaut **est 5**).
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**
 
-Répétez ces étapes pour les autres valeurs de verdict de courrier indésirable EOP (**SFV:SPM,** **SFV:SKS** ou **SFV:SKB**).
+Répétez ces étapes pour les valeurs restantes du verdict de courrier indésirable EOP (**SFV:SPM,** **SFV:SKS** ou **SFV:SKB**).
 
 ## <a name="use-the-exchange-management-shell-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>Utiliser l’Environnement de travail Exchange Management Shell pour créer des règles de flux de messagerie qui définissent le SCL des messages indésirables EOP
 

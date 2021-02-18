@@ -20,25 +20,25 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les contrôles de courrier indésirable sortant dans Exchange Online Protection (EOP) et ce que vous devez faire si vous devez envoyer des messages électroniques de masse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6d5a82b4a2c7f94b3c5d0958abc8c4552cc04032
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: f9d434c858f7c66f82dd4f551bac99458b9e5c8c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150687"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287628"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>Protection contre le courrier indésirable sortant dans EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, nous prenons au sérieux la gestion du courrier indésirable sortant. Un client qui envoie intentionnellement ou involontairement du courrier indésirable à partir de son organisation peut dégrader la réputation de l’ensemble du service et affecter la remise du courrier électronique pour d’autres clients.
 
-Cette rubrique décrit les contrôles et les notifications conçus pour empêcher le courrier indésirable sortant et ce que vous pouvez faire si vous avez besoin d’envoyer des messages électroniques de masse.
+Cette rubrique décrit les contrôles et les notifications conçus pour empêcher le courrier indésirable sortant et ce que vous pouvez faire si vous devez envoyer des messages électroniques de masse.
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Ce que les administrateurs peuvent faire pour contrôler le courrier indésirable sortant
 
@@ -54,18 +54,18 @@ Cette rubrique décrit les contrôles et les notifications conçus pour empêche
 
 - Désactivez les comptes qui envoient trop de courrier indésirable : même si nous séparons le courrier indésirable sortant dans le pool de remise à risque élevé, nous ne pouvons pas autoriser un compte (souvent, un compte compromis) à envoyer du courrier indésirable <sup>\*</sup> indéfiniment. Nous surveillons les comptes qui envoient du courrier indésirable et lorsqu’ils dépassent une limite non divulguée, l’envoi de courriers électroniques est bloqué pour le compte. Il existe différents seuils pour les utilisateurs individuels et l’ensemble du client.
 
-- Désactivation de comptes qui envoient trop de messages électroniques trop rapidement : outre les limites qui recherchent les messages marqués comme courrier indésirable, il existe également des limites qui bloquent les comptes lorsqu’ils atteignent une limite globale de messages sortants, quel que soit le verdict de filtrage du courrier indésirable sur les <sup>\*</sup> messages sortants. Un compte compromis peut envoyer du courrier indésirable « zero-day » (précédemment non reconnu) qui est manqué par le filtre de courrier indésirable. Étant donné qu’il peut être difficile d’identifier une campagne de publipostage de masse légitime par rapport à une campagne de courrier indésirable, ces limites permettent de minimiser les dommages potentiels.
+- Désactivation de comptes qui envoient trop de messages électroniques trop rapidement : outre les limites qui recherchent les messages marqués comme courrier indésirable, il existe également des limites qui bloquent les comptes lorsqu’ils atteignent une limite globale de messages sortants, quel que soit le verdict de filtrage du courrier indésirable sur les <sup>\*</sup> messages sortants. Un compte compromis peut envoyer du courrier indésirable « zero-day » (précédemment non reconnu) qui est manqué par le filtre anti-courrier indésirable. Étant donné qu’il peut être difficile d’identifier une campagne de publipostage de masse légitime par rapport à une campagne de courrier indésirable, ces limites permettent de minimiser les dommages potentiels.
 
 <sup>\*</sup> Nous n’publions pas les limites exactes afin que les expéditeurs de courrier indésirable ne peuvent pas jouer au système, et donc nous pouvons augmenter ou diminuer les limites si nécessaire. Les limites sont suffisamment élevées pour empêcher un utilisateur commercial moyen de les dépasser et suffisamment faibles pour vous aider à contenir les dommages causés par un expéditeur de courrier indésirable.
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Recommandations pour les clients qui souhaitent envoyer des publipostages de masse via EOP
 
-Il est difficile de trouver un équilibre entre les clients qui souhaitent envoyer un grand volume de courriers électroniques par rapport à la protection du service contre les comptes compromis et les expéditeurs de courrier en masse dont les pratiques d’acquisition de destinataires sont médiocres. Le coût d’une source de courrier Microsoft 365 qui se trouve sur une liste d’adresses IP tierces est supérieur au blocage d’un utilisateur qui envoie trop de courriers électroniques.
+Il est difficile de trouver un équilibre entre les clients qui souhaitent envoyer un grand nombre de messages électroniques par rapport à la protection du service contre les comptes compromis et les expéditeurs de courrier en masse ayant des pratiques d’acquisition médiocres de destinataires. Le coût d’une source de courrier Microsoft 365 qui se trouve sur une liste d’adresses IP tierces est supérieur au blocage d’un utilisateur qui envoie trop de courriers électroniques.
 
-Comme décrit dans la description du service [Exchange Online,](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)l’utilisation d’EOP pour envoyer des messages électroniques en bloc n’est pas une utilisation prise en charge du service et n’est autorisée que sur la base du « meilleur effort ». Pour les clients qui souhaitent envoyer des messages électroniques en masse, nous vous recommandons les solutions suivantes :
+Comme décrit dans la description du service [Exchange Online,](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)l’utilisation d’EOP pour envoyer des messages électroniques en nombre n’est pas une utilisation prise en charge du service et n’est autorisée que sur la base du « meilleur effort ». Pour les clients qui souhaitent envoyer des messages électroniques en masse, nous vous recommandons les solutions suivantes :
 
 - **Envoyer des messages électroniques en** bloc via des serveurs de messagerie locaux : cela signifie que les clients devront gérer leur propre infrastructure de messagerie pour les publipostages de masse.
 
-- **Utilisez un fournisseur de messagerie** en bloc tiers : il existe plusieurs fournisseurs de solutions de messagerie en bloc tiers que vous pouvez utiliser pour envoyer des publipostages en masse. Ces sociétés ont tout intérêt à collaborer avec leurs clients pour garantir de bonnes pratiques d’envoi de courrier électronique.
+- **Utilisez un fournisseur de messagerie** en bloc tiers : il existe plusieurs fournisseurs de solutions de messagerie en bloc tiers que vous pouvez utiliser pour envoyer des messages électroniques en masse. Ces sociétés ont tout intérêt à collaborer avec leurs clients pour garantir de bonnes pratiques d’envoi de courrier électronique.
 
 Le groupe de travail de messagerie, mobile, anti-abus de programmes malveillants (MAAWG) publie sa liste d’appartenance à <https://www.maawg.org/about/roster> l'. Plusieurs fournisseurs de messagerie en masse sont répertoriés et sont connus comme citoyens Internet responsables.

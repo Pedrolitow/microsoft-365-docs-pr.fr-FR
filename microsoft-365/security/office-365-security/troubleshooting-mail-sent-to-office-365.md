@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,24 +16,29 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Cet article fournit des informations sur la résolution des problèmes liés à l’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 & meilleures pratiques pour le publipostage vers les clients Microsoft 365.
-ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: Cet article fournit des informations de dépannage pour les problèmes d’envoi de courrier électronique à des boîtes de réception dans Microsoft 365 & meilleures pratiques en matière de publipostage en bloc pour les clients Microsoft 365.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1e4a91f70b59debc770a5811638bd64a1eef36dd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760481"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286380"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes d’e-mails envoyés à Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**S’applique à**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 
-Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 et les meilleures pratiques pour le publipostage à des clients.
+Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi de messages électroniques dans des boîtes de réception dans Microsoft 365 et les meilleures pratiques en matière de publipostage en bloc aux clients.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Vous gérez la réputation de l’expéditeur de votre IP et domaine ?
 
-Les technologies de filtrage EOP sont conçues pour assurer une protection contre le courrier indésirable pour Microsoft 365, ainsi que d’autres produits Microsoft tels que Exchange Server. Nous tirons également parti de SPF, DKIM et DMARC ; des technologies d'authentification de messagerie qui aident à résoudre le problème d'usurpation et d'hameçonnage en vérifiant que le domaine qui envoie l'e-mail est autorisé à le faire. Le filtrage EOP est affecté par de nombreux facteurs liés à l'IP d'envoi, le domaine, l'authentification, la précision de la liste, les taux de plaintes, le contenu, etc. Parmi ces facteurs, l'un des facteurs principaux responsable de la baisse de réputation d'un expéditeur et sa capacité à remettre un e-mail est son taux de plainte de courrier indésirable.
+Les technologies de filtrage EOP sont conçues pour fournir une protection contre le courrier indésirable pour Microsoft 365 ainsi que d’autres produits Microsoft tels que Exchange Server. Nous tirons également parti de SPF, DKIM et DMARC ; des technologies d'authentification de messagerie qui aident à résoudre le problème d'usurpation et d'hameçonnage en vérifiant que le domaine qui envoie l'e-mail est autorisé à le faire. Le filtrage EOP est affecté par de nombreux facteurs liés à l'IP d'envoi, le domaine, l'authentification, la précision de la liste, les taux de plaintes, le contenu, etc. Parmi ces facteurs, l'un des facteurs principaux responsable de la baisse de réputation d'un expéditeur et sa capacité à remettre un e-mail est son taux de plainte de courrier indésirable.
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>Vous envoyez des e-mails depuis de nouvelles adresses IP ?
 
@@ -54,19 +58,19 @@ Il se peut que nous n’acceptions pas les e-mails provenant d’expéditeurs do
 - 10.0.0.0/8 (ou 10.0.0.0 - 10.255.255.255)
 - 172.16.0.0/11 (ou 172.16.0.0 - 172.31.255.255)
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Vous avez reçu une notification d’échec de remise lors de l’envoi d’un message électronique à un utilisateur dans Office 365
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Vous avez reçu une rapport de non-remise (NDR) lors de l’envoi de courriers électroniques à un utilisateur dans Office 365
 
 Certains problèmes de remise sont dus au blocage de l'adresse IP de l'expéditeur par Microsoft ou à l'identification du compte d'utilisateur comme expéditeur interdit en raison des activité de courrier indésirable précédentes. Si vous pensez que vous avez reçu la notification d'échec de remise par erreur, suivez d'abord toutes les instructions indiquées dans le message de notification d'échec de remise pour résoudre le problème.
 
-Pour plus d’informations sur l’erreur que vous avez reçue, consultez la liste des codes d’erreur dans notifications d’échec de [remise par courrier électronique dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+Pour plus d’informations sur l’erreur que vous avez reçue, consultez la liste des codes d’erreur dans les rapports de [non-remise](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)de courrier électronique dans Exchange Online.
 
- Par exemple, si vous recevez la notification d’inversion suivante, elle indique que l’adresse IP d’envoi a été bloquée par Microsoft :
+ Par exemple, si vous recevez la NDR suivante, cela indique que l’adresse IP d’envoi a été bloquée par Microsoft :
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-Pour demander la suppression de cette liste, vous pouvez [utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Pour demander la suppression de cette liste, vous pouvez utiliser le portail Supprimer de la liste pour vous supprimer de la liste des [expéditeurs bloqués.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
 
-## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mon e-mail s’est retrouvé dans le dossier de courrier indésirable du destinataire
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mon courrier électronique a été envoyé dans le dossier Courrier indésirable du destinataire
 
 Si un message a été incorrectement identifié comme courrier indésirable par EOP, vous pouvez collaborer avec le destinataire pour envoyer ce faux positif à l'équipe d'analyse du courrier indésirable de Microsoft. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -78,25 +82,25 @@ Si vous recevez une notification d'échec de remise d'EOP, cela indique que votr
 
 Vous avez reçu une notification d'échec de remise car une activité suspecte a été détectée sur l'adresse IP et a été restreinte temporairement le temps d'effectuer des évaluations supplémentaires. Si la suspicion est désactivée au cours de l'évaluation, cette restriction est bientôt levée.
 
-## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Je ne parviens pas à recevoir des courriers électroniques des expéditeurs dans Microsoft 365
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Je ne peux pas recevoir de courrier électronique d’expéditeurs dans Microsoft 365
 
- Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, consultez la rubrique [Exchange Online Protection IP addresses](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
+ Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, [consultez les adresses IP d’Exchange Online Protection.](../../enterprise/urls-and-ip-address-ranges.md)
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Meilleures pratiques pour l’envoi en nombre de messages électroniques aux utilisateurs de Microsoft 365
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Meilleures pratiques pour l’envoi en bloc d’e-mails aux utilisateurs de Microsoft 365
 
-Si vous effectuez souvent des campagnes d’envoi en masse à des utilisateurs de Microsoft 365 et que vous souhaitez vous assurer que vos e-mails arrivent de manière sûre et opportune, suivez les conseils de cette section.
+Si vous effectuez souvent des campagnes de courrier en bloc pour les utilisateurs de Microsoft 365 et que vous souhaitez vous assurer que vos messages électroniques arrivent en toute sécurité et en temps voulu, suivez les conseils de cette section.
 
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Vérifier que le nom de l’expéditeur indique qui envoie le message
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>S’assurer que le nom de l’envoi reflète la personne qui envoie le message
 
 L'Objet doit être un bref résumé du contenu du message, et le corps du message doit clairement et brièvement indiquer l'objet de l'offre, du service ou du produit. Par exemple :
 
 Correct :
 
-> De : marketing@shoppershandbag.com <br> Objet : catalogue mis à jour pour la saison de Noël !
+> De : marketing@shoppershandbag.com <br> Objet : Catalogue mis à jour pour la période de Noël !
 
 Incorrect :
 
-> De : someone@outlook.com <br> Objet : Catalogues
+> De : someone@outlook.com <br> Objet : Catalogues
 
 Plus vous vous présentez et décrivez ce que vous faites de façon claire, moins vos courriers seront bloqués par la plupart des filtres anti-spam.
 
@@ -128,7 +132,7 @@ La façon dont les e-mails sont envoyés est aussi importante que leur contenu. 
 
 - Les redirections incluses dans le corps du message doivent être similaires et cohérentes et non multiples et variées. Une redirection dans ce contexte est tout élément qui pointe en dehors du message, comme des liens et des documents. Si vous avez de très nombreux liens Se désabonner ou Mettre à jour le profil, ils doivent tous pointer vers le même domaine. Par exemple :
 
-  Correct (tous les domaines sont identiques) :
+  Correct (tous les domaines sont identiques) :
 
   `unsubscribe.bulkmailer.com`
 
@@ -136,7 +140,7 @@ La façon dont les e-mails sont envoyés est aussi importante que leur contenu. 
 
   `options.bulkmailer.com`
 
-  Incorrect (tous les domaines sont différents) :
+  Incorrect (tous les domaines sont différents) :
 
   `unsubscribe.bulkmailer.com`
 

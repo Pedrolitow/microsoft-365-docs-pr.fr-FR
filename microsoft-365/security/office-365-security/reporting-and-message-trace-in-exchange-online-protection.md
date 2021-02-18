@@ -15,21 +15,21 @@ ms.custom:
 description: Dans cet article, vous allez découvrir les rapports et les outils de dépannage disponibles pour les administrateurs Microsoft Exchange Online Protection des données (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86c9eb0ee050c4c1a40ef7f29ea3d01dc202be9a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 783c7ea0aca47c805daf66592b401a98f739d071
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166674"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288078"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapports et suivi des messages dans EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender pour Office 365 plan 1 et plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, EOP offre de nombreux rapports différents qui peuvent vous aider à déterminer l’état général et l’état de votre organisation. Il existe également des outils vous permettant de résoudre des problèmes liés à des événements spécifiques (comme un message n'arrivant pas aux destinataires appropriés) et des rapports d'audit pour vous aider à respecter les exigences de conformité.
 
@@ -37,7 +37,7 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 **Activité des groupes Microsoft 365**: afficher des informations sur le nombre de groupes Microsoft 365 créés et utilisés.
 
-**Activité de messagerie**: afficher des informations sur le nombre de messages envoyés, reçus et lus dans toute votre organisation, et par des utilisateurs spécifiques.
+**Activité de** messagerie : afficher des informations sur le nombre de messages envoyés, reçus et lus dans toute votre organisation, et par des utilisateurs spécifiques.
 
 **Utilisation de l’application de messagerie**: afficher des informations sur les applications de messagerie utilisées. Ceci inclut le nombre total de connexions pour chaque application et les versions de Outlook qui se connectent.
 
@@ -45,13 +45,13 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 Pour plus d'informations, consultez les ressources suivantes :
 
-- [Rapports Microsoft 365 dans le Centre d’administration - Groupes Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Rapports Microsoft 365 dans le Centre d’administration - Groupes Microsoft 365](../../admin/activity-reports/office-365-groups.md)
 
-- [Rapports Microsoft 365 dans le Centre d’administration - Activité de messagerie](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
+- [Rapports Microsoft 365 dans le Centre d’administration - Activité de messagerie](../../admin/activity-reports/email-activity.md)
 
-- [Rapports Microsoft 365 dans le Centre d’administration - Utilisation des applications de messagerie](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
+- [Rapports Microsoft 365 dans le Centre d’administration - Utilisation des applications de messagerie](../../admin/activity-reports/email-apps-usage.md)
 
-- [Rapports Microsoft 365 dans le Centre d’administration - Utilisation des boîtes aux lettres](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
+- [Rapports Microsoft 365 dans le Centre d’administration - Utilisation des boîtes aux lettres](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Rapports de conformité & sécurité dans le Centre d’administration Microsoft 365
 
@@ -59,7 +59,7 @@ Ces rapports améliorés offrent une expérience de rapport interactive pour les
 
 **Defender pour Office 365**: afficher des informations sur les liens sécurisés et les pièces jointes sécurisées qui font partie de Microsoft Defender pour Office 365.
 
-**EOP**: afficher des informations sur les détections de programmes malveillants, les messages usurpés, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation.
+**EOP**: afficher des informations sur les détections de programmes malveillants, la messagerie usurpée, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation.
 
 [Afficher des rapports pour Defender pour Office 365](view-reports-for-atp.md)
 

@@ -19,19 +19,19 @@ ms.collection:
 description: Découvrez les affichages de campagne dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3b9c1a9a19e38ea83b13d9028af1a6ba042b900
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e7742b26eb901bc9dfe79d01a9f3414adf524dd9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165918"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286896"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 (plan 2)](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender pour Office 365 Plan 2](office-365-atp.md)
 
 Les affichages de campagne sont une fonctionnalité de Microsoft Defender pour Office 365 Plan 2 (par exemple, Microsoft 365 E5 ou les organisations avec un module add-on Defender pour Office 365 Plan 2). Les affichages de campagne dans le Centre de sécurité & conformité identifient et classent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
 
@@ -52,7 +52,7 @@ Microsoft tire parti des grandes quantités de données anti-hameçonnage, anti-
 - **Destinataires du message**: lien entre les destinataires. Par exemple, les domaines des destinataires, les fonctions de travail des destinataires (administrateurs, cadres, etc.), les types d’entreprise (grandes, petites, publiques, privées, etc.) et les secteurs d’activité.
 - **Charge utile d’attaque**: liens malveillants, pièces jointes ou autres charges utiles dans les messages.
 
-Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée contre votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
+Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée sur votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
 
 ## <a name="campaign-views-in-the-security--compliance-center"></a>Affichages des campagnes dans le Centre de sécurité & conformité
 
@@ -67,18 +67,18 @@ Vous pouvez également obtenir les affichages de campagne à partir des pages :
 - **Gestion des menaces** \> **Explorateur** \> **Affichage** \> **Hameçonnage** \> **Onglet Campagne**
 - **Gestion des menaces** \> **Explorateur** \> **Affichage** \> **Programmes malveillants** \> **Onglet Campagne**
 
-Pour accéder aux affichages campagne, vous devez être membre  des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Lecteur Sécurité dans le Centre de sécurité & conformité. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+Pour accéder aux affichages campagne, vous devez être membre  des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Lecteur Sécurité dans le Centre de sécurité & conformité. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="campaigns-overview"></a>Vue d’ensemble des campagnes
 
 La page vue d’ensemble affiche des informations sur toutes les campagnes.
 
-Sous l’onglet **Campagne** par défaut, la zone **Type** de campagne affiche un graphique à barres qui indique le nombre de destinataires par jour. Par défaut, le graphique affiche les données **de** hameçonnage **et de programmes** malveillants.
+Sous l’onglet **Campagne** par défaut, la zone **Type** de campagne affiche un graphique à barres qui indique le nombre de destinataires par jour. Par défaut, le graphique affiche les données **de** hameçonnage et **de programmes** malveillants.
 
 > [!TIP]
 > Si vous ne voyez pas de données de campagne, essayez de modifier la plage de dates ou les [filtres.](#filters-and-settings)
 
-Le reste de la page de vue d’ensemble affiche les informations suivantes sous l’onglet **Campagne** :
+Le reste de la page de  vue d’ensemble affiche les informations suivantes sous l’onglet Campagne :
 
 - **Nom**
 
@@ -100,7 +100,7 @@ Le reste de la page de vue d’ensemble affiche les informations suivantes sous 
 
 - **Clicked**: nombre d’utilisateurs qui ont cliqué sur l’URL ou ouvert la pièce jointe dans le message d’hameçonnage.
 
-- **Taux de** clic : pourcentage tel que calculé par «**Boîte** de  /  **réception cliquée**». Cette valeur est un indicateur de l’efficacité de la campagne. En d’autres termes, si les destinataires ont pu identifier le message comme hameçonnage et s’ils n’ont pas cliqué sur l’URL de la charge utile.
+- **Taux de** clic : pourcentage calculé par «**Boîte de**  /  **réception cliquée**». Cette valeur est un indicateur de l’efficacité de la campagne. En d’autres termes, si les destinataires ont pu identifier le message comme hameçonnage et s’ils n’ont pas cliqué sur l’URL de la charge utile.
 
   Notez que **le taux de clics** n’est pas utilisé dans les campagnes anti-programme malveillant.
 
@@ -164,7 +164,7 @@ Pour un filtrage plus avancé, y compris le  filtrage par plusieurs propriétés
 
 Lorsque vous avez terminé, cliquez sur **le bouton Requête.**
 
-Après avoir créé un filtre de base ou  avancé, vous pouvez l’enregistrer à l’aide de la requête Enregistrer ou enregistrer **la requête sous**. Plus tard, lorsque vous revenirz aux Affichages campagne, vous pouvez charger un filtre enregistré en cliquant sur **Paramètres de requête enregistrée.**
+Après avoir créé un filtre de base ou  avancé, vous pouvez l’enregistrer à l’aide de la requête Enregistrer ou enregistrer **la requête sous**. Plus tard, lorsque vous revenirz aux Affichages campagne, vous pouvez charger un filtre enregistré en cliquant sur **Paramètres de requête enregistrés.**
 
 Pour exporter le graphique ou la liste des campagnes, cliquez sur **Exporter** et sélectionnez Exporter les données **du graphique** ou Exporter la liste **des campagnes.**
 
@@ -217,7 +217,7 @@ Le diagramme contient les informations suivantes :
 
   |Valeur|Verdict de filtrage du courrier indésirable|Description|
   |---|---|---|
-  |**Autorisé**|`SFV:SKN` <p> `SFV:SKI`|Le message a été marqué comme n’étant pas du courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme n’étant pas un courrier indésirable par une règle de flux de messagerie (également appelée règle de transport). <p> Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent se trouver dans la même organisation.|
+  |**Autorisé**|`SFV:SKN` <p> `SFV:SKI`|Le message a été marqué comme n’étant pas du courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme courrier non indésirable par une règle de flux de messagerie (également appelée règle de transport). <p> Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent se trouver dans la même organisation.|
   |**Bloqué**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable. Par exemple, par une règle de flux de messagerie.|
   |**Détecté**|`SFV:SPM`|Le message a été marqué comme courrier indésirable par le filtrage du courrier indésirable.|
   |**Non détecté**|`SFV:NSPM`|Le message a été marqué comme n’étant pas un courrier indésirable par filtrage du courrier indésirable.|
