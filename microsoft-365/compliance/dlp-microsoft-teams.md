@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vous pouvez désormais appliquer des stratégies DLP aux conversations et canaux Microsoft Teams. Lisez cet article pour en savoir plus sur son fonctionnement.
-ms.openlocfilehash: a34a094a3c0440933a3d44e0125939a02b4ae202
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 13d5d73423cc6ad7db76076f6a53dde668b8fa5c
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840581"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279362"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft Teams
 
@@ -30,14 +30,13 @@ La prise en charge de la protection DLP dans Teams Chat nécessite E5.
 Pour en savoir plus sur les conditions d’octroi de licences, consultez [Conseils sur la gestion des licences des services de niveau client de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 > [!IMPORTANT]
-> La DLP pour Teams n’est prise en charge que lorsque l’utilisateur dispose d’une boîte aux lettres dans Exchange Online.
+> La DLP pour Teams est uniquement prise en charge lorsque l’utilisateur dispose d’une boîte aux lettres dans Exchange Online
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Vue d’ensemble de la DLP pour Microsoft Teams
 
 Récemment, [les fonctionnalités de](data-loss-prevention-policies.md) protection contre la perte de données (DLP) ont été étendues pour inclure les messages de conversation et de canal Microsoft Teams, y compris les messages de canal **privé.**
 
-
-Si votre organisation dispose d’une DLP, vous pouvez désormais définir des stratégies qui empêchent les personnes de partager des informations sensibles dans un canal ou une session de conversation Microsoft Teams. Voici quelques exemples de fonctionnement de cette protection :
+Si votre organisation dispose de DLP, vous pouvez désormais définir des stratégies qui empêchent les personnes de partager des informations sensibles dans un canal ou une session de conversation Microsoft Teams. Voici quelques exemples de fonctionnement de cette protection :
 
 - **Exemple 1 : protection des informations sensibles dans les messages**. Supposons qu’une personne tente de partager des informations sensibles dans une conversation ou un canal Teams avec des invités (utilisateurs externes). Si vous avez défini une stratégie DLP pour éviter cela, les messages avec des informations sensibles envoyés à des utilisateurs externes sont supprimés. Cela se produit automatiquement et en quelques secondes, en fonction de la configuration de votre stratégie DLP.
 
@@ -97,7 +96,14 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 
 4. Dans la **colonne État,** activer la stratégie pour les messages de conversation et **de canal Teams.**<br/>![DLP pour les conversations et les canaux Teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. Sous **l’onglet** Choisir des emplacements, conservez  le paramètre par défaut de tous les comptes, ou sélectionnez Me laisser choisir des emplacements spécifiques et spécifier les comptes à inclure ou à exclure. Sélectionnez **Suivant**.
+5. Sous **l’onglet** Choisir des emplacements, conservez le paramètre par défaut de tous les comptes, ou sélectionnez **Choisir des emplacements spécifiques.** Vous pouvez spécifier :
+    1. jusqu’à 1 000 comptes individuels à inclure ou à exclure
+    1. listes de distribution et groupes de sécurité à inclure ou à exclure; **Il s’agit d’une fonctionnalité de prévisualisation publique.**
+    <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
+    
+6. Sélectionnez **Suivant**.
+
+
 
 6. Cliquez sur **Enregistrer**.
 
@@ -116,7 +122,10 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 
 4. Sous **l’onglet Nom de votre stratégie,** spécifiez un nom et une description pour la stratégie, puis choisissez **Suivant**.
 
-5. Sous **l’onglet** Choisir des emplacements, conservez  le paramètre par défaut de tous les comptes, ou sélectionnez Me laisser choisir des emplacements spécifiques et spécifier les comptes à inclure ou à exclure. Sélectionnez **Suivant**.
+5. Sous **l’onglet** Choisir des emplacements, conservez le paramètre par défaut de tous les comptes, ou sélectionnez **Choisir des emplacements spécifiques.** Vous pouvez spécifier :
+    1. jusqu’à 1 000 comptes individuels à inclure ou à exclure
+    1. listes de distribution et groupes de sécurité à inclure ou à exclure; **Il s’agit d’une fonctionnalité de prévisualisation publique.**
+    <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
 ![Emplacements de stratégie DLP](../media/dlp-teams-selectlocationsnewpolicy.png)
 
@@ -128,7 +137,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 
 7.  Sous **l’onglet Paramètres de stratégie,** sous Que voulez-vous faire si nous détectons des informations sensibles **?**, examinez les paramètres. (C’est ici que vous pouvez choisir de conserver les conseils de stratégie par défaut et les [notifications par](use-notifications-and-policy-tips.md)courrier électronique, ou de les personnaliser.)<br/>![Paramètres de stratégie DLP avec conseils et notifications](../media/dlp-teams-policysettings-tipsemails.png)<br/>Lorsque vous avez terminé de passer en revue ou de modifier les paramètres, choisissez **Suivant**.
 
-8. Sous l’onglet **Paramètres** de stratégie, sous Voulez-vous activer la stratégie ou d’abord tester les éléments **?**, choisissez d’activer la [stratégie,](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)de la tester en premier ou de la maintenir désactivée pour l’instant, puis choisissez **Suivant.**<br/>![Spécifier s’il faut activer la stratégie](../media/dlp-teams-policysettings-turnonnow.png)<br/>
+8. Sous l’onglet **Paramètres** de stratégie, sous Voulez-vous activer la stratégie ou d’abord tester les éléments **?**, choisissez d’activer la [stratégie,](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)de la tester en premier ou de la désactiver pour l’instant, puis choisissez **Suivant.**<br/>![Spécifier s’il faut activer la stratégie](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
 9. Sous **l’onglet Examiner vos paramètres,** examinez les paramètres de votre nouvelle stratégie. Sélectionnez **Modifier** pour apporter des modifications. Lorsque vous avez terminé, choisissez **Créer.**
 

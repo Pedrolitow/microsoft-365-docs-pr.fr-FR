@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations qui permettent aux administrateurs informatiques de gérer les étiquettes de niveau de sensibilité dans les applications Office pour ordinateur de bureau, mobile et web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 959fb0371ab50d4132cacbae38d979a9a75d2aab
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 8d7fd75aaa1b6f54222252c3e8379aaed2c4c223
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261355"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290809"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -46,7 +46,7 @@ Les nouvelles versions des applications Office sont disponibles à différents m
 > [!NOTE]
 > Les noms des canaux de mise à jour pour les applications Office ont récemment été modifiés. Par exemple, le canal mensuel est désormais canal actuel et Office Insider est désormais canal bêta. Pour plus d’informations, voir [Modifications apportées aux canaux de mise à jour de Microsoft 365 Apps.](https://docs.microsoft.com/deployoffice/update-channels-changes)
 
-Office pour iOS et Office pour Android : les étiquettes de niveau de sensibilité sont intégrées à [l’application Office.](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)
+Office pour iOS et Office pour Android : les étiquettes de niveau de sensibilité sont intégrées dans [l’application Office.](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)
 
 Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le client d’étiquetage unifié Azure Information Protection, qui s’exécute uniquement sur les ordinateurs Windows. Pour plus d’informations, voir [Comparer les clients d’étiquetage pour les ordinateurs Windows.](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)
 
@@ -126,7 +126,7 @@ Pour plus d’informations sur les fonctionnalités qui sont pris en charge par 
 
 ## <a name="office-file-types-supported"></a>Types de fichiers Office pris en charge
 
-Les applications Office qui ont des fichiers d’étiquetage intégrés pour Word, Excel et PowerPoint prisent en charge le format Open XML (tel que .docx et .xlsx), mais pas le format Microsoft Office 97-2003 (tel que .doc et .xls). Lorsqu’un type de fichier n’est pas  pris en charge pour l’étiquetage intégré, le bouton Sensibilité n’est pas disponible dans l’application Office.
+Les applications Office qui ont des fichiers d’étiquetage intégrés pour Word, Excel et PowerPoint permettent de mettre en charge le format Open XML (tel que .docx et .xlsx), mais pas le format Microsoft Office 97-2003 (tel que .doc et .xls), le format Open Document (tel que .odt et .ods) ou d’autres formats. Lorsqu’un type de fichier n’est pas  pris en charge pour l’étiquetage intégré, le bouton Sensibilité n’est pas disponible dans l’application Office.
 
 Le client d’étiquetage unifié Azure Information Protection prend en charge les formats Open XML et Microsoft Office 97-2003. Pour plus d’informations, consultez les types de fichiers pris en charge par le client d’étiquetage unifié [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) à partir du guide d’administration de ce client.
 
@@ -147,7 +147,7 @@ Les étiquettes de niveau de sensibilité que vous configurez pour appliquer le 
   
 Lorsque les utilisateurs étiquetent initialement un document ou un e-mail, ils peuvent toujours remplacer vos paramètres de configuration d’étiquette par leurs propres paramètres de chiffrement. Par exemple :
 
-- Un utilisateur applique l’étiquette **Confidentiel \ Tous** les employés à un document et cette étiquette est configurée pour appliquer les paramètres de chiffrement pour tous les utilisateurs de l’organisation. Cet utilisateur configure ensuite manuellement les paramètres IRM pour restreindre l’accès à un utilisateur extérieur à votre organisation. Le résultat final est un document étiqueté Confidentiel **\** Tous les employés et chiffré, mais les utilisateurs de votre organisation ne peuvent pas l’ouvrir comme prévu.
+- Un utilisateur applique l’étiquette **Confidentiel \ Tous** les employés à un document et cette étiquette est configurée pour appliquer les paramètres de chiffrement à tous les utilisateurs de l’organisation. Cet utilisateur configure ensuite manuellement les paramètres IRM pour restreindre l’accès à un utilisateur extérieur à votre organisation. Le résultat final est un document étiqueté Confidentiel **\** Tous les employés et chiffré, mais les utilisateurs de votre organisation ne peuvent pas l’ouvrir comme prévu.
 
 - Un utilisateur applique l’étiquette **Confidentiel \ Destinataires uniquement** à un e-mail et ce courrier électronique est configuré pour appliquer le paramètre de chiffrement Ne pas **forwarder**. Cet utilisateur configure ensuite manuellement les paramètres IRM afin que la messagerie ne soit pas restreinte. Le résultat final est que le courrier électronique peut être transmis par des destinataires, même s’il a l’étiquette **Confidentiel \ Destinataires uniquement.**
 
@@ -183,7 +183,7 @@ Exemples d’héritage d’étiquette, où l’étiquette **Confidentiel** appli
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilité des étiquettes de sensibilité
 
-Avec les applications avec RMS : si vous ouvrez un document ou un **e-mail** étiqueté et chiffré dans une [application rms](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) qui ne prend pas en charge les étiquettes de sensibilité, l’application applique toujours le chiffrement et la gestion des droits.
+Avec les applications **rms -enlightened**: si vous ouvrez un document ou un [e-mail](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) étiqueté et chiffré dans une application RMS qui ne prend pas en charge les étiquettes de sensibilité, l’application applique toujours le chiffrement et la gestion des droits.
 
 Avec le **client Azure Information Protection**: vous pouvez afficher et modifier les étiquettes de sensibilité que vous appliquez aux documents et aux e-mails avec le client d’étiquetage intégré Office à l’aide du client Azure Information Protection, et inversement.
 
@@ -219,12 +219,12 @@ Si les utilisateurs externes n’ont pas de compte dans Azure Active Directory, 
     
     L’avantage de cette option est une surcharge administrative minimale, car les comptes sont créés automatiquement et une configuration d’étiquette plus simple. Pour ce scénario, vous devez [](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) sélectionner l’option de chiffrement Ajouter un utilisateur authentifié, car vous ne connaîtrez pas les adresses e-mail à l’avance. L’inconvénient est que ce paramètre ne vous permet pas de restreindre l’accès et les droits d’utilisation à des utilisateurs spécifiques.
 
-Les utilisateurs externes peuvent également utiliser un compte Microsoft pour les documents chiffrés lorsqu’ils utilisent Microsoft 365 Apps (anciennement applications[Office 365)](https://docs.microsoft.com/deployoffice/name-change)sur Windows, et nouvellement pris en charge sur macOS (version 16.42+), Android (version 16.0.13029+) et iOS (version 2.42+). Par exemple, une personne partage un document chiffré avec elle, et les paramètres de chiffrement spécifient leur adresse de messagerie Gmail. Cet utilisateur peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois qu’ils se sont signés avec ce compte, ils peuvent ouvrir le document et le modifier, conformément aux restrictions d’utilisation spécifiées pour cet utilisateur. Pour obtenir un exemple pas à pas de ce scénario, voir Ouverture et modification [du document protégé.](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)
+Les utilisateurs externes peuvent également utiliser un compte Microsoft pour ouvrir des documents chiffrés lorsqu’ils utilisent Windows et Microsoft 365 Apps (anciennement applications[Office 365)](https://docs.microsoft.com/deployoffice/name-change)ou l’édition autonome d’Office 2019. Plus récemment pris en charge pour d’autres plateformes, les comptes Microsoft sont également pris en charge pour l’ouverture de documents chiffrés sur macOS (Microsoft 365 Apps, version 16.42+), Android (version 16.0.13029+) et iOS (version 2.42+). Par exemple, un utilisateur de votre organisation partage un document chiffré avec un utilisateur extérieur à votre organisation, et les paramètres de chiffrement spécifient une adresse de messagerie Gmail pour l’utilisateur externe. Cet utilisateur externe peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois qu’ils se sont signés avec ce compte, ils peuvent ouvrir le document et le modifier, en fonction des restrictions d’utilisation spécifiées pour eux. Pour obtenir un exemple pas à pas de ce scénario, voir Ouverture et modification [du document protégé.](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)
 
 > [!NOTE]
 > L’adresse de messagerie du compte Microsoft doit correspondre à l’adresse de messagerie spécifiée pour restreindre l’accès aux paramètres de chiffrement.
 
-Lorsqu’un utilisateur avec un compte Microsoft ouvre un document chiffré de cette façon, il crée automatiquement un compte invité pour le client si un compte invité du même nom n’existe pas déjà. Lorsque le compte invité existe, il peut ensuite être utilisé pour ouvrir des documents dans SharePoint et OneDrive à l’aide d’un navigateur (Office sur le web), en plus d’ouvrir des documents chiffrés à partir de l’application de bureau Windows. 
+Lorsqu’un utilisateur avec un compte Microsoft ouvre un document chiffré de cette façon, il crée automatiquement un compte invité pour le client si un compte invité du même nom n’existe pas déjà. Lorsque le compte invité existe, il peut ensuite être utilisé pour ouvrir des documents dans SharePoint et OneDrive à l’aide d’Office sur le web, en plus d’ouvrir des documents chiffrés à partir des applications Office mobiles et de bureau pris en charge.
 
 Toutefois, le compte invité automatique n’est pas créé immédiatement dans ce scénario, en raison de la latence de réplication. Si vous spécifiez des adresses de messagerie personnelles dans le cadre de vos paramètres de chiffrement d’étiquette, nous vous recommandons de créer des comptes invités correspondants dans Azure Active Directory. Ensuite, indiquez à ces utilisateurs qu’ils doivent utiliser ce compte pour ouvrir un document chiffré à partir de votre organisation.
 
@@ -249,7 +249,7 @@ Les applications Office appliquent le marquage et le chiffrement de contenu avec
 | --- | --- | --- |
 | Word, Excel, PowerPoint sur toutes les plateformes | Immédiatement | Immédiatement |
 | Outlook pour PC et Mac | Une fois qu’Exchange Online a envoyé le courrier électronique | Immédiatement |
-| Outlook sur le web, iOS et Android | Une fois qu’Exchange Online a envoyé l’e-mail | Une fois qu’Exchange Online a envoyé l’e-mail |
+| Outlook sur le web, iOS et Android | Une fois qu’Exchange Online a envoyé le courrier électronique | Une fois qu’Exchange Online a envoyé le courrier électronique |
 |
 
 Les solutions qui appliquent des étiquettes de niveau de sensibilité à des fichiers en dehors des applications Office le font en appliquant des métadonnées d’étiquetage au fichier. Dans ce scénario, le marquage de contenu à partir de la configuration de l’étiquette n’est pas inséré dans le fichier, mais le chiffrement est appliqué. 
@@ -258,7 +258,7 @@ Lorsque ces fichiers sont ouverts dans une application de bureau Office, les mar
 
 Les scénarios qui incluent l’application d’une étiquette de sensibilité en dehors des applications Office sont les suivants :
 
-- Scanneur, Explorateur de fichiers et PowerShell à partir du client d’étiquetage unifié Azure Information Protection 
+- Scanneur, Explorateur de fichiers et PowerShell du client d’étiquetage unifié Azure Information Protection 
 
 - Stratégies d’étiquetage automatique pour SharePoint et OneDrive
 
@@ -312,13 +312,13 @@ Exemples :
 
     Dans les en-têtes de document Word uniquement, l’étiquette applique le texte d’en-tête « Ce document Word est sensible ». Aucun texte d’en-tête n’est appliqué à d’autres applications Office.
 
-- **Définissez du texte de pied de groupe pour Word, Excel et Outlook, et un texte de pied de pied de groupe différent pour PowerPoint :**
+- **Définissez du texte de pied de groupe pour Word, Excel et Outlook, et un texte de pied de bas de tableau différent pour PowerPoint :**
 
     `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
 
     Dans Word, Excel et Outlook, l’étiquette applique le texte de pied de ligne « Ce contenu est confidentiel ». Dans PowerPoint, l’étiquette applique le texte de pied de groupe « Cette présentation est confidentielle ».
 
-- **Définissez du texte filigrane spécifique pour Word et PowerPoint, puis du texte filigrane pour Word, Excel et PowerPoint :**
+- **Définissez du texte en filigrane spécifique pour Word et PowerPoint, puis du texte filigrane pour Word, Excel et PowerPoint :**
 
     `${If.App.WP}This content is ${If.End}Confidential`
 
