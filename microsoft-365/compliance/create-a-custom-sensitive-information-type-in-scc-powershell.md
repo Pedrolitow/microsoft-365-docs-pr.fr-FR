@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: 63ff32bda31446c25a523ff2064f7b750d102961
-ms.sourcegitcommit: 3e29926f51530afb0d75d8518a92b9ec7dc5e5bd
+ms.openlocfilehash: e3735458f3259478a7df36bb3c6ddbc4a5fed719
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50173121"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288501"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -433,9 +433,13 @@ Lorsque vous chargez votre fichier XML de package de règles, le système valid
 
 - Chaque type d’informations sensibles personnalisé peut contenir un total maximum de 2 048 mots clés.
 
-- Lorsque vous utilisez la commande cmdlet PowerShell, la taille de retour maximale des données déserialisées est d’environ 1 Mégaoctet.   Cela affecte la taille de votre fichier XML. Conservez le fichier téléchargé limité à un maximum de 512 mégaoctets comme limite suggérée pour obtenir des résultats cohérents sans erreur lors du traitement.
+- La taille maximale des dictionnaires de mots clés dans un client est de 100 kilo-octets au format compressé. Faites référence au même dictionnaire autant de fois que nécessaire lors de la création de types d’informations sensibles personnalisés. Commencez par créer des listes de mots clés personnalisés dans le type informations sensibles, puis utilisez des dictionnaires de mots clés si une liste de mots clés en comporte plus de 2048 ou si un mot clé comporte plus de 50 caractères.
 
-- La structure XML ne requiert pas de caractères de mise en forme tels que des espaces, des tabulations ou des entrées de retour chariot/de trait.  Prenez note de ce message lorsque vous optimisez l’espace disponible sur les téléchargements.
+- Vérifiez que chaque élément Entité contient un attribut recommendedConfidence.
+
+- Lorsque vous utilisez la cmdlet PowerShell, la taille de retour maximale des données désérialisées est d’environ 1 mégaoctet.   Cela affecte la taille de votre fichier XML de pack de règles. Conservez le fichier chargé limité à un maximum de 770 kilo-octets comme limite recommandée pour obtenir des résultats cohérents sans erreur lors du traitement.
+
+- La structure XML ne requiert pas de caractères de mise en forme tels que des espaces, des tabulations ou des entrées de retour chariot/de saut de ligne.  Prenez-en note lorsque vous optimisez l’espace disponible sur les téléchargements. Des outils tels que Microsoft Visual Code fournissent des fonctionnalités de ligne de jointure permettant de compacter le fichier XML.
     
 Si un type d’informations sensibles personnalisé contient un problème qui peut affecter les performances, il n’est pas chargé et l’un des messages d’erreur suivants s’affichent :
   

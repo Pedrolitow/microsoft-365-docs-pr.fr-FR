@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: d0bd5770f347766638af0f0e66b9f961b3721697
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926593"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287232"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
@@ -81,6 +81,30 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
 7. Sélectionnez **Fermer**.
 
 Vous bénéficiez à présent d’une boîte aux lettres partagée dotée d’un calendrier partagé. Passez maintenant à l'étape suivante : bloquer la connexion pour le compte de boîte aux lettres partagée.
+
+## <a name="which-permissions-should-you-use"></a>Quelles autorisations devez-vous utiliser ?
+
+Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres partagée :
+
+- **Accès total** : l'autorisation Accès total permet à un utilisateur d'ouvrir la boîte aux lettres partagée et d'agir comme le propriétaire de cette boîte aux lettres. Après avoir accédé à la boîte aux lettres partagée, un utilisateur peut créer des éléments de calendrier, lire, afficher, supprimer et modifier des courriers électroniques, créer des tâches et contacts de calendrier. Toutefois, un utilisateur doté d'une autorisation Accès total ne peut pas envoyer de messages à partir de la boîte aux lettres partagée à moins de disposer de l'autorisation Envoyer en tant que ou Envoyer de la part de.
+
+- **Envoyer en tant que**: l'autorisation Envoyer en tant que permet à un utilisateur d'emprunter l'identité du propriétaire de la boîte aux lettres partagée pour envoyer des messages. Par exemple, si Katerina se connecte à la boîte aux lettres partagée du service Marketing et envoie un message, le service Marketing semblera en être l'expéditeur.
+
+- **Envoyer de la part de** : l’autorisation Envoyer de la part de permet à l’utilisateur d’envoyer des messages de la part de la boîte aux lettres partagée. Par exemple, si John se connecte à la boîte aux lettres partagée Reception Building 32 et envoie un message, ce dernier semblera avoir été envoyé par « John de la part de Reception Building 32 ». Vous ne pouvez pas utiliser le Centre d’administration Exchange pour accorder l’autorisation « Envoyer de la part de ». Pour ce faire, vous devez utiliser l’applet de commande **Set-Mailbox** avec le paramètre _GrantSendonBehalf_.
+
+### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Utiliser le CAE pour modifier la délégation de boîte aux lettres partagée
+
+1. Dans le CAE, accédez à **Destinataires** \> **Partagé**. Sélectionnez la boîte aux lettres partagée, puis **Modifier** ![Icône Modifier](../../media/ITPro-EAC-EditIcon.png)..
+
+2. Sélectionnez **Délégation de boîte aux lettres**.
+
+3. Pour accorder ou supprimer les autorisations Accès total et Envoyer en tant que, sélectionnez **Ajouter** ![Ajoute une icône](../../media/ITPro-EAC-AddIcon.png) ou sur **Supprimer** ![Supprimer une icône](../../media/ITPro-EAC-RemoveIcon.gif), puis sélectionnez les utilisateurs auxquels vous souhaitez accorder ou retirer les autorisations.
+
+   > [!NOTE]
+   > L'autorisation Accès total permet aux utilisateurs d'ouvrir la boîte aux lettres, d'y créer des éléments et de les modifier. L'autorisation Envoyer en tant que permet à toute personne autre que le propriétaire de la boîte aux lettres d'envoyer des courriers électroniques à partir de cette boîte aux lettres partagée. Les deux autorisations sont requises pour que la boîte aux lettres partagée fonctionne.
+
+4. Sélectionnez **Enregistrer** pour enregistrer vos modifications.
+
 
 ## <a name="block-sign-in-for-the-shared-mailbox-account"></a>Bloquez la connexion pour le compte de boîte aux lettres partagée.
 
@@ -185,8 +209,5 @@ Lorsque vous avez créé la boîte aux lettres partagée, vous avez automatiquem
 [Supprimer une licence à partir d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md)
 
 [Résoudre les problèmes liés aux boîtes aux lettres partagées](resolve-issues-with-shared-mailboxes.md)
-
-
-
 
 
