@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682625"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279308"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -34,8 +34,7 @@ Vous pouvez utiliser la protection contre la perte de données (DLP) de Microsof
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Activités de point de terminaison que vous pouvez surveiller et sur lesquels vous pouvez agir
 
-Les points de terminaison Microsoft DLP vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les appareils exécutant Windows 10.
-
+Les points de terminaison Microsoft DLP vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les appareils exécutant Windows 10. 
 
 |activité |description  | auditable/restreint|
 |---------|---------|---------|
@@ -47,6 +46,28 @@ Les points de terminaison Microsoft DLP vous permet d’auditer et de gérer les
 |créer un élément|Détecte lorsqu'un utilisateur crée un article| vérifiable|
 |renommer un article|Détecte lorsqu'un utilisateur renomme un article| vérifiable|
 
+ ## <a name="monitored-files"></a>Fichiers analysées
+
+La DLP de point du terminaison prend en charge la surveillance de ces types de fichiers :
+
+- Fichiers Word
+- Fichiers PowerPoint
+- Fichiers Excel
+- Fichiers .pdf
+- Fichiers .csv
+- Fichiers .tsv
+- fichiers .txt
+- Fichiers RTF
+- fichiers c
+- fichiers de classe
+- fichiers CPP
+- fichiers cs
+- fichiers h
+- fichiers Java
+ 
+Par défaut, la DLP du point de terminaison audite les activités de ces types de fichiers, même s’il n’existe pas de correspondance de stratégie. Si vous souhaitez surveiller les données des correspondances de stratégie uniquement, vous pouvez désactiver l'option **Toujours auditer l’activité du fichier pour les appareils** dans les paramètres globaux DLP du point de terminaison. Quoi qu’il en soit, les activités sur les fichiers Word, PowerPoint, Excel, PDF et .csv sont toujours auditées.
+
+Le DLP du point de terminaison contrôle l’activité basée sur le type MIME, de sorte que les activités sont capturées même si l’extension de fichier est modifiée. 
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Différences avec Endpoint DLP
 
@@ -79,25 +100,7 @@ Si vous avez des appareils intégrés via [Microsoft Defender pour point de term
 
 ### <a name="viewing-endpoint-dlp-data"></a>Affichage des données DLP de point de terminaison
 
- Le DLP du point de terminaison contrôle l’activité basée sur le type MIME, de sorte que les activités sont capturées même si l’extension de fichier est modifiée. Pour l’instant, les types de fichiers suivants sont pris en charge :
 
-- Fichiers Word
-- Fichiers PowerPoint
-- Fichiers Excel
-- Fichiers .pdf
-- Fichiers .csv
-- Fichiers .tsv
-- fichiers .txt
-- Fichiers RTF
-- fichiers c
-- fichiers de classe
-- fichiers CPP
-- fichiers cs
-- fichiers h
-- fichiers Java
-
-> [!NOTE]
-> Le DLP du Point de terminaison évalue les fichiers de tous les types précités par rapport à la stratégie DLP et applique les actions de protection en conséquence. Tous les fichiers qui correspondent à une stratégie DLP sont audités pour toutes les actions prises en charge, même si elles ne sont pas bloquées. De plus, l’activité des fichiers effectuée sur un fichier Word, PowerPoint, Excel, PDF et. csv est auditée par défaut, indépendamment du fait qu’une stratégie DLP existe ou qu’elle corresponde à ces fichiers.
 
 Vous pouvez afficher les alertes liées aux stratégies DLP appliquées sur les appareils de point de terminaison en accédant au [Tableau de bord de Gestion des Alertes DLP.](dlp-configure-view-alerts-policies.md)
 

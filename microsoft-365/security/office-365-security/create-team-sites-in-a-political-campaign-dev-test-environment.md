@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f3488b479b4d37b7e38e4ced0d612e8fb5ae8a0
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1c12970fb3ff6d5616201ff153085d411068d11c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165474"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288394"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 
@@ -32,7 +32,7 @@ ms.locfileid: "50165474"
 
 **S’applique à**
 
-- [Microsoft Defender pour Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender pour Office 365 Plan 2](office-365-atp.md)
 - 
  **Résumé :** Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale. 
    
@@ -425,6 +425,6 @@ Pour protéger un document avec Azure Information Protection et cette nouvelle �
 
 [Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 
-[Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guides de laboratoire de test d’adoption cloud](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Centre de solutions et d'architecture Microsoft 365](../../solutions/index.yml)
