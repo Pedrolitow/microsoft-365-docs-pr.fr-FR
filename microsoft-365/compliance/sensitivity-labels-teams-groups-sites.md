@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 9276288bc05abebe864a4465f69284372fa0baab
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 7eea07b91647af2b0b7121f9d9c1f018bc9fc630
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868022"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261457"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -271,6 +271,7 @@ Les applications et services suivants prennent en charge les étiquettes de conf
 
   - Centre d’administration SharePoint
   - Portail Azure Active Directory
+  - Centre d’administration Microsoft 365
   - Centre de conformité Microsoft 365, Centre de sécurité Microsoft 365, Centre de sécurité et de conformité
 
 - Utiliser les applications et services :
@@ -280,13 +281,12 @@ Les applications et services suivants prennent en charge les étiquettes de conf
   - Outlook sur le Web et pour Windows, macOS, iOS et Android
   - Formulaires
   - Flux
-  - Planificateur (en cours de déploiement) 
+  - Planificateur 
 
 Les applications et services suivants ne prennent actuellement pas en charge les étiquettes de sensibilité configurées pour les sites et les paramètres de groupe :
 
 - Centres d’administrations :
 
-  - Centre d’administration Microsoft 365
   - Centre d’administration Microsoft Teams
   - Centre d’administration Exchange
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 2b06188a5990c7de81fca0afd21f05ef346807ba
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 69bada084aa3817b49b75d970a1a8d304f6853e6
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759964"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261345"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -128,6 +128,9 @@ Vous pouvez appliquer automatiquement des étiquettes de rétention au contenu q
 - [Correspondance pour les classifieurs entraînables](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Application automatique d’étiquettes au contenu incluant des types spécifiques d’informations sensibles
+
+> [!WARNING]
+> Cette configuration présente actuellement une limite connue dans laquelle l’étiquette de rétention sélectionnée est appliquée à tous les messages électroniques sans étiquette en cas de correspondance avec les types d’informations sensibles sélectionnés. Par exemple, même si vous appliquez automatiquement votre stratégie à des utilisateurs spécifiques, ou si vous sélectionnez des sites autres qu'Exchange pour cette stratégie, le label est toujours appliqué aux courriels non étiquetés lorsqu'il y a une correspondance.
 
 Lorsque vous créez des étiquettes de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données. Chaque modèle est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Par exemple, le modèle présenté ici recherche les numéros américains d’identification fiscale (ITIN), de sécurité sociale (SSN) et de passeports depuis la catégorie **Confidentialité**, ainsi que le modèle **de données d’informations d’identification personnelle (PII) américaines** :
 
