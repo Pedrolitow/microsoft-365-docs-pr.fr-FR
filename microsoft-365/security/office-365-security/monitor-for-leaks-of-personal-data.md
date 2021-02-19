@@ -19,12 +19,12 @@ search.appverid:
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1425015843b2f444c6a410df449eeeaf4045ee5
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261424"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290668"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -65,7 +65,7 @@ En outre, vous pouvez utiliser les rapports DLP pour affiner vos stratégies DLP
 
 Les rapports DLP sont dans le centre de sécurité et le centre de conformité. Accéder aux rapports \>Afficher des rapports. Sous Protection contre la perte de données (DLP), choisissez soit Correspondances avec les règles et les stratégies DLP ou Remplacements et faux positifs DLP.
 
-Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
+Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](../../compliance/view-the-dlp-reports.md).
 
 ![Rapport affichant les correspondances de stratégie DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -87,17 +87,17 @@ Il existe des solutions qui s’abonnent aux journaux d’audit unifiés via l�
 
 Plus d’informations sur les stratégies d’alerte et l’exécution d’une recherche dans le journal d’audit :
 
-- [Stratégies d’alerte dans le Centre de sécurité et de conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- [Stratégies d’alerte dans le Centre de sécurité et de conformité Microsoft 365](../../compliance/alert-policies.md)
 
-- [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introduction)
+- [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduction)
 
-- [Activer ou désactiver la recherche dans le journal d’audit](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md)
 
-- [Rechercher le journal d’audit](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [Rechercher le journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
-- [Propriétés détaillées dans le journal d’audit](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [Propriétés détaillées dans le journal d’audit](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
