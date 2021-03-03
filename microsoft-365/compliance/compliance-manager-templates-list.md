@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft fournit des modèles pour la création d’évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et industrielles.
-ms.openlocfilehash: 2127daddaf44d25d9a43969e8bfafe5def39a260
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 73777746606c20d43cdf330b04e7301b5c512bcc
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519281"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406746"
 ---
 # <a name="compliance-manager-templates-list"></a>Liste des modèles de Gestionnaire de conformité
 
@@ -28,7 +28,7 @@ ms.locfileid: "49519281"
 > [!IMPORTANT]
 > Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Examinez les détails.](https://go.microsoft.com/fwlink/?linkid=2132371)
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 [Le Gestionnaire de conformité Microsoft](compliance-manager.md) fournit un ensemble complet de modèles pour la création d’évaluations. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
 
@@ -42,12 +42,15 @@ Vous trouverez ci-dessous la liste complète des modèles dans le Gestionnaire d
 
 **Où trouver vos modèles**
 
-Dans le Gestionnaire de conformité, allez à la page **modèles d’évaluation.** Vous verrez une liste de tous les modèles disponibles pour votre organisation.
+Dans le Gestionnaire de conformité, allez à la page **modèles d’évaluation.** Vous verrez une liste de tous les modèles disponibles pour votre organisation. Il est important de comprendre la distinction entre les modèles inclus et premium :
 
 - **Les modèles inclus** sont inclus dans le cadre du contrat de licence de votre organisation.
  - **Les modèles Premium** affichent des modèles supplémentaires que votre organisation peut choisir d’obtenir (reportez-vous aux termes du [service).](https://go.microsoft.com/fwlink/?linkid=2132371)
 
 En savoir plus [sur la façon d’afficher et de gérer vos modèles.](compliance-manager-templates.md#viewing-and-managing-templates-from-the-assessment-templates-page)
+
+> [!NOTE]
+> Pour [plus d’informations](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) sur les modèles inclus et premium, voir types de modèles et comprendre ceux qui sont disponibles pour votre organisation.
 
 ## <a name="included-templates"></a>Modèles inclus
 
@@ -55,6 +58,9 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - [R GDPR de l’Union](https://docs.microsoft.com/compliance/regulatory/gdpr) européenne (Microsoft 365, Office 365, Intune)
 - [ISO 27001:2013](https://docs.microsoft.com/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Rev.4
+
+> [!NOTE]
+> Pour les clients modérés et GCC High de la communauté du gouvernement américain, les modèles de certification du modèle de maturité de cybersécurité (CMMC) de niveau 1 à 5 sont inclus, en plus des modèles répertoriés ci-dessus.
 
 ## <a name="premium-templates"></a>Modèles Premium
 
@@ -88,11 +94,11 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Californie - Section 1798 sur le code civile
 - Californie - Database Breach Act (California SB 1386)
 - Californie - Education Code-EDC, Titre 3, Division 14, Partie 65, chapitre 2.5 - Confidentialité des réseaux sociaux
-- Californie - Confidentialité des informations SB-327 : appareils connectés (Microsoft 365)
+- Californie - SB-327 Confidentialité des informations : appareils connectés (Microsoft 365)
 - California Consumer Credit Reporting Agencies Act (Microsoft 365)
 - [California Consumer Privacy Act (CCPA)](https://docs.microsoft.com/compliance/regulatory/offering-ccpa) (Microsoft 365)
-- Canada - Réglementations en matière de protection de la sécurité (Microsoft 365)
-- Canada - Colombie-Britannique - Sécurité & informations - FOIPPA (Microsoft 365)
+- Canada : Réglementations en matière de protection de la sécurité (Microsoft 365)
+- Canada - Colombie-Britannique - Confidentialité des informations & sécurité - FOIPPA (Microsoft 365)
 - [Canada - Bureau du directeur des institutions financières](https://docs.microsoft.com/compliance/regulatory/offering-osfi-canada) (Microsoft 365)
 - Canada - Loi sur la protection des informations personnelles sur la santé (PHIPA) (Microsoft 365)
 - Canada - Loi sur la protection des informations personnelles et les documents électroniques (LPRPDE) (Microsoft 365)
@@ -121,7 +127,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Croatie - Loi sur la protection des données personnelles (Microsoft 365)
 - Loi sur la cybersécurité de la République populaire de Chine (Microsoft 365)
 - Chypre - Traitement de la loi sur les données personnelles (Microsoft 365)
-- Tchèque - Act No. 110/2019 Coll. sur le traitement des données personnelles - 2019 (Microsoft 365)
+- Tchèque - Act No. 110/2019 Coll. on Personal Data Processing - 2019 (Microsoft 365)
 - Tchèque - Sur la cybersécurité et la modification des actes connexes (agir sur la cybersécurité) - Agir non. 181 (Microsoft 365)
 - Violations de sécurité de l’ordinateur - Commerce et commerce Sous-titre II - 12B-100 à 12B-104
 - Danemark - Loi sur la protection des données
@@ -136,10 +142,10 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Estonie - Loi sur la protection des données personnelles (Microsoft 365)
 - Estonie : système de mesures de sécurité pour les systèmes d’information (Microsoft 365)
 - UE - Directive ePrivacy 2002 58 EC (Microsoft 365)
-- EU - EudraLex Volume 4 — Instructions GMP, Annexe 11
+- UE - EudraLex Volume 4 — Instructions GMP, Annexe 11
 - Directive de l’UE 2006/24/CE
 - Règles de confidentialité FDIC (Microsoft 365)
-- [Conseil d’examen des institutions financières fédérales (FFIEC) Livret](https://docs.microsoft.com/compliance/regulatory/offering-ffiec-us) sur la sécurité des informations (Microsoft 365, Intune)
+- [Conseil d’examen des institutions financières fédérales (FFIEC) -](https://docs.microsoft.com/compliance/regulatory/offering-ffiec-us) Livret de sécurité des informations (Microsoft 365, Intune)
 - [FedRamp High Security Controls](https://docs.microsoft.com/compliance/regulatory/offering-fedramp) (Office 365)
 - [FedRamp High Security Controls_NIST 800-53](https://docs.microsoft.com/compliance/regulatory/offering-fedramp) (Microsoft 365)
 - [Modéré FedRAMP](https://docs.microsoft.com/compliance/regulatory/offering-fedramp)
@@ -147,7 +153,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Critères finnois pour l’évaluation de la sécurité des informations des services Cloud (Microsoft 365)
 - Liste de vérification de la cybersécurité de la FINRA
 - France - Loi 78-17 du 6 janvier 1978 sur les technologies de l’information, les fichiers de données et les citoyens (Microsoft 365)
-- Loi SUR la liberté de l’information (LOI). (Microsoft 365)
+- Loi SUR la liberté de l’information (LOI SUR LA LIBERTÉ) (Microsoft 365)
 - Confidentialité FTC des informations financières du consommateur (Microsoft 365)
 - Loi sur la protection des données du Ghana
 - Principes d’enregistrement généralement acceptés (Microsoft 365)
@@ -172,7 +178,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - [ISO 27017:2015](https://docs.microsoft.com/compliance/regulatory/offering-iso-27017) (Microsoft 365)
 - Iso 27799 Informations sur l’état de l’information – Gestion de la sécurité des informations en matière d’état à l’aide de la norme ISO/IEC 27002 (Microsoft 365)
 - ISO 31000:2018 (Microsoft 365)
-- ISO 80001-1 Application de gestion des risques pour les réseaux informatiques incorporant des appareils médicaux (Microsoft 365)
+- APPLICATION ISO 80001-1 de la gestion des risques pour les réseaux informatiques incorporant des appareils médicaux (Microsoft 365)
 - [ISO/IEC 27018:2014](https://docs.microsoft.com/compliance/regulatory/offering-iso-27018)
 - [ISO/IEC 27701:2019](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701) (Microsoft 365)
 - Israël - Réglementations en matière de protection de la vie privée (transfert de données vers des bases de données) (Microsoft 365)
@@ -231,8 +237,8 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Législation en vigueur : loi 29733 sur la protection de la confidentialité des données
 - Directives de gestion de la sécurité des informations du BSP Philippines (Microsoft 365)
 - Philippines Data Privacy Act de 2012 (Microsoft 365)
-- Règlement sur la confidentialité des informations financières et de santé des consommateurs, NAIC MDL-672, T2 2017 (Microsoft 365)
-- Porto Rico - Informations des citoyens sur la loi de sécurité des banques de données (Microsoft 365)
+- Règlement sur la confidentialité des informations financières et de santé des consommateurs, LOI MDL-672, T2 2017 (Microsoft 365)
+- Porto Rico : informations des citoyens sur la loi de sécurité des banques de données (Microsoft 365)
 - Stratégie de sécurité cloud du Qatar
 - RBNZ BS11 External Policy (Microsoft 365)
 - Loi de La République de Moldavie sur la protection des données personnelles (Microsoft 365)
@@ -263,7 +269,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Taïwan - Règles de mise en œuvre pour l’audit interne et le système de contrôle interne des institutions de paiement électronique - 2015 (Microsoft 365)
 - Taïwan : réglementations régissant l’approbation et l’administration des entreprises de services d’information financières qui s’engagent dans le transfert et le règlement de fonds interbancaires (Microsoft 365)
 - Taïwan : réglementations régissant les normes pour le système d’information et la gestion de la sécurité des institutions de paiement électronique (Microsoft 365)
-- Taïwan - Règles de mise en œuvre de l’audit interne et du système de contrôle interne des sociétés financières et des secteurs bancaires (Microsoft 365)
+- Taïwan - Règles de mise en œuvre de l’audit interne et du système de contrôle interne des sociétés de portefeuilles financiers et des secteurs bancaires (Microsoft 365)
 - Taiwan Personal Data Protection Act (PDPA) (Microsoft 365)
 - Texas - Identity Theft Enforcement and Protection Act (Microsoft 365)
 - Thaïlande PDPA (Microsoft 365)
@@ -271,7 +277,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Protection des données de Trinité-et-Tobago (loi 13 de 2011) (Microsoft 365)
 - [Exchange d’évaluation de la sécurité des informations fiables](https://docs.microsoft.com/compliance/regulatory/offering-tisax-germany)
 - Turquie - Protection KVKK des données personnelles 6698 (Microsoft 365)
-- Émirats arabes unis - Loi fédérale n 2 de 2019 sur l’utilisation des technologies de l’information et de la communication (TIC) dans les champs de santé
+- ÉMIRAT - Loi fédérale n 2 de 2019 sur l’utilisation des technologies de l’information et de la communication (TIC) dans les champs de santé
 - Royaume-Uni - Réglementations sur les activités de l’île d’Allemagne / 2011 (Microsoft 365)
 - [Cyber Essentials au Royaume-Uni](https://docs.microsoft.com/compliance/regulatory/offering-cyber-essentials-plus-uk) (Microsoft 365)
 - Royaume-Uni - Norme de cybersécurité pour les fournisseurs de défense (Microsoft 365)
@@ -281,7 +287,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - États-Unis - Federal Information Security Modernization Act de 2014 (FISMA) (Microsoft 365)
 - [US FERPA](https://docs.microsoft.com/compliance/regulatory/offering-ferpa) (Microsoft 365)
 - US-Cloud Act (Microsoft 365)
-- Loi sur la protection du crédit pour les consommateurs (Microsoft 365)
+- Loi sur la protection du crédit à la consommation (Microsoft 365)
 - Loi ouzbékistan sur les données personnelles
 - Normes de sécurité des données de protection renforcée v2.0 (VPDSS 2.0) (Microsoft 365)
 - Vietnam - Loi sur la protection des droits des consommateurs (Microsoft 365)

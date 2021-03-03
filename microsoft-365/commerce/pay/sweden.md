@@ -1,8 +1,8 @@
 ---
 title: Informations de paiement pour la Suède
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -13,24 +13,33 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d654d3797340876d359bccc8279e2021a1f2a6be
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a448b11156770dac5cfe0d273fc75183a5aca8fd
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648430"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405748"
 ---
 # <a name="payment-information-for-sweden"></a>Informations de paiement pour la Suède
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en SEK uniquement et référencer les numéro(s) de facture en cas de paiement.
-
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Bank, Londres  
-**Code SWIFT/BIC :** CITIGB2L  
-**IBAN :** GB22CITI18500812207656  
-**Code SORT :** 185008  
-**Numéro de compte :** 12207656  
-**Nom du compte :** MICROSOFT 
+**Veuillez payer en SEK et référencer les numéro(s) de facture à votre paiement.**
+
+Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,** utilisez les informations bancaires ci-après :
+
+Banque :Bankbank, Londres\
+Code SWIFT : CITIGB2L\
+Code IBAN : GB22CITI18500812207656\
+Numéro de compte : 12207656\
+Nom du compte : MICROSOFT
+
+Si vous avez une facture facturée par **Microsoft AB** pour les commandes et la consommation à partir du 1er mars 2021, utilisez les informations bancaires ci-après :
+
+Banque :Bank Europe plc\
+Code SWIFT : CITIIE2X\
+Code IBAN : IE86CITI99005170000131\
+Numéro de compte : 70000131\
+Nom du compte : MICROSOFT

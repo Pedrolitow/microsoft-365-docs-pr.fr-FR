@@ -16,12 +16,12 @@ ms.collection:
 description: Découvrez la sécurité des documents sécurisés dans Microsoft 365 E5 ou Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3f4ed3535c7e53774b9b567b50f7c06e99cef9d
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 75dfa9e5687a4c4b561067190e7ce338074b2f66
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288584"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407419"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documents sécurisés dans Microsoft 365 E5
 
@@ -31,7 +31,7 @@ ms.locfileid: "50288584"
 - [Microsoft Defender pour Office 365 Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-La fonctionnalité Documents sécurisés de Microsoft 365 E5 ou Sécurité Microsoft 365 E5 utilise [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) pour le point de terminaison pour analyser les documents et les fichiers ouverts en affichage [protégé.](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
+La fonctionnalité Documents sécurisés dans Microsoft 365 E5 ou Microsoft 365 E5 Security utilise [Microsoft Defender pour](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) le point de terminaison pour analyser les documents et les fichiers ouverts en affichage protégé. [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -43,15 +43,15 @@ La fonctionnalité Documents sécurisés de Microsoft 365 E5 ou Sécurité Micro
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous avoir été attribuées dans le Centre de sécurité et de conformité pour que vous puissiez effectuer les procédures décrites dans cet article.
+- Des autorisations doivent vous être attribuées dans **Exchange Online** avant de pouvoir suivre les procédures de cet article :
   - Pour configurer les paramètres des documents sécurisés,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité.
-  - Pour accéder en lecture seule aux paramètres des documents  sécurisés, vous devez être membre des groupes de rôles Lecteur global ou Lecteur **de** sécurité.
+  - Pour accéder en lecture seule aux paramètres des documents  sécurisés,  vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
 
-  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+  Pour plus d'informations, voir [Permissions en échange en ligne](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux _utilisateurs_ les autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
@@ -69,7 +69,7 @@ Les fichiers envoyés par des documents sécurisés ne sont pas conservés dans 
 
    - **Activer les documents sécurisés pour les clients Office**: déplacez le basculement vers la droite pour activer la fonctionnalité : ![ Activer/ ](../../media/scc-toggle-on.png) Activer.
 
-   - Autoriser les utilisateurs à cliquer dans le affichage protégé même si les **documents sécurisés identifient** le fichier comme malveillant : nous vous recommandons de laisser cette option désactivée (laissez le bouton bascule vers la gauche : ![ basculez vers la ](../../media/scc-toggle-off.png) gauche).
+   - Autoriser les utilisateurs à cliquer dans le affichage protégé, même si les **documents sécurisés identifient** le fichier comme malveillant : nous vous recommandons de laisser cette option désactivée (laissez le bouton bascule vers la gauche : ![ ](../../media/scc-toggle-off.png) bascule).
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -98,7 +98,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez activé et configuré les documents sécurisés, faites l’une des étapes suivantes :
 
-- Dans le Centre de sécurité &  conformité, consultez La stratégie de gestion des menaces pièces \>  \> **jointes sécurisées ATP,**  cliquez sur **Paramètres** globaux et vérifiez l’activer pour les clients Office et autoriser les utilisateurs à cliquer dans le affichage protégé, même si les **documents sécurisés identifient** le fichier comme des paramètres malveillants.
+- In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments,** click Global **settings**, and verify the Turn on Safe Documents for Office **clients** and Allow people to click **through Protected View even if Safe Documents identifies the file as malicious** settings.
 
 - Exécutez la commande suivante dans Exchange Online PowerShell et vérifiez les valeurs des propriétés :
 

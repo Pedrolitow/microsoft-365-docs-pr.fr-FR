@@ -11,19 +11,21 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: Déployez le modèle d’identité correct pour vos clients Microsoft 365 et appliquez des connecteurs utilisateur forts.
-ms.openlocfilehash: 40ea67d9b30a385e36af45f57bd33906c10e495d
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: ca545e0152b567cd566ce939e369988f864042a9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908558"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407169"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 3. Identité de vos clients Microsoft 365 entreprise
 
-Votre client Microsoft 365 inclut un client Azure Active Directory (Azure AD) pour gérer les identités et l’authentification des connecteurs. La configuration correcte de votre infrastructure d’identité est essentielle à la gestion des autorisations et de l’accès des utilisateurs microsoft 365 pour votre organisation.
+Votre client Microsoft 365 inclut un client Azure Active Directory (Azure AD) pour gérer les identités et l’authentification des connecteurs. La configuration correcte de votre infrastructure d’identité est essentielle à la gestion des autorisations et de l’accès des utilisateurs Microsoft 365 pour votre organisation.
 
 ## <a name="cloud-only-vs-hybrid"></a>Cloud uniquement et hybride
 
@@ -53,7 +55,7 @@ Dans cette illustration, les utilisateurs locaux et distants se connectent à le
 En fonction des besoins de votre entreprise et des exigences techniques, le modèle d’identité hybride et la synchronisation d’annuaires sont le choix le plus courant pour les clients d’entreprise qui adoptent Microsoft 365. La synchronisation d’annuaires vous permet de gérer les identités dans vos services AD DS et toutes les mises à jour des comptes d’utilisateur, des groupes et des contacts sont synchronisées avec le client Azure AD de votre client Microsoft 365.
 
 >[!Note]
->Lorsque les comptes d’utilisateur AD DS sont synchronisés pour la première fois, ils ne se voit pas attribuer automatiquement une licence Microsoft 365 et ne peuvent pas accéder aux services Microsoft 365, tels que la messagerie électronique. Vous devez d’abord leur attribuer un emplacement d’utilisation. Ensuite, attribuez une licence à ces comptes d’utilisateurs, individuellement ou dynamiquement par le biais de l’appartenance à un groupe.
+>Lorsque les comptes d’utilisateurS AD DS sont synchronisés pour la première fois, ils ne se voit pas attribuer automatiquement une licence Microsoft 365 et ne peuvent pas accéder aux services Microsoft 365, tels que la messagerie électronique. Vous devez d’abord leur attribuer un emplacement d’utilisation. Ensuite, attribuez une licence à ces comptes d’utilisateurs, individuellement ou dynamiquement par le biais de l’appartenance à un groupe.
 >
 
 Voici les deux types d’authentification lors de l’utilisation du modèle d’identité hybride.
@@ -96,14 +98,14 @@ Dans cette illustration, le client a :
 
 - Forêt AD DS synchronisée avec le client Azure AD à l’aide d’un serveur DirSync et d’Azure AD Connect.
 - Copie des comptes d’utilisateur AD DS et d’autres objets de la forêt AD DS.
-- Un ensemble de stratégies d’accès conditionnel pour appliquer des informations de connectez-vous et un accès utilisateur sécurisés en fonction du compte d’utilisateur. 
+- Ensemble de stratégies d’accès conditionnel pour appliquer la sécurisation des utilisateurs et l’accès en fonction du compte d’utilisateur. 
 
 ## <a name="ongoing-maintenance-for-identity"></a>Maintenance continue de l’identité
 
 Régulièrement, vous devrez peut-être :
 
-- Ajouter ou modifier des comptes d’utilisateurs et des groupes. Pour l’identité cloud uniquement, vous conservez vos utilisateurs et groupes basés sur le cloud avec des outils Azure AD tels que le Centre d’administration Microsoft 365 ou PowerShell. Pour l’identité hybride, vous maintenez vos utilisateurs et groupes locaux à l’aide des outils AD DS.
-- Ajoutez ou modifiez votre configuration d’identité et d’accès aux appareils pour appliquer les exigences de sécurité de la signature.
+- Ajouter ou modifier des comptes d’utilisateurs et des groupes. Pour l’identité cloud uniquement, vous conservez vos utilisateurs et groupes basés sur le cloud avec les outils Azure AD tels que le Centre d’administration Microsoft 365 ou PowerShell. Pour l’identité hybride, vous maintenez vos utilisateurs et groupes locaux à l’aide des outils AD DS.
+- Ajoutez ou modifiez votre configuration d’accès aux identités et appareils pour appliquer les exigences de sécurité de la signature.
 
 ## <a name="next-step"></a>Étape suivante
 

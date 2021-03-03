@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: Optimisez l’accès réseau à vos clients Microsoft 365.
-ms.openlocfilehash: 1e57911a6e8c51af3ae00ff0f9053bf9273e0e17
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 5eac0793d2afc924a919671ffa105362ea1866d9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908646"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407191"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour vos clients Microsoft 365 entreprise
 
@@ -43,7 +45,7 @@ Voici un exemple de réseau d’entreprise traditionnel.
 
 ![Un réseau d’entreprise traditionnel avec un accès centralisé à Internet](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
-Dans cette illustration, les succursales se connectent à un bureau central par le biais de périphériques de réseau large (WAN) et d’une dorsale de base du réseau wan. L’accès à Internet s’fait par le biais d’un périphérique de sécurité ou d’un proxy au niveau du périmètre réseau du siège social et d’un fournisseur de services Internet (ISP). Sur Internet, microsoft Global Network dispose d’une série de portes d’entrée dans des régions du monde entier. Les organisations peuvent également utiliser des emplacements intermédiaires pour le traitement de paquets supplémentaire et la sécurité du trafic. Le client Microsoft 365 d’une organisation se trouve dans le réseau global Microsoft.
+Dans cette illustration, les succursales se connectent à un bureau central par le biais de périphériques de réseau large (WAN) et d’une dorsale de base du réseau wan. L’accès à Internet s’fait par le biais d’un périphérique de sécurité ou d’un proxy au niveau du périmètre réseau du siège social et d’un fournisseur de services Internet (ISP). Sur Internet, microsoft Global Network dispose d’une série de portes d’entrée dans les régions du monde entier. Les organisations peuvent également utiliser des emplacements intermédiaires pour le traitement et la sécurité des paquets supplémentaires pour le trafic. Le client Microsoft 365 d’une organisation se trouve dans le réseau global Microsoft.
 
 Les problèmes liés à cette configuration pour les services cloud De Microsoft 365 sont les :
 
@@ -88,7 +90,7 @@ Voici le flux de trafic résultant pour le tunneling fractionné, dans lequel la
 
 ![Trafic réseau provenant de clients VPN avec segmentation de tunnel](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
-Dans cette illustration, le client VPN envoie et reçoit le trafic crucial du service cloud Microsoft 365 directement sur Internet et vers la porte d’accès la plus proche dans le réseau global Microsoft.
+Dans cette illustration, le client VPN envoie et reçoit le trafic crucial du service cloud Microsoft 365 directement via Internet et vers la porte d’accès la plus proche dans le réseau global Microsoft.
 
 Pour plus d’informations et de conseils, voir [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel de VPN](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
@@ -115,7 +117,7 @@ Voici les informations réseau spécifiques pour chaque emplacement de bureau :
 
 Pour plus d’informations, [voir Microsoft 365 Network Insights.](../enterprise/office-365-network-mac-perf-insights.md)
 
-## <a name="sharepoint-performance-with-the-office-365-cdn"></a>Performances SharePoint avec le CDN Office 365
+## <a name="sharepoint-performance-with-the-office-365-cdn"></a>Performances sharePoint avec le CDN Office 365
 
 Un réseau de distribution de contenu (CDN) basé sur le cloud vous permet de réduire les temps de chargement, d’économiser de la bande passante et d’accélérer la réactivité. Un CDN améliore les performances en achant des ressources statiques telles que des fichiers graphiques ou vidéo plus proches des navigateurs qui les demandent, ce qui permet d’accélérer les téléchargements et de réduire la latence. Vous pouvez utiliser le réseau de distribution de contenu (CDN) Office 365 intégré, inclus avec SharePoint dans Microsoft 365 E3 et E5, pour héberger des ressources statiques afin de fournir de meilleures performances pour vos pages SharePoint.
 
@@ -131,7 +133,7 @@ Pour plus d’informations, [voir Utiliser le CDN Office 365 avec SharePoint Onl
 
 Pour que vos clients locaux, périphériques Edge et services d’analyse de paquets basés sur le cloud ignorent le traitement du trafic Microsoft 365 approuvé, vous devez les configurer avec l’ensemble de points de terminaison (plages d’adresses IP et noms DNS) correspondant aux services Microsoft 365. Ces points de terminaison peuvent être configurés manuellement dans les pare-feux et autres périphériques de sécurité Edge, les fichiers PAC pour les ordinateurs clients afin de contourner les proxies ou les périphériques SD-WAN des succursales. Toutefois, les points de terminaison changent au fil du temps, nécessitant une maintenance manuelle continue des listes de points de terminaison à ces emplacements.
 
-Pour automatiser la gestion des listes et des changements pour les points de terminaison Microsoft 365 dans vos fichiers PAC clients et périphériques réseau, utilisez l’adresse [IP Office 365](../enterprise/microsoft-365-ip-web-service.md)et le service web REST d’URL. Ce service vous aide à mieux identifier et différencier le trafic réseau Microsoft 365, ce qui vous permet d’évaluer, de configurer et de rester à jour plus facilement avec les dernières modifications.
+Pour automatiser la gestion des listes et des changements pour les points de terminaison Microsoft 365 dans vos fichiers PAC clients et périphériques réseau, utilisez l’adresse [IP Office 365](../enterprise/microsoft-365-ip-web-service.md)et le service web REST d’URL. Ce service vous aide à mieux identifier et différencier le trafic réseau Microsoft 365, ce qui vous permet d’évaluer, de configurer et de rester à jour avec les dernières modifications.
 
 Vous pouvez utiliser PowerShell, Python ou d’autres langages pour déterminer les modifications apportées aux points de terminaison au fil du temps et configurer vos fichiers PAC et périphériques réseau edge.
 
@@ -141,13 +143,13 @@ Le processus de base est :
 2. Exécutez une activité périodique quotidienne pour vérifier les modifications apportées aux points de terminaison ou utilisez une méthode de notification.
 3. Lorsque des modifications sont détectées, régénérez et redistribuez le fichier PAC pour les ordinateurs clients et a apporter les modifications à vos périphériques réseau.
 
-Pour plus d’informations, voir [l’adresse IP Office 365 et le service web d’URL.](../enterprise/microsoft-365-ip-web-service.md)
+Pour plus d’informations, consultez [l’adresse IP Office 365 et le service web d’URL.](../enterprise/microsoft-365-ip-web-service.md)
 
 ## <a name="results-of-step-2"></a>Résultats de l’étape 2
 
 Pour votre client Microsoft 365 avec une mise en réseau optimale, vous avez déterminé :
 
-- Comment optimiser les performances du réseau pour les utilisateurs locaux en ajoutant des connexions Internet à tous les succursales et en éliminant les épingles de réseau.
+- Comment optimiser les performances réseau pour les utilisateurs locaux en ajoutant des connexions Internet à tous les succursales et en éliminant les épingles de réseau.
 - Comment implémenter la liste des points de terminaison fiables automatisés pour vos fichiers PAC basés sur le client et vos périphériques et services réseau, y compris les mises à jour en cours (les plus adaptées aux réseaux d’entreprise).
 - Comment prendre en charge l’accès des travailleurs à distance aux ressources sur site.
 - Utilisation de Network Insights
@@ -161,7 +163,7 @@ Voici un exemple d’organisation d’entreprise et de son client avec une mise 
 
 Dans cette illustration, le client de cette organisation d’entreprise a :
 
-- Accès à Internet local pour chaque succursale avec un appareil SDWAN qui permet de faire avancer le trafic Microsoft 365 approuvé vers une porte d’entrée locale.
+- Accès à Internet local pour chaque succursale avec un appareil SDWAN qui permet de forwarder le trafic Microsoft 365 approuvé vers une porte d’entrée locale.
 - Aucune épingle de réseau.
 - Les périphériques de sécurité et de proxy du siège social qui ont pour but de mettre en place le trafic approuvé Microsoft 365 vers une porte d’entrée locale.
 

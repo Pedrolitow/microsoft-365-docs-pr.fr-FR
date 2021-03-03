@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- m365solution-overview
+- tenant-management
 ms.custom:
 - Ent_Solutions
 description: Vue d’ensemble de la planification, du déploiement et du fonctionnement continu de vos clients Microsoft 365.
-ms.openlocfilehash: f7daeaed149b5b6199ac9012b3ffa3d811029099
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 42bde00fbd4ddc1cf92236f099a22b2260dbb980
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908637"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405677"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Gestion des clients pour Microsoft 365 pour entreprise
 
@@ -35,7 +37,7 @@ Cette solution vous permet de suivre la configuration de ces bases dans les éta
 4. Migrer vos appareils Windows, clients Office, serveurs et données Office locaux
 5. Déployer la gestion des appareils et des applications
 
-Mais tout d’abord, nous allons prendre un moment pour comprendre ce qu’est un client et ce à quoi ressemble un client qui fournit une base solide.
+Mais tout d’abord, nous allons prendre le temps de comprendre ce qu’est un client et ce à quoi ressemble un client qui fournit une base solide.
 
 ## <a name="a-microsoft-365-tenant-defined"></a>Un client Microsoft 365 défini
 
@@ -56,7 +58,7 @@ Au-delà du nom et de l’emplacement corrects pour votre client, il existe des 
 Voici les éléments :
 
 - Vous avez l’ensemble correct de produits (abonnements) et de licences.
-  - L’ensemble des produits correspond à vos besoins en matière d’entreprise, d’informatique et de sécurité.
+  - L’ensemble de produits correspond à vos besoins d’entreprise, informatique et de sécurité.
   - Il existe un nombre adéquat de licences pour vos employés et les modifications prévues dans le personnel.
 - Pour la mise en réseau :
   - Vous avez configuré les noms de domaine DNS corrects.
@@ -93,7 +95,7 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 | Fonctionnalité | Description | Licence |
 |:-------|:-----|:-------|
 | Plusieurs clients | Chaque client Microsoft 365 est distinct, unique et distinct de tous les autres clients Microsoft 365. Avec plusieurs clients, il existe des restrictions et des considérations supplémentaires lors de leur gestion et de la fourniture de services à vos utilisateurs. | Microsoft 365 E3 ou E5 | 
-| Migration de boîtes aux lettres inter-clients | Les administrateurs client peuvent déplacer des boîtes aux lettres entre des locataires avec des dépendances d’infrastructure minimales dans leurs systèmes locaux. Cela permet de supprimer la nécessité d’intégrer et d’intégrer des boîtes aux lettres. | Microsoft 365 E3 ou E5 | 
+| Migration de boîtes aux lettres inter-clients | Les administrateurs client peuvent déplacer des boîtes aux lettres entre des locataires avec des dépendances d’infrastructure minimales dans leurs systèmes locaux. Cela supprime la nécessité de supprimer les boîtes aux lettres d’intégration et d’intégration. | Microsoft 365 E3 ou E5 | 
 | Multi-Géo | Votre client peut stocker des données au repos dans les autres emplacements géographiques de centres de données que vous avez choisis pour répondre aux exigences de résidence des données. | Microsoft 365 E3 ou E5 | 
 | Déplacer les données principales vers une nouvelle géo de centres de données | Lorsque Microsoft ajoute de nouvelles géos de centres de données pour des ressources de calcul et de capacité supplémentaires, vous pouvez demander un déplacement géographique de centre de données pour la résidence des données dans la zone géographique pour vos données client principales. | Microsoft 365 E3 ou E5 | 
 ||||
@@ -123,7 +125,7 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 |:-------|:-----|:-------|
 | Mettre à jour vers Windows 10 | Migrez vos appareils qui exécutent Windows 7 ou Windows 8.1 vers Windows 10 Entreprise. | Licences Windows 10 Entreprise incluses dans Microsoft 365 E3 ou E5 | 
 | Migrer vers Microsoft 365 Apps for enterprise | Migrez vos applications clientes Office telles que Word et PowerPoint vers les versions installées à partir du cloud qui sont mises à jour avec de nouvelles fonctionnalités. | Microsoft 365 E3 ou E5 | 
-| Migrer des données et des serveurs locaux vers Microsoft 365 | Migrez vos boîtes aux lettres Exchange, vos sites SharePoint et Skype Entreprise Online vers les services cloud de Microsoft 365. | Microsoft 365 E3 ou E5 | 
+| Migrer des serveurs et des données locaux vers Microsoft 365 | Migrez vos boîtes aux lettres Exchange, vos sites SharePoint et Skype Entreprise Online vers les services cloud de Microsoft 365. | Microsoft 365 E3 ou E5 | 
 ||||
 
 ### <a name="device-and-app-management"></a>Données de gestion des appareils et des applications
@@ -131,7 +133,7 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 | Fonctionnalité | Description | Licence |
 |:-------|:-----|:-------|
 | Microsoft Intune | Service basé sur le cloud qui fournit la gestion des périphériques mobiles (MDM) et la gestion des applications mobiles (MAM) pour contrôler la façon dont l’application de votre organisation et les appareils sont utilisés, y compris les téléphones mobiles, les tablettes et les ordinateurs portables. | Microsoft 365 E3 ou E5 | 
-| Mobility + Security de Base | Sécuriser et gérer les appareils mobiles de vos utilisateurs tels que les iPhone, iPad, Android et les téléphones Windows avec ce service intégré.  | Microsoft 365 E3 ou E5 | 
+| Mobility + Security de Base | Sécuriser et gérer les appareils mobiles de vos utilisateurs tels que les iPhone, les iPad, les Android et les téléphones Windows avec ce service intégré.  | Microsoft 365 E3 ou E5 | 
 ||||
 
 ## <a name="next-steps"></a>Étapes suivantes

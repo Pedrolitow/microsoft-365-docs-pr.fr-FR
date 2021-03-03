@@ -12,18 +12,20 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Découvrez comment administrer les paramètres Multi-Géo d’Exchange Online dans votre environnement Microsoft 365 avec PowerShell.
-ms.openlocfilehash: 63eb1957611fd57e216012435188a6ddd1b232d3
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 83889b4582d2e305b2cb9f07a64307e85d30be77
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49552006"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406041"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administration des boîtes aux lettres Exchange Online dans un environnement multigéographique
 
-Exchange Online PowerShell est requis pour afficher et configurer les propriétés multigéotiques dans votre environnement Microsoft 365. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+Exchange Online PowerShell est requis pour afficher et configurer les propriétés multigéogé dans votre environnement Microsoft 365. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 Pour voir la propriété **PreferredDataLocation** sur les objets utilisateur, vous devez disposer du [module PowerShell Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 ou version v1.x ultérieure. La valeur **PreferredDataLocation** des objets utilisateur synchronisés via AAD Connect dans AAD ne peut pas être modifiée directement via AAD PowerShell. Les objets utilisateur cloud uniquement peuvent être modifiés via AAD PowerShell. Pour vous connecter à Azure AD PowerShell, voir [Se connecter à PowerShell](connect-to-microsoft-365-powershell.md).
+
+Dans les environnements Multi-Géo Exchange Online, vous n’avez pas besoin d’apporter des étapes manuelles pour ajouter des géos à votre client. Une fois que vous avez reçu le billet du Centre de messages qui indique que multigéogé est prêt pour Exchange Online, toutes les géos disponibles sont prêtes et configurées pour être utilisés.
 
 ## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>Se connecter directement à un emplacement géographique à l’aide d’Exchange Online PowerShell
 
@@ -31,7 +33,7 @@ En règle générale, Exchange Online PowerShell se connecte à l’emplacement 
 
 Les conditions requises pour l’installation et l’utilisation du module EXO V2 sont décrites dans [Installer et gérer le module EXO V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-Pour connecter Exchange Online PowerShell à un emplacement géographique spécifique, le paramètre *ConnectionUri* est différent des instructions de connexion normales. Les autres commandes et valeurs sont identiques.
+Pour connecter Exchange Online PowerShell à un emplacement géographique spécifique, le *paramètre ConnectionUri* est différent des instructions de connexion normales. Les autres commandes et valeurs sont identiques.
 
 Plus précisément, vous devez ajouter la `?email=<emailaddress>` valeur à la fin de la valeur _ConnectionUri._ `<emailaddress>` est l’adresse e-mail **d’une boîte** aux lettres dans l’emplacement géographique cible. Vos autorisations sur cette boîte aux lettres ou la relation avec vos informations d’identification ne sont pas un facteur . l’adresse e-mail indique simplement à Exchange Online PowerShell où se connecter.
 
@@ -144,7 +146,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 ### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>Déplacer une boîte aux lettres inactive vers une géo spécifique
 
-Vous ne pouvez pas déplacer les boîtes aux lettres inactives qui sont conservées à des fins de conformité (par exemple, les boîtes aux lettres en conservation pour litige) en modifiant leur valeur **PreferredDataLocation.** Pour déplacer une boîte aux lettres inactive vers une autre géo, faites les étapes suivantes :
+Vous ne pouvez pas déplacer les boîtes aux lettres inactives qui sont conservées à des fins de conformité (par exemple, les boîtes aux lettres en conservation pour litige) en modifiant leur valeur **PreferredDataLocation.** Pour déplacer une boîte aux lettres inactive vers une autre géo, vous pouvez suivre les étapes suivantes :
 
 1. Récupérez la boîte aux lettres inactive. Pour obtenir des instructions, [voir Récupérer une boîte aux lettres inactive.](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox)
 

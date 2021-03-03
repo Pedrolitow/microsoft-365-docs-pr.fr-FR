@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques pour exécuter des attaques par hameçonnage et par mot de passe simulés dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e877900698d033cb99154b31e32fa04ff7d1010
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 85b376701ffa0c567fd66aa629371e9f69b354e9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289580"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407470"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulateur d’attaques dans Microsoft Defender pour Office 365
 
@@ -48,6 +48,8 @@ Si votre organisation dispose de Microsoft Defender pour Office [](office-365-ti
 - Vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
 - Votre compte doit être configuré pour l’authentification multifacteur (MFA) afin que vous puissiez créer et gérer des campagnes dans le Simulateur d’attaques. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
+
+- Le Simulateur d’attaques fonctionne uniquement sur les boîtes aux lettres en nuage.
 
 - Les campagnes d’hameçonnage collectent et traitent des événements sur une durée de 30 jours. L’historique des données de la campagne est disponible pendant un maximum de 90 jours après le lancement de la campagne.
 

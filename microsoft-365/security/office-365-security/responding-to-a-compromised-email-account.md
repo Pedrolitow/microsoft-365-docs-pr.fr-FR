@@ -20,12 +20,12 @@ search.appverid:
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1bbd607386b49b45ebd7444c4a91d05e4cee475b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5dfb40c195cb9df9c8f2ac5d1cfbacdda022d416
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288608"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406723"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
@@ -204,7 +204,7 @@ Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités d
 
 - [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
-- [Centre de plaintes contre la criminalité sur Internet ](https://www.ic3.gov/preventiontips.aspx)
+- [Centre de plaintes contre la criminalité sur Internet ](https://www.ic3.gov/Home/Ransomware)
 
 - [Securities and Exchange Commission (SEC) : fraude à « l’hameçonnage » (phishing)](https://www.sec.gov/investor/pubs/phishing.htm)
 

@@ -19,18 +19,18 @@ description: Découvrez les actions de correction dans les fonctionnalités d’
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: a11e9ee6a4c2426951fe2b4aa4f2dd08d1931f1c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 40d0d8a14e0dd340d931a1c43425854b96702c65
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287112"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407093"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Examiner et gérer les actions de correction dans Office 365
 
 Comme des enquêtes automatisées sur & de collaboration  entraînent des verdicts, tels que malveillants ou suspects, certaines actions de correction sont créées. Dans Microsoft Defender pour Office 365, les actions de correction peuvent inclure :
 - Blocage d’une URL (heure du clic)
-- Suppression de messages électroniques ou de clusters de suppression (soft)
+- Suppression de messages électroniques ou de clusters
 - Mise en quarantaine des pièces jointes ou des e-mails
 - Turning off external mail forwarding
 
@@ -42,7 +42,7 @@ Ces mesures correctives ne sont prises que si votre équipe en charge des opéra
 
 ## <a name="approve-or-reject-pending-actions"></a>Approuver (ou rejeter) les actions en attente
 
-1. Go to the Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
+1. Go to the Microsoft 365 security center ( <https://security.microsoft.com> ) and sign in.
 2. Dans le volet de navigation, sélectionnez **Centre de l’action.**
 3. Sous **l’onglet En** attente, examinez la liste des actions en attente d’approbation.
 4. Sélectionnez un élément dans la liste. Son volet volant s’ouvre. 
@@ -53,19 +53,19 @@ Ces mesures correctives ne sont prises que si votre équipe en charge des opéra
 
 ## <a name="undo-one-remediation-action"></a>Annuler une action de correction
 
-1. Go to the Action center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) and sign in.
+1. Go to the Action center ( <https://security.microsoft.com/action-center> ) and sign in.
 2. Sous **l’onglet** Historique, sélectionnez une action à annuler.
 3. Dans le volet sur le côté droit de l’écran, sélectionnez **Annuler**.
 
 ## <a name="undo-multiple-remediation-actions"></a>Annuler plusieurs actions de correction
 
-1. Go to the Action center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) and sign in.
+1. Go to the Action center ( <https://security.microsoft.com/action-center> ) and sign in.
 2. Sous **l’onglet** Historique, sélectionnez les actions à annuler. Veillez à sélectionner les éléments qui ont le même type d’action. Un volet volant s’ouvre.
 3. Dans le volet volant, sélectionnez Annuler.
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Pour supprimer un fichier de la quarantaine sur plusieurs appareils
 
-1. Go to the Action center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) and sign in.
+1. Go to the Action center ( <https://security.microsoft.com/action-center> ) and sign in.
 2. Sous **l’onglet** Historique, sélectionnez un fichier dont le fichier de mise en quarantaine du type d’action **est sélectionné.**
 3. Dans le volet sur le côté droit de l’écran, sélectionnez Appliquer à **X plus d’instances** de ce fichier, puis **sélectionnez Annuler**.
 

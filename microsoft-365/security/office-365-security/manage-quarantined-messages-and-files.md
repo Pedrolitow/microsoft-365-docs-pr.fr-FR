@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 22bcf0cefb746e92ccadf8254f4076b47ee475c4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b0515d610b38986c2b5339c1cb967a7b150914a2
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287784"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405817"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -49,20 +49,20 @@ Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécur
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
+- Des autorisations doivent vous être attribuées dans **Exchange Online** avant de pouvoir suivre les procédures de cet article :
   - Pour prendre des mesures sur les messages mis en quarantaine pour tous les  utilisateurs, vous devez être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Administrateur de la mise en <sup>\*</sup> quarantaine.
   - Pour accéder en lecture seule aux messages mis en quarantaine pour  tous  les utilisateurs, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
 
-  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+  Pour plus d'informations, voir [Permissions en échange en ligne](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
-  **Remarques** :
+  **Remarques**:
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux _utilisateurs_ les autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
-  - <sup>\*</sup>Les membres du **groupe** de rôles Administrateur  de mise en quarantaine doivent également être membres du groupe de rôles Gestion de l’hygiène dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) pour pouvoir mettre en quarantaine les procédures dans Exchange Online PowerShell.
+  - <sup>\*</sup>Les membres du **groupe** de rôles Administrateur  de quarantaine doivent également être membres du groupe de rôles Gestion de l’hygiène dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) pour pouvoir mettre en quarantaine les procédures dans Exchange Online PowerShell.
 
 - Les messages mis en quarantaine sont conservés pendant une période par défaut avant d’être automatiquement supprimés :
-  - 30 jours pour les messages mis en quarantaine par les stratégies anti-courrier indésirable (courrier indésirable, hameçonnage et courrier électronique en masse). Il s’agit de la valeur par défaut et de la valeur maximale. Pour configurer (plus bas) cette valeur, voir [Configurer des stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)
+  - 30 jours pour les messages mis en quarantaine par des stratégies anti-courrier indésirable (courrier indésirable, hameçonnage et courrier électronique en masse). Il s’agit de la valeur par défaut et de la valeur maximale. Pour configurer (plus bas) cette valeur, voir [Configurer des stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)
   - 15 jours pour les messages contenant des programmes malveillants.
   - 15 jours pour les fichiers mis en quarantaine par pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams dans Defender pour Office 365.
 
@@ -118,7 +118,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécur
      - **Stratégie de filtrage de contenu hébergé** (stratégie anti-courrier indésirable)
      - **Règle de transport**
 
-   - **Destinataire du message** électronique : tous les utilisateurs ou uniquement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent uniquement gérer les messages mis en quarantaine qui leur sont envoyés.
+   - **Destinataire du message électronique**: tous les utilisateurs ou uniquement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent uniquement gérer les messages mis en quarantaine qui leur sont envoyés.
 
    Pour effacer le filtre, cliquez sur **Effacer**. Pour masquer le menu déroulant de filtrage, cliquez de nouveau sur **Filtrer**.
 
@@ -203,7 +203,7 @@ Une fois que vous avez sélectionné un message, plusieurs options s’offrent �
 
   - **Format de** soumission : **ID de message** réseau (par défaut, avec la valeur correspondante dans la zone **ID** de message réseau) ou fichier **(accédez** à un fichier .eml ou .msg local). Notez que si vous sélectionnez **Fichier,** puis **ID de message** réseau, la valeur initiale a disparu.
 
-  - **Destinataires :** tapez au moment du bail un destinataire d’origine du message, ou cliquez sur **Sélectionner** tout pour identifier tous les destinataires. Vous pouvez également cliquer **sur Sélectionner tout,** puis supprimer de manière sélective des destinataires individuels.
+  - **Destinataires :** tapez au moment du bail un destinataire d’origine du message, ou cliquez sur **Sélectionner** tout pour identifier tous les destinataires. Vous pouvez également cliquer sur **Sélectionner tout,** puis supprimer de manière sélective des destinataires individuels.
 
   - **Raison de l’envoi** **: ne doit pas avoir été bloqué** (par défaut) ou doit avoir été **bloqué**.
 
@@ -295,7 +295,7 @@ Si vous ne les relâchez pas ou ne les supprimez pas, ils seront supprimés à l
 Lorsque vous sélectionnez plusieurs fichiers mis en quarantaine dans la liste (jusqu’à 100), le volet volant **Actions** en bloc s’affiche où vous pouvez prendre les mesures suivantes :
 
 - **Libérer des fichiers**
-- **Supprimer des fichiers**: une fois que vous avez cliqué **sur Oui** dans l’avertissement qui s’affiche, les fichiers sont immédiatement supprimés.
+- **Supprimer des fichiers**: une fois que vous avez cliqué sur **Oui** dans l’avertissement qui s’affiche, les fichiers sont immédiatement supprimés.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour afficher et gérer les messages et fichiers mis en quarantaine
 

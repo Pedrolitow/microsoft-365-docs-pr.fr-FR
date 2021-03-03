@@ -15,12 +15,12 @@ ms.custom:
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur les tâches d’administration déléguées dans Microsoft 365 pour les partenaires et revendeurs Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 971572f8bff80da6dd63bed8958112332292feb9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 304fbba16d6c8e81e965462e3405824bd22982c9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288358"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405935"
 ---
 # <a name="delegated-administration-faq"></a>FAQ sur l’administration déléguée
 
@@ -31,17 +31,17 @@ Cet article fournit des questions fréquemment posées et des réponses sur les 
 
 ## <a name="im-a-reseller-and-i-need-to-manage-my-customer-tenants-how-does-this-work"></a>Je suis revendeur et je dois gérer mes clients. Comment cela fonctionne-t-il ?
 
-Si vous êtes un partenaire ou un revendeur Microsoft et que vous vous êtes inscrit en tant que conseiller Microsoft, vous pouvez demander des fonctionnalités _d’administration_ déléguée dans l’organisation Microsoft 365 de votre client.
+Si vous êtes un partenaire ou un revendeur Microsoft et que vous vous êtes inscrit en tant que conseiller Microsoft, vous pouvez demander des fonctionnalités _d’administration_ déléguées dans l’organisation Microsoft 365 de votre client.
 
 L’administration déléguée vous permet de gérer Microsoft 365 (y compris les paramètres EOP) comme si vous étiez un administrateur au sein de cette organisation. Les étapes de configuration de l’administration déléguée sont décrites dans la liste suivante :
 
-1. Inscrivez-vous pour devenir [partenaire Microsoft Office 365](https://aka.ms/cloudbenefits).
+1. Inscrivez-vous pour devenir [partenaire Microsoft Office 365](https://partner.microsoft.com/?cloudbenefits).
 
 2. Inscrivez-vous à l’administration déléguée. Avant de commencer à administrer le client d’un client, il doit vous autoriser en tant qu’administrateur délégué. Pour obtenir leur approbation, vous devez d'abord [leur envoyer une offre d'administration déléguée](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). Vous pouvez également proposer une administration déléguée à votre client ultérieurement.
 
 3. Créez le compte d’administrateur délégué à l’aide des étapes de [l’étape Ajouter, modifier ou supprimer un partenaire conseiller en abonnement.](../../admin/misc/add-partner.md)
 
-Visitez [les partenaires : développez votre entreprise et administrez](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) un abonnement partenaire pour plus d’informations sur la façon de configurer l’administration déléguée.
+Visitez [les partenaires : développez votre entreprise et administrez](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) l’abonnement des partenaires pour plus d’informations sur la façon de configurer l’administration déléguée.
 
 ## <a name="im-a-customer-not-a-reseller-how-can-set-up-delegated-administrator-for-my-subtenants"></a>Je suis un client, pas un revendeur. Comment configurer un administrateur délégué pour mes sous-clients ?
 

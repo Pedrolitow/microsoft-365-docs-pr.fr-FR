@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les e-mails provenant de serveurs de messagerie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6ec8b4adcdda692ee561f7d50bacf0511642269
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: bdc8033996c41238bb1defe831eb8e8c7650bb44
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290044"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406089"
 ---
 # <a name="configure-connection-filtering"></a>Configurer le filtrage des connexions
 
@@ -40,7 +40,7 @@ Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange
 
 - **Liste d’adresses IP** permises : ignorez le filtrage du courrier indésirable pour tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Pour les scénarios où le filtrage du courrier indésirable peut encore se produire sur les messages provenant de ces sources, consultez la section [Scénarios](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) dans lequel les messages provenant de sources de la liste d’adresses IP sont toujours filtrés plus loin dans cet article. Pour plus d’informations sur la façon dont la liste d’adresses IP permises doit s’intégrer dans votre stratégie globale d’expéditeurs sûrs, voir Créer des listes d’expéditeurs sûrs [dans EOP.](create-safe-sender-lists-in-office-365.md)
 
-- **Liste d’adresses IP** bloqués : bloquez tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Les messages entrants sont rejetés, ne sont pas marqués comme courrier indésirable et aucun filtrage supplémentaire ne se produit. Pour plus d’informations sur la façon dont la liste d’adresses IP bloquées doit tenir dans votre stratégie globale d’expéditeurs bloqués, voir Créer des listes d’expéditeurs bloqués [dans EOP.](create-block-sender-lists-in-office-365.md)
+- **Liste d’adresses IP** bloqués : bloquez tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Les messages entrants sont rejetés, ne sont pas marqués comme courrier indésirable et aucun filtrage supplémentaire ne se produit. Pour plus d’informations sur la façon dont la liste d’adresses IP bloquées doit tenir dans votre stratégie globale des expéditeurs bloqués, voir Créer des listes d’expéditeurs bloqués [dans EOP.](create-block-sender-lists-in-office-365.md)
 
 - **Liste sécurisée**: la *liste sécurisée* est une liste d’informations dynamiques dans le centre de données Microsoft qui ne nécessite aucune configuration client. Microsoft identifie ces sources de courriers électroniques de confiance à partir d’abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste sécurisée ; vous ne pouvez pas configurer les serveurs de messagerie source dans la liste fiable. Le filtrage du courrier indésirable est ignoré sur les messages entrants provenant des serveurs de messagerie de la liste sécurisée.
 
@@ -55,22 +55,22 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
+- Des autorisations doivent vous être attribuées dans **Exchange Online** avant de pouvoir suivre les procédures de cet article :
   - Pour modifier la stratégie de filtrage des connexions  par défaut, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité.
   - Pour accéder en lecture seule à la stratégie de filtrage  des connexions par défaut, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
 
-  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+  Pour plus d'informations, voir [Permissions en échange en ligne](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
-  **Remarques** :
+  **Remarques**:
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux _utilisateurs_ les autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour rechercher les adresses IP sources des serveurs de messagerie (expéditeurs) que vous souhaitez autoriser ou bloquer, vous pouvez vérifier le champ d’en-tête IP de connexion **(CIP)** dans l’en-tête du message. Pour afficher un en-tête de message dans différents clients de messagerie, voir Afficher les en-têtes [de message Internet dans Outlook.](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
 
 - La liste d’adresses IP bloquées est prioritaire sur la liste d’adresses IP bloquées (une adresse sur les deux listes n’est pas bloquée).
 
-- La liste d’adresses IP et la liste d’adresses IP bloqués peuvent chacune prendre en charge un maximum de 1 273 entrées, où une entrée est une adresse IP unique, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing).
+- La liste d’adresses IP permises et la liste d’adresses IP bloqués peuvent chacune prendre en charge un maximum de 1 273 entrées, où une entrée est une adresse IP unique, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing).
 
 ## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>Utiliser le Centre de sécurité & conformité pour modifier la stratégie de filtrage des connexions par défaut
 
@@ -82,7 +82,7 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
    - **Description**: entrez un texte descriptif facultatif.
 
-   - **Liste d’adresses IP autoriser**: cliquez sur **Modifier.** Dans le volant de liste **verte IP** qui s’affiche, entrez une adresse IPV4 dans la zone Adresse ou plage d’adresses à l’aide de la syntaxe suivante : 
+   - **Liste d’adresses IP autoriser**: cliquez sur **Modifier.** Dans le volant **liste verte IP** qui s’affiche,  entrez une adresse IPV4 dans la zone Adresse ou plage d’adresses à l’aide de la syntaxe suivante :
 
      - Adresse IP unique : par exemple, 192.168.1.1.
 
@@ -106,7 +106,7 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 2. Dans la page **Paramètres anti-courrier** indésirable, cliquez sur la liste suivante en haut de la stratégie par défaut nommée Stratégie de **filtrage des connexions.**
 
-3. Les paramètres de stratégie s’affichent dans la baisse qui s’ouvre.
+3. Les paramètres de stratégie sont affichés dans la baisse qui s’ouvre.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-modify-the-default-connection-filter-policy"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour modifier la stratégie de filtrage des connexions par défaut
 
@@ -116,7 +116,7 @@ Utilisez la syntaxe suivante :
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
 
-**Remarques** :
+**Remarques**:
 
 - Les valeurs d’adresse IP ou de plage d’adresses valides sont :
 
@@ -132,7 +132,7 @@ Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional
 
 - Pour vider la liste d’adresses IP permises ou la liste d’adresses IP bloqués, utilisez la valeur `$null` .
 
-Cet exemple configure la liste d’adresses IP et la liste d’adresses IP bloqués avec les adresses IP et plages d’adresses spécifiées.
+Cet exemple configure la liste d’adresses IP permises et la liste d’adresses IP bloqués avec les adresses IP et plages d’adresses spécifiées.
 
 ```powershell
 Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList 192.168.1.10,192.168.1.23 -IPBlockList 10.10.10.0/25,172.17.17.0/24
@@ -150,7 +150,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez bien modifié la stratégie de filtrage des connexions par défaut, faites l’une des étapes suivantes :
 
-- Dans le Centre de sécurité &  conformité, allez à La stratégie de gestion des \>  \> menaces **Anti-Courrier** indésirable en cliquant sur la liste suivante en face de la stratégie de filtrage des connexions (toujours en cours), puis vérifiez les \> paramètres. 
+- Dans le Centre de sécurité &  conformité, consultez la stratégie de gestion des \>  \> menaces **Anti-Courrier** indésirable en cliquant sur la liste suivante en haut de la stratégie de filtrage des connexions (toujours en cours), puis vérifiez les \> paramètres. 
 
 - Dans Exchange Online PowerShell ou EOP PowerShell autonome, exécutez la commande suivante et vérifiez les paramètres :
 
@@ -180,7 +180,7 @@ Vous pouvez auditer la règle, la tester, l’activer pendant une période spéc
 
 En règle générale, l’ajout d’une adresse IP ou d’une plage d’adresses à la liste d’adresses IP permises signifie que vous faites confiance à tous les messages entrants provenant de cette source de courrier. Mais que se passe-t-il si cette source envoie du courrier électronique à partir de plusieurs domaines et que vous souhaitez ignorer le filtrage du courrier indésirable pour certains de ces domaines, mais pas pour d’autres ? Vous ne pouvez pas utiliser la liste d’adresses IP permises pour cela, mais vous pouvez utiliser la liste d’adresses IP autoriser en combinaison avec une règle de flux de messagerie.
 
-Par exemple, le serveur de messagerie source 192.168.1.25 envoie du courrier électronique à partir des domaines contoso.com, fabrikam.com et tailspintoys.com, mais vous souhaitez ignorer uniquement le filtrage du courrier indésirable pour les messages provenant d’expéditeurs dans fabrikam.com. Pour ce faire, utilisez les étapes suivantes :
+Par exemple, le serveur de messagerie source 192.168.1.25 envoie du courrier électronique à partir des domaines contoso.com, fabrikam.com et tailspintoys.com, mais vous souhaitez uniquement ignorer le filtrage du courrier indésirable pour les messages provenant d’expéditeurs dans fabrikam.com. Pour ce faire, utilisez les étapes suivantes :
 
 1. Ajoutez 192.168.1.25 à la liste d’adresses IP permises.
 

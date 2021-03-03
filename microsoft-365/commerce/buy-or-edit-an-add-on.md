@@ -14,18 +14,17 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
-description: Découvrez comment acheter et gérer des modules complémentaires pour votre abonnement Microsoft 365 pour les entreprises.
+description: Découvrez comment acheter et gérer des modules pour votre abonnement Microsoft 365 pour les entreprises.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - Commerce
-ms.openlocfilehash: 482b7def1126be6694fdbacbbb2399ccb1b34298
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 22868021fec978f8f55c47adca82438f1ae51029
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667798"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405863"
 ---
 # <a name="buy-or-manage-add-ons"></a>Acheter ou gérer des modules complémentaires
 
@@ -36,12 +35,12 @@ ms.locfileid: "49667798"
 
 ::: moniker-end
 
-De nombreux plans Microsoft 365 pour les entreprises ont des modules complémentaires que vous pouvez acheter pour vos abonnements. Les modules complémentaires fournissent des fonctionnalités supplémentaires pour améliorer votre expérience d’abonnement.
+De nombreux plans Microsoft 365 pour les entreprises ont des modules de développement que vous pouvez acheter pour vos abonnements. Les modules supplémentaires fournissent davantage de fonctionnalités pour améliorer l’expérience de votre abonnement.
 
-Il existe deux types de modules complémentaires :
+Il existe deux types d’modules :
 
-1. Les **modules complémentaires traditionnels** sont liés à un abonnement spécifique. Si vous annulez l’abonnement, le complément associé est également annulé.
-2. Les **abonnements aux compléments autonomes** apparaissent sous la forme d’un abonnement distinct sur la page **vos produits** et ont leur propre date d’expiration. Contrairement aux modules complémentaires traditionnels, les abonnements de modules complémentaires autonomes ne sont pas liés à un abonnement spécifique. Pour gérer un abonnement de complément autonome, procédez de la même manière que pour tous les autres abonnements.
+1. **Les modules add-on traditionnels** sont liés à un abonnement spécifique. Si vous annulez l’abonnement, le module add-on associé est également annulé.
+2. Les abonnements de modules **add-on autonomes** apparaissent en tant qu’abonnements distincts sur la **page** Vos produits et ont leur propre date d’expiration. Contrairement aux modules add-on traditionnels, les abonnements de modules de modules add-on autonomes ne sont pas liés à un abonnement spécifique. Vous gérez un abonnement de modules add-on autonomes de la même manière que tout autre abonnement.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -49,107 +48,38 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 
 ## <a name="buy-an-add-on"></a>Acheter un module complémentaire
 
-Procédez comme suit pour rechercher et acheter des modules complémentaires. La liste inclut uniquement les modules complémentaires dont vous disposez. Cette liste est basée sur vos abonnements actifs et sur tous les autres modules complémentaires existants que vous possédez déjà. Si un module complémentaire ne figure pas dans la liste, il n’est pas disponible pour l’achat.
+Utilisez les étapes suivantes pour rechercher et acheter des modules supplémentaires. La liste inclut uniquement les modules qui sont disponibles. Cette liste est basée sur vos abonnements actifs et sur toutes les autres modules add-on existantes dont vous disposez déjà. Si un module add-on ne figure pas dans la liste, il n’est pas disponible pour l’achat.
 
 Pour plus d'informations sur les modules complémentaires d'Skype Entreprise, voir [Licences de modules complémentaires Skype Entreprise et Microsoft Teams](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
 
-::: moniker range="o365-worldwide"
-
 1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
-2. Au bas de la page **acheter des services** , sélectionnez **compléments**.
-3. Dans la page **acheter des services** , sélectionnez le module complémentaire que vous souhaitez acheter.
-4. Sur la page Détails du produit, sélectionnez **acheter**.
-5. Si nécessaire, renseignez les informations de commande supplémentaires. Ces informations peuvent inclure la sélection de l’abonnement pour lequel le module complémentaire est destiné. Lorsque vous avez terminé, sélectionnez **Extraire maintenant**.
-6. Si nécessaire, examinez les informations de commande et de tarification, puis sélectionnez **suivant**.
-7. Choisissez un mode de paiement, ou ajoutez-en un nouveau, puis sélectionnez **passer la commande** > **sur Accueil de l’administration**.
+2. At the bottom of the **Purchase services** page, in the **Add-ons** section, find the add-on that you want to buy, and select **Details**.
+3. Dans la page des détails du produit, sélectionnez **Suivant.**
+4. Si nécessaire, remplissez d’autres informations de commande. Ces informations peuvent inclure la sélection de l’abonnement pour le module complémentaire. Lorsque vous avez terminé, sélectionnez **Check out maintenant.**
+5. Si nécessaire, examinez les informations de commande et de tarification, puis sélectionnez **Suivant**.
+6. Choisissez un mode de paiement ou ajoutez-en un nouveau, puis sélectionnez **Passer une** commande à La page  >  **d’accueil de l’administrateur.**
 
-::: moniker-end
+## <a name="manage-an-add-on"></a>Gérer un module add-on
 
-::: moniker range="o365-germany"
+Vous gérez un abonnement de modules add-on autonomes de la même façon que vous gérez tout autre abonnement , sur la page **De vos produits.** Par exemple, vous pouvez acheter ou supprimer des [licences,](licenses/buy-licenses.md)gérer la facturation périodique [et](subscriptions/renew-your-subscription.md)modifier ou remplacer des modes de paiement pour les [abonnements](billing-and-payments/manage-payment-methods.md) de modules add-on autonomes.
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-2. Sur la page **abonnements** , sélectionnez l’abonnement pour lequel vous souhaitez acheter un module complémentaire.
-3. Dans le coin inférieur gauche des détails de l’abonnement, sélectionnez **compléments** \> **acheter des modules** complémentaires.
-    ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
-4. Sur la page **acheter des services** , pointez avec la souris ou appuyez sur l’abonnement au module complémentaire que vous souhaitez acheter, puis sélectionnez **acheter maintenant**.
-5. Entrez le nombre de licences utilisateur dont vous avez besoin, puis choisissez si vous souhaitez régler de façon mensuelle ou annuelle. Indiquez si vous souhaitez attribuer automatiquement des licences à toutes les personnes qui n’en ont pas. Si cette option est affichée, sélectionnez un abonnement de base.
-6. Sélectionnez **Extraire maintenant**.
-7. Passez en revue les informations de tarification, puis sélectionnez **suivant**.
-8. Renseignez vos informations de paiement, puis sélectionnez **Passer la commande** \> **Accéder à la Page d’accueil Administrateur**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
-2. Sur la page **abonnements** , sélectionnez l’abonnement pour lequel vous souhaitez acheter un module complémentaire.
-3. Dans le coin inférieur gauche des détails de l’abonnement, sélectionnez **compléments** \> **acheter des modules** complémentaires.
-    ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
-4. Sur la page **acheter des services** , pointez avec la souris ou appuyez sur l’abonnement au module complémentaire que vous souhaitez acheter, puis sélectionnez **acheter maintenant**.
-5. Entrez le nombre de licences utilisateur dont vous avez besoin, puis choisissez si vous souhaitez régler de façon mensuelle ou annuelle. Indiquez si vous souhaitez attribuer automatiquement des licences à toutes les personnes qui n’en ont pas. Si cette option est affichée, sélectionnez un abonnement de base.
-6. Sélectionnez **Extraire maintenant**.
-7. Passez en revue les informations de tarification, puis sélectionnez **suivant**.
-8. Renseignez vos informations de paiement, puis sélectionnez **Passer la commande** \> **Accéder à la Page d’accueil Administrateur**.
-
-::: moniker-end
-
-## <a name="manage-an-add-on"></a>Gérer un module complémentaire
-
-Pour gérer un abonnement de complément autonome, procédez de la même manière que pour tous les autres abonnements, sur la page **vos produits** . Par exemple, vous pouvez [acheter ou supprimer des licences](licenses/buy-licenses.md), [gérer la facturation périodique](subscriptions/renew-your-subscription.md), et [modifier ou remplacer des modes de paiement](billing-and-payments/manage-payment-methods.md) pour les abonnements aux compléments autonomes.
-
-Vous gérez un module complémentaire traditionnel en accédant à l’abonnement qui le contient et en y apportant des modifications. Procédez comme suit pour gérer un module complémentaire classique.
+Pour gérer un module add-on traditionnel, vous devez passer à l’abonnement qui le contient et y apporter des modifications. Utilisez les étapes suivantes pour gérer un module add-on traditionnel.
   
-::: moniker range="o365-worldwide"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
-2. Sous l’onglet **produits** , sélectionnez l’abonnement qui contient le module complémentaire que vous souhaitez mettre à jour.
-3. Sur la page Détails de l’abonnement, la section **modules** complémentaires répertorie les modules complémentaires que vous avez achetés. Sélectionnez **gérer les modules** complémentaires.
-4. Dans le volet **gérer les modules complémentaires** , dans la liste déroulante **module complémentaire** , sélectionnez le module complémentaire que vous souhaitez modifier.
-5. Entrez une modification de quantité pour le module complémentaire, puis sélectionnez **Enregistrer**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-2. Sur la page **abonnements** , sélectionnez l’abonnement pour lequel vous souhaitez mettre à jour un module complémentaire.
-3. Sélectionnez **composants additionnels**.
-    Les modules complémentaires que vous avez achetés sont affichés, et un lien **Modifier la quantité** figure sous chacun d'eux.
-4. Sélectionnez le lien **modifier la quantité** pour le module complémentaire que vous souhaitez mettre à jour. \
-    ![Liens Modules complémentaires et Modifier la quantité](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
-5. Entrez le nombre de licences utilisateur dont vous avez besoin dans la zone, puis sélectionnez **Envoyer**.
-    > [!TIP]
-    > Vous pouvez utiliser les flèches haut et bas pour modifier le nombre de licences utilisateur, ou entrer simplement le nombre souhaité dans la zone.
-
-    ![Boîte de dialogue Nombre total de licences et bouton Envoyer dans la boîte de dialogue Ajouter ou supprimer des licences.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
-2. Sur la page **abonnements** , sélectionnez l’abonnement pour lequel vous souhaitez mettre à jour un module complémentaire.
-3. Sélectionnez **composants additionnels**.
-    Les modules complémentaires que vous avez achetés sont affichés, et un lien **Modifier la quantité** figure sous chacun d'eux.
-4. Sélectionnez le lien **modifier la quantité** pour le module complémentaire que vous souhaitez mettre à jour. \
-    ![Liens Modules complémentaires et Modifier la quantité](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
-5. Entrez le nombre de licences utilisateur dont vous avez besoin dans la zone, puis sélectionnez **Envoyer**.
-    > [!TIP]
-    > Vous pouvez utiliser les flèches haut et bas pour modifier le nombre de licences utilisateur, ou entrer simplement le nombre souhaité dans la zone.
-  
-    ![Boîte de dialogue Nombre total de licences et bouton Envoyer dans la boîte de dialogue Ajouter ou supprimer des licences.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
-
-::: moniker-end
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+2. Sous **l’onglet** Produits, sélectionnez l’abonnement qui contient le module que vous souhaitez mettre à jour.
+3. Dans la page des détails de l’abonnement, la section **Modules ajoutés** répertorie les modules que vous avez achetés. Sélectionnez **Gérer les modules add-ons.**
+4. Dans le volet Gérer les modules  de gestion des modules, dans la liste de listes listes des **modules,** sélectionnez l’module que vous souhaitez modifier.
+5. Entrez une modification de quantité pour l’module add-on, puis sélectionnez **Enregistrer**.
 
 ## <a name="remove-an-add-on"></a>Supprimer un module complémentaire
 
-Pour supprimer un abonnement de complément autonome, vous devez [Annuler l’abonnement](subscriptions/cancel-your-subscription.md), comme n’importe quel autre abonnement. Ou vous pouvez [désactiver la facturation périodique](subscriptions/renew-your-subscription.md).
+Pour supprimer un abonnement de modules [](subscriptions/cancel-your-subscription.md)add-on autonomes, vous annulez l’abonnement, comme tout autre abonnement. Vous pouvez également désactiver [la facturation périodique.](subscriptions/renew-your-subscription.md)
 
-Vous ne pouvez pas supprimer un module complémentaire classique. Si vous souhaitez supprimer un module complémentaire traditionnel, contactez le [support technique pour obtenir de l’aide](../admin/contact-support-for-business-products.md).
+Vous ne pouvez pas supprimer un module add-on traditionnel. Si vous souhaitez supprimer un module add-on traditionnel, [contactez le support technique pour obtenir de l’aide.](../admin/contact-support-for-business-products.md)
   
 ## <a name="related-content"></a>Contenu connexe
 
-[Ajouter de l’espace de stockage pour votre abonnement](add-storage-space.md) (article) \
-[Acheter ou supprimer des licences d’abonnement](licenses/buy-licenses.md) (article) \
-[Activer ou désactiver la facturation périodique](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) (article) \
+[Ajouter de l’espace de stockage pour votre abonnement](add-storage-space.md) (article)\
+[Acheter ou supprimer des licences d’abonnement](licenses/buy-licenses.md) (article)\
+[Désactiver ou activer la facturation périodique](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) (article)\
 [Gérer les modes de paiement](billing-and-payments/manage-payment-methods.md) (article)

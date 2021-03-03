@@ -11,7 +11,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
+ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser la formation sur la simulation d’attaques pour exécuter des attaques par hameçonnage simulé et par mot de passe dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ec5b8175db6eb03e59a31a4dc21d9649c5e7616
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a33c212f7d0fd6b0617a8059b03ac90de03fba16
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289892"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407473"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Commencer à utiliser la formation à la simulation d’attaque
 
@@ -43,14 +43,14 @@ Si votre organisation dispose de Microsoft 365 E5 ou Microsoft Defender [](offic
 - Pour plus d’informations sur la disponibilité de la formation sur la simulation d’attaques dans différents abonnements Microsoft 365, voir la description du service Microsoft Defender pour [Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Des autorisations doivent vous être attribuées dans le Centre de sécurité & conformité ou dans Azure Active Directory avant de pouvoir suivre les procédures de cet article. Plus précisément, vous devez être membre de la gestion de l’organisation, de l’administrateur de la sécurité ou de l’un des rôles suivants :
-  - **Administrateurs du simulateur d’attaques**: créez et gérez tous les aspects des campagnes de simulation d’attaque.
+  - **Administrateurs du simulateur d’attaques**: créez et gérez tous les aspects des campagnes de simulation d’attaques.
   - **Auteurs de charge utile du simulateur d’attaques**: créent des charges utiles d’attaque qu’un administrateur peut lancer ultérieurement.
 
   Pour plus d’informations, [voir Autorisations dans](permissions-in-the-security-and-compliance-center.md) le Centre de sécurité & conformité ou à [propos des rôles d’administrateur.](../../admin/add-users/about-admin-roles.md)
 
 - Il n’existe aucune cmdlet PowerShell correspondante pour la formation à la simulation d’attaques.
 
-- Les données associées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour les services Microsoft 365. Pour plus d’informations, voir emplacements de données [Microsoft 365.](/microsoft-365/enterprise/o365-data-locations) La simulation d’attaque n’est actuellement pas disponible dans les régions suivantes : SGP, NOR, UAE, ZAF, GER, LOI et CHE.
+- Les données associées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour les services Microsoft 365. Pour plus d’informations, voir emplacements de données [Microsoft 365.](../../enterprise/o365-data-locations.md) La simulation d’attaque est disponible dans les régions suivantes : NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN et KOR.
 
 ## <a name="simulations"></a>Simulations
 
@@ -108,4 +108,4 @@ Pour obtenir des instructions détaillées sur la création d’une charge utile
 
 ### <a name="gaining-insights"></a>Obtenir des informations
 
-Pour obtenir des instructions détaillées sur la façon d’obtenir des informations sur les rapports, voir Obtenir des informations via une formation à la [simulation d’attaques.](attack-simulation-training-insights.md)
+Pour obtenir des instructions détaillées sur la façon d’obtenir des informations sur les rapports, voir Obtenir des informations par le biais d’une [formation sur la simulation d’attaques.](attack-simulation-training-insights.md)

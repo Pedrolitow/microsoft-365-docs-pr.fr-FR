@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à instaurer la mise en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 03408a2f9e57421ea613bdb38e253401526f8f71
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 31c0ae4cdbeabb10fd44aaffaa24a8597e644941
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242364"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407158"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -85,6 +85,7 @@ Dans tous les scénarios, vous devez [Créer et configurer des étiquettes de co
 |Permettre aux utilisateurs d’étiqueter et de protéger des fichiers à partir d’ordinateurs Windows à l’aide des applications Office, de l’Explorateur de fichiers et de PowerShell|[Client d’étiquetage unifié Azure Information Protection pour Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Chiffrer des documents et messages électroniques à l’aide d’étiquettes de confidentialité et limiter l’accès à ces contenus ainsi que leur utilisation |[Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité](encryption-sensitivity-labels.md)|
 |Activer les étiquettes de confidentialité pour Office sur le web, avec la prise en charge de la co-création, de la découverte électronique, de la protection contre la perte de données, la recherche, même lorsque les documents sont chiffrés. | [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+|Utiliser la co-édition et l’enregistrement automatiquement dans les applications de bureau Office lorsque les documents sont chiffrés | [Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité](sensitivity-labels-coauthoring.md)
 |Appliquer automatiquement des étiquettes de confidentialité aux documents et messages électroniques | [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)|
 |Utiliser des étiquettes de confidentialité pour protéger du contenu dans Teams et SharePoint |[Utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md)|
 |Empêcher ou signaler les utilisateurs sur le partage des fichiers ou des courriers électroniques avec une étiquette de confidentialité spécifique |[Utiliser les étiquettes de confidentialité comme condition dans les stratégies de protection contre la perte de données (préversion)](dlp-sensitivity-label-as-condition.md) |

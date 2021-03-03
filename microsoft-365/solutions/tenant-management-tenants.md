@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: Déployez et gérez un ou plusieurs clients Microsoft 365, avec des options pour plusieurs emplacements géographiques et de déplacement.
-ms.openlocfilehash: 567a2cb46e715ec560bf973a33ab83cfa63d403b
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 4d9bd685fce6fb2f11b8e17bebae6460e0c10bd2
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908590"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406383"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Étape 1. Vos clients Microsoft 365 entreprise
 
@@ -59,9 +61,9 @@ Pour plus d’informations, voir collaboration entre clients [Microsoft 365.](..
 
 ### <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
-Avant la migration de boîtes aux lettres entre les locataires (en prévisualisation), lorsque vous migrez des boîtes aux lettres Exchange Online entre des locataires, vous devez déboarder complètement une boîte aux lettres utilisateur de son client actuel (le client source) vers l’ordinateur local, puis les intégrer à un nouveau client (le client cible). Grâce à la nouvelle fonctionnalité de migration de boîtes aux lettres entre les locataires, les administrateurs client des locataires source et cible peuvent déplacer des boîtes aux lettres entre les locataires avec des dépendances d’infrastructure minimales dans leurs systèmes locaux. Cela permet de supprimer la nécessité d’intégrer et d’intégrer des boîtes aux lettres.
+Avant la migration de boîtes aux lettres entre les locataires (en prévisualisation), lors du déplacement de boîtes aux lettres Exchange Online entre des locataires, vous devez désintérériser complètement une boîte aux lettres utilisateur de son client actuel (le client source) vers l’ordinateur local, puis l’intégrer à un nouveau client (le client cible). Grâce à la nouvelle fonctionnalité de migration de boîtes aux lettres entre les locataires, les administrateurs client des locataires source et cible peuvent déplacer des boîtes aux lettres entre les locataires avec des dépendances d’infrastructure minimales dans leurs systèmes locaux. Cela supprime la nécessité de supprimer les boîtes aux lettres d’intégration et d’intégration.
 
-Voici deux exemples de client et leurs boîtes aux lettres avant la migration de boîtes aux lettres entre les locataires.
+Voici deux exemples de client et leurs boîtes aux lettres avant la migration de boîtes aux lettres entre locataires.
 
 ![Plusieurs clients Microsoft 365 et leurs boîtes aux lettres](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
 
@@ -79,7 +81,7 @@ Pour plus d’informations, consultez [la migration de boîtes aux lettres entre
 
 Il existe plusieurs approches architecturales pour les fusions, les acquisitions, les déssinttures et d’autres scénarios qui peuvent vous amener à migrer un client Microsoft 365 existant vers un nouveau client. 
 
-Pour obtenir des instructions détaillées, voir migrations client [à client Microsoft 365.](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)
+Pour obtenir des instructions [détaillées, voir migrations client à client Microsoft 365.](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)
 
 ## <a name="multi-geo-for-a-tenant"></a>Multi-Géo pour un client
 
@@ -107,12 +109,12 @@ Pour plus d’informations, voir Déplacement de données principales vers de no
 
 ## <a name="products-and-licenses-for-a-tenant"></a>Produits et licences pour un client
 
-Votre client Microsoft 365 est créé lorsque vous achetez votre premier produit, tel que Microsoft 365 E3. Le produit est accompagné de licences facturées mensuellement ou annuellement. Un administrateur attribue ensuite une licence disponible à partir de l’un de vos produits à un compte d’utilisateur, directement ou par le biais de l’appartenance à un groupe. Selon les besoins de votre organisation, vous pouvez avoir un ensemble de produits, chacun avec son propre pool de licences. 
+Votre client Microsoft 365 est créé lorsque vous achetez votre premier produit, tel que Microsoft 365 E3. Les licences, qui sont facturées mensuellement ou annuellement, sont également des licences. Un administrateur attribue ensuite une licence disponible à partir de l’un de vos produits à un compte d’utilisateur, directement ou par le biais de l’appartenance à un groupe. Selon les besoins de votre organisation, vous pouvez avoir un ensemble de produits, chacun avec son propre pool de licences. 
 
 La détermination de l’ensemble des produits et du nombre de licences pour chacun d’eux nécessite une planification pour :
 
 - Assurez-vous que vous disposez de suffisamment de licences pour les comptes d’utilisateur qui ont besoin de fonctionnalités avancées.
-- Vous empêchez d’être à court de licences ou d’avoir trop de licences non inscrites, en fonction des modifications apportées au personnel de votre organisation.
+- Vous empêchez de ne plus disposer de licences ou d’avoir trop de licences non inscrites, en fonction des modifications apportées au personnel de votre organisation.
 
 
 ## <a name="results-of-step-1"></a>Résultats de l’étape 1
@@ -124,7 +126,7 @@ Pour vos clients Microsoft 365 entreprise, vous avez déterminé :
 - Indique si un client doit être multigéogé pour se conformer aux exigences de résidence des données.
 - Si vous devez configurer la collaboration entre les locataires.
 - Si vous devez migrer un client vers un autre.
-- Indique si vous devez déplacer les données principales d’une géo de centres de données vers une nouvelle.
+- Indique si vous devez déplacer des données principales d’une géo de centres de données vers une nouvelle.
 
 Voici un exemple de nouveau client.
 

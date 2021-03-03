@@ -1,8 +1,8 @@
 ---
 title: Informations de paiement pour l’Australie
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -13,23 +13,33 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66aaf084da0cd86fd379f2b667e37cbac3192565
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0dc0d574e07868cd01e491f9e4d1ad28e42b9c8d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637966"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407025"
 ---
 # <a name="payment-information-for-australia"></a>Informations de paiement pour l’Australie
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en auD uniquement et référencer vos numéro(s) de facture sur votre facture.
-
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Banque :** Bank, Sydney  
-**Code SWIFT :** CITIAU2X  
-**Code BSB :** 242000  
-**Numéro de compte :** 205565043  
-**Nom du compte :** MICROSOFT REGIONAL SALES CORP  
+**Veuillez payer en AUD et référencer les numéro(s) de facture à votre paiement.**
+
+Si vous avez une facture facturée par **Microsoft Regional Sales Pte Ltd,** utilisez les informations bancaires ci-après :
+
+Banque :Bankbank, Sydney\
+Code SWIFT : CITIAU2X\
+Code BSB : 242000\
+Numéro de compte : 205565043\
+Nom du compte : MICROSOFT
+
+Si vous avez une facture facturée par **Microsoft Pty Ltd** pour les commandes et la consommation à compter du 1er mars 2021, utilisez les informations bancaires ci-après :
+
+Banque :Bankbank, N.A. Sydney\
+Code SWIFT : CITIAU2X\
+Code BSB : 248053\
+Numéro de compte : 100001074\
+Nom du compte : MICROSOFT

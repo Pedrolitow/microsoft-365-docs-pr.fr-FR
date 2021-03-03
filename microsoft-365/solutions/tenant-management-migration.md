@@ -1,5 +1,5 @@
 ---
-title: Étape 4. Migration pour vos clients Microsoft 365 entreprise
+title: Étape 4. Migration pour vos clients Microsoft 365 pour entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,21 +11,23 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: Migrez vos appareils Windows, applications clientes Office et serveurs Office pour vos clients Microsoft 365.
-ms.openlocfilehash: 3230f7e1087b573691f04b9335a15b4ad6d20b65
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 85f1c0d927b881c4d1526ce538ae54f5954a0664
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908629"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406359"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 4. Migration pour vos clients Microsoft 365 pour entreprise
 
 La plupart des organisations d’entreprise ont un environnement hétérogène qui inclut plusieurs sorties de systèmes d’exploitation, de logiciels clients et de logiciels serveur. Microsoft 365 pour entreprise inclut les versions les plus sécurisées des composants clés de votre infrastructure informatique. Il inclut également des fonctionnalités de productivité conçues pour tirer parti des technologies cloud.
 
-Pour optimiser la valeur commerciale de la suite intégrée de produits Microsoft 365 pour entreprise, commencez à planifier et implémenter une stratégie pour migrer ces produits :
+Pour optimiser la valeur commerciale de la suite intégrée microsoft 365 pour entreprise, commencez à planifier et à implémenter une stratégie pour migrer ces produits :
 
 | De | À |
 |:-------|:-----|
@@ -54,7 +56,7 @@ Microsoft 365 Apps pour entreprise installe automatiquement les mises à jour de
 
 ## <a name="migrating-on-premises-servers-and-data-to-microsoft-365"></a>Migration de serveurs et de données locaux vers Microsoft 365
 
-Microsoft 365 pour entreprise inclut des versions basées sur le cloud des services serveur Office qui utilisent certains des mêmes outils que les versions sur site du logiciel serveur Office, tels que les navigateurs web et le client Outlook. Ces services basés sur le cloud sont automatiquement mis à jour pour la sécurité et les nouvelles fonctionnalités. Après la migration, votre service informatique peut gagner du temps pour gérer et mettre à jour des serveurs locaux.
+Microsoft 365 pour entreprise inclut des versions basées sur le cloud des services serveur Office qui utilisent certains des mêmes outils que les versions sur site du logiciel serveur Office, tels que les navigateurs web et le client Outlook. Ces services basés sur le cloud sont automatiquement mis à jour pour la sécurité et les nouvelles fonctionnalités. Après la migration, votre service informatique peut gagner du temps pour la maintenance et la mise à jour des serveurs locaux.
 
 Utilisez les ressources suivantes pour plus d’informations sur la migration des utilisateurs et des données pour des charges de travail Microsoft 365 spécifiques :
 
@@ -80,12 +82,12 @@ Pour la migration de votre client Microsoft 365, vous avez déterminé :
 
 Voici un exemple de client avec une migration terminée de serveurs locaux.
 
-![Exemple de client avec une migration terminée de serveurs locaux](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
+![Exemple de client avec une migration terminée des serveurs locaux](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
 
 Dans cette illustration, l’organisation a :
 
 - Migration de ses boîtes aux lettres Exchange Server vers Exchange Online.
-- Migration de ses données et sites SharePoint Server locaux vers SharePoint dans Microsoft 365.
+- Migration de ses sites et données SharePoint Server locaux vers SharePoint dans Microsoft 365.
 
 ## <a name="ongoing-maintenance-for-migration"></a>Maintenance continue pour la migration
 

@@ -1,5 +1,5 @@
 ---
-title: Message de rapport Microsoft et termes du contrat de licence Add-In de rapport et de signalement du hameçonnage
+title: Termes du contrat de licence De message de rapport microsoft et de signalement Add-In hameçonnage
 description: Décrit les termes du contrat de licence Microsoft Report Message and Report Phishing Add-In
 keywords: microsoft, signaler, hameçonnage, sécurité, tentative, piratage, licence, termes, application, utilisation, installation, service, commentaires
 search.product: eADQiWindows 10XVcnh
@@ -15,22 +15,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
-ms.openlocfilehash: 2b2b8a6215a653cee7ea67bafaadddc096abb911
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: c42f8da3235ffe139eaad3de61473a26866ecd3d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288156"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407431"
 ---
 # <a name="microsoft-report-message-and-report-phishing-add-in-license-terms"></a>Termes du contrat de licence De message de rapport microsoft et de signalement Add-In hameçonnage
 
-## <a name="microsoft-software-license-terms-microsoft-report-message-and-report-phishing-add-in"></a>Termes du contrat de licence logiciel Microsoft : rapport Microsoft message et signaler le hameçonnage du add-in
+## <a name="microsoft-software-license-terms-microsoft-report-message-and-report-phishing-add-in"></a>Termes du contrat de licence logiciel Microsoft : rapport microsoft message et signaler le hameçonnage du add-in
 
 > [!IMPORTANT]
 > Si vous êtes une entreprise ou que vous êtes une entreprise ayant un lieu d’activité principal basé aux États-Unis, veuillez lire la section 7, Arbitrage de liaison et renonciation aux *actions de classe.* Il décrit comment les litiges sont résolus.
 
 > [!NOTE]
-> *En anglais :* Comme ce logiciel est distribué au Canada, certaines des clauses de ce contrat (en particulier dans les sections 10, 11 et 12) sont fournies en français.
+> *En anglais :* Comme ce logiciel est distribué au Canada, certaines des clauses de ce contrat (en particulier aux sections 10, 11 et 12) sont fournies en français.
 >
 > *En Français* Ce logiciel étant distribué au Canada, certaines des clauses dans ce contrat (spécifiquement dans les sections 10, 11 et 12) sont fournies ci-dessous en français.
 
@@ -42,7 +42,7 @@ Dans le cadre du présent accord de licence, vous disposez des droits ci-dessous
 
     1. **General.** You may install and use any number of copies of the software.
     1. **Third Party Software.** Le logiciel peut inclure des applications tierces que Microsoft, et non le tiers, vous a sous licence dans le cadre du contrat. Les notifications incluses pour les applications tierces sont uniquement pour vos informations.
-    1. **Contrat de services Microsoft.** Certaines fonctionnalités du logiciel permettent d’accéder aux services en ligne ou de s’en appuyer. L’utilisation de ces services (mais pas le logiciel) est régie par les termes distincts et les politiques de confidentialité dans le contrat de services Microsoft à <https://www.microsoft.com/servicesagreement/> . Lisez-les attentivement. Les services peuvent ne pas être disponibles dans toutes les régions.
+    1. **Contrat de services Microsoft.** Certaines fonctionnalités du logiciel permettent d’accéder aux services en ligne ou de s’en appuyer. L’utilisation de ces services (mais pas du logiciel) est régie par les termes distincts et les politiques de confidentialité dans le contrat de services Microsoft à <https://www.microsoft.com/servicesagreement/> . Lisez-les attentivement. Les services peuvent ne pas être disponibles dans toutes les régions.
 
 2. **DATA COLLECTION.** Le logiciel peut collecter des informations sur vous et votre utilisation du logiciel et les envoyer à Microsoft. Microsoft peut utiliser ces informations pour fournir des services et améliorer les produits et services de Microsoft. Vos droits d’opt-out, le cas nécessaire, sont décrits dans la documentation du produit. Certaines fonctionnalités du logiciel peuvent permettre la collecte de données provenant d’utilisateurs de vos applications qui accèdent au logiciel ou l’utilisent.
 
@@ -56,13 +56,13 @@ Dans le cadre du présent accord de licence, vous disposez des droits ci-dessous
     1. use the software in any way that is against the law or to create or propagate malware; or
     1. share, publish, distribute, or lend the software, provide the software as a stand-alone hosted solution for others to use, or transfer the software or this agreement to any third party.
 
-4. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. Pour plus d’informations sur les restrictions d’exportation, visitez [https://aka.ms/exporting](https://aka.ms/exporting) .
+4. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit <https://www.microsoft.com/exporting>.
 
 5. **SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 
 6. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
-7. **ARBITRAGE DE LIAISON ET RENONCIATION AUX ACTIONS DE CLASSE.** **Cette section s’applique si vous habitez aux États-Unis (ou, si vous êtes une entreprise, votre principal lieu d’activité).** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Si vous et Microsoft ne le pouvez pas, vous et Microsoft acceptez de lier l’arbitrage individuel devant **l’Association** d’arbitrage américaine en vertu de la federal Arbitration Act (« FAA ») et de ne pas intenter une action en justice devant un juge ou un **jury.** Instead, a neutral arbitrator will decide. **Les actions en justice pour les** actions en classe, les arbitrages à l’échelle de la classe, les actions privées de l’avocat général et toute autre procédure dans laquelle quelqu’un agit à titre représentatif ne sont pas **autorisées**; ni la combinaison de procédures individuelles sans le consentement de toutes les parties. The complete Arbitration Agreement contains more terms and is at [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) . You and Microsoft agree to these terms.
+7. **ARBITRAGE DE LIAISON ET RENONCIATION AUX ACTIONS DE CLASSE.** **Cette section s’applique si vous habitez aux États-Unis (ou, si vous êtes une entreprise, votre principal lieu d’activité).** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Si vous et Microsoft ne le pouvez pas, vous et Microsoft acceptez de lier l’arbitrage individuel devant **l’Association** d’arbitrage américaine en vertu de la federal Arbitration Act (« FAA ») et de ne pas intenter une action en justice devant un juge ou un **jury.** Instead, a neutral arbitrator will decide. **Les actions en justice pour les** actions en classe, les arbitrages à l’échelle de la classe, les actions privées de l’avocat général et toute autre procédure dans laquelle une personne agit à titre représentatif ne sont pas **autorisées**; ni la combinaison de procédures individuelles sans le consentement de toutes les parties. The complete Arbitration Agreement contains more terms and is at <https://aka.ms/arb-agreement-1>. You and Microsoft agree to these terms.
 
 8. **ENTIRE AGREEMENT.** This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
 

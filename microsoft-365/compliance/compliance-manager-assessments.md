@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le Gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences de réglementations et de certifications importantes pour votre organisation.
-ms.openlocfilehash: d09103f58be3a5fa39b57ca35da411e8046aace5
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 06b644293c014dafbe46c115b498c2ad2390e99d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262289"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406756"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -95,7 +95,7 @@ Les groupes ne peuvent pas être créés en tant qu’entités autonomes. Un gro
 - Les groupes n’ont pas de propriétés de sécurité. Toutes les autorisations sont associées aux évaluations.
 - Une fois que vous avez ajouté une évaluation à un groupe, le regroupement ne peut pas être modifié.
 - Les contrôles d’évaluation associés dans différentes évaluations au sein du même groupe sont automatiquement mis à jour lorsqu’ils sont terminés.
-- Si vous ajoutez une nouvelle évaluation à un groupe existant, les informations communes des évaluations de ce groupe sont copiées dans la nouvelle évaluation.
+- Si vous ajoutez une nouvelle évaluation à un groupe existant, les informations communes provenant des évaluations de ce groupe sont copiées dans la nouvelle évaluation.
 - Les groupes peuvent contenir des évaluations pour la même certification ou réglementation, mais chaque groupe ne peut contenir qu’une seule évaluation pour une paire produit-certification spécifique. Par exemple, un groupe ne peut pas contenir deux évaluations pour Office 365 et CSF NIST. Un groupe peut contenir plusieurs évaluations pour le même produit uniquement si la certification ou la réglementation correspondante pour chacune d’elles est différente.
 - La suppression d’une évaluation rompt la relation entre cette évaluation et le groupe.
 - Les groupes ne peuvent pas être supprimés.
@@ -115,7 +115,7 @@ Vous pouvez également commencer à partir de votre page de modèles d’évalua
 
 2. Go to your **assessments** page in Compliance Manager and select **Add assessment**. Un Assistant d’évaluation s’affiche dans un grand volet volant.
 
-3. **Sélectionnez un modèle**: choisissez un modèle qui servira de base à votre évaluation. Sélectionnez la bouton d’radio en de côté du modèle choisi, puis sélectionnez **Suivant**.
+3. **Sélectionnez un modèle**: choisissez un modèle qui servira de base à votre évaluation. Vous verrez la liste des modèles divisés en catégories incluses et premium (voir [types](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) de modèles pour plus d’informations). Sélectionnez la bouton d’radio en de côté du modèle choisi, puis sélectionnez **Suivant**.
 
 4. **Nom et groupe :** Entrez un nom pour votre évaluation dans le champ **Nom de l’évaluation.** Les noms des évaluations doivent être uniques au sein des groupes. Si le nom de votre évaluation correspond au nom d’une autre évaluation dans un groupe donné, vous recevrez une erreur vous demandant de créer un autre nom.
 
@@ -155,25 +155,27 @@ Après avoir formaté votre feuille de calcul, suivez les étapes ci-dessous.
 
 1. Go to your **Assessment templates** page and select **Create new template**. Un Assistant Création de modèle s’ouvre.
 
-2. Choisissez le type de modèle que vous souhaitez créer. Dans ce cas, **sélectionnez Étendre un modèle Microsoft,** puis **Sélectionnez**.
+2. Choisissez le type de modèle que vous souhaitez créer. Dans ce cas, **sélectionnez Étendre un modèle Microsoft,** puis **sélectionnez Modèle Microsoft.**
 
-3. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran. Utiliser **la recherche** pour appliquer des filtres pour localiser le modèle de votre recherche
+3. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran, affichant la liste de tous les modèles et leur statut d’actif ou inactif. Votre **compteur de modèles activés** indique le nombre de modèles actuellement utilisés sur le nombre total disponible. Si vous avez terminé votre limite, une barre de messages vous en fournira un avis. Pour plus [d’informations,](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) voir Types de modèles.
 
-4. Une fois que vous avez localisé votre modèle, sélectionnez la radio à gauche de son nom, puis sélectionnez **Enregistrer**.
+4. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran. Utiliser **la recherche** pour appliquer des filtres pour localiser le modèle de votre recherche
 
-5. L’écran suivant montre le modèle que vous avez sélectionné. Si la réponse est correcte, sélectionnez **Suivant.** (Si ce n’est pas le cas, **sélectionnez Sélectionner** un autre modèle à choisir à nouveau.)
+5. Une fois que vous avez localisé votre modèle, sélectionnez la radio à gauche de son nom, puis sélectionnez **Enregistrer**.
 
-6. Dans **l’écran Télécharger un** fichier, sélectionnez **Parcourir** pour rechercher et télécharger votre fichier Excel mis en forme contenant toutes les données de modèle requises.
+6. L’écran suivant montre le modèle que vous avez sélectionné. Si la réponse est correcte, sélectionnez **Suivant.** (Si ce n’est pas le cas, **sélectionnez Sélectionner un autre** modèle à choisir à nouveau.)
 
-7. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. Sélectionnez Suivant pour continuer (si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).** 
+7. Dans **l’écran Télécharger un** fichier, sélectionnez **Parcourir** pour rechercher et télécharger votre fichier Excel mis en forme contenant toutes les données de modèle requises.
 
-    - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devrez corriger et charger à l’autre votre fichier. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou s’il existe des informations non valides dans certains champs.
+8. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. Sélectionnez Suivant pour continuer (si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).** 
+
+    - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devrez corriger et charger à l’autre votre fichier. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou si certaines informations ne sont pas valides dans certains champs.
  
-8. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant**. (Si vous devez apporter des modifications, **sélectionnez Télécharger un autre fichier.)**
+9. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant**. (Si vous devez apporter des modifications, **sélectionnez Télécharger un autre fichier.)**
 
-9. Le dernier écran confirme qu’un nouveau modèle a été créé. Sélectionnez **Terminé** pour quitter l’Assistant.
+10. Le dernier écran confirme qu’un nouveau modèle a été créé. Sélectionnez **Terminé** pour quitter l’Assistant.
 
-10. Vous arrivez à la page de détails de votre nouveau modèle. À partir de là, vous pouvez créer votre évaluation en sélectionnant **Créer une évaluation.** Pour obtenir des conseils, commencez à l'#4 dans les [instructions de création d’évaluation ci-dessus.](#to-create-an-assessment)
+11. Vous arrivez à la page de détails de votre nouveau modèle. À partir de là, vous pouvez créer votre évaluation en sélectionnant **Créer une évaluation.** Pour obtenir des conseils, commencez à l'#4 dans les [instructions de création d’évaluation ci-dessus.](#to-create-an-assessment)
 
 ## <a name="create-your-own-custom-assessment"></a>Créer votre propre évaluation personnalisée
 
@@ -185,7 +187,7 @@ Pour créer une évaluation personnalisée dans le Gestionnaire de conformité, 
 
 2. **Créez votre modèle** en suivant [ces instructions.](compliance-manager-templates.md#create-a-new-template)
 
-3. **Créez votre évaluation** à partir du modèle. Vous pouvez commencer par ouvrir la page de détails du modèle et sélectionner Créer une **évaluation,** ou aller à votre **page** d’évaluations et sélectionner Créer une **évaluation.**
+3. **Créez votre évaluation** à partir du modèle. Vous pouvez commencer par ouvrir la page de détails du modèle et sélectionner Créer une **évaluation,** ou aller à votre **page** d’évaluations et sélectionner Créer **une évaluation.**
 
 4. Un Assistant Création d’évaluation s’affiche dans un grand volet volant. À partir de là, vous pouvez suivre les instructions en commençant à l’étape #3 [des instructions](#to-create-an-assessment)de création de l’évaluation, en utilisant votre nouveau modèle personnalisé pour votre évaluation.
 
@@ -193,7 +195,7 @@ Pour créer une évaluation personnalisée dans le Gestionnaire de conformité, 
 
 La suppression d’une évaluation la supprime de la liste de votre page d’évaluations. Notez ces points importants sur la suppression des évaluations :
 
-- **La suppression d’une évaluation est permanente . vous ne pouvez pas la récupérer.** Si vous souhaitez utiliser à nouveau la même évaluation, vous devez la créer à nouveau.
+- **La suppression d’une évaluation est permanente . vous ne pouvez pas l’obtenir.** Si vous souhaitez utiliser à nouveau la même évaluation, vous devez la créer à nouveau.
 - Si les actions d’amélioration de l’évaluation n’apparaissent dans aucune autre évaluation, elles seront supprimées lors de la suppression de l’évaluation.
 - Nous vous [recommandons d’exporter un rapport de](#export-an-assessment-report) l’évaluation avant de le supprimer définitivement.
 
@@ -220,7 +222,7 @@ L’onglet Vue d’ensemble contient un graphique montrant votre pourcentage ver
 
 Les principales actions d’amélioration des contrôles dans l’évaluation sont répertoriées dans l’ordre de l’impact potentiel le plus important pour gagner des points. Le graphique associé détaille l’état de test agrégé de vos actions d’amélioration afin que vous pouvez évaluer rapidement ce qui a été testé et ce qui reste à faire.
 
-Pour accéder aux actions d’amélioration individuelles, visitez **l’onglet Contrôles** ou **l’onglet Actions d’amélioration.**
+Pour accéder aux actions d’amélioration individuelles, visitez **l’onglet Contrôles** ou l’onglet **Actions d’amélioration.**
 
 ### <a name="controls-tab"></a>Onglet Contrôles
 
@@ -275,7 +277,7 @@ Les évaluations personnalisées que vous créez ne reçoivent aucune mise à jo
 
 La page détails de l’évaluation affiche également une **étiquette de** mise à jour en attente en plus de l’évaluation avec une mise à jour. Sélectionnez cette évaluation pour obtenir sa page de détails.
 
-Un message en haut de la page détails de l’évaluation indique qu’une mise à jour est disponible pour cette évaluation. Sélectionnez le **bouton Réviser la** mise à jour dans la bannière pour passer en revue les modifications spécifiques et accepter ou différer la mise à jour.
+Un message en haut de la page détails de l’évaluation indique qu’une mise à jour est disponible pour cette évaluation. Sélectionnez le **bouton Réviser la mise** à jour dans la bannière pour passer en revue les modifications spécifiques et accepter ou différer la mise à jour.
 
 La page de détails de l’évaluation peut également lister les actions d’amélioration qui ont une **étiquette** de mise à jour en attente à côté d’elles. Ces mises à jour sont pour des modifications spécifiques apportées aux actions d’amélioration elles-mêmes et doivent être acceptées séparément. Pour en savoir [plus, consultez](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) Accepter les mises à jour pour les actions d’amélioration.
 
@@ -289,7 +291,7 @@ Après avoir sélectionné la mise à **jour révision** dans la page détails d
 - Présentation de la mise à jour
 - Détails spécifiques sur les modifications, y compris l’impact sur votre score de conformité, la progression vers la fin de l’évaluation et le nombre spécifique de modifications apportées aux actions et contrôles d’amélioration.
 
-La sélection du **lien du modèle** Mis à jour téléchargera un fichier Excel contenant des données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du **lien Modèle actuel** télécharge un fichier du modèle existant sans les modifications.
+La sélection du **lien Du modèle mis** à jour téléchargera un fichier Excel contenant des données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du **lien Modèle actuel** télécharge un fichier du modèle existant sans les modifications.
 
 Pour accepter la mise à jour et apporter les modifications à votre évaluation, **sélectionnez Accepter la mise à jour.** Les modifications acceptées sont permanentes.
 

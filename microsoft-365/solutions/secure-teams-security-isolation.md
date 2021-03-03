@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881704"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405701"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
 
@@ -44,6 +44,7 @@ Les éléments de configuration d’une équipe avec une isolation de sécurité
 
 Regardez cette vidéo de présentation du processus de déploiement.
 <br>
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a> Pour un résumé d’une page de ce scénario, consultez [Microsoft Teams avec l’isolation de sécurité](../downloads/team-security-isolation-poster.pdf).
@@ -51,6 +52,10 @@ Regardez cette vidéo de présentation du processus de déploiement.
 [![Microsoft Teams avec l’isolation de sécurité](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) ou [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) et l’imprimer sur du papier au format lettre, légal ou tabloïd (11 x 17).
+
+Essayez cette configuration dans votre propre environnement de laboratoire de test avec [ces instructions](team-security-isolation-dev-test.md).
+
+Voir comment Contoso Corporation a utilisé une équipe isolée pour un projet top secret dans [cette étude de cas](contoso-team-for-top-secret-project.md).
 
 ## <a name="initial-protections"></a>Protections initiales
 
@@ -122,14 +127,14 @@ Pour créer une étiquette de confidentialité
 13.  Cliquez sur **Enregistrer**, puis sur **Suivant**.
 14. Dans la page *Étiquetage automatique des fichiers et messages électroniques**, cliquez sur **Suivant**.
 15. Dans la page **Définir les paramètres de protection pour les groupes et sites**, sélectionnez **Paramètres de confidentialité et d’accès des utilisateurs externes**, et **Accès appareil et paramètres de partage externe**, puis cliquez sur **Suivant**.
-16. Dans la page **Définir les paramètres de confidentialité et d’accès des utilisateurs externes**, sous **Confidentialité**, sélectionnez l’option **Privé**.
+16. Dans la page **Définir les paramètres de confidentialité et d’accès des utilisateurs externes**, sous **Confidentialité**, sélectionnez l’option **Privé** .
 17. Si vous souhaitez autoriser l’accès invité, sous **Accès des utilisateurs externes**, sélectionnez **Autoriser les propriétaires de groupe Microsoft 365 à ajouter des personnes externes à votre organisation au groupe comme invités**.
 18. Cliquez sur **Suivant**.
 19. Dans la page **Définir les paramètres de partage externe et d’accès aux appareils**, sélectionnez **Contrôler le partage externe dans les sites étiquetés SharePoint**.
 20. Sous **Le contenu peut être partagé avec**, sélectionnez **Invités nouveaux et existants** si vous autorisez l’accès invité ou **Uniquement les membres de votre organisation** si ce n’est pas le cas.
 21. Sous **Accès à partir d’appareils non gérés**, sélectionnez **Bloquer l’accès**.
 22. Cliquez sur **Suivant**.
-23. Dans la page **Étiquetage automatique pour les colonnes de base de données**, cliquez sur **Suivant**.
+23. Dans la page **Étiquetage automatique pour les colonnes de base de données** , cliquez sur **Suivant**.
 24. Cliquez sur **Créer une étiquette**, puis sur **Terminé**.
 
 Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisateurs qui l’utiliseront. Dans ce cas, l’étiquette est disponible uniquement pour les membres de l’équipe.

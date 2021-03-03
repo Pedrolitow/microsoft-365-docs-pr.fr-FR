@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des autoriser et des blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 250b6223ffe663e0cd950069a3c3c7827b4aa57b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 960fbf26b610485fb46c935b04aedcc593b85752
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290164"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407249"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -46,7 +46,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page Liste **d’accueil/de** blocage du client, utilisez <https://protection.office.com/tenantAllowBlockList> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **Autoriser/Bloquer la liste des** locataires, utilisez <https://protection.office.com/tenantAllowBlockList> .
 
 - Vous spécifiez des fichiers à l’aide de la valeur de hachage SHA256 du fichier. Pour rechercher la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes :
 
@@ -66,15 +66,15 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
+- Des autorisations doivent vous être attribuées dans **Exchange Online** avant de pouvoir suivre les procédures de cet article :
   - Pour ajouter et supprimer des valeurs de la liste d’attente des locataires, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité. 
   - Pour un accès en lecture seule à la liste des locataires  autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
 
-  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+  Pour plus d'informations, voir [Permissions en échange en ligne](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
-  **Remarques** :
+  **Remarques**:
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux _utilisateurs_ les autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Utiliser le Centre de sécurité & conformité pour créer des entrées d’URL dans la liste d’adresses client autoriser/bloquer
@@ -83,7 +83,7 @@ Pour plus d’informations sur la syntaxe des entrées d’URL, voir la [syntaxe
 
 1. Dans le Centre de sécurité & conformité, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
-2. Dans la page **Liste d’adresses client autoriser/bloquer,** vérifiez que l’onglet **URL** est sélectionné, puis cliquez sur **Bloquer**
+2. Dans la page **Liste d’adresses** client autoriser/bloquer, vérifiez que l’onglet **URL** est sélectionné, puis cliquez sur **Bloquer**
 
 3. Dans le **volant Bloquer les URL** qui s’affiche, configurez les paramètres suivants :
 
@@ -136,9 +136,9 @@ Cliquez sur les en-tête de colonne suivants pour trier par ordre croissant ou d
 - **Date d’expiration**
 - **Remarque**
 
-Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur **Effacer l’icône** ![ effacer la ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) recherche.
+Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur **Effacer l’icône** ![ de recherche Effacer la ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) recherche.
 
-Cliquez sur **Filtrer.** Dans le **flyout** Filter qui s’affiche, configurez l’un des paramètres suivants :
+Cliquez sur **Filtrer.** Dans le **volant de** filtre qui s’affiche, configurez l’un des paramètres suivants :
 
 - **N’expirez** jamais : sélectionnez Off: ![ Toggle off ](../../media/scc-toggle-off.png) or on: ![ Toggle on ](../../media/scc-toggle-on.png) .
 
@@ -168,7 +168,7 @@ Vous ne pouvez pas modifier l’URL ou les valeurs de fichier bloquées existant
 
      ou
 
-     - Déplacez le basculement vers la droite pour configurer l’entrée pour qu’elle n’expire jamais : ![Activer](../../media/scc-toggle-on.png).
+     - Déplacez le basculement vers la droite pour configurer l’entrée de manière à ce qu’elle n’expire jamais : ![Activer](../../media/scc-toggle-on.png).
 
    - **Remarque facultative**: entrez un texte descriptif pour l’entrée.
 
@@ -208,7 +208,7 @@ New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher les entrées dans la liste d’attente du client
+### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher les entrées dans la liste d’attente des locataires
 
 Pour afficher les entrées de la liste d’inscriptions client autoriser/bloquer, utilisez la syntaxe suivante :
 

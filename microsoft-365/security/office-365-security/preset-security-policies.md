@@ -15,12 +15,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts aux fonctionnalités de protection d’Exchange Online Protection (EOP) et de Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8f254f2a1ea2dcf1a4b51594a5c340e91cb3f15
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b49b980d217d60865029c8e64ad02ed722f6b86e
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290774"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407455"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "50290774"
 - [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Les stratégies de sécurité prédéfinisées fournissent un emplacement centralisé pour l’application de toutes les stratégies recommandées de courrier indésirable, de programmes malveillants et de hameçonnage aux utilisateurs à la fois. Les paramètres de stratégie ne sont pas configurables. Au lieu de cela, elles sont définies par nous et sont basées sur nos observations et expériences dans les centres de données pour trouver un équilibre entre la mise à l’écart du contenu dangereux des utilisateurs sans perturber leur travail.
+Les stratégies de sécurité prédéfinisées fournissent un emplacement centralisé pour l’application de toutes les stratégies recommandées de courrier indésirable, de programmes malveillants et de hameçonnage aux utilisateurs à la fois. Les paramètres de stratégie ne sont pas configurables. Au lieu de cela, elles sont définies par nous et sont basées sur nos observations et expériences dans les centres de données pour trouver un équilibre entre conserver du contenu dangereux à l’écart des utilisateurs sans perturber leur travail.
 
 Le reste de cette rubrique décrit les stratégies de sécurité prédéfinie et la façon de les configurer.
 
@@ -60,7 +60,7 @@ Les conditions et les exceptions disponibles sont les :
 
 - **Les destinataires sont les** boîtes aux lettres, les utilisateurs de messagerie ou les contacts de messagerie de votre organisation.
 - **Les destinataires sont membres de**: Groupes de votre organisation.
-- **Les domaines des destinataires** sont : domaines acceptés configurés dans Microsoft 365.
+- **Les domaines destinataires sont**: Domaines acceptés configurés dans Microsoft 365.
 
 ### <a name="policies-in-preset-security-policies"></a>Stratégies dans les stratégies de sécurité prédéfines
 
@@ -88,9 +88,9 @@ Notez que vous pouvez appliquer des protections EOP à différents utilisateurs 
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Paramètres de stratégie dans les stratégies de sécurité prédéfines
 
-Vous ne pouvez pas modifier les paramètres de stratégie dans les profils de protection. Les **valeurs de** paramètre de stratégie Standard et **Strict** sont décrites dans les paramètres recommandés pour EOP et Microsoft Defender pour la sécurité [Office 365.](recommended-settings-for-eop-and-office365-atp.md)
+Vous ne pouvez pas modifier les paramètres de stratégie dans les profils de protection. Les **valeurs des** paramètres de stratégie Standard et **Strict** sont décrites dans les paramètres recommandés pour EOP et Microsoft Defender pour la sécurité [Office 365.](recommended-settings-for-eop-and-office365-atp.md)
 
-### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Ordre de priorité pour les stratégies de sécurité prédéfinir et autres stratégies
+### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Ordre de priorité pour les stratégies de sécurité prédéfinir et les autres stratégies
 
 Lorsque plusieurs stratégies sont appliquées à un utilisateur, l’ordre suivant est appliqué de la priorité la plus élevée à la priorité la plus faible :
 
@@ -109,13 +109,13 @@ En d’autres termes, les paramètres de la stratégie De **protection** stricte
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous avoir été attribuées dans le Centre de sécurité et de conformité pour que vous puissiez effectuer les procédures décrites dans cet article.
+- Des autorisations doivent vous être attribuées dans **Exchange Online** avant de pouvoir suivre les procédures de cet article :
   - Pour configurer des stratégies de sécurité prédéfinie, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité. 
   - Pour accéder en lecture seule aux stratégies de sécurité prédéfinis, vous devez être membre du **groupe** de rôles Lecteur global.
 
-  Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+  Pour plus d'informations, voir [Permissions en échange en ligne](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
-  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration  Microsoft 365 donne aux utilisateurs les autorisations requises dans le Centre de sécurité & conformité et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux _utilisateurs_ les autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Utiliser le Centre de sécurité & conformité pour affecter des stratégies de sécurité prédéfines aux utilisateurs
 
@@ -123,7 +123,7 @@ En d’autres termes, les paramètres de la stratégie De **protection** stricte
 
 2. Sous **Protection standard ou** Protection **stricte,** cliquez sur **Modifier.**
 
-3. **L’Assistant Appliquer une protection standard** ou Appliquer une **protection** stricte démarre. Sur les **protections EOP s’appliquent** à l’étape, identifiez les destinataires internes à qui s’appliquent [les protections EOP](#policies-in-preset-security-policies) :
+3. **L’Assistant Appliquer une protection standard** ou Appliquer une **protection** stricte démarre. Sur les **protections EOP s’appliquent** à l’étape, identifiez les destinataires internes à qui les [protections EOP](#policies-in-preset-security-policies) s’appliquent :
 
    1. Cliquez **sur Ajouter une condition.** Dans ladown qui s’affiche, sélectionnez une condition sous **Applied si**:
 
@@ -139,7 +139,7 @@ En d’autres termes, les paramètres de la stratégie De **protection** stricte
 
       Répétez l’étape précédente pour ajouter des valeurs à la condition, puis répétez cette étape autant de fois que nécessaire ou jusqu’à ce que vous n’entiez plus dans les conditions.
 
-   4. Pour ajouter une exception, cliquez **sur Ajouter une condition.** In the dropdown that appears, select a condition under **Except when**. Les paramètres et le comportement sont exactement comme les conditions.
+   4. Pour ajouter une exception, cliquez **sur Ajouter une condition.** Dans la dropdown qui s’affiche, sélectionnez une condition sous **Sauf quand**. Les paramètres et le comportement sont exactement comme les conditions.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -149,18 +149,18 @@ En d’autres termes, les paramètres de la stratégie De **protection** stricte
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. À **l’étape** Confirmer, vérifiez vos sélections, puis cliquez sur **Confirmer**.
+5. À **l’étape** Confirmer, vérifiez vos sélections, puis cliquez sur **Confirmer.**
 
 ### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>Utiliser le Centre de sécurité & conformité pour modifier les affectations de stratégies de sécurité prédéfines
 
 Les étapes de modification de l’attribution de la stratégie de **sécurité Protection standard** ou **Protection** stricte sont les mêmes que lorsque vous avez initialement affecté les stratégies de sécurité prédéfines [aux utilisateurs.](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users)
 
-Pour désactiver les stratégies de **sécurité de protection standard** ou stricte tout en conservant les conditions et les exceptions existantes, faites glisser le basculement vers **Désactivé.**  Pour activer les stratégies, faites glisser le basculement sur **Activé.**
+Pour désactiver les stratégies de sécurité **de protection standard** ou stricte tout en conservant les conditions et les exceptions existantes, faites glisser le curseur sur **Désactivé.**  Pour activer les stratégies, faites glisser le basculement sur **Activé.**
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
-Pour vérifier que vous avez bien  affecté la stratégie de sécurité **Protection standard** ou Protection stricte à un utilisateur, utilisez un paramètre de protection dont la valeur par défaut est différente de celle de la **protection standard,** ce qui est différent du paramètre Strict **Protection.**
+Pour vérifier que vous avez bien  affecté la stratégie de sécurité **Protection standard** ou Protection stricte à un utilisateur, utilisez un paramètre de protection dont la valeur par défaut est différente de celle de la **protection standard,** ce qui est différent du paramètre **Strict Protection.**
 
 Par exemple, pour les e-mails détectés comme courrier indésirable (et non comme courrier indésirable à niveau de confiance élevé), vérifiez que le message est remis dans le dossier Courrier indésirable pour les utilisateurs de **la protection standard** et mis en quarantaine pour les utilisateurs à **protection** stricte.
 
-Ou, pour les messages électroniques en [nombre,](bulk-complaint-level-values.md)vérifiez que la valeur BCL 6 ou supérieure fournit le message au dossier  Courrier indésirable pour les utilisateurs de **la protection standard,** et que la valeur BCL 4 ou supérieure met le message en quarantaine pour les utilisateurs de protection stricte.
+Ou, pour les messages électroniques en [nombre,](bulk-complaint-level-values.md)vérifiez que la valeur BCL 6 ou supérieure fournit le message dans le dossier Courrier indésirable pour les utilisateurs de **la protection standard,** et que la valeur BCL 4 ou supérieure met le message en quarantaine pour les utilisateurs de la **protection** stricte.
