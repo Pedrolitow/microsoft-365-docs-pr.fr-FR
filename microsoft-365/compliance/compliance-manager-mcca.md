@@ -1,5 +1,5 @@
 ---
-title: Analyseur de configuration de conformité Microsoft pour le Gestionnaire de conformité
+title: Analyseur de configuration de la conformité Microsoft pour le Gestionnaire de conformité
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment utiliser l’Analyseur de configuration de conformité Microsoft pour être rapidement opérationnel avec le Gestionnaire de conformité Microsoft.
-ms.openlocfilehash: 86c4b04deb8313f3013a6d9ad349c0f4112db773
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.openlocfilehash: 41315dd072e089bd61767181b17dffd5fba88281
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122394"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423425"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analyseur de configuration de la conformité Microsoft pour le Gestionnaire de conformité (prévisualisation)
 
@@ -27,17 +27,17 @@ ms.locfileid: "50122394"
 
 ## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Présentation de l’Analyseur de configuration de la conformité Microsoft (MCCA) (prévisualisation)
 
-L’Analyseur de configuration de la conformité Microsoft (MCCA) est un outil de prévisualisation qui peut vous aider à démarrer avec le Gestionnaire de [conformité Microsoft.](compliance-manager.md) MCCA est un utilitaire basé sur PowerShell qui récupère les configurations actuelles de votre organisation et les valide par rapport aux meilleures pratiques recommandées de Microsoft 365. Ces meilleures pratiques sont basées sur un ensemble de contrôles qui incluent des réglementations clés et des normes pour la protection des données et la gouvernance des données.
+L’Analyseur de configuration de la conformité Microsoft (MCCA) est un outil de prévisualisation qui peut vous aider à démarrer avec le Gestionnaire de [conformité Microsoft.](compliance-manager.md) MCCA est un utilitaire basé sur PowerShell qui récupère les configurations actuelles de votre organisation et les valide par rapport aux meilleures pratiques recommandées de Microsoft 365. Ces meilleures pratiques sont basées sur un ensemble de contrôles qui incluent des réglementations et des normes clés pour la protection des données et la gouvernance des données.
 
 MCCA peut vous aider à voir rapidement quelles actions d’amélioration du Gestionnaire de conformité s’appliquent à votre environnement Microsoft 365 actuel. Chaque action identifiée par MCCA vous donne des recommandations pour l’implémentation, avec des liens directs vers le Gestionnaire de conformité et la solution applicable pour commencer à prendre des mesures correctives.
 
 Une ressource supplémentaire pour comprendre MCCA consiste à consulter les [instructions README sur GitHub.](https://github.com/OfficeDev/MCCA#overview) Cette page fournit des informations détaillées sur les conditions préalables et fournit des instructions d’installation complètes. Vous n’avez pas besoin d’un compte GitHub pour accéder à cette page.
 
-Disponibilité : MCCA est disponible pour toutes les organisations titulaires de licences Office 365 et Microsoft 365 et clients modérés de la Communauté du gouvernement américain (GCC), avec des plans en cours d’extension du service pour les clients GCC High.
+Disponibilité : MCCA est disponible pour toutes les organisations titulaires de licences Office 365 et Microsoft 365, ainsi que pour les clients modérés et GCC High de la Communauté du gouvernement des États-Unis, avec des plans en cours d’extension du service pour les clients DOD.
 
 ## <a name="install-mcca-and-run-a-report"></a>Installer MCCA et exécuter un rapport
 
-Vous pouvez installer l’outil MCCA à l’aide Windows PowerShell. Une fois que vous avez téléchargé et installé l’outil, vous n’avez pas besoin de répéter ces étapes pour exécuter des rapports. Chaque fois que vous ouvrez MCCA, il vous demande vos informations d’identification de connexion et génère un nouveau rapport mis à jour.
+Vous pouvez installer l’outil MCCA à l’aide Windows PowerShell. Une fois que vous avez téléchargé et installé l’outil, vous n’avez pas besoin de répéter ces étapes pour exécuter des rapports. Chaque fois que vous ouvrez MCCA, elle vous demande vos informations d’identification de connexion et génère un nouveau rapport mis à jour.
 
 #### <a name="step-1-install-windows-powershell"></a>Étape 1 : Installer Windows PowerShell
 Pour commencer, vous aurez besoin du module Exchange Online PowerShell (version 2.0.3 ou supérieure) disponible dans la galerie PowerShell. [Obtenir des instructions d’installation.](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3)
@@ -64,7 +64,13 @@ Après avoir installé MCCA, vous pouvez exécuter MCCA et générer un rapport.
     ```powershell
     Get-MCCAReport
     ```
-3. Une fois que MCCA s’exécute, il vérifie la version initiale et demande des informations d’identification. À l’invite d’entrée du nom d’utilisateur, connectez-vous avec votre adresse de messagerie de compte Microsoft 365 (affichez les rôles éligibles[pour créer des rapports).](#role-based-reporting) Entrez ensuite votre mot de passe à l’invite de mot de passe.
+   Si vous êtes un client GCC High, vous devez fournir un paramètre d’entrée supplémentaire pour exécuter le rapport :
+
+    ```powershell
+    Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
+    ```
+
+3. Une fois que MCCA s’exécute, il vérifie la version initiale et demande des informations d’identification. À l’invite d’entrée du nom d’utilisateur, connectez-vous avec votre adresse de messagerie de compte Microsoft 365 (affichez les rôles éligibles pour[créer des rapports).](#role-based-reporting) Entrez ensuite votre mot de passe à l’invite de mot de passe.
 
 Votre rapport prendra ensuite environ 2 à 5 minutes pour être généré. Une fois l’application effectuée, une fenêtre de navigateur s’ouvre et affiche votre rapport HTML. Chaque fois que vous exécutez l’outil, il vous demande vos informations d’identification et génère un nouveau rapport. Ce rapport est stocké localement dans le répertoire suivant :
 
@@ -104,7 +110,7 @@ Suivez ces instructions pour exécuter un rapport basé sur un emplacement spéc
   | 8  | Corée |
   | 9  | Amérique du Nord (à l’exception du Canada) |
   | 10  | Amérique du Sud |
-  | 11  | Afrique du Sud |
+  | 11 | Afrique du Sud |
   | 12  | Suisse |
   | 13  | Émirats arabes unis |
   | 14  | Royaume-Uni |
@@ -138,7 +144,7 @@ MCCA évalue vos configurations actuelles par rapport aux actions d’améliorat
 
 En plus de chaque solution Microsoft, des zones codées en couleur indiquent le nombre d’éléments qui correspondent aux actions d’amélioration dans le Gestionnaire de conformité. Les actions sont décomposées en trois états d’état :
 
-- **OK**: actions qui répondent aux conditions recommandées et qui n’ont pas besoin d’être attentives pour le moment
+- **OK**: actions qui répondent aux conditions recommandées et qui n’ont pas besoin d’attention pour le moment
 - **Amélioration :** actions qui ont besoin d’attention
 - **Recommandation**: actions qui n’ont pas besoin d’attention, mais pour lesquelles nous vous recommandons les meilleures pratiques
  
@@ -160,4 +166,4 @@ Sélectionnez la dropdown en face de **l’étiquette Recommandation** à droite
 
 Pour plus d’informations sur l’installation, la configuration et l’utilisation de MCCA, voir les [instructions README](https://github.com/OfficeDev/MCCA#overview) sur GitHub (aucun compte GitHub requis).
 
-Pour plus d’informations Windows PowerShell, commencez par utiliser [la documentation PowerShell.](https://docs.microsoft.com/powershell/scripting/how-to-use-docs?view=powershell-7) Voir aussi [Démarrage Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
+Pour plus d’informations Windows PowerShell, commencez par [utiliser la documentation PowerShell.](https://docs.microsoft.com/powershell/scripting/how-to-use-docs?view=powershell-7) Voir aussi [Démarrage Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).

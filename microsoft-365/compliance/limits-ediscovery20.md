@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, d’indexation et de recherche en vigueur pour la solution Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 6994a3511b97e9209491fa61a8c6f9bc147b6b87
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 9b36407868a0f426b71a0a551d2f702d0a20b777
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044629"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423435"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -42,17 +42,26 @@ Le tableau suivant répertorie les limites pour les cas et les ensembles de rév
 |Nombre maximal de balises par cas.  <br/> |1000 <br/> |
 |||
 
+## <a name="hold-limits"></a>Limites de la durée de vie
+
+Le tableau suivant répertorie les limites des attentes associées à un cas Advanced eDiscovery.
+
+| Description de la limite | Limite |
+|:-----|:-----|
+|Nombre maximal de boîtes aux lettres dans une seule et même boîte aux lettres. Cette limite inclut le total combiné de boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Microsoft 365, Microsoft Teams et Yammer groupes. <br/> |1 000  <br/> |
+|Nombre maximal de sites dans une seule et même période d’attente. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Microsoft 365, Microsoft Teams et Yammer groupes.  <br/> |100  <br/> |
+
 ## <a name="indexing-limits"></a>Limites d’indexation
 
 Le tableau suivant répertorie les limites d’indexation dans Advanced eDiscovery.
 
 | Description de la limite | Limite |
-  |:-----|:-----|
-  |Nombre maximal de caractères extraits d’un seul fichier.  <br/> |10 millions<sup>1</sup> <br/> |
-  |Taille maximale d’un fichier unique.   <br/> |100 Mo<sup>1</sup> <br/> |
-  |Profondeur maximale d’éléments incorporés dans un document.  <br/> |25<sup>1</sup> <br/> |
-  |Taille maximale des fichiers traitées par la reconnaissance optique de caractères (OCR).  <br/> |24 Mo<sup>1</sup> <br/> 
-  |Nombre maximal de travaux d’indexation par organisation et par jour. <br/> |10<sup>6</sup> <br/>|  
+|:-----|:-----|
+|Nombre maximal de caractères extraits d’un seul fichier.  <br/> |10 millions<sup>1</sup> <br/> |
+|Taille maximale d’un fichier unique.   <br/> |100 Mo<sup>1</sup> <br/> |
+|Profondeur maximale d’éléments incorporés dans un document.  <br/> |25<sup>1</sup> <br/> |
+|Taille maximale des fichiers traitées par la reconnaissance optique de caractères (OCR).  <br/> |24 Mo<sup>1</sup> <br/> 
+|Nombre maximal de travaux d’indexation par organisation et par jour. <br/> |10<sup>6</sup> <br/>|  
 |||
 
 ## <a name="search-limits"></a>Limites de la recherche
@@ -65,8 +74,8 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |Nombre maximal de recherches qui peuvent s’exécuter en même temps. |Sans limite |
 |Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. |10  | 
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions). |10 000 &nbsp; <sup>2</sup>|
-|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **un \** _ ou _*définir \**_.|3  |  
-|Variantes maximales renvoyées lors de l’utilisation de caractères génériques préfixés pour rechercher une expression exacte ou lorsque vous utilisez un caractère générique de préfixe et l’opérateur booléen _ *NEAR** . |10 000 &nbsp; <sup>3</sup>|
+|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **un ensemble _ ou \* *_*. \***|3  |  
+|Variantes maximales renvoyées lors de l’utilisation d’un caractère générique de préfixe pour rechercher une expression exacte ou lorsque vous utilisez un caractère générique de préfixe et **l’opérateur booléen NEAR.** |10 000 &nbsp; <sup>3</sup>|
 |Nombre maximal d’éléments par boîte aux lettres d’utilisateur qui sont affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés. |100|
 |Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.|1 000|
 |Nombre maximal de boîtes aux lettres qui peuvent être prévisualiser pour les résultats de la recherche.  Si plus de 1 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche, seules les 1 000 boîtes aux lettres les plus populaires sont disponibles en aperçu.|1 000|
@@ -74,8 +83,22 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |Nombre maximal de sites SharePoint et OneDrive Entreprise qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 200 sites contiennent des éléments qui correspondent à la requête de recherche, seuls les 200 premiers sites avec le plus de résultats sont disponibles en prévisualisation.|200|
 |Nombre maximal d’éléments par boîte aux lettres de dossiers publics affichés sur la page d’aperçu pour les recherches. |100|
 |Nombre maximal d’éléments trouvés dans tous les éléments de boîte aux lettres de dossiers publics affichés sur la page d’aperçu pour les recherches. |200|
-|Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 500 boîtes aux lettres de dossiers publics contiennent des éléments qui correspondent à la requête de recherche, seules les 500 premières boîtes aux lettres ayant le plus de résultats sont disponibles en prévisualisation.|500|
+|Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 500 boîtes aux lettres de dossiers publics contiennent des éléments qui correspondent à la requête de recherche, seules les 500 boîtes aux lettres ayant le plus grand nombre de résultats sont disponibles en prévisualisation.|500|
 |||
+
+## <a name="search-times"></a>Temps de recherche
+
+Microsoft collecte des informations de performances pour les recherches exécutés par toutes les organisations. Bien que la complexité de la requête de recherche puisse avoir un impact sur les heures de recherche, le facteur le plus important qui détermine la durée de la recherche est le nombre de boîtes aux lettres recherchées. Bien que Microsoft ne fournisse pas de contrat de niveau de service pour les heures de recherche, le tableau suivant répertorie les durées moyennes de recherche pour les recherches de collecte en fonction du nombre de boîtes aux lettres incluses dans la recherche.
+  
+  |**Nombre de boîtes aux lettres**|**Temps moyen de recherche**|
+  |:-----|:-----|
+  |100  <br/> |30 secondes  <br/> |
+  |1 000  <br/> |45 secondes  <br/> |
+  |10 000  <br/> |4 minutes  <br/> |
+  |25 000  <br/> |10 minutes  <br/> |
+  |50 000  <br/> |20 minutes  <br/> |
+  |100 000  <br/> |25 minutes  <br/> |
+  |||
 
 ## <a name="viewer-limits"></a>Limites de la visionneuse
 

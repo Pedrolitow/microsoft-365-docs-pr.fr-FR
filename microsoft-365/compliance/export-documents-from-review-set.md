@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment sélectionner et exporter du contenu à partir d’un jeu à réviser pour des présentations ou des avis externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b3be21d4c90c861c83acf612e9aadc373189f7ba
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: a2ca8e2f400d9f257549e59305d1fd56586185e2
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285360"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423645"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exporter des documents à partir d’un jeu à réviser dans Advanced eDiscovery
 
@@ -44,7 +44,7 @@ L’exportation permet aux utilisateurs de personnaliser le contenu inclus dans 
 
 - Métadonnées
   
-  - Charger un fichier : ce fichier contient les métadonnées de chaque fichier. voir [Champs de métadonnées de document dans Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md) pour plus d’informations sur les champs inclus. Ce fichier peut généralement être ingéré par des outils eDiscovery tiers.
+  - Charger un fichier : ce fichier contient les métadonnées de chaque fichier. Pour plus d’informations sur les champs inclus, voir Champs de métadonnées de document dans [Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). Ce fichier peut généralement être ingéré par des outils eDiscovery tiers.
   
   - Balises : lorsqu’elles sont sélectionnées, les informations de marquage sont incluses dans le fichier de chargement.
 
@@ -70,7 +70,7 @@ L’exportation permet aux utilisateurs de personnaliser le contenu inclus dans 
   
   - Structure du répertoire condensé : les fichiers sont exportés et inclus dans le téléchargement.
   
-  - Structure de répertoire condensée exportée vers votre compte de stockage Azure : les fichiers sont exportés vers l’accès au stockage Azure de votre organisation.
+  - Structure de répertoire condensée exportée vers votre compte de stockage Azure : les fichiers sont exportés vers le compte de stockage Azure de votre organisation.
 
 ## <a name="loose-files-and-pst-export-structure"></a>Fichiers libres et structure d’exportation PST
 
@@ -82,7 +82,7 @@ Si vous sélectionnez cette option d’exportation, le contenu exporté est orga
   
   - Summary.csv : fichier récapitulatif qui contient également des statistiques d’exportation.
   
-  - Exchange : ce dossier contient tout le contenu d’Exchange au format de fichier natif. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les natifs rédigés par des fichiers **pdf convertis.**
+  - Exchange : ce dossier contient tout le contenu d’Exchange au format de fichier natif. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les natifs rédigés par des fichiers **PDF convertis.**
   
   - SharePoint = Ce dossier contient tout le contenu natif de SharePoint dans un format de fichier natif. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les natifs rédigés par des fichiers **PDF convertis.**
 
@@ -105,4 +105,4 @@ Si vous sélectionnez cette option d’exportation, le contenu exporté est orga
   - Extracted_text_files - Ce dossier contient tous les fichiers texte extraits qui ont été générés lors du traitement.
 
 > [!NOTE]
-> Les travaux d’exportation sont conservés pendant la durée de vie du cas et peuvent être téléchargés tant que le cas n’est pas supprimé.
+> Les travaux d’exportation sont conservés pendant toute la durée de vie du cas. Toutefois, vous devez télécharger le contenu à partir d’une tâche d’exportation dans les 30 jours suivant la fin de la tâche d’exportation.

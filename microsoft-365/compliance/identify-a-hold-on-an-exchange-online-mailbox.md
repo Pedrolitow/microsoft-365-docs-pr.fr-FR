@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier les différents types de mise en attente qui peuvent être placés sur une boîte aux lettres Exchange Online dans Microsoft 365.
-ms.openlocfilehash: c0f5d11066169181b524632c7a1340c54f0061f0
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: a5bea8cd279bb980ba2f8a57950c8a66857ba502
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370334"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423625"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -32,11 +32,14 @@ Microsoft 365 offre plusieurs façons pour votre organisation d’empêcher la s
 
 - **[Attente pour litige](create-a-litigation-hold.md):** Les conserves appliquées aux boîtes aux lettres des utilisateurs dans Exchange Online.
 
-- **[EDiscovery hold](create-ediscovery-holds.md):** Les dossiers qui sont associés à un cas eDiscovery principal dans le centre de sécurité et conformité. Les conserves eDiscovery peuvent être appliquées aux boîtes aux lettres des utilisateurs et à la boîte aux lettres correspondante pour les groupes Microsoft 365 et Microsoft Teams.
+- **[EDiscovery hold](create-ediscovery-holds.md):** Les holds associés à un cas eDiscovery principal dans le centre de sécurité et conformité. Les conserves eDiscovery peuvent être appliquées aux boîtes aux lettres des utilisateurs et à la boîte aux lettres correspondante pour les groupes Microsoft 365 et Microsoft Teams.
 
-- **[In-Place Hold](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Les conserves appliquées aux boîtes aux lettres des utilisateurs à l’aide de l’outil In-Place eDiscovery & Hold dans le Centre d’administration Exchange dans Exchange Online.
+- **[In-Place Hold](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Les conserves appliquées aux boîtes aux lettres des utilisateurs à l’aide de l’outil In-Place eDiscovery & Hold dans le Centre d’administration Exchange dans Exchange Online. 
 
-- **[Stratégies de rétention Microsoft 365](retention.md):** Peut être configuré pour conserver (ou conserver, puis supprimer) le contenu des boîtes aux lettres utilisateur dans Exchange Online et dans la boîte aux lettres correspondante pour les Groupes Microsoft 365 et Microsoft Teams. Vous pouvez également créer une stratégie de rétention pour conserver les conversations Skype Entreprise, qui sont stockées dans les boîtes aux lettres des utilisateurs.
+   > [!NOTE]
+   > In-Place la boîte aux lettres a été retirée et vous ne pouvez plus créer de In-Place ou les appliquer à des boîtes aux lettres. Toutefois, les In-Place peuvent toujours être appliquées aux boîtes aux lettres de votre organisation, c’est pourquoi elles sont incluses dans cet article. Pour plus d’informations, voir [Retrait des outils eDiscovery hérités.](legacy-ediscovery-retirement.md#in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center)
+
+- **[Stratégies de rétention Microsoft 365](retention.md):** Peut être configuré pour conserver (ou conserver puis supprimer) le contenu des boîtes aux lettres utilisateur dans Exchange Online et dans la boîte aux lettres correspondante pour les Groupes Microsoft 365 et Microsoft Teams. Vous pouvez également créer une stratégie de rétention pour conserver les conversations Skype Entreprise, qui sont stockées dans les boîtes aux lettres des utilisateurs.
 
   Deux types de stratégies de rétention Microsoft 365 peuvent être affectés à des boîtes aux lettres.
 
@@ -71,11 +74,10 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 
 Le tableau suivant décrit comment identifier différents types de boîtes aux lettres en fonction des valeurs de la propriété *InPlaceHolds* lorsque vous exécutez la cmdlet **Get-Mailbox.**
 
-
 |Type de conservation  |Exemple de valeur  |Comment identifier le hold  |
 |---------|---------|---------|
 |Conservation pour litige     |    `True`     |     La mise en attente pour litige est activée pour une boîte aux lettres lorsque la *propriété LitigationHoldEnabled* est définie sur `True` .    |
-|Hold eDiscovery     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *propriété InPlaceHolds* contient le GUID de toute mise en attente associée à un cas eDiscovery dans le centre de sécurité et conformité. Vous pouvez savoir qu’il s’agit d’une attente eDiscovery, car le GUID commence par le `UniH` préfixe (qui désigne une attente unifiée).      |
+|Hold eDiscovery     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *propriété InPlaceHolds* contient le GUID de toute mise en attente associée à un cas eDiscovery dans le centre de sécurité et conformité. Vous pouvez indiquer qu’il s’agit d’une attente eDiscovery, car le GUID commence par le `UniH` préfixe (qui désigne une attente unifiée).      |
 |Blocage local     |     `c0ba3ce811b6432a8751430937152491` <br/> ou <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     La *propriété InPlaceHolds* contient le GUID de la In-Place qui est placée sur la boîte aux lettres. Vous pouvez savoir qu’il s’agit d’une In-Place car le GUID ne commence pas par un préfixe ou par `cld` le préfixe.     |
 |Stratégie de rétention Microsoft 365 spécifiquement appliquée à la boîte aux lettres     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> ou <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La propriété InPlaceHolds contient les GUID de toute stratégie de rétention d’emplacement spécifique appliquée à la boîte aux lettres. Vous pouvez identifier les stratégies de rétention, car le GUID commence par `mbx` le `skp` préfixe ou le préfixe. Le préfixe indique que la stratégie de rétention est appliquée aux conversations Skype Entreprise dans la `skp` boîte aux lettres de l’utilisateur.    |
 |Exclu d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Si une boîte aux lettres est exclue d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation, le GUID de la stratégie de rétention dont la boîte aux lettres est exclue s’affiche dans la propriété InPlaceHolds et est identifié par le `-mbx` préfixe.    |
@@ -91,7 +93,6 @@ Get-OrganizationConfig | FL InPlaceHolds
 > S’il y a trop de valeurs dans la propriété InPlaceHolds et qu’elles ne sont pas toutes affichées, vous pouvez exécuter la commande pour afficher chaque GUID sur une `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` ligne distincte.
 
 Le tableau suivant décrit les différents types de retenues à l’échelle de l’organisation et indique comment identifier chaque type en fonction des GUID contenus dans la propriété *InPlaceHolds* lorsque vous exécutez la cmdlet **Get-OrganizationConfig.**
-
 
 |Type de conservation  |Exemple de valeur  |Description  |
 |---------|---------|---------|
@@ -118,7 +119,7 @@ Le tableau suivant définit les trois actions de rétention possibles :
 |**2**    |    Indique que la stratégie de rétention est configurée pour contenir des éléments. La stratégie ne supprime pas les éléments à l’expiration de la période de rétention.     |
 |**3**     |   Indique que la stratégie de rétention est configurée pour conserver les éléments, puis les supprimer après l’expiration de la période de rétention.      |
 
-Pour plus d’informations sur les actions de rétention, voir la section Conservation du contenu pour une [période spécifique.](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)
+Pour plus d’informations sur les actions de rétention, voir la section Conservation du contenu pour [une période spécifique.](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>Étape 2 : Utiliser le GUID pour identifier le hold
 
@@ -126,7 +127,11 @@ Une fois que vous avez obtenu le GUID d’une attente appliquée à une boîte a
 
 ### <a name="ediscovery-holds"></a>Conservations eDiscovery
 
-Exécutez les commandes suivantes dans le Centre de sécurité & conformité PowerShell pour identifier une mise en attente eDiscovery appliquée à la boîte aux lettres. Utilisez le GUID (sans le préfixe UniH) pour le hold eDiscovery que vous avez identifié à l’étape 1. La première commande crée une variable qui contient des informations sur la attente. Cette variable est utilisée dans les autres commandes. La deuxième commande affiche le nom du cas eDiscovery à qui la hold est associée. La troisième commande affiche le nom de la boîte aux lettres et une liste des boîtes aux lettres à qui la boîte aux lettres s’applique.
+Exécutez les commandes suivantes dans le Centre de sécurité & conformité PowerShell pour identifier une mise en attente eDiscovery appliquée à la boîte aux lettres. Utilisez le GUID (sans le préfixe UniH) pour le hold eDiscovery que vous avez identifié à l’étape 1. 
+
+Pour vous connecter au Centre de sécurité & conformité PowerShell, voir Se connecter au Centre de sécurité [& conformité PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+
+La première commande crée une variable qui contient des informations sur la attente. Cette variable est utilisée dans les autres commandes. La deuxième commande affiche le nom du cas eDiscovery à qui la hold est associée. La troisième commande affiche le nom de la boîte aux lettres et une liste des boîtes aux lettres à qui la boîte aux lettres s’applique.
 
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -139,8 +144,6 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```powershell
 $CaseHold | FL Name,ExchangeLocation
 ```
-
-Pour vous connecter au Centre de sécurité & conformité PowerShell, voir Se connecter au Centre de sécurité [& conformité PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 ### <a name="in-place-holds"></a>Archives permanentes
 
@@ -165,7 +168,7 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 
 ## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>Identification des boîtes aux lettres en conservation car une étiquette de rétention a été appliquée à un dossier ou à un élément
 
-Chaque fois qu’un utilisateur applique une étiquette de rétention configurée pour conserver du contenu ou conserver, puis supprimer du contenu dans un dossier ou un élément de sa boîte aux lettres, la propriété de boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considérée comme placée en conservation pour litige ou affectée à une stratégie de rétention Microsoft 365. Lorsque la *propriété ComplianceTagHoldApplied* est définie sur **True,** les choses suivantes peuvent se produire :
+Chaque fois qu’un utilisateur applique une étiquette de rétention configurée pour conserver du contenu ou conserver, puis supprimer le contenu d’un dossier ou d’un élément de sa boîte aux lettres, la propriété de boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considérée comme placée en conservation pour litige ou affectée à une stratégie de rétention Microsoft 365. Lorsque la *propriété ComplianceTagHoldApplied* est définie sur **True,** les choses suivantes peuvent se produire :
 
 - Si la boîte aux lettres ou le compte d’utilisateur de l’utilisateur est supprimé, la boîte aux lettres devient [une boîte aux lettres inactive.](inactive-mailboxes-in-office-365.md)
 - Vous ne pouvez pas désactiver la boîte aux lettres (la boîte aux lettres principale ou la boîte aux lettres d’archivage, si elle est activée).
@@ -186,8 +189,8 @@ Une fois qu’un type de boîte aux lettres a été supprimé d’une boîte aux
 - **DelayHoldApplied :** Cette propriété s’applique au contenu de messagerie électronique (généré par des personnes utilisant Outlook et Outlook sur le web) stocké dans la boîte aux lettres d’un utilisateur.
 
 - **DelayReleaseHoldApplied :** Cette propriété s’applique au contenu en nuage (généré par des applications non Outlook telles que Microsoft Teams, Microsoft Forms et Microsoft Yammer) stocké dans la boîte aux lettres d’un utilisateur. Les données cloud générées par une application Microsoft sont généralement stockées dans un dossier masqué dans la boîte aux lettres d’un utilisateur.
- 
- Lorsqu’une mise en attente différée est placée sur la boîte aux lettres (lorsque l’une des propriétés précédentes est définie sur **True),** la boîte aux lettres est toujours considérée comme étant en attente pour une durée illimitée, comme si la boîte aux lettres était en attente pour litige. Au bout de 30 jours, le délai d’attente expire et Microsoft 365 tente automatiquement de supprimer le délai d’attente (en fixant la propriété DelayHoldApplied ou DelayReleaseHoldApplied sur **False)** afin que la mise en attente soit supprimée. Une fois que l’une de ces propriétés a la valeur **False,** les éléments correspondants marqués pour suppression sont purgés la prochaine fois que la boîte aux lettres est traitée par l’Assistant Dossier géré.
+
+Lorsqu’un délai d’attente est placé sur la boîte aux lettres (lorsque l’une des propriétés précédentes est définie sur **True),** la boîte aux lettres est toujours considérée comme étant en attente pour une durée illimitée, comme si la boîte aux lettres était en attente pour litige. Au bout de 30 jours, le délai d’attente expire et Microsoft 365 tente automatiquement de supprimer le délai d’attente (en fixant la propriété DelayHoldApplied ou DelayReleaseHoldApplied sur **False)** afin que la mise en attente soit supprimée. Une fois que l’une de ces propriétés est définie sur **False,** les éléments correspondants marqués pour suppression sont purgés la prochaine fois que la boîte aux lettres est traitée par l’Assistant Dossier géré.
 
 Pour afficher les valeurs des propriétés DelayHoldApplied et DelayReleaseHoldApplied d’une boîte aux lettres, exécutez la commande suivante dans Exchange Online PowerShell.
 
@@ -195,14 +198,14 @@ Pour afficher les valeurs des propriétés DelayHoldApplied et DelayReleaseHoldA
 Get-Mailbox <username> | FL *HoldApplied*
 ```
 
-Pour supprimer le délai d’attente avant son expiration, vous pouvez exécuter l’une des commandes suivantes (ou les deux) dans Exchange Online PowerShell, en fonction de la propriété que vous souhaitez modifier : 
- 
+Pour supprimer le délai d’attente avant son expiration, vous pouvez exécuter l’une des commandes suivantes (ou les deux) dans Exchange Online PowerShell, en fonction de la propriété que vous souhaitez modifier :
+
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
 Ou
- 
+
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 ```
@@ -228,17 +231,15 @@ Pour plus d’informations sur l’utilisation de ces paramètres pour la gestio
 
 Gardez les points suivants à l’esprit lors de la gestion d’une boîte aux lettres en attente de retard :
 
-- Si la propriété DelayHoldApplied ou DelayReleaseHoldApplied est définie sur **True** et qu’une boîte aux lettres (ou le compte d’utilisateur correspondant) est supprimée, la boîte aux lettres devient une boîte aux lettres inactive. Cela est dû au fait qu’une boîte aux lettres est considérée comme étant en attente si l’une des propriétés est définie sur **True** et que la suppression d’une boîte aux lettres en attente entraîne une boîte aux lettres inactive. Pour supprimer une boîte aux lettres et ne pas en faire une boîte aux lettres inactive, vous devez définir les deux propriétés sur **False**.
+- Si la propriété DelayHoldApplied ou DelayReleaseHoldApplied est définie sur **True** et qu’une boîte aux lettres (ou le compte d’utilisateur correspondant) est supprimée, la boîte aux lettres devient une boîte aux lettres inactive. En effet, une boîte aux lettres est considérée comme étant en attente si l’une des propriétés est définie sur **True** et que la suppression d’une boîte aux lettres en attente entraîne une boîte aux lettres inactive. Pour supprimer une boîte aux lettres et ne pas en faire une boîte aux lettres inactive, vous devez définir les deux propriétés sur **False**.
 
-- Comme indiqué précédemment, une boîte aux lettres est considérée comme étant en attente pour une durée illimitée si la propriété DelayHoldApplied ou DelayReleaseHoldApplied est définie sur **True**. Toutefois, cela ne signifie pas *que* tout le contenu de la boîte aux lettres est conservé. Cela dépend de la valeur définie pour chaque propriété. Par exemple, supposons que les deux propriétés sont définies sur **True,** car les conserves sont supprimées de la boîte aux lettres. Ensuite, vous supprimez uniquement le délai d’attente appliqué aux données cloud non Outlook (à l’aide du paramètre *RemoveDelayReleaseHoldApplied).* Lors du prochain traitement de la boîte aux lettres par l’Assistant Dossier géré, les éléments non Outlook marqués pour suppression sont purgés. Tous les éléments Outlook marqués pour suppression ne seront pas purgés, car la propriété DelayHoldApplied est toujours définie sur **True**. L’inverse serait également vrai : si DelayHoldApplied est définie sur **False** et DelayReleaseHoldApplied est définie sur **True**, seuls les éléments Outlook marqués pour suppression seront purgés.
+- Comme indiqué précédemment, une boîte aux lettres est considérée comme étant en attente pour une durée illimitée si la propriété DelayHoldApplied ou DelayReleaseHoldApplied est définie sur **True**. Toutefois, cela ne signifie pas *que* tout le contenu de la boîte aux lettres est conservé. Cela dépend de la valeur définie pour chaque propriété. Par exemple, supposons que les deux propriétés sont définies sur **True,** car les conserves sont supprimées de la boîte aux lettres. Ensuite, vous supprimez uniquement le délai d’attente appliqué aux données cloud non-Outlook (à l’aide du paramètre *RemoveDelayReleaseHoldApplied).* Lors du prochain traitement de la boîte aux lettres par l’Assistant Dossier géré, les éléments non Outlook marqués pour suppression sont purgés. Tous les éléments Outlook marqués pour suppression ne seront pas purgés, car la propriété DelayHoldApplied est toujours définie sur **True**. L’inverse serait également vrai : si DelayHoldApplied est définie sur **False** et DelayReleaseHoldApplied est définie sur **True**, seuls les éléments Outlook marqués pour suppression seront purgés.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Après avoir identifié les conservations appliquées à une boîte aux lettres, vous pouvez effectuer des tâches telles que la modification de la durée de la conservation, la suppression temporaire ou définitive de la conservation ou l’exclusion d’une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365. Pour plus d’informations sur les tâches liées aux maintiens en cours, consultez l’une des rubriques suivantes :
+Après avoir identifié les conservations appliquées à une boîte aux lettres, vous pouvez effectuer des tâches telles que la modification de la durée de la conservation, la suppression temporaire ou définitive de la conservation ou l’exclusion d’une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365. Pour plus d’informations sur les tâches liées aux travaux en cours, consultez l’une des rubriques suivantes :
 
-- Exécutez la commande [Set-RetentionCompliancePolicy \<Policy Name> -Identity -AddExchangeLocationException \<user mailbox> ](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) dans le Centre de sécurité & conformité PowerShell pour exclure une boîte aux lettres d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. Cette commande ne peut être utilisée que pour les stratégies de rétention dont la valeur de la *propriété ExchangeLocation* est égale `All` à .
-
-- Exécutez la commande [Set-Mailbox -ExcludeFromOrgHolds \<hold GUID without prefix or suffix> ](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) dans Exchange Online PowerShell pour exclure une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation.
+- Exécutez la commande [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox> ](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) dans le Centre de sécurité & conformité PowerShell pour exclure une boîte aux lettres d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. Cette commande ne peut être utilisée que pour les stratégies de rétention dont la valeur de la *propriété ExchangeLocation* est égale `All` à .
 
 - [Modifier la durée de conservation pour une boîte aux lettres inactive](change-the-hold-duration-for-an-inactive-mailbox.md)
 
