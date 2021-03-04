@@ -17,22 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 1806000b47a19c07da11a6a732eeacf5d60a7da0
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 02d3fd17e4aac34546e545ec10621bc99b945b31
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261323"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405712"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Utilisez une stratégie de rétention pour décider de manière proactive si vous souhaitez conserver le contenu, supprimer le contenu ou les deux, c’est-à-dire conserver puis supprimer le contenu.
+Utilisez une stratégie de rétention pour gérer les données de votre organisation en décidant de manière proactive s'il faut conserver le contenu, le supprimer ou le conserver puis le supprimer.
 
-Une stratégie de rétention vous permet d’effectuer cela de façon très efficace en attribuant les mêmes paramètres de rétention au contenu par emplacement, au niveau d’un site ou d’une boîte aux lettres. Si vous ne savez pas si vous devez utiliser une stratégie ou une étiquette de rétention, voir [Stratégies et étiquettes de rétention](retention.md#retention-policies-and-retention-labels).
+Une stratégie de rétention vous permet de le faire très efficacement en attribuant les mêmes paramètres de rétention au niveau du conteneur pour qu'ils soient automatiquement hérités par le contenu de ce conteneur. Par exemple, tous les éléments des sites SharePoint, tous les messages électroniques dans les boîtes aux lettres Exchange des utilisateurs, tous les messages des canaux pour les équipes qui sont utilisés avec Microsoft Teams. Si vous ne savez pas si vous devez utiliser une stratégie de rétention au niveau du conteneur ou une étiquette de rétention au niveau de l’élément, consultez [Stratégies de rétention et étiquettes de rétention](retention.md#retention-policies-and-retention-labels).
 
-Pour en savoir plus sur les stratégies de rétention et le fonctionnement de la rétention, consultez la page [Découvrir les stratégies et étiquettes de rétention](retention.md).
+Pour en savoir plus sur les stratégies de rétention et le fonctionnement de la rétention en Microsoft 365, consultez la page [Découvrir les stratégies et étiquettes de rétention](retention.md).
+
+> [!NOTE]
+> Les informations sur cette page sont pour les administrateurs de conformité. Si vous n'êtes pas administrateur et que vous souhaitez comprendre comment les stratégies de rétention ont été configurées pour les applications que vous utilisez, contactez votre service d'assistance, votre service informatique ou votre administrateur. Si vous voyez des messages concernant les stratégies de rétention dans les conversations Teams et dans les messages des canaux, vous trouverez peut-être utile d'examiner [Messages Teams concernant les stratégies de rétention](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -40,7 +43,7 @@ L’administrateur général de votre organisation dispose de toutes les autoris
 
 ## <a name="create-and-configure-a-retention-policy"></a>Créer et configurer une stratégie de rétention
 
-Bien qu’une stratégie de rétention puisse prendre en charge plusieurs emplacements, vous ne pouvez pas créer de stratégie de rétention unique qui inclut tous les emplacements pris en charge :
+Bien qu’une stratégie de rétention puisse prendre en charge plusieurs services identifiés comme « emplacements » dans la stratégie de rétention, vous ne pouvez pas créer une stratégie de rétention unique qui inclut tous les emplacements pris en charge :
 
 - E-mails Exchange
 - Site SharePoint
@@ -53,7 +56,7 @@ Bien qu’une stratégie de rétention puisse prendre en charge plusieurs emplac
 - Messages communautaires Yammer
 - Messages privés Yammer
 
-Lorsque vous sélectionnez l’emplacement Teams ou Yammer lors de la création d’une stratégie de rétention, les autres emplacements sont automatiquement exclus. Par conséquent, les instructions à suivre dépendent de la nécessité d'inclure les équipes ou les lieux de Yammer :
+Lorsque vous sélectionnez l’emplacement Teams ou Yammer lors de la création d’une stratégie de rétention, les autres emplacements sont automatiquement exclus. Cela signifie que les instructions à suivre varient selon que vous devez inclure les emplacements Teams ou Yammer :
 
 - [Instructions relatives à une stratégie de rétention pour les emplacements Teams](#retention-policy-for-teams-locations)
 - [Instructions relatives à une stratégie de rétention pour les emplacements Yammer](#retention-policy-for-yammer-locations)

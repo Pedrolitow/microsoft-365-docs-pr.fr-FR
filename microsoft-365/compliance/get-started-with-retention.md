@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de rétention pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: bb73f0871bfc2ad707d31ef6d4d57e18218842a5
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682529"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406514"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -82,9 +82,11 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 
 Si vous utilisez des étiquettes de rétention pour la gestion des enregistrements, il existe d'autres scénarios qui sont propres aux étiquettes de rétention qui marquent le contenu comme un enregistrement. Voir [ Scénarios communs pour la gestion des enregistrements](get-started-with-records-management.md#common-scenarios-for-records-management).
 
-## <a name="end-user-documentation-for-retention-labels"></a>Documentation de l’utilisateur final sur les étiquettes de rétention
+## <a name="end-user-documentation-for-retention"></a>Documentation de l’utilisateur final sur la rétention
 
-Les étiquettes de rétention, contrairement aux stratégies de rétention, sont présentes dans l’interface utilisateur des applications Microsoft 365. Veillez à fournir des instructions pour les utilisateurs finaux et votre support technique avant de déployer les étiquettes de rétention sur votre réseau de production.
+La plupart des stratégies de rétention fonctionnent discrètement en arrière-plan, sans interaction de l'utilisateur, et nécessitent donc peu de documentation pour les utilisateurs. Les stratégies de rétention pour Teams informe les utilisateurs lorsque leurs messages ont été supprimés avec un lien vers [Messages Teams concernant les stratégies de rétention](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+
+Étant donné que les étiquettes de rétention sont présentes dans Microsoft 365 Apps, veillez à fournir des conseils aux utilisateurs finaux et à votre service d’assistance avant de déployer ces étiquettes sur votre réseau de production.
 
 La documentation la plus efficace pour l’utilisateur final est une aide personnalisée en fonction des instructions que vous fournissez pour les noms d’étiquette de rétention et des configurations que vous choisissez. Consultez le billet de blog suivant pour obtenir un package de téléchargement que vous pouvez utiliser pour former les utilisateurs et développer l’adoption : [Formation de l’utilisateur final pour les étiquettes de rétention dans M365, comment accélérer l’adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 
