@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment rejoindre une équipe en tant qu’invité dans Microsoft Teams.
-ms.openlocfilehash: 31d5acb1a0294a54bcb5b5c7c74d76dbba7124f7
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8ed7b8c92fa9fbe22c8a4f74b89916266a4af46f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925025"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422482"
 ---
 # <a name="join-a-team-as-a-guest"></a>Rejoindre une équipe en tant qu’invité
 
@@ -40,7 +38,7 @@ Si vous recevez une invitation Microsoft Teams à rejoindre une équipe, vous de
 1. Ouvrez l’invitation par courrier électronique, puis **sélectionnez Ouvrir Microsoft Teams.** Si vous ne voyez pas l’invitation, vérifiez votre dossier de courrier indésirable ou de courrier indésirable.
   1. Si votre adresse de messagerie n’a pas été utilisée précédemment pour créer un compte Microsoft, vous devez en créer un.
 
-     Dans la **boîte de dialogue** Créer un compte, **sélectionnez Suivant,** créez un mot de passe, puis **sélectionnez Suivant.**
+     Dans la **boîte de dialogue** Créer un compte, **sélectionnez Suivant,** créez un mot de passe, puis sélectionnez **Suivant.**
   1. Pour vérifier votre adresse e-mail, ouvrez l’e-mail de vérification et copiez le code de sécurité.
   1. Entrez votre code  de sécurité dans la boîte de dialogue  Vérifier l’e-mail, sélectionnez **Suivant,** entrez la CAPTCHA dans la ligne Entrez les caractères que vous voyez, sélectionnez **Suivant,** puis **Acceptez**.
 1. Si vous ne souhaitez pas télécharger l’application Microsoft Teams, sélectionnez **Utiliser l’application web à la place.**

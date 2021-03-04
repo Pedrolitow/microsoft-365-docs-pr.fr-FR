@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Vue d’ensemble du partage de vos fichiers métiers.
-ms.openlocfilehash: 333954c92039d124c83cf03b6e1f6637183a4f25
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b481e7564625fcd019a53ba9116acdb724b4af61
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928149"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422362"
 ---
 # <a name="overview-of-sharing-business-files"></a>Vue d’ensemble du partage de fichiers métiers
 

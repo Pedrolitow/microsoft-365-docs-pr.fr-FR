@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment obtenir de l’aide ou du support pour les administrateurs dans Microsoft 365 Business Premium.
-ms.openlocfilehash: bcfe140ec87b50048db570ad4efe4575135b3191
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 852b931f4710ad4117560485002ebe10ef97d3ad
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927165"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422578"
 ---
 # <a name="get-help-or-support"></a>Obtenir de l’aide ou une assistance technique
 
@@ -46,7 +44,7 @@ Vous n’êtes pas administrateur ? Essayez le [support Microsoft](https://go.m
 Le support de facturation est fourni en anglais de 9 h à 17 h (9 h à 18 h en Australie), du lundi au vendredi.
 Le support technique est proposé en anglais 24 heures sur 24, 7 jours sur 7.
 
-Pour trouver le numéro de téléphone du support Microsoft 365 ou Microsoft 365 Business Premium pour votre pays ou région, consultez contacter le support technique pour [les produits d’entreprise.](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+Pour trouver le numéro de téléphone du support Microsoft 365 ou Microsoft 365 Business Premium pour votre pays ou région, consultez le support technique pour les [produits d’entreprise.](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## <a name="try-it"></a>Essayez !
 

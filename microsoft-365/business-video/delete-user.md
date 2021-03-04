@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment supprimer des utilisateurs dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 01c26431947950195c5fc711d8bd0d82c808beec
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 902bf9d22a904064562346d2451cef596b71cca6
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927273"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422746"
 ---
 # <a name="delete-a-user"></a>Supprimer un utilisateur
 
@@ -45,7 +43,7 @@ Lorsqu’un employé quitte l’entreprise, vous devez le supprimer de Microsoft
 1. Cochez la case pour accorder à un autre utilisateur l’accès au OneDrive de l’ancien employé et recherchez cet utilisateur.
 1. Sélectionnez leur nom.
 1. Cet utilisateur a maintenant 30 jours pour déplacer les fichiers vers un nouvel emplacement.
-1. Cochez la case pour accorder à un autre utilisateur l’accès à la messagerie de l’ancien employé, puis sélectionnez Sélectionner un utilisateur **et définir les options de courrier électronique.**
+1. Cochez la case pour accorder à un autre utilisateur l’accès au courrier électronique de l’ancien employé, puis sélectionnez Sélectionner un utilisateur **et définir les options de messagerie.**
 1. Choisissez l’utilisateur, puis sélectionnez **Suivant.**
 1. Si vous le souhaitez, vous pouvez créer un nom complet qui indique que la boîte aux lettres appartient à un ancien employé, puis sélectionner **Suivant**.
 1. Activer les réponses automatiques et modifier le texte de réponse si vous le souhaitez.

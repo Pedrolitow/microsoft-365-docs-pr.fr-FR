@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment créer et gérer des étiquettes de sensibilité.
-ms.openlocfilehash: c8d528e7a742ca60345def415ce47b29b371c738
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: e1e7d030065ab5146056d36f396eb5ddd44f360e
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927321"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422782"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>Protéger les documents avec des étiquettes de niveau de sensibilité
 
@@ -40,13 +38,13 @@ Les étiquettes de niveau de sensibilité vous permettent de classifier et de pr
 
 1. Dans le Centre [d’administration,](https://admin.microsoft.com)sélectionnez le **Centre d’administration** de conformité.
 1. Sélectionnez **Classification,** puis **étiquettes de sensibilité.**
-1. Sélectionnez **Créer une étiquette** et lorsque l’avertissement s’affiche, sélectionnez **Oui**.
+1. Sélectionnez **Créer une étiquette** et, lorsque l’avertissement s’affiche, sélectionnez **Oui.**
 1. Entrez un **nom d’étiquette,** **une boîte à outils** et une **description.** Sélectionnez **Suivant**.
 1. Activer le **chiffrement**. Choisissez quand vous souhaitez attribuer des autorisations, si vous souhaitez que l’accès de vos utilisateurs au contenu expire et si vous souhaitez autoriser l’accès hors connexion.
 1. **Sélectionnez Attribuer des autorisations,** puis **Ajoutez ces adresses e-mail ou domaines.**
 1. Entrez une adresse de messagerie ou un nom de domaine (par exemple, Contoso.org).  Sélectionnez **Ajouter** et répétez l’étape pour chaque adresse e-mail ou domaine que vous souhaitez ajouter.
 1. Sélectionnez **Choisir des autorisations à partir d’autorisations prédéfines ou personnalisées.**
-1. Utilisez la liste de listes pour sélectionner  des autorisations prédéfinées, telles que réviseur ou visionneuse, ou des **autorisations** personnalisées. Si vous avez **choisi Personnalisé,** sélectionnez les autorisations dans la liste. Sélectionnez **Enregistrer,** **Enregistrer,** puis **Suivant.**
+1. Utilisez la liste de listes pour sélectionner  des autorisations prédéfinées, telles que réviseur ou visionneuse, ou pour sélectionner des **autorisations** personnalisées. Si vous avez **choisi Personnalisé,** sélectionnez les autorisations dans la liste. Sélectionnez **Enregistrer,** **Enregistrer,** puis **Suivant.**
 1. Activer le **marquage de** contenu et choisir les marquages que vous souhaitez utiliser.
 1. Pour chaque marquage que vous choisissez, **sélectionnez Personnaliser le texte.** Entrez le texte que vous souhaitez voir apparaître dans le document, puis définissez les options de police et de mise en page. Sélectionnez **Enregistrer,** puis répétez les marques supplémentaires. Sélectionnez **Suivant**.
 1. Éventuellement, activer la protection contre la perte **de données de point de terminaison.** Sélectionnez **Suivant**.

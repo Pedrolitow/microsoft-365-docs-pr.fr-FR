@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Avant de pouvoir utiliser les services Microsoft 365 avec votre appareil, vous devrez peut-être l’inscrire dans Basic Mobility and Security pour Microsoft 365.
-ms.openlocfilehash: dc5a43b12fce50c9146200a4559fe9b7e6824b18
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 2a9c0bd9faf670d7dca340d3bc4e9f6586bd6b66
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877055"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423200"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Inscrire votre appareil mobile à l’aide de Basic Mobility and Security
 
@@ -38,7 +38,7 @@ Les organisations choisissent La mobilité et la sécurité de base afin que les
 
 Basic Mobility and Security pour Microsoft 365 hébergé par le service Intune fonctionne avec la plupart, mais pas tous, des appareils mobiles. Les éléments suivants sont pris en charge avec Basic Mobility and Security :
 
-- iOS 10.0 ou ultérieur
+- iOS 10.0 ou une ultérieure
 
 - Android 4.4 ou version ultérieure
 
@@ -47,7 +47,7 @@ Basic Mobility and Security pour Microsoft 365 hébergé par le service Intune f
 Si votre appareil n’est pas répertorié ci-dessus et que vous devez l’utiliser avec Basic Mobility and Security, contactez votre administrateur scolaire ou scolaire.
 
 >[!TIP]
->Si vous avez des difficultés à inscrire votre appareil, voir Résoudre les problèmes de mobilité et [de sécurité de base.](/basic-mobility-security/troubleshoot.md)
+>Si vous avez des difficultés à inscrire votre appareil, voir Résoudre les [problèmes de mobilité et de sécurité de base.](troubleshoot.md)
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Configurer votre appareil mobile avec Intune et Basic Mobility and Security
 

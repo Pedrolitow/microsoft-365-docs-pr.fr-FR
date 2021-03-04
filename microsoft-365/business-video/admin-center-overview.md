@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: En savoir plus sur le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 3070d6e9ce035786291fab4557648ab6bc520540
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b936a42629086c8674bd2d89454e98e387b15efc
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927585"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423034"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
@@ -42,9 +40,9 @@ Dans la page d’accueil, vous pouvez créer des cartes pour les tâches que vou
 
 Pour afficher d’autres tâches d’administration, développez le menu de navigation. Vous trouverez des paramètres de configuration avancés dans les centres d’administration supplémentaires en bas.
 
-Une tâche courante que vous pouvez effectuer dans le Centre d’administration consiste à ajouter un utilisateur. Pour ce faire, sélectionnez **Utilisateurs,** **Utilisateurs actifs,** puis **Ajoutez un utilisateur.** Entrez le nom de l’utilisateur et d’autres informations, puis sélectionnez **Suivant**. Suivez les invites pour terminer l’ajout de l’utilisateur. Lorsque vous avez terminé, **sélectionnez Terminer l’ajout,** puis **fermez**.
+Une tâche courante que vous pouvez effectuer dans le Centre d’administration consiste à ajouter un utilisateur. Pour ce faire, sélectionnez **Utilisateurs,** **Utilisateurs actifs,** puis **Ajouter un utilisateur.** Entrez le nom de l’utilisateur et d’autres informations, puis sélectionnez **Suivant**. Suivez les invites pour terminer l’ajout de l’utilisateur. Lorsque vous avez terminé, **sélectionnez Terminer l’ajout,** puis **fermez**.
 
-Vous pouvez trier vos utilisateurs actifs par colonnes, telles que le nom **d’affichage** ou **les licences.** Pour ajouter d’autres colonnes, sélectionnez **Choisir** des colonnes, sélectionnez les colonnes que vous souhaitez ajouter, puis sélectionnez **Enregistrer.**
+Vous pouvez trier vos utilisateurs actifs par colonnes, telles que le nom **d’affichage** ou **les licences.** Pour ajouter d’autres colonnes, **sélectionnez Choisir** des colonnes, sélectionnez les colonnes que vous souhaitez ajouter, puis sélectionnez **Enregistrer.**
 
 Sélectionnez un utilisateur pour voir d’autres options, telles que la gestion de ses licences de produit.
 

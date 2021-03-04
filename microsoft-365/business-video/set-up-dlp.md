@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment gérer les stratégies de protection contre la perte de données.
-ms.openlocfilehash: e963cf85fee887b6e91c6e54b00aaa9e5174e3b6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 54cd508ef0b0cfcf8b71dc86a4903f77a5354c36
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927957"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422062"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>Empêcher la perte de données avec DLP
 
@@ -40,7 +38,7 @@ Les stratégies de protection contre la perte de données permettent d’identif
 
 1. To get started, go to the [admin center](https://admin.microsoft.com), and select **Setup**.
 1. Faites défiler vers le bas **pour configurer la** protection contre la perte de données, puis **sélectionnez Afficher,** puis **Gérer**.
-1. Pour modifier une stratégie, sélectionnez-la, choisissez **Modifier la stratégie,** puis sélectionnez ce qu’il faut modifier. Par exemple, sélectionnez **Emplacements** pour modifier ce qui est analysé.
+1. Pour modifier une stratégie, sélectionnez-la, sélectionnez **Modifier la stratégie,** puis ce qu’il faut modifier. Par exemple, sélectionnez **Emplacements** pour modifier ce qui est analysé.
 1. Pour activer l’analyse du contenu dans Microsoft Teams, activez le bouton bascule en position **Activé,** puis sélectionnez **Enregistrer.**
 1. Pour modifier les paramètres de stratégie, sélectionnez **Modifier.**
 1. Vous devez définir des règles distinctes qui s’appliquent aux petites et grandes quantités de contenu sensible détecté. Développez votre règle de faible volume. Choose **Edit rule**.

@@ -15,16 +15,17 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1461a63cc57a5d93e06b1df89dfa0f3f7e8bc559
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+- m365solution-scenario
+ms.openlocfilehash: cb029ddcaf63accfd0b49c6b317976ad1a00ab40
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613787"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423222"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité des communications dans Microsoft 365
 
-La protection des informations sensibles et la détection et l’action sur les incidents de harcèlement sur le lieu de travail est un élément important de la conformité avec les stratégies et normes internes. La conformité des communications dans Microsoft 365 permet de minimiser ces risques en vous aidant à détecter, capturer et prendre rapidement des mesures correctives pour les e-mails et les communications Microsoft Teams. Il s’agit notamment de communications inappropriées contenant du blasphémité, des menaces, du harcèlement et des communications qui partagent des informations sensibles à l’intérieur et à l’extérieur de votre organisation.
+La protection des informations sensibles et la détection et l’action sur les incidents de harcèlement sur le lieu de travail sont un élément important de la conformité avec les stratégies et normes internes. La conformité des communications dans Microsoft 365 permet de réduire ces risques en vous aidant à détecter, capturer et prendre rapidement des mesures correctives pour les e-mails et les communications Microsoft Teams. Il s’agit notamment de communications inappropriées contenant du blasphémité, des menaces, du harcèlement et des communications qui partagent des informations sensibles à l’intérieur et à l’extérieur de votre organisation.
 
 ## <a name="configure-communication-compliance-for-microsoft-365"></a>Configurer la conformité des communications pour Microsoft 365
 

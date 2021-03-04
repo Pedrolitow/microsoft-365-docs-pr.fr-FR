@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment réinitialiser les mots de passe utilisateur dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 07752229e30c2a15ad1ece120a07b947bbe9c895
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 897ee87149c779d3de6d2175993d17e88dfc270f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928094"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422266"
 ---
 # <a name="reset-passwords-for-your-users"></a>Réinitialiser les mots de passe de vos utilisateurs
 
@@ -46,4 +44,4 @@ Dans Microsoft 365 pour les entreprises, vous pouvez réinitialiser les mots de 
 1. Votre adresse de messagerie s’insérez dans la zone Envoyer le nouveau mot de **passe aux destinataires suivants.** Ajoutez l’adresse e-mail de remplacement de l’utilisateur ou n’importe quelle adresse de votre choix.
 1. Choose **Send email and close**.
 
-    L’utilisateur reçoit un courrier électronique avec les instructions de réinitialisation du mot de passe.
+    L’utilisateur reçoit un e-mail avec les instructions de réinitialisation du mot de passe.

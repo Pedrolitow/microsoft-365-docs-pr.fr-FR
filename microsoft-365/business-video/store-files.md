@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez où vous pouvez stocker des fichiers dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 4f9ce18ca86a59e615426b994ef440279a78990a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: e8c0347489b3d35217b3cad38e26670d2c6023bb
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927801"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421834"
 ---
 # <a name="where-to-store-files"></a>Choisir un emplacement de stockage pour vos fichiers
 

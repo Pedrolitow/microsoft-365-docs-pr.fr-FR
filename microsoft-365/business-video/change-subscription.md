@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment déplacer des utilisateurs vers un autre abonnement.
-ms.openlocfilehash: b3b82dcf029395dbbe49d0e0ea87f87f4494b4f0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 158201eb4bcdf7e4b7451c1811dcc68692f341ff
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927417"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422962"
 ---
 # <a name="move-users-to-different-subscriptions"></a>Déplacer des utilisateurs vers différents abonnements
 
@@ -41,9 +39,9 @@ Lorsque vos utilisateurs changent de rôle, ils peuvent avoir besoin de fonction
 ### <a name="add-a-new-subscription"></a>Ajouter un nouvel abonnement
 
 1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation de gauche, sélectionnez **Facturation,** puis **Achetez des services.**
-1. Choisissez l’abonnement que vous souhaitez ajouter, puis sélectionnez **Acheter.**
-1. Choisissez la façon dont vous souhaitez payer et le nombre de licences dont vous avez besoin, puis sélectionnez **Cocher maintenant.**
-1. Examinez votre commande, puis choisissez **Suivant.**
+1. Choisissez l’abonnement que vous souhaitez ajouter, puis sélectionnez **Acheter**.
+1. Choisissez la façon dont vous souhaitez payer et le nombre de licences dont vous avez besoin, puis sélectionnez **Partir maintenant.**
+1. Passer en revue votre commande, puis choisir **Suivant**.
 1. Confirmez votre total, puis sélectionnez **Ordre des commandes.**
 
 ### <a name="change-the-license-assigned-to-a-user"></a>Modifier la licence attribuée à un utilisateur

@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment créer un site web GoDaddy pour votre entreprise.
-ms.openlocfilehash: 44f1a82706ff2dc025fc9dcc6f74a71dc0a987e5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 64b8b7bacaf218f95a0fb89d03eb280f755f1f2f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927333"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422734"
 ---
 # <a name="create-a-website"></a>Créer un site web
 
@@ -35,7 +33,7 @@ ms.locfileid: "49927333"
 
 ## <a name="try-it"></a>Essayez !
 
-Microsoft 365 n’inclut pas de site web public pour votre entreprise. Pour en configurer un, envisagez d’utiliser une société d’hébergement web telle que GoDaddy, Wix ou WordPress.
+Microsoft 365 n’inclut pas de site web public pour votre entreprise. Pour en configurer une, envisagez d’utiliser une société d’hébergement web telle que GoDaddy, Wix ou WordPress.
 
 1. Recherchez un fournisseur d’hébergement web dans lequel vous pouvez créer votre site web.
 

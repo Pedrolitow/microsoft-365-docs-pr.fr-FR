@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Découvrez comment configurer la collaboration de contenu sécurisée dans Teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: c92dc6dbf62d3fa0cb00307447b3d5a793830394
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: c7881328da2ef78d043b12db29f50b961d79b2cb
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233855"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423992"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
 
@@ -68,21 +68,25 @@ Pour configurer la collaboration sécurisée, vous utilisez ces fonctionnalités
 |:-------|:-----|:-------|
 | Microsoft Defender pour Office 365 | Pièces jointes sécurisées pour SPO, OneDrive et Teams ; Documents sécurisés ; Liens sécurisés pour Teams    | Microsoft 365 E1, E3 et E5 |
 | SharePoint    | Stratégies de partage de sites et de fichiers, autorisations de partage de site, liens de partage, demandes d’accès, paramètres de partage d’invités de site | Microsoft 365 E1, E3 et E5 |
-| Microsoft Teams   | Accès invité, équipes privées, canaux privés | Microsoft 365 E1, E3 et E5 |
+| Microsoft Teams   | Accès invité, équipes privées, canaux privés | Microsoft 365 E1, E3 et E5 |
 | Conformité Microsoft 365  | Étiquettes de confidentialité    | Microsoft 365 E3 et E5 |
+
+### <a name="collaboration-governance"></a>Gouvernance de la collaboration
+
+Microsoft 365 offre de nombreuses options pour la gouvernance de votre solution de collaboration. Nous vous recommandons d’utiliser ce contenu de déploiement en plus du contenu de gouvernance de [collaboration](collaboration-governance-overview.md) pour créer la meilleure solution de collaboration pour votre organisation.
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>Utilisation de Teams pour tous les types de données
 
 Pour gérer l’accès aux informations avec des sensibilités différentes, nous avons développé trois [niveaux différents de protection pour Teams.](configure-teams-three-tiers-protection.md) Vous pouvez personnaliser l’un de ces niveaux pour mieux répondre aux besoins ou à votre entreprise. 
 
-![Image miniature représentant le poster architecture logique Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
+![Graphique de trois niveaux de protection pour Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
 Ces *niveaux*( base *de* référence, sensible et hautement *sensible)* augmentent progressivement les protections qui permettent d’éviter le partage et la fuite potentielle d’informations, comme indiqué dans le tableau suivant.
 
 |-|**Niveau de référence**|**Niveau sensible**|**Niveau hautement sensible**|
 |:--|:-----------|:------------|:-------------------|
-|Équipe publique ou privée|Les deux|Private|Private|
+|Équipe publique ou privée|Les deux|Privé|Privé|
 |Partage non authentifié|Blocked|Blocked|Blocked|
 |Partage de fichiers|Autorisé|Autorisé|Seuls les propriétaires d’équipe peuvent partager.|
 |Appartenance à une équipe|Tout le monde peut rejoindre des équipes publiques.<br>Approbation du propriétaire de l’équipe requise pour rejoindre des équipes privées.|Approbation du propriétaire de l’équipe requise pour rejoindre l’équipe.|Approbation du propriétaire de l’équipe requise pour rejoindre l’équipe.|
@@ -122,6 +126,76 @@ En fonction du niveau de sensibilité des informations partagées, vous pouvez a
 - [Créer un environnement de partage sécurisé avec des invités](create-secure-guest-sharing-environment.md)
 
 Si vous avez un projet majeur avec une organisation partenaire, vous pouvez utiliser Azure Entitlement Management pour gérer les invités de cette organisation dans une équipe que vous avez définie pour le projet. Pour plus d’informations, voir Créer un [extranet B2B](b2b-extranet.md) avec des invités gérés.
+
+
+
+## <a name="training-for-administrators"></a>Formation pour les administrateurs
+
+Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les fonctionnalités de collaboration, de gouvernance et d’identité dans Teams et SharePoint.
+
+#### <a name="teams"></a>Équipes
+
+|Formation :|Gérer la collaboration en équipe avec Microsoft Teams|
+|:---|:---|
+|![Icône de formation sur la collaboration Teams](../media/manage-team-collaboration-with-microsoft-teams.svg)|Gérer la collaboration en équipe avec Microsoft Teams vous présente les fonctionnalités et possibilités de Microsoft Teams, le Hub central pour la collaboration en équipe dans Microsoft 365. Vous découvrirez comment utiliser Teams pour simplifier le travail en équipe et la communication au sein de votre organisation, à la fois en local et hors site, sur un large éventail d’appareils (des bureaux aux tablettes et téléphones), tout en tirant parti des fonctionnalités enrichies des applications Office 365. Vous pourrez ainsi comprendre comment Teams fournit un environnement complet et flexible pour la collaboration entre les applications et les appareils. Cette rubrique d’apprentissage peut vous aider à vous préparer à la certification Certification Microsoft 365 : Administrateur Teams associé.<br><br>2 h 17 min - Parcours d’apprentissage - 5 modules|
+
+> [!div class="nextstepaction"]
+> [Démarrer >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+
+#### <a name="sharepoint"></a>SharePoint
+
+|Formation :|Collaborer avec SharePoint dans Microsoft 365|
+|:---|:---|
+|![Icône de formation SharePoint](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Gérer le contenu partagé avec Microsoft SharePoint vous présente les fonctionnalités de SharePoint, ainsi que son fonctionnement avec Microsoft 365. Vous découvrirez les différents types de sites SharePoint, notamment les sites hub, ainsi que la protection des informations, la création de rapports et la surveillance. En outre, vous apprendrez à utiliser le partage de fichiers et de dossiers SharePoint pour optimiser la collaboration, à partager des fichiers en externe et à gérer des sites SharePoint dans le Centre d’administration SharePoint. Cette rubrique d’apprentissage peut vous aider à vous préparer à la certification Certification Microsoft 365 : Administrateur de travail d’équipe associé.<br><br>1 h 14 min - Parcours d’apprentissage - 4 modules|
+
+> [!div class="nextstepaction"]
+> [Démarrer >](https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+
+#### <a name="information-protection"></a>Protection des informations
+
+|Formation :|Protéger les informations d’entreprise avec Microsoft 365|
+|:---|:---|
+|![Icône de formation sur la protection des informations Teams](../media/protect-enterprise-information-microsoft-365.svg)|Plus que jamais, la protection et la sécurisation des informations de votre organisation constituent un défi. Le chemin d’apprentissage pour protéger les informations d’entreprise avec Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité et comment surveiller et analyser vos informations sensibles pour les protéger contre la perte. Ce parcours d’apprentissage peut vous aider à préparer les certifications Microsoft 365 Certified: Security Administrator Associate et Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 h - Parcours d’apprentissage - 5 modules|
+
+> [!div class="nextstepaction"]
+> [Démarrer >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+
+#### <a name="identity-and-access"></a>Identité et accès
+
+|Formation :|Protégez les identités et l’accès avec Azure Active Directory|
+|:---|:---|
+|![Icône de formation sur les identités et l’accès](../media/protect-identity-and-access-with-microsoft-365.svg)|Le parcours d’apprentissage Identité et accès aborde les dernières technologies de gestion des identités et accès, ainsi que les outils de renforcement de l’authentification, et donne des conseils sur la protection des identités au sein de votre organisation. Les technologies de gestion des identités et accès de Microsoft vous permettent de sécuriser l’identité de votre organisation (locale ou dans le cloud) et permettent à vos utilisateurs de travailler en toute sécurité où qu’ils se trouvent. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>2 h 52 min - Parcours d’apprentissage - 6 modules|
+
+> [!div class="nextstepaction"]
+> [Démarrer >](https://docs.microsoft.com/learn/modules/m365-identity-overview/introduction/)
+
+## <a name="training-for-end-users"></a>Formation pour les utilisateurs finaux
+
+Ces modules de formation peuvent aider vos utilisateurs à utiliser Teams, les groupes et SharePoint pour la collaboration dans Microsoft 365.
+
+|Équipes|SharePoint|
+|:---|:---|
+|![Configurer et personnaliser l’icône de formation de votre équipe](../media/set-up-customize-team-training.png)<br>**[Configurer et personnaliser votre équipe](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![Icône De formation de partage et de synchronisation SharePoint](../media/sharepoint-share-sync-training.png)<br>**[Partager et synchroniser](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
+|![Icône de formation sur le chargement et la recherche de fichiers teams](../media/smc-teams-upload-find-files-training.png)<br>**[Télécharger et rechercher des fichiers](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
+|![Icône Collaborer dans les équipes et les canaux](../media/teams-collaborate-channels-training.png)<br>**[Collaborer dans des équipes et des canaux](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+
+## <a name="illustrations"></a>Illustrations
+
+Ces illustrations vous aideront à comprendre comment les groupes et les équipes interagissent avec d’autres services dans Microsoft 365 et les fonctionnalités de gouvernance et de conformité disponibles pour vous aider à gérer ces services dans votre organisation.
+
+### <a name="groups-in-microsoft-365-for-it-architects"></a>Groupes dans Microsoft 365 pour les architectes informatique
+Quels sont les besoins des architectes informatique concernant les groupes dans Microsoft 365
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Image miniature pour les groupes infographie](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Mise à jour de juin 2019|Ces illustrations décrivent les différents types de groupes, la manière dont ceux-ci sont créés et gérés et quelques recommandations en matière de gouvernance.|
+
+### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams et services de productivité connexes dans Microsoft 365 pour les architectes informatique
+L’architecture logique de services de productivité dans Microsoft 365, fonctionnant avec Microsoft Teams.
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Image miniature représentant le poster architecture logique Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Mise à jour d’avril 2019   |Microsoft fournit une suite de services de productivité qui fonctionnent ensemble pour fournir une expérience de collaboration avec la gouvernance des données, la sécurité et la conformité. <br/> <br/>Cette série d’illustrations fournit une visibilité de l’architecture logique de services de productivité pour les architectes d’entreprise, fonctionnant avec Microsoft Teams.|
 
 ## <a name="deploy-the-secure-collaboration-solution"></a>Déployer la solution de collaboration sécurisée
 

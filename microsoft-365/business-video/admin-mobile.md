@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment installer l’application mobile Microsoft 365 Admin sur votre téléphone.
-ms.openlocfilehash: 110e691858537a90a7bee03b4318a5f415b3e83f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 43c2c2905dec978a520e2bf2d4b9b2aa7318b7a7
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927537"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423010"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installer l’application mobile Microsoft 365 Admin sur votre téléphone
 
@@ -45,8 +43,8 @@ Vous pouvez utiliser l’application mobile Microsoft 365 Admin pour gérer les 
 
 1. Sous **Liens rapides,** sélectionnez **Utilisateurs.**
 2. Dans la page **Utilisateurs,** choisissez le nom de l’utilisateur, puis réinitialisez **le mot de passe.**
-3. Si vous souhaitez obliger l’utilisateur à modifier son nouveau  mot de passe lors de sa première signature, cochez la case Modifier lors de la première inscription, puis sélectionnez Réinitialiser. 
-4. Lorsque vous avez été invité à confirmer, choisissez  **Oui,** puis  **OK**.
+3. Si vous souhaitez que l’utilisateur modifie son nouveau mot  de passe lors de sa première signature, cochez la case Modifier lors de la première inscription, puis sélectionnez **Réinitialiser.**
+4. Lorsque vous avez été invité à confirmer,  **sélectionnez Oui,** puis  **OK**.
 5. Dans la  **fenêtre Partager le mot**  de passe, vous pouvez éventuellement envoyer le nouveau mot de passe à l’utilisateur dans un message électronique ou un SMS.
 
 ### <a name="add-a-user-to-a-group"></a>Ajouter un utilisateur à un groupe
@@ -54,7 +52,7 @@ Vous pouvez utiliser l’application mobile Microsoft 365 Admin pour gérer les 
 1. Sous **Liens rapides,** choisissez **Groupes.**
 2. Dans la page **Groupes,** choisissez le groupe à ajouter à un utilisateur, puis sélectionnez Modifier les **membres,** puis **Ajoutez un membre.**
 3. Choisissez l’utilisateur que vous souhaitez ajouter.
-4. Lorsque vous avez été invité à confirmer, choisissez  **Oui,** puis  **OK**.
+4. Lorsque vous avez été invité à confirmer,  **sélectionnez Oui,** puis  **OK**.
 
 ### <a name="turn-on-notifications"></a>Activer les notifications
 

@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment créer une signature électronique à l’échelle de l’entreprise.
-ms.openlocfilehash: 3a9623837b3a68fa8cc0fb378293ec463d9bb789
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 22676ef6464e15e63efbe77d6dd6e88b4e494896
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928301"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422806"
 ---
 # <a name="create-a-company-wide-email-signature"></a>Créer une signature électronique à l’échelle de l’entreprise
 
@@ -43,8 +41,8 @@ Une signature électronique à l’échelle de l’entreprise apparaît sur chaq
 1. Sélectionnez **Ajouter +**, puis appliquer **les clauses d’exclusion de responsabilité.**
 1. Dans la page **Nouvelle règle** :
     1. Entrez un nom pour la règle.
-    1. Dans la **liste de listes** de listes générales Appliquer à cette règle, **sélectionnez Appliquer à tous les messages.**
-    1. Dans la **liste de** listes suivantes, vérifiez que la clause d’exclusion de responsabilité s’affiche. 
+    1. Dans la **liste de listes** de listes listes , sélectionnez **Appliquer à tous les messages.**
+    1. Dans la **liste de** listes listes suivantes, vérifiez que la clause d’exclusion de responsabilité s’affiche. 
     1. Sur le côté droit de la page, sélectionnez Entrer du **texte,** puis entrez le texte de votre signature électronique dans la zone de texte Spécifier la clause **d’exclusion** de responsabilité. Vous pouvez améliorer l’apparence de votre signature en formatant le texte au format HTML.
     1. Si vous souhaitez qu’une image apparaisse dans votre signature, vous devez utiliser une URL disponible publiquement pour cette image. Accédez à l’image sur le web, cliquez dessus avec le bouton droit, puis sélectionnez **Copier l’adresse de l’image.** Collez l’adresse dans la **zone de texte Spécifier** la clause d’exclusion de responsabilité. Sélectionnez **OK,** puis faites défiler vers le bas.
     1. Pour vous assurer que la signature fonctionne avec les e-mails chiffrés, ajoutez une option de retour. On the right of the page, choose **Select one**, choose **Wrap,** and then select **OK**.

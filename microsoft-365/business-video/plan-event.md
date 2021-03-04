@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment planifier un événement avec le planificateur Microsoft.
-ms.openlocfilehash: d978232dffaede882e81a491b4d927183781aa0f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 11453ae83f636e20cd67cc7a4202e8d6995e09a1
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928093"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422302"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Utiliser le Planificateur Microsoft pour planifier un événement
 
@@ -35,7 +33,7 @@ ms.locfileid: "49928093"
 
 ## <a name="try-it"></a>Essayez !
 
-Utilisez le Planificateur Microsoft pour planifier un événement, comme le suivi d’un lancement de produit.
+Utilisez le Planificateur Microsoft pour planifier un événement, tel que le suivi d’un lancement de produit.
 
 ### <a name="work-with-buckets"></a>Travailler avec des compartiments
 
@@ -64,6 +62,6 @@ Publiez un commentaire pour discuter d’une tâche avec les personnes à qui el
 Utilisez  **l’affichage**  **Graphiques**  et Tableau pour surveiller l’avancement de chaque membre de l’équipe et du projet global, ou pour trier et organiser les tâches.
 
 - Sélectionnez  **Graphiques,** **puis Regroupement par** et enfin Date **d’échéance**  pour voir quelle tâche est due à la suite.
-- Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression**  pour trier les tâches par progression.
+- Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression pour**  trier les tâches par progression.
 
-**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  afin de savoir quand vous êtes prêt à lancer votre produit.
+**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  pour vous faire savoir quand vous êtes prêt à lancer votre produit.

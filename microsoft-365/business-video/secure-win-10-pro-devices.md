@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment gérer les stratégies d’appareil Windows 10 Professionnel avec Microsoft 365 Business Premium.
-ms.openlocfilehash: f42c175543ae16ae645c17997b20ed67aa5d705c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8d3e5107c0b2dfe3a84f31b98d9bd3ff8f7c5e4f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926005"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422122"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>Gérer les stratégies d’appareil Windows 10 Professionnel
 
@@ -44,7 +42,7 @@ Vous pouvez utiliser Microsoft 365 Business pour vous assurer que l’antivirus 
 1. Sélectionnez **Sécuriser les appareils Windows 10** pour voir les sous-paramètres.
 1. Veillez à protéger les PC contre les virus et autres menaces à l’aide de **l’antivirus Windows Defender** et que les appareils **Windows 10** sont automatiquement mis à jour.
 1. Sous **Qui obtenira ces paramètres ?**, tous les utilisateurs sont sélectionnés par défaut, mais vous pouvez choisir Modifier pour sélectionner les groupes de sécurité que vous avez créés. 
-1. Pour terminer la création de la stratégie, choisissez **Ajouter.**
+1. Pour terminer la création de la stratégie, choisissez **Ajouter**.
 1. Dans la page **Ajouter une stratégie,** choisissez **Fermer.**
 1. Dans la page d’accueil du Centre d’administration,  confirmez que votre nouvelle stratégie a été ajoutée en choisissant Stratégies et en l’avisant sur la page **Stratégies.**
 1. Pour vérifier que la stratégie a pris effet, sur l’appareil Windows 10 d’un utilisateur, sélectionnez Windows Update, choisissez **Options** avancées et vérifiez que les paramètres sont grisés.

@@ -15,16 +15,17 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 7fecfd7088f65effd6addddc51c1236c7b2af191
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+- m365solution-scenario
+ms.openlocfilehash: a5cd9d62670b35f7093a3d38cf9e499df407de97
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613792"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423807"
 ---
 # <a name="privileged-access-management-in-microsoft-365"></a>Gestion des accès privilégiés dans Microsoft 365
 
-L’accès permanent par certains utilisateurs aux informations sensibles ou aux paramètres de configuration réseau critiques dans Microsoft Exchange Online est un parcours potentiel pour les comptes compromis ou les activités de menace internes. La gestion des accès privilégiés permet de protéger votre organisation contre les violations et de respecter les meilleures pratiques de conformité en limitant l’accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. Au lieu d’avoir un accès constant aux administrateurs, des règles d’accès juste-à-temps sont implémentées pour les tâches qui ont besoin d’autorisations élevées. L’activation de la gestion des accès privilégiés pour Exchange Online dans Microsoft 365 permet à votre organisation de fonctionner avec zéro privilège permanent et de fournir une couche de défense contre les vulnérabilités d’accès administratif permanent.
+L’accès permanent par certains utilisateurs aux informations sensibles ou aux paramètres de configuration réseau critiques dans Microsoft Exchange Online est un parcours potentiel pour les comptes compromis ou les activités de menace internes. La gestion des accès privilégiés permet de protéger votre organisation contre les violations et de respecter les meilleures pratiques de conformité en limitant l’accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. Au lieu d’avoir un accès constant aux administrateurs, des règles d’accès juste-à-temps sont implémentées pour les tâches qui ont besoin d’autorisations élevées. L’activation de la gestion des accès privilégiés pour Exchange Online dans Microsoft 365 permet à votre organisation de fonctionner avec zéro privilège permanent et de fournir une couche de défense contre les vulnérabilités d’accès administratifs.
 
 ## <a name="configure-privileged-access-management-for-microsoft-365"></a>Configurer la gestion des accès privilégiés pour Microsoft 365
 

@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment gérer les pièces jointes sécurisées.
-ms.openlocfilehash: 75146a05a091cf91a77ee3bc9bb63c813d84dce3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 89297ec7daeca4b20c01baa9f9554d4574d9df6a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926101"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422278"
 ---
 # <a name="manage-safe-attachments"></a>Gérer les pièces jointes fiables
 
@@ -43,8 +41,8 @@ Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 - Protect
 1. Sélectionnez votre règle de pièces jointes sécurisées, puis sélectionnez **l’icône** Modifier.
 1. Sélectionnez **les paramètres,** puis vérifiez que Bloquer est sélectionné.
 1. Faites défiler vers le bas. Sélectionnez **Activer la redirection,** puis entrez votre adresse e-mail ou l’adresse de la personne que vous souhaitez consulter les pièces jointes bloquées.
-1. Sélectionnez **Appliqué** à, puis sélectionnez votre nom de domaine.
-1. Choisissez les domaines supplémentaires que vous possédez (tels que votre domaine onmicrosoft.com) que vous souhaitez que la règle s’applique. Sélectionnez **Ajouter,** puis **OK**.
+1. Sélectionnez **Appliqué à,** puis sélectionnez votre nom de domaine.
+1. Choisissez les domaines supplémentaires que vous possédez (tels que onmicrosoft.com domaine) que vous souhaitez que la règle s’applique. Sélectionnez **Ajouter,** puis **OK**.
 1. Sélectionnez **Enregistrer**.
 
 Votre règle de pièces jointes sécurisées ATP a été mise à jour.

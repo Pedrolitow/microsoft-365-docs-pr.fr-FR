@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment installer des applications Office sur des appareils iOS.
-ms.openlocfilehash: e3b703f3bc0bfe6972ac73e9ad7de955d773a812
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 2a7e69767eee6506a0c1685c2d679fc5ce743c3d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927107"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422518"
 ---
 # <a name="install-outlook-and-office-apps-on-ios-devices"></a>Installer des applications Outlook et Office sur des appareils iOS
 
@@ -50,6 +48,6 @@ Une fois&#39;avez installé Microsoft 365 Business Premium, vous pouvez installe
 11. Sélectionnez  **Activer pour**  activer les notifications par courrier électronique.
 12. Sélectionnez  **Autoriser** pour activer les notifications Push.
 
-Vous pouvez désormais utiliser Outlook sur votre iPhone pour vérifier vos e-mails, votre calendrier et vos contacts.
+Vous pouvez désormais utiliser Outlook sur votre iPhone pour vérifier votre courrier électronique, votre calendrier et vos contacts.
 
 Vous pouvez installer le reste des applications Office de la même manière et les données de ces applications seront protégées par Microsoft 365 Business Premium.

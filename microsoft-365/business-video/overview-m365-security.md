@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez les fonctionnalités de sécurité incluses dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 72ed57d0f6392d7475f11aebb9da700e6aef78ae
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: e21dc1a9f27f9b5896ace2f09ebb936b8189fdd3
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928137"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422326"
 ---
 # <a name="overview-of-security"></a>Vue d’ensemble de la sécurité
 
@@ -36,7 +34,7 @@ ms.locfileid: "49928137"
 
 Microsoft 365 Business Premium offre des fonctionnalités de protection contre les menaces, de protection des données et de gestion des appareils pour vous aider à protéger votre entreprise contre les menaces en ligne et les accès non autorisés, ainsi que protéger et gérer les données d’entreprise sur vos téléphones, tablettes et ordinateurs.
 
-|![Protection contre les menaces](../media/m365-business-security-threat-protection.png)<br/>[Protection contre les menaces](#threat-protection)|![Collaborer avec un client](../media/m365-business-security-data-protection.png) <br/>[Protection des données](#data-protection) | ![Gestion des périphériques](../media/m365-business-security-device-management.png) <br/>[Gestion des périphériques](#device-management) |
+|![Protection contre les menaces](../media/m365-business-security-threat-protection.png)<br/>[Protection contre les menaces](#threat-protection)|![Collaborer avec un client](../media/m365-business-security-data-protection.png) <br/>[Protection des données](#data-protection) | ![Gestion des appareils](../media/m365-business-security-device-management.png) <br/>[Gestion des périphériques](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>Protection contre les menaces

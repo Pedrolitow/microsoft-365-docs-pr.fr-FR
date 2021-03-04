@@ -9,36 +9,34 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: En savoir plus sur Microsoft Bookings.
-ms.openlocfilehash: 67ed948793b4d43f92b376d7e299564f5d734550
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 681667d8f399c0bf5ba1b84ee67352a30d10d78d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928125"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422338"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Vue d’ensemble de Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
-Microsoft Bookings est une application mobile et en ligne pour les petites entreprises qui fournissent des services aux clients sur la base d’un rendez-vous. Exemples d’entreprises : les salons de course, les bureaux de soins, les spas, les cabinets d’avocats, les fournisseurs de services financiers, les consultants et les auto-boutiques.
+Microsoft Bookings est une application mobile et en ligne pour les petites entreprises qui fournissent des services aux clients sur la base d’un rendez-vous. Exemples d’entreprises : les salons de santé, les bureaux de soins, les spas, les cabinets d’avocats, les fournisseurs de services financiers, les consultants et les auto-boutiques.
 
 ## <a name="get-started-with-bookings"></a>Mise en place de Bookings
 
 1. Pour commencer, connectez-vous à Microsoft 365 et sélectionnez **Bookings** dans le lanceur d’applications.
-1. Sélectionnez **Obtenir maintenant sur** la page **Réservations.**
+1. Sélectionnez **Obtenir maintenant** sur la page **Réservations.**
 1. Ajoutez vos informations professionnelles et vous êtes prêt à commencer à utiliser Bookings.
 
     Pour gérer vos réservations sur votre appareil mobile, téléchargez Bookings à partir de votre app store.

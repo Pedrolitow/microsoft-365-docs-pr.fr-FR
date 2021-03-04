@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment déplacer des fichiers d’entreprise vers SharePoint.
-ms.openlocfilehash: 7e95e09dda5d2cd7131093e98d2965a55b42cd0a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ab19fed6f0ebe473cbe8493ceebc5f4ca7dc9a8f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927153"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422710"
 ---
 # <a name="move-files-to-sharepoint"></a>Déplacer des fichiers vers SharePoint
 
@@ -39,7 +37,7 @@ Une fois que vous vous êtes abonné à Microsoft 365 Business Premium, vous&#39
 
 1. Ouvrez Microsoft Teams, puis ouvrez une équipe à qui tous les membres de votre entreprise ont accès.
 2. Sélectionnez **Fichiers,** puis **Ouvrez dans SharePoint.**
-3. Sélectionnez  **Documents** pour aller à l’emplacement où tout est stocké sur le site.
+3. Sélectionnez  **Documents** pour aller à l’emplacement où tous les documents sont stockés sur le site.
 4. Sélectionnez Synchroniser, puis **Oui.**  Cela synchronise les fichiers du site SharePoint avec votre ordinateur.
 5. Dans l’Explorateur de fichiers, vous&#39;le dossier documents synchronisés à partir de votre&#39;site SharePoint. Si vous synchronisez des sites SharePoint supplémentaires, ils s’afficheront au-dessus ou en dessous de celui-ci. Cliquez avec le bouton droit sur le dossier des documents synchronisés et ouvrez-le dans une nouvelle fenêtre pour le voir côte à côte avec les fichiers d’entreprise que vous souhaitez déplacer.
 6. Sélectionnez tous les fichiers à déplacer, puis faites-les glisser vers votre dossier SharePoint synchronisé. Les flèches circulaires bleues en dehors de vos fichiers signifient qu&#39;se synchronisent à nouveau avec le site SharePoint. Lorsqu'&#39;ont terminé la synchronisation, des coches vertes s’affichent.

@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment partager facilement vos fichiers métiers en externe.
-ms.openlocfilehash: 4f5870859b06aa4229a37576bcc724ddb078d833
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cde983fee8b4dbf2d03ff8b2fac77bdf20ee2eda
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925909"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421858"
 ---
 # <a name="easily-share-files-externally"></a>Partager aisément des fichiers en externe
 
@@ -39,7 +37,7 @@ Pour partager des fichiers avec vos clients et travailler sur des documents ense
 
 1. À partir de votre site SharePoint, sélectionnez le dossier que vous souhaitez partager, choisissez **Partager,** puis cliquez sur le bouton paramètres du lien.
 1. Dans la **fenêtre Paramètres du lien,** assurez-vous **que Tout le** monde est sélectionné. Si cette option est grisée, elle doit être désactivée dans le Centre d’administration SharePoint.
-1. Vous pouvez éventuellement cocher la case Autoriser **la modification** et entrer une date d’expiration pour le lien.
+1. Vous pouvez éventuellement cocher la case **Autoriser la modification** et entrer une date d’expiration pour le lien.
 1. Choose **Apply**.
 1. Dans la **fenêtre Lien d’envoi,** entrez l’adresse e-mail de votre client, tapez un message, puis choisissez **Envoyer.**
 1. Votre client reçoit un courrier électronique avec votre message et un lien vers vos fichiers.
