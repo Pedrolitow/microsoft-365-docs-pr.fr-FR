@@ -17,16 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: b3b0451f2f1b0950f2b2ee723025a796f1814038
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 5c992a988dbffc12824b2b64c1ea9a8fb6d22d67
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261501"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406524"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Si vous êtes un utilisateur qui voit dans Teams un message concernant la suppression de vos conversations et messages par une stratégie de rétention, consultez [Messages Teams à propos des stratégies de rétention](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> 
+> Les informations figurant sur cette page sont destinées aux administrateurs informatiques qui gèrent ces stratégies de rétention.
 
 Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md) car elles contiennent des informations spécifiques aux messages Microsoft Teams.
 
@@ -43,7 +48,7 @@ Les éléments suivants de Teams peuvent être conservés et supprimés en utili
 > [!NOTE]
 > L'inclusion du contenu de la carte est un ajout récent et est actuellement proposée aux locataires. Pour plus d'informations, voir [les capacités de conformité de Microsoft 365 pour le contenu des cartes adaptatives par le biais d'applications dans Teams maintenant disponibles](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Actuellement, nous ne prenons pas en charge les messages Teams dans les canaux privés pour les stratégies de rétention. L’utilisation de stratégies de rétention pour Teams n’inclut pas les extraits de code, les mémos vocaux enregistrés depuis le client mobile Teams et les réactions des autres utilisateurs sous la forme d’émoticônes.
+Actuellement, nous ne prenons pas en charge les messages Teams dans les canaux privés pour les stratégies de rétention. L’utilisation de stratégies de rétention pour Teams n’inclut pas les extraits de code, les mémos vocaux enregistrés depuis le client mobile Teams, les miniatures, les images d’annonce et les réactions des autres utilisateurs sous la forme d’émoticônes.
 
 Les messages électroniques et les fichiers que vous utilisez avec Teams ne sont pas inclus dans les stratégies de rétention Teams. Ces éléments ont leurs propres stratégies de rétention.
 
