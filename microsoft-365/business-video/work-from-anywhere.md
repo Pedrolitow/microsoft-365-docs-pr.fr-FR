@@ -9,29 +9,27 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Vue d’ensemble de la façon dont Microsoft 365 vous aide à travailler n’importe où.
-ms.openlocfilehash: 55327fff51b67107aab7069c0036e8ded9b73cbb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7c3a0ee4b69f7fa4e07064f0adc108afe70bd54d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927777"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421680"
 ---
 # <a name="work-from-anywhere---overview"></a>Travailler n’importe où : vue d’ensemble
 
-Vous n’avez pas de bureau ? Plus de batterie d’ordinateur portable ? Pas de problème! Gérer votre travail n’importe où avec Office sur votre téléphone ou tablette.
+Absent(s) de votre bureau ? Plus de batterie d’ordinateur portable ? Pas de problème! Gérer votre travail n’importe où avec Office sur votre téléphone ou tablette.
 
 **Conseil professionnel :** Maintenez votre équilibre entre vie professionnelle et vie privée en tenez compte des notifications pour vos applications de travail sur vos appareils personnels.
 
@@ -39,7 +37,7 @@ Utilisez les quatre conseils ci-dessous pour travailler où que vous soyez : Té
 
 **Vous envisagez de travailler régulièrement à domicile ?**
 
-Utilisez ce modèle pour analyser vos habitudes et la façon dont vous souhaitez travailler pour créer un plan qui fonctionne lorsque vous faites la transition vers un bureau à domicile. Collectez le matériel et les fournitures pour optimiser votre espace et vous maintenir efficace et en déplacement. [Télécharger le modèle](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
+Utilisez ce modèle pour analyser vos habitudes et la façon dont vous souhaitez travailler pour créer un plan qui fonctionne lorsque vous faites la transition vers un bureau à domicile. Collectez le matériel et les fournitures pour optimiser votre espace et vous assurer une efficacité et une utilisation efficace. [Télécharger le modèle](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
 
 ## <a name="install-outlook-and-keep-in-touch"></a>Installer Outlook et rester en contact
 
