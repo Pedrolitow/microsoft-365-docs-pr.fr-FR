@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: f4bcd012708c0b7e9fa37b06288cda18ad4766cf
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 52871fc85a4d5aec1754c1957f2087552b442daf
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546532"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423695"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 
@@ -47,7 +47,7 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher 
 
 - Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Sachant que la fonction de recherche et de suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas destinée à nettoyer les boîtes aux lettres des utilisateurs.
 
-- Le nombre maximal de boîtes aux lettres dans lesquelles vous pourrez supprimer des éléments à l’aide d’une action de recherche et de purge est de 50 000, dans le cadre d’une Recherche de contenu. Si la Recherche de contenu (que vous créez à l'[étape 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) contient plus de 50 000 boîtes aux lettres sources, l’action de purge (que vous créez à l’étape 3) échouera. Voir la section [Plus d’informations](#more-information) pour en savoir plus sur l’exécution d’une opération de recherche et de purge sur plus de 50 000 boîtes aux lettres.
+- Le nombre maximal de boîtes aux lettres dans une recherche de contenus servant à supprimer des éléments à l’aide d’une action de recherche et de purge est de 50 000. Si la recherche de contenu (que vous créez à [l’étape 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) contient plus de 50 000 boîtes aux lettres, l’action de purge (que vous créez à l’étape 3) échoue. Une recherche de plus de 50 000 boîtes aux lettres au cours d’une même recherche est probable, généralement lorsque la configuration de la recherche prend en compte toutes les boîtes aux lettres de votre organisation. Cette restriction s’applique même si moins de 50 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche. Pour obtenir des instructions sur l’utilisation des filtres d’autorisation de recherche pour rechercher et vider des éléments de plus de 50 000 boîtes aux lettres, consultez la section [informations supplémentaires](#more-information).
 
 - La procédure décrite dans cet article ne peut être utilisée que pour supprimer des éléments dans les boîtes aux lettres et dossiers publics Exchange Online. Vous ne pouvez pas l’utiliser pour supprimer du contenu de SharePoint ou de sites OneDrive Entreprise.
 
@@ -143,7 +143,7 @@ Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.micro
 
 - **Comment faire pour supprimer un message de plus de 50 000 boîtes aux lettres ?**
 
-  Comme indiqué précédemment, vous pouvez effectuer une opération de recherche et de purge sur un maximum de 50 000 boîtes aux lettres. Si vous devez effectuer une opération de recherche et de purge sur plus de 50 000 boîtes aux lettres, envisagez de créer des filtres d’autorisations de recherche temporaires qui réduiraient le nombre de boîtes aux lettres recherchées à moins de 50 000 boîtes aux lettres. Par exemple, si votre organisation contient des boîtes aux lettres dans différents services ou localisations, vous pouvez créer un filtre d’autorisations de recherche de boîte aux lettres sur la base de l’une de ces propriétés de boîte aux lettres pour effectuer une recherche dans un sous-ensemble de boîtes aux lettres de votre organisation. Une fois que vous avez créé le filtre des autorisations de recherche, vous devez créer la recherche (décrite à l’étape 1), puis supprimer le message (décrit à l’étape 3). Vous pouvez ensuite modifier le filtre pour rechercher et vider les messages dans un autre groupe de boîtes aux lettres. Pour plus d’informations sur la création de filtres d'autorisation de recherche, voir [Configurer le filtrage des autorisations pour la Recherche de contenu](permissions-filtering-for-content-search.md).
+  Comme indiqué précédemment, vous pouvez effectuer une opération de recherche et de purge sur un maximum de 50 000 boîtes aux lettres (même si moins de 50 000 boîtes au lettres contiennent des éléments qui correspondent à la requête de recherche). Si vous devez effectuer une opération de recherche et de purge sur plus de 50 000 boîtes aux lettres, envisagez de créer des filtres d’autorisations de recherche temporaires pour réduire le nombre de boîtes aux lettres recherchées à moins de 50 000. Par exemple, si votre organisation contient des boîtes aux lettres dans différents services ou localisations, vous pouvez créer un filtre d’autorisations de recherche de boîte aux lettres sur la base de l’une de ces propriétés de boîte aux lettres pour effectuer une recherche dans un sous-ensemble de boîtes aux lettres de votre organisation. Une fois que vous avez créé le filtre des autorisations de recherche, vous devez créer la recherche (décrite à l’étape 1), puis supprimer le message (décrit à l’étape 3). Vous pouvez ensuite modifier le filtre pour rechercher et vider les messages dans un autre groupe de boîtes aux lettres. Pour plus d’informations sur la création de filtres d'autorisation de recherche, voir [Configurer le filtrage des autorisations pour la Recherche de contenu](permissions-filtering-for-content-search.md).
 
 - **Les éléments non indexés inclus dans les résultats de recherche seront-ils supprimés ?**
 

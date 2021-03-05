@@ -18,16 +18,16 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir comment exporter, configurer et afficher les enregistrements du journal d’audit Microsoft 365.
-ms.openlocfilehash: 688ba06fc9c5c2b26eef93fb1a68d311db9da5d8
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: a7f731bb30ffdddfe7898ee4051060b8e22c093e
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358492"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454665"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exporter, configurer et afficher des enregistrements du journal d’audit
 
-Une fois que vous avez recherché le journal d’audit et téléchargé les résultats de la recherche dans un fichier CSV, le fichier contient une colonne nommée **AuditData**, qui contient des informations supplémentaires sur chaque événement. Les données de cette colonne sont formatées en tant qu’objet JSON, qui contient plusieurs propriétés configurées en tant que paires *property:value* séparées par des virgules. Vous pouvez utiliser la fonctionnalité de transformation JSON dans l’Éditeur de requêtes Power dans Excel pour fractionner chaque propriété de l’objet JSON dans la colonne **AuditData** en plusieurs colonnes afin que chaque propriété ait sa propre colonne. Cela vous permet de trier et de filtrer une ou plusieurs de ces propriétés, ce qui peut vous aider à localiser rapidement les données d’audit spécifiques que vous recherchez.
+Une fois que vous avez recherché le journal d’audit et téléchargé les résultats de la recherche dans un fichier CSV, le fichier contient une colonne nommée **AuditData**, qui contient des informations supplémentaires sur chaque événement. Les données de cette colonne sont formatées en tant qu’objet JSON, qui contient plusieurs propriétés configurées en tant que paires *propriété:valeur* séparées par des virgules. Vous pouvez utiliser la fonctionnalité de transformation JSON dans l’Éditeur de requêtes Power dans Excel pour fractionner chaque propriété de l’objet JSON dans la colonne **AuditData** en plusieurs colonnes afin que chaque propriété ait sa propre colonne. Cela vous permet de trier et de filtrer une ou plusieurs de ces propriétés, ce qui peut vous aider à localiser rapidement les données d’audit spécifiques que vous recherchez.
 
 ## <a name="step-1-export-audit-log-search-results"></a>Étape 1 : Exporter les résultats de recherche du journal d’audit
 
@@ -68,7 +68,7 @@ L’étape suivante consiste à utiliser la fonctionnalité de transformation JS
 
    Le fichier CSV est ouvert dans **l’Éditeur de requêtes.** Il existe quatre colonnes **: CreationDate**, **UserIds**, **Operations** et **AuditData**. La **colonne AuditData** est un objet JSON qui contient plusieurs propriétés. L’étape suivante consiste à créer une colonne pour chaque propriété dans l’objet JSON.
 
-5. Cliquez avec le bouton droit sur le titre dans **la colonne AuditData,** cliquez sur **Transformer,** puis cliquez sur **JSON**. 
+5. Cliquez avec le bouton droit sur le titre dans **la colonne AuditData,** cliquez sur **Transformer,** puis sur **JSON**. 
 
    ![Cliquez avec le bouton droit sur la colonne AuditData, cliquez sur Transformer, puis sélectionnez JSON](../media/JSONTransform.png)
 
@@ -87,6 +87,9 @@ L’étape suivante consiste à utiliser la fonctionnalité de transformation JS
    > [!NOTE]
    > Les propriétés JSON affichées dans la capture d’écran précédente (après avoir cliqué sur Charger **plus)** sont basées sur les propriétés trouvées dans la colonne **AuditData** des 1 000 premières lignes du fichier CSV. S’il existe différentes propriétés JSON dans les enregistrements après les 1 000 premières lignes, ces propriétés (et une colonne correspondante) ne sont pas incluses lorsque la colonne **AuditData** est fractionnées en plusieurs colonnes. Pour éviter cela, envisagez de ré-exécutez la recherche dans le journal d’audit et limitez les critères de recherche afin que moins d’enregistrements soient renvoyés. Une autre solution consiste à filtrer les éléments de la colonne **Opérations** pour réduire le nombre de lignes (avant d’effectuer l’étape 5 ci-dessus) avant de transformer l’objet JSON dans la colonne **AuditData.**
 
+   > [!TIP]
+   > Pour afficher un attribut dans une liste telle qu’AuditData.AffectedItems, cliquez sur l’icône Développer dans le coin supérieur droit de la colonne à partir de la colonne à partir de qui vous souhaitez tirer un attribut, puis sélectionnez Développer vers la nouvelle **ligne.**   À partir de là, il s’agit d’un enregistrement et vous pouvez cliquer sur l’icône Développer dans le coin supérieur droit de la colonne, afficher les attributs et sélectionner celui que vous souhaitez afficher ou extraire. 
+
 8. Pour mettre en forme le titre des colonnes ajoutées pour chaque propriété JSON sélectionnée, faites l’une des choses suivantes.
 
     - Désélectionner la case à cocher Utiliser le nom de colonne d’origine comme **préfixe** pour utiliser le nom de la propriété JSON comme noms de colonne ; par exemple, **RecordType** ou **SourceFileName**.
@@ -101,7 +104,7 @@ L’étape suivante consiste à utiliser la fonctionnalité de transformation JS
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Utiliser PowerShell pour rechercher et exporter des enregistrements de journal d’audit
 
-Au lieu d’utiliser l’outil de recherche du journal d’audit dans le Centre de sécurité & conformité, vous pouvez utiliser la cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell pour exporter les résultats d’une recherche de journal d’audit dans un fichier CSV. Vous pouvez ensuite suivre la même procédure décrite à l’étape 2 pour mettre en forme le journal d’audit à l’aide de l’éditeur Power Query. L’un des avantages de l’utilisation de l’cmdlet PowerShell est que vous pouvez rechercher des événements à partir d’un service spécifique à l’aide du *paramètre RecordType.* Voici quelques exemples d’utilisation de PowerShell pour exporter des enregistrements d’audit vers un fichier CSV afin de pouvoir utiliser l’éditeur Power Query pour transformer l’objet JSON dans la colonne **AuditData,** comme décrit à l’étape 2.
+Au lieu d’utiliser l’outil de recherche du journal d’audit dans le Centre de sécurité & conformité, vous pouvez utiliser la cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell pour exporter les résultats d’une recherche de journal d’audit dans un fichier CSV. Vous pouvez ensuite suivre la même procédure décrite à l’étape 2 pour mettre en forme le journal d’audit à l’aide de l’éditeur Power Query. L’un des avantages de l’utilisation de l’cmdlet PowerShell est que vous pouvez rechercher des événements à partir d’un service spécifique à l’aide du *paramètre RecordType.* Voici quelques exemples d’utilisation de PowerShell pour exporter des enregistrements d’audit vers un fichier CSV afin que vous pouvez utiliser l’éditeur Power Query pour transformer l’objet JSON dans la colonne **AuditData,** comme décrit à l’étape 2.
 
 Dans cet exemple, exécutez les commandes suivantes pour renvoyer tous les enregistrements liés aux opérations de partage SharePoint.
 
@@ -117,7 +120,7 @@ Les résultats de la recherche sont exportés vers un fichier CSV nommé *PowerS
 
 Vous pouvez également utiliser le nom ou la valeur d’enum pour le type d’enregistrement comme valeur pour le *paramètre RecordType.* Pour obtenir la liste des noms de types d’enregistrement et leurs valeurs d’énumérer correspondantes, voir la table *AuditLogRecordType* dans le schéma de l’API Activité de gestion [Office 365.](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)
 
-Vous ne pouvez inclure qu’une seule valeur pour le *paramètre RecordType.* Pour rechercher des enregistrements d’audit pour d’autres types d’enregistrements, vous devez ré-exécuter les deux commandes précédentes pour spécifier un type d’enregistrement différent et les addender au fichier CSV d’origine. Par exemple, vous devez exécuter les deux commandes suivantes pour ajouter des activités de fichier SharePoint de la même plage de dates au PowerShellAuditlog.csv fichier.
+Vous ne pouvez inclure qu’une seule valeur pour le *paramètre RecordType.* Pour rechercher des enregistrements d’audit pour d’autres types d’enregistrements, vous devez ré-exécuter les deux commandes précédentes pour spécifier un type d’enregistrement différent et les appendre au fichier CSV d’origine. Par exemple, vous devez exécuter les deux commandes suivantes pour ajouter des activités de fichier SharePoint de la même plage de dates au PowerShellAuditlog.csv fichier.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
