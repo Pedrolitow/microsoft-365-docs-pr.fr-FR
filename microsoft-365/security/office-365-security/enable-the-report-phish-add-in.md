@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le module de signalement du hameçonnage pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
-ms.openlocfilehash: 8242f3fcac27f8c76f7bef5a84c70960a204e3bd
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 12543364943321689d0efa2c2942351b3d3ec6f9
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286656"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453764"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>Activez le complément Signaler un message de hameçonnage
 
@@ -35,13 +35,13 @@ Les add-ins Signaler le message et Signaler le hameçonnage pour Outlook et Outl
 
 Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection de la messagerie. Par exemple, supposons que des personnes signalent de nombreux messages à l’aide du module de signalement du hameçonnage. Ces informations sont disponibles dans le Tableau [de bord de](security-dashboard.md) sécurité et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies anti-hameçonnage peuvent avoir besoin d’être mises à jour.
 
-Vous pouvez installer le add-in Signaler le message ou Signaler le hameçonnage. Si vous souhaitez que vos utilisateurs signalent à la fois le courrier indésirable et les messages de hameçonnage, déployez le add-in Signaler un message dans votre organisation. Pour plus d’informations, [voir Activer le add-in Message de rapport.](enable-the-report-message-add-in.md)
+Vous pouvez installer le add-in Signaler le message ou Signaler le hameçonnage. Si vous souhaitez que vos utilisateurs signalent à la fois le courrier indésirable et le hameçonnage, déployez le add-in Signaler un message dans votre organisation. Pour plus d’informations, [voir Activer le add-in Message de rapport.](enable-the-report-message-add-in.md)
 
 Le module de signalement du hameçonnage offre la possibilité de signaler uniquement les messages de hameçonnage. Les administrateurs peuvent activer le module de signalement du hameçonnage pour l’organisation, et les utilisateurs individuels peuvent l’installer eux-mêmes.
 
 Si vous êtes un utilisateur individuel, vous pouvez activer le module de signalement du hameçonnage [pour vous-même.](#get-the-report-phishing-add-in-for-yourself)
 
-Si vous êtes un administrateur général ou un administrateur Exchange Online et qu’Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez activer le module de signalement du hameçonnage pour [votre organisation.](#get-and-enable-the-report-phishing-add-in-for-your-organization) Le rapport d’hameçonnage Add-In est désormais disponible via [le déploiement centralisé.](../../admin/manage/centralized-deployment-of-add-ins.md)
+Si vous êtes un administrateur général ou un administrateur Exchange Online, et qu’Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez activer le module de signalement du hameçonnage pour [votre organisation.](#get-and-enable-the-report-phishing-add-in-for-your-organization) Le rapport d’hameçonnage Add-In est désormais disponible via [le déploiement centralisé.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -49,17 +49,17 @@ Si vous êtes un administrateur général ou un administrateur Exchange Online e
 
   - Outlook sur le web
   - Outlook 2013 SP1 ou une édition ultérieure
-  - Outlook 2016 pour Mac
+  - Outlook 2016 pour Mac ou une édition ultérieure
   - Outlook inclus dans les applications Microsoft 365 pour Entreprise
   - Application Outlook pour iOS et Android
 
-- Le module de signalement du hameçonnage n’est pas disponible pour les boîtes aux lettres dans les organisations Exchange locales.
+- Le module de signalement du hameçonnage n’est pas disponible pour les boîtes aux lettres partagées ou les boîtes aux lettres dans les organisations Exchange locales.
 
 - Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)
 
 - Votre navigateur web existant doit fonctionner avec le module de signalement du hameçonnage. Toutefois, si vous remarquez que le module n’est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
 
-- Pour les installation organisationnelles, l’organisation doit être configurée pour utiliser l’authentification OAuth. Pour plus d’informations, [voir Determine if Centralized Deployment of add-ins works for your organization.](../../admin/manage/centralized-deployment-of-add-ins.md)
+- Pour les installation organisationnelles, l’organisation doit être configurée pour utiliser l’authentification OAuth. Pour plus d’informations, [voir Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
 - Les administrateurs doivent être membres du groupe de rôles Administrateurs globaux. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
@@ -100,11 +100,11 @@ Une fois que le module est installé et activé, les icônes suivantes s’offre
 
    ![Déployer une nouvelle page de modules](../../media/NewAddInScreen2.png)
 
-5. Dans la page Sélectionner un **add-in** qui s’affiche, cliquez dans  la zone De recherche, entrez  **Hameçonnage** de rapport, puis cliquez sur Icône ![ ](../../media/search-icon.png) Recherche. Dans la liste des résultats, recherchez **l’hameçonnage** de rapport, puis cliquez sur **Ajouter.**
+5. Dans la page Sélectionner **un add-in** qui s’affiche, cliquez dans  la zone De recherche, entrez **Hameçonnage** de rapport, puis cliquez sur Icône  ![ ](../../media/search-icon.png) Recherche. Dans la liste des résultats, recherchez **l’hameçonnage** de rapport, puis cliquez sur **Ajouter.**
 
 6. Dans la boîte de dialogue qui s’affiche, examinez les informations de licence et de confidentialité, puis cliquez sur **Continuer**.
 
-7. Dans la page **Configurer le add-in** qui s’affiche, configurez les paramètres suivants :
+7. Dans la page **Configurer le module de** configuration qui s’affiche, configurez les paramètres suivants :
 
    - **Utilisateurs affectés**: sélectionnez l’une des valeurs suivantes :
 
@@ -115,7 +115,7 @@ Une fois que le module est installé et activé, les icônes suivantes s’offre
    - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
 
      - **Fixe (par défaut)**: le add-in est automatiquement déployé pour les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
-     - **Disponible**: les utilisateurs peuvent installer le add-in sur **Home** \> **Get add-ins** \> **géré par l’administrateur.**
+     - **Disponible**: les utilisateurs peuvent installer le add-in sur **home** \> **get add-ins** \> **admin-managed**.
      - **Facultatif**: le add-in est automatiquement déployé pour les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
 
    Lorsque vous avez terminé, cliquez sur **Déployer.**
@@ -142,7 +142,7 @@ Les personnes à qui le add-in est affecté voient les icônes suivantes :
 
 2. Recherchez et sélectionnez **le** module de signalement du hameçonnage.
 
-3. Dans le flyout **Modifier le hameçonnage** du rapport qui s’affiche, examinez et modifiez les paramètres selon le cas pour votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+3. Dans le volant **Modifier le hameçonnage** du rapport qui s’affiche, examinez et modifiez les paramètres selon les cas de votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
 ## <a name="view-and-review-reported-messages"></a>Afficher et examiner les messages signalés
 

@@ -11,18 +11,17 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Découvrez comment ajouter une licence à des utilisateurs sans licence pour corriger l’erreur de boîte aux lettres in trouvée.
-ms.openlocfilehash: bf8ff57704b97c8ef278938675113f5de11849de
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: e5cdb7b48f3634d51dfe1862d07d58a23e125135
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804873"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454324"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>Erreur d’obtention d’une boîte aux lettres in trouvée dans Outlook sur le web ?
 

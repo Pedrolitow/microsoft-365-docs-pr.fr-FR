@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Comprendre les actions et les impacts des phases de migration du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: 9dc2f4c0923f52bfc83a9177b595a6955a3afa8f
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 1da3ff6b3347d0e996b017aa1f6243fd724ffccd
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242733"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454406"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Actions et impacts des phases de migration pour la migration à partir de Microsoft Cloud Deutschland (général)
 
@@ -48,7 +48,7 @@ Considérations supplémentaires :
 
 - Si votre organisation utilise toujours des flux de travail SharePoint 2010, ils ne fonctionneront plus après le 31 décembre 2021. Les flux de travail SharePoint 2013 restent pris en charge, bien qu’ils restent désactivés par défaut pour les nouveaux locataires à compter du 1er novembre 2020. Une fois la migration vers le service SharePoint Online terminée, nous vous recommandons de passer à Power Automate ou à d’autres solutions pris en charge.
 
-- À la fin de la migration de OneDrive vers la région allemande, les index de données sont reconstruits. Les fonctionnalités qui dépendent d’index de recherche peuvent être affectées pendant la réindexation.
+- À la fin de la migration de OneDrive vers la région allemande, les index de données sont reconstruits. Les fonctionnalités qui dépendent d’index de recherche peuvent être affectées lors de la réindexation en cours.
 
 - Les clients Microsoft Cloud Deutschland dont l’instance SharePoint Online n’est pas encore migre doivent rester sur le module SharePoint Online PowerShell/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 ou une version inférieure. Dans le cas contraire, les connexions à SharePoint Online via PowerShell ou le modèle objet côté client échoueront.
 
@@ -59,7 +59,8 @@ Considérations supplémentaires :
 
 | Étapes | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
-| Une nouvelle région d’Allemagne est ajoutée à la configuration de l’organisation existante et les boîtes aux lettres sont déplacées vers les services Office 365. | La configuration d’Exchange Online ajoute la nouvelle région allemande locale à l’organisation en transition. Cette région de services Office 365 est définie par défaut, ce qui permet au service d’équilibrage de charge interne de redistribuer les boîtes aux lettres vers la région par défaut appropriée dans les services Office 365. Dans cette transition, les utilisateurs des deux côtés (services d’Allemagne ou d’Office 365) sont dans la même organisation et peuvent utiliser l’un ou l’autre point de terminaison d’URL. | Exchange Online | - Transition des utilisateurs et des services depuis les URL d’Allemagne vers les URL de services Office 365 ( `https://outlook.office365.com` ). <br><br> - Les utilisateurs continueront d’accéder au service via les URL héritées d’Allemagne pendant la migration. Aucune action immédiate n’est nécessaire. <br><br> - Les utilisateurs doivent commencer à utiliser le portail office.com pour les fonctionnalités Office Online (Calendrier, Courrier, Personnes). La navigation vers les services qui ne sont pas encore migrés vers les services Office 365 ne fonctionne pas tant que la migration n’est pas terminée. <br><br> - Outlook Web App ne fournira pas l’expérience de dossier public pendant la migration. |
+| Une nouvelle région d’Allemagne est ajoutée à la configuration de l’organisation existante et les boîtes aux lettres sont déplacées vers les services Office 365. | La configuration d’Exchange Online ajoute la nouvelle région allemande locale à l’organisation en transition. Cette région de services Office 365 est définie par défaut, ce qui permet au service d’équilibrage de charge interne de redistribuer les boîtes aux lettres vers la région par défaut appropriée dans les services Office 365. Dans cette transition, les utilisateurs des deux côtés (services d’Allemagne ou d’Office 365) sont dans la même organisation et peuvent utiliser l’un ou l’autre point de terminaison d’URL. | Exchange Online | - Transition d’utilisateurs et de services à partir de vos URL (outlook.office.de) héritées vers de nouvelles URL de services Office 365 ( `https://outlook.office365.com` ). <br><br> - Les utilisateurs peuvent continuer à accéder au service via les URL héritées d’Allemagne pendant la migration, mais ils doivent arrêter d’utiliser les URL héritées à la fin de la migration. <br><br> - Les utilisateurs doivent passer à l’utilisation du portail Office mondial pour les fonctionnalités Office Online (Calendrier, Courrier, Personnes). La navigation vers les services qui ne sont pas encore migrés vers les services Office 365 ne fonctionne pas tant qu’ils ne sont pas migrés. <br><br> - Outlook Web App ne fournit pas l’expérience de dossier public pendant la migration. |
+| Mettre à jour les paramètres DNS personnalisés pour la découverte automatique| Les paramètres DNS gérés par le client pour la découverte automatique qui pointent actuellement vers Microsoft Cloud Deutschland doivent être mis à jour pour pointer vers Office 365 à la fin de la phase Exchange Online (phase 5). <br> Les entrées DNS existantes avec CNAME pointant vers autodiscover-outlook.office.de doivent être mises à jour pour pointer vers autodiscover.outlook.com. | Exchange Online | Les demandes de disponibilité et les appels de découverte de service via le point de découverte automatique pointent directement vers les services Office 365. Les clients qui n’effectuent pas ces mises à jour DNS peuvent être face à des problèmes de service de découverte automatique lors de la finalisation de la migration. |
 |||||
 
 Considérations supplémentaires :
@@ -74,7 +75,7 @@ Considérations supplémentaires :
 
 - Si vous utilisez Exchange Online hybride :
 
-    - Vous devez réexécuter l’Assistant Configuration hybride (HCW) pour mettre à jour la configuration sur site par rapport à Microsoft Cloud Deutschland avant la transition, puis réexécuter le HCW lors du nettoyage sur les services Office 365. Des mises à jour DNS supplémentaires peuvent être nécessaires si vous utilisez des domaines personnalisés.
+    - Les clients Hybrides Exchange Online doivent exécuter l’Assistant Configuration hybride (HCW) plusieurs fois dans le cadre de cette transition. Avant le début de la **phase de migration 5,** tout client hybride Exchange Online doit exécuter la dernière version du HCW en mode Office 365 Germany pour préparer la configuration sur site pour la migration vers Office 365 global. À la fin de la **phase de migration 5** (lors de la publication de l’avis du Centre de messages), vous devez exécuter le HCW par rapport à l’utilisation des paramètres Office 365 dans le monde entier pour faire pointer vos systèmes locaux vers le service global. Des mises à jour DNS supplémentaires peuvent être nécessaires si vous utilisez des domaines personnalisés.
 
 Pour en savoir plus sur les différences entre les organisations lors de la migration et après la migration des ressources Exchange Online, examinez les informations relatives à l’expérience client pendant la migration vers les [services Office 365](ms-cloud-germany-transition-experience.md)dans les nouvelles régions de centres de données allemandes.
 
@@ -84,7 +85,7 @@ Les fonctionnalités d’Exchange Online Protection (EOP) principales sont copi�
 
 | Étapes | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
-| Migration du routage Exchange Online et historique des détails des messages. | Exchange Online permet le routage des hôtes externes vers Office 365. Les enregistrements MX externes sont acheminés vers le service EOP. La configuration du client et les détails historiques sont migrés. | Clients Exchange Online | - Les entrées DNS gérées par Microsoft sont mises à jour à partir d’Office 365 Germany EOP vers les services Office 365. <br><br> - Les clients doivent attendre 30 jours après la double écriture EOP pour la migration EOP. Dans le cas contraire, il peut y avoir une perte de données. |
+| Migration du routage Exchange Online et historique des détails des messages. | Exchange Online permet le routage des hôtes externes vers Office 365. Les enregistrements MX externes sont acheminés vers le service EOP. La configuration du client et les détails historiques sont migrés. | Clients Exchange Online | - Les entrées DNS gérées par Microsoft sont mises à jour depuis Office 365 Germany EOP vers les services Office 365. <br><br> - Les clients doivent attendre 30 jours après la double écriture EOP pour la migration EOP. Dans le cas contraire, il peut y avoir une perte de données. |
 |||||
 
 
@@ -93,7 +94,7 @@ Les fonctionnalités d’Exchange Online Protection (EOP) principales sont copi�
 
 | Étapes | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
-| Migration de Skype Entreprise vers Teams. | Les clients Skype Entreprise existants sont migrés vers les services Office 365 en Europe, puis migrés vers Microsoft Teams dans la région Allemagne des services Office 365. | Clients Skype Entreprise | - Les utilisateurs ne pourront pas se connecter à Skype Entreprise à la date de migration. Dix jours avant la migration, nous publierons dans le Centre d’administration pour vous faire savoir quand la migration aura lieu, et à nouveau lorsque nous commencerons la migration. <br><br> - La configuration de la stratégie est migrée. <br><br> - Les utilisateurs seront migrés vers Teams et n’auront plus Skype Entreprise après la migration. <br><br> - Le client de bureau Teams doit être installé pour les utilisateurs. L’installation aura lieu au cours des 10 jours via une stratégie sur l’infrastructure Skype Entreprise, mais en cas d’échec, les utilisateurs devront toujours télécharger le client ou se connecter à un navigateur pris en charge. <br><br> - Les contacts et les réunions seront migrés vers Teams. <br><br> - Les utilisateurs ne pourront pas se connecter à Skype Entreprise entre les transitions de service de temps vers les services Office 365, et pas tant que les entrées DNS client ne seront pas terminées. <br><br> - Les contacts et les réunions existantes continueront de fonctionner en tant que réunions Skype Entreprise. |
+| Migration de Skype Entreprise vers Teams. | Les clients Skype Entreprise existants sont migrés vers les services Office 365 en Europe, puis migrés vers Microsoft Teams dans la région Allemagne des services Office 365. | Clients Skype Entreprise | - Les utilisateurs ne pourront pas se connecter à Skype Entreprise à la date de migration. Dix jours avant la migration, nous publierons un billet dans le Centre d’administration pour vous faire savoir quand la migration aura lieu, et à nouveau lorsque nous commencerons la migration. <br><br> - La configuration de la stratégie est migr. <br><br> - Les utilisateurs seront migrés vers Teams et n’auront plus Skype Entreprise après la migration. <br><br> - Le client de bureau Teams doit être installé pour les utilisateurs. L’installation aura lieu au cours des 10 jours via une stratégie sur l’infrastructure Skype Entreprise, mais en cas d’échec, les utilisateurs devront toujours télécharger le client ou se connecter à un navigateur pris en charge. <br><br> - Les contacts et les réunions seront migrés vers Teams. <br><br> - Les utilisateurs ne pourront pas se connecter à Skype Entreprise entre les transitions de service de temps vers les services Office 365, et pas tant que les entrées DNS client ne seront pas terminées. <br><br> - Les contacts et les réunions existantes continueront de fonctionner en tant que réunions Skype Entreprise. |
 |||||
 
 

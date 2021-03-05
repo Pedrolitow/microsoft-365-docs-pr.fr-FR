@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour créer et publier des étiquettes de rétention afin de pouvoir les appliquer dans les applications afin de conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: dfe507283304f1b1a7ded1740df043174987a398
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 67285862756a262233fef934efb377b949fc9d65
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519855"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423495"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Créer des étiquettes de rétention et les appliquer dans les applications
 
@@ -33,7 +33,7 @@ ms.locfileid: "49519855"
 
 Utilisez les informations suivantes pour vous aider à créer et publier des [étiquettes de rétention](retention.md), puis à les appliquer aux documents et messages électroniques.
 
-Les étiquettes de rétention vous permettent de conserver les éléments dont vous avez besoin et de supprimer ce que vous n’avez pas au niveau de l’élément (document ou courrier électronique). Ils sont également utilisés pour déclarer un élément en tant qu’enregistrement dans le cadre d’une [solution de gestion des enregistrements](records-management.md) pour vos données Microsoft 365.
+Les étiquettes de rétention vous permettent de conserver les éléments dont vous avez besoin et de supprimer ce dont vous n’avez pas besoin au niveau de l’élément (document ou courrier électronique). Elles s’utilisent également pour déclarer un élément en tant qu’enregistrement dans le cadre d’une [gestion des enregistrements](records-management.md) pour vos données Microsoft 365.
 
 La mise à disposition des étiquettes de rétention aux membres de votre organisation afin qu’ils puissent classer le contenu est un processus en deux étapes : 
 
@@ -47,11 +47,11 @@ Utilisez les instructions suivantes pour les deux étapes d’administration.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et modifier les étiquettes de rétention ainsi que leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, consultez [Autorisations nécessaires pour créer et gérer des stratégies et des étiquettes de rétention](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les étiquettes de rétention et leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, voir [Autorisations nécessaires pour créer et gérer des stratégies et des étiquettes de confidentialité](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
 ## <a name="how-to-create-and-publish-retention-labels"></a>Comment créer et publier des étiquettes de rétention
 
-Tout d'abord, créez vos étiquettes de rétention. Ensuite, créez une stratégie d’étiquette pour que les étiquettes puissent être appliquées dans les applications.
+Tout d’abord, créez vos étiquettes de rétention. Créez ensuite une stratégie d’étiquette pour rendre les étiquettes disponibles à appliquer dans les applications.
 
 L’emplacement dans lequel vous créez et configurez vos étiquettes de rétention dépend de votre utilisation ou non de la gestion des enregistrements.
 
@@ -65,13 +65,13 @@ L’emplacement dans lequel vous créez et configurez vos étiquettes de rétent
     - Si vous n’utilisez pas la gestion des enregistrements :
        - **Solutions** > **Gouvernance d’informations** > **Étiquettes** onglet > + **Créer une étiquette**
     
-    Si vous ne voyez pas immédiatement votre option, sélectionnez d’abord **Tout afficher**. 
+    Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
 
 2. Suivez les invites de l’Assistant. Si vous utilisez la gestion des enregistrements :
     
     - Pour plus d’informations sur les descripteurs de plan de fichier, voir [Utiliser le plan de gestion des fichiers pour gérer les étiquettes de rétention](file-plan-manager.md).
     
-    - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’informations, voir [Configuration des étiquettes de rétention pour déclarer les enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
+    - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Enregistrez simplement l’étiquette pour l'instant**, puis sélectionnez **Terminé**.
 
@@ -91,18 +91,18 @@ Publiez des étiquettes de rétention pour qu’elles puissent être appliquées
     - Si vous n’utilisez pas la gestion des enregistrements :
         - **Solutions** > **Gouvernance d’informations** > **Stratégies d’étiquette** onglet > **Publier des étiquettes**
     
-    Si vous ne voyez pas immédiatement votre option, sélectionnez d’abord **Tout afficher**. 
+    Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
 
 2. Suivez les invites de l’Assistant.
     
     Pour plus d’informations sur la prise en charge des emplacements par des étiquettes de rétention, voir la section [Étiquettes de rétention et emplacements](retention.md#retention-label-policies-and-locations). 
 
-Pour modifier une stratégie d’étiquette de rétention existante, (le type de stratégie **Publier**), sélectionnez-le puis, sélectionnez l’option **Modifier** pour démarrer le même Assistant qui vous permet de modifier les descriptions de la stratégie et les [Paramètres éligibles](#updating-retention-labels-and-their-policies) à l’étape 2.
+Pour modifier une stratégie d’étiquettes de rétention existante (le type de stratégie est **Publier**), sélectionnez-la, puis sélectionnez l’option **Modifier** pour démarrer la stratégie de modification de rétention. Cet assistant vous permet de modifier la description de la stratégie et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Lorsque les étiquettes de rétention sont disponibles à l’application
 
-Si vous publiez des étiquettes de rétention sur Microsoft Office  SharePoint Online ou OneDrive, celles-ci s’affichent généralement pour que les utilisateurs finaux puissent les sélectionner en une journée. 
+Si vous publiez des étiquettes de rétention sur SharePoint ou OneDrive, celles-ci s’affichent généralement pour que les utilisateurs finaux puissent les sélectionner en un journée. Vous pouvez toutefois autoriser jusqu’à sept jours. 
 
 Si vous publiez des étiquettes de rétention sur Exchange, l’affichage des étiquettes de rétention pour les utilisateurs finaux peut prendre jusqu’à sept jours, et la boîte aux lettres doit contenir au moins 10 Mo de données.
 
@@ -111,7 +111,7 @@ Par exemple :
 ![Diagramme de la date d’effet des étiquettes manuelles](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-Si les étiquettes n'apparaissent pas après sept jours, vérifiez **l'état** de la stratégie d'étiquetage en la sélectionnant sur la page des **Stratégies des étiquettes** dans le centre de conformité. Si vous voyez l'état **Off (Error)** et que dans les détails des emplacements, vous voyez un message indiquant que le déploiement de la politique prend plus de temps que prévu (pour SharePoint) ou que vous essayez de redéployer la politique (pour OneDrive), essayez d'exécuter la commande [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
+Si les étiquettes n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’étiquette en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si l’état de **Désactivé (erreur)** s’affiche, ainsi qu’un message dans les détails des emplacements indiquant que le déploiement de la stratégie (SharePoint) ou le redéploiement de la stratégie (OneDrive) prend plus de temps que prévu, exécutez une commande PowerShell [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
@@ -123,7 +123,7 @@ Si les étiquettes n'apparaissent pas après sept jours, vérifiez **l'état** d
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Vérifier l’état des étiquettes de rétention publiées dans Exchange
 
-Dans Exchange Online, les étiquettes de rétention deviennent disponibles pour les utilisateurs finals par l’intermédiaire d’un processus qui s’exécute tous les sept jours. À l’aide de Visual de Windows PowerShell, vous pouvez découvrir la date de la dernière exécution du processus et déterminer la date de sa prochaine exécution.
+Dans Exchange Online, les étiquettes de rétention deviennent disponibles pour les utilisateurs finaux à l’issue d’un processus qui s’exécute tous les sept jours. Powershell vous permet de voir quand ce processus a été exécuté pour la dernière fois et donc de connaître sa prochaine exécution.
   
 1. [Connectez-vous à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773).
     
@@ -291,6 +291,14 @@ When you edit a retention label or retention label policy, and the retention lab
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
+
+### Deleting retention labels
+
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently rolling out in preview.
+
+For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
+
+However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
 
 ## Locking the policy to prevent changes
 

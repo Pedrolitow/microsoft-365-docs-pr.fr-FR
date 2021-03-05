@@ -11,13 +11,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ROBOTS: NOINDEX
-ms.openlocfilehash: 3548cb31f782052a3bd4da1802077a343b5da01f
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 28dc86bbc2d844110610cd8a884af5313b7d8cfa
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107529"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453980"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Commencer à piloter l’adoption des rubriques microsoft
 
@@ -25,9 +24,9 @@ Avant de commencer l’adoption, vous devez comprendre les concepts impliqués d
 
 ![Architecture des rubriques](../media/knowledge-management/topic-management-architecture.png)
 
-- **Découverte**: les utilisateurs peuvent découvrir les connaissances dans les applications qu’ils utilisent quotidiennement par le biais de fiches de rubriques , ils peuvent également découvrir des rubriques dans Microsoft Search (recherche Microsoft).
+- **Découverte**: les utilisateurs peuvent découvrir les connaissances dans les applications qu’ils utilisent quotidiennement à l’aide de cartes de rubriques , ils peuvent également découvrir des rubriques dans Microsoft Search (recherche Microsoft).
 - **Curation**: les experts techniques (SME) affinent les rubriques par le biais de pages de rubriques, et l’IA apprend à partir de leurs entrées. Le centre de rubriques contient des pages de rubriques que les utilisateurs peuvent explorer et que les experts peuvent gérer.
-- **Identification**: avec Microsoft Graph et les connaissances et les personnes (rubriques, compétences, etc.) de Microsoft Graph et intelligence artificielle sont identifiées et automatiquement organisées en rubriques connexes. Le contenu SharePoint est indexé avec le contenu de sécurité.
+- **Identification**: avec Microsoft Graph et les connaissances et les personnes de l’Intelligence artificielle (IA) (rubriques, compétences, etc.) sont identifiées et automatiquement organisées en rubriques connexes. Le contenu SharePoint est indexé avec le contenu de sécurité.
 - **Extension**: avec les connecteurs de contenu Microsoft Graph (bientôt disponibles), vous pouvez inger les connaissances des services externes et des référentiels de données.
 
 Pour plus d’informations, vous pouvez consulter la [vue d’ensemble](topic-experiences-overview.md) pour une présentation.
@@ -43,15 +42,15 @@ Pour vous aider à vous préparer, réfléchissez à ces questions :
 
 - Quel contenu doit être utilisé pour la découverte de sujet ?
 - Qui gérera les rubriques ?
-- Qui verra les cartes de rubrique et les points forts ?
+- Qui verra les fiches et les points forts des rubriques ?
 - Quelles rubriques sont attendues ?
 
 Examinez la liste des conditions préalables à la mise à jour des rubriques De La Presse :
 
 |Produit ou fonctionnalité |Description |
 |:-------|:--------|
-|SharePoint Online avec des pages SharePoint modernes |L’exploration de rubriques inclut uniquement le contenu sur les sites SharePoint et les cartes de sujet ne peuvent être pointées que sur des pages modernes.|
-|Microsoft Graph |Vous pouvez contrôler si des rubriques sont incluses ou exclues de Search ou Delve avec les paramètres de Microsoft Graph. |
+|SharePoint Online avec des pages SharePoint modernes |L’exploration de rubriques inclut uniquement du contenu sur les sites SharePoint, et les cartes de sujet ne peuvent être pointées que sur des pages modernes.|
+|Microsoft Graph |Vous pouvez contrôler si des rubriques sont incluses ou exclues de Search ou Delve avec les paramètres de Microsoft Graph. |
 
 ## <a name="plan-for-adoption"></a>Planifier l’adoption
 
@@ -74,7 +73,7 @@ Pour planifier l’adoption de Topics, vous devez :
     - Bientôt disponible, des vidéos de formation et de l’aide pour les utilisateurs finaux.
 
 4. [Créez un réseau champion](#build-a-champion-network):
-    - Vous avez peut-être déjà mis en place des communautés de pratiques ou des réseaux de champions. Ces méthodes sont excellentes pour mettre en réseau et mettre en avant les pairs et les impliquer pour s’aider mutuellement. Ils peuvent également partager des témoignages qui peuvent être très utiles. Ils peuvent donner des conseils et générer de l’enthousiasme.
+    - Vous avez peut-être déjà mis en place des communautés de pratiques ou des réseaux de champions. Ces méthodes sont excellentes pour mettre en réseau et mettre en avant les pairs et les impliquer pour s’aider mutuellement. Ils peuvent également partager des témoignages qui peuvent être très utiles. Ils peuvent donner des conseils et générer de l’intérêt.
 
 ### <a name="target-scenarios"></a>Scénarios cibles
 
@@ -130,7 +129,7 @@ Utilisez ces indicateurs pour mesurer la réussite de Rubriques Dans votre organ
       - Quantité de rubriques : à la fois confirmées et non confirmées dans votre liste de rubriques organisées.
       - Nombre de pages de rubriques publiées.
 1. Commentaires de l’utilisateur final à partir de fiches de rubrique.
-1. Faites des enquêtes sur la satisfaction des employés. Ces rubriques doivent améliorer la capacité des employés à trouver des informations. Trouvez donc des moyens de recueillir leurs commentaires et leurs commentaires sur cette expérience.
+1. Faites des enquêtes sur la satisfaction des employés. Les rubriques Rubriques doivent améliorer la capacité des employés à trouver des informations. Trouvez donc des moyens de recueillir leurs commentaires et leurs commentaires sur cette expérience.
 1. Impact positif sur l’analyse de la recherche. Étant donné que les rubriques apparaissent dans l’expérience de recherche, au fil du temps, vous pouvez voir des taux réduit de recherches abandonnées, car les utilisateurs sont plus facilement en mesure de trouver les rubriques dans la recherche. 
 
 ### <a name="build-a-champion-network"></a>Créer un réseau champion
@@ -148,12 +147,12 @@ Certaines organisations utilisent des piratages (formels ou informels, virtuels 
 
 Réfléchissez à la façon dont vous pouvez reconnaître vos champions. Récompensez leurs activités, donnez-leur une certaine reconnaissance et générez un sentiment et un engagement de la communauté visibles afin qu’ils se sentent comme s’ils contribuent à quelque chose et qu’ils reviennent également de leurs investissements.
 
-Maintenant que vous êtes prêt à déployer, vous souhaitez vous assurer que vous encouragez l’engagement en cours.
+Maintenant que vous êtes prêt à déployer, vous souhaitez vous assurer que vous encouragez l’engagement continu.
 
 - Conservez des groupes Yammer actifs pour vos champions.
 - Partagez des témoignages.
 - Hébergez régulièrement des événements d’engagement pour partager des articles ou introduire de nouvelles fonctionnalités.
-- Définir des défis pour les personnes et exécuter des concurrences.
+- Définissez des défis pour les personnes et exécutez des concurrences.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -9,16 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Utilisez le Centre d’administration Microsoft 365 ou Windows PowerShell pour supprimer des calendriers Bookings.
-ms.openlocfilehash: 2fcb92cee18d709ef0e1fa3faa0246e622a9f9db
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 1f8df15eafac7867f7ae852e344e1c5730362598
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126648"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454204"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Supprimer un calendrier de réservation dans Bookings
 
-Cet article explique comment supprimer un calendrier de réservation indésirable. Vous pouvez supprimer le calendrier de réservation dans le Centre d’administration Microsoft 365 ou vous pouvez utiliser PowerShell. Le calendrier Bookings est une boîte aux lettres dans Exchange Online, vous supprimez le compte d’utilisateur correspondant pour supprimer le calendrier de réservation.
+Cet article explique comment supprimer un calendrier de réservation indésirable. Vous pouvez supprimer le calendrier de réservation dans le Centre d’administration Microsoft 365 ou vous pouvez utiliser PowerShell. Le calendrier Bookings est une boîte aux lettres dans Exchange Online. Vous supprimez donc le compte d’utilisateur correspondant pour supprimer le calendrier de réservation.
 
 > [!IMPORTANT]
 > Tous les calendriers de réservation que vous avez créés en 2017 ou avant doivent être supprimés à l’aide des instructions PowerShell de cette rubrique. Tous les calendriers de réservation créés en 2018 ou après peuvent être supprimés dans le Centre d’administration Microsoft 365.
@@ -50,45 +50,44 @@ Consultez [La connexion à Exchange Online PowerShell pour les](https://docs.mic
 
 Pour effectuer ces étapes, vous devez utiliser une fenêtre de commande Microsoft PowerShell active que vous avez exécutée en choisissant l’option « Exécuter en tant qu’administrateur ».
 
-1. Entrez la commande suivante :
+1. Dans une fenêtre PowerShell, chargez le module EXO V2 en exécutant la commande suivante :
 
-   ```PowerShell
-    $user = get-credential
+   ```powershell
+   Import-Module ExchangeOnlineManagement
    ```
 
-1. Lorsque vous y êtes invité, connectez-vous avec les informations d’identification de l’administrateur client au client Microsoft 365 qui héberge le calendrier de réservation que vous souhaitez supprimer définitivement.
+   > [!NOTE]
+   > Si vous avez déjà [installé le module EXO v2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), la commande précédente fonctionnera comme écrite.
+   
+2. La commande à exécuter utilise la syntaxe suivante:
 
-1. À l’invite de commandes PowerShell, entrez la commande ci-après :
-
-   ```PowerShell
-    $s = New-Pssession -ConnectionUri https://outlook.office365.com/powershell-liveid -Credential $user -Authentication basic -AllowRedirection -ConfigurationName Microsoft.Exchange
+   ```powershell
+   Connect-ExchangeOnline -UserPrincipalName <UPN> 
    ```
 
-1. Entrez la commande suivante :
+   - _\<UPN\>_ est votre compte au format du nom d’utilisateur principal (par exemple, `john@contoso.com`).
 
-   ```PowerShell
-    Import-PSSession $s
+3. Lorsque vous y êtes invité, connectez-vous avec les informations d’identification de l’administrateur client au client Microsoft 365 qui héberge le calendrier de réservation que vous souhaitez supprimer définitivement.
+
+4. Une fois cette commande traitée, entrez la commande suivante pour obtenir la liste des boîtes aux lettres de réservation dans votre client :
+
+   ```powershell
+   Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
-1. Une fois cette commande traitée, entrez la commande suivante pour obtenir la liste des boîtes aux lettres de réservation dans votre client :
+5. Tapez la commande suivante :
 
-   ```PowerShell
-    get-mailbox -RecipientTypeDetails Scheduling
-   ```
-
-1. Tapez la commande suivante :
-
-   ```PowerShell
+   ```powershell
    remove-mailbox [BookingCalendarToDelete]
    ```
 
    > [!IMPORTANT]
    > Faites attention à taper le nom exact de l’alias de boîte aux lettres de réservation que vous souhaitez supprimer définitivement.
 
-1. Pour vérifier que le calendrier a été supprimé, entrez la commande suivante :
+6. Pour vérifier que le calendrier a été supprimé, entrez la commande suivante :
 
-   ```PowerShell
-    get-mailbox -RecipientTypeDetails Scheduling
+   ```powershell
+    Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
    Le calendrier supprimé n’apparaîtra pas dans la sortie.

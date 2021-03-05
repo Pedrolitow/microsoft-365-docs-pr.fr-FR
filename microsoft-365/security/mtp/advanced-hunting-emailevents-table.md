@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f39e8f77a53b018fdf9c96981524e12f9aface65
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: a0892e03e0ac4c6fc6bcda1b7b159ce403a7ce2e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145042"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461612"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -62,11 +62,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `EmailDirection` | chaîne | Direction de l'e-mail  par rapport à votre réseau : entrant, sortant, intra-organisationnel |
 | `DeliveryAction` | chaîne | Action de livraison de l'e-mail : remis, courrier indésirable, bloqué ou remplacé |
 | `DeliveryLocation` | chaîne | Emplacement de remise du courrier électronique : boîte de réception/dossier, local/externe, courrier indésirable, quarantaine, échec, supprimé, éléments supprimés |
-| `PhishFilterVerdict` | chaîne | Verdict de la pile de filtrage d’e-mails selon que l’e-mail is est phish : Phish ou non Phish |
-| `PhishDetectionMethod` | chaîne | Méthode utilisée pour détecter l’e-mail comme un hameçonnage : réputation d’URL malveillante, détonation d’URL de liens sûrs, filtre de hameçonnage avancé, filtre anti-hameçonnage général, anti-usurpation d’identité : intra-organisation, usurpation d’identité : domaine externe, emprunt d’identité de domaine, emprunt d’identité d’utilisateur, emprunt d’identité de marque |
-| `MalwareFilterVerdict` | string | Verdict de la pile de filtrage d’e-mails selon que l’e-mail contient des programmes malveillants : programme malveillant, programme non malveillant |
-| `MalwareDetectionMethod` | string | Méthode utilisée pour détecter les programmes malveillants dans le courrier électronique : moteur anti-programme malveillant, réputation du fichier, pièces jointes sécurisées |
-| `ThreatTypes` | string | Verdict de la pile de filtrage du courrier électronique selon que l’e-mail contient des programmes malveillants, du hameçonnage ou d’autres menaces |
+| `ThreatTypes` | chaîne | Verdict de la pile de filtrage du courrier électronique selon que l’e-mail contient des programmes malveillants, du hameçonnage ou d’autres menaces |
 | `ThreatNames` | string |Nom de détection des programmes malveillants ou autres menaces détectées |
 | `DetectionMethods` | string | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |
 | `ConfidenceLevel` | string | Liste des niveaux de confiance des verdicts de courrier indésirable ou de hameçonnage. Pour le courrier indésirable, cette colonne indique le niveau de confiance du courrier indésirable (SCL), indiquant si le courrier a été ignoré (-1), s’il a été trouvé comme non indésirable (0,1), s’il a été trouvé comme courrier indésirable avec un niveau de confiance modéré (5,6) ou s’il a été trouvé comme courrier indésirable avec un niveau de confiance élevé (9). Pour le hameçonnage, cette colonne indique si le niveau de confiance est « Élevé » ou « Faible ». |

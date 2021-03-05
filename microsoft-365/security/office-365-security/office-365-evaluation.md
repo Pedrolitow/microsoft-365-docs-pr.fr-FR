@@ -18,23 +18,23 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d16c0afc675ba759e392c9fe9a44c42b89dbad0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1a9bf9461e8cf6d62e4283c9112b801371242f2e
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287652"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453704"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Évaluer Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> L’évaluation de Microsoft Defender pour Office 365 est en prévisualisation publique. Cette version préliminaire est fournie sans contrat de niveau de service. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
+> L’évaluation de Microsoft Defender pour Office 365 est en prévisualisation publique. Cette version d’aperçu est fournie sans contrat de niveau de service. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
 
 La conduite d’une évaluation complète du produit de sécurité peut vous aider à prendre des décisions éclairées sur les mises à niveau et les achats. Il permet d’essayer les fonctionnalités du produit de sécurité pour évaluer la façon dont il peut aider votre équipe en charge des opérations de sécurité dans ses tâches quotidiennes.
 
-L’expérience d’évaluation de Microsoft Defender pour [Office 365](office-365-atp.md) est conçue pour éliminer la complexité de la configuration de l’appareil et de l’environnement afin que vous pouvez vous concentrer sur l’évaluation des fonctionnalités de la solution de sécurité. Elle s’applique uniquement à la protection de la messagerie et non à SharePoint, aux clients Office ou à Teams.
+L’expérience d’évaluation de Microsoft Defender pour [Office 365](office-365-atp.md) est conçue pour éliminer la complexité de la configuration de l’appareil et de l’environnement afin que vous pouvez vous concentrer sur l’évaluation des fonctionnalités de la solution de sécurité. Elle s’applique uniquement à la protection de la messagerie et non à SharePoint, aux clients Office tels que Word ou Teams.
 
 Si vous n’avez pas encore de licence qui prend en charge Microsoft Defender pour Office 365, vous pouvez démarrer une évaluation gratuite de [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) jours et tester les fonctionnalités dans le Centre de sécurité & conformité Office 365 ( https://protection.office.com/homepage) . Vous pourrez profiter de la mise en place rapide et la désactiver facilement si nécessaire.
 
@@ -42,11 +42,11 @@ Si vous n’avez pas encore de licence qui prend en charge Microsoft Defender po
 
 Defender pour Office 365 en mode d’évaluation crée des stratégies de messagerie Defender pour Office 365 qui enregistrent les verdicts, tels que les programmes malveillants, mais n’agissent pas sur les messages. Vous n’êtes pas obligé de modifier la configuration de votre enregistrement MX.
 
-Avec le mode d’évaluation, les stratégies de pièces [jointes sécurisées,](atp-safe-attachments.md)de liens sécurisés et d’emprunt d’identité [anti-hameçonnage](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) sont définies en votre nom. [](atp-safe-links.md) Toutes les stratégies Defender pour Office 365 sont créées en mode non-application en arrière-plan et ne sont pas visibles pour vous.
+Avec le mode d’évaluation, les [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) pièces [jointes sécurisées,](atp-safe-attachments.md)les liens sécurisés et les stratégies d’emprunt d’identité basées sur l’intelligence des boîtes aux lettres sont définies en votre nom. [](atp-safe-links.md) Toutes les stratégies Defender pour Office 365 sont créées en mode non-application en arrière-plan et ne sont pas visibles pour vous.
 
-Dans le cadre de l’installation, le mode d’évaluation configure également [le filtrage amélioré pour les connecteurs.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Il améliore la précision du filtrage en conservant l’adresse IP et les informations de l’expéditeur, qui sont sinon perdues lorsque le courrier passe par une passerelle de sécurité de messagerie (ESG) devant Defender pour Office 365. Le filtrage amélioré améliore également la précision du filtrage pour vos stratégies anti-courrier indésirable et anti-hameçonnage Exchange Online Protection (EOP).
+Dans le cadre de l’installation, le mode d’évaluation configure également [le filtrage amélioré pour les connecteurs.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Il améliore la précision du filtrage en conservant l’adresse IP et les informations de l’expéditeur, qui sont sinon perdues lorsque le courrier passe par une passerelle de sécurité de messagerie (ESG) devant Defender pour Office 365. Le filtrage amélioré pour les connecteurs améliore également la précision du filtrage pour vos stratégies de protection contre le courrier indésirable et anti-hameçonnage Exchange Online Protection (EOP) existantes.
 
-Pour minimiser l’impact potentiel sur la production sur certains scénarios non pris en cas de problème, vous pouvez contourner tout filtrage EOP en créant une règle de transport pour définir le niveau de confiance du courrier indésirable (SCL) sur -1. Pour plus d’informations, voir Utiliser le EAC pour créer une règle de flux de messagerie qui définit le [SCL d’un message.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)  
+Le filtrage amélioré activé pour les connecteurs améliore la précision du filtrage, mais peut modifier la livrabilité de certains messages si vous disposez d’un ESG devant Defender pour Office 365 et que vous ne contournez actuellement pas le filtrage EOP. L’impact est limité aux stratégies EOP ; La configuration des stratégies MDO dans le cadre de l’évaluation est créée en mode non d’application. Pour minimiser l’impact potentiel sur la production, vous pouvez contourner tout le filtrage EOP en créant une règle de transport pour définir le niveau de confiance du courrier indésirable (SCL) sur -1. Pour plus d’informations, voir Utiliser le EAC pour créer une règle de flux de messagerie qui définit le [SCL d’un message.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)  
 
 Lorsque le mode d’évaluation est installé, vous avez un rapport mis à jour quotidiennement avec jusqu’à 90 jours de données quantifiant les messages qui auraient été bloqués si les stratégies étaient implémentées (par exemple, supprimer, envoyer au courrier indésirable, mettre en quarantaine). Les rapports sont générés pour toutes les détections Defender pour Office 365 et EOP. Elles sont agrégées par technologie de détection (par exemple, l’emprunt d’identité) et peuvent être filtrées par plage de temps. En outre, les rapports de messages peuvent être créés à la demande pour créer des tableaux croisés dynamiques personnalisés ou pour explorer les messages en profondeur à l’aide de l’Explorateur de menaces.
 
@@ -89,19 +89,19 @@ Les rôles suivants sont nécessaires :
 
 |Tâche|Role|
 |---|---|
-|Obtenir une version d’essai gratuite ou acheter Microsoft Defender pour Office 365 (Plan 2)|Rôle d’administrateur de facturation OU rôle d’administrateur global|
-|Créer une stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité|
+|Obtenir un essai gratuit ou acheter Microsoft Defender pour Office 365 (Plan 2)|Rôle d’administrateur de facturation OU rôle d’administrateur global|
+|Créer une stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité|
 |Modifier la stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité|
-|Supprimer la stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité |
+|Supprimer la stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité |
 |Afficher le rapport d’évaluation|Rôle d’administrateur de sécurité OU rôle lecteur sécurité|
 |
 
 
 ### <a name="enhanced-filtering"></a>Filtrage amélioré
 
-Vos stratégies Exchange Online Protection, telles que la protection en bloc et le courrier indésirable, resteront identiques. La remise des messages reste également la même. Toutefois, l’évaluation permet d’améliorer le filtrage des connecteurs, ce qui aura un impact sur votre flux de messagerie et les stratégies Exchange Online Protection, sauf contournement.
+Vos stratégies Exchange Online Protection, telles que la protection en bloc et le courrier indésirable, resteront identiques. Toutefois, l’évaluation permet d’améliorer le filtrage des connecteurs, ce qui peut avoir un impact sur votre flux de messagerie et vos stratégies Exchange Online Protection, sauf contournement.
 
-Le filtrage amélioré pour les connecteurs permettra aux locataires d’utiliser la protection contre l’usurpation d’usurpation d’accès. La protection contre l’usurpation d’adresse n’est pas prise en charge si vous utilisez une passerelle de sécurité de messagerie (ESG) sans avoir désactivé le filtrage amélioré pour les connecteurs.
+Le filtrage amélioré pour les connecteurs permet aux locataires d’utiliser la protection contre l’usurpation d’usurpation d’accès. La protection contre l’usurpation d’adresse n’est pas prise en charge si vous utilisez une passerelle de sécurité de messagerie (ESG) sans avoir désactivé le filtrage amélioré pour les connecteurs.
 
 ### <a name="urls"></a>URL
 
@@ -111,14 +111,14 @@ Les liens d’URL dans les corps des messages électroniques ne seront pas encap
 
 ### <a name="email-routing"></a>Routage du courrier électronique
 
-Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement acheminé, y compris le nom du connecteur entrant qui a acheminé vos messages. Si vous utilisez simplement Exchange Online Protection, vous n’avez pas de connecteur.  [En savoir plus sur le flux de messagerie et le routage du courrier électronique](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement acheminé, y compris le nom du connecteur entrant qui a acheminé votre courrier électronique. Si vous utilisez simplement Exchange Online Protection, vous n’avez pas de connecteur.  [En savoir plus sur le flux de messagerie et le routage du courrier électronique](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Les scénarios de routage de courrier pris en charge sont les suivants :
 
 - Partenaire tiers et/ou fournisseur de services local : le connecteur entrant que vous souhaitez évaluer utilise un fournisseur tiers **et/ou** vous utilisez une solution pour la sécurité du courrier électronique en local.
 - **Microsoft Exchange Online protection** uniquement : le client que vous souhaitez évaluer utilise Office 365 pour la sécurité du courrier électronique et l’enregistrement MX pointe vers Microsoft.
 
-### <a name="email-security-gateway"></a>Passerelle de sécurité du courrier électronique
+### <a name="email-security-gateway"></a>Passerelle de sécurité de messagerie
 
 Si vous utilisez une passerelle de sécurité de messagerie (ESG) tierce, vous devez connaître le nom du fournisseur. Si vous utilisez un fournisseur ESG local ou non pris en charge, vous devez connaître les adresses IP publiques des appareils.
 

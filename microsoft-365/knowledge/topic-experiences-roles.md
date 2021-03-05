@@ -1,5 +1,5 @@
 ---
-title: Rôles Des rubriques Microsoft
+title: Rôles des rubriques de Microsoft Viva
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,17 +11,17 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
 description: Découvrez les rôles d’utilisateur dans Rubriques.
-ms.openlocfilehash: e2975201124045574c516aad49bc5059db969b76
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5b57e768a1de8bc0447492067371630b2d045f6
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107433"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453939"
 ---
-# <a name="microsoft-viva-topics-roles"></a>Rôles Des rubriques Microsoft 
+# <a name="microsoft-viva-topics-roles"></a>Rôles des rubriques de Microsoft Viva 
 
 Lorsque vous utilisez Topics dans votre environnement Microsoft 365, vos utilisateurs peuvent avoir les rôles suivants :
 -   Visionneuse de rubriques
@@ -66,18 +66,18 @@ Pour gérer les rubriques, l’utilisateur doit :
 -   Leur administrateur Microsoft 365 se voit attribuer une [licence Topics.](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)
 -   [Des autorisations doivent être attribuées pour gérer les rubriques.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques dans le Centre d’administration Microsoft 365.
 
-Les utilisateurs qui ont une bonne connaissance globale de votre entreprise peuvent être de bons candidats au rôle de gestionnaire de connaissances. Ces personnes peuvent non seulement avoir la connaissance de savoir si les rubriques sont valides ou non, mais peuvent également connaître les personnes au sein de l’entreprise qui sont liées à ces rubriques.
+Les utilisateurs qui ont une bonne connaissance globale de votre entreprise peuvent être de bons candidats pour le rôle de gestionnaire de connaissances. Ces personnes peuvent non seulement avoir la connaissance de savoir si les rubriques sont valides ou non, mais peuvent également connaître les personnes au sein de l’entreprise qui sont liées à ces rubriques.
 
 
 ## <a name="knowledge-admins"></a>Administrateurs du savoir
 
-Les administrateurs du savoir sont des administrateurs qui configurent et configurent Des rubriques Dans votre environnement Microsoft 365. Ils gèrent également les paramètres De La Rubriques Une fois la configuration terminée. Le rôle d’administrateur du savoir nécessite que vous soyez un administrateur microsoft 365 global ou SharePoint, car la configuration et la gestion sont réalisées dans le Centre d’administration Microsoft 365.
+Les administrateurs du savoir sont des administrateurs qui configurent et configurent Des rubriques Dans votre environnement Microsoft 365. Ils gèrent également les paramètres De Rubriques à l’issue de la configuration. Le rôle d’administrateur du savoir nécessite que vous soyez un administrateur microsoft 365 global ou SharePoint, car la configuration et la gestion sont réalisées dans le Centre d’administration Microsoft 365.
 Lors de l’installation, les administrateurs du savoir peuvent configurer Topics pour :
 
 -   Sélectionnez les sites SharePoint à analyser pour les rubriques.
 -   Sélectionnez les utilisateurs sous licence qui peuvent afficher des rubriques (visionneuses de rubriques).
 -   Sélectionnez les rubriques qui seront exclues de l’identification.
--   Sélectionnez les utilisateurs sous licence qui peuvent créer et modifier des rubriques (contributeurs de rubriques).
+-   Sélectionnez les utilisateurs sous licence qui peuvent créer et modifier des rubriques (contributeurs de rubrique).
 -   Sélectionnez les utilisateurs titulaires d’une licence qui peuvent gérer des rubriques (gestionnaires de connaissances).
 -   Nommez le centre de rubriques.
 

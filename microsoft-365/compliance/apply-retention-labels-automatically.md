@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 69bada084aa3817b49b75d970a1a8d304f6853e6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 34b6fb53095a2c3f52598b84e82cae3083b98f21
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261345"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423303"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -282,6 +282,14 @@ Lorsque vous modifiez une étiquette de rétention ou une stratégie d’applica
 Certains paramètres ne peuvent pas être modifiés une fois l’étiquette ou la stratégie créée et enregistrée, notamment :
 - Étiquette de rétention et le nom de la stratégie, et les paramètres de rétention à l’exception de la période de rétention. Cependant, vous ne pouvez pas modifier la période de rétention lorsque la période de rétention est basée sur la période d’étiquetage des éléments.
 - Option de marquage des éléments comme enregistrement.
+
+### <a name="deleting-retention-labels"></a>Suppression des étiquettes de rétention.
+
+Vous pouvez supprimer des étiquettes de rétention qui ne sont pas actuellement incluses dans les stratégies d’étiquette de rétention, qui ne sont pas configurées pour la rétention basée sur des événements, ou qui marquent des éléments comme enregistrements réglementaires. La possibilité de supprimer des étiquettes de rétention qui marquent des éléments comme enregistrements est en cours de déploiement dans la préversion.
+
+Pour les étiquettes de rétention que vous pouvez supprimer, si elles ont été appliquées à des éléments, la suppression échoue et un lien vers l’explorateur de contenu permettant d’identifier les éléments étiquetés s’affiche.
+
+Toutefois, l’affichage des éléments étiquetés par l’explorateur de contenu peut prendre deux jours maximum. Dans ce scénario, l’étiquette de rétention pourrait être supprimée sans l’affichage du lien vers l’explorateur de contenu.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Verrouillage de la stratégie pour empêcher toute modification
 

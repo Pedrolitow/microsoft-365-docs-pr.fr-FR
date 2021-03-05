@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6462096a6c1b44ee11299f652a54f261d0355523
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 53948f3d470fb85ddfda8dbcf5b64024755ca50e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145366"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461617"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -37,7 +37,7 @@ ms.locfileid: "50145366"
 
 
 
-Le tableau du schéma de recherche avancée contient des informations sur les ordinateurs de l’organisation, notamment la version du système d’exploitation, les utilisateurs `DeviceInfo` actifs et le nom de l’ordinateur. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur les appareils de l’organisation, notamment la version du système d’exploitation, les utilisateurs `DeviceInfo` actifs et le nom de l’ordinateur. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -47,18 +47,29 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `ClientVersion` | string | Version de l’agent de point de terminaison ou du capteur en cours d’exécution sur l’ordinateur |
-| `PublicIP` | string | Adresse IP publique utilisée par l’ordinateur intégré pour se connecter au service Microsoft Defender for Endpoint. Il peut s’agit de l’adresse IP de l’ordinateur lui-même, d’un périphérique NAT ou d’un proxy. |
+| `PublicIP` | string | Adresse IP publique utilisée par l’ordinateur intégré pour se connecter au service Microsoft Defender for Endpoint. Il peut s’agit de l’adresse IP de l’ordinateur lui-même, d’un périphérique NAT ou d’un proxy |
 | `OSArchitecture` | string | Architecture du système d’exploitation s’exécutant sur la machine |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, tels que Windows 10 et Windows 7 |
 | `OSBuild` | string | Version de build du système d’exploitation en cours d’exécution sur l’ordinateur |
 | `IsAzureADJoined` | booléen | Indicateur booléen pour savoir si l’ordinateur est joint à Azure Active Directory |
-| `DeviceObjectId` | string | Identificateur unique de l’appareil dans Azure AD |
+| `AadObjectId` | string | Identificateur unique de l’appareil dans Azure AD |
 | `LoggedOnUsers` | string | Liste de tous les utilisateurs connectés à l’ordinateur au moment de l’événement au format de tableau JSON |
 | `RegistryDeviceTag` | string | Balise d’ordinateur ajoutée via le Registre |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
 |`AdditionalFields` | string | Informations supplémentaires sur l’événement au format de tableau JSON |
 | `OSVersion` | string | Version du système d’exploitation s’exécutant sur la machine |
 | `MachineGroup` | string | Groupe d’ordinateurs de l’ordinateur. Ce groupe est utilisé par le contrôle d’accès basé sur un rôle pour déterminer l’accès à l’ordinateur |
+
+Le tableau fournit des informations sur l’appareil en fonction des pulsations, qui sont des rapports ou signaux périodiques `DeviceInfo` d’un appareil. Toutes les quinze minutes, l’appareil envoie une pulsation partielle qui contient des attributs qui changent fréquemment comme `LoggedOnUsers` . Une fois par jour, une pulsation complète contenant les attributs de l’appareil est envoyée.
+
+Vous pouvez utiliser l’exemple de requête suivant pour obtenir l’état le plus récent d’un appareil :
+
+```kusto
+// Get latest information on user/device
+DeviceInfo
+| where DeviceName == "example" and isnotempty(OSPlatform)
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
 
 ## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

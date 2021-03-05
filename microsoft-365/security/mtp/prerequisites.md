@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee1777debdb91a6ac73737db2db48e434ed3e2e2
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: afa5cd42545eddafb1d0ec1a6d88eb0903e07820
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930089"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454550"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Conditions préalables de Microsoft 365 Defender
 
@@ -40,18 +40,15 @@ Découvrez les licences et autres conditions requises pour l’approvisionnement
 ## <a name="licensing-requirements"></a>Critères de licence
 L’une de ces licences vous donne accès aux fonctionnalités de Microsoft 365 Defender dans le Centre de sécurité Microsoft 365 sans frais supplémentaires :
 
-- Microsoft 365 E5 ou A5
-- Sécurité Microsoft 365 E5 ou sécurité A5
-- Windows 10 Entreprise E5 ou A5
+- Microsoft 365 E5 ou A5
+- Microsoft 365 E5 Sécurité ou A5 Sécurité
+- Windows 10 Entreprise E5 ou A5
 - Enterprise Mobility + Security (EMS) E5 ou A5 
-- Office 365 E5 ou A5
+- Office 365 E5 ou A5
 - Microsoft Defender pour point de terminaison
 - Microsoft Defender pour l’identité 
-- Microsoft Cloud App Security
-- Defender pour Office 365 (Plan 2)
-
-> [!NOTE]
-> Actuellement, les licences d’essai pour Office 365 ne permettent pas d’accéder à Microsoft 365 Defender.
+- Microsoft Cloud App Security
+- Defender pour Office 365 (Plan 2)
 
 Pour plus d’informations, consultez les plans de [service Microsoft 365 Entreprise.](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)
 
@@ -61,7 +58,7 @@ Pour plus d’informations, consultez les plans de [service Microsoft 365 Entrep
 Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. Dans le Centre d'administration, accédez à **Facturation** > **Licences**.
 
 >[!NOTE]
-> Le rôle d’administrateur  de facturation ou de lecteur **global** dans [Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) doit vous être attribué pour pouvoir voir les informations de licence. Si vous rencontrez des problèmes d’accès, veuillez contacter un administrateur général.
+> Vous devez avoir le  rôle d’administrateur de facturation ou de lecteur **global** dans [Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) pour pouvoir voir les informations de licence. Si vous rencontrez des problèmes d’accès, veuillez contacter un administrateur général.
 
 ## <a name="required-permissions"></a>Autorisations requises
 Vous devez être administrateur **général ou** **administrateur** de sécurité dans Azure Active Directory pour activer Microsoft 365 Defender. Pour obtenir la liste des rôles requis pour utiliser Microsoft 365 Defender et des informations sur la façon dont l’accès aux données est réglementé, voir la gestion de l’accès à [Microsoft 365 Defender.](mtp-permissions.md)
@@ -72,11 +69,11 @@ Accédez à Microsoft 365 Defender dans le Centre de sécurité Microsoft 365 à
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilité pour LES ÉTATS-UNIS GCC, GCC High et d’autres institutions gouvernementales des États-Unis
 Actuellement, Microsoft 365 Defender *n’est pas* disponible pour :
 - Cloud communautaire pour le gouvernement américain (GCC)
-- Cloud communautaire du gouvernement américain élevé (GCC High)
+- Cloud communautaire pour le gouvernement américain élevé (GCC High)
 - Département de la Défense des États-Unis
 - Toutes les institutions gouvernementales américaines titulaires de licences commerciales
 
 ## <a name="related-topics"></a>Rubriques connexes
-- [Vue d’ensemble de Microsoft 365 Defender](microsoft-threat-protection.md)
+- [Présentation de Microsoft 365 Defender](microsoft-threat-protection.md)
 - [Activer Microsoft 365 Defender](mtp-enable.md)
 - [Gérer l’accès et les autorisations](mtp-permissions.md)

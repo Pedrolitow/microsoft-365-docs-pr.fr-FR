@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b810d7b15ef47a33a0675086219d2193cea00f2e
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: dd1af6e9ece8a3728db74eadc163ce277e6e84eb
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145018"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461616"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -53,8 +53,6 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
 | `FileType` | string | Type d’extension de fichier |
 | `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
-| `MalwareFilterVerdict` | string | Verdict de la pile de filtrage d’e-mails selon que l’e-mail contient des programmes malveillants : programme malveillant, programme non malveillant |
-| `MalwareDetectionMethod` | string | Méthode utilisée pour détecter les programmes malveillants dans le courrier électronique : moteur anti-programme malveillant, réputation du fichier, pièces jointes sécurisées |
 | `ThreatTypes` | string | Verdict de la pile de filtrage du courrier électronique selon que l’e-mail contient des programmes malveillants, du hameçonnage ou d’autres menaces |
 | `ThreatNames` | string | Nom de détection des programmes malveillants ou autres menaces détectées |
 | `DetectionMethods` | string | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |

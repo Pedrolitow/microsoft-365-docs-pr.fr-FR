@@ -1,7 +1,7 @@
 ---
 title: Appareils archivés bureau géré Microsoft
 description: Appareils proches du retrait que vous pouvez toujours inscrire, mais dont la durée de vie de support sera raccourcie
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d386000fab8894dd60790d3514ae93feaa03a22
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: e392d071b77226a23001d8628c3b9c711b06e228
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841278"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454582"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés bureau géré Microsoft
 
@@ -39,14 +39,15 @@ Pour être inscrit au Bureau géré Microsoft, un appareil doit être l’un des
 | Modèle  | Spécifications minimales  | Autres conditions requises   | Date de retrait |
 |---------|---------|---------|---------|
 |Dell Precision 3530| 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | **22 mai 2023** |
-|Dell Latitude 5300 / 5300 2-en-1 / 5400 / 5500 | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | **1er juin 2024**  |
+|Dell Latitude 5300 / 5300 2-in-1 / 5400 / 5500 | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | **1er juin 2024**  |
 |Dell Latitude 5490 | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | **9 janvier 2023** |
 |Dell Latitude 7200 2-en-1 | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | **1er mai 2024** |
 |Dell Latitude 7300 / 7400 / 7400 2-en-1 | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | **1er mai 2024**  |
 |Dell Latitude 7390 / 7390 2-en-1 / 7490 | 256 Go / Intel i5 / 8 Go de RAM   | Appareil photo ir requis | **9 janvier 2023** |
-|Dell Optiplex 3070 | 128 Go / Intel i3 / 8 Go de RAM | Aucune | **1er mai 2025**  |
+|Dell Latitude 7410 / 7410 2-en-1 | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | **19 mai 2025**  |
+|Dell Optiplex 3070 | 128 Go / Intel i3 / 8 Go de RAM | Aucun | **1er mai 2025**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec capteur 5VS01AV, appareil photo IR ou empreinte digitale requis  | **15 février 2023** |
-|HP EliteBook 830 / 840 / 850 G6| 128 Go / Intel i5 / 8 Go de RAM | Référence SKU avec 5VS01AV, appareil photo IR ou capteur d’empreinte digitale requis  | **30 novembre 2023** |
+|HP EliteBook 830 / 840 / 850 G6| 128 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS01AV, appareil photo IR ou capteur d’empreinte digitale requis  | **30 novembre 2023** |
 |HP Elite x2 1013 G3| 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS03AV, caméra IR requise |**14 mai 2023** |
 |HP EliteBook x360 1030 G5| 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS01AV, caméra IR requise |**14 mai 2023** |
 |HP EliteBook x360 1030 G6| 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS01AV, caméra IR requise |**30 novembre 2023** |
@@ -57,12 +58,12 @@ Pour être inscrit au Bureau géré Microsoft, un appareil doit être l’un des
 |HP EliteDesk 800 G4 SFF | 128 Go / Intel i3 / 8 Go de RAM | Référence (SKU) avec 5VS04AV | **18 juillet 2023** |
 |HP EliteOne 800 G4 23.8in AIO |128 Go / Intel i3 / 8 Go de RAM |Référence (SKU) avec 5VS04AV| **18 juillet 2023** |
 |Station de travail mobile HP ZBook 14u/15u G6 |256 Go / Intel i5 / 8 Go de RAM |Référence (SKU) avec 5VS04AV, caméra IR requise| **30 novembre 2023** |
-|Surface Book 2| 256 Go / Intel i5 / 8 Go de RAM | Aucune | **16 novembre 2022** |
-|Surface Go| 128 Go / Intel 4415Y / 8 Go de RAM | Aucune | **2 août 2023** |
-|Surface Laptop| 256 Go / Intel i5 / 8 Go de RAM | Aucune | **20 mai 2022** |
-|Surface Laptop 2| 128 Go / Intel i5 / 8 Go de RAM | Aucune | **16 octobre 2023** |
-|Surface Pro| 256 Go / Intel i5 / 8 Go de RAM | Aucune | **15 juin 2022** |
-|Surface Pro 6| 128 Go / Intel i5 / 8 Go de RAM | Aucune | **16 octobre 2023** |
+|Surface Book 2| 256 Go / Intel i5 / 8 Go de RAM | Aucun | **16 novembre 2022** |
+|Surface Go| 128 Go / Intel 4415Y / 8 Go de RAM | Aucun | **2 août 2023** |
+|Surface Laptop| 256 Go / Intel i5 / 8 Go de RAM | Aucun | **20 mai 2022** |
+|Surface Laptop 2| 128 Go / Intel i5 / 8 Go de RAM | Aucun | **16 octobre 2023** |
+|Surface Pro| 256 Go / Intel i5 / 8 Go de RAM | Aucun | **15 juin 2022** |
+|Surface Pro 6| 128 Go / Intel i5 / 8 Go de RAM | Aucun | **16 octobre 2023** |
 
 En outre, l’appareil doit également :
 

@@ -1,6 +1,6 @@
 ---
 title: Créer une rubrique dans rubriques microsoft
-description: Création d’une rubrique dans Rubriques Microsoft.
+description: Comment créer une rubrique dans rubriques Microsoft Topics.
 author: efrene
 ms.author: efrene
 manager: pamgreen
@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c3ba9ce6675e81a99309243db251b34a21a4b43f
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279387"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454158"
 ---
 # <a name="create-a-new-topic"></a>Création d’un projet 
 
@@ -46,21 +46,23 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
 
     ![Nouvelle rubrique du centre de rubriques](../media/knowledge-management/new-topic.png) </br> 
 
-- Page Gérer les rubriques : tout utilisateur titulaire d’une licence qui dispose de l’autorisation Qui peut gérer les **rubriques** (gestionnaires de connaissances) peut créer une rubrique à partir de la page Gérer les rubriques dans le Centre de rubriques en sélectionnant Page Nouvelle <b>rubrique.</b></br> 
+- Page Gérer les rubriques : tout utilisateur titulaire d’une licence qui dispose de l’autorisation Qui peut gérer les **rubriques** (gestionnaires de connaissances) peut créer une rubrique à partir de la page Gérer les rubriques dans le Centre de rubriques en sélectionnant La page Nouvelle <b>rubrique.</b></br> 
 
     ![Nouvelle rubrique de gestion des rubriques](../media/knowledge-management/new-topic-topic-center.png) </br> 
 
 ### <a name="to-create-a-new-topic"></a>Pour créer une rubrique :
 
-1. Dans la section **Nom de cette** rubrique, tapez le nom de la nouvelle rubrique.
+1. Sélectionnez l’option de création d’une page de rubriques à partir du ruban de la page Gérer les rubriques.
+
+2.   Dans la section **Nom de cette** rubrique, tapez le nom de la nouvelle rubrique.
 
     ![Nommez cette rubrique](../media/knowledge-management/k-new-topic-page.png) </br> 
 
 
-2. Dans la section <b>Autres noms,</b> tapez tous les autres noms que la rubrique peut faire référence. 
+3. Dans la section <b>Autres noms,</b> tapez tous les autres noms que la rubrique peut faire référence. 
 
     ![Autres noms](../media/knowledge-management/alt-names.png) </br> 
-3. Dans la section <b>Description,</b> tapez quelques phrases qui décrivent la rubrique. 
+4. Dans la section <b>Description,</b> tapez quelques phrases qui décrivent la rubrique. 
 
     ![Description de la rubrique](../media/knowledge-management/description.png)</br>
 
@@ -85,13 +87,13 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
 
     ![Section Sites associés](../media/knowledge-management/related-sites.png)</br>
 
-    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
+    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site, ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
     
     ![Sélectionner un site](../media/knowledge-management/sites.png)</br>
 
 7. La <b>section Rubriques connexes</b> montre les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une <b></b> autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
 
-   ![Voir aussi](../media/knowledge-management/related-topic.png)</br>  
+   ![Rubriques connexes](../media/knowledge-management/related-topic.png)</br>  
 
     Vous pouvez ensuite donner une description de la façon dont les rubriques sont liées, puis sélectionner <b>Mettre à jour.</b></br>
 

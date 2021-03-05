@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Découvrez comment déployer des modules pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
-ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: Découvrez comment déployer des add-ins pour des utilisateurs et des groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
+ms.openlocfilehash: 4dc7552f2341097b95e763297d2f701f162f83ec
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114500"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454393"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Déployer des compléments dans le centre d’administration
 
@@ -61,14 +61,14 @@ Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des éta
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Déploiement d’un complément Office à l’aide du centre d’administration
 
-Avant de commencer, voir Déterminer si le déploiement centralisé de vos modules de déploiement fonctionne [pour votre organisation.](centralized-deployment-of-add-ins.md)
+Avant de commencer, voir Déterminer si le déploiement centralisé des modules est efficace [pour votre organisation.](centralized-deployment-of-add-ins.md)
   
 1. Dans le Centre d’administration, allez à la page  \> **Paramètres des add-ins.** Si vous ne voyez pas la **page** De ment, go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
     
 2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
  
     > [!NOTE]
-    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Les applications intégrées sont visibles uniquement par les administrateurs globaux, tandis que pour d’autres, l’ancienne expérience existe toujours. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
     
 3. Sélectionnez une option et suivez les instructions.
   
@@ -77,7 +77,7 @@ Avant de commencer, voir Déterminer si le déploiement centralisé de vos modul
     Vous pouvez afficher les add-ins disponibles par catégories : Suggéré pour **vous,** **Évaluation** ou **Nom**. Seuls les add-ins gratuits sont disponibles à partir de l’Office Store. Les compléments payants ne sont pas pris en charge pour le moment. Une fois que vous avez sélectionné un module, acceptez les conditions générales pour continuer. <br/> 
 
     > [!NOTE] 
-    > Avec l’option Office Store, les mises à jour et améliorations sont automatiquement déployées pour les utilisateurs.
+    > Avec l’option Office Store, les mises à jour et les améliorations sont automatiquement déployées pour les utilisateurs.
 
 5. Sur la page suivante, sélectionnez **Tout le monde**, **Utilisateurs/groupes spécifiques** ou **Moi uniquement** pour spécifier les personnes vers lesquelles le complément est déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. <br/>
 
@@ -99,7 +99,7 @@ Avant de commencer, voir Déterminer si le déploiement centralisé de vos modul
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Points à considérer lors de l'affectation d'un complément à des utilisateurs et groupes
 
-Les administrateurs peuvent affecter un complément à tout le monde ou à des utilisateurs et groupes spécifiques. Chaque option a des conséquences spécifiques :
+Les administrateurs globaux et les administrateurs Exchange peuvent affecter un add-in à tout le monde ou à des utilisateurs et groupes spécifiques. Chaque option a des conséquences spécifiques :
   
 - **Tout le monde** Cette option affecte le add-in à tous les utilisateurs de l’organisation. Utilisez-la avec parcimonie et uniquement pour les compléments qui sont réellement universels pour l'ensemble de votre organisation. 
     
@@ -109,7 +109,7 @@ Les administrateurs peuvent affecter un complément à tout le monde ou à des u
 
 - **Moi uniquement** Si vous affectez un add-in à vous-même, il est affecté uniquement à votre compte, ce qui est idéal pour tester le module.
     
-L’option la plus efficace pour votre organisation dépend de votre configuration. Toutefois, nous vous recommandons d’effectuer des affectations à l’aide de groupes. En tant qu’administrateur, il peut être plus facile de gérer les modules en utilisant des groupes et en contrôlant l’appartenance à ces groupes plutôt que d’affecter des utilisateurs individuels à chaque fois. Dans certains cas, vous pouvez restreindre l’accès à un petit groupe d’utilisateurs en attribuant des affectations à des utilisateurs spécifiques en leur attribuant manuellement des utilisateurs.
+L’option la plus efficace pour votre organisation dépend de votre configuration. Toutefois, nous vous recommandons d’effectuer des affectations à l’aide de groupes. En tant qu’administrateur, il peut être plus facile de gérer les modules en utilisant des groupes et en contrôlant l’appartenance à ces groupes plutôt que d’affecter des utilisateurs individuels à chaque fois. Dans certains cas, vous pouvez restreindre l’accès à un petit groupe d’utilisateurs en attribuant des affectations à des utilisateurs spécifiques en attribuant manuellement des utilisateurs.
   
 ## <a name="more-about-office-add-ins-security"></a>En savoir plus sur la sécurité des add-ins Office
 

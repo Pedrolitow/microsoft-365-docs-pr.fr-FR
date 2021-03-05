@@ -11,16 +11,16 @@ ms.service: ''
 ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 435544de1016552c6ce3d39c73f7127223f36331
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 036dbc4029cc7e8308ad295ccd8b45dc3879a6f8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107707"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453956"
 ---
-# <a name="microsoft-viva-topics-discovery-and-curation"></a>Découverte et curation des rubriques microsoft 
+# <a name="microsoft-viva-topics-discovery-and-curation"></a>Découverte et gestion des rubriques de Microsoft Viva 
 
 Cette rubrique organise des informations sur les connaissances dans votre environnement Microsoft 365. Nous avons tous lu des documents et des pages de site dans des termes que nous ne connaissez pas. De nombreuses fois, nous arrêtons ce que nous faisons pour consacrer beaucoup de temps à la recherche d’informations supplémentaires.
 
@@ -28,7 +28,7 @@ Cette rubrique utilise Microsoft Graph et l’IA pour identifier **les sujets** 
 - Project
 - Événement
 - Organisation
-- Lieu
+- Emplacement
 - Produit
 - Travail créatif
 - Champ d’étude
@@ -39,7 +39,7 @@ L’IA identifie les personnes et le contenu connectés à la rubrique, et si un
 - Personnes qui sont peut-être au fait de cette rubrique.
 - Fichiers, pages et sites associés à la rubrique.
 
-Les propriétés sont identifiées à partir des fichiers et des pages qui font partie des preuves permettant d’identifier la rubrique. D’autres noms et acronymes sont issus de ces fichiers et pages. La description courte est provenant de ces fichiers et pages, ou d’Internet via Wikipedia. Le fichier source, la page ou l’article Wikipedia est référencé avec les propriétés suggérées. Les utilisateurs sont suggérés en fonction de leurs contributions actives (par exemple, les modifications) dans les fichiers et les pages. Une référence au montant des contributions d’une personne particulière fournit un conseil sur la raison pour laquelle la personne a été identifiée. Les fichiers, les pages et les sites sont classés selon qu’ils sont au cœur de la rubrique, s’ils peuvent donner une vue d’ensemble ou une présentation de la rubrique. 
+Les propriétés sont identifiées à partir des fichiers et des pages qui font partie des preuves permettant d’identifier la rubrique. D’autres noms et acronymes sont issus de ces fichiers et pages. La description courte est provenant de ces fichiers et pages, ou d’Internet via Wikipedia. Le fichier source, la page ou l’article Wikipedia est référencé avec les propriétés suggérées. Les utilisateurs sont suggérés en fonction de leurs contributions actives (par exemple, les modifications) dans les fichiers et les pages. Une référence au montant des contributions d’une personne particulière fournit un conseil sur la raison pour laquelle la personne a été identifiée. Les fichiers, les pages et les sites sont classés selon qu’ils sont au cœur de la rubrique, qu’ils soient en vue ou en présentation. 
 
 Toutes les rubriques identifiées ne seront pas utiles à votre organisation. Il n’a peut-être identifié aucun des autres noms, descriptions, personnes ou contenus appropriés. La possibilité d’ajouter des rubriques qui ne sont pas identifiées, de conserver les rubriques suggérées et de les organiser est donc essentielle pour améliorer la qualité des rubriques qui sont découvrables dans votre organisation.
 
@@ -53,7 +53,7 @@ En outre, les utilisateurs pourront également trouver des rubriques par le biai
 
 Topics se souhaite une contribution humaine pour améliorer la qualité de vos rubriques. Alors que l’IA identifie et suggère initialement des rubriques, les modifications manuelles du contenu des collaborateurs, l’ajout manuel de rubriques, la confirmation des utilisateurs pour les propriétés et le contenu découverts par l’IA et les commentaires sur l’utilité des rubriques sont tous essentiels.
 
-- Les rubriques peuvent être examinées par **les responsables de connaissances** de votre organisation. Le gestionnaire de connaissances peut consulter les rubriques qu’il est autorisé à consulter. Dans la page Gérer les rubriques du Centre de rubriques, ils peuvent choisir de confirmer les rubriques générées par l’IA (« sujets suggérés ») comme valides, de rejeter les rubriques pour empêcher que le contenu ne soit considéré comme une rubrique, de créer des rubriques qui n’ont pas été découvertes par l’IA ou d’identifier les rubriques qui pourraient tirer parti de quelques modifications par des experts techniques pour être plus utiles ou précises. Pour plus d’informations, [voir Gérer les rubriques dans le centre de rubriques.](manage-topics.md)
+- Les rubriques peuvent être examinées par **les responsables de connaissances** de votre organisation. Le gestionnaire de connaissances peut consulter les rubriques qu’il est autorisé à consulter. Dans la page Gérer les rubriques du Centre de rubriques, ils peuvent choisir de confirmer les rubriques générées par l’IA (« sujets suggérés ») comme valides, de rejeter les rubriques pour empêcher que le contenu ne soit considéré comme une rubrique, de créer des rubriques qui n’ont pas été découvertes par l’IA ou d’identifier les rubriques qui pourraient bénéficier de quelques modifications par des experts techniques pour être plus utiles ou précises. Pour plus d’informations, [voir Gérer les rubriques dans le centre de rubriques.](manage-topics.md)
 
 - Vous pouvez attribuer *des autorisations* créer et modifier des rubriques à n’importe quel utilisateur sous licence afin qu’il puisse apporter des modifications à des rubriques existantes ou créer de nouvelles rubriques. Cela permet aux utilisateurs qui sont informés de la rubrique de mettre à jour la page de rubrique directement pour apporter des corrections ou ajouter des informations supplémentaires. Ils peuvent également ajouter de nouvelles rubriques que l’IA n’a pas pu identifier. S’il existe suffisamment d’informations sur ces rubriques ajoutées manuellement et que l’IA est en mesure d’identifier ce type de rubrique, des suggestions supplémentaires de l’IA peuvent améliorer ces rubriques ajoutées manuellement. Ensemble, les humains et l’IA peuvent conserver des connaissances précises au fil du temps et ne pas avoir ce reste sur une seule personne. Pour plus d’informations, [voir Créer une rubrique et](https://docs.microsoft.com/microsoft-365/knowledge/create-a-topic) modifier une [rubrique.](https://docs.microsoft.com/microsoft-365/knowledge/edit-a-topic)
 
@@ -61,7 +61,7 @@ Topics se souhaite une contribution humaine pour améliorer la qualité de vos r
 
     1. L’identification de la rubrique dans la page SharePoint a-t-elle été utile ? Vous avez la possibilité de supprimer la mise en surbrill valeur si elle n’est pas précise ou utile. Si suffisamment de personnes indiquent qu’une rubrique n’est pas correctement identifiée sur une page particulière, ce surbrillant sera finalement supprimé pour tous les utilisateurs. 
 
-    2. Indique si la rubrique suggérée est utile pour l’organisation. Si suffisamment de personnes indiquent que la rubrique suggérée est utile, la rubrique est automatiquement confirmée. Sinon, si la rubrique suggérée n’est pas utile, elle est automatiquement rejetée. Le Gestionnaire de connaissances peut observer cette activité dans l’affichage Gérer les rubriques.
+    2. Indique si la rubrique suggérée est utile pour l’organisation. Si suffisamment de personnes indiquent que la rubrique suggérée est utile, la rubrique est automatiquement confirmée. Sinon, si la rubrique suggérée n’est pas utile, la rubrique est automatiquement rejetée. Le Gestionnaire de connaissances peut observer cette activité dans l’affichage Gérer les rubriques.
 
     3. Si les suggestions de personnes et de ressources sont utiles.
 

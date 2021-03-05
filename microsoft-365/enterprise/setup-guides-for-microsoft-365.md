@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérer la planification et la configuration de Microsoft 365 ou Office 365 à l’aide des guides de configuration.
-ms.openlocfilehash: 9bddf24e4133dfac32a0175b754709ba0c840760
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 6ad00819b172d7cb0cfb5b63a93c0910df5517e6
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794423"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454146"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -42,9 +42,9 @@ Les guides d’installation sont accessibles à partir de [la](https://aka.ms/se
 
    ![Fiche & guides de formation dans le Centre d’administration Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. Sélectionnez **des instructions de configuration personnalisées.**
+3. Sélectionnez **des instructions d’installation personnalisées.**
 
-   ![Capture d’écran de la page de conseils d’installation dans le Centre d’administration Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ![Capture d’écran de la page de conseils de configuration dans le Centre d’administration Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 >[!NOTE]
 >Les autorisations d’administrateur client sont requises pour accéder au Centre d’administration Microsoft 365.
@@ -61,7 +61,7 @@ Vous pouvez utiliser les guides pour en savoir plus sur des fonctionnalités Mic
 
 ### <a name="prepare-your-environment"></a>Préparer votre environnement
 
-Le [guide Préparer votre environnement](https://aka.ms/prepareyourenvironment) vous aide à préparer l’environnement de votre organisation pour les services Microsoft 365 et Office 365. Quels que soient vos objectifs, il existe des tâches que vous devez effectuer pour garantir un déploiement réussi. Pour éviter toute erreur lors de la préparation de votre environnement, des instructions pas à pas vous sont fournies pour connecter votre domaine, ajouter des utilisateurs, attribuer des licences, configurer le courrier électronique avec Exchange Online et installer ou déployer des applications Office. 
+Le [guide Préparer votre environnement](https://aka.ms/prepareyourenvironment) vous aide à préparer l’environnement de votre organisation pour les services Microsoft 365 et Office 365. Quels que soient vos objectifs, il existe des tâches que vous devrez effectuer pour garantir un déploiement réussi. Pour éviter toute erreur lors de la préparation de votre environnement, des instructions pas à pas vous sont fournies pour connecter votre domaine, ajouter des utilisateurs, attribuer des licences, configurer le courrier électronique avec Exchange Online et installer ou déployer des applications Office. 
 
 ### <a name="email-setup-advisor"></a>Conseiller d’installation de messagerie
 
@@ -73,7 +73,7 @@ Lorsque vous migrez la boîte aux lettres d’un utilisateur Gmail vers Microsof
 
 ### <a name="microsoft-365-deployment-advisor"></a>Conseiller de déploiement Microsoft 365
 
-Le conseiller de déploiement [Microsoft 365](https://aka.ms/microsoft365setupguide) vous fournit des conseils pour la configuration des outils de productivité, des stratégies de sécurité et des fonctionnalités de gestion des appareils. Avec un abonnement Microsoft 365 Business Premium ou Microsoft 365 entreprise, vous pouvez utiliser ce conseiller pour configurer les appareils de votre organisation. 
+Le conseiller de déploiement [Microsoft 365](https://aka.ms/microsoft365setupguide) vous fournit des conseils pour la configuration des outils de productivité, des stratégies de sécurité et des fonctionnalités de gestion des appareils. Avec un abonnement Microsoft 365 Business Premium ou Microsoft 365 pour entreprise, vous pouvez utiliser ce conseiller pour configurer les appareils de votre organisation. 
 
 Vous recevrez des conseils et un accès aux ressources pour activer vos services cloud, mettre à jour les appareils vers la dernière version prise en charge de Windows 10 et joindre des appareils à Azure Active Directory (Azure AD), le tout dans un emplacement central.
 
@@ -88,19 +88,19 @@ Vous recevrez des conseils pour optimiser le trafic des appareils des travailleu
 
 Windows Virtual Desktop est un service complet de virtualisation de bureau et d’application en cours d’exécution dans le cloud. Il s’agit de la seule infrastructure VDI (Virtual Desktop Infrastructure) qui offre une gestion simplifiée, des sessions multiples de Windows 10, des optimisations pour Microsoft 365 Apps et la prise en charge des environnements rdS (Remote Desktop Services). Déployez et faites passer vos applications et bureaux Windows à Azure en quelques minutes et obtenez des fonctionnalités intégrées de sécurité et de conformité. 
 
-Le [guide d’installation de Windows Virtual Desktop](https://aka.ms/wvdsetupguide) fournit aux administrateurs des ressources de planification et les conditions préalables au déploiement, des conseils de configuration et des ressources supplémentaires. 
+Le [guide d’installation de Windows Virtual Desktop](https://aka.ms/wvdsetupguide) fournit aux administrateurs des ressources de planification et les conditions préalables au déploiement, des conseils d’installation et des ressources supplémentaires. 
 
 ### <a name="microsoft-edge-setup-guide"></a>Guide de configuration de Microsoft Edge
 
 Microsoft Edge a été entièrement reconstruit pour vous apporter des performances et des compatibilités de premier niveau, la sécurité et la confidentialité que vous méritez, et de nouvelles fonctionnalités conçues pour vous apporter le meilleur du web.
 
-Le guide de configuration [de Microsoft Edge](https://aka.ms/edgeadvisor) vous aidera à configurer la découverte de sites d’entreprise pour voir quels sites accédés dans votre organisation peuvent avoir besoin d’utiliser le mode IE, examiner et configurer des fonctionnalités de sécurité importantes, configurer des stratégies de confidentialité et des stratégies supplémentaires pour répondre aux besoins de votre organisation et gérer l’accès web sur vos appareils. Vous pouvez télécharger Microsoft Edge sur des appareils individuels, ou nous allons vous montrer comment déployer plusieurs utilisateurs dans votre organisation avec Configuration Manager ou Microsoft Intune. 
+Le guide de configuration [de Microsoft Edge](https://aka.ms/edgeadvisor) vous aidera à configurer la découverte de sites d’entreprise pour voir quels sites accédés à votre organisation peuvent avoir besoin d’utiliser le mode IE, examiner et configurer des fonctionnalités de sécurité importantes, configurer des stratégies de confidentialité et des stratégies supplémentaires pour répondre aux besoins de votre organisation et gérer l’accès web sur vos appareils. Vous pouvez télécharger Microsoft Edge sur des appareils individuels, ou nous allons vous montrer comment déployer plusieurs utilisateurs dans votre organisation avec Configuration Manager ou Microsoft Intune. 
 
 ### <a name="microsoft-search-setup-guide"></a>Guide de configuration de Microsoft Search (recherche Microsoft)
 
-Recherche Microsoft permet à votre organisation de trouver ce dont elle a besoin pour effectuer ce sur quoi elle travaille. Qu’elle recherche des personnes, des fichiers, des organigrammes, des sites ou des réponses à des questions courantes, votre organisation peut utiliser Microsoft Search (recherche Microsoft) tout au long de leur journée de travail pour obtenir des réponses.
+Recherche Microsoft aide votre organisation à trouver ce dont elle a besoin pour effectuer ce sur quoi elle travaille. Qu’elle recherche des personnes, des fichiers, des organigrammes, des sites ou des réponses à des questions courantes, votre organisation peut utiliser Microsoft Search (recherche Microsoft) tout au long de leur journée de travail pour obtenir des réponses.
 
-Le guide de configuration de Microsoft Search (recherche [Microsoft)](https://aka.ms/MicrosoftSearchSetup) vous permet de configurer Microsoft Search (recherche Microsoft) si vous souhaitez piloter un groupe d’utilisateurs ou le déployer à tous les membres de votre organisation. Vous allez affecter des administrateurs de recherche et des éditeurs de recherche, puis personnaliser l’expérience de recherche pour vos utilisateurs avec des réponses et des options supplémentaires, comme l’ajout de l’extension Bing à Chrome ou la définition de Bing comme moteur de recherche par défaut.
+Le guide de configuration de Microsoft Search (recherche [Microsoft)](https://aka.ms/MicrosoftSearchSetup) vous aide à configurer Microsoft Search (recherche Microsoft) si vous souhaitez piloter un groupe d’utilisateurs ou le déployer à tous les membres de votre organisation. Vous allez affecter des administrateurs de recherche et des éditeurs de recherche, puis personnaliser l’expérience de recherche pour vos utilisateurs avec des réponses et des options supplémentaires, comme l’ajout de l’extension Bing à Chrome ou la définition de Bing comme moteur de recherche par défaut.
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guide de configuration de la cogestion d’Intune Configuration Manager
 
@@ -151,13 +151,13 @@ Avec le guide de configuration [de Microsoft Intune,](https://aka.ms/intunesetup
 Le [conseiller Microsoft Defender pour points](https://aka.ms/mdatpsetup) de terminaison fournit des instructions qui aideront votre réseau d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Faites une évaluation éclairée de la vulnérabilité de votre organisation et déterminez le package de déploiement et les méthodes de configuration les plus pratiques. 
 
 >[!NOTE]
->Une licence en volume Microsoft est requise pour Microsoft Defender pour endpoint.
+>Une licence en volume Microsoft est requise pour Microsoft Defender pour le point de terminaison.
 
 ### <a name="exchange-online-protection-setup-guide"></a>Guide de configuration d’Exchange Online Protection
 
 Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrier électronique basé sur le cloud pour la protection contre le courrier indésirable et les programmes malveillants, avec des fonctionnalités pour protéger votre organisation contre les violations de stratégie de messagerie. 
 
-Utilisez le guide de configuration [d’Exchange Online Protection](https://aka.ms/EOPguidance) pour configurer EOP en sélectionnant parmi les trois scénarios de déploiement les boîtes aux lettres sur site, les boîtes aux lettres hybrides (mélange de boîtes aux lettres sur site et cloud) ou toutes les boîtes aux lettres cloud adaptées à votre &mdash; &mdash; organisation. Le guide fournit des informations et des ressources pour configurer et passer en revue les licences de vos utilisateurs, attribuer des autorisations dans le Centre d’administration Microsoft 365 et configurer les stratégies anti-programme malveillant et de courrier indésirable de votre organisation dans le Centre de sécurité & conformité. 
+Utilisez le guide de configuration [d’Exchange Online Protection](https://aka.ms/EOPguidance) pour configurer EOP en sélectionnant parmi les trois scénarios de déploiement les boîtes aux lettres sur site, les boîtes aux lettres hybrides (mélange de boîtes aux lettres sur site et en nuage) ou toutes les boîtes aux lettres cloud adaptées à votre &mdash; &mdash; organisation. Le guide fournit des informations et des ressources pour configurer et passer en revue les licences de vos utilisateurs, attribuer des autorisations dans le Centre d’administration Microsoft 365 et configurer les stratégies anti-programme malveillant et de courrier indésirable de votre organisation dans le Centre de sécurité & conformité. 
 
 ### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender pour le conseiller Office 365
 
@@ -215,4 +215,10 @@ Utilisez le guide Déployer [Office](https://aka.ms/officeremoteinstall) pour le
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Déployer et mettre à jour Microsoft 365 Apps avec Configuration Manager
 
-Pour les organisations qui utilisent Configuration Manager, vous pouvez utiliser le conseiller Déployer et mettre à jour [Microsoft 365 Apps avec Configuration Manager](https://aka.ms/oppinstall) pour générer un script qui configurera automatiquement votre déploiement de Microsoft 365 Apps à l’aide des meilleures pratiques recommandées par les ingénieurs FastTrack. Utilisez ce guide pour créer vos groupes de déploiement, personnaliser vos applications et fonctionnalités Office, configurer des installations dynamiques ou légères, puis exécuter le script pour créer les applications, les règles de déploiement automatique et les collections d’appareils dont vous avez besoin pour cibler votre déploiement. 
+Pour les organisations qui utilisent Configuration Manager, vous pouvez utiliser le conseiller Déployer et mettre à jour [Microsoft 365 Apps avec Configuration Manager](https://aka.ms/oppinstall) pour générer un script qui configurera automatiquement votre déploiement microsoft 365 Apps à l’aide des meilleures pratiques recommandées par les ingénieurs FastTrack. Utilisez ce guide pour créer vos groupes de déploiement, personnaliser vos applications et fonctionnalités Office, configurer des installations dynamiques ou légères, puis exécuter le script pour créer les applications, les règles de déploiement automatique et les collections d’appareils dont vous avez besoin pour cibler votre déploiement. 
+
+### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>Intégrer une application cloud tierce à Azure AD
+
+Improve the user experience and provide an additional layer of security by integrating your third-party app with ‎Azure Active Directory (Azure AD). Avec cette expérience de bout en bout, vous pouvez faire la majeure partie de la configuration directement à partir de cet Assistant. Le cas échéant, nous vous redirigeons vers la page de configuration correspondante.
+
+Utilisez [l’Assistant](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) Intégrer une application cloud tierce pour intégrer une application cloud tierce à Azure AD.

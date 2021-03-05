@@ -1,7 +1,7 @@
 ---
 title: Outils d’évaluation de la préparation
 description: Explique les deux outils, les vérifications qu’ils exécutent et la signification des résultats
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1a00f7d5fb37cc9eea3f9454d473703084960864
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 0311450386f3b7c9f950276340901daacc06b2a8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142932"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453934"
 ---
 # <a name="readiness-assessment-tools"></a>Outils d’évaluation de la préparation
 
@@ -22,13 +22,13 @@ Pour une expérience la plus fluide possible lorsque vous vous inscrivez au Bure
 
 ## <a name="downloadable-readiness-assessment-checker-for-devices-and-network"></a>Téléchargeable readiness assessment checker for devices and network
 
-Pour plus d’informations sur l’utilisation de l’outil de vérification de l’évaluation de la disponibilité téléchargeable, consultez l’outil de vérification de l’évaluation de [la disponibilité téléchargeable.](readiness-assessment-downloadable.md)
+Pour plus d’informations sur l’utilisation de l’outil de vérification de l’évaluation de la disponibilité [téléchargeable, voir Téléchargeable readiness assessment checker](readiness-assessment-downloadable.md).
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Outil d’évaluation de la préparation en ligne pour les paramètres de gestion
 
-L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec bureau géré Microsoft. Bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Après 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
+L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec bureau géré Microsoft. [](https://aka.ms/mmdart) Bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Au bout de 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
 
-Toute personne ayant au moins le rôle Lecteur global ou Administrateur Intune peut exécuter cet outil, mais deux des vérifications[(](readiness-assessment-fix.md#conditional-access-policies) les stratégies d’accès conditionnel et l’authentification [multifacteur](readiness-assessment-fix.md#multifactor-authentication) nécessitent des autorisations supplémentaires.
+Toute personne ayant au moins le rôle Lecteur global ou Administrateur Intune pourra exécuter cet outil, mais deux des vérifications[(](readiness-assessment-fix.md#conditional-access-policies) les stratégies d’accès conditionnel et l’authentification [multifacteur](readiness-assessment-fix.md#multifactor-authentication) nécessitent des autorisations supplémentaires.
  
 L’outil d’évaluation vérifie les éléments ci-après :
 
@@ -36,7 +36,7 @@ L’outil d’évaluation vérifie les éléments ci-après :
 
 |Chèque  |Description  |
 |---------|---------|
-|Profil Autopilot Deployment     | Vérifie que l’affectation du profil Autopilot Deployment ne s’applique pas à tous les appareils (le profil ne doit être affecté à aucun appareil bureau géré Microsoft.)        |
+|Profil autopilot deployment     | Vérifie que l’affectation du profil Autopilot Deployment ne s’applique pas à tous les appareils (le profil ne doit être affecté à aucun appareil bureau géré Microsoft.)        |
 |Connecteurs de certificat     | Vérifie l’état des connecteurs de certificat pour s’assurer qu’ils sont actifs   |
 |Accès conditionnel     | Vérifie que les stratégies d’accès conditionnel ne  sont pas affectées à tous les utilisateurs (les stratégies d’accès conditionnel ne doivent pas être affectées aux comptes de service Bureau géré Microsoft.)    |
 |Stratégies de conformité des appareils     | Vérifie que les stratégies de conformité Intune  ne sont pas affectées à tous les utilisateurs (les stratégies ne doivent pas être affectées à des appareils bureau géré Microsoft.)    |
@@ -84,7 +84,7 @@ Pour chaque vérification, l’outil signalera l’un des quatre résultats poss
 |Prêt     | Aucune action n’est requise avant de terminer l’inscription.        |
 |Avis    | Suivez les étapes de l’outil pour une expérience de l’inscription et pour les utilisateurs. Vous *pouvez terminer* l’inscription, mais vous devez résoudre ces problèmes avant de déployer votre premier appareil.        |
 |Non prêt | *L’inscription échoue* si vous ne corrigez pas ces problèmes. Suivez les étapes de l’outil pour les résoudre.        |
-|Error | Le rôle Azure Active Director (AD) que vous utilisez ne peut pas exécuter cette vérification. |
+|Erreur | Le rôle Azure Active Director (AD) que vous utilisez ne peut pas exécuter cette vérification. |
 
 ## <a name="after-enrollment"></a>Après l’inscription
 

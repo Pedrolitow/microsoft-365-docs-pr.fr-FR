@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: ac8e4b8cdcdfd4d2de0c48a22500338c7a8480a8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279409"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454170"
 ---
 # <a name="edit-an-existing-topic"></a>Modifier une rubrique existante 
 
@@ -29,16 +29,16 @@ ms.locfileid: "50279409"
 
 </br>
 
-Dans Rubriques de Rubriques, vous pouvez modifier une rubrique existante. Vous devrez peut-être le faire si vous souhaitez corriger ou ajouter des informations supplémentaires à une page de rubriques existante. 
+Dans Rubriques de Rubriques, vous pouvez modifier une rubrique existante. Vous devrez peut-être le faire si vous souhaitez corriger ou ajouter des informations supplémentaires à une page de rubrique existante. 
 
 > [!Note] 
-> Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations de personnes que vous ajoutez manuellement lors de la modification d’une rubrique existante sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher les rubriques. 
+> Alors que les informations d’une rubrique qui sont rassemblées par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations de personnes que vous ajoutez manuellement lors de la modification d’une rubrique existante sont visibles pour tous les utilisateurs qui sont autorisés à afficher des rubriques. 
 
 ## <a name="requirements"></a>Conditions requises
 
 Pour modifier une rubrique existante, vous devez :
 - Vous avez une licence Topics.
-- Avoir des autorisations [**sur qui peut créer ou modifier des rubriques**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres des rubriques Topics. 
+- Avoir des autorisations [**sur qui peut créer ou modifier des rubriques**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres d’autorisations de la rubrique Rubriques. 
 
 > [!Note] 
 > Les utilisateurs qui sont autorisés à gérer des rubriques dans le centre de rubriques (gestionnaires de connaissances) sont déjà autorisés à créer et modifier des rubriques.
@@ -60,7 +60,7 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
    ![Contrôle d’édition](../media/knowledge-management/topic-page-edit.png) </br>  
 
 
-2. Dans la section <b>Autres noms,</b> tapez tous les autres noms que la rubrique peut faire référence. 
+2. Dans la section <b>Autres noms,</b> tapez les autres noms que la rubrique peut faire référence. 
 
     ![Autres noms](../media/knowledge-management/alt-names.png) </br> 
 3. Dans la section <b>Description,</b> tapez quelques phrases qui décrivent la rubrique. Ou si une description existe déjà, mettez-la à jour si nécessaire.
@@ -92,7 +92,7 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
 
     Vous pouvez modifier un fichier ou une page suggéré en fichier ou page épinglé en sélectionnant l’icône épinglée.
 
-7.  La section <b>Sites associés</b> présente les sites qui ont des informations sur la rubrique. 
+7.  La section <b>Sites associés</b> présente les sites qui ont des informations sur cette rubrique. 
 
     ![Section Sites associés](../media/knowledge-management/related-sites.png)</br>
 

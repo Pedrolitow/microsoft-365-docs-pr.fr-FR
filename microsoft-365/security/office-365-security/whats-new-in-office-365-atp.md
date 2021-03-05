@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fd999c27598db6f17073cfe82e4c4f91ffb1667
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7b6175f507f54adf357e40ea44c39f5e495a1b14
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407203"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454488"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -44,8 +44,9 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 ## <a name="februarymarch-2021"></a>Février/mars 2021 
 
 - Intégration de l’ID d’alerte (recherche à l’aide de l’ID d’alerte et Alert-Explorer navigation) dans les expériences [de recherche](threat-explorer.md)
-- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de chasse](threat-explorer.md)
+- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de recherche](threat-explorer.md)
 - Extension de la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 (limite précédente) à 30 jours dans les expériences de [repérage](threat-explorer.md)
+- Nouveaux pivots  de repérage appelés domaine emprunt d’identité et utilisateur dont l’identité est usurpée dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés.  Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
 ## <a name="december-2020"></a>Décembre 2020
 
@@ -59,8 +60,8 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 ## <a name="septemberoctober-2020"></a>Septembre/Octobre 2020
 
 - [Vérifier vos stratégies à l’aide de l’Analyseur de configuration](configuration-analyzer-for-security-policies.md)
-- Fonctionnalités étendues dans l’Explorateur de [menaces,](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) y compris les utilisateurs les plus ciblés, les règles de transport et les connecteurs (informations De Defender pour Office 365 dans l’Explorateur de menaces [(le](threat-explorer.md) courrier électronique a été autorisé/bloqué par la stratégie client/utilisateur) (Defender pour Office 365 Plan 2)
-- Surfacing URL threats in [Threat Explorer](threat-explorer.md#threats-in-urls) (malware, phish, spam, or none) (Defender for Office 365 Plan 2)
+- Fonctionnalités étendues dans l’Explorateur de [menaces,](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) y compris les utilisateurs les plus ciblés, les règles de transport et les connecteurs (Informations de Defender pour Office 365 dans l’Explorateur de menaces [(le](threat-explorer.md) courrier électronique a été autorisé/bloqué par la stratégie client/utilisateur) (Defender pour Office 365 Plan 2)
+- Détection des menaces d’URL dans l’Explorateur de [menaces](threat-explorer.md#threats-in-urls) (programmes malveillants, hameçonnage, courrier indésirable ou aucun) (Defender pour Office 365 Plan 2)
 - [Améliorations apportées à](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) l’Explorateur de menaces d’expérience de recherche avec des mises à jour autour des menaces, des actions supplémentaires, des emplacements de remise et une vue chronologique mise à jour (Defender pour Office 365 Plan 2)
 
 ## <a name="julyaugust-2020"></a>Juillet/août 2020
@@ -74,8 +75,8 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 ## <a name="januaryfebruary-2020"></a>Janvier/février 2020
 
-- Disponibilité générale des affichages campagne dans Microsoft Defender pour [Office 365](campaigns.md) (Microsoft Defender pour Office 365 Plan 2)
-- Améliorations apportées à [l’Explorateur](threat-explorer.md) de menaces pour [](investigate-malicious-email-that-was-delivered.md)permettre aux équipes d’opérations de sécurité de rechercher et de filtrer sur plusieurs champs lors de l’étude du courrier électronique : (Microsoft Defender pour Office 365 Plan 2)
+- [Disponibilité générale des affichages campagne dans Microsoft Defender pour Office 365](campaigns.md) (Microsoft Defender pour Office 365 Plan 2)
+- Améliorations apportées à [l’Explorateur](threat-explorer.md) de menaces pour [](investigate-malicious-email-that-was-delivered.md)permettre aux équipes en charge des opérations de sécurité de rechercher et de filtrer sur plusieurs champs lors de l’étude du courrier électronique : (Microsoft Defender pour Office 365 Plan 2)
   - Emplacement de remise et actions spéciales
   - Direction (entrant, sortant ou intra-organisationnel)
   - Filtres NOT avancés (il s’agit d’options de filtrage avancées qui incluent ne contient pas, n’inclut pas, etc.)

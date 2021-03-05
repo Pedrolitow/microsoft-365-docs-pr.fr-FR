@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
 description: Découvrez comment trouver des ressources pour les rubriques microsoft.
-ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 31031697b7825b725c020952a6217b278aa09f02
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242865"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454122"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Présentation des rubriques microsoft
 
@@ -39,9 +39,9 @@ Les ressources de cette section vous aident à en savoir plus sur ce qu’est To
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
-|En savoir plus sur les rubriques Desy|[Vue d’ensemble des rubriques microsoft](topic-experiences-overview.md)|
+|En savoir plus sur les rubriques Desy|[Vue d’ensemble des rubriques de Microsoft Viva](topic-experiences-overview.md)|
 |Découvrez comment les rubriques sont découvertes et suggérées par l’IA|[Découverte des rubriques Microsoft](topic-experiences-discovery.md)|
-|En savoir plus sur la sécurité des rubriques|[Sécurité et confidentialité microsoft](topic-experiences-security-privacy.md)|
+|En savoir plus sur la sécurité des rubriques|[Sécurité et confidentialité de Microsoft Contrôle](topic-experiences-security-privacy.md)|
 |Découvrez comment obtenir Des rubriques|[Page du produit Rubriques Microsoft](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
 |Voir les ressources dans le centre de ressources Microsoft Tech Community|[Communauté technique Des rubriques Microsoft](https://resources.techcommunity.microsoft.com/viva-topics/)|
 

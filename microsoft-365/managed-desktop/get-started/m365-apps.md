@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 98995084fb7de9ecb434b70b5d38793a20675f19
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 26e62d6e59f1f90e35d9e18e6eed917a66876645
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840341"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453920"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
@@ -53,8 +53,8 @@ Bureau géré Microsoft échelons chaque version pour identifier les problèmes 
 
 - Test : zéro jour
 - First: zero days
-- Rapide : 7 jours
-- Étendue : 21 jours
+- Rapide : 3 jours
+- Étendue : 7 jours
 
 Bureau géré Microsoft définit une échéance de mise à jour de sept jours [pour](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) les appareils. Une fois la mise à jour disponible, elle doit être installée dans un délai de sept jours. Les [](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) utilisateurs sont avertis que des mises à jour sont requises à plusieurs emplacements : l’application, dans la bac système 12 heures avant l’échéance, et ils reçoivent un avertissement de 15 minutes avant l’échéance. Toutes les applications Microsoft 365 doivent être fermées pour que la mise à jour soit terminée.
 
@@ -66,7 +66,7 @@ Lors d’une publication, Bureau géré Microsoft surveille les taux d’erreur 
 
 ### <a name="delivery-optimization"></a>Optimisation de la distribution
 
-L’optimisation de la distribution est une technologie de distribution pair à pair disponible dans Windows 10. Il permet aux appareils de partager du contenu, tel que des mises à jour, que les appareils ont téléchargés à partir de Microsoft sur Internet. Son utilisation permet de réduire la bande passante réseau, car un appareil peut obtenir des parties de la mise à jour à partir d’un autre appareil sur son réseau local au lieu de devoir télécharger entièrement la mise à jour à partir de Microsoft.
+L’optimisation de la distribution est une technologie de distribution pair à pair disponible dans Windows 10. Il permet aux appareils de partager du contenu, tel que des mises à jour, que les appareils ont téléchargés à partir de Microsoft sur Internet. Son utilisation peut aider à réduire la bande passante réseau, car un appareil peut obtenir des parties de la mise à jour à partir d’un autre appareil sur son réseau local au lieu de devoir télécharger entièrement la mise à jour à partir de Microsoft.
 
 [L’optimisation de](https://docs.microsoft.com/deployoffice/delivery-optimization) la distribution est activée par défaut sur les appareils exécutant les éditions Windows 10 Entreprise ou Windows 10 Éducation. 
 
@@ -120,7 +120,7 @@ La stratégie de version cible est parfois utilisée par Le Bureau géré Micros
 
 **Valeur par défaut**: Activé
 
-Ce paramètre est requis pour que Bureau géré Microsoft réponde à ses objectifs de mise à jour pour les applications Microsoft 365. 
+Ce paramètre est requis pour que Le Bureau géré Microsoft réponde à ses objectifs de mise à jour pour les applications Microsoft 365. 
 
 ### <a name="first-run-settings"></a>Paramètres de première run 
 
@@ -140,7 +140,7 @@ La première fois qu’un utilisateur ouvre Outlook, il est invité à installer
 
 ## <a name="other-settings"></a>Autres paramètres
 
-Il existe d’autres paramètres d’application Microsoft 365 que Bureau géré Microsoft peut éventuellement configurer en votre nom. 
+Il existe d’autres paramètres de l’application Microsoft 365 que Bureau géré Microsoft peut éventuellement configurer en votre nom. 
 
 ### <a name="disable-personal-onedrive"></a>Désactiver OneDrive personnel
 
@@ -157,7 +157,7 @@ Il existe de nombreuses autres stratégies que Bureau géré Microsoft n’a pas
 3.  Dans la page **Créer une** configuration de stratégie, faites les choses suivantes :
     - Entrez un nom.
     - Fournissez une description (facultative).
-    - Dans **les affectations,** choisissez si cette stratégie s’applique à tous les utilisateurs de Microsoft 365 Apps for enterprise, ou uniquement aux utilisateurs qui accèdent anonymement aux documents à l’aide d’Office pour le web.
+    - Dans **les affectations,** choisissez si cette stratégie s’applique à tous les utilisateurs de Microsoft 365 Apps pour entreprise, ou uniquement aux utilisateurs qui accèdent anonymement aux documents à l’aide d’Office pour le web.
     - Sélectionnez le groupe de sécurité basé sur AAD affecté à la configuration de la stratégie. Chaque configuration de stratégie ne peut être affectée qu’à un seul groupe, et chaque groupe ne peut être affecté qu’à une seule configuration de stratégie.
     - Configurez les paramètres de stratégie à inclure dans la configuration de stratégie. Vous pouvez effectuer une recherche sur le nom du paramètre de stratégie pour trouver le paramètre de stratégie que vous souhaitez configurer. Vous pouvez également filtrer l’application, si la stratégie est une ligne de base de sécurité recommandée et si la stratégie a été configurée. La colonne de plateforme indique si la stratégie est appliquée aux applications Microsoft 365 pour les appareils Windows, Office pour le web ou tous.
 4.  Une fois que vous avez effectué vos sélections, choisissez **Créer.**
