@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: a5c3e84e4ca8874f99a07294dccfd2e4ad7ed81f
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417378"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423861"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -89,7 +89,7 @@ Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditio
         - Android : pas encore pris en charge
     
     - **Client et scanneur d’étiquetage unifié Azure Information Protection :** 
-        - Une préversion publique (version minimale 2.10.45.0) que vous pouvez installer à partir du [Centre de téléchargement Microsoft](https://aka.ms/aip-coauth-pp) et de l’une des versions de Microsoft 365 Apps for enterprise pour Windows répertoriées dans l’élément précédent.
+        - Version Public Preview (nom d’installation de AzInfoProtection_2.10.46_Co-création_PublicPreview.exe) que vous pouvez installer à partir du [ Centre de téléchargement Microsoft ](https://www.microsoft.com/en-us/download/details.aspx?id=53018)et de l’une des versions des applications Microsoft 365 Entreprise pour Windows répertoriées dans l’élément précédent.
     
     - **Application de synchronisation OneDrive pour Windows ou macOS :**
         - Version minimale 19.002.0121.0008
@@ -122,6 +122,8 @@ Avant d’activer le paramètre de client pour la co-édition de fichiers chiffr
     - **Chiffrement à double clé** est sélectionnée.
     
     Pour les étiquettes avec l’une de ces configurations de chiffrement, les étiquettes s’affichent dans les applications Office. Toutefois, lorsque les utilisateurs sélectionnent ces étiquettes et que personne d'autre ne modifie le document, ils sont avertis que la co-édition et l'enregistrement automatique ne seront pas disponibles. Si quelqu’un d’autre modifie le document, un message indique à l’utilisateur que les étiquettes ne peuvent pas être appliquées.
+
+- Si vous utilisez le client d’étiquette unifiée Azure Information Protection : consultez la documentation de ce client d' [pour plus d’informations requises ou de limitations](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
 
 ## <a name="known-issues-for-this-preview"></a>Problèmes connus dans cette préversion
 
