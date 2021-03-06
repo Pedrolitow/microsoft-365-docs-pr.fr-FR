@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 1fd32aa688256f1ac8e63eec902c3a18b2143f09
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 63f40ff12972695e391bd25973fd9a7195fab5b1
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242913"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515027"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender pour le point de terminaison dans le Centre de sécurité Microsoft 365
 
@@ -41,13 +41,16 @@ Le Centre de sécurité [Microsoft 365](overview-security-center.md) amélioré 
 
 Si vous connaissez le Centre de sécurité Microsoft Defender, cet article vous aide à décrire certaines des modifications et améliorations apportées au Centre de sécurité Microsoft 365 amélioré. Toutefois, certains éléments nouveaux et mis à jour doivent être pris en compte.
 
-Historiquement, le [Centre de sécurité Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) a été le point de terminaison de Microsoft Defender. Les équipes de sécurité de l’entreprise l’ont utilisée pour surveiller et répondre aux alertes d’activité potentielle de menaces avancées persistantes ou de violations de données. Pour réduire le nombre de portails, le Centre de sécurité Microsoft 365 sera le centre de surveillance et de gestion de la sécurité au sein de vos identités, données, appareils, applications et infrastructure Microsoft.
+Historiquement, le [Centre de sécurité Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) a été le point de terminaison de Microsoft Defender. Les équipes de sécurité de l’entreprise l’ont utilisée pour surveiller et répondre aux alertes de menaces avancées persistantes potentielles ou de violations de données. Pour réduire le nombre de portails, le Centre de sécurité Microsoft 365 sera le centre de surveillance et de gestion de la sécurité au sein de vos identités, données, appareils, applications et infrastructure Microsoft.
 
 Microsoft Defender pour le point de terminaison dans le Centre de sécurité Microsoft 365 prend en charge l’octroi de l’accès aux fournisseurs de services de sécurité [gérés (MSSP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) de la même manière que l’accès est accordé dans le Centre de sécurité [Microsoft Defender.](mssp-access.md)
 
 
 > [!IMPORTANT]
-> Ce que vous voyez dans le Centre de sécurité Microsoft 365 dépend de vos abonnements actuels. Par exemple, si vous n’avez pas de licence pour Microsoft Defender pour Office 365, la section Collaboration sur les e-mails & ne s’affiche pas.
+> Ce que vous voyez dans le Centre de sécurité Microsoft 365 dépend de vos abonnements actuels. Par exemple, si vous n’avez pas de licence pour Microsoft Defender pour Office 365, la section Collaboration sur les & courrier électronique ne s’affiche pas.
+
+>[!Note]
+>Le nouveau portail unifié n’est pas disponible pour : US Government Community Cloud (GCC) US Government Community Cloud High (GCC High) Us Department of Defense All US government institutions with commercial licenses
 
 Jetez un œil au Centre de sécurité Microsoft 365 amélioré [https://security.microsoft.com](https://security.microsoft.com) :
 
@@ -61,8 +64,8 @@ Ce tableau est une référence rapide des modifications apportées entre le Cent
 
 |**Catégorie**  |**Description de la modification**  |
 |---------|---------|
-| [Incidents & alertes](incidents-overview.md)  | Dans le Centre de sécurité Microsoft 365, vous pouvez gérer les incidents et les alertes sur l’ensemble de vos points de terminaison, e-mail et identités. Nous avons convergé l’expérience pour vous aider à trouver plus facilement les événements connexes. Pour plus d’informations, voir [Vue d’ensemble des incidents.](incidents-overview.md)   |
-| [Chasse](advanced-hunting-overview.md)  |  La modification des règles de détection personnalisées créées dans Microsoft Defender pour le point de terminaison afin d’inclure les tables d’identité et de messagerie les déplace automatiquement vers Microsoft 365 Defender. Leurs alertes correspondantes apparaissent également dans Microsoft 365 Defender. Pour plus d’informations sur ces modifications, voir [Migrer des règles de détection personnalisées.](advanced-hunting-migrate-from-mdatp.md#migrate-custom-detection-rules) Le `DeviceAlertEvents` tableau de recherche avancée n’est pas disponible dans Microsoft 365 Defender. Pour interroger des informations d’alerte spécifiques à l’appareil dans Microsoft 365 Defender, vous pouvez utiliser les tables et les tableaux pour prendre en charge davantage d’informations provenant d’un ensemble de `AlertInfo` `AlertEvidence` sources variés. Créer votre prochaine requête liée à l’appareil en suivant les requêtes [d’écriture sans DeviceAlertEvents](advanced-hunting-migrate-from-mdatp.md#write-queries-without-devicealertevents).|
+| [Incidents & alertes](incidents-overview.md)  | Dans le Centre de sécurité Microsoft 365, vous pouvez gérer les incidents et les alertes sur l’ensemble de vos points de terminaison, e-mail et identités. Nous avons convergé l’expérience pour vous aider à trouver plus facilement des événements connexes. Pour plus d’informations, voir [Vue d’ensemble des incidents.](incidents-overview.md)   |
+| [Chasse](advanced-hunting-overview.md)  |  La modification des règles de détection personnalisées créées dans Microsoft Defender pour le point de terminaison afin d’inclure des tables d’identité et de messagerie les déplace automatiquement vers Microsoft 365 Defender. Leurs alertes correspondantes apparaissent également dans Microsoft 365 Defender. Pour plus d’informations sur ces modifications, voir [Migrer des règles de détection personnalisées.](advanced-hunting-migrate-from-mdatp.md#migrate-custom-detection-rules) Le `DeviceAlertEvents` tableau de recherche avancée n’est pas disponible dans Microsoft 365 Defender. Pour interroger des informations d’alerte spécifiques à l’appareil dans Microsoft 365 Defender, vous pouvez utiliser les tables et les tableaux pour prendre en charge davantage d’informations provenant d’un ensemble de `AlertInfo` `AlertEvidence` sources variés. Créer votre prochaine requête liée à l’appareil en suivant les requêtes [d’écriture sans DeviceAlertEvents](advanced-hunting-migrate-from-mdatp.md#write-queries-without-devicealertevents).|
 |[Centre de actions](mtp-action-center.md)    | Répertorie les actions en attente et terminées qui ont été effectuées à la suite d’examens automatisés et d’actions de correction. Auparavant, le centre de gestion des actions du Centre de sécurité Microsoft Defender listait les actions en attente et terminées pour les actions de correction effectuées uniquement sur les appareils, tandis que les enquêtes automatisées listaient les alertes et l’état. Dans le Centre de sécurité Microsoft 365 amélioré, le centre de mise en œuvre regroupe les actions de correction et les enquêtes sur le courrier électronique, les appareils et les utilisateurs, le tout dans un seul emplacement.  |
 | [Analyses de menaces](threat-analytics.md) |  Déplacé vers le haut de la barre de navigation pour faciliter la découverte et l’utilisation. Inclut désormais des informations sur les menaces pour les points de terminaison et la messagerie et la collaboration.    |
 
@@ -70,7 +73,7 @@ Ce tableau est une référence rapide des modifications apportées entre le Cent
 
 |**Catégorie**  |**Description de la modification**  |
 |---------|---------|
-|Recherche   |  Au lieu d’être dans l’en-tête, la barre de recherche Microsoft Defender pour les points de terminaison se déplace sous la section Points de terminaison. Vous pouvez continuer à rechercher des appareils, des fichiers, des utilisateurs, des URL, des adresses INTERNET, des vulnérabilités, des logiciels et des recommandations.  |
+|Rechercher   |  Au lieu d’être dans l’en-tête, la barre de recherche Microsoft Defender pour les points de terminaison se déplace sous la section Points de terminaison. Vous pouvez continuer à rechercher des appareils, des fichiers, des utilisateurs, des URL, des adresses INTERNET, des vulnérabilités, des logiciels et des recommandations.  |
 |[Tableau de bord](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Il s’agit de votre tableau de bord des opérations de sécurité. Consultez une vue d’ensemble du nombre d’alertes actives déclenchées, des appareils à risque, des utilisateurs à risque et du niveau de gravité pour les alertes, les appareils et les utilisateurs. Vous pouvez également voir si des appareils ont des problèmes de capteur, l’état global de votre service et la façon dont des alertes non résolues ont été détectées. |
 |Inventaire des appareils | Aucune modification. |
 |[Gestion des vulnérabilités](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Le nom a été raccourci pour tenir dans le volet de navigation. Il est identique à la section gestion des menaces et des vulnérabilités, avec toutes les pages en dessous.     |
@@ -86,7 +89,7 @@ Ce tableau est une référence rapide des modifications apportées entre le Cent
 |**Catégorie**  |**Description de la modification**  |
 |---------|---------|
 | Rapports  | Consultez les rapports sur les points de terminaison et les & collaboration, notamment la protection contre les menaces, l’état et la conformité des appareils et les appareils vulnérables. |
-| Intégrité  |  Actuellement, liens vers la page « État du service » dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com/). |
+| Intégrité  |  Actuellement, liens vers la page « État du service » dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com/) |
 | Paramètres |  Gérez vos paramètres pour le Centre de sécurité Microsoft 365, Microsoft 365 Defender, les points de terminaison, la collaboration & courrier électronique, les identités et la découverte d’appareils.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Navigation et fonctionnalités de sécurité Microsoft 365
@@ -106,7 +109,7 @@ Regroupe la gestion des incidents et des alertes sur vos e-mails, appareils et i
 
 Recherchez de manière proactive les menaces, les programmes malveillants et les activités malveillantes sur vos points de terminaison, boîtes aux lettres Office 365, et bien plus encore à l’aide de requêtes de recherche [avancées.](advanced-hunting-overview.md) Ces requêtes puissantes peuvent être utilisées pour rechercher et examiner les indicateurs et entités de menace pour les menaces connues et potentielles.
 
-[Les règles de détection](custom-detection-rules.md) personnalisées peuvent être conçues à partir de requêtes de repérage avancées pour vous aider à surveiller de manière proactive les événements qui peuvent indiquer une activité de violation et des appareils mal configurés.
+[Les](custom-detection-rules.md) règles de détection personnalisées peuvent être conçues à partir de requêtes de repérage avancées pour vous aider à surveiller de manière proactive les événements qui peuvent indiquer une activité de violation et des appareils mal configurés.
 
 
 ### <a name="action-center"></a>Centre de actions
@@ -119,7 +122,7 @@ Le centre de réponse vous montre les enquêtes créées par les fonctionnalité
 
 Obtenez des renseignements sur les menaces de la part d’experts en matière de sécurité Microsoft. L’analyse des menaces permet aux équipes de sécurité d’être plus efficaces face aux menaces émergentes. L’analyse des menaces inclut :
 
-- Détections et atténuations liées à la messagerie électronique de Microsoft Defender pour Office 365. Cela s’ajoute aux données de point de terminaison déjà disponibles à partir de Microsoft Defender for Endpoint.
+- Détections et atténuations liées à la messagerie électronique de Microsoft Defender pour Office 365. Cela s’ajoute aux données de point de terminaison déjà disponibles à partir de Microsoft Defender pour Endpoint.
 - Affichage Des incidents liés aux menaces.
 - Expérience améliorée permettant d’identifier et d’utiliser rapidement des informations actionnables dans les rapports.
 
@@ -145,7 +148,7 @@ Si vous utilisez [l’API SIEM defender pour point](/windows/security/threat-pro
 
 ### <a name="email-alerts"></a>Alertes par courrier électronique
 
-Vous pouvez continuer à utiliser les alertes par courrier électronique pour Defender pour endpoint. Nous avons ajouté de nouveaux liens dans les e-mails qui pointent vers la page d’alerte ou la page incident dans le Centre de sécurité Microsoft 365. Pour plus d’informations, voir Redirection des comptes de Microsoft Defender for Endpoint vers le Centre de sécurité [Microsoft 365.](/microsoft-365/security/mtp/microsoft-365-security-mde-redirection.md)
+Vous pouvez continuer à utiliser les alertes par courrier électronique pour Defender for Endpoint. Nous avons ajouté de nouveaux liens dans les e-mails qui pointent vers la page d’alerte ou la page incident dans le Centre de sécurité Microsoft 365. Pour plus d’informations, voir Redirection des comptes de Microsoft Defender for Endpoint vers le Centre de sécurité [Microsoft 365.](/microsoft-365/security/mtp/microsoft-365-security-mde-redirection.md)
 
 ## <a name="related-information"></a>Informations connexes
 

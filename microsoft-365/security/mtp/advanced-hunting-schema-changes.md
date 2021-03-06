@@ -1,6 +1,6 @@
 ---
-title: Changements de nommage dans le schéma de recherche avancée Microsoft 365 Defender
-description: Suivre et passer en revue les tables et les colonnes des modifications d’attribution de noms dans le schéma de recherche avancé
+title: Changements d’appellation dans le schéma de recherche avancée Microsoft 365 Defender
+description: Suivre et passer en revue les tables et colonnes de modifications d’attribution de noms dans le schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461666"
+ms.locfileid: "50509301"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de recherche avancé : modifications d’attribution de noms
 
@@ -76,7 +76,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 
 ## <a name="february-2021"></a>Février 2021
 
-1. Dans les tables [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) et [EmailEvents,](advanced-hunting-emailevents-table.md) nous avons supprimé les colonnes et les colonnes et les avons remplacées `MalwareFilterVerdict` par la `PhishFilterVerdict` `ThreatTypes` colonne. Nous avons également supprimé les colonnes et les colonnes et les avons `MalwareDetectionMethod` `PhishDetectionMethod` remplacées par la `DetectionMethods` colonne. Cette simplification nous permet de fournir plus d’informations sous les nouvelles colonnes. Le mappage est fourni ci-dessous.
+1. Dans les tables [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) et [EmailEvents,](advanced-hunting-emailevents-table.md) les colonnes et les colonnes ont été remplacées `MalwareFilterVerdict` par la `PhishFilterVerdict` `ThreatTypes` colonne. Les `MalwareDetectionMethod` `PhishDetectionMethod` colonnes et les colonnes ont également été remplacées par la `DetectionMethods` colonne. Cette simplification nous permet de fournir plus d’informations sous les nouvelles colonnes. Le mappage est fourni ci-dessous.
 
 | Nom du tableau | Nom de colonne d’origine | Nouveau nom de colonne | Raison du changement
 |--|--|--|--|
@@ -86,11 +86,11 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inclure d’autres types de menaces |
 
 
-2. Dans les `EmailAttachmentInfo` tableaux `EmailEvents` et les tableaux, nous avons ajouté la colonne `ThreatNames` pour fournir plus d’informations sur la menace de courrier électronique. Cette colonne contient des valeurs telles que le courrier indésirable ou le hameçonnage.
+2. Dans les `EmailAttachmentInfo` `EmailEvents` tableaux et les tableaux, la colonne a été ajoutée pour fournir plus `ThreatNames` d’informations sur la menace de messagerie. Cette colonne contient des valeurs telles que le courrier indésirable ou le hameçonnage.
 
-3. Dans le tableau [DeviceInfo,](advanced-hunting-deviceinfo-table.md) nous avons remplacé la `DeviceObjectId` colonne en fonction des commentaires des `AadDeviceId` clients.
+3. Dans la table [DeviceInfo,](advanced-hunting-deviceinfo-table.md) la colonne a été remplacée par la colonne en fonction `DeviceObjectId` des commentaires des `AadDeviceId` clients.
 
-4. Dans le [tableau DeviceEvents,](advanced-hunting-deviceevents-table.md) nous avons mis à jour plusieurs noms ActionType pour mieux refléter la description de l’action. Vous trouverez plus d’informations ci-dessous.
+4. Dans la table [DeviceEvents,](advanced-hunting-deviceevents-table.md) plusieurs noms ActionType ont été modifiés pour mieux refléter la description de l’action. Vous trouverez plus d’informations sur les modifications ci-dessous.
 
 | Nom du tableau | Nom ActionType d’origine | Nouveau nom ActionType | Raison du changement
 |--|--|--|--|
@@ -104,6 +104,6 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

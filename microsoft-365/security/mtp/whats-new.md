@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4e065ff4da80b50ea11ff2069e8938c59f16f962
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 72c6ec814c5f3317f582cb4bfb21858677fbb7e1
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165990"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509121"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -36,14 +36,14 @@ Les fonctionnalités suivantes sont généralement disponibles dans la dernière
 
 Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux :
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
+https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
-## <a name="february-2021"></a>Février 2021
-- (Aperçu) Le Centre [de sécurité Microsoft https://security.microsoft.com) 365 amélioré (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience place Defender pour Endpoint et Defender pour Office 365 au centre. [En savoir plus sur ce qui a changé.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
+## <a name="february-2021"></a>Février 2021
+- (Aperçu) Le Centre [de sécurité Microsoft https://security.microsoft.com) 365 amélioré (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience met Defender pour Point de terminaison et Defender pour Office 365 au centre. [En savoir plus sur ce qui a changé.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
 
 ## <a name="september-2020"></a>Septembre 2020
-- [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Rechercher les événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce [tableau de schéma de](advanced-hunting-overview.md) recherche avancée couvre une plage d’événements liés à l’identité et d’événements système sur le contrôleur de domaine.
+- [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Rechercher les événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce [tableau de schéma de](advanced-hunting-overview.md) recherche avancé couvre une plage d’événements liés à l’identité et d’événements système sur le contrôleur de domaine.
 - [Fonction AssignedIPAddresses()](advanced-hunting-assignedipaddresses-function.md) <br> Utilisez cette fonction dans vos requêtes de recherche avancées pour obtenir rapidement les dernières adresses IP attribuées à un appareil ou les adresses IP les plus récentes à partir d’une heure spécifique.
 
 ## <a name="july-2020"></a>Juillet 2020
@@ -52,7 +52,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Accédez à la recherche](advanced-hunting-go-hunt.md)<br> Faites rapidement pivoter de l’investigation d’un incident à l’inspection d’un événement spécifique, d’un utilisateur, d’un appareil ou d’autres types d’entités sur le chasse avancée.
 
 ## <a name="june-2020"></a>Juin 2020
-- Flux Twitter <br> Obtenez les dernières recherches sur la sécurité, l’intelligence des menaces, les actualités sur les produits, etc., directement dans le tableau de bord.
+- Flux Twitter <br> Obtenez les dernières recherches sur la sécurité, l’intelligence des menaces, les actualités sur les produits, etc. directement dans le tableau de bord.
 - [Table de schéma EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporez des informations sur les actions de post-remise prises sur les messages électroniques dans vos requêtes de recherche avancées.
 - [Inspecter les enregistrements dans le recherche avancée](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Examinez rapidement les enregistrements dans les résultats de votre requête avec le nouveau panneau d’informations.
 
@@ -66,5 +66,5 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="march-2019"></a>Mars 2019
 - Repérage avancé <br> Page d’accueil de différentes fonctionnalités de recherche qui vous permet de rechercher de manière proactive les menaces qui affectent le courrier électronique, les données, les appareils et les identités.
-- [Niveau de sécurité Microsoft](microsoft-secure-score.md) <br> Mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration prises. Le fait de suivre les recommandations du Score de sécurité peut protéger votre organisation contre les menaces. 
+- [Niveau de sécurité Microsoft](microsoft-secure-score.md) <br> Mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration prises. En suivant les recommandations du Score de sécurité, vous pouvez protéger votre organisation contre les menaces. 
 - [Rapports](monitoring-and-reporting.md) <br>  Propose une série de cartes couvrant différents domaines que les analystes et les administrateurs de sécurité s’en sentent dans le cadre de leurs opérations quotidiennes.

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour affecter des paramètres de communication par utilisateur avec des stratégies Skype Entreprise Online.'
-ms.openlocfilehash: 6ff9fce3e0287313f6725b370b6ba89cb939eb3a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6ee237e5d2ee0c9f472f372a6aa66c9612336265
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689861"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514979"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Affecter des stratégies Skype Entreprise Online par utilisateur avec PowerShell pour Microsoft 365
 
@@ -31,18 +31,19 @@ L’utilisation de PowerShell pour Microsoft 365 est un moyen efficace d’affec
 
 Suivez ces instructions pour exécuter les commandes (sautez les étapes que vous avez déjà effectuées) :
   
-1. Téléchargez et installez le [module Connecteur Skype Entreprise Online](https://www.microsoft.com/download/details.aspx?id=39366).
+  > [!Note]
+   > Le connecteur Skype Entreprise Online fait actuellement partie du dernier module PowerShell Teams. Si vous utilisez la version publique la plus récente de PowerShell Teams, vous n’avez pas besoin d’installer le connecteur Skype Entreprise Online.
+
+1. Installez le [module PowerShell Teams.](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
     
 2. Ouvrez l’invite de commandes Windows PowerShell et exécutez les commandes suivantes : 
     
-```powershell
-Import-Module LyncOnlineConnector
-$userCredential = Get-Credential
-$sfbSession = New-CsOnlineSession -Credential $userCredential
-Import-PSSession $sfbSession
-```
+   ```powershell
+   Import-Module MicrosoftTeams
+   Connect-MicrosoftTeams
+   ```
 
-Lorsque vous y êtes invité, entrez le nom utilisateur et le mot de passe de votre compte d'administrateur Skype Entreprise Online.
+   Lorsque vous y êtes invité, entrez le nom utilisateur et le mot de passe de votre compte d'administrateur Skype Entreprise Online.
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>Mise à jour des paramètres de communication externe d’un compte d’utilisateur
 
@@ -108,8 +109,6 @@ Cette commande définit le nom de la stratégie d'accès externe attribuée à A
 Pour gérer un grand nombre d’utilisateurs (1 000 ou plus), vous devez traitement par lots des commandes via un bloc de script à l’aide de la cmdlet [Invoke-Command.](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  Dans les exemples précédents, chaque fois qu’une cmdlet est exécutée, elle doit configurer l’appel, puis attendre le résultat avant de le renvoyer.  Lorsque vous utilisez un bloc de script, cela permet aux cmdlets d’être exécutées à distance et, une fois terminées, de renvoyer les données. 
 
 ```powershell
-Import-Module LyncOnlineConnector
-$sfbSession = New-CsOnlineSession
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
 
 $batch = 50

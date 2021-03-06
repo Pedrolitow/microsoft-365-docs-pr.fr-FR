@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Résumé : Utilisez PowerShell pour gérer les propriétés de votre compte d’utilisateur Skype Entreprise Online avec des stratégies.'
-ms.openlocfilehash: 20a75fa1c131f693fcf30d20477af5c9ee7aed35
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: ca945bc05e76525b4b2df6fb0b982a8468d87810
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477040"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515051"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Gestion des stratégies Skype Entreprise Online avec PowerShell
 
@@ -41,8 +41,7 @@ Suivez ces instructions pour exécuter les commandes (sautez les étapes que vou
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
-   $sfbSession = New-CsOnlineSession -Credential $userCredential
-   Import-PSSession $sfbSession
+   Connect-MicrosoftTeams -Credential $userCredential
    ```
 
    Lorsque vous y êtes invité, entrez le nom utilisateur et le mot de passe de votre compte d'administrateur Skype Entreprise Online.
@@ -117,7 +116,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 Le paramètre ApplicableTo limite les données renvoyées aux stratégies qui peuvent être attribuées à l’utilisateur indiqué (par exemple, Alex Darrow). Selon les restrictions liées à la gestion des licences et à l’emplacement d’utilisation, cela pourrait représenter un sous-ensemble de toutes les stratégies disponibles. 
   
-Dans certains cas, les propriétés des stratégies ne sont pas utilisées avec Microsoft 365, tandis que d’autres ne peuvent être gérées que par le personnel du support Technique de Microsoft. 
+Dans certains cas, les propriétés des stratégies ne sont pas utilisées avec Microsoft 365, tandis que d’autres ne peuvent être gérées que par le personnel de support technique de Microsoft. 
   
 Avec Skype Entreprise Online, les utilisateurs doivent être gérés par une stratégie ou une autre. Si une propriété portant sur les stratégies est vide, cela signifie que l'utilisateur en question est géré par une stratégie globale, c'est-à-dire une stratégie qui est appliquée automatiquement à un utilisateur, sauf si une stratégie individuelle est appliquée à cet utilisateur. Si aucune stratégie de client n'est répertoriée pour un compte d'utilisateur, cela signifie qu'il est géré par la stratégie globale. Vous pouvez déterminer la stratégie de client globale avec cette commande :
   

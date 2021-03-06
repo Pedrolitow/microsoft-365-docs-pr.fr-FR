@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: 5366bd5be80559f23490aeb54f9417a189169e12
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: b888c0f329e3f1f36f5aa566df7efbab07cd1f5f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114200"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509133"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
@@ -58,7 +58,7 @@ Envisagez de supprimer un add-in si personne ne l’utilise plus. Par exemple, l
 
 Vous pouvez également supprimer un module qui a été déployé.
 
-1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **Services & des modules.**
+1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & des modules.**
 
      > [!NOTE]
     > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
@@ -73,7 +73,7 @@ Vous pouvez également supprimer un module qui a été déployé.
 
 Après le déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux add-ins.
 
-1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **Services & des modules.**
+1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & des modules.**
 
      > [!NOTE]
     > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
@@ -115,7 +115,7 @@ Cela empêche tous les utilisateurs d’acquérir les modules suivants dans le S
     
 - Acquisitions à partir **d’AppSource**
     
-- Les add-ins dans Microsoft 365
+- Add-ins within Microsoft 365
     
 Un utilisateur qui tente d’accéder à l’Office Store voit le message suivant : **Désolé, Microsoft 365** a été configuré pour empêcher l’acquisition individuelle de modules de l’Office Store.
   
@@ -166,7 +166,7 @@ Si le add-in déployé ne prend pas en charge les commandes de add-in ou si vous
 
 Pour en savoir plus sur la création et la génération de compléments, voir [Compléments Office](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins).
   
-[Utilisez les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins.](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
+[Utilisez les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins.](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
   
 [Résolution des problèmes : l’utilisateur ne voit pas les modules](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
 

@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent en savoir plus sur les options intégrées de signalement de courrier indésirable, non indésirable et de hameçonnage dans Outlook pour iOS et Android.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3e3a2d77c978649e7496d09f78301add397fb9d
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: e6e63f534a9f9516c6e1a87ff82d5b0916d25778
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289172"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509325"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Signaler le courrier indésirable et le hameçonnage dans Outlook pour iOS et Android dans Exchange Online
 
@@ -33,11 +33,11 @@ ms.locfileid: "50289172"
 - [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou locales utilisant l’authentification moderne [hybride,](../../enterprise/hybrid-modern-auth-overview.md)vous pouvez utiliser les options de rapport intégrées dans Outlook pour iOS et Android pour envoyer des faux positifs (courrier électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Exchange Online Protection (EOP).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou locales utilisant l’authentification moderne [hybride,](../../enterprise/hybrid-modern-auth-overview.md)vous pouvez envoyer des faux positifs (courrier électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce que vous devez savoir avant de commencer
 
-- Pour une expérience de soumission d’utilisateurs de premier choix, nous vous recommandons d’utiliser les add-ins Report Message et Report Phishing. Pour [plus d’informations,](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) [](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-phish-add-in) voir Activer le add-in Message de rapport et Activer le module de signalement de hameçonnage.
+- Pour une expérience de soumission d’utilisateurs de meilleure valeur, nous vous recommandons d’utiliser les modules de rapport de message et de signalement du hameçonnage. Pour [plus d’informations,](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) voir Activer le add-in Message de rapport et Activer le module [de](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-phish-add-in) signalement de hameçonnage.
 
 - Si vous êtes un administrateur d’une organisation ayant des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail Soumissions dans le Centre de sécurité & conformité. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 

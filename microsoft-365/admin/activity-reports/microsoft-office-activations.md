@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Découvrez comment obtenir un rapport d’activation d’Office pour savoir quels utilisateurs ont activé leur abonnement Office et identifier les utilisateurs qui peuvent avoir besoin d’une aide supplémentaire.
-ms.openlocfilehash: 1af022053735fb9b1b8fe382c44bbe9cc11058a5
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: e82c67560be7ccaa3780547e6c95a2823e7f0adf
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611411"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514991"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Rapports Microsoft 365 dans le Centre d’administration - Activations Microsoft Office utilisateurs
 
@@ -37,7 +37,7 @@ Le rapport Activation d'Office vous offre un aperçu des utilisateurs ayant acti
   
 ## <a name="how-to-get-to-the-office-activations-report"></a>Accès au rapport Activations d'Office
 
-1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
+1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage" target="_blank">Utilisation</a>.
 
     
 2. Dans la **drop-down Sélectionner un** rapport, sélectionnez **Activations Office 365.** \>  
@@ -56,7 +56,7 @@ Les graphiques **Activations** et **Utilisateurs** vous offrent un aperçu des a
 |4   <br/> |Le graphique **Utilisateurs** indique le nombre d'utilisateurs activés et le nombre d'utilisateurs ayant activé l'abonnement Office sur un ordinateur ou un appareil.  <br/> |
 |5   <br/> | Sur le graphique **Activations**, l'axe Y représente le nombre d'activations d'Office.  <br/>  Sur le graphique **Utilisateurs**, l'axe Y représente l'activité d'activation d'Office des utilisateurs.  <br/>  L'axe X sur les deux graphiques représente la plage de dates sélectionnée pour ce rapport particulier.  <br/> |
 |6   <br/> |Vous pouvez filtrer les graphiques que vous voyez en sélectionnant un élément dans la légende. Par exemple, dans le graphique **Activations,** sélectionnez **Windows OS,** **Mac OS,** **Windows 10 Mobile,** **iOS** ou **Android** pour voir uniquement les informations relatives à chacun d’eux. Cette sélection ne modifie nullement les informations figurant dans le tableau grille. <br/> ![Données d’activation pour les appareils](../../media/59d3ec6e-2a6e-4b21-8aac-c73038c47b9f.png)  <br/> |
-|7   <br/> | Le tableau présente le détail des activations d'Office au niveau de l'utilisateur. Il s'agit de la liste de tous les utilisateurs ainsi que le produit Office qui leur est attribué. Vous pouvez ajouter des colonnes au tableau.  <br/> ![Colonnes disponibles pour les activations Office](../../media/410a4baa-cef8-4676-bf7c-02a907a3a575.png)<br/> **Nom d'utilisateur** indique l'adresse de courrier de l'utilisateur.  <br/> **Nom d'affichage** indique le nom complet de l'utilisateur.  <br/> **Les licences de** produit sont les produits qui sont attribués à cet utilisateur.  <br/> **Date de la dernière activation** désigne la date à laquelle l'utilisateur a activé Office sur un ordinateur ou un appareil.  <br/> **L’activation d’ordinateurs** partagés utilisée est true si l’utilisateur a utilisé Office via l’activation d’ordinateurs partagés. <br/> **Windows** fait référence au nombre de bureaux Windows activés par un utilisateur pour Office.  <br/> **Mac** fait référence au nombre de bureaux Mac sur qui un utilisateur a activé Office.  <br/> **Windows 10 Mobile** fait référence au nombre d’appareils mobiles Windows 10 sur qui un utilisateur a activé Office.  <br/> **iOS** fait référence au nombre d’appareils iOS sur qui un utilisateur a activé Office.  <br/> **Android** fait référence au nombre d’appareils Android sur qui un utilisateur a activé Office.  <br/>  Si la politique de votre organisation vous empêche de consulter les rapports sur lesquels figurent des informations propres aux utilisateurs, vous pouvez modifier les paramètres de confidentialité de tous ces rapports. Consultez la **section Masquer les détails de** l’utilisateur dans la section Rapports d’activité du Centre d’administration Microsoft [365.](activity-reports.md)  <br/> |
+|7   <br/> | Le tableau présente le détail des activations d'Office au niveau de l'utilisateur. Il s'agit de la liste de tous les utilisateurs ainsi que le produit Office qui leur est attribué. Vous pouvez ajouter des colonnes au tableau.  <br/> ![Colonnes disponibles pour les activations Office](../../media/410a4baa-cef8-4676-bf7c-02a907a3a575.png)<br/> **Nom d'utilisateur** indique l'adresse de courrier de l'utilisateur.  <br/> **Nom d'affichage** indique le nom complet de l'utilisateur.  <br/> **Les licences de** produit sont les produits attribués à cet utilisateur.  <br/> **Date de la dernière activation** désigne la date à laquelle l'utilisateur a activé Office sur un ordinateur ou un appareil.  <br/> **L’activation d’ordinateurs** partagés utilisée est true si l’utilisateur a utilisé Office via l’activation d’ordinateurs partagés. <br/> **Windows** fait référence au nombre de bureaux Windows activés par un utilisateur pour Office.  <br/> **Mac** fait référence au nombre de bureaux Mac sur qui un utilisateur a activé Office.  <br/> **Windows 10 Mobile** fait référence au nombre d’appareils mobiles Windows 10 sur qui un utilisateur a activé Office.  <br/> **iOS** fait référence au nombre d’appareils iOS sur qui un utilisateur a activé Office.  <br/> **Android** fait référence au nombre d’appareils Android sur qui un utilisateur a activé Office.  <br/>  Si la politique de votre organisation vous empêche de consulter les rapports sur lesquels figurent des informations propres aux utilisateurs, vous pouvez modifier les paramètres de confidentialité de tous ces rapports. Consultez la **section Masquer les détails de** l’utilisateur dans la section Rapports d’activité du Centre d’administration Microsoft [365.](activity-reports.md)  <br/> |
 |||
    
 

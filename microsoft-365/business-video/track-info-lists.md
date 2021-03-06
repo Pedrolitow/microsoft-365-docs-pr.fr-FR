@@ -1,0 +1,77 @@
+---
+title: Utiliser les listes Microsoft pour suivre les informations professionnelles
+f1.keywords:
+- NOCSH
+ms.author: kwekua
+author: kwekua
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
+ms.collection:
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- adminvideo
+description: En savoir plus sur les listes Microsoft. Avec Listes Microsoft, vous pouvez suivre les détails des clients, tels que le type de client, l’avancement des commandes et l’avancement des commandes.
+ms.openlocfilehash: 79094c6b039e62ba88720424985814354bd299b4
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509424"
+---
+# <a name="use-microsoft-lists-to-track-business-info"></a>Utiliser les listes Microsoft pour suivre les informations professionnelles
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MnGM?autoplay=false]
+
+## <a name="try-it"></a>Essayer
+
+Suivez les informations et organisez le travail avec les listes Microsoft. Créez une liste à partir de zéro, à partir d’Excel, d’une liste existante ou d’un modèle. Vous pouvez commencer à partir de Microsoft 365, Microsoft Teams ou SharePoint.
+
+### <a name="add-an-item-to-the-list"></a>Ajouter un élément à la liste
+
+1. Sélectionnez **Nouveau**.
+1. Ajoutez des détails sur la commande.
+1. Sélectionnez **Enregistrer**.
+
+### <a name="share-the-list-with-partners-or-coworkers"></a>Partager la liste avec des partenaires ou des collègues
+
+1. Au-dessus de la liste, sélectionnez **Partager.**
+1. Entrez les personnes avec qui vous souhaitez partager ; il peut s’agit d’un individu ou d’un groupe.
+1. Choisissez les autorisations.
+1. Sélectionnez **Accorder l’accès.**
+
+### <a name="add-formatting-to-your-list"></a>Ajouter une mise en forme à votre liste
+
+Mettez en forme une colonne pour mettre en évidence les détails qu’elle int ment :
+
+1. Sélectionnez l’en-tête de colonne, sélectionnez l’option de votre choix, par exemple une couleur d’arrière-plan ou des coins arrondis.
+1. Sélectionnez **Enregistrer** pour appliquer les modifications.
+
+### <a name="add-rules-to-alert-coworkers-about-list-updates"></a>Ajouter des règles pour alerter vos collègues sur les mises à jour de liste
+
+1. Au-dessus de la liste, **sélectionnez Automatiser.**
+1. Sélectionnez **Créer une règle.**
+1. Choisissez la condition appropriée pour déclencher la règle que vous souhaitez effectuer.
+1. Personnalisez la règle avec les informations spécifiques dont vous avez besoin, telles que les noms des personnes à être averties lors de la mise à jour de la liste.
+1. Sélectionnez **Créer** pour enregistrer la règle.
+
+### <a name="sort-and-group-list-items"></a>Trier et grouper des éléments de liste
+
+Vous pouvez hiérarchiser une liste de commandes de différentes manières :
+
+- Pour trier par échéance, sélectionnez l’ordre d’accomplir par colonne, puis sélectionnez Ancien à Nouveau.
+- Pour grouper les commandes par client, sélectionnez la colonne Type de client, puis grouper par type de client.
+
+### <a name="update-an-items-status"></a>Mettre à jour l’état d’un élément
+
+Vous pouvez suivre la progression instantanément :
+
+- Double-cliquez sur un élément pour l’ouvrir et mettez à jour la progression de la commande.
+
+## <a name="related-topics"></a>Voir aussi
+
+[Créer une liste à partir de l’application Listes](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)
