@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Vous pouvez utiliser le Centre de sécurité et conformité Office 365 ou le Centre de conformité Microsoft 365 pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation.
+description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e95c2f3627a6bb0c28b736437012a92107b3533
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: a751ffea9fa184faf90bfe7c43b44c5d4e53bfbf
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976245"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461815"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -61,6 +61,8 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 - Activités utilisateur et administrateur dans Microsoft Forms
 
 - Activité des utilisateurs et des administrateurs relative aux étiquettes de confidentialité pour les sites qui utilisent SharePoint Online ou Microsoft Teams
+
+- Activité des administrateurs dans les messages de réunion et MyAnalytics
 
 ## <a name="requirements-to-search-the-audit-log"></a>Configuration requise pour effectuer une recherche dans le journal d’audit
 
@@ -178,7 +180,7 @@ Pour effectuer une recherche dans le journal d’audit dans Office 365, vous dev
 
       Plus de 100 activités utilisateur et administrateur sont enregistrées dans le journal d’audit. Cliquez sur l’onglet **Activités auditées** pour consulter les descriptions de chaque activité pour les différents services.
 
-   1. **Date de début** et **Date de fin** : Les sept derniers jours sont sélectionnés par défaut. Sélectionnez une plage de dates et d’heures pour afficher les événements survenus pendant cette période. Les date et heure sont présentées au format UTC (temps universel coordonné). La plage de dates maximale que vous pouvez spécifier est de 90 jours. Une erreur s’affiche si la plage de dates sélectionnée est supérieure à 90 jours.
+   1. **Date de début** et **Date de fin** : Les sept derniers jours sont sélectionnés par défaut. Sélectionnez une plage de dates et d’heures pour afficher les événements survenus pendant cette période. La date et l’heure sont présentées dans l’heure locale. La plage de dates maximale que vous pouvez spécifier est de 90 jours. Une erreur s’affiche si la plage de dates sélectionnée est supérieure à 90 jours.
 
       > [!TIP]
       > Si vous utilisez la plage de dates maximale de 90 jours, sélectionnez l’heure actuelle pour l’option **Date de début**. Dans le cas contraire, un message d’erreur indiquant que la date de début est antérieure à la date de fin apparaît. Si vous avez activé l’audit au cours des 90 derniers jours, la plage de dates maximale ne peut pas commencer avant la date à laquelle l’audit a été activé.
@@ -221,7 +223,7 @@ Les résultats d’une recherche dans le journal d’audit apparaissent sous **R
 
 Les résultats contiennent les informations suivantes sur chaque événement renvoyé par la recherche :
 
-- **Date :** Date et heure (au format UTC) auxquelles l’événement s’est produit.
+- **Date :** Date et heure (à votre heure locale) auxquelles l’événement s’est produit.
 
 - **Adresse IP :** Adresse IP de l’appareil utilisé lors de l’enregistrement de l’activité. L’adresse IP apparaît au format d’adresse IPv4 ou IPv6.
 
@@ -370,7 +372,7 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
         [Activités dans Power BI](#power-bi-activities)
     :::column-end:::
     :::column:::
-        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+        [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
     :::column:::
         [Activités dans Microsoft Teams](#microsoft-teams-activities)
@@ -419,6 +421,18 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
     :::column-end:::
     :::column:::
         [Stratégie de rétention et activités d’étiquette de rétention](#retention-policy-and-retention-label-activities)
+    :::column-end:::
+    :::column:::
+        [Activités de récapitulatif des tâches par courrier électronique](#briefing-email-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Activités myAnalytics](#myanalytics-activities)
+    :::column-end:::
+    :::column:::
+        [Activités des obstacles aux informations](#information-barriers-activities)
     :::column-end:::
     :::column:::
         [Activités administrateur Exchange](#exchange-admin-audit-log)
@@ -792,7 +806,7 @@ Vous pouvez effectuer une recherche dans le journal d’audit des activités dan
 
 L’enregistrement d’audit pour Power BI n’est pas activé par défaut. Pour rechercher des activités Power BI dans le journal d’audit, vous devez activer l’audit dans le portail d’administration Power BI. Pour consulter des instructions, voir la section «journaux d’audit» du [portail d’administration Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
-### <a name="microsoft-workplace-analytics-activities"></a>Activités de Microsoft Workplace Analytics
+### <a name="workplace-analytics-activities"></a>Activités de Workplace Analytics
 
 Analyse du temps de travail explique comment les groupes collaborent au sein de votre organisation. Le tableau suivant répertorie les activités effectuées par les utilisateurs auxquels est attribué le rôle d’administrateur ou les rôles d’analyste dans Workplace Analytics. Les utilisateurs dotés du rôle d’analyste ont un accès total à toutes les fonctionnalités du service et utilisent le produit pour effectuer l’analyse. Les utilisateurs dotés du rôle d’administrateur peuvent configurer les paramètres de confidentialité et les valeurs par défaut du système, et peuvent préparer, charger et vérifier les données organisationnelles dans Workplace Analytics. Pour plus d'informations, voir [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
@@ -971,6 +985,42 @@ Le tableau suivant répertorie les événements provoquant des activités d’é
 | Paramètres mis à jour pour une stratégie de rétention | SetRetentionComplianceRule | L’administrateur a modifié les paramètres de rétention d’une stratégie de rétention existante. Les paramètres de rétention incluent la durée de conservation des éléments et ce qu’il advient des éléments à l’expiration de la période de rétention (comme la suppression d’éléments, la conservation des éléments ou leur conservation puis leur suppression). Cette activité correspond également à l’exécution du cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule). |
 | Étiquette de rétention mise à jour |SetComplianceTag  | Un administrateur a mis à jour une étiquette de rétention existante.|
 | Stratégie de rétention mise à jour |SetRetentionCompliancePolicy |Un administrateur a mis à jour une stratégie de rétention existante. Les mises à jour qui déclenchent cet événement incluent l’ajout ou l’exclusion d’emplacements de contenu auxquels la stratégie de rétention est appliquée.|
+||||
+
+### <a name="briefing-email-activities"></a>Activités de récapitulatif des tâches par courrier électronique
+
+Le tableau suivant répertorie les activités de l’e-mail de récapitulatif des tâches qui sont enregistrées dans le journal d’audit Office 365. Pour plus d’informations sur le courrier de récapitulatif des tâches, consultez :
+
+- [Présentation du courrier électronique de récapitulatif des tâches](https://docs.microsoft.com/Briefing/be-overview)
+
+- [Configurer le courrier électronique de récapitulatif des tâches](https://docs.microsoft.com/Briefing/be-admin)
+
+|**Nom convivial**|**Opération**|**Description**|
+|:-----|:-----|:-----|
+|Paramètres de confidentialité de l’organisation mis à jour|UpdatedOrganizationBriefingSettings|Un administrateur met à jour les paramètres de confidentialité de l’organisation pour le courrier de récapitulatif des tâches. |
+|Paramètres de confidentialité de l’utilisateur mis à jour|UpdatedUserBriefingSettings|Un administrateur met à jour les paramètres de confidentialité de l’utilisateur pour le courrier de récapitulatif des tâches.
+||||
+
+### <a name="myanalytics-activities"></a>Activités MyAnalytics
+
+Le tableau suivant répertorie les activités dans MyAnalytics qui sont enregistrées dans le journal d’audit Office 365. Pour plus d’informations sur MyAnalytics, consultez [MyAnalytics pour les administrateurs](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins).
+
+|**Nom convivial**|**Opération**|**Description**|
+|:-----|:-----|:-----|
+|Mise à jour des paramètres de l'organisation MyAnalytics|UpdatedOrganizationMyAnalyticsSettings|Un administrateur met à jour les paramètres au niveau de l’organisation pour MyAnalytics. |
+|Mise à jour des paramètres MyAnalytics de l'utilisateur|UpdatedUserMyAnalyticsSettings|Un administrateur met à jour les paramètres utilisateur pour MyAnalytics.|
+||||
+
+### <a name="information-barriers-activities"></a>Activités des obstacles aux informations
+
+Le tableau suivant répertorie les activités de les obstacles aux information qui sont enregistrées dans le journal d’audit Office 365. Pour plus d’informations sur les obstacles à l’information, consultez [sur les obstacles aux informations dans Microsoft 365](information-barriers.md).
+
+|**Nom convivial**|**Opération**|**Description**|
+|:----------------|:------------|:--------------|
+| Ajout de segments à un site | SegmentsAdded | Un administrateur général ou un propriétaire de site SharePoint a ajouté un ou plusieurs segments d’information qui empêchent l’accès à un site. |
+| Modification de segments d'un site | SegmentsChanged | Un administrateur SharePoint ou un administrateur général a modifié un ou plusieurs segments de obstacles aux informations pour un site. |
+| Suppression de segments d'un site | Segmentsremoved | Un administrateur SharePoint ou un administrateur général a supprimé un ou plusieurs segments de obstacles aux informations d’un site. |
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Journal d’audit de l’administrateur Exchange
 
