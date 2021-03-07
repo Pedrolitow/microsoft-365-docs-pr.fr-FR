@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423861"
+ms.locfileid: "50454635"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -37,12 +37,14 @@ Si ce paramètre n’est pas activé pour votre client, les utilisateurs doivent
 
 En outre, l'activation de cette fonctionnalité entraîne la prise en charge de la fonctionnalité [Enregistrement automatique](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) pour ces fichiers étiquetés et chiffrés.
 
+Pour lire l’annonce de la publication, consultez le billet de blog [Annonce de la co-édition sur des documents chiffrés par Microsoft Information Protection et des mises à jour d'étiquetage](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Modifications des métadonnées pour les étiquettes de niveau de confidentialité
 
 > [!IMPORTANT]
 > Après avoir activé le paramètre de co-édition, les informations d’étiquette des fichiers non chiffrés ne sont plus enregistrées dans les propriétés personnalisées.
 > 
-> N'activez pas ce paramètre si vous avez des applications, services, scripts ou outils dans votre organisation qui lisent ou écrivent des métadonnées d'étiquetage à l'ancien emplacement.
+> N'activez pas ce paramètre si vous utilisez des applications, services, scripts ou outils qui lisent ou écrivent des métadonnées d'étiquetage à l'ancien emplacement.
 
 Avant d'activer le paramètre de prise en charge de la co-édition pour les applications de bureau Office, il est important de comprendre que cette action apporte des modifications aux métadonnées d'étiquetage qui sont enregistrées et lues dans les fichiers Office.
 
@@ -80,16 +82,16 @@ Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditio
 
 - Les étiquettes de confidentialité [doivent être activées pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) pour le client. Si cette fonctionnalité n’est pas déjà activée, elle sera automatiquement activée lorsque vous sélectionnerez le paramètre pour activer la co-édition pour les fichiers avec des étiquettes de niveau de confidentialité.
 
-- Tous les outils opérationnels, applications et services de votre client doivent prendre en charge la nouvelle [métadonnée d’étiquetage](#metadata-changes-for-sensitivity-labels):
+- Microsoft 365 Apps for enterprise :
+    - **Windows** : [Canal actuel (préversion)](https://office.com/insider) avec la build minimale 16.0.13801.20182 ou [Canal bêta](https://office.com/insider) avec la build minimale 16.0.13819.20006
+    - **macOS** : [Canal bêta](https://office.com/insider) avec build minimale 16.47.218.0
+    - **iOS** : pas encore pris en charge
+    - **Android** : pas encore pris en charge
+
+- Tous les outils opérationnels, applications et services de votre client doivent prendre en charge la nouvelle [métadonnée d’étiquetage](#metadata-changes-for-sensitivity-labels). Si vous utilisez l’une des versions suivantes, vérifiez les versions minimales requises :
     
-    - **Microsoft 365 Apps for enterprise:**
-        - Windows : [Canal actuel (préversion)](https://office.com/insider) avec la build minimale 16.0.13801.20182 ou [Canal bêta](https://office.com/insider) avec la build minimale 16.0.13819.20006
-        - macOS : [Canal bêta](https://office.com/insider) avec build minimale 16.47.218.0
-        - iOS : pas encore pris en charge
-        - Android : pas encore pris en charge
-    
-    - **Client et scanneur d’étiquetage unifié Azure Information Protection :** 
-        - Version Public Preview (nom d’installation de AzInfoProtection_2.10.46_Co-création_PublicPreview.exe) que vous pouvez installer à partir du [ Centre de téléchargement Microsoft ](https://www.microsoft.com/en-us/download/details.aspx?id=53018)et de l’une des versions des applications Microsoft 365 Entreprise pour Windows répertoriées dans l’élément précédent.
+    - **Client et scanneur d’étiquetage unifié Azure Information Protection :**
+        - Version Public Preview (nom d’installation de AzInfoProtection_2.10.46_Co-création_PublicPreview.exe) que vous pouvez installer à partir du [ Centre de téléchargement Microsoft ](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
     
     - **Application de synchronisation OneDrive pour Windows ou macOS :**
         - Version minimale 19.002.0121.0008
@@ -144,9 +146,9 @@ Pendant la préversion, vous devez utiliser une URL spécifique pour accéder à
 
 1. Connectez-vous au Centre de conformité Microsoft 365 en tant qu’administrateur général pour votre client de test en utilisant le lien suivant :
     
-    ````
+    ```http
     https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ````
+    ```
     Ce lien vous dirige directement vers le paramètre de client, à savoir **Co-édition de fichiers avec des étiquettes de niveau de confidentialité**.
 
     > [!IMPORTANT]

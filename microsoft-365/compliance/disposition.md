@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression de contenu, que vous utilisiez une révision de destruction ou que le contenu soit automatiquement supprimé selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 092067e676c1cbae3fae6e9d6a5ff77099ce4631
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682667"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461879"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -52,15 +52,13 @@ Assurez-vous que l’audit est activé au moins un jour avant la première actio
 
 ## <a name="disposition-reviews"></a>Révisions avant destruction
 
-Lorsque le contenu atteint la fin de la période de rétention, vous souhaiterez peut-être réviser ce contenu pour décider s’il peut être supprimé de manière sécurisée (« supprimé »). Par exemple, vous devrez peut-être :
+Lorsque le contenu atteint la fin de la période de rétention, vous souhaiterez peut-être réviser ce contenu et confirmer s’il peut être supprimé définitivement (« supprimé »). Par exemple, au lieu de supprimer le contenu, vous devrez peut-être :
   
 - Suspendre la suppression de contenu pertinent en cas de litige ou d’audit.
-    
-- Supprimer le contenu de la liste de destruction pour la stocker dans une archive, si ce contenu comporte des recherches ou une valeur d’historique.
-    
+
 - Affecter une période de rétention différente au contenu, peut-être parce que les paramètres de rétention d’origine étaient une solution temporaire ou provisoire.
-    
-- Renvoyer le contenu aux clients ou le transférer vers une autre organisation.
+
+- Déplacez le contenu de son emplacement existant vers un emplacement d’archivage, par exemple, si ce contenu a des valeurs d’historique ou de recherche.
 
 Lorsqu’une révision de destruction est déclenchée à la fin de la période de rétention :
   
