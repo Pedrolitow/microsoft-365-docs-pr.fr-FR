@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921133"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509265"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -47,7 +47,7 @@ Pour plus d’informations sur le partage sécurisé avec des invités, consulte
 - [Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
 - [Créer un environnement de partage sécurisé avec des invités](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
 
-Pour autoriser ou bloquer le partage d’invités, nous utilisons une combinaison d’une étiquette de confidentialité pour les contrôles de partage au niveau du site et des équipes pour le site SharePoint associé, toutes deux décrites ultérieurement.
+Pour autoriser ou bloquer le partage d’invités, nous utilisons une combinaison d’une étiquette de confidentialité pour les contrôles de partage au niveau du site et des équipes pour le site SharePoint associé, les deux décrites ultérieurement.
 
 ## <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -79,7 +79,7 @@ Pour créer une étiquette de confidentialité
 17. Cliquez sur **Suivant**.
 18. Dans la page **Définir les paramètres de partage externe et d’accès aux appareils**, sélectionnez **Contrôler le partage externe dans les sites étiquetés SharePoint**.
 19. Sous **Le contenu peut être partagé avec**, sélectionnez **Invités nouveaux et existants** si vous autorisez l’accès invité ou **Uniquement les membres de votre organisation** si ce n’est pas le cas.
-20. Sous **Accès à partir d’appareils non gérés**, sélectionnez **Bloquer l’accès**.
+20. Sous **Accès à partir d’appareils non gérés**, sélectionnez **Bloquer l’accès**. (Si vous autorisez les invités et qu’ils n’ont pas d’appareils gérés, vous pouvez choisir **Autoriser l’accès limité, sites web uniquement**.)
 21. Cliquez sur **Suivant**.
 22. Dans la page **Étiquetage automatique pour les colonnes de base de données** , cliquez sur **Suivant**.
 23. Cliquez sur **Créer une étiquette**, puis sur **Terminé**.
