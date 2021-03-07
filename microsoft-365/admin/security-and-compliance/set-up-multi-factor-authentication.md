@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multifacteur pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 5ea367e64108e80ee7429ec700cf2ac0551aeab2
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: d08ef54c545809bbb2277f8d0a8471245400a3ac
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105150"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514967"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurer Multi-factor Authentification (MFA)
 
@@ -81,10 +81,11 @@ Pour plus d’informations sur Azure AD P1 et P2, voir [Tarification Azure Activ
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>Activer Authentification moderne pour votre organisation
 
-Pour la plupart des abonnements, l'authentification moderne est automatiquement activée, mais si vous avez acheté votre abonnement il y a longtemps, il se peut qu'elle ne le soit pas. Celle-ci doit être activée avant que l’authentification multifacteur fonctionne convenablement avec les applications Office.
+Pour la plupart des abonnements, l’authentification moderne est automatiquement activée, mais si vous avez acheté votre abonnement avant août 2017, il est probable que vous devrez activer l’authentification moderne pour que les fonctionnalités telles que l’authentification multifacteur fonctionnent dans les clients Windows tels qu’Outlook.
+
 
 1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation gauche, sélectionnez **Paramètres** \> **Paramètres d’organisation**.
-1. Sous l’onglet **Services**, sélectionnez **Authentification moderne**, puis, dans le volet **Authentification moderne**, assurez-vous que l’option **Activer l’authentification moderne** est sélectionnée. Sélectionnez **Save Changes (Enregistrer les modifications)**.
+2. Sous l’onglet **Services**, sélectionnez **Authentification moderne**, puis, dans le volet **Authentification moderne**, assurez-vous que l’option **Activer l’authentification moderne** est sélectionnée. Sélectionnez **Save Changes (Enregistrer les modifications)**.
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>Désactiver l’authentification multifacteur par utilisateur héritée
 

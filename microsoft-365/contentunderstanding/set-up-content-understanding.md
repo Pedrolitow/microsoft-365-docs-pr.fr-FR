@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Configurer la compréhension de contenu dans Projet Cortex
-ms.openlocfilehash: 58496041004218b48b864fa725084cba8edd518b
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: a275b2ec14403e16651acb293f8598b453fd3739
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145474"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515015"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
@@ -42,6 +42,16 @@ Avant la configuration, veillez à planifier la meilleure manière d’installer
 > Pour accéder au centre d’administration Microsoft 365 et configurer SharePoint Syntex, vous devez disposer des autorisations d’administrateur général ou d’administrateur SharePoint.
 
 En tant qu’administrateur, vous pouvez également modifier vos paramètres sélectionnés à tout moment après la configuration, ainsi que les paramètres de gestion de la compréhension de contenu dans le Centre d’administration Microsoft 365.
+
+### <a name="licensing"></a>Gestion des licences
+
+Pour utiliser SharePoint Syntex, votre organisation doit avoir un abonnement à SharePoint Syntex, et chaque utilisateur doit avoir les licences suivantes :
+
+- SharePoint Syntex
+- SharePoint Syntex : Type DPO
+- Service de données courant pour SharePoint Syntex
+
+Si vous annulez votre abonnement SharePoint Syntex à une date ultérieure (ou si votre version d’évaluation expire), les utilisateurs ne pourront plus créer ou exécuter des modèles de présentation ou de traitement de formulaires, et le modèle du centre de contenu ne sera plus disponible. En outre, les rapports des magasins à terme, l'importation de la taxonomie SKOS et la poussée des types de contenu ne seront plus disponibles. Aucun contenu n’est supprimé et les autorisations de site ne sont pas modifiées.
 
 ## <a name="to-set-up-sharepoint-syntex"></a>Pour configurer SharePoint Syntex
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: En savoir plus sur le traitement de formulaires dans Microsoft SharePoint Syntex
-ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 1dba8828a158a5163017ee5f37735f44e974274c
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242445"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515159"
 ---
 # <a name="form-processing-overview"></a>Vue d’ensemble du traitement des formulaires
 
@@ -45,6 +45,13 @@ Un administrateur Office 365 doit [activer le traitement de formulaires](https:/
 ### <a name="file-limitations"></a>Limitations de fichier
 
 Lorsque vous utilisez des modèles de traitement de formulaires, veillez à noter les [exigences et les limites d'utilisation des fichiers](https://docs.microsoft.com/ai-builder/form-processing-model-requirements).
+
+### <a name="multi-geo-environments"></a>Microsoft 365 Multigéographie
+
+Lors de la configuration de SharePoint Syntex dans un[environnement Microsoft 365 Multigéographie](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo), vous pouvez seulement le configurer pour utiliser le traitement des formulaires à l’emplacement central. Si vous souhaitez utiliser le traitement de formulaires dans un emplacement satellite, contactez le support Microsoft.
+
+
+
 
 
 

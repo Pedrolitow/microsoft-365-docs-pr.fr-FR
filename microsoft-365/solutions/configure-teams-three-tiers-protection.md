@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Découvrez comment configurer Teams pour améliorer la sécurité du partage de fichiers à l’aide de trois niveaux de protection, en équilibrant la sécurité grâce à la facilité de collaboration.
-ms.openlocfilehash: cb49c35cc1c485d45656b1716d385cf626322ce8
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602006"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509241"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
 
@@ -114,6 +114,8 @@ Reportez-vous aux références suivantes pour créer un environnement de partage
 ## <a name="access-from-unmanaged-devices"></a>Accès à partir d’appareils enregistrés
 
 Pour les niveaux sensibles et hautement sensibles, nous limitons l’accès au contenu SharePoint avec des étiquettes de confidentialité. L’accès conditionnel Azure AD offre de nombreuses options permettant de déterminer la manière dont les utilisateurs accèdent à Microsoft 365, y compris les limitations en fonction de l’emplacement, du risque, de la conformité des appareils et d’autres facteurs. Nous vous recommandons de lire l’article [Qu’est-ce que l’accès conditionnel ?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) et d’envisager les stratégies supplémentaires qui peuvent être appropriées pour votre organisation.
+
+Notez que les invités n’ont souvent pas d’appareils gérés par votre organisation. Si vous autorisez des invités de l’un des niveaux, pensez aux types d’appareils qu’ils utiliseront pour accéder aux équipes et aux sites, et définissez en conséquence vos stratégies d’appareil non gérés.
 
 ## <a name="next-step"></a>Étape suivante
 
