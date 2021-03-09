@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e63a71b33e60c53c021f4b4d54092ad14fdbadbd
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3d5467e955234b78760fba8fcd7ba7ab7668ff64
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642706"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547491"
 ---
 # <a name="contact-support-for-falkland-islands"></a>Contacter le support technique pour les îles Malouines
 

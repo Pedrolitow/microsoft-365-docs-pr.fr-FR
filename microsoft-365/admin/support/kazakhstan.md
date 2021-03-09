@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2352d7005d6e558e73bae1ddaa768307cc9ad84e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 548c46104c898c3f4576892d847533baaa35c460
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641746"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546471"
 ---
-# <a name="contact-support-for-kazakhstan"></a>Contacter le support pour le Kazakhstan
+# <a name="contact-support-for-kazakhstan"></a>Contacter le support technique pour le Kazakhstan
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
