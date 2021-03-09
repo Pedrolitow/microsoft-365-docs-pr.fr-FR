@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f96b4aca45363af34088cd54b997cc3a9e8e2109
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8a3120b82621f73578e44f25535f3fab087506d8
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639406"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544215"
 ---
-# <a name="contact-support-for-st-kitts--nevis"></a>Contacter le support pour St Kitts & Nevis
+# <a name="contact-support-for-st-kitts--nevis"></a>Contacter le support technique pour St Kitts & Nevis
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 

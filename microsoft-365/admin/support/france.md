@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ec908b6e70ee4580829ac7c483c638907700eaca
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: HT
+ms.openlocfilehash: 0a6e29a3ff2879f3d2eb44ff3a2e11b1ebc7853a
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642718"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547407"
 ---
 # <a name="contact-support-for-france"></a>Contacter l’assistance pour la France
 

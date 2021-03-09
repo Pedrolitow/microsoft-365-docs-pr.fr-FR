@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 066a0833eb82ca3561014461c239b98df6ab4ac7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 674c5c2c0f5cfbf8b4c0ca9d6a6806a00bb7fa68
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643834"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548535"
 ---
 # <a name="contact-support-for-bosnia-and-herzegovnia"></a>Contacter le support technique pour la Bosnie-Herzégovine et Herzegovnia
 

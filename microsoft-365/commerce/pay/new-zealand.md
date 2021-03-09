@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bf43c61b37050fee3d3819f1ec44b1c39596811f
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7d731469a1c6908c79e55f0a7f4bae66aad8f267
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406863"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543027"
 ---
 # <a name="payment-information-for-new-zealand"></a>Informations de paiement pour la Nouvelle-Zélande
 

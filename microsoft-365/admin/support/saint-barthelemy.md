@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 12c74b0ff6554261239f5a738d038f614c3cc106
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 53e453e6bb96666c4a5eda30efad1c30c17b71f5
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640066"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544779"
 ---
 # <a name="contact-support-for-saint-barthelemy"></a>Contacter le support de Saint-Sélemy
 
@@ -30,7 +29,7 @@ ms.locfileid: "48640066"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 4 h-12 h
+Français : Mon-Fri 16h00 à 12h00
 
 Anglais : Mon-Fri 4 h à 12 h
 
