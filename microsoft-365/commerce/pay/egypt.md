@@ -9,22 +9,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1f9b486f60fdbcb388e01f48360e8beff0abc424
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fea06aa531bb9f8170661058f7673a62916bde49
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636768"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551463"
 ---
 # <a name="payment-information-for-egypt"></a>Informations de paiement pour l’Égypte
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en USD uniquement et référencer les numéro(s) de facture sur votre paiement.
+Veuillez payer en USD uniquement et référencer les numéro(s) de facture à votre paiement.
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 

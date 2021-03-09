@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 400315ba59bc9fb74330f08b3ce030366705d512
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: f973737f3be59a9206b207e58605784da617fc81
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407013"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549603"
 ---
 # <a name="payment-information-for-austria"></a>Informations de paiement pour l’Autriche
 
@@ -26,7 +25,7 @@ ms.locfileid: "50407013"
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Veuillez payer en EUR et référencer les numéro(s) de facture à votre paiement.**
+**Veuillez payer en EUR et référencer les numéro(s) de facture sur votre paiement.**
 
 Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,** utilisez les informations bancaires ci-après :
 

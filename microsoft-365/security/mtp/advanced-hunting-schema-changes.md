@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 948c8bb5c1e6b67f6de355bc532c6b14d5a83933
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509301"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551871"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de recherche avancé : modifications d’attribution de noms
 
@@ -98,12 +98,12 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Commentaires des clients. |
 | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Commentaires des clients. |
 | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Commentaires des clients. |
-| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | Commentaires des clients. |
 
 
 
 
 
-## <a name="related-topics"></a>Voir aussi
+
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

@@ -1,7 +1,7 @@
 ---
 title: Aide administrateur pour le Bureau géré Microsoft
 description: Comment les administrateurs peuvent obtenir de l’aide sur le service
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9e96a530c61f3f9a94dd84cc79bd3c4c03b61106
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 5e614581ee76d1f8cb026345f1c31ed22faafb8a
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840276"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572627"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Aide administrateur pour le Bureau géré Microsoft
 
@@ -24,7 +24,7 @@ Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Mi
 >Veillez à configurer [un contact](../get-started/add-admin-contacts.md) d’administration pour l’empaquetage d’application, les appareils, la sécurité, etc. Vous ne pouvez pas envoyer de demande de support dans l’un de ces domaines si aucun contact d’administrateur n’est configuré.
 
 **Pour envoyer une demande de support**
-1. Connectez-vous au Gestionnaire de point de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Dépannage et support.**
+1. Connectez-vous au Gestionnaire de points de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Dépannage et support.**
 2. Recherchez la section Bureau géré Microsoft, sélectionnez **Demande de service.**
 3. Sur **les demandes de support,** **sélectionnez + Nouveau ticket de support.**
 4. Sélectionnez le **type de demande de support** qui correspond à l’aide dont vous avez besoin. Le tableau ci-dessous présente les options. 
@@ -32,9 +32,9 @@ Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Mi
 
 Type de demande de support | Champs d’utilisation
 --- | ---
-Incident | Vous avez besoin que l’équipe des opérations du bureau géré De Microsoft examine, comme l’impact étendu d’un changement ou d’un incident de sécurité.
-Demande d’informations | Vous planifiez une modification pour la mise en réseau, la configuration de proxy, les systèmes VPN, l’expiration des certificats ou vous avez simplement besoin d’informations sur le service. Une réponse de l’équipe des opérations du bureau géré Microsoft est recommandée lors de la communication d’un changement au sein de votre organisation.
-Demande de modification | Vous devez faire en sorte que l’équipe des opérations du bureau géré Microsoft a apporter une modification, telle que le déplacement d’appareils entre des groupes de mise à jour.
+Incident | Vous avez besoin que l’équipe des opérations du bureau géré De Microsoft examine, comme l’impact étendu d’une modification ou d’une panne de service.
+Demande d’informations | Vous planifiez une modification pour la mise en réseau, la configuration de proxy, les systèmes VPN, l’expiration des certificats ou vous avez simplement besoin d’informations sur le service. Une réponse de l’équipe des opérations du bureau géré Microsoft est recommandée lors de la communication d’une modification au sein de votre organisation.
+Demande de modification | Vous devez demander à l’équipe des opérations du bureau géré Microsoft d’apporter une modification, telle que le déplacement d’appareils entre des groupes de mise à jour.
 
 <span id="sev" />
 
@@ -59,7 +59,7 @@ Plus d’informations :
 
 Nous vous remercions de vos commentaires et nous l’utilisons pour améliorer l’expérience de support de l’administrateur.
 
-Une fois qu’un ticket  est dans l’état **Atténué** ou Résolu, vous pouvez partager vos commentaires sur votre expérience avec ce problème particulier. Pour partager des commentaires, allez à la page Demandes de **service** dans le menu Dépannage **+ support** du portail MEM. Sélectionnez le ticket spécifique. Les détails du ticket s’affichent dans le programme  volant sur le côté droit, sélectionnez l’onglet Commentaires et fournissez les informations demandées. N’incluez pas d’informations personnelles dans le formulaire de commentaires. Pour plus d’informations sur la confidentialité, voir la [déclaration de confidentialité Microsoft.](https://privacy.microsoft.com/privacystatement)
+Une fois qu’un ticket  est dans l’état **Atténué** ou Résolu, vous pouvez partager vos commentaires sur votre expérience avec ce problème particulier. Pour partager des commentaires, allez à la page Demandes de **service** dans le menu Dépannage **+ support** du portail MEM. Sélectionnez le ticket spécifique. Les détails du ticket s’affichent dans le fly-in sur le côté droit, sélectionnent l’onglet Commentaires et fournissent les informations demandées.  N’incluez pas d’informations personnelles dans le formulaire de commentaires. Pour plus d’informations sur la confidentialité, voir la [déclaration de confidentialité De Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 ![Formulaire de commentaires](../../media/feedback_form.png)
 

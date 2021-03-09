@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour l’Arménie
+title: Informations de paiement pour l’Azerbaïdjan
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9aaec4e85224cc78eaf530c61c0c78cfd5f226d2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b420b0cab2c39ef45d73b11aed7ffb1c548471eb
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637978"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549675"
 ---
-# <a name="payment-information-for-armenia"></a>Informations de paiement pour l’Azerbaïdjan
+# <a name="payment-information-for-armenia"></a>Informations de paiement pour l’Arménie
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 

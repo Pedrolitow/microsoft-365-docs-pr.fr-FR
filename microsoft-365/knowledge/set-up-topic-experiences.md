@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment configurer les rubriques microsoft
-ms.openlocfilehash: a90e75330527992f8519d625f94fe0d5ecb3de6b
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: cc420a0631f5b861341116abcd50cfe90e15450e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261468"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551887"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurer Les rubriques microsoft
 
@@ -50,7 +50,7 @@ Pour configurer des rubriques
 
     ![Prise en main](../media/k-get-started.png) 
 
-4. Dans la page Choisir la façon dont Topics peut trouver des **rubriques,** vous allez configurer la découverte de rubriques. Dans la section Sélectionner des sources de rubrique **SharePoint,** sélectionnez les sites SharePoint qui seront analyser en tant que sources pour vos rubriques lors de la découverte. Choisissez parmi les autorisations suivantes :
+4. Dans la page Choisir la façon dont Topics peut trouver des **rubriques,** vous allez configurer la découverte de rubriques. Dans la section Sélectionner des sources de rubrique **SharePoint,** sélectionnez les sites SharePoint à analyser en tant que sources pour vos rubriques lors de la découverte. Choisissez parmi les autorisations suivantes :
     - **Tous les sites**: tous les sites SharePoint de votre organisation. Cela inclut les sites actuels et futurs.
     - **Tous, sauf les sites sélectionnés**: tapez les noms des sites que vous souhaitez exclure.  Vous pouvez également charger une liste de sites que vous souhaitez refuser de découvrir. Les sites créés à l’avenir seront inclus en tant que sources pour la découverte de rubriques. 
     - **Seuls les sites** sélectionnés : tapez les noms des sites que vous souhaitez inclure. Vous pouvez également charger une liste de sites. Les sites créés à l’avenir ne seront pas inclus en tant que sources de découverte de sujet.
@@ -68,7 +68,7 @@ Pour configurer des rubriques
 
     #### <a name="how-to-exclude-topics-by-name"></a>Comment exclure des rubriques par nom    
 
-    Si vous devez exclure des rubriques, après avoir sélectionné Exclure les **rubriques** par leur nom, téléchargez le modèle .csv et mettez-le à jour avec la liste des rubriques que vous souhaitez exclure de vos résultats de découverte.
+    Si vous devez exclure des rubriques, après avoir sélectionné Exclure les **rubriques** par nom, téléchargez le modèle .csv et mettez-le à jour avec la liste des rubriques que vous souhaitez exclure de vos résultats de découverte.
 
     ![Exclure des rubriques dans le modèle CSV](../media/exclude-topics-csv.png) 
 
@@ -117,7 +117,7 @@ Pour configurer des rubriques
 
 10. À la page **Examiner et finaliser**, vous pouvez consulter le paramètre sélectionné, puis choisir d’apporter des modifications. Si vos sélections vous conviennent, sélectionnez **Activer**.
 
-11. La page **Activée rubriques** s’affiche, confirmant que le système va maintenant commencer à analyser les sites sélectionnés pour les rubriques et à créer le site centre de rubriques. Sélectionnez **Terminé**.
+11. La page **Rubriques** activée s’affiche, confirmant que le système va maintenant commencer à analyser les sites sélectionnés pour les rubriques et à créer le site centre de rubriques. Sélectionnez **Terminé**.
 
 12. Vous serez renvoyé à votre page De **connexion des personnes à la** base de connaissances. Dans cette page, vous pouvez sélectionner **Gérer** pour modifier vos paramètres de configuration. 
 
@@ -125,17 +125,21 @@ Pour configurer des rubriques
 
 ## <a name="assign-licenses"></a>Attribuer des licences
 
-Une fois que vous avez configuré les expériences de rubrique, vous devez attribuer des licences pour les utilisateurs qui utiliseront Rubriques. Seuls les utilisateurs titulaires d’une licence peuvent voir des informations sur des sujets tels que les points forts, les cartes de rubrique, les pages de rubriques et le centre de rubriques. 
+Une fois que vous avez configuré les expériences de rubrique, vous devez attribuer des licences pour les utilisateurs qui utiliseront Rubriques. Seuls les utilisateurs titulaires d’une licence peuvent voir des informations sur des sujets tels que les points forts, les fiches de rubrique, les pages de rubriques et le centre de rubriques. 
 
 Pour attribuer des licences :
 
 1. Dans le Centre d’administration Microsoft 365, sous **Utilisateurs**, cliquez sur **Utilisateurs actifs**.
 
-2. Sélectionnez les utilisateurs que vous souhaitez obtenir une licence, puis cliquez **sur Licences et applications.**
+2. Sélectionnez les utilisateurs dont vous souhaitez obtenir une licence, puis cliquez **sur Licences et applications.**
 
-3. Sous **Applications,** assurez-vous que la recherche de connecteurs Graph avec **les expériences d’index** et **de** sujet est sélectionnée.
+3. Sous **Licences,** **sélectionnez Rubriques Titre.**
 
-4. Cliquez sur **Enregistrer les modifications**.
+4. Sous **Applications,** assurez-vous que les rubriques Recherche des **connecteurs Graph avec index (Rubriques)** et **Rubriques Titres** sont toutes les deux sélectionnées.
+
+    ![Licences Rubriques Microsoft dans le Centre d’administration Microsoft 365](../media/topic-experiences-licenses.png)
+
+5. Cliquez sur **Enregistrer les modifications**.
 
 ## <a name="manage-topic-experiences"></a>Gérer les expériences de rubrique
 

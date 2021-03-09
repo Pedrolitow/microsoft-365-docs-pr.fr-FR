@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b5a2e9c4be2cc5f1448e4dddeee181ed0346fc3d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6fca2ba3add3f34c971b6e9607135fa433622376
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648622"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550203"
 ---
 # <a name="payment-information-for-senegal"></a>Informations de paiement pour le Sénégal
 

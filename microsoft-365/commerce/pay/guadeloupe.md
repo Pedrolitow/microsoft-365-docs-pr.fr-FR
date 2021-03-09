@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1689a672ebd83b7d54f7ea300aca51981322b5ee
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0305479cc03d4ed16a572055cb6d8248324d8879
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647434"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551079"
 ---
-# <a name="payment-information-for-guadeloupe"></a>Informations de paiement pour LaPétade
+# <a name="payment-information-for-guadeloupe"></a>Informations de paiement pour La France
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
