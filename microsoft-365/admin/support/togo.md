@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e6c85c2b32e4c4db576005f728b3c79e58c5b89e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e126f8cdff6233522e94b4013703e5cda59b785
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639142"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543891"
 ---
 # <a name="contact-support-for-togo"></a>Contacter le support technique pour le Togo
 
@@ -30,7 +29,7 @@ ms.locfileid: "48639142"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 8H00 à 16h00
+Français : Mon-Fri 8 H 00 à 4 h 00
 
 Anglais : Mon-Fri 8H00 à 16h00
 

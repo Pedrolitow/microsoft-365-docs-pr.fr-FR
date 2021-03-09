@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0c39ba1d08bd40a950b4a323874e2a64c4017633
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 07983faa86c1ac2fe2a5daaaa8784d8071d9430b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641410"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546147"
 ---
 # <a name="contact-support-for-macau-sar"></a>Contacter le support technique pour la R.A.S. de Macau
 
@@ -34,7 +33,7 @@ Après la numérotation, entrez
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Banques : Mon-Fri 9 h à 17 h
+Dimanche : Mon-Fri 9 h à 17 h
 
 Mandarin : Mon-Fri 9 h à 17 h
 

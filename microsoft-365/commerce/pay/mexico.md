@@ -9,22 +9,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ee59c03eedcbe214be96457d18b96a53819818d6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9c936312fae817e08f947b20693079072c4d942b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649263"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543159"
 ---
 # <a name="payment-information-for-mexico"></a>Informations de paiement pour le Mexique
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Payez uniquement en pesos américains. Pour que votre paiement soit traitée, le nom et le numéro de facture de votre société doivent être indiqués lors du paiement de paiement par versement.
+Payez uniquement en Pesos américains. Pour que votre paiement soit traitée, le nom et le numéro de facture de votre société doivent être indiqués lors du paiement de paiement par versement.
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 

@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 880108ad28a6230102e3e65f87372595e66b7f24
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: babdfd3ed314e4fa0317d8e8afef3963685e6ab2
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641014"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545703"
 ---
 # <a name="contact-support-for-mongolia"></a>Contacter le support technique pour la Mongolie
 

@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e676b8f635f5f62aeeb2e7e44cd7d7ead2f8b358
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 93e61b4da34ebf6e843bef16d1b928a3467243d2
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639346"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544035"
 ---
 # <a name="contact-support-for-switzerland"></a>Contacter le support technique pour la Suisse
 
@@ -32,7 +31,7 @@ ms.locfileid: "48639346"
 
 Français : Lun.-ven. 9H-17h
 
-Allemand : Mon-Fri 9h00 à 17h00
+Allemand : Mon-Fri 9 h à 17 h
 
 Italien : Mon-Fri 9h00 à 17h00
 

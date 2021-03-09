@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 79a563b44979f9fc4d8cc053575a0ca76ed3a846
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9fd3a9dec07e4eb6cd543384d82b317fa1da9acc
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640126"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544815"
 ---
 # <a name="contact-support-for-russia"></a>Contacter le support pour la Russie
 

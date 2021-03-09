@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9a553ccff4b9d034cdd269e5df6cc484ba808682
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ec8d63ae92fea3d0bd95ec632aaa1cb7b441bcc4
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639850"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544551"
 ---
 # <a name="contact-support-for-senegal"></a>Contacter le support pour le Sénégal
 

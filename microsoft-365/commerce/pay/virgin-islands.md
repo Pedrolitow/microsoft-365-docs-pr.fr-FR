@@ -9,22 +9,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 62ae33afde81d2beccabc9836c3ad94182705d6e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cfe40da53d7ffb7430f0da54dfd558e460e0d97f
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648010"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542453"
 ---
 # <a name="payment-information-for-virgin-islands-us"></a>Informations de paiement pour les îles Vierges, États-Unis
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en USD uniquement et référencer les numéro(s) de facture sur votre paiement.
+Veuillez payer en USD uniquement et référencer les numéro(s) de facture à votre paiement.
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 

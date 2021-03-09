@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 46ecbf89b3063ab72937d0ed3bfd8056084b11fa
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7029df1c1ab6011fe4a1aaa72a02efa69d57db5d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640546"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545247"
 ---
 # <a name="contact-support-for-oman"></a>Contacter le support technique d’Oman
 

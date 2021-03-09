@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ff0fcf9a2edc528bcf81106232c32eb2515bf9c9
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ca63a8e14c08264f2136736f9a5cd96152db93e0
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639190"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543999"
 ---
 # <a name="contact-support-for-tanzania"></a>Contacter le support pour la Tanzanie
 

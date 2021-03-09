@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 197f68403ca2271f76a2a81c242d3c40aacff3bc
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b0ec106f1f2869445180cad3bce2b42776f42b50
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641446"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546225"
 ---
 # <a name="contact-support-for-lesotho"></a>Contacter le support technique pour Le Monde
 
