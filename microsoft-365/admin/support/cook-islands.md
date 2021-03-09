@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5c5ebc66dfe8d5fa76a903f39f0f3cf858b4a9fa
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b859666cae4e7fe726863f9e0fa352a88d0ed96a
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643162"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547911"
 ---
 # <a name="contact-support-for-cook-islands"></a>Contacter le support technique pour les îles Cook
 
