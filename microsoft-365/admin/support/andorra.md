@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9b587f33e2e804811b86795eb11d0d6f49b110d6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9e3d00c2aa5c75af16d627e3c6ee201bd9848362
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644350"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549063"
 ---
 # <a name="contact-support-for-andorra"></a>Contacter le support technique de l’Andorre
 
@@ -30,7 +29,7 @@ ms.locfileid: "48644350"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Espagnol : Mon-Fri 10:00-18:00
+Espagnol : Mon-Fri 10h00 à 18h00
 
 Anglais : Mon-Fri 10h00 à 18h00
 

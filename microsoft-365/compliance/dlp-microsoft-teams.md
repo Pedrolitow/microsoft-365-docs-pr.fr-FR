@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vous pouvez désormais appliquer des stratégies DLP aux conversations et canaux Microsoft Teams. Lisez cet article pour en savoir plus sur son fonctionnement.
-ms.openlocfilehash: 13d5d73423cc6ad7db76076f6a53dde668b8fa5c
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: 4b6f0c2e6915e7e96ba862fc6862b69aa0d827fd
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279362"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572660"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft Teams
 
@@ -29,19 +29,16 @@ ms.locfileid: "50279362"
 La prise en charge de la protection DLP dans Teams Chat nécessite E5.
 Pour en savoir plus sur les conditions d’octroi de licences, consultez [Conseils sur la gestion des licences des services de niveau client de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
-> [!IMPORTANT]
-> La DLP pour Teams est uniquement prise en charge lorsque l’utilisateur dispose d’une boîte aux lettres dans Exchange Online
-
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Vue d’ensemble de la DLP pour Microsoft Teams
 
 Récemment, [les fonctionnalités de](data-loss-prevention-policies.md) protection contre la perte de données (DLP) ont été étendues pour inclure les messages de conversation et de canal Microsoft Teams, y compris les messages de canal **privé.**
 
-Si votre organisation dispose de DLP, vous pouvez désormais définir des stratégies qui empêchent les personnes de partager des informations sensibles dans un canal ou une session de conversation Microsoft Teams. Voici quelques exemples de fonctionnement de cette protection :
+Si votre organisation dispose d’une DLP, vous pouvez désormais définir des stratégies qui empêchent les personnes de partager des informations sensibles dans un canal ou une session de conversation Microsoft Teams. Voici quelques exemples de fonctionnement de cette protection :
 
 - **Exemple 1 : protection des informations sensibles dans les messages**. Supposons qu’une personne tente de partager des informations sensibles dans une conversation ou un canal Teams avec des invités (utilisateurs externes). Si vous avez défini une stratégie DLP pour éviter cela, les messages avec des informations sensibles envoyés à des utilisateurs externes sont supprimés. Cela se produit automatiquement et en quelques secondes, en fonction de la configuration de votre stratégie DLP.
 
     > [!NOTE]
-    > DLP pour Microsoft Teams bloque le contenu sensible lorsqu’il est partagé avec des utilisateurs de Microsoft Teams qui ont :<br/>- [accès invité dans](https://docs.microsoft.com/MicrosoftTeams/guest-access) les équipes et les canaux ; ou<br/>- [accès externe](https://docs.microsoft.com/MicrosoftTeams/manage-external-access) dans les réunions et les sessions de conversation. <p>La DLP pour les sessions de conversation externe ne fonctionne que si l’expéditeur et le destinataire sont en mode Teams uniquement et utilisent [la fédération native de Microsoft Teams.](https://docs.microsoft.com/microsoftteams/manage-external-access) DLP pour Teams ne bloque pas les messages en [cas d’interaction](https://docs.microsoft.com/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) avec Skype Entreprise ou les sessions de conversation fédérée non natives.
+    > DLP pour Microsoft Teams bloque le contenu sensible lorsqu’il est partagé avec des utilisateurs de Microsoft Teams qui ont :<br/>- [accès invité dans](https://docs.microsoft.com/MicrosoftTeams/guest-access) les équipes et les canaux ; ou<br/>- [accès externe dans](https://docs.microsoft.com/MicrosoftTeams/manage-external-access) les réunions et les sessions de conversation. <p>La DLP pour les sessions de conversation externe ne fonctionne que si l’expéditeur et le destinataire sont en mode Teams uniquement et utilisent [la fédération native de Microsoft Teams.](https://docs.microsoft.com/microsoftteams/manage-external-access) DLP pour Teams ne bloque pas les messages en [cas d’interaction](https://docs.microsoft.com/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) avec Skype Entreprise ou les sessions de conversation fédérée non natives.
 
 - **Exemple 2 : protection des informations sensibles dans les documents**. Supposons qu’une personne tente de partager un document avec des invités dans un canal ou une conversation Microsoft Teams, et que le document contient des informations sensibles. Si vous avez défini une stratégie DLP pour éviter cela, le document ne s’ouvre pas pour ces utilisateurs. Notez que dans ce cas, votre stratégie DLP doit inclure SharePoint et OneDrive pour que la protection soit en place. (Il s’agit d’un exemple de DLP pour SharePoint qui s’affiche dans Microsoft Teams, et par conséquent nécessite que les utilisateurs soient titulaires d’une licence pour Office 365 DLP (inclus dans Office 365 E3), mais ne nécessite pas que les utilisateurs soient titulaires d’une licence pour Office 365 Conformité avancée.)
 
@@ -75,7 +72,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 
 4. Créez une règle ou modifiez une règle existante pour la stratégie.<br/>![Modification d’une règle pour une stratégie](../media/dlp-teams-editrule.png)<br/>
 
-5. Sous **l’onglet Notifications de** l’utilisateur, sélectionnez Personnaliser le texte **du message** électronique et/ou personnaliser les options de texte du **conseil de** stratégie.<br/>![Personnaliser les notifications utilisateur et les conseils de stratégie](../media/dlp-teams-editrule-usernotifications.png)<br/>  
+5. Sous **l’onglet Notifications de** l’utilisateur, sélectionnez Personnaliser le texte de l’e-mail et/ou personnaliser les options de texte du **conseil de** stratégie. <br/>![Personnaliser les notifications utilisateur et les conseils de stratégie](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
 6. Spécifiez le texte que vous souhaitez utiliser pour les notifications par courrier électronique et/ou les conseils de stratégie, puis sélectionnez **Enregistrer**.
 
@@ -92,7 +89,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 
 2. Choisissez **la stratégie de protection contre la perte de**  >  **données.**
 
-3. Sélectionnez une stratégie et regardez les valeurs sous **Emplacements.** Si vous voyez des messages de conversation et de canal **Teams,** tout est prêt. Si ce n’est pas le cas, cliquez sur **Modifier.**<br/>![Emplacements pour la stratégie existante](../media/dlp-teams-editexistingpolicy.png)<br/>
+3. Sélectionnez une stratégie et regardez les valeurs sous **Emplacements.** Si vous voyez **des messages de conversation et de canal Teams,** tout est prêt. Si ce n’est pas le cas, cliquez sur **Modifier.**<br/>![Emplacements pour la stratégie existante](../media/dlp-teams-editexistingpolicy.png)<br/>
 
 4. Dans la **colonne État,** activer la stratégie pour les messages de conversation et **de canal Teams.**<br/>![DLP pour les conversations et les canaux Teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 

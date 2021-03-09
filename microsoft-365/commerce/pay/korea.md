@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a85331a7761241966988428e243c8c20bb2f73e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fbce897c3a9e0cb030de46b5e381cba056b800b1
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649564"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550587"
 ---
 # <a name="payment-information-for-korea"></a>Informations de paiement pour la Corée
 
@@ -29,7 +28,7 @@ Veuillez payer en KRW uniquement et référencer les numéro(s) de facture à vo
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
 **Banque :** Bank  
-**Branche :** 89-29 Contrôlemunro-2ka Chongro-gu Korea, Corée 110-062  
+**Branche :** 89-29 Contrôlemunro-2ka Chongro-guÖl, Corée 110-062  
 **Code SWIFT :** CITIKRSX  
 **Numéro de compte :** 5001296088  
 **Nom du compte :** MICROSOFT KOREA  

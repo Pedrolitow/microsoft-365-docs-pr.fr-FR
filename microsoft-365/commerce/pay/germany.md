@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a5ef9ea32262f323adc76163af54411514820570
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c051eabf1f66f83bcacc83f34f0116a6427f4747
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405783"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551223"
 ---
 # <a name="payment-information-for-germany"></a>Informations de paiement pour l’Allemagne
 
@@ -31,7 +30,7 @@ ms.locfileid: "50405783"
 Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,** utilisez les informations bancaires ci-après :
 
 Banque :Bankbank, Londres\
-Code SWIFT : CITIGB2L\
+Code SWIFT :VBGB2L\
 Code IBAN : GB31CITI18500812207591\
 Code SORT : 185008\
 Numéro de compte : 12207591\
