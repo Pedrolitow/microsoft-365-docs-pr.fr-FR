@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a88d853905ed8462972c9f423254a49424974bb7
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 1bb5e93b08b74f5691c76e9a59bf9fa970e08f36
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066837"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597194"
 ---
 # <a name="message-encryption-faq"></a>FAQ sur le chiffrement des messages
 
@@ -75,7 +75,7 @@ Les nouvelles fonctionnalités de chiffrement de messages Office 365 sont une é
 |**Envoi d’un e-mail chiffré**|Uniquement par le biais de règles de flux de messagerie Exchange|Utilisateur final initié à partir d’Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou via des règles de flux de messagerie Exchange|Utilisateur final initié à partir d’Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou via des règles de flux de messagerie|
 |**Gestion des droits**|-|Option Ne pas forwarder et modèles personnalisés|Option Ne pas forwarder, option chiffrer uniquement, modèles par défaut et personnalisés|
 |**Type de destinataire pris en charge**|Destinataires externes uniquement|Destinataires internes uniquement|Destinataires internes et externes|
-|**Expérience du destinataire**|Les destinataires externes ont reçu un message HTML qu’ils ont téléchargé et ouvert dans un navigateur ou une application mobile téléchargée.|Les destinataires internes n’ont reçu que du courrier électronique chiffré dans Outlook pour Windows, Outlook pour Mac et Outlook sur le web.|Les destinataires internes et externes reçoivent des messages électroniques dans Outlook pour Windows, Outlook pour Mac, Outlook sur le web, Outlook pour Android et Outlook pour iOS, ou via un portail web, qu’ils soient dans la même organisation ou dans n’importe quelle organisation. Le portail OME ne nécessite aucun téléchargement distinct.|
+|**Expérience du destinataire**|Les destinataires externes ont reçu un message HTML qu’ils ont téléchargé et ouvert dans un navigateur ou une application mobile téléchargée.|Les destinataires internes n’ont reçu que du courrier chiffré dans Outlook pour Windows, Outlook pour Mac et Outlook sur le web.|Les destinataires internes et externes reçoivent des messages électroniques dans Outlook pour Windows, Outlook pour Mac, Outlook sur le web, Outlook pour Android et Outlook pour iOS, ou via un portail web, qu’ils soient dans la même organisation ou dans n’importe quelle organisation. Le portail OME ne nécessite aucun téléchargement distinct.|
 |**Prise en charge de l’apportez votre propre clé**|Non disponible|Non disponible| BYOK pris en charge|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>Comment activer les nouvelles fonctionnalités OME pour mon organisation ?
@@ -100,7 +100,7 @@ Vous pouvez créer des messages protégés à partir d’Outlook 2016, d’Outlo
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Quels clients de messagerie sont pris en charge pour lire et répondre aux e-mails protégés ?
 
-Les utilisateurs de Microsoft 365 peuvent lire et répondre à partir d’Outlook pour Windows et Mac (2013 et 2016), Outlook sur le web et Outlook Mobile (Android et iOS). Vous pouvez également utiliser le client de messagerie natif iOS si votre organisation l’autorise. Si vous n’êtes pas un utilisateur Microsoft 365, vous pouvez lire et répondre à des messages chiffrés sur le web via votre navigateur web.
+Les utilisateurs de Microsoft 365 peuvent lire et répondre à partir d’Outlook pour Windows et Mac (2013 et 2016), Outlook sur le web et Outlook Mobile (Android et iOS). Vous pouvez également utiliser le client de messagerie natif iOS si votre organisation l’autorise. Si vous n’êtes pas un utilisateur de Microsoft 365, vous pouvez lire et répondre à des messages chiffrés sur le web via votre navigateur web.
 
 ## <a name="what-email-clients-support-the-encrypt-only-protected-emails"></a>Quels clients de messagerie électronique supportent les e-mails protégés uniquement par chiffrement ?
 
@@ -141,9 +141,9 @@ Not yet. Les pièces jointes OneDrive Entreprise ne sont pas pris en charge et l
   
 ## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>Quels clients de messagerie peuvent prévisualiser les pièces jointes chiffrées dans les e-mails protégés ?
 
-Lorsque les pièces jointes sont protégées par un courrier protégé, les clients Outlook offrent la possibilité d’afficher un aperçu du document directement. Outlook prend en charge l’aperçu des documents Office (docx, xlsx, pptx, doc, xls, ppt). Outlook sur le web prend en charge l’aperçu des documents Office (docx, xlsx, pptx) et PDF.  
+Lorsque les pièces jointes sont protégées par un courrier électronique protégé, les clients Outlook offrent la possibilité d’afficher un aperçu du document directement. Outlook prend en charge l’aperçu des documents Office (docx, xlsx, pptx, doc, xls, ppt). Outlook sur le web prend en charge l’aperçu des documents Office (docx, xlsx, pptx) et PDF.  
 
-## <a name="what-email-clients-support-revocation-of-protected-emails"></a>Quels clients de messagerie la révocation des e-mails protégés est-elle prise en charge ?
+## <a name="what-email-clients-support-revocation-of-protected-emails"></a>Quels clients de messagerie supportent la révocation des e-mails protégés ?
 
 Outlook sur le web prend en charge la révocation du courrier protégé.  Voir [comment révoquer un message chiffré que vous avez envoyé pour](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) plus d’informations.
 
@@ -166,7 +166,7 @@ Oui. Pour plus d’informations sur la personnalisation des messages électroniq
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Existe-t-il des fonctionnalités de rapport ou des informations pour les e-mails chiffrés ?
 
-Il existe un rapport de chiffrement dans le Centre de sécurité et conformité. Voir [afficher les rapports de sécurité du courrier électronique dans le Centre de sécurité & conformité.](../security/office-365-security/view-email-security-reports.md)
+Il existe un rapport de chiffrement dans le Centre de sécurité et conformité. Voir afficher les rapports de sécurité du courrier électronique dans le [Centre de sécurité & conformité.](../security/office-365-security/view-email-security-reports.md)
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Puis-je utiliser le chiffrement des messages avec des fonctionnalités de conformité telles qu’eDiscovery ?
 
@@ -174,7 +174,7 @@ Oui. Tous les messages électroniques chiffrés sont découvrables par les fonct
 
 ## <a name="can-i-remove-encryption-from-email"></a>Puis-je supprimer le chiffrement du courrier électronique ?
 
-Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement du courrier sortant. Vous ne pouvez pas supprimer le chiffrement à l’aide d’une règle de flux de messagerie des messages entrants.
+Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement. Vous ne pouvez pas supprimer le chiffrement à l’aide d’une règle de flux de messagerie appliquée par une autre organisation, sauf si le courrier est inscrit à l’aide d’une protection de chiffrement uniquement.
 
 ## <a name="is-delegated-access-supported"></a>L’accès délégué est-il pris en charge ?
 

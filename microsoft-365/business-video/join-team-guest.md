@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment rejoindre une équipe en tant qu’invité dans Microsoft Teams.
-ms.openlocfilehash: 8ed7b8c92fa9fbe22c8a4f74b89916266a4af46f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 51f287361877cb0b427a38c48683c064bda99126
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422482"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603959"
 ---
 # <a name="join-a-team-as-a-guest"></a>Rejoindre une équipe en tant qu’invité
 
@@ -33,12 +33,12 @@ ms.locfileid: "50422482"
 
 ## <a name="try-it"></a>Essayez !
 
-Si vous recevez une invitation Microsoft Teams à rejoindre une équipe, vous devez suivre deux étapes pour accepter l’invitation.
+Si vous recevez une invitation Microsoft Teams pour rejoindre une équipe, vous devez suivre deux étapes pour accepter l’invitation.
 
 1. Ouvrez l’invitation par courrier électronique, puis **sélectionnez Ouvrir Microsoft Teams.** Si vous ne voyez pas l’invitation, vérifiez votre dossier de courrier indésirable ou de courrier indésirable.
-  1. Si votre adresse de messagerie n’a pas été utilisée précédemment pour créer un compte Microsoft, vous devez en créer un.
+  1. Si votre adresse de messagerie n’a pas été précédemment utilisée pour créer un compte Microsoft, vous devez en créer un.
 
-     Dans la **boîte de dialogue** Créer un compte, **sélectionnez Suivant,** créez un mot de passe, puis sélectionnez **Suivant.**
+     Dans la **boîte de dialogue** Créer un compte, **sélectionnez Suivant,** créez un mot de passe, puis **sélectionnez Suivant.**
   1. Pour vérifier votre adresse e-mail, ouvrez l’e-mail de vérification et copiez le code de sécurité.
   1. Entrez votre code  de sécurité dans la boîte de dialogue  Vérifier l’e-mail, sélectionnez **Suivant,** entrez la CAPTCHA dans la ligne Entrez les caractères que vous voyez, sélectionnez **Suivant,** puis **Acceptez**.
 1. Si vous ne souhaitez pas télécharger l’application Microsoft Teams, sélectionnez **Utiliser l’application web à la place.**

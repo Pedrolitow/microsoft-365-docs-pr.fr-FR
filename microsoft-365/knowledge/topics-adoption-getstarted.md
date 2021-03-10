@@ -11,12 +11,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 28dc86bbc2d844110610cd8a884af5313b7d8cfa
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: e8d7ca4786893fb5eb39090d9a271ace1c62d321
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453980"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50596967"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Commencer à piloter l’adoption des rubriques microsoft
 
@@ -27,7 +27,7 @@ Avant de commencer l’adoption, vous devez comprendre les concepts impliqués d
 - **Découverte**: les utilisateurs peuvent découvrir les connaissances dans les applications qu’ils utilisent quotidiennement à l’aide de cartes de rubriques , ils peuvent également découvrir des rubriques dans Microsoft Search (recherche Microsoft).
 - **Curation**: les experts techniques (SME) affinent les rubriques par le biais de pages de rubriques, et l’IA apprend à partir de leurs entrées. Le centre de rubriques contient des pages de rubriques que les utilisateurs peuvent explorer et que les experts peuvent gérer.
 - **Identification**: avec Microsoft Graph et les connaissances et les personnes de l’Intelligence artificielle (IA) (rubriques, compétences, etc.) sont identifiées et automatiquement organisées en rubriques connexes. Le contenu SharePoint est indexé avec le contenu de sécurité.
-- **Extension**: avec les connecteurs de contenu Microsoft Graph (bientôt disponibles), vous pouvez inger les connaissances des services externes et des référentiels de données.
+- **Extension**: avec les connecteurs de contenu Microsoft Graph (bientôt disponibles), vous pouvez ingérez les connaissances des services externes et des référentiels de données.
 
 Pour plus d’informations, vous pouvez consulter la [vue d’ensemble](topic-experiences-overview.md) pour une présentation.
 
@@ -42,7 +42,7 @@ Pour vous aider à vous préparer, réfléchissez à ces questions :
 
 - Quel contenu doit être utilisé pour la découverte de sujet ?
 - Qui gérera les rubriques ?
-- Qui verra les fiches et les points forts des rubriques ?
+- Qui verra les cartes de rubrique et les points forts ?
 - Quelles rubriques sont attendues ?
 
 Examinez la liste des conditions préalables à la mise à jour des rubriques De La Presse :
@@ -50,7 +50,7 @@ Examinez la liste des conditions préalables à la mise à jour des rubriques De
 |Produit ou fonctionnalité |Description |
 |:-------|:--------|
 |SharePoint Online avec des pages SharePoint modernes |L’exploration de rubriques inclut uniquement du contenu sur les sites SharePoint, et les cartes de sujet ne peuvent être pointées que sur des pages modernes.|
-|Microsoft Graph |Vous pouvez contrôler si des rubriques sont incluses ou exclues de Search ou Delve avec les paramètres de Microsoft Graph. |
+|Microsoft Graph |Vous pouvez contrôler si des rubriques sont incluses ou exclues de Search ou Delve avec les paramètres de Microsoft Graph. |
 
 ## <a name="plan-for-adoption"></a>Planifier l’adoption
 
@@ -64,26 +64,30 @@ Pour planifier l’adoption de Topics, vous devez :
     - Déterminer l’impact sur l’entreprise que vous souhaitez atteindre et la façon dont vous allez mesurer [la réussite.](#create-a-success-plan)
 
 2. Impliquer votre organisation :
-    - Identifiez les groupes d’entreprise et les équipes d’entreprise qui doivent être impliqués et alignez-les entre ceux-ci et les scénarios que vous planifiez.
+    - Identifiez les groupes d’entreprise et les équipes d’entreprise qui doivent être impliqués et alignez-les sur ceux-ci et les scénarios que vous planifiez.
     - Commencez à réfléchir à la façon d’impliquer certains utilisateurs précoces pour obtenir des commentaires critiques et précoces afin de pouvoir itérer pour obtenir la meilleure solution.
     - Commencez à créer la communauté et réfléchissez à la façon dont Topics peut être utilisé au sein de votre organisation par ces différents groupes.
 
 3. Formez votre organisation : la plupart des personnes comprendront intuitivement le concept des rubriques et la façon dont les fiches de rubrique compilent les informations pertinentes, comprennent et voient la valeur. Toutefois, vous souhaitez peut-être créer une formation adaptée à votre propre culture et organisation, afin de montrer comment vous souhaitez utiliser Topics. Ressources de formation :
-    - [Centre de ressources Project Contrôle](https://aka.ms/projectcortex). Inclut des vues d’ensemble et des informations sur les fonctionnalités, des vidéos et des présentations enregistrées pour les heures d’bureau, ainsi que des informations sur les partenaires et leurs offres.
+    - [Centre de ressources Project Contrôle](https://aka.ms/projectcortex). Inclut des vues d’ensemble et des informations sur les fonctionnalités, des vidéos et des présentations d’heures bureau enregistrées, ainsi que des informations sur les partenaires et leurs offres.
     - Bientôt disponible, des vidéos de formation et de l’aide pour les utilisateurs finaux.
 
 4. [Créez un réseau champion](#build-a-champion-network):
-    - Vous avez peut-être déjà mis en place des communautés de pratiques ou des réseaux de champions. Ces méthodes sont excellentes pour mettre en réseau et mettre en avant les pairs et les impliquer pour s’aider mutuellement. Ils peuvent également partager des témoignages qui peuvent être très utiles. Ils peuvent donner des conseils et générer de l’intérêt.
+    - Vous avez peut-être déjà mis en place des communautés de pratiques ou des réseaux de champions. Ces méthodes sont excellentes pour mettre en réseau et mettre en avant les pairs et les impliquer pour s’aider mutuellement. Ils peuvent également partager des témoignages qui peuvent être utiles. Ils peuvent donner des conseils et générer de l’enthousiasme.
 
 ### <a name="target-scenarios"></a>Scénarios cibles
 
-Vous devez déterminer la façon dont vous souhaitez utiliser Rubriques Dans votre organisation avant de pouvoir réussir avec les rubriques. Voici quelques scénarios dans lequel la gestion des connaissances et les rubriques peuvent aider votre organisation :
+Déterminez la façon dont vous souhaitez utiliser Rubriques Dans votre organisation afin de pouvoir les utiliser correctement. Voici quelques scénarios dans lequel la gestion des connaissances et les rubriques peuvent aider votre organisation :
 
 - L’intégration & formation : comprendre la terminologie, les projets clés et la culture d’une nouvelle organisation sont des étapes importantes de l’intégration. La découverte aisée de rubriques peut aider les nouveaux employés à se déchaîner rapidement sur de nouveaux travaux, rôles ou projets.
 - Recherche d’expertise et partage d’informations : lorsque des rubriques sont gérées et partagées, les membres de votre organisation peuvent trouver plus facilement des informations et des experts pour les aider dans leur travail quotidien.
 - Prise de décision étendue et amélioration du temps de c commercialiser : lorsque les informations et les experts sont faciles à atteindre, vous pouvez prendre des décisions plus facilement et faciliter les projets.
 
-Par exemple, voici un scénario pour l’intégration de rôle :
+#### <a name="example-scenario-for-role-onboarding"></a>Exemple de scénario pour l’intégration de rôle
+
+Un responsable RH doit fournir aux nouveaux employés des informations qui les aideront à intégrer rapidement l’entreprise et leurs équipes. Ils souhaitent les faire pointer vers les ressources, les documents et les membres d’équipe qu’ils devront intégrer rapidement et efficacement. Ils recherchent une solution qui permet au nouvel employé de trouver rapidement les informations dont il a besoin sans avoir à effectuer des recherches dans plusieurs référentiels ou à quitter les applications qu’il utilise déjà.
+
+Par exemple :
 
 - Un employé (Jordanie) prend un nouveau rôle ou vient d’être embauché et ne fait que commencer par un rôle. La Jordanie souhaite être impliquée et productive aussi rapidement que possible. Toutefois, la Jordanie a également besoin d’aide pour trouver un point de départ.
 - Collègue (Kim) qui était dans le rôle avant que la Jordanie ne crée des pages de rubriques qui peuvent aider les nouveaux employés et toute autre personne à la recherche de ces informations.
@@ -91,13 +95,35 @@ Par exemple, voici un scénario pour l’intégration de rôle :
 - Quand la Jordanie lit un nouveau billet sur SharePoint, un sujet est mis en surbrillant et pointe sur celui-ci pour obtenir rapidement une définition du terme et qui contacter avec d’autres questions. Avant, la Jordanie devait peut-être chercher ces informations et contacter ses collègues pour savoir qui poser des questions.
 - L’exposition de ces informations par le biais de rubriques peut être puissante, car bien que ces informations soient auparavant disponibles, elles peuvent avoir été cloisonées et difficiles à trouver. L’amener dans les applications que la Jordanie utilise et les aider à trouver ces experts peut également stimuler l’implication et la communauté. Cela peut également les aider à se sentir plus autonomes lorsqu’ils traitent du nouveau rôle.
 
+Lorsque vous automatisez ce scénario, vous pouvez vous assurer que :
+
+- Les nouveaux employés peuvent rapidement se connecter aux bonnes personnes sur les projets.
+- Les nouveaux employés ont un accès instantané aux dernières informations de projet dans le flux de leur travail.
+- Les temps de recherche sont considérablement réduits.
+- Les temps d’intégration sont considérablement réduits.
+
+#### <a name="example-scenario-for-customer-call-center"></a>Exemple de scénario pour le centre d’appels client
+
+Vous pouvez permettre au service clientèle de trouver rapidement des fichiers et des experts pour répondre à des questions fiscales inhabituelles et documenter rapidement la réponse à d’autres personnes auxquelles accéder facilement à l’aide de Rubriques.
+
+Par exemple, un représentant du support technique doit trouver rapidement des articles, des documents et des stratégies de base de connaissances afin de pouvoir prendre en charge les clients. Ils souhaitent trouver les bonnes informations au bon moment, sans avoir à passer manuellement au travers de plusieurs bases de données, référentiels ou applications, ni à envoyer un appel. Ils recherchent également une solution qui leur permet de rester dans leur invite d’appels principale et d’accéder aux stratégies, réglementations et directives dans le flux de leurs conversations, afin de pouvoir répondre rapidement aux questions et mettre à jour le cas.
+
+Lorsque vous automatisez ce scénario avec Topics, vous pouvez vous assurer que :
+
+- Les temps d’appel du support technique sont réduits.
+- Les escalades vers la prise en charge des niveaux 2 et 3 sont réduites.
+- Le nombre de call-backs sur un cas donné est réduit.
+- La satisfaction des clients augmente.
+
+#### <a name="prioritize-your-scenarios"></a>Hiérarchiser vos scénarios
+
 Après avoir identifié vos scénarios, vous pouvez hiérarchiser les scénarios :
 
-L’une des façons de les hiérarchiser consiste à tracer vos scénarios dans une grille présentant l’impact et la facilité d’implémentation. Recherchez les scénarios qui ont un impact élevé et qui sont faciles à implémenter et qui en font votre priorité. Les scénarios à faible impact et difficiles à implémenter sont votre priorité la plus faible. Lorsque vous avez un gain rapide avec un impact élevé et un scénario facile à implémenter, cela permet aux gens d’être ravis et de voir les possibilités d’utilisation des rubriques.
+L’une des façons de les hiérarchiser consiste à tracer vos scénarios dans une grille présentant l’impact et la facilité d’implémentation. Recherchez les scénarios qui ont un impact élevé et qui sont faciles à implémenter et qui en font votre priorité. Les scénarios à faible impact et difficiles à implémenter sont votre priorité la plus faible. Lorsque vous avez un gain rapide avec un impact élevé et un scénario facile à implémenter, cela permet aux gens d’être ravis et de voir les possibilités d’utiliser des rubriques.
 
 ![Les scénarios à fort impact et faciles à implémenter sont prioritaires](../media/knowledge-management/topics-prioritize-scenarios.png)
 
-Choisissez quelques scénarios clés sur la première étape, travaillez avec vos premiers utilisateurs pour obtenir des commentaires, puis lancez-les par étapes. De cette façon, vous pouvez itérer, apporter des améliorations et obtenir des commentaires afin de développer l’adoption au fil du temps. 
+Choisissez quelques scénarios clés sur la première étape, travaillez avec vos premiers utilisateurs pour obtenir des commentaires, puis lancez-les par étapes. De cette façon, vous pouvez itérer, apporter des améliorations et obtenir des commentaires afin de développer l’adoption au fil du temps.
 
 ### <a name="identify-stakeholders"></a>Identifier les parties prenantes
 
