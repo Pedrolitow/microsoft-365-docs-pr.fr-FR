@@ -21,12 +21,12 @@ description: 'Centre d’administration Microsoft 365 : découvrez les fonctionn
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: e8e743c0f3de0d7ac2eb8ebb9995596783d2d31a
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461830"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717639"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d’administration Microsoft 365
 
@@ -63,6 +63,12 @@ Nous avons repensé le centre de messages pour vous aider à découvrir les mess
 
 Pour en savoir plus sur les nouvelles fonctionnalités, consultez La fonctionnalité [Gérer les messages dans le Centre de messages.](manage/manage-messages.md)
 
+### <a name="whats-new-features"></a>Nouveautés
+
+Nous avons apporté des améliorations à la façon dont vous affichez les fonctionnalités « Nouveautés » pour les utilisateurs dans les applications Office. Vous pouvez maintenant voir le contenu enrichi dans le nouveau volet Whats que vos utilisateurs peuvent voir. Vous pouvez également en savoir plus sur la fonctionnalité avant de décider d’en faire savoir à vos utilisateurs. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what’s new page showing improvements to Power BI":::
+
 ## <a name="ignite-2020-august--september"></a>Ignite 2020 (août & septembre)
 
 Bienvenue dans Microsoft Ignite , notre premier Ignite en ligne uniquement. Nous espérons vous voir dans l’une de nos sessions : [Microsoft Ignite 2020 Session Catalog](https://myignite.microsoft.com/sessions). Voici quelques-uns des éléments dont nous parlerons à Ignite.
@@ -75,7 +81,7 @@ Nous avons développé un ensemble de fonctionnalités pour les administrateurs 
 
 - **Vos locataires :** basculez rapidement entre les locataires que vous gérez.
 - **Tous** les clients : nouvelle page où vous pouvez voir rapidement l’état de tous les services de vos clients, les demandes de service ouvertes, vos produits et facturation, les tâches de configuration recommandées et le nombre d’utilisateurs dans ce client.
-- **Programme d’installation**: la page d’installation multi-client vous donne un affichage liste de la page d’installation, mais elle est organisée pour de nombreux locataires. Vous pouvez voir quelles fonctionnalités ne sont pas désactivées, quelles tâches sont terminées pour tous les locataires, tâches que les locataires doivent encore effectuer. Cette vue vous aidera à effectuer le suivi de l’adoption des fonctionnalités et à vous assurer que les tâches de configuration de sécurité recommandées sont toujours réalisées.
+- **Programme d’installation**: la page d’installation multi-locataires vous donne un affichage liste de la page d’installation, mais organisée pour de nombreux locataires. Vous pouvez voir quelles fonctionnalités ne sont pas désactivées, quelles tâches sont terminées pour tous les locataires, tâches que les locataires doivent encore effectuer. Cette vue vous aidera à effectuer le suivi de l’adoption des fonctionnalités et à vous assurer que les tâches de configuration de sécurité recommandées sont toujours réalisées.
 - **État du** service : l’affichage d’état du service vous indique si des incidents ou des avis affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés. Sélectionnez simplement un incident pour obtenir plus d’informations sous l’onglet Vue d’ensemble, puis basculez vers l’onglet Locataires affectés pour descendre et prendre en charge ce client.
 - **Les migrations** de boîtes aux lettres entre clients sont un nouveau service, désormais en prévisualisation publique, qui vous permet de déplacer des boîtes aux lettres entre des clients sans avoir à retenter les boîtes aux lettres, puis à les intégrer. 
 - **Partage de domaine entre** locataires : bientôt, vous pouvez rejoindre un aperçu privé pour les fonctionnalités qui vous permettent de partager un domaine entre plusieurs locataires. Par exemple, si Contoso acquiert Wingtip Toys, Contoso peut partager le domaine avec Wingtip Toys afin que les personnes des deux locataires peuvent utiliser « contoso.com » comme adresses de messagerie.
@@ -113,7 +119,7 @@ Nous avons commencé à déployer une nouvelle expérience de recherche pour le 
   - **Navigation**: les résultats sous Navigation peuvent rapidement vous aider à obtenir rapidement une page dans le Centre d’administration. Par exemple, la recherche de « rôles » vous permettra d’accès à la page Rôles pour les rôles Azure AD.
   - **Paramètres :** recherchez tous les paramètres liés à votre organisation, les services à qui vous vous abonnez, ainsi que les paramètres de sécurité et de confidentialité. 
   - **Domaines :** vous trouverez des liens rapides vers vos domaines, puis le lien vous permettra d’utiliser la page Vue d’ensemble et d’état de ce domaine.
-  - **Documentation**: si nous ne pouvons pas trouver de résultat pour vous, nous allons essayer de trouver de la documentation pour vous aider. Il faut un peu plus de temps pour que la liste organisée d’articles trouve une correspondance, donc patientez une seconde pour que la recherche trouve les résultats. 
+  - **Documentation**: si nous ne pouvons pas trouver de résultat pour vous, nous allons essayer de trouver de la documentation pour vous aider. Il faut un peu plus de temps à la liste organisée d’articles pour trouver une correspondance, donc patientez une seconde pour que la recherche trouve les résultats. 
   - **Commentaires**: Vous n’avez pas trouvé ce que vous recherchiez ? Envoyez-nous des commentaires à partir de la recherche. Nous allons ajouter des fonctionnalités de recherche pour d’autres pages et d’autres fonctionnalités dans le Centre d’administration.
 
 ### <a name="microsoft-365-admin-mobile-app"></a>Application mobile d’administration Microsoft 365
@@ -122,7 +128,7 @@ L’application mobile d’administration [Microsoft 365,](https://www.microsoft
 
 - Prise en charge des stratégies de gestion des applications mobiles et d’accès conditionnel de **Microsoft Intune**: vous pouvez désormais utiliser votre appareil personnel pour gérer Microsoft 365, même si votre organisation a désactivé les stratégies de gestion des applications mobiles et d’accès conditionnel d’Intune.
 - **Notifications du centre de messages**: activer les notifications du centre de messages sur les notifications de **paramètres** si vous souhaitez être averti des nouvelles publications du centre de  >   messages. Par le biais de notifications, nous voulons vous assurer que vous restez informé des informations et des événements importants au sein de votre client.
-- **Alertes de facturation**: vous pouvez également activer les notifications de facturation sur les **notifications** de paramètres si vous souhaitez obtenir des notifications de facturation sur votre appareil si un abonnement est sur le point d’expirer.  >  
+- **Alertes de facturation**: vous pouvez également activer les notifications de facturation à l’adresse **Settings** Notifications si vous souhaitez obtenir des notifications de facturation sur votre appareil si un abonnement est sur le point d’expirer.  >  
 - **Mode sombre**: bienvenue sur le côté sombre de l’application mobile. Il s’agissait de l’une de nos fonctionnalités les plus demandées. Go to **Settings**  >  **Themes** to turn it on.
 - **Signalez un problème**: vous pouvez maintenant signaler un problème dans l’application ou afficher les problèmes signalés par d’autres administrateurs. Visitez **l’état du** service pour l’consulter.
 
@@ -153,9 +159,9 @@ Nous allons également déployer l’expérience de support nouvelle et amélior
 
 ### <a name="manage-changes-with-microsoft-planner"></a>Gérer les modifications avec le Planificateur Microsoft
 
-En mai, nous avons annoncé que vous serez bientôt en mesure de synchroniser les publications du Centre de messages avec le Planificateur Microsoft et qu’elle sera désormais disponible pour tout le monde.  Vous pouvez désormais créer des tâches à partir de messages, les affecter et les suivre jusqu’à leur achèvement. La première fois, vous sélectionnez **la synchronisation du** planificateur dont vous aurez besoin pour vous connecter au plan approprié.
+En mai, nous avons annoncé que vous serez bientôt en mesure de synchroniser les publications du Centre de messages avec le Planificateur Microsoft et qu’elle est désormais disponible pour tout le monde.  Vous pouvez désormais créer des tâches à partir de messages, les affecter et les suivre jusqu’à leur achèvement. La première fois, vous sélectionnez **la synchronisation du** planificateur dont vous aurez besoin pour vous connecter au plan approprié.
 
-![Page centre de messages avec « synchronisation du planificateur » mise en évidence dans la barre de commandes à côté du bouton préférences.](../media/MAC-WN-MCPlannerSync.png)
+![Page centre de messages avec « synchronisation du planificateur » mise en évidence dans la barre de commandes en face du bouton préférences.](../media/MAC-WN-MCPlannerSync.png)
 
 Pour en savoir plus à ce sujet, consultez cet article et cette vidéo pour voir comment cela fonctionne : Suivre les billets de votre centre [de messages dans le Planificateur](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
 
@@ -171,7 +177,7 @@ Pour en savoir plus à ce sujet, consultez cet article et cette vidéo pour voir
 
 ### <a name="getting-ready-for-ignite-2020"></a>Préparation pour Ignite 2020
 
-Dans la mesure où nous allons passer à la période Ignite chez Microsoft, nous ne publions pas autant de fonctionnalités que nous avons beaucoup de choses à parler au cours de nos sessions.
+Dans la mesure où nous allons passer à la période Ignite chez Microsoft, nous ne publions pas autant de fonctionnalités que nous avons beaucoup à discuter au cours de nos sessions.
 
 La prochaine mise à jour de cet article aura lieu le jour d’ouverture de notre premier ignite en ligne uniquement. Et cette année, il est gratuit ! Check it out, get signed up: [Microsoft Ignite 2020](https://www.microsoft.com/ignite).
 
@@ -181,7 +187,7 @@ La gestion des abonnements a fait beaucoup de travail pour accélérer le charge
 
 - **Nouvelle conception du** tableau : le tableau a été repensé afin de pouvoir grouper des abonnements similaires. Go to **Billing**  >  **Your products**.
 - **Détails du produit**: obtenez plus de détails que jamais sur vos abonnements en sélectionnant le produit dans la liste.
-- **Faites tout à partir d’ici**: et vous n’avez pas besoin de vous déplacer sur plusieurs pages pour gérer un produit. Par exemple, si vous devez annuler un abonnement, le panneau s’ouvre pour y faire l’action.
+- **Faites tout à partir d’ici**: et vous n’avez pas besoin de vous déplacer sur plusieurs pages pour gérer un produit. Par exemple, si vous avez besoin d’annuler un abonnement, le panneau s’ouvre pour y faire l’action.
 
 ![Page Produits avec le panneau Annuler l’abonnement ouvert.](../media/MAC-WN-SubscrDetails.png)
 
@@ -193,7 +199,7 @@ La gestion de domaine peut être compliquée et nous avons publié une nouvelle 
 
 ### <a name="docs-training-and-videos-july-2020"></a>Documentation, formation et vidéos (juillet 2020)
 
-Nouveautés de la série de vidéos [Microsoft 365](https://youtu.be/m1Nu8WJgCDY) : ce mois-ci, nous abordons la nouvelle expérience Yammer pour le web et l’appareil mobile, l’intégration de l’application communautés Yammer pour Microsoft Teams, les nouveaux packages de stratégie pour prendre en charge les employés et responsables de première ligne, et bien plus encore.
+Nouveautés de la série de vidéos [Microsoft 365](https://youtu.be/m1Nu8WJgCDY) : ce mois-ci, nous abordons la nouvelle expérience Yammer pour le web et les appareils mobiles, comment intégrer l’application communautés Yammer pour Microsoft Teams, de nouveaux packages de stratégie pour prendre en charge les employés et responsables de première ligne, et bien plus encore.
 
 ## <a name="june-2020"></a>Juin 2020
 
@@ -211,7 +217,7 @@ Il y a quelques mois, nous avons ajouté un paramètre qui vous permet de gérer
 
 Le 12 mai, nous avons annoncé la disponibilité d’un nouveau canal de mise à jour pour Office : canal d’entreprise mensuel. Ce canal de mise à jour fournit à vos utilisateurs de nouvelles fonctionnalités Office une fois par mois, le deuxième mardi du mois.
 
-Si vous autorisez vos utilisateurs à installer eux-mêmes Office à partir du portail, vous pouvez sélectionner le canal d’entreprise mensuel pour eux. Pour ce faire, connectez-vous au Centre d’administration Microsoft 365 et allez à Afficher tous les paramètres d’organisation   > **paramètres**  >    >  **Paramètres Services**  >  **Paramètres Logiciels Office**. Si vous **sélectionnez Une fois** par mois (canal d’entreprise mensuel), toutes les nouvelles installation autonomes d’Office seront configurées pour utiliser le canal d’entreprise mensuel.
+Si vous autorisez vos utilisateurs à installer eux-mêmes Office à partir du portail, vous pouvez sélectionner le canal d’entreprise mensuel pour eux. Pour ce faire, connectez-vous au Centre d’administration Microsoft 365 et allez à Afficher tous les paramètres d’organisation   >   >  **paramètres**  >  **Paramètres Services**  >  **Paramètres Logiciels Office**. Si vous **sélectionnez Une fois** par mois (canal d’entreprise mensuel), toutes les nouvelles installation autonomes d’Office seront configurées pour utiliser le canal d’entreprise mensuel.
 
 Conjointement avec la publication du canal d’entreprise mensuel, nous révise également les noms des canaux de mise à jour existants. Par exemple, le canal mensuel est renommé Canal actuel. Les nouveaux noms prennent effet le 9 juin 2020.
 
@@ -235,7 +241,7 @@ De nombreux administrateurs nous ont dit qu’ils ont besoin de partager des inf
 
 Ce mois-ci, nous avons publié un nouveau site appelé Centre d’architecture et de [https://docs.microsoft.com](https://docs.microsoft.com) [solution Microsoft 365,](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)qui regroupe les conseils techniques dont vous avez besoin pour comprendre, planifier et implémenter des solutions Microsoft 365 intégrées pour une collaboration sécurisée et conforme. Dans ce centre, vous trouverez :
 
-- Conseils sur les solutions de base
+- Recommandations sur les solutions de base
 - Solutions de charge de travail et conseils sur les scénarios
 - Illustrations de solution et d’architecture (affiches!!!)
 - Conseils spécifiques au secteur
@@ -244,7 +250,7 @@ Ce mois-ci, nous avons publié un nouveau site appelé Centre d’architecture e
 ### <a name="docs-training-and-videos-may"></a>Documentation, formation et vidéos (mai)
 
 - Nouveautés de la série de vidéos **Microsoft 365**: ce mois-ci, nous allons découvrir la nouvelle expérience de support dans les centres d’administration et de sécurité et de conformité Teams, l’intégration du Planificateur au Centre de messages et la nouvelle disposition vidéo 3x3 dans Microsoft Teams. 
-- La page hub d’aide du Centre d’administration [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/) a été mise à jour pour vous aider à trouver ce dont vous avez besoin plus rapidement. Et si vous regardez cette page maintenant, nous avons ajouté une carte pour vous informer des mises à jour et modifications importantes.
+- La page du Centre d’administration [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/) a été mise à jour pour vous aider à trouver ce dont vous avez besoin plus rapidement. Et si vous regardez cette page maintenant, nous avons ajouté une carte pour vous informer des mises à jour et modifications importantes.
 
 ## <a name="april-2020"></a>Avril 2020
 
@@ -262,7 +268,7 @@ Nous l’avons fait ! Nous avons pris la deuxième étape vers une expérience d
 
 [Rejoignez la publication ciblée](manage/release-options-in-office-365.md) pour commencer !
 
-### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>« Vous avez besoin d’aide ? » lancé dans le Centre d’administration Teams & de sécurité et conformité
+### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>« Vous avez besoin d’aide ? » lancé dans le Centre d’administration Teams pour & sécurité et conformité
 
 Le Centre d’administration Teams, le Centre de sécurité et le Centre de conformité utilisent désormais le même « Besoin d’aide ? » que le Centre d’administration Microsoft 365 utilise pour trouver de l’aide et contacter le support. Nous avons reçu de nombreux commentaires d’administrateurs qui vous ont fait part de votre souhait d’obtenir le même niveau d’aide et de support, et nous sommes heureux de vous en faire part. Essayez et faites-nous part de vos commentaires !
 
@@ -341,7 +347,7 @@ Avec la mise à jour de l’utilisation de Teams, certaines organisation obtienn
 
 ### <a name="improvements-to-the-add-a-group-wizard"></a>Améliorations apportées à l’Assistant « Ajouter un groupe »
 
-Lorsque les administrateurs ont créé un nouveau groupe et en ont fait une équipe en même temps, ils peuvent affecter des propriétaires qui n’ont pas de licence qui inclut Teams. Et cela a créé des difficultés. Nous avons mis à jour le flux de l’Assistant pour vérifier que les propriétaires ont une licence Teams et si l’option de transformer le groupe en équipe n’est pas désactivée.
+Lorsque les administrateurs ont créé un nouveau groupe et en ont fait une équipe en même temps, ils peuvent affecter des propriétaires qui n’ont pas de licence qui inclut Teams. Et cela a créé des difficultés. Nous avons mis à jour le flux de l’Assistant pour vérifier que les propriétaires ont une licence Teams et s’ils n’ont pas la possibilité de transformer le groupe en équipe est désactivé.
 
 ### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Offres Microsoft 365 pour les petites et moyennes entreprises
 
@@ -401,13 +407,13 @@ Quelques modifications dans la zone des groupes ce mois-ci :
 
 Lorsque nous avons déployé le mode sombre pour la première fois, il était disponible uniquement sur la page d’accueil. Le mode Sombre n’est plus en mode aperçu et est dans la version ciblée sur la plupart des pages du Centre d’administration.
 
-1. Tout d’abord, vous devez activer la publication ciblée : allez **aux** préférences de publication du profil d’organisation \>  \>  \> **paramètres des paramètres.**
-1. Ensuite, pour activer le mode sombre, sélectionnez la **page** d’accueil, puis sélectionnez le **bouton mode** Sombre. (Il est à côté du **champ Recherche** et du lien Nouveautés **de cet** article.)
+1. Tout d’abord, vous devrez activer  la publication ciblée : go to \> **Settings Settings** \> **Organization profile** Release \> **preferences**.
+1. Ensuite, pour activer le mode sombre, sélectionnez la **page** d’accueil, puis sélectionnez le **bouton mode** Sombre. (Il se place à côté du **champ Recherche** et du lien Nouveautés **de cet** article.)
 1. Pour toute page en mode sombre disponible, le bouton se  trouve en haut de la page, à côté du nouveau bouton bascule centre d’administration.
 
 ### <a name="office-whats-new-management"></a>Gestion des nouveautés d’Office
 
-Les administrateurs souhaitent contrôler la façon dont Microsoft communique « Nouveautés » à leurs utilisateurs dans les applications Office. Vous avez maintenant ce contrôle. Go to **Settings** \> **Office What’s New management Preview**. Sélectionnez une fonctionnalité pour afficher ses détails, puis vous pouvez sélectionner le bouton Masquer des utilisateurs si vous ne souhaitez pas que vos utilisateurs voient un message particulier « Nouveautés ».  Par exemple, votre organisation peut attendre d’en savoir plus sur une fonctionnalité jusqu’à ce que tous les membres de votre organisation y soient formés.
+Les administrateurs souhaitent contrôler la façon dont Microsoft communique « Nouveautés » à leurs utilisateurs dans les applications Office. Vous avez maintenant ce contrôle. Go to **Settings** \> **Office What’s New management Preview**. Sélectionnez une fonctionnalité pour afficher ses détails, puis sélectionnez le bouton Masquer des utilisateurs si vous ne souhaitez pas que vos utilisateurs voient un message spécifique « Nouveautés ».  Par exemple, votre organisation peut attendre d’en savoir plus sur une fonctionnalité jusqu’à ce que tous les membres de votre organisation y soient formés.
 
 ![Capture d’écran de l’aperçu des nouveautés d’Office avec le volet d’informations d’une fonctionnalité ouvert.](../media/whatsnew-officemgmt-preview.png)
 

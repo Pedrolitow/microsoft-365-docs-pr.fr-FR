@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Comprendre les actions et les impacts des phases de migration du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: 045e29cba293dd74d3a77beae80d78380eaa4147
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 98a547a9af772e880465f75d9a3b01b1795639e1
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604007"
+ms.locfileid: "50711951"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Actions et impacts des phases de migration pour la migration à partir de Microsoft Cloud Deutschland (général)
 
@@ -55,9 +55,10 @@ Les sections suivantes contiennent des actions et des effets pour les charges de
 ## <a name="opt-in"></a>Opt-In
 
 **S’applique** à : Tous les clients avec un client Office 365 hébergé dans Microsoft Cloud Deutschland (MCD)
+
 | Étapes | Description | Impact |
 |:-------|:-----|:-------|
-| Nous ne pouvons pas migrer des locataires Office 365 hébergés dans le MCD sans le consentement. | Microsoft obtient le droit de migrer de deux manières, ce qui permet à Microsoft d’orchestrer la transition des données et des services vers l’instance des services globaux Office 365. <ol><li>L’administrateur client Office 365 choisit la migration pilotée par Microsoft. </li><li> Les clients renouvellent tous les abonnements dans leur client McD Office 365 après le 1er mai 2020. Nous informerons ces clients du droit de migration chaque mois, attendrons 30 jours pour donner aux clients la possibilité d’annuler, puis nous les choisirons directement.</li></ol> | <ul><li>Le client est marqué comme étant accepté pour la migration et le Centre d’administration affiche la confirmation. </li><li>L’accusé de réception est publié dans le centre de messages du client Office 365. La configuration du service se poursuit à partir des points de terminaison Microsoft Cloud Deutschland. </li><li>Le client administatror doit surveiller le Centre de messages Office 365 pour les mises à jour sur l’état de la phase d’igration. </li></ul>|
+| Nous ne pouvons pas migrer des locataires Office 365 hébergés dans le MCD sans le consentement. | Microsoft obtient le droit de migrer de deux manières, ce qui permet à Microsoft d’orchestrer la transition des données et des services vers l’instance des services globaux Office 365. <ol><li>L’administrateur client Office 365 choisit la migration pilotée par Microsoft. </li><li> Les clients renouvellent tous les abonnements dans leur client McD Office 365 après le 1er mai 2020. Nous informerons ces clients du droit de migration chaque mois, attendrons 30 jours pour donner aux clients la possibilité d’annuler, puis nous les choisirons directement.</li></ol> | <ul><li>Le client est marqué comme étant accepté pour la migration et le Centre d’administration affiche la confirmation. </li><li>L’accusé de réception est publié dans le centre de messages du client Office 365. La configuration du service se poursuit à partir des points de terminaison Microsoft Cloud Deutschland. </li><li>L’administrateur client doit surveiller le Centre de messages Office 365 pour les mises à jour sur l’état de la phase de migration. </li></ul>|
 
 ## <a name="subscription-phase-3"></a>Abonnement (phase 3)
 
@@ -89,7 +90,7 @@ Considérations supplémentaires :
 
 **S’applique à :** Tous les clients utilisant Exchange Online
 
-Si vous utilisez Exchange Online hybride : les administrateurs hybrides Exchange Online doivent exécuter l’Assistant Configuration hybride  **(HCW)** plusieurs fois dans le cadre de cette transition. Consultez les [étapes de migration avancée de prétravail pour Exchange](ms-cloud-germany-transition-add-experience.md#Exchange-Online-before-phase-5)
+Si vous utilisez Exchange Online hybride : les administrateurs hybrides Exchange Online doivent exécuter l’Assistant Configuration hybride  **(HCW)** plusieurs fois dans le cadre de cette transition. Consultez les [étapes de migration avancée de prétravail pour Exchange](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
 
 Comme décrit dans [](ms-cloud-germany-transition-add-pre-work.md#exchange-online)le prétravail de migration, avant le début de la **phase de migration 5,** les clients hybrides Exchange Online doivent exécuter la dernière version de l’Assistant Configuration hybride Exchange (HCW) en mode « Office 365 Germany » pour préparer la configuration sur site pour la migration vers les services globaux Office 365.
 
@@ -177,7 +178,7 @@ Les clients avec Dynamics 365 ont besoin d’un engagement supplémentaire pour 
 
 **S’applique à :** Tous les clients utilisant des applications de bureau Office (Word, Excel, PowerPoint, Outlook, ...)
 
-Les clients Office 365 qui migrent vers la région « Allemagne » exigent que tous les utilisateurs se ferment, se connectent à Office 365 et se connectent à toutes les applications de bureau Office (Word, Excel, PowerPoint, Outlook, etc.) et au client OneDrive Entreprise une fois que la migration du client a atteint la phase 9. La dédauthentification permet aux services Office d’obtenir de nouveaux jetons d’authentification à partir du service Azure AD global.
+Les clients Office 365 qui migrent vers la région « Allemagne » exigent que tous les utilisateurs se ferment, se connectent à Office 365 et se connectent de nouveau à toutes les applications de bureau Office (Word, Excel, PowerPoint, Outlook, etc.) et au client OneDrive Entreprise une fois que la migration du client a atteint la phase 9. La dédauthentification permet aux services Office d’obtenir de nouveaux jetons d’authentification à partir du service Azure AD global.
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|

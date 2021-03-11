@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 462ba35f584b45bbfeb0d8a3de3b118ba1c9e17c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3481190a615cfa8914b3623f09d4079468bd431f
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932321"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712113"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Travailler avec les résultats de requête de recherche avancée
 
@@ -37,7 +37,7 @@ ms.locfileid: "49932321"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Bien que vous [](advanced-hunting-overview.md) pouvez construire vos requêtes de recherche avancées pour renvoyer des informations très précises, vous pouvez également travailler avec les résultats de la requête pour obtenir des informations supplémentaires et examiner des activités et des indicateurs spécifiques. Vous pouvez prendre les mesures suivantes sur les résultats de votre requête :
+Bien que vous [](advanced-hunting-overview.md) pouvez construire vos requêtes de recherche avancées pour renvoyer des informations très précises, vous pouvez également travailler avec les résultats de la requête pour obtenir des informations plus précises et examiner des activités et des indicateurs spécifiques. Vous pouvez prendre les mesures suivantes sur les résultats de votre requête :
 
 - Afficher les résultats sous la mesure d’un tableau ou d’un graphique
 - Exporter des tableaux et des graphiques
@@ -49,7 +49,7 @@ Par défaut, le recherche avancée affiche les résultats de la requête sous la
 
 | Type d’affichage | Description |
 | -- | -- |
-| **Table** | Affiche les résultats de la requête au format tabulaire |
+| **Tableau** | Affiche les résultats de la requête au format tabulaire |
 | **Graphique en colonnes** | Restituer une série d’éléments uniques sur l’axe des x sous forme de barres verticales dont les hauteurs représentent des valeurs numériques d’un autre champ |
 | **Graphique en colonnes empilées** | Restituer une série d’éléments uniques sur l’axe des X sous forme de barres verticales empilées dont les hauteurs représentent des valeurs numériques d’un ou plusieurs autres champs |
 | **Graphique en secteurs** | Restituer les secteurs de section représentant des éléments uniques. La taille de chaque secteur représente les valeurs numériques d’un autre champ. |
@@ -74,9 +74,9 @@ Lors de l’affichage des résultats, un graphique en colonnes affiche chaque va
  *d’un graphique en colonnes*
 
 #### <a name="alert-severity-by-operating-system"></a>Gravité des alertes par système d’exploitation
-Vous pouvez également utiliser l’opérateur pour préparer les résultats pour la graphique `summarize` des valeurs de plusieurs champs. Par exemple, vous souhaitez peut-être comprendre comment les gravités des alertes sont distribuées entre les systèmes d’exploitation. 
+Vous pouvez également utiliser `summarize` l’opérateur pour préparer les résultats pour la graphique des valeurs de plusieurs champs. Par exemple, vous souhaitez peut-être comprendre comment les gravités des alertes sont distribuées entre les systèmes d’exploitation. 
 
-La requête ci-dessous utilise un opérateur pour tirer les informations du système d’exploitation du tableau, puis pour compter les valeurs dans les colonnes `join` `DeviceInfo` et les `summarize` `OSPlatform` `Severity` colonnes :
+La requête ci-dessous utilise un opérateur pour tirer les informations du système d’exploitation à partir du tableau, puis pour compter les valeurs à la fois dans `join` `DeviceInfo` les `summarize` `OSPlatform` colonnes et dans les `Severity` colonnes :
 
 ```kusto
 AlertInfo
@@ -86,21 +86,21 @@ AlertInfo
 ```
 Ces résultats sont mieux visualisés à l’aide d’un graphique en colonnes empilées :
 
-![Image des résultats de requête de recherche avancée affichés sous la mesure de résultats de requête de graphique empilé pour les alertes par système d’exploitation et la gravité affichées sous la mesure ](../../media/advanced-hunting-stacked-chart.jpg)
+![Image des résultats de requête de recherche avancée affichés sous la mesure d’un graphique empilé Résultats de requête pour les alertes par système d’exploitation et gravité affichées sous la mesure ](../../media/advanced-hunting-stacked-chart.jpg)
  *d’un graphique empilé*
 
-#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage parmi les dix principaux domaines d’expéditeurs
+#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage sur les dix principaux domaines d’expéditeurs
 Si vous avez affaire à une liste de valeurs qui n’est pas finie, vous pouvez utiliser l’opérateur pour graphiquer uniquement les valeurs avec le plus grand nombre `Top` d’instances. Par exemple, pour obtenir les dix principaux domaines d’expéditeurs avec le plus de messages de hameçonnage, utilisez la requête ci-dessous :
 
 ```kusto
 EmailEvents
-| where PhishFilterVerdict == "Phish"
-| summarize Count = count() by SenderFromDomain
+| where ThreatTypes has "Phish" 
+| summarize Count = count() by SenderFromDomain 
 | top 10 by Count
 ```
 Utilisez l’affichage graphique en secteurs pour afficher efficacement la distribution dans les principaux domaines :
 
-![Image des résultats de requête de recherche avancée affichés sous la mesure d’un graphique en secteurs de graphique en secteurs montrant la distribution des e-mails de hameçonnage sur les principaux ](../../media/advanced-hunting-pie-chart.jpg)
+![Image des résultats de requête de recherche avancée affichés sous la la figure d’un graphique en secteurs affichant la distribution des e-mails de hameçonnage sur les principaux ](../../media/advanced-hunting-pie-chart.jpg)
  *domaines des expéditeurs*
 
 #### <a name="file-activities-over-time"></a>Activités de fichier au fil du temps
@@ -142,7 +142,7 @@ Cliquez avec le bouton droit de la souris sur une valeur du jeu de résultats po
 - Exclure la valeur sélectionnée de la requête (`!=`)
 - Obtenez des opérateurs plus avancés pour ajouter la valeur à votre requête (par exemple, `contains`, `starts with` et `ends with`) 
 
-![Image du jeu de résultats de recherche avancé](../../media/advanced-hunting-results-filter.png)
+![Image du jeu de résultats de recherche avancée](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>Filtrer les résultats de la requête
 Les filtres de droite fournissent un résumé du jeu de résultats. Chaque colonne possède sa propre section qui répertorie les valeurs distinctes trouvées pour cette colonne et le nombre d’instances.

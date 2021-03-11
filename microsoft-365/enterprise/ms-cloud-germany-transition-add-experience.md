@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Informations supplémentaires sur l’expérience client lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemande.'
-ms.openlocfilehash: b38ed865306eb676c8f57c1dcbb4541fae43c8df
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 8dcb8b8ab2ec5c3dea105380858d26cfd5537d9c
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603995"
+ms.locfileid: "50712281"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>Actions et impacts des phases de migration pour la migration à partir de Microsoft Cloud Deutschland (avancé) 
 
@@ -84,7 +84,7 @@ Entre la phase 2 de 9 et la phase 3 de 9, le Portail partenaire n’est peut-êt
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| À partir de la phase 4 jusqu’à la fin de la phase 9, les recherches de découverte électronique échouent ou retournent 0 résultat pour les emplacements SharePoint Online, OneDrive Entreprise et Exchange Online qui ont été migrés. | Pendant la migration, les clients peuvent continuer à créer des cas, des obligations, des recherches et des exportations dans le Centre de sécurité [&](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)conformité, y compris la recherche [de contenu.](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)  Toutefois, les recherches sur les emplacements SharePoint Online, OneDrive Entreprise et Exchange Online qui ont été migrés retournent 0 résultat ou produisent une erreur. Pour la correction, consultez la _colonne Impact._ | Dans le cas où une recherche renvoie zéro résultat ou une erreur lors de la migration, veuillez effectuer l’action suivante pour SharePoint Online : <ul><li>Téléchargez les sites directement à partir du site SharePoint Online/OneDrive Entreprise en suivant les instructions dans Télécharger des fichiers et des dossiers à partir [de OneDrive ou SharePoint.](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05) Cette méthode nécessite des autorisations d’administrateur SharePoint Online ou des autorisations en lecture seule sur le site.</li><li>Si les limites sont dépassées, comme expliqué dans télécharger des fichiers et des dossiers à partir de OneDrive ou [SharePoint,](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)les clients peuvent utiliser le client de synchronisation OneDrive Entreprise en suivant les instructions de synchronisation des fichiers [SharePoint](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)et Teams avec votre ordinateur.</li><li>Pour plus d’informations, voir Découverte électronique sur  [place dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| Depuis le début de la phase 4 jusqu’à la fin de la phase 9, les recherches de découverte électronique échouent ou retournent 0 résultat pour les emplacements SharePoint Online, OneDrive Entreprise et Exchange Online qui ont été migrés. | Pendant la migration, les clients peuvent continuer à créer des cas, des obligations, des recherches et des exportations dans le Centre de sécurité [&](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)conformité, y compris la recherche [de contenu.](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)  Toutefois, les recherches sur les emplacements SharePoint Online, OneDrive Entreprise et Exchange Online qui ont été migrés retournent 0 résultat ou produisent une erreur. Pour la correction, consultez la _colonne Impact._ | Dans le cas où une recherche renvoie zéro résultat ou une erreur lors de la migration, veuillez effectuer l’action suivante pour SharePoint Online : <ul><li>Téléchargez les sites directement à partir du site SharePoint Online/OneDrive Entreprise en suivant les instructions dans Télécharger des fichiers et des dossiers à partir [de OneDrive ou SharePoint.](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05) Cette méthode nécessite des autorisations d’administrateur SharePoint Online ou des autorisations en lecture seule sur le site.</li><li>Si les limites sont dépassées, comme expliqué dans télécharger des fichiers et des dossiers à partir de OneDrive ou [SharePoint,](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)les clients peuvent utiliser le client de synchronisation OneDrive Entreprise en suivant les instructions de synchronisation des fichiers [SharePoint](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)et Teams avec votre ordinateur.</li><li>Pour plus d’informations, voir Découverte électronique sur  [place dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 ||||
 
 ## <a name="post-migration"></a>Après la migration
@@ -102,7 +102,7 @@ Entre la phase 2 de 9 et la phase 3 de 9, le Portail partenaire n’est peut-êt
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Supprimez les confiances de partie de confiance de Microsoft Cloud Deutschland AD FS. | Une fois la connexion à Azure AD terminée, l’organisation utilise entièrement les services Office 365 et n’est plus connectée à Microsoft Cloud Deutschland. À ce stade, le client doit supprimer l’confiance de la partie de confiance vers les points de terminaison Microsoft Cloud Deutschland. Cette action ne peut être effectuée que lorsqu’aucune application du client ne pointe vers les points de terminaison Microsoft Cloud Deutschland lorsque Azure AD est mis à profit en tant que fournisseur d’identité (IdP). | Organisations d’authentification fédérée | Aucun. |
+| Supprimez les confiances de partie de confiance de Microsoft Cloud Deutschland AD FS. | Une fois la connexion à Azure AD terminée, l’organisation utilise entièrement les services Office 365 et n’est plus connectée à Microsoft Cloud Deutschland. À ce stade, le client doit supprimer l’confiance de la partie de confiance vers les points de terminaison Microsoft Cloud Deutschland. Cette action ne peut être effectuée que lorsqu’aucune application du client ne pointe vers les points de terminaison Microsoft Cloud Deutschland lorsque Azure AD est mis à profit en tant que fournisseur d’identité (IdP). | Organisations d’authentification fédérée | Aucune. |
 |||||
 
 <!--
@@ -154,8 +154,8 @@ Si vous utilisez une configuration Exchange hybride :
 
 | Étapes | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
-|  Tous les emplacements SharePoint Online, OneDrive Entreprise et Exchange Online ont été migrés avec le Centre de sécurité et conformité (SCC). | Toute l’activité eDiscovery doit être exécuté à partir du client international. Les recherches seront désormais réussies à 100 %.  Les défaillances ou erreurs doivent suivre les canaux de support normaux. | Tous les clients qui utilisent eDiscovery | Aucun. |
-| Supprimer les stratégies de rétention à l’échelle de l’organisation qui ont été créées pendant les étapes préalables à la migration | Les clients peuvent supprimer les stratégies de rétention à l’échelle de l’organisation qui ont été créées pendant le travail préalable à la migration des clients. | Tous les clients qui ont appliqué une stratégie de rétention dans le cadre des étapes préalables à la migration. | Aucun. |
+|  Tous les emplacements SharePoint Online, OneDrive Entreprise et Exchange Online ont été migrés avec le Centre de sécurité et conformité (SCC). | Toute l’activité eDiscovery doit être exécuté à partir du client international. Les recherches seront désormais réussies à 100 %.  Les défaillances ou erreurs doivent suivre les canaux de support normaux. | Tous les clients qui utilisent eDiscovery | Aucune. |
+| Supprimer les stratégies de rétention à l’échelle de l’organisation qui ont été créées pendant les étapes préalables à la migration | Les clients peuvent supprimer les stratégies de rétention à l’échelle de l’organisation qui ont été créées pendant le travail préalable à la migration des clients. | Tous les clients qui ont appliqué une stratégie de rétention dans le cadre des étapes préalables à la migration. | Aucune. |
 |||||
 
 ## <a name="next-step"></a>Étape suivante

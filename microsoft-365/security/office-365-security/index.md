@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: La sécurité dans Office 365, d’EOP à Defender pour les plans 1 et 2 Office 365, les configurations de sécurité standard et stricte, et bien plus encore. Comprenez ce que vous avez et comment sécuriser vos propriétés.
+description: Sécurité dans Office 365, d’EOP à Defender pour office 365 Plans 1 et 2, configurations de sécurité standard et stricte, etc. Comprenez ce que vous avez et comment sécuriser vos propriétés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbe95946ab7214efded8feca39578c364b948df0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: e1c6e768098cd59892c2572fb52497c873aef1a3
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287900"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50711939"
 ---
 # <a name="office-365-security-overview"></a>Vue d’ensemble de la sécurité Office 365
 
@@ -30,14 +30,14 @@ ms.locfileid: "50287900"
 - [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 
 
-Cet article vous présente vos nouvelles propriétés de sécurité dans le Cloud. Que vous faites partie d’un centre des opérations de sécurité, que vous débutiez en tant qu’administrateur de sécurité dans l’espace ou que vous vouliez un actualiseur, nous allons commencer.
+Cet article vous présente vos nouvelles propriétés de sécurité dans le Cloud. Que vous faites partie d’un centre des opérations de sécurité, que vous débutiez en tant qu’administrateur de sécurité dans l’espace ou que vous vouliez un actualiseur, commençons.
 
 > [!CAUTION]
 > Si vous utilisez **Outlook.com,** **Microsoft 365 Famille** ou **Microsoft 365 Personnel** et que vous avez besoin de liens sécurisés ou d’informations de pièces *jointes sécurisées,* cliquez sur ce lien : Sécurité Outlook.com avancée pour les abonnés [Microsoft 365.](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2) 
 
 ## <a name="office-365-security-spelled-out"></a>Sécurité Office 365
 
-Chaque abonnement Office 365 est livré avec des fonctionnalités de sécurité. Les objectifs et les actions que vous pouvez prendre dépendent de l’objectif de ces différents abonnements. Dans la sécurité Office 365, il existe trois principaux services de sécurité (ou produits) liés à votre type d’abonnement :
+Chaque abonnement Office 365 est livré avec des fonctionnalités de sécurité. Les objectifs et les actions que vous pouvez prendre dépendent du focus de ces différents abonnements. Dans la sécurité Office 365, il existe trois principaux services de sécurité (ou produits) liés à votre type d’abonnement :
 
 1. Exchange Online Protection (EOP)
 1. Microsoft Defender pour Office 365 Plan 1 (Defender pour Office P1)
@@ -90,7 +90,7 @@ Ce qui rend l’ajout de plans Microsoft Defender pour Office 365 un avantage à
 
 |Empêcher/détecter|Examiner|Répondre|
 |---|---|---|
-|Les technologies sont les suivantes :<ul><li>courrier indésirable</li><li>phish</li><li>programme malveillant</li><li>courrier en bloc</li><li>veille contre l’usurpation d’informations</li><li>détection de l’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois d’administrateurs et d’utilisateurs de faux positifs et de faux négatifs</li><li>Autoriser/bloquer les URL et les fichiers</li><li>Rapports</li></u1>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique d’heure zéro (ZAP)</li><li>Affinement et test des listes d’autoriser et de bloquer</li>|
+|Les technologies sont les suivantes :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en bloc</li><li>veille contre l’usurpation d’informations</li><li>détection de l’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois d’administrateurs et d’utilisateurs de faux positifs et de faux négatifs</li><li>Autoriser/bloquer les URL et les fichiers</li><li>Rapports</li></u1>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique d’heure zéro (ZAP)</li><li>Affinement et test des listes d’autoriser et de bloquer</li>|
 |
 
 Si vous souhaitez vous lancer dans EOP, **[repérez cet article.](exchange-online-protection-overview.md)**
@@ -115,7 +115,7 @@ Gains avec **Defender pour Office 365, Plan 2** (à ce jour) :
 |---|---|---|
 |Les technologies incluent tout ce qui se trouve dans EOP et Microsoft Defender pour Office 365 P1 et :<u1><li>Identique</li>|<li>**Threat Explorer**</li><li>Suivi des menaces</li><li>Affichages des campagnes</li>|<li>Examen et réponse automatisés (AIR)</li><li>AIR de l’Explorateur de menaces</li><li>AIR pour les utilisateurs compromis</li><li>API d’intégration SIEM pour les examens automatisés</li>
 
-Ainsi, Microsoft Defender pour Office 365  P2 développe le côté examen et réponse de la maison, et ajoute une nouvelle force de chasse. Automation.
+Ainsi, Microsoft Defender pour Office 365  P2 développe sur le côté examen et réponse de la maison, et ajoute une nouvelle force de chasse. Automation.
 
 Dans Microsoft Defender pour Office 365 P2,  l’outil de repérage principal est appelé Explorateur de menaces plutôt que les détections en temps réel. Si vous voyez l’Explorateur de menaces lorsque vous accédez au Centre de sécurité, vous êtes dans Microsoft Defender pour Office 365 P2.
 
@@ -133,18 +133,18 @@ Cette référence rapide vous aidera à comprendre les fonctionnalités de chaqu
 |Fonctionnalités de configuration, de protection et de détection : <ul><li>[Pièces jointes fiables](atp-safe-attachments.md)</li><li>[Liens fiables](atp-safe-links.md)</li><li>[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protection anti-hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Détections en temps réel](threat-explorer.md)</li></ul>|Fonctionnalités de Defender pour Office 365 Plan 1 <p> --- plus --- <p> Fonctionnalités d’automatisation, d’examen, de correction et de formation : <ul><li>[Suivi des menaces](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Examen et réponse automatisés](office-365-air.md)</li><li>[Simulateur d’attaques](attack-simulator.md)</li></ul>|
 |
 
-- Microsoft Defender pour Office 365 Plan 2 est inclus dans Office 365 E5, Office 365 A5 et Microsoft 365 E5.
+- Microsoft Defender pour Office 365 Plan 2 est inclus dans Office 365 E5, Office 365 A5 et Microsoft 365 E5.
 
 - Microsoft Defender pour Office 365 Plan 1 est inclus dans Microsoft 365 Business Premium.
 
-- Microsoft Defender pour Office 365 Plan 1 et Defender pour Office 365 Plan 2 sont disponibles en tant que modules pour certains abonnements. Pour en savoir plus, voici un autre lien disponibilité des fonctionnalités dans [les plans Microsoft Defender pour Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+- Microsoft Defender pour Office 365 Plan 1 et Defender pour Office 365 Plan 2 sont disponibles en tant que modules pour certains abonnements. Pour en savoir plus, voici un autre lien sur la disponibilité des fonctionnalités dans [les plans Microsoft Defender pour Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
 
 - La fonctionnalité [Documents sécurisés](safe-docs.md) est uniquement disponible pour les utilisateurs ayant des licences Microsoft 365 E5 ou Microsoft 365 E5 Sécurité (non inclus dans les offres Microsoft Defender pour Office 365)
 
 - Si votre abonnement actuel n’inclut pas Microsoft Defender pour [](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)Office 365 et que vous le souhaitez, contactez les commerciaux pour démarrer une version d’essai et découvrez comment Microsoft Defender pour Office 365 peut fonctionner dans votre organisation.
 
 > [!TIP]
-> ***Conseil d’initié** _. Vous pouvez utiliser la table docs.microsoft.com des matières pour en savoir plus sur EOP et Microsoft Defender pour Office 365. Revenir à cette page, vue d’ensemble de la sécurité [Office 365](index.md)et vous remarquerez que la table des matières est présente dans la barre latérale. Il commence par le déploiement (y compris la migration), puis se poursuit dans la prévention, la détection, l’examen et la réponse. <p> Cette structure est divisée de sorte que les rubriques _ *Administration* de la sécurité * soient suivies des **rubriques** Opérations de sécurité. Si vous êtes un nouveau membre de l’un ou l’autre des rôles, utilisez le lien de ce conseil et vos connaissances de la table des matières pour découvrir l’espace. N’oubliez pas *d’utiliser des liens de commentaires* et *d’évaluer les articles* à mesure que vous allez. Les commentaires nous aident à améliorer ce que nous vous proposons.
+> ***Conseil d’initié** _. Vous pouvez utiliser la table docs.microsoft.com des matières pour en savoir plus sur EOP et Microsoft Defender pour Office 365. Revenir à cette page, vue d’ensemble de la sécurité [Office 365](index.md)et vous remarquerez que la table des matières est présente dans la barre latérale. Il commence par le déploiement (y compris la migration), puis se poursuit dans la prévention, la détection, l’examen et la réponse. <p> Cette structure est divisée de sorte que les rubriques _ *Administration* de la sécurité * soient suivies des **rubriques Opérations** de sécurité. Si vous êtes un nouveau membre de l’un ou l’autre des rôles, utilisez le lien de ce conseil et vos connaissances de la table des matières pour découvrir l’espace. N’oubliez pas *d’utiliser des liens de commentaires* et *d’évaluer les articles* à mesure que vous allez. Les commentaires nous aident à améliorer ce que nous vous proposons.
 
 ## <a name="where-to-go-next"></a>Où aller ensuite
 

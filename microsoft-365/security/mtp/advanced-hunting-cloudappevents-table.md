@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 021a8210bbe5886021e980b33ade0b9e2ded7b5b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a8ba1f94bc704a5fe99d54b77aa6570c5e43d3f7
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928452"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712485"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -35,11 +35,13 @@ ms.locfileid: "49928452"
 **S’applique à :**
 - Microsoft 365 Defender
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Actuellement disponible en prévisualisation, le tableau du schéma de recherche avancé contient des informations sur les activités dans différentes applications et services cloud, en particulier `CloudAppEvents` Microsoft Teams et Exchange Online. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
-Ce tableau s’étend pour inclure d’autres activités surveillées par Microsoft Cloud App Security. Finalement, cette table inclut l’activité de fichier actuellement stockée dans la table [AppFileEvents.](advanced-hunting-appfileevents-table.md) Microsoft fournit des conseils supplémentaires à mesure que d’autres données sont déplacer vers ce tableau.
+Le tableau du schéma de recherche avancée contient des informations sur les activités dans différentes applications et services cloud couverts par Microsoft Cloud App Security, en particulier `CloudAppEvents` Dropbox, [](advanced-hunting-overview.md) Exchange Online, OneDrive, Microsoft Teams et SharePoint. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+
+>[!IMPORTANT]
+>Ce tableau inclut des informations qui étaient disponibles dans le `AppFileEvents` tableau. À compter du 7 mars 2021, les utilisateurs qui recherchent des activités liées aux fichiers dans les services cloud et au-delà de cette date doivent utiliser le `CloudAppEvents` tableau à la place. <br><br>Veillez à rechercher des requêtes et des règles de détection personnalisées qui utilisent toujours la table et modifiez-les `AppFileEvents` pour utiliser le `CloudAppEvents` tableau. Pour plus d’informations sur la conversion des requêtes affectées, voir La recherche dans les activités d’application cloud avec la recherche avancée [Microsoft 365 Defender.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
+
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -69,7 +71,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `RawEventData` | string | Informations d’événement brutes de l’application ou du service source au format JSON |
 | `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
-## <a name="related-topics"></a>Rubriques connexes
+
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

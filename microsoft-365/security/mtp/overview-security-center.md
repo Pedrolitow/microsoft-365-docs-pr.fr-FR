@@ -1,5 +1,5 @@
 ---
-title: Présentation du Centre de sécurité Microsoft 365
+title: Vue d’ensemble du Centre de sécurité Microsoft 365
 description: Avantages du Centre de sécurité Microsoft 365, en combinant Microsoft Defender pour Office 365 (MDO) et Microsoft Defender pour le point de terminaison (MDE), avec Microsoft Defender pour l’identité (MDI) et Microsoft Cloud App Security (MCAS). Cet article décrit les avancées du Centre de sécurité Microsoft 365 pour les administrateurs.
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, surveiller, signaler, identités, données, appareils, applications
 ms.prod: m365-security
@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 89e72d703bd70647d6c2b00732315b8e5f015cc7
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 87149ab9c99168d62f5114555a46b8bfaee83ab2
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167200"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712101"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Vue d’ensemble du Centre de sécurité Microsoft 365 unifié
 
@@ -42,27 +42,27 @@ ms.locfileid: "50167200"
 
 Le Centre de sécurité **Microsoft 365** amélioré combine la protection, la détection, l’examen et la réponse aux e-mails, à la collaboration, à l’identité et aux menaces d’appareils, dans un [https://security.microsoft.com](https://security.microsoft.com) portail central.    
 
-Le Centre de sécurité Microsoft 365 regroupe les fonctionnalités des portails de sécurité Microsoft existants, tels que le Centre de sécurité Microsoft Defender et le Centre de sécurité & conformité Office 365. Le centre de sécurité met l’accent sur l’accès rapide aux informations, des dispositions plus simples et la mise en commun des informations associées pour faciliter leur utilisation. Ce centre inclut :
+Le Centre de sécurité Microsoft 365 regroupe les fonctionnalités des portails de sécurité Microsoft existants, tels que le Centre de sécurité Microsoft Defender et le Centre de sécurité & conformité Office 365. Le centre de sécurité met l’accent sur l’accès rapide aux informations, des dispositions plus simples et la mise en commun des informations associées pour faciliter l’utilisation. Ce centre inclut :
 
 - **[Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)** Microsoft Defender pour Office 365 aide les organisations à sécuriser leur entreprise avec un ensemble de fonctionnalités de prévention, de détection, d’examen et de repérage pour protéger le courrier électronique et les ressources Office 365.
 - **[Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** offre une protection préventive, une détection post-violation, une enquête automatisée et une réponse pour les appareils de votre organisation.
 - **[Microsoft 365 Defender](microsoft-threat-protection.md)** fait partie de la solution XDR *(Extended Detection and Response)* de Microsoft qui tire parti du portefeuille de sécurité Microsoft 365 pour analyser automatiquement les données de menace sur plusieurs domaines et créer une image d’une attaque sur un seul tableau de bord.
 
-Si vous avez besoin d’informations sur les changements du Centre de sécurité & conformité Office 365 ou du Centre de sécurité Microsoft Defender, voir :
+Si vous avez besoin d’informations sur les changements du Centre de sécurité & et conformité Office 365 ou du Centre de sécurité Microsoft Defender, voir :
 
-- [Defender pour Office 365 dans le Centre de sécurité Microsoft 365](microsoft-365-security-center-mdo.md)
-- [Defender pour le point de terminaison dans le Centre de sécurité Microsoft 365](microsoft-365-security-center-mde.md)
+- [Defender pour Office 365 dans le Centre de sécurité Microsoft 365](microsoft-365-security-center-mdo.md)
+- [Defender pour point de terminaison dans le Centre de sécurité Microsoft 365](microsoft-365-security-center-mde.md)
 
 ## <a name="what-to-expect"></a>À quoi s’attendre
 
 Tout le contenu de sécurité que vous utilisez dans le Centre de sécurité et conformité Office 365 (protection.office.com) et le Centre de sécurité Microsoft Defender (securitycenter.microsoft.com) se trouve désormais dans le Centre de sécurité *Microsoft 365.*
 
-Le Centre de sécurité Microsoft 365 permet aux équipes de sécurité d’examiner les attaques et de répondre à ces attaques en axant les signaux de différentes charges de travail dans une expérience unifiée unique :
+Le Centre de sécurité Microsoft 365 permet aux équipes de sécurité d’examiner les attaques et de répondre à ces attaques en insumant les signaux de différentes charges de travail dans une expérience unifiée unique :
 
 - Incidents & alertes
 - Chasse
 - Centre de notifications
-- Analyse des menaces
+- Analyses de menaces
 
 Le Centre de sécurité Microsoft  365 met l’accent sur l’unité, la clarté et les objectifs communs lors de la fusion de Microsoft Defender pour Office 365 et Microsoft Defender pour le point de terminaison. La fusion a été basée sur les priorités répertoriées ci-dessous et a été réalisée sans compromettre les fonctionnalités que chaque suite de sécurité a apportées à la combinaison :
 
@@ -103,7 +103,7 @@ Les contrôles courants et le contenu apparaissent au même endroit ou sont cond
 
 ![Page Autorisations & rôles affichant les rôles endpoints & groupes, rôles et groupes d’appareils.](../../media/converged-roles-5.png)
 
- L’accès au Centre de sécurité Microsoft 365 est configuré avec des rôles globaux Azure Active Directory ou à l’aide de rôles personnalisés. For Defender for Endpoint, see [Assign user access to Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access). Pour Defender pour Office 365, consultez Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité [Microsoft 365.](../office-365-security/permissions-microsoft-365-compliance-security.md)
+ L’accès au Centre de sécurité Microsoft 365 est configuré avec des rôles globaux Azure Active Directory ou à l’aide de rôles personnalisés. For Defender for Endpoint, see [Assign user access to Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access). Pour Defender pour Office 365, voir Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité [Microsoft 365.](../office-365-security/permissions-microsoft-365-compliance-security.md)
 
 - En savoir plus sur la gestion [de l’accès à Microsoft 365 Defender](mtp-permissions.md)
 - En savoir plus sur la création [de rôles personnalisés](custom-roles.md) dans le Centre de sécurité Microsoft 365
@@ -121,14 +121,14 @@ Ces informations rapides vous permettent de suivre les dernières activités de 
 Les cartes sont dans les catégories suivantes :
 
 - **Identités**: surveillez les identités de votre organisation et suivez les comportements suspects ou risqués. [En savoir plus sur la protection des identités.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-- **Données :** suivez l’activité de l’utilisateur qui peut entraîner une divulgation non autorisée des données.
+- **Données :** suivez l’activité de l’utilisateur qui peut entraîner la divulgation non autorisée des données.
 - **Appareils** : obtenez des informations à jour sur les alertes, l’activité de violation et d’autres menaces sur vos appareils.
 - **Applications** : obtenir des informations sur la façon dont les applications cloud sont utilisées dans votre organisation. [En savoir plus sur les applications découvertes dans Cloud App Security.](https://docs.microsoft.com/cloud-app-security/discovered-apps)
 
 ## <a name="threat-analytics-with-better-data-coverage"></a>Analyse des menaces avec une meilleure couverture de données
 Suivez les menaces émergentes et répondez-y avec l’expérience intégrée d’analyse des menaces Microsoft 365 Defender suivante :
 
-- Meilleure couverture des données entre Microsoft Defender pour point de terminaison et Microsoft Defender pour Office 365, ce qui rend possible la gestion combinée des incidents, l’examen automatique, la correction et la recherche proactive ou réactive de menaces sur plusieurs domaines. 
+- Meilleure couverture des données entre Microsoft Defender pour le point de terminaison et Microsoft Defender pour Office 365, rendant possible la gestion combinée des incidents, l’examen automatique, la correction et la recherche proactive ou réactive de menaces sur plusieurs domaines. 
 - Détections et atténuations liées à la messagerie électronique de Microsoft Defender pour Office 365, en plus des données de point de terminaison déjà disponibles dans Microsoft Defender pour Endpoint.
 - Vue des incidents liés aux menaces qui regroupent les alertes en articles d’attaque de bout en bout dans Microsoft Defender pour le point de terminaison et Microsoft Defender pour Office 365 afin de réduire la file d’attente de travail, ainsi que de simplifier et d’accélérer votre enquête.
 - Tentatives d’attaque détectées et bloquées par les solutions Microsoft 365 Defender. Il existe également des données que vous pouvez utiliser pour piloter des actions préventives qui atténuent les risques d’exposition supplémentaire et augmentent la résilience. 
@@ -145,7 +145,7 @@ Le hub d’apprentissage s’ouvre avec des parcours d’apprentissage organisé
 Après avoir cliqué sur le contenu, il peut être utile de mettre en signet ce site et d’organiser les signets dans un dossier « Sécurité » ou « Critique ». Pour afficher tous les chemins d’accès d’apprentissage, cliquez sur le lien Afficher tout dans le panneau principal.
 
 > [!NOTE]
-> Il existe  des filtres utiles en haut du Centre de sécurité Microsoft 365 qui vous permettent de choisir entre les produits (actuellement Microsoft 365 Defender, Microsoft Defender pour point de terminaison et Microsoft Defender pour Office 365). Notez que le nombre de ressources d’apprentissage pour chaque section est répertorié, ce qui peut aider les enseignants à suivre le nombre de ressources dont ils disposent pour la formation et l’apprentissage.
+> Il existe  des filtres utiles en haut du Centre de sécurité Microsoft 365 qui vous permettent de choisir entre les produits (actuellement Microsoft 365 Defender, Microsoft Defender pour Point de terminaison et Microsoft Defender pour Office 365). Notez que le nombre de ressources d’apprentissage pour chaque section est répertorié, ce qui peut aider les enseignants à suivre le nombre de ressources dont ils disposent pour la formation et l’apprentissage.
 >
 > Outre le filtre Produit, les rubriques actuelles, les types de ressources (des vidéos aux webinaires), les niveaux de familiarité ou d’expérience avec les domaines de sécurité, les rôles de sécurité et les fonctionnalités du produit sont répertoriés.
 
