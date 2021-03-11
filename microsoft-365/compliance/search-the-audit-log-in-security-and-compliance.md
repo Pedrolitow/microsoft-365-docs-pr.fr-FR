@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a751ffea9fa184faf90bfe7c43b44c5d4e53bfbf
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 6f158461bfecf0ab26f440203d079da0c7c0d238
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461815"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572638"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -143,9 +143,6 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
 ## <a name="search-the-audit-log"></a>Effectuer une recherche dans le journal d’audit
 
-> [!NOTE]
-> Il y a eu un problème d’indisponibilité des activités Azure AD dans l’outil de recherche du journal d’audit du 22 octobre 2020 au 6 novembre 2020. Ces activités comprennent les activités d'administration des utilisateurs Azure AD, les activités d'administration des groupes, les activités d'administration des applications, les activités d'administration des rôles et les activités d'administration des répertoires. Les événements manquants pour la période d’impact seront disponibles au cours des prochains jours, et devraient prendre fin au plus tard le 20 novembre 2020. Dans certains cas, il est possible que les clients remarquent des données d’événement en double pour les événements générés entre le 26 octobre 2020 et le 05 novembre 2020.
-    
 Pour effectuer une recherche dans le journal d’audit dans Office 365, vous devez procéder comme suit. 
 
 [Étape 1 : effectuer une recherche dans le journal d’audit](#step-1-run-an-audit-log-search)
@@ -706,75 +703,90 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 
 Le tableau suivant répertorie les activités d’administration des utilisateurs enregistrées quand un administrateur ajoute ou modifie un compte d’utilisateur via le Centre d’administration Microsoft 365 ou le portail de gestion Azure.
 
+> [!NOTE]
+> Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.
+
 |Activité|Opération|Description|
 |:-----|:-----|:-----|
-|Utilisateur ajouté|Ajouter un utilisateur|Un compte d’utilisateur a été créé.|
-|Licence utilisateur modifiée|Change user license|La licence attribuée à un utilisateur a été modifiée. Pour identifier les licences modifiées, voir l’activité **Utilisateur mis à jour** correspondante.|
-|Mot de passe utilisateur modifié|Modifier le mot de passe de l’utilisateur|Un utilisateur modifie son mot de passe. La réinitialisation du mot de passe en libre-service doit être activée (pour tous les utilisateurs ou les utilisateurs sélectionnés) au sein de votre organisation pour permettre aux utilisateurs de réinitialiser leur mot de passe. Vous pouvez également effectuer le suivi de l’activité de réinitialisation du mot de passe en libre-service dans Azure Active Directory. Pour plus d’informations, veuillez consulter la page [Options de création de rapports pour la gestion des mots de passe Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
-|Utilisateur supprimé|Supprimer un utilisateur|Un compte d’utilisateur a été supprimé.|
-|Réinitialiser le mot de passe de l’utilisateur|Reset user password|Un administrateur réinitialise le mot de passe d’un utilisateur.|
-|Propriété définie qui force l’utilisateur à changer de mot de passe.|Forcer la réinitialisation du mot de passe de l'utilisateur|Un administrateur a défini la propriété qui force un utilisateur à modifier son mot de passe lors de sa prochaine connexion à Office 365.|
-|Propriétés de licence définies|Propriétés de licence définies|Un administrateur modifie les propriétés d’une licence attribuée à un utilisateur.|
-|Utilisateur mis à jour|Mettre à jour un utilisateur|Un administrateur modifie une ou plusieurs propriétés d’un compte d’utilisateur. Pour obtenir la liste des propriétés utilisateur qui peuvent être mises à jour, voir la section « Attributs de "Mettre à jour l’utilisateur" » dans [Événements de rapport d’audit d’Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
+|Utilisateur ajouté|Ajouter un utilisateur.|Un compte d’utilisateur a été créé.|
+|Licence utilisateur modifiée|Modifier une licence d’utilisateur.|La licence attribuée à un utilisateur a été modifiée. Pour identifier les licences modifiées, voir l’activité **Utilisateur mis à jour** correspondante.|
+|Mot de passe utilisateur modifié|Modifier un mot de passe d’utilisateur.|Un utilisateur modifie son mot de passe. La réinitialisation du mot de passe en libre-service doit être activée (pour tous les utilisateurs ou les utilisateurs sélectionnés) au sein de votre organisation pour permettre aux utilisateurs de réinitialiser leur mot de passe. Vous pouvez également effectuer le suivi de l’activité de réinitialisation du mot de passe en libre-service dans Azure Active Directory. Pour plus d’informations, veuillez consulter la page [Options de création de rapports pour la gestion des mots de passe Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
+|Utilisateur supprimé|Supprimez l’utilisateur.|Un compte d’utilisateur a été supprimé.|
+|Réinitialiser le mot de passe de l’utilisateur|Réinitialiser un mot de passe d’utilisateur.|Un administrateur réinitialise le mot de passe d’un utilisateur.|
+|Propriété définie qui force l’utilisateur à changer de mot de passe.|Définir la modification forcée d’un mot de passe d’utilisateur.|Un administrateur a défini la propriété qui force un utilisateur à modifier son mot de passe lors de sa prochaine connexion à Office 365.|
+|Propriétés de licence définies|Définir des propriétés de licence.|Un administrateur modifie les propriétés d’une licence attribuée à un utilisateur.|
+|Utilisateur mis à jour|Mettre à jour un utilisateur.|Un administrateur modifie une ou plusieurs propriétés d’un compte d’utilisateur. Pour obtenir la liste des propriétés utilisateur qui peuvent être mises à jour, voir la section « Attributs de "Mettre à jour l’utilisateur" » dans [Événements de rapport d’audit d’Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
 ||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Activités d’administration des groupes Azure AD
 
 Le tableau suivant répertorie les activités d’administration des groupes enregistrées lorsqu’un administrateur ou un utilisateur crée ou modifie un groupe Microsoft 365 ou lorsqu’un administrateur crée ou modifie un groupe à l’aide du Centre d’administration Microsoft 365 ou du portail de gestion Azure. Pour plus d’informations sur les groupes dans Office 365, voir [afficher, créer et supprimer des groupes dans le centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups).
 
+> [!NOTE]
+> Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.
+
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Groupe ajouté|Add group|Un groupe a été créé.|
-|Membre ajouté au groupe|Add member to group|Un membre a été ajouté à un groupe.|
-|Groupe supprimé|Delete group|Un groupe a été supprimé.|
-|Membre supprimé du groupe|Remove member from group|Un membre a été supprimé d’un groupe.|
-|Groupe mis à jour|Update group|Une propriété d’un groupe a été modifiée.|
+|Groupe ajouté|Ajouter un groupe.|Un groupe a été créé.|
+|Membre ajouté au groupe|Ajouter un membre à un groupe.|Un membre a été ajouté à un groupe.|
+|Groupe supprimé|Supprimer un groupe.|Un groupe a été supprimé.|
+|Membre supprimé du groupe|Supprimer un membre d’un groupe.|Un membre a été supprimé d’un groupe.|
+|Groupe mis à jour|Mettre à jour un groupe.|Une propriété d’un groupe a été modifiée.|
 ||||
 
 ### <a name="application-administration-activities"></a>Activités d’administration des applications
 
 Le tableau suivant répertorie les activités d’administration des applications enregistrés lorsqu’un administrateur ajoute ou modifie une application enregistrée dans Azure AD. Les applications qui utilisent Azure AD pour l’authentification doivent être enregistrées dans l’annuaire.
 
+> [!NOTE]
+> Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.
+
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Entrée de délégation ajoutée|Ajouter Entrée de délégation|Une autorisation d’authentification a été créée/accordée à une application dans Azure AD.|
-|Principal de service ajouté|Ajouter principal de service|Une application a été enregistrée dans Azure AD. Une application est représentée par un principal de service dans l’annuaire.|
-|Informations d’identification ajoutées à un principal de service |Ajouter Informations d’identification à un principal de service|Des informations d’identification ont été ajoutées à un principal de service dans Azure AD. Un principal de service représente une application dans l’annuaire.|
-|Entrée de délégation supprimée|Supprimer une entrée de délégation |Une autorisation d’authentification a été supprimée d’une application dans Azure AD.|
-|Principal de service supprimé de l’annuaire|Supprimer le principal de service|Une application a été supprimée ou désinscrite de Azure AD. Une application est représentée par un principal de service dans l’annuaire.|
-|Les informations d’identification ont été supprimées du principal de service |Supprimer les informations d’identification du principal de service|Des informations d’identification ont été supprimées d’un principal de service dans Azure AD. Un principal de service représente une application dans l’annuaire.|
-|Entrée de délégation définie|Définition de l’entrée de délégation|Une autorisation d’authentification a été mise à jour pour une application dans Azure AD.|
+|Entrée de délégation ajoutée|Ajouter une entrée de délégation.|Une autorisation d’authentification a été créée/accordée à une application dans Azure AD.|
+|Principal de service ajouté|Ajouter un principal du service.|Une application a été enregistrée dans Azure AD. Une application est représentée par un principal de service dans l’annuaire.|
+|Informations d’identification ajoutées à un principal de service |Ajouter des informations d’identification d’un principal du service.|Des informations d’identification ont été ajoutées à un principal de service dans Azure AD. Un principal de service représente une application dans l’annuaire.|
+|Entrée de délégation supprimée|Supprimer une entrée de délégation.|Une autorisation d’authentification a été supprimée d’une application dans Azure AD.|
+|Principal de service supprimé de l’annuaire|Supprimer un principal du service.|Une application a été supprimée ou désinscrite de Azure AD. Une application est représentée par un principal de service dans l’annuaire.|
+|Les informations d’identification ont été supprimées du principal de service |Supprimer des informations d’identification d’un principal du service.|Des informations d’identification ont été supprimées d’un principal de service dans Azure AD. Un principal de service représente une application dans l’annuaire.|
+|Entrée de délégation définie|Définir une entrée de délégation.|Une autorisation d’authentification a été mise à jour pour une application dans Azure AD.|
 ||||
 
 ### <a name="role-administration-activities"></a>Activités d’administration des rôles
 
 Le tableau suivant répertorie les activités d’administration des rôles Azure AD journalisées quand un administrateur gère les rôles d’administrateur via le Centre d’administration Microsoft 365 ou le portail de gestion Azure.
 
+> [!NOTE]
+> Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.
+
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Membre ajouté au rôle|Ajouter un membre de rôle au rôle|Un utilisateur a été ajouté à un rôle d’administrateur dans Microsoft 365.|
-|Utilisateur supprimé d’un rôle d’annuaire|Supprimer un membre de rôle d’un rôle|Un utilisateur a été supprimé d’un rôle d’administrateur dans Microsoft 365.|
-|Définition des informations de contact d’une entreprise|Définition des informations de contact d’une entreprise|Les préférences de contact au niveau de l’entreprise ont été mises à jour pour votre organisation. Cela inclut les adresses de messagerie pour les messages liés à un abonnement envoyés par Microsoft 365, ainsi que les notifications techniques relatives aux services.|
+|Membre ajouté au rôle|Ajouter un membre à un rôle.|Un utilisateur a été ajouté à un rôle d’administrateur dans Microsoft 365.|
+|Utilisateur supprimé d’un rôle d’annuaire|Supprimer un membre d’un rôle.|Un utilisateur a été supprimé d’un rôle d’administrateur dans Microsoft 365.|
+|Définition des informations de contact d’une entreprise|Définir des informations de contact professionnel.|Les préférences de contact au niveau de l’entreprise ont été mises à jour pour votre organisation. Cela inclut les adresses de messagerie pour les messages liés à un abonnement envoyés par Microsoft 365, ainsi que les notifications techniques relatives aux services.|
 ||||
 
 ### <a name="directory-administration-activities"></a>Activités d’administration de l’annuaire
 
 Le tableau suivant répertorie les activités liées à l’annuaire et au domaine Azure AD journalisées quand un administrateur gère son organisation via le Centre d’administration Microsoft 365 ou le portail de gestion Azure.
 
+> [!NOTE]
+> Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.
+
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Domaine ajouté à l’entreprise|Ajouter un domaine à l’entreprise|Un domaine a été ajouté à votre organisation.|
-|Partenaire ajouté à l’annuaire|Ajouter un partenaire à l’entreprise|Un partenaire (administrateur délégué) a été ajouté à votre organisation.|
-|Domaine supprimé de l’entreprise|Supprimer le domaine de l’entreprise|Un domaine a été supprimé de votre organisation.|
-|Partenaire supprimé de l’annuaire|Supprimer un partenaire de l’entreprise|Un partenaire (administrateur délégué) a été supprimé de votre organisation.|
-|Définition des informations sur la société|Définition des informations sur la société|Les informations de l’entreprise ont été mises à jour pour votre organisation. Cela inclut les adresses de messagerie pour les messages liés à un abonnement envoyés par Microsoft 365, ainsi que les notifications techniques relatives aux services Microsoft 365.|
-|Définition de l’authentification de domaine|Définition de l’authentification de domaine|Le paramètre d’authentification de domaine a été modifié pour votre organisation.|
-|Paramètres de fédération mis à jour pour un domaine|Définir les paramètres de fédération du domaine|Les paramètres de la fédération (partage externe) ont été modifiés pour votre organisation.|
-|Stratégie de mot de passe définie|Stratégie de mot de passe définie|Les contraintes de longueur et de caractères applicables aux mots de passe utilisateur ont été modifiées dans votre organisation.|
-|Activation de la synchronisation Azure AD|Définir l’indicateur DirSyncEnabled à l’entreprise|La propriété qui active un annuaire pour la synchronisation Azure AD a été définie.|
-|Domaine mis à jour|Mettre à jour le domaine|Les paramètres d’un domaine dans votre organisation ont été mis à jour.|
-|Domaine vérifié|Verify domain|La propriété d’un domaine par votre organisation a été vérifiée.|
-|Domaine de courrier vérifié par courrier électronique|Verify email verified domain|Une vérification de courrier électronique a été effectuée pour vérifier que votre organisation est propriétaire d’un domaine.|
+|Domaine ajouté à l’entreprise|Ajouter un domaine à une entreprise.|Un domaine a été ajouté à votre organisation.|
+|Partenaire ajouté à l’annuaire|Ajouter un partenaire à une entreprise.|Un partenaire (administrateur délégué) a été ajouté à votre organisation.|
+|Domaine supprimé de l’entreprise|Supprimer un domaine d’une entreprise.|Un domaine a été supprimé de votre organisation.|
+|Partenaire supprimé de l’annuaire|Supprimer un partenaire d’une entreprise.|Un partenaire (administrateur délégué) a été supprimé de votre organisation.|
+|Définition des informations sur la société|Définir des informations d’une entreprise.|Les informations de l’entreprise ont été mises à jour pour votre organisation. Cela inclut les adresses de messagerie pour les messages liés à un abonnement envoyés par Microsoft 365, ainsi que les notifications techniques relatives aux services Microsoft 365.|
+|Définition de l’authentification de domaine|Définir une authentification de domaine.|Le paramètre d’authentification de domaine a été modifié pour votre organisation.|
+|Paramètres de fédération mis à jour pour un domaine|Définir des paramètres de fédération sur un domaine.|Les paramètres de la fédération (partage externe) ont été modifiés pour votre organisation.|
+|Stratégie de mot de passe définie|Définir une stratégie de mot de passe.|Les contraintes de longueur et de caractères applicables aux mots de passe utilisateur ont été modifiées dans votre organisation.|
+|Activation de la synchronisation Azure AD|Définir un indicateur DirSyncEnabled.|La propriété qui active un annuaire pour la synchronisation Azure AD a été définie.|
+|Domaine mis à jour|Mettre à jour un domaine.|Les paramètres d’un domaine dans votre organisation ont été mis à jour.|
+|Domaine vérifié|Vérifier un domaine.|La propriété d’un domaine par votre organisation a été vérifiée.|
+|Domaine de courrier vérifié par courrier électronique|Vérifier un domaine vérifié d’e-mail.|Une vérification de courrier électronique a été effectuée pour vérifier que votre organisation est propriétaire d’un domaine.|
 ||||
 
 ### <a name="ediscovery-activities"></a>Activités de découverte électronique

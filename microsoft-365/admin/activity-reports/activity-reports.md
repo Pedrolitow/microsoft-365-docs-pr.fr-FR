@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: 4ec7690e5300b2ac08a98fbec3f4c253e970738c
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: a71ced2dd0aa71179c1b26cec571f3025af1ce05
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921169"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603851"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -85,6 +85,8 @@ Pour plus d'informations, voir [À propos des rôles d'administrateur](../add-us
 ## <a name="which-activity-reports-are-available-in-the-admin-center"></a>Quels sont les rapports d'activité disponibles dans le Centre d'administration ?
 
 En fonction de votre abonnement, les rapports suivants sont disponibles.
+
+- [Usage du navigateur Microsoft](browser-usage-report.md) 
   
 - [Activité de messagerie](email-activity-ww.md)
 
@@ -125,8 +127,6 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 - [Utilisation de OneDrive Entreprise pour le gouvernement américain](onedrive-for-business-usage.md)
 
 - [Utilisation de Microsoft 365 Apps](microsoft365-apps-usage-ww.md)
-
-- [Utilisation de Microsoft 365 Apps pour le secteur public américain](microsoft365-apps-usage.md)
   
 - [Utilisation du site SharePoint](sharepoint-site-usage-ww.md)
 
