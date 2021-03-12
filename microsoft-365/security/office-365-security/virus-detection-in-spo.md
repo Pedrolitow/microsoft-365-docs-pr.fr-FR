@@ -16,16 +16,16 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment SharePoint Online détecte les virus dans les fichiers que les utilisateurs téléchargent et empêche les utilisateurs de télécharger ou de synchroniser les fichiers.
+description: Découvrez comment SharePoint Online détecte des virus dans les fichiers que les utilisateurs téléchargent et empêche les utilisateurs de télécharger ou de synchroniser les fichiers.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0eafb9e5e2f0c9d86791fe83931276e420afcd9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9ba3d19c6b04b93d9b1089540b7483d8b2e7246c
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286500"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727498"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protection antivirus intégrée dans SharePoint Online, OneDrive et Microsoft Teams
 
@@ -38,18 +38,18 @@ ms.locfileid: "50286500"
 Microsoft 365 utilise un moteur de détection de virus courant pour analyser les fichiers que les utilisateurs téléchargent sur SharePoint Online, OneDrive et Microsoft Teams. Cette protection est incluse dans tous les abonnements qui incluent SharePoint Online, OneDrive et Microsoft Teams.
 
 > [!IMPORTANT]
-> Les fonctionnalités anti-virus intégrées permettent de contenir des virus. Elles ne sont pas conçues comme un seul point de défense contre les programmes malveillants pour votre environnement. Nous encourageons tous les clients à examiner et à implémenter la protection contre les programmes malveillants à différents niveaux et à appliquer les meilleures pratiques pour sécuriser leur infrastructure d’entreprise. Pour plus d’informations sur les stratégies et les meilleures pratiques, consultez [la feuille de route de sécurité.](security-roadmap.md)
+> Les fonctionnalités anti-virus intégrées permettent de contenir des virus. Elles ne sont pas destinées à être un point de défense unique contre les programmes malveillants pour votre environnement. Nous encourageons tous les clients à examiner et à implémenter la protection contre les programmes malveillants à différents niveaux et à appliquer les meilleures pratiques pour sécuriser leur infrastructure d’entreprise. Pour plus d’informations sur les stratégies et les meilleures pratiques, consultez [la feuille de route de sécurité.](security-roadmap.md)
 
-## <a name="what-happens-when-an-infected-file-is-uploaded-to-sharepoint-online"></a>Que se passe-t-il lorsqu’un fichier infecté est téléchargé vers SharePoint Online ?
+## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>Que se passe-t-il si un fichier infecté est téléchargé vers SharePoint Online ?
 
-Le moteur de détection de virus Microsoft 365 s’exécute de manière asynchrone dans SharePoint Online. **Tous les fichiers ne sont pas analysés automatiquement au chargement.** Les heuristiques déterminent les fichiers à analyser. Lorsqu’un fichier contient un virus, il est marqué de sorte qu’il ne peut pas être téléchargé à nouveau. En avril 2018, nous avons supprimé la limite de 25 Mo pour les fichiers analysés.
+Le moteur de détection de virus Microsoft 365 s’exécute de manière asynchrone (indépendamment des téléchargements de fichiers) dans SharePoint Online. **Tous les fichiers ne sont pas analysés automatiquement.** Les heuristiques déterminent les fichiers à analyser. Lorsqu’un fichier contient un virus, le fichier est signalé. En avril 2018, nous avons supprimé la limite de 25 Mo pour les fichiers analysés.
 
 Voici ce qui se produit :
 
 1. Un utilisateur télécharge un fichier vers SharePoint Online.
-2. SharePoint Online détermine si le fichier répond aux critères d’une analyse.
-3. Le moteur de détection de virus analyse le fichier.
-4. Si un virus est trouvé, le moteur de virus définit une propriété sur le fichier indiquant qu’il est infecté.
+2. SharePoint Online, dans le cadre de ses processus d’analyse antivirus, détermine ultérieurement si le fichier répond aux critères d’une analyse.
+3. Si le fichier répond aux critères d’une analyse, le moteur de détection de virus analyse le fichier.
+4. Si un virus est trouvé dans le fichier analysé, le moteur de virus définit une propriété sur le fichier indiquant qu’il est infecté.
 
 ## <a name="what-happens-when-a-user-tries-to-download-an-infected-file-by-using-the-browser"></a>Que se passe-t-il lorsqu’un utilisateur tente de télécharger un fichier infecté à l’aide du navigateur ?
 

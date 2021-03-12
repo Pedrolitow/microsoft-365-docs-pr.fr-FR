@@ -16,17 +16,19 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: Découvrez comment autoriser les membres à envoyer des courriers électroniques en tant que groupe Microsoft 365 ou à envoyer du courrier électronique au nom d’un groupe Microsoft 365.
-ms.openlocfilehash: 6dff559eceec1b719f31d577d7fff8f604636a47
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+description: Découvrez comment autoriser les membres du groupe à envoyer des courriers électroniques en tant que groupe Microsoft 365 ou à envoyer du courrier électronique au nom d’un groupe Microsoft 365.
+ms.openlocfilehash: 44a0a7a690c8faa9fe00732e8154f36aa5a6fe6f
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663582"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727078"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou de la part d’un groupe
 
-Un membre d’un groupe Microsoft 365 qui  a reçu les autorisations Envoyer en tant que ou Envoyer de la part de peut envoyer des messages électroniques en tant que groupe ou au nom du groupe.  Cet article explique comment un administrateur général ou Exchange peut définir ces autorisations.
+Un membre d’un groupe Microsoft 365 qui  a reçu les autorisations Envoyer en tant que ou Envoyer de la part de peut envoyer des messages électroniques en tant que groupe ou au nom du groupe.  (Ces autorisations ne peuvent pas être accordées aux invités du groupe.)
+
+Cet article explique comment un administrateur général ou Exchange peut définir ces autorisations.
   
 Par exemple, si Megan Bowen fait partie du groupe **Formation** Microsoft 365 et dispose d’autorisations Envoyer en tant  que sur le groupe, si elle envoie un e-mail en tant que groupe, il semblera que le groupe de formation a envoyé le message électronique.  
   
@@ -44,7 +46,7 @@ Cette section explique comment autoriser les utilisateurs à envoyer des message
   
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange,</a>allez à **Groupes de destinataires.** \> 
     
-2. Sélectionnez **Modifier** ![ l’icône de groupe sur le groupe que vous ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) souhaitez autoriser les utilisateurs à envoyer en tant que.   
+2. Sélectionnez **l’icône** Modifier le groupe sur le groupe que vous ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) souhaitez autoriser les utilisateurs à envoyer en tant que.   
     
 3. Sélectionnez **délégation de groupe.**
     
@@ -70,7 +72,7 @@ Cette section explique comment autoriser les utilisateurs à envoyer des message
     
     ![Capture d’écran de la boîte de dialogue Envoyer de la part de](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
-5. Tapez pour rechercher ou sélectionner un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrez.**
+5. Tapez pour rechercher ou sélectionner un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrer.**
     
     ![Tapez pour rechercher ou sélectionner un utilisateur dans la liste](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 87149ab9c99168d62f5114555a46b8bfaee83ab2
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 7db9b9762830384370a4bedf220d7a52112ab1ea
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712101"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727210"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Vue d’ensemble du Centre de sécurité Microsoft 365 unifié
 
@@ -42,7 +42,7 @@ ms.locfileid: "50712101"
 
 Le Centre de sécurité **Microsoft 365** amélioré combine la protection, la détection, l’examen et la réponse aux e-mails, à la collaboration, à l’identité et aux menaces d’appareils, dans un [https://security.microsoft.com](https://security.microsoft.com) portail central.    
 
-Le Centre de sécurité Microsoft 365 regroupe les fonctionnalités des portails de sécurité Microsoft existants, tels que le Centre de sécurité Microsoft Defender et le Centre de sécurité & conformité Office 365. Le centre de sécurité met l’accent sur l’accès rapide aux informations, des dispositions plus simples et la mise en commun des informations associées pour faciliter l’utilisation. Ce centre inclut :
+Le Centre de sécurité Microsoft 365 regroupe les fonctionnalités des portails de sécurité Microsoft existants, tels que le Centre de sécurité Microsoft Defender et le Centre de sécurité & conformité Office 365. Le centre de sécurité met l’accent sur l’accès rapide aux informations, des dispositions plus simples et la mise en commun des informations associées pour faciliter leur utilisation. Ce centre inclut :
 
 - **[Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)** Microsoft Defender pour Office 365 aide les organisations à sécuriser leur entreprise avec un ensemble de fonctionnalités de prévention, de détection, d’examen et de repérage pour protéger le courrier électronique et les ressources Office 365.
 - **[Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** offre une protection préventive, une détection post-violation, une enquête automatisée et une réponse pour les appareils de votre organisation.
@@ -57,7 +57,7 @@ Si vous avez besoin d’informations sur les changements du Centre de sécurité
 
 Tout le contenu de sécurité que vous utilisez dans le Centre de sécurité et conformité Office 365 (protection.office.com) et le Centre de sécurité Microsoft Defender (securitycenter.microsoft.com) se trouve désormais dans le Centre de sécurité *Microsoft 365.*
 
-Le Centre de sécurité Microsoft 365 permet aux équipes de sécurité d’examiner les attaques et de répondre à ces attaques en insumant les signaux de différentes charges de travail dans une expérience unifiée unique :
+Le Centre de sécurité Microsoft 365 permet aux équipes de sécurité d’examiner les attaques et de répondre à ces attaques en axant les signaux de différentes charges de travail dans une expérience unifiée unique :
 
 - Incidents & alertes
 - Chasse
@@ -84,7 +84,7 @@ Par exemple, un double-clic sur  un nom d’incident avec gravité élevée vous
 > [!TIP]
 > L’onglet **Utilisateurs** convergé est un bon point de départ pour commencer vos demandes. Cette page unique propose des informations pour les utilisateurs à partir de charges de travail convergées (Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité et MCAS, si vous l’exploitez) et une gamme de sources telles que Active Directory sur site, Azure Active Directory, les utilisateurs synchronisés, locaux et tiers. En savoir plus sur [la nouvelle expérience utilisateur.](investigate-users.md)
 
-Les informations d’incident indiquent les spécificités utilisateur/identité et les appareils à risque, à côté des boîtes aux lettres concernées. Elle concerne également toutes les informations **d’investigation** et les preuves **recueillies.** Cela facilite la tâche des administrateurs et des équipes d’opérations de sécurité pour faire pivoter une alerte à haut risque vers les utilisateurs et les boîtes aux lettres concernés. Si vous regardez les onglets **Incident** en haut de cette page, d’autres tableaux croisés dynamiques de sécurité clés sont disponibles à partir de cet emplacement unique.
+Les informations d’incident indiquent les spécificités utilisateur/identité et les appareils à risque, à côté des boîtes aux lettres concernées. Elle concerne également toutes les **informations d’investigation** et les preuves **recueillies.** Cela facilite la tâche des administrateurs et des équipes d’opérations de sécurité pour faire pivoter une alerte à haut risque vers les utilisateurs et les boîtes aux lettres concernés. Si vous regardez les onglets **Incident** en haut de cette page, d’autres tableaux croisés dynamiques de sécurité clés sont disponibles à partir de cet emplacement unique.
 
 > [!IMPORTANT]
 > En haut de n’importe quelle page pour un incident spécifique, vous verrez les onglets  **Résumé,** **Alertes, Périphériques,** Utilisateurs, Boîtes aux **lettres,** **Enquêtes** et Preuves. 
@@ -103,10 +103,13 @@ Les contrôles courants et le contenu apparaissent au même endroit ou sont cond
 
 ![Page Autorisations & rôles affichant les rôles endpoints & groupes, rôles et groupes d’appareils.](../../media/converged-roles-5.png)
 
- L’accès au Centre de sécurité Microsoft 365 est configuré avec des rôles globaux Azure Active Directory ou à l’aide de rôles personnalisés. For Defender for Endpoint, see [Assign user access to Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access). Pour Defender pour Office 365, voir Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité [Microsoft 365.](../office-365-security/permissions-microsoft-365-compliance-security.md)
+ L’accès au Centre de sécurité Microsoft 365 est configuré avec des rôles globaux Azure Active Directory ou à l’aide de rôles personnalisés. For Defender for Endpoint, see [Assign user access to Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access). Pour Defender pour Office 365, consultez Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité [Microsoft 365.](../office-365-security/permissions-microsoft-365-compliance-security.md)
 
 - En savoir plus sur la gestion [de l’accès à Microsoft 365 Defender](mtp-permissions.md)
 - En savoir plus sur la création [de rôles personnalisés](custom-roles.md) dans le Centre de sécurité Microsoft 365
+
+> [!NOTE]
+> Microsoft Defender pour le point de terminaison dans le Centre de sécurité Microsoft 365 prend en charge l’octroi de l’accès aux fournisseurs de services de sécurité [gérés (MSSP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) de la même façon que l’accès est accordé dans le Centre de sécurité [Microsoft Defender.](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)
 
 ### <a name="integrated-reports"></a>Rapports intégrés
 
@@ -114,7 +117,7 @@ Les rapports sont également unifiés dans le Centre de sécurité Microsoft 365
 
 ### <a name="quickly-view-your-microsoft-365-environment"></a>Afficher rapidement votre environnement Microsoft 365
 
-La page **d’accueil** affiche la plupart des cartes courantes dont les équipes de sécurité ont besoin. La composition des cartes et des données dépend du rôle d’utilisateur. Étant donné que le Centre de sécurité Microsoft 365 utilise le contrôle d’accès basé sur les rôles, différents rôles voient des cartes plus significatives pour leur travail quotidien.  
+La page **d’accueil** affiche la plupart des cartes courantes dont les équipes de sécurité ont besoin. La composition des cartes et des données dépend du rôle utilisateur. Étant donné que le Centre de sécurité Microsoft 365 utilise le contrôle d’accès basé sur les rôles, différents rôles voient des cartes plus significatives pour leur travail quotidien.  
 
 Ces informations rapides vous permettent de suivre les dernières activités de votre organisation. Le Centre de sécurité Microsoft 365 regroupe les signaux provenant de différentes sources pour présenter une vue globale de votre environnement Microsoft 365.
 
@@ -129,7 +132,7 @@ Les cartes sont dans les catégories suivantes :
 Suivez les menaces émergentes et répondez-y avec l’expérience intégrée d’analyse des menaces Microsoft 365 Defender suivante :
 
 - Meilleure couverture des données entre Microsoft Defender pour le point de terminaison et Microsoft Defender pour Office 365, rendant possible la gestion combinée des incidents, l’examen automatique, la correction et la recherche proactive ou réactive de menaces sur plusieurs domaines. 
-- Détections et atténuations liées à la messagerie électronique de Microsoft Defender pour Office 365, en plus des données de point de terminaison déjà disponibles dans Microsoft Defender pour Endpoint.
+- Détections et atténuations liées à la messagerie électronique de Microsoft Defender pour Office 365, en plus des données de point de terminaison déjà disponibles à partir de Microsoft Defender pour endpoint.
 - Vue des incidents liés aux menaces qui regroupent les alertes en articles d’attaque de bout en bout dans Microsoft Defender pour le point de terminaison et Microsoft Defender pour Office 365 afin de réduire la file d’attente de travail, ainsi que de simplifier et d’accélérer votre enquête.
 - Tentatives d’attaque détectées et bloquées par les solutions Microsoft 365 Defender. Il existe également des données que vous pouvez utiliser pour piloter des actions préventives qui atténuent les risques d’exposition supplémentaire et augmentent la résilience. 
 - Conception améliorée qui place des informations exploitables à la une pour vous aider à identifier rapidement les données sur qui il est urgent de se concentrer, d’examiner et de tirer parti des rapports.

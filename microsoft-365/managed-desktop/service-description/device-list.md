@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4a71727a21151f1c1aec23a859a91fb616ad71c5
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 729e9dc9ab512a7e93bc291a9a52222c15a42b79
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453692"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727420"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau géré Microsoft 
 
-Bureau géré Microsoft évalue régulièrement les appareils à inclure dans le service. Cet article répertorie les appareils spécifiques actuellement pris en charge. Pour obtenir une déclaration plus générale des conditions requises pour l’appareil, [consultez La demande de l’appareil.](device-requirements.md)
+Bureau géré Microsoft évalue régulièrement les appareils à inclure dans le service. Cet article répertorie les appareils spécifiques actuellement pris en charge. Pour obtenir une déclaration plus générale des exigences relatives aux appareils, consultez [La demande d’appareil.](device-requirements.md)
 
 Pour plus d’informations sur bureau géré Microsoft, voir la documentation et les ressources [de Bureau géré Microsoft.](https://docs.microsoft.com/microsoft-365/managed-desktop/) 
 
@@ -37,7 +37,7 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Precision 5310 2-en-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 28 avril 2022  | 28 avril 2025 |
+| [Dell Latitude 5310 / 5310 2-en-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 28 avril 2022  | 28 avril 2025 |
 | [Dell Latitude 3510](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-3510-business-laptop/spd/latitude-15-3510-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 28 avril 2022 | 28 avril 2025  |
 | [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 28 avril 2022 | 28 avril 2025  |
 | [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 28 avril 2022 | 28 avril 2025 |
@@ -53,7 +53,7 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [ORDINATEUR portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
+| [PC portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [PC portable HP EliteBook x360 830 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS03AV | 31 juillet 2021 | 31 juillet 2024 |
 | [PC portable HP EliteBook x360 1030 / 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 8XW08AV | 31 août 2021 | 31 août 2024 |

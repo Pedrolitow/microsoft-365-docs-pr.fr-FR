@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cc6110cdd7dd71f80f6897cfbb0026ccce301cf7
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: e838ce873a1c3ecc0f437f96e75cc2a40d3af79d
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928473"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727270"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -40,11 +40,11 @@ Appliquez ces recommandations pour obtenir des résultats plus rapidement et év
 ## <a name="understand-cpu-resource-quotas"></a>Comprendre les quotas de ressources de l’UC
 En fonction de sa taille, chaque client a accès à une quantité définie de ressources processeur allouées pour l’exécution de requêtes de recherche avancées. Pour plus d’informations sur les différentes limites de service, voir les quotas de recherche avancés et [les paramètres d’utilisation.](advanced-hunting-limits.md)
 
-Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la consommation et appliquer les instructions d’optimisation de cet article pour minimiser les perturbations résultant du dépassement des quotas ou des paramètres d’utilisation.
+Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la consommation et appliquer les recommandations d’optimisation de cet article afin de minimiser les perturbations résultant du dépassement des quotas ou des paramètres d’utilisation.
 
 ## <a name="general-optimization-tips"></a>Conseils généraux d’optimisation
 
-- **Dimensioniser les nouvelles requêtes**— Si vous pensez qu’une requête retournera un jeu de résultats important, évaluez-la d’abord à l’aide de [l’opérateur de nombre.](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator) Utilisez [limit](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) ou son synonyme pour éviter les `take` jeux de résultats importants.
+- **Dimensioniser les nouvelles requêtes**— Si vous pensez qu’une requête retournera un jeu de résultats important, évaluez-la d’abord à l’aide de [l’opérateur de nombre.](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator) Utilisez [limit ou](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) son synonyme pour éviter les jeux de résultats `take` importants.
 - Appliquer des filtres tôt — Appliquer des filtres de temps et d’autres filtres pour réduire le jeu de données, en particulier avant d’utiliser des fonctions de transformation et d’analyse, telles que sous-string() , [replace()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction), [](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction) [trim()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [toupper()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)ou [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Dans l’exemple ci-dessous, la fonction d’recherche [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) est utilisée après que les opérateurs de filtrage ont réduit le nombre d’enregistrements.
 
     ```kusto
@@ -107,7 +107,7 @@ Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la
     ```kusto
     EmailEvents
     | where Timestamp > ago(7d)
-    | where MalwareFilterVerdict == "Malware" 
+    | where ThreatTypes has "Malware"
     | project EmailReceivedTime = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0])
     | join (
     DeviceLogonEvents 
@@ -150,7 +150,7 @@ Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la
 ## <a name="optimize-the-summarize-operator"></a>Optimiser `summarize` l’opérateur
 [L’opérateur de synthèse](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator) agrège le contenu d’un tableau. Appliquez ces conseils pour optimiser les requêtes qui utilisent cet opérateur.
 
-- **Rechercher des valeurs distinctes**: en général, utilisez cette recherche pour `summarize` trouver des valeurs distinctes qui peuvent être répétitives. Il peut être inutile de l’utiliser pour agréger des colonnes qui n’ont pas de valeurs répétitives.
+- **Rechercher des valeurs distinctes**: en général, utilisez cette recherche pour `summarize` rechercher des valeurs distinctes qui peuvent être répétitives. Il peut être inutile de l’utiliser pour agréger des colonnes qui n’ont pas de valeurs répétitives.
 
     Bien qu’un seul e-mail puisse faire  partie de plusieurs événements, l’exemple ci-dessous n’est pas une utilisation efficace, car un ID de message réseau pour un message électronique individuel est toujours fourni avec une adresse d’expéditeur `summarize` unique.
  
@@ -159,7 +159,7 @@ Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la
     | where Timestamp > ago(1h)
     | summarize by NetworkMessageId, SenderFromAddress   
     ```
-    L’opérateur peut être facilement remplacé par , ce qui donne potentiellement `summarize` les mêmes résultats tout en `project` consommant moins de ressources :
+    L’opérateur peut être facilement remplacé par , ce qui donne potentiellement les mêmes résultats `summarize` `project` tout en consommant moins de ressources :
 
     ```kusto
     EmailEvents  
@@ -174,9 +174,9 @@ Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la
     | summarize by SenderFromAddress, RecipientEmailAddress   
     ```
 
-- **Mélangez la requête —** Bien qu’il soit préférable d’utiliser les colonnes avec des valeurs répétitives, les mêmes colonnes peuvent également avoir une cardinalité élevée ou un grand nombre `summarize` de valeurs uniques.  Comme l’opérateur, vous pouvez également appliquer le conseil de mélange avec pour répartir la charge de traitement et potentiellement améliorer les performances lorsque vous fonctionnez sur des colonnes avec `join` une [](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) `summarize` cardinalité élevée.
+- **Mélangez la requête .** Bien qu’il soit préférable d’utiliser les colonnes avec des valeurs répétitives, les mêmes colonnes peuvent également avoir une cardinalité élevée ou un grand nombre `summarize` de valeurs uniques.  Comme l’opérateur, vous pouvez également appliquer le conseil de mélange avec pour répartir la charge de traitement et potentiellement améliorer les performances lorsque vous fonctionnez sur des colonnes avec `join` une [](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) `summarize` cardinalité élevée.
 
-    La requête ci-dessous permet de compter des adresses de messagerie de destinataire distinctes, qui peuvent s’exécuter par centaines de `summarize` milliers dans les grandes organisations. Pour améliorer les performances, il intègre `hint.shufflekey` :
+    La requête ci-dessous permet de compter des adresses de messagerie de destinataire distinctes, qui peuvent s’exécuter par centaines de `summarize` milliers dans les grandes organisations. Pour améliorer les performances, elle intègre `hint.shufflekey` :
 
     ```kusto
     EmailEvents  
@@ -213,7 +213,7 @@ Pour créer des requêtes plus durables autour des lignes de commande, appliquez
 - Parse command-line sections using the [parse_command_line() function](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) 
 - Lors de l’interrogation des arguments de la ligne de commande, ne recherchez pas une correspondance exacte de plusieurs arguments non liés dans un certain ordre. Au lieu de cela, vous devez utiliser des expressions régulières ou utiliser plusieurs opérateurs de contenu séparés..
 - Utilisez des correspondances non respectées de casse. Par exemple, utilisez `=~` , et à la place de , et `in~` `contains` `==` `in` `contains_cs` .
-- Pour atténuer les techniques d’obfuscation de ligne de commande, envisagez de supprimer des guillemets, de remplacer des virgules par des espaces et de remplacer plusieurs espaces consécutifs par un espace unique. Il existe des techniques d’obfuscation plus complexes qui nécessitent d’autres approches, mais ces ajustements peuvent aider à résoudre les problèmes courants.
+- Pour atténuer les techniques d’obfuscation de ligne de commande, envisagez de supprimer des guillemets, de remplacer les virgules par des espaces et de remplacer plusieurs espaces consécutifs par un espace unique. Il existe des techniques d’obfuscation plus complexes qui nécessitent d’autres approches, mais ces ajustements peuvent aider à résoudre les problèmes courants.
 
 Les exemples suivants montrent différentes façons de construire une requête qui recherche le fichier *net.exe* pour arrêter le service de pare-feu « MpsSvc » :
 
@@ -248,7 +248,7 @@ abuse_sha256
 | where Timestamp > ago(1d) 
 ) on $left.sha256_hash == $right.SHA256
 | project Timestamp,SenderFromAddress,RecipientEmailAddress,FileName,FileType,
-SHA256,MalwareFilterVerdict,MalwareDetectionMethod
+SHA256,ThreatTypes,DetectionMethods
 ```
 
 ### <a name="parse-strings"></a>Parse strings
@@ -262,9 +262,9 @@ Il existe différentes fonctions que vous pouvez utiliser pour gérer efficaceme
 | Adresses IPv4 | [parse_ipv4()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv4function) | Convertissez une adresse IPv4 en un long integer. Pour comparer les adresses IPv4 sans les convertir, [utilisez ipv4_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv4-comparefunction). |
 | Adresses IPv6 | [parse_ipv6()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv6function)  | Convertissez une adresse IPv4 ou IPv6 en notation IPv6 canonique. Pour comparer les adresses IPv6, [utilisez ipv6_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-Pour en savoir plus sur toutes les fonctions d’doncsing prise en charge, lisez la suite sur les fonctions [de chaîne Kusto.](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
+Pour en savoir plus sur toutes les fonctions d’parsage prise en charge, lisez la suite sur les fonctions [de chaîne Kusto.](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Documentation sur le langage de requête Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
 - [Paramètres d’utilisation et de quotas](advanced-hunting-limits.md)
 - [Gérer les erreurs de recherche avancée](advanced-hunting-errors.md)

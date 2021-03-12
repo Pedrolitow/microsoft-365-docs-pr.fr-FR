@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b408f574ab4b89806be9154394f49c00a7fd1e99
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a12b2dcf2de472f43e782e2064944ec774bdb9e1
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932249"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727258"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Recherchez les menaces sur les appareils, les e-mails, les applications et les identités
 
@@ -72,18 +72,18 @@ Vous pouvez obtenir des noms de compte et d’autres informations de compte en f
 EmailEvents
 | where Timestamp > ago(7d)
 //Get email processing events where the messages were identified as either phishing or malware
-| where MalwareFilterVerdict == 'Malware' or PhishFilterVerdict == 'Phish'
+| where ThreatTypes has "Malware" or ThreatTypes has "Phish"
 //Merge email events with identity info to get recipient details
 | join (IdentityInfo | distinct AccountUpn, AccountDisplayName, JobTitle, 
 Department, City, Country) on $left.RecipientEmailAddress == $right.AccountUpn 
 //Show important message and recipient details
-| project Timestamp, NetworkMessageId, Subject, PhishFilterVerdict, MalwareFilterVerdict,
+| project Timestamp, NetworkMessageId, Subject, ThreatTypes, 
 SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle, 
 Department, City, Country
 ```
 
 ### <a name="get-device-information"></a>Obtenir des informations sur l’appareil
-Le [schéma de recherche avancé fournit des](advanced-hunting-schema-tables.md) informations complètes sur l’appareil dans différents tableaux. Par exemple, la [table DeviceInfo fournit](advanced-hunting-deviceinfo-table.md) des informations complètes sur l’appareil en fonction des données d’événements agrégées régulièrement. Cette requête utilise la table pour vérifier si un utilisateur potentiellement compromis ( ) s’est connecté à des appareils, puis répertorie les alertes qui ont été déclenchées sur `DeviceInfo` `<account-name>` ces appareils.
+Le [schéma de recherche avancé fournit des](advanced-hunting-schema-tables.md) informations complètes sur l’appareil dans différents tableaux. Par exemple, le tableau [DeviceInfo fournit](advanced-hunting-deviceinfo-table.md) des informations complètes sur l’appareil en fonction des données d’événements agrégées régulièrement. Cette requête utilise la table pour vérifier si un utilisateur potentiellement compromis ( ) s’est connecté à des appareils, puis répertorie les alertes qui ont été déclenchées sur `DeviceInfo` `<account-name>` ces appareils.
 
 >[!Tip]
 > Cette requête permet de spécifier une jointure interne, ce qui empêche `kind=inner` la déduplication des valeurs côté [](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)gauche pour `DeviceId` .
@@ -104,7 +104,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>Scénarios de repérage
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>List logon activities of users that received emails that were notpé successfully
-[La purge automatique d’heure zéro (ZAP)](../office-365-security/zero-hour-auto-purge.md) adresse les e-mails malveillants après leur réception. En cas d’échec de ZAP, du code malveillant peut éventuellement s’exécuter sur l’appareil et laisser les comptes compromis. Cette requête vérifie si l’activité de la logon est réalisée par les destinataires des e-mails qui n’ont pas été correctement adressés par ZAP.
+[La purge automatique d’heure zéro (ZAP)](../office-365-security/zero-hour-auto-purge.md) adresse les e-mails malveillants après leur réception. En cas d’échec de ZAP, du code malveillant peut s’exécuter sur l’appareil et laisser les comptes compromis. Cette requête vérifie si l’activité de la logon est réalisée par les destinataires des e-mails qui n’ont pas été correctement adressés par ZAP.
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -163,7 +163,7 @@ Cette requête recherche les 10 dernières connexions effectuées par les destin
 //Define new table for malicious emails
 let MaliciousEmails=EmailEvents
 //List emails detected as malware, getting only pertinent columns
-| where MalwareFilterVerdict == "Malware"
+| where ThreatTypes has "Malware" 
 | project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 MaliciousEmails
 | join (
@@ -198,7 +198,7 @@ DeviceProcessEvents
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)

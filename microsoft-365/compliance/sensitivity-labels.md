@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 9232ccd9fd64676cea0826b05ccd7e68fcf054b9
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: f5c5901da44424d949062c6a2e9eecf69c48be3f
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454603"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597184"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -256,7 +256,7 @@ Même lorsque vous utilisez l'étiquetage intégré dans les applications Office
 
 - Module PowerShell pour découvrir des informations sensibles dans des fichiers locaux, et appliquer ou supprimer des étiquettes et un chiffrement à partir de ces fichiers.
 
-Si vous débutez sur Azure Information Protection, ou si vous êtes un client Azure Information Protection existant et que vous venez de migrer vos étiquettes, voir [Choisir le client d’étiquetage à utiliser pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) dans la documentation Azure Information Protection.
+Si vous débutez sur Azure Information Protection, ou si vous êtes un client Azure Information Protection existant et que vous venez de migrer vos étiquettes, consultez [Choisir la solution d’étiquetage Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) dans la documentation Azure Information Protection.
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>Étiquettes de confidentialité et Microsoft Cloud App Security
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à instaurer la mise en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 47bbc722ad87d5bde4b1e0dfb732e08dad3938f2
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ef89cadc09dea7c2186fbf4a0d76d2c690aa8acc
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423635"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597216"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -34,7 +34,7 @@ Pour en savoir plus sur les étiquettes de confidentialité et la façon dont el
 
 Si vous disposez d'[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), déterminez si vous devez migrer des étiquettes vers la plateforme d’étiquetage unifiée et le type de client d’étiquetage à utiliser :
 - [Comment puis-je savoir si mon client utilise la plateforme d’étiquetage unifiée ?](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Choisir le client d’étiquetage à utiliser pour des ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
+- [Choisir votre solution d’étiquetage Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
 
 Lorsque vous êtes prêt à protéger les données de votre organisation en utilisant des étiquettes de confidentialité :
 

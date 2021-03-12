@@ -14,12 +14,12 @@ ms.custom:
 description: Les administrateurs peuvent utiliser le suivi des messages dans le Centre de sécurité & conformité pour savoir ce qui est arrivé aux messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ce26f7a6cdad15019e2b40eb6f8746e5723d4f0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9c3f7e4bc9624b9fae48074203da525d7a504a12
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290656"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741574"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le Centre de sécurité et de conformité
 
@@ -38,7 +38,7 @@ Le suivi des messages dans le Centre de sécurité & conformité améliore le su
 
 > [!NOTE]
 >
-> - Pour suivre les messages, vous devez être membre des groupes de rôles Gestion de l’organisation, Gestion de la conformité ou Service d’aide. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+> - Pour suivre les messages, vous devez être membre des groupes de rôles Gestion de l’organisation, Gestion de la conformité ou Service d’aide. Pour plus d'informations, voir [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 >
 > - Le nombre maximal de messages affichés dans les résultats dépend du type de rapport que vous avez sélectionné (voir la section Choisir le [type](#choose-report-type) de rapport pour plus d’informations). La [cmdlet Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) dans Exchange Online PowerShell ou EOP PowerShell autonome renvoie tous les messages dans les résultats.
 
@@ -84,7 +84,7 @@ La valeur par défaut **est 2 jours,** mais vous pouvez spécifier des plages de
 
   ![Un curseur dans un nouveau suivi des messages dans le Centre de sécurité & conformité](../../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
-  Toutefois, vous pouvez  également passer en mode Personnalisé où vous pouvez spécifier les valeurs de **date** de début et de **fin** (y compris les heures), et vous pouvez également sélectionner le fuseau horaire pour la plage de date/heure.  Notez que le **paramètre de fuseau** horaire s’applique à la fois aux entrées de requête et aux résultats de votre requête.
+  Toutefois, vous pouvez  également passer en mode Personnalisé où vous pouvez spécifier les valeurs de **date** de début et de **date** de fin (y compris les heures), et vous pouvez également sélectionner le fuseau horaire pour la plage date/heure.  Notez que le **paramètre de fuseau** horaire s’applique à la fois aux entrées de requête et aux résultats de votre requête.
 
   ![Une plage de temps personnalisée dans un nouveau suivi des messages dans le Centre de sécurité & conformité](../../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
@@ -93,7 +93,7 @@ La valeur par défaut **est 2 jours,** mais vous pouvez spécifier des plages de
   Pour plus d’informations sur les différents types de rapports, voir la section Choisir un [type](#choose-report-type) de rapport dans cet article.
 
   > [!NOTE]
-  > Les rapports récapitulatifs et étendus améliorés sont préparés à l’aide de données de suivi des messages archivées, et le téléchargement de votre rapport peut prendre jusqu’à plusieurs heures. Selon le nombre d’autres administrateurs qui ont également soumis des demandes de rapport en même temps, vous remarquerez peut-être également un délai avant le début du traitement de votre demande en file d’attente.
+  > Les rapports récapitulatifs et étendus améliorés sont préparés à l’aide des données de suivi des messages archivées, et le téléchargement de votre rapport peut prendre jusqu’à plusieurs heures. Selon le nombre d’autres administrateurs qui ont également soumis des demandes de rapport en même temps, vous remarquerez peut-être également un délai avant le début du traitement de votre demande en file d’attente.
 
 - L’enregistrement d’une requête en affichage **Curseur** permet d’économiser la plage de temps relative (par exemple, 3 jours à partir d’aujourd’hui). L’enregistrement d’une requête en affichage personnalisé permet d’enregistrer la plage de date/heure absolue (par exemple, 2018-05-06 13:00 et 2018-05-08 18:00). 
 
@@ -111,7 +111,7 @@ Vous pouvez laisser la valeur par défaut **Tous** sélectionné, ou vous pouvez
 
 - **Échec :** le message n’a pas été remis.
 
-- **Mis en quarantaine**: le message a été mis en quarantaine (comme courrier indésirable, courrier en masse ou hameçonnage). Pour plus d’informations, voir [Messages électroniques mis en quarantaine dans EOP.](quarantine-email-messages.md)
+- **Mise en quarantaine**: le message a été mis en quarantaine (comme courrier indésirable, courrier en masse ou hameçonnage). Pour plus d’informations, voir [Messages électroniques mis en quarantaine dans EOP.](quarantine-email-messages.md)
 
 - **Filtré comme courrier indésirable**: le message a été identifié comme courrier indésirable et a été rejeté ou bloqué (non mis en quarantaine).
 
@@ -145,15 +145,17 @@ Les types de rapports disponibles sont :
 
 - **Résumé :** Disponible si la période est inférieure à 10 jours et ne nécessite aucune option de filtrage supplémentaire. Les résultats sont disponibles presque immédiatement après que vous avez cliqué sur **Rechercher.** Le rapport renvoie jusqu’à 20 000 résultats.
 
--  Résumé amélioré ou Étendu : Ces rapports sont disponibles uniquement en tant que fichiers CSV téléchargeables et nécessitent une ou plusieurs des options de filtrage suivantes, quelle que soit la période : Par ces **personnes,** À ces personnes **ou** **ID** de message . Vous pouvez utiliser des caractères génériques pour les expéditeurs ou les destinataires (par exemple, \* @contoso.com). Le rapport de synthèse amélioré renvoie jusqu’à 50 000 résultats. Le rapport étendu renvoie jusqu’à 1 000 résultats.
+-  Résumé amélioré ou Étendu : ces rapports sont disponibles uniquement en tant que fichiers CSV téléchargeables et nécessitent une ou plusieurs des options de filtrage suivantes, quelle que soit la période : Par ces **personnes,** À ces personnes **ou** **ID** de message . Vous pouvez utiliser des caractères génériques pour les expéditeurs ou les destinataires (par exemple, \* @contoso.com). Le rapport de synthèse amélioré renvoie jusqu’à 50 000 résultats. Le rapport étendu renvoie jusqu’à 1 000 résultats.
 
 > [!NOTE]
-> 
-> - Les rapports récapitulatifs et étendus améliorés sont préparés à l’aide de données de suivi des messages archivées, et le téléchargement de votre rapport peut prendre jusqu’à plusieurs heures. Selon le nombre d’autres administrateurs qui ont également soumis des demandes de rapport en même temps, vous remarquerez peut-être également un délai avant le traitement de votre demande en file d’attente.
-> 
+>
+> - Les rapports récapitulatifs et étendus améliorés sont préparés à l’aide de données de suivi des messages archivées, et le téléchargement de votre rapport peut prendre jusqu’à plusieurs heures. Selon le nombre d’autres administrateurs qui ont également soumis des demandes de rapport en même temps, vous remarquerez peut-être également un délai avant que votre demande en file d’attente ne commence à être traitée.
+>
 > - Bien que vous pouvez sélectionner un rapport de synthèse ou étendu amélioré pour une plage de dates/heures, les quatre dernières heures de données archivées ne sont généralement pas encore disponibles pour ces deux types de rapports.
+>
+> - La taille maximale d’un rapport téléchargeable est de 500 Mo. Si un rapport téléchargeable dépasse 500 Mo, vous ne pouvez pas l’ouvrir dans Excel ou le Bloc-notes.
 
-Lorsque vous cliquez sur **Suivant,** une page récapitulatif répertorie les options de filtrage que vous avez sélectionnées, un titre unique (modifiable) pour le rapport et l’adresse de messagerie qui reçoit la notification lorsque le suivi des messages est terminé (également modifiable et doit se trouver dans l’un des domaines acceptés de votre organisation). Cliquez **sur Préparer le rapport** pour envoyer le suivi des messages. Dans la page principale **de suivi des** messages, vous pouvez voir l’état du rapport dans la section Rapports **téléchargeables.**
+Lorsque vous cliquez sur **Suivant,** une page récapitulatif répertorie les options de filtrage que vous avez sélectionnées, un titre unique (modifiable) pour le rapport et l’adresse e-mail qui reçoit la notification lorsque le suivi des messages est terminé (également modifiable et doit se trouver dans l’un des domaines acceptés de votre organisation). Cliquez **sur Préparer le rapport** pour envoyer le suivi des messages. Dans la page principale **de suivi des messages,** vous pouvez voir l’état du rapport dans la section **Rapports téléchargeables.**
 
 Pour plus d’informations sur les informations renvoyées dans les différents types de rapports, voir la section suivante.
 
@@ -171,11 +173,11 @@ Le rapport récapitulatif contient les informations suivantes :
 
 - **Date**: date et heure de réception du message par le service, à l’aide du fuseau horaire UTC configuré.
 
-- **Sender**: l’adresse e-mail de l’expéditeur (*alias* @ *de domaine*).
+- **Sender**: l’adresse e-mail de l’expéditeur (*domaine* @ *d’alias*).
 
 - **Destinataire**: adresse de messagerie du ou des destinataires. Pour un message envoyé à plusieurs destinataires, il existe une ligne par destinataire. Si le destinataire est un groupe de distribution, un groupe de distribution dynamique ou un groupe de sécurité à messagerie, le groupe sera le premier destinataire, puis chaque membre du groupe se trouve sur une ligne distincte.
 
-- **Objet**: les 256 premiers caractères du champ **Objet :** du message.
+- **Objet**: Champ Objet : les 256 premiers caractères du champ **Objet du** message.
 
 - **État**: ces valeurs sont décrites dans la section [État de](#delivery-status) remise.
 
@@ -185,15 +187,15 @@ Vous pouvez cliquer sur les en-têtes de colonne pour trier les résultats en fo
 
 Vous pouvez cliquer **sur Filtrer les résultats** pour filtrer les résultats d’une ou plusieurs colonnes.
 
-Vous pouvez exporter les résultats après avoir sélectionné une ou  plusieurs lignes en cliquant sur Exporter les résultats, puis en sélectionnant **Exporter** tous les résultats, **Exporter** les résultats chargés ou Exporter **sélectionné.**
+Vous pouvez exporter les résultats après avoir sélectionné une ou  plusieurs lignes en cliquant sur Exporter les résultats, puis en sélectionnant **Exporter** tous les **résultats,** Exporter les résultats chargés ou Exporter **sélectionné.**
 
 #### <a name="find-related-records-for-this-message"></a>Rechercher les enregistrements associés à ce message
 
 Les enregistrements de messages associés sont des enregistrements qui ont partagé le même ID de message. N’oubliez pas qu’un seul message envoyé entre deux personnes peut générer plusieurs enregistrements. Le nombre d’enregistrements augmente lorsque le message est affecté par le développement, le transport, les règles de flux de messagerie (également appelées règles de transport), etc.
 
-Après avoir cocher une ligne, vous pouvez rechercher les enregistrements  associés au message en cliquant sur le bouton Rechercher les informations associées qui s’affiche ou en sélectionnant Plus **d’options** Rechercher les enregistrements associés pour ce ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **message).**
+Une fois que vous avez cocher une ligne, vous pouvez  rechercher les enregistrements associés au message en cliquant sur le bouton Rechercher les associés qui s’affiche, ou en sélectionnant Plus **d’options** Plus Rechercher les enregistrements associés pour ce ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **message**).
 
-Pour plus d’informations sur l’ID de message, voir la section ID de message plus tôt dans cet article.
+Pour plus d’informations sur l’ID de message, consultez la section ID de message plus tôt dans cet article.
 
 #### <a name="message-trace-details"></a>Détails du suivi des messages
 
@@ -219,7 +221,7 @@ Les détails du suivi des messages contiennent les informations supplémentaires
 
   - **Expand**: le message a été envoyé à un groupe de distribution qui a été développé.
 
-  - **Transfert**: les destinataires ont été déplacés vers un message bifurqué en raison de la conversion de contenu, des limites de destinataire de message ou des agents.
+  - **Transfert**: les destinataires ont été déplacés vers un message bifurqué en raison de la conversion de contenu, des limites de destinataires de message ou des agents.
 
   - **Defer**: la remise du message a été reportée et peut faire l’être ultérieurement.
 
@@ -305,7 +307,7 @@ Les rapports étendus disponibles (terminés) sont disponibles dans la section *
 
 - **internal_message_id**: identificateur de message attribué par le serveur Exchange Online qui traite actuellement le message.
 
-- **recipient_address**: adresses de messagerie des destinataires du message. Les adresses de messagerie multiples sont séparées par des points-virgules (;).
+- **recipient_address**: adresses e-mail des destinataires du message. Les adresses de messagerie multiples sont séparées par des points-virgules (;).
 
 - **recipient_count**: nombre total de destinataires dans le message.
 
@@ -313,19 +315,19 @@ Les rapports étendus disponibles (terminés) sont disponibles dans la section *
 
 - **référence**: ce champ contient des informations supplémentaires pour des types d’événements spécifiques. Par exemple :
 
-  - **DSN**: contient le lien de rapport, qui est la valeur message_id de la notification d’état de remise associée (également appelée notification d’état de remise, notification d’non-remise ou notification de non-remise) si une notification d’état de remise **est** générée après cet événement. S’il s’agit d’un message de DSN, ce champ contient la message_id du message d’origine pour qui le DSN **a** été généré.
+  - **DSN**: contient le lien de rapport, qui est la valeur message_id de la notification d’état de remise associée (également appelée notification d’état de remise, notification d’non-remise ou notification de non-remise) si une notification d’état de remise **est** générée à la suite de cet événement. S’il s’agit d’un message de DSN, ce champ contient la message_id du message d’origine pour qui la DSN **a** été générée.
 
   - **EXPAND**: contient la **related_recipient_address** valeur des messages associés.
 
   - **RECEIVE**: peut contenir la **message_id** du message associé si le message a été généré par d’autres processus (par exemple, règles de boîte de réception).
 
-  - **SEND**: contient la **valeur internal_message_id** de tous les messages de DSN.
+  - **SEND**: contient la **valeur internal_message_id** de tous les messages DSN.
 
-  - **TRANSFER**: contient la **internal_message_id** du message qui est en cours de bifurcation (par exemple, par conversion de contenu, limites de destinataire de message ou agents).
+  - **TRANSFER**: contient la **internal_message_id** du message en cours de bifurcation (par exemple, par conversion de contenu, limites de destinataire de message ou agents).
 
   - **MAILBOXRULE**: contient la **internal_message_id** du message entrant qui a entraîné la création du message sortant par la règle de boîte de réception.
 
-    Pour les autres types d’événements, ce champ est généralement vide.
+    Pour d’autres types d’événements, ce champ est généralement vide.
 
 - **return_path**: adresse de messagerie de retour spécifiée par la **commande MAIL FROM** qui a envoyé le message. Bien que ce champ ne soit jamais vide, il peut avoir la valeur d’adresse de l’expéditeur null représentée par `<>` .
 
@@ -397,7 +399,7 @@ Une **custom_data** qui commence par `S:AMA` l’agent de filtrage des programme
 |`File=<filename>`|Nom du fichier qui contenait le programme malveillant.|
 |
 
-Voici un **exemple custom_data** valeur d’un message contenant un programme malveillant :
+Un exemple **custom_data** valeur d’un message contenant un programme malveillant ressemble à ceci :
 
 `S:AMA=SUM|v=1|action=b|error=|atch=1;S:AMA=EV|engine=M|v=1|sig=1.155.974.0|name=DOS/Test_File|file=filename;S:AMA=EV|engine=A|v=1|sig=201707282038|name=Test_File|file=filename`
 
@@ -412,9 +414,9 @@ Une **custom_data** qui commence par l’agent de règles de transport pour les 
 |`ETR|ruleId=<guid>`|ID de la règle qui s'applique.|
 |`St=<datetime>`|Date et heure UTC à laquelle la correspondance de règle s’est produite.|
 |`Action=<ActionDefinition>`|Action appliquée. Pour obtenir la liste des actions disponibles, voir Actions de règle [de flux de messagerie dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
-|`Mode=<Mode>`|Mode de la règle. Les valeurs valides sont les suivantes :<ul><li>**Appliquer**: toutes les actions de la règle seront appliquées.</li><li>**Testez avec les conseils de stratégie**: toutes les actions de conseil de stratégie seront envoyées, mais les autres actions d’application ne seront pas entreprises.</li><li>**Test sans conseils** de stratégie : les actions sont répertoriées dans un fichier journal, mais les expéditeurs ne sont pas avertis d’aucune manière et les actions d’application ne sont pas prises en action.</li></ul>|
+|`Mode=<Mode>`|Mode de la règle. Les valeurs valides sont les suivantes :<ul><li>**Appliquer**: toutes les actions de la règle seront appliquées.</li><li>**Testez à l’aide des conseils** de stratégie : toutes les actions de conseil de stratégie seront envoyées, mais les autres actions d’application ne seront pas entreprises.</li><li>**Test sans conseils** de stratégie : les actions sont répertoriées dans un fichier journal, mais les expéditeurs ne sont avertis d’aucune manière et les actions d’application ne sont pas prises en effet.</li></ul>|
 |
 
-Un exemple **custom_data** valeur d’un message qui correspond aux conditions d’une règle de flux de messagerie ressemble à ceci :
+Un exemple **custom_data** valeur d’un message qui correspond aux conditions d’une règle de flux de messagerie se ressemble à ceci :
 
 `S:TRA=ETR|ruleId=19a25eb2-3e43-4896-ad9e-47b6c359779d|st=7/17/2017 12:31:25 AM|action=ApplyHtmlDisclaimer|sev=1|mode=Enforce`
