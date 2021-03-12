@@ -12,22 +12,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-aed
+- m365solution-ediscovery
 - m365initiative-compliance
+- m365initiative-scenario
 search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment créer et gérer des cas Advanced eDiscovery. La première étape consiste à créer un cas et à commencer à utiliser les fonctionnalités et fonctionnalités Advanced eDiscovery.
-ms.openlocfilehash: c95994b3706880b40ff6306c02a4bdb5dba7748b
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 80cfe31a86060cb3603a101b314273cc67750bd8
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841603"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727541"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Créer et gérer un cas Advanced eDiscovery
 
-Après la configuration d’Advanced eDiscovery et l’attribution d’autorisations aux [responsables eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) de votre organisation qui gèreront les cas, l’étape suivante consiste à créer et gérer un cas.
+Après avoir mis en place Advanced eDiscovery et attribué des autorisations aux [responsables eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) de votre organisation qui gèreront les cas, l’étape suivante consiste à créer et gérer un cas.
 
 Cet article fournit également une vue d’ensemble de l’utilisation des cas pour gérer le flux de travail Advanced eDiscovery pour une enquête juridique.
 
@@ -41,7 +42,7 @@ Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L�
 
 3. Dans la page **Advanced eDiscovery,** cliquez sur l’onglet **Cas,** puis cliquez **sur Créer un cas.**
 
-4. Dans **la** page de découverte électronique du nouveau cas de découverte électronique, nommez le cas (obligatoire), puis tapez un numéro de cas et une description facultatifs. Le nom de cas doit être unique dans votre organisation.
+4. Dans la page de vol du cas **Nouvelle** découverte électronique, nommez le cas (obligatoire), puis tapez un numéro de cas et une description facultatifs. Le nom de cas doit être unique dans votre organisation.
 
 5. Cliquez **sur Enregistrer** pour créer le cas.
 
@@ -51,7 +52,7 @@ Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L�
 
 7. Cliquez sur **Mise à jour**.
 
-8. Dans la page De gestion de ce **cas** volant, sous **Gérer** les membres, cliquez sur **Ajouter** pour ajouter des membres au cas.
+8. Dans la page De gestion de ce  **cas** volant, sous **Gérer** les membres, cliquez sur Ajouter pour ajouter des membres au cas.
 
 9. Dans la liste des personnes, cochez la case en regard des noms des personnes que vous souhaitez ajouter au cas. Comme indiqué précédemment, assurez-vous que les personnes que vous ajoutez au cas se sont vu attribuer les autorisations eDiscovery appropriées.
 
@@ -71,7 +72,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
    Voici quelques choses qui se produisent (ou que vous pouvez faire) lorsque vous ajoutez des dépositaires à un cas :
 
-   - Les données de la boîte aux lettres Exchange, du compte OneDrive et des groupes Microsoft Teams ou Yammer dont le dépositaire est membre peuvent être « marquées » en tant que données de conservation dans le cas.
+   - Les données de la boîte aux lettres Exchange, du compte OneDrive et de tous les groupes Microsoft Teams ou Yammer dont le dépositaire est membre peuvent être « marquées » en tant que données de conservation dans le cas.
   
    - Les données du dépositaire sont réindexées (par un processus appelé *Indexation avancée).* Cela permet d’optimiser sa recherche à l’étape suivante.
   
@@ -91,7 +92,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
 3. **[Ajouter des données à un jeu à réviser.](add-data-to-review-set.md)** Une fois que vous avez configuré et vérifié qu’une recherche renvoie les données souhaitées, l’étape suivante consiste à ajouter les résultats de la recherche à un jeu à réviser. Lorsque vous ajoutez des données à un jeu à réviser, les éléments sont copiés à partir de leur emplacement d’origine vers un emplacement de stockage Azure sécurisé. Les données sont réindexées pour optimiser les recherches approfondies et rapides lors de la révision et de l’analyse des éléments du jeu à réviser. En outre, vous pouvez également [ajouter des données non Office 365 dans un jeu à réviser.](load-non-office-365-data-into-a-review-set.md)
 
-   Il existe également un type spécial d’ensemble de révision à ajouter, appelé jeu de révision *de conversation.* Ces types de jeux de révisions fournissent des fonctionnalités de reconstruction de conversation pour reconstruire, réviser et exporter des conversations threadées telles que celles de Microsoft Teams. Pour plus d’informations, voir [Examiner les conversations dans Advanced eDiscovery](conversation-review-sets.md).
+   Il existe également un type spécial d’ensemble de révision à ajouter, appelé jeu de révision *de conversation.* Ces types de jeux de révisions fournissent des fonctionnalités de reconstruction de conversation pour reconstruire, réviser et exporter des conversations threadées comme celles de Microsoft Teams. Pour plus d’informations, voir [Examiner les conversations dans Advanced eDiscovery](conversation-review-sets.md).
 
 4. **Examiner et analyser les données d’un jeu à réviser.** Maintenant que les données sont dans un jeu à réviser, vous pouvez utiliser un large éventail d’outils et de fonctionnalités pour afficher et analyser les données de cas dans le but de réduire le jeu de données à ce qui est le plus pertinent pour le cas que vous examinez. Voici une liste de certains outils et fonctionnalités que vous pouvez utiliser au cours de ce processus.
 
@@ -101,8 +102,8 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
    - [Créer et utiliser des balises](tagging-documents.md). Vous pouvez appliquer des balises à des documents dans un jeu à réviser pour identifier ceux qui sont réactifs (ou non réactifs au cas), puis utiliser ces balises lors de la création de requêtes de recherche pour inclure ou exclure les documents marqués. Vous pouvez également baliser pour déterminer les documents à exporter.
 
-   - [Annoter et redacter des documents.](view-documents-in-review-set.md#annotate-view) Vous pouvez utiliser l’outil d’annotation dans une révision pour annoter des documents et publier du contenu dans des documents en tant que produit de travail. Nous générons une version PDF d’un document annoté ou rédigé au cours de la révision afin de réduire le risque d’exportation de la version native non expurgée du document.
+   - [Annoter et redacter des documents.](view-documents-in-review-set.md#annotate-view) Vous pouvez utiliser l’outil d’annotation dans une révision pour annoter des documents et redessier du contenu dans des documents en tant que produit de travail. Nous générons une version PDF d’un document annoté ou rédigé au cours de la révision afin de réduire le risque d’exportation de la version native non expurgée du document.
 
-   - [Analyser les données de cas.](analyzing-data-in-review-set.md) La fonctionnalité d’analyse dans Advanced eDiscovery est puissante. Après avoir exécuté des analyses sur les données du jeu à réviser, nous avons effectué des analyses telles que la détection de quasi-doublons, le thread de messagerie électronique et les thèmes qui peuvent aider à réduire le volume de documents à réviser. Nous générons également des rapports d’analyse qui résument le résultat de l’exécution de l’analyse. Comme indiqué précédemment, l’exécution de l’analyse exécute également le modèle de détection des privilèges [client-avocat.](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)
+   - [Analyser les données de cas.](analyzing-data-in-review-set.md) La fonctionnalité d’analyse dans Advanced eDiscovery est puissante. Après avoir exécuté des analyses sur les données du jeu à réviser, nous avons effectué des analyses telles que la détection des quasi-doublons, le thread de messagerie électronique et les thèmes qui peuvent aider à réduire le volume de documents à réviser. Nous générons également des rapports d’analyse qui résument le résultat de l’exécution de l’analyse. Comme indiqué précédemment, l’exécution de l’analyse exécute également le modèle de détection des privilèges [client-avocat.](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)
 
-5. **Exporter et télécharger des données de cas.** Une dernière étape après la collecte, la révision et l’analyse des données de cas consiste à les exporter hors d’Advanced eDiscovery pour révision externe ou pour révision par des personnes extérieures à l’équipe d’examen. L’exportation des données est un processus en deux étapes. La première étape [](export-documents-from-review-set.md) consiste à exporter les données hors de l’ensemble de révision et à les copier vers un autre emplacement de stockage Azure (un emplacement fourni par Microsoft ou géré par votre organisation). Ensuite, vous utilisez l’Explorateur de stockage Azure [pour télécharger](download-export-jobs.md) les données sur un ordinateur local. Outre les fichiers de données exportés, le contenu du package d’exportation contient également un rapport d’exportation, un rapport de synthèse et un rapport d’erreurs.
+5. **Exporter et télécharger des données de cas.** Une dernière étape après la collecte, la révision et l’analyse des données de cas consiste à l’exporter hors d’Advanced eDiscovery pour révision externe ou pour révision par des personnes extérieures à l’équipe d’examen. L’exportation des données est un processus en deux étapes. La première étape [](export-documents-from-review-set.md) consiste à exporter les données hors de l’ensemble de révision et à les copier vers un autre emplacement de stockage Azure (un emplacement fourni par Microsoft ou un emplacement géré par votre organisation). Ensuite, vous utilisez l’Explorateur de stockage Azure [pour télécharger](download-export-jobs.md) les données sur un ordinateur local. Outre les fichiers de données exportés, le contenu du package d’exportation contient également un rapport d’exportation, un rapport de synthèse et un rapport d’erreurs.

@@ -11,26 +11,27 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
-- M365-security-compliance
-- m365solution-aed
+- m365-security-compliance
+- m365solution-ediscovery
 - m365initiative-compliance
+- m365solution-overview
 search.appverid:
 - MOE150
 - MET150
 description: Découvrez la solution Advanced eDiscovery dans Microsoft 365. Cet article fournit une vue d’ensemble d’Advanced eDiscovery dans Microsoft 365, un outil qui vous aide à gérer les enquêtes internes et externes. Il encadre également les raisons professionnelles de l’utilisation d’Advanced eDiscovery pour gérer vos enquêtes juridiques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1b2fa0b42a7f439aa65ae53e76e377ded92f97b7
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 6623682dedd0342f1e88478127d23bbbd4ab9dbb
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840877"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727585"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Vue d’ensemble de Microsoft 365 Advanced eDiscovery
 
 La solution Advanced eDiscovery dans Microsoft 365 s’appuie sur les fonctionnalités eDiscovery et d’analyse de Microsoft existantes. Advanced eDiscovery fournit un flux de travail de bout en bout pour conserver, collecter, analyser, examiner, analyser et exporter du contenu qui répond aux enquêtes internes et externes de votre organisation. Il permet également aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale pour communiquer avec les dépositaires impliqués dans un cas.
 
-Advanced eDiscovery peut aider votre organisation à répondre à des questions juridiques ou à des enquêtes internes en découvrant les données où elle se trouve. Vous pouvez gérer en toute transparence les flux de travail eDiscovery en identifiant les personnes concernées et leurs sources de données, en appliquant en toute transparence des conservations pour conserver les données, puis en gérant le processus de communication de conservation légale. En collectant des données à partir de la source, vous pouvez effectuer des recherches sur la plateforme Microsoft 365 en direct pour trouver rapidement ce dont vous avez besoin. Les fonctionnalités intelligentes et d’apprentissage automatique telles que l’indexation approfondie, le thread de messagerie électronique et la détection de quasi-doublons vous aident également à réduire les volumes de données importants dans un jeu de données pertinent.
+Advanced eDiscovery peut aider votre organisation à répondre à des questions juridiques ou à des enquêtes internes en découvrant les données où elle se trouve. Vous pouvez gérer en toute transparence les flux de travail eDiscovery en identifiant les personnes d’intérêt et leurs sources de données, en appliquant en toute transparence des conservations pour conserver les données, puis en gérant le processus de communication de conservation légale. En collectant des données à partir de la source, vous pouvez effectuer des recherches sur la plateforme Microsoft 365 en direct pour trouver rapidement ce dont vous avez besoin. Les fonctionnalités intelligentes et d’apprentissage automatique telles que l’indexation approfondie, le thread de courrier électronique et la détection de quasi-doublons vous aident également à réduire les volumes de données importants dans un jeu de données pertinent.
 
 Les sections suivantes décrivent comment ces fonctionnalités Advanced eDiscovery peuvent aider votre organisation.
 
@@ -60,7 +61,7 @@ En outre, les API Microsoft Graph peuvent vous aider à automatiser le flux de t
 
 Les fonctionnalités intelligentes d’apprentissage automatique dans Advanced eDiscovery vous aident à réduire la quantité de données à réviser. Ces fonctionnalités intelligentes vous aident à réduire et à réduire les volumes de données importants dans un ensemble pertinent. Par exemple, une requête d’ensemble de révision intégrée permet de filtrer uniquement le contenu unique en identifiant les quasi-doublons. Cette fonctionnalité peut considérablement réduire la quantité de données à réviser.
 
-D’autres fonctionnalités d’apprentissage automatique peuvent affiner et identifier les données pertinentes à l’aide de balises intelligentes et d’outils d’examen assisté par la technologie tels que les modules de pertinence.
+D’autres fonctionnalités d’apprentissage automatique peuvent affiner et identifier les données pertinentes à l’aide de balises intelligentes et d’outils d’examen avec assistance technologique tels que les modules de pertinence.
 
 ## <a name="advanced-ediscovery-architecture"></a>Architecture eDiscovery avancée
 
@@ -98,7 +99,7 @@ Lorsque vous ajoutez un dépositaire à un cas, vous pouvez placer des données 
 
 ### <a name="indexing-custodian-data"></a>Indexation des données des dépositaires
 
-Lorsque vous ajoutez un dépositaire et les sources de données correspondantes à un cas, tout élément partiellement indexé à partir d’une source de données de dépositaire est réindexé par un processus appelé *Indexation avancée*. Cela permet d’effectuer des recherches complètes de contenu tel que des images, des types de fichiers non pris en compte et d’autres contenus potentiellement nonndex lorsque vous exécutez des recherches pour collecter des données pour le cas. Utilisez **l’onglet Traitement** pour surveiller l’état de l’indexation avancée et corriger les erreurs de traitement à l’aide d’un processus appelé *correction des erreurs.* Pour plus d’informations, voir [Corriger les erreurs de traitement.](processing-data-for-case.md)
+Lorsque vous ajoutez un dépositaire et les sources de données correspondantes à un cas, tout élément partiellement indexé à partir d’une source de données de dépositaire est réindexé par un processus appelé *Indexation avancée*. Cela permet d’effectuer une recherche complète de contenu tel que des images, des types de fichiers non pris en compte et d’autres contenus potentiellement nonndex lorsque vous exécutez des recherches pour collecter des données pour le cas. Utilisez **l’onglet Traitement** pour surveiller l’état de l’indexation avancée et corriger les erreurs de traitement à l’aide d’un processus appelé *correction des erreurs.* Pour plus d’informations, voir [Corriger les erreurs de traitement.](processing-data-for-case.md)
 
 ### <a name="collecting-case-data"></a>Collecte des données d’un cas
 
@@ -106,7 +107,7 @@ Utilisez **l’onglet Recherches** pour créer des recherches afin d’effectuer
 
 ### <a name="reviewing-and-analyzing-case-data"></a>Examen et analyse des données de cas
 
-Utilisez **l’onglet Ensembles** de révision pour examiner et analyser le contenu que vous avez collecté à partir du système en direct et ajouté à un jeu à réviser. Un  ensemble de révision est une collection statique de ces données (en d’autres termes, une copie hors connexion des données) des données privées (et, le cas échéant, les données non privées) que vous avez collectées lors de la phase précédente du flux de travail eDiscovery. Lorsque vous ajoutez des résultats de recherche à un jeu à réviser, un processus est déclenché pour extraire des fichiers à partir de conteneurs, extraire des métadonnées et extraire du texte. Une fois ce processus terminé, le système crée un nouvel index de toutes les données collectées auprès des dépositaires et l’ajoute au jeu à réviser. Une fois que les données sont ajoutées au jeu à réviser, vous pouvez exécuter d’autres requêtes pour affiner les données de cas, afficher les données sous forme de texte ou dans le format de fichier natif, et annoter, redacter et baliser des documents dans le jeu à réviser. Vous pouvez également effectuer des analyses avancées, telles que l’identification de la duplication des documents, du thread de messagerie électronique et des thèmes. Une fois que vous avez n’avez fait que ce qui est pertinent pour le cas, vous pouvez télécharger des documents directement ou les exporter avec les métadonnées de fichier, les annotations et toutes les balises. Pour plus d’informations, voir :
+Utilisez **l’onglet Ensembles** de révision pour examiner et analyser le contenu que vous avez collecté à partir du système en direct et ajouté à un jeu à réviser. Un  ensemble de révision est une collection statique de ces données (en d’autres termes, une copie hors connexion des données) des données privées (et, le cas échéant, les données non privées) que vous avez collectées lors de la phase précédente du flux de travail eDiscovery. Lorsque vous ajoutez des résultats de recherche à un jeu à réviser, un processus est déclenché pour extraire des fichiers à partir de conteneurs, extraire des métadonnées et extraire du texte. Une fois ce processus terminé, le système crée un nouvel index de toutes les données collectées auprès des dépositaires et les ajoute au jeu à réviser. Une fois que les données sont ajoutées au jeu à réviser, vous pouvez exécuter d’autres requêtes pour affiner les données de cas, afficher les données sous forme de texte ou dans le format de fichier natif, et annoter, créer des articles et baliser des documents dans le jeu à réviser. Vous pouvez également effectuer des analyses avancées, telles que l’identification de la duplication des documents, du thread de messagerie électronique et des thèmes. Une fois que vous avez n’avez fait que ce qui est pertinent pour le cas, vous pouvez télécharger des documents directement ou les exporter avec les métadonnées de fichier, les annotations et toutes les balises. Pour plus d’informations, consultez :
 
 - [Afficher les documents d’un jeu à réviser](view-documents-in-review-set.md)
 
@@ -126,7 +127,7 @@ Utilisez **l’onglet Travaux** pour surveiller les processus de longue durée p
 
 ### <a name="configuring-case-settings"></a>Configuration des paramètres de cas
 
-Utilisez **l’onglet Paramètres** pour configurer les paramètres à l’échelle de la cas. Cela inclut l’ajout de membres à un cas, la fermeture ou la suppression d’un cas, ainsi que la configuration des paramètres de recherche et d’analyse. Pour plus d’informations, voir :
+Utilisez **l’onglet Paramètres** pour configurer les paramètres à l’échelle de la cas. Cela inclut l’ajout de membres à un cas, la fermeture ou la suppression d’un cas, ainsi que la configuration des paramètres de recherche et d’analyse. Pour plus d’informations, consultez :
 
 - [Ajouter des membres à un cas](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 

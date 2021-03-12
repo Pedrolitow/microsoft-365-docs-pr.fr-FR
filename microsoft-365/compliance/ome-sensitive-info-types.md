@@ -18,18 +18,18 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Découvrez comment créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement de messages Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bfc77fa88ff798f98d260682dfbdbdd57b17af69
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 22aec87b149c58b2537f6921fb7c37552ef72f98
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545984"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741377"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement de messages
 
 Vous pouvez utiliser des règles de flux de messagerie Exchange ou la protection contre la perte de données (DLP) pour créer une stratégie de type d’informations sensibles avec le chiffrement de messages Office 365. Pour créer une règle de flux de messagerie Exchange, vous pouvez utiliser le Centre d’administration Exchange (EAC) ou PowerShell.
 
-## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Pour créer la stratégie à l’aide de règles de flux de messagerie dans le EAC
+## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Pour créer la stratégie à l’aide de règles de flux de messagerie dans leAC
 
 Connectez-vous au Centre d’administration Exchange (EAC) et allez aux **règles de flux de**  >  **messagerie.** Dans la page Règles, créez une règle qui applique le chiffrement de messages Office 365. Vous pouvez créer une règle basée sur des conditions telles que la présence de certains mots clés ou types d’informations sensibles dans le message ou la pièce jointe.
 
@@ -39,7 +39,7 @@ Utilisez un compte scolaire ou scolaire qui dispose d’autorisations d’admini
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>Exemple de règle de flux de messagerie créée avec PowerShell
 
-Exécutez les commandes suivantes dans PowerShell pour créer une règle de flux de  messagerie Exchange qui chiffre automatiquement les messages électroniques envoyés à l’extérieur de votre organisation avec la stratégie Chiffrer uniquement si les messages électroniques ou leurs pièces jointes contiennent les types d’informations sensibles suivants :
+Exécutez les commandes suivantes dans PowerShell pour créer une règle de flux de messagerie Exchange qui chiffre automatiquement les messages électroniques envoyés à l’extérieur de votre organisation avec l’option chiffrer uniquement si les messages électroniques ou leurs pièces jointes contiennent les types d’informations sensibles suivants :
 
 - Numéro de routage ABA
 - Numéro de carte de crédit
@@ -58,7 +58,7 @@ Pour plus d’informations, [voir Set-IRMConfiguration](https://docs.microsoft.c
 
 ## <a name="how-recipients-access-attachments"></a>Accès des destinataires aux pièces jointes
 
-Une fois que Microsoft a chiffré un message, les destinataires ont un accès illimité aux pièces jointes lorsqu’ils accèdent à leurs messages électroniques chiffrés et les ouvrent.
+Une fois que Microsoft a chiffré un message, les destinataires ont un accès illimité aux pièces jointes lorsqu’ils accèdent à leurs messages chiffrés et les ouvrent.
 
 ## <a name="to-prepare-for-this-change"></a>Pour préparer cette modification
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Découvrez comment Exchange Online et Microsoft 365 utilisent TLS (Transport Layer Security) et FS (Forward Secrecy) pour sécuriser les communications électroniques. Obtenez également des informations sur le certificat émis par Microsoft pour Exchange Online.
-ms.openlocfilehash: 67be87bc07399af9469728383af1caf604bf1372
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 6e23ebc6451b9d139f1b18838007411028a059f3
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066827"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727455"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie
 
@@ -37,7 +37,7 @@ Si vous souhaitez chiffrer le message, vous devez utiliser une technologie de ch
   
 Nous vous recommandons d’utiliser TLS dans les situations où vous souhaitez configurer un canal sécurisé de correspondance entre Microsoft et votre organisation locale ou une autre organisation, telle qu’un partenaire. Exchange Online tente toujours d’utiliser TLS en premier pour sécuriser votre messagerie, mais cette initiative peut s’avérer impossible si l’autre partie n’offre pas de sécurité TLS. Continuez à lire pour savoir comment sécuriser tous les messages vers vos serveurs locaux ou vos partenaires importants à l’aide *de connecteurs.* 
 
-Pour fournir le meilleur chiffrement de classe à nos clients, Microsoft a supprimé les versions TLS 1.0 et 1.1 dans [Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) et [Office 365 GCC](tls-1-2-in-office-365-gcc.md). Toutefois, vous pouvez continuer à utiliser une connexion SMPT non chiffrée sans TLS. Nous vous déconseillons de transmettre le courrier électronique sans chiffrement.  
+Pour fournir le meilleur chiffrement de classe à nos clients, Microsoft a supprimé les versions TLS 1.0 et 1.1 dans [Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) et [Office 365 GCC](tls-1-2-in-office-365-gcc.md). Toutefois, vous pouvez continuer à utiliser une connexion SMTP non chiffrée sans TLS. Nous vous déconseillons de transmettre le courrier électronique sans chiffrement.  
   
 ## <a name="how-exchange-online-uses-tls-between-exchange-online-customers"></a>Comment Exchange Online utilise TLS entre des clients Exchange Online
 
