@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/15/2020
+ms.date: ''
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment définir et gérer des alertes pour les stratégies DLP.
-ms.openlocfilehash: addf46b27575f1a1cc062949aedb7ecdecaf7286
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: 7bc9d9b59c0424792f995be42591548b758c99ec
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651459"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766419"
 ---
 # <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>Configurer et afficher les alertes pour les polices DLP (aperçu)
 
@@ -115,21 +115,21 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
     |*Détails de l'événement*||
     |      | ID                            | ID unique associé à l’événement                                        | Tous les événements                               |
-    |                   | Lieu                      | Charge de travail où l’événement a été détecté                                      | Tous les événements                               |
+    |                   | Emplacement                      | Charge de travail où l’événement a été détecté                                      | Tous les événements                               |
     |                   | Heure de l’activité              | Heure de l’activité de l’utilisateur à l’origine de la violation DLP                    | Tous les événements                               |
     |*Entités impactées*||
     |  | Utilisateur                          | Utilisateur à l’origine de la violation DLP                                          | Tous les événements                               |
     |                   | Nom d'hôte                      | Nom d’hôte de l’ordinateur sur lequel la violation DLP a été détectée              | Événements d’appareils                           |
-    |                   | Adresse IP                    | Adresse IP de l’ordinateur                                                  | Événements d’appareils                           |
+    |                   | Adresse IP                    | Adresse IP de l’ordinateur                                                  | Événements d’appareils                           |
     |                   | File path                     | Chemin d’accès absolu du fichier impliqué dans la violation                        | Événements SharePoint, OneDrive et Appareils |
     |                   | Destinataires d’un e-mail              | Destinataires de l’e-mail qui a enfreint la stratégie DLP                       | Événements Exchange                          |
-    |                   | Objet de l’e-mail                 | Objet de l’e-mail qui a enfreint la stratégie DLP                          | Événements Exchange                          |
+    |                   | Sujet de l’e-mail                 | Objet de l’e-mail qui a enfreint la stratégie DLP                          | Événements Exchange                          |
     |                   | Pièces jointes             | Noms des pièces jointes dans l’e-mail qui ont enfreint la stratégie DLP         | Événements Exchange                          |
     |                   | Propriétaire du site                    | Nom du propriétaire du site                                                     | Événements SharePoint et OneDrive           |
     |                   | URL du site                      | URL complète du site SharePoint ou OneDrive                                | Événements SharePoint et OneDrive           |
     |                   | Fichier créé                  | Heure de création du fichier                                                      | Événements SharePoint et OneDrive           |
-    |                   | Dernier fichier modifié            | Heure de la dernière modification du fichier                                  | Événements SharePoint et OneDrive           |
-    |                   | Taille des fichiers                     | Taille du fichier                                                           | Événements SharePoint et OneDrive           |
+    |                   | Fichier de la dernière modification            | Heure de la dernière modification du fichier                                  | Événements SharePoint et OneDrive           |
+    |                   | La taille des fichiers                     | Taille du fichier                                                           | Événements SharePoint et OneDrive           |
     |                   | Propriétaire du fichier                    | Propriétaire du fichier                                                          | Événements SharePoint et OneDrive           |
     |*Détails de la stratégie*||
     |     | Stratégie DLP en correspondance            | Nom de la stratégie DLP qui a été correspondance                                    | Tous les événements                               |
