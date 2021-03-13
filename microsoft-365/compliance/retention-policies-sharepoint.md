@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: ff4b4f517daccbce908411f3b5a62c0a1f11ba57
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: dd1260df23579ad2e6605805bafe9e36d2274a8e
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597174"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727399"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -67,8 +67,10 @@ Les articles dans SharePoint qui ont une étiquette de conservation standard (qu
 Pour conserver ce contenu lorsqu'un utilisateur tente de le modifier ou de le supprimer, on vérifie si le contenu a été modifié depuis que les paramètres de conservation ont été appliqués. S’il s’agit du premier changement depuis l’application des paramètres de rétention, le contenu est copié dans la bibliothèque de conservation et de préservation des documents, ce qui permet ensuite à la personne de modifier ou de supprimer le contenu d’origine. Tout le contenu d’une collection de sites peut être copié dans la bibliothèque de conservation et de préservation des documents, indépendamment des paramètres de rétention.
   
 Un travail du minuteur nettoie périodiquement la bibliothèque de conservation et de préservation des documents. Pour le contenu ayant passé plus de 30 jours dans la bibliothèque de conservation et de préservation des documents, ce travail compare le contenu à toutes les requêtes utilisées par les paramètres de rétention de ce contenu. Un contenu antérieur à la période de rétention configurée est alors supprimé de la bibliothèque de conservation et de préservation des documents, et de l’emplacement d’origine si celui-ci existe encore. Ce travail de timer s’exécute tous les sept jours, ce qui signifie qu’avec un minimum de 30 jours, la suppression du contenu de la bibliothèque de conservation et de préservation des documents peut prendre jusqu’à 37 jours.
-  
-Ce comportement s’applique au contenu qui existe lorsque les stratégies de rétention sont appliquées. En outre, pour les stratégies de rétention, tout contenu qui est créé ou ajouté au site après avoir été inclus dans la stratégie sera conservé après la suppression. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver toutes les versions d’un fichier, vous devez activer le [contrôle de version](#how-retention-works-with-document-versions).
+
+Lorsque les fichiers sont conservés dans la bibliothèque de conservation et de préservation des documents, les administrateurs ne peuvent pas supprimer le site SharePoint ou le compte OneDrive du contenu.
+
+Ce comportement pour la copie de fichiers dans la bibliothèque de conservation et de préservation des documents s’applique au contenu qui existe lorsque les paramètres de rétention ont été appliqués. En outre, pour les stratégies de rétention, tout nouveau contenu créé ou ajouté au site après son ajout à la stratégie est conservé dans la bibliothèque de conservation et de préservation des documents. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver toutes les versions d’un fichier, vous devez activer le [contrôle de version](#how-retention-works-with-document-versions).
   
 Les utilisateurs voient un message d'erreur s'ils essaient de supprimer une bibliothèque, une liste, un dossier ou un site qui est soumis à la conservation. Ils peuvent supprimer un dossier s'ils déplacent ou suppriment d'abord tous les fichiers du dossier qui sont soumis à la conservation.
 

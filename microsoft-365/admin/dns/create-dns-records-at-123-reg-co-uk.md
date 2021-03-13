@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur 123-reg.co.uk pour Microsoft.
-ms.openlocfilehash: bde8003ad343680e8f499dd8ec1fb638f15080b1
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 3c9af6909f37082a63170adac94ac3d92b717ad1
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658314"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758903"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>Créer des enregistrements DNS sur 123-reg.co.uk microsoft
 
@@ -102,19 +102,19 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Hostname (Nom d'hôte)**|**Type (Type)**|**Priority (Priorité)**|**Destination MX (Enregistrement MX de la destination)**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre \<domain-key\> depuis votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre \<domain-key\> depuis votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copier et coller des valeurs à partir du tableau](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
 6. Sélectionnez **Ajouter**.
     
-    ![Sélectionnez Ajouter.](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
+    ![Capture d’écran de la boîte de dialogue avec le bouton Ajouter sélectionné](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
 7. Si d'autres enregistrements MX sont répertoriés, supprimez-les individuellement en sélectionnant l'icône **Delete (Supprimer)** représentant une corbeille des enregistrements. 
     
     ![Sélectionner Supprimer (icône de la corbeille)](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Ajouter les six enregistrements CNAME requis pour Microsoft
+## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Ajouter les cinq enregistrements CNAME requis pour Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. Pour commencer, accédez à la page de vos domaines sur le site 123-reg.co.uk en utilisant [ce lien](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Avant toute chose, vous serez invité à vous connecter.
@@ -125,7 +125,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
 4. Dans la page **Gérer votre DNS,** sélectionnez l’onglet **DNS** avancé. 
     
-5. Ajoutez le premier des six enregistrements CNAME.
+5. Ajoutez le premier des cinq enregistrements CNAME.
     
     In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -139,23 +139,23 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
    
-    ![Copier et coller les valeurs du tableau](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
+    ![Capture d’écran avec CNAME de destination à copier et coller](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
 6. Sélectionnez **Ajouter**.
     
-    ![Sélectionnez Ajouter.](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
+    ![Capture d’écran pour ajouter la destination CNAME](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
-7. Ajoutez les cinq autres enregistrements CNAME.
+7. Ajoutez les quatre autres enregistrements CNAME.
     
     Dans la section **DNS** avancée, créez un enregistrement à l’aide  des valeurs de la ligne suivante du tableau, puis sélectionnez de nouveau Ajouter pour compléter cet enregistrement. 
     
-    Répétez cette procédure jusqu'à avoir créé les 6 enregistrements CNAME.
+    Répétez ce processus jusqu’à ce que vous avez créé les cinq enregistrements CNAME.
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, n’en créez pas de nouveau pour Microsfot. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un seul  *enregistrement*  SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, n’en créez pas de nouveau pour Microsfot. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir *qu’un seul* enregistrement SPF incluant les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
   
 1. Pour commencer, accédez à la page de vos domaines sur le site 123-reg.co.uk en utilisant [ce lien](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Avant toute chose, vous serez invité à vous connecter.
     
@@ -177,7 +177,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 6. Sélectionnez **Ajouter**.
     
-    ![Sélectionnez Ajouter.](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
+    ![Capture d’écran avec destination TXT/SPF](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajoutez les deux enregistrements SRV requis pour Microsoft
 <a name="BKMK_add_SRV"> </a>
@@ -202,11 +202,11 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **Cette valeur DOIT se terminer par un point (.)**<br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
     |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **Cette valeur DOIT se terminer par un point (.)** <br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    
-    ![Copier et coller les valeurs du tableau](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
+    ![Capture d’écran avec les valeurs DNS du tableau](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
 6. Sélectionnez **Ajouter**.
     
-    ![Sélectionnez Ajouter.](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
+    ![Capture d’écran pour ajouter destination SRV](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
   
 7. Pour ajouter l'autre enregistrement SRV :
     

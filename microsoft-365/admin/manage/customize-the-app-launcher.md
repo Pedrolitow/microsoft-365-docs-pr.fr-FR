@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Créez des liens rapides vers vos e-mails, documents, applications, sites SharePoint, sites externes et autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications. '
-ms.openlocfilehash: 96d059b252b63e48e20edb29861cf8233e220e34
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 809788033d0e8ef414511af5ab89857974d8b175
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114188"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766442"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Ajouter des vignettes personnalisées au lanceur d'applications
 
@@ -65,21 +65,9 @@ Vous pouvez ajouter vos propres vignettes au lanceur d'applications pointant ver
     
 Celle-ci apparaît désormais dans l'onglet **Toutes** du lanceur d'applications pour vous et vos utilisateurs. 
   
-## <a name="promote-the-tile-to-app-launcher"></a>Promouvoir la vignette au Lanceur
-
-1. Sélectionnez l’icône du lanceur d’applications et sélectionnez **Toutes les applications.** 
-    
-2. Recherchez la nouvelle vignette de votre application, sélectionnez les ellipses, puis **choisissez Épingler au lanceur.**
-  
-    > [!NOTE]
-    > Si la vignette personnalisée créée aux étapes précédente n'apparaît pas, vérifiez qu'une boîte aux lettres Exchange Online vous est affectée et que vous vous y êtes connecté au moins une fois. Ces étapes sont requises pour les vignettes personnalisées dans Microsoft 365. 
-  
-> [!IMPORTANT]
-> Vous et vos utilisateurs devez suivre les étapes ci-dessous pour promouvoir les vignettes personnalisées de la page Mes applications dans le lanceur d'applications. 
-  
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Dans le Centre d’administration, allez dans **l’onglet** De profil d’organisation  >  paramètres de l’organisation **paramètres.**  >   </a>
+1. Dans le centre d’administration, allez dans **l’onglet** Profil d’organisation  >  **Paramètres de** l’organisation paramètres de  >  **l’organisation.** </a>
     
 2. Dans la page **Profil de l’organisation,** en plus d’ajouter des   **vignettes personnalisées pour votre organisation,** sélectionnez **Modifier**.
 

@@ -1,7 +1,7 @@
 ---
 title: Réactiver votre abonnement
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Découvrez comment réactiver votre abonnement lorsqu’il expire, est désactivé ou annulé.
-ms.openlocfilehash: 01dee5e8a4c5a9ef7d30c21f66186086900b6cc1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3e360e37a108c290e13ca3c1a147f8eb099648e6
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114620"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766388"
 ---
 # <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
 
@@ -66,7 +66,7 @@ Vous devez être un administrateur global ou un administrateur de facturation po
 
     ![Close-up of a Subscription card that says Disabled and Reduced functionality with a Reactivate button.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
-    Si vous ne voyez pas **Réactiver comme** action [disponible,](../../admin/contact-support-for-business-products.md) appelez le support technique pour réactiver votre abonnement.
+    Si Vous ne voyez pas **Réactiver comme** action [disponible,](../../admin/contact-support-for-business-products.md) appelez le support technique pour réactiver votre abonnement.
 
 3. Entrez vos informations de paiement. Vous pouvez mettre à jour vos informations de paiement existantes ici.
 

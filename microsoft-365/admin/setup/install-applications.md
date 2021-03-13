@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: landing-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Maintenant que vous avez installé Microsoft 365, découvrez comment installer des applications Office individuelles sur votre Mac, PC ou appareils mobiles et configurer la messagerie électronique dans Outlook.
-ms.openlocfilehash: dc8a4c3670dacf4b3cc85637c3e18c51a8c8e350
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: c1d88aa1e754424e7a4ef3e486efc8a9618d3e9b
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988031"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766354"
 ---
 # <a name="install-office-applications"></a>Installer les applications Office
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c4f0d10808d564fc0ee19510c25d33caba0471ff
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279308"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741585"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -43,6 +43,8 @@ Les points de terminaison Microsoft DLP vous permet d’auditer et de gérer les
 |copie sur support USB amovible |Détecte lorsqu'un utilisateur tente de copier un élément ou une information sur un support amovible ou un périphérique USB.         | auditable et restreint|
 |copier vers un partage réseau    |Détecte lorsqu'un utilisateur tente de copier un élément vers un partage réseau ou un disque réseau mappé         |auditable et restreint|
 |imprimer un document    |Détecte lorsqu'un utilisateur tente d'imprimer un élément protégé sur une imprimante locale ou réseau.| auditable et restreint         |
+|copier vers une session à distance|Détecte lorsqu'un utilisateur tente de copier un élément vers une session de bureau à distance |  auditable et restreint|
+|copier vers appareil Bluetooth|Détecte lorsqu'un utilisateur tente de copier un élément vers une application Bluetooth non autorisée (telle que définie dans la liste des applications Bluetooth non autorisées dans les paramètres DLP de point de terminaison).| auditable et restreint|
 |créer un élément|Détecte lorsqu'un utilisateur crée un article| vérifiable|
 |renommer un article|Détecte lorsqu'un utilisateur renomme un article| vérifiable|
 

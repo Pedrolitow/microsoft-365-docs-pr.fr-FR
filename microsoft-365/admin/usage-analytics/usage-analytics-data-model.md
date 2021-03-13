@@ -21,21 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Découvrez comment l’analyse de l’utilisation se connecte à une API et fournit une tendance mensuelle de l’utilisation de différents services Microsoft 365.  '
-ms.openlocfilehash: d7b3e7e9467a57f913f069c48249e82b5958aabb
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 7d1e797fc388934f66ddc45d2e7f51566e89ad23
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611447"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758939"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modèle de données d'analyse de l'utilisation de Microsoft 365
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Données des tableaux d’analyse de l’utilisation de Microsoft 365
 
-L’analyse de l’utilisation de Microsoft 365 se connecte à une API qui expose un modèle de données multidimensionnel. Les API sont en prévisualisation et sont accessibles à `https://reports.office.com/pbi/v1.0/\<tenantid\>` l’écran (remplacez le \<tenant id\> GUID de votre client). 
+L’analyse de l’utilisation de Microsoft 365 se connecte à une API qui expose un modèle de données multidimensionnel. Les API que l’analyse de l’utilisation de Microsoft 365 utilise pour générer ses données sont à partir des différentes API Graph généralement disponibles. La fonction de l’API d’analyse de l’utilisation de Microsoft 365 n’est généralement pas disponible.
   
 > [!NOTE]
-> Pour plus d’informations, voir [Rapports d’utilisation de Microsoft 365 dans Microsoft Graph.](https://go.microsoft.com/fwlink/p/?linkid=864336) 
+> Pour plus d’informations, voir [Utilisation des rapports d’utilisation de Microsoft 365 dans Microsoft Graph.](https://go.microsoft.com/fwlink/p/?linkid=864336) 
   
 Cette API fournit des informations sur la tendance mensuelle d’utilisation des différents services Microsoft 365. Pour connaître les données exactes renvoyées par l'API, reportez-vous à la table de la section suivante.
   
@@ -125,7 +125,7 @@ Cette table contient des données sur l'activité effectuée par chaque utilisat
 |SPO_OtherAccessedByOthers  <br/> |Nombre de sites avec qui l’utilisateur a interagi et qui résident sur un autre site qu’un autre utilisateur possède.  <br/> |
 |SPO_TeamFileViewedModified  <br/> |Nombre de fichiers avec lesquels l'utilisateur a interagi, tous sites d'équipe confondus.  <br/> |
 |SPO_TeamFileSynched  <br/> |Nombre de fichiers synchronisés par l'utilisateur, tous sites d'équipe confondus.  <br/> |
-|SPO_TeamFileSharedInternally  <br/> |Nombre de fichiers partagés par cet utilisateur en interne à partir d’un site d’équipe ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
+|SPO_TeamFileSharedInternally  <br/> |Nombre de fichiers partagés en interne par cet utilisateur à partir d’un site d’équipe ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
 |SPO_TeamFileSharedExternally  <br/> |Nombre de fichiers partagés en externe par l'utilisateur, tous sites d'équipe confondus.  <br/> |
 |SPO_TeamAccessByOwner  <br/> |Nombre de fichiers résidant sur un site d'équipe appartenant à l'utilisateur et avec lesquels il a interagi.  <br/> |
 |SPO_TeamAccessByOthers  <br/> |Nombre de fichiers résidant sur un site d'équipe appartenant à un tiers et avec lesquels l'utilisateur a interagi.  <br/> |
@@ -136,7 +136,7 @@ Cette table contient des données sur l'activité effectuée par chaque utilisat
 |Teams_HasOtherAction  <br/> |Valeur boolé nationale si l’utilisateur a effectué d’autres actions dans Microsoft Teams.  <br/> |
 |YAM_MessagePost  <br/> |Nombre de Yammer messages publiés par cet utilisateur.  <br/> |
 |YAM_MessageLiked  <br/> |Nombre de messages Yammer que cet utilisateur a aimés.  <br/> |
-|YAM_MessageRead  <br/> |Nombre de Yammer messages lus par cet utilisateur.  <br/> |
+|YAM_MessageRead  <br/> |Nombre de messages Yammer que cet utilisateur a lus.  <br/> |
 |SFB_P2PSummary  <br/> |Nombre de sessions P2P auxquelles l'utilisateur a participé.  <br/> |
 |SFB_ConfOrgSummary  <br/> |Nombre de sessions de conférence organisées par l'utilisateur.  <br/> |
 |SFB_ConfPartSummary  <br/> |Nombre de sessions de conférence auxquelles l'utilisateur a participé.  <br/> |

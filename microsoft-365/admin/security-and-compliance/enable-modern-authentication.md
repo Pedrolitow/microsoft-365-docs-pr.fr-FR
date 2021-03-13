@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Découvrez comment définir des clés de Registre pour activer l’authentification moderne pour les appareils sur Microsoft Office 2013.
-ms.openlocfilehash: 34078291fa237b63c391a7e90ba06ea0085c37cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 2a4be82328d391db7808cb9197ce259275b567c6
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926557"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758927"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Activer l'authentification moderne pour Office 2013 sur les appareils Windows
 
@@ -42,8 +42,8 @@ Pour activer l'authentification moderne pour les appareils exécutant Windows (p
   
 |**Clé de Registre**|**Type**|**Valeur** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
 Une fois les clés de Registre définies, vous pouvez configurer les applications d’appareils Office 2013 pour utiliser l’authentification [multifacteur (MFA)](set-up-multi-factor-authentication.md) avec Microsoft 365. 
   
@@ -60,5 +60,6 @@ Pour désactiver l'authentification moderne sur un appareil, définissez les cl�
 ## <a name="related-articles"></a>Articles connexes
 [Se connecter à Office 2013 avec une deuxième méthode de vérification](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
-  
+[Outlook demande un mot de passe et n’utilise pas l’authentification moderne pour se connecter à Office 365](https://docs.microsoft.com/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
 
+  

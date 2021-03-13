@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Décrit la principale différence entre la compréhension de document et les modèles de traitement de formulaire
-ms.openlocfilehash: 555dfa7d76335a3b943e860e5f41ed64c9d3e874
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: a50941ec117480be586ba828e7b49c4a88a310ab
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596979"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712293"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Différence entre la compréhension de document et les modèles de traitement de formulaire 
 
@@ -72,17 +72,17 @@ Utilisez le tableau suivant pour comprendre quand utiliser le traitement des for
 
 | Fonctionnalité | Traitement des formulaires | Compréhension de document |
 | ------- | ------- | ------- |
-| Type de modèle : quand utiliser chaque | Utilisé pour les formats de fichiers semi-structurés (par exemple, les documents Office où il y a des différences dans la disposition, mais toujours des informations similaires à extraire). | Utilisé pour les formats de fichier non structurées, par exemple, pour les FICHIERS PDF pour le contenu de formulaires tels que les factures ou les commandes où la disposition et la mise en forme sont similaires. |
-| Création de modèles | Modèle créé dans le Générateur d’intelligence artificielle avec un accès transparent à partir d’une bibliothèque de documents SharePoint.| Modèle créé dans l’interface native intégrée au Centre de contenu SharePoint.|
-| Type de classification| Définissez un classificateur de tableur dans lequel l’enseignement automatique est utilisé pour donner des indices au système sur les données à extraire.| Classifieur pouvant être formé avec des extracteurs facultatifs utilisant l’apprentissage automatique pour attribuer l’emplacement du document aux données à extraire.|
-| Emplacements | Limité à une seule bibliothèque de documents, sauf si vous utilisez la plateforme Power pour récupérer des données à partir de CDS.| Peut être appliqué à plusieurs bibliothèques.|
+| Type de modèle : quand utiliser chaque | Utilisé pour les formats de fichier sémi-structurées, par exemple, pour les FICHIERS PDF pour le contenu de formulaires tels que les factures ou les commandes où la disposition et la mise en forme sont similaires.  | Utilisé pour les formats de fichiers semi-structurés (par exemple, les documents Office où il y a des différences dans la disposition, mais toujours des informations similaires à extraire). |
+| Création de modèles | Modèle créé dans le Générateur d’intelligence artificielle avec un accès transparent à partir d’une bibliothèque de documents SharePoint.| Modèle créé dans SharePoint dans un nouveau site, le centre de contenu. |
+| Type de classification| Le classificateur réglable est utilisé pour donner des indices au système sur les données à extraire.| Classifieur pouvant être formé avec des extracteurs facultatifs utilisant l’apprentissage automatique pour attribuer l’emplacement du document aux données à extraire.|
+| Emplacements | Formé pour une seule bibliothèque de documents.| Peut être appliqué à plusieurs bibliothèques.|
 | Types de fichiers pris en charge| Entraînez-vous au format PDF, JPG, PNG, un total de 50 Mo et 500 pages.| Entraînez-vous sur 5 à 10 fichiers PDF, Office ou courrier électronique, avec des exemples négatifs.<br>Les fichiers Office sont tronqués à 64 000 caractères. Les fichiers numérisés par OCR sont limités à 20 pages.|
-| Intégration aux métadonnées gérées | Non | Oui, via la configuration des colonnes de bibliothèque de documents avant le modèle de formation.|
-| Intégration des fonctionnalités de conformité lorsque Microsoft Information Protection est activé | Jeu d’étiquettes de confidentialité.<br>Le jeu d’étiquettes de confidentialité est pour bientôt. | Jeu d’étiquettes de confidentialité.<br>Le jeu d’étiquettes de confidentialité est pour bientôt. |
+| Intégration aux métadonnées gérées | Non | Oui, par l’extracteur de l’entité de formation qui fait référence à un champ de métadonnées gérées configurée.|
+| Intégration des fonctionnalités de conformité lorsque Microsoft Information Protection est activé | Définir des étiquettes de rétention publiées.<br>Le jeu d’étiquettes de confidentialité est pour bientôt. | Définir des étiquettes de rétention publiées.<br>Le jeu d’étiquettes de confidentialité est pour bientôt. |
 | Régions pris en charge| Le traitement des formulaires s’appuie sur la plateforme Power. Pour plus d’informations sur la disponibilité globale de la plateforme Power et du Générateur d’intelligence artificielle, consultez [Disponibilité de la plateforme Power](https://dynamics.microsoft.com/geographic-availability/). | Disponible dans toutes les régions.|
-| Coût transactionnel | Utilise des crédits de générateur d’intelligence artificielle.<br>Les crédits peuvent être achetés par lots de 1M.<br>Plus de 1M de crédits est inclus lorsque vous achetez plus de 300 licences SharePoint Syntex.<br>1M de crédits permet de traiter 2 000 pages de fichier.| N/A |
-| Capacité | Approvisionnement dans l’environnement de service de données courant par défaut.| Aucune restriction de capacité.|
-| Langues prises en charge| English <br>A venir plus tard en 2021 : espagnol, allemand, Français, italien| Les modèles fonctionnent sur toutes les langues de l’alphabet latin. En plus de l’anglais : l’allemand, le suédois, le Français, l’espagnol, l’italien et le portugais.|
+| Coût transactionnel | Utilise des crédits de générateur d’intelligence artificielle.<br>Les crédits peuvent être achetés par lots de 1M.<br>Plus de 1M de crédits est inclus lorsque vous achetez plus de 300 licences SharePoint Syntex.<br>1M de crédits permet de traiter 2 000 pages de fichier.<br>| N/A |
+| Capacité | Utilise l’environnement de plateforme Power par défaut (environnements personnalisés pris en charge par la base de données de dataverse). | Ne comprend pas de restrictions de capacité.|
+| Langues prises en charge| Français <br>Prochainement, en 2021 : Langues de l'alphabet latin | Les modèles fonctionnent sur toutes les langues de l’alphabet latin. En plus de l’anglais : l’allemand, le suédois, le Français, l’espagnol, l’italien et le portugais.|
 
 ## <a name="see-also"></a>Voir aussi
 [Formation : Améliorer les performances de votre entreprise avec AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

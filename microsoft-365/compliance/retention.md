@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: a716e3dd8138d5f7f9b5f8d8abbdb401211db9ae
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 67697124df7908dca2ace74dc5de921d18d817c6
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461869"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727323"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -362,13 +362,13 @@ Vous devez appliquer un verrou de conservation une fois la stratégie de rétent
 
 ## <a name="releasing-a-policy-for-retention"></a>Publication d’une stratégie de rétention
 
-Mettre en place des stratégies de rétention n’octroie pas de verrouillage de conservation, vous pouvez supprimer vos stratégies à tout moment, ce qui a pour effet de désactiver les paramètres de rétention appliqués précédemment. Vous pouvez également conserver la stratégie, mais définir l’état d’emplacement comme « désactivé ».
+Mettre en place des stratégies de rétention n’octroie pas de verrouillage de conservation, vous pouvez supprimer vos stratégies à tout moment, ce qui a pour effet de désactiver les paramètres de rétention appliqués précédemment. Vous pouvez également conserver la politique, mais supprimer un site pour SharePoint ou un compte pour OneDrive, ou modifier le statut de l'emplacement en le désactivant, ou encore désactiver la stratégie.
  
-Lorsque vous effectuez l’une de ces actions, le contenu SharePoint ou OneDrive conservé dans la bibliothèque de conservation n’est pas immédiatement et définitivement supprimé. Au lieu de cela, pour éviter la perte accidentelle de données, il existe une période de grâce de 30 jours pendant laquelle l’expiration du contenu de cette stratégie ne se produit pas dans la bibliothèque de conservation de conservation, afin que vous puissiez restaurer tout contenu à partir de cet emplacement, le cas échéant. De plus, vous ne pouvez pas supprimer manuellement ce contenu au cours de la période de grâce.
+Lorsque vous effectuez l'une de ces actions, tout contenu SharePoint ou OneDrive soumis à la conservation en vertu de la stratégie est conservé pendant 30 jours afin d'éviter toute perte de données par inadvertance. Pendant cette période de grâce de 30 jours, vous ne pouvez pas supprimer le site, les fichiers supprimés sont toujours conservés (les fichiers continuent d’être ajoutés à la bibliothèque de conservation et de préservation des documents), mais la tâche de la minuterie qui nettoie périodiquement la bibliothèque de conservation et de préservation des documents est suspendue pour ces fichiers de sorte que vous pouvez les restaurer si nécessaire.
 
-Vous pouvez rétablir le statut d’emplacement sur « activé » pendant la période de grâce. Aucun contenu n’est supprimé pour cette stratégie.
+Pour plus d’informations sur la bibliothèque de conservation et de préservation des documents, consultez [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
-Cette période de grâce de 30 jours dans SharePoint et OneDrive correspond à un délai de 30 jours dans Exchange. Pour des informations supplémentaires, consultez [Gestion des boîtes aux lettres avec période de grâce](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+En raison du comportement pendant la période de grâce, si vous rétablissez la stratégie ou rétablissez l’état de l’emplacement dans un délai de 30 jours, la stratégie reprend sans perte de données permanente pendant cette période.
 
 ## <a name="auditing-retention-configuration"></a>Audit de la configuration de rétention
 
