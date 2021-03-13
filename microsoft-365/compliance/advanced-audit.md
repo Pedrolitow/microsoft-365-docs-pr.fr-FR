@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 0ae67497829e69da92e9735cb68a84e75c517814
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 012361e8ebbf1961d5ca21cef97357d5150523d5
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242456"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712054"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -199,11 +199,11 @@ Pour les clients éligibles et les utilisateurs disposants de la licence appropr
 
 **Quand la nouvelle licence de complément de rétention de journal d’audit de 10 ans sera-t-elle disponible?**
 
-Le nouveau complément de rétention de journal d’audit de 10 ans sera disponible à l’achat par les clients disposant d’abonnements E5 au début de 2021.
+Le nouveau complément de rétention de journal d’audit de 10 ans est désormais disponible à l’achat par les clients disposant d’abonnements E5.
 
-**Qu’arrive-t-il aux données du journal d’audit de mon organisation si je crée une stratégie de rétention du journal d’audit de 10 ans, la fonctionnalité est publiée pour la disponibilité générale, mais avant que la licence de complément requise ne soit disponible au début de 2021 ?**
+**Qu’arrive-t-il aux données du journal d’audit de mon organisation si je crée une stratégie de rétention du journal d’audit de 10 ans lorsque la fonctionnalité est publiée pour la disponibilité générale, mais avant que la licence de complément requise ne soit disponible en février 2021 ?**
 
-Toutes les données du journal d’audit couvertes par une stratégie de rétention de journal d’audit de 10 ans que vous créez après la mise à disposition générale sont conservées pendant 10 ans. Lorsque la licence de complément de rétention de journal d’audit de 10 ans est disponible au début de 2021, vous devez acheter des licences de complément pour les utilisateurs dont les données d’audit sont retenues par une stratégie de rétention d’audit existante de 10 ans. De plus, une fois la licence de complément disponible au  début de 2021, les licences appropriées sont appliquées lorsque vous créez des stratégies de rétention de journal d’audit de 10 ans.
+Toutes les données du journal d’audit couvertes par une stratégie de rétention de journal d’audit de 10 ans que vous créez après la mise à disposition générale sont conservées pendant 10 ans. Lorsque la licence de complément de rétention de journal d’audit de 10 ans est disponible au début de 2021, vous devez acheter des licences de complément pour les utilisateurs dont les données d’audit sont retenues par une stratégie de rétention d’audit existante de 10 ans.
 
 **Les nouveaux événements dans l’audit avancé sont-ils disponibles dans l’API Activité de gestion Office 365 ?**
 

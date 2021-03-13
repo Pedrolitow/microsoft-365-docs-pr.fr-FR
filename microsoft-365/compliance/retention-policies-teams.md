@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 137fcdad514e8272b99ab735a0cf1ed6f6e3e00e
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 4296924684e13e163f28e0f952b2cd380cdcc047
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461795"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712010"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -58,8 +58,8 @@ Vous pouvez utiliser une stratégie de rétention pour conserver les données de
 
 Ces boîtes aux lettres apparaissent dans la liste en fonction de leur attribut RecipientTypeDetails :
 
-- **UserMailbox** : ces boîtes aux lettres stockent des messages pour les utilisateurs de Teams qui ont une boîte aux lettres Exchange Online.
-- **MailUser** : ces boîtes aux lettres stockent des messages pour les utilisateurs de Teams qui ont une boîte aux lettres pour un serveur Exchange local, et non Exchange Online.
+- **MailUser**: ces boîtes aux lettres stockent des messages des utilisateurs cloud de Teams.
+- **UserMailbox** : ces boîtes aux lettres stockent des [ messages des utilisateurs de Teams locale](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox** : ces boîtes aux lettres stockent des messages pour les canaux Teams.
 
 Nous ne prenons pas en charge les autres types de boîtes aux lettres, tels que la boîte aux lettre RoomMailbox utilisée pour les salles de conférence Teams, dans le cadre des stratégies de rétention Teams.
