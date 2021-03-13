@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Découvrez les types de groupes que vous pouvez utiliser.
-ms.openlocfilehash: 4cbc7f15632026babec3640f021c09e901ad20b9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925529"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727246"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
@@ -41,7 +41,7 @@ Dans la section **Groupes** du Centre d’administration Microsoft 365, vous po
 
 ## <a name="microsoft-365-groups"></a>Groupes Microsoft 365
 
-Les Groupes Microsoft 365 sont utilisés pour la collaboration entre utilisateurs, aussi bien à l’intérieur qu’à l’extérieur de votre entreprise. Pour chaque groupe Microsoft 365, les membres bénéficient d’un e-mail de groupe et d’un espace de travail partagé pour les conversations, les fichiers et les événements de calendrier, ainsi que d’un Planificateur.
+Les Groupes Microsoft 365 sont utilisés pour la collaboration entre utilisateurs, aussi bien à l’intérieur qu’à l’extérieur de votre entreprise. Pour chaque groupe Microsoft 365, les membres bénéficient d’un e-mail de groupe et d’un espace de travail partagé pour les conversations, les fichiers et les événements de calendrier, ainsi que d’un planificateur.
 
 Vous pouvez ajouter des personnes externes à votre organisation dans le cadre d’un groupe, à partir du moment où cette fonction est [activée par l'administrateur](manage-guest-access-in-groups.md). Vous pouvez également permettre aux expéditeurs externes d’envoyer des e-mails vers l’adresse de messagerie du groupe.
 
