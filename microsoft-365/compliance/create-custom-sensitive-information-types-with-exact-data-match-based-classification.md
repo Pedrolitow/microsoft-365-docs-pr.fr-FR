@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3d94d585ca0a0e88fb442e658d57bf000ce49bb
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 4ce10483f2a2f6e3a461f0ab32eba0ed954cd484
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080515"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766409"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -108,7 +108,7 @@ La configuration de la classification basée sur EDM inclut les étapes suivante
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Définir le schéma de votre base de données d’informations sensibles
 
-Si, pour des raisons commerciales ou techniques, vous préférez ne pas utiliser PowerShell ou la ligne de commande pour créer votre schéma et votre modèle de type d’informations sensibles EDM (package de règles). vous pouvez utiliser l’[Assistant de correspondance exacte de données et de type d’informations sensibles](sit-edm-wizard.md) pour les créer. Lorsque vous avez terminé de créer le schéma et le modèle de type d’informations sensibles EDM, revenez à la procédure afin d’effectuer toutes les étapes nécessaires pour que votre type d’informations sensibles EDM soit disponible.
+Si, pour des raisons commerciales ou techniques, vous préférez ne pas utiliser PowerShell ou la ligne de commande pour créer votre schéma et votre modèle de type d’informations sensibles EDM (package de règles), vous pouvez utiliser l’[Assistant de correspondance exacte de données et de type d’informations sensibles](sit-edm-wizard.md) pour les créer. Lorsque vous avez terminé de créer le schéma et le modèle de type d’informations sensibles EDM, revenez à la procédure afin d’effectuer toutes les étapes nécessaires pour que votre type d’informations sensibles EDM soit disponible.
 
 > [!NOTE]
 > L’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles est disponible uniquement pour les nuages mondiaux et GCC.
