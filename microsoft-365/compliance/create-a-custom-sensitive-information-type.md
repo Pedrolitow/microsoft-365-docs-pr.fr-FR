@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 04/17/2019
+ms.date: ''
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Apprenez à créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour la protection contre la perte de données dans l’interface utilisateur graphique du Centre de sécurité et conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94f0f6b68e9f952e0d52ce7cb71ccf03913584f4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 049c3c123053b4bd833ea95a2413b81366586870
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929350"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766365"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -64,7 +64,7 @@ Utilisez cette procédure pour créer un type d’informations sensibles que vou
 5. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière** avec un validateur facultatif, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Pour obtenir plus d’informations sur les fonctions DLP, consultez l’article [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md).
 6. Remplissez une valeur pour la **Proximité de caractère**.
 7. (Facultatif) Ajoutez des éléments de prise en charge si vous en avez. Les éléments de prise en charge peuvent être une expression régulière avec un validateur facultatif, une liste de mots clés, un dictionnaire de mots clés ou l’une des fonctions prédéfinies. 
-8.  (Facultatif) Ajouter des vérifications supplémentaires à partir de la liste des vérifications disponibles
+8.  (Facultatif) Ajouter des [**vérifications supplémentaires**](#more-information-on-additional-checks) à partir de la liste des vérifications disponibles.
 9. Sélectionnez **Créer**.
 10. Cliquez sur **Suivant**.
 11. Choisissez le **Niveau de confiance recommandé** pour ce type d’informations sensibles.
@@ -87,7 +87,7 @@ Vous pouvez tester n’importe quel type d’informations sensibles dans la list
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modifier des types d’informations sensibles personnalisés dans le centre de conformité
 
 1. Dans le centre de conformité, accédez à **Classification de données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles dans la liste que vous voulez modifier, puis sélectionnez **Modifier**.
-2. Vous pouvez ajouter d’autres motifs, avec des éléments principaux et de prise en charge uniques, des niveaux de confiance, la proximité des caractères et des vérifications supplémentaires, ou modifier/supprimer les éléments existants. Pour en savoir plus, consultez [Créer un type d’informations sensibles personnalisé](#create-a-custom-sensitive-information-type).
+2. Vous pouvez ajouter d’autres motifs, avec des éléments principaux et de prise en charge uniques, des niveaux de confiance, la proximité des caractères et des [**vérifications supplémentaires**](#more-information-on-additional-checks), ou modifier/supprimer les éléments existants.
 
 ## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>Supprimer des types d’informations sensibles personnalisés dans le centre de Conformité 
 
@@ -113,7 +113,7 @@ Utilisez cette procédure pour créer un type d’informations sensibles basé s
 7. Vous pouvez choisir de modifier ou de supprimer les motifs existants et d’en ajouter de nouveaux. Choisissez le niveau de confiance par défaut pour le nouveau motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
 8. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière**, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Consultez, [Éléments recherchés par les fonctions DLP ](what-the-dlp-functions-look-for.md).
 9. Remplissez une valeur pour la **Proximité de caractère**.
-10. (Facultatif) Si vous avez des **Éléments de prise en charge** ou des **Contrôles supplémentaires**, ajoutez les. Si nécessaire, vous pouvez grouper vos **Éléments de prise en charge**.
+10. (Facultatif) Si vous avez des **Éléments de prise en charge** ou des [**Contrôles supplémentaires**](#more-information-on-additional-checks), ajoutez les. Si nécessaire, vous pouvez grouper vos **Éléments de prise en charge**.
 11. Sélectionnez **Créer**.
 12. Cliquez sur **Suivant**.
 13. Choisissez le **Niveau de confiance recommandé** pour ce type d’informations sensibles.
@@ -122,7 +122,24 @@ Utilisez cette procédure pour créer un type d’informations sensibles basé s
 Vous pouvez également créer des types d’informations sensibles personnalisés à l’aide de PowerShell et de fonctionnalités de correspondance exacte des données. Pour en savoir plus sur ces méthodes, consultez :
 - [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Créer un type d’informations sensibles personnalisé pour DLP à l’aide d’une correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
- 
+
+## <a name="more-information-on-additional-checks"></a>Informations supplémentaires sur les contrôles supplémentaires
+
+Voici des définitions et des exemples pour les contrôles supplémentaires disponibles.
+
+**Exclure des correspondances spécifiques** : ce contrôle vous permet de définir des mots clés à exclure lors de la détection de correspondances au modèle que vous modifiez. Par exemple, vous pouvez exclure les numéros de carte de crédit tels que « 4111111111111111 » afin qu'ils ne soient pas considérés comme des numéros valides.
+
+**Commence ou ne commence pas par les caractères** : ce contrôle vous permet de définir les caractères par lesquels les éléments en correspondance doivent ou non commencer. Par exemple, si vous souhaitez que le modèle détecte uniquement les numéros de carte de crédit qui commencent par 41, 42 ou 43, sélectionnez **Commence par** et ajoutez 41, 42 et 43 à la liste, séparés par des virgules. 
+
+**Se termine ou ne se termine pas par des caractères**: ce contrôle vous permet de définir les caractères par lesquels les éléments en correspondance doivent ou ne doivent pas se terminer. Par exemple, si votre numéro d’ID d’employé ne peut pas se terminer par 0 ou 1, sélectionnez **Ne se termine pas par** et ajoute 0 et 1 à la liste, séparés par des virgules.
+
+**Exclure les caractères en double** : ce contrôle vous permet d’ignorer les correspondances dont tous les chiffres sont identiques. Par exemple, si les six chiffres du numéro d'identification de l'employé ne peuvent pas tous être identiques, vous pouvez sélectionner **Exclure les caractères en double** pour exclure 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999 et 000000 de la liste des correspondances valides pour le numéro d'identification de l'employé.
+
+**Inclure ou exclure des préfixes** : ce contrôle vous permet de définir les mots-clés qui doivent ou non se trouver immédiatement avant l'entité correspondante. En fonction de votre sélection, les entités seront mises en correspondance ou non si elles sont précédées des préfixes que vous incluez ici. Par exemple, si vous **Excluez** le préfixe **GUID:**, toute entité précédée de **GUID:** ne sera pas considérée comme une correspondance.
+
+**Inclure ou exclure des suffixes** : ce contrôle vous permet de définir les mots-clés qui doivent ou non se trouver immédiatement après l'entité correspondante. En fonction de votre sélection, les entités seront mises en correspondance ou non si elles sont suivies des suffixes que vous incluez ici. Par exemple, si vous **Excluez** le suffixe **:GUID** , tout texte suivi de **:GUID** ne sera pas pris en compte.
+
+
 > [!NOTE]
 > Microsoft 365 Information Protection prend désormais en charge, en préversion, les langues de jeu de caractères à double octets pour :
 > - Chinois (simplifié)
