@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: abfe3da455191730c0675a09904c9fecf2c0e8ed
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 8cd9e9a72cd7643238d118fe0aed519db9159470
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261313"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820146"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
 
-Avant de commencer à [gérer](insider-risk-management.md) les risques internes dans votre organisation, il existe d’importantes activités de planification et des considérations qui doivent être examinées par vos équipes de gestion des technologies de l’information et de la conformité. Une compréhension approfondie et la planification du déploiement dans les domaines suivants vous aideront à vous assurer que votre implémentation et votre utilisation des fonctionnalités de gestion des risques internes se déroulent sans problème et sont conformes aux meilleures pratiques pour la solution.
+Avant de [](insider-risk-management.md) commencer à gérer les risques internes dans votre organisation, il existe d’importantes activités de planification et des considérations qui doivent être examinées par vos équipes de gestion des technologies de l’information et de la conformité. Une compréhension approfondie et la planification du déploiement dans les domaines suivants vous aideront à vous assurer que votre implémentation et votre utilisation des fonctionnalités de gestion des risques internes se déroulent sans problème et sont conformes aux meilleures pratiques pour la solution.
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Travailler avec les parties prenantes de votre organisation
 
@@ -36,7 +36,7 @@ Identifiez les parties prenantes appropriées dans votre organisation pour colla
 
 ## <a name="determine-any-regional-compliance-requirements"></a>Déterminer les exigences de conformité régionale
 
-Différentes zones géographiques et organisationnelles peuvent avoir des exigences de conformité et de confidentialité différentes des autres zones de votre organisation. Travaillez en équipe avec les parties prenantes dans ces domaines pour vous assurer qu’elles comprennent les contrôles de conformité et de confidentialité dans la gestion des risques internes et comment elles doivent être utilisées dans différents domaines de votre organisation. Dans certains scénarios, les exigences de conformité et de confidentialité peuvent nécessiter des stratégies qui désignent ou limitent certaines parties prenantes à des enquêtes et des cas basés sur le cas d’un utilisateur, d’exigences réglementaires ou de stratégies pour la zone.
+Différentes zones géographiques et organisationnelles peuvent avoir des exigences de conformité et de confidentialité différentes des autres zones de votre organisation. Travaillez en équipe avec les parties prenantes dans ces domaines pour vous assurer qu’elles comprennent les contrôles de conformité et de confidentialité dans la gestion des risques internes et comment elles doivent être utilisées dans différents domaines de votre organisation. Dans certains scénarios, les exigences de conformité et de confidentialité peuvent nécessiter des stratégies qui désignent ou limitent certaines parties prenantes à des enquêtes et des cas basés sur le cas d’un utilisateur ou des exigences réglementaires ou de stratégie pour la zone.
 
 Si vous avez besoin que des parties prenantes spécifiques soient impliquées dans des enquêtes de cas qui [](insider-risk-management-policies.md) impliquent des utilisateurs de certaines régions, rôles ou divisions, vous pouvez implémenter des stratégies distinctes (même identiques) de gestion des risques internes ciblant les différentes régions et régions. Cette configuration permettra aux parties prenantes de trier et de gérer plus facilement les cas pertinents pour leurs rôles et régions. En outre, vous pouvez envisager de créer des processus et des stratégies pour les régions où les enquêteurs et les réviseurs parlent la même langue que les utilisateurs pour simplifier le processus d’escalade pour les alertes et les cas de gestion des risques internes.
 
@@ -48,10 +48,11 @@ Selon la structure de votre équipe de gestion de la conformité, vous avez la c
 
 | **Groupe de rôles** | **Autorisations de rôle** |
 | :------------- | :------------------- |
-| **Gestion des risques internes** | Ce groupe de rôles permet de gérer la gestion des risques internes pour votre organisation au sein d’un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes et enquêteurs désignés, vous pouvez définir des autorisations de gestion des risques internes dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de gestion des risques internes. Cette configuration est le moyen le plus simple de se lancer rapidement dans la gestion des risques internes et convient parfaitement aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts.|
-| **Administrateur de la gestion des risques internes** | Utilisez ce groupe de rôles pour configurer initialement la gestion des risques internes, puis pour séparer les administrateurs de risques internes dans un groupe défini.  Les utilisateurs de ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de gestion des risques internes et des paramètres globaux. |
-| **Analystes de la gestion des risques internes.** | Utilisez ce groupe pour affecter des autorisations aux utilisateurs qui agiront comme des analystes de cas de risque internes. Les utilisateurs de ce groupe de rôles peuvent accéder à tous les modèles d’alertes, de cas et de notifications de gestion des risques internes. Ils ne peuvent pas accéder à l’Explorateur de contenu de risques internes. |
-| **Enquêteurs sur la gestion des risques internes.** | Utilisez ce groupe pour affecter des autorisations aux utilisateurs qui agiront comme des enquêteurs de données de risque internes. Les utilisateurs de ce groupe de rôles peuvent accéder à toutes les alertes de gestion des risques internes, cas, modèles de notifications et l’Explorateur de contenu pour tous les cas. |
+| **Gestion des risques internes** | Ce groupe de rôles permet de gérer la gestion des risques internes pour votre organisation au sein d’un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs désignés, les analystes, les enquêteurs et les auditeurs, vous pouvez configurer des autorisations de gestion des risques internes dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de gestion des risques internes et les autorisations associées. Cette configuration est le moyen le plus simple de se lancer rapidement dans la gestion des risques internes et convient parfaitement aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. |
+| **Administrateur de la gestion des risques internes** | Utilisez ce groupe de rôles pour configurer initialement la gestion des risques internes, puis pour séparer les administrateurs de risques internes dans un groupe défini. Les utilisateurs de ce groupe de rôles peuvent activer et afficher des analyses et créer, lire, mettre à jour et supprimer des stratégies de gestion des risques internes, des paramètres globaux et des attributions de groupe de rôles. |
+| **Analystes de la gestion des risques internes.** | Utilisez ce groupe pour affecter des autorisations aux utilisateurs qui agiront comme des analystes de cas de risque internes. Les utilisateurs de ce groupe de rôles peuvent accéder à toutes les alertes, cas, analyses et modèles de notifications de gestion des risques internes et les afficher. Ils ne peuvent pas accéder à l’Explorateur de contenu à risque interne. |
+| **Enquêteurs sur la gestion des risques internes.** | Utilisez ce groupe pour affecter des autorisations aux utilisateurs qui agiront comme des enquêteurs de données de risque internes. Les utilisateurs de ce groupe de rôles peuvent accéder à toutes les alertes de gestion des risques internes, cas, modèles d’avis et explorateur de contenu pour tous les cas. |
+| **Auditeurs de gestion des risques internes** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui auditeront les activités de gestion des risques internes. Les utilisateurs de ce groupe de rôles peuvent accéder au journal d’audit des risques internes. |
 
 ## <a name="understand-requirements-and-dependencies"></a>Comprendre les exigences et les dépendances
 
@@ -72,7 +73,7 @@ Si vous n’avez pas d’offre Microsoft 365 Entreprise E5 existante et que vous
 
 Avant d’activer la solution à grande échelle dans votre environnement de production, vous pouvez envisager de tester les stratégies avec un petit groupe d’utilisateurs de production tout en mener à bien la conformité, la confidentialité et les révisions juridiques nécessaires dans votre organisation. L’évaluation de la gestion des risques internes dans un environnement de test nécessite de générer des actions utilisateur simulées et d’autres signaux pour créer des alertes pour le tri et les cas de traitement. Cette approche n’est pas pratique pour la plupart des organisations. Il est donc préférable de tester la gestion des risques internes avec un petit groupe d’utilisateurs dans un environnement de production.
 
-Maintenez la fonctionnalité d’anonymisation dans les paramètres de stratégie activée pour anonymiser les noms d’affichage des utilisateurs dans la console de gestion des risques internes pendant ce test afin de maintenir la confidentialité au sein de l’outil. Ce paramètre permet de protéger la confidentialité des utilisateurs qui ont des correspondances de stratégie et peut contribuer à promouvoir une certaine fiabilité dans les examens d’analyse et d’examen des données pour les alertes de risques internes.
+Conservez la fonctionnalité d’anonymisation dans les paramètres de stratégie activée pour anonymiser les noms d’affichage des utilisateurs dans la console de gestion des risques internes pendant ce test afin de maintenir la confidentialité au sein de l’outil. Ce paramètre permet de protéger la confidentialité des utilisateurs qui ont des correspondances de stratégie et peut contribuer à promouvoir une certaine fiabilité dans les examens d’analyse et d’examen des données pour les alertes de risques internes.
 
 Si vous ne voyez aucune alerte immédiatement après la configuration d’une stratégie de gestion des risques internes, cela peut signifier que le seuil de risque minimal n’a pas encore été atteint. Un bon moyen de vérifier si la stratégie est déclenchée et fonctionne comme prévu consiste à voir si l’utilisateur est dans l’étendue de la stratégie sur la page **Utilisateurs.**
 
@@ -91,4 +92,4 @@ Partagez la documentation de gestion des risques internes avec les parties prena
 Vous êtes prêt à configurer la gestion des risques internes pour votre organisation ? Lisez les articles suivants :
 
 - [Prise en charge des paramètres de gestion des](insider-risk-management-settings.md) risques internes pour configurer les paramètres de stratégie globale.
-- [Prise en charge de la gestion des risques](insider-risk-management-configure.md) internes pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.
+- [Prise en charge de la gestion des](insider-risk-management-configure.md) risques internes pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.

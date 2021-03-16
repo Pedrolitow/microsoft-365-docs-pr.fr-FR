@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser la formation sur la simulation d’attaques pour exécuter des attaques par hameçonnage simulé et par mot de passe dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a33c212f7d0fd6b0617a8059b03ac90de03fba16
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 38e16ecd8185b9e8542f58613790585b5aab73ee
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407473"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820233"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Commencer à utiliser la formation à la simulation d’attaque
 
@@ -62,7 +62,7 @@ Dans la formation à la simulation d’attaques, plusieurs types de techniques d
 
 - **Pièce jointe malveillante**: une personne malveillante envoie au destinataire un message contenant une pièce jointe. Lorsque le destinataire ouvre la pièce jointe, du code arbitraire (par exemple, une macro) est exécuté sur l’appareil de l’utilisateur pour permettre à l’attaquant d’installer du code supplémentaire ou de s’en empêcher.
 
-- **Lien dans la pièce** jointe : il s’agit d’un hybride de la saisie des informations d’identification. Une personne malveillante envoie au destinataire un message contenant une URL à l’intérieur d’une pièce jointe. Lorsque le destinataire ouvre la pièce jointe et clique sur l’URL, il est redéliqué sur un site web qui affiche généralement une boîte de dialogue qui demande à l’utilisateur son nom d’utilisateur et son mot de passe. En règle générale, la page de destination est un site web connu pour créer une relation d’confiance avec l’utilisateur.
+- **Lien dans la pièce** jointe : il s’agit d’un hybride de la saisie des informations d’identification. Une personne malveillante envoie au destinataire un message qui contient une URL à l’intérieur d’une pièce jointe. Lorsque le destinataire ouvre la pièce jointe et clique sur l’URL, il est redéliqué sur un site web qui affiche généralement une boîte de dialogue qui demande à l’utilisateur son nom d’utilisateur et son mot de passe. En règle générale, la page de destination est un site web connu pour créer une relation d’confiance avec l’utilisateur.
 
 - **Lien vers** un programme malveillant : une personne malveillante envoie au destinataire un message contenant un lien vers une pièce jointe sur un site de partage de fichiers connu (par exemple, SharePoint Online ou Dropbox). Lorsque le destinataire clique sur l’URL, la pièce jointe s’ouvre et un code arbitraire (par exemple, une macro) est exécuté sur l’appareil de l’utilisateur pour aider l’attaquant à installer du code supplémentaire ou à s’en aller.
 
@@ -109,3 +109,6 @@ Pour obtenir des instructions détaillées sur la création d’une charge utile
 ### <a name="gaining-insights"></a>Obtenir des informations
 
 Pour obtenir des instructions détaillées sur la façon d’obtenir des informations sur les rapports, voir Obtenir des informations par le biais d’une [formation sur la simulation d’attaques.](attack-simulation-training-insights.md)
+
+> [!NOTE]
+> Le Simulateur d’attaques utilise des liens sécurisés dans Defender pour Office 365 pour suivre en toute sécurité les données de clic pour l’URL du message de charge utile envoyé aux destinataires ciblés d’une campagne de hameçonnage, même si le paramètre Ne pas suivre les clics de l’utilisateur dans les stratégies de liens **sécurisés** est allumé.

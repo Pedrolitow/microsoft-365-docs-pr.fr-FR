@@ -13,17 +13,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-description: Vue d’ensemble des rubriques de LasSyr.
+description: Présentation de Rubriques Viva.
 ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
 ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50453968"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
-Cette rubrique utilise la technologie Microsoft AI, Microsoft 365, Microsoft Graph, Search et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par les pages modernes de SharePoint et Microsoft Search (recherche Microsoft).
+Cette rubrique utilise la technologie d’IA Microsoft, Microsoft 365, Microsoft Graph, Recherche et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent tous les jours, à partir des pages modernes de SharePoint et de Recherche Microsoft.
 
 </br>
 
@@ -31,23 +31,23 @@ Cette rubrique utilise la technologie Microsoft AI, Microsoft 365, Microsoft Gra
 
 </br>
 
-Cette rubrique vous aide à résoudre un problème d’entreprise clé dans de nombreuses entreprises , en fournissant les informations aux utilisateurs lorsqu’ils en ont besoin. Par exemple, les nouveaux employés ont besoin d’apprendre beaucoup de nouvelles informations rapidement et de rencontrer des termes qu’ils ne connaissent pas lors de la lecture des informations de l’entreprise. Pour en savoir plus, l’utilisateur peut avoir besoin de s’éloigner de ce qu’il fait et de passer du temps précieux à rechercher des détails, tels que des informations sur ce qu’est le terme, qui dans l’organisation est un expert en la matière, et peut-être des sites et des documents liés au terme.
+Rubriques Viva aide à résoudre un problème d’entreprise majeur dans de nombreuses entreprises, en fournissant les informations aux utilisateurs lorsqu’ils en ont besoin. Par exemple, les nouveaux employés doivent apprendre rapidement un grand nombre de nouvelles informations et rencontrer des conditions dont ils ne connaissent rien lorsqu’ils lisent les informations de l’entreprise. Pour en savoir plus, l’utilisateur devra peut-être s’éloigner de ce qu’il fait et consacrer un temps précieux à la recherche de détails, tels que des informations sur ce terme, les membres de l’organisation comme experts dans le domaine, et les sites et documents liés au terme.
 
-Topics utilise l’IA pour rechercher et identifier automatiquement les **sujets** de votre organisation. Il compile les informations les concernant, telles qu’une brève description, les personnes qui travaillent sur la rubrique, ainsi que les sites, fichiers et pages qui y sont associés. Un gestionnaire de connaissances ou un collaborateur peut choisir de mettre à jour les informations de la rubrique selon les besoins. Les rubriques sont accessibles à vos utilisateurs, ce qui signifie que pour chaque instance de la rubrique qui apparaît dans un site SharePoint moderne dans les actualités et les pages, le texte est mis en surbrillant. Les utilisateurs peuvent choisir de sélectionner la rubrique pour en savoir plus à ce sujet via les détails de cette rubrique. Vous pouvez également trouver des rubriques dans la recherche SharePoint.
+Rubriques Viva utilise l’IA pour rechercher et identifier automatiquement **rubriques** dans votre organisation. Il compile les informations les concernant, telles qu’une brève description, les personnes travaillant sur le sujet, ainsi que les sites, fichiers et pages qui y sont associés. Un responsable des connaissances ou un collaborateur peut choisir de mettre à jour les informations de la rubrique selon vos besoins. Les rubriques sont accessibles à vos utilisateurs. Par conséquent, pour chaque occurrence de la rubrique qui apparaît sur un site SharePoint moderne dans les actualités et pages, le texte est mis en évidence. Les utilisateurs peuvent choisir de sélectionner la rubrique pour en savoir plus à son sujet via les détails de cette rubrique. Vous pouvez également trouver des rubriques dans la Recherche SharePoint.
 
 
 ## <a name="how-topics-are-displayed-to-users"></a>Affichage des rubriques pour les utilisateurs
 
-Lorsqu’une rubrique est mentionnée dans le contenu des actualités et des pages SharePoint, elle est mise en surbrillable. Vous pouvez ouvrir le résumé de la rubrique à partir du surbrillant. Ouvrez les détails de la rubrique à partir du titre du résumé. La rubrique mentionnée peut être identifiée automatiquement ou a été ajoutée à la page avec une référence directe à la rubrique par l’auteur de la page. 
+Lorsqu’une rubrique est mentionnée dans du contenu sur des actualités et pages SharePoint, elle est mise en évidence. Vous pouvez ouvrir le résumé du sujet à partir de la mise en évidence. Ouvrez les détails du sujet à partir du titre du résumé. La rubrique mentionnée peut être identifiée automatiquement ou a été ajoutée à la page avec une référence directe à la rubrique par l’auteur de la page. 
 
    ![Points forts de la rubrique](../media/knowledge-management/saturn.png) </br> 
 
 
-## <a name="knowledge-indexing"></a>Indexation des connaissances
+## <a name="knowledge-indexing"></a>Indexation des informations
 
-Cette rubrique utilise la technologie Microsoft AI pour identifier les **rubriques** de votre environnement Microsoft 365.
+Rubriques Viva utilise la technologie Microsoft IA pour identifier les **rubriques** dans votre environnement Microsoft 365.
 
-Une rubrique est une expression ou un terme qui est important ou significatif d’un point de vue organisationnel. Il a une signification spécifique pour l’organisation et dispose de ressources liées à celle-ci qui peuvent aider les personnes à comprendre ce qu’il est et trouver plus d’informations à ce sujet. Il existe de nombreux types de rubriques qui seront importants pour votre organisation. À l’origine, la technologie Microsoft AI se concentre sur les types suivants :
+Une rubrique est une expression ou un terme qui est significatif ou important du point de vue organisationnel. Il a une signification spécifique pour l’organisation et comprend des ressources liées qui peuvent aider les personnes à comprendre sa signification et à trouver des informations supplémentaires à son sujet. Il existe différents types de rubriques qui seront importants pour votre organisation. Dans un premier temps, la technologie d'IA de Microsoft se concentre sur les types suivants :
 - Project
 - Événement
 - Organisation
@@ -57,70 +57,70 @@ Une rubrique est une expression ou un terme qui est important ou significatif d�
 - Champ d’étude
 
 
-Lorsqu’une rubrique est identifiée et que l’IA détermine qu’elle dispose de suffisamment d’informations pour qu’elle soit une rubrique suggérée, une **page** de rubrique affiche les informations qui ont été recueillies par le biais de l’indexation des rubriques, telles que :
+Lorsqu'une rubrique est identifiée et que l'IA détermine qu'elle contient suffisamment d'informations pour être une rubrique suggérée, une **page de rubrique** affiche les informations qui ont été recueillies par l'indexation de la rubrique, par exemple :
 
 - Autres noms et acronymes.
-- Brève description de la rubrique.
-- Personnes qui sont peut-être au fait de cette rubrique.
+- Une brève description de la rubrique.
+- Contacts qui sont peut-être bien informés sur la rubrique.
 - Fichiers, pages et sites associés à la rubrique.
 
-Les administrateurs de vos connaissances peuvent choisir d’analyser tous les sites SharePoint de votre client pour des rubriques ou de sélectionner simplement certains sites.
+Vos administrateurs d’informations peuvent choisir d’analyser tous les sites SharePoint dans votre client pour les sujets ou simplement en sélectionner certains.
 
-Voir [la découverte et la curation des rubriques](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Consultez [Découverte et traitement de rubrique](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
 ## <a name="roles"></a>Rôles
 
-Lorsque vous utilisez Topics dans votre environnement Microsoft 365, vos utilisateurs ont les rôles suivants :
+Lorsque vous utilisez Rubriques Viva dans votre environnement Microsoft 365, vos utilisateurs ont les rôles suivants :
 
-- Visionneuses de rubriques : les utilisateurs qui peuvent  voir des rubriques sur les sites modernes SharePoint pour qui ils ont au moins un accès en lecture, et dans Microsoft Search (recherche Microsoft). Ils peuvent sélectionner les points forts de la rubrique pour voir les détails des rubriques dans les pages de rubrique. Les visiteurs peuvent fournir des commentaires sur l’utilité d’une rubrique pour eux.
+- Visionneurs de rubriques : les utilisateurs qui peuvent voir les points forts des rubriques sur les sites modernes SharePoint auxquels ils ont au moins un accès *en lecture*, et dans la Recherche Microsoft. Ils peuvent sélectionner les points forts des rubriques pour en afficher les détails dans les pages des rubriques. Les visionneurs de rubriques peuvent fournir des commentaires sur l’utilité d’une rubrique pour eux.
 
-- Collaborateurs : utilisateurs ayant le droit de modifier des rubriques existantes ou d’en créer de nouvelles. Les administrateurs du savoir attribuent des autorisations de collaborateur aux utilisateurs via les paramètres Rubriques Dans le Centre d’administration Microsoft 365. Notez que vous pouvez également choisir de donner à tous les visiteurs des rubriques l’autorisation de modifier et de créer des rubriques afin que tout le monde puisse contribuer aux rubriques qu’ils voient.
+- Contributeurs : utilisateurs ayant le droit de modifier des rubriques existantes ou d’en créer de nouveaux. Les administrateurs d’informations attribuent des autorisations de collaborateur aux utilisateurs via les paramètres Rubriques Viva du Centre d’administration Microsoft 365. Notez que vous pouvez également choisir de donner à tous les visionneurs de rubriques l'autorisation de modifier et de créer des rubriques afin que chacun puisse contribuer aux rubriques qu'il voit.
 
-- Gestionnaires de connaissances : utilisateurs qui guident des rubriques tout au long du cycle de vie des rubriques. Les gestionnaires de connaissances utilisent la page Gérer les rubriques dans le centre de **rubriques** pour confirmer les rubriques suggérées par l’IA, supprimer les rubriques qui ne sont plus pertinentes, ainsi que modifier des rubriques existantes ou en créer de nouvelles, et sont les seuls utilisateurs qui y ont accès. Les administrateurs du savoir attribuent des autorisations de gestionnaire de connaissances aux utilisateurs par le biais des paramètres d’administration Rubriques Dans le Centre d’administration Microsoft 365. 
+- Gestionnaires d’informations : utilisateurs qui guident les rubriques tout au long du cycle de vie des rubriques. Les responsables d’informations utilisent la page **Gérer les rubriques** du centre thématique pour confirmer les rubriques suggérées par l’IA, supprimer des rubriques qui ne sont plus pertinentes, modifier des rubriques existantes ou en créer de nouveaux, et sont les seuls utilisateurs à y accéder. Les administrateurs d’informations attribuent des autorisations de gestionnaire d’informations aux utilisateurs via les paramètres administrateur de Rubriques Viva du Centre d’administration Microsoft 365. 
 
-- Administrateurs du savoir : les administrateurs du savoir peuvent configurer Rubriques Et les gérer via les contrôles d’administration dans le Centre d’administration Microsoft 365. Actuellement, un administrateur général Microsoft 365 ou SharePoint peut faire office d’administrateur de connaissances.
+- Administrateurs d’informations : les administrateurs d’informations configurera Rubriques Viva et la gèrent via les contrôles d’administration du Centre d’administration Microsoft 365. Actuellement, un administrateur général de Microsoft 365 ou SharePoint peut faire office d'administrateur d'informations.
 
-Pour plus [d’informations, voir rôles Rubriques.](topic-experiences-roles.md)
+Pour plus d’informations, consultez [Rôles Rubriques Viva](topic-experiences-roles.md).
 
 ## <a name="topic-management"></a>Gestion des rubriques
 
-La gestion des rubriques est effectuée dans la page **Gérer les rubriques** dans le centre **de rubriques de votre organisation.** Le centre de rubriques est créé lors de l’installation et fait office de centre de connaissances pour votre organisation. 
+La gestion des rubriques est effectuée dans la page **Gérer les rubriques** dans le **Centre thématique** de votre organisation. Le centre thématique est créé pendant l’installation et sert de centre d’informations pour votre organisation. 
 
-Alors que tous les utilisateurs titulaires d’une licence peuvent voir les rubriques avec qui ils sont connectés dans le centre de rubriques, seuls les utilisateurs ayant des autorisations Gérer les *rubriques* (gestionnaires de connaissances) peuvent afficher et utiliser la page Gérer les rubriques.
+Alors que tous les utilisateurs titulaires d'une licence peuvent consulter les rubriques auxquelles ils sont connectés dans le centre de rubriques, seuls les utilisateurs ayant des autorisations *Gérer des rubriques* (gestionnaires d’informations) peuvent consulter et utiliser la page Gestion des rubriques.
 
-Les gestionnaires de connaissances peuvent :
+Les responsables d’informations peuvent :
 
-- Confirmez ou supprimez les rubriques qui ont été découvertes dans votre client.
-- Créez des rubriques manuellement selon vos besoins (par exemple, si les informations fournies ne sont pas suffisantes pour qu’elles soient découvertes via l’IA).
-- Modifier des pages de rubriques existantes.</br>
+- Confirmez ou supprimez des rubriques qui ont été découverte dans votre client.
+- Créez des rubriques manuellement si nécessaire (par exemple, si les informations fournies ne sont pas suffisantes pour être découvertes par l'IA).
+- Modifier les pages de rubrique existantes.</br>
 
-Pour [plus d’informations, voir](manage-topics.md) Gérer les rubriques dans le centre de rubriques.  
+Pour plus d’information, consultez [Gérer les rubriques dans le centre thématique](manage-topics.md).  
 
 
 ## <a name="admin-controls"></a>Contrôles d’administration
 
-Les contrôles d’administration dans le Centre d’administration Microsoft 365 vous permettent de gérer votre réseau de connaissances. Ils permettent à un administrateur général microsoft 365 ou SharePoint de :
+Les contrôles d’administration du Centre d’administration Microsoft 365 vous permettent de gérer votre réseau de connaissances. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
 
-- Contrôler les utilisateurs de votre organisation autorisés à voir les rubriques dans les pages modernes SharePoint ou dans les résultats de recherche SharePoint.
+- Contrôler quels utilisateurs de votre organisation sont autorisés à consulter les rubriques dans les pages modernes de SharePoint ou dans les résultats de recherche SharePoint.
 - Contrôler les sites SharePoint qui seront analyser pour identifier les rubriques.
-- Exclure des rubriques spécifiques de la recherche.
-- Contrôler les utilisateurs qui peuvent gérer les rubriques dans le centre de rubriques.
+- Exclure des rubriques spécifiques.
+- Contrôler les utilisateurs qui peuvent gérer les rubriques dans le centre thématique.
 - Contrôler les utilisateurs qui peuvent créer et modifier des rubriques.
-- Contrôler l’utilisateur qui peut afficher les rubriques.
+- Contrôler les utilisateurs qui peuvent consulter les rubriques.
 
-Pour plus d’informations sur les [](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) contrôles d’administration, [](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)voir attribuer des autorisations aux [utilisateurs,](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)gérer la visibilité des rubriques et gérer la découverte de rubriques.
+Pour plus d’informations sur les contrôles d’administrateur, consultez [Attribuer des autorisations d’utilisateur](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions), [Gérer la visibilité d’une rubrique](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)et [Gérer la découverte de rubriques](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery).
 
-## <a name="topic-curation--feedback"></a>Retour d'& de la & rubrique
+## <a name="topic-curation--feedback"></a>Traitement des rubriques et commentaires
 
-L’IA s’efforce continuellement de vous fournir des suggestions pour améliorer vos rubriques à mesure que des modifications se produisent dans votre environnement. 
+L'IA s'efforcera continuellement de vous fournir des suggestions pour améliorer vos sujets au fur et à mesure que des modifications surviendront dans votre environnement. 
 
-Les utilisateurs qui ont des autorisations de modification ou de création de rubriques peuvent effectuer des mises à jour des pages de rubriques directement s’ils souhaitent apporter des corrections ou ajouter des informations supplémentaires. Ils peuvent également ajouter de nouvelles rubriques que l’IA n’a pas pu identifier. S’il existe suffisamment d’informations sur ces rubriques ajoutées manuellement et que l’IA est en mesure d’identifier ce type de rubrique, des suggestions supplémentaires de l’IA peuvent améliorer ces rubriques ajoutées manuellement 
+Les utilisateurs ayant des autorisations de modification ou de création de rubriques peuvent apporter des mises à jour aux pages des rubriques directement s’ils souhaitent apporter des corrections ou ajouter des informations supplémentaires. Ils peuvent également ajouter de nouvelles rubriques que l’IA n’a pas pu identifier. S'il y a suffisamment d'informations sur ces rubriques ajoutées manuellement et que l'IA est capable d'identifier ce type de rubrique, des suggestions supplémentaires de l'IA peuvent améliorer ces rubriques ajoutées manuellement. 
 
-Les utilisateurs qui vous permettent d’accéder à des rubriques dans leur travail quotidien peuvent être invités à savoir si cette rubrique leur était utile. Le système examine ces réponses et les utilise pour améliorer la mise en évidence des rubriques et aider à déterminer ce qui est affiché dans les résumés des rubriques et dans les détails de la rubrique.
+Les utilisateurs que vous autorisez à consulter les rubriques dans le cadre de leur travail quotidien peuvent se voir demander si la rubrique leur a été utile. Le système examine ces réponses et les utilise pour améliorer la mise en évidence de la rubrique, et vous aider à déterminer ce qui est affiché sur les résumés de rubrique et les détails des rubriques.
 
-En outre, les utilisateurs ayant les autorisations adéquates peuvent baliser des éléments tels que Yammer conversation pertinente pour une rubrique et les ajouter à une rubrique spécifique. 
+En outre, les utilisateurs ayant les autorisations appropriées peuvent identifier les éléments, tels que les conversations Yammer, qui sont pertinents pour un sujet, et les ajouter à une rubrique spécifique. 
 
-Voir [la découverte et la curation des rubriques](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Consultez [Découverte et traitement de rubrique](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
 
 ## <a name="see-also"></a>Voir aussi

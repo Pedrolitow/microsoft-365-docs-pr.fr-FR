@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Pré-travail lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: e922cf3b5599e81905499db60000c5b5f34b69ad
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 5110c6bd86d5df35a7ceccb4abfedf059cb826d0
+ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712269"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "50826175"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Pré-travail pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -44,11 +44,12 @@ Utilisez ces liens pour obtenir les étapes préalables au travail pertinentes p
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Préparez-vous à informer les utilisateurs du redémarrage et de la signature de leurs clients après la migration. | Les licences client Office passeront de Microsoft Cloud Deutschland aux services Office 365 lors de la migration. Les clients sélectionnent une nouvelle licence valide après s’être désoyé et s’être mis en place avec les clients Office. | Les produits Office des utilisateurs doivent actualiser les licences à partir des services Office 365. Si les licences ne sont pas actualisées, les produits Office peuvent faire l’expérience d’erreurs de validation de licence. |
+| Préparez-vous à informer les utilisateurs du redémarrage et de la signature de leurs clients après la migration. | Les licences client Office passeront de Microsoft Cloud Deutschland aux services Office 365 lors de la migration. Les clients sélectionnent une nouvelle licence valide après s’être désoyé des clients Office et s’y sont mis. | Les produits Office des utilisateurs doivent actualiser les licences à partir des services Office 365. Si les licences ne sont pas actualisées, les produits Office peuvent faire l’expérience d’erreurs de validation de licence. |
 | Assurez-vous que la connectivité réseau aux URL et adresses IP des [services Office 365](https://aka.ms/o365urls). | Tous les clients et services hébergés par le client qui sont utilisés pour accéder au service Office 365 doivent pouvoir accéder aux points de terminaison des services globaux Office 365. <br>Dans le cas où, vous ou vos partenaires de collaboration avez des règles de pare-feu en place qui empêcheraient l’accès aux URL et adresses IP répertoriées dans les URL et adresses IP des [services Office 365](https://aka.ms/o365urls) doivent modifier les règles de pare-feu pour autoriser l’accès aux points de terminaison du service global Office 365| Des défaillances du service ou du logiciel client peuvent se produire si cette étape n’est pas effectuée avant la phase 4  |
 | Annulez les abonnements à la version d’essai. | Les abonnements d’essai ne seront pas migrés et bloqueront le transfert des abonnements payants. | Les services d’essai ont expiré et ne fonctionnent pas si les utilisateurs y accèdent après l’annulation. |
 | Analysez les différences de fonctionnalités de licence entre Microsoft Cloud Deutschland et les services Office 365. | Les services Office 365 incluent des fonctionnalités et des services supplémentaires qui ne sont pas disponibles dans microsoft Cloud Deutschland actuel. Pendant le transfert d’abonnement, de nouvelles fonctionnalités seront disponibles pour les utilisateurs. | <ul><li> Analysez les différentes fonctionnalités fournies par les licences pour Microsoft Cloud Deutschland et les services Office 365. Commencez par la description du service de la [plateforme Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description) </li><li> Déterminez si les nouvelles fonctionnalités des services Office 365 doivent être initialement désactivées pour limiter les effets sur les utilisateurs ou sur la gestion des changements d’utilisateurs, et modifiez les attributions de licence utilisateur selon vos besoins. </li><li>Préparez les utilisateurs et le personnel du service d’aide aux nouveaux services et fonctionnalités fournis par les services Office 365. |
 | Créer des stratégies de [rétention à l’échelle de](https://docs.microsoft.com/microsoft-365/compliance/retention) l’organisation pour vous protéger contre la suppression accidentelle de contenu pendant la migration.  |<ul><li>Pour s’assurer que le contenu n’est pas supprimé par inadvertance par les utilisateurs finaux pendant la migration, les clients peuvent choisir d’activer une stratégie de rétention à l’échelle de l’organisation. </li><li>Bien que la rétention ne soit pas requise, dans la mesure où les conservations placées à tout moment pendant la migration doivent fonctionner comme prévu, l’emploi d’une stratégie de rétention est un mécanisme de sécurité de protection de la protection. En même temps, une stratégie de rétention peut ne pas être utilisée par tous les clients, en particulier ceux qui sont préoccupés par la conservation.</li></ul>| Appliquez la stratégie de rétention comme décrit dans [En savoir plus sur les stratégies de rétention et les étiquettes de rétention.](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) Des défaillances du service ou du logiciel client peuvent se produire si cette étape n’est pas effectuée avant la phase 4 sur 9. </li></ul>|
+| Corriger les surdessages de licence | Dans certains cas, les clients peuvent consommer plus de services qu’ils n’en ont achetés. Cette condition est connue sous le nom de sur-utilisation de licence. Microsoft ne peut pas migrer les clients dans une condition de sur-licence de Microsoft Cloud Deutschland vers les régions de centres de données allemandes. Pour garantir un accès continu au service et aux données, chaque utilisateur affecté a besoin d’une licence. | Tous les clients | Les clients doivent évaluer et résoudre la condition de surdessage de licence par le biais de l’achat de licences supplémentaires ou en désattribuant des licences aux utilisateurs. |
 |||||
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Services AD FS (Active Directory Federation Services)
@@ -80,12 +81,12 @@ Utilisez ces liens pour obtenir les étapes préalables au travail pertinentes p
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-**S’applique** à : Clients qui utilisent SharePoint 2013 en local
+**S’applique** à : Clients utilisant SharePoint 2013 en local
 
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Limitez les flux de travail SharePoint 2013, utilisés pendant la migration SharePoint Online. | Réduisez les flux de travail SharePoint 2013 et terminez les flux de travail en cours avant les transitions. | L’inaction peut semer la confusion chez l’utilisateur et entraîner des appels au service d’aide. |
+| Limiter les flux de travail SharePoint 2013, utilisés pendant la migration SharePoint Online. | Réduisez les flux de travail SharePoint 2013 et terminez les flux de travail en cours avant les transitions. | L’inaction peut semer la confusion chez l’utilisateur et entraîner des appels au service d’aide. |
 ||||
 
 ## <a name="skype-for-business-online"></a>Skype Entreprise Online
@@ -96,7 +97,7 @@ Utilisez ces liens pour obtenir les étapes préalables au travail pertinentes p
 |:-------|:-------|:-------|
 | Déployez le client de bureau Teams pour les utilisateurs qui accèdent à Skype Entreprise en Allemagne. | La migration déplace les utilisateurs de Skype Entreprise vers Microsoft Teams pour la collaboration, l’appel et la conversation. Déployez le client de bureau Microsoft Teams ou assurez-vous qu’un navigateur pris en charge est disponible. | L’inaction entraîne l’indisponibilité des services de collaboration Microsoft Teams. |
 | Examiner et préparer les modifications DNS liées à la migration. | La zone DNS du client change pour Skype Entreprise Online. |<ul><li>Nous vous recommandons de mettre à jour la durée de vie (TTL) de tous les enregistrements DNS de domaine d’un client sur 5 minutes pour accélérer l’actualisation des enregistrements DNS. Toutefois, le cutover géré par Microsoft associé à cette modification DNS peut se produire à tout moment dans la fenêtre de modification de 24 heures fournie. </li><li>La perturbation du service est possible à l’avenir. Les utilisateurs ne pourront pas se connecter à Skype Entreprise et seront redirigés vers l’expérience De Teams migrée dans les services Office 365. </li></ul>|
-| Préparez la formation et la préparation de l’utilisateur final et de l’administration pour la transition vers Microsoft Teams. | Pour réussir votre transition de Skype vers Teams, planifiez la communication et la préparation des utilisateurs. | <ul><li>Les clients doivent connaître les nouveaux services et savoir comment les utiliser une fois que leurs services sont transitionn s vers les services Office 365. </li><li>Une fois que les modifications DNS ont été apportées à la fois pour les domaines professionnels du client et le domaine initial, les utilisateurs se connectent à Skype Entreprise et voient qu’ils sont désormais migrés vers Teams. Cela télécharge également le client de bureau pour Teams en arrière-plan. </li></ul>|
+| Préparez la formation et la préparation de l’utilisateur final et de l’administration pour la transition vers Microsoft Teams. | Pour réussir votre transition de Skype vers Teams, planifiez la communication et la préparation des utilisateurs. | <ul><li>Les clients doivent connaître les nouveaux services et savoir comment les utiliser une fois que leurs services sont transitionn s vers les services Office 365. </li><li>Une fois que les modifications DNS ont été apportées à la fois pour les domaines de service client et le domaine initial, les utilisateurs se connectent à Skype Entreprise et voient qu’ils sont désormais migrés vers Teams. Cela télécharge également le client de bureau pour Teams en arrière-plan. </li></ul>|
 ||||
 
 ## <a name="mobile"></a>Mobile
@@ -145,8 +146,8 @@ Supprimez MSOID, CName du DNS propriétaire du client s’il existe à tout mome
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Ajoutez un identificateur pour l' sign-on unique (SSO) à une confiance de partie de confiance existante et désactivez les mises à jour automatiques des métadonnées AD FS. | Un ID doit être ajouté à l’confiance de la partie de confiance AD FS avant de commencer la migration. Pour éviter la suppression accidentelle de l’identificateur de partie de confiance, désactivez la mise à jour automatique pour les mises à jour des métadonnées. <br><br> Exécutez cette commande en tant que ligne de commande unique sur le serveur AD FS : <br>`Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de', 'https://login.microsoftonline.de/extSTS.srf', 'https://login.microsoftonline.de') -AutoUpdate $False`
-| Organisations d’authentification fédérée | Action requise. Inaction before Phase 4 of 9 (SharePoint) will result in service impact during the migration.  |
+| Ajoutez un identificateur pour l' sign-on unique (SSO) à une confiance de partie de confiance existante et désactivez les mises à jour automatiques des métadonnées AD FS. | Un ID doit être ajouté à l’confiance de partie de confiance AD FS avant de commencer votre migration. Pour éviter la suppression accidentelle de l’identificateur de partie de confiance, désactivez la mise à jour automatique pour les mises à jour des métadonnées. <br><br> Exécutez cette commande en tant que ligne de commande unique sur le serveur AD FS : <br>`Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de', 'https://login.microsoftonline.de/extSTS.srf', 'https://login.microsoftonline.de') -AutoUpdate $False`
+| Organisations d’authentification fédérée | Action requise. L’inaction avant la phase 4 sur 9 (SharePoint) aura un impact sur le service pendant la migration.  |
 | Générer une confiance de partie de confiance pour les points de terminaison Azure AD globaux. | Les clients doivent créer manuellement une relation d’confiance (RPT) vers les [points de](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) terminaison globaux. Pour ce faire, vous ajoutez une nouvelle rpt via l’interface graphique en tirant parti de l’URL de métadonnées de fédération globale, puis en utilisant les règles de revendication [rpt Azure AD](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (dans l’aide AD FS) pour générer les règles de revendication et les importer dans la rpt. | Organisations d’authentification fédérée | Action requise. L’inaction aura un impact sur le service pendant la migration. |
 |||||
 
