@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Découvrez comment utiliser la fonctionnalité Statistiques de recherche pour afficher et comparer des statistiques pour plusieurs recherches de contenu dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7faf956aaec5619655818036b969086e0af0c6a
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: f12c51c47045996e450772c081bd26ef4a520b5f
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49987829"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838697"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 
@@ -99,11 +99,11 @@ Pour afficher des statistiques pour les recherches de contenu :
     
     b. Type d’emplacement de contenu applicable aux statistiques d’emplacement.
     
-    c. Il existe des colonnes pour chaque recherche pour qui vous affichez des statistiques. Cette colonne indique le nombre (et la taille totale) des éléments qui correspondent à la requête de recherche à chaque emplacement de contenu. Notez que lorsque vous affichez des statistiques pour plusieurs recherches, le « NA » dans cette colonne indique que l’emplacement du contenu n’a pas été inclus dans cette recherche. 
+    c. Il existe des colonnes pour chaque recherche pour qui vous affichez des statistiques. Cette colonne indique le nombre (et la taille totale) d’éléments qui correspondent à la requête de recherche dans chaque emplacement de contenu. Notez que lorsque vous affichez des statistiques pour plusieurs recherches, le « NA » dans cette colonne indique que l’emplacement du contenu n’a pas été inclus dans cette recherche. 
 
 ## <a name="get-keyword-statistics-for-content-searches"></a>Obtenir des statistiques sur les mots clés pour les recherches de contenu
 
-Comme expliqué précédemment, la page **Requêtes** affiche la requête de recherche et le nombre (et la taille) d’éléments qui correspondent à la requête. Si vous utilisez une liste de mots clés lorsque vous créez ou modifiez une requête de recherche, vous pouvez obtenir des statistiques améliorées qui indiquent le nombre d’éléments qui correspondent à chaque mot clé ou expression de mot clé. Cela peut vous aider à identifier rapidement les parties de la requête qui sont les plus (et les moins) efficaces. Par exemple, si un mot clé renvoie un grand nombre d’éléments, vous pouvez choisir d’affiner la requête de mot clé pour affiner les résultats de la recherche. Vous pouvez configurer une liste de mots clés lorsque vous créez ou modifiez une recherche de contenu. 
+Comme expliqué précédemment, **la** page Requêtes affiche la requête de recherche et le nombre (et la taille) d’éléments qui correspondent à la requête. Si vous utilisez une liste de mots clés lorsque vous créez ou modifiez une requête de recherche, vous pouvez obtenir des statistiques améliorées qui indiquent le nombre d’éléments qui correspondent à chaque mot clé ou expression de mot clé. Cela peut vous aider à identifier rapidement les parties de la requête qui sont les plus (et les moins) efficaces. Par exemple, si un mot clé renvoie un grand nombre d’éléments, vous pouvez choisir d’affiner la requête de mot clé pour affiner les résultats de la recherche. Vous pouvez configurer une liste de mots clés lorsque vous créez ou modifiez une recherche de contenu. 
 
 Pour créer une liste de mots clés et afficher des statistiques de mots clés pour une recherche de contenu :
   
@@ -117,13 +117,13 @@ Pour créer une liste de mots clés et afficher des statistiques de mots clés p
   
     a. Cliquez sur la **case à cocher Afficher la liste des** mots clés. 
     
-    b. Tapez une phase de mot clé ou de mot clé dans une ligne du tableau des mots clés. Par exemple, tapez **budget dans** la première ligne, puis tapez **sécurité** dans la deuxième ligne. 
+    b. Tapez une phase de mot clé ou de mot clé dans une ligne du tableau des mots clés. Par exemple, tapez **budget** dans la première ligne, puis tapez **sécurité** dans la deuxième ligne. 
     
 4. Après avoir ajouté les mots clés que vous souhaitez rechercher et obtenir des statistiques, cliquez sur **Rechercher** pour exécuter la recherche révisée. 
     
-5. Lorsque la recherche est terminée, sélectionnez-la dans  la liste des recherches, puis cliquez sur le bouton Statistiques de recherche des statistiques ![ de ](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) recherche. Vous pouvez également afficher et comparer des statistiques de mots clés pour plusieurs recherches.
+5. Lorsque la recherche est terminée, sélectionnez-la dans  la liste des recherches, puis cliquez sur le bouton Statistiques de recherche statistiques ![ de ](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) recherche. Vous pouvez également afficher et comparer des statistiques de mots clés pour plusieurs recherches.
     
-6. Dans la page **Statistiques de** recherche, cliquez **sur Requête** pour afficher les statistiques de mot clé pour les recherches sélectionnées. 
+6. Dans la page **Statistiques de recherche,** cliquez **sur Requête** pour afficher les statistiques de mot clé pour les recherches sélectionnées. 
     
     ![Les statistiques de chaque mot clé pour les recherches sélectionnées sont affichées](../media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
   

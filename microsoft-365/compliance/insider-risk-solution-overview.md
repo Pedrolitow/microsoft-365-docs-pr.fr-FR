@@ -1,5 +1,5 @@
 ---
-title: Solution de risque interne
+title: Solutions de risques internes
 description: Découvrez comment réduire les risques au niveau de votre organisation avec des solutions à risque internes dans Microsoft 365.
 keywords: Microsoft 365, risques internes, conformité
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 858b4a05dd65b0a32d672882e6ec18188c0cce81
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: c40c30c44e5b8010112adc11d7faee49563761bf
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423939"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838269"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Solutions de risque interne dans Microsoft 365
 
@@ -42,7 +42,7 @@ Les fonctionnalités de prévention des risques de Microsoft 365 sont conçues e
 | ![Insider trading/handshake icon](../media/ir-risk-insider-trading.png)| Délit d’initié | ![Pris en charge](../media/check-mark.png) |  |  |  |
 | ![Icône Conflits d’intérêt](../media/ir-risk-conflicts-of-interest.png)| Conflits d’intérêt | ![Pris en charge](../media/check-mark.png) |  | ![Pris en charge](../media/check-mark.png) |  |
 | ![Icône Fuites de données sensibles/Appareils](../media/ir-risk-sensitive-data-leaks.png)| Fuites de données sensibles | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |  |
-| ![Icône Harcèlement professionnel/personnes](../media/ir-risk-workplace-harassment.png)| Harcèlement au travail | ![Pris en charge](../media/check-mark.png) |  |  |  |
+| ![Icône harcèlement/personnes en milieu de travail](../media/ir-risk-workplace-harassment.png)| Harcèlement au travail | ![Pris en charge](../media/check-mark.png) |  |  |  |
 | ![Icône Violations de sécurité](../media/ir-risk-security-violations.png)| Violations de sécurité |  | ![Pris en charge](../media/check-mark.png) |  | ![Pris en charge](../media/check-mark.png) |
 | ![Icône Violations de conformité réglementaire](../media/ir-risk-regulatory-compliance-violations.png)| Violations de la conformité avec la réglementation | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |
 
@@ -52,7 +52,7 @@ Pour protéger votre organisation contre les risques internes, utilisez ces fonc
 
 ### <a name="communication-compliance"></a>Conformité des communications
 
-La conformité des communications permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. La conformité des communications est disponible dans les abonnements suivants :
+La conformité des communications vous permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. La conformité des communications est disponible dans les abonnements suivants :
 
 - Abonnement Microsoft 365 E5 (version payante ou d’essai)
 - Abonnement Microsoft 365 E3 + module de conformité Microsoft 365 E5
@@ -128,7 +128,7 @@ Pour protéger votre organisation contre les risques internes, configurer et dé
 
 ## <a name="illustrations-with-examples"></a>Illustrations avec exemples
 
-Pour vous aider à planifier une stratégie intégrée pour l’implémentation des fonctionnalités de risques internes Microsoft 365, téléchargez l’ensemble d’illustrations des fonctionnalités de protection et de conformité des informations *Microsoft 365.* Pour les fonctionnalités de risque internes, consultez les pages d’illustration de l’architecture 5 à 7. N’hésitez pas à les adapter à votre usage personnel.
+Pour vous aider à planifier une stratégie intégrée pour l’implémentation des fonctionnalités de risque interne Microsoft 365, téléchargez l’ensemble d’illustrations des fonctionnalités de protection et de conformité des informations *Microsoft 365.* Pour les fonctionnalités de risque internes, consultez les pages d’illustration de l’architecture 5 à 7. N’hésitez pas à les adapter à votre usage personnel.
 
 | Item | Description |
 |:-----|:------------|

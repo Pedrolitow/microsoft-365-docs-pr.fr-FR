@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Découvrez la gouvernance de l’accès dans les groupes Microsoft 365, Teams et SharePoint.
-ms.openlocfilehash: fb1bec219ef0d27c2a908f5f385185a1a70e01e1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 24a8a43f05206c9f1c0cd07aef480b330d968935
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613465"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838708"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Gouvernance de l’accès dans les groupes Microsoft 365, Teams et SharePoint
 
@@ -37,7 +37,7 @@ Le tableau suivant fournit une référence rapide pour les contrôles d’accès
 |Accès conditionnel|||
 ||Authentification multifacteur|[Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Contrôler l’accès aux appareils en fonction de la sensibilité au groupe, à l’équipe ou au site.|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
-||Limiter l’accès au site pour les appareils non utilisés.|[Contrôler l’accès à SharePoint à partir d’appareils nonmanagés](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
+||Limiter l’accès au site pour les appareils non utilisés.|[Contrôler l’accès à SharePoint à partir d’appareils non utilisés](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
 ||Contrôler l’accès au site en fonction de l’emplacement|[Contrôler l’accès aux données SharePoint et OneDrive en fonction de l’emplacement réseau](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
 |Accès invité|||
 ||Autoriser ou bloquer le partage SharePoint à partir de domaines spécifiés.|[Restreindre le partage de contenu SharePoint et OneDrive par domaine](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)|
@@ -60,7 +60,7 @@ L’appartenance aux équipes et aux groupes est contrôlée par les propriétai
 
 - [Gérer la découverte d’équipes privées dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)
 
-Vous pouvez gérer l’appartenance d’un groupe ou d’une équipe dynamiquement en fonction de certains critères, tels que le service. Dans ce cas, les membres et les propriétaires ne peuvent pas inviter des personnes à l’équipe.
+Vous pouvez gérer l’appartenance d’un groupe ou d’une équipe dynamiquement en fonction de certains critères, tels que le service. Dans ce cas, les membres et les propriétaires ne peuvent pas inviter des personnes à l’équipe. Les groupes dynamiques utilisent les métadonnées que vous définissez dans Azure Active Directory pour contrôler qui est membre du groupe. Assurez-vous que les métadonnées que vous utilisez sont complètes et à jour, car des métadonnées incorrectes peuvent entraîner l’ajout d’utilisateurs en dehors des groupes ou d’utilisateurs incorrects.
 
 - [Créer ou mettre à jour un groupe dynamique dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
 
@@ -90,7 +90,7 @@ Ressources supplémentaires :
 
 - [Présentation de Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)
 
-- [Contrôler l’accès à SharePoint à partir d’appareils nonmanagés](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
+- [Contrôler l’accès à SharePoint à partir d’appareils non utilisés](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
 
 
 ## <a name="guest-access"></a>Accès invité
@@ -121,6 +121,10 @@ Les groupes et Teams ont des paramètres au niveau de l’organisation qui autor
 
 - [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
+Dans un environnement où vous invitez fréquemment des invités à des groupes et des équipes, envisagez de mettre en place des révisions d’accès invité régulièrement programmées. Les propriétaires peuvent être invités à passer en revue les invités de leurs groupes et équipes, et à approuver ou refuser l’accès.
+
+- [Configurer les révisions d’accès invité](/microsoft-365/solutions/create-secure-guest-sharing-environment#set-up-guest-access-reviews)
+
 Microsoft 365 propose de nombreuses méthodes de partage d’informations. Si vous avez des informations sensibles et que vous souhaitez limiter leur partage, examinez les options de limitation du partage :
 
 - [Limiter le partage dans Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-limit-sharing)
@@ -135,7 +139,7 @@ Ressources supplémentaires :
 
 - [Créer un environnement de partage sécurisé avec des invités](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
 
-- [Activer la collaboration externe B2B et gérer les personnes qui peuvent inviter des invités](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations)
+- [Activer la collaboration externe B2B, puis gérer les utilisateurs pouvant avoir des invités](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations)
 
 ## <a name="user-management"></a>Gestion des utilisateurs
 
@@ -163,7 +167,7 @@ Ressources supplémentaires :
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
-[Sécurité et conformité dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Sécurité et de la conformité dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
 
 [Gérer les paramètres de partage dans SharePoint](https://docs.microsoft.com/sharepoint/turn-external-sharing-on-or-off)
 
