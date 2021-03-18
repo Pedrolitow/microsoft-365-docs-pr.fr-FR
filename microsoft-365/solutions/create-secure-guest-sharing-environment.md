@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667704"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838687"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -45,7 +45,7 @@ Notez que nous n'aborderons pas l'activation des paramètres de partage des invi
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>Configurer l'authentification multifacteur pour les invités.
 
-L’authentification multifacteur réduit considérablement les risques de compromission d’un compte. Étant donné que les utilisateurs invités peuvent utiliser des comptes de messagerie personnels qui ne sont soumis à aucune stratégie de gouvernance ou pratique exemplaire, il est particulièrement important d’exiger une authentification multifacteur pour les invités. En cas de vol du nom d'utilisateur et du mot de passe d'un utilisateur invité, la nécessité d'un second facteur d'authentification réduit considérablement les chances de voir des inconnus accéder à vos sites et fichiers.
+L’authentification multifacteur réduit considérablement les risques de compromission d’un compte. Puisque les invités peuvent utiliser des comptes d’e-mail personnels qui n’adhère à aucune stratégie de gouvernance ou bonne pratique, il est particulièrement important d’exiger une authentification multifacteur pour les invités. En cas de vol du nom d'utilisateur et du mot de passe d’un invité, la nécessité d’un second facteur d'authentification réduit considérablement les chances de voir des inconnus accéder à vos sites et fichiers.
 
 Dans cet exemple, nous allons configurer l’authentification multifacteur pour les invités à l’aide d’une stratégie d’accès conditionnel dans Azure Active Directory.
 
@@ -70,7 +70,7 @@ Les invités doivent maintenant s'inscrire à l'authentification multifacteur av
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Configurer les conditions d’utilisation pour les invités
 
-Dans certains cas, Il arrive souvent que des utilisateurs invités n'aient pas signé de contrat de non-divulgation ou autres accords juridiques avec votre organisation. Vous pouvez demander aux invités d’accepter les conditions d’utilisation avant d’accéder aux fichiers partagés avec eux. Les conditions d’utilisation peuvent s’afficher lors de la première tentative d’accès à un fichier ou à un site partagé.
+Dans certains cas, Il arrive souvent que des invités n'aient pas signé de contrat de non-divulgation ou d’autres accords juridiques avec votre organisation. Vous pouvez demander aux invités d’accepter les conditions d’utilisation avant d’accéder aux fichiers partagés avec eux. Les conditions d’utilisation peuvent s’afficher lors de la première tentative d’accès à un fichier ou à un site partagé.
 
 Pour créer des conditions d’utilisation, vous devez commencer par créer le document dans Word ou dans un autre logiciel de création, puis l’enregistrer sous forme de fichier .pdf. Ce fichier peut ensuite être chargé sur Azure AD.
 
@@ -89,7 +89,7 @@ Pour créer des conditions d’utilisation d’Azure AD, procédez comme suit :
 9. Sous **Accès conditionnel**, dans la liste **Appliquer le modèle de stratégie sur l'accès conditionnel**, choisissez **Créer une stratégie d'accès conditionnel ultérieurement**.
 10. Cliquez sur **Créer**.
 
-Une fois que vous avez créé les conditions d’utilisation, l’étape suivante consiste à créer une stratégie d’accès conditionnel qui affiche les conditions d’utilisation des utilisateurs invités.
+Une fois que vous avez créé les conditions d’utilisation, l’étape suivante consiste à créer une stratégie d’accès conditionnel qui affiche les conditions d’utilisation sur les systèmes des utilisateurs invités.
 
 Pour créer une stratégie d’accès conditionnel, procédez comme suit :
 
@@ -105,7 +105,7 @@ Pour créer une stratégie d’accès conditionnel, procédez comme suit :
 10. Dans le panneau **Accorder**, sélectionnez **Conditions d’utilisation de l’invité**, puis cliquez sur **Sélectionner**.
 11. Dans le panneau **Nouveau**, sous **Activer la stratégie**, cliquez sur **Activer**, puis sur **Créer**.
 
-À présent, la première fois qu’un utilisateur invité tente d’accéder au contenu, à une équipe ou à un site de votre organisation, il est tenu d’accepter les conditions d’utilisation.
+À présent, la première fois qu’un invité tente d’accéder au contenu, à une équipe ou à un site de votre organisation, il est tenu d’accepter les conditions d’utilisation.
 
 > [!NOTE]
 > L’utilisation de l’accès conditionnel nécessite une licence Azure AD Premium P1. Pour en savoir plus, consultez l'article [Qu’est-ce que l’accès conditionnel ?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
@@ -116,39 +116,32 @@ Pour créer une stratégie d’accès conditionnel, procédez comme suit :
 
 ## <a name="set-up-guest-access-reviews"></a>Configurer les révisions d’accès invité
 
-Avec les révisions d’accès dans Azure AD, vous pouvez automatiser une révision périodique de l’accès des utilisateurs à plusieurs équipes et groupes. En exigeant spécifiquement une révision d’accès pour les invités, vous pouvez vous assurer que les utilisateurs invités ne conservent pas l’accès aux informations sensibles de votre organisation plus longtemps que nécessaire.
+Avec les révisions d’accès dans Azure AD, vous pouvez automatiser une révision périodique de l’accès des utilisateurs à plusieurs équipes et groupes. En exigeant spécifiquement une révision d’accès pour les invités, vous pouvez veiller à ce que les invités ne conservent pas l’accès aux informations sensibles de votre organisation plus longtemps que nécessaire.
 
-Les révisions d’accès peuvent être organisées en programmes. Un programme est un regroupement de révisions d’accès similaires qui peut être utilisé pour organiser des révisions d’accès à des fins de création de rapports et d’audit.
-
-Pour créer un nouveau programme, procédez comme suit :
-
-1. Connectez-vous au Portail Microsoft Azure et ouvrez l’onglet [Page de Gouvernance d’identité](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
-2. Dans le menu de gauche, cliquez sur **Programmes**
-3. Cliquez sur **Nouveau programme**.
-4. Tapez un **Nom**  et **Description**.
-5. Cliquez sur **Créer**.
-
-Une fois le programme a été créé, nous pouvons créer une révision d’accès invité et l’associer au programme.
-
-Pour configurer une révision d’accès des utilisateurs invités, procédez comme suit :
+Configurer une révision d’accès des invités
 
 1. Sur la [Page de Gouvernance d’identité](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), dans le menu de gauche, cliquez sur **Révisions d’accès**.
 2. Cliquez sur **Nouvelle révision d’accès**.
+3. Sélectionnez l’option **Équipes + groupes**.
+4. Sélectionnez l'option **Tous les groupes Microsoft 365 avec des utilisateurs invités**. Cliquez sur **Sélectionner les groupes à exclure** si vous voulez exclure des groupes.
+5. Sélectionnez l'option **Uniquement les utilisateurs invités**, puis cliquez sur **Suivant : Révisions**.
+6. Sous **Sélectionner les réviseurs**, sélectionnez **Propriétaires du groupe**.
+7. Cliquez sur **Sélectionner les réviseurs de secours**, choisissez les réviseurs, puis cliquez sur **Sélectionner**.
+8. Sous **Spécifier la périodicité de l'évaluation**, choisissez **Trimestriel**.
+9. Sélectionnez une date de début et une durée.
+10. Pour **Fin**, sélectionnez **Jamais**, puis cliquez sur **Suivant : Paramètres**.
 
-   ![Capture d’écran des paramètres de révision d’accès d’Azure AD](../media/azure-ad-create-access-review.png)
+    ![Capture d’écran de l’onglet Révision de l’accès à Azure AD](../media/azure-ad-create-access-review.png)
 
-3. Dans le champ **Nom**, tapez un nom.
-4. Pour **Fréquence**, choisissez **Trimestrielle**.
-5. Pour **Fin**, choisissez **Jamais**.
-6. Pour **Portée**, choisissez **Utilisateurs invités uniquement**.
-7. Cliquez sur **Groupe**, sélectionnez les groupes que vous voulez inclure dans la révision Access, puis cliquez sur **Sélectionner**.
-8. Sous **Programmes**, cliquez sur **Lier au programme**.
-9. Dans le panneau **Sélectionner un programme**, choisissez **Programme de révision d’accès invité**
-10. Cliquez sur **Démarrer**.
+11. Sous l’onglet **Paramètres**, examinez les paramètres de conformité aux règles de votre entreprise.
 
-Une révision d’accès distincte est créée pour chaque groupe que vous spécifiez. Les propriétaires de groupe de chaque groupe recevront un e-mail trimestriel pour accepter ou refuser l'accès invité à leurs groupes.
+    ![Capture d’écran de l’onglet des paramètres de révision d’accès d’Azure AD](../media/azure-ad-create-access-review-settings.png)
 
-Il est important de noter que les invités peuvent avoir accès à des équipes ou à des groupes, ou à des fichiers et dossiers individuels. Lorsque l'accès aux fichiers et dossiers leur est accordé, les invités ne peuvent pas être ajoutés à un groupe particulier. Si vous souhaitez effectuer des révisions d’accès sur des utilisateurs invités qui n'appartiennent ni à une équipe ni à un groupe, vous pouvez créer un groupe dynamique dans Azure AD pour contenir tous les invités, puis créer une révision d’accès pour ce groupe. Les propriétaires de site peuvent également gérer l’[expiration des invités pour le site](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
+12. Cliquez sur **Suivant : Révision + Créer**.
+13. Tapez un **nom de révision**, puis examinez les paramètres.
+14. Cliquez sur **Créer**.
+
+Il est important de noter que les invités peuvent avoir accès à des équipes ou à des groupes, ou à des fichiers et dossiers individuels. Lorsque l'accès aux fichiers et dossiers leur est accordé, les invités ne peuvent pas être ajoutés à un groupe particulier. Si vous souhaitez effectuer des révisions d’accès sur des invités qui n'appartiennent ni à une équipe ni à un groupe, vous pouvez créer un groupe dynamique dans Azure AD pour contenir tous les invités, puis créer une révision d’accès pour ce groupe. Les propriétaires de site peuvent également gérer l’[expiration des invités pour le site](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
 
 ### <a name="more-information"></a>Plus d’informations
 
@@ -156,9 +149,9 @@ Il est important de noter que les invités peuvent avoir accès à des équipes 
 
 [Créer une révision d'accès de groupes ou d'applications dans les révisions d'accès Azure AD](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
 
-## <a name="set-up-web-only-access-for-guest-users"></a>Configurer l’accès Web uniquement pour les utilisateurs invités
+## <a name="set-up-web-only-access-for-guests"></a>Configurer l’accès Web uniquement pour les invités
 
-Vous pouvez réduire votre surface d'attaque et simplifier l'administration en demandant aux utilisateurs invités d'accéder à vos équipes, sites et fichiers en utilisant uniquement un navigateur Web.
+Vous pouvez réduire votre surface d'attaque, puis simplifier l'administration en demandant aux invités d'accéder à vos équipes, sites et fichiers en utilisant uniquement un navigateur Web.
 
 Pour les groupes et équipes Microsoft 365, cette opération s’effectue à l’aide d’une stratégie d’accès conditionnel Azure AD. Pour SharePoint, celui-ci est configuré dans le centre d’administration SharePoint. (Vous pouvez également [utiliser des étiquettes de confidentialité pour restreindre l’accès web uniquement aux invités](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
 
@@ -192,9 +185,9 @@ Pour limiter l'accès web uniquement aux invités pour SharePoint
 
 Notez que ce paramètre dans le Centre d’administration SharePoint crée une stratégie d’accès conditionnel de prise en charge dans Azure AD.
 
-## <a name="configure-a-session-timeout-for-guest-users"></a>Configurer un délai d’expiration de session pour les utilisateurs invités
+## <a name="configure-a-session-timeout-for-guests"></a>Configurer une stratégie de délai d’expiration de session pour les invités
 
-Exiger des invités qu'ils s'authentifient régulièrement peut réduire le risque que des utilisateurs inconnus accèdent au contenu de votre organisation si l'appareil d'un utilisateur invité n'est pas sécurisé. Vous pouvez configurer une stratégie d’accès conditionnel de délai d’expiration de session pour les utilisateurs invités dans Azure AD.
+Exiger des invités qu’ils s’authentifient régulièrement peut réduire le risque que des utilisateurs inconnus accèdent au contenu de votre organisation si l'appareil d'un invité n'est pas sécurisé. Vous pouvez configurer une stratégie d’accès conditionnel de délai d’expiration de session pour les invités dans Azure AD.
 
 Pour configurer une stratégie de délai d’expiration de session d’invité, procédez comme suit :
 

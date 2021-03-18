@@ -2,8 +2,8 @@
 title: Niveau de productivité Microsoft
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de niveau de productivité Microsoft.
-ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509085"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838424"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 
-Le score de productivité prend en charge les transformations numériques avec des informations sur la manière dont votre organisation utilise Microsoft 365 et les expériences technologiques qui la prennent en charge. Le score de votre organisation reflète les évaluations de l’expérience des personnes et technologies et peut être comparé aux benchmarks d’organisations d’une taille semblable à la vôtre.
+Le score de productivité prend en charge les transformations numériques avec des informations sur la manière dont votre organisation utilise Microsoft 365 et les expériences technologiques qui la prennent en charge. Le score de votre organisation reflète les évaluations de l’expérience des personnes et technologies, et vous pouvez le comparer aux benchmarks d’organisations d’une taille semblable à la vôtre.
 
 Elle offre les éléments suivants :
 
@@ -72,7 +72,7 @@ Le niveau de productivité inclut les données d’Exchange, SharePoint, OneDriv
 Le score de votre organisation est mis à jour quotidiennement et reflète les actions des utilisateurs effectuées au cours des 28 derniers jours (y compris le jour actuel).
 
 
-## <a name="pre-requisites"></a>Conditions préalables 
+## <a name="prerequisites"></a>Conditions préalables 
 
 Pour les données sur les expériences des personnes, vous avez besoin d’un abonnement Microsoft 365 Entreprise ou Office 365 Entreprise. Pour les données d’analyse de point de terminaison de votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune vous permet de protéger les données de votre organisation en gérant les appareils et les applications. Une fois que vous disposez d’Intune, vous pouvez activer les analyses de point de terminaison au sein de l’expérience Intune. Apprenez-en davantage sur la fonctionnalité [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
@@ -92,9 +92,9 @@ La note de productivité est disponible uniquement dans le Centre d’administra
 > [!NOTE]
 > Seul un professionnel de l’informatique ayant le rôle Administrateur général peut s’inscrire à un client ou accepter un client pour le niveau de productivité.
 
-Notez que les informations sont uniquement destinées à être utilisées pour améliorer la transformation numérique à l’aide de Microsoft 365 et doivent par conséquent être partagées à votre guise. 
+Le modèle de contrôle d’accès basé sur les rôles pour le score de productivité aide les organisations à poursuivre les efforts de transformation numérique avec Microsoft 365 en offrant la flexibilité nécessaire pour attribuer des rôles aux informaticiens d’une organisation.
 
-Microsoft s’engage à protéger la confidentialité individuelle. Cet [document de confidentialité](privacy.md)  explique les contrôles que nous vous fournissons, en tant qu’administrateur informatique de votre organisation, pour s’assurer que les informations sont exploitables tout en compromettant la confiance que vous avez apportée à Microsoft.
+Microsoft s’engage à protéger la confidentialité individuelle. Ce [document de confidentialité](privacy.md) explique les contrôles que nous vous fournissons, en tant qu’administrateur informatique de votre organisation, pour vérifier que les informations sont exploitables tout en ne compromettant pas votre confiance en Microsoft.
 
 Vous pouvez accéder à l’expérience à partir de la page d’accueil d’Administration Microsoft 365 sous **Rapports** > **Niveau de productivité**.
 
