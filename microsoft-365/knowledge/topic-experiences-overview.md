@@ -23,7 +23,7 @@ ms.locfileid: "50453968"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
-Cette rubrique utilise la technologie d’IA Microsoft, Microsoft 365, Microsoft Graph, Recherche et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent tous les jours, à partir des pages modernes de SharePoint et de Recherche Microsoft.
+Rubriques Viva utilise la technologie d’IA Microsoft, Microsoft 365, Microsoft Graph, Recherche et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent tous les jours, à partir des pages modernes de SharePoint et de Recherche Microsoft.
 
 </br>
 

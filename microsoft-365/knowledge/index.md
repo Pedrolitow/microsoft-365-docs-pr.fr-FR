@@ -66,7 +66,7 @@ Les ressources de cette section aideront votre administrateur au sein de votre o
 |Découvrez comment gérer les personnes qui peuvent consulter des rubriques|[Gérer la visibilité d’une rubrique](topic-experiences-knowledge-rules.md)|
 |Découvrez comment gérer les paramètres de découverte de rubrique|[Gérer la découverte de rubriques](topic-experiences-discovery.md)|
 
-## <a name="work-with-topics"></a>Utiliser les sujets
+## <a name="work-with-topics"></a>Utiliser les rubriques
 
 Les ressources de cette section aident vos utilisateurs à utiliser et à gérer les rubriques.
 
