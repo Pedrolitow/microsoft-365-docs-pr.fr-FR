@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7dcd0ce9b439d78b79d95b3eca39d80ca440726c
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 782c4fdda7e515d921063937f59b199510beaf08
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826186"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838611"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -352,6 +352,11 @@ Informations supplémentaires sur l’étiquetage intégré :
 - Lorsque l’étiquette obligatoire est en vigueur, les utilisateurs ne peuvent pas supprimer les étiquettes de niveau de confidentialité des documents, mais peuvent modifier une étiquette existante.
 
 Pour obtenir des instructions sur l’utilisation de ce paramètre, consultez les informations sur [paramètres de stratégie](sensitivity-labels.md#what-label-policies-can-do).
+
+> [!NOTE]
+> Si vous utilisez le paramètre de stratégie d’étiquette par défaut pour les documents et messages électroniques en plus de l’étiquette obligatoire : 
+>
+> L’étiquette par défaut a toujours la priorité sur l’étiquette obligatoire. Toutefois, pour les documents, le client d’étiquetage unifié Azure Information Protection applique l’étiquette par défaut à tous les documents sans étiquettes, tandis que l’étiquette intégrée applique l’étiquette par défaut aux nouveaux documents et non aux documents existants sans étiquettes. Cette différence de comportement signifie que lorsque vous utilisez une étiquette obligatoire avec le paramètre d’étiquette par défaut, les utilisateurs sont invités à appliquer une étiquette de confidentialité plus souvent lorsqu’ils utilisent un étiquetage intégré que lorsqu’ils utilisent le client d’étiquetage unifié Azure Information Protection.
 
 ## <a name="end-user-documentation"></a>Documentation de l’utilisateur final
 
