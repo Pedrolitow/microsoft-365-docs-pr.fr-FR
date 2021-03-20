@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir comment exporter, configurer et afficher les enregistrements du journal d’audit Microsoft 365.
-ms.openlocfilehash: a7f731bb30ffdddfe7898ee4051060b8e22c093e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 4cea867b46d3bda7d3b3a8cd38f3d01938da8764
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454665"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906864"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exporter, configurer et afficher des enregistrements du journal d’audit
 
@@ -35,7 +35,7 @@ La première étape consiste à effectuer une recherche dans le journal d’audi
   
 1. Exécutez une [recherche dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log) et révisez les critères de recherche si nécessaire jusqu’à obtenir les résultats souhaités.
 
-2. Cliquez **sur Exporter les résultats,** puis **sélectionnez Télécharger tous les résultats.** 
+2. Cliquez **sur Exporter les résultats** et **sélectionnez Télécharger tous les résultats.** 
 
    ![Cliquez sur Télécharger tous les résultats](../media/ExportAuditSearchResults.png)
 
@@ -88,7 +88,7 @@ L’étape suivante consiste à utiliser la fonctionnalité de transformation JS
    > Les propriétés JSON affichées dans la capture d’écran précédente (après avoir cliqué sur Charger **plus)** sont basées sur les propriétés trouvées dans la colonne **AuditData** des 1 000 premières lignes du fichier CSV. S’il existe différentes propriétés JSON dans les enregistrements après les 1 000 premières lignes, ces propriétés (et une colonne correspondante) ne sont pas incluses lorsque la colonne **AuditData** est fractionnées en plusieurs colonnes. Pour éviter cela, envisagez de ré-exécutez la recherche dans le journal d’audit et limitez les critères de recherche afin que moins d’enregistrements soient renvoyés. Une autre solution consiste à filtrer les éléments de la colonne **Opérations** pour réduire le nombre de lignes (avant d’effectuer l’étape 5 ci-dessus) avant de transformer l’objet JSON dans la colonne **AuditData.**
 
    > [!TIP]
-   > Pour afficher un attribut dans une liste telle qu’AuditData.AffectedItems, cliquez sur l’icône Développer dans le coin supérieur droit de la colonne à partir de la colonne à partir de qui vous souhaitez tirer un attribut, puis sélectionnez Développer vers la nouvelle **ligne.**   À partir de là, il s’agit d’un enregistrement et vous pouvez cliquer sur l’icône Développer dans le coin supérieur droit de la colonne, afficher les attributs et sélectionner celui que vous souhaitez afficher ou extraire. 
+   > Pour afficher un attribut au sein d’une liste telle  que AuditData.AffectedItems, cliquez sur l’icône Développer dans le coin supérieur droit de la colonne à partir de celle-ci, puis sélectionnez Développer vers la nouvelle **ligne.**  À partir de là, il s’agit d’un enregistrement et vous pouvez cliquer sur l’icône Développer dans le coin supérieur droit de la colonne, afficher les attributs et sélectionner celui que vous souhaitez afficher ou extraire. 
 
 8. Pour mettre en forme le titre des colonnes ajoutées pour chaque propriété JSON sélectionnée, faites l’une des choses suivantes.
 
@@ -104,7 +104,7 @@ L’étape suivante consiste à utiliser la fonctionnalité de transformation JS
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Utiliser PowerShell pour rechercher et exporter des enregistrements de journal d’audit
 
-Au lieu d’utiliser l’outil de recherche du journal d’audit dans le Centre de sécurité & conformité, vous pouvez utiliser la cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell pour exporter les résultats d’une recherche de journal d’audit dans un fichier CSV. Vous pouvez ensuite suivre la même procédure décrite à l’étape 2 pour mettre en forme le journal d’audit à l’aide de l’éditeur Power Query. L’un des avantages de l’utilisation de l’cmdlet PowerShell est que vous pouvez rechercher des événements à partir d’un service spécifique à l’aide du *paramètre RecordType.* Voici quelques exemples d’utilisation de PowerShell pour exporter des enregistrements d’audit vers un fichier CSV afin que vous pouvez utiliser l’éditeur Power Query pour transformer l’objet JSON dans la colonne **AuditData,** comme décrit à l’étape 2.
+Au lieu d’utiliser l’outil de recherche du journal d’audit dans le Centre de sécurité & conformité, vous pouvez utiliser la cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell pour exporter les résultats d’une recherche de journal d’audit dans un fichier CSV. Vous pouvez ensuite suivre la même procédure décrite à l’étape 2 pour mettre en forme le journal d’audit à l’aide de l’éditeur Power Query. L’un des avantages de l’utilisation de l’cmdlet PowerShell est que vous pouvez rechercher des événements à partir d’un service spécifique à l’aide du *paramètre RecordType.* Voici quelques exemples d’utilisation de PowerShell pour exporter des enregistrements d’audit vers un fichier CSV afin que vous pouvez utiliser l’éditeur Power Query pour transformer l’objet JSON dans la colonne **AuditData,** comme décrit à l’étape 2.
 
 Dans cet exemple, exécutez les commandes suivantes pour renvoyer tous les enregistrements liés aux opérations de partage SharePoint.
 
@@ -118,7 +118,7 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 Les résultats de la recherche sont exportés vers un fichier CSV nommé *PowerShellAuditlog* qui contient quatre colonnes : CreationDate, UserIds, RecordType, AuditData).
 
-Vous pouvez également utiliser le nom ou la valeur d’enum pour le type d’enregistrement comme valeur pour le *paramètre RecordType.* Pour obtenir la liste des noms de types d’enregistrement et leurs valeurs d’énumérer correspondantes, voir la table *AuditLogRecordType* dans le schéma de l’API Activité de gestion [Office 365.](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)
+Vous pouvez également utiliser le nom ou la valeur d’enum pour le type d’enregistrement comme valeur pour le *paramètre RecordType.* Pour obtenir la liste des noms de types d’enregistrement et leurs valeurs d’énumérer correspondantes, voir la table *AuditLogRecordType* dans le schéma de l’API Activité de gestion [Office 365.](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)
 
 Vous ne pouvez inclure qu’une seule valeur pour le *paramètre RecordType.* Pour rechercher des enregistrements d’audit pour d’autres types d’enregistrements, vous devez ré-exécuter les deux commandes précédentes pour spécifier un type d’enregistrement différent et les appendre au fichier CSV d’origine. Par exemple, vous devez exécuter les deux commandes suivantes pour ajouter des activités de fichier SharePoint de la même plage de dates au PowerShellAuditlog.csv fichier.
 

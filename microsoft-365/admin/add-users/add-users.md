@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 description: Découvrez comment ajouter des utilisateurs et attribuer des licences Microsoft 365 simultanément.
 ms.date: 07/01/2020
-ms.openlocfilehash: 71695c47bbc34a94f0040c37dd0c0bb0ab72fbba
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 3c752bd12c0aeb3806ad7d5d90373aad13730944
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741412"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906299"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -100,10 +100,10 @@ Vous devez être un administrateur général, de licences ou d’utilisateurs po
 
 Toutes les méthodes suivantes permettent d’ajouter de multiples utilisateurs simultanément :
 
-- **Utiliser une feuille de calcul pour ajouter des utilisateurs en bloc.** Consultez la rubrique [Ajouter plusieurs utilisateurs simultanément](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
-- **Automatiser l'ajouter de comptes et l'attribution de licences.** Consultez la rubrique [Créer des comptes d'utilisateurs avec Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Choisissez cette méthode si vous êtes déjà familiarisé avec l’utilisation des applets de commande Windows PowerShell.
-- **Si vous utilisez ActiveDirectory** [Configurer la synchronisation d’annuaires pour Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Utilisez l'outil Azure AD Connect pour répliquer les comptes d'utilisateur Active Directory (et d’autres objets Active Directory) dans Microsoft 365. La synchronisation ajoute uniquement les comptes d'utilisateurs. Vous devez attribuer des licences aux utilisateurs synchronisés pour qu'ils puissent utiliser le courrier et les autres applications Office.
-- **Si vous effectuez une migration depuis Exchange** Consultez la rubrique [Méthodes de migration de comptes de messagerie multiples vers Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Lorsque vous migrez plusieurs boîtes aux lettres vers Microsoft 365 en utilisant une méthode de migration à basculement, intermédiaire ou Exchange hybride, vous ajoutez automatiquement des utilisateurs dans le cadre de la migration. La migration ajoute uniquement les comptes d'utilisateurs. Vous devrez attribuer des licences aux utilisateurs pour qu'ils puissent utiliser le courrier et les autres applications Office. Si vous n’attribuez pas de licence à un utilisateur, sa boîte aux lettres est désactivée à la fin de la période de grâce de 30 jours. Découvrez comment [attribuer des licences à des utilisateurs](../manage/assign-licenses-to-users.md) dans le centre d'administration Microsoft 365.
+- **Utiliser une feuille de calcul pour ajouter des utilisateurs en bloc.** Consultez la rubrique [Ajouter plusieurs utilisateurs simultanément](../../enterprise/add-several-users-at-the-same-time.md).
+- **Automatiser l'ajouter de comptes et l'attribution de licences.** Consultez la rubrique [Créer des comptes d'utilisateurs avec Microsoft 365 PowerShell](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md). Choisissez cette méthode si vous êtes déjà familiarisé avec l’utilisation des applets de commande Windows PowerShell.
+- **Si vous utilisez ActiveDirectory** [Configurer la synchronisation d’annuaires pour Microsoft 365](../../enterprise/set-up-directory-synchronization.md). Utilisez l'outil Azure AD Connect pour répliquer les comptes d'utilisateur Active Directory (et d’autres objets Active Directory) dans Microsoft 365. La synchronisation ajoute uniquement les comptes d'utilisateurs. Vous devez attribuer des licences aux utilisateurs synchronisés pour qu'ils puissent utiliser le courrier et les autres applications Office.
+- **Si vous effectuez une migration depuis Exchange** Consultez la rubrique [Méthodes de migration de comptes de messagerie multiples vers Office 365](/Exchange/mailbox-migration/mailbox-migration). Lorsque vous migrez plusieurs boîtes aux lettres vers Microsoft 365 en utilisant une méthode de migration à basculement, intermédiaire ou Exchange hybride, vous ajoutez automatiquement des utilisateurs dans le cadre de la migration. La migration ajoute uniquement les comptes d'utilisateurs. Vous devrez attribuer des licences aux utilisateurs pour qu'ils puissent utiliser le courrier et les autres applications Office. Si vous n’attribuez pas de licence à un utilisateur, sa boîte aux lettres est désactivée à la fin de la période de grâce de 30 jours. Découvrez comment [attribuer des licences à des utilisateurs](../manage/assign-licenses-to-users.md) dans le centre d'administration Microsoft 365.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -112,7 +112,7 @@ Après avoir ajouté un utilisateur, vous recevez une notification par courrier 
 ## <a name="related-content"></a>Contenu connexe
 
 [Ajouter un nouvel employé dans Microsoft 365](add-new-employee.md) (article)\
-[Ajouter plusieurs utilisateurs simultanément dans Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (article)\
+[Ajouter plusieurs utilisateurs simultanément dans Microsoft 365](../../enterprise/add-several-users-at-the-same-time.md) (article)\
 [Rétablir un utilisateur dans Microsoft 365](restore-user.md) (article)\
 [Attribuer des licences aux utilisateurs](../manage/assign-licenses-to-users.md) (article)\
 [Supprimer un utilisateur de votre organisation](delete-a-user.md) (article)

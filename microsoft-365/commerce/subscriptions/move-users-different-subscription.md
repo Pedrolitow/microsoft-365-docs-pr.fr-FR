@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: Découvrez comment déplacer des utilisateurs entre des abonnements.
 ms.date: 07/01/2020
-ms.openlocfilehash: ec9385d10cc1799509c6f1d2fa88059eecf3bd8c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 7eb07bda4fd1a558a8126f11ef3a1fbc4ceb0389
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114668"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907879"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -40,13 +40,13 @@ Si vous avez plusieurs abonnements, que vous avez des utilisateurs titulaires d�
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md?view=o365-worldwide).
 
 ## <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez les cercles en côté des noms des utilisateurs pour qui vous souhaitez remplacer les licences existantes.
 3. Dans la partie supérieure, sélectionnez **Plus d'options (...)**, puis choisissez **Gérer les licences de produits**.
 4. Dans le volet **Gérer des licences de produits**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
@@ -87,7 +87,7 @@ Si vous ne comptez pas réattribuer les licences inutilisées à d’autres [uti
 ## <a name="related-content"></a>Contenu connexe
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
-[Supprimer des licences de votre abonnement](../../commerce/licenses/remove-licenses-from-subscription.md) (article)\
+[Supprimer des licences de votre abonnement](../licenses/buy-licenses.md) (article)\
 [Modifier les plans manuellement](change-plans-manually.md) (article)\
 [Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises](../licenses/subscriptions-and-licenses.md) (article)\
-[Acheter un autre abonnement Microsoft 365 pour les entreprises](../buy-another-subscription.md) (article)
+[Acheter un autre abonnement Microsoft 365 pour les entreprises](../try-or-buy-microsoft-365.md) (article)

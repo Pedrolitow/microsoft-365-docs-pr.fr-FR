@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans l’Union européenne
-ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527684"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905679"
 ---
 # <a name="data-locations-for-the-european-union"></a>Emplacements de données pour l’Union européenne
 
@@ -47,11 +47,11 @@ Nous disposons de centres de données dans des emplacements géographiques en Al
 |:-------|:-----|:-------|:-------|
 | Exchange Online | France | Allemagne | Union européenne |
 | OneDrive Entreprise | France | Allemagne | Union européenne |
-| SharePoint Online | France | Allemagne | Union européenne |
+| SharePoint Online | France | Allemagne | Union européenne |
 | Skype Entreprise | Union européenne | Union européenne | Union européenne |
 | Microsoft Teams | France | Allemagne | Union européenne |
 | Office Online et Mobile | France | Allemagne | Union européenne |
-| Exchange Online Protection | France | Allemagne | Union européenne |
+| Exchange Online Protection | France | Allemagne | Union européenne |
 | Intune | Union européenne | Union européenne | Union européenne |
 | MyAnalytics | France | Allemagne | Union européenne |
 | Planificateur | Union européenne | Union européenne | Union européenne |
@@ -74,14 +74,14 @@ Lorsque vous commencez à utiliser l’un des services ci-dessus, les calculs n�
 
 Si un transfert temporaire est nécessaire, nous utiliserons toujours un chiffrement de pointe dans le transfert. Nous renverrons toujours vos données vers l’emplacement de stockage des données que vous avez choisi immédiatement après. Nous nous appuyons sur notre conformité avec la législation européenne au travers des clauses contractuelles standard (SCC) pour ces transferts temporaires, ainsi que sur nos mesures supplémentaires pour garantir la protection des données. 
 
-Si vous souhaitez en savoir plus, consultez [Clauses contractuelles types de l’Union européenne](https://docs.microsoft.com/microsoft-365/compliance/offering-eu-model-clauses).
+Si vous souhaitez en savoir plus, consultez [Clauses contractuelles types de l’Union européenne](/compliance/regulatory/offering-EU-Model-Clauses).
 
 >[!Note]
 >Les données client pour Sway et Workplace Analytics sont stockées et calculées aux États-Unis si vous décidez d’utiliser ces services.
 >
 
 >[!Note]
->Les services Microsoft 365 peuvent interroger et stocker des portions d’information sur les données d’identité ou d’annuaire de clients dans des régions autres que l’Union européenne, le cas échéant, afin de faciliter certains scénarios. Par exemple, dans les scénarios de routage de courriers, de routage d’appels et d’authentification entre régions, les systèmes Microsoft 365 peuvent avoir besoin d’informations sur les destinataires européens pour acheminer correctement ces requêtes. Les systèmes Microsoft 365 dépendent également d’Azure Active Directory pour les fonctions d’identité et d’authentification. Pour plus d’informations, consultez [Stockage de données d’identité pour les clients européens dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-data-storage-eu).
+>Les services Microsoft 365 peuvent interroger et stocker des portions d’information sur les données d’identité ou d’annuaire de clients dans des régions autres que l’Union européenne, le cas échéant, afin de faciliter certains scénarios. Par exemple, dans les scénarios de routage de courriers, de routage d’appels et d’authentification entre régions, les systèmes Microsoft 365 peuvent avoir besoin d’informations sur les destinataires européens pour acheminer correctement ces requêtes. Les systèmes Microsoft 365 dépendent également d’Azure Active Directory pour les fonctions d’identité et d’authentification. Pour plus d’informations, consultez [Stockage de données d’identité pour les clients européens dans Azure Active Directory](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
 >
 
 ## <a name="how-microsoft-protects-your-data"></a>Comment Microsoft protège vos données
@@ -126,8 +126,7 @@ Si vous souhaitez en savoir plus, voir le [Forum aux questions](https://blogs.mi
 ## <a name="additional-resources"></a>Ressources supplémentaires
  
 - [La protection des données fiables](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) fournit une vue d’ensemble sur la manière dont Microsoft protège vos données lorsque vous utilisez les Services en ligne de Microsoft et les Services professionnels. Nous vous recommandons également de consulter les [Conditions d'utilisation de Microsoft Online Services (OST) et la Loi sur la protection des données (DPA)](https://www.microsoft.com/licensing/product-licensing/products) qui régissent l’utilisation de ces services.
-- [Les demandes des personnes concernées Office 365 pour le Règlement général sur la protection des données (RGPD)](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365) vous permettent de rechercher et d’agir sur des données ou des informations personnelles pour répondre aux Demandes des personnes concernées à l’aide des outils administratifs, services et produits Microsoft 365. 
-- [Analyses d’impact relatives à la protection des données : conseils aux contrôleurs de données utilisant Microsoft Office 365](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) vous permet de déterminer si votre organisation doit rédiger une Analyse d’impact relative à la protection des données (DPIA), fournit des conseils sur la procédure, inclut un document de modèle de DPIA personnalisable et fournit une matrice des éléments du service DPIA pour de nombreux services Microsoft 365.
-- [Découvrez comment les modules](https://docs.microsoft.com/learn/paths/audit-safeguard-customer-data/) sont conçus pour les personnes ayant des rôles d’audit, de conformité, de risques et judiciaire qui recherchent une compréhension générale et fournissent un examen approfondi sur la façon dont les pratiques fondamentales de sécurité et de confidentialité de Microsoft 365 protègent les données client.
-- [Les Offres de conformité Microsoft](https://docs.microsoft.com/microsoft-365/compliance/offering-home) présentent la façon dont les services Microsoft 365 aident votre organisation à respecter les normes réglementaires en matière de conformité. 
-
+- [Les demandes des personnes concernées Office 365 pour le Règlement général sur la protection des données (RGPD)](/compliance/regulatory/gdpr-dsr-Office365) vous permettent de rechercher et d’agir sur des données ou des informations personnelles pour répondre aux Demandes des personnes concernées à l’aide des outils administratifs, services et produits Microsoft 365. 
+- [Analyses d’impact relatives à la protection des données : conseils aux contrôleurs de données utilisant Microsoft Office 365](/compliance/regulatory/gdpr-dpia-office365) vous permet de déterminer si votre organisation doit rédiger une Analyse d’impact relative à la protection des données (DPIA), fournit des conseils sur la procédure, inclut un document de modèle de DPIA personnalisable et fournit une matrice des éléments du service DPIA pour de nombreux services Microsoft 365.
+- [Découvrez comment les modules](/learn/paths/audit-safeguard-customer-data/) sont conçus pour les personnes ayant des rôles d’audit, de conformité, de risques et judiciaire qui recherchent une compréhension générale et fournissent un examen approfondi sur la façon dont les pratiques fondamentales de sécurité et de confidentialité de Microsoft 365 protègent les données client.
+- [Les Offres de conformité Microsoft](/compliance/regulatory/offering-home) présentent la façon dont les services Microsoft 365 aident votre organisation à respecter les normes réglementaires en matière de conformité.

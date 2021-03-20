@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informations sur les options de gouvernance du cycle de vie pour les outils de collaboration dans Microsoft 365
-ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613019"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907927"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planifier la gouvernance de l’organisation et du cycle de vie pour les groupes Microsoft 365 et Microsoft Teams
 
@@ -39,7 +39,7 @@ Nous vous recommandons vivement le libre-service pour permettre aux propriétair
 Prenons les options de gouvernance suivantes pour la création de groupes :
 
 - Pour limiter la prolifération des groupes, utilisez des [stratégies d’expiration](microsoft-365-groups-expiration-policy.md) de groupes pour supprimer automatiquement les groupes qui ne sont pas utilisés.
-- Limiter la création de [](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) groupes aux membres d’un groupe de sécurité avec une appartenance dynamique contenant, par exemple, tous les employés à plein temps.
+- Limiter la création de groupes aux membres [d’un](/azure/active-directory/users-groups-roles/groups-create-rule) groupe de sécurité avec une appartenance dynamique contenant, par exemple, tous les employés à plein temps.
 - Limitez la création de groupes à un groupe de sécurité et obligez les utilisateurs à effectuer une formation sur les stratégies d’utilisation des groupes de votre organisation afin de devenir membres du groupe de sécurité.
 
 Si vous souhaitez limiter les personnes autorisées à créer des groupes, consultez Gérer les personnes autorisées à créer des groupes [Microsoft 365](manage-creation-of-groups.md) pour plus d’informations sur la configuration.
@@ -48,7 +48,7 @@ Si vous souhaitez limiter les personnes autorisées à créer des groupes, consu
 
 Lorsqu’un groupe Microsoft 365 est supprimé, il est conservé par défaut pendant 30 jours. Cette période de 30 jours est appelée « suppression réversible », car vous avez encore la possibilité de le restaurer. Après cette période de 30 jours, le groupe et le contenu associé sont supprimés de manière définitive et ne peuvent plus être restaurés.
 
-Si vous avez des stratégies de rétention en place pour conserver la conversation, les fichiers ou le courrier, ces éléments sont conservés après la suppression du groupe. Pour plus [d’informations, voir](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) En savoir plus sur les stratégies de rétention.
+Si vous avez des stratégies de rétention en place pour conserver la conversation, les fichiers ou la messagerie, ces éléments sont conservés après la suppression du groupe. Pour plus [d’informations, voir](../compliance/retention.md) En savoir plus sur les stratégies de rétention.
 
 Si vous souhaitez supprimer un groupe, mais conserver le contenu d’un ou de plusieurs services connectés à un groupe, consultez Groupes d’archivage, équipes et [Yammer](end-life-cycle-groups-teams-sites-yammer.md) pour plus d’informations.
 

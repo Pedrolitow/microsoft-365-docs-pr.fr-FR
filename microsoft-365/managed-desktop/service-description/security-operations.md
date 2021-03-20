@@ -1,7 +1,7 @@
 ---
 title: Opérations de sécurité dans bureau géré Microsoft
 description: Services et processus fournis par le Centre des opérations de sécurité
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4464c9c491af11831a3511dab60a472f1584d7f6
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 600755c15ce6da94481ef4d84732991e5006cce1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840329"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908161"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Opérations de sécurité dans bureau géré Microsoft
 
@@ -25,13 +25,13 @@ Le SOC offre une couverture 24/7/365 de la part d’employés à plein temps de 
 Le SOC fournit les services ci-après :
 - Réponse rapide et précise aux événements détectés, avec analyse des données pour identifier l’impact et évaluer le risque global pour un appareil ou votre environnement
 - Actions de gestion et d’isolation des appareils pour protéger votre environnement contre les compromissions connues ou suspectes, réduisant ainsi les risques en empêchant la propagation
-- Piloter le processus de réponse aux incidents de sécurité, en assurant une communication précise et opportune avec votre équipe de sécurité
-- Analyse et recommandations basées sur les données de menace et de vulnérabilité pour identifier et résoudre les risques avant qu’ils ne sont exploités
+- Piloter le processus de réponse aux incidents de sécurité, en assurant une communication rapide et précise avec votre équipe de sécurité
+- Analyse et recommandations basées sur les données de menace et de vulnérabilité pour identifier et résoudre les risques avant qu’ils ne soit exploités
 - Recherche avancée sur les appareils gérés pour identifier les indicateurs et entités pour les menaces connues et potentielles
 
 ## <a name="processes"></a>Processus
 
-- Les opérations de sécurité du bureau géré Microsoft sont gérées par des employés à plein temps de Microsoft en partenariat avec le Centre des opérations de cybersécurité [de](https://www.microsoft.com/msrc/cdoc)Microsoft. 
+- Les opérations de sécurité du bureau géré Microsoft sont gérées par des employés à plein temps de Microsoft en partenariat avec le Centre des opérations de [cybersécurité de](https://www.microsoft.com/msrc/cdoc)Microsoft. 
 - Notre SOC utilise des signaux collectives au sein de notre entreprise, internes et externes, pour protéger vos appareils, même contre les éléments que nous n’avons pas encore vus dans bureau géré Microsoft.
 - Les solutions de sécurité Microsoft s’alignent sur de nombreuses normes de protection contre la cybersécurité. Les opérations SOC sont basées sur le Guide de réponse aux incidents de sécurité informatique du National Institute of Standards and Technology (NIST 800-61 r2).
 - Le processus permet une collecte appropriée d’informations et de preuves, d’analyse et de documentation, ainsi que d’informations sur les méthodes permettant de mieux protéger votre environnement par le biais des phases suivantes :
@@ -40,5 +40,5 @@ Le SOC fournit les services ci-après :
     - Eradication
     - Récupération
     - Activité post-incident
-- Les clients bureau géré Microsoft peuvent s’inscrire au service Microsoft Threat Experts. Le SOC est lié à ce service pour mieux comprendre les menaces complexes qui affectent votre organisation, y compris les demandes d’alerte, les appareils potentiellement compromis, la cause première d’une connexion réseau suspecte et d’autres informations sur les menaces concernant les campagnes de menaces avancées persistantes en cours. Pour plus d’informations, voir [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
+- Les clients bureau géré Microsoft peuvent s’inscrire au service Microsoft Threat Experts. Le SOC est lié à ce service pour mieux comprendre les menaces complexes qui affectent votre organisation, y compris les demandes d’alerte, les appareils potentiellement compromis, la cause première d’une connexion réseau suspecte et d’autres informations sur les menaces concernant les campagnes de menaces avancées persistantes en cours. Pour plus d’informations, voir [Microsoft Threat Experts](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
 - Le processus de gestion des menaces et des vulnérabilités de SOC utilise certains services de Microsoft pour vous aider à formuler des recommandations pour que votre organisation se protège contre les menaces. Le SOC consomme des données à partir de votre Centre de sécurité Microsoft Defender pour points de terminaison et à partir de sources de données de vulnérabilité pertinentes à l’intérieur et à l’extérieur de Microsoft pour découvrir les vulnérabilités et les mauvaises configurations et fournir des rapports actionnables.

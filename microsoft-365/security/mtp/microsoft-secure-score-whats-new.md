@@ -1,7 +1,7 @@
 ---
 title: Nouveautés du score de sécurité Microsoft
 description: Décrit les nouvelles modifications apportées au Niveau de sécurité Microsoft dans le Centre de sécurité Microsoft 365.
-keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Centre de sécurité Microsoft 365
+keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, Centre de sécurité Microsoft 365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 520a5627d2cd280f28c4e2c3db0e565640a1eace
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7d24d010f7c16d6db0fd4f9e4817768529ed29d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289160"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906745"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés du score de sécurité Microsoft
 
@@ -55,7 +55,7 @@ Les clients Microsoft Teams voient « Empêcher les utilisateurs anonymes de par
 - Définir « Longueur minimale du mot de passe » sur « 14 caractères ou plus »
 - Définir « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus »
 - Définir « Âge maximal du mot de passe » sur « 60 jours ou moins, mais pas 0 »
-- Définir « Âge minimal du mot de passe » sur « 1 jour ou plus »
+- Définir « Âge minimum du mot de passe » sur « 1 jour ou plus »
 - Désactiver le compte Administrateur intégré
 - Désactiver le compte invité intégré
 
@@ -67,7 +67,7 @@ La possibilité de créer des tickets ServiceNow via secure score en allant sur 
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout de trois actions d’amélioration liées aux services pour Microsoft Defender pour Endpoint (précédemment Microsoft Defender ATP) :
 
-- Corriger le chemin d’accès au service non quoté pour les services Windows
+- Corriger le chemin d’accès au service sans mise enquoted pour les services Windows
 - Modifier le chemin d’accès exécutable du service à un emplacement protégé commun
 - Modifier le compte de service pour éviter le mot de passe mis en cache dans le Registre Windows
 
@@ -85,15 +85,15 @@ La possibilité de créer des tickets ServiceNow via secure score en allant sur 
 
 ## <a name="incompatibility-with-identity-secure-score"></a>Incompatibilité avec identity secure score
 
-Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié. Ces modifications permettent une vue plus souple et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score.
+Dans la version récente de Microsoft Secure Score, un modèle de notation amélioré a été publié. Ces modifications permettent une vue plus flexible et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score.
 
-Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En attendant, les clients voient des différences dans les scores signalés par le Score de sécurité Microsoft et le score de sécurité d’identité. Nous vous excusons de tout désagrément causé par cette situation et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
+Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En attendant, les clients constateront des différences dans les scores signalés par le Score de sécurité Microsoft et le score de sécurisation de l’identité. Nous vous excusons de tout désagrément causé par cette situation et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
 
 ## <a name="updated-improvement-actions"></a>Actions d’amélioration mises à jour
 
 - Ajout d’actions d’amélioration d’Azure Active Directory
 - Ajout d’actions d’amélioration de Microsoft Defender pour l’identité
-- Prise en charge des recommandations de sécurité de Microsoft Defender for Endpoint [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- Prise en charge des recommandations de sécurité de Microsoft Defender for Endpoint [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
     - Toutes les recommandations de sécurité publiées fournies par TVM sont désormais disponibles
 
 ## <a name="updated-interface-and-functionality"></a>Interface et fonctionnalités mises à jour
@@ -112,5 +112,5 @@ Si vous avez des problèmes, faites-le nous savoir en publiant dans la communaut
 ## <a name="related-resources"></a>Ressources connexes
 
 - [Évaluez votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
-- [Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
+- [Suivre votre historique du Score de sécurisation Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
 - [Nouveautés](microsoft-secure-score-whats-coming.md)

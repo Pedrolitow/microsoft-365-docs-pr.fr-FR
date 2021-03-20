@@ -14,32 +14,32 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer de Microsoft 365 Apps for enterprise.
-ms.openlocfilehash: 2c02c28ddba7c24592ce09d87bf6f5c9df700a2a
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 71958b2e87882e478a852db1f906f61207837854
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754347"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907673"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Déploiement de Microsoft 365 Apps for enterprise pour Consoto.
 
-Contoso a mis à niveau ses PC vers Windows 10 Entreprise et Microsoft 365 Apps for enterprise pour permettre une collaboration plus efficace, une meilleure sécurité et une expérience de bureau plus moderne. Une fois qu’il a évalué ses besoins en matière d’infrastructure et d’entreprise, Contoso a identifié ces exigences clés pour le déploiement :
+Contoso a mis à niveau ses PC vers Windows 10 Entreprise et Microsoft 365 Apps for enterprise pour permettre une collaboration plus efficace, une meilleure sécurité et une expérience de bureau plus moderne. Après avoir évalué ses besoins en matière d’infrastructure et d’entreprise, Contoso a identifié ces exigences clés pour le déploiement :
 
 - Tous les PC doivent exécuter Microsoft 365 Apps pour entreprise.
-- Le déploiement doit utiliser l’infrastructure et les outils de gestion existants lorsque cela est possible.
+- Le déploiement doit utiliser l’infrastructure et les outils de gestion existants dans la mesure du possible.
 - Le déploiement doit prendre en charge plusieurs langues et architectures existantes sur les appareils des utilisateurs.
 - Les PC doivent rester à jour et sécurisés avec un minimum de coûts d’administration et un impact minimal sur les utilisateurs.
 
 ## <a name="deployment-tools"></a>Outils de déploiement
 
-En fonction de ses besoins, Contoso a choisi de déployer Windows 10 Entreprise et Microsoft 365 Apps for enterprise via Configuration Manager (Current Branch). Configuration Manager est mis à l’échelle pour les environnements de grande taille et offre un contrôle étendu sur l’installation, les mises à jour et les paramètres. Il comprend également des fonctionnalités intégrées qui facilitent et rendent plus efficace le déploiement et la gestion d’Office, notamment :
+En fonction de ses besoins, Contoso a choisi de déployer Windows 10 Entreprise et Microsoft 365 Apps for enterprise via Configuration Manager (Current Branch). Configuration Manager assure la mise à l’échelle des environnements de grande taille et permet de contrôler de manière étendue l’installation, les mises à jour et les paramètres. Il inclut également des fonctionnalités intégrées qui simplifient et optimisent le déploiement et la gestion d’Office, notamment :
 
-- Cache d’homologue, qui peut aider avec une capacité réseau limitée lors du déploiement sur des appareils dans des emplacements distants.
+- Cache homologue, qui peut aider avec une capacité réseau limitée lors du déploiement sur des appareils dans des emplacements distants.
 - Le tableau de bord de gestion des clients Office, qui facilite le déploiement d’Office et la surveillance des mises à jour, permet aux administrateurs d’accéder aux dernières fonctionnalités de déploiement et de gestion.
 - Déploiement de packs linguistiques intelligent, y compris le déploiement automatique de la même langue que le système d’exploitation.
 - Une méthode entièrement prise en charge et facile à utiliser pour supprimer des versions existantes d’Office d’un client pendant le déploiement.
 
-Outre Configuration Manager, Contoso a utilisé le Shared Computer Toolkit de préparation pour les compléments Office et [VBA,](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)un outil gratuit de Microsoft, pour évaluer les problèmes de compatibilité avec leurs macros et compléments Office.
+Outre Configuration Manager, Contoso a utilisé le Shared Computer Toolkit de préparation pour les compléments Office et [VBA,](/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)un outil gratuit de Microsoft, pour évaluer les problèmes de compatibilité avec leurs macros et compléments Office.
 
 ## <a name="managing-deployment-and-updates"></a>Gestion du déploiement et des mises à jour
 
@@ -50,7 +50,7 @@ Microsoft 365 Apps for enterprise a un nouveau modèle de publication : Office a
 
 Au lieu de gérer les mises à jour d’Office à l’aide de Configuration Manager, Contoso a activé les mises à jour automatiques à partir du cloud. Les mises à jour basées sur le cloud réduisent la surcharge administrative tout en garantissant que les appareils restent à jour.
 
-Contoso a suivi la même approche en deux étapes pour les mises à jour de fonctionnalités que pour le déploiement d’Office : les appareils du groupe pilote ont reçu les mises à jour des fonctionnalités quatre mois plus tôt que les appareils du reste de l’organisation (groupe large). Pour activer cette option pour Office, Contoso a utilisé deux [canaux de mise à jour](https://docs.microsoft.com/DeployOffice/overview-update-channels) recommandés :
+Contoso a suivi la même approche en deux étapes pour les mises à jour de fonctionnalités que pour le déploiement d’Office : les appareils du groupe pilote ont reçu les mises à jour des fonctionnalités quatre mois plus tôt que les appareils du reste de l’organisation (groupe large). Pour activer cette option pour Office, Contoso a utilisé deux [canaux de mise à jour](/DeployOffice/overview-update-channels) recommandés :
 
 - Canal d’entreprise semi-annuel (préversion) pour les mises à jour du groupe pilote
 - Semi-Annual Canal Entreprise pour les mises à jour du groupe étendu
@@ -82,7 +82,7 @@ Découvrez comment Contoso utilise [Microsoft Intune](contoso-mdm.md) dans Micro
 
 ## <a name="see-also"></a>Voir aussi
 
-[Applications Microsoft 365 pour les entreprises](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+[Applications Microsoft 365 pour les entreprises](/deployoffice/deployment-guide-microsoft-365-apps)
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 

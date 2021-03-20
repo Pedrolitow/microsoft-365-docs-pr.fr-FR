@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Questions fréquemment posées sur basic Mobility and Security.
-ms.openlocfilehash: 5651b9f9742c45f1229e55b298cf78532c835c9a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: a538c0b3f9fa6a4bf1861734fc9dea94030760a3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876875"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906263"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>Questions fréquemment posées sur la mobilité et la sécurité de base (FAQ)
 
@@ -43,7 +43,7 @@ La mise en place de la mobilité et de la sécurité de base se fait en quatre �
 
 2. Go to Data loss prevention > Device management > Device policies.
     
-3. Créez des stratégies de gestion des appareils et appliquez-les à des groupes d’utilisateurs qui sont configurer dans des groupes de sécurité. Nous vous recommandons de commencer par déployer les stratégies dans un petit groupe de test. Pour plus d’informations, voir [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md).
+3. Créez des stratégies de gestion des appareils et appliquez-les à des groupes d’utilisateurs qui sont configurer dans des groupes de sécurité. Nous vous recommandons de commencer par déployer les stratégies dans un petit groupe de test. Pour plus d’informations, voir [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security.](create-device-security-policies.md)
 
 4. Les utilisateurs qui ont appliqué une stratégie sont invités à inscrire leurs appareils lorsqu’ils essaient d’accéder aux données Microsoft 365. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md).
 
@@ -81,7 +81,7 @@ Si vous souhaitez exclure un groupe spécifique d’utilisateurs de l’impact d
 
 ## <a name="can-i-switch-from-exchange-activesync-device-management-to-basic-mobility-and-security-for-microsoft-365"></a>Puis-je passer de la gestion Exchange ActiveSync des appareils à la mobilité et à la sécurité de base pour Microsoft 365 ?
 
-Si vous utilisez déjà des stratégies Exchange ActiveSync pour gérer les appareils mobiles, vous pouvez commencer à utiliser Basic Mobility and Security en suivant les étapes de la procédure de mise en place de Basic Mobility and Security. Pour plus d’informations, voir [Protéger l’accès](https://go.microsoft.com/fwlink/?LinkId=615145) des utilisateurs et des appareils et [Configurer la mobilité et la sécurité de base.](set-up.md)
+Si vous utilisez déjà des stratégies Exchange ActiveSync pour gérer les appareils mobiles, vous pouvez commencer à utiliser Basic Mobility and Security en suivant les étapes de la procédure de mise en place de Basic Mobility and Security. Pour plus d’informations, voir [Protéger l’accès](../../compliance/protect-access-to-data-and-services.md) des utilisateurs et des appareils et [Configurer la mobilité et la sécurité de base.](set-up.md)
 
 Lorsque vous appliquez les stratégies que vous créez dans Basic Mobility and Security à des groupes d’utilisateurs Exchange ActiveSync, ces stratégies remplacent les stratégies de boîte aux lettres d’appareil mobile et les règles d’accès aux appareils que vous avez précédemment créées dans le Centre d’administration Exchange pour ces utilisateurs.
 

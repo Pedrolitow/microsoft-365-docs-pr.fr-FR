@@ -17,21 +17,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Affichez la liste complète des certificats racine et des autorités de certification dans Microsoft 365.
-ms.openlocfilehash: 3dd85ae9ec4e691c8b3dce03256e1afb1fcb6274
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: c5b00a3a663c2ae4862cfa3d11f92015c0331e59
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068929"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907718"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Chaînes de chiffrement Microsoft 365
 
-Microsoft 365 tire parti de plusieurs fournisseurs de certificats différents. Ce qui suit décrit la liste complète des certificats racine Microsoft 365 connus que les clients peuvent rencontrer lors de l’accès à Microsoft 365. Pour plus d’informations sur les certificats que vous devrez peut-être installer dans votre propre infrastructure, voir Planifier les [certificats SSL tiers pour Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates) Les informations de certificat suivantes s’appliquent à toutes les instances cloud mondiales et nationales de Microsoft 365.
+Microsoft 365 tire parti de plusieurs fournisseurs de certificats différents. Ce qui suit décrit la liste complète des certificats racine Microsoft 365 connus que les clients peuvent rencontrer lors de l’accès à Microsoft 365. Pour plus d’informations sur les certificats que vous devrez peut-être installer dans votre propre infrastructure, voir Planifier les [certificats SSL tiers pour Microsoft 365.](../enterprise/plan-for-third-party-ssl-certificates.md) Les informations de certificat suivantes s’appliquent à toutes les instances cloud mondiales et nationales de Microsoft 365.
 
 Last updated: **16/10/2020**
 
 >[!NOTE]
->Pour obtenir des informations de certificat qui s’appliquent aux clients DOD et **GCC High,** voir chaînes de chiffrement [Microsoft 365 - DOD et GCC High](encryption-office-365-certificate-chains-itar.md).
+>Pour plus d’informations sur les certificats qui s’appliquent aux clients DOD et **GCC High,** voir chaînes de chiffrement [Microsoft 365 - DOD et GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **Type de certificat** | **Téléchargement P7b** | **Points de terminaison de la CRL** | **Points de terminaison OCSP** | **Points de terminaison AIA** |
 | --- | --- | --- | --- | --- |
@@ -162,7 +162,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Autorité de certification racine de la resserrement - G2**
 
-| **Subject** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Subject** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **Numéro de série** | 4A:53:8C:28 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -263,7 +263,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Thumbprint (SHA-256)** | FA8B9F99DBB94E7B772AA9190846E777047C15C7A3BF4A1AF9C0CA984A689511 |
 | **Broche (SHA-256)** | dKZRclDh7hBNZTmTIHOGJ6C2Om/ITjUCPkOnLTnrZXk= |
 | **URL AIA** | http://www.cnnic.cn/download/cert/CNNICROOT.cer |
-| **URL de la CRL** | ldap:///CN=crl1,%20OU=crl,%20O=CNNIC,%20C=CN?certificateRevocationList;binary,authorityRevocationList;binary,deltaRevocationList;binary<br>http://crl.cnnic.cn/download/rootsha2crl/CRL1.crl |
+| **URL de la CRL** | ldap:///CN=crl1,%20OU=crl,%20O=CASIC,%20C=CN?certificateRevocationList;binary,authorityRevocationList;binary,deltaRevocationList;binary<br>http://crl.cnnic.cn/download/rootsha2crl/CRL1.crl |
 | **URL OCSP** | <http://ocspcnnicroot.cnnic.cn> |
 
 ### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-TRUST SSL Class 3 CA 1 2009**
@@ -418,7 +418,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Numéro de série** | 02:74:2E:AA:17:CA:8E:21:C7:17:BB:1F:FC:FD:0C:A0 |
 | **Longueur de clé publique** | RSA 2048 bits |
 | **Algorithme de signature** | sha256RSA |
-| **Validité pas avant** | Mardi 22 septembre 2020 17:00 |
+| **Validité pas avant** | mardi 22 septembre 2020 17:00 |
 | **Validité jusqu’à** | Dimanche 22 septembre 2030 16:59 |
 | **Identificateur de clé de l’objet** | 0F80611C823161D52F28E78D4638B42CE1C6D9E2 |
 | **Identificateur de clé d’autorité** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
@@ -436,7 +436,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Longueur de clé publique** | RSA 2048 bits |
 | **Algorithme de signature** | sha256RSA |
 | **Validité pas avant** | Mercredi 23 septembre 2020 17:00 |
-| **Validité jusqu’à** | lundi 23 septembre 2030 16:59 |
+| **Validité jusqu’à** | Lundi 23 septembre 2030 16:59 |
 | **Identificateur de clé de l’objet** | B76BA2EAA8AA848C79EAB4DA0F98B2C59576B9F4 |
 | **Identificateur de clé d’autorité** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Thumbprint (SHA-1)** | 6938FD4D98BAB03FAADB97B34396831E3780AEA1 |
@@ -464,9 +464,9 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="entrust-certification-authority---l1k"></a>**Autorité de certification de confiance - L1K**
 
-| **Subject** | CN=Autorité de certification de confiance - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Subject** | CN=Autorité de certification de confiance - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. - pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Issuer** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Issuer** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **Numéro de série** | 0E:E9:4C:C3:00:00:00:00:51:D3:77:85 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -577,7 +577,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Numéro de série** | 01:EE:5F:22:1D:FC:62:3B:D4:33:3A:85:57 |
 | **Longueur de clé publique** | RSA 2048 bits |
 | **Algorithme de signature** | sha256RSA |
-| **Validité pas avant** | Mardi 20 novembre 2018 16:00 |
+| **Validité pas avant** | mardi 20 novembre 2018 16:00 |
 | **Validité jusqu’à** | Lundi 20 novembre 2028 16:00 |
 | **Identificateur de clé de l’objet** | F8EF7FF2CD7867A8DE6F8F248D88F1870302B3EB |
 | **Identificateur de clé d’autorité** | KeyID:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
@@ -656,7 +656,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **URL de la CRL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **URL OCSP** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS émettrice CA 06**
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS émettant CA 06**
 
 | **Subject** | CN=Microsoft Azure TLS émettrice CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -749,7 +749,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Magasins, C=IE |
+| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Cast, C=IE |
 | **Numéro de série** | 0F:14:96:5F:20:20:69:99:4F:D5:C7:AC:78:89:41:E2 |
 | **Longueur de clé publique** | RSA 4096 bits |
 | **Algorithme de signature** | sha256RSA |
@@ -766,7 +766,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Magasins, C=IE |
+| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Cast, C=IE |
 | **Numéro de série** | 0F:A7:47:22:C5:3D:88:C8:0F:58:9E:FB:1F:9D:4A:3A |
 | **Longueur de clé publique** | RSA 4096 bits |
 | **Algorithme de signature** | sha256RSA |
@@ -788,7 +788,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Numéro de série** | 7E:E1:4A:6F:6F:EF:F2:D3:7F:3F:AD:65:4D:3A:DA:B4 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
-| **Validité pas avant** | 31 octobre 00:00:00 2013 UTC |
+| **Validité pas avant** | Oct 31 00:00:00 2013 UTC |
 | **Validity Not After** | 30 octobre 23:59:59 2023 UTC |
 | **Identificateur de clé de l’objet** | 01:59:ab:e7:dd:3a:0b:59:a6:64:63:d6:cf:20:07:57:d5:91:e7:6a |
 | **Identificateur de clé d’autorité** | keyid:7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
@@ -807,7 +807,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Numéro de série** | 51:3F:B9:74:38:70:B7:34:40:41:8D:30:93:06:99:FF |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
-| **Validité pas avant** | 31 octobre 00:00:00 2013 UTC |
+| **Validité pas avant** | Oct 31 00:00:00 2013 UTC |
 | **Validity Not After** | 30 octobre 23:59:59 2023 UTC |
 | **Identificateur de clé de l’objet** | 5f:60:cf:61:90:55:df:84:43:14:8a:60:2a:b2:f5:7a:f4:43:18:ef |
 | **Identificateur de clé d’autorité** | keyid:7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |

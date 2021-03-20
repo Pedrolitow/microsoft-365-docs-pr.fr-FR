@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Découvrez comment automatiser les tâches de recherche de contenu telles que la création de recherches et l’exécution de rapports via des scripts PowerShell dans le Centre de sécurité & conformité dans Office 365.
+description: Découvrez comment automatiser des tâches de recherche de contenu telles que la création de recherches et l’exécution de rapports via des scripts PowerShell dans le Centre de sécurité & conformité dans Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c467b8ebc5ad3171347b23cad47f563b3634ee29
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 615c6b59ea484a4a0cd5248ce5083e7ee7d817ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546860"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908308"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
@@ -34,7 +34,7 @@ ms.locfileid: "47546860"
 
 - Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & conformité pour exécuter les scripts décrits dans cette rubrique.
 
-- Pour collecter une liste des URL pour les sites OneDrive Entreprise de votre organisation que vous pouvez ajouter au fichier CSV à l’étape 1, voir Créer une liste de tous les emplacements [OneDrive](https://docs.microsoft.com/onedrive/list-onedrive-urls)de votre organisation.
+- Pour collecter une liste des URL pour les sites OneDrive Entreprise de votre organisation que vous pouvez ajouter au fichier CSV à l’étape 1, voir Créer une liste de tous les emplacements [OneDrive](/onedrive/list-onedrive-urls)de votre organisation.
 
 - N’oubliez pas d’enregistrer tous les fichiers que vous créez dans cette rubrique dans le même dossier. Cela facilitera l’exécuter.
 
@@ -77,7 +77,7 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez à cette
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Étape 2 : connectez-vous au Centre de sécurité et conformité PowerShell
 
-L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Étape 3 : Exécuter le script pour créer et démarrer les recherches
 
@@ -249,7 +249,7 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
 
 3. À **l’invite d’ID de** groupe de recherche, tapez un nom de groupe de recherche, puis appuyez sur **Entrée**; par  `ContosoCase` exemple. N’oubliez pas que ce nom est sensible à la cas, donc vous devez le taper comme vous l’avez fait lorsque vous avez écrit le script à l’étape 3.
 
-4. À l’invite chemin d’accès au fichier pour enregistrer le rapport dans un fichier **CSV (laisser** vide pour afficher simplement le rapport), tapez un nom de fichier avec le chemin d’accès complet (y compris l’extension de fichier .csv) si vous souhaitez enregistrer le rapport dans un fichier CSV. nom du fichier CSV, y compris l’extension de fichier .csv. Par exemple, vous pouvez taper pour l’enregistrer dans le répertoire actuel ou pour  `ContosoCaseReport.csv` l’enregistrer dans un autre  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` dossier. Vous pouvez également laisser l’invite vide pour afficher le rapport, mais pas l’enregistrer dans un fichier.
+4. À l’invite chemin d’accès au fichier pour enregistrer le rapport dans un fichier **CSV (laisser** vide pour afficher simplement le rapport), tapez un nom de fichier avec le chemin d’accès complet (y compris l’extension de fichier .csv) si vous souhaitez enregistrer le rapport dans un fichier CSV. nom du fichier CSV, y compris l’extension de fichier .csv. Par exemple, vous pouvez taper pour l’enregistrer dans le répertoire actuel ou pour l’enregistrer  `ContosoCaseReport.csv`  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` dans un autre dossier. Vous pouvez également laisser l’invite vide pour afficher le rapport, mais pas l’enregistrer dans un fichier.
 
 5. Appuyez sur **Entrée**.
 

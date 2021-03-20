@@ -21,26 +21,26 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 39abcbde82c2902b091b42db3dbc8e1ee2cbd924
-ms.sourcegitcommit: 8b3ff6e9f8931327b6f0541fd882107687cd123e
+ms.openlocfilehash: 236ac67c5a4efeb4d46f59f5fe283b396adb9aa5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49942789"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906733"
 ---
-# <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
+# <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le niveau de sécurité Microsoft est une mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration. Vous pouvez le trouver dans le Centre de sécurité https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver dans le Centre de sécurité https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
 
-Le fait de suivre les recommandations du score de sécurité peut protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le Centre de sécurité Microsoft 365, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365.
+En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le Centre de sécurité Microsoft 365, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365.
 
-Le score de sécurisation aide les organisations :  
+Score sécurisé aide les organisations :  
 
-* Rapport sur l’état actuel de la posture de sécurité de l’organisation.
-* Améliorez leur posture de sécurité en fournissant une découverte, une visibilité, des conseils et un contrôle.  
-* Comparez avec les critères et établissez des indicateurs de performance clés.
+* Rapport sur l'état actuel de la posture de sécurité de l'organisation.
+* Améliorer leur posture de sécurité en leur offrant des possibilités de découverte, de visibilité, de guide et de contrôle.  
+* Comparer avec des critères de référence et établir des indicateurs de performance clés (KPI).
 
 Les organisations ont accès à des visualisations robustes de mesures et de tendances, à l’intégration avec d’autres produits Microsoft, à la comparaison des scores avec des organisations similaires, et bien plus encore. Le score peut également refléter le moment où des solutions tierces ont traité les actions recommandées.
 
@@ -56,7 +56,7 @@ Vous avez des points pour les actions suivantes :
 
 Certaines actions d’amélioration donnent uniquement des points lorsqu’elles sont entièrement terminées. Certains donnent des points partiels s’ils sont terminés pour certains appareils ou utilisateurs. Si vous ne pouvez pas ou ne souhaitez pas mettre en place l’une des actions d’amélioration, vous pouvez choisir d’accepter le risque ou le risque restant.
 
-Si vous avez une licence pour l’un des produits Microsoft pris en charge, vous verrez des recommandations pour ces produits. Nous vous montrons l’ensemble complet des améliorations possibles pour un produit, indépendamment de l’édition de licence, de l’abonnement ou de l’offre. Ainsi, vous pouvez comprendre les meilleures pratiques en matière de sécurité et améliorer votre score. Votre posture de sécurité absolue, représentée par le niveau de sécurisation, reste la même quelle que soit la licence dont votre organisation est propriétaire pour un produit spécifique. N’oubliez pas que la sécurité doit être équilibrée avec la convivialité, et que toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
+Si vous avez une licence pour l’un des produits Microsoft pris en charge, vous verrez des recommandations pour ces produits. Nous vous montrons l’ensemble complet des améliorations possibles pour un produit, indépendamment de l’édition de licence, de l’abonnement ou de l’offre. Ainsi, vous pouvez comprendre les meilleures pratiques en matière de sécurité et améliorer votre score. Votre posture de sécurité absolue, représentée par le niveau de sécurisation, reste la même quelle que soit la licence dont votre organisation est propriétaire pour un produit spécifique. N’oubliez pas que la sécurité et la convivialité doivent s’équilibrer, et certaines recommandations peuvent ne pas convenir à votre environnement.
 
 Votre score est mis à jour en temps réel pour refléter les informations présentées dans les pages d’action d’amélioration et de visualisation. Secure Score se synchronise également quotidiennement pour recevoir des données système sur vos points obtenus pour chaque action.
 
@@ -71,24 +71,24 @@ Votre score est mis à jour en temps réel pour refléter les informations prés
 
 Chaque action d’amélioration vaut 10 points ou moins, et la plupart d’entre eux sont marqués de manière binaire. Si vous implémentez l’action d’amélioration, comme créer une stratégie ou activer un paramètre spécifique, vous obtenez 100 % des points. Pour les autres actions d’amélioration, les points sont donnés sous forme de pourcentage de la configuration totale.
 
-Par exemple, une action d’amélioration indique que vous obtenez 10 points en protégeant tous vos utilisateurs avec l’authentification multifacteur. Vous n’avez que 50 utilisateurs sur 100 au total protégés, donc vous obtenez un score partiel de 5 points (50 protégé / 100 au total * 10 pts max = 5 pts).
+Par exemple, une action d’amélioration indique que vous obtenez 10 points en protégeant tous vos utilisateurs avec l’authentification multifacteur. Vous n’avez que 50 utilisateurs sur 100 au total protégés. Vous obtenez donc un score partiel de 5 points (50 protégé / 100 au total * 10 pts max = 5 pts).
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans secure score
 
 Il existe actuellement des recommandations pour les produits suivants :
 
 - Microsoft 365 (y compris Exchange Online)
-- Azure Active Directory
+- Azure Active Directory
 - Microsoft Defender pour point de terminaison
 - Microsoft Defender pour l’identité
 - Cloud App Security
-- Microsoft Teams
+- Microsoft Teams
 
 Des recommandations pour d’autres produits de sécurité seront bientôt ajoutées. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont une bonne base de référence. Vous pouvez également marquer les actions d’amélioration comme couvertes par une solution tierce ou autre.
 
 ### <a name="security-defaults"></a>Paramètres de sécurité par défaut
 
-Microsoft Secure Score a mis à jour les actions d’amélioration pour prendre en charge les paramètres de sécurité par défaut dans [Azure Active Directory,](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)ce qui facilite la protection de votre organisation avec des paramètres de sécurité pré-configurés pour les attaques courantes.
+Microsoft Secure Score a mis à jour les actions d’amélioration pour prendre en charge les paramètres de sécurité par défaut dans [Azure Active Directory,](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)ce qui facilite la protection de votre organisation avec des paramètres de sécurité pré-configurés pour les attaques courantes.
 
 Si vous allumez les paramètres de sécurité par défaut, des points complets vous seront attribués pour les actions d’amélioration suivantes :
 
@@ -101,7 +101,7 @@ Si vous allumez les paramètres de sécurité par défaut, des points complets v
 
 ## <a name="required-permissions"></a>Autorisations requises
 
-Pour avoir l’autorisation d’accéder à La Sécurisation Microsoft, vous devez avoir l’un des rôles suivants dans Azure Active Directory.
+Pour avoir l’autorisation d’accéder au service Score de sécurité Microsoft, vous devez avoir l’un des rôles suivants dans Azure Active Directory.
 
 ### <a name="read-and-write-roles"></a>Lire et écrire des rôles
 
@@ -120,13 +120,13 @@ Avec l’accès en lecture seule, vous ne pouvez pas modifier l’état ou les n
 * Administrateur du support technique
 * Administrateur d’utilisateurs
 * Administrateur de service
-* Lecteur de sécurité
+* Lecteur Sécurité
 * Opérateur de sécurité
 * Lecteur général
 
 ## <a name="risk-awareness"></a>Sensibilisation aux risques
 
-Le score de sécurité Microsoft est un résumé numérique de votre posture de sécurité en fonction des configurations système, du comportement des utilisateurs et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue du risque de violation de votre système ou de vos données. Au lieu de cela, il représente la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft, ce qui peut vous aider à réduire le risque de violation. Aucun service en ligne n’est contre les violations de sécurité et le score de sécurité ne doit pas être interprété comme une garantie contre les violations de sécurité.
+Le score de sécurité Microsoft est un résumé numérique de votre posture de sécurité en fonction des configurations système, du comportement des utilisateurs et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue du risque de violation de votre système ou de vos données. Au lieu de cela, il représente la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft qui peuvent vous aider à compenser le risque de violation. Aucun service en ligne n’est contre les violations de sécurité et le score sécurisé ne doit pas être interprété comme une garantie contre les violations de sécurité.
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

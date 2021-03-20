@@ -19,12 +19,12 @@ ms.custom:
 description: Cet article fournit des informations de dépannage pour les problèmes d’envoi de courrier électronique à des boîtes de réception dans Microsoft 365 & meilleures pratiques en matière de publipostage en bloc pour les clients Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e4a91f70b59debc770a5811638bd64a1eef36dd
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5cebb5ab3f5f4adf321e9c7992fcc5efe40ac2a2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286380"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908149"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes d’e-mails envoyés à Microsoft 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "50286380"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 
-Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi de messages électroniques dans des boîtes de réception dans Microsoft 365 et les meilleures pratiques en matière de publipostage en bloc aux clients.
+Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi de messages électroniques dans les boîtes de réception dans Microsoft 365 et les meilleures pratiques pour l’envoi en bloc de messages aux clients.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Vous gérez la réputation de l’expéditeur de votre IP et domaine ?
 
@@ -62,7 +62,7 @@ Il se peut que nous n’acceptions pas les e-mails provenant d’expéditeurs do
 
 Certains problèmes de remise sont dus au blocage de l'adresse IP de l'expéditeur par Microsoft ou à l'identification du compte d'utilisateur comme expéditeur interdit en raison des activité de courrier indésirable précédentes. Si vous pensez que vous avez reçu la notification d'échec de remise par erreur, suivez d'abord toutes les instructions indiquées dans le message de notification d'échec de remise pour résoudre le problème.
 
-Pour plus d’informations sur l’erreur que vous avez reçue, consultez la liste des codes d’erreur dans les rapports de [non-remise](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)de courrier électronique dans Exchange Online.
+Pour plus d’informations sur l’erreur que vous avez reçue, consultez la liste des codes d’erreur dans les rapports de [non-remise](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)de courrier électronique dans Exchange Online.
 
  Par exemple, si vous recevez la NDR suivante, cela indique que l’adresse IP d’envoi a été bloquée par Microsoft :
 

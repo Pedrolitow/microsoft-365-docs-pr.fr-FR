@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Découvrez comment configurer et utiliser Microsoft 365 sur votre ordinateur, téléphone et tablette.
-ms.openlocfilehash: 437e644190017a0031d7c91d239f5b4f0a8d3773
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142072"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906287"
 ---
 # <a name="get-started"></a>Prise en main
 
@@ -48,7 +48,7 @@ Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l�
     
 - [Centre de formation Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [Où se connectez-vous ?](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [Où se connectez-vous](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
 - [Installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     
@@ -58,13 +58,12 @@ Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l�
 
 Voici quelques ressources pour vous aider à commencer.
   
-- [Formation pour les administrateurs](https://docs.microsoft.com/microsoft-365/admin): obtenir des liens vers des cours en ligne gratuits pour les administrateurs.
+- [Formation pour les administrateurs](../index.yml): obtenir des liens vers des cours en ligne gratuits pour les administrateurs.
     
-- [Aide de l’administrateur](https://docs.microsoft.com/microsoft-365/admin/admin-home): obtenez des informations sur les tâches principales, la mise en place des outils d’administration et la résolution des problèmes.
+- [Aide de l’administrateur](./admin-overview.md): obtenez des informations sur les tâches principales, la mise en place des outils d’administration et la résolution des problèmes.
     
 - [Contacter le support - Aide de l’administrateur](../contact-support-for-business-products.md) : appelez-nous, ouvrez une demande en ligne ou laissez la communauté vous aider. 
     
 ## <a name="related-articles"></a>Articles connexes
 
 [Configurer Microsoft 365 pour les entreprises - Aide de l’administrateur](../setup/setup.md)
-

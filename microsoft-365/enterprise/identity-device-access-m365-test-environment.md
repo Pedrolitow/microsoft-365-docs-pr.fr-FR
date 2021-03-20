@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès aux identités et appareils.
-ms.openlocfilehash: ed143341079a55d6bdd1d4a68feea68acb86ef85
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 427b0589da0347008cca0e2004bc23f494bebb29
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233727"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907467"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Accès aux identités et appareils pour votre environnement de test Microsoft 365
 
@@ -35,7 +35,7 @@ Pour créer un environnement de test qui dispose des configurations communes d�
   - [Synchronisation de hachage de mot de passe (PHS)](phs-prereqs-m365-test-environment.md)
   - [Authentification directe (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Utilisez [des stratégies](identity-access-policies.md) communes d’accès aux identités et appareils pour configurer les stratégies qui s’appuient sur les conditions préalables configurées pour votre environnement de test et explorer et vérifier la protection des identités et des appareils.
+2. Utilisez [des stratégies](../security/office-365-security/identity-access-policies.md) communes d’accès aux identités et appareils pour configurer les stratégies qui s’appuient sur les conditions préalables configurées pour votre environnement de test et explorer et vérifier la protection des identités et des appareils.
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -47,4 +47,4 @@ Pour créer un environnement de test qui dispose des configurations communes d�
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

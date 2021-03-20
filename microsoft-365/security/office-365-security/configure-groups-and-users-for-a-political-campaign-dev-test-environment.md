@@ -19,12 +19,12 @@ description: 'Résumé : Créez des abonnements d’essai Office 365 et Enterpr
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e600b3baf012d416a7b5de974b94111bb6cf90a2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 54d2543313c1a031974876d7fd09b453cc2ec24d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287448"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906539"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale
 
@@ -214,4 +214,4 @@ Créez les quatre différents types de sites d’équipe SharePoint Online dans
 
 [Guides de laboratoire de test d’adoption cloud](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Adoption du cloud et solutions hybrides](/office365/enterprise/cloud-adoption-and-hybrid-solutions)

@@ -21,12 +21,12 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez l'outil de recherche de contenu dans le centre de conformité Microsoft pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: b497c584dce02279e0d2a0e68a8f5ada415164e5
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 2e9dcde65a4f2728782fd300f962dfb3e80ed3c9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988208"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908626"
 ---
 # <a name="content-search"></a>Recherche de contenu
 
@@ -228,9 +228,9 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
   
 ### <a name="searching-onedrive-accounts"></a>Recherche de comptes OneDrive
 
-- Pour recueillir la liste des URL des sites OneDrive au sein de votre organisation, voir [créer une liste de tous les emplacements OneDrive au sein de votre organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls). Ce script dans cet article crée un fichier texte qui contient une liste de tous les sites OneDrive. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+- Pour recueillir la liste des URL des sites OneDrive au sein de votre organisation, voir [créer une liste de tous les emplacements OneDrive au sein de votre organisation](/onedrive/list-onedrive-urls). Ce script dans cet article crée un fichier texte qui contient une liste de tous les sites OneDrive. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
     
-    Dans le cas rare où le nom d’utilisateur principal (UPN) d’une personne est modifié, l’URL de son emplacement OneDrive est modifiée pour incorporer le nouveau nom d’utilisateur principal (UPN). Dans ce cas, vous devez modifier une recherche de contenu en ajoutant la nouvelle URL OneDrive de l’utilisateur et en supprimant l’ancienne. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+    Dans le cas rare où le nom d’utilisateur principal (UPN) d’une personne est modifié, l’URL de son emplacement OneDrive est modifiée pour incorporer le nouveau nom d’utilisateur principal (UPN). Dans ce cas, vous devez modifier une recherche de contenu en ajoutant la nouvelle URL OneDrive de l’utilisateur et en supprimant l’ancienne. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
   
 ### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Recherche dans Microsoft Teams et les Groupes Microsoft 365
 
@@ -240,7 +240,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
   
 - Pour rechercher du contenu se trouvant dans Teams et Groupes Microsoft 365, vous devez spécifier la boîte aux lettres et le site SharePoint qui sont associés à une équipe ou à un groupe.
 
-- Le contenu provenant de canaux privés est stocké dans la boîte aux lettres de chaque utilisateur, et non dans celle de l’équipe. Pour rechercher du contenu dans des canaux privés, voir [Découverte automatique des canaux privés](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
+- Le contenu provenant de canaux privés est stocké dans la boîte aux lettres de chaque utilisateur, et non dans celle de l’équipe. Pour rechercher du contenu dans des canaux privés, voir [Découverte automatique des canaux privés](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
     
 - Lancez le **cmdlet Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d'une équipe ou d'un groupe Microsoft 365. C'est un bon moyen d'obtenir l'URL du site qui est associé à une équipe ou à un groupe. Par exemple, la commande suivante affiche les propriétés sélectionnées pour un groupe Microsoft 365 nommé Senior Leadership Team : 
     
@@ -298,7 +298,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
    Pour plus d’informations, voir [Microsoft Teams lance l’eDiscovery pour les appels et les réunions](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
-- Le contenu des cartes généré par les applications des canaux Teams, des chats 1:1 et des chats 1xN est stocké dans les boîtes aux lettres et peut être recherché. Une *carte* est un conteneur de l'assurance-chômage pour de petits morceaux de contenu. Les cartes peuvent avoir de multiples propriétés et pièces jointes, et peuvent inclure des boutons qui peuvent déclencher des actions de la carte. Pour plus d'informations, voir [Cartes](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards) 
+- Le contenu des cartes généré par les applications des canaux Teams, des chats 1:1 et des chats 1xN est stocké dans les boîtes aux lettres et peut être recherché. Une *carte* est un conteneur de l'assurance-chômage pour de petits morceaux de contenu. Les cartes peuvent avoir de multiples propriétés et pièces jointes, et peuvent inclure des boutons qui peuvent déclencher des actions de la carte. Pour plus d'informations, voir [Cartes](/microsoftteams/platform/task-modules-and-cards/what-are-cards) 
 
   Comme pour le contenu des autres Teams, le lieu de stockage du contenu de la carte est basé sur l'endroit où la carte a été utilisée. Le contenu des cartes utilisées dans un canal Teams est stocké dans la boîte aux lettres du groupe Teams. Le contenu des cartes pour les chats 1:1 et 1xN est stocké dans les boîtes aux lettres des participants au conversation.
 
@@ -412,14 +412,14 @@ De plus, les types de conteneur de fichier suivants sont pris en charge. Vous po
 
 ### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Recherche de contenu dans un environnement SharePoint multigéographique
 
-Si une personne dotée du rôle Gestionnaire eDiscovery doit rechercher du contenu dans SharePoint et OneDrive à travers différentes régions dans un [environnement SharePoint multigéographique](https://go.microsoft.com/fwlink/?linkid=860840), vous devez effectuer les opérations suivantes :
+Si une personne dotée du rôle Gestionnaire eDiscovery doit rechercher du contenu dans SharePoint et OneDrive à travers différentes régions dans un [environnement SharePoint multigéographique](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md), vous devez effectuer les opérations suivantes :
 
 1. Créez un compte d’utilisateur distinct pour chaque position géographique de satellite où le Gestionnaire eDiscovery doit effectuer une recherche. Pour rechercher du contenu dans les sites dans cette position géographique, le Gestionnaire eDiscovery doit se connecter au compte que vous avez créé pour cette position, puis exécuter une recherche de contenu.
 
 2. Créez un filtre d’autorisation de recherche pour chaque position géographique de satellite (et le compte d’utilisateur correspondant) où le Gestionnaire eDiscovery doit effectuer une recherche. Chacun de ces filtres d’autorisations de recherche limite l’étendue de la recherche de contenu à une position géographique spécifique lorsque le Gestionnaire eDiscovery est connecté au compte d’utilisateur associé à cette position.
 
 > [!TIP]
-> Vous n’êtes pas obligé d’utiliser cette stratégie lorsque vous utilisez l'outil de recherche dans [Advanced eDiscovery](overview-ediscovery-20.md). En effet, lorsque vous effectuez des recherches dans les sites SharePoint et les comptes OneDrive dans Advanced eDiscovery, elles s’effectuent sur tous les centres de données. Vous devez uniquement utiliser cette stratégie de comptes d’utilisateurs et de filtres d’autorisations propres aux zones de recherche lorsque vous utilisez l’outil de recherche de contenu et que vous exécutez des recherches associées à des [cas eDiscovery](ediscovery-cases.md).
+> Vous n’êtes pas obligé d’utiliser cette stratégie lorsque vous utilisez l'outil de recherche dans [Advanced eDiscovery](overview-ediscovery-20.md). En effet, lorsque vous effectuez des recherches dans les sites SharePoint et les comptes OneDrive dans Advanced eDiscovery, elles s’effectuent sur tous les centres de données. Vous devez uniquement utiliser cette stratégie de comptes d’utilisateurs et de filtres d’autorisations propres aux zones de recherche lorsque vous utilisez l’outil de recherche de contenu et que vous exécutez des recherches associées à des [cas eDiscovery](./get-started-core-ediscovery.md).
 
 Prenons l’exemple d’un gestionnaire eDiscovery devant rechercher du contenu SharePoint et OneDrive dans des emplacements satellites positionnés en Amérique du Nord, en Europe et en Asie Pacifique. La première étape consiste à créer trois comptes d’utilisateurs : un pour chaque emplacement. L’étape suivante consiste à créer trois filtres d’autorisations de recherche, un pour chaque emplacement *et* compte d’utilisateur correspondant. Voici quelques exemples des trois filtres d’autorisations de recherche pour ce scénario. Dans chacun de ces exemples, le paramètre **Région** spécifie la position du centre de données SharePoint pour cette zone géographique et le paramètre **Utilisateurs** spécifie le compte d’utilisateur correspondant.
 

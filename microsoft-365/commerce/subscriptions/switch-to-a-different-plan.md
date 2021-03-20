@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Découvrez comment basculer vers un nouvel abonnement Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 1cbdcafc2ef337546f31d2d8f8fc9ef0bf7722f8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fb0ab9d26a7fe32796307d35af0ed1fc28735fa9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647746"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906227"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Basculer vers une autre offre Microsoft 365 pour les entreprises
 
@@ -50,19 +50,19 @@ Lorsque vous utilisez le bouton **Changer de plan**, vous suivez le processus d'
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 ::: moniker-end
 
@@ -92,13 +92,13 @@ Cette situation peut se produire pour les deux raisons suivantes :
 
 Lorsque vous utilisez le bouton **Changer de plan**, les offres vers lesquelles vous pouvez basculer vous sont présentées en fonction des services inclus dans votre offre actuelle. Vous ne pouvez utiliser le bouton **Changer de plan** que pour passer à une offre contenant les mêmes services de données, ou une version plus récente. Cela garantit que les utilisateurs ne perdent pas leurs données liées à ces services pendant le changement.
   
-Pour comparer les plans avant de changer, consultez la page de comparaison des produits [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=842056) pour les entreprises. Pour obtenir des spécifications techniques, voir [Descriptions du service Microsoft 365.](https://go.microsoft.com/fwlink/p/?linkid=842275)
+Pour comparer les plans avant de changer, consultez la page de comparaison des produits [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=842056) pour les entreprises. Pour obtenir des spécifications techniques, voir [Descriptions du service Microsoft 365.](/office365/servicedescriptions/office-365-service-descriptions-technet-library)
   
 Si vous souhaitez basculer vers un plan avec moins de services, vous pouvez changer [d’offre](switch-plans-manually.md)manuellement ou appeler le [Support Microsoft pour](../../admin/contact-support-for-business-products.md) obtenir de l’aide.
   
 ## <a name="why-some-switches-take-longer"></a>Pourquoi certains changements prennent plus de temps que d'autres ?
 
- **Vérifications de solvabilité lors du changement d’plan**: si vous payez par facture ou atteignez un certain niveau de coût, une vérification de solvabilité peut être nécessaire. Une vérification de solvabilité peut prendre jusqu'à deux jours ouvrables. Les utilisateurs pourront accéder à leur offre actuelle jusqu'à ce que vous les transfériez vers le nouvel abonnement.
+ **Vérifications de solvabilité lors du changement d’plan**: si vous payez par facture ou si vous atteignez un certain niveau de coût, une vérification de solvabilité peut être nécessaire. Une vérification de solvabilité peut prendre jusqu'à deux jours ouvrables. Les utilisateurs pourront accéder à leur offre actuelle jusqu'à ce que vous les transfériez vers le nouvel abonnement.
   
  **Vérification de l’état des** organisations à but non lucratif : le processus de vérification de votre état à but non lucratif prend normalement 30 jours. Si cela fait plus de 30 jours, contactez le support technique.
   

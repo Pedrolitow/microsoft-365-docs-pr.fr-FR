@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service peut ouvrir les tickets de support via le centre d’administration.
-ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: cf628ffd05cb7f5d94c932d48bd4e8ae35a47db9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906371"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -37,9 +37,9 @@ Le Centre d’administration Microsoft 365 vous permet de gérer les rôles Azu
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous recherchez la liste complète des descriptions de rôle Azure AD détaillées que vous pouvez gérer dans le centre d’administration Microsoft 365 ? Consultez la page Autorisations des rôles d’administrateur dans Azure Active Directory. [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Vous recherchez la liste complète des descriptions de rôle Azure AD détaillées que vous pouvez gérer dans le centre d’administration Microsoft 365 ? Consultez la page Autorisations des rôles d’administrateur dans Azure Active Directory. [Autorisations des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-Vous recherchez la liste complète des descriptions de rôle Intune détaillées que vous pouvez gérer dans le centre d’administration Microsoft 365 ?  Consultez la page [Contrôle d’accès basé sur un rôle dans Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+Vous recherchez la liste complète des descriptions de rôle Intune détaillées que vous pouvez gérer dans le centre d’administration Microsoft 365 ?  Consultez la page [Contrôle d’accès basé sur un rôle dans Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 Si vous souhaitez en savoir plus sur l’attribution de rôles dans le Centre d’administration Microsoft 365, consultez la page [Attribuer des rôles d’administrateur](assign-admin-roles.md).
 
@@ -67,7 +67,7 @@ Dans le Centre d’administration Microsoft 365, vous pouvez accéder à **Rôl
 
 ::: moniker-end
 
-Vous devrez probablement attribuer les rôles suivants au sein de votre organisation. Par défaut, les rôles les plus utilisés par les organisations s'affichent en premier. Si le rôle recherché est introuvable, accédez au bas de la liste et sélectionnez **Afficher tout par catégorie**. (pour plus d’informations, notamment sur les applets de commande associées à un rôle, voir les [Autorisations de rôle d'administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)).
+Vous devrez probablement attribuer les rôles suivants au sein de votre organisation. Par défaut, les rôles les plus utilisés par les organisations s'affichent en premier. Si le rôle recherché est introuvable, accédez au bas de la liste et sélectionnez **Afficher tout par catégorie**. (pour plus d’informations, notamment sur les applets de commande associées à un rôle, voir les [Autorisations de rôle d'administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)).
 
 |Rôle d’administrateur     |À qui doit être affecté ce rôle ?  |
 |---------|---------|
@@ -92,7 +92,7 @@ Un partenaire peut attribuer ces rôles :
 
 - **Agent de support technique**, dont les privilèges sont équivalents à ceux d’un administrateur du support technique.
 
-Pour que le partenaire puisse attribuer ces rôles à des utilisateurs, vous devez ajouter le partenaire en tant qu’administrateur délégué de votre compte. Ce processus est initié par un partenaire autorisé. Le partenaire vous envoie un e-mail pour vous demander l’autorisation d’agir en tant qu’administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenaire](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+Pour que le partenaire puisse attribuer ces rôles à des utilisateurs, vous devez ajouter le partenaire en tant qu’administrateur délégué de votre compte. Ce processus est initié par un partenaire autorisé. Le partenaire vous envoie un e-mail pour vous demander l’autorisation d’agir en tant qu’administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenaire](../misc/add-partner.md).
   
 ## <a name="related-articles"></a>Articles connexes
 

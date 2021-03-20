@@ -22,12 +22,12 @@ search.appverid:
 description: Obtenir un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre pays ou région ou en envoyant votre demande de service en ligne.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261334"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907037"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Comment contacter le support relatif aux produits d’entreprises - Aide de l’administrateur
 
@@ -36,7 +36,7 @@ ms.locfileid: "50261334"
 > [!IMPORTANT]
 > Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support. Si vous n’êtes pas un administrateur professionnel, veuillez utiliser [cette page de support](https://support.microsoft.com/contactus).
 
-Commencez par [vérifier l’état d’intégrité actuel de vos services](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). Vous pouvez consulter des informations détaillées sur les problèmes actuels et passés dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Tableau de bord d’état d’intégrité du service</a>. Si vous rencontrez un problème qui ne figure pas dans la liste, vous pouvez obtenir une assistance de l’une des façons suivantes :
+Commencez par [vérifier l’état d’intégrité actuel de vos services](../enterprise/view-service-health.md). Vous pouvez consulter des informations détaillées sur les problèmes actuels et passés dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Tableau de bord d’état d’intégrité du service</a>. Si vous rencontrez un problème qui ne figure pas dans la liste, vous pouvez obtenir une assistance de l’une des façons suivantes :
 
 ## <a name="online-support"></a>Support en ligne
 
@@ -215,7 +215,7 @@ Le rôle d’assistance de 21Vianet consiste à :
 
 ## <a name="feature-availability"></a>Disponibilité des fonctionnalités
 
-Pour afficher la disponibilité des fonctionnalités entre les plans Office 365, voir [Description du service de plateforme Office 365](https://go.microsoft.com/fwlink/p/?linkid=846911).
+Pour afficher la disponibilité des fonctionnalités entre les plans Office 365, voir [Description du service de plateforme Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## <a name="follow-us-on-wechat"></a>Suivez-nous sur WeChat
 

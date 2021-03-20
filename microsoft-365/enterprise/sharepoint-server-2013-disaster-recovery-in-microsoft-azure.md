@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: Cet article explique comment utiliser Azure pour créer un environnement de récupération d’urgence pour votre batterie de serveurs SharePoint sur site.
-ms.openlocfilehash: d1643f3fa0275ef9fbb01372869ca551b9fed495
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689743"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907431"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure
 
@@ -66,7 +66,7 @@ Il est important d'évaluer les objectifs de temps de récupération (RTO) et le
   
 Les instructions figurant dans cet article décrivent comment mettre en œuvre un environnement de secours semi-automatique. Vous pouvez également l’adapter à un environnement de reprise progressive malgré les procédures supplémentaires nécessaires pour la prise en charge de ce type d’environnement. Cet article ne décrit pas l’implémentation d’un environnement de secours automatique.
   
-Pour plus d’informations sur les solutions de récupération d’urgence, voir [High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) et [Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
+Pour plus d’informations sur les solutions de récupération d’urgence, voir [High availability and disaster recovery concepts in SharePoint 2013](/SharePoint/administration/high-availability-and-disaster-recovery-concepts) et [Choose a disaster recovery strategy for SharePoint 2013](/SharePoint/administration/plan-for-disaster-recovery).
   
 ## <a name="solution-description"></a>Description de la solution
 
@@ -196,17 +196,17 @@ Si plusieurs groupes de stockage sont implémentés (les bases de données sont 
 
 Plusieurs technologies sont utilisées dans cette solution de récupération d'urgence. Pour garantir que ces technologies interagissent de manière appropriée, chaque composant dans l'environnement local et Azure doit être installé et configuré correctement. Il est recommandé que la personne ou l'équipe qui configure cette solution détienne des connaissances et des compétences solides des technologies décrites dans les articles suivants :
   
-- [Services de réplication de système de fichiers DFS](https://go.microsoft.com/fwlink/p/?LinkId=392698)
+- [Services de réplication de système de fichiers DFS](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
     
-- [Clustering de basculement Windows Server (WSFC) avec SQL Server](https://go.microsoft.com/fwlink/p/?LinkId=392701)
+- [Clustering de basculement Windows Server (WSFC) avec SQL Server](/sql/sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server)
     
-- [Groupes de disponibilité AlwaysOn (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392725)
+- [Groupes de disponibilité AlwaysOn (SQL Server)](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server)
     
-- [Sauvegarde et restauration des bases de données SQL Server ](https://go.microsoft.com/fwlink/p/?LinkId=392728)
+- [Sauvegarde et restauration des bases de données SQL Server ](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)
     
-- [Déploiement de batterie de serveurs et installation de SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=393119)
+- [Déploiement de batterie de serveurs et installation de SharePoint Server 2013](/SharePoint/install/installation-and-configuration-overview)
     
-- [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=392729)
+- [Microsoft Azure](/azure/)
     
 Enfin, il est recommandé de posséder des compétences en matière d'écriture de scripts, car il peut être utile d'utiliser des scripts pour automatiser des tâches associées à ces technologies. Il est possible d'utiliser les interfaces utilisateur disponibles pour effectuer toutes les tâches décrites dans cette solution. Toutefois, l'approche manuelle, longue, est source d'erreurs et fournit des résultats incohérents.
   
@@ -239,7 +239,7 @@ Outre les instructions fournies dans la rubrique [Architectures Microsoft Azure 
 Pour prendre en charge la copie des journaux de transaction dans une solution de récupération d’urgence, une machine virtuelle de partage de fichiers est ajoutée au sous-réseau dans lequel les rôles de base de données se trouvent. Le partage de fichiers sert également de troisième nœud d’un nœud majoritaire pour le groupe de disponibilité AlwaysOn SQL Server. Il s’agit de la configuration recommandée pour une batterie de serveurs SharePoint standard qui utilise des groupes de disponibilité AlwaysOn SQL Server. 
   
 > [!NOTE]
-> Il est important de consulter la configuration requise pour qu'une base de données puisse participer à un groupe de disponibilité AlwaysOn SQL Server. Pour plus d'informations, voir [Conditions préalables requises, restrictions et recommandations pour les groupes de disponibilité AlwaysOn](https://go.microsoft.com/fwlink/p/?LinkId=510870). 
+> Il est important de consulter la configuration requise pour qu'une base de données puisse participer à un groupe de disponibilité AlwaysOn SQL Server. Pour plus d'informations, voir [Conditions préalables requises, restrictions et recommandations pour les groupes de disponibilité AlwaysOn](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability). 
   
 **Schéma : Placement d'un serveur de fichiers utilisé pour une solution de récupération d'urgence**
 
@@ -247,7 +247,7 @@ Pour prendre en charge la copie des journaux de transaction dans une solution de
   
 Dans ce schéma, une machine virtuelle de partage de fichiers est ajoutée au même sous-réseau dans Azure qui contient les rôles serveur de base de données. N’ajoutez pas la machine virtuelle de partage de fichiers à un groupe à haute disponibilité présentant d’autres rôles serveur, tels que les rôles SQL Server.
   
-Si vous êtes préoccupé par la haute disponibilité des journaux, employez une approche différente en vous aidant de la rubrique [Sauvegarde et restauration SQL Server avec le service de stockage d'objets blob Azure](https://go.microsoft.com/fwlink/p/?LinkId=393113). Il s'agit d'une nouvelle fonctionnalité d'Azure qui enregistre les journaux directement dans une URL de stockage BLOB. Cette solution ne donne pas d'instructions sur l'utilisation de cette fonctionnalité.
+Si vous êtes préoccupé par la haute disponibilité des journaux, employez une approche différente en vous aidant de la rubrique [Sauvegarde et restauration SQL Server avec le service de stockage d'objets blob Azure](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service). Il s'agit d'une nouvelle fonctionnalité d'Azure qui enregistre les journaux directement dans une URL de stockage BLOB. Cette solution ne donne pas d'instructions sur l'utilisation de cette fonctionnalité.
   
 Lorsque vous concevez la batterie de serveurs de récupération, n'oubliez pas qu'un environnement de récupération d'urgence réussi reflète précisément la batterie de serveurs de production que vous souhaitez récupérer. La taille de la batterie de serveurs de récupération n'est pas l'aspect le plus important de la conception, du déploiement et du test de la batterie de récupération. La taille de la batterie de serveurs varie selon les organisations, en fonction des besoins de l'entreprise. Il est possible d'utiliser une batterie de serveurs réduite pour les interruptions de courte durée ou jusqu'à ce que les besoins en performances et en capacité exigent l'augmentation de la taille de la batterie de serveurs.
   
@@ -277,15 +277,15 @@ Cette étape comprend le déploiement de Windows Server Active Directory et de D
   
 Dans l’illustration, deux machines virtuelles sont déployées vers le même sous-réseau. Ces machines virtuelles hébergent chacune deux rôles : Active Directory et DNS.
   
-Avant de déployer Active Directory dans Azure, lisez les [Recommandations en matière de déploiement de Windows Server Active Directory sur des machines virtuelles Windows Azure](https://go.microsoft.com/fwlink/p/?linkid=392681). Elles vous aideront à déterminer si une architecture différente ou des paramètres de configuration différents sont nécessaires pour votre solution.
+Avant de déployer Active Directory dans Azure, lisez les [Recommandations en matière de déploiement de Windows Server Active Directory sur des machines virtuelles Windows Azure](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100). Elles vous aideront à déterminer si une architecture différente ou des paramètres de configuration différents sont nécessaires pour votre solution.
   
-Pour obtenir des instructions détaillées sur la configuration d'un contrôleur de domaine dans Azure, voir [Installation d'un contrôleur de domaine Active Directory de réplication dans un réseau virtuel Azure](https://go.microsoft.com/fwlink/p/?LinkId=392687).
+Pour obtenir des instructions détaillées sur la configuration d'un contrôleur de domaine dans Azure, voir [Installation d'un contrôleur de domaine Active Directory de réplication dans un réseau virtuel Azure](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100).
   
 Avant cette étape, vous n'avez pas déployé de machines virtuelles sur le réseau Virtual Network. Les machines virtuelles pour l'hébergement d'Active Directory et des services DNS ne sont probablement pas assez grandes pour la solution. Avant de déployer ces machines virtuelles, créez d'abord la plus grande machine virtuelle que vous avez prévu d'utiliser dans votre réseau Virtual Network. Cela garantit le renvoi de votre solution vers une balise dans Azure qui permet d'obtenir la plus grande taille dont vous avez besoin. Il est inutile de configurer cette machine virtuelle pour le moment. Créez-la et mettez-la simplement de côté. Si vous ne procédez pas ainsi, vous risquez d'être limité lors de la création ultérieure de machines virtuelles plus importantes, ce qui constituait un problème au moment de la rédaction de cet article. 
   
 ## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>Étape 4 : Déploiement de la batterie de serveurs de récupération SharePoint dans Azure
 
-Déployez la batterie de serveurs SharePoint dans votre réseau Virtual Network en fonction de vos plans de conception. Vous aurez peut-être besoin de vous référer à la rubrique [Planification de SharePoint 2013 dans les services d'infrastructure Azure](https://go.microsoft.com/fwlink/p/?LinkId=400984) avant de déployer les rôles SharePoint dans Azure.
+Déployez la batterie de serveurs SharePoint dans votre réseau Virtual Network en fonction de vos plans de conception. Vous aurez peut-être besoin de vous référer à la rubrique [Planification de SharePoint 2013 dans les services d'infrastructure Azure](/previous-versions/azure/dn275958(v=azure.100)) avant de déployer les rôles SharePoint dans Azure.
   
 Tenez compte des pratiques suivantes, que nous avons apprises en créant notre environnement de preuve de concept :
   
@@ -327,18 +327,18 @@ Le tableau suivant fournit des liens vers des articles de référence sur la ré
 
 |**Titre**|**Description**|
 |:-----|:-----|
-|[Réplication](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |Rubrique TechNet sur la gestion du service DFS avec des liens pour la réplication  <br/> |
+|[Réplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770278(v=ws.11)) <br/> |Rubrique TechNet sur la gestion du service DFS avec des liens pour la réplication  <br/> |
 |[Réplication DFS : guide de survie](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Wiki avec des liens vers des informations DFS  <br/> |
-|[Réplication DFS : forum aux questions (FAQ)](https://go.microsoft.com/fwlink/p/?LinkId=392738) <br/> |Rubrique TechNet sur la réplication DFS  <br/> |
-|[Blog de Jose Barreto](https://go.microsoft.com/fwlink/p/?LinkId=392739) <br/> |Article de blog rédigé par un responsable de programme principal sur l’équipe de serveur de fichiers de Microsoft  <br/> |
+|[Réplication DFS : forum aux questions (FAQ)](/previous-versions/windows/it-pro/windows-server-2003/cc773238(v=ws.10)) <br/> |Rubrique TechNet sur la réplication DFS  <br/> |
+|[Blog de Jose Barreto](/archive/blogs/josebda/) <br/> |Article de blog rédigé par un responsable de programme principal sur l’équipe de serveur de fichiers de Microsoft  <br/> |
 |[L'équipe de stockage de Microsoft : blog sur le fichier CAB](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |Blog sur les services de fichiers et les fonctionnalités de stockage dans Windows Server  <br/> |
    
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Étape 6 : Configuration de la copie des journaux de transaction vers la batterie de récupération
 
-La copie des journaux de transaction est le composant essentiel de la configuration de la récupération d'urgence dans cet environnement. Vous pouvez utiliser la copie des journaux de transaction pour envoyer automatiquement les fichiers journaux de transaction pour les bases de données d'une instance de serveur de la base de données principale vers une instance de serveur de base de données secondaire. Pour configurer la copie des journaux de transaction, voir [Configure log shipping in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-log-shipping). 
+La copie des journaux de transaction est le composant essentiel de la configuration de la récupération d'urgence dans cet environnement. Vous pouvez utiliser la copie des journaux de transaction pour envoyer automatiquement les fichiers journaux de transaction pour les bases de données d'une instance de serveur de la base de données principale vers une instance de serveur de base de données secondaire. Pour configurer la copie des journaux de transaction, voir [Configure log shipping in SharePoint 2013](/sharepoint/administration/configure-log-shipping). 
   
 > [!IMPORTANT]
-> La prise en charge de la copie des journaux de transaction dans SharePoint Server est limitée à certaines bases de données. Pour plus d'informations, voir [Options de haute disponibilité et de récupération d'urgence prises en charge pour les bases de données SharePoint (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 
+> La prise en charge de la copie des journaux de transaction dans SharePoint Server est limitée à certaines bases de données. Pour plus d'informations, voir [Options de haute disponibilité et de récupération d'urgence prises en charge pour les bases de données SharePoint (SharePoint 2013)](/SharePoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas). 
   
 ## <a name="phase-7-validate-failover-and-recovery"></a>Étape 7 : Validation du basculement et de la récupération
 
@@ -403,7 +403,7 @@ restore database WSS_Content with recovery
 > [!IMPORTANT]
 > Lorsque vous utilisez explicitement T-SQL, spécifiez **WITH NORECOVERY** ou **WITH RECOVERY** dans chaque instruction RESTORE pour éliminer toute ambiguïté, ce qui est très important lors de l'écriture de scripts. Une fois les sauvegardes complètes et différentielles restaurées, les journaux des transactions peuvent être restaurés dans SQL Server Management Studio. Par ailleurs, puisque la copie des journaux de transaction est déjà arrêtée, la base de données de contenu est en attente, vous devez donc modifier cet état sur Accès total.
   
-Dans SQL Server Management Studio, cliquez avec le bouton droit de la souris sur la base de données **WSS_Content**, pointez sur **Tâches** > **Restaurer**, puis cliquez sur **Journal des transactions** (si vous n'avez pas restauré la sauvegarde complète, cette option n'est pas disponible). Pour plus d'informations, voir [Restaurer une sauvegarde de journal des transactions (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778).
+Dans SQL Server Management Studio, cliquez avec le bouton droit de la souris sur la base de données **WSS_Content**, pointez sur **Tâches** > **Restaurer**, puis cliquez sur **Journal des transactions** (si vous n'avez pas restauré la sauvegarde complète, cette option n'est pas disponible). Pour plus d'informations, voir [Restaurer une sauvegarde de journal des transactions (SQL Server)](/sql/relational-databases/backup-restore/restore-a-transaction-log-backup-sql-server).
   
 ### <a name="crawl-the-content-source"></a>Analyse de la source de contenu
 
@@ -460,7 +460,7 @@ Pour l’accès externe à votre batterie de serveurs SharePoint, vous pouvez cr
   
  **Exemple de scénario : le centre de données local est entièrement perdu.** Ce scénario peut se produire suite à une catastrophe naturelle, par exemple un incendie ou une inondation. Dans ce cas, une entreprise aura probablement un centre de données secondaire hébergé dans une autre région, ainsi qu'un sous-réseau Azure possédant ses propres services d'annuaire et DNS. Comme dans le scénario d'urgence précédent, vous pouvez rediriger vos enregistrements DNS internes et externes afin qu'ils pointent vers la batterie de serveurs SharePoint Azure. Là encore, la propagation des enregistrements DNS peut prendre un certain temps.
   
-Si vous utilisez des collections de sites nommées par l’hôte, comme recommandé dans l’architecture et le déploiement d’une collection de sites nommée par l’hôte [(SharePoint 2013),](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)vous pouvez avoir plusieurs collections de sites hébergées par la même application web dans votre batterie de serveurs SharePoint, avec des noms DNS uniques (par exemple, `https://sales.contoso.com` et `https://marketing.contoso.com` ). Dans ce cas, vous pouvez créer des enregistrements DNS pour chaque collection de sites qui pointe vers l'adresse IP de votre cluster. Lorsqu'une requête atteint vos serveurs web frontaux SharePoint, ces derniers acheminent chaque requête vers la collection de sites appropriée.
+Si vous utilisez des collections de sites nommées par l’hôte, comme recommandé dans l’architecture et le déploiement d’une collection de sites nommée par l’hôte [(SharePoint 2013),](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)vous pouvez avoir plusieurs collections de sites hébergées par la même application web dans votre batterie de serveurs SharePoint, avec des noms DNS uniques (par exemple, `https://sales.contoso.com` et `https://marketing.contoso.com` ). Dans ce cas, vous pouvez créer des enregistrements DNS pour chaque collection de sites qui pointe vers l'adresse IP de votre cluster. Lorsqu'une requête atteint vos serveurs web frontaux SharePoint, ces derniers acheminent chaque requête vers la collection de sites appropriée.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Environnement de preuve de concept Microsoft
 
@@ -528,7 +528,7 @@ Les batteries de serveurs SharePoint ont été déployées en deux étapes afin
 Nous avons créé les serveurs de base de données alors que SQL Server avait été installé avant la création des serveurs SharePoint 2013. Puisqu'il s'agissait d'un nouveau déploiement, nous avons constitué les groupes de disponibilité avant de déployer SharePoint. Nous avons créé trois groupes selon les meilleures pratiques MCS. 
   
 > [!NOTE]
-> Créez des bases de données d'espaces réservés afin de pouvoir constituer des groupes de disponibilité avant l'installation de SharePoint. Pour plus d'informations, voir [Configurer des groupes de disponibilité AlwaysOn SQL Server 2012 pour SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=517626)
+> Créez des bases de données d'espaces réservés afin de pouvoir constituer des groupes de disponibilité avant l'installation de SharePoint. Pour plus d'informations, voir [Configurer des groupes de disponibilité AlwaysOn SQL Server 2012 pour SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 Nous avons créé la batterie de serveurs et ajouté des serveurs supplémentaires dans l’ordre suivant :
   
@@ -540,7 +540,7 @@ Nous avons créé la batterie de serveurs et ajouté des serveurs supplémentair
     
 - Configuration de SP-WFE1 et SP-WFE2 pour héberger le cache distribué. 
     
-Nous avons utilisé le paramètre  _skipRegisterAsDistributedCachehost_ lorsque nous avons exécuté **psconfig.exe** sur la ligne de commande. Pour plus d'informations, voir [Planifier les flux et le service de cache distribué dans SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
+Nous avons utilisé le paramètre  _skipRegisterAsDistributedCachehost_ lorsque nous avons exécuté **psconfig.exe** sur la ligne de commande. Pour plus d'informations, voir [Planifier les flux et le service de cache distribué dans SharePoint Server 2013](/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
   
 Nous avons répété les étapes suivantes dans l’environnement de récupération :
   
@@ -630,7 +630,7 @@ Ce problème survient lorsque les préférences de sauvegarde par défaut pour u
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Le service de métadonnées gérées (ou un autre service SharePoint) ne démarre pas automatiquement après l’installation
 
-Les services peuvent mettre plusieurs minutes à démarrer, selon les performances et la charge actuelle de votre serveur SharePoint. Cliquez sur le bouton **Démarrer** pour le service concerné et accordez suffisamment de temps au démarrage, tout en actualisant de temps à autre les services sur l'écran du serveur pour contrôler son état. Si le service est encore arrêté, activez la journalisation des diagnostics SharePoint, essayez de redémarrer le service et vérifiez si le journal contient des erreurs. Pour plus d’informations, voir [Configurer la journalisation des diagnostics dans SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
+Les services peuvent mettre plusieurs minutes à démarrer, selon les performances et la charge actuelle de votre serveur SharePoint. Cliquez sur le bouton **Démarrer** pour le service concerné et accordez suffisamment de temps au démarrage, tout en actualisant de temps à autre les services sur l'écran du serveur pour contrôler son état. Si le service est encore arrêté, activez la journalisation des diagnostics SharePoint, essayez de redémarrer le service et vérifiez si le journal contient des erreurs. Pour plus d’informations, voir [Configurer la journalisation des diagnostics dans SharePoint 2013](/sharepoint/administration/configure-diagnostic-logging)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>Après avoir modifié le service DNS sur l’environnement de basculement Azure, les navigateurs clients continuent à utiliser l’ancienne adresse IP pour le site SharePoint
 
@@ -642,13 +642,10 @@ Ipconfig /flushdns
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-[Options de haute disponibilité et de récupération d'urgence prises en charge pour les bases de données SharePoint](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
+[Options de haute disponibilité et de récupération d'urgence prises en charge pour les bases de données SharePoint](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
-[Configurer des groupes de disponibilité AlwaysOn SQL Server 2012 pour SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
+[Configurer des groupes de disponibilité AlwaysOn SQL Server 2012 pour SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 ## <a name="see-also"></a>Voir aussi
 
-[Centre de solutions et d'architecture Microsoft 365](../solutions/solution-architecture-center.md)
-
-
-
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)

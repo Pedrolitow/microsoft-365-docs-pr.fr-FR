@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Utilisation de PowerShell pour créer des comptes d’utilisateurs Microsoft 365 individuels ou multiples.
-ms.openlocfilehash: d96de72ca3e7c4a439665c3ebf751a8fe25ce572
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: c3676acdec3bbba328809ee1528206bbc44f94f1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754209"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907563"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Créer des comptes d’utilisateur Microsoft 365 avec PowerShell
 
@@ -45,9 +45,9 @@ Lorsque vous créez des comptes d’utilisateurs dans PowerShell, certaines prop
 |**UsageLocation** <br/> |Non  <br/> |Il s’agit d’un code pays ISO 3166-1 alpha-2 valide. Par exemple, *états-Unis* pour les États-Unis et *FR* pour la France. Il est important de fournir cette valeur, car certains services Microsoft 365 ne sont pas disponibles dans certains pays. Vous ne pouvez pas attribuer de licence à un compte d’utilisateur, sauf si cette valeur est configurée pour le compte. Pour plus d’informations, voir [à propos des restrictions de licence.](https://go.microsoft.com/fwlink/p/?LinkId=691730)<br/> |
 
 >[!Note]
->[Découvrez comment créer des comptes d’utilisateurs à](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) l’aide du Centre d’administration Microsoft 365.
+>[Découvrez comment créer des comptes d’utilisateurs](../admin/add-users/add-users.md) à l’aide du Centre d’administration Microsoft 365.
 > 
-> Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](https://docs.microsoft.com/microsoft-365/admin/add-users/)
+> Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
 >   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
@@ -110,7 +110,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
      ```
 
    >[!NOTE]
-   >Les noms de colonne et leur ordre dans la première ligne du fichier CSV sont arbitraires. Mais assurez-vous que l’ordre des données dans le reste du fichier correspond à l’ordre des noms de colonne. Et utilisez les noms de colonne pour les valeurs de paramètre dans la commande PowerShell pour Microsoft 365.
+   >Les noms de colonne et leur ordre dans la première ligne du fichier CSV sont arbitraires. Toutefois, assurez-vous que l’ordre des données dans le reste du fichier correspond à l’ordre des noms de colonne. Et utilisez les noms de colonne pour les valeurs de paramètre dans la commande PowerShell pour Microsoft 365.
     
 2. Utilisez la syntaxe suivante :
     

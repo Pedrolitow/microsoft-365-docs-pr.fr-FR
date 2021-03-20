@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso a utilisé Microsoft Endpoint Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
-ms.openlocfilehash: 0543f24665048d0679bc1b099fdd0a2d431c1e54
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 7907bf64acce3af8b21459202cb6f5cbc1e9f990
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754246"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907685"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Déploiement de Windows 10 Entreprise pour Contoso
 
@@ -86,7 +86,7 @@ Découvrez comment Contoso tire parti de son infrastructure Configuration Manage
 
 ## <a name="see-also"></a>Voir aussi
 
-[Windows 10 Entreprise](https://docs.microsoft.com/windows/deployment/)
+[Windows 10 Entreprise](/windows/deployment/)
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans Advanced eDiscovery qui pourraient empêcher un traitement correct du contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c6ef1076e44fca0d060d766fc85a435550c40059
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: f2067831a85e3b3a506917fac5b93acfa0b174db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750797"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906982"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 
@@ -47,7 +47,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     ![Préparation de la correction des erreurs](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
-4. Une fois la préparation terminée, cliquez sur **Suivant : Télécharger les fichiers** pour continuer le téléchargement.
+4. Une fois la préparation terminée, cliquez sur **Suivant : Télécharger les fichiers** pour poursuivre le téléchargement.
 
     ![Télécharger des fichiers](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
@@ -60,7 +60,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
     ![Préparer la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
 
     > [!NOTE]
-    > Vous devez utiliser AzCopy v8.1 pour utiliser correctement la commande fournie dans la page Télécharger **les fichiers.** Vous devez également utiliser AzCopy v8.1 pour télécharger les fichiers à l’étape 10. Pour installer cette version d’AzCopy, voir Transférer des données avec [AzCopy v8.1 sur Windows.](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy) Si la commande AzCopy fournie échoue, consultez Résoudre les problèmes [d’AzCopy dans Advanced eDiscovery](troubleshooting-azcopy.md).
+    > Vous devez utiliser AzCopy v8.1 pour utiliser correctement la commande fournie dans la page Télécharger **les fichiers.** Vous devez également utiliser AzCopy v8.1 pour télécharger les fichiers à l’étape 10. Pour installer cette version d’AzCopy, voir Transférer des données avec [AzCopy v8.1 sur Windows.](/previous-versions/azure/storage/storage-use-azcopy) Si la commande AzCopy fournie échoue, consultez Résoudre les problèmes [d’AzCopy dans Advanced eDiscovery](troubleshooting-azcopy.md).
 
     Les fichiers que vous avez sélectionnés sont téléchargés à l’emplacement que vous avez spécifié à l’étape 5. Dans le dossier parent (par exemple, **C:\Remediation**), la structure de sous-dossiers suivante est créée automatiquement :
 
@@ -105,7 +105,7 @@ Dans les situations où le contenu d’un fichier conteneur (tel qu’un fichier
 
 ## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Correction des erreurs en chargeant le texte extrait
 
-Il est parfois impossible de corriger un fichier au format natif que Advanced eDiscovery peut interpréter. Mais vous pouvez remplacer le fichier d’origine par un fichier texte qui contient le texte d’origine du fichier natif (dans un processus appelé *superposition de texte).* Pour ce faire, suivez les étapes décrites dans cet article, mais au lieu de corriger le fichier d’origine dans le format natif, vous créez un fichier texte qui contient le texte extrait du fichier d’origine, puis téléchargez le fichier texte à l’aide du nom de fichier d’origine qui est suivi d’un suffixe .txt. Par exemple, vous téléchargez un fichier pendant la correction des erreurs avec le nom de fichier 335850cc-6602-4af0-acfa-1d14d9128ca2.abc. Vous ouvrez le fichier dans l’application native, copiez le texte, puis collez-le dans un nouveau fichier nommé 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt. Lorsque vous faites cela, veillez à supprimer le fichier d’origine au format natif de l’emplacement du fichier corrigé sur votre ordinateur local avant de télécharger le fichier texte corrigé dans Advanced eDiscovery.
+Parfois, il n’est pas possible de corriger un fichier au format natif que Advanced eDiscovery peut interpréter. Mais vous pouvez remplacer le fichier d’origine par un fichier texte qui contient le texte d’origine du fichier natif (dans un processus appelé *superposition de texte).* Pour ce faire, suivez les étapes décrites dans cet article, mais au lieu de corriger le fichier d’origine dans le format natif, vous créez un fichier texte qui contient le texte extrait du fichier d’origine, puis téléchargez le fichier texte à l’aide du nom de fichier d’origine qui est suivi d’un suffixe .txt. Par exemple, vous téléchargez un fichier pendant la correction des erreurs avec le nom de fichier 335850cc-6602-4af0-acfa-1d14d9128ca2.abc. Vous ouvrez le fichier dans l’application native, copiez le texte, puis collez-le dans un nouveau fichier nommé 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt. Lorsque vous faites cela, veillez à supprimer le fichier d’origine au format natif de l’emplacement du fichier corrigé sur votre ordinateur local avant de télécharger le fichier texte corrigé dans Advanced eDiscovery.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Que se passe-t-il lorsque des fichiers sont corrigés ?
 
@@ -121,4 +121,4 @@ Lorsque des fichiers corrigés sont chargés, les métadonnées d’origine sont
 - WordCount
 - WorkingsetId
 
-Pour obtenir une définition de tous les champs de métadonnées dans Advanced eDiscovery, voir Champs de [métadonnées de document.](document-metadata-fields-in-advanced-ediscovery.md)
+Pour obtenir une définition de tous les champs de métadonnées dans Advanced eDiscovery, voir [Champs de métadonnées de document.](document-metadata-fields-in-advanced-ediscovery.md)

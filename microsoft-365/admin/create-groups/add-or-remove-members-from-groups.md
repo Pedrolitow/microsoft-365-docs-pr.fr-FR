@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Découvrez comment ajouter un membre à un groupe, supprimer un membre du groupe et gérer l’état du propriétaire du groupe dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 34c026bced5563e07a1ae0d13f4c691cfaf3f624
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 997145b85d2990d5bf7184f5e97a0a8d1c86dae9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663242"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907915"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Ajouter ou supprimer des membres de groupes Microsoft 365 à l’aide du Centre d’administration
 
@@ -95,7 +95,7 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 2. Cliquez sur un nom de groupe.
 
-3. Dans le volet d’informations, sous l’onglet **Membres,** sélectionnez **Afficher tout et gérer les propriétaires.**
+3. Dans le volet d’informations, sous l’onglet **Membres,** **sélectionnez Afficher tout et gérer les propriétaires.**
 
 4. Sélectionnez le X à côté du nom du propriétaire.
 
@@ -103,9 +103,9 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 ## <a name="more-on-managing-membership"></a>En savoir plus sur la gestion de l'appartenance
 
-- [Gérer les groupes dynamiquement dans Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): voir la section « Comment puis-je gérer l'appartenance à un groupe dynamiquement ? »
+- [Gérer les groupes dynamiquement dans Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): voir la section « Comment puis-je gérer l'appartenance à un groupe dynamiquement ? »
 
-- Pour ajouter des centaines ou des milliers d’utilisateurs à des groupes, utilisez [add-UnifiedGroupLinks](https://docs.microsoft.com/powershell/module/exchange/add-unifiedgrouplinks).
+- Pour ajouter des centaines ou des milliers d’utilisateurs à des groupes, utilisez [add-UnifiedGroupLinks](/powershell/module/exchange/add-unifiedgrouplinks).
 
 - [Attribuer un nouveau propriétaire à un groupe orphelin](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
@@ -117,6 +117,6 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 - [Gérer l’accès invité dans les groupes Microsoft 365](manage-guest-access-in-groups.md)
 
-- [Gérer les groupes Microsoft 365 avec PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell): cet article vous présente les cmdlets clés et fournit des exemples
+- [Gérer les groupes Microsoft 365 avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): cet article vous présente les cmdlets clés et fournit des exemples
 
-- [Stratégie de noms de groupes Microsoft 365](groups-naming-policy.md)
+- [Stratégie de noms de groupes Microsoft 365](../../solutions/groups-naming-policy.md)

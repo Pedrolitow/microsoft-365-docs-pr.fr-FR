@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Bon nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le web.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31f247ec74f1780d05aaeb79753abd0075401d9a
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: debd07b1195c2122c8e5042a30097c377bd1c803
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290116"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906503"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres du courrier indésirable dans les boîtes aux lettres Exchange Online
 
@@ -33,17 +33,17 @@ ms.locfileid: "50290116"
 - [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online, les paramètres anti-courrier indésirable de l’organisation sont contrôlés par Exchange Online Protection (EOP). Pour plus d’informations, voir [Protection contre le courrier indésirable dans EOP.](anti-spam-protection.md)
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online, les paramètres de protection contre le courrier indésirable de l’organisation sont contrôlés par Exchange Online Protection (EOP). Pour plus d’informations, voir [Protection contre le courrier indésirable dans EOP.](anti-spam-protection.md)
 
 Toutefois, il existe également des paramètres anti-courrier indésirable spécifiques que les administrateurs peuvent configurer sur des boîtes aux lettres individuelles dans Exchange Online :
 
 - **Activez ou désactivez** la règle de courrier indésirable : la règle de courrier indésirable est une règle de boîte de réception masquée nommée Règle de courrier indésirable qui est activée par défaut dans chaque boîte aux lettres. La règle de courrier indésirable contrôle les fonctionnalités suivantes :
 
-  - Déplacez les messages vers le dossier Courrier indésirable en fonction des stratégies **anti-courrier** indésirable : lorsqu’une stratégie anti-courrier indésirable est configurée avec l’action Déplacer **le message** vers le dossier Courrier indésirable pour un verdict de filtrage du courrier indésirable, la règle de filtrage du courrier indésirable déplace le message vers le dossier Courrier indésirable une fois le message remis à la boîte aux lettres. Pour plus d’informations sur les verdicts de filtrage du courrier indésirable dans les stratégies anti-courrier indésirable, voir [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md). De même, si la purge automatique d’heure zéro (ZAP) détermine qu’un message remis est un courrier indésirable ou un hameçonnage, la règle de filtrage du courrier indésirable déplace le message vers le dossier Courrier indésirable pour déplacer le **message** vers les actions de filtrage du courrier indésirable du dossier Courrier indésirable. Pour plus d’informations sur ZAP, voir purge automatique heure zéro [(ZAP) dans Exchange Online.](zero-hour-auto-purge.md)
+  - Déplacez les messages vers le dossier Courrier indésirable en fonction des stratégies **anti-courrier** indésirable : lorsqu’une stratégie anti-courrier indésirable est configurée avec l’action Déplacer **le message** vers le dossier Courrier indésirable pour un verdict de filtrage du courrier indésirable, la règle de filtrage du courrier indésirable déplace le message vers le dossier Courrier indésirable une fois le message remis à la boîte aux lettres. Pour plus d’informations sur les verdicts de filtrage du courrier indésirable dans les stratégies anti-courrier indésirable, voir [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md). De même, si la purge automatique d’heure zéro (ZAP) détermine qu’un message remis est un courrier indésirable ou un hameçonnage, la règle de filtrage du courrier indésirable déplace le message vers le dossier Courrier indésirable pour déplacer le **message** vers les actions de filtrage du courrier indésirable du dossier Courrier indésirable. Pour plus d’informations sur ZAP, voir la purge automatique heure zéro [(ZAP) dans Exchange Online.](zero-hour-auto-purge.md)
 
   - Paramètres de courrier indésirable que les utilisateurs configurent eux-mêmes dans Outlook ou Outlook sur le web : la _collection_ de **listes** sécurisées est la liste des expéditeurs sûrs, la liste des destinataires sûrs et la liste des expéditeurs bloqués sur chaque boîte aux lettres. Les entrées de ces listes déterminent si la règle de courrier indésirable déplace le message vers la boîte de réception ou le dossier Courrier indésirable. Les utilisateurs peuvent configurer la collection de listes sécurisées pour leur propre boîte aux lettres dans Outlook ou Outlook sur le web (anciennement Outlook Web App). Les administrateurs peuvent configurer la collection de listes sécurisées sur la boîte aux lettres de n’importe quel utilisateur.
 
-Lorsque la règle de courrier indésirable est activée sur la boîte aux lettres, EOP peut déplacer des messages vers le dossier Courrier indésirable en fonction de l’action du verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la liste des expéditeurs bloqués de la boîte aux lettres, et empêcher la livraison des messages dans le dossier Courrier indésirable (en fonction de la liste des expéditeurs sûrs de la boîte aux lettres).
+Lorsque la règle de courrier indésirable est activée sur la boîte aux lettres, EOP peut déplacer des messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la liste des expéditeurs bloqués de la boîte aux lettres, et empêcher la livraison des messages dans le dossier Courrier indésirable (en fonction de la liste des expéditeurs sûrs de la boîte aux lettres).
 
  Lorsque la règle de courrier indésirable est désactivée sur la boîte aux lettres, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la collection de listes sécurisées de la boîte aux lettres.
 
@@ -54,9 +54,9 @@ Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous pouvez uniquement utiliser Exchange Online PowerShell pour suivre les procédures de cet article. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Vous pouvez uniquement utiliser Exchange Online PowerShell pour suivre les procédures de cet article. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous être attribuées dans Exchange Online avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle Destinataires de messagerie (attribué par défaut aux groupes de **rôles** Gestion de l’organisation, Gestion des destinataires et Destinataires de messagerie **personnalisés)** ou **Options** utilisateur (attribué aux groupes de rôles Gestion de l’organisation et Help **Desk** par défaut).  Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, consultez Modifier les groupes de [rôles dans Exchange Online.](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) Notez que les utilisateurs ayant des autorisations par défaut peuvent suivre ces procédures sur leur propre boîte aux lettres, à condition qu’ils ont accès à [Exchange Online PowerShell.](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)
+- Des autorisations doivent vous être attribuées dans Exchange Online avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle Destinataires de messagerie (attribué par défaut aux groupes de  **rôles** Gestion de l’organisation, Gestion des destinataires et Destinataires de messagerie **personnalisés)** ou Options utilisateur (attribué aux groupes de rôles Gestion de l’organisation et Help **Desk** par défaut).   Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, consultez Modifier les groupes [de rôles dans Exchange Online.](/Exchange/permissions-exo/role-groups#modify-role-groups) Notez que les utilisateurs ayant des autorisations par défaut peuvent suivre ces procédures sur leur propre boîte aux lettres, à condition qu’ils ont accès à [Exchange Online PowerShell.](/powershell/exchange/disable-access-to-exchange-online-powershell)
 
 - Dans les environnements de EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable EOP de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer une protection Exchange Online (EOP) autonome pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
@@ -85,13 +85,13 @@ Cet exemple désactive la règle de courrier indésirable sur toutes les boîtes
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -Enabled $false}
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
 >
 > - Si l’utilisateur n’a jamais ouvert sa boîte aux lettres, vous pouvez recevoir une erreur lorsque vous exécutez la commande précédente. Pour supprimer cette erreur pour les opérations en bloc, ajoutez-la à la commande `-ErrorAction SilentlyContinue` **Set-MailboxJunkEmailConfiguration.**
 >
-> - Même si vous désactivez la règle de courrier indésirable, le filtre de courrier indésirable Outlook (en fonction de sa configuration) peut également déterminer si un message est du courrier indésirable et peut déplacer des messages vers le dossier Boîte de réception ou Courrier indésirable en fonction de son propre verdict de courrier indésirable et de la collection de listes sécurisées de la boîte aux lettres. Pour plus d’informations, voir la section à propos des [paramètres du courrier](#about-junk-email-settings-in-outlook) indésirable dans Outlook dans cet article.
+> - Même si vous désactivez la règle de courrier indésirable, le filtre de courrier indésirable Outlook (selon sa configuration) peut également déterminer si un message est du courrier indésirable et déplacer les messages vers le dossier Boîte de réception ou Courrier indésirable en fonction de son propre verdict de courrier indésirable et de la collection de listes sécurisées de la boîte aux lettres. Pour plus d’informations, voir la section à propos des [paramètres du courrier](#about-junk-email-settings-in-outlook) indésirable dans Outlook dans cet article.
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
@@ -149,7 +149,7 @@ Cet exemple supprime le domaine contoso.com de la liste des expéditeurs bloqué
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -BlockedSendersAndDomains @{Remove="contoso.com"}}
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
 >
@@ -179,7 +179,7 @@ Pour vérifier que vous avez bien configuré la collection de listes fiables d�
 
 Pour activer, désactiver et configurer les paramètres de filtrage du courrier indésirable côté client disponibles dans Outlook, utilisez la stratégie de groupe. Pour plus d’informations, voir Fichiers de modèles d’administration [(ADMX/ADML) et Outil de personnalisation Office pour Microsoft 365 Apps for enterprise, Office 2019 et Office 2016,](https://www.microsoft.com/download/details.aspx?id=49030) et comment déployer des paramètres de courrier indésirable, tels que la liste des [expéditeurs sûrs,](https://support.microsoft.com/help/2252421)à l’aide de la stratégie de groupe.
 
-Lorsque le filtre de courrier indésirable  Outlook est définie  sur la valeur par défaut Aucun filtrage automatique dans les options options du courrier indésirable à domicile, Outlook ne tente pas de classer les courriers indésirables comme courrier indésirable, mais utilise toujours la collection de listes sécurisées (liste des expéditeurs sûrs, liste des destinataires sûrs et liste des \>  \>  \> expéditeurs bloqués) pour déplacer les messages vers le dossier Courrier indésirable après la remise. Pour plus d’informations sur ces paramètres, voir [Vue d’ensemble du filtre de courrier indésirable.](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)
+Lorsque le filtre de courrier indésirable  Outlook est définie  sur la valeur par défaut Aucun filtrage automatique dans les options Options du courrier indésirable à domicile, Outlook ne tente pas de classer les courriers indésirables comme courrier indésirable, mais utilise toujours la collection de listes sécurisées (la liste des expéditeurs sûrs, la liste des destinataires sûrs et la liste des \>  \>  \> expéditeurs bloqués) pour déplacer les messages vers le dossier Courrier indésirable après la remise. Pour plus d’informations sur ces paramètres, voir [Vue d’ensemble du filtre de courrier indésirable.](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)
 
 Lorsque le filtre de courrier indésirable Outlook est défini sur **Faible** ou **Élevé**, le filtre de courrier indésirable Outlook utilise sa propre technologie de filtrage SmartScreen pour identifier et déplacer le courrier indésirable vers le dossier Courrier indésirable. Cette classification du courrier indésirable est distincte du niveau de confiance du courrier indésirable (SCL) déterminé par EOP. En fait, Outlook ignore le SCL d’EOP (sauf si EOP a marqué le message pour ignorer le filtrage du courrier indésirable) et utilise ses propres critères pour déterminer si le message est du courrier indésirable. Bien entendu, il est possible que le verdict de courrier indésirable d’EOP et d’Outlook soit le même. Pour plus d’informations sur ces paramètres, voir Modifier le niveau [de protection dans le filtre de courrier indésirable.](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
 
@@ -214,13 +214,13 @@ La collection de listes sécurisées (liste des expéditeurs sûrs, liste des de
 - Avec la synchronisation d’annuaires, les entrées sont synchronisées avec Azure AD dans l’ordre suivant :
 
   1. Contacts de messagerie si **les messages d’confiance provenant de** mes contacts sont activés.
-  2. La liste des expéditeurs sûrs et la liste des destinataires sûrs sont combinées, dépliquées et triées par ordre alphabétique chaque fois qu’une modification est faite pour les 1 024 premières entrées.
+  2. La liste des expéditeurs sûrs et la liste des destinataires sûrs sont combinées, dépliquées et triées par ordre alphabétique chaque fois qu’une modification est réalisée pour les 1 024 premières entrées.
 
   Les 1 024 premières entrées sont utilisées et les informations pertinentes sont estampillées dans les en-têtes de message.
 
   Les entrées de plus de 1024 qui n’ont pas été synchronisées avec Azure AD sont traitées par Outlook (et non Outlook sur le web) et aucune information n’est estampillée dans les en-têtes de message.
 
-Comme vous pouvez le voir, l’activation du message d’confiance à partir de mes **paramètres de contacts** réduit le nombre d’expéditeurs et de destinataires sûrs qui peuvent être synchronisés. Si cela est un problème, nous vous recommandons d’utiliser la stratégie de groupe pour désactiver cette fonctionnalité :
+Comme vous pouvez le voir, l’activation du courrier d’confiance à partir de mes **paramètres de contacts** réduit le nombre d’expéditeurs et de destinataires sûrs qui peuvent être synchronisés. Si cela est un problème, nous vous recommandons d’utiliser la stratégie de groupe pour désactiver cette fonctionnalité :
 
 - Nom de fichier : outlk16.opax
 - Paramètre de stratégie : **faire confiance au courrier électronique des contacts**

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer & utiliser un connecteur natif pour importer des données à partir d’une page d’entreprise LinkedIn vers Microsoft 365.
-ms.openlocfilehash: 9f6cb2c6d5c47559f1fda13b6d03bfed3afe6fa2
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 40e51424d086b0eee42d1f15ea577b7e8f1648c1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790178"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906144"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
 
@@ -30,7 +30,7 @@ Une fois que les données de la page Société LinkedIn sont stockées dans une 
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
-- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée un connecteur de page d’entreprise LinkedIn dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée un connecteur de page d’entreprise LinkedIn dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 - Vous devez avoir les informations d’identification de connexion (adresse de messagerie, numéro de téléphone et mot de passe) d’un compte d’utilisateur LinkedIn qui est administrateur de la page de société LinkedIn que vous souhaitez archiver. Vous utilisez ces informations d’identification pour vous inscrire à LinkedIn lors de la configuration du connecteur.
 
@@ -62,10 +62,10 @@ Une fois que les données de la page Société LinkedIn sont stockées dans une 
 
 8. Cliquez **sur Suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer la configuration du connecteur.
 
-Après avoir créé le connecteur, vous pouvez revenir à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur (sélectionnez **Actualiser** si nécessaire pour mettre à jour la liste des connecteurs). La valeur de la **colonne État** est En attente **de démarrage.** Le processus d’importation initial prend jusqu’à 24 heures. Après la première fois que le connecteur s’exécute et importe les éléments LinkedIn, le connecteur s’exécute une fois toutes les 24 heures et importe tous les nouveaux éléments créés sur la page de société LinkedIn au cours des 24 heures précédentes.
+Après avoir créé le connecteur, vous pouvez revenir à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur (sélectionnez **Actualiser** si nécessaire pour mettre à jour la liste des connecteurs). La valeur de la **colonne État** est En attente **de démarrage.** Le processus d’importation initial prend jusqu’à 24 heures. Après la première fois que le connecteur s’exécute et importe les éléments LinkedIn, il s’exécute toutes les 24 heures et importe tous les nouveaux éléments créés sur la page de société LinkedIn au cours des 24 heures précédentes.
 
 Pour afficher plus de détails, sélectionnez le connecteur dans la liste de la page **Connecteurs** de données pour afficher la page de présentation. Sous **État,** la plage de dates qui s’affiche indique le filtre d’âge qui a été sélectionné lors de la création du connecteur.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Les éléments LinkedIn sont importés dans le sous-foldeur LinkedIn dans la boîte de réception de la boîte aux lettres de stockage dans Microsoft 365. Ils s’affichent sous la mesure de messages électroniques.

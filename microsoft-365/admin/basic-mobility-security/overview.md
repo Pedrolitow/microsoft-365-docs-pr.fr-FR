@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour définir des stratégies de sécurité des appareils et des règles d’accès.
-ms.openlocfilehash: 177b0769f3cad928d05a41cfe95d5d62ab2b4786
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: e74a5df6d10f8f3fb7b420e428380af97ba75597
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430153"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906251"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 
@@ -53,11 +53,11 @@ Voici un résumé des étapes :
 
 ## <a name="device-management-tasks"></a>Tâches de gestion des appareils
 
-Une fois que vous avez installé Basic Mobility and Security et que vos utilisateurs ont inscrit leurs appareils, vous pouvez gérer les appareils, bloquer l’accès ou effacer un appareil, si nécessaire. Pour en savoir plus sur certaines tâches courantes de gestion des appareils, notamment sur l’endroit où effectuer les tâches, voir Gérer les appareils inscrits à Gestion des appareils mobiles [pour Microsoft 365.](manage-enrolled-devices.md)
+Une fois que vous avez installé basic Mobility and Security et que vos utilisateurs ont inscrit leurs appareils, vous pouvez gérer les appareils, bloquer l’accès ou effacer un appareil, si nécessaire. Pour en savoir plus sur certaines tâches courantes de gestion des appareils, notamment sur l’endroit où effectuer les tâches, voir Gérer les appareils inscrits à Gestion des appareils mobiles [pour Microsoft 365.](manage-enrolled-devices.md)
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>Autres façons de gérer les appareils et les applications
 
-Si vous avez simplement besoin de la gestion des applications mobiles (MAM), par exemple pour les personnes mettant à jour des projets de travail sur leurs propres appareils, Intune propose une autre option en plus de l’inscription et de la gestion des appareils. Un abonnement Intune vous permet de configurer des stratégies MAM à l’aide du portail Azure, même si les appareils des personnes ne sont pas inscrits dans Intune. Pour plus d’informations, voir [vue d’ensemble des stratégies de protection des applications.](https://go.microsoft.com/fwlink/?LinkId=2132517)
+Si vous avez simplement besoin de la gestion des applications mobiles (MAM), par exemple pour les personnes mettant à jour des projets de travail sur leurs propres appareils, Intune propose une autre option en plus de l’inscription et de la gestion des appareils. Un abonnement Intune vous permet de configurer des stratégies MAM à l’aide du portail Azure, même si les appareils des personnes ne sont pas inscrits dans Intune. Pour plus d’informations, voir [vue d’ensemble des stratégies de protection des applications.](/mem/intune/apps/app-protection-policy)
 
 ## <a name="related-topics"></a>Rubriques connexes
 

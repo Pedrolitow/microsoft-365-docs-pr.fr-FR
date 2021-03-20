@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configurer la mobilité et la sécurité de base pour sécuriser et gérer les appareils mobiles de vos utilisateurs.
-ms.openlocfilehash: 38f122141b370468bc591df49b3e1891a8a66a43
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 2f74307d41d83dd2e6fce2b68283ce0966e850e8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876863"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906239"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
 
@@ -39,19 +39,19 @@ La gestion des appareils fait partie du Centre de sécurité & conformité. Vous
 
 2. Go to [Activate Basic Mobility and Security](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
 
-   L’activation de la mobilité et de la sécurité de base peut prendre un certain temps. Une fois terminé, vous recevrez un courrier électronique qui vous explique les étapes à suivre.
+   L’activation de la mobilité et de la sécurité de base peut prendre un certain temps. Une fois terminé, vous recevrez un courrier électronique qui explique les étapes suivantes à suivre.
 
 ## <a name="set-up-mobile-device-management"></a>Configurer la gestion des appareils mobiles
 
-Lorsque le service est prêt, remplissez les étapes suivantes pour terminer l’installation.
+Lorsque le service est prêt, terminez l’installation en suivant les étapes ci-après.
 
 ### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>Étape 1 : (Obligatoire) Configurer des domaines pour la mobilité et la sécurité de base
 
 Si vous n’avez pas de domaine personnalisé associé à Microsoft 365 ou si vous ne gérez pas les appareils Windows, vous pouvez ignorer cette section. Dans le cas contraire, vous devrez ajouter des enregistrements DNS pour le domaine sur votre hôte DNS. Si vous avez déjà ajouté les enregistrements, dans le cadre de la configuration de votre domaine avec Microsoft 365, vous êtes tous ensemble. Après avoir ajouté les enregistrements, les utilisateurs Microsoft 365 de votre organisation qui se connectent sur leur appareil Windows avec une adresse de messagerie qui utilise votre domaine personnalisé sont redirigés vers l’inscription à Basic Mobility and Security.
 
-Vous avez besoin d’aide pour la configuration des enregistrements ? Recherchez votre bureau d’enregistrement de domaines et sélectionnez le nom du bureau d’enregistrement pour passer à l’aide pas à pas pour créer un enregistrement DNS dans la liste fournie dans Ajouter des enregistrements [DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)pour connecter votre domaine. Utilisez ces instructions pour créer des enregistrements CNAME décrits dans [Simplifier l’inscription à Windows sans Azure AD Premium](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
+Vous avez besoin d’aide pour la configuration des enregistrements ? Recherchez votre bureau d’enregistrement de domaines et sélectionnez le nom du bureau d’enregistrement pour passer à l’aide pas à pas pour créer un enregistrement DNS dans la liste fournie dans Ajouter des enregistrements [DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)pour connecter votre domaine. Utilisez ces instructions pour créer des enregistrements CNAME décrits dans [Simplifier l’inscription à Windows sans Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
-Après avoir ajouté les deux enregistrements CNAME, revenir au Centre de sécurité & conformité et accéder à Gestion des appareils de protection contre la perte de données pour passer à  >     l’étape suivante.
+Après avoir ajouté les deux enregistrements CNAME, revenir au Centre de sécurité & conformité et accéder à la gestion des appareils de protection contre la perte de données pour passer à  >     l’étape suivante.
 
 ### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Étape 2 : (Obligatoire) Configurer un certificat APNs pour les appareils iOS
 
@@ -90,13 +90,13 @@ Pour gérer les appareils iOS tels que les iPad et iPhone, vous devez créer un 
 
 ### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>Étape 3 : (Recommandé) Configurer l’authentification multifacteur
 
-L’authentification multifacteur permet de sécuriser la authentification à Microsoft 365 pour l’inscription des appareils mobiles en exigeant un second formulaire d’authentification. Les utilisateurs doivent reconnaître un appel téléphonique, un SMS ou une notification d’application sur leur appareil mobile après avoir correctement entré le mot de passe de leur compte de travail. Ils ne peuvent inscrire leur appareil qu’une fois cette deuxième forme d’authentification terminée. Une fois que les appareils utilisateur sont inscrits à Basic Mobility and Security, les utilisateurs peuvent accéder aux ressources Microsoft 365 uniquement avec leur compte de travail.
+L’authentification multifacteur permet de sécuriser la authentification à Microsoft 365 pour l’inscription des appareils mobiles en exigeant un second formulaire d’authentification. Les utilisateurs doivent reconnaître un appel téléphonique, un SMS ou une notification d’application sur leur appareil mobile après avoir correctement entré le mot de passe de leur compte de travail. Ils ne peuvent inscrire leur appareil qu’une fois cette deuxième forme d’authentification terminée. Une fois que les appareils des utilisateurs sont inscrits à Basic Mobility and Security, les utilisateurs peuvent accéder aux ressources Microsoft 365 uniquement avec leur compte de travail.
 
-Pour savoir comment activer l’authentification multifacteur dans le portail Azure AD, voir [Configurer l’authentification multifacteur.](https://go.microsoft.com/fwlink/p/?LinkId=519255)
+Pour savoir comment activer l’authentification multifacteur dans le portail Azure AD, voir [Configurer l’authentification multifacteur.](../security-and-compliance/set-up-multi-factor-authentication.md)
 
-Après avoir installé l’ation MFA, revenir au **** Centre de sécurité & conformité et accédez aux stratégies de périphérique de gestion des appareils de protection contre la perte de données pour passer à   >     >  ****   l’étape suivante.
+Après avoir installé l’ation MFA, revenir au **** Centre de sécurité & conformité et accédez aux stratégies de périphériques de gestion des appareils de protection contre la perte de données pour passer à   >     >  ****   l’étape suivante.
 
-### <a name="step-4-recommended-manage-device-security-policies"></a>Étape 4 : (Recommandé) Gérer les stratégies de sécurité des appareils
+### <a name="step-4-recommended-manage-device-security-policies"></a>Étape 4 : (recommandé) Gérer les stratégies de sécurité des appareils
 
 L’étape suivante consiste à créer et déployer des stratégies de sécurité des appareils pour protéger les données de votre organisation Microsoft 365. Par exemple, vous pouvez éviter la perte de données si un utilisateur perd son appareil en créant une stratégie pour verrouiller les appareils après cinq minutes d’inactivité et effacer les appareils après trois échecs de connect.
 

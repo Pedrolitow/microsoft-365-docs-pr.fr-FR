@@ -20,16 +20,16 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment générer un rapport qui contient des informations sur toutes les actuellement en cours associées à des cas eDiscovery.
-ms.openlocfilehash: 35e432104e7c1358887eb89ae96b9bb0d1d12a0f
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 04282f6f2481d892fa16d685936efeec55feae77
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546976"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908408"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Créer un rapport sur les conservations définies dans les cas eDiscovery 
 
-Le script de cet article permet aux administrateurs eDiscovery et aux responsables eDiscovery de générer un rapport qui contient des informations sur toutes les obligations associées aux cas eDiscovery dans le Centre de conformité dans Office 365 ou Microsoft 365. Le rapport contient des informations telles que le nom du cas où une mise en attente est associée, les emplacements de contenu placés en attente et si la mise en attente est basée sur une requête. S’il existe des cas qui n’ont aucune attente, le script crée un rapport supplémentaire avec une liste de cas sans attente.
+Le script de cet article permet aux administrateurs eDiscovery et aux responsables eDiscovery de générer un rapport qui contient des informations sur toutes les obligations associées aux cas eDiscovery dans le centre de conformité dans Office 365 ou Microsoft 365. Le rapport contient des informations telles que le nom du cas où une mise en attente est associée, les emplacements de contenu qui sont placés en attente et si la mise en attente est basée sur une requête. S’il existe des cas qui n’ont aucune attente, le script crée un rapport supplémentaire avec une liste de cas sans attente.
 
 Consultez la section [Plus](#more-information) d’informations pour obtenir une description détaillée des informations incluses dans le rapport.
 
@@ -43,9 +43,9 @@ Consultez la section [Plus](#more-information) d’informations pour obtenir une
 
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Étape 1 : Se connecter au Centre de sécurité & conformité PowerShell
 
-La première étape consiste à se connecter au Centre de sécurité & conformité PowerShell pour votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+La première étape consiste à se connecter au Centre de sécurité & conformité PowerShell pour votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2 : Exécuter le script pour signaler les cas de découverte électronique
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2 : Exécuter le script pour signaler les cas de découverte électronique associés
 
 Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShell, l’étape suivante consiste à créer et exécuter le script qui collecte des informations sur les cas eDiscovery dans votre organisation.
 
@@ -154,17 +154,17 @@ Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShe
    > [!TIP]
    > Pour enregistrer le rapport dans le dossier où se trouve le script, tapez un point (« . ») lorsque vous y invitez un dossier cible. Pour enregistrer le rapport dans un sous-dossier du dossier où se trouve le script, tapez simplement le nom du sous-dossier.
 
-   Le script commence à collecter des informations sur tous les cas eDiscovery de votre organisation. N’accédez pas au fichier de rapport pendant l’exécution du script. Une fois le script terminé, un message de confirmation s’affiche dans la session Windows PowerShell session. Une fois ce message affiché, vous pouvez accéder au rapport dans le dossier que vous avez spécifié à l’étape 4. Le nom de fichier du rapport est `CaseHoldsReport<DateTimeStamp>.csv` .
+   Le script commence à collecter des informations sur tous les cas eDiscovery dans votre organisation. N’accédez pas au fichier de rapport pendant l’exécution du script. Une fois le script terminé, un message de confirmation s’affiche dans la session Windows PowerShell session. Une fois ce message affiché, vous pouvez accéder au rapport dans le dossier que vous avez spécifié à l’étape 4. Le nom de fichier du rapport est `CaseHoldsReport<DateTimeStamp>.csv` .
 
-   Par ailleurs, le script crée également un rapport avec une liste de cas qui n’ont aucune attente. Le nom de fichier de ce rapport est `CaseswithNoHolds<DateTimeStamp>.csv` .
+   Par ailleurs, le script crée également un rapport avec une liste de cas qui ne sont pas en attente. Le nom de fichier de ce rapport est `CaseswithNoHolds<DateTimeStamp>.csv` .
 
    Voici un exemple d’exécution du script CaseHoldsReport.ps1 script.
 
    ![Sortie après l’exécution du script CaseHoldsReport.ps1 script](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
-Le rapport de cas qui est créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque attente. Comme indiqué précédemment, vous devez être administrateur eDiscovery pour retourner des informations pour toutes les ententées de votre organisation. Pour plus d’informations sur les cas de non-lieu, voir les cas [eDiscovery.](ediscovery-cases.md)
+Le rapport de cas qui est créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque attente. Comme indiqué précédemment, vous devez être administrateur eDiscovery pour retourner des informations pour toutes les ententées de votre organisation. Pour plus d’informations sur les cas de non-lieu, consultez [les cas eDiscovery.](./get-started-core-ediscovery.md)
 
 - Nom de la garde à vue et nom du cas eDiscovery à l’associé.
 
@@ -184,4 +184,4 @@ Le rapport de cas qui est créé lorsque vous exécutez le script dans cet artic
 
 - Heure et date de création de la attente et de la personne qui l’a créée.
 
-- L’heure et la date de la dernière date et la personne qui l’a modifiée.
+- Heure et date de la dernière changement de la date et de la personne qui l’a modifiée.

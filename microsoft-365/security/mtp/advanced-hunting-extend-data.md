@@ -1,6 +1,6 @@
 ---
 title: Étendre la couverture de recherche avancée avec les bons paramètres
-description: Vérifiez les paramètres d’audit sur les appareils Windows et d’autres paramètres pour vous assurer que vous obtenez les données les plus complètes dans le cadre d’un recherche avancée
+description: Vérifier les paramètres d’audit sur les appareils Windows et d’autres paramètres pour vous assurer que vous obtenez les données les plus complètes dans le cadre d’un recherche avancée
 keywords: advanced hunting, incident, pivot, entity, audit settings, user account management, security group management, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9773658bea752175fe7988b9322fb26a9d5b7f05
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 856f61aac8e7297f1b5dfb3aadc46da06cb16289
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929585"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907219"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Étendre la couverture de recherche avancée avec les bons paramètres
 
@@ -42,16 +42,16 @@ Activer ces paramètres d’audit avancés pour vous assurer que vous obtenez de
 
 | Data | Description | Table schema | Procédure de configuration |
 | --- | --- | --- | --- |
-| Gestion des comptes | Événements capturés en tant que différentes valeurs indiquant la création, la suppression et d’autres activités liées `ActionType` à un compte local | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Déployer une stratégie d’audit de sécurité avancée : [auditer la gestion des comptes d’utilisateurs](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [En savoir plus sur les stratégies d’audit de sécurité avancées](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
-| Gestion des groupes de sécurité | Événements capturés en tant que différentes valeurs indiquant la création d’un groupe de `ActionType` sécurité local et d’autres activités de gestion des groupes locaux | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Déployer une stratégie d’audit de sécurité avancée : [auditer la gestion des groupes de sécurité](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [En savoir plus sur les stratégies d’audit de sécurité avancées](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
-| Installation du service | Événements capturés `ActionType` avec la valeur , indiquant `ServiceInstalled` qu’un service a été créé | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Déployer une stratégie d’audit de sécurité avancée : [auditer l’extension du système de sécurité](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-system-extension)<br> - [En savoir plus sur les stratégies d’audit de sécurité avancées](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
+| Gestion des comptes | Événements capturés en tant que différentes valeurs indiquant la création, la suppression et d’autres activités liées `ActionType` au compte | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Déployer une stratégie d’audit de sécurité avancée : [auditer la gestion des comptes d’utilisateurs](/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [En savoir plus sur les stratégies d’audit de sécurité avancées](/windows/security/threat-protection/auditing/advanced-security-auditing) |
+| Gestion des groupes de sécurité | Événements capturés en tant que différentes valeurs indiquant la création d’un groupe de `ActionType` sécurité local et d’autres activités de gestion des groupes locaux | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Déployer une stratégie d’audit de sécurité avancée : [auditer la gestion des groupes de sécurité](/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [En savoir plus sur les stratégies d’audit de sécurité avancées](/windows/security/threat-protection/auditing/advanced-security-auditing) |
+| Installation du service | Événements capturés `ActionType` avec la valeur , indiquant `ServiceInstalled` qu’un service a été créé | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Déployer une stratégie d’audit de sécurité avancée : [auditer l’extension du système de sécurité](/windows/security/threat-protection/auditing/audit-security-system-extension)<br> - [En savoir plus sur les stratégies d’audit de sécurité avancées](/windows/security/threat-protection/auditing/advanced-security-auditing) |
 
 ## <a name="microsoft-defender-for-identity-sensor-on-the-domain-controller"></a>Capteur Microsoft Defender pour l’identité sur le contrôleur de domaine
 Si vous exécutez Active Directory en local, vous devez installer le capteur Microsoft Defender pour l’identité sur le contrôleur de domaine pour obtenir des données pour Microsoft Defender pour l’identité. Lorsqu’elles sont installées et configurées correctement, ces données sont également intégrées au recherche avancée via Microsoft Defender for Identity et fournissent une image plus globale des informations d’identité et des événements de votre réseau. Ces données améliorent également la capacité de Microsoft Defender pour l’identité à générer des alertes pertinentes qui sont également couvertes par le recherche avancée. 
 
 | Data | Description | Table schema | Procédure de configuration |
 | --- | --- | --- | --- |
-| Contrôleur de domaine | Données provenant d’Active Directory local envoyées à Microsoft Defender pour l’identité, enrichissant les informations d’identité, telles que les détails du compte, l’activité d’accès et les requêtes Active Directory | Plusieurs tables, y [compris IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)et [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installer le capteur Microsoft Defender pour l’identité](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [Activer les événements Windows pertinents](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
+| Contrôleur de domaine | Données provenant d’Active Directory local envoyées à Microsoft Defender pour l’identité, enrichissant les informations d’identité, telles que les détails du compte, l’activité d’accès et les requêtes Active Directory | Plusieurs tables, y [compris IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)et [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installer le capteur Microsoft Defender pour l’identité](/azure-advanced-threat-protection/install-atp-step4)<br>- [Activer les événements Windows pertinents](/azure-advanced-threat-protection/configure-event-collection) |
 
 ## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

@@ -19,12 +19,12 @@ description: Les administrateurs peuvent découvrir le fonctionnement de la veil
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ca40e2cde08e5ea213d4c19366f038f1da19fa7
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cc53d49401afe3a0d7871bf5f294126315aacfec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407215"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908093"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Walkthrough - Spoof intelligence insight in Microsoft Defender for Office 365
 
@@ -43,7 +43,7 @@ Pour plus d’informations sur les rapports et les informations, voir Rapports e
 Cette walkthrough est l’une des nombreuses pour le Centre de sécurité & conformité. Pour plus d’informations sur la navigation dans les rapports et les informations, voir les walkthroughs dans la section [Rubriques connexes.](#related-topics)
 
 > [!NOTE]
-> La veille contre l’usurpation d’informations affiche les données des 7 derniers jours. La [stratégie de veille](learn-about-spoof-intelligence.md) contre l’usurpation d’informations et la cmdlet [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy) correspondante dans Exchange Online PowerShell affiche les données des 30 derniers jours. [Get-SpoofMailReport](https://docs.microsoft.com/powershell/module/exchange/get-spoofmailreport) affiche les données pendant 90 jours au plus.
+> La veille contre l’usurpation d’informations affiche les données des 7 derniers jours. La [stratégie de veille](learn-about-spoof-intelligence.md) contre l’usurpation d’informations et la cmdlet [Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy) correspondante dans Exchange Online PowerShell affiche les données des 30 derniers jours. [Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport) affiche les données pendant 90 jours au plus.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -53,15 +53,15 @@ Cette walkthrough est l’une des nombreuses pour le Centre de sécurité & conf
 
 - Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
   - **Gestion de l'organisation**
-  - **Administrateur de la sécurité**
-  - **Lecteur de sécurité**
-  - **Lecteur général**
+  - **Administrateur de sécurité**
+  - **Lecteur sécurité**
+  - **Lecteur global**
 
-  Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+  Pour plus d'informations, voir [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration  Microsoft 365 donne aux utilisateurs les autorisations requises dans le Centre de sécurité & conformité et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration  Microsoft 365 donne aux utilisateurs les autorisations requises dans le Centre de sécurité & conformité et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
-- Vous activez et désactivez la veille contre l’usurpation d’informations dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365. La veille contre l’usurpation d’informations est activée par défaut. Pour plus d’informations, voir Configurer des [stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](configure-atp-anti-phishing-policies.md)
+- Vous activez et désactivez la veille contre l’usurpation d’informations dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365. La veille contre l’usurpation d’informations est activée par défaut. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](configure-atp-anti-phishing-policies.md)
 
 - Pour utiliser la veille contre l’usurpation d’adresse pour surveiller et gérer les expéditeurs qui vous envoient des messages non authentifiés, voir Configurer la veille contre l’usurpation d’adresses dans [Microsoft 365.](learn-about-spoof-intelligence.md)
 
@@ -74,7 +74,7 @@ Cette walkthrough est l’une des nombreuses pour le Centre de sécurité & conf
    - **Domaines usurpés probables** au cours des sept derniers jours : cette information indique que la veille contre l’usurpation d’informations est activée (activée par défaut).
    - **Activer la protection contre** l’usurpation d’informations : cette information indique que la veille contre l’usurpation d’informations est désactivée, et le fait de cliquer sur l’information vous permet d’activer la veille contre l’usurpation d’informations.
 
-3. L’aperçu du tableau de bord vous présente des informations telles que les présentes :
+3. Les informations du tableau de bord vous montrent des informations telles que :
 
    ![Capture d’écran d’informations sur l’usurpation d’intelligence](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
 
@@ -104,9 +104,9 @@ Cette walkthrough est l’une des nombreuses pour le Centre de sécurité & conf
    - **Type d’usurpation**: cette valeur est **Externe**.
    - **Autorisé à usurper ? :** les valeurs que vous voyez ici sont :
      - **Oui**: les messages provenant de la combinaison du domaine de l’utilisateur usurpé et de l’infrastructure d’envoi sont autorisés et ne sont pas traités comme des e-mails usurpés.
-     - **Non**: les messages provenant de la combinaison du domaine de l’utilisateur usurpé et de l’infrastructure d’envoi sont marqués comme usurpés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message vers le dossier **Courrier indésirable).**
+     - **Non**: les messages provenant de la combinaison du domaine de l’utilisateur usurpé et de l’infrastructure d’envoi sont marqués comme usurpés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message dans le dossier **Courrier indésirable).**
 
-     Pour plus d’informations, voir Configurer des [stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](configure-atp-anti-phishing-policies.md)
+     Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](configure-atp-anti-phishing-policies.md)
 
 2. Sélectionnez un élément dans la liste pour afficher les détails sur la paire de domaines/d’infrastructure d’envoi dans un volant. Les informations comprennent :
    - Pourquoi nous l’avons capturé.
@@ -115,7 +115,7 @@ Cette walkthrough est l’une des nombreuses pour le Centre de sécurité & conf
    - WhoIs data about the sender.
    - Messages similaires que nous avons vus dans votre client à partir du même expéditeur.
 
-   À partir de là, vous pouvez également choisir d’ajouter ou de supprimer la paire domaine/infrastructure d’envoi de la liste d’expéditeurs autorisés à usurper l’adresse.  Définissez simplement le basculement en conséquence.
+   À partir de là, vous pouvez également choisir d’ajouter ou de supprimer la paire domaine/infrastructure d’envoi de la liste d’expéditeurs autorisés à usurper l’adresse de l’expéditeur autorisé.  Définissez simplement le basculement en conséquence.
 
    ![Capture d’écran d’un domaine dans le volet d’informations sur l’usurpation d’intelligence](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 

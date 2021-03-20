@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comment Contoso utilise les fonctionnalités de sécurité de Microsoft 365 pour entreprise.
-ms.openlocfilehash: 5c951a973fbebeff92040f9411ad2c81788f920a
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 31baf61011fb67fbe11394718086d73afa2bc680
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558393"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907661"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé de la sécurité De Microsoft 365 pour entreprise pour Contoso Corporation
 
@@ -62,7 +62,7 @@ Pour respecter les meilleures pratiques en matière de sécurité et les exigenc
 
   Les administrateurs de sécurité Contoso ont attribué des rôles d’administrateur inférieurs aux comptes qui sont appropriés à la fonction de travail de ce travailleur de l’informatique.
 
-  Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](/office365/admin/add-users/about-admin-roles).
 
 - Authentification multifacteur pour tous les comptes d’utilisateur
 
@@ -77,53 +77,53 @@ Pour respecter les meilleures pratiques en matière de sécurité et les exigenc
 
 - Windows Hello Entreprise
 
-  Contoso a déployé [Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) Entreprise pour finir par éliminer le besoin de mots de passe par le biais d’une authentification forte à deux facteurs sur les PC et les appareils mobiles exécutant Windows 10 Entreprise.
+  Contoso a déployé [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) Entreprise pour finir par éliminer le besoin de mots de passe par le biais d’une authentification forte à deux facteurs sur les PC et les appareils mobiles exécutant Windows 10 Entreprise.
 
 - Windows Defender Credential Guard
 
-  Pour bloquer les attaques ciblées et les programmes malveillants en cours d’exécution dans le système d’exploitation avec des privilèges d’administration, Contoso Windows Defender [Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) via la stratégie de groupe AD DS.
+  Pour bloquer les attaques ciblées et les programmes malveillants en cours d’exécution dans le système d’exploitation avec des privilèges d’administration, Contoso Windows Defender [Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) via la stratégie de groupe AD DS.
 
 ## <a name="threat-protection"></a>Protection contre les menaces
 
 - Protection contre les programmes malveillants avec Antivirus Windows Defender
 
-  Contoso utilise [Antivirus Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) pour assurer la protection contre les programmes malveillants et la gestion anti-programme malveillant pour les PC et les périphériques exécutant Windows 10 Entreprise.
+  Contoso utilise [Antivirus Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) pour assurer la protection contre les programmes malveillants et la gestion anti-programme malveillant pour les PC et les périphériques exécutant Windows 10 Entreprise.
 
 - Sécuriser le flux de messagerie et la journalisation d’audit des boîtes aux lettres avec Microsoft Defender pour Office 365 
 
-  Contoso utilise Exchange Online Protection et [Defender pour Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) pour se protéger contre les programmes malveillants inconnus, les virus et les URL malveillantes transmises par courrier électronique.
+  Contoso utilise Exchange Online Protection et [Defender pour Office 365](/office365/securitycompliance/office-365-atp) pour se protéger contre les programmes malveillants inconnus, les virus et les URL malveillantes transmises par courrier électronique.
 
   Contoso a également activé l’enregistrement d’audit de boîte aux lettres pour identifier les personnes qui se connectent aux boîtes aux lettres des utilisateurs, envoient des messages et effectuent d’autres activités effectuées par le propriétaire de la boîte aux lettres, un utilisateur délégué ou un administrateur.
 
 - Surveillance et prévention des attaques avec l’examen et réponse contre les menaces Office 365
 
-  Contoso utilise l’examen et la réponse contre les menaces [Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) pour protéger les utilisateurs en permettant d’identifier et de traiter facilement les attaques, et d’empêcher les attaques futures.
+  Contoso utilise l’examen et la réponse contre les menaces [Office 365](/office365/securitycompliance/office-365-ti) pour protéger les utilisateurs en permettant d’identifier et de traiter facilement les attaques, et d’empêcher les attaques futures.
 
 - Protection contre les attaques sophistiquées avec Advanced Threat Analytics
 
-  Contoso utilise [Advanced Threat Analytics (ATA)](https://docs.microsoft.com/advanced-threat-analytics/what-is-ata) pour se protéger contre des attaques ciblées avancées. ATA analyse, apprend et identifie automatiquement le comportement normal et inhabituel des entités (utilisateur, périphériques et ressources).
+  Contoso utilise [Advanced Threat Analytics (ATA)](/advanced-threat-analytics/what-is-ata) pour se protéger contre des attaques ciblées avancées. ATA analyse, apprend et identifie automatiquement le comportement normal et inhabituel des entités (utilisateur, périphériques et ressources).
 
 ## <a name="information-protection"></a>Protection des informations
 
 - Protection des biens numériques sensibles et hautement réglementés avec des étiquettes Azure Information Protection
 
-  Contoso a déterminé trois niveaux de protection des données et déployé les étiquettes de sensibilité [Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) que les utilisateurs appliquent aux biens numériques. Pour ses secrets commerciaux et autres propriétés intellectuelles, Contoso utilise des sous-bels de sensibilité pour les données hautement réglementées. Ce processus chiffre le contenu et limite l’accès à des comptes et groupes d’utilisateurs spécifiques.
+  Contoso a déterminé trois niveaux de protection des données et déployé les étiquettes de sensibilité [Microsoft 365](../compliance/sensitivity-labels.md) que les utilisateurs appliquent aux biens numériques. Pour ses secrets commerciaux et ses autres propriétés intellectuelles, Contoso utilise des sous-bels de sensibilité pour les données hautement réglementées. Ce processus chiffre le contenu et limite l’accès à des comptes et groupes d’utilisateurs spécifiques.
 
 - Empêcher les fuites de données intranet avec la protection contre la perte de données
 
-  Contoso a [](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) configuré des stratégies de protection contre la perte de données pour Exchange Online, SharePoint et OneDrive Entreprise pour empêcher les utilisateurs de partager accidentellement ou intentionnellement des données sensibles.
+  Contoso a [](../compliance/data-loss-prevention-policies.md) configuré des stratégies de protection contre la perte de données pour Exchange Online, SharePoint et OneDrive Entreprise pour empêcher les utilisateurs de partager accidentellement ou intentionnellement des données sensibles.
 
 - Prévention des fuites de données de périphériques grâce au service Protection des informations Windows
 
-  Contoso utilise la Protection des informations [Windows (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) pour se protéger contre la fuite de données par le biais d’applications et de services internet, ainsi que d’applications et de données d’entreprise sur des appareils et des appareils personnels d’entreprise que les employés apportent au travail.
+  Contoso utilise la Protection des informations [Windows (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) pour se protéger contre la fuite de données par le biais d’applications et de services internet, ainsi que d’applications et de données d’entreprise sur des appareils et des appareils personnels d’entreprise que les employés apportent au travail.
 
 - Surveillance du cloud avec Microsoft Cloud App Security
 
-  Contoso utilise [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) pour mapper son environnement cloud, surveiller son utilisation et détecter les événements de sécurité et les incidents. *Microsoft Cloud App Security est disponible uniquement avec Microsoft 365 E5.*
+  Contoso utilise [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) pour mapper son environnement cloud, surveiller son utilisation et détecter les événements de sécurité et les incidents. *Microsoft Cloud App Security est disponible uniquement avec Microsoft 365 E5.*
 
 - Gestion des périphériques avec Microsoft Intune
 
-  Contoso utilise [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) pour inscrire, gérer et configurer l’accès aux appareils mobiles et aux applications qui s’exécutent sur ces derniers. Les stratégies d’accès conditionnel basé sur l’appareil nécessitent également des applications approuvées et des PC et des appareils mobiles compatibles.
+  Contoso utilise [Microsoft Intune](/intune/introduction-intune) pour inscrire, gérer et configurer l’accès aux appareils mobiles et aux applications qui s’exécutent sur ces derniers. Les stratégies d’accès conditionnel basé sur l’appareil nécessitent également des applications approuvées et des PC et des appareils mobiles compatibles.
 
 ## <a name="security-management"></a>Gestion de la sécurité
 
@@ -133,4 +133,4 @@ Pour respecter les meilleures pratiques en matière de sécurité et les exigenc
 
 - Tableau de bord central de sécurité pour les utilisateurs utilisant le Centre de sécurité Windows Defender
 
-  Contoso a déployé l’application [Sécurité Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) sur ses PC et appareils exécutant Windows 10 Entreprise afin que les utilisateurs voient leur posture de sécurité d’un coup d’œil et prennent des mesures.
+  Contoso a déployé l’application [Sécurité Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) sur ses PC et appareils exécutant Windows 10 Entreprise afin que les utilisateurs voient leur posture de sécurité d’un coup d’œil et prennent des mesures.

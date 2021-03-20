@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Utilisez un script PowerShell qui exécute l’applet de commande Search-UnifiedAuditLog dans Exchange Online pour effectuer des recherches dans le journal d’audit. Ce script est optimisé pour renvoyer les enregistrements d’un grand jeu d’audits (jusqu’à 50 000). Le script exporte ces enregistrements dans un fichier CSV que vous pouvez afficher ou transformer à l’aide de Power Query dans Excel.
-ms.openlocfilehash: 3d44054d8d1111fe86e06460f5ca4d442d0d1625
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 7ac3903abffc0bedb28363159c81b1f67a199f32
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233328"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907762"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit
 
 La sécurité, la conformité et l’audit sont désormais une priorité absolue pour les administrateurs informatiques du monde actuel. Microsoft 365 offre plusieurs fonctionnalités intégrées pour aider les organisations à gérer la sécurité, la conformité et l’audit. En particulier, la journalisation d’audit unifiée peut vous aider à examiner les incidents de sécurité et les problèmes de conformité. Vous pouvez récupérer les journaux d’audit à l’aide des méthodes suivantes :
 
-- [L’API Activité de gestion Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
+- [L’API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)
 
 - L’[outil de recherche dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le Centre de conformité Microsoft 365
 
-- La commande cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell
+- La commande cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell
 
 Si vous devez récupérer régulièrement les journaux d’audit, vous devez envisager une solution qui utilise l’API Activité de gestion Office 365, car elle peut offrir aux grandes organisations l’évolutivité et les performances nécessaires pour récupérer régulièrement des millions d’enregistrements d’audit. L'utilisation de l'outil de recherche du journal d'audit dans le Centre de conformité Microsoft 365 est un bon moyen de trouver rapidement les enregistrements d'audit pour des opérations spécifiques qui se produisent dans une plage de temps plus courte. L’utilisation de plages de temps plus longues dans l’outil de recherche dans le journal d’audit, en particulier pour les grandes organisations, peut renvoyer trop d’enregistrements pour être facilement gérables ou exportés.
 
@@ -56,7 +56,7 @@ Lorsque vous devez récupérer manuellement des données d’audit pour une enqu
 
 ## <a name="step-1-connect-to-exchange-online-powershell"></a>Étape 1 : Connexion à Exchange Online PowerShell
 
-La première étape consiste à se connecter à Exchange Online PowerShell. Vous pouvez vous connecter à l’aide de l’authentification moderne ou de l’authentification multifacteur. Pour obtenir des instructions, consultez [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+La première étape consiste à se connecter à Exchange Online PowerShell. Vous pouvez vous connecter à l’aide de l’authentification moderne ou de l’authentification multifacteur. Pour obtenir des instructions, consultez [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="step-2-modify-and-run-the-script-to-retrieve-audit-records"></a>Étape 2 : modifier et exécuter le script pour récupérer les enregistrements d’audit
 
@@ -146,12 +146,12 @@ Write-Host "Script complete! Finished retrieving audit records for the date rang
    |`$logFile`|"d:\temp\AuditSearchLog.txt"|Indique le nom et l’emplacement du fichier journal qui contient des informations sur la progression de la recherche dans le journal d’audit effectuée par le script. Le script écrit les horodatages UTC sur le fichier d’audit.|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|Indique le nom et l’emplacement du fichier CSV contenant les enregistrements d’audit renvoyés par le script.|
    |`[DateTime]$start` et `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Spécifie la plage de dates pour la recherche dans le journal d’audit. Le script retourne les enregistrements des activités d’audit qui se sont produites dans la plage de dates spécifiée. Par exemple, pour renvoyer les activités effectuées en janvier 2021, vous pouvez utiliser une date de début de `"2021-01-01"` et une date de fin de `"2021-01-31"` (n’oubliez pas d’entourer les valeurs de guillemets doubles) La valeur d’exemple dans le script renvoie les enregistrements des activités effectuées au cours des 24 heures précédentes. si vous n’incluez pas d’horodatage dans la valeur, l’horodatage par défaut est 00:00 (minuit) pour la date spécifiée.|
-   |`$record`|« AzureActiveDirectory »|Spécifie le type d’enregistrement des activités d’audit (également *opérations*) à rechercher. Cette propriété indique le service ou la fonctionnalité dans qui une activité a été déclenchée. Pour obtenir la liste des types d’enregistrement que vous pouvez utiliser pour cette variable, consultez [Type d’enregistrement journal d’audit](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). Vous pouvez utiliser le nom du type d’enregistrement ou la valeur ENUM. <br/><br/>**Conseil :** pour renvoyer les enregistrements d'audit pour tous les types d'enregistrements, utilisez la valeur `$null` (sans guillemets doubles).|
+   |`$record`|« AzureActiveDirectory »|Spécifie le type d’enregistrement des activités d’audit (également *opérations*) à rechercher. Cette propriété indique le service ou la fonctionnalité dans qui une activité a été déclenchée. Pour obtenir la liste des types d’enregistrement que vous pouvez utiliser pour cette variable, consultez [Type d’enregistrement journal d’audit](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). Vous pouvez utiliser le nom du type d’enregistrement ou la valeur ENUM. <br/><br/>**Conseil :** pour renvoyer les enregistrements d'audit pour tous les types d'enregistrements, utilisez la valeur `$null` (sans guillemets doubles).|
    |`$resultSize`|5000|Spécifie le nombre de résultats renvoyés chaque fois que la commande cmdlet **Search-UnifiedAuditLog** est appelée par le script (appelé *jeu de résultats*). La valeur de 5 000 est la valeur maximale prise en charge par la commande cmdlet. Laissez cette valeur telle qu’elle est.|
    |`$intervalMinutes`|60|Pour dépasser la limite de 5 000 enregistrements renvoyés, cette variable prend la plage de données que vous avez spécifiée et la découpe en intervalles de temps plus courts. Chaque intervalle, et non la plage de dates entière, est soumis à la limite de sortie de l’enregistrement de 5 000 de la commande. La valeur par défaut de 5 000 enregistrements par intervalle de 60 minutes dans la plage de dates doit être suffisante pour la plupart des organisations. Toutefois, si le script renvoie une erreur qui indique `maximum results limitation reached`, diminuez l’intervalle de temps (par exemple, à 30 minutes, voire 15 minutes) et réexécutez le script.|
    ||||
 
-   La plupart des variables répertoriées dans le tableau précédent correspondent aux paramètres de la commande cmdlet **Search-UnifiedAuditLog**. Pour plus d'informations sur ces paramètres, voir [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog).
+   La plupart des variables répertoriées dans le tableau précédent correspondent aux paramètres de la commande cmdlet **Search-UnifiedAuditLog**. Pour plus d'informations sur ces paramètres, voir [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
 3. Sur votre ordinateur local, ouvrez Windows PowerShell et allez dans le dossier dans lequel vous avez enregistré le script modifié.
 

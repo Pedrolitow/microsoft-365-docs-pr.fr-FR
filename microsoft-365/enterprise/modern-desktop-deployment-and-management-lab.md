@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 9b558ad20a84bc902dd9a4a78ebafdbcecd8a9bb
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288262"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907455"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratoire de déploiement Windows et Office
 
@@ -56,7 +56,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 ### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure 
 - Analyses du bureau 
 - Cloud Management Gateway & Cloud Distribution Point 
-- Attachement des locataires, cogestion et changement de charges de travail 
+- Attachement du client, cogestion et changement de charges de travail 
 - Accès à distance (VPN) 
 
 ### <a name="prepare-configuration"></a>Préparer la configuration   
@@ -105,13 +105,13 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
   - [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](https://www.aka.ms/watchhowtoshift)
 
-  - [Déploiement du système d’exploitation Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Déploiement du système d’exploitation Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [Plan de déploiement de Windows 10](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [Plan de déploiement de Windows 10](/windows/deployment/planning/index)
 
-  - [Guide de déploiement des Applications Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Guide de déploiement des Applications Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps)
 
-  - [Mise en route d’Intune](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [Mise en route d’Intune](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>Ressources connexes
 

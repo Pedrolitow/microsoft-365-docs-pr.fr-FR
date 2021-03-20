@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporter les résultats de recherche d’une recherche de contenu dans le Centre de conformité Microsoft 365 vers un ordinateur local. Les résultats des e-mails sont exportés en tant que fichiers PST. Le contenu des sites SharePoint et OneDrive Entreprise est exporté en tant que documents Office natifs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7027593768238b3d9a465eaa6038d92234c32f82
-ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
+ms.openlocfilehash: 3103bfda4269b7d66e4171b4481d259f2ae3e3de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "49992510"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906940"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -84,7 +84,7 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
 
 ## <a name="step-1-prepare-search-results-for-export"></a>Étape 1 : Préparer les résultats de recherche pour l’exportation
 
-Vous devez préparer les résultats de recherche pour l’exportation. Lorsque vous préparez les résultats, ils sont chargés vers un emplacement de stockage Azure fourni par Microsoft dans le cloud Microsoft. Le contenu des boîtes aux lettres et des sites est téléchargé à un taux maximal de 2 Go par heure.
+Vous devez préparer les résultats de recherche pour l’exportation. Lorsque vous préparez les résultats, ils sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft dans le cloud Microsoft. Le contenu des boîtes aux lettres et des sites est téléchargé à un taux maximal de 2 Go par heure.
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
   
@@ -128,7 +128,7 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
   
 9. Cliquez sur **la case à cocher Inclure des versions pour les documents SharePoint** pour exporter toutes les versions des documents SharePoint. Cette option apparaît uniquement si les sources de contenu de la recherche incluent des sites SharePoint ou OneDrive Entreprise. 
   
-10. Cliquez sur les fichiers d’exportation dans une case à cocher de dossier **compressé (compressé)** pour exporter les résultats de la recherche vers des dossiers compressés. Cette option est disponible uniquement lorsque vous choisissez d’exporter des éléments Exchange en tant que messages individuels et lorsque les résultats de la recherche incluent des documents SharePoint ou OneDrive. Cette option est principalement utilisée pour contourner la limite de 260 caractères dans les noms de chemin d’accès aux fichiers Windows lorsque des éléments sont exportés. Voir les « Noms de fichiers des éléments exportés » dans la section [Plus d’informations.](#more-information) 
+10. Cliquez sur les fichiers d’exportation dans une case à cocher de dossier **compressé (compressé)** pour exporter les résultats de la recherche vers des dossiers compressés. Cette option est disponible uniquement lorsque vous choisissez d’exporter des éléments Exchange en tant que messages individuels et lorsque les résultats de la recherche incluent des documents SharePoint ou OneDrive. Cette option est principalement utilisée pour contourner la limite de 260 caractères dans les noms de chemin d’accès aux fichiers Windows lorsque des éléments sont exportés. Consultez la section « Noms de fichiers des éléments exportés » dans la section [Plus d’informations.](#more-information) 
   
 11. Cliquez sur **Démarrer l’exportation**. Les résultats de la recherche sont préparés pour le téléchargement, ce qui signifie qu’ils sont téléchargés vers un emplacement de stockage Azure dans le cloud Microsoft. L'opération peut prendre plusieurs minutes.
 
@@ -138,7 +138,7 @@ Consultez la section suivante pour obtenir des instructions sur le téléchargem
 
 L’étape suivante consiste à télécharger les résultats de recherche à partir de l’emplacement de stockage Azure sur votre ordinateur local.
   
-1. Dans la page **recherche de** contenu, cliquez sur **l’onglet Exportation.** 
+1. Dans la page **Recherche de contenu,** cliquez sur **l’onglet Exportation.** 
   
    Vous de devez peut-être cliquer sur **Actualiser** pour mettre à jour la liste des tâches d’exportation afin qu’elle affiche la tâche d’exportation que vous avez créée. Les travaux d’exportation ont le même nom que la recherche correspondante avec **_Export** au nom de recherche.
   
@@ -168,7 +168,7 @@ L’étape suivante consiste à télécharger les résultats de recherche à par
   
     L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Voici plus d’informations sur l’exportation des résultats de recherche.
   
@@ -194,7 +194,7 @@ Pour plus d’informations sur les limites lors de l’exportation des résultat
 
 ### <a name="export-reports"></a>Exporter des rapports
   
-- Lorsque vous exportez des résultats de recherche, les rapports suivants sont inclus en plus des résultats de la recherche.
+- Lorsque vous exportez des résultats de recherche, les rapports suivants sont inclus en plus des résultats de recherche.
   
   - **Résumé de l’exportation** Document Excel qui contient un résumé de l’exportation. Cela inclut des informations telles que le nombre de sources de contenu qui ont fait l’objet d’une recherche, les tailles estimées et téléchargées des résultats de la recherche, ainsi que le nombre estimé et téléchargé d’éléments exportés.
   
@@ -210,7 +210,7 @@ Pour plus d’informations sur les limites lors de l’exportation des résultat
 
     - l’expéditeur et les destinataires du message.
 
-    - Indique si le message est un message en double si vous avez activé l’option de dédoplication lors de l’exportation des résultats de la recherche. Les messages en double ont une valeur dans **la** colonne Dupliquer vers l’élément qui identifie le message comme un doublon. La valeur de la colonne **Dupliquer** vers l’élément contient l’identité de l’élément du message exporté. Pour plus d’informations, voir Dédoublement dans les résultats de recherche [eDiscovery.](de-duplication-in-ediscovery-search-results.md)
+    - Indique si le message est un message en double si vous avez activé l’option de déplication lors de l’exportation des résultats de la recherche. Les messages en double ont une valeur dans **la** colonne Dupliquer vers l’élément qui identifie le message en tant que doublon. La valeur de la colonne **Dupliquer** vers l’élément contient l’identité de l’élément du message exporté. Pour plus d’informations, voir [Dédoublement dans les résultats de recherche eDiscovery.](de-duplication-in-ediscovery-search-results.md)
 
       Pour les documents provenant de sites SharePoint et OneDrive Entreprise, le journal des résultats contient des informations sur chaque document, notamment :
 
@@ -241,7 +241,7 @@ Pour plus d’informations sur les limites lors de l’exportation des résultat
 
     Notez également que dans l’exemple précédent (lorsque vous exportez des éléments indexés et partiellement indexés ou que vous exportez uniquement des éléments indexés), le rapport de synthèse d’exportation inclus avec les résultats de recherche exportés résumait 1 000 éléments estimés et 1 000 éléments téléchargés pour les mêmes raisons que précédemment décrites.  
 
-- Si la recherche dont vous exportez les résultats était une recherche d’emplacements de contenu spécifiques ou de tous les emplacements de contenu de votre organisation, seuls les éléments partiels provenant d’emplacements de contenu qui contiennent des éléments qui correspondent aux critères de recherche seront exportés. En d’autres termes, si aucun résultat de recherche n’est trouvé dans une boîte aux lettres ou un site, les éléments partiellement indexés dans cette boîte aux lettres ou ce site ne seront pas exportés. En effet, l’exportation d’éléments partiellement indexés à partir de nombreux emplacements de l’organisation peut augmenter la probabilité d’erreurs d’exportation et augmenter le temps d’exportation et de téléchargement des résultats de recherche.
+- Si la recherche dont vous exportez les résultats était une recherche d’emplacements de contenu spécifiques ou de tous les emplacements de contenu de votre organisation, seuls les éléments partiels provenant d’emplacements de contenu qui contiennent des éléments qui correspondent aux critères de recherche seront exportés. En d’autres termes, si aucun résultat de recherche n’est trouvé dans une boîte aux lettres ou un site, les éléments partiellement indexés dans cette boîte aux lettres ou ce site ne seront pas exportés. En effet, l’exportation d’éléments partiellement indexés à partir de nombreux emplacements de l’organisation peut augmenter la probabilité d’erreurs d’exportation et augmenter le temps d’exportation et de téléchargement des résultats de la recherche.
 
     Pour exporter des éléments partiellement indexés à partir de tous les emplacements de contenu pour une recherche, configurez la recherche pour qu’elle retourne tous les éléments (en supprimant tous les mots clés de la requête de recherche), puis exportez uniquement les éléments partiellement indexés lorsque vous exportez les résultats de la recherche.
 
@@ -259,13 +259,13 @@ Pour plus d’informations sur les limites lors de l’exportation des résultat
 
     Si vous choisissez d’exporter des éléments partiellement indexés, les éléments de boîte aux lettres partiellement indexés sont exportés dans un fichier PST distinct, quelle que soit l’option que vous choisissez sous Exporter du contenu Exchange en tant **que**.
 
-- Si des éléments partiellement indexés sont renvoyés dans les résultats de la recherche (car d’autres propriétés d’éléments partiellement indexés correspondent aux critères de recherche), ceux partiellement indexés sont exportés avec les résultats de recherche ordinaires. Par conséquent, si vous choisissez d’exporter à la fois les éléments indexés et les éléments partiellement indexés (en sélectionnant tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres** raisons d’exportation), les éléments partiellement indexés exportés avec les résultats réguliers sont répertoriés dans le rapport Results.csv. Ils ne sont pas répertoriés dans le rapport de items.csv non-indices.
+- Si des éléments partiellement indexés sont renvoyés dans les résultats de la recherche (car d’autres propriétés d’éléments partiellement indexés correspondent aux critères de recherche), ceux partiellement indexés sont exportés avec les résultats de recherche ordinaires. Par conséquent, si vous choisissez d’exporter à la fois les éléments indexés et les éléments partiellement indexés (en sélectionnant tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres** raisons d’exportation), les éléments partiellement indexés exportés avec les résultats réguliers sont répertoriés dans le rapport Results.csv. Ils ne sont pas répertoriés dans le rapport de items.csv non-ndes.
   
 ### <a name="exporting-individual-messages-or-pst-files"></a>Exportation de messages individuels ou de fichiers PST
   
 - Si le nom du chemin d’accès d’un message dépasse la limite de caractères maximale pour Windows, le nom du chemin d’accès du fichier est tronqué. Toutefois, le nom du chemin d’accès du fichier d’origine sera répertorié dans le manifeste et resultsLog.
   
-- Comme indiqué précédemment, les résultats de la recherche de courrier électronique sont exportés vers un dossier dans le système de fichiers. Le chemin d’accès du dossier pour les messages individuels réplique le chemin d’accès du dossier dans la boîte aux lettres de l’utilisateur. Par exemple, pour une recherche nommée « ContosoCase101 » messages dans la boîte de réception d’un utilisateur se trouve dans le chemin d’accès du dossier  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` .
+- Comme indiqué précédemment, les résultats de la recherche par courrier électronique sont exportés vers un dossier dans le système de fichiers. Le chemin d’accès du dossier pour les messages individuels réplique le chemin d’accès du dossier dans la boîte aux lettres de l’utilisateur. Par exemple, pour une recherche nommée « ContosoCase101 » messages dans la boîte de réception d’un utilisateur se trouve dans le chemin d’accès du dossier  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` .
 
 - Si vous choisissez d’exporter des messages électroniques dans un fichier  PST contenant tous les messages d’un même dossier, un dossier Éléments supprimés et un dossier **Dossiers** de recherche sont inclus dans le niveau supérieur du dossier PST. Ces dossiers sont vides.
 
@@ -285,7 +285,7 @@ Pour plus d’informations sur les limites lors de l’exportation des résultat
 
   Dans le script, vous devez spécifier le nom de la recherche pour qui vous souhaitez exporter les résultats. Par exemple, pour une recherche nommée, `SearchAllMailboxes` remplacez SEARCHNAME_Export par `SearchAllMailboxes_Export` .
 
-  Après avoir ajouté le nom de la recherche au script, vous pouvez copier le texte du script, puis le coller dans une fenêtre Windows PowerShell connectée au Centre de sécurité & conformité [PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) Après avoir collé le script, l’outil d’exportation eDiscovery s’affiche (comme lorsque vous téléchargez les résultats de recherche à l’aide de l’interface utilisateur) :
+  Après avoir ajouté le nom de la recherche au script, vous pouvez copier le texte du script, puis le coller dans une fenêtre Windows PowerShell connectée au Centre de sécurité & conformité [PowerShell.](/powershell/exchange/connect-to-scc-powershell) Après avoir collé le script, l’outil d’exportation eDiscovery s’affiche (comme lorsque vous téléchargez les résultats de recherche à l’aide de l’interface utilisateur) :
 
   ![Outil d’exportation eDiscovery](../media/eDiscoveryExportTool.png)
 
@@ -309,7 +309,7 @@ Tous les messages électroniques protégés par des droits (protégés par RMS) 
   
 ### <a name="filenames-of-exported-items"></a>Noms de fichiers des éléments exportés
   
-- Il existe une limite de 260 caractères (imposée par le système d’exploitation) pour le nom du chemin d’accès complet pour les messages électroniques et les documents de site exportés vers votre ordinateur local. Le nom complet du chemin d’accès des éléments exportés inclut l’emplacement d’origine de l’élément et l’emplacement du dossier sur l’ordinateur local sur lequel les résultats de la recherche sont téléchargés. Par exemple, si vous spécifiez de télécharger les résultats de la recherche dans l’outil d’exportation  `C:\Users\Admin\Desktop\SearchResults` eDiscovery, le chemin d’accès complet d’un élément de courrier téléchargé est  `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` .
+- Il existe une limite de 260 caractères (imposée par le système d’exploitation) pour le nom du chemin d’accès complet pour les messages électroniques et les documents de site exportés vers votre ordinateur local. Le nom complet du chemin d’accès des éléments exportés inclut l’emplacement d’origine de l’élément et l’emplacement du dossier sur l’ordinateur local sur lequel les résultats de la recherche sont téléchargés. Par exemple, si vous spécifiez de télécharger les résultats de la recherche dans l’outil d’exportation  `C:\Users\Admin\Desktop\SearchResults` eDiscovery, le chemin d’accès complet d’un élément de courrier téléchargé sera  `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` .
 
     Si la limite de 260 caractères est dépassée, le nom du chemin d’accès complet d’un élément est tronqué.
 
@@ -319,13 +319,13 @@ Tous les messages électroniques protégés par des droits (protégés par RMS) 
 
   - Si un nom de chemin d’accès complet tronqué existe déjà, un numéro de version est ajouté à la fin du nom de fichier ; par exemple,  `statusmessage(2).msg` .
 
-    Pour atténuer ce problème, envisagez de télécharger les résultats de la recherche vers un emplacement avec un nom de chemin d’accès court . par exemple, le téléchargement des résultats de recherche dans un dossier nommé ajouterait moins de caractères aux noms de chemin d’accès des éléments exportés que de les télécharger dans un  `C:\Results` dossier nommé  `C:\Users\Admin\Desktop\Results` .
+    Pour atténuer ce problème, envisagez de télécharger les résultats de la recherche vers un emplacement avec un nom de chemin d’accès court . Par exemple, le téléchargement des résultats de recherche dans un dossier nommé ajouterait moins de caractères aux noms de chemin d’accès des éléments exportés que de les télécharger dans un  `C:\Results` dossier nommé  `C:\Users\Admin\Desktop\Results` .
 
 - Lorsque vous exportez des documents de site, il est également possible que le nom de fichier d’origine d’un document soit modifié. Cela se produit spécifiquement pour les documents qui ont été supprimés d’un site SharePoint ou OneDrive Entreprise qui a été mis en attente. Une fois qu’un document qui se trouve sur un site placé en conservation est supprimé, le document supprimé est automatiquement déplacé vers la bibliothèque de conservation et de préservation du site (qui a été créée lorsque le site a été placé en conservation). Lorsque le document supprimé est déplacé vers la bibliothèque de conservation et de préservation des documents, un ID unique et généré de manière aléatoire est ensuite intégré au nom de fichier d’origine du document. Par exemple, si le nom de fichier d’un document est et que ce document est ensuite supprimé et déplacé vers la bibliothèque de conservation et de préservation, le nom de fichier du document déplacé vers la bibliothèque de conservation et de préservation des documents est modifié comme . `FY2017Budget.xlsx` `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` Si un document de la bibliothèque de conservation et de préservation correspond à la requête d’une recherche de contenu et que vous exportez les résultats de cette recherche, le fichier exporté a le nom de fichier modifié . dans cet exemple, le nom de fichier du document exporté serait  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
 
-    Lorsqu’un document d’un site en attente est modifié (et que le système de version de la bibliothèque de documents du site a été activé), une copie du fichier est automatiquement créée dans la bibliothèque de conservation et de préservation des documents. Dans ce cas, un ID unique et généré de manière aléatoire est également appendé au nom de fichier du document copié dans la bibliothèque de conservation et de préservation des documents.
+    Lorsqu’un document d’un site en attente est modifié (et que le système de version de la bibliothèque de documents du site a été activé), une copie du fichier est automatiquement créée dans la bibliothèque de conservation et de préservation des documents. Dans ce cas, un ID unique et généré de manière aléatoire est également appendé au nom de fichier du document copié dans la bibliothèque de conservation et de préservation.
 
-    La raison pour laquelle les noms de fichiers des documents déplacés ou copiés dans la bibliothèque de conservation et de préservation des documents est pour éviter les conflits de noms de fichiers. Pour plus d’informations sur la conservation des sites et de la bibliothèque de conservation et de préservation des sites, voir Vue d’ensemble de la conservation in place dans [SharePoint Server 2016.](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95)
+    La raison pour laquelle les noms de fichiers des documents déplacés ou copiés dans la bibliothèque de conservation et de préservation des documents est pour éviter les conflits de noms de fichiers. Pour plus d’informations sur la mise en attente des sites et de la bibliothèque de conservation et de préservation des sites, voir Vue d’ensemble de la conservation in place dans [SharePoint Server 2016.](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95)
 
 ### <a name="miscellaneous"></a>Divers
   

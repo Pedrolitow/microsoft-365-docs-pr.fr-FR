@@ -19,30 +19,30 @@ description: Utilisez Microsoft Defender pour Office 365 avec Microsoft Defender
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 035834e1e4855c0e47defed06043a5fdbd0e63bd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 05022b5728b147ea8459cdcb41b2930201e2c7e6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166086"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907095"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender pour Office 365](office-365-atp.md) peut être configuré pour fonctionner avec [Microsoft Defender pour point de terminaison.](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender pour Office 365](office-365-atp.md) peut être configuré pour fonctionner avec [Microsoft Defender pour point de terminaison.](/windows/security/threat-protection)
 
-L’intégration de Microsoft Defender pour Office 365 à Microsoft Defender pour endpoint peut aider votre équipe en charge des opérations de sécurité à surveiller et à prendre des mesures rapidement si les appareils des utilisateurs sont exposés. Par exemple, une fois l’intégration activée, votre équipe des opérations de sécurité pourra voir les appareils potentiellement affectés par un message électronique détecté, ainsi que le nombre d’alertes récentes générées pour ces appareils dans Microsoft Defender pour Endpoint.
+L’intégration de Microsoft Defender pour Office 365 à Microsoft Defender pour Endpoint peut aider votre équipe en charge des opérations de sécurité à surveiller et à prendre des mesures rapidement si les appareils des utilisateurs sont exposés. Par exemple, une fois l’intégration activée, votre équipe des opérations de sécurité pourra voir les appareils potentiellement affectés par un message électronique détecté, ainsi que le nombre d’alertes récentes générées pour ces appareils dans Microsoft Defender pour Endpoint.
 
-L’image suivante illustre à quoi ressemble l’onglet **Appareils** lorsque l’intégration de Microsoft Defender pour les points de terminaison est activée :
+L’image suivante illustre l’apparence de l’onglet **Appareils** lorsque l’intégration de Microsoft Defender for Endpoint est activée :
 
 ![Lorsque Microsoft Defender pour le point de terminaison est activé, vous pouvez voir une liste d’appareils avec des alertes.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
 Dans cet exemple, vous pouvez voir que les destinataires du message électronique détecté ont quatre appareils et un a une alerte. Le fait de cliquer sur le lien d’un appareil ouvre sa page dans le Centre de sécurité Microsoft Defender ( <https://securitycenter.windows.com> ).
 
 > [!TIP]
-> **[En savoir plus sur le Centre de](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** sécurité Microsoft Defender (également appelé portail Microsoft Defender pour points de terminaison).)
+> **[En savoir plus sur le Centre de](/windows/security/threat-protection/microsoft-defender-atp/use)** sécurité Microsoft Defender (également appelé portail Microsoft Defender pour points de terminaison).)
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -82,4 +82,4 @@ L’intégration de Microsoft Defender pour Office 365 à Microsoft Defender pou
 
 [Microsoft Defender pour Office 365](office-365-atp.md)
 
-[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender pour point de terminaison](/windows/security/threat-protection)

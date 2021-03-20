@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à identifier les raisons et la façon dont un message de hameçonnage a été envoyé dans Microsoft 365, et ce qu’il faut faire pour empêcher d’autres messages de hameçonnage à l’avenir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d3abbafce36c589f60eb164fb29c714c980f8b98
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 84159ef08324ed0a895d84e6c9c19f429e227fa1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286488"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908137"
 ---
 # <a name="tune-anti-phishing-protection"></a>Régler la protection anti-hameçonnage
 
@@ -64,7 +64,7 @@ Plus précisément, vous devez vérifier le champ **d’en-tête X-Forefront-Ant
 
 - Pour les messages qui sont mis en quarantaine par erreur ou pour les messages autorisés, nous vous recommandons de rechercher ces messages dans l’Explorateur de menaces et les [détections en temps réel.](threat-explorer.md) Vous pouvez effectuer une recherche par expéditeur, destinataire ou ID de message. Après avoir localisé le message, consultez les détails en cliquant sur l’objet. Pour un message mis en quarantaine, recherchez la « technologie de détection » afin de pouvoir utiliser la méthode appropriée pour remplacer. Pour un message autorisé, recherchez la stratégie qui a autorisé le message.
 
-- Le courrier usurpé est marqué comme hameçonnage dans Defender pour Office 365. Parfois, l’usurpation est anodin, et parfois les utilisateurs ne veulent pas qu’elle soit mise en quarantaine. Pour minimiser l’impact sur les utilisateurs, examinez régulièrement le [rapport sur l’usurpation d’informations.](learn-about-spoof-intelligence.md) Une fois que vous avez examiné et effectué les [](set-up-anti-phishing-policies.md#spoof-settings) remplacements nécessaires,  vous pouvez être certain de configurer la veille contre l’usurpation d’adresse pour mettre en quarantaine les messages suspects au lieu de les remettre dans le dossier Courrier indésirable de l’utilisateur.
+- Le courrier usurpé est marqué comme hameçonnage dans Defender pour Office 365. Parfois, l’usurpation d’un état est anodin, et parfois les utilisateurs ne veulent pas qu’elle soit mise en quarantaine. Pour minimiser l’impact sur les utilisateurs, examinez régulièrement le [rapport sur l’usurpation d’informations.](learn-about-spoof-intelligence.md) Une fois que vous avez examiné et effectué les [](set-up-anti-phishing-policies.md#spoof-settings) remplacements nécessaires,  vous pouvez être certain de configurer la veille contre l’usurpation d’adresse pour mettre en quarantaine les messages suspects au lieu de les remettre dans le dossier Courrier indésirable de l’utilisateur.
 
 - Vous pouvez répéter l’étape ci-dessus pour l’emprunt d’identité (domaine ou utilisateur). Le rapport d’emprunt d’identité se trouve sous **Threat Management** \> **Dashboard** \> **Insights**.
 
@@ -86,10 +86,10 @@ Plus précisément, vous devez vérifier le champ **d’en-tête X-Forefront-Ant
 
   - [Utiliser DMARC pour valider les messages électroniques](use-dmarc-to-validate-email.md)
 
-- Dans la mesure du possible, nous vous recommandons de remettre le courrier électronique de votre domaine directement à Microsoft 365. En d’autres termes, pointez l’enregistrement MX de votre domaine Microsoft 365 vers Microsoft 365. Exchange Online Protection (EOP) est en mesure de fournir la meilleure protection pour vos utilisateurs cloud lorsque leurs messages sont remis directement à Microsoft 365. Si vous devez utiliser un système d’hygiène de messagerie tiers devant EOP, utilisez le filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+- Dans la mesure du possible, nous vous recommandons de remettre le courrier électronique de votre domaine directement à Microsoft 365. En d’autres termes, pointez l’enregistrement MX de votre domaine Microsoft 365 vers Microsoft 365. Exchange Online Protection (EOP) est en mesure de fournir la meilleure protection pour vos utilisateurs cloud lorsque leurs messages sont remis directement à Microsoft 365. Si vous devez utiliser un système d’hygiène de messagerie tiers devant EOP, utilisez le filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
 - Les utilisateurs doivent utiliser le [](enable-the-report-phish-add-in.md) module de [signalement](enable-the-report-message-add-in.md) des messages ou le module de signalement du hameçonnage pour signaler des messages à Microsoft, qui peut entraîner notre système. Les administrateurs doivent également tirer parti des fonctionnalités [de soumission](admin-submission.md) d’administrateur.
 
 - L’authentification multifacteur (MFA) est un bon moyen d’éviter les comptes compromis. Vous devez vivement envisager d’activer l’activant MFA pour tous vos utilisateurs. Pour une approche par phases, commencez par activer l’famf pour vos utilisateurs les plus sensibles (administrateurs, cadres, etc.) avant d’activer l’mf pour tout le monde. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
-- Les règles de forwarding à des destinataires externes sont souvent utilisées par les attaquants pour extraire des données. Utilisez les informations **des règles de forwarding de boîte** aux lettres de révision dans le Score de sécurité [Microsoft](../mtp/microsoft-secure-score.md) pour rechercher et même empêcher les règles de forwarding à des destinataires externes. Pour plus d’informations, voir [Atténuation des règles de forwarding externe client avec le score de sécurisation.](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)
+- Les règles de forwarding à des destinataires externes sont souvent utilisées par les attaquants pour extraire des données. Utilisez les informations **des règles de forwarding de boîte** aux lettres de révision dans le Score de sécurité [Microsoft](../mtp/microsoft-secure-score.md) pour rechercher et même empêcher les règles de forwarding à des destinataires externes. Pour plus d’informations, voir [Atténuation des règles de forwarding externe client avec le score de sécurisation.](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)

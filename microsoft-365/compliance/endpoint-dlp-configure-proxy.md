@@ -19,19 +19,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Apprenez comment configurer les paramètres de proxy et de connexion Internet du dispositif pour le DLP Endpoint.
-ms.openlocfilehash: 1e723adfbf16ba1180558e34b0fe4867e6337c57
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841606"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907004"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurer le proxy du dispositif et les paramètres de connexion à Internet pour le DLP du point de terminaison
 
 Microsoft Endpoint DLP utilise Microsoft Windows HTTP (WinHTTP) pour signaler les données et communiquer avec le service Microsoft Endpoint Cloud. Le DLP Endpoint intégré fonctionne dans le contexte du système en utilisant le compte LocalSystem.
 
 > [!TIP]
-> Pour les organisations qui utilisent des proxies de transfert comme passerelle vers l'Internet, vous pouvez utiliser la protection du réseau pour enquêter derrière un proxy. Pour plus d'informations, voir [Enquêter sur les événements de connexion qui se produisent derrière les procurations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy).
+> Pour les organisations qui utilisent des proxies de transfert comme passerelle vers l'Internet, vous pouvez utiliser la protection du réseau pour enquêter derrière un proxy. Pour plus d'informations, voir [Enquêter sur les événements de connexion qui se produisent derrière les procurations](/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy).
 
 Le paramètre de configuration de WinHTTP est indépendant des paramètres du proxy de navigation Internet de Windows (WinINet) et ne peut découvrir un serveur proxy qu'en utilisant les méthodes de découverte automatique suivantes :
 
@@ -89,7 +89,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
      `netsh winhttp reset proxy`
 
-Pour plus d’informations, voir [la syntaxe, les contextes et le formatage de la commande Netsh](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts).
+Pour plus d’informations, voir [la syntaxe, les contextes et le formatage de la commande Netsh](/windows-server/networking/technologies/netsh/netsh-contexts).
 
 
 ## <a name="enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server"></a>Activer l’accès aux URL des services cloud DLP de point de terminaison dans le serveur proxy
@@ -129,7 +129,7 @@ Remplacez la *HardDrivePath* par le chemin d’accès dans lequel l’outil MDAT
 Si au moins une des options de connectivité renvoie un état (200), le client Defender pour le point de terminaison peut communiquer avec l’URL testée correctement à l’aide de cette méthode de connectivité. 
 
 Toutefois, si les résultats du contrôle de la connectivité indiquent un échec, une erreur HTTP est affichée (voir Codes d'état HTTP). Vous pouvez ensuite utiliser les URL du tableau figurant dans la section [Activer l'accès aux URL du service DLP dans le nuage de points terminaux dans le serveur proxy](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server). Les URL que vous utiliserez dépendent de la région sélectionnée au cours de la procédure d’intégration.
-[!NOTE] L’outil Analyseur de connectivité n’est pas compatible avec la règle ASR [Bloquer les créations de processus en provenance des commandes PSExec et WMI](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Vous devrez désactiver temporairement cette règle pour exécuter l’outil connectivité.
+[!NOTE] L’outil Analyseur de connectivité n’est pas compatible avec la règle ASR [Bloquer les créations de processus en provenance des commandes PSExec et WMI](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Vous devrez désactiver temporairement cette règle pour exécuter l’outil connectivité.
 
 [!NOTE] Lorsque le TelemetryProxyServer est défini, dans le Registre ou via une stratégie de groupe, Le Defender for Endpoint se rabattra sur le direct s'il ne peut pas accéder au proxy défini.
 Sujets connexes – Périphériques Windows 10 embarqués – Dépannage des problèmes d'embarquement des DLP Microsoft Endpoint
@@ -145,8 +145,8 @@ Sujets connexes – Périphériques Windows 10 embarqués – Dépannage des pro
 - [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
-- [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Outils et méthodes d’intégration pour les appareils Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
+- [Outils et méthodes d’intégration pour les appareils Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure AD appareils joints](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure AD appareils joints](/azure/active-directory/devices/concept-azure-ad-join)
 - [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

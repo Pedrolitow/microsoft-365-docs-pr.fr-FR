@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender pour point de terminaison dans le Centre de sécurité Microsoft 365
+title: Fournir un accès au fournisseur de services de sécurité gérés (MSSP)
 description: En savoir plus sur les modifications apportées au Centre de sécurité Microsoft Defender vers le Centre de sécurité Microsoft 365
 keywords: Mise en place avec le Centre de sécurité Microsoft 365, LAPDE, MDATP, MDO, MDE, volet unique, portail convergé, portail de sécurité, portail de sécurité Defender
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 96d5a3bdbd0acbf428f01cc3bb5afefaa95950b4
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: db9279ba1bc5fe11f3a31884a05b4403f0cb67f3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242941"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906699"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Fournir un accès au fournisseur de services de sécurité gérés (MSSP) 
 
@@ -33,16 +33,16 @@ ms.locfileid: "50242941"
 
 **S’applique à :**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](./microsoft-threat-protection.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Pour implémenter une solution d’accès délégué multi-locataire, prenez les mesures suivantes :
 
-1. Activez le contrôle d’accès basé sur les rôles dans Defender pour le point de terminaison dans le Centre de sécurité Microsoft 365 et [connectez-vous](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac) aux groupes Azure Active Directory (Azure AD).
+1. Activez le contrôle d’accès basé sur les rôles dans Defender pour le point de terminaison dans le Centre de sécurité Microsoft 365 et [connectez-vous](/windows/security/threat-protection/microsoft-defender-atp/rbac) aux groupes Azure Active Directory (Azure AD).
 
-2. Configurer des [packages d’accès de gouvernance pour](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) la demande d’accès et la mise en service.
+2. Configurer des [packages d’accès de gouvernance pour](/azure/active-directory/governance/identity-governance-overview) la demande d’accès et l’approvisionnement.
 
-3. Gérer les demandes d’accès et les audits [dans Microsoft Myaccess](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve).
+3. Gérer les demandes d’accès et les audits [dans Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>Activer les contrôles d’accès basés sur les rôles dans Microsoft Defender pour le point de terminaison dans le Centre de sécurité Microsoft 365
 
@@ -57,7 +57,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
 2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint dans les rôles et groupes du Centre de sécurité Microsoft 365.
 
-    Pour activer RBAC dans le Centre de sécurité Microsoft 365 client, accédez aux **autorisations > Rôles** de points de terminaison & groupes > Rôles avec un compte d’utilisateur ayant des droits d’administrateur général ou d’administrateur de sécurité.
+    Pour activer RBAC dans le Centre de sécurité Microsoft 365 client, accédez aux **autorisations > Rôles** de points de terminaison & groupes > Rôles avec un compte d’utilisateur avec des droits d’administrateur général ou d’administrateur de sécurité.
 
     ![Image de l’accès MSSP](../../media/mssp-access.png)
 
@@ -69,9 +69,9 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
       Effectuez toutes les actions à l’exception de la réponse en direct et gérez les paramètres de sécurité.
 
     - **Analystes de niveau 2** <br>
-      Fonctionnalités de niveau 1 avec l’ajout de la [réponse en direct](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
+      Fonctionnalités de niveau 1 avec ajout à la [réponse en direct](/windows/security/threat-protection/microsoft-defender-atp/live-response)
 
-    Pour plus d’informations, voir [Utiliser le contrôle d’accès basé sur un rôle.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+    Pour plus d’informations, voir [Utiliser le contrôle d’accès basé sur un rôle.](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 
 
@@ -87,11 +87,11 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     Les catalogues de ressources sont une collection logique de packages d’accès, créés dans le client Client AD.
 
-    Pour ce faire, dans le client AD client, accédez à Gouvernance des identités : catalogues et ajoutez **nouveau catalogue**. Dans notre exemple, nous l’appeller **MSSP Accesses**. 
+    Pour ce faire, dans le client AD client, accédez à La gouvernance des identités : catalogues et ajoutez **nouveau catalogue**. Dans notre exemple, nous l’appeller **MSSP Accesses**. 
 
     ![Image du nouveau catalogue](../../media/goverance-catalog.png)
 
-    Pour plus d’informations, voir [Créer un catalogue de ressources.](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-catalog-create)
+    Pour plus d’informations, voir [Créer un catalogue de ressources.](/azure/active-directory/governance/entitlement-management-catalog-create)
 
 
 3. **Créer des packages d’accès pour les ressources MSSP Client AAD : Gouvernance des identités**
@@ -107,7 +107,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     ![Image du nouveau package d’accès](../../media/new-access-package.png)
 
-    Pour plus d’informations, [voir Créer un package d’accès.](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create)
+    Pour plus d’informations, [voir Créer un package d’accès.](/azure/active-directory/governance/entitlement-management-access-package-create)
 
 
 4. **Fournir un lien de demande d’accès aux ressources MSSP à partir de Customer AAD: Identity Governance**
@@ -135,4 +135,4 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
     `https://security.microsoft.com/?tid=<CustomerTenantId>` avec les autorisations et les rôles qui leur ont été attribués.
 
 > [!IMPORTANT]
-> L’accès délégué à Microsoft Defender pour point de terminaison dans le Centre de sécurité Microsoft 365 permet actuellement d’accéder à un seul client par fenêtre de navigateur. 
+> L’accès délégué à Microsoft Defender pour point de terminaison dans le Centre de sécurité Microsoft 365 permet actuellement d’accéder à un seul client par fenêtre de navigateur.

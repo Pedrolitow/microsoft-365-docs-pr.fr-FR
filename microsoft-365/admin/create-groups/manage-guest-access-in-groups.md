@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Découvrez comment ajouter des invités à un groupe Microsoft 365, afficher les utilisateurs invités et utiliser PowerShell pour contrôler l’accès invité.
-ms.openlocfilehash: 9a713684bb9a2401316dbb3289115be19b220cff
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 114fc1b5262f1632c7e7a8d1aa339c2470223288
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453656"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908605"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gérer l’accès invité dans les groupes Microsoft 365
 
@@ -35,8 +35,8 @@ Lorsqu’il est allumé, les membres du groupe peuvent inviter des utilisateurs 
 Une fois approuvé, l’utilisateur invité est ajouté à l’annuaire et au groupe.
 
 > [!Note]
-> Yammer réseaux d’entreprise qui sont en mode natif ou la région ue ne [sont](https://go.microsoft.com/fwlink/?linkid=2107357) pas en charge les invités réseau.
-> Les groupes de Yammer connectés Microsoft 365 ne sont pas actuellement en charge, mais vous pouvez créer des groupes externes non connectés dans Yammer réseau. Voir [Créer et gérer des groupes externes dans Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) pour obtenir des instructions.
+> Yammer réseaux d’entreprise qui sont en mode natif ou la région ue ne [sont](/yammer/manage-security-and-compliance/manage-data-compliance) pas en charge les invités réseau.
+> Les groupes de Yammer connectés Microsoft 365 ne sont pas actuellement en charge, mais vous pouvez créer des groupes externes non connectés dans Yammer réseau. Voir [Créer et gérer des groupes externes dans Yammer](/yammer/work-with-external-users/create-and-manage-external-groups) pour obtenir des instructions.
 
 L’accès invité dans les groupes est souvent utilisé dans le cadre d’un scénario plus large qui inclut SharePoint ou Teams. Ces services ont leurs propres paramètres de partage d’invités. Pour obtenir des instructions complètes sur la configuration du partage d’invités entre les groupes, SharePoint et Teams, voir :
 
@@ -53,7 +53,7 @@ Si vous souhaitez activer ou désactiver l’accès invité dans les groupes, vo
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Ajouter des invités à un groupe Microsoft 365 à partir du Centre d’administration
 
-Si l’invité existe déjà dans votre annuaire, vous pouvez l’ajouter à vos groupes à partir du Centre d’administration Microsoft 365. (Les groupes avec appartenance dynamique doivent être [gérés dans Azure Active Directory.)](https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-create-rule)
+Si l’invité existe déjà dans votre annuaire, vous pouvez l’ajouter à vos groupes à partir du Centre d’administration Microsoft 365. (Les groupes avec appartenance dynamique doivent être [gérés dans Azure Active Directory.)](/azure/active-directory/enterprise-users/groups-create-rule)
   
 1. Dans le Centre d’administration, allez à la page   >  **Groupes.**
   
@@ -63,16 +63,16 @@ Si l’invité existe déjà dans votre annuaire, vous pouvez l’ajouter à vos
     
 5. Sélectionnez **Enregistrer**.
 
-Si vous souhaitez ajouter un invité directement à l’annuaire, vous pouvez ajouter [azure Active Directory B2B utilisateurs de collaboration dans le portail Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Si vous souhaitez ajouter directement un invité à l’annuaire, vous pouvez ajouter des utilisateurs de [collaboration B2B Azure Active Directory](/azure/active-directory/b2b/add-users-administrator)dans le portail Azure.
 
-Si vous souhaitez modifier les informations d’un invité, vous pouvez ajouter ou mettre à jour les informations de profil d’un utilisateur à [l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+Si vous souhaitez modifier les informations d’un invité, vous pouvez ajouter ou mettre à jour les informations de profil d’un utilisateur à [l’aide d’Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Bloquer les utilisateurs invités d’un groupe spécifique](https://docs.microsoft.com/microsoft-365/solutions/per-group-guest-access)
+[Bloquer les utilisateurs invités d’un groupe spécifique](../../solutions/per-group-guest-access.md)
 
 [Gérer l’appartenance à un groupe dans le Centre d’administration Microsoft 365](add-or-remove-members-from-groups.md)
   
-[Révisions d’accès Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[Révisions d’accès Azure Active Directory](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
-[Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser)
+[Set-AzureADUser](/powershell/module/azuread/set-azureaduser)
