@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Découvrez comment laisser vos utilisateurs partager leurs calendriers avec des utilisateurs externes pour les réunions et les rendez-vous.
-ms.openlocfilehash: 8204dc025f843953af13cba58fa0cf2e4d76de45
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 5fc80965ae277e66dfbf73de80618dec03d26759
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760053"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915049"
 ---
 # <a name="share-calendars-with-external-users"></a>Partager des calendriers avec des utilisateurs externes
 
@@ -36,11 +36,11 @@ Il est parfois nécessaire pour vos utilisateurs de planifier des réunions avec
 Vous pouvez activer le partage de calendrier pour tous les utilisateurs de votre organisation dans le Centre d’administration Microsoft 365. Une fois le partage activé, vos utilisateurs peuvent utiliser Outlook Web App pour partager leurs calendriers avec toute personne à l’intérieur ou à l’extérieur de l’organisation. Les membres de l’organisation peuvent afficher le calendrier partagé avec leur propre calendrier. Les personnes extérieures à l’organisation seront envoyées à une URL qu’elles pourront utiliser pour afficher le calendrier. Les utilisateurs de votre organisation décident quand partager et combien partager.
 
 > [!NOTE]
-> Si vous souhaitez partager des calendriers avec une organisation qui utilise Exchange Server 2013 (une solution sur site), l’administrateur Exchange devra configurer une relation d’authentification avec le cloud. C’est ce que l’on appelle la fédération et doit satisfaire la exigences logicielle minimale. Pour plus [d’informations,](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) voir Partage.
+> Si vous souhaitez partager des calendriers avec une organisation qui utilise Exchange Server 2013 (une solution sur site), l’administrateur Exchange devra configurer une relation d’authentification avec le cloud. C’est ce que l’on appelle la fédération et doit satisfaire la exigences logicielle minimale. Pour [plus d’informations,](/exchange/sharing-exchange-2013-help) voir Partage.
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Activer le partage de calendrier à l’aide du Centre d’administration Microsoft 365
 
-1. Dans le centre d’administration, allez à **Paramètres** \> **de l’organisation.**
+1. Dans le centre d’administration, allez aux **paramètres de** \> **l’organisation Paramètres.**
 
 2. Sous **l’onglet Services,** sélectionnez **Calendrier.**
   

@@ -1,5 +1,5 @@
 ---
-title: Gérer les fonctionnalités Office qui apparaissent dans Nouveautés
+title: Manage which ‎Office‎ features appear in What's New
 f1.keywords:
 - NOCSH
 ms.author: danbrown
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Choisissez les fonctionnalités Office à afficher ou masquer lorsqu’un utilisateur choisit Aide > Nouveautés de son application Office sur Windows à l’aide de la fonctionnalité « Nouveautés d’Office » dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: d0b5bc3e643b306d9a38a707fed50ab546249c2b
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.openlocfilehash: b9d20e3df4a2de540316dce0e6a6905c07e65176
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122347"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915026"
 ---
-# <a name="manage-which-office-features-appear-in-whats-new"></a>Gérer les fonctionnalités Office qui apparaissent dans Nouveautés
+# <a name="manage-which-office-features-appear-in-whats-new"></a>Manage which Office‎ features appear in What's New
 
-Lorsqu’une fonctionnalité Office importante est publiée, les utilisateurs obtiennent un message à ce sujet lorsqu’ils choisissent Aide nouveautés dans leur application  >   Office sur Windows.
+When an important ‎Office‎ feature is released, users will get a message about it when they choose **Help**  >  **What's New** in their ‎‎Office‎‎ app on ‎Windows‎.
 
 Vous pouvez contrôler les messages de fonctionnalité affichés par vos utilisateurs à l’aide de la fonctionnalité Nouveautés d’Office dans le Centre **d’administration** Microsoft 365. Si vous décidez de masquer un message de fonctionnalité à vos utilisateurs, vous pouvez toujours revenir plus tard et décider de l’afficher.
 
 > [!NOTE]
 > - Le fait de masquer un message de fonctionnalité à vos utilisateurs ne désactive pas la fonctionnalité dans l’application Office.
-> - Le rôle d’administrateur général ou d’administrateur des applications Office doit vous être attribué pour utiliser la fonctionnalité **Nouveautés d’Office.**
+> - Vous devez avoir le rôle d’administrateur général ou le rôle d’administrateur des applications Office pour utiliser la fonctionnalité **Nouveautés d’Office.**
 
 ## <a name="show-or-hide-new-features"></a>Afficher ou masquer les nouvelles fonctionnalités 
 
@@ -47,7 +47,7 @@ Vous pouvez contrôler les messages de fonctionnalité affichés par vos utilisa
      - La première version (publication) dans qui la fonctionnalité est disponible pour ce canal.
 4. Choose **Hide from users**. Ou, si vous avez précédemment caché la fonctionnalité, choisissez **Afficher aux utilisateurs.**
 
-Vous pouvez également sélectionner plusieurs fonctionnalités sur la page Gérer les fonctionnalités **Office** qui apparaissent dans la page Nouveautés, puis choisir Masquer **ou** **Afficher.**
+You can also select multiple features on the **Manage which ‎Office‎ features appear in What's New** page, and then choose either **Hide** or **Show**.
 
 > [!NOTE]
 > - Si une fonctionnalité est disponible dans plusieurs applications Office, la définition de la fonctionnalité sur **Masqué** masque le message de fonctionnalité dans toutes ces applications Office.
@@ -56,19 +56,19 @@ Vous pouvez également sélectionner plusieurs fonctionnalités sur la page Gér
 
 ## <a name="list-of-features"></a>Liste des fonctionnalités
 
-Vous pouvez filtrer les fonctionnalités qui apparaissent dans la page Gérer les fonctionnalités Office qui apparaissent **dans** la page Nouveautés. Vous pouvez filtrer par canal, application ou état, ou par combinaison d’entre eux.
+You can filter which features appear on the **Manage which ‎Office‎ features appear in What's New** page. Vous pouvez filtrer par canal, application ou état, ou par combinaison d’entre eux.
 
-De nouvelles fonctionnalités apparaissent sur la page en fonction de la planification suivante :
+De nouvelles fonctionnalités apparaissent sur la page selon la planification suivante :
 
 ||||
 |:-----|:-----|:-----|
-|**Canal** <br/> |**Date** <br/> |**Prendre des mesures** <br/> |
+|**Canal** <br/> |**Date** <br/> |**Prendre action** <br/> |
 |**Current** <br/> |15 du mois  <br/> |1 à 3 semaines avant la publication mensuelle <br/> |
 |**Entreprise mensuelle** <br/> |Premier du mois  <br/> |Deux semaines avant la publication majeure qui apporte de nouvelles fonctionnalités |
 |**Entreprise semi-annuelle (prévisualisation)** <br/> |1er septembre et 1er mars <br/> | 2 semaines avant la publication majeure qui apporte de nouvelles fonctionnalités|
 |**Entreprise semi-annuelle** <br/> |1er janvier et 1er juillet <br/> | 2 semaines avant la publication majeure qui apporte de nouvelles fonctionnalités<br/> |
 
-Pour plus d’informations sur le moment où les nouvelles versions sont publiées sur chaque canal de mise à jour, voir l’historique des mises à jour de [Microsoft 365 Apps (répertoriées par date).](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
+Pour plus d’informations sur le moment où les nouvelles versions sont publiées sur chaque canal de mise à jour, voir l’historique des mises à jour pour [Microsoft 365 Apps (répertorié](/officeupdates/update-history-microsoft365-apps-by-date)par date).
 
 ## <a name="add-the-whats-new-in-office-card-to-the-admin-center-home-page"></a>Ajouter la carte « Nouveautés d’Office » à la page d’accueil du Centre d’administration
 

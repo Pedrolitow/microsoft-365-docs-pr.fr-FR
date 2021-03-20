@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Apprenez à vérifier votre domaine et à créer des enregistrements DNS avec Microsoft 365.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: c5c33af8a5635d1092aec2f1bffdfc942f2e4851
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126334"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914593"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Connecter votre domaine à Microsoft 365
 
@@ -72,10 +72,10 @@ Vérifiez que les champs sont définis par les valeurs suivantes :
 
 Enregistrez l'enregistrement.
 
-Validez votre enregistrement SPF en utilisant l'un des [Outils de validation SPF](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) suivants
+Validez votre enregistrement SPF en utilisant l'un des [Outils de validation SPF](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) suivants
 
 SPF est conçu pour lutter contre l’usurpation d’adresse, mais il existe des techniques d’usurpation d’adresse contre lesquelles SPF ne peut rien faire. Pour vous protéger contre ces techniques, une fois que vous avez configuré votre SPF, vous devez également configurer DKIM et DMARC pour Microsoft 365.
 
-Pour commencer, consultez la rubrique [Utilisation du DKIM pour valider les e-mails sortants envoyés à partir de votre domaine dans Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) et [Utilisation du DMARC pour valider les e-mails dans Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+Pour commencer, consultez la rubrique [Utilisation du DKIM pour valider les e-mails sortants envoyés à partir de votre domaine dans Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) et [Utilisation du DMARC pour valider les e-mails dans Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 Pour finir, revenez à l’Assistant Configuration du domaine du centre d’administration pour terminer votre installation.

@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Découvrez comment créer des groupes de distribution ou des listes dans le Centre d’administration Microsoft 365 pour pouvoir envoyer des courriers électroniques à un groupe sans avoir à taper le nom de chaque destinataire.
-ms.openlocfilehash: 7c416612fa241d7fec11a2e24a29e149594951e3
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 5c4781653a5f18b7a41dc20212771368132801cd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080468"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914245"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre d’administration Microsoft 365
   
@@ -58,7 +58,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 1. Sélectionnez l'icône du lanceur d'applications , puis **Administrateur**.
     
-    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes les applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
+    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les **applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
     
 2. Sélectionnez **Groupes** \> **dans** le volet de navigation gauche, puis **sélectionnez Ajouter un groupe.** 
       
@@ -72,6 +72,4 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
     
 Découvrez comment utiliser le groupe dans Outlook 2016 et Outlook sur le web dans la rubrique Utiliser des groupes de contacts (anciennement listes de [distribution) dans Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
-Consultez les [problèmes de groupe de](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) distribution pour obtenir de l’aide sur les problèmes de liste de distribution. 
-  
-
+Consultez les [problèmes de groupe de](/office365/troubleshoot/groups/distribution-list-issues) distribution pour obtenir de l’aide sur les problèmes de liste de distribution. 

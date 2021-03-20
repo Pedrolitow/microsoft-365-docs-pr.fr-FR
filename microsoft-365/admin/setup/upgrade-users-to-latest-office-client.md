@@ -23,18 +23,18 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau Microsoft Office vers le client Office le plus récent pour les utilisateurs de votre organisation.
-ms.openlocfilehash: 3f8ea0d16e1c27414b5f3e11e842e336fadb3e75
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 14be8d63b2acb3e4838640dc399595c0ba3f97f5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233317"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913993"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau vos utilisateurs Microsoft 365 pour les entreprises vers le dernier client Office
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 atteint la fin de la prise en charge
 
-Office 2010 a atteint sa fin de support le 13 octobre 2020. Microsoft ne fournira plus les informations suivantes :
+Office 2010 a pris fin le 13 octobre 2020. Microsoft ne fournira plus les informations suivantes :
 
 - Support technique pour les problèmes
 
@@ -42,13 +42,13 @@ Office 2010 a atteint sa fin de support le 13 octobre 2020. Microsoft ne fournir
 
 - Correctifs de sécurité pour les vulnérabilités découvertes
 
-Pour plus d’informations, voir la feuille de route de fin du support office [2010.](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap)
+Pour plus d’informations, voir la feuille de route de fin du support office [2010.](/deployoffice/endofsupport/office-2010-end-support-roadmap)
 
  **S’agit-il de la rubrique la plus à votre place ?**
   
  Si vous êtes l’administrateur responsable de l’abonnement Microsoft 365 pour les entreprises dans votre organisation, vous êtes au bon endroit. Les administrateurs sont généralement responsables de tâches telles que la gestion des utilisateurs, la réinitialisation des mots de passe, la gestion des installation d’Office et l’ajout ou la suppression de licences.
 
- Si vous n’êtes pas un administrateur et que vous avez un produit [Microsoft 365 Famille,](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) voir Comment mettre à niveau [Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) pour plus d’informations sur la mise à niveau de votre ancienne version à usage personnel d’Office.
+ Si vous n’êtes pas un administrateur et que vous avez un produit [Microsoft 365 Famille,](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) voir Comment mettre à niveau [Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) pour plus d’informations sur la mise à niveau de votre ancienne version d’Utilisation à domicile d’Office.
 
 ## <a name="get-ready-to-upgrade-to-microsoft-365"></a>Se préparer à la mise à niveau vers Microsoft 365
 
@@ -122,7 +122,7 @@ Si vous avez des produits tiers, contactez le fabricant pour savoir s’il exist
 
 Si vous préférez installer votre ancienne version d’Office côte à côte avec la dernière version, vous pouvez voir une liste des versions dans laquelle cela est pris en charge, Installer et utiliser différentes versions d’Office sur le même [PC.](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf) Une installation côte à côte peut être le bon choix pour vous, si, par exemple, vous avez installé des applications tierces que vous utilisez avec votre ancienne version d’Office et que vous n’êtes pas encore certain qu’elles sont compatibles avec la dernière version.
 
-## <a name="step-4---assign-office-licenses-to-users"></a>Étape 4 : attribuer des licences Office aux utilisateurs
+## <a name="step-4---assign-office-licenses-to-users"></a>Étape 4 : Attribuer des licences Office aux utilisateurs
 
 Si vous ne l’avez pas déjà fait, attribuez des licences à tous les utilisateurs de votre organisation qui doivent installer Office, voir Attribuer des licences aux utilisateurs dans [Microsoft 365 pour](../manage/assign-licenses-to-users.md)les entreprises.
   
@@ -131,4 +131,4 @@ Si vous ne l’avez pas déjà fait, attribuez des licences à tous les utilisat
 Une fois que vous avez vérifié que les utilisateurs que vous souhaitez mettre à niveau ont tous des licences, l’étape finale consiste à leur faire installer Office, voir Télécharger et installer ou [réinstaller Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)sur votre PC ou Mac.
   
 > [!TIP]
-> Si vous ne souhaitez pas que vos utilisateurs installent Office eux-mêmes, voir Gérer les paramètres de téléchargement de [logiciels dans Office 365.](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365) Vous pouvez utiliser [l’outil Déploiement d’Office](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) pour télécharger le logiciel Office sur votre réseau local, puis déployer Office à l’aide de la méthode de déploiement de logiciels que vous utilisez généralement.
+> Si vous ne souhaitez pas que vos utilisateurs installent Office eux-mêmes, voir Gérer les paramètres de téléchargement de [logiciels dans Office 365.](/DeployOffice/manage-software-download-settings-office-365) Vous pouvez utiliser [l’outil Déploiement d’Office](/DeployOffice/overview-office-deployment-tool) pour télécharger le logiciel Office sur votre réseau local, puis déployer Office à l’aide de la méthode de déploiement de logiciels que vous utilisez généralement.

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Personnalisez la page de signature Microsoft 365 à l’aide d’Azure Active Directory. Vous pouvez ajouter une illustration, un logo et du texte à la page de signature.
-ms.openlocfilehash: 9a4e18aeb050fe128ded1ea83756256a386a0fb4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 1bd9a60c9c3bbe839652785deb2eb52d5b385673
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926905"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914161"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Ajouter la marque de votre entreprise à la page de signature
 
@@ -35,7 +35,7 @@ ms.locfileid: "49926905"
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>Ajouter la marque de votre organisation à votre page de connexion et aux pages du Panneau d'accès
 
-Si vous avez un abonnement payant à Microsoft 365 pour les entreprises, Microsoft Dynamics CRM Online, Enterprise Mobility Suite ou d’autres services Microsoft, vous disposez d’un abonnement gratuit à Azure Active Directory. Vous pouvez utiliser Azure Active Directory pour créer et gérer des comptes d'utilisateur et de groupe, et ajouter une marque de société à vos pages. Pour activer cet abonnement et accéder au portail de gestion de Microsoft Azure, vous devez effectuer un processus d'enregistrement unique. Ensuite, vous pourrez accéder à Azure Active Directory à partir de votre service Microsoft qui l'utilise. Pour obtenir des instructions sur l’inscription de votre abonnement Microsoft 365, consultez Enregistrer votre abonnement [Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527966)gratuit et consultez Gérer l’annuaire de votre abonnement [Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=620076) dans Azure pour obtenir des instructions de gestion générale. 
+Si vous avez un abonnement payant à Microsoft 365 pour les entreprises, Microsoft Dynamics CRM Online, Enterprise Mobility Suite ou d’autres services Microsoft, vous disposez d’un abonnement gratuit à Azure Active Directory. Vous pouvez utiliser Azure Active Directory pour créer et gérer des comptes d'utilisateur et de groupe, et ajouter une marque de société à vos pages. Pour activer cet abonnement et accéder au portail de gestion de Microsoft Azure, vous devez effectuer un processus d'enregistrement unique. Ensuite, vous pourrez accéder à Azure Active Directory à partir de votre service Microsoft qui l'utilise. Pour obtenir des instructions sur l’inscription de votre abonnement Microsoft 365, consultez Enregistrer votre abonnement [Azure Active Directory](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)gratuit et consultez Gérer l’annuaire de votre abonnement [Microsoft 365](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) dans Azure pour obtenir des instructions de gestion générale. 
   
 La figure suivante montre les parties de la page de connexion que vous pouvez modifier dans Azure.
   
@@ -49,4 +49,4 @@ La figure suivante montre les parties de la page de connexion que vous pouvez mo
     
 En plus de la page de connexion, vous pouvez personnaliser la page du Panneau d'accès dans Azure.
   
-Si vous êtes prêt à ajouter une personnalisation, explorez les options disponibles dans le contenu Azure : [Ajout d'une marque de société aux pages de connexion et du volet d'accès](https://go.microsoft.com/fwlink/p/?LinkId=620077).
+Si vous êtes prêt à ajouter une personnalisation, explorez les options disponibles dans le contenu Azure : [Ajout d'une marque de société aux pages de connexion et du volet d'accès](/azure/active-directory/fundamentals/customize-branding).

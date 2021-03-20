@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment trouver de l’aide pour les administrateurs pour Microsoft 365 Business Premium.
-ms.openlocfilehash: cf81ae934a35dadc895a1fc836ef1bd28f5000e0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422590"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913633"
 ---
 # <a name="find-answers-and-help-for-admins"></a>Rechercher des réponses et de l’aide pour les administrateurs
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGn5?autoplay=false]
 
-Si vous avez une question ou si vous avez besoin d’aide avec Microsoft 365 Business Premium, vous avez plusieurs options pour obtenir de l’aide.
+Si vous avez une question ou si vous avez besoin d’aide avec Microsoft 365 Business Premium, plusieurs options s’offrent à vous pour obtenir de l’aide.
 
 ## <a name="try-it"></a>Essayez !
 
@@ -47,6 +47,6 @@ Si vous avez une question ou si vous avez besoin d’aide avec Microsoft 365 Bus
 
 Vous pouvez également utiliser les ressources suivantes pour obtenir de l’aide sur votre problème :
 
-- [aka.ms/learn365admin](https://aka.ms/learn365admin), pour rechercher toutes les tâches et aide relatives à l’administrateur, telles que la réinitialisation des mots de passe et l’affectation d’abonnements Microsoft.
+- [aka.ms/learn365admin](../admin/index.yml), pour rechercher toutes les tâches et aide relatives à l’administrateur, telles que la réinitialisation des mots de passe et l’affectation d’abonnements Microsoft.
 - [answers.microsoft.com](https://answers.microsoft.com), pour rechercher des réponses, démarrer une discussion et poser des questions à d’autres utilisateurs.
 - [techcommunity.microsoft.com](https://techcommunity.microsoft.com), pour rejoindre une communauté d’experts et trouver les meilleures pratiques avec Microsoft 365 pour votre entreprise.

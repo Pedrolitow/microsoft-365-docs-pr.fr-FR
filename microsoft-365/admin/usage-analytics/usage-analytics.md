@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenez une vue d’ensemble de la façon dont votre organisation adopte les services Microsoft 365 pour communiquer et collaborer.
-ms.openlocfilehash: d7e9e6cf945134df54221bb8a03ef83d1a8851cc
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 5120e487604fbaf4421c1b2f814cd57e79d5f9dc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841386"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913813"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 
@@ -54,7 +54,7 @@ Ce résumé vous permet de comprendre rapidement les modèles d’utilisation da
 
 Le rapport de présentation de Microsoft 365 contient les rapports suivants. Vous pouvez les afficher en choisissant l’onglet en haut de la page du rapport. Toutes les valeurs du mois affichées dans la section supérieure du rapport font référence au dernier mois complet.
 
-- **Adoption** &ndash; Offre un résumé complet des tendances d’adoption. Utilisez les rapports de cette section pour découvrir comment vos utilisateurs ont adopté Microsoft 365, ainsi que la façon dont l’utilisation globale des services individuels a changé au fil des mois. Vous pouvez voir comment les utilisateurs peuvent être activés, combien de personnes de votre organisation utilisent activement Microsoft 365, combien sont ceux qui retournent des utilisateurs et combien utilisent le produit pour la première fois.
+- **Adoption** &ndash; Offre un résumé complet des tendances d’adoption. Utilisez les rapports de cette section pour découvrir comment vos utilisateurs ont adopté Microsoft 365, ainsi que la façon dont l’utilisation globale des services individuels a changé au fil des mois. Vous pouvez voir comment les utilisateurs peuvent être activés, le nombre de personnes de votre organisation qui utilisent activement Microsoft 365, le nombre d’utilisateurs qui retournent le produit et le nombre d’utilisateurs qui utilisent le produit pour la première fois.
 
 - **Utilisation** &ndash; Offre une vue d’drill-down du volume d’utilisateurs actifs et des activités clés de chaque produit au cours des 12 derniers mois. Utilisez les rapports de cette section pour découvrir comment les membres de votre organisation utilisent Microsoft 365.
 
@@ -86,9 +86,9 @@ Les rapports d’activité des utilisateurs sont disponibles pour certains servi
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>Cette application de modèle sera-t-elle disponible à l’achat ou sera-t-elle gratuite ?
 
-Ce n’est pas gratuit, vous aurez besoin d’une licence Power BI Pro. Pour plus d’informations, voir [les conditions préalables](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute#prerequisites) à l’installation, la personnalisation et la distribution d’une application de modèle.
+Ce n’est pas gratuit, vous aurez besoin d’une licence Power BI Pro. Pour plus d’informations, voir [les conditions préalables](/power-bi/service-template-apps-install-distribute#prerequisites) à l’installation, la personnalisation et la distribution d’une application de modèle.
 
-Pour partager les tableaux de bord avec d’autres personnes, voir plus d’informations sur partager des [tableaux de bord et des rapports.](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)
+Pour partager les tableaux de bord avec d’autres personnes, voir plus d’informations sur partager des [tableaux de bord et des rapports.](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Qui peut se connecter aux analyses de l'utilisation de Microsoft 365 ?
 
@@ -108,7 +108,7 @@ Vous pouvez accéder au fichier pbit à partir du Centre [de téléchargement Mi
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>Qui peut afficher les tableaux de bord et les rapports ?
 
-Si vous vous êtes connecté à l’application de modèle, vous pouvez la partager avec n’importe qui à l’aide de la fonctionnalité [de partage.](https://go.microsoft.com/fwlink/p/?linkid=845494) La gestion des licences Power BI nécessite que l’utilisateur partage et l’utilisateur avec lequel un tableau de bord est partagé ont Power BI Pro ou Power BI Premium.
+Si vous vous êtes connecté à l’application de modèle, vous pouvez la partager avec n’importe qui à l’aide de la fonctionnalité [de partage.](/power-bi/collaborate-share/service-share-dashboards) La gestion des licences Power BI exige que l’utilisateur qui partage un tableau de bord et celui avec lequel un tableau de bord est partagé doivent avoir Power BI Pro ou Power BI Premium.
 
 ### <a name="can-anyone-share-the-dashboard-or-does-it-have-to-be-the-person-who-connected-to-the-dashboard"></a>N'importe qui peut-il partager le tableau de bord ou doit-il s'agir obligatoirement de la personne qui s'est connectée au tableau de bord ?
 
@@ -116,11 +116,11 @@ Lorsque vous partagez le tableau de bord, vous pouvez autoriser ou non les utili
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>Est-il possible d’utiliser et de personnaliser le même modèle d’application avec un groupe de personnes ?
 
-Oui. Pour permettre à un groupe d’administrateurs de travailler ensemble sur la même application de modèle, vous pouvez tirer parti des fonctionnalités d’espace de travail d’application de Power BI. Pour plus d’informations, voir Comment collaborer et partager des tableaux de bord et des rapports [?](https://go.microsoft.com/fwlink/p/?linkid=851070) 
+Oui. Pour permettre à un groupe d’administrateurs de travailler ensemble sur la même application de modèle, vous pouvez tirer parti de la fonctionnalité d’espace de travail d’application de Power BI. Pour plus d’informations, voir Comment collaborer et partager des tableaux de bord et des rapports [?](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>Pour quelle période des données sont-elles disponibles ?
 
-La majorité des rapports affichent des données pour les 12 mois précédents. Toutefois, certains graphiques peuvent afficher moins d’historique, car la collecte de données pour différents produits et rapports a été démarrée à différents moments et par conséquent, les données sur les 12 mois complets risquent de ne pas être disponibles. Tous les rapports finiront par créer jusqu’à 12 mois d’historique. Les rapports qui indiquent les détails au niveau de l’utilisateur indiquent les données du mois complet précédent.
+La majorité des rapports affichent des données pour les 12 mois précédents. Toutefois, certains graphiques peuvent afficher moins d’historique car la collecte de données pour différents produits et rapports a été démarrée à différents moments et par conséquent, les données pour les 12 mois complets risquent de ne pas être disponibles. Tous les rapports finiront par créer jusqu’à 12 mois d’historique. Les rapports qui indiquent les détails au niveau de l’utilisateur indiquent les données du mois complet précédent.
 
 ### <a name="what-data-is-included-in-the-template-app"></a>Quelles données sont incluses dans l’application de modèle ?
 
@@ -138,9 +138,9 @@ Les [rapports d’activité](../activity-reports/activity-reports.md)  sont un b
 
 ### <a name="how-often-is-the-data-refreshed"></a>À quelle fréquence les données sont-elles actualisées ? 
 
-Lorsque vous vous connectez à l’application de modèle pour la première fois, elle se remplit automatiquement avec vos données pour les 12 mois précédents. Après cela, les données de l’application de modèle seront actualisées toutes les semaines. Les clients peuvent choisir de modifier la planification d’actualisation si leur utilisation de ces données exige un rythme de mise à jour différent.
+Lorsque vous vous connectez à l’application de modèle pour la première fois, elle se remplit automatiquement avec vos données pour les 12 mois précédents. Après cela, les données du modèle d’application sont actualisées toutes les semaines. Les clients peuvent choisir de modifier la planification d’actualisation si leur utilisation de ces données exige un rythme de mise à jour différent.
 
-Le service Microsoft 365 de base actualisera les données quotidiennement et fournit des données qui sont entre 5 et 8 jours en latent à partir de la date actuelle.
+Le service Microsoft 365 back end actualisera les données quotidiennement et fournit des données qui sont entre 5 et 8 jours latentes à partir de la date actuelle.
 
 La **colonne Date de** contenu de chaque jeu de données représente la date d’nouveauté des données dans l’application de modèle.
 
@@ -176,7 +176,7 @@ Les informations d’entreprise sont incluses dans l’un des champs Active Dire
 
 Une personnalisation supplémentaire de ces données est possible en vous connectant aux API de création de rapports [Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=848843) pour tirer des champs supplémentaires d’Azure Active Directory et rejoindre le jeu de données. 
 
-### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>Est-il possible d’agréger les informations dans l’application modèle dans plusieurs abonnements ?
+### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>Est-il possible d’agréger les informations de l’application modèle dans plusieurs abonnements ?
 
 Pour l’instant, l’application de modèle est pour un abonnement unique, car elle est associée aux informations d’identification qui ont été utilisées pour se connecter initialement à celle-ci.
 
@@ -204,7 +204,7 @@ Vous pouvez utiliser le bouton commentaires dans la page de [](../contact-suppor
 
 ### <a name="how-can-partners-access-the-data"></a>Comment des partenaires peuvent-ils accéder aux données ?
 
-Si un partenaire dispose de droits d’administrateur délégués, il peut se connecter à l’application modèle pour le compte de son client.
+Si un partenaire dispose de droits d’administrateur délégués, il peut se connecter à l’application modèle au nom de son client.
 
 ### <a name="can-i-hide-identifiable-information-such-as-user-group-and-site-names-in-reports"></a>Puis-je masquer des informations d'identification personnelle telles que l'utilisateur, les groupes et les noms de site dans des rapports ?
 

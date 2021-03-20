@@ -20,12 +20,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: En savoir plus sur l’enregistrement CNAME « MSOID » dans Office 365 qui vous dirige vers le meilleur serveur pour les processus d’authentification, afin que vous receviez une réponse plus rapide.
 monikerRange: o365-21vianet
-ms.openlocfilehash: aea04391768993c40978d94b50817244cd77405c
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: a1d587abc9db03c9a1f7c5f66711fde3648a0e96
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655483"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914305"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>À quoi sert l'enregistrement CNAME Office 365 pour MSOID ?
 
@@ -41,8 +41,6 @@ Si cet enregistrement CNAME est manquant pour votre domaine, ces applications ut
   
  **Si Office 365 gère les enregistrements DNS** de votre domaine, Office 365 définit cet enregistrement CNAME pour vous. 
   
- Si vous gérez des enregistrements DNS pour votre domaine sur votre hôte **DNS,** vous créez cet enregistrement vous-même en suivant les instructions pour votre hôte [DNS.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+ Si vous gérez des enregistrements DNS pour votre domaine sur votre hôte **DNS,** vous créez cet enregistrement vous-même en suivant les instructions pour votre hôte [DNS.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
   
-Si vous planifiez un déploiement Office 365 et que vous souhaitez en savoir plus sur tous les enregistrements DNS que vous devrez peut-être ajouter ou mettre à jour, lisez-les dans Référence : Enregistrements du système de noms de domaine externe pour [Office 365.](https://go.microsoft.com/fwlink/?LinkId=579013)
-  
-
+Si vous planifiez un déploiement Office 365 et que vous souhaitez en savoir plus sur tous les enregistrements DNS que vous devrez peut-être ajouter ou mettre à jour, lisez-les dans référence : Enregistrements de système de noms de domaine externes pour [Office 365.](../../enterprise/external-domain-name-system-records.md)

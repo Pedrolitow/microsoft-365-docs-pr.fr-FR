@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur le DNS Windows pour Microsoft.
-ms.openlocfilehash: 8202ffe10b4a0ff9c94d863d92fc55c47ebb38d3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 9e5e42f847e740571944ea3db205282ec9a7a0e6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656842"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916045"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Créer des enregistrements DNS pour Microsoft à l’aide du DNS Windows
 
@@ -39,7 +39,7 @@ Pour commencer, vous devez trouver vos enregistrements DNS dans le [DNS Windows]
 Trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Rechercher vos enregistrements DNS dans un DNS Windows
-<a name="BKMK_find_your_dns_1"></a> Go to the page that has the DNS records for your domain. Si vous travaillez dans Windows Server 2008, allez à **Démarrer**  >  **l’exécuter.** Si vous travaillez dans Windows Server 2012, appuyez sur la touche Windows et **sur r**. Tapez **dnsmgmnt.msc,** puis sélectionnez **OK**. Dans le Gestionnaire DNS, développez **\<DNS server name\> \> zones de recherche avant.** Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
+<a name="BKMK_find_your_dns_1"></a> Go to the page that has the DNS records for your domain. If you’re working in Windows Server 2008, go to **Start**  >  **Run**. Si vous travaillez dans Windows Server 2012, appuyez sur la touche Windows et **sur r**. Tapez **dnsmgmnt.msc,** puis sélectionnez **OK**. Dans le Gestionnaire DNS, développez **\<DNS server name\> \> zones de recherche avant.** Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
    
 ## <a name="add-mx-record"></a>Ajouter l'enregistrement MX
 <a name="BKMK_add_MX"> </a>
@@ -53,7 +53,7 @@ Ajoutez un enregistrement MX afin que le courrier électronique de votre domaine
     - @Address : collez la valeur d’adresse points que vous avez copiée ici à partir de Microsoft.  
     - Préf : 
 - Sélectionnez **Enregistrer les modifications.**
-- Supprimez les enregistrements MX obsolètes. Si vous avez d’anciens enregistrements MX pour ce domaine qui routent le courrier électronique ailleurs, cochez la case en regard de chaque ancien enregistrement, puis sélectionnez **Supprimer**  >  **OK**. 
+- Supprimez les enregistrements MX obsolètes. Si vous avez d’anciens enregistrements MX pour ce domaine qui routent le courrier électronique ailleurs, cochez la case en regard de chaque ancien enregistrement, puis sélectionnez **Supprimer**  >  **OK.** 
    
 ## <a name="add-cname-records"></a>Ajouter les enregistrements CNAME
 <a name="BKMK_add_CNAME"> </a>
@@ -111,7 +111,7 @@ Ajoutez l'enregistrement CNAME Enterpriseenrollment MDM.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un seul  *enregistrement*  SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir *qu’un seul* enregistrement SPF incluant les deux ensembles de valeurs. 
   
 Ajoutez l'enregistrement TXT SPF pour votre domaine pour éviter le courrier indésirable.
   
@@ -184,7 +184,7 @@ Ajoutez un enregistrement TXT.
 - Nom d’hôte : @
 - Type : TXT
 - Adresse : collez la valeur Destination ou Pointe vers l’adresse que vous avez copiée ici à partir de Microsoft.  
-- Sélectionnez **OK**  >  **Terminé**.
+- Sélectionnez **OK**  >  **Terminé.**
 
 Vérifiez votre domaine dans Microsoft.  
 > [!IMPORTANT]
@@ -201,8 +201,7 @@ Vérifiez votre domaine dans Microsoft.
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Adresse de courrier non routable utilisée en tant qu'UPN dans votre annuaire Active Directory local
 <a name="BKMK_ADNote"> </a>
 
-Si vous envisagez de synchroniser votre annuaire Active Directory local avec Microsoft, vous devez vous assurer que le suffixe du nom d’utilisateur principal (UPN) Active Directory est un suffixe de domaine valide, et non un suffixe de domaine non pris en compte tel que @contoso.local. Si vous devez modifier votre suffixe UPN, voir Comment préparer un domaine non routable pour la synchronisation [d’annuaires](https://docs.microsoft.com/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
+Si vous envisagez de synchroniser votre annuaire Active Directory local avec Microsoft, vous devez vous assurer que le suffixe du nom d’utilisateur principal (UPN) Active Directory est un suffixe de domaine valide, et non un suffixe de domaine non pris en compte tel que @contoso.local. Si vous devez modifier votre suffixe UPN, voir Comment préparer un domaine non routable pour la synchronisation [d’annuaires](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md).
   
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

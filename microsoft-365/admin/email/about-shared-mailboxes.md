@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les boîtes aux lettres partagées sont utilisées lorsque plusieurs personnes ont besoin d’accéder à la même boîte aux lettres. Découvrez ce que vous devez savoir avant de créer une boîte aux lettres partagée.
-ms.openlocfilehash: f5d46af5abdd528ce3db817dbabce015ed5abade
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: eb1947b5baffd97f067bfe4e0c6d71d5c1329d65
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094720"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915985"
 ---
 # <a name="about-shared-mailboxes"></a>À propos des boîtes aux lettres partagées
 
@@ -37,7 +37,7 @@ Les utilisateurs disposant d’autorisations sur la boîte aux lettres du groupe
 
 Avant de [créer une boîte aux lettres partagée,](create-a-shared-mailbox.md)voici quelques éléments que vous devez connaître :
 
-- **Licences :** Votre boîte aux lettres partagée peut stocker jusqu’à 50 Go de données sans que vous ne lui attribuiez de licence. Après cela, vous devez attribuer une licence à la boîte aux lettres pour stocker davantage de données. Pour plus d’informations sur les licences de boîtes aux lettres partagées, consultez [les limites d’Exchange Online.](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits) Lorsqu'une boîte aux lettres partagée atteint sa limite de stockage, vous serez en mesure de recevoir des courriers électroniques pendant un certain temps, mais vous ne pourrez pas envoyer de nouveaux messages électroniques. Puis, après cela, vous ne pourrez plus recevoir de message. Les expéditeurs des courriers vers votre boîte aux lettres recevront un accusé de réception négatif.
+- **Licences :** Votre boîte aux lettres partagée peut stocker jusqu’à 50 Go de données sans que vous ne lui attribuiez de licence. Après cela, vous devez attribuer une licence à la boîte aux lettres pour stocker davantage de données. Pour plus d’informations sur les licences de boîtes aux lettres partagées, consultez [les limites d’Exchange Online.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#StorageLimits) Lorsqu'une boîte aux lettres partagée atteint sa limite de stockage, vous serez en mesure de recevoir des courriers électroniques pendant un certain temps, mais vous ne pourrez pas envoyer de nouveaux messages électroniques. Puis, après cela, vous ne pourrez plus recevoir de message. Les expéditeurs des courriers vers votre boîte aux lettres recevront un accusé de réception négatif.
 
 - **Autorisations utilisateur :** Vous devez accorder aux utilisateurs des autorisations (appartenance) pour utiliser la boîte aux lettres partagée. Seules les personnes internes à votre organisation peuvent utiliser une boîte aux lettres partagée.
 

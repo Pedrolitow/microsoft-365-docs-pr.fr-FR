@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Découvrez comment configurer Teams pour améliorer la sécurité du partage de fichiers à l’aide de trois niveaux de protection, en équilibrant la sécurité grâce à la facilité de collaboration.
-ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509241"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916213"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
 
@@ -42,7 +42,7 @@ Les configurations décrites dans cet article respectent les recommandations de 
 
 - Protection hautement sensible
 
-Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées pour chacun d’eux, consultez [Illustrations de documents sur le cloud Microsoft pour les architectes d’entreprise](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées pour chacun d’eux, consultez [Illustrations de documents sur le cloud Microsoft pour les architectes d’entreprise](./cloud-architecture-models.md)
 
 
 ## <a name="three-tiers-at-a-glance"></a>Trois niveaux en un coup d’œil
@@ -68,11 +68,11 @@ Les équipes pour une protection sensible et hautement sensible sont des équipe
 
 ## <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-Les niveaux sensitives et hautement sensitives utilisent des étiquettes de confidentialité pour renforcer la sécurisation de l’équipe et de ses fichiers. Pour implémenter ces niveaux, vous devez activer [Étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Les niveaux sensitives et hautement sensitives utilisent des étiquettes de confidentialité pour renforcer la sécurisation de l’équipe et de ses fichiers. Pour implémenter ces niveaux, vous devez activer [Étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Bien que le niveau de ligne de base ne nécessite aucune étiquette de confidentialité, vous pouvez créer une étiquette « général » et exiger que toutes les équipes soient étiquetées. Cela permettra de s'assurer que les utilisateurs font un choix conscient en matière de sensibilité lorsqu'ils créent une équipe. Si vous prévoyez de déployer les niveaux sensibles ou hautement sensibles, nous vous recommandons de créer une étiquette « général » que vous pouvez utiliser pour les équipes de référence et pour les fichiers qui ne sont pas sensibles.
 
-Si vous êtes novice dans l'utilisation des étiquettes de confidentialité, nous vous recommandons de lire l’article [Prise en main des étiquettes de confidentialité](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels) pour commencer. 
+Si vous êtes novice dans l'utilisation des étiquettes de confidentialité, nous vous recommandons de lire l’article [Prise en main des étiquettes de confidentialité](../compliance/get-started-with-sensitivity-labels.md) pour commencer. 
 
 Si vous avez déjà déployé des étiquettes de confidentialité au sein de votre organisation, réfléchissez à la façon dont les étiquettes utilisées dans les niveaux sensibles et hautement sensibles s’adaptent à votre stratégie d’étiquette globale. 
 
@@ -95,7 +95,7 @@ Par défaut, les propriétaires et les membres de l’équipe peuvent partager d
 
 ## <a name="guest-sharing"></a>Partage d’invités
 
-Si vous avez besoin de collaborer avec des personnes extérieures à votre organisation, nous vous recommandons de configurer [Intégration de SharePoint et OneDrive avec Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) pour optimiser le partage et l’administration.
+Si vous avez besoin de collaborer avec des personnes extérieures à votre organisation, nous vous recommandons de configurer [Intégration de SharePoint et OneDrive avec Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) pour optimiser le partage et l’administration.
 
 Le partage des invités est désactivé par défaut, même si le partage pour les groupes Office 365 (où les membres de l’équipe sont stockés) et SharePoint est activé. Le partage des équipes est activé dans le niveau de référence, vous pouvez le désactiver si vous le souhaitez dans les niveaux sensibles et hautement sensibles à l’aide d’une étiquette de confidentialité.
 
@@ -113,7 +113,7 @@ Reportez-vous aux références suivantes pour créer un environnement de partage
 
 ## <a name="access-from-unmanaged-devices"></a>Accès à partir d’appareils enregistrés
 
-Pour les niveaux sensibles et hautement sensibles, nous limitons l’accès au contenu SharePoint avec des étiquettes de confidentialité. L’accès conditionnel Azure AD offre de nombreuses options permettant de déterminer la manière dont les utilisateurs accèdent à Microsoft 365, y compris les limitations en fonction de l’emplacement, du risque, de la conformité des appareils et d’autres facteurs. Nous vous recommandons de lire l’article [Qu’est-ce que l’accès conditionnel ?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) et d’envisager les stratégies supplémentaires qui peuvent être appropriées pour votre organisation.
+Pour les niveaux sensibles et hautement sensibles, nous limitons l’accès au contenu SharePoint avec des étiquettes de confidentialité. L’accès conditionnel Azure AD offre de nombreuses options permettant de déterminer la manière dont les utilisateurs accèdent à Microsoft 365, y compris les limitations en fonction de l’emplacement, du risque, de la conformité des appareils et d’autres facteurs. Nous vous recommandons de lire l’article [Qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview) et d’envisager les stratégies supplémentaires qui peuvent être appropriées pour votre organisation.
 
 Notez que les invités n’ont souvent pas d’appareils gérés par votre organisation. Si vous autorisez des invités de l’un des niveaux, pensez aux types d’appareils qu’ils utiliseront pour accéder aux équipes et aux sites, et définissez en conséquence vos stratégies d’appareil non gérés.
 
@@ -123,6 +123,6 @@ Commencez par [configurer le niveau de base de la protection](configure-teams-ba
 
 ## <a name="see-also"></a>Voir aussi
 
-[Sécurité et de la conformité dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Sécurité et de la conformité dans Microsoft Teams](/microsoftteams/security-compliance-overview)
 
-[Stratégies d’alerte dans le Centre de sécurité et de conformité](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+[Stratégies d’alerte dans le Centre de sécurité et de conformité](../compliance/alert-policies.md)

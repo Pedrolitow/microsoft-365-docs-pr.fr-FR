@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin de pouvoir utiliser le déploiement centralisé pour déployer des add-ins Office.
-ms.openlocfilehash: 04c5f9090ca788f00f2d17d3af59e8022195e9be
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: c9f2879e989085042758cc1c5385bea45427e7ff
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519364"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915457"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -35,7 +35,7 @@ Une déploiement centralisé offre les avantages suivants :
   
 - Un administrateur général peut affecter un add-in directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation.
     
-- Au démarrage de l’application Office concernée, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de add-in, celui-ci apparaît automatiquement dans le ruban dans l’application Office.
+- Au démarrage de l’application Office concernée, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de l’application, celui-ci apparaît automatiquement dans le ruban dans l’application Office.
     
 - Les add-ins n’apparaissent plus pour les utilisateurs si l’administrateur le met hors service ou le supprime, ou si l’utilisateur est supprimé d’Azure Active Directory ou d’un groupe à qui le module est affecté.
 
@@ -45,7 +45,7 @@ L’ouverture d’un client pour tous les utilisateurs peut prendre jusqu’à 2
   
 ## <a name="requirements"></a>Configuration requise
 
-Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent les références (SSO) Microsoft 365 Entreprise : E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium (et sont inscrits à Office à l’aide de leur ID d’organisation) et qu’ils ont des boîtes aux lettres Exchange Online et Exchange Online actives. Votre annuaire d’abonnement doit être dans Azure Active Directory ou fédéré.
+Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent les références (SSO) Microsoft 365 Entreprise : E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium (et sont signés dans Office à l’aide de leur ID d’organisation) et qu’ils ont des boîtes aux lettres Exchange Online et Exchange Online actives. Votre annuaire d’abonnement doit être dans Azure Active Directory ou fédéré.
 Vous pouvez afficher les exigences spécifiques d’Office et d’Exchange ci-dessous, ou utiliser le contrôle de compatibilité du déploiement [centralisé.](#centralized-deployment-compatibility-checker)
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
@@ -61,7 +61,7 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 ### <a name="office-requirements"></a>Conditions requises pour Office
 
 - Pour les add-ins Word, Excel et PowerPoint, vos utilisateurs doivent utiliser l’une des utilisations suivantes :
-  - Sur un appareil Windows, version 1704 ou ultérieure des références (SSO) Microsoft 365 Entreprise : E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium.
+  - Sur un appareil Windows, version 1704 ou ultérieure des références (S SKUs) Microsoft 365 Entreprise : E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium.
   - Sur un Mac, version 15.34 ou ultérieure.
 
 - Pour Outlook, vos utilisateurs doivent utiliser l’une des utilisations suivantes : 
@@ -79,12 +79,12 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
 Microsoft Exchange stocke les manifestes du add-in dans le client de votre organisation. L’administrateur déployant des applications et les utilisateurs qui les reçoivent doivent se trouver sur une version d’Exchange Online qui prend en charge l’authentification OAuth.
   
-Pour connaître la configuration utilisée, consultez l'administrateur Exchange de votre organisation. Vous pouvez vérifier la connectivité OAuth de chaque utilisateur à l'aide de l'applet de commande PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
+Pour connaître la configuration utilisée, consultez l'administrateur Exchange de votre organisation. Vous pouvez vérifier la connectivité OAuth de chaque utilisateur à l'aide de l'applet de commande PowerShell [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity). 
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Contrôle de compatibilité du déploiement centralisé
 
-À l’aide du contrôle de compatibilité du déploiement centralisé, vous pouvez vérifier si les utilisateurs de votre client sont bien en mesure d’utiliser le déploiement centralisé pour Word, Excel et PowerPoint. Le vérificateur de compatibilité n'est pas requis pour la prise en charge d'Outlook. Téléchargez le vérificateur de compatibilité [ici](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+À l’aide du contrôle de compatibilité du déploiement centralisé, vous pouvez vérifier si les utilisateurs de votre client sont configurer pour utiliser le déploiement centralisé pour Word, Excel et PowerPoint. Le vérificateur de compatibilité n'est pas requis pour la prise en charge d'Outlook. Téléchargez le vérificateur de compatibilité [ici](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
   
 #### <a name="run-the-compatibility-checker"></a>Exécuter le contrôle de compatibilité
   
@@ -145,16 +145,15 @@ La manière la plus simple de détecter si un groupe contient des groupes imbriq
   
 Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il est membre d'un groupe. Dans l'exemple ci-dessous, vous pouvez voir sous l'onglet **Appartenance** de la carte de visite Outlook que le Sous-groupe 1 est membre du groupe Test. 
   
-![Onglet Appartenance de la carte de visite Outlook](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Onglet Appartenance à la carte de visite Outlook](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
-Vous pouvez également utiliser l'API Graph Azure Active Directory pour exécuter des requêtes afin d'obtenir la liste des groupes au sein d'un groupe. Pour plus d'informations, voir [Opérations sur les groupes | Référence de l'API Graph](https://go.microsoft.com/fwlink/p/?linkid=846342).
+Vous pouvez également utiliser l'API Graph Azure Active Directory pour exécuter des requêtes afin d'obtenir la liste des groupes au sein d'un groupe. Pour plus d'informations, voir [Opérations sur les groupes | Référence de l'API Graph](/previous-versions/azure/ad/graph/api/groups-operations).
   
 ### <a name="contacting-microsoft-for-support"></a>Contacter Microsoft pour obtenir une assistance
 
-Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-in lors de l’utilisation des applications Office pour le web (Word, Excel, etc.), qui ont été déployées de manière centralisée, vous devrez peut-être contacter le support Microsoft[(](../contact-support-for-business-products.md)découvrez comment ). Fournissez les informations suivantes sur votre environnement Microsoft 365 dans le ticket de support.
+Si vous ou vos utilisateurs rencontrez des problèmes de chargement du add-in lors de l’utilisation des applications Office pour le web (Word, Excel, etc.), qui ont été déployées de manière centralisée, vous devrez peut-être contacter le support Microsoft[(](../contact-support-for-business-products.md)découvrez comment ). Fournissez les informations suivantes sur votre environnement Microsoft 365 dans le ticket de support.
   
 |**Plateforme**|**Informations de débogage**|
 |:-----|:-----|
-|Office  <br/> | Journaux Charles/Fiddler  <br/>  ID de client ( [Découvrez comment](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Journaux Charles/Fiddler  <br/>  ID de client ( [Découvrez comment](/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Clients riches (Windows, Mac)  <br/> | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte)**  <br/> |
-   

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Créer une boîte aux lettres de salle ou de ressource pour que tous les membres de l'organisation puissent réserver la salle ou l'équipement pour des réunions ou des événements à l'aide d'Outlook. "
-ms.openlocfilehash: ab48a0177acd212ff330a4a772ef84843406a3d5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399601"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915169"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Boîtes aux lettres de salle et de ressource
 
@@ -88,7 +88,7 @@ Pour configurer une boîte aux lettres de salle ou de ressource, accédez au Cen
 6. Si vous avez apporté des modifications, sélectionnez **Enregistrer** puis **Fermer**.
 
 > [!Note]
-> Pour maintenir la sécurité de vos boîtes aux lettres de salle et de matériel, bloquez la connexion à ces boîtes aux lettres. Pour plus d’informations, voir [Bloquer la connexion pour le compte de boîte aux lettres partagé](https://docs.microsoft.com/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
+> Pour maintenir la sécurité de vos boîtes aux lettres de salle et de matériel, bloquez la connexion à ces boîtes aux lettres. Pour plus d’informations, voir [Bloquer la connexion pour le compte de boîte aux lettres partagé](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>Questions fréquentes sur les boîtes aux lettres de salle et de ressource
 
@@ -110,4 +110,4 @@ Non. Même si la plupart des membres de votre organisation ont besoin d’une li
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>Faut-il désigner un propriétaire chargé de la réservation des salles ou équipements ?
 
- Non. Il n’est pas utile qu’une personne se charge de la boîte aux lettres de salle ou de ressource. 
+ Non. Il n’est pas utile qu’une personne se charge de la boîte aux lettres de salle ou de ressource.

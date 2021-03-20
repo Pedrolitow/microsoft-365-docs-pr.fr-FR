@@ -21,19 +21,19 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Découvrez comment partager des sites et des fichiers avec des personnes extérieures à l’organisation. '
-ms.openlocfilehash: 3857cee3073950bbb9c130368abdd7df68d0da2a
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 585034580fd18d9584b4df3d0bec7026cf207f50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114464"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915036"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>Partager des sites et des fichiers avec des utilisateurs invités
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -57,7 +57,7 @@ Les réponses à ces questions vous aideront à planifier votre stratégie de pa
   
 |**Essayez ceci :**|**Si votre besoin est le suivant :**|
 |:-----|:-----|
-|Ajouter un invité à un groupe  <br/> |Fournir à une personne extérieure à votre organisation un accès continu aux informations et au contenu sur un site d’équipe. Elle a besoin de pouvoir agir en tant qu'utilisateur à part entière du site, ainsi que de créer, modifier et afficher du contenu.  <br/> |
+|Ajouter un invité à un groupe  <br/> |Fournir à une personne extérieure à votre organisation un accès continu aux informations et au contenu d’un site d’équipe. Elle a besoin de pouvoir agir en tant qu'utilisateur à part entière du site, ainsi que de créer, modifier et afficher du contenu.  <br/> |
 |Partagez un document et exigez que les invités s’authentifier.  <br/> |Fournissez à des personnes spécifiques extérieures à votre organisation un accès sécurisé à un document pour révision ou collaboration, mais ces personnes n’ont pas besoin d’accéder à d’autres contenus sur le site.  <br/> |
 |Partagez un document, mais ne nécessitez pas d’authentification.  <br/> |Partager un lien vers un document qui n'est pas sensible ni confidentiel avec des personnes extérieures à votre organisation afin qu'elles puissent soit l'afficher, soit le mettre à jour en y ajoutant leurs commentaires. Ces personnes n’ont pas besoin d’accéder au contenu du site.  <br/> |
    
@@ -81,6 +81,4 @@ Après avoir activé le partage externe au niveau de l’organisation, vous pouv
   
 
   
-
-    
 

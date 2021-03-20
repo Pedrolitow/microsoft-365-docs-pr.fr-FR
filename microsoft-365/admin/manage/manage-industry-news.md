@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Fournissez à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation.
-ms.openlocfilehash: 90fa9a046e5207ae032180099f7766ef18d71898
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 2e4b7344eabb2ccd25bc0f0fed38ebfedbfe52af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519304"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915349"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités du secteur
 
@@ -30,7 +30,7 @@ Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre se
  
 Les utilisateurs qui se sont inscrits à la page d’accueil Bing voient le flux d’actualités de votre secteur sous les informations personnalisées de votre organisation.   
  :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Capture d’écran d’un carrousel d’image avec les actualités du secteur à partir du web":::
-Ils peuvent également consulter les actualités de l’entreprise, du secteur et internes ou des informations de travail personnalisées sur leur nouvel onglet Microsoft Edge. 
+Ils peuvent également consulter les actualités de l’entreprise, du secteur et internes, ou des informations de travail personnalisées sur leur nouvel onglet Microsoft Edge. 
 
 :::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft dans la page d’accueil des actualités":::
 
@@ -40,9 +40,9 @@ En tant qu’administrateur, vous contrôlez les paramètres du flux d’actuali
 
 1. Dans le Centre d’administration Microsoft 365, go to **Settings**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
 2. Dans le **panneau Actualités,** cliquez sur **l’onglet** Général
-3. Dans la **liste Secteur,** sélectionnez les secteurs d’activité de votre organisation. Cela permet de déterminer les actualités générales qui apparaissent dans le nouveau flux de votre organisation. Microsoft peut pré-sélectionner un secteur d’activité à l’aide des informations de votre compte. Vous pouvez supprimer ou ajouter des secteurs d’activité en mettant à jour la liste Secteur.
+3. Dans la **liste Secteur,** sélectionnez les secteurs d’activité de votre organisation. Cela détermine les actualités générales qui apparaissent dans le nouveau flux de votre organisation. Microsoft peut pré-sélectionner un secteur d’activité à l’aide des informations de votre compte. Vous pouvez supprimer ou ajouter des secteurs d’activité en mettant à jour la liste Secteur.
 4. Dans le **champ Rubriques,** entrez les rubriques dont vous souhaitez consulter les articles d’actualités. Vos utilisateurs ne pourront pas modifier ces rubriques.
-5. Vous pouvez bloquer les articles contenant des mots clés dans le **champ Exclure du** contenu.  Par exemple, pour éviter que les articles contenant le mot clé « # A0 » ne s’affichent dans le flux d’actualités, ajoutez le mot clé « # » dans le champ Exclure du contenu. Évitez d’inclure des termes généraux (le, il et, etc.), ils peuvent empêcher le contenu pertinent d’apparaître dans vos flux d’actualités d’entreprise.
+5. Vous pouvez bloquer les articles contenant des mots clés dans le **champ Exclure du** contenu.  Par exemple, pour éviter que des articles contenant le mot clé « # A0 » ne s’affichent dans le flux d’actualités, ajoutez le mot clé « # » dans le champ Exclure du contenu. Évitez d’inclure des termes généraux (le, il et, etc.), ils peuvent empêcher le contenu pertinent d’apparaître dans vos flux d’actualités d’entreprise.
 6. Sélectionnez **Enregistrer**. L’apparition des modifications peut prendre jusqu’à 24 heures.
 
 ## <a name="bing-homepage"></a>Page d’accueil de Bing
@@ -51,7 +51,7 @@ Vous pouvez personnaliser la page d’accueil Bing pour inclure des actualités 
 
 1. Dans le Centre d’administration Microsoft 365, go to **Settings**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 2. Dans le **panneau Actualités,** cliquez sur **l’onglet** Page d’accueil bing, puis **sélectionnez Inclure sur la page d’accueil Bing.**
-3. Les actualités du secteur apparaissent sous les informations personnalisées de votre organisation sur Bing.com.
+3. Les actualités du secteur apparaissent sous les informations personnalisées de votre organisation Bing.com.
 
 ## <a name="microsoft-edge-new-tab-page"></a>Page Nouvel onglet Microsoft Edge 
 Lorsque vos utilisateurs se connectent à Microsoft Edge (version 87 ou supérieure) avec un compte scolaire ou scolaire valide, ils peuvent voir des actualités adaptées à votre organisation.
@@ -63,5 +63,5 @@ Lorsque vos utilisateurs se connectent à Microsoft Edge (version 87 ou supérie
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Recherche Microsoft](https://docs.microsoft.com/microsoftsearch/)
-- [Gérer vos données et service](https://docs.microsoft.com/microsoft-365/admin/manage)
+- [Recherche Microsoft](/microsoftsearch/)
+- [Gérer vos données et service](./index.yml)

@@ -21,12 +21,12 @@ ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
 description: 'Apprenez à créer des enregistrements DNS pour Office 365 géré par 21Vianet lorsque vous gérez vos enregistrements DNS. '
 monikerRange: o365-21vianet
-ms.openlocfilehash: 8f252ba47fbd72f5a628a23567addcc84604fb3c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1eaa2bcc7263eaa12e53131246abd591006b0536
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644818"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914353"
 ---
 # <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS
 
@@ -37,8 +37,6 @@ Autres options et éléments à prendre en compte :
       
 -  Si vous ne connaissez pas le fournisseur d'hébergement DNS ou le bureau d'enregistrement pour votre domaine, voir [Rechercher mon bureau d'enregistrement de domaines ou mon fournisseur d'hébergement DNS](../get-help-with-domains/find-your-domain-registrar.md). Pour obtenir des descriptions de ce que font les enregistrements DNS, voir les informations de base [sur DNS.](../get-help-with-domains/dns-basics.md)
     
--  Certains fournisseurs d’hébergement DNS ne vous laissaient pas créer tous les types d’enregistrement requis, ce qui entraîne des limitations de service lorsque votre fournisseur d’hébergement ne prend pas en charge [SRV, CNAME, TXT](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)ou la redirection. Si votre fournisseur ne prend pas en charge les enregistrements SRV, [](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) TXT ou CNAME, nous vous recommandons de transférer votre domaine vers un fournisseur qui prend en charge tous les types d’enregistrements [requis.](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77) 
+-  Certains fournisseurs d’hébergement DNS ne vous laissaient pas créer tous les types d’enregistrement requis, ce qui entraîne des limitations de service lorsque votre fournisseur d’hébergement ne prend pas en charge [SRV, CNAME, TXT](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)ou la redirection. Si votre fournisseur ne prend pas en charge les enregistrements SRV, [](../get-help-with-domains/buy-a-domain-name.md) TXT ou CNAME, nous vous recommandons de transférer votre domaine vers un fournisseur qui prend en charge tous les types d’enregistrements [requis.](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77) 
     
-- Pour voir quels enregistrements DNS sont requis et trouver les valeurs à utiliser pour chaque enregistrement, y compris l’enregistrement MX pour le courrier électronique, voir Recueillir les informations dont vous avez besoin pour créer des enregistrements [DNS Office 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records) Pour obtenir des descriptions de ce que font les enregistrements DNS, voir les informations de base [sur DNS.](../get-help-with-domains/dns-basics.md)
-    
-
+- Pour voir quels enregistrements DNS sont requis et trouver les valeurs à utiliser pour chaque enregistrement, y compris l’enregistrement MX pour le courrier électronique, voir Recueillir les informations dont vous avez besoin pour créer des enregistrements [DNS Office 365.](../get-help-with-domains/information-for-dns-records.md) Pour obtenir des descriptions de ce que font les enregistrements DNS, voir les informations de base [sur DNS.](../get-help-with-domains/dns-basics.md)

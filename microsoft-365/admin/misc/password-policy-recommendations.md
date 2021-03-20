@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Découvrez comment renforcer la sécurité de votre organisation contre les attaques par mot de passe et la raison pour laquelle vous devez interdire les mots de passe courants et activer l’authentification multifacteur basée sur le risque.
-ms.openlocfilehash: 66a4048ac1add3a0d47f256dc29519a91ae6cb11
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926713"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914725"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
 
@@ -136,10 +136,10 @@ L’authentification multifacteur basée sur le risque s'assure que, lorsque not
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Réinitialiser les mots de passe](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+[Réinitialiser les mots de passe](../add-users/reset-passwords.md)
 
-[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](../add-users/set-password-to-never-expire.md)
 
-[Autoriser les utilisateurs à réinitialiser leur mot de passe](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md)
 
-[Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)
+[Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur](../add-users/resend-user-password.md)

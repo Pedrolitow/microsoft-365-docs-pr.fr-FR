@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
 description: Suivez cette liste de vérification lors de la suppression du compte Microsoft 365 d’un utilisateur.
-ms.openlocfilehash: 2fcd675bef7dbc5b38ee45b050dca5dacb4fd386
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399373"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914761"
 ---
 # <a name="quick-help-deleted-users-checklist"></a>Aide rapide : liste de contrôle utilisateurs supprimés
 
@@ -34,7 +34,7 @@ Vous avez donc décidé de supprimer un utilisateur de votre organisation. Par e
   
 ## <a name="remove-the-microsoft-365-license-from-the-user"></a>Supprimer la licence Microsoft 365 de l’utilisateur
 
-Vous pouvez supprimer une licence d’un utilisateur en le recherchant sur la page d’accueil ou à partir de la **page** Utilisateurs actifs, puis en le sélectionnant. Sous **l’onglet Licences et** applications, cochez la case de la licence que vous souhaitez supprimer de l’utilisateur. [Lire l'intégralité de l'article](../manage/remove-licenses-from-users.md)
+Vous pouvez supprimer une licence d’un utilisateur en le recherchant sur la page d’accueil ou dans la **page** Utilisateurs actifs, puis en le sélectionnant. Sous **l’onglet Licences et** applications, cochez la case de la licence que vous souhaitez supprimer de l’utilisateur. [Lire l'intégralité de l'article](../manage/remove-licenses-from-users.md)
   
 ## <a name="block-sign-in"></a>Bloquer la signature
 
@@ -54,4 +54,4 @@ Si vous avez un nouvel employé ou une nouvelle personne qui rejoint votre organ
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>Supprimer une licence pour ne pas avoir à payer pour elle
 
-Vous pouvez également supprimer une licence de votre abonnement afin de ne pas avoir à payer pour cela. Dans la page d’accueil du Centre d’administration, tapez **abonnement** et **sélectionnez Afficher les abonnements.** Sélectionnez **Ajouter/supprimer des licences.** Dans la **zone Nombre total de licences,** entrez le nombre total de licences dont vous avez besoin pour cet abonnement, puis sélectionnez Envoyer la **modification.** Par exemple, si vous avez 5 licences et que vous devez en supprimer 1, entrez **4**. [Lire l'intégralité de l'article](../../commerce/licenses/remove-licenses-from-subscription.md).
+Vous pouvez également supprimer une licence de votre abonnement afin de ne pas avoir à payer pour cela. Dans la page d’accueil du Centre d’administration, tapez **abonnement** et **sélectionnez Afficher les abonnements.** Sélectionnez **Ajouter/supprimer des licences.** Dans la **zone Nombre total de licences,** entrez le nombre total de licences dont vous avez besoin pour cet abonnement, puis sélectionnez Envoyer la **modification.** Par exemple, si vous avez 5 licences et que vous devez en supprimer 1, entrez **4**. [Lire l'intégralité de l'article](../../commerce/licenses/buy-licenses.md).

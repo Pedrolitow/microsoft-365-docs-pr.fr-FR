@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Demander à vos employés à distance de se connecter à l’aide de l’authentification multifacteur (MFA).
-ms.openlocfilehash: 7df6b1335c0ca45c06eee98eeff89f59b6365807
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: d27268ac4c71e74afe6ef04cc61fb029b665c1a0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097139"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916201"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Étape 1. Augmenter la sécurité de connexion pour les travailleurs à distance à l’aide d’une authentification multifacteur (MFA)
 
@@ -36,8 +36,8 @@ Trois méthodes s’offrent à vous pour obliger vos utilisateurs à utiliser l�
 
 |Planification  |Recommandation  |
 |---------|---------|
-|Toutes les offres Microsoft 365 (sans licence Azure AD Premium P1 ou P2)     |[Activer les paramètres de sécurité par défaut dans Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). La sécurité par défaut d’Azure AD inclut l’authentification multifacteur pour les utilisateurs et les administrateurs.   |
-|Microsoft 365 E3 (inclut les licences Azure AD Premium P1)     | Utilisez les [Stratégies d’accès conditionnel courantes](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br>- [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Exiger l’authentification multifacteur pour tous les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquer l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Toutes les offres Microsoft 365 (sans licence Azure AD Premium P1 ou P2)     |[Activer les paramètres de sécurité par défaut dans Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). La sécurité par défaut d’Azure AD inclut l’authentification multifacteur pour les utilisateurs et les administrateurs.   |
+|Microsoft 365 E3 (inclut les licences Azure AD Premium P1)     | Utilisez les [Stratégies d’accès conditionnel courantes](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br>- [Exiger l’authentification multifacteur pour les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquer l’authentification héritée](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (inclut les licences Azure AD Premium P2)     | Avec le bénéfice de la protection d’identité Azure AD Identity Protection, commencez à implémenter la [série recommandée de Microsoft concernant l’accès conditionnel et les stratégies associées](../security/office-365-security/identity-access-policies.md) en créant les stratégies suivantes :<br> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquer les clients ne prenant pas en charge l’authentification moderne](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br>- [Les utilisateurs à risque élevé doivent modifier leur mot de passe](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
@@ -49,7 +49,7 @@ Les utilisateurs disposent de 14 jours pour s’inscrire à l’authentificatio
 
 Les paramètres de sécurité par défaut garantissent que toutes les organisations ont un niveau de sécurité de base qui est activé par défaut pour la connexion des utilisateurs. Vous pouvez désactiver les paramètres de sécurité par défaut en faveur de l’authentification multifacteur avec des stratégies d’accès conditionnel ou pour des comptes individuels.
 
-Pour plus d’informations, voir[Vue d’ensemble des paramètres de sécurité par défaut](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+Pour plus d’informations, voir[Vue d’ensemble des paramètres de sécurité par défaut](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ## <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
 
@@ -63,7 +63,7 @@ Vous pouvez également utiliser les stratégies d’accès conditionnel pour des
 
 Les licences d’accès conditionnel exige Azure AD Premium P1, lesquelles sont incluses dans Microsoft 365 E3 et E5.
 
-Si vous souhaitez en savoir plus, consultez [Présentation de l’accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+Si vous souhaitez en savoir plus, consultez [Présentation de l’accès conditionnel](/azure/active-directory/conditional-access/overview).
 
 ## <a name="azure-ad-identity-protection-support"></a>Prise en charge d’Azure AD Identity Protection
 
@@ -73,9 +73,9 @@ Avec Azure AD Identity Protection, vous pouvez créer une stratégie d’accès 
 
 Les licences Azure AD Identity Protection exige Azure AD Premium P2, lesquelles sont incluses dans Microsoft 365 E5.
 
-Pour en savoir plus, consultez l'article [Accès conditionnel basé sur les risques](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
+Pour en savoir plus, consultez l'article [Accès conditionnel basé sur les risques](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
-Avec Azure Active Directory Identity Protection, vous pouvez également créer une stratégie pour demander à vos utilisateurs de s’inscrire à l’authentification multifacteur. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Configurer la stratégie d’inscription pour l'authentification multifacteur Azure AD](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+Avec Azure Active Directory Identity Protection, vous pouvez également créer une stratégie pour demander à vos utilisateurs de s’inscrire à l’authentification multifacteur. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Configurer la stratégie d’inscription pour l'authentification multifacteur Azure AD](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 
 
 ## <a name="using-these-methods-together"></a>Utilisation combinée des méthodes
@@ -97,11 +97,11 @@ Ce tableau présente les résultats de l’activation de l’authentification mu
 
 ## <a name="let-your-users-reset-their-own-passwords"></a>Autoriser vos utilisateurs à réinitialiser leur mot de passe
 
-La Réinitialisation des mots de passe libre-service (SSPR) permet aux utilisateurs de réinitialiser leur mot de passe sans avoir de conséquence pour le personnel informatique. Les utilisateurs peuvent rapidement réinitialiser leur mot de passe à tout moment et n’importe où. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Planifier le déploiement de la réinitialisation de mot de passe en libre-service Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
+La Réinitialisation des mots de passe libre-service (SSPR) permet aux utilisateurs de réinitialiser leur mot de passe sans avoir de conséquence pour le personnel informatique. Les utilisateurs peuvent rapidement réinitialiser leur mot de passe à tout moment et n’importe où. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Planifier le déploiement de la réinitialisation de mot de passe en libre-service Azure AD](/azure/active-directory/authentication/howto-sspr-deployment).
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Se connecter aux applications SaaS avec Azure AD
 
-Outre la possibilité d’utiliser l’authentification cloud pour les utilisateurs, Azure AD permet également de sécuriser toutes vos applications, qu’elles soient locales, dans le cloud de Microsoft ou dans un autre cloud. En [intégrant vos applications dans Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), les travailleurs à distance peuvent facilement découvrir les applications dont ils ont besoin et s’y connecter de façon sécurisée.
+Outre la possibilité d’utiliser l’authentification cloud pour les utilisateurs, Azure AD permet également de sécuriser toutes vos applications, qu’elles soient locales, dans le cloud de Microsoft ou dans un autre cloud. En [intégrant vos applications dans Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration), les travailleurs à distance peuvent facilement découvrir les applications dont ils ont besoin et s’y connecter de façon sécurisée.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Ressources techniques pour l’administrateur pour l’authentification multifacteur et l’identité
 

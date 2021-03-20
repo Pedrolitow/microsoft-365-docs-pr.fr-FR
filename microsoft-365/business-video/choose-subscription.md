@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez quel abonnement Microsoft 365 est le bon pour votre organisation.
-ms.openlocfilehash: 9bb72b01c7b1119f96120702e7b4f9c80aa4e729
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422818"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913753"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Choisir un abonnement Microsoft 365
 
@@ -74,4 +74,4 @@ Il est essentiel de choisir l’abonnement Microsoft 365 qui vous sera le plus �
 
 \*\*\* Archivage illimité lorsque l’extension automatique est allumée.
 
-Pour comparer Microsoft 365 Business Premium avec d’autres produits, y compris d’autres plans Microsoft 365, voir Gestion des licences [Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)pour les petites et moyennes entreprises.
+Pour comparer Microsoft 365 Business Premium avec d’autres produits, y compris d’autres plans Microsoft 365, voir Gestion des licences [Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)pour les petites et moyennes entreprises.

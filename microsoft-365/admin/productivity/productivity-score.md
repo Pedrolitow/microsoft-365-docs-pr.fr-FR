@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de niveau de productivité Microsoft.
-ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838424"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914581"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 
@@ -44,7 +44,7 @@ Nous fournissons des mesures, des informations et des recommandations dans deux 
 
 - **Expériences technologiques :** votre organisation dépend de technologies fiables et performantes, ainsi que de l’utilisation efficace de Microsoft 365. Les [analyses de point de terminaison](https://aka.ms/endpointanalytics) vous aident à comprendre comment l’organisateur peut être affectée par des problèmes de performances et d’intégrité de votre matériel et de vos logiciels. L’état d’intégrité des applications Microsoft 365 vous permet de comprendre si les appareils de votre organisation exécutent les applications Microsoft 365 sur les canaux recommandés.
 
-Pour plus d’informations et pour obtenir des informations sur les conditions préalables, voir [Qu’est-ce qu’Endpoint Analytics ?](https://docs.microsoft.com/mem/analytics/overview). Pour en savoir plus sur les informations relatives à la connectivité réseau de Microsoft 365, consultez la [vue d’ensemble de la connectivité réseau](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
+Pour plus d’informations et pour obtenir des informations sur les conditions préalables, voir [Qu’est-ce qu’Endpoint Analytics ?](/mem/analytics/overview). Pour en savoir plus sur les informations relatives à la connectivité réseau de Microsoft 365, consultez la [vue d’ensemble de la connectivité réseau](../../enterprise/microsoft-365-networking-overview.md).
   
 
 ## <a name="how-the-score-is-calculated"></a>Mode de calcul du score
@@ -74,7 +74,8 @@ Le score de votre organisation est mis à jour quotidiennement et reflète les a
 
 ## <a name="prerequisites"></a>Conditions préalables 
 
-Pour les données sur les expériences des personnes, vous avez besoin d’un abonnement Microsoft 365 Entreprise ou Office 365 Entreprise. Pour les données d’analyse de point de terminaison de votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune vous permet de protéger les données de votre organisation en gérant les appareils et les applications. Une fois que vous disposez d’Intune, vous pouvez activer les analyses de point de terminaison au sein de l’expérience Intune. Apprenez-en davantage sur la fonctionnalité [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
+Pour les données sur les expériences des personnes, vous avez besoin d’un abonnement Microsoft 365 Entreprise ou Office 365 Entreprise. Pour les données d’analyse de point de terminaison de votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune vous permet de protéger les données de votre organisation en gérant les appareils et les applications. Une fois que vous disposez d’Intune, vous pouvez activer les analyses de point de terminaison au sein de l’expérience Intune. Apprenez-en davantage sur la fonctionnalité [Microsoft Intune](/mem/intune/). 
+
 > [!NOTE]
 > Il n’est pas nécessaire de disposer d’une licence d’Analyse du temps de travail pour obtenir les fonctionnalités de niveau de productivité.
 
@@ -129,7 +130,7 @@ Les pages de détails sont les suivantes :
 - [Mobilité – expériences des personnes](mobility.md)
 - [Travail en équipe – expériences des personnes](teamwork.md)
 - [Intégrité de Microsoft 365 Apps – expériences technologiques](apps-health.md)
-- [Analyse des points de terminaison](https://docs.microsoft.com/mem/analytics/productivity-score)
+- [Analyse des points de terminaison](/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>Rapport spécial sur la continuité d'activité
 
@@ -143,12 +144,12 @@ Ce rapport permet aux organisations de comprendre les éléments suivants :
 
 - Si les réunions à distance permettent la prise de décisions efficaces.
 
-[En savoir plus sur le rapport sur la continuité de l’activité](https://aka.ms/bcrps)
+[En savoir plus sur le rapport sur la continuité de l’activité](/Workplace-Analytics/tutorials/bcrps)
 
-[En savoir plus sur Microsoft Graph](https://docs.microsoft.com/graph/)
+[En savoir plus sur Microsoft Graph](/graph/)
 
 > [!NOTE]
-> Les utilisateurs ont également l’option d’obtenir des analyses de la productivité à partir du [tableau de bord MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
+> Les utilisateurs ont également l’option d’obtenir des analyses de la productivité à partir du [tableau de bord MyAnalytics](/workplace-analytics/myanalytics/use/dashboard-2).
 
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse

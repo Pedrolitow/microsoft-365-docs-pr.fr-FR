@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: Découvrez comment gérer vos propres enregistrements DNS ou laisser Microsoft gérer vos enregistrements DNS pour vous.
-ms.openlocfilehash: ddf3b7faf7ac336b2d7caf3b7d35d9a4f101b122
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: f3c3710320c62d20c6a16818cd138c9b686d2781
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126358"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915565"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>Configurer votre domaine (instructions spécifiques de l’hôte)
 
@@ -57,7 +57,7 @@ Vous pouvez également apprendre à modifier les serveurs de noms pour configure
 
 |                           |                          |
 |---------------------------|--------------------------|
-| [1&1 IONOS](../dns/create-dns-records-at-1-1-internet.md) | [Pointer](../dns/create-dns-records-at-hover.md) |
+| [1&1 IONOS](../dns/create-dns-records-at-1-1-internet.md) | [Pointer](./create-dns-records-at-any-dns-hosting-provider.md) |
 | [123-reg.co.uk](../dns/create-dns-records-at-123-reg-co-uk.md) | [Géré par Google (eNom)](../dns/create-dns-records-for-domain-managed-by-google-enom.md)|
 | [Amazon Web Services (AWS)](../dns/create-dns-records-at-aws.md) | [MyDomain](../dns/create-dns-records-at-mydomain.md) |
 | [Zones DNS Azure](../dns/create-dns-records-for-azure-dns-zones.md) | [name.com](../dns/create-dns-records-at-name-com.md) |
@@ -74,4 +74,3 @@ Vous pouvez également apprendre à modifier les serveurs de noms pour configure
 |[Hostgator](../dns/create-dns-records-at-hostgator.md)  | [Yahoo!   Petite Entreprise](../dns/create-dns-records-at-yahoo-small-business.md)  |
 
 [J’ai besoin d’instructions générales, car mon hôte de domaine ne figure pas dans cette liste. ](create-dns-records-at-any-dns-hosting-provider.md)
-   

@@ -19,20 +19,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: Mettez à jour votre numéro de téléphone et votre adresse de messagerie de l’administrateur dans le Centre d’administration. Vous aurez besoin de ces informations si vous souhaitez réinitialiser votre propre mot de passe d’administrateur.
-ms.openlocfilehash: 8ceb2fdc6543bf38089b40d3a66dfc2ab1d7dc64
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: Mettez à jour votre numéro de téléphone et votre adresse e-mail d’administrateur dans le Centre d’administration. Vous aurez besoin de ces informations si vous souhaitez réinitialiser votre propre mot de passe d’administrateur.
+ms.openlocfilehash: a5b1548ee6ac0fa6bac976758ea8f6753ea2853c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114428"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914989"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Mettre à jour votre numéro de téléphone et votre adresse e-mail d’administrateur
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 Cet article explique comment, en votre nom d’administrateur, vous pouvez modifier votre téléphone et votre adresse de messagerie professionnelle dans Microsoft 365.
@@ -47,7 +47,7 @@ Utilisez la page **Informations de sécurité** pour modifier votre numéro de t
 
 2. Dans l’en-tête, sélectionnez votre icône de profil \> **Mes informations de** \> **sécurité de compte.**
 
-3. Dans **l’onglet Informations sur la** sécurité, **sélectionnez Ajouter** un autre téléphone ou adresse de messagerie pour ajouter des \>  \>  détails.  Pour mettre à jour les détails de votre adresse de messagerie mobile, de téléphone et de remplacement, sélectionnez **Modifier.** Veillez à utiliser autre chose que votre adresse de messagerie Microsoft pour votre adresse de messagerie de remplacement.
+3. Dans **l’onglet Informations sur la** sécurité, **sélectionnez Ajouter** un autre téléphone ou adresse de messagerie pour ajouter des \>  \>  détails.  Pour mettre à jour les détails de votre adresse de messagerie mobile, téléphone et de remplacement, sélectionnez **Modifier.** Veillez à utiliser autre chose que votre adresse de messagerie Microsoft pour votre adresse de messagerie de remplacement.
 
     > [!IMPORTANT]
     > L’adresse de messagerie de remplacement et le numéro de téléphone mobile sont nécessaires pour réinitialiser votre mot de passe d’administrateur (et non le mot de passe d’administrateur de votre ordinateur).

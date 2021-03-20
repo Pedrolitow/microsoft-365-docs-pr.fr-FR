@@ -20,25 +20,25 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application modèle Analyse de l’utilisation de Microsoft 365 dans Power BI.
-ms.openlocfilehash: 98ae107b6777ac97d0be3b37847117c6e20be63d
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 1ef50380041650763961ffbe6e01c63b26800ee3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114236"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913873"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
 L’analyse de l’utilisation de Microsoft 365 n’est pas encore disponible pour la communauté Microsoft 365 pour le gouvernement américain.
   
-## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Étapes pour activer l’analyse de l’utilisation de Microsoft 365
+## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Procédure d’analyse de l’utilisation de Microsoft 365
 
 Pour commencer à utiliser l’analyse de l’utilisation de Microsoft 365, vous devez d’abord rendre les données disponibles dans le Centre d’administration Microsoft 365, puis lancer l’application modèle dans Power BI.
   
@@ -50,9 +50,9 @@ Si vous n’avez pas encore Power BI, vous pouvez vous [inscrire à Power BI Pro
 Vous pouvez également développer **Produits** pour acheter une version de Power BI. 
 
 > [!NOTE]
-> Vous avez besoin d’une licence Power BI Pro pour installer, personnaliser et distribuer une application de modèle. Pour plus d’informations, voir [Conditions préalables.](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute?source=docs#prerequisites)
+> Vous avez besoin d’une licence Power BI Pro pour installer, personnaliser et distribuer une application de modèle. Pour plus d’informations, voir [Conditions préalables.](/power-bi/service-template-apps-install-distribute?source=docs#prerequisites)
 
-Pour partager vos données, vous et les personnes avec qui vous partagez les données, vous avez besoin d’une licence Power BI Pro ou le contenu doit se trouver dans un espace de travail dans un [service Premium Power BI.](https://docs.microsoft.com/power-bi/service-premium-what-is) 
+Pour partager vos données, vous et les personnes avec qui vous partagez les données, vous avez besoin d’une licence Power BI Pro ou le contenu doit se trouver dans un espace de travail dans un [service Premium Power BI.](/power-bi/service-premium-what-is) 
   
 ### <a name="enable-the-template-app"></a>Activer l’application de modèle
 
@@ -66,7 +66,7 @@ Pour plus [d’informations, voir](../add-users/about-admin-roles.md) les rôles
     
 3. Dans le panneau Rapports qui s’ouvre, définissez Rendre les données disponibles pour l’analyse de l’utilisation de **Microsoft 365** pour Power BI sur **Sur** \> **Enregistrer.** 
   
-Le processus de collecte de données se terminera dans deux à 48 heures en fonction de la taille de votre client. Le **bouton Aller à Power BI** est activé (plus gris) lorsque la collecte de données est terminée. 
+Le processus de collecte de données se terminera en 2 à 48 heures en fonction de la taille de votre client. Le **bouton Go to Power BI** est activé (et n’est plus gris) lorsque la collecte de données est terminée. 
     
 ### <a name="start-the-template-app"></a>Démarrer l’application de modèle
 
@@ -86,13 +86,13 @@ Pour démarrer l’application de modèle, vous devez être administrateur **gé
 
 6.  Choose **Connect**, on the **Connect to Microsoft 365 usage analytics** screen, then type in the tenant ID (without dashes) you copied in step (1), and select **Next**.
     
-7. Dans l’écran suivant, sélectionnez **OAuth2** en tant que méthode **d’authentification** \> **Sign in**. Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échoue.
+7. Dans l’écran suivant, sélectionnez **OAuth2** en tant que méthode **d’authentification** \> **Sign in**. Si vous choisissez une autre méthode d’authentification, la connexion au modèle d’application échoue.
     
     ![Choisir un compte Microsoft comme méthode d’authentification](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
   
-8. Une fois l’application de modèle ins instantiée, le tableau de bord d’analyse de l’utilisation de Microsoft 365 sera disponible dans Power BI sur le web. Le chargement initial du tableau de bord prendra entre 2 et 30 minutes.
+8. Une fois l’application de modèle ins instantiée, le tableau de bord d’analyse de l’utilisation de Microsoft 365 sera disponible dans Power BI sur le web. Le chargement initial du tableau de bord prend entre 2 et 30 minutes.
   
-Les agrégats au niveau du client seront disponibles dans tous les rapports après l’avoir choisi. Les détails au niveau de l’utilisateur ne seront disponibles que le 5 du mois calendaire suivant **après l’avoir choisi.** Cela aura un impact sur tous les rapports sous Activité de l’utilisateur (voir Parcourir et utiliser les rapports dans l’analyse de l’utilisation de [Microsoft 365](navigate-and-utilize-reports.md) pour obtenir des conseils sur la façon d’afficher et d’utiliser ces rapports).
+Les agrégats au niveau du client seront disponibles dans tous les rapports après l’avoir choisi. Les détails au niveau de l’utilisateur ne seront disponibles qu’autour du 5 du mois calendaire suivant **après l’avoir choisi.** Cela aura un impact sur tous les rapports sous Activité de l’utilisateur (voir Parcourir et utiliser les rapports dans l’analyse de l’utilisation de [Microsoft 365](navigate-and-utilize-reports.md) pour obtenir des conseils sur la façon d’afficher et d’utiliser ces rapports).
     
 ## <a name="make-the-collected-data-anonymous"></a>Anonymiser les données collectées
 

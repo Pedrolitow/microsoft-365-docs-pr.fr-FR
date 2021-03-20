@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Découvrez comment convertir une boîte aux lettres privée en boîte aux lettres partagée accessible par plusieurs utilisateurs. '
-ms.openlocfilehash: f716bbd16be9f67189b19358ddf16a289f57f8e7
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.openlocfilehash: d5b33731908d2d555a8dd12d5d7fbbd462bd83ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49737964"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915865"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée
 
@@ -33,13 +33,13 @@ Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux
 
 **Voici quelques éléments essentiels que vous devez connaître :**
 
-- La boîte aux lettres utilisateur que vous convertissez nécessite une licence qui lui est attribuée avant de la convertir en boîte aux lettres partagée. Sinon, vous ne verrez pas l’option de conversion de la boîte aux lettres. Si vous avez supprimé la licence, rajoutez-la afin de pouvoir convertir la boîte aux lettres. Après avoir converti la boîte aux lettres en une boîte aux lettres partagée, vous pouvez supprimer la licence du compte de l’utilisateur.
+- La boîte aux lettres utilisateur que vous convertissez a besoin d’une licence qui lui est attribuée avant de la convertir en boîte aux lettres partagée. Sinon, vous ne verrez pas l’option de conversion de la boîte aux lettres. Si vous avez supprimé la licence, rajoutez-la afin de pouvoir convertir la boîte aux lettres. Après avoir converti la boîte aux lettres en une boîte aux lettres partagée, vous pouvez supprimer la licence du compte de l’utilisateur.
 
-- Les boîtes aux lettres partagées peuvent avoir jusqu’à 50 Go de données sans licence. Pour contenir davantage de données, vous avez besoin d’une licence qui lui est attribuée. Vous devrez peut-être supprimer un grand nombre de messages électroniques volumineux (par ex., ceux avec pièces jointes) de la boîte aux lettres partagée pour la réduire afin de pouvoir supprimer la licence.
+- Les boîtes aux lettres partagées peuvent avoir jusqu’à 50 Go de données sans licence qui leur est attribuée. Pour contenir davantage de données, vous avez besoin d’une licence qui lui est attribuée. Vous devrez peut-être supprimer un grand nombre de messages électroniques volumineux (par ex., ceux avec pièces jointes) de la boîte aux lettres partagée pour réduire la taille de la boîte aux lettres afin de pouvoir supprimer la licence.
 
 - Ne supprimez pas le compte de l’ancien utilisateur. Cette valeur est requise pour ancrer la boîte aux lettres partagée. Si vous avez déjà supprimé le compte d’utilisateur, voir Convertir la boîte aux lettres [d’un utilisateur supprimé.](#convert-the-mailbox-of-a-deleted-user)
 
-- Les règles sont intactes après la conversion de la boîte aux lettres en boîte aux lettres partagée.
+- Les règles sont intactes une fois la boîte aux lettres convertie en boîte aux lettres partagée.
 
 ## <a name="use-the-exchange-admin-center-to-convert-a-mailbox"></a>Utiliser le Centre d’administration Exchange pour convertir une boîte aux lettres
  
@@ -96,7 +96,7 @@ Supposons que vous avez supprimé un compte d’utilisateur et que vous voulez m
 Pour plus d’informations sur la conversion d’une boîte aux lettres utilisateur en boîte aux lettres partagée dans un environnement hybride Exchange, voir :
 
  - [Cmdlets pour créer ou modifier une boîte aux lettres partagée à distance dans un environnement Exchange local](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [Les boîtes aux lettres partagées sont converties de manière inattendue en boîtes aux lettres utilisateur après l’installation de la synchronisation d’annuaires dans un déploiement hybride Exchange](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [Les boîtes aux lettres partagées sont converties de manière inattendue en boîtes aux lettres utilisateur après l’utilisation de la synchronisation d’annuaires dans un déploiement hybride Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]

@@ -28,12 +28,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Découvrez comment importer des contacts, des calendriers et des courriers électroniques à partir de Gmail ou d’un autre fournisseur de messagerie et les migrer vers Microsoft 365.
-ms.openlocfilehash: eb82711bc8fb431c6e29272b601b898566446f02
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 91c8177322e8ebc1e1530675d92d60e96cc73adb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906380"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914101"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrer le courrier électronique et les contacts vers Microsoft 365
 
@@ -89,4 +89,4 @@ Vous avez besoin d'une procédure plus détaillée ? Voir [Ajouter un compte](ht
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Plusieurs boîtes aux lettres : les administrateurs peuvent importer en bloc du courrier électronique, des contacts et des calendriers dans Microsoft 365
 
-En fonction de votre système de courrier source, plusieurs méthodes de migration en bloc s'offrent à vous. Découvrez [comment migrer plusieurs comptes de messagerie vers Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration) pour choisir la méthode qui vous est la plus efficace.
+En fonction de votre système de courrier source, plusieurs méthodes de migration en bloc s'offrent à vous. Découvrez [comment migrer plusieurs comptes de messagerie vers Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) pour choisir la méthode qui vous est la plus efficace.

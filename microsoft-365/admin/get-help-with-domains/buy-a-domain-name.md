@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Découvrez comment acheter un nom de domaine dans Microsoft 365.
-ms.openlocfilehash: d7215db61577968bb2b21f708bda9d42acd7e675
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 24c6ac017cf25e1a40148e7a2c982e9d1068664b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126392"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915673"
 ---
 # <a name="buy-a-domain-name"></a>Acheter un nom de domaine
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -129,4 +129,4 @@ Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de 
 
 [Foire aux questions domaines](../setup/domains-faq.yml)
 
-[Mettez à jour les enregistrements DNS pour conserver votre site web auprès de votre fournisseur d’hébergement actuel.](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)
+[Mettez à jour les enregistrements DNS pour conserver votre site web auprès de votre fournisseur d’hébergement actuel.](../dns/update-dns-records-to-retain-current-hosting-provider.md)

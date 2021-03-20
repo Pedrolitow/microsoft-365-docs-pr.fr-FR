@@ -15,19 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Découvrez comment utiliser un code QR pour authentifier et télécharger Outlook Mobile.
-ms.openlocfilehash: 1e5207a2792b557689a306fa1474a2c5fac81ed9
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: bc8ab14d3c1c0621e84d0c95ad7448c6c50825d6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242353"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914965"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Utiliser un code QR pour vous inscrire aux applications mobiles Outlook
 
 > [!IMPORTANT]
 > Cette fonctionnalité est uniquement disponible pour les organisations qui ont mis en place la publication ciblée dans le Centre d’administration Microsoft 365. Pour activer la version ciblée et en savoir plus sur son fonctionnement, voir Configurer les options de publication [standard ou ciblée.](release-options-in-office-365.md) Nous allons développer davantage d’organisations au cours des prochaines semaines jusqu’à la prévisualisation publique. La prévisualisation publique fournit un accès en avant-première aux fonctionnalités de Microsoft 365.
 
-En tant qu’administrateur Microsoft 365, vous pouvez permettre à vos utilisateurs de se connectent à Outlook pour Android ou à l’application iOS sur leurs appareils mobiles sans avoir à entrer leur nom d’utilisateur et leur mot de passe. En analysant un code QR, les utilisateurs peuvent s’authentifier en toute sécurité et se connectent à Outlook Mobile.
+En tant qu’administrateur Microsoft 365, vous pouvez permettre à vos utilisateurs de se connectent à Outlook pour Android ou à l’application iOS sur leurs appareils mobiles sans avoir à entrer leur nom d’utilisateur et leur mot de passe. En analysant un code QR, les utilisateurs peuvent s’authentifier et se connectent en toute sécurité à Outlook Mobile.
 
 Dans Outlook sur le web ou dans d’autres applications Outlook de bureau, les utilisateurs peuvent voir des notifications les informant qu’ils peuvent utiliser Outlook sur leur appareil mobile. Ces notifications peuvent être gérées par l’administrateur à l’aide d’Exchange Powershell. Si les utilisateurs choisissent de s’envoyer eux-mêmes un SMS pour télécharger l’application sur leur appareil mobile, un code QR s’affiche sur leur ordinateur. Ils pourront analyser le code QR pour se connecter à Outlook sur leur téléphone ou tablette. Ce code QR est un jeton à durée de vie courte qui ne peut être échangé qu’une seule fois.
 
@@ -38,13 +38,13 @@ Dans Outlook sur le web ou dans d’autres applications Outlook de bureau, les u
 
 Cette fonctionnalité est activée par défaut. Pour désactiver cette fonctionnalité, suivez les étapes ci-dessous.
 
-1. [Connectez-vous à Exchange PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Connectez-vous à Exchange PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)
 2. À l’aide de PowerShell, vous pouvez désactiver les notifications informant vos utilisateurs des applications mobiles Outlook. Cela empêche également l’affichage du flux de la signature du code QR.
 
 ```powershell
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
-Voir aussi
+Rubriques connexes
 
-[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps)
+[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig?view=exchange-ps)

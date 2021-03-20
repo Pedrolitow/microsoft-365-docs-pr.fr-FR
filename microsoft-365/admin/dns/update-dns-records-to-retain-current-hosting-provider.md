@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: Découvrez comment router le trafic vers un site web public existant hébergé en dehors de Microsoft, si vous avez demandé à Microsoft de gérer les enregistrements DNS pour votre domaine personnalisé.
-ms.openlocfilehash: 5d2bf23d4052815fae210d0fdf6635288ff46b57
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ceef82345e562e2aa4c291f416c454fb831ee45b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645562"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915973"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Mettre à jour les enregistrements DNS pour conserver votre site web chez votre fournisseur d'hébergement actuel
 
@@ -37,7 +37,7 @@ ms.locfileid: "48645562"
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Mettre à jour les enregistrements DNS dans le Centre d’administration Microsoft 365
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
-2. Dans la page **Domaines,** sélectionnez le domaine, puis choisissez **Enregistrements DNS.**
+2. Dans la page **Domaines,** sélectionnez le domaine, puis choisissez **Enregistrements DNS**.
 
 3. Sous **les paramètres DNS,** sélectionnez **Enregistrements personnalisés.**
 
@@ -67,7 +67,6 @@ De plus, vous pouvez créer un enregistrement CNAME pour aider les clients à tr
     
 Pour terminer, procédez comme suit :
   
-[Mettez à jour les enregistrements NS de votre](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) domaine pour qu’ils pointent vers Microsoft. 
+[Mettez à jour les enregistrements NS de votre](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) domaine pour qu’ils pointent vers Microsoft. 
   
 Lorsque les enregistrements NS ont été mis à jour pour pointer vers Microsoft, votre domaine est tous mis en place. Le courrier électronique est acheminé vers Microsoft et le trafic vers votre adresse de site web continue d’être acheminé vers l’hôte de votre site web actuel.
- 

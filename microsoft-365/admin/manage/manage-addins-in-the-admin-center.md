@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: b888c0f329e3f1f36f5aa566df7efbab07cd1f5f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 0750b6c9b91bc5cbd67d227fadb304bfc6cf7537
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509133"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915397"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ Les add-ins Office vous aident à personnaliser vos documents et à simplifier l
 
 Une fois qu’un administrateur a déployé des modules pour les utilisateurs d’une organisation, il peut désactiver ou activer les modules, modifier, supprimer et gérer l’accès aux modules.
 
-Pour plus d’informations sur l’installation des modules complémentaires à partir du Centre d’administration, voir Déployer des [modules complémentaires dans le Centre d’administration.](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
+Pour plus d’informations sur l’installation des modules complémentaires à partir du Centre d’administration, voir Déployer des [modules complémentaires dans le Centre d’administration.](./manage-deployment-of-add-ins.md)
   
 ## <a name="add-in-states"></a>États de complément
 
@@ -58,7 +58,7 @@ Envisagez de supprimer un add-in si personne ne l’utilise plus. Par exemple, l
 
 Vous pouvez également supprimer un module qui a été déployé.
 
-1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & des modules.**
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **Services & des modules.**
 
      > [!NOTE]
     > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
@@ -87,7 +87,7 @@ Après le déploiement, les administrateurs peuvent également gérer l’accès
 ## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de modules de l’Office Store sur tous les clients (à l’exception d’Outlook)
 
 > [!NOTE]
-> L’installation du add-in Outlook est gérée par [un processus différent.](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx)
+> L’installation du add-in Outlook est gérée par [un processus différent.](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)
 
 En tant qu’organisation, vous pouvez empêcher le téléchargement de nouveaux modules office à partir de l’Office Store. Cela peut être utilisé conjointement avec le déploiement centralisé pour vous assurer que seuls les compléments approuvés par l’organisation sont déployés pour les utilisateurs au sein de votre organisation.
   
@@ -115,7 +115,7 @@ Cela empêche tous les utilisateurs d’acquérir les modules suivants dans le S
     
 - Acquisitions à partir **d’AppSource**
     
-- Add-ins within Microsoft 365
+- Les add-ins dans Microsoft 365
     
 Un utilisateur qui tente d’accéder à l’Office Store voit le message suivant : **Désolé, Microsoft 365** a été configuré pour empêcher l’acquisition individuelle de modules de l’Office Store.
   
@@ -131,20 +131,20 @@ La prise en charge de la non-prise en charge de l’Office Store est disponible 
     
 Cela n’empêche pas un administrateur d’utiliser le déploiement centralisé pour affecter un add-in à partir de l’Office Store.
   
-Pour empêcher un utilisateur de se signer avec un compte Microsoft, vous pouvez restreindre l’accès pour utiliser uniquement le compte d’organisation. Pour plus d’informations, [voir Identité, authentification et autorisation dans Office 2016.](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx)  
+Pour empêcher un utilisateur de se signer avec un compte Microsoft, vous pouvez restreindre l’accès pour utiliser uniquement le compte d’organisation. Pour plus d’informations, [voir Identité, authentification et autorisation dans Office 2016.](/DeployOffice/security/identity-authentication-and-authorization-in-office)  
 
 > [!NOTE]
-> Le fait d’empêcher les utilisateurs d’accéder à l’Office Store les empêchera également de recharger une version test des [add-ins Office.](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
+> Le fait d’empêcher les utilisateurs d’accéder à l’Office Store les empêchera également de recharger une version test des [add-ins Office.](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les add-ins
 
-Après avoir déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre application Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
+Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide [de votre application Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
   
 Si le complément prend en charge les commandes de complément, celles-ci apparaissent sur le ruban Office. Dans l'exemple suivant, la commande **Search Citation** (Rechercher une citation) apparaît pour le complément **Citations**. 
 
 ![Ruban Office avec citations de recherche](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
-Si le add-in déployé ne prend pas en charge les commandes de add-in ou si vous souhaitez afficher tous les modules, vous pouvez les afficher via Mes **modules.** 
+Si le add-in déployé ne prend pas en charge les commandes de ce dernier ou si vous souhaitez afficher tous les modules, vous pouvez les afficher via Mes **modules.** 
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>Dans Word 2016, Excel 2016 ou PowerPoint 2016
 
@@ -162,12 +162,12 @@ Si le add-in déployé ne prend pas en charge les commandes de add-in ou si vous
 
 ## <a name="learn-more"></a>En savoir plus
 
-[Déployer des compléments dans le centre d’administration](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
+[Déployer des compléments dans le centre d’administration](./manage-deployment-of-add-ins.md)
 
-Pour en savoir plus sur la création et la génération de compléments, voir [Compléments Office](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins).
+Pour en savoir plus sur la création et la génération de compléments, voir [Compléments Office](/office/dev/add-ins/overview/office-add-ins).
   
-[Utilisez les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins.](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
+[Utilisez les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins.](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)
   
-[Résolution des problèmes : l’utilisateur ne voit pas les modules](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Résolution des problèmes : l’utilisateur ne voit pas les modules](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
 
-[Mineurs et acquisition de add-ins à partir du Microsoft Store](https://docs.microsoft.com/microsoft-365/admin/manage/minors-and-acquiring-addins-from-the-store)
+[Mineurs et acquisition de add-ins à partir du Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)

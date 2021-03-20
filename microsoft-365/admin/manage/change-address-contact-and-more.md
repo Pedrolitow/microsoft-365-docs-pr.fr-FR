@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Découvrez comment apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
-ms.openlocfilehash: 3c3a936c8961373a94dc8b8978dbc274048af09c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 9813e7a959579223f27efa082b1ef11efe6ed06d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114224"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915421"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
   
@@ -61,7 +61,7 @@ Chaque champ est décrit ci-dessous.
 |**Field**  |**Description**  |
 |---------|---------|
 |Nom  <br/>   | Le nom que vous entrez ici est celui que les utilisateurs verront dans les pages suivantes :  <br/>  Page de connexion : si vos utilisateurs ont configuré d'autres comptes Microsoft avec leur adresse de courrier professionnelle ou scolaire, ils peuvent voir le nom de l'organisation sur la page de connexion. Cela leur permet de faire la distinction entre leur compte professionnel ou scolaire et leurs autres comptes, ils peuvent ainsi identifier celui à utiliser quand ils se connectent.  <br/>  Page et lien du profil de l'organisation : le lien vers le profil de votre organisation affiche le nom de l'organisation.  <br/>  Yammer navigation : dans Yammer, le navigation de gauche utilise le nom de l’organisation comme nom du réseau Yammer accueil.  <br/> Client de synchronisation OneDrive : le nom de l’organisation s’affiche dans l’Explorateur de fichiers sur Windows et Finder sur Mac, les chemins d’accès aux fichiers, le centre d’activité OneDrive, l’info-bulle de l’icône cloud OneDrive et la fenêtre des paramètres OneDrive. Actuellement, la mise à jour du nom de l’organisation ne le met pas à jour pour les clients configurés. <br/> MS Teams : le S switcher d’organisation dans Teams affiche le nom de l’organisation <br/>  |
-|Adresse, Ville, Département/région, Code postal  <br/>     | L’adresse entrée ici est ce que vous verrez sur votre facture, sous Vendu à : l’adresse Vendue à sur votre facture est identique à l’adresse de votre organisation sur votre page de profil (voir Comprendre votre facture pour [Microsoft 365](../../commerce/billing-and-payments/understand-your-invoice2.md)pour les entreprises).  <br/>        |
+|Adresse, Ville, Département/région, Code postal  <br/>     | L’adresse entrée ici est ce que vous verrez sur votre facture, sous Vendu à : l’adresse « Vendu à » de votre facture est identique à l’adresse de votre organisation sur votre page de profil (voir Comprendre votre facture pour [Microsoft 365](../../commerce/billing-and-payments/understand-your-invoice2.md)pour les entreprises).  <br/>        |
 |Pays ou région  <br/>    | Pays ou région dans lequel se trouve le siège social de votre entreprise. Le pays ou la région sélectionné détermine les services qui sont à votre disposition, les taxes et la devise de facturation applicables à votre pays ou région ainsi que l'emplacement du centre de données le plus proche (voir [À propos des restrictions de licence Microsoft Office](https://office.microsoft.com/redir/FX103037529).  <br/>REMARQUE : une fois sélectionné, le pays ou la région ne peut pas être modifié. Si vous tenez absolument à changer votre sélection, vous devez annuler votre abonnement et en souscrire un autre. Pour obtenir de l’aide sur ce processus, [contactez le support technique.](../contact-support-for-business-products.md)        |
 |Téléphone  <br/>     | Il s'agit du numéro de téléphone principal de votre société. Généralement, il s'agit du numéro de téléphone du siège social.  <br/>        |
 |Contact technique  <br/> |Il s’agit de l’adresse e-mail de la personne technique principale qui administre votre abonnement Microsoft 365. Il s’agit de la personne qui recevra des communications sur l’état du service Microsoft 365.  <br/> |

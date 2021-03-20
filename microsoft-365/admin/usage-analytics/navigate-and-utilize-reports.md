@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Découvrez comment afficher les rapports à l’aide d’onglets et de filtres de navigation.
-ms.openlocfilehash: aa7508b65d2a2b949c8e6737e92171ebb95812e1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: d3f080bdf2ec5544a0ef9d06139cad682962d57d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114272"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913909"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Explorer et utiliser les rapports d’analyse sur l’utilisation de Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -76,14 +76,14 @@ Pour découvrir comment personnaliser les rapports, voir Personnalisation des ra
 
 Pour plus d'informations, consultez la documentation d'aide de Power BI :
 
-- [Concepts de base de Power BI](https://docs.microsoft.com/power-bi/service-basic-concepts)
+- [Concepts de base de Power BI](/power-bi/service-basic-concepts)
 
     Découvrez le tableau de bord, les jeux de données, les rapports et d’autres concepts Power BI.
 
-- [Prise en main de Power BI](https://docs.microsoft.com/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
+- [Prise en main de Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 
     Découvrez les fonctionnalités de base de Power BI. Recherchez les liens disponibles sur l'utilisation de Power BI Desktop.
 
-- [Partager des tableaux de bord et des rapports](https://docs.microsoft.com/power-bi/service-share-dashboards)
+- [Partager des tableaux de bord et des rapports](/power-bi/service-share-dashboards)
 
     Découvrez comment partager des rapports avec vos collègues ou des personnes extérieures à votre organisation. Vous pouvez également partager le rapport ou une version filtrée du rapport.

@@ -26,12 +26,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Découvrez les différents types de groupes et leur utilisation avec les différentes fonctionnalités de collaboration de Microsoft 365.
-ms.openlocfilehash: d48f92380715153a28553f959f402faa7ae77f4c
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: bb5eca7ae7ad01488c13222984eee349e5554d26
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780228"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915733"
 ---
 # <a name="email-collaboration"></a>Collaborer par message électronique
 
@@ -69,12 +69,10 @@ Le tableau suivant vous donne un coup d’œil rapide sur les différents types 
   
 ## <a name="related-articles"></a>Articles connexes
 
-[Gérer des groupes de distribution](https://technet.microsoft.com/library/bb124513%28v=exchg.150%29.aspx)
+[Gérer des groupes de distribution](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
     
 [Utiliser les groupes Microsoft 365 au lieu des boîtes aux lettres de site](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b)
     
 [Créer des boîtes aux lettres partagées dans Microsoft 365](create-a-shared-mailbox.md)
     
-[Dossiers publics dans Microsoft 365 et Exchange Online](https://technet.microsoft.com/library/jj200758%28v=exchg.150%29.aspx)
-    
-
+[Dossiers publics dans Microsoft 365 et Exchange Online](/exchange/collaboration-exo/public-folders/public-folders)

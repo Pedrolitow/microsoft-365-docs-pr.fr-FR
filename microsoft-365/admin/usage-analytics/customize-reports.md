@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Apprenez à personnaliser les rapports dans le navigateur et Power BI Desktop.
-ms.openlocfilehash: 3c662dfa91939c68f0aa0a85c19a1fab003064bf
-ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
+ms.openlocfilehash: 18b4352d3aaa2fd16b74f78e1f80da3ee98367a6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50572649"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914005"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personnaliser les rapports dans l’analyse de l’utilisation de Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ L'exemple suivant montre comment créer un élément visuel pour assurer le suiv
     
 5. Sélectionnez la partie inférieure droite de cette visualisation et faites-la glisser pour la rendre plus grande.
 
-6. Dans la **zone Champs** à droite, développez **la** table Calendrier.
+6. Dans la **zone Champs** à droite, **développez** la table Calendrier.
 
 7. Faites glisser **MonthName** vers la zone Champs, juste en-dessous du titre **Axe** de la zone **Visualisations**.
  
@@ -122,7 +122,7 @@ Vous pouvez commencer par vous connecter directement aux API de rapports ODATA �
   
     ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
-3. Entrez vos informations d’identification d’administrateur Microsoft 365 (organisation ou établissement scolaire) pour vous authentifier à Microsoft 365 lorsque vous y être invité.
+3. Entrez vos informations d’identification d’administrateur Microsoft 365 (organisation ou école) pour vous authentifier à Microsoft 365 lorsque vous y être invité.
     
     Consultez la [FAQ](usage-analytics.md#faq) pour plus d’informations sur les personnes autorisées à accéder aux rapports d’application du modèle Adoption de Microsoft 365. 
     
@@ -136,7 +136,7 @@ Vous pouvez commencer par vous connecter directement aux API de rapports ODATA �
   
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>Utiliser le modèle d’analyse de l’utilisation de Microsoft 365
 
-Vous pouvez également utiliser le fichier de modèle Power BI qui correspond aux rapports d’analyse de l’utilisation de Microsoft 365 comme point de départ pour se connecter aux données. L'avantage du fichier pbit est qu'il contient une chaîne de connexion déjà établie. Vous pouvez également tirer parti de toutes les mesures personnalisées créées, en plus des données renvoyées par le schéma de base.
+Vous pouvez également utiliser le fichier de modèle Power BI qui correspond aux rapports d’analyse de l’utilisation de Microsoft 365 comme point de départ pour vous connecter aux données. L'avantage du fichier pbit est qu'il contient une chaîne de connexion déjà établie. Vous pouvez également tirer parti de toutes les mesures personnalisées créées, en plus des données renvoyées par le schéma de base.
   
 Vous pouvez télécharger le fichier de modèle Power BI à partir du [Centre de téléchargement Microsoft.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) Après avoir téléchargé le fichier de modèle Power BI, suivez les étapes suivantes pour commencer :
   
@@ -154,6 +154,4 @@ Vous pouvez télécharger le fichier de modèle Power BI à partir du [Centre de
     
     Le chargement des données peut prendre un certain temps. Au terme de celui-ci, vous pouvez enregistrer le fichier au format .pbix et continuer à personnaliser les rapports ou associer une source de données supplémentaire à ce rapport.
     
-4. Suivez la documentation [Prise en main de Power BI](https://go.microsoft.com/fwlink/?linkid=849802) pour créer des rapports, les publier sur le service Power BI et les partager au sein de votre organisation. Pour poursuivre la personnalisation et le partage, des licences Power BI supplémentaires peuvent être nécessaires. Voir les [Conseils relatifs aux licences](https://go.microsoft.com/fwlink/p/?linkid=849803) Power BI pour plus d'informations. 
-    
-
+4. Suivez la documentation [Prise en main de Power BI](/power-bi/fundamentals/desktop-getting-started) pour créer des rapports, les publier sur le service Power BI et les partager au sein de votre organisation. Pour poursuivre la personnalisation et le partage, des licences Power BI supplémentaires peuvent être nécessaires. Voir les [Conseils relatifs aux licences](https://go.microsoft.com/fwlink/p/?linkid=849803) Power BI pour plus d'informations. 

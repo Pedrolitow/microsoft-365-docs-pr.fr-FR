@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Découvrez comment vous pouvez avoir plusieurs adresses de messagerie, appelées alias de messagerie, associées à votre compte Microsoft 365 pour les entreprises. '
-ms.openlocfilehash: 3c97640f4bb16876ec028a1af2b361a21a0decab
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 590782f7b22b1d26abef83f884d45da567f0425c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126404"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915949"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Ajouter un autre alias de courrier pour un utilisateur
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
   
@@ -58,7 +58,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
   
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur > **gérer les alias de messagerie.** Vous ne verrez pas cette option si la personne n’a pas de licence qui lui est attribuée. 
     
@@ -72,7 +72,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
     > Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vous devez accéder à la console de gestion de GoDaddy ou du partenaire pour définir le nouvel alias comme alias principal. 
   
     > [!TIP]
-    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, voir [Ajouter un domaine à Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 
+    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, voir [Ajouter un domaine à Microsoft 365.](../setup/add-domain.md) 
   
      
 5. Lorsque vous avez terminé, sélectionnez **Enregistrer les modifications.**
@@ -88,7 +88,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
 
 ::: moniker range="o365-germany"
     
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>. 
     
     
 2. Dans la page **Utilisateurs actifs**, sélectionnez le nom de la personne à modifier.
@@ -104,7 +104,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
     > Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vous devez accéder à la console de gestion de GoDaddy ou du partenaire pour définir le nouvel alias comme alias principal. 
   
     > [!TIP]
-    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, voir [Ajouter un domaine à Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 
+    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, voir [Ajouter un domaine à Microsoft 365.](../setup/add-domain.md) 
 
 5. Lorsque vous avez terminé, sélectionnez **Enregistrer**.
 
@@ -113,13 +113,13 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
     L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et à son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
     
   
-7. **Lorsque l’utilisateur répond, l’adresse *De*  est son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au courrier, son adresse de courrier principale s'affiche en tant qu'expéditeur, au lieu de Sales@NodPublishers.com. 
+7. **Lorsque l’utilisateur répond, l’adresse *de*  provenance est son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au courrier, son adresse de courrier principale s'affiche en tant qu'expéditeur, au lieu de Sales@NodPublishers.com. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
     
 2. Dans la page **Utilisateurs actifs**, sélectionnez le nom de la personne à modifier.
@@ -135,7 +135,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
     > Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vous devez accéder à la console de gestion de GoDaddy ou du partenaire pour définir le nouvel alias comme alias principal. 
   
     > [!TIP]
-    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, voir [Ajouter un domaine à Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 
+    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, voir [Ajouter un domaine à Microsoft 365.](../setup/add-domain.md) 
 
 5. Lorsque vous avez terminé, sélectionnez **Enregistrer**.
 
@@ -144,7 +144,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
     L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et à son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
     
   
-7. **Lorsque l’utilisateur répond, l’adresse *De*  est son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au courrier, son adresse de courrier principale s'affiche en tant qu'expéditeur, au lieu de Sales@NodPublishers.com. 
+7. **Lorsque l’utilisateur répond, l’adresse *de*  provenance est son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au courrier, son adresse de courrier principale s'affiche en tant qu'expéditeur, au lieu de Sales@NodPublishers.com. 
 
 ::: moniker-end
 
@@ -164,5 +164,3 @@ Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vo
 [Envoyer des courriers à partir d'une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
 
 [Modifier un nom d'utilisateur et une adresse de courrier](../add-users/change-a-user-name-and-email-address.md)
-  
-

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Découvrez le Centre d’administration Microsoft 365.
-ms.openlocfilehash: da2b54e5f69fcc1209459b02220c0ead3f564067
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 4a477287f334e2d4a60d61418f746fa3fe2f4efa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233385"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914953"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
@@ -45,7 +45,7 @@ Le Centre d’administration Microsoft 365 est le point d’entrée commun pour 
 
 ::: moniker range="o365-worldwide"
 
-À mesure que de nouvelles fonctionnalités seront disponibles dans le Centre d’administration Microsoft 365, vous pourrez vous y rendre et partager vos commentaires avec Microsoft afin que nous continuions à améliorer l’expérience d’administration. Si vous optez pour cette option, vos utilisateurs n’auront aucun impact et vous pouvez revenir à l’ancien centre d’administration à tout moment.
+À mesure que de nouvelles fonctionnalités seront disponibles dans le Centre d’administration Microsoft 365, vous pourrez vous y rendre et partager vos commentaires avec Microsoft afin de continuer à améliorer l’expérience d’administration. Si vous optez pour cette option, vos utilisateurs n’auront aucun impact et vous pouvez revenir à l’ancien centre d’administration à tout moment.
 [Nouveautés du Centre d’administration Microsoft 365.](whats-new-in-preview.md)
   
 > [!NOTE]
@@ -57,7 +57,7 @@ Le Centre d’administration Microsoft 365 est le point d’entrée commun pour 
 
 2. Go to the **Release preferences** card, and then select **Edit**. 
     
-3. Sélectionnez **la version ciblée pour tout le** monde ou la version ciblée pour les **utilisateurs sélectionnés.** Si vous choisissez la version ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
+3. Sélectionnez **la version ciblée pour tout le** monde ou la version ciblée pour les **utilisateurs sélectionnés.** Si vous choisissez La version ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
     
 ### <a name="admin-center-feedback"></a>Commentaires du Centre d’administration
 
@@ -91,13 +91,13 @@ Oui. Le nouveau centre d’administration est entièrement fonctionnel et dispos
 
 Microsoft 365 est une solution complète et intelligente qui inclut Office 365, Windows 10 et Enterprise Mobility + Security qui permet à tout le monde d’être créatif et de collaborer en toute sécurité. Les abonnements Microsoft 365 suivants sont disponibles dans le Centre d’administration pour que vous essayiez ou achetez maintenant :
   
-- Qu’est-ce que Microsoft 365 Entreprises ?
+- Microsoft 365 Business
 - Microsoft 365 Entreprise E3
 - Microsoft 365 Entreprise E5
     
 Pour plus d’informations, [voir Essayer ou acheter un abonnement Microsoft 365.](../commerce/try-or-buy-microsoft-365.md)
 
-## <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>J’ai trouvé un bogue ou je souhaite demander une amélioration des fonctionnalités. Comment faire savoir à Microsoft ?
+## <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>J’ai trouvé un bogue ou je souhaite demander une amélioration des fonctionnalités. Comment puis-je le faire savoir à Microsoft ?
 
 Nous sommes très aimés de votre part ! Le signalement des bogues et les commentaires de partage nous aident à améliorer le Centre d’administration Microsoft 365. Pour nous faire  part de vos commentaires, sélectionnez le bouton Commentaires en bas de la page et utilisez le formulaire pour nous faire part de vos idées. Cochez la case et confirmez votre adresse de messagerie si vous souhaitez que quelqu’un de l’équipe du Centre d’administration Microsoft 365 suive vos commentaires. Nous ne pouvons pas nous engageons à suivre chaque commentaire, mais nous allons essayer ! 
   
@@ -109,11 +109,11 @@ Le Centre d’administration Microsoft 365 est le point d’entrée commun pour 
   
 La mise à jour de tous les centres d’administration pour une expérience cohérente prendra un certain temps, mais vous pouvez en savoir plus sur les centres d’administration que nous avons déjà commencé à faire :
   
-- [Mise en place du nouveau Centre d’administration SharePoint](https://go.microsoft.com/fwlink/?linkid=2024186)
+- [Mise en place du nouveau Centre d’administration SharePoint](/sharepoint/get-started-new-admin-center)
     
-- [Gérer Teams pendant la transition vers le nouveau Centre d’administration Skype Entreprise De Microsoft Teams &amp;](https://go.microsoft.com/fwlink/?linkid=2024308)
+- [Gérer Teams pendant la transition vers le nouveau Centre d’administration Skype Entreprise De Microsoft Teams &amp;](/microsoftteams/manage-teams-skypeforbusiness-admin-center)
     
-- [Vue d’ensemble de la gestion des appareils Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2006262)
+- [Vue d’ensemble de la gestion des appareils Microsoft 365](/mem/intune/fundamentals/what-is-device-management)
     
 - [Présentation du Centre de sécurité et conformité Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2025413)
 

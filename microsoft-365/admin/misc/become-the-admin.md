@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier la propriété de votre courrier électronique et de votre domaine pour prendre le contrôle d’un client non pris en charge dans Microsoft 365
-ms.openlocfilehash: 28359908576260218459d13b8c1c1b662b9a2c8f
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658062"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914845"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer une prise de contrôle d’administrateur interne
 
@@ -34,7 +34,7 @@ ms.locfileid: "49658062"
 Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’un client non pris en charge créé par une inscription d’utilisateur libre-service, vous pouvez le faire avec une prise de contrôle d’administrateur interne.
 
 > [!NOTE]
-> Une inscription en libre-service pour tout service cloud qui utilise Azure AD ajoute l’utilisateur à un répertoire Azure AD nonmanaté ou « shadow » et crée un client non pris en compte. Un client non gérant est un répertoire sans administrateur général. Pour déterminer si un client est géré ou non, voir [Déterminer le type de client.](https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type) 
+> Une inscription en libre-service pour tout service cloud qui utilise Azure AD ajoute l’utilisateur à un répertoire Azure AD nonmanaté ou « shadow » et crée un client non pris en compte. Un client non gérant est un répertoire sans administrateur général. Pour déterminer si un client est géré ou non, voir [Déterminer le type de client.](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type) 
   
 ## <a name="step-1-verify-your-email-address"></a>Étape 1 : Vérifier votre adresse de messagerie
 
@@ -45,11 +45,11 @@ Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’u
 
 2. Inscrivez-vous avec un compte d’utilisateur qui utilise le nom de domaine de votre organisation (comme `powerbiadmin@contoso.com` ). Si votre compte est déjà utilisé, connectez-vous à l’aide de votre mot de passe actuel.
 
-3. Recherchez le **code de vérification dans votre** courrier électronique et entrez le code pour valider votre adresse de messagerie.
+3. Recherchez le **code de vérification dans votre** courrier électronique et entrez-le pour valider votre adresse de messagerie.
     
 ## <a name="step-2-create-a-new-account"></a>Étape 2 : Créer un compte
 
-1. Lorsque vous entrez le code de vérification, vous êtes amené à une page dans laquelle vous pouvez créer un compte. 
+1. Lorsque vous entrez le code de vérification, vous êtes conduit à une page dans laquelle vous pouvez créer un compte. 
     
 2. Remplissez les champs nom d’utilisateur et mot de passe avec le compte que vous souhaitez utiliser, puis sélectionnez **Démarrer.** 
     
@@ -64,15 +64,14 @@ Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’u
 4. Une fois que vous avez ajouté l’enregistrement TXT à votre site de bureau d’enregistrement, revenir à l’Assistant et sélectionnez **Ok, j’ai ajouté l’enregistrement**.
     
 > [!NOTE]
-> Le fait de prendre le contrôle du client de secours n’aura aucun impact sur les informations ou les services existants. Toutefois, si des utilisateurs du domaine se sont inscrits aux services qui nécessitent une licence, vous serez invité à acheter des licences pour eux dans le cadre de la prise en compte du rôle d’administrateur. Vous pouvez acheter ou supprimer des licences une fois le processus de configuration de l’administrateur terminé.
+> Le fait de prendre le contrôle du client de secours n’aura aucun impact sur les informations ou les services existants. Toutefois, si des utilisateurs du domaine se sont inscrits aux services qui nécessitent une licence, vous serez invité à acheter des licences pour eux dans le cadre de la prise de contrôle du rôle d’administrateur. Vous pouvez acheter ou supprimer des licences une fois le processus de configuration de l’administrateur terminé.
   
 ## <a name="related-articles"></a>Articles connexes
 
 YouTube : 3 étapes pour une prise de contrôle d’administrateur informatique [pour Power BI et Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
-[Prise de contrôle par l’administrateur dans Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Prise de contrôle par l’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
 [Utilisation de l’inscription en libre-service au sein de votre organisation](self-service-sign-up.md)
   
-[Présentation du rôle d’administrateur de service Power BI](https://docs.microsoft.com/power-bi/service-admin-role)
-
+[Présentation du rôle d’administrateur de service Power BI](/power-bi/service-admin-role)

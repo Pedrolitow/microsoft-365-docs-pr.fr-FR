@@ -16,18 +16,17 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Une fois que vous avez créé une boîte aux lettres partagée, vous pouvez configurer certains paramètres pour ses utilisateurs, tels que le forwarding des messages électroniques et les réponses automatiques. Par la suite, vous voudrez peut-être modifier d’autres paramètres, tels que le nom ou les membres de la boîte aux lettres.
-ms.openlocfilehash: fe5d35be556b8edf5456bc2c0b820dc0ce77e323
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Une fois que vous avez créé une boîte aux lettres partagée, vous pouvez configurer certains paramètres pour ses utilisateurs, tels que le forwarding des messages électroniques et les réponses automatiques. Par la suite, vous pouvez modifier d’autres paramètres, tels que le nom ou les membres de la boîte aux lettres.
+ms.openlocfilehash: 2d0998ba2bdc95a9f78f59527bd9bd6fa98b4c45
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926605"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915913"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Configurer les paramètres de boîte aux lettres partagée
 
@@ -81,9 +80,9 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 ::: moniker-end
 
-2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez **Modifier le courrier** \> **électronique.**
+2. Sélectionnez la boîte aux lettres partagée à modifier, puis sélectionnez **Modifier le courrier** \> **électronique.**
     
-3. Définissez le basculement sur **Sur,** puis entrez une adresse de messagerie à qui les messages sont transmis. Il peut s’y trouver n’importe quelle adresse de messagerie valide. Pour le faire, vous devez créer un groupe de [distribution](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) pour les adresses, puis entrer le nom du groupe dans cette zone.
+3. Définissez le basculement sur **Sur,** puis entrez une adresse de messagerie à qui les messages sont transmis. Il peut s’y trouver n’importe quelle adresse de messagerie valide. Pour le faire, vous devez créer un groupe de [distribution](/office365/admin/setup/create-distribution-lists) pour les adresses, puis entrer le nom du groupe dans cette zone.
     
 4. Sélectionnez **Enregistrer**.
 
@@ -153,7 +152,7 @@ Si vous souhaitez autoriser tout le monde à voir le courrier envoyé, dans le c
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>Placer une boîte aux lettres partagée en attente pour litige
 
-Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour litige.](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
+Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour litige.](../../compliance/create-a-litigation-hold.md)
 
 ::: moniker range="o365-worldwide"
 
@@ -177,7 +176,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 3. Définissez le basculement sur **Sur**. 
 
-4. Éventuellement, entrez une durée, une note sur la attente et une URL avec plus d’informations.  
+4. Vous pourz éventuellement entrer une durée, une note sur la attente et une URL avec plus d’informations.  
 
 5. Sélectionnez **Enregistrer**.
 
@@ -204,8 +203,8 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 2. Sélectionnez la boîte aux lettres  partagée que vous souhaitez modifier, puis sélectionnez \> **Modifier les membres.**
 
-3. Effectuez l’une des opérations suivantes :
-   - Pour ajouter des membres, **sélectionnez Ajouter des membres,** recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
+3. Effectuez l'une des opérations suivantes :
+   - Pour ajouter des membres, **sélectionnez Ajouter des** membres, recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
    - Pour supprimer des membres, utilisez la zone de recherche pour rechercher le membre si nécessaire, sélectionnez **le X** en côté du nom du membre, puis sélectionnez **Enregistrer**. 
 
 4. Sélectionnez **Enregistrer à** nouveau.
@@ -234,7 +233,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 3. Sélectionnez **Modifier** en plus de l’autorisation que vous souhaitez modifier pour un membre. 
 
-4. Effectuez l’une des opérations suivantes :
+4. Effectuez l'une des opérations suivantes :
    - Pour accorder cette autorisation à un membre supplémentaire, sélectionnez Ajouter des **autorisations,** recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
    - Pour supprimer l’autorisation d’un membre, utilisez la zone De recherche pour rechercher le membre si nécessaire, sélectionnez **le X** en de côté du nom du membre, puis sélectionnez **Enregistrer**. 
 
@@ -269,7 +268,7 @@ Si vous choisissez de ne pas afficher la boîte aux lettres partagée dans la li
 4. Sélectionnez **Enregistrer**.
 
 > [!NOTE]
-> Le fait de masquer une boîte aux lettres partagée dans la liste d’adresses empêche les nouveaux membres de la boîte aux lettres partagée d’ajouter la boîte aux lettres masquée à leur profil Outlook tant que la boîte aux lettres partagée n’est pas de nouveau affichée dans la liste d’adresses. 
+> Masquer une boîte aux lettres partagée dans la liste d’adresses empêche les nouveaux membres de la boîte aux lettres partagée d’ajouter la boîte aux lettres masquée à leur profil Outlook tant que la boîte aux lettres partagée n’est pas de nouveau affichée dans la liste d’adresses. 
 
 ## <a name="related-articles"></a>Articles connexes
 

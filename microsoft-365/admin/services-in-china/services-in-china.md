@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: En savoir plus sur Office 365 géré par 21Vianet conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 5906bf961e246f1d707b030ffb4c788da353200c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 92b69cc77f5c48af63651f2fd37761981ca45ad5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644650"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914341"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 géré par 21Vianet
 
@@ -46,7 +46,7 @@ Scannez ce QR code pour suivre les discussions sur WeChat et obtenir les derniè
   
  **À propos des services dans Office 365 géré par 21Vianet**
   
-Les sections ci-dessous mettent en évidence les différences pour chaque service. En fin de compte, notre objectif est d’atteindre la parité avec les services globaux. Toutefois, en raison de la nature unique des services en Chine (gérés par un partenaire de centres de données en Chine), certaines fonctionnalités n’ont pas encore été activées. Au fil du temps, les clients bénéficieront des fonctionnalités complètes. Pour obtenir une analyse plus détaillée des services disponibles pour chaque plan Office 365 géré par 21Vianet, consultez la description du [service Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+Les sections ci-dessous mettent en évidence les différences pour chaque service. En fin de compte, notre objectif est d’atteindre la parité avec les services globaux. Toutefois, en raison de la nature unique des services en Chine , gérés par un partenaire de centres de données en Chine, certaines fonctionnalités n’ont pas encore été activées. Au fil du temps, les clients bénéficieront des fonctionnalités complètes. Pour obtenir une analyse plus détaillée des services disponibles pour chaque plan Office 365 géré par 21Vianet, consultez la description du [service Office 365.](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
   
     
 Si vous souhaitez découvrir comment commencer avec les services Office 365 généraux, consultez [La mise en place.](../admin-overview/get-started-with-office-365.md)
@@ -55,15 +55,15 @@ Si vous souhaitez découvrir comment commencer avec les services Office 365 gén
 
 |||
 |:-----|:-----|
-|Domaines personnalisés  <br/> |Les administrateurs peuvent créer et/ou utiliser des domaines personnalisés enregistrés par le biais de fournisseurs de domaines spécifiques au chinois. Si vous n’avez pas de [](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) domaine personnalisé, vous pouvez acheter un nom de domaine auprès d’un bureau d’enregistrement de noms de domaine. Si vous en avez déjà un, [recherchez votre bureau d’enregistrement de domaines ou votre fournisseur d’hébergement DNS.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)  <br/> En outre, si vous créez un site web public à l’aide du service SharePoint Online Office 365, la stratégie de conformité Internet en Chine exige que vous receviez un numéro de fournisseur de contenu Internet (ICP).  **Remarque :** La validation automatique des mots non valides dans les noms de domaine personnalisés n’est pas disponible.           |
+|Domaines personnalisés  <br/> |Les administrateurs peuvent créer et/ou utiliser des domaines personnalisés enregistrés par le biais de fournisseurs de domaines spécifiques au chinois. Si vous n’avez pas de [](../get-help-with-domains/buy-a-domain-name.md) domaine personnalisé, vous pouvez acheter un nom de domaine auprès d’un bureau d’enregistrement de noms de domaine. Si vous en avez déjà un, [recherchez votre bureau d’enregistrement de domaines ou votre fournisseur d’hébergement DNS.](../get-help-with-domains/find-your-domain-registrar.md)  <br/> En outre, si vous créez un site web public à l’aide du service SharePoint Online Office 365, la stratégie de conformité Internet en Chine exige que vous receviez un numéro de fournisseur de contenu Internet (ICP).  **Remarque :** La validation automatique des mots non valides dans les noms de domaine personnalisés n’est pas disponible.           |
 |Support technique, sur les abonnements et la facturation  <br/> |Fourni par 21Vianet. Pour plus d’informations sur la façon de contacter le support technique, voir Contacter le support [Office 365 pour les entreprises.](../contact-support-for-business-products.md)  <br/> |
-|Réinitialisation du mot de passe en libre-service  <br/> |Disponible uniquement pour les administrateurs. Pour plus d’informations, voir Modifier ou réinitialiser votre mot de [passe dans Office 365 géré par 21Vianet.](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)  <br/> |
+|Réinitialisation du mot de passe en libre-service  <br/> |Disponible uniquement pour les administrateurs. Pour plus d’informations, voir Modifier ou réinitialiser votre mot de passe [dans Office 365 géré par 21Vianet.](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)  <br/> |
 |Sécurité, confidentialité, conformité et détails sur les niveaux de support  <br/> |Fourni par 21Vianet.  <br/> |
 |Configuration du bureau Office  <br/> |La configuration du bureau Office n’est pas disponible pour Office 2010 et Office 2007. Toutefois, les administrateurs peuvent configurer les applications de bureau Office actuelles [pour qu’elles fonctionnent avec Office 365.](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)  <br/> |
 |Prise en charge des appareils et des appareils mobiles\*  <br/> | Les fonctionnalités mobiles suivantes seront bientôt disponible :  <br/>  Gestion des périphériques mobiles (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) n’est pas disponible, mais vous pouvez utiliser des appareils Exchange ActiveSync ou une offre de Research in Motion (RIM, la solution de messagerie sans fil BlackBerry) pour exécuter Blackberry Enterprise Server (BES).  <br/>  Pour plus d’informations sur la prise en charge mobile, voir [Configurer et gérer l’accès mobile pour vos utilisateurs.](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)  <br/> |
 |Office Lens  <br/> |Non disponible.  <br/> |
 |Microsoft Planner  <br/> |À venir.  <br/> |
-|Microsoft Teams  <br/> |Non disponible.  <br/> |
+|Microsoft Teams  <br/> |Non disponible.  <br/> |
 |Sway  <br/> |À venir.  <br/> |
 |Aide dans plusieurs langues  <br/> |L’aide est disponible en chinois simplifié et en anglais uniquement.  <br/> |
 |Aide fournie par la communauté  <br/> |L’aide fournie par la communauté n’est pas encore disponible, mais vous pouvez sélectionner le bouton Aide ( **?** ) dans le coin supérieur droit de votre portail pour consulter les articles d’aide.  <br/> |
@@ -75,17 +75,17 @@ Si vous souhaitez découvrir comment commencer avec les services Office 365 gén
 |||
 |:-----|:-----|
 |Partage d’un document, d’une bibliothèque ou d’un site par courrier électronique avec une personne extérieure à votre organisation  <br/> |Cette fonctionnalité est disponible, mais par défaut, son utilisation pourrait rendre les fichiers partagés accessibles à l’extérieur de votre pays. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. Les utilisateurs qui tentent de partager avec une personne extérieure à l’organisation recevront également un avertissement. Pour plus d’informations, [voir les fichiers ou dossiers SharePoint dans Office 365.](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)  <br/> |
-|Access Services  <br/> |Access 2013 est pris en charge, mais l’ajout de nouvelles applications Access risque de ne pas être disponible, car cette fonctionnalité sera retirée d’Office 365 et de SharePoint Online. La création d’applications web access et de bases de données web Access dans Office 365 et SharePoint Online cesse de commencer en juin 2017 et les autres applications web et bases de données web restantes d’avril 2018. En outre, la fonctionnalité Access 2010 n’est pas prise en charge et toute tentative d’utilisation d’une base de données Access 2010 entraîne des erreurs et peut entraîner une perte de données.  <br/> |
+|Access Services  <br/> |Access 2013 est pris en charge, mais l’ajout de nouvelles applications Access risque de ne pas être disponible, car cette fonctionnalité sera retirée d’Office 365 et de SharePoint Online. La création d’applications web Access et de bases de données web Access dans Office 365 et SharePoint Online cesse de commencer en juin 2017 et les autres applications web et bases de données web restantes d’avril 2018. En outre, la fonctionnalité Access 2010 n’est pas prise en charge et toute tentative d’utilisation d’une base de données Access 2010 entraîne des erreurs et peut entraîner une perte de données.  <br/> |
 |Microsoft PowerApps  <br/> |À venir.  <br/> |
 |Gestion des droits relatifs à l'information (IRM)  <br/> |La possibilité de définir des fonctionnalités IRM sur SharePoint pour votre organisation sera bientôt disponible.  <br/> |
 |Possibilité de traduire du texte ou des pages  <br/> |Disponible, mais éteint par défaut. Les administrateurs clients peuvent activer cette possibilité, mais le service cloud de traduction peut se trouver à l’extérieur de votre pays. Si vous ne souhaitez pas que les utilisateurs envoient du contenu à un service cloud de traduction, vous pouvez désactiver ces fonctionnalités.  <br/> |
 |Inscription ICP du site web public  <br/> |La stratégie de conformité Internet en Chine exige que vous receviez un numéro de fournisseur de contenu Internet (ICP) pour votre site web public.  |
 |Fonctionnalités de site web public  <br/> |Les sites web publics sont disponibles uniquement si vous avez acheté Office 365 avant le 9 mars 2015. Toutefois, les cartes Bing, le partage externe et les commentaires ne sont pas disponibles dans un site web public, car ces fonctionnalités peuvent envoyer des données à l’extérieur de votre pays.  <br/> |
 |Newsfeed et Yammer (réseaux sociaux d’entreprise)  <br/> |Le newsfeed (le hub social où vous verrez les mises à jour des personnes, documents, sites et balises que vous êtes en train de suivre) est disponible. Yammer n’est pas disponible.  <br/> |
-|Applications auto-hosted  <br/> |Vous pouvez déployer une application hébergée par un fournisseur qui utilise SharePoint et SQL Azure. Pour plus d’informations, voir Créer une application hébergée par un fournisseur [de base pour SharePoint.](https://msdn.microsoft.com/library/office/apps/fp142381.aspx) La possibilité pour les développeurs de déployer une application qui utilise un site web auto-happé sera bientôt disponible.  <br/> |
+|Applications auto-hosted  <br/> |Vous pouvez déployer une application hébergée par un fournisseur qui utilise SharePoint et SQL Azure. Pour plus d’informations, voir Créer une application hébergée par un fournisseur [de base pour SharePoint.](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins) La possibilité pour les développeurs de déployer une application qui utilise un site web auto-happé sera bientôt disponible.  <br/> |
 |InfoPath  <br/> |Non disponible.  <br/> |
 |SharePoint Store  <br/> |Les magasins d’applications Office et SharePoint sont des services facultatifs gérés par Microsoft Corporation ou ses affiliés à partir de l’une des installations mondiales de Microsoft. Les applications disponibles dans le Windows Store sont fournies par différents éditeurs d’applications et sont soumises aux conditions générales et à la déclaration de confidentialité de l’éditeur de l’application. Votre utilisation de l’une de ces applications peut entraîner le transfert, le stockage ou le traitement de vos données dans n’importe quel pays où l’éditeur d’application, ses affiliés ou ses fournisseurs de services conservent des installations. Veuillez lire attentivement les conditions d'utilisation et les déclarations de confidentialité fournies par l'éditeur des applications avant de télécharger et d'utiliser ces dernières.  <br/> |
-|Site du développeur Office 365 : publier sur SharePoint Store à l’aide du service Mon tableau de bord vendeur\*  <br/> |Découvrez les conditions [requises pour](https://go.microsoft.com/fwlink/?LinkId=518102) la soumission d’applications pour SharePoint à distribuer aux utilisateurs d’Office 365 géré par 21Vianet.  <br/> |
+|Site du développeur Office 365 : publier sur SharePoint Store à l’aide du service Mon tableau de bord vendeur\*  <br/> |Découvrez les conditions [requises pour](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china) la soumission d’applications pour SharePoint à distribuer aux utilisateurs d’Office 365 géré par 21Vianet.  <br/> |
    
 \*Services facultatifs fournis directement par Microsoft et soumis aux conditions d’utilisation et déclarations de confidentialité de Microsoft.
   
@@ -100,7 +100,7 @@ Si vous souhaitez découvrir comment commencer avec les services Office 365 gén
 |Partage de contacts  <br/> |À venir.  <br/> |
 |Suivi des messages  <br/> |À venir.  <br/> |
 |Applications  <br/> |À venir.  <br/> |
-|Fonctionnalité Places  <br/> |Cette fonctionnalité affiche des cartes d’adresses dans le courrier électronique . étant donné qu’elle peut autoriser des données en dehors de votre pays, elle n’est pas disponible.  <br/> |
+|Fonctionnalité Places  <br/> |Cette fonctionnalité affiche des cartes d’adresses dans le courrier électronique . étant donné qu’il peut autoriser des données en dehors de votre pays, il n’est pas disponible.  <br/> |
 |Comptes connectés  <br/> |La connexion à d’autres comptes tels que Hotmail (Outlook.com) sera bientôt disponible.  <br/> |
    
 ## <a name="exchange"></a>Exchange
@@ -129,11 +129,11 @@ Pour les organisations exécutant des versions antérieures ou mixtes de Exchang
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Oui  <br/> | Tous  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | CU5 2013  <br/> | Oui  <br/> | Tous, à l’exception de la découverte électronique/archivage sur place, OWA’accès (voir le tableau ci-dessous)  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Oui  <br/> | Uniquement configuré manuellement la libre/occupé(s)  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucune  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
 | 2007  <br/> | CU5 2013  <br/> | Oui  <br/> | Libre/occupé uniquement  <br/> |
 | 2007  <br/> | 2013 SP1 ou 2010 SP3No  <br/> | N/A  <br/> | Non prise en charge  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | N/A  <br/> | Non prise en charge  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucune  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
 
    
 > [!IMPORTANT]
@@ -141,12 +141,12 @@ Pour les organisations exécutant des versions antérieures ou mixtes de Exchang
   
  En outre, certaines fonctionnalités de stratégie et de conformité de messagerie Exchange ne sont pas entièrement pris en charge dans les déploiements hybrides avec des locataires Office 365 hébergés par 21Vianet. Ces fonctionnalités incluent notamment :
 
-- [Gestion des enregistrements de messagerie (MRM)](https://go.microsoft.com/fwlink/?LinkId=506754) 
-- [Découverte électronique locale](https://go.microsoft.com/fwlink/?LinkID=506755) 
-- [In-Place Hold](https://go.microsoft.com/fwlink/?LinkId=506758) 
-- [Archivage local](https://go.microsoft.com/fwlink/?LinkId=506759)
-- [Audit de boîte aux lettres](https://go.microsoft.com/fwlink/?LinkId=506760)
-- Accès aux archives en ligne [avec Outlook Web App (OWA)](https://go.microsoft.com/fwlink/?LinkId=506762) 
+- [Gestion des enregistrements de messagerie (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) 
+- [Découverte électronique locale](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 
+- [In-Place Hold](/exchange/security-and-compliance/in-place-and-litigation-holds) 
+- [Archivage local](/exchange/in-place-archiving-in-exchange-2013-exchange-2013-help)
+- [Audit de boîte aux lettres](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)
+- Accès aux archives en ligne [avec Outlook Web App (OWA)](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-on-the-web) 
 
 Utilisez le tableau suivant pour en savoir plus sur la prise en charge des fonctionnalités dans différents scénarios de déploiement Exchange : 
 
@@ -160,9 +160,9 @@ Utilisez le tableau suivant pour en savoir plus sur la prise en charge des fonct
 <sup>1 Des</sup> recherches distinctes sont requises pour les boîtes aux lettres sur site et Exchange Online.  <br/> <sup>2 stratégies</sup> de déplacement vers l’archive MRM peuvent être utilisées pour les boîtes aux lettres situées sur un serveur Exchange 2013 CU5 ou supérieur. 
 
 Pour en savoir plus sur la configuration d’un déploiement hybride avec des locataires Office 365 hébergés par 21Vianet, consultez les rubriques suivantes : 
-- [Conditions préalables au déploiement hybride](https://go.microsoft.com/fwlink/?LinkId=506764)
-- [Conditions requises pour les certificats pour les déploiements hybrides](https://go.microsoft.com/fwlink/?LinkId=506766) 
-- [Créer un déploiement hybride avec l’Assistant Configuration hybride](https://go.microsoft.com/fwlink/?LinkId=506767)
+- [Conditions préalables au déploiement hybride](/exchange/hybrid-deployment-prerequisites)
+- [Conditions requises pour les certificats pour les déploiements hybrides](/exchange/certificate-requirements) 
+- [Créer un déploiement hybride avec l’Assistant Configuration hybride](/exchange/hybrid-deployment/deploy-hybrid)
 
 > [!IMPORTANT]
 >  [L’Assistant](https://go.microsoft.com/fwlink/?LinkId=506768) déploiement Exchange Server est un outil web gratuit qui vous permet de configurer un déploiement hybride entre votre organisation sur site et Office 365, ou de migrer complètement vers Office 365. L'outil vous pose une petite série de questions simples, puis, en fonction de vos réponses, crée une liste de contrôle personnalisée avec des instructions pour configurer votre déploiement hybride. Nous vous recommandons vivement d’utiliser l’Assistant Déploiement pour configurer un déploiement hybride. > Pour les organisations qui ne souhaitent pas mettre à niveau vers ou ajouter des serveurs Exchange 2013 CU5, les organisations Exchange 2013 SP1 peuvent configurer le partage de libre/occupé de calendrier partagé entre leur organisation locale et l’organisation Exchange Online. Pour configurer cette fonctionnalité de déploiement hybride, voir Configuration des fonctionnalités de déploiement hybride Exchange avec [Office 365 géré par 21Vianet.](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d) 
@@ -170,7 +170,7 @@ Pour en savoir plus sur la configuration d’un déploiement hybride avec des lo
 |||  
 |---|---|
 |Coexistence et partage de la libre/occupé|Le partage des informations de libre/occupé du calendrier entre deux ou plusieurs organisations Exchange locales ou le partage entre deux locataires Office 365 21Vianet n’est pas pris en charge. Cette fonctionnalité sera bientôt disponible ! | 
-|Partage de calendrier|Exchange 2013 SP1 et version supérieure prend en charge la configuration manuelle du partage de calendrier Internet avec d’autres organisations Exchange ou Exchange Online locales. Pour plus d’informations sur la configuration manuelle de cette fonctionnalité, voir [Activer la publication de calendriers Internet.](https://go.microsoft.com/fwlink/?LinkId=506769) | 
+|Partage de calendrier|Exchange 2013 SP1 et version supérieure prend en charge la configuration manuelle du partage de calendrier Internet avec d’autres organisations Exchange ou Exchange Online locales. Pour plus d’informations sur la configuration manuelle de cette fonctionnalité, voir [Activer la publication de calendriers Internet.](/exchange/enable-internet-calendar-publishing-exchange-2013-help) | 
 Partage de données de contact Exchange sur des appareils mobiles Apple sur Apple iCloud. |Ce paramètre/fonctionnalité est activé par défaut. Les administrateurs doivent désactiver cette fonctionnalité pour empêcher les utilisateurs de partager des données Exchange en dehors de votre organisation. |
 |Exchange Hosted Email Encryption  |Non disponible.  |
 |Chiffrement de messages Office 365  |À venir.  |
@@ -181,13 +181,13 @@ Partage de données de contact Exchange sur des appareils mobiles Apple sur Appl
 |:-----|:-----|
 |Ouvrez une application Office à partir du **fichier** \> **ouvert dans**... Bouton  <br/> |Disponible. La possibilité de le faire lors de l’itinérance sera bientôt disponible.  <br/> |
 |Enregistrer dans OneDrive Entreprise lors de la signature avec un compte Microsoft  <br/> |Pour conserver vos données dans votre pays, vous ne pouvez pas enregistrer un document sur le site de votre organisation (OneDrive Entreprise) lorsque vous êtes inscrit à Office avec un compte Microsoft.  <br/> |
-|Possibilité de traduire du texte ou des pages  <br/> |Cette fonctionnalité est disponible, mais est éteinte par défaut. Les administrateurs ont la possibilité de l’activer, mais obtiennent un message d’avertissement indiquant qu’il peut rendre les données accessibles à l’extérieur de votre pays.  <br/> |
+|Possibilité de traduire du texte ou des pages  <br/> |Cette fonctionnalité est disponible, mais est éteinte par défaut. Les administrateurs ont la possibilité de l’activer, mais obtiennent un message d’avertissement indiquant qu’il pourrait rendre les données accessibles à l’extérieur de votre pays.  <br/> |
    
 ## <a name="office-client"></a>Client Office
 
 |||
 |:-----|:-----|
-|Gérer le compte (à partir du client Office)  <br/> |Cette fonctionnalité, ainsi que d’autres fonctionnalités telles que celle qui sont destinées à être disponibles sur votre portail Office 365, pointe actuellement vers le portail Office 365 dans le monde entier et vous ne pouvez pas vous connectez avec votre compte Office 365 géré par 21Vianet. Il s’agit d’un problème connu en cours de correction. En attendant, vous pouvez utiliser l’URL pour vous inscrire à votre compte et gérer https://portal.partner.microsoftonline.cn/ les paramètres à partir de là. Pour plus d’informations, voir Gérer votre compte [Microsoft 365 Apps pour entreprise pour Office 365 géré par 21Vianet.](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)  <br/> |
+|Gérer le compte (à partir du client Office)  <br/> |Cette fonctionnalité, ainsi que d’autres fonctionnalités telles que celle qui sont destinées à être dirigés vers votre portail Office 365, pointe actuellement vers le portail Office 365 dans le monde entier et vous ne pouvez pas vous connectez avec votre compte Office 365 géré par 21Vianet. Il s’agit d’un problème connu en cours de correction. En attendant, vous pouvez utiliser l’URL pour vous inscrire à votre compte et gérer https://portal.partner.microsoftonline.cn/ les paramètres à partir de là. Pour plus d’informations, voir Gérer votre compte [Microsoft 365 Apps pour entreprise pour Office 365 géré par 21Vianet.](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
@@ -211,14 +211,14 @@ Partage de données de contact Exchange sur des appareils mobiles Apple sur Appl
 
 |||
 |:-----|:-----|
-|Fournisseurs de domaines pour prendre en charge Skype Entreprise  <br/> |Vous devez inscrire votre domaine auprès d’un fournisseur de domaine chinois qui prend en charge les enregistrements SRV. Pour plus d’informations sur l’enregistrement des domaines, voir Rechercher votre bureau d’enregistrement de domaines ou votre fournisseur [d’hébergement DNS.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)  <br/> |
+|Fournisseurs de domaines pour prendre en charge Skype Entreprise  <br/> |Vous devez inscrire votre domaine auprès d’un fournisseur de domaine chinois qui prend en charge les enregistrements SRV. Pour plus d’informations sur l’enregistrement des domaines, voir Rechercher votre bureau d’enregistrement de domaines ou votre fournisseur [d’hébergement DNS.](../get-help-with-domains/find-your-domain-registrar.md)  <br/> |
 |Conférence rendez-vous (possibilité d’ajouter un accès téléphonique aux réunions pour les utilisateurs qui ne peuvent pas accéder à un ordinateur)  <br/> |Vous pouvez voir des options dans Skype Entreprise et dans le Centre d’administration Skype Entreprise pour les conférences rendez-vous et les fournisseurs, mais ces fonctionnalités ne sont pas encore disponibles. Ils seront bientôt disponible.  <br/> |
 |Aide de bureau Skype Entreprise  <br/> |Vous trouverez de l’aide pour le Bureau Skype [Entreprise ici.](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad) Toutefois, l’aide du bureau n’est pas disponible à partir du produit, sauf si vous utilisez Office « Exécuter en un clic ».  <br/> |
 |Lync 2010  <br/> |Non disponible.  <br/> |
 |Possibilité de participer à une réunion à partir de votre calendrier lorsque vous utilisez un appareil basé sur Samsung avec Google Chrome  <br/> |À venir. En attendant, vous pouvez ouvrir Skype Entreprise, passer à l’affichage Réunions et participer à la réunion à partir de là.  <br/> |
 |Appareils de téléphone de bureau tels que Polycom, Ares et Tanjay  <br/> |Non disponible.  <br/> |
 |Partenaires de syndication  <br/> |Non disponible.  <br/> |
-|Fonctionnalités vocales, telles que la messagerie vocale, la capacité à effectuer et recevoir des appels à partir de numéros PSTN, le transfert d’appels, le transfert d’appel  <br/> |Non disponible. Ces fonctionnalités nécessitent des partenaires de syndication.  <br/> |
+|Fonctionnalités vocales, telles que la messagerie vocale, la capacité à effectuer et à recevoir des appels à partir de numéros PSTN, le transfert d’appels, le transfert d’appel  <br/> |Non disponible. Ces fonctionnalités nécessitent des partenaires de syndication.  <br/> |
 |Archivage ou possibilité de baliser un utilisateur et d’archiver ses e-mails et messages électroniques dans Exchange  <br/> |Non disponible.  <br/> |
 |Prise en charge du navigateur client Web Skype Entreprise (LWA) pour Firefox 29  <br/> |Non disponible, mais vous pouvez utiliser une version antérieure de Firefox.  <br/> |
 |Magasin de contacts unifié (UCS)  <br/> |La possibilité pour les utilisateurs de conserver toutes leurs informations de contact Skype Entreprise Microsoft Exchange Server 2013 est désactivée.  <br/> |
@@ -233,5 +233,3 @@ Le R GDPR accorde à des personnes (ou à des personnes ayant des données) cert
 - Les journaux générés par le système pour les services Microsoft gérés par 21Vianet peuvent être exportés par les administrateurs clients à l’aide de l’exportation des journaux de données.
     
 Pour plus d’informations et d’instructions, voir Demandes des personnes qui ont des données [(DSR) concernant le R GDPR.](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)
-  
-

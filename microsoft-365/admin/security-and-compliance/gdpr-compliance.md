@@ -1,5 +1,5 @@
 ---
-title: Le R GDPR a simplifié un guide pour votre petite entreprise
+title: Guide simplifié du R GDPR pour votre petite entreprise
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Découvrez comment Microsoft 365 pour les entreprises peut vous aider avec le processus du Règlement général sur la protection des données (R GDPR).
-ms.openlocfilehash: 066803e15fe107c8a20b61d9871b6807629f2a9f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c00dec46e47bde8afef8ffb2cd67dfc00ea98950
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399157"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914497"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>R GDPR simplifié : guide pour votre petite entreprise
 
@@ -44,7 +44,7 @@ Le R GDPR concerne les types de données suivants :
   
 - **Données personnelles :** Si vous pouvez lier des données à un individu et les identifier, ces données sont considérées comme personnelles par rapport au R GDPR. Le nom, l’adresse, la date de naissance et l’adresse IP sont des exemples de données personnelles. Le R GDPR considère même les informations codées (également appelées informations « pseudonymes » ) comme des données personnelles, quelle que soit la façon dont les données sont obscurcies ou techniques, si elles peuvent être liées à un individu.
     
-- **Données personnelles sensibles** Il s’agit de données qui ajoutent plus de détails aux données personnelles. Il peut s’agir, par exemple, de l’appartenance à un syndicat, de l’origine ethnique, etc. Les données personnelles sensibles comprennent également les données biométriques et la technologie DNS. En vertu du R GDPR, les données sensibles ont des règles de protection plus strictes que les données personnelles. 
+- **Données personnelles sensibles** Il s’agit de données qui ajoutent plus de détails aux données personnelles. Il peut s’agir, par exemple, de l’appartenance à un syndicat, de l’origine ethnique, etc. Les données personnelles sensibles comprennent également les données biométriques et la technologie d’accès en cas d’analyse vocale. En vertu du R GDPR, les données sensibles ont des règles de protection plus strictes que les données personnelles. 
     
 ## <a name="gdpr-terms"></a>Conditions du R GDPR
 
@@ -52,7 +52,7 @@ Certains termes sont fréquemment référents dans le R GDPR. Il est important d
   
  **Consentement**
   
-Le R GDPR indique : « Le traitement des données personnelles doit être conçu pour servir des données non traitées. » Le R GDPR vise à atteindre cet objectif en utilisant le consentement lors du traitement des données personnelles. Il peut s’agir du simple fait de demander à vos clients s’ils souhaitent recevoir des messages électroniques de votre entreprise. Cela signifie également qu’il n’est plus question de dés cases à cocher sur votre site web lorsque vous souhaitez utiliser des données à des fins marketing. Vous devez prendre un consentement explicite à l’aide d’un « acte affirmative clair ». De plus, vous devez également conserver des enregistrements de la prise ou de la révocation d’un consentement.
+Le R GDPR indique : « Le traitement des données personnelles doit être conçu pour servir des données non traitées. » Le R GDPR vise à atteindre cet objectif en utilisant le consentement lors du traitement des données personnelles. Il peut s’agir de la simple action de demander à vos clients s’ils souhaitent recevoir des messages électroniques de votre entreprise. Cela signifie également qu’il n’est plus question de dés cases à cocher sur votre site web lorsque vous souhaitez utiliser des données à des fins marketing. Vous devez donner votre consentement explicite à l’aide d’un « acte affirmative clair ». De plus, vous devez également conserver des enregistrements de la prise ou de la révocation d’un consentement.
   
  **Droits des personnes concernées par les données**
   
@@ -78,7 +78,7 @@ Le R GDPR établit des droits d’objet de données, ce qui signifie que, en ce 
 
 ### <a name="im-a-sole-proprietor---do-i-really-have-to-worry-about-the-gdpr"></a>Je suis l’unique propriétaire : dois-je vraiment me soucier du R GDPR ?
 
-Le R GDPR est une question sur les données que vous traiterez, et non sur le nombre d’employés dont vous avez. Elle affecte les sociétés de toutes tailles, même les seuls propriétaires. Toutefois, les sociétés de moins de 250 employés ont certaines exemptions, telles que la conservation des registres réduite, mais uniquement si vous êtes sûr que le traitement des données n’affecte pas les droits de la personne et traite occasionnellement.
+Le R GDPR est une question sur les données que vous traiterez, et non sur le nombre d’employés dont vous avez. Elle concerne les sociétés de toutes tailles, même les seuls propriétaires. Toutefois, les sociétés de moins de 250 employés ont certaines exemptions, telles que la conservation des registres réduite, mais uniquement si vous êtes sûr que le traitement des données n’affecte pas les droits de la personne et traite occasionnellement.
   
 Par exemple, le traitement des données non personnelles serait exempté ou aurait besoin de mesures réduites. Toutefois, si vous traitez des données considérées comme des « données sensibles de catégorie spéciale », même si elles ne sont traitées qu’occasionnellement, vous devez enregistrer ce traitement de données. La définition du « traitement occasionnel » est vague, mais elle est destinée à s’appliquer aux données utilisées une seule fois ou rarement.
   
@@ -116,13 +116,13 @@ Dans le cadre du R GDPR, si vous collectez des données, vous êtes affecté dan
     
 ### <a name="can-i-still-send-out-marketing-emails-to-my-old-customers"></a>Puis-je toujours envoyer des e-mails marketing à mes anciens clients ?
 
-Vous devez vous assurer que vos clients, même ceux que vous avez depuis des années, ont accepté d’utiliser leurs données pour le marketing. Vous avez peut-être déjà capturé le consentement, ainsi qu’un enregistrement pour l’afficher. Si c’est le cas, vous êtes prêt à poursuivre le marketing. Si ce n’est pas le cas, vous devez obtenir l’autorisation du client pour poursuivre le marketing. Cela implique généralement l’envoi d’un courrier électronique demandant aux clients d’aller sur votre site et de sélectionner une option pour consentir à recevoir de futurs courriers électroniques. 
+Vous devez vous assurer que vos clients, même ceux que vous avez depuis des années, ont accepté d’utiliser leurs données à des fins marketing. Vous avez peut-être déjà capturé le consentement, ainsi qu’un enregistrement pour l’afficher. Si c’est le cas, vous êtes prêt à poursuivre le marketing. Si ce n’est pas le cas, vous devez obtenir l’autorisation du client pour poursuivre le marketing. Cela implique généralement l’envoi d’un courrier électronique demandant aux clients d’aller sur votre site et de sélectionner une option pour consentir à recevoir de futurs courriers électroniques. 
   
 ### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>Dois-je me soucier du R GDPR lorsque je embauche de nouveaux employés ? Qu’en est-il des employés actuels ?
 
 Le R GDPR n’affecte pas uniquement les données client . Il s’étend également aux données des employés. Les nouvelles recrutements sont souvent situées à l’aide de plateformes de réseaux sociaux telles que LinkedIn. Assurez-vous de ne pas stocker de données de recrutement potentielles sans leur autorisation express.
   
-Comme pour les employés existants et les nouveaux contrats d’employé, une signature à la fin d’un contrat ne suppose pas nécessairement le consentement, en particulier lorsqu’une clause non affirmative est utilisée dans un contrat. Dans ce cas, vous devez capturer le consentement d’une manière explicite associée à la clause. Cela dépend de votre contrat employé, mais vous pouvez utiliser l'« intérêt légitime » dans certains cas et ajouter une notification de traitement des données des employés pour vous assurer que vos employés sont informés de ce que vous allez faire avec leurs données.
+Comme pour les employés existants et les nouveaux contrats d’employé, une signature à la fin d’un contrat ne suppose pas nécessairement le consentement, en particulier lorsqu’une clause non affirmative est utilisée dans un contrat. Dans ce cas, vous devez capturer le consentement d’une manière explicite associée à la clause. Cela dépend de votre contrat employé, mais vous pouvez utiliser l'« intérêt légitime » dans certains cas et ajouter une notification de traitement des données des employés pour vous assurer que vos employés sont conscients de ce que vous allez faire avec leurs données.
   
 ## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>Répondre aux questions de confidentialité à l’aide de Microsoft 365 pour les entreprises
 
@@ -142,19 +142,19 @@ Microsoft 365 pour les entreprises peut vous aider avec le processus R GDPR des 
     
     Les outils tels que les journaux d’audit vous permettent de suivre et de signaler les mouvements de données. Les rapports incluent la classification des données que vous collectez et stockez, ce que vous faites avec les données et les transferts de données. 
     
-Les clients, employés et clients sont de plus en plus conscients de l’importance de la confidentialité des données et s’attendent maintenant à ce qu’une entreprise ou une organisation respecte cette confidentialité. Microsoft 365 pour les entreprises vous fournit les outils nécessaires pour obtenir et maintenir la conformité R GDPR sans qu’il soit très important pour votre entreprise.
+Les clients, employés et clients sont de plus en plus conscients de l’importance de la confidentialité des données et s’attendent maintenant à ce qu’une entreprise ou une organisation respecte cette confidentialité. Microsoft 365 pour les entreprises vous fournit les outils permettant d’atteindre et de maintenir la conformité R GDPR sans qu’il soit très important pour votre entreprise.
   
 ## <a name="next-steps"></a>Étapes suivantes
 
 Pour vous préparer au R GDPR, voici quelques suggestions pour les étapes suivantes :
   
-- Évaluez votre programme R GDPR avec des listes de vérification de [préparation sur la responsabilité.](https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc)
+- Évaluez votre programme R GDPR avec [des listes de vérification de préparation sur la responsabilité.](/compliance/regulatory/gdpr-arc)
     
 - Examinez [Microsoft 365 pour les entreprises en tant](https://www.microsoft.com/microsoft-365/business) que solution pour obtenir et maintenir la conformité avec le R GDPR. 
    
 
 > [!IMPORTANT]
-> Obtenez des conseils juridiques appropriés pour votre entreprise ou organisation.
+> Obtenez des conseils juridiques adaptés à votre entreprise ou organisation.
   
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
@@ -168,5 +168,3 @@ Sites de la Commission européenne :
 - [Protection des données](https://ec.europa.eu/info/law/law-topic/data-protection)
     
 - [Reforme 2018 des règles de protection des données de l’UE](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules)
-    
-

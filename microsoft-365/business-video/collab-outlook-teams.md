@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser Outlook et Microsoft Teams pour collaborer.
-ms.openlocfilehash: 14a3cdf28c4e0c855671c67af36fa25ac47c6568
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: dd1030833a10678b4630d9e86905c98d30ac15fe
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422830"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913657"
 ---
 # <a name="use-outlook-and-teams-together"></a>Utiliser conjointement Outlook et Teams
 
@@ -38,7 +38,7 @@ Lorsque vous communiquez avec vos employés, partenaires, clients et autres memb
 - Ajoutez les noms, les numéros et les e-mails des personnes avec qui vous travaillez en tant que contacts.
 - Créez des tâches, des notes et d’autres façons de rester au fait de vos projets à court et à long terme.
 
-:::image type="content" source="../media/outlook-model.png" alt-text="Image stylisée de la page d’accueil Outlook.":::
+:::image type="content" source="../media/outlook-model.png" alt-text="Image stylisée de la page d’accueil d’Outlook.":::
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -54,4 +54,4 @@ Lorsque vous communiquez avec vos employés, partenaires, clients et autres memb
 
 [Qu’est-ce qu’Outlook ?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Vue d’ensemble de Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+[Vue d’ensemble de Teams](/MicrosoftTeams/Teams-overview)
