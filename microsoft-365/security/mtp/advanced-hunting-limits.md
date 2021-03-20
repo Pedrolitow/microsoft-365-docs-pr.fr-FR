@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3d3b1055408b51e8d217f2abcb0e83ef7dd74949
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 862d295739f952a6a5db06f5cfdfbc5aa481de9b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929789"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909021"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Quotas de recherche avancés et paramètres d’utilisation
 
@@ -35,7 +35,7 @@ ms.locfileid: "49929789"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Pour que le service reste performant et réactif, le service de recherche avancée définit différents quotas et paramètres d’utilisation (également appelés « limites de service »). Ces quotas et paramètres s’appliquent aux requêtes qui s’exécutent manuellement et par des [règles de détection personnalisées.](custom-detection-rules.md) Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la consommation et appliquer les meilleures [pratiques d’optimisation](advanced-hunting-best-practices.md) pour minimiser les perturbations.
+Pour que le service reste performant et réactif, le service de recherche avancée définit différents quotas et paramètres d’utilisation (également appelés « limites de service »). Ces quotas et paramètres s’appliquent aux requêtes qui s’exécutent manuellement et par des [règles de détection personnalisées.](custom-detection-rules.md) Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la consommation et appliquer les meilleures [pratiques](advanced-hunting-best-practices.md) d’optimisation pour minimiser les interruptions.
 
 Reportez-vous au tableau suivant pour comprendre les quotas et paramètres d’utilisation existants.
 
@@ -47,7 +47,7 @@ Reportez-vous au tableau suivant pour comprendre les quotas et paramètres d’u
 | Ressources processeur | En fonction de la taille du client | - À l’heure, puis toutes les 15 minutes<br>- Tous les jours à minuit | Le service applique le quota quotidien et le quota de 15 minutes séparément. Pour chaque quota, [le](advanced-hunting-errors.md) portail affiche une erreur chaque fois qu’une requête s’exécute et que le client a consommé plus de 10 % des ressources allouées. Les requêtes sont bloquées si le client a atteint 100 % jusqu’au terme du cycle quotidien suivant ou de 15 minutes. |
 
 >[!NOTE] 
->Un ensemble distinct de quotas et de paramètres s’applique aux requêtes de recherche avancées effectuées via l’API. [En savoir plus sur les API de recherche avancée](https://docs.microsoft.com/microsoft-365/security/mtp/api-advanced-hunting)
+>Un ensemble distinct de quotas et de paramètres s’applique aux requêtes de recherche avancées effectuées via l’API. [En savoir plus sur les API de recherche avancée](./api-advanced-hunting.md)
 
 ## <a name="related-topics"></a>Rubriques connexes
 

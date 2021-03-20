@@ -15,12 +15,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à exécuter un rapport de groupe de rôles d’administrateur dans Exchange Online Protection (EOP) autonome. Ce rapport enregistre lorsqu’un administrateur ajoute des membres à des groupes de rôles d’administrateur ou en supprime.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d778e807a087a5e29b31645457d4a81bd05c5649
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0281dcb13f5cee0ba8db8c4faed5054f481337cf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288018"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908793"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Exécuter un rapport de groupe de rôles d’administrateur dans EOP autonome
 
@@ -37,9 +37,9 @@ Lorsque vous exécutez un rapport de groupe de rôles d’administrateur dans le
 
 - Pour ouvrir le Centre d’administration Exchange, consultez le [Centre d’administration Exchange dans EOP autonome.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
-- Des autorisations doivent vous être attribuées dans Exchange Online Protection avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle Journaux  d’audit ou Journaux d’audit en affichage seul, qui sont attribués par défaut aux groupes de **rôles** Gestion de l’organisation, Gestion de la conformité et Administrateur de la sécurité.   Pour plus d’informations, voir [Autorisations](feature-permissions-in-eop.md) dans EOP autonome et utiliser le CAE pour modifier la liste des membres des groupes [de rôles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Des autorisations doivent vous être attribuées dans Exchange Online Protection avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle Journaux  d’audit ou Journaux d’audit en affichage seul, qui sont attribués par défaut aux groupes de **rôles** Gestion de l’organisation, Gestion de la conformité et Administrateur de la sécurité.   Pour plus d’informations, voir Autorisations dans [EOP](feature-permissions-in-eop.md) autonome et utiliser le CAE pour modifier la liste des membres des [groupes de rôles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cet article, voir raccourcis clavier pour le Centre d’administration [Exchange dans Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cet article, voir raccourcis clavier pour le Centre d’administration [Exchange dans Exchange Online.](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) .
@@ -79,7 +79,7 @@ Dans cet exemple, le compte d'utilisateur Administrateur a apporté les modifica
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Utiliser Exchange Online PowerShell autonome pour rechercher des entrées du journal d’audit
 
-Vous pouvez utiliser Exchange Online PowerShell pour rechercher des entrées du journal d’audit qui répondent aux critères que vous spécifiez. Pour obtenir la liste des critères de recherche, voir Les critères de [recherche Search-AdminAuditLog.](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet) Cette procédure utilise la cmdlet **Search-AdminAuditLog** et affiche les résultats de recherche dans Exchange Online PowerShell. Vous pouvez utiliser cette cmdlet si vous devez renvoyer un ensemble de résultats au-delà des limites définies dans la cmdlet **New-AdminAuditLogSearch** ou dans les rapports d'audit du Centre d'administration Exchange.
+Vous pouvez utiliser Exchange Online PowerShell pour rechercher des entrées du journal d’audit qui répondent aux critères que vous spécifiez. Pour obtenir la liste des critères de recherche, voir Les critères de [recherche Search-AdminAuditLog.](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet) Cette procédure utilise la cmdlet **Search-AdminAuditLog** et affiche les résultats de recherche dans Exchange Online PowerShell. Vous pouvez utiliser cette cmdlet si vous devez renvoyer un ensemble de résultats au-delà des limites définies dans la cmdlet **New-AdminAuditLogSearch** ou dans les rapports d'audit du Centre d'administration Exchange.
 
 Pour effectuer une recherche dans le journal d'audit d'après les critères que vous avez définis, utilisez la syntaxe suivante.
 
@@ -114,19 +114,19 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 Si vos recherches renvoient de nombreuses entrées de journal, nous vous recommandons d’utiliser la procédure fournie dans **Exchange Online PowerShell** pour rechercher des entrées du journal d’audit et envoyer des résultats à un destinataire plus loin dans cet article. La procédure décrite dans cette section a pour objet d'envoyer aux destinataires que vous spécifiez un fichier XML sous forme de pièce jointe à un message électronique, ce qui vous permet d'extraire plus aisément les données qui vous intéressent.
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
 
 ### <a name="view-details-of-audit-log-entries"></a>Afficher le détail des entrées du journal d’audit
 
-La cmdlet **Search-AdminAuditLog** renvoie les champs décrits dans le contenu [du journal d’audit.](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents) Parmi les champs renvoyés par la cmdlet, deux champs ( **CmdletParameters** et **ModifiedProperties** ) comportent des données supplémentaires qu'il est impossible de visualiser par défaut.
+La cmdlet **Search-AdminAuditLog renvoie** les champs décrits dans le contenu [du journal d’audit.](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents) Parmi les champs renvoyés par la cmdlet, deux champs ( **CmdletParameters** et **ModifiedProperties** ) comportent des données supplémentaires qu'il est impossible de visualiser par défaut.
 
 Pour afficher le contenu des champs **CmdletParameters** et **ModifiedProperties**, suivez la procédure ci-après. Vous pouvez également utiliser la procédure d’utilisation **d’Exchange Online PowerShell** pour rechercher des entrées du journal d’audit et envoyer des résultats à un destinataire plus loin dans cet article pour créer un fichier XML.
 
 Cette procédure exploite les concepts suivants :
 
-- [about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
+- [about_Arrays](/powershell/module/microsoft.powershell.core/about/about_arrays)
 
-- [about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
+- [about_Variables](/powershell/module/microsoft.powershell.core/about/about_variables)
 
 1. Déterminez les critères sur lesquels doivent porter vos recherches, exécutez la cmdlet **Search-AdminAuditLog** et stockez les résultats dans une variable au moyen de la commande suivante.
 

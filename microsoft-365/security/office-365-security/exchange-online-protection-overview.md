@@ -15,12 +15,12 @@ ms.custom:
 description: Découvrez comment Exchange Online Protection (EOP) peut vous aider à protéger votre organisation de messagerie sur site dans des environnements autonomes et hybrides.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8e3d44cb39e3569179d4155e32a8c11e0a5be56
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9aa2925ed5a9a6088fab81a09754b479740411cc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286884"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910833"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d’ensemble d’Exchange Online Protection
 
@@ -49,11 +49,11 @@ Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier
 
 - Lorsqu’un message entrant entre dans EOP, il passe initialement par le filtrage des connexions, qui vérifie la réputation de l’expéditeur. La majorité du courrier indésirable est arrêté à ce stade et rejeté par EOP. Pour plus d’informations, consultez [Configuration du filtrage des connexions](configure-the-connection-filter-policy.md).
 
-- Ensuite, le message est inspecté à la recherche de signes de programmes malveillants. Si un programme malveillant est détecté dans le message ou la ou les pièces jointes, le message est acheminé vers une mise en quarantaine de l’administrateur uniquement. Vous pouvez en savoir plus sur la configuration anti-programme malveillant [ici.](configure-anti-malware-policies.md)
+- Le message est ensuite inspecté à la recherche de signes de programmes malveillants. Si un programme malveillant est détecté dans le message ou la ou les pièces jointes, le message est acheminé vers une mise en quarantaine de l’administrateur uniquement. Vous pouvez en savoir plus sur la configuration anti-programme malveillant [ici.](configure-anti-malware-policies.md)
 
 - Les messages continuent par le filtrage des stratégies, où ils sont évalués par rapport aux règles de flux de messagerie personnalisées (également appelées règles de transport) que vous créez ou appliquez à partir d’un modèle. Par exemple, vous pouvez avoir une règle qui envoie une notification à un responsable lorsque le courrier arrive à partir d’un expéditeur spécifique. Les vérifications de protection contre la perte de données (DLP) se produisent également à ce stade (cal Exchange Enterprise avec Services).
 
-- Ensuite, le message passe par le filtrage de contenu (également appelé anti-courrier indésirable). Un message que ce filtre  détermine comme courrier indésirable ou hameçonnage peut être mis en quarantaine, ou le dossier Courrier indésirable d’un utilisateur, entre autres options. Pour plus d’informations, voir [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies](configure-anti-phishing-policies-eop.md).
+- Ensuite, le message passe par le filtrage de contenu (également appelé anti-courrier indésirable). Un message que ce filtre  détermine comme courrier indésirable ou hameçonnage peut être mis en quarantaine, ou le dossier Courrier indésirable d’un utilisateur, entre autres options. Pour plus d’informations, [voir Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies](configure-anti-phishing-policies-eop.md).
 
 Tout message qui transmet toutes ces couches de protection est remis au destinataire.
 
@@ -69,7 +69,7 @@ Les plans d’abonnement EOP disponibles sont les :
 
 - Licence d’accès au service d’accès basé sur Exchange Enterprise avec **Services**: si vous avez une organisation Exchange sur site dans laquelle vous avez acheté des licences d’accès cal Exchange Enterprise supplémentaires avec des licences services, EOP fait partie des services inclus.
 
-Pour plus d’informations sur les exigences, les limites importantes et la disponibilité des fonctionnalités dans tous les plans d’abonnement EOP, voir la [description du service Exchange Online Protection.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+Pour plus d’informations sur les exigences, les limites importantes et la disponibilité des fonctionnalités dans tous les plans d’abonnement EOP, voir la [description du service Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 ## <a name="setting-up-eop-for-on-premises-email-organizations"></a>Configuration d’EOP pour les organisations de messagerie locales
 
@@ -113,7 +113,7 @@ Le contenu de l’aide pour les administrateurs d’EOP se compose des catégori
 
 - Flux de messagerie dans [EOP](mail-flow-in-eop.md): décrit comment configurer des scénarios de flux de messagerie personnalisés à l’aide de connecteurs, comment gérer les domaines associés au service et comment activer la fonctionnalité de blocage du périphérie basé sur l’annuaire (DBEB).
 
-- [Meilleures pratiques pour la configuration d’EOP](best-practices-for-configuring-eop.md): décrit les paramètres de configuration recommandés et les considérations à prendre en compte après avoir configuré et mis en service votre service.
+- [Meilleures pratiques pour la configuration d’EOP](best-practices-for-configuring-eop.md): décrit les paramètres de configuration recommandés et les éléments à prendre en compte après avoir configuré et mis en service votre service.
 
 - [Rapports d’audit dans EOP autonome](auditing-reports-in-eop.md): décrit comment utiliser les rapports d’audit pour suivre les modifications de configuration apportées au service.
 
@@ -123,6 +123,6 @@ Le contenu de l’aide pour les administrateurs d’EOP se compose des catégori
 
 - [Centre d’administration Exchange](exchange-admin-center-in-exchange-online-protection-eop.md)dans EOP autonome : décrit comment accéder à l’interface de gestion du Centre d’administration Exchange (CAE) et y naviguer afin de gérer votre service EOP.
 
-- [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell): fournit des informations sur PowerShell à distance, qui vous permet de gérer votre service EOP à partir de la ligne de commande.
+- [Exchange Online Protection PowerShell](/powershell/exchange/exchange-online-protection-powershell): fournit des informations sur PowerShell à distance, qui vous permet de gérer votre service EOP à partir de la ligne de commande.
 
 - [Aide et support pour EOP](help-and-support-for-eop.md) Fournit des informations sur la manière d'obtenir de l'aide et un support technique.

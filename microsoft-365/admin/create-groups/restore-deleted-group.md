@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Découvrez comment restaurer un groupe Microsoft 365 supprimé.
-ms.openlocfilehash: 091697be54b1127a5cb336179733d51519947e14
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: f3b6435d82d5beddf44f5920011b076b39c7dcd5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753242"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910545"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Restaurer un groupe Microsoft 365 supprimé
 
@@ -39,7 +39,7 @@ En cas de restauration d'un groupe, le contenu suivant est restauré :
     
 - Boîte de réception et calendrier partagés Exchange Online.
     
-- Site d’équipe Et fichiers SharePoint Online.
+- Site et fichiers d’équipe SharePoint Online.
     
 - bloc-notes OneNote ;
     
@@ -60,7 +60,7 @@ Si vous êtes propriétaire d’un groupe Microsoft 365, vous pouvez restaurer l
 
 1. Dans la [page Groupes supprimés,](https://outlook.office.com/people/group/deleted)sélectionnez l’option  Gérer les groupes sous le nœud **Groupes,** puis choisissez **Supprimé.**
 
-2. Cliquez sur **l’onglet** Restaurer en côté du groupe que vous souhaitez restaurer.
+2. Cliquez sur **l’onglet Restaurer** en côté du groupe que vous souhaitez restaurer.
 
 Si le groupe supprimé n’apparaît pas ici, contactez un administrateur.
 
@@ -83,9 +83,9 @@ Visitez la [communauté technique Microsoft pour](https://techcommunity.microsof
   
 ## <a name="related-articles"></a>Articles connexes
 
-[Gérer les groupes Microsoft 365 avec PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[Gérer les groupes Microsoft 365 avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
   
-[Supprimer des groupes à l'aide de l'applet de commande Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
+[Supprimer des groupes à l'aide de l'applet de commande Remove-UnifiedGroup](/powershell/module/exchange/remove-unifiedgroup)
   
 [Gérer les paramètres de votre site d'équipe connecté à un groupe](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
   

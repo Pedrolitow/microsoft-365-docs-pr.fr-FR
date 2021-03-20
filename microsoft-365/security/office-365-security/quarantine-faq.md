@@ -19,12 +19,12 @@ description: Les administrateurs peuvent afficher les questions fréquemment pos
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8496ae4f1702bb63328be0c494d8829c9ddd8cf2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 112f8a9f0714d962f8ea18ade5455178ba773858
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289400"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908841"
 ---
 # <a name="quarantined-messages-faq"></a>FAQ sur les messages mis en quarantaine
 
@@ -53,7 +53,7 @@ Par défaut, les messages classés comme courrier indésirable ou courrier en ma
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>Comment accorder aux utilisateurs l’accès à la mise en quarantaine ?
 
-Un utilisateur doit avoir un compte valide pour accéder à ses propres messages en quarantaine. EOP autonome exige que les utilisateurs soient représentés en tant qu’utilisateurs de messagerie dans EOP (créés ou créés manuellement via la synchronisation d’annuaires). Pour plus d’informations sur la gestion des utilisateurs dans des environnements EOP autonomes, voir Gérer les utilisateurs [de messagerie dans EOP.](manage-mail-users-in-eop.md)
+Un utilisateur doit avoir un compte valide pour accéder à ses propres messages en quarantaine. EOP autonome exige que les utilisateurs soient représentés en tant qu’utilisateurs de messagerie dans EOP (créés ou créés manuellement via la synchronisation d’annuaires). Pour plus d’informations sur la gestion des utilisateurs dans les environnements EOP autonomes, voir Gérer les utilisateurs [de messagerie dans EOP.](manage-mail-users-in-eop.md)
 
 ## <a name="what-messages-can-end-users-access-in-quarantine"></a>Quels messages les utilisateurs finaux peuvent-ils accéder en quarantaine ?
 
@@ -71,7 +71,7 @@ Une fois la période expirée, les messages sont supprimés et ne sont pas récu
 
 Dans le Centre de sécurité & conformité, vous pouvez sélectionner et publier jusqu’à 100 messages à la fois.
 
-Les administrateurs peuvent utiliser les cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) et [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) dans Exchange Online PowerShell ou EOP PowerShell autonome pour rechercher et libérer les messages mis en quarantaine en bloc et signaler les faux positifs en bloc.
+Les administrateurs peuvent utiliser les cmdlets [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) et [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) dans Exchange Online PowerShell ou EOP PowerShell autonome pour rechercher et libérer les messages mis en quarantaine en bloc et signaler les faux positifs en bloc.
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>Les caractères génériques sont-ils pris en charge lors de la recherche de messages mis en quarantaine ? Puis-je rechercher des messages mis en quarantaine pour un domaine spécifique ?
 
@@ -79,7 +79,7 @@ Les caractères génériques ne sont pas pris en charge dans le Centre de sécur
 
 Par exemple, copiez le code PowerShell suivant dans le Bloc-notes et enregistrez le fichier en tant que fichier .ps1 dans un emplacement facile à trouver (par exemple, C:\Data\QuarantineRelease.ps1).
 
-Ensuite, après vous être connecté à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) ou [Exchange Online Protection PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)exécutez la commande suivante pour exécuter le script :
+Ensuite, après vous être connecté à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ou [Exchange Online Protection PowerShell,](/powershell/exchange/connect-to-exchange-online-protection-powershell)exécutez la commande suivante pour exécuter le script :
 
 ```powershell
 & C:\Data\QuarantineRelease.ps1

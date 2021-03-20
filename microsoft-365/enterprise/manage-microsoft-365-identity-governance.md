@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Découvrez comment utiliser les fonctionnalités de gouvernance des identités Microsoft 365.
-ms.openlocfilehash: e4c537e7fa3ac099caf8b7dbc44327308751c8f5
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 6a97ca24c609724a2cab93feec9e90f25d3361e3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370345"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910953"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>Gérer la gouvernance des identités Microsoft 365
 
 La gouvernance des identités s’intéresse à la protection, la surveillance et l’audit de l’accès aux ressources critiques, tout en assurant la productivité des employés. Par exemple, avec la gouvernance des identités, vous pouvez vous assurer que les utilisateurs appropriés disposent de l’accès approprié aux ressources adéquates et déterminer si cet accès change au fil du temps.
 
-Pour plus d’informations, consultez cette vue d’ensemble de la gouvernance des identités pour [Azure Active Directory (Azure AD).](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview)
+Pour plus d’informations, consultez cette vue d’ensemble de la gouvernance des identités pour [Azure Active Directory (Azure AD).](/azure/active-directory/governance/identity-governance-overview)
 
 ## <a name="set-up-azure-ad-access-reviews"></a>Configurer les révisions d’accès Azure AD
 
@@ -45,13 +45,13 @@ Les révisions d’accès Azure AD vous permettent de passer en revue l’accès
 
 Ceci est particulièrement important si votre organisation fait l’objet d’audits de sécurité pour déterminer si les comptes d’utilisateurs ont un niveau d’accès trop important, ce qui peut entraîner des amendes en cas de violation des réglementations régionales ou industrielles.
 
-Pour plus d’informations, voir la [vue d’ensemble des révisions d’accès.](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
+Pour plus d’informations, voir la [vue d’ensemble des révisions d’accès.](/azure/active-directory/governance/access-reviews-overview)
 
 Pour configurer différents types de révisions d’accès, consultez les articles suivants :
 
-- [Groupes et applications](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
-- [Rôles Azure AD](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
-- [Rôles de ressources Azure](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [Groupes et applications](/azure/active-directory/governance/create-access-review)
+- [Rôles Azure AD](/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [Rôles de ressources Azure](/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 
 ## <a name="set-up-azure-ad-entitlement-management"></a>Configurer la gestion des droits Azure AD
 
@@ -61,4 +61,4 @@ Vos employés ont besoin d’accéder à différents groupes, applications et si
 
 La gestion des droits Azure AD peut vous aider à gérer plus efficacement l’accès aux groupes, applications et sites SharePoint pour les utilisateurs internes et externes.
  
-Pour plus d’informations, voir la [vue d’ensemble de la gestion des droits Azure AD.](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+Pour plus d’informations, voir la [vue d’ensemble de la gestion des droits Azure AD.](/azure/active-directory/governance/entitlement-management-overview)

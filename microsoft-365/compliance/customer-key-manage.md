@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir installé la clé client, découvrez comment la gérer en restaurant des clés AKV et en gérant les autorisations et vos stratégies de chiffrement de données.
-ms.openlocfilehash: de85edd5c53fc2b76be4361575e1a85655c0f297
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 8f55667254ce7f5cbd9d4de274623ca4a3c4aa9d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547084"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909946"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
@@ -42,7 +42,7 @@ Si le coffre de clés contient déjà une clé du même nom, l’opération de r
   
 ## <a name="manage-key-vault-permissions"></a>Gérer les autorisations de coffre de clés
 
-Plusieurs cmdlets sont disponibles qui vous permettent d’afficher et, si nécessaire, de supprimer les autorisations de coffre de clés. Vous devrez peut-être supprimer des autorisations, par exemple, lorsqu’un employé quitte l’équipe. Pour chacune de ces tâches, vous allez utiliser Azure PowerShell. Pour plus d’informations sur Azure Powershell, voir [Vue d’ensemble d’Azure PowerShell.](https://docs.microsoft.com/powershell/azure/)
+Plusieurs cmdlets sont disponibles qui vous permettent d’afficher et, si nécessaire, de supprimer les autorisations de coffre de clés. Vous devrez peut-être supprimer des autorisations, par exemple, lorsqu’un employé quitte l’équipe. Pour chacune de ces tâches, vous allez utiliser Azure PowerShell. Pour plus d’informations sur Azure Powershell, voir [Vue d’ensemble d’Azure PowerShell.](/powershell/azure/)
 
 Pour afficher les autorisations de coffre de clés, exécutez Get-AzKeyVault cmdlet.
 
@@ -56,7 +56,7 @@ Par exemple :
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
 
-Pour supprimer les autorisations d’un administrateur, exécutez l'Remove-AzKeyVaultAccessPolicy cmdlet :
+Pour supprimer les autorisations d’un administrateur, exécutez Remove-AzKeyVaultAccessPolicy cmdlet :
   
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
@@ -72,23 +72,23 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 La clé client gère les ppp différemment entre les différents services. Par exemple, vous pouvez créer un nombre différent de deP pour les différents services.
 
-**Exchange Online et Skype Entreprise :** Vous pouvez créer jusqu’à 50 dep. Pour obtenir des instructions, voir Créer une stratégie de chiffrement de données à utiliser avec [Exchange Online et Skype Entreprise.](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business)
+**Exchange Online et Skype Entreprise :** Vous pouvez créer jusqu’à 50 DEP. Pour obtenir des instructions, voir Créer une stratégie de chiffrement de données à utiliser avec [Exchange Online et Skype Entreprise.](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business)
 
 **Fichiers SharePoint Online, OneDrive Entreprise et Teams :** Une PD DEP s’applique aux données dans un emplacement géographique, également appelé _géo_. Si vous utilisez la fonctionnalité multigé géographique d’Office 365, vous pouvez en créer un par géo. Si vous n’utilisez pas multigéogé, vous pouvez en créer un. Normalement, vous créez le PD DEP lorsque vous définissez la clé client. Pour obtenir des instructions, voir Créer une stratégie de chiffrement de données [(DEP)](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo)pour chaque site géographique SharePoint Online et OneDrive Entreprise.
 
 ### <a name="view-the-deps-youve-created-for-exchange-online-and-skype-for-business"></a>Afficher les deps que vous avez créés pour Exchange Online et Skype Entreprise
 
-Pour afficher la liste de tous les dep que vous avez créés pour Exchange Online et Skype Entreprise à l’aide de la cmdlet PowerShell Get-DataEncryptionPolicy, complétez ces étapes.
+Pour afficher la liste de tous les PDP que vous avez créés pour Exchange Online et Skype Entreprise à l’aide de la cmdlet PowerShell Get-DataEncryptionPolicy, complétez ces étapes.
 
-1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Pour retourner tous les DDP de votre organisation, exécutez la cmdlet Get-DataEncryptionPolicy sans aucun paramètre.
+2. Pour retourner tous les DDP de votre organisation, exécutez l'Get-DataEncryptionPolicy cmdlet sans aucun paramètre.
 
    ```powershell
    Get-DataEncryptionPolicy
    ```
 
-   Pour plus d’informations sur Get-DataEncryptionPolicy cmdlet, voir [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy).
+   Pour plus d’informations sur la cmdlet Get-DataEncryptionPolicy, voir [Get-DataEncryptionPolicy](/powershell/module/exchange/get-dataencryptionpolicy).
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Affecter un dep avant de migrer une boîte aux lettres vers le cloud
 
@@ -96,7 +96,7 @@ Lorsque vous affectez le deP, Microsoft 365 chiffre le contenu de la boîte aux 
 
 Pour affecter un dep à une boîte aux lettres avant de la migrer vers Office 365, exécutez la cmdlet Set-MailUser dans Exchange Online PowerShell :
 
-1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez lSet-MailUser cmdlet.
 
@@ -104,19 +104,19 @@ Pour affecter un dep à une boîte aux lettres avant de la migrer vers Office 36
    Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
    ```
 
-   Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et *DataEncryptionPolicyIdParameter* est l’ID du deP. Pour plus d’informations sur Set-MailUser cmdlet, voir [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
+   Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et *DataEncryptionPolicyIdParameter* est l’ID du deP. Pour plus d’informations sur la cmdlet Set-MailUser, voir [Set-MailUser](/powershell/module/exchange/set-mailuser).
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Déterminer le deP affecté à une boîte aux lettres
 
-Pour déterminer le dep affecté à une boîte aux lettres, utilisez la cmdlet Get-MailboxStatistics. La cmdlet renvoie un identificateur unique (GUID).
+Pour déterminer le deP affecté à une boîte aux lettres, utilisez la cmdlet Get-MailboxStatistics de messagerie. La cmdlet renvoie un identificateur unique (GUID).
   
-1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et DataEncryptionPolicyID renvoie le GUID du deP. Pour plus d’informations sur Get-MailboxStatistics cmdlet, [voir Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics).
+   Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et DataEncryptionPolicyID renvoie le GUID du deP. Pour plus d’informations sur Get-MailboxStatistics cmdlet, [voir Get-MailboxStatistics](/powershell/module/exchange/get-mailboxstatistics).
   
 2. Exécutez Get-DataEncryptionPolicy cmdlet pour connaître le nom convivial du dep auquel la boîte aux lettres est affectée.
   
@@ -142,9 +142,9 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 La propriété IsEncrypted renvoie la valeur **true** si la boîte aux lettres est chiffrée et la valeur **false** si la boîte aux lettres n’est pas chiffrée.
 
-Le temps de déplacement des boîtes aux lettres dépend de la taille de la boîte aux lettres. Si la clé client n’a pas entièrement chiffré la boîte aux lettres après 72 heures après l’affectation d’un nouveau PED, contactez le support Microsoft pour obtenir de l’aide. La cmdlet New-MoveRequest n’est plus disponible pour les déplacements de boîtes aux lettres locaux. Pour plus [d’informations,](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) reportez-vous à cette annonce.
+Le temps de déplacement des boîtes aux lettres dépend de la taille de la boîte aux lettres. Si la clé client n’a pas entièrement chiffré la boîte aux lettres après 72 heures après l’affectation d’un nouveau PED, contactez le support Microsoft pour obtenir de l’aide. La cmdlet New-MoveRequest n’est plus disponible pour les déplacements de boîtes aux lettres locales. Pour plus [d’informations,](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) reportez-vous à cette annonce.
 
-### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Vérifier que le chiffrement est terminé pour les fichiers SharePoint Online, OneDrive Entreprise et Teams
+### <a name="verify-encryption-completes-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Vérifier que le chiffrement est terminé pour les fichiers SharePoint Online, OneDrive Entreprise et Teams
 
 Vérifiez l’état du chiffrement en exécutant la cmdlet Get-SPODataEncryptionPolicy comme suit :
 
@@ -164,7 +164,7 @@ Le résultat de cette cmdlet inclut :
 
   - **Inscription :** Le chiffrement de la clé client a été appliqué et vos fichiers sont en cours de chiffrement. Si la clé de la géo est inscrite, des informations sur le pourcentage de sites de la géo sont également affichées, ce qui vous permet de surveiller la progression du chiffrement.
 
-  - **Inscrit :** Le chiffrement de clé client a été appliqué et tous les fichiers de tous les sites ont été chiffrés.
+  - **Inscrit :** Le chiffrement de la clé client a été appliqué et tous les fichiers de tous les sites ont été chiffrés.
 
   - **Déploiement :** Un roulis de touches est en cours. Si la clé de la géo est en cours de déploiement, vous verrez également des informations sur le pourcentage de sites qui ont terminé l’opération de déploiement de clé afin de pouvoir surveiller la progression.
 
@@ -172,9 +172,9 @@ Le résultat de cette cmdlet inclut :
 
 Vous désattribuez un deP d’une boîte aux lettres à l’aide de la cmdlet Set-mailbox PowerShell et définissez le `DataEncryptionPolicy` paramètre sur `$NULL` . L’exécution de cette cmdlet désattribue le dep actuellement affecté et recrypte la boîte aux lettres à l’aide de la dep associée aux clés gérées par défaut de Microsoft. Vous ne pouvez pas désattribuer le deP utilisé par les clés gérées microsoft. Si vous ne souhaitez pas utiliser de clés gérées par Microsoft, vous pouvez affecter un autre deP à la boîte aux lettres.
 
-Pour désattribuer le PDV d’une boîte aux lettres à l’aide Set-Mailbox cmdlet PowerShell, complétez ces étapes.
+Pour désattribuer le dep d’une boîte aux lettres à l'Set-Mailbox cmdlet PowerShell, complétez ces étapes.
 
-1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez lSet-Mailbox cmdlet.
 
@@ -184,7 +184,7 @@ Pour désattribuer le PDV d’une boîte aux lettres à l’aide Set-Mailbox cmd
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Révoquer vos clés et démarrer le processus de purge des données
 
-Vous contrôlez la révocation de toutes les clés racines, y compris la clé de disponibilité. La clé client vous permet de contrôler l’aspect de planification de sortie des exigences réglementaires. Si vous décidez de révoquer vos clés pour vider vos données et quitter le service, le service supprime la clé de disponibilité une fois le processus de purge des données terminé.
+Vous contrôlez la révocation de toutes les clés racine, y compris la clé de disponibilité. La clé client vous permet de contrôler l’aspect de planification de sortie des exigences réglementaires. Si vous décidez de révoquer vos clés pour vider vos données et quitter le service, le service supprime la clé de disponibilité une fois le processus de purge des données terminé.
 
 Microsoft 365 audite et valide le chemin de purge des données. Pour plus d’informations, voir le rapport SSAE 18 SOC 2 disponible sur le portail [d’confiance des services.](https://servicetrust.microsoft.com/) En outre, Microsoft recommande les documents suivants :
 
@@ -207,9 +207,9 @@ Pour lancer le chemin d’accès de la purge des données, effectuer les étapes
 
 1. Supprimez les autorisations wrap et unwrap pour « O365 Exchange Online » des coffres de clés Azure.
 
-2. À l’aide d’un compte professionnel ou scolaire qui dispose de privilèges d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+2. À l’aide d’un compte professionnel ou scolaire qui dispose de privilèges d’administrateur général dans votre organisation, connectez-vous [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-3. Pour chaque PDE qui contient des boîtes aux lettres à supprimer, exécutez la cmdlet [Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy) comme suit.
+3. Pour chaque PDE qui contient des boîtes aux lettres à supprimer, exécutez la cmdlet [Set-DataEncryptionPolicy](/powershell/module/exchange/set-dataencryptionpolicy) comme suit.
 
     ```powershell
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>
@@ -225,7 +225,7 @@ Pour lancer le chemin d’accès de la purge des données, effectuer les étapes
 
     Une fois que Microsoft a reçu le document juridique, Microsoft exécute des cmdlets pour déclencher la purge des données qui supprime d’abord la stratégie, marque les boîtes aux lettres pour suppression définitive, puis supprime la clé de disponibilité. Une fois le processus de purge des données terminé, les données ont été purgées, sont inaccessibles à Exchange Online et ne sont pas récupérables.
 
-### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Révoquer vos clés client et la clé de disponibilité pour les fichiers SharePoint Online, OneDrive Entreprise et Teams
+### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Révoquer vos clés client et la clé de disponibilité pour les fichiers SharePoint Online, OneDrive Entreprise et Teams
 
 Pour lancer le chemin d’accès de purge des données pour les fichiers SharePoint Online, OneDrive Entreprise et Teams, effectuer les étapes suivantes :
 

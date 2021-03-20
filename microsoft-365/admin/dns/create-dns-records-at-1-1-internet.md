@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services au niveau 1&1 IONOS pour Microsoft.
-ms.openlocfilehash: 8e2deab05b5ef8d8f22993d2bfdd032999ed9c39
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 123abd6d1d93f80eb73f187b7ff75ccd90d02980
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657995"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910557"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Créer des enregistrements DNS à 1&1 IONOS pour Microsoft
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 > [!CAUTION]
-> Notez que 1&1 IONOS n’autorise pas un domaine à avoir un enregistrement MX et un enregistrement CNAME de découverte automatique de niveau supérieur. Cela limite les méthodes de configuration d’Exchange Online pour Microsoft. Il existe une solution de contournement,  mais nous vous recommandons de l’utiliser uniquement si vous avez déjà de l’expérience dans la création de sous-domaine à 1&1 IONOS. > Si, malgré cette limitation de [service,](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) vous choisissez de gérer vos propres enregistrements DNS Microsoft à l’adresse 1&1 IONOS, suivez les étapes de cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc. 
+> Notez que 1&1 IONOS n’autorise pas un domaine à avoir un enregistrement MX et un enregistrement CNAME de découverte automatique de niveau supérieur. Cela limite les méthodes de configuration d’Exchange Online pour Microsoft. Il existe une solution de contournement,  mais nous vous recommandons de l’utiliser uniquement si vous avez déjà de l’expérience dans la création de sous-domaine à 1&1 IONOS. > Si, malgré cette limitation de [service,](../setup/domains-faq.yml) vous choisissez de gérer vos propres enregistrements DNS Microsoft à l’adresse 1&1 IONOS, suivez les étapes de cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc. 
   
 Une fois ces enregistrements ajoutés à 1&1 IONOS, votre domaine est installé pour fonctionner avec les services Microsoft.
   
@@ -48,9 +48,9 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
   
-Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 0:42)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 0:42)]().
   
-1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
     
 2. Sélectionnez **Gérer les domaines.**
     
@@ -58,7 +58,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
 4. Dans la **zone Paramètres du domaine,** **sélectionnez Modifier les paramètres DNS.**
     
-5. Dans la section **Enregistrements TXT et SRV,** sélectionnez Ajouter un **enregistrement.**
+5. Dans la section **TXT et enregistrements SRV,** sélectionnez **Ajouter un enregistrement.**
     
 6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -96,12 +96,12 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Microsoft
 <a name="BKMK_add_MX"> </a>
 
-Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 3:22)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 3:22)]().
   
 > [!NOTE]
 > Si vous vous êtes inscrit auprès 1und1.de, [connectez-vous ici.](https://go.microsoft.com/fwlink/?linkid=859152) 
   
-1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
     
 2. Sélectionnez **Gérer les domaines.**
     
@@ -109,7 +109,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
 4. Dans la **zone Paramètres du domaine,** **sélectionnez Modifier les paramètres DNS.**
     
-5. Dans la section **Enregistrements MX,** dans la zone **Mail Exchanger (Enregistrement MX),** sélectionnez **Autre serveur de messagerie.**<br/>(Vous devrez peut-être faire défiler la page vers le bas.)<br/>![1 &amp; 1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. Dans la section MX Records (Enregistrements **MX),** dans la zone **Mail Exchanger (MX Record),** **sélectionnez Other mail server (Autre serveur de messagerie).**<br/>(Vous devrez peut-être faire défiler la page vers le bas.)<br/>![1 &amp; 1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
 6. Si d'autres enregistrements MX sont déjà répertoriés, supprimez-les en sélectionnant un enregistrement et en appuyant sur la touche **Suppr**.<br/>(Si aucun enregistrement MX n'est déjà répertorié, passez à l'étape suivante.)<br/>![1 &amp; 1-BP-Configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
@@ -117,7 +117,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |**MX 1**|**Priority (Priorité)**|
     |:-----|:-----|
-    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  REMARQUE : obtenez le vôtre \<domain-key\> à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | 
+    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  REMARQUE : obtenez le vôtre \<domain-key\> à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). <br/> | 
     
     ![1 et 1 : configurer 2 et 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
@@ -128,19 +128,19 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Ajouter les six enregistrements CNAME requis pour Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
-1&1 IONOS nécessite une solution de contournement afin que vous pouvez utiliser un enregistrement MX avec les enregistrements CNAME requis pour les services de messagerie Microsoft. Cette solution de contournement nécessite de créer un ensemble de sous-domaine à 1&1 IONOS et de les affecter à des enregistrements CNAME.
+1&1 IONOS nécessite une solution de contournement afin que vous pouvez utiliser un enregistrement MX avec les enregistrements CNAME requis pour les services de messagerie Microsoft. Cette solution de contournement nécessite de créer un ensemble de sous-domaine à 1&1 IONOS et de les affecter aux enregistrements CNAME.
   
 > [!IMPORTANT]
 > Vérifiez que vous avez au moins deux sous-domaines disponibles avant de commencer cette procédure. Nous vous recommandons cette solution uniquement si vous avez déjà de l’expérience dans la création de sous-domaine à 1&1 IONOS. 
   
 ### <a name="basic-cname-records"></a>Enregistrements CNAME de base
 
-Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 3:57)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 3:57)]().
   
 > [!NOTE]
 > Si vous vous êtes inscrit auprès 1und1.de, [connectez-vous ici.](https://go.microsoft.com/fwlink/?linkid=859152) 
   
-1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
     
 2. Sélectionnez **Gérer les domaines.**
     
@@ -248,14 +248,14 @@ Les enregistrements CNAME supplémentaires créés au cours de la procédure sui
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un seul  *enregistrement*  SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces outils[de validation SPF.](../setup/domains-faq.yml) 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir *qu’un seul* enregistrement SPF incluant les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](../../enterprise/external-domain-name-system-records.md). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces outils[de validation SPF.](../setup/domains-faq.yml) 
   
-Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:09)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:09)]().
   
 > [!NOTE]
 > Si vous vous êtes inscrit auprès 1und1.de, [connectez-vous ici.](https://go.microsoft.com/fwlink/?linkid=859152) 
   
-1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
     
 2. Sélectionnez **Gérer les domaines.**
     
@@ -263,7 +263,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
 4. Dans la **zone Paramètres du domaine,** **sélectionnez Modifier les paramètres DNS.**
     
-5. Dans la section **Enregistrements TXT et SRV,** sélectionnez Ajouter un **enregistrement.** <br/>(Vous devrez peut-être faire défiler la page vers le bas.)
+5. Dans la section **TXT et enregistrements SRV,** sélectionnez **Ajouter un enregistrement.** <br/>(Vous devrez peut-être faire défiler la page vers le bas.)
     
 6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. <br/>(Choisissez la valeur **Type (Type)** dans la liste déroulante.) <br/>
     
@@ -281,12 +281,12 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajoutez les deux enregistrements SRV requis pour Microsoft
 
-Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:51)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:51)]().
   
 > [!NOTE]
 > Si vous vous êtes inscrit auprès 1und1.de, [connectez-vous ici.](https://go.microsoft.com/fwlink/?linkid=859152) 
   
-1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). Vous serez invité à vous connecter.
     
 2. Sélectionnez **Gérer les domaines.**
     
@@ -294,14 +294,14 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
 4. Dans la **zone Paramètres du domaine,** **sélectionnez Modifier les paramètres DNS.**
     
-5. Dans la section **Enregistrements TXT et SRV,** sélectionnez Ajouter un **enregistrement.**
+5. Dans la section **TXT et enregistrements SRV,** sélectionnez **Ajouter un enregistrement.**
     
 6. Ajoutez le premier des deux enregistrements SRV :<br/>Dans la zone **Add Record (Ajouter un enregistrement)**, dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. <br/>(Choisissez les **valeurs Type** et **TTL** dans la liste liste.) 
     
     |**Type**|**Service**|**Protocol (Protocole)**|**Name (Nom)**|**Host (Hôte)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV  <br/> |sip  <br/> |tls  <br/> |(Laissez ce champ vide.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (1 h)  <br/> |
-    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Laissez ce champ vide.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (1 h)  <br/> |  
+    |SRV  <br/> |sip  <br/> |tls  <br/> |(Laissez ce champ vide.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (1 h)  <br/> |
+    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Laissez ce champ vide.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (1 h)  <br/> |  
     
     ![1 &amp; 1-BP-Configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
@@ -311,8 +311,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 9. Dans la **boîte de dialogue Modifier les paramètres DNS,** sélectionnez **Oui.** <br/>![Sélection de Oui dans la boîte de dialogue Modifier les paramètres DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
-10. Ajoutez l’autre enregistrement SRV. <br/>Dans la section **Enregistrements TXT et SRV,** sélectionnez Ajouter un **enregistrement.** <br/>Dans la zone **Ajouter** un enregistrement, créez un enregistrement à l’aide des valeurs de l’autre ligne du tableau, puis sélectionnez de nouveau **Ajouter,** Enregistrer et **Oui** pour terminer l’enregistrement. 
+10. Ajoutez l’autre enregistrement SRV. <br/>Dans la section **TXT et enregistrements SRV,** sélectionnez **Ajouter un enregistrement.** <br/>Dans la zone **Ajouter** un enregistrement, créez un enregistrement à l’aide des valeurs de l’autre ligne du tableau, puis sélectionnez de nouveau **Ajouter,** Enregistrer et **Oui** pour terminer l’enregistrement. 
     
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

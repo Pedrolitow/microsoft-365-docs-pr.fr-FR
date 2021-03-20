@@ -16,21 +16,21 @@ description: Les administrateurs peuvent en savoir plus sur l’utilisation de S
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35266b4ceefe161b907ddbc955fd234b716792a6
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: d189bf7f52dd6f9fb11dc360c17d5fe15729c9fa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288572"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908781"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME pour la signature et le chiffrement des messages dans Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-S/MIME (Secure/Multipurpose Internet Mail Extensions) est une méthode largement acceptée (ou plus précisément un protocole) pour l’envoi de messages signés numériquement et chiffrés. S/MIME vous permet de chiffrer les courriers électroniques et les signer numériquement. Lorsque vous utilisez S/MIME avec un message électronique, cela permet aux personnes qui reçoivent ce message d’être certain que ce qu’elles voient dans leur boîte de réception est le message exact qui a commencé avec l’expéditeur. Il permet également aux personnes qui reçoivent des messages de s’être certain que le message provenait de l’expéditeur spécifique et non d’une personne se faisant passer pour l’expéditeur. Pour ce faire, S/MIME fournit des services de sécurité de chiffrement tels que l'authentification, l'intégrité des messages et la non-répudiation de l'origine (à l'aide de signatures numériques). Il permet également d’améliorer la confidentialité et la sécurité des données (à l’aide du chiffrement) pour la messagerie électronique. Pour en savoir plus sur l'histoire et l'architecture du protocole S/MIME dans le cadre de la messagerie, consultez la rubrique [Présentation du protocole S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)).
+S/MIME (Secure/Multipurpose Internet Mail Extensions) est une méthode largement acceptée (ou plus précisément un protocole) pour l’envoi de messages signés et chiffrés numériquement. S/MIME vous permet de chiffrer les courriers électroniques et les signer numériquement. Lorsque vous utilisez S/MIME avec un message électronique, cela permet aux personnes qui reçoivent ce message d’être certain que ce qu’elles voient dans leur boîte de réception est le message exact qui a commencé avec l’expéditeur. Il permet également aux personnes qui reçoivent des messages de s’être certain que le message provenait de l’expéditeur spécifique et non d’une personne se faisant passer pour l’expéditeur. Pour ce faire, S/MIME fournit des services de sécurité de chiffrement tels que l'authentification, l'intégrité des messages et la non-répudiation de l'origine (à l'aide de signatures numériques). Il permet également d’améliorer la confidentialité et la sécurité des données (à l’aide du chiffrement) pour la messagerie électronique. Pour en savoir plus sur l'histoire et l'architecture du protocole S/MIME dans le cadre de la messagerie, consultez la rubrique [Présentation du protocole S/MIME](/previous-versions/tn-archive/aa995740(v=exchg.65)).
 
-En tant qu’administrateur Exchange Online, vous pouvez activer la sécurité basée sur S/MIME pour les boîtes aux lettres de votre organisation. Utilisez les instructions des rubriques liées ici avec Exchange Online PowerShell pour configurer S/MIME. Pour utiliser S/MIME dans les clients de messagerie pris en charge, les utilisateurs de votre organisation doivent avoir émis des certificats à des fins de signature et de chiffrement, ainsi que des données publiées dans votre service de domaine Active Directory (AD DS) local. Vos services AD DS doivent se trouver sur des ordinateurs à un emplacement physique que vous contrôlez, et non sur une installation distante ou un service basé sur le cloud quelque part sur Internet. Pour plus d’informations sur les services de domaine [Active Directory, voir Vue d’ensemble](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)des services de domaine Active Directory.
+En tant qu’administrateur Exchange Online, vous pouvez activer la sécurité basée sur S/MIME pour les boîtes aux lettres de votre organisation. Utilisez les instructions des rubriques liées ici avec Exchange Online PowerShell pour configurer S/MIME. Pour utiliser S/MIME dans les clients de messagerie pris en charge, les utilisateurs de votre organisation doivent avoir émis des certificats à des fins de signature et de chiffrement, ainsi que des données publiées dans votre service de domaine Active Directory (AD DS) local. Vos services AD DS doivent se trouver sur des ordinateurs à un emplacement physique que vous contrôlez, et non sur une installation distante ou un service basé sur le cloud quelque part sur Internet. Pour plus d’informations sur les services de domaine [Active Directory, voir Vue d’ensemble](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)des services de domaine Active Directory.
 
 ## <a name="supported-scenarios-and-technical-considerations"></a>Scénarios pris en charge et considérations techniques
 
@@ -42,7 +42,7 @@ Vous pouvez configurer la norme S/MIME afin qu'elle fonctionne avec n'importe le
 
 Les étapes à suivre pour configurer S/MIME avec chacun de ces points de fin sont légèrement différentes. En règle générale, vous devez suivre les étapes suivantes :
 
-1. Installez une autorité de certification Windows et définissez une infrastructure à clé publique pour émettre des certificats S/MIME. Les certificats émis par des fournisseurs de certificats tiers sont également pris en charge. Pour plus de détails, reportez-vous à [Vue d'ensemble des services de certificats Active Directory](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
+1. Installez une autorité de certification Basée sur Windows et définissez une infrastructure à clé publique pour émettre des certificats S/MIME. Les certificats émis par des fournisseurs de certificats tiers sont également pris en charge. Pour plus de détails, reportez-vous à [Vue d'ensemble des services de certificats Active Directory](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
 
    **Remarques** :
 
@@ -71,7 +71,7 @@ La configuration de S/MIME pour Exchange Online avec Outlook sur le web implique
 
 ## <a name="related-message-encryption-technologies"></a>Technologies liées au chiffrement des messages
 
-À mesure que la sécurité des messages devient plus importante, les administrateurs doivent comprendre les principes et les concepts de la messagerie sécurisée. Cette compréhension est particulièrement importante en raison de la variété croissante de technologies liées à la protection (y compris S/MIME) disponibles. Pour en savoir plus sur S/MIME et son fonctionnement dans le contexte de la messagerie, voir [Understanding S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)). Diverses technologies de chiffrement fonctionnent ensemble pour fournir une protection pour les messages au repos et en transit. S/MIME peut fonctionner simultanément avec les technologies suivantes, mais n’en dépend pas :
+À mesure que la sécurité des messages devient plus importante, les administrateurs doivent comprendre les principes et les concepts de la messagerie sécurisée. Cette compréhension est particulièrement importante en raison de la variété croissante de technologies liées à la protection (y compris S/MIME) disponibles. Pour en savoir plus sur S/MIME et son fonctionnement dans le contexte de la messagerie, voir [Understanding S/MIME](/previous-versions/tn-archive/aa995740(v=exchg.65)). Diverses technologies de chiffrement fonctionnent ensemble pour assurer la protection des messages au repos et en transit. S/MIME peut fonctionner simultanément avec les technologies suivantes, mais n’en dépend pas :
 
 - **Le chiffrement TLS (Transport Layer Security)** chiffre le tunnel ou l’itinéraire entre les serveurs de messagerie afin d’empêcher l’espion et l’écoute clandestine.
 
@@ -83,8 +83,8 @@ La configuration de S/MIME pour Exchange Online avec Outlook sur le web implique
 
 S/MIME requiert un certificat et une infrastructure de publication qui est souvent utilisée dans les situations entreprise-entreprise et entreprise-client. L'utilisateur contrôle les clés de chiffrement dans S/MIME et peut choisir de les utiliser ou non pour chaque message qu'il envoie. Les programmes de messagerie (par exemple, Outlook) recherchent un emplacement de certification racine approuvée pour effectuer la signature numérique et vérifier la signature. Le chiffrement de messages Office 365 est un service de chiffrement basé sur une stratégie qui peut être configuré par un administrateur, et non par un utilisateur individuel, pour chiffrer les messages envoyés à toute personne à l’intérieur ou à l’extérieur de l’organisation. Il s’agit d’un service en ligne qui repose sur Azure Rights Management (RMS) et ne repose pas sur une infrastructure à clé publique. Le chiffrement de messages Office 365 offre également des fonctionnalités supplémentaires, telles que la possibilité de personnaliser le courrier électronique avec la marque de l’organisation. Pour plus d’informations sur le chiffrement de messages Office 365, voir [Chiffrement dans Office 365.](../../compliance/encryption.md)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
-[Outlook sur le web](https://docs.microsoft.com/exchange/exchange-admin-center)
+[Outlook sur le web](/exchange/exchange-admin-center)
 
-[Secure Mail (2000)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc962043(v=technet.10))
+[Secure Mail (2000)](/previous-versions/windows/it-pro/windows-2000-server/cc962043(v=technet.10))

@@ -15,12 +15,12 @@ ms.custom:
 description: Dans cet article, vous allez découvrir comment déplacer des domaines et des paramètres d’une organisation (locataire) Microsoft Exchange Online Protection (EOP) vers une autre.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 42a212c1826f63f9e7ed8395fe1d6b6564625b7b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 4a9209f71905a858bb631a3c2901b7bfa62551d7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287772"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909057"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Déplacer des domaines et des paramètres d’une organisation EOP vers une autre
 
@@ -33,7 +33,7 @@ L'évolution des besoins professionnels peut parfois imposer de séparer une org
 
 > [!NOTE]
 >
-> - Les réglages ne peuvent être déplacés de manière fiable que depuis une organisation EOP (standard) autonome vers une autre organisation EOP standard ou vers une organisation avec licence d'accès client Exchange Enterprise avec services (EOP Premium), ou depuis une organisation EOP Premium vers une autre organisation EOP premium. Étant donné que certaines fonctionnalités Premium ne sont pas pris en charge dans les organisations EOP Standard, le déplacement d’une organisation EOP Premium vers une organisation EOP Standard peut ne pas réussir.
+> - Les réglages ne peuvent être déplacés de manière fiable que depuis une organisation EOP (standard) autonome vers une autre organisation EOP standard ou vers une organisation avec licence d'accès client Exchange Enterprise avec services (EOP Premium), ou depuis une organisation EOP Premium vers une autre organisation EOP premium. Étant donné que certaines fonctionnalités Premium ne sont pas pris en charge dans les organisations EOP Standard, les déplacements d’une organisation EOP Premium vers une organisation EOP Standard peuvent ne pas réussir.
 >
 > - Les présentes instructions ne concernent que les organisations à filtrage EOP uniquement. Le déplacement depuis une organisation Exchange Online vers une autre organisation Exchange Online pose des problèmes supplémentaires. Les organisations Exchange Online ne sont pas concernées par ces instructions.
 
@@ -61,7 +61,7 @@ Afin de recréer l’organisation source dans l’organisation cible, veillez à
   > [!NOTE]
   > La prise en charge des cmdlet pour l’exportation et l’importation de la collection de règles de flux de messagerie est actuellement prise en charge uniquement pour les plans d’abonnement EOP Premium.
 
-Le moyen le plus simple de collecter tous vos paramètres consiste à utiliser PowerShell. Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+Le moyen le plus simple de collecter tous vos paramètres consiste à utiliser PowerShell. Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Ensuite, vous pouvez collecter tous vos paramètres et les exporter vers un fichier .xml à importer dans le locataire cible. En général, vous pouvez orienter la sortie de la cmdlet **Get** pour chaque paramètre vers la cmdlet **Export-Clixml** afin d'enregistrer les paramètres dans des fichiers .xml, tel qu'illustré dans l'exemple de code ci-après.
 
@@ -75,7 +75,7 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-Le script suivant peut être utilisé pour collecter tous les utilisateurs de messagerie, les groupes, les paramètres anti-courrier indésirable, les paramètres anti-programme malveillant, les connecteurs et les règles de flux de messagerie dans l’organisation source. Copiez-collez le texte suivant dans un éditeur de texte comme le Bloc-notes, enregistrez le fichier sous le nom Source_EOP_Settings.ps1 dans le répertoire Export que vous venez de créer et exécutez la commande suivante :
+Le script suivant peut être utilisé pour collecter tous les utilisateurs de messagerie, groupes, paramètres anti-courrier indésirable, paramètres anti-programme malveillant, connecteurs et règles de flux de messagerie dans l’organisation source. Copiez-collez le texte suivant dans un éditeur de texte comme le Bloc-notes, enregistrez le fichier sous le nom Source_EOP_Settings.ps1 dans le répertoire Export que vous venez de créer et exécutez la commande suivante :
 
 ```PowerShell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"

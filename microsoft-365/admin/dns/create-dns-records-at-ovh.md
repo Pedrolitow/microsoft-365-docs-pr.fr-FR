@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et les autres services sur OVH pour Microsoft.
-ms.openlocfilehash: 14c3796ff6686ae0d98ec32ec6ddf6afc004a3c3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
-ms.translationtype: HT
+ms.openlocfilehash: a43593af80d2f651e4407de64ed9aab51f1c1ecb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657778"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910065"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Créer des enregistrements DNS auprès de OVH pour Microsoft
 
@@ -143,7 +143,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
     |**Type d’enregistrement**|**Sous-domaine**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Cible**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(laissez vide)  <br/> |3600 secondes  <br/> |10  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre *\<domain-key\>* depuis votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(laissez vide)  <br/> |3600 secondes  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre *\<domain-key\>* depuis votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![OVH Enregistrement MX pour courrier](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -292,4 +292,3 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

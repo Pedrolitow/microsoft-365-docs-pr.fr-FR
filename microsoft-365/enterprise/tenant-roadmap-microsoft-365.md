@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Feuille de route pour configurer vos clients pour Microsoft 365.
-ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: fb3b6eecd893a5ab9b71bfa7bdfaea53af43470d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948396"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909453"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Feuille de route du client pour Microsoft 365
 
@@ -27,13 +27,13 @@ Votre client Microsoft 365 est l’ensemble des services affectés à votre orga
 
 Lorsque vous créez un client Microsoft 365, vous l’affectez à un emplacement géographique spécifique. Vous pouvez également avoir un client avec plusieurs emplacements géographiques et déplacer votre client d’un emplacement à un autre.
 
-Pour préparer votre client pour les utilisateurs, les groupes, les licences et les applications cloud, il est essentiel de planifier et d’exécuter avec soin la configuration de votre client.
+Pour préparer votre client pour les utilisateurs, les groupes, les licences et les applications cloud, il est essentiel de planifier et d’exécuter avec soin votre configuration client.
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Configurer votre client Microsoft 365
 
-Une fois que vous vous êtes assuré que votre réseau est optimisé pour l’accès à Microsoft 365 pour les travailleurs locaux et distants, vos prochaines tâches importantes sont la planification et la configuration de votre client Microsoft 365 pour les noms de domaine DNS, les services communs et pour cette infrastructure d’identité qui prend en charge la connectez-vous utilisateur sécurisée.
+Après vous être assuré que votre réseau est optimisé pour l’accès à Microsoft 365 pour les travailleurs locaux et distants, vos prochaines tâches importantes sont la planification et la configuration de votre client Microsoft 365 pour les noms de domaine DNS, les services communs et pour cette infrastructure d’identité qui prend en charge la connectez-vous utilisateur sécurisée.
 
-### <a name="plan"></a>Planification
+### <a name="plan"></a>Prévision
 
 Pour planifier l’implémentation de votre client :
 
@@ -49,7 +49,7 @@ Pour planifier l’implémentation de votre client :
 
 Pour déployer votre client : 
 
-- Ajoutez [les domaines DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) pour votre organisation.
+- Ajoutez [les domaines DNS](../admin/setup/add-domain.md) pour votre organisation.
 - Utilisez les [guides de configuration dans le Centre d’administration Microsoft 365.](setup-guides-for-microsoft-365.md)
 - Créez votre [infrastructure d’identité](identity-roadmap-microsoft-365.md) [et sécurisation de vos utilisateurs.](microsoft-365-secure-sign-in.md)
 
@@ -78,4 +78,4 @@ Si vous avez plusieurs clients Microsoft 365, consultez ces articles pour plus d
 
 ## <a name="next-step"></a>Étape suivante
 
-Commencez la planification de votre client [avec des abonnements, des licences, des comptes et des locataires.](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+Démarrez la planification de votre client [avec des abonnements, des licences, des comptes et des locataires.](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur eNomCentral pour Microsoft.
-ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 528659667ee062c8cf767bed0989558020032924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658110"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910365"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Créer des enregistrements DNS sur eNomCentral pour Microsoft
 
@@ -53,7 +53,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Sous **mes domaines,** sélectionnez le nom du domaine que vous souhaitez modifier.
+2. Sous **mes domaines,** sélectionnez le nom du domaine à modifier.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -117,7 +117,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 
    |Nom d’hôte|Adresse|Pref (Préference)|
    |---|---|---|
-   |@| *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).|
+   |@| *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre *\<domain-key\>* depuis votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml).|
 
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
@@ -142,7 +142,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Sous **mes domaines,** sélectionnez le nom du domaine que vous souhaitez modifier.
+2. Sous **mes domaines,** sélectionnez le nom du domaine à modifier.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -176,7 +176,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un seul  *enregistrement*  SPF qui inclut les deux ensembles de valeurs.
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir *qu’un seul* enregistrement SPF incluant les deux ensembles de valeurs.
 
 Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:12)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).
 
@@ -184,7 +184,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Sous **mes domaines,** sélectionnez le nom du domaine que vous souhaitez modifier.
+2. Sous **mes domaines,** sélectionnez le nom du domaine à modifier.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -215,7 +215,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Sous **mes domaines,** sélectionnez le nom du domaine que vous souhaitez modifier.
+2. Sous **mes domaines,** sélectionnez le nom du domaine à modifier.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -231,8 +231,8 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 
    |Service|Protocole|Priorité|Pondération|Port|Cible (hostname)|
    |---|---|---|---|---|---|
-   |_sip|_tls|100|1 |443|sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)**|
-   |_sipfederationtls|_tcp|100|1 |5061|sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)**|
+   |_sip|_tls|100|1|443|sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)**|
+   |_sipfederationtls|_tcp|100|1|5061|sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)**|
 
    ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
 

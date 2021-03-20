@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: d2ce8ecc12c73969a6ad9b939dc02c6b9cb360f4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9176bfbbd015243266ba1c8cbad9d04787f6a6cc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288406"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909249"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
@@ -40,11 +40,11 @@ Article nouveau ou modifié | Description
 ## <a name="december-2020"></a>Décembre 2020
 Article nouveau ou modifié | Description
 --- | ---
-[Qu’est-ce que le bureau géré Microsoft ?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Article mis à jour
+[Qu’est-ce que le bureau géré Microsoft ?](./intro/index.md) | Article mis à jour
 [Utiliser les rapports](working-with-managed-desktop/reports.md) | Article mis à jour
 [Confidentialité et données personnelles](service-description/privacy-personal-data.md) | Article mis à jour
 [Conformité](intro/compliance.md) | Article mis à jour
-[Conditions préalables](get-ready/prerequisites.md) | Article mis à jour
+[Configuration requise](get-ready/prerequisites.md) | Article mis à jour
 [Configuration réseau](get-ready/network.md) | Article mis à jour
 
 
@@ -63,7 +63,7 @@ Article nouveau ou modifié | Description
 ## <a name="october-2020"></a>Octobre 2020
 Article nouveau ou modifié | Description
 --- | ---
-[Conditions préalables](get-ready/prerequisites.md) | Article mis à jour
+[Configuration requise](get-ready/prerequisites.md) | Article mis à jour
 [Utiliser les informations](working-with-managed-desktop/insights.md) | Article mis à jour
 [Procédure permettant aux partenaires d’inscrire des appareils](get-started/register-devices-partner.md) | Article mis à jour
 [Accéder au portail d’administration](get-started/access-admin-portal.md) | Article mis à jour
@@ -188,8 +188,8 @@ Article nouveau ou modifié | Description
 [Informations d’utilisation](working-with-managed-desktop/usage-insights.md) | Nouvel article
 [Informations de fiabilité](working-with-managed-desktop/reliability-insights.md) | Nouvel article
 [Appareils de bureau géré Microsoft](service-description/device-list.md) | Article mis à jour
-[Page principale bureau géré Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/) | Article mis à jour
-[Qu’est-ce que le bureau géré Microsoft ?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Article mis à jour
+[Page principale bureau géré Microsoft](./index.yml) | Article mis à jour
+[Qu’est-ce que le bureau géré Microsoft ?](./intro/index.md) | Article mis à jour
 [Préparer vos utilisateurs à l’utilisation les appareils](get-started/get-started-devices.md) | Article mis à jour
 [Exceptions au plan de service](service-description/customizing.md) | Article mis à jour
 
@@ -259,7 +259,7 @@ Article nouveau ou modifié | Description
 [Appareils archivés bureau géré Microsoft](service-description/archived-device-list.md) | Nouvel article
 [Préparer les lecteurs mappés pour le Bureau géré Microsoft](get-ready/mapped-drives.md) | Nouvel article
 [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Nouvel article
-[Commander des appareils bureau géré Microsoft](get-started/devices.md) | Article mis à jour
+[Commander des appareils Bureau géré Microsoft](get-started/devices.md) | Article mis à jour
 [Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md) | Nouvel article
 
 ## <a name="april-2019"></a>Avril 2019
@@ -270,7 +270,7 @@ Article nouveau ou modifié | Description
 [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](get-ready/authentication.md) | Nouvel article
 [Inscrire des appareils dans Le Bureau géré Microsoft](get-started/register-devices-self.md) | Nouvel article
 [Inscrire des appareils dans Bureau géré Microsoft pour les partenaires](get-started/register-devices-partner.md) | Nouvel article
-[Déployer des applications sur des appareils de bureau géré Microsoft](get-started/deploy-apps.md) | Article mis à jour
+[Déployer des applications sur des appareils bureau géré Microsoft](get-started/deploy-apps.md) | Article mis à jour
 
 ## <a name="march-2019"></a>Mars 2019
 Article nouveau ou modifié | Description
@@ -303,8 +303,7 @@ Article nouveau ou modifié | Description
 
 Article nouveau ou modifié | Description
 --- | ---
-[Prise en charge du Bureau géré Microsoft](service-description/support.md)<br />et [prise en charge des utilisateurs pour le Bureau géré Microsoft](working-with-managed-desktop/end-user-support.md) | Mise à jour pour inclure l’Australie.
+[Prise en charge du Bureau géré Microsoft](service-description/support.md)<br />et [prise en charge des utilisateurs pour bureau géré Microsoft](working-with-managed-desktop/end-user-support.md) | Mise à jour pour inclure l’Australie.
 
 ## <a name="october-30-2018"></a>30 octobre 2018
-Contenu réorganisé : section ajoutée pour la description du service Bureau géré [Microsoft.](service-description/index.md) 
-
+Contenu réorganisé : section ajoutée pour la description du service Bureau géré [Microsoft.](service-description/index.md)

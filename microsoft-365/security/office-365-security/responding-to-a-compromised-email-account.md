@@ -20,12 +20,12 @@ search.appverid:
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5dfb40c195cb9df9c8f2ac5d1cfbacdda022d416
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 774d96fb22bb13d4b4edcfab45f27ca9e52c5e88
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406723"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908829"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
@@ -102,7 +102,7 @@ Suivez les procédures décrites dans [Réinitialiser un mot de passe d’entrep
 >
 > - Si votre identité locale est fédérée avec Microsoft 365, vous devez modifier votre mot de passe local, puis vous devez informer votre administrateur de l’attaque.
 >
-> - Veillez à mettre à jour les mots de passe d’application. Les mots de passe d’application ne sont pas automatiquement révoqués lors de la réinitialisation du mot de passe d’un compte utilisateur. L’utilisateur doit supprimer les mots de passe d’application existants et en créer de nouveaux. Pour obtenir des instructions, voir [Créer et supprimer des mots de passe d’application à partir de la page Vérification de sécurité supplémentaire](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+> - Veillez à mettre à jour les mots de passe d’application. Les mots de passe d’application ne sont pas automatiquement révoqués lors de la réinitialisation du mot de passe d’un compte utilisateur. L’utilisateur doit supprimer les mots de passe d’application existants et en créer de nouveaux. Pour obtenir des instructions, voir [Créer et supprimer des mots de passe d’application à partir de la page Vérification de sécurité supplémentaire](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
 > - Nous vous recommandons vivement d’activer l’authentification multifacteur (MFA) pour éviter les compromissions, en particulier pour les comptes avec des privilèges d’administration. Pour en savoir plus sur l’authentification multifacteur, voir [Configurer l’authentification multifacteur](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 

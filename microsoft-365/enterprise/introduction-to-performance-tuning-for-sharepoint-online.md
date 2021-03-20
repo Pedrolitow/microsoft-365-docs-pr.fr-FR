@@ -17,12 +17,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: Cet article explique les aspects spécifiques à prendre en compte lors de la conception de pages pour de meilleures performances dans SharePoint Online.
-ms.openlocfilehash: d3a9dedbd5812774b81494af0f8defa5568f7dac
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6f40243c9d6a1657b6716a071288f5b4fb018164
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690117"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909737"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introduction à l’optimisation des performances pour SharePoint Online
 
@@ -52,7 +52,7 @@ Les données nous indiquent :
     
 - Le chargement des 1 % de pages SharePoint Online les plus lentes prend plus de 5 000 millisecondes.
     
-Un test d’évaluation simple que vous pouvez utiliser serait de mesurer les performances en comparant le temps de chargement de votre propre portail au temps de chargement de la page d’accueil OneDrive Entreprise, car elle utilise peu de fonctionnalités personnalisées. Il s’agit souvent de la première étape que le support vous demande d’effectuer lors de la résolution des problèmes de performances réseau.
+Un test de référence simple que vous pouvez utiliser serait de mesurer les performances en comparant le temps de chargement de votre propre portail au temps de chargement de la page d’accueil OneDrive Entreprise, car elle utilise peu de fonctionnalités personnalisées. Il s’agit souvent de la première étape que le support vous demande d’effectuer lors de la résolution des problèmes de performances réseau.
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>Utiliser un compte d’utilisateur standard lors de la vérification des performances
 
@@ -88,7 +88,7 @@ Au sein de ces trois connexions, il existe généralement cinq raisons qui provo
 
 De nombreux problèmes qui affectent les performances avec SharePoint en local s’appliquent également à SharePoint Online.
   
-Comme vous vous y attendiez, vous avez beaucoup plus de contrôle sur la façon dont les serveurs fonctionnent avec SharePoint local. Avec SharePoint Online, les choses sont légèrement différentes. Plus vous faites de travail sur un serveur, plus le rendu d’une page est long. Avec SharePoint, le principal responsable à cet égard est les pages complexes avec plusieurs composants Web Parts.
+Comme vous vous y attendiez, vous avez beaucoup plus de contrôle sur la façon dont les serveurs fonctionnent avec SharePoint local. Avec SharePoint Online, les choses sont légèrement différentes. Plus vous faites de travail sur un serveur, plus le rendu d’une page est long. Avec SharePoint, le principal responsable à cet égard sont les pages complexes avec plusieurs composants Web Parts.
   
 SharePoint Server local
   
@@ -102,7 +102,7 @@ Avec SharePoint Online, certaines demandes de page peuvent en réalité finir pa
   
 Voici quelques exemples de ces interactions serveur à serveur :
   
-- Serveurs web SQL serveur
+- Serveurs web SQL serveurs
     
 - Serveurs web et d’applications
     
@@ -162,6 +162,4 @@ Consultez les articles suivants pour découvrir différentes techniques de perso
     
 - [Utilisation du cache d’objets avec SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [Procédure : éviter les limitations ou les blocages dans SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
-    
-
+- [Procédure : éviter les limitations ou les blocages dans SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)

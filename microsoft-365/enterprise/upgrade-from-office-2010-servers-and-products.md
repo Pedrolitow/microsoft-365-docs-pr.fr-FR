@@ -23,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: Commencez à planifier votre mise à niveau à partir de serveurs et d’applications clientEs Office 2010, car la prise en charge se termine bientôt et les contrats de support personnalisés ne sont pas disponibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9dcf5c36cff5e14828b1a6540ed920577537c49
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 85a6efac9c7e622157b01b02c5d9c38a1e74d5e4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519777"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909297"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 
@@ -56,11 +56,11 @@ Vous pouvez également [télécharger cette](https://github.com/MicrosoftDocs/mi
 
 |Pour ce produit|À la date de fin de la prise en charge|Voir cette ressource|
 |---|---|---|
-|Office 2010 (y compris Word 2010, Excel 2010, PowerPoint 2010 et Outlook 2010)|13 octobre 2020 |[Feuille de route pour la fin de la prise en charge d’Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)|
+|Office 2010 (y compris Word 2010, Excel 2010, PowerPoint 2010 et Outlook 2010)|13 octobre 2020 |[Feuille de route pour la fin de la prise en charge d’Office 2010](/DeployOffice/office-2010-end-support-roadmap)|
 |Exchange Server 2010|13 octobre 2020|[Feuille de route pour la fin de la prise en charge d'Exchange 2010](exchange-2010-end-of-support.md)|
 |SharePoint Server 2010 ou SharePoint Serverˆ2010|13 avril 2021|[Mise à jour à jour de SharePoint 2010](upgrade-from-sharepoint-2010.md)|
 |Project Server 2010|13 avril 2021|[Feuille de route pour la fin de la prise en charge de Project Server 2010](project-server-2010-end-of-support.md)|
-|Lync Server 2010|13 avril 2021|[Planifiez la mise à jour vers Skype Entreprise Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+|Lync Server 2010|13 avril 2021|[Planifiez la mise à jour vers Skype Entreprise Server](/skypeforbusiness/plan-your-deployment/upgrade)|
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Je suis un particulier. Que dois-je faire ?
 
@@ -70,6 +70,6 @@ Si vous utilisez les produits et applications Office 2010 à la maison, consulte
 
 [Vidéo : qu’est-ce que Microsoft 365 ?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
 
-[Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Politique de cycle de vie Microsoft](/lifecycle/)
 
 [Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010](plan-upgrade-previous-versions-office.md)

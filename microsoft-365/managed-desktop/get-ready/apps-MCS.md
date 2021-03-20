@@ -9,29 +9,29 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f8c4e427c536577ea2fc768d4930b9d4db6ac697
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 04b0c7905c83be2afa46abcfb2d4bb5cd9735e06
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841422"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909225"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Utilisation de Microsoft Consulting Services
 
-Vous pouvez interagir avec Microsoft Consulting Services (MCS) pour obtenir vos applications empaquetées pour une utilisation avec Bureau géré Microsoft. Pour plus d’informations, contactez votre représentant de compte pour contacter MCS et déterminer l’étendue de votre projet d’empaquetage d’application spécifique.
+Vous pouvez utiliser Microsoft Consulting Services (MCS) pour obtenir vos applications empaquetées pour une utilisation avec Bureau géré Microsoft. Pour plus d’informations, contactez votre représentant de compte pour contacter MCS et déterminer l’étendue de votre projet d’empaquetage d’application spécifique.
 
 ## <a name="roles-and-responsibilities"></a>Rôles et responsabilités
 
 Pour travailler avec l’empaquetage d’application MCS, **vous devez fournir les éléments ci-après**:
 
 - Fichiers du programme d’installation source (par exemple, setup.exe ou .msi).
-- Instructions d’installation spécifiant l’apparence de l’installation finale. Par exemple, doit-il y avoir un raccourci bureau vers l’application ? Quelle doit être la visibilité de l’application ? L’application doit-elle se connecter à un serveur et, si c’est le cas, laquelle ? Pour plus d’informations, voir le modèle de demande [d’empaquetage d’application.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)
+- Instructions d’installation, spécifiant des détails sur l’apparence de l’installation finale. Par exemple, doit-il y avoir un raccourci bureau vers l’application ? Quelle doit être la visibilité de l’application ? L’application doit-elle se connecter à un serveur et, si c’est le cas, laquelle ? Pour plus d’informations, voir le modèle de demande [d’empaquetage d’application.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)
 - Vous devez effectuer vos propres tests d’acceptation pour vérifier que l’application fonctionne comme vous le souhaitez dans votre environnement.
 
 **MCS s’occupe des actions ci-après :**
 
 - Vérification de l’interdiction ou de la restriction de l’application dans l’environnement Bureau géré Microsoft.
-- Test de l’installation, du démarrage et de la désinstallation de l’application pour garantir la compatibilité avec Windows 10. Si MCS découvre un problème de compatibilité, l’application est remise au programme [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) pour correction.
+- Test de l’installation, du démarrage et de la désinstallation de l’application pour garantir la compatibilité avec Windows 10. Si MCS découvre un problème de compatibilité, il va remettre l’application au programme [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) pour correction.
 - Empaquetage de l’application selon vos spécifications, puis test du déploiement de l’application à l’aide de Microsoft Intune.
 
 ## <a name="app-delivery-schedule"></a>Planification de remise des applications
@@ -55,5 +55,3 @@ MCS utilisera ces autorisations pour effectuer les actions suivantes :
 -   Téléchargement de l’application vers Microsoft Intune pour le déploiement vers vos utilisateurs
 
 Sans ces autorisations, mcS peut avancer, mais il ne pourra pas télécharger les applications dans votre environnement.
-
-

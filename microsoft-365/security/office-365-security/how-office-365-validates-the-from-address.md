@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les types d’adress
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f8ced200c2e521533c1dec8a9d0917add7ca058f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 71da944c02137024adda48434c5214695c54a817
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287818"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910677"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse De pour empêcher le hameçonnage
 
@@ -35,13 +35,13 @@ ms.locfileid: "50287818"
 - [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Les attaques par hameçonnage sont une menace constante pour toute organisation de messagerie. Outre l’utilisation d’adresses e-mail d’expéditeur falsifiées [(falsifiées),](anti-spoofing-protection.md)les personnes malveillantes utilisent souvent des valeurs dans l’adresse De qui ne respectent pas les normes Internet. Pour éviter ce type de hameçonnage, Exchange Online Protection (EOP) et Outlook.com requièrent désormais que les messages entrants incluent une adresse de provenance conforme À la norme RFC, comme décrit dans cet article. Cette application a été activée en novembre 2017.
+Les attaques par hameçonnage sont une menace constante pour toute organisation de messagerie. Outre l’utilisation d’adresses e-mail d’expéditeur falsifiées [(falsifiées),](anti-spoofing-protection.md)les personnes malveillantes utilisent souvent des valeurs dans l’adresse De qui ne respectent pas les normes Internet. Pour éviter ce type d’hameçonnage, Exchange Online Protection (EOP) et Outlook.com requièrent désormais que les messages entrants incluent une adresse de provenance conforme À la norme RFC, comme décrit dans cet article. Cette application a été activée en novembre 2017.
 
 **Remarques** :
 
 - Si vous recevez régulièrement des messages électroniques provenant d’organisations dont les adresses ont été mal renseignées, comme décrit dans cet article, encouragez ces organisations à mettre à jour leurs serveurs de messagerie pour se conformer aux normes de sécurité modernes.
 
-- Le champ Expéditeur associé (utilisé par les listes d’envoi de la part de et de publipostage) n’est pas affecté par ces exigences. Pour plus d’informations, consultez le billet de blog suivant : Que voulons-nous dire lorsque nous faisons référence à l'« expéditeur » [d’un e-mail ?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)
+- Le champ Expéditeur associé (utilisé par les listes d’envoi de la part de et de publipostage) n’est pas affecté par ces exigences. Pour plus d’informations, consultez le billet de blog suivant : Que voulons-nous dire lorsque nous faisons référence à l'« expéditeur » [d’un e-mail ?](/archive/blogs/tzink/what-do-we-mean-when-we-refer-to-the-sender-of-an-email)
 
 ## <a name="an-overview-of-email-message-standards"></a>Vue d’ensemble des normes de message électronique
 
@@ -49,7 +49,7 @@ Un message électronique SMTP standard est constitué d’une *enveloppe de mes
 
 - L’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) est l’adresse de messagerie utilisée dans la `5321.MailFrom` transmission SMTP du message.  Cette adresse de messagerie est généralement enregistrée dans le champ **d’en-tête Return-Path** dans l’en-tête du message (bien qu’il soit possible pour l’expéditeur de désigner une autre adresse de messagerie **Return-Path).**
 
-- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse e-mail de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  L’adresse de provenance est au centre des exigences de cet article.
+- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse de messagerie de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  L’adresse de provenance est au centre des exigences de cet article.
 
 L’adresse De est définie en détail sur plusieurs RFC (par exemple, les sections RFC 5322 3.2.3, 3.4 et 3.4.1 et [RFC 3696](https://tools.ietf.org/html/rfc3696)). Il existe de nombreuses variantes sur l’adressan et ce qui est considéré comme valide ou non valide. Pour des raisons de simplicité, nous vous recommandons le format et les définitions suivants :
 
@@ -57,8 +57,8 @@ L’adresse De est définie en détail sur plusieurs RFC (par exemple, les secti
 
 - **Nom complet**: expression facultative qui décrit le propriétaire de l’adresse e-mail.
 
-  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme indiqué. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
-  - Si l’adresse De comprend un nom complet, la valeur EmailAddress doit être entre crochets (< >) comme illustré.
+  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme illustré. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
+  - Si l’adresse De comprend un nom d’affichage, la valeur EmailAddress doit être entre crochets (< >) comme illustré.
   - Microsoft recommande vivement d’insérer un espace entre le nom complet et l’adresse e-mail.
 
 - **EmailAddress**: une adresse de messagerie utilise le format `local-part@domain` :
@@ -112,7 +112,7 @@ Les adresses de messagerie De suivantes ne sont pas valides :
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Supprimer les réponses automatiques à votre domaine personnalisé
 
-Vous ne pouvez pas utiliser la valeur `From: <>` pour supprimer les réponses automatiques. Au lieu de cela, vous devez configurer un enregistrement MX null pour votre domaine personnalisé. Les réponses automatiques (et toutes les réponses) sont supprimées naturellement, car il n’existe aucune adresse publiée à qui le serveur répondant peut envoyer des messages.
+Vous ne pouvez pas utiliser la valeur pour `From: <>` supprimer les réponses automatiques. Au lieu de cela, vous devez configurer un enregistrement MX null pour votre domaine personnalisé. Les réponses automatiques (et toutes les réponses) sont supprimées naturellement, car il n’existe aucune adresse publiée à qui le serveur répondant peut envoyer des messages.
 
 - Choisissez un domaine de messagerie qui ne peut pas recevoir de courrier électronique. Par exemple, si votre domaine principal est contoso.com, vous pouvez choisir noreply.contoso.com.
 

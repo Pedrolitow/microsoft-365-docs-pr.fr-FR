@@ -1,7 +1,7 @@
 ---
 title: Préparer les certificats et les profils réseau pour le Bureau géré Microsoft
 description: certs/wifi/lan
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cf31778d773a271ead6a1745197f04eca127ab5d
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 9f4490711c1ea051afe9d8efb081a2f7a141f8ba
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841094"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909117"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Préparer les certificats et les profils réseau pour le Bureau géré Microsoft  
  
@@ -36,21 +36,21 @@ Avant de déployer des certificats SCEP ou PKCS sur le Bureau géré Microsoft, 
   
 ## <a name="wi-fi-connectivity-requirements"></a>Wi-Fi connectivité requise
 
-Pour permettre à un appareil d’être automatiquement fourni avec la configuration Wi-Fi requise pour votre réseau d’entreprise, vous devrez peut-être un profil Wi-Fi configuration. Vous pouvez configurer Bureau géré Microsoft pour déployer ces profils sur vos appareils. Si la sécurité de votre réseau nécessite que les appareils font partie du domaine local, vous devrez peut-être également évaluer votre infrastructure réseau Wi-Fi pour vous assurer qu’elle est compatible avec les appareils de bureau géré Microsoft (les appareils de bureau géré Microsoft sont joints uniquement à Azure AD). 
+Pour permettre à un appareil d’être automatiquement fourni avec la configuration Wi-Fi requise pour votre réseau d’entreprise, vous devrez peut-être un profil Wi-Fi configuration. Vous pouvez configurer Bureau géré Microsoft pour déployer ces profils sur vos appareils. Si votre sécurité réseau nécessite que les appareils font partie du domaine local, vous devrez peut-être également évaluer votre infrastructure réseau Wi-Fi pour vous assurer qu’elle est compatible avec les appareils de bureau géré Microsoft (les appareils de bureau géré Microsoft sont joints uniquement à Azure AD). 
  
 Avant de déployer une configuration Wi-Fi sur les appareils de bureau géré Microsoft, vous devez rassembler les exigences de votre organisation pour chaque Wi-Fi réseau. Pour faciliter cette activité, vous pouvez utiliser ce modèle [de profil WiFi.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx)
  
  
 ## <a name="wired-connectivity-requirements-and-8021x-authentication"></a>Exigences de connectivité câblé et authentification 802.1x 
  
-Si vous utilisez l’authentification 802.1x pour sécuriser l’accès à partir d’appareils à votre réseau local( LAN), vous devrez pousser les détails de configuration requis vers vos appareils bureau géré Microsoft. Les appareils Bureau géré Microsoft exécutant Windows 10, version 1809 ou ultérieure prise en charge le déploiement d’une configuration 802.1x via le fournisseur de services de configuration (CSP) WiredNetwork. Pour plus d’informations, voir la documentation [du programme CSP WiredNetwork.](https://docs.microsoft.com/windows/client-management/mdm/wirednetwork-csp) 
+Si vous utilisez l’authentification 802.1x pour sécuriser l’accès à partir d’appareils à votre réseau local( LAN), vous devrez pousser les détails de configuration requis vers vos appareils bureau géré Microsoft. Les appareils Bureau géré Microsoft exécutant Windows 10, version 1809 ou ultérieure prise en charge le déploiement d’une configuration 802.1x via le fournisseur de services de configuration (CSP) WiredNetwork. Pour plus d’informations, voir la documentation [du programme CSP WiredNetwork.](/windows/client-management/mdm/wirednetwork-csp) 
  
 Avant de déployer un profil de configuration de réseau câblé sur les appareils bureau géré Microsoft, rassemblez les exigences de votre organisation pour votre réseau d’entreprise câblé. Pour ce faire, procédez comme suit : 
  
  
 1. Connectez-vous à un appareil sur qui votre profil 802.1x existant est configuré et qui est connecté au réseau local.  
 2. Ouvrez une invite de commandes avec des informations d’identification administratives. 
-3. Recherchez le nom de l’interface réseau en exécutant **l’interface netsh afficher l’interface.** 
+3. Recherchez le nom de l’interface LAN en exécutant **l’interface netsh afficher l’interface**. 
 4. Exporte le fichier XML de profil LAN en exécutant **netsh lan export profile folder=.  Interface="interface_name »**. 
 5. Si vous devez tester votre profil exporté sur un appareil de bureau géré Microsoft, exécutez **netsh lan add profile filename="PATH_AND_FILENAME.xml » interface="INTERFACE_NAME »**. 
  
@@ -59,7 +59,7 @@ Avant de déployer un profil de configuration de réseau câblé sur les apparei
  
 Si vous avez déjà une infrastructure SCEP ou PKCS avec Intune et que cette approche répond à vos besoins, vous pouvez également l’utiliser pour bureau géré Microsoft. Si aucune infrastructure SCEP ou PKCS n’existe déjà, vous devez en préparer une.  
  
-Pour plus d’informations, [voir Configurer un profil de certificat pour vos appareils dans Microsoft Intune.](https://docs.microsoft.com/intune/certificates-configure) 
+Pour plus d’informations, [voir Configurer un profil de certificat pour vos appareils dans Microsoft Intune.](/intune/certificates-configure) 
  
  
  
@@ -67,7 +67,7 @@ Pour plus d’informations, [voir Configurer un profil de certificat pour vos ap
  
 Une fois que votre profil LAN a été exporté, vous pouvez préparer la stratégie pour bureau géré Microsoft en suivant les étapes suivantes :   
  
-1. Créez un profil personnalisé dans Microsoft Intune pour le profil LAN à l’aide des paramètres suivants (voir Utiliser des paramètres personnalisés pour les appareils [Windows 10 dans Intune).](https://docs.microsoft.com/intune/custom-settings-windows-10) Dans **paramètres OMA-URI personnalisés,** **sélectionnez** Ajouter, puis entrez les valeurs suivantes : 
+1. Créez un profil personnalisé dans Microsoft Intune pour le profil LAN à l’aide des paramètres suivants (voir Utiliser des paramètres personnalisés pour les appareils [Windows 10 dans Intune).](/intune/custom-settings-windows-10) Dans **paramètres OMA-URI personnalisés,** **sélectionnez** Ajouter, puis entrez les valeurs suivantes : 
     - Name: *Modern Workplace-Windows 10 LAN Profile* 
     - Description : entrez une description qui donne une vue d’ensemble du paramètre, ainsi que d’autres détails importants. 
     - OMA-URI (sensible à la cas) : Enter *./Device/Vendor/MSFT/WiredNetwork/LanXML*
@@ -80,10 +80,9 @@ Une fois que votre profil LAN a été exporté, vous pouvez préparer la straté
  
 Pour déployer des certificats et des profils, suivez les étapes suivantes :
 
-1. Créez un profil pour chacun des certificats racines et intermédiaires (voir [Créer des profils de certificats de confiance.](https://docs.microsoft.com/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles) Chacun de ces profils doit avoir une description qui inclut une date d’expiration au format JD/MM/AAA. **Les profils de certificats sans date d’expiration ne seront pas déployés.**
-2. Créez un profil pour chaque certificat SCEP ou PKCS (voir Créer un profil de certificat [SCEP](https://docs.microsoft.com/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) ou Créer un profil de certificat [PKCS).](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)Chacun de ces profils doit avoir une description qui inclut une date d’expiration au format JJ/MM/AAAA. **Les profils de certificats sans date d’expiration ne seront pas déployés.**
-3. Créez un profil pour chaque réseau WiFi d’entreprise (voir [paramètres Wi-Fi pour les appareils Windows 10 et ultérieurs).](https://docs.microsoft.com/intune/wi-fi-settings-windows)
-4. Créez un profil pour chaque VPN d’entreprise (voir paramètres de périphérique Windows 10 et Windows Holographique pour ajouter des connexions VPN à l’aide [d’Intune).](https://docs.microsoft.com/intune/vpn-settings-windows-10)
+1. Créez un profil pour chacun des certificats racines et intermédiaires (voir [Créer des profils de certificats de confiance.](/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles) Chacun de ces profils doit avoir une description qui inclut une date d’expiration au format JD/MM/AAA. **Les profils de certificats sans date d’expiration ne seront pas déployés.**
+2. Créez un profil pour chaque certificat SCEP ou PKCS (voir Créer un profil de certificat [SCEP](/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) ou Créer un profil de certificat [PKCS).](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)Chacun de ces profils doit avoir une description qui inclut une date d’expiration au format JJ/MM/AAAA. **Les profils de certificats sans date d’expiration ne seront pas déployés.**
+3. Créez un profil pour chaque réseau WiFi d’entreprise (voir [paramètres Wi-Fi pour les appareils Windows 10 et ultérieurs).](/intune/wi-fi-settings-windows)
+4. Créez un profil pour chaque VPN d’entreprise (voir paramètres de périphérique Windows 10 et Windows Holographique pour ajouter des connexions VPN à l’aide [d’Intune).](/intune/vpn-settings-windows-10)
 5. Envoyez une demande de support intitulée « Déploiement de certificat » ou « Déploiement de profil Wi-Fi » aux opérations informatiques de bureau géré Microsoft à l’aide du portail d’administration du bureau géré Microsoft pour passer en revue et déployer le profil de configuration sur « Appareils de lieux de travail modernes – Test ». Les opérations informatiques du bureau géré Microsoft vous feront savoir à quel moment la demande est terminée via la demande de support dans le portail d’administration. 
- 
  

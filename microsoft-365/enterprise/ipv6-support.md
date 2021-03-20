@@ -18,18 +18,18 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Résumé : Décrit la prise en charge d’IPv6 dans Microsoft Office 365 et dans les offres Office 365 pour le gouvernement.'
-ms.openlocfilehash: f671e8caf868ebbed628a155b73ce6fe413949a9
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 7f06ed6f8df2c6552ee0a331ad958bca289d0a09
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235605"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909681"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Prise en charge du protocole IPv6 dans les services Office 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Office 365 prend en charge IPv6 et IPv4 ; toutefois, toutes les fonctionnalités Office 365 ne sont pas entièrement activées avec IPv6. Cela signifie que vous devez utiliser IPv4 et IPv6 pour vous connecter à Office 365. Si vous filtrez votre trafic sortant vers Office 365, vous pouvez trouver la liste complète des adresses IPv6 pris en charge par Office 365 dans l’article URL et [plages d’adresses IP Office 365.](urls-and-ip-address-ranges.md) Une fois votre réseau configuré et les adresses IPv6 appropriées autorisées, vous pouvez télécharger le plan de [test Office 365 IPv6](https://go.microsoft.com/fwlink/?LinkId=293447) à partir du Centre de téléchargement Microsoft.
+Office 365 prend en charge IPv6 et IPv4 ; Toutefois, toutes les fonctionnalités Office 365 ne sont pas entièrement activées avec IPv6. Cela signifie que vous devez utiliser IPv4 et IPv6 pour vous connecter à Office 365. Si vous filtrez votre trafic sortant vers Office 365, vous pouvez trouver la liste complète des adresses IPv6 pris en charge par Office 365 dans l’article URL et [plages d’adresses IP Office 365.](urls-and-ip-address-ranges.md) Une fois votre réseau configuré et les adresses IPv6 appropriées autorisées, vous pouvez télécharger le plan de [test Office 365 IPv6](https://go.microsoft.com/fwlink/?LinkId=293447) à partir du Centre de téléchargement Microsoft.
   
 ## <a name="ipv6-support-in-office-365-subscription-service"></a>Prise en charge d’IPv6 dans le service d’abonnement Office 365
 
@@ -63,9 +63,9 @@ Exchange Online Protection (EOP) prend en charge IPv6 si la transmission se prod
 
 La prise en charge d’Office 365 IPv6 pour les offres gouvernementales est conforme à la loi OMB (Office of Management and Budget) Premier responsable de l’information des services et agences, ainsi qu’à l’adoption par le gouvernement fédéral du protocole IPv6 (Internet Protocol Version 6). [Microsoft Office 365](https://go.microsoft.com/fwlink/p/?LinkId=325414) pour le gouvernement est un service multi-clients qui stocke les données du gouvernement américain dans un cloud communautaire séparé. Comme d’autres offres Office 365, il fournit des services de productivité et de collaboration, notamment Exchange Online, Skype Entreprise, SharePoint Online et Microsoft 365 Apps for enterprise. 
 
-Les Microsoft Office 365 pour le gouvernement s’appliquent uniquement pour 2013 et les ultérieures. Pour plus d’informations sur les offres Office 365 pour le gouvernement, voir [Annonce d’Office 365](https://go.microsoft.com/fwlink/p/?LinkId=325414)pour le gouvernement : un cloud communautaire pour le gouvernement des États-Unis. La réglementation ITAR (International Traffic in Arms Regulations) est un ensemble de réglementations gouvernementales américaines qui contrôlent l’exportation et l’importation d’articles et de services relatifs à la défense sur la liste de munitions des États-Unis [(USML).](https://go.microsoft.com/fwlink/p/?LinkId=325415) 
+Les Microsoft Office 365 pour le gouvernement s’appliquent uniquement pour 2013 et les ultérieures. Pour plus d’informations sur les offres Office 365 pour le gouvernement, voir [Annonce d’Office 365](https://go.microsoft.com/fwlink/p/?LinkId=325414)pour le gouvernement : un cloud communautaire pour le gouvernement des États-Unis. La réglementation ITAR (International Traffic in Arms Regulations) est un ensemble de réglementations du gouvernement américain qui contrôlent l’exportation et l’importation d’articles et de services relatifs à la défense sur la liste de munitions des États-Unis [(USML).](https://go.microsoft.com/fwlink/p/?LinkId=325415) 
 
-Microsoft Office 365 pour les entreprises fournit des services d’hébergement dédiés pour les solutions de productivité Microsoft qui permettent de prendre en charge les exigences de sécurité, de confidentialité et de conformité réglementaire pour les agences fédérales américaines nécessitant la certification FISMA (Federal Information Security Management) et les entités commerciales soumises à ITAR.
+Microsoft Office 365 pour les entreprises fournit des services d’hébergement dédiés pour les solutions de productivité Microsoft qui assurent la sécurité, la confidentialité et la conformité réglementaire pour les agences fédérales américaines nécessitant la certification FISMA (Federal Information Security Management) et les entités commerciales soumises à ITAR.
   
 ## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>Éléments à prendre en compte lors de l’utilisation d’IPv6 et d’Office 365
 
@@ -85,10 +85,10 @@ Ces considérations peuvent s’appliquer à votre réseau :
 
 - Si vous utilisez les services AD FS (Active Directory Federation Services) avec Office 365, la publicité de votre point de terminaison réseau AD FS vers Office 365 à l’aide d’IPv6 n’est pas prise en charge. Vous ne devez pas inclure d’enregistrements AAAA dans l’entrée DNS AD FS lors de l’utilisation d’Exchange Online. 
 
-Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
+Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365ip6]()
   
 ## <a name="see-also"></a>Voir aussi
 
-[Parcours de formation IPv6](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
+[Parcours de formation IPv6](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
   
 [Guide de survie IPv6](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)

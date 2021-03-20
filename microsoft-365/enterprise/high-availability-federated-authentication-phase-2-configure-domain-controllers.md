@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Résumé : Configurez les contrôleurs de domaine et le serveur de synchronisation d’annuaires pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: 1c3fd686ee553a57d66dcfd51a6045167a12de8a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 751d332ce5f5606fe5f833182f002a1f4b6f29ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690005"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909809"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Authentification fédérée haute disponibilité, phase 2 : Configurer les contrôleurs de domaine
 
@@ -46,7 +46,7 @@ Tout d'abord, vous devez remplir la colonne du **nom de la machine virtuelle** d
    
  **Tableau M - Machines virtuelles pour l’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure**
   
-Pour obtenir la liste complète des tailles de machine virtuelle, reportez-vous à la rubrique [Tailles des machines virtuelles Windows dans Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
+Pour obtenir la liste complète des tailles de machine virtuelle, reportez-vous à la rubrique [Tailles des machines virtuelles Windows dans Azure](/azure/virtual-machines/virtual-machines-windows-sizes).
   
 Le bloc de commandes Azure PowerShell suivant permet de créer les machines virtuelles pour les deux contrôleurs de domaine. Spécifiez les valeurs des variables, en supprimant les \< and > caractères. Notez que ce bloc de commandes Azure PowerShell utilise des valeurs provenant des tableaux suivants :
   
@@ -65,7 +65,7 @@ Le bloc de commandes Azure PowerShell suivant permet de créer les machines vir
 Rappelez-vous que vous avez défini les tableaux R, V, S, I et A dans [la phase 1 : Configurer Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Voir [La mise en place d’Azure PowerShell.](https://docs.microsoft.com/powershell/azure/get-started-azureps) 
+> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Voir [La mise en place d’Azure PowerShell.](/powershell/azure/get-started-azureps) 
   
 Lorsque vous avez indiqué toutes les valeurs correctes, exécutez le bloc résultant à l’invite de commandes Azure PowerShell ou dans l’environnement d'écriture de scripts intégré de Windows PowerShell (ISE) sur votre ordinateur local.
   
@@ -193,7 +193,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 Vous êtes invité à fournir les informations d’identification d’un compte Administrateur de domaine. L’ordinateur redémarre.
   
-Ensuite, vous devez mettre à jour les serveurs DNS pour votre réseau virtuel afin que Azure affecte aux machines virtuelles les adresses IP des deux nouveaux contrôleurs de domaine à utiliser comme serveurs DNS. Remplissez les variables, puis exécutez ces commandes à partir d’Windows PowerShell invite de commandes sur votre ordinateur local :
+Ensuite, vous devez mettre à jour les serveurs DNS pour votre réseau virtuel afin que Azure affecte aux machines virtuelles les adresses IP des deux nouveaux contrôleurs de domaine à utiliser comme serveurs DNS. Remplissez les variables, puis exécutez ces commandes à partir d’une invite Windows PowerShell commande sur votre ordinateur local :
   
 ```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -257,6 +257,4 @@ Utilisez [la phase 3 : Configurez les serveurs AD FS](high-availability-federate
   
 [Identité fédérée pour votre environnement de test/dev Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Centre de solutions et d'architecture Microsoft 365](../solutions/solution-architecture-center.md)
-
-
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)

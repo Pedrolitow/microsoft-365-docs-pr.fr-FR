@@ -18,12 +18,12 @@ description: Les administrateurs peuvent apprendre à router le courrier indési
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b8fbc1b065e348f759806d80fd85421eb9d66098
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ae6ee551d04b242891c9638d6d99d79240480d27
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288872"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910857"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurer EOP autonome pour remettre le courrier indésirable dans le dossier Courrier indésirable dans les environnements hybrides
 
@@ -37,13 +37,13 @@ ms.locfileid: "50288872"
 
 Si vous êtes un client Exchange Online Protection (EOP) autonome dans un environnement hybride, vous devez configurer votre organisation Exchange sur site pour reconnaître et traduire les verdicts de filtrage du courrier indésirable d’EOP, afin que la règle de courrier indésirable dans la boîte aux lettres sur site puisse déplacer les messages vers le dossier Courrier indésirable.
 
-Plus précisément, vous devez créer des règles de flux de messagerie (également appelées règles de transport) dans votre organisation Exchange sur site avec des conditions qui recherchent des messages avec l’un des en-têtes et valeurs EOP anti-courrier indésirable suivants, ainsi que des actions qui définissent le niveau de confiance du courrier indésirable (SCL) de ces messages sur 6 :
+Plus précisément, vous devez créer des règles de flux de messagerie (également appelées règles de transport) dans votre organisation Exchange sur site avec des conditions qui recherchent des messages avec l’une des valeurs et en-têtes de courrier indésirable EOP suivants, ainsi que des actions qui définissent le niveau de confiance du courrier indésirable (SCL) de ces messages sur 6 :
 
 - `X-Forefront-Antispam-Report: SFV:SPM` (message marqué comme courrier indésirable par filtrage du courrier indésirable)
 
-- `X-Forefront-Antispam-Report: SFV:SKS` (message marqué comme courrier indésirable par des règles de flux de messagerie dans EOP avant le filtrage du courrier indésirable)
+- `X-Forefront-Antispam-Report: SFV:SKS` (message marqué comme courrier indésirable par les règles de flux de messagerie dans EOP avant le filtrage du courrier indésirable)
 
-- `X-Forefront-Antispam-Report: SFV:SKB` (message marqué comme courrier indésirable par filtrage du courrier indésirable en raison de l’adresse de messagerie ou du domaine de messagerie de l’expéditeur se trouver dans la liste des expéditeurs bloqués ou la liste des domaines bloqués dans EOP)
+- `X-Forefront-Antispam-Report: SFV:SKB` (message marqué comme courrier indésirable par filtrage du courrier indésirable en raison de l’adresse de messagerie ou du domaine de messagerie de l’expéditeur se trouver dans la liste des expéditeurs bloqués ou dans la liste des domaines bloqués dans EOP)
 
 Pour plus d’informations sur ces valeurs d’en-tête, consultez les [en-têtes de message anti-courrier indésirable.](anti-spam-message-headers.md)
 
@@ -54,33 +54,33 @@ Cette rubrique décrit comment créer ces règles de flux de messagerie dans le 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Des autorisations doivent vous être attribuées dans l’environnement Exchange local avant de pouvoir suivre ces procédures. Plus précisément, vous devez avoir le rôle Règles de **transport,** qui est  attribué aux rôles Gestion de l’organisation, Gestion de la conformité et Gestion des enregistrements par défaut.  Pour plus d’informations, voir [Ajouter des membres à un groupe de rôles.](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group)
+- Des autorisations doivent vous être attribuées dans l’environnement Exchange local avant de pouvoir suivre ces procédures. Plus précisément, vous devez avoir le rôle Règles de **transport,** qui est  attribué aux rôles Gestion de l’organisation, Gestion de la conformité et Gestion des enregistrements par défaut.  Pour plus d’informations, voir [Ajouter des membres à un groupe de rôles.](/Exchange/permissions/role-group-members#add-members-to-a-role-group)
 
 - Si et quand un message est remis au dossier Courrier indésirable dans une organisation Exchange sur site est contrôlé par une combinaison des paramètres suivants :
 
-  - Valeur _du paramètre SCLJunkThreshold_ sur la cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) dans l’Environnement de travail Exchange Management Shell. La valeur par défaut est 4, ce qui signifie qu’un SCL de 5 ou plus doit remettre le message dans le dossier Courrier indésirable de l’utilisateur.
+  - Valeur _du paramètre SCLJunkThreshold_ sur la cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) dans l’Environnement de travail Exchange Management Shell. La valeur par défaut est 4, ce qui signifie qu’un SCL de 5 ou plus doit remettre le message dans le dossier Courrier indésirable de l’utilisateur.
 
-  - Valeur _du paramètre SCLJunkThreshold_ sur la cmdlet [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) dans l’Environnement de travail Exchange Management Shell. La valeur par défaut est vide ($null), ce qui signifie que le paramètre de l’organisation est utilisé.
+  - Valeur _du paramètre SCLJunkThreshold_ sur la cmdlet [Set-Mailbox](/powershell/module/exchange/set-mailbox) dans l’Environnement de travail Exchange Management Shell. La valeur par défaut est vide ($null), ce qui signifie que le paramètre de l’organisation est utilisé.
 
-  Pour plus d’informations, consultez les seuils de seuil de confiance du courrier indésirable [Exchange (SCL).](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl)
+  Pour plus d’informations, consultez les seuils de seuil de confiance du courrier indésirable [Exchange (SCL).](/Exchange/antispam-and-antimalware/antispam-protection/scl)
 
-  - Si la règle de courrier indésirable est activée sur la boîte aux lettres (la valeur du paramètre _Enabled_ est $true sur la cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) dans l’Environnement de messagerie Exchange Management Shell). C’est la règle de courrier indésirable qui déplace réellement le message vers le dossier Courrier indésirable après la remise. Par défaut, la règle de courrier indésirable est activée sur les boîtes aux lettres. Pour plus d’informations, consultez la rubrique [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
+  - Si la règle de courrier indésirable est activée sur la boîte aux lettres (la valeur du paramètre _Enabled_ est $true sur la cmdlet [Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration) dans l’Environnement de messagerie Exchange Management Shell). C’est la règle de courrier indésirable qui déplace réellement le message vers le dossier Courrier indésirable après la remise. Par défaut, la règle de courrier indésirable est activée sur les boîtes aux lettres. Pour plus d’informations, consultez la rubrique [Configure Exchange antispam settings on mailboxes](/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
 
-- Pour ouvrir le CENTRE d’administration Exchange sur une Exchange Server, consultez le [Centre d’administration Exchange dans Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Pour ouvrir l’environnement de ligne de commande Exchange Management Shell, consultez [Ouvrir l’environnement de ligne de commande Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- Pour ouvrir le CENTRE d’administration Exchange sur une Exchange Server, consultez le [Centre d’administration Exchange dans Exchange Server](/Exchange/architecture/client-access/exchange-admin-center). Pour ouvrir l’environnement de ligne de commande Exchange Management Shell, consultez [Ouvrir l’environnement de ligne de commande Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 - Pour plus d’informations sur les règles de flux de messagerie dans Exchange local, consultez les rubriques suivantes :
 
-  - [Règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
+  - [Règles de flux de messagerie dans Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
 
-  - [Conditions et exceptions de règle de flux de messagerie (prédicats) dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
+  - [Conditions et exceptions de règle de flux de messagerie (prédicats) dans Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-  - [Actions de règle de flux de messagerie dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/actions)
+  - [Actions de règle de flux de messagerie dans Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/actions)
 
 ## <a name="use-the-eac-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>Utiliser le CAE pour créer des règles de flux de messagerie qui définissent le SCL des messages indésirables EOP
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez **sur** Ajouter une icône, puis sélectionnez Créer une règle dans la baisse ![ qui ](../../media/ITPro-EAC-AddIcon.png) s’affiche. 
+2. Cliquez **sur** Ajouter une icône, puis sélectionnez Créer une règle ![ dans la ](../../media/ITPro-EAC-AddIcon.png) drop-down qui s’affiche. 
 
 3. Dans la page **Nouvelle règle** qui s'ouvre, configurez les paramètres suivants :
 
@@ -132,7 +132,7 @@ New-TransportRule -Name "EOP SFV:SKS to SCL 6" -HeaderContainsMessageHeader "X-F
 New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
 ## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
@@ -140,7 +140,7 @@ Pour vérifier que vous avez correctement configuré EOP autonome pour remettre 
 
 - Dans le EAC, sélectionnez règles de **flux** de messagerie, sélectionnez la règle, puis cliquez sur Modifier l’icône \> Modifier pour vérifier les  ![ ](../../media/ITPro-EAC-EditIcon.png) paramètres.
 
-- Dans l’Environnement de commande Exchange Management Shell, remplacez-le par le nom de la règle de flux de messagerie, puis rulez la commande suivante \<RuleName\> pour vérifier les paramètres :
+- Dans l’Environnement de commande Exchange Management Shell, remplacez-le par le nom de la règle de flux de messagerie, puis rulez la commande suivante pour \<RuleName\> vérifier les paramètres :
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

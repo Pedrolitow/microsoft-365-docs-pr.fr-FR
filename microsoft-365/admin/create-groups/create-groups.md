@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Découvrez comment créer et supprimer des groupes Microsoft 365, ajouter et supprimer des membres du groupe et personnaliser le fonctionnement du groupe.
-ms.openlocfilehash: 620b9389efabdba14322961bee87cd05da99ee57
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: e16c47784e78178a5ac2c4c2d523f4dbe6941ce5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925505"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909273"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Créer un groupe dans le Centre d’administration Microsoft 365
   
 Bien que les utilisateurs peuvent créer un groupe Microsoft 365 à partir d’Outlook ou d’autres applications, en tant qu’administrateur, vous devrez peut-être créer ou supprimer des groupes, ajouter ou supprimer des membres et personnaliser leur fonctionnement. Le Centre d’administration Microsoft 365 est l’endroit où vous pouvez le faire. 
 
 > [!TIP]
-> Les groupes de Yammer connectés Microsoft 365 doivent être créés dans Yammer, mais peuvent être gérés dans le Centre d’administration Microsoft 365 comme les autres groupes Microsoft 365. Pour en savoir plus, [voir Yammer groupes Microsoft 365.](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
+> Les groupes Yammer connectés Microsoft 365 doivent être créés dans Yammer, mais peuvent être gérés dans le Centre d’administration Microsoft 365 comme les autres groupes Microsoft 365. Pour en savoir plus, [voir Yammer groupes Microsoft 365.](/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
 
 ## <a name="create-a-microsoft-365-group"></a>Créer un groupe Microsoft 365
 
@@ -48,7 +48,7 @@ Bien que les utilisateurs peuvent créer un groupe Microsoft 365 à partir d’O
     
 5. Dans la page **Modifier les paramètres,** tapez une adresse e-mail unique pour le groupe, choisissez une option de confidentialité et si vous souhaitez ajouter Microsoft Teams, puis sélectionnez **Suivant**.
     
-6. Sur les **propriétaires,** choisissez le nom d’une ou de plusieurs personnes qui seront désignées pour gérer le groupe. Toute personne qui est un propriétaire de groupe peut supprimer un courrier de la boîte aux lettres du groupe. Les autres membres ne peuvent pas supprimer de courrier de la boîte aux lettres du groupe. Sélectionnez **Suivant**.
+6. Sur les **propriétaires,** choisissez le nom d’une ou plusieurs personnes qui seront désignées pour gérer le groupe. Toute personne qui est un propriétaire de groupe peut supprimer un courrier de la boîte aux lettres du groupe. Les autres membres ne peuvent pas supprimer de courrier de la boîte aux lettres du groupe. Sélectionnez **Suivant**.
     
 7. Après avoir passé en revue vos paramètres et apporté des modifications, **sélectionnez Créer un groupe.**
 
@@ -124,6 +124,6 @@ Après avoir créé un groupe et ajouté des membres, vous pouvez configurer dav
 
 [Gérer l’accès invité aux groupes Microsoft 365](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Choisir le domaine à utiliser lors de la création de groupes Microsoft 365](choose-domain-to-create-groups.md)
+[Choisir le domaine à utiliser lors de la création de groupes Microsoft 365](../../solutions/choose-domain-to-create-groups.md)
 
 [Mettre à niveau les listes de distribution vers les groupes Microsoft 365](../manage/upgrade-distribution-lists.md)

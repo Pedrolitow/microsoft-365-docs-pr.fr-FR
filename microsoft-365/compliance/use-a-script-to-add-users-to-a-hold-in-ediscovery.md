@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & sites OneDrive Entreprise à une nouvelle mise en attente associée à un cas eDiscovery dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: 278e8e051165eca906e9b454268068cbbe6aef05
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: d6e6ff1ca053fd8c729054490e78ef42dc64e829
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175573"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909914"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utiliser un script pour ajouter des utilisateurs à une attente dans un cas core eDiscovery
 
@@ -51,7 +51,7 @@ Voici les étapes à suivre pour y arriver :
 
 - Le script ajoute la liste des utilisateurs à une nouvelle attente associée à un cas existant. Assurez-vous que le cas avec qui vous souhaitez associer la attente est créé avant d’exécuter le script.
 
-- Le script de cet article prend en charge l’authentification moderne lors de la connexion au Centre de sécurité & conformité PowerShell et SharePoint Online Management Shell. Vous pouvez utiliser le script tel qu’il est si vous êtes une organisation Microsoft 365 ou Microsoft 365 GCC. Si vous êtes une organisation Office 365 Germany, une organisation Microsoft 365 GCC High ou une organisation Microsoft 365 DoD, vous devez modifier le script pour l’exécuter correctement. Plus précisément, vous devez modifier la ligne et utiliser les `Connect-IPPSSession` paramètres *ConnectionUri* et *AzureADAuthorizationEndpointUri* (et les valeurs appropriées pour le type de votre organisation) pour vous connecter au Centre de sécurité & conformité PowerShell. Pour plus d’informations, consultez les exemples du Centre de [sécurité & conformité PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)
+- Le script de cet article prend en charge l’authentification moderne lors de la connexion au Centre de sécurité & conformité PowerShell et SharePoint Online Management Shell. Vous pouvez utiliser le script tel qu’il est si vous êtes une organisation Microsoft 365 ou Microsoft 365 GCC. Si vous êtes une organisation Office 365 Germany, une organisation Microsoft 365 GCC High ou une organisation Microsoft 365 DoD, vous devez modifier le script pour l’exécuter correctement. Plus précisément, vous devez modifier la ligne et utiliser les `Connect-IPPSSession` paramètres *ConnectionUri* et *AzureADAuthorizationEndpointUri* (et les valeurs appropriées pour le type de votre organisation) pour vous connecter au Centre de sécurité & conformité PowerShell. Pour plus d’informations, consultez les exemples du Centre de [sécurité & conformité PowerShell.](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)
 
 - Le script se déconnecte automatiquement du Centre de sécurité & conformité PowerShell et SharePoint Online Management Shell.
 
@@ -63,7 +63,7 @@ Voici les étapes à suivre pour y arriver :
 
 La première étape consiste à installer SharePoint Online Management Shell s’il n’est pas déjà installé sur votre ordinateur local. Vous n’avez pas besoin d’utiliser l’shell dans cette procédure, mais vous devez l’installer car il contient les conditions préalables requises par le script que vous exécutez à l’étape 3. Ces conditions préalables permettent au script de communiquer avec SharePoint Online pour obtenir les URL des sites OneDrive Entreprise.
   
-Go to [Set up the SharePoint Online Management Shell Windows PowerShell environment](https://go.microsoft.com/fwlink/p/?LinkID=286318) and perform Step 1 and Step 2 to install the SharePoint Online Management Shell on your local computer.
+Go to [Set up the SharePoint Online Management Shell Windows PowerShell environment](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and perform Step 1 and Step 2 to install the SharePoint Online Management Shell on your local computer.
 
 ## <a name="step-2-generate-a-list-of-users"></a>Étape 2 : Générer une liste d’utilisateurs
 
@@ -91,7 +91,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
 
 - **Requête de recherche pour une attente basée sur une requête :** Vous pouvez créer une mise en attente basée sur une requête afin que seul le contenu qui répond aux critères de recherche spécifiés soit mis en attente. Pour placer tout le contenu en attente, appuyez simplement sur **Entrée** lorsque vous êtes invité à effectuer une requête de recherche.
 
-- **En 2013, vous tenez ou non en attente :** Le script peut être mis en attente après sa création ou le script peut créer la mise en attente sans l’activer. Si le script n’est pas en attente, vous pouvez l’activer ultérieurement dans le Centre de sécurité et conformité & ou en exécutant les commandes PowerShell suivantes :
+- **En tenez-vous ou non en attente :** Le script peut être mis en attente après sa création ou le script peut créer la mise en attente sans l’activer. Si le script n’est pas en attente, vous pouvez l’activer ultérieurement dans le Centre de sécurité et conformité & ou en exécutant les commandes PowerShell suivantes :
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -287,7 +287,7 @@ Une fois l’exécution du script terminée, il crée les fichiers journaux suiv
   
 - **LocationsOnHold.txt :** Contient la liste des boîtes aux lettres et des sites OneDrive Entreprise que le script a correctement placés en attente.
 
-- **LocationsNotOnHold.txt :** Contient une liste de boîtes aux lettres et de sites OneDrive Entreprise que le script n’a pas placer en attente. Si un utilisateur dispose d’une boîte aux lettres, mais pas d’un site OneDrive Entreprise, il est inclus dans la liste des sites OneDrive Entreprise qui n’ont pas été mis en attente.
+- **LocationsNotOnHold.txt :** Contient la liste des boîtes aux lettres et des sites OneDrive Entreprise que le script n’a pas placer en attente. Si un utilisateur dispose d’une boîte aux lettres, mais pas d’un site OneDrive Entreprise, il est inclus dans la liste des sites OneDrive Entreprise qui n’ont pas été mis en attente.
 
 - **GetCaseHoldPolicy.txt :** Contient la sortie de la cmdlet **Get-CaseHoldPolicy** pour la nouvelle mise en attente, que le script a mise en place après la création de la nouvelle mise en attente. Les informations renvoyées par cette cmdlet incluent une liste des utilisateurs dont les boîtes aux lettres et les sites OneDrive Entreprise ont été mis en attente et si la mise en attente est activée ou désactivée. 
 

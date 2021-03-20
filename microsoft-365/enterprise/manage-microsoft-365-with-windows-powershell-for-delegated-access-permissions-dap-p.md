@@ -17,18 +17,18 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: Comment les partenaires fournisseurs de solutions Cloud et de syndication peuvent utiliser Windows PowerShell pour gérer les clients Microsoft 365.
-ms.openlocfilehash: a7b2fbb5423e3b923e17aa2d9c488e7dd085be35
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 352a9a01414b94a1593de6a734151b687524fe7d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429877"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909525"
 ---
 # <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>Comment gérer Microsoft 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. De nombreux fournisseurs sont des fournisseurs de réseau ou de télécommunication. Ils regroupent les abonnements Microsoft 365 dans leurs offres de services. Lorsqu’ils vendent un abonnement Microsoft 365, ils se voient automatiquement accorder des autorisations Administrer de la part de (AOBO) sur les locations du client afin qu’ils peuvent administrer et signaler ces locations. Ces tâches sont difficiles à effectuer dans le Centre d’administration Microsoft 365. Il est beaucoup plus facile d’utiliser PowerShell pour Microsoft 365 pour effectuer des tâches administratives telles que :
+Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. De nombreux fournisseurs sont des fournisseurs de réseau ou de télécommunication. Ils regroupent les abonnements Microsoft 365 dans leurs offres de services. Lorsqu’ils vendent un abonnement Microsoft 365, ils se voient automatiquement accorder des autorisations Administrer de la part de (AOBO) sur les locations du client afin de pouvoir administrer et signaler ces locations. Ces tâches sont difficiles à effectuer dans le Centre d’administration Microsoft 365. Il est beaucoup plus facile d’utiliser PowerShell pour Microsoft 365 pour effectuer des tâches administratives telles que :
 - List all the customer **TenantIds** and their domains 
 - Identifier tous les utilisateurs d’une location client et leurs licences attribuées
 > [!NOTE]
@@ -40,7 +40,6 @@ Les articles suivants montrent comment les partenaires de syndication et de CSP 
     
 - [Ajout d'un domaine à la location d'un client avec Windows PowerShell pour les partenaires avec autorisation d'accès délégué](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
     
-- [Connexion à Exchange Online PowerShell](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
+- [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
 - [Récupération des données des rapports du locataire d'un client avec Windows PowerShell pour les partenaires avec autorisation d'accès délégué](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
-   

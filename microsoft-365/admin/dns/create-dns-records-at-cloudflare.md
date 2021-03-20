@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur Cloudflare pour Microsoft.
-ms.openlocfilehash: 8d5dd7779f07fd42dd230ee33c40849da3519d26
-ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et d’autres services sur Cloudflare pour Microsoft.
+ms.openlocfilehash: 0a80cf059a3a69dcb8aa48251875410f35684286
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49939271"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910377"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Créer des enregistrements DNS chez Cloudflare pour Microsoft
 
@@ -132,7 +132,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     | Type | Nom | Serveur de messagerie | Priority (Priorité) | TTL (Durée de vie) |
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/>|30 minutes  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). <br/>|30 minutes  <br/> |
    
 
   
@@ -205,7 +205,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
-> N’oubliez pas que Cloudflare est responsable de la rendre disponible. Si vous voyez des différences entre les étapes ci-dessous et l’interface graphique graphique (INTERFACE utilisateur graphique) Cloudflare actuelle, tirez parti de [la communauté Cloudflare.](https://community.cloudflare.com/) 
+> N’oubliez pas que Cloudflare est responsable de la rendre disponible. Si vous constatez des différences entre les étapes ci-dessous et l’interface graphique graphique (INTERFACE utilisateur graphique) Cloudflare actuelle, tirez parti de [la communauté Cloudflare.](https://community.cloudflare.com/) 
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). Avant toute chose, vous serez invité à vous connecter.
       
@@ -219,8 +219,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
         
     | Type | Service | Protocole | Nom | Durée de vie | Priorité | Pondération | Port | Target |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |Utilisez votre *domain_name*; par exemple, contoso.com  |30 minutes | 100|1  |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|Utilisez votre *domain_name*; par exemple, contoso.com   |30 minutes |100 |1  |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |Utilisez votre *domain_name*; par exemple, contoso.com  |30 minutes | 100|1 |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|Utilisez votre *domain_name*; par exemple, contoso.com   |30 minutes |100 |1 |5061 | sipfed.online.lync.com |
 
   
 5. Sélectionnez **Enregistrer**.
@@ -231,4 +231,3 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

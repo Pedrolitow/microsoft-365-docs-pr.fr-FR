@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour activer des paramètres de sécurité Microsoft 365 supplémentaires dans votre environnement de test Microsoft 365 pour entreprise.
-ms.openlocfilehash: d385688a6e59ee500442bcf1b815dfd165102242
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 928deae34dc16c70776eb512188d1a36ae169da5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846999"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909785"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Sécurité Microsoft 365 renforcée pour votre environnement de test Microsoft 365 pour entreprise
 
@@ -34,7 +34,7 @@ Avec les instructions de cet article, vous configurez des paramètres Microsoft 
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : Créer votre environnement de test Microsoft 365 pour entreprise
 
-Si vous souhaitez simplement configurer une sécurité Microsoft 365 accrue avec une configuration minimale requise, suivez les instructions de la [configuration de base légère.](lightweight-base-configuration-microsoft-365-enterprise.md)
+Si vous souhaitez simplement configurer une sécurité Microsoft 365 accrue de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère.](lightweight-base-configuration-microsoft-365-enterprise.md)
   
 Si vous souhaitez configurer une sécurité Microsoft 365 accrue dans une entreprise simulée, suivez les instructions de [l’authentification directe.](pass-through-auth-m365-ent-test-environment.md)
   
@@ -43,7 +43,7 @@ Si vous souhaitez configurer une sécurité Microsoft 365 accrue dans une entrep
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>Phase 2 : Configurer une sécurité Microsoft 365 accrue
 
-Dans cette phase, vous activez une sécurité Microsoft 365 accrue pour votre environnement de test Microsoft 365 pour entreprise. Pour plus d’informations et de paramètres, voir [Configurer votre client pour une sécurité accrue.](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)
+Dans cette phase, vous activez une sécurité Microsoft 365 accrue pour votre environnement de test Microsoft 365 pour entreprise. Pour plus d’informations et de paramètres, voir [Configurer votre client pour une sécurité accrue.](/office365/securitycompliance/tenant-wide-setup-for-increased-security)
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurer SharePoint Online pour bloquer les applications qui ne permettent pas l’authentification moderne
 
@@ -56,7 +56,7 @@ Les applications qui ne permettent pas l’authentification moderne ne peuvent p
   - Si vous utilisez l’environnement de test Microsoft 365 d’entreprise simulé, utilisez le portail [Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de CLIENT1.
  
 2. Sous le nouvel onglet Centre d’administration  **Microsoft 365,** sous Centres d’administration dans le volet de navigation de gauche, cliquez **sur SharePoint.**
-3. Sous le nouvel onglet **Centre d’administration SharePoint,** cliquez sur **Stratégies > contrôle d’accès.**
+3. Sous le nouvel **onglet Centre d’administration SharePoint,** cliquez sur **Stratégies > contrôle d’accès.**
 4. Cliquez **sur Applications qui ne permettent pas l’authentification** moderne, **sélectionnez** Bloquer l’accès, puis cliquez sur **Enregistrer.**
 
 
@@ -66,7 +66,7 @@ Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams protège v
 
 1. Go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
 
-2. Dans le volet de navigation de gauche, sous Gestion des **menaces,** cliquez sur **Stratégie,** puis cliquez sur **Pièces jointes sécurisées.** 
+2. Dans le volet de navigation de gauche, sous Gestion **des menaces,** cliquez sur **Stratégie,** puis cliquez sur **Pièces jointes sécurisées.** 
 
 3. Sous **Protéger les fichiers dans SharePoint, OneDrive et Microsoft Teams.** sélectionnez **Activer LAP pour SharePoint, OneDrive et Microsoft Teams.**
 
@@ -96,22 +96,22 @@ Pour voir le tableau de bord de sécurité :
 
 1. Si nécessaire, go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
 
-2. Dans le volet de navigation de gauche, sous **Gestion des menaces,** cliquez sur **Tableau de bord.**
+2. Dans le volet de navigation de gauche, sous Gestion **des menaces,** cliquez sur **Tableau de bord.**
 
 Regardez attentivement toutes les cartes du tableau de bord pour vous familiariser avec les informations fournies.
 
-Pour plus d’informations, voir [Tableau de bord de sécurité.](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-dashboard)
+Pour plus d’informations, voir [Tableau de bord de sécurité.](../security/office-365-security/security-dashboard.md)
 
 
 ## <a name="phase-4-examine-microsoft-secure-score"></a>Phase 4 : Examiner le score de sécurité Microsoft
 
 Le degré de sécurisation Microsoft indique votre posture de sécurité sous la forme d’un nombre, ce qui indique votre niveau actuel par rapport aux fonctionnalités disponibles dans votre abonnement. Il fournit également une liste des actions d’amélioration que vous pouvez prendre pour améliorer votre score.
 
-1. Créez un onglet dans votre navigateur et allez dans le Centre de sécurité [Microsoft 365,](https://security.microsoft.com/)puis cliquez sur **Score de sécurité.**
+1. Créez un onglet dans votre navigateur et allez au Centre de sécurité [Microsoft 365,](https://security.microsoft.com/)puis cliquez sur **Score de sécurité.**
 2. Sous **l’onglet**  Vue d’ensemble, notez votre score de sécurisation actuel et sa comparaison avec la moyenne globale et les abonnements avec un nombre de licences similaire.
 3. Sous **l’onglet Actions** d’amélioration, lisez la liste des actions que vous pouvez prendre pour augmenter votre score.
 
-Pour plus d’informations, voir [Le Score de sécurité Microsoft.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)
+Pour plus d’informations, voir [Le Score de sécurité Microsoft.](../security/mtp/microsoft-secure-score.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -123,4 +123,4 @@ Explorez [d’autres fonctionnalités de protection](m365-enterprise-test-lab-gu
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

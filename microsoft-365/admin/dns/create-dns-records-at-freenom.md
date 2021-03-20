@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur Freenom pour Microsoft.
-ms.openlocfilehash: b958a69d1dad9a0b56cf954d12cd42e40d6d4fea
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 8332d63acf34a7f999b549467494b7819cebf092
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657874"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910353"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Créer des enregistrements DNS sur Freenom pour Microsoft
 
 [Consultez la FAQ sur ](../setup/domains-faq.yml) les domaines si vous ne trouvez pas ce que vous recherchez. 
   
 > [!CAUTION]
-> Le site web Freenom ne prend pas en charge les enregistrements SRV, ce qui signifie que plusieurs fonctionnalités de Skype Entreprise Online et d’Outlook Web App ne fonctionnent pas. Quelle que soit l’offre Microsoft que vous utilisez, il existe des limitations de service importantes et vous pouvez basculer vers un autre fournisseur d’hébergement DNS. 
+> Le site web Freenom ne prend pas en charge les enregistrements SRV, ce qui signifie que plusieurs fonctionnalités de Skype Entreprise Online et Outlook Web App ne fonctionnent pas. Quelle que soit l’offre Microsoft que vous utilisez, il existe des limitations de service importantes et vous pouvez basculer vers un autre fournisseur d’hébergement DNS. 
   
 Si, malgré les limitations de service, vous choisissez de gérer vos propres enregistrements DNS Microsoft sur Freenom, suivez les étapes de cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique et d’autres services.
   
@@ -49,7 +49,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
   
-1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). You'll be prompted to log in.
+1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). Vous serez invité à vous connecter.
     
     ![Connexion freenom](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
@@ -71,9 +71,9 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 6. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Target**|
+    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Cible**|
     |:-----|:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |TXT  <br/> |3600 (secondes)  <br/> |MS=msXXXXXXXX  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(laissez vide)  <br/> |TXT  <br/> |3600 secondes  <br/> |MS=msXXXXXXXX  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Freenom TXT values for verification](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
@@ -108,7 +108,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Microsoft
 <a name="bkmk_mx"> </a>
 
-1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). You'll be prompted to log in.
+1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). Vous serez invité à vous connecter.
     
     ![Connexion freenom](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
@@ -138,9 +138,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 8. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. 
     
-    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Target**|**Priorité**|
+    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Cible**|**Priority (Priorité)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |3600 (secondes)  <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre  *\<domain-key\>*  compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |(laissez vide)  <br/> |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |3600 secondes  <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre *\<domain-key\>* depuis votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). <br/> |
    
    ![Enregistrement MX Freenom](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -153,7 +153,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Ajouter les enregistrements CNAME requis pour Microsoft
 <a name="bkmk_cname"> </a>
 
-1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). You'll be prompted to log in.
+1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). Vous serez invité à vous connecter.
     
     ![Connexion freenom](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
@@ -175,13 +175,13 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 6. Créez le premier enregistrement CNAME. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. 
     
-    |**Name (Nom)**|**Type d'enregistrement**|**TTL (Durée de vie)**|**Target**|
+    |**Name (Nom)**|**Type d’enregistrement**|**TTL (Durée de vie)**|**Cible**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |webdir.online.lync.com  <br/> |
-    |enterpriseregistration  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |enterpriseregistration.windows.net  <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |3600 secondes  <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |CNAME  <br/> |3600 secondes  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |3600 secondes  <br/> |webdir.online.lync.com  <br/> |
+    |enterpriseregistration  <br/> |CNAME  <br/> |3600 secondes  <br/> |enterpriseregistration.windows.net  <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |3600 secondes  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
     ![Freenom CNAME values](../../media/752fc682-e3f2-4b9c-9253-bf1ba2d414e9.png)
   
@@ -191,15 +191,15 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 8. Répétez les étapes précédentes pour créer les cinq autres enregistrements CNAME. 
     
-    Pour chaque enregistrement, tapez ou copiez-collez les valeurs de la ligne suivante du tableau ci-dessus dans les zones de cet enregistrement.
+    Pour chaque enregistrement, tapez ou copiez-collez les valeurs de la ligne suivante du tableau ci-dessus dans les zones appropriées.
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de n’avoir qu’un seul  *enregistrement*  SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir *qu’un seul* enregistrement SPF incluant les deux ensembles de valeurs. 
 
-1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). You'll be prompted to log in.
+1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). Vous serez invité à vous connecter.
     
     ![Connexion freenom](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
@@ -219,16 +219,14 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     ![Freenom Add Record type TXT](../../media/d8854285-c4ae-416c-a072-72a11ba1cd9a.png)
   
-6. In the boxes for the new record, type or copy and paste the following values. 
+6. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs suivantes. 
     
-    |**Name**|**Type d'enregistrement**|**TTL (Durée de vie)**|**Target**|
+    |**Name**|**Type d’enregistrement**|**TTL (Durée de vie)**|**Cible**|
     |:-----|:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |TXT  <br/> |3600 (secondes)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
+    |(laissez vide)  <br/> |TXT  <br/> |3600 secondes  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    
     ![Freenom TXT values for SPF](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
   
 7. Sélectionnez **Enregistrer les modifications.**
     
     ![Enregistrement TXT freenom pour les modifications d’enregistrement SPF](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
-  
-

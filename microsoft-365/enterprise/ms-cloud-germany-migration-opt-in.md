@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : '
-ms.openlocfilehash: bcec542ad285dcabaf71af1ea8efc28f3f7d6b5a
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 190b020ac683bcb97317a281c520b7f1ac92c721
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780319"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910917"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Comment opter pour la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centres de données allemandes
 
@@ -48,13 +48,13 @@ Une nouvelle section s’affiche sur le côté droit de votre écran pour accept
  
 ![Acceptation d’adhésion](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-Une fois que vous avez choisi de vous rendre au nom de votre client, tous les administrateurs voient la confirmation dans Migrer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les **services Office 365** dans la section Nouvelles régions de centre de données allemandes, y compris la date d’opt-in. Les administrateurs recevront également une confirmation dans le Centre de messages du Centre d’administration Microsoft 365. 
+Une fois que vous avez choisi de vous rendre au nom de votre client, tous les administrateurs voient la confirmation dans Migrer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les **services Office 365** dans la nouvelle section régions de centre de données allemandes, y compris la date d’opt-in. Les administrateurs recevront également une confirmation dans le Centre de messages du Centre d’administration Microsoft 365. 
  
 ![Confirmation d’adhésion](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>Que se passe-t-il après la migration ?
 
-Les migrations commenceront au début de 2021 pour les organisations qui optent pour l’approche pilotée par Microsoft et seront terminées avant la date de retrait de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) le 29 octobre 2021.  Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.  Microsoft publiera des mises à jour tout au long du processus de migration dans le Centre de messages. Consultez [ces articles](#more-information) pour en savoir plus.
+Les migrations commenceront au début de 2021 pour les organisations qui optent pour l’approche pilotée par Microsoft et seront terminées avant la date de retrait de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) le 29 octobre 2021.  Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.  Microsoft publiera des mises à jour tout au long du processus de migration dans le centre de messages. Consultez [ces articles](#more-information) pour en savoir plus.
 
 ## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Que se passe-t-il si vous n’optez pas pour la migration dans le Centre d’administration ?
 
@@ -68,7 +68,7 @@ Les administrateurs client et client partenaire sont encouragés à opter pour l
 
 [Comprendre l’expérience client pendant la migration](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en place :
 
@@ -84,6 +84,6 @@ Transition :
 
 Applications cloud :
 
-- [Informations sur le programme de migration Dynamics 365](https://aka.ms/d365ceoptin)
-- [Informations sur le programme de migration Power BI](https://aka.ms/pbioptin)
-- [Prise en main de votre mise à niveau vers Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Informations sur le programme de migration Dynamics 365](/dynamics365/get-started/migrate-data-german-region)
+- [Informations sur le programme de migration Power BI](/power-bi/admin/service-admin-migrate-data-germany)
+- [Prise en main de votre mise à niveau vers Microsoft Teams](/microsoftteams/upgrade-start-here)

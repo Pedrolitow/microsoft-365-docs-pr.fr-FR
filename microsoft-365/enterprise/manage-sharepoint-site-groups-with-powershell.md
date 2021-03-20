@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: Dans cet article, recherchez les procédures d’utilisation de PowerShell pour Microsoft 365 pour gérer les groupes de sites SharePoint Online.
-ms.openlocfilehash: fa9aff769ff84f8567c45b20c7b6c8a078b4a70c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bcc7a00a6114a6fa2ba8aa02520267bd03a0abf5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690076"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909537"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Gestion des groupes de sites SharePoint Online avec PowerShell
 
@@ -35,7 +35,7 @@ Bien que vous pouvez utiliser le Centre d’administration Microsoft 365, vous p
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Les procédures de cet article exigent que vous vous connectiez à SharePoint Online. Pour plus d’informations, voir [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+Les procédures de cet article exigent que vous vous connectiez à SharePoint Online. Pour plus d’informations, voir [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 ## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Afficher SharePoint Online avec PowerShell pour Microsoft 365
 
@@ -94,7 +94,7 @@ foreach ($y in $x)
     
 ## <a name="see-also"></a>Voir aussi
 
-[Connexion à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Connexion à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [Création de sites SharePoint Online et ajout d’utilisateurs avec PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
@@ -103,4 +103,3 @@ foreach ($y in $x)
 [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

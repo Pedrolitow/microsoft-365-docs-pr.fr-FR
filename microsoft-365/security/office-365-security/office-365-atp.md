@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 741b00a55ee73d16c82abd4806d06660d49be65b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1a2cb40184de170263a52e52b704b30b0731c868
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287664"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909033"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "50287664"
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens ou pièces jointes fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée pour abonnés Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens ou pièces jointes fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée pour abonnés Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Microsoft Defender pour Office 365 protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. Defender pour Office 365 inclut :
 
@@ -88,7 +88,7 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 
 - Microsoft Defender pour Office 365 Plan 1 est inclus dans Microsoft 365 Business Premium.
 
-- Microsoft Defender pour Office 365 Plan 1 et Microsoft Defender pour Office 365 Plan 2 sont tous deux disponibles sous forme de modules complémentaires pour certains abonnements. Pour en savoir plus, voir [Disponibilité des fonctionnalités pour les offres Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Microsoft Defender pour Office 365 Plan 1 et Microsoft Defender pour Office 365 Plan 2 sont tous deux disponibles sous forme de modules complémentaires pour certains abonnements. Pour en savoir plus, voir [Disponibilité des fonctionnalités pour les offres Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 - La fonctionnalité [Documents sécurisés](safe-docs.md) est uniquement disponible pour les utilisateurs ayant des licences Microsoft 365 E5 ou Microsoft 365 E5 Sécurité (non inclus dans les offres Microsoft Defender pour Office 365)
 
@@ -150,8 +150,8 @@ Pour accéder aux fonctionnalités de Microsoft Defender pour Office 365 dans 
 |Rôle ou groupe de rôles|Ressources pour en savoir plus|
 |---|---|
 |Administrateur général (peut être affecté dans Azure Active Directory ou dans le centre de sécurité et conformité)|[À propos des rôles d’administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Administrateur de sécurité (peut être affecté dans Azure Active Directory ou le centre de sécurité et conformité)|[Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)|
-|Gestion de l’organisation Exchange Online (elle est affectée à Exchange Online)|[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|Administrateur de sécurité (peut être affecté dans Azure Active Directory ou le centre de sécurité et conformité)|[Autorisations des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)|
+|Gestion de l’organisation Exchange Online (elle est affectée à Exchange Online)|[Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
 |Rechercher et vider (cette opération est attribuée uniquement dans le centre de conformité et sécurité)|[Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)|
 
 Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
@@ -160,9 +160,9 @@ Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de
 
 Microsoft Defender pour Office 365 est inclus dans certains abonnements, tels que Microsoft 365 E5, Office 365 E5, Office 365 A5 et Microsoft 365 Business Premium. Si votre abonnement n’inclut pas Defender pour Office 365, vous pouvez acheter Defender pour Office 365 Plan 1 ou Defender pour Office 365 Plan 2 comme module complémentaire pour certains abonnements. Pour en savoir plus, consultez les ressources suivantes :
 
-- [Disponibilité de Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) pour une liste des abonnements incluant les offres Defender pour Office 365.
+- [Disponibilité de Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) pour une liste des abonnements incluant les offres Defender pour Office 365.
 
-- [Disponibilité des fonctionnalités pour les offres Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) pour une liste des fonctionnalités incluses dans Plan 1 et Plan 2.
+- [Disponibilité des fonctionnalités pour les offres Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) pour une liste des fonctionnalités incluses dans Plan 1 et Plan 2.
 
 - [Obtenez le bon Microsoft Defender pour Office 365](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content) pour comparer les offres et acheter Defender pour Office 365.
 
@@ -174,7 +174,7 @@ De nouvelles fonctionnalités sont ajoutées à Microsoft Defender pour Office�
 
 - La [Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) fournit la liste des nouvelles fonctionnalités de développement et de déploiement.
 
-- [Description du service Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) décrit les fonctionnalités et la disponibilité entre les offres Defender pour Office 365.
+- [Description du service Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) décrit les fonctionnalités et la disponibilité entre les offres Defender pour Office 365.
 
 ## <a name="see-also"></a>Voir aussi
 

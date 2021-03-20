@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour le courrier électronique, Skype Entreprise Online et d’autres services sur Register.com microsoft.
-ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 439b96ef7ad2fd70b94c3945519d4fa270e43fd2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657591"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910053"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Créer des enregistrements DNS Register.com microsoft
 
@@ -114,17 +114,17 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
 4. Recherchez la ligne qui contient le nom du domaine à modifier . puis, dans cette ligne, sélectionnez **Gérer.**
     
-5. Faites défiler **jusqu’à la** section Paramètres techniques avancés, puis sélectionnez **Modifier les enregistrements de l’échangeur de messages.**
+5. Faites défiler la page **jusqu’à** la section Paramètres techniques avancés, puis sélectionnez **Modifier les enregistrements exchangeur de messagerie.**
     
     ![Select Edit Mail Exchanger Records](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
 6. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
-    (Choisissez la **valeur Priorité** dans la liste.) 
+    (Choisissez la **valeur Priority** dans la liste.) 
     
     |****Host Name (Nom d'hôte)****|****Priority (Priorité)****|****Mail Server (Serveur de courrier)****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Remarque :** Obtenez votre \<*domain-key*\> à partir de votre compte Microsoft. <br> [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Remarque :** Obtenez votre \<*domain-key*\> à partir de votre compte Microsoft. <br> [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copier et coller la valeur du tableau](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -157,7 +157,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![Sélectionner Modifier les enregistrements d’alias de domaine](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
   
-6. Sélectionnez **Ajouter d’autres alias de domaine.**
+6. Sélectionnez **Ajouter des alias de domaine.**
     
     ![Select Add more domains aliases](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
   
@@ -232,7 +232,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
 4. Recherchez la ligne qui contient le nom du domaine à modifier . puis, dans cette ligne, sélectionnez **Gérer.**
     
-5. Faites défiler **jusqu’à la** section Paramètres techniques avancés, puis sélectionnez **Modifier les enregistrements SRV.**
+5. Faites défiler la page **jusqu’à** la section Paramètres techniques avancés, puis sélectionnez **Modifier les enregistrements SRV.**
     
     ![Sélectionner Modifier les enregistrements SRV](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
   
@@ -240,12 +240,12 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant.
     
-    (Choisissez la **valeur Priorité** dans la liste.) 
+    (Choisissez la **valeur Priority** dans la liste.) 
     
     |****Service (Service)****|****Proto (Protocole)****|****Name (Nom)****|****Priority (Priorité)****|****Weight (Poids)****|****Port (Port)****|****Target (Cible)****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![Copier et coller les valeurs du tableau](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
@@ -267,4 +267,3 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez comment développer votre présence Microsoft 365 dans plusieurs régions géographiques avec Microsoft 365 Multigéographie.
-ms.openlocfilehash: 6d16d222a97f309eafdd79a2b107978ce7b4f242
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: 2805470f1a35bb5978f3d25c30aa07523ad21afb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712496"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909549"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -88,4 +88,4 @@ Pour commencer à utiliser la fonctionnalité multigéographique, procédez comm
 
 [Fonctionnalités multi-localisés dans Exchange Online](multi-geo-capabilities-in-exchange-online.md)
 
-[Expérience Teams dans un environnement multigéographique](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Expérience Teams dans un environnement multigéographique](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

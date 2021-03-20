@@ -22,14 +22,14 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Cet article fournit des ressources pour vous aider à mettre à niveau les serveurs et clients Office 2007, à mesure que la prise en charge d’Office 2007 a pris fin.
+description: Cet article fournit des ressources pour vous aider à mettre à niveau des serveurs et des clients Office 2007, à mesure que la prise en charge d’Office 2007 a pris fin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28fa1d56ef66297eaf69d2d11b720e3de2d668f7
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 36ae7ab70b8a95a7762f426f5a0d463083e7bc71
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519780"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909285"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à mettre à niveau des serveurs et des clients Office 2007
 
@@ -43,11 +43,11 @@ Le support a pris fin pour les produits et services Office 2007. Les feuilles de
 
 |**Planification du contenu**|**Date de fin de la prise en charge**|
 |:-----|:-----|
-|[Feuille de route de fin du support office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 octobre 2017  <br/> |
+|[Feuille de route de fin du support office 2007](/DeployOffice/office-2007-end-support-roadmap) <br/> |10 octobre 2017  <br/> |
 |[Feuille de route pour la fin de l’assistance pour Exchange 2007](exchange-2007-end-of-support.md) <br/> |11 avril 2017  <br/> |
 |[Feuille de route pour la fin de l’assistance pour SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 octobre 2017  <br/> |
 |[Feuille de route pour la fin de l’assistance pour Project Server 2007](project-server-2007-end-of-support.md) <br/> |10 octobre 2017  <br/> |
-|[Mise à niveau à partir d’Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 janvier 2018  <br/> |
+|[Mise à niveau à partir d’Office Communications Server](/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 janvier 2018  <br/> |
 |[Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |9 janvier 2018  <br/> |
    
 Une fois le support technique terminé pour un produit Microsoft, il n’y a plus :
@@ -66,7 +66,6 @@ Si vous utilisez des produits et des applications Office 2007 à la maison, cons
 
 [Vidéo : qu’est-ce que Microsoft 365 ?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Politique de cycle de vie Microsoft](/lifecycle/)
 
 [Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010](plan-upgrade-previous-versions-office.md)
-  
