@@ -15,25 +15,24 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment migrer le courrier électronique, les contacts et le calendrier de Google Workspace vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: cb751b1d2f18b226021bb6f218b62f3ae426f6a4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d6639032b379a2cd632b6ab6ee7e4082b1e7be0b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928245"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913621"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrer le courrier électronique et le calendrier d’entreprise à partir de Google Workspace
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
-Vous pouvez utiliser une migration d’administration vers Exchange Online à partir de Google Workspace. Vous pouvez migrer le courrier en une seule fois ou par étapes. Les étapes suivantes montrent comment migrer les données de courrier à la fois. Pour plus d’informations, [voir Effectuer une migration G Suite.](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration)
+Vous pouvez utiliser une migration d’administration vers Exchange Online à partir de Google Workspace. Vous pouvez migrer le courrier en une seule fois ou par étapes. Les étapes suivantes montrent comment migrer les données de courrier à la fois. Pour plus d’informations, [voir Effectuer une migration G Suite.](/exchange/mailbox-migration/perform-g-suite-migration)
 
 Le processus de migration prend plusieurs étapes et peut prendre de plusieurs heures à quelques jours en fonction de la quantité de données que vous migrez.
 
@@ -72,13 +71,13 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
 1. Sélectionnez **Sécurité,** faites défiler vers le bas et ouvrez les **contrôles d’API.** 
 1. Faites défiler vers le bas et **sélectionnez Gérer la délégation à l’échelle du domaine.**
 1. Sélectionnez **Ajouter nouveau** et entrez l’ID client que vous avez pris note précédemment.
-1. Entrez ensuite les étendues OAuth pour les API Google. Ceux-ci sont disponibles [aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) l’étape 5 et sont les suivantes :
+1. Entrez ensuite les étendues OAuth pour les API Google. Ceux-ci sont disponibles [aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) l’étape 5 et sont les suivantes :
 
     `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`
  
 1. Choose **Authorize**. 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Créer un sous-domaine pour le courrier vers Microsoft 365
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Créer un sous-domaine pour le courrier électronique envoyé à Microsoft 365
 
 1. Revenir à la console **d’administration Google Workspace.**
 1. Select **Domains**, **Manage domains**, then, **Add a domain alias**. 
@@ -88,7 +87,7 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
     La vérification de domaine ne prend généralement que quelques minutes, mais elle peut prendre jusqu’à 48 heures.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com).
-1. Dans le **Centre d’administration Microsoft 365,** dans le navigation de gauche, sélectionnez Afficher **tout,** **Paramètres,** **Domaines,** puis **Ajouter un domaine.** 
+1. Dans le **Centre d’administration Microsoft 365,** dans le navigation de gauche, sélectionnez Afficher **tout,** **Paramètres,** **Domaines,** puis Ajouter **un domaine.** 
 1. Entrez le sous-domaine que vous avez créé précédemment, puis **sélectionnez Utiliser ce domaine.** 
 1. Pour connecter le domaine, sélectionnez **Continuer.** 
 1. Faites défiler vers le bas et prenez note des enregistrements MX, CNAME et TXT. 
@@ -129,11 +128,11 @@ Une fois que vous avez terminé, vous êtes prêt à migrer.
     user123@fabrikaminc.net
     ```
 
-      Pour plus [d’informations, voir aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration#start-a-g-suite-migration-batch-with-the-exchange-admin-center-eac). 
+      Pour plus [d’informations, voir aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#start-a-g-suite-migration-batch-with-the-exchange-admin-center-eac). 
 
 1. Sélectionnez **Choisir** un fichier, accédez au fichier CSV, choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
 1. Vérifiez l’adresse de messagerie de l’administrateur que vous souhaitez utiliser pour le test. 
-1. Sélectionnez **Choisir** un fichier, accédez au fichier JSON que vous avez créé précédemment (généralement dans le dossier Téléchargements sur votre ordinateur), choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
+1. Sélectionnez **Choisir** un fichier, accédez au fichier JSON que vous avez créé précédemment (généralement dans le dossier Téléchargements de votre ordinateur), choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
 1. Entrez un nom dans le **champ Nouveau nom de lot de migration.**
 1. Entrez le sous-domaine que vous avez créé dans le champ de domaine de **remise** cible, sélectionnez **Suivant,** puis **Nouveau**. 
 1. Une fois les informations enregistrées, sélectionnez **OK.** 

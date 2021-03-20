@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Personnalisez votre page de signature avec une notification de confidentialité et de consentement pour Microsoft 365.
-ms.openlocfilehash: 894686ac785e979b8491cd5943c9a071d3be9ee9
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: cb6e7f91c31e1a8bbacb9904a5aad7a76af8ffcb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044553"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912117"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personnaliser votre page de signature avec une notification de confidentialité et de consentement
 
@@ -37,7 +37,7 @@ Vous pouvez personnaliser votre page de personnalisation. Vous pouvez également
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>Concevoir la personnalisation du texte sur votre page de signature
 
-Pour mettre à jour les éléments personnalisables sur la page de signature, vous devez être un administrateur général. Pour obtenir des instructions spécifiques, [consultez l’article sur l’ajout d’une marque de](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) société.
+Pour mettre à jour les éléments personnalisables sur la page de signature, vous devez être un administrateur général. Pour obtenir des instructions spécifiques, [consultez l’article sur l’ajout d’une marque de](/azure/active-directory/fundamentals/customize-branding) société.
 
 Les éléments que vous pouvez mettre à jour sont les éléments ci-après :
 
@@ -46,4 +46,4 @@ Les éléments que vous pouvez mettre à jour sont les éléments ci-après :
 - Logo de bannière
 - Conseil sur le nom d’utilisateur
 
-Pour obtenir des exemples d’avis de confidentialité et de consentement, consultez l’annexe A de la recherche et de la saisie d’ordinateurs et de l’obtention de preuves électroniques [dans des enquêtes pénales.](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)
+Pour obtenir des exemples d’avis de confidentialité et de consentement, voir l’annexe A de la recherche et de la saisie d’ordinateurs et l’obtention de preuves électroniques [dans des enquêtes pénales.](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)

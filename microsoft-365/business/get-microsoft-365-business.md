@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Découvrez vos options d’achat de Microsoft 365 Business Premium et des instructions pas à pas pour l’acheter à partir de l’Centre partenaires Microsoft.
-ms.openlocfilehash: 550ab62b46ffc09f8c4822a2e1741ee51b4579ca
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9f29846a7017259340b2125b09bc9fa5f935501b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400937"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913323"
 ---
 # <a name="get-microsoft-365-business-premium"></a>Obtenir Microsoft 365 Business Premium
 
@@ -52,11 +52,8 @@ Vous pouvez également vous rendre dans un [Microsoft Store](https://www.microso
   
 3. Dans la **page** Abonnement du client, sélectionnez Ajouter un **abonnement,** choisissez l’option Petite Entreprise sous Catalogue, puis choisissez **Microsoft 365 Business Premium**.
     
-    Sélectionnez le nombre de licences dont vous avez besoin (jusqu'à 300). Si vous avez plus de 300 utilisateurs, consultez [Plutôt Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862316) Entreprise. 
+    Sélectionnez le nombre de licences dont vous avez besoin (jusqu'à 300). Si vous avez plus de 300 utilisateurs, consultez [Plutôt Microsoft 365](../enterprise/index.yml) Entreprise. 
     
     ![Dans la page Nouvel abonnement, choisissez petite entreprise.](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
     Effectuer le reste des étapes pour ajouter un nouveau client, y compris le nom de l’entreprise.
-    
-
-

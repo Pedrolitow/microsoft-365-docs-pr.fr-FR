@@ -22,20 +22,20 @@ search.appverid:
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: Découvrez comment gérer les tâches d’administration liées à Microsoft 365 pour les entreprises, les appareils mobiles, les PC Windows 10 et de nombreuses tâches de ce type.
-ms.openlocfilehash: 0534356f4ffc4a05504121d96edbc381e00632e9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d4136298a1305f12602e0ce258a440dd72e8cd64
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403035"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913171"
 ---
 # <a name="manage-microsoft-365-for-business"></a>Gérer Microsoft 365 pour les entreprises
 
 ## <a name="general-microsoft-365-for-business-admin-tasks"></a>Tâches d’administration générales de Microsoft 365 pour les entreprises
 
-La plupart du [contenu d’administration](https://docs.microsoft.com/office365/admin/admin-home) pour Office 365 s’applique également à Microsoft 365 pour les entreprises.
+La plupart du [contenu d’administration](/office365/admin/admin-home) pour Office 365 s’applique également à Microsoft 365 pour les entreprises.
 
-- [Ajouter d’autres utilisateurs à Microsoft 365 pour les entreprises](add-users-m365b.md)
+- [Ajouter d’autres utilisateurs à Microsoft 365 pour les entreprises](../admin/add-users/add-users.md)
     
 - [Afficher les stratégies et les appareils](view-policies-and-devices.md)
     

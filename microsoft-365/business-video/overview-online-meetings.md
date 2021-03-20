@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment héberger des réunions en ligne pour votre entreprise.
-ms.openlocfilehash: 18a142700e8b83545219ddabf17be7d562037140
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 85163990d65126cc3d9d6c11627e63aa975b2924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422314"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913609"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Héberger des réunions en ligne pour votre entreprise
 
@@ -63,7 +63,7 @@ Utilisez Microsoft Teams pour participer à des réunions avec des employés de 
 1. Dans Microsoft Teams, dans le navigation de gauche, choisissez **Réunions.**
 1. Ouvrez la réunion que vous souhaitez rejoindre, puis choisissez **Rejoindre la réunion Microsoft Teams.**
 1. Lorsque la réunion s’ouvre, sélectionnez **Rejoindre maintenant.**
-1. Tout client invité à votre réunion ouvre la réunion dans son calendrier, sélectionne le lien de la réunion, télécharge l’application Teams ou l’ouvre sur le web, entre son nom et **sélectionnez Participer.**
+1. Tout client invité à votre réunion ouvre la réunion dans son calendrier, sélectionne le lien de la réunion, télécharge l’application Teams ou l’ouvre sur le web, entre son nom et sélectionnez **Participer.**
 1. Lorsque vous voyez votre client apparaître dans la salle d’accueil, sélectionnez **Admettre** pour le laisser s’y rendre.
 1. Dès que tout le monde rejoint la réunion, vous pouvez commencer la réunion.
  
@@ -75,7 +75,7 @@ Vous avez besoin d’aide ? Voir [Démarrer un appel à partir d’une conversat
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Réunions dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/tutorial-meetings-in-teams)
+[Réunions dans Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams)
 
 [6 façons de rendre les réunions virtuelles plus efficaces](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 

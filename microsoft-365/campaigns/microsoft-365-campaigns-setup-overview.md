@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble du programme d’installation de Microsoft 365 Business Premium pour les campagnes ou autres entreprises
-ms.openlocfilehash: c3d5687453aeaa2d9ace66491e3a900113a69ed1
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: fee9391d7a6375f14f0e38f8c6a349fe4ec11619
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044251"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912105"
 ---
 # <a name="set-up-microsoft-365"></a>Configurer Microsoft 365
 
@@ -46,7 +46,7 @@ Pour les campagnes éligibles à des tarifs spéciaux, vous pouvez commencer par
 
 Pour toutes les autres organisations, une fois que vous êtes inscrit à [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) [Microsoft 365 Business Premium,](../business/sign-up.md)terminez l’installation en exécutant l’Assistant Configuration pour configurer les paramètres principaux.
 
-Pour toutes les organisations, augmentez la protection de la sécurité en [protégeant](m365-campaigns-protect-admin-accounts.md)les comptes d’administrateur, [](m365-campaigns-conditional-access.md)en protégeant l’accès à la messagerie et aux données et en augmentant la protection contre les [menaces.](m365-campaigns-increase-protection.md)
+Pour toutes les organisations, augmentez la protection de la sécurité en protégeant les comptes d’administrateur, [](m365-campaigns-protect-admin-accounts.md)en protégeant l’accès à la messagerie et aux données [et](m365-campaigns-conditional-access.md)en augmentant la protection contre les [menaces.](m365-campaigns-increase-protection.md)
 
 ## <a name="everyone-set-up-your-devices"></a>Tout le monde : configurer vos appareils
 
@@ -59,10 +59,10 @@ Pour configurer des appareils utilisateur :
 1. Chaque utilisateur [définit ses appareils mobiles.](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)
 2. Pour les appareils non utilisés, les utilisateurs peuvent configurer leurs [PC et Mac.](m365-campaigns-protect-pcs-macs.md)
 Pour le personnel clé, nous vous recommandons d’utiliser des [appareils gérés](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) pour une meilleure protection. Pour tous les appareils, vous devez configurer l’authentification [multifacteur.](m365-campaigns-multifactor-authenication.md)
-3. Tous les utilisateurs doivent apprendre à se protéger eux-mêmes et à votre campagne en découvrir le [hameçonnage et d’autres attaques.](m365-campaigns-phishing-and-attacks.md) Cette [infographie peut](m365-campaigns-protect-campaign-infographic.md) également aider vos utilisateurs à comprendre comment protéger votre campagne contre les menaces en ligne.
+3. Tous les utilisateurs doivent apprendre à se protéger eux-mêmes et à votre campagne en en savoir plus sur le [hameçonnage et d’autres attaques.](m365-campaigns-phishing-and-attacks.md) Cette [infographie peut également](m365-campaigns-protect-campaign-infographic.md) aider vos utilisateurs à comprendre comment protéger votre campagne contre les menaces en ligne.
 
 ## <a name="contact-support"></a>Contacter l’assistance
 
  **Si vous devez contacter le support technique :**
   
-En tant qu’administrateur Microsoft 365, vous avez accès à notre équipe de support client, contacter le support technique pour les produits **[d’entreprise - Aide de l’administrateur](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
+En tant qu’administrateur Microsoft 365, vous avez accès à notre équipe de support client, contacter le support technique pour les produits **[d’entreprise - Aide de l’administrateur](../admin/contact-support-for-business-products.md)**

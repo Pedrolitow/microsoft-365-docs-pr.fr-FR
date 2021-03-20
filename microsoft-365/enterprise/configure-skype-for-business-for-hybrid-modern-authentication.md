@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment configurer Skype Entreprise local pour utiliser l’authentification moderne hybride (HMA), ce qui vous offre une authentification et une autorisation utilisateur plus sécurisées.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74c8e3e0514fbfd8779c2f65e9c541c33b281c59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f3177bafb6eff27053dca61ec576666cae4a97bb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695011"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911149"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Skype Entreprise en local pour utiliser l’authentification moderne hybride
 
@@ -72,7 +72,7 @@ Ces étapes allument MA pour SFB, SFBO, EXCH et EXO, c’est-à-dire tous les pr
   
 Comme vous pouvez le constater, il existe quatre endroits différents pour activer MA ! Pour une expérience utilisateur de qualité, nous vous recommandons d’activer MA aux quatre emplacements ci-après. Si vous ne pouvez pas activer MA à tous ces emplacements, ajustez les étapes afin d’activer MA uniquement dans les emplacements nécessaires pour votre environnement.
   
-Consultez la [rubrique Prise en charge de Skype Entreprise avec MA](https://technet.microsoft.com/library/mt803262.aspx) pour les topologies pris en charge.
+Consultez la [rubrique Prise en charge de Skype Entreprise avec MA](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported) pour les topologies pris en charge.
   
  **Important** Vérifiez que toutes les conditions préalables sont remplies avant de commencer. Vous trouverez ces informations dans la vue [d’ensemble de l’authentification moderne hybride et les conditions préalables.](hybrid-modern-auth-overview.md)
   
@@ -90,7 +90,7 @@ Une fois que vous avez vérifié que vous répondez aux conditions [préalables]
 
 - **URL de service Web CU5 SFB 2015**
 
-Vous aurez besoin d’URL de service web interne et externe pour tous les pools SfB 2015 déployés. Pour obtenir ces informations, exécutez les commandes suivantes à partir de Skype Entreprise Management Shell :
+Vous aurez besoin d’URL de service web interne et externe pour tous les pools SfB 2015 déployés. Pour les obtenir, exécutez les commandes suivantes à partir de Skype Entreprise Management Shell :
   
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -100,7 +100,7 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
 
 - Ex. Externe : https://lyncwebext01.contoso.com
 
-Si vous utilisez un serveur Standard Edition, l’URL interne sera vide. Dans ce cas, utilisez le fqdn du pool pour l’URL interne.
+Si vous utilisez un serveur Standard Edition Server, l’URL interne sera vide. Dans ce cas, utilisez le fqdn du pool pour l’URL interne.
   
 ## <a name="turn-on-modern-authentication-for-exo"></a>Activer l’authentification moderne pour EXO
 
@@ -122,7 +122,7 @@ Vous devez maintenant exécuter des commandes pour ajouter les URL (collectées 
   
  **Remarque** Les noms principaux de service (SSN) identifient les services web et les associent à un principal de sécurité (par exemple, un nom de compte ou un groupe) afin que le service puisse agir au nom d’un utilisateur autorisé. Les clients qui s’authentifier sur un serveur utilisent les informations contenues dans les SNS.
   
-1. Tout d’abord, connectez-vous à Azure Active Directory (Azure AD) [avec ces instructions.](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+1. Tout d’abord, connectez-vous à Azure Active Directory (Azure AD) [avec ces instructions.](/powershell/azure/active-directory/overview?view=azureadps-1.0)
 
 2. Exécutez cette commande, en local, pour obtenir la liste des URL de service web SFB.
 
@@ -173,10 +173,10 @@ Vous devez également vérifier les « informations de configuration » pour les
   
 ![Les informations de configuration d’un client Skype Entreprise utilisant l’authentification moderne indiquent une URL d’autorité OAUTH Lync et EWS de https://login.windows.net/common/oauth2/authorize .](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-Vous devez également maintenir la touche Ctrl vers le bas en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac notifications Windows) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type AuthN « Bearer » qui représente le jeton du porteur utilisé \* dans OAuth.
+Vous devez également maintenir la touche CTRL en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac notifications Windows) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type AuthN de « Bearer » qui représente le jeton du porteur utilisé \* dans OAuth.
   
 ## <a name="related-articles"></a>Articles connexes
 
 [Revenir à la vue d’ensemble de l’authentification moderne.](hybrid-modern-auth-overview.md)
   
-Avez-vous besoin de savoir comment utiliser l’authentification moderne (ADAL) pour vos clients Skype Entreprise ? Nous avons des étapes [à suivre ici.](https://technet.microsoft.com/library/mt710548.aspx)
+Avez-vous besoin de savoir comment utiliser l’authentification moderne (ADAL) pour vos clients Skype Entreprise ? Nous avons des étapes [à suivre ici.](./hybrid-modern-auth-overview.md)

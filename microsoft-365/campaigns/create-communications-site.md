@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un site de communication pour votre campagne ou votre entreprise.
-ms.openlocfilehash: c9624694e2174de47cb53ece8b1077fd7a5b59c5
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: c79f51e43bf3828826adbe25396132d28902722c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044657"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912233"
 ---
 # <a name="create-a-communications-site"></a>Créer un site de communication
 
 Un excellent moyen de communiquer les priorités, de partager des documents de stratégie et de mettre en évidence les événements à venir consiste à utiliser un site de communication dans SharePoint. Les sites de communication sont pour partager des éléments à grande échelle au sein de votre entreprise ou de votre campagne ; il s’agit de votre site de stratégie interne.
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Les bonnes pratiques
 
 Incluez les éléments suivants dans votre site de communications :
 
@@ -42,7 +42,7 @@ Incluez les éléments suivants dans votre site de communications :
 2. Dirigez votre stratégie, votre message, vos documents importants, un répertoire et votre FAQ dans **un élément Web Part Hero.**
 3. Incluez une déclaration de PDG ou de candidat à l’équipe dans un **partie Web De texte**.
 4. Ajoutez des événements à un volet **Web** Événements afin que tout le monde puisse voir ce qui arrive.
-5. Ajoutez des photos que les personnes peuvent utiliser ou partager dans un partie **Web De galerie d’images**.
+5. Ajoutez des photos que les personnes peuvent utiliser ou partager dans un partie **web de la galerie d’images.**
 
 ![Diagramme d’une page de communications SharePoint avec espace pour les éléments communs nécessaires à une campagne](../media/m365-democracy-comms-site.png)
 
@@ -64,4 +64,4 @@ En savoir [plus sur les sites de communications](https://support.office.com/arti
 
 ## <a name="admin-settings"></a>Paramètres d’administration
 
-Si le lien **+** Créer un site n’est pas disponible, il se peut que la création de sites libre-service ne soit pas disponible dans Microsoft 365. Pour créer un site d’équipe, contactez la personne qui administre Microsoft 365 dans votre organisation. Si vous êtes un administrateur Microsoft 365, voir Gérer la création de sites dans [SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) pour activer la création de sites libre-service pour votre organisation ou Gérer les sites dans le nouveau Centre d’administration [SharePoint](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) pour créer un site à partir du Centre d’administration SharePoint Online.  
+Si le lien **+** Créer un site n’est pas disponible, il se peut que la création de sites libre-service ne soit pas disponible dans Microsoft 365. Pour créer un site d’équipe, contactez la personne qui administre Microsoft 365 dans votre organisation. Si vous êtes un administrateur Microsoft 365, voir Gérer la création de sites dans [SharePoint Online](/sharepoint/manage-site-creation) pour activer la création de sites libre-service pour votre organisation ou Gérer les sites dans le nouveau Centre d’administration [SharePoint](/sharepoint/manage-sites-in-new-admin-center) pour créer un site à partir du Centre d’administration SharePoint Online.

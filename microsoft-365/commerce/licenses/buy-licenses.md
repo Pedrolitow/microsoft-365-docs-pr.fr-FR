@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: Découvrez comment acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 pour les entreprises.
 ms.date: ''
-ms.openlocfilehash: 385d5b2bb4bb224c9e3f0944ac4cb024beb9831b
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 904444790a7984ebce4f549c77bfd22e8f459c9c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071238"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911541"
 ---
 # <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être administrateur global ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+- Vous devez être administrateur global ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 - Vous pouvez [ajouter des utilisateurs et attribuer des licences en même temps.](../../admin/add-users/add-users.md)
 - Si vous avez acheté votre offre Microsoft 365 pour les entreprises ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire.
 
@@ -70,7 +70,7 @@ Si vous avez supprimé des licences d’un abonnement, vous devez ensuite suppri
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 2. Dans la page **Abonnements,** sélectionnez l’abonnement auquel vous souhaitez acheter ou supprimer des licences, puis sélectionnez **Ajouter/Supprimer des licences.** [Que se passe-t-il si je ne vois pas les boutons Acheter des licences ou Supprimer des licences ?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. Dans la **zone Nombre total de licences,** entrez le nombre total de licences que vous souhaitez pour cet abonnement, puis **sélectionnez Envoyer** \> **fermer.** Par exemple, si vous avez 100 licences et que vous souhaitez en ajouter cinq, entrez 105. Si vous souhaitez supprimer cinq licences, entrez 95.
 
@@ -78,7 +78,7 @@ Si vous avez supprimé des licences d’un abonnement, vous devez ensuite suppri
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 2. Dans la page **Abonnements,** sélectionnez l’abonnement auquel vous souhaitez acheter ou supprimer des licences, puis sélectionnez **Ajouter/Supprimer des licences.** [Que se passe-t-il si je ne vois pas les boutons Acheter des licences ou Supprimer des licences ?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. Dans la **zone Nombre total de licences,** entrez le nombre total de licences que vous souhaitez pour cet abonnement, puis sélectionnez **Envoyer** \> **fermer.** Par exemple, si vous avez 100 licences et que vous devez en ajouter 5, entrez 105. Si vous souhaitez en supprimer 5, entrez 95.
 

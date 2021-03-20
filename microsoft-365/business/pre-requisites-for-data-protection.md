@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: Découvrez les conditions requises pour la configuration de votre organisation avec Microsoft 365 pour les entreprises et la protection des données de travail sur les appareils de vos utilisateurs.
-ms.openlocfilehash: 237825d2c2683bb6e71ae2fd31f8a25b1aa85ff7
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: c0fca0e038d15b19cb2a37eb5705296ed3da3746
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785889"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912899"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Conditions préalables à la protection des données sur les appareils avec Microsoft 365 pour les entreprises
 
@@ -47,6 +47,6 @@ La première étape de la configuration de votre organisation avec Microsoft 365
     
 - Apple iOS 8.0 ou version ultérieure.
     
-    Google Android 4.0 ou version ultérieure (y compris Samsung KNOX Standard 4.0 ou version ultérieure). Pour plus d’informations, voir [appareils pris en charge par Intune.](https://go.microsoft.com/fwlink/p/?linkid=852307)
+    Google Android 4.0 ou version ultérieure (y compris Samsung KNOX Standard 4.0 ou version ultérieure). Pour plus d’informations, voir [appareils pris en charge par Intune.](/mem/intune/fundamentals/supported-devices-browsers)
     
-- Si vous avez des applications Office existantes sur les ordinateurs des utilisateurs, lisez préparer l’installation du [client Office](prepare-for-office-client-deployment.md) pour comprendre les étapes que vous devrez peut-être suivre avant de configurer Microsoft 365 pour les entreprises pour installer Office 2016 sur les ordinateurs des utilisateurs. 
+- Si vous avez des applications Office existantes sur les ordinateurs des utilisateurs, lisez préparer l’installation du [client Office](prepare-for-office-client-deployment.md) pour comprendre les étapes que vous devrez peut-être suivre avant de configurer Microsoft 365 pour les entreprises pour installer Office 2016 sur les ordinateurs des utilisateurs.

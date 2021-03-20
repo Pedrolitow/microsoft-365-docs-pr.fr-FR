@@ -20,22 +20,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment démarrer et épingler des conversations dans Microsoft Teams.
-ms.openlocfilehash: 02e7336a5de51526e7c1535eb62724823753d8a0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8026c71ebda6c6d65c953fa4983180d80a5df536
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421882"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913601"
 ---
 # <a name="chat-with-employees-and-customers"></a>Discutez avec vos employés et vos clients
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWedV6?autoplay=false]
 
-Vous pouvez discuter en interne avec vos collègues ou avec un utilisateur invité, tel qu’un client ou un partenaire. Si [l’accès invité est désactivé](https://docs.microsoft.com/microsoftteams/set-up-guests) pour votre entreprise, vous pouvez simplement taper une adresse de messagerie pour ajouter un invité à une conversation.
+Vous pouvez discuter en interne avec vos collègues ou avec un utilisateur invité, tel qu’un client ou un partenaire. Si [l’accès invité est désactivé](/microsoftteams/set-up-guests) pour votre entreprise, vous pouvez simplement taper une adresse de messagerie pour ajouter un invité à une conversation.
 
 ## <a name="try-it"></a>Essayez !
 
-Démarrez des conversations en tête à tête ou en groupe pour collaborer avec un petit groupe ou parler en privé, et épinglez des conversations pour un accès rapide.
+Démarrez les conversations de groupe ou 1:1 pour collaborer avec un petit groupe ou parler en privé, et épinglez des conversations pour un accès rapide.
 
 1. Dans  **les conversations,** vous pouvez avoir des conversations en tête à tête ou en groupe avec des personnes.
 2. Sélectionnez **Nouvelle conversation.** :::image type="icon" source="../media/new-chat-icon.png" border="false":::  

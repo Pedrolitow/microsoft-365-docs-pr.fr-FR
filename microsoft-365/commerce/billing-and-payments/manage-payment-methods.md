@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 description: Découvrez comment gérer les modes de paiement dans le centre d'administration Microsoft 365.
 ms.date: ''
-ms.openlocfilehash: a6866a9691e42928a5712c3069704f11fac0546f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 2a53ae0bfb4806a85e03f293f58e1b575e8bcf90
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741388"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911841"
 ---
 # <a name="manage-payment-methods"></a>Gérer les modes de paiement
 
 ::: moniker range="o365-21vianet"
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 ::: moniker-end
 
 Lors de votre achat de produits ou de services commerciaux Microsoft, vous pouvez choisir un mode de paiement existant ou bien en ajouter un autre. Les cartes de débit, de crédit et les informations bancaires sont acceptées pour effectuer ces achats.

@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Découvrez comment les fonctionnalités de protection de Microsoft 365 Business Premium sont mappables aux paramètres Intune. L’abonnement vous fournit une licence pour modifier les paramètres Intune.
-ms.openlocfilehash: ce75073f748f6005a843e31f7c38d06b38a3c706
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5e8a7aa570b0f56324a483fb2cdb77c19f3b2379
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401575"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913019"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Comment les fonctionnalités de protection de Microsoft 365 Business Premium sont-ils m mappés aux paramètres Intune ?
 
@@ -43,7 +43,7 @@ Pour trouver le paramètre Intune, connectez-vous avec vos informations d’iden
   
  > [!IMPORTANT]
  > 
- > Un abonnement Microsoft 365 Business Premium vous donne une licence pour modifier tous les paramètres Intune. Consultez [l’introduction à Intune pour commencer.](https://docs.microsoft.com/intune/introduction-intune)
+ > Un abonnement Microsoft 365 Business Premium vous donne une licence pour modifier tous les paramètres Intune. Consultez [l’introduction à Intune pour commencer.](/intune/introduction-intune)
   
 Sélectionnez le nom de stratégie que vous souhaitez, par exemple, Stratégie d’application pour Android, puis &mdash; &mdash; choisissez **Paramètres de stratégie.**
   
@@ -74,7 +74,7 @@ Sous **Gérer la façon dont les utilisateurs accèdent aux fichiers Office sur 
 
 Le tableau suivant décrit en détail comment les paramètres de stratégie d'application Windows 10 sont mis en correspondance avec les paramètres Intune.
   
-Pour trouver le paramètre Intune, connectez-vous avec vos informations d’identification d’administrateur Microsoft 365 Business Premium, puis allez sur [le portail Azure.](https://portal.azure.com) Sélectionnez **d’autres services,** puis tapez Intune dans le **filtre.** Sélectionnez **La stratégie d’application Intune App Protection.** \> 
+Pour trouver le paramètre Intune, connectez-vous avec vos informations d’identification d’administrateur Microsoft 365 Business Premium, puis allez sur [le portail Azure.](https://portal.azure.com) Sélectionnez **d’autres services** et tapez Intune dans le **filtre.** Sélectionnez **La stratégie d’application Intune App Protection.** \> 
   
  > [!IMPORTANT]
  >
@@ -104,9 +104,7 @@ Pour trouver le paramètre Intune, connectez-vous avec vos informations d’iden
 |Protéger les ordinateurs contre les menaces web dans Microsoft Edge  <br/> |**SmartScreen** dans **Paramètres du navigateur Edge** est défini sur **Obligatoire**.  <br/> |
 |Désactiver l'écran d'un appareil resté inactif pendant (minutes)  <br/> |Nombre maximal de minutes d'inactivité avant le verrouillage de l'appareil (minutes)  <br/> |
 |Autoriser les utilisateurs à télécharger des applications à partir du Microsoft Store  <br/> |Stratégie URI personnalisée  <br/> |
-|Autoriser les utilisateurs à accéder à Cortana  <br/> |**Général** \> **Cortana** est définie pour **bloquer** Intune lorsqu’elle est définie sur **off** dans Microsoft 365 Business Premium.  <br/> |
-|Autoriser les utilisateurs à recevoir des conseils de Windows et des annonces de Microsoft  <br/> |**Windows à** la une , tous bloqués si cette valeur est **définie sur off** dans Microsoft 365 Business Premium.  <br/> |
+|Autoriser les utilisateurs à accéder à Cortana  <br/> |**Général** \> **Cortana** est définie **pour** bloquer Intune lorsqu’elle est définie sur **off** dans Microsoft 365 Business Premium.  <br/> |
+|Autoriser les utilisateurs à recevoir des conseils de Windows et des annonces de Microsoft  <br/> |**Windows à** la une , tous bloqués si ce dernier est **éteint** dans Microsoft 365 Business Premium.  <br/> |
 |Maintenir les appareils Windows 10 à jour automatiquement  <br/> | Ce paramètre se trouve dans les mises à jour du service **Microsoft Intune** - Anneaux de mise à jour Windows 10 , choisissez stratégie de mise à jour pour les appareils \>  **Windows 10,** puis  \> **Paramètres des propriétés**.  <br/>  Lorsque le paramètre Microsoft 365 Business Premium est sur **Sur**, tous les paramètres suivants sont définies :  <br/> **La branche** De service est définie **sur CB** (CBB lorsqu’elle est désactivée dans Microsoft 365 Business Premium).  <br/> **Mises à jour de produits Microsoft** est défini sur **Autoriser**.  <br/> **Pilotes Windows** est défini sur **Autoriser**.  <br/> **Comportement des mises à jour automatiques** est défini sur **Installation automatique à l'heure de la maintenance** avec ce qui suit :  <br/> **Démarrage après ces heures** est défini sur **06:00**.  <br/> **Fin des heures actives** est défini sur **22:00**.  <br/> **Période de report des mises à jour qualité (jours)** est défini sur **0**.  <br/> **Période de report des mises à jour des fonctionnalités (jours)** est défini sur **0**.  <br/> **Mode de téléchargement de l'optimisation de la distribution** est défini sur **HTTP fusionné avec un appairage derrière le même NAT**.  <br/> |
 |||
-   
-

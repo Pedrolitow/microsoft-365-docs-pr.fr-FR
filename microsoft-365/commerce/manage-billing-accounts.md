@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez les comptes de facturation et comment les gérer.
-ms.openlocfilehash: 6c90bdd9087a67cc3639cfb06644a5587273dc35
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c2cf7584148bb846541328396885d20c00e2712a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279297"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911421"
 ---
 # <a name="manage-billing-accounts"></a>Gérer les comptes de facturation
 
@@ -36,9 +36,9 @@ La page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_bla
 
 ## <a name="understand-billing-account-details"></a>Comprendre les détails du compte de facturation
 
-La partie supérieure de la page **de détails des comptes** de facturation est votre profil de compte et contient des informations juridiques et fiscales sur votre organisation. Vous pouvez mettre à jour votre profil pour modifier votre adresse juridique et votre numéro de téléphone. Ce compte est l’entité juridique qui paie pour les produits que vous achetez.
+La partie supérieure de la page **de détails** des comptes de facturation est votre profil de compte et contient des informations juridiques et fiscales sur votre organisation. Vous pouvez mettre à jour votre profil pour modifier votre adresse juridique et votre numéro de téléphone. Ce compte est l’entité juridique qui paie pour les produits que vous achetez.
 
-Le tableau suivant répertorie les termes importants que vous voyez dans la page de **détails** des comptes de facturation.
+Le tableau suivant répertorie les termes importants que vous voyez dans la page de **détails des comptes** de facturation.
 
 | Nom du champ | Description |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -50,7 +50,7 @@ Le tableau suivant répertorie les termes importants que vous voyez dans la page
 | Profils de facturation | Un profil de facturation définit les propriétés de votre facture, telles que la personne qui reçoit la facture, la manière dont la facture est livrée, les conditions de paiement et un numéro de bon de réception. Pour distribuer la facturation au sein de votre organisation, vous pouvez créer plusieurs profils de facturation et identifier le profil de facturation approprié au moment de l’achat. Pour plus d’informations sur les profils de facturation et sur la façon dont vous pouvez les utiliser pour créer des options de facturation plus flexibles pour votre organisation, [comprenez les profils de facturation.](billing-and-payments/manage-billing-profiles.md) |
 
 > [!NOTE]
-> Si vous devez  modifier le nom ou l’adresse de  vente, mais que vous ne voyez pas de lien Modifier, vous devez contacter le [support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) technique pour le modifier. Les demandes de modification **de nom de** vente nécessiteront une vérification de solvabilité. Remplissez [ce formulaire](https://www.microsoft.com/download/details.aspx?id=102732)et êtes prêt à partager l’un des documents suivants avec Microsoft lorsque vous contactez le support technique :
+> Si vous devez  modifier le nom ou l’adresse de  vente, mais que vous ne voyez pas de lien Modifier, vous devez contacter le [support](../admin/contact-support-for-business-products.md) technique pour le modifier. Les demandes de modification **de nom de** vente nécessiteront une vérification de solvabilité. Remplissez [ce formulaire](https://www.microsoft.com/download/details.aspx?id=102732)et êtes prêt à partager l’un des documents suivants avec Microsoft lorsque vous contactez le support technique :
 >
 > - Document émis par le gouvernement ou lettre d’inscription
 > - Imprimer à partir du Registre de l’entreprise locale

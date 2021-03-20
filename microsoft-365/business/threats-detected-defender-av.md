@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment l’Antivirus Microsoft Defender protège vos appareils Windows contre les menaces logicielles, telles que les virus, les programmes malveillants et les logiciels espions.
-ms.openlocfilehash: 1653aef6967cdf76e6e19acda158fb29758280a8
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: ce88e4f7b1caf3a98ebd6dc56d66f0d0fc99a9ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870898"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912429"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Menaces détectées par l’antivirus Microsoft Defender
 
@@ -32,7 +32,7 @@ L’Antivirus Microsoft Defender protège vos appareils Windows contre les menac
  
 Pour fournir une protection contre les menaces, l’Antivirus Microsoft Defender utilise plusieurs méthodes. Ces méthodes incluent la protection cloud, la protection en temps réel et les mises à jour de protection dédiées.
 
-- La protection fournie par le cloud permet de détecter et de bloquer immédiatement les menaces nouvelles et émergentes.
+- La protection fournie par le cloud permet de détecter et de bloquer quasi instantanément les menaces nouvelles et émergentes.
 - L’analyse toujours en cours utilise la surveillance du comportement des fichiers et des processus, ainsi que d’autres techniques (également *appelées protection en temps réel).*
 - Les mises à jour dédiées à la protection sont basées sur l’apprentissage automatique, l’analyse humaine et automatisée du Big Data et la recherche approfondie de résistance aux menaces. 
 
@@ -89,4 +89,4 @@ Pour en savoir plus sur les différentes menaces, visitez le <a href="https://ww
 [Comment activer et utiliser l’Antivirus Microsoft Defender à partir de l’application Sécurité Windows](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (article)\
 [Comment activer l’Antivirus Microsoft Defender à l’aide de la stratégie de groupe](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (article)\
 [Comment mettre à jour vos définitions antivirus](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (article)\
-[Comment soumettre des programmes malveillants et non malveillants à Microsoft pour analyse](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (article)
+[Comment soumettre des programmes malveillants et non malveillants à Microsoft pour analyse](../security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md) (article)

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment configurer et protéger vos comptes d’administrateur.
-ms.openlocfilehash: 73e4b69571b1e1d0a4d1585224fe256ff135c40a
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: ec5b971ba4f1fdc8834e10ddf90ff219f763f805
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044487"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912173"
 ---
 # <a name="protect-your-administrator-accounts"></a>Protéger vos comptes d’administrateur
 
@@ -36,13 +36,13 @@ ms.locfileid: "50044487"
 - Comment configurer un compte d’administrateur supplémentaire pour les urgences.
 - Comment protéger ces comptes.
 
-Lorsque vous vous inscrivez à Microsoft 365 et entrez vos informations, vous devenez automatiquement l’administrateur global. Un administrateur global a le contrôle ultime des comptes d’utilisateur et de tous les autres paramètres dans le Centre d’administration Microsoft, mais il existe de nombreux types de comptes d’administrateur avec différents degrés d’accès. Pour plus [d’informations sur](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) les différents niveaux d’accès pour chaque type de rôle d’administrateur, voir les rôles d’administrateur.
+Lorsque vous vous inscrivez à Microsoft 365 et entrez vos informations, vous devenez automatiquement l’administrateur global. Un administrateur global a le contrôle ultime des comptes d’utilisateur et de tous les autres paramètres dans le Centre d’administration Microsoft, mais il existe de nombreux types de comptes d’administrateur avec différents degrés d’accès. Pour plus [d’informations sur](/office365/admin/add-users/about-admin-roles) les différents niveaux d’accès pour chaque type de rôle d’administrateur, voir les rôles d’administrateur.
 
 ## <a name="create-additional-admin-accounts"></a>Créer des comptes d’administrateur supplémentaires
 
-Utilisez des comptes d’administrateur uniquement pour l’administration. Les administrateurs doivent avoir un compte d’utilisateur distinct pour une utilisation régulière des applications Office et utiliser leur compte d’administration uniquement lorsque cela est nécessaire pour gérer les comptes et les appareils, et tout en travaillant sur d’autres fonctions d’administration. Il est également bon de supprimer la licence Microsoft 365 des comptes d’administrateur afin de ne pas avoir à les payer.
+Utilisez des comptes d’administrateur uniquement pour l’administration. Les administrateurs doivent avoir un compte d’utilisateur distinct pour une utilisation régulière des applications Office et utiliser leur compte administratif uniquement lorsque cela est nécessaire pour gérer les comptes et les appareils, et tout en travaillant sur d’autres fonctions d’administration. Il est également bon de supprimer la licence Microsoft 365 des comptes d’administrateur afin de ne pas avoir à les payer.
 
-Vous pouvez configurer au moins un compte d’administrateur global supplémentaire pour accorder à l’administrateur l’accès à un autre employé approuvé. Vous pouvez également créer des comptes d’administrateur distincts pour la gestion des utilisateurs (ce rôle est appelé **administrateur de gestion des utilisateurs).** Pour plus d’informations, voir [les rôles d’administrateur.](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)
+Vous pouvez configurer au moins un compte d’administrateur global supplémentaire pour accorder à l’administrateur l’accès à un autre employé approuvé. Vous pouvez également créer des comptes d’administrateur distincts pour la gestion des utilisateurs (ce rôle est appelé **administrateur de gestion des utilisateurs).** Pour plus d’informations, voir [les rôles d’administrateur.](/office365/admin/add-users/about-admin-roles)
 
 Pour créer des comptes d’administrateur supplémentaires :
 
@@ -57,7 +57,7 @@ Pour créer des comptes d’administrateur supplémentaires :
 
     ![Choisir le rôle d’administrateur](../media/adminroles.png)
 
- 4. Dans la section **Licences de** produits, déplacez le sélecteur de **Microsoft 365 Business** sur « **Hors** activité » et l’utilisateur Créer sans licence de produit **sur** **« On**».
+ 4. Dans la section **Licences de** produits, déplacez le sélecteur de **Microsoft 365 Business** sur Hors et l’utilisateur Créer sans licence de produit  **sur** **Sur**.
 
     ![Choisir la licence de produit](../media/productlicense.png)
 

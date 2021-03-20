@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment activer Microsoft 365 pour protéger les appareils Windows 10 locaux joints à Active Directory en quelques étapes.
-ms.openlocfilehash: 0b597110447272be128bfe1866234ac25a8e67e6
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 82d4ac3f1d6aba9489f9ea153de3a3d2083b47ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407075"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913191"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Activer la gestion des appareils Windows 10 joints à un domaine par Microsoft 365 Business Premium
 
@@ -43,7 +43,7 @@ Cette vidéo décrit les étapes à suivre pour la configurer pour le scénario 
 
 ## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>Avant de commencer, veillez à effectuer les étapes suivantes :
 - Synchronisez les utilisateurs avec Azure AD avec Azure AD Connect.
-- Synchronisez l’unité d’organisation (OU) Azure AD Connect.
+- Synchronisez l’unité d’organisation Azure AD Connect.
 - Assurez-vous que tous les utilisateurs de domaine que vous synchronisez ont des licences pour Microsoft 365 Business Premium.
 
 Pour obtenir la procédure [à suivre, consultez](manage-domain-users.md) Synchroniser les utilisateurs de domaine avec Microsoft.
@@ -78,7 +78,7 @@ Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 
 ## <a name="4-create-the-required-resources"></a>4. Créer les ressources requises 
 
-L’utilisation de l’cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) trouvée dans le module [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell a simplifié l’réalisation des tâches requises pour configurer la jointage [Azure AD](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) hybride. Lorsque vous voquez cette cmdlet, elle crée et configure le point de connexion de service et la stratégie de groupe requis.
+L’utilisation de l’cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) trouvée dans le module [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell simplifie l’réalisation des tâches requises pour configurer la jointage [Azure AD](/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) hybride. Lorsque vous voquez cette cmdlet, elle crée et configure le point de connexion de service et la stratégie de groupe requis.
 
 Vous pouvez installer ce module en invoquant les éléments suivants à partir d’une instance de PowerShell :
 

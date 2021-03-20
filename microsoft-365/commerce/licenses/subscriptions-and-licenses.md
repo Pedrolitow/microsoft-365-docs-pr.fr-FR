@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Découvrez les abonnements et les licences dans Microsoft 365 pour les entreprises.
 ms.date: 07/01/2020
-ms.openlocfilehash: ccfcb52548fb79267c550afba63c2f5a96b99ed1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6310b3e48c59da3243746cceca2d0516f511b827
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928509"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911433"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises
 
@@ -58,7 +58,7 @@ Le tableau suivant indique ce qui se produit automatiquement lorsque vous attrib
 |Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne. <br/> Pour en savoir plus sur le SLA de cette tâche à accomplir, voir [« Configuration... » dans le Centre d’administration Microsoft 365.](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
 |SharePoint Online  <br/> |Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.  <br/> |
 |Skype Entreprise Online  <br/> |La personne a accès aux fonctionnalités associées à la licence.  <br/> |
-|Applications Microsoft 365 for entreprise  <br/> |La personne peut télécharger des applications Office sur cinq Mac ou PC au plus, cinq tablettes et cinq smartphones.  <br/> |
+|Applications Microsoft 365 pour les grandes entreprises  <br/> |La personne peut télécharger des applications Office sur cinq Mac ou PC au plus, cinq tablettes et cinq smartphones.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Comprendre les licences pour les boîtes aux lettres non-utilisateur
 
@@ -66,9 +66,9 @@ Vous n'êtes pas obligé d'attribuer des licences aux boîtes aux lettres de res
   
 - [Créer une boîte aux lettres partagée](../../admin/email/create-a-shared-mailbox.md)
 - [Supprimer une licence à partir d’une boîte aux lettres partagée](../../admin/email/remove-license-from-shared-mailbox.md)
-- [Boîtes aux lettres partagées dans Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes) pour tous les autres plans Microsoft 365.
-- [Créer et gérer des boîtes aux lettres de salle](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-room-mailboxes)
-- [Gérer des boîtes aux lettres de ressource](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-equipment-mailboxes).
+- [Boîtes aux lettres partagées dans Exchange Online](/exchange/collaboration-exo/shared-mailboxes) pour tous les autres plans Microsoft 365.
+- [Créer et gérer des boîtes aux lettres de salle](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
+- [Gérer des boîtes aux lettres de ressource](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes).
 
 ## <a name="who-can-assign-licenses"></a>Qui peut attribuer des licences ?
 

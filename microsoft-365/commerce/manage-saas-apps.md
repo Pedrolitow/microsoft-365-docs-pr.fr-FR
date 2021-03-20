@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment activer et gérer des applications tierces dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 071f95c838620fb11350a829cbfed249e7c34f6e
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: f560b23871fc6d6ecb319a5704453f2400cb9982
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114716"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911409"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gérer les abonnements d’applications tierces pour votre organisation
 
@@ -28,7 +28,7 @@ Vous pouvez gérer les licences et la facturation des applications tierces dans 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Voici ce que vous pouvez faire dans chaque portail.
 
 Une fois l’application activée, elle reste active, sauf si elle est annulée, arrive à expiration ou si le paiement n’est pas maintenu à jour. Ces événements changent l’état de l’application en désactivé. Une fois qu’une application est désactivée, elle ne peut pas être réactivée. Pour continuer à utiliser l’application, achetez-en une autre copie.
 
-## <a name="assign-licenses"></a>Attribuer des licences
+## <a name="assign-licenses"></a>Attribuer les licences
 
 Les administrateurs doivent activer des applications tierces avant de les affecter aux utilisateurs. Ils sont activés dans le portail de l’éditeur tiers. Dans la page de l’application, **sous Paramètres & actions,** sélectionnez le lien pour attribuer des licences.
 
@@ -105,15 +105,15 @@ Les administrateurs peuvent modifier le nombre de licences dont leur organisatio
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
 3. Sélectionnez **Modifier le nombre de licences.**
 
-## <a name="manage-payment-methods"></a>Gestion des modes de paiement
+## <a name="manage-payment-methods"></a>Gérer les modes de paiement
 
 Un profil de facturation est attribué aux applications de logiciel en tant que service. Les profils de facturation vous permet de personnaliser les produits inclus sur votre facture et la façon dont vous payez vos factures. Voici quelques éléments de communication :
 
-- **Modes de paiement :** cartes de crédit ou transfert de chèque/virement
+- **Modes de paiement :** cartes de crédit ou virement bancaire
 - **Informations de contact** : adresse de facturation et nom du contact
 - **Rôles** : rôles qui vous permettent de modifier le profil de facturation, de payer les factures ou d’utiliser le mode de paiement sur le profil de facturation pour effectuer des achats.
 
-Pour plus d’informations sur les profils de facturation, voir [Comprendre les profils de facturation.](https://docs.microsoft.com/microsoft-store/billing-profile)
+Pour plus d’informations sur les profils de facturation, voir [Comprendre les profils de facturation.](/microsoft-store/billing-profile)
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Modifier le profil de facturation d’un abonnement d’application de service logiciel
 

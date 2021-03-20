@@ -20,19 +20,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez comment les profils de facturation supportent les factures.
-ms.openlocfilehash: 708096b624caa9c23a40df4842ccfce856db048d
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 2f56b9a3edbbbe14927df64bed8b699a68826c9e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667774"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911865"
 ---
 # <a name="understand-billing-profiles"></a>Comprendre les profils de facturation
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ Les rôles sur les profils de facturation sont autorisés à contrôler les acha
 
     - Sous **l’onglet Autorisations,** vous pouvez attribuer des rôles aux utilisateurs pour qu’ils paient des factures.
 
-    - Sous **l’onglet Solde de crédit Azure,** les clients Azure peuvent consulter l’historique du solde des transactions pour les crédits Azure utilisés par ce profil de facturation.
+    - Sous **l’onglet Solde de crédit Azure,** les clients Azure peuvent voir l’historique du solde des transactions pour les crédits Azure utilisés par ce profil de facturation.
 
     - Sous **l’onglet Crédits Azure,** les clients Azure peuvent voir une liste des crédits Azure associés à ce profil de facturation, ainsi que leurs dates d’expiration.
 
@@ -80,6 +80,6 @@ Les rôles sur les profils de facturation sont autorisés à contrôler les acha
 
 ## <a name="need-help-contact-support"></a>Besoin d'aide ? Contactez le support technique.
 
-Si vous avez des questions ou si vous avez besoin d’aide sur vos frais Azure, créez une demande de <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">support avec le support Azure.</a>
+Si vous avez des questions ou avez besoin d’aide sur vos frais Azure, créez une demande de <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">support avec le support Azure.</a>
 
-Si vous avez des questions ou si vous avez besoin d’aide sur votre profil de facturation dans le Centre d’administration Microsoft 365, contactez le support technique [pour les produits d’entreprise.](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
+Si vous avez des questions ou si vous avez besoin d’aide sur votre profil de facturation dans le Centre d’administration Microsoft 365, contactez le support technique [pour les produits d’entreprise.](/office365/admin/contact-support-for-business-products)

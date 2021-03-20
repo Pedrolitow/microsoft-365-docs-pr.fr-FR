@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Connectez-vous à Microsoft 365. Protégez votre entreprise, pratique ou campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
-ms.openlocfilehash: d2bc0ddbfbc839f1b389b844544f33c444012fb4
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: e115ec9fab8270f1b9dddcc33b2d20a5554e4f2e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044203"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912149"
 ---
 # <a name="sign-in-to-microsoft-365"></a>Connectez-vous à Microsoft 365
 
@@ -43,5 +43,5 @@ Si vous vous êtes inscrit à Microsoft 365, vous êtes l’administrateur Micro
 
 ## <a name="for-staff"></a>Pour le personnel
 
-Configurer le personnel comme décrit dans [Ajouter](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) des utilisateurs Vous pouvez également réinitialiser et renvoyer des mots de passe sur la page Ajouter **des** utilisateurs.
+Configurer le personnel comme décrit dans [Ajouter](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) des utilisateurs Vous pouvez également réinitialiser et renvoyer des mots de passe sur la page Ajouter **des** utilisateurs.
 Tous les membres du personnel peuvent se connecter à <a href="https://office.com" target="_blank">https://Office.com</a> l':.

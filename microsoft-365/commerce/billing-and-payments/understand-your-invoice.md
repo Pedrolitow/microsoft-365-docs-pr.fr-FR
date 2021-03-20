@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
 keywords: comptes de facturation, informations sur l’organisation, factures
-ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 2b11cca810b17ae2dacc3ddab723725608ffceb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126572"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911697"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -60,13 +60,13 @@ Le **Résumé de facturation** affiche le résumé des frais depuis la période 
 | --- | --- |
 | Frais|Nombre total de produits achetés pour cette période de facturation, ainsi que les frais et taxes correspondants. Les achats sont agrégés pour offrir un affichage concis de votre facture. |
 | Crédits |Crédits reçus de retours |
-| Crédits Azure appliqués |Vos crédits Azure qui sont automatiquement appliqués à Azure génèrent des frais pour chaque période de facturation. Si vous n’avez pas de crédit Azure, ce champ est masqué. Pour plus d’informations sur les crédits Azure, consultez [Suivre le solde du crédit Azure du contrat client Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
+| Crédits Azure appliqués |Vos crédits Azure qui sont automatiquement appliqués à Azure génèrent des frais pour chaque période de facturation. Si vous n’avez pas de crédit Azure, ce champ est masqué. Pour plus d’informations sur les crédits Azure, consultez [Suivre le solde du crédit Azure du contrat client Microsoft](/azure/billing/billing-mca-check-azure-credits-balance). |
 | Sous-total |Montant avant impôt dû |
 | Taxe |Le type et le montant des taxes payées, selon le pays de votre profil de facturation. Si vous n’avez pas besoin de payer les taxes, aucune taxe n’est affichée sur votre facture. |
 
 ### <a name="understand-your-charges"></a>Les frais
 
-Les pages de frais indiquent le coût divisé par produit. Pour les clients Azure, les frais peuvent être organisés par section de facture. Pour plus d’informations sur l’utilisation des sections de facture avec les produits Azure, consultez [Sections de facture](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) dans [Prise en main de votre compte de facturation du contrat client Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-overview). Au sein de chaque commande de produit, le coût est divisé par la famille de service.
+Les pages de frais indiquent le coût divisé par produit. Pour les clients Azure, les frais peuvent être organisés par section de facture. Pour plus d’informations sur l’utilisation des sections de facture avec les produits Azure, consultez [Sections de facture](/azure/billing/billing-mca-overview#invoice-sections) dans [Prise en main de votre compte de facturation du contrat client Microsoft](/azure/billing/billing-mca-overview). Au sein de chaque commande de produit, le coût est divisé par la famille de service.
 
 | Term |Description |
 | --- | --- |
@@ -86,7 +86,7 @@ Le montant total dû pour chaque famille de service est calculé en soustrayant 
 
 > Total = frais/crédits - crédit Azure + impôt
 
-Si vous souhaitez obtenir des informations supplémentaires sur des frais Azure de votre facture , consultez [Réviser la facture du contrat client Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
+Si vous souhaitez obtenir des informations supplémentaires sur des frais Azure de votre facture , consultez [Réviser la facture du contrat client Microsoft](/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>La dernière page de la facture
 

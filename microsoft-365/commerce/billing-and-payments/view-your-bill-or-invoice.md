@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 07/31/2020
-ms.openlocfilehash: 5bf257847ec880855841035792c7714fd24d9b68
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 395c9773d4bc67ed466d7b3f8d568cecedddfd36
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928531"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911641"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -80,4 +80,4 @@ Si vous avez un solde et que vous souhaitez le payer, vous pouvez le faire en li
 
 [Payer sur facture, par carte de crédit ou par compte bancaire](pay-for-your-subscription.md) (article) \
 [Gestion des modes de paiement](manage-payment-methods.md) (article) \
-[Options de paiement de Minecraft: Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761) (article)
+[Options de paiement de Minecraft: Education Edition](/education/windows/school-get-minecraft) (article)

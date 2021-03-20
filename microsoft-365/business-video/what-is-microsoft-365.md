@@ -20,12 +20,12 @@ search.appverid:
 description: En savoir plus sur les fonctionnalités de Microsoft 365 Business Premium.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 2183c3c865b618d71e15b366f7eaed091101bbc7
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b92e3790e83c5da62d65e6c98bf448d33862df54
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421622"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913537"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -46,4 +46,4 @@ Lorsque vous souscrivez un abonnement à Microsoft 365 Business Premium, vous b
 | Sécuriser vos appareils | Vous pouvez protéger vos fichiers de travail sur les appareils en restreignant l’accès mobile (par exemple, les actions Copier et Coller). Vous pouvez également effacer de façon sélective les données professionnelles provenant d’appareils mobiles inscrits en cas de perte ou de vol. |
 | Autres fonctionnalités de sécurité | Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibles pour vous aider à protéger votre activité contre les cybermenaces et protéger les informations sensibles. Les fonctionnalités incluent Office 365 – Protection avancée contre les menaces, les stratégies de protection contre la perte de données (DLP), l’archivage Exchange Online, Azure Information Protection et Intune. |
 
-Pour plus d’informations, voir [Contenu de Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/).
+Pour plus d’informations, voir [Contenu de Microsoft 365 Business](../business/index.yml).

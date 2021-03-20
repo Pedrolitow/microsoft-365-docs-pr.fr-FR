@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, de l’abonnement, à l’ajout d’un domaine et des utilisateurs, à la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 46370166a9d5e8c9308b8947513e631c159f0b86
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9d92aefb3b5666bb7c2fd2e13c9a00f074f107a7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842127"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912487"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
 
@@ -46,17 +46,17 @@ La plupart des étapes de configuration peuvent être réalisées dans l’insta
 
 ## <a name="step-1-add-your-domain-and-users"></a>Étape 1 : Ajouter votre domaine et vos utilisateurs
 
-   - **[Ajoutez votre domaine](set-up.md#add-your-domain-to-personalize-sign-in)** (si vous avez acheté votre domaine lors de l’inscription, cette étape est déjà effectuée).) [](sign-up.md)
+   - **[Ajoutez votre domaine](set-up.md#add-your-domain-to-personalize-sign-in)** (si vous avez acheté votre domaine lors [de](sign-up.md)l’inscription, cette étape est déjà effectuée).)
 
    - **Ajouter des utilisateurs**. Vous pouvez ajouter des utilisateurs de l’une des trois manières possibles :
         - Dans la [configuration guidée](set-up.md#add-users-in-the-wizard).
-        - Utilisez la synchronisation d’annuaires pour ajouter des utilisateurs à l’aide [d’Azure AD Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) si vous avez un annuaire Active Directory local.
-        - Vous pouvez également ajouter [des utilisateurs ultérieurement](add-users-m365b.md) dans le Centre d’administration.
+        - Utilisez la synchronisation d’annuaires pour ajouter des utilisateurs à l’aide [d’Azure AD Connect](../enterprise/set-up-directory-synchronization.md) si vous avez un annuaire Active Directory local.
+        - Vous pouvez également ajouter [des utilisateurs ultérieurement](../admin/add-users/add-users.md) dans le Centre d’administration.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Étape 2 : Configurer des stratégies de sécurité et des appareils 
 
   - Utilisez la [configuration guidée pour](set-up.md#protect-your-organization) configurer les stratégies d’appareil. 
-  - Vous pouvez également en ajouter ou les modifier ultérieurement dans le Centre d’administration [et](view-policies-and-devices.md) dans le [portail Intune.](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)
-  - L’Assistant Installation configurera également des paramètres de protection contre les menaces de base et de protection contre la perte de données.
+  - Vous pouvez également en ajouter ou les modifier ultérieurement dans le Centre d’administration [et](view-policies-and-devices.md) dans le [portail Intune.](/intune/tutorial-walkthrough-intune-portal)
+  - L’Assistant Installation configurera également les paramètres de protection contre les menaces de base et de protection contre la perte de données.
   
   Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez renforcer votre sécurité en ajoutant les paramètres suivants :
 
@@ -67,25 +67,25 @@ La plupart des étapes de configuration peuvent être réalisées dans l’insta
 
 Pour commencer, voir augmenter la [protection contre les menaces](increase-threat-protection.md) [et configurer les fonctionnalités de conformité.](set-up-compliance.md)
 
-Consultez également les 10 principales façons de sécuriser [votre Microsoft 365 Business Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) pour obtenir une feuille de route des meilleures pratiques en matière de sécurité.
+Consultez également les 10 principales façons de sécuriser [votre Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data) pour obtenir une feuille de route des meilleures pratiques en matière de sécurité.
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Étape 3 : Configurer et gérer les appareils Windows 10
 
 Une fois l’installation guidée terminée, vous devez protéger tous les ordinateurs Windows 10 de votre organisation.
   
-- Windows 10 Professionnel [](pre-requisites-for-data-protection.md) est une condition préalable pour Microsoft 365 Business Premium, mais si vous avez Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement vous donne droit à une mise à niveau vers [Windows 10 Professionnel.](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)
+- Windows 10 Professionnel [](pre-requisites-for-data-protection.md) est une condition préalable pour Microsoft 365 Business Premium, mais si vous avez Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement vous donne droit à une mise à niveau vers [Windows 10 Professionnel.](./upgrade-to-windows-pro-creators-update.md)
 - Suivez les étapes de [la sécurisation des PC Windows 10](secure-win-10-pcs.md) pour configurer des stratégies pour les appareils Windows 10.
 
 Lorsque vous joignez un appareil Windows 10 à Azure AD, les stratégies que vous définissez pour les ordinateurs Windows 10 s’y appliquent. Pour plus d’informations, voir [Configurer des appareils Windows pour les utilisateurs de Microsoft 365.](set-up-windows-devices.md)
 
 ## <a name="step-4-install-microsoft-365-apps-for-business"></a>Étape 4 : Installer Microsoft 365 Apps for business
 - Vous pouvez installer automatiquement Office sur les appareils Windows à l’aide de [l’Assistant Installation.](set-up.md#deploy-office-365-client-apps)
-- Permet aux [utilisateurs d’installer des applications Office](https://docs.microsoft.com/office365/admin/setup/install-applications) pour Windows et les appareils.
+- Permet aux [utilisateurs d’installer des applications Office](/office365/admin/setup/install-applications) pour Windows et les appareils.
      
 ## <a name="advanced"></a>Avancé
 - **Utiliser Autopilot pour configurer de nouveaux appareils**
             
-     Vous pouvez utiliser [Windows Autopilot](add-autopilot-devices-and-profile.md) pour pré-configurer automatiquement de nouveaux appareils **Windows** 10 [](https://www.microsoft.com/solution-providers/search) pour un utilisateur, mais il peut être plus facile d’obtenir un partenaire qui peut le faire pour vous. Vous pouvez également vous rendre dans [le Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)et demander à un expert en technologie cloud de configurer de nouveaux appareils que vous achetez.
+     Vous pouvez utiliser [Windows Autopilot](add-autopilot-devices-and-profile.md) pour pré-configurer automatiquement de nouveaux appareils **Windows** 10 [](https://www.microsoft.com/solution-providers/search) pour un utilisateur, mais il peut être plus facile d’obtenir un partenaire qui peut le faire pour vous. Vous pouvez également vous rendre dans [le Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)et demander à un expert en technologie cloud de configurer les nouveaux appareils que vous achetez.
 
 - **Accès aux ressources locales**
 

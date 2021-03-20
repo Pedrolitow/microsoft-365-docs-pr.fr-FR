@@ -25,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Découvrez comment mettre à jour vos adresses de facturation pour Microsoft 365 pour les entreprises. Vous pouvez également mettre à jour l’adresse de messagerie utilisée pour recevoir des notifications de facturation.
-ms.openlocfilehash: a6019a72bff1e5f4a3d0e6fdc6bb8cf7b8344d26
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 816198f8ff79c7136add6ec33c84a7812daf2daa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114870"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911901"
 ---
 # <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -87,13 +87,13 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, consultez Afficher vot
 
 3. Dans la page **Détails du mode de paiement,** sélectionnez **Modifier.**
 
-4. Mettez à jour votre adresse de facturation, puis **sélectionnez Enregistrer** \> **terminé.**
+4. Mettez à jour votre adresse de facturation, puis sélectionnez **Enregistrer** \> **terminé.**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez modifier, puis **sélectionnez Modifier les détails du paiement.**
 
@@ -113,7 +113,7 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, consultez Afficher vot
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez modifier, puis **sélectionnez Modifier les détails du paiement.**
 
@@ -132,17 +132,17 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, consultez Afficher vot
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sur l’onglet **Produits**, sélectionnez l’abonnement que vous souhaitez modifier.
 3. Dans la page détails de l’abonnement, dans la section **Adresse d’utilisation du service,** **sélectionnez Modifier l’adresse d’utilisation du service.**
-4. Dans le **volet Modifier l’adresse d’utilisation** du service, mettez à jour votre adresse, puis sélectionnez **Enregistrer.**
+4. Dans le **volet Modifier l’adresse d’utilisation du service,** mettez à jour votre adresse, puis sélectionnez **Enregistrer.**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement à modifier, sélectionnez **Plus d’actions,** puis **sélectionnez Modifier l’adresse d’utilisation du service.**
 
-    ![Fermez le menu Plus d’actions.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Gros plan sur le menu Autres actions.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
 3. Dans le **volet Modifier votre adresse d’utilisation** du service, mettez à jour votre adresse, puis sélectionnez **Envoyer.**
 
@@ -150,11 +150,11 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, consultez Afficher vot
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement à modifier, sélectionnez **Plus d’actions,** puis **sélectionnez Modifier l’adresse d’utilisation du service.**
 
-    ![Fermez le menu Plus d’actions.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Gros plan sur le menu Autres actions.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
 3. Dans le **volet Modifier votre adresse d’utilisation** du service, mettez à jour votre adresse, puis sélectionnez **Envoyer.**
 
@@ -168,7 +168,7 @@ Par défaut, les notifications de facturation de votre organisation sont envoyé
 
 2. Sélectionnez **l’icône Utilisateur,** puis **Mon compte.**
   
-3. Sélectionnez **Informations personnelles.**
+3. Sélectionnez **Informations personnelles**.
   
 4. Dans la **zone Détails du contact,** sélectionnez **Modifier.**
 
@@ -192,7 +192,7 @@ Vous pouvez également modifier l'adresse de messagerie de secours d'autres admi
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, allez à **la** page Notifications de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">facturation.</a>
+1. Dans le Centre d’administration, allez à **la** page Notifications de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">facturation.</a>
 
 ::: moniker-end
 

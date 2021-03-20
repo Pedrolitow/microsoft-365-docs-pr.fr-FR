@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez la différence entre Microsoft 365 Business Standard et Microsoft 365 Business Premium et la façon dont vous pouvez mettre à niveau vers Microsoft 365 Business Premium.
-ms.openlocfilehash: bdab8165623170926b17efa4cae9408b78a2f5f5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ef3d929164f83d4e48157065eb1ae1d2a1a9452e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401379"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912919"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Mise à niveau vers Microsoft 365 Business Premium à partir de Microsoft 365 Business Standard
 
@@ -44,7 +44,7 @@ Pour en savoir plus sur Microsoft 365 Business Premium, [Microsoft.com](https://
 
 ## <a name="whats-the-difference-between-microsoft-365-business-standard-and-microsoft-365-business-premium"></a>Quelle est la différence entre Microsoft 365 Business Standard et Microsoft 365 Business Premium ?
 
-Nous avons ajouté une comparaison côte à côte de ces deux plans à la description du [service Microsoft 365 Business Premium.](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) 
+Nous avons ajouté une comparaison côte à côte de ces deux plans à la description du [service Microsoft 365 Business Premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) 
 
 ## <a name="before-you-get-started"></a>Avant de commencer
 
@@ -63,14 +63,14 @@ Nous avons ajouté une comparaison côte à côte de ces deux plans à la descri
 3. Sur la page suivante, sélectionnez **Mettre à niveau.**
 
   > [!NOTE]
-  > Si un message vous indique que la mise à niveau de votre abonnement n’est pas prise en charge avec les licences basées sur des groupes dans **Azure Active Directory,** vous pouvez ignorer cela en toute sécurité, sauf si vous avez une organisation très importante. Les organisations qui ont sélectionné cette option savent qu’elles utilisent des licences basées sur des groupes.
+  > Si vous voyez un message qui indique que la mise à niveau de votre abonnement n’est pas prise en charge avec la gestion des licences basée sur les groupes dans **Azure Active Directory,** vous pouvez l’ignorer en toute sécurité, sauf si vous avez une organisation très importante. Les organisations qui ont sélectionné cette option savent qu’elles utilisent des licences basées sur des groupes.
 
 4. Ensuite, vous pouvez afficher la liste des plans vers qui vous pouvez mettre à niveau. Dans ce cas, recherchez l’offre Microsoft 365 Business Premium. Vous pouvez faire défiler vers le bas si vous souhaitez voir toutes les applications et services inclus dans ce plan. Sous **Microsoft 365 Business Premium, sélectionnez** **Mettre** à niveau pour ajouter Microsoft 365 Business Premium à votre panier.
 
 5. Dans le panier :
 
     1. Nous inclurons automatiquement des licences pour tous vos utilisateurs actuels. Si vous avez besoin de plus ou moins de licences, vous devez acheter et [attribuer ces licences individuellement.](../admin/manage/assign-licenses-to-users.md)  
-    2. Vous pouvez ajuster la façon dont vous souhaitez payer : mensuelle ou mensuelle. Sélectionnez le menu déroulant pour effectuer votre choix.
+    2. Vous pouvez ajuster la façon dont vous souhaitez payer : mensuelle ou annuel. Sélectionnez le menu déroulant pour effectuer votre choix.
 
 6. Sélectionnez **Go to Checkout** où vous verrez un résumé de votre achat, y compris le mode de paiement de ce compte. Vous pouvez également ajouter un code promotionnel ici si vous en avez un.
 
@@ -90,7 +90,7 @@ Maintenant que des licences Microsoft 365 Business Premium ont été attribuées
 
 2. Dans la page **Stratégies d’appareil,** **sélectionnez Ajouter.**
 
-3. Dans le **volet Ajouter** une stratégie, donnez un nom à la stratégie (par exemple, Protéger les fichiers de travail), puis choisissez un **type** de stratégie dans la liste liste.
+3. Dans le **volet Ajouter** une stratégie, nommez la stratégie (par exemple, Protéger les fichiers de travail), puis choisissez un **type** de stratégie dans la liste liste liste.
 
     Vous pouvez configurer des stratégies d’application pour la protection des fichiers sur les appareils Android et iPhone, ainsi que Windows 10, et vous pouvez configurer des stratégies de configuration d’appareil pour les appareils Windows 10 d’entreprise. Pour plus d’informations, voir les liens suivants :
 

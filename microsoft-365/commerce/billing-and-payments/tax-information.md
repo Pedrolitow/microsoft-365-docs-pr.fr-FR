@@ -20,12 +20,12 @@ description: 'Découvrez le nombre de taxes qui vous seront facturées pour votr
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: d3654dd307e15e58acdd06277cf7338da537e5c6
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: 11a7aa1e1825e41f463de17eebd676d8168a56d8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806599"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911709"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
@@ -136,7 +136,7 @@ Si votre facturation est effectuée[](view-your-bill-or-invoice.md)par Microsoft
 ## <a name="add-your-vat-id"></a>Ajouter votre numéro de TVA
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Sous **l’onglet** Produits, sélectionnez l’abonnement à mettre à jour.
+2. Sur l’onglet **Produits**, sélectionnez l’abonnement que vous souhaitez mettre à jour.
 3. Dans la page détails de l’abonnement, dans la section **Adresse d’utilisation du service,** **sélectionnez Modifier l’adresse d’utilisation du service.**
 4. Dans le **volet Modifier l’adresse** d’utilisation du service, dans la zone numéro de TVA, entrez votre numéro de TVA, y compris le préfixe, et sans espace. 
 5. Sélectionnez **Enregistrer**.
@@ -153,9 +153,9 @@ Par exemple :
 
 >(1,29 $ X 0,095) X 100 = 12,25 $
 
-## <a name="apply-for-tax-exempt-status"></a>Demander l’état d’exonération fiscale
+## <a name="apply-for-tax-exempt-status"></a>Demander l’exonération fiscale
 
-Si vous êtes éligible à l’exonération fiscale sur votre marché, démarrez une demande de [service](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) pour établir le statut d’exonération fiscale pour votre organisation.
+Si vous êtes éligible à l’exonération fiscale sur votre marché, démarrez une demande de [service](/office365/admin/contact-support-for-business-products) pour établir le statut d’exonération fiscale pour votre organisation.
 
 |Pays ou paramètres régionaux | Documentation |
 |------------------|----------------|

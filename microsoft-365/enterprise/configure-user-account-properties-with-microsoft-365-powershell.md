@@ -18,12 +18,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: Utilisez PowerShell pour Microsoft 365 pour configurer les propriétés de comptes d’utilisateur individuels ou multiples dans votre client Microsoft 365.
-ms.openlocfilehash: 830cede93a6c14db2dcc5626d41d0dd296b9ac29
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 6b674641842f89fd8c8e22dc26350cdd53734b9e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754327"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911083"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Configurer les propriétés du compte d’utilisateur Microsoft 365 avec PowerShell
 
@@ -33,7 +33,7 @@ Vous pouvez utiliser le Centre d’administration Microsoft 365 pour configurer 
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Pour configurer les propriétés des comptes d’utilisateurs dans le module Azure Active Directory PowerShell pour Graph, utilisez la cmdlet [**Set-AzureADUser**](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) et spécifiez les propriétés à définir ou modifier.
+Pour configurer les propriétés des comptes d’utilisateurs dans le module Azure Active Directory PowerShell pour Graph, utilisez la cmdlet [**Set-AzureADUser**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) et spécifiez les propriétés à définir ou modifier.
 
 Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
    
@@ -73,7 +73,7 @@ Vous identifiez le compte avec le *paramètre -ObjectID* et définissez ou modif
     
     Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).
     
-Pour d’autres paramètres, [voir Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) .
+Pour d’autres paramètres, [voir Set-AzureADUser](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) .
 
 >[!Note]
 >Avant de pouvoir attribuer des licences à un compte d’utilisateur, vous devez affecter un emplacement d’utilisation.
@@ -109,7 +109,7 @@ $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-En utilisant une variable *$upn*, vous pouvez apporter des modifications à des comptes individuels en fonction de leur nom d'affichage. Voici un exemple qui définit l’emplacement d’utilisation de *Belinda Newman* sur La France. Mais il spécifie son nom d’affichage plutôt que son nom d’utilisateur principal :
+En utilisant une variable *$upn*, vous pouvez apporter des modifications à des comptes individuels en fonction de leur nom d'affichage. Voici un exemple qui définit l’emplacement d’utilisation de *Belinda Newman* en France. Mais il spécifie son nom d’affichage plutôt que son nom d’utilisateur principal :
   
 ```powershell
 $userName="Belinda Newman"
@@ -149,7 +149,7 @@ Cette commande indique à PowerShell de :
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Pour configurer les propriétés des comptes d’utilisateurs avec le module Microsoft Azure Active Directory pour Windows PowerShell, utilisez l’cmdlet **Set-MsolUser** et spécifiez les propriétés à définir ou modifier.
+Pour configurer les propriétés des comptes d’utilisateur avec le module Microsoft Azure Active Directory pour Windows PowerShell, utilisez l’cmdlet **Set-MsolUser** et spécifiez les propriétés à définir ou modifier.
 
 Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
   
@@ -159,7 +159,7 @@ Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-micro
 
 ### <a name="change-properties-for-a-specific-user-account"></a>Modification des propriétés d’un compte d’utilisateur spécifique
 
-Pour configurer les propriétés d’un compte d’utilisateur spécifique, utilisez l’cmdlet [**Set-MsolUser**](https://docs.microsoft.com/previous-versions/azure/dn194136(v=azure.100)) et spécifiez les propriétés à définir ou à modifier. 
+Pour configurer les propriétés d’un compte d’utilisateur spécifique, utilisez l’cmdlet [**Set-MsolUser**](/previous-versions/azure/dn194136(v=azure.100)) et spécifiez les propriétés à définir ou à modifier. 
 
 Vous identifiez le compte avec le paramètre *-UserPrincipalName* et définissez ou modifiez des propriétés spécifiques à l’aide de paramètres supplémentaires. Voici la liste des paramètres les plus courants.
   
@@ -197,7 +197,7 @@ Vous identifiez le compte avec le paramètre *-UserPrincipalName* et définissez
     
     Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).
     
-Pour d’autres paramètres, [voir Set-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194136(v=azure.100)).
+Pour d’autres paramètres, [voir Set-MsolUser](/previous-versions/azure/dn194136(v=azure.100)).
 
 Pour voir les noms d’utilisateur principaux de tous vos utilisateurs, exécutez la commande suivante :
   
@@ -229,7 +229,7 @@ $userName="Caleb Sills"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-En utilisant une variable *$upn*, vous pouvez apporter des modifications à des comptes individuels en fonction de leur nom d'affichage. Voici un exemple qui définit l’emplacement d’utilisation de *Belinda Newman* sur *La France,* mais spécifie son nom d’affichage plutôt que son nom d’utilisateur principal :
+En utilisant une variable *$upn*, vous pouvez apporter des modifications à des comptes individuels en fonction de leur nom d'affichage. Voici un exemple qui définit l’emplacement d’utilisation de *Belinda Newman* en *France,* mais spécifie son nom d’affichage plutôt que son nom d’utilisateur principal :
   
 ```powershell
 $userName="<display name>"
@@ -261,7 +261,7 @@ Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocat
 
 Cette commande indique à PowerShell de :
   
-1. Obtenez toutes les informations pour les comptes d’utilisateur (**Get-MsolUser**) et envoyez-les à la commande suivante ( **|** ).
+1. Obtenez toutes les informations des comptes d’utilisateur (**Get-MsolUser**) et envoyez-les à la commande suivante ( **|** ).
     
 1. Recherchez tous les comptes d’utilisateur dont la propriété *Department* est définie sur « Accounting » (**Where {$_. Department -eq « Accounting"}**) et envoyer les informations résultantes à la commande suivante ( **|** ).
     

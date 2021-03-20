@@ -13,13 +13,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés du système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités par des utilisateurs spécifiques qui peuvent poser une menace interne pour votre organisation.
-ms.openlocfilehash: 756851b848822fa801493b2832368ccb2a1a0b51
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés du système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités par des utilisateurs spécifiques qui peuvent poser une menace interne à votre organisation.
+ms.openlocfilehash: eb11eb5790ca9c585db8bbb95b41747a72e5c8f1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620240"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911374"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -33,7 +33,7 @@ La configuration d’un connecteur pour les données RH que les stratégies de g
 
 - Déterminez comment récupérer ou exporter les données à partir du système RH de votre organisation (et régulièrement) et ajoutez-les aux fichiers CSV que vous créez à l’étape 1. Le script que vous exécutez à l’étape 4 charge les données RH des fichiers CSV dans le cloud Microsoft.
 
-- L’utilisateur qui crée le connecteur RH à l’étape 3 doit avoir le rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+- L’utilisateur qui crée le connecteur RH à l’étape 3 doit avoir le rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 - L’exemple de script que vous exécutez à l’étape 4 charge vos données RH dans le cloud Microsoft afin qu’elles soient utilisées par la solution de gestion des risques internes. Cet exemple de script n’est pas pris en charge dans le cadre d’un programme ou d’un service de support standard Microsoft. L’exemple de script est fourni tel quel, sans garantie d’aucune sorte. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. La totalité des risques découlant de l’utilisation ou de la performance de l’exemple de script et de la documentation repose sur vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison des scripts ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
@@ -191,7 +191,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 ```
 
 > [!NOTE]
-> Vous pouvez utiliser n’importe quel nom pour la colonne qui identifie le type de données RH, car vous maprez le nom de la colonne dans votre fichier CSV en tant que colonne qui identifie le type de données RH lorsque vous configurerez le connecteur à l’étape 3. Vous masez également les valeurs utilisées pour la colonne de type de données lors de la mise en place du connecteur.
+> Vous pouvez utiliser n’importe quel nom pour la colonne qui identifie le type de données RH, car vous maprez le nom de la colonne dans votre fichier CSV en tant que colonne qui identifie le type de données RH lorsque vous configurerez le connecteur à l’étape 3. Vous allez également ma cartographier les valeurs utilisées pour la colonne de type de données lors de la mise en place du connecteur.
 
 ### <a name="adding-the-hrscenario-column-to-a-csv-file-that-contains-a-single-data-type"></a>Ajout de la colonne HRScenario à un fichier CSV qui contient un seul type de données
 
@@ -207,11 +207,11 @@ L’étape suivante consiste à créer et inscrire une nouvelle application dans
 
 - ID de client (également appelé *ID d’annuaire)*
 
-Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir Inscrire une application avec la [plateforme d’identités Microsoft.](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir Inscrire une [application avec la plateforme d’identités Microsoft.](/azure/active-directory/develop/quickstart-register-app)
 
 ## <a name="step-3-create-the-hr-connector"></a>Étape 3 : Créer le connecteur RH
 
-L’étape suivante consiste à créer un connecteur RH dans le Centre de conformité Microsoft 365. Après avoir exécuté le script à l’étape 4, le connecteur RH que vous créez inséra les données RH du fichier CSV vers votre organisation Microsoft 365. Avant de créer un connecteur, assurez-vous que vous avez une liste des scénarios RH et des noms de colonne CSV correspondants pour chacun d’eux. Vous devez ma cartographier les données requises pour chaque scénario avec les noms de colonne réels dans votre fichier CSV lors de la configuration du connecteur. Vous pouvez également télécharger un exemple de fichier CSV lors de la configuration du connecteur et l’Assistant vous aidera à maser le nom des colonnes sur les types de données requis.
+L’étape suivante consiste à créer un connecteur RH dans le Centre de conformité Microsoft 365. Après avoir exécuté le script à l’étape 4, le connecteur RH que vous créez inséra les données RH du fichier CSV vers votre organisation Microsoft 365. Avant de créer un connecteur, assurez-vous que vous avez une liste des scénarios RH et les noms de colonne CSV correspondants pour chacun d’eux. Vous devez ma cartographier les données requises pour chaque scénario avec les noms de colonne réels dans votre fichier CSV lors de la configuration du connecteur. Vous pouvez également télécharger un exemple de fichier CSV lors de la configuration du connecteur et l’Assistant vous aidera à maser le nom des colonnes sur les types de données requis.
 
 Une fois cette étape terminée, assurez-vous de copier l’ID de travail généré lorsque vous créez le connecteur. Vous utiliserez l’ID de travail lorsque vous exécuterez le script.
 
@@ -239,7 +239,7 @@ Une fois cette étape terminée, assurez-vous de copier l’ID de travail géné
 
 7. Dans la page Détails du mappage de fichiers, faites l’une des choses suivantes, selon que vous avez téléchargé un exemple de fichier CSV et que vous configurez le connecteur pour un scénario RH unique ou pour plusieurs scénarios. Si vous avez chargé un exemple de fichier, vous n’avez pas besoin de taper les noms de colonne. Vous les sélectionnez dans une liste liste.
 
-    - Si vous avez sélectionné un scénario RH unique à l’étape précédente, tapez les noms d’en-tête de colonne (également *appelés paramètres)* à partir du fichier CSV que vous avez créé à l’étape 1 dans chacune des zones appropriées. Les noms de colonne que vous tapez ne sont pas sensibles à la cas, mais assurez-vous d’inclure des espaces si les noms de colonne dans votre fichier CSV incluent des espaces. Comme indiqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de paramètres dans votre fichier CSV. Par exemple, la capture d’écran suivante montre les noms des paramètres à partir de l’exemple de fichier CSV pour le scénario RH de l’employé, illustré à l’étape 1.
+    - Si vous avez sélectionné un scénario RH unique à l’étape précédente, tapez les noms d’en-tête de colonne (également *appelés paramètres)* à partir du fichier CSV que vous avez créé à l’étape 1 dans chacune des zones appropriées. Les noms de colonne que vous tapez ne sont pas sensibles à la cas, mais assurez-vous d’inclure des espaces si les noms de colonnes dans votre fichier CSV incluent des espaces. Comme indiqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de paramètres dans votre fichier CSV. Par exemple, la capture d’écran suivante montre les noms des paramètres à partir de l’exemple de fichier CSV pour le scénario RH de l’employé, illustré à l’étape 1.
 
     - Si vous avez sélectionné plusieurs types de données à l’étape ci-dessus, vous devez entrer le nom de colonne d’identificateur qui identifiera le type de données RH dans votre fichier CSV. Après avoir entré le nom de la colonne d’identificateur, tapez la valeur qui identifie ce type de données RH, puis tapez les noms d’en-tête de colonne pour les types de données sélectionnés à partir des fichiers CSV que vous avez créés à l’étape 1 dans chacune des zones appropriées pour chaque type de données sélectionné. Comme indiqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de colonne dans votre fichier CSV.
 
@@ -304,10 +304,10 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   Si le chargement réussit, le script affiche le message **Télécharger** réussi.
+   Si le téléchargement réussit, le script affiche le message **Télécharger** réussi.
 
    > [!NOTE]
-   > Si vous avez des problèmes lors de [](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) l’exécution de la commande précédente en raison des stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
+   > Si vous avez des problèmes lors de [](/powershell/module/microsoft.powershell.core/about/about_execution_policies) l’exécution de la commande précédente en raison de stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Étape 5 : Surveiller le connecteur RH
 
@@ -319,11 +319,11 @@ Après avoir créé le connecteur RH et exécuté le script pour télécharger v
 
    ![Page de flyout du connecteur RH avec les propriétés et l’état](../media/HRConnectorFlyout1.png)
 
-3. Sous **Progression,** cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et télécharge les données du fichier CSV dans le cloud Microsoft. 
+3. Sous **Progression,** cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et charge les données du fichier CSV dans le cloud Microsoft. 
 
    ![Le fichier journal du connecteur RH affiche les lignes de numéro à partir du fichier CSV qui ont été téléchargées](../media/HRConnectorLogFile.png)
 
-   Le `RecordsSaved` champ indique le nombre de lignes dans le fichier CSV qui a été téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des champs est 4, si le script a correctement chargé toutes les lignes du fichier `RecordsSaved` CSV.
+   Le `RecordsSaved` champ indique le nombre de lignes dans le fichier CSV téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des champs est 4, si le script a chargé avec succès toutes les lignes du fichier `RecordsSaved` CSV.
 
 Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécharger le script s’affiche sous **Dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes pour exécuter le script.
 
@@ -345,11 +345,11 @@ Vous pouvez utiliser l’application De planification des tâches dans Windows p
 
    1. Déterminez s’il faut exécuter le script uniquement lorsque vous êtes connecté à l’ordinateur ou l’exécuter lorsque vous êtes connecté ou non.
 
-   1. Assurez-vous que la **case à cocher** Exécuter avec les privilèges les plus élevés est sélectionnée.
+   1. Assurez-vous que la **case à cocher** Exécuter avec les privilèges les plus élevés est cocher.
 
 6. Sélectionnez **l’onglet Déclencheurs,** cliquez **sur Nouveau,** puis faites les choses suivantes :
 
-   1. Sous **Paramètres,** sélectionnez **l’option** Quotidienne, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
+   1. Sous **Paramètres,** **sélectionnez** l’option Quotidienne, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
 
    1. Sous **Paramètres avancés,** vérifiez que la **case à** cocher Activée est activée.
 
@@ -363,7 +363,7 @@ Vous pouvez utiliser l’application De planification des tâches dans Windows p
 
    1. Dans la **zone Programme/script,** cliquez sur **Parcourir,** puis accédez à l’emplacement suivant et sélectionnez-le afin que le chemin d’accès s’affiche dans la zone `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` :
 
-   1. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez ran à l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
    1. Dans la **zone Démarrer dans (facultatif),** collez l’emplacement du dossier du script que vous avez écrit à l’étape 4. Par exemple, `C:\Users\contosoadmin\Desktop\Scripts`.
 
@@ -373,7 +373,7 @@ Vous pouvez utiliser l’application De planification des tâches dans Windows p
 
    La nouvelle tâche s’affiche dans la bibliothèque du Programmeur de tâches.
 
-   ![La nouvelle tâche s’affiche dans la bibliothèque du Programmeur de tâches](../media/HRConnectorTaskSchedulerLibrary.png)
+   ![La nouvelle tâche s’affiche dans la bibliothèque du Programmeur des tâches](../media/HRConnectorTaskSchedulerLibrary.png)
 
    La dernière fois que le script a été exécuté et la prochaine fois qu’il est programmé pour s’exécuter, s’affiche. Vous pouvez double-cliquer sur la tâche pour la modifier.
 
@@ -383,4 +383,4 @@ Vous pouvez utiliser l’application De planification des tâches dans Windows p
 
 Le 20 juillet 2020, nous avons publié des scénarios supplémentaires pris en charge par les connecteurs RH. Voici les scénarios RH précédemment décrits dans cet article. Tout connecteur RH créé avant cette date prend uniquement en charge le scénario employé. Si vous avez créé un connecteur RH avant le 20 juillet 2020, nous l’avons migré afin qu’il continue à migrer vos données RH vers le cloud Microsoft. Vous n’avez rien à faire pour maintenir cette fonctionnalité. Vous pouvez continuer à utiliser le connecteur sans interruption.
 
-Si vous souhaitez implémenter des scénarios rh supplémentaires, créez un connecteur RH et configurez-le pour les scénarios RH supplémentaires qui ont été publiés. Vous devez également créer un ou plusieurs nouveaux fichiers CSV qui contiennent les données pour prendre en charge les scénarios rh supplémentaires. Après avoir créé un connecteur RH, exécutez le script à l’aide de l’ID de travail du nouveau connecteur et du ou des fichiers CSV avec les données de vos scénarios rh supplémentaires.
+Si vous souhaitez implémenter des scénarios rh supplémentaires, créez un connecteur RH et configurez-le pour les scénarios RH supplémentaires qui ont été publiés. Vous devez également créer un ou plusieurs nouveaux fichiers CSV qui contiennent les données pour prendre en charge les scénarios rh supplémentaires. Après avoir créé un connecteur RH, exécutez le script à l’aide de l’ID de travail du nouveau connecteur et du ou des fichiers CSV avec les données de vos scénarios RH supplémentaires.

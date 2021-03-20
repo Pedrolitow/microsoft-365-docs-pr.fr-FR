@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment migrer des fichiers Google vers Microsoft 365 pour les entreprises à l’aide de Mover.
-ms.openlocfilehash: 72ea81ad86a20e01b4650915fef96a713b207c3b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6feabff7e36e84f7dba56e74333648325cf43920
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166158"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913573"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Migrer des fichiers Google vers Microsoft 365 pour les entreprises 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-Lorsque vous migrez vers Microsoft 365 pour les entreprises, vous souhaiterez migrer vos fichiers à partir de Google Drive. Vous pouvez utiliser l’application Mover pour déplacer des fichiers à partir de lecteurs personnels et partagés. Pour plus d’informations, [voir Migration cloud de Mover.](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)
+Lorsque vous migrez vers Microsoft 365 pour les entreprises, vous souhaiterez migrer vos fichiers à partir de Google Drive. Vous pouvez utiliser l’application Mover pour déplacer des fichiers à partir de lecteurs personnels et partagés. Pour plus d’informations, [voir Migration cloud de Mover.](/sharepointmigration/mover-plan-migration)
 
 > [!NOTE]
 > Mover effectuera une copie des fichiers et les déplacera vers Microsoft 365 pour les entreprises. Les fichiers d’origine resteront également dans Google Drives.
@@ -45,7 +45,7 @@ Tous les utilisateurs doivent s’être inscrits à Microsoft 365 pour les entre
 
 ### <a name="install-mover"></a>Installer Mover
 
-1. Connectez-vous à votre console d’administration Google Workspace [admin.google.com](https://admin.google.com).
+1. Connectez-vous à votre console d’administration Google Workspace [à l’admin.google.com](https://admin.google.com).
 
 1. Choose **Apps**  >  **Google Workspace Marketplace apps** Add app to Domain Install  >  **list**.
 
@@ -67,7 +67,7 @@ Tous les utilisateurs doivent s’être inscrits à Microsoft 365 pour les entre
     Mover affiche le nombre de lecteurs d’équipe et d’utilisateurs détectés. 
 
 1. Under **Select destination**, choose **Authorize New Connector**, locate Office **365**, and select **Authorize**.
-1. Pour accorder des autorisations à l’application Mover dans azure Active Directory, accédez [à aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth).
+1. Pour accorder des autorisations à l’application Mover dans votre Azure Active Directory, accédez [à aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth).
 1. Sélectionnez **Office 365 Mover**, **Autorisations**, **Accorder le consentement administrateur pour votre entreprise**.
 1. Choisissez votre compte, examinez les autorisations, puis sélectionnez **Accepter.**
 1. Choose **Properties** and verify that **User assignment required?** is turned on.
@@ -83,7 +83,7 @@ Tous les utilisateurs doivent s’être inscrits à Microsoft 365 pour les entre
 1. Dans ce cas, nous avons ajouté un site SharePoint appelé Fichiers migrés et pris note de l’URL de la page de documents. 
 1. Nous avons ensuite créé un fichier CSV au format Chemin d’accès source, Chemin de destination et Balises. 
 
-    Pour plus [d’informations, voir aka.ms/movercsv](https://docs.microsoft.com/sharepointmigration/mover-create-migration-csv).
+    Pour plus [d’informations, voir aka.ms/movercsv](/sharepointmigration/mover-create-migration-csv).
 
     Lorsque vous ajoutez l’URL du chemin d’accès de destination, supprimez tout le texte après documents partagés. Par exemple, cette URL complète ne fonctionnera pas : `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
 

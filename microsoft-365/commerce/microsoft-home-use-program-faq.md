@@ -1,5 +1,5 @@
 ---
-title: Questions fréquemment posées sur le programme d’utilisation à domicile Microsoft (FAQ)
+title: Forum aux questions du programme d’utilisation à domicile Microsoft (FAQ)
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -15,20 +15,20 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 description: Forum aux questions (FAQ) sur le programme d’utilisation à domicile Microsoft.
-ms.openlocfilehash: f4848e5f84081152fb42e41887b581d7290dfe2f
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 68abc62e7d8daf3122ce646223eee0f772ce572d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294685"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911385"
 ---
-# <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Questions fréquemment posées sur le programme d’utilisation à domicile Microsoft (FAQ)
+# <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Forum aux questions du programme d’utilisation à domicile Microsoft (FAQ)
 
 Les clients avec licence en volume utilisent le programme d’utilisation à domicile microsoft (HUP) sur le site [web du Microsoft Store pour Entreprises.](https://go.microsoft.com/fwlink/?linkid=2139192) 
 
 Tous les autres clients accèdent à HUP à l’aide de cette étape :
 
-- Dans le Centre d’administration Microsoft, allez à la page Facturation de vos produits, sélectionnez l’onglet  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054) **Avantages,** puis sélectionnez **l’onglet HUP.**
+- Dans le Centre d’administration Microsoft, allez à la page Facturation de vos produits, sélectionnez l’onglet Avantages, puis sélectionnez l’onglet  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054) **HUP.** 
 
 ## <a name="what-is-the-microsoft-home-use-program"></a>Qu’est-ce que le programme d’utilisation à domicile Microsoft ?
 
@@ -56,13 +56,13 @@ Pour que les employés tirez parti de la remise du programme Microsoft Famille, 
 
 ## <a name="why-do-i-have-to-create-an-azure-active-directory-aad-account-to-use-the-home-use-program-microsoft-store-for-business"></a>Pourquoi dois-je créer un compte Azure Active Directory (AAD) pour utiliser le programme d’utilisation à domicile/ Microsoft Store pour Entreprises ?
 
-Pour mettre à jour et moderniser le programme d’utilisation à domicile sur un plus large éventail d’avantages en licence et en produits, nous devons modifier la façon dont nous respectons le programme HUP. Microsoft Store pour Entreprises est utilisé pour la validation d’éligibilité et pour affecter des avantages HUP, et pour cela, il s’appuie sur AAD pour connecter des informations à partir de VSLC et pour valider les domaines de messagerie des employés de votre organisation. Pour plus d’informations, voir Pour vous inscrire aux comptes [Azure AD via Office 365 entreprise.](https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)
+Pour mettre à jour et moderniser le programme d’utilisation à domicile sur un plus large éventail d’avantages en licence et en produits, nous devons modifier la façon dont nous respectons le programme HUP. Microsoft Store pour Entreprises est utilisé pour la validation d’éligibilité et pour affecter des avantages HUP, et pour cela, il s’appuie sur AAD pour connecter des informations à partir de VSLC et pour valider les domaines de messagerie des employés de votre organisation. Pour plus d’informations, voir Pour vous inscrire à des comptes [Azure AD via Office 365 entreprise.](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)
 
 ## <a name="how-do-i-become-the-assigned-it-admin-of-a-managed-tenant"></a>Comment devenir l’administrateur informatique affecté d’un client géré ?
 
 Vous devez créer un enregistrement spécial dans DNS pour prouver que vous êtes propriétaire de votre domaine d’entreprise, ex:contoso.com.
 
-Pour un processus pas à pas pour devenir un client géré, voir Prendre en charge un répertoire non géré en tant qu’administrateur [dans Azure Active](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover).
+Pour un processus pas à pas pour devenir un client géré, voir Prendre en charge un répertoire non géré en tant qu’administrateur [dans Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
 
 ## <a name="what-resources-are-available-to-help-promote-the-home-use-program-benefit-to-employees"></a>Quelles ressources sont disponibles pour contribuer à promouvoir les avantages du programme d’utilisation à domicile pour les employés ?
 
@@ -86,13 +86,13 @@ Les installation par le biais du programme d’utilisation à domicile n’ont a
 
 ## <a name="im-having-trouble-managing-my-organizations-microsoft-home-use-program-benefit-where-can-i-get-support"></a>J’ai des difficultés à gérer les avantages du programme Microsoft Home Use de mon organisation. Où puis-je obtenir de l’aide ?
 
-Pour la prise en charge des problèmes lors de la migration à partir du Centre de gestion des licences en volume ou pour accéder au Microsoft Store pour Entreprises, consultez la prise en charge du CENTRE de gestion [des licences en volume.](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0)
+Pour obtenir une prise en charge des problèmes lors de la migration à partir du Centre de gestion des licences en volume ou pour accéder au Microsoft Store pour Entreprises, consultez la prise en charge du CENTRE de gestion [des licences en volume.](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0)
 
-Pour les problèmes d’affichage de l’avantage une fois que vous avez déjà accédé au Microsoft Store pour Entreprises, consultez la prise en charge de l’administrateur [du Store pour Entreprises.](https://docs.microsoft.com/microsoft-store/)
+Pour les problèmes d’affichage de l’avantage une fois que vous avez déjà accédé au Microsoft Store pour Entreprises, consultez la prise en charge de [l’administrateur du Store pour Entreprises.](/microsoft-store/)
 
 ## <a name="why-am-i-not-seeing-an-option-to-purchase-visio-professional-2019-andor-project-professional-2019"></a>Pourquoi ne vois-je pas d’option pour acheter Visio Professionnel 2019 et/ou Project Professionnel 2019 ?
 
-Si l’un de vos employés a tirer parti du programme précédent et recherche des remises sur Visio Professionnel 2019 et/ou Project Professionnel 2019, consultez le processus de validation d’éligibilité et, une fois que vous êtes inscrit avec votre compte Microsoft personnel, consultez d’autres produits **Office** pour acheter ces produits. Si vous ne voyez pas de remises attendues appliquées, contactez l’administrateur du programme d’utilisation à domicile de votre employeur pour obtenir des informations sur ces avantages supplémentaires.
+Si l’un de vos employés a tirer parti du programme précédent et recherche des remises sur Visio Professionnel 2019 et/ou Project Professionnel 2019, consultez le processus de validation d’éligibilité et, une fois que vous êtes inscrit avec votre compte Microsoft personnel, consultez d’autres produits **Office** pour acheter ces produits. Si les remises prévues ne sont pas appliquées, contactez l’administrateur du programme d’utilisation à domicile de votre employeur pour obtenir des informations sur ces avantages supplémentaires.
 
 ## <a name="what-if-my-employees-have-questions-about-this-program-or-need-support-with-purchasing-and-installation"></a>Que se passe-t-il si mes employés ont des questions sur ce programme ou ont besoin d’une assistance pour l’achat et l’installation ?
 
@@ -118,7 +118,7 @@ Si les employés ont des questions, reportez-les aux ressources suivantes :
 
 [Centre de gestion des licences en volume Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (page de liens)
 
-[Support pour les administrateurs du Microsoft Store](https://docs.microsoft.com/microsoft-store/) pour Entreprises (page de liens)
+[Support pour les administrateurs du Microsoft Store](/microsoft-store/) pour Entreprises (page de liens)
 
 [Microsoft Store pour Entreprises](https://go.microsoft.com/fwlink/?linkid=2139192) (page de liens)
 

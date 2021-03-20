@@ -19,19 +19,19 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - Commerce
-ms.openlocfilehash: 22868021fec978f8f55c47adca82438f1ae51029
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: ea9cdb6edf3aaac1575b1d2b14790bd28876ee26
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405863"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911642"
 ---
 # <a name="buy-or-manage-add-ons"></a>Acheter ou gérer des modules complémentaires
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,14 +50,14 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 
 Utilisez les étapes suivantes pour rechercher et acheter des modules supplémentaires. La liste inclut uniquement les modules qui sont disponibles. Cette liste est basée sur vos abonnements actifs et sur toutes les autres modules add-on existantes dont vous disposez déjà. Si un module add-on ne figure pas dans la liste, il n’est pas disponible pour l’achat.
 
-Pour plus d'informations sur les modules complémentaires d'Skype Entreprise, voir [Licences de modules complémentaires Skype Entreprise et Microsoft Teams](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
+Pour plus d'informations sur les modules complémentaires d'Skype Entreprise, voir [Licences de modules complémentaires Skype Entreprise et Microsoft Teams](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
 
 1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
 2. At the bottom of the **Purchase services** page, in the **Add-ons** section, find the add-on that you want to buy, and select **Details**.
 3. Dans la page des détails du produit, sélectionnez **Suivant.**
 4. Si nécessaire, remplissez d’autres informations de commande. Ces informations peuvent inclure la sélection de l’abonnement pour le module complémentaire. Lorsque vous avez terminé, sélectionnez **Check out maintenant.**
 5. Si nécessaire, examinez les informations de commande et de tarification, puis sélectionnez **Suivant**.
-6. Choisissez un mode de paiement ou ajoutez-en un nouveau, puis sélectionnez **Passer une** commande à La page  >  **d’accueil de l’administrateur.**
+6. Choisissez un mode de paiement, ou ajoutez-en un nouveau, puis sélectionnez **Passer une** commande à La page  >  **d’accueil de l’administrateur.**
 
 ## <a name="manage-an-add-on"></a>Gérer un module add-on
 

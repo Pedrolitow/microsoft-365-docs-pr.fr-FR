@@ -23,24 +23,24 @@ search.appverid:
 - MET150
 - MOE150
 description: Synchronisez les utilisateurs contrôlés par un domaine avec Microsoft 365 pour les entreprises.
-ms.openlocfilehash: b40a995a1723808d2fd171c534e9131a891840ba
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 1c939dec7229f02991b15f08c48f184efecaddb0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841356"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913251"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Synchroniser les utilisateurs de domaine avec Microsoft 365
 
 ## <a name="1-prepare-for-directory-synchronization"></a>1. Préparer la synchronisation d’annuaires 
 
-Avant de synchroniser vos utilisateurs et ordinateurs à partir du domaine Active Directory local, voir Préparer la synchronisation d’annuaires [avec Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/prepare-for-directory-synchronization) En particulier :
+Avant de synchroniser vos utilisateurs et ordinateurs à partir du domaine Active Directory local, voir Préparer la synchronisation d’annuaires [avec Microsoft 365.](../enterprise/prepare-for-directory-synchronization.md) En particulier :
 
    - Assurez-vous qu’il n’existe aucun doublon dans votre répertoire pour les attributs suivants : **mail,** **proxyAddresses** et **userPrincipalName**. Ces valeurs doivent être uniques et les doublons doivent être supprimés.
    
    - Nous vous recommandons de configurer l’attribut **userPrincipalName** (UPN) pour chaque compte d’utilisateur local afin qu’il corresponde à l’adresse de messagerie principale correspondant à l’utilisateur Sous licence Microsoft 365. Par exemple : *mary.shelley@contoso.com* au lieu *de mary@contoso.local*
    
-   - Si le domaine Active Directory se termine par un suffixe non routable tel que *.local* ou *.lan,* au lieu d’un suffixe routable Internet tel *que .com* ou *.org,* ajustez d’abord le suffixe UPN des comptes d’utilisateurs locaux comme décrit dans Préparer un domaine [non routable](https://docs.microsoft.com/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)pour la synchronisation d’annuaires. 
+   - Si le domaine Active Directory se termine par un suffixe non routable tel que *.local* ou *.lan,* au lieu d’un suffixe routable Internet tel *que .com* ou *.org,* ajustez d’abord le suffixe UPN des comptes d’utilisateurs locaux, comme décrit dans Préparer un domaine [non routable](../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md)pour la synchronisation d’annuaires. 
 
 **L’IdFix** d’exécuter à l’étape quatre (4) ci-dessous permet également de s’assurer que votre annuaire Active Directory local est prêt pour la synchronisation d’annuaires.
 
@@ -59,11 +59,11 @@ Pour synchroniser vos utilisateurs, groupes et contacts à partir d’Active Dir
  5. Suivez les étapes de l’Assistant pour télécharger Azure AD Connect et l’utiliser pour synchroniser vos utilisateurs contrôlés par un domaine avec Microsoft 365.
 
 
-Pour en savoir plus, voir Configurer la synchronisation d’annuaires [pour Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)
+Pour plus d’informations, voir Configurer la synchronisation d’annuaires [pour Microsoft 365.](../enterprise/set-up-directory-synchronization.md)
 
-Lorsque vous configurez vos options pour Azure AD Connect, nous vous recommandons d’activer la synchronisation de mot de **passe,** l’personnalisation transparente et la fonctionnalité d’écriture sur écriture automatique du mot de passe, qui est également prise en charge dans Microsoft 365 pour les entreprises. 
+Lorsque vous configurez vos options pour Azure AD Connect, nous vous recommandons d’activer la synchronisation de mot de **passe,** l’personnalisation transparente et la fonctionnalité d’écriture automatique de mot de passe, qui est également prise en charge dans Microsoft 365 pour les entreprises. 
 
 > [!NOTE]
-> Il existe quelques étapes supplémentaires pour l’écriture de mot de passe au-delà de la case à cocher dans Azure AD Connect. Pour plus d’informations, [voir How-to: configure password writeback](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
+> Il existe quelques étapes supplémentaires pour l’écriture de mot de passe au-delà de la case à cocher dans Azure AD Connect. Pour plus d’informations, [voir How-to: configure password writeback](/azure/active-directory/authentication/howto-sspr-writeback). 
 
-Si vous souhaitez également gérer les appareils Windows 10 joints à un domaine, voir Activer les appareils Windows 10 joints à un domaine à gérer par [Microsoft 365 Business Premium](manage-windows-devices.md) pour configurer une jointation Azure AD hybride. 
+Si vous souhaitez également gérer les appareils Windows 10 joints à un domaine, voir Activer les appareils Windows 10 joints à un domaine à gérer par [Microsoft 365 Business Premium](manage-windows-devices.md) pour configurer une jointation Azure AD hybride.

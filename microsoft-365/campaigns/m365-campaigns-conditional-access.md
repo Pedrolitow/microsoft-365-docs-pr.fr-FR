@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment exiger une mf et configurer des stratégies d’accès conditionnel pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: e16b7f4ff7d215ee749435806be214a807cc60a4
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453668"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912185"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Exiger une authentification multifacteur et configurer des stratégies d’accès conditionnel
 
-Vous protégez l’accès à vos données à l’aide de stratégies d’authentification multifacteur et d’accès conditionnel. Celles-ci ajoutent une sécurité supplémentaire importante. Microsoft fournit un ensemble de stratégies d’accès conditionnel de base recommandées pour tous les clients. Les stratégies de base sont un ensemble de stratégies prédéfines qui aident à protéger les organisations contre de nombreuses attaques courantes. Ces attaques courantes peuvent inclure la pulvérisation de mots de passe, la relecture et le hameçonnage.
+Vous protégez l’accès à vos données à l’aide de stratégies d’authentification multifacteur et d’accès conditionnel. Celles-ci ajoutent une sécurité supplémentaire substantielle. Microsoft fournit un ensemble de stratégies d’accès conditionnel de base recommandées pour tous les clients. Les stratégies de base sont un ensemble de stratégies prédéfines qui aident à protéger les organisations contre de nombreuses attaques courantes. Ces attaques courantes peuvent inclure la pulvérisation de mot de passe, la relecture et le hameçonnage.
 
 Ces stratégies exigent que les administrateurs et les utilisateurs entrent dans un second formulaire d’authentification (appelé authentification multifacteur, ou authentification multifacteur) dans certaines conditions. Par exemple, si un utilisateur de votre organisation tente de se connecter à Microsoft 365 à partir d’un autre pays ou d’un appareil inconnu, la sign-in peut être considérée comme risquée. L’utilisateur doit fournir une forme supplémentaire d’authentification (par exemple, une empreinte digitale ou un code) pour prouver son identité.
 
@@ -48,7 +48,7 @@ Actuellement, les stratégies de référence incluent les stratégies suivantes 
 
 Nous vous recommandons d’activer toutes ces stratégies de référence. Une fois ces stratégies activées, les administrateurs et les utilisateurs sont invités à s’inscrire à l’authentification multifacteur Azure AD.
 
-Pour plus d’informations sur ces stratégies, voir [Quelles sont les stratégies de référence](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)?
+Pour plus d’informations sur ces stratégies, voir [Quelles sont les stratégies de base](/azure/active-directory/conditional-access/concept-baseline-protection)?
 
 ## <a name="require-mfa"></a>Exiger une authentification multifacteur
 
@@ -62,7 +62,7 @@ Pour exiger que tous les utilisateurs se connectent avec un deuxième formulaire
 3. On the Make sign-in more secure page, choose **Get started**.
 
 4. Dans le volet Renforcer la sécurité de la signature, cochez les cases en regard de Exiger une authentification **multifacteur** pour les administrateurs et demander aux utilisateurs de s’inscrire à l’authentification **multifacteur** et de bloquer l’accès si des risques sont détectés.
-    N’oubliez [](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) pas d’exclure le compte d’administrateur d’urgence ou « en cas d’urgence » de l’exigence de l’mf dans la zone Rechercher **des utilisateurs.**
+    N’oubliez [](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) pas d’exclure le compte d’administrateur d’urgence ou de « pause-arrêt » de l’exigence de l’mf dans la zone Rechercher **des utilisateurs.**
 
     ![Renforcer la page de sécurité du sing-in.](../media/requiremfa.png)
 
@@ -70,15 +70,15 @@ Pour exiger que tous les utilisateurs se connectent avec un deuxième formulaire
 
 ## <a name="set-up-baseline-policies"></a>Configurer des stratégies de référence
 
-1. Accédez au [portail Azure,](https://portal.azure.com)puis accédez à l’accès conditionnel de sécurité **Azure Active Directory** pour créer une \>  \>  **stratégie.**
+1. Accédez au [portail Azure,](https://portal.azure.com)puis accédez à **l’accès** conditionnel de sécurité Azure Active Directory \>  \>  pour créer **une stratégie.**
 
 Consultez les instructions spécifiques suivantes pour chaque stratégie : <br>
-    - [Exiger l’mf pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [Exiger l’mf pour les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [Bloquer l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [Exiger l’mf pour la gestion des services](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+    - [Exiger l’mf pour les administrateurs](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [Exiger l’mf pour les utilisateurs](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+    - [Bloquer l’authentification héritée](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
+    - [Exiger l’mf pour la gestion des services](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 > [!NOTE]
 > Les stratégies d’aperçu n’existent plus et les utilisateurs doivent créer leurs propres stratégies.
 
-Vous pouvez configurer des stratégies supplémentaires, telles que l’obligation d’applications clientes approuvées. Pour plus d’informations, voir la [documentation relative à l’accès conditionnel.](https://docs.microsoft.com/azure/active-directory/conditional-access/)
+Vous pouvez configurer des stratégies supplémentaires, telles que l’obligation d’applications clientes approuvées. Pour plus d’informations, voir la [documentation relative à l’accès conditionnel.](/azure/active-directory/conditional-access/)

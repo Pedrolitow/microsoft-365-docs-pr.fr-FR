@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment examiner et gérer les menaces détectées par l’Antivirus Microsoft Defender sur vos appareils Windows 10.
-ms.openlocfilehash: 41465cb81850415a7b490b6af7f0ec66c724ca68
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 15e99fb75e4a3ac1af842ca7d0b900e02cbc6bd4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588516"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912785"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Examiner les menaces détectées et prendre des mesures
 
@@ -32,7 +32,7 @@ L’Antivirus Microsoft Defender détecte et protège contre les types de menace
 - Tentatives d’hameçonnage
 - Tentatives de vol de données
 
-En tant que professionnel de l’informatique/administrateur, vous pouvez afficher des informations sur les détections de menaces sur les appareils [Windows 10](/mem/intune/enrollment/device-enrollment) inscrits dans Intune dans le Centre d’administration Microsoft 365. Vous verrez des informations récapitulatifs, telles que :
+En tant qu’administrateur/professionnel de l’informatique, vous pouvez afficher des informations sur les détections de menaces sur les appareils [Windows 10](/mem/intune/enrollment/device-enrollment) inscrits dans Intune dans le Centre d’administration Microsoft 365. Vous verrez des informations récapitulatifs, telles que :
 
 - Nombre d’appareils qui ont besoin d’une protection antivirus
 - Nombre d’appareils non conformes aux stratégies de sécurité
@@ -58,7 +58,7 @@ La procédure suivante s’applique aux clients qui ont Microsoft 365 Business P
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>Gérer les détections de menaces dans la page **Menaces actives**
 
-La procédure suivante s’applique aux clients qui ont Microsoft 365 Business Premium. [Les appareils Windows 10 doivent être sécurisés](/microsoft-365/business/secure-win-10-pcs) et [inscrits dans Intune.](/mem/intune/enrollment/windows-enrollment-methods)
+La procédure suivante s’applique aux clients qui ont Microsoft 365 Business Premium. [Les appareils Windows 10 doivent être sécurisés](./secure-win-10-pcs.md) et [inscrits dans Intune.](/mem/intune/enrollment/windows-enrollment-methods)
 
 > [!NOTE]
 > La **carte** antivirus **Microsoft Defender** et la page Menaces actives sont déployées par phases, de sorte que vous n’avez peut-être pas un accès immédiat à ces cartes.
@@ -67,7 +67,7 @@ La procédure suivante s’applique aux clients qui ont Microsoft 365 Business P
 
 2. Sur la **carte antivirus Microsoft Defender,** sélectionnez **Afficher les menaces actives.** (Sinon, dans le volet de navigation, sélectionnez **Santé**  >  **Menaces & antivirus**.)
 
-3. Dans la page **Menaces** actives, sélectionnez une menace détectée pour en savoir plus à ce sujet. Un flyout s’ouvre avec des détails sur cette menace, y compris les appareils concernés.
+3. Dans la page **Menaces** actives, sélectionnez une menace détectée pour en savoir plus. Un flyout s’ouvre avec des détails sur cette menace, y compris les appareils concernés.
 
 4. Dans le volant, sélectionnez un appareil pour afficher les actions disponibles, telles que la stratégie de mise à **jour,** **l’antivirus** de mise à **jour,** l’analyse rapide, etc.
 
@@ -77,8 +77,8 @@ Lorsque vous affichez des détails sur des menaces ou des appareils spécifiques
 
 | Opération | Description |
 |--|--|
-| Configurer la protection | Vos stratégies de protection contre les menaces doivent être configurées. Sélectionnez le lien vers la page de configuration de votre stratégie.<br><br>Besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison dans Microsoft Intune.](/mem/intune/protect/endpoint-security-policy) |
-| Mettre à jour une stratégie | Vos stratégies de protection antivirus et en temps réel doivent être mises à jour ou configurées. Sélectionnez le lien pour aller à la page de configuration de stratégie.<br><br>Besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison dans Microsoft Intune.](/mem/intune/protect/endpoint-security-policy) |
+| Configurer la protection | Vos stratégies de protection contre les menaces doivent être configurées. Sélectionnez le lien vers la page de configuration de votre stratégie.<br><br>Vous avez besoin d’aide ? Voir Gérer la sécurité des appareils avec les stratégies de sécurité des points de [terminaison dans Microsoft Intune.](/mem/intune/protect/endpoint-security-policy) |
+| Mettre à jour une stratégie | Vos stratégies de protection antivirus et en temps réel doivent être mises à jour ou configurées. Sélectionnez le lien pour aller à la page de configuration de stratégie.<br><br>Vous avez besoin d’aide ? Voir Gérer la sécurité des appareils avec les stratégies de sécurité des points de [terminaison dans Microsoft Intune.](/mem/intune/protect/endpoint-security-policy) |
 | Exécuter une analyse rapide | Démarre une analyse antivirus rapide sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, tels que les clés de Registre et les dossiers de démarrage Windows connus. |
 | Exécuter une analyse complète | Démarre une analyse antivirus complète sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, y compris chaque fichier et dossier sur l’appareil. Les résultats sont envoyés [au Gestionnaire de point de terminaison Microsoft.](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) |
 | Mettre à jour un antivirus | Nécessite que l’appareil obtienne des mises à jour de [l’intelligence de sécurité](https://go.microsoft.com/fwlink/?linkid=2149926) pour la protection antivirus et anti-programme malveillant. |
@@ -111,6 +111,6 @@ Le tableau suivant décrit les actions que vous pouvez voir dans Microsoft Endpo
 > [!TIP]
 > Pour plus d’informations, voir [Actions à distance pour les appareils.](/mem/intune/protect/endpoint-security-manage-devices#remote-actions-for-devices)
 
-## <a name="how-to-submit-a-file-for-malware-analysis"></a>Soumission d’un fichier pour analyse des programmes malveillants
+## <a name="how-to-submit-a-file-for-malware-analysis"></a>Comment soumettre un fichier pour analyse des programmes malveillants
 
-Si vous avez un fichier qui, selon vous, a été manqué ou classé à tort comme programme malveillant, vous pouvez soumettre ce fichier à Microsoft pour analyse des programmes malveillants. Les utilisateurs et les administrateurs informatiques peuvent soumettre un fichier pour analyse. Visitez [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) .
+Si vous avez un fichier que vous pensez avoir été manqué ou classé à tort comme programme malveillant, vous pouvez soumettre ce fichier à Microsoft pour analyse des programmes malveillants. Les utilisateurs et les administrateurs informatiques peuvent soumettre un fichier pour analyse. Visitez [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) .

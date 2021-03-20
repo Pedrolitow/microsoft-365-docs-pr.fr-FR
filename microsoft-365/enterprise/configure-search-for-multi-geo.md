@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Découvrez comment configurer la recherche dans un environnement multigéogé. Seuls certains clients, tels que OneDrive Entreprise, peuvent renvoyer des résultats dans un environnement multigéogé.
-ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547151"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911161"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurer la recherche pour Microsoft 365 Multi-Geo
 
@@ -84,7 +84,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La recherche multigéographique ne prend pas en charge la création dynamique de compartiments pour les affinements numériques.</td>
-<td align="left">Utilisez le <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize » pour</a> les affinements numériques.</td>
+<td align="left">Utilisez le <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize » pour</a> les affinements numériques.</td>
 </tr>
 <tr class="even">
 <td align="left">ID de document</td>
@@ -98,7 +98,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 </tr>
 <tr class="even">
 <td align="left">Recherche hybride</td>
-<td align="left">Dans un environnement SharePoint hybride avec <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">recherche hybride dans le cloud</a>, le contenu local est ajouté à l’index Microsoft 365 de l’emplacement central.</td>
+<td align="left">Dans un environnement SharePoint hybride avec <a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">recherche hybride dans le cloud</a>, le contenu local est ajouté à l’index Microsoft 365 de l’emplacement central.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -155,7 +155,7 @@ Chaque centre de recherche possède plusieurs secteurs verticaux et vous devez c
 
 4. Dans le composant WebPart de résultats de recherche, déplacez le pointeur vers le coin supérieur droit et cliquez sur la flèche, puis sur **Modifier le composant WebPart** dans le menu. Le volet des outils du composant WebPart des résultats de recherche s’ouvre sous le ruban en haut à droite de la page.
 
-   ![Modifier la sélection de la partie Web](../media/configure-search-for-multi-geo-image3.png)
+   ![Modifier la sélection de l’élément Web Part](../media/configure-search-for-multi-geo-image3.png)
 
 5. Dans le volet des outils du composant WebPart, dans la section **Paramètres**, sous **Paramètres de contrôle des résultats**, sélectionnez **Afficher les résultats multigéographiques** pour que le composant WebPart Résultats de la recherche affiche les résultats de tous les emplacements géographiques.
 
@@ -168,7 +168,7 @@ Chaque centre de recherche possède plusieurs secteurs verticaux et vous devez c
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Configurer des applications de recherche personnalisée pour qu’elles affichent les résultats de l’ensemble ou d’une partie des emplacements géographiques
 
-Les applications de recherche personnalisée obtiennent les résultats de l’ensemble (ou d’une partie) des emplacements géographiques en spécifiant des paramètres de requête avec la demande à l’API REST de recherche SharePoint. Selon les paramètres, la requête est distribuée à tous les emplacements géographiques ou à certains emplacements géographiques. Par exemple, si vous devez seulement interroger un sous-ensemble des emplacements géographiques pour rechercher des informations pertinentes, vous pouvez contrôler la distribution ramifiée à ces derniers uniquement. Si la demande fonctionne, l’API REST de recherche SharePoint renvoie des données de réponse.
+Les applications de recherche personnalisées obtiennent des résultats de tous les emplacements géographiques, ou certains, en spécifiant des paramètres de requête avec la demande à l’API REST de recherche SharePoint. Selon les paramètres de requête, la requête est fannée à tous les emplacements géographiques ou à certains emplacements géographiques. Par exemple, si vous n’avez besoin d’interroger qu’un sous-ensemble d’emplacements géographiques pour trouver des informations pertinentes, vous pouvez contrôler l’éventail vers ces emplacements uniquement. Si la demande réussit, l’API REST de recherche SharePoint renvoie les données de réponse.
 
 ### <a name="requirement"></a>Conditions requises
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration : il s’agit d’une liste facultative d’emplace
 </tbody>
 </table>
 
-Si vous omettez DataLocation ou EndPoint, ou si une DataLocation est dupliquée, la demande échoue. [Vous pouvez obtenir des informations sur le point de terminaison des emplacements géographiques d’un client à l’aide de Microsoft Graph](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery).
+Si vous omettez DataLocation ou EndPoint, ou si une DataLocation est dupliquée, la demande échoue. [Vous pouvez obtenir des informations sur le point de terminaison des emplacements géographiques d’un client à l’aide de Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Données de réponse
 

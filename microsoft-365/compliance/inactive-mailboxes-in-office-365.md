@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment conserver le contenu de la boîte aux lettres pour les anciens employés en la transformant en boîte aux lettres inactive.
-ms.openlocfilehash: 7a10b3327dda148c3328f53826a81464b86a7a0a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6aeb10f1557a991523b60b8e8e85a99fc61f4b87
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423615"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911250"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Vue d’ensemble des boîtes aux lettres inactives
 
@@ -69,9 +69,9 @@ Vous pouvez envisager de créer une stratégie de rétention Microsoft 365 spéc
 
 ## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>Boîtes aux lettres inactives et conservations eDiscovery
 
-Si une mise en attente associée à un cas eDiscovery dans le Centre de sécurité & conformité est placée sur une boîte aux lettres, puis que la boîte aux lettres ou le compte de l’utilisateur est supprimé, la boîte aux lettres devient inactive. However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. En outre, vous ne pouvez pas créer une attente eDiscovery basée sur le temps. Cela signifie que le contenu d’une boîte aux lettres inactive est conservé définitivement ou jusqu’à ce que la boîte aux lettres inactive soit supprimée. Par conséquent, nous vous recommandons d’utiliser une conservation pour litige ou une stratégie de rétention pour les boîtes aux lettres inactives.
+Si une mise en attente associée à un cas eDiscovery dans le Centre de sécurité & conformité est placée sur une boîte aux lettres, puis que la boîte aux lettres ou le compte de l’utilisateur est supprimé, la boîte aux lettres devient une boîte aux lettres inactive. However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. En outre, vous ne pouvez pas créer une attente eDiscovery basée sur le temps. Cela signifie que le contenu d’une boîte aux lettres inactive est conservé définitivement ou jusqu’à ce que la boîte aux lettres inactive soit supprimée. Par conséquent, nous vous recommandons d’utiliser une conservation pour litige ou une stratégie de rétention pour les boîtes aux lettres inactives.
 
-Pour plus d’informations sur les cas et les cas de découverte électronique, consultez les cas [eDiscovery.](ediscovery-cases.md)
+Pour plus d’informations sur les cas et les cas de découverte électronique, consultez les cas [eDiscovery.](./get-started-core-ediscovery.md)
 
 ## <a name="inactive-mailboxes-and-labels"></a>Boîtes aux lettres et étiquettes inactives
 
@@ -81,7 +81,7 @@ Pour plus d’informations sur les stratégies de rétention et les étiquettes 
 
 ## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>Boîtes aux lettres inactives et archives à extension automatique
 
-Une boîte aux lettres inactive configurée avec une archive à extension automatique ne peut pas être récupérée ou restaurée. Dans les situations où il est nécessaire de récupérer des données à partir d’une boîte aux lettres inactive avec une archive à extension automatique, nous vous recommandons d’utiliser l’outil de recherche de contenu pour exporter les données de la boîte aux lettres, puis les importer vers une autre boîte aux lettres. Pour obtenir des instructions détaillées sur la recherche dans une boîte aux lettres inactive et l’exportation des résultats de la recherche, voir :
+Une boîte aux lettres inactive configurée avec une archive à extension automatique ne peut pas être récupérée ou restaurée. Dans les situations où il est nécessaire de récupérer des données à partir d’une boîte aux lettres inactive avec une archive à développement automatique, nous vous recommandons d’utiliser l’outil de recherche de contenu pour exporter les données de la boîte aux lettres, puis les importer vers une autre boîte aux lettres. Pour obtenir des instructions détaillées sur la recherche dans une boîte aux lettres inactive et l’exportation des résultats de la recherche, voir :
 
 - [Recherche de contenu](content-search.md)
 
@@ -118,11 +118,11 @@ Une fois que la boîte aux lettres est inactive, vous pouvez effectuer différen
   > [!NOTE]
   > Vous ne pouvez pas appliquer d’autres stratégies de rétention à une boîte aux lettres inactive. Vous pouvez uniquement modifier la durée de rétention d’une stratégie de rétention existante appliquée à la boîte aux lettres inactive.
 
-- **Récupérez une boîte aux lettres inactive.** Si un ancien employé (ou un employé en congé) revient dans votre organisation, ou si un nouvel employé est embauché pour assumer les responsabilités de l’ancien employé, vous pouvez récupérer le contenu de la boîte aux lettres inactive. Lorsque vous récupérez une boîte aux lettres inactive, la boîte aux lettres est convertie en nouvelle boîte aux lettres, le contenu et la structure de dossiers de la boîte aux lettres inactive sont conservés et la boîte aux lettres est liée à un nouveau compte d’utilisateur. Une fois récupérée, la boîte aux lettres inactive n'existe plus. Pour obtenir des procédures pas à pas et des informations sur ce qui se produit lorsque vous récupérez une boîte aux lettres inactive, voir [Récupérer une boîte aux lettres inactive.](recover-an-inactive-mailbox.md)
+- **Récupérer une boîte aux lettres inactive.** Si un ancien employé (ou un employé en congé) revient dans votre organisation, ou si un nouvel employé est embauché pour assumer les responsabilités de l’ancien employé, vous pouvez récupérer le contenu de la boîte aux lettres inactive. Lorsque vous récupérez une boîte aux lettres inactive, la boîte aux lettres est convertie en nouvelle boîte aux lettres, le contenu et la structure de dossiers de la boîte aux lettres inactive sont conservés et la boîte aux lettres est liée à un nouveau compte d’utilisateur. Une fois récupérée, la boîte aux lettres inactive n'existe plus. Pour obtenir des procédures pas à pas et des informations sur ce qui se produit lorsque vous récupérez une boîte aux lettres inactive, voir [Récupérer une boîte aux lettres inactive.](recover-an-inactive-mailbox.md)
 
   > [!NOTE]
   > Si vous récupérez une boîte aux lettres inactive affectée à une stratégie de rétention avec verrouillage de conservation (appelée stratégie de rétention verrouillée), la boîte aux lettres récupérée est affectée à la même stratégie de rétention verrouillée. Si vous récupérez une boîte aux lettres inactive affectée à une stratégie de rétention sans verrouillage de conservation, la boîte aux lettres récupérée est supprimée de la stratégie de rétention déverrouillée. Toutefois, la conservation pour litige est activée sur la boîte aux lettres récupérée pour empêcher la suppression de contenu de boîte aux lettres en fonction des stratégies de rétention à l’échelle de l’organisation qui suppriment du contenu plus ancien qu’un âge spécifique.
 
 - **Restituer une boîte aux lettres inactive.** Si un autre employé assume les responsabilités de l'ancien employé, ou si un autre utilisateur doit accéder au contenu de la boîte aux lettres inactive, vous pouvez restaurer (ou fusionner) le contenu de la boîte aux lettres inactive vers une boîte aux lettres existante. Lorsque vous restaurez une boîte aux lettres inactive, le contenu est copié vers une autre boîte aux lettres. La boîte aux lettres inactive est conservée et reste une boîte aux lettres inactive. La boîte aux lettres inactive peut toujours être recherché à l’aide des outils eDiscovery, son contenu peut être restauré dans une autre boîte aux lettres et il peut être récupéré ou supprimé ultérieurement. Pour obtenir des procédures pas à pas, voir [Restaurer une boîte aux lettres inactive.](restore-an-inactive-mailbox.md)
 
-- **Supprimez une boîte aux lettres inactive.** Lorsque vous n’avez plus besoin de conserver le contenu d’une boîte aux lettres inactive, vous pouvez la supprimer définitivement en supprimant toutes les conservations ou les stratégies de rétention Microsoft 365 appliquées à la boîte aux lettres inactive. Si une boîte aux lettres est devenue inactive depuis plus de 30 jours, elle est marquée pour suppression définitive après la suppression de la conservation. Si la boîte aux lettres est devenue inactive au cours des 30 derniers jours, vous pouvez la restaurer après avoir supprimé la conservation ou la stratégie de rétention. Pour obtenir des procédures pas à pas, voir [Supprimer une boîte aux lettres inactive.](delete-an-inactive-mailbox.md)
+- **Supprimez une boîte aux lettres inactive.** Lorsque vous n’avez plus besoin de conserver le contenu d’une boîte aux lettres inactive, vous pouvez le supprimer définitivement en supprimant toutes les conservations ou les stratégies de rétention Microsoft 365 appliquées à la boîte aux lettres inactive. Si une boîte aux lettres est devenue inactive depuis plus de 30 jours, elle est marquée pour suppression définitive après la suppression de la conservation. Si la boîte aux lettres est devenue inactive au cours des 30 derniers jours, vous pouvez la restaurer après avoir supprimé la conservation ou la stratégie de rétention. Pour obtenir des procédures pas à pas, voir [Supprimer une boîte aux lettres inactive.](delete-an-inactive-mailbox.md)

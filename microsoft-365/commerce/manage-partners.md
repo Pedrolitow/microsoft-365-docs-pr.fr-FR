@@ -15,19 +15,19 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez comment travailler avec des fournisseurs de solutions (partenaires) certifiés par Microsoft pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire.
-ms.openlocfilehash: d43aadf938cddfd5382fe4b3474eb92cc2b2763c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3297b2322983eabb793116a450a618b3a62a5a9c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114740"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911397"
 ---
 # <a name="manage-partner-relationships"></a>Gérer les relations de partenariat
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -39,7 +39,7 @@ Vous pouvez travailler avec des fournisseurs de solutions (partenaires) certifi�
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être administrateur global ou administrateur de facturation pour suivre ces étapes. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous devez être administrateur global ou administrateur de facturation pour suivre ces étapes. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Que peut faire un partenaire pour mon organisation ou mon établissement scolaire ?
 
@@ -86,7 +86,7 @@ Si vous avez déjà un partenaire mais que vous n’avez pas encore signé de co
 
 ## <a name="remove-partner-admin-roles"></a>Supprimer les rôles d’administrateur partenaire
 
-Selon la demande du partenaire, lorsque vous acceptez l’invitation, vous acceptez de lui donner des rôles d’administrateur global et d’administrateur du helpdesk. Lorsque vous accordez ces rôles d’administrateur à un partenaire, vous lui accordez automatiquement des privilèges d’administrateur délégués dans Azure AD. Pour plus d’informations, voir [Privilèges d’administrateur délégués dans Azure AD.](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)
+Selon la demande du partenaire, lorsque vous acceptez l’invitation, vous acceptez de lui donner des rôles d’administrateur global et d’administrateur du helpdesk. Lorsque vous accordez ces rôles d’administrateur à un partenaire, vous lui accordez automatiquement des privilèges d’administrateur délégués dans Azure AD. Pour plus d’informations, voir [Privilèges d’administrateur délégués dans Azure AD.](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)
 
 Si vous ne souhaitez pas donner les rôles d’administrateur au partenaire, annulez l’invitation au lieu de l’accepter.
 

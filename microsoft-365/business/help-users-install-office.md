@@ -27,16 +27,16 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Aidez vos utilisateurs à installer des applications Office sur des appareils Windows 10 et à installer facilement Office sur des PC Windows 10 à partir du Centre d’administration Microsoft 365.
-ms.openlocfilehash: 680c1c4e43a037c6afd109220090f387b207f8b1
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 5337c8ef008c1af79490eb6b6705d450055d24fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601980"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913343"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aider vos utilisateurs à installer Office sur des appareils Windows 10
 
-[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
 Vous pouvez rapidement et facilement installer Office sur des PC Windows 10 à partir du Centre d’administration Microsoft 365.
   
@@ -56,7 +56,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
     > [!NOTE]
     > Cette carte risque de ne pas s’y voir si tous vos utilisateurs ont installé des applications Office.
   
-3. On the **Help users install their Office apps** card, choose **View,** and then **Get started**.
+3. Sur **l’aide que les utilisateurs installent leur carte d’applications Office,** choisissez **Afficher,** puis **commencer.**
     
 4. Dans le **panneau Utilisateurs de messagerie,** sélectionnez les utilisateurs que vous souhaitez envoyer par courrier électronique, puis envoyez un courrier électronique aux **utilisateurs sélectionnés.**
 

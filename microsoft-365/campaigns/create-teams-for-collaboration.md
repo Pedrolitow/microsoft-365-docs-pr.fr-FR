@@ -23,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un espace de collaboration pour votre équipe avec Microsoft Teams.
-ms.openlocfilehash: b30bf495dfbf6d510eab9a7d783d343d6b9476a6
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: ddce111b758fcbd4840ca3493601779690684eeb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044681"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912221"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Créer des équipes pour la collaboration dans Microsoft Teams
 
 Microsoft Teams est une application de collaboration qui permet à votre personnel de rester organisé et d’avoir des conversations, à partir de n’importe quel appareil. Vous pouvez utiliser Microsoft Teams pour avoir des conversations instantanées avec des membres de votre personnel ou des invités extérieurs à votre organisation. Vous pouvez également effectuer des appels téléphoniques, héberger des réunions et partager des fichiers.
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Les bonnes pratiques
 
-1. Créer des équipes privées pour les informations sensibles.
+1. Créez des équipes privées pour les informations sensibles.
 1. Créez une équipe à l’échelle de l’organisation pour communiquer avec tous les membres de votre organisation.
 1. Créez des équipes pour des projets spécifiques et appliquez le niveau de protection qui convient en fonction des personnes qui doivent être incluses.
 1. Créez des équipes spécifiques pour la communication avec des partenaires externes afin de les séparer de tout ce qui est sensible pour votre entreprise.
@@ -59,11 +59,11 @@ Les campagnes peuvent également créer les équipes suivantes pour communiquer 
 
 Lorsque vous créez une équipe, voici les autres choses qui sont créées :
 
-- Un nouveau [groupe Microsoft 365](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- Un site [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) et une bibliothèque de documents pour stocker des fichiers d’équipe
-- Une boîte aux lettres et un calendrier [partagés Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)
+- Un nouveau [groupe Microsoft 365](/MicrosoftTeams/office-365-groups)
+- Un site [SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact) et une bibliothèque de documents pour stocker des fichiers d’équipe
+- Une boîte aux lettres et un calendrier [partagés Exchange Online](/MicrosoftTeams/exchange-teams-interact)
 - Un bloc-notes OneNote
-- Liens vers d’autres applications Office 365 telles que Le Planificateur et Power BI
+- Liens vers d’autres applications Office 365 telles que planner et Power BI
 
 À l’intérieur de Microsoft Teams, vous pouvez trouver :
 
@@ -88,7 +88,7 @@ Créez une équipe que vous partagez avec des invités extérieurs à votre orga
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-En savoir plus sur Microsoft Teams sur [la documentation technique de Microsoft Teams](https://docs.microsoft.com/microsoftteams/microsoft-teams)
+En savoir plus sur Microsoft Teams sur [la documentation technique de Microsoft Teams](/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>Paramètres d’administration
 

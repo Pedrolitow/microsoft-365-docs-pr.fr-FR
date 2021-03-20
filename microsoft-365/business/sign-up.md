@@ -26,16 +26,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez ce que Microsoft 365 Business Premium inclut et obtenez des instructions pas à pas pour vous inscrire à Microsoft 365 Business Premium.
-ms.openlocfilehash: 5cee380998b188e7d5845becacfa46383905737f
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 54a8e92ccced24f446e73a96f75e4aa1531a95aa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785669"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912507"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>S’inscrire à Microsoft 365 Business Premium
 
-Pour découvrir ce que Microsoft 365 Business Premium inclut, regardez une [courte vidéo](https://go.microsoft.com/fwlink/?linkid=2109651) et consultez la [vue d’ensemble.](microsoft-365-business-overview.md)
+Pour découvrir ce que Microsoft 365 Business Premium inclut, regardez une [courte vidéo](../business-video/what-is-microsoft-365.md) et consultez la [vue d’ensemble.](microsoft-365-business-overview.md)
 
 Il existe trois façons d’obtenir Microsoft 365 Business Premium :
 - **Achetez Microsoft 365 Business Premium** et terminez votre propre configuration : Pour acheter Microsoft 365 Business Premium en ligne, suivez les étapes [ci-dessous.](#sign-up-steps)
@@ -75,7 +75,7 @@ Pour vous inscrire et acheter Microsoft 365 pour votre entreprise, complétez le
             Si votre adresse de messagerie n’inclut pas le nom de votre entreprise et si vous n’avez pas de site web qui utilise votre nom d’entreprise, vous pouvez facilement acheter un domaine maintenant. Sélectionnez **Acheter un nouveau nom de domaine,** puis entrez le nom de votre entreprise. Par exemple, si votre société est appelée *ContosoSkis,* essayez d’entrer Contosokis.com, Contososkis.org ou Contososkis.biz. Sélectionnez **Ensuite Vérifier la disponibilité** pour voir si votre domaine choisi est disponible. Vous pouvez essayer plusieurs options avant de prendre une décision. Si votre nom de domaine est disponible, nous vous en faire connaître le coût et vous facturer directement avec votre nouvelle offre. 
        
             > [!TIP]
-            > si vous ne savez pas quelle extension de domaine choisir pour votre nouveau domaine (par exemple, .com ou .org), voir [Acheter un nom de domaine](https://go.microsoft.com/fwlink/?linkid=2109700)
+            > si vous ne savez pas quelle extension de domaine choisir pour votre nouveau domaine (par exemple, .com ou .org), voir [Acheter un nom de domaine](../admin/get-help-with-domains/buy-a-domain-name.md)
         
         - **Je ne sais pas, ou je possède déjà un nom de domaine** 
         
@@ -86,7 +86,7 @@ Pour vous inscrire et acheter Microsoft 365 pour votre entreprise, complétez le
 
     1. Déterminez le nombre de personnes de votre entreprise qui  ont besoin d’une licence Microsoft 365 ou laissez le nombre d’utilisateurs sur 1 pour le moment et ajoutez d’autres personnes ultérieurement. 
     2. Sélectionnez facturation mensuelle ou annuelle, vérifiez le coût total, puis sélectionnez **Suivant**. 
-    3. Ajoutez les détails de votre carte de crédit. Si l’adresse de votre entreprise ne correspond pas à votre adresse de carte de crédit, nous avons également besoin de l’adresse de votre société. L’adresse de votre entreprise détermine les taxes que vous payez et les services disponibles. Pour plus d’informations sur les taxes, voir [quelles taxes seront facturées ?](https://go.microsoft.com/fwlink/?linkid=2109701)
+    3. Ajoutez les détails de votre carte de crédit. Si l’adresse de votre entreprise ne correspond pas à votre adresse de carte de crédit, nous avons également besoin de l’adresse de votre société. L’adresse de votre entreprise détermine les taxes que vous payez et les services disponibles. Pour plus d’informations sur les taxes, voir [quelles taxes seront facturées ?](../commerce/billing-and-payments/tax-information.md)
     4. Select **Place order**. Microsoft met un peu de temps à terminer la configuration d’une nouvelle offre.
 
 ## <a name="whats-next"></a>Étape suivante
