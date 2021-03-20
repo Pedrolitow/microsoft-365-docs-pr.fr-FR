@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 5a13af3e78848471b436d44ab051eca945176c74
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2db8654bf7bb1bc5ef4759c1617a84ae2153553a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107695"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917391"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Préparer votre environnement pour les rubriques microsoft
 
-Pour utiliser au mieux ces rubriques, vous souhaitez inclure autant de contenu que possible pour la découverte de rubriques, afin de pouvoir avoir un ensemble enrichi de rubriques pour vos utilisateurs. Mais quel contenu doit être utilisé pour la découverte de sujet ? Comment optimiser le contenu indexé tout en restant en contrôle ? Plus le contenu est dans l’étendue, plus les informations que l’intelligence artificielle peut découvrir sont meilleures. Cet article vous explique les étapes de planification pour vous assurer que vous avez inclus le contenu approprié et que vous disposez des bonnes personnes et ressources pour faire une bonne expérience pour vos utilisateurs.
+Pour utiliser au mieux ces rubriques, vous souhaitez inclure autant de contenu que possible pour la découverte de rubriques, afin de pouvoir avoir un ensemble enrichi de rubriques pour vos utilisateurs. Mais quel contenu doit être utilisé pour la découverte de rubriques ? Comment optimiser le contenu indexé tout en restant en contrôle ? Plus le contenu est dans l’étendue, plus les informations que l’intelligence artificielle peut découvrir sont meilleures. Cet article vous explique les étapes de planification pour vous assurer que vous avez inclus le contenu approprié et que vous disposez des bonnes personnes et ressources pour faire une bonne expérience pour vos utilisateurs.
 
 Pour planifier des rubriques De Rubriques, vous devez :
 
@@ -28,11 +28,11 @@ Pour planifier des rubriques De Rubriques, vous devez :
 1. [Migrer du contenu vers SharePoint](#1-migrate-content-to-microsoft-365)
     - L’indexation de rubrique inclut uniquement le contenu sur les sites SharePoint.
       - Dans la mesure du possible, migrez du contenu précieux vers SharePoint Online à partir de sources externes.
-      - Hiérarchisez les sources de contenu avec un haut potentiel de connaissances en matière de savoir-faire.
+      - Hiérarchisez les sources de contenu avec un potentiel élevé de connaissances en matière d’informations.
       - Mettez en évidence les avantages de la gestion des connaissances pour encourager les utilisateurs à déplacer du contenu de OneDrive vers des sites SharePoint.
 
 2. [Connecter des informations à Microsoft Graph](#2-connect-information-to-microsoft-graph)
-    - À l’avenir, le contenu externe pourra être introduit dans le graphique de connaissances et devenir disponible.
+    - À l’avenir, le contenu externe peut être introduit dans le graphique de connaissances et devenir disponible.
     - Pour le contenu qui ne peut pas être déplacé, envisagez d’utiliser les connecteurs Graph pour améliorer la recherche et préparer l’inclusion future.
 
 3. [Moderniser les pages SharePoint](#3-modernize-sharepoint-pages)
@@ -41,7 +41,7 @@ Pour planifier des rubriques De Rubriques, vous devez :
 
 4. [Sécuriser le contenu de manière appropriée](#4-secure-content-appropriately)
     - Les ressources de rubrique sont découpées en fonction des autorisations d’un utilisateur.
-    - Identifiez tout contenu qui peut avoir des autorisations incorrectement larges ou restrictives :
+    - Identifiez tout contenu qui peut avoir des autorisations larges ou restrictives incorrectes :
       - Encourager les propriétaires de sites à utiliser les rapports de partage pour passer en revue les autorisations
       - Faire auditer le contenu largement partagé par les administrateurs à l’aide de la recherche
       - Encouragez les propriétaires de contenu à partager du contenu qui n’est pas sensible et qui peut avoir des avantages plus larges pour l’organisation.
@@ -50,16 +50,16 @@ Pour planifier des rubriques De Rubriques, vous devez :
 
 5. [Identifier les gestionnaires de connaissances et les rubriques](#5-identify-knowledge-managers-and-topics)
     - Utilisez les taxonomies existantes pour créer manuellement des rubriques ou pour confirmer les rubriques suggérées par l’IA.
-    - Identifier les experts techniques pour les sujets anticipés ou amorçages.
+    - Identifier les experts techniques (SME) pour les rubriques anticipées ou amorçage.
     - Identifiez les sites qui couvrent un grand nombre de données précieuses qui peuvent être utilisées pour l’exploration de sujet pilote.
     - Impliquer les responsables de connaissances et les communautés de pratiques.
 
 ## <a name="1-migrate-content-to-microsoft-365"></a>1. Migrer du contenu vers Microsoft 365
 
-Il existe plusieurs outils et services pour vous aider dans votre migration : vous pouvez obtenir une vue d’ensemble et des informations sur la migration de votre contenu vers [Microsoft 365.](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) Les outils de migration sont les suivants :
+Il existe plusieurs outils et services pour vous aider lors de votre migration : vous pouvez obtenir une vue d’ensemble et des informations sur la migration de votre contenu vers [Microsoft 365.](/sharepointmigration/migrate-to-sharepoint-online) Les outils de migration sont les suivants :
 
-- [Gestionnaire de migration](https://docs.microsoft.com/sharepointmigration/mm-get-started)
-- [Outil de migration SharePoint (SPMT)](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
+- [Gestionnaire de migration](/sharepointmigration/mm-get-started)
+- [Outil de migration SharePoint (SPMT)](/sharepointmigration/introducing-the-sharepoint-migration-tool)
 - [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)
 - [Outils et services de migration des partenaires](https://www.microsoft.com/solution-providers)
 
@@ -73,23 +73,23 @@ Ez le meilleur de votre migration :
 
 Si vous ne pouvez pas migrer du contenu, connectez-le à Microsoft Graph :
 
-- Envisagez [d’implémenter des connecteurs de contenu Graph.](https://docs.microsoft.com/microsoftsearch/connectors-overview) À l’aide des connecteurs, le contenu externe peut être indexé dans Microsoft Graph, où les utilisateurs peuvent ensuite le découvrir via Microsoft Search (recherche Microsoft).
+- Envisagez [d’implémenter des connecteurs de contenu Graph.](/microsoftsearch/connectors-overview) À l’aide de connecteurs, le contenu externe peut être indexé dans Microsoft Graph, où les utilisateurs peuvent ensuite le découvrir via Microsoft Search (recherche Microsoft).
 - Les développements futurs apporteront des données externes dans Rubriques.
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. Moderniser les pages SharePoint
 
-Étant donné que les fiches de rubrique et les points forts peuvent uniquement apparaître sur les pages modernes, mettez à jour les pages que vous souhaitez inclure dans Rubriques De classique à Moderne. Voir [Moderniser vos sites SharePoint classiques.](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites) Vous pouvez utiliser [sharePoint Modernization Scanner pour](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) préparer vos sites classiques à la modernisation.
+Étant donné que les fiches de rubrique et les points forts ne peuvent apparaître que sur les pages modernes, mettez à jour les pages que vous souhaitez inclure dans rubriques De classique à Moderne. Voir [Moderniser vos sites SharePoint classiques.](/sharepoint/dev/transform/modernize-classic-sites) Vous pouvez utiliser [sharePoint Modernization Scanner pour](/sharepoint/dev/transform/modernize-scanner) préparer vos sites classiques à la modernisation.
 
 Si vous avez un grand nombre de sites classiques, hiérarchisez les pages à profil élevé pour les convertir en sites modernes.
 
 ## <a name="4-secure-content-appropriately"></a>4. Sécuriser le contenu de manière appropriée
 
-Lorsque les utilisateurs interagissent avec une carte de sujet ou une page de rubrique, ils peuvent voir différentes ressources. Cela est dû au fait qu’ils ont accès à différents fichiers associés à la rubrique. Si vos autorisations sous-jacentes sont trop strictes, les aspects serendipitous de la découverte d’informations par le biais de rubriques pourraient être diminués. En revanche, s’ils sont trop larges, une rubrique peut faire surface à un utilisateur dont vous ne souhaitez pas qu’il voie le contenu.
+Lorsque les utilisateurs interagissent avec une carte de sujet ou une page de rubrique, ils peuvent voir différentes ressources. Cela est dû au fait qu’ils ont accès à différents fichiers associés à la rubrique. Si vos autorisations sous-jacentes sont trop strictes, les aspects serendipitous de la découverte d’informations par le biais de rubriques pourraient être diminués. En revanche, s’ils sont trop larges, un sujet peut faire surface à un utilisateur que vous ne souhaitez pas voir.
 Une bonne gestion des autorisations est essentielle ici. Et une bonne gestion des autorisations est basée sur un partenariat continu entre les administrateurs et les propriétaires de contenu. Bien qu’il puisse s’agit d’une activité continue, vous pouvez suivre certaines étapes pratiques lors de la préparation des rubriques :
 
 - Encouragez les propriétaires de sites à passer en revue le partage et les autorisations.
 
-  Les propriétaires de sites SharePoint peuvent consulter un rapport de partage pour leur site qui affiche les détails complets de toutes les autorisations et des liens de partage configurés sur le site, voir [Rapports de partage.](https://docs.microsoft.com/sharepoint/sharing-reports) Cette liste répertorie les utilisateurs internes et externes (invités).
+  Les propriétaires de sites SharePoint peuvent consulter un rapport de partage pour leur site qui affiche les détails complets de toutes les autorisations et des liens de partage configurés sur le site, voir [Rapports de partage.](/sharepoint/sharing-reports) Cette liste répertorie les utilisateurs internes et externes (invités).
 
   Les propriétaires de site peuvent également voir qui dispose des autorisations pour le site en allant sur les pages **Autorisations** du site et **Paramètres d’autorisations avancées.**
 
@@ -128,7 +128,7 @@ Selon votre organisation, vous pouvez avoir peu ou plusieurs personnes qui jouen
 | Sets up Viva Topics | Possède la gestion et la qualité des rubriques | Contribue à des rubriques en fonction de leur expertise. |
 | Garantit que les normes de sécurité et de conformité sont appliquées et qu’elles comprennent le contrat de licence.| Effectue des tâches de gestion de rubriques telles que créer, modifier, supprimer et rejeter des rubriques. Prend en charge les collaborateurs de rubrique avec leurs tâches. | Organise les informations et le contenu des pages de rubrique, y compris les personnes et les ressources épinglées à cette rubrique. |
 
-Les sur-points et les cartes apparaissent pour les utilisateurs dans le contexte de leur travail, par exemple quand ils parcourent des pages modernes dans SharePoint. Vous contrôlez l’expérience utilisateur final pour les rubriques.
+Les points forts et les cartes apparaissent aux utilisateurs dans le contexte de leur travail, par exemple quand ils parcourent des pages modernes dans SharePoint. Vous contrôlez l’expérience utilisateur final pour les rubriques.
 
 - Qui peut voir Rubriques ? La visibilité des rubriques est configurée dans le Centre d’administration Microsoft 365. Choisissez les groupes à autoriser à voir les rubriques :
   - Tous les membres de mon organisation. « Tout le monde » n’inclut pas les invités, il s’agit de tous les utilisateurs internes dans votre annuaire
@@ -143,5 +143,5 @@ Les sur-points et les cartes apparaissent pour les utilisateurs dans le contexte
 
 Maintenant que nous avons les responsables, les experts et les utilisateurs, nous pouvons parler des sujets eux-mêmes.
 
-- Il est bon d’amorçage de rubriques dans votre liste de rubriques. La qualité et la quantité des rubriques sont basées sur votre contenu : elles ne seront créées en tant que rubrique que si elles sont incluses dans le contenu inclus dans l’étendue. S’il existe suffisamment d’informations et de preuves pour la rubrique, elle sera créée par l’IA. Les rubriques d’amorçage permettent au Gestionnaire de connaissances et aux experts techniques de vous aider. La combinaison de connaissances humaines avec l’IA est la meilleure voie pour les sujets de qualité. Par conséquent, s’il existe des rubriques que vous prévoyez de créer manuellement dans le centre de rubriques. Cela donnera à l’IA un signal fort de la pertinence de cette rubrique et identifiera les ressources et les personnes à associer à cette rubrique.
+- Il est pratique d’amorçage des rubriques dans votre liste de rubriques. La qualité et la quantité des rubriques sont basées sur votre contenu : elles ne seront créées en tant que rubrique que si elles sont incluses dans le contenu inclus dans l’étendue. S’il existe suffisamment d’informations et de preuves pour la rubrique, elle sera créée par l’IA. Les rubriques d’amorçage permettent au Gestionnaire de connaissances et aux experts techniques de vous aider. La combinaison de connaissances humaines avec l’IA est la meilleure voie pour les sujets de qualité. Par conséquent, s’il existe des rubriques que vous prévoyez de créer manuellement dans le centre de rubriques. Cela donnera à l’IA un signal fort de la pertinence de cette rubrique et identifiera les ressources et les personnes à associer à cette rubrique.
 - Utilisez les taxonomies existantes pour faciliter la planification de votre rubrique, à partir de SharePoint ou ailleurs. Les taxonomies existantes incluent souvent des termes organisationnels, des produits, des sujets, etc. Les sources des rubriques peuvent également être des listes de projets, des signets de recherche existants, etc.

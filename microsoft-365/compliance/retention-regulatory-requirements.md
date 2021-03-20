@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressources pour vous aider à respecter les réglementations en matière de gouvernance des informations et de gestion des enregistrements.
-ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: a2629dbd9df4b582b2aeb7726de87d81eb726a76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50109933"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917780"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Réglementations en matière de gouvernance des informations et de gestion des enregistrements
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Utilisez les ressources de cette page pour vous aider à respecter les réglementations spécifiques en matière de gouvernance des informations et de gestion des enregistrements dans Microsoft 365. Chaque section de ce document se concentre sur une ou plusieurs réglementations apparentées, et inclut des recommandations existantes ou une évaluation tierce de la configuration de Microsoft 365 pour vous aider dans les conditions décrites.
 

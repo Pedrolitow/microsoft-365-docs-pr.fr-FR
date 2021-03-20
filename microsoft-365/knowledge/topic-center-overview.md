@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 54e513fc12a42d2779ee5f35628781676adc0f48
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 558d0fc9279c4b0d9e8c287fe4d99f5ac5884606
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453992"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917487"
 ---
 # <a name="topic-center-overview"></a>Vue d’ensemble du centre de rubriques
 
@@ -32,7 +32,7 @@ Bien que tous les utilisateurs titulaires d’une licence qui peuvent afficher d
 
 ## <a name="where-is-my-topic-center"></a>Où se trouve mon centre de rubriques
 
-Le centre de rubriques est créé lors de la configuration de Topics. Une fois l’installation terminée, un administrateur peut trouver l’URL sur la page de gestion [du centre de rubriques.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings)
+Le centre de rubriques est créé lors de l’installation de Topics. Une fois l’installation terminée, un administrateur peut trouver l’URL sur la page de gestion [du centre de rubriques.](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
 1. Dans le Centre d’administration Microsoft 365, cliquez sur **Paramètres,** puis **Paramètres de l’organisation.**
@@ -57,7 +57,7 @@ Le centre de rubriques est créé lors de la configuration de Topics. Une fois l
 
 Dans la page d’accueil du centre de rubriques, vous pouvez voir les rubriques de votre organisation avec lesquelles vous êtes en relation.
 
-- Connexions suggérées : vous verrez les rubriques répertoriées sous Nous vous avons **répertoriés dans ces rubriques. Avons-nous bien fait ?**. Voici des rubriques dans lesquelles votre connexion à la rubrique a été suggérée par le biais de l’IA. Par exemple, vous pouvez être l’auteur d’un fichier ou d’un site associé. Vous êtes invité à confirmer que vous devez rester répertorié en tant que personne associée pour la rubrique.
+- Connexions suggérées : vous verrez les rubriques répertoriées sous Nous vous avons **répertoriés dans ces rubriques. Avons-nous bien fait ?**. Voici des rubriques dans lesquelles votre connexion à cette rubrique a été suggérée par le biais de l’IA. Par exemple, vous pouvez être l’auteur d’un fichier ou d’un site associé. Vous êtes invité à confirmer que vous devez rester répertorié en tant que personne associée pour la rubrique.
 
    ![Connexions suggérées](../media/knowledge-management/my-topics.png) </br>
  
@@ -73,7 +73,7 @@ Une fois qu’un utilisateur a confirmé sa connexion à une rubrique, il peut a
 Pour travailler dans la section Gérer les rubriques du Centre de **rubriques,** vous devez avoir les autorisations Gérer les *rubriques requises* pour le rôle de gestionnaire de connaissances. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la gestion des [connaissances,](set-up-topic-experiences.md)ou les nouveaux utilisateurs peuvent être [ajoutés](topic-experiences-knowledge-rules.md) par la suite par un administrateur via le Centre d’administration Microsoft 365.
 
 Dans la page Gérer les rubriques, le tableau de bord de rubrique affiche toutes les rubriques, à qui vous avez accès, qui ont été identifiées à partir de vos emplacements source spécifiés. Chaque rubrique affiche la date à laquelle la rubrique a été découverte. Un utilisateur qui a reçu les autorisations Gérer les **rubriques** peut passer en revue les rubriques non confirmées et choisir d’utiliser :
-- Confirmez la rubrique : met en évidence la rubrique pour les utilisateurs qui ont accès aux fichiers et aux pages associés à la rubrique, et leur permet de voir la carte de sujet et la page de rubrique associées.
+- Confirmez la rubrique : met en évidence la rubrique pour les utilisateurs qui ont accès aux fichiers et aux pages associés à la rubrique, et leur permet de voir la carte de sujet associée et la page de rubrique.
 - Publiez la rubrique : modifiez les informations de la rubrique pour améliorer la qualité de la rubrique initialement identifiée et présente la rubrique à tous les utilisateurs qui ont accès aux rubriques. 
 - Rejet de la rubrique : rend la rubrique non disponible pour les utilisateurs. La rubrique est déplacée vers **l’onglet Rejeté** et peut être confirmée ultérieurement si nécessaire. 
 
@@ -94,13 +94,6 @@ Si vous avez **des autorisations créer et modifier des rubriques,** vous pouvez
 
 
 ## <a name="see-also"></a>Voir aussi
-
-
-
-  
-
-
-
 
 
 

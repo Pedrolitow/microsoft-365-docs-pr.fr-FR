@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838687"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918465"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -39,7 +39,7 @@ Cet article contient les rubriques suivantes :
 - Attribution automatique d’une étiquette de confidentialité aux documents contenant un type d’informations sensibles.
 - Suppression automatique de l’accès invité aux fichiers avec une étiquette de confidentialité.
 
-Certaines des options décrites dans cet article exigent que les invités disposent d’un compte dans Azure Active Directory. Pour vous assurer que les invités sont bien inclus dans le répertoire lorsque vous partagez des fichiers et des dossiers avec eux, utilisez l’[intégration de SharePoint et OneDrive avec Azure AD B2B Préversion](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+Certaines des options décrites dans cet article exigent que les invités disposent d’un compte dans Azure Active Directory. Pour vous assurer que les invités sont bien inclus dans le répertoire lorsque vous partagez des fichiers et des dossiers avec eux, utilisez l’[intégration de SharePoint et OneDrive avec Azure AD B2B Préversion](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 Notez que nous n'aborderons pas l'activation des paramètres de partage des invités dans cet article. Consultez la rubrique [Collaborer avec des personnes extérieures à votre organisation](collaborate-with-people-outside-your-organization.md) pour plus d’informations sur l'activation du partage des invités pour différents scénarios.
 
@@ -66,7 +66,7 @@ Les invités doivent maintenant s'inscrire à l'authentification multifacteur av
 
 ### <a name="more-information"></a>Plus d’informations
 
-[Planifier le déploiement d’une authentification multifacteur Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planifier le déploiement d’une authentification multifacteur Azure AD](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Configurer les conditions d’utilisation pour les invités
 
@@ -108,11 +108,11 @@ Pour créer une stratégie d’accès conditionnel, procédez comme suit :
 À présent, la première fois qu’un invité tente d’accéder au contenu, à une équipe ou à un site de votre organisation, il est tenu d’accepter les conditions d’utilisation.
 
 > [!NOTE]
-> L’utilisation de l’accès conditionnel nécessite une licence Azure AD Premium P1. Pour en savoir plus, consultez l'article [Qu’est-ce que l’accès conditionnel ?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+> L’utilisation de l’accès conditionnel nécessite une licence Azure AD Premium P1. Pour en savoir plus, consultez l'article [Qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview).
 
 ### <a name="more-information"></a>Plus d’informations
 
-[Conditions d’utilisation d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
+[Conditions d’utilisation d’Azure Active Directory](/azure/active-directory/conditional-access/terms-of-use).
 
 ## <a name="set-up-guest-access-reviews"></a>Configurer les révisions d’accès invité
 
@@ -145,15 +145,15 @@ Il est important de noter que les invités peuvent avoir accès à des équipes 
 
 ### <a name="more-information"></a>Plus d’informations
 
-[Gérer l’accès invité avec les révisions d’accès Azure AD](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[Gérer l’accès invité avec les révisions d’accès Azure AD](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[Créer une révision d'accès de groupes ou d'applications dans les révisions d'accès Azure AD](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+[Créer une révision d'accès de groupes ou d'applications dans les révisions d'accès Azure AD](/azure/active-directory/governance/create-access-review)
 
 ## <a name="set-up-web-only-access-for-guests"></a>Configurer l’accès Web uniquement pour les invités
 
 Vous pouvez réduire votre surface d'attaque, puis simplifier l'administration en demandant aux invités d'accéder à vos équipes, sites et fichiers en utilisant uniquement un navigateur Web.
 
-Pour les groupes et équipes Microsoft 365, cette opération s’effectue à l’aide d’une stratégie d’accès conditionnel Azure AD. Pour SharePoint, celui-ci est configuré dans le centre d’administration SharePoint. (Vous pouvez également [utiliser des étiquettes de confidentialité pour restreindre l’accès web uniquement aux invités](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
+Pour les groupes et équipes Microsoft 365, cette opération s’effectue à l’aide d’une stratégie d’accès conditionnel Azure AD. Pour SharePoint, celui-ci est configuré dans le centre d’administration SharePoint. (Vous pouvez également [utiliser des étiquettes de confidentialité pour restreindre l’accès web uniquement aux invités](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
 Pour restreindre l'accès des invités au web uniquement pour les groupes et Microsoft Teams :
 
@@ -222,7 +222,7 @@ Pour créer un type d’informations sensibles personnalisé, procédez comme su
 
 ### <a name="more-information"></a>Plus d’informations
 
-[Types d’informations sensibles personnalisés](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
+[Types d’informations sensibles personnalisés](/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## <a name="create-an-auto-labeling-policy-to-assign-a-sensitivity-label-based-on-a-sensitive-information-type"></a>Créer une stratégie d’attribution automatique d’étiquette pour affecter une étiquette de confidentialité sur la base d’un type d’informations sensibles
 
@@ -252,11 +252,11 @@ Une fois la stratégie en place, lorsqu’un utilisateur tape « Projet Saturne
 
 ### <a name="more-information"></a>Plus d’informations
 
-[Appliquer automatiquement une étiquette de confidentialité au contenu](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+[Appliquer automatiquement une étiquette de confidentialité au contenu](../compliance/apply-sensitivity-label-automatically.md)
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Créer une stratégie DLP pour supprimer l’accès invité aux fichiers hautement sensibles
 
-Vous pouvez utiliser la [protection contre la perte de données (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) pour empêcher le partage de contenu sensible indésirable. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité d’un fichier et supprimer l’accès invité.
+Vous pouvez utiliser la [protection contre la perte de données (DLP)](../compliance/data-loss-prevention-policies.md) pour empêcher le partage de contenu sensible indésirable. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité d’un fichier et supprimer l’accès invité.
 
 Création d’une stratégie DLP
 
@@ -287,9 +287,9 @@ Il est important de noter que cette stratégie ne supprime pas l’accès si l�
 
 D'autres options existent dans Microsoft 365 et Azure Active Directory vous permettant de sécuriser votre environnement de partage d'invités.
 
-- Vous pouvez créer une liste de domaines de partage autorisés ou refusés pour limiter les personnes avec lesquelles les utilisateurs peuvent effectuer des partages. Pour plus d’informations, consultez [Restreindre le partage de contenu SharePoint et OneDrive par domaine](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) et [Autoriser ou bloquer des invitations à des utilisateurs B2B d’organisations spécifiques](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
-- Vous pouvez également limiter d'autres locataires Azure Active Directory avec lesquels vos utilisateurs peuvent se connecter. Pour plus d'informations, voir [Utilisez les restrictions liées au locataire pour gérer l’accès aux applications cloud SaaS](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions).
-- Vous pouvez créer un environnement géré dans lequel vos partenaires peuvent vous aider à gérer des comptes d'invités. Pour plus d’informations, voir [Créer un extranet B2B avec des invités gérés](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet).
+- Vous pouvez créer une liste de domaines de partage autorisés ou refusés pour limiter les personnes avec lesquelles les utilisateurs peuvent effectuer des partages. Pour plus d’informations, consultez [Restreindre le partage de contenu SharePoint et OneDrive par domaine](/sharepoint/restricted-domains-sharing) et [Autoriser ou bloquer des invitations à des utilisateurs B2B d’organisations spécifiques](/azure/active-directory/b2b/allow-deny-list).
+- Vous pouvez également limiter d'autres locataires Azure Active Directory avec lesquels vos utilisateurs peuvent se connecter. Pour plus d'informations, voir [Utilisez les restrictions liées au locataire pour gérer l’accès aux applications cloud SaaS](/azure/active-directory/manage-apps/tenant-restrictions).
+- Vous pouvez créer un environnement géré dans lequel vos partenaires peuvent vous aider à gérer des comptes d'invités. Pour plus d’informations, voir [Créer un extranet B2B avec des invités gérés](/Office365/Enterprise/b2b-extranet).
 
 ## <a name="see-also"></a>Voir aussi
 

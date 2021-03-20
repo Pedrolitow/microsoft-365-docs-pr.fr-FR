@@ -18,12 +18,12 @@ ms.collection:
 description: Les administrateurs peuvent consulter les questions fréquemment posées et leurs réponses sur la protection contre l’usurpation d’adresse dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2d307d201af8ad09a4faf7a865a29da8942bdf8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7e7163037029761a53a5461de592e46ab5ea0485
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288908"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917557"
 ---
 # <a name="anti-spoofing-protection-faq"></a>FAQ sur la protection contre l’usurpation d’identité
 
@@ -66,7 +66,7 @@ See [You don’t know all sources for your email](email-validation-and-authentic
 
 Nous vous déconseillons de désactiver la protection contre l’usurpation d’usurpation d’accès. La désactivation de la protection permettra de remettre davantage de messages de hameçonnage et de courrier indésirable dans votre organisation. Tout le hameçonnage n’est pas une usurpation d’informations, et tous les messages usurpés ne seront pas manqués. Toutefois, votre risque sera plus élevé.
 
-À présent que le filtrage amélioré pour les [connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) est disponible, nous vous déconseillons de la mettre hors service de protection contre l’usurpation d’adresse lorsque votre courrier électronique est acheminé via un autre service avant EOP.
+À présent que le filtrage amélioré pour les [connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) est disponible, nous vous déconseillons de la mettre hors service de protection contre l’usurpation d’adresse lorsque votre courrier électronique est acheminé via un autre service avant EOP.
 
 ## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>La protection contre l’usurpation d’usurpation signifie-t-elle que je suis protégé contre tout hameçonnage ?
 

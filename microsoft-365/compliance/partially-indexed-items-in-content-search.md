@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Découvrez les éléments nonndex dans Exchange et SharePoint que vous pouvez inclure dans une recherche de découverte électronique que vous exécutez dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: 308e0755f1966b8e4559cf6f08b3133a00ea1b5a
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 39f78c9a6e937fc7152b86a67e56cc95c132ad6a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711904"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916806"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Éléments partiellement indexés dans eDiscovery
 
@@ -53,15 +53,15 @@ Pour les enquêtes juridiques, votre organisation peut être tenue de réviser l
   
 ## <a name="file-types-not-indexed-for-search"></a>Types de fichier non indexés pour la recherche
 
-Certains types de fichier, tels que les fichiers Bitmap ou MP3, ne comportent pas de contenu pouvant être indexé. Par conséquent, les serveurs d’indexation de recherche dans Exchange et SharePoint n’effectuent pas d’indexation de texte intégral sur ces types de fichiers. Ces types de fichier sont considérés comme non pris en charge. Il existe également des types de fichier pour lesquels l’indexation de texte intégral a été désactivée, soit par défaut, soit par un administrateur. Les types de fichiers non pris en mesure et désactivés sont étiquetés en tant qu’éléments nonndex dans les recherches de contenu. Comme indiqué précédemment, les éléments partiellement indexés peuvent être inclus dans l’ensemble des résultats de recherche lorsque vous exécutez une recherche, exportez les résultats de la recherche sur un ordinateur local ou préparez les résultats de recherche pour Advanced eDiscovery.
+Certains types de fichier, tels que les fichiers Bitmap ou MP3, ne comportent pas de contenu pouvant être indexé. Par conséquent, les serveurs d’indexation de recherche dans Exchange et SharePoint n’effectuent pas d’indexation de texte intégral sur ces types de fichiers. Ces types de fichier sont considérés comme non pris en charge. Il existe également des types de fichier pour lesquels l’indexation de texte intégral a été désactivée, soit par défaut, soit par un administrateur. Les types de fichiers non pris en place et désactivés sont étiquetés en tant qu’éléments nonndex dans les recherches de contenu. Comme indiqué précédemment, les éléments partiellement indexés peuvent être inclus dans l’ensemble des résultats de recherche lorsque vous exécutez une recherche, exportez les résultats de la recherche sur un ordinateur local ou préparez les résultats de recherche pour Advanced eDiscovery.
   
 Pour obtenir une liste de formats de fichier pris en charge et désactivés, consultez les rubriques suivantes :
   
-- **Exchange**  -  [Formats de fichiers indexés par la recherche Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange**  -  [Formats de fichiers indexés par la recherche Exchange](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- **Exchange**  -  [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange**  -  [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
-- **SharePoint**  -  [Extensions de nom de fichier et types de](https://go.microsoft.com/fwlink/p/?LinkID=404033) fichiers analyse par défaut dans SharePoint
+- **SharePoint**  -  [Extensions de nom de fichier et types de](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) fichiers analyse par défaut dans SharePoint
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>Les messages et les documents dont les types de fichiers sont partiellement indexés peuvent être renvoyés dans les résultats de la recherche
 
@@ -69,7 +69,7 @@ Tous les messages électroniques avec une pièce jointe partiellement indexée o
   
 De même, les messages avec des pièces jointes partiellement indexées et des documents d’un type de fichier partiellement indexé sont inclus dans les résultats de la recherche lorsque d’autres propriétés de message ou de document, indexées et utilisables dans une recherche, répondent aux critères de recherche. Les propriétés des messages qui sont indexées pour la recherche comprennent les dates d’envoi et de réception, l’expéditeur et le destinataire, le nom de fichier d’une pièce jointe et le texte dans le corps du message. Les propriétés de document indexées pour la recherche comprennent les dates de création et de modification. Par conséquent, même si une pièce jointe de message peut être un élément partiellement indexé, le message sera inclus dans les résultats de recherche ordinaires si la valeur d’autres propriétés de message ou de document correspond aux critères de recherche.
   
-Pour obtenir la liste des propriétés de courrier électronique et de document que vous pouvez rechercher à l’aide de la fonctionnalité de recherche dans le Centre de sécurité & conformité, voir Requêtes par mots clés et conditions de recherche pour [eDiscovery](keyword-queries-and-search-conditions.md).
+Pour obtenir la liste des propriétés de courrier électronique et de document que vous pouvez rechercher à l’aide de la fonctionnalité de recherche dans le Centre de sécurité & conformité, voir Requêtes par mot clé et conditions de recherche pour [eDiscovery](keyword-queries-and-search-conditions.md).
   
 ## <a name="partially-indexed-items-included-in-the-search-results"></a>Éléments partiellement indexés inclus dans les résultats de la recherche
 
@@ -77,7 +77,7 @@ Votre organisation peut être tenue d’identifier et d’effectuer une analyse 
   
 Gardez les éléments suivants à l’esprit concernant les éléments partiellement indexés :
   
-- Lorsque vous exécutez une recherche de découverte électronique, le nombre total et la taille des éléments Exchange partiellement indexés (renvoyés par la requête de recherche) sont affichés dans les statistiques de recherche sur la page de présentation et étiquetés comme éléments non indexés. Les statistiques sur les éléments partiellement indexés affichés sur la page volante n’incluent pas les éléments partiellement indexés dans SharePoint ou OneDrive.
+- Lorsque vous exécutez une recherche de découverte électronique, le nombre total et la taille des éléments Exchange partiellement indexés (renvoyés par la requête de recherche) sont affichés dans les statistiques de recherche sur la page volante et étiquetés en tant qu’éléments non indexés. Les statistiques sur les éléments partiellement indexés affichés sur la page volante n’incluent pas les éléments partiellement indexés dans SharePoint ou OneDrive.
 
 - Si la recherche dont vous exportez les résultats était une recherche d’emplacements de contenu spécifiques ou de tous les emplacements de contenu de votre organisation, seuls les éléments nonndex provenant d’emplacements de contenu qui contiennent des éléments qui correspondent aux critères de recherche seront exportés. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. En effet, l’exportation d’éléments partiellement indexés à partir de nombreux emplacements de l’organisation peut augmenter la probabilité d’erreurs d’exportation et augmenter le temps d’exportation et de téléchargement des résultats de la recherche.
 
@@ -110,7 +110,7 @@ Une exception à cette règle est la création d’une attente basée sur une re
 
 Le tableau suivant décrit les limites d’indexation qui peuvent entraîner le retour d’un message électronique en tant qu’élément partiellement indexé dans une recherche eDiscovery dans Microsoft 365.
   
-Pour obtenir la liste des limites d’indexation pour les documents SharePoint, voir [Limites de recherche pour SharePoint Online.](https://docs.microsoft.com/sharepoint/search-limits)
+Pour obtenir la liste des limites d’indexation pour les documents SharePoint, voir [Limites de recherche pour SharePoint Online.](/sharepoint/search-limits)
   
 |**Limite d’indexation**|**Commentaires**|**Description**|
 |:-----|:-----|:-----|
@@ -129,9 +129,9 @@ Pour obtenir la liste des limites d’indexation pour les documents SharePoint, 
 
 - Comme indiqué précédemment, étant donné que les propriétés de message et de document et leurs métadonnées sont indexées, une recherche par mot clé peut renvoyer des résultats si ce mot clé apparaît dans les métadonnées indexées. Cependant, cette même recherche par mot clé peut ne pas renvoyer le même élément si le mot clé apparaît uniquement dans le contenu d’un élément dont le type de fichier n’est pas pris en charge. Dans ce cas, l’élément est renvoyé en tant qu’élément partiellement indexé.
 
-- Si un élément partiellement indexé est inclus dans les résultats de la recherche car il satisfait aux critères de requête de recherche (et n’a pas été exclu), il ne sera pas inclus en tant qu’élément partiellement indexé dans les statistiques de recherche estimées. En outre, il n’est pas inclus avec les éléments partiellement indexés lorsque vous exportez des résultats de recherche.
+- Si un élément partiellement indexé est inclus dans les résultats de la recherche car il satisfait aux critères de requête de recherche (et n’a pas été exclu), il ne sera pas inclus en tant qu’élément partiellement indexé dans les statistiques de recherche estimées. En outre, il ne sera pas inclus avec les éléments partiellement indexés lorsque vous exporterez les résultats de la recherche.
 
-- Bien qu’un type de fichier soit pris en charge pour l’indexation et qu’il soit indexé, il peut y avoir des erreurs d’indexation ou de recherche qui entraînent le retour d’un fichier en tant qu’élément partiellement indexé. Par exemple, la recherche dans un fichier Excel très important peut être partiellement réussie (car les 4 premiers Mo sont indexés), mais échoue, car la limite de taille de fichier est dépassée. Dans ce cas, il est possible que le même fichier soit renvoyé avec les résultats de la recherche et en tant qu’élément partiellement indexé.
+- Bien qu’un type de fichier soit pris en charge pour l’indexation et qu’il soit indexé, il peut y avoir des erreurs d’indexation ou de recherche qui entraînent le retour d’un fichier en tant qu’élément partiellement indexé. Par exemple, la recherche dans un fichier Excel très important peut être partiellement réussie (car les 4 premiers Mo sont indexés), mais échoue car la limite de taille de fichier est dépassée. Dans ce cas, il est possible que le même fichier soit renvoyé avec les résultats de la recherche et en tant qu’élément partiellement indexé.
 
 - Les fichiers chiffrés avec les technologies de chiffrement [Microsoft](encryption.md) et joints à un message électronique qui correspond aux critères d’une recherche peuvent être prévisualisations et déchiffrés lors de l’exportation. Pour l’instant, les fichiers chiffrés avec les technologies de chiffrement Microsoft (et stockés dans SharePoint ou OneDrive Entreprise) sont partiellement indexés.
 

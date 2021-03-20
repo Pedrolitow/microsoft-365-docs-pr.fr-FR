@@ -15,12 +15,12 @@ ms.custom:
 description: Dans cet article, vous allez apprendre à passer à Exchange Online Protection (EOP) à partir d’un équipement d’hygiène de messagerie local ou d’un service de protection en nuage.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cb946fbb60393657aab21195bc4dd723458f16e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a09b64d45d79c81ed95981c20bf75dcb43366d07
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290188"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916477"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Basculer vers EOP depuis Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort
 
@@ -57,7 +57,7 @@ Pendant le processus d’installation de Microsoft 365, vous allez créer vos ut
 
 Il se peut que vous vouliez déplacer uniquement une partie de vos boîtes aux lettres vers le nuage en raison d'exigences propres à votre organisation ou de considérations réglementaires. Lorsque vous déployez un scénario hybride, vous pouvez déplacer des boîtes aux lettres vers le nuage conformément aux exigences de votre organisation. Une migration vers un environnement hybride avec protection EOP est plus compliquée qu'un scénario de déplacement complet dans le nuage. Toutefois, Microsoft offre une prise en charge complète du scénario hybride et de nombreuses ressources pour faciliter le déplacement hybride.
 
-Le meilleur endroit pour commencer, si vous envisagez un déploiement hybride, est [Exchange Server déploiements hybrides.](https://docs.microsoft.com/exchange/exchange-hybrid) En outre, il est important de comprendre différentes façons d’router le courrier électronique dans un scénario hybride. [Le routage de transport dans les déploiements hybrides Exchange](https://docs.microsoft.com/exchange/transport-routing) explique chaque type, afin que vous pouvez choisir le meilleur scénario de routage, en fonction des besoins de votre entreprise.
+Le meilleur endroit pour commencer, si vous envisagez un déploiement hybride, est [Exchange Server déploiements hybrides.](/exchange/exchange-hybrid) En outre, il est important de comprendre différentes façons d’router le courrier électronique dans un scénario hybride. [Le routage de transport dans les déploiements hybrides Exchange](/exchange/transport-routing) explique chaque type, afin que vous pouvez choisir le meilleur scénario de routage, en fonction des besoins de votre entreprise.
 
 ## <a name="migration-planning"></a>Planification de la migration
 
@@ -67,7 +67,7 @@ Si vous décidez de passer à EOP, soyez particulièrement attentif aux aspects 
 
 - **Listes** d’adresses IP et listes d’adresses IP bloqués : si vous avez des listes d’adresses ip et des listes d’adresses IP bloqués par utilisateur, laissez le temps de copier les listes dans EOP dans le cadre de votre processus de configuration. Pour plus d’informations sur la liste d’adresses IP permises et la liste d’adresses IP bloqués, voir [Configurer la stratégie de filtrage des connexions.](configure-the-connection-filter-policy.md)
 
-- **Communication sécurisée**: si vous avez un partenaire qui nécessite une messagerie chiffrée, nous vous recommandons de le configurer dans le Centre d’administration Exchange. Pour configurer ce scénario, voir Configurer des connecteurs pour un flux [de messagerie sécurisé avec une organisation partenaire.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
+- **Communication sécurisée**: si vous avez un partenaire qui nécessite une messagerie chiffrée, nous vous recommandons de le configurer dans le Centre d’administration Exchange. Pour configurer ce scénario, voir Configurer des connecteurs pour un flux [de messagerie sécurisé avec une organisation partenaire.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
 
 > [!TIP]
 > Lorsque vous passez d'un équipement local à EOP, vous pouvez conserver votre équipement ou un serveur pour effectuer les contrôles de règle d'entreprise. Par exemple, si votre appliance effectue un filtrage personnalisé sur le courrier sortant et que vous souhaitez qu’elle continue de le faire, vous pouvez configurer EOP pour qu’il envoie des messages directement à l’appliance pour un filtrage supplémentaire, avant qu’il ne soit acheminé vers Internet.

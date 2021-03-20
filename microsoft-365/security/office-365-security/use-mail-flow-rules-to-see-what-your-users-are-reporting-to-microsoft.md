@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie (également appelées règles de transport) pour recevoir des copies de messages que les utilisateurs signalent à Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40e87fec3bfd8ed4402713ca7ec45499bb50c68e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 34857c368fc910eeb43f6a78c490b9ad7568db1c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287604"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918629"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Utiliser des règles de flux de courriers pour afficher les comptes-rendus envoyés par les utilisateurs à Microsoft
 
@@ -32,7 +32,7 @@ ms.locfileid: "50287604"
 - [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, il existe plusieurs façons pour les utilisateurs de signaler des messages à Microsoft pour analyse, comme décrit dans La description du rapport des messages et des fichiers à [Microsoft.](report-junk-email-messages-to-microsoft.md)
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, il existe plusieurs façons pour les utilisateurs de signaler des messages à Microsoft pour analyse, comme décrit dans La description du rapport sur les messages et les fichiers à [Microsoft.](report-junk-email-messages-to-microsoft.md)
 
 Vous pouvez créer une règle de flux de messagerie (également appelée règle de transport) qui recherche les messages que les utilisateurs signalent à Microsoft, et vous pouvez configurer les destinataires Bcc pour recevoir des copies de ces messages signalés.
 
@@ -44,18 +44,18 @@ Vous pouvez créer la règle de flux de messagerie dans le Centre d’administra
 
   Pour plus d’informations, voir les rubriques suivantes :
 
-  - [Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo)
   - [Autorisations dans EOP autonome](feature-permissions-in-eop.md)
   - [Utiliser le EAC pour modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Pour ouvrir le CENTRE d’administration Exchange dans Exchange Online, consultez le [Centre d’administration Exchange dans Exchange Online.](https://docs.microsoft.com/Exchange/exchange-admin-center) Pour ouvrir le CAE dans EOP autonome, consultez le Centre d’administration [Exchange dans EOP autonome.](exchange-admin-center-in-exchange-online-protection-eop.md)
+- Pour ouvrir le Centre d’administration Exchange (EAC) dans Exchange Online, consultez le [Centre d’administration Exchange dans Exchange Online.](/Exchange/exchange-admin-center) Pour ouvrir le CAE dans EOP autonome, consultez le Centre [d’administration Exchange dans EOP autonome.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
-- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Pour plus d’informations sur les règles de flux de messagerie dans Exchange Online et EOP autonome, consultez les rubriques suivantes :
-  - [Règles de flux de messagerie (règles de transport) dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
-  - [Conditions de règle de flux de messagerie et exceptions (prédicats) dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
-  - [Actions de règle de flux de courrier dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+  - [Règles de flux de messagerie (règles de transport) dans Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+  - [Conditions de règle de flux de messagerie et exceptions (prédicats) dans Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+  - [Actions de règle de flux de courrier dans Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Utiliser le EAC pour créer une règle de flux de messagerie afin de recevoir des copies des messages signalés
 
@@ -69,14 +69,14 @@ Vous pouvez créer la règle de flux de messagerie dans le Centre d’administra
 
    - Cliquez sur **Autres options**.
 
-   - Appliquez cette règle  si : Sélectionnez L’adresse du destinataire inclut l’un de ces mots : dans la boîte de dialogue Spécifier des mots ou des expressions qui s’affiche, entrez l’une des valeurs suivantes, cliquez sur Ajouter une icône, puis répétez \>   l’utilisation jusqu’à ce que vous avez entré toutes les **valeurs.** ![ ](../../media/ITPro-EAC-AddIcon.png)
+   - Appliquez cette règle  si **:** Sélectionnez L’adresse du destinataire inclut l’un de ces mots : dans la boîte de dialogue Spécifier des mots ou des expressions qui s’affiche, entrez l’une des valeurs suivantes, cliquez sur Ajouter une icône, puis répétez jusqu’à ce que vous avez entré toutes les \>  **valeurs.**  ![ ](../../media/ITPro-EAC-AddIcon.png)
 
      - `junk@office365.microsoft.com`
      - `abuse@messaging.microsoft.com`
      - `phish@office365.microsoft.com`
      - `not_junk@office365.microsoft.com`
 
-     Pour modifier une entrée, sélectionnez-la et cliquez sur **Modifier** ![ ](../../media/ITPro-EAC-EditIcon.png) l’icône Modifier. Pour supprimer une entrée, sélectionnez-la et cliquez **sur Supprimer** ![ l’icône ](../../media/ITPro-EAC-DeleteIcon.png) .
+     Pour modifier une entrée, sélectionnez-la et cliquez **sur Modifier** ![ l’icône ](../../media/ITPro-EAC-EditIcon.png) Modifier. Pour supprimer une entrée, sélectionnez-la et cliquez **sur Supprimer** ![ l’icône ](../../media/ITPro-EAC-DeleteIcon.png) .
 
      Lorsque vous avez terminé, cliquez sur **OK**.
 
@@ -86,7 +86,7 @@ Vous pouvez créer la règle de flux de messagerie dans le Centre d’administra
 
 5. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-## <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Utiliser PowerShell pour créer une règle de flux de messagerie afin de recevoir des copies des messages signalés
+## <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Utiliser PowerShell pour créer une règle de flux de messagerie pour recevoir des copies des messages signalés
 
 Cet exemple crée une règle de flux de messagerie nommée Bcc Messages signalés à Microsoft qui recherche les messages électroniques signalés à Microsoft à l’aide des méthodes décrites dans cet article et ajoute les utilisateurs laura@contoso.com et julia@contoso.com en tant que destinataires Bcc.
 
@@ -94,11 +94,11 @@ Cet exemple crée une règle de flux de messagerie nommée Bcc Messages signalé
 New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
 ## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
-Pour vérifier que vous avez configuré une règle de flux de messagerie pour recevoir des copies des messages signalés, appliquez l’une des étapes suivantes :
+Pour vérifier que vous avez configuré des règles de flux de messagerie pour recevoir des copies des messages signalés, appliquez l’une des étapes suivantes :
 
 - Dans le EAC, sélectionnez Règles de **flux** de messagerie et sélectionnez l’icône Modifier, puis \>  \> \> vérifiez les  ![ ](../../media/ITPro-EAC-EditIcon.png) paramètres.
 

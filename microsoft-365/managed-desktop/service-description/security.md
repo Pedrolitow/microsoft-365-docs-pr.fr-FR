@@ -1,19 +1,19 @@
 ---
 title: Technologies de sécurité dans bureau géré Microsoft
 description: Technologies utilisées pour la sécurité des appareils, la gestion des identités et des accès, la sécurité du réseau et la sécurité des informations
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5076ddca6053adc7cebb9599c8d82a42c7ab5a63
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: b1111f0867ff9a49ba670cdd8b48d10d158fd3ed
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840912"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917769"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Technologies de sécurité dans bureau géré Microsoft
 
@@ -39,9 +39,9 @@ Service | Description
 --- | ---
 Antivirus | L’Antivirus Microsoft Defender est installé et configuré<br>Les définitions de Microsoft Defender AV sont à jour
 Chiffrement de volume complet |    Windows BitLocker est la solution de chiffrement de volume pour les appareils bureau géré Microsoft.<br><br>Une fois qu’une organisation est intégrée au service, les appareils sont chiffrés à l’aide de Windows BitLocker avec le module de plateforme de gestion de la plateforme de confiance (TPM) intégré pour empêcher l’accès non autorisé aux données locales lorsque l’appareil est en mode veille ou hors service. 
-Surveillance |    Microsoft Defender pour le point de terminaison est utilisé pour la surveillance des menaces de sécurité sur tous les appareils bureau géré Microsoft. Defender pour le point de terminaison permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, [voir Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Surveillance |    Microsoft Defender for Endpoint est utilisé pour la surveillance des menaces de sécurité sur tous les appareils de bureau géré Microsoft. Defender pour le point de terminaison permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, [voir Microsoft Defender for Endpoint.](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 Mises à jour du système d’exploitation |  Les appareils bureau géré Microsoft sont toujours sécurisés avec les dernières mises à jour de sécurité.
-Configuration de l’appareil sécurisé |   Bureau géré Microsoft implémente la ligne de base de sécurité Microsoft. Pour plus d’informations, voir [les lignes de base de sécurité Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
+Configuration de l’appareil sécurisé |   Bureau géré Microsoft implémente la ligne de base de sécurité Microsoft. Pour plus d’informations, voir [les lignes de base de sécurité Windows.](/windows/security/threat-protection/windows-security-baselines)
 
 
 
@@ -51,7 +51,7 @@ La gestion des identités et des accès protège les biens d’entreprise et les
 
 Service | Description
 --- | ---
-Authentification biométrique |  Windows Hello permet aux utilisateurs de se connecter à l’aide de leur visage ou d’un code confidentiel, ce qui rend les mots de passe plus difficiles à oublier ou à voler. Les clients sont chargés d’implémenter les conditions préalables nécessaires pour leur annuaire Active Directory local pour l’utilisation de ce service dans une configuration hybride. Pour plus d’informations, [voir Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
+Authentification biométrique |  Windows Hello permet aux utilisateurs de se connecter à l’aide de leur visage ou d’un code confidentiel, ce qui rend les mots de passe plus difficiles à oublier ou à voler. Les clients sont chargés d’implémenter les conditions préalables nécessaires pour leur active directory local pour l’utilisation de ce service dans une configuration hybride. Pour plus d’informations, [voir Windows Hello.](/windows-hardware/design/device-experiences/windows-hello) 
 Autorisation utilisateur standard |  Pour protéger le système et le sécuriser, l’utilisateur se voit attribuer des autorisations d’utilisateur standard. Cette autorisation est attribuée dans le cadre de l’expérience Windows Autopilot out-of-box.
 
 
@@ -62,7 +62,7 @@ Les clients sont responsables de la sécurité du réseau.
 
 Service | Description
 --- | ---
-VPN | Les clients possèdent leur infrastructure VPN, pour s’assurer que des ressources limitées de l’entreprise peuvent être exposées en dehors de l’intranet.<br><br>Exigence minimale : Bureau géré Microsoft nécessite une solution VPN compatible avec Windows 10 et prise en charge. Si votre organisation a besoin d’une solution VPN, elle doit prendre en charge Windows 10 et être empaqueté et déployable via Intune. Pour plus d’informations, contactez votre éditeur de logiciels.<br><br>Recommandation :<br>- Microsoft recommande une solution VPN moderne qui pourrait être facilement déployée via Intune pour pousser les profils VPN. Cette approche offre un moyen toujours continu, transparent, fiable et sécurisé d’accéder au réseau d’entreprise. Pour plus d’informations, [voir [Paramètres VPN dans Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>- Les clients VPN épais, ou les clients VPN plus anciens, ne sont pas recommandés par Microsoft lors de l’utilisation du Bureau géré Microsoft, car cela peut avoir un impact sur l’environnement utilisateur.<br>- Microsoft recommande que le trafic web sortant soit directement vers Internet sans passer par le VPN afin d’éviter tout problème de performances.<br>- Dans l’idéal, Microsoft recommande l’utilisation du proxy d’application Azure Active Directory au lieu d’un VPN.
+VPN | Les clients possèdent leur infrastructure VPN, pour s’assurer que des ressources limitées de l’entreprise peuvent être exposées en dehors de l’intranet.<br><br>Exigence minimale : Bureau géré Microsoft nécessite une solution VPN compatible avec Windows 10 et prise en charge. Si votre organisation a besoin d’une solution VPN, elle doit prendre en charge Windows 10 et être empaqueté et déployable via Intune. Pour plus d’informations, contactez votre éditeur de logiciels.<br><br>Recommandation :<br>- Microsoft recommande une solution VPN moderne qui pourrait être facilement déployée via Intune pour pousser les profils VPN. Cette approche offre un moyen toujours continu, transparent, fiable et sécurisé d’accéder au réseau d’entreprise. Pour plus d’informations, [voir [Paramètres VPN dans Intune]](/intune/vpn-settings-configure).<br>- Les clients VPN épais ou les clients VPN plus anciens ne sont pas recommandés par Microsoft lors de l’utilisation du Bureau géré Microsoft, car cela peut avoir un impact sur l’environnement utilisateur.<br>- Microsoft recommande que le trafic web sortant soit directement vers Internet sans passer par le VPN afin d’éviter tout problème de performances.<br>- Dans l’idéal, Microsoft recommande l’utilisation du proxy d’application Azure Active Directory au lieu d’un VPN.
 
 
 ## <a name="information-security"></a>Sécurité des informations
@@ -72,5 +72,4 @@ Vous pouvez configurer ces services facultatifs pour protéger les biens à vale
 Service | Description
 --- | ---
 Récupération des données  | Les informations stockées dans les dossiers clés de l’appareil sont enregistrées dans OneDrive Entreprise. Bureau géré Microsoft n’est pas responsable des données qui ne sont pas synchronisées avec OneDrive Entreprise. 
-Protection des informations Windows |    Pour les entreprises qui requièrent des niveaux élevés de sécurité des informations, nous recommandons [la Protection](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) des informations Windows et Azure [Information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection) 
-
+Protection des informations Windows |    Pour les entreprises qui requièrent des niveaux élevés de sécurité des informations, nous recommandons [la Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) des informations Windows et Azure [Information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection)

@@ -1,18 +1,18 @@
 ---
 title: Modifications de service et communication
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 753ad703a7949b7901ddd76d0d8c966b170461ea
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 879e5dc96cf19c8070769b62f59cca0e409bf1df
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950317"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917757"
 ---
 # <a name="service-changes-and-communication"></a>Modifications de service et communication
 
@@ -47,8 +47,8 @@ Nous apporterons régulièrement d’autres modifications au service pour améli
 Nous communiquerons ces modifications à l’aide de canaux établis. Si vous avez des questions sur les modifications, contactez l’équipe Microsoft Managed Desktop [Operations](../working-with-managed-desktop/admin-support.md). Les modifications apportées au service sont également documentées selon les besoins dans [l’historique des modifications.](../change-history-managed-desktop.md)
 
 Les modifications et les communications du Bureau géré Microsoft sont régies par deux stratégies Microsoft :
-- [Politique de cycle de vie moderne](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
-- [Microsoft 365 Change Communication Policy](https://docs.microsoft.com/office365/admin/manage/message-center?redirectSourcePath=%252fen-us%252farticle%252fMessage-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093&view=o365-worldwide)
+- [Stratégie moderne de cycle de vie](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
+- [Microsoft 365 Change Communication Policy](/office365/admin/manage/message-center?view=o365-worldwide)
 
 ## <a name="changes-you-make"></a>Modifications apportées
 
@@ -62,7 +62,7 @@ Les principales modifications sont celles qui peuvent avoir un impact sur l’un
 - Certificats d’utilisateur ou d’appareil utilisés pour l’identité ou la sécurisation des services réseau
 - Systèmes de gestion qui interagissent avec le service
 - Systèmes de sécurité ou agents qui interagissent avec le service
-- Configuration de l’un des services cloud Microsoft 365 associés ou utilisés par le service
+- Configuration de l’un des services cloud Microsoft 365 associés au service ou utilisés par celui-là
 
 Ces modifications ne sont pas susceptibles d’être perturbantes, vous n’avez donc pas besoin de nous les faire savoir à l’avance :
 
@@ -70,5 +70,3 @@ Ces modifications ne sont pas susceptibles d’être perturbantes, vous n’avez
 - Ajout ou suppression d’utilisateurs du service
 - Configuration du système qui n’a pas d’impact matériel sur la distribution du Bureau géré Microsoft
 - Mises à jour de la version de l’application, à l’exception des applications VPN ou proxy
-
-

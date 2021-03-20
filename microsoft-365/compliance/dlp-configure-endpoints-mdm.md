@@ -14,30 +14,30 @@ ms.collection:
 search.appverid:
 - MET150
 description: Utilisez les outils de gestion des appareils mobiles pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 1480c918589a1f00e00ceb1233e9a62887ccff32
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 1ad1115308257fa3ce63f10edebb9129638fd52f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769434"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917990"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles
 
 **S’applique à :**
 
-- [Protection contre la perte de données de point de terminaison Microsoft 365 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Protection contre la perte de données de point de terminaison Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
 
-Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) pour configurer des appareils. La protection contre la perte de données des points de terminaison Microsoft 365 prend en charge les appareils mobiles en fournissant OMA-URIs pour créer des stratégies pour gérer les appareils.
+Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) pour configurer des appareils. La protection contre la perte de données de point de terminaison Microsoft 365 prend en charge les appareils mobiles en fournissant OMA-URIs pour créer des stratégies pour gérer les appareils.
 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 Si vous utilisez Microsoft Intune, l’appareil doit être inscrit à la gestion des appareils. Dans le cas contraire, les paramètres ne seront pas appliqués correctement. 
 
-Pour plus d’informations sur l’activation de la gestion des périphériques multi-appareils avec Microsoft Intune, voir Inscription des appareils [(Microsoft Intune).](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
+Pour plus d’informations sur l’activation de la gestion des périphériques multi-appareils avec Microsoft Intune, voir Inscription des appareils [(Microsoft Intune).](/mem/intune/enrollment/device-enrollment)
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>Intégrer des appareils à l’aide de Microsoft Intune
 
-Suivez les instructions [d’Intune.](https://docs.microsoft.com/intune/advanced-threat-protection)
+Suivez les instructions [d’Intune.](/intune/advanced-threat-protection)
 
 > [!NOTE]
 > - La **stratégie État d’état d’état des appareils** intégrés utilise des propriétés en lecture seule et ne peut pas être corrigé.
@@ -65,10 +65,10 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
       Type de date : Chaîne      
       Valeur : [Copier et coller la valeur à partir du contenu du fichier DeviceCompliance_valid_until_YYYY-MM-DD.offboarding]
 
-Pour plus d’informations sur les paramètres de stratégie Microsoft Intune, voir les paramètres de stratégie [Windows 10 dans Microsoft Intune.](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+Pour plus d’informations sur les paramètres de stratégie Microsoft Intune, voir les paramètres de stratégie [Windows 10 dans Microsoft Intune.](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
 
 > [!NOTE]
-> La **stratégie État d’état d’état des appareils** déboardés utilise des propriétés en lecture seule et ne peut pas être corrigé.
+> La **stratégie État d’état d’état des** appareils déboardés utilise des propriétés en lecture seule et ne peut pas être corrigé.
 
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
@@ -78,4 +78,4 @@ Pour plus d’informations sur les paramètres de stratégie Microsoft Intune, v
 - [Intégrer des appareils Windows 10 à l’aide de Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows 10 utilisant un script local](dlp-configure-endpoints-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.](dlp-configure-endpoints-vdi.md)
-- [Résoudre les problèmes d’intégration de microsoft Defender - Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Résoudre les problèmes d’intégration de la Protection avancée contre les menaces Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

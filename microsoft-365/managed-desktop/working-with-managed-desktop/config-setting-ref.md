@@ -1,7 +1,7 @@
 ---
 title: Référence des paramètres configurables pour bureau géré Microsoft
 description: Définition de catégories pour les paramètres configurables dans Bureau géré Microsoft
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,19 +9,19 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2c7c7d75fad58cab0cd6d19a16a97667ea3641a1
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 1245268b6128aa022a972fd0282009573558ec47
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104487"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917703"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Référence des paramètres configurables - Bureau géré Microsoft
 
 Cette rubrique répertorie les catégories de paramètres que les clients peuvent configurer avec Bureau géré Microsoft. Chaque catégorie de paramètres inclut des informations sur les conditions requises, les meilleures pratiques et la façon de personnaliser la catégorie de paramètres. 
 
 ## <a name="desktop-background-picture"></a>Image d’arrière-plan du bureau
-Vous pouvez personnaliser l’image d’arrière-plan du bureau pour les appareils bureau géré Microsoft dans votre organisation. Vous pouvez l’utiliser pour appliquer une marque d’entreprise ou du matériel marketing. 
+Vous pouvez personnaliser l’image d’arrière-plan du bureau pour les appareils bureau géré Microsoft de votre organisation. Vous pouvez l’utiliser pour appliquer une marque d’entreprise ou du matériel marketing. 
 
 ### <a name="requirements"></a>Configuration requise
 
@@ -33,7 +33,7 @@ Ces conditions doivent être remplies pour une image d’arrière-plan de bureau
 ### <a name="customize-and-deploy-desktop-background-picture"></a>Personnaliser et déployer une image d’arrière-plan de bureau
 
 **Pour ajouter une image d’arrière-plan de bureau personnalisée**
-1. Connectez-vous au Gestionnaire de point de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
+1. Connectez-vous au Gestionnaire de points de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
 2. Recherchez la section Bureau géré Microsoft, sélectionnez **Paramètres.**
 3. Dans **l’espace de travail Paramètres,** sélectionnez **Image d’arrière-plan du bureau.** 
 4. Entrez l’emplacement de l’image que vous souhaitez utiliser. 
@@ -49,7 +49,7 @@ Vous devez fournir le nom de domaine complet (FQDN) pour les sites intranet ou I
 ### <a name="customize-and-deploy-browser-start-pages"></a>Personnaliser et déployer les pages de démarrage du navigateur
 
 **Pour ajouter une page de démarrage de navigateur**
-1. Connectez-vous au Gestionnaire de point de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
+1. Connectez-vous au Gestionnaire de points de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
 2. Recherchez la section Bureau géré Microsoft, sélectionnez **Paramètres.**
 3. Dans **l’espace de travail Paramètres,** sélectionnez les pages de démarrage du **navigateur.** 
 4. Sélectionnez **Ajouter une page de démarrage.**
@@ -59,18 +59,18 @@ Vous devez fournir le nom de domaine complet (FQDN) pour les sites intranet ou I
 
 ## <a name="enterprise-mode-site-list-location"></a>Emplacement de la liste des sites en mode Entreprise
 
-Si vous avez des sites web et des applications spécifiques qui rencontrent des problèmes de compatibilité avec Microsoft Edge, vous pouvez utiliser la liste des sites en mode Entreprise afin que les sites web s’ouvrent automatiquement à l’aide d’Internet Explorer 11. En outre, si vous savez que vos sites intranet ne fonctionneront pas correctement avec Microsoft Edge, vous pouvez configurer tous les sites intranet pour qu’ils s’ouvrent automatiquement à l’aide d’Internet Explorer 11. L’utilisation du mode Entreprise signifie que vous pouvez continuer à utiliser Microsoft Edge comme navigateur par défaut, tout en vous assurant que vos applications continuent de fonctionner sur Internet Explorer 11. Pour plus d’informations sur les listes des sites en mode Entreprise, voir [Enterprise Mode and Enterprise Mode Site Lists](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode). 
+Si vous avez des sites web et des applications spécifiques qui rencontrent des problèmes de compatibilité avec Microsoft Edge, vous pouvez utiliser la liste des sites en mode Entreprise afin que les sites web s’ouvrent automatiquement à l’aide d’Internet Explorer 11. En outre, si vous savez que vos sites intranet ne fonctionneront pas correctement avec Microsoft Edge, vous pouvez configurer tous les sites intranet pour qu’ils s’ouvrent automatiquement à l’aide d’Internet Explorer 11. L’utilisation du mode Entreprise signifie que vous pouvez continuer à utiliser Microsoft Edge comme navigateur par défaut, tout en vous assurant que vos applications continuent de fonctionner sur Internet Explorer 11. Pour plus d’informations sur les listes des sites en mode Entreprise, voir [Enterprise Mode and Enterprise Mode Site Lists](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode). 
 
 Vous pouvez spécifier un https:// ou l’emplacement d’un partage interne dans lequel vous avez hébergé votre liste des sites en mode entreprise. 
 
 ### <a name="requirements"></a>Configuration requise
 
 Ces conditions doivent être remplies pour le fichier de liste des sites en mode Entreprise :
-- Format de fichier : fichier XML qui répond aux exigences [de fichier](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
+- Format de fichier : fichier XML qui répond aux exigences [de fichier](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
 - Emplacement du fichier : fichier hôte sur un emplacement https interne. 
 - Non autorisé : l’hébergement sur un partage de fichiers interne, comme *//sharename,* n’est pas autorisé.
 
-### <a name="best-practices"></a>Bonnes pratiques
+### <a name="best-practices"></a>Les bonnes pratiques
 
 Ces meilleures pratiques sont proposées pour aider les clients à prendre des décisions pour moderniser leur infrastructure informatique :
 - **Choisissez un nombre limité** de sites : Bureau géré Microsoft utilise Microsoft Edge comme navigateur préféré pour améliorer la sécurité globale de votre organisation et la convivialité pour vos utilisateurs. La plupart des sites de cette liste sont pour les applications web héritées qui ont besoin d’une version antérieure d’un navigateur qui n’inclura pas autant de fonctionnalités de sécurité. 
@@ -80,7 +80,7 @@ Ces meilleures pratiques sont proposées pour aider les clients à prendre des d
 
 **Pour ajouter un emplacement de liste en mode site d’entreprise**
 
-1. Connectez-vous au Gestionnaire de point de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
+1. Connectez-vous au Gestionnaire de points de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
 2. Recherchez la section Bureau géré Microsoft, sélectionnez **Paramètres.**
 3. Dans **l’espace de travail Paramètres,** sélectionnez **l’emplacement de la liste des sites en mode Entreprise.** 
 4. Entrez l’emplacement https de votre liste des sites. 
@@ -102,7 +102,7 @@ Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet 
 
 **Pour ajouter un site approuvé**
 
-1. Connectez-vous au Gestionnaire de point de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
+1. Connectez-vous au Gestionnaire de points de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
 2. Recherchez la section Bureau géré Microsoft, sélectionnez **Paramètres.**
 3. Dans **l’espace de travail Paramètres,** sélectionnez **Sites** de confiance, puis **Ajoutez un site approuvé.** 
 4. Sur **Ajouter un site approuvé,** entrez l’URL, choisissez une zone de sécurité, puis **sélectionnez Ajouter un site approuvé.** 
@@ -111,7 +111,7 @@ Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet 
 
 **Pour supprimer un site approuvé**
 
-1. Connectez-vous au Gestionnaire de point de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
+1. Connectez-vous au Gestionnaire de points de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
 2. Recherchez la section Bureau géré Microsoft, sélectionnez **Paramètres.**
 3. Dans **l’espace de travail Paramètres,** sélectionnez Sites de **confiance.** 
 4. Sélectionnez le site à supprimer, puis sélectionnez **Supprimer.** 
@@ -136,7 +136,7 @@ Ces conditions doivent être remplies pour les exceptions de serveur proxy et de
 
 **Pour ajouter une exception de site proxy individuel**
 
-1. Connectez-vous au Gestionnaire de point de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
+1. Connectez-vous au Gestionnaire de points de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
 2. Recherchez la section Bureau géré Microsoft, sélectionnez **Paramètres.**
 3. Dans **l’espace de travail Paramètres,** sélectionnez **Proxy.** 
 4. Entrez le **numéro d’adresse** **et de port** de votre serveur proxy, puis sélectionnez Ajouter une exception de **proxy.** 

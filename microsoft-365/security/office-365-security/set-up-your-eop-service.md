@@ -15,12 +15,12 @@ ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Les administrateurs peuvent apprendre à configurer Exchange Online Protection (EOP) autonome pour protéger les environnements de messagerie locaux.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de3c40a15a69eb2430c9c9b0473a983ef7c5354f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: bbad39475f87be27a83edc0c27e2bbe46f8e39ac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290464"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916643"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurer votre service EOP autonome
 
@@ -29,12 +29,12 @@ ms.locfileid: "50290464"
 **S’applique à**
 -  [Exchange Online Protection autonome](exchange-online-protection-overview.md)
 
-Cette rubrique explique comment configurer Exchange Online Protection (EOP) autonome. Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+Cette rubrique explique comment configurer Exchange Online Protection (EOP) autonome. Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique [Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
 > Elle suppose que vous disposez de boîtes aux lettres locales et que vous voulez les protéger avec EOP (scénario dit « autonome »). Si vous souhaitez héberger toutes vos boîtes aux lettres dans le cloud avec Exchange Online, vous n’avez pas besoin d’effectuer toutes les étapes de cet article. Go to [Compare Exchange Online plans](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) to sign up and purchase cloud mailboxes.
 >
-> Si vous voulez héberger certaines de vos boîtes aux lettres localement et d'autres dans le nuage, il s'agit d'un scénario hybride. Des paramètres de flux de messagerie plus avancés sont requis. [Exchange Server déploiements hybrides explique le](https://docs.microsoft.com/exchange/exchange-hybrid) flux de messagerie hybride et possède des liens vers des ressources qui montrent comment le configurer.
+> Si vous voulez héberger certaines de vos boîtes aux lettres localement et d'autres dans le nuage, il s'agit d'un scénario hybride. Des paramètres de flux de messagerie plus avancés sont requis. [Exchange Server déploiements hybrides hybrides](/exchange/exchange-hybrid) expliquent le flux de messagerie hybride et disposent de liens vers des ressources qui montrent comment le configurer.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -44,7 +44,7 @@ Cette rubrique explique comment configurer Exchange Online Protection (EOP) auto
 
 - Si vous ne vous êtes pas inscrit à EOP, consultez la page [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection), et choisissez d'acheter ou d'essayer le service.
 
-- Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cet article, voir raccourcis clavier pour le Centre d’administration [Exchange dans Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cet article, voir raccourcis clavier pour le Centre d’administration [Exchange dans Exchange Online.](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) .
@@ -60,15 +60,15 @@ Cette rubrique explique comment configurer Exchange Online Protection (EOP) auto
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Étape 2 : Ajouter des destinataires et éventuellement activer DBEB
 
-Avant de configurer votre flux de messagerie vers et depuis le service EOP, nous vous recommandons d'ajouter vos destinataires au service. Il existe plusieurs méthodes pour mener à bien cette opération, comme indiqué dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Aussi, si vous souhaitez activer le blocage du périmètre basé sur l'annuaire (DBEB) afin d'appliquer la vérification du destinataire dans le service après avoir ajouté vos destinataires, vous devez définir votre type de domaine sur Faisant autorité. Pour plus d'informations sur le DBEB, consultez la rubrique [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+Avant de configurer votre flux de messagerie vers et depuis le service EOP, nous vous recommandons d'ajouter vos destinataires au service. Il existe plusieurs méthodes pour mener à bien cette opération, comme indiqué dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Aussi, si vous souhaitez activer le blocage du périmètre basé sur l'annuaire (DBEB) afin d'appliquer la vérification du destinataire dans le service après avoir ajouté vos destinataires, vous devez définir votre type de domaine sur Faisant autorité. Pour plus d'informations sur le DBEB, consultez la rubrique [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Étape 3 : Utiliser le CAE pour configurer le flux de messagerie
 
-Créez des connecteurs dans le Centre d'administration Exchange (CAE) qui activent le flux de messagerie entre EOP et vos serveurs de messagerie locaux. Pour obtenir des instructions détaillées, voir Configurer des connecteurs pour router le courrier entre [Microsoft 365 et vos propres serveurs de messagerie.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)
+Créez des connecteurs dans le Centre d'administration Exchange (CAE) qui activent le flux de messagerie entre EOP et vos serveurs de messagerie locaux. Pour obtenir des instructions détaillées, voir Configurer des connecteurs pour router le courrier entre [Microsoft 365 et vos propres serveurs de messagerie.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)
 
 ### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
 
-Vérifiez le flux de messagerie entre le service et votre environnement. Pour plus d’informations, voir [Flux de messagerie test en validant vos connecteurs Microsoft 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)
+Vérifiez le flux de messagerie entre le service et votre environnement. Pour plus d’informations, voir [Flux de messagerie test en validant vos connecteurs Microsoft 365.](/exchange/mail-flow-best-practices/test-mail-flow)
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Étape 4 : Autoriser l’accès SMTP entrant sur le port 25
 
@@ -88,13 +88,13 @@ Si vous ne souhaitez pas déplacer des messages vers le dossier Courrier indési
 Suivez les étapes de configuration de domaine pour mettre à jour votre enregistrement MX pour votre domaine, afin que vos messages entrants circulent via EOP. Veillez à pointer directement votre enregistrement MX vers EOP plutôt que de faire relayer votre courrier électronique vers EOP par un service de filtrage tiers. Pour plus d'informations, vous pouvez de nouveau vous reporter à la rubrique [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 > [!NOTE]
-> Si vous devez pointer votre enregistrement MX vers un autre serveur ou service qui se trouve devant EOP, voir Filtrage amélioré pour les [connecteurs dans Exchange Online.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+> Si vous devez pointer votre enregistrement MX vers un autre serveur ou service qui se trouve devant EOP, voir Filtrage amélioré pour les [connecteurs dans Exchange Online.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
 ### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
 
 À ce stade, vous avez vérifié la fourniture de service pour un connecteur local sortant correctement configuré et vous vous êtes assuré que votre enregistrement MX pointe vers EOP. Vous pouvez désormais exécuter les tests supplémentaires suivants afin de vérifier qu'un courrier électronique est bien remis par le service à votre environnement local :
 
-- Vérifiez le flux de messagerie entre le service et votre environnement. Pour plus d’informations, voir [Flux de messagerie test en validant vos connecteurs Microsoft 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)
+- Vérifiez le flux de messagerie entre le service et votre environnement. Pour plus d’informations, voir [Flux de messagerie test en validant vos connecteurs Microsoft 365.](/exchange/mail-flow-best-practices/test-mail-flow)
 
 - Envoyez un message électronique à partir d'un compte de messagerie basé sur le web vers un destinataire de messagerie de votre organisation dont le domaine correspond au domaine ajouté au service. Vérifiez la remise du message à la boîte aux lettres locale à l'aide de Microsoft Outlook ou d'un autre client de messagerie.
 

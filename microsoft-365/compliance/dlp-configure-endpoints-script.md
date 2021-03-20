@@ -14,20 +14,20 @@ ms.collection:
 search.appverid:
 - MET150
 description: Utilisez un script local pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 74152f9488623d39e32ee4e47a452bd1daea28c7
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 69a8295b170f9186d14862a7247cac3fb4c4ef3d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769430"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917970"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Intégrer les appareils Windows 10 utilisant un script local
 
 **S’applique à :**
 
-- [Protection contre la perte de données de point de terminaison Microsoft 365 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Protection contre la perte de données de point de terminaison Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
 
-Vous pouvez également intégrer manuellement des appareils individuels à la protection contre la perte de données de point de terminaison Microsoft 365. Vous pouvez d’abord le faire lors du test du service avant de vous engager à intégrer tous les appareils de votre réseau.
+Vous pouvez également intégrer manuellement des appareils individuels à la protection contre la perte de données des points de terminaison Microsoft 365. Vous pouvez d’abord le faire lors du test du service avant de vous engager à intégrer tous les appareils de votre réseau.
 
 > [!IMPORTANT]
 > Ce script a été optimisé pour une utilisation sur jusqu’à 10 appareils.
@@ -58,7 +58,7 @@ Vous pouvez également intégrer manuellement des appareils individuels à la pr
 
 10.  Appuyez sur **entrée** ou cliquez sur **OK.**
 
-Pour plus d’informations sur la façon dont vous pouvez vérifier manuellement que l’appareil est conforme et signale correctement les données du capteur, consultez La procédure de résolution des problèmes d’intégration de la Protection avancée contre les [menaces Microsoft Defender.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+Pour plus d’informations sur la façon dont vous pouvez vérifier manuellement que l’appareil est conforme et signale correctement les données du capteur, consultez La procédure de résolution des problèmes d’intégration de la Protection avancée contre les [menaces Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
 
 ## <a name="offboard-devices-using-a-local-script"></a>Hors-carte des appareils à l’aide d’un script local
 Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
@@ -66,7 +66,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-1. Obtenir le package de mise hors programme à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com)
+1. Obtenir le package deboarding à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com)
 
 2. Dans le volet de navigation, sélectionnez **Paramètres** De  >  **l’appareil horsboard.**
 
@@ -74,7 +74,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 4. Cliquez **sur Télécharger le package** et enregistrez le fichier .zip.
 
-5. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+5. Extrayez le contenu du fichier .zip dans un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 6.  Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil et exécutez le script :
 
@@ -110,5 +110,5 @@ La surveillance peut également être effectuée directement sur le portail ou �
 - [Intégrer des appareils Windows 10 à l’aide de Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](dlp-configure-endpoints-mdm.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.](dlp-configure-endpoints-vdi.md)
-- [Exécuter un test de détection sur un appareil Microsoft Defender ATP nouvellement intégré](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Résoudre les problèmes d’intégration de microsoft Defender - Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Exécuter un test de détection sur un appareil Microsoft Defender ATP nouvellement intégré](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Résoudre les problèmes d’intégration de la Protection avancée contre les menaces Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

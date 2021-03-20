@@ -1,7 +1,7 @@
 ---
 title: Gestion des mises à jour dans Le Bureau géré Microsoft
 description: Le maintien à jour du Bureau géré Microsoft est un équilibre entre vitesse et stabilité.
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4d8de363cc9111fade719fdf5384519d1236f431
-ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
+ms.openlocfilehash: 5961ac4eb16928754849f5f32ecd06d4d2e4650d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50031338"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917715"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Gestion des mises à jour dans Le Bureau géré Microsoft
 
@@ -26,19 +26,19 @@ ms.locfileid: "50031338"
 Bureau géré Microsoft connecte tous les appareils à une infrastructure cloud moderne. Maintenir à jour Windows, Office, les pilotes, les microprogrammes et les applications du Microsoft Store pour Entreprises constitue un équilibre entre vitesse et stabilité. Les groupes de déploiement seront utilisés pour s’assurer que les mises à jour et les stratégies du système d’exploitation sont déployées en toute sécurité. Pour plus d’informations, voir la vidéo [Microsoft Managed Desktop Change and Release Process](https://www.microsoft.com/videoplayer/embed/RE4mWqP).
 
 Les mises à jour publiées par Microsoft sont cumulatives et sont classées en tant que mises à jour qualité ou fonctionnalités.
-Pour plus d’informations, voir [Windows Update for Business: Update types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
+Pour plus d’informations, voir [Windows Update for Business: Update types](/windows/deployment/update/waas-manage-updates-wufb#update-types). 
 
 ## <a name="update-groups"></a>Mettre à jour un groupe
 
 Bureau géré Microsoft utilise quatre groupes Azure AD pour gérer les mises à jour :
 
-- **Test**: permet de valider les modifications de stratégie du Bureau géré Microsoft, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications apportées au client. Aucun utilisateur ne doit être placé dans le groupe de test. Le groupe de test est exempté de tout contrat de niveau de service établi et de la prise en charge des utilisateurs. Ce groupe est disponible pour la validation de la compatibilité des applications avec les nouvelles stratégies ou modifications apportées au système d’exploitation.  
-- **Tout d’abord**: contient les premiers utilisateurs de logiciels et les appareils qui peuvent être soumis à des mises à jour de pré-publication. Les appareils de ce groupe peuvent être en panne s’il existe des scénarios qui n’ont pas été couverts lors des tests dans l’anneau de test.
-- **Rapide**: hiérarchise la vitesse sur la stabilité. Utile pour détecter les problèmes de qualité avant qu’ils ne soient proposés au groupe Large. Ce groupe fait office de couche suivante de validation, mais il est généralement plus stable que les groupes Test et First. 
+- **Test**: permet de valider les modifications de stratégie du Bureau géré Microsoft, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications apportées au client. Aucun utilisateur ne doit être placé dans le groupe de test. Le groupe de test est exempté de tout contrat de niveau de service établi et du support utilisateur. Ce groupe peut être utilisé pour valider la compatibilité des applications avec de nouvelles stratégies ou modifications de système d’exploitation.  
+- **Tout d’abord**: contient les premiers utilisateurs et périphériques logiciels qui peuvent faire l’objet de mises à jour pré-publiées. Les appareils de ce groupe peuvent être en panne s’il existe des scénarios qui n’ont pas été couverts lors des tests dans l’anneau de test.
+- **Rapide**: hiérarchise la vitesse sur la stabilité. Utile pour détecter les problèmes de qualité avant qu’ils ne soient proposés au groupe Large. Ce groupe fait office de couche de validation suivante, mais il est généralement plus stable que les groupes Test et First. 
 - **Large**: dernier groupe à avoir des mises à jour de fonctionnalités et de qualité disponibles. Ce groupe contient la plupart des utilisateurs du client et privilégie donc la stabilité par rapport à la vitesse de déploiement. Le test des applications doit être effectué ici, car l’environnement est le plus stable. 
 
 ### <a name="moving-devices-between-update-groups"></a>Déplacement d’appareils entre des groupes de mise à jour
-Vous souhaiterez peut-être que certains appareils reçoivent les mises à jour en dernier et d’autres que vous souhaitez passer en premier. Pour déplacer ces appareils dans le groupe de mise à jour approprié, envoyez une demande de [support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-worldwide) administrateur et nous déplacerons les appareils pour vous. 
+Vous souhaiterez peut-être que certains appareils reçoivent les mises à jour en dernier et d’autres que vous souhaitez passer en premier. Pour déplacer ces appareils dans le groupe de mise à jour approprié, envoyez une demande de [support](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) administrateur et nous déplacerons les appareils pour vous. 
 
 > [!NOTE]
 > Si vous devez déplacer un utilisateur vers un autre groupe de mise à jour, envoyez une demande de support. Ne déplacez pas vous-même les appareils entre les groupes de mise à jour. Les conséquences sont graves si un appareil est déplacé de manière incorrecte. L’appareil peut se mettre à jour de manière inattendue et les stratégies peuvent être en conflit, ce qui modifie la configuration de l’appareil.
@@ -68,13 +68,13 @@ Ce processus de déploiement s’applique aux mises à jour des fonctionnalités
     <tr><td>Mises à jour de fonctionnalités pour le système d’exploitation</td><td>0 jour</td><td>30 jours</td><td>60 jours</td><td>90 jours</td></tr>
     <tr><td>Pilotes/microprogramme</td><td colspan="4">Suit la planification des mises à jour qualité</td></tr>
     <tr><td>Définition de l’antivirus</td><td colspan="4">Mise à jour avec chaque analyse</td></tr>
-    <tr><td>Applications Microsoft 365 for entreprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">En savoir plus</a></td></tr>
-    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">En savoir plus</a></td></tr>
-    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/teams#updates">En savoir plus</a></td></tr>
+    <tr><td>Applications Microsoft 365 pour les grandes entreprises</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">En savoir plus</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">En savoir plus</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/teams#updates">En savoir plus</a></td></tr>
 </table>
 
 >[!NOTE]
->Ces périodes de report sont conçues intentionnellement pour garantir des normes élevées en matière de sécurité et de performances pour tous les utilisateurs. En outre, en fonction des données recueillies sur tous les appareils de bureau géré Microsoft et de l’étendue et de l’impact variables des mises à jour, Bureau géré Microsoft se réserve la flexibilité nécessaire pour modifier la durée des périodes de report ci-dessus pour tous les groupes de déploiement sur une base ad hoc.
+>Ces périodes de report sont conçues intentionnellement pour garantir des normes de sécurité et de performances élevées pour tous les utilisateurs. En outre, en fonction des données recueillies sur tous les appareils bureau géré Microsoft et de l’étendue et de l’impact variables des mises à jour, Bureau géré Microsoft se réserve la flexibilité nécessaire pour modifier la durée des périodes de report ci-dessus pour tous les groupes de déploiement de manière ponctuelle.
 >
 >Bureau géré Microsoft effectue une évaluation indépendante de chaque version de fonctionnalité Windows afin d’évaluer sa nécessité et son utilité pour ses clients gérés. Par conséquent, bureau géré Microsoft peut déployer ou non toutes les mises à jour de fonctionnalités Windows. 
 
@@ -86,5 +86,4 @@ Tous les appareils trouvés avec les builds Windows Insider peuvent être placé
 
 ## <a name="bandwidth-management"></a>Gestion de la bande passante
 
-Nous utilisons [l’optimisation de la](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) distribution pour toutes les mises à jour du système d’exploitation et des pilotes. Cela réduit la taille de téléchargement à partir du service Windows Update en recherchant les mises à jour des homologues au sein du réseau d’entreprise.
-
+Nous utilisons [l’optimisation de la](/windows/deployment/update/waas-delivery-optimization) distribution pour toutes les mises à jour du système d’exploitation et des pilotes. Cela réduit la taille de téléchargement à partir du service Windows Update en recherchant les mises à jour des homologues au sein du réseau d’entreprise.

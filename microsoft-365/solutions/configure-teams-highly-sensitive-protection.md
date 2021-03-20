@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: fdc3c1ab2c780289b7405623779b8af89da8ba17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509265"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916285"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -44,8 +44,8 @@ Selon la nature de votre entreprise, il est possible que vous souhaitiez ou non 
 
 Pour plus d’informations sur le partage sécurisé avec des invités, consultez les ressources suivantes :
 
-- [Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Créer un environnement de partage sécurisé avec des invités](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation](./share-limit-accidental-exposure.md)
+- [Créer un environnement de partage sécurisé avec des invités](./create-secure-guest-sharing-environment.md)
 
 Pour autoriser ou bloquer le partage d’invités, nous utilisons une combinaison d’une étiquette de confidentialité pour les contrôles de partage au niveau du site et des équipes pour le site SharePoint associé, les deux décrites ultérieurement.
 
@@ -53,7 +53,7 @@ Pour autoriser ou bloquer le partage d’invités, nous utilisons une combinaiso
 
 Pour le niveau de protection hautement sensible, nous allons utiliser une étiquette de confidentialité pour classer l’équipe. Cette étiquette peut également être utilisée pour classifier et chiffrer des fichiers individuels dans cette équipe ou d’autres, ou dans d’autres emplacements de fichier tels que SharePoint ou OneDrive. 
 
-Pour commencer, vous devez activer les étiquettes de confidentialité pour Teams. Pour plus d’informations, consultez [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Pour commencer, vous devez activer les étiquettes de confidentialité pour Teams. Pour plus d’informations, consultez [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Si vous avez déjà déployé des étiquettes de confidentialité au sein de votre organisation, réfléchissez à la façon dont cette étiquette correspond à votre stratégie d’étiquette globale. Vous pouvez modifier le nom ou les paramètres si nécessaire pour répondre aux besoins de votre organisation.
 
@@ -84,7 +84,7 @@ Pour créer une étiquette de confidentialité
 22. Dans la page **Étiquetage automatique pour les colonnes de base de données** , cliquez sur **Suivant**.
 23. Cliquez sur **Créer une étiquette**, puis sur **Terminé**.
 
-Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisateurs qui l’utiliseront. Pour une protection sensible, nous allons mettre l’étiquette à la disposition de tous les utilisateurs. Vous publiez l’étiquette dans le Centre de conformité Microsoft 365, sur l’onglet **Stratégies d’étiquette** de la page **Protection des informations**. Si vous avez une stratégie existante qui s’applique à tous les utilisateurs, ajoutez cette étiquette à cette stratégie. Si vous avez besoin de créer une stratégie, consultez [Publier des étiquettes de confidentialité en créant une stratégie d’étiquette](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
+Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisateurs qui l’utiliseront. Pour une protection sensible, nous allons mettre l’étiquette à la disposition de tous les utilisateurs. Vous publiez l’étiquette dans le Centre de conformité Microsoft 365, sur l’onglet **Stratégies d’étiquette** de la page **Protection des informations**. Si vous avez une stratégie existante qui s’applique à tous les utilisateurs, ajoutez cette étiquette à cette stratégie. Si vous avez besoin de créer une stratégie, consultez [Publier des étiquettes de confidentialité en créant une stratégie d’étiquette](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## <a name="create-a-team"></a>Créer une équipe
 
@@ -108,7 +108,7 @@ Pour restreindre la création d’un canal privé
 2. Sous l’onglet **Paramètres**, développez **Autorisations de membre**.
 3. Désactivez la case à cocher **Autoriser les membres à créer des canaux privés**.
 
-Vous pouvez également utiliser les [stratégies d’équipes](https://docs.microsoft.com/MicrosoftTeams/teams-policies) pour contrôler qui peut créer des canaux privés.
+Vous pouvez également utiliser les [stratégies d’équipes](/MicrosoftTeams/teams-policies) pour contrôler qui peut créer des canaux privés.
 
 ## <a name="sharepoint-settings"></a>Paramètres de SharePoint
 
@@ -135,7 +135,7 @@ Pour mettre à jour les paramètres du site
 6. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
 7. Cliquez sur **Enregistrer**.
 
-Si vous voulez créer un script dans le cadre de votre processus de création d’équipe, vous pouvez utiliser [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) avec les paramètres suivants :
+Si vous voulez créer un script dans le cadre de votre processus de création d’équipe, vous pouvez utiliser [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) avec les paramètres suivants :
 
 - `-SharingCapability Disabled` pour désactiver le partage d’invités (activé par défaut)
 - `-DefaultSharingLinkType Internal` pour modifier le lien de partage par défaut en *Personnes spécifiques*
@@ -159,5 +159,4 @@ Pour configurer le partage de sites propriétaires uniquement
 
 ## <a name="see-also"></a>Voir aussi
 
-[Créer et configurer des étiquettes de confidentialité ainsi que leurs stratégies](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)
-
+[Créer et configurer des étiquettes de confidentialité ainsi que leurs stratégies](../compliance/create-sensitivity-labels.md)

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Résumé : Utilisez PowerShell pour gérer les propriétés de votre compte d’utilisateur Skype Entreprise Online avec des stratégies.'
-ms.openlocfilehash: ca945bc05e76525b4b2df6fb0b982a8468d87810
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515051"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916701"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Gestion des stratégies Skype Entreprise Online avec PowerShell
 
@@ -34,7 +34,7 @@ Suivez ces instructions pour exécuter les commandes (sautez les étapes que vou
   > [!Note]
   > Le connecteur Skype Entreprise Online fait actuellement partie du dernier module PowerShell Teams. Si vous utilisez la version publique la plus récente de PowerShell Teams, vous n’avez pas besoin d’installer le connecteur Skype Entreprise Online.
 
-1. Installez le [module PowerShell Teams.](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
+1. Installer le [module PowerShell Teams](/microsoftteams/teams-powershell-install).
     
 2. Ouvrez l’invite de commandes Windows PowerShell et exécutez les commandes suivantes : 
 
@@ -90,11 +90,11 @@ Cette commande trouve la stratégie attribuée à l’utilisateur, puis les fonc
   
 Pour gérer les stratégies Skype Entreprise Online avec PowerShell, consultez les cmdlets pour :
 
-- [Stratégie du client](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
-- [Stratégie de conférence](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
-- [Stratégie mobile](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
-- [Stratégie de messagerie vocale en ligne](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
-- [Stratégie de routage des voix](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+- [Stratégie du client](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [Stratégie de conférence](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [Stratégie mobile](/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [Stratégie de messagerie vocale en ligne](/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [Stratégie de routage des voix](/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
 
 
 > [!NOTE]
@@ -107,7 +107,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Cette action renvoie la liste de toutes les stratégies de voix dont vous disposez. Toutefois, gardez à l'esprit que toutes les stratégies ne peuvent pas être attribuées à tous les utilisateurs, en raison des diverses restrictions impliquant la gestion des licences et l'emplacement géographique (le dénommé « [emplacement d'utilisation](https://msdn.microsoft.com/library/azure/dn194136.aspx) »). Si vous souhaitez connaître les stratégies d'accès externe et les stratégies de conférence qui peuvent être attribuées à un utilisateur particulier, utilisez des commandes semblables à celles-ci : 
+> Cette action renvoie la liste de toutes les stratégies de voix dont vous disposez. Toutefois, gardez à l'esprit que toutes les stratégies ne peuvent pas être attribuées à tous les utilisateurs, en raison des diverses restrictions impliquant la gestion des licences et l'emplacement géographique (le dénommé « [emplacement d'utilisation](/previous-versions/azure/dn194136(v=azure.100)) »). Si vous souhaitez connaître les stratégies d'accès externe et les stratégies de conférence qui peuvent être attribuées à un utilisateur particulier, utilisez des commandes semblables à celles-ci : 
 
 ```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
@@ -116,7 +116,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 Le paramètre ApplicableTo limite les données renvoyées aux stratégies qui peuvent être attribuées à l’utilisateur indiqué (par exemple, Alex Darrow). Selon les restrictions liées à la gestion des licences et à l’emplacement d’utilisation, cela pourrait représenter un sous-ensemble de toutes les stratégies disponibles. 
   
-Dans certains cas, les propriétés des stratégies ne sont pas utilisées avec Microsoft 365, tandis que d’autres ne peuvent être gérées que par le personnel de support technique de Microsoft. 
+Dans certains cas, les propriétés des stratégies ne sont pas utilisées avec Microsoft 365, tandis que d’autres ne peuvent être gérées que par le personnel du support Technique de Microsoft. 
   
 Avec Skype Entreprise Online, les utilisateurs doivent être gérés par une stratégie ou une autre. Si une propriété portant sur les stratégies est vide, cela signifie que l'utilisateur en question est géré par une stratégie globale, c'est-à-dire une stratégie qui est appliquée automatiquement à un utilisateur, sauf si une stratégie individuelle est appliquée à cet utilisateur. Si aucune stratégie de client n'est répertoriée pour un compte d'utilisateur, cela signifie qu'il est géré par la stratégie globale. Vous pouvez déterminer la stratégie de client globale avec cette commande :
   
@@ -131,4 +131,3 @@ Get-CsClientPolicy -Identity "Global"
 [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

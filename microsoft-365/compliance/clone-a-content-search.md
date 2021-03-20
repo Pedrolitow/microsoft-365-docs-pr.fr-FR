@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez le script PowerShell de cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365.
-ms.openlocfilehash: 9bc9329d31ae27736bdcd399c555f5d70bb9c761
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: c64cec2415819dc53f30c303c241e3902f34017d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357902"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918060"
 ---
 # <a name="clone-a-content-search"></a>Cloner une recherche de contenu
 
@@ -141,10 +141,10 @@ Pour cloner une recherche :
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Étape 2 : Modifier et exécuter la recherche clonée dans le centre de conformité
 
-Après avoir exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à aller au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou en supprimant des conditions de recherche. Pour plus d’informations, voir :
+Après avoir exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à aller au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou en supprimant des conditions de recherche. Pour plus d’informations, consultez :
   
 - [Recherche de contenu dans Office 365](content-search.md)
     
 - [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
     
-- [Cas eDiscovery](ediscovery-cases.md)
+- [Cas eDiscovery](./get-started-core-ediscovery.md)

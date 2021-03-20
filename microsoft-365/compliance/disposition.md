@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression de contenu, que vous utilisiez une révision de destruction ou que le contenu soit automatiquement supprimé selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 092067e676c1cbae3fae6e9d6a5ff77099ce4631
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: d2c2e4e469efe16277f34a902f6720dc2b39e908
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461879"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918040"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Utilisez l’onglet **Destruction** de **Gestion des enregistrements** dans le Centre de conformité Microsoft 365 pour gérer les révisions de destruction et afficher les [enregistrements](records-management.md#records) qui ont été automatiquement supprimés à la fin de la période de rétention. 
 
@@ -128,7 +128,7 @@ Utilisez l’onglet **Destruction** à partir de la page **Gestion des enregistr
 
 ![Éléments supprimés sans révision avant destruction](../media/records-disposed2.png)
 
-Les éléments qui apparaissent dans la **Éléments supprimés** pour les étiquettes d’enregistrement sont conservés pendant sept ans après la suppression de l’élément, avec une limite de 1 million éléments par enregistrement pour cette période. Si vous voyez le nombre de **Count** approcher cette limite d'un million, et que vous avez besoin d'une preuve de destruction pour vos enregistrements, contactez le [Support Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Les éléments qui apparaissent dans la **Éléments supprimés** pour les étiquettes d’enregistrement sont conservés pendant sept ans après la suppression de l’élément, avec une limite de 1 million éléments par enregistrement pour cette période. Si vous voyez le nombre de **Count** approcher cette limite d'un million, et que vous avez besoin d'une preuve de destruction pour vos enregistrements, contactez le [Support Microsoft](/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
 > Cette fonctionnalité est basée sur les informations du [journal d’audit unifié](search-the-audit-log-in-security-and-compliance.md) et nécessite par conséquent que l’audit soit [activé et puisse faire l’objet d’une recherche](turn-audit-log-search-on-or-off.md) de sorte que les événements correspondants soient capturés.
@@ -144,4 +144,3 @@ Pour les destructions en attente, la plage horaire est basée sur la date d’ex
 Vous pouvez exporter les informations relatives aux éléments de l’une ou l’autre vue en tant que fichier .csv que vous pouvez ensuite trier et gérer à l’aide d’Excel :
 
 ![Option d’exportation pour destruction](../media/retention-export-option.png)
-

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Basculez manuellement les abonnements Microsoft 365 pour les entreprises en achetant un nouvel abonnement et en vous assurant que les deux abonnements sont répertoriés et actifs.
-ms.openlocfilehash: 3712f01502362e68d05e6a2eadfcac588f6092b7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b42ebd7edd379ffcb8b2b4967f10fd553c8834c4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647758"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916863"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Changer d’offre Microsoft 365 pour les entreprises manuellement
 
@@ -43,9 +43,9 @@ La meilleure façon de faire passer tous vos utilisateurs d’un plan à un autr
   
 - Si le **bouton Changer de plan** n’existe pas.
 
-- Si, lorsque vous sélectionnez le bouton Changer **de plan,** le plan que vous souhaitez n’est pas répertorié.
+- Si, lorsque vous sélectionnez le bouton **Changer de plan,** le plan que vous souhaitez n’est pas répertorié.
 
-- Si vous ne souhaitez pas basculer tous vos utilisateurs de la même manière. Certaines entreprises ont besoin de différents utilisateurs abonnés à différentes plans. Utilisez un commutateur manuel pour cela.
+- Si vous ne souhaitez pas changer tous vos utilisateurs de la même manière. Certaines entreprises ont besoin de différents utilisateurs abonnés à différentes plans. Utilisez un commutateur manuel pour cela.
 
 Pour continuer avec un commutateur manuel, lisez [Étape 2 : Acheter un nouvel abonnement](#step-2-buy-a-new-subscription) dans cette rubrique.
   
@@ -55,7 +55,7 @@ Pour continuer avec un commutateur manuel, lisez [Étape 2 : Acheter un nouvel a
   
 - OR -
   
- **Achetez un nouvel abonnement et des licences :** Suivez les étapes de la procédure d’achat d’un autre abonnement [Microsoft 365](../buy-another-subscription.md) pour les entreprises pour acheter un nouvel abonnement.
+ **Achetez un nouvel abonnement et des licences :** Suivez les étapes de la procédure d’achat d’un autre abonnement [Microsoft 365](../try-or-buy-microsoft-365.md) pour les entreprises pour acheter un nouvel abonnement.
   
 Veillez à acheter un abonnement pour la même organisation que les utilisateurs. Par exemple, vérifiez les adresses de messagerie des utilisateurs que vous souhaitez déplacer. Si leurs adresses de messagerie incluent @contoso.com, vous devez acheter un nouvel abonnement pour contoso.com. Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
   
@@ -65,19 +65,19 @@ Veillez à acheter un abonnement pour la même organisation que les utilisateurs
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 ::: moniker-end
 
@@ -111,19 +111,19 @@ Les licences de l’abonnement actuel seront supprimées ultérieurement . Vous 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ Les licences de l’abonnement actuel seront supprimées ultérieurement . Vous 
 4. Dans le **volet Licences de** produits, basculez vers la **position** Sur pour la licence que vous souhaitez attribuer à cet utilisateur. Par défaut, tous les services associés à cette licence sont automatiquement attribués à l'utilisateur.
 
     > [!TIP]
-    > Pour limiter les services disponibles pour l’utilisateur, basculez les boutons bascule vers la **position** d’arrêt pour les services que vous souhaitez supprimer pour cet utilisateur. Par exemple, si vous souhaitez que l’utilisateur puisse accéder à tous les services disponibles à l’exception de Skype Entreprise Online, vous pouvez basculer le bouton bascule du service Skype Entreprise Online vers la **position** Hors service.
+    > Pour limiter les services à la disposition de l’utilisateur, basculez les boutons bascule vers la **position** d’arrêt pour les services que vous souhaitez supprimer pour cet utilisateur. Par exemple, si vous souhaitez que l’utilisateur puisse accéder à tous les services disponibles à l’exception de Skype Entreprise Online, vous pouvez basculer le bouton bascule du service Skype Entreprise Online vers la **position** De.
   
 5. Basculez vers la **position** d’arrêt pour les licences dont cet utilisateur n’a plus besoin.
 
@@ -150,13 +150,13 @@ Les licences de l’abonnement actuel seront supprimées ultérieurement . Vous 
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -169,7 +169,7 @@ Les licences de l’abonnement actuel seront supprimées ultérieurement . Vous 
 5. Basculez vers la position **Sur** pour les produits que vous souhaitez affecter à ces utilisateurs.
 
     > [!TIP]
-    > - Pour limiter les services disponibles pour l’utilisateur, basculez vers la **position** d’arrêt pour les services que vous souhaitez supprimer pour cet utilisateur. Par exemple, si vous souhaitez que l’utilisateur puisse accéder à tous les services disponibles à l’exception de Skype Entreprise Online, vous pouvez basculer le bouton bascule du service Skype Entreprise Online vers la **position** Hors service.
+    > - Pour limiter les services disponibles pour l’utilisateur, basculez vers la **position** d’arrêt pour les services que vous souhaitez supprimer pour cet utilisateur. Par exemple, si vous souhaitez que l’utilisateur puisse accéder à tous les services disponibles à l’exception de Skype Entreprise Online, vous pouvez basculer le bouton bascule du service Skype Entreprise Online vers la **position** De.
     > - Les attributions de licences précédentes sont alors supprimées pour les utilisateurs sélectionnés.
   
 6. En bas du volet **Remplacer les produits existants**, sélectionnez **Remplacer** \> **Fermer**.
@@ -178,7 +178,7 @@ Les licences de l’abonnement actuel seront supprimées ultérieurement . Vous 
 
 Si vous avez déplacé tous les utilisateurs d’un abonnement vers un autre et que vous n’avez plus besoin de l’abonnement d’origine, vous pouvez [annuler l’abonnement.](cancel-your-subscription.md)
   
-Si vous avez déplacé uniquement certains utilisateurs vers un autre abonnement, supprimez les [licences](../licenses/remove-licenses-from-subscription.md) dont vous n’avez plus besoin.
+Si vous avez déplacé uniquement certains utilisateurs vers un autre abonnement, supprimez les [licences](../licenses/buy-licenses.md) dont vous n’avez plus besoin.
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Appeler le support technique pour changer d'offre
 

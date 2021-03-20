@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez les rôles d’utilisateur dans Rubriques.
-ms.openlocfilehash: d5b57e768a1de8bc0447492067371630b2d045f6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453939"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917355"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Rôles des rubriques de Microsoft Viva 
 
@@ -34,7 +34,7 @@ Lorsque vous utilisez Topics dans votre environnement Microsoft 365, vos utilisa
 Les visiteurs des rubriques sont les utilisateurs de votre organisation qui peuvent afficher les rubriques mises en surbrillez sur leur site moderne SharePoint, Recherche Microsoft via SharePoint et Office.com et le centre de rubriques. Ils peuvent afficher plus de détails sur une rubrique sur la page de rubrique. 
 
 Pour que les points forts des rubriques et leurs pages de rubrique soient visibles par une visionneuse de rubriques, l’utilisateur doit :
--   Leur administrateur Microsoft 365 se voit attribuer une [licence Topics.](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)
+-   Leur administrateur Microsoft 365 se voit attribuer une [licence Topics.](./set-up-topic-experiences.md#assign-licenses)
 -   Être autorisé à avoir une visibilité sur les rubriques. Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques dans le Centre d’administration Microsoft 365.
 
 
@@ -48,8 +48,8 @@ Un collaborateur de rubrique peut également créer et publier une nouvelle rubr
 
 Pour créer et modifier une rubrique, l’utilisateur doit :
 
--   Leur administrateur Microsoft 365 se voit attribuer une [licence Topics.](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)
--   [Des autorisations doivent être attribuées pour créer et modifier des rubriques.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques dans le Centre d’administration Microsoft 365.
+-   Leur administrateur Microsoft 365 se voit attribuer une [licence Topics.](./set-up-topic-experiences.md#assign-licenses)
+-   [Des autorisations doivent être attribuées pour créer et modifier des rubriques.](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques dans le Centre d’administration Microsoft 365.
 
 ## <a name="knowledge-managers"></a>Gestionnaires de connaissances
 
@@ -63,8 +63,8 @@ Dans la page Gérer les rubriques, les gestionnaires de connaissances peuvent ef
 En outre, un gestionnaire de connaissances peut modifier des rubriques existantes ou en créer de nouvelles.
 
 Pour gérer les rubriques, l’utilisateur doit :
--   Leur administrateur Microsoft 365 se voit attribuer une [licence Topics.](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)
--   [Des autorisations doivent être attribuées pour gérer les rubriques.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques dans le Centre d’administration Microsoft 365.
+-   Leur administrateur Microsoft 365 se voit attribuer une [licence Topics.](./set-up-topic-experiences.md#assign-licenses)
+-   [Des autorisations doivent être attribuées pour gérer les rubriques.](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques dans le Centre d’administration Microsoft 365.
 
 Les utilisateurs qui ont une bonne connaissance globale de votre entreprise peuvent être de bons candidats pour le rôle de gestionnaire de connaissances. Ces personnes peuvent non seulement avoir la connaissance de savoir si les rubriques sont valides ou non, mais peuvent également connaître les personnes au sein de l’entreprise qui sont liées à ces rubriques.
 
@@ -85,4 +85,3 @@ Les gestionnaires de connaissances doivent être en mesure de se coordonner avec
 
 
 ## <a name="see-also"></a>Voir aussi
-

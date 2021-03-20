@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez l’interface de gestion web dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ab834d14673370a39e148aefa568591ff4c50b8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286956"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916993"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centre d’administration Exchange dans EOP autonome
 
@@ -33,7 +33,7 @@ ms.locfileid: "50286956"
 
 Le Centre d’administration Exchange (CAE) est une console de gestion web pour Exchange Online Protection (EOP) autonome.
 
-Vous recherchez la version Exchange Online de cette rubrique ? Consultez la rubrique [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+Vous recherchez la version Exchange Online de cette rubrique ? Consultez la rubrique [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
 ## <a name="open-the-eac-in-eop"></a>Ouvrir le CAE dans EOP
 
@@ -67,7 +67,7 @@ Il s'agit du premier niveau de navigation pour la plupart des tâches que vous e
 
 - **Autorisations :** c’est ici que vous allez gérer les rôles d’administrateur.
 
-- **Gestion de la** conformité : c’est ici que se trouvent le rapport du groupe de rôles d’administrateur et le rapport du journal d’audit de l’administrateur.
+- **Gestion de la** conformité : il s’agit de l’endroit où se trouvent le rapport du groupe de rôles d’administrateur et le rapport du journal d’audit de l’administrateur.
 
 - **Protection**: il s’agit de l’endroit où vous pouvez gérer les stratégies anti-programme malveillant, la stratégie de filtrage des connexions par défaut et DKIM.
 
@@ -76,7 +76,7 @@ Il s'agit du premier niveau de navigation pour la plupart des tâches que vous e
 
 - **Flux de** messagerie : il s’agit de l’endroit où vous allez gérer les règles de flux de messagerie (également appelées règles de transport), les domaines acceptés et les connecteurs, ainsi que l’endroit où vous pouvez exécuter le suivi des messages.
 
-- **Hybride**: il s’agit de l’endroit où vous pouvez exécuter l’Assistant [Configuration](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)hybride et où vous pouvez installer le [module Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).
+- **Hybride**: il s’agit de l’endroit où vous pouvez exécuter l’Assistant [Configuration](/Exchange/hybrid-configuration-wizard)hybride et où vous pouvez installer le [module Exchange Online PowerShell](/powershell/exchange/mfa-connect-to-exchange-online-powershell).
 
 ### <a name="tabs"></a>Onglets
 

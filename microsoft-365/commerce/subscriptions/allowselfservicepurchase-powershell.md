@@ -10,18 +10,21 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: None
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez comment utiliser l’cmdlet AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 9fb5593855f9523198a3d70548e444a831e82c80
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653712"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918241"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 
@@ -53,7 +56,7 @@ Install-Module -Name MSCommerce
 
 ## <a name="import-mscommerce-into-the-powershell-session"></a>Importer MSCommerce dans la session PowerShell
 
-Après avoir installé le module sur votre appareil Windows 10, vous l’importez dans chaque session PowerShell que vous démarrez. Pour l’importer dans une session PowerShell, exécutez la commande suivante :
+Après avoir installé le module sur votre appareil Windows 10, importez-le dans chaque session PowerShell que vous démarrez. Pour l’importer dans une session PowerShell, exécutez la commande suivante :
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -67,7 +70,7 @@ Pour vous connecter au module PowerShell avec vos informations d’identificatio
 Connect-MSCommerce
 ```
 
-Cette commande connecte la session PowerShell active à un client Azure Active Directory. La commande vous invite à entrer un nom d’utilisateur et un mot de passe pour le client à qui vous souhaitez vous connecter. Si l’authentification multifacteur est activée pour vos informations d’identification, vous utilisez l’option interactive pour vous connecter.
+Cette commande connecte la session PowerShell active à un client Azure Active Directory. La commande vous invite à entrer un nom d’utilisateur et un mot de passe pour le client à qui vous voulez vous connecter. Si l’authentification multifacteur est activée pour vos informations d’identification, vous utilisez l’option interactive pour vous connecter.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Afficher les détails de AllowSelfServicePurchase
 
@@ -91,6 +94,8 @@ Le tableau suivant répertorie les produits disponibles et leur **ProductId**.
 |-----------------------------|--------------|
 | Power Apps par utilisateur | CFQ7TTC0KP0P |
 | Power Automate par utilisateur | CFQ7TTC0KP0N |
+| Power Automate RPA | CFQ7TTC0KXG6  |
+| Power BI Premium (autonome) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
 | Plan de projet 1 | CFQ7TTC0KXND |
 | Plan de projet 3 | CFQ7TTC0KXNC |
@@ -136,13 +141,13 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 Vous voyez le message d’erreur suivant :
 
-> HandleError : Échec de récupération de la stratégie avec PolicyId « AllowSelfServicePurchase » et ErrorMessage : la connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors d’un envoi.
+> HandleError : Échec de la récupération de la stratégie avec PolicyId « AllowSelfServicePurchase » et ErrorMessage - La connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors d’une envoi.
 
 Cela peut être dû à une version antérieure de TLS (Transport Layer Security). Pour connecter ce service, vous devez utiliser TLS 1.2 ou supérieur
 
 ### <a name="solution"></a>Solution
 
-Mise à niveau vers TLS 1.2 : [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+Mise à niveau vers TLS 1.2 : [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

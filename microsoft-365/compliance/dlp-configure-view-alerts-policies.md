@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment définir et gérer des alertes pour les stratégies DLP.
-ms.openlocfilehash: 7bc9d9b59c0424792f995be42591548b758c99ec
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766419"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917860"
 ---
 # <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>Configurer et afficher les alertes pour les polices DLP (aperçu)
 
@@ -54,9 +54,9 @@ Avant de commencer, assurez-vous que vous avez les conditions préalables néces
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Licences pour le tableau de bord de gestion des alertes DLP
 
-Tous les locataires éligibles pour Office 365 DLP peuvent accéder au nouveau tableau de bord de gestion des alertes DLP. Pour commencer, vous devez être éligible à la DLP Office 365 pour Exchange Online, SharePoint Online et OneDrive Entreprise. Pour plus d’informations sur les conditions de licence requises pour office 365 DLP, voir [quelles licences](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)fournissent les droits d’un utilisateur pour bénéficier du service ? .
+Tous les locataires éligibles pour Office 365 DLP peuvent accéder au nouveau tableau de bord de gestion des alertes DLP. Pour commencer, vous devez être éligible à la DLP Office 365 pour Exchange Online, SharePoint Online et OneDrive Entreprise. Pour plus d’informations sur les conditions de licence requises pour office 365 DLP, voir [quelles licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)fournissent les droits d’un utilisateur pour bénéficier du service ? .
 
-Les clients qui participent à la prévisualisation publique [DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide) du point de terminaison ou qui sont éligibles pour [teams DLP](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie DLP Teams dans le tableau de bord de gestion des alertes DLP.
+Les clients qui participent à la prévisualisation publique [DLP](./endpoint-dlp-learn-about.md?view=o365-worldwide) du point de terminaison ou qui sont éligibles pour [teams DLP](./dlp-microsoft-teams.md?view=o365-worldwide) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie DLP Teams dans le tableau de bord de gestion des alertes DLP.
 
 ### <a name="licensing-for-alert-configuration-options"></a>Gestion des licences pour les options de configuration des alertes
 
@@ -129,7 +129,7 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     |                   | URL du site                      | URL complète du site SharePoint ou OneDrive                                | Événements SharePoint et OneDrive           |
     |                   | Fichier créé                  | Heure de création du fichier                                                      | Événements SharePoint et OneDrive           |
     |                   | Fichier de la dernière modification            | Heure de la dernière modification du fichier                                  | Événements SharePoint et OneDrive           |
-    |                   | La taille des fichiers                     | Taille du fichier                                                           | Événements SharePoint et OneDrive           |
+    |                   | Taille des fichiers                     | Taille du fichier                                                           | Événements SharePoint et OneDrive           |
     |                   | Propriétaire du fichier                    | Propriétaire du fichier                                                          | Événements SharePoint et OneDrive           |
     |*Détails de la stratégie*||
     |     | Stratégie DLP en correspondance            | Nom de la stratégie DLP qui a été correspondance                                    | Tous les événements                               |
@@ -141,7 +141,7 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     
 1.  Sélectionnez **l’onglet Types d’informations** sensibles pour afficher les détails sur les types d’informations sensibles détectés dans le contenu. Les détails incluent la confiance et le nombre.
 
-2.  Après avoir examiné l’alerte, choisissez **Gérer** l’alerte pour modifier l’état (**Actif** **,** En cours d’examen, Rejeté ou **Résolu**). Vous pouvez également ajouter des commentaires et affecter l’alerte à une personne de votre organisation.
+2.  Après avoir examiné l’alerte, choisissez **Gérer** l’alerte pour modifier l’état (**Actif,** En cours d’examen, Rejeté ou **Résolu**).  Vous pouvez également ajouter des commentaires et affecter l’alerte à une personne de votre organisation.
 
     -   Pour consulter l’historique de la gestion des flux de travail, sélectionnez **Journal de gestion.**
     -   Une fois que vous avez pris l’action requise pour l’alerte, définissez l’état de l’alerte **sur Résolu.**

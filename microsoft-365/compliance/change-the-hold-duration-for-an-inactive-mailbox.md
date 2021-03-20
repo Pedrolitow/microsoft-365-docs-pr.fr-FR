@@ -20,19 +20,19 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Une fois qu’une boîte aux lettres Office 365 est inactive, modifiez la durée de la conservation ou de la stratégie de rétention Office 365 affectée à la boîte aux lettres inactive.
-ms.openlocfilehash: ec8a4cac7d2ee8e40bd791bd531556d1151c1ad1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 49d133c64763cee12cb26e27d372a16ba4ad7e94
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421633"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918200"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Modifier la durée de la conservation pour une boîte aux lettres inactive
 
 Une boîte aux lettres inactive est utilisée pour conserver l'e-mail d'un ancien employé une fois qu'il quitte votre organisation. Une boîte aux lettres devient inactive lorsqu’une conservation pour litige, une conservation In-Place, une stratégie de rétention Microsoft 365 ou une conservation associée à un cas eDiscovery est placée sur la boîte aux lettres et que le compte d’utilisateur correspondant est supprimé. Le contenu d'une boîte aux lettres inactive est conservé pendant la durée de la conservation appliquée à la boîte aux lettres avant qu'elle ne soit définie comme inactive. La durée de la conservation définit la durée de conservation des éléments dans le dossier Éléments récupérables. Lorsque la durée de conservation expire pour un élément du dossier Éléments récupérables, l'élément est supprimé définitivement (purgé) de la boîte aux lettres inactive. Une fois qu’une boîte aux lettres est inactive, vous pouvez modifier la durée de la conservation ou de la stratégie de rétention Microsoft 365 affectée à la boîte aux lettres inactive.
   
 > [!IMPORTANT]
-> À mesure que nous continuons d’investir de différentes manières pour conserver le contenu des boîtes aux lettres, nous annonceons le retrait des conservations In-Place dans le Centre d’administration Exchange. Cela signifie que vous devez utiliser des conservations pour litige et des stratégies de rétention Microsoft 365 pour créer une boîte aux lettres inactive. À compter du 1er avril 2020, vous ne pourrez pas créer de nouvelles In-Place dans Exchange Online. Toutefois, vous serez toujours en mesure de modifier la durée d’une In-Place placée sur une boîte aux lettres inactive. Toutefois, à compter du 1er juillet 2020, vous ne pourrez pas modifier la durée de la durée de la période de attente. Vous ne pourrez supprimer une boîte aux lettres inactive qu’en supprimant la In-Place de la boîte aux lettres. Les boîtes aux lettres inactives existantes qui sont en conservation In-Place sont conservées jusqu’à ce que la conservation soit supprimée. Pour plus d’informations sur le retrait des In-Place, voir [Retrait des outils eDiscovery hérités.](legacy-ediscovery-retirement.md)
+> À mesure que nous continuons d’investir de différentes façons pour conserver le contenu des boîtes aux lettres, nous an anvions le retrait des conservations In-Place dans le Centre d’administration Exchange. Cela signifie que vous devez utiliser des conservations pour litige et des stratégies de rétention Microsoft 365 pour créer une boîte aux lettres inactive. À compter du 1er avril 2020, vous ne pourrez pas créer de nouvelles In-Place dans Exchange Online. Toutefois, vous pourrez toujours modifier la durée d’une In-Place placée sur une boîte aux lettres inactive. Toutefois, à compter du 1er juillet 2020, vous ne pourrez pas modifier la durée de la durée de la période de attente. Vous ne pourrez supprimer une boîte aux lettres inactive qu’en supprimant la In-Place de la boîte aux lettres. Les boîtes aux lettres inactives existantes qui sont en conservation In-Place sont conservées jusqu’à ce que la conservation soit supprimée. Pour plus d’informations sur le retrait des In-Place, voir [Retrait des outils eDiscovery hérités.](legacy-ediscovery-retirement.md)
   
 ## <a name="connect-to-powershell"></a>Se connecter à PowerShell
 
@@ -40,11 +40,11 @@ Une boîte aux lettres inactive est utilisée pour conserver l'e-mail d'un ancie
     
 - Pour vous connecter à Exchange Online PowerShell ou au Centre de sécurité & conformité PowerShell, consultez l’une des rubriques suivantes :
     
-  - [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+  - [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
-  - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+  - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell)
     
-- Les attentes associées aux cas eDiscovery sont des attentes infinies, ce qui signifie qu’il n’existe aucune durée de la durée de la période de attente qui peut être modifiée. Les éléments sont mis en conservation indéfiniment ou jusqu'à ce que la conservation et la boîte aux lettres inactive soient supprimées.
+- Les attentes associées aux cas eDiscovery sont des attentes infinies, ce qui signifie qu’il n’existe aucune durée de la période de attente qui peut être modifiée. Les éléments sont mis en conservation indéfiniment ou jusqu'à ce que la conservation et la boîte aux lettres inactive soient supprimées.
     
 - Pour plus d’informations sur les boîtes aux lettres inactives, voir Boîtes aux lettres [inactives dans Microsoft 365.](inactive-mailboxes-in-office-365.md)
     

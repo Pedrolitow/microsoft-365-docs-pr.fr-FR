@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Le scanneur local de protection contre la perte de données Microsoft 365 en local étend la surveillance des activités sur fichier et des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint. Le scanneur Azure Information Protection (AIP) analyse, puis protège les fichiers.
-ms.openlocfilehash: 996de5ea640a16ef2a250830d7167aa316b54a21
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417358"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917810"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>En savoir plus sur le scanneur local de protection contre la perte de données Microsoft 365 (préversion)
 
@@ -36,12 +36,12 @@ Le **scanneur local de protection contre la perte de données** analyse les donn
 
 Le scanneur local de protection contre la perte de données s’appuie sur une implémentation complète du scanneur Azure Information Protection (AIP) pour surveiller, étiqueter, puis protéger les éléments sensibles. Si vous n’êtes pas familiarisé avec le scanneur AIP, nous vous recommandons vivement de vous y familiariser. Veuillez consulter les articles suivants :
 
-- [Qu'est-ce qu'Azure Information Protection ?](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
-- [Qu’est-ce que le scanneur d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)
-- [Configuration requise pour l’installation et le déploiement du scanneur d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-prereqs)
-- [Tutoriel : Installation du scanneur d’étiquetage unifié Azure Information Protection (AIP)](https://docs.microsoft.com/azure/information-protection/tutorial-install-scanner)
-- [Configurer et installer le scanner d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)
-- [Client d’étiquetage unifié Azure Information Protection : historique des versions et stratégie de support](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
+- [Qu'est-ce qu'Azure Information Protection ?](/azure/information-protection/what-is-information-protection)
+- [Qu’est-ce que le scanneur d’étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner)
+- [Configuration requise pour l’installation et le déploiement du scanneur d’étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner-prereqs)
+- [Tutoriel : Installation du scanneur d’étiquetage unifié Azure Information Protection (AIP)](/azure/information-protection/tutorial-install-scanner)
+- [Configurer et installer le scanner d’étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)
+- [Client d’étiquetage unifié Azure Information Protection : historique des versions et stratégie de support](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 
 ## <a name="dlp-on-premises-scanner-actions"></a>Actions du scanneur local de protection contre la perte de données
 
@@ -56,7 +56,7 @@ Lorsqu’un fichier détecté présente un risque potentiel en cas de fuite ou d
 
 |Opération |Description  |
 |---------|---------|
-|**Empêcher ces personnes d’accéder à un fichier stocké dans un scanneur local : Tout le monde** | Cette action bloque l’accès à tous les comptes à l’exception du propriétaire du contenu, du dernier compte qui a modifié l’élément et de l’administrateur. Pour ce faire, le programme supprime tous les comptes des autorisations NTFS/SharePoint au niveau du fichier, à l’exception du propriétaire du fichier, du propriétaire du référentiel (défini dans le paramètre de [définition du propriétaire du référentiel](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) dans le travail d’analyse de contenu), du dernier modificateur (peut être identifié dans SharePoint uniquement) et de l’administrateur. Le compte du scanneur bénéficie également des droits FC sur le fichier.|
+|**Empêcher ces personnes d’accéder à un fichier stocké dans un scanneur local : Tout le monde** | Cette action bloque l’accès à tous les comptes à l’exception du propriétaire du contenu, du dernier compte qui a modifié l’élément et de l’administrateur. Pour ce faire, le programme supprime tous les comptes des autorisations NTFS/SharePoint au niveau du fichier, à l’exception du propriétaire du fichier, du propriétaire du référentiel (défini dans le paramètre de [définition du propriétaire du référentiel](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) dans le travail d’analyse de contenu), du dernier modificateur (peut être identifié dans SharePoint uniquement) et de l’administrateur. Le compte du scanneur bénéficie également des droits FC sur le fichier.|
 |**Empêcher ces personnes d’accéder à un fichier stocké dans un scanneur local : bloquer l’accès (public) à l’échelle de l’organisation**    |Cette action supprime les SID **_Tout le monde_*_, _*_NT AUTHORITY\utilisateurs identifiés_*_ et _*_Utilisateurs du domaine_** de la liste de contrôle d’accès au fichier (ACL). Seuls les utilisateurs et les groupes qui ont reçu explicitement les droits d’accès au fichier ou au dossier parent pourront accéder au fichier.|
 |**Définir des autorisations sur le fichier**|Cette action force le fichier à hériter des autorisations de son dossier parent. Par défaut, cette action n’est applicable que si les autorisations du dossier parent sont plus restrictives que celles déjà appliquées au fichier. Par exemple, si vous avez défini la liste de contrôle d'accès du fichier pour autoriser uniquement des **_utilisateurs spécifiques_*_ et que vous avez configuré le dossier parent pour autoriser le groupe _*_Utilisateurs du domaine_*_, le fichier n’héritera pas des autorisations du dossier parent. Vous pouvez remplacer ce comportement en sélectionnant l’option _* Inherit even if parent permissions are less restrictive** (Hériter, même si les autorisations parent sont moins restrictives).|
 |**Supprimer le fichier d’un emplacement incorrect**|Cette action remplace le fichier d’origine par un fichier stub avec l’extension .txt, puis place une copie du fichier d’origine dans un dossier de mise en quarantaine. 

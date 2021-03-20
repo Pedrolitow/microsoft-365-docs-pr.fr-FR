@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: Utilisez PowerShell pour Microsoft 365 pour gérer des stratégies Skype Entreprise Online, des stratégies par utilisateur et des paramètres de réunion.
-ms.openlocfilehash: 1992edfb6d1c141c7ed4db22064960873b768865
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 4477dadf0ea38a81ac0ae282da3f74fc12f3406f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514955"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916679"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Gestion de Skype Entreprise Online avec PowerShell
 
@@ -32,7 +32,7 @@ Les administrateurs Skype Entreprise Online sont responsables de la gestion des 
   > [!Note]
    > Le connecteur Skype Entreprise Online fait actuellement partie du dernier module PowerShell Teams. Si vous utilisez la version publique la plus récente de PowerShell Teams, vous n’avez pas besoin d’installer le connecteur Skype Entreprise Online.
    
-Installer le [module PowerShell Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+Installer le [module PowerShell Teams](/microsoftteams/teams-powershell-install).
 
 
 ## <a name="connect-using-admin-credentials"></a>Se connecter à l’aide des informations d’identification d’administrateur
@@ -75,4 +75,4 @@ Pour plus d’informations, consultez :
   
 [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 
-[Références sur l’applet de commande Skype Entreprise PowerShell](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
+[Références sur l’applet de commande Skype Entreprise PowerShell](/powershell/module/skype/?view=skype-ps)

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Présentation de Rubriques Viva.
-ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453968"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917379"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
@@ -66,7 +66,7 @@ Lorsqu'une rubrique est identifiée et que l'IA détermine qu'elle contient suff
 
 Vos administrateurs d’informations peuvent choisir d’analyser tous les sites SharePoint dans votre client pour les sujets ou simplement en sélectionner certains.
 
-Consultez [Découverte et traitement de rubrique](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Consultez [Découverte et traitement de rubrique](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Rôles
 
@@ -108,7 +108,7 @@ Les contrôles d’administration du Centre d’administration Microsoft 365 vo
 - Contrôler les utilisateurs qui peuvent créer et modifier des rubriques.
 - Contrôler les utilisateurs qui peuvent consulter les rubriques.
 
-Pour plus d’informations sur les contrôles d’administrateur, consultez [Attribuer des autorisations d’utilisateur](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions), [Gérer la visibilité d’une rubrique](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)et [Gérer la découverte de rubriques](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery).
+Pour plus d’informations sur les contrôles d’administrateur, consultez [Attribuer des autorisations d’utilisateur](./plan-topic-experiences.md#user-permissions), [Gérer la visibilité d’une rubrique](./topic-experiences-knowledge-rules.md)et [Gérer la découverte de rubriques](./topic-experiences-discovery.md).
 
 ## <a name="topic-curation--feedback"></a>Traitement des rubriques et commentaires
 
@@ -120,8 +120,7 @@ Les utilisateurs que vous autorisez à consulter les rubriques dans le cadre de 
 
 En outre, les utilisateurs ayant les autorisations appropriées peuvent identifier les éléments, tels que les conversations Yammer, qui sont pertinents pour un sujet, et les ajouter à une rubrique spécifique. 
 
-Consultez [Découverte et traitement de rubrique](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Consultez [Découverte et traitement de rubrique](./topic-experiences-discovery-curation.md)
 
 
 ## <a name="see-also"></a>Voir aussi
-

@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment fournir des commentaires à un classifieur entraisable dans l’Explorateur de contenu.
-ms.openlocfilehash: fabfe8e4df377c25012b358960d7f7ff7ff994bc
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423261"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918100"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Comment reformer un classificateur en explorateur de contenu
 
 Un classifieur Entraéable Microsoft 365 est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Une fois formé, vous pouvez l’utiliser pour identifier l’élément pour l’application des étiquettes de confidentialité Office, des stratégies de conformité des communications et des stratégies d’étiquette de rétention.
 
-Cet article vous montre comment améliorer les performances des classifieurs entraçables personnalisés et de certains classifieurs pré-formés en leur fournissant des commentaires supplémentaires.
+Cet article vous montre comment améliorer les performances des classifieurs entraisables personnalisés et de certains classifieurs pré-formés en leur fournissant des commentaires supplémentaires.
 
 Pour en savoir plus sur les différents types de classifieurs, voir En savoir plus sur les [classifieurs entraisables.](classifier-learn-about.md)
 
@@ -67,7 +67,7 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 > [!IMPORTANT]
 > L’apparition des éléments agrégés sous l’en-tête classifieurs entraçables peut prendre jusqu’à huit jours.
 
-3. Choisissez le classifieur entraisable que vous avez utilisé dans votre stratégie d’étiquette de rétention à appliquer automatiquement. Il s’agit du classifieur entraçable sur qui vous allez nous faire part de vos commentaires.
+3. Choisissez le classifieur entra vous avez utilisé dans votre stratégie d’étiquette de rétention à appliquer automatiquement. Il s’agit du classifieur entraçable sur qui vous allez nous faire part de vos commentaires.
 
 > [!NOTE]
 > Si un élément possède une entrée dans la **colonne** Étiquette de rétention, cela signifie que l’élément a été classé en tant que `match` .  Si un élément n’a pas  d’entrée dans la colonne Étiquette de rétention, cela signifie qu’il a été classé en tant que `close match` . Vous pouvez améliorer le plus la précision du classificateur en fournissant des commentaires sur `close match` les éléments. 
@@ -85,7 +85,7 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 > [!IMPORTANT]
 > Ces informations sont ensuite données au classifieur de votre client, elles ne sont **pas revenir à Microsoft.**
 
-9. Ouvrez **les classifieurs Entraisables.**
+9. Ouvrez **les classifieurs Avec formation.**
 10. Le classificateur qui a été utilisé dans votre stratégie de conformité des communications s’affiche sous **l’en-tête Nouvelle** formation.
 
 ![classifieur en état de formation](../media/classifier-retraining.png)
@@ -94,22 +94,22 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 
 ![Vue d’ensemble des résultats de la formation du classificateur](../media/classifier-retraining-overview.png)
 
-12. Examinez l’action recommandée, ainsi que les comparaisons de prédictions des versions du classifieur actuellement publiées et retentées.
+12. Examinez l’action recommandée et les comparaisons de prédictions des versions réétrainées et actuellement publiées du classificateur.
 13. If you satisfied with the results of the retraining, choose **Re-publish**.
 14. Si vous n’êtes pas satisfait des résultats de la nouvelle formation, vous pouvez choisir de fournir des commentaires supplémentaires au classificateur dans l’interface de conformité des communications et de démarrer un autre cycle de formation ou de ne rien faire, auquel cas la version actuellement publiée du classificateur continuera d’être utilisée. 
 
 ## <a name="details-on-republishing-recommendations"></a>Détails sur la republier des recommandations
 
-Voici quelques informations sur la façon dont nous formulerons la recommandation pour publier à nouveau un classifieur retrained ou suggérer une nouvelle formation. Cela nécessite une compréhension plus approfondie du fonctionnement des classifieurs entraisables.
+Voici quelques informations sur la façon dont nous vous suggérons de publier à nouveau un classifieur retrained ou de suggérer une nouvelle formation. Cela nécessite une compréhension plus approfondie du fonctionnement des classifieurs entraisables.
 
 Après une nouvelle formation, nous évaluons les performances du classificateur à la fois sur les éléments avec des commentaires, ainsi que sur tous les éléments utilisés à l’origine pour former le classificateur. 
 
 - Pour les modèles intégrés, les éléments utilisés pour former le classifieur sont les éléments utilisés par Microsoft pour créer le modèle.
 - Pour les modèles personnalisés, les éléments utilisés dans la formation d’origine du classifieur sont issus des sites que vous avez ajoutés pour le test et la révision.
 
-Nous comparons les nombres de performances sur les deux ensembles d’éléments pour le classifieur réécrit et publié afin de fournir une recommandation quant à l’amélioration de la republier. 
+Nous comparons les nombres de performances sur les deux ensembles d’éléments pour le classifieur réécrit et publié afin de fournir une recommandation sur l’amélioration de la publication. 
 
 ## <a name="see-also"></a>Voir aussi
 
 - [En savoir plus sur les classifieurs avec capacité d’apprentissage](classifier-learn-about.md)
-- [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

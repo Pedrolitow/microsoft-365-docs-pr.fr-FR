@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Découvrez comment gérer ExpressRoute pour Office 365, y compris les zones communes à configurer, telles que le filtrage des préfixes, la sécurité et la conformité.
-ms.openlocfilehash: 5b55150b91b68954cb7b701afb7cf46ab9b951dd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e8de0763df7d592bc41802b1ead48df06891e6dc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690219"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916667"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestion d’ExpressRoute pour la connectivité d’Office 365
 
@@ -35,11 +35,11 @@ ExpressRoute pour Office 365 offre un autre chemin de routage pour atteindre de 
   
 ## <a name="prefix-filtering"></a>Filtrage des préfixes
 
-Microsoft recommande aux clients d’accepter tous les itinéraires BGP comme annoncé par Microsoft, les itinéraires fournis font l’objet d’un processus rigoureux de révision et de validation, supprimant ainsi les avantages d’un examen approfondi. ExpressRoute offre en natif les contrôles recommandés tels que la propriété, l’intégrité et l’échelle du préfixe IP, sans filtrage des itinéraires entrants côté client.
+Microsoft recommande aux clients d’accepter tous les itinéraires BGP publiés par Microsoft. Les itinéraires fournis font l’objet d’un processus rigoureux de révision et de validation, supprimant ainsi les avantages d’un examen approfondi. ExpressRoute offre en natif les contrôles recommandés tels que la propriété, l’intégrité et l’échelle du préfixe IP, sans filtrage des itinéraires entrants côté client.
   
 Si vous avez besoin d’une validation supplémentaire de la propriété de l’itinéraire entre l’homologue public ExpressRoute, vous pouvez vérifier les itinéraires publiés par rapport à la liste de tous les préfixes IP IPv4 et IPv6 qui représentent les [plages d’adresses IP publiques](https://www.microsoft.com/download/details.aspx?id=53602)de Microsoft. Ces plages couvrent l’espace d’adressace Microsoft complet et changent rarement, fournissant un ensemble fiable de plages à filtrer, ce qui fournit également une protection supplémentaire aux clients qui sont préoccupés par la fuite d’itinéraires non-Microsoft dans leur environnement. En cas de modification, elle sera réalisée le 1er du mois et le numéro de version de la section **Détails** de la page change chaque fois que le fichier est mis à jour.
   
-Il existe plusieurs raisons d’éviter l’utilisation des URL et des [plages d’adresses IP Office 365](https://aka.ms/o365endpoints) pour générer des listes de filtres de préfixes. Y compris les suivants :
+Il existe plusieurs raisons d’éviter l’utilisation des URL et des [plages d’adresses IP Office 365](./urls-and-ip-address-ranges.md) pour générer des listes de filtres de préfixes. Y compris les suivants :
   
 - Les préfixes IP Office 365 subissent régulièrement de nombreuses modifications.
 
@@ -49,7 +49,7 @@ Il existe plusieurs raisons d’éviter l’utilisation des URL et des [plages d
 
 |**Option**|**Complexité**|**Contrôle des changements**|
 |:-----|:-----|:-----|
-|Accepter tous les itinéraires Microsoft  <br/> |**Faible :** Le client s’appuie sur les contrôles Microsoft pour s’assurer que tous les itinéraires sont correctement propriétaire.  <br/> |Aucune  <br/> |
+|Accepter tous les itinéraires Microsoft  <br/> |**Faible :** Le client s’appuie sur les contrôles Microsoft pour s’assurer que tous les itinéraires sont correctement propriétaire.  <br/> |Aucun  <br/> |
 |Filtrer les supernets de Microsoft  <br/> |**Moyen :** Le client implémente des listes récapitulées de filtres de préfixes pour autoriser uniquement les itinéraires dont Microsoft est propriétaire.  <br/> |Les clients doivent s’assurer que les mises à jour peu fréquentes sont reflétées dans les filtres d’itinéraire.  <br/> |
 |Filtrer les plages d’adresses IP Office 365  <br/> [!CAUTION] Not-Recommended |**Élevé :** Le client filtre les itinéraires en fonction des préfixes IP Office 365 définis.  <br/> |Les clients doivent implémenter un processus de gestion des changements robuste pour les mises à jour mensuelles.  <br/> [!CAUTION] Cette solution nécessite des modifications importantes en cours. Les modifications non implémentées dans le temps entraîneront probablement une panne du service.   |
 
@@ -59,20 +59,20 @@ Quelle que soit la façon dont vous gérez les publicités d’itinéraire BGP p
   
 ### <a name="security"></a>Sécurité
 
-Microsoft vous recommande de conserver vos propres contrôles de périmètre de réseau et de sécurité pour les connexions vers et à partir d’ExpressRoute public et de l’homologue Microsoft, qui inclut les connexions vers et depuis les services Office 365. Des contrôles de sécurité doivent être en place pour les demandes réseau qui sont sortantes de votre réseau vers le réseau de Microsoft, ainsi que pour les demandes entrantes entre le réseau de Microsoft et votre réseau.
+Microsoft vous recommande de maintenir vos propres contrôles de périmètre de sécurité et réseau pour les connexions vers et depuis l’homologue public ExpressRoute et Microsoft, qui inclut les connexions vers et depuis les services Office 365. Des contrôles de sécurité doivent être en place pour les demandes réseau qui sont sortantes de votre réseau vers le réseau de Microsoft, ainsi que pour les demandes entrantes entre le réseau de Microsoft et votre réseau.
   
 #### <a name="outbound-from-customer-to-microsoft"></a>Trafic sortant entre le client et Microsoft
   
-Lorsque les ordinateurs se connectent à Office 365, ils se connectent au même ensemble de points de terminaison, que la connexion soit réalisée via internet ou un circuit ExpressRoute. Quel que soit le circuit utilisé, Microsoft recommande de traiter les services Office 365 comme étant plus fiables que les destinations Internet génériques. Vos contrôles de sécurité sortants doivent se concentrer sur les ports et protocoles pour réduire l’exposition et réduire la maintenance en cours. Les informations de port requises sont disponibles dans l’article de référence sur les points de terminaison [Office 365.](https://aka.ms/o365endpoints)
+Lorsque les ordinateurs se connectent à Office 365, ils se connectent au même ensemble de points de terminaison, que la connexion soit réalisée via internet ou un circuit ExpressRoute. Quel que soit le circuit utilisé, Microsoft recommande de traiter les services Office 365 comme étant plus fiables que les destinations Internet génériques. Vos contrôles de sécurité sortants doivent se concentrer sur les ports et protocoles pour réduire l’exposition et réduire la maintenance en cours. Les informations de port requises sont disponibles dans l’article de référence sur les points de terminaison [Office 365.](./urls-and-ip-address-ranges.md)
   
-Pour les contrôles ajoutés, vous pouvez utiliser le filtrage de niveau FQDN au sein de votre infrastructure proxy pour restreindre ou inspecter une partie ou l’ensemble des demandes réseau destinées à Internet ou Office 365. La gestion de la liste des FQDN à mesure que les fonctionnalités sont publiées et que les offres Office 365 évoluent nécessite une gestion des modifications plus robuste et le suivi des modifications apportées aux points de terminaison [Office 365 publiés.](https://aka.ms/o365endpoints)
+Pour les contrôles ajoutés, vous pouvez utiliser le filtrage de niveau FQDN au sein de votre infrastructure proxy pour restreindre ou inspecter une partie ou l’ensemble des demandes réseau destinées à Internet ou Office 365. La gestion de la liste des FQDN à mesure que les fonctionnalités sont publiées et que les offres Office 365 évoluent nécessite une gestion des modifications plus robuste et le suivi des modifications apportées aux points de terminaison [Office 365 publiés.](./urls-and-ip-address-ranges.md)
   
 > [!CAUTION]
 > Microsoft vous recommande de ne pas vous fier uniquement aux préfixes IP pour gérer la sécurité sortante vers Office 365.
 
 |**Option**|**Complexité**|**Contrôle des changements**|
 |:-----|:-----|:-----|
-|Aucune restriction  <br/> |**Faible :** Le client autorise l’accès sortant illimité à Microsoft.  <br/> |Aucune  <br/> |
+|Aucune restriction  <br/> |**Faible :** Le client autorise l’accès sortant illimité à Microsoft.  <br/> |Aucun  <br/> |
 |Restrictions de port  <br/> |**Faible :** Le client limite l’accès sortant à Microsoft par les ports attendus.  <br/> |Rare.  <br/> |
 |Restrictions de FQDN  <br/> |**Élevé :** Le client limite l’accès sortant à Office 365 en fonction des FQDN publiés.  <br/> |Modifications mensuelles.  <br/> |
 
@@ -82,27 +82,27 @@ Il existe plusieurs scénarios facultatifs qui obligent Microsoft à établir de
   
 - ADFS lors de la validation du mot de passe pour la signature.
 
-- [Exchange Server déploiements hybrides.](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)
+- [Exchange Server déploiements hybrides.](/exchange/exchange-hybrid)
 
 - Courrier provenant d’un client Exchange Online vers un hôte local.
 
 - SharePoint Online Mail send from SharePoint Online to an on-premises host.
 
-- [Recherche hybride fédérée SharePoint.](https://technet.microsoft.com/library/dn197174.aspx)
+- [Recherche hybride fédérée SharePoint.](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online)
 
-- [SharePoint hybride BCS](https://technet.microsoft.com/library/dn197239.aspx ).
+- [SharePoint hybride BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
-- [Skype Entreprise hybride et/ou](https://technet.microsoft.com/library/jj205403.aspx) [fédération Skype Entreprise](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
+- [Skype Entreprise hybride et/ou](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) [fédération Skype Entreprise](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
 
-- [Skype Entreprise Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx ).
+- [Skype Entreprise Cloud Connector](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 
-Microsoft recommande d’accepter ces connexions sur votre circuit Internet au lieu de votre circuit ExpressRoute pour réduire la complexité. Si vos besoins en matière de conformité ou de performances imposent que ces connexions entrantes doivent être acceptées sur un circuit ExpressRoute, l’utilisation d’un pare-feu ou d’un proxy inverse pour l’étendue des connexions acceptées est recommandée. Vous pouvez utiliser les points [de terminaison Office 365](https://aka.ms/o365endpoints) pour déterminer les bons FQDN et préfixes IP.
+Microsoft recommande d’accepter ces connexions sur votre circuit Internet au lieu de votre circuit ExpressRoute pour réduire la complexité. Si vos besoins en matière de conformité ou de performances imposent que ces connexions entrantes doivent être acceptées sur un circuit ExpressRoute, l’utilisation d’un pare-feu ou d’un proxy inverse pour l’étendue des connexions acceptées est recommandée. Vous pouvez utiliser les points [de terminaison Office 365](./urls-and-ip-address-ranges.md) pour déterminer les bons FQDN et préfixes IP.
   
 ### <a name="compliance"></a>Conformité
 
 Nous ne nous appuyons pas sur le chemin de routage que vous utilisez pour l’un de nos contrôles de conformité. Que vous vous connectiez aux services Office 365 via un circuit ExpressRoute ou Internet, nos contrôles de conformité ne changeront pas. Vous devez passer en revue les différents niveaux de certification de conformité et de sécurité pour Office 365 afin de déterminer le meilleur choix pour répondre aux besoins de votre organisation.
   
-Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/manageexpressroute365]()
   
 ## <a name="related-topics"></a>Rubriques connexes
 

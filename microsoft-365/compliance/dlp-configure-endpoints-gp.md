@@ -14,18 +14,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: Utilisez la stratégie de groupe pour déployer le package de configuration sur les appareils Windows 10 afin qu’ils soient intégrés au service.
-ms.openlocfilehash: a9e91f41b6e86e9f75d79d420c0ee830f1e3acf3
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: b786d011a46f69e7bcac846e726e2aeb3031ae08
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769414"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918020"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Intégrer des appareils Windows 10 à l’aide de la stratégie de groupe 
 
 **S’applique à :**
 
-- [Protection contre la perte de données de point de terminaison Microsoft 365 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Protection contre la perte de données de point de terminaison Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
 - Stratégie de groupe
 
 > [!NOTE]
@@ -45,15 +45,15 @@ ms.locfileid: "48769414"
 
 5. Extrayez le contenu du fichier .zip dans un emplacement partagé en lecture seule accessible par l’appareil. Vous devez avoir un dossier appelé *OptionalParamsPolicy* et le fichier *DeviceComplianceLocalOnboardingScript.cmd*.
 
-6. Ouvrez [la Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) de gestion des stratégies de groupe (GPMC), cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
+6. Ouvrez [la Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) de gestion des stratégies de groupe (GPMC), cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 
 7. Dans **l’Éditeur de gestion des stratégies** de groupe, allez à **Configuration** ordinateur, puis **Préférences,** puis **paramètres du panneau de configuration.**
 
 8. Cliquez avec le bouton droit **sur Tâches programmées,** pointez sur **Nouveau,** puis cliquez sur **Tâche immédiate (Au moins Windows 7).**
 
-9. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou** le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier les **noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
+9. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** **cliquez sur Modifier** l’utilisateur ou le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier **les noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
-10. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.**
+10. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.**
 
 11. Go to the **Actions** tab and click **New...** **Assurez-vous que démarrer un programme** est sélectionné dans le champ **Action.** Entrez le nom de fichier et l’emplacement du fichier *WindowsDefenderATPOnboardingScript.cmd* partagé.
 
@@ -61,12 +61,12 @@ ms.locfileid: "48769414"
 
 
 ## <a name="offboard-devices-using-group-policy"></a>Appareils de tableau de bord à l’aide de la stratégie de groupe
-Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
+Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-1. Obtenez le package de mise hors programme à partir du [Centre de conformité Microsoft.](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
+1. Obtenez le package deboarding à partir du [Centre de conformité Microsoft.](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
 
 2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **//Intégration de** l’appareil  >  **hors intégration.**
 
@@ -76,7 +76,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 5. Extrayez le contenu du fichier .zip dans un emplacement partagé en lecture seule accessible par l’appareil. Vous devez avoir un fichier nommé *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-6. Ouvrez [la Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) de gestion des stratégies de groupe (GPMC), cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
+6. Ouvrez [la Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) de gestion des stratégies de groupe (GPMC), cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 
 7. Dans **l’Éditeur de gestion des stratégies** de groupe, allez à **Configuration ordinateur,** puis **Préférences,** puis **paramètres du panneau de configuration.**
 
@@ -95,11 +95,11 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
-Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
+Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
 
 ## <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 1. Go to [Microsoft Compliance center](https://compliance.microsoft.com/).
-2. Cliquez sur **La liste** Appareils.
+2. Cliquez **sur La liste** Appareils.
 3. Vérifiez que les appareils apparaissent.
 
 > [!NOTE]
@@ -111,5 +111,5 @@ Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiem
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](dlp-configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows 10 utilisant un script local](dlp-configure-endpoints-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.](dlp-configure-endpoints-vdi.md)
-- [Exécuter un test de détection sur des appareils Microsoft Defender ATP nouvellement intégrés](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Résoudre les problèmes d’intégration de la Protection avancée contre les menaces Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Exécuter un test de détection sur des appareils Microsoft Defender ATP nouvellement intégrés](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Résoudre les problèmes d’intégration de la Protection avancée contre les menaces Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

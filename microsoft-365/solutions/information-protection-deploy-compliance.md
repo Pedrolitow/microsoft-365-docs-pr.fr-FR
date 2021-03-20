@@ -17,21 +17,21 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Découvrez comment utiliser le Score de conformité et le Gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
-ms.openlocfilehash: f90826795197b392f629eb8eec71b7f27081b697
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 87131ea65661e8285fd7c3b36a87c79b618348d7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791881"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918569"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Utiliser le Gestionnaire de conformité pour gérer les actions d’amélioration
 
-Le Gestionnaire de conformité Microsoft peut vous aider à gérer les améliorations liées aux réglementations en matière de confidentialité des données, telles que le Règlement général sur la protection des données [(RGPD)](../compliance/gdpr.md)de l’Union européenne, le [CCPA (California Consumer Protection Act),](../compliance/ccpa-faq.md)hipAA-HITECH (loi américaine sur la confidentialité des soins de santé) et le LGPD (Brazil Data Protection Act).
+Le Gestionnaire de conformité Microsoft peut vous aider à gérer les améliorations liées aux réglementations en matière de confidentialité des données, telles que le Règlement général sur la protection des données [(RGPD)](/compliance/regulatory/gdpr)de l’Union européenne, le [CCPA (California Consumer Protection Act),](/compliance/regulatory/ccpa-faq)hipAA-HITECH (loi américaine sur la confidentialité des soins de santé) et le LGPD (Brazil Data Protection Act).
 
 Cet article fournit des conseils sur l’utilisation de cet outil à des fins de confidentialité des données.
 
 >[!Note]
->Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité. C’est à vous d’évaluer et de valider l’efficacité des contrôles client par rapport à votre environnement réglementaire. Ces services sont soumis aux conditions générales des [conditions générales des services en ligne.](https://go.microsoft.com/fwlink/?linkid=2108910) Voir aussi conseils [sur les licences Microsoft 365 pour la sécurité et la conformité](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité. C’est à vous d’évaluer et de valider l’efficacité des contrôles client par rapport à votre environnement réglementaire. Ces services sont soumis aux conditions générales des [conditions générales des services en ligne.](https://go.microsoft.com/fwlink/?linkid=2108910) Voir aussi conseils [sur les licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
 ## <a name="getting-started-with-compliance-manager"></a>Mise en place avec le Gestionnaire de conformité
@@ -54,7 +54,7 @@ Le Gestionnaire de conformité vous fournit également un score de conformité q
 
 #### <a name="use-the-compliance-manager-quickstart-guide"></a>Utiliser le guide de démarrage rapide du Gestionnaire de conformité
 
-Le guide de démarrage rapide [du Gestionnaire de conformité](../compliance/compliance-manager-quickstart.md) fournit des étapes et des liens vers des ressources clés pour vous aider à travailler avec le Gestionnaire de conformité :
+Le guide [de démarrage rapide du Gestionnaire de conformité](../compliance/compliance-manager-quickstart.md) fournit des étapes et des liens vers des ressources clés pour vous aider à travailler avec le Gestionnaire de conformité :
 
 - [Première visite : familiarisez-vous avec le Gestionnaire de conformité](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Travailler avec votre tableau de bord du Gestionnaire de conformité
@@ -66,19 +66,19 @@ Le guide de démarrage rapide [du Gestionnaire de conformité](../compliance/com
     - Exécution d’un travail d’implémentation et de test sur des actions d’amélioration pour effectuer des contrôles dans vos évaluations
     - Comprendre l’impact des différentes actions sur votre score de conformité
 - [Montée en niveau : utiliser des fonctionnalités avancées pour répondre à vos besoins personnalisés](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Création de vos évaluations personnalisées pour suivre les produits non-Microsoft 365
+    - Création de vos évaluations personnalisées pour suivre les produits autres que Microsoft 365
     - Modification de modèles existants pour ajouter ou supprimer des contrôles
     - Configuration du test automatisé des actions d’amélioration
 
 ## <a name="how-your-compliance-score-is-calculated"></a>Comment votre score de conformité est calculé
 
-Votre score de conformité est calculé en fonction d’une combinaison d’implémentations de contrôle géré par le client et Microsoft. Voir [le calcul du score de conformité](../compliance/compliance-score-calculation.md) pour obtenir une explication détaillée.
+Votre score de conformité est calculé sur la base d’une combinaison d’implémentations de contrôle géré par le client et Microsoft. Voir [le calcul du score de conformité](../compliance/compliance-score-calculation.md) pour obtenir une explication détaillée.
 
 Une valeur de score est attribuée aux contrôles selon qu’ils sont obligatoires ou discrétionnaires, et qu’ils soient préventives, marqueurs ou correctifs. Ceux-ci représentent collectivement le risque de ne pas l’implémenter par rapport à d’autres contrôles.
 
 Comme le décrit l’article de calcul du score de conformité, les contrôles préventives obtiennent un score plus élevé que les contrôles de observation et de correction, et les contrôles obligatoires obtiennent un score plus élevé que les contrôles discrétionnaires.
 
-L’interface utilisateur d’administration du Score de conformité ne liste pas ces paramètres et ne permet pas non plus de filtrer par eux. Toutefois, si vous téléchargez le modèle associé à partir du Gestionnaire de conformité, le jeu de données résultant liste ces paramètres pour la plupart des réglementations.
+L’interface utilisateur d’administration du Score de conformité ne liste pas ces paramètres et ne permet pas non plus de filtrer par eux. Toutefois, si vous téléchargez le modèle associé à partir du Gestionnaire de conformité, le jeu de données résultant indique ces paramètres pour la plupart des réglementations.
 
 Pour les contrôles techniques, le Gestionnaire de conformité met automatiquement à jour le score d’action d’amélioration une fois que l’action a été correctement implémentée et testée. D’autres actions de contrôle non techniques, telles que celles qui sont opérationnelles ou liées à la documentation, doivent être enregistrées manuellement comme implémentées avant que les points comptent pour &mdash; &mdash; votre score.
 

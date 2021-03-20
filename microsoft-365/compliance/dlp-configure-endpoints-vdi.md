@@ -14,17 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service de protection contre la perte de données de point de terminaison Microsoft 365.
-ms.openlocfilehash: ce5ad0ba6af3e18a6f6c53e1860fc47a77c38770
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 2a62de6c238c1f681bde8a9bf25ecd596a10d390
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769417"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917950"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
 **S’applique à :**
-- [Protection contre la perte de données de point de terminaison Microsoft 365 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Protection contre la perte de données de point de terminaison Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
 
 - Périphériques VDI (Virtual Desktop Infrastructure)
 
@@ -38,7 +38,7 @@ La protection contre la perte de données de point de terminaison Microsoft 365 
 >[!Note]
 >Pour intégrer des sessions VDI non persistantes, les appareils VDI doivent être sur Windows 10 1809 ou une autre.
 
-Il peut y avoir des difficultés associées lors de l’intégration des VDIs. Les défis classiques de ce scénario sont les suivants :
+Il peut y avoir des difficultés associées lors de l’intégration des VDIs. Voici quelques défis classiques pour ce scénario :
 
 - Intégration anticipée instantanée d’une session de courte durée, qui doit être intégré à la protection contre la perte de données du point de terminaison Microsoft 365 avant la mise en service réelle.
 - Le nom de l’appareil est généralement réutilisé pour les nouvelles sessions.
@@ -101,9 +101,9 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 6. Cliquez **sur La liste Appareils** dans le volet de navigation.
 
-7. Utilisez la fonction de recherche en entrant le nom de l’appareil et sélectionnez **Appareil** comme type de recherche.
+7. Utilisez la fonction de recherche en entrant le nom de l’appareil et **sélectionnez Appareil** comme type de recherche.
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images DDI (Virtual Desktop Infrastructure) non persistantes
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images VDI (Virtual Desktop Infrastructure) non persistantes
 En tant que meilleure pratique, nous vous recommandons d’utiliser des outils de maintenance hors connexion pour mettre à jour les images de base/de base.<br>
 Par exemple, vous pouvez utiliser les commandes ci-dessous pour installer une mise à jour pendant que l’image reste hors connexion :
 
@@ -114,9 +114,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 Pour plus d’informations sur les commandes DISM et la maintenance hors connexion, consultez les articles ci-dessous :
-- [Modifier une image Windows à l’aide de DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [Options de gestion des images DISM Command-Line d’images](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Réduire la taille du magasin de composants dans une image Windows hors connexion](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [Modifier une image Windows à l’aide de DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [Options de gestion des images DISM Command-Line d’images](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [Réduire la taille du magasin de composants dans une image Windows hors connexion](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 Si la maintenance hors connexion n’est pas une option viable pour votre environnement VDI non persistant, les étapes suivantes doivent être prises pour garantir la cohérence et l’état du capteur :
 
@@ -147,4 +147,4 @@ Si la maintenance hors connexion n’est pas une option viable pour votre enviro
 - [Intégrer des appareils Windows 10 à l’aide de Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](dlp-configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows 10 utilisant un script local](dlp-configure-endpoints-script.md)
-- [Résoudre les problèmes d’intégration de microsoft Defender - Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Résoudre les problèmes d’intégration de la Protection avancée contre les menaces Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

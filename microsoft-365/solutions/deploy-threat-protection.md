@@ -16,27 +16,23 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a2d758ca4628e4cd5f73e77d0d86946e350163c5
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 3156e6bc7715db9847b295add7850dcbd0ff6642
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50424086"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918405"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Déployer des fonctionnalités de protection contre les menaces dans Microsoft 365
 
-[Les programmes](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)malveillants et les cyberattaques sophistiquées, telles que les menaces sans [fichier,](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)sont une occurrence courante. Les entreprises doivent se protéger elles-mêmes et leurs clients avec des fonctionnalités de sécurité informatique efficaces. Les cyberattaques peuvent entraîner des problèmes majeurs pour votre organisation, allant d’une perte de confiance à des difficultés financières, à des temps d’arrêt de l’activité et bien plus encore. La protection contre les menaces est importante, mais il peut être difficile de déterminer où concentrer le temps, les efforts et les ressources de votre organisation. 
+[Les programmes](/windows/security/threat-protection/intelligence/understanding-malware)malveillants et les cyberattaques sophistiquées, telles que les menaces sans [fichier,](/windows/security/threat-protection/intelligence/fileless-threats)sont une occurrence courante. Les entreprises doivent se protéger elles-mêmes et leurs clients avec des fonctionnalités de sécurité informatique efficaces. Les cyberattaques peuvent entraîner des problèmes majeurs pour votre organisation, allant d’une perte de confiance à des difficultés financières, à des temps d’arrêt de l’activité et bien plus encore. La protection contre les menaces est importante, mais il peut être difficile de déterminer où concentrer le temps, les efforts et les ressources de votre organisation. 
 
-Les solutions de sécurité Microsoft sont intégrées à nos produits et services. Les fonctionnalités d’automatisation et d’apprentissage automatique réduisent la charge sur vos équipes de sécurité pour vous assurer que les éléments qui vous sont nécessaires sont traités. Et la force des solutions de sécurité Microsoft repose sur des nombres de signaux que nous traiterons tous les jours dans [notre graphique de sécurité intelligent.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Microsoft 365 security solutions include [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection), a solution that brings together signals across your email, data, devices, and identities to paint a picture of advanced threats against your organization.
+Les solutions de sécurité Microsoft sont intégrées à nos produits et services. Les fonctionnalités d’automatisation et d’apprentissage automatique réduisent la charge sur vos équipes de sécurité pour vous assurer que les éléments qui vous sont nécessaires sont traités. Et la force des solutions de sécurité Microsoft repose sur des nombres de signaux que nous traiterons tous les jours dans [notre graphique de sécurité intelligent.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Microsoft 365 security solutions include [Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md), a solution that brings together signals across your email, data, devices, and identities to paint a picture of advanced threats against your organization.
 
 
 Regardez cette vidéo de présentation du processus de déploiement.
 <br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI7]
-
->[!Note]
->Cette vidéo utilise les noms précédents des produits et fonctionnalités de protection contre les menaces, mais les concepts sont les mêmes. Une mise à jour de cette vidéo est en cours.
->
 
 Utilisez cet article comme guide pour implémenter votre solution de protection contre les menaces.
 
@@ -61,7 +57,7 @@ L’illustration suivante illustre un chemin d’accès recommandé pour le dép
 |Authentification multifacteur et accès conditionnel     |Protégez-vous contre les identités et les appareils compromis. Commencez par cette protection, car elle est de base. La configuration recommandée dans ce guide inclut Azure AD Identity Protection comme condition préalable.     |
 |Microsoft Defender pour l’identité     |  Solution de sécurité basée sur le cloud qui exploite les signaux de vos services de domaine Active Directory (AD DS) locaux pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation. Concentrez-vous ensuite sur Microsoft Defender pour l’identité, car il protège votre infrastructure locale et cloud, n’a pas de dépendances ou de conditions préalables et peut offrir des avantages immédiats en matière de sécurité. | 
 |Microsoft Defender pour Office 365     | Protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. Protection contre les programmes malveillants, le hameçonnage, l’usurpation et d’autres types d’attaques. La configuration de Microsoft Defender pour Office 365 est recommandée ensuite, car le déploiement du contrôle des changements, de la migration des paramètres à partir d’un système insérez et d’autres considérations peut prendre plus de temps. <br><br>Remarque : veillez à configurer les fonctionnalités de protection contre les menaces incluses dans tous les abonnements Office 365 (Exchange Online Protection).       |
-|Microsoft Defender pour point de terminaison    | Plateforme de protection des points de terminaison qui permet de prévenir, de détecter, d’examiner et de répondre aux menaces avancées.  Le déploiement de Defender for Endpoint peut prendre un certain temps, mais la configuration peut être effectuée en parallèle avec d’autres fonctionnalités.   |
+|Microsoft Defender pour point de terminaison    | Plateforme de protection des points de terminaison qui permet d’éviter, de détecter, d’examiner et de répondre aux menaces avancées.  Le déploiement de Defender for Endpoint peut prendre un certain temps, mais la configuration peut être effectuée en parallèle avec d’autres fonctionnalités.   |
 |Microsoft Cloud App Security     |   Un courtier de sécurité d’accès au cloud pour la découverte, l’examen et la gouvernance. Vous pouvez activer Microsoft Cloud App Security tôt pour commencer à collecter des données et des informations. L’implémentation d’informations et d’autres protections ciblées au sein de vos applications SaaS implique une planification et peut prendre plus de temps.       | 
 
 > [!TIP]
@@ -82,4 +78,4 @@ Pour vous assurer que votre organisation dispose de la meilleure protection poss
 
 Vos fonctionnalités de protection contre les menaces peuvent être configurées en parallèle. Ainsi, si plusieurs équipes de sécurité réseau sont responsables de différents services, elles peuvent configurer les fonctionnalités de protection de votre organisation en même temps. Le diagramme suivant illustre le processus de haut niveau de déploiement des fonctionnalités de protection contre les menaces. 
 
-![Processus de déploiement des fonctionnalités de protection contre les menaces](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png) 
+![Processus de déploiement des fonctionnalités de protection contre les menaces](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)

@@ -1,7 +1,7 @@
 ---
 title: Ajuster les paramètres après l’inscription
 description: Comment exclure certains comptes Microsoft
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ca919798480698f92bba094c3755b3eccce30888
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 760fcb94ec6d84a55fe4b8c3cb3540ae29994ae3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867969"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918441"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Ajuster les paramètres après l’inscription
 
@@ -32,11 +32,11 @@ Une fois que vous avez terminé l’inscription au Bureau géré Microsoft, cert
 
 - Profil autopilot deployment : si vous utilisez des stratégies Autopilot, mettez à jour chacune d’elles pour exclure le groupe Modern **Workplace Devices -All** Azure AD. Pour les mettre à jour, dans la **section** Groupes exclus sous **Affectations,** sélectionnez le groupe Modern **Workplace Devices -All** Azure AD qui a été créé lors de l’inscription au Bureau géré Microsoft. Bureau géré Microsoft aura également créé un profil Autopilot, dont le nom doit être « Espace de travail moderne » (profil **Autopilot** Espace de travail moderne). Lorsque vous mettez à jour vos propres  profils Autopilot, veillez à ne pas exclure le groupe Modern **Workplace Devices -All** Azure AD du profil **Autopilot** Workplace moderne créé par Bureau géré Microsoft.
 
-- Stratégies d’accès conditionnel : si vous créez des stratégies d’accès conditionnel **liées** à Azure AD, Microsoft Intune ou Microsoft Defender pour le point de terminaison après l’inscription au Bureau géré Microsoft, excluez-y le groupe Azure AD Comptes de service Espace de travail moderne. Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Bureau géré Microsoft gère des stratégies d’accès conditionnel distinctes pour restreindre l’accès à ces comptes. Pour passer en revue la stratégie d’accès conditionnel bureau géré Microsoft (  Espace de travail moderne **–** Station de travail sécurisée), accédez à Microsoft Endpoint Manager et accédez à l’accès conditionnel dans **Endpoint Security**. Ne modifiez pas les stratégies d’accès conditionnel Azure AD créées par Le Bureau géré Microsoft dont le nom indique « Espace de travail moderne ».
+- Stratégies d’accès conditionnel : si vous créez des stratégies d’accès conditionnel **liées** à Azure AD, Microsoft Intune ou Microsoft Defender pour le point de terminaison après l’inscription au Bureau géré Microsoft, excluez-y le groupe Azure AD Comptes de service Espace de travail moderne. Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Bureau géré Microsoft gère des stratégies d’accès conditionnel distinctes pour restreindre l’accès à ces comptes. Pour passer en revue la stratégie d’accès conditionnel bureau géré Microsoft (  Espace de travail moderne **–** Station de travail sécurisée), accédez à Microsoft Endpoint Manager et accédez à Accès conditionnel dans **Endpoint Security**. Ne modifiez pas les stratégies d’accès conditionnel Azure AD créées par Le Bureau géré Microsoft dont le nom indique « Espace de travail moderne ».
 
-- Authentification multifacteur : si vous créez des exigences d’authentification multifacteur dans les stratégies d’accès conditionnel **liées** à Azure AD, Intune ou Microsoft Defender pour le point de terminaison après l’inscription au Bureau géré Microsoft, excluez-en le groupe Azure AD Comptes de service Espace de travail moderne. Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Bureau géré Microsoft gère des stratégies d’accès conditionnel distinctes pour restreindre l’accès aux membres de ce groupe. Pour passer en revue la stratégie d’accès conditionnel bureau géré Microsoft **(** Espace de travail moderne - ), accédez à Microsoft Endpoint Manager et accédez à Accès conditionnel **dans** **Endpoint Security**. 
+- Authentification multifacteur : si vous créez des exigences d’authentification multifacteur dans les stratégies d’accès conditionnel **liées** à Azure AD, Intune ou Microsoft Defender pour le point de terminaison après l’inscription au Bureau géré Microsoft, excluez-y le groupe Azure AD Comptes de service Espace de travail moderne. Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Bureau géré Microsoft gère des stratégies d’accès conditionnel distinctes pour restreindre l’accès aux membres de ce groupe. Pour passer en revue la stratégie d’accès conditionnel bureau géré Microsoft **(** Espace de travail moderne - ), accédez à Microsoft Endpoint Manager et accédez à Accès conditionnel **dans** **Endpoint Security**. 
 
-- Anneau de mise à jour Windows 10 : pour toutes les stratégies d’anneau de mise à jour Windows 10 que vous avez créées, excluez le groupe Modern **Workplace Devices -All** Azure AD de chaque stratégie. Pour obtenir la procédure à suivre, [voir Créer et affecter des anneaux de mise à jour.](https://docs.microsoft.com/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings) Bureau géré Microsoft aura également créé des stratégies de sonnerie de mise à jour, qui auront toutes le nom « Espace de travail moderne » (par exemple, Stratégie de mise à jour de l’espace de travail moderne **[Large]**, Stratégie de mise à jour de l’espace de travail moderne **[Fast]**, Stratégie de mise à jour de l’espace de travail moderne **[Premier]** et Stratégie de mise à jour de l’espace de travail **moderne [Test]**). Lorsque vous mettez à jour vos  propres stratégies, veillez à ne pas exclure le groupe Modern **Workplace Devices -All** Azure AD de ceux créés par Microsoft Managed Desktop.
+- Anneau de mise à jour Windows 10 : pour toutes les stratégies d’anneau de mise à jour Windows 10 que vous avez créées, excluez le groupe Modern **Workplace Devices -All** Azure AD de chaque stratégie. Pour obtenir la procédure à suivre, [voir Créer et affecter des anneaux de mise à jour.](/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings) Bureau géré Microsoft aura également créé des stratégies d’anneau de mise à jour, qui auront toutes le nom « Espace de travail moderne » (par exemple, Stratégie de mise à jour de l’espace de travail moderne **[Large]**, Stratégie de mise à jour de l’espace de travail moderne **[Fast]**, Stratégie de mise à jour de l’espace de travail moderne **[Premier]** et Stratégie de mise à jour de l’espace de travail **moderne [Test]**). Lorsque vous mettez à jour vos  propres stratégies, veillez à ne pas exclure le groupe Modern **Workplace Devices -All** Azure AD de ceux créés par Microsoft Managed Desktop.
 
 
 ## <a name="azure-active-directory-settings"></a>Paramètres Azure Active Directory

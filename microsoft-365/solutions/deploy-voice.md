@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Découvrez comment choisir et déployer la solution vocale Teams appropriée pour votre organisation.
-ms.openlocfilehash: b5dda0ed3d9310c3c43052b9bac4996802e0ed2f
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: ede8075767e9d0a80123ac742403f8a4d171392e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580898"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918381"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>Planifier et déployer une solution vocale Teams
 
@@ -43,18 +43,18 @@ Suivez ces étapes pour choisir, planifier et configurer votre solution vocale :
 
 ![Choisissez votre solution vocale :](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
 
-1. [Choisissez votre solution vocale :](https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+1. [Choisissez votre solution vocale :](/MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
-2. [Configurer le système téléphonique](https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+2. [Configurer le système téléphonique](/microsoftteams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
 3. Configurer la connectivité PSTN en choisissant une ou plusieurs des solutions suivantes :
-   - [Forfait d’appels](https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) : solution microsoft tout-dans-le-cloud avec Microsoft comme opérateur PSTN
-   - [Routage direct](https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) : utiliser le routage direct pour connecter votre propre opérateur PSTN à Teams 
+   - [Forfait d’appels](/microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) : solution microsoft tout-dans-le-cloud avec Microsoft comme opérateur PSTN
+   - [Routage direct](/microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) : utiliser le routage direct pour connecter votre propre opérateur PSTN à Teams 
 
-En outre, vous souhaitez peut-être en savoir plus sur la migration d’une grande entreprise multinationale vers une solution vocale Teams dans l’étude de [cas Contoso](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json).
+En outre, vous souhaitez peut-être en savoir plus sur la migration d’une grande entreprise multinationale vers une solution vocale Teams dans l’étude de [cas Contoso](/MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json).
 
 Pour plus d’informations sur les licences requises, consultez les informations suivantes :
 
-- [Licences de modules add-on Teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+- [Licences de modules add-on Teams](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json)
 
-- [Conditions requises pour les licences de routage direct](https://docs.microsoft.com/microsoftteams/direct-routing-plan#licensing-and-other-requirements/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+- [Exigences en matière de licences de routage direct](/microsoftteams/direct-routing-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json#licensing-and-other-requirements/toc.json)

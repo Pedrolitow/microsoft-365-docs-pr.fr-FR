@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment configurer des applications Microsoft 365 telles que Teams, OneDrive et SharePoint pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 7b8e5e30d8222d055fc5f64472c4083db614d4bd
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 359e72c12c43ca1ea984f93d87ab4868e6d1eb66
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261512"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916393"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborer avec des personnes extérieures à votre organisation
 
@@ -46,22 +46,22 @@ Pour un aperçu complet des paramètres de partage d’invités disponibles dans
 
 ## <a name="enable-additional-security"></a>Activer la sécurité supplémentaire
 
-Une fois que vous avez activé le scénario que vous souhaitez utiliser pour le partage avec des personnes extérieures à votre organisation, envisagez des mesures de protection supplémentaires pour protéger votre contenu contre un partage accidentel ou intentionnel.
+Une fois que vous avez activé le scénario que vous souhaitez utiliser pour le partage avec des personnes extérieures à votre organisation, envisagez des protections supplémentaires pour protéger votre contenu contre un partage accidentel ou intentionnel.
 
 - [Meilleures pratiques pour le partage](best-practices-anonymous-sharing.md) de fichiers et de dossiers avec des utilisateurs non authentifiés : découvrez les meilleures pratiques de partage avec des utilisateurs non authentifiés.
 - [Limiter l’exposition](share-limit-accidental-exposure.md) accidentelle : découvrez comment réduire les risques de partager accidentellement du contenu sensible avec des personnes extérieures à votre organisation.
 - [](create-secure-guest-sharing-environment.md) Créez un environnement de partage d’invités sécurisé : découvrez les outils fournis dans Microsoft 365 pour vous assurer que le partage avec des personnes extérieures à votre organisation est effectué de manière sécurisée et répond à vos exigences de gouvernance.
 
-## <a name="collaborate-with-partner-companies"></a>Collaborer avec des sociétés partenaires
+## <a name="collaborate-with-partner-companies"></a>Collaborer avec des entreprises partenaires
 
-Lorsque vous travaillez sur un projet de grande envergure qui implique de nombreux invités d’une autre organisation, ou si vous avez une relation de fournisseur en cours dans laquelle les invités changent souvent, vous pouvez utiliser la gestion des droits dans Azure Active Directory pour simplifier la gestion des invités et permettre à la société partenaire de partager cette responsabilité. Pour plus d’informations, voir Créer un [extranet B2B](b2b-extranet.md) avec des invités gérés.
+Lorsque vous travaillez sur un projet de grande envergure qui implique de nombreux invités d’une autre organisation, ou si vous avez une relation de fournisseur permanente dans laquelle les invités changent souvent, vous pouvez utiliser la gestion des droits dans Azure Active Directory pour simplifier la gestion des invités et permettre à la société partenaire de partager cette responsabilité. Pour plus d’informations, voir Créer un [extranet B2B](b2b-extranet.md) avec des invités gérés.
 
 ## <a name="limit-sharing"></a>Limiter le partage
 
 Si certaines fonctionnalités de partage dans Microsoft 365 entrent en conflit avec vos stratégies de gouvernance, voir Limiter le partage dans [Microsoft 365](microsoft-365-limit-sharing.md) pour en savoir plus sur les options de limitation du partage.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-[Introduction à la collaboration sur les fichiers dans Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
+[Introduction à la collaboration sur les fichiers dans Microsoft 365](/sharepoint/intro-to-file-collaboration)
 
-[Planifier la collaboration de fichiers dans SharePoint avec Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
+[Planifier la collaboration de fichiers dans SharePoint avec Microsoft 365](/sharepoint/deploy-file-collaboration)

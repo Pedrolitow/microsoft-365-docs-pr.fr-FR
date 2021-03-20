@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 4f38bf286b8ebd3edf6f7705299008566d2b7c8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921869"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916333"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -37,9 +37,9 @@ Nous vous recommandons également d’activer les fonctionnalités de base de De
 
 |Option|Informations|
 |:------|:-----------|
-|Pièces jointes fiables pour SPO, OneDrive et Teams|[Pièces jointes fiables](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender pour Office 365 – SharePoint, OneDrive et Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).|
-|Documents sécurisés|[Documents sécurisés dans Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Liens fiables pour Teams|[Liens fiables Office 365 dans Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Liens fiables](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Pièces jointes fiables pour SPO, OneDrive et Teams|[Pièces jointes fiables](../security/office-365-security/atp-safe-attachments.md)<br>[Defender pour Office 365 – SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md).|
+|Documents sécurisés|[Documents sécurisés dans Microsoft Defender pour Office 365](../security/office-365-security/safe-docs.md)|
+|Liens fiables pour Teams|[Liens fiables Office 365 dans Teams](../security/office-365-security/atp-safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Liens fiables](../security/office-365-security/atp-safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Partage d'invités Teams
 
@@ -59,7 +59,7 @@ Pour déterminer les paramètres d’accès invité Teams, procédez comme suit�
 > [!NOTE]
 > La mise en service du paramètre invité Teams peut prendre jusqu'à vingt-quatre heures.
 
-Le partage d’invités est activé par défaut pour les groupes Office 365 et SharePoint. Toutefois, si vous avez modifié les paramètres de partage d’invités de votre organisation, nous vous recommandons de consulter [Collaborer avec des invités dans une équipe](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team) afin de vous assurer que le partage d’invités est disponible dans Teams.
+Le partage d’invités est activé par défaut pour les groupes Office 365 et SharePoint. Toutefois, si vous avez modifié les paramètres de partage d’invités de votre organisation, nous vous recommandons de consulter [Collaborer avec des invités dans une équipe](./collaborate-as-team.md) afin de vous assurer que le partage d’invités est disponible dans Teams.
 
 ## <a name="site-and-file-sharing"></a>Partage de sites et fichiers
 
@@ -71,7 +71,7 @@ Pour modifier le lien de partage par défaut, procédez comme suit :
 3. Sous **Liens de fichier et de dossier**, sélectionnez **Uniquement les membres de votre organisation**.
 4. Cliquez sur **Enregistrer**.
 
-Pour une expérience de partage d’invités optimale, nous vous recommandons également d’activer [L’intégration de SharePoint et OneDrive à l’aide d’Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+Pour une expérience de partage d’invités optimale, nous vous recommandons également d’activer [L’intégration de SharePoint et OneDrive à l’aide d’Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 ## <a name="create-a-team"></a>Créer une équipe
 
@@ -94,12 +94,12 @@ Pour mettre à jour les paramètres de partage de site, procédez comme suit :
 
 Microsoft 365 offre d’autres méthodes pour la sécurisation de votre contenu. Envisagez d’utiliser les options suivantes pour renforcer la sécurité au sein de votre organisation.
 
-- Demandez aux invités d’accepter les [conditions d’utilisation](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
-- Configurez une [stratégie de délai d’expiration de session](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) pour les invités.
-- Créez les [Types d’informations sensibles](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) et utilisez [Protection contre la perte de données](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) pour définir des stratégies autour de l’accès aux informations sensibles.
+- Demandez aux invités d’accepter les [conditions d’utilisation](/azure/active-directory/conditional-access/terms-of-use).
+- Configurez une [stratégie de délai d’expiration de session](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) pour les invités.
+- Créez les [Types d’informations sensibles](../compliance/sensitive-information-type-learn-about.md) et utilisez [Protection contre la perte de données](../compliance/data-loss-prevention-policies.md) pour définir des stratégies autour de l’accès aux informations sensibles.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les stratégies de réunion dans Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)
+[Gérer les stratégies de réunion dans Teams](/microsoftteams/meeting-policies-in-teams)
 
-[Prise en main de la gestion des risques internes](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
+[Prise en main de la gestion des risques internes](../compliance/insider-risk-management-configure.md)

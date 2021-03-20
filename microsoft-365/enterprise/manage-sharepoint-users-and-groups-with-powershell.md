@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: Dans cet article, découvrez comment utiliser PowerShell pour Microsoft 365 pour gérer les utilisateurs, les groupes et les sites SharePoint Online.
-ms.openlocfilehash: 5252ecc950e5f26d6ad60cd871910a67bf50f187
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: cc977355f1182b18d2f2e90b573683ed69299c1c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690073"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916725"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Gestion des utilisateurs et des groupes SharePoint Online avec PowerShell
 
@@ -33,7 +33,7 @@ ms.locfileid: "46690073"
 
 Si vous êtes un administrateur SharePoint Online qui travaille avec de grandes listes de comptes ou de groupes d’utilisateurs et souhaitez un moyen plus facile de les gérer, vous pouvez utiliser PowerShell pour Microsoft 365. 
 
-Avant de commencer, les procédures de cette rubrique exigent que vous vous connectiez à SharePoint Online. Pour obtenir des instructions, [voir Se connecter à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Avant de commencer, les procédures de cette rubrique exigent que vous vous connectiez à SharePoint Online. Pour obtenir des instructions, [voir Se connecter à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>Obtenir une liste de sites, de groupes et d’utilisateurs
 
@@ -59,7 +59,7 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>Ajouter un utilisateur au groupe Administrateurs de collection de sites
 
-Vous utilisez la cmdlet pour ajouter un utilisateur à la liste des administrateurs de collection de `Set-SPOUser` sites sur une collection de sites.
+La cmdlet permet d’ajouter un utilisateur à la liste des administrateurs de collection de `Set-SPOUser` sites sur une collection de sites.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -68,7 +68,7 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-Pour utiliser ces commandes, remplacez tout le reste entre guillemets, y compris les caractères < et >, par les noms corrects.
+Pour utiliser ces commandes, remplacez tout ce qui est entre guillemets, y compris les caractères < et >, par les noms corrects.
 
 Par exemple, cet ensemble de commandes ajoute Opal List (nom d’utilisateur opalc) à la liste des administrateurs de collection de sites sur la collection de sites ContosoTest dans la location Contoso :
 
@@ -278,7 +278,7 @@ Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapp
    
 ## <a name="see-also"></a>Voir aussi
 
-[Connexion à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Connexion à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [Gérer SharePoint Online avec PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 

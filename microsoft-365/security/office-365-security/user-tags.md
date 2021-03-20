@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs à l’aide de balises utilisateur dans Microsoft Defender pour Office 365 Plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les enquêtes dans Microsoft Defender pour Office 365 pour identifier rapidement les utilisateurs marqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80bd360888be3aeea42da6f9b58a119a9752d382
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: e9bb6a233f21268df860974549ecffbfd7154045
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758891"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916405"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -41,7 +41,7 @@ Après avoir appliqué des balises système ou des balises personnalisées aux u
 - [Détections en temps réel et de l’Explorateur de menaces](threat-explorer.md)
 - [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
 - [Vues de campagne](campaigns.md)
-- Pour les comptes prioritaires, [](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) vous pouvez utiliser le rapport Problèmes de messagerie pour les comptes prioritaires dans le Centre d’administration Exchange (EAC).
+- Pour les comptes prioritaires, [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) vous pouvez utiliser le rapport Problèmes de messagerie pour les comptes prioritaires dans le Centre d’administration Exchange (EAC).
 
 Cet article explique comment configurer des balises utilisateur dans le Centre de sécurité & conformité. Il n’existe aucune cmdlet dans le Centre de sécurité & conformité pour gérer les balises utilisateur.
 
@@ -52,7 +52,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **des balises utilisateur,** ouvrez <https://protection.office.com/userTags> .
 
 - Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
-  - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité.
+  - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
   - Pour ajouter et supprimer des membres de balises utilisateur existantes, vous devez  être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Opérateur de sécurité
   - Pour accéder en lecture seule aux balises utilisateur,  vous devez être membre des groupes de rôles Lecteur global ou **Lecteur de** sécurité.
 
@@ -83,7 +83,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
      - Cliquez dans la zone et faites défiler la liste pour sélectionner un utilisateur ou un groupe.
      - Cliquez dans la zone et commencez à taper pour filtrer la liste et sélectionner un utilisateur ou un groupe.
      - Pour ajouter des valeurs supplémentaires, cliquez dans une zone vide dans la zone.
-     - Pour supprimer des entrées individuelles de la zone, cliquez sur **Supprimer** l’icône sur l’utilisateur ou ![ le groupe dans la ](../../media/scc-remove-icon.png) zone.
+     - Pour supprimer des entrées  individuelles de la zone, cliquez sur Supprimer l’icône sur l’utilisateur ou ![ le groupe dans la ](../../media/scc-remove-icon.png) zone.
      - Pour supprimer des entrées existantes de la liste sous la zone, cliquez sur **Supprimer** ![ l’icône ](../../media/scc-remove-icon.png) Supprimer l’entrée.
 
      Lorsque vous avez terminé, cliquez sur **Ajouter**.
@@ -92,7 +92,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. Dans la page **De révision,** examinez vos paramètres. Vous pouvez cliquer **sur Modifier** dans la section spécifique pour apporter des modifications.
+5. Dans la page **de balise Révision,** examinez vos paramètres. Vous pouvez cliquer **sur Modifier** dans la section spécifique pour apporter des modifications.
 
    Lorsque vous avez terminé, cliquez sur **Envoyer.**
 
@@ -102,7 +102,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 2. Dans la page **Balises utilisateur** qui s’ouvre, sélectionnez la balise utilisateur à afficher (ne cliquez pas sur la case à cocher).
 
-3. Dans la liste des détails en lecture seule qui s’affiche, examinez les paramètres.
+3. Dans la volée de détails en lecture seule qui s’affiche, examinez les paramètres.
 
    Lorsque vous avez terminé, cliquez sur **Fermer**.
 

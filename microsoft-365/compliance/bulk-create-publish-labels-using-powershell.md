@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser PowerShell pour la création et la publication d’étiquettes de rétention à partir de la ligne de commande, indépendamment du Centre de conformité Microsoft 365.
-ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918220"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Créer et publier des étiquettes de rétention à l’aide de PowerShell
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Après avoir décidé d’utiliser les [étiquettes de rétention](retention.md) pour vous permettre de conserver ou de supprimer des documents et messages électroniques dans Microsoft 365, vous vous êtes peut-être rendu compte que vous avez de nombreuses étiquettes de rétention, voire des centaines, à créer et à publier. Pour créer des étiquettes de rétention à l’échelle, nous vous conseillons d’utiliser [plan de fichiers](file-plan-manager.md) depuis le Centre de conformité Microsoft 365. Cependant, vous pouvez également utiliser les applets de commande [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
@@ -51,7 +51,7 @@ Les exemples de scripts fournis dans cet article ne sont pas pris en charge par 
 
 2. Convertissez le texte en colonnes : onglet **Données** \> **Texte en colonnes** \> **Délimité** \> **Virgule** \> **Général**
 
-2. Remplacez les exemples par des entrées pour vos propres étiquettes et paramètres de rétention. Si vous souhaitez en savoir plus sur les valeurs de paramètre, consultez l’article [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+2. Remplacez les exemples par des entrées pour vos propres étiquettes et paramètres de rétention. Si vous souhaitez en savoir plus sur les valeurs de paramètre, consultez l’article [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
 3. Enregistrez la feuille de calcul en tant que fichier .csv dans un emplacement facile à trouver pour une étape ultérieure. Par exemple : C :\>Scripts\Labels.csv
 
@@ -78,7 +78,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. Convertissez le texte en colonnes : onglet **Données** \> **Texte en colonnes** \> **Délimité** \> **Virgule** \> **Général**
 
-2. Remplacez les exemples par des entrées pour vos propres stratégies d’étiquettes et paramètres de rétention. Pour en savoir plus sur les valeurs de paramètre pour cette applet de commande, consultez l’article [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).
+2. Remplacez les exemples par des entrées pour vos propres stratégies d’étiquettes et paramètres de rétention. Pour en savoir plus sur les valeurs de paramètre pour cette applet de commande, consultez l’article [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).
 
 3. Enregistrez la feuille de calcul en tant que fichier .csv dans un emplacement facile à trouver pour une étape ultérieure. Par exemple : `<path>Policies.csv`
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>Étape 4 : exécution du script PowerShell
 
-Tout d’abord, [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Tout d’abord, [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
 Puis exécutez le script qui permet de créer et de publier les étiquettes de rétention :
   
@@ -761,5 +761,3 @@ Vous trouverez le fichier journal à l’emplacement suivant, bien que les chiff
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
 ```
-
-
