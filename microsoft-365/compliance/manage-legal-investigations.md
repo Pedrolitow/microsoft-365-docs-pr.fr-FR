@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez les cas eDiscovery dans le Centre de sécurité & conformité dans Office 365 pour gérer l’examen juridique de votre organisation.
-ms.openlocfilehash: 7a02bd47f93a85e643694efea4dcc140847916e0
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c052daab8de33e21cccc3c638ab4995a007f60fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840703"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903458"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes judiciaires dans Microsoft 365
 
@@ -34,7 +34,7 @@ Les organisations ont de nombreuses raisons de répondre à un dossier juridique
 
 Les cas eDiscovery vous permet de contrôler qui peut créer, consulter et gérer des cas eDiscovery dans votre organisation. Utilisez des cas pour ajouter des membres et contrôler les types d’actions qu’ils peuvent effectuer, placer en attente les emplacements de contenu pertinents pour un dossier juridique et utiliser l’outil de recherche de contenu pour rechercher dans les emplacements en attente du contenu qui peut répondre à votre cas. Ensuite, vous pouvez également exporter et télécharger ces résultats pour un examen plus approfondie par des réviseurs externes.
   
-- [Gérez votre flux de travail eDiscovery](ediscovery-cases.md) en créant et en utilisant des cas eDiscovery pour chaque enquête juridique que votre organisation doit entreprendre.
+- [Gérez votre flux de travail eDiscovery](./get-started-core-ediscovery.md) en créant et en utilisant des cas eDiscovery pour chaque enquête juridique que votre organisation doit entreprendre.
 
 - [Attribuez des autorisations eDiscovery](assign-ediscovery-permissions.md) pour contrôler qui peut créer et gérer des cas eDiscovery dans votre organisation.
 
@@ -42,7 +42,7 @@ Les cas eDiscovery vous permet de contrôler qui peut créer, consulter et gére
 
 - [Recherchez du contenu](search-for-content.md) dans votre organisation.
 
-### <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour les scénarios avancés
+### <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour des scénarios avancés
 
 Comme dans la section précédente qui a répertorié des scripts pour les scénarios de recherche de contenu, nous avons également créé des scripts powerShell du Centre de sécurité & conformité pour vous aider à gérer les cas eDiscovery.
   
@@ -66,12 +66,12 @@ Voici une vue d’ensemble rapide du flux de travail intégré dans Advanced eDi
 
 - [Indexez les données du](processing-data-for-case.md) dépositaire et corrigez les erreurs d’indexation afin de pouvoir collecter efficacement des données pour vos enquêtes.
 
-- [Collectez des](collecting-data-for-ediscovery.md) données pour un cas et ajoutez-les à [un groupe de révision pour](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) un examen plus approfondi.
+- [Collectez les](collecting-data-for-ediscovery.md) données d’un cas et ajoutez-les à [un groupe de révision pour](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) un examen plus approfondi.
 
 - [Afficher des](view-documents-in-review-set.md) documents, [des données de](review-set-search.md) requête et des éléments [de](tagging-documents.md) balise dans un jeu à réviser.
 
-- [Analyser les données de cas à](analyzing-data-in-review-set.md) l’aide d’outils d’analyse avancés.
+- [Analysez les données de cas à](analyzing-data-in-review-set.md) l’aide d’outils d’analyse avancés.
 
-- [Exporter des données de cas pour](exporting-data-ediscover20.md) révision par un conseiller externe.
+- [Exporter les données de cas pour](exporting-data-ediscover20.md) révision par un conseiller externe.
 
 - [Gérer les travaux de longue durée](managing-jobs-ediscovery20.md) dans Advanced eDiscovery.

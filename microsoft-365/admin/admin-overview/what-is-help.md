@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Découvrez toutes les façons d’obtenir de l’aide à l’aide du Centre d’administration Microsoft 365.
-ms.openlocfilehash: 23c325aa4a9a0fbf5ec8bfd16bd329540fcd4606
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fdf88c59c640798469a00d17d0c23efe5fe1ce2b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646510"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904335"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -46,11 +46,11 @@ L’aide est intégrée dans l’ensemble du Centre d’administration. Elle est
 
 ![Page Groupes affichant l’aide en ligne et des liens vers des articles](../../media/integrated-help.png)
 
-## <a name="modern-self-help-powered-by-ai"></a>Autonome moderne optimisé par l’IA
+## <a name="modern-self-help-powered-by-ai"></a>Aide autonome moderne optimisée par l’IA
 
-Pour ouvrir notre expérience autonome moderne optimisée par l’intelligence artificielle, sélectionnez le bouton Besoin d’aide dans le Centre d’administration Microsoft 365.  Par exemple, si vous recherchez « vérifier mon domaine », vous obtenez les étapes et quelques articles qui, selon nous, vous aideront. Nous utilisons l’apprentissage automatique pour faire surface de la solution la plus proche qui a permis aux autres administrateurs qui ont entré des requêtes similaires.
+Pour ouvrir notre expérience d’aide autonome moderne optimisée  par l’intelligence artificielle, sélectionnez le bouton Besoin d’aide dans le Centre d’administration Microsoft 365. Par exemple, si vous recherchez « vérifier mon domaine », vous obtenez les étapes et quelques articles qui, selon nous, vous aideront. Nous utilisons l’apprentissage automatique pour faire surface de la solution la plus proche qui a permis aux autres administrateurs qui ont entré des requêtes similaires.
 
-Ou, pour les moments où vous ne savez pas vraiment comment faire quelque chose dans votre situation spécifique, utilisez l’Assistant Support. Actuellement, cette expérience est disponible uniquement en anglais. Pour activer l’Assistant Support, utilisez simplement le basculement en haut **du** volet Besoin d’aide. L’Assistant Support fournit une interface de conversation pour vous aider. Une fois que vous avez entré votre requête, le chatbot vous pose des questions de clarification pour vous aider à trouver la réponse à votre situation spécifique. Pensez-y comme votre assistant virtuel pour découvrir des solutions et effectuer des tâches.
+Ou, pour les moments où vous ne savez pas vraiment comment faire quelque chose dans votre situation spécifique, utilisez l’Assistant Support. Actuellement, cette expérience est disponible uniquement en anglais. Pour activer l’Assistant Support, utilisez simplement le  basculement en haut du volet Besoin d’aide. L’Assistant Support fournit une interface de conversation pour vous aider. Une fois que vous avez entré votre requête, le chatbot vous pose des questions de clarification pour vous aider à trouver la réponse à votre situation spécifique. Pensez-y comme votre assistant virtuel pour découvrir des solutions et effectuer des tâches.
 
 ![Auto-aide moderne](../../media/help-options.png)
 
@@ -58,4 +58,4 @@ Bien entendu, les humains répondent parfois mieux aux questions. Si notre auto-
 
 ## <a name="guides-and-articles"></a>Guides et articles
 
-En outre, si vous recherchez des guides de déploiement complets, des procédures pas à pas rapides ou des cmdlets PowerShell, recherchez-nous sur le web. Nous mettez fréquemment à jour le contenu et essayons de vous fournir les informations les plus récentes. Consultez nos articles et guides sur le site de [documentation de Microsoft 365.](https://docs.microsoft.com/microsoft-365/)
+En outre, si vous recherchez des guides de déploiement complets, des procédures pas à pas rapides ou des cmdlets PowerShell, recherchez-nous sur le web. Nous mettez fréquemment à jour le contenu et nous essayons de vous fournir les informations les plus récentes. Consultez nos articles et guides sur le site de [documentation de Microsoft 365.](../../index.yml)

@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Dans cet article, recherchez des détails sur la prise en charge du client et des services Microsoft 365.
-ms.openlocfilehash: 4e32e39281175ed66970a358ff632c2ddbb3ac1a
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+description: Dans cet article, recherchez des détails sur la prise en charge des applications clientes et de services Microsoft 365.
+ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097475"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905007"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Prise en charge des applications client et de services Microsoft 365
 
@@ -89,7 +89,7 @@ Lorsqu’un utilisateur accède aux données de l’organisation, l’organisati
 Pour le contenu géré par l’organisation, vous pouvez appliquer des stratégies de gestion des applications pour contrôler la façon dont les données sont accessibles, partagées et utilisées à l’aide de Microsoft Intune. Par exemple, les actions suivantes sont prises en charge :
 
 - Effacer à distance le contenu de l’organisation gérée (également appelé données d’organisation)
-- Empêcher le pasting de contenu d’organisation dans des emplacements non-organisation
+- Empêcher le pasting de contenu d’organisation dans des emplacements autres que l’organisation
 - Exiger un code confidentiel pour accéder au contenu de l’organisation
 - Empêcher l’exécution d’applications gérées sur des appareils jailbreakés ou racines
 - Empêcher l’enregistrée du contenu de l’organisation dans les fournisseurs de stockage cloud non désapprouvés
@@ -108,24 +108,24 @@ Pour plus d’informations sur la gestion des applications mobiles avec Microsof
 - Possession (quelque chose qu’ils ont)
 - Inherence (quelque chose qu’ils sont)
 
-Pour plus d’informations sur l’authentification multifacteur pour la prise en charge des applications client et de services, voir Prise en charge des applications [clientes Microsoft 365 : authentification multifacteur.](microsoft-365-client-support-multi-factor-authentication.md)
+Pour plus d’informations sur l’authentification multifacteur pour la prise en charge des applications client et de services, voir Prise en charge des applications [clientes Microsoft 365](microsoft-365-client-support-multi-factor-authentication.md): authentification multifacteur.
 
 ### <a name="single-sign-on"></a>Authentification unique
 
 L' sign-on unique (SSO) ajoute sécurité et commodité lorsque vos utilisateurs se connectent aux applications dans Azure Active Directory. Avec l' sign-on unique, les utilisateurs se connectent une fois avec un compte pour accéder aux appareils joints au domaine AD DS (Active Directory Domain Services) locaux, aux applications SaaS (Software as a Service) et aux applications web de votre organisation.
 
-Pour plus d’informations sur l' sign-on unique pour la prise en charge des applications client et de services, voir Prise en charge de l’application [cliente Microsoft 365 : Sign-on unique](microsoft-365-client-support-single-sign-on.md).
+Pour plus d’informations sur l' sign-on unique pour la prise en charge des applications client et de services, voir Prise en charge des applications [clientes Microsoft 365 : Sign-on unique](microsoft-365-client-support-single-sign-on.md).
 
 ## <a name="services-support"></a>Prise en charge des services
 
 ### <a name="modern-authentication"></a>Authentification moderne
 
-L’authentification moderne permet aux clients de s’authentifier par rapport à Office 365 et aux administrateurs clients d’appliquer des exigences d’authentification spécifiques au sein de la location Office 365, telles que :
+L’authentification moderne permet aux clients de s’authentifier sur Office 365 et aux administrateurs clients d’appliquer des exigences d’authentification spécifiques au sein de la location Office 365, telles que :
 
 - Prise en charge de l’authentification multifacteur pour l’interaction administrative avec le client et les services, et l’interaction de l’utilisateur final avec les applications et leurs données
 - Accès conditionnel
 - Se connecte au fournisseur d’identité tiers SAML
-- Journal des cartes à puce sur des ordinateurs personnels
+- Connexion par carte à puce sur des ordinateurs personnels
 - Authentification basée sur les certificats sur les appareils mobiles
 - Ne nécessite plus la transmission des informations d’identification sur l’authentification de base.
 
@@ -152,4 +152,4 @@ Pour fournir le meilleur chiffrement de classe à nos clients, Microsoft prévoi
 
 Nous savons que la sécurité de vos données est importante et nous nous engageons à assurer la transparence des modifications susceptibles d’affecter votre utilisation du service TLS. Il est recommandé que toutes les combinaisons client-serveur et navigateur-serveur utilisent TLS 1.2 (ou une version ultérieure) pour maintenir la connexion aux services Office 365. Il se peut que vous deviez procéder à la mise à jour de certaines combinaisons client-serveur et navigateur-serveur.
 
-Pour plus d’informations sur la prise en charge de TLS 1.2 et la prise en charge des services, voir Préparation de [TLS 1.2 dans Office 365 et Office 365 GCC](/microsoft-365/compliance/prepare-tls-1.2-in-office-365).
+Pour plus d’informations sur la prise en charge de TLS 1.2 et la prise en charge des services, voir Préparation de [TLS 1.2 dans Office 365 et Office 365 GCC](../compliance/prepare-tls-1.2-in-office-365.md).

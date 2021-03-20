@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de l’outil ICE Chat dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 79a18017ce7aa3c646fa6c7230bde4b001ddc4c8
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 663b122ec81a3d2d448e8d0abe5da0bdd9dc7313
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790168"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904182"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurer un connecteur pour archiver les données ICE Chat
 
 Utilisez un connecteur natif dans le Centre de conformité Microsoft 365 pour importer et archiver les données de conversation des services financiers à partir de l’outil de collaboration ICE Chat. Après avoir configuré et configuré un connecteur, il se connecte au site FTP sécurisé (SFTP) ICE Chat (SFTP) de votre organisation une fois par jour, convertit le contenu des messages de conversation au format de message électronique, puis importe ces éléments dans les boîtes aux lettres dans Microsoft 365.
 
-Une fois les données de conversation ICE stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, l’archivage, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données ICE Chat. Par exemple, vous pouvez rechercher des messages ICE Chat à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données ICE Chat à un dépositaire dans un cas Advanced eDiscovery. L’utilisation d’un connecteur de conversation ICE pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois les données de conversation ICE stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, l’archivage, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données ICE Chat. Par exemple, vous pouvez rechercher des messages ICE Chat à l’aide de la recherche de contenu ou associer la boîte aux lettres contenant les données ICE Chat à un dépositaire dans un cas Advanced eDiscovery. L’utilisation d’un connecteur de conversation ICE pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-ice-chat-data"></a>Vue d’ensemble de l’archivage des données ICE Chat
 
@@ -37,7 +37,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 3. Le connecteur de conversation ICE que vous créez dans le Centre de conformité Microsoft 365 se connecte au site ICE Chat SFTP tous les jours et transfère les messages de conversation des 24 heures précédentes vers un emplacement de stockage Azure sécurisé dans microsoft cloud. Le connecteur convertit également le contenu d’une conversation en format de message électronique.
 
-4. Le connecteur importe des éléments de message de conversation dans les boîtes aux lettres d’utilisateurs spécifiques. Un nouveau dossier nommé **ICE Chat** est créé dans les boîtes aux lettres utilisateur et les éléments de message de conversation sont importés dans ce dossier. Le connecteur utilise la valeur des propriétés *SenderEmail* et *RecipientEmail.* Chaque message de conversation contient ces propriétés, qui sont remplies avec l’adresse e-mail de l’expéditeur et chaque destinataire/participant du message de conversation.
+4. Le connecteur importe des éléments de message de conversation dans les boîtes aux lettres d’utilisateurs spécifiques. Un nouveau dossier nommé **ICE Chat** est créé dans les boîtes aux lettres de l’utilisateur et les éléments de message de conversation sont importés dans ce dossier. Le connecteur utilise la valeur des propriétés *SenderEmail* et *RecipientEmail.* Chaque message de conversation contient ces propriétés, qui sont remplies avec l’adresse e-mail de l’expéditeur et chaque destinataire/participant du message de conversation.
 
    Outre le mappage automatique des utilisateurs qui utilise les valeurs des *propriétés SenderEmail* et *RecipientEmail* (ce qui signifie que le connecteur importe un message de conversation dans la boîte aux lettres de l’expéditeur et les boîtes aux lettres de chaque destinataire), vous pouvez également définir un mappage utilisateur personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage contient *l’ID* de conversation ICE et l’adresse de boîte aux lettres Microsoft 365 correspondante pour chaque utilisateur de votre organisation. Si vous activez le mappage automatique des utilisateurs et fournissez un fichier de mappage personnalisé, pour chaque élément de conversation, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas de compte d’utilisateur Microsoft 365 valide correspondant à l’ID de conversation ICE d’un utilisateur, le connecteur utilise les propriétés *SenderEmail* et *RecipientEmail* de l’élément de conversation pour importer l’élément dans les boîtes aux lettres des participants de la conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans les propriétés *SenderEmail* et *RecipientEmail,* l’élément n’est pas importé.
 
@@ -51,17 +51,17 @@ Certaines des étapes d’implémentation requises pour archiver les données IC
 
 - Le connecteur ICE Chat peut importer un total de 200 000 éléments en une seule journée. S’il y a plus de 200 000 éléments sur le site SFTP, aucun de ces éléments ne sera importé dans Microsoft 365.
 
-- L’administrateur qui crée le connecteur de conversation ICE à l’étape 3 (et qui télécharge les clés publiques et l’adresse IP à l’étape 1) doit se voir attribuer le rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+- L’administrateur qui crée le connecteur de conversation ICE à l’étape 3 (et qui télécharge les clés publiques et l’adresse IP à l’étape 1) doit se voir attribuer le rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 ## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>Étape 1 : Obtenir des clés publiques SSH et PGP
 
-La première étape consiste à obtenir une copie des clés publiques pour Le Shell sécurisé (SSH) et PGP (Pretty Good Privacy). Vous utilisez ces clés à l’étape 2 pour configurer le site ICE Chat SFTP afin d’autoriser le connecteur (que vous créez à l’étape 3) à se connecter au site SFTP et à transférer les données ICE Chat vers les boîtes aux lettres Microsoft 365. Vous obtenez également une adresse IP à cette étape, que vous utiliserez lors de la configuration du site SFTP ICE Chat.
+La première étape consiste à obtenir une copie des clés publiques pour Le Shell sécurisé (SSH) et PGP (Pretty Good Privacy). Vous utilisez ces clés à l’étape 2 pour configurer le site ICE Chat SFTP afin d’autoriser le connecteur (que vous créez à l’étape 3) à se connecter au site SFTP et à transférer les données ICE Chat vers les boîtes aux lettres Microsoft 365. Vous obtenez également une adresse IP dans cette étape, que vous utiliserez lors de la configuration du site SFTP ICE Chat.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
 2. Dans la page **Connecteurs de données** sous **ICE Chat,** cliquez sur **Afficher.**
 
-3. Dans la page **CONVERSATION ICE,** cliquez sur **Ajouter un connecteur.**
+3. Dans la page **ICE Chat,** cliquez **sur Ajouter un connecteur.**
 
 4. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
@@ -87,7 +87,7 @@ La dernière étape consiste à créer un connecteur ICE Chat dans le Centre de 
 
 2. Dans la page **Connecteurs de données** sous **ICE Chat,** cliquez sur **Afficher.**
 
-3. Dans la page **CONVERSATION ICE,** cliquez sur **Ajouter un connecteur.**
+3. Dans la page **ICE Chat,** cliquez **sur Ajouter un connecteur.**
 
 4. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
@@ -103,7 +103,7 @@ La dernière étape consiste à créer un connecteur ICE Chat dans le Centre de 
 
 6. Une fois la connexion validée, cliquez sur **Suivant.**
 
-7. Dans la page Mapage des utilisateurs externes aux utilisateurs **de Microsoft 365,** activez le mappage automatique des utilisateurs et fournissez un mappage utilisateur personnalisé selon les besoins. Vous pouvez télécharger une copie du fichier CSV de mappage utilisateur sur cette page. Vous pouvez ajouter les mappages utilisateur au fichier, puis le télécharger.
+7. Dans la page Ma mappage des utilisateurs externes avec les utilisateurs **Microsoft 365,** activez le mappage automatique des utilisateurs et fournissez un mappage utilisateur personnalisé selon les besoins. Vous pouvez télécharger une copie du fichier CSV de mappage utilisateur sur cette page. Vous pouvez ajouter les mappages utilisateur au fichier, puis le télécharger.
 
    > [!NOTE]
    > Comme indiqué précédemment, le fichier CSV du fichier de mappage personnalisé contient l’ID de conversation ICE et l’adresse de boîte aux lettres Microsoft 365 correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de conversation, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide qui correspond à l’identit de conversation ICE d’un utilisateur, le connecteur importe l’élément dans les boîtes aux lettres des utilisateurs spécifiés dans les propriétés *SenderEmail* et *RecipientEmail* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide par mappage utilisateur automatique ou personnalisé, l’élément n’est pas importé.

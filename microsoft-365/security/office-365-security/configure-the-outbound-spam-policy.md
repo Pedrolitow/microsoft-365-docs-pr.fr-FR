@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 748b274903590c5e28f34ce2fb4e65292d382cd2
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: aec3149a4a91e011c6d6d206d9fc10f36a3d6588
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717624"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903903"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
@@ -37,7 +37,7 @@ ms.locfileid: "50717624"
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîte aux lettres Exchange Online, les messages électroniques sortants envoyés via EOP sont automatiquement vérifiés pour le courrier indésirable et l’activité d’envoi inhabituelle.
 
-Le courrier indésirable sortant provenant d’un utilisateur de votre organisation indique généralement un compte compromis. Les messages sortants suspects sont marqués comme courrier indésirable (quel que soit le niveau de confiance du courrier indésirable ou SCL) et sont acheminés via le pool de remise à risque élevé pour protéger la réputation du service [(c’est-à-dire,](high-risk-delivery-pool-for-outbound-messages.md) empêcher les serveurs de messagerie source Microsoft 365 des listes d’adresses IP bloqués). Les administrateurs sont automatiquement avertis de l’activité de courrier sortant suspect et des utilisateurs bloqués via les stratégies [d’alerte.](../../compliance/alert-policies.md)
+Le courrier indésirable sortant provenant d’un utilisateur de votre organisation indique généralement un compte compromis. Les messages sortants suspects sont marqués comme courrier indésirable (quel que soit le niveau de confiance du courrier indésirable ou le SCL) et sont acheminés via le pool de remise à risque élevé pour protéger la réputation du service [(c’est-à-dire,](high-risk-delivery-pool-for-outbound-messages.md) empêcher les serveurs de messagerie source Microsoft 365 des listes d’adresses IP bloqués). Les administrateurs sont automatiquement avertis de l’activité de courrier sortant suspect et des utilisateurs bloqués via les stratégies [d’alerte.](../../compliance/alert-policies.md)
 
 EOP utilise des stratégies de courrier indésirable sortant dans le cadre de la protection globale de votre organisation contre le courrier indésirable. Pour plus d’informations, voir [Protection contre le courrier indésirable](anti-spam-protection.md).
 
@@ -70,18 +70,18 @@ Pour accroître l’efficacité du filtrage du courrier indésirable sortant, vo
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **Paramètres anti-courrier indésirable**, utilisez <https://protection.office.com/antispam>.
 
-- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cet article :
   - Pour ajouter, modifier et supprimer des stratégies de courrier  indésirable sortant, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
   - Pour accéder en lecture seule aux stratégies de courrier  indésirable sortant, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
 
-  Pour plus d'informations, voir [Permissions en échange en ligne](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
   **Remarques** :
 
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
-  - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
+  - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour obtenir nos paramètres recommandés pour les stratégies de courrier indésirable sortant, consultez les paramètres de stratégie de filtrage du courrier indésirable sortant [EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)
 
@@ -93,9 +93,9 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
 1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Stratégie** \> **Anti-courrier indésirable**.
 
-2. Dans la page **Paramètres anti-courrier** indésirable, cliquez sur **Créer une stratégie sortante.**
+2. Dans la page **Paramètres anti-courrier** indésirable, cliquez **sur Créer une stratégie sortante.**
 
-3. Dans la **stratégie de filtrage du courrier indésirable** sortant qui s’ouvre, configurez les paramètres suivants :
+3. Dans la **stratégie de filtrage du** courrier indésirable sortant qui s’ouvre, configurez les paramètres suivants :
 
    - **Nom** Entrez un nom unique et descriptif pour la stratégie.
 
@@ -114,13 +114,13 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
      1. Cliquez **sur Ajouter des personnes.** Dans le **volant Ajouter ou supprimer des destinataires** qui s’affiche :
 
-     1. Entrez l’adresse de courrier de l’expéditeur. Vous pouvez spécifier plusieurs adresses de messagerie séparées par des points-virgules (;) ou un destinataire par ligne.
+     1. Entrez l’adresse de courrier de l’expéditeur. Vous pouvez spécifier plusieurs adresses e-mail séparées par des points-virgules (;) ou un destinataire par ligne.
 
      1. Clic  ![Icône Ajouter](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) pour ajouter les destinataires.
 
         Répétez ces étapes autant de fois que nécessaire.
 
-        Les destinataires que vous avez ajoutés apparaissent dans la section **Liste des** destinataires du volet volant. Pour supprimer un destinataire, cliquez sur ![ Le bouton ](../../media/scc-remove-icon.png) Supprimer.
+        Les destinataires que vous avez ajoutés apparaissent dans la section **Liste des** destinataires du volet volant. Pour supprimer un destinataire, cliquez sur ![ Supprimer le bouton ](../../media/scc-remove-icon.png) .
 
      1. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -141,7 +141,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
    - **Nombre maximal de destinataires par utilisateur**
 
-     Une valeur valide est de 0 à 10 000. La valeur par défaut est 0, ce qui signifie que les valeurs par défaut du service sont utilisées. Pour plus d’informations, voir [Limites d’envoi.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
+     Une valeur valide est de 0 à 10 000. La valeur par défaut est 0, ce qui signifie que les valeurs par défaut du service sont utilisées. Pour plus d’informations, voir [Limites d’envoi.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
      - **Limite horaire externe :** nombre maximal de destinataires externes par heure.
 
@@ -149,7 +149,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
      - **Limite quotidienne**: nombre total maximal de destinataires par jour.
 
-   - **Action lorsqu’un utilisateur dépasse** les limites ci-dessus : Configurez l’action à prendre lorsqu’une des **limites** de destinataire est dépassée. Pour toutes les actions, les  destinataires spécifiés dans l’utilisateur ne  peuvent pas envoyer de stratégie d’alerte de courrier électronique (et, désormais, redondants Notifier des personnes spécifiques si un expéditeur est bloqué en raison de l’envoi de courrier indésirable sortant dans la stratégie de courrier indésirable sortant reçoivent des notifications par courrier électronique.
+   - **Action lorsqu’un utilisateur dépasse les limites** ci-dessus : configurez l’action à prendre lorsqu’une des **limites de destinataires** est dépassée. Pour toutes les actions, les  destinataires spécifiés dans l’utilisateur ne  peuvent pas envoyer de stratégie d’alerte de courrier électronique (et, désormais, redondants Notifier des personnes spécifiques si un expéditeur est bloqué en raison de l’envoi de courrier indésirable sortant dans la stratégie de courrier indésirable sortant reçoivent des notifications par courrier électronique.
 
      - **Empêchez l’utilisateur d’envoyer des messages jusqu’au jour suivant**: il s’agit de la valeur par défaut. Les notifications par courrier électronique sont envoyées et l’utilisateur ne pourra plus envoyer de messages avant le jour suivant, en fonction de l’heure UTC. Il n’existe aucun moyen pour l’administrateur de remplacer ce bloc.
 
@@ -171,13 +171,13 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
    >
    > - Ces paramètres s’appliquent uniquement aux boîtes aux lettres en nuage.
    >
-   > - Lorsque le forwarding automatique est désactivé, le destinataire reçoit une note de non-remise (également appelée NDR ou bounce message) si des expéditeurs externes envoient des courriers électroniques à une boîte aux lettres sur place. Si le message est envoyé  par un expéditeur interne et que la méthode de forwarding est le [forwarding](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) de boîte aux lettres (également appelé « _forwarding SMTP_», l’expéditeur interne reçoit la NDR. L’expéditeur interne ne reçoit pas de rapport de non-réception si le forwarding s’est produit en raison d’une règle de boîte de réception.
+   > - Lorsque le forwarding automatique est désactivé, le destinataire reçoit une note de non-remise (également appelée NDR ou bounce message) si des expéditeurs externes envoient des courriers électroniques à une boîte aux lettres sur place. Si le message est envoyé  par un expéditeur interne et que la méthode de forwarding est le [forwarding](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) de boîte aux lettres (également appelé « _forwarding SMTP_», l’expéditeur interne reçoit la NDR. L’expéditeur interne ne reçoit pas de rapport de non-réception si le forwarding s’est produit en raison d’une règle de boîte de réception.
 
    Les valeurs disponibles sont :
 
    - **Automatique - Contrôlé par le système**: autorise le filtrage du courrier indésirable sortant pour contrôler le transport automatique de messages externes. Ceci est la valeur par défaut.
    - **On**: le forwarding automatique du courrier externe n’est pas désactivé par la stratégie.
-   - **Désactivé**: tous les envois automatiques de courrier externe sont désactivés par la stratégie.
+   - **Désactivé**: tous les messages externes automatiques sont désactivés par la stratégie.
 
 7. (Obligatoire) Développez la section **Appliqué à** pour identifier les expéditeurs internes à qui la stratégie s’applique.
 
@@ -295,7 +295,7 @@ La création d’une stratégie de courrier indésirable sortant dans PowerShell
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de filtrage du courrier indésirable sortant dans PowerShell qui ne sont pas disponibles dans le Centre de sécurité & conformité tant que vous n’avez pas créé la stratégie :
 
   - Créez la stratégie comme _désactivée_ ( activée sur la `$false` cmdlet **New-HostedOutboundSpamFilterRule).**
-  - Définissez la priorité de la stratégie lors de la création (_Priorité_ ) sur la _\<Number\>_ cmdlet **New-HostedOutboundSpamFilterRule).**
+  - Définissez la priorité de la stratégie lors de la création _(priorité)_ sur la _\<Number\>_ cmdlet **New-HostedOutboundSpamFilterRule).**
 
 - Une nouvelle stratégie de filtrage du courrier indésirable sortant que vous créez dans PowerShell n’est pas visible dans le Centre de sécurité & conformité tant que vous n’avez pas attribué la stratégie à une règle de filtrage du courrier indésirable.
 
@@ -309,7 +309,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 Cet exemple crée une stratégie de filtrage du courrier indésirable sortant nommée Contoso Executives avec les paramètres suivants :
 
-- Les limites de taux de destinataires sont limitées aux valeurs plus petites que les valeurs par défaut. Pour plus d’informations, voir [Limites d’envoi dans les options Microsoft 365.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
+- Les limites de taux de destinataires sont limitées aux valeurs plus petites que les valeurs par défaut. Pour plus d’informations, voir [Limites d’envoi dans les options Microsoft 365.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
 
 - Une fois l’une des limites atteinte, l’utilisateur ne peut plus envoyer de messages.
 
@@ -317,7 +317,7 @@ Cet exemple crée une stratégie de filtrage du courrier indésirable sortant no
 New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterpolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/new-hostedoutboundspamfilterpolicy).
 
 #### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a>Étape 2 : Utiliser PowerShell pour créer une règle de filtrage du courrier indésirable sortant
 
@@ -336,7 +336,7 @@ Cet exemple crée une règle de filtrage du courrier indésirable sortant nommé
 New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -FromMemberOf "Contoso Executives Group"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-HostedOutboundSpamFilterRule](/powershell/module/exchange/new-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a>Utiliser PowerShell pour afficher les stratégies de filtrage du courrier indésirable sortant
 
@@ -358,7 +358,7 @@ Cet exemple renvoie toutes les valeurs de propriété pour la stratégie de filt
 Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterpolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/get-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-rules"></a>Utiliser PowerShell pour afficher les règles de filtrage du courrier indésirable sortant
 
@@ -396,14 +396,14 @@ Cet exemple renvoie toutes les valeurs de propriété pour la règle de filtrage
 Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-HostedOutboundSpamFilterRule](/powershell/module/exchange/get-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>Utiliser PowerShell pour modifier les stratégies de filtrage du courrier indésirable sortant
 
 Les mêmes paramètres sont disponibles lorsque vous modifiez une stratégie de filtrage des programmes malveillants dans PowerShell que lorsque vous créez la stratégie comme décrit à l’étape 1 : Utiliser [PowerShell](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) pour créer une section de stratégie de filtrage du courrier indésirable sortant plus tôt dans cet article.
 
 > [!NOTE]
-> Vous ne pouvez pas renommer une stratégie de filtrage du courrier indésirable sortant (la cmdlet **Set-HostedOutboundSpamFilterPolicy** n’a pas de _paramètre Name)._ Lorsque vous renommez une stratégie de courrier indésirable sortant dans le Centre de sécurité & conformité, vous renommez uniquement la règle de filtrage du courrier indésirable _sortant._
+> Vous ne pouvez pas renommer une stratégie de filtrage du courrier indésirable sortant (la cmdlet **Set-HostedOutboundSpamFilterPolicy** n’a pas de _paramètre Name)._ Lorsque vous renommez une stratégie de courrier indésirable sortant dans le Centre de sécurité & conformité, vous renommez uniquement la règle de filtrage du courrier _indésirable sortant._
 
 Pour modifier une stratégie de filtrage du courrier indésirable sortant, utilisez la syntaxe suivante :
 
@@ -411,7 +411,7 @@ Pour modifier une stratégie de filtrage du courrier indésirable sortant, utili
 Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterpolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/set-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a>Utiliser PowerShell pour modifier les règles de filtrage du courrier indésirable sortant
 
@@ -425,7 +425,7 @@ Pour modifier une règle de filtrage du courrier indésirable sortant, utilisez 
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-HostedOutboundSpamFilterRule](/powershell/module/exchange/set-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>Utiliser PowerShell pour activer ou désactiver les règles de filtrage du courrier indésirable sortant
 
@@ -449,7 +449,7 @@ Cet exemple montre comment activer la même règle.
 Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedoutboundspamfilterrule) et [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedoutboundspamfilterrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Enable-HostedOutboundSpamFilterRule](/powershell/module/exchange/enable-hostedoutboundspamfilterrule) et [Disable-HostedOutboundSpamFilterRule](/powershell/module/exchange/disable-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>Utiliser PowerShell pour définir la priorité des règles de filtrage du courrier indésirable sortant
 
@@ -469,7 +469,7 @@ Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 
 > [!NOTE]
 >
-> - Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez plutôt le paramètre _Priority_ sur la cmdlet **New-HostedOutboundSpamFilterRule.**
+> - Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez le paramètre _Priority_ sur la cmdlet **New-HostedOutboundSpamFilterRule** à la place.
 >
 > - La stratégie de filtrage du courrier indésirable par défaut sortante n’a pas de règle de filtrage de courrier indésirable correspondante et elle a toujours la valeur de priorité nonmodifiable La plus **faible**.
 
@@ -489,7 +489,7 @@ Cet exemple supprime la stratégie de filtrage du courrier indésirable sortant 
 Remove-HostedOutboundSpamFilterPolicy -Identity "Marketing Department"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterpolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/remove-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-rules"></a>Utiliser PowerShell pour supprimer des règles de filtrage du courrier indésirable sortant
 
@@ -507,7 +507,7 @@ Cet exemple supprime la règle de filtrage du courrier indésirable sortant nomm
 Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-HostedOutboundSpamFilterRule](/powershell/module/exchange/remove-hostedoutboundspamfilterrule).
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 

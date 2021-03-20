@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Le centre d'administration vous permet de configurer votre organisation dans le cloud et gérer les utilisateurs et les abonnements. Tout d’abord, connectez-vous au compte avec des autorisations d’administrateur.
-ms.openlocfilehash: 0c7ec95ffbda76f5d754c157e4099e1ef2c81766
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: dca9e5dd4cc8a35721014fa06c0bb844b608778c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307336"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903547"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
@@ -67,25 +67,25 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 2. Sélectionnez l’icône du lanceur d’applications située en haut à gauche et choisissez **Administrateur**.
 
-    La **vignette** Administrateur s’affiche uniquement pour les personnes qui ont des [autorisations d’administrateur](../add-users/about-admin-roles.md)Microsoft 365. Si vous ne voyez pas la vignette, vous n’êtes pas autorisé à accéder au Centre d’administration de votre organisation.
+    La **vignette** Administrateur s’affiche uniquement pour les personnes qui ont des [autorisations d’administrateur](../add-users/about-admin-roles.md)Microsoft 365. Si la vignette ne s'affiche pas, cela signifie que vous ne disposez pas des autorisations d'accès au Centre d'administration pour votre organisation.
 
 ## <a name="admin-center-features-and-settings"></a>Fonctionnalités et paramètres du centre d’administration
 
-Les fonctionnalités et paramètres suivants sont disponibles dans la barre de navigation gauche du centre d'administration. En savoir plus sur les tâches d'administration dans l’[aide pour les administrateurs](https://docs.microsoft.com/microsoft-365/admin/admin-home).
+Les fonctionnalités et paramètres suivants sont disponibles dans la barre de navigation gauche du centre d'administration. En savoir plus sur les tâches d'administration dans l’[aide pour les administrateurs](./admin-overview.md).
   
 |**Menu**|**Objet**|
 |-----|-----|
 |**Accueil** <br/> |Il s’agit de la page d’accueil dans le centre d’administration. Vous allez découvrir comment gérer les utilisateurs, la facturation, l'état d'intégrité des services et les rapports.  <br/> |
 |**Utilisateurs** <br/> |Créer et gérer des utilisateurs dans votre organisation, tels que des employés ou des étudiants. Vous pouvez également définir leur niveau d’autorisation ou réinitialiser leur mot de passe.  <br/> |
 |**Groupes** <br/> |Créez et gérez des groupes dans votre organisation, tels qu’un groupe Microsoft 365, un groupe de distribution, un groupe de sécurité ou une boîte aux lettres partagée. Découvrez la [création](../create-groups/create-groups.md) et la [gestion](../create-groups/manage-groups.md) de groupes.  <br/> |
-|**Resources** <br/> |Créer et gérer des ressources (par exemple, collection de sites SharePoint). Découvrez comment [créer des collections de sites](https://docs.microsoft.com/sharepoint/create-site-collection).  <br/> |
+|**Resources** <br/> |Créer et gérer des ressources (par exemple, collection de sites SharePoint). Découvrez comment [créer des collections de sites](/sharepoint/create-site-collection).  <br/> |
 |**Facturation** <br/> |Afficher, acheter ou annuler des abonnements pour votre organisation. Afficher les relevés de facturation précédents ou le nombre de licences attribuées à des utilisateurs individuels. Découvrez comment [gérer la facturation](../../commerce/index.yml).  <br/> |
 |**Support** <br/> | Afficher les demandes de service existantes ou créez-en de nouvelles. Apprenez-en davantage dans [Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur](../contact-support-for-business-products.md). |
 |**Settings** <br/> |Gérer les paramètres globaux des applications telles que la messagerie, les sites et la suite Office. Modifier la stratégie de mot de passe et la date d’expiration. Ajouter et mettre à jour des noms de domaine (par exemple, contoso.com). Modifier le profil de votre organisation et vos préférences de publication. Choisir si les partenaires peuvent accéder à votre centre d'administration.  <br/> |
 |**Configuration** <br/> |Gérer les domaines existants, activer et gérer l’authentification multifacteur, gérer l’accès administrateur, migrer les boîtes aux lettres d’utilisateurs vers Office 365, gérer les mises à jour de fonctionnalités et aider les utilisateurs à installer leurs applications Office. |
-|**Rapports** <br/> |Découvrez en un clin d’œil comment votre organisation utilise Microsoft 365 avec des rapports détaillés sur l’utilisation du courrier électronique, les activations d’Office, etc. Découvrez comment utiliser les nouveaux rapports [d’activité.](../activity-reports/activity-reports.md)<br/> |
-|**État du service** <br/> |Afficher l’état du service en un clin d’œil. Vous pouvez également consulter d’autres informations et l’historique des états du service. Consultez [Vérifier l’état du service](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health).  <br/> Utilisez le Centre de messages pour suivre les modifications à venir des fonctionnalités et services. Nous y publions des annonces contenant des informations qui vous aideront à planifier les changements et à comprendre comment ceux-ci peuvent affecter les utilisateurs. Pour plus d’informations, consultez [Centre de messages dans Office 365](../manage/message-center.md).  <br/> |
-|**Centres d’administration** <br/> |Ouvrez des centres d'administration distincts pour Exchange, Skype Entreprise, SharePoint, Yammer et Azure AD. Chaque centre d’administration inclut tous les paramètres disponibles pour le service concerné.  <br/> Par exemple, dans le Centre d’administration Exchange, configurez et gérez le courrier électronique, les calendriers, les groupes de distribution, etc. Dans le Centre d’administration SharePoint, créez et gérez les collections de sites, les paramètres de site et OneDrive Entreprise. Dans le Centre d’administration Skype Entreprise, configurez les notifications de messagerie instantanée, la conférence rendez-vous et la présence en ligne.  <br/> En savoir plus sur le [Centre d'administration Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807) et le [Centre d'administration SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-online).<br/> **Remarque :** les centres d'administration disponibles dépendent de votre plan et de votre région.           |
+|**Rapports** <br/> |Découvrez en un clin d’œil comment votre organisation utilise Microsoft 365 avec des rapports détaillés sur l’utilisation du courrier électronique, les activations d’Office, etc. Découvrez comment utiliser les nouveaux [rapports d'activité](../activity-reports/activity-reports.md).  <br/> |
+|**État du service** <br/> |Afficher l’état du service en un clin d’œil. Vous pouvez également consulter d’autres informations et l’historique des états du service. Consultez [Vérifier l’état du service](../../enterprise/view-service-health.md).  <br/> Utilisez le Centre de messages pour suivre les modifications à venir des fonctionnalités et services. Nous y publions des annonces contenant des informations qui vous aideront à planifier les changements et à comprendre comment ceux-ci peuvent affecter les utilisateurs. Pour plus d’informations, consultez [Centre de messages dans Office 365](../manage/message-center.md).  <br/> |
+|**Centres d’administration** <br/> |Ouvrez des centres d'administration distincts pour Exchange, Skype Entreprise, SharePoint, Yammer et Azure AD. Chaque centre d’administration inclut tous les paramètres disponibles pour le service concerné.  <br/> Par exemple, dans le Centre d’administration Exchange, configurez et gérez le courrier électronique, les calendriers, les groupes de distribution, etc. Dans le Centre d’administration SharePoint, créez et gérez les collections de sites, les paramètres de site et OneDrive Entreprise. Dans le Centre d’administration Skype Entreprise, configurez les notifications de messagerie instantanée, la conférence rendez-vous et la présence en ligne.  <br/> En savoir plus sur le [Centre d'administration Exchange](/exchange/exchange-admin-center) et le [Centre d'administration SharePoint](/sharepoint/sharepoint-online).<br/> **Remarque :** les centres d'administration disponibles dépendent de votre plan et de votre région.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Tâches courantes dans le Centre d’administration
 

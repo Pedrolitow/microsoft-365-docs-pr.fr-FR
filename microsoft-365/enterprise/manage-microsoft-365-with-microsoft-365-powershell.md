@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Découvrez comment gérer les utilisateurs, les licences et les applications Microsoft 365 avec PowerShell.
-ms.openlocfilehash: b1e8353eac1fb2917330ef5b5c2c7752fe5b1824
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: dee8fbce03e38a954ddea5a8ec86248f9209d96c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655850"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905103"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Gestion de Microsoft 365 à l’aide de PowerShell
 
@@ -46,7 +46,7 @@ Sélectionnez l’une des rubriques suivantes pour apprendre à utiliser PowerSh
 
     Commencez ici si vous souhaitez utiliser des commandes d’automatisation pour gérer SharePoint.
 
-- [**Exchange Online**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
+- [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
 
     Commencez ici si vous souhaitez gérer Exchange Online.
 
@@ -54,13 +54,13 @@ Sélectionnez l’une des rubriques suivantes pour apprendre à utiliser PowerSh
 
     Commencez ici si vous souhaitez migrer votre courrier à partir de systèmes pré-existants.
 
-- [**Centre de sécurité et de conformité**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
+- [**Centre de sécurité et de conformité**](/powershell/exchange/scc-powershell)
 
     Commencez ici si vous souhaitez gérer les fonctionnalités du Centre de sécurité & conformité.
 
 - [**Partenaires avec autorisations d’accès délégué**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    Commencez ici si vous souhaitez utiliser des partenaires de syndication et de fournisseur de solutions Cloud pour gérer vos clients Microsoft 365.
+    Commencez ici si vous souhaitez utiliser des partenaires de syndication et de fournisseur de solutions Cloud (CSP) pour gérer vos clients Microsoft 365.
 
 - [**Skype Entreprise Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 

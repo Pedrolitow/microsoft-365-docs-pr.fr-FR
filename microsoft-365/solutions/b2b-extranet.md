@@ -16,18 +16,18 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment créer un site extranet B2B ou une équipe avec des invités gérés d’une organisation partenaire.
-ms.openlocfilehash: cfb7cc4310cb83f9ce7761c95f021724b7d75faf
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: f9b8d9326f302233ed85c9d168fdf6f343dc6cbf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613595"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904755"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Créer un extranet B2B avec des invités gérés
 
-Vous pouvez utiliser [Azure Active Directory Entitlement Management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) pour créer un extranet B2B afin de collaborer avec une organisation partenaire qui utilise Azure Active Directory. Cela permet aux utilisateurs de s’inscrire eux-mêmes dans le site ou l’équipe extranet et de recevoir l’accès via un flux de travail d’approbation.
+Vous pouvez utiliser [Azure Active Directory Entitlement Management](/azure/active-directory/governance/entitlement-management-overview) pour créer un extranet B2B afin de collaborer avec une organisation partenaire qui utilise Azure Active Directory. Cela permet aux utilisateurs de s’inscrire eux-mêmes dans le site ou l’équipe extranet et de recevoir l’accès via un flux de travail d’approbation.
 
-Grâce à cette méthode de partage de ressources pour la collaboration, l’organisation partenaire peut aider à maintenir et à approuver les invités de leur côté, réduisant ainsi la charge qui pèse sur votre service informatique et permettant aux personnes les plus familiarisés avec le contrat de collaboration de gérer l’accès des utilisateurs.
+Grâce à cette méthode de partage de ressources pour la collaboration, l’organisation partenaire peut aider à maintenir et approuver les invités de leur côté, réduisant ainsi la charge qui pèse sur votre service informatique et permettant aux personnes les plus familiarisés avec le contrat de collaboration de gérer l’accès des utilisateurs.
 
 Cet article décrit les étapes de création d’un package de ressources (dans ce cas, un site ou une équipe) que vous pouvez partager avec une organisation partenaire via un modèle d’inscription d’accès en libre-service. 
 
@@ -37,7 +37,7 @@ Avant de commencer, créez le site ou l’équipe que vous souhaitez partager av
 
 L’utilisation de cette fonctionnalité nécessite une licence Azure AD Premium P2. 
 
-Les clouds spécialisés, tels qu’Azure Germany et Azure China 21Vianet, ne sont actuellement pas disponibles.
+Les clouds spécialisés, tels qu’Azure Allemagne et Azure China 21Vianet, ne sont actuellement pas disponibles.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
@@ -58,7 +58,7 @@ Pour ajouter une organisation connectée
 7. Tapez le domaine de l’organisation à connecter, puis cliquez sur **Ajouter.**
 8. Cliquez **sur** Se connecter, puis sur **Suivant : Sponsors**.
 9. Ajoutez des personnes de votre organisation ou de l’organisation à qui vous voulez approuver l’accès pour les invités.
-10. Cliquez **sur Suivant : Révision + Créer.**
+10. Cliquez sur **Suivant : Révision + Créer**.
 11. Examinez les paramètres que vous avez choisis, puis cliquez sur **Créer.**
 
     ![Capture d’écran de la page des organisations connectées dans Azure Active Directory](../media/identity-governance-connected-organizations.png)
@@ -76,7 +76,7 @@ Pour créer un catalogue
 
    ![Capture d’écran de la page catalogues dans Azure Active Directory Identity Governance](../media/identity-governance-catalogs.png)
 
-Une fois le catalogue créé, vous ajoutez le site ou l’équipe SharePoint que vous souhaitez partager avec l’organisation partenaire.
+Une fois le catalogue créé, vous ajoutez le site SharePoint ou l’équipe que vous souhaitez partager avec l’organisation partenaire.
 
 Pour ajouter des ressources à un catalogue
 1. Dans Azure AD Identity Governance, cliquez sur **Catalogues,** puis cliquez sur le catalogue dans lequel vous souhaitez ajouter des ressources.
@@ -100,8 +100,8 @@ Pour créer un package d’accès
 10. Sous **Approbation,** **sélectionnez Oui** pour **Exiger l’approbation.**
 11. Sous **Premier approuveur,** choisissez l’un des sponsors que vous avez ajoutés précédemment ou choisissez un utilisateur spécifique.
 12. Cliquez **sur Ajouter un secours** et sélectionnez un approuveur de secours.
-13. Under **Enable**, choose **Yes**.
-14. Cliquez **sur Suivant : Cycle de vie**.
+13. Sous **Activer,** sélectionnez **Oui.**
+14. Cliquez **sur Suivant : Cycle de vie.**
 15. Choisissez les paramètres d’expiration et de révision d’accès que vous souhaitez utiliser, puis cliquez sur **Suivant : Révision + Créer.**
 16. Examinez vos paramètres, puis cliquez sur **Créer.**
 

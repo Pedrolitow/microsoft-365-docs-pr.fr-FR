@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Intégrez Microsoft 365 à Azure AD si vous souhaitez synchroniser le mot de passe ou l' sign-on unique avec votre environnement local.
-ms.openlocfilehash: b1f20ebc692421ed6df0d6f7c31a4d80347133e3
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: f977969634401d59d7598136f9323cb0e37f9ece
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384739"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905331"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Intégration d’Azure à Microsoft 365
 
@@ -59,7 +59,7 @@ Pour plus d’informations sur Microsoft 365 et Azure AD, voir modèles d’iden
 
 |**Fonctionnalité**|**Description**|
 |:-----|:-----|
-|Applications intégrées  <br/> |Vous pouvez accorder à des applications individuelles l’accès à vos données Microsoft 365, telles que la messagerie, les calendriers, les contacts, les utilisateurs, les groupes, les fichiers et les dossiers. Vous pouvez également autoriser ces applications au niveau de l’administrateur global et les mettre à la disposition de l’ensemble de votre entreprise en les enregistrant dans Azure AD. Pour plus d’informations, voir [Applications intégrées et Azure AD pour les administrateurs Microsoft 365.](integrated-apps-and-azure-ads.md)  <br/> Voir aussi [1 000 000 000](https://go.microsoft.com/fwlink/p/?LinkId=698604).  <br/> |
+|Applications intégrées  <br/> |Vous pouvez accorder à des applications individuelles l’accès à vos données Microsoft 365, telles que la messagerie, les calendriers, les contacts, les utilisateurs, les groupes, les fichiers et les dossiers. Vous pouvez également autoriser ces applications au niveau de l’administrateur global et les mettre à la disposition de l’ensemble de votre entreprise en les enregistrant dans Azure AD. Pour plus d’informations, voir [Applications intégrées et Azure AD pour les administrateurs Microsoft 365.](integrated-apps-and-azure-ads.md)  <br/> Voir aussi [1 000 000 000](/azure/active-directory/manage-apps/what-is-single-sign-on).  <br/> |
 |PowerApps  <br/> | Les applications d’alimentation sont des applications axées sur les appareils mobiles qui peuvent se connecter à vos sources de données existantes, telles que des listes SharePoint et d’autres applications de données. Pour [plus d’informations,](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) voir Créer un PowerApp pour une liste dans SharePoint Online et la page [PowerApps.](https://powerapps.microsoft.com/)  <br/> |
    
 ## <a name="see-also"></a>Voir aussi

@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurez Azure AD Identity Protection et analysez les comptes actuels dans votre environnement de test Microsoft 365 pour entreprise.
-ms.openlocfilehash: 162a6504fb7541874798f5e795bd2ecd590b5035
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 0cb0acf3faee13676573b04178bd6b4d3d36da4d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487707"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905343"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>Azure AD Identity Protection pour votre environnement de test Microsoft 365 pour entreprise
 
@@ -54,12 +54,12 @@ Si vous souhaitez tester Azure AD Identity Protection dans une entreprise simul�
 3. Dans le tableau **Identity Protection - Vue d’ensemble,** sélectionnez chaque rapport pour voir ce qu’il signale.
 4. Sous **Avertir,** sélectionnez **Les utilisateurs à risque détectés alertes**.
 5. Dans le **volet Utilisateurs à risque détectés,** sélectionnez **Moyenne**.
-6. Pour **les e-mails sont envoyés aux** utilisateurs suivants , sélectionnez **Inclus** et vérifiez que votre compte d’administrateur global figure dans la liste des membres sélectionnés.
+6. Pour **les e-mails sont envoyés aux utilisateurs** suivants , sélectionnez **Inclus** et vérifiez que votre compte d’administrateur global figure dans la liste des membres sélectionnés.
 7. Sélectionnez **Enregistrer**.
 
-Sous **Protéger,** sélectionnez différentes polices pour voir comment les configurer. Si vous créez et activez une stratégie, assurez-vous qu’elle ne bloque pas l’accès pour tous les utilisateurs ou que vous ne pourrez peut-être pas vous y inscrire. Pour éviter cela, excluez les comptes d’utilisateurs spécifiques, tels que les administrateurs globaux.
+Sous **Protéger,** sélectionnez différentes polices pour voir comment les configurer. Si vous créez et activez une stratégie, assurez-vous qu’elle ne bloque pas l’accès pour tous les utilisateurs ou que vous ne pourrez peut-être pas vous y connecter. Pour éviter cela, excluez les comptes d’utilisateurs spécifiques, tels que les administrateurs globaux.
 
-Pour d’autres tests et expérimentations, voir [Simulation d’événements de risque.](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook)
+Pour d’autres tests et expérimentations, voir [Simulation d’événements de risque.](/azure/active-directory/active-directory-identityprotection-playbook)
 
 ## <a name="next-step"></a>Étape suivante
 
@@ -73,4 +73,4 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

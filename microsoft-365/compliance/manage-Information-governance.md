@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Implémentez les fonctionnalités de gouvernance des informations de Microsoft pour gérer vos données en matière de conformité ou d’obligations réglementaires.
-ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 8a104775cd9bfc75af5b5af9840274f5f84509f0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087113"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903490"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gouvernance des informations dans Microsoft 365
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Utilisez les fonctionnalités de gouvernance des informations de Microsoft (parfois abrégé en MIG) pour gérer vos données en matière de conformité ou d’obligations réglementaires.
 
@@ -49,4 +49,3 @@ Pour gérer un contenu à forte valeur ajoutée pour respecter les obligations l
 |Fonctionnalité|Utilité|Prise en main|
 |:------|:------------|---------------------|:----------------------------|
 |[Gestion des enregistrements](records-management.md)| Une solution unique pour les e-mails et les documents qui intègre les calendriers et les obligation de rétention dans un plan de gestion de fichiers qui prend en charge le cycle de vie complet de votre contenu avec la déclaration, la rétention et la destruction des enregistrements <br /><br />Exemple de scénario : [Destruction des enregistrements](disposition.md#disposition-of-records)|[Prise en main de la gestion des enregistrements](get-started-with-records-management.md) |
-

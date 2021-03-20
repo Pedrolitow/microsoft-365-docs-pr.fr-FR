@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: Découvrez comment choisir le domaine à utiliser lors de la création de groupes Microsoft 365 en configurant des stratégies d’adresse de messagerie à l’aide de PowerShell.
-ms.openlocfilehash: 1e56268c3994b1ac822869d154be826326039bfc
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 4908d5bd58ca6d0fbb50151983ddb459f0732284
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612939"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904683"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Choisir le domaine à utiliser lors de la création de groupes Microsoft 365
 
@@ -30,7 +30,7 @@ Certaines organisations utilisent des domaines de messagerie distincts pour segm
   
 Si votre organisation a besoin que les utilisateurs créent leurs groupes dans des domaines autres que le domaine accepté par défaut de votre entreprise, vous pouvez l’autoriser en configurant des stratégies d’adresse de messagerie (EAP) à l’aide de PowerShell.
 
-Avant de pouvoir exécuter les cmdlets PowerShell, téléchargez et installez un module qui vous permettra de parler à votre organisation. Consultez La [connexion à Exchange Online à l’aide de PowerShell à distance.](https://go.microsoft.com/fwlink/p/?LinkId=785881)
+Avant de pouvoir exécuter les cmdlets PowerShell, téléchargez et installez un module qui vous permettra de parler à votre organisation. Consultez [La connexion à Exchange Online à l’aide de PowerShell à distance.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 ## <a name="example-scenarios"></a>Exemples de scénarios
 
@@ -45,7 +45,7 @@ Supposons que vous avez également des sous-domaines configurés dans votre orga
 Les deux scénarios suivants expliquent comment effectuer cette tâche.
 
 > [!NOTE]
-> Lorsque vous avez des projets DPE, ils sont évalués dans l’ordre de priorité. Une valeur de 1 signifie la priorité la plus élevée. Une fois qu’un EAP correspond, aucun autre EAP n’est évalué et les adresses qui sont marqués sur le groupe sont conformes à l’EAP. > si aucun eaps ne correspond aux critères spécifiés, le groupe est provisioné dans le domaine accepté par défaut de l’organisation. Pour plus [d’informations](https://go.microsoft.com/fwlink/p/?LinkId=785428) sur l’ajout d’un domaine accepté, voir Gérer les domaines acceptés dans Exchange Online.
+> Lorsque vous avez des projets DPE, ils sont évalués dans l’ordre de priorité. Une valeur de 1 signifie la priorité la plus élevée. Une fois qu’un EAP correspond, aucun autre EAP n’est évalué et les adresses qui sont marqués sur le groupe sont conformes au EAP. > si aucun eaps ne correspond aux critères spécifiés, le groupe est provisioné dans le domaine accepté par défaut de l’organisation. Pour plus [d’informations](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) sur l’ajout d’un domaine accepté, voir Gérer les domaines acceptés dans Exchange Online.
   
 ### <a name="scenario-1"></a>Scénario 1
 
@@ -59,13 +59,13 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 Supposons que vous vouliez contrôler dans quels sous-domaines les groupes Microsoft 365 sont créés. Vous souhaitez :
   
-- Groupes créés par des étudiants (utilisateurs dont le service **est** réservé aux **étudiants)** dans students.groups.contoso.com domaine. Utilisez la commande suivante :
+- Groupes créés par des étudiants (utilisateurs dont **le** service est d’étudiants) dans students.groups.contoso.com domaine. Utilisez la commande suivante :
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- Groupes créés par des membres  du corps enseignant (les utilisateurs dont le service est définie sur Enseignant ou l’adresse **e-mail** contient faculty.contoso.com) ) dans le faculty.groups.contoso.com domaine. Utilisez la commande suivante :
+- Groupes créés par des membres  du corps enseignant (les utilisateurs dont le service est définie sur Le corps enseignant ou l’adresse **e-mail** contient faculty.contoso.com) ) dans le faculty.groups.contoso.com domaine. Utilisez la commande suivante :
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
@@ -100,7 +100,7 @@ La modification d’un EAP n’a aucun impact sur les groupes qui ont déjà ét
   
 ## <a name="hybrid-requirements"></a>Exigences hybrides
 
-Si votre organisation est configurée dans un scénario hybride, consultez Configurer des groupes [Microsoft 365](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) avec Exchange hybride local pour vous assurer que votre organisation répond aux exigences de création de groupes Microsoft 365. 
+Si votre organisation est configurée dans un scénario hybride, consultez Configurer des groupes [Microsoft 365](/exchange/hybrid-deployment/set-up-microsoft-365-groups) avec Exchange hybride local pour vous assurer que votre organisation répond aux exigences de création de groupes Microsoft 365. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Informations supplémentaires sur l’utilisation de groupes de stratégies d’adresse de messagerie :
 
@@ -110,7 +110,7 @@ Il y a d’autres choses à savoir :
     
 - Les administrateurs et les utilisateurs peuvent également modifier des domaines lorsqu’ils créent des groupes.
     
-- Le groupe d’utilisateurs est déterminé à l’aide des requêtes standard (propriétés utilisateur) qui sont déjà disponibles. Consultez [propriétés filtrables pour le paramètre -RecipientFilter](https://docs.microsoft.com/powershell/exchange/recipientfilter-properties) pour les propriétés filtrables pris en charge. 
+- Le groupe d’utilisateurs est déterminé à l’aide des requêtes standard (propriétés utilisateur) qui sont déjà disponibles. Consultez [propriétés filtrables pour le paramètre -RecipientFilter](/powershell/exchange/recipientfilter-properties) pour les propriétés filtrables pris en charge. 
     
 - Si vous ne configurez aucun eap pour les groupes, le domaine accepté par défaut est sélectionné pour la création du groupe.
     
@@ -124,4 +124,4 @@ Il y a d’autres choses à savoir :
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
-[Créer un groupe Microsoft 365 dans le Centre d’administration](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)
+[Créer un groupe Microsoft 365 dans le Centre d’administration](../admin/create-groups/create-groups.md)

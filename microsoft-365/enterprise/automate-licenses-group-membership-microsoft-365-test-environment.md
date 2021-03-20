@@ -1,5 +1,5 @@
 ---
-title: Automatiser les licences et l’appartenance aux groupes pour votre environnement de test Microsoft 365 pour entreprise
+title: Automatiser la gestion des licences et l’appartenance aux groupes pour votre environnement de test Microsoft 365 pour entreprise
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,18 +15,18 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurez la gestion des licences basée sur les groupes et l’appartenance à un groupe dynamique dans votre environnement de test Microsoft 365 pour entreprise.
-ms.openlocfilehash: d770e7be3b0b55855f1fee26a45d55260c3074cb
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 26840e2884202a0fa9c4bb563f3d7c653482ef87
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487575"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905367"
 ---
-# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatiser les licences et l’appartenance aux groupes pour votre environnement de test Microsoft 365 pour entreprise
+# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatiser la gestion des licences et l’appartenance aux groupes pour votre environnement de test Microsoft 365 pour entreprise
 
 *Ce guide de laboratoire de test ne peut être utilisé que pour les environnements de test Microsoft 365 pour les entreprises.*
 
-La gestion des licences basée sur les groupes attribue ou supprime automatiquement les licences d’un compte d’utilisateur en fonction de l’appartenance au groupe. L’appartenance à un groupe dynamique ajoute ou supprime des membres à un groupe en fonction des propriétés du compte d’utilisateur, telles que **Département** ou **Pays.** Cet article vous décrit les démonstrations d’ajout et de suppression de membres de groupe dans votre environnement de test Microsoft 365 pour entreprise.
+La gestion des licences basée sur les groupes attribue ou supprime automatiquement les licences d’un compte d’utilisateur en fonction de l’appartenance au groupe. L’appartenance à un groupe dynamique ajoute ou supprime des membres à un groupe en fonction des propriétés du compte d’utilisateur, telles que **Département** ou **Pays.** Cet article vous présente les démonstrations de l’ajout et de la suppression de membres de groupe dans votre environnement de test Microsoft 365 pour entreprise.
 
 La configuration de la licence automatique et de l’appartenance à un groupe dynamique dans votre environnement de test Microsoft 365 pour entreprise implique deux phases :
 
@@ -49,13 +49,13 @@ Si vous souhaitez tester la gestion automatisée des licences et l’appartenanc
   
 ## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Phase 2 : Configurer et tester l’appartenance à un groupe dynamique et la gestion automatique des licences
 
-Tout d’abord, créez un groupe nommé Ventes, puis ajoutez  une  règle d’appartenance au groupe dynamique afin que les comptes d’utilisateurs dont le service est le service des ventes rejoignent automatiquement le groupe Ventes.
+Tout d’abord, créez un groupe nommé Ventes et ajoutez  une règle  d’appartenance au groupe dynamique afin que les comptes d’utilisateurs dont le service est le service sont automatiquement joints au groupe Ventes.
 
 1. Dans une instance privée de votre navigateur Internet, connectez-vous au Centre d’administration [Microsoft 365](https://admin.microsoft.com) avec le compte d’administrateur général de votre abonnement de laboratoire de test Microsoft 365 E5.
 2. Sous un onglet distinct de votre navigateur, allez sur le portail Azure à [https://portal.azure.com](https://portal.azure.com) l':.
 3. Dans le portail Azure, entrez **des groupes** dans la zone de recherche, puis sélectionnez **Groupes.**
 4. dans le **volet Tous les groupes,** sélectionnez **Nouveau groupe.**
-5. Dans **le type de** groupe, **sélectionnez Microsoft 365**.
+5. Dans **le type de groupe,** **sélectionnez Microsoft 365**.
 6. Dans **le nom du groupe,** entrez **Ventes**.
 7. Dans **le type d’appartenance,** **sélectionnez Utilisateur dynamique.**
 8. Sélectionnez **Membres utilisateur dynamiques.**
@@ -68,7 +68,7 @@ Tout d’abord, créez un groupe nommé Ventes, puis ajoutez  une  règle d’ap
 
 Ensuite, configurez le groupe Ventes afin que la licence Microsoft 365 E5 soit automatiquement attribuée aux membres.
 
-1. Sélectionnez **le groupe** Ventes, puis les **licences.**
+1. Sélectionnez **le groupe** Ventes, puis **sélectionnez Licences.**
 2. Dans le **volet Mettre à jour les attributions de** licence, **sélectionnez Microsoft 365 E5,** puis sélectionnez **Enregistrer.**
 3. Dans votre navigateur, fermez l’onglet du portail Azure.
 
@@ -78,8 +78,8 @@ Ensuite, testez l’appartenance au groupe dynamique et la gestion automatique d
 2. Sous l’onglet Centre d’administration **Microsoft 365,** sélectionnez **Utilisateurs actifs.**
 3. Dans la page **Utilisateurs** actifs, sélectionnez **le compte Utilisateur 4.**
 4. Dans le **volet Utilisateur 4,** **sélectionnez Modifier pour** les **licences de produit.**
-5. Dans le **volet Licences de** produits, désactivez la licence **Microsoft 365 E5,** puis **sélectionnez Enregistrer** la  >  **fermeture.**
-6. Dans les propriétés du compte Utilisateur 4, vérifiez qu’aucune licence de produit n’a été attribuée et qu’il n’y a pas d’appartenance à un groupe.
+5. Dans le **volet Licences de** produits, désactivez la licence **Microsoft 365 E5,** puis **sélectionnez Enregistrer**  >  **fermer.**
+6. Dans les propriétés du compte Utilisateur 4, vérifiez qu’aucune licence de produit n’a été attribuée et qu’il n’existe aucune appartenance à un groupe.
 7. Pour **plus d’informations sur** le contact, **sélectionnez Modifier.**
 8. Dans le **volet Modifier les informations de contact,** sélectionnez **Coordonnées.**
 9. Dans la **zone Service,** entrez **Ventes,** puis **sélectionnez Enregistrer**  >  **la fermeture.**
@@ -92,8 +92,8 @@ Dans le temps, vous devriez voir les :
 
 Consultez les articles suivants pour déployer l’appartenance à un groupe dynamique et la gestion automatique des licences en production :
 
-- [Gestion des licences basée sur les groupes dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
-- [Groupes dynamiques dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
+- [Gestion des licences basée sur les groupes dans Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+- [Groupes dynamiques dans Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
 ## <a name="next-step"></a>Étape suivante
 
@@ -107,4 +107,4 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

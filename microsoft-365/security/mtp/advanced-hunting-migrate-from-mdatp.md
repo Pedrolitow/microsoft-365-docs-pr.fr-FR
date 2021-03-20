@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4d29f4f3df3d65ad72a19f059763523d7f7cba31
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 5f356c5861586d4435a619a056a6fa1a0afc53f0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597007"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904137"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrer des requêtes de recherche avancée à partir de Microsoft Defender pour le point de terminaison
 
@@ -90,7 +90,7 @@ Utilisez le tableau suivant pour vérifier la façon dont les `DeviceAlertEvents
 | `RemoteIP` | `AlertEvidence` table |
 | `AttackTechniques` | `AlertInfo` table |
 | `ReportId` | Cette colonne est généralement utilisée dans Microsoft Defender pour point de terminaison pour rechercher des enregistrements connexes dans d’autres tables. Dans Microsoft 365 Defender, vous pouvez obtenir des données associées directement à partir du `AlertEvidence` tableau. |
-| `Table` | Cette colonne est généralement utilisée dans Microsoft Defender pour point de terminaison pour des informations supplémentaires sur les événements dans d’autres tableaux. Dans Microsoft 365 Defender, vous pouvez obtenir des données associées directement à partir du `AlertEvidence` tableau. |
+| `Table` | Cette colonne est généralement utilisée dans Microsoft Defender pour le point de terminaison pour des informations supplémentaires sur les événements dans d’autres tableaux. Dans Microsoft 365 Defender, vous pouvez obtenir des données associées directement à partir du `AlertEvidence` tableau. |
 
 ## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>Ajuster les requêtes Microsoft Defender pour les points de terminaison existantes
 Les requêtes Microsoft Defender pour les points de terminaison fonctionneront telles qu’elles sont sauf si elles font référence au `DeviceAlertEvents` tableau. Pour utiliser ces requêtes dans Microsoft 365 Defender, appliquez les modifications ci-après :
@@ -107,7 +107,7 @@ DeviceAlertEvents
 | where AttackTechniques has "PowerShell (T1086)" and FileName == "powershell.exe"
 ```
 ### <a name="modified-query"></a>Requête modifiée
-La requête suivante a été ajustée pour être utilisé dans Microsoft 365 Defender. Au lieu de vérifier le nom de fichier directement à partir de , il joint et recherche le nom de fichier `DeviceAlertEvents` `AlertEvidence` dans cette table.
+La requête suivante a été ajustée pour être utilisé dans Microsoft 365 Defender. Au lieu de vérifier le nom de fichier directement à partir de , il joint et vérifie le nom de fichier `DeviceAlertEvents` `AlertEvidence` dans cette table.
 
 ```kusto
 AlertInfo 
@@ -133,7 +133,7 @@ Alertes générées par la règle migré :
 
 Si vous modifiez une règle de cette façon, vous serez invité à confirmer avant que de telles modifications ne soient appliquées.
 
-Les nouvelles alertes générées par des règles de détection personnalisées dans le portail Microsoft 365 Defender sont affichées dans une page d’alerte qui fournit les informations suivantes :
+Les nouvelles alertes générées par des règles de détection personnalisées dans le portail Microsoft 365 Defender s’affichent dans une page d’alerte qui fournit les informations suivantes :
 
 - Titre et description de l’alerte 
 - Ressources impactées
@@ -182,4 +182,4 @@ AlertInfo
 - [Activer Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
-- [Recherche avancée dans Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Recherche avancée dans Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)

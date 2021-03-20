@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Les administrateurs peuvent découvrir comment administrer les services SharePoint et OneDrive dans un environnement multigéogé.
-ms.openlocfilehash: 1b6d2cb1cb9511677f717f0e58553abc4473e1ad
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689614"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905599"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
@@ -38,7 +38,7 @@ BCS, le service Banque d’informations sécurisé et les applications ont des i
 
 Par défaut, un responsable ou administrateur d’eDiscovery d’un locataire multigéographique ne peut effectuer une découverte électronique que dans l’emplacement central de ce client. L’administrateur général Office 365 doit affecter les autorisations de gestionnaire eDiscovery pour autoriser d’autres personnes à mettre en place un processus eDiscovery, et affecter un paramètre "Région" dans le filtre de sécurité de conformité correspondant pour définir la région concernée par le processus comme emplacement satellite. Sinon, aucun processus eDiscovery n’est mis en place à l’emplacement satellite. Pour configurer le filtre de sécurité de la conformité pour une région, voir [Configurer l’eDiscovery d’Office 365 multigéographique](multi-geo-ediscovery-configuration.md).
 
-## <a name="exchange-mailboxes"></a>Les boîtes aux lettres Exchange
+## <a name="exchange-mailboxes"></a>Boîtes aux lettres Exchange
 
 Les boîtes aux lettres Exchange des utilisateurs sont déplacées automatiquement en cas de modification de leur emplacement par défaut des données. Lors de sa création, une boîte aux lettres est approvisionnée à l’emplacement par défaut des données de l’utilisateur, ou à l’emplacement central si aucune valeur n’a été définie pour l’emplacement par défaut des données.
 
@@ -76,17 +76,17 @@ Les administrateurs peuvent définir et gérer des stratégies de partage pour c
 
 ## <a name="taxonomy"></a>Taxonomie
 
-Nous prenons en charge une [taxonomie](https://docs.microsoft.com/sharepoint/managed-metadata) unifiée pour gérer les métadonnées dans l’entreprise à différents emplacements géographiques, les données de référence étant hébergées dans l’emplacement central de votre entreprise. Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement satellite. Les termes de la taxonomie globale sont synchronisés avec les emplacements satellites.
+Nous prenons en charge une [taxonomie](/sharepoint/managed-metadata) unifiée pour gérer les métadonnées dans l’entreprise à différents emplacements géographiques, les données de référence étant hébergées dans l’emplacement central de votre entreprise. Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement satellite. Les termes de la taxonomie globale sont synchronisés avec les emplacements satellites.
 
-Pour plus de détails et pour obtenir des instructions de développement, voir [Gérer les métadonnées dans un client multigéographique](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-managedmetadata).
+Pour plus de détails et pour obtenir des instructions de développement, voir [Gérer les métadonnées dans un client multigéographique](/sharepoint/dev/solution-guidance/multigeo-managedmetadata).
 
 ## <a name="user-profile-application"></a>Application de profil utilisateur
 
-Il existe une [application de profil utilisateur](https://docs.microsoft.com/sharepoint/manage-user-profiles) dans chaque emplacement géographique. Les informations de profil de chaque utilisateur sont hébergées dans l’emplacement géographique de celui-ci et accessibles à l’administrateur de cet emplacement.
+Il existe une [application de profil utilisateur](/sharepoint/manage-user-profiles) dans chaque emplacement géographique. Les informations de profil de chaque utilisateur sont hébergées dans l’emplacement géographique de celui-ci et accessibles à l’administrateur de cet emplacement.
 
-Si vous avez des propriétés de profil personnalisées, nous vous recommandons d’utiliser le même schéma de profil dans toutes les zones géographiques et de remplir vos propriétés de profil personnalisées dans tous les emplacements géographiques ou dans les emplacements requis. Pour savoir comment remplir les données de profil utilisateur par programme, consultez l’[API de mise à jour en bloc de profil utilisateur](https://docs.microsoft.com/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online).
+Si vous avez des propriétés de profil personnalisées, nous vous recommandons d’utiliser le même schéma de profil dans toutes les zones géographiques et de remplir vos propriétés de profil personnalisées dans tous les emplacements géographiques ou dans les emplacements requis. Pour savoir comment remplir les données de profil utilisateur par programme, consultez l’[API de mise à jour en bloc de profil utilisateur](/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online).
 
-Pour plus de détails et pour obtenir des instructions de développement, voir [Utiliser les profils utilisateur dans un client multigéographique](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-userprofileexperience).
+Pour plus de détails et pour obtenir des instructions de développement, voir [Utiliser les profils utilisateur dans un client multigéographique](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience).
 
 ## <a name="video-portal"></a>Portail vidéo
 

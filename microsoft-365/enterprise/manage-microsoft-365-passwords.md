@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Découvrez comment gérer les mots de passe de compte d’utilisateur Microsoft 365.
-ms.openlocfilehash: af64002ad54b517a6e8f0b687a00d6bed9ab0214
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328508"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905091"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>Gérer les mots de passe de compte d’utilisateur Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez gérer les mots de passe de compte d’utilisateur Microsoft 365 de différentes manières, en fonction de la configuration de votre identité. Vous pouvez gérer les comptes d’utilisateurs dans le Centre d’administration [Microsoft 365,](https://docs.microsoft.com/microsoft-365/admin/add-users/)dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration Azure Active Directory (Azure AD).
+Vous pouvez gérer les mots de passe de compte d’utilisateur Microsoft 365 de différentes manières, en fonction de la configuration de votre identité. Vous pouvez gérer les comptes d’utilisateurs dans le Centre d’administration [Microsoft 365,](../admin/add-users/index.yml)dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration Azure Active Directory (Azure AD).
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planifier l’endroit et la façon dont vous allez gérer les mots de passe de votre compte d’utilisateur
 
@@ -43,7 +43,7 @@ L’endroit où et comment vous pouvez gérer vos comptes d’utilisateur dépen
 
 Vous gérez les mots de passe de compte d’utilisateur dans :
 
-- [Le Centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/)
+- [Le Centre d’administration Microsoft 365](../admin/add-users/index.yml)
 - Centre d’administration Azure AD
     
 ### <a name="hybrid"></a>Hybride
@@ -64,30 +64,29 @@ Pour empêcher les utilisateurs de créer un mot de passe facile à déterminer,
 - Termes internes spécifiques à l’entreprise
 - Abréviations dotées d’une signification spécifique à l’entreprise.
 
-Vous pouvez interdire les mots de passe incorrects dans [le cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) et pour vos [services AD DS locaux.](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises)
+Vous pouvez interdire les mots de passe incorrects dans [le cloud](/azure/active-directory/authentication/concept-password-ban-bad) et pour vos [services AD DS locaux.](/azure/active-directory/authentication/concept-password-ban-bad-on-premises)
 
 ## <a name="simplify-user-sign-in"></a>Simplifiez la connexion utilisateur
 
 Azure AD Seamless Single Sign-On (Azure AD Seamless SSO) fonctionne avec PHS et l’authentification Pass-Through (PTA), pour permettre à vos utilisateurs de se connecter à des services qui utilisent des comptes d’utilisateur Azure AD sans avoir à taper leur mot de passe et, dans de nombreux cas, leur nom d’utilisateur. Cela donne à vos utilisateurs un accès facile aux applications basées sur le cloud, telles qu’Office 365, sans nécessiter des composants supplémentaires en local, tels que des serveurs de fédération d’identité.
 
-Vous configurez l’authentification unique transparente Azure AD avec l’outil Azure AD Connect. Reportez-vous aux [instructions pour configurer l’authentification unique transparente d’Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
+Vous configurez l’authentification unique transparente Azure AD avec l’outil Azure AD Connect. Reportez-vous aux [instructions pour configurer l’authentification unique transparente d’Azure AD](/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
 <a name="pw_writeback"></a>
 ## <a name="simplify-password-updates-to-ad-ds"></a>Simplifier les mises à jour de mot de passe pour AD DS
 
-Avec l’écriture écriture par mot de passe, vous pouvez autoriser les utilisateurs à réinitialiser leur mot de passe via Azure AD, qui est ensuite répliqué dans AD DS. Les utilisateurs n’ont pas besoin d’accéder à leurs services AD DS locaux pour mettre à jour leurs mots de passe. C’est utile pour les utilisateurs itinérants ou distants qui ne possèdent pas de connexion d’accès à distance au réseau local.
+Avec la réinitialisation du mot de passe, vous pouvez autoriser les utilisateurs à réinitialiser leur mot de passe via Azure AD, qui est ensuite répliqué dans AD DS. Les utilisateurs n’ont pas besoin d’accéder à leurs services AD DS locaux pour mettre à jour leurs mots de passe. C’est utile pour les utilisateurs itinérants ou distants qui ne possèdent pas de connexion d’accès à distance au réseau local.
 
 L’écriture différée de mot de passe est requise pour exploiter pleinement les fonctionnalités Azure AD Identity Protection, comme obliger les utilisateurs à modifier leur mot de passe en local lorsqu’un risque élevé de compromission de compte a été détecté.
 
-Pour obtenir plus d’informations et les instructions de configuration, consultez l’article [Azure AD SSPR avec l’écriture différée de mot de passe](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback).
+Pour obtenir plus d’informations et les instructions de configuration, consultez l’article [Azure AD SSPR avec l’écriture différée de mot de passe](/azure/active-directory/active-directory-passwords-writeback).
 
 >[!Note]
->Procédez à la mise à niveau vers la dernière version d’Azure AD Connect pour vous assurer la meilleure expérience possible et les nouvelles fonctionnalités dès leur diffusion. Pour obtenir plus d’informations, consultez l’article [Installation personnalisée d’Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+>Procédez à la mise à niveau vers la dernière version d’Azure AD Connect pour vous assurer la meilleure expérience possible et les nouvelles fonctionnalités dès leur diffusion. Pour obtenir plus d’informations, consultez l’article [Installation personnalisée d’Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
 
 ## <a name="simplify-password-resets"></a>Simplifiez les réinitialisations du mot de passe
 
-La réinitialisation du mot de passe en libre-service (SSPR) permet aux utilisateurs de réinitialiser ou de déverrouiller leurs mots de passe ou comptes. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer [l’écriture écriture par mot de](#pw_writeback) passe avant de pouvoir déployer les réinitialisations de mot de passe.
+La réinitialisation du mot de passe en libre-service (SSPR) permet aux utilisateurs de réinitialiser ou de déverrouiller leurs mots de passe ou comptes. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer la [réinitialisation du mot de](#pw_writeback) passe avant de pouvoir déployer les réinitialisations de mot de passe.
 
-Reportez-vous aux [Instructions pour activer la réinitialisation de mot de passe](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
-
+Reportez-vous aux [Instructions pour activer la réinitialisation de mot de passe](/azure/active-directory/authentication/howto-sspr-deployment).

@@ -20,12 +20,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: Obtenez des affiches qui décrivent les modèles architecturaux, le déploiement et les options de plateforme pour SharePoint, Exchange, Skype Entreprise et Lync.
-ms.openlocfilehash: 6d5cda89fb67f5c41dcf161abe7258c4600ee8ce
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6c8aea1f6389c5007adb1800639488972483d5fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919819"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905511"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync
 
@@ -80,7 +80,7 @@ Utilisez les liens suivants pour obtenir les affiches dont vous avez besoin :
 
 Les affiches pour SharePoint 2016 et Skype Entreprise 2015 permettent de comparer les méthodes de déploiement dans un format facile à imprimer. Les affiches listent toutes les options de configuration ou de plateforme. Elles fournissent les informations suivantes pour chaque option :
   
-- **Vue d’ensemble**: bref résumé de la plateforme, y compris un diagramme conceptuel.
+- **Vue** d’ensemble : bref résumé de la plateforme, y compris un diagramme conceptuel.
     
 - **Idéal pour**: scénarios courants qui conviennent parfaitement à la plateforme.
     
@@ -88,7 +88,7 @@ Les affiches pour SharePoint 2016 et Skype Entreprise 2015 permettent de compare
     
 - **Tâches d’architecture**: décisions que vous devez prendre en tant qu’architecte.
     
-- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel it doit planifier.
+- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel technique doit planifier.
     
 <a name="SP2016_ArchModel"> </a>
 ### <a name="microsoft-sharepoint-server-2016-architectural-models"></a>Modèles architecturaux Microsoft SharePoint Server 2016
@@ -102,20 +102,20 @@ Les affiches pour SharePoint 2016 et Skype Entreprise 2015 permettent de compare
 
 |Item|Description|
 |---|---|
-|[![Miniature de l’affiche Bases de données SharePoint Server 2016.](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=55041)|Cette affiche informatique est une référence rapide pour les bases de données SharePoint Server 2016. Vous verrez les détails de chaque base de données : <br/><br/> -Taille <br/> - Conseils mise à l’échelle <br/> - Modèles d’E/S <br/> - Conditions requises : <br/><br/>  La première page affiche les bases de données système SharePoint et les applications de service qui ont plusieurs bases de données. La deuxième page affiche toutes les applications de service qui ont des bases de données uniques. <br/><br/>  Pour plus d’informations, voir types et descriptions de base de données [dans SharePoint Server 2016.](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions)|
+|[![Miniature de l’affiche Bases de données SharePoint Server 2016.](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=55041)|Cette affiche est une référence rapide pour les bases de données SharePoint Server 2016. Vous verrez les détails de chaque base de données : <br/><br/> -Taille <br/> - Conseils mise à l’échelle <br/> - Modèles d’E/S <br/> - Conditions requises : <br/><br/>  La première page affiche les bases de données système SharePoint et les applications de service qui ont plusieurs bases de données. La deuxième page affiche toutes les applications de service qui ont des bases de données uniques. <br/><br/>  Pour plus d’informations, voir types et descriptions de base de données [dans SharePoint Server 2016.](/SharePoint/technical-reference/database-types-and-descriptions)|
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Modèles architecturaux Microsoft Skype Entreprise 2015
 
 |Item|Description|
 |---|---|
-|[![Miniature de l’affiche Modèles architecturaux Skype Entreprise.](../media/132288c0-6ae4-4394-88ab-b57dae367714.png)](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=55022)|Cette affiche décrit Skype Entreprise Online, les services locaux, hybrides et PBX (Cloud Private Branch Exchange). Il décrit également l’intégration avec les configurations Exchange et SharePoint que les décideurs d’entreprise et les architectes de solutions doivent connaître. <br/><br/> L’affiche est destinée aux professionnels de l’informatique afin de sensibiliser les professionnels de l’informatique aux modèles architecturaux fondamentaux via lesquels Skype Entreprise Online et Skype Entreprise local peuvent être consommés. <br/><br/>Commencez par la configuration qui correspond le mieux aux besoins et plans de votre organisation. Envisagez et utilisez d’autres configurations selon vos besoins. Par exemple, vous pouvez envisager l’intégration avec Exchange et SharePoint ou une solution qui tire parti de l’offre PBX cloud de Microsoft.|
+|[![Miniature de l’affiche Modèles architecturaux Skype Entreprise.](../media/132288c0-6ae4-4394-88ab-b57dae367714.png)](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=55022)|Cette affiche décrit Skype Entreprise Online, les services locaux, hybrides et PBX (Cloud Private Branch Exchange). Il décrit également l’intégration avec les configurations Exchange et SharePoint que les décideurs d’entreprise et les architectes de solutions doivent connaître. <br/><br/> L’affiche est destinée aux professionnels de l’informatique afin de sensibiliser les professionnels de l’informatique aux modèles architecturaux fondamentaux via lesquels Skype Entreprise Online et Skype Entreprise local peuvent être consommés. <br/><br/>Commencez par la configuration qui correspond le mieux aux besoins et plans de votre organisation. Envisagez et utilisez d’autres configurations selon vos besoins. Par exemple, vous pouvez envisager une intégration avec Exchange et SharePoint ou une solution qui tire parti de l’offre PBX cloud de Microsoft.|
    
 ## <a name="platform-options-posters"></a>Affiches des options de plateforme
 
 Les affiches pour SharePoint 2013, Exchange 2013 et Lync 2013 permettent de comparer les méthodes de déploiement en un coup d’œil. Chaque affiche répertorie toutes les configurations ou options de plateforme. Il fournit les informations suivantes pour chaque option :
   
-- **Vue d’ensemble**: bref résumé de la plateforme, y compris un diagramme conceptuel.
+- **Vue** d’ensemble : bref résumé de la plateforme, y compris un diagramme conceptuel.
     
 - **Idéal pour**: scénarios courants qui conviennent parfaitement à la plateforme.
     
@@ -123,14 +123,14 @@ Les affiches pour SharePoint 2013, Exchange 2013 et Lync 2013 permettent de comp
     
 - **Tâches d’architecture**: décisions que vous devez prendre en tant qu’architecte.
     
-- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel it doit planifier.
+- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel technique doit planifier.
     
 <a name="SP2013_Options"> </a>
 ## <a name="sharepoint-2013-platform-options"></a>Options de plateforme SharePoint 2013
 
 |Item|Description|
 |---|---|
-|[![Image miniature de l’affiche Options de plateforme SharePoint 2013.](../media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=40332)|Pour les décideurs d’entreprise et les architectes, cette affiche présente les options de plateforme pour SharePoint 2013, SharePoint dans Microsoft 365, hybride sur site avec Microsoft 365, Azure et les déploiements locaux uniquement. Il inclut une vue d’ensemble de chaque architecture, des recommandations, des exigences de licence et des listes de tâches architectes et de professionnel de l’it pour chaque plateforme. L’affiche présente plusieurs solutions SharePoint sur Azure.|
+|[![Image miniature de l’affiche Options de plateforme SharePoint 2013.](../media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=40332)|Pour les décideurs d’entreprise et les architectes, cette affiche présente les options de plateforme pour SharePoint 2013, SharePoint dans Microsoft 365, hybride sur site avec Microsoft 365, Azure et les déploiements locaux uniquement. Il inclut une vue d’ensemble de chaque architecture, des recommandations, des exigences de licence et des listes de tâches architecte et de professionnel de l’it pour chaque plateforme. L’affiche présente plusieurs solutions SharePoint sur Azure.|
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Options de plateforme Exchange 2013
@@ -174,11 +174,10 @@ Les affiches pour SharePoint dans Azure montrent des solutions Azure qui utilise
    
 ## <a name="see-also"></a>Voir aussi
 
-- [Centre de solutions et d'architecture Microsoft 365](../solutions/solution-architecture-center.md)
+- [Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   
 - [Modèles d’architecture cloud Microsoft](../solutions/cloud-architecture-models.md)
   
 - [Guides de laboratoire de test Microsoft 365](m365-enterprise-test-lab-guides.md)
   
 - [Solutions hybrides](hybrid-solutions.md)
-

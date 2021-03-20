@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: c3ba9ce6675e81a99309243db251b34a21a4b43f
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454158"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904935"
 ---
 # <a name="create-a-new-topic"></a>Création d’un projet 
 
@@ -29,11 +29,11 @@ Dans Rubriques de Topics, vous pouvez créer une rubrique si une rubrique n’es
 > Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations sur les personnes dans une rubrique créée manuellement sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher la rubrique. 
 
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour créer une rubrique, vous devez :
 - Vous avez une licence Topics.
-- Avoir des autorisations [**sur Qui peut créer ou modifier des rubriques**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres d’autorisations de la rubrique Rubriques. 
+- Avoir des autorisations [**sur qui peut créer ou modifier des rubriques**](./topic-experiences-user-permissions.md). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres des rubriques Topics. 
 
 > [!Note] 
 > Les utilisateurs qui sont autorisés à gérer des rubriques dans le centre de rubriques (gestionnaires de connaissances) sont déjà autorisés à créer et modifier des rubriques.
@@ -83,7 +83,7 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
     > Les fichiers et les pages que vous ajoutez doivent se trouver dans le même client Microsoft 365. Si vous souhaitez ajouter un lien vers une ressource externe dans la rubrique, vous pouvez l’ajouter via l’icône de zone de dessin à l’étape 8.
 
 
-6.  La section <b>Sites associés</b> présente les sites qui ont des informations sur cette rubrique. 
+6.  La section <b>Sites associés</b> présente les sites qui ont des informations sur la rubrique. 
 
     ![Section Sites associés](../media/knowledge-management/related-sites.png)</br>
 
@@ -91,7 +91,7 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
     
     ![Sélectionner un site](../media/knowledge-management/sites.png)</br>
 
-7. La <b>section Rubriques connexes</b> montre les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une <b></b> autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
+7. La <b>section Rubriques connexes</b> présente les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une <b></b> autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
 
    ![Rubriques connexes](../media/knowledge-management/related-topic.png)</br>  
 
@@ -126,13 +126,6 @@ Une fois que vous avez publié la page, le nom de la rubrique, l’autre nom, la
 
 
 ## <a name="see-also"></a>Voir aussi
-
-
-
-  
-
-
-
 
 
 

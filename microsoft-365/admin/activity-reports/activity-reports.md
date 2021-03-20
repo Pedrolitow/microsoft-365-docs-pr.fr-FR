@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: a71ced2dd0aa71179c1b26cec571f3025af1ce05
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 9b58c6fa51fbca5d78680b4b13cbbc2129d9c393
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603851"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903723"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -136,13 +136,13 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 
 - [Activité SharePoint pour le gouvernement américain](sharepoint-activity.md)
   
-- [Activité Skype Entreprise Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
+- [Activité Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
-- [Activité d’organisation de conférences Skype Entreprise Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
+- [Activité d’organisation de conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
   
-- [Activité de participation à des conférences Skype Entreprise Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
+- [Activité de participation à des conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
   
-- [Activité P2P Skype Entreprise Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
+- [Activité P2P Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
   
 ::: moniker range="o365-worldwide"
 
@@ -242,5 +242,4 @@ Toutefois, lorsque vous sélectionnez un jour particulier (voir numéro 3), jus
   
 ## <a name="related-articles"></a>Articles connexes
 
-[Rapports dans le Centre de conformité ](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance) et sécurité &amp;
-  
+[Rapports dans le Centre de conformité ](../../compliance/reports-in-security-and-compliance.md) et sécurité &amp;

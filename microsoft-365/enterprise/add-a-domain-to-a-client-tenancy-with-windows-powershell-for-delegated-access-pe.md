@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour ajouter un autre nom de domaine à un client existant.'
-ms.openlocfilehash: 23137d2e2461e75a22d0403f9b8246a29e48019f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b6a40f387f9fc7e513137cda4253a62be2455aad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690195"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905571"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
@@ -43,16 +43,16 @@ Vous avez également besoin des informations suivantes :
     
 - Vous avez besoin du code **TenantID** du client.
     
-- Le nom de domaine complet doit être enregistré auprès d'un bureau d'enregistrement de domaines DNS Internet, comme GoDaddy. Pour plus d'informations sur l'inscription publique d'un nom de domaine, voir [Comment acheter un nom de domaine](https://go.microsoft.com/fwlink/p/?LinkId=532541).
+- Le nom de domaine complet doit être enregistré auprès d'un bureau d'enregistrement de domaines DNS Internet, comme GoDaddy. Pour plus d'informations sur l'inscription publique d'un nom de domaine, voir [Comment acheter un nom de domaine](../admin/get-help-with-domains/buy-a-domain-name.md).
     
-- Vous devez savoir comment ajouter un enregistrement TXT à la zone DNS enregistrée pour votre bureau d’enregistrement DNS. Pour plus d’informations sur l’ajout d’un enregistrement TXT, voir Ajouter des enregistrements [DNS pour connecter votre domaine.](https://go.microsoft.com/fwlink/p/?LinkId=532542) Si ces procédures ne fonctionnent pas pour vous, vous devez rechercher les procédures pour votre bureau d’enregistrement DNS.
+- Vous devez savoir comment ajouter un enregistrement TXT à la zone DNS enregistrée pour votre bureau d’enregistrement DNS. Pour plus d’informations sur l’ajout d’un enregistrement TXT, voir Ajouter des enregistrements [DNS pour connecter votre domaine.](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) Si ces procédures ne fonctionnent pas pour vous, vous devez rechercher les procédures pour votre bureau d’enregistrement DNS.
     
 ## <a name="create-domains"></a>Création de domaines
 
  Vos clients vous demanderont probablement de créer des domaines supplémentaires à associer à leur location, car ils ne voudront probablement pas que le domaine<domain>.onmicrosoft.comsoit le domaine principal qui représente leur identité d'entreprise aux yeux du monde entier. Cette procédure vous guide au fil du processus de création d'un domaine associé à la location de votre client.
   
 > [!NOTE]
-> Pour effectuer certaines de ces opérations, le compte d’administrateur partenaire avec qui vous vous connectez doit être définie sur **Administration** complète pour l’attribution d’un accès **administratif** aux sociétés que vous supportez, accessible dans les détails du compte d’administrateur dans le Centre d’administration Microsoft 365. Pour plus d’informations sur la gestion des rôles d’administrateur de partenaires, voir [Partenaires : Proposer une administration déléguée.](https://go.microsoft.com/fwlink/p/?LinkId=532435) 
+> Pour effectuer certaines de ces opérations, le compte d’administrateur partenaire avec qui vous vous connectez doit être définie sur **Administration** complète pour l’attribution d’un accès **administratif** aux sociétés que vous supportez, accessible dans les détails du compte d’administrateur dans le Centre d’administration Microsoft 365. Pour plus d’informations sur la gestion des rôles d’administrateur partenaire, voir [Partenaires : proposer une administration déléguée.](https://go.microsoft.com/fwlink/p/?LinkId=532435) 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Création du domaine dans Azure Active Directory
 
@@ -87,7 +87,7 @@ Elle vous fournira des résultats semblables à :
   
 ### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a>Ajout d’un enregistrement TXT à la zone DNS enregistrée publiquement
 
-Avant que Microsoft 365 commence à accepter le trafic qui est dirigé vers le nom de domaine enregistré publiquement, vous devez prouver que vous êtes propriétaire et que vous avez des autorisations d’administrateur sur le domaine. Pour prouver que vous êtes propriétaire du domaine, créez un enregistrement TXT dans le domaine. Un enregistrement TXT n'a aucun effet sur votre domaine, et il peut être supprimé une fois qu'il est établi que vous êtes propriétaire du domaine. Pour créer les enregistrements TXT, suivez les procédures de la procédure d’ajout d’enregistrements [DNS pour connecter votre domaine.](https://go.microsoft.com/fwlink/p/?LinkId=532542) Si ces procédures ne fonctionnent pas pour vous, vous devez rechercher les procédures pour votre bureau d'enregistrement DNS.
+Avant que Microsoft 365 commence à accepter le trafic qui est dirigé vers le nom de domaine inscrit publiquement, vous devez prouver que vous êtes propriétaire et que vous avez des autorisations d’administrateur sur le domaine. Pour prouver que vous êtes propriétaire du domaine, créez un enregistrement TXT dans le domaine. Un enregistrement TXT n'a aucun effet sur votre domaine, et il peut être supprimé une fois qu'il est établi que vous êtes propriétaire du domaine. Pour créer les enregistrements TXT, suivez les procédures de la procédure d’ajout d’enregistrements [DNS pour connecter votre domaine.](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) Si ces procédures ne fonctionnent pas pour vous, vous devez rechercher les procédures pour votre bureau d'enregistrement DNS.
   
 Confirmez la création de l'enregistrement TXT via nslookup. Suivez cette syntaxe.
   
@@ -131,4 +131,3 @@ FQDN of new domain     Verified    Managed
 #### 
 
 [Aide pour les partenaires](https://go.microsoft.com/fwlink/p/?LinkID=533477)
-

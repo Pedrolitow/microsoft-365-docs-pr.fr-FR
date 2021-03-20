@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Découvrez comment utiliser les communautés BGP dans Azure ExpressRoute pour gérer le nombre de préfixes IP et la bande passante requise pour les scénarios Office 365.
-ms.openlocfilehash: 3a1de8725ae967352723649e602d944ca6948310
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9cb6980c1d8cc120f99cac087602856aeacf1adf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690065"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905211"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Utilisation des communautés BGP dans ExpressRoute pour les scénarios Office 365
 
@@ -48,7 +48,7 @@ Pour aider les clients à atteindre ces objectifs, les préfixes IP Office 365 p
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
 |Skype Entreprise\*  <br/> |12076:5030  <br/> |Skype Entreprise Online & services Microsoft Teams  <br/> |
 |Autres services Office 365\*  <br/> |12076:5100  <br/> |Inclut Azure Active Directory (scénarios d’authentification et de synchronisation d’annuaires) ainsi que les services du portail Office 365  <br/> |
-|\*L’étendue des scénarios de service inclus dans ExpressRoute est expliquée dans l’article sur les points de terminaison [Office 365.](https://aka.ms/o365endpoints)  <br/> \*\*Des services supplémentaires et des valeurs de communauté BGP peuvent être ajoutés à l’avenir. [Consultez la liste actuelle des communautés BGP.](https://azure.microsoft.com/documentation/articles/expressroute-routing/)  <br/> |
+|\*L’étendue des scénarios de service inclus dans ExpressRoute est expliquée dans l’article sur les points de terminaison [Office 365.](./urls-and-ip-address-ranges.md)  <br/> \*\*Des services supplémentaires et des valeurs de communauté BGP peuvent être ajoutés à l’avenir. [Consultez la liste actuelle des communautés BGP.](/azure/expressroute/expressroute-routing)  <br/> |
 
 ## <a name="what-are-the-most-common-scenarios-for-using-bgp-communities"></a>Quels sont les scénarios les plus courants pour l’utilisation des communautés BGP ?
 
@@ -67,9 +67,9 @@ Contoso Corporation est une entreprise de 50 000 personnes qui utilise actuellem
   
 ### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>Scénario 2 : portée de l’utilisation d’ExpressRoute et de la bande passante interne à certains services Office 365
 
-Fabrikam Inc, une grande entreprise multinationale avec un réseau hétérogène distribué, est abonné à de nombreux services Office 365, notamment ; Exchange Online, SharePoint Online et Skype Entreprise Online. L’infrastructure de routage interne de Fabrikam peut gérer des milliers de préfixes IP dans ses tables de routage ; Toutefois, Fabrikam souhaite uniquement mettre en service ExpressRoute et la bande passante interne pour les applications Office 365 les plus sensibles aux performances du réseau et utiliser leur bande passante Internet existante pour toutes les autres applications Office 365.
+Fabrikam Inc, une grande entreprise multinationale avec un réseau hétérogène distribué, est abonné à de nombreux services Office 365, notamment ; Exchange Online, SharePoint Online et Skype Entreprise Online. L’infrastructure de routage interne de Fabrikam peut gérer des milliers de préfixes IP dans ses tables de routage . Toutefois, Fabrikam souhaite uniquement mettre en service ExpressRoute et la bande passante interne pour les applications Office 365 les plus sensibles aux performances du réseau et utiliser leur bande passante Internet existante pour toutes les autres applications Office 365.
   
-Pour cette raison, Fabrikam étendue sa bande passante Azure ExpressRoute à uniquement la valeur de la communauté BGP Skype Entreprise Online, 12076:5030, reçue via l’homologue Microsoft ExpressRoute. Le reste du trafic réseau associé à Office 365 continue d’utiliser les points de sortie Internet.
+Pour cette raison, Fabrikam a pour étendue sa bande passante Azure ExpressRoute à la valeur community BGP de Skype Entreprise Online, 12076:5030, reçue via l’homologue Microsoft ExpressRoute. Le reste du trafic réseau associé à Office 365 continue d’utiliser les points de sortie Internet.
 
 |**Balise de communauté BGP utilisée**|**Routable des fonctionnalités sur Azure ExpressRoute**|**Itinéraires Internet requis**|
 |:-----|:-----|:-----|
@@ -105,7 +105,7 @@ Les clients qui choisissent de tirer parti des communautés BGP pour influencer 
 
 - Outre l’utilisation des communautés BGP attribuées par Microsoft, les clients peuvent choisir d’affecter leurs propres communautés BGP aux préfixes IP Office 365 appris via Azure ExpressRoute pour influencer le routage interne. Un cas d’utilisation courant consiste à affecter une communauté BGP basée sur un emplacement à tous les itinéraires appris via chaque emplacement d’homologue ExpressRoute donné, puis à utiliser ces informations en aval dans le réseau du client pour coordonner le chemin réseau le plus court ou le plus privilégié dans le réseau de Microsoft. L’utilisation des communautés BGP attribuées par le client avec ExpressRoute pour les scénarios Office 365 n’est pas du tout dans le cadre du contrôle ou de la visibilité de Microsoft.
 
-Voici un lien que vous pouvez utiliser pour revenir [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365) :
+Voici un lien que vous pouvez utiliser pour revenir [https://aka.ms/bgpexpressroute365]() :
   
 ## <a name="related-topics"></a>Rubriques connexes
 
@@ -127,7 +127,7 @@ Voici un lien que vous pouvez utiliser pour revenir [https://aka.ms/bgpexpressro
   
 [Implémentation d’ExpressRoute pour Office 365](implementing-expressroute.md)
   
-[Prise en charge des communautés BGP](https://azure.microsoft.com/documentation/articles/expressroute-routing/)
+[Prise en charge des communautés BGP](/azure/expressroute/expressroute-routing)
   
 [Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](performance-tuning-using-baselines-and-history.md)
   

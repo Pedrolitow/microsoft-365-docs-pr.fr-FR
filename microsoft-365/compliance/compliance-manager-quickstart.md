@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le guide de démarrage rapide du Gestionnaire de conformité pour vous aider tout au long de votre parcours de compréhension, de mise en place et d’utilisation du Gestionnaire de conformité.
-ms.openlocfilehash: c5159e1e6faa293ba3bd49d82bb06898ec9e0bdd
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: bb40fe0ace2f4b751e24d77f46dc1fc509eb42f4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698427"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906026"
 ---
 # <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
 
 **Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider tout au long de votre parcours d’utilisation du Gestionnaire de conformité Microsoft pour gérer la conformité de votre organisation avec les réglementations, stratégies et normes.
 
-Le Gestionnaire de conformité fournit des données intelligentes et actionnables lors de votre première visite. Le Gestionnaire de conformité offre également des fonctionnalités avancées pour la mise à l’échelle de votre conformité lorsque vous êtes prêt. Les évaluations disponibles dépendent de votre contrat de licence . [en savoir plus.](https://go.microsoft.com/fwlink/?linkid=2132371)
+Le Gestionnaire de conformité fournit des données intelligentes et actionnables lors de votre première visite. Le Gestionnaire de conformité offre également des fonctionnalités avancées pour la mise à l’échelle de votre conformité lorsque vous êtes prêt. Les évaluations disponibles dépendent de votre contrat de licence . [en savoir plus.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 Que vous soyez en déplacement vers le Gestionnaire de conformité pour la première fois ou que vous soyez prêt à utiliser certaines des fonctionnalités avancées, ce guide peut vous aider tout au long de votre parcours.
 

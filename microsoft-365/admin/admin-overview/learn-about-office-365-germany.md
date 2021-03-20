@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Découvrez Office 365 Germany.
-ms.openlocfilehash: 8b999ecbd2e429ad8a60fa60de1ad3a06664f085
-ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
+ms.openlocfilehash: 239e54c2f9fda309985250315d47957c57024b4b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48995856"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904383"
 ---
 # <a name="learn-about-office-365-germany"></a>En savoir plus sur Office 365 Germany
 
@@ -45,7 +45,7 @@ Les offres office 365 Germany sont alignées autant que possible sur les offres 
   
 Les fonctionnalités et services suivants sont disponibles dans certaines [offres d'abonnement Office 365 Germany](https://go.microsoft.com/fwlink/p/?linkid=839016). Nous vous recommandons également de consulter les [conditions des services en ligne](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
   
-- Applications Microsoft 365 pour les entreprises, Office 2016 et Office 2013<sup>1</sup>. Notez qu’Office 2013 nécessite l’utilisation de [l’authentification moderne Office 365 avec les clients Office.](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)
+- Applications Microsoft 365 pour les entreprises, Office 2016 et Office 2013<sup>1</sup>. Notez qu’Office 2013 nécessite l’utilisation de [l’authentification moderne Office 365 avec les clients Office.](../../enterprise/modern-auth-for-office-2013-and-2016.md)
     
 - Exchange Online
     
@@ -93,11 +93,11 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
 |-----|-----|
 |Portail de connexion  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Support technique, sur les abonnements et la facturation  <br/> |Support basé sur l’Allemagne disponible en allemand et en anglais Pour plus d’informations, voir contacter le support pour les [produits d’entreprise - Aide de l’administrateur](../contact-support-for-business-products.md).  <br/> |
-|Adresses IP et URL  <br/> |Voir [Points de terminaison Office 365 Germany](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-germany-endpoints).  <br/> |
+|Adresses IP et URL  <br/> |Voir [Points de terminaison Office 365 Germany](../../enterprise/microsoft-365-germany-endpoints.md).  <br/> |
 |Yammer  <br/> |Non disponible.  <br/> |
 |Versions d’Office antérieures à Office 2013 ou Microsoft 365 Apps pour entreprise<sup>1</sup> <br/> |Non pris en charge.  <br/> |
 |Office Lens  <br/> |Non disponible.  <br/> |
 |Possibilité d’acheter un domaine à partir de Microsoft 365  <br/> |Non disponible.  <br/> |
 |SharePoint Store  <br/> |Chaque application disponible dans un magasin d'applications Microsoft est fournie par Microsoft ou par un éditeur d'application tiers et fait l'objet d'une déclaration de confidentialité et de conditions générales séparées. Les données fournies par l'utilisation d'un magasin d'applications Microsoft et d'une application peuvent être accessibles à Microsoft ou à l'éditeur d'application tiers (selon le cas) et être transférées, stockées et traitées aux États-Unis ou dans tout autre pays où Microsoft ou l'éditeur d'application et leurs filiales ou prestataires de services sont établis. Assurez-vous auprès de l'éditeur de l'application qu'il répond aux exigences requises pour votre déploiement d'Office 365 Germany.  <br/> |
    
-Pour obtenir une description plus détaillée des services disponibles pour chaque plan Microsoft 365, consultez la description du [service Microsoft 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)
+Pour obtenir une description plus détaillée des services disponibles pour chaque plan Microsoft 365, consultez la description du [service Microsoft 365.](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)

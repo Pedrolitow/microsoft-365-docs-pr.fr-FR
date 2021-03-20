@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9e8ad544cfe17d0d8e5c895e208b42ec56555565
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: fbd49806913b5f01ccc3127d6b596db140d2e2aa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932177"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904007"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Prendre des mesures sur les résultats de requête de recherche avancée
 
@@ -43,7 +43,7 @@ Vous pouvez rapidement contenir des menaces ou [](advanced-hunting-overview.md) 
 - Fichiers de mise en quarantaine
 
 ## <a name="required-permissions"></a>Autorisations requises
-Pour être en mesure d’agir par le biais d’une recherche avancée, vous avez besoin d’un rôle dans Microsoft Defender pour le point de terminaison avec des autorisations pour soumettre des actions de correction [sur les appareils.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options) Si vous ne pouvez pas agir, contactez un administrateur général pour obtenir l’autorisation suivante :
+Pour être en mesure d’agir par le biais d’une recherche avancée, vous avez besoin d’un rôle dans Microsoft Defender pour le point de terminaison avec des autorisations pour soumettre des actions de correction [sur les appareils.](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options) Si vous ne pouvez pas agir, contactez un administrateur général pour obtenir l’autorisation suivante :
 
 *Actions de correction actives > gestion des menaces et des vulnérabilités : gestion des corrections*
 
@@ -53,25 +53,25 @@ Vous pouvez prendre les mesures suivantes sur les appareils identifiés par la `
 - Isoler les appareils affectés pour contenir une infection ou empêcher les attaques de se déplacer ultérieurement
 - Collecter un package d’enquête pour obtenir plus d’informations d’investigation
 - Exécuter une analyse antivirus pour rechercher et supprimer les menaces à l’aide des dernières mises à jour de l’intelligence de la sécurité
-- Lancer une enquête automatisée pour vérifier et corriger les menaces sur l’appareil et éventuellement sur d’autres appareils concernés
-- Limiter l’exécution de l’application aux fichiers exécutables signés par Microsoft uniquement, ce qui empêche toute activité de menace ultérieure par le biais de programmes malveillants ou d’autres fichiers exécutables non signés
+- Lancer un examen automatisé pour vérifier et corriger les menaces sur l’appareil et éventuellement sur d’autres appareils concernés
+- Restreindre l’exécution de l’application uniquement aux fichiers exécutables signés par Microsoft, ce qui empêche toute activité de menace ultérieure par le biais de programmes malveillants ou d’autres fichiers exécutables non signés
 
-Pour en savoir plus sur la façon dont ces actions de réponse sont effectuées via Microsoft Defender pour le point de terminaison, consultez les actions de [réponse sur les appareils.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
+Pour en savoir plus sur la façon dont ces actions de réponse sont effectuées via Microsoft Defender pour le point de terminaison, consultez les actions de [réponse sur les appareils.](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
    
 ## <a name="quarantine-files"></a>Fichiers de mise en quarantaine
 Vous pouvez déployer l’action *de* mise en quarantaine sur les fichiers afin qu’ils soient automatiquement mis en quarantaine lorsqu’ils sont rencontrés. Lorsque vous sélectionnez cette action, vous pouvez choisir entre les colonnes suivantes pour identifier les fichiers de votre requête qui sont mis en quarantaine :
 
 - `SHA1` — Dans la plupart des tables de recherche avancées, il s’agit du SHA-1 du fichier affecté par l’action enregistrée. Par exemple, si un fichier a été copié, il s’agit du fichier copié.
-- `InitiatingProcessSHA1` — Dans la plupart des tables de recherche avancées, il s’agit du fichier responsable du début de l’action enregistrée. Par exemple, si un processus enfant a été lancé, il s’agit du processus parent. 
+- `InitiatingProcessSHA1` — Dans la plupart des tables de recherche avancées, il s’agit du fichier responsable de l’initiative de l’action enregistrée. Par exemple, si un processus enfant a été lancé, il s’agit du processus parent. 
 - `SHA256` — Il s’agit de l’équivalent SHA-256 du fichier identifié par la `SHA1` colonne.
 - `InitiatingProcessSHA256` — Il s’agit de l’équivalent SHA-256 du fichier identifié par la `InitiatingProcessSHA1` colonne.
 
-Pour en savoir plus sur la façon dont les actions de mise en quarantaine sont prises et comment les fichiers peuvent être restaurés, consultez les actions de [réponse sur les fichiers.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)
+Pour en savoir plus sur la façon dont les actions de mise en quarantaine sont prises et comment les fichiers peuvent être restaurés, consultez les [actions de réponse sur les fichiers.](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)
 
 >[!NOTE]
 >Pour localiser des fichiers et les mettre en quarantaine, les résultats de la requête doivent également inclure des valeurs en tant `DeviceId` qu’identificateurs d’appareil.  
 
-## <a name="take-action"></a>Prendre des mesures
+## <a name="take-action"></a>Prendre action
 Pour prendre l’une des actions décrites, sélectionnez un ou plusieurs enregistrements dans les résultats de votre requête, puis **sélectionnez Actions.** Un Assistant vous guide tout au long du processus de sélection, puis d’envoi de vos actions préférées.
 
 ![Image de l’enregistrement sélectionné avec panneau pour l’inspection de l’enregistrement](../../media/mtp-ah/ah-take-actions.png)

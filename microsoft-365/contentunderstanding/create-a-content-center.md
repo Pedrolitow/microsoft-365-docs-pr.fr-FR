@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment créer un centre de contenu.
-ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 34ba45cd62214743e5a6784893e0f24e9815fdfb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515135"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905823"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Créer un centre de contenu dans Microsoft SharePoint Syntex
 
@@ -35,12 +35,12 @@ Pour créer et gérer des modèles de présentation de documents, vous devez d�
 Vous créez un centre de contenu par défaut lors de [l’installation](set-up-content-understanding.md). Mais un administrateur SharePoint peut également choisir de créer d’autres centres au besoin. Bien qu’il soit possible qu’un seul centre de contenu soit adapté aux environnements pour lesquels vous voulez regrouper toutes les activités du modèle, vous souhaiterez peut-être disposer de centres supplémentaires pour plusieurs services au sein de votre organisation, lesquels peuvent avoir des besoins et des autorisations différents pour leurs modèles.
 
 > [!NOTE]
-> Dans un [Microsoft 365 Multigéographie](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo), si vous avez un centre de contenu par défaut unique dans votre emplacement central, vous pouvez seulement fournir un suivi de l’activité du modèle à partir de cet emplacement. Vous ne pouvez pas actuellement obtenir de déploiement de l’activité de modèle au-delà des limites de la batterie de serveurs dans l’environnement multigéographique. 
+> Dans un [Microsoft 365 Multigéographie](../enterprise/microsoft-365-multi-geo.md), si vous avez un centre de contenu par défaut unique dans votre emplacement central, vous pouvez seulement fournir un suivi de l’activité du modèle à partir de cet emplacement. Vous ne pouvez pas actuellement obtenir de déploiement de l’activité de modèle au-delà des limites de la batterie de serveurs dans l’environnement multigéographique. 
 
 
 ## <a name="create-a-content-center"></a>Créer un centre de contenu
 
-Un administrateur SharePoint peut créer un site de centre de contenu comme ils peuvent [créer n’importe quel autre site SharePoint](https://docs.microsoft.com/sharepoint/create-site-collection) via le panneau de configuration du site Centre d’administration.
+Un administrateur SharePoint peut créer un site de centre de contenu comme ils peuvent [créer n’importe quel autre site SharePoint](/sharepoint/create-site-collection) via le panneau de configuration du site Centre d’administration.
 
 Pour créer un nouveau centre de contenu, procédez comme suit :
 
@@ -63,7 +63,7 @@ Une fois que vous avez créé un site de centre de contenu, celui-ci est répert
 
 ### <a name="give-access-to-additional-users"></a>Accorder l’accès à d’autres utilisateurs
  
-Une fois le site créé, vous pouvez autoriser d’autres utilisateurs à accéder au site via le [modèle d’autorisations de site SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions) standard.
+Une fois le site créé, vous pouvez autoriser d’autres utilisateurs à accéder au site via le [modèle d’autorisations de site SharePoint](/sharepoint/modern-experience-sharing-permissions) standard.
 
 ## <a name="see-also"></a>Voir aussi
 [Créer un classificateur](create-a-classifier.md)
@@ -76,4 +76,4 @@ Une fois le site créé, vous pouvez autoriser d’autres utilisateurs à accéd
 
 [Créer un modèle de traitement de formulaire](create-a-form-processing-model.md)
 
-[Appliquer un modèle](apply-a-model.md)    
+[Appliquer un modèle](apply-a-model.md)

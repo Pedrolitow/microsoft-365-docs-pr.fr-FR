@@ -18,22 +18,22 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base font partie des plans Microsoft 365.
-ms.openlocfilehash: ec3ffa8879bf14ab3116bbbbf5cf2a1a3fd7c6e6
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: b7b1d229e87a313a9567daed87f03452b1925a65
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50053800"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904263"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Choisir entre Basic Mobility and Security ou Intune
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) est un produit autonome inclus dans certains plans Microsoft 365, tandis que Basic Mobility and Security fait partie des plans Microsoft 365.
+[Microsoft Intune](/mem/intune/) est un produit autonome inclus dans certains plans Microsoft 365, tandis que Basic Mobility and Security fait partie des plans Microsoft 365.
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Disponibilité de Basic Mobility and Security et Intune
 
 Basic Mobility and Security et Intune sont inclus dans une variété de plans, décrits dans le tableau suivant.
 
-| Planification | Mobility + Security de Base | Microsoft Intune |
+| Prévision | Mobility + Security de Base | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Oui|Non|
 |Microsoft 365 Business Basic|Oui|Non|
@@ -50,12 +50,12 @@ Basic Mobility and Security et Intune sont inclus dans une variété de plans, d
 |Microsoft 365 Éducation A5 |Oui|Oui|
 |Microsoft Intune |Non|Oui|
 |Enterprise Mobility & Security E3 |Non|Oui|
-|Enterprise Mobility & Security E5 |Non|Oui|
+|Enterprise Mobility & Security E5 |Non|Oui|
 
 >[!NOTE]
 >Vous ne pouvez pas commencer à utiliser Basic Mobility and Security si vous utilisez déjà Microsoft Intune.
 
- Pour plus d’informations, consultez les descriptions des services de [plateforme Microsoft 365 et Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description) 
+ Pour plus d’informations, consultez les descriptions des services de [plateforme Microsoft 365 et Office 365.](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description) 
 
 ## <a name="differences-in-capabilities"></a>Différences de fonctionnalités
 
@@ -74,10 +74,10 @@ Microsoft Intune et Basic Mobility and Security intégrés vous donnent la possi
 |Profils de messagerie  |Provisionne un profil de messagerie natif sur l’appareil. |Oui|Oui|
 |Profils WiFi |Approvisionnement d’un profil WiFi natif sur l’appareil. |Non|Oui|
 |Profils VPN |Approvisionnement d’un profil VPN natif sur l’appareil. |Non|Oui|
-|Gestion des applications de mobilité et de sécurité de base  |Déployez vos applications métier internes et des magasins d’applications aux utilisateurs. |Non|Oui|
+|Gestion des applications mobiles  |Déployez vos applications métier internes et des magasins d’applications aux utilisateurs. |Non|Oui|
 |Protection des applications mobiles  |Permettre à vos utilisateurs d’accéder en toute sécurité aux informations d’entreprise à l’aide des applications mobiles et métier Office qu’ils connaissent, tout en garantissant la sécurité des données en aidant à limiter les actions telles que copier, couper, coller et enregistrer sous uniquement les applications gérées approuvées pour les données d’entreprise. Fonctionne même si les appareils ne sont pas inscrits à Basic Mobility and Security. Voir Protéger les données d’application à l’aide de stratégies DE GESTION. |Non|Oui|
 |Navigateur géré  |Activez la navigation web plus sécurisée à l’aide de l’application Edge. |Non|Oui|
-|Programmes d’inscription zero touch Autopilot) |Inscrire un grand nombre d’appareils d’entreprise, tout en simplifiant la configuration utilisateur. |Non|Oui|
+|Programmes d’inscription zero touch (AutoPilot) |Inscrire un grand nombre d’appareils d’entreprise, tout en simplifiant la configuration utilisateur. |Non|Oui|
 |||
 
 Outre les fonctionnalités répertoriées dans le tableau précédent, Basic Mobility and Security et Intune incluent un ensemble d’actions à distance qui envoient des commandes à des appareils sur Internet. Par exemple, vous pouvez supprimer des données Office de l’appareil d’un employé tout en laissant des données personnelles en place (mise en retrait), supprimer des applications Office de l’appareil d’un employé (réinitialisation) ou réinitialiser un appareil à ses paramètres d’usine (réinitialisation complète). 
@@ -87,20 +87,20 @@ Les actions à distance de mobilité et de sécurité de base incluent l’aband
 Avec Intune, vous avez l’ensemble d’actions suivant :
 
 -   Réinitialiser Autopilot (Windows uniquement)
--  [Rotation de touche Bitlocker](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)   (Windows uniquement)
--  [Utiliser la suppression, la suppression ou la désinscrire manuellement de l’appareil](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
--  [Désactiver loc](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)   d’activation (iOS uniquement)
--  [Nouveau démarrage](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)   (Windows uniquement)
-- [Analyse complète](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)   (Windows 10 uniquement)
-- [Localiser l’appareil](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)   (iOS uniquement)
-- [Mode perdu](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)   (iOS uniquement)- [Analyse rapide](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10 uniquement)
-- [Télécommande pour Android](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
-- [Verrouiller à distance](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)
-- [Renommer l’appareil](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
--  [Réinitialiser le redémarrage](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset) [](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)du code   secret (Windows uniquement)
+-  [Rotation de touche Bitlocker](/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)   (Windows uniquement)
+-  [Utiliser la suppression, la suppression ou la désinscrire manuellement de l’appareil](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
+-  [Désactiver loc](/mem/intune/remote-actions/device-activation-lock-disable)   d’activation (iOS uniquement)
+-  [Nouveau démarrage](/mem/intune/remote-actions/device-fresh-start)   (Windows uniquement)
+- [Analyse complète](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)   (Windows 10 uniquement)
+- [Localiser l’appareil](/mem/intune/remote-actions/device-locate)   (iOS uniquement)
+- [Mode perdu](/mem/intune/remote-actions/device-lost-mode)   (iOS uniquement)- [Analyse rapide](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10 uniquement)
+- [Télécommande pour Android](/mem/intune/remote-actions/teamviewer-support)
+- [Verrouiller à distance](/mem/intune/remote-actions/device-remote-lock)
+- [Renommer l’appareil](/mem/intune/remote-actions/device-rename)
+-  [Réinitialiser le redémarrage du code](/mem/intune/remote-actions/device-passcode-reset) [](/mem/intune/remote-actions/device-restart)   secret (Windows uniquement)
 -  Mettre à jour Windows Defender Security Intelligence (Windows uniquement)
 -  Réinitialisation du code confidentiel Windows 10 (Windows uniquement)
--  [Envoyer des notifications personnalisées](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android, iOS, iPad OS)
--  [Synchroniser l’appareil](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)
+-  [Envoyer des notifications personnalisées](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android, iOS, iPad OS)
+-  [Synchroniser l’appareil](/mem/intune/remote-actions/device-sync)
 
-Pour plus d’informations sur les actions Intune, voir [la documentation de Microsoft Intune.](https://docs.microsoft.com/mem/intune/)
+Pour plus d’informations sur les actions Intune, voir [la documentation de Microsoft Intune.](/mem/intune/)

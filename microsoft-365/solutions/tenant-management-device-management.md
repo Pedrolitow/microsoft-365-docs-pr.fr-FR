@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez l’option correcte pour la gestion des appareils et des applications pour vos clients Microsoft 365.
-ms.openlocfilehash: 96412cb52540e87341fa67e20382951db7becfbe
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 994ab7d21ae70307fa78e1f7249d39ac314a7358
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406371"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904611"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 5. Gestion des appareils et des applications pour vos clients Microsoft 365 entreprise
 
-Microsoft 365 entreprise inclut des fonctionnalités pour vous aider à gérer les appareils et l’utilisation des applications sur ces appareils au sein de votre organisation avec la gestion des périphériques mobiles (MDM) et la gestion des applications mobiles (MAM). Vous pouvez gérer les appareils iOS, Android, macOS et Windows pour protéger l’accès aux ressources de votre organisation, y compris à vos données. Par exemple, vous pouvez empêcher l’envoi de courriers électroniques à des personnes extérieures à votre organisation ou isoler les données de l’organisation des données personnelles sur les appareils personnels de votre collaborateur.
+Microsoft 365 entreprise inclut des fonctionnalités pour vous aider à gérer les appareils et l’utilisation des applications sur ces appareils au sein de votre organisation avec la gestion des périphériques mobiles (MDM) et la gestion des applications mobiles (MAM). Vous pouvez gérer les appareils iOS, Android, macOS et Windows pour protéger l’accès aux ressources de votre organisation, y compris à vos données. Par exemple, vous pouvez empêcher l’envoi de courriers électroniques à des personnes extérieures à votre organisation ou isoler les données de l’organisation des données personnelles sur les appareils personnels de votre employé.
 
 Voici un exemple de validation et de gestion des utilisateurs, de leurs appareils et de leur utilisation d’applications de productivité locales et cloud telles que Microsoft Teams.
 
@@ -34,13 +34,13 @@ Voici un exemple de validation et de gestion des utilisateurs, de leurs appareil
 Pour vous aider à sécuriser et protéger les ressources de votre organisation, Microsoft 365 entreprise inclut des fonctionnalités pour vous aider à gérer les appareils et leur accès aux applications. Il existe deux options de gestion des appareils :
 
 - Microsoft Intune, qui est une solution complète de gestion des appareils et des applications pour les entreprises.
-- Basic Mobility and Security, qui est un sous-ensemble de services Intune inclus avec tous les produits Microsoft 365 pour la gestion des appareils au sein de votre organisation. Pour plus d’informations, [voir Fonctionnalités de la mobilité et de la sécurité de base.](https://docs.microsoft.com/microsoft-365/admin/basic-mobility-security/capabilities)
+- Basic Mobility and Security, qui est un sous-ensemble de services Intune inclus avec tous les produits Microsoft 365 pour la gestion des appareils au sein de votre organisation. Pour plus d’informations, [voir Fonctionnalités de la mobilité et de la sécurité de base.](../admin/basic-mobility-security/capabilities.md)
 
 Si vous avez Microsoft 365 E3 ou E5, vous devez utiliser Intune.
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Vous utilisez [Microsoft Intune pour](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide) gérer l’accès à votre organisation à l’aide de LAM ou de MAM. La gestion des périphériques mobiles est le cas lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois qu’un appareil est inscrit, il s’agit d’un appareil géré et peut recevoir les stratégies, règles et paramètres de votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, etc.
+Vous utilisez [Microsoft Intune pour](/mem/intune/fundamentals/planning-guide) gérer l’accès à votre organisation à l’aide de LAM ou de MAM. La gestion des périphériques mobiles est le cas lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois qu’un appareil est inscrit, il s’agit d’un appareil géré et peut recevoir les stratégies, règles et paramètres de votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, etc.
 
 Les utilisateurs ayant leurs propres appareils personnels peuvent ne pas vouloir inscrire leurs appareils ou être gérés par Intune et les stratégies de votre organisation. Toutefois, vous devez toujours protéger les ressources et les données de votre organisation. Dans ce scénario, vous pouvez protéger vos applications à l’aide de MAM. Par exemple, vous pouvez utiliser une stratégie MAM qui nécessite qu’un utilisateur entre un code confidentiel lors de l’accès à SharePoint sur l’appareil.
 
@@ -70,7 +70,7 @@ Pour la gestion des appareils et des applications pour votre client Microsoft 36
 
 Voici un exemple de client avec la gestion des applications et des appareils Intune avec les nouveaux éléments mis en surbrill plan.
 
-![Exemple de client avec gestion des appareils et des applications Intune](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
+![Exemple de client avec gestion d’appareils et d’applications Intune](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
 Dans cette illustration, le client a :
 

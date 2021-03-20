@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Gérer ces rôles d’administrateur Azure dans le Centre d’administration Microsoft 365
-ms.openlocfilehash: 7a4e28667bc16d6619fe87451cd48ea77d89c81d
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126104"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904491"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Rôles Azure Active Directory dans le Centre d’administration Microsoft 365
 
-Le Centre d’administration Microsoft 365 vous permet de gérer plus de 30 rôles Azure AD. Toutefois, ces rôles sont un sous-ensemble des rôles disponibles sur le Portail Microsoft Azure. Si vous avez une grande entreprise, certains rôles dans le Portail Azure peuvent répondre aux besoins de votre organisation. Vous recherchez des descriptions détaillées des rôles pour Azure AD ? Consultez la page [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Le Centre d’administration Microsoft 365 vous permet de gérer plus de 30 rôles Azure AD. Toutefois, ces rôles sont un sous-ensemble des rôles disponibles sur le Portail Microsoft Azure. Si vous avez une grande entreprise, certains rôles dans le Portail Azure peuvent répondre aux besoins de votre organisation. Vous recherchez des descriptions détaillées des rôles pour Azure AD ? Consultez la page [Autorisations des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 Un utilisateur doté d’un rôle d’administrateur disposera du même niveau d'accès vers les services cloud auxquels votre organisation est abonnée, que vous lui ayez attribué le rôle dans le Centre d’administration Microsoft 365 ou le portail Azure, ou à l’aide du module Azure AD pour Windows PowerShell.
 
@@ -37,7 +37,7 @@ Dans le Centre d’administration Microsoft 365, vous pouvez accéder à **Rôl
 
 ## <a name="all-azure-ad-roles"></a>Tous les rôles Azure AD
 
-Voici la liste de tous les rôles d'administrateur disponibles dans le Centre d’administration Microsoft 365. Vous recherchez des descriptions de rôles détaillées des rôles d’administrateur Microsoft 365 ? Consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+Voici la liste de tous les rôles d'administrateur disponibles dans le Centre d’administration Microsoft 365. Vous recherchez des descriptions de rôles détaillées des rôles d’administrateur Microsoft 365 ? Consultez [À propos des rôles d’administrateur](./about-admin-roles.md?view=o365-worldwide).
 
 |Rôle d’administrateur     |Description  |
 |---------|---------|
@@ -57,7 +57,7 @@ Voici la liste de tous les rôles d'administrateur disponibles dans le Centre d�
 |Administrateur Exchange     |  Accès total à Exchange Online, crée et gère des groupes, gère les demandes de service et surveille l’état d’intégrité du service.    |
 |Administrateur des fournisseurs d'identité externes    |     Configurer les fournisseurs d’identité pour un usage dans la Fédération directe.    |
 |Administrateur global     |    Dispose d’un accès illimité à toutes les fonctionnalités de gestion et à la plupart des données de tous les centres d’administration.     |
-|Lecteur général     |    Dispose d’un accès en lecture seule à toutes les fonctionnalités de gestion et à la plupart des données des centres d’administration. Pour obtenir une description détaillée des droits d’accès et des limites de ce rôle, voir les [Autorisations de rôles d'administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
+|Lecteur général     |    Dispose d’un accès en lecture seule à toutes les fonctionnalités de gestion et à la plupart des données des centres d’administration. Pour obtenir une description détaillée des droits d’accès et des limites de ce rôle, voir les [Autorisations de rôles d'administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
 |Administrateur de groupes   |Crée des groupes et gère tous les paramètres de groupes dans les centres d’administration.|
 |Inviteur d'invités     |    Gère les invitations des utilisateurs invités B2B dans Azure Active Directory.     |
 |Administrateur du support technique     | Réinitialise les mots de passe et effectue une nouvelle authentification pour tous les non administrateurs et certains rôles d’administrateur, gère les demandes de service et surveille l’intégrité du service.      |
@@ -99,7 +99,7 @@ Un partenaire peut attribuer ces rôles :
 
 - Administration limitée, dont les privilèges sont équivalents à ceux d’un administrateur du support technique.
 
-Pour que le partenaire puisse attribuer ces rôles à des utilisateurs, vous devez ajouter le partenaire en tant qu’administrateur délégué de votre compte. Ce processus est initié par un partenaire autorisé. Le partenaire vous envoie un e-mail pour vous demander l’autorisation d’agir en tant qu’administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenaire](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+Pour que le partenaire puisse attribuer ces rôles à des utilisateurs, vous devez ajouter le partenaire en tant qu’administrateur délégué de votre compte. Ce processus est initié par un partenaire autorisé. Le partenaire vous envoie un e-mail pour vous demander l’autorisation d’agir en tant qu’administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenaire](../misc/add-partner.md).
   
 ## <a name="related-articles"></a>Articles connexes
 

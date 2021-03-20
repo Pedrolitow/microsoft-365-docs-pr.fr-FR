@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: f98f82de50feb2a9f92d1ecc4775c5307b314a72
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 7fcbc82cfb35c598358c8160dd06427c2a9c59a2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487599"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904863"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Authentification unique transparente Azure AD pour votre environnement de test Microsoft 365
 
@@ -40,11 +40,11 @@ La configuration de l' sso transparente Azure AD implique deux phases :
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Pour obtenir un plan visuel de tous les articles de la pile du Guide de laboratoire de test Microsoft 365 pour entreprise, allez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Pour obtenir une carte visuelle de tous les articles de la pile du Guide de laboratoire de test Microsoft 365 pour entreprise, allez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
-Suivez les instructions de la synchronisation [de hachage de mot de passe pour Microsoft 365.](password-hash-sync-m365-ent-test-environment.md) 
+Suivez les instructions de la [synchronisation de hachage de mot de passe pour Microsoft 365.](password-hash-sync-m365-ent-test-environment.md) 
 
 La configuration qui en résulte ressemble à ceci :
   
@@ -82,7 +82,7 @@ Dans cette phase, configurez Azure AD Connect sur APP1 pour azure AD Seamless SS
 
 10. Dans la page **Configuration terminée,** sélectionnez **Quitter.**
 
-11. À partir du portail Azure, dans le volet gauche, sélectionnez **Azure Active Directory**  >  **Azure AD Connect.** Vérifiez que la **fonctionnalité d' sign-on unique** transparente apparaît comme **activée.**
+11. Dans le portail Azure, dans le volet gauche, sélectionnez **Azure Active Directory**  >  **Azure AD Connect**. Vérifiez que la **fonctionnalité d' sign-on unique** transparente apparaît comme **activée.**
 
 Ensuite, testez la possibilité de vous inscrire à votre abonnement avec le <strong>user1@testlab.</strong>\<*your public domain*> nom d’utilisateur du compte utilisateur1.
 
@@ -123,4 +123,4 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

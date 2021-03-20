@@ -18,18 +18,18 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Découvrez comment gérer les points de terminaison Office 365 afin qu’ils fonctionnent avec l’architecture réseau de votre organisation d’entreprise.
-ms.openlocfilehash: 41dceae78d80a78b023517e8b6c5c5c0d73da2ef
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905284"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905115"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
 La plupart des organisations d’entreprise disposant de plusieurs emplacements de bureau et d’une connexion WAN de connexion auront besoin de la configuration de la connectivité réseau d’Office 365. Vous pouvez optimiser votre réseau en envoyant toutes les requêtes réseau approuvées Office 365 directement via votre pare-feu, en contournant toutes les tâches d’inspection ou de traitement supplémentaires des paquets. Cela réduit ainsi la latence et les exigences relatives à la capacité du périmètre. L’identification du trafic réseau Office 365 est la première étape pour offrir des performances optimales pour vos utilisateurs. Pour plus d’informations, voir Principes de connectivité réseau [Office 365.](microsoft-365-network-connectivity-principles.md)
 
-Microsoft vous recommande d’accéder aux points de terminaison réseau Office 365 et aux modifications en cours qui leur sont apportées à l’aide de l’adresse IP office 365 et du [service Web d’URL.](microsoft-365-ip-web-service.md)
+Microsoft vous recommande d’accéder aux points de terminaison réseau Office 365 et aux modifications en cours apportées à ces points de terminaison à l’aide de l’adresse IP office 365 et du [service Web d’URL.](microsoft-365-ip-web-service.md)
 
 Quelle que soit la façon dont vous gérez le trafic réseau Office 365 vital, Office 365 nécessite une connectivité Internet. D’autres points de terminaison réseau pour lesquels une connectivité est requise sont répertoriés sur [Autres points de terminaison non inclus dans l’adresse IP d’Office 365 et le service Web d’URL](additional-office365-ip-addresses-and-urls.md).
 
@@ -37,7 +37,7 @@ La manière dont vous utilisez les points de terminaison réseau Office 365 dép
 
 ## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SD-WAN pour la sortie de succursale locale du trafic réseau Office 365 vital
 
-À chaque emplacement de succursale, vous pouvez fournir un périphérique SD-WAN configuré pour router le trafic pour la catégorie optimiser office 365 des points de terminaison, ou optimiser et autoriser des catégories, directement vers le réseau de Microsoft. Les autres types de trafic réseau, notamment le trafic de centre de données local, le trafic de sites Web Internet généraux et le trafic vers les points de terminaison de catégorie par défaut d’Office 365 sont envoyés à un autre emplacement dans lequel vous avez un périmètre de réseau plus important.
+À chaque emplacement de succursale, vous pouvez fournir un périphérique SD-WAN configuré pour router le trafic pour la catégorie Optimiser pour Office 365 des points de terminaison, ou optimiser et autoriser des catégories, directement sur le réseau de Microsoft. Les autres types de trafic réseau, notamment le trafic de centre de données local, le trafic de sites Web Internet généraux et le trafic vers les points de terminaison de catégorie par défaut d’Office 365 sont envoyés à un autre emplacement dans lequel vous avez un périmètre de réseau plus important.
 
 Microsoft travaille avec des fournisseurs SD-WAN pour activer la configuration automatisée. Pour plus d’informations, voir [Programme de partenariat réseau Office 365](microsoft-365-networking-partner-program.md).
 
@@ -128,13 +128,13 @@ Cliquez sur le lien situé au bas de la page pour indiquer si l’article vous a
   
 ### <a name="how-do-i-determine-the-location-of-my-tenant"></a>Comment déterminer l’emplacement de mon client ?
 
- **L’emplacement du client** est mieux déterminé à l’aide de notre [carte de centre de données](https://aka.ms/datamaps).
+ **L’emplacement du client** est mieux déterminé à l’aide de notre [carte de centre de données](./o365-data-locations.md).
   
 ### <a name="am-i-peering-appropriately-with-microsoft"></a>Est-ce que ma relation d’homologation avec Microsoft est appropriée ?
 
  Les **emplacements d’homologation** sont décrits plus en détail dans l’article [Homologation avec Microsoft](https://www.microsoft.com/peering).
   
-Avec plus de 2 500 relations d’homologation avec des fournisseurs de services Internet dans le monde entier et 70 points de présence, l’accès depuis votre réseau à nos réseaux devrait être transparent. En quelques minutes, vous pouvez vous assurer que la relation d’homologation de votre fournisseur de services Internet est optimale. [Voici quelques exemples](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) de bonnes et de mauvaises configurations d’homologation à notre réseau.
+Avec plus de 2 500 relations d’homologation avec des fournisseurs de services Internet dans le monde entier et 70 points de présence, l’accès depuis votre réseau à nos réseaux devrait être transparent. En quelques minutes, vous pouvez vous assurer que la relation d’homologation de votre fournisseur de services Internet est optimale. [Voici quelques exemples](/archive/blogs/onthewire/__guidance) de bonnes et de mauvaises configurations d’homologation à notre réseau.
   
 <a name="bkmk_MissingIP"> </a>
 ### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Je vois des requêtes réseau envoyées à des adresses IP ne figurant pas sur la liste publiée. Dois-je leur octroyer l’accès ?
@@ -168,7 +168,7 @@ Les configurations codées en dur ou la liste blanche basée sur des FQDN Office
 
 Office 365 et d’autres services Microsoft utilisent des services tiers tels que MarkMonitor et Akamai pour améliorer votre expérience d’Office 365. Pour continuer de vous offrir la meilleure expérience possible, il se peut que vous changions ces services à l’avenir. Les domaines tiers peuvent héberger du contenu, tel qu’un CDN, ou héberger un service, tel qu’un service de gestion du trafic géographique. Voici quelques-uns des services actuellement utilisés :
   
-[MarkMonitor](https://www.markmonitor.com/) est utilisé lorsque vous voyez des demandes qui incluent *\* .nsatc.net*. Ce service fournit une protection de nom de domaine et une surveillance pour protéger contre des comportements malveillants.
+[MarkMonitor](https://www.markmonitor.com/) est utilisé lorsque vous voyez des requêtes qui incluent *\* .nsatc.net*. Ce service fournit une protection de nom de domaine et une surveillance pour protéger contre des comportements malveillants.
   
 [ExactTarget est](https://www.marketingcloud.com/) utilisé lorsque vous voyez des demandes à *\* .exacttarget.com*. Ce service fournit une gestion des liens de messagerie électronique et une surveillance pour protéger contre des comportements malveillants.
   
@@ -224,7 +224,7 @@ Office 365 ne fournit aucune adresse IP de tous les points de terminaison résea
   
 [Espace d’adresse IP public de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)
   
-[Configuration requise pour l’infrastructure réseau pour Microsoft Intune](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
+[Configuration requise pour l’infrastructure réseau pour Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
   
 [ExpressRoute et Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   

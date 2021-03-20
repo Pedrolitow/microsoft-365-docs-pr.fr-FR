@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Comprenez ce que vous devez savoir avant de passer par le processus d’inscription à Office 365. '
-ms.openlocfilehash: 7cbbcecdf3520ce5f8bd266100c3934a9cd7a664
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 93d3f58db24e4233e8d7b2929fd2471707614097
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906274"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904371"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - Aide de l’administrateur
 
@@ -90,7 +90,7 @@ Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont
 
 Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter ultérieurement.](../../commerce/buy-a-subscription-from-your-free-trial.md) Les utilisateurs et données associés à la version d'évaluation seront conservés.
+Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter ultérieurement.](../../commerce/try-or-buy-microsoft-365.md) Les utilisateurs et données associés à la version d'évaluation seront conservés.
   
 Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achetez pas l’abonnement d’essai, il expire automatiquement à la fin de la période d’essai et toutes les informations sont définitivement supprimées.
 
@@ -105,7 +105,7 @@ Regardez une courte vidéo qui montre le processus d’inscription.<br><br>
 
 Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter ultérieurement.](../../commerce/buy-a-subscription-from-your-free-trial.md) Les utilisateurs et données associés à la version d'évaluation seront conservés.
+Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter ultérieurement.](../../commerce/try-or-buy-microsoft-365.md) Les utilisateurs et données associés à la version d'évaluation seront conservés.
   
 Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achetez pas l’abonnement d’essai, il expire automatiquement à la fin de la période d’essai et toutes les informations sont définitivement supprimées.
   
@@ -115,7 +115,7 @@ Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achete
 
 - **Adresse et informations de contact pour votre abonnement :**
 
-  - **Pays** où les services seront utilisés. Vous **ne pourrez pas** modifier le pays ultérieurement, même pendant le processus d’inscription ; Vous devez redémarrer l’Assistant d’inscription.
+  - **Pays** où les services seront utilisés. Vous **ne pourrez pas** modifier le pays ultérieurement, même pendant le processus d’inscription ; vous devez redémarrer l’Assistant d’inscription.
 
   - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
 

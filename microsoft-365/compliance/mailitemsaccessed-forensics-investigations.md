@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’action d’audit de boîte aux lettres MailItemsAccessed pour effectuer des enquêtes légales sur des comptes d'utilisateur compromis.
-ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: e9dda101b330f6632e66c226156df3497ac38453
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868002"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903480"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Utiliser l’audit avancé pour analyser des comptes compromis
 
@@ -31,7 +31,7 @@ Pour faciliter votre enquête sur des comptes de courrier compromis, nous audito
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>Action d’audit de boîte aux lettres MailItemsAccessed
 
-La nouvelle action MailItemsAccessed fait partie de la récente fonctionnalité d’[audit avancé](advanced-audit.md)t. Elle fait partie de l'[audit de boîte aux lettres Exchange](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) et est activée par défaut pour les utilisateurs auxquels une licence Office 365 ou Microsoft 365 E5 est attribuée ou pour les organisations disposant d’un abonnement au composant Microsoft 365 E5 Conformité.
+La nouvelle action MailItemsAccessed fait partie de la récente fonctionnalité d’[audit avancé](advanced-audit.md)t. Elle fait partie de l'[audit de boîte aux lettres Exchange](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) et est activée par défaut pour les utilisateurs auxquels une licence Office 365 ou Microsoft 365 E5 est attribuée ou pour les organisations disposant d’un abonnement au composant Microsoft 365 E5 Conformité.
 
 L’action d’audit de boîte aux lettres MailItemsAccessed englobe tous les protocoles de messagerie : POP, IMAP, MAPI, EWS, Exchange ActiveSync et REST. Il prend en charge également les deux types d’accès aux courriers : *synchronisation* et *liaison*.
 
@@ -67,7 +67,7 @@ Pour consulter un exemple d’affichage de la propriété IsThrottled dans un en
 
 L’audit de boîte aux lettres génère des enregistrements d’audit pour l’accès aux courriers afin d'être certain que les messages n’ont pas été compromis. En conséquence, si des circonstances ne permettent pas d'affirmer qu'un accès aux données a eu lieu, nous supposons qu'il s'est produit en enregistrant toute l'activité d'accès au courrier.
 
-L'enregistrement à l'aide d’audit MailItemsAccessed à des fins d’enquête légale est généralement effectué après la résolution d’une violation de données et l'éviction de la personne malveillante. Pour commencer votre enquête, vous devez identifier les boîtes aux lettres qui ont été compromises et déterminer la période durant laquelle la personne malveillante a eu accès aux boîtes aux lettres de votre organisation. Puis vous pouvez utiliser les applets de commande **Search-UnifiedAuditLog** ou **Search-MailboxAuditLog** dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) pour rechercher les enregistrements d’audit correspondant à la violation de données. 
+L'enregistrement à l'aide d’audit MailItemsAccessed à des fins d’enquête légale est généralement effectué après la résolution d’une violation de données et l'éviction de la personne malveillante. Pour commencer votre enquête, vous devez identifier les boîtes aux lettres qui ont été compromises et déterminer la période durant laquelle la personne malveillante a eu accès aux boîtes aux lettres de votre organisation. Puis vous pouvez utiliser les applets de commande **Search-UnifiedAuditLog** ou **Search-MailboxAuditLog** dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) pour rechercher les enregistrements d’audit correspondant à la violation de données. 
 
 Vous pouvez exécuter l’une des commandes suivantes pour rechercher les enregistrements d’audit MailItemsAccessed :
 
@@ -192,4 +192,4 @@ Voici la syntaxe de la commande présentée dans la capture d'écran précédent
 
 ```powershell
 Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
-``` 
+```

@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment attribuer des licences Microsoft 365 à des comptes d’utilisateur, individuellement ou en fonction de l’appartenance à un groupe.
-ms.openlocfilehash: a2eed7b3597dcc2531834456a9b05f5aa1b07a23
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 6bba3cd767787f450840c5cae6c30f2be21bed1b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326506"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905439"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Attribuer des licences Microsoft 365 à des comptes d’utilisateur
 
@@ -41,13 +41,13 @@ Pour le modèle d’identité cloud uniquement, vous pouvez attribuer des licenc
 
 Pour le modèle d’identité hybride, lorsque les comptes d’utilisateur des services de domaine Active Directory (AD DS) sont synchronisés pour la première fois, ils ne se voit pas attribuer automatiquement un emplacement ou une licence Microsoft 365. **Vous devez configurer chaque compte d’utilisateur avec un emplacement d’utilisateur avant ou avec l’attribution d’une licence.**
 
-Dans les deux cas, vous devez attribuer une licence aux comptes d’utilisateurs afin que vos utilisateurs peuvent accéder aux services Microsoft 365, tels que le courrier électronique et Microsoft Teams.
+Dans les deux cas, vous devez attribuer une licence à des comptes d’utilisateurs afin que vos utilisateurs peuvent accéder aux services Microsoft 365, tels que le courrier électronique et Microsoft Teams.
 
 Vous pouvez attribuer des licences aux comptes d’utilisateurs individuellement ou automatiquement par le biais de l’appartenance à un groupe.
 
 Pour attribuer des licences Microsoft 365 à des comptes d’utilisateur individuels, vous pouvez utiliser :
 
-- [Le Centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
+- [Le Centre d’administration Microsoft 365](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
 - Centre d’administration Azure AD
 
@@ -61,13 +61,13 @@ Vérifiez que vous disposez de suffisamment de licences pour tous les membres du
 >Vous ne devez pas configurer la gestion des licences par groupes pour des groupes qui contiennent des comptes B2B Azure.
 >
 
-Pour plus d’informations, voir la gestion des licences basée [sur les groupes dans Azure AD.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+Pour plus d’informations, voir la gestion des licences basée [sur les groupes dans Azure AD.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Avec l’ensemble approprié de comptes d’utilisateurs qui ont reçu des licences, vous êtes maintenant prêt à :
 
-- [Implémenter la sécurité](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
-- [Déployer des logiciels clients, tels que Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
+- [Implémenter la sécurité](../security/office-365-security/security-roadmap.md)
+- [Déployer des logiciels clients, tels que Microsoft 365 Apps](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Configurer la gestion des appareils](device-management-roadmap-microsoft-365.md)
 - [Configurer les services et les applications](configure-services-and-applications.md)

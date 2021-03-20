@@ -17,13 +17,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Utilisez Windows PowerShell pour obtenir des détails sur les appareils de mobilité et sécurité de base dans votre organisation.
-ms.openlocfilehash: 7c6a0365dfd573377c3675bbcee8ee8280e33816
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Utilisez Windows PowerShell pour obtenir des détails sur les périphériques de mobilité et de sécurité de base dans votre organisation.
+ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876887"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904251"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtenir des détails sur les appareils gérés par la mobilité et la sécurité de base
 
@@ -33,7 +33,7 @@ Voici une répartition des détails de l’appareil à votre disposition.
 
 |**Detail**|**Ce qu’il faut rechercher dans PowerShell**|
 |:----------------|:------------------------------------------------------------------------------|
-|L’appareil est inscrit à Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)|La valeur du *paramètre isManaged*   est :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit. |
+|L’appareil est inscrit à Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)|La valeur du *paramètre isManaged est*   :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit. |
 |L’appareil est conforme aux stratégies de sécurité de votre appareil. Pour plus d’informations, voir [Créer des stratégies de sécurité d’appareil](create-device-security-policies.md)|La valeur du *paramètre isCompliant*   est :<br/>**True**   = l’appareil est conforme aux stratégies.<br/>**False**   = l’appareil n’est pas conforme aux stratégies.|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Paramètres PowerShell de mobilité et de sécurité de base":::
@@ -47,9 +47,9 @@ Vous devez configurer plusieurs éléments pour exécuter les commandes et les s
 
 ### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>Étape 1 : Télécharger et installer le module Azure Active Directory pour Windows PowerShell
 
-Pour plus d’informations sur ces étapes, voir Se connecter [à Microsoft 365 avec PowerShell.](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
+Pour plus d’informations sur ces étapes, voir Se connecter [à Microsoft 365 avec PowerShell.](/office365/enterprise/powershell/connect-to-office-365-powershell)
 
-1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://www.microsoft.com/download/details.aspx?id=41950)and select Download for Microsoft Online Services    **Sign-in Assistant**.   
+1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://www.microsoft.com/download/details.aspx?id=41950)and select Download for Microsoft Online Services    **Sign-in Assistant**.
 
 2. Téléchargez et installez le Module Microsoft Azure Active Directory pour Windows PowerShell en procédant comme suit :
 
@@ -98,7 +98,7 @@ Pour exécuter le script Get-MsolUserDeviceComplianceStatus.ps1, vous devez acti
 
     Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_. RegisteredOwners.Count -gt 0}
 
-Pour plus d’exemples,  [voir Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721).
+Pour plus d’exemples,  [voir Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939).
 
 ## <a name="run-a-script-to-get-device-details"></a>Exécuter un script pour obtenir les détails de l’appareil
 
@@ -283,7 +283,7 @@ Tout d’abord, enregistrez le script sur votre ordinateur.
 
 Les informations sont exportées vers votre bureau Windows en tant que fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
 
-## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Exécuter le script pour obtenir des informations sur l’appareil d’un groupe d’utilisateurs
+## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Exécutez le script pour obtenir des informations sur l’appareil d’un groupe d’utilisateurs
 
 1. Ouvrez le Module Microsoft Azure Active Directory pour Windows PowerShell.
     
@@ -295,7 +295,7 @@ Les informations sont exportées vers votre bureau Windows en tant que fichier C
 
     $u = Get-MsolGroupMember -SearchString « FinanceStaff » | % { Get-MsolUser -ObjectId $_. ObjectId }
 
-4. Exécutez la commande suivante pour lancer le script.   
+4. Exécutez la commande suivante pour lancer le script.
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
@@ -303,8 +303,8 @@ Les informations sont exportées vers votre bureau Windows en tant que fichier C
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-[Microsoft Connect a été retiré](https://docs.microsoft.com/collaborate/connect-redirect)
+[Microsoft Connect a été retiré](/collaborate/connect-redirect)
 
 [Vue d’ensemble de la fonction Mobility + Security de Base](overview.md)
 
-[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)
+[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)

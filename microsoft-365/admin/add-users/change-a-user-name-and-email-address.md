@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Découvrez comment un administrateur général peut modifier l’adresse de messagerie et le nom complet d’un utilisateur. '
-ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: 6a5498f4e480802f8770f7b7adde55fe7c996dc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585293"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904479"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
 
@@ -221,7 +221,7 @@ L'application de cette modification dans tous les services peut prendre jusqu'à
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>« Impossible de trouver un paramètre correspondant au nom "EmailAddresses" »
 
-Si le message d’erreur « **Impossible de trouver un paramètre correspondant au nom ’EmailAddresses** » s’affiche, cela signifie qu’il faut un peu plus de temps pour configurer votre client, ou votre domaine personnalisé si vous venez d’en ajouter un. Le processus de configuration peut prendre jusqu’à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le [support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) et demandez-lui d’effectuer une synchronisation complète pour vous.
+Si le message d’erreur « **Impossible de trouver un paramètre correspondant au nom ’EmailAddresses** » s’affiche, cela signifie qu’il faut un peu plus de temps pour configurer votre client, ou votre domaine personnalisé si vous venez d’en ajouter un. Le processus de configuration peut prendre jusqu’à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le [support](../contact-support-for-business-products.md) et demandez-lui d’effectuer une synchronisation complète pour vous.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>« Impossible de modifier l’utilisateur. Vérifiez les informations sur l’utilisateur et réessayez. »
 
@@ -249,7 +249,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 > [!TIP]
 > Cela a pour effet de modifier l'attribut **userPrincipalName** de la personne et n'a aucun effet sur son adresse de courrier Microsoft Online Email Routing Address (MOERA). Nous vous conseillons toutefois de faire correspondre l'UPN de connexion de la personne avec son adresse SMTP principale. 
   
-Pour découvrir comment modifier le nom d'utilisateur de quelqu'un dans Active Directory, dans Windows Server 2003 et version ultérieure, voir [Renommer un compte d'utilisateur](https://go.microsoft.com/fwlink/?LinkId=809091).
+Pour découvrir comment modifier le nom d'utilisateur de quelqu'un dans Active Directory, dans Windows Server 2003 et version ultérieure, voir [Renommer un compte d'utilisateur](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
   
 ## <a name="related-articles"></a>Articles connexes
 

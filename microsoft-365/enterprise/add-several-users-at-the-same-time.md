@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'Découvrez comment ajouter plusieurs utilisateurs à Microsoft 365 pour les entreprises à partir d’une liste dans une feuille de calcul ou un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Microsoft 365. À la fin de ce processus, chaque utilisateur ayant un compte aura une boîte aux lettres Microsoft 365. '
-ms.openlocfilehash: 7629879990facbce57a6fbca1aa543471ad1b05b
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 6b3e8d885466e44a4aa23427a54cfc98b2eebdf3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877211"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905619"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Ajouter plusieurs utilisateurs en même temps à Microsoft 365 - Aide de l’administrateur
 
@@ -76,7 +76,7 @@ Chaque personne de votre équipe a besoin d’un compte d’utilisateur pour pou
 
 - Chaque utilisateur peut également configurer des applications Office et du courrier électronique sur un [appareil mobile](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) sur 5 tablettes et 5 téléphones au plus, tels que des iPhone, des iPads et des téléphones et tablettes Android. Ainsi, ils peuvent modifier des fichiers Office n’importe où.
 
-    Voir [Configurer Microsoft 365](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) pour les entreprises pour obtenir une liste complète des étapes de configuration.
+    Voir [Configurer Microsoft 365 pour](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) les entreprises pour obtenir une liste complète des étapes de configuration.
 
 ## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Plus d’informations sur l’ajout d’utilisateurs à Microsoft 365
 
@@ -134,4 +134,4 @@ Une fois le fichier enregistré, il est probable qu'un message indiquant que cer
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Ajouter des utilisateurs individuellement ou en bloc à Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[Ajouter des utilisateurs individuellement ou en bloc à Microsoft 365](/office365/admin/add-users/add-users)

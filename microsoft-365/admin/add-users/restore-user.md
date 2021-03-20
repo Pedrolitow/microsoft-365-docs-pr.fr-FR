@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Découvrez comment restaurer les comptes d’utilisateur supprimés et toutes les données associées.
-ms.openlocfilehash: d14995c8ee2d62c1d722ef0bcc7577745a747082
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: f3986ed1ba007dcac87bdfb9322ba5c5bf081b35
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113996"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903711"
 ---
 # <a name="restore-a-user"></a>Restaurer un utilisateur
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
    
@@ -54,7 +54,7 @@ Vous devez être administrateur global Microsoft 365 ou administrateur de gestio
  
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
+1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
 
 ::: moniker-end
 
@@ -101,7 +101,7 @@ Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur 
 
 ::: moniker range="o365-21vianet"
 
-1. Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.
+1. Go to the [admin center,](https://go.microsoft.com/fwlink/p/?linkid=850627)and then select **Users** \> **Deleted users**.
 
 ::: moniker-end
 
@@ -142,17 +142,16 @@ Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and 
 
 ::: moniker range="o365-21vianet"
 
-1. Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.
+1. Go to the [admin center,](https://go.microsoft.com/fwlink/p/?linkid=850627)and then select **Users** \> **Deleted users**.
 
 ::: moniker-end
 
 2. Sur la page **Utilisateurs supprimés**, sélectionnez l'utilisateur à restaurer, puis **Restaurer**. 
     
-3. Dans la page **Restaurer,** suivez les instructions pour définir le mot de passe et sélectionner **Restaurer.** Toutes les adresses proxy en conflit sont supprimées automatiquement de l'utilisateur que vous restaurez.
+3. Dans la page **Restaurer,** suivez les instructions pour définir le mot de passe et sélectionnez **Restaurer.** Toutes les adresses proxy en conflit sont supprimées automatiquement de l'utilisateur que vous restaurez.
     
 4. Examinez les résultats, puis sélectionnez **Fermer**.
 
 ## <a name="related-articles"></a>Articles connexes
 
 [Supprimer un utilisateur](delete-a-user.md)
-  

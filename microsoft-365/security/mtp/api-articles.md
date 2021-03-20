@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3d9eb6b255aefa55da811e779503242c240baf58
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5bc1aee05cb0dc184fdc972fbb1a091f4004fb38
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929765"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903963"
 ---
 # <a name="other-security-and-threat-protection-apis"></a>Autres API de sécurité et de protection contre les menaces
 
@@ -40,6 +40,6 @@ ms.locfileid: "49929765"
 
 Les ressources suivantes fournissent plus d’informations sur les API disponibles pour d’autres solutions de sécurité Microsoft, au-delà de l’API Microsoft 365 Defender.
 
-- [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
-- [Microsoft Defender pour Office 365](https://docs.microsoft.com/office/office-365-management-api/)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/api-introduction)
+- [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
+- [Microsoft Defender pour Office 365](/office/office-365-management-api/)
+- [Microsoft Cloud App Security](/cloud-app-security/api-introduction)

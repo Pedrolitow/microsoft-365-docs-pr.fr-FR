@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: c025317a5eb88199b849f90b51fac9779e1c97a2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d71273e416bf7922627e44d9423eaa8903411689
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976008"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905845"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
 
@@ -27,7 +27,7 @@ ms.locfileid: "49976008"
 
 </br>
 
-Grâce à [AI Builder](https://docs.microsoft.com/ai-builder/overview), une fonctionnalité de Microsoft PowerApps, les utilisateurs de SharePoint Syntex peuvent créer un [modèle de traitement de formulaire](form-processing-overview.md) directement à partir d’une bibliothèque de documents SharePoint. 
+Grâce à [AI Builder](/ai-builder/overview), une fonctionnalité de Microsoft PowerApps, les utilisateurs de SharePoint Syntex peuvent créer un [modèle de traitement de formulaire](form-processing-overview.md) directement à partir d’une bibliothèque de documents SharePoint. 
 
 Pour créer un modèle de traitement de formulaire, vous devez suivre les étapes suivantes :
  - Étape 1 : créer le modèle de traitement de formulaire pour créer le type de contenu
@@ -68,7 +68,7 @@ La première étape de la création d’un modèle de traitement de formulaire c
 Après avoir créé votre nouveau modèle de traitement de formulaire, votre navigateur ouvre une nouvelle page de modèle de traitement de formulaires AI Builder dans PowerApps. Sur cette page, vous pouvez ajouter et analyser vos exemples de documents. </br>
 
 > [!NOTE]
-> Lorsque vous recherchez des exemples de fichiers à utiliser, consultez l’article [Configuration requise et limitations du modèle de traitement de formulaire](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
+> Lorsque vous recherchez des exemples de fichiers à utiliser, consultez l’article [Configuration requise et limitations du modèle de traitement de formulaire](/ai-builder/form-processing-model-requirements). 
 
    ![AI Builder de Power Apps](../media/content-understanding/powerapps.png)</br> 
  
@@ -148,6 +148,6 @@ Après avoir publié votre modèle et créé son flux PowerAutomate, vous pouvez
 
 ## <a name="see-also"></a>Voir aussi
   
-[Documentation Power Automate](https://docs.microsoft.com/power-automate/)
+[Documentation Power Automate](/power-automate/)
 
-[Formation : Améliorer les performances de votre entreprise avec AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Formation : Améliorer les performances de votre entreprise avec AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Découvrez comment autoriser les membres du groupe à envoyer des courriers électroniques en tant que groupe Microsoft 365 ou à envoyer du courrier électronique au nom d’un groupe Microsoft 365.
-ms.openlocfilehash: 44a0a7a690c8faa9fe00732e8154f36aa5a6fe6f
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: cc0a9472f127fae94d77f618ed7347d844879ba8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727078"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904743"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou de la part d’un groupe
 
@@ -38,7 +38,7 @@ L’autorisation Envoyer **de la part de** permet à un utilisateur d’envoyer 
 > Vous pouvez configurer **Envoyer en tant** que ou Envoyer de la part **d’un** utilisateur donné, mais pas les deux. Si vous configurez les deux, la valeur par défaut est **Envoyer en tant que**.
 
 > [!TIP]
-> Pour découvrir comment utiliser Outlook et Outlook sur le web pour envoyer du courrier électronique à partir d’un groupe, voir Envoyer des courriers électroniques à partir d’un groupe ou au nom d’un groupe [Microsoft 365.](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
+> Consultez Envoyer des courriers électroniques à partir d’un groupe [Microsoft 365](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) ou de la part de celui-ci pour découvrir comment utiliser Outlook et Outlook sur le web pour envoyer des messages électroniques à partir d’un groupe.
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Autoriser les membres à envoyer des messages électroniques en tant que groupe
 
@@ -72,7 +72,7 @@ Cette section explique comment autoriser les utilisateurs à envoyer des message
     
     ![Capture d’écran de la boîte de dialogue Envoyer de la part de](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
-5. Tapez pour rechercher ou sélectionner un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrer.**
+5. Tapez pour rechercher ou sélectionner un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrez.**
     
     ![Tapez pour rechercher ou sélectionner un utilisateur dans la liste](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
@@ -84,6 +84,6 @@ Cette section explique comment autoriser les utilisateurs à envoyer des message
 
 [En savoir plus sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
+[Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 
-[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189)
+[Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup)

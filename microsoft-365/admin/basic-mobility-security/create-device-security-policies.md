@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour créer des stratégies d’appareil qui protègent les informations de votre organisation.
-ms.openlocfilehash: 077f1e7e0d763aaecfc38fd4b57d9e8912900a3c
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: f31930f1a753259622520e50da8c255e7cd410e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877067"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904287"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Créer des stratégies de sécurité des appareils dans Basic Mobility and Security
 
@@ -34,13 +34,13 @@ Vous pouvez utiliser la mobilité et la sécurité de base pour créer des strat
 > [!IMPORTANT]
 > Avant de pouvoir créer une stratégie d’appareil mobile, vous devez activer et configurer Basic Mobility and Security. Pour plus d’informations, voir Vue d’ensemble de la mobilité et de la sécurité de base.
 
-- Découvrez les appareils, les applications pour appareils mobiles et les paramètres de sécurité que Basic Mobility and Security prend en charge. Voir [fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)
-- Créez des groupes de sécurité qui incluent les utilisateurs Microsoft 365 vers qui vous souhaitez déployer des stratégies et pour les utilisateurs que vous souhaitez peut-être exclure du blocage de l’accès à Microsoft 365. Avant de déployer une nouvelle stratégie vers votre organisation, nous vous recommandons de la tester en la déployant vers un petit nombre d'utilisateurs. Vous pouvez créer et utiliser un groupe de sécurité qui inclut uniquement vous-même ou un petit nombre d’utilisateurs De Microsoft 365 qui peuvent tester la stratégie pour vous. Pour en savoir plus sur les groupes de sécurité, voir [Créer, modifier ou supprimer un groupe de sécurité.](https://go.microsoft.com/fwlink/p/?LinkId=518555)
+- Découvrez les appareils, les applications d’appareils mobiles et les paramètres de sécurité que basic Mobility and Security prend en charge. Voir [fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)
+- Créez des groupes de sécurité qui incluent les utilisateurs Microsoft 365 vers qui vous souhaitez déployer des stratégies et pour les utilisateurs que vous souhaitez peut-être exclure du blocage de l’accès à Microsoft 365. Avant de déployer une nouvelle stratégie vers votre organisation, nous vous recommandons de la tester en la déployant vers un petit nombre d'utilisateurs. Vous pouvez créer et utiliser un groupe de sécurité qui inclut uniquement vous-même ou un petit nombre d’utilisateurs de Microsoft 365 qui peuvent tester la stratégie pour vous. Pour en savoir plus sur les groupes de sécurité, voir [Créer, modifier ou supprimer un groupe de sécurité.](../email/create-edit-or-delete-a-security-group.md)
 - Pour créer et déployer des stratégies de mobilité et de sécurité de base dans Microsoft 365, vous devez être un administrateur global Microsoft 365. Pour plus d’informations, voir Autorisations dans le [Centre de sécurité & conformité.](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)
 - Avant de déployer des stratégies, faites savoir à votre organisation les impacts potentiels de l’inscription d’un appareil dans Basic Mobility and Security. En fonction de la façon dont vous définissez les stratégies, les appareils non conformes peuvent être bloqués pour accéder à Microsoft 365 et aux données, y compris les applications installées, les photos et les informations personnelles sur un appareil inscrit, et les données peuvent être supprimées.
 
 >[!NOTE]
->Les stratégies et règles d’accès créées dans Basic Mobility and Security pour Microsoft 365 Business Standard remplacent Exchange ActiveSync stratégies de boîte aux lettres d’appareil mobile et les règles d’accès aux appareils créées dans le Centre d’administration Exchange. Une fois qu’un appareil est inscrit à Basic Mobility and Security pour Microsoft 365 Business Standard, toute stratégie de boîte aux lettres d’appareil mobile ou règle d’accès aux appareils Exchange ActiveSync appliquée à l’appareil est ignorée. Pour en savoir plus sur Exchange ActiveSync, [voir Exchange ActiveSync dans Exchange Online.](https://go.microsoft.com/fwlink/p/?LinkId=524380)
+>Les stratégies et règles d’accès créées dans Basic Mobility and Security pour Microsoft 365 Business Standard remplacent Exchange ActiveSync stratégies de boîte aux lettres d’appareil mobile et les règles d’accès aux appareils créées dans le Centre d’administration Exchange. Une fois qu’un appareil est inscrit à Basic Mobility and Security pour Microsoft 365 Business Standard, toute stratégie de boîte aux lettres d’appareil mobile ou règle d’accès aux appareils Exchange ActiveSync appliquée à l’appareil est ignorée. Pour en savoir plus sur Exchange ActiveSync, voir [Exchange ActiveSync dans Exchange Online.](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Étape 1 : Créer une stratégie d’appareil et déployer sur un groupe de test
 
@@ -54,13 +54,13 @@ Avant de commencer, assurez-vous que vous avez activé et installé Basic Mobili
 
 3. Dans la page **Paramètres de stratégie,** spécifiez les exigences que vous souhaitez appliquer aux appareils mobiles de votre organisation.
 
-4. **Exiger la gestion du profil de** messagerie : lorsqu’il est activé, les appareils qui n’ont pas de profil de messagerie géré par Basic Mobility and Security sont considérés comme non conformes. Un appareil ne peut pas avoir de profil de messagerie géré lorsqu’il n’est pas correctement ciblé ou si l’utilisateur a manuellement installé le compte de messagerie sur l’appareil. Lorsque vous  ne l’activez pas (valeur par défaut), ce paramètre n’est pas évalué en matière de conformité ou de non-conformité. Pour obtenir des instructions sur la façon dont les utilisateurs peuvent obtenir la conformité lorsque cette option est sélectionnée, voir Un compte de [messagerie existant a été trouvé.](https://docs.microsoft.com/intune-user-help/existing-company-email-account-found)
+4. **Exiger la gestion du profil de** messagerie : lorsqu’il est activé, les appareils qui n’ont pas de profil de messagerie géré par Basic Mobility and Security sont considérés comme non conformes. Un appareil ne peut pas avoir de profil de messagerie géré lorsqu’il n’est pas correctement ciblé ou si l’utilisateur a manuellement installé le compte de messagerie sur l’appareil. Lorsque vous  ne l’activez pas (valeur par défaut), ce paramètre n’est pas évalué en matière de conformité ou de non-conformité. Pour obtenir des instructions sur la façon dont les utilisateurs peuvent obtenir la conformité lorsque cette option est sélectionnée, voir Un compte de [messagerie existant a été trouvé.](/intune-user-help/existing-company-email-account-found)
 
 5. Dans la page **Voulez-vous appliquer cette** stratégie maintenant ? Choisissez les groupes à appliquer à cette stratégie.
 
 6. Sélectionnez **Créer cette stratégie.**
 
-La stratégie est poussée vers l’appareil de chaque utilisateur à la prochaine fois qu’il se connecte à Microsoft 365 à l’aide de son appareil mobile. Si aucune stratégie n’a été appliquée à l’appareil mobile des utilisateurs auparavant, après avoir déployé la stratégie, ils obtiennent une notification sur leur appareil qui inclut les étapes d’inscription et d’activation de Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). Jusqu’à ce qu’ils terminent l’inscription dans Basic Mobility and Security hébergé par le service Intune, l’accès à la messagerie, à OneDrive et à d’autres services est restreint. Une fois l’inscription terminée à l’aide de l’application Portail d’entreprise Intune, ils peuvent utiliser les services et la stratégie est appliquée à leur appareil.
+La stratégie est poussée vers l’appareil de chaque utilisateur à la prochaine fois qu’il se connecte à Microsoft 365 à l’aide de son appareil mobile. Si aucune stratégie n’a été appliquée à leur appareil mobile auparavant, après avoir déployé la stratégie, les utilisateurs obtiennent une notification sur leur appareil qui inclut les étapes d’inscription et d’activation de Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). Jusqu’à ce qu’ils terminent l’inscription dans Basic Mobility and Security hébergé par le service Intune, l’accès à la messagerie, à OneDrive et à d’autres services est restreint. Une fois l’inscription terminée à l’aide de l’application Portail d’entreprise Intune, ils peuvent utiliser les services et la stratégie est appliquée à leur appareil.
 
 ## <a name="step-2-verify-that-your-policy-works"></a>Étape 2 : Vérifier que votre stratégie fonctionne
 
@@ -103,7 +103,7 @@ Si vous souhaitez exclure certaines personnes des vérifications d’accès cond
 
 2. Sélectionnez **Gérer les paramètres d’accès aux appareils à l’échelle de l’organisation.**
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Mobilité et sécurité de base créent une option de stratégie":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Mobilité et sécurité de base : créer une option de stratégie":::
 
 3. Sélectionnez **Ajouter** pour ajouter le groupe de sécurité dont vous souhaitez exclure les utilisateurs d’un accès bloqué à Microsoft 365. Lorsqu’un utilisateur a été ajouté à cette liste, il peut accéder à la messagerie Microsoft 365 lorsqu’il utilise un appareil non pris en compte.
 
@@ -111,7 +111,7 @@ Si vous souhaitez exclure certaines personnes des vérifications d’accès cond
 
 5. Sélectionnez le nom, puis **ajoutez**  >  **Enregistrer.**
 
-6. Dans le panneau **Paramètres d’accès aux** appareils à l’échelle de l’organisation, sélectionnez **Enregistrer.**
+6. Dans le panneau **Paramètres d’accès aux** appareils à l’échelle de l’organisation, **sélectionnez Enregistrer.**
 
    :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="Option d’accès autorisé pour la mobilité et la sécurité de base":::
 

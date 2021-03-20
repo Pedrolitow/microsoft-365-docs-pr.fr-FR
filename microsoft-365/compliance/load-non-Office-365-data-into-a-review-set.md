@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment importer des données non-Microsoft 365 dans un groupe de révision pour analyse dans un cas Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ad70207bdc015107a5aba074e2df06a42c0618b3
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: d9f705080ad5a769032581a1517b2daee8e822b2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285860"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903500"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un groupe de révision
 
@@ -53,7 +53,7 @@ L’utilisation de la fonctionnalité de téléchargement non-Microsoft 365 déc
 
 - Compte affecté au groupe de rôles Gestionnaire eDiscovery (et ajouté en tant qu’administrateur eDiscovery).
 
-- L’outil AzCopy v8.1 installé sur un ordinateur qui a accès à la structure de dossiers de contenu non-Microsoft 365. Pour installer AzCopy, voir Transférer des données avec [AzCopy v8.1 sur Windows.](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy) Assurez-vous d’installer AzCopy à l’emplacement par défaut, à savoir **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. Vous devez utiliser AzCopy v8.1. D’autres versions d’AzCopy peuvent ne pas fonctionner lors du chargement de données autres que Microsoft 365 dans Advanced eDiscovery.
+- L’outil AzCopy v8.1 installé sur un ordinateur qui a accès à la structure de dossiers de contenu non-Microsoft 365. Pour installer AzCopy, voir Transférer des données avec [AzCopy v8.1 sur Windows.](/previous-versions/azure/storage/storage-use-azcopy) Assurez-vous d’installer AzCopy à l’emplacement par défaut, à savoir **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. Vous devez utiliser AzCopy v8.1. D’autres versions d’AzCopy peuvent ne pas fonctionner lors du chargement de données autres que Microsoft 365 dans Advanced eDiscovery.
 
 
 ## <a name="upload-non-microsoft-365-content-into-advanced-ediscovery"></a>Charger du contenu non-Microsoft 365 dans Advanced eDiscovery
@@ -76,9 +76,9 @@ L’utilisation de la fonctionnalité de téléchargement non-Microsoft 365 déc
 
 6. Dans la page **Télécharger des fichiers,** faites les choses suivantes :
 
-   ![Importation non-Microsoft 365 : charger des fichiers](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   ![Importation non Microsoft 365 : charger des fichiers](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   a. Dans **la** zone Chemin d’accès à l’emplacement des fichiers, vérifiez ou tapez l’emplacement du dossier racine dans lequel vous avez stocké les données autres que Microsoft 365 que vous souhaitez télécharger. Par exemple, pour l’emplacement des exemples de fichiers indiqués dans la **section** Avant de commencer, tapez **%USERPROFILE\Downloads\nonO365**. En fournissant l’emplacement correct, la commande AzCopy affichée dans la zone sous le chemin d’accès est correctement mise à jour.
+   a. Dans **la** zone Chemin d’accès à l’emplacement des fichiers, vérifiez ou tapez l’emplacement du dossier racine dans lequel vous avez stocké les données autres que Microsoft 365 que vous souhaitez télécharger. Par exemple, pour l’emplacement des exemples de fichiers indiqués dans la **section** Avant de commencer, vous devez taper **%USERPROFILE\Downloads\nonO365**. En fournissant l’emplacement correct, la commande AzCopy affichée dans la zone sous le chemin d’accès est correctement mise à jour.
 
    b. Cliquez **sur Copier dans le Presse-papiers** pour copier la commande affichée dans la zone.
 
@@ -91,7 +91,7 @@ L’utilisation de la fonctionnalité de téléchargement non-Microsoft 365 déc
 
 8. Revenir au Centre de sécurité & conformité, puis cliquez sur **Suivant : Traiter les fichiers** dans l’Assistant.  Cette opération initie le traitement, l’extraction de texte et l’indexation des fichiers non-Microsoft 365 qui ont été téléchargés vers l’emplacement de stockage Azure.  
 
-9. Suivez la progression du traitement des fichiers dans  la **page** Des fichiers de processus ou sous l’onglet Travaux en visualisation d’un travail nommé Ajout de données **non-Microsoft 365** à un jeu à réviser.  Une fois le travail terminé, les nouveaux fichiers sont disponibles dans le jeu à réviser.
+9. Suivez la progression du traitement des fichiers dans  la **page** Processus ou sous l’onglet Travaux en visualisation d’un travail nommé Ajout de données **non-Microsoft 365** à un jeu à réviser.  Une fois le travail terminé, les nouveaux fichiers sont disponibles dans le jeu à réviser.
 
    ![Importation non-Microsoft 365 : traiter les fichiers](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 
