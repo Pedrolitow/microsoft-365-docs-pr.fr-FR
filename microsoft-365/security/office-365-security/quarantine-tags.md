@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Les administrateurs peuvent apprendre à utiliser des balises de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire pour leurs messages mis en quarantaine.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 207f22c9acaa183e195f5a2ee33be65cdf4991dd
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 8024894cdb4a4718422c250eff87fa6da5443a84
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289412"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922411"
 ---
 # <a name="quarantine-tags"></a>Balises de mise en quarantaine
 
@@ -35,7 +35,7 @@ EOP a traditionnellement autorisé ou empêché certains niveaux d’interactivi
 
 Pour les fonctionnalités de [protection](#step-2-assign-a-quarantine-tag-to-supported-features)prise en charge, les balises de mise en quarantaine spécifient ce que les utilisateurs sont autorisés à faire dans les messages de notification de courrier indésirable de l’utilisateur final et dans leurs messages mis en quarantaine en quarantaine (messages dont l’utilisateur est un destinataire). Les balises de mise en quarantaine par défaut sont automatiquement attribuées pour appliquer les fonctionnalités historiques pour les utilisateurs finaux sur les messages mis en quarantaine. Vous pouvez également créer et affecter des balises de mise en quarantaine personnalisées pour autoriser ou empêcher les utilisateurs finaux d’effectuer des actions spécifiques sur les messages mis en quarantaine.
 
-Les autorisations individuelles sont combinées dans les groupes d’autorisations prédéfiny suivants :
+Les autorisations individuelles sont combinées dans les groupes d’autorisations prédéfinës suivants :
 
 - Pas d’accès
 - Accès limité
@@ -61,7 +61,7 @@ Vous créez et affectez des balises de mise en quarantaine dans le Centre de sé
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page des **balises de mise** en quarantaine, ouvrez <https://protection.office.com/quarantineTags> .
 
-- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Pour afficher, créer, modifier ou supprimer des balises de  mise  en quarantaine, vous devez être membre des rôles Gestion de l’organisation ou Administrateur de la sécurité dans le Centre de sécurité [& conformité.](permissions-in-the-security-and-compliance-center.md)
 
@@ -69,11 +69,11 @@ Vous créez et affectez des balises de mise en quarantaine dans le Centre de sé
 
 1. Dans le Centre de sécurité &  conformité, sélectionnez Stratégie de gestion des menaces, puis sélectionnez Les balises \>  de mise **en quarantaine.**
 
-2. Dans la page Mettre en quarantaine **les balises,** **sélectionnez Ajouter une balise personnalisée.**
+2. Dans la page **Des balises de** mise en quarantaine, **sélectionnez Ajouter une balise personnalisée.**
 
 3. **L’Assistant Nouvelle balise** s’ouvre. Dans la page **Nom de la** balise, entrez un nom court mais unique dans le champ Nom de **balise.** Vous devrez identifier et sélectionner la balise par son nom dans les étapes à venir. Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-4. Dans la page **d’accès au message du** destinataire, sélectionnez l’une des valeurs suivantes :
+4. Dans la page **d’accès aux messages du** destinataire, sélectionnez l’une des valeurs suivantes :
    - **Aucun accès**
    - **Accès limité**
    - **Accès total**
@@ -130,13 +130,13 @@ L’ordre et les valeurs requis pour chaque autorisation individuelle dans les g
 
 |Autorisation|Pas d’accès|Accès limité|Accès total|
 |---|:---:|:---:|:---:|
-|PermissionToAllowSender|0|0|1 |
-|PermissionToBlockSender|0|1 |1 |
-|PermissionToDelete|0|1 |1 |
+|PermissionToAllowSender|0|0|1|
+|PermissionToBlockSender|0|1|1|
+|PermissionToDelete|0|1|1|
 |PermissionToDownload<sup>\*</sup>|0|0|0|
-|PermissionToPreview|0|1 |1 |
-|PermissionToRelease<sup>\*\*</sup>|0|0|1 |
-|PermissionToRequestRelease<sup>\*\*</sup>|0|1 |0|
+|PermissionToPreview|0|1|1|
+|PermissionToRelease<sup>\*\*</sup>|0|0|1|
+|PermissionToRequestRelease<sup>\*\*</sup>|0|1|0|
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |Valeur binaire|00000000|01101010|11101100|
 |Valeur décimale à utiliser|0|106|236|
@@ -155,7 +155,7 @@ Pour les autorisations d’accès limité, utilisez la valeur 106. Pour les auto
 
 Pour les autorisations personnalisées, utilisez le tableau précédent pour obtenir la valeur binaire qui correspond aux autorisations de votre choix. Convertissez la valeur binaire en valeur décimale et utilisez la valeur décimale pour le paramètre _EndUserQuarantinePermissionsValue._
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-QuarantineTag](/powershell/module/exchange/new-quarantinetag).
 
 #### <a name="use-the-enduserquarantinepermissions-parameter"></a>Utiliser le paramètre EndUserQuarantinePermissions
 
@@ -177,7 +177,7 @@ $<VariableName> = New-QuarantinePermissions [-PermissionToAllowSender <$true | $
 
 La valeur par défaut pour tous les paramètres inutilisés est , vous devez donc utiliser uniquement les paramètres où vous souhaitez définir `$false` la valeur sur `$true` .
 
-Les exemples suivants montrent comment créer des objets d’autorisation qui correspondent aux groupes d’autorisations prédéfinës :
+Les exemples suivants montrent comment créer des objets d’autorisation qui correspondent aux groupes d’autorisations prédéfins :
 
 - **Aucun accès**:
 
@@ -203,7 +203,7 @@ Pour les autorisations personnalisées, ne définissez pas les paramètres _Perm
 
 Vous pouvez également modifier une variable objet d’autorisations existante après la création mais avant de l’utiliser à l’aide de la cmdlet **Set-QuarantinePermissions.**
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/new-quarantinepermissions) et [Set-QuarantinePermissions.](https://docs.microsoft.com/powershell/module/exchange/set-quarantinepermissions)
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-QuarantinePermissions](/powershell/module/exchange/new-quarantinepermissions) et [Set-QuarantinePermissions.](/powershell/module/exchange/set-quarantinepermissions)
 
 ##### <a name="step-b-use-the-variable-in-the-new-quarantinetag-command"></a>Étape B : Utiliser la variable dans la commande New-QuarantineTag commande
 
@@ -213,27 +213,27 @@ Après avoir créé et stocké l’objet Permissions dans une variable, utilisez
 New-QuarantineTag -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableName>
 ```
 
-Cet exemple crée une balise de mise en quarantaine nommée LimitedAccess à l’aide de l’objet permissions qui a été décrit et créé `$LimitedAccess` à l’étape précédente.
+Cet exemple crée une balise de mise en quarantaine nommée LimitedAccess à l’aide de l’objet permissions décrit et créé `$LimitedAccess` à l’étape précédente.
 
 ```powershell
 New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-QuarantineTag](/powershell/module/exchange/new-quarantinetag).
 
-## <a name="step-2-assign-a-quarantine-tag-to-supported-features"></a>Étape 2 : Affecter une balise de mise en quarantaine aux fonctionnalités prise en charge
+## <a name="step-2-assign-a-quarantine-tag-to-supported-features"></a>Étape 2 : Attribuer une balise de mise en quarantaine aux fonctionnalités prise en charge
 
-Dans _les fonctionnalités_ de protection prises en charge qui met en quarantaine des messages ou des fichiers (automatiquement ou en tant qu’action configurable), vous pouvez affecter une balise de mise en quarantaine aux actions de mise en quarantaine disponibles. Les fonctionnalités qui met en quarantaine les messages et la disponibilité des balises de mise en quarantaine sont décrites dans le tableau suivant :
+Dans _les fonctionnalités_ de protection prises en charge qui met en quarantaine les messages ou les fichiers (automatiquement ou en tant qu’action configurable), vous pouvez affecter une balise de mise en quarantaine aux actions de mise en quarantaine disponibles. Les fonctionnalités qui met en quarantaine les messages et la disponibilité des balises de mise en quarantaine sont décrites dans le tableau suivant :
 
 ****
 
 |Fonctionnalité|Balises de mise en quarantaine pris en charge ?|Balises de mise en quarantaine par défaut utilisées|
 |---|:---:|---|
-|[Stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md): <ul><li>**Courrier** indésirable (_SpamAction_)</li><li>**Courrier indésirable à niveau** de confiance élevé (_HighConfidenceSpamAction_)</li><li>**E-mail de hameçonnage** (_PhishSpamAction_)</li><li>**E-mail de hameçonnage à haut niveau** de confiance (_HighConfidencePhishAction_)</li><li>**Courrier électronique en** bloc (_BulkSpamAction_)</li></ul>|Oui|<ul><li>DefaultSpamTag (accès complet)</li><li>DefaultHighConfSpamTag (accès complet)</li><li>DefaultPhishTag (accès complet)</li><li>DefaultHighConfPhishTag (aucun accès)</li><li>DefaultBulkTag (accès complet)</li></ul>
+|[Stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md): <ul><li>**Courrier** indésirable (_SpamAction_)</li><li>**Courrier indésirable à niveau** de confiance élevé (_HighConfidenceSpamAction_)</li><li>**E-mail de hameçonnage** (_PhishSpamAction_)</li><li>**E-mail** de hameçonnage à haut niveau de confiance (_HighConfidencePhishAction_)</li><li>**Courrier électronique en** bloc (_BulkSpamAction_)</li></ul>|Oui|<ul><li>DefaultSpamTag (accès complet)</li><li>DefaultHighConfSpamTag (accès complet)</li><li>DefaultPhishTag (accès complet)</li><li>DefaultHighConfPhishTag (aucun accès)</li><li>DefaultBulkTag (accès complet)</li></ul>
 |Stratégies anti-hameçonnage : <ul><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protection contre l’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Si le courrier électronique est envoyé par un utilisateur dont l’identité** est usurpée (_TargetedUserProtectionAction_)</li><li>**Si le courrier électronique est envoyé par un domaine dont l’identité** est usurpée (_TargetedDomainProtectionAction_)</li><li>**Veille sur les boîtes aux lettres** \> **Si le courrier électronique est envoyé par un utilisateur dont l’identité** est usurpée (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|Non|s/o|
 |[Stratégies anti-programme](configure-anti-malware-policies.md)malveillant : tous les messages détectés sont toujours mis en quarantaine.|Non|s/o|
 |[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)|Non|s/o|
-|[Règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) avec l’action : Remettre le **message** en quarantaine hébergé (mise en _quarantaine)._|Non|s/o|
+|[Règles de flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) avec l’action : Remettre le **message** en quarantaine hébergé (mise en _quarantaine)._|Non|s/o|
 |
 
 <sup>\*</sup> Les paramètres de protection contre l’emprunt d’identité sont disponibles uniquement dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.
@@ -291,7 +291,7 @@ Cet exemple crée une stratégie de filtrage du courrier indésirable nommée Re
 New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -SpamQuarantineTag NoAccess -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag NoAction -PhishSpamAction Quarantine -PhishQuarantineTag NoAction -BulkSpamAction Quarantine -BulkQuarantineTag NoAccess
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
 Cet exemple modifie la stratégie de filtrage du courrier indésirable existante nommée Human Resources. L’action pour le verdict de mise en quarantaine du courrier indésirable est définie sur Mise en quarantaine et la balise de mise en quarantaine personnalisée nommée NoAccess est affectée.
 
@@ -299,7 +299,7 @@ Cet exemple modifie la stratégie de filtrage du courrier indésirable existante
 Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine -SpamQuarantineTag NoAccess
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy).
 
 ## <a name="configure-global-quarantine-notification-settings-in-the-security--compliance-center"></a>Configurer les paramètres globaux de notification de mise en quarantaine dans le Centre de conformité & sécurité
 
@@ -317,7 +317,7 @@ Les paramètres globaux des balises de mise en quarantaine vous permettent de pe
 
      ![Logo personnalisé dans une notification de courrier indésirable à l’utilisateur final](../../media/quarantine-tags-esn-customization-logo.png)
 
-   - **Choisir la langue**: les notifications de courrier indésirable de l’utilisateur final sont déjà localisées en fonction des paramètres de langue du destinataire. Vous pouvez spécifier du texte personnalisé dans différentes langues pour le nom **d’affichage** et les valeurs **d’exclusion** de responsabilité.
+   - **Choisir la langue**: les notifications de courrier indésirable de l’utilisateur final sont déjà localisées en fonction des paramètres de langue du destinataire. Vous pouvez spécifier du texte personnalisé dans différentes langues pour le nom **d’affichage** et les valeurs **de clause d’exclusion** de responsabilité.
 
      Sélectionnez au moins une langue dans la première langue, puis cliquez sur **Ajouter.** Vous pouvez sélectionner plusieurs langues en cliquant sur **Ajouter** après chacune d’elles. Une zone de langue de section affiche toutes les langues que vous avez sélectionnées :
 
@@ -369,9 +369,9 @@ Si vous préférez utiliser PowerShell pour afficher les balises de mise en quar
   Get-QuarantineTag -QuarantineTagType GlobalQuarantineTag
   ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterpolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy).
 
-## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>Supprimer les balises de mise en quarantaine dans le Centre de sécurité & conformité
+## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>Supprimer les balises de mise en quarantaine dans le Centre de conformité & sécurité
 
 **Remarques** :
 
@@ -399,7 +399,7 @@ Si vous préférez utiliser PowerShell pour supprimer une balise de mise en quar
 Remove-QuarantineTag -Identity "<TagName>"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/remove-quarantinetag).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-QuarantineTag](/powershell/module/exchange/remove-quarantinetag).
 
 ## <a name="quarantine-tag-permission-details"></a>Détails de l’autorisation de balise de mise en quarantaine
 
@@ -456,7 +456,7 @@ Si la balise de mise en quarantaine attribue les **autorisations** d’accès to
 
 - **Notifications de courrier indésirable pour l’utilisateur final**: les boutons suivants sont disponibles :
   - **Bloquer l’expéditeur**
-  - **Version**
+  - **Débloquer**
   - **Révision**
 
   ![Boutons disponibles dans la notification de courrier indésirable de l’utilisateur final si la balise de mise en quarantaine donne à l’utilisateur des autorisations d’accès total](../../media/quarantine-tags-esn-full-access.png)
@@ -521,12 +521,12 @@ L’autorisation autoriser les destinataires à libérer un message de l’autor
   - Autorisation désactivée : le bouton **Libérer le message** n’est pas disponible.
 
 - **Notifications de courrier indésirable pour l’utilisateur final**:
-  - Autorisation activée : le bouton **Libérer** est disponible.
+  - Autorisation activée : **le** bouton Libérer est disponible.
   - Autorisation désactivée : **le** bouton Libérer n’est pas disponible.
 
 #### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>Autoriser les destinataires à demander la libération d’un message de l’autorisation de mise en quarantaine
 
-L’autorisation autoriser les destinataires à demander la libération d’un message de l’autorisation  de mise en quarantaine (_PermissionToRequestRelease_) contrôle la capacité des **utilisateurs** à demander la libération de leurs messages mis en quarantaine. Le message n’est publié qu’une fois qu’un administrateur a approuvé la demande.
+L’autorisation autoriser les destinataires à demander la libération d’un message de l’autorisation  de mise en quarantaine (_PermissionToRequestRelease_) contrôle la capacité des **utilisateurs** à demander la libération de leurs messages mis en quarantaine. Le message est publié uniquement après qu’un administrateur a approuvé la demande.
 
 - **Détails du message mis en quarantaine**:
   - Autorisation activée : le bouton **De publication** de la demande est disponible.

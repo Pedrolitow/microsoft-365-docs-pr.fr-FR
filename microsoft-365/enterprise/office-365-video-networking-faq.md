@@ -19,13 +19,13 @@ ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
-description: Trouvez des réponses à certaines des questions les plus fréquemment posées sur la planification de la bande passante, le chiffrement & comment le service tire parti des réseaux de distribution de contenu (CDN).
-ms.openlocfilehash: e08a67988290e7ead87ff30a5ebdf9c8560f4825
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Trouvez des réponses aux questions les plus fréquemment posées sur la planification de la bande passante, le chiffrement & comment le service tire parti des réseaux de distribution de contenu (CDN).
+ms.openlocfilehash: 8bc0a69ff744967d24aa7d21ed6daee1a839f159
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695800"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921569"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Réseau vidéo Office 365 - Questions fréquemment posées
 
@@ -52,7 +52,7 @@ Voici un tableau rapide qui décrit les exigences réseau pour chacune des quali
   
 ## <a name="how-do-content-delivery-networks-cdns-help-video-playback"></a>Comment les réseaux de distribution de contenu (CDN) aident-ils la lecture vidéo ?
 
-Si plusieurs personnes de la même organisation au sein du même emplacement géographique diffuser en continu les mêmes vidéos, les CDN stockent une copie de ces vidéos dans un emplacement plus proche de cette région géographique. Une fois la vidéo stockée ou mise en cache à l’emplacement le plus proche, chaque personne diffuse la vidéo à partir de l’emplacement le plus proche au lieu d’un emplacement plus éloigné. Office 365 Video utilise Azure Media Services pour gérer ce qui est mis en cache dans les CDN Azure et pendant combien de temps. Azure Media Services peut utiliser n’importe quel emplacement [CDN Azure](https://azure.microsoft.com/documentation/articles/cdn-pop-locations/) pour mettre en cache des fragments vidéo et des manifestes pendant quelques jours. Si les membres de votre organisation continuent à regarder les vidéos mises en cache, ils resteront dans le cache. Si personne n’accède à la vidéo pendant plusieurs jours, la vidéo sera finalement abandonnée du cache. La prochaine fois que quelqu’un essaie de regarder la vidéo, elle est de nouveau mise en cache à l’emplacement CDN le plus proche.
+Si plusieurs personnes de la même organisation au sein du même emplacement géographique diffuser en continu les mêmes vidéos, les CDN stockent une copie de ces vidéos dans un emplacement plus proche de cette région géographique. Une fois la vidéo stockée ou mise en cache à l’emplacement le plus proche, chaque personne diffuse la vidéo à partir de l’emplacement le plus proche au lieu d’un emplacement plus éloigné. Office 365 Video utilise Azure Media Services pour gérer ce qui est mis en cache dans les CDN Azure et pendant combien de temps. Azure Media Services peut utiliser n’importe quel emplacement [CDN Azure](/azure/cdn/cdn-pop-locations) pour mettre en cache des fragments vidéo et des manifestes pendant quelques jours. Si les membres de votre organisation continuent à regarder les vidéos mises en cache, ils resteront dans le cache. Si personne n’accède à la vidéo pendant plusieurs jours, la vidéo sera finalement abandonnée du cache. La prochaine fois que quelqu’un essaie de regarder la vidéo, elle est de nouveau mise en cache à l’emplacement CDN le plus proche.
   
 Toutes les personnes qui tentent de regarder la vidéo pendant que le contenu est mis en cache sur un CDN à proximité profitent du fait que la vidéo soit plus proche et, dans la plupart des cas, moins de sauts. Cela améliore la vitesse de lecture vidéo . toutefois, cela ne modifie pas l’exigence réseau de lecture de la vidéo.
   
@@ -63,7 +63,7 @@ Toutes les personnes qui tentent de regarder la vidéo pendant que le contenu es
   
 ## <a name="can-i-cache-the-videos-locally-for-faster-playback"></a>Puis-je mettre en cache les vidéos localement pour une lecture plus rapide ?
 
-Oui. Office 365 ne vous empêche pas d’utiliser un CDN local ou un proxy de mise en cache pour apporter de la vidéo ou d’autres contenus Office 365 à votre réseau local pour un accès plus rapide. Il existe plusieurs façons d’implémenter une solution de mise en cache locale sur votre réseau. La méthode la plus courante consiste à utiliser une solution proxy qui met en cache le contenu localement. Une fois qu’un proxy ou un CDN privé a mis en cache les manifestes et les fragments vidéo, les demandes futures pour les fichiers qui sont acheminés via le proxy ou le CDN privé sont extraites du cache local et non extraites d’un emplacement Internet. Prenez en compte la bande passante réseau, la capacité et la concurrence de lecture vidéo lors de la planification d’une solution comme celle-ci.
+Oui. Office 365 ne vous empêche pas d’utiliser un CDN local ou un proxy de mise en cache pour apporter de la vidéo ou d’autres contenus Office 365 à votre réseau local pour un accès plus rapide. Il existe plusieurs façons d’implémenter une solution de mise en cache locale sur votre réseau. La méthode la plus courante consiste à utiliser une solution proxy qui met en cache le contenu localement. Une fois qu’un proxy ou un CDN privé a mis en cache les fragments vidéo et les manifestes, les demandes futures pour les fichiers qui sont acheminés via le proxy ou le CDN privé sont extraites du cache local et ne sont pas extraites d’un emplacement Internet. Prenez en compte la bande passante réseau, la capacité et la concurrence de la lecture vidéo lors de la planification d’une solution comme celle-ci.
   
 ([De retour au premier](office-365-video-networking-faq.md)niveau )
   
@@ -99,7 +99,7 @@ Les systèmes d’exploitation et les navigateurs web pris en charge par Office 
 
 La résolution des problèmes de connectivité à Office 365 Video implique le dépannage de votre réseau, de vos isp(s) et de votre configuration d’Office 365. Le premier endroit où commencer est le tableau de bord d’état du service. Cela vous indiquera qu’Office 365 Video a un problème ou non. Si tout s’y passe bien, voici quelques ressources supplémentaires pour vous aider.
   
-- Assurez-vous que vous pouvez vous connecter aux points de [terminaison réseau requis pour Office 365 Video](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
+- Assurez-vous que vous pouvez vous connecter aux points [de terminaison réseau requis pour Office 365 Video](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
 - Vérifiez votre connectivité réseau à l’aide de notre guide de dépannage du [réseau Office 365.](https://support.office.com/article/Office-365-performance-tuning-and-troubleshooting-Admin-and-IT-Pro-1492cb94-bd62-43e6-b8d0-2a61ed88ebae)
 
@@ -125,4 +125,4 @@ Voici quelques autres ressources pour vous aider à déployer et à utiliser Off
   
 ([De retour au premier](office-365-video-networking-faq.md)niveau )
   
-Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/video365networkfaq](https://aka.ms/video365networkfaq)
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/video365networkfaq]()

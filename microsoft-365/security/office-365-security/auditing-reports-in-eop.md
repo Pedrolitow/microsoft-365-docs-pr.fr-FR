@@ -13,12 +13,12 @@ ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Les administrateurs peuvent en savoir plus sur les rapports d’audit de l’administrateur disponibles dans Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9508cd843b6986768158b5f036903869ced5a1b1
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 08432f97d196df8b661d63a5d4cdf3680b78e070
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286704"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921287"
 ---
 # <a name="auditing-reports-in-standalone-eop"></a>Rapports d’audit dans EOP autonome
 
@@ -33,4 +33,4 @@ Deux rapports d’audit sont disponibles dans EOP autonome :
 
 - **Rapport de groupe de** rôles d’administrateur : le rapport de groupe de rôles d’administrateur vous permet d’afficher quand un utilisateur est ajouté à un groupe de rôles d’administrateur ou supprimé de celui-là. Vous pouvez utiliser ce rapport pour surveiller les modifications apportées aux autorisations d'administration attribuées à des utilisateurs de votre organisation. Pour plus d’informations, voir Exécuter un rapport de groupe de [rôles d’administrateur dans EOP autonome.](run-an-administrator-role-group-report-in-eop-eop.md)
 
-- **Journal d’audit de** l’administrateur : le journal d’audit de l’administrateur enregistre toute action (basée sur des cmdlets EOP PowerShell autonomes) par un administrateur ou un utilisateur ayant des privilèges d’administration. Pour plus d’informations, [consultez le journal d’audit de l’administrateur dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)
+- **Journal d’audit de** l’administrateur : le journal d’audit de l’administrateur enregistre toute action (basée sur les cmdlets EOP PowerShell autonomes) par un administrateur ou un utilisateur libérant des privilèges d’administration. Pour plus d’informations, [consultez le journal d’audit de l’administrateur dans Exchange Online.](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)

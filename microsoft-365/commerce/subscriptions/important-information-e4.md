@@ -20,12 +20,12 @@ search.appverid:
 description: Informations importantes sur la mise à niveau ou la modification des plans pour les clients ayant un abonnement Office 365 E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c48d4a71327ae5973054fd0d465719667dc0af80
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d429c7ae8f67b6a6c9729bc522fe9b9fe24534a2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690030"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922069"
 ---
 # <a name="important-information-for-office-365-e4-customers"></a>Informations importantes pour les clients Office 365 E4
 
@@ -39,16 +39,16 @@ Vous pouvez choisir de conserver les mêmes fonctionnalités que vous aviez avec
 |-|-|-|-|-|-|
 | **Obtenir tous les services et fonctionnalités inclus dans votre abonnement Office 365 E4 actuel** | Oui | Oui | Oui | Non | Non |
 | **Numéros de téléphone gérés dans Microsoft 365** | Oui | Oui | Non | Non | Non |
-| **Numéros de téléphone gérés à la fois en local et dans Microsoft 365 (déploiement hybride)**<br/><br/>Réduisez la dépendance vis-à-vis des systèmes téléphoniques PBX (Private Branch Exchange) coûteux et simplifiez votre infrastructure de communication avec une seule plateforme pour les appels, les conférences, la vidéo et le partage. | Oui | Oui | Non | Non | Non |
-| **Option pour ajouter des forfaits d’appels**<br/><br/>Vous pouvez ajouter des licences pour un forfait d’appels nationaux Microsoft 365 ou un forfait d’appels nationaux et internationaux Microsoft 365. Pour en savoir plus, voir [quel forfait d’appels est le mieux pour vous ?](https://docs.microsoft.com/MicrosoftTeams/calling-plan-landing-page). | Oui<sup>1</sup> | Oui | Oui | Oui | Oui |
+| **Numéros de téléphone gérés à la fois en local et dans Microsoft 365 (déploiement hybride)**<br/><br/>Réduisez la dépendance vis-à-vis des systèmes téléphoniques PBX (Private Branch Exchange) coûteux et simplifiez votre infrastructure de communication avec une plateforme d’appel, de conférence, de vidéo et de partage. | Oui | Oui | Non | Non | Non |
+| **Option pour ajouter des forfaits d’appels**<br/><br/>Vous pouvez ajouter des licences pour un forfait d’appels nationaux Microsoft 365 ou un forfait d’appels nationaux et internationaux Microsoft 365. Pour en savoir plus, voir [quel forfait d’appels est le mieux pour vous ?](/MicrosoftTeams/calling-plan-landing-page). | Oui<sup>1</sup> | Oui | Oui | Oui | Oui |
 | **Audioconférence**<br/><br/>Les participants à la réunion peuvent se rendre aux réunions Skype Entreprise à partir de pratiquement n’importe quel appareil, et les organisateurs peuvent appeler pour y appeler les participants. | Oui<sup>2</sup> | Oui | Oui | Non | Non |
 | **Outils avancés pour la collaboration, l'analyse et la sécurité** | Oui | Oui | Oui | Non | Non |
 | **Nouveaux rapports interactifs, tableaux de bord et visualisations de données** | Oui | Oui | Oui | Non | Non |
 | **Contrôle plus étroit sur la sécurité et la conformité de vos données via la confidentialité et la transparence intégrées ainsi que des contrôles utilisateur optimisés** | Oui | Oui | Oui | Non | Oui |
 
-<sup>1</sup> Les forfaits d’appels dans Microsoft 365 ou Office 365 sont disponibles dans 11 pays ou régions et sont disponibles pour les organisations qui ont une adresse de facturation dans l’un de ces pays ou régions. Pour plus d’informations, voir [Gérer les numéros de téléphone de votre organisation.](https://docs.microsoft.com/microsoftteams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization) Lorsque vous faites une mise à niveau vers Microsoft 365 ou Office 365, ou si vous avez acheté le système téléphonique, vous avez la possibilité d’ajouter un forfait d’appels nationaux ou nationaux et internationaux.
+<sup>1</sup> Les forfaits d’appels dans Microsoft 365 ou Office 365 sont disponibles dans 11 pays ou régions et sont disponibles pour les organisations qui ont une adresse de facturation dans l’un de ces pays ou régions. Pour plus d’informations, voir [Gérer les numéros de téléphone de votre organisation.](/microsoftteams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization) Lorsque vous faites une mise à niveau vers Microsoft 365 ou Office 365, ou si vous avez acheté le système téléphonique, vous avez la possibilité d’ajouter un forfait d’appels nationaux ou nationaux et internationaux.
 
-<sup>2</sup> L’audioconférence n’est pas encore disponible dans tous les pays ou régions. Si l’audioconférence n’est pas disponible dans votre pays ou région, nous vous mettreons à jour dès qu’elle sera disponible. À ce moment-là, les clients Microsoft 365 et Office 365 E5 peuvent immédiatement mettre à niveau vers un abonnement E5 avec audioconférence, ou attendre le moment du renouvellement. Pour savoir quels pays ou régions prendre [](https://docs.microsoft.com/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) en charge l’audioconférence, consultez la disponibilité des forfaits d’appels et de l’audioconférence dans les pays et régions, puis utilisez la liste de listes pour sélectionner votre pays ou région.
+<sup>2</sup> L’audioconférence n’est pas encore disponible dans tous les pays ou régions. Si l’audioconférence n’est pas disponible dans votre pays ou région, nous vous mettreons à jour dès qu’elle sera disponible. À ce moment-là, les clients Microsoft 365 et Office 365 E5 peuvent immédiatement mettre à niveau vers un abonnement E5 avec audioconférence, ou attendre le moment du renouvellement. Pour savoir quels pays ou régions prendre [](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) en charge l’audioconférence, consultez la disponibilité des forfaits d’appels et de l’audioconférence dans les pays et régions et utilisez la liste liste de listes pour sélectionner votre pays ou région.
 
 ## <a name="ready-to-upgrade"></a>Prêt pour la mise à niveau ?
 

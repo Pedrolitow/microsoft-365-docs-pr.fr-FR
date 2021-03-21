@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents dans un jeu à réviser dans un cas dans Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 2bf9773f6c36e53231bb577c30e9900bf3e24df7
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 3f8ac33e3f11557843b590ed2a9f7d903e33f5ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358442"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922058"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 - **Description :** Description du champ de métadonnées.
 
 > [!NOTE]
-> Le **champ Mots clés dans** la recherche de jeu à [réviser](https://docs.microsoft.com/microsoft-365/compliance/review-set-search) utilise le langage KQL (Keyword Query Language). Les champs répertoriés  dans la colonne Nom de  champ utilisable dans une recherche peuvent être utilisés dans le champ Mots clés d’une recherche de jeu à réviser pour former des requêtes complexes sans que vous n’avez à utiliser le générateur de requêtes. Pour plus d’informations sur KQL, consultez la référence de syntaxe du langage de [requête de mot clé.](https://go.microsoft.com/fwlink/?LinkId=269603)
+> Le **champ Mots clés dans** la recherche de jeu à [réviser](./review-set-search.md) utilise le langage KQL (Keyword Query Language). Les champs répertoriés  dans la colonne Nom de  champ utilisable dans une recherche peuvent être utilisés dans le champ Mots clés d’une recherche de jeu à réviser pour former des requêtes complexes sans que vous n’avez à utiliser le générateur de requêtes. Pour plus d’informations sur KQL, consultez la référence de syntaxe du langage de [requête de mot clé.](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 |**Nom du champ** et **nom de champ d’affichage**|**Nom du champ utilisable dans une recherche**|**Nom du champ exporté**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -56,8 +56,8 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Heure pdf de la conversation|ConversationPdfTime||Date de création de la version PDF de la conversation.|
 |Temps de redéaction de conversation|ConversationRedaction PleinTime||Date à laquelle la version PDF de la conversation a été créée pour la conversation.|
 |Date de création du document|CreatedTime|Doc_date_created|Créer une date à partir des métadonnées du document.|
-|Custodian|Custodian|Custodian|Nom du dépositaire à qui l’élément a été associé.|
-|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<br /><br />Courrier électronique : date d’envoi<br />Pièces jointes : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br />Documents incorporés : date de la dernière modification du document ; si elle n’est pas disponible, date de la dernière modification du parent<br />Documents SPO (inclut les pièces jointes modernes) : date de la dernière modification de SharePoint ; si elle n’est pas disponible, date de la dernière modification des documents<br />Documents autres qu’Office 365 : date de dernière modification<br />Réunions : date de début de la réunion<br />Messagerie vocale : date d’envoi<br />Messagerie instantanée : date d’envoi|
+|Consignataire|Consignataire|Consignataire|Nom du dépositaire à qui l’élément a été associé.|
+|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<br /><br />Courrier électronique : date d’envoi<br />Pièces jointes : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br />Documents incorporés : date de la dernière modification du document ; si elle n’est pas disponible, date de la dernière modification du parent<br />Documents SPO (inclut les pièces jointes modernes) : Date de la dernière modification de SharePoint ; si non disponible, date de la dernière modification des documents<br />Documents autres qu’Office 365 : date de dernière modification<br />Réunions : date de début de la réunion<br />Messagerie vocale : date d’envoi<br />Messagerie instantanée : date d’envoi|
 |Autres chemins d’accès|Dedupedcompoundpath|Deduped_compound_path|Liste des chemins d’accès composés de documents qui sont des doublons exacts (e-mail : en fonction du contenu, documents : en fonction du hachage).|
 |Autres dépositaires|DedupedCustodians|Deduped_custodians|Liste des dépositaires de documents qui sont des doublons exacts (pour le courrier électronique, en fonction du contenu ; pour les documents, en fonction du hachage).|
 |Autres ID de fichier|DedupedFileIds|Deduped_file_IDs|Liste des ID de fichiers des documents qui sont des doublons exacts (pour le courrier électronique, en fonction du contenu ; pour les documents, en fonction du hachage).|
@@ -66,12 +66,12 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |DocIndex*|||Index de la famille. **-1 ou** **0 signifie** qu’il s’agit de la racine.|
 |Mots clés de document||Doc_keywords|Mots clés des métadonnées du document.|
 |Document modifié par||Doc_modified_by|Date de la dernière modification à partir des métadonnées du document.|
-|Révision de document||Doc_revision|Révision à partir des métadonnées du document.|
+|Révision du document||Doc_revision|Révision à partir des métadonnées du document.|
 |Objet du document||Doc_subject|Objet des métadonnées du document.|
 |Modèle de document||Doc_template|Modèle à partir des métadonnées du document.|
 |Thème dominant|DominantTheme|Dominant_theme|Thème dominant tel que calculé pour l’analyse.|
 |Sous-ensemble en double||Duplicate_subset|ID de groupe pour les doublons exacts.|
-|EmailAction*||Email_action|Les valeurs **sont None**, **Reply** ou **Forward**; basé sur la ligne d’objet d’un message.|
+|EmailAction*||Email_action|Les valeurs **sont None,** **Reply** ou **Forward**; basé sur la ligne d’objet d’un message.|
 |Accusé de réception du courrier électronique||Email_delivery_receipt|Adresse de messagerie fournie dans les en-têtes Internet pour l’accusé de réception.|
 |Importance|EmailImportance|Email_importance|Importance du message : **0** - Faible ; **1** - Normal ; **2** - Élevé|
 |EmailLevel*||Email_level|Indique le niveau d’un message dans le thread de messagerie à qui il appartient ; les pièces jointes héritent de la valeur de son message parent.|
@@ -80,11 +80,11 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Sécurité du courrier électronique|EmailSecurity|Email_security|Paramètre de sécurité du message : **0** - Aucun ; **1** - Signé ; **2** : chiffré ; **3** : chiffré et signé.|
 |Sensibilité de l’e-mail|EmailSensitivity|email_sensitivity|Paramètre de sensibilité du message : **0** - Aucun ; **1** Personnel ; **2** - Privé ; **3** - CompanyConfidential.|
 |Ensemble de messages électroniques|EmailSet|Email_set|ID de groupe pour tous les messages dans le même ensemble de messages électroniques.|
-|EmailThread*||Email_thread|Position du message dans l’ensemble de messages électroniques ; se compose d’ID de nœud de la racine au message actuel et est séparé par des point (.).|
+|EmailThread*||Email_thread|Position du message dans l’ensemble de messages électroniques ; se compose d’ID de nœud de la racine au message actuel et est séparé par des périodes (.).|
 |Type de contenu extrait||Extracted_content_type|Type de contenu extrait, sous la forme de type mime ; par exemple, **image/jpeg**|
 |ExtractedTextLength*||Extracted_text_length|Nombre de caractères dans le texte extrait.|
 |Score de pertinence de la famille - Problème de cas 1*||Family_relevance_score_case_issue_1|Score de pertinence de la famille - Problème de cas 1 de Pertinence.|
-|FamilyDuplicateSet*||Family_duplicate_set|Identificateur numérique pour les familles qui sont des doublons exacts les unes des autres (même contenu et toutes les mêmes pièces jointes).|
+|FamilyDuplicateSet*||Family_duplicate_set|Identificateur numérique pour les familles qui sont des doublons exacts les uns des autres (même contenu et toutes les mêmes pièces jointes).|
 |ID de famille|FamilyId|Family_ID|L’ID de famille rassemble tous les éléments ; pour le courrier électronique, cela inclut le message et toutes les pièces jointes ; pour les documents, cela inclut le document et tous les éléments incorporés.|
 |Taille de la famille||Family_size|Nombre de documents de la famille.|
 |Score de pertinence du fichier Problème de cas 1*||File_relevance_score_case_issue_1|Score de pertinence du fichier - Problème de cas 1 à partir de la pertinence.|
@@ -108,20 +108,20 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Classe de l’élément|ItemClass|Item_class|Classe d’élément fournie par le serveur Exchange ; par exemple, **IPM. Remarque**|
 |Dernière modification|LastModifiedDate|Doc_date_modified|Date de la dernière modification à partir des métadonnées du document.|
 |ID de chargement|LoadId|Load_ID|ID du jeu de chargement dans lequel l’élément a été ajouté à un jeu à réviser.|
-|Lieu|Lieu|Lieu|Chaîne qui indique le type d’emplacement d’origine des documents.<br /><br />**Données importées** : données non Office 365<br />**Teams** - Microsoft Teams<br />**Exchange** - Boîtes aux lettres Exchange<br />**SharePoint** - Sites SharePoint<br />**OneDrive** - Comptes OneDrive|
+|Emplacement|Emplacement|Emplacement|Chaîne qui indique le type d’emplacement d’origine des documents.<br /><br />**Données importées** : données non Office 365<br />**Teams** - Microsoft Teams<br />**Exchange** - Boîtes aux lettres Exchange<br />**SharePoint** - Sites SharePoint<br />**OneDrive** - Comptes OneDrive|
 |Nom de l’emplacement|LocationName|Location_name|Chaîne qui identifie la source de l’élément. Pour exchange, il s’adressera à l’adresse SMTP de la boîte aux lettres . pour SharePoint et OneDrive, l’URL de la collection de sites.|
 |Marqué comme représentant|MarkAsRepresentative||Un document de chaque ensemble de doublons exacts est marqué comme représentant.|
 |Marqué comme problème de cas pré-marqué 1*||Marked_as_pre_tagged_Case_issue_1|Marqué comme problème de cas pré-marqué 1 à partir de la pertinence.|
 |Marqué comme problème de cas de début 1*||Marked_as_seed_Case_issue_1|Marqué comme problème de cas de début 1 à partir de la pertinence.|
 |Date de fin de réunion|MeetingEndDate|Meeting_end_date|Date de fin de réunion pour les réunions.|
 |Date de début de la réunion|MeetingStartDate|Meeting_start_date|Date de début de réunion pour les réunions.|
-|Type de message|MessageKind|Message_kind|Type de message à rechercher. Valeurs possibles : documents **<br /> <br /> contacts <br /> <br /> <br /> e-mail externaldata <br /> faxes <br /> im <br /> journals <br /> meetings <br /> microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br /> notes posts <br /> <br /> rssfeeds <br /> tasks <br /> voicemail**| 
+|Type de message|MessageKind|Message_kind|Type de message à rechercher. Valeurs possibles : **<br /> <br /> contacts <br /> docs <br /> email <br /> externaldata <br /> faxes im <br /> <br /> journals <br /> meetings <br /> microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br /> notes posts <br /> <br /> rssfeeds <br /> tasks <br /> voicemail**| 
 |Native Extension|NativeExtension|Native_extension|Extension native de l’élément.|
 |Nom de fichier natif|NativeFileName|Native_file_name|Nom de fichier natif de l’élément.|
 |NativeMD5||Native_MD5|Hachage MD5 (valeur de hachage 128 bits) du flux de fichier.|
 |NativeSHA256||Native_SHA_256|Hachage SHA256 (valeur de hachage 256 bits) du flux de fichier.|
 |Tri ND/ET : exclusion des pièces jointes|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concaténation de l’ensemble de threads de messagerie (ET) et du jeu de quasi-doublons (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET.|
-|Tri ND/ET : inclure les pièces jointes|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’un ensemble de threads de messagerie (ET) et d’un jeu de threads (ND) quasi-dupliqués. Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET. Chaque élément de courrier électronique d’un ensemble ET est suivi de ses pièces jointes appropriées.|
+|Tri ND/ET : inclure les pièces jointes|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’un ensemble de threads de messagerie (ET) et d’un jeu de threads quasi-dupliqués (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET. Chaque élément de courrier électronique d’un ensemble ET est suivi de ses pièces jointes appropriées.|
 |Score de pertinence normalisé Problème de cas 1||Normalized_relevance_score_case_issue_1|Score de pertinence normalisé - Problème de cas 1 à partir de la pertinence.|
 |Auteurs O365||O365_authors|Auteur à partir de SharePoint.|
 |O365 créé par||O365_created_by|Créé à partir de SharePoint.|
@@ -153,7 +153,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Domaine de l’expéditeur|SenderDomain|Email_sender_domain|Domaine de l’expéditeur.|
 |Sent|Sent|Email_date_sent|Date d’envoi du message.|
 |Définir l’ordre : premier inclus|SetOrderInclusivesFirst|Set_order_inclusives_first|Champ de tri - courrier électronique et pièces jointes : contre-chronologique ; documents : s’pivoter d’abord en descendant le score de similarité.|
-|SimilarityPercent||Similarity_percent|Indique à quel point un document est similaire au tableau croisé dynamique du jeu en double proche.|
+|SimilarityPercent||Similarity_percent|Indique la similarité d’un document avec le tableau croisé dynamique du jeu quasi-dupliqué.|
 |Taille de fichier native|Size|Native_size|Nombre d’octets de l’élément natif.|
 |Sujet|Sujet|Email_subject|Objet du message.|
 |Objet/Titre|SubjectTitle||Champ calculé composé de l’objet ou du titre de l’élément.|

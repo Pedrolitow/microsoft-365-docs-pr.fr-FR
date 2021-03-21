@@ -1,7 +1,7 @@
 ---
 title: Expérience de première exécution avec le pilote automatique et la page état d’inscription
 description: Comment déployer l’expérience ESP, les paramètres utilisés et les modifications de configuration
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -10,16 +10,16 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e2340c7c0bf00165bb43740d3d095b5b0402fc0
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: ec3758a2c452b5b20deab3b3776d631ebd48eaef
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126624"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921941"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Expérience de première exécution avec le pilote automatique et la page état d’inscription
 
-Bureau géré Microsoft utilise [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) et la page d’état d’inscription de Microsoft Intune [(ESP)](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) pour offrir la meilleure expérience de première utilisation possible à vos utilisateurs.
+Bureau géré Microsoft utilise [Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) et la page d’état d’inscription de Microsoft Intune [(ESP)](/windows/deployment/windows-autopilot/enrollment-status) pour offrir la meilleure expérience de première utilisation possible à vos utilisateurs.
 
 La page État de l’inscription est actuellement en prévisualisation publique.
 
@@ -27,7 +27,7 @@ La page État de l’inscription est actuellement en prévisualisation publique.
 
 Pour offrir l’expérience ESP, vous devez inscrire des appareils dans le service Bureau géré Microsoft. Pour plus d’informations sur l’inscription, voir [Inscrire de nouveaux appareils vous-même](../get-started/register-devices-self.md) ou [Étapes pour que les partenaires inscrivent des appareils.](../get-started/register-devices-partner.md)
 
-Une fois que vos appareils sont inscrits auprès du service, vous pouvez activer ESP pour vos appareils de bureau géré Microsoft en classant un ticket de support via le portail [d’administration.](https://portal.azure.com/) Nous allons initialement déployer la configuration ESP dans le groupe test lorsque vous déposez le ticket. Il est déployé dans les autres groupes de déploiement suivants (First, Fast et Broad) toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de se tenir en attente.
+Une fois que vos appareils sont inscrits auprès du service, vous pouvez activer ESP pour vos appareils de bureau géré Microsoft en classant un ticket de support via le portail [d’administration.](https://portal.azure.com/) Nous allons initialement déployer la configuration ESP dans le groupe test lorsque vous déposez le ticket. Il est déployé dans les autres groupes de déploiement suivants (First, Fast et Broad) toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de conserver.
 
 ## <a name="autopilot-profile-settings"></a>Paramètres de profil Autopilot
 
@@ -38,7 +38,7 @@ Bureau géré Microsoft utilise ces paramètres dans le profil Autopilot utilis�
 |---------|---------|
 |Mode de déploiement |  Piloté par l’utilisateur       |
 |Rejoindre Azure AD en tant que     |  Joint à Azure AD       |
-|Langue (Région)     | Système d’exploitation par défaut        |
+|Langue (Région)     | Sélection de l’utilisateur        |
 |Configurer automatiquement le clavier     | Non        |
 |Termes du contrat de licence logiciel Microsoft     |  Masquer       |
 |Paramètres de confidentialité     | Masquer        |
@@ -48,12 +48,9 @@ Bureau géré Microsoft utilise ces paramètres dans le profil Autopilot utilis�
 |Appliquer le modèle de nom d’appareil     | Oui        |
 |Entrer un nom     | MMD-%RAND:11%        |
 
-> [!NOTE]
-> Bien que l’approvisionnement « gant blanc » soit uniquement activé pour les clients avec ESP activé, il n’est actuellement pas pris en charge dans Bureau géré Microsoft.
-
 ## <a name="enrollment-status-page-settings"></a>Paramètres de la page État de l’inscription
 
-Bureau géré Microsoft utilise ces paramètres pour l’expérience page État de l’inscription :
+Bureau géré Microsoft utilise ces paramètres pour l’expérience Page d’état de l’inscription :
 
 
 |Setting  |Valeur  |
@@ -71,7 +68,7 @@ Bureau géré Microsoft utilise ces paramètres pour l’expérience page État 
 
 
 
-L’expérience page État de l’inscription se produit en trois phases. Pour plus d’informations, consultez les informations de suivi [de la page État de l’inscription.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)
+L’expérience Page d’état de l’inscription se produit en trois phases. Pour plus d’informations, consultez les informations de suivi [de la page État de l’inscription.](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)
 
 L’expérience se déroule comme suit :
 
@@ -83,15 +80,39 @@ L’expérience se déroule comme suit :
 > [!NOTE]
 > Les applications Win32 sont déployées uniquement pendant esp si la version windows 10 est 1903 ou ultérieure.
 
-![Page de démarrage du programme d’installation d’Autopilot affichant les phases de « préparation de l’appareil » et de « configuration de l’appareil ».](../../media/mmd-autopilot-screenshot.png)
+![Page de démarrage de l’installation d’Autopilot affichant les phases de « préparation de l’appareil » et de « configuration de l’appareil ».](../../media/mmd-autopilot-screenshot.png)
 
-## <a name="white-glove-provisioning"></a>Mise en service des gant blancs
+## <a name="autopilot-for-pre-provisioned-deployment"></a>Autopilot pour le déploiement pré-provisioné
+> [!NOTE]
+> Autopilot pour le déploiement pré-provisioné dans le Bureau géré Microsoft est actuellement en prévisualisation publique.
 
-Bureau géré Microsoft ne prend actuellement pas en charge la fonctionnalité « gant blanc » de Windows Autopilot.
+## <a name="additional-prerequisites-for-autopilot-for-pre-provisioned-deployment"></a>Conditions préalables supplémentaires pour Autopilot pour le déploiement pré-provisioné
+- La page d’état d’inscription (ESP) doit être activée. Pour plus d’informations, voir [Déploiement initial.](#initial-deployment)
+- L’appareil doit avoir une connexion réseau câblé.
+- Si vous avez des appareils qui ont été enregistrés à l’aide du portail Bureau géré Microsoft avant août 2020, désins inscrivez-les et inscrivez-les à nouveau.
+- Les appareils doivent avoir une image d’usine qui inclut la mise à jour cumulative [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) ou [20H1 2020.11C de novembre 2020,](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) si nécessaire, installée ou doit être réinventée avec la dernière image bureau géré Microsoft.
+- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise les fonctionnalités de déploiement automatique de Windows Autopilot, de sorte que le TPM 2.0 est requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode de déploiement automatique Autopilot et au déploiement pré-mis en service d’Autopilot dans les conditions requises pour la mise en réseau [Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/networking-requirements#tpm)
 
-## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modifier les paramètres Autopilot et Page d’état de l’inscription
+## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>Séquence d’événements dans Autopilot pour le déploiement pré-provisioné
+1. L’administrateur informatique réinitialise ou réinitialise l’appareil si nécessaire.
+2. L’administrateur informatique démarre l’appareil, atteint l’expérience « out-of-box experience » et appuie cinq fois sur la touche Windows.
+3. L’administrateur informatique sélectionne l’approvisionnement Windows Autopilot, puis sélectionne **Continuer.** Sur l’écran de configuration de Windows Autopilot, des informations sur l’appareil s’affichent.
+5. L’administrateur informatique sélectionne **Provision** pour démarrer le processus d’approvisionnement.
+6. L’appareil démarre ESP et passe par les phases de préparation et de configuration de l’appareil. Pendant la phase de configuration de l’appareil, **l’installation** de l’application x s’affiche (selon la configuration exacte du profil ESP).
+7. L’étape de configuration du compte est actuellement ignorée dans la configuration du Bureau géré Microsoft, car nous désactivons esp utilisateur.
+8. L’appareil redémarre.
 
-Si le programme d’installation utilisé par Bureau géré Microsoft ne correspond pas exactement à vos besoins, vous pouvez déposer un ticket de support via le [portail d’administration.](https://portal.azure.com/) Voici quelques exemples des types de configuration dont vous pourriez avoir besoin :
+Après le redémarrage, l’appareil affiche l’écran d’état vert, avec un **bouton Reseal.**
+
+> [!IMPORTANT]
+> Problèmes connus : 
+> - ESP ne s’exécute pas à nouveau après Autopilot pour la fonction de réapprovisionnement de déploiement pré-mise en service.
+> - L’appareil n’est pas renommé par Autopilot pour le déploiement pré-mis en service. L’appareil sera renommé uniquement après avoir passé par le flux utilisateur ESP.
+
+
+## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modification des paramètres Autopilot et Page d’état de l’inscription
+
+Si le programme d’installation utilisé par Bureau géré Microsoft ne correspond pas exactement à vos besoins, vous pouvez déposer un ticket de support via le portail [d’administration.](https://portal.azure.com/) Voici quelques exemples des types de configuration dont vous pourriez avoir besoin :
 
 ### <a name="autopilot-settings-change"></a>Modification des paramètres Autopilot
 

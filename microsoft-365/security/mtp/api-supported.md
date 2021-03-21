@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee03e5a255a88c084403842e7bf0319c06c0517b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a162226793cc63a9e7e4d490c721a2c488ac64fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926197"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922173"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>API Microsoft 365 Defender prises en charge 
 
@@ -54,7 +54,7 @@ L’URI de base pour les deux API principales est : https://api.security.microso
 
 Les jetons peuvent être acquis en accédant à https://api.security.microsoft.com .
 
-Toutes les API le long du `/api` chemin d’accès utilisent le [protocole OData](https://docs.microsoft.com/odata/overview) ; par exemple, https://api.security.microsoft.com/api/incidents .
+Toutes les API le long du `/api` chemin d’accès utilisent [le protocole OData](/odata/overview) ; par exemple, https://api.security.microsoft.com/api/incidents .
 
 ## <a name="related-articles"></a>Articles connexes
 

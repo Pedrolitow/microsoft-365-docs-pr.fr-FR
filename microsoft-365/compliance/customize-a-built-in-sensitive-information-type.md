@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment créer un type d’informations sensibles personnalisé qui vous permettra d’utiliser des règles répondant aux besoins de votre organisation.
-ms.openlocfilehash: 40584b430af6e822b115e014c20481c027222aae
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 79d79a220e0cd8de0755f6cdac99cf7cceb2997f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423403"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922658"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
@@ -33,7 +33,7 @@ Vous pouvez prendre cet exemple et l’appliquer à d’autres types d’informa
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Exporter le fichier XML des règles actuelles
 
-Pour exporter le fichier XML, vous devez vous [connecter au Centre de sécurité et conformité à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Pour exporter le fichier XML, vous devez vous [connecter au Centre de sécurité et conformité à l’aide de PowerShell à distance](/powershell/exchange/connect-to-scc-powershell).
   
 1. Dans PowerShell, saisissez la commande suivante pour afficher les règles de votre organisation à l’écran. Si vous n’avez pas créé votre propre règle, vous ne verrez que les règles intégrées par défaut, sous le libellé « Package de règles Microsoft ».
 
@@ -201,7 +201,7 @@ Pour télécharger votre règle, vous devez procéder comme suit.
   
 1. Enregistrez-la en tant que fichier .xml avec le codage Unicode. Ceci est important car la règle ne fonctionne pas si le fichier est enregistré dans un codage différent.
     
-2. [Se connecter au Centre de sécurité et conformité à l’aide de PowerShell à distance.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+2. [Se connecter au Centre de sécurité et conformité à l’aide de PowerShell à distance.](/powershell/exchange/connect-to-scc-powershell)
     
 3. Dans PowerShell, saisissez la commande suivante.
 

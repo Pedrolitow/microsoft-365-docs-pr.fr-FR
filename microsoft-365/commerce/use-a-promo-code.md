@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
 description: Découvrez comment appliquer un code promotionnel à votre abonnement Microsoft 365 pour réduire le prix et comment résoudre les problèmes de code promotionnel en cas d’erreur.
-ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c526d5fd44db5e653f79c4987a35c72cdd6fdcad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646738"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921755"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Utiliser votre code promotionnel pour réduire le prix
 
@@ -45,7 +45,7 @@ Lorsque vous achetez un abonnement, vous pouvez utiliser un code promotionnel po
     
 4. Poursuivez l’enregistrement. Dans la page de confirmation de commande, votre code de remise est inclus avec le montant. 
     
-Une fois l'achat finalisé, vous pouvez voir la réduction créée par votre code promotionnel sur votre facture. Pour en savoir plus, voir [Afficher votre](billing-and-payments/view-your-bill-or-invoice.md).
+Une fois l'achat finalisé, vous pouvez voir la réduction créée par votre code promotionnel sur votre facture. Pour en savoir plus, [consultez Afficher votre](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## <a name="promo-code-terms"></a>Conditions d'utilisation des codes promotionnels
 
@@ -73,8 +73,8 @@ Vous pouvez recevoir un message d'erreur après avoir entré votre code promotio
   
 ## <a name="related-articles"></a>Articles connexes
 
-[Acheter un abonnement depuis votre version d’essai](buy-a-subscription-from-your-free-trial.md)
+[Acheter un abonnement depuis votre version d’essai](./try-or-buy-microsoft-365.md)
   
-[Acheter un autre abonnement](buy-another-subscription.md)
+[Acheter un autre abonnement](./try-or-buy-microsoft-365.md)
   
 [Acheter ou modifier un composant additionnel](buy-or-edit-an-add-on.md)

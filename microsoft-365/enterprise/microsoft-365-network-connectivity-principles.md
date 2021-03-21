@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Cet article fournit les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6f104f53abd0a9aa2376b09c93af96d7f8178e8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: e0391133721270c0fdfb288b5d26ab23f301a844
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519738"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923289"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principes de connectivité réseau Microsoft 365
 
@@ -228,7 +228,7 @@ Une approche holistique de la sécurité renforcée doit prendre en compte les �
   - Assurer la sortie locale du trafic Microsoft 365
 - Les améliorations peuvent être traitées de manière incrémentielle, comme décrit dans la section [Optimisation incrémentale](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). Certaines techniques d’optimisation peuvent offrir de meilleurs rapports coût/bénéfice en fonction de votre architecture réseau, et vous devez choisir les optimisations les plus adaptées à votre organisation.
 
-Si vous souhaitez en savoir plus sur la sécurité et la conformité de Microsoft 365, consultez l’article [Sécurité Microsoft 365](https://docs.microsoft.com/microsoft-365/security) et [Conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance).
+Si vous souhaitez en savoir plus sur la sécurité et la conformité de Microsoft 365, consultez l’article [Sécurité Microsoft 365](../security/index.yml) et [Conformité Microsoft 365](../compliance/index.yml).
   
 ## <a name="incremental-optimization"></a>Optimisation incrémentielle
 <a name="BKMK_IncOpt"> </a>

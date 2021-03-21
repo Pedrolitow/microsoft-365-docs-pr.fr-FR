@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les pages de sites de publication modernes et classiques dans SharePoint Online en limitant le nombre d’appels aux points de terminaison de service SharePoint Online.
-ms.openlocfilehash: b3c41dfe308f1546887f28cf0e8fbe9ab4dc2761
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: cab0f6a020bd1148a0e852b5a393a6ad907f9771
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690205"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921617"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimiser les appels de page dans les pages de sites de publication modernes et classiques SharePoint Online
 
@@ -33,7 +33,7 @@ Les sites de publication modernes et classiques SharePoint Online contiennent de
 Cet article vous permet de comprendre comment déterminer le nombre et l’impact des appels vers des points de terminaison externes à partir de vos pages de sites de publications modernes et classiques et comment limiter leur effet sur la latence perçue par l’utilisateur final.
 
 >[!NOTE]
->Pour plus d’informations sur les performances dans les portails modernes SharePoint Online, consultez [Performances offertes par l’expérience moderne de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>Pour plus d’informations sur les performances dans les portails modernes SharePoint Online, consultez [Performances offertes par l’expérience moderne de SharePoint](/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-calls"></a>Utiliser l’outil Diagnostic de page pour SharePoint pour analyser les appels de page
 
@@ -60,7 +60,7 @@ Si le résultat **Requêtes à SharePoint** apparaît dans la section **Attentio
 
 Si une page contient un trop grand nombre d’appels, vous pouvez utiliser la liste d’URL dans les résultats **Requêtes à SharePoint** pour déterminer s’il existe des appels répétés, des appels qui devraient être groupés ou des appels qui renvoient des données qui devraient être mises en cache.
 
-**Le traitement par lots des appels REST** permet de réduire la dégradation des performances. Pour plus d’informations sur le traitement par lots d’appels d’API, consultez [Effectuer des requêtes de lot avec les API REST](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis).
+**Le traitement par lots des appels REST** permet de réduire la dégradation des performances. Pour plus d’informations sur le traitement par lots d’appels d’API, consultez [Effectuer des requêtes de lot avec les API REST](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis).
 
 **L’utilisation d’un cache** pour stocker les résultats d’un appel d’API peut améliorer les performances d’une demande d’urgence en permettant au client d’utiliser les données mises en cache au lieu d’effectuer un appel supplémentaire pour chaque chargement de page suivant. Il existe de multiples façons d'aborder cette solution en fonction des besoins de l'entreprise. En règle générale, si les données sont identiques pour tous les utilisateurs, l’utilisation d’un service de mise en cache de niveau intermédiaire comme [_Cache_ Azure Redis](https://azure.microsoft.com/services/cache/) constitue une option idéale pour réduire considérablement le trafic d’API sur un site, car les utilisateurs demandent les données du service de mise en cache plutôt que directement à partir de SPO. Les seuls appels SPO nécessaires sont pour actualiser le cache du niveau intermédiaire. Si les données fluctuent en fonction de chaque utilisateur individuel, il peut être préférable d’implémenter un cache côté client, tel que LocalStorage ou même un cookie. Cela a pour but de réduire encore les volumes d’appels en éliminant les demandes subséquentes effectuées par le même utilisateur pour la durée du cache, mais sera moins efficace qu’un service de mise en cache dédié. PnP vous permet d’utiliser LocalStorage en ne nécessitant que peu de développement supplémentaire.
 
@@ -77,7 +77,7 @@ Avant d’apporter des révisions de page pour résoudre les problèmes de perfo
 
 [Optimisation des performances Office 365](tune-microsoft-365-performance.md)
 
-[Performances offertes par l’expérience moderne de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Performances offertes par l’expérience moderne de SharePoint](/sharepoint/modern-experience-performance)
 
 [Réseaux de distribution de contenu](content-delivery-networks.md)
 

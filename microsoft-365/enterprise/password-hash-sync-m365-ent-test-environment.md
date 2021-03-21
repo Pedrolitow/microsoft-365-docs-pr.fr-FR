@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer la connexion et la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 3c20d1997be2ff47f0b449cbba3afb1e6edcd59a
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 9c61745fe322dce4cb2b537b18963634a97c697a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487457"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921503"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -120,7 +120,7 @@ Tout d’abord, installez et configurez Azure AD Connect sur APP1.
     
 14. Dans **les licences de** produit, sélectionnez votre emplacement (si nécessaire), désactivez la licence Office **365 E5,** puis activez la licence Microsoft **365 E5.** 
 
-15. Sélectionnez **Enregistrer** en bas de la page, puis **fermez.**
+15. Sélectionnez **Enregistrer** en bas de la page, puis **Fermez.**
     
 Ensuite, testez la possibilité de vous inscrire à votre abonnement à **l’user1@testlab.< >** votre nom de domaine du compte User1 :
 
@@ -150,4 +150,4 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

@@ -19,12 +19,12 @@ ms.custom:
 description: Cet article explique les modifications apportées aux fonctionnalités de protection dans Azure Information Protection
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fe85a46e3f20cda62cd8a52bd5df92257f8fee57
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 32f21c7b57f4f81ea153f7fe1fe84de1f041c592
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286668"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921263"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Fonctionnalités de protection dans Azure Information Protection en cours de déploiement sur des clients existants
 
@@ -34,7 +34,7 @@ ms.locfileid: "50286668"
 - [Microsoft Defender pour Office 365 Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Pour vous aider lors de l’étape initiale de protection de vos informations, à compter de juillet 2018, les fonctionnalités de protection d’Azure Information Protection seront désactivées par défaut pour tous les locataires éligibles Azure Information Protection. Les fonctionnalités de protection dans Azure Information Protection étaient auparavant connues dans Office 365 en tant que Gestion des droits ou Azure RMS. Si votre organisation dispose d’un plan de service Office E3 ou d’un plan de service plus élevé, vous aurez désormais une idée d’avance pour protéger les informations via Azure Information Protection lors du déploiement de ces fonctionnalités.
+Pour faciliter l’étape initiale de protection de vos informations, à compter de juillet 2018, les fonctionnalités de protection d’Azure Information Protection seront désactivées par défaut pour tous les locataires éligibles Azure Information Protection. Les fonctionnalités de protection dans Azure Information Protection étaient auparavant connues dans Office 365 en tant que Gestion des droits ou Azure RMS. Si votre organisation dispose d’un plan de service Office E3 ou d’un plan de service supérieur, vous aurez désormais une idée d’avance pour protéger les informations via Azure Information Protection lors du déploiement de ces fonctionnalités.
 
 ## <a name="changes-beginning-july-1-2018"></a>Modifications à partir du 1er juillet 2018
 
@@ -46,7 +46,7 @@ Pour vous aider lors de l’étape initiale de protection de vos informations, �
 
 - Chaque utilisateur bénéficiant du chiffrement de messages Office 365 doit être titulaire d’une licence pour être couvert par la fonctionnalité.
 
-- Pour obtenir la liste complète, consultez les [descriptions du service Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) pour le chiffrement de messages Office 365.
+- Pour obtenir la liste complète, consultez les [descriptions du service Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) pour le chiffrement de messages Office 365.
 
 Les administrateurs client peuvent vérifier l’état de la protection dans le portail d’administrateur Office 365.
 
@@ -61,29 +61,29 @@ Le chiffrement de messages Office 365 tire parti des fonctionnalités de protect
 Si votre organisation a acheté une licence Office 365 éligible, votre client sera touché par cette modification.
 
 > [!IMPORTANT]
-> Si vous utilisez services AD RMS (Active Directory Rights Management Services) (AD RMS) dans votre environnement local, vous devez soit refuser cette modification immédiatement, soit migrer vers Azure Information Protection avant de la déployer dans les 30 prochains jours. Pour plus d’informations sur la façon de refuser, voir « J’utilise AD RMS, comment puis-je refuser ? » » plus loin dans cet article. Si vous préférez migrer, voir [Migrer d’AD RMS vers Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+> Si vous utilisez services AD RMS (Active Directory Rights Management Services) (AD RMS) dans votre environnement local, vous devez soit refuser cette modification immédiatement, soit migrer vers Azure Information Protection avant de la déployer dans les 30 prochains jours. Pour plus d’informations sur la façon de refuser, voir « J’utilise AD RMS, comment puis-je refuser ? » » plus loin dans cet article. Si vous préférez migrer, voir [Migrer d’AD RMS vers Azure Information Protection.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Puis-je utiliser Azure Information Protection avec services AD RMS (Active Directory Rights Management Services) (AD RMS) ?
 
-Non. Il ne s’agit pas d’un scénario de déploiement pris en charge. Sans suivre les étapes supplémentaires d’opposition, certains ordinateurs peuvent commencer automatiquement à utiliser le service Azure Rights Management et se connecter à votre cluster AD RMS. Ce scénario n’est pas pris en charge et a des résultats peu fiables. Il est donc important que vous désapprovisionnement de cette modification dans les 30 prochains jours avant de déployer ces nouvelles fonctionnalités. Pour plus d’informations sur la façon de refuser, voir « J’utilise AD RMS, comment puis-je refuser ? » » plus loin dans cet article. Si vous préférez migrer, voir [Migrer d’AD RMS vers Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+Non. Il ne s’agit pas d’un scénario de déploiement pris en charge. Sans suivre les étapes supplémentaires d’opposition, certains ordinateurs peuvent commencer automatiquement à utiliser le service Azure Rights Management et se connecter à votre cluster AD RMS. Ce scénario n’est pas pris en charge et a des résultats peu fiables. Il est donc important que vous désapprovisionnement de cette modification dans les 30 prochains jours avant de déployer ces nouvelles fonctionnalités. Pour plus d’informations sur la façon de refuser, voir « J’utilise AD RMS, comment puis-je refuser ? » » plus loin dans cet article. Si vous préférez migrer, voir [Migrer d’AD RMS vers Azure Information Protection.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>Comment savoir si j’utilise AD RMS ?
 
-Utilisez ces instructions de préparation de l’environnement pour Azure Rights Management lorsque vous avez également services AD RMS (Active Directory Rights Management Services) [(AD RMS)](https://docs.microsoft.com/azure/information-protection/deploy-use/prepare-environment-adrms) pour vérifier si vous avez déployé AD RMS :
+Utilisez ces instructions de préparation de l’environnement pour Azure Rights Management lorsque vous avez également services AD RMS (Active Directory Rights Management Services) [(AD RMS)](/azure/information-protection/deploy-use/prepare-environment-adrms) pour vérifier si vous avez déployé AD RMS :
 
 1. Bien que facultatif, la plupart des déploiements AD RMS publient le point de connexion de service (SCP) dans Active Directory afin que les ordinateurs de domaine peuvent découvrir le cluster AD RMS.
 
    Utilisez ADSI Edit pour voir si vous avez un SCP publié dans Active Directory : CN=Configuration [nom du serveur], CN=Services, CN=RightsManagementServices, CN=SCP
 
-2. Si vous n’utilisez pas de point de connexion SCP, les ordinateurs Windows qui se connectent à un cluster AD RMS doivent être configurés pour la découverte de service côté client ou la redirection des licences à l’aide du Registre Windows : `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation`
+2. Si vous n’utilisez pas de point de connexion SCP, les ordinateurs Windows qui se connectent à un cluster AD RMS doivent être configurés pour la découverte du service côté client ou la redirection des licences à l’aide du Registre Windows : `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation`
 
-Pour plus d’informations sur ces configurations de Registre, voir Activation de la découverte de service côté client à l’aide du [Registre Windows](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) et redirection du trafic du serveur de [licences.](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)
+Pour plus d’informations sur ces configurations de Registre, voir Activation de la découverte de service côté client à l’aide du Registre [Windows](/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) et redirection du trafic du serveur de [licences.](/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)
 
 ## <a name="i-use-ad-rms-how-do-i-opt-out"></a>J’utilise AD RMS, comment puis-je refuser ?
 
 Pour refuser la modification à venir, complétez les étapes suivantes :
 
-1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez lSet-IRMConfiguration cmdlet à l’aide de la syntaxe suivante :
 
@@ -97,4 +97,4 @@ Une fois ce chiffrement activé, à condition que vous n’avez pas choisi de le
 
 ![Capture d’écran shows an OME protected message in Outlook on the web.](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 
-Pour plus d’informations sur les nouvelles améliorations, voir Chiffrement de [messages Office 365.](../../compliance/ome.md)
+Pour plus d’informations sur les nouvelles améliorations, voir chiffrement de [messages Office 365.](../../compliance/ome.md)

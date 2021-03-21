@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37b473e2cfffff3984ff81245f09e98ee18685ea
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 0ac1028ca3485f75518ccca298a1fd85a7bf40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826197"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922389"
 ---
 # <a name="user-submissions-policy"></a>Stratégie de soumissions d’utilisateurs
 
@@ -33,7 +33,7 @@ ms.locfileid: "50826197"
 - [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Dans les organisations Microsoft 365 avec boîtes aux lettres Exchange Online, vous pouvez spécifier une boîte aux lettres pour recevoir des messages que les utilisateurs signalent comme malveillants ou non malveillants. Lorsque les utilisateurs envoient des messages à l’aide des différentes options de création de rapports, vous pouvez utiliser cette boîte aux lettres pour intercepter des messages (envoyer à la boîte aux lettres personnalisée uniquement) ou recevoir des copies de messages (envoyer à la boîte aux lettres personnalisée et Microsoft). Cette fonctionnalité fonctionne avec les options de rapport de message suivantes :
+Dans les organisations Microsoft 365 spécifiant des boîtes aux lettres Exchange Online, vous pouvez spécifier une boîte aux lettres pour recevoir des messages que les utilisateurs signalent comme malveillants ou non malveillants. Lorsque les utilisateurs envoient des messages à l’aide des différentes options de création de rapports, vous pouvez utiliser cette boîte aux lettres pour intercepter des messages (envoyer à la boîte aux lettres personnalisée uniquement) ou recevoir des copies de messages (envoyer à la boîte aux lettres personnalisée et Microsoft). Cette fonctionnalité fonctionne avec les options de rapport de message suivantes :
 
 - [Le add-in Message de rapport](enable-the-report-message-add-in.md)
 
@@ -46,19 +46,19 @@ Dans les organisations Microsoft 365 avec boîtes aux lettres Exchange Online, v
   > [!NOTE]
   > Si la création de rapports a été désactivée dans Outlook sur le [web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)l’activation des soumissions d’utilisateurs ici remplace ce paramètre et permet aux utilisateurs de signaler à nouveau les messages dans Outlook sur le web.
 
-Vous pouvez également configurer des outils de rapport de messages tiers pour transmettre des messages à la boîte aux lettres que vous spécifiez.
+Vous pouvez également configurer des outils de rapports de messages tiers pour transmettre des messages à la boîte aux lettres que vous spécifiez.
 
 La livraison des messages signalés par l’utilisateur à une boîte aux lettres personnalisée au lieu de directement à Microsoft permet à vos administrateurs de signaler de manière sélective et manuelle des messages à Microsoft à l’aide de la soumission [d’administrateur.](admin-submission.md)
 
 ## <a name="custom-mailbox-prerequisites"></a>Conditions préalables pour la boîte aux lettres personnalisée
 
-Utilisez les articles suivants pour configurer les conditions préalables requises afin que les messages signalés par l’utilisateur retournent dans votre boîte aux lettres personnalisée :
+Utilisez les articles suivants pour configurer les conditions préalables requises afin que les messages signalés par l’utilisateur se placent dans votre boîte aux lettres personnalisée :
 
 - Ignorez le filtrage du courrier indésirable sur la boîte aux lettres personnalisée en créant une règle de flux de messagerie Exchange pour définir le niveau de confiance du courrier indésirable. Voir [Utiliser le EAC](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) pour créer une règle de flux de messagerie qui définit le SCL d’un message pour définir le SCL sur **-1**.
 
 - Désactiver l’analyse des pièces jointes pour les programmes malveillants dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de pièces jointes sécurisées dans Defender pour [Office 365](set-up-atp-safe-attachments-policies.md) pour créer une stratégie de pièces jointes sécurisées avec le paramètre **Off** pour les pièces **jointes sécurisées réponse anti-programme** malveillant inconnue.
 
-- Désactiver l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de liens sûrs dans Defender pour [Office 365](set-up-atp-safe-links-policies.md) pour créer une stratégie de liens sécurisés avec le paramètre **Off** pour sélectionner l’action pour les URL potentiellement malveillantes inconnues dans les **messages.**
+- Désactiver l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de liens sécurisés dans Defender pour [Office 365](set-up-atp-safe-links-policies.md) pour créer une stratégie de liens sécurisés avec le paramètre **« Sélectionner** l’action pour les URL potentiellement malveillantes **inconnues** dans les messages ».
 
 - Créez une stratégie anti-programme malveillant pour désactiver la purge automatique sans heure de programmes malveillants. Voir Utiliser le Centre de sécurité & conformité pour créer des stratégies [anti-programme](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) malveillant afin de définir la **purge** automatique sans heure de programmes **malveillants sur Hors service.**
 
@@ -75,7 +75,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 - Pour modifier la configuration des soumissions d’utilisateurs, vous devez être membre de l’un des groupes de rôles suivants :
 
   - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-  - **Gestion de l’organisation** [dans Exchange Online.](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)
+  - **Gestion de l’organisation** [dans Exchange Online.](/Exchange/permissions-exo/permissions-exo#role-groups)
 
 - Vous devez accéder à Exchange Online PowerShell. Si le compte que vous essayez d’utiliser n’a pas accès à Exchange Online PowerShell, vous recevrez une erreur qui ressemble à ceci lorsque vous spécifiez la boîte aux lettres de soumission :
 
@@ -83,8 +83,8 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
   Pour plus d’informations sur l’activation ou la désactivation de l’accès à Exchange Online PowerShell, consultez les rubriques suivantes :
 
-  - [Activer ou désactiver l’accès à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
-  - [Règles d’accès client dans Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [Activer ou désactiver l’accès à Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Règles d’accès client dans Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Utiliser le Centre de sécurité & conformité pour configurer la boîte aux lettres d’envoi des utilisateurs
 
@@ -134,7 +134,7 @@ Sous **Options pour afficher le moment où les messages sont signalés,** sélec
 
 ## <a name="message-submission-format"></a>Format de dépôt des messages
 
-Les messages envoyés à des boîtes aux lettres personnalisées doivent respecter un format de courrier d’envoi spécifique. L’objet (titre de l’enveloppe) de la soumission doit être au format ci-après :
+Les messages envoyés à des boîtes aux lettres personnalisées doivent respecter un format de courrier d’envoi spécifique. L’objet (titre de l’enveloppe) de l’envoi doit être au format ci-après :
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
@@ -142,7 +142,7 @@ où SafetyAPIAction est l’une des valeurs d’un nombre integer suivantes :
 
 - 1 : Courrier indésirable
 - 2 : ne pas être indésirable
-- 3 : hameçonnage
+- 3 : Hameçonnage
 
 Dans l’exemple suivant :
 
@@ -155,4 +155,3 @@ Dans l’exemple suivant :
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Les messages qui ne suivent pas ce format ne s’afficheront pas correctement dans le portail soumissions.
-

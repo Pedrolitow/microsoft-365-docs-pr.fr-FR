@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
-ms.openlocfilehash: 4e8a536aaa81b0117f40b0ce330491fa8430f97c
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 0763b8bdab75ac76197b8c89f187bb573a3e4bb1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754434"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922508"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 
@@ -44,7 +44,7 @@ Les autres éléments stockés dans une boîte aux lettres, tels que les message
 
 ## <a name="how-retention-works-for-exchange"></a>Fonctionnement de la rétention pour Exchange
 
-Les boîtes aux lettres et les dossiers publics utilisent le même dossier [Éléments récupérables ](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)pour conserver des éléments. Seules les personnes disposant des autorisations eDiscovery peuvent afficher le dossier Éléments récupérables d’un autre utilisateur.
+Les boîtes aux lettres et les dossiers publics utilisent le même dossier [Éléments récupérables ](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)pour conserver des éléments. Seules les personnes disposant des autorisations eDiscovery peuvent afficher le dossier Éléments récupérables d’un autre utilisateur.
   
 Par défaut, lorsqu’un utilisateur supprime un message dans un dossier autre que le dossier Éléments supprimés, le message est déplacé vers le dossier Éléments supprimés. Lorsqu’un utilisateur supprime un élément dans le dossier Éléments supprimés, le message est déplacé vers le dossier Éléments récupérables. En outre, une personne peut supprimer de façon réversible, un élément (MAJ + SUPPR) dans n’importe quel dossier, ce qui permet de passer outre le dossier Éléments supprimés et de placer l’élément directement dans le dossier Éléments récupérables.
   

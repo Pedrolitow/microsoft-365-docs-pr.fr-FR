@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Feuille de route pour l’implémentation de la mise en réseau Microsoft 365.
-ms.openlocfilehash: 2962adf7bdca35d06672696471e0932fd1a7b09c
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: be1691138290a592822bfb4d59286fe795270450
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787750"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923551"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>Feuille de route de mise en réseau pour Microsoft 365
 
@@ -30,7 +30,7 @@ Une partie essentielle de votre intégration Microsoft 365 consiste à vous assu
 
 Utilisez ces articles pour comprendre les différences clés et modifier vos équipements de périmètre, ordinateurs clients et réseau local pour obtenir les meilleures performances de la part de vos utilisateurs locaux.
 
-## <a name="plan"></a>Planification
+## <a name="plan"></a>Prévision
 
 Dans la phase de planification de votre implémentation réseau :
 
@@ -45,7 +45,7 @@ Dans la phase de planification de votre implémentation réseau :
 Dans la phase de déploiement de votre implémentation réseau :
 
 - [Vérifier que votre réseau d’entreprise est optimisé pour la connectivité Microsoft 365](set-up-network-for-microsoft-365.md)
-- [Ajouter les domaines DNS pour votre organisation](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
+- [Ajouter les domaines DNS pour votre organisation](../admin/setup/add-domain.md)
 - [Optimiser votre connectivité aux points de terminaison Microsoft 365](microsoft-365-ip-web-service.md)
 - [Optimiser la connectivité pour les travailleurs à distance](microsoft-365-vpn-split-tunnel.md)
 - Si nécessaire, [configurez ExpressRoute](azure-expressroute.md)
@@ -70,4 +70,4 @@ Découvrez comment Contoso Corporation, une entreprise multinationale fictive m
 
 ## <a name="next-step"></a>Étape suivante
 
-Démarrez votre planification réseau avec la vue d’ensemble de la connectivité réseau [Microsoft 365.](microsoft-365-networking-overview.md)
+Démarrez la planification de votre réseau avec la vue d’ensemble de la connectivité réseau [Microsoft 365.](microsoft-365-networking-overview.md)

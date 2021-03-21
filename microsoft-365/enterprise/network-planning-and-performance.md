@@ -18,28 +18,28 @@ ms.custom:
 - seo-marvel-apr2020
 - Adm_O365
 description: Cet article vous aidera à planifier vos besoins en bande passante réseau pour Microsoft 365, ainsi qu’à affiner et résoudre les problèmes de performances.
-ms.openlocfilehash: a5923c87749f5a8e57de4867cccbdd8c2fae627d
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: bf05e4128f8ba5ddecce76cb00dc945f43c9c59a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295549"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923599"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Planification réseau et optimisation des performances pour Microsoft 365
 Avant de déployer pour la première fois ou de migrer vers Microsoft 365, vous pouvez utiliser les informations de ces rubriques pour estimer la bande passante dont vous avez besoin, puis pour tester et vérifier que vous avez suffisamment de bande passante pour déployer ou migrer vers Microsoft 365. Pour obtenir une vue d’ensemble, voir : [Planification du réseau et de la migration pour Microsoft 365.](network-and-migration-planning.md)
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**Planification réseau** <br/> ![Réseau](../media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |Vous souhaitez des connexions et des pages rapides qui se chargent rapidement ?  <br/> Lisez [Obtenir la meilleure connectivité et les meilleures performances dans Microsoft 365](https://aka.ms/o365perfprinciples).<br/>Lisez la vue d’ensemble de la connectivité réseau [De Microsoft 365](microsoft-365-networking-overview.md) pour comprendre les concepts.<br/> |**Mesure de votre réseau** <br/> ![Calculatrice](../media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |Lisez [l’optimisation des performances de Microsoft 365 à](performance-tuning-using-baselines-and-history.md) l’aide des lignes de base et de l’historique des performances et du plan de résolution des problèmes [de performances pour Microsoft 365.](performance-troubleshooting-plan.md)  <br/> Utilisez ces outils pour [évaluer votre réseau existant.](network-and-migration-planning.md#calculators)  <br/> |
-|**Meilleures pratiques** <br/> ![Bonnes pratiques](../media/2a659a5c-1007-47d3-a6c6-a19e018ab29b.png)           <br/> |[Meilleures pratiques en matière de planification réseau et d’amélioration des performances de migration pour Microsoft 365.](network-and-migration-planning.md#BestPractices) Vous souhaitez commencer à aider vos utilisateurs immédiatement ? Consultez [les meilleures pratiques d’utilisation d’Office 365 sur un réseau lent.](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)  <br/> Les principes de connectivité réseau [de Microsoft 365](https://aka.ms/o365networkingprinciples) vous aideront à comprendre les conseils les plus récents pour optimiser en toute sécurité la connectivité réseau Microsoft 365.  <br/> |**Référence** <br/> ![Livre ou Journal](../media/56dff3c1-f605-48d8-811f-7d13ce639ecd.png)           <br/> |Vous souhaitez obtenir des détails, tels qu’une liste d’adresses IP et de ports ? Consultez la [référence de planification réseau pour Microsoft 365.](network-and-migration-planning.md#NetReference)  <br/> |
-|![Voir l’affiche Mise en réseau cloud Microsoft pour les architectes d’entreprise](../media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)           <br/> |Pour obtenir la procédure d’optimisation de votre réseau pour Microsoft 365 et d’autres plateformes et services cloud Microsoft, voir l’affiche Mise en réseau cloud Microsoft pour les architectes [d’entreprise.](https://aka.ms/cloudarchnetworking)  <br/> |
+|**Planification du réseau** <br/> ![Réseau](../media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |Vous souhaitez des connexions et des pages rapides qui se chargent rapidement ?  <br/> Lisez [Obtenir la meilleure connectivité et les meilleures performances dans Microsoft 365](https://aka.ms/o365perfprinciples).<br/>Lisez la vue d’ensemble de la connectivité réseau [De Microsoft 365](microsoft-365-networking-overview.md) pour comprendre les concepts.<br/> |**Mesure de votre réseau** <br/> ![Calculatrice](../media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |Lisez [l’optimisation des performances de Microsoft 365 à](performance-tuning-using-baselines-and-history.md) l’aide des lignes de base, de l’historique des performances et du plan de résolution des problèmes de [performances pour Microsoft 365.](performance-troubleshooting-plan.md)  <br/> Utilisez ces outils pour [évaluer votre réseau existant.](network-and-migration-planning.md#calculators)  <br/> |
+|**Meilleures pratiques** <br/> ![Les bonnes pratiques](../media/2a659a5c-1007-47d3-a6c6-a19e018ab29b.png)           <br/> |[Meilleures pratiques en matière de planification réseau et d’amélioration des performances de migration pour Microsoft 365.](network-and-migration-planning.md#BestPractices) Vous souhaitez commencer à aider vos utilisateurs immédiatement ? Consultez [les meilleures pratiques d’utilisation d’Office 365 sur un réseau lent.](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)  <br/> Les principes de connectivité réseau [de Microsoft 365](./microsoft-365-network-connectivity-principles.md) vous aideront à comprendre les conseils les plus récents pour optimiser en toute sécurité la connectivité réseau Microsoft 365.  <br/> |**Référence** <br/> ![Livre ou Journal](../media/56dff3c1-f605-48d8-811f-7d13ce639ecd.png)           <br/> |Vous souhaitez obtenir des détails, tels qu’une liste d’adresses IP et de ports ? Consultez la [référence de planification réseau pour Microsoft 365.](network-and-migration-planning.md#NetReference)  <br/> |
+|![Voir l’affiche Mise en réseau cloud Microsoft pour les architectes d’entreprise](../media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)           <br/> |Pour obtenir la procédure d’optimisation de votre réseau pour Microsoft 365 et d’autres plateformes et services cloud Microsoft, voir l’affiche Mise en réseau [cloud Microsoft](../solutions/cloud-architecture-models.md) pour les architectes d’entreprise.  <br/> |
    
 ## <a name="performance-tuning-and-troubleshooting-resources-for-microsoft-365"></a>Optimisation des performances et ressources de dépannage pour Microsoft 365
 <a name="apptuning"> </a>
 
 Une fois Microsoft 365 déployé, vous pouvez optimiser vos performances à l’aide des rubriques de cette section. Si vous faites l’objet d’une dégradation des performances, vous pouvez également utiliser ces rubriques pour résoudre les problèmes.
   
- **[Régler les performances d’Office 365](tune-microsoft-365-performance.md)**: pour plus d’informations sur l’utilisation de la traduction d’adresses réseau avec Office 365, voir la prise en charge nat avec [Office 365.](nat-support-with-microsoft-365.md) En outre, jetez un œil aux 10 premiers conseils pour optimiser et dépanner votre connectivité réseau [Office 365.](https://docs.microsoft.com/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) 
+ **[Régler les performances d’Office 365](tune-microsoft-365-performance.md)**: pour plus d’informations sur l’utilisation de la traduction d’adresses réseau avec Office 365, voir la prise en charge nat avec [Office 365.](nat-support-with-microsoft-365.md) En outre, jetez un œil aux 10 premiers conseils pour optimiser et dépanner votre connectivité réseau [Office 365.](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) 
   
  **[Régler les performances d’Exchange Online](tune-exchange-online-performance.md)**: utilisez ces articles pour affiner les performances d’Exchange Online. 
   
@@ -47,4 +47,4 @@ Une fois Microsoft 365 déployé, vous pouvez optimiser vos performances à l’
   
  **[Régler les performances de SharePoint Online](tune-sharepoint-online-performance.md)**: utilisez ces articles pour affiner les performances de SharePoint Online. 
   
- **[Régler les performances de Project Online](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c)**: utilisez cet article pour affiner les performances de Project Online. 
+ **[Régler les performances de Project Online](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c)**: utilisez cet article pour affiner les performances de Project Online.

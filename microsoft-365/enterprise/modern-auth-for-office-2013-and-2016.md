@@ -25,12 +25,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d’authentification moderne De Microsoft 365 fonctionnent différemment pour les applications clientes Office 2013 et 2016.
-ms.openlocfilehash: 62aa04e295c2734d705f22bd2f62c6bc5e622426
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3e402f5786a72f3703ab4a1a77df688176f7de61
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690174"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921665"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Fonctionnement de l’authentification moderne pour les applications clientes Office 2013, Office 2016 et Office 2019
 
@@ -62,10 +62,10 @@ Pour activer l'authentification moderne pour les appareils exécutant Windows (p
   
 |**Clé de Registre**|**Type**|**Valeur** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
   
-Lisez [comment utiliser l’authentification moderne (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=785431) avec Skype Entreprise pour en savoir plus sur son fonctionnement avec Skype Entreprise. 
+Lisez [comment utiliser l’authentification moderne (ADAL)](./hybrid-modern-auth-overview.md) avec Skype Entreprise pour en savoir plus sur son fonctionnement avec Skype Entreprise. 
   
 Les clients Office 2016 et Office 2019 prendre en charge l’authentification moderne par défaut, et aucune action n’est nécessaire pour que le client utilise ces nouveaux flux. Toutefois, une action explicite est nécessaire pour utiliser l’authentification héritée.
   
@@ -118,20 +118,20 @@ Le tableau suivant décrit le comportement d’authentification pour les applica
   
 |Version de l’application cliente Office****|Clé de Registre présente ?*****|Authentification moderne sur ?****|Comportement de l’authentification moderne pour le client****|Comportement d’authentification avec l’authentification moderne désactivée pour le client (par défaut)****|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2019  <br/> |Non ou EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant De connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant de connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |
-|Office 2019  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant De connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant De connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |
+|Office 2019  <br/> |Non ou EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant de connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant de connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |
+|Office 2019  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant de connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant de connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |
 |Office 2019  <br/> |Oui, EnableADAL = 0  <br/> |Non  <br/> |Assistant de signature Microsoft Online uniquement.  <br/> |Assistant de signature Microsoft Online uniquement.  <br/> |
-|Office 2016  <br/> |Non ou EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant De connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant De connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |
-|Office 2016  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant De connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant De connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |
+|Office 2016  <br/> |Non ou EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant de connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant de connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |
+|Office 2016  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant de connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant de connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |
 |Office 2016  <br/> |Oui, EnableADAL = 0  <br/> |Non  <br/> |Assistant de signature Microsoft Online uniquement.  <br/> |Assistant de signature Microsoft Online uniquement.  <br/> |
 |Office 2013  <br/> |Non  <br/> |Non  <br/> |Assistant de signature Microsoft Online uniquement.  <br/> |Assistant de signature Microsoft Online uniquement.  <br/> |
-|Office 2013  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant De connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |Assistant de signature Microsoft Online uniquement.  <br/> |
+|Office 2013  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant de connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque les clients Skype Entreprise Online ne sont pas activés.  <br/> |Assistant de signature Microsoft Online uniquement.  <br/> |
    
 ## <a name="see-also"></a>Voir aussi
 
-[Activer l’Authentification moderne pour Office 2013 sur les appareils Windows](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
+[Activer l’Authentification moderne pour Office 2013 sur les appareils Windows](../admin/security-and-compliance/enable-modern-authentication.md)
 
-[Authentification multifacteur pour Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
+[Authentification multifacteur pour Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 
 [Connectez-vous à Microsoft 365 avec l’authentification multifacteur](https://support.microsoft.com/office/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
 

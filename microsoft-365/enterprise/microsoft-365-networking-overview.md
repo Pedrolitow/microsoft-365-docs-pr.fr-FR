@@ -16,13 +16,13 @@ ms.collection:
 - m365initiative-coredeploy
 f1.keywords:
 - NOCSH
-description: Explique pourquoi l’optimisation du réseau est importante pour les services SaaS, l’objectif de la mise en réseau Microsoft 365 et comment SaaS requiert un réseau différent des autres charges de travail.
-ms.openlocfilehash: 50137e507021a6b6d26468a8a299c35a613a065a
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+description: Explique pourquoi l’optimisation du réseau est importante pour les services SaaS, l’objectif de la mise en réseau Microsoft 365 et comment SaaS nécessite une mise en réseau différente des autres charges de travail.
+ms.openlocfilehash: d1a2b79f6e4042b97ec5a31d0ff92175baa1218e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456398"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923181"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Vue d’ensemble de la connectivité réseau Microsoft 365
 
@@ -36,7 +36,7 @@ Dans cet article, vous allez découvrir les objectifs de la mise en réseau Micr
 
 L’objectif ultime de la mise en réseau Microsoft 365 est d’optimiser l’expérience utilisateur final en permettant l’accès le moins restrictif entre les clients et les points de terminaison Microsoft 365 les plus proches. La qualité de l’expérience de l’utilisateur final est directement liée aux performances et à la réactivité de l’application que l’utilisateur utilise. Par exemple, Microsoft Teams s’appuie sur une faible latence pour que les appels téléphoniques, les conférences et les collaborations à l’écran partagé soient sans problème, et Outlook s’appuie sur une excellente connectivité réseau pour les fonctionnalités de recherche instantanée qui tirent parti de l’indexation côté serveur et des fonctionnalités d’IA.
 
-L’objectif principal dans la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les ordinateurs clients et le réseau mondial microsoft, la dorsale principale du réseau public de Microsoft qui interconnecte tous les centres de données Microsoft avec une faible latence et des points d’entrée d’application cloud haute disponibilité répartis dans le monde entier. Si vous souhaitez en savoir plus sur le réseau mondial de Microsoft, consultez l’article [Comment Microsoft construit son réseau mondial rapide et fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+L’objectif principal dans la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les ordinateurs clients et le réseau global Microsoft, la dorsale principale du réseau public de Microsoft qui interconnecte tous les centres de données Microsoft avec une faible latence et des points d’entrée d’application cloud haute disponibilité répartis dans le monde entier. Si vous souhaitez en savoir plus sur le réseau mondial de Microsoft, consultez l’article [Comment Microsoft construit son réseau mondial rapide et fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 L’optimisation des performances réseau de Microsoft 365 n’a pas besoin d’être compliquée. Vous pouvez obtenir les meilleures performances possibles en suivant quelques principes clés :
 
@@ -58,13 +58,13 @@ Nous facilitez l’identification du trafic réseau Microsoft 365 et la gestion 
 
 - Nouvelles catégories de points de terminaison réseau pour différencier le trafic réseau hautement critique du trafic réseau qui n’est pas impacté par les latentes Internet. Il n’existe qu’une poignée d’URL et d’adresses IP de prise en charge dans la catégorie « Optimiser » la plus critique.
 - Services Web pour l’utilisation des scripts ou la configuration directe des appareils et la gestion des changements de l’identification réseau Microsoft 365. Les modifications sont disponibles à partir du service web, au format RSS ou sur le courrier électronique à l’aide d’un modèle Microsoft Flow.
-- Programme partenaire réseau [Office 365](https://aka.ms/Office365NPP) avec des partenaires Microsoft qui fournissent des appareils ou des services qui suivent les principes de connectivité réseau de Microsoft 365 et ont une configuration simple.
+- [Programme partenaire réseau Office 365](./microsoft-365-networking-partner-program.md) avec des partenaires Microsoft qui fournissent des appareils ou des services qui suivent les principes de connectivité réseau de Microsoft 365 et ont une configuration simple.
 
 ## <a name="securing-microsoft-365-connections"></a>Sécurisation des connexions Microsoft 365
 
 L’objectif de la sécurité réseau traditionnelle est de renforcer le périmètre du réseau de l’entreprise contre les intrusions et les logiciels malveillants. La plupart des réseaux d’entreprise appliquent la sécurité réseau pour le trafic Internet à l’aide de technologies telles que les serveurs proxy, les pare-feu, les coupures et inspections SSL, l’inspection approfondie des paquets et les systèmes de protection contre la perte de données. Ces technologies fournissent une atténuation importante des risques pour les demandes Internet génériques, mais peuvent réduire considérablement les performances, l’évolutivité et la qualité de l’expérience de l’utilisateur final lorsqu’elles sont appliquées aux points de terminaison Microsoft 365.
 
-Microsoft 365 permet de répondre aux besoins de votre organisation en matière de sécurité du contenu et de conformité de l’utilisation des données avec les fonctionnalités de sécurité et de gouvernance intégrées conçues spécifiquement pour les fonctionnalités et charges de travail Microsoft 365. Pour plus d’informations sur la sécurité et la conformité de Microsoft 365, voir la feuille de route de sécurité [Office 365.](https://docs.microsoft.com/office365/securitycompliance/security-roadmap) Pour plus d’informations sur les recommandations de Microsoft et la position de prise en charge sur les solutions réseau avancées qui effectuent un traitement de niveau avancé sur le trafic Microsoft 365, voir Utilisation de périphériques réseau tiers ou de solutions sur le trafic [Office 365.](https://support.microsoft.com/help/2690045)
+Microsoft 365 permet de répondre aux besoins de votre organisation en matière de sécurité du contenu et de conformité de l’utilisation des données avec les fonctionnalités de sécurité et de gouvernance intégrées conçues spécifiquement pour les fonctionnalités et charges de travail Microsoft 365. Pour plus d’informations sur la sécurité et la conformité de Microsoft 365, consultez la feuille de route de sécurité [Office 365.](/office365/securitycompliance/security-roadmap) Pour plus d’informations sur les recommandations de Microsoft et la position de prise en charge sur les solutions réseau avancées qui effectuent un traitement de niveau avancé sur le trafic Microsoft 365, voir Utilisation de périphériques réseau tiers ou de solutions sur le trafic [Office 365.](https://support.microsoft.com/help/2690045)
 
 ## <a name="why-is-microsoft-365-networking-different"></a>Pourquoi la mise en réseau Microsoft 365 est-elle différente ?
 

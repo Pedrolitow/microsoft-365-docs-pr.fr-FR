@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a5a1384208141a42459c009952f89d18498cc21e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 4cffbe1a531af05bebaed74811c0e3be08775751
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287924"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921275"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’examen et de la réponse automatisés dans Microsoft Defender pour Office 365
 
@@ -66,10 +66,10 @@ Une fois l’examen racine terminé, le manuel fournit la liste des actions reco
 Ensuite, plusieurs étapes d’examen et de recherche des menaces sont exécutées :
 
 - Des messages électroniques similaires sont identifiés via des recherches de cluster de messagerie.
-- Le signal est partagé avec d’autres plateformes, telles [que Microsoft Defender pour le point de terminaison.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- Le signal est partagé avec d’autres plateformes, telles que [Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - Il est déterminé si des utilisateurs ont cliqué sur des liens malveillants dans des messages électroniques suspects.
 - Une vérification est effectuée dans Exchange Online Protection[(EOP)](exchange-online-protection-overview.md)et ([Microsoft Defender pour Office 365](office-365-atp.md)) pour voir s’il existe d’autres messages similaires signalés par les utilisateurs.
-- Une vérification est effectuée pour voir si un utilisateur a été compromis. Cette vérification exploite les signaux dans Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)et Azure Active [Directory,](https://docs.microsoft.com/azure/active-directory)en corrélant les anomalies liées à l’activité des utilisateurs.
+- Une vérification est effectuée pour voir si un utilisateur a été compromis. Cette vérification exploite les signaux dans Office 365, [Microsoft Cloud App Security](/cloud-app-security)et Azure Active [Directory,](/azure/active-directory)en corrélant les anomalies liées à l’activité des utilisateurs.
 
 Pendant la phase de chasse, les risques et les menaces sont affectés à différentes étapes de recherche.
 
@@ -81,17 +81,17 @@ Outre les enquêtes automatisées déclenchées par une alerte, l’équipe des 
 
 Par exemple, supposons que vous utilisez la vue **Programmes** malveillants dans l’Explorateur. En utilisant les onglets sous le graphique, sélectionnez **l’onglet Courrier** électronique. Si vous sélectionnez un ou plusieurs éléments dans la liste, le **bouton + Actions** s’active.
 
-![Explorateur avec les messages sélectionnés](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![Explorateur avec des messages sélectionnés](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 À **l’aide du** menu Actions, vous pouvez sélectionner **Examen déclencheur.**
 
 ![Menu Actions pour les messages sélectionnés](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
-Comme pour les playbooks déclenchés par une alerte, les enquêtes automatiques déclenchées à partir d’un affichage dans l’Explorateur incluent une enquête racine, des étapes pour identifier et corréler les menaces, ainsi que des actions recommandées pour atténuer ces menaces.
+Comme pour les playbooks déclenchés par une alerte, les enquêtes automatiques déclenchées à partir d’un affichage dans l’Explorateur incluent un examen racine, des étapes pour identifier et corréler les menaces, ainsi que des actions recommandées pour atténuer ces menaces.
 
 ## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Exemple : une équipe des opérations de sécurité intègre AIR à son SIEM à l’aide de l’API Activité de gestion Office 365
 
-Les fonctionnalités AIR de Microsoft Defender pour Office 365 incluent des rapports & détails que les équipes des [opérations](air-view-investigation-results.md) de sécurité peuvent utiliser pour surveiller et traiter les menaces. Toutefois, vous pouvez également intégrer des fonctionnalités AIR à d’autres solutions. Il peut s’agir par exemple d’un système de gestion des événements et des informations de sécurité (SIEM), d’un système de gestion des cas ou d’une solution de création de rapports personnalisée. Ces types d’intégrations peuvent être effectués à l’aide de l’API Activité de gestion [Office 365.](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
+Les fonctionnalités AIR de Microsoft Defender pour Office 365 incluent des rapports & détails que les équipes des [opérations](air-view-investigation-results.md) de sécurité peuvent utiliser pour surveiller et traiter les menaces. Toutefois, vous pouvez également intégrer des fonctionnalités AIR à d’autres solutions. Il peut s’agir par exemple d’un système de gestion des événements et des informations de sécurité (SIEM), d’un système de gestion des cas ou d’une solution de création de rapports personnalisée. Ces types d’intégrations peuvent être effectués à l’aide de l’API Activité de gestion [Office 365.](/office/office-365-management-api/office-365-management-activity-api-reference)
 
 Par exemple, récemment, une organisation a mis en place un moyen pour son équipe des opérations de sécurité d’afficher les alertes de hameçonnage signalées par l’utilisateur qui ont déjà été traitées par AIR. Sa solution intègre des alertes pertinentes au serveur SIEM de l’organisation et à son système de gestion des cas. La solution réduit considérablement le nombre de faux positifs afin que l’équipe des opérations de sécurité puisse concentrer son temps et ses efforts sur les menaces réelles. Pour en savoir plus sur cette solution personnalisée, consultez le blog de la communauté technique : Améliorer l’efficacité de votre SOC avec Microsoft Defender pour Office 365 et l’API de gestion [O365.](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)
 

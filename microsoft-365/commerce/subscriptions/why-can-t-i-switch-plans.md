@@ -24,30 +24,30 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprendre les raisons pour lesquelles le changement d’plan doit parfois être effectué manuellement ou en appelant le support.
-ms.openlocfilehash: 8e217ad59e6436641af3b2f0151a760da5239839
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d13b7290f4b5f9aede7406cf76ee60cac262c814
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646750"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922267"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Pourquoi ne puis-je pas changer d’offre Microsoft 365 pour les entreprises ?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> Cet article s’applique à l’ancien centre d’administration. Pour afficher l’article sur le Centre d’administration (prévisualisation), voir [Pourquoi ne puis-je pas](upgrade-to-different-plan.md#why-cant-i-upgrade-plans)mettre à niveau les plans ? L’aperçu est disponible pour tous les administrateurs Microsoft 365. Vous pouvez y choisir en sélectionnant Essayer le basculement d’aperçu situé en haut de la page d’accueil.  Pour plus d’informations, voir [À propos du nouveau Centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Cet article s’applique à l’ancien centre d’administration. Pour afficher l’article sur le Centre [d’administration](upgrade-to-different-plan.md#why-cant-i-upgrade-plans)(prévisualisation), voir Pourquoi ne puis-je pas mettre à niveau les plans ? L’aperçu est disponible pour tous les administrateurs Microsoft 365. Vous pouvez y choisir en sélectionnant Essayer le basculement d’aperçu situé en haut de la page d’accueil.  Pour plus d’informations, voir [À propos du nouveau Centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 Si vous ne voyez pas le bouton Changer **de plan,** votre plan ne peut pas être changé automatiquement. Dans certains cas, vous pourrez résoudre le problème de manière à pouvoir utiliser le bouton **Changer de plan**, ou éventuellement [changer de plan manuellement](switch-plans-manually.md). Placez la souris sur l'icône d'informations pour afficher un message qui explique pourquoi le bouton **Changer de plan** n'est pas disponible. Utilisez les informations de cet article pour résoudre le problème.
   
 ::: moniker range="o365-worldwide"
 
- **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../buy-another-subscription.md)  |  [Annuler votre abonnement](cancel-your-subscription.md)  |  [Abonnements et facturation](../index.yml)  |  [Appeler le support](../../admin/contact-support-for-business-products.md)
+ **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../try-or-buy-microsoft-365.md)  |  [Annuler votre abonnement](cancel-your-subscription.md)  |  [Abonnements et facturation](../index.yml)  |  [Appeler le support](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../buy-another-subscription.md)  |  [Annuler votre abonnement](cancel-your-subscription.md)  |  [Abonnements et facturation](../index.yml)  |  [Appeler le support](../../admin/contact-support-for-business-products.md)
+ **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../try-or-buy-microsoft-365.md)  |  [Annuler votre abonnement](cancel-your-subscription.md)  |  [Abonnements et facturation](../index.yml)  |  [Appeler le support](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
@@ -84,13 +84,13 @@ Pour changer d'offre automatiquement à l'aide du bouton **Changer de plan**, de
 
 ::: moniker range="o365-worldwide"
 
-Pour voir s’il existe des problèmes d’approvisionnement ou d’état du  service, dans le centre d’administration, rendez-vous sur la <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">page</a> État du service ou sélectionnez l’état d’état du \> **service d’état.**
+Pour voir s’il existe des problèmes d’approvisionnement ou d’état du  service, dans le centre d’administration, rendez-vous sur la <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">page</a> État du service ou sélectionnez État du service \> **de santé.**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Pour voir s’il existe des problèmes d’approvisionnement ou d’état du service, dans  le Centre d’administration Microsoft 365, rendez-vous sur la page État du <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">service</a> ou sélectionnez État du \> **service de santé.**
+Pour voir s’il existe des problèmes d’approvisionnement ou d’état du service, dans  le Centre d’administration Microsoft 365, rendez-vous sur la page État du <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">service</a> ou sélectionnez l’état d’état du \> **service de santé.**
 
 ::: moniker-end
 
@@ -124,7 +124,7 @@ Vous pouvez également appeler [le support technique](../../admin/contact-suppor
   
 ### <a name="you-have-a-government-or-non-profit-plan"></a>Vous avez une offre destinée au secteur public ou aux organismes à but non lucratif
 
-Si vous avez un plan public ou à but non lucratif, vous pouvez changer [d’plan](switch-plans-manually.md) manuellement ou appeler [le support technique](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
+Si vous avez un plan public ou à but non lucratif, vous pouvez changer [d’plan](switch-plans-manually.md) manuellement ou appeler le [support technique](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
   
 ### <a name="3000-or-more-licenses-have-been-purchased-and-assigned-for-the-subscription"></a>3 000 licences ou davantage ont été achetées et attribuées pour l'abonnement
 

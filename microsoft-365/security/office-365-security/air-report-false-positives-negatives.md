@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 8a91a55d9598b5e780474315ddf1f7019e593fed
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 755be1dde256bc612ba85e1b1af485cfaacf7da9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406161"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921863"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités automatisées d’examen et de réponse
 
@@ -53,9 +53,9 @@ Vous pouvez également [soumettre un fichier à Microsoft pour analyse des progr
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajuster une alerte pour éviter que les faux positifs ne se répètent
 
-Si une alerte est déclenchée par un usage légitime ou si l’alerte est inexacte, vous pouvez gérer les [alertes](https://docs.microsoft.com/cloud-app-security/managing-alerts)dans le portail Cloud App Security .
+Si une alerte est déclenchée par un usage légitime ou si l’alerte est inexacte, vous pouvez gérer les [alertes](/cloud-app-security/managing-alerts)dans le portail Cloud App Security .
 
-Si votre organisation utilise Microsoft Defender pour [endpoint](https://docs.microsoft.com/windows/security/threat-protection) en plus d’Office 365 et qu’un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sécurisé, vous pouvez créer un indicateur personnalisé avec une [action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)« Autoriser » pour votre appareil.
+Si votre organisation utilise Microsoft Defender pour [endpoint](/windows/security/threat-protection) en plus d’Office 365 et qu’un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sécurisé, vous pouvez créer un indicateur personnalisé avec une [action](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)« Autoriser » pour votre appareil.
 
 ## <a name="undo-a-remediation-action"></a>Annuler une action de correction
 
@@ -66,9 +66,9 @@ Dans la plupart des cas, si une action corrective a été prise sur un message �
 
 ### <a name="undo-an-action-using-threat-explorer"></a>Annuler une action à l’aide de l’Explorateur de menaces
 
-Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peut trouver un message électronique affecté par une action et éventuellement annuler l’action.
+Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peut rechercher un message électronique affecté par une action et éventuellement annuler l’action.
 
-|Scénario|Options d’annuler|En savoir plus|
+|Scénario|Options d’annuler|Si vous souhaitez en savoir plus|
 |---|---|---|
 |Un message électronique a été acheminé vers le dossier Courrier indésirable d’un utilisateur|- Déplacer le message vers le dossier Éléments supprimés de l’utilisateur<br/>- Déplacer le message vers la boîte de réception de l’utilisateur<br/>- Supprimer le message|[Rechercher et examiner les e-mails malveillants qui ont été remis dans Office 365](investigate-malicious-email-that-was-delivered.md)|
 |Un message électronique ou un fichier a été mis en quarantaine|- Libérer le courrier électronique ou le fichier<br/>- Supprimer le courrier électronique ou le fichier|[Gérer les messages mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md)|

@@ -21,12 +21,12 @@ description: Découvrez comment utiliser les fonctionnalités d’alertes dans l
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d4c92a0bccded461d272d84e0f5b4d06a3b44713
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9a360db1a0e9216befd63e710facb55f9f3e4a6b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287088"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921840"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Alertes dans le Centre de sécurité & conformité
 
@@ -36,7 +36,7 @@ ms.locfileid: "50287088"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 
-Utilisez les fonctionnalités des alertes dans le Centre de sécurité & conformité pour afficher et gérer les alertes pour votre organisation, y compris la gestion des alertes avancées dans le cadre de la vue d’ensemble de [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
+Utilisez les fonctionnalités des alertes dans le Centre de sécurité & conformité pour afficher et gérer les alertes pour votre organisation, y compris la gestion des alertes avancées dans le cadre de la vue d’ensemble de [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
 ## <a name="how-to-get-to-the-alerts-features"></a>Comment obtenir les fonctionnalités d’alertes
 
@@ -69,5 +69,5 @@ Le tableau suivant décrit les outils disponibles sous **Alertes** dans le Centr
 |Outil|Description|
 |---|---|
 |[Gérer les alertes](../../compliance/create-activity-alerts.md)|Utilisez les alertes d’activité pour envoyer des notifications par courrier électronique à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Microsoft 365. Les alertes d’activité sont similaires à la recherche d’événements dans le journal d’audit, sauf qu’un message électronique vous est envoyé lorsqu’un événement pour qui vous avez créé une alerte se produit.|
-|[Gérer les alertes avancées](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Utilisez la fonctionnalité Gérer les alertes avancées de Microsoft 365 Cloud App Security pour configurer des **stratégies** qui peuvent vous alerter sur les activités suspectes et anormales dans Microsoft 365. Une fois que vous êtes alerté, vous pouvez examiner les situations potentiellement problématiques et, si nécessaire, prendre des mesures pour résoudre les problèmes de sécurité.|
+|[Gérer les alertes avancées](/cloud-app-security/what-is-cloud-app-security)|Utilisez la fonctionnalité Gérer les alertes avancées de Microsoft 365 Cloud App Security pour configurer des **stratégies** qui peuvent vous alerter sur les activités suspectes et anormales dans Microsoft 365. Une fois que vous êtes alerté, vous pouvez examiner les situations potentiellement problématiques et, si nécessaire, prendre des mesures pour résoudre les problèmes de sécurité.|
 |

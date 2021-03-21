@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Cet article contient des liens vers des informations sur la planification, les tests et la migration du réseau vers Office 365.
-ms.openlocfilehash: 2b08b05b8863fd9351510878f9438264bb2999f5
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 99bcc1bd0447b192860fc0bcc67fc18d87c2d5fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948447"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923587"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
 
@@ -36,9 +36,9 @@ Cet article contient des liens vers des informations sur la planification et les
   
 Avant de déployer pour la première fois ou de migrer vers Office 365, vous pouvez utiliser les informations de ces rubriques pour estimer la bande passante dont vous avez besoin, puis pour tester et vérifier que vous avez suffisamment de bande passante pour déployer ou migrer vers Office 365.
 
-Cet article fait partie de la planification [réseau et de l’optimisation des performances pour Office 365.](https://aka.ms/tune)
+Cet article fait partie de la planification [réseau et de l’optimisation des performances pour Office 365.](./network-planning-and-performance.md)
 
-Pour obtenir la procédure d’optimisation de votre réseau pour Microsoft 365 et d’autres plateformes et services cloud Microsoft, voir l’affiche Mise en réseau cloud Microsoft pour les architectes [d’entreprise.](https://aka.ms/cloudarchnetworking)
+Pour obtenir la procédure d’optimisation de votre réseau pour Microsoft 365 et d’autres plateformes et services cloud Microsoft, voir l’affiche Mise en réseau [cloud Microsoft](../solutions/cloud-architecture-models.md) pour les architectes d’entreprise.
    
 ## <a name="estimate-network-bandwidth-requirements"></a>Estimer les besoins en bande passante réseau
 <a name="EstimateBandwidthRequirements"> </a>
@@ -51,14 +51,14 @@ Pour estimer la bande passante, utilisez les étapes suivantes :
     
 2. Déterminez les services et fonctionnalités Office 365 que les clients pourront utiliser. Vous aurez probablement des groupes de personnes avec différents services ou profils d’utilisation.
     
-3. Mesurer l’utilisation du réseau pour un groupe pilote de clients. Assurez-vous que les clients pilotes sont représentatifs des différents profils des membres de l’organisation ainsi que des différents emplacements géographiques. Vous pouvez vérifier vos résultats par rapport à nos anciennes [](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) calculatrices [pour Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) et [Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network) ou à l’étude de cas que nous avons effectuée sur notre propre réseau. 
+3. Mesurer l’utilisation du réseau pour un groupe pilote de clients. Assurez-vous que les clients pilotes sont représentatifs des différents profils des membres de l’organisation ainsi que des différents emplacements géographiques. Vous pouvez vérifier vos résultats par rapport à nos anciennes [](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) calculatrices pour [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) et [Microsoft Teams](/microsoftteams/prepare-network) ou à l’étude de cas que nous avons effectuée sur notre propre réseau. 
     
 4. Utilisez les mesures du groupe pilote pour extrapoler les besoins de l’ensemble de l’organisation et re-tester pour valider les estimations avant d’apporter des modifications à votre réseau.
     
 ## <a name="test-your-existing-network"></a>Tester votre réseau existant
 <a name="calculators"> </a>
 
- **Outils réseau.** Testez et validez votre bande passante Internet pour déterminer les contraintes de téléchargement, de chargement et de latence. Ces outils vous aideront à déterminer les fonctionnalités de votre réseau pour la migration, ainsi qu’après le déploiement complet. 
+ **Outils réseau.** Testez et validez votre bande passante Internet pour déterminer les contraintes de téléchargement, de chargement et de latence. Ces outils vous aideront à déterminer les fonctionnalités de votre réseau pour la migration, ainsi qu’une fois que vous avez été entièrement déployé. 
     
 - [Analyseur de connectivité à distance Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=517243): teste la connectivité dans votre environnement Exchange Online.
     
@@ -69,11 +69,11 @@ Pour estimer la bande passante, utilisez les étapes suivantes :
 
 Approfondissez ces meilleures pratiques pour plus d’informations sur l’amélioration de votre expérience Office 365.
   
-1. Vous souhaitez commencer à aider vos utilisateurs immédiatement ? Consultez les meilleures pratiques d’utilisation [d’Office 365](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) sur un réseau lent pour obtenir des conseils sur l’utilisation d’Office 365, notamment SharePoint Online, Exchange Online et Lync Online, lorsque votre réseau n’est pas en train de s’en délationr. Cet article propose des liens vers des chargements de contenu sur TechNet et Support.office.com pour optimiser votre expérience Office 365 et inclut des informations sur les méthodes simples de personnalisation de vos pages web et la définition de vos paramètres Internet Explorer pour une expérience Office 365 optimisée. 
+1. Vous souhaitez commencer à aider vos utilisateurs immédiatement ? Consultez les meilleures pratiques d’utilisation [d’Office 365](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) sur un réseau lent pour obtenir des conseils sur l’utilisation d’Office 365, notamment SharePoint Online, Exchange Online et Lync Online, lorsque votre réseau n’est pas en train de s’en délationr. Cet article propose des liens vers des chargements de contenu sur TechNet et Support.office.com pour optimiser votre expérience Office 365 et inclut des informations sur les méthodes simples de personnalisation de vos pages web et la définition de vos paramètres Internet Explorer pour optimiser l’expérience Office 365. 
     
-2. Lisez les principes de connectivité réseau [d’Office 365](https://aka.ms/o365networkingprinciples) pour comprendre les principes de connectivité pour gérer en toute sécurité le trafic Office 365 et obtenir les meilleures performances possibles. Cet article vous aidera à mieux comprendre les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Office 365. 
+2. Lisez les principes de connectivité réseau [d’Office 365](./microsoft-365-network-connectivity-principles.md) pour comprendre les principes de connectivité pour gérer en toute sécurité le trafic Office 365 et obtenir les meilleures performances possibles. Cet article vous aidera à mieux comprendre les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Office 365. 
     
-3. Améliorez les performances de migration de messagerie en gérant soigneusement la planification des mises à jour Windows. Vous pouvez mettre à jour vos ordinateurs clients par lots et vous assurer que tous les ordinateurs clients sont mis à jour avant la migration vers Office 365 pour contrôler l’utilisation de la bande passante réseau. Pour plus d’informations, voir Mettre à jour et configurer manuellement les [bureaux pour Office 365](https://support.microsoft.com/gp/office-2013-365-update)pour les dernières mises à jour.
+3. Améliorez les performances de migration de messagerie en gérant soigneusement la planification des mises à jour Windows. Vous pouvez mettre à jour vos ordinateurs clients par lots et vous assurer que tous les ordinateurs clients sont mis à jour avant la migration vers Office 365 pour contrôler l’utilisation de la bande passante réseau. Pour plus d’informations, voir Mise à jour manuelle et configuration des [bureaux pour Office 365](https://support.microsoft.com/gp/office-2013-365-update)pour les dernières mises à jour.
     
 4. Le trafic réseau Office 365 est plus performant lorsqu’il est traité comme un service Internet approuvé et autorisé à contourner une grande partie du filtrage et de l’analyse traditionnels que certaines organisations placent sur le trafic réseau vers des services Internet non fiables. Cela inclut généralement la suppression du traitement sortant tel que l’authentification des utilisateurs proxy et l’inspection des paquets, ainsi que la garantie d’une sortie locale vers Internet avec la traduction d’adresses réseau (NAT) appropriée et une capacité de bande passante suffisante pour gérer les demandes réseau accrues. Reportez-vous à La gestion des points de terminaison [Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)pour obtenir des instructions supplémentaires sur la configuration de votre réseau pour gérer Office 365 en tant que service Internet approuvé sur votre réseau.
     
@@ -102,9 +102,9 @@ Ces rubriques contiennent des informations de référence détaillées sur le r�
     
 - [Prise en charge du protocole IPv6 dans les services Office 365](ipv6-support.md)
     
-- [Principes de connectivité réseau Office 365](https://aka.ms/o365networkingprinciples)
+- [Principes de connectivité réseau Office 365](./microsoft-365-network-connectivity-principles.md)
     
-- [Forum aux questions (FAQ) sur le réseau vidéo Office 365](office-365-video-networking-faq.md)
+- [Forum aux questions (FAQ) sur la mise en réseau vidéo Office 365](office-365-video-networking-faq.md)
     
 - [Planifier les périphériques réseau qui se connectent aux services Office 365](plan-for-network-devices.md)
     

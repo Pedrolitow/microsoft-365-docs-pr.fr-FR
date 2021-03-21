@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment gérer des éléments partiellement indexés (également appelés éléments non indexés) à partir d’Exchange, SharePoint et OneDrive Entreprise au sein de votre organisation.
-ms.openlocfilehash: 6a2a1d042c52a445538903fd7db9fc54305e6c13
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 5d30c0f7c6ae77236ba7fd9f2dbfcc7a0397ae21
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655448"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922578"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Recherche d’éléments partiellement indexés dans eDiscovery
 
@@ -85,7 +85,7 @@ Lorsque vous exportez des résultats de recherche eDiscovery ou un rapport de re
 > [!NOTE]
 > Le fichier Items.csv non Items.csv contient également des champs **nommés Type d’erreur** et **Message d’erreur.** Il s’agit de champs hérités qui  contiennent  des informations similaires aux informations des champs Balises d’erreur et Propriétés d’erreur, mais avec des informations moins détaillées. Vous pouvez ignorer ces champs hérités en toute sécurité.
   
-## <a name="errors-related-to-partially-indexed-items"></a>Erreurs liées à des éléments partiellement indexés
+## <a name="errors-related-to-partially-indexed-items"></a>Erreurs liées aux éléments partiellement indexés
 
 Les balises d’erreur sont composés de deux éléments d’information, l’erreur et le type de fichier. Par exemple, dans cette paire erreur/type de fichier :
 
@@ -106,9 +106,9 @@ Voici une liste des erreurs d’indexation et une description de la cause possib
 | `indexingtruncated` <br/> |Lors de l’écriture du message électronique traitée dans l’index, l’une des propriétés indexables était trop grande et a été tronquée. Les propriétés tronquées sont répertoriées dans le champ Propriétés d’erreur.  <br/> |
 | `invalidunicode` <br/> |Un message électronique contenait du texte qui n’a pas pu être traitée en tant qu’Unicode valide. L’indexation de cet élément peut être incomplète.  <br/> |
 | `parserencrypted` <br/> |Le contenu de la pièce jointe ou du message électronique est chiffré et Microsoft 365 n’a pas pu décoder le contenu.  <br/> |
-| `parsererror` <br/> |Une erreur inconnue s’est produite lors de l’échantillonnage. Cela résulte généralement d’un bogue logiciel ou d’un incident de service.  <br/> |
+| `parsererror` <br/> |Une erreur inconnue s’est produite lors de l’échantillonnage. Cela est généralement le résultat d’un bogue logiciel ou d’un incident de service.  <br/> |
 | `parserinputsize` <br/> |Une pièce jointe était trop volumineuse pour que l’outil d’outil de l’outil de recherche gère cette pièce jointe, et l’utilisation de cette pièce jointe n’a pas eu lieu ou n’a pas été achevée.  <br/> |
-| `parsermalformed` <br/> |Une pièce jointe a été malformée et n’a pas pu être gérée par l’outil d’enquête. Ce résultat peut être dû à d’anciens formats de fichiers, à des fichiers créés par des logiciels incompatibles ou à des virus qui prétendent être autre chose que revendiqués.  <br/> |
+| `parsermalformed` <br/> |Une pièce jointe a été malformée et n’a pas pu être gérée par l’outil d’outils d’enquête. Ce résultat peut être dû à d’anciens formats de fichiers, à des fichiers créés par des logiciels incompatibles ou à des virus qui prétendent être autre chose que revendiqués.  <br/> |
 | `parseroutputsize` <br/> |La sortie de l’utilisation d’une pièce jointe était trop volumineuse et devait être tronquée.  <br/> |
 | `parserunknowntype` <br/> |Une pièce jointe avait un type de fichier que Microsoft 365 n’a pas pu détecter.  <br/> |
 | `parserunsupportedtype` <br/> |Une pièce jointe avait un type de fichier qu’Office 365 pouvait détecter, mais l’examen de ce type de fichier n’est pas pris en charge.  <br/> |
@@ -116,7 +116,7 @@ Voici une liste des erreurs d’indexation et une description de la cause possib
 | `retrieverrms` <br/> |Le récupérateur de contenu n’a pas pu décoder un message protégé par RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Trop de mots ont été identifiés dans le document lors de l’indexation. Le traitement de la propriété s’est arrêté lorsque la limite est atteinte et la propriété est tronquée.  <br/> |
 
-Les champs d’erreur décrivent les champs affectés par l’erreur de traitement répertoriée dans le champ Balises d’erreur. Si vous recherchez une propriété telle que ou , les erreurs dans le corps du message n’auront pas d’impact sur les résultats  `subject`  `participants` de votre recherche. Cela peut être utile lors de la détermination des éléments partiellement indexés que vous devrez peut-être examiner plus en détail.
+Les champs d’erreur décrivent les champs affectés par l’erreur de traitement répertoriée dans le champ Balises d’erreur. Si vous recherchez une propriété telle que ou , les erreurs dans le corps du message n’auront pas  `subject`  `participants` d’impact sur les résultats de votre recherche. Cela peut être utile lors de la détermination des éléments partiellement indexés que vous devrez peut-être examiner plus en détail.
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Utilisation d’un script PowerShell pour déterminer l’exposition de votre organisation aux éléments de courrier partiellement indexés
 
@@ -167,7 +167,7 @@ Les étapes suivantes vous montrent comment exécuter un script PowerShell qui r
      }
    ```
 
-2. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/exchange-online-powershell).
 
 3. Dans le Centre de sécurité & conformité PowerShell, allez dans le dossier où vous avez enregistré le script à l’étape 1, puis exécutez le script . par exemple :
 

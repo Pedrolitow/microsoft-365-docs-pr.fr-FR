@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8e06d4b4f7c895b532091c73e8269411fb38bf21
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 0fbe8751a9f82a8e264f1a38207744d091b57474
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931001"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922185"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Vue d’ensemble des API Microsoft 365 Defender
 
@@ -42,13 +42,13 @@ Microsoft 365 Defender repose sur une plateforme prête à l’intégration.
 
 Utilisez les API Microsoft 365 Defender pour automatiser les flux de travail en fonction de l’incident partagé et des tables de recherche avancées.
 
-- **[File d’attente d’incidents combinés](api-incident.md)** : concentrez-vous sur ce qui est critique en groupant l’étendue d’attaque complète et toutes les ressources impactées sous l’API d’incident.
+- **[File d’attente d’incidents combinés](api-incident.md)** : concentrez-vous sur les éléments critiques en groupant l’étendue d’attaque complète et tous les biens touchés ensemble sous l’API d’incident.
 
 - Recherche de menaces entre produits : tirez parti des connaissances organisationnelles de votre équipe de sécurité pour chercher des signes de compromission, en créant vos propres requêtes personnalisées pour passer en **[arrière-plan](api-advanced-hunting.md)** les données brutes collectées dans plusieurs produits de protection.
 
 En plus de ces API propres à Microsoft 365 [](api-articles.md) Defender, chacun de nos autres produits de sécurité expose des API supplémentaires pour vous aider à tirer parti de leurs fonctionnalités uniques.
 
-## <a name="learn-more"></a>En savoir plus
+## <a name="learn-more"></a>Si vous souhaitez en savoir plus
 
 | **Comprendre comment accéder aux API** |
 |-|
@@ -61,5 +61,5 @@ En plus de ces API propres à Microsoft 365 [](api-articles.md) Defender, chacun
 | [Créer une application avec un accès partenaire multi-locataire aux API Microsoft 365 Defender](api-partner-access.md) |
 | **Résoudre les problèmes et gérer vos applications** |
 | [Comprendre les codes d’erreur de l’API](api-error-codes.md) |
-| [Gérer les secrets dans vos applications avec Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) |
-| [Implémenter l’autorisation OAuth 2.0 pour la signature utilisateur](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
+| [Gérer les secrets dans vos applications avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [Implémenter l’autorisation OAuth 2.0 pour la signature utilisateur](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

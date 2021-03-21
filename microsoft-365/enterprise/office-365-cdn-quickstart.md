@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Démarrage rapide du réseau de distribution de contenu (CDN) Office 365
-ms.openlocfilehash: e541b2ea63a69644de22329c45bd6963749964f7
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 3539ad1f11b27c60b5641976ae66a1480ef4be98
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456410"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921593"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Démarrage rapide du réseau de distribution de contenu (CDN) Office 365
 
@@ -39,7 +39,7 @@ Pour obtenir des instructions plus détaillées, voir Utiliser le réseau de dis
 
 Vous pouvez utiliser l’extension de navigateur de l’outil Diagnostic de page pour SharePoint pour lister facilement les ressources dans vos pages SharePoint Online qui peuvent être **ajoutées** à une origine cdN.
 
-L’outil Diagnostic de page pour **SharePoint** est une extension de navigateur pour les nouveaux navigateurs Microsoft Edge (et Chrome qui analyse à la fois le portail moderne SharePoint Online et les pages de site de publication https://www.microsoft.com/edge) classiques). L’outil fournit un rapport pour chaque page analysée montrant comment la page se comporte par rapport à un ensemble défini de critères de performance. Pour installer et découvrir l’outil Diagnostic de page pour SharePoint, consultez [Utiliser l’outil Diagnostic de page pour SharePoint Online](https://aka.ms/perftool).
+L’outil Diagnostic de page pour **SharePoint** est une extension de navigateur pour les nouveaux navigateurs Microsoft Edge ( et Chrome, qui analyse à la fois le portail moderne SharePoint Online et les pages de site de publication https://www.microsoft.com/edge) classiques. L’outil fournit un rapport pour chaque page analysée montrant comment la page se comporte par rapport à un ensemble défini de critères de performance. Pour installer et découvrir l’outil Diagnostic de page pour SharePoint, consultez [Utiliser l’outil Diagnostic de page pour SharePoint Online](./page-diagnostics-for-spo.md).
 
 Lorsque vous exécutez l’outil Diagnostic de page pour SharePoint sur une page SharePoint Online, vous pouvez cliquer sur l’onglet Tests de **diagnostic** pour voir la liste des ressources qui ne sont pas hébergées par le CDN. Ces ressources sont répertoriées sous l’en-tête Réseau de distribution de contenu **(CDN),** comme illustré dans la capture d’écran ci-dessous.
 
@@ -50,7 +50,7 @@ Lorsque vous exécutez l’outil Diagnostic de page pour SharePoint sur une page
 
 ## <a name="cdn-overview"></a>Vue d’ensemble du CDN
 
-Le CDN Office 365 est conçu pour optimiser les performances pour les utilisateurs en distribuant des objets fréquemment utilisés tels que des images et des fichiers javascript sur un réseau global haut débit, ce qui réduit le temps de chargement des pages et permet d’accéder aux objets hébergés aussi près que possible de l’utilisateur. Le CDN récupère vos ressources à partir d’un emplacement appelé _origine._ Une origine peut être un site SharePoint, une bibliothèque de documents ou un dossier accessible par une URL.
+Le CDN Office 365 est conçu pour optimiser les performances pour les utilisateurs en distribuant des objets fréquemment utilisés tels que des images et des fichiers javascript sur un réseau global à haut débit, en réduisant le temps de chargement des pages et en fournissant l’accès aux objets hébergés aussi près que possible de l’utilisateur. Le CDN récupère vos ressources à partir d’un emplacement appelé _origine._ Une origine peut être un site SharePoint, une bibliothèque de documents ou un dossier accessible par une URL.
 
 Le CDN Office 365 est séparé en deux types de base :
 
@@ -82,12 +82,12 @@ La sortie de ces cmdlets doit ressembler à ce qui suit :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utiliser l’outil Diagnostic de page pour SharePoint Online](https://aka.ms/perftool)
+[Utiliser l’outil Diagnostic de page pour SharePoint Online](./page-diagnostics-for-spo.md)
 
 [Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
-[Réseaux de distribution de contenu](https://aka.ms/o365cdns)
+[Réseaux de distribution de contenu](./content-delivery-networks.md)
 
-[Planification réseau et optimisation des performances pour Office 365](https://aka.ms/tune)
+[Planification réseau et optimisation des performances pour Office 365](./network-planning-and-performance.md)
 
 [Série de performances SharePoint - Série de vidéos sur le CDN Office 365](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

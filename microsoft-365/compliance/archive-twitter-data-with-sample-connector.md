@@ -15,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur natif pour importer des données Twitter dans Microsoft 365.
-ms.openlocfilehash: 5b35259985664ac47b9d1f6265c8ca4282a4cd31
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 277af8ea7367936c4c9528a8ca50ccd678745bf6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790062"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922256"
 ---
-# <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Configurer un connecteur pour archiver des données Twitter (aperçu)
+# <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Configurer un connecteur pour archiver les données Twitter (aperçu)
 
 Utilisez un connecteur dans le Centre de conformité Microsoft 365 pour importer et archiver des données de Twitter vers Microsoft 365. Après avoir configuré et configuré le connecteur, il se connecte au compte Twitter de votre organisation (de manière programmée), convertit le contenu d’un élément au format de message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 
@@ -47,7 +47,7 @@ Remplissez les conditions préalables suivantes avant de pouvoir configurer un c
 
 - Le connecteur Twitter peut importer un total de 200 000 éléments en une seule journée. S’il y a plus de 200 000 éléments Twitter par jour, aucun de ces éléments ne sera importé dans Microsoft 365.
 
-- L’utilisateur qui définit le connecteur Twitter dans le Centre de conformité Microsoft 365 (à l’étape 5) doit se voir attribuer le rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+- L’utilisateur qui définit le connecteur Twitter dans le Centre de conformité Microsoft 365 (à l’étape 5) doit se voir attribuer le rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Étape 1 : Créer une application dans Azure Active Directory
 
@@ -97,7 +97,7 @@ Pour obtenir des instructions détaillées, voir [Créer l’application Twitter
 
 - Jeton d’accès Twitter
 
-- Secret de jeton d’accès Twitter
+- Secret du jeton d’accès Twitter
 
 ## <a name="step-4-configure-the-twitter-connector-app"></a>Étape 4 : Configurer l’application connecteur Twitter
 
@@ -113,7 +113,7 @@ Au cours de cette étape (en suivant les instructions pas à pas), vous fournire
 
 - Jeton d’accès Twitter (obtenu à l’étape 3)
 
-- Secret du jeton d’accès Twitter (obtenu à l’étape 3)
+- Secret de jeton d’accès Twitter (obtenu à l’étape 3)
 
 - ID d’application Azure Active Directory (ID d’application AAD obtenu à l’étape 1)
 

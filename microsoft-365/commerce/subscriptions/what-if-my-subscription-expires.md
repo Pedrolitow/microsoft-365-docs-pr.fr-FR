@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Découvrez ce qu’il advient de vos données lorsque votre abonnement Microsoft 365 Business atteint sa date d’expiration, est désactivé, ou que vous procédez à sa résiliation.
-ms.openlocfilehash: a9e2e68c0eee119126af93552a50f1859f708c1f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 7560e715a9b1951915866f96c8df3bd1f884a475
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741356"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921815"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Business ?
 
 Lorsque votre abonnement se termine (parce qu’il est arrivé à sa date d’expiration ou que vous avez décidé de l’annuler), votre accès aux services, applications et données client Microsoft 365 passent par plusieurs états avant la désactivation complète de l’abonnement ou sa *suppression*. En connaissance de cette progression, vous aurez toutes les cartes en main pour réactiver votre abonnement avant qu’il ne soit trop tard, ou si vous ne souhaitez plus utiliser Microsoft 365, pour sauvegarder vos données avant leur suppression finale.
 
-Veuillez consulter ces informations essentielles avant de contacter le [service clientèle de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+Veuillez consulter ces informations essentielles avant de contacter le [service clientèle de Microsoft 365](../../admin/contact-support-for-business-products.md).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Qu’arrive-t-il à mes données à l’expiration de mon abonnement ?
 
@@ -51,7 +51,7 @@ Le tableau suivant explique ce à quoi vous pouvez vous attendre à l'expiration
 * Valable sur la plupart des offres, des pays et régions.
   
 > [!NOTE]
-> **Qu'est-ce que les « données client » ?** Les données client, telles que définies dans les [Conditions d'utilisation du service en ligne Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613649), représentent toutes les données, y compris les fichiers texte, audio et image, qui sont fournis à Microsoft par le client, ou pour le compte du client, au cours de l'utilisation des services Microsoft 365 par le client. Pour en savoir plus sur la protection des données client, consultez la rubrique [Prise en main du portail d’approbation de services de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
+> **Qu'est-ce que les « données client » ?** Les données client, telles que définies dans les [Conditions d'utilisation du service en ligne Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613649), représentent toutes les données, y compris les fichiers texte, audio et image, qui sont fournis à Microsoft par le client, ou pour le compte du client, au cours de l'utilisation des services Microsoft 365 par le client. Pour en savoir plus sur la protection des données client, consultez la rubrique [Prise en main du portail d’approbation de services de Microsoft](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Que se passe-t-il si j’annule un abonnement ?
 
@@ -210,13 +210,13 @@ Les administrateurs et les utilisateurs n’ont plus accès aux services ou aux 
 
 ::: moniker range="o365-worldwide"
 
-- **Acheter Microsoft 365.** Quand votre version d'évaluation arrive à expiration, elle entre dans une période de grâce. Celle-ci vous offre un délai supplémentaire de 30 jours (pour la plupart des versions d'évaluation et dans la plupart des pays et régions) pour acheter Microsoft 365. Pour plus d'informations sur la conversion de votre version d'évaluation en abonnement payant, consultez la rubrique [Acheter une version d'évaluation de Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md).
+- **Acheter Microsoft 365.** Quand votre version d'évaluation arrive à expiration, elle entre dans une période de grâce. Celle-ci vous offre un délai supplémentaire de 30 jours (pour la plupart des versions d'évaluation et dans la plupart des pays et régions) pour acheter Microsoft 365. Pour plus d'informations sur la conversion de votre version d'évaluation en abonnement payant, consultez la rubrique [Acheter une version d'évaluation de Microsoft 365 for business](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- **Acheter Microsoft 365.** Quand votre version d'évaluation arrive à expiration, elle entre dans une période de grâce. Celle-ci vous offre un délai supplémentaire de 30 jours (pour la plupart des versions d'évaluation et dans la plupart des pays et régions) pour acheter Microsoft 365. Pour plus d'informations sur la conversion de votre version d'évaluation en abonnement payant, consultez la rubrique [Acheter une version d'évaluation de Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md).
+- **Acheter Microsoft 365.** Quand votre version d'évaluation arrive à expiration, elle entre dans une période de grâce. Celle-ci vous offre un délai supplémentaire de 30 jours (pour la plupart des versions d'évaluation et dans la plupart des pays et régions) pour acheter Microsoft 365. Pour plus d'informations sur la conversion de votre version d'évaluation en abonnement payant, consultez la rubrique [Acheter une version d'évaluation de Microsoft 365 for business](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
@@ -235,7 +235,6 @@ Les administrateurs et les utilisateurs n’ont plus accès aux services ou aux 
 
 ## <a name="related-content"></a>Contenu connexe 
 
-[Annuler un abonnement](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription)
-[Renouveler Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (article)\
-[Réactiver un abonnement](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (article)
-
+[Annuler un abonnement](./cancel-your-subscription.md)
+[Renouveler Microsoft 365 for business](./renew-your-subscription.md) (article)\
+[Réactiver un abonnement](./reactivate-your-subscription.md) (article)

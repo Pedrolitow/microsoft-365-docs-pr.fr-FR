@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 82f31c449ae2e102ac7464e0fef75277660844d1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 06926bc58f29fcf80d09819545e2455813f27a5f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930953"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922161"
 ---
 # <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Licence et conditions d’utilisation des API Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "49930953"
 
 ## <a name="official-terms"></a>Termes officiels
 
-Les API Microsoft 365 Defender sont régies par la licence et les [conditions d’utilisation](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)des API Microsoft.
+Les API Microsoft 365 Defender sont régies par la licence et les [conditions d’utilisation](/legal/microsoft-apis/terms-of-use)des API Microsoft.
 
 ## <a name="legal-notices"></a>Avis juridiques
 
@@ -48,7 +48,7 @@ Microsoft et tous les collaborateurs vous accordent une licence pour la document
 
 Microsoft, Windows, Microsoft Azure et/ou d’autres produits et services Microsoft référencés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d’autres pays.
 
-Les licences de ce projet ne vous accordent pas le droit d’utiliser des noms, des logos ou des marques Microsoft. Microsoft’s general trademark guidelines can be found at [Microsoft Trademarks](https://go.microsoft.com/fwlink/?LinkID=254653).
+Les licences pour ce projet ne vous accordent pas le droit d’utiliser des noms, des logos ou des marques Microsoft. Microsoft’s general trademark guidelines can be found at [Microsoft Trademarks](https://go.microsoft.com/fwlink/?LinkID=254653).
 
 Les informations de confidentialité sont disponibles sur le site [Confidentialité de Microsoft.](https://privacy.microsoft.com)
 
@@ -56,7 +56,7 @@ Microsoft et tous les collaborateurs se réservent tous les autres droits, que c
 
 ## <a name="other-restrictions"></a>Autres restrictions
 
-L’API de recherche avancée présente certaines limitations sur le nombre de résultats [renvoyés](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api#limitations) et sur les données qui peuvent être interrogés.
+L’API de recherche avancée présente certaines limitations sur le nombre de résultats [renvoyés](/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api#limitations) et sur les données qui peuvent être interrogés.
 
 1. Vous ne pouvez interroger que les données des 30 derniers jours.
 1. Les résultats incluent un maximum de 100 000 lignes.

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.topic: conceptual
 author: samanro
 ms.author: samanro
-ms.openlocfilehash: 0a211b26041d87c3087eab5631fea67a14601cf2
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 07f406a0470c1cdf64ed4dd2b4acee3b793a8a15
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688732"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922423"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Guide de navigation de la documentation Microsoft 365
 
@@ -22,7 +22,7 @@ Cette rubrique fournit quelques conseils et astuces pour naviguer dans l’espac
 
 ## <a name="hub-page"></a>Page hub
 
-La page hub Microsoft 365 est le point d’entrée pour la recherche de contenu [https://aka.ms/microsoft365docs](https://aka.ms/microsoft365docs) Microsoft 365 pertinent.
+La page hub Microsoft 365 est le point d’entrée pour la recherche de contenu [https://aka.ms/microsoft365docs](./index.yml) Microsoft 365 pertinent.
 
 Vous pouvez toujours revenir à cette page en sélectionnant **Microsoft 365** dans l’en-tête en haut de chaque page de l’ensemble de documentation technique Microsoft 365 :
 
@@ -62,7 +62,7 @@ Le volet de navigation de droite vous permet d’accéder rapidement aux section
 
 ## <a name="submit-docs-feedback"></a>Envoyer des commentaires sur les documents
 
-Si vous trouvez un problème dans un article, vous pouvez envoyer des commentaires à l’équipe de contenu SQL pour cet article en faisant défiler vers le bas jusqu’au bas de la page et en sélectionnant commentaires sur le **contenu.**
+Si vous trouvez un problème dans un article, vous pouvez envoyer des commentaires à l’équipe de contenu SQL pour cet article en faisant défiler vers le bas de la page et en sélectionnant commentaires sur le **contenu.**
 
 ![Commentaires sur le contenu git](media/m365-article-feedback.png)
 
@@ -70,7 +70,7 @@ Si vous trouvez un problème dans un article, vous pouvez envoyer des commentair
 
 Savez-vous que vous pouvez modifier le contenu sur docs.microsoft.com vous-même ? Si vous le faites, non seulement notre documentation s’améliorera, mais vous serez également crédité en tant que collaborateur de la page. Pour commencer, voir :
 
-- [Guide de collaborateur Microsoft Docs](https://docs.microsoft.com/contribute/)
+- [Guide de collaborateur Microsoft Docs](/contribute/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

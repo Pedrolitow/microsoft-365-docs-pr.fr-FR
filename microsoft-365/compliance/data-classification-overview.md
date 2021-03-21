@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999394"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922678"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Connaissez vos données : vue d’ensemble de la classification des données
 
@@ -37,7 +37,7 @@ En tant qu'administrateur Microsoft 365 ou administrateur de conformité, vous p
 
 Vous pouvez également gérer ces fonctionnalités sur la page classification de données :
 - [classifieurs avec capacité d’apprentissage](classifier-learn-about.md)
-- [types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
+- [types d’informations sensibles](./sensitive-information-type-entity-definitions.md)
 
 Vous trouverez la classification des données dans le **Centre de conformité Microsoft 365** ou le **Centre de sécurité Microsoft 365** > **Classification** > **Classification de données**.
 
@@ -49,7 +49,7 @@ La classification de données analyse votre contenu sensible et le contenu étiq
 
 ## <a name="prerequisites"></a>Configuration requise
 
-Un certain nombre d’abonnements différents prennent en charge le DLP du Point de Terminaison. Pour afficher les options d’acquisition de la licence du DLP du Point de Terminaison, consultez [ Acquisition de la licence de Protection de l’Information à titre indicatif](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
+Un certain nombre d’abonnements différents prennent en charge le DLP du Point de Terminaison. Pour afficher les options d’acquisition de la licence du DLP du Point de Terminaison, consultez [ Acquisition de la licence de Protection de l’Information à titre indicatif](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
 ### <a name="permissions"></a>Autorisations
 
@@ -97,7 +97,7 @@ La carte d’étiquette de confidentialité affiche le nombre d’éléments (ad
 
 > [!NOTE]
 > Si vous n’avez pas créé ou publié d’étiquettes de confidentialité ou si aucune étiquette de confidentialité n’a été appliquée à votre contenu, cette carte affiche le message « Aucune étiquette de confidentialité détectée ». Pour commencer à utiliser les étiquettes de confidentialité, voir :
->- [Commencez avec les étiquettes de sensibilité](get-started-with-sensitivity-labels.md) ou pour AIP [Configurer la politique de protection des informations sur Azure](https://docs.microsoft.com/azure/information-protection/configure-policy)
+>- [Commencez avec les étiquettes de sensibilité](get-started-with-sensitivity-labels.md) ou pour AIP [Configurer la politique de protection des informations sur Azure](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Principales étiquettes de rétention appliquées au contenu
 

@@ -1,7 +1,7 @@
 ---
 title: Applications dans le Bureau géré Microsoft
 description: Explique comment les applications sont gérées, notamment comment les packager, les déployer et les prendre en charge.
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 20d68ec007ccda82816ad2288428016019f6d4b2
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: ea0990e5f30aa45ec48bb2e6a7c957c187c74ebb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840692"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922943"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le Bureau géré Microsoft
 
@@ -31,7 +31,7 @@ Vous pouvez également déployer d’autres applications non Microsoft pour vos 
 
 ## <a name="apps-provided-by-microsoft"></a>Applications fournies par Microsoft
 
-Les versions 64 bits des applications de la suite Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Entreprise et OneNote sont incluses dans votre licence Bureau géré Microsoft). Les versions « Exécuter en un clic  » de Microsoft Project et Visio ne sont pas incluses par défaut, mais vous pouvez les demander à être ajoutées. Pour plus d’informations sur ces applications, voir Installer Microsoft Project ou [Microsoft Visio sur les appareils de bureau géré Microsoft.](../get-started/project-visio.md)
+Les versions 64 bits des applications de la suite Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Entreprise et OneNote) sont incluses dans votre licence Bureau géré Microsoft. Les versions « Exécuter en un clic  » de Microsoft Project et Visio ne sont pas incluses par défaut, mais vous pouvez les demander à être ajoutées. Pour plus d’informations sur ces applications, voir Installer Microsoft Project ou [Microsoft Visio sur les appareils de bureau géré Microsoft.](../get-started/project-visio.md)
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Ce que Microsoft fait pour prendre en charge les applications que nous fournissons
 
@@ -41,7 +41,7 @@ Microsoft fournit un service complet pour le déploiement, la mise à jour et la
 
 Il existe encore certaines choses que vous devez faire avec ces applications :
 
-- **Attribuer des licences** : vous êtes responsable de l’obtention et de l’attribution des licences appropriées aux utilisateurs pour Microsoft 365 Apps for enterprise.
+- **Attribuer des licences** : vous êtes responsable de l’obtention et de l’attribution des licences appropriées aux utilisateurs de Microsoft 365 Apps for enterprise.
 - **Ajouter des utilisateurs** à des groupes de sécurité : si vous utilisez Microsoft Project ou Visio, votre administrateur informatique doit ajouter ces utilisateurs aux groupes de déploiement appropriés. Les administrateurs informatiques sont également chargés de récupérer les licences de ces utilisateurs s’ils quittent l’entreprise.
 - Déployer des modules de développement microsoft **365** : si vous avez besoin de modules de développement pour l’une des applications Microsoft 365 Apps pour entreprise, déployez-les de manière centralisée comme n’importe quelle autre application Windows 32. 
 
@@ -55,8 +55,8 @@ Si vous déployez actuellement vos applications à l’aide de Microsoft Endpoin
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Préparation de vos propres applications pour l’inclusion dans Le Bureau géré Microsoft
 Examinez vos applications, en vérifiant :
 
-- Aucune des applications n’est interdite ou n’a un comportement restreint, comme décrit dans les exigences de [l’application Bureau géré Microsoft.](https://aka.ms/app-req)
-- Les applications doivent être prêtes pour la gestion par Microsoft Intune. Pour plus d’informations sur cette rubrique, voir Déploiement d’applications Windows 10 à l’aide [de Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) et Ajouter des applications à Microsoft [Intune.](https://docs.microsoft.com/intune/apps-add)
+- Aucune des applications n’est interdite ou n’a un comportement restreint, comme décrit dans les exigences de [l’application Bureau géré Microsoft.](../service-description/mmd-app-requirements.md)
+- Les applications doivent être prêtes pour la gestion par Microsoft Intune. Pour plus d’informations sur cette rubrique, voir Déploiement d’applications Windows 10 à l’aide [de Microsoft Intune](/intune/apps-windows-10-app-deploy) et Ajouter des applications à Microsoft [Intune.](/intune/apps-add)
 - Autres conditions préalables à l’empaquetage, telles que la fourniture de clés de licence, l’accord avec les termes du contrat de licence et la configuration préalable des connexions au serveur.
 
 ### <a name="decide-how-to-package-apps"></a>Décider comment mettre en package des applications
@@ -75,5 +75,3 @@ Il existe trois options pour empaquetér vos applications :
 ## <a name="deploying-apps"></a>Déploiement d’applications
 
 Quelle que soit la méthode que vous utilisez pour empaqueté des applications, une fois que vous avez terminé, vous êtes prêt à suivre les étapes de déploiement des applications sur les appareils de bureau géré [Microsoft.](../get-started/deploy-apps.md)
-
-

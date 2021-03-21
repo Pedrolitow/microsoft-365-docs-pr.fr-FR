@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2eb8b984550f301af9d99e738f6db4623aa2cc86
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 8bfc53d46bdcb91c16e9f4a1ddbc8ab3f6dfb47e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769105"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922025"
 ---
 # <a name="deploy-apps-to-devices"></a>Déployer les applications sur les appareils
 Une partie de l’intégration au Bureau géré Microsoft inclut l’ajout et le déploiement d’applications sur les appareils de vos utilisateurs. Une fois que vous utilisez le portail Bureau géré Microsoft, vous pouvez ajouter et déployer vos applications. 
@@ -33,7 +33,7 @@ Vous pouvez ajouter des applications [Win32,](#lob-apps)basées sur Windows MSI 
 
 ###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Applications Win32 ou Windows MSI pour bureau géré Microsoft
 
-Vous pouvez ajouter vos applications métier au portail Bureau géré Microsoft. Pour plus d’informations sur les conditions requises pour les applications installées sur les appareils de bureau géré Microsoft, consultez les conditions requises pour les applications de bureau [géré Microsoft.](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements)
+Vous pouvez ajouter vos applications métier au portail Bureau géré Microsoft. Pour plus d’informations sur les conditions requises pour les applications installées sur les appareils de bureau géré Microsoft, consultez les conditions requises pour les applications de bureau [géré Microsoft.](../service-description/mmd-app-requirements.md)
 
 Dans cette procédure, vous allez sélectionner le type d’application que vous souhaitez ajouter, puis configurer et charger la source de l’application. 
 
@@ -44,9 +44,9 @@ Vous pouvez vous connectez au portail Bureau géré Microsoft ou vous connectez 
 1.    Connectez-vous au [portail d’administration du bureau géré Microsoft.](https://aka.ms/mmdportal) 
 2.    Sous **Inventaire,** sélectionnez **Applications.**
 3.    Dans la charge de travail applications, sélectionnez **Ajouter.**
-4.    Dans **Ajouter une application,** sélectionnez **l’application** métier ou l’application **Windows (Win32).**
-    - Si vous avez sélectionné une application **métier,** voir Ajouter une application métier Windows à [Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) pour obtenir des instructions sur l’ajout et la configuration d’applications métier.
-    - Si vous avez sélectionné **l’application Windows (Win32),** voir Gestion des applications [Win32](https://docs.microsoft.com/intune/apps-win32-app-management) pour obtenir des instructions sur l’ajout et la configuration d’applications Windows.
+4.    Dans **Ajouter une application,** sélectionnez **application** métier ou application **Windows (Win32).**
+    - Si vous avez sélectionné une application **métier,** voir Ajouter une application métier Windows à [Microsoft Intune](/intune/lob-apps-windows) pour obtenir des instructions sur l’ajout et la configuration d’applications métier.
+    - Si vous avez sélectionné **l’application Windows (Win32),** voir Gestion des applications [Win32](/intune/apps-win32-app-management) pour obtenir des instructions sur l’ajout et la configuration d’applications Windows.
 
 <span id="msfb-apps">
 
@@ -75,12 +75,12 @@ Si vous ne vous êtes pas inscrit au Microsoft Store pour Entreprises, vous pouv
 
 ## <a name="step-2-create-azure-ad-groups"></a>Étape 2 : Créer des groupes Azure AD
 
-Créez trois groupes Azure AD pour chaque application. Ce tableau décrit les groupes dont vous aurez besoin (disponible, obligatoire et désinstallation). 
+Créez trois groupes Azure AD pour chaque application. Ce tableau présente les groupes dont vous aurez besoin (disponible, obligatoire et désinstallé). 
 
 Type d’affectation d’application |    Utilisation de groupe    | Exemple de nom Azure AD
 --- | --- | ---
 Available |  L’application sera disponible à partir de l’application ou du site web Portail d’entreprise. | MMD – *nom de l’application* – Disponible
-Obligatoire |  L’application est installée sur les appareils des groupes sélectionnés. | MMD – *nom de l’application* – Obligatoire
+Requis |  L’application est installée sur les appareils des groupes sélectionnés. | MMD – *nom de l’application* – Obligatoire
 Uninstall |  L’application est désinstallée des appareils des groupes sélectionnés. | MMD – *nom de l’application* – Désinstaller
 
 Ajoutez vos utilisateurs à ces groupes pour rendre l’application disponible, installer l’application ou supprimer l’application de son appareil Bureau géré Microsoft. 

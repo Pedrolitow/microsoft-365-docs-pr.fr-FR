@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 42ff665e8ba9c369e29eeeafd27affff04b40966
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 033826a7f82278f6e36b422284a1076cba57d584
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841338"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921977"
 ---
 # <a name="new-microsoft-edge-app"></a>Nouvelle application Microsoft Edge
 
@@ -23,17 +23,17 @@ Le nouveau [navigateur Microsoft Edge offre](https://www.microsoft.com/edge) des
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
-Pour migrer vos appareils de bureau géré Microsoft vers le nouveau navigateur Microsoft Edge, déposez un ticket de support informatique via le portail Bureau géré Microsoft. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de se tenir en attente.
+Pour migrer vos appareils de bureau géré Microsoft vers le nouveau navigateur Microsoft Edge, déposez un ticket de support informatique via le portail Bureau géré Microsoft. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de conserver.
 
-Le [canal bêta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Bureau géré Microsoft déploie l’application selon les besoins des groupes Test et First Afin que tous ces utilisateurs utilisent le canal bêta en plus du canal stable. Pour tous les autres utilisateurs qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe Utilisateurs bêta de l’espace de travail moderne **- Edge** et installez-le à partir du portail d’entreprise.
+Le [canal bêta](/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Bureau géré Microsoft déploie l’application selon les besoins des groupes Test et First afin que tous ces utilisateurs utilisent le canal bêta en plus du canal stable. Pour tous les autres utilisateurs qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe Utilisateurs bêta de l’espace de travail moderne **- Edge** et installez-le à partir du portail d’entreprise.
 
 ## <a name="updates-to-microsoft-edge"></a>Mises à jour de Microsoft Edge
 
-Bureau géré Microsoft déploie le canal [stable](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) de Microsoft Edge, qui est mis à jour automatiquement toutes les six semaines environ. Les mises à jour sur [](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) le canal stable sont déployées progressivement par le groupe de produits Microsoft Edge afin de garantir la meilleure expérience pour les clients. 
+Bureau géré Microsoft déploie le canal [stable](/deployedge/microsoft-edge-channels#stable-channel) de Microsoft Edge, qui est mis à jour automatiquement toutes les six semaines environ. Les mises à jour sur [](/deployedge/microsoft-edge-update-progressive-rollout) le canal stable sont déployées progressivement par le groupe de produits Microsoft Edge afin de garantir la meilleure expérience pour les clients. 
 
-Le [canal bêta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) est déployé sur les appareils des groupes Test et First pour une validation représentative au sein de l’organisation. Ce canal est entièrement pris en charge et est mis à jour automatiquement avec de nouvelles fonctionnalités environ toutes les six semaines.
+Le [canal bêta](/deployedge/microsoft-edge-channels#beta-channel) est déployé sur les appareils des groupes Test et First pour une validation représentative au sein de l’organisation. Ce canal est entièrement pris en charge et est mis à jour automatiquement avec de nouvelles fonctionnalités environ toutes les six semaines.
 
-Pour vous assurer que Microsoft Edge est mis à jour correctement, ne modifiez pas les stratégies de mise [à](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)jour de Microsoft Edge.
+Pour vous assurer que Microsoft Edge est mis à jour correctement, ne modifiez pas les stratégies de mise [à](/deployedge/microsoft-edge-update-policies)jour de Microsoft Edge.
 
 
 
@@ -96,7 +96,7 @@ Nous vous déconseillons de désactiver ce paramètre, car cela permettrait aux 
 
 **Valeur par défaut :** Désactivé
 
-Nous vous déconseillons d’utiliser Flash en raison des risques de sécurité associés. Si vous avez encore des processus qui dépendent de Flash, définissez la stratégie **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** pour activer Flash pour les sites qui en ont besoin. Si vous ne pouvez pas gérer une liste autorisée de sites pour utiliser Flash, déposez une demande de modification pour modifier la valeur sur **Click to Play**, ce qui permet aux utilisateurs de choisir quand il convient d’exécuter Flash.
+Nous vous déconseillons d’utiliser Flash en raison des risques de sécurité associés. Si vous avez encore des processus qui dépendent de Flash, définissez la stratégie **[PluginsAllowedForUrls](/deployedge/microsoft-edge-policies#pluginsallowedforurls)** pour activer Flash pour les sites qui en ont besoin. Si vous ne pouvez pas gérer une liste autorisée de sites pour utiliser Flash, déposez une demande de modification pour modifier la valeur sur **Click to Play**, ce qui permet aux utilisateurs de choisir quand il convient d’exécuter Flash.
 
 ### <a name="password-manager"></a>Gestionnaire de mots de passe
 
@@ -117,7 +117,7 @@ Bureau géré Microsoft active le mode Internet Explorer pour vos appareils par 
 Par défaut, les appareils sont définies pour utiliser le mode Internet Explorer, mais vous pouvez les configurer pour ouvrir des sites dans une fenêtre Internet Explorer 11 autonome à la place. Pour modifier ce comportement, déposez une demande de support.
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Ajouter des sites à la liste des sites en mode Entreprise
-Pour que les sites s’ouvrent en mode Internet Explorer, vous devez les inclure dans la liste des [sites d’entreprise.](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist) Il vous incombe de gérer et de déployer la liste des sites d’entreprise. Pour plus d’informations, voir [Configurer à l’aide de la stratégie Configurer la liste](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy) des sites en mode Entreprise
+Pour que les sites s’ouvrent en mode Internet Explorer, vous devez les inclure dans la liste des [sites d’entreprise.](/DeployEdge/edge-ie-mode-sitelist) Il vous incombe de gérer et de déployer la liste des sites d’entreprise. Pour plus d’informations, voir [Configurer à l’aide de la stratégie Configurer la liste](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy) des sites en mode Entreprise
 
 ### <a name="other-settings"></a>Autres paramètres
 
@@ -142,7 +142,7 @@ Avec cette stratégie appliquée, l’expérience de première utilisation ignor
 
 ## <a name="settings-you-manage"></a>Paramètres que vous gérez
 
-Vous pouvez déployer tous les paramètres Microsoft Edge qui n’ont pas été précédemment décrits à l’aide du profil Modèles d’administration dans Microsoft Intune. Pour plus d’informations, voir Configurer les paramètres de stratégie [Microsoft Edge avec Microsoft Intune.](https://docs.microsoft.com/deployedge/configure-edge-with-intune) Si vous souhaitez évaluer une stratégie qui n’est pas actuellement incluse dans les modèles d’administration Microsoft Edge dans Intune, vous pouvez utiliser des paramètres personnalisés pour les appareils Windows 10 dans Intune.
+Vous pouvez déployer tous les paramètres Microsoft Edge qui n’ont pas été précédemment décrits à l’aide du profil Modèles d’administration dans Microsoft Intune. Pour plus d’informations, voir Configurer les paramètres de stratégie [Microsoft Edge avec Microsoft Intune.](/deployedge/configure-edge-with-intune) Si vous souhaitez évaluer une stratégie qui n’est pas actuellement incluse dans les modèles d’administration Microsoft Edge dans Intune, vous pouvez utiliser des paramètres personnalisés pour les appareils Windows 10 dans Intune.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Activation d’extensions Chrome spécifiques
 
@@ -152,15 +152,14 @@ Le modèle d’administration offre un paramètre pour déployer des extensions 
 
 Vous pouvez également utiliser le modèle d’administration pour configurer Microsoft Edge afin d’installer les extensions sans avertir l’utilisateur. Vous pouvez le trouver dans Configuration ordinateur > Extensions > Microsoft Edge > contrôler les **extensions installées en mode silencieux.**
 
-### <a name="microsoft-edge-update-policies"></a>Stratégies de mise à jour de Microsoft Edge
-Pour vous assurer que Microsoft Edge est mis à jour correctement, ne modifiez pas les stratégies de mise [à](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)jour de Microsoft Edge.
+### <a name="microsoft-edge-update-policies"></a>Stratégies de mise à jour De Microsoft Edge
+Pour vous assurer que Microsoft Edge est mis à jour correctement, ne modifiez pas les stratégies de mise [à](/deployedge/microsoft-edge-update-policies)jour de Microsoft Edge.
 
 ### <a name="other-common-enterprise-policies"></a>Autres stratégies d’entreprise courantes
 
 Microsoft Edge offre de nombreuses autres stratégies. Voici quelques-unes des plus courantes :
  
-- [Configurer des sites sur la liste des sites d’entreprise et le mode IE](https://docs.microsoft.com/deployedge/edge-ie-mode-sitelist)
-- [Configurer les paramètres de démarrage, de page d’accueil et de page nouvel onglet](https://docs.microsoft.com/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
-- [Configurer le paramètre du jeu](https://docs.microsoft.com/deployedge/microsoft-edge-policies#allowsurfgame)
-- [Configurer les paramètres du serveur proxy](https://docs.microsoft.com/deployedge/microsoft-edge-policies#proxy-server)
-
+- [Configurer des sites sur la liste des sites d’entreprise et le mode IE](/deployedge/edge-ie-mode-sitelist)
+- [Configurer les paramètres de démarrage, de page d’accueil et de page nouvel onglet](/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
+- [Configurer le paramètre du jeu](/deployedge/microsoft-edge-policies#allowsurfgame)
+- [Configurer les paramètres du serveur proxy](/deployedge/microsoft-edge-policies#proxy-server)
