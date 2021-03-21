@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: 4a7c2a18ae5d4f275210ddeaea90eb1bb9bc1f16
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2feb03f2142639a1c1de4ff9a69768e23f282546
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846987"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924223"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -43,7 +43,7 @@ Ce problème s'est aggravé depuis plusieurs années, avec de nombreux clients q
 
 La crise mondiale de grippe COVID-19 a aggravé ce problème et exige des mesures correctives immédiates. La nécessité d'assurer la sécurité des employés a généré des demandes sans précédent en matière de technologies de l'information pour prendre en charge la productivité du travail à domicile à une échelle massive. Microsoft Office 365 est bien placé pour aider les clients à répondre à cette demande, mais la forte concurrence des utilisateurs travaillant à domicile génère un volume important de trafic Office 365 qui, s’il est acheminé via un tunnel forcé VPN et des périmètres réseau locaux, entraîne une saturation rapide et exécute l’infrastructure VPN hors capacité. Dans cette nouvelle réalité, l’utilisation du VPN pour accéder à Office 365 n’est plus seulement un obstacle aux performances, mais un mur dur qui non seulement a un impact sur Office 365, mais également sur les opérations d’entreprise critiques qui doivent encore s’appuyer sur le VPN pour fonctionner.
 
-Microsoft travaille en étroite collaboration avec des clients et une grande industrie depuis de nombreuses années afin d’offrir des solutions efficaces et modernes à ces problèmes à partir de nos propres services et de s’adapter aux meilleures pratiques industrielles. Les [principes de connectivité](https://aka.ms/pnc) du service Office 365 ont été conçus pour fonctionner de manière efficace pour les utilisateurs distants tout en permettant à une organisation de maintenir la sécurité et le contrôle de leur connectivité. Ces solutions peuvent également être implémentées très rapidement avec un travail limité, mais ont un impact positif important sur les problèmes décrits ci-dessus.
+Microsoft travaille en étroite collaboration avec des clients et une grande industrie depuis de nombreuses années afin d’offrir des solutions efficaces et modernes à ces problèmes à partir de nos propres services et de s’adapter aux meilleures pratiques industrielles. Les [principes de connectivité](./microsoft-365-network-connectivity-principles.md) du service Office 365 ont été conçus pour fonctionner de manière efficace pour les utilisateurs distants tout en permettant à une organisation de maintenir la sécurité et le contrôle de leur connectivité. Ces solutions peuvent également être implémentées très rapidement avec un travail limité, mais ont un impact positif important sur les problèmes décrits ci-dessus.
 
 La stratégie recommandée par Microsoft pour optimiser la connectivité des travailleurs distants vise à atténuer rapidement les problèmes liés à l'approche classique et à fournir des performances élevées en quelques étapes simples. Ces étapes ajustent l’approche VPN héritée pour un petit nombre de points de terminaison définis qui contournent les serveurs VPN en goulot d’étranglement. Un modèle de sécurité équivalent, voire supérieur, peut être appliqué dans différentes couches pour supprimer la nécessité de sécuriser tout le trafic à la sortie du réseau d’entreprise. Dans la plupart des cas, cela peut être réalisé de façon efficace en quelques heures, et est ensuite évolutif vers d’autres charges de travail en cas de besoin.
 
@@ -99,7 +99,7 @@ Le diagramme ci-dessous montre comment fonctionne la solution tunnel partagé VP
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identifier les points de terminaison à optimiser
 
-Dans la rubrique [URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md), Microsoft identifie clairement les points de terminaison clés dont vous avez besoin pour optimiser et les classer en tant que **Optimiser**. Il n’existe actuellement que quatre URL et vingt sous-réseaux IP qui doivent être optimisés. Ce petit groupe de points de terminaison compte environ 70 à 80 % du volume du trafic vers le service Office 365, y compris les points de terminaison sensibles sur la latence, tels que ceux destinés aux médias Teams. Il s’agit essentiellement du trafic que nous devons prendre en charge de manière particulière et c’est également le trafic qui placera une pression incroyable sur les chemins d’accès réseau traditionnels et l’infrastructure VPN.
+Dans la rubrique [URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md), Microsoft identifie clairement les points de terminaison clés dont vous avez besoin pour optimiser et les classer en tant que **Optimiser**. Il n’existe actuellement que quatre URL et vingt sous-réseaux IP qui doivent être optimisés. Ce petit groupe de points de terminaison compte environ 70 à 80 % du volume du trafic vers le service Office 365, y compris les points de terminaison sensibles sur la latence, tels que ceux destinés aux médias Teams. Il s’agit essentiellement du trafic que nous devons prendre en charge de manière particulière et c’est également le trafic qui met une pression incroyable sur les chemins d’accès réseau traditionnels et l’infrastructure VPN.
 
 Les URL dans cette catégorie présentent les caractéristiques suivantes :
 
@@ -217,7 +217,7 @@ Certains administrateurs peuvent avoir besoin d'informations plus détaillées s
 
 ### <a name="configuration"></a>Configuration
 
-Pour les appels et les réunions, tant que les sous-réseaux IP Optimiser pour les médias Teams sont correctement en place dans la table d’itinéraire, lorsque Teams appelle la fonction [GetBestRoute](https://docs.microsoft.com/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) pour déterminer l’interface locale qui correspond à l’itinéraire qu’il doit utiliser pour une destination particulière, l’interface locale est renvoyée pour les destinations Microsoft dans les blocs IP Microsoft répertoriés ci-dessus.
+Pour les appels et les réunions, tant que les sous-réseaux IP Optimiser pour les médias Teams sont correctement en place dans la table d’itinéraire, lorsque Teams appelle la fonction [GetBestRoute](/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) pour déterminer l’interface locale qui correspond à l’itinéraire qu’il doit utiliser pour une destination particulière, l’interface locale est renvoyée pour les destinations Microsoft dans les blocs IP Microsoft répertoriés ci-dessus.
 
 Certains logiciels clients VPN autorisent la manipulation des itinéraires sur la base de l’URL. Cependant, le trafic médiatique de Teams n'est pas associé à une URL, le contrôle du routage de ce trafic doit donc être effectué à l'aide de sous-réseaux IP.
 
@@ -232,13 +232,13 @@ Le trafic de signalisation est effectué sur HTTPS et n’est pas  aussi sensibl
 
 L’un des arguments courants permettant d’éviter les tunnels partagés est qu’elle est moins sécurisée, par exemple, tout trafic qui n’utilise pas le tunnel VPN ne bénéficiera d’aucune autre méthode de chiffrement appliquée au tunnel VPN, et est donc moins sécurisé.
 
-L’argument de compteur principal permet de faire en sorte que le trafic multimédia soit déjà chiffré via _SRTP (Protocole de transport sécurisé en temps réel)_, un profil de protocole RTP (Protocole de transport en temps réel) qui assure la confidentialité, l’authentification et la protection contre les attaques contre le trafic RTP. SRTP lui-même utilise une clé de session générée de façon aléatoire, qui est échangée via le canal de signalement sécurisé TLS. Celui-ci sont décrites en détail dans [Ce guide de sécurité](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/security-guide-for-skype-for-business-online), mais la section principale est consacrée au chiffrement de médias.
+L’argument de compteur principal permet de faire en sorte que le trafic multimédia soit déjà chiffré via _SRTP (Protocole de transport sécurisé en temps réel)_, un profil de protocole RTP (Protocole de transport en temps réel) qui assure la confidentialité, l’authentification et la protection contre les attaques contre le trafic RTP. SRTP lui-même utilise une clé de session générée de façon aléatoire, qui est échangée via le canal de signalement sécurisé TLS. Celui-ci sont décrites en détail dans [Ce guide de sécurité](/skypeforbusiness/optimizing-your-network/security-guide-for-skype-for-business-online), mais la section principale est consacrée au chiffrement de médias.
 
 Le trafic multimédia est chiffré à l’aide de SRTP, qui utilise une clé de session générée par un générateur de nombres aléatoires sécurisés et échangées à l’aide du canal TLS de signalisation. De plus, le flux de contenu entrant dans les deux directions entre le serveur de médiation et son saut interne suivant est également chiffré à l’aide de SRTP.
 
 Skype Entreprise Online génère les noms d’utilisateur et les mots de passe pour sécuriser l’accès aux relais de contenu par le biais de _Traverser à l’aide de relais autour de NAT (TURN)_. Les relais de média échangent le nom d’utilisateur/mot de passe sur un canal SIP sécurisé par TLS. Il est important de noter que, même si un tunnel VPN peut être utilisé pour connecter le client au réseau d’entreprise, le trafic doit toujours circuler dans sa forme SRTP lorsqu’il quitte le réseau d’entreprise pour atteindre le service.
 
-Les informations sur la façon dont Teams atténue les problèmes de sécurité courants tels que les utilitaires de transmission de la voix ou de _Session pour les attaques d'amplification NAT (STUN)_ peuvent être [trouvées dans cet article](https://docs.microsoft.com/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c).
+Les informations sur la façon dont Teams atténue les problèmes de sécurité courants tels que les utilitaires de transmission de la voix ou de _Session pour les attaques d'amplification NAT (STUN)_ peuvent être [trouvées dans cet article](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c).
 
 Vous pouvez également consulter des informations sur les contrôles de sécurité modernes dans les scénarios de travail à distance sur [Autres méthodes pour les professionnels de la sécurité et l’informatique pour optimiser les contrôles de sécurité modernes dans les scénarios de travail à distance uniques d’aujourd’hui (blog de l’équipe de sécurité Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
 
@@ -266,7 +266,7 @@ Si vous avez besoin de données supplémentaires pour résoudre les problèmes, 
 
 Cette section fournit des liens vers des guides détaillés pour l’implémentation du tunnel partagée pour le trafic Office 365 des partenaires les plus courants dans cet espace. Nous ajouterons des guides à mesure qu’ils seront disponibles.
 
-- **Client VPN Windows 10** : [optimiser le trafic Office 365 pour les travailleurs distants avec le client VPN Windows 10 natif](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Client VPN Windows 10** : [optimiser le trafic Office 365 pour les travailleurs distants avec le client VPN Windows 10 natif](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco AnyConnect**: [Optimiser le tunnel mixte AnyConnect pour Office 365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect** : [optimisation du trafic Office 365 par tunnel VPN fractionné via exclusion d’accès](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM** : [optimiser le trafic Office 365 sur un accès à distance via des réseaux VPN lors de l’utilisation de BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
@@ -280,7 +280,7 @@ L’équipe de sécurité Microsoft a publié un [article](https://www.microsoft
 
 ### <a name="how-do-i-stop-users-accessing-other-tenants-i-do-not-trust-where-they-could-exfiltrate-data"></a>Comment empêcher les utilisateurs d'accéder à d'autres locataires en qui je n'ai pas confiance et où ils pourraient exfiltrer des données ?
 
-La réponse est une [fonctionnalité de appelée restrictions de locataire](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions). Le trafic d'authentification n'est pas très volumineux ni particulièrement sensible à la latence. Il peut donc être envoyé par la solution VPN au proxy sur site où la fonction est appliquée. Une liste d’autorisation des clients de confiance est conservée ici et si le client tente d’obtenir un jeton à un client qui n’est pas approuvé, le proxy refuse simplement la demande. Si le locataire est digne de confiance, un jeton est accessible si l'utilisateur a les informations d'identification et les droits appropriés.
+La réponse est une [fonctionnalité de appelée restrictions de locataire](/azure/active-directory/manage-apps/tenant-restrictions). Le trafic d'authentification n'est pas très volumineux ni particulièrement sensible à la latence. Il peut donc être envoyé par la solution VPN au proxy sur site où la fonction est appliquée. Une liste d’autorisation des clients de confiance est conservée ici et si le client tente d’obtenir un jeton à un client qui n’est pas approuvé, le proxy refuse simplement la demande. Si le locataire est digne de confiance, un jeton est accessible si l'utilisateur a les informations d'identification et les droits appropriés.
 
 Par conséquent, même si un utilisateur peut établir une connexion TCP/UDP aux points de terminaison marqués « Optimiser » ci-dessus, sans qu’un jeton valide puisse accéder au locataire en question, il ne peut pas se connecter et déplacer les données.
 
@@ -290,11 +290,11 @@ Non, ce n’est pas le cas, car les points de terminaison Office 365 ne sont pa
 
 ### <a name="how-do-i-apply-dlp-and-protect-my-sensitive-data-when-the-traffic-no-longer-flows-through-my-on-premises-solution"></a>Comment appliquer le DLP et protéger mes données sensibles lorsque le trafic ne passe plus par ma solution locale ?
 
-Pour vous aider à empêcher la divulgation accidentelle d’informations sensibles, Office 365 offre un ensemble complet d’[outils intégrés](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies). Vous pouvez utiliser les [fonctionnalités DLP](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) intégrées de Teams et de SharePoint pour détecter des informations sensibles stockées ou partagées de manière inappropriée. Si une partie de votre stratégie de travail à distance implique une stratégie BYOD (Bring-your-own-device), vous pouvez utiliser l’accès conditionnel basé sur l’application pour empêcher le téléchargement de données sensibles sur les appareils personnels des utilisateurs [](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)
+Pour vous aider à empêcher la divulgation accidentelle d’informations sensibles, Office 365 offre un ensemble complet d’[outils intégrés](../compliance/data-loss-prevention-policies.md). Vous pouvez utiliser les [fonctionnalités DLP](../compliance/data-loss-prevention-policies.md) intégrées de Teams et de SharePoint pour détecter des informations sensibles stockées ou partagées de manière inappropriée. Si une partie de votre stratégie de travail à distance implique une stratégie BYOD (Bring-your-own-device), vous pouvez utiliser l’accès conditionnel basé sur l’application pour empêcher le téléchargement de données sensibles sur les appareils personnels des utilisateurs [](/azure/active-directory/conditional-access/app-based-conditional-access)
 
 ### <a name="how-do-i-evaluate-and-maintain-control-of-the-users-authentication-when-they-are-connecting-directly"></a>Comment évaluer et maintenir le contrôle de l’authentification de l’utilisateur lorsqu’il se connecte directement ?
 
-En plus de la fonctionnalité restrictions de locataire signalée au T1, les [stratégies d’accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) peuvent être appliquées pour évaluer de façon dynamique le risque d’une demande d’authentification et réagir de façon appropriée. Microsoft recommande le [modèle de confiance zéro](https://www.microsoft.com/security/zero-trust?rtc=1) est implémenté au fil du temps, et nous pouvons utiliser les stratégies d’accès conditionnel Azure AD pour garder le contrôle dans un premier monde mobile et cloud. Les stratégies d'accès conditionnel peuvent être utilisées pour décider en temps réel si une demande d'authentification est acceptée ou non, en fonction de nombreux facteurs tels que :
+En plus de la fonctionnalité restrictions de locataire signalée au T1, les [stratégies d’accès conditionnel](/azure/active-directory/conditional-access/overview) peuvent être appliquées pour évaluer de façon dynamique le risque d’une demande d’authentification et réagir de façon appropriée. Microsoft recommande le [modèle de confiance zéro](https://www.microsoft.com/security/zero-trust?rtc=1) est implémenté au fil du temps, et nous pouvons utiliser les stratégies d’accès conditionnel Azure AD pour garder le contrôle dans un premier monde mobile et cloud. Les stratégies d'accès conditionnel peuvent être utilisées pour décider en temps réel si une demande d'authentification est acceptée ou non, en fonction de nombreux facteurs tels que :
 
 - Appareil, l’appareil est-il connu/approuvé/lié au domaine ?
 - IP : la demande d’authentification provient-elle d’une adresse IP d’entreprise connue ? Ou d’un pays dans lequel nous ne sommes pas dignes de confiance ?
@@ -304,9 +304,9 @@ Nous pouvons ensuite déclencher une stratégie telle que approuver, déclencher
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>Comment puis-je me protéger contre les virus et les programmes malveillants ?
 
-Une fois encore, Office 365 offre une protection pour l’option optimiser les points de terminaison marqués dans les différentes couches du service, [décrites dans ce document](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection). Comme indiqué, il est beaucoup plus efficace de fournir ces éléments de sécurité dans le service lui-même plutôt que d’essayer de le faire en ligne avec des appareils qui ne comprennent peut-être pas complètement les protocoles/trafic. Par défaut, SharePoint Online analyse automatiquement les téléchargements de fichiers pour les programmes [malveillants](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo) connus
+Une fois encore, Office 365 offre une protection pour l’option optimiser les points de terminaison marqués dans les différentes couches du service, [décrites dans ce document](/office365/Enterprise/office-365-malware-and-ransomware-protection). Comme indiqué, il est beaucoup plus efficace de fournir ces éléments de sécurité dans le service lui-même plutôt que d’essayer de le faire en ligne avec des appareils qui ne comprennent peut-être pas complètement les protocoles/trafic. Par défaut, SharePoint Online analyse automatiquement les téléchargements de fichiers pour les programmes [malveillants](../security/office-365-security/virus-detection-in-spo.md) connus
 
-Pour les points de terminaison Exchange répertoriés ci-dessus, [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) et Microsoft Defender pour Office [365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) assurent une excellente sécurité du trafic vers le service.
+Pour les points de terminaison Exchange répertoriés ci-dessus, [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) et Microsoft Defender pour Office [365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) assurent une excellente sécurité du trafic vers le service.
 
 ### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>Puis-je envoyer plus que le message direct Optimiser le trafic ?
 
@@ -316,11 +316,11 @@ Plusieurs fournisseurs proposent également des solutions de proxy/sécurité ba
 
 Cependant, même avec ces solutions en place, Microsoft recommande fortement que le trafic Office 365 marqué Optimiser soit envoyé directement au service.
 
-Pour obtenir des instructions sur l’autorisation d’accès direct à un réseau virtuel Azure, consultez l’article [Travail à distance à l'aide du point à site de la passerelle VPN Azure](https://docs.microsoft.com/azure/vpn-gateway/work-remotely-support).
+Pour obtenir des instructions sur l’autorisation d’accès direct à un réseau virtuel Azure, consultez l’article [Travail à distance à l'aide du point à site de la passerelle VPN Azure](/azure/vpn-gateway/work-remotely-support).
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>Pourquoi le port 80 est-il obligatoire ? Le trafic est-il envoyé en clair ?
 
-Le port 80 est uniquement utilisé pour les opérations telles que la redirection vers une session de port 443, les données client ne sont pas envoyées ou sont accessibles via le port 80. [Cet article](https://docs.microsoft.com/microsoft-365/compliance/encryption) décrit le chiffrement pour les données en transit et au repos pour Office 365 et [cet article](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) explique comment utiliser SRTP pour protéger le trafic multimédia des équipes.
+Le port 80 est uniquement utilisé pour les opérations telles que la redirection vers une session de port 443, les données client ne sont pas envoyées ou sont accessibles via le port 80. [Cet article](../compliance/encryption.md) décrit le chiffrement pour les données en transit et au repos pour Office 365 et [cet article](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) explique comment utiliser SRTP pour protéger le trafic multimédia des équipes.
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>Ces recommandations s’appliquent-ils aux utilisateurs résidant en Chine à l’aide d’une instance internationale d’Office 365 ?
 

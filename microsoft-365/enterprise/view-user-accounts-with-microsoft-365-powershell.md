@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: Découvrez comment afficher, lister ou afficher vos comptes d’utilisateur Microsoft 365 de différentes manières avec PowerShell.
-ms.openlocfilehash: 312e9fb983c4d1f4de8bc74586c88f1e669eb90a
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754071"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924647"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Afficher les comptes d’utilisateur Microsoft 365 avec PowerShell
 
@@ -74,7 +74,7 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>Afficher des valeurs de propriété supplémentaires pour un compte spécifique
 
-Par défaut, la cmdlet **Get-AzureADUser** affiche uniquement les propriétés *ObjectID,* *DisplayName* et *UserPrincipalName* des comptes.
+Par défaut, l’cmdlet **Get-AzureADUser** affiche uniquement les propriétés *ObjectID,* *DisplayName* et *UserPrincipalName* des comptes.
 
 Pour être plus sélectif sur les propriétés à afficher, utilisez l’cmdlet **Select** en combinaison avec l’cmdlet **Get-AzureADUser.** Pour combiner les deux cmdlets, utilisez le caractère « pipe » (« | ») qui indique à Azure Active Directory PowerShell pour Graph de prendre les résultats d’une commande et de l’envoyer à la commande suivante. Voici un exemple de commande qui affiche *displayName,* *Department* et *UsageLocation* pour chaque compte d’utilisateur :
   
@@ -148,7 +148,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  La syntaxe de **l’cmdlet Where** dans ces exemples est **Where {$ \_ .** [nom de la propriété du compte d’utilisateur] [opérateur de comparaison] [valeur] **}**.> [opérateur de comparaison] est **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] est généralement une chaîne (une séquence de lettres, de nombres et d’autres caractères), une valeur numérique ou **une $Null** pour non spécifié. Pour plus d’informations, voir [Where](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
+>  La syntaxe de **l’cmdlet Where** dans ces exemples est **Where {$ \_ .** [nom de la propriété du compte d’utilisateur] [opérateur de comparaison] [valeur] **}**.> [opérateur de comparaison] est **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] est généralement une chaîne (une séquence de lettres, de nombres et d’autres caractères), une valeur numérique ou **une $Null** pour non spécifié. Pour plus d’informations, voir [Where](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
   
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
@@ -194,7 +194,7 @@ BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-Pour plus d’informations sur les paramètres supplémentaires pour filtrer l’ensemble des comptes d’utilisateur qui sont affichés, voir [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).
+Pour plus d’informations sur les paramètres supplémentaires pour filtrer l’ensemble des comptes d’utilisateur qui sont affichés, voir [Get-MsolUser](/previous-versions/azure/dn194133(v=azure.100)).
   
 ### <a name="view-a-specific-account"></a>Afficher un compte spécifique
 
@@ -234,14 +234,14 @@ La propriété *UsageLocation* n’est que l’une des nombreuses propriétés a
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Par exemple, *Ville* est le nom d’une propriété de compte d’utilisateur. Vous pouvez utiliser la commande suivante pour lister tous les comptes d’utilisateur des utilisateurs qui habitent à Londres :
+Par exemple, *Ville* est le nom d’une propriété de compte d’utilisateur. Vous pouvez utiliser la commande suivante pour lister tous les comptes d’utilisateur pour les utilisateurs qui habitent à Londres :
   
 ```powershell
 Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  La syntaxe de **l’cmdlet Where** dans ces exemples est **Where {$ \_ .** [nom de la propriété du compte d’utilisateur] [opérateur de comparaison] [valeur] **}**.  [opérateur de comparaison] est **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] est généralement une chaîne (une séquence de lettres, de nombres et d’autres caractères), une valeur numérique ou **une $Null** pour non spécifié. Pour plus d’informations, voir [Where](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
+>  La syntaxe de **l’cmdlet Where** dans ces exemples est **Where {$ \_ .** [nom de la propriété du compte d’utilisateur] [opérateur de comparaison] [valeur] **}**.  [opérateur de comparaison] est **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] est généralement une chaîne (une séquence de lettres, de nombres et d’autres caractères), une valeur numérique ou **une $Null** pour non spécifié. Pour plus d’informations, voir [Where](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
   
 Pour vérifier l’état bloqué d’un compte d’utilisateur, utilisez la commande suivante :
   
@@ -290,7 +290,7 @@ L’cmdlet Select vous permet de choisir les propriétés à afficher.  Pour aff
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Pour être plus sélectif sur la liste des comptes à afficher, vous pouvez également utiliser la cmdlet **Where.** Voici un exemple de commande qui affiche uniquement les comptes d’utilisateurs dont l’emplacement d’utilisation n’est pas spécifié :
+Pour être plus sélectif dans la liste des comptes à afficher, vous pouvez également utiliser la cmdlet **Where.** Voici un exemple de commande qui affiche uniquement les comptes d’utilisateurs dont l’emplacement d’utilisation n’est pas spécifié :
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Department, UsageLocation
@@ -315,7 +315,7 @@ Scott Wallace            Operations
 
 Si vous utilisez la synchronisation d’annuaires pour créer et gérer vos utilisateurs Microsoft 365, vous pouvez afficher le compte local à partir duquel un utilisateur Microsoft 365 a été projeté. L’exemple suivant suppose que :
 
-- Azure AD Connect est configuré pour utiliser l’ancrage source par défaut d’ObjectGUID. (Pour plus d’informations sur la configuration d’une ancre source, voir [Azure AD Connect : concepts de conception).](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)
+- Azure AD Connect est configuré pour utiliser l’ancrage source par défaut d’ObjectGUID. (Pour plus d’informations sur la configuration d’une ancre source, voir [Azure AD Connect : concepts de conception).](/azure/active-directory/hybrid/plan-connect-design-concepts)
 - Le module Services de domaine Active Directory pour PowerShell a été installé (voir [outils RSAT).](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)
 
 ```powershell

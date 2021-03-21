@@ -22,18 +22,18 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Sauvegardez le contenu Outlook, OneDrive, Yammer et SharePoint avant de modifier les plans Microsoft 365.
-ms.openlocfilehash: f74acee03a21f2dfdf01c10017346b81a2885b3b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d29d4e739a9328a63a491696ba26bee5b1947f0a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647854"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924059"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Back up data before switching Microsoft 365 for business plans
 
 Si un utilisateur est basculé vers un autre abonnement qui a moins de services liés aux données ou si un utilisateur quitte l’organisation, une copie de ses données stockées dans Microsoft 365 peut être téléchargée avant d’être basculée vers le nouvel abonnement.
 
-Si vous souhaitez déplacer un utilisateur vers un abonnement qui dispose du même ou de plusieurs services, vous n’avez pas besoin de le faire. Voir [Déplacer des utilisateurs vers un autre abonnement.](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/move-users-different-subscription)
+Si vous souhaitez déplacer un utilisateur vers un abonnement qui possède le même ou plusieurs services, vous n’avez pas besoin de le faire. Voir [Déplacer des utilisateurs vers un autre abonnement.](./move-users-different-subscription.md)
   
 ## <a name="save-a-copy-of-outlook-information"></a>Enregistrer une copie des informations Outlook
 
@@ -47,13 +47,13 @@ Avant de passer à un autre abonnement, les utilisateurs peuvent télécharger d
   
 ## <a name="save-yammer-information"></a>Enregistrer les Yammer données
 
-Les administrateurs peuvent exporter tous les messages, notes, fichiers, rubriques, utilisateurs et groupes vers un fichier .zip. Pour plus d’informations, [voir Export data from Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Les développeurs peuvent également [utiliser Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495) de gestion pour ce faire.
+Les administrateurs peuvent exporter tous les messages, notes, fichiers, rubriques, utilisateurs et groupes vers un fichier .zip. Pour plus d’informations, [voir Export data from Yammer Enterprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Les développeurs peuvent également [utiliser Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495) pour ce faire.
   
 ## <a name="how-to-save-sharepoint-information"></a>Comment enregistrer des informations SharePoint
 
 Si un utilisateur passe d’un abonnement qui a SharePoint Online à un abonnement qui ne l’a pas, la vignette **SharePoint** n’apparaîtra plus dans son menu Microsoft 365.
   
-Toutefois, tant que le nouvel abonnement est au sein de la même organisation que celle à partir de celle-ci, les utilisateurs pourront toujours accéder au site d’équipe SharePoint. Ils peuvent afficher et mettre à jour des blocs-notes, des documents, des tâches et des calendriers à l’aide de l’URL directe vers le site d’équipe.
+Toutefois, tant que le nouvel abonnement se trouve dans la même organisation que celle à partir de celle-ci, les utilisateurs pourront toujours accéder au site d’équipe SharePoint. Ils peuvent afficher et mettre à jour des blocs-notes, des documents, des tâches et des calendriers à l’aide de l’URL directe vers le site d’équipe.
   
 > [!TIP]
 > Nous recommandons aux utilisateurs d’accéder au site d’équipe avant de changer d’abonnement et d’enregistrer l’URL en tant que favori ou signet dans leur navigateur.

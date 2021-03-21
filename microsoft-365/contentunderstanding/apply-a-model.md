@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrir comment appliquer un modèle publié à une bibliothèque de documents SharePoint
-ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 42168537c8d449a075b5e29ef9905b6b98b8d714
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080789"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925399"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Appliquer un modèle de présentation de document dans Microsoft SharePoint Syntex
 
@@ -94,7 +94,7 @@ Lorsqu’un document SharePoint Syntex comprenant ou un modèle de traitement de
 
    ![Colonne de date de classification](../media/content-understanding/class-date-column.png)</br> 
 
-Le champ Date de classification est utilisé par le déclencheur [<b>Lorsqu’un fichier est classifié par un modèle de contenu</b>'](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) pour exécuter un flux Power Automate après qu’un modèle de compréhension de contenu Syntex a terminé de traiter un fichier et mis à jour le champ « Date de classification ».
+Le champ Date de classification est utilisé par le déclencheur [<b>Lorsqu’un fichier est classifié par un modèle de contenu</b>'](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) pour exécuter un flux Power Automate après qu’un modèle de compréhension de contenu Syntex a terminé de traiter un fichier et mis à jour le champ « Date de classification ».
 
    ![Déclencheur de flux](../media/content-understanding/trigger.png)</br>
 
@@ -108,5 +108,3 @@ Le déclencheur <b>Lorsqu'un fichier est classifié selon un modèle de compréh
 [Créer un extracteur](create-an-extractor.md)
 
 [Présentation de la compréhension de document](document-understanding-overview.md)
-
-

@@ -13,16 +13,16 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: Découvrez comment créer un groupe Microsoft 365 avec un emplacement de données préféré spécifié dans un environnement multigéogé.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5af32827d11289f7a966311080d2c15197786799
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 7f02a5eb6d8b30e8381c65d4735812675d35af2b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547733"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923743"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>Créer un groupe Microsoft 365 avec un PDL spécifique
 
-Lorsque les utilisateurs d’un environnement multigéogéal créent un groupe Microsoft 365, l’emplacement des données par leur choix est automatiquement celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
+Lorsque les utilisateurs d’un environnement multigéogéal créent un groupe Microsoft 365, l’emplacement de données préféré du groupe est automatiquement définie sur celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
 
 Si vous devez créer un groupe avec un emplacement par défaut des données spécifique, vous le faire à l’aide de l’applet de commande Microsoft PowerShell New-UnifiedGroup d’Exchange Online ou à partir du Centre d’administration SharePoint. Lorsque vous procédez de la sorte, la boîte aux lettres de groupe et le site SharePoint associé à celui-ci sont configurés dans l’emplacement par défaut des données spécifié.
 
@@ -57,4 +57,4 @@ Notez que l’approvisionnement du site du groupe SharePoint est à la demande. 
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-[Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+[Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)

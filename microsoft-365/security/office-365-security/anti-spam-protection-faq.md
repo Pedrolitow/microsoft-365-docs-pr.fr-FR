@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent consulter les questions fréquemment posées et leurs réponses sur la protection contre le courrier indésirable dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8abccdac73877c3f24114afaa78c13143e156868
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: cc1aa26832830dce4f529566a589cb8bf3e1df01
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288968"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925219"
 ---
 # <a name="anti-spam-protection-faq"></a>FAQ sur la protection anti-courrier indésirable
 
@@ -52,9 +52,9 @@ Pour obtenir des questions et des réponses sur la protection contre l’usurpat
 
  **Pour les messages sortants :** Le message est acheminé via le pool de remise à risque élevé ou est renvoyé à l’expéditeur dans une [non-remise](high-risk-delivery-pool-for-outbound-messages.md) (également appelée NDR ou message de non-remise). Pour plus d’informations sur la protection contre le courrier indésirable sortant, voir [Contrôles de courrier indésirable sortant.](outbound-spam-controls.md)
 
-## <a name="whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>Qu’est-ce qu’une variante de courrier indésirable zéro jour et comment est-elle gérée par le service ?
+## <a name="whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>Qu’est-ce qu’une variante de courrier indésirable « zero-day » et comment est-elle gérée par le service ?
 
-Une variante de courrier indésirable « zero-day » est une variante de courrier indésirable de première génération inconnue qui n’a jamais été capturée ou analysée, de sorte que nos filtres anti-courrier indésirable ne disposent pas encore d’informations pour le détecter. Une fois qu’un échantillon de courrier indésirable zéro jour a été capturé et analysé par nos analystes de courrier indésirable, s’il répond aux critères de classification du courrier indésirable, nos filtres anti-courrier indésirable sont mis à jour pour le détecter et il n’est plus considéré comme « zero-day ».
+Une variante de courrier indésirable zéro jour est une variante de courrier indésirable de première génération, inconnue précédemment, qui n’a jamais été capturée ou analysée, de sorte que nos filtres anti-courrier indésirable ne disposent pas encore d’informations pour le détecter. Une fois qu’un échantillon de courrier indésirable zéro jour a été capturé et analysé par nos analystes de courrier indésirable, s’il répond aux critères de classification du courrier indésirable, nos filtres anti-courrier indésirable sont mis à jour pour le détecter et il n’est plus considéré comme « zero-day ».
 
 **Remarque :** Si vous recevez un message qui peut être une variante de courrier indésirable zéro jour, afin de nous aider à améliorer le service, envoyez le message à Microsoft à l’aide de l’une des méthodes décrites dans Signaler les messages et les fichiers à [Microsoft.](report-junk-email-messages-to-microsoft.md)
 
@@ -64,7 +64,7 @@ Une fois que vous vous êtes inscrivez au service et ajoutez votre domaine, le f
 
 Pour plus d’informations, voir les rubriques suivantes :
 
-[Paramètres recommandés pour la sécurité d’EOP et de Microsoft Defender pour Office 365](recommended-settings-for-eop-and-office365-atp.md)
+[Paramètres recommandés pour EOP et Microsoft Defender pour la sécurité Office 365](recommended-settings-for-eop-and-office365-atp.md)
 
 [Configurer le filtrage des connexions dans EOP](configure-the-connection-filter-policy.md)
 
@@ -90,15 +90,15 @@ Les messages de courrier indésirable et de courrier non indésirable peuvent ê
 
 ## <a name="can-i-get-spam-reports"></a>Puis-je obtenir des rapports sur le courrier indésirable ?
 
-Oui, par exemple, vous pouvez obtenir un rapport de détection du courrier indésirable dans le Centre d’administration Microsoft 365. Ce rapport indique le volume de courrier indésirable sous la forme d’un nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
+Oui, par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans le Centre d’administration Microsoft 365. Ce rapport indique le volume de courrier indésirable sous la forme d’un nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
 
-Clients Exchange Online : [surveillance, rapports et suivi des messages dans Exchange Online](https://docs.microsoft.com/exchange/monitoring/monitoring)
+Clients Exchange Online : [surveillance, rapports et suivi des messages dans Exchange Online](/exchange/monitoring/monitoring)
 
 Clients EOP autonomes : [rapports et suivi des messages dans Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
 
 ## <a name="someone-sent-me-a-message-and-i-cant-find-it-i-suspect-that-it-may-have-been-detected-as-spam-is-there-a-tool-that-i-can-use-to-find-out"></a>Quelqu’un m’a envoyé un message et je ne le trouve pas. Je pense qu'il a peut-être été détecté comme courrier indésirable. Existe-t-il un outil qui me permettrait de m'en assurer ?
 
-Oui, l'outil de suivi des messages vous permet de suivre les messages électroniques quand ils sont acheminés via le service afin de déterminer ce qui leur est arrivé. Pour plus d’informations sur l’utilisation de l’outil de suivi des messages pour savoir pourquoi un message a été marqué comme courrier indésirable, voir Was [a message marked as spam?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
+Oui, l'outil de suivi des messages vous permet de suivre les messages électroniques quand ils sont acheminés via le service afin de déterminer ce qui leur est arrivé. Pour plus d’informations sur l’utilisation de l’outil de suivi des messages pour savoir pourquoi un message a été marqué comme courrier indésirable, voir Was [a message marked as spam?](/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
 
 ## <a name="will-the-service-throttle-rate-limit-my-mail-if-my-users-send-outbound-spam"></a>Le service limite-t-il (limite de débit) ma messagerie si mes utilisateurs envoient du courrier indésirable sortant ?
 
@@ -110,7 +110,7 @@ Vous pouvez envoyer une notification à une adresse de messagerie spécifique qu
 
 Oui. Bien qu’il soit recommandé de pointer votre enregistrement MX vers Microsoft, nous savons qu’il existe des raisons professionnelles légitimes d’router votre courrier électronique vers un autre endroit que Microsoft.
 
-- **Entrant :** modifiez vos enregistrements MX pour qu’ils pointent vers le fournisseur tiers, puis redirigez les messages vers EOP pour un traitement supplémentaire. Pour plus d’informations, [voir Filtrage amélioré pour les connecteurs dans Exchange Online.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+- **Entrant :** modifiez vos enregistrements MX pour qu’ils pointent vers le fournisseur tiers, puis redirigez les messages vers EOP pour un traitement supplémentaire. Pour plus d’informations, [voir Filtrage amélioré pour les connecteurs dans Exchange Online.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
 - **Sortant :** configurer le routage de l’hôte intelligent de Microsoft 365 vers le fournisseur tiers de destination.
 
@@ -120,7 +120,7 @@ Oui. Pour plus d’informations, [voir Protéger votre confidentialité sur Inte
 
 ## <a name="are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>Le courrier indésirable et les messages malveillants font-ils l’objet d’une enquête pour savoir qui les a envoyés, ou sont-ils transférés à des services chargés de l’application de la loi ?
 
-Le service se concentre sur la détection et la suppression du courrier indésirable et des programmes malveillants, même si nous pouvons parfois examiner des campagnes de courrier indésirable ou d’attaque particulièrement dangereuses ou endommager, et poursuivre les attaques. Cela peut impliquer de travailler avec nos unités juridiques et numériques pour mettre fin à un botnet d’expéditeur de courrier indésirable, de bloquer l’expéditeur de courrier indésirable d’utiliser le service (s’il l’utilise pour envoyer des messages électroniques sortants) et de transmettre les informations à l’application de la loi pour infraction pénale.
+Le service se concentre sur la détection et la suppression du courrier indésirable et des programmes malveillants, même si nous pouvons parfois examiner des campagnes de courrier indésirable ou d’attaque particulièrement dangereuses ou endommager, et poursuivre les attaques. Cela peut impliquer de travailler avec nos unités juridiques et numériques pour mettre fin à un botnet d’expéditeur de courrier indésirable, d’empêcher l’expéditeur de courrier indésirable d’utiliser le service (s’il l’utilise pour envoyer des messages électroniques sortants) et de transmettre les informations à l’application de la loi pour infraction pénale.
 
 ## <a name="what-are-a-set-of-best-outbound-mailing-practices-that-will-ensure-that-my-mail-is-delivered"></a>Quelles sont les meilleures pratiques d'envoi de courrier sortant pour garantir la remise de mes messages électroniques ?
 

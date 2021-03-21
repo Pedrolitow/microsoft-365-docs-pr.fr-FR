@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Globanet Contrôley dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: 94bd9bb8f2b7586e685769af389d6cd0a0ea18ac
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 5a23e88b0240bd47b552aa62cd704a0560b01206
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619830"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925028"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>Configurer un connecteur pour archiver les données de la bibliothèque
 
 Utilisez un connecteur Globanet dans le Centre de conformité Microsoft 365 pour importer et archiver des données Dente dans les boîtes aux lettres des utilisateurs de votre organisation Microsoft 365. Il s’agit d’une plateforme de messagerie et de collaboration utilisée dans le secteur des services financiers. Globanet fournit un connecteur de données [à Titres](https://globanet.com/symphony) dans le Centre de conformité Microsoft 365 que vous pouvez configurer pour capturer des éléments à partir de la source de données tierces (régulièrement), puis importer ces éléments dans les boîtes aux lettres des utilisateurs. Le connecteur convertit le contenu d’un élément du compte DeLyy au format de message électronique, puis importe l’élément dans une boîte aux lettres dans Microsoft 365.
 
-Une fois les communications stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur DeNty pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les politiques gouvernementales et réglementaires.
+Une fois les communications stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur de Typey pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-symphony-data"></a>Vue d’ensemble de l’archivage des données
 
@@ -43,11 +43,11 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Créez un compte Globanet Merge1 pour les connecteurs Microsoft. Pour créer un compte, contactez le support [technique Globanet.](https://globanet.com/ms-connectors-contact) Vous vous connectez à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- L’utilisateur qui crée le connecteur à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+- L’utilisateur qui crée le connecteur à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 ## <a name="step-1-set-up-the-symphony-connector"></a>Étape 1 : Configurer le connecteur De marche à pas
 
-La première étape consiste à accéder à la page **Connecteurs** de données dans le Centre de conformité Microsoft 365 et à créer un connecteur pour les données de Typey.
+La première étape consiste à accéder à la page **Connecteurs** de données dans le Centre de conformité Microsoft 365 et à créer un connecteur pour les données de Type.
 
 1. Allez sur Connecteurs de données, [https://compliance.microsoft.com](https://compliance.microsoft.com/) puis cliquez **sur**  >  **Connecteurs de données.**
 
@@ -59,7 +59,7 @@ La première étape consiste à accéder à la page **Connecteurs** de données 
 
 5. Connectez-vous à votre compte Merge1 pour configurer le connecteur.
 
-## <a name="configure-the-symphony-connector-on-the-globanet-merge1-site"></a>Configurer le connecteur de Typement sur le site Globanet Merge1
+## <a name="configure-the-symphony-connector-on-the-globanet-merge1-site"></a>Configurer le connecteur DeNty sur le site Globanet Merge1
 
 La deuxième étape consiste à configurer le connecteur DeNty sur le site Merge1. Pour plus d’informations sur la configuration du connecteur DeNty sur le site Globanet Merge1, consultez le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf).
 
@@ -69,11 +69,11 @@ Une fois que vous avez **cliqué sur Enregistrer & terminé,** la **page** Mappa
 
 Pour ma cartographier les utilisateurs et terminer la configuration du connecteur dans le Centre de conformité Microsoft 365, suivez les étapes suivantes :
 
-1. Dans la page Ma mappage des utilisateurs externes aux utilisateurs **de Microsoft 365,** activez le mappage automatique des utilisateurs. Les éléments de Lassy incluent une propriété appelée *Email*, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la page Ma mappage des utilisateurs externes aux utilisateurs **De Microsoft 365,** activez le mappage automatique des utilisateurs. Les éléments de Propriété incluent une propriété appelée *Courrier* électronique, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez **sur** Suivant, examinez vos paramètres, puis allez à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
 
-## <a name="step-4-monitor-the-symphony-connector"></a>Étape 4 : Surveiller le connecteur de surveillance
+## <a name="step-4-monitor-the-symphony-connector"></a>Étape 4 : Surveiller le connecteur Dente
 
 Une fois le connecteur créé, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
 
@@ -85,4 +85,4 @@ Une fois le connecteur créé, vous pouvez afficher l’état du connecteur dans
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

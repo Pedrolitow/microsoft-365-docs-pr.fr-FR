@@ -20,19 +20,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez comment mettre à niveau vers un autre plan.
-ms.openlocfilehash: e1872279ebef49cd0e3b8cf58dbd24b603cc6b3c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 62d6da5713a7785fde9e795bc22956d73616c3c3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114536"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924313"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,14 +49,14 @@ Lorsque vous  utilisez l’onglet Mise à niveau, vous êtes dirigé tout au lon
 
 2. Sélectionnez l’abonnement à mettre à niveau.
 
-3. Dans la page détails de l’abonnement, sélectionnez **Mettre à niveau.**
+3. Dans la page des détails de l’abonnement, sélectionnez **Mettre à niveau.**
 
 4. Recherchez le plan vers lequel vous souhaitez mettre à niveau, puis sélectionnez le bouton **Mettre à** niveau.
 
-5. Entrez le nombre de licences dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’année entière, puis **sélectionnez Accéder à l’checkout**.
+5. Entrez le nombre de licences dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’année entière, puis sélectionnez **Accéder à l’checkout.**
 
     > [!NOTE]
-    > Veillez à acheter suffisamment de licences pour couvrir tous vos utilisateurs.
+    > Assurez-vous d’acheter suffisamment de licences pour couvrir tous vos utilisateurs.
 
 6. Sur la page suivante, vérifiez l’adresse de **l’acheteur** et les informations de **facturation** ainsi que **les articles de cette commande**. Vous pouvez modifier le mode de paiement par défaut à cette étape. Si vous souhaitez modifier des informations, sélectionnez **modifier** en regard de la section applicable.
 
@@ -66,7 +66,7 @@ Lorsque vous avez terminé l’enregistrement, la finalisation de la mise à niv
 
 ## <a name="the-upgrade-tab-is-empty"></a>L’onglet Mise à niveau est vide
 
-Si **l’onglet** Mise à niveau est vide, vous verrez une explication sur la raison pour laquelle vous ne pouvez pas mettre à niveau pour le moment. Vous pouvez essayer de [modifier les plans manuellement.](change-plans-manually.md) Pour plus d’informations, [voir Pourquoi ne puis-je pas mettre à niveau les plans ?](#why-cant-i-upgrade-plans).
+Si **l’onglet** Mise à niveau est vide, vous verrez une explication sur la raison pour laquelle vous ne pouvez pas mettre à niveau pour le moment. Vous pouvez essayer de [modifier les plans manuellement.](change-plans-manually.md) Pour plus d’informations, [voir Pourquoi ne puis-je pas mettre à niveau les plans ?](#why-cant-i-upgrade-plans)
 
 ## <a name="i-dont-see-the-plan-i-want"></a>L'offre à laquelle je veux souscrire n'apparaît pas
 
@@ -136,7 +136,7 @@ Vous ne verrez peut-être aucun plan sous **l’onglet** Mise à niveau, car le 
 
 Lorsque vous planifiez une mise à niveau, les plans disponibles pour la mise à niveau s’affichent en fonction des services de votre plan actuel. Vous pouvez uniquement mettre à niveau vers un plan qui possède les mêmes services liés aux données, tels qu’Exchange Online ou SharePoint Online, ou vers une version supérieure de ces services. Cela garantit que les utilisateurs ne perdent pas les données \' liées à ces services pendant la mise à niveau.
 
-Si votre plan n’est pas éligible à la mise à niveau automatique, vous pouvez peut-être modifier les [plans](change-plans-manually.md)manuellement. Vous pouvez également appeler [le support technique](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
+Si votre plan n’est pas éligible à la mise à niveau automatique des plans, vous pouvez peut-être modifier les [plans](change-plans-manually.md)manuellement, à la place. Vous pouvez également appeler [le support technique](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
 
 #### <a name="your-subscription-has-an-add-on"></a>Votre abonnement dispose d’un module add-on
 

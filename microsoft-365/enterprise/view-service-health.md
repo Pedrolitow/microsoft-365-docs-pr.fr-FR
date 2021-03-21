@@ -26,20 +26,20 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Affichez l’état d’état des services Microsoft 365 avant d’appeler le support technique pour voir s’il existe une interruption de service active.
-ms.openlocfilehash: b1819e455732d142c563f598433c410b0ae60882
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 3802ca01902d5b0d457d2a3d75b784d38f71bd42
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072758"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924683"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Vérifier l’état du service Microsoft 365
 
-[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true)
+[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
 Vous pouvez afficher l’état de vos services Microsoft, notamment Office sur le web, Yammer, Microsoft Dynamics CRM et les services cloud de gestion des appareils mobiles, sur la **page** État du service dans le Centre d’administration [Microsoft 365.](https://go.microsoft.com/fwlink/p/?linkid=2024339) If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
-Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pouvez utiliser la page état du [service](https://status.office365.com) pour vérifier si des problèmes connus vous empêchent de vous connecter à votre client.  Inscrivez-vous également pour nous suivre [@MSFT365status](https://twitter.com/MSFT365Status) sur Twitter pour voir des informations sur certains événements.
+Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pouvez utiliser la page état du [service](https://status.office365.com) pour vérifier les problèmes connus qui vous empêchent de vous connecter à votre client.  Inscrivez-vous également pour nous suivre [@MSFT365status](https://twitter.com/MSFT365Status) sur Twitter pour voir des informations sur certains événements.
 
   
 ### <a name="how-to-check-service-health"></a>Vérifier l’état du service
@@ -47,7 +47,7 @@ Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pou
 1. Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) , and sign in with an admin account.
 
     > [!NOTE]
-    > Les personnes dotées d'un rôle d'administrateur général ou d'administrateur de service peuvent afficher l'état du service. Pour afficher l'état du service, les administrateurs Exchange, SharePoint et Skype Entreprise doivent aussi disposer d'un rôle d'administrateur portant sur ce service. Pour plus d’informations sur les rôles qui peuvent afficher l’état du service, voir [à propos des rôles d’administrateur.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center)
+    > Les personnes dotées d'un rôle d'administrateur général ou d'administrateur de service peuvent afficher l'état du service. Pour afficher l'état du service, les administrateurs Exchange, SharePoint et Skype Entreprise doivent aussi disposer d'un rôle d'administrateur portant sur ce service. Pour plus d’informations sur les rôles qui peuvent afficher l’état du service, voir [à propos des rôles d’administrateur.](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)
   
 2. Si vous n’utilisez pas le nouveau centre d’administration, sur la **page** d’accueil, sélectionnez le nouveau centre d’administration bascule dans le coin supérieur droit. 
 
@@ -63,7 +63,7 @@ Pour filtrer votre affichage sur les services qui rencontrent actuellement un in
 
 **L’onglet** Historique affiche l’historique des incidents et des avis qui ont été résolus.
 
-Si vous rencontrez un problème avec un service Microsoft 365 et qu’il n’est pas répertorié dans la page État d’état du **service,** indiquez-le en sélectionnant Signaler un problème et en complétant le formulaire court. Nous examinerons les données et les rapports associés d’autres organisations pour voir l’étendue du problème et s’il provient de notre service. Si c’est le cas, nous l’ajouterons en tant que nouvel incident ou avis sur la page État du **service,** où vous pouvez suivre sa résolution. Si elle ne s’affiche pas dans la liste dans un délai d’environ 30 minutes, envisagez de contacter le support technique pour résoudre le problème.
+Si vous rencontrez un problème avec un service Microsoft 365 et qu’il n’est pas répertorié dans la page État d’état du **service,** indiquez-le en sélectionnant Signaler un problème et en complétant le formulaire court. Nous examinerons les données et les rapports associés d’autres organisations pour voir l’étendue du problème et s’il provient de notre service. Si c’est le cas, nous l’ajouterons en tant que nouvel incident ou avis sur la page d’état du **service,** où vous pouvez suivre sa résolution. Si elle ne s’affiche pas dans la liste dans un délai d’environ 30 minutes, envisagez de contacter le support technique pour résoudre le problème.
 
 Pour personnaliser l’affichage des services qui s’afficheront dans le tableau de bord, sélectionnez Affichage personnalisé préférences et cochez les cases pour les services que vous souhaitez filtrer hors de l’affichage Du tableau de bord d’état du  >  service. Assurez-vous que la case à cocher est cocher pour chaque service que vous souhaitez surveiller.    
 
@@ -89,7 +89,7 @@ Le récapitulatif de l'avis ou de l'incident fournit les informations suivantes 
 
 - **Titre** - Résumé du problème.
 - **Service** : nom du service concerné.
-- **ID :** identificateur numérique du problème.
+- **ID** : identificateur numérique du problème.
 - **État** : impact de ce problème sur le service.
 - **Heure de début** : heure de début du problème.
 - **Dernière mise à jour** : dernière mise à jour du message d’état du service. Nous publierons des messages fréquents pour vous faire savoir la progression que nous faisons dans l’application d’une solution.
@@ -126,7 +126,7 @@ La plupart du temps, les services apparaissent comme sains sans aucune informati
 
 | Statut | Définition |
 |:-----|:-----|
-|**Examen en cours** | Nous sommes conscients d'un problème potentiel et recueillons des informations sur ce problème et son impact. |
+|**Investigation** | Nous sommes conscients d'un problème potentiel et recueillons des informations sur ce problème et son impact. |
 |**Dégradation du service** | Nous avons identifié un problème susceptible d'affecter l'utilisation d'un service ou d'une fonctionnalité. Cet état peut s'afficher si un service s'avère plus lent qu'habituellement, s'il présente des interruptions intermittentes ou si une fonctionnalité est défaillante, par exemple. |
 |**Interruption du service** | Cet état s'affiche si nous identifions un problème qui affecte la capacité des utilisateurs à accéder au service. Dans ce cas, le problème est significatif et peut se répéter. |
 |**Service en cours de restauration** | La cause du problème a été identifiée, nous connaissons l'action corrective à appliquer et le service est en cours de restauration. |
@@ -138,7 +138,7 @@ La plupart du temps, les services apparaissent comme sains sans aucune informati
 
 ### <a name="history"></a>Historique
 
-L’état du service vous permet d’examiner l’état d’état actuel et d’afficher l’historique des avis et incidents de service qui ont affecté votre client au cours des 30 derniers jours. Pour afficher l’état d’état passé de tous les services, sélectionnez **Afficher l’historique** sur la page de détails des problèmes.
+L’état du service vous permet d’examiner l’état d’état actuel et d’afficher l’historique des avis et incidents de service qui ont affecté votre client au cours des 30 derniers jours. Pour afficher l’état d’état passé de tous les services, sélectionnez **Afficher l’historique** sur la page de détails du problème.
   
 ![Show link to health history](../media/service-health-view-history.png)
   
@@ -148,9 +148,9 @@ La liste de tous les messages d'état des services publiés au cours de la péri
   
 Développez n’importe quelle ligne pour afficher plus de détails sur le problème.
   
-Pour plus d’informations sur notre engagement en matière de temps de fonctionnement, voir [Opérations transparentes de Microsoft 365.](https://go.microsoft.com/fwlink/?linkid=848695)
+Pour plus d’informations sur notre engagement en matière de temps de fonctionnement, voir [Opérations transparentes de Microsoft 365.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)
 
 ## <a name="related-topics"></a>Rubriques connexes
 
 [Rapports d’activité dans le Centre d’administration Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- [Préférences du centre de messages](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences11)
+ [Préférences du centre de messages](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences11)

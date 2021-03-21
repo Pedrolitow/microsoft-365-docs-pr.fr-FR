@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Découvrez les fonctionnalités multigé géographiques dans Exchange Online, telles que les limitations de fonctionnalités et l’emplacement des boîtes aux lettres.
-ms.openlocfilehash: ca7203c72f23fd03512bf23eaa5a4687e4bac1b5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689934"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923731"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Fonctionnalités multigéographiques d’Exchange Online
 
@@ -59,4 +59,4 @@ Exchange Online synchronise la propriété **MailboxRegion** du service d’ann
 
 - Les dossiers publics sont pris en charge dans les organisations multigéographiques. Toutefois, ils doivent rester dans l’emplacement géographique central. Vous ne pouvez pas déplacer des dossiers publics vers des emplacements géographiques satellites.
 
-- Dans un environnement multi-géographique, l’audit de boîte aux lettres inter-géographique n’est pas pris en charge. Par exemple, si un utilisateur se voit attribuer les autorisations d’accès à une boîte aux lettres partagée dans un autre emplacement géographique, les actions de boîte aux lettres effectuées par cet utilisateur ne sont pas enregistrées dans le journal d’audit de la boîte aux lettres partagée. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide).
+- Dans un environnement multi-géographique, l’audit de boîte aux lettres inter-géographique n’est pas pris en charge. Par exemple, si un utilisateur se voit attribuer les autorisations d’accès à une boîte aux lettres partagée dans un autre emplacement géographique, les actions de boîte aux lettres effectuées par cet utilisateur ne sont pas enregistrées dans le journal d’audit de la boîte aux lettres partagée. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](../compliance/enable-mailbox-auditing.md?view=o365-worldwide).

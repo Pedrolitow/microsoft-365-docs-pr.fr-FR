@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment planifier le plan des rubriques microsoft
-ms.openlocfilehash: 2f7b85399f0b1f49e25aae1f1d4627413594f618
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 19baf8bdcfdd1fe38d64e3c2f259ace1ceab5a4b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150477"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925975"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planifier les rubriques microsoft
 
@@ -24,7 +24,7 @@ Vous contrôlez la façon dont les sujets sont abordés dans votre organisation.
 Dans cet article, nous examinerons les décisions de planification ci-après :
 
 - Les sites SharePoint que vous souhaitez analyser pour les rubriques
-- Rubriques, le cas caser, que vous souhaitez exclure des expériences de rubrique
+- Les rubriques, le cas besoin, que vous souhaitez exclure des expériences de rubrique
 - Utilisateurs pour lesquels vous souhaitez rendre les rubriques visibles
 - Utilisateurs que vous souhaitez autoriser à gérer les rubriques dans le centre de rubriques
 - Utilisateurs que vous souhaitez autoriser à créer ou modifier des rubriques dans le centre de rubriques
@@ -36,7 +36,7 @@ La sécurité et la confidentialité de vos données sont respectées, et les ex
 
 Vous devez être abonné à [Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder au Centre d’administration Microsoft 365 et configurer Rubriques.
 
-Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [dans La rubrique](set-up-topic-experiences.md)Configurer Microsoft .
+Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [par la rubrique Configurer Microsoft Topics.](set-up-topic-experiences.md)
 
 ## <a name="topic-discovery"></a>Découverte de rubrique
 
@@ -61,11 +61,17 @@ Nous vous déconseillons de choisir Aucun **site,** car cela empêche la créati
 
 Nous vous recommandons de créer un processus pour que les utilisateurs ou les gestionnaires de connaissances demandent que des sites individuels soient supprimés de la découverte de rubriques si nécessaire dans votre organisation.
 
+### <a name="multi-geo"></a>Multi-Géo
+
+Si votre organisation a déployé [Microsoft 365 Multi-Géo,](/microsoft-365/enterprise/microsoft-365-multi-geo)le centre de rubriques est mis en service dans l’emplacement central et seuls les sites SharePoint de l’emplacement central peuvent être utilisés comme sources pour les rubriques. (Si vous sélectionnez **Tous les sites,** Rubriques Topics utilisera tous les sites dans l’emplacement central.)
+
+Tout le traitement et le stockage du contenu sont effectués à l’emplacement central.
+
 ## <a name="user-permissions"></a>Autorisations utilisateur
 
 Les autorisations utilisateur que vous spécifiez déterminent les personnes de votre organisation qui interagissent avec les rubriques et ce qu’elles peuvent faire.
 
-*Gérer les rubriques*
+*Gestion des rubriques*
 
 Les gestionnaires de connaissances supervisent la qualité des informations, la façon dont elles sont structurées et d’autres meilleures pratiques au niveau de votre organisation. Ils peuvent confirmer et rejeter des rubriques.
 

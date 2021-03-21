@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Cet article décrit l’application d’une étiquette de rétention à un modèle dans SharePoint Syntex
-ms.openlocfilehash: 48c0b983316cfe29019d09cb20546fa4b325b3b0
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 796130bfa967663b5696f49279154cfe9b16f703
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242761"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925367"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Application d’une étiquette de rétention à un modèle dans SharePoint Syntex.
 
@@ -28,14 +28,14 @@ ms.locfileid: "50242761"
 </br>
 
 
-Vous pouvez facilement appliquer une [étiquette de rétention](https://docs.microsoft.com/microsoft-365/compliance/retention) à un modèle dans Microsoft SharePoint Syntex. Vous pouvez le faire pour la compréhension des documents et les modèles de traitement des formulaires.
+Vous pouvez facilement appliquer une [étiquette de rétention](../compliance/retention.md) à un modèle dans Microsoft SharePoint Syntex. Vous pouvez le faire pour la compréhension des documents et les modèles de traitement des formulaires.
 
 Les étiquettes de rétention vous permettent d’appliquer des paramètres de rétention aux documents identifiés par vos modèles.  Par exemple, vous souhaitez que votre modèle identifie tous les documents d’*avis d’assurance* qui sont téléchargés dans votre bibliothèque de documents, mais également qu’il leur applique une étiquette de rétention *Entreprise*, afin que ces documents ne puissent pas être supprimés de la bibliothèque de documents pendant la période spécifiée ( les cinq prochains mois, par exemple).
 
 Vous pouvez appliquer une étiquette de rétention préexistante à votre modèle via les paramètres du modèle sur la page d’accueil de celui-ci. 
 
 > [!Important]
-> Pour que les étiquettes de rétention soient disponibles et s’appliquent à votre modèle de compréhension de document, elles doivent être [créées et publiées dans le Centre de conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> Pour que les étiquettes de rétention soient disponibles et s’appliquent à votre modèle de compréhension de document, elles doivent être [créées et publiées dans le Centre de conformité Microsoft 365](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Pour ajouter une étiquette de rétention à un modèle de compréhension de document
 
@@ -73,13 +73,13 @@ Par exemple, tous les documents d’*avis d’assurance* que votre modèle ident
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Pour ajouter une étiquette de rétention à un modèle de traitement de formulaire
 
 > [!Important]
-> Pour que les étiquettes de rétention soient disponibles et s’appliquent à votre modèle de traitement des formulaires, elles doivent être [créées et publiées dans le Centre de conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> Pour que les étiquettes de rétention soient disponibles et s’appliquent à votre modèle de traitement des formulaires, elles doivent être [créées et publiées dans le Centre de conformité Microsoft 365](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
 
 Vous pouvez appliquer une étiquette de rétention à un modèle de traitement de formulaires lorsque vous créez un modèle ou l’appliquer à un modèle existant.
 
 ### <a name="to-add-a-retention-label-when-you-create-a-form-processing-model"></a>Pour ajouter une étiquette de rétention lorsque vous créez un modèle de traitement de formulaire
 
-1. Lorsque vous [créez un modèle de traitement de formulaires,](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)sélectionnez <b>Paramètres avancés.</b>
+1. Lorsque vous [créez un modèle de traitement de formulaires,](./create-a-form-processing-model.md)sélectionnez <b>Paramètres avancés.</b>
 2. Dans <b>Paramètres avancés</b>, dans la section <b>Étiquette de rétention</b>, sélectionnez le menu, puis l’étiquette de rétention que vous voulez appliquer au modèle.</b>
 
  
@@ -132,5 +132,3 @@ Vous pouvez ajouter une étiquette de rétention à un modèle de traitement de 
 [Créer un extracteur](create-an-extractor.md)
 
 [Présentation de la compréhension de document](document-understanding-overview.md)
-
-

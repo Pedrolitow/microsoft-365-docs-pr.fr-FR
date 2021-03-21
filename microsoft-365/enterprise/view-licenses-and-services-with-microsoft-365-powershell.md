@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explique comment utiliser PowerShell pour afficher des informations sur les plans de gestion des licences, les services et les licences disponibles dans votre organisation Microsoft 365.
-ms.openlocfilehash: 3275a513de3c114076e792ab6c5ef86b1413571c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 08f48301001ee6a40318428f3310eab8b0d0a351
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689858"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924635"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Afficher les licences et services Microsoft 365 avec PowerShell
 
@@ -39,7 +39,7 @@ Chaque abonnement Microsoft 365 comprend les éléments suivants :
     
 - **Licences** Chaque plan de gestion des licences contient le nombre de licences que vous avez achetées. Vous attribuez des licences aux utilisateurs afin qu’ils peuvent utiliser les services Microsoft 365 définis par le plan de gestion des licences. Chaque compte d’utilisateur nécessite au moins une licence d’un plan de gestion des licences pour pouvoir se connecter à Microsoft 365 et utiliser les services.
     
-Vous pouvez utiliser PowerShell pour Microsoft 365 pour afficher des détails sur les plans de gestion des licences, les licences et les services disponibles dans votre organisation Microsoft 365. Pour plus d’informations sur les produits, fonctionnalités et services disponibles dans différents abonnements Office 365, voir Options de plan [Office 365.](https://go.microsoft.com/fwlink/p/?LinkId=691147)
+Vous pouvez utiliser PowerShell pour Microsoft 365 pour afficher des détails sur les plans de gestion des licences, les licences et les services disponibles dans votre organisation Microsoft 365. Pour plus d’informations sur les produits, fonctionnalités et services disponibles dans différents abonnements Office 365, voir Options de plan [Office 365.](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
@@ -99,7 +99,7 @@ $licenses[2].ServicePlans
 
 ENTERPRISEPREMIUM est la troisième ligne. Par conséquent, la valeur d’index est (3 - 1) ou 2.
 
-Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms convivial correspondants, voir Noms de produits et identificateurs de plan de service pour la [gestion des licences.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
+Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms convivial correspondants, voir Noms de produits et identificateurs de plan de service pour la [gestion des licences.](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
@@ -140,7 +140,7 @@ Le tableau suivant présente les plans de service Microsoft 365 et leurs noms co
 |**Plan de services**|**Description**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Applications Microsoft 365 pour les entreprises *(précédemment nommé Office 365 ProPlus)*  <br/> |
@@ -149,7 +149,7 @@ Le tableau suivant présente les plans de service Microsoft 365 et leurs noms co
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |
    
-Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms convivial correspondants, voir Noms de produits et identificateurs de plan de service pour la [gestion des licences.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
+Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms convivial correspondants, voir Noms de produits et identificateurs de plan de service pour la [gestion des licences.](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
 
 Pour afficher des détails sur les services Microsoft 365 disponibles dans un plan de gestion des licences spécifique, utilisez la syntaxe suivante.
   

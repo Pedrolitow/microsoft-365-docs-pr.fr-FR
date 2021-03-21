@@ -16,12 +16,12 @@ ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer l’IRM Exchange Online pour utiliser le service AD RMS (Active Directory Rights Management Service) local afin de répondre aux exigences de votre organisation.
-ms.openlocfilehash: be53b54328c2c1e08e51a84b7251e23c3e7468c3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 6a9759fce102c60dd766dd86ba8c9e6d4a02d85b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815441"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924988"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>Chiffrement du courrier Exchange Online avec AD RMS
 
@@ -31,7 +31,7 @@ La protection IRM peut être appliquée par les utilisateurs dans Microsoft Outl
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>Changements concernant le fonctionnement de l’IRM avec le chiffrement de messages Office 365 (OME) et Azure Active Directory
 
-Depuis septembre 2017, lorsque vous paramétrez les nouvelles fonctionnalités de chiffrement de messages Office 365 pour votre organisation, vous configurez également l'IRM pour son utilisation avec Azure Rights Management (Azure RMS). Vous ne configurez plus l'IRM avec Azure RMS de manière distincte. Désormais, l'OME et la gestion des droits fonctionnent conjointement de manière transparente. Pour plus de détails sur les nouvelles fonctionnalités, consultez la [FAQ sur le chiffrement de messages Office 365](https://docs.microsoft.com/microsoft-365/compliance/ome-faq). Si vous êtes prêt à commencer à utiliser les nouvelles fonctionnalités d'OME au sein de votre organisation, consultez [Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365 intégrées en haut de la Protection des informations Azure](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities).
+Depuis septembre 2017, lorsque vous paramétrez les nouvelles fonctionnalités de chiffrement de messages Office 365 pour votre organisation, vous configurez également l'IRM pour son utilisation avec Azure Rights Management (Azure RMS). Vous ne configurez plus l'IRM avec Azure RMS de manière distincte. Désormais, l'OME et la gestion des droits fonctionnent conjointement de manière transparente. Pour plus de détails sur les nouvelles fonctionnalités, consultez la [FAQ sur le chiffrement de messages Office 365](./ome-faq.md). Si vous êtes prêt à commencer à utiliser les nouvelles fonctionnalités d'OME au sein de votre organisation, consultez [Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365 intégrées en haut de la Protection des informations Azure](./set-up-new-message-encryption-capabilities.md).
   
 ## <a name="how-irm-works-with-exchange-online-and-active-directory-rights-management-services"></a>Fonctionnement de l’IRM avec Exchange Online et les services AD RMS (Active Directory Rights Management Services)
 
@@ -47,6 +47,4 @@ Après avoir activé la protection IRM, vous pouvez l'appliquer aux messages de 
     
 - **Les administrateurs peuvent utiliser les règles de protection de transport pour appliquer la protection IRM automatiquement à Outlook et à Outlook sur le web.** Vous pouvez créer des règles de protection de transport pour protéger des messages par IRM. Configurez l'action de la règle de protection de transport pour appliquer un modèle de stratégie de droits AD RMS aux messages qui répondent aux critères de la règle. Après avoir activé l'IRM, les modèles de stratégie de droits AD RMS de votre organisation peuvent être utilisés avec l'action de la règle appelée **Appliquer la protection des droits au message avec**.
     
-- **Les administrateurs peuvent créer des règles de protection Outlook.** Les règles de protection Outlook appliquent automatiquement la protection IRM aux messages dans Outlook 2010 (et non dans Outlook sur le web) en fonction de critères applicables au message, tels que le service de l'expéditeur, le destinataire et si les destinataires font partie ou non de l'organisation. Pour plus d'informations, consultez la rubrique [Create an Outlook Protection Rule](https://technet.microsoft.com/library/da64750d-faaf-44de-ad8c-888eba7fbdbf.aspx).
-    
-
+- **Les administrateurs peuvent créer des règles de protection Outlook.** Les règles de protection Outlook appliquent automatiquement la protection IRM aux messages dans Outlook 2010 (et non dans Outlook sur le web) en fonction de critères applicables au message, tels que le service de l'expéditeur, le destinataire et si les destinataires font partie ou non de l'organisation. Pour plus d'informations, consultez la rubrique [Create an Outlook Protection Rule](/exchange/create-an-outlook-protection-rule-exchange-2013-help).

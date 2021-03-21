@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Instructions d’utilisation de la segmentation de tunnel VPN avec Office 365 afin d’optimiser la connectivité d’Office 365 pour les utilisateurs distants.
-ms.openlocfilehash: 103a5cc36c9e981ccef5717971e32330078ed721
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 9f54d8836105896d8d00afc4a622975c007bda85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456386"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924187"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel VPN
 <!---
@@ -43,7 +43,7 @@ L’essentiel de cette approche consiste à offrir une méthode simple, permetta
 
 - Atténue immédiatement la cause principale de la majorité des problèmes de performances et de capacité réseau, signalés par les clients dans les architectures VPN d'entreprise, ayant un impact sur l'expérience utilisateur Office 365
   
-  La solution recommandée cible spécifiquement les points de terminaison du service Office 365 classés dans la catégorie **Optimiser** dans l’article [URL et plages d'adresses IP Office 365](https://aka.ms/o365ips). Le trafic vers ces points de terminaison est très sensible à la latence et à la limitation de la bande passante, et lui permettre de contourner le tunnel VPN peut considérablement améliorer l'expérience de l'utilisateur final et réduire la charge du réseau d’entreprise. Les connexions Office 365 qui ne constituent pas la majorité de la bande passante ou de l'empreinte de l'expérience utilisateur peuvent continuer à être acheminées via le tunnel VPN avec le reste du trafic lié à Internet. Si vous souhaitez en savoir plus, consultez l’article [la stratégie de segmentation de tunnel VPN](#the-vpn-split-tunnel-strategy).
+  La solution recommandée cible spécifiquement les points de terminaison du service Office 365 classés dans la catégorie **Optimiser** dans l’article [URL et plages d'adresses IP Office 365](./urls-and-ip-address-ranges.md). Le trafic vers ces points de terminaison est très sensible à la latence et à la limitation de la bande passante, et lui permettre de contourner le tunnel VPN peut considérablement améliorer l'expérience de l'utilisateur final et réduire la charge du réseau d’entreprise. Les connexions Office 365 qui ne constituent pas la majorité de la bande passante ou de l'empreinte de l'expérience utilisateur peuvent continuer à être acheminées via le tunnel VPN avec le reste du trafic lié à Internet. Si vous souhaitez en savoir plus, consultez l’article [la stratégie de segmentation de tunnel VPN](#the-vpn-split-tunnel-strategy).
 
 - Peut être configurée, testée et implémentée rapidement par les clients, sans infrastructure ou configuration d’application supplémentaires. 
 

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Résumé : Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles pour les clients utilisant des plans Office 365, y compris GCC (Government Community Cloud).'
 hideEdit: true
-ms.openlocfilehash: 826da75ea4f6991a3291e8b1e36d644fb19a7704
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 1c0a2a486bf6964edc9b94fd670c96ade161cacd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596955"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925267"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL et plages d’adresses IP Office 365
 
@@ -69,9 +69,9 @@ Les colonnes de données affichées sont :
 
 [Gestion des points de terminaison Office 365](managing-office-365-endpoints.md)
 
-[Terminaux généraux Microsoft Stream ](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
+[Terminaux généraux Microsoft Stream ](/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Surveiller la connectivité Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
+[Surveiller la connectivité Microsoft 365](./monitor-connectivity.md)
 
 [L'AC racine et l'AC intermédiaire se regroupent sur le système d'application tiers](../compliance/encryption-office-365-certificate-chains.md)
   

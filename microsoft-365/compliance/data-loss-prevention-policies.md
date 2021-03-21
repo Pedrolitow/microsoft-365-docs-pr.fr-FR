@@ -22,18 +22,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier, surveiller et protéger automatiquement les informations sensibles de votre organisation dans Office 365.
-ms.openlocfilehash: 75c2f4d81b3378d031adc394a9c8f7615d51079c
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7d526d5eeb74f0d31f375974824e7a76344bcd76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682797"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925808"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> Des fonctionnalités de protection contre la perte de données ont récemment été ajoutées aux messages de discussion et de canal Microsoft Teams pour les utilisateurs titulaires d’une licence de Conformité avancée Office 365, disponible sous la forme d’une option autonome et incluse dans Office 365 E5 et Microsoft 365 E5 Conformité. Pour en savoir plus sur les conditions d’octroi de licences, consultez [Conseils sur la gestion des licences des services de niveau client de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+> Des fonctionnalités de protection contre la perte de données ont récemment été ajoutées aux messages de discussion et de canal Microsoft Teams pour les utilisateurs titulaires d’une licence de Conformité avancée Office 365, disponible sous la forme d’une option autonome et incluse dans Office 365 E5 et Microsoft 365 E5 Conformité. Pour en savoir plus sur les conditions d’octroi de licences, consultez [Conseils sur la gestion des licences des services de niveau client de Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Pour respecter les normes de l'entreprise et les réglementations du secteur, les organisations doivent protéger les informations sensibles et empêcher leur divulgation accidentelle. Les informations sensibles peuvent être des données financières ou des informations d’identification personnelle (PII) telles que les numéros de carte de crédit, les numéros de sécurité sociale ou les dossiers médicaux. Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité et conformité Office 365 vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
   
@@ -204,7 +204,7 @@ En outre, vous pouvez également envoyer un rapport d’incident incluant les d�
   
 ![Page de configuration de rapports d’incident](../media/Alerts-and-incident-report.png)
 
-DLP n’analyse pas les messages électronique de la même façon que les éléments dans SharePoint Online ou OneDrive Entreprise. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident et d’alerte chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux e-mails, puis génère un rapport en cas de correspondance de stratégie. DLP* n’analyse *_pas_* et ne met pas en correspondance les e-mails existants stockés dans une boîte aux lettres ou une archive.
+DLP n’analyse pas les messages électronique de la même façon que les éléments dans SharePoint Online ou OneDrive Entreprise. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident et d’alerte chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux e-mails, puis génère un rapport en cas de correspondance de stratégie. DLP ***ne peut pas*** analyser ou mettre en correspondance les éléments de messagerie existants qui sont stockés dans une boîte aux lettres ou une archive.
   
 ## <a name="grouping-and-logical-operators"></a>Opérateurs logiques et opérateurs de regroupement
 
@@ -240,7 +240,7 @@ Vous pouvez rapidement ajouter un groupe, qui peut avoir ses propres conditions 
 
 Entre les groupes, vous pouvez choisir si les conditions dans un seul groupe ou tous les groupes doivent être satisfaites pour que le contenu corresponde à la règle.
   
-Par exemple, la stratégie _ *U.S. HIPAA** intégrée comporte une règle qui utilise un opérateur **ET** entre les groupes, puis identifie ainsi le contenu qui inclut : 
+Par exemple, le type d’informations sensibles intégrées pour la réglementation des États-Unis sur le **HIPAA** a une règle qui utilise un opérateur **ET** entre les groupes, de sorte qu’elle identifie le contenu qui contient : 
   
 - le groupe **identificateurs de données personnelles** (au moins un numéro de sécurité sociale **OU** numéro DEA) 
     
@@ -354,20 +354,20 @@ Lorsque vous utilisez une [étiquette de rétention](retention.md#retention-labe
 
 - L’étiquette de rétention doit être déjà créée et publiée avant de tenter de l’utiliser en tant que condition dans une stratégie DLP.
 - La synchronisation des étiquettes de rétention publiées peut prendre de un à sept jours. Pour plus d’informations, voir [Lorsque les étiquettes de rétention sont disponibles à l’application](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) pour les étiquettes de rétention publiées dans une stratégie de rétention, et [Temps nécessaire pour la prise d’effet des étiquettes de rétention](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) pour les étiquettes de rétention publiées automatiquement.
-- Nous **prenons en charge l’utilisation d’une étiquette de rétention dans une stratégie uniquement pour des éléments SharePoint et OneDrive** _.
+- L’utilisation d’une étiquette de rétention dans une stratégie **est prise en charge uniquement pour des éléments SharePoint et OneDrive**.
 
   ![Étiquettes comme condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   Vous souhaitez peut-être utiliser une étiquette de rétention dans une stratégie DLP si vous avez des éléments sous rétention et suppression auxquels vous voulez appliquer des contrôles supplémentaires, par exemple :
 
-  - Vous avez publié une étiquette de rétention nommée _*année fiscale 2018** qui, appliquée à des documents fiscaux de 2018 stockés dans SharePoint, les conserve pendant 10 ans, puis les supprime. Vous ne souhaitez pas non plus que ces éléments soient partagés à l’extérieur de votre organisation, ce que vous pouvez faire grâce à une stratégie DLP.
+  - Vous avez publié une étiquette de rétention nommée **année fiscale 2018** qui, lorsqu’elle est appliquée à des documents fiscaux de 2018 stockés dans SharePoint, les conserve pendant 10 ans, puis les supprime. Vous ne souhaitez pas non plus que ces éléments soient partagés à l’extérieur de votre organisation, ce que vous pouvez faire grâce à une stratégie DLP.
 
   > [!IMPORTANT]
   > L’erreur ci-après s’affiche si vous spécifiez une étiquette de rétention comme condition dans une stratégie DLP et que vous incluez également Exchange et/ou Teams comme emplacement : **« La protection du contenu étiqueté dans les messages électroniques et d’équipe n’est pas prise en charge. Supprimez l’étiquette ci-dessous ou désactivez Exchange ou Teams en tant qu’emplacement. »** Cela est dû au fait qu’Exchange transport n’évalue pas les métadonnées d’étiquette lors de l’envoi et de la distribution des messages. 
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette de confidentialité comme condition dans une stratégie DLP
 
-L'étiquette de confidentialité comme condition dans les stratégies DLP est actuellement en cours de préparation. [En savoir plus](https://docs.microsoft.com/microsoft-365/compliance/dlp-sensitivity-label-as-condition).
+L'étiquette de confidentialité comme condition dans les stratégies DLP est actuellement en cours de préparation. [En savoir plus](./dlp-sensitivity-label-as-condition.md).
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Relations entre cette fonctionnalité et d’autres fonctionnalités
 
@@ -497,10 +497,10 @@ Au fur et à mesure de l’ajout ou de la modification de documents dans ses sit
   
 <!-- conflict with a DLP policy is bad wording --> Enfin, les documents peuvent entrer en conflit avec une stratégie DLP, mais ils peuvent également y devenir conformes. Par exemple, si une personne ajoute des numéros de carte de crédit à un document, une stratégie DLP peut alors bloquer l’accès au document automatiquement. Toutefois, si cette personne supprime ensuite les informations sensibles, l’action (dans ce cas, le blocage) est annulée automatiquement à la prochaine évaluation du document par rapport à la stratégie.
   
-La protection contre la perte de données évalue le contenu pouvant être indexé. Pour plus d’informations sur les types de fichiers analysés par défaut, consultez la rubrique [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
+La protection contre la perte de données évalue le contenu pouvant être indexé. Pour plus d’informations sur les types de fichiers analysés par défaut, consultez la rubrique [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Par défaut, le partage externe de nouveaux fichiers dans SharePoint peut être bloqué jusqu’à ce qu’au moins une stratégie DLP analyse le nouvel élément. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](https://docs.microsoft.com/sharepoint/sensitive-by-default). 
+> Par défaut, le partage externe de nouveaux fichiers dans SharePoint peut être bloqué jusqu’à ce qu’au moins une stratégie DLP analyse le nouvel élément. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Évaluation des stratégies dans Exchange Online, Outlook et Outlook sur le web
 
@@ -542,19 +542,19 @@ Ces autorisations sont requises uniquement pour créer et appliquer une stratég
 
 Pour utiliser la plupart des applets de commande du Centre de conformité et de sécurité, vous devez :
   
-1. [Vous connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Vous connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](/powershell/exchange/connect-to-scc-powershell).
     
-2. Utiliser l’une de ces [applets de commande de stratégie et de conformité DLP](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection).
+2. Utiliser l’une de ces [applets de commande de stratégie et de conformité DLP](/powershell/module/exchange/export-dlppolicycollection).
     
 Toutefois, les rapports DLP doivent extraire des données de Microsoft 365, y compris Exchange Online. Pour cette raison, les **applets de commande des rapports DLP sont disponibles dans Exchange Online Powershell (et non dans le centre de conformité &amp; sécurité Powershell)**. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
   
-1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Utilisez l’une de ces applets de commande pour les rapports DLP :
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport)
+    - [Get-DlpDetectionsReport](/powershell/module/exchange/Get-DlpDetectionsReport)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport)
+    - [Get-DlpDetailReport](/powershell/module/exchange/Get-DlpDetailReport)
     
 ## <a name="more-information"></a>Plus d’informations
 

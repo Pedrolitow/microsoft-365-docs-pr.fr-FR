@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Découvrir comment accéder à Azure Active Directory, qui est inclus dans l’abonnement payant de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5bc1c57c0c40df03d27471aafd222908ba9d5887
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528150"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925450"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Utiliser votre abonnement Azure Active Directory gratuit
 
@@ -48,8 +48,8 @@ Pour accéder au Portail Microsoft Azure (dans l'étape 1 ci-dessous), utilisez 
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Un abonnement Azure Active Directory gratuit n’inclut pas le rapport d’activité des connexions. Pour enregistrer l’activité de connexion (pouvant être utile lors d’une violation de données), vous avez besoin d’un abonnement Azure Active Directory Premium. Pour plus d’informations, consultez [Pendant combien de temps les données sont-elles conservées par Azure AD ?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
+- Un abonnement Azure Active Directory gratuit n’inclut pas le rapport d’activité des connexions. Pour enregistrer l’activité de connexion (pouvant être utile lors d’une violation de données), vous avez besoin d’un abonnement Azure Active Directory Premium. Pour plus d’informations, consultez [Pendant combien de temps les données sont-elles conservées par Azure AD ?](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 - Vous pouvez également accéder au Centre d’administration **Azure Active Directory** à partir du Centre d’administration Microsoft 365. Dans le volet de navigation gauche du Centre d’administration Microsoft 365, cliquez sur **Centres d’administration**\>**Azure Active Directory**.
 
-- Pour savoir comment gérer les utilisateurs et les groupes et exécuter d’autres tâches de gestion des répertoires, consultez l’article [Gérer votre répertoire Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-administer).
+- Pour savoir comment gérer les utilisateurs et les groupes et exécuter d’autres tâches de gestion des répertoires, consultez l’article [Gérer votre répertoire Azure AD](/azure/active-directory/active-directory-administer).

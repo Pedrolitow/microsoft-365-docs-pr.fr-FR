@@ -15,12 +15,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu corriger les règles de flux de messagerie lent dans le Centre de sécurité & conformité pour identifier et corriger les règles de flux de messagerie inefficaces ou rompues (également appelées règles de transport) dans leur organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a50fa0d36cb025f5d0627a2212254b9d08dc5d9c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 22ce3549077ad9b358165245159393d3e25e61c8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290692"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924105"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Résoudre les problèmes de règles de flux de messagerie dans le Centre de sécurité & conformité
 
@@ -52,9 +52,9 @@ Lorsque vous cliquez **sur Afficher les détails** sur le widget, un flyout s’
 - **Temps moyen passé sur chaque message**
 - **Temps moyen passé sur un message**: valeur intermédiaire qui sépare la moitié supérieure de la moitié inférieure des données de temps.
 
-![Volant de détails qui s’affiche après avoir cliqué sur Afficher les détails sur l’aperçu des règles de flux de messagerie lent fix](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+![Volant détails qui s’affiche après avoir cliqué sur Afficher les détails sur l’aperçu des règles de flux de messagerie lent](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-Pour plus d’informations sur les conditions et les exceptions dans les règles de flux de messagerie, voir Conditions et exceptions de règle de flux de messagerie [(prédicats) dans Exchange Online.](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+Pour plus d’informations sur les conditions et les exceptions dans les règles de flux de messagerie, voir Conditions et exceptions des règles de flux de messagerie [(prédicats) dans Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
 ## <a name="see-also"></a>Voir aussi
 

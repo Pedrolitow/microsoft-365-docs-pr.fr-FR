@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
-ms.openlocfilehash: 79435343df2d2cb3bc027a92acce44eb74b4d91c
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 63909be2f88ef5f9c42dcd07e127309b4b5b17e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454529"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925470"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -63,7 +63,7 @@ Lorsque vous créez une stratégie DLP, vous pouvez activer les **notifications 
   
 4. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles dont vous avez \> besoin.
     
-    Pour commencer avec un modèle vide, choisissez **Stratégie** \> **personnalisée personnalisée** \> **suivante.**
+    Pour commencer avec un modèle vide, sélectionnez **Stratégie** \> **personnalisée personnalisée** \> **suivante.**
     
 5. Nommez la stratégie \> **Suivant**.
     
@@ -107,9 +107,9 @@ Les notifications ont une ligne d’objet qui commence par l’action prise, tel
   
 ![Message de notification](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
-Par défaut, les notifications affichent un texte semblable à ce qui suit pour un élément sur un site. Le texte de notification est configuré séparément pour chaque règle, de sorte que le texte affiché diffère en fonction de la règle qui correspond.
+Par défaut, les notifications affichent le texte suivant pour un élément sur un site. Le texte de notification est configuré séparément pour chaque règle, de sorte que le texte affiché diffère en fonction de la règle qui correspond.
 
-|**Si la règle de stratégie DLP le fait...**|**Ensuite, la notification par défaut pour les documents SharePoint ou OneDrive Entreprise indique ceci...**|**La notification par défaut pour les messages Outlook indique alors ceci...**|
+|**Si la règle de stratégie DLP le fait...**|**La notification par défaut pour les documents SharePoint ou OneDrive Entreprise indique alors ceci...**|**La notification par défaut pour les messages Outlook indique alors ceci...**|
 |:-----|:-----|:-----|
 |Envoie une notification, mais n’autorise pas le remplacement  <br/> |Cet élément est en conflit avec une stratégie de votre organisation.  <br/> |Votre message électronique est en conflit avec une stratégie de votre organisation.  <br/> |
 |Bloque l’accès, envoie une notification et autorise le remplacement  <br/> |Cet élément est en conflit avec une stratégie de votre organisation. Si vous ne résolvez pas ce conflit, l’accès à ce fichier peut être bloqué.  <br/> |Votre message électronique est en conflit avec une stratégie de votre organisation. Le message n’a pas été remis à tous les destinataires.  <br/> |
@@ -117,7 +117,7 @@ Par défaut, les notifications affichent un texte semblable à ce qui suit pour 
    
 ### <a name="custom-email-notification"></a>Notification par courrier électronique personnalisé
 
-Vous pouvez créer une notification par courrier électronique personnalisée au lieu d’envoyer la notification par courrier électronique par défaut à vos utilisateurs finaux ou administrateurs. La notification par courrier électronique personnalisée prend en charge le code HTML et présente une limite de 5 000 caractères. Vous pouvez utiliser du code HTML pour inclure des images, la mise en forme et d’autres marques dans la notification.
+Vous pouvez créer une notification par courrier électronique personnalisée au lieu d’envoyer la notification par courrier électronique par défaut à vos utilisateurs finaux ou administrateurs. La notification par courrier électronique personnalisé prend en charge le code HTML et présente une limite de 5 000 caractères. Vous pouvez utiliser du code HTML pour inclure des images, la mise en forme et d’autres marques dans la notification.
   
 Vous pouvez également utiliser les jetons suivants pour vous aider à personnaliser la notification par courrier électronique. Ces jetons sont des variables qui sont remplacées par des informations spécifiques dans la notification envoyée.
 
@@ -137,13 +137,13 @@ Pour chaque règle d’une stratégie DLP, vous pouvez configurer des conseils d
     
 - Autorisez la personne à remplacer la stratégie DLP. Si vous le souhaitez, vous pouvez :
     
-  - Exiger que la personne entre une justification professionnelle pour le remplacement de la stratégie. Ces informations sont consignées et vous pouvez les afficher dans les rapports DLP de la section **Rapports** du Centre de conformité &amp; de sécurité. 
+  - Exiger que la personne entre une justification professionnelle pour le remplacement de la stratégie. Ces informations sont consignées et vous pouvez les afficher dans les rapports DLP de la section **Rapports** du Centre de conformité &amp; de la sécurité. 
     
   - Autorisez la personne à signaler un faux positif et à remplacer la stratégie DLP. Ces informations sont également enregistrées pour les rapports, afin que vous pouvez utiliser des faux positifs pour affiner vos règles.
     
 ![Options des conseils de stratégie](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
   
-Par exemple, il se peut qu’une stratégie DLP soit appliquée aux sites OneDrive Entreprise qui détecte des informations d’identification personnelle (PII) et que cette stratégie possède trois règles :
+Par exemple, vous pouvez avoir une stratégie DLP appliquée aux sites OneDrive Entreprise qui détecte les informations d’identification personnelle (PII), et cette stratégie a trois règles :
   
 1. Première règle : si moins de cinq instances de ces informations sensibles sont détectées dans un document et que le document est partagé avec des personnes au sein de l’organisation, l’action Envoyer une **notification** affiche un conseil de stratégie. Pour les conseils de stratégie, aucune option de remplacement n’est nécessaire, car cette règle consiste simplement à avertir les personnes et à ne pas bloquer l’accès. 
     
@@ -153,7 +153,7 @@ Par exemple, il se peut qu’une stratégie DLP soit appliquée aux sites OneDri
     
 Voici quelques points à comprendre sur l’utilisation d’un conseil de stratégie pour remplacer une règle :
   
-- L’option de remplacement est par règle et remplace toutes les actions de la règle (à l’exception de l’envoi d’une notification, qui ne peut pas être substituer).
+- L’option de remplacement est par règle et elle remplace toutes les actions de la règle (à l’exception de l’envoi d’une notification, qui ne peut pas être substituer).
     
 - Il est possible que le contenu corresponde à plusieurs règles dans une stratégie DLP, mais seul le conseil de stratégie de la règle la plus restrictive et la plus prioritaire s’affiche. Par exemple, un conseil de stratégie à partir d’une règle qui bloque l’accès au contenu est affiché sur un conseil de stratégie à partir d’une règle qui envoie simplement une notification. Cela évite que les personnes voient une cascade de conseils de stratégie.
     
@@ -203,7 +203,7 @@ Les conseils de stratégie fonctionnent si les informations sensibles apparaisse
   
 ![Conseil de stratégie indiquant qu’une pièce jointe est en conflit avec une stratégie DLP](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
-Si les conseils de stratégie sont configurés pour autoriser le remplacement, vous pouvez choisir Afficher le remplacement des **détails** en entrant une justification professionnelle ou signaler un remplacement \>  \> faux \> **positif.**
+Si les conseils de stratégie sont configurés pour autoriser le remplacement, vous pouvez choisir Afficher le remplacement des **détails** et entrer une justification professionnelle ou signaler un remplacement \>  \> faux \> **positif.**
   
 ![Conseil de stratégie dans le message développé pour afficher l’option Remplacer](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
@@ -230,7 +230,7 @@ Notez que bien que les conseils de stratégie ne peuvent dessiner qu’à partir
   
 ### <a name="default-text-for-policy-tips-in-email"></a>Texte par défaut pour les conseils de stratégie dans le courrier électronique
 
-Par défaut, les conseils de stratégie affichent un texte semblable à ce qui suit pour le courrier électronique.
+Par défaut, les conseils de stratégie affichent un texte semblable à celui-ci pour le courrier électronique.
 
 |**Si la règle de stratégie DLP le fait...**|**Le conseil de stratégie par défaut indique alors ceci...**|
 |:-----|:-----|
@@ -286,7 +286,7 @@ Vous pouvez personnaliser le texte des conseils de stratégie séparément de la
 - [Vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md)
     
 - [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
-- [Conditions, exceptions et actions de stratégie DLP (aperçu)](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
+- [Conditions, exceptions et actions de stratégie DLP (aperçu)](./dlp-microsoft-teams.md?view=o365-worldwide)
     
 - [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
     

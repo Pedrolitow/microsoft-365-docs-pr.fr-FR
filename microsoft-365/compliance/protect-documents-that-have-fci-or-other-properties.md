@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser une stratégie de protection contre la perte de données (DLP) pour protéger les documents qui ont des propriétés d’un système tiers.
-ms.openlocfilehash: 971d2a1dd4f69f7bbd2598e31fc99c9c5cfe1eda
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 2d66a0a863b2076044a5c1d1cb9c3d4e8c29a186
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423797"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925560"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés
 
@@ -55,7 +55,7 @@ Exemples
 
 Ceci est important car la DLP utilise le robot de recherche pour identifier et classer les informations sensibles sur vos sites, puis stocke ces informations sensibles dans une partie sécurisée de l’index de recherche. Lorsque vous chargez un document vers Office 365, SharePoint crée automatiquement les propriétés analysées basées sur les propriétés du document. En revanche, pour utiliser une ICF ou une autre propriété dans une stratégie DLP, la propriété analysée doit être mappée sur une propriété gérée afin que le contenu avec cette propriété soit conservé dans l’index.
 
-Pour plus d’informations sur la recherche et les propriétés gérées, voir Gérer le schéma [de recherche dans SharePoint Online.](https://go.microsoft.com/fwlink/p/?LinkID=627454)
+Pour plus d’informations sur la recherche et les propriétés gérées, voir Gérer le schéma [de recherche dans SharePoint Online.](/sharepoint/manage-search-schema)
 
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>Étape 1 : chargement d’un document avec la propriété nécessaire vers Office 365
 
@@ -97,7 +97,7 @@ D’abord, ils suivent les étapes ci-dessus pour créer une propriété gérée
 
 Ensuite, ils créent une stratégie DLP avec deux règles qui utilisent toutes deux la condition **Propriétés document contiennent l’une de ces valeurs**:
 
-- **Contenu des piI DCI - Élevé, Modéré** La première règle limite l’accès au document  si la propriété de  classification FCI Informations d’identification personnelle est élevée ou modérée et si le document est partagé avec des personnes **extérieures** à l’organisation.
+- **Contenu des pii FCI - Élevé, Modéré** La première règle limite l’accès au document  si la propriété de  classification FCI Informations d’identification personnelle est élevée ou modérée et si le document est partagé avec des personnes **extérieures** à l’organisation.
 
 - **Contenu des pii FCI - Faible** La deuxième règle envoie une notification au propriétaire du document si la propriété de classification FCI **Informations** d’identification personnelle est faible et que le document est partagé avec des personnes **extérieures** à l’organisation.
 
@@ -105,9 +105,9 @@ Ensuite, ils créent une stratégie DLP avec deux règles qui utilisent toutes d
 
 Les propriétés **de document** de condition contiennent l’une de ces valeurs n’est temporairement pas disponible dans l’interface utilisateur du Centre de conformité de sécurité, mais vous pouvez toujours utiliser cette condition à l’aide &amp; de PowerShell. Vous pouvez utiliser les cmdlets pour utiliser une stratégie DLP et utiliser les cmdlets avec le paramètre pour ajouter la condition Que les propriétés document contiennent l’une de  `New\Set\Get-DlpCompliancePolicy`  `New\Set\Get-DlpComplianceRule` ces  `ContentPropertyContainsWords` **valeurs**.
 
-Pour plus d’informations sur ces cmdlets, voir [ &amp; cmdlets du Centre](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)de conformité de sécurité.
+Pour plus d’informations sur ces cmdlets, voir [ &amp; cmdlets du Centre](/powershell/exchange/exchange-online-powershell)de conformité de sécurité.
 
-1. [Se connecter au Centre de conformité &amp; de sécurité à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Se connecter au Centre de conformité &amp; de sécurité à l’aide de PowerShell à distance](/powershell/exchange/connect-to-scc-powershell)
 
 2. Créez la stratégie à l’aide  `New-DlpCompliancePolicy` de .
 
@@ -117,7 +117,7 @@ Ce PowerShell crée une stratégie DLP qui s’applique à tous les emplacements
    New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
    ```
 
-3. Créez les deux règles décrites ci-dessus à l’aide de , où une règle est pour la valeur Faible, et une autre règle pour les valeurs `New-DlpComplianceRule` **Élevée** **et** Modéré. 
+3. Créez les deux règles décrites ci-dessus à l’aide de , où une règle est pour la valeur Faible, et une autre règle pour les valeurs Élevée `New-DlpComplianceRule` **et** Modéré.  
 
    Voici un exemple PowerShell qui crée ces deux règles. Les paires nom/valeur de propriété sont entre guillemets et un nom de propriété peut spécifier plusieurs valeurs séparées par des virgules sans espace, comme  `"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
 
@@ -125,7 +125,7 @@ Ce PowerShell crée une stratégie DLP qui s’applique à tous les emplacements
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows Server FCI inclut de nombreuses propriétés intégrées, y compris les informations **d’identification** personnelle utilisées dans cet exemple. Les valeurs possibles pour chaque propriété peuvent être différentes pour chaque organisation. Les **valeurs Élevée,** **Modéré** et **Faible** utilisées ici ne sont qu’un exemple. Pour votre organisation, vous pouvez afficher les propriétés de classification des CI de Windows Server avec leurs valeurs possibles dans le Gestionnaire de ressources du serveur de fichiers sur le serveur de fichiers Windows Server. Pour plus d’informations, voir [Créer une propriété de classification.](https://go.microsoft.com/fwlink/p/?LinkID=627456)
+   Windows Server FCI inclut de nombreuses propriétés intégrées, y compris les informations **d’identification** personnelle utilisées dans cet exemple. Les valeurs possibles pour chaque propriété peuvent être différentes pour chaque organisation. Les **valeurs Élevée,** **Modéré** et **Faible** utilisées ici ne sont qu’un exemple. Pour votre organisation, vous pouvez afficher les propriétés de classification des CI de Windows Server avec leurs valeurs possibles dans le Gestionnaire de ressources du serveur de fichiers sur le serveur de fichiers Windows Server. Pour plus d’informations, voir [Créer une propriété de classification.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11))
 
 Lorsque vous avez terminé, votre stratégie doit avoir deux nouvelles règles qui utilisent toutes les deux les propriétés **document contiennent l’une de ces conditions de** valeurs. Cette condition n’apparaîtra pas dans l’interface utilisateur, bien que les autres conditions, actions et paramètres apparaissent.
 
@@ -135,14 +135,14 @@ Une règle bloque l’accès au contenu pour lequel la propriété **Information
 
 ## <a name="after-you-create-the-dlp-policy"></a>Après avoir créé la stratégie DLP
 
-Les étapes des sections précédentes créent une stratégie DLP qui détectera rapidement le contenu avec cette propriété, mais uniquement si ce contenu vient d’être téléchargé (de sorte que le contenu soit indexé) ou si ce contenu est ancien mais simplement modifié (afin que le contenu soit ré-indexé).
+Les étapes des sections précédentes créent une stratégie DLP qui détectera rapidement le contenu avec cette propriété, mais uniquement si ce contenu vient d’être téléchargé (afin que le contenu soit indexé) ou si ce contenu est ancien mais simplement modifié (afin que le contenu soit de nouveau indexé).
 
 Pour détecter tout le contenu avec cette propriété, vous voudrez peut-être demander manuellement la réindexation de votre bibliothèque, site ou collection de sites, afin que la stratégie DLP connaisse tout le contenu avec cette propriété. Dans SharePoint Online, le contenu est automatiquement analysé selon une planification d’analyse définie. Le robot récupère le contenu qui a été modifié depuis la dernière analyse et met à jour l’index. Si vous avez besoin que votre stratégie DLP protège le contenu avant la prochaine analyse planifiée, vous pouvez suivre cette procédure.
 
 > [!CAUTION]
 > La réindexation d’un site peut entraîner une charge importante sur le système de recherche. Ne ré-indexez pas votre site, sauf si votre scénario l’exige absolument.
 
-Pour plus d’informations, voir [Demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](https://go.microsoft.com/fwlink/p/?LinkID=627457).
+Pour plus d’informations, voir [Demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](/sharepoint/crawl-site-content).
 
 ### <a name="reindex-a-site-optional"></a>Réindexer un site (facultatif)
 

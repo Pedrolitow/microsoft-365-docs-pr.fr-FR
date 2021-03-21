@@ -18,16 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: e66ec8c48e309daeb15aad5fcc475edcb2b8bb35
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 8df63e1a580b57aa263c11dccaed947f46f2cbb9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487659"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926043"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Configuration de base d’une entreprise simulée
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 pour les entreprises et Office 365 Entreprise.*
+*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 entreprise et Office 365 Entreprise.*
 
 Cet article explique comment créer un environnement simplifié pour Microsoft 365 pour entreprise qui inclut :
 
@@ -49,7 +49,7 @@ Vous pouvez utiliser l’environnement résultant pour tester les fonctionnalit�
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Phase 1: Créer un intranet simulé
 
-Dans cette phase, créez un intranet simulé dans les services d’infrastructure Azure qui inclut un contrôleur de domaine Active Directory Domain Services (AD DS), un serveur d’applications et un ordinateur client.
+Dans cette phase, créez un intranet simulé dans les services d’infrastructure Azure qui inclut un contrôleur de domaine AD DS (Active Directory Domain Services), un serveur d’applications et un ordinateur client.
 
 Vous utiliserez ces ordinateurs dans d’autres guides de laboratoire de [test Microsoft 365](m365-enterprise-test-lab-guides.md) pour entreprise pour configurer et montrer l’identité hybride et d’autres fonctionnalités.
 
@@ -57,9 +57,9 @@ Vous utiliserez ces ordinateurs dans d’autres guides de laboratoire de [test M
 
 Dans cette méthode, vous utilisez un modèle Azure Resource Manager pour créer l’intranet simulé. Les modèles Azure Resource Manager contiennent toutes les instructions pour créer l’infrastructure réseau Azure, les machines virtuelles et leur configuration.
 
-Avant de déployer le modèle, lisez la [page DU MODÈLE README](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) et préparez les informations suivantes :
+Avant de déployer le modèle, lisez la [page README du](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) modèle et préparez les informations suivantes :
 
-- Nom de domaine DNS public de votre environnement de test (testlab). \<*your public domain*> Vous devez entrer ce nom dans le champ **Nom de domaine** de la page **Déploiement** personnalisé.
+- Nom de domaine DNS public de votre environnement de test (testlab). \<*your public domain*> Vous devez entrer ce nom dans le champ Nom de **domaine** de la page **Déploiement** personnalisé.
 - Un préfixe d’étiquette DNS pour les URL d’adresses IP publiques de vos machines virtuelles. Vous devez entrer cette étiquette dans le **préfixe d’étiquette Dns** champ de la page **déploiement Personnalisé**.
 
 Après avoir lu les instructions, sélectionnez **Déployer sur Azure** sur la page MODÈLE [README](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) pour commencer.
@@ -84,7 +84,7 @@ Dans cette étape, vous allez créer un réseau virtuel Azure et ajouter DC1, un
 Tout d’abord, démarrez une invite de commandes Windows PowerShell sur votre ordinateur local.
   
 > [!NOTE]
-> Les ensembles de commandes suivants utilisent la dernière version d’Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> Les ensembles de commandes suivants utilisent la dernière version d’Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](/powershell/azureps-cmdlets-docs/). 
   
 Connectez-vous à votre compte Azure avec la commande suivante.
   
@@ -160,7 +160,7 @@ Vous serez invité à indiquer un nom d’utilisateur et un mot de passe pour le
   
 Ensuite, connectez-vous à la machine virtuelle DC1 :
   
-1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez **Groupes** de ressources > <***le nom*** de votre nouveau groupe de ressources> > **DC1**  >  **Connect**.
+1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez Groupes de **ressources** > <le nom de votre nouveau groupe de ressources _ ***> > _* DC1**  >  **Connect**.
     
 2. Dans le volet ouvert, sélectionnez **Télécharger le fichier RDP.** Ouvrez le fichier DC1.rdp qui est téléchargé, puis sélectionnez **Se connecter.**
     
@@ -337,7 +337,7 @@ Ensuite, vérifiez que vous pouvez accéder aux ressources web et de partage de 
   
 1. Dans le Gestionnaire de serveur, dans le volet d’arborescence, sélectionnez **Serveur local.**
     
-2. Dans **Les propriétés de CLIENT1,** **sélectionnez Sur** en plus de la configuration de sécurité renforcée **d’IE.**
+2. Dans **les propriétés de CLIENT1,** **sélectionnez Sur** en plus de la configuration de sécurité renforcée **d’IE.**
     
 3. Dans **la configuration de sécurité renforcée d’Internet Explorer,** sélectionnez **Off** pour les administrateurs et les **utilisateurs,** puis **sélectionnez OK**. 
     
@@ -367,7 +367,7 @@ Durant cette phase, vous allez créer un nouvel abonnement Microsoft 365 E5 qu
 
 - Utiliser un abonnement de production de Microsoft 365 E5 distinct avec un nombre réduit de licences.
 
-  Il s’agit d’un coût supplémentaire, mais garantit que vous avez un environnement de test de travail qui n’expire pas ; vous pouvez essayer des fonctionnalités, des configurations et des scénarios. Vous pouvez utiliser le même environnement de test à long terme pour les preuves de concept, la démonstration aux pairs et à la gestion, ainsi que pour le développement et les tests d’applications. Il s’agit de la méthode recommandée.
+  Il s’agit d’un coût supplémentaire, mais garantit que vous avez un environnement de test de travail qui n’expire pas ; vous pouvez essayer des fonctionnalités, des configurations et des scénarios. Vous pouvez utiliser le même environnement de test à long terme pour les preuves de concept, la démonstration aux pairs et à la gestion, ainsi que pour le développement et les tests d’applications. Il s'agit de la méthode recommandée.
 
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Inscription à un abonnement d’évaluation Office 365 E5
 
@@ -381,7 +381,7 @@ Pour configurer un abonnement d’évaluation Office 365 E5, suivez les instru
 
 Si vous n’avez besoin que d’un environnement de test Office 365, vous n’avez pas besoin de lire le reste de cet article.
 
-Pour obtenir des guides de laboratoire de test supplémentaires qui s’appliquent à Microsoft 365 et Office 365, consultez les Guides de laboratoire de [test Microsoft 365 pour](m365-enterprise-test-lab-guides.md)entreprise.
+Pour obtenir des guides de laboratoire de test supplémentaires qui s’appliquent à Microsoft 365 et Office 365, consultez les guides de laboratoire de [test Microsoft 365 pour](m365-enterprise-test-lab-guides.md)entreprise.
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Ajouter un abonnement d’évaluation de Microsoft 365 E5.
 
@@ -400,7 +400,7 @@ Votre configuration finale ressemble à ceci :
   
 ![Phase 2 de la configuration de base de l’entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-Vous êtes maintenant prêt à tester des fonctionnalités supplémentaires de [Microsoft 365 pour entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
+Vous êtes maintenant prêt à expérimenter des fonctionnalités supplémentaires de [Microsoft 365 pour entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
   
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -416,4 +416,4 @@ Découvrez les nouveaux ensembles de guides pour les tests de laboratoire :
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

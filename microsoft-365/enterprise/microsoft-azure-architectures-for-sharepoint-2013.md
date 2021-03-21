@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: Découvrez les types de solutions SharePoint 2013 qui peuvent être hébergées sur des machines virtuelles Microsoft Azure et comment configurer Azure pour en héberger une.
-ms.openlocfilehash: 37d7eb2a746e30ad560949a933783beb6b971a08
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: eed74e2dcbe383f0f63e7f6ea2fc70fe7b51b1b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695891"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924175"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architectures Microsoft Azure pour SharePoint 2013
 
@@ -56,9 +56,9 @@ Pour des solutions et des charges de travail de collaboration et intranet, envis
 
 Bien que cet article utilise des exemples de topologies SharePoint, vous pouvez utiliser ces concepts de conception avec n'importe quelle topologie de batterie de serveurs SharePoint. Avant de concevoir l'environnement Azure, suivez les instructions suivantes en matière de topologie, d'architecture, de capacité et de performances pour concevoir la batterie de serveurs SharePoint :
   
-- [Conception de l'architecture pour les professionnels de l'informatique SharePoint 2013](https://technet.microsoft.com/sharepoint/fp123594.aspx)
+- [Conception de l'architecture pour les professionnels de l'informatique SharePoint 2013](/SharePoint/technical-reference/technical-diagrams)
     
-- [Plan for performance and capacity management in SharePoint Server 2013](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Plan for performance and capacity management in SharePoint Server 2013](/SharePoint/administration/performance-planning-in-sharepoint-server-2013)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Déterminer le type de domaine Active Directory
 
@@ -129,7 +129,7 @@ Le tableau suivant fournit des recommandations concernant la configuration de ce
 |Adresses IP  <br/> |Utilisez des adresses IP statiques et configurez le réseau virtuel pour affecter ces adresses aux machines virtuelles du réseau virtuel une fois que les contrôleurs de domaine ont été configurés.  <br/> |
    
 > [!IMPORTANT]
-> Avant de déployer Active Directory dans Azure, consultez la rubrique [Recommandations en matière de déploiement de Windows Server Active Directory sur des machines virtuelles Azure](https://go.microsoft.com/fwlink/p/?linkid=392681). Ces recommandations vous aideront à déterminer si une architecture différente ou des paramètres de configuration différents sont nécessaires pour votre solution. 
+> Avant de déployer Active Directory dans Azure, consultez la rubrique [Recommandations en matière de déploiement de Windows Server Active Directory sur des machines virtuelles Azure](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100). Ces recommandations vous aideront à déterminer si une architecture différente ou des paramètres de configuration différents sont nécessaires pour votre solution. 
   
 ## <a name="add-the-sharepoint-farm"></a>Ajouter la batterie de serveurs SharePoint
 
@@ -219,10 +219,8 @@ Ce schéma illustre la batterie de serveurs SharePoint implémentée dans les se
   
 ## <a name="see-also"></a>Voir aussi
 
-[Centre de solutions et d'architecture Microsoft 365](../solutions/solution-architecture-center.md)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   
 [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
 [Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
-
-

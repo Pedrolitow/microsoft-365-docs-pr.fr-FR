@@ -12,16 +12,16 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 0d46459f61b29c6bdb457c7e0c82e9147e7709ba
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 668ca8e26371d80f068c2723357ce3ee407db03a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126139"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925550"
 ---
 # <a name="manage-information-barrier-policies"></a>Gérer les stratégies de obstacle à l’information
 
-Une fois que vous avez défini des stratégies d’obstacle aux [informations,](information-barriers-policies.md)vous [](information-barriers-troubleshooting.md) devrez peut-être apporter des modifications à ces stratégies ou à vos segments d’utilisateurs, dans le cadre du dépannage ou de la maintenance régulière. Utilisez cet article comme guide.
+Une fois que vous avez défini des stratégies d’obstacle aux [informations,](information-barriers-policies.md)vous [](information-barriers-troubleshooting.md) devrez peut-être apporter des modifications à ces stratégies ou à vos segments d’utilisateurs, dans le cadre de la résolution des problèmes ou d’une maintenance régulière. Utilisez cet article comme guide.
 
 ## <a name="what-do-you-want-to-do"></a>Que souhaitez-vous faire ?
 
@@ -32,12 +32,12 @@ Une fois que vous avez défini des stratégies d’obstacle aux [informations,](
 | [Modifier une stratégie](#edit-a-policy) | Modifiez une stratégie d’obstacles aux informations lorsque vous voulez modifier le fonctionnement d’une stratégie.<br/>Par exemple, au lieu de bloquer les communications entre deux segments, vous pouvez décider de n’autoriser les communications qu’entre certains segments. |
 | [Définir une stratégie sur l’état inactif](#set-a-policy-to-inactive-status) |Définissez une stratégie sur l’état inactif lorsque vous souhaitez apporter des modifications à une stratégie ou lorsque vous ne souhaitez pas qu’une stratégie soit en vigueur. |
 | [Supprimer une stratégie](#remove-a-policy) | Supprimez une stratégie d’obstacle aux informations lorsque vous n’avez plus besoin d’une stratégie particulière. |
-| [Arrêter une application de stratégie](#stop-a-policy-application) | Faites cette action lorsque vous souhaitez arrêter le processus d’application des stratégies de obstacle à l’information.<br/> L’arrêt d’une application de stratégie n’est pas instantané et n’annulera pas les stratégies déjà appliquées aux utilisateurs. |
+| [Arrêter une application de stratégie](#stop-a-policy-application) | Faites cette action lorsque vous souhaitez arrêter le processus d’application des stratégies d’obstacle à l’information.<br/> L’arrêt d’une application de stratégie n’est pas instantané et n’annulera pas les stratégies déjà appliquées aux utilisateurs. |
 | [Définir des stratégies pour les obstacles à l’information](information-barriers-policies.md) | Définissez une stratégie d’obstacle à l’information lorsque vous n’avez pas déjà mis en place de telles stratégies et que vous devez restreindre ou limiter les communications entre des groupes d’utilisateurs spécifiques. |
 | [Résolution des problèmes de cloisonnement de l’information](information-barriers-troubleshooting.md) | Reportez-vous à cet article lorsque vous êtes face à des problèmes inattendus avec les obstacles à l’information. |
 
 > [!IMPORTANT]
-> Pour effectuer les tâches décrites dans cet article, vous devez avoir un rôle approprié, tel que l’un des suivants :<br/>- Administrateur général Microsoft 365 Entreprise<br/>- Administrateur général<br/>- Administrateur de conformité<br/>- Gestion de la conformité DUES (il s’agit d’un nouveau rôle !)<br><br>Pour en savoir plus sur les conditions préalables pour les obstacles à l’information, voir [Conditions préalables (pour les stratégies d’obstacle à l’information).](information-barriers-policies.md#prerequisites)<br><br> Veillez à vous connecter au Centre de [sécurité & conformité PowerShell.](/powershell/exchange/connect-to-scc-powershell)
+> Pour effectuer les tâches décrites dans cet article, vous devez avoir un rôle approprié, tel que l’un des suivants :<br/>- Administrateur général Microsoft 365 Entreprise<br/>- Administrateur général<br/>- Administrateur de conformité<br/>- Gestion de la conformité DUES (il s’agit d’un nouveau rôle !)<br><br>Pour en savoir plus sur les conditions préalables pour les obstacles à l’information, voir [Conditions préalables (pour les stratégies de obstacle à l’information).](information-barriers-policies.md#prerequisites)<br><br> Veillez à [vous connecter au Centre de sécurité & conformité PowerShell.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>Modifier les attributs d’un compte d’utilisateur
 
@@ -55,7 +55,7 @@ Utilisez cette procédure pour modifier les attributs utilisés pour segmenter l
 
     - Pour modifier un compte unique, voir Ajouter ou mettre à jour les informations de profil d’un utilisateur à [l’aide d’Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
-    - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), voir Configurer les propriétés du compte d’utilisateur avec [Office 365 PowerShell.](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+    - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), voir Configurer les propriétés du compte d’utilisateur avec [Office 365 PowerShell.](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
 ## <a name="edit-a-segment"></a>Modifier un segment
 
@@ -65,7 +65,7 @@ Utilisez cette procédure pour modifier la définition d’un segment d’utilis
 
     Syntaxe : `Get-OrganizationSegment`
 
-    Vous verrez une liste de segments et de détails pour chacun d’eux, tels que le type de segment, sa valeur UserGroupFilter, qui l’a créé ou modifié pour la dernière fois, le GUID, etc.
+    Vous verrez une liste de segments et de détails pour chacun d’eux, comme le type de segment, sa valeur UserGroupFilter, qui l’a créé ou modifié pour la dernière fois, le GUID, etc.
 
     > [!TIP]
     > Imprimez ou enregistrez votre liste de segments pour référence ultérieurement. Par exemple, si vous souhaitez modifier un segment, vous devez connaître son nom ou sa valeur d’identification (utilisé avec le paramètre Identity).
@@ -76,7 +76,7 @@ Utilisez cette procédure pour modifier la définition d’un segment d’utilis
     |:---------|:----------|
     | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p> Dans cet exemple, pour le segment dont le GUID *est c96e0837-c232-4a8a-841e-ef45787d8fcd,* nous avons mis à jour le nom du service en « HRDept ». |
 
-Lorsque vous avez terminé de modifier des segments pour votre organisation, vous pouvez définir ou modifier des stratégies [d’obstacle](#edit-a-policy) aux informations. [](information-barriers-policies.md#part-2-define-information-barrier-policies)
+Une fois que vous avez terminé la modification [](information-barriers-policies.md#part-2-define-information-barrier-policies) des segments pour votre organisation, vous pouvez définir ou modifier des stratégies [d’obstacle](#edit-a-policy) aux informations.
 
 ## <a name="edit-a-policy"></a>Modifier une stratégie
 
@@ -110,7 +110,7 @@ Lorsque vous avez terminé de modifier des segments pour votre organisation, vou
     |:---------|:----------|
     | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p> Dans cet exemple, nous avons mis en place une stratégie d’obstacle à l’information dont le GUID *43c37853-ea10-4b90-a23d-ab8c9377247* est inactif. |
 
-3. Pour appliquer vos modifications, utilisez l’cmdlet **Start-InformationBarrierPoliciesApplication.**
+3. Pour appliquer vos modifications, utilisez la cmdlet **Start-InformationBarrierPoliciesApplication.**
 
     Syntaxe : `Start-InformationBarrierPoliciesApplication`
 

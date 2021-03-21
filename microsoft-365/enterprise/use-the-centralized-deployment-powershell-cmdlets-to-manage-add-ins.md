@@ -20,16 +20,16 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez les cmdlets PowerShell de déploiement centralisé pour vous aider à déployer et gérer des add-ins Office pour votre organisation Microsoft 365.
-ms.openlocfilehash: 659f12d2533601c4b2165a95ddbf59ea521945b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690105"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924671"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins
 
-En tant qu’administrateur général Microsoft 365, vous pouvez déployer des add-ins Office pour les utilisateurs via la fonctionnalité Déploiement centralisé (voir Déployer des [add-ins Office](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)dans le Centre d’administration). En plus de déployer des compléments Office via le Centre d’administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement centralisé O365 Add-In pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+En tant qu’administrateur général Microsoft 365, vous pouvez déployer des add-ins Office pour les utilisateurs via la fonctionnalité Déploiement centralisé (voir Déployer des [add-ins Office](../admin/manage/manage-deployment-of-add-ins.md)dans le Centre d’administration). En plus de déployer des compléments Office via le Centre d’administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement centralisé O365 Add-In pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
 
 Après avoir téléchargé le module, ouvrez une fenêtre Windows PowerShell et exécutez l’cmdlet suivante :
 
@@ -60,7 +60,7 @@ Avant de pouvoir utiliser les cmdlets de déploiement centralisé, vous devez vo
   ```
 
 > [!NOTE]
-> Pour plus d’informations sur l’utilisation de PowerShell, voir Se connecter à [Microsoft 365 avec PowerShell.](https://go.microsoft.com/fwlink/p/?linkid=848585) 
+> Pour plus d’informations sur l’utilisation de PowerShell, voir Se connecter [à Microsoft 365 avec PowerShell.](./connect-to-microsoft-365-powershell.md) 
   
 ## <a name="upload-an-add-in-manifest"></a>Télécharger un manifeste de add-in
 
@@ -277,5 +277,3 @@ Vous pouvez examiner l’aide détaillée de chaque cmdlet à l’aide de la cmd
 ```powershell
 Get-help Remove-OrganizationAddIn -Full
 ```
-
-

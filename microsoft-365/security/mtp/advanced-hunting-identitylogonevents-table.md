@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 08dd78c7648126717113066e3c87b05e624f57d0
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 7426e22fd617e93fbf63748ba38fc705e4c995a9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712353"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924409"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -41,7 +41,7 @@ Le tableau du schéma de recherche avancée contient des informations sur les ac
 > Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
 
 >[!NOTE]
->Ce tableau couvre les activités d’authentification Azure Active Directory (AD) suivis par Cloud App Security, en particulier les activités de authentification et de authentification interactives à l’aide d’ActiveSync et d’autres protocoles hérités. Les connexions non interactives qui ne sont pas disponibles dans cette table peuvent être vues dans le journal d’audit Azure AD. [En savoir plus sur la connexion de Cloud App Security à Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>Ce tableau couvre les activités d’authentification Azure Active Directory (AD) suivis par Cloud App Security, en particulier les activités de authentification et de authentification interactives à l’aide d’ActiveSync et d’autres protocoles hérités. Les connexions non interactives qui ne sont pas disponibles dans cette table peuvent être vues dans le journal d’audit Azure AD. [En savoir plus sur la connexion de Cloud App Security à Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -74,7 +74,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ReportId` | long | Identificateur unique de l’événement |
 | `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Ces étapes de présentation sont conçues pour vous aider à configurer votre réseau, à créer vos identités, à déployer Microsoft 365 Apps et à migrer vos données.
-ms.openlocfilehash: 65465b56c5bf9846dab8678b96e17b0646060c74
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f750b14738de20251e1f218679384dcf8db4d1e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689789"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924891"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Déployer Microsoft 365 Entreprise pour votre organisation
 
@@ -58,11 +58,11 @@ Pour déployer Microsoft 365 Entreprise vous-même après avoir terminé votre p
 
    Inclut la détermination d’un modèle d’identité (cloud uniquement ou hybride) et pour l’identité hybride, la configuration de la synchronisation d’annuaires entre vos services de domaine Active Directory (AD DS) locaux et votre abonnement Microsoft 365.
 
-3. [Implémenter la sécurité](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)
+3. [Implémenter la sécurité](/office365/securitycompliance/security-roadmap)
 
    Inclut la configuration et le déploiement de protections de sécurité, de menaces et d’informations de base et améliorées pour votre client et vos identités au cours des 30, 90 premiers jours et au-delà.
  
-4. [Déployer le logiciel client](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
+4. [Déployer le logiciel client](/DeployOffice/deployment-guide-microsoft-365-apps)
 
    Inclut le déploiement de Microsoft 365 Apps for enterprise (précédemment nommé Office 365 ProPlus), la version cloud mise à jour et toujours actuelle de la suite Office (Word, Excel, PowerPoint, etc.) sur vos appareils. Chaque licence client Microsoft 365 inclut une licence pour Les applications Microsoft 365 pour les entreprises.
  
@@ -74,7 +74,7 @@ Pour déployer Microsoft 365 Entreprise vous-même après avoir terminé votre p
 
    Inclut des informations sur la migration de vos données et des liens vers des articles qui vous permettent de démarrer sur les principales applications de productivité Microsoft 365 telles qu’Exchange Online, SharePoint Online et Teams.
  
-7. [Former vos utilisateurs](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
+7. [Former vos utilisateurs](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
    Inclut de courtes vidéos qui aident vos utilisateurs à se sortir rapidement de Microsoft 365.
  

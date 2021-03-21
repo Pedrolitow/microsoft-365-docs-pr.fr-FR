@@ -21,12 +21,12 @@ search.appverid: ''
 description: Découvrez comment mettre à niveau microsoft Teams gratuitement vers un nouvel abonnement Microsoft 365 pour les entreprises.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: fcd06db64f78c80e5b4a015380e672f529feb0ae
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 9a50ee669147a600fea9548b1ab8b01f28f53dc1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552457"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924325"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Mise à niveau gratuite de Microsoft Teams vers Microsoft 365 pour les entreprises
 
@@ -35,7 +35,7 @@ ms.locfileid: "46552457"
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur gratuit de Microsoft Teams pour mettre à niveau une organisation Microsoft Teams gratuite.Vous êtes automatiquement un administrateur si vous avez créé l’organisation Microsoft Teams gratuite.
+Vous devez être un administrateur gratuit de Microsoft Teams pour mettre à niveau une organisation Microsoft Teams gratuite. Vous êtes automatiquement un administrateur si vous avez créé l’organisation Microsoft Teams gratuite.
 
 ## <a name="step-1-get-your-work-or-school-account-id"></a>Étape 1 : Obtenir votre ID de compte scolaire ou scolaire
 
@@ -47,7 +47,7 @@ Pour commencer le processus, obtenez votre ID de compte scolaire ou scolaire ou 
 
 ## <a name="step-2-reset-your-password"></a>Étape 2 : Réinitialiser votre mot de passe
 
-Une fois que vous avez le compte scolaire ou scolaire sous-jacent de votre organisation gratuite Microsoft Teams, vous devez réinitialiser le mot de passe du compte.
+Une fois que vous avez le compte scolaire ou scolaire sous-jacent pour votre organisation gratuite Microsoft Teams, vous devez réinitialiser le mot de passe du compte.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. When prompted to sign in, choose **Forgot my password**.
 2. Terminez la procédure de réinitialisation du mot de passe à l’aide du compte scolaire ou scolaire sous-jacent (celui se terminant par *.onmicrosoft.com*).
@@ -77,7 +77,7 @@ Maintenant que vous avez un nouvel abonnement Microsoft 365 pour les entreprises
 ## <a name="related-content"></a>Contenu connexe
 
 [Bienvenue dans Microsoft Teams gratuitement](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (article)\
-[Mettre à niveau Microsoft Teams gratuitement vers la version d’abonnement](https://docs.microsoft.com/microsoftteams/upgrade-freemium) (article)\
+[Mettre à niveau Microsoft Teams gratuitement vers la version d’abonnement](/microsoftteams/upgrade-freemium) (article)\
 [Acheter ou supprimer des licences d’abonnement](../licenses/buy-licenses.md) (article)\
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Désattribuer des licences à des utilisateurs](../../admin/manage/remove-licenses-from-users.md) (article)

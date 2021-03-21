@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Informations Azure Active Directory supplémentaires lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemande.'
-ms.openlocfilehash: 4fc5dda95e5e7afc4d69141a9a4debd0a74c492b
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 1e3871dc5a8a8a9ecbef29df21431aa3707871d0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688804"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923849"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations Azure Active Directory supplémentaires pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -45,14 +45,14 @@ Il existe trois conditions préalables à la mise à jour de votre autorité de 
 
 Une application peut être l’une des suivantes :
 
-- [Application mono-page (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
-- [Application web qui se signe avec les utilisateurs](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
-- [Application web qui appelle des API web](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
-- [API web protégée](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
-- [API web qui appelle les API web](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
-- [Application de bureau](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
-- [Application daemon](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
-- [Application mobile](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
+- [Application mono-page (SPA)](/azure/active-directory/develop/scenario-spa-overview)
+- [Application web qui se signe avec les utilisateurs](/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Application web qui appelle des API web](/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [API web protégée](/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [API web qui appelle les API web](/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [Application de bureau](/azure/active-directory/develop/scenario-desktop-overview)
+- [Application daemon](/azure/active-directory/develop/scenario-daemon-overview)
+- [Application mobile](/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > Lorsqu’une application bascule vers l’utilisation en tant qu’autorité, les jetons sont `login.microsoftonline.com` signés par cette nouvelle autorité. Si vous hébergez des applications de ressources que d’autres applications appellent, vous devez autoriser la validation du jeton laxiste. Cela signifie que votre application doit autoriser les jetons signés par les clouds publics Azure AD Germany et Azure AD. Cette validation de jeton lax est nécessaire jusqu’à ce que toutes les applications clientes qui appellent votre service soient entièrement migrées vers le cloud public Azure AD. Après la migration, votre application de ressources doit uniquement accepter les jetons signés par le cloud public Azure AD.
@@ -62,7 +62,7 @@ Une application peut être l’une des suivantes :
 1. Si vous hébergez une application dans Azure Germany utilisée pour authentifier les utilisateurs d’Azure Germany ou d’Office 365 Germany, assurez-vous qu’elle est utilisée comme autorité dans le contexte `https://login.microsoftonline.com` d’authentification.
 
     - Consultez les contextes d’authentification Azure AD.
-    - Cela s’applique à la fois à l’authentification à votre application et à toute API que votre application peut appeler (c’est-à-dire, Microsoft Graph, Azure AD Graph, Azure Resource Manager).
+    - Cela s’applique à la fois à l’authentification à votre application, ainsi qu’à toute API que votre application peut appeler (c’est-à-dire, Microsoft Graph, Azure AD Graph, Azure Resource Manager).
 
 2. Mettez à jour le point de terminaison Azure AD Graph pour qu’il le `https://graph.windows.net` soit.
 
@@ -72,14 +72,14 @@ Une application peut être l’une des suivantes :
 
 5. Mettez à jour les paramètres d’environnement pour qu’ils soient (et non) dans les `AzurePublic` `AzureGermany` outils d’administration et les scripts pour :
 
-    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)
-    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview)
-    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?)
-    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
+    - [Azure PowerShell](/powershell/azure/install-az-ps)
+    - [Azure AD PowerShell (MSOnline)](/powershell/azure/active-directory/overview)
+    - [Azure AD PowerShell (AzureAD)](/powershell/azure/active-directory/install-adv2)
+    - [Azure CLI](/cli/azure/install-azure-cli)
  
 **Qu’en est-il des applications que je publie ?**
 
-Si vous publiez une application disponible pour les utilisateurs extérieurs à votre client, vous devrez peut-être modifier votre inscription d’application pour garantir la continuité. D’autres locataires qui utilisent votre application peuvent être déplacés à un moment différent de celui de votre client. Pour vous assurer qu’ils ne perdent jamais l’accès à votre application, vous devez consentir à ce que votre application soit synchronisée d’Azure Germany vers Azure Public.
+Si vous publiez une application disponible pour les utilisateurs extérieurs à votre client, vous devrez peut-être modifier votre inscription d’application pour garantir la continuité. D’autres locataires qui utilisent votre application peuvent être déplacés à un moment différent de celui de votre client. Pour vous assurer qu’ils ne perdent jamais l’accès à votre application, vous devez consentir à la synchronisation de votre application d’Azure Germany vers Azure public.
 
 ## <a name="additional-considerations"></a>Considérations supplémentaires
 
@@ -112,14 +112,14 @@ Voici quelques considérations supplémentaires pour Azure AD :
 
 - Les utilisateurs de Microsoft Cloud Deutschland qui utilisent la méthode de notification d’application mobile pour les demandes MFA voient l’ObjectId de l’utilisateur (guid) au lieu du nom d’utilisateur principal (UPN) dans l’application Microsoft Authenticator. Une fois la migration du client Azure AD terminée et hébergée dans les services Office 365, les nouvelles activations De Microsoft Authenticator affichent les UPN des utilisateurs. Les comptes Microsoft Authenticator existants continueront d’afficher l’ObjectId de l’utilisateur, mais ils continueront à fonctionner pour les notifications d’application mobile. 
 
-- Pour les clients créés après le 22 octobre 2019, les paramètres de sécurité par défaut peuvent être activés automatiquement pour le client lors de sa migration vers le service Office 365. Les administrateurs client peuvent choisir de laisser les paramètres de sécurité par défaut activés et de s’inscrire à l’mf, ou ils peuvent désactiver la fonctionnalité. Pour plus d’informations, voir [Désactiver les paramètres de sécurité par défaut.](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults) 
+- Pour les clients créés après le 22 octobre 2019, les paramètres de sécurité par défaut peuvent être activés automatiquement pour le client lors de sa migration vers le service Office 365. Les administrateurs client peuvent choisir de laisser les paramètres de sécurité par défaut activés et de s’inscrire à l’mf, ou ils peuvent désactiver la fonctionnalité. Pour plus d’informations, voir [Désactiver les paramètres de sécurité par défaut.](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults) 
 
   > [!NOTE]
-  > Les organisations qui ne sont pas activées automatiquement lors de la migration peuvent toujours être inscrites automatiquement à l’avenir, car la fonctionnalité permettant d’activer les paramètres de sécurité par défaut est déployée dans le service Office 365. Les administrateurs qui choisissent de désactiver ou d’activer explicitement les paramètres de sécurité par défaut peuvent le faire en mettant à jour la fonctionnalité sous Propriétés d'> **Azure Active Directory.** Une fois que la fonctionnalité est explicitement activée par l’administrateur, elle ne sera pas activée automatiquement.
+  > Les organisations qui ne sont pas activées automatiquement lors de la migration peuvent toujours être inscrites automatiquement à l’avenir, car la fonctionnalité permettant d’activer les paramètres de sécurité par défaut est déployée dans le service Office 365. Les administrateurs qui choisissent de désactiver ou d’activer explicitement les paramètres de sécurité par défaut peuvent le faire en mettant à jour la fonctionnalité sous **Azure Active Directory > propriétés.** Une fois que la fonctionnalité est explicitement activée par l’administrateur, elle ne sera pas activée automatiquement.
 
 - Un avertissement s’est produit sur la version d’Azure AD Connect sur le portail Office 365 Germany, ainsi que sur le portail Office 365 une fois que le client est en migration. Cela peut être ignoré si l’avertissement de version n’affiche plus l’avertissement une fois la migration terminée. En cas d’avertissement, avant ou après la migration, dans l’un ou l’autre portail, Azure AD Connect doit être mis à jour. Le message d’avertissement indique : « Nous avons détecté que vous utilisez un outil de synchronisation d’annuaires obsolète. Nous vous recommandons d’aller au Centre de téléchargement Microsoft pour obtenir la dernière version d’Azure AD Connect. »
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en place :
 
@@ -136,6 +136,6 @@ Transition :
 
 Applications cloud :
 
-- [Informations sur le programme de migration Dynamics 365](https://aka.ms/d365ceoptin)
-- [Informations sur le programme de migration Power BI](https://aka.ms/pbioptin)
-- [Prise en main de votre mise à niveau vers Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Informations sur le programme de migration Dynamics 365](/dynamics365/get-started/migrate-data-german-region)
+- [Informations sur le programme de migration Power BI](/power-bi/admin/service-admin-migrate-data-germany)
+- [Prise en main de votre mise à niveau vers Microsoft Teams](/microsoftteams/upgrade-start-here)

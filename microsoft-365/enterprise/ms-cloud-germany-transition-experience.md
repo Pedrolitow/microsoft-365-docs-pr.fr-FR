@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : Comprendre ce qui a changé pour passer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemande.'
-ms.openlocfilehash: 0415f7b95cb9a9f2625798311946dac0f1f7c2c0
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: cadad596011bbcde02b61f01e949c93a5a62a1c3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688611"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923825"
 ---
 # <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Nouveautés de la migration vers les services Office 365 dans les nouvelles régions de centres de données allemandes
 
@@ -38,11 +38,11 @@ Voici les principales différences entre les services Microsoft Cloud Deutschlan
 | Nouvelles fonctionnalités | Aucune nouvelle fonctionnalité n’est disponible. | De nouvelles fonctionnalités seront disponibles conformément aux services Office 365. |
 | Administrateur de données | Oui | Non |
 | Collaboration entre clients Office 365 du monde entier | Non | Oui |
-| Résidence des données client | Les données client sont stockées uniquement dans les centres de données allemands. | Microsoft stockera les données client suivantes au repos exclusivement en Allemagne : <ul><li> Contenu de boîte aux lettres Exchange Online (corps du message électronique, entrées de calendrier et contenu des pièces jointes des messages électroniques) </li><li> Contenu du site SharePoint Online et fichiers stockés dans ce site, et fichiers téléchargés vers OneDrive Entreprise </li></ul> |
+| Résidence des données client | Les données client sont stockées uniquement dans les centres de données allemands. | Microsoft stockera les données client suivantes au repos exclusivement en Allemagne : <ul><li> Contenu de boîte aux lettres Exchange Online (corps du message électronique, entrées de calendrier et contenu des pièces jointes) </li><li> Contenu du site SharePoint Online et fichiers stockés dans ce site, et fichiers téléchargés vers OneDrive Entreprise </li></ul> |
 | Conditions applicables | [Conditions d’accès aux](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) services en ligne avec ce [supplément](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=64) | [Conditions d’utilisation d’Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 ||||
 
-## <a name="azure-active-directory"></a>Azure Active Directory
+## <a name="azure-active-directory"></a>Azure Active Directory
 
 Ce qui ne change pas :
 
@@ -66,7 +66,7 @@ Remarques à prendre en compte :
 
 - Au cours de la transition du client vers les services Office 365, ses abonnements et licences propres à l’Allemagne sont normalisés avec les nouvelles offres de services Office 365. Les abonnements aux services Office 365 correspondants sont achetés pour les abonnements transférés en Allemagne. Des licences de services Office 365 seront attribuées aux utilisateurs qui ont des licences En Allemagne. À la fin de l’exécution, les abonnements hérités en Allemagne sont annulés et supprimés du client de services Office 365 actuel.
 
-- Après la migration des charges de travail individuelles, des fonctionnalités supplémentaires sont disponibles via les services Office 365 (tels que Le Planificateur Microsoft et Microsoft Flow) en raison des nouveaux abonnements aux services Office 365. Si cela est approprié pour votre organisation, le client ou l’administrateur de licences peut désactiver les nouveaux plans de service lorsque vous planifiez la gestion des changements afin d’introduire les nouveaux services. Pour obtenir des instructions sur la désactivation des plans de service affectés aux licences des utilisateurs, voir Désactiver l’accès aux [services Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses)tout en attribuant des licences utilisateur.
+- Après la migration des charges de travail individuelles, des fonctionnalités supplémentaires sont disponibles via les services Office 365 (tels que Le Planificateur Microsoft et Microsoft Flow) en raison des nouveaux abonnements aux services Office 365. Si cela est approprié pour votre organisation, le client ou l’administrateur de licences peut désactiver les nouveaux plans de service lorsque vous planifiez la gestion des changements afin d’introduire les nouveaux services. Pour obtenir des instructions sur la désactivation des plans de service affectés aux licences des utilisateurs, voir Désactiver l’accès aux [services Microsoft 365](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses)tout en attribuant des licences utilisateur.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -87,17 +87,17 @@ Les services Office Online sont accessibles avant `office.de` et pendant la tran
 
 ## <a name="skype-for-business-online"></a>Skype Entreprise Online
 
-Les clients Skype Entreprise Online existants sont transférés vers Microsoft Teams. Pour plus d’informations, voir [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home) .
+Les clients Skype Entreprise Online existants sont transférés vers Microsoft Teams. Pour plus d’informations, voir [https://aka.ms/SkypeToTeams-Home](/microsoftteams/upgrade-start-here) .
 
 ## <a name="office-365-video"></a>Office 365 Video
 
-Office 365 Video a été retiré le 1er mars 2021 et Office 365 Video ne sera plus pris en charge une fois la migration de SharePoint Online vers les nouvelles régions de centres de données allemandes terminée. Le contenu d’Office 365 Video sera migré dans le cadre de la migration de SharePoint Online. Toutefois, les vidéos dans Office 365 Video ne seront pas lues dans l’interface utilisateur Office 365 Video après la migration de SharePoint. En savoir plus sur la chronologie de migration sur [la transition d’Office 365 Video vers Microsoft Stream (classique).](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
+Office 365 Video a été retiré le 1er mars 2021 et Office 365 Video ne sera plus pris en charge une fois la migration de SharePoint Online vers les nouvelles régions de centres de données allemandes terminée. Le contenu d’Office 365 Video sera migré dans le cadre de la migration de SharePoint Online. Toutefois, les vidéos dans Office 365 Video ne seront pas lues dans l’interface utilisateur Office 365 Video après la migration de SharePoint. En savoir plus sur la chronologie de migration sur [la transition d’Office 365 Video vers Microsoft Stream (classique).](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 ## <a name="next-step"></a>Étape suivante
 
 [Comprendre les actions et les impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en place :
 
@@ -113,6 +113,6 @@ Transition :
 
 Applications cloud :
 
-- [Informations sur le programme de migration Dynamics 365](https://aka.ms/d365ceoptin)
-- [Informations sur le programme de migration Power BI](https://aka.ms/pbioptin)
-- [Prise en main de votre mise à niveau vers Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Informations sur le programme de migration Dynamics 365](/dynamics365/get-started/migrate-data-german-region)
+- [Informations sur le programme de migration Power BI](/power-bi/admin/service-admin-migrate-data-germany)
+- [Prise en main de votre mise à niveau vers Microsoft Teams](/microsoftteams/upgrade-start-here)

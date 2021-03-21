@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 3d083537f3a9337d88d63861e0bf66867f558aba
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 2443319d254130b38bb1047a633c85c160eadd8c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454004"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925999"
 ---
 # <a name="manage-topics-in-the-topic-center"></a>Gérer les rubriques dans le centre de rubriques 
 
@@ -47,12 +47,12 @@ Les gestionnaires de connaissances vous aident à guider les rubriques découver
 > [!Note] 
 > Dans la page Gérer les rubriques, chaque gestionnaire de connaissances ne peut voir que les rubriques dans laquelle il a accès aux fichiers et aux pages de la rubrique. Cela sera reflété dans les rubriques qui sont répertoriées sous les onglets Suggéré, Confirmé, Supprimé et Publié. Les nombres de rubriques, toutefois, indiquent le nombre total dans l’organisation.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour gérer des rubriques dans le centre de rubriques, vous devez :
 - Vous avez une licence Topics.
 
-- Avoir [**l’autorisation Qui peut gérer les rubriques.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres des rubriques Topics. 
+- Avoir [**l’autorisation Qui peut gérer les rubriques.**](./topic-experiences-user-permissions.md) Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres des rubriques Topics. 
 
 Vous ne pourrez pas afficher la page Gérer les rubriques dans le Centre de rubriques, sauf si vous avez l’autorisation Qui peut **gérer les rubriques.**
 
@@ -67,7 +67,7 @@ Dans la page Gérer les rubriques du centre de rubriques, les rubriques qui ont 
 
 Pour consulter une rubrique suggérée :
 
-1. Dans la page Gérer les  **rubriques,** sélectionnez l’onglet Suggestions, sélectionnez la rubrique à ouvrir.</br>
+1. Dans la page Gérer les  **rubriques,** sélectionnez l’onglet Suggestions, sélectionnez la rubrique pour ouvrir la page de rubrique.</br>
 
 2. Dans la page de rubrique, examinez la page de rubrique, puis sélectionnez **Modifier** si vous devez apporter des modifications à la page. La publication de toutes les modifications déplace cette rubrique vers **l’onglet** Publié.
 
@@ -77,7 +77,7 @@ Pour consulter une rubrique suggérée :
     
    - Sélectionnez **le x** si vous souhaitez rejeter la rubrique.
 
-    Les rubriques confirmées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **la liste** Confirmée.
+    Les rubriques confirmées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **la liste** confirmée.
 
     Les rubriques rejetées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **l’onglet** Supprimé.
 
@@ -85,9 +85,9 @@ Pour consulter une rubrique suggérée :
 
 ### <a name="quality-score"></a>Score de qualité
 
-Un score de qualité est affecté à <b></b> chaque rubrique qui apparaît dans votre page Rubriques suggérées. Le score de qualité reflète la quantité d’informations que l’utilisateur moyen verra pour les informations sur la rubrique, en gardant à l’esprit que chaque utilisateur peut voir plus ou moins d’informations en raison des autorisations qu’il peut ou non avoir sur les informations d’une rubrique. 
+Un score de qualité est affecté à <b></b> chaque rubrique qui apparaît dans votre page Rubriques suggérées. Le score de qualité reflète la quantité d’informations que l’utilisateur moyen verra pour les informations sur le sujet, en gardant à l’esprit que chaque utilisateur peut voir plus ou moins d’informations en raison des autorisations qu’il peut ou non avoir sur les informations d’une rubrique. 
 
-Le score de qualité peut aider à donner un aperçu des rubriques les plus pertinentes et peut être utile pour trouver des rubriques qui peuvent avoir besoin d’être modifiées manuellement.  Par exemple, une rubrique avec un score de qualité inférieur peut être le résultat de certains utilisateurs ne disposent pas des autorisations SharePoint pour les fichiers pertinents ou les sites que l’IA a inclus dans la rubrique. Un collaborateur peut ensuite modifier la rubrique pour inclure les informations (le cas échéant), qui seront ensuite consultables par tous les utilisateurs qui peuvent afficher la rubrique.
+Le score de qualité peut aider à donner un aperçu des rubriques les plus pertinentes et peut être utile pour trouver des rubriques qui peuvent avoir besoin d’être modifiées manuellement.  Par exemple, une rubrique avec un score de qualité inférieur peut être le résultat de certains utilisateurs ne disposent pas des autorisations SharePoint pour les fichiers pertinents ou les sites que l’IA a inclus dans la rubrique. Un collaborateur peut ensuite modifier la rubrique pour inclure les informations (le cas échéant), qui seront ensuite consultables par tous les utilisateurs qui peuvent consulter la rubrique.
 
 Le score de qualité peut être de 1 à 100. Une rubrique nouvellement découverte aura un score de qualité de 0 jusqu’à ce que deux utilisateurs ou plus l’ont vue. Chaque score de qualité de chaque utilisateur est déterminé par un certain nombre de facteurs, tels que la quantité de contenu affichée pour l’utilisateur spécifique, qui est contrôlée par les autorisations de l’utilisateur, car chaque page de rubrique dispose d’un trimming de sécurité pour le contenu généré par l’IA. Le score de qualité affiché sous l’onglet Rubriques suggérées est une moyenne de chaque score individuel de chaque utilisateur.
 
@@ -98,11 +98,11 @@ La <b>colonne Impressions</b> affiche le nombre de fois qu’une rubrique a ét�
 
 ## <a name="confirmed-topics"></a>Rubriques confirmées
 
-Dans la page Gérer les rubriques, les rubriques qui ont été découvertes dans les emplacements de source SharePoint spécifiés et qui ont été confirmées  par un gestionnaire de connaissances ou « d’autres personnes » confirmées par au moins deux personnes via le mécanisme de commentaires de carte sont répertoriées dans l’onglet Confirmé. Si nécessaire, un utilisateur autorisé à gérer des rubriques peut passer en revue les rubriques confirmées et choisir de les rejeter.
+Dans la page Gérer les rubriques, les rubriques qui ont été découvertes dans les emplacements source SharePoint spécifiés et qui ont été confirmées par  un gestionnaire de connaissances ou « d’autres personnes » confirmées par deux ou plusieurs personnes via le mécanisme de commentaires de carte sont répertoriées dans l’onglet Confirmé. Si nécessaire, un utilisateur autorisé à gérer des rubriques peut passer en revue les rubriques confirmées et choisir de les rejeter.
 
 Pour consulter une rubrique confirmée :
 
-1. Sous **l’onglet Confirmé,** sélectionnez la rubrique pour ouvrir la page de rubrique.</br>
+1. Sous **l’onglet Confirmé,** sélectionnez la rubrique à ouvrir.</br>
 
 2. Dans la page de rubrique, examinez la page de rubrique, puis sélectionnez **Modifier** si vous devez apporter des modifications à la page.
 
@@ -111,8 +111,4 @@ Notez que vous pouvez toujours choisir de rejeter une rubrique confirmée.  Pour
 ## <a name="published-topics"></a>Rubriques publiées
 Les rubriques publiées ont été modifiées afin que des informations spécifiques apparaissent toujours aux personnes qui rencontrent la page. Les rubriques créées manuellement sont également répertoriées ici.
 
-   ![Gérer les rubriques](../media/knowledge-management/manage-topics-new.png) </br> 
-
-
-
-
+   ![Gérer les rubriques](../media/knowledge-management/manage-topics-new.png) </br>

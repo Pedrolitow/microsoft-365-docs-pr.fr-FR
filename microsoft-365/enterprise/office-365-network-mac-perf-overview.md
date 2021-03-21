@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le Centre d’administration Microsoft 365 (aperçu)
-ms.openlocfilehash: 159edf6f95910625c3f924d02c8307d681164df7
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454240"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926095"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connectivité réseau dans le Centre d’administration Microsoft 365 (prévisualisation)
 
@@ -37,11 +37,11 @@ Le Centre d’administration Microsoft 365 inclut désormais des mesures agrég�
 >[!NOTE]
 >L’outil de test de connectivité réseau prend en charge les clients de WW Commercial et d’Allemagne, mais pas GCC Moderate, GCC High, DoD ou China.
 
-Lorsque vous accédez à la page de performances réseau pour la première fois, vous voyez un volet de vue d’ensemble contenant une carte des performances globales du réseau, une évaluation réseau étendue à l’ensemble du client et une liste des problèmes actuels. À partir de la vue d’ensemble, vous pouvez descendre dans le détail pour afficher des mesures et des problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, voir vue d’ensemble des performances réseau dans le Centre d’administration [Microsoft 365.](#network-connectivity-overview-in-the-microsoft-365-admin-center)
+Lorsque vous accédez pour la première fois à la page de performances réseau, vous voyez un volet de vue d’ensemble contenant une carte des performances globales du réseau, une évaluation réseau étendue à l’ensemble du client et une liste des problèmes actuels. À partir de la vue d’ensemble, vous pouvez descendre dans le détail pour afficher des mesures et des problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, voir vue d’ensemble des performances réseau dans le Centre d’administration [Microsoft 365.](#network-connectivity-overview-in-the-microsoft-365-admin-center)
 
 Vous pouvez être invité à participer à la prévisualisation publique pour cette fonctionnalité au nom de votre organisation. L’acceptation s’est généralement produite immédiatement, puis la page de connectivité réseau s’est produite. 
 
-Lors de la navigation vers la page de connectivité réseau, vous verrez un volet de présentation contenant une carte des performances globales du réseau, une évaluation réseau étendue à l’ensemble du client et une liste des problèmes actuels. Pour accéder à cette page, vous devez être administrateur de l’organisation au sein de Microsoft 365. Le rôle d’administration lecteur de rapports aura un accès en lecture à ces informations. Pour configurer des emplacements et d’autres éléments de connectivité réseau, un administrateur doit faire partie d’un rôle d’administrateur de serveur tel que le rôle d’administrateur de support technique du service. À partir de la vue d’ensemble, vous pouvez descendre dans le détail pour afficher des mesures et des problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, voir vue d’ensemble de la connectivité réseau dans le Centre d’administration [Microsoft 365.](#network-connectivity-overview-in-the-microsoft-365-admin-center)
+Lors de la navigation vers la page de connectivité réseau, vous verrez un volet de présentation contenant une carte des performances globales du réseau, une évaluation réseau étendue à l’ensemble du client et une liste des problèmes actuels. Pour accéder à cette page, vous devez être administrateur de l’organisation dans Microsoft 365. Le rôle d’administration lecteur de rapports aura un accès en lecture à ces informations. Pour configurer des emplacements et d’autres éléments de connectivité réseau, un administrateur doit faire partie d’un rôle d’administrateur de serveur, tel que le rôle d’administrateur de prise en charge du service. À partir de la vue d’ensemble, vous pouvez descendre dans le détail pour afficher des mesures et des problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, voir vue d’ensemble de la connectivité réseau dans le Centre d’administration [Microsoft 365.](#network-connectivity-overview-in-the-microsoft-365-admin-center)
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Conditions préalables à l’apparition des évaluations de la connectivité réseau
 
@@ -51,7 +51,7 @@ To get started, turn on your location opt-in setting to automatically collect da
 
 Pour cette option, vous devez avoir au moins deux ordinateurs en cours d’exécution à chaque emplacement de bureau qui prendre en charge les conditions préalables. La version de OneDrive pour Windows doit être à jour et installée sur chaque ordinateur. Pour plus d’informations sur les versions de OneDrive, voir les [notes de publication de OneDrive.](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0) Des mesures réseau seront bientôt ajoutées dans d’autres applications clientes Office 365.
 
-Le service d’emplacement Windows doit être accepté sur les ordinateurs. Vous pouvez le tester en exécutant l’application **Cartes** et en vous localisant vous-même. Il peut être activé sur un seul ordinateur avec **paramètres | Confidentialité | Emplacement** où le paramètre _Autoriser les applications à accéder à_ votre emplacement doit être activé. Le consentement des services d’emplacement Windows peut être déployé sur des PC à l’aide de la stratégie de groupe ou de la gestion des appareils de gestion des appareils avec le paramètre _LetAppsAccessLocation._
+Le service d’emplacement Windows doit être accepté sur les ordinateurs. Vous pouvez le tester en exécutant l’application **Cartes** et en vous localisant vous-même. Il peut être activé sur un seul ordinateur avec **paramètres | Confidentialité | Emplacement** où le paramètre _Autoriser les applications à accéder à_ votre emplacement doit être activé. Le consentement des services d’emplacement Windows peut être déployé sur des PC à l’aide de la gestion des appareils de gestion des appareils de gestion des appareils ou de la stratégie de groupe avec le paramètre _LetAppsAccessLocation_.
 
 Il n’est pas nécessaire d’ajouter des emplacements dans le Centre d’administration avec cette méthode, car ils sont automatiquement identifiés au niveau de la résolution de la ville. Vous ne pouvez pas afficher plusieurs bureaux dans une ville à l’aide des services d’emplacement Windows. Les informations d’emplacement sont également arrondies aux 300 mètres les plus proches de 300 mètres avant d’être téléchargées afin que les informations d’emplacement plus précises ne sont pas accessibles.
 
@@ -63,13 +63,13 @@ Les exemples de mesure et les emplacements de bureau doivent commencer à appara
 
 Pour cette option, ni les services d’emplacement Windows Wi-Fi ne sont requis. Votre version de OneDrive pour Windows doit être à jour et installée sur chaque ordinateur à l’emplacement.
 
-Vous devez également ajouter des emplacements dans la page connectivité réseau du Centre d’administration ou les importer à partir d’un fichier CSV. Les emplacements ajoutés doivent inclure les informations de votre sous-réseau local office.
+Vous devez également ajouter des emplacements dans la page connectivité réseau du Centre d’administration ou les importer à partir d’un fichier CSV. Les emplacements ajoutés doivent inclure les informations de votre sous-réseau local d’office.
 
 Étant donné que vous ajoutez les emplacements, plusieurs bureaux peuvent être définis dans une ville.
 
 Toutes les mesures de test des ordinateurs clients incluent les informations du sous-réseau local, qui sont corrélées avec les détails de l’emplacement du bureau que vous avez entrés. Les exemples de mesure et les emplacements de bureau doivent commencer à apparaître 24 heures après que ces conditions préalables ont été remplies.
 
-### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Collecter manuellement des rapports de test avec l’outil de test de connectivité réseau Microsoft 365
+### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Collecte manuelle des rapports de test avec l’outil de test de connectivité réseau Microsoft 365
 
 Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-leur d’utiliser le test de connectivité réseau [Microsoft 365](https://connectivity.office.com) sur un ordinateur Windows sur lequel ils ont des autorisations administratives. Sur le site web, ils doivent se connectez à leur compte Office 365 pour la même organisation que celle dont vous souhaitez voir les résultats. Ensuite, ils doivent cliquer **sur Exécuter le test.** Pendant le test, il existe un exE de test de connectivité téléchargé. Ils doivent également l’ouvrir et l’exécuter. Une fois les tests terminés, les résultats du test sont téléchargés vers Office 365.
 
@@ -79,29 +79,29 @@ Les échantillons de mesure et les emplacements de bureau doivent commencer à a
 
 ## <a name="how-do-i-use-this-information"></a>Comment utiliser ces informations ?
 
-**Les informations sur le réseau,** leurs recommandations en matière de performances associées et les évaluations réseau sont conçues pour vous aider à concevoir des périmètres réseau pour vos bureaux. Chaque aperçu fournit des détails sur les caractéristiques de performances d’un problème courant spécifique pour chaque emplacement géographique où les utilisateurs accèdent à votre client. **Les recommandations de performances** pour chaque aperçu réseau proposent des modifications spécifiques à la conception de l’architecture réseau que vous pouvez apporter pour améliorer l’expérience utilisateur liée à la connectivité réseau Microsoft 365. L’évaluation du réseau montre l’impact de la connectivité réseau sur l’expérience utilisateur, ce qui permet de comparer les différentes connexions réseau d’emplacement utilisateur.
+**Les informations sur le réseau,** leurs recommandations en matière de performances associées et les évaluations réseau sont conçues pour vous aider à concevoir des périmètres réseau pour vos bureaux. Chaque aperçu fournit des détails sur les caractéristiques de performances d’un problème courant spécifique pour chaque emplacement géographique où les utilisateurs accèdent à votre client. **Les recommandations de performances** pour chaque aperçu réseau proposent des modifications de conception d’architecture réseau spécifiques que vous pouvez apporter pour améliorer l’expérience utilisateur liée à la connectivité réseau Microsoft 365. L’évaluation du réseau montre l’impact de la connectivité réseau sur l’expérience utilisateur, ce qui permet de comparer les différentes connexions réseau d’emplacement utilisateur.
 
-**Les évaluations réseau** regroupent de nombreuses mesures de performances réseau dans une capture instantanée de l’état du réseau de votre entreprise, représentée par une valeur de points entre 0 et 100. Les évaluations réseau sont limitées à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client, offrant aux administrateurs Microsoft 365 un moyen simple de saisir instantanément un gestalt de l’état du réseau de l’entreprise et d’obtenir rapidement un rapport détaillé pour n’importe quel emplacement de bureau global.
+**Les évaluations réseau** regroupent de nombreuses mesures de performances réseau dans une capture instantanée de l’état du réseau de votre entreprise, représentée par une valeur de points entre 0 et 100. Les évaluations réseau sont limitées à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client, ce qui permet aux administrateurs Microsoft 365 de saisir instantanément un gestalt de l’état du réseau de l’entreprise et d’obtenir rapidement un rapport détaillé pour n’importe quel emplacement de bureau global.
 
 Les entreprises complexes avec plusieurs bureaux et architectures de périmètre réseau non triviales peuvent tirer parti de ces informations lors de leur intégration initiale à Microsoft 365 ou pour résoudre les problèmes de performances réseau détectés avec la croissance de l’utilisation. Cela n’est généralement pas nécessaire pour les petites entreprises qui utilisent Microsoft 365 ou les entreprises qui ont déjà une connectivité réseau simple et directe. Les entreprises de plus de 500 utilisateurs et de plusieurs bureaux devraient en tirer le meilleur parti.
 
 >[!IMPORTANT]
->Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre d’administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les clients Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
+>Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre d’administration Microsoft 365 sont actuellement en état de prévisualisation et sont disponibles uniquement pour les clients Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Défis de connectivité réseau d’entreprise
 
 > [!div class="mx-imgBorder"]
 > ![Réseau client vers le cloud](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-De nombreuses entreprises ont des configurations de périmètre réseau qui ont évolué au fil du temps et sont principalement conçues pour prendre en charge l’accès au site web Internet des employés, où la plupart des sites web ne sont pas connus à l’avance et ne sont pas sécurisés. La priorité requise est d’éviter les programmes malveillants et les attaques malveillantes provenant de ces sites web inconnus. Cette stratégie de configuration réseau, bien qu’utile à des fins de sécurité, peut entraîner une dégradation des performances et de l’expérience utilisateur de Microsoft 365.
+De nombreuses entreprises ont des configurations de périmètre réseau qui ont évolué au fil du temps et sont principalement conçues pour prendre en charge l’accès au site web Internet des employés, où la plupart des sites web ne sont pas connus à l’avance et ne sont pas sécurisés. L’objectif de sécurité et nécessaire est d’éviter les programmes malveillants et les attaques d’attaques provenant de ces sites web inconnus. Cette stratégie de configuration réseau, bien qu’utile à des fins de sécurité, peut entraîner une dégradation des performances et de l’expérience utilisateur de Microsoft 365.
 
 ## <a name="how-we-can-solve-these-challenges"></a>Comment pouvons-nous résoudre ces défis ?
 
-Les entreprises peuvent améliorer l’expérience utilisateur générale et sécuriser leur environnement en suivant les principes de connectivité [d’Office 365](https://aka.ms/pnc) et en utilisant la fonctionnalité de connectivité réseau du Centre d’administration Microsoft 365. Dans la plupart des cas, le fait de suivre ces principes généraux aura un impact positif significatif sur la latence des utilisateurs finaux, la fiabilité du service et les performances globales de Microsoft 365.
+Les entreprises peuvent améliorer l’expérience utilisateur générale et sécuriser leur environnement en suivant les principes de connectivité [d’Office 365](./microsoft-365-network-connectivity-principles.md) et en utilisant la fonctionnalité de connectivité réseau du Centre d’administration Microsoft 365. Dans la plupart des cas, le fait de suivre ces principes généraux aura un impact positif significatif sur la latence des utilisateurs finaux, la fiabilité du service et les performances globales de Microsoft 365.
 
-Microsoft est parfois invité à examiner les problèmes de performances réseau avec Microsoft 365 pour les clients de grande entreprise, et ceux-ci ont souvent une cause première liée à l’infrastructure de périmètre du réseau des clients. Lorsqu’une cause première courante d’un problème de périmètre de réseau client est trouvée, nous cherchons à identifier des mesures de test simples qui l’identifient. Un test avec un seuil de mesure qui identifie un problème spécifique est utile, car nous pouvons tester la même mesure à n’importe quel emplacement, déterminer si cette cause première est présente et la partager en tant qu’informations réseau avec l’administrateur.
+Microsoft est parfois invité à examiner les problèmes de performances du réseau avec Microsoft 365 pour les clients de grande entreprise, et ceux-ci ont souvent une cause première liée à l’infrastructure de périmètre du réseau des clients. Lorsqu’une cause première courante d’un problème de périmètre de réseau client est trouvée, nous cherchons à identifier des mesures de test simples qui l’identifient. Un test avec un seuil de mesure qui identifie un problème spécifique est utile, car nous pouvons tester la même mesure à n’importe quel emplacement, déterminer si cette cause première est présente et la partager en tant qu’informations réseau avec l’administrateur.
 
-Certaines informations sur le réseau indiquent simplement un problème qui doit faire l’objet d’un examen plus approfondie. Une information réseau dans laquelle nous avons suffisamment de tests pour afficher une action de correction spécifique pour corriger la cause première est répertoriée comme **une action recommandée.** Ces recommandations, basées sur des mesures dynamiques qui révèlent des valeurs qui tombent en dehors d’un seuil prédéterminé, sont beaucoup plus utiles que les conseils généraux des meilleures pratiques, car elles sont propres à votre environnement et montrent l’amélioration réelle une fois que les modifications recommandées ont été apportées.
+Certaines informations réseau indiquent simplement un problème qui doit faire l’objet d’un examen plus approfondie. Une information réseau dans laquelle nous avons suffisamment de tests pour afficher une action de correction spécifique pour corriger la cause première est répertoriée comme **une action recommandée.** Ces recommandations, basées sur des mesures dynamiques qui révèlent des valeurs situées en dehors d’un seuil prédéterminé, sont beaucoup plus utiles que les conseils généraux des meilleures pratiques, car elles sont propres à votre environnement et montrent l’amélioration réelle une fois que les modifications recommandées ont été apportées.
 
 ## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Vue d’ensemble de la connectivité réseau dans le Centre d’administration Microsoft 365
 
@@ -117,7 +117,7 @@ La page vue d’ensemble présente également l’évaluation réseau pour le cl
 > [!div class="mx-imgBorder"]
 > ![Évaluation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-Vous pouvez afficher une vue de table des emplacements où ils peuvent être filtrés, triés et modifiés dans l’onglet Emplacements. Les emplacements avec des recommandations spécifiques peuvent également inclure une amélioration potentielle estimée de la latence. Cette valeur est calculée en prenant la latence médiane des utilisateurs de votre organisation à l’emplacement et en soustrayant la latence médiane pour toutes les organisations dans la même ville.
+Vous pouvez afficher une vue de table des emplacements où ils peuvent être filtrés, triés et modifiés dans l’onglet Emplacements. Les emplacements avec des recommandations spécifiques peuvent également inclure une amélioration de la latence potentielle estimée. Cette valeur est calculée en prenant la latence médiane des utilisateurs de votre organisation à l’emplacement et en soustrayant la latence médiane pour toutes les organisations dans la même ville.
 
 > [!div class="mx-imgBorder"]
 > ![Emplacements d’informations réseau](../media/m365-mac-perf/m365-mac-perf-locations.png)
@@ -142,7 +142,7 @@ Une carte du réseau de périmètre pour les utilisateurs de votre organisation 
 
 La page récapitulatif de l’emplacement du bureau affiche également l’évaluation réseau de l’emplacement, l’historique de l’évaluation du réseau, une comparaison de l’évaluation de cet emplacement avec d’autres clients de la même ville, ainsi qu’une liste d’informations et de recommandations spécifiques que vous pouvez entreprendre pour améliorer les performances et la fiabilité du réseau.
 
-Les comparaisons entre les clients de la même ville sont basées sur l’attente que tous les clients ont un accès égal aux fournisseurs de services réseau, à l’infrastructure de télécommunications et aux points de présence réseau Microsoft à proximité.
+Les comparaisons entre les clients d’une même ville sont basées sur l’attente que tous les clients ont un accès égal aux fournisseurs de services réseau, à l’infrastructure de télécommunications et aux points de présence réseau Microsoft à proximité.
 
 L’onglet Détails de la page d’emplacement du bureau affiche les résultats de mesure spécifiques qui ont été utilisés pour obtenir des informations, des recommandations et l’évaluation du réseau. Cela permet aux ingénieurs réseau de valider les recommandations et de prendre en compte les contraintes ou les spécificités de leur environnement.
 
@@ -162,7 +162,7 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
    > [!div class="mx-imgBorder"]
    > ![Message d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
 
-1. Cliquez sur le lien Télécharger les emplacements de bureau actuels **(.csv)** pour exporter la liste des emplacements actuels vers un fichier CSV et enregistrez-le sur votre disque dur local. Cela vous fournira un fichier CSV correctement formaté avec des en-tête de colonne à laquelle vous pouvez ajouter des emplacements. Vous pouvez laisser les emplacements exportés existants tels qu’ils sont ; Elles ne seront pas dupliquées lorsque vous importez le CSV mis à jour. Si vous souhaitez modifier l’adresse d’un emplacement existant, elle sera mise à jour lorsque vous importez le CSV. Vous ne pouvez pas modifier l’adresse d’une ville découverte.
+1. Cliquez sur le lien Télécharger les emplacements du bureau **actuel (.csv)** pour exporter la liste des emplacements actuels vers un fichier CSV et enregistrez-le sur votre disque dur local. Cela vous fournira un fichier CSV correctement formaté avec des en-tête de colonne à laquelle vous pouvez ajouter des emplacements. Vous pouvez laisser les emplacements exportés existants tels qu’ils sont ; Elles ne seront pas dupliquées lorsque vous importez le CSV mis à jour. Si vous souhaitez modifier l’adresse d’un emplacement existant, elle sera mise à jour lorsque vous importez le CSV. Vous ne pouvez pas modifier l’adresse d’une ville découverte.
 
 1. Ouvrez le CSV et ajoutez vos emplacements en remplissant les champs suivants sur une nouvelle ligne pour chaque emplacement que vous souhaitez ajouter. Laissez tous les autres champs vides ; les valeurs que vous entrez dans d’autres champs seront ignorées.
 
@@ -189,7 +189,7 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>Qu’est-ce qu’une porte d’entrée du service Microsoft 365 ?
 
-La porte d’entrée du service Microsoft 365 est un point d’entrée sur le réseau mondial de Microsoft où les clients et services Office terminent leur connexion réseau. Pour une connexion réseau optimale à Microsoft 365, il est recommandé que votre connexion réseau soit terminée sur la porte d’entrée Microsoft 365 la plus proche.
+La porte d’entrée du service Microsoft 365 est un point d’entrée sur le réseau mondial de Microsoft où les clients et services Office terminent leur connexion réseau. Pour une connexion réseau optimale à Microsoft 365, il est recommandé d’interrompre votre connexion réseau sur la porte d’entrée Microsoft 365 la plus proche.
 
 >[!NOTE]
 >La porte d’entrée du service Microsoft 365 n’a pas de relation directe avec le produit azure front door service disponible sur azure marketplace.
@@ -204,7 +204,7 @@ L’emplacement de sortie Internet est l’emplacement où le trafic réseau qui
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-[Informations réseau Microsoft 365 (aperçu)](office-365-network-mac-perf-insights.md)
+[Informations sur le réseau Microsoft 365 (aperçu)](office-365-network-mac-perf-insights.md)
 
 [Évaluation du réseau Microsoft 365 (prévisualisation)](office-365-network-mac-perf-score.md)
 
