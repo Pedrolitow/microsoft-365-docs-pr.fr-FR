@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Découvrez comment créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement de messages Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 22aec87b149c58b2537f6921fb7c37552ef72f98
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: ad570f64122aecd245b912b1b6545a5950e838cc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741377"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927742"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement de messages
 
@@ -35,7 +35,7 @@ Connectez-vous au Centre d’administration Exchange (EAC) et allez aux **règle
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Pour créer la stratégie à l’aide de règles de flux de messagerie dans PowerShell
 
-Utilisez un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell). Utilisez les cmdlets Set-IRMConfiguration et New-TransportRule pour créer la stratégie.
+Utilisez un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Utilisez les cmdlets Set-IRMConfiguration et New-TransportRule pour créer la stratégie.
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>Exemple de règle de flux de messagerie créée avec PowerShell
 
@@ -54,11 +54,11 @@ Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
 
-Pour plus d’informations, [voir Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-irmconfiguration) et [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
+Pour plus d’informations, [voir Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) et [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
 ## <a name="how-recipients-access-attachments"></a>Accès des destinataires aux pièces jointes
 
-Une fois que Microsoft a chiffré un message, les destinataires ont un accès illimité aux pièces jointes lorsqu’ils accèdent à leurs messages chiffrés et les ouvrent.
+Une fois que Microsoft a chiffré un message, les destinataires ont un accès illimité aux pièces jointes lorsqu’ils accèdent à leurs messages électroniques chiffrés et les ouvrent.
 
 ## <a name="to-prepare-for-this-change"></a>Pour préparer cette modification
 
@@ -77,4 +77,4 @@ Microsoft 365 audite cette activité et la met à la disposition des administrat
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>Pour désactiver ou personnaliser la stratégie des types d’informations sensibles
 
-Une fois que vous avez créé la [](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) règle de flux de messagerie Exchange, vous pouvez la désactiver ou la modifier en allant dans Règles de flux de messagerie dans le Centre d’administration Exchange (EAC) et en désactivant la règle « Chiffrer les messages électroniques  >   *sensibles sortants (règle* d’envoi) ».
+Une fois que vous avez créé la [](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) règle de flux de messagerie Exchange, vous pouvez la désactiver ou la modifier en allant dans Règles de flux de messagerie dans le Centre d’administration Exchange (EAC) et en désactivant la règle « Chiffrer les messages électroniques  >   *sensibles sortants (règle* d’envoi) ».

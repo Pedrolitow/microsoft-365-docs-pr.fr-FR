@@ -13,12 +13,12 @@ description: Les administrateurs peuvent en savoir plus sur les informations et 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7432eca577fb264126b9fc8f10bdd83de32711cf
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ce252535d472cc4941a1353aa2be94759daebf4a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289674"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926855"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de courriers dans le Centre de sécurité et de conformité
 
@@ -69,9 +69,9 @@ Le tableau de bord de flux de messagerie est disponible pour les membres des gro
 
 - **Gestion de l’organisation** dans le Centre de sécurité & conformité (administrateurs globaux).
 
-- **[Administrateur Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** dans Azure Active Directory.
+- **[Administrateur Exchange](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** dans Azure Active Directory.
 
-- **Administrateur de flux de** messagerie dans le Centre de sécurité & conformité. Si le compte n’est pas également membre des groupes de rôles Gestion de l’organisation ou Administrateur Exchange, prenons en compte les problèmes suivants :
+- **Administrateur de flux de messagerie** dans le Centre de sécurité & conformité. Si le compte n’est pas également membre des groupes de rôles Gestion de l’organisation ou Administrateur Exchange, prenons en compte les problèmes suivants :
   - L’utilisateur doit se connecter au Centre de sécurité & conformité directement sur <https://protection.office.com> .
   - L’utilisateur aura uniquement une autorisation en lecture seule sur le tableau de bord de flux de messagerie.
   - L’utilisateur n’aura pas accès au Centre d’administration Microsoft 365.

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article explique comment supprimer ou désactiver l’authentification moderne hybride de Skype Entreprise et Exchange.
-ms.openlocfilehash: 70f62b9b2165464837aa1dea0e12854df116efe0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9442ef3e19d0835bfd59f27ec425e36fd7dfcf7a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547095"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927287"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Suppression ou désactivation de l’authentification moderne hybride à partir de Skype Entreprise et Exchange
 
@@ -36,7 +36,7 @@ Si vous avez activé l’authentification moderne hybride (HMA) uniquement pour 
 Si vous avez activé l’authentification moderne dans Skype Entreprise Online ou en local, et/ou Exchange Online ou en local et que vous avez trouvé que vous devez désactiver HMA, ces étapes sont à votre place.
 
 > [!IMPORTANT]
-> Consultez l’article «[Topologies Skype](https://technet.microsoft.com/library/mt803262.aspx)Entreprise pris en charge avec l’authentification moderne » si vous êtes dans Skype Entreprise Online ou en local, que vous avez un HMA de topologie mixte et que vous devez examiner les topologies pris en charge avant de commencer.
+> Consultez l’article «[Topologies Skype](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)Entreprise pris en charge avec l’authentification moderne » si vous êtes dans Skype Entreprise Online ou en local, si vous avez un HMA de topologie mixte et que vous devez examiner les topologies pris en charge avant de commencer.
   
 ## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>Comment désactiver l’authentification moderne hybride (Exchange)
 
@@ -47,7 +47,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange Online**: [se connecter à Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) avec Remote PowerShell. Exécutez la commande suivante pour transformer votre  *indicateur OAuth2ClientProfileEnabled*  en « false » :
+2. **Exchange Online**: [se connecter à Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) avec Remote PowerShell. Exécutez la commande suivante pour transformer votre  *indicateur OAuth2ClientProfileEnabled*  en « false » :
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
@@ -68,5 +68,3 @@ Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed
 ```
 
 [Revenir à la vue d’ensemble de l’authentification moderne.](hybrid-modern-auth-overview.md) 
-  
-

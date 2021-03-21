@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Découvrez comment télécharger un ou plusieurs rapports existants dans le Centre de conformité &amp; de sécurité.
-ms.openlocfilehash: 4dd5716bef6f04c5f665b7d3a000362a91f3c31a
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: 92f48ee29b310ca2924b2caf29ef2c062461cfd2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201410"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926610"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Télécharger des rapports existants dans le Centre de &amp; conformité de sécurité
 
@@ -41,8 +41,8 @@ Dans le [Centre de &amp; conformité de](https://protection.office.com)la sécur
 
 [Rapports et informations dans le Centre de &amp; conformité de la sécurité](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
   
-[Créer une planification pour un rapport dans le Centre de &amp; conformité de sécurité](../security/office-365-security/create-a-schedule-for-a-report.md)
+[Créer une planification pour un rapport dans le Centre de &amp; conformité de sécurité](../security/office-365-security/view-reports-for-atp.md)
   
-[Gérer les planifications des rapports dans le Centre de &amp; conformité de sécurité](../security/office-365-security/manage-schedules-for-multiple-reports.md)
+[Gérer les planifications des rapports dans le Centre de &amp; conformité de la sécurité](../security/office-365-security/view-reports-for-atp.md)
   
-[Télécharger un rapport personnalisé dans le Centre de &amp; conformité de sécurité](../security/office-365-security/set-up-and-download-a-custom-report.md)
+[Télécharger un rapport personnalisé dans le Centre de &amp; conformité de sécurité](../security/office-365-security/view-reports-for-atp.md)

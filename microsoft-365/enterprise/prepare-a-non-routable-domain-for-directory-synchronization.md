@@ -22,22 +22,22 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Découvrez comment faire si vous avez un domaine non routable associé à vos comptes d’utilisateurs locaux avant de les synchroniser avec votre client Microsoft 365.
-ms.openlocfilehash: dcd941bbae159afeb0cf6ef4f5acbaf409966295
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: e4d0e020c5792c610d501c33e8f3d5131b7a1ff0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780331"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927395"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparation d’un domaine non routable pour la synchronisation d’annuaires
 
-Lorsque vous synchronisez votre annuaire local avec Microsoft 365, vous devez avoir un domaine vérifié dans Azure Active Directory (Azure AD). Seuls les noms d’utilisateur principaux (UPN) associés au domaine AD DS (Active Directory Domain Services) local sont synchronisés. Toutefois, tout UPN qui contient un domaine non routable, tel que « .local » (exemple : billa@contoso.local), sera synchronisé avec un domaine .onmicrosoft.com (par exemple : billa@contoso.onmicrosoft.com). 
+Lorsque vous synchronisez votre annuaire local avec Microsoft 365, vous devez avoir un domaine vérifié dans Azure Active Directory (Azure AD). Seuls les noms d’utilisateur principaux (UPN) associés au domaine AD DS (Active Directory Domain Services) local sont synchronisés. Toutefois, tout UPN qui contient un domaine non routable, tel que « .local » (exemple : billa@contoso.local), sera synchronisé avec un domaine .onmicrosoft.com (exemple : billa@contoso.onmicrosoft.com). 
 
 Si vous utilisez actuellement un domaine « .local » pour vos comptes d’utilisateur dans AD DS, il est recommandé de les modifier pour utiliser un domaine vérifié, tel que billa@contoso.com, afin de synchroniser correctement avec votre domaine Microsoft 365.
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Que se passe-t-il si je n’ai qu’un domaine local « .local » ?
 
-Vous utilisez Azure AD Connect pour synchroniser vos AD DS avec le client Azure AD de votre client Microsoft 365. Pour plus d’informations, voir Intégration de vos [identités locales à Azure AD.](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)
+Vous utilisez Azure AD Connect pour synchroniser vos AD DS avec le client Azure AD de votre client Microsoft 365. Pour plus d’informations, voir Intégration de vos [identités locales à Azure AD.](/azure/architecture/reference-architectures/identity/azure-ad)
   
 Azure AD Connect synchronise l’UPN et le mot de passe de vos utilisateurs afin que les utilisateurs peuvent se connecter avec les mêmes informations d’identification qu’ils utilisent en local. Toutefois, Azure AD Connect synchronise uniquement les utilisateurs avec les domaines vérifiés par Microsoft 365. Cela signifie que le domaine est également vérifié par Azure AD, car les identités Microsoft 365 sont gérées par Azure AD. En d’autres termes, le domaine doit être un domaine Internet valide (par exemple, .com, .org, .net, .us). Si votre AD DS interne utilise uniquement un domaine non routable (par exemple, « .local »), cela ne peut pas correspondre au domaine vérifié dont vous avez besoin pour votre client Microsoft 365. Vous pouvez résoudre ce problème en modifiant votre domaine principal dans votre AD DS local ou en ajoutant un ou plusieurs suffixes UPN.
   
@@ -57,7 +57,7 @@ Une fois que vous avez mis à jour les UPN pour utiliser le domaine vérifié, v
     
     **Ou, si vous n’avez pas Windows Server 2012**
     
-    Appuyez sur la touche  Windows + **R** pour ouvrir la boîte de dialogue Exécuter, puis tapez Domain.msc, puis choisissez **OK.**
+    Appuyez sur la touche  Windows + **R** pour ouvrir la boîte de dialogue Exécuter, puis tapez Domain.msc, puis choisissez **OK**.
     
     ![Choisissez Domaines et trusts Active Directory.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
@@ -90,7 +90,7 @@ Une fois que vous avez mis à jour les UPN pour utiliser le domaine vérifié, v
    
 ### <a name="use-powershell-to-change-the-upn-suffix-for-all-of-your-users"></a>Utiliser PowerShell pour modifier le suffixe UPN de tous vos utilisateurs
 
-Si vous avez un grand nombre de comptes d’utilisateur à mettre à jour, il est plus facile d’utiliser PowerShell. L’exemple suivant utilise les cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) et [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) pour modifier tous les suffixes contoso.local en contoso.com dans AD DS. 
+Si vous avez un grand nombre de comptes d’utilisateur à mettre à jour, il est plus facile d’utiliser PowerShell. L’exemple suivant utilise les cmdlets [Get-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) et [Set-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) pour modifier tous les suffixes contoso.local en contoso.com dans AD DS. 
 
 Par exemple, vous pouvez exécuter les commandes PowerShell suivantes pour mettre à jour tous les suffixes contoso.local contoso.com :
     
@@ -99,5 +99,4 @@ Par exemple, vous pouvez exécuter les commandes PowerShell suivantes pour mettr
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("@contoso.local","@contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
 
-Consultez [le module Windows PowerShell Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=624314) pour en savoir plus sur l Windows PowerShell dans AD DS. 
-
+Consultez [le module Windows PowerShell Active Directory](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10)) pour en savoir plus sur l Windows PowerShell dans AD DS.

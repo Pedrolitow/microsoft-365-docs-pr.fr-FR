@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: En savoir plus sur les types d’explications dans Microsoft SharePoint Syntex
-ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242593"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928399"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduction aux types d’explications
 
@@ -71,7 +71,7 @@ De plus, si vous avez des exigences de mise en majuscule dans votre liste de mod
    ![Seulement la mise en majuscule exacte](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Au lieu de créer manuellement une explication de liste de modèles, utilisez la [bibliothèque d’explications](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) pour utiliser des modèles de liste de modèles pour une liste de modèles commune, comme les *dates*, *numéros de téléphone*, *numéro de carte bancaire*, etc.
+> Au lieu de créer manuellement une explication de liste de modèles, utilisez la [bibliothèque d’explications](#use-explanation-templates) pour utiliser des modèles de liste de modèles pour une liste de modèles commune, comme les *dates*, *numéros de téléphone*, *numéro de carte bancaire*, etc.
 
 ## <a name="proximity"></a>Proximité 
 

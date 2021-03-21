@@ -10,18 +10,18 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Cet article traite des étiquettes de sensibilité et de classification Azure Active Directory classiques.
-ms.openlocfilehash: 2506e7f467a485878f1e26a23ee1071907b41614
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1be7e31ee4091e561f7eedb34b41958efc69a339
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545658"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926332"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Étiquettes de classification et de sensibilité Azure Active Directory pour les groupes Microsoft 365
 
 Cet article traite des étiquettes de sensibilité et de classification Azure Active Directory classiques.
 
-Les étiquettes de sensibilité sont pris en charge [par ces services.](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#support-for-the-sensitivity-labels)
+Les étiquettes de sensibilité sont pris en charge [par ces services.](./sensitivity-labels-teams-groups-sites.md#support-for-the-sensitivity-labels)
 
 Pour obtenir des informations complètes sur les étiquettes de sensibilité, voir [En savoir plus sur les étiquettes de sensibilité.](sensitivity-labels.md)
 
@@ -33,8 +33,8 @@ Consultez les scénarios suivants pour obtenir les meilleures pratiques lors de 
 
 - L’administrateur client active les étiquettes de niveau de sensibilité pour les groupes en fixant l’indicateur client « EnableMIPLabels » sur true via l’cmdlet PowerShell AAD.
 - L’administrateur client crée les étiquettes de niveau de sensibilité dans le Centre de conformité [Microsoft 365.](https://compliance.microsoft.com)
-    - L’administrateur client peut choisir des actions liées aux fichiers et aux e-mails, telles que le chiffrement et le filigrane.
-    - L’administrateur client peut choisir les groupes Microsoft 365 et les actions liées au site SharePoint Online sur les étiquettes de niveau de sensibilité.
+    - L’administrateur client peut choisir des actions liées au fichier et à la messagerie, telles que le chiffrement et le filigrane.
+    - L’administrateur client peut choisir les groupes Microsoft 365 et les actions liées au site SharePoint Online pour les étiquettes de niveau de sensibilité.
 - L’administrateur client publie la stratégie.
 - **Les charges de travail compatibles** indiquent les étiquettes de sensibilité. Utilisez les étiquettes de niveau de sensibilité pour créer des groupes. Les charges de travail compatibles sont les services qui la prise en charge des étiquettes de sensibilité.
 - **Les charges de travail non compatibles** sont les services qui ne sont pas encore compatibles avec les étiquettes de sensibilité. Les groupes peuvent être créés, toutefois, ils ne peuvent pas être associés à l’étiquette de sensibilité par le biais de charges de travail non compatibles. Pour associer ces groupes à des étiquettes de niveau de sensibilité, les administrateurs client peuvent exécuter des cmdlets PowerShell.
@@ -44,7 +44,7 @@ Tableau 1. Comportement des charges de travail compatibles et non compatibles :
 |Charge de travail|Quelle liste d’étiquettes l’utilisateur voit-il dans la fenêtre de groupe ?|Créer un groupe |Modifier un groupe |Delete group |
 |:-------|:-------|:--------|:--------|:--------|   
 |Compatible   |étiquettes de sensibilité. |Aucun changement de comportement. |Aucun changement de comportement. |Aucun changement de comportement. |
-|Non compatible |Aucune étiquette de sensibilité n’est visible. |L’utilisateur peut créer un groupe sans sélectionner d’étiquette de sensibilité. <br><br> Notez que l’administrateur peut exécuter des cmdlets pour appliquer des étiquettes de niveau de sensibilité en arrière-plan. |**Cas 1 :** aucune étiquette de niveau de sensibilité précédemment sélectionnée. L’utilisateur peut modifier un groupe.<br><br> **Cas 2 :** étiquette de sensibilité appliquée précédemment en arrière-plan à l’aide de la cmdlet. L’utilisateur peut modifier un groupe avec succès, à l’exclusion du cas où l’utilisateur sélectionne une combinaison non valide de paramètres de confidentialité par rapport à l’étiquette. |Aucun changement de comportement.|
+|Non compatible |Aucune étiquette de sensibilité n’est visible. |L’utilisateur peut créer un groupe sans sélectionner d’étiquette de sensibilité. <br><br> Notez que l’administrateur peut exécuter des cmdlets pour appliquer des étiquettes de niveau de sensibilité en arrière-plan. |**Cas 1 :** aucune étiquette de niveau de sensibilité précédemment sélectionnée. L’utilisateur peut modifier un groupe.<br><br> **Cas 2 :** étiquette de sensibilité appliquée précédemment en arrière-plan à l’aide de la cmdlet. L’utilisateur peut modifier un groupe avec succès, en excluant le cas où l’utilisateur sélectionne une combinaison non valide de paramètres de confidentialité par rapport à l’étiquette. |Aucun changement de comportement.|
 
 > [!NOTE]
 > Dans le cas du client de bureau Outlook (Win 32), une fois que l’administrateur a activé les étiquettes de sensibilité sur son client et que son utilisateur se trouve sur une version antérieure du client de bureau Outlook (Win 32) :
@@ -54,12 +54,12 @@ Tableau 1. Comportement des charges de travail compatibles et non compatibles :
 >
 > Nous recommandons à vos utilisateurs d’une ancienne version du client Outlook de mettre à niveau vers la version la plus récente.
 
-## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Scénario 2 : le client utilise déjà des classifications AAD [classiques](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Scénario 2 : le client utilise déjà des classifications AAD [classiques](../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
-### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>Cas A : le client n’a jamais utilisé d’étiquettes de niveau de sensibilité pour les documents et les e-mails
+### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>Cas A : le client n’a jamais utilisé d’étiquettes de sensibilité pour les documents et les e-mails
 
 1. Dans le Centre de conformité [Microsoft 365,](https://compliance.microsoft.com)nous vous recommandons de créer des étiquettes de sensibilité avec le même nom que les étiquettes Azure AD classiques existantes.
-2. Utilisez l’cmdlet PowerShell pour appliquer ces étiquettes de niveau de sensibilité aux groupes Microsoft 365 et sites SharePoint existants à l’aide du mappage de noms.
+2. Utilisez l’cmdlet PowerShell pour appliquer ces étiquettes de sensibilité aux groupes Microsoft 365 existants et aux sites SharePoint à l’aide du mappage de noms.
 3. L’administrateur peut choisir de supprimer les étiquettes Azure AD classiques :
     - Les charges de travail compatibles montrent que ces étiquettes de sensibilité et groupes sont créés avec eux.
     - Les charges de travail non compatibles fonctionnent lors de la création de groupes, mais aucune étiquette de niveau de sensibilité n’est attachée à ces derniers.
@@ -93,4 +93,4 @@ Tableau 2. Comportement des charges de travail compatibles et non compatibles :
 
 ## <a name="sample-script"></a>Exemple de script
 
-Pour obtenir un exemple de script pour migrer des groupes avec des étiquettes AAD classiques vers des étiquettes de niveau de sensibilité, voir Classification de groupe [Azure AD classique.](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)
+Pour obtenir un exemple de script pour migrer des groupes avec des étiquettes AAD classiques vers des étiquettes de niveau de sensibilité, voir Classification de groupe [Azure AD classique.](./sensitivity-labels-teams-groups-sites.md#classic-azure-ad-group-classification)

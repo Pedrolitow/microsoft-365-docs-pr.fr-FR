@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Cette page d’accueil fournit des liens et des informations de planification pour la sécurité et la conformité dans Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3684506b458ea2d40d3ff8b022bfb9e8154accf3
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: f050d8bb7052ec2f62a9e33c35bcbe43546a40c2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399033"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927960"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planifier la conformité de &amp; la sécurité
 
@@ -32,7 +32,7 @@ La gestion de la sécurité et de la conformité est un partenariat. Vous êtes 
 
 Orientez-vous vers les fonctionnalités de protection des informations dans l’affiche Protection des informations pour Office 365. 
   
-[Déployer la protection des informations pour les réglementations en matière de confidentialité des données avec Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
+[Déployer la protection des informations pour les réglementations en matière de confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>Étape 2 : Vérifier votre score de sécurité
 
@@ -60,7 +60,7 @@ Examiner et planifier les fonctionnalités de protection des fichiers organisée
 
 Le Centre de conformité de sécurité vous offre une vue unique des contrôles que vous allez utiliser pour gérer l’éventail de la sécurité Microsoft 365, y compris la gestion des menaces, la gouvernance des données et la recherche et &amp; l’examen. 
   
-- [Go to the Security &amp; Compliance Center](go-to-the-securitycompliance-center.md)
+- [Go to the Security &amp; Compliance Center](./microsoft-365-compliance-center.md)
     
 - [Autorisations dans le Centre de &amp; conformité de sécurité](~/security/office-365-security/protect-against-threats.md)
     
@@ -81,5 +81,5 @@ Configurer vos paramètres de sécurité et de conformité dans ces centres d’
 |**Abonnement**|**URL de gestion**|**Tableaux de bord et centres d’administration**|
 |:-----|:-----|:-----|
 |Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Centre d’administration Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  Centre d’administration SharePoint et Centre d’administration OneDrive Entreprise  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |

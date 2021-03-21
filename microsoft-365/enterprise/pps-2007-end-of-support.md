@@ -16,18 +16,18 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007, ProClarity et SharePoint Server 2007 ont atteint la fin de la prise en charge. Lisez cet article pour planifier la mise à niveau de votre solution d’aide à la fois.
-ms.openlocfilehash: 4a13e6f8a40de78c0d98b03369b52a78899fc7a9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: aa6adae24d78b6be72f17fd56c272b1293e6fcdc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519596"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927335"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les serveurs et applications Office 2007 ont atteint leur fin de prise en charge, y compris les serveurs et les applications que vous utilisez peut-être dans le cadre de vos solutions d’aide à la solution d’aide à la solution d’aide à la demande. Le tableau suivant répertorie les applications d’bi qui sont affectées :
+Les serveurs et applications Office 2007 ont atteint leur fin de prise en charge, y compris les serveurs et les applications que vous utilisez peut-être dans le cadre de vos solutions d’aide à la demande. Le tableau suivant répertorie les applications d’bi qui sont affectées :
   
 |**Applications d’aide à la vie microsoft**|**Date de fin de la prise en charge**|
 |:-----|:-----|
@@ -53,22 +53,22 @@ Votre installation de ProClarity, SharePoint Server 2007 SP3 et PerformancePoint
   
 ## <a name="what-are-my-options"></a>Quelles sont mes options ?
 
-De nombreuses modifications ont été apportées aux applications d’aide à la demande Microsoft depuis 2007, et vous avez plusieurs options à envisager, comme résumé dans le tableau suivant.
+De nombreuses modifications ont été apportées aux applications d’aide à la demande Microsoft depuis 2007 et vous avez plusieurs options à envisager, comme résumé dans le tableau suivant.
   
 |**Si vous utilisiez cette...**|**Explorez ces options...**|**Gardez ceci à l’esprit...**|
 |:-----|:-----|:-----|
-| PerformancePoint Server 2007 Monitoring &amp; Analytics, notamment :<br/>- PerformancePoint Monitoring Server <br/>- PerformancePoint Dashboard Designer<br/>- Visionneuse de tableau de bord pour SharePoint Services (utilisé pour le rendu des tableaux de bord, cartes de performance et rapports PerformancePoint)<br/> |**Excel avec Excel dans un navigateur** (dans le cloud ou en local). Pour obtenir une vue d’ensemble, [voir fonctionnalités d’aide à la fois dans Excel et Microsoft 365.](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)<br/><br/> **Power BI** (dans le cloud ou en local). Pour obtenir une vue d’ensemble, [voir Qu’est-ce que Power BI ?](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **SQL Server Reporting Services** (local). Pour une vue [d’ensemble, voir SQL Server Reporting Services (SSRS)](https://go.microsoft.com/fwlink/?linkid=841342): créer, déployer et gérer des rapports mobiles et paginés. <br/><br/> **PerformancePoint Services** (local). Pour obtenir une vue [d’ensemble, voir What’s new for PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343). <br/> |Excel est disponible en ligne (en nuage) ou en local. De nombreux besoins en matière de rapports et de tableaux de bord peuvent être satisfaits avec Excel.  <br/><br/> Power BI est disponible en tant que solution en ligne ou sur site. Power BI n’est pas inclus dans Microsoft 365. Toutefois, vous pouvez commencer à utiliser Power BI gratuitement. Par la suite, en fonction de l’utilisation des données et des besoins de votre entreprise, vous pouvez mettre à niveau vers Power BI Pro avec Microsoft 365 E5.<br/> <br/> Reporting Services et PerformancePoint Services sont tous deux des solutions sur site. <br/><br/> PerformancePoint Services est disponible dans SharePoint Server 2010, SharePoint Server 2013 et SharePoint Server 2016. <br/> <br/> Certaines fonctionnalités et types de rapports qui étaient disponibles dans PerformancePoint Server 2007 ne sont pas disponibles dans Excel, Power BI, Reporting Services ou PerformancePoint Services. Examinez les fonctionnalités disponibles pour déterminer la meilleure solution pour les besoins de votre entreprise. <br/> |
-| Logiciels ProClarity, notamment :<br/>- ProClarity Desktop Professionnel<br/> - ProClarity Analytics Server<br/>- Visionneuse SharePoint ProClarity<br/> |**Travaillez avec un partenaire Microsoft** pour identifier une solution qui répond le mieux à vos besoins. Visitez [l’Microsoft Partner Center](https://go.microsoft.com/fwlink/?linkid=841249). <br/><br/> Vous pouvez également envisager d’utiliser Excel avec Excel dans un navigateur, Power BI, SQL Server Reporting Services ou PerformancePoint Services.  <br/> |Plusieurs fonctionnalités des logiciels ProClarity, mais pas toutes, sont disponibles dans d’autres offres Microsoft, notamment Excel, Power BI, Reporting Services et PerformancePoint Services.  <br/> |
-|SharePoint Server 2007 KPIs (également appelés KPIs MOSS)  <br/> |**Excel avec Excel Services**. Pour une vue d’ensemble, voir [Business intelligence dans Excel et Excel Services (SharePoint Server 2013).](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |Les KPIs MOSS créés à l’aide de SharePoint Server 2007 peuvent être utilisés dans SharePoint Server 2010, SharePoint Server 2013 et SharePoint Server 2016. Mais vous ne pouvez pas créer de nouveaux KPIs MOSS.  <br/> |
+| PerformancePoint Server 2007 Monitoring &amp; Analytics, notamment :<br/>- PerformancePoint Monitoring Server <br/>- PerformancePoint Dashboard Designer<br/>- Visionneuse de tableau de bord pour SharePoint Services (utilisé pour le rendu des tableaux de bord, cartes de performance et rapports PerformancePoint)<br/> |**Excel avec Excel dans un navigateur** (dans le cloud ou en local). Pour obtenir une vue d’ensemble, [voir fonctionnalités d’aide à la fois dans Excel et Microsoft 365.](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)<br/><br/> **Power BI** (dans le cloud ou en local). Pour obtenir une vue d’ensemble, [voir Qu’est-ce que Power BI ?](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **SQL Server Reporting Services** (local). Pour une vue [d’ensemble, voir SQL Server Reporting Services (SSRS) : créer,](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports)déployer et gérer des rapports mobiles et paginés. <br/><br/> **PerformancePoint Services** (local). Pour obtenir une vue [d’ensemble, voir What’s new for PerformancePoint Services (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/ee661741(v=office.14)). <br/> |Excel est disponible en ligne (en nuage) ou en local. De nombreux besoins en matière de rapports et de tableaux de bord peuvent être satisfaits avec Excel.  <br/><br/> Power BI est disponible en tant que solution en ligne ou sur site. Power BI n’est pas inclus dans Microsoft 365. Toutefois, vous pouvez commencer à utiliser Power BI gratuitement. Par la suite, en fonction de l’utilisation des données et des besoins de votre entreprise, vous pouvez mettre à niveau vers Power BI Pro avec Microsoft 365 E5.<br/> <br/> Reporting Services et PerformancePoint Services sont tous deux des solutions sur site. <br/><br/> PerformancePoint Services est disponible dans SharePoint Server 2010, SharePoint Server 2013 et SharePoint Server 2016. <br/> <br/> Certaines fonctionnalités et types de rapports qui étaient disponibles dans PerformancePoint Server 2007 ne sont pas disponibles dans Excel, Power BI, Reporting Services ou PerformancePoint Services. Examinez les fonctionnalités disponibles pour déterminer la meilleure solution pour les besoins de votre entreprise. <br/> |
+| Logiciels ProClarity, notamment :<br/>- ProClarity Desktop Professionnel<br/> - ProClarity Analytics Server<br/>- Visionneuse SharePoint ProClarity<br/> |**Travaillez avec un partenaire Microsoft** pour identifier une solution qui répond le mieux à vos besoins. Visitez [l’Microsoft Partner Center](https://go.microsoft.com/fwlink/?linkid=841249). <br/><br/> Vous pouvez également envisager d’utiliser Excel avec Excel dans un navigateur, Power BI, SQL Server Reporting Services ou PerformancePoint Services.  <br/> |Plusieurs fonctionnalités du logiciel ProClarity, mais pas toutes, sont disponibles dans d’autres offres Microsoft, notamment Excel, Power BI, Reporting Services et PerformancePoint Services.  <br/> |
+|SharePoint Server 2007 KPIs (également appelés KPIs MOSS)  <br/> |**Excel avec Excel Services**. Pour une vue d’ensemble, voir [Business intelligence in Excel and Excel Services (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx). <br/> |Les KPIs MOSS créés à l’aide de SharePoint Server 2007 peuvent être utilisés dans SharePoint Server 2010, SharePoint Server 2013 et SharePoint Server 2016. Mais vous ne pouvez pas créer de nouveaux KPIs MOSS.  <br/> |
 |Excel 2007  <br/> |**Excel** (dans le cloud ou en local). Pour une vue d’ensemble, [voir fonctionnalités d’bi dans Excel et Office 365.](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/><br/> **Power BI** (dans le cloud ou en local). Pour obtenir une vue d’ensemble, [voir Qu’est-ce que Power BI ?](https://go.microsoft.com/fwlink/?linkid=841341) <br/> |Excel et Power BI offrent à votre organisation des solutions locales et basées sur le cloud, avec la prise en charge d’une grande variété de sources de données.  <br/> |
    
 ### <a name="help-selecting-a-solution"></a>Aide à la sélection d’une solution
 
-Avec autant de choix d’bi, il peut sembler difficile de déterminer l’option la plus efficace. Nous avons un guide en ligne disponible pour vous aider. Voir Choix des outils d’aide à la disposition des clients [pour l’analyse et la rapport.](https://go.microsoft.com/fwlink/?linkid=839877)
+Avec autant de choix d’bi, il peut sembler difficile de déterminer quelle option est la meilleure. Nous avons un guide en ligne disponible pour vous aider. Voir Choix des outils d’aide à la disposition des clients [pour l’analyse et la rapport.](/sql/reporting-services/choosing-microsoft-business-intelligence-bi-tools-for-analysis-and-reporting)
   
 ### <a name="what-if-i-dont-upgrade-now"></a>Que se passe-t-il si je ne suis pas mis à niveau maintenant ?
 
-Vous pouvez choisir de ne pas mettre à niveau immédiatement. Vos serveurs et applications existants continueront à s’exécuter. Toutefois, vous ne recevrez aucune autre mise à jour, y compris les mises à jour de sécurité, étant donné que la prise en charge a pris fin. En cas de problème avec vos applications serveur, vous ne pourrez pas obtenir d’aide du support technique Microsoft.
+Vous pouvez choisir de ne pas mettre à niveau immédiatement. Vos serveurs et applications existants continueront de s’exécuter. Toutefois, vous ne recevrez aucune mise à jour supplémentaire, y compris les mises à jour de sécurité, étant donné que la prise en charge a pris fin. En cas de problème avec vos applications serveur, vous ne pourrez pas obtenir d’aide du support technique Microsoft.
   
 ## <a name="how-do-i-plan-my-upgrade"></a>Comment planifier ma mise à niveau ?
 
@@ -93,7 +93,7 @@ Le tableau suivant compare les principaux avantages de l’utilisation d’Excel
    
 #### <a name="excel-with-microsoft-365-in-the-cloud"></a>Excel avec Microsoft 365 (dans le cloud)
 
-Si vous vous déplacez vers Microsoft 365, vous aurez les services et applications les plus à jour, y compris Excel 2016. PerformancePoint Services n’est pas disponible dans Microsoft 365, vous remplacerez donc le contenu de votre tableau de bord PerformancePoint par des feuilles de calcul Excel ou d’autres rapports. La bonne nouvelle est qu’Excel 2016 possède de nombreux nouveaux types de graphiques et qu’il est plus facile que jamais de créer des tableaux de bord dans Excel. De nouvelles fonctionnalités sont ajoutées régulièrement. Pour en savoir plus, voir [Nouveautés d’Excel 2016 pour Windows.](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)
+Si vous vous déplacez vers Microsoft 365, vous aurez les services et applications les plus à jour, y compris Excel 2016. PerformancePoint Services n’est pas disponible dans Microsoft 365, vous remplacerez donc le contenu de votre tableau de bord PerformancePoint par des feuilles de calcul Excel ou d’autres rapports. La bonne nouvelle est qu’Excel 2016 possède de nombreux nouveaux types de graphiques et qu’il est plus facile que jamais de créer des tableaux de bord dans Excel. De nouvelles fonctionnalités sont ajoutées régulièrement. Pour en savoir plus, [voir Nouveautés d’Excel 2016 pour Windows.](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)
   
 En outre, si vous achetez 50 sièges ou plus de Microsoft 365, l’équipe Microsoft FastTrack peut vous aider à vous installer. Pour en savoir plus, visitez [FastTrack.](https://www.microsoft.com/fasttrack/microsoft-365)
   
@@ -111,7 +111,7 @@ Vous pouvez également configurer PerformancePoint Services dans votre nouvelle 
   
 Pour en savoir plus sur vos options de mise à niveau SharePoint, consultez la feuille de route de fin de la prise en charge de [SharePoint Server 2007.](sharepoint-2007-end-of-support.md)
   
-Pour en savoir plus sur Excel Services, voir [Vue d’ensemble d’Excel Services (SharePoint Server 2010).](https://go.microsoft.com/fwlink/?linkid=841362)
+Pour en savoir plus sur Excel Services, voir [Vue d’ensemble d’Excel Services (SharePoint Server 2010).](/previous-versions/office/sharepoint-server-2010/ee424405(v=office.14))
   
 ### <a name="use-power-bi-in-the-cloud-or-on-premises"></a>Utiliser Power BI (dans le cloud ou en local)
 
@@ -121,15 +121,15 @@ Power BI ne fait pas partie de Microsoft 365 ou de SharePoint Server. Il s’agi
   
 ### <a name="use-reporting-services-on-premises"></a>Utiliser Reporting Services (local)
 
-SQL Server Reporting Services fournit une solution de rapports robuste. Vous pouvez configurer Reporting Services en mode natif ou en mode intégré à SharePoint. Vous pouvez utiliser plusieurs outils différents pour la création de rapports, notamment le Concepteur de rapports, Générateur de rapports et Power View. Avec la dernière version de SQL Server, vous pouvez également utiliser SQL Server Mobile Report Publisher pour fournir des rapports qui s’érident à n’importe quelle taille d’écran. Cela permet aux visiteurs de consommer des rapports sur leurs appareils mobiles. Pour en savoir plus, [voir SQL Server Reporting Services (SSRS) : créez, déployez](https://go.microsoft.com/fwlink/?linkid=841342)et gérez des rapports mobiles et paginés.
+SQL Server Reporting Services fournit une solution de rapports robuste. Vous pouvez configurer Reporting Services en mode natif ou en mode intégré à SharePoint. Vous pouvez utiliser plusieurs outils différents pour la création de rapports, notamment le Concepteur de rapports, Générateur de rapports et Power View. Avec la dernière version de SQL Server, vous pouvez également utiliser SQL Server Mobile Report Publisher pour fournir des rapports qui s’érident à n’importe quelle taille d’écran. Cela permet aux visiteurs de consommer des rapports sur leurs appareils mobiles. Pour plus d’informations, [voir SQL Server Reporting Services (SSRS) : créez, déployez](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports)et gérez des rapports mobiles et paginés.
   
 ### <a name="use-performancepoint-services-on-premises"></a>Utiliser PerformancePoint Services (local)
 
 PerformancePoint Server 2007 a été vendu séparément de SharePoint Server 2007. À partir de SharePoint Server 2010, PerformancePoint Services est une application de service dans SharePoint Server. Ainsi, vous n’avez pas besoin d’acheter des licences serveur ou du matériel distincts pour utiliser PerformancePoint Services.
   
-Pour passer de PerformancePoint Server 2007 à PerformancePoint Services, vous devez passer à une version plus récente de SharePoint Server et configurer PerformancePoint Services. La version de SharePoint Server vers qui vous déplacez détermine si vous pouvez importer le contenu de votre tableau de bord existant de PerformancePoint Server 2007 vers PerformancePoint Services.
+Pour passer de PerformancePoint Server 2007 à PerformancePoint Services, vous devez passer à une version plus récente de SharePoint Server et configurer PerformancePoint Services. La version de SharePoint Server vers qui vous vous déplacez détermine si vous pouvez importer le contenu de votre tableau de bord existant de PerformancePoint Server 2007 vers PerformancePoint Services.
   
-- Si vous faites une mise à niveau vers SharePoint Server 2010, vous pouvez importer le contenu de votre tableau de bord PerformancePoint de PerformancePoint Server 2007 vers PerformancePoint Services dans SharePoint Server 2010. Pour plus d’informations, voir Assistant Importation [: PerformancePoint Server contenu 2007 dans SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=838873).
+- Si vous faites une mise à niveau vers SharePoint Server 2010, vous pouvez importer le contenu de votre tableau de bord PerformancePoint de PerformancePoint Server 2007 vers PerformancePoint Services dans SharePoint Server 2010. Pour plus d’informations, voir Assistant Importation [: PerformancePoint Server contenu 2007 dans SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/ee681485(v=office.14)).
     
 - Si vous vous déplacez vers SharePoint Server 2013 ou SharePoint Server 2016, vous devrez probablement créer du contenu de tableau de bord (sources de données, rapports, cartes de performance et pages de tableau de bord).
     
@@ -139,13 +139,13 @@ Pour commencer à mettre en place votre plan PerformancePoint Services de mise �
     
 - Lorsque vous connaissez la version de SharePoint vers laquelle vous allez passer, consultez l’article correspondant PerformancePoint Services :
     
-  - [Planifier PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841363)
+  - [Planifier PerformancePoint Services (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/ee681486(v=office.14))
     
-  - [PerformancePoint Services dans SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=841551)
+  - [PerformancePoint Services dans SharePoint Server 2013](/sharepoint/administration/performancepoint-services-overview)
     
-  - [Vue d’ensemble de PerformancePoint Services dans SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=874704)
+  - [Vue d’ensemble de PerformancePoint Services dans SharePoint Server 2016](/sharepoint/administration/performancepoint-services-overview)
     
-Lorsque vous faites une mise à niveau vers PerformancePoint Services, vous obtenez plusieurs nouvelles fonctionnalités et améliorations. PerformancePoint Services offre des cartes de performance améliorées ; nouvelles visualisations, telles que l’arborescence de décomposition et le rapport d’indice de détails des KPI ; plus de types de graphiques ; de meilleures fonctionnalités de filtrage Time Intelligence ; et amélioration de la conformité de l’accessibilité. Pour plus d’informations, voir [What’s new for PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343).
+Lorsque vous faites une mise à niveau vers PerformancePoint Services, vous obtenez plusieurs nouvelles fonctionnalités et améliorations. PerformancePoint Services offre des cartes de performance améliorées ; nouvelles visualisations, telles que l’arborescence de décomposition et le rapport d’indice de détails des KPI ; plus de types de graphiques ; de meilleures fonctionnalités de filtrage Time Intelligence ; et amélioration de la conformité de l’accessibilité. Pour plus d’informations, voir [What’s new for PerformancePoint Services (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/ee661741(v=office.14)).
   
 ## <a name="where-can-i-get-help-with-my-upgrade"></a>Où puis-je obtenir de l’aide sur ma mise à niveau ?
 

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Résumé : Décrit les considérations pour la capacité du réseau, les accélérateurs wan et les appareils d’équilibrage de charge utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: a4ea75eb294d74004125be4d258dbe86d7d89810
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e1209c13eb24d11a2cc9692957bc4ee5f6310f41
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689867"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927499"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
@@ -31,13 +31,13 @@ ms.locfileid: "46689867"
   
 Certains matériels réseau peuvent avoir des limites sur le nombre de sessions simultanées qui sont pris en charge. Pour les organisations qui ont plus de 2 000 utilisateurs, il est recommandé qu’elles surveillent leurs appareils réseau pour s’assurer qu’elles sont en mesure de gérer le trafic de service Office 365 supplémentaire. Le logiciel de surveillance SNMP (Simple Network Management Protocol) peut vous aider à le faire.
 
-Cet article fait partie de la planification [réseau et de l’optimisation des performances pour Office 365.](https://aka.ms/tune)
+Cet article fait partie de la planification [réseau et de l’optimisation des performances pour Office 365.](./network-planning-and-performance.md)
 
 Les paramètres de proxy Internet sortant local affectent également la connectivité aux services Office 365 pour vos applications clientes. Vous devez également configurer vos périphériques proxy réseau pour autoriser les connexions pour les URL et applications des services cloud De Microsoft. Chaque organisation est différente. Pour vous faire une idée de la façon dont Microsoft gère ce processus et de la quantité de bande passante que nous approvisionnement, lisez [l’étude de cas.](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)
   
 Les articles d’aide Skype Entreprise suivants ont plus d’informations sur les paramètres de Skype Entreprise :
   
-- [Résolution des erreurs de la signature de Skype Entreprise Online pour les administrateurs](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
+- [Résolution des erreurs de la sign-in Skype Entreprise Online pour les administrateurs](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [Vous ne pouvez pas vous connecter à Skype Entreprise ou certaines fonctionnalités ne fonctionnent pas, car un pare-feu local bloque la connexion.](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
@@ -48,7 +48,7 @@ Les articles d’aide Skype Entreprise suivants ont plus d’informations sur le
 
 Chaque périphérique réseau existant sur une connexion a sa limite de capacité. Ces appareils incluent les cartes réseau client et serveur, les routeurs, les commutateurs et les concentrateurs qui les interconnectent. Une capacité réseau adéquate signifie qu’aucun d’entre eux n’est saturé. La surveillance de l’activité réseau est essentielle pour garantir que les charges réelles sur tous les appareils réseau sont inférieures à leur capacité maximale. La capacité du réseau affecte les performances des périphériques proxy.
   
-Dans la plupart des cas, la bande passante de connexion Internet définit la limite du trafic. Les performances faibles pendant les heures de trafic de pointe sont probablement dues à une utilisation excessive du lien Internet. Cette situation s’applique également à un scénario de succursale, où les ordinateurs serveurs proxy de succursale sont connectés au périphérique proxy au siège social de la succursale sur une liaison de réseau large (WAN) lente.
+Dans la plupart des cas, la bande passante de connexion Internet définit la limite du trafic. Les performances faibles pendant les heures de pointe du trafic sont probablement dues à une utilisation excessive du lien Internet. Cette situation s’applique également à un scénario de succursale, où les ordinateurs serveurs proxy de succursale sont connectés au périphérique proxy au siège social de la succursale sur une liaison de réseau large (WAN) lente.
   
 Pour tester la capacité du réseau, surveillez l’activité réseau sur l’interface réseau proxy. S’il s’agit de plus de 75 % de la bande passante maximale d’une interface réseau, envisagez d’augmenter la bande passante de l’infrastructure réseau qui est insuffisante. Vous pouvez également utiliser des fonctionnalités avancées, telles que la compression HTTP.
   

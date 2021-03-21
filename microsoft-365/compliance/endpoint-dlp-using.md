@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 1bb4013069b8f4890ba420f13a0203eb63973121
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 91e8a25c2a15e82cd7f286d1110b1c87bedf31d5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820186"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926432"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -219,10 +219,10 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 - [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
-- [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Outils et méthodes d’intégration pour les appareils Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
+- [Outils et méthodes d’intégration pour les appareils Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure Active Directory (ADD) adhésion](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure Active Directory (ADD) adhésion](/azure/active-directory/devices/concept-azure-ad-join)
 - [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
 - [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)
 - [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)

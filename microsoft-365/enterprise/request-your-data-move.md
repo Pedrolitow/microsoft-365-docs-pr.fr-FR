@@ -13,19 +13,19 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Les clients Office 365 existants doivent envoyer une demande avant la date d’échéance pour que leurs données de services Microsoft 365 soit déplacées vers leur nouvelle région.
+description: Les clients Office 365 existants doivent envoyer une demande avant la date d’échéance de leur pays pour déplacer leurs données de services Microsoft 365 vers leur nouvelle région.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 216cd3b0cb55cbbe6be89945b98a01ae469ec4e2
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: e68feeca842061c43c7be70d9b8b930f068d8e4e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349231"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927311"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
 > [!NOTE]
-> Les informations de cette page s’appliquent uniquement aux clients qui avaient des clients Microsoft 365 avant l’ouverture des nouveaux centres de données dans leur centre de données géographique. L’éligibilité à la migration dépend également de la date de mise en service du service spécifique.  La date de création du client n’est peut-être pas toujours la date unique qui compte.
+> Les informations de cette page s’appliquent uniquement aux clients qui avaient des clients Microsoft 365 existants avant l’ouverture des nouveaux centres de données dans leur centre de données géographique. L’éligibilité à la migration dépend également de la date de mise en service du service spécifique.  La date de création du client n’est peut-être pas toujours la date unique qui compte.
   
 Les clients Microsoft 365 éligibles peuvent demander la migration des données client essentielles de l’ensemble de leur organisation au repos.  Le programme prend en charge les demandes pour chaque pays au cours de la période décrite dans le tableau et des clients ayant un pays d’inscription éligible associé à leur client Microsoft 365.
   
@@ -66,9 +66,9 @@ Après avoir demandé un déplacement, nous prévoyons de déplacer vos données
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
   
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
-Depuis janvier 2020, les clients des pays office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft Teams.  Les clients qui ont précédemment choisi d’opter pour un déplacement de résidence de données auront également Teams déplacer vers leur région de centre de données local.  Aucune action supplémentaire n’est requise par ces clients.
+Depuis janvier 2020, les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft Teams.  Les clients qui ont précédemment choisi d’opter pour un déplacement de résidence de données auront également Teams déplacer vers leur région de centre de données local.  Aucune action supplémentaire n’est requise par ces clients.
 
 ## <a name="related-topics"></a>Rubriques connexes
 
@@ -76,8 +76,6 @@ Depuis janvier 2020, les clients des pays office 365 éligibles peuvent opter po
 
 [FAQ général relatif au déplacement de données](data-move-faq.md)
 
-[Nouvelles régions de centres de données pour Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Nouvelles régions de centres de données pour Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Services Azure par région](https://azure.microsoft.com/regions/)
-  
-

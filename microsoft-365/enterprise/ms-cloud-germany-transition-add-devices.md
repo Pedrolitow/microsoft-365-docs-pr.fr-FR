@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemande.'
-ms.openlocfilehash: 151fcac882dc91d96df3ece000c28d1a7abe1d1f
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 21188372f03af394fe1c0e227c1adeabbad02a85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780295"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928155"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’appareil pour la migration à partir de Microsoft Cloud Deutschland
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Comment savoir si mon organisation est affectée ?**
 
@@ -53,7 +53,7 @@ Microsoft publiera des instructions pour la restauration de l’état de l’app
  
 **Comment savoir que tous mes appareils sont inscrits dans le cloud public ?**
 
-Pour vérifier si vos appareils sont enregistrés dans le cloud public, vous devez exporter et télécharger la liste des appareils à partir du portail Azure AD vers une feuille de calcul Excel. Ensuite, filtrez les appareils inscrits (à l’aide de la colonne _registeredTime)_ après la phase de migration Distinct [de Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
+Pour vérifier si vos appareils sont inscrits dans le cloud public, vous devez exporter et télécharger la liste des appareils à partir du portail Azure AD vers une feuille de calcul Excel. Ensuite, filtrez les appareils inscrits (à l’aide de la colonne _registeredTime)_ après la phase de migration Distinct [de Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
 L’inscription de l’appareil est désactivée après la migration du client et ne peut pas être activée ou désactivée. Si Intune n’est pas utilisé, connectez-vous à votre abonnement et exécutez cette commande pour réactiver l’option :
 
@@ -63,9 +63,9 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 ## <a name="hybrid-azure-ad-join"></a>Jonction Azure AD Hybride
 
-### <a name="windows-down-level"></a>Windows de bas niveau
+### <a name="windows-down-level"></a>Windows au niveau inférieur
 
-Les appareils _Windows_ de niveau inférieur sont des appareils Windows qui exécutent actuellement des versions antérieures de Windows (comme Windows 8.1 ou Windows 7) ou qui exécutent des versions de Windows Server antérieures à 2019 et 2016. Si ces appareils ont été enregistrés auparavant, vous devez les désins inscrire et les réins inscrire. 
+Les appareils _Windows_ de niveau inférieur sont des appareils Windows qui exécutent actuellement des versions antérieures de Windows (par exemple, Windows 8.1 ou Windows 7) ou qui exécutent des versions de Windows Server antérieures à 2019 et 2016. Si ces appareils ont été enregistrés auparavant, vous devez les désins inscrire et les réins inscrire. 
 
 Pour déterminer si un appareil windows de bas niveau a été précédemment joint à Azure AD, utilisez la commande suivante sur l’appareil :
 
@@ -102,7 +102,7 @@ Une attention suffisante doit être prise pour ne pas exécuter cette commande l
 
 #### <a name="unjoin"></a>Unjoin
 
-Pour déterminer si l’appareil Windows 10 était précédemment joint à Azure AD, exécutez la commande suivante sur l’appareil :
+Pour déterminer si l’appareil Windows 10 a été précédemment joint à Azure AD, exécutez la commande suivante sur l’appareil :
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
@@ -165,7 +165,7 @@ Si l’appareil est joint à Azure AD, l’utilisateur ou l’administrateur ver
 
 Si la sortie est « AzureAdJoined : NO », ignorez les instructions suivantes.
 
-Utilisateur : si l’appareil est joint à Azure AD, un utilisateur peut déjoinder l’appareil des paramètres. Vérifiez qu’il existe un compte d’administrateur local sur l’appareil avant de l’déjoindage de l’appareil d’Azure AD. Le compte d’administrateur local est requis pour se remettre à l’appareil.
+Utilisateur : si l’appareil est joint à Azure AD, un utilisateur peut déjoinder l’appareil des paramètres. Vérifiez qu’il existe un compte d’administrateur local sur l’appareil avant de l’avoir désjoindée d’Azure AD. Le compte d’administrateur local est requis pour se remettre à l’appareil.
 
 Administrateur : si l’administrateur de l’organisation souhaite déjoinder les appareils des utilisateurs joints à Azure AD, ils peuvent le faire en exécutant la commande suivante sur chacun des appareils à l’aide d’un mécanisme tel que la stratégie de groupe. L’administrateur doit vérifier qu’il existe un compte d’administrateur local sur l’appareil avant de l’avoir désjoindée d’Azure AD. Le compte d’administrateur local est nécessaire pour se remettre à l’appareil.
 
@@ -214,7 +214,7 @@ Pour désactiver les invites du Gestionnaire de comptes Web pour inscrire l’ap
 - Nom : BlockAADWorkplaceJoin
 - Données de valeur : 1
 
-La présence de cette valeur de Registre doit bloquer la jointage de l’espace de travail et empêcher les utilisateurs de voir des invites pour joindre l’appareil.
+La présence de cette valeur de Registre doit bloquer l’accès à l’espace de travail et empêcher les utilisateurs de voir des invites pour rejoindre l’appareil.
 
 ## <a name="android"></a>Android
 
@@ -222,27 +222,27 @@ Pour Android, les utilisateurs doivent désins inscrire et réenregistrer leurs 
 
 - À partir de l’application Microsoft Authenticator, les utilisateurs peuvent passer à **Paramètres >'inscription de l’appareil.** À partir de là, les utilisateurs peuvent désins inscrire et réenregistrer leur appareil.
  
-- À partir du portail d’entreprise, les utilisateurs peuvent se rendre sur **l’onglet Appareils** et supprimer l’appareil. Après cela, ré-inscrire l’appareil à l’aide du portail d’entreprise.
+- À partir du portail d’entreprise, les utilisateurs peuvent se rendre sur l’onglet **Appareils** et supprimer l’appareil. Après cela, ré-inscrire l’appareil à l’aide du portail d’entreprise.
  
-- Les utilisateurs peuvent également se désins inscrire et s’inscrire à leur nouvelle inscription en supprimant le compte de la page des paramètres du compte, puis en ajoutant de nouveaux comptes professionnels.
+- Les utilisateurs peuvent également se désins inscrire et s’inscrire à la nouvelle inscription en supprimant le compte de la page des paramètres du compte, puis en ajoutant à nouveaux le compte de travail.
 
 Pour désins inscrire et réenregistrer l’appareil sur Android à l’aide de l’application Microsoft Authenticator :
 
 1.  Ouvrez l’application Microsoft Authenticator et go to **Settings**.
 2.  Sélectionnez **Inscription de l’appareil.**
-3.  Désinsinser l’appareil en sélectionnant **Désinsinsion**.
+3.  Désinsister l’appareil en sélectionnant **Unregister**.
 4.  Pour **l’inscription de** l’appareil, ré-inscrivez l’appareil en tapant votre adresse e-mail, puis sélectionnez **Enregistrer.**
 
 Pour désins inscrire et réenregistrer un appareil Android avec la page Paramètres Android :
 
-1.  Ouvrez **Paramètres de l’appareil** et allez **à Comptes.**
+1.  Ouvrez **Paramètres de l’appareil** et go to **Accounts**.
 2.  Sélectionnez le compte de travail que vous souhaitez ré-inscrire et **sélectionnez Supprimer le compte.**
 3.  Une fois le compte supprimé, dans la **page** Comptes, sélectionnez Ajouter un **compte > compte de travail.**
 4.  For **Workplace Join**, type your email address and select **Join** to complete registering the device.
 
 Pour désins inscrire et réenregistrer l’appareil sur Android à partir du portail d’entreprise :
 
-1.  Lancez Le portail d’entreprise et allez sur **l’onglet Appareils.**
+1.  Lancez Le portail d’entreprise et allez dans **l’onglet Appareils.**
 2.  Sélectionnez l’appareil pour voir les détails de l’appareil.
 3.  Dans le menu points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
 4.  Vous devez maintenant être déconnecté de l’application Portail d’entreprise. Sélectionnez **Se connectez** pour ré-inscrire l’appareil.
@@ -251,7 +251,7 @@ Pour plus d’informations sur les actions requises pendant la phase de migratio
 
 ## <a name="ios"></a>iOS
 
-Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les comptes mis en cache de Microsoft Authenticator, désinsister l’appareil et se dé dé connecter à partir de toutes les applications natives de l’appareil.
+Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les comptes mis en cache de Microsoft Authenticator, désinsister l’appareil et se dé dé connecter à partir des applications natives de l’appareil.
 
 ### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Étape 1 : si elle est présente, supprimez le compte de l’application Microsoft Authenticator
 
@@ -263,14 +263,14 @@ Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les compt
 ### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>Étape 2 : Désinsser l’appareil de l’application Microsoft Authenticator
 
 1. Appuyez sur l’icône de menu dans le coin supérieur droit.
-2. Appuyez **sur Paramètres,** puis **inscription de l’appareil.**
-4. Si votre compte s’affiche, **appuyez sur Désinserrion de l’appareil** et **continuez** dans la boîte de dialogue. Vous ne devriez voir aucun compte après cela.
+2. Appuyez **sur Paramètres,** puis **sur Inscription de l’appareil.**
+4. Si votre compte s’affiche, **appuyez sur Désinsister l’appareil** et **continuez** dans la boîte de dialogue. Vous ne devriez voir aucun compte après cela.
  
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>Étape 3 : Se sortir des applications individuelles si nécessaire
 
 Les utilisateurs peuvent se rendre sur des applications individuelles telles qu’Outlook, Teams et OneDrive, et supprimer des comptes de ces applications.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en place :
 
@@ -287,6 +287,6 @@ Transition :
 
 Applications cloud :
 
-- [Informations sur le programme de migration Dynamics 365](https://aka.ms/d365ceoptin)
-- [Informations sur le programme de migration Power BI](https://aka.ms/pbioptin)
-- [Prise en main de votre mise à niveau vers Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Informations sur le programme de migration Dynamics 365](/dynamics365/get-started/migrate-data-german-region)
+- [Informations sur le programme de migration Power BI](/power-bi/admin/service-admin-migrate-data-germany)
+- [Prise en main de votre mise à niveau vers Microsoft Teams](/microsoftteams/upgrade-start-here)

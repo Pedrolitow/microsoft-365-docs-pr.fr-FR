@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation.
-ms.openlocfilehash: 8d1803442428f3061c686afa0b790d3f468abde8
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741325"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927712"
 ---
 # <a name="message-encryption"></a>Chiffrement des messages
 
@@ -36,7 +36,7 @@ Avec chiffrement de messages Office 365, votre organisation peur envoyer et rece
 
 Le reste de cet article s’applique aux nouvelles fonctionnalités OME.
 
-Le chiffrement de messages Office 365 est un service en ligne qui repose sur Microsoft Azure Rights Management (Azure RMS), qui fait partie d’Azure Information Protection. Ce service inclut des stratégies de chiffrement, d’identité et d’autorisation pour sécuriser votre courrier électronique. Vous pouvez chiffrer des messages à l’aide de modèles de gestion des droits, de [l’option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)Ne pas forwarder et de l’option [chiffrer uniquement.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+Le chiffrement de messages Office 365 est un service en ligne qui repose sur Microsoft Azure Rights Management (Azure RMS), qui fait partie d’Azure Information Protection. Ce service inclut des stratégies de chiffrement, d’identité et d’autorisation pour sécuriser votre courrier électronique. Vous pouvez chiffrer des messages à l’aide de modèles de gestion des droits, de [l’option](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)Ne pas forwarder et de l’option [chiffrer uniquement.](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
 
 Les utilisateurs peuvent ensuite chiffrer des messages électroniques et diverses pièces jointes à l’aide de ces options. Pour obtenir la liste complète des types de pièces jointes pris en charge, voir « Types de fichiers couverts par les stratégies IRM lorsqu’ils sont joints à des messages » dans [l’introduction](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)à LA GESTION des messages électroniques.
 
@@ -46,7 +46,7 @@ Contrairement à la version précédente d’OME, les nouvelles fonctionnalités
 
 Pour obtenir la liste détaillée des différences entre la version précédente d’OME et les nouvelles fonctionnalités OME, voir Comparer les [versions d’OME.](ome-version-comparison.md)
 
-Lorsqu’une personne envoie un message électronique qui correspond à une règle de flux de messagerie de chiffrement, le message est chiffré avant d’être envoyé. Tous les utilisateurs finaux Microsoft 365 qui utilisent les clients Outlook pour lire le courrier reçoivent des expériences de lecture natives de première classe pour les messages chiffrés et protégés par des droits, même s’ils ne font pas partie de la même organisation que l’expéditeur. Les clients Outlook pris en charge incluent le bureau Outlook, Outlook Mac, Outlook Mobile sur iOS et Android et Outlook sur le web (anciennement Outlook Web App).
+Lorsqu’une personne envoie un message électronique qui correspond à une règle de flux de messagerie de chiffrement, le message est chiffré avant d’être envoyé. Tous les utilisateurs finaux Microsoft 365 qui utilisent des clients Outlook pour lire le courrier reçoivent des expériences de lecture natives de première classe pour les messages chiffrés et protégés par des droits, même s’ils ne font pas partie de la même organisation que l’expéditeur. Les clients Outlook pris en charge incluent le bureau Outlook, Outlook Mac, Outlook Mobile sur iOS et Android et Outlook sur le web (anciennement Outlook Web App).
 
 Les destinataires de messages chiffrés qui reçoivent des messages chiffrés ou protégés par des droits envoyés à leurs comptes Outlook.com, Gmail et Yahoo reçoivent un courrier électronique de wrapper qui les dirige vers le portail OME où ils peuvent facilement s’authentifier à l’aide d’informations d’identification Microsoft, Gmail ou Yahoo.
 
@@ -54,23 +54,23 @@ Les utilisateurs finaux qui lisent des messages chiffrés ou protégés par des 
 
 Si l’expéditeur du courrier protégé est dans GCC High et que le destinataire se trouve en dehors de GCC High, y compris les utilisateurs commerciaux, les utilisateurs Outlook.com et les utilisateurs d’autres fournisseurs de messagerie tels que Gmail, le destinataire reçoit un wrapper. Le message de wrapper dirige le destinataire vers le portail OME où le destinataire peut lire le message et y répondre. Dans le cas contraire, si l’expéditeur et le destinataire sont tous les deux dans l’environnement GCC High, même s’ils ne font pas partie de la même organisation, les destinataires qui utilisent des clients Outlook pour lire le courrier reçoivent des expériences de lecture natives de première classe pour les messages chiffrés et protégés par des droits. Pour plus d’informations sur les différentes expériences dans GCC High, voir [Comparer les versions d’OME.](ome-version-comparison.md)
 
-Pour plus d’informations sur les limites de taille des messages et des pièces jointes que vous pouvez chiffrer à l’aide d’OME, voir [Limites d’Exchange Online.](https://technet.microsoft.com/library/exchange-online-limits.aspx)
+Pour plus d’informations sur les limites de taille des messages et des pièces jointes que vous pouvez chiffrer à l’aide d’OME, voir [Limites d’Exchange Online.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)
 
 ## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Fonctionnement du chiffrement de messages avancé Office 365 par-dessus OME
 
 Le chiffrement de messages avancé Office 365 vous permet de créer plusieurs modèles de personnalisation afin d’affiner le contrôle sur les messages des destinataires et de créer des expériences de personnalisation personnalisées pour prendre en charge une structure organisationnelle variée.
 
-Le chiffrement de messages avancé dans Microsoft 365 vous aide à respecter les obligations de conformité qui nécessitent un contrôle plus souple sur l’accès des destinataires externes aux messages électroniques chiffrés. Avec le chiffrement de messages avancé dans Office 365, en tant qu’administrateur, vous pouvez contrôler les e-mails sensibles partagés en dehors de l’organisation avec des stratégies automatiques qui détectent les types d’informations sensibles (par exemple, les données personnelles, les ID financiers ou de santé) ou les mots clés pour améliorer la protection en arrivant à expiration de l’accès via un portail web sécurisé aux messages électroniques chiffrés. En tant qu’administrateur, vous pouvez contrôler davantage les e-mails chiffrés accessibles via un portail web Microsoft 365 en révoquer l’accès à un e-mail à tout moment.
+Le chiffrement de messages avancé dans Microsoft 365 vous aide à respecter les obligations de conformité qui nécessitent un contrôle plus souple sur l’accès des destinataires externes aux messages électroniques chiffrés. Avec le chiffrement de messages avancé dans Office 365, en tant qu’administrateur, vous pouvez contrôler les e-mails sensibles partagés en dehors de l’organisation avec des stratégies automatiques qui détectent les types d’informations sensibles (par exemple, les données personnelles, les ID financiers ou d’état de santé) ou les mots clés pour améliorer la protection en arrivant à expiration de l’accès via un portail web sécurisé aux messages électroniques chiffrés. En tant qu’administrateur, vous pouvez contrôler davantage les e-mails chiffrés accessibles via un portail web Microsoft 365 en révoquer l’accès à un e-mail à tout moment.
 
 La révocation et l’expiration des messages fonctionnent uniquement pour les messages électroniques que vos utilisateurs envoient à des destinataires extérieurs à votre organisation. En outre, les destinataires doivent accéder à l’e-mail via le portail web. Pour vous assurer que le destinataire utilise le portail pour recevoir des messages électroniques, vous devez configurer un modèle de personnalisation qui applique le wrapper. Ensuite, vous appliquez le modèle de branding dans une règle de flux de messagerie. Pour plus d’informations sur le chiffrement de messages avancé, voir Chiffrement de messages avancé [Office 365.](ome-advanced-message-encryption.md)
 
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Définir les règles pour le chiffrement de messages Office 365
 
-Une façon d’activer les nouvelles fonctionnalités pour le chiffrement de messages Office 365 consiste pour les administrateurs Exchange Online et Exchange Online Protection à définir des règles de flux de messagerie. Ces règles déterminent dans quelles conditions les messages électroniques doivent être chiffrés. Lorsqu’une action de chiffrement est définie pour une règle, tous les messages qui correspondent aux conditions de règle sont chiffrés avant d’être envoyés.
+Pour activer les nouvelles fonctionnalités de chiffrement de messages Office 365, les administrateurs Exchange Online et Exchange Online Protection peuvent définir des règles de flux de messagerie. Ces règles déterminent dans quelles conditions les messages électroniques doivent être chiffrés. Lorsqu’une action de chiffrement est définie pour une règle, tous les messages qui correspondent aux conditions de règle sont chiffrés avant d’être envoyés.
 
 Les règles de flux de messagerie sont flexibles, ce qui vous permet de combiner des conditions afin de répondre à des exigences de sécurité spécifiques dans une seule règle. Par exemple, vous pouvez créer une règle pour chiffrer tous les messages qui contiennent les mots-clés spécifiés et adressés à des destinataires externes. Les nouvelles fonctionnalités de chiffrement de messages Office 365 chiffrent également les réponses des destinataires d’e-mails chiffrés.
 
-Pour plus d’informations sur la création de règles de flux de messagerie pour tirer parti des nouvelles fonctionnalités OME, voir Définir des règles pour le chiffrement de [messages Office 365.](define-mail-flow-rules-to-encrypt-email.md)
+Pour plus d’informations sur la création de règles de flux de messagerie pour tirer parti des nouvelles fonctionnalités OME, voir Définir des règles pour le chiffrement de messages [Office 365.](define-mail-flow-rules-to-encrypt-email.md)
 
 ## <a name="get-started-with-the-new-ome-capabilities"></a>Mise en place des nouvelles fonctionnalités OME
 

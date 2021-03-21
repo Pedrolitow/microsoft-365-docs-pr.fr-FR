@@ -14,12 +14,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés renseignements sur le flux de messagerie).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32a98459ce3d3494e576b10d5c5b097393ee2335
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: f9cd05664d055b1635583c24000ca4afa604b237
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289662"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926867"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de courriers dans EOP
 
@@ -42,7 +42,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a tenté de se con
 
 - Votre domaine a expiré récemment, l'enregistrement MX ne peut donc pas être extrait.
 
-- L’enregistrement MX de votre domaine a récemment été modifié et les serveurs DNS ont toujours mis en cache les informations DNS de votre domaine.
+- L’enregistrement MX de votre domaine a récemment été modifié et les serveurs DNS ont encore mis en cache les informations DNS de votre domaine.
 
 ### <a name="how-do-i-fix-error-code-450-44312"></a>Comment corriger le code d’erreur 450 4.4.312 ?
 
@@ -56,7 +56,7 @@ En règle générale, cela signifie que Microsoft 365 ne peut pas se connecter a
 
 - Votre serveur de messagerie local est en panne.
 
-- Une erreur s’est produite dans les paramètres d’hôte intelligent du connecteur, de sorte que Microsoft 365 tente de se connecter à une adresse IP erronée.
+- Une erreur s’est produite dans les paramètres d’hôte intelligent du connecteur. Microsoft 365 tente donc de se connecter à une adresse IP erronée.
 
 ### <a name="how-do-i-fix-error-code-450-44315"></a>Comment corriger le code d’erreur 450 4.4.315 ?
 
@@ -74,7 +74,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
 - Si aucun autre message ne doit être remis à  votre environnement local, cliquez sur Corriger maintenant dans l’alerte pour que Microsoft 365 puisse rejeter immédiatement les messages avec des destinataires non valides. Cette action réduira le risque de dépasser le quota de destinataires non valides de votre organisation, ce qui peut avoir des répercussions négatives sur la remise normale des messages. Vous pouvez également suivre les instructions suivantes pour résoudre manuellement le problème :
 
-  - Dans le [Centre d’administration Exchange (EAC),](https://docs.microsoft.com/Exchange/exchange-admin-center)désactivez ou supprimez le connecteur qui fournit le courrier électronique de Microsoft 365 à votre environnement de messagerie local :
+  - Dans le [Centre d’administration Exchange (EAC),](/Exchange/exchange-admin-center)désactivez ou supprimez le connecteur qui fournit le courrier électronique de Microsoft 365 à votre environnement de messagerie local :
 
     1. Dans le EAC, allez à **Connecteurs de flux** \> **de messagerie.**
 
@@ -82,9 +82,9 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
        - Supprimer le connecteur en cliquant sur **Supprimer l’icône** ![ Supprimer](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Désactivez le connecteur en cliquant sur **Modifier** l’icône ![ et en ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **désactivant Activer.**
+       - Désactivez le connecteur en cliquant sur **Modifier** ![ l’icône ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) et en **désactivant Activer.**
 
-  - Modifiez le domaine accepté dans Microsoft 365 associé à votre  environnement de messagerie local de Relais interne à Faisant **autorité.** Pour obtenir des instructions, [voir Gérer les domaines acceptés dans Exchange Online.](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+  - Modifiez le domaine accepté dans Microsoft 365 associé à votre  environnement de messagerie local de Relais interne à Faisant **autorité.** Pour obtenir des instructions, [voir Gérer les domaines acceptés dans Exchange Online.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
 
   **Remarque**: en règle générale, ces modifications prennent entre 30 minutes et une heure pour prendre effet. Après une heure, vérifiez que vous ne recevez plus l’erreur.
 
@@ -100,7 +100,7 @@ En règle générale, cette erreur signifie que Microsoft 365 s’est connecté 
 
 ### <a name="how-do-i-fix-error-code-450-44317"></a>Comment corriger le code d’erreur 450 4.4.317 ?
 
-- Vérifiez les paramètres et certificats TLS sur vos serveurs de messagerie locaux, ainsi que les paramètres TLS sur le connecteur.
+- Vérifiez les paramètres et les certificats TLS sur vos serveurs de messagerie locaux, ainsi que les paramètres TLS sur le connecteur.
 
 - Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 
@@ -134,7 +134,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
 ### <a name="how-do-i-fix-error-code-450-47320"></a>Comment corriger le code d’erreur 450 4.7.320 ?
 
-- Corrigez le certificat ou les paramètres sur le connecteur afin que les messages en file d’attente dans Microsoft 365 soient remis.
+- Corrigez le certificat ou les paramètres sur le connecteur afin que les messages mis en file d’attente dans Microsoft 365 soient remis.
 
 - Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 

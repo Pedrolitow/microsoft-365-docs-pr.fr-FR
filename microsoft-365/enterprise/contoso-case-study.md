@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment une organisation globale fictive mais représentative a adopté Microsoft 365 pour entreprise.
-ms.openlocfilehash: 9e02469c644c3107e964d0f5defa08043091e28f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e14c2747837ed91a63e7609ce46307b0f38aa758
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166428"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927579"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 entreprise pour Contoso Corporation
 
@@ -45,11 +45,11 @@ Reportez-vous aux articles suivants pour plus d’informations :
 
 - [Identité](contoso-identity.md)
 
-  La solution d’identité Contoso dans le cloud exploite la forêt des services de domaine Active Directory (AD DS) sur site de l’entreprise. Il inclut l’authentification fédérée avec leurs fournisseurs d’identité tiers et fiables existants.
+  La solution d’identité Contoso dans le cloud tire parti de la forêt des services de domaine Active Directory (AD DS) sur site de l’entreprise. Il inclut l’authentification fédérée avec leurs fournisseurs d’identité tiers et fiables existants.
 
 - [Windows 10 Entreprise](contoso-win10.md)
 
-  L’infrastructure Contoso pour Windows 10 Entreprise déploie et installe automatiquement les mises à jour pour les appareils qui exécutent le PC principal et le système d’exploitation des appareils de l’entreprise.
+  L’infrastructure Contoso pour Windows 10 Entreprise déploie et installe automatiquement les mises à jour pour les appareils exécutant le PC principal et le système d’exploitation des appareils de l’entreprise.
 
 - [Applications Microsoft 365 pour les entreprises](contoso-o365pp.md)
 
@@ -77,7 +77,7 @@ Consultez les scénarios et configurations supplémentaires suivants :
 
   Pour créer un environnement de collaboration sécurisé pour un projet top secret, Contoso a utilisé une équipe avec isolation de sécurité.
 
-- [Migration de la voix Teams](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Migration de la voix Teams](/MicrosoftTeams/voice-case-study-overview)
 
   Découvrez comment Contoso a migré ses utilisateurs locaux vers Microsoft Teams pour la communication unifiée, la collaboration et la voix.
 

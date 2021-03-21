@@ -17,26 +17,26 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article explique comment lancer votre portail à l’aide du Programmeur de lancement du portail
-ms.openlocfilehash: 66912f5730c580bd75282a64124fefcdf262d738
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.openlocfilehash: e39f00dbc63ae7f1dcaf907d9c67df2c1683efc6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864875"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926141"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Lancer votre portail à l’aide du Programmeur de lancement du portail
 
 Un portail est un site SharePoint sur votre intranet et qui comporte un grand nombre d’internautes qui utilisent du contenu sur le site. Le lancement de votre portail par vagues est une partie importante de la garantie que les utilisateurs ont une expérience fluide et performante d’accès à un nouveau portail SharePoint Online. 
 
-Le lancement par vagues est un moyen clé de déployer votre portail, comme détaillé dans la planification de votre plan de déploiement de lancement de portail [dans SharePoint Online.](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide) Le Programme de lancement du portail est conçu pour vous aider à suivre une approche de déploiement wave/progressive en gérant les redirections pour le nouveau portail. Pendant chacune des vagues, vous pouvez recueillir les commentaires des utilisateurs et surveiller les performances pendant chaque vague de déploiement. Cela a l’avantage d’introduire le portail lentement, de vous donner la possibilité de suspendre et de résoudre les problèmes avant de poursuivre la vague suivante, et de garantir finalement une expérience positive pour vos utilisateurs. 
+Le lancement par vagues est un moyen clé de déployer votre portail, comme détaillé dans la planification de votre plan de déploiement de lancement de portail [dans SharePoint Online.](./planportallaunchroll-out.md?view=o365-worldwide) Le Programme de lancement du portail est conçu pour vous aider à suivre une approche de déploiement wave/progressive en gérant les redirections pour le nouveau portail. Pendant chacune des vagues, vous pouvez recueillir les commentaires des utilisateurs et surveiller les performances pendant chaque vague de déploiement. Cela a l’avantage d’introduire le portail lentement, de vous donner la possibilité de suspendre et de résoudre les problèmes avant de poursuivre la vague suivante, et de garantir finalement une expérience positive pour vos utilisateurs. 
 
 Il existe deux types de redirection : 
 - bidirectionnel : lancer un nouveau portail SharePoint Online moderne pour remplacer un portail SharePoint classique ou moderne existant 
 - redirection de page temporaire : lancer un nouveau portail SharePoint Online moderne sans portail SharePoint existant
 
-Le programme de lancement du portail est uniquement disponible pour lancer des portails SharePoint Online modernes (c’est-à-dire, des sites de communication). Les lancements doivent être programmés au moins 7 jours à l’avance. Le nombre de vagues requis est déterminé par le nombre d’utilisateurs attendu. Avant de planifier un lancement de portail, l’outil Diagnostic de page pour [SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du portail est saine. À la fin du lancement du portail, tous les utilisateurs ayant des autorisations sur le site pourront accéder au nouveau site. 
+Le programme de lancement du portail est disponible uniquement pour lancer des portails SharePoint Online modernes (c’est-à-dire, des sites de communication). Les lancements doivent être programmés au moins 7 jours à l’avance. Le nombre de vagues requis est déterminé par le nombre d’utilisateurs attendu. Avant de planifier un lancement de portail, l’outil Diagnostic de page pour [SharePoint](./page-diagnostics-for-spo.md) doit être exécuté pour vérifier que la page d’accueil du portail est saine. À la fin du lancement du portail, tous les utilisateurs ayant des autorisations sur le site pourront accéder au nouveau site. 
 
-Pour plus d’informations sur le lancement d’un portail réussi, suivez les principes, pratiques et recommandations de base détaillés dans La création, le lancement et la maintenance d’un [portail sain.](https://docs.microsoft.com/sharepoint/portal-health) 
+Pour plus d’informations sur le lancement d’un portail réussi, suivez les principes, pratiques et recommandations de base détaillés dans La création, le lancement et la maintenance d’un [portail sain.](/sharepoint/portal-health) 
 
 > [!NOTE]
 > Cette fonctionnalité n’est pas disponible pour les plans Office 365 Germany, Office 365 géré par 21Vianet (Chine) ou Microsoft 365 pour le gouvernement américain.
@@ -137,5 +137,5 @@ Exemple :
 
 2. Vérifier qu’aucune redirection ne se produit pour tous les utilisateurs.
 
-## <a name="learn-more"></a>En savoir plus
-[Planification de votre plan de déploiement de lancement de portail dans SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
+## <a name="learn-more"></a>Si vous souhaitez en savoir plus
+[Planification de votre plan de déploiement de lancement de portail dans SharePoint Online](./planportallaunchroll-out.md)

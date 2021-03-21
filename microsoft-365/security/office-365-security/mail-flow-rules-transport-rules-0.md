@@ -13,12 +13,12 @@ ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Vous pouvez utiliser des règles de flux de messagerie (règles de transport) pour identifier et prendre des mesures sur les messages qui circulent dans votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d189a9f4b21828fa4e23f7d5a325b4e9c56259bc
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7f3edb8b764df0699a9837fc1ce261837c636255
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289936"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926843"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Règles de flux de courriers (règles de transport) dans EOP autonome
 
@@ -33,17 +33,17 @@ Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes a
 
 Cette rubrique explique les composants des règles de flux de messagerie et leur fonctionnement.
 
-Pour obtenir la procédure de création, de copie et de gestion des règles de flux de messagerie, voir Gérer les règles de [flux de messagerie dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) Pour chaque règle, vous avez la possibilité de l'appliquer, de la tester ou bien de la tester et d'avertir l'expéditeur. Pour en savoir plus sur les options de test, voir Tester les règles de [flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) et les [conseils de stratégie dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)
+Pour obtenir la procédure de création, de copie et de gestion des règles de flux de messagerie, voir Gérer les règles de [flux de messagerie dans Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) Pour chaque règle, vous avez la possibilité de l'appliquer, de la tester ou bien de la tester et d'avertir l'expéditeur. Pour en savoir plus sur les options de test, voir Tester les règles de [flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) et les [conseils de stratégie dans Exchange Online.](/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 
-Pour obtenir des rapports récapitulatifs et détaillés sur les messages qui correspondent aux règles de flux de messagerie, voir Utiliser les rapports de protection de messagerie pour afficher les données sur les programmes malveillants, le courrier indésirable et les [détections de règles.](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)
+Pour obtenir des rapports récapitulatifs et détaillés sur les messages qui correspondent aux règles de flux de messagerie, voir Utiliser les rapports de protection de messagerie pour afficher les données sur les programmes malveillants, le courrier indésirable et les [détections de règles.](/exchange/monitoring/use-mail-protection-reports)
 
 Pour mettre en œuvre des stratégies de messagerie spécifiques à l'aide de règles de flux de messagerie, consultez ces rubriques :
 
-- [Utiliser des règles de flux de messagerie pour inspecter les pièces jointes des messages dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+- [Utiliser des règles de flux de messagerie pour inspecter les pièces jointes des messages dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [Configurer le chiffrement dans Office 365 Entreprise](../../compliance/set-up-encryption.md)
 
-- [Clauses d’exclusion de responsabilité, signatures, pieds de ligne ou en-têtes de message à l’échelle de l’organisation dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+- [Clauses d’exclusion de responsabilité, signatures, pieds de ligne ou en-têtes de message à l’échelle de l’organisation dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
 - [Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
@@ -63,13 +63,13 @@ Une règle de flux de messagerie est constituée de conditions, d’exceptions, 
 
 - **Conditions**: identifiez les messages à appliquer aux actions. Certaines conditions examinent les champs d’en-tête de message (par exemple, les champs À, De ou Cc). D’autres examinent les propriétés des messages (par exemple l’objet, le corps, les pièces jointes, la taille ou la classification du message). La plupart des conditions font appel à un opérateur de comparaison (par exemple, « égal à », « différent de » ou « contient ») ainsi qu’à une valeur de concordance que vous devez spécifier. S’il n’y a ni conditions ni d’exceptions, la règle s’applique à tous les messages.
 
-Pour plus d’informations sur les conditions de règle de flux de messagerie dans EOP autonome, voir Conditions et exceptions de règle de flux de messagerie [(prédicats) dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+Pour plus d’informations sur les conditions de règle de flux de messagerie dans EOP autonome, voir Conditions et exceptions de règle de flux de messagerie [(prédicats) dans Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
 - **Exceptions**: identifient éventuellement les messages à qui les actions ne doivent pas s’appliquer. Les identificateurs de message disponibles dans les conditions le sont également dans les exceptions. Les exceptions ont la priorité sur les conditions et empêchent l’application d’actions à un message, même s’il remplit toutes les conditions configurées.
 
 - **Actions**: spécifiez ce qu’il faut faire aux messages qui correspondent aux conditions de la règle et qui ne correspondent à aucune des exceptions. De nombreuses actions sont possibles, notamment le rejet, la suppression ou la redirection de messages, l’ajout de destinataires supplémentaires, l’ajout de préfixes à l’objet des messages ou l’insertion de clauses d’exclusion de responsabilité dans le corps des messages.
 
-Pour plus d’informations sur les actions de règle de flux de messagerie disponibles dans EOP autonome, voir Actions de règle de flux de messagerie [dans Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+Pour plus d’informations sur les actions de règle de flux de messagerie disponibles dans EOP autonome, voir Actions de règle de flux de messagerie [dans Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
 - **Propriétés**: spécifiez d’autres paramètres de règles qui ne sont pas des conditions, des exceptions ou des actions. Par exemple, lorsque la règle doit être appliquée, les propriétés indiquent s’il faut appliquer ou tester la règle, ainsi que la période de temps sur laquelle la règle reste active.
 
@@ -139,8 +139,8 @@ Plusieurs types de messages transitent par une organisation. Le tableau suivant 
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 
-[Utiliser des règles de flux de messagerie pour inspecter les pièces jointes des messages dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+[Utiliser des règles de flux de messagerie pour inspecter les pièces jointes des messages dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 [Chiffrement du courrier électronique dans Office 365](../../compliance/email-encryption.md)
 
-[Limites concernant les règles de journal, de transport et de boîte de réception](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)
+[Limites concernant les règles de journal, de transport et de boîte de réception](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

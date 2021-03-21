@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 602b4b3abd2b07386ad130e4b2cd21bb593eee7e
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261571"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928072"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Par exemple, avec les paramètres de chiffrement d’une étiquette de sensibilité, vous pouvez protéger le contenu comme suit :
 
@@ -49,9 +49,9 @@ Les paramètres de chiffrement sont disponibles lorsque vous [créez une étique
 
 ## <a name="understand-how-the-encryption-works"></a>Comprendre comment fonctionne le chiffrement
 
-Le chiffrement utilise le service Azure Rights Management (Azure RMS) à partir d’Azure Information Protection. Cette solution de protection utilise les stratégies de chiffrement, d’identité et d’autorisation. Pour plus d’informations, consultez [Qu’est-ce que Azure Rights Management ?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) dans la documentation Azure Information Protection. 
+Le chiffrement utilise le service Azure Rights Management (Azure RMS) à partir d’Azure Information Protection. Cette solution de protection utilise les stratégies de chiffrement, d’identité et d’autorisation. Pour plus d’informations, consultez [Qu’est-ce que Azure Rights Management ?](/azure/information-protection/what-is-azure-rms) dans la documentation Azure Information Protection. 
 
-Lorsque vous utilisez cette solution de chiffrement, la fonctionnalité **super utilisateur** s'assurer que les personnes et services autorisés peuvent toujours consulter et examiner les données qui ont été cryptées pour votre organisation. Le chiffrement peut ensuite être supprimé ou modifié si nécessaire. Pour plus d’informations, consultez la [Configuration de super utilisateurs pour les services Azure Information Protection et les services de découverte ou de la récupération de données](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+Lorsque vous utilisez cette solution de chiffrement, la fonctionnalité **super utilisateur** s'assurer que les personnes et services autorisés peuvent toujours consulter et examiner les données qui ont été cryptées pour votre organisation. Le chiffrement peut ensuite être supprimé ou modifié si nécessaire. Pour plus d’informations, consultez la [Configuration de super utilisateurs pour les services Azure Information Protection et les services de découverte ou de la récupération de données](/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>La configuration d’une étiquette pour le chiffrement
 
@@ -93,8 +93,8 @@ Le tableau ci-après précise ce qu’il advient du chiffrement existant lorsqu�
 
 Notez que, dans le cas où le nouveau chiffrement d’étiquettes est appliqué ou si le chiffrement d’origine est supprimé, cela se produit uniquement si l’utilisateur appliquant l’étiquette dispose d'un droit ou d'un rôle qui prend en charge cette action :
 
-- Le [droit d'utilisation](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Exportation ou Contrôle total.
-- Rôle du [propriétaire ou de l'émetteur des Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) ou du [super utilisateur](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+- Le [droit d'utilisation](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Exportation ou Contrôle total.
+- Rôle du [propriétaire ou de l'émetteur des Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) ou du [super utilisateur](/azure/information-protection/configure-super-users).
 
 Si l’utilisateur ne dispose pas de ces droits ou rôles, l’étiquette ne peut pas être appliquée et le chiffrement d’origine est préservé. L’utilisateur voit le message suivant : **Vous n’êtes pas autorisé à effectuer cette modification dans l’étiquette de confidentialité. Veuillez contacter le propriétaire du contenu.**
 
@@ -141,7 +141,7 @@ Si aucune date d’expiration n’a été configurée, la période de validité 
 
 Outre la réauthentification, les paramètres de chiffrement et l’appartenance au groupe d’utilisateurs sont réévalués. Autrement dit, les utilisateurs peuvent constater des résultats d’accès différents au même document ou au même e-mail si des modifications ont été apportées aux paramètres de chiffrement ou à l’appartenance au groupe depuis leur dernier accès au contenu.
 
-Pour savoir comment modifier le paramètre de 30 jours par défaut, reportez-vous à [Licence d’utilisation Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license).
+Pour savoir comment modifier le paramètre de 30 jours par défaut, reportez-vous à [Licence d’utilisation Rights Management](/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>Attribuer des autorisations à des utilisateurs ou des groupes spécifiques
 
@@ -163,7 +163,7 @@ Lorsque vous attribuez des autorisations, vous pouvez choisir :
 
 - Tout utilisateur authentifié. Assurez-vous de bien comprendre la [configuration requise et les limitations](#requirements-and-limitations-for-add-any-authenticated-users) de ce paramètre avant de le sélectionner.
 
-- Tout utilisateur spécifique ou groupe de sécurité à extension messagerie, groupe de distribution ou groupe Microsoft 365 ([auparavant groupe Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) dans Azure AD. Le groupe Microsoft 365 peut avoir un abonnement [dynamique](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule). Notez qu’il n’est pas possible d’utiliser un [groupe de distribution dynamique d’Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), car ce type de groupe n’est pas synchronisé avec Azure AD et vous ne pouvez pas utiliser de groupe de sécurité non activé par e-mail.
+- Tout utilisateur spécifique ou groupe de sécurité à extension messagerie, groupe de distribution ou groupe Microsoft 365 ([auparavant groupe Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) dans Azure AD. Le groupe Microsoft 365 peut avoir un abonnement [dynamique](/azure/active-directory/users-groups-roles/groups-create-rule). Notez qu’il n’est pas possible d’utiliser un [groupe de distribution dynamique d’Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), car ce type de groupe n’est pas synchronisé avec Azure AD et vous ne pouvez pas utiliser de groupe de sécurité non activé par e-mail.
 
 - Tout domaine ou adresse de courrier. Utilisez cette option pour définir tous les utilisateurs d’une autre organisation qui utilisent Azure Active Directory, en entrant un nom de domaine dans cette organisation. Vous pouvez également utiliser cette option pour les fournisseurs de réseaux sociaux en entrant leur nom de domaine tel que, par exemple, **gmail.com**, **hotmail.com** ou **outlook.com**.
 
@@ -179,7 +179,7 @@ Nous vous recommandons d’utiliser des groupes plutôt que des utilisateurs. En
 Ce paramètre ne limite pas les personnes autorisées à accéder au contenu chiffré par l’étiquette, même s'il chiffre le contenu et vous propose des options permettant de limiter la façon dont le contenu peut être utilisé (autorisations) ou consulté (expiration et accès en mode hors connexion). Toutefois, l’application ouvrant le contenu chiffré doit pouvoir prendre en charge l’authentification utilisée. C'est la raison pour laquelle les fournisseurs sociaux fédérés comme Google, et l'authentification par numéro de code unique conviennent seulement pour la messagerie électronique, et ce uniquement lorsque vous utilisez Exchange Online. Les comptes Microsoft peuvent être utilisés avec les applications Office 365 et le [visionneur Azure Information Protection](https://portal.azurerms.com/#/download).
 
 > [!NOTE]
-> Envisagez d’utiliser ce paramètre avec [l’intégration de SharePoint et OneDrive à azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) lorsque les étiquettes de critère de [sont activées pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+> Envisagez d’utiliser ce paramètre avec [l’intégration de SharePoint et OneDrive à azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) lorsque les étiquettes de critère de [sont activées pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 Voici des scénarios classiques pour les paramètres des utilisateurs authentifiés :
 
@@ -191,10 +191,10 @@ Voici des scénarios classiques pour les paramètres des utilisateurs authentifi
 
 Lorsque vous choisissez les autorisations à attribuer à ces utilisateurs ou ces groupes, vous pouvez sélectionner :
 
-- Un [niveau d’autorisation prédéfini](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) avec un groupe de droits prédéfini, par exemple, Co-auteur ou Réviseur.
+- Un [niveau d’autorisation prédéfini](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) avec un groupe de droits prédéfini, par exemple, Co-auteur ou Réviseur.
 - Autorisations personnalisées dans lesquelles vous choisissez un ou plusieurs droits d’utilisation.
 
-Pour obtenir plus d'informations sur la sélection des autorisations pertinentes, consultez les [Droits d'utilisation et descriptions](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
+Pour obtenir plus d'informations sur la sélection des autorisations pertinentes, consultez les [Droits d'utilisation et descriptions](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
 ![Options de choix d’autorisations prédéfinies ou personnalisées](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -214,7 +214,7 @@ L’émetteur Rights Management bénéficie continuellement d’autorisations en
 - L’émetteur Rights Management peut toujours accéder au document ou à l’e-mail hors connexion.
 - L’émetteur Rights Management peut toujours ouvrir un document après sa révocation.
 
-Pour plus d’informations, reportez-vous à [Émetteur Rights Management et propriétaire Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+Pour plus d’informations, reportez-vous à [Émetteur Rights Management et propriétaire Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
 ### <a name="double-key-encryption"></a>Chiffrement à double clé
 
@@ -229,7 +229,7 @@ Pour consulter des informations supplémentaires, la configuration requise et de
 
 Vous pouvez utiliser ces options pour permettre aux utilisateurs d’attribuer des autorisations lorsqu’ils appliquent manuellement une étiquette de confidentialité à un contenu :
 
-- Dans Outlook, un utilisateur peut sélectionner des restrictions équivalant à l’option [ne pas transférer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) pour les bénéficiaires qu'il a choisis.
+- Dans Outlook, un utilisateur peut sélectionner des restrictions équivalant à l’option [ne pas transférer](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) pour les bénéficiaires qu'il a choisis.
 
 - Dans Word, PowerPoint et Excel, l’utilisateur est invité à sélectionner ses propres niveaux d’autorisation pour des utilisateurs, des groupes ou des organisations spécifiques.
 
@@ -406,7 +406,7 @@ Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de co
 
 - Activer la protection à partir d’Azure Information Protection
     
-    Pour que le chiffrement soit appliqué par les étiquettes de confidentialité, le service de protection (Azure Rights Management) à partir d’Azure Information Protection doit être activé pour votre client. Chez les nouveaux clients, il s’agit du paramètre par défaut, mais vous devrez peut-être activer manuellement le service. Pour plus d’informations, consultez [Activation du service de protection à partir d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
+    Pour que le chiffrement soit appliqué par les étiquettes de confidentialité, le service de protection (Azure Rights Management) à partir d’Azure Information Protection doit être activé pour votre client. Chez les nouveaux clients, il s’agit du paramètre par défaut, mais vous devrez peut-être activer manuellement le service. Pour plus d’informations, consultez [Activation du service de protection à partir d’Azure Information Protection](/azure/information-protection/activate-service).
 
 - Configurer Exchange pour Azure Information Protection
     
@@ -416,8 +416,8 @@ Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de co
     
     Pour vous assurer qu’Exchange est en mesure de prendre en charge ces scénarios supplémentaires, reportez-vous aux rubriques suivantes :
     
-    - Pour Exchange Online, consultez les instructions de la section [Exchange Online : configuration de la gestion des droits relatifs à l’information](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-    - Pour Exchange en local, vous devez déployer le [connecteur RMS et configurer vos serveurs Exchange](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
+    - Pour Exchange Online, consultez les instructions de la section [Exchange Online : configuration de la gestion des droits relatifs à l’information](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
+    - Pour Exchange en local, vous devez déployer le [connecteur RMS et configurer vos serveurs Exchange](/azure/information-protection/deploy-rms-connector). 
 
 ## <a name="next-steps"></a>Prochaines étapes
 

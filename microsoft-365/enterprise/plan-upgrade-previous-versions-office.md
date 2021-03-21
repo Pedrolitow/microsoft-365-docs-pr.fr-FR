@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des ressources pour les utilisateurs qui utilisent Office 2007 ou Office 2010 pour les aider à planifier leur mise à niveau.
-ms.openlocfilehash: 3193be0fb7b386f78ed4bdb9b80f2a2da72102b4
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 65f635e5c6195222ef2e39898cb1da2ee0dc0df0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951138"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927465"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
@@ -29,7 +29,7 @@ ms.locfileid: "48951138"
 
 Si votre organisation utilise d’anciennes versions des produits et serveurs Office, le moment est idéal pour commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur [fin de support.](upgrade-from-office-2007-servers-and-products.md) Pour les produits et services Office 2010 :
 
-- Office 2010 et Exchange 2010 ont atteint leur fin de support le *13 octobre 2020*. 
+- Office 2010 et Exchange 2010 ont atteint leur fin de support le *13 octobre 2020.* 
 - La prise en charge de SharePoint 2010 et de Project Server 2010 se termine le *avril 13, 2021*. 
 
 Pour plus d’informations, [voir Upgrade from Office 2010 servers and clients](upgrade-from-office-2010-servers-and-products.md).
@@ -44,17 +44,17 @@ Microsoft 365 inclut les licences et fonctionnalités pour vous assurer que votr
   
 Microsoft 365 est la façon de transformer numériquement votre entreprise en améliorant constamment les appareils et les expériences de productivité activés et sécurisés par le cloud Microsoft.
  
-|Ressource|Description|
+|Resource|Description|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Obtenez des informations sur les versions de Microsoft 365.|
-|[Documentation microsoft 365 pour les entreprises](https://docs.microsoft.com/microsoft-365/business/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les petites et moyennes entreprises.|
-|[Documentation Microsoft 365 Éducation](https://docs.microsoft.com/microsoft-365/education/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations éducatives.|
-|[Documentation Microsoft 365 entreprise](https://docs.microsoft.com/microsoft-365/enterprise/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations d’entreprise.|
+|[Documentation microsoft 365 pour les entreprises](../business/index.yml)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les petites et moyennes entreprises.|
+|[Documentation Microsoft 365 Éducation](/microsoft-365/education/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations éducatives.|
+|[Documentation Microsoft 365 entreprise](./index.yml)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations d’entreprise.|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Que se passe-t-il si je ne suis pas mis à niveau ?
 
-Vous pouvez choisir de ne pas mettre à niveau pour le moment. Vos serveurs et applications locaux continueront de s’exécuter. Toutefois, lorsque vous ne recevez plus de mises à jour de sécurité ou d’options de support, votre organisation peut être vulnérable aux violations de sécurité. Nous vous recommandons vivement de planifier votre mise à niveau prochainement. Vous pouvez mettre à niveau vers Microsoft 365 ou vers des versions plus récentes de vos serveurs et applications locaux.
+Vous pouvez choisir de ne pas mettre à niveau pour le moment. Vos serveurs et applications locaux continueront de s’exécuter. Toutefois, lorsque vous ne recevez plus de mises à jour de sécurité ou d’options de support, votre organisation peut être vulnérable aux violations de sécurité. Nous vous recommandons vivement de planifier votre mise à niveau prochainement. Vous pouvez mettre à niveau vers Microsoft 365 ou vers des versions plus récentes de vos applications et serveurs locaux.
 
 ## <a name="what-upgrade-options-are-available"></a>Quelles options de mise à niveau sont disponibles ?      
 
@@ -64,10 +64,10 @@ Les organisations doivent envisager plusieurs options de mise à niveau :
 
   |Produits et services Office 2007|Produits et services Office 2010|
   |---|---|
-  |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (Bureau)|[Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (Bureau)|
+  |[Office 2007](/DeployOffice/office-2007-end-support-roadmap) (Bureau)|[Office 2010](/DeployOffice/office-2010-end-support-roadmap) (Bureau)|
   |[Exchange 2007](exchange-2007-end-of-support.md)|[Exchange 2010](exchange-2010-end-of-support.md)|
   |[SharePoint 2007](sharepoint-2007-end-of-support.md)|[SharePoint 2010](upgrade-from-sharepoint-2010.md)|
-  |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+  |[Office Communications Server](/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](/skypeforbusiness/plan-your-deployment/upgrade)|
   |[Project Server 2007](project-server-2007-end-of-support.md)|[Project Server 2010](project-server-2010-end-of-support.md)|
   |[PerformancePoint Server 2007](pps-2007-end-of-support.md)||
  
@@ -83,7 +83,7 @@ Si vous souhaitez de l’aide sur la planification de votre mise à niveau, envi
 
 - Si votre organisation achète un nombre éligible de licences Microsoft 365, notre équipe FastTrack peut vous aider tout au long du processus de configuration. Pour plus d’informations, [voir FastTrack pour Microsoft 365.](https://www.microsoft.com/fasttrack/microsoft-365)
 
-- Si vous faites partie d’une petite organisation ou si vous préférez gérer vous-même la mise à niveau d’Office de votre organisation, voir Mettre à niveau vos utilisateurs [Microsoft 365 Business](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)vers le dernier client Office. 
+- Si vous faites partie d’une petite organisation ou si vous préférez gérer vous-même la mise à niveau d’Office de votre organisation, voir Mettre à niveau vos utilisateurs [Microsoft 365 Business](/office365/admin/setup/upgrade-users-to-latest-office-client)vers le dernier client Office. 
   
 ## <a name="im-a-home-user-what-do-i-do"></a>Je suis un particulier. Que dois-je faire ?
 
@@ -114,4 +114,4 @@ Si vous choisissez de ne pas mettre à niveau maintenant, vos applications Offic
    
 ## <a name="related-topics"></a>Rubriques connexes
   
-[Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Politique de cycle de vie Microsoft](/lifecycle/)

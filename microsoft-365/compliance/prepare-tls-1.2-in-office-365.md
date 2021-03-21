@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 8078f5de698adf437e843a423fe9e82c5e4dd8de
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 708e5dc68b777db42696c6791124b2a8dd1d3b87
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233118"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927950"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Préparation de TLS 1.2 dans Office 365 et Office 365 GCC
 
@@ -36,7 +36,7 @@ Nous avons déjà commencé la dépréciation des versions 1.0 et 1.1 de TLS en 
 
 Assurez-vous que toutes les combinaisons client-serveur et navigateur-serveur utilisent le protocole TLS 1.2 (ou une version plus récente) pour maintenir la connexion aux services Office 365. Il se peut que vous deviez procéder à la mise à jour de certaines combinaisons client-serveur et navigateur-serveur.
 
-Vous devez mettre à jour les applications qui appellent les API Microsoft 365 sur TLS 1.0 ou TLS 1.1 pour utiliser TLS 1.2. Par défaut, .NET 4.5 est TLS 1.1. Pour mettre à jour votre configuration .NET, voir [Comment activer TLS (Transport Layer Security) 1.2 sur les clients.](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+Vous devez mettre à jour les applications qui appellent les API Microsoft 365 sur TLS 1.0 ou TLS 1.1 pour utiliser TLS 1.2. Par défaut, .NET 4.5 est TLS 1.1. Pour mettre à jour votre configuration .NET, voir [Comment activer TLS (Transport Layer Security) 1.2 sur les clients.](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
 
 Les clients suivants ne peuvent pas utiliser TLS 1.2. Mettez à jour vos clients pour garantir un accès illimité au service.
 
@@ -48,7 +48,7 @@ Les clients suivants ne peuvent pas utiliser TLS 1.2. Mettez à jour vos clients
 
 ### <a name="tls-12-for-microsoft-teams-rooms-and-surface-hub"></a>TLS 1.2 pour Salles Microsoft Teams et Surface Hub
 
-Salles Microsoft Teams (précédemment connu sous le nom de Systèmes Skype Room V2 SRS V2) prend en charge le protocole TLS 1.2 depuis décembre 2018. Nous recommandons l’installation de la version 4.0.64.0 ou d’une version plus récente sur les appareils qui utilisent Salles Microsoft Teams. Pour plus d’informations, consultez les [notes de publication](https://docs.microsoft.com/microsoftteams/room-systems/srs2-release-note). Les modifications sont à compatibilité descendante et ascendante.
+Salles Microsoft Teams (précédemment connu sous le nom de Systèmes Skype Room V2 SRS V2) prend en charge le protocole TLS 1.2 depuis décembre 2018. Nous recommandons l’installation de la version 4.0.64.0 ou d’une version plus récente sur les appareils qui utilisent Salles Microsoft Teams. Pour plus d’informations, consultez les [notes de publication](/microsoftteams/room-systems/srs2-release-note). Les modifications sont à compatibilité descendante et ascendante.
 
 Surface Hub a débuté la prise en charge du protocole TLS 1.2 en mai 2019.
 
@@ -78,4 +78,4 @@ Les ressources suivantes fournissent des conseils pour vous assurer que vos clie
 - [Exchange Server TLS guidance, part 1: Getting Ready for TLS 1.2](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649) (en anglais uniquement)
 - [Directives concernant le protocole TLS dans Exchange Server, Partie 2 : Enabling TLS 1.2 and Identifying Clients Not Using It](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761) (en anglais uniquement)
 - [Directives concernant le protocole TLS dans Exchange Server, Partie 3 : Désactivation de TLS 1.0/1.1](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-3-turning-off-tls-1-0-1-1/ba-p/607898)
-- [Activation de la prise en charge de TLS 1.1 et TLS 1.2 dans Office Online Server](https://docs.microsoft.com/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)
+- [Activation de la prise en charge de TLS 1.1 et TLS 1.2 dans Office Online Server](/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)

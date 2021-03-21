@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Affichez la liste complète des certificats racines ET autorités de certification DOD et GCC High dans Microsoft 365.
-ms.openlocfilehash: a933acc14f0984e4935ff6e56ccccd3aed1f16cf
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 016c7d6b4c5557b7930763c2628525cc3c2c409f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493651"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927804"
 ---
 # <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Chaînes de chiffrement Microsoft 365 - DOD et GCC High
 
-Microsoft 365 tire parti de plusieurs fournisseurs de certificats différents. Ce qui suit décrit la liste complète des certificats racine Microsoft 365 connus que les clients **DOD** et GCC High peuvent rencontrer lors de l’accès à Microsoft 365. Pour plus d’informations sur les certificats que vous devrez peut-être installer dans votre propre infrastructure, voir Planifier les [certificats SSL tiers pour Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates)
+Microsoft 365 tire parti de plusieurs fournisseurs de certificats différents. Ce qui suit décrit la liste complète des certificats racine Microsoft 365 connus que les clients **DOD** et GCC High peuvent rencontrer lors de l’accès à Microsoft 365. Pour plus d’informations sur les certificats que vous devrez peut-être installer dans votre propre infrastructure, voir Planifier les [certificats SSL tiers pour Microsoft 365.](../enterprise/plan-for-third-party-ssl-certificates.md)
 
 Les informations de certificat suivantes s’appliquent **à tous les clients DOD et GCC High.**
 
@@ -61,7 +61,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Issuer** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Issuer** | CN=CA racine globale DigiCert<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **Numéro de série** | 01:9E:C1:C6:BD:3F:59:7B:B2:0C:33:38:E5:51:D8:77 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -94,7 +94,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="digicert-global-root-ca"></a>**DigiCert Global Root CA**
 
-| **Subject** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Subject** | CN=CA racine globale DigiCert<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **Numéro de série** | 08:3B:E0:56:90:42:46:B1:A1:75:6A:C9:59:91:C7:4A |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -264,7 +264,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="entrust-certification-authority---l1e"></a>**Autorité de certification de confiance - L1E**
 
-| **Subject** | CN=Autorité de certification de pertinence - L1E<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa est incorporé par référence<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Subject** | CN=Autorité de certification de confiance - L1E<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa est incorporé par référence<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **Issuer** | CN=Autorité de certification Entrust.net (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. par référence. (limites liab.)<br>O=Entrust.net |
 | **Numéro de série** | 4C:0E:C9:18 |
@@ -281,7 +281,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="entrust-certification-authority---l1k"></a>**Autorité de certification de confiance - L1K**
 
-| **Subject** | CN=Autorité de certification de confiance - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Subject** | CN=Autorité de certification de confiance - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. - pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **Issuer** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **Numéro de série** | 0E:E9:4C:C3:00:00:00:00:51:D3:77:85 |
@@ -458,7 +458,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Cast, C=IE |
+| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Magasins, C=IE |
 | **Numéro de série** | 0F:14:96:5F:20:20:69:99:4F:D5:C7:AC:78:89:41:E2 |
 | **Longueur de clé publique** | RSA 4096 bits |
 | **Algorithme de signature** | sha256RSA |
@@ -475,7 +475,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Cast, C=IE |
+| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Magasins, C=IE |
 | **Numéro de série** | 0F:A7:47:22:C5:3D:88:C8:0F:58:9E:FB:1F:9D:4A:3A |
 | **Longueur de clé publique** | RSA 4096 bits |
 | **Algorithme de signature** | sha256RSA |

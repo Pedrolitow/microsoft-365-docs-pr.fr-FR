@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables applicables à l’authentification de la synchronisation du hachage du mot de passe.
-ms.openlocfilehash: 8e8db4aae39acda0762f9b6394b23ab047727ea5
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3236c79e308f269c07146ff094c7ae27271b97fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233783"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928049"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Conditions préalables d’accès aux identités et appareils pour la synchronisation du hachage du mot de passe dans votre environnement de test Microsoft 365
 
@@ -27,7 +27,7 @@ ms.locfileid: "50233783"
 
 Les configurations d’accès aux [identités](../security/office-365-security/microsoft-365-policies-configurations.md) et appareils sont un ensemble de configurations et de stratégies d’accès conditionnel pour protéger l’accès à tous les services de Microsoft 365 pour les entreprises intégrés à Azure Active Directory (Azure AD).
 
-Cet article explique comment configurer un environnement de test Microsoft 365 qui répond aux exigences de l’environnement hybride avec la [configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) requise de l’authentification de synchronisation de hachage de mot de passe pour l’accès aux identités et appareils.
+Cet article explique comment configurer un environnement de test Microsoft 365 qui répond aux exigences de l’environnement hybride avec la [configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) préalable de l’authentification de synchronisation de hachage de mot de passe pour l’accès aux identités et aux appareils.
 
 La configuration de cet environnement de test se fait en dix phases :
 
@@ -57,7 +57,7 @@ Suivez les instructions de [Phase 2 du guide laboratoire test de l’authentific
 
 Tout d’abord, déterminer les adresses IP publiques ou les plages d’adresse utilisées par votre organisation.
 
-Ensuite, suivez les instructions de [configurer des emplacements nommé dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) pour ajouter les adresses ou les plages d’adresses comme emplacements nommés. 
+Ensuite, suivez les instructions de [configurer des emplacements nommé dans Azure Active Directory](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) pour ajouter les adresses ou les plages d’adresses comme emplacements nommés. 
 
 ## <a name="phase-4-configure-password-writeback"></a>Étape 4 : configurer l’écriture différée du mot de passe
 
@@ -89,11 +89,11 @@ Testez l’authentification multifacteur uniquement pour le compte Utilisateur 
 
 ## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique d’appareils d’ordinateurs Windows joints à un domaine 
 
-Suivez [ces instructions pour](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs Windows joints à un domaine.
+Suivez [ces instructions pour](/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs Windows joints à un domaine.
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8 : Configurer la protection par mot de passe Azure AD 
 
-Suivez [ces instructions pour](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) bloquer les mots de passe faibles connus et leurs variantes.
+Suivez [ces instructions pour](/azure/active-directory/authentication/concept-password-ban-bad) bloquer les mots de passe faibles connus et leurs variantes.
 
 ## <a name="phase-9-enable-azure-ad-identity-protection"></a>Phase 9 : Activer Azure AD Identity Protection
 
@@ -101,11 +101,11 @@ Suivez les instructions de [Étape 2 du Guide de laboratoire de Test Azure AD Id
 
 ## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Phase 10 : Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
-Pour Exchange Online, suivez [ces instructions](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
+Pour Exchange Online, suivez [ces instructions](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 
 Pour Skype Entreprise Online :
 
-1. Se connecter à [Skype Entreprise Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
+1. Se connecter à [Skype Entreprise Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
 
 2. Exécutez cette commande.
 
@@ -123,7 +123,7 @@ Le résultat est un environnement de test conforme aux exigences de [configurati
 
 ## <a name="next-step"></a>Étape suivante
 
-Utilisez [Stratégies d’accès courantes identité et appareil](identity-access-policies.md) pour configurer les stratégies qui se basent sur les conditions préalables et protègent identités et appareils.
+Utilisez [Stratégies d’accès courantes identité et appareil](../security/office-365-security/identity-access-policies.md) pour configurer les stratégies qui se basent sur les conditions préalables et protègent identités et appareils.
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -135,4 +135,4 @@ Utilisez [Stratégies d’accès courantes identité et appareil](identity-acces
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

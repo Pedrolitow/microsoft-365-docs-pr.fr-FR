@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment utiliser le Centre de conformité pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
-ms.openlocfilehash: d7506b92cc16120f1d40a6d5a1744ab38d446a76
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 2bc80d347d1324a317cc2cc2712d475781adc492
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233814"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926514"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre conformité
 
@@ -102,7 +102,7 @@ Pour désactiver une boîte aux lettres d’archivage :
 
 Vous pouvez également utiliser Exchange Online PowerShell pour activer les boîtes aux lettres d’archivage. La principale raison d’utiliser PowerShell est que vous pouvez activer rapidement la boîte aux lettres d’archivage pour tous les utilisateurs au sein de votre organisation.
 
-La première étape consiste à se connecter à Exchange Online PowerShell. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+La première étape consiste à se connecter à Exchange Online PowerShell. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Une fois que vous êtes connecté à Exchange Online, vous pouvez exécuter les commandes décrites dans les sections suivantes pour activer ou désactiver les boîtes aux lettres d’archivage.
 
@@ -150,8 +150,8 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 - Pour plus d’informations sur les boîtes aux lettres d’archivage et les stratégies de rétention Exchange, voir:
 
-  - [Balises et stratégies de rétention dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+  - [Balises et stratégies de rétention dans Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
-  - [Stratégie de rétention par défaut dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
+  - [Stratégie de rétention par défaut dans Exchange Online](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
   - [Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

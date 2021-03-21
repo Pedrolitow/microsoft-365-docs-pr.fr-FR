@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1f5fa231c371ca7a8d6a22ca0b4ff388fd89004c
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 5de805784b2772b0169b2ad2a503e9378b82fda7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711915"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927095"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou exécuter votre projet pilote en [production.](https://aka.ms/m365d-pilotplaybook)
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) ou exécuter votre projet pilote en [production.](./mtp-pilot.md?ocid=cx-evalpilot)
 >
 
 Les fonctionnalités suivantes sont généralement disponibles dans la dernière version de Microsoft 365 Defender.
@@ -39,13 +39,13 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copia
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
-## <a name="march-2021"></a>Mars 2021
+## <a name="march-2021"></a>9 mars 2021
 - [Table CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Trouvez des informations sur les événements dans différents services et applications cloud couverts par Microsoft Cloud App Security. Ce tableau inclut également des informations précédemment disponibles dans `AppFileEvents` .
 ## <a name="february-2021"></a>Février 2021
-- (Aperçu) Le Centre [de sécurité Microsoft https://security.microsoft.com) 365 amélioré (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience met Defender pour Point de terminaison et Defender pour Office 365 au centre. [En savoir plus sur ce qui a changé.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
+- (Aperçu) Le Centre [de sécurité Microsoft https://security.microsoft.com) 365 amélioré (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience met Defender pour Point de terminaison et Defender pour Office 365 au centre. [En savoir plus sur ce qui a changé.](./overview-security-center.md)
 
 ## <a name="september-2020"></a>Septembre 2020
-- [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Rechercher les événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce [tableau de schéma de](advanced-hunting-overview.md) recherche avancé couvre une plage d’événements liés à l’identité et d’événements système sur le contrôleur de domaine.
+- [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Rechercher les événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce [tableau de schéma de](advanced-hunting-overview.md) recherche avancée couvre une plage d’événements liés à l’identité et d’événements système sur le contrôleur de domaine.
 - [Fonction AssignedIPAddresses()](advanced-hunting-assignedipaddresses-function.md) <br> Utilisez cette fonction dans vos requêtes de recherche avancées pour obtenir rapidement les dernières adresses IP attribuées à un appareil ou les adresses IP les plus récentes à partir d’une heure spécifique.
 
 ## <a name="july-2020"></a>Juillet 2020
@@ -56,7 +56,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="june-2020"></a>Juin 2020
 - Flux Twitter <br> Obtenez les dernières recherches sur la sécurité, l’intelligence des menaces, les actualités sur les produits, etc., directement dans le tableau de bord.
 - [Table de schéma EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporez des informations sur les actions de post-remise prises sur les messages électroniques dans vos requêtes de recherche avancées.
-- [Inspecter les enregistrements dans le hunting avancé](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Examinez rapidement les enregistrements dans les résultats de votre requête avec le nouveau panneau d’informations.
+- [Inspecter les enregistrements dans le recherche avancée](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Examinez rapidement les enregistrements dans les résultats de votre requête avec le nouveau panneau d’informations.
 
 ## <a name="may-2020"></a>Mai 2020
 - [Détections personnalisées](custom-detections-overview.md) <br> Utilisez des requêtes de repérage avancé pour créer des règles de détection personnalisées qui surveillent automatiquement les événements de sécurité et les états système et y répondent.
@@ -69,4 +69,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2019"></a>Mars 2019
 - Repérage avancé <br> Page d’accueil de différentes fonctionnalités de recherche qui vous permet de rechercher de manière proactive les menaces qui affectent le courrier électronique, les données, les appareils et les identités.
 - [Niveau de sécurité Microsoft](microsoft-secure-score.md) <br> Mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration prises. En suivant les recommandations du Score de sécurité, vous pouvez protéger votre organisation contre les menaces. 
-- [Rapports](monitoring-and-reporting.md) <br>  Propose une série de cartes couvrant différents domaines que les analystes et les administrateurs de sécurité s’en sentent dans le cadre de leurs opérations quotidiennes.
+- [Rapports](./overview-security-center.md) <br>  Propose une série de cartes couvrant différents domaines que les analystes et les administrateurs de sécurité s’en sentent dans le cadre de leurs opérations quotidiennes.

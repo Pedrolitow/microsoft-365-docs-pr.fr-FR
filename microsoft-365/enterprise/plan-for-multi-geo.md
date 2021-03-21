@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Découvrez Microsoft 365 Multi-Geo, comment opèrent les fonctionnalités multigéographiques et les emplacements géographiques disponibles pour le stockage de données.
-ms.openlocfilehash: ce8b752cc6a335249f9d8e03289fd16b04756ce9
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 9625d55015cc0f18801d59e82fc8ca7090b3b721
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712341"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927531"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan pour Microsoft 365 Multi-Geo
 
@@ -69,18 +69,18 @@ Chaque utilisateur doit disposer d’un *emplacement par défaut des données* d
 
 Dressez la liste de vos utilisateurs en incluant leur nom d’utilisateur principal (UPN) et le code de l’emplacement par défaut des données approprié. Incluez votre utilisateur de test et votre groupe pilote initial. Vous aurez besoin de cette liste pour les procédures de configuration.
 
-Si vos utilisateurs sont synchronisés à partir d’un système Active Directory local sur Azure Active Directory, vous devez définir l’emplacement par défaut des données en tant qu’attribut Active Directory et le synchroniser à l’aide d’Azure Active Directory Connect. Vous ne pouvez pas configurer directement l’emplacement par défaut des données pour des utilisateurs synchronisés à l’aide d’Azure AD PowerShell. Les étapes de configuration d’un emplacement par défaut des données et de synchronisation de celui-ci dans Active Directory sont décrites dans [Synchronisation Azure Active Directory Connect : Configurer un emplacement de données par défaut pour les ressources Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Si vos utilisateurs sont synchronisés à partir d’un système Active Directory local sur Azure Active Directory, vous devez définir l’emplacement par défaut des données en tant qu’attribut Active Directory et le synchroniser à l’aide d’Azure Active Directory Connect. Vous ne pouvez pas configurer directement l’emplacement par défaut des données pour des utilisateurs synchronisés à l’aide d’Azure AD PowerShell. Les étapes de configuration d’un emplacement par défaut des données et de synchronisation de celui-ci dans Active Directory sont décrites dans [Synchronisation Azure Active Directory Connect : Configurer un emplacement de données par défaut pour les ressources Microsoft 365](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 L’administration d’un client multigéographique peut être différente de celle d’un client non multigéographique, car de nombreux services et paramètres SharePoint et OneDrive sont adaptés à un environnement multigéographique. Nous vous recommandons de consulter l’article relatif à l’[administration d’un environnement multi-géographique](administering-a-multi-geo-environment.md) avant de poursuivre votre configuration.
 
 Lisez [l’expérience utilisateur dans un environnement multigé](multi-geo-user-experience.md) géographique pour plus d’informations sur l’expérience de vos utilisateurs finaux dans un environnement multigéogé.
 
-Si vous souhaitez en savoir plus sur l’expérience Teams dans une location multigéographique de Microsoft 365, veuillez consulter [Expérience Teams dans une location multigéographique compatible avec Microsoft 365, OneDrive et SharePoint Online](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
+Si vous souhaitez en savoir plus sur l’expérience Teams dans une location multigéographique de Microsoft 365, veuillez consulter [Expérience Teams dans une location multigéographique compatible avec Microsoft 365, OneDrive et SharePoint Online](/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 
 Pour commencer à configurer Microsoft 365 Multi-Geo, voir [Configurer Microsoft 365 Multi-Geo](multi-geo-tenant-configuration.md).
 
 Une fois que vous avez terminé la configuration, n’oubliez pas de [migrer les bibliothèques OneDrive de vos utilisateurs](move-onedrive-between-geo-locations.md) pour permettre à ceux-ci de travailler à partir de leur emplacement par défaut des données.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-[Configuration eDiscovery dans Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)
+[Configuration eDiscovery dans Microsoft 365 Multi-Geo](./multi-geo-ediscovery-configuration.md)

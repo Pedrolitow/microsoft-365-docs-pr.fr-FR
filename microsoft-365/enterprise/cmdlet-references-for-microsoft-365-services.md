@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Recherchez des références de cmdlet Microsoft 365 PowerShell pour Azure AD, Exchange Online, SharePoint Online, Skype Entreprise Online et la conformité & sécurité.
-ms.openlocfilehash: 75cfb4e0293a12649708deb3607166075842bba7
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 524f9b6c84741a2a31cd8e5727142fc735ad7128
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754503"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928213"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Références de cmdlet pour les services Microsoft 365 
 
@@ -34,38 +34,38 @@ Cet article fournit des références aux cmdlet pour les différents services Mi
   
 ## <a name="azure-active-directory-powershell-cmdlets"></a>Cmdlets Azure Active Directory PowerShell
 
-Les rubriques de référence sur les cmdlet Azure Active Directory PowerShell pour Graph sont dans la section Référence de la [documentation PowerShell Azure Active Directory pour Graph.](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+Les rubriques de référence sur les cmdlet Azure Active Directory PowerShell pour Graph sont dans la section Référence de la [documentation PowerShell Azure Active Directory pour Graph.](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
 
-Le module Azure Active Directory pour Windows PowerShell rubriques de référence de cmdlet se trouve dans la section Référence de la [documentation Azure Active Directory (MSOnline).](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+Le module Azure Active Directory pour Windows PowerShell rubriques de référence de cmdlet se trouve dans la section Référence de la [documentation Azure Active Directory (MSOnline).](/powershell/azure/active-directory/overview?view=azureadps-1.0)
 
 Pour obtenir des instructions de connexion à Microsoft 365 PowerShell, voir Se connecter à [Microsoft 365 avec PowerShell.](connect-to-microsoft-365-powershell.md)
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Cmdlets Exchange Online PowerShell
 
-Les rubriques de référence sur les cmdlet Exchange Online sont disponibles dans la section Référence de la [documentation PowerShell d’Exchange Online.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
+Les rubriques de référence sur les cmdlet Exchange Online sont disponibles dans la section Référence de la [documentation PowerShell d’Exchange Online.](/powershell/exchange/exchange-online-powershell)
   
-Pour obtenir des instructions de connexion pour Exchange Online PowerShell, voir [Se connecter à Exchange Online PowerShell.](https://go.microsoft.com/fwlink/p/?LinkId=396554)
+Pour obtenir des instructions de connexion pour Exchange Online PowerShell, voir [Se connecter à Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
   
 > [!NOTE]
-> Les cmdlets de rapports pour d’autres services, tels que SharePoint Online, Skype Entreprise Online et l’activité utilisateur Microsoft 365, sont disponibles dans Exchange Online PowerShell. Pour plus d'informations, voir [Cmdlets de création de rapports dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
+> Les cmdlets de rapports pour d’autres services, tels que SharePoint Online, Skype Entreprise Online et l’activité utilisateur Microsoft 365, sont disponibles dans Exchange Online PowerShell. Pour plus d'informations, voir [Cmdlets de création de rapports dans Exchange Online](/powershell/exchange/exchange-online-powershell). 
   
 ## <a name="sharepoint-online-powershell-cmdlets"></a>Cmdlets SharePoint Online PowerShell
 
-Pour les cmdlets SharePoint Online, voir [Index of Windows PowerShell for SharePoint Online cmdlets](https://go.microsoft.com/fwlink/p/?LinkId=691476).
+Pour les cmdlets SharePoint Online, voir [Index of Windows PowerShell for SharePoint Online cmdlets](/powershell/module/sharepoint-online/).
   
-Pour obtenir des instructions de connexion pour SharePoint Online PowerShell, voir Configurer l’environnement de ligne de Windows PowerShell [SharePoint Online Management Shell.](https://go.microsoft.com/fwlink/p/?LinkId=691603)
+Pour obtenir des instructions de connexion pour SharePoint Online PowerShell, voir Configurer l’environnement de ligne de Windows PowerShell [SharePoint Online Management Shell.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
   
 ## <a name="skype-for-business-online-powershell-cmdlets"></a>Cmdlets Skype Entreprise Online Powershell
 
-Pour les rubriques de référence sur les cmdlets Skype Entreprise Online, consultez [les cmdlets Skype Entreprise Online.](https://technet.microsoft.com/library/mt228132.aspx)
+Pour les rubriques de référence sur les cmdlets Skype Entreprise Online, consultez [les cmdlets Skype Entreprise Online.](/previous-versions//mt228132(v=technet.10))
   
 Pour obtenir des instructions de connexion pour Skype Entreprise Online PowerShell, voir Gérer Skype Entreprise [Online avec PowerShell.](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
 ## <a name="security--compliance-center-powershell-cmdlets"></a>Cmdlets PowerShell du Centre & conformité de la sécurité
 
-Les références de cmdlet du Centre de sécurité & conformité sont dans la section Référence de la documentation PowerShell sur la sécurité [& conformité.](https://docs.microsoft.com/powershell/exchange/scc-powershell)
+Les références de cmdlet du Centre de sécurité & conformité sont dans la section Référence de la documentation PowerShell sur la sécurité [& conformité.](/powershell/exchange/scc-powershell)
   
-Pour obtenir des instructions de connexion pour le Centre de sécurité & conformité PowerShell, voir Se connecter au Centre de sécurité [& conformité PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+Pour obtenir des instructions de connexion pour le Centre de sécurité & conformité PowerShell, voir Se connecter au Centre de sécurité [& conformité PowerShell.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="see-also"></a>Voir aussi
 

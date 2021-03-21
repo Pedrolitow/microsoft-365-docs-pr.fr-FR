@@ -15,13 +15,13 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment Advanced eDiscovery dans Microsoft 365 prend en charge les langues chinoise, japonaise et coréenne (JCK), qui utilisent un jeu de caractères sur deux sur deux caractères.
-ms.openlocfilehash: cef91001f48512545ce528d6f43de97c28c4c495
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+description: Découvrez comment Advanced eDiscovery dans Microsoft 365 prend en charge les langues chinoise, japonaise et coréenne (JCK), qui utilisent un jeu de caractères sur deux caractères.
+ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626934"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926600"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>Prise en charge du langageJCK pour Advanced eDiscovery
 
@@ -49,11 +49,11 @@ Cela dépend de votre scénario de recherche.
 
 - Lorsque vous [interrogez des données dans un jeu à réviser](review-set-search.md) dans Advanced eDiscovery, vous pouvez rechercher plusieurs langues.
 
-- Lorsque vous [créez une recherche pour collecter des données,](create-search-to-collect-data.md)créez une recherche distincte pour chaque langue que vous ciblez. Par exemple, si vous recherchez un document qui contient du chinois et du coréen, sélectionnez Chinois pour votre première requête et coréen pour votre deuxième requête.
+- Lorsque vous [créez une recherche pour collecter des données,](create-search-to-collect-data.md)créez une recherche distincte pour chaque langue que vous ciblez. Par exemple, si vous recherchez un document qui contient à la fois le chinois et le coréen, sélectionnez Chinois pour votre première requête et sélectionnez Coréen pour votre deuxième requête.
 
-**Je ne vois pas l’icône langue-pays/région de la requête pour sélectionner une langue pour les requêtes dans un jeu à réviser. Comment puis-je spécifier une langue de requête dans une recherche de jeu à réviser ?**
+**Je ne vois pas l’icône langue-pays/région de la requête pour sélectionner une langue pour les requêtes dans un jeu à réviser. Comment puis-je spécifier un langage de requête dans une recherche de jeu à réviser ?**
 
-Pour les requêtes de jeu à réviser, il n’est pas nécessaire de spécifier une langue de document. Advanced eDiscovery détecte automatiquement les langues des documents lorsque vous ajoutez du contenu à un jeu à réviser. Cela vous permet d’optimiser les résultats de votre requête dans un jeu à réviser.
+Pour les requêtes de jeu à réviser, il n’est pas nécessaire de spécifier une langue de document. Advanced eDiscovery détecte automatiquement les langues de document lorsque vous ajoutez du contenu à un jeu à réviser. Cela vous permet d’optimiser les résultats de votre requête dans un jeu à réviser.
 
 **Puis-je voir les langues détectées dans les [métadonnées de fichier](view-documents-in-review-set.md#file-metadata)?**
 
@@ -69,16 +69,16 @@ Non, aucune de vos recherches et jeux de révision existants ne change. Vous n�
 
 **Comment modifier ma langue d’affichage en chinois, japonais ou coréen ?**
 
-Pour plus d’informations sur la modification de la langue d’affichage et du fuseau horaire, voir Comment définir les paramètres de langue et de région [pour Office 365](https://docs.microsoft.com/office365/troubleshoot/access-management/set-language-and-region).
+Pour plus d’informations sur la modification de la langue d’affichage et du fuseau horaire, voir Comment définir les paramètres de langue et de région [pour Office 365](/office365/troubleshoot/access-management/set-language-and-region).
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- OcR ne prend pas en charge les caractères DE LASK à partir de fichiers image
+- OcR ne prend pas en charge les caractères DUKS À partir de fichiers image
 
-- Les fichiers e-mail (tels que *.eml et *.msg) en affichage [Annotate](view-documents-in-review-set.md#annotate-view) ne sont pas pris en charge pour les langues DE LATA.
+- Les fichiers e-mail (tels que *.eml et *.msg) en affichage [Annotate](view-documents-in-review-set.md#annotate-view) ne sont pas pris en charge pour les langues DUKCO.
 
 - La mise en surbrillance des résultats de recherche [en affichage Texte](view-documents-in-review-set.md#text-view) n’est pas prise en charge pour les langues DUKS.
 
 - Le [module de pertinence](using-relevance.md) utilisé pour analyser les données ne prend pas en charge les langues DUKCO.
 
-- [Les prises en charge basées sur](managing-holds.md#manage-non-custodial-holds) des requêtes ne sont pas prises en charge pour les langues DUKS. 
+- [Les prises en charge basées sur](managing-holds.md#manage-non-custodial-holds) des requêtes ne sont pas prises en charge pour les langues DUKS.

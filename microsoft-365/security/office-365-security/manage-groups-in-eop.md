@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs d’organisations Exchange Online Protection (EOP) autonomes peuvent apprendre à créer, modifier et supprimer des groupes de distribution et des groupes de sécurité à messagerie dans le Centre d’administration Exchange (CAE) et dans Exchange Online Protection (EOP) Autonome PowerShell.
+description: Les administrateurs d’organisations Exchange Online Protection (EOP) autonomes peuvent apprendre à créer, modifier et supprimer des groupes de distribution et des groupes de sécurité à messagerie dans le Centre d’administration Exchange (CAE) et dans Exchange Online Protection (EOP) autonome PowerShell.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d03b8a5129eb3b070f30de46b9b9c7bcc8e9898d
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 3b97e3fac0840753edada964252875a6e3a4fa04
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286800"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926831"
 ---
 # <a name="manage-groups-in-eop"></a>Gestion des groupes dans Exchange Online Protection (EOP)
 
@@ -47,13 +47,13 @@ Vous pouvez gérer des groupes dans le Centre d’administration Exchange (CAE) 
 
 - Pour ouvrir le Centre d’administration Exchange, consultez le [Centre d’administration Exchange dans EOP autonome.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
-- Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Lorsque vous gérez des groupes dans EOP PowerShell autonome, vous pouvez rencontrer une limitation. Les procédures PowerShell de cet article utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes ne soient visibles.
 
-- Des autorisations doivent vous être attribuées dans Exchange Online Protection avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle  Groupes de  **distribution,** qui est attribué par défaut aux groupes de rôles Gestion de l’organisation et Gestion des destinataires. Pour plus d’informations, voir Autorisations dans [EOP](feature-permissions-in-eop.md) autonome et utiliser le CAE pour modifier la liste des membres des [groupes de rôles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Des autorisations doivent vous être attribuées dans Exchange Online Protection avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle  Groupes de **distribution,** qui est attribué aux groupes de rôles Gestion de l’organisation et **Gestion** des destinataires par défaut. Pour plus d’informations, voir Autorisations dans [EOP](feature-permissions-in-eop.md) autonome et utiliser le CAE pour modifier la liste des membres des [groupes de rôles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cet article, voir raccourcis clavier pour le Centre d’administration [Exchange dans Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cet article, voir raccourcis clavier pour le Centre d’administration [Exchange dans Exchange Online.](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) .
@@ -70,13 +70,13 @@ Vous pouvez gérer des groupes dans le Centre d’administration Exchange (CAE) 
 
    - **Groupe de sécurité à extension messagerie**
 
-3. Dans la page de nouveau groupe qui s’ouvre, configurez les paramètres suivants. Les paramètres marqués avec <sup>\*</sup> un paramètre sont obligatoires.
+3. Dans la page de nouveau groupe qui s’ouvre, configurez les paramètres suivants. Les paramètres marqués par un <sup>\*</sup> paramètre sont obligatoires.
 
    - <sup>\*</sup>**Nom d’affichage**: ce nom apparaît dans le carnet d’adresses de votre organisation, sur la ligne À : lorsque le courrier électronique est envoyé à ce groupe, et dans la liste Groupes dans leAC.  Le nom d’affichage est obligatoire, doit être unique et convivial afin que les utilisateurs reconnaissent ce qu’il est.
 
    - <sup>\*</sup>**Alias**: utilisez cette zone pour taper le nom de l’alias du groupe. L’alias ne peut pas dépasser 64 caractères et doit être unique. Lorsqu’un utilisateur tape l’alias dans la ligne À d’un message électronique, il est résolu en nom complet du groupe.
 
-   - <sup>\*</sup>**Adresse de messagerie**: l’adresse de messagerie se compose de l’alias sur le côté gauche du symbole (@) et d’un domaine sur le côté droit. Par défaut, la valeur **d’Alias** est utilisée pour la valeur d’alias, mais vous pouvez la modifier. Pour la valeur du domaine, cliquez sur le nom de domaine et sélectionnez le domaine accepté dans votre organisation.
+   - <sup>\*</sup>**Adresse de messagerie**: l’adresse de messagerie se compose de l’alias sur le côté gauche du symbole @, et d’un domaine sur le côté droit. Par défaut, la valeur **d’Alias** est utilisée pour la valeur d’alias, mais vous pouvez la modifier. Pour la valeur du domaine, cliquez sur le nom de domaine et sélectionnez le domaine accepté dans votre organisation.
 
    - **Description**: cette description apparaît dans le carnet d’adresses et dans le volet Détails du EAC.
 
@@ -120,9 +120,9 @@ Utilisez cet onglet pour afficher ou modifier les informations de base relatives
 
 #### <a name="ownership"></a>Propriété
 
-Utilisez cet onglet pour attribuer des propriétaires de groupe. Un propriétaire de groupe peut gérer l’appartenance au groupe. Par défaut, la personne qui crée un groupe en est le propriétaire. Tous les groupes doivent avoir au moins un propriétaire.
+Utilisez cet onglet pour affecter des propriétaires de groupe. Un propriétaire de groupe peut gérer l’appartenance au groupe. Par défaut, la personne qui crée un groupe en est le propriétaire. Tous les groupes doivent avoir au moins un propriétaire.
 
-Pour ajouter des propriétaires, cliquez **sur Ajouter** une ![ icône ](../../media/ITPro-EAC-AddIcon.png) . Dans la boîte de dialogue qui s’affiche, recherchez et sélectionnez un destinataire, puis cliquez sur **ajouter ->**. Répétez cette étape autant de fois que nécessaire. Lorsque vous avez terminé, cliquez sur **OK**.
+Pour ajouter des propriétaires, cliquez **sur Ajouter** une ![ icône ](../../media/ITPro-EAC-AddIcon.png) . Dans la boîte de dialogue qui s’affiche, recherchez et sélectionnez un destinataire, puis cliquez sur **Ajouter ->**. Répétez cette étape autant de fois que nécessaire. Lorsque vous avez terminé, cliquez sur **OK**.
 
 Pour supprimer un propriétaire, sélectionnez-le, puis cliquez sur **Supprimer** ![ l’icône ](../../media/ITPro-EAC-RemoveIcon.gif) Supprimer.
 
@@ -156,7 +156,7 @@ Pour renvoyer la liste des membres du groupe, remplacez-la par le nom, l’alias
 Get-DistributionGroupMember -Identity <GroupIdentity>
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient) et [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Recipient](/powershell/module/exchange/get-recipient) et [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember).
 
 ### <a name="use-standalone-eop-powershell-to-create-groups"></a>Utiliser EOP PowerShell autonome pour créer des groupes
 
@@ -182,7 +182,7 @@ Cet exemple crée un groupe de distribution nommé Administrateurs informatiques
 New-EOPDistributionGroup -Name "IT Administrators" -Alias itadmin -Members @("michelle@contoso.com","laura@contoso.com","julia@contoso.com") -ManagedBy "chris@contoso.com"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/New-EOPDistributionGroup).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-EOPDistributionGroup](/powershell/module/exchange/New-EOPDistributionGroup).
 
 ### <a name="use-standalone-eop-powershell-to-modify-groups"></a>Utiliser EOP PowerShell autonome pour modifier des groupes
 
@@ -201,13 +201,13 @@ Cet exemple utilise la modification de l’adresse SMTP principale (également a
 Set-EOPDistributionGroup "Seattle Employees" -PrimarySmtpAddress "sea.employees@contoso.com"
 ```
 
-Cet exemple remplace les membres actuels du groupe d’équipe de sécurité par Kitty Petersen et Kitty Kittycett.
+Cet exemple remplace les membres actuels du groupe d’équipe de sécurité par Kitty Petersen et ContrôleSyrence.
 
 ```powershell
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members @("Kitty Petersen","Tyson Fawcett")
 ```
 
-Cet exemple ajoute un nouvel utilisateur nommé « Agitassett » au groupe nommé « Security Team » tout en conservant les membres actuels du groupe.
+Cet exemple ajoute un nouvel utilisateur nommé « Named Agitcett » au groupe nommé « Security Team » tout en conservant les membres actuels du groupe.
 
 ```powershell
 $CurrentMemberObjects = Get-DistributionGroupMember "Security Team"

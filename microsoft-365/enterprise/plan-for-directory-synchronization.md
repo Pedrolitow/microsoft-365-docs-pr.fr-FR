@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Décrit la synchronisation d’annuaires avec Microsoft 365, le nettoyage des services de domaine Active Directory et l’outil Azure Active Directory Connect.
-ms.openlocfilehash: 02b594f9db02df7e855a20dfc65b21ab2dbe91c0
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 7b717f65bb434918a5eb0ab2bf4a5acab2d08eea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327378"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927543"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Synchronisation d’annuaires et d’identités hybrides pour Microsoft 365
 
@@ -67,9 +67,9 @@ Avec PHS, vous synchronisez vos comptes d’utilisateur AD DS avec Microsoft 365
 
 ![Synchronisation de hachage de mot de passe (PHS)](../media/plan-for-directory-synchronization/phs-authentication.png)
 
-Lorsque des mots de passe sont modifiés ou réinitialisés en local, les nouveaux hésiteurs de mot de passe sont synchronisés avec Azure AD afin que vos utilisateurs peuvent toujours utiliser le même mot de passe pour les ressources cloud et les ressources sur site. Les mots de passe utilisateur ne sont jamais envoyés à Azure AD ou stockés dans Azure AD en texte clair. Certaines fonctionnalités premium d’Azure AD, telles que identity protection, nécessitent phs, quelle que soit la méthode d’authentification sélectionnée.
+Lorsque des mots de passe sont modifiés ou réinitialisés en local, les nouveaux hésiteurs de mot de passe sont synchronisés avec Azure AD afin que vos utilisateurs peuvent toujours utiliser le même mot de passe pour les ressources cloud et les ressources sur site. Les mots de passe utilisateur ne sont jamais envoyés à Azure AD ou stockés dans Azure AD en texte clair. Certaines fonctionnalités premium d’Azure AD, telles que identity protection, nécessitent PHS, quelle que soit la méthode d’authentification sélectionnée.
   
-Pour en [savoir plus,](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) voir choisir la méthode d’authentification la plus efficace.
+Pour en [savoir plus,](/azure/active-directory/hybrid/choose-ad-authn) voir choisir la méthode d’authentification la plus efficace.
   
 #### <a name="pass-through-authentication-pta"></a>Authentification directe (PTA)
 
@@ -81,21 +81,21 @@ PTA permet à vos utilisateurs de se connectent à la fois aux ressources et app
 
 PTA est également pour les organisations ayant une obligation de sécurité d’appliquer immédiatement les états de compte d’utilisateur local, les stratégies de mot de passe et les heures d’ouverture de bureau. 
   
-Pour en [savoir plus,](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) voir choisir la méthode d’authentification la plus efficace.
+Pour en [savoir plus,](/azure/active-directory/hybrid/choose-ad-authn) voir choisir la méthode d’authentification la plus efficace.
   
 ### <a name="federated-authentication"></a>Authentification fédérée
 
-L’authentification fédérée est principalement destinée aux grandes entreprises ayant des exigences d’authentification plus complexes. Les identités AD DS sont synchronisées avec Microsoft 365 et les comptes d’utilisateurs sont gérés localement. Avec l’authentification fédérée, les utilisateurs ont le même mot de passe en local et dans le cloud et ils n’ont pas à se connecter à nouveau pour utiliser Microsoft 365. 
+L’authentification fédérée est principalement destinée aux grandes entreprises ayant des exigences d’authentification plus complexes. Les identités AD DS sont synchronisées avec Microsoft 365 et les comptes d’utilisateurs sont gérés localement. Avec l’authentification fédérée, les utilisateurs ont le même mot de passe en local et dans le cloud et ils n’ont pas besoin de se connecter à nouveau pour utiliser Microsoft 365. 
 
 L’authentification fédérée peut prendre en charge des exigences d’authentification supplémentaires, telles que l’authentification basée sur une carte à puce ou une authentification multifacteur tierce. Elle est généralement requise lorsque les organisations ont une exigence d’authentification non prise en charge en natif par Azure AD.
  
-Pour en [savoir plus,](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) voir choisir la méthode d’authentification la plus efficace.
+Pour en [savoir plus,](/azure/active-directory/hybrid/choose-ad-authn) voir choisir la méthode d’authentification la plus efficace.
   
 #### <a name="third-party-authentication-and-identity-providers"></a>Fournisseurs d’identité et d’authentification tiers
 
 Les objets d’annuaire locaux peuvent être synchronisés avec Microsoft 365 et l’accès aux ressources cloud est principalement géré par un fournisseur d’identité (IdP) tiers. Si votre organisation utilise une solution de fédération tierce, vous pouvez configurer l' sign-on avec cette solution pour Microsoft 365 à condition que la solution de fédération tierce soit compatible avec Azure AD.
   
-Pour en savoir plus, consultez la liste de compatibilité de fédération [Azure AD.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)
+Pour en savoir plus, consultez la liste de compatibilité de fédération [Azure AD.](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)
   
 ## <a name="ad-ds-preparation"></a>Préparation des AD DS
 
@@ -112,7 +112,7 @@ La préparation de votre annuaire doit se concentrer sur les tâches suivantes :
   
 ## <a name="multi-forest-deployment-considerations"></a>Considérations sur le déploiement à forêts multiples
 
-Pour plusieurs forêts et options DSO, utilisez une installation personnalisée [d’Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).
+Pour plusieurs forêts et options DSO, utilisez une installation personnalisée [d’Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).
   
 Si votre organisation possède plusieurs forêts pour l’authentification (forêts d’authentification), nous vous recommandons vivement les points suivants :
   
@@ -121,7 +121,7 @@ Si votre organisation possède plusieurs forêts pour l’authentification (for�
 
 Si vous ne pouvez pas consolider votre déploiement AD DS à forêts multiples ou si vous utilisez d’autres services d’annuaire pour gérer les identités, vous pourrez peut-être les synchroniser avec l’aide de Microsoft ou d’un partenaire.
   
-Pour plus [d’informations, voir Topologies pour Azure AD Connect.](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
+Pour plus [d’informations, voir Topologies pour Azure AD Connect.](/azure/active-directory/hybrid/plan-connect-topologies)
   
 ## <a name="features-that-are-dependent-on-directory-synchronization"></a>Fonctionnalités qui dépendent de la synchronisation d’annuaires
   
@@ -144,4 +144,3 @@ La synchronisation d’annuaires est requise pour les fonctionnalités suivantes
 ## <a name="next-step"></a>Étape suivante
 
 Lorsque vous êtes prêt à déployer l’identité hybride, voir [préparer la synchronisation d’annuaires.](prepare-for-directory-synchronization.md)
-  

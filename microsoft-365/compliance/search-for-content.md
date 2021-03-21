@@ -13,16 +13,16 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilisez l’outil eDiscovery de recherche de contenu dans le Centre de sécurité & conformité pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise.
-ms.openlocfilehash: 6a82846514b3510c4ff9f9b79eeff20b789ad0ad
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: a6aa416768e7910e546b39d5866f884d2d532732
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422853"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927590"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Rechercher du contenu à l’aide de l’outil de recherche de contenu
 
-Utilisez l’outil de recherche de contenu dans le Centre de sécurité & conformité pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations par messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et groupes Microsoft 365.
+Utilisez l’outil de recherche de contenu dans le Centre de sécurité & conformité pour trouver rapidement des messages électroniques dans les boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations par messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et groupes Microsoft 365.
   
 ## <a name="search-for-content"></a>Recherche de contenu
 
@@ -46,7 +46,7 @@ La première étape consiste à commencer à utiliser l’outil de recherche de 
 
 - [Réessayer une recherche de contenu pour](retry-failed-content-search.md) résoudre une erreur d’emplacement de contenu
 
-- [Conserver les destinataires Bcc](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) afin de pouvoir les rechercher 
+- [Conserver les destinataires Bcc](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) afin de pouvoir les rechercher 
 
 ## <a name="perform-actions-on-content-you-find"></a>Effectuer des actions sur le contenu que vous trouvez
 

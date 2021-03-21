@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Cet article explique les différences entre les différentes versions du chiffrement de messages Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a587e27460d949811f9f30af0244cf325aaadac6
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741335"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927732"
 ---
 # <a name="compare-versions-of-ome"></a>Comparez les versions de OME
 
@@ -41,7 +41,7 @@ Avant de commencer, examinez et évaluez l’impact pour votre organisation. Si 
 
 ### <a name="prepare-for-ad-rms-deprecation"></a>Préparer l’annulation d’AD RMS
 
-Si vous avez déjà installé Azure Information Protection, mais que vous ne l’utilisez pas, activez le service à l’aide d’Exchange Online PowerShell. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
+Si vous avez déjà installé Azure Information Protection mais que vous ne l’utilisez pas, activez le service à l’aide d’Exchange Online PowerShell. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
 
 Pour activer Azure Information Protection, utilisez la cmdlet Set-IrmConfiguration en tapant la commande suivante.
 
@@ -49,17 +49,17 @@ Pour activer Azure Information Protection, utilisez la cmdlet Set-IrmConfigurati
 Set-IrmConfiguration -AzureRMSLicensingEnabled $true
 ```
 
-Si votre organisation n’a pas encore installé Azure Information Protection, vous devez migrer d’AD RMS vers Azure Information Protection. Pour obtenir des instructions, [consultez La migration d’AD RMS vers Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)
+Si votre organisation n’a pas encore installé Azure Information Protection, vous devez migrer d’AD RMS vers Azure Information Protection. Pour obtenir des instructions, [consultez La migration d’AD RMS vers Azure Information Protection.](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Comparaison côte à côte des fonctionnalités et des fonctionnalités
 
 |           **Situation**           | **Legacy OME**    | **IRM dans AD RMS**        | **Nouvelles fonctionnalités OME** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |*Envoi d’un courrier chiffré*        |Via les règles de flux de messagerie Exchange|Utilisateur final initié à partir du bureau Outlook ou d’Outlook sur le Web ; ou via des règles de flux de messagerie Exchange|Utilisateur final initié à partir du bureau Outlook, d’Outlook pour Mac ou d’Outlook sur le Web ; via des règles de flux de messagerie Exchange (également appelées règles de transport) et la protection contre la perte de données (DLP)|
-|*Modèle de gestion des droits*       |   S/O      |Option Ne pas forwarder et modèles personnalisés|Option Ne pas forwarder, option chiffrer uniquement et modèles personnalisés|
+|*Modèle de gestion des droits*       |   N/A      |Option Ne pas forwarder et modèles personnalisés|Option Ne pas forwarder, option chiffrer uniquement et modèles personnalisés|
 |*Type de destinataire*                   |Destinataires internes et externes|Destinataires internes uniquement         |Destinataires internes et externes|
 |*Expérience pour le destinataire interne*|Les destinataires reçoivent un message HTML qu’ils téléchargent et ouvrent dans un navigateur web ou une application mobile|Expérience inline native dans les clients Outlook|Expérience inline native pour les destinataires de la même organisation à l’aide des clients Outlook.  Les destinataires peuvent lire des messages à partir du portail OME à l’aide de clients autres qu’Outlook (aucun téléchargement ou application requis).|
-|*Expérience pour un destinataire externe*|Les destinataires reçoivent un message HTML qu’ils téléchargent et ouvrent dans un navigateur web ou une application mobile|S/O|Expérience inline native pour les destinataires Microsoft 365. Tous les autres destinataires peuvent lire le message à partir du portail OME (aucun téléchargement ou application requis).|
+|*Expérience pour un destinataire externe*|Les destinataires reçoivent un message HTML qu’ils téléchargent et ouvrent dans un navigateur web ou une application mobile|N/A|Expérience inline native pour les destinataires Microsoft 365. Tous les autres destinataires peuvent lire le message à partir du portail OME (aucun téléchargement ou application requis).|
 |*Autorisations des pièces jointes*           |Aucune restriction sur les pièces jointes|Les pièces jointes sont protégées|Les pièces jointes sont protégées pour l’option Ne pas forwarder et les modèles personnalisés. Les administrateurs peuvent choisir si les pièces jointes de l’option de chiffrement uniquement sont protégées ou non.|
 |*Prise en charge d’Apportez votre propre clé (BYOK)*|Aucun                |Aucun               |BYOK pris en charge          |
 ||
@@ -92,11 +92,11 @@ Pour plus d’informations sur l’utilisation du chiffrement de messages avanc�
 
 ## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>Caractéristiques uniques du chiffrement de messages Office 365 dans un déploiement GCC High
 
-Si vous envisagez d’utiliser le chiffrement de messages Office 365 dans un environnement GCC High, il existe certaines caractéristiques uniques concernant l’expérience des destinataires.
+Si vous envisagez d’utiliser le chiffrement de messages Office 365 dans un environnement GCC High, il existe certaines caractéristiques uniques concernant l’expérience du destinataire.
 
 ### <a name="encrypted-email-between-gcc-high-and-gcc-high-recipients"></a>Messages électroniques chiffrés entre les destinataires GCC High et GCC High
 
-Les expéditeurs peuvent chiffrer manuellement les e-mails dans Outlook pour PC et Mac et Outlook sur le web, ou les organisations peuvent configurer une stratégie pour chiffrer les messages électroniques à l’aide de règles de flux de messagerie Exchange.
+Les expéditeurs peuvent chiffrer manuellement les messages électroniques dans Outlook pour PC et Mac et Outlook sur le web, ou les organisations peuvent configurer une stratégie pour chiffrer les messages électroniques à l’aide de règles de flux de messagerie Exchange.
 
 Les destinataires dans GCC High reçoivent la même expérience de lecture en ligne dans Outlook pour PC et Mac et Outlook sur le web que tous les autres utilisateurs.
 

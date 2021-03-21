@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le Centre de sécurité & conformité pour soumettre des messages suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des fichiers à Microsoft pour analyse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b4e6dfcb5900ed41ad3ab0b44fada93599f0b4b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: beeca51b50a7a60db9663220d9a5b3cee2eac56f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288788"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927107"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
@@ -42,7 +42,7 @@ Lorsque vous envoyez un message électronique, vous recevez les messages suivant
 1. **Vérification de l’authentification du** courrier électronique : détails sur la réussi ou l’échec de l’authentification de messagerie lors de sa livraison.
 2. **Accès aux** stratégies : informations sur les stratégies qui ont autorisé ou bloqué le courrier entrant dans votre client, en remplacement de nos verdicts de filtre de service.
 3. **Réputation/détonation de la charge utile**: examen des URL et pièces jointes du message.
-4. **Analyse du gradeur**: révision effectuée par des élèves humains afin de confirmer si les messages sont malveillants ou non.
+4. **Analyse de l’analyse du** gradeur : révision effectuée par des élèves afin de confirmer si les messages sont malveillants ou non.
 
 > [!IMPORTANT]
 > L’analyse de réputation/détonation et de grader de la charge utile n’est pas effectuée dans tous les locataires. Les informations ne peuvent pas sortir de l’organisation lorsque les données ne sont pas supposées quitter la limite du client à des fins de conformité.
@@ -57,15 +57,15 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
   - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  - **Gestion de l’organisation** [dans Exchange Online.](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)
+  - **Gestion de l’organisation** [dans Exchange Online.](/Exchange/permissions-exo/permissions-exo#role-groups)
 
-    Notez que l’appartenance à ce groupe de rôles est nécessaire pour afficher les [soumissions](#view-user-submissions-to-the-custom-mailbox) d’utilisateurs à la boîte aux lettres personnalisée, comme décrit plus loin dans cet article.
+    Notez que l’appartenance à ce groupe de rôles est requise pour afficher les [envois](#view-user-submissions-to-the-custom-mailbox) d’utilisateurs à la boîte aux lettres personnalisée, comme décrit plus loin dans cet article.
 
-- Pour plus d’informations sur la façon dont les utilisateurs peuvent envoyer des messages et des fichiers à Microsoft, voir Signaler des messages et [des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
+- Pour plus d’informations sur la façon dont les utilisateurs peuvent envoyer des messages et des fichiers à Microsoft, voir [Signaler des messages et des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Signaler du contenu suspect à Microsoft
 
-1. Dans le Centre de sécurité &  conformité, allez aux soumissions de gestion des menaces, vérifiez que vous êtes sous \> l’onglet **Soumissions** d’administrateur, puis cliquez sur **Nouvelle soumission.**
+1. Dans le Centre de sécurité &  conformité, allez à Soumissions de gestion des menaces, vérifiez que vous êtes sous \> l’onglet **Soumissions** d’administrateur, puis cliquez sur **Nouvelle soumission.**
 
 2. Utilisez **le nouveau volant** de soumission qui apparaît pour envoyer le message, l’URL ou la pièce jointe, comme décrit dans les sections suivantes.
 
@@ -78,7 +78,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
    - **Fichier**: cliquez **sur Choisir un fichier.** Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier .eml ou .msg, puis cliquez sur **Ouvrir**.
 
    > [!NOTE]
-   > Les administrateurs avec Defender pour Office 365 Plan 1 ou Plan 2 peuvent envoyer des messages de 30 jours. Les autres administrateurs ne pourront revenir qu’à 7 jours.
+   > Les administrateurs avec Defender pour Office 365 Plan 1 ou Plan 2 peuvent envoyer des messages d’une âge de 30 jours. Les autres administrateurs ne pourront revenir qu’à 7 jours.
 
 2. Dans la section **Destinataires,** spécifiez un ou plusieurs destinataires pour qui vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si le courrier électronique a contourné l’analyse en raison des stratégies utilisateur ou organisation.
 
@@ -100,7 +100,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
    - **Ne doit pas avoir été bloqué**
 
-   - **Auraient dû être bloqués**: sélectionnez **Hameçonnage** ou **Programme malveillant.**
+   - **Doit avoir été bloqué :** sélectionnez **Hameçonnage** ou **Programme malveillant.**
 
 3. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
@@ -124,9 +124,9 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 ## <a name="view-admin-submissions"></a>Afficher les soumissions d’administrateur
 
-Dans le Centre de sécurité &  conformité, allez aux soumissions de gestion des menaces, vérifiez que vous êtes sous \> l’onglet **Soumissions** d’administrateur, puis cliquez sur **Nouvelle soumission.**
+Dans le Centre de sécurité &  conformité, allez à Soumissions de gestion des menaces, vérifiez que vous êtes sous \> l’onglet **Soumissions** d’administrateur, puis cliquez sur **Nouvelle soumission.**
 
-Dans la partie supérieure de la page, vous pouvez entrer une date de début, une date de fin et (par défaut) vous pouvez filtrer par **ID** de soumission (une valeur GUID affectée à chaque soumission) en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Update
+Près du haut de la page, vous pouvez entrer une date de début, une date de fin et (par défaut) vous pouvez filtrer par **ID** de soumission (une valeur GUID affectée à chaque soumission) en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Vous pouvez entrer plusieurs valeurs séparées par des virgules.
 
 Pour modifier les critères de filtre, cliquez sur le bouton **ID** de soumission et choisissez l’une des valeurs suivantes :
 
@@ -134,7 +134,7 @@ Pour modifier les critères de filtre, cliquez sur le bouton **ID** de soumissio
 - **Objet/URL/Nom de fichier**
 - **Soumis par**
 - **Type de soumission**
-- **État**
+- **Status**
 
 ![Options de filtrage pour les soumissions d’administrateurs](../../media/admin-submission-email-filter-options.png)
 
@@ -164,12 +164,12 @@ Vous pouvez cliquer sur le **bouton Options** de colonne en bas de la page pour 
 
 Les messages envoyés dans les soumissions d’administrateur sont réassurés et les résultats sont affichés dans le volant de détails :
 
-- En cas d’échec de l’authentification de messagerie de l’expéditeur au moment de la remise.
-- Informations sur les occurrences de stratégie qui auraient pu avoir affecté ou inttérable le verdict d’un message.
-- Résultats actuels de la détonation pour voir si les URL ou les fichiers contenus dans le message sont malveillants ou non.
+- En cas d’échec de l’authentification des e-mails de l’expéditeur au moment de la livraison.
+- Informations sur les accès à la stratégie qui auraient pu affecter ou écraser le verdict d’un message.
+- Résultats actuels de la détonation pour savoir si les URL ou fichiers contenus dans le message étaient malveillants ou non.
 - Commentaires des élèves.
 
-Si une substitution a été trouvée, la rescan doit se terminer en quelques minutes. S’il n’y a pas de problème dans l’authentification ou la remise du courrier électronique n’a pas été affecté par une substitution, les commentaires des élèves peuvent prendre jusqu’à un jour.
+Si le programme a trouvé un remplacement, la nouvelle analyse doit se terminer après plusieurs minutes. S’il n’y a pas de problème dans l’authentification ou la remise du courrier électronique n’a pas été affecté par une substitution, les commentaires des élèves peuvent prendre jusqu’à un jour.
 
 ### <a name="view-admin-url-submissions"></a>Afficher les soumissions d’URL d’administration
 
@@ -220,7 +220,7 @@ Vous pouvez cliquer sur le **bouton Options** de colonne en bas de la page pour 
 
 <sup>\*</sup> Si vous cliquez sur cette valeur, des informations détaillées s’affichent dans un volant.
 
-Dans la zone supérieure de la page, vous pouvez entrer une date de  début, une date de fin et (par défaut) vous pouvez filtrer par expéditeur en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Update
+Dans la zone supérieure de la page, vous pouvez entrer une date de  début, une date de fin et (par défaut) vous pouvez filtrer par expéditeur en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Vous pouvez entrer plusieurs valeurs séparées par des virgules.
 
 Pour modifier les critères de filtre, cliquez sur le bouton **Expéditeur** et choisissez l’une des valeurs suivantes :
 
@@ -251,13 +251,13 @@ Vous pouvez cliquer sur le **bouton Options** de colonne en bas de la page pour 
 - **IP de l’expéditeur**<sup>\*</sup>
 - **Type de soumission**
 
-Dans la zone supérieure de la page, vous pouvez entrer une  date de début, une date de fin et vous pouvez filtrer en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Update
+Dans la zone supérieure de la page, vous pouvez entrer une  date de début, une date de fin et vous pouvez filtrer en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Vous pouvez entrer plusieurs valeurs séparées par des virgules.
 
 Pour exporter les résultats, cliquez sur **Exporter** en haut de la page et sélectionnez **Données du graphique** ou **Tableau.** Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
 
 ## <a name="undo-user-submissions"></a>Annuler les soumissions d’utilisateurs
 
-Lorsqu’un utilisateur envoie un message suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler la soumission. Si l’utilisateur souhaite récupérer le courrier électronique, il sera disponible pour la récupération dans les dossiers Éléments supprimés ou Courrier indésirable.
+Lorsqu’un utilisateur envoie un message suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler la soumission. Si l’utilisateur souhaite récupérer le courrier électronique, il pourra être récupéré dans les dossiers Éléments supprimés ou Courrier indésirable.
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Envoyer des messages à Microsoft à partir de la boîte aux lettres personnalisée
 

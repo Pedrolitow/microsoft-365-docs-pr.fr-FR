@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs dans Microsoft 365 à l’aide de la synchronisation d’annuaires et les avantages à long terme de l’utilisation de cette méthode.
-ms.openlocfilehash: e49cc4472b47320650d8a0ca90395b69ae5b6df7
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 1fe99247a5c50c7bb8fc7eb1347ce6a4cd6aad94
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371623"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927323"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 
@@ -43,7 +43,7 @@ Les avantages de la synchronisation d’annuaires et de l’identité hybride de
 - Activation facultative du scénario d' sign-on unique
 - Automatisation des modifications de compte dans Microsoft 365
 
-Pour plus d’informations sur les avantages de l’utilisation de la synchronisation d’annuaires, voir l’identité hybride avec [Azure Active Directory (Azure AD)](https://go.microsoft.com/fwlink/p/?LinkId=525398) et l’identité hybride [pour Microsoft 365.](plan-for-directory-synchronization.md)
+Pour plus d’informations sur les avantages de l’utilisation de la synchronisation d’annuaires, voir l’identité hybride avec [Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) et l’identité hybride [pour Microsoft 365.](plan-for-directory-synchronization.md)
 
 Toutefois, la synchronisation d’annuaires nécessite une planification et une préparation pour vous assurer que vos services de domaine Active Directory (AD DS) se synchronisent avec le client Azure AD de votre abonnement Microsoft 365 avec un minimum d’erreurs.
 
@@ -60,11 +60,11 @@ Dans vos AD DS, effectuer les tâches de nettoyage suivantes pour chaque compte 
 
 1. Assurez-vous qu’il s’agit d’une adresse de messagerie valide et unique dans **l’attribut proxyAddresses.**
 
-2. Supprimez les valeurs en double dans **l’attribut proxyAddresses.**
+2. Supprimez les valeurs dupliquées dans **l’attribut proxyAddresses.**
 
 3. Si possible, assurez-vous d’une valeur valide et unique pour l’attribut **userPrincipalName** dans l’objet utilisateur de **l’utilisateur.** Pour une meilleure expérience de synchronisation, assurez-vous que l’UPN AD DS correspond à l’UPN Azure AD. Si un utilisateur n’a pas de valeur pour l’attribut **userPrincipalName,** l’objet utilisateur doit contenir une valeur valide et unique pour l’attribut **sAMAccountName.**  Supprimez les valeurs dupliquées dans **l’attribut userPrincipalName.**
 
-4. Pour une utilisation optimale de la liste d’adresses globale(LAL), assurez-vous que les informations des attributs suivants du compte d’utilisateur AD DS sont correctes :
+4. Pour une utilisation optimale de la liste d’adresses globale(LAL), assurez-vous que les informations dans les attributs suivants du compte d’utilisateur AD DS sont correctes :
 
    - givenName
    - surname
@@ -81,7 +81,7 @@ Dans vos AD DS, effectuer les tâches de nettoyage suivantes pour chaque compte 
    - Code postal
    - Pays ou région
 
-## <a name="2-directory-object-and-attribute-preparation"></a>2. Préparation de l’objet directory et des attributs
+## <a name="2-directory-object-and-attribute-preparation"></a>2. Préparation de l’objet et de l’attribut d’annuaire
 
 Une synchronisation d’annuaires réussie entre vos services AD DS et Microsoft 365 nécessite que vos attributs AD DS soient correctement préparés. Par exemple, vous devez vous assurer que des caractères spécifiques ne sont pas utilisés dans certains attributs synchronisés avec l’environnement Microsoft 365. Les caractères inattendus n’entraînent pas l’échec de la synchronisation d’annuaires, mais peuvent renvoyer un avertissement. Les caractères non valides entraînent l’échec de la synchronisation d’annuaires.
 
@@ -100,7 +100,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Si l’attribut existe dans l’objet utilisateur, il sera synchronisé avec Microsoft 365, mais Microsoft 365 ne l’exige pas ou ne l’utilise pas.
   - Nombre maximal de caractères : 64
 
-- **mail**
+- **messagerie**
 
   - La valeur d’attribut doit être unique dans le répertoire.
 
@@ -113,7 +113,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - La valeur d’attribut doit être unique dans le répertoire.
 
     > [!NOTE]
-    > Les traits de soulignement (« _ ») dans le nom synchronisé indiquent que la valeur d’origine de cet attribut contient des caractères non valides. Pour plus d’informations sur cet attribut, voir [l’attribut d’alias Exchange.](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
+    > Les traits de soulignement (« _ ») dans le nom synchronisé indiquent que la valeur d’origine de cet attribut contient des caractères non valides. Pour plus d’informations sur cet attribut, voir [l’attribut d’alias Exchange.](/powershell/module/exchange/set-mailbox)
     >
 
 - **proxyAddresses**
@@ -134,7 +134,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Nombre maximal de caractère : 20
   - La valeur d’attribut doit être unique dans le répertoire.
   - Caractères non valides : [ \ " | , / : \< \> + = ; ? \* ']
-  - Si un utilisateur possède un attribut **sAMAccountName** non valide mais qu’il possède un attribut **userPrincipalName** valide, le compte d’utilisateur est créé dans Microsoft 365.
+  - Si un utilisateur possède un attribut **sAMAccountName** non valide mais un attribut **userPrincipalName** valide, le compte d’utilisateur est créé dans Microsoft 365.
   - Si **sAMAccountName** et **userPrincipalName** ne sont pas valides, l’attribut **userPrincipalName** AD DS doit être mis à jour.
 
 - **sn** (surname)
@@ -143,7 +143,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
 
 - **targetAddress**
 
-    Il est nécessaire que l’attribut **targetAddress** (par exemple, SMTP:tom@contoso.com) rempli pour l’utilisateur apparaisse dans la la LAL Microsoft 365. Dans les scénarios de migration de messagerie tiers, cela nécessiterait l’extension de schéma Microsoft 365 pour les services AD DS. L’extension de schéma Microsoft 365 ajouterait également d’autres attributs utiles pour gérer les objets Microsoft 365 qui sont remplis à l’aide d’un outil de synchronisation d’annuaires à partir d’AD DS. Par exemple, l’attribut **msExchHideFromAddressLists** pour gérer les boîtes aux lettres masquées ou les groupes de distribution est ajouté.
+    Il est nécessaire que l’attribut **targetAddress** (par exemple, SMTP:tom@contoso.com) rempli pour l’utilisateur apparaisse dans la la LAL Microsoft 365. Dans les scénarios de migration de messagerie tiers, cela nécessiterait l’extension de schéma Microsoft 365 pour les services AD DS. L’extension de schéma Microsoft 365 ajouterait également d’autres attributs utiles pour gérer les objets Microsoft 365 qui sont remplis à l’aide d’un outil de synchronisation d’annuaires d’AD DS. Par exemple, l’attribut **msExchHideFromAddressLists** pour gérer les boîtes aux lettres masquées ou les groupes de distribution serait ajouté.
 
   - Nombre maximal de caractères : 256
   - La valeur d’attribut ne doit pas contenir d’espace.
@@ -172,7 +172,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
 
 Active Directory est conçu pour permettre aux utilisateurs finaux de votre organisation de se connectent à votre annuaire à l’aide de **sAMAccountName** ou **userPrincipalName**. De même, les utilisateurs finaux peuvent se connecter à Microsoft 365 à l’aide du nom d’utilisateur principal (UPN) de leur compte scolaire ou scolaire. La synchronisation d’annuaires tente de créer des utilisateurs dans Azure Active Directory à l’aide du même UPN que celui de vos services AD DS. L’UPN est mis en forme comme une adresse de messagerie.
 
-Dans Microsoft 365, l’UPN est l’attribut par défaut utilisé pour générer l’adresse e-mail. Il est facile d’obtenir **userPrincipalName** (dans AD DS et dans Azure AD) et l’adresse de messagerie principale dans **proxyAddresses** définie sur différentes valeurs. Lorsqu’elles sont définies sur des valeurs différentes, il peut y avoir de la confusion pour les administrateurs et les utilisateurs finaux.
+Dans Microsoft 365, l’UPN est l’attribut par défaut utilisé pour générer l’adresse e-mail. Il est facile d’obtenir **userPrincipalName** (dans AD DS et dans Azure AD) et l’adresse de messagerie principale dans **proxyAddresses** définie sur différentes valeurs. Lorsqu’elles sont définies sur des valeurs différentes, les administrateurs et les utilisateurs finaux peuvent être confuses.
 
 Il est préférable d’aligner ces attributs pour réduire la confusion. Pour répondre aux exigences de l' sign-on unique avec active Directory Federation Services (AD FS) 2.0, vous devez vous assurer que les UPN dans Azure Active Directory et votre AD DS correspondent et utilisent un espace de noms de domaine valide.
 
@@ -184,7 +184,7 @@ Pour plus d’informations sur l’ajout d’un autre suffixe UPN à Active Dire
 
 ## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Faire correspondre l’UPN AD DS à l’UPN Microsoft 365
 
-Si vous avez déjà défini la synchronisation d’annuaires, il se peut que l’UPN de l’utilisateur pour Microsoft 365 ne corresponde pas à l’UPN AD DS de l’utilisateur défini dans vos services AD DS. Cela peut se produire lorsqu’un utilisateur obtient une licence avant la vérification du domaine. Pour résoudre ce problème, utilisez PowerShell pour corriger le nom d’utilisateur [upn](https://go.microsoft.com/fwlink/p/?LinkId=396730) en double afin de mettre à jour l’UPN de l’utilisateur afin de vous assurer que l’UPN Microsoft 365 correspond au nom d’utilisateur et au domaine de l’entreprise. Si vous actualisez l’UPN dans AD DS et souhaitez qu’il se synchronise avec l’identité Azure Active Directory, vous devez supprimer la licence de l’utilisateur dans Microsoft 365 avant d’apporter les modifications dans AD DS.
+Si vous avez déjà défini la synchronisation d’annuaires, il se peut que l’UPN de l’utilisateur pour Microsoft 365 ne corresponde pas à l’UPN AD DS de l’utilisateur défini dans vos services AD DS. Cela peut se produire lorsqu’un utilisateur obtient une licence avant la vérification du domaine. Pour résoudre ce problème, utilisez PowerShell pour corriger le nom d’utilisateur [upn](https://go.microsoft.com/fwlink/p/?LinkId=396730) en double pour mettre à jour l’UPN de l’utilisateur afin de vous assurer que le nom d’utilisateur upn Microsoft 365 correspond au nom d’utilisateur et au domaine de l’entreprise. Si vous actualisez l’UPN dans AD DS et souhaitez qu’il se synchronise avec l’identité Azure Active Directory, vous devez supprimer la licence de l’utilisateur dans Microsoft 365 avant d’apporter les modifications dans AD DS.
 
 Voir également comment préparer un domaine non routable (tel que le domaine [.local) pour la synchronisation d’annuaires.](prepare-a-non-routable-domain-for-directory-synchronization.md)
 

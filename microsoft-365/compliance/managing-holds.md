@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment placer des conservations sur les dépositaires et leurs sources de données pour conserver le contenu pertinent pour votre cas Advanced eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fbad81e93635f823fab1c4f44867760d00fc59ed
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838585"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926372"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les prises en charge dans Advanced eDiscovery
 
@@ -80,7 +80,7 @@ Pour créer une mise en attente non privative pour un cas Advanced eDiscovery :
       Consultez la section **FAQ** pour obtenir des conseils sur la mise en attente des groupes Microsoft 365 et de Microsoft Teams.
 
       > [!NOTE]
-      > L’URL du compte OneDrive d’un utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où l’UPN d’une personne est modifié, son URL OneDrive change également pour incorporer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une mise en attente non privative et que son UPN est modifié, vous devez mettre à jour la mise en attente et pointer vers la nouvelle URL OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+      > L’URL du compte OneDrive d’un utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où l’UPN d’une personne est modifié, son URL OneDrive change également pour incorporer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une mise en attente non privative et que son UPN est modifié, vous devez mettre à jour la mise en attente et pointer vers la nouvelle URL OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
 
    1. **Dossiers publics Exchange** : déplacez le bouton bascule vers la position Tout pour placer tous les dossiers publics de votre organisation Exchange Online en attente. Notez que vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le bouton bascule sur **Aucun** si vous ne souhaitez pas placer de mise en attente sur les dossiers publics.
 
@@ -92,7 +92,7 @@ Pour créer une mise en attente non privative pour un cas Advanced eDiscovery :
 
     - Cliquez  **sur Ajouter** des conditions pour ajouter une ou plusieurs conditions afin de restreindre la requête de recherche pour la attente. Chaque condition ajoute une clause à la requête de recherche KQL qui est créée et qui s’exécute lorsque vous créez la requête de recherche KQL. Par exemple, vous pouvez spécifier une plage de dates afin que les documents électroniques ou de site créés dans la plage de dates soient mis en attente. Une condition est connectée à la requête de mot-clé (spécifiée dans la zone de mot-clé) sur le plan logique par l’opérateur AND. Cela signifie que les éléments doivent satisfaire la requête de mot clé et la condition à placer en attente.
 
-     Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions)
+     Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](/office365/SecurityCompliance/keyword-queries-and-search-conditions)
 
 11. Après avoir configuré une attente basée sur une requête, cliquez sur **Suivant**.
 

@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez les étiquettes et stratégies de rétention Microsoft 365 pour gérer les données personnelles dans votre environnement Microsoft 365.
-ms.openlocfilehash: c2a933e556213ae4b78db9dc5f903885df969b27
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377044"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928435"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Régir les informations soumises à la réglementation sur la confidentialité des données
 
-Les contrôles de gouvernance des informations peuvent être utilisés dans votre environnement pour répondre aux besoins de conformité de la confidentialité des données, y compris un nombre spécifique au Règlement général sur la protection des données (RGPD), hipAA-HITECH (loi américaine sur la confidentialité des soins de santé), au CCPA (California Consumer Protection Act) et au LGPD (Brazil Data Protection Act). 
+Les contrôles de gouvernance des informations peuvent être utilisés dans votre environnement pour répondre aux besoins de conformité de la confidentialité des données, y compris un nombre spécifique au Règlement général sur la protection des données (RGPD), HIPAA-HITECH (loi américaine sur la confidentialité des soins de santé), au CCPA (California Consumer Protection Act) et au LGPD (Brazil Data Protection Act). 
 
 Ces contrôles sont principalement pris en compte dans les zones de solution suivantes :
 
@@ -56,25 +56,25 @@ Pour la gouvernance des informations, les réglementations en matière de confid
 
 Étant donné que les réglementations en matière de confidentialité des données ne sont pas très spécifiques en matière de rétention et de suppression des données, d’autres facteurs doivent être pris en compte pour dicter les instructions de gouvernance des informations relatives aux informations personnelles stockées dans votre abonnement Microsoft 365. Voici quelques exemples :
 
-- L’âge des comptes consommateurs après 5 ans d’inactivité et nécessite la suppression ou l’anonymisation des données de compte après ce point, nécessitant une orchestration entre le système stockant les données et les flux de travail liés aux notifications et autres automatisations.
+- L’âge des comptes consommateur après 5 ans d’inactivité et nécessite la suppression ou l’anonymisation des données de compte après ce point, nécessitant une orchestration entre le système stockant les données et les flux de travail liés aux notifications et à d’autres automatisations.
 - Configuration des règles de conservation des stratégies et procédures liées au R GDPR pendant trois ans après leur sur-place, ce qui s’aligne sur la planification de rétention de l’organisation pour les stratégies et procédures.
 - Maintien d’un abonnement distinct pour la communication avec les consommateurs via son organisation de support. Toutes les communications par courrier électronique ont été conservées et supprimées au bout de deux semaines afin de réduire l’endettement de confidentialité dans le système.
 
 Une question clé à se poser est la suivante : 
 
-- Combien de temps les informations contenant des données personnelles doivent-elles être conservées pour des raisons professionnelles valides afin d’éviter les pratiques de « conserver indéfiniment » ? Cela doit être équilibré avec les besoins de rétention pour la continuité de l’activité.
+- Combien de temps les informations contenant des données personnelles doivent-elles être conservées pour des raisons professionnelles valides afin d’éviter de « les conserver indéfiniment » ? Cela doit être équilibré avec les besoins de rétention pour la continuité de l’activité.
 
 Quelles que soient les raisons juridiques et professionnelles de conserver des informations personnelles ou de les supprimer, Microsoft fournit un certain nombre de fonctionnalités pour implémenter votre modèle de gouvernance des données dans Microsoft 365.
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>Gestion de la gouvernance des informations dans Microsoft 365
 
-Pour commencer, voir [Gérer la gouvernance des informations](../compliance/manage-information-governance.md) et la rétention, la suppression et la destruction des données dans Microsoft [365.](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)
+Pour commencer, voir [Gérer la gouvernance des informations](../compliance/manage-information-governance.md) et la rétention, la suppression et la destruction des données dans Microsoft [365.](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Développer des planifications de rétention des données pour les conteneurs, la messagerie et le contenu
 
 Gardez les éléments suivants à l’esprit :
 
-- L’établissement d’une planification de rétention des données pour les types d’informations définis doit être considéré comme une condition préalable à l’implémentation d’un schéma de rétention ou de suppression.
+- L’établissement d’une planification de rétention des données pour les types d’informations définis doit être considéré comme une condition préalable à l’implémentation de tout schéma de rétention ou de suppression.
 
 - Étant donné le nombre de types d’informations que la plupart des organisations considèrent comme importants et les planifications de rétention des enregistrements importantes correspondantes qui vont de même, l’implémentation d’une stratégie de rétention et de gestion des enregistrements de données nécessite une planification. 
 
@@ -84,11 +84,10 @@ Gardez les éléments suivants à l’esprit :
 
 ### <a name="retention-policies-and-retention-labels"></a>Stratégies de rétention et étiquettes de rétention.
 
-Utilisez [les stratégies de rétention](../compliance/retention.md) et les étiquettes de rétention pour conserver ou supprimer du contenu dans Microsoft 365 qui contient ou est censé contenir des données personnelles.
+Utilisez [des stratégies de rétention](../compliance/retention.md) et des étiquettes de rétention pour conserver ou supprimer du contenu dans Microsoft 365 qui contient ou est censé contenir des données personnelles.
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
 Utilisez des étiquettes de rétention qui déclarent le contenu d’un enregistrement pour implémenter une solution de [gestion](../compliance/records-management.md) des enregistrements pour les données dans Microsoft 365.
 
 Pour la confidentialité des données, les demandes des personnes responsables des données reçues par le service juridique sont déclarées comme un enregistrement et peuvent être stockées indéfiniment ou éliminées avec preuve, afin de respecter les spécifications de rétention des activités réglementaires.
-

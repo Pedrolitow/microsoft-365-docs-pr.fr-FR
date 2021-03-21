@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utiliser des stratégies d’audit et d’alerte, ainsi que des demandes des personnes qui répondent aux incidents de données personnelles.
-ms.openlocfilehash: 3ae0f2a6528f6188500c7cee7732c6447013eaa6
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 4070cd772d243bcfba33bfb164fd05e1f0911b3b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749586"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928423"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Surveiller et répondre aux incidents de confidentialité des données dans votre organisation
 
@@ -34,12 +34,12 @@ Cela inclut ce qui suit :
 - Demandes des personnes objet de données (y compris la recherche de contenu et eDiscovery)
 - Outils d’investigation et rapports supplémentaires
 
-## <a name="data-privacy-regulations-impacting-the-use-of-monitoring-and-response-tools"></a>Réglementations en matière de confidentialité des données qui ont un impact sur l’utilisation des outils de surveillance et de réponse
+## <a name="data-privacy-regulations-impacting-the-use-of-monitoring-and-response-tools"></a>Réglementations en matière de confidentialité des données qui ont une incidence sur l’utilisation des outils de surveillance et de réponse
 
 Voici un exemple de liste des réglementations de confidentialité des données qui peuvent être liées aux contrôles de gouvernance des informations :
 
 - LGPD Article 46
-- LGPD Article 48
+- LGPD, article 48
 - Article R GDPR (5)(1)(f)
 - Article R GDPR (15)(1)(e)
 - HIPAA-HITECH (45 C.F.R. 164.308(a)(1)(ii)(D))
@@ -58,8 +58,8 @@ Votre organisation peut également effectuer des activités de surveillance et d
 
 Pour vous aider à démarrer avec un schéma de surveillance et de réponse dans Microsoft 365 pour les réglementations en matière de confidentialité des données, cet article répertorie les fonctionnalités utiles de Microsoft 365 pour répondre à des questions telles que : 
 
-- Quels types de techniques de surveillance, d’investigation et de rapport au quotidien sont disponibles pour les différents types de données et sources ?
-- Les mécanismes qui seront nécessaires pour gérer les demandes des personnes qui traitent des données (DSR) et les mesures correctives, telles que l’anonymisation, la suppression et la suppression.
+- Quels types de techniques de surveillance, d’investigation et de rapports au quotidien sont disponibles pour les différents types de données et sources ?
+- Les mécanismes nécessaires pour gérer les demandes des personnes qui traitent des données (DSR) et les mesures correctives, telles que l’anonymisation, la suppression et la suppression.
 
 ## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’audit et d’alerte dans le Centre de sécurité et conformité
 
@@ -72,11 +72,11 @@ Consultez les articles suivants pour la configuration de l’audit, de l’audit
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes responsables des données concernant le R GDPR et le CCPA
 
-Pour [plus d’informations](../compliance/gdpr-dsr-office365.md) sur la réponse à une DSR dans Microsoft 365, voir demandes des personnes qui répondent aux données pour le R GDPR et le CCPA.
+Pour [plus d’informations](/compliance/regulatory/gdpr-dsr-Office365) sur la réponse à une DSR dans Microsoft 365, voir demandes des personnes qui répondent aux données pour le R GDPR et le CCPA.
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Gérer les utilisateurs supprimés dans Microsoft Stream
 
-Pour Microsoft Stream, lorsqu’un utilisateur est supprimé d’Azure Active Directory (Azure AD), si son nom était associé à une vidéo Stream publiée avant ce point, son adresse de messagerie reste associée à la vidéo. Pour [le supprimer, voir](https://docs.microsoft.com/stream/managing-deleted-users) Gérer les utilisateurs supprimés de Microsoft Stream.
+Pour Microsoft Stream, lorsqu’un utilisateur est supprimé d’Azure Active Directory (Azure AD), si son nom était associé à une vidéo Stream publiée avant ce point, son adresse de messagerie reste associée à la vidéo. Pour [le supprimer, voir](/stream/managing-deleted-users) Gérer les utilisateurs supprimés de Microsoft Stream.
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Gestion des risques internes en tant qu’outil d’investigation
 
