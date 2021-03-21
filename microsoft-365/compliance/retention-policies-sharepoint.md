@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: dd1260df23579ad2e6605805bafe9e36d2274a8e
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 448f3e8e2ab827527b02263fea2b07de4b345dc1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727399"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919770"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md), car elles contiennent des informations spécifiques à SharePoint et OneDrive.
 
@@ -49,7 +49,11 @@ Les fichiers suivants peuvent être supprimés:
 > [!TIP]
 > Lorsque vous utilisez une [requête avec une stratégie d’application automatique pour une étiquette de rétention](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), vous pouvez exclure des bibliothèques de documents à l’aide de cette entrée : `NOT(DocumentLink:"<URL to document library>")`
 
-Les éléments de liste ne sont pas pris en charge par les stratégies de rétention, mais sont pris en charge par les étiquettes de rétention à l’exception des éléments dans les listes. Il s’agit de listes masquées permettant à SharePoint de gérer le système et d’inclure le catalogue de pages maîtres, le catalogue de solutions et les sources de données.
+Les éléments de liste ne sont pas pris en charge par les stratégies de rétention, mais sont pris en charge par les étiquettes de rétention à l’exception des éléments dans les listes. Il s’agit de listes masquées permettant à SharePoint de gérer le système et d’inclure le catalogue de pages maîtres, le catalogue de solutions et les sources de données. Lorsque vous appliquez une étiquette de rétention à un élément de liste pris en charge qui contient une pièce jointe au document :
+- Pour une étiquette de rétention standard (qui ne déclare pas l'élément comme étant un document) :
+    - La pièce jointe au document n’hérite pas automatiquement des paramètres de rétention de l’étiquette, mais peut être étiquetée de manière indépendante.
+- Pour une étiquette de rétention qui déclare que l'élément est un document : 
+    - La pièce jointe du document hérite automatiquement des paramètres de rétention de l'étiquette si le document n'est pas déjà étiqueté.
 
 Les paramètres de rétention des stratégies de rétention et des étiquettes de rétention ne s’appliquent pas à l’organisation de structures qui incluent des bibliothèques, des listes et des dossiers.
 
