@@ -14,18 +14,18 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Résumé : Configurez Azure AD Connect pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: f00763487261b62940ac5def38d35158db77a699
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2bca2b758486b85d185870e2e14b495b8f084cb7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690000"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929407"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Authentification fédérée haute disponibilité, phase 5 : Configurer l’authentification fédérée pour Microsoft 365
 
 Dans cette phase finale du déploiement de l’authentification fédérée haute disponibilité pour Microsoft 365 dans les services d’infrastructure Azure, vous obtenez et installez un certificat émis par une autorité de certification publique, vérifiez votre configuration, puis installez et exécutez Azure AD Connect sur le serveur de synchronisation d’annuaires. Azure AD Connect configure votre abonnement Microsoft 365, vos services AD FS (Active Directory Federation Services) et vos serveurs proxy d’application web pour l’authentification fédérée.
   
-Voir [Déployer l’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
+Pour toutes les phases, voir Déployer l’authentification fédérée haute disponibilité pour [Microsoft 365 dans Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 ## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Obtenir un certificat public et le copier sur le serveur de synchronisation d’annuaires
 
@@ -39,7 +39,7 @@ Obtenez auprès d’une autorité de certification publique un certificat numér
     
 Par ailleurs, les ordinateurs et appareils de votre organisation doivent approuver l'autorité de certification publique qui émet le certificat numérique. Pour cela, vous devez installer un certificat racine de l'autorité de certification publique dans la banque Autorités de certification racines de confiance de vos ordinateurs et appareils. Sur les ordinateurs exécutant Microsoft Windows, un ensemble de certificats de ce type est installé pour les autorités de certification couramment utilisées. Si le certificat racine de votre autorité de certification publique n'est pas déjà installé, vous devez le déployer sur les ordinateurs et les appareils de votre organisation.
   
-Pour plus d'informations sur les certificats requis pour l'authentification fédérée, consultez la rubrique [Configuration requise pour l'installation et la configuration de la fédération](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
+Pour plus d'informations sur les certificats requis pour l'authentification fédérée, consultez la rubrique [Configuration requise pour l'installation et la configuration de la fédération](/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
   
 Lorsque vous recevez le certificat, copiez-le dans un dossier sur le lecteur C: du serveur de synchronisation d’annuaires. Par exemple, nommez le fichier SSL.pfx et stockez-le dans le dossier C: Certs sur le serveur de synchronisation \\ d’annuaires.
   
@@ -145,8 +145,6 @@ Votre infrastructure d’authentification fédérée haute disponibilité pour M
   
 [Identité fédérée pour votre environnement de test/dev Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Centre de solutions et d'architecture Microsoft 365](../solutions/solution-architecture-center.md)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
 
 [Identité fédérée pour Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
-
-

@@ -14,25 +14,25 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Résumé : Configurez les serveurs proxy d’application web pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: fd63274ffb9528cedb88fc2ba77834cfd56664d4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 95d73d05f2eef087e606df14db180b24c69d5932
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690003"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929071"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Authentification fédérée haute disponibilité, phase 4 : Configurer les proxys d’application web
 
 Dans cette phase de déploiement de la haute disponibilité pour l’authentification fédérée Microsoft 365 dans les services d’infrastructure Azure, vous créez un équilibreur de charge interne et deux serveurs AD FS.
   
-Vous devez effectuer cette phase avant de passer à la phase 5 : Configurer l’authentification fédérée [pour Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Voir [Déployer l’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
+Vous devez effectuer cette phase avant de passer à la phase 5 : Configurer l’authentification fédérée [pour Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Pour toutes les phases, voir Déployer l’authentification fédérée haute disponibilité pour [Microsoft 365 dans Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 ## <a name="create-the-internet-facing-load-balancer-in-azure"></a>Créer l’équilibreur de charge connecté à Internet dans Azure
 
 Vous devez créer un équilibreur de charge connecté à Internet pour permettre à Azure de répartir équitablement le trafic d’authentification client entrant à partir d’Internet sur les deux serveurs proxy d’application web.
   
 > [!NOTE]
-> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Voir [La mise en place d’Azure PowerShell.](https://docs.microsoft.com/powershell/azure/get-started-azureps) 
+> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Voir [La mise en place d’Azure PowerShell.](/powershell/azure/get-started-azureps) 
   
 Une fois que vous avez indiqué les valeurs d’emplacement et de groupe de ressources, exécutez le bloc obtenu à l’invite de commandes Azure PowerShell ou dans le PowerShell ISE.
   
@@ -64,13 +64,13 @@ Vous devez déterminer le nom DNS pour identifier le nom de votre service de fé
   
 Une fois que le nom de domaine complet du service de fédération a été obtenu, créez un enregistrement DNS de domaine public A pour le nom de domaine complet pour le résoudre en adresse IP publique de l’équilibreur de charge Azure connecté à Internet.
   
-|**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Valeur**|
+|**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Value (Valeur)**|
 |:-----|:-----|:-----|:-----|
 |Nom de domaine complet du service de fédération  <br/> |A  <br/> |3600  <br/> |adresse IP publique de l’équilibreur de charge Azure connecté à Internet (affiché par la commande **Write-Host** dans la section précédente) <br/> |
    
 Voici un exemple :
   
-|**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Valeur**|
+|**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Value (Valeur)**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -168,5 +168,4 @@ Utilisez [la phase 5 : Configurer l’authentification fédérée pour Microsoft
   
 [Identité fédérée pour votre environnement de test/dev Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Centre de solutions et d'architecture Microsoft 365](../solutions/solution-architecture-center.md)
-
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)

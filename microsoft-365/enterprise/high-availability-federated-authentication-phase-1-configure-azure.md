@@ -14,22 +14,22 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour héberger l’authentification fédérée haute disponibilité pour Microsoft 365.'
-ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332339"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929107"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
-Dans cette phase, vous allez créer les groupes de ressources, le réseau virtuel (VNet) et les groupes à haute disponibilité dans Azure qui hébergeront les machines virtuelles aux phases 2, 3 et 4. Vous devez effectuer cette phase avant de passer à [la phase 2 : Configurer les contrôleurs de domaine.](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Voir [Déployer l’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
+Dans cette phase, vous allez créer les groupes de ressources, le réseau virtuel (VNet) et les groupes à haute disponibilité dans Azure qui hébergeront les machines virtuelles aux phases 2, 3 et 4. Vous devez effectuer cette phase avant de passer à [la phase 2 : Configurer les contrôleurs de domaine.](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Pour toutes les phases, voir Déployer l’authentification fédérée haute disponibilité pour [Microsoft 365 dans Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 Azure doit être provisioné avec les composants de base ci-après :
   
 - Groupes de ressources
     
-- Un réseau virtuel Azure entre sites avec des sous-réseaux pour l’hébergement des machines virtuelles Azure
+- Un réseau virtuel Azure entre plusieurs locaux avec des sous-réseaux pour l’hébergement des machines virtuelles Azure
     
 - Groupes de sécurité réseau pour effectuer l'isolation des sous-réseaux
     
@@ -57,7 +57,7 @@ Pour les trois premiers sous-réseaux, spécifiez un nom et un espace d’adress
     
 2. Convertissez les bits résultants en nombres décimaux et exprimez-les sous forme d'espace d'adressage, en définissant la longueur du préfixe sur une valeur équivalente à la taille du sous-réseau de passerelle.
     
-Consultez la calculatrice d’espace d’adressare pour les [sous-réseaux](address-space-calculator-for-azure-gateway-subnets.md) de passerelle Azure pour un bloc de commandes PowerShell et une application console C# ou Python qui effectue ce calcul pour vous.
+Consultez la calculatrice d’espace d’adressare pour les [sous-réseaux](address-space-calculator-for-azure-gateway-subnets.md) de passerelle Azure pour un bloc de commandes PowerShell et une application console C# Python qui effectue ce calcul pour vous.
   
 Renseignez-vous auprès de votre service informatique pour déterminer ces espaces d'adressage à partir de l'espace d'adressage de réseau virtuel.
   
@@ -94,7 +94,7 @@ Pour deux serveurs DNS (Domain Name System) dans votre réseau local que vous so
    
  **Tableau D : serveurs DNS locaux**
   
-Pour router des paquets du réseau entre différents locaux vers le réseau de votre organisation à travers la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui contient la liste des espaces d’adressag (en notation CIDR) pour tous les emplacements accessibles sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
+Pour router les paquets du réseau entre différents locaux vers le réseau de votre organisation à travers la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui contient la liste des espaces d’adressag (en notation CIDR) pour tous les emplacements accessibles sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
   
 Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d'en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste d'espaces d'adressage.
   
@@ -109,7 +109,7 @@ Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau 
 Commençons maintenant à créer l’infrastructure Azure pour héberger votre authentification fédérée pour Microsoft 365.
   
 > [!NOTE]
-> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Voir [La mise en place d’Azure PowerShell.](https://docs.microsoft.com/powershell/azure/get-started-azureps) 
+> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Voir [La mise en place d’Azure PowerShell.](/powershell/azure/get-started-azureps) 
   
 Tout d'abord, démarrez une invite PowerShell Azure et connectez-vous à votre compte.
   
@@ -253,7 +253,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> L’authentification fédérée d’utilisateurs individuels n’utilise aucune ressource locale. Toutefois, si cette connexion VPN de site à site devient indisponible, les contrôleurs de domaine dans le réseau virtuel ne reçoivent pas les mises à jour des comptes d’utilisateur et des groupes effectués dans les services de domaine Active Directory locaux. Pour vous assurer que cela ne se produit pas, vous pouvez configurer la haute disponibilité pour votre connexion VPN de site à site. Pour plus d'informations, reportez-vous à l'article [Configuration haute disponibilité pour la connectivité entre les réseaux locaux et la connectivité entre deux réseaux virtuels](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> L’authentification fédérée d’utilisateurs individuels n’utilise aucune ressource locale. Toutefois, si cette connexion VPN de site à site devient indisponible, les contrôleurs de domaine dans le réseau virtuel ne reçoivent pas les mises à jour des comptes d’utilisateur et des groupes effectués dans les services de domaine Active Directory locaux. Pour vous assurer que cela ne se produit pas, vous pouvez configurer la haute disponibilité pour votre connexion VPN de site à site. Pour plus d'informations, reportez-vous à l'article [Configuration haute disponibilité pour la connectivité entre les réseaux locaux et la connectivité entre deux réseaux virtuels](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Ensuite, enregistrez l'adresse IPv4 publique de la passerelle VPN Azure pour votre réseau virtuel à partir de l'affichage de cette commande :
   
@@ -261,7 +261,7 @@ Ensuite, enregistrez l'adresse IPv4 publique de la passerelle VPN Azure pour vot
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Ensuite, configurez votre périphérique VPN local de sorte qu'il se connecte à la passerelle VPN Azure. Pour plus d'informations, reportez-vous à la rubrique [À propos des périphériques VPN pour les connexions de la passerelle VPN de site à site](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Ensuite, configurez votre périphérique VPN local de sorte qu'il se connecte à la passerelle VPN Azure. Pour plus d'informations, reportez-vous à la rubrique [À propos des périphériques VPN pour les connexions de la passerelle VPN de site à site](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Pour configurer votre périphérique VPN local, vous avez besoin des éléments suivants :
   
@@ -314,8 +314,6 @@ Utilisez [la phase 2 : configurez les contrôleurs de domaine](high-availability
   
 [Identité fédérée pour votre environnement de test/dev Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Centre de solutions et d'architecture Microsoft 365](../solutions/solution-architecture-center.md)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
 
 [Comprendre l’identité Microsoft 365 et Azure Active Directory](about-microsoft-365-identity.md)
-
-

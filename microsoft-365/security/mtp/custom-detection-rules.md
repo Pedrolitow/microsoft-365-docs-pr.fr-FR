@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51a6bc33778248a69e533d9e2077365a63b97e30
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ed1eeb29119d477673bb04d9474bd38438db9fd9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50424130"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928939"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -41,13 +41,13 @@ Les règles de détection personnalisées sont des règles que vous pouvez conce
 
 Pour gérer les détections personnalisées, vous devez avoir l’un des rôles ci-après :
 
-- **Administrateur de sécurité**: les utilisateurs ayant ce rôle [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) peuvent gérer les paramètres de sécurité dans le Centre de sécurité Microsoft 365 et d’autres portails et services.
+- **Administrateur de sécurité**: les utilisateurs ayant ce rôle [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) peuvent gérer les paramètres de sécurité dans le Centre de sécurité Microsoft 365 et d’autres portails et services.
 
-- **Opérateur de** sécurité : les utilisateurs dotés de ce rôle [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) peuvent gérer les alertes et avoir un accès global en lecture seule aux fonctionnalités liées à la sécurité, y compris toutes les informations du Centre de sécurité Microsoft 365. Ce rôle est suffisant pour la gestion des détections personnalisées uniquement si le contrôle d’accès basé sur un rôle (RBAC) est désactivé dans Microsoft Defender pour point de terminaison. Si vous avez configuré RBAC, vous avez également besoin de l’autorisation gérer les **paramètres** de sécurité pour Defender for Endpoint.
+- **Opérateur de** sécurité : les utilisateurs dotés de ce rôle [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) peuvent gérer les alertes et avoir un accès global en lecture seule aux fonctionnalités liées à la sécurité, y compris toutes les informations du Centre de sécurité Microsoft 365. Ce rôle est suffisant pour la gestion des détections personnalisées uniquement si le contrôle d’accès basé sur un rôle (RBAC) est désactivé dans Microsoft Defender pour point de terminaison. Si vous avez configuré RBAC, vous avez également besoin de l’autorisation gérer les **paramètres** de sécurité pour Defender for Endpoint.
 
 Pour gérer les autorisations requises, un **administrateur général** peut :
 
-- Attribuez le **rôle d’administrateur de sécurité** ou d’opérateur **de** sécurité dans le Centre d’administration [Microsoft 365](https://admin.microsoft.com/) sous **Administrateur de** sécurité  >  **des rôles.**
+- Attribuez le **rôle d’administrateur de sécurité** ou d’opérateur **de** sécurité dans le Centre d’administration [Microsoft 365](https://admin.microsoft.com/) sous Administrateur de **sécurité** des  >  **rôles.**
 - Vérifiez les paramètres RBAC pour Microsoft Defender pour le point de terminaison dans le Centre de sécurité [Microsoft Defender](https://securitycenter.windows.com/) sous   >  **Paramètres Autorisations**  >  **Rôles**. Sélectionnez le rôle correspondant pour attribuer **l’autorisation gérer les paramètres de** sécurité.
 
 > [!NOTE]
@@ -89,7 +89,7 @@ Les requêtes simples, telles que celles qui n’utilisent pas l’opérateur ou
 
 Il existe plusieurs façons de s’assurer que les requêtes plus complexes retournent ces colonnes. Par exemple, si vous préférez agréger et compter par entité sous une colonne telle que , vous pouvez toujours renvoyer et en l’obtenant à partir de l’événement le plus récent impliquant `DeviceId` `Timestamp` chaque unique `ReportId` `DeviceId` .
 
-L’exemple de requête ci-dessous compte le nombre d’appareils uniques ( ) avec détections antivirus et utilise ce nombre pour rechercher uniquement les appareils avec plus de `DeviceId` cinq détections. Pour renvoyer la dernière `Timestamp` et la `ReportId` correspondante, elle utilise `summarize` l’opérateur avec la `arg_max` fonction.
+L’exemple de requête ci-dessous compte le nombre d’appareils uniques ( ) avec détections antivirus et utilise ce nombre pour rechercher uniquement les appareils avec plus de `DeviceId` cinq détections. Pour renvoyer la dernière `Timestamp` et la `ReportId` correspondante, elle utilise l’opérateur `summarize` avec la `arg_max` fonction.
 
 ```kusto
 DeviceEvents
@@ -112,7 +112,7 @@ Avec la requête dans l’éditeur  de requête, sélectionnez Créer une règle
 - **Gravité :** risque potentiel du composant ou de l’activité identifié par la règle
 - **Catégorie :** composant ou activité de menace identifié par la règle
 - **MITRE ATT&techniques CK**: une ou plusieurs techniques d’attaque identifiées par la règle, comme documenté dans l’infrastructure [MITRE ATT&CK.](https://attack.mitre.org/) Cette section est masquée pour certaines catégories d’alertes, notamment les programmes malveillants, les ransomware, les activités suspectes et les logiciels indésirables
-- **Description :** plus d’informations sur le composant ou l’activité identifié par la règle 
+- **Description**: plus d’informations sur le composant ou l’activité identifié par la règle 
 - **Actions recommandées**: actions supplémentaires que les répondeurs peuvent prendre en réponse à une alerte
 
 #### <a name="rule-frequency"></a>Fréquence des règles
@@ -138,17 +138,17 @@ Votre règle de détection personnalisée peut prendre automatiquement des mesur
 
 #### <a name="actions-on-devices"></a>Actions sur les appareils
 Ces actions sont appliquées aux appareils dans la `DeviceId` colonne des résultats de la requête :
-- **Isoler l’appareil**: utilise Microsoft Defender pour point de terminaison pour appliquer une isolation complète du réseau, ce qui empêche l’appareil de se connecter à n’importe quelle application ou service. [En savoir plus sur l’isolation des ordinateurs Microsoft Defender pour Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- **Collecter un package d’examen**: collecte des informations sur l’appareil dans un fichier ZIP. [En savoir plus sur le package d’examen Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **Isoler l’appareil**: utilise Microsoft Defender pour point de terminaison pour appliquer une isolation complète du réseau, ce qui empêche l’appareil de se connecter à n’importe quelle application ou service. [En savoir plus sur l’isolation des ordinateurs Microsoft Defender pour Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **Collecter un package d’examen**: collecte des informations sur l’appareil dans un fichier ZIP. [En savoir plus sur le package d’examen Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **Exécuter une analyse antivirus**: effectue une analyse complète Windows Defender antivirus sur l’appareil
 - **Lancer une enquête**: lance une [enquête automatisée](mtp-autoir.md) sur l’appareil
-- **Restreindre l’exécution de** l’application : définit des restrictions sur l’appareil pour autoriser uniquement l’exécution des fichiers signés avec un certificat émis par Microsoft. [En savoir plus sur les restrictions d’application avec Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
+- **Restreindre l’exécution de** l’application : définit des restrictions sur l’appareil pour autoriser uniquement l’exécution des fichiers signés avec un certificat émis par Microsoft. [En savoir plus sur les restrictions d’application avec Microsoft Defender pour le point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>Actions sur les fichiers
 Lorsqu’il est sélectionné, vous  pouvez choisir d’appliquer l’action de fichier de mise en quarantaine sur les fichiers dans la colonne , , ou dans la colonne des résultats `SHA1` de la `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` requête. Cette action supprime le fichier de son emplacement actuel et place une copie en quarantaine.
 
 #### <a name="actions-on-users"></a>Actions sur les utilisateurs
-Lorsqu’il est  sélectionné, l’utilisateur Marquer comme compromis est pris sur les utilisateurs dans la colonne , ou dans la colonne des résultats `AccountObjectId` de la `InitiatingProcessAccountObjectId` `RecipientObjectId` requête. Cette action définit le niveau de risque des utilisateurs sur « élevé » dans Azure Active Directory, déclenchant les stratégies de protection des [identités correspondantes.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+Lorsqu’il est  sélectionné, l’utilisateur Marquer comme étant compromis est pris sur les utilisateurs dans la colonne , ou dans la colonne des résultats `AccountObjectId` de la `InitiatingProcessAccountObjectId` `RecipientObjectId` requête. Cette action définit le niveau de risque des utilisateurs sur « élevé » dans Azure Active Directory, déclenchant les stratégies de protection des [identités correspondantes.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 > [!NOTE]
 > L’action autoriser ou bloquer les règles de détection personnalisées n’est actuellement pas prise en charge sur Microsoft 365 Defender.
@@ -168,7 +168,7 @@ Après avoir passé en revue la règle, **sélectionnez Créer** pour l’enregi
 
 
 >[!Important] 
->Les détections personnalisées doivent être régulièrement examinées pour des raisons d’efficacité et d’efficacité. Pour vous assurer que vous créez des détections qui déclenchent de vraies alertes, prenez le temps de passer en revue vos détections personnalisées existantes en suivant les étapes de gestion des règles de [détection personnalisées existantes.](#manage-existing-custom-detection-rules) <br>  
+>Les détections personnalisées doivent être régulièrement examinées pour plus d’efficacité. Pour vous assurer que vous créez des détections qui déclenchent de vraies alertes, prenez le temps de passer en revue vos détections personnalisées existantes en suivant les étapes de la procédure De gestion des règles de [détection personnalisées existantes.](#manage-existing-custom-detection-rules) <br>  
 Vous conservez le contrôle sur l’étendue ou la spécificité de vos détections personnalisées afin que les fausses alertes générées par les détections personnalisées indiquent la nécessité de modifier certains paramètres des règles.
 
 
@@ -193,7 +193,7 @@ Pour afficher des informations complètes sur une règle de détection personnal
 
 Vous pouvez également prendre les mesures suivantes sur la règle à partir de cette page :
 
-- **Exécuter**: exécutez la règle immédiatement. Cela réinitialise également l’intervalle pour la prochaine suite.
+- **Exécutez** la règle immédiatement. Cela réinitialise également l’intervalle pour la prochaine suite.
 - **Modifier**— modifier la règle sans modifier la requête
 - **Modifier la requête —** modifier la requête dans le recherche avancée
 - **Activer**  /  **Désactiver :** activer la règle ou l’arrêter d’être en cours d’exécution
@@ -201,14 +201,14 @@ Vous pouvez également prendre les mesures suivantes sur la règle à partir de 
 
 ### <a name="view-and-manage-triggered-alerts"></a>Afficher et gérer les alertes déclenchées
 
-Dans l’écran détails de la règle (**Détections** personnalisées de repérage [nom de la règle] ), allez à  >    >   **Alertes déclenchées**, qui répertorie les alertes générées par des correspondances à la règle. Sélectionnez une alerte pour afficher des informations détaillées à son sujet et prendre les mesures suivantes :
+Dans l’écran des détails de la règle (**Détections** personnalisées de repérage [nom de la règle] ), allez à  >    >   **Alertes déclenchées**, qui répertorie les alertes générées par des correspondances à la règle. Sélectionnez une alerte pour afficher des informations détaillées à son sujet et prenez les mesures suivantes :
 
 - Gérer l’alerte en setting its status and classification (true or false alert)
 - Lier l’alerte à un incident
 - Exécuter la requête qui a déclenché l’alerte sur le hunting avancé
 
 ### <a name="review-actions"></a>Examiner les actions
-Dans l’écran détails de la règle (**Détections** personnalisées de repérage [nom de la règle] ), allez à Actions déclenchées , qui répertorie les actions entreprises en fonction des  >    >  correspondances à la règle. 
+Dans l’écran détails de la règle (**Détections** personnalisées de repérage [nom de la  >    >  **règle]**), allez à **Actions** déclenchées , qui répertorie les actions entreprises en fonction des correspondances à la règle.
 
 >[!TIP]
 >Pour afficher rapidement des informations et agir sur un élément d’un tableau, utilisez la colonne de sélection [&#10003;] à gauche du tableau.

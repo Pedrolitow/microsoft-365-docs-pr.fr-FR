@@ -15,12 +15,12 @@ ms.custom:
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur les tâches d’administration déléguées dans Microsoft 365 pour les partenaires et revendeurs Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 304fbba16d6c8e81e965462e3405824bd22982c9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 82fa70a8025f67610032ba59368bc74789b60f84
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405935"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929371"
 ---
 # <a name="delegated-administration-faq"></a>FAQ sur l’administration déléguée
 
@@ -31,7 +31,7 @@ Cet article fournit des questions fréquemment posées et des réponses sur les 
 
 ## <a name="im-a-reseller-and-i-need-to-manage-my-customer-tenants-how-does-this-work"></a>Je suis revendeur et je dois gérer mes clients. Comment cela fonctionne-t-il ?
 
-Si vous êtes un partenaire ou un revendeur Microsoft et que vous vous êtes inscrit en tant que conseiller Microsoft, vous pouvez demander des fonctionnalités _d’administration_ déléguées dans l’organisation Microsoft 365 de votre client.
+Si vous êtes un partenaire ou un revendeur Microsoft et que vous vous êtes inscrit en tant que conseiller Microsoft, vous pouvez demander des fonctionnalités _d’administration_ déléguée dans l’organisation Microsoft 365 de votre client.
 
 L’administration déléguée vous permet de gérer Microsoft 365 (y compris les paramètres EOP) comme si vous étiez un administrateur au sein de cette organisation. Les étapes de configuration de l’administration déléguée sont décrites dans la liste suivante :
 
@@ -41,7 +41,7 @@ L’administration déléguée vous permet de gérer Microsoft 365 (y compris le
 
 3. Créez le compte d’administrateur délégué à l’aide des étapes de [l’étape Ajouter, modifier ou supprimer un partenaire conseiller en abonnement.](../../admin/misc/add-partner.md)
 
-Visitez [les partenaires : développez votre entreprise et administrez](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) l’abonnement des partenaires pour plus d’informations sur la façon de configurer l’administration déléguée.
+Visitez [les partenaires : développez votre entreprise et administrez](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) un abonnement partenaire pour plus d’informations sur la façon de configurer l’administration déléguée.
 
 ## <a name="im-a-customer-not-a-reseller-how-can-set-up-delegated-administrator-for-my-subtenants"></a>Je suis un client, pas un revendeur. Comment configurer un administrateur délégué pour mes sous-clients ?
 
@@ -53,4 +53,4 @@ Non. Microsoft 365 ne dispose pas actuellement de cette fonctionnalité.
 
 ## <a name="can-i-get-consolidated-reporting-across-all-of-my-subtenants"></a>Puis-je obtenir des rapports consolidés sur tous mes sous-traitants ?
 
-Les rapports consolidés au sein des entreprises que vous gérez ne sont pas disponibles dans les rapports du Centre d’administration Microsoft 365. Toutefois, vous pouvez obtenir des rapports à [l’aide de Microsoft Graph.](https://docs.microsoft.com/graph/overview)
+Les rapports consolidés au sein des entreprises que vous gérez ne sont pas disponibles dans les rapports du Centre d’administration Microsoft 365. Toutefois, vous pouvez obtenir des rapports à [l’aide de Microsoft Graph.](/graph/overview)

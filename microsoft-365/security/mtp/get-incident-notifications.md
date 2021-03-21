@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9db025818fdd5eb2635a9a676e4a10e20f3036b6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c6b255f7815a5b49cd0fb5ed27da0cf642ff2ca7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930977"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928831"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtenir des notifications d’incident par courrier électronique
 
@@ -43,7 +43,7 @@ Vous pouvez choisir d’obtenir des notifications en fonction de la gravité de 
 
 Vous pouvez ajouter ou supprimer des destinataires dans les notifications par courrier électronique. Les destinataires nouvellement ajoutés sont avertis des incidents après leur ajout. 
 
-La notification par courrier électronique contient des détails importants sur l’incident, tels que le nom de l’incident, sa gravité et ses catégories, entre autres. Vous pouvez également directement passer aux incidents afin de pouvoir lancer votre enquête immédiatement. Pour plus d’informations sur l’examen des incidents, voir [Examiner les incidents dans Microsoft 365 Defender.](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents)
+La notification par courrier électronique contient des détails importants sur l’incident, tels que le nom de l’incident, sa gravité et ses catégories, entre autres. Vous pouvez également directement passer aux incidents afin de pouvoir lancer votre enquête immédiatement. Pour plus d’informations sur l’examen des incidents, voir [Examiner les incidents dans Microsoft 365 Defender.](./investigate-incidents.md)
 
 >[!NOTE]
 >Vous avez besoin des autorisations « Gérer les paramètres de sécurité » pour configurer les paramètres de notification par courrier électronique. Si vous avez choisi d’utiliser la gestion des autorisations de base, les utilisateurs ayant des rôles Administrateur de sécurité ou Administrateur général peuvent configurer des notifications par courrier électronique pour vous. <br> <br>
@@ -53,7 +53,7 @@ De même, si votre organisation utilise le contrôle d’accès basé sur un rô
 
 Pour configurer votre première notification par courrier électronique pour les incidents, créez une règle et personnalisez les paramètres de notification par courrier électronique.
 
-1. Dans le volet de navigation, sélectionnez **Notifications** par  >  **courrier électronique d’incident des paramètres.**
+1. Dans le volet de navigation, sélectionnez **Notifications par**  >  **courrier électronique d’incident des paramètres.**
 2. Sélectionnez **Ajouter un élément.**
 3. Donnez un nom à la règle dans **Nom** et fournissez une **description.**
 
@@ -65,15 +65,14 @@ Pour configurer votre première notification par courrier électronique pour les
     - **Inclure le nom de l’organisation** : indique si le nom du client apparaît ou non dans la notification par courrier électronique.
     - **Inclure un lien portail propre au client** : ajoute un lien avec l’ID de client pour autoriser l’accès à un client spécifique.
     
-    ![Fenêtre des paramètres Notif pour les notifs de courrier électronique d’incident](../../media/incidentemailnotif2.png)
+    ![Fenêtre des paramètres Notif pour les notifs de messages électroniques d’incident](../../media/incidentemailnotif2.png)
 5. Sélectionnez **Suivant** pour aller à la section **Destinataires.** Ici, vous pouvez spécifier les adresses de messagerie qui recevront les notifications d’incident par courrier électronique. Sélectionnez **Ajouter un destinataire après** avoir tapé chaque adresse de messagerie.
 
     ![Fenêtre Ajouter des destinataires pour les notifs de courrier d’incident](../../media/incidentemailnotif3.png) 
 
-6. Enfin, **sélectionnez Suivant** pour passer **à la** règle de révision afin de voir tous les paramètres associés à votre nouvelle règle. Les destinataires commenceront à recevoir des notifications d’incident par courrier électronique en fonction des paramètres.
+6. Enfin, **sélectionnez Suivant** pour passer **à la** règle de révision afin que vous pouvez voir tous les paramètres associés à votre nouvelle règle. Les destinataires commenceront à recevoir des notifications d’incident par courrier électronique en fonction des paramètres.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue d’ensemble des incidents dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)
-- [Hiérarchiser les incidents dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue)
-- [Examiner les incidents dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents)
-
+- [Vue d’ensemble des incidents dans Microsoft 365 Defender](./incidents-overview.md)
+- [Hiérarchiser les incidents dans Microsoft 365 Defender](./incident-queue.md)
+- [Examiner les incidents dans Microsoft 365 Defender](./investigate-incidents.md)

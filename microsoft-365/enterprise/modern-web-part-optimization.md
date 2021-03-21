@@ -21,19 +21,19 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment utiliser les diagnostics de page pour optimiser les performances des composants Web Parts dans les pages de sites modernes SharePoint Online.
-ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287148"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929059"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des composants WebPart dans les pages de sites modernes SharePoint Online
 
 Les pages de sites modernes SharePoint Online contiennent des composants WebPart qui peuvent augmenter le temps de chargement général de la page. Cet article vous permet de comprendre comment déterminer la façon dont les composants WebPart présents dans vos pages affectent la latence perçue par l’utilisateur et comment résoudre les problèmes courants.
 
 >[!NOTE]
->Pour plus d’informations sur les performances dans les portails modernes SharePoint Online, consultez [Performances offertes par l’expérience moderne de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>Pour plus d’informations sur les performances dans les portails modernes SharePoint Online, consultez [Performances offertes par l’expérience moderne de SharePoint](/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Utiliser l’outil Diagnostic de page pour SharePoint pour analyser les composants WebPart
 
@@ -59,7 +59,7 @@ Les informations disponibles dans les résultats incluent les éléments suivant
 - **L’élément «** Made by » indique si le partie Web Est personnalisé ou Microsoft OOTB.
 - **Le nom et l’ID** indiquent les informations d’identification qui peuvent vous aider à trouver le partie Web Sur la page.
 - **Total** indique la durée totale du chargement, de l’initialisation et du rendu du module par le partie Web. Il s’agit du temps relatif total pris par le partie Web Pour restituer sur la page, du début à la fin.
-- **La charge du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
+- **Le chargement du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
 - **Chargement différé indique** le temps de chargement différé des composants Web Parts qui ne sont pas visibles dans la section principale de la page. Dans certaines conditions, il y a trop de composants Web Parts à restituer, et ils sont mis en file d’attente pour être restituer afin de réduire le temps de chargement de la page.
 - **Init indique** le temps qu’a pris le partie Web Pour initialiser les données.
     Il s’agit d’un appel asynchrone et le temps d’init est le calcul du temps pour la fonction onInit lorsque la promesse renvoyée est résolue.
@@ -80,7 +80,7 @@ Il existe trois catégories de causes possibles pour expliquer les faibles perfo
   - Déplacez les scénarios moins fréquents et le code de mode d’édition (comme le volet de propriétés) pour séparer les blocs à l’aide de l’instruction _import()_.
   - Passez en revue les dépendances du fichier _package.json_ pour supprimer complètement tout code mort. Déplacez les dépendances test/build uniquement vers devDependencies.
   - L’utilisation du réseau de distribution de contenu Office 365 est requise pour un téléchargement optimal des ressources statiques. Les origines du réseau de distribution de contenu public sont préférables pour les fichiers _js/css_. Pour plus d’informations sur l’utilisation du réseau de distribution de contenu Office 365, consultez [Utilisation du réseau de distribution de contenu (CDN) Office 365 avec SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Réutilisez les infrastructures telles que _React_ et _Fabric imports_ incluses dans SharePoint Framework (SPFx). Pour obtenir plus d’informations, consultez l’article [Vue d’ensemble de SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Réutilisez les infrastructures telles que _React_ et _Fabric imports_ incluses dans SharePoint Framework (SPFx). Pour obtenir plus d’informations, consultez l’article [Vue d’ensemble de SharePoint Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Assurez-vous que vous utilisez la version la plus récente de SharePoint Framework et effectuez une mise à niveau vers de nouvelles versions dès qu’elles sont disponibles.
 - Extraction/mise en cache de données
   - Si le partie Web Part s’appuie sur des appels serveur supplémentaires pour extraire des données à afficher, assurez-vous que ces API serveur sont rapides et/ou implémentent la mise en cache côté client (par exemple, en utilisant _localStorage_ ou _IndexedDB_ pour des ensembles plus volumineux).
@@ -107,7 +107,7 @@ Avant d’apporter des révisions de page pour résoudre les problèmes de perfo
 
 [Optimisation des performances Office 365](tune-microsoft-365-performance.md)
 
-[Performances offertes par l’expérience moderne de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Performances offertes par l’expérience moderne de SharePoint](/sharepoint/modern-experience-performance)
 
 [Réseaux de distribution de contenu](content-delivery-networks.md)
 

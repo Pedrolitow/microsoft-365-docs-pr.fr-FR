@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des autoriser et des blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20e460f4e93f7b87faaead8b87ba561224e38938
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 2f97308bfc3600e4e85f5ac92d951b12d9a50f24
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515207"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928531"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -46,7 +46,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page Liste **d’accueil/de** blocage du client, utilisez <https://protection.office.com/tenantAllowBlockList> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **Autoriser/Bloquer la liste des** locataires, utilisez <https://protection.office.com/tenantAllowBlockList> .
 
 - Vous spécifiez des fichiers à l’aide de la valeur de hachage SHA256 du fichier. Pour rechercher la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes :
 
@@ -66,20 +66,20 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 - Une entrée doit être active dans les 30 minutes.
 
-- Par défaut, les entrées de la liste d’inscriptions au client sont expirées au bout de 30 jours. Vous pouvez spécifier une date ou les définir pour qu’elles n’expirent jamais.
+- Par défaut, les entrées de la liste d’inscriptions au client sont expirées au bout de 30 jours. Vous pouvez spécifier une date ou la définir pour qu’elles n’expirent jamais.
 
-- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cet article :
   - Pour ajouter et supprimer des valeurs de la liste d’attente des locataires, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité. 
-  - Pour un accès en lecture seule à la liste d’accès  au  client autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
+  - Pour un accès en lecture seule à la liste des locataires  autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
 
-  Pour plus d'informations, voir [Permissions en échange en ligne](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   > 
   > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
-  > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
+  > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Utiliser le Centre de sécurité & conformité pour créer des entrées d’URL dans la liste d’adresses client autoriser/bloquer
 
@@ -142,7 +142,7 @@ Cliquez sur les en-tête de colonne suivants pour trier par ordre croissant ou d
 
 Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur **Effacer l’icône** ![ effacer la ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) recherche.
 
-Cliquez sur **Filtrer.** Dans le **flyout** Filter qui s’affiche, configurez l’un des paramètres suivants :
+Cliquez sur **Filtrer.** Dans le **volant de** filtre qui s’affiche, configurez l’un des paramètres suivants :
 
 - **N’expirez** jamais : sélectionnez Off: ![ Toggle off ](../../media/scc-toggle-off.png) or on: ![ Toggle on ](../../media/scc-toggle-on.png) .
 
@@ -152,7 +152,7 @@ Cliquez sur **Filtrer.** Dans le **flyout** Filter qui s’affiche, configurez l
 
 Lorsque vous avez terminé, cliquez sur **Appliquer.**
 
-Pour effacer les filtres existants,  cliquez sur **Filtrer** et, dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
+Pour effacer les filtres existants,  cliquez sur **Filtrer** et dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
 
 ## <a name="use-the-security--compliance-center-to-modify-block-entries-in-the-tenant-allowblock-list"></a>Utiliser le Centre de sécurité & conformité pour modifier les entrées de blocage dans la liste d’attente des locataires
 
@@ -172,7 +172,7 @@ Vous ne pouvez pas modifier l’URL ou les valeurs de fichier bloquées existant
 
        ou
 
-     - Déplacez le basculement vers la droite pour configurer l’entrée pour qu’elle n’expire jamais : ![Activer](../../media/scc-toggle-on.png).
+     - Déplacez le basculement vers la droite pour configurer l’entrée de manière à ce qu’elle n’expire jamais : ![Activer](../../media/scc-toggle-on.png).
 
    - **Remarque facultative**: entrez un texte descriptif pour l’entrée.
 
@@ -204,13 +204,13 @@ Cet exemple ajoute une entrée d’URL de bloc pour contoso.com et tous les sous
 New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 ```
 
-Cet exemple ajoute une entrée de fichier de blocage pour les fichiers spécifiés qui n’expire jamais.
+Cet exemple ajoute une entrée de bloc de fichiers pour les fichiers spécifiés qui n’expire jamais.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
 ### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher les entrées dans la liste d’attente des locataires
 
@@ -232,7 +232,7 @@ Cet exemple renvoie des informations pour la valeur de hachage de fichier spéci
 Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems)
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
 ### <a name="use-powershell-to-modify-block-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour modifier les entrées de bloc dans la liste d’accès au client
 
@@ -250,7 +250,7 @@ Cet exemple modifie la date d’expiration de l’entrée de bloc spécifiée.
 Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate (Get-Date "5/30/2020 9:30 AM").ToUniversalTime()
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
 ### <a name="use-powershell-to-remove-block-entries-from-the-tenant-allowblock-list"></a>Utiliser PowerShell pour supprimer des entrées de blocage de la liste d’accès au client
 
@@ -266,7 +266,7 @@ Cet exemple supprime l’entrée d’URL de bloc spécifiée de la liste d’adr
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
 ## <a name="url-syntax-for-the-tenant-allowblock-list"></a>Syntaxe d’URL pour la liste d’adresses client autoriser/bloquer
 
@@ -478,7 +478,7 @@ Les entrées suivantes ne sont pas valides :
   - \*.com
   - \*.pdf
 
-- **Caractère générique sur du texte ou sans espacement**:
+- **Caractère générique sur du texte ou sans espacement :**
 
   - \*contoso.com
   - contoso.com\*

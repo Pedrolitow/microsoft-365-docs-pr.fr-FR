@@ -15,12 +15,12 @@ ms.custom:
 description: Dans cet article, vous allez apprendre à utiliser PowerShell pour appliquer des paramètres de configuration à vos locataires dans Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4823ed09cd8a9d72aef21df3d51213cb4512b4f9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 77a1dce25901845628f8148c44a0d0783088255e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288536"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928507"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Exemple de script pour l’application de paramètres EOP à plusieurs clients
 
@@ -33,7 +33,7 @@ L’exemple de script suivant permet aux administrateurs Microsoft Exchange Onli
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Pour exécuter un script ou une cmdlet sur plusieurs locataires
 
-1. Si ce n’est pas déjà fait, [installez le module Exchange Online V2.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
+1. Si ce n’est pas déjà fait, [installez le module Exchange Online V2.](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
 
 2. À l’aide d’une application de feuille de calcul (par exemple, Excel), créez un fichier .csv avec les détails suivants :
 
@@ -69,7 +69,7 @@ L’exemple de script suivant permet aux administrateurs Microsoft Exchange Onli
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> Vous devrez peut-être modifier `Connect-IPPSSession` la ligne dans le script pour qu’elle corresponde à votre environnement. Par exemple, Office 365 Germany requiert une valeur _ConnectionUri_ différente de la valeur actuelle dans un script. Pour plus d’informations, voir Se connecter [à Exchange Online PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
+> Vous devrez peut-être modifier `Connect-IPPSSession` la ligne dans le script pour qu’elle corresponde à votre environnement. Par exemple, Office 365 Germany requiert une valeur _ConnectionUri_ différente de la valeur actuelle dans un script. Pour plus d’informations, voir Se connecter [à Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 10d4a0af9c3ae766e95b34187d2ba3c9958db28f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 258a210fe875d0399d1a97ba77cdf340dcc1670e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929479"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928819"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>Générer une alerte de test dans votre laboratoire d’évaluation Microsoft 365 Defender  
 
@@ -43,5 +43,4 @@ Maintenant que vous avez terminé la configuration et la configuration de votre 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Parcourez la [solution Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) et le centre d’architecture pour comprendre comment concevoir la solution et l’architecture adaptées à votre organisation.
-
+Parcourez la [solution Microsoft 365](../../solutions/index.yml) et le centre d’architecture pour comprendre comment concevoir la solution et l’architecture adaptées à votre organisation.

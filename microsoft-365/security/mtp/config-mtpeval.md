@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 78b37d9d435eabce47d360efd630c2e55cadacd1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6b6ff23ef888c167385ad127d3eb0addb66aebc2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932237"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929189"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurer les piliers de Microsoft 365 Defender pour votre laboratoire d’essai ou votre environnement pilote
 
@@ -55,8 +55,8 @@ Microsoft 365 Defender se compose de quatre piliers. Bien qu’un pilier puisse 
 
 Cette section vous guide pour configurer :
 -   Microsoft Defender pour Office 365
--   Microsoft Defender pour Identity 
--   Microsoft Cloud App Security
+-   Microsoft Defender pour l’identité 
+-   Microsoft Cloud App Security
 -   Microsoft Defender pour point de terminaison
 
 
@@ -88,7 +88,7 @@ Il existe un module PowerShell appelé *OrCA (Advanced Threat Protection Recomme
  
 5. Sélectionnez **Pièces jointes sécurisées,** puis sélectionnez l’option Activer la sécurité contre les autres pour **SharePoint, OneDrive et Microsoft Teams.**
 
-   ![Image of_Office page du Centre de sécurité & conformité 365 dans laquelle vous pouvez activer atp pour SharePoint, OneDrive et Microsoft Teams](../../media/mtp-eval-36.png)
+   ![Image of_Office page du Centre de sécurité & conformité 365 dans laquelle vous pouvez activer la protection attn contre les problèmes de sécurité pour SharePoint, OneDrive et Microsoft Teams](../../media/mtp-eval-36.png)
 
 6. Cliquez sur l’icône + pour créer une stratégie de pièces jointes sécurisées, puis appliquez-la en tant que domaine de destinataire à vos domaines. Cliquez sur **Enregistrer**.
 
@@ -96,7 +96,7 @@ Il existe un module PowerShell appelé *OrCA (Advanced Threat Protection Recomme
  
 7. Ensuite, sélectionnez la **stratégie de liens** sécurisés, puis cliquez sur l’icône de crayon pour modifier la stratégie par défaut.
 
-8. Assurez-vous que l’option Ne pas **me** suivre lorsque les utilisateurs cliquent sur l’option Liens sécurisés n’est pas sélectionnée, tandis que les autres options sont sélectionnées. Pour plus [d’informations,](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) voir paramètres de liens sécurisés. Cliquez sur **Enregistrer**. 
+8. Assurez-vous que l’option Ne pas **me** suivre lorsque les utilisateurs cliquent sur l’option Liens sécurisés n’est pas sélectionnée, tandis que les autres options sont sélectionnées. Pour plus [d’informations,](../office-365-security/recommended-settings-for-eop-and-office365-atp.md) voir paramètres de liens sécurisés. Cliquez sur **Enregistrer**. 
 
    ![Image of_Office page du Centre de sécurité & conformité 365 qui indique que l’option Ne pas suivre quand les utilisateurs cliquent sur la sécurité n’est pas sélectionnée](../../media/mtp-eval-38.png)
 
@@ -108,9 +108,9 @@ Il existe un module PowerShell appelé *OrCA (Advanced Threat Protection Recomme
   
 11. Accédez à la recherche dans le journal d’audit du Centre de sécurité et & conformité [Office 365](https://protection.office.com/homepage)  >    >   et activer l’audit.
 
-    ![Image of_Office page du Centre de sécurité & conformité 365 dans laquelle vous pouvez activer la recherche dans le journal d’audit](../../media/mtp-eval-40.png)
+    ![Image of_Office 365 Security & Compliance Center où vous pouvez activer la recherche dans le journal d’audit](../../media/mtp-eval-40.png)
 
-12. Intégrez Microsoft Defender pour Office 365 à Microsoft Defender pour point de terminaison. Accédez à l’Explorateur de gestion des menaces du Centre de sécurité & Conformité [Office 365](https://protection.office.com/homepage)et sélectionnez Microsoft Defender pour les paramètres de point de terminaison dans le coin supérieur droit de  >    >    l’écran. Dans la boîte de dialogue de connexion Defender pour point de terminaison, activer la connexion **à Microsoft Defender pour le point de terminaison.**
+12. Intégrez Microsoft Defender pour Office 365 à Microsoft Defender pour le point de terminaison. Accédez à l’Explorateur de gestion des menaces du Centre de sécurité & Conformité [Office 365](https://protection.office.com/homepage)et sélectionnez Microsoft Defender pour les paramètres de point de terminaison dans le coin supérieur droit de  >    >    l’écran. Dans la boîte de dialogue de connexion Defender pour point de terminaison, activer la connexion **à Microsoft Defender pour le point de terminaison.**
 
     ![Image of_Office page du Centre de sécurité & conformité 365 dans laquelle vous pouvez activer la connexion Microsoft Defender pour le point de terminaison](../../media/mtp-eval-41.png)
 
@@ -137,7 +137,7 @@ Il existe un module PowerShell appelé *OrCA (Advanced Threat Protection Recomme
 
 5. Ensuite, **sélectionnez Télécharger le programme d’installation du** capteur et transférer le fichier vers votre contrôleur de domaine.
 
-   ![Image of_Microsoft page Defender pour l’identité dans laquelle vous pouvez sélectionner Télécharger le programme d’installation du capteur](../../media/mtp-eval-46.png)
+   ![Image of_Microsoft page Defender for Identity dans laquelle vous pouvez sélectionner Télécharger le programme d’installation du capteur](../../media/mtp-eval-46.png)
 
 6. Exécutez le programme d’installation de Microsoft Defender for Identity Sensor et commencez à suivre l’Assistant.
 
@@ -157,22 +157,22 @@ Il existe un module PowerShell appelé *OrCA (Advanced Threat Protection Recomme
 
 10. Félicitations, vous avez correctement configuré Microsoft Defender pour l’identité sur votre contrôleur de domaine.
 
-    ![Image of_Microsoft l’installation de l’Assistant Capteur d’identité dans laquelle vous devez cliquer sur le bouton Terminer](../../media/mtp-eval-51.png)
+    ![Image of_Microsoft l’installation de l’Assistant Capteur d’identité, où vous devez cliquer sur le bouton Terminer](../../media/mtp-eval-51.png)
  
 11. Sous la section [Paramètres de Microsoft Defender pour](https://go.microsoft.com/fwlink/?linkid=2040449) l’identité, sélectionnez **Microsoft Defender pour le point de terminaison **, puis activer le basculement. Cliquez sur **Enregistrer**. 
 
     ![Image of_the page des paramètres de Microsoft Defender pour l’identité dans laquelle vous devez activer le basculement De Microsoft Defender pour le point de terminaison](../../media/mtp-eval-52.png)
 
->[!NOTE]
->Windows Defender ATP a été renommé Microsoft Defender pour Endpoint. Les modifications apportées au changement de nom sur tous nos portails sont déployées pour des raisons de cohérence.
+> [!NOTE]
+> Windows Defender ATP a été renommé Microsoft Defender pour Endpoint. Les modifications apportées au changement de nom sur tous nos portails sont déployées pour des raisons de cohérence.
 
 
 ## <a name="configure-microsoft-cloud-app-security"></a>Configurer Microsoft Cloud App Security
 
->[!NOTE]
->Ignorez cette étape si vous avez déjà activé Microsoft Cloud App Security. 
+> [!NOTE]
+> Ignorez cette étape si vous avez déjà activé Microsoft Cloud App Security. 
 
-1. Accédez au [Centre de sécurité Microsoft 365 plus](https://security.microsoft.com/info)de  >  **ressources** Microsoft Cloud  >  **App Security**.
+1. Accédez au [Centre de sécurité Microsoft 365](https://security.microsoft.com/info)plus de  >  **ressources** Microsoft  >  **Cloud App Security**.
 
    ![Image of_Microsoft page centre de sécurité 365 dans laquelle vous pouvez voir la carte Microsoft Cloud App et qui doit cliquer sur le bouton d’ouverture](../../media/mtp-eval-53.png)
 
@@ -210,7 +210,7 @@ Il existe un module PowerShell appelé *OrCA (Advanced Threat Protection Recomme
  
 2. Suivez l’Assistant Microsoft Defender pour point de terminaison. Cliquez sur **Suivant**. 
 
-   ![Image of_the page d’accueil du Centre de sécurité Microsoft Defender](../../media/mtp-eval-59.png)
+   ![Image de of_the page d’accueil du Centre de sécurité Microsoft Defender](../../media/mtp-eval-59.png)
 
 3. Choisissez en fonction de votre emplacement de stockage de données préféré, de votre stratégie de rétention des données, de la taille de l’organisation et de votre choix pour les fonctionnalités de prévisualisation.
 
@@ -241,7 +241,7 @@ Il existe un module PowerShell appelé *OrCA (Advanced Threat Protection Recomme
 
 9. Copiez-collez le test de détection à partir de l’Assistant Microsoft Defender for Endpoint.
 
-   ![Image of_the une étape de test de détection dans laquelle vous devez cliquer sur Copier pour copier le script de test de détection à coller dans l’invite de commandes](../../media/mtp-eval-65.png)
+   ![Image of_the exécuter une étape de test de détection dans laquelle vous devez cliquer sur Copier pour copier le script de test de détection à coller dans l’invite de commandes](../../media/mtp-eval-65.png)
 
 10. Copiez le script PowerShell dans une invite de commandes avec élévation de niveaux et exécutez-le. 
 
@@ -274,7 +274,7 @@ Il existe un module PowerShell appelé *OrCA (Advanced Threat Protection Recomme
 ## <a name="start-the-microsoft-365-defender-service"></a>Démarrer le service Microsoft 365 Defender
 
 >[!NOTE]
->À compter du 1er juin 2020, Microsoft active automatiquement les fonctionnalités de Microsoft 365 Defender pour tous les clients éligibles. Consultez cet article de la communauté technique Microsoft sur [l’éligibilité aux licences](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) pour plus d’informations. 
+>À compter du 1er juin 2020, Microsoft active automatiquement les fonctionnalités de Microsoft 365 Defender pour tous les clients éligibles. Consultez cet article de la communauté technique Microsoft sur [l’éligibilité aux](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) licences pour plus d’informations. 
 
 
 Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Accédez **à Paramètres,** puis **sélectionnez Microsoft 365 Defender.**
@@ -291,5 +291,5 @@ Félicitations ! Vous viennent de créer votre laboratoire d’essai ou votre e
 Ensuite, vous pouvez simuler une attaque et voir comment les fonctionnalités entre produits détectent, créent des alertes et répondent automatiquement à une attaque sans fichier sur un point de terminaison.
 
 ## <a name="next-step"></a>Étape suivante
-|[Phase de simulation d’attaque](mtp-pilot-simulate.md) | Exécutez la simulation d’attaque pour votre environnement pilote Microsoft 365 Defender.
-|:-------|:-----|
+
+- [Générez une alerte de test](generate-test-alert.md) : exécutez une simulation d’attaque dans votre laboratoire d’essai microsoft 365 Defender.

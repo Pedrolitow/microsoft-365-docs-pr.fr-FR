@@ -9,15 +9,15 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: Les administrateurs peuvent en savoir plus sur le rapport des messages transmis automatiquement dans le tableau de bord flux de messagerie du Centre de sécurité & conformité.
+description: Les administrateurs peuvent en savoir plus sur le rapport des messages transmis automatiquement dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8f5e7088a88307576a054a1f6833101789d68d01
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 75cf060d9a597bb991fc8af2c4c70f9ecc592ad7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290632"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929359"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Informations sur les messages transmis automatiquement dans le Centre de sécurité & conformité
 
@@ -32,7 +32,7 @@ Les informations sur les **messages** transmis automatiquement dans le tableau d
 
 ![Widget de messages transmis automatiquement dans le Centre de sécurité & conformité](../../media/mfi-auto-forwarded-messages.png)
 
-## <a name="auto-forwarded-messages-details"></a>Détails des messages automatiquement transmis
+## <a name="auto-forwarded-messages-details"></a>Détails des messages transmis automatiquement
 
 Lorsque vous cliquez sur le nombre de messages dans le widget, un volet volant s’affiche, qui affiche plus d’informations sur les messages transmis automatiquement :
 
@@ -40,7 +40,7 @@ Lorsque vous cliquez sur le nombre de messages dans le widget, un volet volant s
 
   - **Par règles de flux de messagerie**
   - **Par règles de boîte de réception**
-  - **Par le forwarding SMTP**: cette méthode indique le forwarding automatique que les administrateurs peuvent configurer sur une boîte aux lettres comme décrit dans Configurer le forwarding de courrier pour [une boîte aux lettres.](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
+  - **Par le forwarding SMTP**: cette méthode indique le forwarding automatique que les administrateurs peuvent configurer sur une boîte aux lettres comme décrit dans Configurer le forwarding de courrier pour [une boîte aux lettres.](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
   - Lien vers le rapport [de report pour](view-mail-flow-reports.md#forwarding-report) plus d’informations.
 
 - **Messages transmis automatiquement par les domaines et les utilisateurs**:
@@ -48,12 +48,12 @@ Lorsque vous cliquez sur le nombre de messages dans le widget, un volet volant s
   - **5 principaux domaines vers**
   - **Nouveaux domaines (dernière semaine)**
   - **5 principaux utilisateurs de forwarding**
-  - **Nouveaux utilisateurs (dernière semaine)**
-  - Lien vers le rapport [de modifications de forwarding](mfi-new-users-forwarding-email.md#forwarding-modifications-report) pour plus d’informations.
+  - **Nouveaux utilisateurs (semaine dernière)**
+  - Lien vers le rapport [de modifications de report pour](mfi-new-users-forwarding-email.md#forwarding-modifications-report) plus d’informations.
 
 ![Volant de détails pour le rapport des messages transmis automatiquement dans le Centre de sécurité & conformité](../../media/mfi-auto-forwarded-messages-details.png)
 
-## <a name="insights"></a>Informations
+## <a name="insights"></a>Connaissances
 
 Deux informations sont générées en fonction des données du rapport :
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations de base qui se produisent lorsque Microsoft déplace les services et les données associées de votre client vers une nouvelle géo de centres de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca3159aeb951fb0cb3bf3aba953979dabc6ba024
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: 14563a695e5c092f9bddfbdfdcb758f90cea32c0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349255"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929419"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -30,7 +30,7 @@ Les déplacements de données sont des opérations principales n'ayant que peu d
 > [!NOTE]
 > Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment. 
   
-Regardez le Centre de messages Microsoft 365 pour confirmer que les déplacements pour chaque service de conversation Exchange Online, SharePoint Online et Teams sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géographique de centre de données.   
+Regardez le Centre de messages Microsoft 365 pour confirmer que les déplacements pour chaque service de conversation Exchange Online, SharePoint Online et Teams sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géo de centres de données.   
 
 |**Clients dont le pays d’inscription est**|**Tous les déplacements terminés d'ici le**|
 |:-----|:-----|
@@ -71,7 +71,7 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
     
 - Office dans un navigateur
     
-- Applications Microsoft 365 for entreprise
+- Applications Microsoft 365 pour les grandes entreprises
     
 - Visio Pro pour Microsoft 365
     
@@ -103,18 +103,18 @@ Les fonctionnalités de recherche suivantes sont concernées :
     
 - Protection contre la perte de données (DLP) : Les politiques ne sont pas appliquées sur les éléments qui changent avant que l’analyse n’ait récupéré les modifications.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 Outre Exchange Online, SharePoint Online et OneDrive Entreprise, Microsoft migre les données du service de conversation Teams vers le centre de données local.
 
 - Messages de conversation Teams, y compris les messages privés et les messages de canal.
 - Images Teams utilisées dans les conversations.
 
-Les fichiers Teams sont stockés dans SharePoint Online et les fichiers de conversation Teams sont stockés dans OneDrive Entreprise. La messagerie vocale, le calendrier, l’historique de conversation et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive Entreprise sont déjà utilisés par le client dans la zone géographique du centre de données local et font également partie du programme de migration Microsoft 365 pour les pays clients éligibles.
+Les fichiers Teams sont stockés dans SharePoint Online et les fichiers de conversation Teams sont stockés dans OneDrive Entreprise. La messagerie vocale, le calendrier, l’historique des conversation et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive Entreprise sont déjà utilisés par le client dans la région du centre de données local et font également partie du programme de migration Microsoft 365 pour les pays clients éligibles.
 
 ## <a name="skype-for-business"></a>Skype Entreprise
 
-Les déplacements Skype Entreprise ne sont plus disponibles.  [Skype Entreprise Online sera retiré](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cette période, le service n’est plus accessible. 
+Les déplacements Skype Entreprise ne sont plus disponibles.  [Skype Entreprise Online sera retiré](/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cette période, le service n’est plus accessible. 
   
 ## <a name="related-topics"></a>Rubriques connexes 
  
@@ -122,6 +122,6 @@ Les déplacements Skype Entreprise ne sont plus disponibles.  [Skype Entreprise 
     
 [FAQ général relatif au déplacement de données](data-move-faq.md)
   
-[Nouvelles régions de centres de données pour Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Nouvelles régions de centres de données pour Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Services Azure par région](https://azure.microsoft.com/regions/)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7fcbecddd5e8f83e9c78d6db90939fbfc2f2df07
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de3fba2692f5b6df7c7192c328a3911287cd7ce2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929281"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928723"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Vue d’ensemble des incidents dans Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "49929281"
 **S’applique à :**
 - Microsoft 365 Defender
 
-> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou exécuter votre projet pilote en [production.](https://aka.ms/m365d-pilotplaybook)
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) ou exécuter votre projet pilote en [production.](./mtp-pilot.md?ocid=cx-evalpilot)
 >
 
 
