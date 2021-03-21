@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 782c4fdda7e515d921063937f59b199510beaf08
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 41716fecd0c70c99fd61b090421cb3dc0277cb48
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838611"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919550"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Lorsque vous avez [publié](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) des étiquettes de niveau de confidentialité du Centre de conformité ou du Centre d’étiquettes équivalent Microsoft 365, elles commencent à apparaître dans les applications Office pour que les utilisateurs classifient et protègent les données dès qu’elles sont créées ou modifiées.
 
@@ -35,20 +35,20 @@ Les informations de cet article vous aideront à gérer les étiquettes de nivea
 
 Pour utiliser des étiquettes de niveau de confidentialité intégrées aux applications de bureau Office pour Windows et Mac, vous devez utiliser une édition d’abonnement d’Office. Ce client d’étiquetage ne prend pas en charge les éditions autonomes d’Office, telles qu’Office 2016 ou Office 2019.
 
-Pour utiliser des étiquettes de niveau de confidentialité avec ces éditions autonomes d’Office sur les ordinateurs Windows, installez le [client étiquetage Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2).
+Pour utiliser des étiquettes de niveau de confidentialité avec ces éditions autonomes d’Office sur les ordinateurs Windows, installez le [client étiquetage Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2).
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Prise en charge des fonctionnalités d’étiquette de confidentialité dans les applications
 
 Pour chaque fonctionnalité, les tableaux suivants listent la version minimale d’Office dont vous avez besoin pour prendre en charge les étiquettes de niveau de confidentialité à l’aide d’étiquettes intégrées. Ou, si la fonctionnalité d’étiquette est en prévisualisation ou en cours de révision pour une prochaine version. Utilisez la [feuille de route de Microsoft 365](https://aka.ms/MIPC/Roadmap) pour obtenir des détails sur les futures versions.
 
-Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, consultez [Présentation des canaux de mise à jour de Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). Les nouvelles fonctionnalités en préversion privée ne sont pas incluses dans le tableau, mais il est possible que vous soyez en mesure de participer à ces préversions en nomant votre organisation pour le [programme de préversion privé Microsoft Information Protection](https://aka.ms/mip-preview).
+Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, consultez [Présentation des canaux de mise à jour de Microsoft 365 Apps](/DeployOffice/overview-update-channels). Les nouvelles fonctionnalités en préversion privée ne sont pas incluses dans le tableau, mais il est possible que vous soyez en mesure de participer à ces préversions en nomant votre organisation pour le [programme de préversion privé Microsoft Information Protection](https://aka.ms/mip-preview).
 
 > [!NOTE]
-> Les noms des canaux de mise à jour des applications Office ont récemment changé. Par exemple, le Canal mensuel est désormais Canal actuel et Office Insider le Canal bêta. Si vous souhaitez en savoir plus, consultez [Modifications apportées aux canaux de mise à jour des applications Microsoft 365](https://docs.microsoft.com/deployoffice/update-channels-changes).
+> Les noms des canaux de mise à jour des applications Office ont récemment changé. Par exemple, le Canal mensuel est désormais Canal actuel et Office Insider le Canal bêta. Si vous souhaitez en savoir plus, consultez [Modifications apportées aux canaux de mise à jour des applications Microsoft 365](/deployoffice/update-channels-changes).
 
 Office pour iOS et Office pour Android : les étiquettes de niveau de confidentialité sont intégrées dans l’[application Office](https://www.microsoft.com/fr-FR/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
-Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le client de l’étiquetage unifié d’Azure Information Protection, qui s’exécute uniquement sur les ordinateurs Windows. Pour plus d’informations, consultez [Comparer les clients d’étiquetage pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
+Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le client de l’étiquetage unifié d’Azure Information Protection, qui s’exécute uniquement sur les ordinateurs Windows. Pour plus d’informations, consultez [Comparer les clients d’étiquetage pour les ordinateurs Windows](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Fonctionnalités d’étiquettes de confidentialité dans Word, Excel et PowerPoint
 
@@ -114,33 +114,48 @@ Si ces deux conditions sont remplies mais que vous devez désactiver le client d
 
 2. Définissez **Utiliser la fonctionnalité de niveau de confidentialité d’Office pour appliquer et afficher les étiquettes de niveau de confidentialité** à **0**. 
  
-Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide du [service de stratégies cloud Office](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service). Le paramètre prend effet lorsque les applications Office redémarrent.
+Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide du [service de stratégies cloud Office](/DeployOffice/overview-office-cloud-policy-service). Le paramètre prend effet lorsque les applications Office redémarrent.
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Client d’étiquetage intégré à Office et client Azure Information Protection
 
-Si les utilisateurs ont installé un des clients Azure Information Protection ([client d’étiquetage unifié](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) ou [client classique](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), par défaut, le client d’étiquetage intégré est désactivé dans leurs applications Office. 
+Si les utilisateurs ont installé un des clients Azure Information Protection ([client d’étiquetage unifié](/azure/information-protection/rms-client/aip-clientv2) ou [client classique](/azure/information-protection/rms-client/aip-client)), par défaut, le client d’étiquetage intégré est désactivé dans leurs applications Office. 
 
-Pour utiliser l’étiquetage intégrée plutôt que le client Azure Information Protection pour les applications Office, utilisez les instructions de la section précédente, mais définissez le paramètre de stratégie de groupe **Utilisez la fonctionnalité de niveau de confidentialité dans Office pour appliquer et afficher les étiquettes de confidentialité** à **1**. 
+Pour utiliser l’étiquetage intégrée plutôt que le client Azure Information Protection pour les applications Office, nous vous recommandons d’utiliser le paramètre de stratégie de groupe **Liste des compléments gérés** telle que documentée dans [Aucun complément chargé en raison des paramètres de stratégie de groupe pour les programmes Office 2013 et Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
-Vous pouvez également désactiver ou supprimer le complément Office, **Azure Information Protection**. Cette méthode est appropriée pour un ordinateur unique et des tests ad-hoc. Pour obtenir de instructions, consultez [Afficher, gérer et installer des compléments dans les programmes Office (pour les utilisateurs)](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
+Pour Microsoft Word 2016, Excel 2016, PowerPoint 2016 et Outlook 2016, spécifiez les identificateur programmatique suivants pour le client Azure Information Protection et définissez l’option **0 : le complément est toujours désactivé (bloqué)**
 
-Lorsque vous désactivez ou supprimez ce complément Office, le client Azure Information Protection reste installé, de sorte que vous pouvez continuer à étiqueter des fichiers en dehors de vos applications Office. Par exemple, à l’aide de l’Explorateur de fichiers ou de PowerShell.
+|Application  |ProgID  |
+|---------|---------|
+|Word     |     `MSIP.WordAddin`    |
+|Excel     |  `MSIP.ExcelAddin`       |
+|PowerPoint     |   `MSIP.PowerPointAddin`      |
+|Outlook | `MSIP.OutlookAddin` |
+| | | 
 
-Pour plus d’informations sur les fonctionnalités pris en charge par les clients Azure Information Protection et le client d’étiquetage intégré à Office, consultez [Choisir votre solution d’étiquetage Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) dans la documentation sur la protection des informations Azure.
+Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide du [service de stratégies cloud Office](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
+
+> [!NOTE]
+> Si vous utilisez le paramètre de stratégie de groupe **Utiliser la fonctionnalité de confidentialité d’Office pour appliquer et afficher les étiquettes de confidentialité** et définissez ce paramètre sur **1**, dans certains cas, le client Azure Information Protection risque de se charger encore dans les applications Office. Le blocage du chargement du complément dans chaque application empêche que cela ne se produise.
+
+Vous pouvez également désactiver ou supprimer de manière interactive le complément Office **Microsoft Azure Information Protection** de Word, Excel, PowerPoint et Outlook. Cette méthode est appropriée pour un ordinateur unique et des tests ad-hoc. Pour obtenir de instructions, consultez [Afficher, gérer et installer des compléments dans les programmes Office (pour les utilisateurs)](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
+
+Quelle que soit la méthode choisie, les modifications prennent effet au redémarrage des applications Office. Le client Azure Information Protection reste installé sur l’ordinateur, ce qui vous permet de continuer à étiqueter des fichiers en dehors de vos applications Office en désactivant ou en supprimant ce dernier. Par exemple, à l’aide de l’Explorateur de fichiers ou de PowerShell.
+
+Pour plus d’informations sur les fonctionnalités pris en charge par les clients Azure Information Protection et le client d’étiquetage intégré à Office, consultez [Choisir votre solution d’étiquetage Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) dans la documentation sur la protection des informations Azure.
 
 ## <a name="office-file-types-supported"></a>Types de fichiers Office pris en charge
 
 Les applications Office qui utilisent des étiquetages intégrés pour les fichiers Word, Excel et PowerPoint utilisent le format Open XML (par exemple, .docx et .xlsx) mais pas les formats Microsoft Office 97-2003 (tels que .doc et .xls), les formats Open Document (tels que .odt et .ods) ou d’autres formats. Lorsqu’un type de fichier n’est pas pris en charge pour l'étiquetage intégré, le bouton **Niveau de confidentialité** n’est pas disponible dans l’application Office.
 
-Le client d’étiquetage unifié Azure Information Protection prend en charge les formats Open XML et Microsoft Office 97-2003. Pour plus d’informations, consultez [Types de fichiers pris en charge par le client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) à partir du guide d’administration de ce client.
+Le client d’étiquetage unifié Azure Information Protection prend en charge les formats Open XML et Microsoft Office 97-2003. Pour plus d’informations, consultez [Types de fichiers pris en charge par le client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) à partir du guide d’administration de ce client.
 
 Pour les autres solutions d'étiquetage, consultez leur documentation pour connaître les types de fichiers pris en charge.
 
 ## <a name="protection-templates-and-sensitivity-labels"></a>Modèles de protection et étiquettes de niveau de confidentialité
 
-Les [modèles de protection](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) définis par l’administrateur, tels que ceux que vous définissez pour le chiffrement de messages Office 365, ne sont pas visibles dans les applications Office lorsque vous utilisez un étiquetage intégré. Cette expérience simplifiée illustre le fait qu’il n’est pas nécessaire de sélectionner un modèle de protection, car les mêmes paramètres sont inclus avec les étiquettes de niveau de confidentialité dont le chiffrement est activé.
+Les [modèles de protection](/azure/information-protection/configure-policy-templates) définis par l’administrateur, tels que ceux que vous définissez pour le chiffrement de messages Office 365, ne sont pas visibles dans les applications Office lorsque vous utilisez un étiquetage intégré. Cette expérience simplifiée illustre le fait qu’il n’est pas nécessaire de sélectionner un modèle de protection, car les mêmes paramètres sont inclus avec les étiquettes de niveau de confidentialité dont le chiffrement est activé.
 
-Si vous devez convertir des modèles de protection existants en étiquettes, utilisez le Portail Azure et les instructions suivantes : [Pour convertir des modèles en étiquettes](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels).
+Si vous devez convertir des modèles de protection existants en étiquettes, utilisez le Portail Azure et les instructions suivantes : [Pour convertir des modèles en étiquettes](/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels).
 
 ## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>Options de gestion des droits relatifs à l'information (IRM) et étiquettes de niveau de confidentialité
 
@@ -157,7 +172,7 @@ Lorsque les utilisateurs étiquettent initialement un document ou un courriel, i
 
 - Un utilisateur applique l’étiquette **Général** à un document, et cette étiquette n’est pas configurée pour appliquer le chiffrement. Cet utilisateur configure ensuite manuellement les paramètres IRM pour restreindre l’accès au document. Le résultat final est un document étiqueté **Général**, mais qui applique également le chiffrement de sorte que certains utilisateurs ne peuvent pas l’ouvrir comme prévu.
 
-Si le document ou l'e-mail est déjà étiqueté, un utilisateur peut effectuer l'une de ces actions si le contenu n'est pas déjà chiffré ou s'il dispose du [droit d'utilisation](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Exporter ou Contrôle total. 
+Si le document ou l'e-mail est déjà étiqueté, un utilisateur peut effectuer l'une de ces actions si le contenu n'est pas déjà chiffré ou s'il dispose du [droit d'utilisation](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Exporter ou Contrôle total. 
 
 Pour une expérience d’étiquette plus cohérente avec des rapports significatifs, fournissez des étiquettes et des instructions appropriées aux utilisateurs afin qu’ils appliquent uniquement des étiquettes pour protéger les documents. Par exemple :
 
@@ -187,7 +202,7 @@ Exemples d’héritage des étiquettes, où l’étiquette **Confidentiel** appl
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilité des étiquettes de confidentialité
 
-**Avec des applications RMS** : si vous ouvrez un document ou un courrier électronique chiffrés et étiquetés dans une [application RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) qui ne prend pas en charge les étiquettes de niveau de confidentialité, l’application applique toujours le chiffrement et la gestion des droits.
+**Avec des applications RMS** : si vous ouvrez un document ou un courrier électronique chiffrés et étiquetés dans une [application RMS](/azure/information-protection/requirements-applications#rms-enlightened-applications) qui ne prend pas en charge les étiquettes de niveau de confidentialité, l’application applique toujours le chiffrement et la gestion des droits.
 
 **Avec le client Azure Information Protection** : vous pouvez afficher et modifier les étiquettes de niveau de confidentialité que vous appliquez aux documents et courriers électroniques à l’aide du client d’étiquetage intégré à Office à l’aide du client Azure Information Protection, et inversement.
 
@@ -211,7 +226,7 @@ Cela signifie que si vous partagez des documents avec une autre organisation qui
 
 En plus de restreindre l’accès aux utilisateurs de votre propre organisation, vous pouvez étendre l’accès à tout autre utilisateur possédant un compte dans Azure Active Directory. Toutefois, si votre organisation utilise des stratégies d’accès conditionnel, consultez la [section suivante](#conditional-access-policies) pour considérations supplémentaires.
 
-Toutes les applications Office et autres [applications RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) peuvent ouvrir des documents chiffrés une fois que l’utilisateur s’est authentifié correctement. 
+Toutes les applications Office et autres [applications RMS](/azure/information-protection/requirements-applications#rms-enlightened-applications) peuvent ouvrir des documents chiffrés une fois que l’utilisateur s’est authentifié correctement. 
 
 Si les utilisateurs externes n’ont pas de compte dans Azure Active Directory, ils peuvent s’authentifier à l’aide de comptes invités dans votre client. Ces comptes invités peuvent également servir à accéder à des documents partagés dans SharePoint ou OneDrive lorsque vous avez [activé des étiquettes de niveau de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
 
@@ -219,11 +234,11 @@ Si les utilisateurs externes n’ont pas de compte dans Azure Active Directory, 
     
     Cette option vous permet de restreindre l’accès et les droits à des utilisateurs spécifiques en spécifiant leur adresse de messagerie dans les paramètres de chiffrement. L'inconvénient est la surcharge administrative liée à la création du compte et à la coordination avec la configuration de l'étiquette.
 
-- Une autre option consiste à utiliser [intégration de SharePoint et OneDrive à Azure AD B2B (préversion)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) de sorte que les comptes invités soient créés automatiquement lorsque vos utilisateurs partagent des liens.
+- Une autre option consiste à utiliser [intégration de SharePoint et OneDrive à Azure AD B2B (préversion)](/sharepoint/sharepoint-azureb2b-integration-preview) de sorte que les comptes invités soient créés automatiquement lorsque vos utilisateurs partagent des liens.
     
     Cette option offre un coût d’administration minimal, car les comptes sont créés automatiquement et une configuration d’étiquette plus simple. Dans ce scénario, vous devez sélectionner l’option de chiffrement [Ajouter des utilisateur authentifiés](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users), car vous ne connaissez pas les adresses de messagerie à l’avance. Ce paramètre ne vous permet pas de restreindre l’accès et les droits d’utilisation à des utilisateurs spécifiques.
 
-Les utilisateurs externes peuvent également utiliser un compte Microsoft pour ouvrir des documents chiffrés lorsqu’ils utilisent les applications Windows et Microsoft 365 ([anciennement des applications Office 365](https://docs.microsoft.com/deployoffice/name-change)) ou la version autonome d’Office 2019. Plus récemment pris en charge pour les autres plateformes, les comptes Microsoft sont également pris en charge pour l’ouverture de documents chiffrés sur macOS (Microsoft 365 Apps, version 16.42+), Android (version 16.0.13029+) et iOS (version 2.42+). Par exemple, un utilisateur de votre organisation partage un document chiffré avec un utilisateur extérieur à votre organisation, et les paramètres de chiffrement spécifient une adresse de messagerie Gmail pour l’utilisateur externe. Cet utilisateur externe peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois qu’ils se sont ouverts avec ce compte, ils peuvent ouvrir le document et le modifier, conformément aux restrictions d’utilisation qui leur sont spécifiées. Pour consulter un exemple pas à pas de ce scénario, consultez[Ouverture et modification du document protégé](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+Les utilisateurs externes peuvent également utiliser un compte Microsoft pour ouvrir des documents chiffrés lorsqu’ils utilisent les applications Windows et Microsoft 365 ([anciennement des applications Office 365](/deployoffice/name-change)) ou la version autonome d’Office 2019. Plus récemment pris en charge pour les autres plateformes, les comptes Microsoft sont également pris en charge pour l’ouverture de documents chiffrés sur macOS (Microsoft 365 Apps, version 16.42+), Android (version 16.0.13029+) et iOS (version 2.42+). Par exemple, un utilisateur de votre organisation partage un document chiffré avec un utilisateur extérieur à votre organisation, et les paramètres de chiffrement spécifient une adresse de messagerie Gmail pour l’utilisateur externe. Cet utilisateur externe peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois qu’ils se sont ouverts avec ce compte, ils peuvent ouvrir le document et le modifier, conformément aux restrictions d’utilisation qui leur sont spécifiées. Pour consulter un exemple pas à pas de ce scénario, consultez[Ouverture et modification du document protégé](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > L’adresse de messagerie du compte Microsoft doit correspondre à l’adresse de messagerie spécifiée pour restreindre l’accès aux paramètres de chiffrement.
@@ -233,17 +248,17 @@ Lorsqu’un utilisateur avec un compte Microsoft ouvre un document chiffré de c
 Toutefois, le compte invité automatique n’est pas créé immédiatement dans ce scénario, en raison d’une latence de réplication. Si vous spécifiez des adresses de messagerie personnelles dans le cadre de vos paramètres de chiffrement d’étiquettes, nous vous recommandons de créer des comptes invités correspondants dans Azure Active Directory. Indiquez ensuite à ces utilisateurs qu’ils doivent utiliser ce compte pour ouvrir un document chiffré de votre organisation.
 
 > [!TIP]
-> Étant donné que vous ne savez pas si les utilisateurs externes utiliseront une application cliente Office prise en charge, le partage de liens à partir de SharePoint et OneDrive après avoir créé des comptes invités (pour des utilisateurs spécifiques) ou lorsque vous utilisez [l’intégration de SharePoint et OneDrive à Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) (pour tout utilisateur authentifié) est une méthode plus fiable pour prendre en charge la collaboration sécurisée avec les utilisateurs externes.
+> Étant donné que vous ne savez pas si les utilisateurs externes utiliseront une application cliente Office prise en charge, le partage de liens à partir de SharePoint et OneDrive après avoir créé des comptes invités (pour des utilisateurs spécifiques) ou lorsque vous utilisez [l’intégration de SharePoint et OneDrive à Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) (pour tout utilisateur authentifié) est une méthode plus fiable pour prendre en charge la collaboration sécurisée avec les utilisateurs externes.
 
 ### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
 
-Si votre organisation a implémenté des [stratégies d’accès conditionnel Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), vérifiez leur configuration. Si les stratégies incluent **Microsoft Azure Information Protection** et que la stratégie s’étend aux utilisateurs externes, ces utilisateurs externes doivent avoir un compte invité dans votre client, même s’ils ont un compte Azure AD dans leur propre client.
+Si votre organisation a implémenté des [stratégies d’accès conditionnel Azure Active Directory](/azure/active-directory/conditional-access/overview), vérifiez leur configuration. Si les stratégies incluent **Microsoft Azure Information Protection** et que la stratégie s’étend aux utilisateurs externes, ces utilisateurs externes doivent avoir un compte invité dans votre client, même s’ils ont un compte Azure AD dans leur propre client.
 
 Sans ce compte invité, ils ne peuvent pas ouvrir le document chiffré et voir un message d’erreur. Le texte du message peut l’informer que son compte doit être ajouté en tant qu’utilisateur externe dans le client, avec des instructions incorrectes pour ce scénario pour **SSe déconnecter et se reconnecter avec un compte utilisateur Azure Active Directory différent.**.
 
 Si vous ne pouvez pas créer et configurer des comptes invités dans votre client pour des utilisateurs externes qui doivent ouvrir des documents chiffrés par vos étiquettes, vous devez supprimer Azure Information Protection des stratégies d’accès conditionnel ou exclure des utilisateurs externes des stratégies.
 
-Pour plus d’informations sur l’accès conditionnel et Azure Information Protection, le service de chiffrement utilisé par les étiquettes de niveau de confidentialité, consultez la question fréquemment posée, [Azure Information Protection est répertorié comme application cloud disponible pour l’accès conditionnel. Comment cela fonctionne-t-il ?](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
+Pour plus d’informations sur l’accès conditionnel et Azure Information Protection, le service de chiffrement utilisé par les étiquettes de niveau de confidentialité, consultez la question fréquemment posée, [Azure Information Protection est répertorié comme application cloud disponible pour l’accès conditionnel. Comment cela fonctionne-t-il ?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Délai de marquage et de chiffrage de contenus par les applications Office.
 
@@ -333,7 +348,7 @@ Exemples :
 > [!IMPORTANT]
 > Également connu sous le nom d'étiquetage obligatoire, toutes les applications sur toutes les plateformes ne prennent pas actuellement en charge le paramètre de stratégie **Exiger que les utilisateurs appliquent une étiquette à leurs messages électroniques et documents**.
 > 
-> Le[Client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)prend en charge l’étiquetage obligatoire et, pour les applications Office, consultez les tableaux de la section [fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page.
+> Le[Client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)prend en charge l’étiquetage obligatoire et, pour les applications Office, consultez les tableaux de la section [fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page.
 
 Lorsque ce paramètre de stratégie est sélectionné, les utilisateurs affectés à la stratégie doivent sélectionner et appliquer une étiquette de confidentialité dans les scénarios suivants :
 
