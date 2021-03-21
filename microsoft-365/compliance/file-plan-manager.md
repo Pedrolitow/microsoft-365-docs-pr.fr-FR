@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: c56f71032ccf154e5d9f416b42df1345da03d9a4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 422a76db5705e80c67803b798275e1faedd1d7aa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199015"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906874"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Bien que vous puissiez créer et gérer les étiquettes de rétention à partir de **Gouvernance des informations** dans le centre de conformité Microsoft 365, le plan de gestion de fichiers de **Gestion des enregistrements** dispose de fonctionnalités de gestion supplémentaires :
 
@@ -143,8 +143,13 @@ Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes
 
    ![Modèle de plan de gestion de fichiers vierge ouvert dans Excel](../media/file-plan-blank-template.png)
 
-3. Renseignez le modèle à l’aide des informations suivantes qui décrivent les propriétés et les valeurs valides pour chaque d’entre elles. Pour l’importation, chaque valeur a une longueur maximale de 64 caractères. <br/>
-
+3. Renseignez le modèle à l’aide des informations suivantes qui décrivent les propriétés et les valeurs valides pour chaque d’entre elles. Pour l’importation, certaines valeurs ont une longueur maximale :
+    
+    - **LabelName**: longueur maximale de 64 caractères
+    - **Commentaires** et **Notes** : longueur maximale de 1 024 caractères
+    - Toutes les autres valeurs : longueur illimitée
+    <br/>
+    
    |Propriété|Type|Valeurs admises|
    |:-----|:-----|:-----|
    |LabelName|Chaîne|Cette propriété spécifie le nom de l’étiquette de rétention.|
@@ -152,7 +157,7 @@ Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes
    |Notes|Chaîne|Utilisez cette propriété pour ajouter une description de l’étiquette de rétention pour les utilisateurs. Cette description s’affiche lorsque les utilisateurs pointent sur l’étiquette dans les applications telles que Outlook, SharePoint et OneDrive. Si vous laissez cette propriété vide, une description est affichée par défaut, qui décrit les paramètres de rétention de l’étiquette. |
    |IsRecordLabel|Chaîne|Cette propriété indique si l’étiquette marque le contenu comme un enregistrement. Les valeurs valides sont les suivantes : </br>**VRAI** : l’étiquette marque l’élément comme un enregistrement qui ne peut donc pas être supprimé. </br>**FAUX** : l’étiquette ne marque pas le contenu comme un enregistrement. Il s’agit de la valeur par défaut.|
    |RetentionAction|Chaîne|Cette propriété spécifie l’action à effectuer une fois que la valeur spécifiée par la propriété RetentionDuration expire. Les valeurs valides sont les suivantes : </br>**Delete** : les éléments antérieurs à la valeur spécifiée par la propriété RetentionDuration sont supprimés.</br>**Keep** : conserver les éléments pour la durée spécifiée par la propriété RetentionDuration et ne rien faire à l’expiration de la période. </br>**KeepAndDelete** : conserver les éléments pour la durée spécifiée par la propriété RetentionDuration et les supprimer à l’expiration de la période.   |
-   |RetentionDuration|Chaîne|Cette propriété spécifie la durée de rétention du contenu en nombre de jours. Les valeurs valides sont les suivantes : </br>**Unlimited** : les éléments sont conservés indéfiniment. </br>***n*** : un entier positif ; par exemple, **365**. 
+   |RetentionDuration|Chaîne|Cette propriété spécifie la durée de rétention du contenu en nombre de jours. Les valeurs valides sont les suivantes : </br>**Unlimited** : les éléments sont conservés indéfiniment. </br>**_n_*: un entier positif ; par exemple, _* 365**. 
    |RetentionType|Chaîne|Cette propriété indique si la durée de rétention est calculée à partir de la date de création de contenu, de la date de l’événement, de la date d’étiquetage ou de la date de la dernière modification. Les valeurs valides sont les suivantes : </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
    |ReviewerEmail|SmtpAddress|Lorsque cette propriété est remplie, une révision avant destruction est déclenchée à l’expiration de la durée de la rétention. Cette propriété spécifie l’adresse électronique d’un réviseur pour l’action de rétention **KeepAndDelete**. Vous pouvez inclure l’adresse de courrier des utilisateurs individuels, ainsi que celle des groupes de distribution ou de sécurité. Vous pouvez spécifier plusieurs adresses e-mail séparées par des points-virgules.|
    |ReferenceId|Chaîne|Cette propriété spécifie la valeur affichée dans l’**ID de référence** du descripteur du plan de gestion de fichiers que vous pouvez utiliser comme valeur unique pour votre organisation.| 
@@ -164,7 +169,7 @@ Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes
    |CitationUrl|Chaîne|Cette propriété spécifie l’URL affichée dans la **Clause/citation** du descripteur du plan de gestion de fichiers.|
    |CitationJurisdiction|Chaîne|Cette propriété spécifie la juridiction ou l’agence affichée dans le descripteur de plan de gestion de fichiers **Clause/citation**. Par exemple, « Securities and Exchange Commission (SEC) ».|
    |Réglementaire|Chaîne|Laisser la zone vierge. Cette propriété n’est pas utilisée pour le moment.|
-   |EventType|Chaîne|Cette propriété spécifie la règle de rétention associée à l’étiquette. Vous pouvez utiliser une valeur quelconque qui identifie distinctement la règle. Par exemple :</br>**Name**</br>**Nom unique (DN)**</br>**GUID** </br>Vous pouvez utiliser l'applet de commande [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule) pour afficher les règles de rétention disponibles. Notez que, les valeurs EventType étant uniques pour chaque organisation, si vous exportez des étiquettes d’une seule organisation, vous ne pouvez pas utiliser les valeurs de la propriété EventType de cette organisation lorsque vous importez des étiquettes vers une autre organisation.|
+   |EventType|Chaîne|Cette propriété spécifie la règle de rétention associée à l’étiquette. Vous pouvez utiliser une valeur quelconque qui identifie distinctement la règle. Par exemple :</br>**Name**</br>**Nom unique (DN)**</br>**GUID** </br>Vous pouvez utiliser l'applet de commande [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule) pour afficher les règles de rétention disponibles. Notez que, les valeurs EventType étant uniques pour chaque organisation, si vous exportez des étiquettes d’une seule organisation, vous ne pouvez pas utiliser les valeurs de la propriété EventType de cette organisation lorsque vous importez des étiquettes vers une autre organisation.|
    |||
 
    Voici un exemple du modèle contenant les informations sur les étiquettes de rétention.
