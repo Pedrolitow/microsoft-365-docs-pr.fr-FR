@@ -15,19 +15,19 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
-ms.openlocfilehash: 5f541706c2b4787e5add53b34a90c0f2113efb11
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 73b044ab9954744e89a13ccff0145f35bc1b821b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114680"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920191"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -83,7 +83,7 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 3. Dans la page des détails du profil de facturation, sous **Mode de paiement,** choisissez l’une des options suivantes :
     - Si vous souhaitez mettre à jour un mode de paiement existant, sélectionnez **Modifier**.
     - Si vous souhaitez ajouter un nouveau mode de paiement, sélectionnez **Remplacer.**
-4. Dans le volet droit, entrez les détails de la carte, puis sélectionnez **Enregistrer**.
+4. Dans le volet droit, entrez les détails de la carte, puis sélectionnez **Enregistrer.**
 
 ### <a name="update-an-existing-payment-method"></a>Mise à jour d’un mode de paiement existant
 
@@ -103,8 +103,8 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 1. Dans le Centre d’administration, allez sur la page **Factures**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiements.</a>
 2. Sous **l’onglet Factures,** sélectionnez la facture à afficher. Si aucune facture n’est visible, modifiez les **3** derniers mois en **6 derniers** mois ou spécifiez **une plage de dates.**
 
-## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
+## <a name="need-help-contact-us"></a>Vous avez besoin d’aide ? Contactez-nous.
 
 Pour les questions courantes sur les achats en libre-service, consultez la FAQ sur les [achats en libre-service.](self-service-purchase-faq.md)
 
-Si vous avez des questions ou si vous avez besoin d’aide sur les achats en libre-service, [contactez le support technique.](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
+Si vous avez des questions ou si vous avez besoin d’aide sur les achats en libre-service, [contactez le support technique.](../../admin/contact-support-for-business-products.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Découvrez comment créer une stratégie d’attribution de noms pour les groupes Microsoft 365.
-ms.openlocfilehash: acf660375508760bd2e9874a07454709849929b0
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 7fd2ea36b536924d85c7ca09b55593161a24dbe4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759823"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921047"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Stratégie de noms de groupes Microsoft 365
 
@@ -31,7 +31,7 @@ Vous pouvez utiliser une stratégie de noms de groupes pour appliquer une strat�
 La stratégie d’attribution de noms est appliquée aux groupes créés dans toutes les charges de travail de groupes (comme Outlook, Microsoft Teams, SharePoint, Planificateur, Yammer, etc.). Elle est appliquée à la fois au nom de groupe et à l’alias de groupe. Elle est également appliquée lorsqu’un utilisateur crée un groupe et lorsque le nom du groupe, l’alias, la description ou l’avatar est modifié pour un groupe existant.
 
 > [!TIP]
-> Une stratégie de noms de groupes Microsoft 365 s’applique uniquement aux groupes Microsoft 365. Elle ne s’applique pas aux groupes de distribution créés dans Exchange Online. Pour créer une stratégie d’attribution de noms pour les groupes de distribution, voir Créer une stratégie de noms de groupes [de distribution.](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)
+> Une stratégie de noms de groupes Microsoft 365 s’applique uniquement aux groupes Microsoft 365. Elle ne s’applique pas aux groupes de distribution créés dans Exchange Online. Pour créer une stratégie d’attribution de noms pour les groupes de distribution, voir Créer une stratégie de noms de groupes [de distribution.](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)
 
 La stratégie de noms de groupes comprend les fonctionnalités suivantes :
 
@@ -51,7 +51,7 @@ Les préfixes et les suffixes peuvent être des chaînes fixes ou des attributs 
 
 ### <a name="fixed-strings"></a>Chaînes fixes
 
-Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixe courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
+Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixes courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
 
 ### <a name="attributes"></a>Attributs
 
@@ -59,7 +59,7 @@ Vous pouvez utiliser des attributs qui peuvent aider à identifier qui a créé 
 
 Exemples :
 
-- Stratégie = « GRP [GroupName] [Department] »
+- Policy = « GRP [GroupName] [Department] »
 - Service de l’utilisateur = Ingénierie
 - Nom du groupe créé = « GRP My Group Engineering »
 
@@ -135,4 +135,4 @@ Pour configurer une stratégie d’attribution de noms :
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
-[Cmdlets Azure Active Directory pour la configuration de paramètres de groupe](https://go.microsoft.com/fwlink/?linkid=868341)
+[Cmdlets Azure Active Directory pour la configuration de paramètres de groupe](/azure/active-directory/enterprise-users/groups-settings-cmdlets)

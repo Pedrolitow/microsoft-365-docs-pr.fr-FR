@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Découvrir comment une organisation qui déploie la dernière version utilise des canaux pour les applications Windows 10 et Microsoft 365.
-ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 29bda1651a83f0e043cf8a0d2a102c6c2e461bfd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686165"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919073"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Exemple de déploiement à grande échelle des dernières versions
 
@@ -61,7 +61,7 @@ Dans le cadre des objectifs de déploiement rapide de la dernière version, cet 
 
 L’objectif global est d’effectuer un déploiement à grande échelle de la dernière version du Canal semi-annuel après la validation des modifications du Canal de la version préliminaire par un groupe d’utilisateurs représentatifs et leurs appareils.
 
-Pour plus d’informations sur les méthodes et stratégies de déploiement de Windows 10, consultez la rubrique [Déploiement de Windows 10](https://docs.microsoft.com/windows/deployment/).
+Pour plus d’informations sur les méthodes et stratégies de déploiement de Windows 10, consultez la rubrique [Déploiement de Windows 10](/windows/deployment/).
 
 | Phase | Canal | Groupe de déploiement |
 |:-------|:-------|:-----|
@@ -85,7 +85,7 @@ Processus de mises à jour en cours :
 
 L’objectif global est d’effectuer un déploiement à grande échelle de la dernière version de canal actuel après la validation des modifications du Canal actuel (préversion) par un groupe d’utilisateurs représentatifs.
 
-Si vous souhaitez en savoir plus sur les stratégies et méthodes de déploiement des applications Microsoft 365, veuillez consulter la rubrique [Déploiement d’applications Microsoft 365](https://docs.microsoft.com/deployoffice/plan-office-365-proplus).
+Si vous souhaitez en savoir plus sur les stratégies et méthodes de déploiement des applications Microsoft 365, veuillez consulter la rubrique [Déploiement d’applications Microsoft 365](/deployoffice/plan-office-365-proplus).
 
 | Phase | Canal | Groupe de déploiement |
 |:-------|:-------|:-----|

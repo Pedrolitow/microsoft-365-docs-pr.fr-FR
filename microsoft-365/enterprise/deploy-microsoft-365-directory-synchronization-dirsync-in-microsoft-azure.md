@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Découvrez comment déployer Azure AD Connect sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre annuaire local et le client Azure AD.
-ms.openlocfilehash: 8db78d20ee4c2186918a0b3b433f8f0ae056816e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 52c1bb2eb53cc4e6753d528e0d82822b2a0eebc5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689979"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919085"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Déployer la synchronisation d’annuaires Microsoft 365 dans Microsoft Azure
 
@@ -40,7 +40,7 @@ Vous pouvez installer Azure AD Connect sur un serveur local, mais également s
 Cette solution exige une connectivité entre votre réseau local et votre réseau virtuel Azure. Pour plus d’informations, reportez-vous à [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
   
 > [!NOTE]
-> Cet article décrit la synchronisation d'un domaine unique dans une forêt unique. Azure AD Connect synchronise tous les domaines AD DS de votre forêt Active Directory avec Microsoft 365. Si vous avez plusieurs forêts Active Directory à synchroniser avec Microsoft 365, voir Synchronisation d’annuaires à forêts multiples avec scénario Sign-On [unique.](https://go.microsoft.com/fwlink/p/?LinkId=393091) 
+> Cet article décrit la synchronisation d'un domaine unique dans une forêt unique. Azure AD Connect synchronise tous les domaines AD DS de votre forêt Active Directory avec Microsoft 365. Si vous avez plusieurs forêts Active Directory à synchroniser avec Microsoft 365, voir Synchronisation d’annuaires à forêts multiples avec scénario Sign-On [unique.](/azure/active-directory/hybrid/whatis-hybrid-identity) 
   
 ## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>Vue d’ensemble du déploiement de la synchronisation d’annuaires Microsoft 365 dans Azure
 
@@ -54,7 +54,7 @@ Dans le diagramme, il y a deux réseaux reliés par une connexion de site à sit
 -  Azure AD Connect envoie les modifications apportées aux comptes et aux mots de passe à l’instance Azure AD de votre abonnement Microsoft 365. Étant donné que le serveur de synchronisation d’annuaires se trouve dans une partie étendue de votre réseau local, ces modifications sont envoyées via le serveur proxy du réseau local.
     
 > [!NOTE]
-> Cette solution décrit la synchronisation d’un domaine Active Directory unique dans une forêt Active Directory unique. Azure AD Connect synchronise tous les domaines Active Directory de votre forêt Active Directory avec Microsoft 365. Si vous avez plusieurs forêts Active Directory à synchroniser avec Microsoft 365, voir Synchronisation d’annuaires à forêts multiples avec scénario Sign-On [unique.](https://go.microsoft.com/fwlink/p/?LinkId=393091) 
+> Cette solution décrit la synchronisation d’un domaine Active Directory unique dans une forêt Active Directory unique. Azure AD Connect synchronise tous les domaines Active Directory de votre forêt Active Directory avec Microsoft 365. Si vous avez plusieurs forêts Active Directory à synchroniser avec Microsoft 365, voir Synchronisation d’annuaires à forêts multiples avec scénario Sign-On [unique.](/azure/active-directory/hybrid/whatis-hybrid-identity) 
   
 Le déploiement de cette solution comporte deux étapes principales :
   
@@ -68,7 +68,7 @@ Le déploiement de cette solution comporte deux étapes principales :
     
     La configuration d’Azure AD Connect nécessite les informations d’identification (nom d’utilisateur et mot de passe) d’un compte d’administrateur Azure AD et d’un compte d’administrateur d’entreprise AD DS. Azure AD Connect s’exécute immédiatement et régulièrement pour synchroniser la forêt AD DS sur site avec Microsoft 365.
     
-Avant de déployer cette solution en production, vous pouvez utiliser les instructions de la configuration de [base](simulated-ent-base-configuration-microsoft-365-enterprise.md) de l’entreprise simulée pour configurer cette configuration comme preuve de concept, pour des démonstrations ou pour l’expérimentation.
+Avant de déployer cette solution en production, vous pouvez utiliser les instructions de la configuration de [base](simulated-ent-base-configuration-microsoft-365-enterprise.md) de l’entreprise simulée pour configurer cette configuration en tant que preuve de concept, pour des démonstrations ou pour l’expérimentation.
   
 > [!IMPORTANT]
 > Une fois la configuration d’Azure AD Connect terminée, les informations d’identification de compte d’administrateur d’entreprise AD DS ne sont pas enregistrées. 
@@ -101,7 +101,7 @@ La liste suivante décrit les choix de conception effectués pour cette solution
     
 - Sur le réseau local, un contrôleur de domaine et des serveurs DNS existent.
     
-- Azure AD Connect exécute la synchronisation de hachage de mot de passe à la place de l’authentification unique. Il est inutile de déployer une infrastructure AD FS (Active Directory Federation Services). Pour plus d’informations sur les options de synchronisation de hachage de mot de passe et d’authentification unique, reportez-vous à l’article [Choisir la méthode d’authentification adaptée à votre solution d’identité hybride Azure Active Directory](https://aka.ms/auth-options).
+- Azure AD Connect exécute la synchronisation de hachage de mot de passe à la place de l’authentification unique. Il est inutile de déployer une infrastructure AD FS (Active Directory Federation Services). Pour plus d’informations sur les options de synchronisation de hachage de mot de passe et d’authentification unique, reportez-vous à l’article [Choisir la méthode d’authentification adaptée à votre solution d’identité hybride Azure Active Directory](/azure/active-directory/hybrid/choose-ad-authn).
     
 Il existe des choix de conception supplémentaires que vous pourriez envisager lorsque vous déployez cette solution dans votre environnement. Ceux-ci incluent notamment :
   
@@ -144,7 +144,7 @@ Créez la machine virtuelle dans Azure en suivant les instructions décrites dan
     
 Vérifiez que votre serveur de synchronisation d’annuaires utilise correctement DNS en vérifiant votre DNS interne pour vous assurer qu’un enregistrement d’adresse (A) a été ajouté pour la machine virtuelle avec son adresse IP. 
   
-Suivez les instructions décrites dans [Se connecter à la machine virtuelle et ouvrir une session](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon) pour vous connecter au serveur de synchronisation d’annuaires avec une connexion Bureau à distance. Une fois connecté, associez la machine virtuelle au domaine AD DS local.
+Suivez les instructions décrites dans [Se connecter à la machine virtuelle et ouvrir une session](/azure/virtual-machines/windows/connect-logon) pour vous connecter au serveur de synchronisation d’annuaires avec une connexion Bureau à distance. Une fois connecté, associez la machine virtuelle au domaine AD DS local.
   
 Pour qu’Azure AD Connect puisse accéder aux ressources Internet, vous devez configurer le serveur de synchronisation d’annuaires de sorte qu’il utilise le serveur proxy du réseau local. Nous vous recommandons de contacter votre administrateur réseau pour toute étape de configuration supplémentaire à effectuer.
   
@@ -158,7 +158,7 @@ Cette illustration montre la machine virtuelle du serveur de synchronisation d�
 
 Procédez comme suit :
   
-1. Connectez-vous au serveur de synchronisation d’annuaires à l’aide d’une connexion Bureau à distance avec un compte de domaine AD DS qui possède des privilèges d’administrateur local. Voir [Se connecter à la machine virtuelle et ouvrir une session](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon).
+1. Connectez-vous au serveur de synchronisation d’annuaires à l’aide d’une connexion Bureau à distance avec un compte de domaine AD DS qui possède des privilèges d’administrateur local. Voir [Se connecter à la machine virtuelle et ouvrir une session](/azure/virtual-machines/windows/connect-logon).
     
 2. À partir du serveur de synchronisation d’annuaires, ouvrez l’article Configurer la synchronisation d’annuaires pour [Microsoft 365](set-up-directory-synchronization.md) et suivez les instructions pour la synchronisation d’annuaires avec la synchronisation de hachage de mot de passe.
     
@@ -191,11 +191,10 @@ Azure AD Connect ajoute des comptes à votre abonnement Microsoft 365 à partir 
     
 ## <a name="see-also"></a>Voir aussi
 
-[Centre de solutions et d'architecture Microsoft 365](../solutions/solution-architecture-center.md)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   
 [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 
 [Télécharger Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)
   
 [Configurer la synchronisation d’annuaires pour Microsoft 365](set-up-directory-synchronization.md)
-  

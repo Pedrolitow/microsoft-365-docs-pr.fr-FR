@@ -16,21 +16,21 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, trouvez une explication de la façon dont l’isolation du client conserve les vidéos stockées de chaque client séparément dans Office 365 Video.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 626a995fc5a3ac971c48cc87bec1017134e87b88
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: fc67b17aa40b3bca9ce6d73ebb7e18319e780339
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332243"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918929"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Isolation du client dans Office 365 Video
 
 > [!NOTE]
-> Office 365 Video sera remplacé par Microsoft Stream. Pour en savoir plus sur le nouveau service vidéo d’entreprise qui ajoute de l’aide à la collaboration vidéo et en savoir plus sur les plans de transition pour les clients Microsoft 365 Video actuels, consultez la présentation de la [transition d’Office 365 Video](https://docs.microsoft.com/stream/migrate-from-office-365)vers Microsoft Stream.
+> Office 365 Video sera remplacé par Microsoft Stream. Pour en savoir plus sur le nouveau service vidéo d’entreprise qui ajoute de l’intelligence à la collaboration vidéo et en savoir plus sur les plans de transition pour les clients Microsoft 365 Video actuels, voir la présentation de la [transition d’Office 365 Video](/stream/migrate-from-office-365)vers Microsoft Stream.
 
 ## <a name="introduction"></a>Introduction
 
-Le stockage Azure est utilisé pour stocker des données pour plusieurs services Office 365, notamment Office 365 Video et Sway. Le stockage Azure inclut le stockage Blob, qui est un magasin d’objets cloud basé sur REST hautement évolutif, utilisé pour stocker des données non structurées. Le stockage Azure utilise un modèle de contrôle d’accès simple . chaque abonnement Azure peut créer un ou plusieurs comptes de stockage. Chaque compte de stockage possède une clé secrète unique qui est utilisée pour contrôler l’accès à toutes les données de ce compte de stockage. Cela prend en charge le scénario classique où le stockage est associé à des applications et où ces applications ont un contrôle total sur leurs données associées ; par exemple, Sway stockant du contenu dans le stockage Azure. Tout le contenu client pour Sway est stocké dans des comptes de stockage Azure partagés. Le contenu de chaque utilisateur se trouve dans une arborescence de répertoires distincte d’objets blob dans le stockage Azure.
+Le stockage Azure est utilisé pour stocker des données pour plusieurs services Office 365, notamment Office 365 Video et Sway. Le stockage Azure inclut le stockage Blob, qui est un magasin d’objets cloud basé sur REST hautement évolutif, utilisé pour stocker des données non structurées. Le stockage Azure utilise un modèle de contrôle d’accès simple . chaque abonnement Azure peut créer un ou plusieurs comptes de stockage. Chaque compte de stockage possède une clé secrète unique qui est utilisée pour contrôler l’accès à toutes les données de ce compte de stockage. Cela prend en charge le scénario classique où le stockage est associé à des applications et où ces applications ont un contrôle total sur leurs données associées ; par exemple, Sway stockant du contenu dans le stockage Azure. Tout le contenu client pour Sway est stocké dans des comptes de stockage Azure partagés. Le contenu de chaque utilisateur se trouve dans une arborescence distincte d’objets blob dans le stockage Azure.
 
 Les systèmes gérant l’accès aux environnements clients (par exemple, le portail Azure, SMAPI, etc.) sont isolés au sein d’une application Azure gérée par Microsoft. Cela sépare logiquement l’infrastructure d’accès client des applications client et de la couche de stockage.
 

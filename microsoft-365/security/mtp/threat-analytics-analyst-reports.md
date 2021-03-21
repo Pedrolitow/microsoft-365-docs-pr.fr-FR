@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c82b0a84582d18f8b08b369ff76ba34046c40eba
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 96a4a8ae902f0b8e4767ea3fd42079322d661208
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727114"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918809"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>Comprendre le rapport d’analyste dans l’analyse des menaces
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727114"
 **S’applique à :**
 - Microsoft 365 Defender
 
-> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou exécuter votre projet pilote en [production.](https://aka.ms/m365d-pilotplaybook)
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) ou exécuter votre projet pilote en [production.](./mtp-pilot.md?ocid=cx-evalpilot)
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -53,7 +53,7 @@ Chaque section du rapport d’analyste est conçue pour fournir des informations
 |--|--|
 | Résumé exécutif | Vue d’ensemble de la menace, y compris la première fois qu’elle a été vue, ses motivations, les événements notables, les cibles principales et des outils et techniques distincts. Vous pouvez utiliser ces informations pour évaluer plus en détail comment hiérarchiser la menace dans le contexte de votre secteur d’activité, de votre emplacement géographique et de votre réseau. |
 | Analyse | Informations techniques sur les menaces, y compris les détails d’une attaque et la façon dont les attaquants peuvent utiliser une nouvelle technique ou une nouvelle surface d’attaque | 
-| Techniques MITRE ATT&CK observées | Comment les techniques observées sont m maprées à l’infrastructure d&[ATT MITRE](https://attack.mitre.org/) | 
+| Techniques MITRE ATT&CK observées | Mapilation des techniques observées avec l’infrastructure [d’attaque CK&ATT MITRE](https://attack.mitre.org/) | 
 | [Atténuations](#apply-additional-mitigations) | Recommandations qui peuvent s’arrêter ou réduire l’impact de la menace. Cette section inclut également les atténuations qui ne sont pas suivis dynamiquement dans le cadre du rapport d’analyse des menaces. |
 | [Détails de la détection](#understand-how-each-threat-can-be-detected) | Détections spécifiques et génériques fournies par les solutions de sécurité Microsoft qui peuvent faire surface de l’activité ou des composants associés à la menace. | 
 | [Repérage avancé](#find-subtle-threat-artifacts-using-advanced-hunting) | [Requêtes de recherche avancées pour](advanced-hunting-overview.md) identifier de manière proactive l’activité potentielle de menace. La plupart des requêtes sont fournies pour compléter les détections, en particulier pour localiser des composants ou des comportements potentiellement malveillants qui n’ont pas pu être évalués dynamiquement comme malveillants. | 
@@ -61,14 +61,14 @@ Chaque section du rapport d’analyste est conçue pour fournir des informations
 | Journal des modifications | L’heure de publication du rapport et les modifications importantes apportées au rapport. |
 
 ## <a name="apply-additional-mitigations"></a>Appliquer des atténuations supplémentaires
-L’analyse des menaces suit dynamiquement [l’état des mises à jour de sécurité et des configurations sécurisées.](threat-analytics.md#mitigations-review-list-of-mitigations-and-the-status-of-your-devices) Ces informations sont disponibles sous la mesure des graphiques et des tableaux de **l’onglet Atténuations.**
+L’analyse des menaces suit dynamiquement [l’état des mises à jour de sécurité et des configurations sécurisées.](threat-analytics.md#mitigations-review-list-of-mitigations-and-the-status-of-your-devices) Ces informations sont disponibles sous la mesure des graphiques et des tableaux sous **l’onglet Atténuations.**
 
 En plus de ces atténuations suivies, le rapport d’analyste traite également des atténuations qui ne sont _pas_ surveillées dynamiquement. Voici quelques exemples d’atténuations importantes qui ne sont pas suivis dynamiquement :
 
 - Bloquer les e-mails avec _des pièces jointes .lnk_ ou d’autres types de fichiers suspects
 - Randomiser les mots de passe d’administrateur local
 - Informer les utilisateurs finaux sur le hameçonnage et d’autres vecteurs de menace
-- Activer des règles de [réduction de la surface d’attaque spécifiques](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
+- Activer des règles de [réduction de la surface d’attaque spécifiques](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 
 Bien que vous pouvez utiliser l’onglet **Atténuations** pour évaluer votre posture de sécurité par rapport à une menace, ces recommandations vous permet de prendre des mesures supplémentaires pour améliorer votre posture de sécurité. Lisez attentivement toutes les instructions d’atténuation du rapport d’analyste et appliquez-les dès que possible.
 
@@ -76,13 +76,13 @@ Bien que vous pouvez utiliser l’onglet **Atténuations** pour évaluer votre p
 Le rapport d’analyste fournit également les détections à partir de Microsoft Defender pour les fonctionnalités antivirus de point de terminaison et de détection et réponse de _point_ de terminaison (EDR).
 
 ### <a name="antivirus-detections"></a>Détections antivirus
-Ces détections sont disponibles sur les appareils où [l’Antivirus Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) est allumé. Lorsque ces détections se produisent sur des appareils qui ont été intégrés à Microsoft Defender pour endpoint, elles déclenchent également des alertes qui allument les graphiques dans le rapport.
+Ces détections sont disponibles sur les appareils où [l’Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) est allumé. Lorsque ces détections se produisent sur des appareils qui ont été intégrés à Microsoft Defender pour endpoint, elles déclenchent également des alertes qui allument les graphiques dans le rapport.
 
 >[!NOTE]
 >Le rapport d’analyste répertorie également les **détections génériques** qui peuvent identifier un large éventail de menaces, en plus des composants ou comportements spécifiques à la menace de suivi. Ces détections génériques ne sont pas reflétées dans les graphiques.
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Alertes de détection et de réponse des points de terminaison (EDR)
-Les alertes EDR sont élevées pour les [appareils intégrés à Microsoft Defender pour le point de terminaison.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender for Endpoint et d’autres fonctionnalités de point de terminaison telles que l’antivirus, la protection réseau, la protection contre la falsification, qui servent de sources de signal puissantes.
+Les alertes EDR sont élevées pour les [appareils intégrés à Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender for Endpoint et d’autres fonctionnalités de point de terminaison, telles que les antivirus, la protection réseau, la protection contre la falsification, qui servent de sources de signal puissantes.
 
 À l’exemple de la liste des détections antivirus, certaines alertes EDR sont conçues pour indicateur générique d’un comportement suspect qui n’est peut-être pas associé à la menace détectée. Dans ce cas, le rapport identifie clairement l’alerte comme « générique » et n’influence aucun graphique du rapport.
 
@@ -100,10 +100,10 @@ Les requêtes de recherche avancées dans les rapports d’analyste ont été ex
 
 
 >[!NOTE]
-> L’analyse des menaces est également disponible [dans Microsoft Defender pour le point de terminaison.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Toutefois, il ne dispose pas de l’intégration de données entre Microsoft Defender pour Office et Microsoft Defender pour le point de terminaison que Microsoft 365 Defender analyse les menaces.
+> L’analyse des menaces est également disponible [dans Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Toutefois, il ne dispose pas de l’intégration de données entre Microsoft Defender pour Office et Microsoft Defender pour le point de terminaison que Microsoft 365 Defender analyse les menaces.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble des analyses de menaces](threat-analytics.md)
 - [Rechercher de manière proactive les menaces avec le recherche avancée](advanced-hunting-overview.md) 
 - [Règles de détection personnalisées](custom-detection-rules.md)

@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c51ebdbcd2a8d6d13f5ba0009d470581e317a365
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840312"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920431"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Description du service Bureau géré Microsoft
 
@@ -23,13 +23,13 @@ Bureau géré Microsoft est un service qui offre à vos utilisateurs une expéri
 - Configuration des appareils
 - Des fonctionnalités permettant de sécuriser les utilisateurs et les appareils, notamment Windows Hello, BitLocker, SecureBoot, et une sécurité basée sur la virtualisation selon les meilleures pratiques de Microsoft
 - Services de surveillance et de remise en état de la sécurité des appareils
-- Compatibilité des applications avec [Soutien aux applications du bureau](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
+- Compatibilité des applications avec [Soutien aux applications du bureau](/fasttrack/win-10-desktop-app-assure)
 - Gestion des mises à jour pour les applications Windows 10 et Microsoft 365 Apps for enterprise
 - Données analytiques sur l'utilisation des appareils et des applications
 - Assistance IT pour vos utilisateurs
 - Support opérationnel pour les professionnels de l’informatique
 
-Pour plus d’informations sur les services spécifiques inclus dans Microsoft Managed Desktop, consultez les autres articles de cette section. Si vous avez déjà choisi Microsoft Managed Desktop, les articles de la section [Préparer l’inscription à Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) vous fournissent les étapes à suivre pour vous préparer à rejoindre le service.
+Pour plus d’informations sur les services spécifiques inclus dans Microsoft Managed Desktop, consultez les autres articles de cette section. Si vous avez déjà choisi Microsoft Managed Desktop, les articles de la section [Préparer l’inscription à Microsoft Managed Desktop](../get-ready/index.md) vous fournissent les étapes à suivre pour vous préparer à rejoindre le service.
 
 - [Les régions et langues prises en charge par Bureau géré Microsoft](regions-languages.md) expliquent les régions et langues prises en charge par le service.
 - Pour garantir une expérience optimale à vos utilisateurs, seuls certains appareils sont pris en charge par Bureau géré Microsoft. [Appareils de programme](device-list.md) indique les modèles et les configurations exactes des appareils que vous pouvez utiliser avec le service, que vous les fournissiez ou que vous travailliez avec un partenaire.

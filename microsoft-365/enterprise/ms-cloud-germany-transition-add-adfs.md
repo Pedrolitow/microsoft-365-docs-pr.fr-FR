@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Étapes de migration des services AD FS (Active Directory Federation Services) pour la migration à partir de Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 852fc8f93158d7b6080f1add5a05e7367539f889
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838412"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918905"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Étapes de migration AD FS pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -89,7 +89,8 @@ Vous pouvez utiliser [l’aide AD FS](https://adfshelp.microsoft.com/AadTrustCla
 
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>Récupération d’urgence AD FS (base de données WID)
 
-Pour restaurer la batterie de serveurs AD FS en cas d’urgence, l’outil de restauration rapide [AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) doit être utilisé. Par conséquent, l’outil doit être téléchargé et avant le début de la migration, une sauvegarde doit être créée et stockée en toute sécurité. Dans cet exemple, les commandes suivantes ont été exécutés pour la back up d’une batterie de serveurs s’exécutant sur une base de données WID :
+
+Pour restaurer la batterie de serveurs AD FS en cas d’urgence, l’outil de restauration rapide [AD FS](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) doit être utilisé. Par conséquent, l’outil doit être téléchargé et avant le début de la migration, une sauvegarde doit être créée et stockée en toute sécurité. Dans cet exemple, les commandes suivantes ont été exécutés pour la back up d’une batterie de serveurs s’exécutant sur une base de données WID :
 
 <h2 id="backup"></h2>
 
@@ -127,7 +128,7 @@ Si votre batterie de serveurs a complètement échoué et qu’il n’existe auc
 3. Pointez vos nouveaux enregistrements DNS ou équilibreur de charge vers les nouveaux serveurs AD FS.
 
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en place :
 
@@ -144,6 +145,6 @@ Transition :
 
 Applications cloud :
 
-- [Informations sur le programme de migration Dynamics 365](https://aka.ms/d365ceoptin)
-- [Informations sur le programme de migration Power BI](https://aka.ms/pbioptin)
-- [Prise en main de votre mise à niveau vers Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Informations sur le programme de migration Dynamics 365](/dynamics365/get-started/migrate-data-german-region)
+- [Informations sur le programme de migration Power BI](/power-bi/admin/service-admin-migrate-data-germany)
+- [Prise en main de votre mise à niveau vers Microsoft Teams](/microsoftteams/upgrade-start-here)

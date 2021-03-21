@@ -15,19 +15,19 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs de leur organisation.
-ms.openlocfilehash: 3e04f58c10b14aca8b356c064106b7107f144d91
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 2ce12b7dba4e765745a94fa10f4ba15e7013e3c8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114692"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920179"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gérer les achats libre-service (administrateur)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ Pour plus d’informations, voir [Utiliser AllowSelfServicePurchase pour le modu
 
 Vous pouvez attribuer des licences existantes ou acheter des abonnements supplémentaires via des contrats existants pour les utilisateurs affectés à des achats en libre-service. Après avoir attribué ces licences achetées de manière centralisée, vous pouvez demander aux acheteur d’annuler leurs abonnements existants.
 
-1. Dans le Centre d’administration, allez à la page **Services** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">d’achat de facturation.</a>
+1. Dans le centre d’administration, allez à la page **Services** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">d’achat de facturation.</a>
 2. Recherchez et choisissez le produit que vous souhaitez acheter, puis choisissez **Acheter.**
 3. Effectuer les étapes restantes pour effectuer votre achat.
 4. Suivez les étapes de l’affichage qui dispose de licences pour un abonnement acheté en [libre-service](#view-who-has-licenses-for-a-self-service-purchase-subscription) pour exporter une liste d’utilisateurs à référencer à l’étape suivante.
@@ -76,7 +76,7 @@ Vous pouvez attribuer des licences existantes ou acheter des abonnements supplé
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>Prendre en compte un abonnement d’achat en libre-service
 
-Vous pouvez prendre le relais d’un abonnement d’achat en libre-service effectué par un utilisateur de votre organisation. Lorsque vous prenez le relais d’un abonnement d’achat en libre-service, vous avez deux options :
+Vous pouvez prendre le relais d’un abonnement d’achat en libre-service effectué par un utilisateur de votre organisation. Lorsque vous prenez le relais d’un abonnement d’achat en libre-service, deux options s’offrent à vous :
 
 1. Déplacez les utilisateurs vers un autre abonnement et annulez l’abonnement d’origine.
 2. Annulez l’abonnement d’achat en libre-service et supprimez les licences des utilisateurs affectés.
@@ -92,7 +92,7 @@ Lorsque vous déplacez des utilisateurs vers un autre abonnement, l’ancien abo
 2. Sous **l’onglet** Produits, sélectionnez l’icône de filtre, puis sélectionnez **Libre-service.**
 3. Sélectionnez l’abonnement à prendre en compte.
 4. Dans la page détails de l’abonnement, dans la section Abonnements et **paramètres,** sélectionnez **Prendre le contrôle de cet abonnement.**
-5. Dans le volet droit, sélectionnez **Déplacer des utilisateurs.**
+5. Dans le volet droit, sélectionnez **Déplacer les utilisateurs.**
 6. Sélectionnez le produit vers qui vous souhaitez déplacer les utilisateurs, puis **sélectionnez Déplacer les utilisateurs.**
 7. Dans la **zone Déplacer les utilisateurs vers,** **sélectionnez Déplacer les utilisateurs.** Le processus de déplacement peut prendre plusieurs minutes. Ne fermez pas votre navigateur pendant l’opération.
 8. Lorsque le processus de déplacement est terminé, fermez le **volet Déplacer terminé.**
@@ -107,12 +107,12 @@ Lorsque vous choisissez d’annuler un abonnement d’achat en libre-service, le
 3. Sélectionnez l’abonnement à annuler.
 4. Dans la page détails de l’abonnement, dans la section Abonnements et **paramètres,** sélectionnez **Prendre le contrôle de cet abonnement.**
 5. Dans le volet droit, sélectionnez **Annuler l’abonnement.**
-6. Sélectionnez une raison pour votre annulation dans la liste de listes listes, puis sélectionnez **Annuler l’abonnement.**
+6. Sélectionnez une raison pour votre annulation dans la liste de listes listes, puis **sélectionnez Annuler l’abonnement.**
 7. Dans la **zone Voulez-vous vraiment** annuler ? sélectionnez **Annuler l’abonnement.**
 8. Fermez le volet droit.
-9. Dans la page des détails de l’abonnement, **l’état de l’abonnement** s’affiche **comme supprimé.**
+9. Sur la page des détails de l’abonnement, **l’état de l’abonnement** s’affiche **comme supprimé.**
 
-## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
+## <a name="need-help-contact-us"></a>Vous avez besoin d’aide ? Contactez-nous.
 
 Pour les questions courantes sur les achats en libre-service, consultez la FAQ sur les [achats en libre-service.](self-service-purchase-faq.md)
 

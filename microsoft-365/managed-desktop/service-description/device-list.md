@@ -8,18 +8,18 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 729e9dc9ab512a7e93bc291a9a52222c15a42b79
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: b0aa619f09f2d6b32289e037283a0dc6578d0150
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727420"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920503"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau géré Microsoft 
 
-Bureau géré Microsoft évalue régulièrement les appareils à inclure dans le service. Cet article répertorie les appareils spécifiques actuellement pris en charge. Pour obtenir une déclaration plus générale des exigences relatives aux appareils, consultez [La demande d’appareil.](device-requirements.md)
+Bureau géré Microsoft évalue régulièrement les appareils à inclure dans le service. Cet article répertorie les appareils spécifiques actuellement pris en charge. Pour obtenir une déclaration plus générale des conditions requises pour l’appareil, [consultez La demande de l’appareil.](device-requirements.md)
 
-Pour plus d’informations sur bureau géré Microsoft, voir la documentation et les ressources [de Bureau géré Microsoft.](https://docs.microsoft.com/microsoft-365/managed-desktop/) 
+Pour plus d’informations sur bureau géré Microsoft, voir la documentation et les ressources [de Bureau géré Microsoft.](../index.yml) 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -53,7 +53,7 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [PC portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
+| [ORDINATEUR portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [PC portable HP EliteBook x360 830 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS03AV | 31 juillet 2021 | 31 juillet 2024 |
 | [PC portable HP EliteBook x360 1030 / 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 8XW08AV | 31 août 2021 | 31 août 2024 |
@@ -78,11 +78,11 @@ En outre, l’appareil doit également répondre aux critères suivants :
 
 - Si une référence SKU spécifique est répertoriée dans la demande d’appareil, veillez à l’utiliser lors de la commande. Cela garantit que les appareils sont conformes aux exigences logicielles du Bureau géré Microsoft. 
 - Vous n’avez pas terminé l’expérience de première application de Windows.
-- Être inscrit auprès du Bureau géré Microsoft à l’aide de la fonctionnalité [d’inscription des](https://aka.ms/mmddrhelp) appareils
+- Être inscrit auprès du Bureau géré Microsoft à l’aide de la fonctionnalité [d’inscription des](../get-started/register-devices-self.md) appareils
 
 >[!NOTE]
 >Les appareils avec un processeur 2,0 GHz ou plus rapide offrent une bien meilleure expérience aux utilisateurs impliqués dans ces activités :
->- Utilisation de la vidéoconférence avec Teams. Pour plus [d’informations, voir](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) configuration matérielle requise pour Microsoft Teams.
+>- Utilisation de la vidéoconférence avec Teams. Pour plus [d’informations, voir](/microsoftteams/hardware-requirements-for-the-teams-app) configuration matérielle requise pour Microsoft Teams.
 >-  Utilisation d’un seul appareil pour plusieurs charges de travail différentes.
 >- Utilisation de plusieurs moniteurs.
 
@@ -93,8 +93,3 @@ Ces ressources peuvent vous aider à répondre aux questions que vous pourriez a
 - Pour plus de questions sur les appareils Dell, <a href="mailto:MMD_at_dell@dell.com">contactez MMD_at_dell@dell.com</a>.
 
 - Pour plus de questions sur les instructions de commande des appareils HP et des appareils, contactez : Amériques (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>) ; Europe/Moyen-Orient/Afrique<a href="mailto:mmd-emea@hp.com">(mmd-emea@hp.com</a>) ; Asie-Pacifique/Japon<a href="mailto:mmd-apj@hp.com">(mmd-apj@hp.com</a>) ; Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
-
-
-
-
-

@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Utilisez ces étapes pour protéger les comptes d’administrateur général dans votre environnement de test Microsoft 365 pour entreprise.
-ms.openlocfilehash: 1ae04e4761ed86e087e647464ad522466ed6abef
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 3eab538b59e460857e2fa195aaacf51051f94d6b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487635"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918881"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Protéger les comptes d’administrateur général dans votre environnement de test Microsoft 365 pour entreprise
 
@@ -28,7 +28,7 @@ ms.locfileid: "48487635"
 
 Vous pouvez empêcher les attaques numériques sur votre organisation en vous assurant que vos comptes d’administrateur sont aussi sécurisés que possible. 
 
-Cet article explique comment utiliser des stratégies d’accès conditionnel Azure Active Directory (Azure AD) pour protéger les comptes d’administrateur général.
+Cet article explique comment utiliser les stratégies d’accès conditionnel Azure Active Directory (Azure AD) pour protéger les comptes d’administrateur général.
 
 La protection des comptes d’administrateur général dans votre environnement de test Microsoft 365 pour entreprise implique deux phases :
 - [Phase 1 : Créer votre environnement de test Microsoft 365 pour entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
@@ -57,7 +57,7 @@ Tout d’abord, créez un compte d’utilisateur en tant qu’administrateur gé
 3. Dans le **volet Ajouter un utilisateur,** entrez **DedicatedAdmin** dans les zones **Prénom,** Nom **d’affichage** et **Nom d’utilisateur.**
 4. Sélectionnez **Mot** de passe, **Sélectionnez Me laisser créer le** mot de passe, puis entrez un mot de passe fort. Enregistrez le mot de passe de ce nouveau compte dans un emplacement sécurisé.
 5. Sélectionnez **Suivant**.
-6. Dans le **volet Attribuer des licences de** produit, **sélectionnez Microsoft 365 E5,** puis sélectionnez **Suivant.**
+6. Dans le **volet Attribuer des licences de** produit, **sélectionnez Microsoft 365 E5,** puis sélectionnez **Suivant**.
 7. Dans le **volet Paramètres facultatifs,** sélectionnez **Rôles**  >  **Admin center access** Global  >  **admin**  >  **Next**.
 8. Dans le **volet Vous avez presque terminé,** sélectionnez Terminer **l’ajout,** puis **fermez**.
 
@@ -78,8 +78,8 @@ Cette première stratégie nécessite que tous les comptes d’administrateur g�
 
 1. Dans un nouvel onglet de votre navigateur, allez à [https://portal.azure.com](https://portal.azure.com) .
 2. Cliquez sur **Accès conditionnel à la sécurité Azure Active Directory.**  >    >  
-3. Dans le **volet Accès conditionnel – Stratégies,** sélectionnez Stratégie de référence : Exiger l’élection de l’élection de base pour **les administrateurs (prévisualisation).**
-4. Dans le **volet Stratégie** de référence, **sélectionnez Utiliser la stratégie immédiatement > Enregistrer**.
+3. Dans le **volet Accès conditionnel – Stratégies,** sélectionnez Stratégie de référence : Exiger l’pertinence de l’élection de l’élection **(prévisualisation) pour les administrateurs.**
+4. Dans le **volet Stratégie de** référence, **sélectionnez Utiliser la stratégie immédiatement > Enregistrer.**
 
 Cette deuxième stratégie bloque l’accès à l’authentification de compte d’administrateur général lorsque le risque de se connecte est moyen ou élevé.
 
@@ -89,7 +89,7 @@ Cette deuxième stratégie bloque l’accès à l’authentification de compte d
 4. Dans **l’onglet**  Inclure du volet Utilisateurs et groupes, sélectionnez Sélectionner des utilisateurs et des groupes   >  **Utilisateurs et**  >  **groupes Sélectionner.**
 5. Dans le **volet** Sélectionner, sélectionnez le **groupe GlobalAdmins,** puis **sélectionnez**  >  **Terminé.**
 6. Dans la section **Affectations,** sélectionnez **Conditions.**
-7. Dans le **volet Conditions,** sélectionnez Risque  de se connectez, sélectionnez Oui pour Configurer, Sélectionnez Élevé et **Moyen,** puis Sélectionnez Sélectionner **et** **Terminé.**   
+7. Dans le **volet Conditions,** sélectionnez Risque  de se connectez, sélectionnez Oui pour Configurer, Sélectionner Élevé et **Moyen,** puis Sélectionnez Sélectionner **et** **Terminé.**   
 8. Dans la section **Contrôles d’accès** du **nouveau** volet, sélectionnez **Accorder**.
 9. Dans le **volet Accorder,** sélectionnez Bloquer **l’accès,** puis sélectionnez **Sélectionner.**
 10. Dans le **volet** Nouveau, sélectionnez **Activer** pour **activer** la stratégie, puis sélectionnez **Créer.**
@@ -109,4 +109,4 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

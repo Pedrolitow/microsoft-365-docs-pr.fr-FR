@@ -2,7 +2,7 @@
 title: Suivre les menaces émergentes et y répondre avec l’analyse des menaces
 ms.reviewer: ''
 description: Découvrez les menaces émergentes et les techniques d’attaque et comment les arrêter. Évaluez leur impact sur votre organisation et évaluez la résilience de votre organisation.
-keywords: analyse des menaces, évaluation des risques, Microsoft 365 Defender, M365D, état de l’atténuation, configuration sécurisée, Microsoft Defender pour Office 365, Analyse des menaces Microsoft Defender pour Office 365, analyse des menaces MDO, données d’analyse des menaces MDE et MDO intégrées, intégration des données d’analyse des menaces, analyse intégrée des menaces Microsoft 365 Defender
+keywords: analyse des menaces, évaluation des risques, Microsoft 365 Defender, M365D, état d’atténuation, configuration sécurisée, Microsoft Defender pour Office 365, Analyse des menaces Microsoft Defender pour Office 365, analyse des menaces MDO, données d’analyse des menaces MDE et MDO intégrées, intégration des données d’analyse des menaces, analyse intégrée des menaces Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e27659517f8c7b5cbc7936b825ac867a2888e251
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 288be30aa9592ba7feed92b9ad49955406f59f10
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727147"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918797"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Suivre les menaces émergentes et y répondre avec l’analyse des menaces 
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727147"
 **S’applique à :**
 - Microsoft 365 Defender
 
-> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou exécuter votre projet pilote en [production.](https://aka.ms/m365d-pilotplaybook)
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) ou exécuter votre projet pilote en [production.](./mtp-pilot.md?ocid=cx-evalpilot)
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -61,13 +61,13 @@ _Où accéder à l’analyse des menaces_
 
 Avec des adversaires plus sophistiqués et de nouvelles menaces émergentes fréquemment et répandues, il est essentiel de pouvoir rapidement :
 
-- Identifier les menaces émergentes et y réagir 
+- Identifier et réagir aux menaces émergentes 
 - Découvrez si vous êtes actuellement en cours d’attaque
 - Évaluer l’impact de la menace sur vos ressources
 - Examiner votre résilience par rapport aux menaces ou leur exposition
 - Identifier les actions d’atténuation, de récupération ou de prévention que vous pouvez prendre pour arrêter ou contenir les menaces
 
-Chaque rapport fournit une analyse d’une menace de suivi et des instructions complètes sur la façon de se défendre contre cette menace. Il intègre également des données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
+Chaque rapport fournit une analyse d’une menace de suivi et des instructions complètes sur la façon de se défendre contre cette menace. Il incorpore également les données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
 
 ## <a name="view-the-threat-analytics-dashboard"></a>Afficher le tableau de bord d’analyse des menaces
 
@@ -116,7 +116,7 @@ Chaque rapport inclut des graphiques qui fournissent une vue d’ensemble de la 
 - **État de configuration** sécurisé : indique le nombre d’appareils avec des paramètres de sécurité mal configurés. Appliquez les paramètres de sécurité recommandés pour atténuer la menace. Les appareils sont considérés **comme sécurisés** s’ils ont _appliqué tous_ les paramètres suivis.
 - **État de correction des vulnérabilités**: indique le nombre d’appareils vulnérables. Appliquer des mises à jour de sécurité ou des correctifs pour résoudre les vulnérabilités exploitées par la menace.
 
-### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en sécurité Microsoft
+### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en matière de sécurité Microsoft
 Dans la section **Rapport d’analyste,** lisez l’écriture détaillée de l’expert. La plupart des rapports fournissent des descriptions détaillées des chaînes d’attaques, notamment des tactiques et des [](advanced-hunting-overview.md) techniques mappées à l’infrastructure CK MITRE ATT&, des listes exhaustives de recommandations et de puissants conseils de recherche de menaces.
 
 [En savoir plus sur le rapport d’analyste](threat-analytics-analyst-reports.md)
@@ -142,7 +142,7 @@ Microsoft Defender pour Office 365 bloque généralement les e-mails avec des in
 
 **L’onglet Tentatives** de courrier indésirable répertorie tous les e-mails qui ont été bloqués avant leur remise ou envoyés au dossier courrier indésirable par Microsoft Defender pour Office 365. 
 
-![Image de la section tentatives d’e-mail empêchées d’un rapport d’analyse des menaces](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
+![Image de la section tentatives de courrier empêchée d’un rapport d’analyse des menaces](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
 _Section Tentatives de courriers électroniques empêchées d’un rapport d’analyse des menaces_
 
@@ -155,7 +155,7 @@ Dans la section **Atténuations,** examinez la liste des recommandations actionn
   - Protection des applications potentiellement indésirables (PUA)
   - Protection en temps réel
  
-Les informations d’atténuation de [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)cette section intègrent les données de la gestion des menaces et des vulnérabilités, qui fournissent également des informations détaillées sur l’analyse des différents liens du rapport.
+Les informations d’atténuation de [](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)cette section intègrent les données de la gestion des menaces et des vulnérabilités, qui fournissent également des informations détaillées sur l’analyse des différents liens du rapport.
 
 ![Image de la section atténuations d’un rapport d’analyse des menaces affichant les détails de la configuration sécurisée Image de la section atténuations d’un rapport d’analyse des menaces affichant les détails de ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ la vulnérabilité](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -165,7 +165,7 @@ _Section Atténuations d’un rapport d’analyse des menaces_
 ## <a name="additional-report-details-and-limitations"></a>Détails et limitations supplémentaires du rapport
 >[!NOTE]
 >Dans le cadre de l’expérience de sécurité unifiée, l’analyse des menaces est désormais disponible non seulement pour Microsoft Defender pour endpoint, mais également pour les titulaires de licence Microsoft Defender pour Office E5.
->Si vous n’utilisez pas le portail de sécurité Microsoft 365 (Microsoft 365 Defender), vous pouvez également voir les détails du rapport (sans les données De Microsoft Defender pour Office) dans le portail Centre de sécurité Microsoft Defender (Microsoft Defender pour Point de terminaison). 
+>Si vous n’utilisez pas le portail de sécurité Microsoft 365 (Microsoft 365 Defender), vous pouvez également voir les détails du rapport (sans les données De Microsoft Defender pour Office) dans le portail Centre de sécurité Microsoft Defender (Microsoft Defender pour point de terminaison). 
 
 Pour accéder au rapport d’analyse des menaces, vous avez besoin de certains rôles et autorisations. Pour plus d’informations, voir Rôles personnalisés dans le contrôle d’accès basé sur les rôles pour [Microsoft 365 Defender.](custom-roles.md)
   - Pour afficher les alertes, les incidents ou les données des biens touchés, vous devez avoir des autorisations sur les données d’alertes Microsoft Defender pour Office ou Microsoft Defender pour les points de terminaison, ou les deux.
@@ -178,7 +178,7 @@ Lorsque vous regardez les données d’analyse des menaces, n’oubliez pas les 
 - Les appareils sont comptés comme « indisponibles » s’ils n’ont pas transmis de données au service.
 - Les statistiques relatives aux antivirus sont basées sur les paramètres de l’Antivirus Microsoft Defender. Les appareils avec des solutions antivirus tierces peuvent apparaître comme « exposés ».
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Rechercher de manière proactive les menaces avec le recherche avancée](advanced-hunting-overview.md) 
 - [Comprendre la section rapport d’analyste](threat-analytics-analyst-reports.md)
-- [Évaluer et résoudre les faiblesses et les exposition de sécurité](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Évaluer et résoudre les faiblesses et les exposition de sécurité](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

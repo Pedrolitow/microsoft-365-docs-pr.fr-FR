@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Comment activer ou désactiver la fonctionnalité de recherche du journal d’audit dans le Centre de sécurité & conformité pour activer ou désactiver la possibilité pour les administrateurs de rechercher dans le journal d’audit.
-ms.openlocfilehash: 3f3e1b913dd163e74f9e5359de772dfcbf3bd786
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: aecd1d47592b9a5e2f134b1d9db9ff203b815b18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423675"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919280"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Activer ou désactiver la recherche dans le journal d’audit
 
@@ -36,12 +36,12 @@ Nous activons par défaut la journalisation d’audit pour les organisations d�
   
 ## <a name="before-you-turn-audit-log-search-on-or-off"></a>Avant d’activer ou de désactiver la recherche dans le journal d’audit
 
-- Vous devez avoir le rôle Journaux d’audit dans Exchange Online pour activer ou désactiver la recherche dans le journal d’audit dans votre organisation Microsoft 365. Par défaut, ce rôle est affecté aux groupes de rôles Gestion de la conformité et Gestion de l’organisation dans la page **Autorisations** du Centre d’administration Exchange. Les administrateurs globaux dans Microsoft 365 sont membres du groupe de rôles Gestion de l’organisation dans Exchange Online. 
+- Vous devez avoir le rôle Journaux d’audit dans Exchange Online pour activer ou désactiver la recherche dans le journal d’audit dans votre organisation Microsoft 365. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité et Gestion de l’organisation dans la page **Autorisations** du Centre d’administration Exchange. Les administrateurs globaux dans Microsoft 365 sont membres du groupe de rôles Gestion de l’organisation dans Exchange Online. 
     
     > [!NOTE]
     > Des autorisations doivent être attribuées aux utilisateurs dans Exchange Online pour activer ou désactiver la recherche dans le journal d’audit. Si vous attribuez aux utilisateurs le rôle Journaux d’audit sur la page **Autorisations** du Centre de sécurité & conformité, ils ne pourront pas activer ou désactiver la recherche dans le journal d’audit. Cela est dû au fait que la cmdlet sous-jacente est une cmdlet Exchange Online PowerShell. 
     
-- Pour obtenir des instructions détaillées sur la recherche dans le journal d’audit, consultez la recherche dans le journal d’audit dans le Centre de sécurité [& conformité.](search-the-audit-log-in-security-and-compliance.md) Pour plus d’informations sur l’API Activité de gestion Microsoft 365, voir Prise en charge des API de gestion [Microsoft 365.](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)
+- Pour obtenir des instructions détaillées sur la recherche dans le journal d’audit, consultez la recherche dans le journal d’audit dans le Centre de sécurité [& conformité.](search-the-audit-log-in-security-and-compliance.md) Pour plus d’informations sur l’API Activité de gestion Microsoft 365, voir Prise en charge des API de gestion [Microsoft 365.](/office/office-365-management-api/get-started-with-office-365-management-apis)
 
 - Pour vérifier que vous avez activé la recherche dans le journal d’audit, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
 
@@ -71,7 +71,7 @@ Si la recherche dans le journal d’audit n’est pas désactivée pour votre or
 
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>Utiliser PowerShell pour activer la recherche dans le journal d’audit
 
-1. [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Exécutez la commande PowerShell suivante pour activer la recherche dans le journal d’audit dans Office 365.
 
@@ -85,7 +85,7 @@ Si la recherche dans le journal d’audit n’est pas désactivée pour votre or
 
 Vous devez utiliser Exchange Online PowerShell pour désactiver la recherche dans le journal d’audit.
   
-1. [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Exécutez la commande PowerShell suivante pour désactiver la recherche dans le journal d’audit.
 

@@ -15,12 +15,12 @@ ms.custom:
 description: Dans cet article, vous allez découvrir les rapports et les outils de dépannage disponibles pour les administrateurs Microsoft Exchange Online Protection des données (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 783c7ea0aca47c805daf66592b401a98f739d071
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1307fa1431a4fdd46c9ab070a2986a015891568f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288078"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918677"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapports et suivi des messages dans EOP
 
@@ -31,13 +31,13 @@ ms.locfileid: "50288078"
 - [Microsoft Defender pour Office 365 Plan 1 et Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, EOP offre de nombreux rapports différents qui peuvent vous aider à déterminer l’état général et l’état de votre organisation. Il existe également des outils vous permettant de résoudre des problèmes liés à des événements spécifiques (comme un message n'arrivant pas aux destinataires appropriés) et des rapports d'audit pour vous aider à respecter les exigences de conformité.
+Dans les organisations Microsoft 365 avec boîtes aux lettres dans Exchange Online ou les organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, EOP offre de nombreux rapports différents qui peuvent vous aider à déterminer l’état général de votre organisation. Il existe également des outils vous permettant de résoudre des problèmes liés à des événements spécifiques (comme un message n'arrivant pas aux destinataires appropriés) et des rapports d'audit pour vous aider à respecter les exigences de conformité.
 
 ## <a name="usage-reports"></a>Rapports d’utilisation
 
 **Activité des groupes Microsoft 365**: afficher des informations sur le nombre de groupes Microsoft 365 créés et utilisés.
 
-**Activité de** messagerie : afficher des informations sur le nombre de messages envoyés, reçus et lus dans toute votre organisation, et par des utilisateurs spécifiques.
+**Activité de messagerie**: afficher des informations sur le nombre de messages envoyés, reçus et lus dans toute votre organisation, et par des utilisateurs spécifiques.
 
 **Utilisation de l’application de messagerie**: afficher des informations sur les applications de messagerie utilisées. Ceci inclut le nombre total de connexions pour chaque application et les versions de Outlook qui se connectent.
 
@@ -65,7 +65,7 @@ Ces rapports améliorés offrent une expérience de rapport interactive pour les
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Rapports personnalisés à l’aide de Microsoft Graph
 
-Créez par programme des rapports disponibles dans le Centre d’administration à l’aide de Microsoft Graph. Pour plus d’informations, voir [Vue d’ensemble de Microsoft Graph](https://docs.microsoft.com/graph/overview) et utilisation des rapports d’utilisation [d’Office 365 dans Microsoft Graph.](https://docs.microsoft.com/graph/api/resources/report)
+Créez par programme des rapports disponibles dans le Centre d’administration à l’aide de Microsoft Graph. Pour plus d’informations, voir [Vue d’ensemble de Microsoft Graph](/graph/overview) et utilisation des rapports d’utilisation [d’Office 365 dans Microsoft Graph.](/graph/api/resources/report)
 
 ## <a name="message-trace"></a>Suivi des messages
 

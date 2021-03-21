@@ -20,12 +20,12 @@ description: Les administrateurs peuvent apprendre à activer les pièces jointe
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9688af82d194b1818d6bd3323d39bde51db20cb2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 300cb3e004010e8ff22de7393d3f3e039bf8cfdd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286368"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921143"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
@@ -43,9 +43,9 @@ Cet article contient les étapes d’activation et de configuration des pièces 
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com>. Pour aller directement à la page Pièces **jointes sécurisées ATP,** ouvrez <https://protection.office.com/safeattachmentv2> .
 
-- Pour activer les pièces jointes sécurisées pour SharePoint, OneDrive et  Microsoft Teams, vous devez être membre des groupes de rôles Gestion de l’organisation ou Administrateur de la sécurité dans le Centre de sécurité & conformité.  Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+- Pour activer les pièces jointes sécurisées pour SharePoint, OneDrive et  Microsoft Teams, vous devez être membre des groupes de rôles Gestion de l’organisation ou Administrateur de la sécurité dans le Centre de sécurité & conformité.  Pour plus d'informations, voir [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-- Pour utiliser SharePoint Online PowerShell afin d’empêcher les utilisateurs [](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) de télécharger des fichiers malveillants, vous devez être membre des rôles Administrateur général ou Administrateur [SharePoint](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) dans Azure AD.
+- Pour utiliser SharePoint Online PowerShell afin d’empêcher les utilisateurs [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) de télécharger des fichiers malveillants, vous devez être membre des rôles Administrateur général ou [Administrateur SharePoint](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) dans Azure AD.
 
 - Vérifiez que la journalisation d’audit est activée pour votre organisation. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 
@@ -61,19 +61,19 @@ Cet article contient les étapes d’activation et de configuration des pièces 
 
 ### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Utiliser Exchange Online PowerShell pour activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
-Si vous préférez utiliser PowerShell pour activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams, connectez-vous à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) et exécutez la commande suivante :
+Si vous préférez utiliser PowerShell pour activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) et exécutez la commande suivante :
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
 
 ## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Étape 2 : (recommandé) Utiliser SharePoint Online PowerShell pour empêcher les utilisateurs de télécharger des fichiers malveillants
 
 Par défaut, les utilisateurs ne peuvent pas ouvrir, déplacer, copier ou partager des fichiers malveillants détectés par la atp. Toutefois, ils peuvent supprimer et télécharger des fichiers malveillants.
 
-Pour empêcher les utilisateurs de télécharger des fichiers malveillants, connectez-vous [à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et exécutez la commande suivante :
+Pour empêcher les utilisateurs de télécharger des fichiers malveillants, connectez-vous [à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et exécutez la commande suivante :
 
 ```powershell
 Set-SPOTenant -DisallowInfectedFileDownload $true
@@ -84,11 +84,11 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 - Ce paramètre affecte à la fois les utilisateurs et les administrateurs.
 - Les utilisateurs peuvent toujours supprimer des fichiers malveillants.
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 ## <a name="step-3-recommended-use-the-security--compliance-center-to-create-an-alert-policy-for-detected-files"></a>Étape 3 (recommandé) Utiliser le Centre de sécurité & conformité pour créer une stratégie d’alerte pour les fichiers détectés
 
-Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi que d’autres administrateurs, lorsque des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams détectent un fichier malveillant. Pour en savoir plus sur les alertes, voir Créer des alertes d’activité dans le Centre de [sécurité & conformité.](../../compliance/create-activity-alerts.md)
+Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d’autres administrateurs, lorsque des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams détectent un fichier malveillant. Pour en savoir plus sur les alertes, voir Créer des alertes d’activité dans le Centre de [sécurité & conformité.](../../compliance/create-activity-alerts.md)
 
 1. Dans le [Centre de sécurité & conformité,](https://protection.office.com)allez aux **stratégies d’alerte des alertes** \>  ou ouvrez <https://protection.office.com/alertpolicies> .
 
@@ -125,7 +125,7 @@ Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi que d’aut
 
 ### <a name="use-security--compliance-powershell-to-create-an-alert-policy-for-detected-files"></a>Utiliser Security & Compliance PowerShell pour créer une stratégie d’alerte pour les fichiers détectés
 
-Si vous préférez utiliser PowerShell pour créer la même stratégie d’alerte que décrite dans la section précédente, connectez-vous au Centre de sécurité & conformité [PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) et exécutez la commande suivante :
+Si vous préférez utiliser PowerShell pour créer la même stratégie d’alerte que décrite dans la section précédente, connectez-vous au Centre de sécurité & conformité [PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la commande suivante :
 
 ```powershell
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
@@ -133,7 +133,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 **Remarque**: la valeur _gravité par défaut_ est Faible. Pour spécifier Medium ou High, incluez le paramètre _Severity_ et la valeur dans la commande.
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir New-ActivityAlert.](/powershell/module/exchange/new-activityalert)
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
@@ -147,7 +147,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
     Get-AtpPolicyForO365 | Format-List EnableATPForSPOTeamsODB
     ```
 
-    Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365).
+    Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365).
 
 - Pour vérifier que vous avez réussi à bloquer le téléchargement de fichiers malveillants, ouvrez SharePoint Online PowerShell et exécutez la commande suivante pour vérifier la valeur de la propriété :
 
@@ -155,7 +155,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
   Get-SPOTenant | Format-List DisallowInfectedFileDownload
   ```
 
-  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
+  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 - Pour vérifier que vous avez correctement configuré une stratégie d’alerte pour les fichiers détectés, utilisez l’une des étapes suivantes :
 
@@ -167,6 +167,6 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
     Get-ActivityAlert -Identity "<AlertPolicyName>"
     ```
 
-    Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/get-activityalert).
+    Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-ActivityAlert](/powershell/module/exchange/get-activityalert).
 
 - Utilisez le [rapport d’état de la protection](view-email-security-reports.md#threat-protection-status-report) contre les menaces pour afficher des informations sur les fichiers détectés dans SharePoint, OneDrive et Microsoft Teams. Plus précisément, vous pouvez utiliser l’affichage des données **par : Affichage des programmes \> malveillants** de contenu.

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c8608568301f11a20c940a5ff9f1c205ce6e48f1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f646fe7061fb0793fd9922068c9037be21a236cb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930161"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920395"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Fermeture et synthèse de votre pilote Microsoft 365 Defender  
 
@@ -45,7 +45,7 @@ ms.locfileid: "49930161"
 
 Vous êtes actuellement en phase de fermeture et de synthèse.
 
-Vous viennent d’exécuter une simulation d’attaque mémoire uniquement avancée qui exécutait le code à distance sur un contrôleur de domaine. Vous avez vu comment Microsoft Defender pour le point de terminaison et Microsoft Defender pour l’identité détectent et créent des alertes sur les activités malveillantes. Vous avez également vu comment les alertes provenant de différentes sources sont livrées avec d’autres informations contextuelles dans un incident unique dans le portail du Centre de sécurité Microsoft 365. L’expérience d’une telle intégration permet aux analystes SOC d’examiner et de prendre les mesures nécessaires. Vous avez également créé une requête de repérage avancé qui identifiera les e-mails entrants dans lequel l’utilisateur a ouvert ou enregistré la pièce jointe et créé la détection en fonction de cette requête.
+Vous viennent d’exécuter une simulation d’attaque mémoire uniquement avancée qui exécutait le code à distance sur un contrôleur de domaine. Vous avez vu comment Microsoft Defender pour le point de terminaison et Microsoft Defender pour l’identité détectent et créent des alertes sur les activités malveillantes. Vous avez également vu comment les alertes provenant de différentes sources sont remis avec d’autres informations contextuelles dans un incident unique dans le portail centre de sécurité Microsoft 365. L’expérience d’une telle intégration permet aux analystes SOC d’examiner et de prendre les mesures nécessaires. Vous avez également créé une requête de repérage avancé qui identifiera les e-mails entrants dans lequel l’utilisateur a ouvert ou enregistré la pièce jointe et créé la détection en fonction de cette requête.
 
 Vous avez atteint la fin du processus une fois tous les tests terminés.
 
@@ -55,7 +55,7 @@ Le résultat final doit être :
 - Un rapport détaillé des résultats du projet pilote
 - Décision sur la marche à suivre
 
-Présentez les rapports de votre sortie finale aux parties prenantes internes (que vous avez identifiées pendant la phase [de](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) préparation) et aux contacts Microsoft. Un tel effort garantit que tous les commentaires peuvent être utilisés pour améliorer les produits et la documentation.
+Présentez les rapports de votre sortie finale aux parties prenantes internes (que vous avez identifiées pendant la phase [de](./prepare-mtpeval.md) préparation) et aux contacts Microsoft. Un tel effort garantit que tous les commentaires peuvent être utilisés pour améliorer les produits et la documentation.
 
 Nous espérons que vous avez aimé cette simulation. Commencez à implémenter ce que vous avez appris à une plus grande échelle dans votre organisation pour tirer le meilleur partie de la solution de sécurité intégrée.
 

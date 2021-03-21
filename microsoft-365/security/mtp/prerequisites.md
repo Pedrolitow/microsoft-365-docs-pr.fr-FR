@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: afa5cd42545eddafb1d0ec1a6d88eb0903e07820
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0184b2c05121e1ea3bf365263df880548f1b9232
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454550"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918869"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Conditions préalables de Microsoft 365 Defender
 
@@ -52,28 +52,28 @@ L’une de ces licences vous donne accès aux fonctionnalités de Microsoft 365 
 
 Pour plus d’informations, consultez les plans de [service Microsoft 365 Entreprise.](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)
 
-> Vous n’avez pas encore de licence ? [Essayez ou achetez un abonnement Microsoft 365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
+> Vous n’avez pas encore de licence ? [Essayez ou achetez un abonnement Microsoft 365](../../commerce/try-or-buy-microsoft-365.md?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>Vérifiez vos licences existantes
 Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. Dans le Centre d'administration, accédez à **Facturation** > **Licences**.
 
 >[!NOTE]
-> Vous devez avoir le  rôle d’administrateur de facturation ou de lecteur **global** dans [Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) pour pouvoir voir les informations de licence. Si vous rencontrez des problèmes d’accès, veuillez contacter un administrateur général.
+> Vous devez avoir le  rôle d’administrateur de facturation ou de lecteur **global** dans [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) pour pouvoir voir les informations de licence. Si vous rencontrez des problèmes d’accès, veuillez contacter un administrateur général.
 
 ## <a name="required-permissions"></a>Autorisations requises
 Vous devez être administrateur **général ou** **administrateur** de sécurité dans Azure Active Directory pour activer Microsoft 365 Defender. Pour obtenir la liste des rôles requis pour utiliser Microsoft 365 Defender et des informations sur la façon dont l’accès aux données est réglementé, voir la gestion de l’accès à [Microsoft 365 Defender.](mtp-permissions.md)
 
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
-Accédez à Microsoft 365 Defender dans le Centre de sécurité Microsoft 365 à l’aide de Microsoft Edge, d’Internet Explorer 11 ou de tout navigateur web html 5.
+Accédez à Microsoft 365 Defender dans le Centre de sécurité Microsoft 365 à l’aide de Microsoft Edge, d’Internet Explorer 11 ou de tout navigateur web conforme HTML 5.
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilité pour LES ÉTATS-UNIS GCC, GCC High et d’autres institutions gouvernementales des États-Unis
 Actuellement, Microsoft 365 Defender *n’est pas* disponible pour :
-- Cloud communautaire pour le gouvernement américain (GCC)
-- Cloud communautaire pour le gouvernement américain élevé (GCC High)
+- Cloud communautaire du gouvernement américain (GCC)
+- Cloud communautaire du gouvernement américain élevé (GCC High)
 - Département de la Défense des États-Unis
 - Toutes les institutions gouvernementales américaines titulaires de licences commerciales
 
 ## <a name="related-topics"></a>Rubriques connexes
-- [Présentation de Microsoft 365 Defender](microsoft-threat-protection.md)
+- [Vue d’ensemble de Microsoft 365 Defender](microsoft-threat-protection.md)
 - [Activer Microsoft 365 Defender](mtp-enable.md)
 - [Gérer l’accès et les autorisations](mtp-permissions.md)

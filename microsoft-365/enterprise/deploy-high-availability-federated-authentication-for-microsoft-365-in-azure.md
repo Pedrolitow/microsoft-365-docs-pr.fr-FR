@@ -19,16 +19,16 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 'Résumé : Configurez l’authentification fédérée haute disponibilité pour votre abonnement Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: abe01445b8963dcdc5693b45a680e273f5084446
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3989ebb06b4ac5dfa1cded5e07c086c4778f94e7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689983"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919151"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Déployer une authentification fédérée haute disponibilité pour Microsoft 365 dans Azure
 
-Cet article propose des liens vers les instructions pas à pas pour le déploiement de l’authentification fédérée haute disponibilité pour Microsoft 365 dans les services d’infrastructure Azure avec ces machines virtuelles :
+Cet article propose des liens vers les instructions pas à pas pour déployer l’authentification fédérée haute disponibilité pour Microsoft Microsoft 365 dans les services d’infrastructure Azure avec ces machines virtuelles :
   
 - Deux serveurs proxy d’application web
     
@@ -47,12 +47,12 @@ Voici la configuration, avec les noms d’espace réservé pour chaque serveur.
 Toutes les machines virtuelles sont dans un réseau virtuel intersites unique Azure. 
   
 > [!NOTE]
-> L'authentification fédérée d'utilisateurs individuels n'utilise aucune ressource locale. Toutefois, si la connexion entre différents locaux devient indisponible, les contrôleurs de domaine du réseau virtuel ne reçoivent plus les mises à jour des comptes d'utilisateurs et des groupes apportées dans l'instance Active Directory Domain Services locale. Pour l’éviter, vous pouvez configurer une haute disponibilité pour votre connexion entre différents locaux. Pour plus d'informations, consultez [Configuration haute disponibilité pour la connectivité entre les réseaux locaux et la connectivité entre deux réseaux virtuels](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> L'authentification fédérée d'utilisateurs individuels n'utilise aucune ressource locale. Toutefois, si la connexion entre différents locaux devient indisponible, les contrôleurs de domaine du réseau virtuel ne reçoivent plus les mises à jour des comptes d'utilisateurs et des groupes apportées dans l'instance Active Directory Domain Services locale. Pour l’éviter, vous pouvez configurer une haute disponibilité pour votre connexion entre différents locaux. Pour plus d'informations, consultez [Configuration haute disponibilité pour la connectivité entre les réseaux locaux et la connectivité entre deux réseaux virtuels](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Chaque paire de machines virtuelles utilisée pour un rôle spécifique est dans son propre sous-réseau et son propre groupe à haute disponibilité.
   
 > [!NOTE]
-> Étant donné que ce réseau virtuel est connecté au réseau local, cette configuration n'inclut pas de machines virtuelles jumpbox ou de machines virtuelles de surveillance sur un sous-réseau de gestion. Pour plus d'informations, voir l'article relatif à l'[exécution de machines virtuelles Windows pour une architecture n-tiers](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm). 
+> Étant donné que ce réseau virtuel est connecté au réseau local, cette configuration n'inclut pas de machines virtuelles jumpbox ou de machines virtuelles de surveillance sur un sous-réseau de gestion. Pour plus d'informations, voir l'article relatif à l'[exécution de machines virtuelles Windows pour une architecture n-tiers](/azure/guidance/guidance-compute-n-tier-vm). 
   
 Le résultat de cette configuration est que vous aurez une authentification fédérée pour tous vos utilisateurs Microsoft 365, dans laquelle ils peuvent utiliser leurs informations d’identification AD DS pour se connecter plutôt que leur compte Microsoft 365. L’infrastructure d’authentification fédérés utilise un ensemble redondant de serveurs qui sont plus faciles à déployer dans les services d’infrastructure Azure que dans votre réseau de périmètre en local.
   
@@ -98,7 +98,7 @@ Vous déployez cette charge de travail au cours des phases suivantes :
     
 - [Phase 5 : Configurer l’authentification fédérée pour Microsoft 365.](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) Configurez l’authentification fédérée pour votre abonnement Microsoft 365.
     
-Ces articles fournissent un guide normatif, phase par phase, pour une architecture prédéfini afin de créer une authentification fédérée haute disponibilité fonctionnelle pour Microsoft 365 dans les services d’infrastructure Azure. Gardez les éléments suivants à l’esprit :
+Ces articles fournissent un guide normatif, phase par phase, d’une architecture prédéfini pour créer une authentification fédérée haute disponibilité fonctionnelle pour Microsoft 365 dans les services d’infrastructure Azure. Gardez les éléments suivants à l’esprit :
   
 - Si vous êtes un implémenteur d’AD FS expérimenté, n’hésitez pas à adapter les instructions des étapes 3 à 4 et à créer l’ensemble de serveurs qui correspond le mieux à vos besoins. 
     
@@ -109,4 +109,3 @@ Pour créer un environnement de développement/test ou une preuve de concept de 
 ## <a name="next-step"></a>Étape suivante
 
 Démarrer la configuration de la charge de travail avec [Phase 1 : configurer Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
-  

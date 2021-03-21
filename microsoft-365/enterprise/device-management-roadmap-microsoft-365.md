@@ -15,25 +15,25 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Feuille de route de la mise en place de la gestion des appareils pour Microsoft 365.
-ms.openlocfilehash: 79be47d6bc83c124f2203866986e06181a1f7f3d
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749538"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918965"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Gestion des appareils mobiles pour Microsoft 365
 
 Microsoft 365 entreprise inclut des fonctionnalités pour vous aider à gérer les appareils et leurs applications au sein de votre organisation. La gestion des appareils mobiles vous permet de sécuriser et de protéger les ressources de votre organisation.
 
-Deux options s’offrent à vous pour la gestion des appareils :
+Il existe deux options de gestion des appareils :
 
 - [Microsoft Intune](#microsoft-intune)
 - [Mobility + Security de Base](#basic-mobility-and-security)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Vous pouvez utiliser Microsoft Intune pour gérer l’accès à votre organisation à l’aide de la gestion des appareils mobiles ou des applications mobiles. La gestion des appareils mobiles se fait lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois qu’un appareil est inscrit, il s’agit d’un appareil géré . par conséquent, il peut recevoir les stratégies, règles et paramètres de votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, etc.
+Vous pouvez utiliser Microsoft Intune pour gérer l’accès à votre organisation à l’aide de la gestion des appareils mobiles ou de la gestion des applications mobiles. La gestion des appareils mobiles est le cas lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois qu’un appareil est inscrit, il s’agit d’un appareil géré . par conséquent, il peut recevoir les stratégies, règles et paramètres de votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, etc.
 
 Les utilisateurs ayant leurs propres appareils personnels peuvent ne pas vouloir inscrire leurs appareils ou être gérés par Intune et les stratégies de votre organisation. Toutefois, vous devez toujours protéger les ressources et les données de votre organisation. Dans ce scénario, vous pouvez protéger vos applications à l’aide de la gestion des applications mobiles. Par exemple, vous pouvez utiliser une stratégie de gestion des applications mobiles qui oblige un utilisateur à entrer un code confidentiel lors de l’accès à SharePoint Online sur l’appareil.
 
@@ -45,11 +45,11 @@ Il est intégré à Microsoft 365 et vous permet de sécuriser et de gérer les 
 
 ## <a name="choose-between-the-two-options"></a>Choisir entre les deux options
 
-Pour vous aider à mieux évaluer l’option de gestion des appareils la mieux choisie, voir Choisir entre [Basic Mobility Security et Intune.](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
+Pour vous aider à mieux évaluer l’option de gestion des appareils la mieux choisie, voir Choisir entre [Basic Mobility Security et Intune.](/office365/securitycompliance/choose-between-mdm-and-intune)
 
 En fonction de votre évaluation, vous pouvez commencer à gérer vos appareils avec :
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Intune](/mem/intune/fundamentals/planning-guide)
 - [Mobility + Security de Base](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils

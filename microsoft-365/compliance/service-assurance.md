@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Téléchargez des audits tiers, découvrez comment Microsoft protège les données client et découvrez comment vous pouvez vous conformer à la norme ISO, HIPAA, FINRA et FedRAMP lorsque vous utilisez Office 365.
-ms.openlocfilehash: 33ec05512d36ae09d9d31821bf1d49e38aad6de7
-ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
+ms.openlocfilehash: 6d7dafb3493aabe525c266184235a63840ce8785
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49671005"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919560"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Certification de service dans le Centre de sécurité et conformité
 
@@ -60,7 +60,7 @@ Lorsque vous accédez à l’assurance service pour la première fois, la premi�
     
 3. Sélectionnez la flèche vers le bas en regard de **Secteur** et vérifiez les secteurs appropriés pour votre organisation. 
     
-4. Une fois que vous avez sélectionné des régions et des secteurs, **sélectionnez Enregistrer.**
+4. Une fois que vous avez sélectionné des régions et des secteurs, sélectionnez **Enregistrer.**
     
 ## <a name="find-review-and-download-compliance-and-trust-content"></a>Rechercher, examiner et télécharger du contenu de conformité et d’confiance
 <a name="Chooseyourindustryregional"> </a>
@@ -73,7 +73,7 @@ Pour examiner et télécharger du contenu, sélectionnez une option dans le vole
   
 - **Trust documents** to view information about how Microsoft operates Office 365 as shown in the following screen shot. 
     
-    ![Affiche la page d’assurance de service : faire confiance aux documents fournis par Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![Affiche la page d’assurance service : faire confiance aux documents fournis par Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **Contrôles audités** pour afficher des informations sur la façon dont les contrôles Office 365 répondent aux exigences de sécurité, de conformité et de confidentialité, comme illustré dans la capture d’écran suivante. 
     
@@ -95,11 +95,11 @@ Selon votre programme d’affichage spécifique, les options incluses dans votre
 ## <a name="get-help-with-service-assurance"></a>Obtenir de l’aide sur l’assurance de service
 <a name="addother"> </a>
 
-[Contacter le support relatif aux produits d’entreprises - Aide de l’administration](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+[Contacter le support relatif aux produits d’entreprises - Aide de l’administration](../admin/contact-support-for-business-products.md).
   
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 <a name="addother"> </a>
 
- **Pourquoi un message d’erreur me dit-il que les documents de l’assurance service sont endommagés ?**
+ **Pourquoi un message d’erreur me demande-t-il que les documents de l’assurance service sont endommagés ?**
   
-La plupart des documents d’assurance service sont au format PDF. Sélectionnez **Enregistrer** pour enregistrer ces fichiers sur votre ordinateur local, puis ouvrez-les à partir de votre ordinateur local. 
+La plupart des documents d’assurance service sont au format PDF. Sélectionnez **Enregistrer** pour enregistrer ces fichiers sur votre ordinateur local, puis ouvrez-les à partir de votre ordinateur local.

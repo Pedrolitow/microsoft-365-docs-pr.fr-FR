@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 835adc5c2bf9fd1c9a14c2d53b17a032a89a6240
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 76f46f5205380580cbe5b68d7ede91dddb848036
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918893"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Configurer votre environnement de laboratoire d’essai Microsoft 365 Defender 
 
@@ -47,7 +47,7 @@ Vous êtes actuellement en phase de mise en place. Prenez les étapes initiales 
 Inscrivez-vous à un abonnement Office 365 ou Azure Active Directory pour générer un client *.onmicrosoft.com* que vous pouvez utiliser pour vous inscrire à votre licence Microsoft 365 E5. 
 
 >[!NOTE]
->Si vous avez déjà un abonnement Office 365 ou Azure Active Directory, vous pouvez ignorer les étapes de création de la version d’essai ou du client pilote Office 365 E5.
+>Si vous avez déjà un abonnement Office 365 ou Azure Active Directory, vous pouvez ignorer les étapes de création de client pilote ou d’essai Office 365 E5.
 
 Dans cette phase, vous serez guidé vers :
 - Créer un client d’essai Office 365 E5
@@ -62,13 +62,13 @@ Dans cette phase, vous serez guidé vers :
 
    ![Image of_Office page d’essai gratuit 365 E5](../../media/mtp-eval-9.png)
   
-2. Terminez l’inscription de la version d’essai en entrant votre adresse de messagerie (personnelle ou d’entreprise). Cliquez **sur Configurer le compte.**
+2. Terminez l’inscription de la version d’essai en entrant votre adresse e-mail (personnelle ou d’entreprise). Cliquez **sur Configurer le compte.**
 
-   ![Image of_Office page de configuration de l’enregistrement de la version d’essai 365 E5](../../media/mtp-eval-10.png)
+   ![Image of_Office page de configuration de l’inscription de la version d’essai 365 E5](../../media/mtp-eval-10.png)
 
-3. Remplissez votre prénom, nom, numéro de téléphone d’entreprise, nom de société, taille de la société et pays ou région.  
+3. Remplissez votre prénom, nom, numéro de téléphone d’entreprise, nom de la société, taille de la société et pays ou région.  
 
-   ![Image of_Office page de configuration de l’enregistrement de la version d’essai 365 E5 demandant le nom, le téléphone et les détails de la société](../../media/mtp-eval-11.png)
+   ![Image of_Office page de configuration de l’inscription de la version d’essai 365 E5 demandant le nom, le téléphone et les détails de la société](../../media/mtp-eval-11.png)
    
    > [!NOTE]
    > Le pays ou la région que vous définissez ici détermine la région de centre de données où votre Office 365 sera hébergé.
@@ -124,7 +124,7 @@ Dans cette phase, vous serez guidé vers :
 ## <a name="enable-microsoft-365-trial-subscription"></a>Activer l’abonnement d’essai Microsoft 365
 
 >[!NOTE]
->L’inscription à une version d’essai vous donne 25 licences utilisateur à utiliser pendant un mois. Pour plus d’informations, voir Essayer ou acheter [un abonnement M365.](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1)
+>L’inscription à une version d’essai vous donne 25 licences utilisateur à utiliser pendant un mois. Pour plus d’informations, voir Essayer ou acheter un abonnement [M365.](../../commerce/try-or-buy-microsoft-365.md#try-or-buy-a-microsoft-365-subscription-1)
 
 1. À [partir du Centre d’administration Microsoft 365,](https://admin.microsoft.com/)cliquez sur **Facturation,** puis accédez à **Acheter des services.**
 

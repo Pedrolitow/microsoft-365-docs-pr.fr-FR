@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 90c00eb448d6d8f02170a37062af05cb0c0db59d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454635"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919570"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Cette fonctionnalité est en phase aperçu et est sujette à modifications. 
@@ -58,7 +58,7 @@ Pour en savoir plus sur le changement de métadonnées à partir des ressources 
 
 - Billet de blog : [Modifications à venir concernant le stockage des métadonnées de protection des informations Microsoft](https://techcommunity.microsoft.com/t5/microsoft-security-and/upcoming-changes-to-microsoft-information-protection-metadata/ba-p/1904418)
 
-- Ouvrir spécifications : [2.6.3 LabelInfo et propriétés de document personnalisées](https://docs.microsoft.com/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
+- Ouvrir spécifications : [2.6.3 LabelInfo et propriétés de document personnalisées](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
 En raison de ces modifications, n'activez pas ce paramètre si vous avez des applications, services, scripts ou outils dans votre organisation qui lisent ou écrivent des métadonnées d'étiquetage à l'ancien emplacement. Dans ce cas, voici quelques exemples de conséquences :
 
@@ -68,7 +68,7 @@ En raison de ces modifications, n'activez pas ce paramètre si vous avez des app
 
 - La co-édition et l’enregistrement automatique ne fonctionnent pas pour un document étiqueté et chiffré si un autre utilisateur l’a ouvert dans une application de bureau Office qui ne prend pas en charge les nouvelles métadonnées d’étiquetage
 
-- Une règle de flux de messagerie Exchange Online qui [identifie les étiquettes comme des propriétés personnalisées dans les pièces jointes Office](https://docs.microsoft.com/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) ne permet pas de chiffrer le courrier et la pièce jointe, ou les chiffre de manière incorrecte
+- Une règle de flux de messagerie Exchange Online qui [identifie les étiquettes comme des propriétés personnalisées dans les pièces jointes Office](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) ne permet pas de chiffrer le courrier et la pièce jointe, ou les chiffre de manière incorrecte
 
 Consultez la section suivante pour obtenir la liste des applications et services qui prennent en charge ce paramètre et les modifications apportées aux métadonnées d’étiquetage.
 
@@ -108,7 +108,7 @@ Les services Microsoft 365 prennent automatiquement en charge les nouvelles mét
 
 - [Stratégies d’étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [Stratégies de protection contre la perte de données qui utilisent des étiquettes de confidentialité en tant que conditions](dlp-sensitivity-label-as-condition.md)
-- [Microsoft Cloud App Security configuré pour appliquer des étiquettes de niveau de confidentialité](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+- [Microsoft Cloud App Security configuré pour appliquer des étiquettes de niveau de confidentialité](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
 ## <a name="limitations"></a>Limites
 
@@ -125,7 +125,7 @@ Avant d’activer le paramètre de client pour la co-édition de fichiers chiffr
     
     Pour les étiquettes avec l’une de ces configurations de chiffrement, les étiquettes s’affichent dans les applications Office. Toutefois, lorsque les utilisateurs sélectionnent ces étiquettes et que personne d'autre ne modifie le document, ils sont avertis que la co-édition et l'enregistrement automatique ne seront pas disponibles. Si quelqu’un d’autre modifie le document, un message indique à l’utilisateur que les étiquettes ne peuvent pas être appliquées.
 
-- Si vous utilisez le client d’étiquette unifiée Azure Information Protection : consultez la documentation de ce client d' [pour plus d’informations requises ou de limitations](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
+- Si vous utilisez le client d’étiquette unifiée Azure Information Protection : consultez la documentation de ce client d' [pour plus d’informations requises ou de limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
 
 ## <a name="known-issues-for-this-preview"></a>Problèmes connus dans cette préversion
 
@@ -171,7 +171,7 @@ Une fois que vous avez activé la co-édition de fichiers avec des étiquettes d
 
 ![Option indiquant que la co-édition est activée pour les étiquettes de confidentialité.](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-Comme vous le voyez sur la capture d'écran lorsque ce paramètre a été activé, vous pouvez contacter le [Support Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) et demander à ce que ce paramètre soit désactivé. Cette demande peut prendre plusieurs jours et vous devrez prouver que vous êtes un administrateur général pour votre client. Attendez-vous à ce que les frais de support habituels s'appliquent. 
+Comme vous le voyez sur la capture d'écran lorsque ce paramètre a été activé, vous pouvez contacter le [Support Microsoft](/office365/admin/contact-support-for-business-products) et demander à ce que ce paramètre soit désactivé. Cette demande peut prendre plusieurs jours et vous devrez prouver que vous êtes un administrateur général pour votre client. Attendez-vous à ce que les frais de support habituels s'appliquent. 
 
 Si un ingénieur du support technique désactive ce paramètre pour votre client :
 

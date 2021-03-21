@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: b98d2385ee0ae130df115c85010366a5100ab78d
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 30363b544d9016b10dd9aad463d33c40065da0f3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838445"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919810"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>En savoir plus sur la gestion des risques internes dans Microsoft 365
 
@@ -125,7 +125,6 @@ Une fois les cas examinés, les réviseurs peuvent agir rapidement pour résoudr
 Dans les situations les plus graves, vous devrez peut-être partager les informations sur les cas de gestion des risques internes avec d’autres réviseurs ou services de votre organisation. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à résoudre les risques de bout en bout.
 
 - **Advanced eDiscovery**: la escalade d’un cas d’enquête vous permet de transférer des données et la gestion du cas vers Advanced eDiscovery dans Microsoft 365. Advanced eDiscovery fournit un flux de travail intégral pour préserver, collecter, examiner, analyser et exporter du contenu adapté aux examens internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
-- **ServiceNow (prévisualisation)**: ServiceNow est une plateforme cloud computing populaire qui aide les organisations à gérer les flux de travail numériques pour les opérations d’entreprise. La gestion des risques internes prend en charge le partage d’alertes de cas avec votre service ServiceNow et vous permet de créer des incidents et de modifier des demandes liées à des cas de risque internes individuels. Pour en savoir plus sur le partage d’informations d’alerte avec ServiceNow, voir [Partager un cas avec ServiceNow.](insider-risk-management-cases.md#share-the-case)
 - Intégration des API de gestion **Office 365 (prévisualisation)**: la gestion des risques internes prend en charge l’exportation d’informations d’alerte vers les services de gestion des événements et des informations de sécurité (SIEM) via les API de gestion Office 365. Le fait d’avoir accès aux informations d’alerte dans la plateforme la mieux adaptée aux processus de risque de votre organisation vous offre plus de flexibilité dans la façon d’agir sur les activités à risque. Pour en savoir plus sur l’exportation des informations d’alerte avec les API de gestion Office 365, voir [Exporter les alertes.](insider-risk-management-settings.md#export-alerts-preview)
 
 >[!NOTE]

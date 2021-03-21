@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bbb3814a973bec53a877bc70d0299ce7b2eb87b5
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727552"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920563"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés bureau géré Microsoft
 
@@ -46,8 +46,8 @@ Pour être inscrit au Bureau géré Microsoft, un appareil doit être l’un des
 |Dell Latitude 7390 / 7390 2-en-1 / 7490 | 256 Go / Intel i5 / 8 Go de RAM   | Appareil photo ir requis | **9 janvier 2023** |
 |Dell Latitude 7410 / 7410 2-en-1 | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | **19 mai 2025**  |
 |Dell Optiplex 3070 | 128 Go / Intel i3 / 8 Go de RAM | Aucun | **1er mai 2025**  |
-|HP EliteBook 830 / 840 / 850 G5| 128 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS01AV, appareil photo IR ou capteur d’empreinte digitale requis  | **15 février 2023** |
-|HP EliteBook 830 / 840 / 850 G6| 128 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS01AV, appareil photo IR ou capteur d’empreinte digitale requis  | **30 novembre 2023** |
+|HP EliteBook 830 / 840 / 850 G5| 128 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec capteur 5VS01AV, appareil photo IR ou empreinte digitale requis  | **15 février 2023** |
+|HP EliteBook 830 / 840 / 850 G6| 128 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec capteur 5VS01AV, appareil photo IR ou empreinte digitale requis  | **30 novembre 2023** |
 |HP EliteBook 830 / 840 / 850 G7| 128 Go / Intel i5 / 8 Go de RAM | Référence SKU avec 9MZ21AV, appareil photo IR ou capteur d’empreinte digitale requis  | **30 novembre 2024** |
 |HP Elite x2 1013 G3| 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS03AV, caméra IR requise |**14 mai 2023** |
 |HP Elite x2 G4| 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS03AV, caméra IR requise |**31 mai 2024** |
@@ -75,7 +75,7 @@ En outre, l’appareil doit également :
 
 - Avoir une image approuvée par Bureau géré Microsoft. Lorsque vous commandez des appareils, veillez à spécifier qu’ils sont utilisés avec bureau géré Microsoft.
 - Vous n’avez pas terminé l’expérience de première application de Windows.
-- Être inscrit auprès du Bureau géré Microsoft à l’aide de la fonctionnalité [d’inscription des](https://aka.ms/mmddrhelp) appareils
+- Être inscrit auprès du Bureau géré Microsoft à l’aide de la fonctionnalité [d’inscription des](../get-started/register-devices-self.md) appareils
 
 #### <a name="more-help"></a>Plus d’aide
 

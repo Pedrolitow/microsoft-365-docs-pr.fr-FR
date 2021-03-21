@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1636b1deb5f35d8286b33238a8f4bbfff0b33521
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 2f5b1a289f55b7237606782afb8e8f5acf6788a2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288124"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918857"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Fonctionnalités d’aperçu de Microsoft 365 Defender
 
@@ -41,7 +41,7 @@ Le service Microsoft 365 Defender est constamment mis à jour pour inclure de no
 
 Découvrez les nouvelles fonctionnalités de la version d’aperçu de Microsoft 365 Defender et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
 
-Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Microsoft 365 Defender.](whats-new.md)
+Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir Nouveautés [de Microsoft 365 Defender.](whats-new.md)
 
 ## <a name="required-permissions"></a>Autorisations requises
 
@@ -69,10 +69,10 @@ Vous savez que vous avez activé les fonctionnalités d’aperçu lorsque la cas
 Les fonctionnalités et améliorations suivantes sont actuellement disponibles en mode aperçu :
 
 ### <a name="improved-microsoft-365-security-center"></a>Centre de sécurité Microsoft 365 amélioré
-Le [Centre de sécurité Microsoft 365](https://security.microsoft.com) est à présent disponible en préversion publique. Cette nouvelle expérience apporte Defender pour Endpoint, Defender pour Office 365, Microsoft 365 Defender et bien plus encore dans le Centre de sécurité Microsoft 365. Il s’agit du nouvel accueil pour gérer vos contrôles de sécurité. [Découvrir les nouveautés](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
+Le [Centre de sécurité Microsoft 365](https://security.microsoft.com) est à présent disponible en préversion publique. Cette nouvelle expérience introduit Defender pour point de terminaison, Defender pour Office 365, Microsoft 365 Defender et bien plus encore dans le Centre de sécurité Microsoft 365. Il s’agit du nouvel accueil pour gérer vos contrôles de sécurité. [Découvrir les nouveautés](./overview-security-center.md).
 
 - Rapport d’analyse des menaces **[Microsoft 365 Defender](threat-analytics.md)** : l’analyse des menaces vous aide à répondre aux attaques actives et à les réduire. Vous pouvez également en savoir plus sur les tentatives d’attaques bloquées par les solutions Microsoft 365 Defender et prendre des mesures préventives qui atténuent les risques d’exposition supplémentaire et augmentent la résilience. Dans le cadre de l’expérience de sécurité unifiée, l’analyse des menaces est désormais disponible pour les titulaires de licence Microsoft Defender pour Endpoint et Microsoft Defender pour Office E5.
 - API **[Microsoft 365 Defender](api-overview.md)** - Les API Microsoft 365 Defender de niveau supérieur vous permettent d’automatiser les flux de travail en fonction de l’incident partagé et des tables de recherche avancées. 
 - **[Prendre des mesures dans le hunting avancé —](advanced-hunting-take-action.md)** Contenir rapidement des menaces ou traiter les ressources compromises que vous trouvez dans le hunting [avancé](advanced-hunting-overview.md).
 - **[Référence de schéma dans le](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** portail — Obtenez des informations sur les tableaux de schéma de recherche avancée directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
-- **[Fonction DeviceFromIP()](advanced-hunting-devicefromip-function.md)**: permet d’obtenir des informations sur les appareils pour lesquels une ou plusieurs adresses IP spécifiques ont été attribuées à un moment donné.
+- **[Fonction DeviceFromIP()](advanced-hunting-devicefromip-function.md)**: obtenez des informations sur les appareils pour lesquels une ou plusieurs adresses IP spécifiques ont été attribuées à un moment donné.

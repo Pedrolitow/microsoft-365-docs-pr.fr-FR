@@ -20,12 +20,12 @@ ms.custom:
 description: Dans cet article, vous allez apprendre à utiliser le portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c11fced30ef52315ecb44dda51e6825d36b57c7e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: aef3a5946dee9df7d12232c179f23386db459e06
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287520"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921107"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utiliser le portail Retirer d’une liste pour vous supprimer de la liste des expéditeurs bloqués
 
@@ -44,7 +44,7 @@ Microsoft utilise la liste des expéditeurs bloqués pour protéger ses clients 
 
 Vous savez que vous avez été ajouté à la liste si vous recevez une réponse à un courrier électronique incluant une erreur ressemblant à ce qui suit :
 
-> 550 5.7.606-649 Accès refusé, adresse _IP_ d’envoi interdite [ adresse IP ]; Pour demander la suppression de cette liste, visitez <https://sender.office.com/> et suivez les instructions. Pour plus d’informations, [consultez les rapports de non-remise par courrier électronique dans Exchange Online.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
+> 550 5.7.606-649 Accès refusé, adresse _IP_ d’envoi interdite [ adresse IP ]; Pour demander la suppression de cette liste, visitez <https://sender.office.com/> et suivez les instructions. Pour plus d’informations, [consultez les rapports de non-remise par courrier électronique dans Exchange Online.](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
 où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serveur de messagerie.
 
@@ -64,7 +64,7 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
 
 5. Dans le portail Supprimer de la liste, cliquez sur **Supprimer l'adresse IP de la liste**.
 
-    Une fois l’adresse IP supprimée de la liste des expéditeurs bloqués, les messages électroniques provenant de cette adresse IP sont remis aux destinataires qui utilisent Microsoft 365. Assurez-vous donc que les messages électroniques envoyés à partir de cette adresse IP ne seront ni abusifs ni malveillants . Dans le cas contraire, l’adresse IP risque d’être de nouveau bloquée.
+    Une fois l’adresse IP supprimée de la liste des expéditeurs bloqués, les messages électroniques provenant de cette adresse IP sont remis aux destinataires qui utilisent Microsoft 365. Assurez-vous donc que les messages électroniques envoyés à partir de cette adresse IP ne seront pas abusifs ou malveillants ; Dans le cas contraire, l’adresse IP risque d’être de nouveau bloquée.
 
     > [!NOTE]
     > Cela peut prendre jusqu’à 24 heures ou les résultats peuvent varier considérablement avant la suppression des restrictions.

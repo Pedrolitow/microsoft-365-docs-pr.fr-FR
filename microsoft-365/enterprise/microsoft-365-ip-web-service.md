@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Découvrez comment utiliser l’adresse IP et le service web d’URL Office 365 pour mieux identifier et différencier le trafic réseau d’Office 365.
-ms.openlocfilehash: 03e6eac86e66db6f9e94c3f98e6d7b565ffa0f14
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456458"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918953"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Service web d’URL et d’adresses IP Office 365
 
@@ -66,7 +66,7 @@ Ces paramètres sont communs à toutes les méthodes de service web :
 - **format = < JSON | CSV >** : par défaut, le format de données renvoyé est JSON. Utilisez ce paramètre facultatif pour renvoyer les données au format de valeurs séparées par des virgules (CSV).
 - **ClientRequestId =\<guid>**: un GUID requis que vous générez pour association client. Générer un GUID unique pour chaque ordinateur appelant le service Web (les scripts inclus sur cette page génèrent un GUID pour vous). N’utilisez pas les GUID illustrés dans les exemples suivants, car ils peuvent être bloqués par le service web à l’avenir. Format GUID est _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, où x représente un nombre hexadécimal.
 
-  Pour générer un GUID, vous pouvez utiliser la commande PowerShell [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) ou utiliser un service en ligne tel que [générateur de GUID en ligne](https://www.guidgenerator.com/).
+  Pour générer un GUID, vous pouvez utiliser la commande PowerShell [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) ou utiliser un service en ligne tel que [générateur de GUID en ligne](https://www.guidgenerator.com/).
 
 ## <a name="version-web-method"></a>Méthode web version 
 
@@ -180,7 +180,7 @@ Les points de terminaison de la méthode web renvoient tous les enregistrements 
 
 Les paramètres pour les points de terminaison de la méthode web sont :
 
-- **ServiceAreas=<Common | Exchange | SharePoint | Skype >** : une liste de zones de service séparée par des virgules. Éléments valides sont _Common_, _Exchange_, _SharePoint_, et _Skype_. Étant donné que les éléments_Common_ de zone de service sont une condition préalable pour toutes les autres zones de service, le service web les inclura toujours. Si vous n’incluez pas ce paramètre, toutes les zones de service sont renvoyées.
+- **ServiceAreas=<Common | Exchange | SharePoint | Skype >** : une liste de zones de service séparée par des virgules. Éléments valides sont _Common_, _Exchange_, _SharePoint_, et _Skype_. Étant donné que les éléments _Common_ de zone de service sont une condition préalable pour toutes les autres zones de service, le service web les inclura toujours. Si vous n’incluez pas ce paramètre, toutes les zones de service sont renvoyées.
 - **TenantName=<tenant_name>** : nom de votre client Office 365. Le service web prend votre nom fourni et l’insère en plusieurs parties d’URL qui incluent le nom de client. Si vous ne fournissez pas de nom de client, ces composants d’URL ont le caractère générique (\*).
 - **NoIPv6=<true | false>**  : définissez cette option sur _true_ pour exclure les adresses IPv6 du résultat, par exemple, si vous n’utilisez pas IPv6 dans votre réseau.
 - **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** : ce paramètre facultatif spécifie l’instance vers laquelle renvoyer les points de terminaison. Les instances valides sont : _Worldwide_, _China_, _Germany_, _USGovDoD_, and _USGovGCCHigh_.
@@ -273,10 +273,10 @@ Le résultat de la méthode web modifications est un tableau d’enregistrements
 - add : sous-structure détaillant les éléments à ajouter aux collections d’ensembles de points de terminaison.  Omis s’il n’y a aucun ajout.
   — effectiveDate — définit les données lorsque les ajouts seront disponibles dans le service.
   — ips — éléments à ajouter au tableau d’adresses _ips_.
-  — urls — éléments à ajouter au tableau_urls_.
+  — urls — éléments à ajouter au tableau _urls_.
 - remove : sous-structure détaillant les éléments à supprimer de l’ensemble de points de terminaison. Omis si aucune suppression.
-  — ips — éléments à supprimer du tableau d’adresses_ips_.
-  — urls — éléments à supprimer du tableau_urls_.
+  — ips — éléments à supprimer du tableau d’adresses _ips_.
+  — urls — éléments à supprimer du tableau _urls_.
 
 ### <a name="examples"></a>Exemples :
 
@@ -356,7 +356,7 @@ Vous pouvez exécuter un script PowerShell pour voir s’il y a des actions à s
 Ce script effectue les opérations suivantes :
 
 - Vérifie le numéro de version des points de terminaison d’instance dans le monde Office 365 en appelant l’API REST du service Web.
-- Recherche un fichier de version actuelle sur _$Env:TEMP\O365_endpoints_latestversion.txt_. Le chemin d’accès de la variable globale **$Env:TEMP**est généralement _C:\Users\\<username\>\AppData\Local\Temp_.
+- Recherche un fichier de version actuelle sur _$Env:TEMP\O365_endpoints_latestversion.txt_. Le chemin d’accès de la variable globale **$Env:TEMP** est généralement _C:\Users\\<username\>\AppData\Local\Temp_.
 - S’il s’agit de la première fois que le script est exécuté, le script renvoie la version actuelle et toutes les adresses IP et URL actuelles, écrit la version des points de terminaison dans le fichier _$Env:TEMP\O365_endpoints_latestversion.txt_ et les points de terminaison la sortie des données vers le fichier _$Env:TEMP\O365_endpoints_data.txt_. Vous pouvez modifier le chemin d’accès et/ou le nom du fichier de sortie en modifiant les lignes suivantes :
 
     ``` powershell
@@ -365,13 +365,13 @@ Ce script effectue les opérations suivantes :
     ```
 
 - À chaque exécution suivante du script, si la version de service Web la plus récente est identique à la version figurant dans le fichier _O365_endpoints_latestversion.txt_, le script se ferme sans apporter de modifications.
-- Lorsque la dernière version du service Web est plus récente que la version du fichier _O365_endpoints_latestversion.txt_, le script renvoie les points de terminaison et les filtres pour les points de terminaison catégories **autoriser** et **optimiser**, met à jour la version figurant dans le fichier _O365_endpoints_latestversion.txt_ et écrit les données mises à jour dans le fichier_O365_endpoints_data.txt_. 
+- Lorsque la dernière version du service Web est plus récente que la version du fichier _O365_endpoints_latestversion.txt_, le script renvoie les points de terminaison et les filtres pour les points de terminaison catégories **autoriser** et **optimiser**, met à jour la version figurant dans le fichier _O365_endpoints_latestversion.txt_ et écrit les données mises à jour dans le fichier _O365_endpoints_data.txt_. 
 
-Le script génère une _ClientRequestId_ unique pour l’ordinateur sur lequel il est exécuté et réutilise cet ID dans plusieurs appels. Cet ID est stocké dans le fichier_O365_endpoints_latestversion.txt_.
+Le script génère une _ClientRequestId_ unique pour l’ordinateur sur lequel il est exécuté et réutilise cet ID dans plusieurs appels. Cet ID est stocké dans le fichier _O365_endpoints_latestversion.txt_.
 
 ### <a name="to-run-the-powershell-script"></a>Exécution du script PowerShell
 
-1. Copiez le script et enregistrez-le sur votre disque dur local ou sur l’emplacement de votre script sous_Get-O365WebServiceUpdates.ps1_.
+1. Copiez le script et enregistrez-le sur votre disque dur local ou sur l’emplacement de votre script sous _Get-O365WebServiceUpdates.ps1_.
 1. Exécutez le script dans votre éditeur de script favori, tel que le code ISE ou VS PowerShell, ou à partir d’une console PowerShell à l’aide de la commande suivante :
 
     ``` powershell
@@ -607,7 +607,7 @@ Vous pouvez utiliser plusieurs méthodes pour recevoir des notifications par cou
 
 - Pour utiliser une solution de flux Microsoft, voir [utiliser Microsoft Flow pour recevoir un courrier électronique pour les modifications apportées aux adresses IP et URL d’Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Pour déployer une application de logique Azure à l’aide d’un modèle ARM, voir [notification de mise à jour d’Office 365 (v 1.1)](https://aka.ms/ipurlws-updates-template).
-- Pour écrire votre propre script de notification à l’aide de PowerShell, voir [Send-MailMessage](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/send-mailmessage).
+- Pour écrire votre propre script de notification à l’aide de PowerShell, voir [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Exporte un fichier PAC Proxy
 

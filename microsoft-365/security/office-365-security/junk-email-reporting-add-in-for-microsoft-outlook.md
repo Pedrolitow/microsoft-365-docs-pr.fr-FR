@@ -15,12 +15,12 @@ ms.collection:
 description: Découvrez comment installer et utiliser le add-in De rapport de courrier indésirable Microsoft pour signaler le courrier indésirable, le courrier non indésirable et le hameçonnage à Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e22a1364e8d7a1447bbcf518cc339a681c57a8af
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a6386307b24d879cac9dd2390d9080cd2cb8b5b5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286620"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920359"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installer et utiliser le add-in Junk Email Reporting pour Microsoft Outlook
 
@@ -34,13 +34,13 @@ ms.locfileid: "50286620"
 > [!NOTE]
 > Si vous n’utilisez pas actuellement le add-in Junk [](enable-the-report-message-add-in.md) E-mail Reporting, [](enable-the-report-phish-add-in.md) il est recommandé de le faire à la place. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Le junk email reporting Add-in pour Microsoft Outlook permet aux utilisateurs d’envoyer des faux positifs (message électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Microsoft. Si votre organisation n’utilise pas Exchange Online Protection (par exemple, Exchange local ou des services de messagerie autres qu’Exchange Online), l’envoi de votre rapport de courrier indésirable n’affecte pas votre filtrage du courrier indésirable.
+Le add-in Junk Email Reporting pour Microsoft Outlook permet aux utilisateurs de soumettre des faux positifs (courrier électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Microsoft. Si votre organisation n’utilise pas Exchange Online Protection (par exemple, Exchange local ou des services de messagerie autres qu’Exchange Online), l’envoi de votre rapport de courrier indésirable n’affecte pas votre filtrage du courrier indésirable.
 
 Cette rubrique explique comment installer et utiliser le add-in Junk Email Reporting.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour installer le add-in Junk Email Reporting, consultez la section [Install the Junk Email Reporting add-in](#install-the-junk-email-reporting-add-in) later in this article.
+- Pour installer le add-in Junk Email Reporting, consultez la section Installer le [add-in Junk Email Reporting](#install-the-junk-email-reporting-add-in) plus loin dans cet article.
 
 - Le add-in Junk Email Reporting fonctionne avec les versions suivantes d’Outlook :
 
@@ -61,7 +61,7 @@ Cette rubrique explique comment installer et utiliser le add-in Junk Email Repor
 
      ![Signaler le courrier indésirable ou le hameçonnage à partir du clic droit](../../media/junk-email-reporting-right-click.png)
 
-   - Sélectionnez plusieurs messages, cliquez avec le bouton droit, puis sélectionnez **Signaler** comme courrier indésirable **ou Signaler comme hameçonnage.**
+   - Sélectionnez plusieurs messages, cliquez avec le bouton droit, puis sélectionnez **Signaler comme** courrier indésirable ou Signaler **comme hameçonnage.**
 
      ![Signaler plusieurs messages électroniques de courrier indésirable ou de hameçonnage à partir du clic droit](../../media/junk-email-reporting-right-click-multiple.png)
 
@@ -116,13 +116,13 @@ Cette rubrique explique comment installer et utiliser le add-in Junk Email Repor
   - **32 bits**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
   - **64 bits**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- Pour Outlook 2013 ou une édition ultérieure, le seul prérequis est Microsoft .NET Framework 2.0. Dans Windows 10, vous n’installez pas .NET Framework 2.0 à partir d’un téléchargement.
+- Pour Outlook 2013 ou une ultérieure, le seul prérequis est Microsoft .NET Framework 2.0. Dans Windows 10, vous n’installez pas .NET Framework 2.0 à partir d’un téléchargement.
 
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Installer le add-in Junk Email Reporting à l’aide de l’Assistant Installation
 
 1. Sur votre ordinateur, fermez Outlook.
 
-2. Dans Windows 10, vérifiez que .NET Framework 2.0 est activé. Pour obtenir des instructions, voir [Activer .NET Framework 3.5 dans le Panneau de contrôle.](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
+2. Dans Windows 10, vérifiez que .NET Framework 2.0 est activé. Pour obtenir des instructions, [voir Activer la .NET Framework 3.5 dans le Panneau de contrôle.](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
 
 3. Recherchez le fichier .msi que vous avez téléchargé et double-cliquez dessus.
 
@@ -216,7 +216,7 @@ Après avoir fermé Outlook, utilisez l’une des procédures suivantes pour dé
 
 - **Panneau de commande**: appuyez sur la touche Windows + R. Dans la **boîte de** dialogue Exécuter qui s’ouvre, `control appwiz.cpl` entrez, puis cliquez sur **OK.**
 
-  Recherchez et **sélectionnez le** module de signalement du courrier indésirable Microsoft dans la liste, puis cliquez sur **Désinstaller.**
+  Recherchez et **sélectionnez le** module de rapport de courrier indésirable Microsoft dans la liste, puis cliquez sur **Désinstaller.**
 
 - **Package Windows Installer**: recherchez ou téléchargez le fichier .msi approprié, puis double-cliquez dessus.
 
@@ -260,7 +260,7 @@ Pour résoudre ce problème, faites les étapes suivantes :
 2. Créez et envoyez un message de test, puis vérifiez que le destinataire a reçu le message.
 3. Si le problème persiste, contactez votre administrateur.
 
-Pour d’autres méthodes que vous pouvez utiliser pour envoyer des messages à Microsoft, voir [Signaler les messages et les fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
+Pour d’autres méthodes que vous pouvez utiliser pour envoyer des messages à Microsoft, voir Signaler les messages et [les fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
 ### <a name="troubleshooting-for-admins"></a>Résolution des problèmes pour les administrateurs
 

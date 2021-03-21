@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de capture de pages Web à partir de Globanet dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 5d793bea8a22d9908551fff67c9d27afffdf1d86
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: de1e181670f1efc2e758b666dc3a26337a294ee2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619820"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920798"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Configurer un connecteur pour archiver des données de page web
 
@@ -37,7 +37,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 3. Le connecteur de capture de page web que vous créez dans le Centre de conformité Microsoft 365 se connecte au site Globanet Merge1 tous les jours et transfère les éléments de page web vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments de page web convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage utilisateur automatique, comme décrit à l’étape [3.](#step-3-map-users-and-complete-the-connector-setup) Un sous-dossier du dossier Boîte de réception nommé Capture de page **web** est créé dans les boîtes aux lettres de l’utilisateur et les éléments de la page web sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque élément de page web contient cette propriété, qui est remplie avec les adresses de messagerie fournies lorsque vous configurez le connecteur de capture de page web à [l’étape 2](#step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site).
+4. Le connecteur importe les éléments de page web convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage utilisateur automatique, comme décrit à l’étape [3.](#step-3-map-users-and-complete-the-connector-setup) Un sous-dossier du dossier Boîte de réception nommé Capture de page **web** est créé dans les boîtes aux lettres de l’utilisateur et les éléments de page web sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque élément de page web contient cette propriété, qui est remplie avec les adresses de messagerie fournies lorsque vous configurez le connecteur de capture de page web à [l’étape 2](#step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -45,7 +45,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Vous devez travailler avec la prise en charge globanet pour configurer un format de fichier personnalisé pour convertir les éléments de page web. Pour plus d’informations, consultez le guide utilisateur Merge1 Third-Party Connectors dans 
 
-- L’utilisateur qui crée le connecteur de capture de pages Web à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+- L’utilisateur qui crée le connecteur de capture de page web à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 ## <a name="step-1-set-up-the-webpage-capture-connector"></a>Étape 1 : Configurer le connecteur de capture de page web
 
@@ -61,9 +61,9 @@ La première étape consiste à accéder aux **connecteurs** de données et à c
 
 5. Connectez-vous à votre compte Merge1 pour configurer le connecteur.
 
-## <a name="step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site"></a>Étape 2 : Configurer le connecteur de capture de page web sur le site Globanet Merge1
+## <a name="step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site"></a>Étape 2 : Configurer le connecteur de capture de pages web sur le site Globanet Merge1
 
-La deuxième étape consiste à configurer le connecteur de capture de page web sur le site Globanet Merge1. Pour plus d’informations sur la configuration du connecteur de capture de pages web, voir le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur de capture de pages web sur le site Globanet Merge1. Pour plus d’informations sur la configuration du connecteur de capture de pages web, voir le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
 
 Une fois que vous avez **cliqué sur Enregistrer & terminé,** la **page** Mappage de l’utilisateur dans l’Assistant Connecteur dans le Centre de conformité Microsoft 365 s’affiche.
 
@@ -87,4 +87,4 @@ Après avoir créé le connecteur de capture de pages Web, vous pouvez afficher 
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

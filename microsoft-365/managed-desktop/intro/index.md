@@ -9,17 +9,17 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 07d3d50f012b2d93e9f7a75f47b0c35514b51350
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840934"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920619"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
 
 
-Microsoft Managed Desktop est un service basé sur le cloud qui réunit [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)(y compris [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise and [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) et ajoute ces fonctionnalités :
+Microsoft Managed Desktop est un service basé sur le cloud qui réunit [Microsoft 365 Enterprise](../../enterprise/microsoft-365-overview.md)(y compris [Windows 10](/windows/windows-10/) Enterprise and [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) et ajoute ces fonctionnalités :
 
 - Déploiement de l’appareil d’un utilisateur
 - Gestion et exploitation des services informatiques
@@ -44,7 +44,7 @@ Nos stratégies et notre base de référence en matière de sécurité offrent a
 - Les temps de démarrage des appareils Bureau géré Microsoft sont environ un quart plus longs.
 - Au moins deux fois la durée de vie de la batterie
 - Environ un tiers de plus de crashs d'appareils par an
-- Mobilité des appareils à travers[l’Itinérance de l’Etat Entreprise](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), permettant aux utilisateurs de bénéficier de la même expérience quel que soit l'appareil auquel ils se connectent
+- Mobilité des appareils à travers[l’Itinérance de l’Etat Entreprise](/azure/active-directory/devices/enterprise-state-roaming-overview), permettant aux utilisateurs de bénéficier de la même expérience quel que soit l'appareil auquel ils se connectent
 
 Les administrateurs informatiques bénéficient des fonctionnalités suivantes :
 
@@ -58,7 +58,7 @@ Bureau géré Microsoft prend en charge la gestion des appareils enregistrés et
 
 - **Matériel :** au lieu de faire rechercher et tester les appareils (et leurs pilotes) par votre service informatique, des appareils spécifiques sont soigneusement testés par Bureau géré Microsoft, ce qui permet d'établir une [liste d'appareils](../service-description/device-list.md) organisée répondant aux exigences de performance à l'échelle de l'entreprise et garantissant leur fonctionnement avec le service. Vous pouvez soit vous procurer les appareils vous-même (ou travailler avec un partenaire), soit réutiliser les appareils que vous avez déjà, à condition qu'ils figurent sur la liste approuvée. L'inscription des appareils est simple et facile, et avant leur déploiement, vous pouvez également [personnaliser](../working-with-managed-desktop/config-setting-overview.md) certains aspects de l'expérience des appareils pour vos utilisateurs.
 - **Mises à jour :** Bureau géré Microsoft configure et gère tous les aspects des [groupes de déploiement](../service-description/updates.md) pour les mises à jour de qualité et de fonctionnalités de Windows 10, les pilotes, les micrologiciels, les définitions des anti-virus et les mises à jour de Microsoft 365 Apps for enterprise. Cela comprend des tests et des vérifications approfondies de toutes les mises à jour, afin de s'assurer que les appareils enregistrés sont toujours à jour et de minimiser les perturbations, libérant ainsi votre département informatique de cette tâche permanente.
-- **Applications :** dans le cadre de Microsoft 365 Entreprise, Microsoft fournit (et gère) plusieurs applications Microsoft clés pour vous. Vous avez probablement aussi d'autres applications dont vous avez besoin pour votre entreprise. Au lieu de faire tester, conditionner et déployer ces applications par votre département informatique, Microsoft vous aide à les déployer et peut vous assister avec [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) si nécessaire. Pour en savoir plus, consultez la rubrique [Applications dans Bureau géré Microsoft](../get-ready/apps.md).
+- **Applications :** dans le cadre de Microsoft 365 Entreprise, Microsoft fournit (et gère) plusieurs applications Microsoft clés pour vous. Vous avez probablement aussi d'autres applications dont vous avez besoin pour votre entreprise. Au lieu de faire tester, conditionner et déployer ces applications par votre département informatique, Microsoft vous aide à les déployer et peut vous assister avec [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) si nécessaire. Pour en savoir plus, consultez la rubrique [Applications dans Bureau géré Microsoft](../get-ready/apps.md).
 
 
 ## <a name="device-monitoring"></a>Surveillance des appareils
@@ -79,7 +79,7 @@ Si Microsoft Managed Desktop semble convenir à votre organisation, vous pouvez 
 - [Technologies associées de Bureau géré Microsoft](technologies.md)
 - [Bureau géré Microsoft et ITIL](../MMD-and-ITSM.md)
 - [Conformité](compliance.md)
-- [Description du service Bureau géré Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
+- [Description du service Bureau géré Microsoft](../service-description/index.md)
 
 **Préparez-vous à l'inscription :** ces sujets décrivent les étapes à suivre dans votre organisation pour vous préparer à l'inscription, notamment la vérification du fait que votre environnement respecte les principales conditions préalables, la configuration des réseaux, la mise en place des certificats et la préparation de vos applications.
 
@@ -114,4 +114,3 @@ Si Microsoft Managed Desktop semble convenir à votre organisation, vous pouvez 
 <!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
- 
