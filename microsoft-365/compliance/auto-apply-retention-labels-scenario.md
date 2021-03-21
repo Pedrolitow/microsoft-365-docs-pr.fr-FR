@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Comment vous pouvez utiliser les étiquettes de rétention pour gérer le cycle de vie des documents dans SharePoint en utilisant des métadonnées pour classifier le contenu, appliquer automatiquement les étiquettes et utiliser la rétention basée sur les événements pour démarrer la période de rétention.
-ms.openlocfilehash: 2e691ac843d7989a4bc09c55000dc17c3fb1ffff
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 5962b02468b31dda247d03807ef184955c53b83c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774069"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907856"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Cet article décrit la gestion du cycle de vie des documents stockés dans SharePoint à l’aide d’étiquettes de rétention appliquées automatiquement et de la rétention basée sur les événements.
 
@@ -37,7 +37,7 @@ Dans cet article, nous examinerons l'architecture de l'information et la défini
 
 Notre scénario est celui d'une entreprise de fabrication qui utilise SharePoint pour stocker tous les documents relatifs aux produits qu'elle développe. Ces documents incluent les spécifications du produit, les accords avec des fournisseurs et les manuels de l’utilisateur. Lorsque ces documents sont stockés dans SharePoint par le biais de politiques de gestion de contenu d'entreprise, des métadonnées de document sont définies, qui sont utilisées pour les classer. Chaque document possède les propriétés de métadonnées suivantes :
 
-- **Type de document** (tel que spécification de produit, accord ou manuel d'utilisation)
+- **Type de document**(tel que spécification de produit, accord ou manuel d'utilisation)
 
 - **Nom du produit**
 
@@ -52,11 +52,11 @@ Ces métadonnées forment un type de contenu de base appelé *Document de produc
 
 Nous pouvons avoir plusieurs types de contenu qui représentent différents types de documents, mais concentrons-nous sur la documentation du produit.
 
-Dans ce scénario, nous utilisons le service de gestion des métadonnées et le Term Store pour créer un ensemble de termes pour *le type de document* et un autre pour le *nom du produit* . Pour chaque ensemble de termes, nous créons un terme pour chaque valeur. Cela ressemblerait à quelque chose comme ça dans Term Store pour votre organisation SharePoint :
+Dans ce scénario, nous utilisons le service de gestion des métadonnées et le Term Store pour créer un ensemble de termes pour *le type de document* et un autre pour le *nom du produit*. Pour chaque ensemble de termes, nous créons un terme pour chaque valeur. Cela ressemblerait à quelque chose comme ça dans Term Store pour votre organisation SharePoint :
 
 ![Sample term set for product documentation in Term Store](../media/SPRetention2.png)
 
-*Le type de contenu* peut être créé et publié en utilisant le [centre de types de contenu](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b). Vous pouvez également créer et publier un type de contenu en utilisant des outils de provisionnement de site, tels que le [cadre de provisionnement PnP](https://docs.microsoft.com/sharepoint/dev/solution-guidance/pnp-provisioning-framework) ou [le schéma JSON de conception de site](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type).
+*Le type de contenu* peut être créé et publié en utilisant le [centre de types de contenu](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b). Vous pouvez également créer et publier un type de contenu en utilisant des outils de provisionnement de site, tels que le [cadre de provisionnement PnP](/sharepoint/dev/solution-guidance/pnp-provisioning-framework) ou [le schéma JSON de conception de site](/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type).
 
 Chaque produit dispose d'un site SharePoint dédié qui contient une bibliothèque de documents dont les types de contenu appropriés sont activés. Tous les documents sont stockés dans cette bibliothèque de documents.
 
@@ -101,13 +101,13 @@ Voici le [plan de gestion de fichiers](file-plan-manager.md) l’étiquette de r
 
 - **Description pour les utilisateurs :** Conserver pendant 5 ans après l'arrêt de la production.
 
-- **Description pour les admins :** Conserver pendant 5 ans après l'arrêt de la production, suppression automatique, conservation en fonction des événements, le type d'événement est *Arrêt du produit* .
+- **Description pour les admins :** Conserver pendant 5 ans après l'arrêt de la production, suppression automatique, conservation en fonction des événements, le type d'événement est *Arrêt du produit*.
 
 - **Action de rétention :** Conserver et supprimer.
 
 - **Retention duration:** 5 ans (1 825 jours).
 
-- **Étiquette d’enregistrement**  : Configurer l’étiquette de rétention pour marquer les éléments comme [enregistrement](records-management.md#records), ce qui signifie que les documents étiquetés ne peuvent pas être modifiés ou supprimés par les utilisateurs.
+- **Étiquette d’enregistrement** : Configurer l’étiquette de rétention pour marquer les éléments comme [enregistrement](records-management.md#records), ce qui signifie que les documents étiquetés ne peuvent pas être modifiés ou supprimés par les utilisateurs.
 
 - **Descripteurs de plans de gestion de fichiers :** Pour simplifier le scénario, aucun descripteur de fichier facultatif n'est fourni.
 
@@ -116,23 +116,23 @@ La capture d'écran suivante montre les paramètres lorsque vous créez l'étiqu
 ![Paramètres de conservation pour le label de spécification du produit](../media/SPRetention5.png)
 
 > [!NOTE]
-> Pour éviter une attente de 5 ans pour la suppression d'un document, fixez la durée de conservation à * **1 jour** _ si vous recréez ce scénario dans un environnement de test.
+> Pour éviter une attente de 5 ans pour la suppression d'un document, fixez la durée de conservation à ***1 jour*** si vous recréez ce scénario dans un environnement de test.
 
 ### <a name="create-an-event-type-when-you-create-a-retention-label"></a>Créer un type d'événement lorsque vous créez un label de conservation
 
-1. Dans la page _ *Définir les paramètres de rétention* * de l’assistant de création d’étiquette de rétention, derrière **Démarrer la période de rétention sur la base de** , sélectionnez **Créer un nouveau type d’événement** :
+1. Dans la page **Définir les paramètres de rétention** de l’assistant de création d’étiquette de rétention, derrière **Démarrer la période de rétention sur la base de**, sélectionnez **Créer un nouveau type d’événement** :
     
     ![Créer un nouveau type d'événement pour la boîte de dialogue de l’étiquette Spécification du produit.](../media/SPRetention6.png)
 
-3. Dans la page **Nommer votre type d’événement** , entrez **Arrêt du produit** et une description facultative. Sélectionnez ensuite **Suivant** , **Envoyer** , puis **Terminé** .
+3. Dans la page **Nommer votre type d’événement**, entrez **Arrêt du produit** et une description facultative. Sélectionnez ensuite **Suivant**, **Envoyer**, puis **Terminé**.
 
-4. Une fois de retour dans la page **Définir les paramètres de rétention** , pour **Démarrer la période de rétention sur la base de** , utilisez la zone déroulante pour sélectionner le type d’événement **Arrêt du produit** que vous avez créé.
+4. Une fois de retour dans la page **Définir les paramètres de rétention**, pour **Démarrer la période de rétention sur la base de**, utilisez la zone déroulante pour sélectionner le type d’événement **Arrêt du produit** que vous avez créé.
     
     Voici à quoi ressemblent les paramètres de l’étiquette de rétention de Spécification du produit : 
     
    ![Paramètres de la nouvelle étiquette Spécification du produit](../media/SPRetention7.png)
 
-6. Sélectionnez **Créer une étiquette** : les options permettant de la publier s’affichent dans la page suivante. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Enregistrez simplement l’étiquette pour l'instant** , puis sélectionnez **Terminé** . 
+6. Sélectionnez **Créer une étiquette** : les options permettant de la publier s’affichent dans la page suivante. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Enregistrez simplement l’étiquette pour l'instant**, puis sélectionnez **Terminé**. 
     
     > [!TIP]
     > Pour des étapes plus détaillées, consultez la rubrique [Créer une étiquette dont la période de rétention est basée sur un événement](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
@@ -141,42 +141,42 @@ Voyons maintenant comment appliquer automatiquement l'étiquette de rétention a
 
 ## <a name="auto-apply-retention-labels-to-documents"></a>Appliquer automatiquement des étiquettes de rétention à des documents
 
-Nous allons utiliser le Keyword Query Language (KQL) pour [appliquer automatiquement](apply-retention-labels-automatically.md)les étiquettes de rétention que nous avons créées. KQL est le langage qui est utilisé pour construire les requêtes de recherche. Dans KQL, vous pouvez effectuer des recherches en utilisant des mots clés ou des propriétés gérées. Pour plus d'informations, voir [Référence syntaxique du mot-clé KQL (Keyword Query Language)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+Nous allons utiliser le Keyword Query Language (KQL) pour [appliquer automatiquement](apply-retention-labels-automatically.md)les étiquettes de rétention que nous avons créées. KQL est le langage qui est utilisé pour construire les requêtes de recherche. Dans KQL, vous pouvez effectuer des recherches en utilisant des mots clés ou des propriétés gérées. Pour plus d'informations, voir [Référence syntaxique du mot-clé KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Fondamentalement, nous voulons dire à Microsoft 365 d'appliquer **l'étiquette de conservation de la spécification de produit** à tous les documents qui ont un **statut** de **final** et un **type de document** de **spécification de produit** . Rappelons que **Statut** et **Type de document** sont les colonnes du site que nous avons définies pour le type de contenu Documentation produit dans [la section Architecture](#information-architecture) de l'information. Pour ce faire, nous devons configurer le schéma de recherche.
+Fondamentalement, nous voulons dire à Microsoft 365 d'appliquer **l'étiquette de conservation de la spécification de produit** à tous les documents qui ont un **statut** de **final** et un **type de document** de **spécification de produit**. Rappelons que **Statut** et **Type de document** sont les colonnes du site que nous avons définies pour le type de contenu Documentation produit dans [la section Architecture](#information-architecture) de l'information. Pour ce faire, nous devons configurer le schéma de recherche.
 
-Lorsque SharePoint indexe le contenu, il génère automatiquement des propriétés analysées pour chaque colonne de site. Pour ce scénario, nous sommes intéressés par les propriétés **Type de document** et **État** . Nous avons besoin de documents dans la bibliothèque qui sont du bon type de contenu et dont les colonnes du site sont remplies pour la recherche afin de créer les propriétés analysées.
+Lorsque SharePoint indexe le contenu, il génère automatiquement des propriétés analysées pour chaque colonne de site. Pour ce scénario, nous sommes intéressés par les propriétés **Type de document** et **État**. Nous avons besoin de documents dans la bibliothèque qui sont du bon type de contenu et dont les colonnes du site sont remplies pour la recherche afin de créer les propriétés analysées.
 
 Dans le centre d'administration de SharePoint, ouvrez la configuration de recherche et sélectionnez **Gérer le schéma de recherche** pour afficher et configurer les propriétés analysées.
 
 ![Propriétés analysées dans le schéma de recherche](../media/SPRetention8.png)
 
-Si nous tapons **_statut_*_ dans la boîte _* Propriétés analysées** et que nous sélectionnons la flèche verte, nous devrions voir un résultat comme celui-ci :
+Si nous tapons **statut** _ dans la _ *boîte propriétés analysées** et que nous sélectionnons la flèche verte, nous devrions voir un résultat comme celui-ci :
 
 ![La propriété analysée ows_Status](../media/SPRetention9.png)
 
 La **propriété\_\_ows Status** (remarquez le double soulignement) est celle qui nous intéresse. Il correspond à la **propriété Statut** du type de contenu du document de production.
 
-Maintenant, si nous tapons * *_ows\_document_* _et sélectionnons la flèche verte, nous devrions voir quelque chose comme ceci :
+Maintenant, si nous tapons ***ows\_document*** et sélectionnons la flèche verte, nous devrions voir quelque chose comme ceci :
 
 ![La propriété analysée ows_Doc_Type](../media/SPRetention10.png)
 
-La _ *propriété \_de type ows document\_x0020\_est la deuxième* * propriété qui nous intéresse. Il correspond à la **propriété Type de document** du type de contenu du document de production.
+La **propriété \_de type ows document\_x0020\_est la deuxième** propriété qui nous intéresse. Il correspond à la **propriété Type de document** du type de contenu du document de production.
 
 > [!TIP]
-> Pour identifier le nom d'une propriété analysées pour ce scénario, allez à la bibliothèque de documents qui contient les documents de production. Ensuite, allez dans les paramètres de la bibliothèque. Pour **les colonnes** , sélectionnez le nom de la colonne (par exemple, **Statut** ou **Type de document** ) pour ouvrir la page de la colonne du site.           Le paramètre *Champ* dans l’URL de la page contient le nom du champ. Ce nom de champ, préfixé avec « ows_ », est le nom de la propriété analysée. Par exemple, l’URL `https://tenantname.sharepoint.com/sites/SpinningWidget/_layouts/15/FldEdit.aspx?List=%7BC38C2F45-3BD6-4C3B-AA3B-EF5DF6B3D172%7D&Field=_Status` correspond à *ows\_\_État* propriété analysée.
+> Pour identifier le nom d'une propriété analysées pour ce scénario, allez à la bibliothèque de documents qui contient les documents de production. Ensuite, allez dans les paramètres de la bibliothèque. Pour **les colonnes**, sélectionnez le nom de la colonne (par exemple, **Statut** ou **Type de document**) pour ouvrir la page de la colonne du site.           Le paramètre *Champ* dans l’URL de la page contient le nom du champ. Ce nom de champ, préfixé avec « ows_ », est le nom de la propriété analysée. Par exemple, l’URL `https://tenantname.sharepoint.com/sites/SpinningWidget/_layouts/15/FldEdit.aspx?List=%7BC38C2F45-3BD6-4C3B-AA3B-EF5DF6B3D172%7D&Field=_Status` correspond à *ows\_\_État* propriété analysée.
 
 Si les propriétés analysées que vous recherchez n'apparaissent pas dans la section Gérer le schéma de recherche dans le centre d'administration de SharePoint :
 
-- Peut-être que les documents n'ont pas été indexés. Vous pouvez forcer une réindexation de la bibliothèque en allant à **Paramètres de la bibliothèque de documents** > **Paramètres  avancés** .
+- Peut-être que les documents n'ont pas été indexés. Vous pouvez forcer une réindexation de la bibliothèque en allant à **Paramètres de la bibliothèque de documents** > **Paramètres  avancés**.
 
 - Si la bibliothèque de documents se trouve sur un site moderne, assurez-vous que l’administrateur SharePoint est également un administrateur de collection de sites.
 
-Pour plus d’informations sur les propriétés gérées et analysées, voir [A propos des propriétés gérées créées automatiquement dans le serveur SharePoint](https://docs.microsoft.com/sharepoint/technical-reference/automatically-created-managed-properties-in-sharepoint).
+Pour plus d’informations sur les propriétés gérées et analysées, voir [A propos des propriétés gérées créées automatiquement dans le serveur SharePoint](/sharepoint/technical-reference/automatically-created-managed-properties-in-sharepoint).
 
 ### <a name="map-crawled-properties-to-pre-defined-managed-properties"></a>Cartographie des propriétés analysées vers des propriétés gérées prédéfinies
 
-KQL ne peut pas utiliser les propriétés analysées dans les requêtes de recherche. Elle doit utiliser une propriété gérée. Dans un scénario de recherche typique, nous créons une propriété gérée et la mettons en correspondance avec la propriété analysée dont nous avons besoin. Toutefois, pour l'application automatique des étiquettes de conservation, vous pouvez uniquement spécifier des propriétés gérées prédéfinies dans KQL, et non des propriétés gérées personnalisées. Il existe un ensemble de propriétés gérées prédéfinies dans le système pour les chaînes *RefinableString00* à *RefinableString199* que vous pouvez utiliser.         Pour obtenir la liste complète, voir [Propriétés gérées non utilisées par défaut](https://docs.microsoft.com/sharepoint/manage-search-schema#default-unused-managed-properties). Ces propriétés gérées par défaut sont généralement utilisées pour définir des affinements de recherche.
+KQL ne peut pas utiliser les propriétés analysées dans les requêtes de recherche. Elle doit utiliser une propriété gérée. Dans un scénario de recherche typique, nous créons une propriété gérée et la mettons en correspondance avec la propriété analysée dont nous avons besoin. Toutefois, pour l'application automatique des étiquettes de conservation, vous pouvez uniquement spécifier des propriétés gérées prédéfinies dans KQL, et non des propriétés gérées personnalisées. Il existe un ensemble de propriétés gérées prédéfinies dans le système pour les chaînes *RefinableString00* à *RefinableString199* que vous pouvez utiliser.         Pour obtenir la liste complète, voir [Propriétés gérées non utilisées par défaut](/sharepoint/manage-search-schema#default-unused-managed-properties). Ces propriétés gérées par défaut sont généralement utilisées pour définir des affinements de recherche.
 
 Pour que la requête KQL applique automatiquement l'étiquette de conservation correcte au contenu du document du produit, nous faisons correspondre les propriétés analysées **ows\_ Document\_x0020\_Type* et *ows\_\_Statut** à deux propriétés gérées raffinées.                Dans notre environnement de test pour ce scénario, **RefinableString00** et **RefinableString01** ne sont pas utilisés.            Nous l'avons déterminé en examinant **la gestion des propriétés** dans **le schéma de recherche** du centre d'administration de SharePoint.             
 
@@ -186,61 +186,61 @@ Notez que la colonne **Propriétés analysées mappées** de la capture d’écr
 
 Pour cartographier la **propriété de l'ows\_document\_x0020\_Type** analysée suivez ces étapes :  
 
-1. Dans la zone de filtre **Propriété gérée** , tapez *_RefinableString00_* _ puis sélectionnez la flèche verte.
+1. Dans la zone de filtre **Propriété gérée**, tapez **_RefinableString00_** puis sélectionnez la flèche verte.
 
-2. Dans la liste des résultats, sé le lien _ *RefinableString00* *, puis faites défiler vers le bas jusqu’à la section **Mappages aux propriétés analysées** .  
+2. Dans la liste des résultats, sé le lien **RefinableString00**, puis faites défiler vers le bas jusqu’à la section **Mappages aux propriétés analysées**.  
 
-3. Sélectionnez **Ajouter un mappage** , puis tapez **_ows\_Doc\_x0020\_Type_*_ dans la _* zone Rechercher un nom de propriété analysée** dans la fenêtre **Sélection de propriété analysée** . Sélectionnez **Rechercher** .  
+3. Sélectionnez **Ajouter un mappage**, puis tapez **_ows\_Doc\_x0020\_Type_*_ dans la _* zone Rechercher un nom de propriété analysée** dans la fenêtre **Sélection de propriété analysée**. Sélectionnez **Rechercher**.  
 
-4. Dans la liste des résultats, sélectionnez **ows\_doc\_x0020\_Type** puis sélectionnez **OK** .
+4. Dans la liste des résultats, sélectionnez **ows\_doc\_x0020\_Type** puis sélectionnez **OK**.
 
-   Dans la section **Propriétés analysées mappées** , vous devriez voir quelque chose de semblable à la capture d’écran suivante :
+   Dans la section **Propriétés analysées mappées**, vous devriez voir quelque chose de semblable à la capture d’écran suivante :
 
    [ ![Sélectionnez Ajouter une cartographie dans la section Propriétés cartographiées et analysées](../media/SPRetention13.png) ](../media/SPRetention13.png#lightbox)
 
 
 5. Faites défiler jusqu'au bas de la page et sélectionnez **OK** pour enregistrer la cartographie.      
 
-Répétez ces étapes pour cartographier **RefinableString01** et **ows\_\_Status** .           
+Répétez ces étapes pour cartographier **RefinableString01** et **ows\_\_Status**.           
 
 Maintenant, vous devriez avoir deux propriétés gérées qui correspondent aux deux propriétés analysées :
 
 [ ![Les propriétés gérées sont présentées sous forme de cartes pour les propriétés analysées](../media/SPRetention14.png) ](../media/SPRetention14.png#lightbox).
 
-Vérifions que notre configuration est correcte en lançant une recherche d'entreprise. Dans un navigateur, allez *https://\<your_tenant>.sharepoint.com/search* .         Dans la boîte de recherche, tapez * **RefinableString00 : «Spécification du produit »** _ et appuyez sur la touche Entrée. Cette recherche devrait renvoyer tous les documents qui ont une _*Spécification de produit* * de * *_Type document_*_ .
+Vérifions que notre configuration est correcte en lançant une recherche d'entreprise. Dans un navigateur, allez *https://\<your_tenant>.sharepoint.com/search*.         Dans la boîte de recherche, tapez ***RefinableString00 : «Spécification du produit »** _ et appuyez sur la touche Entrée. Cette recherche devrait renvoyer tous les documents qui ont une _ *Spécification de produit** de **_Type document_**.
 
-Dans la zone de recherche, tapez _*RefinableString00 : « Spécification de produit » et RefinableString01 :final* *, puis appuyez sur Entrer. Celle-ci doit renvoyer tous les documents qui ont **Spécification de produit** de * *_Type de document_*_ et un _*Statut* * de * *_Final_*_ .
+Dans la boîte de recherche, tapez **RefinableString00: « Spécification du produit » ET RefinableString01:Final** et appuyez sur entrée. Il doit retourner tous les documents qui ont une **Spécification de produit** de **_Type document_*_ et un _* statut** de **_document final_**.
 
 ### <a name="create-auto-apply-label-policies"></a>Créer des politiques d'application automatique des étiquettes
 
 Maintenant que vérification a été faite que la requête KQL fonctionne, créons une stratégie d’application automatique d'étiquettes utilisant une requête KQL pour appliquer automatiquement l'étiquette de rétention Spécification du produit sur les documents appropriés.
 
-1. Dans le [centre de conformité](https://compliance.microsoft.com/homepage), allez à _ *Gestion des enregistrements* * > **Politiques d'étiquetage** > **Appliquer automatiquement un label** .
+1. Dans le [centre de conformité](https://compliance.microsoft.com/homepage), allez à **Gestion des enregistrements** > **Politiques d'étiquetage** > **Appliquer automatiquement un label**.                
 
    [ ![Sélectionnez « Auto-appliquer un label » sur la page Label](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
-2. Dans l’assistant de création de stratégie d’étiquetage automatique, sur la page **Nommer votre stratégie d’étiquetage automatique** , entrez un nom tel que **Application automatique d’étiquette Spécification du produit** et une description facultative. Ensuite, sélectionnez **Suivant** .
+2. Dans l’assistant de création de stratégie d’étiquetage automatique, sur la page **Nommer votre stratégie d’étiquetage automatique**, entrez un nom tel que **Application automatique d’étiquette Spécification du produit** et une description facultative. Ensuite, sélectionnez **Suivant**.
 
-3. Dans la page **Choisir le type de contenu auquel vous voulez appliquer cette étiquette** , sélectionnez **Appliquer une étiquette au contenu incluant des mots ou des phrases spécifiques** , ou des propriétés, puis sélectionnez **Suivant** .
+3. Dans la page **Choisir le type de contenu auquel vous voulez appliquer cette étiquette**, sélectionnez **Appliquer une étiquette au contenu incluant des mots ou des phrases spécifiques**, ou des propriétés, puis sélectionnez **Suivant**.
     
    [ ![Sélectionnez Appliquer l’étiquette au contenu incluant des mots ou des phrases spécifiques, ou des propriétés](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
     
-   Cette option permet de fournir la même requête de recherche KQL que celle que nous avons testée dans la section précédente. Cette requête renvoie tous les documents de spécification de produit qui ont un statut de *Final* . Lorsque cette requête est utilisée dans la stratégie d'applicage automatique d’étiquette, l'étiquette de rétention Spécification du produit sera automatiquement appliquée à tous les documents qui y correspondent.
+   Cette option permet de fournir la même requête de recherche KQL que celle que nous avons testée dans la section précédente. Cette requête renvoie tous les documents de spécification de produit qui ont un statut de *Final*. Lorsque cette requête est utilisée dans la stratégie d'applicage automatique d’étiquette, l'étiquette de rétention Spécification du produit sera automatiquement appliquée à tous les documents qui y correspondent.
 
-4. Dans la page **Appliquer l’étiquette au contenu correspondant à cette requête** , tapez **RefinableString00:"Spécification du produit" ET RefinableString01:Final** , puis sélectionnez **Suivant** .
+4. Dans la page **Appliquer l’étiquette au contenu correspondant à cette requête**, tapez **RefinableString00:"Spécification du produit" ET RefinableString01:Final**, puis sélectionnez **Suivant**.
 
    ![Spécifiez la requête dans la zone Éditeur de requête de mot clé](../media/SPRetention19.png)
 
-5. Dans la page **Choisir des emplacements auxquels appliquer la stratégie** , sélectionnez les emplacements de contenu auxquels vous voulez appliquer la stratégie. Pour ce scénario, nous appliquons la politique uniquement aux sites SharePoint, car tous les documents de production sont stockés dans des bibliothèques de documents SharePoint. Basculez l’état de **Courrier Exchange** , **Comptes OneDrive** et **Groupes Microsoft 365** sur **Désactivé** . Assurez-vous que le statut des sites SharePoint est défini sur **Activé** avant de sélectionner **Suivant** : 
+5. Dans la page **Choisir des emplacements auxquels appliquer la stratégie**, sélectionnez les emplacements de contenu auxquels vous voulez appliquer la stratégie. Pour ce scénario, nous appliquons la politique uniquement aux sites SharePoint, car tous les documents de production sont stockés dans des bibliothèques de documents SharePoint. Basculez l’état de **Courrier Exchange**, **Comptes OneDrive** et **Groupes Microsoft 365** sur **Désactivé**. Assurez-vous que le statut des sites SharePoint est défini sur **Activé** avant de sélectionner **Suivant** : 
     
     ![Choisissez des sites spécifiques auxquels appliquer automatiquement des étiquettes](../media/SPRetentionSPlocations.png)
     
    > [!TIP]
    > Plutôt que d’appliquer la stratégie à tous les sites SharePoint, vous pouvez sélectionner **Choisir un site** et ajouter les URL de sites SharePoint spécifiques.
 
-6. Dans la page **Choisir une étiquette à appliquer automatiquement** , sélectionnez **Ajouter une étiquette** .
+6. Dans la page **Choisir une étiquette à appliquer automatiquement**, sélectionnez **Ajouter une étiquette**.
 
-7. Dans la liste d’étiquettes de rétention, sélectionnez **Spécification du produit** . Sélectionnez ensuite **Ajouter** puis **Suivant** .
+7. Dans la liste d’étiquettes de rétention, sélectionnez **Spécification du produit**. Sélectionnez ensuite **Ajouter** puis **Suivant**.
 
 8. Vérifiez vos paramètres :
 
@@ -259,7 +259,7 @@ Consultez également les propriétés des documents de la bibliothèque de docum
 
 [ ![Vérifiez que l’étiquette a été appliquée en examinant les propriétés du document dans la bibliothèque de documents](../media/SPRetention21.png) ](../media/SPRetention21.png#lightbox)
 
-Comme les étiquettes de conservation ont été appliquées automatiquement aux documents, ceux-ci sont protégés contre la suppression car l'étiquette de conservation a été configurée pour déclarer les documents comme des *enregistrements* . À titre d'exemple de cette protection, nous recevons le message d'erreur suivant lorsque nous essayons de supprimer l'un de ces documents :
+Comme les étiquettes de conservation ont été appliquées automatiquement aux documents, ceux-ci sont protégés contre la suppression car l'étiquette de conservation a été configurée pour déclarer les documents comme des *enregistrements*. À titre d'exemple de cette protection, nous recevons le message d'erreur suivant lorsque nous essayons de supprimer l'un de ces documents :
 
 [ ![Un message d'erreur indique que les documents ne peuvent pas être supprimés car l'étiquette déclare que les documents sont des enregistrements.](../media/SPRetention22.png) ](../media/SPRetention22.png#lightbox)
 
@@ -267,26 +267,26 @@ Comme les étiquettes de conservation ont été appliquées automatiquement aux 
 
 Maintenant que les étiquettes de conservation sont appliquées, concentrons-nous sur l'événement qui indiquera la fin de la production pour un produit particulier. Cet événement déclenche le début de la période de conservation qui est définie dans les étiquettes de conservation. Par exemple, pour les cahiers des charges des produits, la période de conservation de 5 ans commence lorsque l'événement « fin de la production est déclenché.
 
-Vous pouvez créer manuellement l'événement dans le centre de conformité Microsoft 365 en vous rendant **sur la page Événements de** > **gestion des enregistrements** .                Vous devez choisir le type d'événement, définir les bons numéros d'identification d’élément des actifs et entrer une date pour l'événement. Pour plus d'informations, voir [Commencer la rétention lorsqu'un événement se produit](event-driven-retention.md).                
+Vous pouvez créer manuellement l'événement dans le centre de conformité Microsoft 365 en vous rendant **sur la page Événements de** > **gestion des enregistrements**.                Vous devez choisir le type d'événement, définir les bons numéros d'identification d’élément des actifs et entrer une date pour l'événement. Pour plus d'informations, voir [Commencer la rétention lorsqu'un événement se produit](event-driven-retention.md).                
 
-Mais pour ce scénario, nous allons générer automatiquement l'événement à partir d'un système de production externe. Le système est une simple liste SharePoint qui indique si un produit est en cours de production. Un flux [Power Automate](https://docs.microsoft.com/flow/getting-started) associé à la liste qui déclenchera l'événement.        Dans un scénario réel, vous pourriez utiliser différents systèmes pour générer l'événement, tels qu'un système de RH ou de CRM. Power Automate contient de nombreuses interactions prêtes à l'emploi et des éléments de base pour les charges de travail de Microsoft 365, comme Microsoft Exchange, SharePoint, Teams et Dynamics 365, ainsi que des applications tierces comme Twitter, Box, Salesforce et Workdays. Cette fonctionnalité permet d'intégrer facilement Power Automate à divers systèmes. Pour plus d’informations, voir[Automatiser la rétention basée sur un événement](automate-event-driven-retention.md).
+Mais pour ce scénario, nous allons générer automatiquement l'événement à partir d'un système de production externe. Le système est une simple liste SharePoint qui indique si un produit est en cours de production. Un flux [Power Automate](/flow/getting-started) associé à la liste qui déclenchera l'événement.        Dans un scénario réel, vous pourriez utiliser différents systèmes pour générer l'événement, tels qu'un système de RH ou de CRM. Power Automate contient de nombreuses interactions prêtes à l'emploi et des éléments de base pour les charges de travail de Microsoft 365, comme Microsoft Exchange, SharePoint, Teams et Dynamics 365, ainsi que des applications tierces comme Twitter, Box, Salesforce et Workdays. Cette fonctionnalité permet d'intégrer facilement Power Automate à divers systèmes. Pour plus d’informations, voir[Automatiser la rétention basée sur un événement](./event-driven-retention.md#automate-events-by-using-a-rest-apiautomate-events-by-using-a-rest-api).
 
 La capture d’écran suivante montre la liste SharePoint qui sera utilisée pour déclencher l’événement :
 
 [ ![La liste qui déclenchera l'événement de rétention](../media/SPRetention23.png) ](../media/SPRetention23.png#lightbox)
 
-Il y a deux produits actuellement en production, comme l'indique le **_Oui_*_ dans la colonne _* En production** . Lorsque la valeur dans cette colonne est définie sur *_Aucun_* _ pour un produit, le flux associé à la liste génère automatiquement l’événement. L'événement déclenche le début de la période de conservation de l'étiquette de conservation qui a été appliquée automatiquement sur les documents du produit correspondant.
+Il y a deux produits actuellement en production, comme l'indique le **Oui** _ dans la colonne _ *En production**. Lorsque la valeur dans cette colonne est définie sur **_Aucun_** pour un produit, le flux associé à la liste génère automatiquement l’événement. L'événement déclenche le début de la période de conservation de l'étiquette de conservation qui a été appliquée automatiquement sur les documents du produit correspondant.
 
 Pour ce scénario, nous utilisons le flux suivant pour déclencher l’événement :
 
 [ ![Configuration du flux qui déclenchera l’événement](../media/SPRetention24.png) ](../media/SPRetention24.png#lightbox)
 
-Pour créer ce flux, commencez à partir d’un connecteur SharePoint, puis sélectionnez le déclencheur _*Lorsqu’un élément est créé ou modifié* *. Spécifiez l’adresse du site et le nom de la liste. Ajoutez ensuite une condition basée sur le moment auquel la valeur de la colonne liste **En production** est défini sur * *_Aucun_*_ (ou égal à _false* dans la carte de condition). Ajoutez ensuite une action basée sur le modèle HTTP intégré. Utilisez les valeurs de la section suivante pour configurer l’action HTTP. Vous pouvez copier les valeurs des propriétés **URI** et **Body** de la section suivante et les coller dans le modèle.                     
+Pour créer ce flux, commencez à partir d’un connecteur SharePoint et sélectionnez le déclencheur **Lorsqu’un élément est créé ou modifié**. Précisez l'adresse du site et le nom de la liste. Ajoutez ensuite une condition basée sur le moment où la valeur de la colonne de la liste **En production** est définie sur **_Non_* _ (ou égale à _faux sur la carte de condition). Ajoutez ensuite une action basée sur le modèle HTTP intégré. Utilisez les valeurs de la section suivante pour configurer l’action HTTP. Vous pouvez copier les valeurs des propriétés **URI** et **Body** de la section suivante et les coller dans le modèle.                     
 
-- **Method**  : PUBLIER
-- **URI**  : `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
-- **Headers**  : Clé = Type de contenu, Valeur = application/atom+xml
-- **Body**  :
+- **Method** : PUBLIER
+- **URI** : `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+- **Headers** : Clé = Type de contenu, Valeur = application/atom+xml
+- **Body** :
     
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'>
@@ -306,17 +306,17 @@ Pour créer ce flux, commencez à partir d’un connecteur SharePoint, puis sél
 
 Cette liste décrit les paramètres dans la propriété **Body** de l'action qui doivent être configurés pour ce scénario :
 
-- **Nom** : Ce paramètre spécifie le nom de l'événement qui sera créé dans le centre de conformité Microsoft 365. Pour ce scénario, le nom est  Arrêt de la production *xxx* ,où *xxx* est la valeur de la propriété gérée **ProductName** que nous avons créée précédemment.      
-- **EventType**  : la valeur de ce paramètre correspond au type d’événement auquel l’événement créé s'applique. Ce type d’événement a été défini lors de la création de l’étiquette de rétention. Pour ce scénario, le type d'événement est « Arrêt du produit ».
-- **SharePointAssetIdQuery** : Ce paramètre définit les identifiants des actifs pour l'événement. La conservation basée sur un événement nécessite un identifiant unique pour le document. Nous pouvons utiliser les identifications des actifs pour identifier les documents auxquels un événement particulier s'applique ou, comme dans ce scénario, la colonne de métadonnées **Nom du produit** . Pour ce faire, nous devons créer une nouvelle propriété gérée **ProductName** qui peut être utilisée dans la requête KQL.      (On pourrait aussi utiliser **RefinableString00** au lieu de créer une nouvelle propriété gérée).                 Nous devons également mettre en correspondance cette nouvelle propriété gérée avec la propriété **ows_Product_x0020_Name** analysée.              Voici une capture d’écran de cette propriété gérée.
+- **Nom**: Ce paramètre spécifie le nom de l'événement qui sera créé dans le centre de conformité Microsoft 365. Pour ce scénario, le nom est  Arrêt de la production *xxx*,où *xxx* est la valeur de la propriété gérée **ProductName** que nous avons créée précédemment.      
+- **EventType** : la valeur de ce paramètre correspond au type d’événement auquel l’événement créé s'applique. Ce type d’événement a été défini lors de la création de l’étiquette de rétention. Pour ce scénario, le type d'événement est « Arrêt du produit ».
+- **SharePointAssetIdQuery**: Ce paramètre définit les identifiants des actifs pour l'événement. La conservation basée sur un événement nécessite un identifiant unique pour le document. Nous pouvons utiliser les identifications des actifs pour identifier les documents auxquels un événement particulier s'applique ou, comme dans ce scénario, la colonne de métadonnées **Nom du produit**. Pour ce faire, nous devons créer une nouvelle propriété gérée **ProductName** qui peut être utilisée dans la requête KQL.      (On pourrait aussi utiliser **RefinableString00** au lieu de créer une nouvelle propriété gérée).                 Nous devons également mettre en correspondance cette nouvelle propriété gérée avec la propriété **ows_Product_x0020_Name** analysée.              Voici une capture d’écran de cette propriété gérée.
 
     [ ![Propriété gérée par la rétention](../media/SPRetention25.png) ](../media/SPRetention25.png#lightbox)
 
-- **EventDateTime** : Ce paramètre définit la date à laquelle l'événement se produit. Utilisez le format de la date actuelle :<br/><br/>*formatDateTime(utcNow(), 'yyyy-MM-dd'* )
+- **EventDateTime**: Ce paramètre définit la date à laquelle l'événement se produit. Utilisez le format de la date actuelle :<br/><br/>*formatDateTime(utcNow(), 'yyyy-MM-dd'*)
 
 ### <a name="putting-it-all-together"></a>Tout mettre ensemble
 
-Maintenant, l'étiquette de rétention est créée et appliquée automatiquement, et le flux est configuré et créé. Lorsque la valeur de la colonne **En production** pour le produit widget de rotation de la liste Produits est remplacée de **_Oui_*_ à _*_Non_*_, le flux est déclenché pour créer l’événement. Pour afficher cet événement dans le centre de conformité, accédez à _* Gestion des enregistrements** > **Événements** .
+Maintenant, l'étiquette de rétention est créée et appliquée automatiquement, et le flux est configuré et créé. Lorsque la valeur de la colonne **En production** pour le produit widget de rotation de la liste Produits est remplacée de **_Oui_*_ à _*_Non_*_, le flux est déclenché pour créer l’événement. Pour afficher cet événement dans le centre de conformité, accédez à _* Gestion des enregistrements** > **Événements**.
 
 [ ![L'événement qui a été déclenché par le flux est affiché sur la page Événements dans le centre de conformité.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
 
@@ -328,7 +328,7 @@ Mais après un certain délai, le statut de l'événement indique qu'un site Sha
 
 ![Les détails de l'événement montrent que les documents ont été traités.](../media/SPRetention31.png)
  
-Cela montre que la période de conservation du label appliqué au document du produit Spinning Widget a été lancée, sur la base de la date de l'événement *Arrêt de la production Spinning Widget* . En supposant que vous ayez mis en œuvre le scénario dans votre environnement de test en configurant une période de conservation d'une journée, vous pouvez vous rendre à la bibliothèque de documents de votre produit quelques jours après la création de l'événement et vérifier que le document a été supprimé (après l'exécution du travail de suppression dans SharePoint).
+Cela montre que la période de conservation du label appliqué au document du produit Spinning Widget a été lancée, sur la base de la date de l'événement *Arrêt de la production Spinning Widget*. En supposant que vous ayez mis en œuvre le scénario dans votre environnement de test en configurant une période de conservation d'une journée, vous pouvez vous rendre à la bibliothèque de documents de votre produit quelques jours après la création de l'événement et vérifier que le document a été supprimé (après l'exécution du travail de suppression dans SharePoint).
 
 ### <a name="more-about-asset-ids"></a>En savoir plus sur l'identification des actifs
 
@@ -336,7 +336,7 @@ Comme [l'explique l'article Démarrer la rétention lorsqu'un événement se pro
 
 ![La propriété d’identification d’élément est affichée sur une page de détail des propriétés du document.](../media/SPRetention26.png)
 
-Comme le montre la capture d'écran suivante, le bien géré par l’identification d’élément est appelé **ComplianceAssetId** .    
+Comme le montre la capture d'écran suivante, le bien géré par l’identification d’élément est appelé **ComplianceAssetId**.    
 
 [ ![Propriété gérée par ComplianceAssetId](../media/SPRetention27.png) ](../media/SPRetention27.png#lightbox)
 
