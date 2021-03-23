@@ -14,26 +14,26 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6a182556c68a472145f9d4eac69c8915653a67df
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904935"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994593"
 ---
 # <a name="create-a-new-topic"></a>Création d’un projet 
 
-Dans Rubriques de Topics, vous pouvez créer une rubrique si une rubrique n’est pas découverte par le biais de l’indexation ou si la technologie d’IA n’a pas trouvé suffisamment de preuves pour l’établir en tant que rubrique.
+Dans Rubriques de Topics, vous pouvez créer une rubrique si aucune rubrique n’est découverte via l’indexation ou si la technologie d’IA n’a pas trouvé suffisamment de preuves pour l’établir en tant que sujet.
 
 > [!Note] 
 > Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations sur les personnes dans une rubrique créée manuellement sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher la rubrique. 
 
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour créer une rubrique, vous devez :
 - Vous avez une licence Topics.
-- Avoir des autorisations [**sur qui peut créer ou modifier des rubriques**](./topic-experiences-user-permissions.md). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres des rubriques Topics. 
+- Avoir des autorisations [**sur Qui peut créer ou modifier des rubriques**](./topic-experiences-user-permissions.md). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres d’autorisations de la rubrique Rubriques. 
 
 > [!Note] 
 > Les utilisateurs qui sont autorisés à gérer des rubriques dans le centre de rubriques (gestionnaires de connaissances) sont déjà autorisés à créer et modifier des rubriques.
@@ -66,7 +66,7 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
 
     ![Description de la rubrique](../media/knowledge-management/description.png)</br>
 
-4. Dans la section <b>Personnes épinglées,</b> vous pouvez « épingler » une personne pour l’afficher en tant qu’expert en la matière. Commencez par taper son nom ou <b></b> son adresse de messagerie dans la zone Ajouter un nouvel utilisateur, puis sélectionnez l’utilisateur à ajouter dans les résultats de la recherche. Vous pouvez également les « désépiner » en sélectionnant l’icône Supprimer <b>de</b> la liste sur la carte utilisateur. Vous pouvez également faire glisser la personne pour modifier l’ordre d’apparition de la liste de personnes.
+4. Dans <b>la</b> section Personnes épinglées, vous pouvez « épingler » une personne pour l’afficher comme ayant une connexion à la rubrique (par exemple, un propriétaire d’une ressource connectée). Commencez par taper son nom ou <b></b> son adresse de messagerie dans la zone Ajouter un nouvel utilisateur, puis sélectionnez l’utilisateur à ajouter dans les résultats de la recherche. Vous pouvez également les « désépiner » en sélectionnant l’icône Supprimer <b>de</b> la liste sur la carte utilisateur. Vous pouvez également faire glisser la personne pour modifier l’ordre d’apparition de la liste de personnes.
  
     ![Personnes épinglées](../media/knowledge-management/pinned-people.png)</br>
 
@@ -83,17 +83,17 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
     > Les fichiers et les pages que vous ajoutez doivent se trouver dans le même client Microsoft 365. Si vous souhaitez ajouter un lien vers une ressource externe dans la rubrique, vous pouvez l’ajouter via l’icône de zone de dessin à l’étape 8.
 
 
-6.  La section <b>Sites associés</b> présente les sites qui ont des informations sur la rubrique. 
+6.  La section <b>Sites associés</b> présente les sites qui ont des informations sur cette rubrique. 
 
     ![Section Sites associés](../media/knowledge-management/related-sites.png)</br>
 
-    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site, ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
+    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
     
     ![Sélectionner un site](../media/knowledge-management/sites.png)</br>
 
 7. La <b>section Rubriques connexes</b> présente les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une <b></b> autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
 
-   ![Rubriques connexes](../media/knowledge-management/related-topic.png)</br>  
+   ![Voir aussi](../media/knowledge-management/related-topic.png)</br>  
 
     Vous pouvez ensuite donner une description de la façon dont les rubriques sont liées, puis sélectionner <b>Mettre à jour.</b></br>
 
@@ -121,7 +121,7 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
 
 9. Sélectionnez **Publier** pour enregistrer vos modifications. 
 
-Une fois que vous avez publié la page, le nom de la rubrique, l’autre nom, la description et les personnes épinglées s’affichent à tous les utilisateurs sous licence qui affichent la rubrique. Des fichiers, des pages et des sites spécifiques apparaissent uniquement sur la page de rubrique si la visionneuse dispose d’autorisations Office 365 sur l’élément. 
+Une fois que vous avez publié la page, le nom de la rubrique, l’autre nom, la description et les personnes épinglées s’affichent à tous les utilisateurs sous licence qui affichent la rubrique. Des fichiers, des pages et des sites spécifiques apparaissent uniquement sur la page de rubrique si la visionneuse dispose des autorisations Office 365 sur l’élément. 
 
 
 

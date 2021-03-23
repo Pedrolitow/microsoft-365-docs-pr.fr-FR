@@ -12,12 +12,12 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Suivez ces recommandations pour Exchange Online Protection (EOP) autonome afin de vous configurer pour réussir et d’éviter les erreurs de configuration courantes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a6a9fd0dfc654ca37fdd5168b3ecc0c4486f9d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e968316e23fe2d8e68795318f8e0785a662c8aea
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924455"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994557"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Meilleures pratiques pour la configuration d’EOP autonome
 
@@ -44,6 +44,8 @@ Nous permettent aux administrateurs de sécurité de personnaliser leurs paramè
 
 Ces paramètres couvrent une gamme de fonctionnalités en dehors des stratégies de sécurité.
 
+<br>
+
 ****
 
 |Nom de la fonctionnalité de sécurité|Standard|Strict|Commentaire|
@@ -57,8 +59,8 @@ Ces paramètres couvrent une gamme de fonctionnalités en dehors des stratégies
 |L’audit unifié doit être activé|Oui|Oui||
 |[Connectivité IMAP à la boîte aux lettres](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Désactivé|Désactivé||
 |[Connectivité POP à la boîte aux lettres](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Désactivé|Désactivé||
-|Envoi SMTP authentifié|Désactivé|Désactivé|L’envoi SMTP client authentifié (également appelé envoi SMTP client ou AUTHENTIFICATION SMTP) est requis pour que les clients POP3 et IMAP4 envoient des courriers électroniques.|
-|Connectivité EWS à la boîte aux lettres|Désactivé|Désactivé||
+|Envoi SMTP authentifié|Désactivé|Désactivé|L’envoi SMTP client authentifié (également appelé envoi SMTP client ou AUTHENTIFICATION SMTP) est requis pour les clients et les appareils POP3 et IMAP4 qui génèrent et envoient des messages électroniques. <p> Pour obtenir des instructions pour activer et désactiver SMTP AUTH de manière globale ou sélective, voir Activer ou désactiver l’envoi SMTP de client authentifié [dans Exchange Online.](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)|
+|Connectivité EWS à la boîte aux lettres|Désactivé|Désactivé|Outlook utilise les services web Exchange pour les paramètres de libre/occupé, d’in-bureau et de partage de calendrier. Si vous ne pouvez pas désactiver EWS globalement, vous avez les options suivantes : <ul><li>Utilisez des [stratégies d’authentification](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) pour empêcher EWS d’utiliser l’authentification de base si vos clients la prise en charge de l’authentification moderne (authentification moderne).</li><li>Utilisez les [règles d’accès client](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) pour limiter EWS à des utilisateurs spécifiques ou à des adresses IP sources.</li><li>Contrôler l’accès EWS à des applications spécifiques globalement ou par utilisateur. Pour obtenir des instructions, voir [Contrôler l’accès à EWS dans Exchange.](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)</li></ul> <p> Le [add-in](enable-the-report-message-add-in.md) Message [](enable-the-report-phish-add-in.md) de rapport et le module de signalement de hameçonnage utilisent REST par défaut dans les environnements pris en charge, mais reviennent à EWS si REST n’est pas disponible. Les environnements pris en charge qui utilisent REST sont :<ul><li>Exchange Online</li><li>Exchange 2019 ou Exchange 2016</li><li>Outlook pour Windows actuel à partir d’un abonnement Microsoft 365 ou d’un achat one-time Outlook 2019.</li><li>Outlook pour Mac actuel à partir d’un abonnement Microsoft 365 ou d’un achat one-time Outlook pour Mac 2016 ou version ultérieure.</li><li>Outlook pour iOS et Android</li><li>Outlook sur le web</li></ul>|
 |[Connectivité PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)|Désactivé|Désactivé|Disponible pour les utilisateurs de boîtes aux lettres ou les utilisateurs de messagerie (objets utilisateur renvoyés par la cmdlet [Get-User).](/powershell/module/exchange/get-user)|
 |Utiliser [la veille contre l’usurpation](learn-about-spoof-intelligence.md) d’adresse pour ajouter des expéditeurs à votre liste d’adresses|Oui|Oui||
 |[Blocage du périphérie basé sur l’annuaire (DBEB)](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Activé|Activé|Type de domaine = Faisant autorité|
@@ -67,7 +69,7 @@ Ces paramètres couvrent une gamme de fonctionnalités en dehors des stratégies
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-Résolution des problèmes généraux et des tendances à l’aide des rapports dans le Centre d’administration. Pour trouver des données concernant un point précis d'un message, utilisez l'outil de suivi des messages. Pour plus d'informations sur la génération de rapports, consultez la rubrique [Création de rapports et suivi des messages dans Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). En savoir plus sur l’outil de suivi des messages dans le suivi des messages dans le [Centre de sécurité & conformité.](message-trace-scc.md)
+Résolution des problèmes généraux et des tendances à l’aide des rapports dans le Centre d’administration. Pour trouver des données concernant un point précis d'un message, utilisez l'outil de suivi des messages. Pour plus d'informations sur la génération de rapports, consultez la rubrique [Création de rapports et suivi des messages dans Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). En savoir plus sur l’outil de suivi des messages dans le suivi des messages dans le Centre de [sécurité & conformité.](message-trace-scc.md)
 
 ## <a name="report-false-positives-and-false-negatives-to-microsoft"></a>Signaler les faux positifs et les faux négatifs à Microsoft
 

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de publication pour les nouvelles mises à jour de produits et de fonctionnalités dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: f500aac89495c55d27fc4afb699254653786422d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e909cdf35ba9dd8282540783f7c362e5ae49212e
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915205"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034078"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de publication standard ou ciblée
 
@@ -45,11 +45,11 @@ Avec Microsoft 365, vous recevez de nouvelles mises à jour et fonctionnalités 
 
 ## <a name="how-it-works---release-validation"></a>Mode de fonctionnement - Validation de publication
 
-Toute nouvelle version est d’abord testée et validée par l’équipe de fonctionnalités, puis par l’ensemble de l’équipe de fonctionnalités Microsoft 365, puis par l’ensemble de Microsoft. Un fois les tests et la validation internes accomplis, l'étape suivante consiste en une **publication ciblée** (anciennement nommée First Release) à destination des clients inscrits. À chaque cycle de publication, Microsoft recueille des commentaires, puis valide davantage la qualité en surveillant des métriques d'utilisation clés. Cette validation progressive est en place pour s'assurer que la publication à l'échelle mondiale est aussi robuste que possible. Les publications sont illustrées dans la figure suivante. 
+Toute nouvelle version est d’abord testée et validée par l’équipe de fonctionnalités, puis par l’ensemble de l’équipe de fonctionnalités De Microsoft 365, puis par l’ensemble de Microsoft. Un fois les tests et la validation internes accomplis, l'étape suivante consiste en une **publication ciblée** (anciennement nommée First Release) à destination des clients inscrits. À chaque cycle de publication, Microsoft recueille des commentaires, puis valide davantage la qualité en surveillant des métriques d'utilisation clés. Cette validation progressive est en place pour s'assurer que la publication à l'échelle mondiale est aussi robuste que possible. Les publications sont illustrées dans la figure suivante. 
   
-![Libérer des anneaux de validation pour Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Anneaux de validation de publication pour Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-Pour les mises à jour importantes, les clients sont initialement avertis par la feuille [de route Microsoft 365.](https://products.office.com/business/office-365-roadmap) À mesure qu’une mise à jour approche du déploiement, elle est communiquée via votre centre de messages [Microsoft 365.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
+Pour les mises à jour importantes, les clients sont initialement avertis par la feuille [de route Microsoft 365.](https://products.office.com/business/office-365-roadmap) À mesure qu’une mise à jour approche du déploiement, elle est communiquée par le biais de votre centre de messages [Microsoft 365.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
 
 > [!NOTE]
 > Vous avez besoin d’un compte Microsoft 365 ou Azure AD pour accéder à votre centre de messages via le [Centre d’administration.](/office365/admin/admin-overview/about-the-admin-center) Les utilisateurs du plan d’accueil Microsoft 365 n’ont pas de centre d’administration.
@@ -117,3 +117,7 @@ Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour
 ## <a name="learn-more"></a>Si vous souhaitez en savoir plus
 
 Découvrez comment gérer [les messages](/office365/admin/manage/message-center) dans votre centre de messages [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) pour recevoir des notifications sur les mises à jour et les mises à jour Microsoft 365 à venir.
+
+## <a name="related-articles"></a>Articles connexes
+
+[Office Insider](https://insider.office.com/join/windows)

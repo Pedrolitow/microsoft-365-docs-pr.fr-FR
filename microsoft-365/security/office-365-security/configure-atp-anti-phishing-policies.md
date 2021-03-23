@@ -15,12 +15,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2985766cf3388382dbe1d2217843504b2bfd1a1c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f9fe04b2c3b6db3681212d678c8e827f6a83f41
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906587"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994569"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -45,8 +45,8 @@ Les éléments de base d’une stratégie anti-hameçonnage sont :
 
 La différence entre ces deux éléments n’est pas évidente lorsque vous gérez des stratégies anti-hameçonnage dans le Centre de sécurité & conformité :
 
-- Lorsque vous créez une stratégie, vous créez en fait une règle anti-hameçonnage et la stratégie anti-hameçonnage associée en utilisant le même nom pour les deux.
-- Lorsque vous modifiez une stratégie, les paramètres liés au nom, à la priorité, activés ou désactivés, et aux filtres de destinataire modifient la règle anti-hameçonnage. Tous les autres paramètres modifient la stratégie anti-hameçonnage associée.
+- Lorsque vous créez une stratégie, vous créez en même temps une règle anti-hameçonnage et la stratégie anti-hameçonnage associée en utilisant le même nom pour les deux.
+- Lorsque vous modifiez une stratégie, les paramètres liés au nom, à la priorité, activé ou désactivé, et aux filtres de destinataire modifient la règle anti-hameçonnage. Tous les autres paramètres modifient la stratégie anti-hameçonnage associée.
 - Lorsque vous supprimez une stratégie, la règle anti-hameçonnage et la stratégie anti-hameçonnage associée sont supprimées.
 
 Dans Exchange Online PowerShell, vous gérez la stratégie et la règle séparément. Pour plus d’informations, voir la section Utiliser Exchange Online PowerShell pour configurer des stratégies anti-hameçonnage dans Microsoft Defender pour [Office 365](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365) plus loin dans cet article.
@@ -77,7 +77,7 @@ Pour accroître l’efficacité de la protection anti-hameçonnage dans Microsof
   - Le **groupe de rôles** Gestion de l’organisation en affichage seul dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) donne également un accès en lecture seule à la <sup>\*</sup> fonctionnalité.
   - <sup>\*</sup> Dans le Centre de sécurité & conformité, l’accès en lecture seule permet aux utilisateurs d’afficher les paramètres des stratégies anti-hameçonnage personnalisées. Les utilisateurs en lecture seule ne peuvent pas voir les paramètres dans la stratégie anti-hameçonnage par défaut.
 
-- Pour obtenir les paramètres recommandés pour les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365, consultez stratégie anti-hameçonnage dans Les paramètres de Defender pour [Office 365.](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)
+- Pour obtenir les paramètres recommandés pour les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365, consultez stratégie anti-hameçonnage dans Les paramètres de [Defender pour Office 365.](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)
 
 - Autorisez jusqu’à 30 minutes pour qu’une stratégie nouvelle ou mise à jour soit appliquée.
 
@@ -87,7 +87,7 @@ Pour accroître l’efficacité de la protection anti-hameçonnage dans Microsof
 
 La création d’une stratégie anti-hameçonnage personnalisée dans le Centre de sécurité & conformité crée la règle anti-hameçonnage et la stratégie anti-hameçonnage associée en utilisant le même nom pour les deux.
 
-Lorsque vous créez une stratégie anti-hameçonnage, vous ne pouvez spécifier que le nom de la stratégie, la description et le filtre de destinataires qui identifient à qui s’applique la stratégie. Après avoir créé la stratégie, vous pouvez la modifier pour modifier ou passer en revue les paramètres anti-hameçonnage par défaut.
+Lorsque vous créez une stratégie anti-hameçonnage, vous ne pouvez spécifier que le nom, la description et le filtre de destinataires qui identifient à qui s’applique la stratégie. Après avoir créé la stratégie, vous pouvez la modifier pour modifier ou passer en revue les paramètres anti-hameçonnage par défaut.
 
 1. Dans le Centre de sécurité & conformité, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
 
@@ -116,12 +116,12 @@ Lorsque vous créez une stratégie anti-hameçonnage, vous ne pouvez spécifier 
    - Cliquez dans la zone et faites défiler la liste des valeurs à sélectionner.
    - Cliquez dans la zone et commencez à taper pour filtrer la liste et sélectionnez une valeur.
    - Pour ajouter des valeurs supplémentaires, cliquez dans une zone vide dans la zone.
-   - Pour supprimer des entrées individuelles, cliquez **sur Supprimer** ![ ](../../media/scc-remove-icon.png) l’icône sur la valeur.
+   - Pour supprimer des entrées individuelles, cliquez **sur Supprimer** ![ l’icône ](../../media/scc-remove-icon.png) sur la valeur.
    - Pour supprimer la condition entière, cliquez **sur Supprimer** ![ l’icône ](../../media/scc-remove-icon.png) sur la condition.
 
    Pour ajouter une condition supplémentaire, cliquez sur **Ajouter une condition** et sélectionnez une valeur restante sous Appliqué **si**.
 
-   Pour ajouter des exceptions, cliquez sur **Ajouter une condition** et sélectionnez une exception sous Sauf **si**. Les paramètres et le comportement sont exactement comme les conditions.
+   Pour ajouter des exceptions, cliquez **sur Ajouter une condition** et sélectionnez une exception sous Sauf **si**. Les paramètres et le comportement sont exactement comme les conditions.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -162,7 +162,7 @@ Utilisez les procédures suivantes pour modifier les stratégies anti-hameçonna
 
      Dans le **volant Ajouter un** utilisateur qui s’affiche, configurez les valeurs suivantes :
 
-     - **Adresse de messagerie**:
+     - **Adresse e-mail**:
 
        - Cliquez dans la zone et faites défiler la liste des utilisateurs à sélectionner.
        - Cliquez dans la zone et commencez à taper pour filtrer la liste et sélectionner un utilisateur.
@@ -183,14 +183,14 @@ Utilisez les procédures suivantes pour modifier les stratégies anti-hameçonna
    - **Ajouter des domaines à protéger**: configurez l’un des paramètres suivants ou les deux :
 
      - **Incluez automatiquement les domaines dont je suis propriétaire**: la valeur par défaut est **Off**. Pour l’activer, faites glisser le curseur sur **Activer.**
-     - **Inclure des domaines personnalisés**: la valeur par défaut est **Off**. Pour l’activer, faites glisser le basculement  sur **Activer** et, dans la zone Ajouter des domaines, entrez le nom de domaine (par exemple, contoso.com), appuyez sur Entrée et répétez l’étape si nécessaire.
+     - **Inclure des domaines personnalisés**: la valeur par défaut est **Off**. Pour l’activer, faites glisser le curseur  sur **Activer** et, dans la zone Ajouter des domaines, entrez le nom de domaine (par exemple, contoso.com), appuyez sur Entrée et répétez l’étape si nécessaire.
 
      > [!NOTE]
      > Vous pouvez avoir un maximum de 50 domaines dans toutes les stratégies anti-hameçonnage.
 
    - **Actions**: cliquez sur **Modifier**
 
-     - Si un message électronique est envoyé par un utilisateur dont l’identité est usurpée : configurez l’une des actions suivantes pour les messages pour lequel l’expéditeur usurpé est l’un des utilisateurs protégés que vous avez spécifiés dans Ajouter des utilisateurs à **protéger**:
+     - Si des messages électroniques sont envoyés par un utilisateur dont l’identité est usurpée : configurez l’une des actions suivantes pour les messages dont l’expéditeur usurpé est l’un des utilisateurs protégés que vous avez spécifiés dans Ajouter des utilisateurs à **protéger**:
 
        - **Ne pas appliquer d’action**
        - **Rediriger le message vers d’autres adresses de messagerie**
@@ -210,7 +210,7 @@ Utilisez les procédures suivantes pour modifier les stratégies anti-hameçonna
 
    - Cliquez **sur Activer les conseils de sécurité d’emprunt** d’identité et configurez l’un des paramètres suivants :
 
-     - **Afficher le conseil pour les utilisateurs dont** l’identité est usurpée : la valeur par défaut est **Désactivé.** Pour l’activer, faites glisser le curseur sur **Activer.**
+     - **Afficher le conseil pour les utilisateurs dont l’identité** est usurpée : la valeur par défaut est **Désactivé.** Pour l’activer, faites glisser le curseur sur **Activer.**
      - **Afficher le conseil pour les domaines dont l’identité est emprunt** d’identité : la valeur par défaut est **Désactivé.** Pour l’activer, faites glisser le curseur sur **Activer.**
      - **Afficher la conseil pour les caractères inhabituels**: la valeur par défaut est **Off**. Pour l’activer, faites glisser le curseur sur **Activer.**
 
@@ -218,13 +218,13 @@ Utilisez les procédures suivantes pour modifier les stratégies anti-hameçonna
 
    - **Intelligence des boîtes aux lettres**:
 
-     - **Activer l’intelligence de boîte** aux lettres ? : la valeur par défaut est **Activé.** Pour le désactiver, faites glisser le curseur sur **Désactiver.**
+     - **Activer l’intelligence de boîte** aux lettres ? : la valeur par défaut est **Activé**. Pour le désactiver, faites glisser le curseur sur **Désactiver.**
 
-     - **Activer la protection contre l’emprunt** d’identité basée sur l’intelligence des boîtes aux **lettres**? : ce paramètre est disponible uniquement si l’intelligence de boîte **aux** lettres est activée .
+     - **Activer la protection contre l’emprunt** d’identité basée sur l’intelligence des boîtes aux **lettres**? : ce paramètre est disponible uniquement si l’intelligence de boîte **aux** lettres est activée . Activer ce paramètre pour spécifier l’action à prendre sur les messages pour les détections d’emprunt d’identité à partir des résultats de l’intelligence de boîte aux lettres.
 
-       Dans Si le courrier électronique est envoyé par un utilisateur dont l’identité est usurpée, vous pouvez spécifier l’une des actions suivantes à prendre sur les messages qui échouent à la veille de boîte aux lettres (les mêmes actions disponibles pour les utilisateurs protégés et les domaines protégés) :
+       Dans **Si le courrier** électronique est envoyé par un utilisateur dont l’identité est usurpée, vous pouvez spécifier l’une des actions suivantes (les mêmes actions disponibles pour les utilisateurs protégés et les domaines protégés) :
 
-       - **Ne pas appliquer d’action**
+       - **N’appliquez** aucune action : notez que cette valeur a le même résultat que l’activer pour activer l’intelligence de boîte aux lettres **,** mais la désaxion de la protection contre l’usurpation d’identité basée sur l’intelligence des boîtes aux **lettres ?**.
        - **Rediriger le message vers d’autres adresses de messagerie**
        - **Déplacer le message dans le dossier Courrier indésirable**
        - **Mettre le message en quarantaine**
@@ -260,7 +260,7 @@ Utilisez les procédures suivantes pour modifier les stratégies anti-hameçonna
    - **Paramètres du filtre** d’usurpation : la valeur par défaut est **Sur** et nous vous recommandons de la laisser. Pour le désactiver, faites glisser le curseur sur **Désactiver.** Pour plus d’informations, voir [Configurer la veille contre l’usurpation d’adresse dans EOP.](learn-about-spoof-intelligence.md)
 
      > [!NOTE]
-     > Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’usurpation si votre enregistrement MX ne pointe pas vers Microsoft 365 ; vous activez plutôt le filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+     > Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’usurpation si votre enregistrement MX ne pointe pas vers Microsoft 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
    - **Activer la fonctionnalité Expéditeur** non authentifié : la valeur par défaut est **Activé.** Pour le désactiver, faites glisser le curseur sur **Désactiver.**
 
@@ -280,7 +280,7 @@ Utilisez les procédures suivantes pour modifier les stratégies anti-hameçonna
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer** sur n’importe quelle page.
 
-7. **Paramètres avancés :** cliquez sur **Modifier** pour configurer les seuils de hameçonnage avancés. Pour plus d’informations, voir Seuils d’hameçonnage avancés dans les [stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+7. **Paramètres avancés :** cliquez **sur Modifier** pour configurer les seuils de hameçonnage avancés. Pour plus d’informations, voir Seuils de hameçonnage avancés dans les [stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
    - **Seuils de hameçonnage avancés**: sélectionnez l’une des valeurs suivantes :
 
@@ -311,7 +311,7 @@ La stratégie anti-hameçonnage par défaut dans Microsoft Defender pour Office 
 
    Les paramètres suivants ne sont pas disponibles lorsque vous modifiez la stratégie par défaut :
 
-   - Vous pouvez voir la **section** paramètres de  stratégie et les valeurs, mais il n’existe aucun lien Modifier, donc vous ne pouvez pas modifier les paramètres (nom de stratégie, description et à qui s’applique la stratégie (elle s’applique à tous les destinataires)).
+   - Vous pouvez voir la **section** paramètre de stratégie  et les valeurs, mais il n’existe aucun lien Modifier, vous ne pouvez donc pas modifier les paramètres (nom de stratégie, description et à qui s’applique la stratégie (elle s’applique à tous les destinataires)).
    - Vous ne pouvez pas supprimer la stratégie par défaut.
    - Vous ne pouvez pas modifier la priorité de la stratégie par défaut (elle est toujours appliquée en dernier).
 
@@ -323,7 +323,7 @@ La stratégie anti-hameçonnage par défaut dans Microsoft Defender pour Office 
 
 2. Notez la valeur dans la **colonne État** :
 
-   - Faites glisser le basculement vers **Désactivé** pour désactiver la stratégie.
+   - Faites glisser le curseur sur **Désactivé** pour désactiver la stratégie.
 
    - Faites glisser le curseur sur **Activé** pour activer la stratégie.
 
@@ -349,7 +349,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur Augmenter la priorit�
 
    - La stratégie anti-hameçonnage  personnalisée dont la valeur de priorité **est 0** ne dispose que **du** bouton Diminuer la priorité disponible.
 
-   - La stratégie anti-hameçonnage personnalisée  dont la valeur de priorité est la plus faible (par exemple, **3**) ne dispose que du bouton **Augmenter** la priorité.
+   - La stratégie anti-hameçonnage personnalisée  dont la valeur de priorité est la plus faible (par exemple, **3**) ne dispose que du bouton **Augmenter** la priorité disponible.
 
    - Si vous disposez de trois stratégies anti-hameçonnage personnalisées ou plus, les  stratégies entre les valeurs de priorité les plus élevées et les plus faibles disposent à la fois des boutons Augmenter la priorité et Diminuer la priorité. 
 
@@ -365,7 +365,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur Augmenter la priorit�
 
    - Sélectionnez une stratégie anti-hameçonnage personnalisée à afficher. S’il est déjà sélectionné, désélectionnez-le et sélectionnez-le à nouveau.
 
-   - Cliquez **sur Stratégie par défaut** pour afficher la stratégie anti-hameçonnage par défaut.
+   - Cliquez **sur Stratégie par** défaut pour afficher la stratégie anti-hameçonnage par défaut.
 
 3. Le **volant \<name\> Modifier votre stratégie** s’affiche, où vous pouvez afficher les paramètres et les valeurs.
 
@@ -503,7 +503,7 @@ Cet exemple renvoie toutes les valeurs de propriété pour la règle anti-hameç
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-AntiPhishRule](/powershell/module/exchange/Get-AntiPhishrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-AntiPhishRule](/powershell/module/exchange/Get-AntiPhishrule).
 
 ### <a name="use-powershell-to-modify-anti-phish-policies"></a>Utiliser PowerShell pour modifier des stratégies anti-hameçonnage
 
@@ -579,7 +579,7 @@ Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 
 - Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez plutôt le paramètre _Priority_ de la cmdlet **New-AntiPhishRule.**
 
-- La stratégie anti-hameçonnage par défaut n’a pas de règle anti-hameçonnage correspondante et a toujours la valeur de priorité nonmodifiable La plus **faible**.
+- La stratégie anti-hameçonnage par défaut n’a pas de règle anti-hameçonnage correspondante et elle a toujours la valeur de priorité nonmodifiable La plus **faible**.
 
 ### <a name="use-powershell-to-remove-anti-phish-policies"></a>Utiliser PowerShell pour supprimer des stratégies anti-hameçonnage
 

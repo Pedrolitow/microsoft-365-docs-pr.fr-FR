@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 36af6e0f882c87d05c5f397982533fb48875b0da
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921515"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994605"
 ---
 # <a name="edit-an-existing-topic"></a>Modifier une rubrique existante 
 
@@ -29,12 +29,12 @@ ms.locfileid: "50921515"
 
 </br>
 
-Dans Rubriques de Rubriques, vous pouvez modifier une rubrique existante. Vous devrez peut-être le faire si vous souhaitez corriger ou ajouter des informations supplémentaires à une page de rubrique existante. 
+Dans Rubriques de Rubriques, vous pouvez modifier une rubrique existante. Vous devrez peut-être le faire si vous souhaitez corriger ou ajouter des informations supplémentaires à une page de rubriques existante. 
 
 > [!Note] 
-> Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations de personnes que vous ajoutez manuellement lors de la modification d’une rubrique existante sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher les rubriques. 
+> Alors que les informations d’une rubrique qui sont rassemblées par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations de personnes que vous ajoutez manuellement lors de la modification d’une rubrique existante sont visibles pour tous les utilisateurs qui sont autorisés à afficher des rubriques. 
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour modifier une rubrique existante, vous devez :
 - Vous avez une licence Topics.
@@ -60,18 +60,18 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
    ![Contrôle d’édition](../media/knowledge-management/topic-page-edit.png) </br>  
 
 
-2. Dans la section <b>Autres noms,</b> tapez les autres noms que la rubrique peut faire référence. 
+2. Dans la section <b>Autres noms,</b> tapez tous les autres noms que la rubrique peut faire référence. 
 
     ![Autres noms](../media/knowledge-management/alt-names.png) </br> 
 3. Dans la section <b>Description,</b> tapez quelques phrases qui décrivent la rubrique. Ou si une description existe déjà, mettez-la à jour si nécessaire.
 
     ![Section Description](../media/knowledge-management/description.png)</br>
 
-4. Dans la section <b>Personnes épinglées,</b> vous pouvez « épingler » une personne pour l’afficher en tant qu’expert en la matière. Commencez par taper son nom ou <b></b> son adresse de messagerie dans la zone Ajouter un nouvel utilisateur, puis sélectionnez l’utilisateur à ajouter dans les résultats de la recherche. Vous pouvez également les « désépiner » en sélectionnant l’icône Supprimer <b>de</b> la liste sur la carte utilisateur.
+4. Dans <b>la</b> section Personnes épinglées, vous pouvez « épingler » une personne pour l’afficher comme ayant une connexion à la rubrique (par exemple, un propriétaire d’une ressource connectée). Commencez par taper son nom ou <b></b> son adresse de messagerie dans la zone Ajouter un nouvel utilisateur, puis sélectionnez l’utilisateur à ajouter dans les résultats de la recherche. Vous pouvez également les « désépiner » en sélectionnant l’icône Supprimer <b>de</b> la liste sur la carte utilisateur.
  
     ![Ajouter des personnes épinglées](../media/knowledge-management/pinned-people.png)</br>
 
-    La section <b>Personnes suggérées</b> montre aux utilisateurs que l’IA pense qu’il peut s’agit d’experts techniques sur cette rubrique, de leur connexion aux ressources sur cette rubrique. Vous pouvez modifier son état de Suggéré à Épinglé en sélectionnant l’icône d’épinglage sur la carte utilisateur.
+    La section <b>Personnes suggérées</b> montre aux utilisateurs que l’IA pense qu’ils peuvent être connectés à la rubrique à partir de leur connexion aux ressources sur cette rubrique. Vous pouvez modifier son état de Suggéré à Épinglé en sélectionnant l’icône d’épinglage sur la carte utilisateur.
 
    ![Épingler une personne suggérée](../media/knowledge-management/suggested-people.png)</br>
 
@@ -92,7 +92,7 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
 
     Vous pouvez modifier un fichier ou une page suggéré en fichier ou page épinglé en sélectionnant l’icône épinglée.
 
-7.  La section <b>Sites associés</b> présente les sites qui ont des informations sur cette rubrique. 
+7.  La section <b>Sites associés</b> présente les sites qui ont des informations sur la rubrique. 
 
     ![Section Sites associés](../media/knowledge-management/related-sites.png)</br>
 

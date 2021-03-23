@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Utilisez le Centre d’administration Microsoft 365 ou Windows PowerShell pour supprimer des calendriers Bookings.
-ms.openlocfilehash: 7b79628327797d2e315d31e1b1a2671f0b24e447
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 21fc7b9994ffd7f76ed04000a50bd0ee8f7f167e
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913777"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034090"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Supprimer un calendrier de réservation dans Bookings
 
@@ -25,7 +25,7 @@ Cet article explique comment supprimer un calendrier de réservation indésirabl
 
 Le calendrier de réservation est l’endroit où sont stockées toutes les informations pertinentes sur ce calendrier de réservation et les données, notamment :
 
-- Informations professionnelles, logo et heures de travail ajoutés lors de la création du calendrier de réservation
+- Informations professionnelles, logo et heures de travail ajoutées lors de la création du calendrier de réservation
 - Personnel et services pertinents ajoutés lors de la création du calendrier de réservation
 - Toutes les réservations et les congés ajoutés au calendrier de réservation une fois créés.
 
@@ -72,7 +72,7 @@ Pour effectuer ces étapes, vous devez utiliser une fenêtre de commande Microso
 4. Une fois cette commande traitée, entrez la commande suivante pour obtenir la liste des boîtes aux lettres de réservation dans votre client :
 
    ```powershell
-   Get-EXOMailbox -RecipientTypeDetails Scheduling
+   Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
 5. Tapez la commande suivante :
