@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: Comprendre comment le Gestionnaire de conformité Microsoft calcule un score personnalisé en fonction des actions prises pour résoudre les risques et améliorer votre posture de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d340c31b4f5477df845531bfb933883f331198
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908574"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052112"
 ---
 # <a name="compliance-score-calculation"></a>Calcul du score de conformité
 
 **Dans cet article :** Découvrez comment le Gestionnaire de conformité calcule un score de conformité pour votre organisation. Cet article explique comment interpréter votre **score,** ce que l’évaluation de référence de la **protection** des données inclut, une surveillance continue et comment différents types d’actions sont gérés et **marqués.**
 
 > [!IMPORTANT]
-> Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité. C’est à vous d’évaluer et de valider l’efficacité des contrôles client par rapport à votre environnement réglementaire. Ces services sont soumis aux conditions générales des [conditions générales des services en ligne.](https://go.microsoft.com/fwlink/?linkid=2108910) Voir aussi les conseils de gestion des licences [Microsoft 365 pour la sécurité et la conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité. C’est à vous d’évaluer et de valider l’efficacité des contrôles client par rapport à votre environnement réglementaire. Ces services sont soumis aux conditions générales des [conditions générales des services en ligne.](https://go.microsoft.com/fwlink/?linkid=2108910) Voir aussi les [conseils de licence Microsoft 365 pour la sécurité et la conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ## <a name="how-to-read-your-compliance-score"></a>Comment lire votre score de conformité
 
@@ -47,7 +47,7 @@ Le score de conformité global est calculé à l’aide de scores d’action, o�
 
 ## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Score initial basé sur la ligne de base de protection des données Microsoft 365
   
-Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base de protection des données Microsoft 365. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés en matière de protection des données et de gouvernance générale des données. Cette ligne de base tire principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
+Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base de protection des données Microsoft 365. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés pour la protection des données et la gouvernance générale des données. Cette ligne de base dessine principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
 
 Votre score initial est calculé en fonction de l’évaluation de base de la protection des données par défaut fournie à toutes les organisations. Lors de votre première visite, le Gestionnaire de conformité collecte déjà des signaux à partir de vos solutions Microsoft 365. Vous verrez d’un coup d’œil les résultats de votre organisation par rapport aux principales normes et réglementations en matière de protection des données, ainsi que les suggestions d’actions d’amélioration à prendre.
 
@@ -61,7 +61,7 @@ L’état de votre action est mis à jour sur votre tableau de bord toutes les 2
 
 Par exemple, si vous allumez l’authentification multifacteur (MFA) dans le portail Azure AD, le Gestionnaire de conformité détecte le paramètre et le reflète dans les détails de la solution d’accès aux contrôles. À l’inverse, si vous n’avez pas activer l’ation MFA, le Gestionnaire de conformité l’indicateurs comme une action recommandée à prendre.
 
-En savoir plus sur [le score de sécurité et son fonctionnement.](../security/mtp/microsoft-secure-score.md)
+En savoir plus sur [le score de sécurité et son fonctionnement.](../security/defender/microsoft-secure-score.md)
   
 ## <a name="action-types-and-points"></a>Types et points d’action
 
@@ -84,7 +84,7 @@ Les actions sont regroupées selon qu’elles sont de nature technique ou non te
 
 Supposons que vous avez une action technique de 3 points qui existe dans 5 groupes et que vous avez une action non technique de 3 points qui existe dans les 5 mêmes groupes.
 
-Si vous avez correctement implémenté l’action technique, le nombre total de points que vous recevez est 3. Cela est dû au fait que vous n’avez besoin d’implémenter l’action qu’une seule fois pour votre client. L’état d’implémentation et de test de l’action technique sera identique dans toutes les instances de cette action, dans chaque groupe à qui elle appartient.
+Si vous avez correctement implémenté l’action technique, le nombre total de points que vous recevez est de 3. Cela est dû au fait que vous n’avez besoin d’implémenter l’action qu’une seule fois pour votre client. L’état d’implémentation et de test de l’action technique sera identique dans toutes les instances de cette action, dans chaque groupe à qui elle appartient.
 
 Si vous avez correctement implémenté l’action non technique dans chacun des 5 groupes, le nombre total de points que vous recevez est de 15. Cela est dû au fait que vous devez implémenter l’action dans chaque groupe. L’état d’implémentation et de test de l’action non technique varie selon les groupes, car l’action est implémentée séparément au sein de chacun de ses groupes.
 

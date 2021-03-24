@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: En tant qu’administrateur et expéditeur de message, vous pouvez révoquer certains messages électroniques qui ont été chiffrés avec le chiffrement de messages avancé Office 365.
-ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 340a9e73dba50e28223ee561db749a089c649df6
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917196"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051716"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Révoquer le courrier électronique chiffré par le chiffrement de messages avancé
 
@@ -91,7 +91,7 @@ Il existe plusieurs façons de rechercher l’ID de message de l’e-mail que vo
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>Pour identifier l’ID du message que vous souhaitez révoquer à l’aide des rapports de chiffrement de messages Office dans le Centre de conformité &amp; de sécurité
 
-1. Dans le Centre de &amp; conformité de sécurité, accédez au rapport de **chiffrement des messages.** Pour plus d’informations sur ce rapport, voir Afficher les rapports de sécurité du courrier [électronique dans le Centre de conformité de &amp; sécurité.](../security/office-365-security/view-email-security-reports.md)
+1. Dans le Centre de &amp; conformité de sécurité, accédez au rapport de **chiffrement des messages.** Pour plus d’informations sur ce rapport, voir Afficher les rapports de sécurité du courrier [électronique dans le Centre de conformité de &amp; sécurité.](../security/defender-365-security/view-email-security-reports.md)
 
 2. Choisissez la **table Afficher les détails** et identifiez le message que vous souhaitez révoquer.
 
@@ -103,7 +103,7 @@ Pour vérifier si vous pouvez révoquer un message, vérifiez si le champ État 
 
 Pour vérifier si vous pouvez révoquer un message électronique particulier à l’Windows PowerShell, complétez ces étapes.
 
-1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez la cmdlet Get-OMEMessageStatus suivante :
 
@@ -151,7 +151,7 @@ Pour révoquer un e-mail à l’Windows PowerShell, utilisez la cmdlet Set-OMEMe
      Revoked: True
      ```
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>Plus d’informations sur le chiffrement de messages avancé Office 365
+## <a name="more-information-about-office-365-advanced-message-encryption"></a>Plus d’informations sur le chiffrement avancé des messages Office 365
 
 - [Chiffrement de messages avancé Office 365](ome-advanced-message-encryption.md)
 

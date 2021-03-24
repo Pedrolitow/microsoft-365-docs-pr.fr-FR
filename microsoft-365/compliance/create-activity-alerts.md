@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ajouter et gérer des alertes d’activité dans le Centre de sécurité & conformité afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques
-ms.openlocfilehash: ac78c57d368e27c43cc5f25733d49fad5fe4374a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0d5133bd46be6a5a548f2b733bae202f3a611646
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818023"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052092"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 
@@ -32,13 +32,13 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
  **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activité ou d’activité effectués par des utilisateurs spécifiques que vous voulez vraiment connaître. Au lieu de devoir rechercher ces activités dans le journal d’audit, vous pouvez utiliser des alertes d’activité pour que Microsoft 365 vous envoie un message électronique lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte d’activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de sa boîte aux lettres. La notification par courrier électronique qui vous est envoyée inclut des informations sur l’activité qui a été effectuée et l’utilisateur qui l’a effectuée.
 
 > [!NOTE]
-> Les alertes d’activité sont en cours d’precaté. Nous vous recommandons de commencer à utiliser des stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer de nouvelles alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités d’ajout telles que la possibilité de créer une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifiée, et d’afficher des alertes sur la page Afficher les **alertes** dans le centre de sécurité et conformité. Pour plus d’informations, voir [Stratégies d’alerte.](alert-policies.md)
+> Les alertes d’activité sont en cours d’precaté. Nous vous recommandons de commencer à utiliser des stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer de nouvelles alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités d’ajout, telles que la possibilité de créer une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifiée, et d’afficher des alertes sur la page Afficher les **alertes** dans le Centre de sécurité et conformité. Pour plus d’informations, voir [Stratégies d’alerte.](alert-policies.md)
   
 ## <a name="confirm-roles-and-configure-audit-logging"></a>Confirmer les rôles et configurer la journalisation d’audit
 
-- Le rôle Configuration de l’organisation doit vous être attribué dans le Centre de sécurité & conformité pour gérer les alertes d’activité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité et Gestion de l’organisation. Pour plus d’informations sur l’ajout de membres à des groupes de rôles, voir [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Le rôle Configuration de l’organisation doit vous être attribué dans le Centre de sécurité & conformité pour gérer les alertes d’activité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité et Gestion de l’organisation. Pour plus d’informations sur l’ajout de membres à des groupes de rôles, voir [Give users access to the Security & Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
     
-- Vous (ou un autre administrateur) devez d’abord activer la journalisation d’audit pour votre organisation avant de commencer à utiliser les alertes d’activité. Pour ce faire, cliquez simplement sur **Démarrer** l’enregistrement de l’activité des utilisateurs et des administrateurs dans la page **Alertes d’activité.** (Si vous ne voyez pas ce lien, l’audit a déjà été désactivé pour votre organisation.) Vous pouvez également activer l’audit sur la page de recherche du journal  **d’audit** dans le Centre de sécurité & conformité (voir Recherche dans le journal \> **d’audit de la recherche).** Vous ne devez le faire qu’une seule fois pour votre organisation.
+- Vous (ou un autre administrateur) devez d’abord activer la journalisation d’audit pour votre organisation avant de commencer à utiliser les alertes d’activité. Pour ce faire, cliquez simplement sur **Démarrer** l’enregistrement de l’activité des utilisateurs et des administrateurs dans la page **Alertes d’activité.** (Si vous ne voyez pas ce lien, l’audit a déjà été désactivé pour votre organisation.) Vous pouvez également activer l’audit sur la page de recherche du journal  **d’audit** dans le Centre de sécurité & conformité (recherche dans le journal \> **d’audit de la recherche).** Vous ne devez le faire qu’une seule fois pour votre organisation.
   
 - Vous pouvez créer des alertes pour les mêmes activités que vous pouvez rechercher dans le journal d’audit. Consultez la section [Plus](#more-information) d’informations pour obtenir la liste des scénarios courants (et l’activité spécifique à surveiller) pour qui vous pouvez créer des alertes. 
     
@@ -50,7 +50,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
     
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
     
-3. Dans la page **Alertes d’activité,** cliquez ![ sur Ajouter une icône ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nouveau.**
+3. Dans la page **Alertes d’activité,** cliquez ![ sur Ajouter l’icône ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nouveau.**
 
    La page de présentation pour créer une alerte d’activité s’affiche.
 
@@ -61,7 +61,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
     
     a. **Nom** : tapez un nom pour l’alerte. Les noms des alertes doivent être uniques au sein de votre organisation.
     
-    b. **Description** (facultatif) : décrivez l’alerte, telle que les activités et les utilisateurs suivis, ainsi que les utilisateurs vers qui les notifications par courrier électronique sont envoyées. Les descriptions permettent de décrire rapidement et facilement l’objectif de l’alerte aux autres administrateurs.
+    b. **Description** (facultatif) : décrire l’alerte, telle que les activités et les utilisateurs suivis, ainsi que les utilisateurs à qui les notifications par courrier électronique sont envoyées. Les descriptions permettent de décrire rapidement et facilement l’objectif de l’alerte aux autres administrateurs.
     
     c. **Type d’alerte** : **assurez-vous que l’option** Personnalisée est sélectionnée. 
 
@@ -97,7 +97,7 @@ Vous pouvez désactiver une alerte d’activité afin qu’aucune notification p
     
 Pour ré-activer une alerte d’activité,  répétez simplement ces étapes et cliquez sur le bouton bascule Désactiver pour modifier l’état sur **Activer**.
   
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Voici un exemple de notification par courrier électronique envoyée aux utilisateurs spécifiés dans le champ Envoyé à cette alerte (et répertorié sous **Destinataires** sur la page **Alertes** d’activité) dans le Centre de sécurité & conformité. 
     

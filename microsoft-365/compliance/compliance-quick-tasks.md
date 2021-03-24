@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Découvrez les tâches qui vous aideront à démarrer rapidement la conformité dans Microsoft 365.
-ms.openlocfilehash: 69aef07e65f5644f9aa294025c8388410f160243
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8a6f98a38dcb6096287cbc2389648c0e7457e5c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908584"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052102"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tâches rapides pour démarrer avec la conformité Microsoft 365
 
 Si vous débutez avec la conformité Microsoft 365 et que vous vous demandez où commencer, cet article fournit des instructions sur les bases et hiérarchise les tâches de conformité importantes. Cet article vous aidera à prendre rapidement en charge la gestion et la surveillance de vos données, la protection des informations et la réduction des risques internes.
 
-Cet article est également utile si vous savez comment gérer au mieux les risques, protéger vos données et rester conforme aux réglementations et normes avec un personnel nouvellement distant. Les employés collaborent et se connectent désormais de nouvelles manières, ce qui signifie que vos processus et contrôles de conformité existants devront peut-être s’adapter. L’identification et la gestion de ces nouveaux risques de conformité au sein de votre organisation sont essentiels à la protection de vos données et à la réduction des menaces et des risques.
+Cet article est également utile si vous savez comment gérer au mieux les risques, protéger vos données et rester conforme aux réglementations et normes avec un personnel nouvellement distant. Les employés collaborent et se connectent désormais les uns avec les autres de nouvelles façons, ce qui signifie que vos processus et contrôles de conformité existants devront peut-être s’adapter. L’identification et la gestion de ces nouveaux risques de conformité au sein de votre organisation sont essentiels à la protection de vos données et à la réduction des menaces et des risques.
 
 Une fois ces tâches de conformité de base terminées, envisagez d’étendre la couverture de conformité dans votre organisation en implémentant des solutions de conformité Microsoft 365 supplémentaires.
 
@@ -34,7 +34,7 @@ Il est important de gérer les personnes de votre organisation qui ont accès au
 
 Commencez par attribuer des autorisations de conformité aux membres de votre organisation afin qu’ils peuvent effectuer ces tâches et empêcher les personnes non autorisées d’avoir accès à des zones en dehors de leurs responsabilités. Vous devez vous assurer que vous avez affecté les  bonnes personnes  aux rôles d’administrateur des données de conformité et d’administrateur de conformité avant de commencer à configurer et implémenter des solutions de conformité incluses dans Microsoft 365. Vous devez également affecter des utilisateurs au rôle de lecteur global Azure Active Directory pour afficher les données dans le Gestionnaire de conformité.
 
-Pour obtenir des instructions pas à pas sur la configuration des autorisations et l’affectation de personnes à des rôles d’administrateur, voir Autorisations dans le Centre de sécurité [& conformité.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
+Pour obtenir des instructions pas à pas sur la configuration des autorisations et l’affectation de personnes à des rôles d’administrateur, voir Autorisations dans le Centre de sécurité [& conformité.](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)
 
 ## <a name="task-2-know-your-state-of-compliance"></a>Tâche 2 : Connaître votre état de conformité
 
@@ -42,14 +42,14 @@ Il est difficile de savoir où aller si vous ne savez pas où vous vous trouvez.
 
 [Le Gestionnaire de conformité Microsoft peut](compliance-manager.md) vous aider à comprendre la posture de conformité de votre organisation et à mettre en évidence les domaines qui peuvent avoir besoin d’être améliorés. Le Gestionnaire de conformité utilise un tableau de bord centralisé pour calculer un score basé sur les risques, mesurant votre progression dans l’exécution des actions qui permettent de réduire les risques liés à la protection des données et aux normes réglementaires. Vous pouvez également utiliser le Gestionnaire de conformité comme outil pour suivre toutes vos évaluations des risques. Il fournit des fonctionnalités de flux de travail pour vous aider à évaluer efficacement vos risques à l’aide d’un outil commun.
 
-Pour obtenir des instructions pas à pas pour commencer avec le Gestionnaire de conformité, consultez La mise en [place du Gestionnaire de conformité.](compliance-manager-setup.md)
+Pour obtenir des instructions pas à pas pour commencer avec le Gestionnaire de conformité, consultez La mise en place [du Gestionnaire de conformité.](compliance-manager-setup.md)
 
 >[!IMPORTANT]
 >La sécurité et la conformité sont étroitement intégrées pour la plupart des organisations. Il est important que votre organisation aborde les domaines de sécurité de base, de protection contre les menaces et de gestion des identités et des accès pour fournir une approche de défense en profondeur à la sécurité et à la conformité.
 >
->Vérifiez votre score de sécurité [Microsoft 365](../security/mtp/microsoft-secure-score.md) dans le Centre de sécurité Microsoft 365 et terminez les tâches décrites dans les articles suivants :
+>Vérifiez votre score de sécurité [Microsoft 365](../security/defender/microsoft-secure-score.md) dans le Centre de sécurité Microsoft 365 et terminez les tâches décrites dans les articles suivants :
 >
-> - [Feuille de route de sécurité : principales priorités pour les 30 premiers jours, 90 jours et au-delà](../security/office-365-security/security-roadmap.md)
+> - [Feuille de route de sécurité : principales priorités pour les 30 premiers jours, 90 jours et au-delà](../security/defender-365-security/security-roadmap.md)
 > - [12 tâches principales pour les équipes de sécurité pour prendre en charge le travail à domicile](../security/top-security-tasks-for-remote-work.md)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>Tâche 3 : activer l’audit pour votre organisation
@@ -72,7 +72,7 @@ Pour obtenir des instructions pas à pas sur la création de stratégies d’ale
 
 Pour mener à bien leur travail, les membres de votre organisation collaborent avec d’autres personnes internes ou externes à votre organisation. Cela signifie que le contenu n’est plus protégé par un pare-feu : il peut se déplacer partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
 
-[Les étiquettes de niveau](sensitivity-labels.md) de sensibilité vous permet de classifier et de protéger les données de votre organisation, tout en vous assurez que la productivité des utilisateurs et leur capacité à collaborer ne sont pas ralenties. Utilisez les étiquettes de niveau de sensibilité pour appliquer des restrictions de chiffrement et d’utilisation en appliquant des marquages visuels et protéger les informations sur les plateformes et les appareils, en local et dans le cloud.
+[Les étiquettes de sensibilité](sensitivity-labels.md) vous permet de classifier et de protéger les données de votre organisation, tout en vous assurez que la productivité des utilisateurs et leur capacité à collaborer ne sont pas ralenties. Utilisez les étiquettes de niveau de sensibilité pour appliquer des restrictions de chiffrement et d’utilisation en appliquant des marquages visuels et protéger les informations sur les plateformes et les appareils, en local et dans le cloud.
 
 Pour obtenir des instructions pas à pas sur la configuration et l’utilisation des étiquettes de sensibilité, consultez La mise en place [des étiquettes de sensibilité.](get-started-with-sensitivity-labels.md) Pour plus d’informations sur les licences d’étiquettes de niveau de sensibilité, consultez les conseils de licence [Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)pour la sécurité & conformité.
 
@@ -80,7 +80,7 @@ Pour obtenir des instructions pas à pas sur la configuration et l’utilisation
 
 Une [stratégie de](retention.md) rétention vous permet de décider de manière proactive s’il faut conserver du contenu, supprimer du contenu ou les deux, conserver puis supprimer le contenu à la fin d’une période de rétention spécifiée. Ces actions peuvent être nécessaires pour se conformer aux réglementations du secteur et aux stratégies internes, et réduire les risques en cas de litige ou de violation de la sécurité.
 
-Lorsque le contenu est soumis à une stratégie de rétention, les utilisateurs peuvent continuer à modifier le contenu et à l’utiliser comme si rien n’était modifié. Le contenu est conservé en place, à son emplacement d’origine. Toutefois, si quelqu’un modifie ou supprime le contenu soumis à la stratégie de rétention, une copie du contenu d’origine est enregistrée dans un emplacement sécurisé où il est conservé pendant que la stratégie de rétention de ce contenu est en vigueur.
+Lorsque le contenu est soumis à une stratégie de rétention, les utilisateurs peuvent continuer à modifier et à travailler avec le contenu comme si rien n’était modifié. Le contenu est conservé en place, à son emplacement d’origine. Toutefois, si quelqu’un modifie ou supprime le contenu soumis à la stratégie de rétention, une copie du contenu d’origine est enregistrée dans un emplacement sécurisé où il est conservé pendant que la stratégie de rétention pour ce contenu est en vigueur.
 
 Vous pouvez rapidement mettre en place une stratégie de rétention pour plusieurs emplacements dans votre environnement Microsoft 365, tels que la messagerie Exchange, les sites SharePoint, les comptes OneDrive et les groupes Microsoft 365. Il n’existe aucune limite au nombre de boîtes aux lettres ou de sites que cette stratégie peut inclure automatiquement. Toutefois, si vous devez être plus sélectif, vous pouvez le faire en configurant une stratégie de rétention pour des emplacements spécifiques et inclure ou exclure des sites ou des utilisateurs.
 
@@ -88,7 +88,7 @@ Pour obtenir des instructions pas à pas pour configurer une stratégie de réte
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Tâche 7 : Configurer des informations sensibles et des stratégies de langage choquant
 
-La protection des informations sensibles et la détection et l’action sur les incidents de harcèlement sur le lieu de travail est un élément important de la conformité avec les stratégies et normes internes. [La conformité des](communication-compliance-feature-reference.md) communications dans Microsoft 365 permet de réduire ces risques en vous aidant à détecter, capturer et prendre rapidement des mesures correctives pour les e-mails et les communications Microsoft Teams. Il s’agit notamment de communications inappropriées contenant du blasphémité, des menaces, du harcèlement et des communications qui partagent des informations sensibles à l’intérieur et à l’extérieur de votre organisation.
+La protection des informations sensibles et la détection et l’action sur les incidents de harcèlement sur le lieu de travail sont un élément important de la conformité avec les stratégies et normes internes. [La conformité des](communication-compliance-feature-reference.md) communications dans Microsoft 365 permet de minimiser ces risques en vous aidant à détecter, capturer et prendre rapidement des mesures correctives pour les e-mails et les communications Microsoft Teams. Il s’agit notamment de communications inappropriées contenant du blasphémité, des menaces, du harcèlement et des communications qui partagent des informations sensibles à l’intérieur et à l’extérieur de votre organisation.
 
 Un modèle de stratégie *anti-harcèlement* et de langage choquant prédéfini vous permet d’analyser les communications internes et externes pour les correspondances de stratégie afin qu’elles soient examinées par des réviseurs désignés. Les réviseurs peuvent examiner les messages électroniques analysés, Microsoft Teams, Yammer ou des communications tierces dans votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’elles sont conformes aux normes de votre organisation.
 
@@ -98,12 +98,12 @@ Pour obtenir des instructions pas à pas pour planifier et configurer la conform
 
 ## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>Tâche 8 : voir ce qui se passe avec vos éléments sensibles
 
-Les étiquettes de confidentialité, les types d’informations sensibles, les étiquettes et stratégies de rétention et les classifieurs entraidables peuvent être utilisés pour classer et étiqueter des éléments sensibles dans Exchange, SharePoint et OneDrive, comme vous l’avez vu dans les tâches précédentes. La dernière étape de votre parcours de tâche rapide consiste à voir quels éléments ont été étiquetés et quelles actions vos utilisateurs prennent sur ces éléments sensibles. [L’Explorateur de](data-classification-content-explorer.md) contenu [et l’Explorateur d’activités](data-classification-activity-explorer.md) fournissent cette visibilité.
+Les étiquettes de confidentialité, les types d’informations sensibles, les étiquettes et stratégies de rétention, ainsi que les classifieurs entraidables peuvent être utilisés pour classifier et étiqueter des éléments sensibles dans Exchange, SharePoint et OneDrive, comme vous l’avez vu dans les tâches précédentes. La dernière étape de votre parcours de tâche rapide consiste à voir quels éléments ont été étiquetés et quelles actions vos utilisateurs prennent sur ces éléments sensibles. [L’Explorateur de](data-classification-content-explorer.md) contenu [et l’Explorateur d’activités](data-classification-activity-explorer.md) fournissent cette visibilité.
 
 ### <a name="content-explorer"></a>Explorateur de contenu
  L’Explorateur de contenu vous permet d’afficher, dans leur format natif, tous les éléments qui ont été classés en tant que type d’informations sensibles ou appartenant à une certaine classification par un classifieur entraisable, ainsi que tous les éléments qui ont une étiquette de sensibilité ou de rétention appliquée.
 
-Pour obtenir des instructions pas à pas sur l’utilisation de l’Explorateur de contenu, voir Connaître vos données - vue d’ensemble de la [classification](data-classification-overview.md)des données et commencer à [utiliser l’explorateur de contenu.](data-classification-content-explorer.md)
+Pour obtenir des instructions pas à pas sur l’utilisation de l’Explorateur de contenu, voir Connaître vos données - vue d’ensemble de la [classification](data-classification-overview.md)des données et commencer à [utiliser l’Explorateur de contenu.](data-classification-content-explorer.md)
 
 ### <a name="activity-explorer"></a>Explorateur d’activités
 L’Explorateur d’activités vous permet de surveiller ce qui est fait avec vos éléments sensibles classés et étiquetés dans :

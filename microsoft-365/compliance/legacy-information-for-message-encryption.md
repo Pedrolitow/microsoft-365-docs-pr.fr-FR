@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Comprendre comment faire passer les fichiers hérités vers le chiffrement de messages Office 365 (OME) pour votre organisation.
-ms.openlocfilehash: 0b9c32b8b30753b02a5a0cdaa40b644ca89cfba3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: eabf655b6fa92a6f502ebe1e071d41f394f78929
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905916"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051826"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
@@ -53,7 +53,7 @@ Le diagramme suivant résume le passage d’un message électronique dans le pro
   
 ![Diagramme montrant le cheminement d’un message électronique chiffré](../media/O365-Office365MessageEncryption-Concept.png)
   
-Pour plus d’informations, consultez les informations de service pour le chiffrement de messages Office 365 hérité avant la publication des nouvelles [fonctionnalités OME.](legacy-information-for-message-encryption.md#LegacyServiceInfo)
+Pour plus d’informations, consultez les informations de service pour le chiffrement de [messages Office 365](legacy-information-for-message-encryption.md#LegacyServiceInfo)hérité avant la publication des nouvelles fonctionnalités OME.
   
 ## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>Définition de règles de flux de messagerie pour le chiffrement de messages Office 365 qui n’utilisent pas les nouvelles fonctionnalités OME
 
@@ -67,11 +67,11 @@ Pour plus d’informations sur la création de règles de flux de messagerie Exc
 
 1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur général, connectez-vous [à Office 365.](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)
 
-2. Choisissez la **vignette** Administrateur.
+2. Sélectionnez la **vignette** Administrateur.
 
 3. Dans le Centre d’administration Microsoft 365, sélectionnez **Centres d’administration** \> **Exchange**.
 
-4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et \>  **sélectionnez Nouvelle** icône Créer une ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du CENTRE d’administration Exchange, consultez le Centre [d’administration Exchange dans Exchange Online.](/exchange/exchange-admin-center)
+4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et sélectionnez Nouvelle icône \>  Créer une  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du CENTRE d’administration Exchange, consultez le Centre [d’administration Exchange dans Exchange Online.](/exchange/exchange-admin-center)
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
@@ -85,7 +85,7 @@ Pour plus d’informations sur la création de règles de flux de messagerie Exc
 
       - Pour entrer un nouveau nom, tapez une adresse e-mail dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
 
-7. Pour ajouter d’autres conditions, choisissez **Plus d’options,** puis **sélectionnez Ajouter une condition** et sélectionnez dans la liste.
+7. Pour ajouter d’autres conditions, sélectionnez **Plus d’options,** puis **sélectionnez Ajouter une condition** et sélectionnez dans la liste.
 
    Par exemple, pour appliquer la règle uniquement si le destinataire est en dehors de votre organisation, sélectionnez Ajouter **une condition,** puis sélectionnez Le destinataire est **externe/interne** à l’extérieur de \> **l’organisation** \> **OK**.
 
@@ -123,11 +123,11 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur, connectez-vous [à Office 365.](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)
 
-2. Choisissez la **vignette** Administrateur.
+2. Sélectionnez la **vignette** Administrateur.
 
 3. Dans le Centre d’administration Microsoft 365, sélectionnez **Centres d’administration** \> **Exchange**.
 
-4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et \>  **sélectionnez Nouvelle** icône Créer une ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du CENTRE d’administration Exchange, consultez le Centre [d’administration Exchange dans Exchange Online.](/exchange/exchange-admin-center)
+4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et sélectionnez Nouvelle icône \>  Créer une  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du CENTRE d’administration Exchange, consultez le Centre [d’administration Exchange dans Exchange Online.](/exchange/exchange-admin-center)
 
 5. In **Name**, type a name for the rule, such as Remove encryption from incoming mail.
 
@@ -198,11 +198,11 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
    |Texte qui s’affiche en haut du portail d’affichage du message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
    |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formats de fichier pris en charge : .png, .jpg, .bmp ou .tiff  <br/> Taille optimale du fichier de logo : moins de 40 Ko  <br/> Taille optimale de l’image de logo : 170x70 pixels  <br/> |
 
-**Pour supprimer les personnalisations de personnalisation des messages électroniques de chiffrement et du portail de chiffrement**
+**Pour supprimer les personnalisations de marque des messages électroniques de chiffrement et du portail de chiffrement**
   
-1. Connectez-vous à Exchange Online à l’aide de Remote PowerShell, comme décrit dans La connexion [à Exchange Online à l’aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Connectez-vous à Exchange Online à l’aide de Remote PowerShell, comme décrit dans La connexion à [Exchange Online à l’aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Utilisez lSet-OMEConfiguration cmdlet comme décrit ici : [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration). Pour supprimer les personnalisations de votre organisation des valeurs DisclaimerText, EmailText et PortalText, définissez la valeur sur une chaîne  `""` vide. Pour toutes les valeurs d’image, telles que Logo, définissez la valeur sur  `"$null"` .
+2. Utilisez la cmdlet Set-OMEConfiguration comme décrit ici [: Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration). Pour supprimer les personnalisations de votre organisation des valeurs DisclaimerText, EmailText et PortalText, définissez la valeur sur une chaîne  `""` vide. Pour toutes les valeurs d’image, telles que Logo, définissez la valeur sur  `"$null"` .
 
    **Options de personnalisation du chiffrement**
 
@@ -293,7 +293,7 @@ Lorsqu’une réponse chiffrée est envoyée à partir du portail de chiffrement
   
  **Q. Je suis abonné à Exchange Hosted Encryption (EHE). Où puis-je en savoir plus sur la mise à niveau vers le chiffrement de messages Office 365 ?**
   
-Tous les clients EHE ont été mis à niveau vers le chiffrement de messages Office 365. Pour plus d’informations, visitez le Centre de mise [à niveau de chiffrement hébergé Exchange.](../security/office-365-security/exchange-online-protection-overview.md)
+Tous les clients EHE ont été mis à niveau vers le chiffrement de messages Office 365. Pour plus d’informations, visitez le Centre de mise [à niveau de chiffrement hébergé Exchange.](../security/defender-365-security/exchange-online-protection-overview.md)
   
  **Q. Ai-je besoin d’ouvrir des URL, des adresses IP ou des ports dans le pare-feu de mon organisation pour prendre en charge le chiffrement de messages Office 365 ?**
   
@@ -301,7 +301,7 @@ Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchan
   
  **Q. À combien de destinataires puis-je envoyer un message chiffré Microsoft 365 ?**
   
-La limite de destinataires est de 500 destinataires par message, ou, lorsqu’elle est combinée après l’extension de la liste de distribution, de 11 980 caractères dans le champ **À** du message, selon ce qui arrive en premier.
+La limite de destinataires est de 500 destinataires par message, ou, lorsqu’elle est combinée après l’extension de la liste de distribution, de 11 980 caractères dans le champ **À** du message, selon la première étape.
   
  **Q : Est-il possible de révoquer un message envoyé à un destinataire particulier ?**
   
