@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: En savoir plus sur les types d’explications dans Microsoft SharePoint Syntex
-ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b34de9ffc565e3d1a17cac05084e4e4b4113a3c6
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928399"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994627"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduction aux types d’explications
 
@@ -157,25 +157,25 @@ Par exemple, au lieu d’ajouter manuellement toutes les variantes de *Date*, vo
  
 La bibliothèque d’explications comprend des explications de liste d’expressions couramment utilisées, notamment :</br>
 
-- Date</br>
-- Données (numériques)</br>
-- Temps</br>
-- Nombre</br>
-- Pourcentage</br>
-- Numéro de téléphone</br>
-- Code postal</br>
-- Premier mot de la phrase</br>
-- Fin de la phrase</br>
-- Carte bancaire</br>
-- Numéro de sécurité sociale</br>
-- Case à cocher</br>
-- Devise</br>
-- CC d’e-mail</br>
-- Date d’e-mail</br>
-- Msg d'accueil d’e-mail</br>
-- Destinataire d’e-mail</br>
-- Instructions concernant la qualité de l’expéditeur de courriers électroniques</br>
-- Sujet de l’e-mail</br>
+- Date : Dates du calendrier, tous les formats. Inclut du texte et des chiffres (par exemple, « 9 décembre 2020 »).</br>
+- Date (numérique) : Dates du calendrier, tous les formats. Inclut les numéros (par exemple 1-11-2020).</br>
+- Heure : formats 12 et 24 heures.</br>
+- Nombre : Nombres positifs et négatifs jusqu'à 2 décimales. </br>
+- Pourcentage : Une liste de motifs représentant un pourcentage. Par exemple, 1%, 11%, 100%, 11,11%, etc.</br>
+- Numéro de téléphone : Formats américains et internationaux courants. Par exemple, 000 000 0000, 000-000-0000, (000)000-0000, (000) 000-0000, etc.</br>
+- Code postal : Formats de code postal américain. Par exemple, 11111, 11111-1111.</br>
+- Premier mot de la phrase : Modèles courants pour les mots jusqu'à 9 caractères. </br>
+- Fin de phrase : Ponctuation courante pour la fin d'une phrase</br>
+- Carte de crédit : Formats courants de numéros de cartes de crédit. Par exemple, 1111-1111-1111-1111. </br>
+- Numéro de sécurité sociale : Format du numéro de sécurité sociale américain. Par exemple, 111-11-1111. </br>
+- Case à cocher : Une liste de phrases représentant des variations d'une case à cocher remplie. Par exemple, _X_, _ _X_, etc.</br>
+- La monnaie : Principaux symboles internationaux. Par exemple, $. </br>
+- E-mail CC : Une liste de phrases avec le terme « CC : », que l'on trouve souvent près des noms ou des adresses e-mail de personnes ou de groupes supplémentaires auxquels le message a été envoyé.</br>
+- Date de l' e-mail : Une liste de phrases avec le terme « Envoyé le :», qui se trouve souvent près de la date d'envoi de l' e-mail.</br>
+- Message d'accueil par e-mail : Lignes d'ouverture courantes pour les e-mails.</br>
+- Destinataire de l' e-mail : Une liste de phrases avec le terme « À :», que l'on trouve souvent près des noms ou des adresses e-mail des personnes ou des groupes auxquels le message a été envoyé. </br>
+- Expéditeur de l' email : Une liste de phrases avec le terme « De : », que l'on trouve souvent près du nom ou de l'adresse électronique de l'expéditeur. </br>
+- Objet de l' e-mail : Une liste de phrases avec le terme « Objet : », qui se trouve souvent près de l'objet de l' e-mail. </br>
 
 La bibliothèque d’explications inclut également trois types de modèles automatiques qui fonctionnent avec les données que vous avez étiquetées dans vos exemples de fichiers :
 
