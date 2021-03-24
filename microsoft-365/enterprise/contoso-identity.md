@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: accd60f6699e7ebf04963213128d1ca1ffc8f7fe
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f3c8746345683652ce601400ae7297e96fff2ee3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911071"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051519"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -64,13 +64,13 @@ Voici le serveur exécutant Azure AD Connect qui recherche les modifications dan
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Stratégies d’accès conditionnel basé sur l’identité et l’appareil
 
-Contoso a créé un jeu d’Azure AD et Intune [stratégies d’accès conditionnel](../security/office-365-security/identity-access-policies.md) pour trois niveaux de protection :
+Contoso a créé un jeu d’Azure AD et Intune [stratégies d’accès conditionnel](../security/defender-365-security/identity-access-policies.md) pour trois niveaux de protection :
 
 - *Les* protections de référence s’appliquent à tous les comptes d’utilisateur.
 - *Les* protections sensibles s’appliquent aux cadres supérieurs et aux cadres.
 - *Les protections hautement réglementées* s’appliquent à des utilisateurs spécifiques des services financiers, juridiques et de recherche qui ont accès aux données hautement réglementées.
 
-Voici l’ensemble des stratégies d’accès conditionnel aux identités et appareils Contoso.
+Voici l’ensemble des stratégies d’accès conditionnel aux appareils et aux identités Contoso.
 
 ![Stratégies d’accès conditionnel basées sur l’identité et l’appareil de Contoso](../media/contoso-identity/contoso-identity-fig5.png)
  

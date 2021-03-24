@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 5b082e78f3dc4067dcce4a96a8088b2347bc3af4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d49ba7ccdb65691756aaa505d0856deb115595b
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912567"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052231"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer Microsoft 365 Business Premium dans l’Assistant Installation
 
@@ -107,7 +107,7 @@ Pour configurer des services, vous devez mettre à jour des enregistrements au n
 
 Les stratégies que vous avez définies dans l’Assistant sont appliquées automatiquement à un groupe [de sécurité](/office365/admin/create-groups/compare-groups#security-groups) appelé Tous *les utilisateurs.* Vous pouvez également créer des groupes supplémentaires pour attribuer des stratégies dans le Centre d’administration.
 
-1. Dans l’option Augmenter la **protection** contre les cybermenaces avancées, il est recommandé d’accepter les valeurs par défaut pour laisser [Office 365 -](../security/office-365-security/office-365-atp.md) Protection avancée contre les menaces analyser les fichiers et les liens dans les applications Office.
+1. Dans l’option Augmenter la **protection** contre les cybermenaces avancées, il est recommandé d’accepter les valeurs par défaut pour laisser [Office 365 Advance Threat Protection](../security/defender-365-security/defender-for-office-365.md) analyser les fichiers et les liens dans les applications Office.
 
     ![Capture d’écran de la page Augmenter la protection.](../media/increasetreatprotection.png)
 

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Les administrateurs Exchange Online gèrent la messagerie et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur. '
-ms.openlocfilehash: 4db7b55f6bb5bb75149a3b91bd7855565ca1be46
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5b63f2b0a58fdce75e5d70e329b8a0d02fb94a1a
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906347"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050969"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos du rôle d’administrateur Exchange Online
 
@@ -48,7 +48,7 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
 
 - [Créez une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) pour qu’un groupe de personnes puisse surveiller et envoyer des messages électroniques à partir d’une adresse de messagerie commune.
 
-- Protection contre le courrier indésirable et filtres [anti-programme](../../security/office-365-security/anti-spam-protection.md) malveillant pour l’organisation.
+- [Protection contre le courrier indésirable et filtres anti-programme](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-spam-protection) malveillant pour l’organisation.
 
 - Gestion des groupes Microsoft 365
 

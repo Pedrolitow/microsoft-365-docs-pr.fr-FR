@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Apprenez à vérifier votre domaine et à créer des enregistrements DNS avec Microsoft 365.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95b1caadfe0e5b331b2bd777263bd86a88bb581f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914593"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050653"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Connecter votre domaine à Microsoft 365
 
@@ -76,6 +76,6 @@ Validez votre enregistrement SPF en utilisant l'un des [Outils de validation S
 
 SPF est conçu pour lutter contre l’usurpation d’adresse, mais il existe des techniques d’usurpation d’adresse contre lesquelles SPF ne peut rien faire. Pour vous protéger contre ces techniques, une fois que vous avez configuré votre SPF, vous devez également configurer DKIM et DMARC pour Microsoft 365.
 
-Pour commencer, consultez la rubrique [Utilisation du DKIM pour valider les e-mails sortants envoyés à partir de votre domaine dans Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) et [Utilisation du DMARC pour valider les e-mails dans Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
+Pour commencer, consultez la rubrique [Utilisation du DKIM pour valider les e-mails sortants envoyés à partir de votre domaine dans Microsoft 365](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md) et [Utilisation du DMARC pour valider les e-mails dans Microsoft 365](../../security/defender-365-security/use-dmarc-to-validate-email.md).
 
 Pour finir, revenez à l’Assistant Configuration du domaine du centre d’administration pour terminer votre installation.

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment piloter la fonctionnalité de messagerie depuis mon domaine personnalisé vers une boîte aux lettres Microsoft 365 à l’aide de deux comptes de test uniquement.
-ms.openlocfilehash: 019f1786756a036132f95fd5e8ef8a1d42cd515b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e710218a2a5cb9821abb213eb2ebb0c92c9bdc42
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914713"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050689"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Piloter Microsoft 365 depuis mon domaine personnalisé
 
@@ -115,7 +115,7 @@ Voici les deux étapes à suivre :
 
 Assurez-vous que vous avez effectué les opérations suivantes dans Microsoft 365 ou Office 365 :
 
-1. Pour configurer des connecteurs, vous avez besoin d’autorisations attribuées avant de commencer. Pour vérifier les autorisations dont vous avez besoin, consultez l’entrée sur les connecteurs Microsoft 365 et Office 365 dans la rubrique [Autorisations de fonctionnalité dans EOP](../../security/office-365-security/feature-permissions-in-eop.md).
+1. Pour configurer des connecteurs, vous avez besoin d’autorisations attribuées avant de commencer. Pour vérifier les autorisations dont vous avez besoin, consultez l’entrée sur les connecteurs Microsoft 365 et Office 365 dans la rubrique [Autorisations de fonctionnalité dans EOP](https://docs.microsoft.com/microsoft-365/security/defender-365-security/feature-permissions-in-eop).
 
 2. Si vous voulez que vos courriers électroniques soient relayés par EOP ou Exchange Online de vos serveurs de messagerie vers Internet, deux solutions sont possibles :
 

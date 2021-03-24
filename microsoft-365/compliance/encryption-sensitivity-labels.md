@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b5d25c51560cfe7a4d55419a7de9ce36321e78f
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928072"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034173"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -227,27 +227,33 @@ Pour consulter des informations supplémentaires, la configuration requise et de
 
 ## <a name="let-users-assign-permissions"></a>Permettre aux utilisateurs d’attribuer des autorisations
 
+> [!IMPORTANT]
+> Tous les clients d’étiquetage ne prennent pas en charge toutes les options qui permettent aux utilisateurs d’attribuer leurs propres autorisations. Pour en savoir plus, consultez cette section.
+
 Vous pouvez utiliser ces options pour permettre aux utilisateurs d’attribuer des autorisations lorsqu’ils appliquent manuellement une étiquette de confidentialité à un contenu :
 
-- Dans Outlook, un utilisateur peut sélectionner des restrictions équivalant à l’option [ne pas transférer](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) pour les bénéficiaires qu'il a choisis.
+- Dans Outlook, un utilisateur peut sélectionner des restrictions équivalentes à l’option [Ne pas transférer](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) ou [Chiffrer uniquement](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) pour les destinataires sélectionnés.
+    
+    L’option Ne pas transférer est prise en charge par tous les clients de messagerie électronique qui prennent en charge les étiquettes de confidentialité. Toutefois, l’application de l’option **Chiffrer uniquement** avec une étiquette de confidentialité est une nouveauté prise en charge uniquement par l’étiquetage intégré et non par le client d’étiquetage unifié Azure Information Protection. Pour les clients de messagerie électronique qui ne prennent pas cette fonctionnalité en charge, l’étiquette n’est pas visible.
+    
+    Pour savoir quelles applications Outlook prennent charge l’étiquetage intégré qui applique l’option Chiffrer uniquement avec une étiquette de niveau de confidentialité, utilisez le [tableau des fonctionnalités pour Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) et la ligne **Permettre aux utilisateurs d’attribuer des autorisations : – Chiffrer uniquement**.
 
 - Dans Word, PowerPoint et Excel, l’utilisateur est invité à sélectionner ses propres niveaux d’autorisation pour des utilisateurs, des groupes ou des organisations spécifiques.
 
-    > [!NOTE]
-    > Cette option pour Word, PowerPoint et Excel est prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Pour les applications qui utilisent l’étiquetage intégré, [vérifiez quelles sont celles qui le prennent en charge](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
-    >
-    > Si cette option est sélectionnée, mais n’est pas prise en charge pour l’application d’un utilisateur, celle-ci ne s’affiche pas pour l’utilisateur, ou l’étiquette s’affiche pour assurer la cohérence, mais elle ne peut pas être appliquée avec un message d’explication aux utilisateurs.
+    Cette option est prise en charge par le client d’étiquetage unifié Azure Information Protection et par certaines applications qui utilisent un étiquetage intégré. Pour les applications qui ne supportent pas cette fonctionnalité, l’étiquette n’est pas visible pour les utilisateurs, ou peut l’être pour des raisons de cohérence, mais elle ne peut pas être appliquée avec un message explicatif aux utilisateurs.
+    
+    Pour vérifier quelles applications utilisant l’étiquetage intégré prennent en charge cette option, utilisez le [tableau des fonctionnalités pour Word, Excel et PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) et la ligne **Permettre aux utilisateurs d’attribuer des autorisations : – Invitez les utilisateurs**.
 
 Lorsque les options sont prises en charge, utilisez le tableau suivant pour déterminer le moment où les utilisateurs voient l’étiquette de confidentialité :
 
 |Paramètres |Étiquette visible dans Outlook|Étiquette visible dans Word, Excel et PowerPoint|
 |:-----|:-----|:-----|:-----|
-|**Appliquer dans Outlook des restrictions équivalant à l’option Ne pas transférer**|Oui |Non |
+|**Dans Outlook, appliquez des restrictions avec l’option Ne pas transférer ou Chiffrer uniquement**|Oui |Non |
 |**Dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier des autorisations**|Non |Oui|
 
 Lorsque les deux paramètres sont sélectionnés, l’étiquette est par conséquent visible dans Outlook et dans Word, Excel et PowerPoint.
 
-Une étiquette de confidentialité permettant aux utilisateurs d’attribuer des autorisations peut être appliquée au contenu uniquement manuellement par les utilisateurs. Elle ne peut pas être appliquée automatiquement ou utilisée comme étiquette recommandée.
+Une étiquette de niveau permettant aux utilisateurs d’attribuer des autorisations doit être appliquée manuellement au contenu par les utilisateurs. Elle ne peut pas être appliquée automatiquement ou utilisée comme étiquette recommandée.
 
 Configuration d'autorisations attribuées par utilisateur :
 
@@ -255,13 +261,21 @@ Configuration d'autorisations attribuées par utilisateur :
 
 ### <a name="outlook-restrictions"></a>Restrictions Outlook
 
-Dans Outlook, lorsqu’un utilisateur applique une étiquette de confidentialité qui lui permet d’attribuer des autorisations à un message, les restrictions sont identiques à celles de l’option ne pas transférer. L’utilisateur voit le nom et la description de l’étiquette dans la partie supérieure du message, ce qui indique que le contenu est protégé. Contrairement à Word, PowerPoint et Excel (voir la [section suivante](#word-powerpoint-and-excel-permissions)), les utilisateurs ne sont pas invités à sélectionner des autorisations spécifiques.
+Dans Outlook, quand un utilisateur applique une étiquette de confidentialité qui lui permet d’attribuer des autorisations à un message, vous pouvez choisir l’**option Ne pas transférer** ou **Chiffrer uniquement**. L’utilisateur voit le nom et la description de l’étiquette dans la partie supérieure du message, ce qui indique que le contenu est protégé. Contrairement à Word, PowerPoint et Excel (voir la [section suivante](#word-powerpoint-and-excel-permissions)), les utilisateurs ne sont pas invités à sélectionner des autorisations spécifiques.
 
 ![Étiquette de niveau de confidentialité appliquée à un message dans Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
-Lorsque l’option ne pas transférer est appliquée à un e-mail, celui-ci est chiffré et les destinataires doivent être authentifiés. Les destinataires ne peuvent alors pas le transférer, l’imprimer ou en faire une copie. Par exemple, dans le client Outlook, le bouton transférer n’est pas disponible, les options du menu enregistrer sous et imprimer ne sont pas disponibles, et vous ne pouvez pas ajouter ou modifier des destinataires dans les zones à, CC ou CCI.
+Lorsque l’une de ces options est appliquée à un e-mail, celui-ci est chiffré et les destinataires doivent être authentifiés. Les destinataires ont automatiquement des droits d’utilisation limités :
 
-Les documents Office non chiffrés qui sont joints à un courrier électronique héritent automatiquement des mêmes restrictions. Les droits d’utilisation appliqués à ces documents sont modifier le contenu, modifier; afficher, ouvert, lu et autoriser les macros. Si l’utilisateur souhaite appliquer des droits d’utilisation différents pour une pièce jointe, ou si la pièce jointe n’est pas un document Office qui prend en charge cette protection héritée, l’utilisateur doit protéger le fichier avant de le joindre à l’e-mail.
+- **Ne pas transférer** : les destinataires ne peuvent pas transférer l’e-mail, l’imprimer, ou copier à partir de celui-ci. Par exemple, dans le client Outlook, le bouton transférer n’est pas disponible, les options du menu enregistrer sous et imprimer ne sont pas disponibles, et vous ne pouvez pas ajouter ou modifier des destinataires dans les zones à, CC ou CCI.
+    
+    Pour plus d’informations sur le fonctionnement de cette option, consultez l’[option Ne pas transférer pour les e-mail](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
+
+- **Chiffrer uniquement** : les destinataires ont tous les droits d’utilisation à l’exception des commandes Enregistrer sous, Exporter et Contrôle total. Cette combinaison de droits d’utilisation signifie que les destinataires n’ont aucune restriction, mais ils ne peuvent pas supprimer la protection. Par exemple, un destinataire peut copier à partir de l’e-mail, l’imprimer et le transférer.
+    
+    Pour plus d’informations sur le fonctionnement de cette option, consultez l’[option Chiffrer uniquement pour les e-mails](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
+
+Les documents Office non chiffrés joints à un e-mail héritent automatiquement des mêmes restrictions. Pour Ne pas transférer, les droits d’utilisation appliqués à ces documents sont Modifier le contenu, Modifier, Enregistrer, Afficher, Ouvrir, Lire, et Autoriser les macros. Si l’utilisateur souhaite appliquer des droits d’utilisation différents pour une pièce jointe, ou si la pièce jointe n’est pas un document Office qui prend en charge cette protection héritée, l’utilisateur doit chiffrer le fichier avant de le joindre à l’e-mail.
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Autorisations Word, PowerPoint et Excel
 

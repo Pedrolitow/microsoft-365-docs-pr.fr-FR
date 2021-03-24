@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité qui sont disponibles avec Microsoft 365 Business Premium pour protéger vos données sur les PC, téléphones et tablettes.
-ms.openlocfilehash: 74a22b654e60e4a980e397598117bb4c435e833b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d641fc66e27f3c5e0a7c8609e4fa25fac93d8561
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912547"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052251"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business Premium
 
@@ -41,7 +41,7 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité Microsoft 365 Bu
   
 - [Définissez les paramètres de gestion des applications pour les appareils Android ou iOS.](app-protection-settings-for-android-and-ios.md) 
     
-    Ces paramètres incluent la suppression de fichiers d’un appareil inactif après une période définie, le chiffrement des fichiers de travail, l’obligation pour les utilisateurs de définir un code confidentiel, etc.
+    Ces paramètres incluent la suppression de fichiers d’un appareil inactif après une période définie, le chiffrement des fichiers professionnels, la nécessité pour les utilisateurs de définir un code confidentiel, etc.
     
 - [Définissez les paramètres de protection des applications pour les appareils Windows 10.](protection-settings-for-windows-10-devices.md) 
     
@@ -63,7 +63,7 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité Microsoft 365 Bu
 
 Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibles pour vous aider à protéger votre activité contre les cybermenaces et protéger les informations sensibles.
   
-- **[Microsoft Defender pour Office 365](../security/office-365-security/office-365-atp.md)**
+- **[Microsoft Defender pour Office 365](../security/defender-365-security/defender-for-office-365.md)**
     
     Microsoft Defender pour Office 365 vous aide à protéger votre entreprise contre les attaques sophistiquées par hameçonnage et ransomware conçues pour compromettre les informations des employés ou des clients. Les fonctionnalités sont les suivantes : 
     
@@ -125,4 +125,4 @@ Oui, ces fonctionnalités sont disponibles dans tous les marchés où Microsoft 
     
     ![Dans le navigation gauche du Centre d’administration Microsoft 365, choisissez Centres d’administration.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Choisissez **Conformité de la &amp; sécurité** pour aller au Centre &amp; de conformité de sécurité.
+3. Sélectionnez **&amp; Conformité de la** sécurité pour aller au Centre de conformité de la &amp; sécurité.

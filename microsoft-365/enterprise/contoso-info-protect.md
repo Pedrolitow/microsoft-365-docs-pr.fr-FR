@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre comment Contoso utilise les fonctionnalités de protection des informations dans Microsoft 365 pour les entreprises pour sécuriser leurs biens numériques dans le cloud.
-ms.openlocfilehash: 90a82fbd4dd77ff0f8faa024ced177a640a10b80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911037"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051495"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
 Contoso est sérieux quant à la sécurité de ses informations. La fuite ou la destruction de la propriété intellectuelle qui décrit leurs conceptions de produits et techniques de fabrication propriétaires les placent dans un inconvénient concurrentiel.
 
-Avant de déplacer leurs biens numériques sensibles vers le cloud, Contoso s’est assuré que les exigences de classification et de protection des informations sur site étaient prises en charge par les services informatiques de Microsoft 365 pour entreprise.
+Avant de déplacer leurs biens numériques sensibles vers le cloud, Contoso s’est assuré que les exigences de protection et de classification des informations sur site étaient prises en charge par les services informatiques de Microsoft 365 pour entreprise.
 
 ## <a name="contoso-data-security-classification"></a>Classification de la sécurité des données Contoso
 
@@ -34,7 +34,7 @@ Contoso a effectué une analyse de ses données et déterminé les niveaux de cl
 
 | Niveau 1 : ligne de base | Niveau 2 : Sensible | Niveau 3 : hautement réglementé |
 |:-------|:-----|:-----|
-| Les données sont chiffrées et uniquement accessibles par des utilisateurs authentifiés.<BR> <BR> Fourni pour toutes les données stockées sur site et dans le cloud stockage et charges de travail. Les données sont chiffrées pendant qu’elles résident dans le service et en transit entre le service et les appareils clients. <BR><BR>Les données de niveau 1 incluent, par exemple, les communications d’entreprise normales (courrier électronique) et les fichiers des collaborateurs de l’administration, des ventes et du support technique. | Niveau 1 avec une authentification et une protection renforcées contre la perte de données.<BR> <BR> L’authentification forte inclut Azure AD Multi-Factor Authentication (MFA) avec validation SMS. La protection contre la perte de données garantit que les informations sensibles ou critiques ne se déplacent pas en dehors du cloud Microsoft.<BR><BR>Les données de niveau 2 sont, par exemple, des informations financières et juridiques ainsi que les données de recherche et de développement de nouveaux produits. | Niveau 2 avec des niveaux de chiffrement, d’authentification et d’audit plus élevés.<BR><BR>Niveaux de chiffrement des données au repos et dans le cloud les plus élevés, conformes aux réglementations locales, associés à une authentification multi-facteur avec cartes à puce et fonctionnalités d’audit et d’alerte granulaires.<BR> <BR>Les données de niveau 3 sont, par exemple, des informations personnelles client et partenaire, des spécifications d’ingénierie de produit et des techniques de fabrication propriétaires.  |
+| Les données sont chiffrées et uniquement accessibles par des utilisateurs authentifiés.<BR> <BR> Fourni pour toutes les données stockées sur site et dans le cloud, ainsi que pour les charges de travail et le stockage. Les données sont chiffrées pendant qu’elles résident dans le service et en transit entre le service et les appareils clients. <BR><BR>Les données de niveau 1 incluent, par exemple, les communications d’entreprise normales (courrier électronique) et les fichiers des collaborateurs de l’administration, des ventes et du support technique. | Niveau 1 avec une authentification et une protection renforcées contre la perte de données.<BR> <BR> L’authentification forte inclut Azure AD Multi-Factor Authentication (MFA) avec validation SMS. La protection contre la perte de données garantit que les informations sensibles ou critiques ne se déplacent pas en dehors du cloud Microsoft.<BR><BR>Les données de niveau 2 sont, par exemple, des informations financières et juridiques ainsi que les données de recherche et de développement de nouveaux produits. | Niveau 2 avec des niveaux de chiffrement, d’authentification et d’audit plus élevés.<BR><BR>Niveaux de chiffrement des données au repos et dans le cloud les plus élevés, conformes aux réglementations locales, associés à une authentification multi-facteur avec cartes à puce et fonctionnalités d’audit et d’alerte granulaires.<BR> <BR>Les données de niveau 3 sont, par exemple, des informations personnelles client et partenaire, des spécifications d’ingénierie de produit et des techniques de fabrication propriétaires.  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Stratégies d’information de Contoso
@@ -54,7 +54,7 @@ Contoso a suivi les étapes suivantes pour préparer Microsoft 365 pour entrepri
 
 1. Identifier les informations à protéger
 
-   Contoso a fait un examen approfondi de ses biens numériques existants situés sur des sites SharePoint et des partages de fichiers locaux et a classé chaque bien.
+   Contoso a fait un examen approfondi de ses biens numériques existants situés sur des sites SharePoint locaux et des partages de fichiers et a classé chaque bien.
 
 2. Déterminer les stratégies d’accès, de rétention et de protection des informations pour les niveaux de données
 
@@ -64,7 +64,7 @@ Contoso a suivi les étapes suivantes pour préparer Microsoft 365 pour entrepri
 
    Contoso a créé des étiquettes de confidentialité pour ses niveaux de données dont les étiquettes hautement réglementées incluent chiffrement, autorisations et filigranes.
 
-4.  Déplacer des données de sites SharePoint locaux et de partages de fichiers vers leurs nouveaux sites SharePoint
+4.  Déplacer des données à partir de sites SharePoint locaux et de partages de fichiers vers leurs nouveaux sites SharePoint
 
     Les fichiers ayant migré vers les nouveaux sites SharePoint ont hérité des étiquettes de rétention par défaut attribuées au site.
 
@@ -76,9 +76,9 @@ Contoso a suivi les étapes suivantes pour préparer Microsoft 365 pour entrepri
 
 Dans le cadre de son déploiement d’Exchange Online et de SharePoint, Contoso a configuré l’ensemble de stratégies d’accès conditionnel suivant et les a appliquées aux groupes appropriés :
 
-- [Stratégies d’accès aux applications gérées et non gérées sur les périphériques](../security/office-365-security/identity-access-policies.md)
-- [Stratégies d’accès à Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)
-- [Stratégies d’accès SharePoint](../security/office-365-security/sharepoint-file-access-policies.md)
+- [Stratégies d’accès aux applications gérées et non gérées sur les périphériques](../security/defender-365-security/identity-access-policies.md)
+- [Stratégies d’accès à Exchange Online](../security/defender-365-security/secure-email-recommended-policies.md)
+- [Stratégies d’accès SharePoint](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 Voici un ensemble de stratégies Contoso pour la protection des informations.
 
@@ -117,7 +117,7 @@ Découvrez comment Contoso utilise les fonctionnalités de sécurité dans [Micr
 
 ## <a name="see-also"></a>Voir aussi
 
-[Feuille de route de sécurité](../security/office-365-security/security-roadmap.md)
+[Feuille de route de sécurité](../security/defender-365-security/security-roadmap.md)
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 

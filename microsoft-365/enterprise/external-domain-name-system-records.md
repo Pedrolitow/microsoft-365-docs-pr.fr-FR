@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Liste de références des enregistrements système de nom de domaine externe à utiliser lorsque vous planifiez d’un déploiement Office 365.
-ms.openlocfilehash: c2384f1e330692d43c923a7932db4c3ff2bc99ae
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3aa6bf3362005eb0dae5bca40322fe2178d5d69f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924211"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051377"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Enregistrements DNS externes pour Office 365
 
@@ -103,7 +103,7 @@ Il existe des étapes spécifiques à suivre lorsque vous utilisez des [plages d
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
->  SPF est conçu pour éviter l’usurpation mais il existe des techniques d’usurpation contre lesquelles SPF ne peut pas vous protéger. Afin de vous protéger contre ces techniques, une fois que vous avez configuré SPF, vous devez également configurer DKIM et DMARC pour Office 365. Consultez [Use DKIM to validate outbound email sent from your domain in Office 365](../security/office-365-security/use-dkim-to-validate-outbound-email.md) pour commencer. Ensuite, consultez la rubrique [Use DMARC to validate email in Office 365](../security/office-365-security/use-dmarc-to-validate-email.md).
+>  SPF est conçu pour éviter l’usurpation mais il existe des techniques d’usurpation contre lesquelles SPF ne peut pas vous protéger. Afin de vous protéger contre ces techniques, une fois que vous avez configuré SPF, vous devez également configurer DKIM et DMARC pour Office 365. Consultez [Use DKIM to validate outbound email sent from your domain in Office 365](../security/defender-365-security/use-dkim-to-validate-outbound-email.md) pour commencer. Ensuite, consultez la rubrique [Use DMARC to validate email in Office 365](../security/defender-365-security/use-dmarc-to-validate-email.md).
   
 Les enregistrements SPF texte contribuent à empêcher d’autres personnes d’utiliser votre domaine pour envoyer des messages indésirables ou malveillants. Les enregistrements SPF (Sender Policy Framework) fonctionnent en identifiant les serveurs autorisés à envoyer des messages à partir de votre domaine.
   
@@ -125,7 +125,7 @@ Un système de messagerie recevant un message électronique via votre domaine ex
 Pour les scénarios où vous n’utilisez pas seulement les emails Exchange Online pour Office 365 (par exemple, lorsque vous utilisez le courrier électronique en provenance de SharePoint Online), utilisez le tableau suivant pour déterminer les éléments à inclure dans la valeur de l’enregistrement.
   
 > [!NOTE]
-> Si votre scénario est complexe et inclut, par exemple, les serveurs de messagerie edge pour la gestion du trafic de messagerie à travers votre pare-feu, vous devez configurer un enregistrement SPF plus détaillé. Découvrez comment : [configurer les enregistrements SPF dans Office 365 pour éviter l’usurpation](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Vous pouvez également découvrir beaucoup plus sur le fonctionnement du SPF avec Office 365 en lisant [comment Office 365 utilise l’expéditeur SPF (Sender Policy Framework) pour éviter l’usurpation](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md).
+> Si votre scénario est complexe et inclut, par exemple, les serveurs de messagerie edge pour la gestion du trafic de messagerie à travers votre pare-feu, vous devez configurer un enregistrement SPF plus détaillé. Découvrez comment : [configurer les enregistrements SPF dans Office 365 pour éviter l’usurpation](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Vous pouvez également découvrir beaucoup plus sur le fonctionnement du SPF avec Office 365 en lisant [comment Office 365 utilise l’expéditeur SPF (Sender Policy Framework) pour éviter l’usurpation](../security/defender-365-security/how-office-365-uses-spf-to-prevent-spoofing.md).
   
 | Nombre|Si vous utilisez...  <br/> |Objectif  <br/> |Ajoutez ceci  <br/> |
 |:-----|:-----|:-----|:-----|
@@ -181,6 +181,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-Voici quelques exemples courants qui peuvent vous aider à adapter votre enregistrement SPF existant lorsque vous ajoutez votre domaine à Office 365 pour le courrier électronique. Si votre scénario est complexe et inclut, par exemple, les serveurs de messagerie edge pour la gestion du trafic de messagerie à travers votre pare-feu, vous devez configurer un enregistrement SPF plus détaillé. Découvrez comment : [configurer les enregistrements SPF dans Office 365 pour éviter l’usurpation](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+Voici quelques exemples courants qui peuvent vous aider à adapter votre enregistrement SPF existant lorsque vous ajoutez votre domaine à Office 365 pour le courrier électronique. Si votre scénario est complexe et inclut, par exemple, les serveurs de messagerie edge pour la gestion du trafic de messagerie à travers votre pare-feu, vous devez configurer un enregistrement SPF plus détaillé. Découvrez comment : [configurer les enregistrements SPF dans Office 365 pour éviter l’usurpation](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
   
 Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365edns]()

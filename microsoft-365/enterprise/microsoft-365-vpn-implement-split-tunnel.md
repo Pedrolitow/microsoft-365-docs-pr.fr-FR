@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: 2feb03f2142639a1c1de4ff9a69768e23f282546
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93adc70882e0c8ce9752cb471b13c301a4a59bd4
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924223"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051281"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -41,7 +41,7 @@ L’utilisation de réseaux privés virtuels avec tunnel imposé pour la connexi
 
 Ce problème s'est aggravé depuis plusieurs années, avec de nombreux clients qui ont signalé un décalage important de modèles de trafic réseau. Le trafic qui était utilisé pour rester sur site se connecte désormais aux points de terminaison cloud externes. De nombreux clients Microsoft signalaient qu’auparavant, environ 80% du trafic réseau était une source interne (représentée par une ligne pointillée dans le diagramme ci-dessus). En 2020, ce nombre est à présent environ 20% ou plus, car les charges de travail majeures ont été déplacées vers le cloud, mais ces tendances ne sont pas rares pour les autres entreprises. Au fil du temps, au fur et à mesure de l’avancement du projet, le modèle ci-dessus devient de plus en plus encombrant et peu viable, empêchant une organisation d'être flexible au fur et à mesure de son déplacement dans un premier monde de cloud.
 
-La crise mondiale de grippe COVID-19 a aggravé ce problème et exige des mesures correctives immédiates. La nécessité d'assurer la sécurité des employés a généré des demandes sans précédent en matière de technologies de l'information pour prendre en charge la productivité du travail à domicile à une échelle massive. Microsoft Office 365 est bien placé pour aider les clients à répondre à cette demande, mais la forte concurrence des utilisateurs travaillant à domicile génère un volume important de trafic Office 365 qui, s’il est acheminé via un tunnel forcé VPN et des périmètres réseau locaux, entraîne une saturation rapide et exécute l’infrastructure VPN hors capacité. Dans cette nouvelle réalité, l’utilisation du VPN pour accéder à Office 365 n’est plus seulement un obstacle aux performances, mais un mur dur qui non seulement a un impact sur Office 365, mais également sur les opérations d’entreprise critiques qui doivent encore s’appuyer sur le VPN pour fonctionner.
+La crise mondiale de grippe COVID-19 a aggravé ce problème et exige des mesures correctives immédiates. La nécessité d'assurer la sécurité des employés a généré des demandes sans précédent en matière de technologies de l'information pour prendre en charge la productivité du travail à domicile à une échelle massive. Microsoft Office 365 est bien positionné pour aider les clients à répondre à cette demande, mais la forte concurrence des utilisateurs travaillant à domicile génère un volume important de trafic Office 365 qui, s’il est acheminé via un tunnel forcé VPN et des périmètres réseau locaux, entraîne une saturation rapide et exécute l’infrastructure VPN hors capacité. Dans cette nouvelle réalité, l’utilisation du VPN pour accéder à Office 365 n’est plus seulement un obstacle aux performances, mais un mur dur qui non seulement a un impact sur Office 365, mais également sur les opérations d’entreprise critiques qui doivent encore s’appuyer sur le VPN pour fonctionner.
 
 Microsoft travaille en étroite collaboration avec des clients et une grande industrie depuis de nombreuses années afin d’offrir des solutions efficaces et modernes à ces problèmes à partir de nos propres services et de s’adapter aux meilleures pratiques industrielles. Les [principes de connectivité](./microsoft-365-network-connectivity-principles.md) du service Office 365 ont été conçus pour fonctionner de manière efficace pour les utilisateurs distants tout en permettant à une organisation de maintenir la sécurité et le contrôle de leur connectivité. Ces solutions peuvent également être implémentées très rapidement avec un travail limité, mais ont un impact positif important sur les problèmes décrits ci-dessus.
 
@@ -99,7 +99,7 @@ Le diagramme ci-dessous montre comment fonctionne la solution tunnel partagé VP
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identifier les points de terminaison à optimiser
 
-Dans la rubrique [URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md), Microsoft identifie clairement les points de terminaison clés dont vous avez besoin pour optimiser et les classer en tant que **Optimiser**. Il n’existe actuellement que quatre URL et vingt sous-réseaux IP qui doivent être optimisés. Ce petit groupe de points de terminaison compte environ 70 à 80 % du volume du trafic vers le service Office 365, y compris les points de terminaison sensibles sur la latence, tels que ceux destinés aux médias Teams. Il s’agit essentiellement du trafic que nous devons prendre en charge de manière particulière et c’est également le trafic qui met une pression incroyable sur les chemins d’accès réseau traditionnels et l’infrastructure VPN.
+Dans la rubrique [URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md), Microsoft identifie clairement les points de terminaison clés dont vous avez besoin pour optimiser et les classer en tant que **Optimiser**. Il n’existe actuellement que quatre URL et vingt sous-réseaux IP qui doivent être optimisés. Ce petit groupe de points de terminaison compte environ 70 à 80 % du volume du trafic vers le service Office 365, y compris les points de terminaison sensibles sur la latence, tels que ceux destinés aux médias Teams. Il s’agit essentiellement du trafic que nous devons prendre en charge de manière particulière et c’est également le trafic qui placera une pression incroyable sur les chemins d’accès réseau traditionnels et l’infrastructure VPN.
 
 Les URL dans cette catégorie présentent les caractéristiques suivantes :
 
@@ -246,7 +246,7 @@ Vous pouvez également consulter des informations sur les contrôles de sécurit
 
 Une fois la stratégie en place, vous devez vérifier qu’elle fonctionne comme prévu. Plusieurs méthodes s’offrent à vous pour tester que le chemin d’accès est correctement configuré pour utiliser la connexion Internet locale :
 
-- Exécutez le [test de connectivité Microsoft 365](https://aka.ms/netonboard) qui exécutera des tests de connectivité à votre place, y compris des itinéraires de suivi comme ci-dessus. Nous ajoutons également dans cet outil des tests VPN qui doivent également fournir des informations supplémentaires.
+- Exécutez le [test de connectivité Microsoft 365](https://aka.ms/netonboard) qui exécutera pour vous des tests de connectivité, y compris des itinéraires de suivi comme ci-dessus. Nous ajoutons également dans cet outil des tests VPN qui doivent également fournir des informations supplémentaires.
 
 - Un traceur simple à un point de terminaison dans la portée du tunnel partagé doit afficher la trajectoire prise, par exemple :
 
@@ -304,7 +304,7 @@ Nous pouvons ensuite déclencher une stratégie telle que approuver, déclencher
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>Comment puis-je me protéger contre les virus et les programmes malveillants ?
 
-Une fois encore, Office 365 offre une protection pour l’option optimiser les points de terminaison marqués dans les différentes couches du service, [décrites dans ce document](/office365/Enterprise/office-365-malware-and-ransomware-protection). Comme indiqué, il est beaucoup plus efficace de fournir ces éléments de sécurité dans le service lui-même plutôt que d’essayer de le faire en ligne avec des appareils qui ne comprennent peut-être pas complètement les protocoles/trafic. Par défaut, SharePoint Online analyse automatiquement les téléchargements de fichiers pour les programmes [malveillants](../security/office-365-security/virus-detection-in-spo.md) connus
+Une fois encore, Office 365 offre une protection pour l’option optimiser les points de terminaison marqués dans les différentes couches du service, [décrites dans ce document](/office365/Enterprise/office-365-malware-and-ransomware-protection). Comme indiqué, il est beaucoup plus efficace de fournir ces éléments de sécurité dans le service lui-même plutôt que d’essayer de le faire en ligne avec des appareils qui ne comprennent peut-être pas complètement les protocoles/trafic. Par défaut, SharePoint Online analyse automatiquement les téléchargements de fichiers pour les programmes [malveillants](../security/defender-365-security/virus-detection-in-spo.md) connus
 
 Pour les points de terminaison Exchange répertoriés ci-dessus, [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) et Microsoft Defender pour Office [365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) assurent une excellente sécurité du trafic vers le service.
 

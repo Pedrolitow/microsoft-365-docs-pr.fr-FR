@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
-ms.openlocfilehash: 8232e7df2a8390b905386773ed0656eb8239d5c5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920915"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052301"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
 
@@ -29,7 +29,7 @@ Avec l’augmentation de l’utilisation des groupes Microsoft 365 et de Microso
 
 Lorsqu’un groupe expire, tous ses services associés (boîte aux lettres, planificateur, site SharePoint, équipe, etc.) sont également supprimés.
 
-Lorsqu’un groupe arrive à expiration, il est « supprimé (récupérez) », ce qui signifie qu’il peut toujours être récupéré pendant 30 jours.
+Lorsqu’un groupe expire, il est « supprimé (récupérez) », ce qui signifie qu’il peut toujours être récupéré pendant 30 jours.
 
 Les administrateurs peuvent spécifier une période d’expiration et tout groupe inactif qui arrive à la fin de cette période et qui n’est pas renouvelé est supprimé. (Cela inclut les équipes archivées.) La période d’expiration commence lors de la création du groupe ou à la date de son dernier renouvellement. Les propriétaires de groupe sont automatiquement envoyés un e-mail avant l’expiration qui leur permet de renouveler le groupe pour un autre intervalle d’expiration. Les utilisateurs de Teams voient des notifications persistantes dans Teams.
 
@@ -37,6 +37,8 @@ Les groupes qui sont activement utilisés sont renouvelés automatiquement. L’
 - SharePoint : afficher, modifier, télécharger, déplacer, partager ou télécharger des fichiers. (L’affichage d’une page SharePoint ne compte pas comme une action de renouvellement automatique.)
 - Outlook : rejoindre un groupe, lire ou écrire un message de groupe à partir du groupe, et comme un message (Outlook sur le web).
 - Teams : visite d’un canal teams.
+
+Notez que la seule activité Yammer qui déclenchera le renouvellement automatique d’un groupe est le téléchargement d’un document vers SharePoint au sein de la communauté.
 
 > [!IMPORTANT]
 > Lorsque vous modifiez la stratégie d’expiration, le service recalcule la date d’expiration de chaque groupe. Il commence toujours à compter de la date de création du groupe, puis applique la nouvelle stratégie d’expiration.
@@ -55,7 +57,7 @@ Il est important de savoir que l’expiration est désactivée par défaut. Les 
 
 ## <a name="how-to-set-the-expiration-policy"></a>Comment définir la stratégie d’expiration
 
-Comme indiqué ci-dessus, l’expiration est désactivée par défaut. Un administrateur devra activer la stratégie d’expiration et définir les propriétés pour qu’elle prenne effet. Pour l’activer, allez à **l’expiration des groupes Azure Active Directory.**  >    >   Ici, vous pouvez définir la durée de vie du groupe par défaut et spécifier à l’avance la date de réception des notifications d’expiration de la première et de la deuxième notification d’expiration au propriétaire du groupe.
+Comme indiqué ci-dessus, l’expiration est désactivée par défaut. Un administrateur devra activer la stratégie d’expiration et définir les propriétés pour qu’elle prenne effet. Pour l’activer, allez à **l’expiration des groupes Azure Active Directory.**  >    >   Ici, vous pouvez définir la durée de vie du groupe par défaut et spécifier à l’avance le délai d’accès des première et deuxième notifications d’expiration au propriétaire du groupe.
 
 La durée de vie du groupe est spécifiée en jours et peut être définie sur 180, 365 ou sur une valeur personnalisée que vous spécifiez. La valeur personnalisée doit être d’au moins 30 jours.
 
@@ -73,7 +75,7 @@ Si vous avez mis en place une stratégie de rétention pour les groupes dans le 
 
 Les propriétaires de groupe ne seront avertis que par courrier électronique. Si le groupe a été créé via le Planificateur, SharePoint ou toute autre application, les notifications d’expiration sont toujours envoyés par courrier électronique. Si le groupe a été créé via Teams, le propriétaire du groupe reçoit une notification de renouvellement via la section activité. Il n’est pas recommandé d’activer l’expiration sur un groupe si le propriétaire de votre groupe n’a pas d’adresse de messagerie valide.
 
-Trente jours avant l’expiration du groupe, les propriétaires du groupe (ou les adresses de messagerie que vous avez spécifiées pour les groupes qui n’ont pas de propriétaire) recevront un e-mail leur permettant de renouveler facilement le groupe. S’ils ne le renouvellent pas, ils recevront un autre e-mail de renouvellement 15 jours avant l’expiration. S’ils ne l’ont toujours pas renouvelé, ils recevront une notification par courrier électronique le jour avant l’expiration.
+Trente jours avant l’expiration du groupe, les propriétaires du groupe (ou les adresses de messagerie que vous avez spécifiées pour les groupes qui n’ont pas de propriétaire) recevront un courrier électronique leur permettant de renouveler facilement le groupe. S’il ne le renouvelle pas, il reçoit un autre e-mail de renouvellement 15 jours avant l’expiration. S’ils ne l’ont toujours pas renouvelé, ils recevront une notification par courrier électronique le jour avant l’expiration.
 
 Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne renouvelle le groupe avant son expiration, l’administrateur peut toujours restaurer le groupe jusqu’à 30 jours après l’expiration. Pour plus d’informations, [voir : Restaurer un groupe Microsoft 365 supprimé.](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)
 
@@ -81,7 +83,7 @@ Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne r
 
 Si vous avez un groupe que vous ne prévoyez plus d’utiliser, mais que vous souhaitez conserver son contenu, voir Groupes d’archivage, équipes et [Yammer](end-life-cycle-groups-teams-sites-yammer.md) pour plus d’informations sur l’exportation d’informations à partir des différents services de groupes.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

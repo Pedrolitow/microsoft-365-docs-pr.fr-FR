@@ -14,13 +14,13 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-description: Feuille de route de la mise en place de la gestion des appareils pour Microsoft 365.
-ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Feuille de route pour configurer la gestion des appareils pour Microsoft 365.
+ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918965"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051459"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Gestion des appareils mobiles pour Microsoft 365
 
@@ -54,10 +54,10 @@ En fonction de votre évaluation, vous pouvez commencer à gérer vos appareils 
  
 ## <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils
 
-Microsoft fournit un ensemble de recommandations sur l’[accès aux appareils et à l’identité](../security/office-365-security/microsoft-365-policies-configurations.md) pour garantir un personnel conforme et productif. Pour l’accès aux appareils, utilisez les recommandations et les paramètres des articles suivants :
+Microsoft fournit un ensemble de recommandations sur l’[accès aux appareils et à l’identité](../security/defender-365-security/microsoft-365-policies-configurations.md) pour garantir un personnel conforme et productif. Pour l’accès aux appareils, utilisez les recommandations et les paramètres des articles suivants :
 
-- [Conditions préalables](../security/office-365-security/identity-access-prerequisites.md)
-- [Stratégies communes pour les identités et l’accès aux appareils](../security/office-365-security/identity-access-policies.md)
+- [Conditions préalables](../security/defender-365-security/identity-access-prerequisites.md)
+- [Stratégies communes pour les identités et l’accès aux appareils](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Comment Contoso a fait la gestion des appareils pour Microsoft 365
 
