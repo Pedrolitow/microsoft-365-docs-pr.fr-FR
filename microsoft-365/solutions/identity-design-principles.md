@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 10cebf0ab74936d7275586f2e8f09c841c8c653f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 746ca59fd0e9eb0d93d93c00b6a279a9156cc524
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918313"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050737"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>À l’identité et au-delà : l’identité d’un architecte
 
@@ -133,11 +133,11 @@ La combinaison de tous ces signaux permet d’obtenir des stratégies dynamiques
 Si vous êtes d’accord avec cette définition étendue de l’autorisation, vous devez implémenter des solutions supplémentaires. Les solutions que vous implémentez dépendent de la dynamique que vous souhaitez que la stratégie soit et des menaces que vous souhaitez hiérarchiser. Voici quelques exemples de ces systèmes :
 
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
-- [Microsoft Defender pour l’identité](/azure-advanced-threat-protection/)
+- [Microsoft Defender pour Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender pour Office 365](../security/office-365-security/office-365-atp.md?view=o365-worldwide)
+- [Microsoft Defender pour Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
-- [Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md?view=o365-worldwide)
+- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
 - [Protection des informations Microsoft](../compliance/information-protection.md?view=o365-worldwide) (MIP)
 - [Azure Sentinel](/azure/sentinel/)
@@ -227,7 +227,7 @@ Parfois, les scénarios appellent l’ajout d’un utilisateur externe à un rô
 
 ### <a name="security-and-compliance-center-scc"></a>Centre de sécurité et conformité (SCC)
 
-Les autorisations dans le Centre de sécurité et conformité [Office 365 &](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) sont une collection de « groupes de rôles », qui sont distincts et distincts des rôles Azure AD. Cela peut prêter à confusion, car certains de ces groupes de rôles ont le même nom que les rôles Azure AD (par exemple, lecteur de sécurité), mais ils peuvent avoir des appartenances différentes. Je préfère utiliser les rôles Azure AD. Chaque groupe de rôles se compose d’un ou plusieurs « rôles » (voir ce que je veux dire sur la réutilisation du même mot ?) et ont des membres d’Azure AD, qui sont des objets à messagerie. En outre, vous pouvez créer un groupe de rôles avec le même nom qu’un rôle, qui peut contenir ou non ce rôle (évitez cette confusion).
+Les autorisations dans le Centre de sécurité et conformité [Office 365 &](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) sont une collection de « groupes de rôles », qui sont distincts et distincts des rôles Azure AD. Cela peut prêter à confusion, car certains de ces groupes de rôles ont le même nom que les rôles Azure AD (par exemple, lecteur de sécurité), mais ils peuvent avoir des appartenances différentes. Je préfère utiliser les rôles Azure AD. Chaque groupe de rôles se compose d’un ou plusieurs « rôles » (voir ce que je veux dire sur la réutilisation du même mot ?) et ont des membres d’Azure AD, qui sont des objets à messagerie. En outre, vous pouvez créer un groupe de rôles avec le même nom qu’un rôle, qui peut contenir ou non ce rôle (évitez cette confusion).
 
 En un sens, il s’agit d’une évolution du modèle de groupes de rôles Exchange. Toutefois, Exchange Online possède sa propre interface [de gestion des groupes de rôles.](/exchange/permissions-exo) Certains groupes de rôles dans Exchange Online sont verrouillés et gérés à partir d’Azure AD ou du Centre de sécurité & conformité, mais d’autres peuvent avoir des noms identiques ou similaires et sont gérés dans Exchange Online (ce qui ajoute à la confusion). Nous vous recommandons d’éviter d’utiliser l’interface utilisateur Exchange Online, sauf si vous avez besoin d’étendues pour la gestion d’Exchange.
 
@@ -262,7 +262,7 @@ Comme indiqué précédemment, de nombreux clients cherchent à obtenir un modè
 Remarque : la sécurité et la délégation de plateforme de données (composant de Power BI) sont un domaine complexe.
 - **MEM/Intune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender pour point de terminaison**  -  [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/mtp/mtp-permissions.md)
+- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/m365d-permissions.md)
 - **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](/cloud-app-security/manage-admins)
 - **Stream**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role](/stream/assign-administrator-user-role)
 - **Obstacles à l’information**  -  [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](../compliance/information-barriers.md)
@@ -296,7 +296,7 @@ La combinaison de tous les journaux dans un emplacement de stockage inclut des a
 
 Les journaux n’ont pas besoin d’être dirigés vers un seul endroit. Il peut également être utile d’intégrer les journaux [Office 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) à Microsoft Cloud App Security ou à un modèle RBAC personnalisé [dans Power BI.](../admin/usage-analytics/usage-analytics.md?view=o365-worldwide) Les différents référentiels ont des avantages et des audiences différents.
 
-Il est important de mentionner qu’il existe un système d’analyse intégré très riche pour la sécurité, les menaces, les vulnérabilités, etc. dans un service appelé [Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md?view=o365-worldwide).
+Il est important de mentionner qu’il existe un système d’analyse intégré très riche pour la sécurité, les menaces, les vulnérabilités, etc. dans un service appelé [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide).
 
 De nombreux clients de grande taille souhaitent transférer ces données de journal vers un système tiers (par exemple, SIEM). Il existe différentes approches à ce sujet, mais en [général, Azure Event Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) et [Graph](/graph/security-integration) sont de bons points de départ.
 

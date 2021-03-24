@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez l’option correcte pour la gestion des appareils et des applications pour vos clients Microsoft 365.
-ms.openlocfilehash: 994ab7d21ae70307fa78e1f7249d39ac314a7358
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0351f6be3f191e1a131da5b0b665a205a0abda8c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904611"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050993"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 5. Gestion des appareils et des applications pour vos clients Microsoft 365 entreprise
 
-Microsoft 365 entreprise inclut des fonctionnalités pour vous aider à gérer les appareils et l’utilisation des applications sur ces appareils au sein de votre organisation avec la gestion des périphériques mobiles (MDM) et la gestion des applications mobiles (MAM). Vous pouvez gérer les appareils iOS, Android, macOS et Windows pour protéger l’accès aux ressources de votre organisation, y compris à vos données. Par exemple, vous pouvez empêcher l’envoi de courriers électroniques à des personnes extérieures à votre organisation ou isoler les données de l’organisation des données personnelles sur les appareils personnels de votre employé.
+Microsoft 365 entreprise inclut des fonctionnalités pour vous aider à gérer les appareils et l’utilisation des applications sur ces appareils au sein de votre organisation avec la gestion des périphériques mobiles (MDM) et la gestion des applications mobiles (MAM). Vous pouvez gérer les appareils iOS, Android, macOS et Windows pour protéger l’accès aux ressources de votre organisation, y compris à vos données. Par exemple, vous pouvez empêcher l’envoi de courriers électroniques à des personnes extérieures à votre organisation ou isoler les données de l’organisation des données personnelles sur les appareils personnels de votre collaborateur.
 
 Voici un exemple de validation et de gestion des utilisateurs, de leurs appareils et de leur utilisation d’applications de productivité locales et cloud telles que Microsoft Teams.
 
@@ -48,7 +48,7 @@ Vous déterminerez également la façon dont vous allez gérer les appareils per
 
 ## <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
-Microsoft fournit un ensemble de configurations pour l’accès aux identités et aux appareils [afin](../security/office-365-security/microsoft-365-policies-configurations.md) de garantir un personnel sécurisé et productif. Ces configurations incluent l’utilisation des éléments suivants :
+Microsoft fournit un ensemble de configurations pour l’accès aux identités et aux appareils [afin](../security/defender-365-security/microsoft-365-policies-configurations.md) de garantir un personnel sécurisé et productif. Ces configurations incluent l’utilisation des éléments suivants :
 
 - Stratégies d’accès conditionnel Azure AD
 - Stratégies de protection des applications et de conformité des appareils Microsoft Intune
@@ -61,8 +61,8 @@ Voici un exemple de l’application de ces paramètres et stratégies pour valid
 
 Pour l’accès aux appareils et la gestion des applications, utilisez les configurations des articles suivants :
 
-- [Conditions préalables](../security/office-365-security/identity-access-prerequisites.md)
-- [Stratégies communes pour les identités et l’accès aux appareils](../security/office-365-security/identity-access-policies.md)
+- [Conditions préalables](../security/defender-365-security/identity-access-prerequisites.md)
+- [Stratégies communes pour les identités et l’accès aux appareils](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="results-of-step-5"></a>Résultats de l’étape 5
 
@@ -70,7 +70,7 @@ Pour la gestion des appareils et des applications pour votre client Microsoft 36
 
 Voici un exemple de client avec la gestion des applications et des appareils Intune avec les nouveaux éléments mis en surbrill plan.
 
-![Exemple de client avec gestion d’appareils et d’applications Intune](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
+![Exemple de client avec gestion des appareils et des applications Intune](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
 Dans cette illustration, le client a :
 

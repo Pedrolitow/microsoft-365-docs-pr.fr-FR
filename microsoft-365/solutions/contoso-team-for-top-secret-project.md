@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a utilisé une équipe avec isolation de sécurité pour un projet top secret afin de développer une nouvelle suite de produits et services.'
-ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: d5ab2808251ff6a53f8975ea868431691d3301e2
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656068"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051005"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Équipe isolée pour un projet top secret de Contoso Corporation
 
@@ -36,11 +36,11 @@ En raison de leur nature sensible, l’accès à ces fichiers était :
 - Limité aux membres de l’équipe Project 2X et à la direction.
 - Chiffré et protégé par des autorisations permettant d’autoriser l’accès uniquement aux membres de l’équipe Project 2X et à la direction, même si les fichiers ont été distribués en dehors de leurs dossiers sécurisés.
 
-Le personnel informatique de Contoso a utilisé une équipe avec isolation de la [sécurité](secure-teams-security-isolation.md) pour Project 2X et ces étapes.
+Le personnel informatique de Contoso a utilisé une équipe avec isolation [de la sécurité](secure-teams-security-isolation.md) pour Project 2X et ces étapes.
 
 ## <a name="step-1-created-a-private-team"></a>Étape 1 : Création d’une équipe privée
 
-Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies d’accès [SharePoint recommandées.](../security/office-365-security/sharepoint-file-access-policies.md)
+Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies d’accès [SharePoint recommandées.](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 Ensuite, un administrateur informatique de Contoso a créé une équipe privée nommée Project 2X et ajouté les comptes d’utilisateur du personnel Project 2X en tant que membres. Ils ont également configuré l’équipe de sorte que seuls les propriétaires d’équipe Project 2X peuvent créer des canaux privés.
 
@@ -51,7 +51,7 @@ Pour plus d’informations sur la configuration, voir [Créer une équipe privé
 Les administrateurs Contoso ont créé une étiquette de sensibilité **nommée Project 2X** qui :
 
 - Chiffrement activé.
-- Autorisations Co-Author pour le groupe Microsoft 2X Project 365.
+- Autorisations Co-Author autorisations pour le groupe Microsoft 2X Project 365.
 - Autorisations de visionneuse autorisées pour le groupe Senior Leadership.
 - Accès bloqué aux appareils non utilisés.
 
@@ -64,7 +64,7 @@ Pour plus d’informations sur la configuration, voir [Créer une étiquette de 
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Étape 3 : Configuration du site SharePoint sous-jacent
 
-Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies d’accès [SharePoint recommandées.](../security/office-365-security/sharepoint-file-access-policies.md)
+Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies d’accès [SharePoint recommandées.](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires pour le site :
 
