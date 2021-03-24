@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous avez besoin d’une solution de gestion des enregistrements pour Microsoft 365 qui gère les contenus à forte valeur ajoutée pour les obligations légales, professionnelles ou réglementaires, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: a757cabf13e85731bd16ccd84f1eea3dbe7e432a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ab5eaa494094dcbf0723f426fcbd644901c22bb
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906006"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051896"
 ---
 # <a name="get-started-with-records-management"></a>Prise en main de la gestion des enregistrements
 
@@ -53,9 +53,9 @@ Les membres de votre équipe de conformité qui sont chargés de la gestion des 
 
 Pour un rôle en lecture seule, vous pouvez créer un nouveau groupe de rôles et ajouter le rôle de **Gestion des enregistrements en lecture seule** à ce groupe. 
 
-Pour plus d’informations sur les groupes de rôles et les rôles, consultez [Autorisations dans le Centre de Sécurité et de Conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
+Pour plus d’informations sur les groupes de rôles et les rôles, consultez [Autorisations dans le Centre de Sécurité et de Conformité](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Pour obtenir des instructions sur l’ajout d’utilisateurs aux groupes de rôles et l’attribution de rôles, consultez [Autoriser l’accès au Centre de Sécurité et de Conformité aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour obtenir des instructions sur l’ajout d’utilisateurs aux groupes de rôles et l’attribution de rôles, consultez [Autoriser l’accès au Centre de Sécurité et de Conformité aux utilisateurs](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Ces autorisations sont requises uniquement pour créer, configurer et appliquer des étiquettes de rétention qui déclarent des enregistrements et gère la suppression. La personne qui configure ces étiquettes n’a pas besoin d’accéder au contenu.
 

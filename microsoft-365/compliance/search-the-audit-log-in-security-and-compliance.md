@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eabc9a59592ed2b1849bac8c7b716e68d4b9e214
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f61a67b29dec114d222dfc7b25e44c163859ba41
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922548"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051736"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -902,7 +902,7 @@ Le tableau suivant répertorie les activités de l’Explorateur de contenu qui 
 
 ### <a name="quarantine-activities"></a>Activités de mise en quarantaine
 
-Le tableau suivant illustre une liste d’activités que vous pouvez rechercher dans le journal d’audit. Si vous souhaitez en savoir plus sur la mise en quarantaine, consultez l’article [Mettre les e-mails en quarantaine dans Office 365](../security/office-365-security/quarantine-email-messages.md).
+Le tableau suivant illustre une liste d’activités que vous pouvez rechercher dans le journal d’audit. Si vous souhaitez en savoir plus sur la mise en quarantaine, consultez l’article [Mettre les e-mails en quarantaine dans Office 365](../security/defender-365-security/quarantine-email-messages.md).
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|

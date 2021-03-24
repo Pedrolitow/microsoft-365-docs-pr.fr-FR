@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de rétention pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: 27f361ba98cdaecb5b7788283c8d4244583ee82c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65c196f8838378a10263370b1377b3eb43b14915
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922618"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051906"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -56,9 +56,9 @@ Les membres de votre équipe de conformité, appelés à créer et gérer des st
 
 Au lieu d'utiliser ce rôle par défaut, vous pouvez créer un nouveau groupe de rôles et y ajouter le rôle **Gestion de la rétention**. Pour un rôle en lecture seule, utilisez la **Gestion de rétention en lecture seule**. 
 
-Pour plus d’informations sur les groupes de rôles et les rôles, consultez [Autorisations dans le Centre de Sécurité et de Conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
+Pour plus d’informations sur les groupes de rôles et les rôles, consultez [Autorisations dans le Centre de Sécurité et de Conformité](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Pour obtenir des instructions sur l’ajout d’utilisateurs aux groupes de rôles et l’attribution de rôles, consultez [Autoriser l’accès au Centre de Sécurité et de Conformité aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour obtenir des instructions sur l’ajout d’utilisateurs aux groupes de rôles et l’attribution de rôles, consultez [Autoriser l’accès au Centre de Sécurité et de Conformité aux utilisateurs](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Ces autorisations ne sont nécessaires que pour créer, configurer et appliquer des politiques de rétention et des étiquettes de rétention. La personne qui configure ces stratégies et étiquettes n’a pas besoin d’avoir un accès au contenu.
 
