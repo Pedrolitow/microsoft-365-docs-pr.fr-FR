@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: 678e9824682339afda32342e70848492b738ec6d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: cd5a88069b9947bd4dcb01f6ca76620bb8ed9a52
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052504"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200292"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -31,15 +31,15 @@ Dans cet article, nous allons voir comment déployer des équipes à l’aide d�
 
 ## <a name="initial-protections"></a>Protections initiales
 
-Pour commencer, nous vous recommandons de configurer les stratégies de base sur l’identité et l’accès aux appareils. Pour plus d’informations, consultez [recommandations en matière de stratégie pour la sécurisation des conversations, des groupes et des fichiers](../security/defender-365-security/teams-access-policies.md).
+Pour commencer, nous vous recommandons de configurer les stratégies de base sur l’identité et l’accès aux appareils. Pour plus d’informations, consultez [recommandations en matière de stratégie pour la sécurisation des conversations, des groupes et des fichiers](../security/office-365-security/teams-access-policies.md).
 
 Nous vous recommandons également d’activer les fonctionnalités de base de Defender pour Office 365 pour vous prémunir contre les programmes malveillants dans les documents, pièces jointes et liens. Nous vous recommandons d’activer chacune des options du tableau suivant.
 
 |Option|Informations|
 |:------|:-----------|
-|Pièces jointes fiables pour SPO, OneDrive et Teams|[Pièces jointes fiables](../security/defender-365-security/safe-attachments.md)<br>[Defender pour Office 365 – SharePoint, OneDrive et Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md).|
-|Documents sécurisés|[Documents sécurisés dans Microsoft Defender pour Office 365](../security/defender-365-security/safe-docs.md)|
-|Liens fiables pour Teams|[Liens fiables Office 365 dans Teams](../security/defender-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Liens fiables](../security/defender-365-security/safe-links.md)|
+|Pièces jointes fiables pour SPO, OneDrive et Teams|[Pièces jointes fiables](../security/office-365-security/safe-attachments.md)<br>[Defender pour Office 365 – SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md).|
+|Documents sécurisés|[Documents sécurisés dans Microsoft Defender pour Office 365](../security/office-365-security/safe-docs.md)|
+|Liens fiables pour Teams|[Liens fiables Office 365 dans Teams](../security/office-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Liens fiables](../security/office-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Partage d'invités Teams
 

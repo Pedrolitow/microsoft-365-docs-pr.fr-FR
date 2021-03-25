@@ -1,5 +1,5 @@
 ---
-title: Protéger les dossiers importants contre les ransomware contre le chiffrement de vos fichiers avec un accès contrôlé aux dossiers
+title: Protéger les dossiers importants contre les ransomware contre le chiffrement de vos fichiers avec accès contrôlé aux dossiers
 description: Les fichiers des dossiers par défaut peuvent être protégés contre les changements par des applications malveillantes. Empêcher les ransomware de chiffrer vos fichiers.
 keywords: accès contrôlé aux dossiers, windows 10, windows defender, ransomware, protéger, fichiers, dossiers
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,13 @@ ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: cd662dc130adc37b3bf8bd06839242ccc9a49f8e
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.topic: how-to
+ms.openlocfilehash: b937dd41f0296f2cf4102f41f8ab10bd55e1c35d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185968"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200280"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec un accès contrôlé aux dossiers
 
@@ -31,7 +32,7 @@ ms.locfileid: "51185968"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>Qu’est-ce que l’accès contrôlé aux dossiers ?
 
@@ -92,7 +93,7 @@ L’accès contrôlé aux dossiers nécessite l’activation de la protection en
 
 Defender for Endpoint fournit des rapports détaillés sur les événements et les blocs dans le cadre de ses [scénarios d’investigation d’alerte.](investigate-alerts.md)
 
-Vous pouvez interroger Microsoft Defender pour obtenir des données de point de terminaison à l’aide [de la recherche avancée.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection) Si vous utilisez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour voir comment les paramètres d’accès contrôlé aux dossiers auraient une incidence sur votre environnement s’ils étaient activés. [](advanced-hunting-overview.md)
+Vous pouvez interroger Microsoft Defender pour obtenir des données de point de terminaison à l’aide du [recherche avancée.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection) Si vous utilisez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour voir comment les paramètres d’accès contrôlé aux dossiers auraient une incidence sur votre environnement s’ils étaient activés. [](advanced-hunting-overview.md)
 
 Exemples de requête :
 

@@ -1,0 +1,103 @@
+---
+title: Fonctionnalités EOP
+f1.keywords:
+- NOCSH
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date: ''
+audience: ITPro
+ms.topic: overview
+localization_priority: Normal
+ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
+description: Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ff3c889f3e4d6779b08584ba6537da36d6f2660e
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51204258"
+---
+# <a name="eop-features"></a>Fonctionnalités EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**S’applique à**
+-  [Exchange Online Protection autonome](exchange-online-protection-overview.md)
+
+Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
+
+> [!TIP]
+> La [feuille de route De Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) pour les entreprises est une bonne ressource pour trouver des informations sur les nouvelles fonctionnalités à venir. Pour avoir une vision plus large des fonctionnalités disponibles avec les différents plans d'abonnement EOP, voir [Description du service de protection Exchange Online](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+
+****
+
+|Fonctionnalité|Description|
+|---|---|
+|**Protection contre le courrier indésirable**||
+|Détection de courrier indésirable entrant|Pour plus d’informations, voir [Protection contre le courrier indésirable dans Microsoft 365.](anti-spam-protection.md) <p> Dans les environnements de EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable EOP de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour plus d’informations, voir [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
+|Détection de courrier indésirable sortant|La protection contre le courrier indésirable sortant est toujours activée si vous utilisez le service pour envoyer des messages sortants. Pour plus d’informations, voir [Protection contre le courrier indésirable sortant.](outbound-spam-controls.md)|
+|Protection de la backscatter|Pour plus d’informations, [voir Backscatter et EOP.](backscatter-messages-and-eop.md)|
+|Filtrage de courriers électroniques en masse|EOP utilise le seuil de réclamation en bloc (BCL) pour marquer les messages électroniques en masse comme courrier indésirable. Pour plus d’informations, voir les rubriques suivantes : <p> [Quelle est la différence entre courrier indésirable et message électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [Niveau de réclamation en bloc (BCL) dans EOP](bulk-complaint-level-values.md) <p> [Configurer des stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md)|
+|Listes rouges d'URL malveillantes|EOP utilise plusieurs listes rouges d'URL qui permettent de détecter les liens malveillants connus au sein des messages.|
+|Protection anti-hameçonnage|EOP comprend 750 000 domaines d'expéditeurs de courrier indésirable connus.|
+|Protection contre l’usurpation d’identité|Pour plus d’informations, voir [Protection contre l’usurpation d’informations.](anti-spoofing-protection.md)|
+|**Gestion du courrier indésirable**||
+|Configurer des expéditeurs sûrs et des expéditeurs bloqués|Pour plus d’informations, voir [Créer des listes d’expéditeurs](create-safe-sender-lists-in-office-365.md) sûrs et [Créer des listes d’expéditeurs bloqués.](create-block-sender-lists-in-office-365.md)|
+|Créer des stratégies anti-courrier indésirable personnalisées|Pour plus de granularité, vous pouvez créer des stratégies anti-courrier indésirable personnalisées et les appliquer à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. Les stratégies personnalisées sont toujours prioritaires sur la stratégie par défaut, mais vous pouvez modifier la priorité (c’est-à-dire, l’ordre d’exécution) de vos stratégies personnalisées. Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).|
+|Configurer les actions sur les messages filtrés par courrier indésirable|Par exemple, vous pouvez supprimer des messages filtrés sur le contenu ou les envoyer vers le dossier Courrier indésirable ou en quarantaine. Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).|
+|Filtrage de courrier indésirable international|Vous pouvez configurer le filtrage anti-courrier indésirable pour filtrer les messages écrits dans des langues spécifiques ou envoyés à partir de pays ou régions spécifiques. Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).|
+|Gérer le courrier indésirable via Outlook ou Outlook sur le web (anciennement Outlook Web App)|Les administrateurs et les utilisateurs finaux peuvent créer des listes d'expéditeurs autorisés et des listes d'expéditeurs bloqués. Pour plus d’informations, voir [à propos des paramètres du courrier indésirable dans Outlook.](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook) <p> Si vous utilisez EOP pour protéger les boîtes aux lettres sur site, veillez à utiliser la synchronisation d’annuaires pour vous assurer que ces paramètres sont synchronisés avec le service. Pour plus d'informations sur la configuration de la synchronisation d'annuaires, voir « Utilisation de la synchronisation d'annuaires pour gérer les utilisateurs de messagerie » dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).|
+|Signalez les faux positifs et les faux négatifs à Microsoft.|Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).|
+|Notification de mise en quarantaine du courrier indésirable pour l'utilisateur final|Pour plus d’informations, voir [Notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md) de courrier indésirable pour l’utilisateur final et Configurer les notifications de courrier indésirable à [l’utilisateur final.](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)|
+|Afficher, rechercher et gérer les messages dans le portail de mise en quarantaine.|Pour plus d’informations, voir Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans [EOP](manage-quarantined-messages-and-files.md) ou Rechercher et libérer les messages mis en quarantaine [en tant qu’utilisateur.](find-and-release-quarantined-messages-as-a-user.md)|
+|Afficher les en-têtes de messages mis en quarantaine pour le courrier indésirable|Une fois que vous avez vu l’en-tête du message en [](https://mha.azurewebsites.net/) quarantaine, vous pouvez également copier et coller le texte de l’en-tête dans l’Analyseur d’en-tête de message pour savoir ce qui est arrivé au message.|
+|**Protection anti-programme malveillant**||
+|Protection anti-programme malveillant multi-moteur|Plusieurs moteurs anti-programme malveillant aident à protéger automatiquement nos clients à tout moment.|
+|Possibilité de désactiver le filtrage des programmes malveillants|Vous ne pouvez pas désactiver le filtrage des programmes malveillants. Nous pensons que fournir un niveau de protection constant et rigoureux à l'ensemble de nos clients constitue une part essentielle de la stratégie de défense approfondie nécessaire pour protéger votre environnement de messagerie électronique. Par conséquent, le filtrage des programmes malveillants est automatiquement activé pour tous les clients.|
+|Inspection de programmes malveillants dans le corps du message et dans les pièces jointes|Le service inspecte la charge utile active dans le corps du message et dans toutes les pièces jointes à la recherche de programmes malveillants.|
+|Notifications d'alerte anti-programme malveillant par défaut ou personnalisées|Vous pouvez envoyer un message de notification aux expéditeurs ou administrateurs. Pour plus d’informations, voir [Configurer des stratégies anti-programme malveillant.](configure-anti-malware-policies.md)|
+|Notifications des destinataires|Mettre en quarantaine silencieusement le message ou le mettre en quarantaine et également le remettre avec toutes les pièces jointes remplacées par un fichier texte unique contenant du texte standard ou personnalisé. Pour plus d’informations, voir [Configurer des stratégies anti-programme malveillant.](configure-anti-malware-policies.md)|
+|Filtrage des pièces jointes courant|Vous pouvez activer et personnaliser une liste de types de fichiers qui sont toujours supposés être des programmes malveillants. Pour plus d’informations, voir [Protection contre les programmes malveillants dans EOP.](anti-malware-protection.md)|
+|Protection contre les logiciels espions|La protection contre les programmes malveillants comprend une protection anti-virus et une protection contre les logiciels espions.|
+|Créer des stratégies personnalisées de filtrage des programmes malveillants|Pour plus de granularité, vous pouvez créer des stratégies de filtrage des programmes malveillants personnalisées et les appliquer à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. Les stratégies personnalisées sont toujours prioritaires sur la stratégie par défaut, mais vous pouvez modifier la priorité (c’est-à-dire, l’ordre d’exécution) de vos stratégies personnalisées. Pour plus d’informations, voir [Configurer des stratégies anti-programme malveillant.](configure-anti-malware-policies.md)|
+|**Routage et connecteurs de messagerie**||
+|Routage du courrier conditionnel|Pour plus d'informations, consultez la rubrique [Scénario : routage des messages conditionnels dans Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).|
+|TLS opportuniste ou forcé|La fonction TLS opportuniste ou forcé est disponible avec des connecteurs. La fonction TLS opportuniste tente une connexion TLS mais utilise une connexion SMTP si la connexion TLS échoue. La fonction Forcer TLS applique les connexions TLS, ce qui signifie que le message est rejeté si la connexion TLS échoue. Pour plus d'informations sur TLS, la sécurité et les connecteurs, voir [Set up connectors for secure mail flow with a partner organization](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).|
+|Routage régional (restriction du flux de messagerie à une région spécifique)|Pour plus d'informations, consultez la section « Centres de données EOP » dans [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md).|
+|Vérificateur de connectivité SMTP|Pour plus d’informations sur l’utilisation de cet outil pour tester votre flux de messagerie, consultez Tester le flux de messagerie en validant vos [connecteurs Microsoft 365.](/exchange/mail-flow-best-practices/test-mail-flow)|
+|Match subdomains|Pour plus d’informations sur l’activation du flux de messagerie vers et depuis les sous-domaines de vos domaines acceptés, voir Flux de [messagerie dans EOP.](mail-flow-in-eop.md)|
+|**Règles de flux de messagerie**||
+|Filtrage et actions basés sur une stratégie|Les stratégies personnalisées sont basées sur des règles de flux de messagerie Exchange (également appelées règles de transport). Vous pouvez filtrer par domaine, mot clé, nom de fichier, type de fichier, ligne d'objet, corps de message, expéditeur, destinataire, en-tête, adresse IP. Pour plus d’informations, voir [Règles de flux de messagerie (règles de transport) dans Exchange Online Protection.](mail-flow-rules-transport-rules-0.md)|
+|Filtrage par modèles de texte|Les règles de flux de messagerie peuvent utiliser un tableau ou des expressions régulières pour faire correspondre du texte. Vous pouvez également utiliser une chaîne ou un tableau de chaînes pour établir une correspondance avec de nombreuses propriétés de message, telles que l'adresse, l'objet, le corps ou les noms de pièce jointe. Pour plus d’informations, voir [Règles de flux de messagerie (règles de transport) dans Exchange Online Protection](mail-flow-rules-transport-rules-0.md)|
+|Dictionnaires personnels|Les règles de flux de messagerie peuvent inclure de longues listes de texte et de mots clés, fournissant les mêmes fonctionnalités qu’un dictionnaire personnalisé.|
+|Règles de stratégie par domaine|L’étendue d’une règle de flux de messagerie peut être personnalisée pour correspondre aux noms de domaine de l’expéditeur ou du destinataire, aux plages d’adresses IP, aux mots clés ou modèles d’adresse, aux appartenances aux groupes et à d’autres conditions.|
+|Analyse de pièce jointe|Des règles peuvent être créées pour analyser le nom du fichier, son extension et le contenu de la pièce jointe.|
+|Envoyer les notifications de règle de stratégie à l'expéditeur|Vous pouvez rejeter les messages et envoyer une non-remise (également appelée une NDR ou une non-remise) à l’expéditeur via la fonctionnalité Rejeter le **message** avec l’explication ou Rejeter le message avec l’action de **code** d’état amélioré. Pour plus d’informations, voir [Actions de règle de flux de messagerie dans Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
+|Rediriger ou copier des messages|Les règles de flux de messagerie peuvent rediriger, ajouter des destinataires par Cc ou Cci, simplement ajouter des destinataires et d’autres options. Pour plus d’informations, voir [Actions de règle de flux de messagerie dans Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
+|Ajuster la priorité des règles sur plusieurs règles|Utilisez le Centre d'administration Exchange pour modifier l'ordre de traitement des règles.|
+|Filtrer les messages, puis modifier le routage ou les attributs d’un message|Vous pouvez filtrer les messages en fonction d'une grande variété de conditions, puis appliquer une série de mesures pour chaque message. Pour plus d’informations, voir [Règles de flux de messagerie (règles de transport) dans Exchange Online Protection.](mail-flow-rules-transport-rules-0.md)|
+|Modifiez le niveau de confiance du courrier indésirable (SCL) d’un message par règle.|Vous pouvez inspecter un message en transit et lui attribuer un seuil de probabilité de courrier indésirable en fonction de critères que vous choisissez. Pour plus d’informations, voir Utiliser des règles de flux de messagerie pour définir le niveau de confiance du courrier indésirable [(SCL) dans les messages.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)|
+|Inspecter les pièces jointes à un message|Vous pouvez examiner le contenu d'une pièce jointe ou les caractéristiques d'un fichier joint, puis définir l'action à effectuer en fonction de ce que vous avez trouvé. Pour plus d’informations, voir [Utilisation de règles de flux de messagerie pour inspecter les pièces jointes des messages dans Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)|
+|**Administration**||
+|Administration web|Les administrateurs peuvent gérer le service dans le Centre d’administration Exchange (EAC), qui est pris en charge dans 60 langues. Pour plus d’informations, consultez le [Centre d’administration Exchange dans EOP autonome.](exchange-admin-center-in-exchange-online-protection-eop.md)|
+|Synchronisation d'annuaires|La synchronisation d'annuaires est disponible via l' Outil de synchronisation Windows Azure Active Directory. Pour plus d'informations, voir « Utilisation de la synchronisation d'annuaires pour gérer les utilisateurs de messagerie » dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).  |
+|Blocage du périmètre basé sur l'annuaire (DBEB)|La fonctionnalité DBEB vous permet de rejeter les messages pour les destinataires non valides sur le périmètre du réseau de service. DBEB permet aux administrateurs d’ajouter des destinataires à messagerie à Microsoft 365 et de bloquer tous les messages envoyés à des adresses de messagerie qui ne sont pas présentes dans Microsoft 365. Pour plus d’informations sur la configuration du DBEB, voir Utiliser le blocage du périphérie basé sur l’annuaire pour rejeter les [messages envoyés à des destinataires non valides.](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|
+|PowerShell|Toutes les fonctionnalités EOP sont disponibles dans EOP PowerShell autonome. Pour plus d’informations, [voir Exchange Online Protection PowerShell.](/powershell/exchange/exchange-online-protection-powershell)|
+|**Création de rapports et journalisation**||
+|Suivi des messages|Les administrateurs peuvent suivre les messages électroniques à mesure qu’ils passent par le service. Vous pouvez déterminer si un message électronique ciblé a été reçu, rejeté, différé ou remis par le service. Vous pouvez ainsi répondre efficacement aux questions de vos utilisateurs, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie, tout en réduisant la nécessité de demander de l'aide à l'assistance technique. Pour en savoir plus, voir [Suivi de message dans le Centre de sécurité et de conformité](message-trace-scc.md).|
+|Rapports web|Les rapports de protection du courrier dans le Centre de sécurité & conformité fournissent des données de messagerie. Par exemple, vous pouvez surveiller la quantité de courrier indésirable et de programmes malveillants détectés ou la fréquence de correspondance de vos règles de flux de messagerie. Avec ces rapports interactifs, vous pouvez afficher rapidement un rapport des données de synthèse et accéder à des informations plus détaillées sur des messages individuels remontant jusqu'à 90 jours. Pour plus d’informations, voir Utiliser les rapports de protection du courrier électronique pour afficher des données sur les programmes malveillants, le courrier indésirable et [les détections de règles.](/exchange/monitoring/use-mail-protection-reports)|
+|Journalisation d'audit|Le rapport de groupe de rôles d'administrateur et le journal d'audit de l'administrateur sont disponibles pour les administrateurs EOP. Pour plus d'informations, voir [Rapports d'audit dans EOP](auditing-reports-in-eop.md).  |
+|**Contrats de niveau de service (SLA) et prise en charge**||
+|SLA d'efficacité de courrier électronique|\> 99%|
+|SLA de rapport de faux positif|\< 1:250,000|
+|SLA de détection et de blocage de virus|100 % des virus connus|
+|SLA de disponibilité mensuelle|99,999 %|
+|Support technique par téléphone ou par Internet 24 heures sur 24, 7 jours sur 7|Pour plus d'informations sur les options de support et d'aide EOP, voir [Aide et support pour EOP](help-and-support-for-eop.md).|
+|**Autres fonctionnalités**||
+|Réseau de serveurs mondial géo-redondant|EOP s'exécute sur un réseau mondial de centres de données conçus pour contribuer à offrir une disponibilité optimale. Pour plus d'informations, consultez la section « Centres de données EOP » dans [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md).  |
+|Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages en attente restent dans nos files d’attente pendant un jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.md).|
+|Chiffrement de messages Office 365 disponible sous forme de service de module complémentaire|Pour plus d'informations, voir [Chiffrement dans Office 365](../../compliance/encryption.md).|
+|

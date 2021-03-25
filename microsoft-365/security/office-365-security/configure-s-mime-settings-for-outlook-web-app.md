@@ -1,0 +1,58 @@
+---
+title: Configurer les paramètres S/MIME - Exchange Online pour Outlook sur le web
+f1.keywords:
+- NOCSH
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+audience: ITPro
+ms.topic: how-to
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
+ms.collection:
+- M365-security-compliance
+description: Brève description de ce que les administrateurs Exchange Online doivent faire pour afficher et configurer les paramètres S/MIME dans Outlook sur le web dans Exchange Online.
+ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 6eacc6a264682474054d0d3546b831039bee9a0c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51203941"
+---
+# <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Configurer les paramètres S/MIME dans Exchange Online pour Outlook sur le web
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**S’applique à**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+En tant qu’administrateur d’Exchange Online, vous pouvez configurer Outlook sur le web (anciennement Outlook Web App) pour autoriser l’envoi et la réception de messages protégés par S/MIME. Utilisez les cmdlets **Get-SmimeConfig** et **Set-SmimeConfig** pour afficher et gérer cette fonctionnalité dans Exchange Online PowerShell. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-SmimeConfig](/powershell/module/exchange/get-smimeconfig) et [Set-SmimeConfig](/powershell/module/exchange/set-smimeconfig).
+
+## <a name="considerations-for-new-microsoft-edge-chromium-based"></a>Considérations pour le nouveau Microsoft Edge (basé sur Chromium)
+
+Pour utiliser S/MIME dans Outlook sur le web dans le nouveau navigateur web [Microsoft Edge,](https://www.microsoft.com/windows/microsoft-edge) vous (ou un autre administrateur) devez définir et configurer la stratégie de navigateur Microsoft Edge nommée **ExtensionInstallForcelist** pour installer l’extension Microsoft S/MIME dans le nouveau Microsoft Edge. La valeur de la stratégie `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` est . Notez également que l’application de cette stratégie nécessite des appareils joints à un domaine ou à Azure AD, donc l’utilisation de S/MIME dans le nouveau navigateur Microsoft Edge nécessite effectivement des appareils joints à un domaine ou à Azure AD.
+
+Pour plus d’informations **sur la stratégie ExtensionInstallForcelist,** voir [ExtensionInstallForcelist](/DeployEdge/microsoft-edge-policies#extensioninstallforcelist).
+
+Cette étape est une condition préalable à l’utilisation du nouveau Microsoft Edge . Il ne remplace pas le contrôle S/MIME installé par les utilisateurs. Les utilisateurs sont invités à télécharger et installer le contrôle S/MIME dans Outlook sur le web lors de leur première utilisation de S/MIME. Les utilisateurs peuvent également se rendre de manière proactive sur **S/MIME** dans leurs paramètres Outlook sur le web pour obtenir le lien de téléchargement du contrôle.
+
+## <a name="considerations-for-chrome"></a>Considérations pour Chrome
+
+Pour utiliser S/MIME dans Outlook sur le web dans le navigateur web Google Chrome, vous (ou un autre administrateur) devez définir et configurer la stratégie Chromium nommée **ExtensionInstallForcelist** pour installer l’extension Microsoft S/MIME dans Chrome. La valeur de la stratégie `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` est . Notez également que l’application de cette stratégie nécessite des ordinateurs joints à un domaine, de sorte que l’utilisation de S/MIME dans Chrome nécessite effectivement des ordinateurs joints à un domaine.
+
+Pour plus d’informations **sur la stratégie ExtensionInstallForcelist,** voir [ExtensionInstallForcelist](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=ExtensionInstallForcelist).
+
+Cette étape est une condition préalable à l’utilisation de Chrome ; Il ne remplace pas le contrôle S/MIME installé par les utilisateurs. Les utilisateurs sont invités à télécharger et installer le contrôle S/MIME dans Outlook sur le web lors de leur première utilisation de S/MIME. Les utilisateurs peuvent également se rendre de manière proactive sur **S/MIME** dans leurs paramètres Outlook sur le web pour obtenir le lien de téléchargement du contrôle.
+
+## <a name="for-more-information"></a>Pour plus d’informations
+
+[S/MIME pour la signature et le chiffrement des messages](s-mime-for-message-signing-and-encryption.md)
