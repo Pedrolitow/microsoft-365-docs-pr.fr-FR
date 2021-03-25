@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b5d25c51560cfe7a4d55419a7de9ce36321e78f
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: e8080a282ef734490214dc5f2b9e18a1946b314c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034173"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185825"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -230,9 +230,9 @@ Pour consulter des informations supplémentaires, la configuration requise et de
 > [!IMPORTANT]
 > Tous les clients d’étiquetage ne prennent pas en charge toutes les options qui permettent aux utilisateurs d’attribuer leurs propres autorisations. Pour en savoir plus, consultez cette section.
 
-Vous pouvez utiliser ces options pour permettre aux utilisateurs d’attribuer des autorisations lorsqu’ils appliquent manuellement une étiquette de confidentialité à un contenu :
+Vous pouvez utiliser les options suivantes pour autoriser les utilisateurs à attribuer des autorisations lorsqu’ils appliquent manuellement une étiquette de confidentialité au contenu :
 
-- Dans Outlook, un utilisateur peut sélectionner des restrictions équivalentes à l’option [Ne pas transférer](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) ou [Chiffrer uniquement](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) pour les destinataires sélectionnés.
+- Dans Outlook, un utilisateur peut sélectionner des restrictions équivalentes à l’option [Ne pas transférer](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) ou [Chiffrer uniquement](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) (en cours de déploiement) pour les destinataires sélectionnés.
     
     L’option Ne pas transférer est prise en charge par tous les clients de messagerie électronique qui prennent en charge les étiquettes de confidentialité. Toutefois, l’application de l’option **Chiffrer uniquement** avec une étiquette de confidentialité est une nouveauté prise en charge uniquement par l’étiquetage intégré et non par le client d’étiquetage unifié Azure Information Protection. Pour les clients de messagerie électronique qui ne prennent pas cette fonctionnalité en charge, l’étiquette n’est pas visible.
     

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 60de6ed5a53a5d778f041b1c609019d110d6b64b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e494bfe57c31c1d5044f72a8adb3e2548d531604
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068305"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199148"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Repérer des menaces sur les appareils, les e-mails, les applications, et les identités
 
@@ -35,14 +35,14 @@ ms.locfileid: "51068305"
 **S’applique à :**
 - Microsoft 365 Defender
 
-[Le recherche avancée](advanced-hunting-overview.md) dans Microsoft 365 Defender vous permet de chercher de manière proactive les menaces dans :
+[Le recherche](advanced-hunting-overview.md) avancée dans Microsoft 365 Defender vous permet de chercher de manière proactive les menaces dans :
 - Appareils gérés par Microsoft Defender pour le point de terminaison
 - Courriers électroniques traitées par Microsoft 365
 - Activités des applications cloud, événements d’authentification et activités de contrôleur de domaine suivis par Microsoft Cloud App Security et Microsoft Defender for Identity
 
 Avec ce niveau de visibilité, vous pouvez rapidement chercher les menaces qui traversent des sections de votre réseau, y compris les intrusions sophistiquées qui arrivent sur le courrier électronique ou le web, élever les privilèges locaux, acquérir des informations d’identification de domaine privilégiées et passer par la suite sur vos appareils. 
 
-Voici des techniques générales et des exemples de requêtes basés sur différents scénarios de chasse qui peuvent vous aider à explorer la façon dont vous pouvez créer des requêtes lors du recherche de menaces aussi sophistiquées.
+Voici des techniques générales et des exemples de requêtes basés sur différents scénarios de chasse qui peuvent vous aider à explorer la façon dont vous pourriez créer des requêtes lors du recherche de menaces aussi sophistiquées.
 
 ## <a name="get-entity-info"></a>Obtenir des informations sur l’entité
 Utilisez ces requêtes pour savoir comment obtenir rapidement des informations sur les comptes d’utilisateur, les appareils et les fichiers. 
@@ -104,7 +104,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>Scénarios de repérage
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>List logon activities of users that received emails that were notpé successfully
-[La purge automatique d’heure zéro (ZAP)](../defender-365-security/zero-hour-auto-purge.md) adresse les e-mails malveillants après leur réception. En cas d’échec de ZAP, du code malveillant peut s’exécuter sur l’appareil et laisser les comptes compromis. Cette requête vérifie si l’activité de la logon est réalisée par les destinataires des e-mails qui n’ont pas été correctement adressés par ZAP.
+[La purge automatique d’heure zéro (ZAP)](../office-365-security/zero-hour-auto-purge.md) adresse les e-mails malveillants après leur réception. En cas d’échec de ZAP, du code malveillant peut s’exécuter sur l’appareil et laisser les comptes compromis. Cette requête vérifie si l’activité de la logon est réalisée par les destinataires des e-mails qui n’ont pas été correctement adressés par ZAP.
 
 ```kusto
 EmailPostDeliveryEvents 

@@ -16,22 +16,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34a06a964baa475c5dedd019e40a6e31e44c0dd9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b56e8a74875b3377b6f3228bbefb339680dbc6e1
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065734"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187780"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-linux"></a>Confidentialité pour Microsoft Defender pour point de terminaison pour Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft s’engage à vous fournir les informations et les contrôles dont vous avez besoin pour faire des choix sur la façon dont vos données sont collectées et utilisées lorsque vous utilisez Defender pour Endpoint pour Linux.
 
@@ -97,13 +97,13 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 | hostname                | Nom de l’appareil local (sans suffixe DNS). Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés. |
 | product_guid            | Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes types de produit. |
 | app_version             | Version du defender pour point de terminaison pour l’application Linux. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
-| sig_version             | Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’il puisse être correctement hiérarchisé. |
+| sig_version             | Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’elle puisse être correctement hiérarchisées. |
 | supported_compressions  | Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application. |
 | release_ring            | Sonnerie à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé. |
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
 
-**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et les résultats attendus de Defender for Endpoint sur l’appareil sur qui il est installé.
+**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la mise à jour de Defender for Endpoint sur l’appareil sur laquelle il est installé.
 
 Les données de diagnostic requises permettent d’identifier les problèmes avec Microsoft Defender pour point de terminaison qui peuvent être liés à une configuration d’appareil ou de logiciel. Par exemple, il peut aider à déterminer si une fonctionnalité De Defender pour point de terminaison se crashe plus fréquemment sur une version de système d’exploitation particulière, avec les fonctionnalités nouvellement introduites ou lorsque certaines fonctionnalités de Defender pour le point de terminaison sont désactivées. Les données de diagnostic requises aident Microsoft à détecter, diagnostiquer et résoudre ces problèmes plus rapidement afin de réduire l’impact sur les utilisateurs ou les organisations.
 
@@ -111,7 +111,7 @@ Les données de diagnostic requises permettent d’identifier les problèmes ave
 
 **Installation/désinstallation de Microsoft Defender for Endpoint**
 
-Les champs suivants sont affichés :
+Les champs suivants sont collectés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -123,7 +123,7 @@ Les champs suivants sont affichés :
 
 **Configuration de Microsoft Defender pour point de terminaison**
 
-Les champs suivants sont affichés :
+Les champs suivants sont collectés :
 
 | Champ                                               | Description |
 | --------------------------------------------------- | ----------- |
@@ -142,9 +142,9 @@ Les champs suivants sont affichés :
 
 #### <a name="product-and-service-usage-data-events"></a>Événements de données liés à l'utilisation des produits et services
 
-**Rapport de mise à jour de l’intelligence de la sécurité**
+**Rapport de mise à jour des informations de sécurité**
 
-Les champs suivants sont affichés :
+Les champs suivants sont collectés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -159,7 +159,7 @@ Les champs suivants sont affichés :
 
 **Statistiques d’extension du noyau**
 
-Les champs suivants sont affichés :
+Les champs suivants sont collectés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -178,7 +178,7 @@ Les champs suivants sont affichés :
 Les journaux de diagnostic sont collectés uniquement avec le consentement de l’utilisateur dans le cadre de la fonctionnalité de soumission de commentaires. Les fichiers suivants sont collectés dans le cadre des journaux de support :
 
 - Tous les fichiers *sous /var/log/microsoft/mdatp*
-- Sous-ensemble de fichiers sous */etc/opt/microsoft/mdatp* créés et utilisés par Defender pour Endpoint pour Linux
+- Sous-ensemble de fichiers sous */etc/opt/microsoft/mdatp* créés et utilisés par Defender pour endpoint pour Linux
 - Journaux d’installation et de désinstallation du produit sous */var/log/microsoft_mdatp_ \* .log*
 
 ### <a name="optional-diagnostic-data"></a>Données de diagnostic facultatives
@@ -193,7 +193,7 @@ Les données de diagnostic facultatives collectées par Microsoft sur la configu
 
 **Configuration de Microsoft Defender pour point de terminaison**
 
-Les champs suivants sont affichés :
+Les champs suivants sont collectés :
 
 | Champ                                              | Description |
 | -------------------------------------------------- | ----------- |
@@ -214,7 +214,7 @@ Les champs suivants sont affichés :
 
 **Configuration de la mise à jour automatique Microsoft**
 
-Les champs suivants sont affichés :
+Les champs suivants sont collectés :
 
 | Champ                       | Description |
 | --------------------------- | ----------- |
@@ -227,7 +227,7 @@ Les champs suivants sont affichés :
 
 #### <a name="diagnostic-log-upload-started-report"></a>Rapport de chargement démarré du journal de diagnostic
 
-Les champs suivants sont affichés :
+Les champs suivants sont collectés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -238,7 +238,7 @@ Les champs suivants sont affichés :
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Rapport de chargement terminé du journal de diagnostic
 
-Les champs suivants sont affichés :
+Les champs suivants sont collectés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -254,7 +254,7 @@ Sorties inattendues de l’application et état de celle-ci lorsque cela se prod
 
 **Statistiques d’extension du noyau**
 
-Les champs suivants sont affichés :
+Les champs suivants sont collectés :
 
 | Champ                          | Description |
 | ------------------------------ | ----------- |

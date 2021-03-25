@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5206de55523c6f5a24fa85f29d48620b38be5bfa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ed28d3b5b7bafaea2d72b7a8c45f66bf69033bc2
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064558"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187792"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison pour Linux
 
@@ -32,7 +32,7 @@ ms.locfileid: "51064558"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -88,7 +88,7 @@ Détermine si le moteur antivirus s’exécute en mode passif ou non. En mode pa
 | **Valeurs possibles** | false (par défaut) <br/> true |
 | **Comments** | Disponible dans Defender pour Endpoint version 100.67.60 ou supérieure. |
 
-#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusions
+#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusion
 
 Spécifie la stratégie de fusion pour les exclusions. Il peut s’agit d’une combinaison d’exclusions définies par l’administrateur et d’exclusions définies par l’utilisateur ( ) ou uniquement `merge` d’exclusions définies par l’administrateur ( `admin_only` ). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
 
@@ -208,7 +208,7 @@ Type de menace pour lequel le comportement est configuré.
 Action à prendre en cas de menace du type spécifié dans la section précédente. Peut être :
 
 - **Audit**: l’appareil n’est pas protégé contre ce type de menace, mais une entrée sur la menace est enregistrée.
-- **Bloc**: l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
+- **Bloquer**: l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
 - **Off**: l’appareil n’est pas protégé contre ce type de menace et rien n’est enregistré.
 
 |||
@@ -247,7 +247,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |:---|:---|
 | **Clé** | scanHistoryMaximumItems |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments. |
+| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments. |
 | **Comments** | Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure. |
 
 ### <a name="cloud-delivered-protection-preferences"></a>Préférences de protection dans le cloud
@@ -270,7 +270,7 @@ Détermine si la protection cloud est activée ou non sur l’appareil. Pour am�
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | true (par défaut) <br/> false |
 
-#### <a name="diagnostic-collection-level"></a>Niveau de collection de diagnostics
+#### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
 
@@ -312,7 +312,7 @@ Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA) sont** bloquées
+  - **Les applications potentiellement indésirables (PUA)** sont bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques des informations de sécurité
 - Activer la protection cloud

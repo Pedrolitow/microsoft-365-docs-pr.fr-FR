@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 4d49ba7ccdb65691756aaa505d0856deb115595b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a06fb48ef5e1386a5c7b4df08500125f37943df6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052231"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198429"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer Microsoft 365 Business Premium dans l’Assistant Installation
 
@@ -107,7 +107,7 @@ Pour configurer des services, vous devez mettre à jour des enregistrements au n
 
 Les stratégies que vous avez définies dans l’Assistant sont appliquées automatiquement à un groupe [de sécurité](/office365/admin/create-groups/compare-groups#security-groups) appelé Tous *les utilisateurs.* Vous pouvez également créer des groupes supplémentaires pour attribuer des stratégies dans le Centre d’administration.
 
-1. Dans l’option Augmenter la **protection** contre les cybermenaces avancées, il est recommandé d’accepter les valeurs par défaut pour laisser [Office 365 Advance Threat Protection](../security/defender-365-security/defender-for-office-365.md) analyser les fichiers et les liens dans les applications Office.
+1. Dans l’option Augmenter la **protection** contre les cybermenaces avancées, il est recommandé d’accepter les valeurs par défaut pour laisser [Office 365 Advance Threat Protection](../security/office-365-security/defender-for-office-365.md) analyser les fichiers et les liens dans les applications Office.
 
     ![Capture d’écran de la page Augmenter la protection.](../media/increasetreatprotection.png)
 
@@ -125,7 +125,7 @@ Dans le navigation de gauche, sélectionnez **Programme** d’installation, puis
 
 ## <a name="deploy-office-365-client-apps"></a>Déployer des applications clientes Office 365
 
-Si vous avez choisi d’installer automatiquement les applications Office lors de l’installation, elles s’installent sur les appareils Windows 10 une fois que les utilisateurs se sont connectés à Azure AD à partir de leurs appareils Windows, à l’aide de leurs informations d’identification professionnelles.
+Si vous avez choisi d’installer automatiquement les applications Office lors de l’installation, les applications s’installent sur les appareils Windows 10 une fois que les utilisateurs se sont connectés à Azure AD à partir de leurs appareils Windows, à l’aide de leurs informations d’identification professionnelles.
 
 Pour installer Office sur des appareils iOS ou Android mobiles, voir Configurer des appareils mobiles pour les utilisateurs [de Microsoft 365 Business Premium.](set-up-mobile-devices.md)
 

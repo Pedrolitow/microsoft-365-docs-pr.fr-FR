@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité qui sont disponibles avec Microsoft 365 Business Premium pour protéger vos données sur les PC, téléphones et tablettes.
-ms.openlocfilehash: d641fc66e27f3c5e0a7c8609e4fa25fac93d8561
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f04a998c74128edac306167617e073c412fce2ea
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052251"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198408"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business Premium
 
-Microsoft 365 Business Premium offre des fonctionnalités de sécurité simplifiées pour vous aider à protéger vos données sur pc, téléphones et tablettes.
+Microsoft 365 Business Premium offre des fonctionnalités de sécurité simplifiées pour vous aider à protéger vos données sur les PC, téléphones et tablettes.
     
 ## <a name="microsoft-365-admin-center-security-features"></a>Fonctionnalités de sécurité du Centre d’administration Microsoft 365
 
@@ -41,7 +41,7 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité Microsoft 365 Bu
   
 - [Définissez les paramètres de gestion des applications pour les appareils Android ou iOS.](app-protection-settings-for-android-and-ios.md) 
     
-    Ces paramètres incluent la suppression de fichiers d’un appareil inactif après une période définie, le chiffrement des fichiers professionnels, la nécessité pour les utilisateurs de définir un code confidentiel, etc.
+    Ces paramètres incluent la suppression de fichiers d’un appareil inactif après une période définie, le chiffrement des fichiers de travail, l’obligation pour les utilisateurs de définir un code confidentiel, etc.
     
 - [Définissez les paramètres de protection des applications pour les appareils Windows 10.](protection-settings-for-windows-10-devices.md) 
     
@@ -53,7 +53,7 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité Microsoft 365 Bu
     
 - [Supprimer les données d'entreprise sur des appareils](remove-company-data.md)
     
-    Vous pouvez effacer à distance les données de l’entreprise si un appareil est perdu, volé ou si un employé quitte votre entreprise.
+    Vous pouvez effacer à distance les données d’entreprise si un appareil est perdu, volé ou si un employé quitte votre entreprise.
     
 - [Réinitialisez les appareils Windows 10 à leurs paramètres d’usine.](reset-devices-to-factory-settings.md) 
     
@@ -63,9 +63,9 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité Microsoft 365 Bu
 
 Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibles pour vous aider à protéger votre activité contre les cybermenaces et protéger les informations sensibles.
   
-- **[Microsoft Defender pour Office 365](../security/defender-365-security/defender-for-office-365.md)**
+- **[Microsoft Defender pour Office 365](../security/office-365-security/defender-for-office-365.md)**
     
-    Microsoft Defender pour Office 365 vous aide à protéger votre entreprise contre les attaques sophistiquées par hameçonnage et ransomware conçues pour compromettre les informations des employés ou des clients. Les fonctionnalités sont les suivantes : 
+    Microsoft Defender pour Office 365 vous aide à protéger votre entreprise contre les attaques par hameçonnage et ransomware sophistiquées conçues pour compromettre les informations des employés ou des clients. Les fonctionnalités sont les suivantes : 
     
   - Analyse sophistiquée des pièces jointes et analyse optimisée par l’IA pour détecter et ignorer les messages dangereux.
     
@@ -77,7 +77,7 @@ Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibl
 - **Même [accès conditionnel](/azure/active-directory/conditional-access/overview) que le plan Azure AD Premium P1**
 
 
-    L’accès conditionnel peut aider à protéger votre organisation contre les risques de se connecte, les tentatives d’accès à partir d’un réseau ou des paramètres régionaux inattendus, les tentatives d’accès à partir de types d’appareils à risque, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée et utilisent les signaux du premier événement d’authentification pour déterminer si la tentative d’accès doit être approuvée, refusée ou si une preuve supplémentaire (par exemple, un second formulaire d’identification) est requise.
+    L’accès conditionnel peut aider à protéger votre organisation contre les risques de se connecte, les tentatives d’accès à partir d’un réseau ou des paramètres régionaux inattendus, les tentatives d’accès à partir de types d’appareils à risque, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée et utilisent les signaux du premier événement d’authentification pour déterminer si l’accès tenté doit être approuvé, refusé ou si une preuve supplémentaire (par exemple, un second formulaire d’identification) est requise.
 
     Les fonctionnalités d’accès conditionnel incluses sont les suivants :
 
@@ -125,4 +125,4 @@ Oui, ces fonctionnalités sont disponibles dans tous les marchés où Microsoft 
     
     ![Dans le navigation gauche du Centre d’administration Microsoft 365, choisissez Centres d’administration.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Sélectionnez **&amp; Conformité de la** sécurité pour aller au Centre de conformité de la &amp; sécurité.
+3. Choisissez **Conformité de la &amp; sécurité** pour aller au Centre &amp; de conformité de sécurité.

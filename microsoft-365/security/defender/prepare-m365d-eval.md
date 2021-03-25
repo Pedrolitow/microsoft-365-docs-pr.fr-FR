@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f0e0bf29068bea0f213f8b00403213969f5b9106
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dada110faca71c9e8fcf384eb5bb0a78faefaad9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066750"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199136"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Préparer votre laboratoire d’essai ou votre environnement pilote Microsoft 365 Defender
 
@@ -45,7 +45,7 @@ Vous êtes actuellement en phase de préparation.
 
 La préparation est essentielle pour tout déploiement réussi. Cette section vous guide à travers ce que vous devez prendre en compte lorsque vous vous préparez à créer un laboratoire d’essai ou un environnement pilote pour votre déploiement de Microsoft 365 Defender.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables
 Découvrez les licences, la configuration matérielle et logicielle requise et d’autres paramètres de configuration pour mettre en service et utiliser Microsoft 365 Defender. Consultez les conditions minimales requises pour [Microsoft 365 Defender,](https://docs.microsoft.com/microsoft-365/security/defender/prerequisites) [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)pour le point de terminaison, Microsoft Defender pour Office [365,](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) [Microsoft Defender pour](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)l’identité, Microsoft Cloud App [Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Parties prenantes et sign-off
@@ -82,14 +82,14 @@ Ignorez cette étape si vous avez déjà activé la synchronisation entre Active
 3. Sur le contrôleur de domaine, suivez l’Assistant Azure Active Directory Connect. Lisez les termes du contrat de licence et la notification de confidentialité, puis cochez la case si vous acceptez. Cliquez sur **Continuer**.
 ![Image de la page d’accueil d’Azure AD Connect](../../media/mtp-eval-3.png) <br>
 
-4. Accédez à **Paramètres Express.**
+4. Accédez **à Paramètres Express.**
 ![Image de la page Paramètres express](../../media/mtp-eval-4.png) <br>
 
 5. Entrez vos informations d’identification d’administrateur général. Cliquez sur **Suivant**.
-![Image de la page Connexion à Azure AD dans laquelle vous devez entrer vos informations d’identification d’administrateur général](../../media/mtp-eval-5.png) <br>
+![Image de la page Connexion à Azure AD où vous devez entrer vos informations d’identification d’administrateur général](../../media/mtp-eval-5.png) <br>
 
 6. Entrez vos informations d’identification d’administrateur d’entreprise des services de domaine Active Directory. Cliquez sur **Suivant**.
-![Image de la page Se connecter à AD DS où vous devez entrer vos informations d’identification](../../media/mtp-eval-6.png) <br>
+![Image de la page Connexion à AD DS où vous devez entrer vos informations d’identification](../../media/mtp-eval-6.png) <br>
 
 7. Cliquez **sur Installer** pour confirmer la configuration.
 ![Image de la page de confirmation de configuration](../../media/mtp-eval-7.png) <br>
@@ -105,7 +105,7 @@ Le tableau suivant indique l’ordre recommandé par Microsoft pour configurer l
 
 | Composant                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Classement de l’ordre de configuration |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-|Microsoft Defender pour Office 365|Microsoft Defender pour Office 365 protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. <br> [Pour en savoir plus.](/microsoft-365/security/defender-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
+|Microsoft Defender pour Office 365|Microsoft Defender pour Office 365 protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. <br> [Pour en savoir plus.](/microsoft-365/security/office-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
 |Microsoft Defender pour Identity|Microsoft Defender pour l’identité utilise des signaux Active Directory pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation. <br> [En savoir plus](/azure-advanced-threat-protection/).| 2 |
 |Microsoft Cloud App Security| Microsoft Cloud App Security est un courtier de sécurité d’accès au cloud (CASB) qui opère sur plusieurs clouds. Il offre une visibilité enrichie, un contrôle sur les déplacements de données et des analyses sophistiquées pour identifier et lutter contre les cybermenaces dans tous vos services cloud. <br> [En savoir plus](/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Microsoft Defender pour point de terminaison | Les fonctionnalités de détection et de réponse de Microsoft Defender pour point de terminaison assurent des détections avancées des attaques en quasi temps réel et exploitables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces. <br> [Pour en savoir plus.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    

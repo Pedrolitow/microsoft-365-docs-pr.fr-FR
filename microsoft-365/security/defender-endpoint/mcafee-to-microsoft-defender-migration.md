@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mcafeemigrate
 - m365solution-overview
-ms.topic: conceptual
+ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 53d9e68fa357d07cf70ab2282de9cee9fc0bd90d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f46fb354537b61630172d3d735ce6b24f25ab39a
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185634"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198832"
 ---
 # <a name="migrate-from-mcafee-to-microsoft-defender-for-endpoint"></a>Migrer de Mc Antivirus vers Microsoft Defender pour le point de terminaison
 
@@ -67,10 +67,10 @@ Dans ce guide de migration, nous [](https://docs.microsoft.com/microsoft-365/sec
 | [Repérage avancé](advanced-hunting-overview.md) | Les fonctionnalités de recherche avancées permettent à votre équipe des opérations de sécurité de localiser des indicateurs et des entités de menaces connues ou potentielles. |
 | [Blocage et contenu comportementaux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | Les fonctionnalités de blocage du comportement et de blocage du contenu permettent d’identifier et d’arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. |
 | [Examen et correction automatisés](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | Les fonctionnalités d’examen et de réponse automatisées examinent les alertes et prennent des mesures correctives immédiates pour résoudre les violations. |
-| [Service de recherche de menaces](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (experts microsoft en matière de menaces) | Les services de recherche de menace fournissent aux équipes des opérations de sécurité une analyse et une surveillance de niveau expert, et pour vous assurer que les menaces critiques ne sont pas manquées. |
+| [Service de recherche de menaces](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (experts microsoft en matière de menaces) | Les services de recherche de menace fournissent aux équipes des opérations de sécurité une surveillance et une analyse de niveau expert, et pour vous assurer que les menaces critiques ne sont pas manquées. |
 
 **Vous souhaitez en savoir plus ? Voir [Microsoft Defender pour le point de terminaison.](https://docs.microsoft.com/windows/security/threat-protection)**
 
 ## <a name="next-step"></a>Étape suivante
 
-- Continuez à [préparer votre migration.](mcafee-to-microsoft-defender-prepare.md)
+- Procédez à [la préparation de votre migration.](mcafee-to-microsoft-defender-prepare.md)

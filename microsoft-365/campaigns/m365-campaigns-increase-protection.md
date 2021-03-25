@@ -23,16 +23,16 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365
-ms.openlocfilehash: 0e8b63fec3b764f10039e9f738fd047ff2c513a4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 61ac32d3debe391794e85df8c129e5df72887e9e
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052205"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198374"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Renforcer la protection contre les menaces pour l’abonnement Microsoft 365
 
-Cet article vous aide à renforcer la protection de votre abonnement Microsoft 365 pour vous protéger contre le hameçonnage, les programmes malveillants et d’autres menaces. Ces recommandations sont adaptées aux organisations ayant un besoin accru de sécurité, telles que les campagnes électorales, les bureaux juridiques et les organismes de santé.
+Cet article vous aide à renforcer la protection de votre abonnement Microsoft 365 pour vous protéger contre le hameçonnage, les programmes malveillants et d’autres menaces. Ces recommandations sont appropriées pour les organisations ayant un besoin accru de sécurité, telles que les campagnes électorales, les bureaux juridiques et les organismes de santé.
 
 Avant de commencer, vérifiez votre score de sécurité Microsoft. Le Niveau de sécurité Microsoft analyse la sécurité de votre organisation en fonction de vos activités régulières et de vos paramètres de sécurité et affecte un score. Commencez par prendre note de votre score actuel. La prise des actions recommandées dans cet article augmente votre score. L’objectif n’est pas d’atteindre le score maximum, mais de prendre en compte les opportunités de protection de votre environnement qui n’affectent pas la productivité de vos utilisateurs.
 
@@ -42,7 +42,7 @@ Pour plus d’informations, voir [Le Score de sécurité Microsoft.](../security
 
 Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les programmes malveillants, mais vous pouvez augmenter cette protection en bloquant les pièces jointes avec des types de fichiers couramment utilisés pour les programmes malveillants. Pour faire monter en haut la protection contre les programmes malveillants dans les e-mails :
 
-1. Connectez-vous <https://protection.office.com> avec vos informations d’identification de compte d’administrateur.
+1. Go to <https://protection.office.com> and sign in with your admin account credentials.
 
 2. Dans le Centre de sécurité & conformité, dans le volet de  navigation de gauche, sous Gestion des menaces, choisissez Stratégie \> **anti-programme malveillant.**
 
@@ -58,7 +58,7 @@ Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les
 
 6. Cliquez sur **Enregistrer**.
 
-Pour plus d’informations, voir [Protection contre les programmes malveillants dans EOP.](../security/defender-365-security/anti-malware-protection.md)
+Pour plus d’informations, voir [Protection contre les programmes malveillants dans EOP.](../security/office-365-security/anti-malware-protection.md)
 
 ## <a name="protect-against-ransomware"></a>Se protéger contre les rançongiciels
 
@@ -74,7 +74,7 @@ Pour créer une règle de transport de messagerie :
 
 2. Dans la catégorie **de flux de messagerie,** cliquez sur **règles.**
 
-3. Cliquez **+** sur , puis sur Créer une **règle.**
+3. Cliquez **+** sur , puis cliquez sur Créer une **règle.**
 
 4. Cliquez **sur Plus d’options** en bas de la boîte de dialogue pour voir l’ensemble complet des options.
 
@@ -82,7 +82,7 @@ Pour créer une règle de transport de messagerie :
 
 6. Cliquez sur **Enregistrer**.
 
-|Setting|Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office|
+|Paramètres|Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office|
 |---|---|
 |Nom|Règle anti-ransomware : avertir les utilisateurs|
 |Appliquez cette règle si . . .|N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .|
@@ -102,11 +102,11 @@ Les pirates informatiques qui accèdent à la boîte aux lettres d’un utilisat
 
 Pour créer une règle de transport de messagerie, regardez [cette courte vidéo](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) ou suivez les étapes suivantes :
 
-1. Dans le Centre d’administration Microsoft 365, cliquez **sur Centres d’administration** \> **Exchange.**
+1. Dans le Centre d’administration Microsoft 365, cliquez sur **Centres d’administration** \> **Exchange**.
 
 2. Dans la catégorie **de flux de messagerie,** cliquez sur **règles.**
 
-3. Cliquez **+** sur , puis sur Créer une **règle.**
+3. Cliquez **+** sur , puis cliquez sur Créer une **règle.**
 
 4. Cliquez **sur Plus d’options** en bas de la boîte de dialogue pour voir l’ensemble complet des options.
 
@@ -114,7 +114,7 @@ Pour créer une règle de transport de messagerie, regardez [cette courte vidéo
 
 6. Cliquez sur **Enregistrer**.
 
-|Setting|Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office|
+|Paramètres|Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office|
 |---|---|
 |Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
@@ -132,13 +132,13 @@ Pour créer une stratégie anti-hameçonnage dans Defender pour Office 365, rega
 
 1. Accédez à <https://protection.office.com>.
 
-2. Dans le Centre de sécurité & conformité, dans le volet de navigation de gauche, sous Gestion des menaces, choisissez **Stratégie**.
+2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
 
 3. Dans la page **Stratégie,** choisissez **Anti-hameçonnage.**
 
 4. Dans la page **Anti-hameçonnage,** **sélectionnez + Créer.** Un Assistant vous lance pour définir votre stratégie anti-hameçonnage.
 
-5. Spécifiez le nom, la description et les paramètres de votre stratégie comme recommandé dans le graphique ci-dessous. Pour plus d’informations, [voir La stratégie anti-hameçonnage dans Les options de Microsoft Defender pour Office 365.](../security/defender-365-security/set-up-anti-phishing-policies.md)
+5. Spécifiez le nom, la description et les paramètres de votre stratégie comme recommandé dans le graphique ci-dessous. Pour plus d’informations, [voir La stratégie anti-hameçonnage dans Les options de Microsoft Defender pour Office 365.](../security/office-365-security/set-up-anti-phishing-policies.md)
 
 6. Une fois que vous avez examiné vos paramètres, choisissez **Créer cette** stratégie ou **Enregistrer,** le cas échéant.
 
@@ -146,14 +146,14 @@ Pour créer une stratégie anti-hameçonnage dans Defender pour Office 365, rega
 |---|---|
 |Nom|Domaine et personnel le plus précieux|
 |Description|Assurez-vous que le personnel le plus important et notre domaine ne font pas l’objet d’un emprunt d’identité.|
-|Ajouter des utilisateurs à protéger|Select **+ Add a condition, The recipient is**. Tapez des noms d’utilisateurs ou entrez l’adresse e-mail des propriétaires d’entreprise, des partenaires ou du candidat, des responsables et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.|
+|Ajouter des utilisateurs à protéger|Sélectionnez **+ Ajoutez une condition, le destinataire est**. Tapez des noms d’utilisateurs ou entrez l’adresse e-mail des propriétaires d’entreprise, des partenaires ou du candidat, des responsables et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.|
 |Ajouter des domaines à protéger|Sélectionnez **+ Ajoutez une condition, le domaine du destinataire est**. Entrez le domaine personnalisé associé à votre abonnement Microsoft 365, si vous en avez défini un. Vous pouvez entrer plusieurs domaines.|
-|Choisir des actions|Si un message électronique est envoyé par un utilisateur dont l’identité est usurpée : sélectionnez **Rediriger le message** vers une autre adresse de messagerie, puis tapez l’adresse de messagerie de l’administrateur de la sécurité . par exemple, *Alice <span> <span> @contoso.com*. <br/> Si le courrier électronique est envoyé par un domaine dont l’identité a été empruntée : sélectionnez **Mettre le message en quarantaine**.|
+|Choisir des actions|Si un message électronique est envoyé par un utilisateur dont l’identité est emprunt d’identité : sélectionnez **Rediriger le message** vers une autre adresse de messagerie, puis tapez l’adresse e-mail de l’administrateur de sécurité . par exemple, *Alice <span> <span> @contoso.com*. <br/> Si le courrier électronique est envoyé par un domaine dont l’identité a été empruntée : sélectionnez **Mettre le message en quarantaine**.|
 |Veille des boîtes aux lettres|Par défaut, la veille des boîtes aux lettres est activée lorsque vous créez une stratégie anti-hameçonnage. Laissez ce paramètre **activé** pour obtenir de meilleurs résultats.|
 |Ajouter des expéditeurs et domaines de confiance|Ici, vous pouvez ajouter votre propre domaine ou tout autre domaine approuvé.|
 |Appliqué à|Sélectionnez **Le domaine du destinataire est**. Sous **Un de ces éléments**, sélectionnez **Choisir**. Sélectionnez **+ Ajouter**. Cochez la case en regard du nom du domaine, par *exemple, contoso. <span> <span> com*, dans la liste, puis sélectionnez **Ajouter**. Sélectionnez **Terminé**.|
 
-Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Defender pour Office 365.](../security/defender-365-security/set-up-anti-phishing-policies.md)
+Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Defender pour Office 365.](../security/office-365-security/set-up-anti-phishing-policies.md)
 
 ## <a name="protect-against-malicious-attachments-files-and-links-with-defender-for-office-365"></a>Se protéger contre les pièces jointes, les fichiers et les liens malveillants avec Defender pour Office 365
 
@@ -177,21 +177,21 @@ Si vous ne voyez pas encore la **page** d’installation avec des cartes dans vo
 
    ![Cochez toutes les cases dans Renforcer la protection contre les menaces avancées.](../media/setatp.png)
 
-5. Choisissez **Créer des stratégies** pour activer les pièces jointes et les liens sécurisés.
+5. Choisissez **Créer des stratégies** pour activer les pièces jointes et liens sécurisés.
 
 ### <a name="set-up-safe-attachments-in-the-security--compliance-center"></a>Configurer les pièces jointes sécurisées dans le Centre de conformité & sécurité
 
-Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante simplement en regardant un message électronique. Microsoft Defender pour Office 365 inclut la protection contre les pièces jointes sécurisées, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers dans SharePoint, OneDrive et Microsoft Teams.
+Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante en regardant simplement un message électronique. Microsoft Defender pour Office 365 inclut la protection contre les pièces jointes sécurisées, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers dans SharePoint, OneDrive et Microsoft Teams.
 
 Pour créer une stratégie de pièce jointe sécurisée, regardez [cette courte vidéo](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)ou suivez les étapes suivantes :
 
 1. Go to <https://protection.office.com> and sign in with your admin account.
 
-2. Dans le Centre de sécurité & conformité, dans le volet de navigation de gauche, sous Gestion des menaces, choisissez **Stratégie**.
+2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
 
 3. Dans la page Stratégie, sélectionnez **Pièces jointes sécurisées.**
 
-4. Dans la page Pièces jointes sécurisées, appliquez cette protection à grande étendue en cocher Activer la protection atp pour **SharePoint, OneDrive** et Microsoft Teams.
+4. Dans la page Pièces jointes sécurisées, appliquez cette protection à grande étendue en cochez la case Activer la protection atp pour **SharePoint, OneDrive** et Microsoft Teams.
 
 5. Sélectionnez **+** pour créer une stratégie.
 
@@ -201,17 +201,17 @@ Pour créer une stratégie de pièce jointe sécurisée, regardez [cette courte 
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
-|Nom|Bloquez les messages électroniques actuels et futurs avec les programmes malveillants détectés.|
+|Nom|Bloquer les messages électroniques actuels et futurs avec les programmes malveillants détectés.|
 |Description|Bloquer les messages électroniques et pièces jointes actuels et futurs avec les programmes malveillants détectés.|
 |Enregistrer les pièces jointes d’une réponse anti-programme malveillant inconnue|Select **Block - Block the current and future emails and attachments with detected malware**.|
 |Rediriger la pièce jointe lors de la détection|Activer la redirection (sélectionnez cette case) <br/> Entrez le compte d’administrateur ou une boîte aux lettres configurée pour la mise en quarantaine. <br/> Appliquez la sélection ci-dessus si l’analyse des programmes malveillants pour les pièces jointes arrive à arriver à son moment ou si une erreur se produit (sélectionnez cette zone).|
 |Appliqué à|Le domaine du destinataire est . . . sélectionnez votre domaine.|
 
-Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Defender pour Office 365.](../security/defender-365-security/set-up-anti-phishing-policies.md)
+Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Defender pour Office 365.](../security/office-365-security/set-up-anti-phishing-policies.md)
 
-### <a name="set-up-safe-links-in-the-security--compliance-center"></a>Configurer des liens sécurisés dans le Centre de conformité & sécurité
+### <a name="set-up-safe-links-in-the-security--compliance-center"></a>Configurer des liens sécurisés dans le Centre de sécurité & conformité
 
-Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. La fonction Liens sécurisés, qui fait partie de Microsoft Defender pour Office 365, peut aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les messages électroniques et les documents Office. La protection est définie par le biais de stratégies de liens sécurisés.
+Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. La fonction Liens sécurisés, qui fait partie de Microsoft Defender pour Office 365, peut contribuer à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les messages électroniques et les documents Office. La protection est définie par le biais de stratégies de liens sécurisés.
 
 Nous vous recommandons d’y faire les choses suivantes :
 
@@ -223,13 +223,13 @@ Pour configurer des liens sécurisés, [regardez cette courte vidéo](https://su
 
 1. Go to <https://protection.office.com> and sign in with your admin account.
 
-2. Dans le Centre de sécurité & conformité, dans le volet de navigation de gauche, sous Gestion des menaces, choisissez **Stratégie**.
+2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
 
 3. Dans la page Stratégie, choisissez **Liens sécurisés.**
 
 Pour modifier la stratégie par défaut :
 
-1. Dans la page Liens sécurisés, sous Stratégies qui **s’appliquent** à l’ensemble de l’organisation, sélectionnez la **stratégie par** défaut.
+1. Dans la page Liens sécurisés, sous **Stratégies qui s’appliquent** à l’ensemble de l’organisation, sélectionnez la **stratégie par** défaut.
 
 2. Sous **Paramètres qui s’appliquent au** contenu à l’exception du courrier électronique, sélectionnez **Applications Microsoft 365 pour entreprise, Office pour iOS et Android.**
 
@@ -246,11 +246,11 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
 |Nom|Stratégie de liens sécurisés pour tous les destinataires du domaine|
-|Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages|Sélectionnez Sur : les URL seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur **clique sur le lien.**|
+|Sélectionner l’action pour les URL potentiellement malveillantes inconnues dans les messages|Sélectionnez Sur : les URL seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur **clique sur le lien.**|
 |Utiliser des pièces jointes sécurisées pour analyser le contenu téléchargeable|Sélectionnez cette case.|
 |Appliqué à|Le domaine du destinataire est . . . sélectionnez votre domaine.|
 
-Pour plus d’informations, [voir Liens sécurisés dans Defender pour Office 365.](../security/defender-365-security/safe-links.md)
+Pour plus d’informations, [voir Liens sécurisés dans Defender pour Office 365.](../security/office-365-security/safe-links.md)
 
 ## <a name="turn-on-the-unified-audit-log"></a>Activer le journal d’audit unifié
 
@@ -273,13 +273,13 @@ Une fois la fonctionnalité désactivée, vous pouvez rechercher des fichiers, d
 
 1. Go to the admin center at <https://admin.microsoft.com> and then choose **SharePoint** under **Admin centers** in the left nav.
 2. Dans le Centre d’administration SharePoint, allez à **Partage de** \> **stratégies.**
-3. Dans la **page** Partage, sous Liens de fichiers et de dossiers, sélectionnez Des personnes **spécifiques,** et sous Paramètres avancés pour les liens « Tout le monde », sélectionnez Ces liens doivent **expirer** dans ce nombre de jours et taper dans 14 (ou un autre nombre de jours pour limiter la durée de vie du lien). 
+3. Dans la **page** Partage, sous Liens de fichiers et de dossiers, sélectionnez Des personnes **spécifiques,** et sous Paramètres avancés pour les liens « Tout le monde », sélectionnez Ces liens doivent **expirer** dans ce nombre de jours, puis tapez 14 (ou un autre nombre de jours pour limiter la durée de vie du lien). 
 
    ![Choisissez des personnes spécifiques et définissez l’expiration du lien sur 14 jours.](../media/anyonelinks.png)
 
 ## <a name="activity-alerts"></a>Alertes d’activité
 
-Vous pouvez utiliser les alertes d’activité pour suivre les activités des administrateurs et des utilisateurs et détecter les incidents de protection contre les programmes malveillants et la perte de données dans votre organisation. Votre abonnement inclut un ensemble de stratégies par défaut, mais vous pouvez également créer des stratégies personnalisées. Pour plus d’informations, voir [stratégies d’alerte.](../compliance/alert-policies.md) Par exemple, si vous stockez un fichier important dans SharePoint que personne ne doit partager en externe, vous pouvez créer une notification qui vous avertit si quelqu’un le partage.
+Vous pouvez utiliser les alertes d’activité pour suivre les activités des administrateurs et des utilisateurs et détecter les incidents de protection contre les programmes malveillants et la perte de données dans votre organisation. Votre abonnement inclut un ensemble de stratégies par défaut, mais vous pouvez également en créer des personnalisées. Pour plus d’informations, voir [stratégies d’alerte.](../compliance/alert-policies.md) Par exemple, si vous stockez un fichier important dans SharePoint que personne ne doit partager en externe, vous pouvez créer une notification qui vous avertit si quelqu’un le partage.
 
 La figure suivante illustre les stratégies par défaut incluses dans Microsoft 365.
 
@@ -298,7 +298,7 @@ Vous pouvez empêcher les membres de votre organisation de partager leurs calend
 
    La figure suivante montre le partage de calendrier non autorisé.
 
-   ![Capture d’écran montrant le partage de calendrier externe comme non autorisé.](../media/nocalendarsharing.png)
+   ![Capture d’écran montrant que le partage de calendrier externe n’est pas autorisé.](../media/nocalendarsharing.png)
 
    La figure suivante illustre les paramètres lorsque le partage de calendrier est autorisé avec un lien de messagerie avec uniquement des informations de libre/occupé.
 

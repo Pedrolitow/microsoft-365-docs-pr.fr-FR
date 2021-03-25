@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment déplacer votre entreprise vers Microsoft 365 Business Premium à partir d’Office 365 E3.
-ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cb70260201686cae02428c715ac98ffe2f88787f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164530"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198094"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration d’Office 365 E3 vers Microsoft 365 Business Premium
 
 Microsoft 365 Business Premium offre tout ce dont vous avez besoin pour votre petite entreprise, en combinant les applications de productivité basées sur le cloud les plus classes avec une gestion et une sécurité des appareils simples. Si vous disposez actuellement d’un abonnement Office 365 E3, mais que vous n’avez pas plus de 300 employés, envisagez de passer à Microsoft 365 Business Premium pour ajouter des fonctionnalités de sécurité.
 
-La migration est simple : vous changez d’abord de licence et toutes vos données et informations utilisateur dans votre abonnement actuel sont conservées. Après la migration, vous devez configurer les fonctionnalités ajoutées dans Microsoft 365 Business Premium.
+La migration est simple : vous devez d’abord changer de licence et toutes vos données et informations utilisateur dans votre abonnement actuel sont conservées. Après la migration, vous devez configurer les fonctionnalités ajoutées dans Microsoft 365 Business Premium.
 
 ## <a name="differences-between-office-365-e3-and-microsoft-365-business-premium"></a>Différences entre Office 365 E3 et Microsoft 365 Business Premium
 
@@ -42,7 +42,7 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 | Fonctionnalité    | Prise en charge dans Microsoft 365 Business Premium    | Prise en charge dans Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Sur site**        | | | 
-| Applications Office<sup>1</sup>    | Microsoft 365 Apps for business    | Applications Microsoft 365 pour les grandes entreprises | 
+| Applications Office<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Applications Microsoft 365 pour les grandes entreprises | 
 | **Applications de productivité cloud**        | | | 
 | Exchange Online et Outlook    | Limite de stockage de 50 Go par boîte aux lettres et nombre Archivage Exchange Online    | Limite de stockage de 100 Go par boîte aux lettres et nombre Archivage Exchange Online | 
 | Teams    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
@@ -61,7 +61,7 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 | **Protection des informations**        | | |
 |Prévention des pertes de données Office 365|    ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)|![Inclus dans Office 365 E3](../media/check-mark.png)|
 |Azure Information Protection Plan 1, application de Bitlocker|![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)||
-|Azure Information Protection Plan 1, étiquettes de sensibilité|![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)||
+|Azure Information Protection Plan 1, Étiquettes de sensibilité|![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)||
 |**Licence d’accès client (droits cal)**|||
 |Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Inclus dans Office 365 E3](../media/check-mark.png)|
 
@@ -82,7 +82,7 @@ Vous n’avez pas besoin d’apporter des modifications à votre abonnement ou d
 
 ### <a name="windows-10"></a>Windows 10
 
-Si votre windows n’est pas déjà sur windows Pro Creator update, mettez-les à niveau [vers Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
+Si votre windows n’est pas déjà sur la mise à jour du Créateur Windows Pro, mettez-les à [niveau vers Windows Pro Creators Update.](upgrade-to-windows-pro-creators-update.md)
 
 ### <a name="set-up-policies-to-protect-user-devices-and-files"></a>Configurer des stratégies pour protéger les appareils et les fichiers des utilisateurs
 
@@ -113,7 +113,7 @@ Vous pouvez également effectuer ces étapes dans la page Appareils :
     
   - Voir [Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md) pour obtenir la procédure à suivre pour les appareils Windows. 
     
-  - Voir Configurer des appareils mobiles pour les utilisateurs [de Microsoft 365 Business Premium](set-up-mobile-devices.md) pour obtenir la procédure pour les téléphones et iPhone Android. 
+  - Voir Configurer des appareils mobiles pour [les utilisateurs de Microsoft 365 Business Premium](set-up-mobile-devices.md) pour obtenir la procédure pour les téléphones et iPhone Android. 
   
 ### <a name="mailbox-size"></a>Taille de la boîte aux lettres
 
@@ -122,8 +122,8 @@ Microsoft 365 Business Premium a une limite de stockage de 50 Go car il utilise 
 
 ### <a name="threat-protection"></a>Protection contre les menaces
 
-Après avoir migré vers Microsoft 365 Business Premium, vous avez Defender pour Office 365. Consultez [Microsoft Defender pour Office 365](../security/defender-365-security/defender-for-office-365.md) pour obtenir une vue d’ensemble. Pour configurer, voir [configurer](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)des liens sécurisés, configurer des pièces [jointes sécurisées](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)et configurer l’anti-hameçonnage dans [Defender pour Office 365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)
+Après avoir migré vers Microsoft 365 Business Premium, vous avez Defender pour Office 365. Consultez [Microsoft Defender pour Office 365](../security/office-365-security/defender-for-office-365.md) pour obtenir une vue d’ensemble. Pour configurer, voir [configurer](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)des liens sécurisés, configurer des pièces [jointes sécurisées](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)et configurer l’anti-hameçonnage dans [Defender pour Office 365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-Pour commencer à utiliser des étiquettes de sensibilité, voir [Vue](../compliance/sensitivity-labels.md) d’ensemble des étiquettes de sensibilité et créer et gérer la vidéo sur [les étiquettes de](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) sensibilité.
+Pour commencer à utiliser des étiquettes de sensibilité, voir [Vue d’ensemble](../compliance/sensitivity-labels.md) des étiquettes de sensibilité et créer et gérer la vidéo sur [les étiquettes de](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) sensibilité.

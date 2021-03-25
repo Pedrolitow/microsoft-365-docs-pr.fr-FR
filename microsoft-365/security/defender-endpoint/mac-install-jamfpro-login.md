@@ -1,7 +1,7 @@
 ---
 title: Connectez-vous à Jamf Pro
 description: Connectez-vous à Jamf Pro
-keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamfpro, macos,pépé, mojave, high sierra
+keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamfpro, macos,pérable, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4291b921b7b4b4564854c1f29ef1a93858715803
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a868c8608f3db556fa7ff4c98f769d82980ac86b
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066894"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187676"
 ---
 # <a name="log-in-to-jamf-pro"></a>Connectez-vous à Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)

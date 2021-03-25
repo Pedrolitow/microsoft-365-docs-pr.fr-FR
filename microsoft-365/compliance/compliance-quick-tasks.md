@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Découvrez les tâches qui vous aideront à démarrer rapidement la conformité dans Microsoft 365.
-ms.openlocfilehash: b8a6f98a38dcb6096287cbc2389648c0e7457e5c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 503e15c8b363dcd63c010d31384565f6e1a8af61
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052102"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197921"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tâches rapides pour démarrer avec la conformité Microsoft 365
 
@@ -34,11 +34,11 @@ Il est important de gérer les personnes de votre organisation qui ont accès au
 
 Commencez par attribuer des autorisations de conformité aux membres de votre organisation afin qu’ils peuvent effectuer ces tâches et empêcher les personnes non autorisées d’avoir accès à des zones en dehors de leurs responsabilités. Vous devez vous assurer que vous avez affecté les  bonnes personnes  aux rôles d’administrateur des données de conformité et d’administrateur de conformité avant de commencer à configurer et implémenter des solutions de conformité incluses dans Microsoft 365. Vous devez également affecter des utilisateurs au rôle de lecteur global Azure Active Directory pour afficher les données dans le Gestionnaire de conformité.
 
-Pour obtenir des instructions pas à pas sur la configuration des autorisations et l’affectation de personnes à des rôles d’administrateur, voir Autorisations dans le Centre de sécurité [& conformité.](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)
+Pour obtenir des instructions pas à pas sur la configuration des autorisations et l’affectation de personnes à des rôles d’administrateur, voir Autorisations dans le Centre de sécurité [& conformité.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
 ## <a name="task-2-know-your-state-of-compliance"></a>Tâche 2 : Connaître votre état de conformité
 
-Il est difficile de savoir où aller si vous ne savez pas où vous vous trouvez. Répondre à vos besoins en matière de conformité inclut la compréhension de votre niveau actuel de risque et des mises à jour qui peuvent être nécessaires dans ces temps en constante évolution. Que votre organisation soit nouvelle en matière de conformité ou qu’elle ait une connaissance approfondie des normes et réglementations qui régissent votre secteur d’activité, la meilleure chose que vous pouvez faire pour améliorer la conformité consiste à comprendre où en est votre organisation.
+Il est difficile de savoir où aller si vous ne savez pas où vous vous trouvez. Pour répondre à vos besoins en matière de conformité, vous pouvez comprendre votre niveau actuel de risque et les mises à jour qui peuvent être nécessaires dans ces temps en constante évolution. Que votre organisation soit nouvelle en matière de conformité ou qu’elle ait une connaissance approfondie des normes et réglementations qui régissent votre secteur d’activité, la meilleure chose que vous pouvez faire pour améliorer la conformité consiste à comprendre où en est votre organisation.
 
 [Le Gestionnaire de conformité Microsoft peut](compliance-manager.md) vous aider à comprendre la posture de conformité de votre organisation et à mettre en évidence les domaines qui peuvent avoir besoin d’être améliorés. Le Gestionnaire de conformité utilise un tableau de bord centralisé pour calculer un score basé sur les risques, mesurant votre progression dans l’exécution des actions qui permettent de réduire les risques liés à la protection des données et aux normes réglementaires. Vous pouvez également utiliser le Gestionnaire de conformité comme outil pour suivre toutes vos évaluations des risques. Il fournit des fonctionnalités de flux de travail pour vous aider à évaluer efficacement vos risques à l’aide d’un outil commun.
 
@@ -49,20 +49,20 @@ Pour obtenir des instructions pas à pas pour commencer avec le Gestionnaire de 
 >
 >Vérifiez votre score de sécurité [Microsoft 365](../security/defender/microsoft-secure-score.md) dans le Centre de sécurité Microsoft 365 et terminez les tâches décrites dans les articles suivants :
 >
-> - [Feuille de route de sécurité : principales priorités pour les 30 premiers jours, 90 jours et au-delà](../security/defender-365-security/security-roadmap.md)
+> - [Feuille de route de sécurité : principales priorités pour les 30 premiers jours, 90 jours et au-delà](../security/office-365-security/security-roadmap.md)
 > - [12 tâches principales pour les équipes de sécurité pour prendre en charge le travail à domicile](../security/top-security-tasks-for-remote-work.md)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>Tâche 3 : activer l’audit pour votre organisation
 
-Maintenant que vous avez déterminé l’état actuel de votre organisation et qui peut gérer les fonctions de conformité, l’étape suivante consiste à vous assurer que vous avez les données pour mener des enquêtes de conformité et générer des rapports sur les activités du réseau et des utilisateurs dans votre organisation. L’activation de l’audit est également une condition préalable importante pour les solutions de conformité couvertes plus loin dans cet article.
+Maintenant que vous avez déterminé l’état actuel de votre organisation et qui peut gérer les fonctions de conformité, l’étape suivante consiste à vous assurer que vous avez les données pour mener des enquêtes de conformité et générer des rapports sur les activités des utilisateurs et du réseau dans votre organisation. L’activation de l’audit est également une condition préalable importante pour les solutions de conformité couvertes plus loin dans cet article.
 
-Les informations fournies par le journal d’audit sont un outil précieux pour vous aider à faire correspondre vos exigences de conformité aux solutions qui peuvent vous aider à gérer et surveiller les domaines de conformité qui doivent être améliorés. L’enregistrement d’audit doit être activé avant l’enregistrement des activités et avant de pouvoir effectuer une recherche dans le journal d’audit. Lorsqu’elle est activée, l’activité des utilisateurs et des administrateurs de votre organisation est enregistrée dans le journal d’audit et conservée pendant 90 jours, et jusqu’à un an en fonction de la licence attribuée aux utilisateurs.
+Les informations fournies par le journal d’audit sont un outil précieux pour vous aider à faire correspondre vos exigences de conformité aux solutions qui peuvent vous aider à gérer et surveiller les domaines de conformité qui ont besoin d’être améliorés. L’enregistrement d’audit doit être activé avant l’enregistrement des activités et avant de pouvoir effectuer une recherche dans le journal d’audit. Lorsqu’elle est activée, l’activité des utilisateurs et des administrateurs de votre organisation est enregistrée dans le journal d’audit et conservée pendant 90 jours, et jusqu’à un an en fonction de la licence attribuée aux utilisateurs.
 
 Pour obtenir des instructions détaillées sur l’activer, voir Activer ou désactiver la recherche dans le journal [d’audit.](turn-audit-log-search-on-or-off.md)
 
 ## <a name="task-4-create-policies-to-alert-you-about-potential-compliance-issues"></a>Tâche 4 : créer des stratégies pour vous alerter sur les problèmes de conformité potentiels
 
-Microsoft fournit plusieurs stratégies d’alerte intégrées qui permettent d’identifier les abus des autorisations d’administrateur, l’activité des programmes malveillants, les menaces externes et internes potentielles et les risques de gouvernance des informations. Ces stratégies sont désactivées par défaut, mais vous devrez peut-être configurer des alertes personnalisées pour vous aider à gérer les exigences de conformité propres à votre organisation.
+Microsoft fournit plusieurs stratégies d’alerte intégrées qui permettent d’identifier les abus des autorisations d’administrateur, l’activité des programmes malveillants, les menaces externes et internes potentielles, ainsi que les risques de gouvernance des informations. Ces stratégies sont désactivées par défaut, mais vous devrez peut-être configurer des alertes personnalisées pour vous aider à gérer les exigences de conformité propres à votre organisation.
 
 Utilisez la stratégie d’alerte et les outils de tableau de bord d’alerte pour créer des stratégies d’alerte personnalisées et afficher les alertes générées lorsque les utilisateurs effectuent des activités qui correspondent aux conditions de stratégie. Par exemple, vous pouvez utiliser des stratégies d’alerte pour suivre les activités des utilisateurs et des administrateurs qui affectent les exigences de conformité, les autorisations et les incidents de perte de données dans votre organisation.
 
@@ -72,7 +72,7 @@ Pour obtenir des instructions pas à pas sur la création de stratégies d’ale
 
 Pour mener à bien leur travail, les membres de votre organisation collaborent avec d’autres personnes internes ou externes à votre organisation. Cela signifie que le contenu n’est plus protégé par un pare-feu : il peut se déplacer partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
 
-[Les étiquettes de sensibilité](sensitivity-labels.md) vous permet de classifier et de protéger les données de votre organisation, tout en vous assurez que la productivité des utilisateurs et leur capacité à collaborer ne sont pas ralenties. Utilisez les étiquettes de niveau de sensibilité pour appliquer des restrictions de chiffrement et d’utilisation en appliquant des marquages visuels et protéger les informations sur les plateformes et les appareils, en local et dans le cloud.
+[Les étiquettes de niveau](sensitivity-labels.md) de sensibilité vous permet de classifier et de protéger les données de votre organisation, tout en vous assurez que la productivité des utilisateurs et leur capacité à collaborer ne sont pas ralenties. Utilisez les étiquettes de niveau de sensibilité pour appliquer des restrictions de chiffrement et d’utilisation en appliquant des marquages visuels et protéger les informations sur les plateformes et les appareils, en local et dans le cloud.
 
 Pour obtenir des instructions pas à pas sur la configuration et l’utilisation des étiquettes de sensibilité, consultez La mise en place [des étiquettes de sensibilité.](get-started-with-sensitivity-labels.md) Pour plus d’informations sur les licences d’étiquettes de niveau de sensibilité, consultez les conseils de licence [Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)pour la sécurité & conformité.
 
@@ -80,7 +80,7 @@ Pour obtenir des instructions pas à pas sur la configuration et l’utilisation
 
 Une [stratégie de](retention.md) rétention vous permet de décider de manière proactive s’il faut conserver du contenu, supprimer du contenu ou les deux, conserver puis supprimer le contenu à la fin d’une période de rétention spécifiée. Ces actions peuvent être nécessaires pour se conformer aux réglementations du secteur et aux stratégies internes, et réduire les risques en cas de litige ou de violation de la sécurité.
 
-Lorsque le contenu est soumis à une stratégie de rétention, les utilisateurs peuvent continuer à modifier et à travailler avec le contenu comme si rien n’était modifié. Le contenu est conservé en place, à son emplacement d’origine. Toutefois, si quelqu’un modifie ou supprime le contenu soumis à la stratégie de rétention, une copie du contenu d’origine est enregistrée dans un emplacement sécurisé où il est conservé pendant que la stratégie de rétention pour ce contenu est en vigueur.
+Lorsque le contenu est soumis à une stratégie de rétention, les utilisateurs peuvent continuer à modifier le contenu et à l’utiliser comme si rien n’était modifié. Le contenu est conservé en place, à son emplacement d’origine. Toutefois, si quelqu’un modifie ou supprime le contenu soumis à la stratégie de rétention, une copie du contenu d’origine est enregistrée dans un emplacement sécurisé où il est conservé pendant que la stratégie de rétention de ce contenu est en vigueur.
 
 Vous pouvez rapidement mettre en place une stratégie de rétention pour plusieurs emplacements dans votre environnement Microsoft 365, tels que la messagerie Exchange, les sites SharePoint, les comptes OneDrive et les groupes Microsoft 365. Il n’existe aucune limite au nombre de boîtes aux lettres ou de sites que cette stratégie peut inclure automatiquement. Toutefois, si vous devez être plus sélectif, vous pouvez le faire en configurant une stratégie de rétention pour des emplacements spécifiques et inclure ou exclure des sites ou des utilisateurs.
 
@@ -122,7 +122,7 @@ Plus de 30 filtres différents sont à votre disposition. Parmi ceux-ci, figure
 - chemin d’accès du fichier
 - Stratégie DLP
 
-Pour obtenir des instructions pas à pas sur l’utilisation de l’Explorateur d’activités, voir [Commencer avec l’Explorateur d’activités.](data-classification-activity-explorer.md)
+Pour obtenir des instructions pas à pas sur l’utilisation de l’Explorateur d’activités, voir Commencer [avec l’Explorateur d’activités.](data-classification-activity-explorer.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -134,7 +134,7 @@ Alors que les stratégies de rétention s’appliquent au niveau du conteneur à
 
 En outre, les étiquettes de rétention prise [en charge la gestion des](records-management.md) enregistrements pour marquer le contenu en tant qu’enregistrement. Lorsque cela se produit, l’étiquette impose des restrictions supplémentaires sur le contenu qui peut être nécessaire pour aider votre organisation à se conformer aux exigences réglementaires.
 
-Pour obtenir des instructions pas à pas pour créer et publier des étiquettes de rétention, consultez les conseils suivants :
+Pour obtenir des instructions pas à pas pour créer et publier des étiquettes de rétention, consultez les instructions suivantes :
 - [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
 - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
 

@@ -2,7 +2,7 @@
 title: Microsoft Defender ATP pour Mac
 ms.reviewer: ''
 description: Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint pour Mac.
-keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamf, macos,pépé, mojave, high sierra
+keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamf, macos, big sur, magasin, mojave
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6af8a6e0e23201f3c5861cb6a28b2bffa0f04ea4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 34150088379445d66006c757b2c8ea607865bf4c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186436"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198992"
 ---
 # <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender pour point de terminaison pour Mac
 
@@ -39,7 +39,7 @@ ms.locfileid: "51186436"
 Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Defender pour Endpoint pour Mac.
 
 > [!CAUTION]
-> L’exécution d’autres produits de protection de point de terminaison tiers avec Defender pour Endpoint pour Mac est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de la fonctionnalité MDATP pour Mac EDR après avoir configuré la fonctionnalité antivirus MDATP pour Mac pour qu’elle s’exécute en [mode passif.](mac-preferences.md#enable--disable-passive-mode)
+> L’exécution d’autres produits de protection des points de terminaison tiers avec Defender pour Endpoint pour Mac est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de la fonctionnalité MDATP pour Mac EDR après avoir configuré la fonctionnalité antivirus MDATP pour Mac pour qu’elle s’exécute en [mode passif.](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>Nouveautés de la dernière version
 
@@ -50,7 +50,7 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 > [!TIP]
 > Si vous avez des commentaires que vous souhaitez partager, envoyez-le en ouvrant Microsoft Defender pour Endpoint pour Mac sur votre appareil et en naviguant vers l’aide pour envoyer  >  **des commentaires.**
 
-Pour obtenir les dernières fonctionnalités, y compris les fonctionnalités de prévisualisation (telles que la détection et la réponse des points de terminaison pour vos appareils Mac), configurez votre appareil macOS exécutant Microsoft Defender pour endpoint comme un appareil « Insider ».
+Pour obtenir les fonctionnalités les plus récentes, y compris les fonctionnalités de prévisualisation (telles que la détection et la réponse des points de terminaison pour vos appareils Mac), configurez votre appareil macOS exécutant Microsoft Defender pour le point de terminaison en tant qu’appareil « Insider ».
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-mac"></a>Comment installer Microsoft Defender pour endpoint pour Mac
 
@@ -72,17 +72,17 @@ Vous pouvez utiliser plusieurs méthodes et outils de déploiement pour installe
 - Outil en ligne de commande :
     - [Déploiement manuel](mac-install-manually.md)
 
-### <a name="system-requirements"></a>Configuration requise
+### <a name="system-requirements"></a>Configuration requise du système
 
 Les trois plus récentes publication majeures de macOS sont pris en charge.
 
 > [!IMPORTANT]
-> Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés dans les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
+> Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
 
 > [!IMPORTANT]
-> La prise en charge de macOS 10.13 (High Sierra) ne sera plus prise en charge le 15 février 2021.
+> La prise en charge de macOS 10.13 (High Sierra) n’est plus prise en charge depuis le 15 février 2021.
 
-- 11 (Big Sur), 10.15 (Vitesse), 10.14 (Mojave), 10.13 (High Sierra)
+- 11 (Big Sur), 10.15 (Domaine), 10.14 (Mojave)
 - Espace disque : 1 Go
 
 Les versions bêta de macOS ne sont pas pris en charge.
@@ -91,7 +91,7 @@ Après avoir activé le service, vous devrez peut-être configurer votre réseau
 
 ### <a name="licensing-requirements"></a>Critères de licence
 
-Microsoft Defender pour endpoint pour Mac nécessite l’une des offres de licence en volume Microsoft suivantes :
+Microsoft Defender pour Endpoint pour Mac nécessite l’une des offres de licence en volume Microsoft suivantes :
 
 - Microsoft 365 E5 (M365 E5)
 - Microsoft 365 E5 Sécurité
@@ -99,7 +99,7 @@ Microsoft Defender pour endpoint pour Mac nécessite l’une des offres de licen
 
 > [!NOTE]
 > Les utilisateurs titulaires d’une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus.
-> Microsoft Defender for Endpoint est également disponible à l’achat auprès d’un fournisseur de solutions Cloud (CSP). Lorsqu’elle est achetée via un programme CSP, elle ne nécessite pas d’offres de licence en volume Microsoft répertoriées.
+> Microsoft Defender pour le point de terminaison est également disponible à l’achat auprès d’un fournisseur de solutions Cloud (CSP). Lorsqu’elle est achetée via un programme CSP, elle ne nécessite pas d’offres de licence en volume Microsoft répertoriées.
 
 ### <a name="network-connections"></a>Connexions réseau
 
@@ -121,7 +121,7 @@ Si un proxy ou un pare-feu bloque le trafic anonyme, assurez-vous que le trafic 
 > [!WARNING]
 > Les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seuls pac, WPAD ou un proxy statique est utilisé.
 >
-> L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy pour transmettre directement les données de Microsoft Defender pour Endpoint pour Mac aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
+> L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy afin de transmettre directement les données de Microsoft Defender pour Endpoint pour Mac aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
 
 Pour vérifier qu’une connexion n’est pas bloquée, [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) ouvrez-la [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) et dans un navigateur.
 
@@ -147,7 +147,7 @@ mdatp connectivity test
 
 ## <a name="how-to-update-microsoft-defender-for-endpoint-for-mac"></a>Comment mettre à jour Microsoft Defender pour endpoint pour Mac
 
-Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités. Pour mettre à jour Microsoft Defender pour Endpoint pour Mac, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Pour plus d’informations, voir [Déployer les mises à jour de Microsoft Defender pour Endpoint pour Mac.](mac-updates.md)
+Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités. Pour mettre à jour Microsoft Defender pour endpoint pour Mac, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Pour plus d’informations, voir [Déployer les mises à jour de Microsoft Defender pour Endpoint pour Mac.](mac-updates.md)
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-for-mac"></a>Comment configurer Microsoft Defender pour endpoint pour Mac
 

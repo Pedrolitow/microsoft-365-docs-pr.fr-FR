@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes de performances de Microsoft Defender ATP pour Linux
+title: Résoudre les problèmes de performances pour Microsoft Defender ATP pour Linux
 description: Résolution des problèmes de performances dans Microsoft Defender ATP pour Linux.
 keywords: microsoft, defender, atp, linux, performances
 search.product: eADQiWindows 10XVcnh
@@ -18,19 +18,19 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5c64d16e0753fa87713f2a34583825234fb9c98c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dea52da1952c3fbde8951457caf44232e9d258b7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062486"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187732"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint pour Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -59,7 +59,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
 
     Si le problème de performances persiste alors que la protection en temps réel est éteinte, l’origine du problème peut être le composant de détection et de réponse du point de terminaison. Dans ce cas, contactez le support technique pour obtenir des instructions supplémentaires et des mesures de prévention.
 
-2. Pour rechercher les applications qui déclenchent le plus d’analyses, vous pouvez utiliser les statistiques en temps réel recueillies par Defender pour Endpoint pour Linux.
+2. Pour rechercher les applications qui déclenchent le plus grand nombre d’analyses, vous pouvez utiliser les statistiques en temps réel recueillies par Defender pour Endpoint pour Linux.
 
     > [!NOTE]
     > Cette fonctionnalité est disponible dans la version 100.90.70 ou une version plus récente.
@@ -140,7 +140,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     125  CrashPlanService 164
     ```
 
-    Pour améliorer les performances de Defender pour Endpoint pour Linux, recherchez celui qui a le plus grand nombre sous la ligne et ajoutez une `Total files scanned` exclusion pour celui-ci. Pour plus d’informations, voir [Configurer et valider des exclusions pour Defender pour Endpoint pour Linux.](linux-exclusions.md)
+    Pour améliorer les performances de Defender pour Endpoint pour Linux, recherchez celui qui a le plus grand nombre sous la ligne et ajoutez une `Total files scanned` exclusion pour celui-ci. Pour plus d’informations, voir Configurer et valider des [exclusions pour Defender pour Endpoint pour Linux.](linux-exclusions.md)
 
     >[!NOTE]
     > L’application stocke les statistiques en mémoire et suit uniquement l’activité des fichiers depuis son début et que la protection en temps réel a été activée. Les processus qui ont été lancés avant ou pendant les périodes où la protection en temps réel était hors programme ne sont pas comptabilisés. En outre, seuls les événements qui ont déclenché des analyses sont comptés.

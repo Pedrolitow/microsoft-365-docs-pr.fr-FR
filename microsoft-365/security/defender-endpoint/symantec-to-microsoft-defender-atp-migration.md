@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-symantecmigrate
 - m365solution-overview
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 35f1ce4bccbf2229106ef4b8417a44fe7c37cde5
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6517359c805bb449d075e401283a79a791461630
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183704"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198980"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>Migrer de Symantec vers Microsoft Defender pour le point de terminaison
 Si vous envisagez de passer de Symantec Endpoint Protection (Symantec) à [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender for Endpoint), vous êtes au bon endroit. Utilisez cet article comme guide.
@@ -38,7 +38,7 @@ Si vous envisagez de passer de Symantec Endpoint Protection (Symantec) à [Micro
 
 :::image type="content" source="images/symantec-mde-migration.png" alt-text="Vue d’ensemble de la migration de Symantec vers Defender pour endpoint":::
 
-Lorsque vous passez de Symantec à Defender pour point de terminaison, vous commencez par votre solution Symantec en mode actif, configurez Defender pour Endpoint en mode passif, intégré à Defender pour Endpoint, puis définissez Defender pour Point de terminaison sur le mode actif et supprimez Symantec.
+Lorsque vous passez de Symantec à Defender pour endpoint, vous commencez par votre solution Symantec en mode actif, configurez Defender pour Endpoint en mode passif, intégré à Defender pour Endpoint, puis définissez Defender pour Endpoint en mode actif et supprimez Symantec.
 
 ## <a name="the-migration-process"></a>Processus de migration
 
@@ -54,7 +54,7 @@ Lorsque vous passez de Symantec à Microsoft Defender pour le point de terminais
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Qu’est-ce qui est inclus dans Microsoft Defender pour le point de terminaison ?
 
-Dans ce guide de migration, nous [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) nous concentrons sur la nouvelle génération de [fonctionnalités](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) de protection et de détection de points de terminaison et de réponse comme point de départ pour passer à Microsoft Defender pour endpoint. Toutefois, Microsoft Defender pour point de terminaison inclut bien plus que la protection antivirus et de point de terminaison. Microsoft Defender pour point de terminaison est une plateforme de sécurité unifiée pour la protection préventive, la détection après effraction, l’examen automatisé et la réponse. Le tableau suivant récapitule les fonctionnalités de Microsoft Defender pour point de terminaison. 
+Dans ce guide de migration, nous [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) nous concentrons sur la nouvelle génération de [fonctionnalités](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) de protection et de détection de points de terminaison et de réponse comme point de départ pour passer à Microsoft Defender pour endpoint. Toutefois, Microsoft Defender pour point de terminaison inclut bien plus que la protection antivirus et de point de terminaison. Microsoft Defender pour point de terminaison est une plateforme de sécurité unifiée pour la protection préventive, la détection après effraction, l’examen automatisé et la réponse. Le tableau suivant récapitule les fonctionnalités de Microsoft Defender pour Point de terminaison. 
 
 | Fonctionnalité/fonctionnalité | Description |
 |---|---|
@@ -63,12 +63,12 @@ Dans ce guide de migration, nous [](https://docs.microsoft.com/microsoft-365/sec
 | [Protection nouvelle génération](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | La nouvelle génération de protection inclut l’Antivirus Microsoft Defender pour bloquer les menaces et les programmes malveillants. |
 | [Détection et réponse des points de terminaison](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | Les fonctionnalités de détection et de réponse des points de terminaison détectent, examinent et répondent aux tentatives d’intrusion et aux violations actives.  |
 | [Repérage avancé](advanced-hunting-overview.md) | Les fonctionnalités de recherche avancées permettent à votre équipe des opérations de sécurité de localiser des indicateurs et des entités de menaces connues ou potentielles. |
-| [Blocage et contenu comportementaux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | Les fonctionnalités de blocage du comportement et de blocage du contenu permettent d’identifier et d’arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. |
+| [Blocage et contenu comportementaux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | Les fonctionnalités de blocage du comportement et de contenu permettent d’identifier et d’arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. |
 | [Examen et correction automatisés](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | Les fonctionnalités d’examen et de réponse automatisées examinent les alertes et prennent des mesures correctives immédiates pour résoudre les violations. |
-| [Service de recherche de menaces](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (experts microsoft en matière de menaces) | Les services de recherche de menace fournissent aux équipes des opérations de sécurité une analyse et une surveillance de niveau expert, et pour vous assurer que les menaces critiques ne sont pas manquées. |
+| [Service de recherche de menaces](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (experts microsoft en matière de menaces) | Les services de recherche de menace fournissent aux équipes des opérations de sécurité une surveillance et une analyse de niveau expert, et pour vous assurer que les menaces critiques ne sont pas manquées. |
 
 **Vous souhaitez en savoir plus ? Voir [Microsoft Defender pour le point de terminaison.](https://docs.microsoft.com/windows/security/threat-protection)**
 
 ## <a name="next-step"></a>Étape suivante
 
-- Continuez à [préparer votre migration.](symantec-to-microsoft-defender-atp-prepare.md)
+- Procédez à [la préparation de votre migration.](symantec-to-microsoft-defender-atp-prepare.md)

@@ -1,6 +1,6 @@
 ---
 title: Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
-description: Les règles de réduction de la surface d’attaque peuvent aider à empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
+description: Les règles de réduction de la surface d’attaque peuvent empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
 keywords: Règles de réduction de la surface d’attaque, asr, hips, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, Microsoft Defender pour point de terminaison, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,13 @@ ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 62f1f5f2d47482f642f00c870b3e0f3112f5f639
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.topic: article
+ms.openlocfilehash: d88da04e91875e24b13478b17d6a1e3862e1062e
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185766"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197660"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
 
@@ -31,7 +32,6 @@ ms.locfileid: "51185766"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Pourquoi les règles de réduction de la surface d’attaque sont-elles importantes ?
 
 La surface d’attaque de votre organisation inclut tous les endroits où un attaquant peut compromettre les appareils ou les réseaux de votre organisation. Réduire votre surface d’attaque signifie protéger les appareils et le réseau de votre organisation, ce qui laisse aux attaquants moins de moyens d’effectuer des attaques. La configuration des règles de réduction de la surface d’attaque dans Microsoft Defender pour endpoint peut vous aider !
@@ -40,11 +40,11 @@ Les règles de réduction de la surface d’attaque ciblent certains comportemen
 
 - lancement de fichiers exécutables et de scripts qui tentent de télécharger ou d’exécuter des fichiers ;
 - Exécution de scripts obscurcis ou suspects ; et 
-- Des comportements que les applications n’initient généralement pas pendant le travail quotidien normal.
+- Comportement d’une application qui n’est généralement pas initiée pendant le travail quotidien normal.
 
 De tels comportements logiciels sont parfois observés dans les applications légitimes ; Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment abusés par des personnes malveillantes par le biais de programmes malveillants. Les règles de réduction de la surface d’attaque peuvent limiter les comportements à risque et contribuer à la sécurité de votre organisation.
 
-Pour plus d’informations sur la configuration des règles de réduction de la surface d’attaque, voir Activer les règles de [réduction de la surface d’attaque.](enable-attack-surface-reduction.md)
+Pour plus d’informations sur la configuration des règles de réduction de la surface d’attaque, voir Activer les règles de réduction [de la surface d’attaque.](enable-attack-surface-reduction.md)
 
 ## <a name="assess-rule-impact-before-deployment"></a>Évaluer l’impact des règles avant le déploiement  
 
@@ -52,7 +52,7 @@ Vous pouvez évaluer l’impact d’une règle de réduction de la surface d’a
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Contrôle de sécurité pour la règle de réduction de la surface d’attaque":::
 
-Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer le pourcentage de vos appareils qui peuvent accepter une nouvelle stratégie autorisant la règle en mode de blocage sans affecter la productivité.
+Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer quel pourcentage de vos appareils peuvent accepter une nouvelle stratégie permettant d’activer la règle en mode de blocage sans affecter la productivité.
 
 ## <a name="audit-mode-for-evaluation"></a>Mode audit pour l’évaluation
 
@@ -112,13 +112,13 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 - Windows Server, [version 1803 (canal semi-annuel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l’analyse et les flux de travail disponibles dans [Defender pour](microsoft-defender-endpoint.md)le point de terminaison, ainsi que les fonctionnalités de rapport et de configuration dans le Centre de sécurité [Microsoft 365](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center). Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3 ; toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux de l’Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
+Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l’analyse et les flux de travail disponibles dans [Defender](microsoft-defender-endpoint.md)pour le point de terminaison, ainsi que les fonctionnalités de rapports et de configuration dans le Centre de sécurité [Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3 . toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux de l’Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Passer en revue les événements de réduction de la surface d’attaque dans le Centre de sécurité Microsoft Defender
 
 Defender pour le point de terminaison fournit des rapports détaillés pour les événements et les blocages dans le cadre de scénarios d’investigation d’alerte.
 
-Vous pouvez interroger Defender pour obtenir des données de point de terminaison à l’aide [d’une recherche avancée.](advanced-hunting-query-language.md) Si vous exécutez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour comprendre l’impact des règles de réduction de la surface d’attaque sur votre environnement.
+Vous pouvez interroger Defender pour obtenir des données de point de terminaison à l’aide [d’une recherche avancée.](advanced-hunting-query-language.md) Si vous exécutez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour comprendre comment les règles de réduction de la surface d’attaque peuvent affecter votre environnement.
 
 Voici un exemple de requête :
 
@@ -214,7 +214,7 @@ Cette règle permet d’empêcher le vol d’informations d’identification en 
 LSASS authentifier les utilisateurs qui se connectent sur un ordinateur Windows. Microsoft Defender Credential Guard dans Windows 10 empêche normalement les tentatives d’extraction des informations d’identification de LSASS. Toutefois, certaines organisations ne peuvent pas activer Credential Guard sur tous leurs ordinateurs en raison de problèmes de compatibilité avec les pilotes de carte à puce personnalisés ou d’autres programmes chargés dans l’autorité de sécurité locale (LSA). Dans ce cas, les attaquants peuvent utiliser des outils de piratage tels que Mimikatz pour supprimer des mots de passe en texte clair et des hages NTLM à partir de LSASS.
 
 > [!NOTE]
-> Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais qui n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
+> Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
 
 Cette règle a été introduite dans :
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
@@ -251,7 +251,7 @@ GUID : `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 > La règle Bloquer **le contenu exécutable à** partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
 > - Intune (Profils de configuration) : exécution du contenu exécutable (exe, dll, ps, js, vbs, etc.) supprimé de la messagerie électronique (webmail/client de messagerie) (aucune exception).
 > - Gestionnaire de point de terminaison : bloquez le téléchargement de contenu exécutable à partir des clients de messagerie et de messagerie web.
-> - Stratégie de groupe : bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web.
+> - Stratégie de groupe : bloquer le contenu exécutable du client de messagerie et de la messagerie web.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance
 
@@ -336,7 +336,7 @@ GUID : `3B576869-A4EC-4529-8536-B80A7769E899`
 
 Cette règle bloque les tentatives d’injection de code à partir d’applications Office dans d’autres processus.
 
-Les personnes malveillantes peuvent tenter d’utiliser des applications Office pour migrer du code malveillant vers d’autres processus par injection de code, afin que le code puisse être masqué comme un processus propre.
+Les attaquants peuvent tenter d’utiliser des applications Office pour migrer du code malveillant vers d’autres processus par injection de code, afin que le code puisse être masqué comme un processus propre.
 
 Il n’existe pas d’objectifs commerciaux légitimes connus pour l’utilisation de l’injection de code.
 

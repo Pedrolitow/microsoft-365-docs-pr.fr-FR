@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0902dce0af3c101cbaf7ff526beb71e9f46a1bf4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 434c318be404ffb04cac7a05664c8f001bb46507
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187516"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198860"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 
@@ -46,7 +46,7 @@ Une licence Microsoft 365 E5, E5 Security, A5 ou A5 Security ou une combinaison 
 
 | Service pris en charge | Description |
 | ------ | ------ |
-| Microsoft Defender pour point de terminaison | Suite de protection des points de terminaison conçue autour de puissants capteurs comportementaux, d’analyse cloud et d’intelligence des menaces |
+| Microsoft Defender pour point de terminaison | Suite de protection des points de terminaison conçue autour de puissants capteurs comportementaux, d’analyses cloud et d’intelligence des menaces |
 |Microsoft Defender pour Office 365 | Protection avancée de vos applications et données dans Office 365, y compris la messagerie électronique et d’autres outils de collaboration |
 | Microsoft Defender pour Identity | Se défendre contre les menaces avancées, les identités compromises et les insiders malveillants à l’aide de signaux Active Directory corrélés |
 | Microsoft Cloud App Security | Identifier et lutter contre les cybermenaces au sein de vos services cloud Microsoft et tiers |
@@ -73,12 +73,12 @@ Le tableau ci-dessous répertorie la façon dont chaque service pris en charge f
 | Microsoft Cloud App Security | - Détection d’applications et de services cloud non locaux (shadow IT)<br />- Exposition des données aux applications cloud<br />- Activité contre les menaces associée aux applications cloud | Applications cloud |
 
 ## <a name="deploy-the-services"></a>Déployer les services
-Le déploiement de chaque service nécessite généralement un approvisionnement pour votre client et une configuration initiale. Consultez le tableau suivant pour comprendre comment chacun de ces services est déployé.
+Le déploiement de chaque service nécessite généralement l’approvisionnement de votre client et une configuration initiale. Consultez le tableau suivant pour comprendre comment chacun de ces services est déployé.
 
 | Service | Instructions d’approvisionnement | Configuration initiale |
 | ------ | ------ | ------ |
 | Microsoft Defender pour point de terminaison | [Guide de déploiement de Microsoft Defender for Endpoint](../defender-endpoint/deployment-phases.md) | *Voir les instructions d’approvisionnement* |
-|Microsoft Defender pour Office 365 | *Aucun, mise en service avec Office 365* | [Configurer les stratégies de Microsoft Defender pour Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) |
+|Microsoft Defender pour Office 365 | *Aucun, mise en service avec Office 365* | [Configurer les stratégies de Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 | Microsoft Defender pour Identity | [Démarrage rapide : créer votre instance De Microsoft Defender pour l’identité](/azure-advanced-threat-protection/install-atp-step1) | *Voir les instructions d’approvisionnement* |
 | Microsoft Cloud App Security | *Aucune* | [Démarrage rapide : mise en place de Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
 
@@ -89,6 +89,6 @@ Une fois que vous avez déployé les services pris en charge, [allumez Microsoft
 - [Présentation de Microsoft 365 Defender](microsoft-365-defender.md)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
 - [Vue d’ensemble de Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Présentation de Microsoft Defender pour Office 365](../defender-365-security/defender-for-office-365.md)
+- [Présentation de Microsoft Defender pour Office 365](../office-365-security/defender-for-office-365.md)
 - [Vue d’ensemble de Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
 - [Vue d’ensemble de Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)

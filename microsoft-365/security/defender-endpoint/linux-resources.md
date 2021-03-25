@@ -1,7 +1,7 @@
 ---
 title: Ressources Microsoft Defender ATP pour Linux
 ms.reviewer: ''
-description: Décrit les ressources de Microsoft Defender ATP pour Linux, notamment comment le désinstaller, comment collecter les journaux de diagnostic, les commandes CLI et les problèmes connus avec le produit.
+description: Décrit les ressources pour Microsoft Defender ATP pour Linux, notamment comment le désinstaller, comment collecter les journaux de diagnostic, les commandes CLI et les problèmes connus avec le produit.
 keywords: microsoft, defender, atp, linux, installation, déployer, désinstallation, casque, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08dd8a3ff5f0b55d7fec8decd41f1120ca05077a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7196053ffef3dffc3c737d0df26a5d12bdfe8a4c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065726"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187756"
 ---
 # <a name="resources"></a>Ressources
 
@@ -32,10 +32,10 @@ ms.locfileid: "51065726"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="collect-diagnostic-information"></a>Collecter des informations de diagnostic
 
@@ -53,7 +53,7 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
 
 2. Reproduisez le problème.
 
-3. Exécutez la commande suivante pour back up Defender for Endpoint’s logs. Les fichiers sont stockés dans une archive .zip.
+3. Exécutez la commande suivante pour enregistrer Defender pour les journaux du point de terminaison. Les fichiers sont stockés dans une archive .zip.
 
    ```bash
    sudo mdatp diagnostic create
@@ -76,7 +76,7 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
 
 ## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
 
-Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
+Si une erreur se produit pendant l’installation, le programme d’installation signale uniquement un échec général.
 
 Le journal détaillé sera enregistré dans `/var/log/microsoft/mdatp_install.log` . Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
 
@@ -86,8 +86,8 @@ Il existe plusieurs façons de désinstaller Defender pour Endpoint pour Linux. 
 
 ### <a name="manual-uninstallation"></a>Désinstallation manuelle
 
-- `sudo yum remove mdatp` pour RHEL et les variantes (CentOS et Oracle Linux).
-- `sudo zypper remove mdatp` pour SLES et les variantes.
+- `sudo yum remove mdatp` pour RHEL et ses variantes (CentOS et Oracle Linux).
+- `sudo zypper remove mdatp` pour SLES et variantes.
 - `sudo apt-get purge mdatp` pour les systèmes Ubuntu et Debian.
 
 ## <a name="configure-from-the-command-line"></a>Configurer à partir de la ligne de commande
@@ -127,7 +127,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Protection            |Faire une analyse rapide                                         |`mdatp scan quick`                                                     |
 |Protection            |Faire une analyse complète                                          |`mdatp scan full`                                                      |
 |Protection            |Annuler une analyse à la demande en cours                        |`mdatp scan cancel`                                                    |
-|Protection            |Demander une mise à jour des informations de sécurité                  |`mdatp definitions update`                                             |
+|Protection            |Demander une mise à jour de l’intelligence de la sécurité                  |`mdatp definitions update`                                             |
 |Historique de la protection    |Imprimer l’historique complet de la protection                       |`mdatp threat list`                                                    |
 |Historique de la protection    |Obtenir les détails sur les menaces                                      |`mdatp threat get --id [threat-id]`                                    |
 |Gestion de la mise en quarantaine |Liste de tous les fichiers mis en quarantaine                              |`mdatp threat quarantine list`                                         |

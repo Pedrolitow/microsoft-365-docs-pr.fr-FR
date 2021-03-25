@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 336f85b41884a441d0967c7f242b69c4d0e4941f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 37d31fe93a849871e7da92fff521b6a75beac531
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064113"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187636"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-for-mac"></a>Ressources pour Microsoft Defender pour point de terminaison pour Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -116,7 +116,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Protection   |Faire une analyse rapide                            |`mdatp scan quick`                                                                |
 |Protection   |Faire une analyse complète                             |`mdatp scan full`                                                                 |
 |Protection   |Annuler une analyse à la demande en cours           |`mdatp scan cancel`                                                               |
-|Protection   |Demander une mise à jour des informations de sécurité     |`mdatp definitions update`                                                        |
+|Protection   |Demander une mise à jour de l’intelligence de la sécurité     |`mdatp definitions update`                                                        |
 |EDR          |Ajouter une balise de groupe à l’appareil. Les balises EDR sont utilisées pour gérer les groupes d’appareils. Pour plus d’informations, visitez https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |Supprimer une balise de groupe de l’appareil               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |Ajouter un ID de groupe                               |`mdatp edr group-ids --group-id [group]`                                          |
@@ -152,7 +152,7 @@ Pour activer lacompletion automatique dans zsh :
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
-## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender for Endpoint
+## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender pour point de terminaison
 
 `/Library/Application Support/Microsoft/Defender/quarantine/` contient les fichiers mis en quarantaine par `mdatp` . Les fichiers sont nommés d’après l’threat trackingId. Le trackingIds actuel est affiché avec `mdatp threat list` .
 

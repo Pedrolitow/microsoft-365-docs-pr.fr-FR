@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: ad341de0d0aed45ff3bf734e3c933b423eac3353
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c51c002d263452142a1bcf6fc5603d6ec4ef4cf7
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056637"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197968"
 ---
 # <a name="device-profile-page"></a>Page de profil d’appareil
 
@@ -52,7 +52,7 @@ Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison
 
 La barre latérale répertorie le nom complet et le niveau d’exposition de l’appareil. Il fournit également des informations de base importantes dans les petites sous-sections qui peuvent être ouvertes ou fermées, telles que :
 
-* **Balises** : tout Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées à l’appareil. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
+* **Balises** : tout Microsoft Defender pour point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées à l’appareil. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
 * **Informations de sécurité** : ouvrir les incidents et les alertes actives. Les appareils inscrits dans Microsoft Defender pour le point de terminaison affichent également le niveau d’exposition et le niveau de risque.
 
 > [!TIP]
@@ -77,11 +77,11 @@ Les actions disponibles sur la page de profil d’appareil sont les suivantes :
 * **Gérer les balises** : met à jour les balises personnalisées que vous avez appliquées à cet appareil.
 * **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en le maintenant connecté à Microsoft Defender pour le point de terminaison. Vous pouvez choisir d’autoriser Outlook, Teams et Skype Entreprise à s’exécuter lorsque l’appareil est isolé, à des fins de communication.
 * **Centre de actions** : afficher l’état des actions envoyées. Disponible uniquement si une autre action a déjà été sélectionnée.
-* **Restreindre l’exécution** de l’application : empêche l’exécution des applications qui ne sont pas signées par Microsoft.
+* **Restreindre l’exécution de** l’application : empêche l’exécution des applications qui ne sont pas signées par Microsoft.
 * **Exécuter une analyse antivirus** : met à jour Windows Defender définitions antivirus et exécute immédiatement une analyse antivirus. Choisissez entre l’analyse rapide ou l’analyse complète.
 * **Collecter un package d’examen** : collecte des informations sur l’appareil. Une fois l’examen terminé, vous pouvez le télécharger.
 * **Lancer une session De réponse en** direct : charge un shell distant sur l’appareil pour des [enquêtes de sécurité approfondies.](/microsoft-365/security/defender-endpoint/live-response)
-* **Lancer une enquête automatisée** : examine et [remédie automatiquement aux menaces.](../defender-365-security/office-365-air.md) Bien que vous pouvez déclencher manuellement des enquêtes automatisées à partir de cette [page,](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) certaines stratégies d’alerte déclenchent elles-mêmes des enquêtes automatiques.
+* **Lancer une enquête automatisée** : examine et [remédie automatiquement aux menaces.](../office-365-security/office-365-air.md) Bien que vous pouvez déclencher manuellement des enquêtes automatisées à partir de cette [page,](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) certaines stratégies d’alerte déclenchent elles-mêmes des enquêtes automatiques.
 * **Centre de gestion** des actions : affiche des informations sur les actions de réponse en cours d’exécution.
 
 ## <a name="tabs-section"></a>Section Onglets
@@ -92,17 +92,17 @@ Les appareils inscrits dans Microsoft Defender pour le point de terminaison affi
 
 ### <a name="overview-tab"></a>Onglet Vue d’ensemble
 
-L’onglet par défaut est **Vue d’ensemble.** Il fournit un aperçu rapide des faits de sécurité les plus importants sur l’appareil.
+L’onglet par défaut est **Vue d’ensemble.** Il fournit un aperçu rapide des faits de sécurité les plus importants concernant l’appareil.
 
 ![Image de l’onglet Vue d’ensemble pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
-Ici, vous pouvez obtenir un aperçu rapide des alertes actives de l’appareil et des utilisateurs actuellement connectés.
+Ici, vous pouvez obtenir un aperçu rapide des alertes actives de l’appareil et de tous les utilisateurs actuellement connectés.
 
-Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison, vous verrez également le niveau de risque de l’appareil et toutes les données disponibles sur les évaluations de sécurité. Les évaluations de sécurité décrivent le niveau d’exposition de l’appareil, fournissent des recommandations en matière de sécurité et indiquent les logiciels concernés et les vulnérabilités découvertes.
+Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison, vous verrez également le niveau de risque de l’appareil et toutes les données disponibles sur les évaluations de sécurité. Les évaluations de sécurité décrivent le niveau d’exposition de l’appareil, fournissent des recommandations de sécurité et indiquent les logiciels concernés et les vulnérabilités découvertes.
 
 ### <a name="alerts-tab"></a>Onglet Alertes
 
-**L’onglet Alertes** contient une liste d’alertes qui ont été élevées sur l’appareil, à partir de Microsoft Defender pour l’identité et Microsoft Defender pour le point de terminaison.
+**L’onglet Alertes** contient une liste d’alertes qui ont été élevées sur l’appareil, à partir de Microsoft Defender pour l’identité et De Microsoft Defender pour le point de terminaison.
 
 ![Image de l’onglet Alertes pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
@@ -130,7 +130,7 @@ La sélection d’un élément dans cette liste ouvre un écran volant affichant
 
 La liste peut être filtrée par type d’événement spécifique ; par exemple, les événements du Registre ou les événements d’écran intelligent.
 
-La liste peut également être exportée vers un fichier CSV, pour téléchargement. Bien que le fichier ne soit pas limité par le nombre d’événements, la période maximale que vous pouvez choisir d’exporter est de sept jours.
+La liste peut également être exportée vers un fichier CSV, en téléchargement. Bien que le fichier ne soit pas limité par le nombre d’événements, la période maximale que vous pouvez choisir d’exporter est de sept jours.
 
 ### <a name="security-recommendations-tab"></a>Onglet Recommandations de sécurité
 
@@ -168,7 +168,7 @@ La sélection d’un élément dans cette liste ouvre un volant qui décrit la C
 
 ### <a name="missing-kbs"></a>Ko manquants
 
-**L’onglet Ko manquant répertorie** toutes les mises à jour Microsoft qui n’ont pas encore été appliquées à l’appareil. Les « ko » en question sont des articles de [la Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) de connaissances qui décrivent ces mises à jour . par exemple, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
+**L’onglet Ko manquant répertorie** toutes les mises à jour Microsoft qui n’ont pas encore été appliquées à l’appareil. Les « bases de connaissances » en question sont des articles de [la Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) de connaissances qui décrivent ces mises à jour . par exemple, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
 ![Image de l’onglet kbs manquant pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
 
@@ -183,4 +183,4 @@ La sélection d’un élément ouvre un volant qui relie la mise à jour.
 * [Vue d’ensemble de Microsoft 365 Defender](microsoft-365-defender.md)
 * [Activer Microsoft 365 Defender](m365d-enable.md)
 * [Examiner les entités sur les appareils, à l’aide d’une réponse en direct](../defender-endpoint/live-response.md)
-* [Examen et réponse automatisés (AIR) dans Office 365](../defender-365-security/office-365-air.md)
+* [Examen et réponse automatisés (AIR) dans Office 365](../office-365-security/office-365-air.md)

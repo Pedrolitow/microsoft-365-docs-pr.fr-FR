@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 339944b94ca55c5d73fafaabfe3f7bc26dafe7bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a9f3873db4f85cec3f5f1a400dcfb7930c6a4faa
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063678"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187540"
 ---
 # <a name="respond-to-web-threats"></a>Répondre aux menaces web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
@@ -43,7 +43,7 @@ Microsoft Defender pour le point de terminaison génère les [alertes suivantes]
 Chaque alerte fournit les informations suivantes : 
 - Appareil qui a tenté d’accéder au site web bloqué
 - Application ou programme utilisé pour envoyer la demande web
-- URL ou URL malveillante dans la liste d’indicateurs personnalisés
+- URL ou URL malveillante dans la liste des indicateurs personnalisés
 - Actions recommandées pour les répondeurs
 
 ![Image d’une alerte liée à la protection contre les menaces web](images/wtp-alert.png)
@@ -68,7 +68,7 @@ Vous pouvez également vérifier l’appareil qui a tenté d’accéder à une U
 
 ## <a name="web-browser-and-windows-notifications-for-end-users"></a>Navigateur web et notifications Windows pour les utilisateurs finaux
 
-Avec la protection web dans Microsoft Defender pour le point de terminaison, vos utilisateurs finaux ne pourront pas visiter des sites web malveillants ou indésirables à l’aide de Microsoft Edge ou d’autres navigateurs. Étant donné que le blocage est effectué par la [protection](network-protection.md)réseau, une erreur générique s’est produite à partir du navigateur web. Ils voient également une notification de Windows.
+Avec la protection web dans Microsoft Defender pour point de terminaison, vos utilisateurs finaux ne pourront pas visiter des sites web malveillants ou indésirables à l’aide de Microsoft Edge ou d’autres navigateurs. Étant donné que le blocage est effectué par la [protection](network-protection.md)réseau, une erreur générique s’est produite à partir du navigateur web. Ils voient également une notification de Windows.
 
 ![Image de Microsoft Edge montrant une erreur 403 et la menace web de notification Windows ](images/wtp-browser-blocking-page.png)
  *bloquée sur Microsoft Edge*
