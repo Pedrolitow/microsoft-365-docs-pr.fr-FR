@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/02/2021
-ms.openlocfilehash: c11d9cd1ce4c2ca49315ec62b51c23ef981555f4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b66640736e9dc3835919e39d482b2d38b0c9dcc7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067326"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183680"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
@@ -38,7 +38,7 @@ Avec Microsoft Defender pour le [](automated-investigations.md) point de termina
 
 ## <a name="new-unified-investigation-page"></a>(NOUVEAU!) Page Examen unifié
 
-La page d’examen a récemment été mise à jour pour inclure des informations sur vos appareils, votre courrier électronique et le contenu de collaboration. La nouvelle page d’enquête unifiée définit un langage commun et fournit une expérience unifiée pour les enquêtes automatiques dans Microsoft Defender pour [Endpoint](microsoft-defender-advanced-threat-protection.md) et [Microsoft Defender pour Office 365.](/microsoft-365/security/defender-365-security/office-365-atp) 
+La page d’examen a récemment été mise à jour pour inclure des informations sur vos appareils, votre courrier électronique et le contenu de collaboration. La nouvelle page d’enquête unifiée définit un langage commun et fournit une expérience unifiée pour les enquêtes automatiques dans Microsoft Defender pour [Endpoint](microsoft-defender-endpoint.md) et [Microsoft Defender pour Office 365.](/microsoft-365/security/defender-365-security/office-365-atp) 
 
 > [!TIP]
 > Pour en savoir plus sur ce qui change, voir [(NOUVEAU!) Page d’examen unifié](/microsoft-365/security/mtp/mtp-autoir-results).

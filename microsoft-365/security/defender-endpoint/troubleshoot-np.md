@@ -15,12 +15,12 @@ ms.date: 01/26/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 165c17bc820403ebfbbe5cdfe3ca856e8416c593
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 34bebddcf052a643529f1d2b8a8a869a0ffe4a91
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066041"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183817"
 ---
 # <a name="troubleshoot-network-protection"></a>Résoudre les problèmes de protection du réseau
 
@@ -28,10 +28,10 @@ ms.locfileid: "51066041"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 Lorsque vous utilisez [la protection réseau,](network-protection.md) vous pouvez rencontrer des problèmes, tels que :
@@ -71,7 +71,7 @@ Vous pouvez activer la protection réseau en mode audit, puis visiter un site we
 
 3. [Consultez les journaux des événements](network-protection.md#review-network-protection-events-in-windows-event-viewer) de protection réseau pour voir si la fonctionnalité aurait bloqué la connexion si elle avait été définie **sur Activé.**
    
-   Si la protection réseau ne bloque pas une connexion que vous attendez qu’elle bloque, activez la fonctionnalité.
+   Si la protection du réseau ne bloque pas une connexion que vous attendez qu’elle bloque, activez la fonctionnalité.
 
    ```PowerShell
    Set-MpPreference -EnableNetworkProtection Enabled
@@ -109,5 +109,5 @@ Lorsque vous signalez un problème avec la protection du réseau, vous êtes inv
 
 - [Protection du réseau](network-protection.md)
 - [Évaluer la protection du réseau](evaluate-network-protection.md)
-- [Activer la protection du réseau](enable-network-protection.md)
+- [Activer la protection réseau](enable-network-protection.md)
 - [Corriger les faux positifs/négatifs dans Defender pour le point de terminaison](defender-endpoint-false-positives-negatives.md)

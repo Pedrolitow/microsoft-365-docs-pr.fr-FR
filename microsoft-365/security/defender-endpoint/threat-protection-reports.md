@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 104548314b8ef0ceb15d8d2683dad552233a509f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4ecd2df31e1e03da5134d3d4180dcba75d3cee26
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064870"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183836"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Rapport sur la protection contre les menaces dans Microsoft Defender pour le point de terminaison
 
@@ -29,11 +29,11 @@ ms.locfileid: "51064870"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 Le rapport sur la protection contre les menaces fournit des informations de haut niveau sur les alertes générées dans votre organisation. Le rapport inclut des informations de tendance montrant les sources de détection, les catégories, les gravités, les états, les classifications et les déterminations des alertes dans le temps.
 
@@ -72,7 +72,7 @@ Le rapport est composé de cartes qui affichent les attributs d’alerte suivant
 
 - **Sources de détection**: affiche des informations sur les capteurs et les technologies de détection qui fournissent les données utilisées par Microsoft Defender pour le point de terminaison pour déclencher des alertes.
 
-- **Catégories de menaces**: affiche les types de menace ou d’activité d’attaque qui ont déclenché des alertes, indiquant les zones de focus possibles pour vos opérations de sécurité.
+- **Catégories de menaces**: indique les types d’activité de menace ou d’attaque qui ont déclenché des alertes, indiquant les zones de focus possibles pour vos opérations de sécurité.
 
 - **Gravité :** indique le niveau de gravité des alertes, indiquant l’impact potentiel des menaces collectives sur votre organisation et le niveau de réponse nécessaire pour les résoudre.
 

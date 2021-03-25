@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 27f2c7eb01a857ec38b11797c0703710c02ac1bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62525548be777a3187cea5ed4be622ac9d42079b
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068761"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183816"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Résoudre les problèmes de réponse en direct de Microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -63,11 +63,11 @@ Si, lors d’une tentative d’action au cours d’une session de réponse en di
 
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>Sessions de réponse en direct lentes ou retards pendant les connexions initiales
 Live Response tire parti de Defender pour l’inscription du capteur de point de terminaison avec le service WNS dans Windows. Si vous avez des problèmes de connectivité avec la réponse en direct, confirmez les détails suivants :
-1. `notify.windows.com` n’est pas bloqué dans votre environnement. Pour plus d’informations, voir Configurer [les paramètres de proxy d’appareil et de connectivité Internet.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+1. `notify.windows.com` n’est pas bloqué dans votre environnement. Pour plus d’informations, voir [configurer les paramètres de proxy](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)d’appareil et de connectivité Internet.
 2. WpnService (service système de notifications Push Windows) n’est pas désactivé.
 
 Reportez-vous aux articles ci-dessous pour bien comprendre le comportement et les exigences du service WpnService :
 - [Vue d’ensemble Notification Services Windows Push (WNS)](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Configurations de pare-feu et de proxy d’entreprise pour prendre en charge le trafic WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Configurations du pare-feu d’entreprise et du proxy pour prendre en charge le trafic WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Plages IP publiques MPNS (Microsoft Push Notifications Service)](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

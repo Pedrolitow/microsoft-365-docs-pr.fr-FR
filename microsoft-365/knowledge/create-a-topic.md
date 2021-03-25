@@ -14,26 +14,26 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 6a182556c68a472145f9d4eac69c8915653a67df
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: c1f7b67bb49aff8d6656798d80636d9de5858877
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994593"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165836"
 ---
-# <a name="create-a-new-topic"></a>Création d’un projet 
+# <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Créer une rubrique dans rubriques microsoft
 
-Dans Rubriques de Topics, vous pouvez créer une rubrique si aucune rubrique n’est découverte via l’indexation ou si la technologie d’IA n’a pas trouvé suffisamment de preuves pour l’établir en tant que sujet.
+Dans Rubriques de Topics, vous pouvez créer une rubrique si une rubrique n’est pas découverte par le biais de l’indexation ou si la technologie d’IA n’a pas trouvé suffisamment de preuves pour l’établir en tant que rubrique.
 
 > [!Note] 
 > Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations sur les personnes dans une rubrique créée manuellement sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher la rubrique. 
 
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour créer une rubrique, vous devez :
 - Vous avez une licence Topics.
-- Avoir des autorisations [**sur Qui peut créer ou modifier des rubriques**](./topic-experiences-user-permissions.md). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres d’autorisations de la rubrique Rubriques. 
+- Avoir des autorisations [**sur qui peut créer ou modifier des rubriques**](./topic-experiences-user-permissions.md). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres des rubriques Topics. 
 
 > [!Note] 
 > Les utilisateurs qui sont autorisés à gérer des rubriques dans le centre de rubriques (gestionnaires de connaissances) sont déjà autorisés à créer et modifier des rubriques.
@@ -83,11 +83,11 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
     > Les fichiers et les pages que vous ajoutez doivent se trouver dans le même client Microsoft 365. Si vous souhaitez ajouter un lien vers une ressource externe dans la rubrique, vous pouvez l’ajouter via l’icône de zone de dessin à l’étape 8.
 
 
-6.  La section <b>Sites associés</b> présente les sites qui ont des informations sur cette rubrique. 
+6.  La section <b>Sites associés</b> présente les sites qui ont des informations sur la rubrique. 
 
     ![Section Sites associés](../media/knowledge-management/related-sites.png)</br>
 
-    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
+    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site, ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
     
     ![Sélectionner un site](../media/knowledge-management/sites.png)</br>
 
@@ -121,7 +121,7 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
 
 9. Sélectionnez **Publier** pour enregistrer vos modifications. 
 
-Une fois que vous avez publié la page, le nom de la rubrique, l’autre nom, la description et les personnes épinglées s’affichent à tous les utilisateurs sous licence qui affichent la rubrique. Des fichiers, des pages et des sites spécifiques apparaissent uniquement sur la page de rubrique si la visionneuse dispose des autorisations Office 365 sur l’élément. 
+Une fois que vous avez publié la page, le nom de la rubrique, l’autre nom, la description et les personnes épinglées s’affichent à tous les utilisateurs sous licence qui affichent la rubrique. Des fichiers, des pages et des sites spécifiques apparaissent uniquement sur la page de rubrique si la visionneuse dispose d’autorisations Office 365 sur l’élément. 
 
 
 

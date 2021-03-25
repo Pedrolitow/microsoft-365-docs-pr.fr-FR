@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Étapes de migration des services AD FS (Active Directory Federation Services) pour la migration à partir de Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918905"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165656"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Étapes de migration AD FS pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -37,7 +37,7 @@ Pour préparer votre batterie de serveurs AD FS pour la migration à partir de M
 1. En suivant ces étapes, vous pouvez également back up your AD FS settings, including the existing Microsoft Cloud Deutschland Relying Party [trust.](#backup) Nommez la **sauvegarde MicrosoftCloudDeueulandOnly** pour indiquer qu’elle ne possède que les informations du client Microsoft Cloud Deutschland.
 
    > [!NOTE]
-   > La sauvegarde contient non seulement l’confiance de partie de confiance Office 365 existante pour Microsoft Cloud Deutschland, mais également toutes les autres confiances de partie de confiance présentes sur la batterie AD FS respective.
+   > La sauvegarde contient non seulement l’confiance de partie de confiance Office 365 existante pour Microsoft Cloud Deutschland, mais également toutes les autres confiances de partie de confiance présentes sur la batterie de serveurs AD FS respective.
 
 2. Testez la restauration à l’aide de la sauvegarde MicrosoftCloudDeueulandOnly, la batterie AD FS doit continuer à fonctionner en tant que Microsoft Cloud Deutschland uniquement.
 
@@ -59,22 +59,34 @@ Une fois que vous avez terminé et testé la sauvegarde AD FS, effectuez les ét
 
 8. For AD FS 2012: On the **Choose Issuance Authorization Rules**, keep Allow all users to access this **relying party** selected and click **Next**.
 
-8. Pour AD FS 2016 et AD FS 2019 : dans la **page** Choisir la stratégie de contrôle d’accès, sélectionnez la stratégie de contrôle d’accès appropriée, puis cliquez sur **Suivant**. Si aucune n’est choisie, l’confiance de la partie de confiance **ne fonctionne pas.**
+9. Pour AD FS 2016 et AD FS 2019 : dans la **page** Choisir la stratégie de contrôle d’accès, sélectionnez la stratégie de contrôle d’accès appropriée, puis cliquez sur **Suivant**. Si aucune n’est choisie, l’confiance de la partie de confiance **ne fonctionne** pas.
 
-9. Cliquez **sur Suivant** dans la page Prêt à ajouter **une** confiance pour terminer l’Assistant.
+10. Cliquez **sur Suivant** dans la page Prêt à ajouter **une** confiance pour terminer l’Assistant.
 
-10. Cliquez **sur Fermer** sur la page Terminer. 
+11. Cliquez **sur Fermer** sur la page Terminer. 
 
 En fermant l’Assistant, l’confiance de partie de confiance avec le service global Office 365 est établie. Toutefois, aucune règle de transformation d’émission n’est encore configurée.
 
 Vous pouvez utiliser [l’aide AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) pour générer les règles de transformation d’émission correctes. Les règles de revendication générées créées avec l’aide d’AD FS peuvent être ajoutées manuellement via la console de gestion AD FS ou avec PowerShell. L’aide des AD FS génère les scripts PowerShell nécessaires à l’exécution.  
 
 > [!NOTE]
-> [L’aide des AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) génère les règles de transformation d’émission standard qui sont générées avec le produit. Toutefois, si des règles de transformation d’émission personnalisées sont en place dans l’trust de partie de confiance Microsoft Cloud Deutschland (par exemple, les UR d’émetteur personnalisés, les ID non standard immuables ou toute autre personnalisation), les règles générées par AD FS doivent être modifiées de manière à ce qu’elles correspondent à la logique personnalisée actuellement en place pour l’confiance de partie de confiance Microsoft Cloud Deutschland. Si ces personnalisations ne sont pas intégrées aux règles générées via l’aide [d’AD FS,](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)l’authentification à **Microsoft Office 365 Identity Platform WorldWide** ne fonctionne probablement pas pour vos identités fédérées. 
+> [L’aide des AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) génère les règles de transformation d’émission standard qui sont générées avec le produit. Toutefois, si des règles de transformation d’émission personnalisées sont en place dans l’trust de partie de confiance Microsoft Cloud Deutschland (par exemple, les UR d’émetteur personnalisés, les ID non standard immuables ou toute autre personnalisation), les règles générées par AD FS doivent être modifiées de manière à ce qu’elles correspondent à la logique personnalisée actuellement en place pour l’confiance de partie de confiance Microsoft Cloud Deutschland. Si ces personnalisations ne sont pas intégrées aux règles générées via l’aide [AD FS,](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)l’authentification à **Microsoft Office 365 Identity Platform WorldWide** ne fonctionne probablement pas pour vos identités fédérées. 
 
-1. Exécutez **l’aide Générer** des revendications [sur AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) et copiez le script PowerShell à l’aide de l’option  Copier dans le coin supérieur droit du script.
+1. Exécutez **l’aide** Générer des revendications [sur AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) et copiez le script PowerShell à l’aide de l’option  Copier dans le coin supérieur droit du script.
 
-2. Suivez les étapes décrites dans l’aide [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) sur la façon d’exécuter le script PowerShell dans votre batterie de serveurs AD FS pour générer l’confiance de partie de confiance globale.
+2. Suivez les étapes décrites dans l’aide [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) sur la façon d’exécuter le script PowerShell dans votre batterie de serveurs AD FS pour générer l’confiance de partie de confiance globale. Avant d’exécuter le script, remplacez les lignes de code suivantes dans le script généré, comme indiqué ci-dessous :
+
+   ```powershell
+   # AD FS Help generated value
+   $claims = Get-AdfsRelyingPartyTrust -Identifier $(Get-RpIdentifier) | Select-Object IssuanceTransformRules;
+   # replace with
+   $claims = Get-AdfsRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline | Select-Object IssuanceTransformRules;
+
+   # AD FS Help generated value
+   Set-AdfsRelyingPartyTrust -TargetIdentifier $(Get-RpIdentifier) -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   # replace with
+   Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   ```
 
 3. Vérifiez que deux règles PartyTtrust de confiance sont présentes ; un pour Microsoft Cloud Deutschland et un pour le service global Office 365. La commande suivante peut être mise à profit pour la vérification. Elle doit renvoyer deux lignes, ainsi que les noms et identificateurs respectifs.
 
@@ -86,9 +98,7 @@ Vous pouvez utiliser [l’aide AD FS](https://adfshelp.microsoft.com/AadTrustCla
 
 5. Pendant la migration de votre client, vérifiez régulièrement que l’authentification AD FS fonctionne avec Microsoft Cloud Deutschland et le cloud global Microsoft dans les différentes étapes de migration prises en charge.
 
-
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>Récupération d’urgence AD FS (base de données WID)
-
 
 Pour restaurer la batterie de serveurs AD FS en cas d’urgence, l’outil de restauration rapide [AD FS](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) doit être utilisé. Par conséquent, l’outil doit être téléchargé et avant le début de la migration, une sauvegarde doit être créée et stockée en toute sécurité. Dans cet exemple, les commandes suivantes ont été exécutés pour la back up d’une batterie de serveurs s’exécutant sur une base de données WID :
 
@@ -112,7 +122,6 @@ Pour restaurer la batterie de serveurs AD FS en cas d’urgence, l’outil de re
 
 4. Stockez la sauvegarde en toute sécurité sur la destination souhaitée.
 
-
 ### <a name="restore-an-ad-fs-farm"></a>Restaurer une batterie de serveurs AD FS
 
 Si votre batterie de serveurs a complètement échoué et qu’il n’existe aucun moyen de revenir à l’ancienne batterie de serveurs, faites ce qui suit. 
@@ -126,7 +135,6 @@ Si votre batterie de serveurs a complètement échoué et qu’il n’existe auc
    ```
 
 3. Pointez vos nouveaux enregistrements DNS ou équilibreur de charge vers les nouveaux serveurs AD FS.
-
 
 ## <a name="more-information"></a>Informations supplémentaires
 

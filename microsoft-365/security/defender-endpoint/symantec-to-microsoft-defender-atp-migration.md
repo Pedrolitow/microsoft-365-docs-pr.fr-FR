@@ -22,21 +22,21 @@ ms.topic: conceptual
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6cab09547501da9b533c49b7096389e13dbf1f87
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35f1ce4bccbf2229106ef4b8417a44fe7c37cde5
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056688"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183704"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>Migrer de Symantec vers Microsoft Defender pour le point de terminaison
 Si vous envisagez de passer de Symantec Endpoint Protection (Symantec) à [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender for Endpoint), vous êtes au bon endroit. Utilisez cet article comme guide.
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-:::image type="content" source="images/symantec-mde-migration.png" alt-text="Vue d’ensemble de la migration de Symantec vers Defender pour Endpoint":::
+:::image type="content" source="images/symantec-mde-migration.png" alt-text="Vue d’ensemble de la migration de Symantec vers Defender pour endpoint":::
 
 Lorsque vous passez de Symantec à Defender pour point de terminaison, vous commencez par votre solution Symantec en mode actif, configurez Defender pour Endpoint en mode passif, intégré à Defender pour Endpoint, puis définissez Defender pour Point de terminaison sur le mode actif et supprimez Symantec.
 
@@ -49,12 +49,12 @@ Lorsque vous passez de Symantec à Microsoft Defender pour le point de terminais
 |Phase |Description |
 |--|--|
 |[Préparer votre migration](symantec-to-microsoft-defender-atp-prepare.md) |Pendant la phase **de** préparation, vous obtenez Microsoft Defender pour le point de terminaison, planifiez vos rôles et autorisations et accordez l’accès au Centre de sécurité Microsoft Defender. Vous configurez également les paramètres proxy et Internet de votre appareil pour permettre la communication entre les appareils de votre organisation et Microsoft Defender pour le point de terminaison. |
-|[Configurer Microsoft Defender pour le point de terminaison](symantec-to-microsoft-defender-atp-setup.md) |Pendant la phase **d’installation,** vous configurez les paramètres et les exclusions pour l’Antivirus Microsoft Defender, Microsoft Defender pour le point de terminaison et Symantec Endpoint Protection. Vous créez également des groupes d’appareils, des collections et des unités d’organisation. Enfin, vous configurez vos stratégies anti-programme malveillant et vos paramètres de protection en temps réel.|
+|[Configurer Microsoft Defender pour le point de terminaison](symantec-to-microsoft-defender-atp-setup.md) |Pendant la phase **d’installation,** vous configurez les paramètres et les exclusions pour l’Antivirus Microsoft Defender, Microsoft Defender pour le point de terminaison et Symantec Endpoint Protection. Vous créez également des groupes d’appareils, des collections et des unités d’organisation. Enfin, vous configurez vos stratégies de logiciel anti-programme malveillant et vos paramètres de protection en temps réel.|
 |[Intégration à Microsoft Defender pour le point de terminaison](symantec-to-microsoft-defender-atp-onboard.md) |Pendant  la phase d’intégration, vous intégrerez vos appareils à Microsoft Defender pour le point de terminaison et vérifiez que ces appareils communiquent avec Microsoft Defender pour Endpoint. Enfin, vous désinstallez Symantec et assurez-vous que la protection via Microsoft Defender for Endpoint est en mode actif. |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Qu’est-ce qui est inclus dans Microsoft Defender pour le point de terminaison ?
 
-Dans ce guide de migration, nous [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) nous concentrons sur les fonctionnalités de détection et de réponse des points de terminaison et de [protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) nouvelle génération comme point de départ pour passer à Microsoft Defender pour endpoint. Toutefois, Microsoft Defender pour point de terminaison inclut bien plus que la protection antivirus et de point de terminaison. Microsoft Defender pour point de terminaison est une plateforme de sécurité unifiée pour la protection préventive, la détection après effraction, l’examen automatisé et la réponse. Le tableau suivant récapitule les fonctionnalités de Microsoft Defender pour point de terminaison. 
+Dans ce guide de migration, nous [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) nous concentrons sur la nouvelle génération de [fonctionnalités](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) de protection et de détection de points de terminaison et de réponse comme point de départ pour passer à Microsoft Defender pour endpoint. Toutefois, Microsoft Defender pour point de terminaison inclut bien plus que la protection antivirus et de point de terminaison. Microsoft Defender pour point de terminaison est une plateforme de sécurité unifiée pour la protection préventive, la détection après effraction, l’examen automatisé et la réponse. Le tableau suivant récapitule les fonctionnalités de Microsoft Defender pour point de terminaison. 
 
 | Fonctionnalité/fonctionnalité | Description |
 |---|---|
@@ -71,4 +71,4 @@ Dans ce guide de migration, nous [](https://docs.microsoft.com/microsoft-365/sec
 
 ## <a name="next-step"></a>Étape suivante
 
-- Procédez à [la préparation de votre migration.](symantec-to-microsoft-defender-atp-prepare.md)
+- Continuez à [préparer votre migration.](symantec-to-microsoft-defender-atp-prepare.md)
