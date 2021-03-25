@@ -1,0 +1,57 @@
+---
+title: Table DeviceTvmSoftwareVulnerabilitiesKB dans le schéma de repérage avancé
+description: Découvrez les vulnérabilités logicielles suivies par la fonction Gestion des menaces et des vulnérabilités dans la table DeviceTvmSoftwareVulnerabilitiesKB du schéma de repérage avancé.
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, CVSS, DeviceTvmSoftwareVulnerabilitiesKBB
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: dolmont
+author: DulceMontemayor
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: 772a287097f0b204eb329d066cdd81c4eef7a755
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51062886"
+---
+# <a name="devicetvmsoftwarevulnerabilitieskb"></a>DeviceTvmSoftwareVulnerabilitiesKB 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+
+[!include[Prerelease information](../../includes/prerelease.md)]
+
+La table `DeviceTvmSoftwareVulnerabilitiesKB` du schéma de repérage avancé contient la liste des vulnérabilités pour lesquelles la fonction [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md) évalue les appareils. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
+
+Pour plus d’informations sur les autres tables du schéma de repérage avancé, consultez [la référence de repérage avancé](advanced-hunting-schema-reference.md).
+
+| Nom de colonne | Type de données | Description |
+|-------------|-----------|-------------|
+| `CveId` | string | Identificateur unique affecté à la vulnérabilité de sécurité dans le système Common Vulnerabilities and Exposures (CVE) |
+| `CvssScore` | string | Score de gravité attribué à la vulnérabilité de sécurité dans le cadre du système Common Vulnerability Scoring System (CVSS) |
+| `IsExploitAvailable` | booléen | Indique si un code d’exploitation pour la vulnérabilité est disponible publiquement |
+| `VulnerabilitySeverityLevel` | string | Niveau de gravité affecté à la vulnérabilité de sécurité sur la base du score CVSS et des facteurs dynamiques influencés par le paysage des menaces |
+| `LastModifiedTime` | DateHeure | Date et heure de la dernière modification de l’élément ou des métadonnées associées |
+| `PublishedDate` | DateHeure | La vulnérabilité de la date a été divulguée au public |
+| `VulnerabilityDescription` | string | Description de la vulnérabilité et risques associés |
+| `AffectedSoftware` | string | Liste de tous les produits logiciels concernés par la vulnérabilité |
+
+## <a name="related-topics"></a>Sujets associés
+
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
+- [Apprendre le langage de requête](advanced-hunting-query-language.md)
+- [Comprendre le schéma](advanced-hunting-schema-reference.md)
+- [Présentation de la fonction Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
