@@ -1,0 +1,117 @@
+---
+title: Obtenir des informations pertinentes sur une entité avec go hunt
+description: Découvrez comment utiliser l’outil de recherche pour rapidement interroger des informations pertinentes sur une entité ou un événement à l’aide d’une recherche avancée.
+keywords: recherche avancée, incident, tableau croisé dynamique, entité, rechercher, événements pertinents, recherche de menaces, recherche, requête, télémétrie, Protection Microsoft contre les menaces
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: v-maave
+author: martyav
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: 4fe3c204fe49f008cf5d9dd18b5066fa91dc6196
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51067953"
+---
+# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Recherche rapide des informations sur l’entité ou les événements avec la recherche de go
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**S’applique à :**
+- [Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+
+
+Avec *l’action de recherche* go, vous pouvez rapidement examiner les événements et différents types d’entités à l’aide de puissantes fonctionnalités de recherche avancée [basées](advanced-hunting-overview.md) sur des requêtes. Cette action exécute automatiquement une requête de recherche avancée pour rechercher des informations pertinentes sur l’événement ou l’entité sélectionné.
+
+*L’action de recherche* est disponible dans différentes sections du centre de sécurité chaque fois que les détails de l’événement ou de l’entité sont affichés. Par exemple, vous pouvez utiliser *la recherche dans* les sections suivantes :
+
+- Dans la [page Incident,](investigate-incidents.md)vous pouvez consulter les détails sur les utilisateurs, les appareils et de nombreuses autres entités associées à un incident. Lorsque vous sélectionnez une entité, vous obtenez des informations supplémentaires ainsi que diverses actions que vous pouvez prendre sur cette entité. Dans l’exemple ci-dessous, un appareil est sélectionné, affichant des détails sur l’appareil, ainsi que l’option de recherche d’informations supplémentaires sur l’appareil.
+
+    ![Image montrant les détails de l’appareil avec l’option aller à la recherche](./images/go-hunt-device.png)
+
+- Dans la page incident, vous pouvez également accéder à une liste d’entités sous l’onglet Preuve. La sélection de l’une de ces entités permet de trouver rapidement des informations sur cette entité.
+
+    ![Image montrant l’URL sélectionnée avec l’option Aller à la recherche dans l’onglet Preuves](./images/go-hunt-evidence-url.png)
+
+- Lorsque vous affichez la chronologie d’un appareil, vous pouvez sélectionner un événement dans la chronologie pour afficher des informations supplémentaires sur cet événement. Une fois qu’un événement est sélectionné, vous avez la possibilité de chercher d’autres événements pertinents dans le hunting avancé.
+
+    ![Image montrant les détails de l’événement avec l’option aller à la recherche](./images/go-hunt-event.png)
+
+La sélection **de la** fonction De recherche ou de recherche pour les événements connexes transmet différentes requêtes, selon que vous avez sélectionné une entité ou un événement. 
+
+## <a name="query-for-entity-information"></a>Requête d’informations sur l’entité
+
+Lorsque vous utilisez *go hunt* to query for information about a user, device, or any other type of entity, the query checks all relevant schema tables for any events involving that entity. Pour que les résultats restent gérables, la requête est limitée à la même période que l’activité la plus tôt au cours des 30 derniers jours qui implique l’entité et est associée à l’incident.
+
+Voici un exemple de requête go hunt pour un appareil :
+
+```kusto
+let selectedTimestamp = datetime(2020-06-02T02:06:47.1167157Z);
+let deviceName = "fv-az770.example.com";
+let deviceId = "device-guid";
+search in (DeviceLogonEvents, DeviceProcessEvents, DeviceNetworkEvents, DeviceFileEvents, DeviceRegistryEvents, DeviceImageLoadEvents, DeviceEvents, DeviceImageLoadEvents, IdentityLogonEvents, IdentityQueryEvents)
+Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
+and DeviceName == deviceName
+// or RemoteDeviceName == deviceName
+// or DeviceId == deviceId
+| take 100
+```
+
+### <a name="supported-entity-types"></a>Types d’entités pris en charge
+
+Vous pouvez utiliser *la recherche après* avoir sélectionné l’un des types d’entités ci-après :
+
+- Fichiers
+- Utilisateurs
+- Appareils
+- Adresses IP
+- URL
+
+## <a name="query-for-event-information"></a>Requête d’informations sur les événements
+
+Lorsque vous *utilisez go hunt* to query pour obtenir des informations sur un événement de chronologie, la requête vérifie toutes les tables de schéma pertinentes pour les autres événements à l’heure de l’événement sélectionné. Par exemple, la requête suivante répertorie les événements dans différentes tables de schéma qui se sont produits autour de la même période sur le même appareil :
+
+```kusto
+// List relevant events 30 minutes before and after selected RegistryValueSet event
+let selectedEventTimestamp = datetime(2020-10-06T21:40:25.3466868Z);
+search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents, DeviceLogonEvents)
+    Timestamp between ((selectedEventTimestamp - 30m) .. (selectedEventTimestamp + 30m))
+    and DeviceId == "a305b52049c4658ec63ae8b55becfe5954c654a4"
+| sort by Timestamp desc
+| extend Relevance = iff(Timestamp == selectedEventTimestamp, "Selected event", iff(Timestamp < selectedEventTimestamp, "Earlier event", "Later event"))
+| project-reorder Relevance
+```
+
+## <a name="adjust-the-query"></a>Ajuster la requête
+
+Avec une certaine connaissance du langage [de requête,](advanced-hunting-query-language.md)vous pouvez ajuster la requête à votre préférence. Par exemple, vous pouvez ajuster cette ligne, qui détermine la taille de la fenêtre de temps :
+
+```kusto
+Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
+```
+
+En plus de modifier la requête pour obtenir des résultats plus pertinents, vous pouvez également :
+
+- [Afficher les résultats en tant que graphiques](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
+- [Créer une règle de détection personnalisée](custom-detection-rules.md)
+
+## <a name="related-topics"></a>Voir aussi
+
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
+- [Apprendre le langage de requête](advanced-hunting-query-language.md)
+- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
+- [Règles de détection personnalisée](custom-detection-rules.md)
