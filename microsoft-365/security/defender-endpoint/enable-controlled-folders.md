@@ -14,12 +14,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a35c18d805ef3645659f49b8340cbb4cabab2f8d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165068"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218759"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -29,7 +29,7 @@ ms.locfileid: "51165068"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [L’accès contrôlé aux dossiers](controlled-folders.md) vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers est inclus dans Windows 10 et Windows Server 2019.
 
@@ -141,4 +141,4 @@ Permet `Disabled` de désactiver la fonctionnalité.
 
 * [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md)
 * [Personnaliser l’accès contrôlé aux dossiers](customize-controlled-folders.md)
-* [Évaluer Microsoft Defender pour le point de terminaison](evaluate-atp.md)
+* [Évaluer Microsoft Defender pour le point de terminaison](evaluate-mde.md)
