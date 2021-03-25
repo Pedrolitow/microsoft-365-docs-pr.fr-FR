@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Protégez vos données et courriers électroniques d’entreprise contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 4bc465af99f02edf91dacceaae14d39b3156e103
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9d24381b5947049c506b19553a2ab3d77b95d7c8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052421"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200316"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 tâches principales pour les équipes de sécurité pour prendre en charge le travail à domicile
 
@@ -64,7 +64,7 @@ Avant de commencer, vérifiez votre score de sécurité [Microsoft 365](./defend
 
 La meilleure chose que vous pouvez faire pour améliorer la sécurité pour les employés qui travaillent à domicile consiste à activer l’mfmf. Si vous n’avez pas encore de processus en place, traitez-le comme un pilote d’urgence et assurez-vous que les personnes du support sont prêtes à aider les employés bloqués. Comme vous ne pouvez probablement pas distribuer de périphériques de sécurité matériels, utilisez la biométrie Windows Hello et les applications d’authentification de smartphone telles que Microsoft Authenticator.
 
-Normalement, Microsoft vous recommande d’accorder aux utilisateurs 14 jours pour inscrire leur appareil pour l’authentification multifacteur avant d’exiger l’authentification multifacteur. Toutefois, si votre personnel travaille soudainement à partir de chez vous, allez de l’avant et exigez l' mba comme priorité de sécurité et soyez prêt à aider les utilisateurs qui en ont besoin.
+Normalement, Microsoft vous recommande d’accorder aux utilisateurs 14 jours pour inscrire leur appareil pour l’authentification multifacteur avant d’exiger l’authentification multifacteur. Toutefois, si votre personnel travaille soudainement à domicile, allez de l’avant et exigez l’mfmf comme priorité de sécurité et soyez prêt à aider les utilisateurs qui en ont besoin.
 
 L’application de ces stratégies ne prendra que quelques minutes, mais soyez prêt à prendre en charge vos utilisateurs au cours des prochains jours.
 
@@ -74,7 +74,7 @@ L’application de ces stratégies ne prendra que quelques minutes, mais soyez p
 |---|---|
 |Plans Microsoft 365 (sans Azure AD P1 ou P2)|[Activer les paramètres de sécurité par défaut dans Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). La sécurité par défaut d’Azure AD inclut l’authentification multifacteur pour les utilisateurs et les administrateurs.|
 |Microsoft 365 E3 (avec Azure AD P1)|Utilisez les [Stratégies d’accès conditionnel courantes](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br/>- [Exiger l’authentification multifacteur pour les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Bloquer l’authentification héritée](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (avec Azure AD P2)|Pour tirer parti de la protection d’identité Azure AD Identity Protection, commencez à implémenter la [série recommandée concernant l’accès conditionnel et les stratégies associées](./defender-365-security/identity-access-policies.md) en créant les deux stratégies suivantes :<br/> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](./defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Bloquer les clients ne prenant pas en charge l’authentification moderne](./defender-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [Les utilisateurs à risque élevé doivent modifier leur mot de passe](./defender-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (avec Azure AD P2)|Pour tirer parti de la protection d’identité Azure AD Identity Protection, commencez à implémenter la [série recommandée concernant l’accès conditionnel et les stratégies associées](./office-365-security/identity-access-policies.md) en créant les deux stratégies suivantes :<br/> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Bloquer les clients ne prenant pas en charge l’authentification moderne](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [Les utilisateurs à risque élevé doivent modifier leur mot de passe](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## <a name="2-protect-against-threats"></a>2 : se protéger contre les menaces
@@ -86,7 +86,7 @@ Tous les plans Microsoft 365 incluent une variété de fonctionnalités de prote
 - Protection anti-hameçonnage
 - Protection anti-courrier indésirable
 
-Pour obtenir des conseils, voir Protéger contre les menaces dans [Office 365,](defender-365-security/protect-against-threats.md) que vous pouvez utiliser comme point de départ.
+Pour obtenir des conseils, voir Protéger contre les menaces dans [Office 365,](office-365-security/protect-against-threats.md) que vous pouvez utiliser comme point de départ.
 
 ## <a name="3-configure-microsoft-defender-for-office-365"></a>3 : Configurer Microsoft Defender pour Office 365
 
@@ -98,17 +98,17 @@ Microsoft Defender pour Office 365 :
 - Protège votre organisation lorsque les utilisateurs collaborent et partagent des fichiers, en identifiant et en bloquant les fichiers malveillants dans les sites d’équipe et les bibliothèques de documents.
 - Applique des modèles d’apprentissage automatique et des algorithmes avancés de détection de l’emprunt d’identité pour éviter les attaques par hameçonnage.
 
-Pour obtenir une vue d’ensemble, y compris un résumé des plans, voir [Defender pour Office 365.](./defender-365-security/defender-for-office-365.md)
+Pour obtenir une vue d’ensemble, y compris un résumé des plans, voir [Defender pour Office 365.](./office-365-security/defender-for-office-365.md)
 
 Votre administrateur général peut configurer ces protections :
 
-- [Configuration des stratégies de liens fiables](defender-365-security/set-up-safe-links-policies.md)
-- [Configurer les paramètres globaux pour les liens sécurisés](defender-365-security/configure-global-settings-for-safe-links.md)
-- [Définir des stratégies de pièces jointes fiables](defender-365-security/set-up-safe-attachments-policies.md)
+- [Configuration des stratégies de liens fiables](office-365-security/set-up-safe-links-policies.md)
+- [Configurer les paramètres globaux pour les liens sécurisés](office-365-security/configure-global-settings-for-safe-links.md)
+- [Définir des stratégies de pièces jointes fiables](office-365-security/set-up-safe-attachments-policies.md)
 
 Vous devez travailler avec votre administrateur Exchange Online et votre administrateur SharePoint Online pour configurer Defender pour Office 365 pour ces charges de travail :
 
-- [ATP pour SharePoint, OneDrive et Microsoft Teams](defender-365-security/mdo-for-spo-odb-and-teams.md)
+- [ATP pour SharePoint, OneDrive et Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4 : Configurer Microsoft Defender pour l’identité
 
@@ -116,9 +116,9 @@ Vous devez travailler avec votre administrateur Exchange Online et votre adminis
 
 - Voir [Microsoft Defender for Identity Quickstarts](/azure-advanced-threat-protection/install-atp-step1) pour obtenir rapidement une installation
 - Regarder [la vidéo : Présentation de Microsoft Defender pour l’identité](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- Passer en [revue les trois phases du déploiement de Microsoft Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp#whats-next)
+- Passer en [revue les trois phases du déploiement de Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="5-turn-on-microsoft-365-defender"></a>5 : Activer Microsoft 365 Defender
+## <a name="5-turn-on-microsoft-365-defender"></a>5 : activer Microsoft 365 Defender
 
 Maintenant que Microsoft Defender pour Office 365 et Microsoft Defender pour l’identité sont configurés, vous pouvez afficher les signaux combinés de ces fonctionnalités dans un tableau de bord. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) regroupe les alertes, les incidents, les enquêtes et réponses automatisées, ainsi que la recherche avancée sur les charges de travail (Microsoft Defender pour l’identité, Defender pour Office 365, Microsoft Defender pour endpoint et Microsoft Cloud App Security) dans un seul volet sur [security.microsoft.com](https://security.microsoft.com).
 
@@ -141,21 +141,21 @@ Les stratégies de protection des applications incluent de nombreux paramètres.
 
 Mieux encore, Microsoft coordonne cette infrastructure de protection des applications avec un ensemble d’accès conditionnel et de stratégies connexes que nous recommandons à toutes les organisations d’utiliser comme point de départ. Si vous avez implémenté l' mba à l’aide des instructions de cet article, vous êtes à mi-chemin !
 
-Pour configurer la protection des applications mobiles, utilisez les instructions des stratégies communes d’accès aux identités [et aux appareils](./defender-365-security/identity-access-policies.md):
+Pour configurer la protection des applications mobiles, utilisez les instructions des stratégies communes d’accès aux identités [et aux appareils](./office-365-security/identity-access-policies.md):
 
- 1. Utilisez les [instructions d’application des stratégies de protection des](./defender-365-security/identity-access-policies.md#apply-app-data-protection-policies) données APP pour créer des stratégies pour iOS et Android. Le niveau 2 (protection améliorée des données) est recommandé pour la protection de référence.
- 2. Créez une règle d’accès conditionnel pour [exiger les applications approuvées et la protection des applications.](./defender-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)
+ 1. Utilisez les [instructions d’application des stratégies de protection des](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) données APP pour créer des stratégies pour iOS et Android. Le niveau 2 (protection améliorée des données) est recommandé pour la protection de référence.
+ 2. Créez une règle d’accès conditionnel pour [exiger les applications approuvées et la protection des applications.](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)
 
-## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7 : Configurer l' approbation de l’ment MFA et l’accès conditionnel pour les invités, y compris la protection des applications mobiles Intune
+## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7 : Configurer l’achème de pertinence et l’accès conditionnel pour les invités, y compris la protection des applications mobiles Intune
 
 Ensuite, nous allons nous assurer que vous pouvez continuer à collaborer et à travailler avec des invités. Si vous utilisez le plan Microsoft 365 E3 et que vous avez implémenté l’mfmf pour tous les utilisateurs, vous êtes prêt.
 
 Si vous utilisez l’offre Microsoft 365 E5 et que vous tirez parti d’Azure Identity Protection pour l’ation MFA basée sur les risques, vous devez effectuer quelques ajustements (car Azure AD Identity Protection ne s’étend pas aux invités) :
 
-- Créez une règle d’accès conditionnel pour exiger l' approbation de la MFA toujours pour les invités et les utilisateurs externes.
+- Créez une règle d’accès conditionnel pour exiger l' approbation de mfa toujours pour les invités et les utilisateurs externes.
 - Mettez à jour la règle d’accès conditionnel MFA basée sur les risques pour exclure les invités et les utilisateurs externes.
 
-Utilisez les instructions de [mise](./defender-365-security/identity-access-policies-guest-access.md) à jour des stratégies courantes pour autoriser et protéger l’accès invité et externe afin de comprendre le fonctionnement de l’accès invité avec Azure AD et de mettre à jour les stratégies affectées.
+Utilisez les instructions de [mise](./office-365-security/identity-access-policies-guest-access.md) à jour des stratégies courantes pour autoriser et protéger l’accès invité et externe afin de comprendre le fonctionnement de l’accès invité avec Azure AD et de mettre à jour les stratégies affectées.
 
 Les stratégies de protection des applications mobiles Intune que vous avez créées, ainsi que la règle d’accès conditionnel pour exiger des applications approuvées et la protection des applications, s’appliquent aux comptes invités et vous aideront à protéger les données de votre organisation.
 
@@ -173,16 +173,16 @@ Vous pouvez également tirer parti des didacticiels suivants :
 - [Utiliser Autopilot pour inscrire des appareils Windows dans Intune](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [Utiliser les fonctionnalités d’inscription d’appareils d’entreprise d’Apple dans Apple Business Manager (ABM) pour inscrire des appareils iOS/iPadOS dans Intune](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
-Après avoir inscrit des appareils, utilisez les instructions des stratégies communes d’accès aux identités et aux appareils [pour](./defender-365-security/identity-access-policies.md) créer ces stratégies :
+Après avoir inscrit des appareils, utilisez les instructions des stratégies communes d’accès aux identités et aux appareils [pour](./office-365-security/identity-access-policies.md) créer ces stratégies :
 
-- [Définir des stratégies de conformité des](./defender-365-security/identity-access-policies.md#define-device-compliance-policies) appareils : les paramètres recommandés pour Windows 10 incluent l’obligation d’une protection antivirus. Si vous avez Microsoft 365 E5, utilisez Microsoft Defender pour le point de terminaison pour surveiller l’état d’état des appareils des employés. Assurez-vous que les stratégies de conformité pour les autres systèmes d’exploitation incluent la protection antivirus et les logiciels de protection de point de fin.
-- [Exiger des PC conformes](./defender-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) : il s’agit de la règle d’accès conditionnel dans Azure AD qui applique les stratégies de conformité des appareils.
+- [Définir des stratégies de conformité](./office-365-security/identity-access-policies.md#define-device-compliance-policies) des appareils : les paramètres recommandés pour Windows 10 incluent l’obligation d’une protection antivirus. Si vous avez Microsoft 365 E5, utilisez Microsoft Defender pour le point de terminaison pour surveiller l’état d’état des appareils des employés. Assurez-vous que les stratégies de conformité pour les autres systèmes d’exploitation incluent la protection antivirus et les logiciels de protection de point de fin.
+- [Exiger des PC conformes](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) : il s’agit de la règle d’accès conditionnel dans Azure AD qui applique les stratégies de conformité des appareils.
 
-Une seule organisation peut gérer un appareil, donc n’oubliez pas d’exclure les comptes invités de la règle d’accès conditionnel dans Azure AD. Si vous n’excluez pas les utilisateurs invités et externes des stratégies qui nécessitent la conformité des appareils, ces stratégies bloqueront ces utilisateurs. Pour plus d’informations, voir Mise à jour des stratégies courantes [pour autoriser et protéger l’accès invité et externe.](./defender-365-security/identity-access-policies-guest-access.md)
+Une seule organisation peut gérer un appareil, donc n’oubliez pas d’exclure les comptes invités de la règle d’accès conditionnel dans Azure AD. Si vous n’excluez pas les utilisateurs invités et externes des stratégies qui nécessitent la conformité des appareils, ces stratégies bloqueront ces utilisateurs. Pour plus d’informations, voir Mise à jour des stratégies courantes [pour autoriser et protéger l’accès invité et externe.](./office-365-security/identity-access-policies-guest-access.md)
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9 : optimiser votre réseau pour la connectivité cloud
 
-Si vous permetz rapidement à la plupart de vos employés de travailler à partir de leur domicile, ce changement soudain de modèles de connectivité peut avoir un impact significatif sur l’infrastructure réseau de l’entreprise. De nombreux réseaux ont été mis à l’échelle et conçus avant l’adoption des services cloud. Dans de nombreux cas, les réseaux sont à tolérance de travailleurs à distance, mais n’ont pas été conçus pour être utilisés à distance par tous les utilisateurs simultanément.
+Si vous activez rapidement la plupart de vos employés à travailler à partir de leur domicile, ce changement soudain de modèles de connectivité peut avoir un impact significatif sur l’infrastructure réseau de l’entreprise. De nombreux réseaux ont été mis à l’échelle et conçus avant l’adoption des services cloud. Dans de nombreux cas, les réseaux sont à tolérance de travailleurs à distance, mais n’ont pas été conçus pour être utilisés à distance par tous les utilisateurs simultanément.
 
 Les éléments réseau tels que les constructeurs VPN, les équipements de sortie du réseau central (tels que les proxies et les périphériques de protection contre la perte de données), la bande passante Internet centrale, les circuits MPLS de backhaul, la fonctionnalité NAT, etc., sont soudainement mis sous une pression considérable en raison de la charge de toute l’entreprise qui les utilise. Le résultat final est une baisse des performances et de la productivité associée à une expérience utilisateur médiocre pour les utilisateurs qui s’adaptent au travail à domicile.
 

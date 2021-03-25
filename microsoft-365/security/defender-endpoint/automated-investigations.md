@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: d2effb44c145a4fbf1006446685dbcd703754e6e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7143a360fb7093f94c6f66373587e1c895dd3213
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166208"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200304"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des examens automatisés
 
@@ -41,7 +41,7 @@ Vous voulez voir comment cela fonctionne ? Regardez la vidéo suivante : <br/><b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
-La technologie utilisée dans les enquêtes automatisées utilise différents algorithmes d’inspection et repose sur des processus utilisés par les analystes de sécurité. Les fonctionnalités AIR sont conçues pour examiner les alertes et prendre des mesures immédiates pour résoudre les violations. Les fonctionnalités AIR réduisent considérablement le volume d’alertes, ce qui permet aux opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Toutes les actions de correction, qu’elles soient en attente ou terminées, sont suivis dans le centre [de correction.](auto-investigation-action-center.md) Dans le centre de traitement des actions, les actions en attente sont approuvées (ou rejetées) et les actions terminées peuvent être annulées si nécessaire.
+La technologie utilisée dans les enquêtes automatisées utilise différents algorithmes d’inspection et repose sur des processus utilisés par les analystes de sécurité. Les fonctionnalités AIR sont conçues pour examiner les alertes et prendre des mesures immédiates pour résoudre les violations. Les fonctionnalités AIR réduisent considérablement le volume d’alertes, ce qui permet aux opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Toutes les actions de correction, en attente ou terminées, sont suivis dans le centre [de correction.](auto-investigation-action-center.md) Dans le centre de traitement des actions, les actions en attente sont approuvées (ou rejetées) et les actions terminées peuvent être annulées si nécessaire.
 
 Cet article fournit une vue d’ensemble d’AIR et inclut des liens vers les étapes suivantes et des ressources supplémentaires.
 
@@ -54,14 +54,14 @@ Une enquête automatisée peut commencer lorsqu’une alerte est déclenchée ou
 
 |Situation  |Action exécutée  |
 |---------|---------|
-|Une alerte est déclenchée     | En règle générale, un examen automatisé démarre [lorsqu’une](review-alerts.md) alerte est déclenchée et qu’un [incident](view-incidents-queue.md) est créé. Par exemple, supposons qu’un fichier malveillant réside sur un appareil. Lorsque ce fichier est détecté, une alerte est déclenchée et un incident est créé. Un processus d’examen automatisé commence sur l’appareil. Comme d’autres alertes sont générées en raison du même fichier sur d’autres appareils, elles sont ajoutées à l’incident associé et à l’examen automatisé.         |
+|Une alerte est déclenchée     | En règle générale, une enquête automatisée démarre [lorsqu’une](review-alerts.md) alerte est déclenchée et qu’un [incident](view-incidents-queue.md) est créé. Par exemple, supposons qu’un fichier malveillant réside sur un appareil. Lorsque ce fichier est détecté, une alerte est déclenchée et un incident est créé. Un processus d’examen automatisé commence sur l’appareil. Comme d’autres alertes sont générées en raison du même fichier sur d’autres appareils, elles sont ajoutées à l’incident associé et à l’examen automatisé.         |
 |Une enquête est démarrée manuellement     | Une enquête automatisée peut être lancée manuellement par votre équipe des opérations de sécurité. Par exemple, supposons qu’un opérateur de sécurité examine une liste d’appareils et remarque qu’un appareil présente un niveau de risque élevé. L’opérateur de sécurité peut sélectionner l’appareil dans la liste pour ouvrir son volant, puis sélectionner **Lancer une enquête automatisée.** |
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>Comment un examen automatisé étend son étendue
 
-Pendant l’exécution d’un examen, toutes les autres alertes générées à partir de l’appareil sont ajoutées à un examen automatisé en cours jusqu’à ce que l’examen soit terminé. En outre, si la même menace est vue sur d’autres appareils, ces appareils sont ajoutés à l’examen.
+Pendant l’exécution d’un examen, toutes les autres alertes générées à partir de l’appareil sont ajoutées à un examen automatisé en cours jusqu’à ce que l’enquête soit terminée. En outre, si la même menace est vue sur d’autres appareils, ces appareils sont ajoutés à l’examen.
 
-Si une entité incriminée est vue dans un autre appareil, le processus d’examen automatisé étend son étendue pour inclure cet appareil et un manuel de sécurité général démarre sur cet appareil. Si au moins 10 appareils sont trouvés au cours de ce processus d’expansion à partir de la même entité, cette action d’expansion nécessite une approbation et est visible sous l’onglet **Actions** en attente.
+Si une entité incriminée est vue dans un autre appareil, le processus d’examen automatisé étend son étendue pour inclure cet appareil, et un manuel de sécurité général démarre sur cet appareil. Si au moins 10 appareils sont trouvés au cours de ce processus d’expansion à partir de la même entité, cette action d’expansion nécessite une approbation et est visible sous l’onglet **Actions** en attente.
 
 ## <a name="how-threats-are-remediated"></a>Comment les menaces sont corrigés
 
@@ -74,7 +74,7 @@ Lorsque des alertes sont déclenchées et qu’une enquête automatisée s’ex�
 
 Selon le niveau [d’automatisation](automation-levels.md) définie pour votre organisation, ainsi que d’autres paramètres de sécurité, des actions de correction peuvent se produire automatiquement ou uniquement après approbation par votre équipe des opérations de sécurité. Les paramètres de sécurité supplémentaires pouvant affecter la correction automatique incluent la protection contre les [applications potentiellement](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) indésirables (PUA). 
 
-Toutes les actions de correction, qu’elles soient en attente ou terminées, sont suivis dans le centre [de correction.](auto-investigation-action-center.md) Si nécessaire, votre équipe des opérations de sécurité peut annuler une action de correction. Pour plus d’informations, voir [Examiner et approuver les actions de correction à la suite d’un examen automatisé.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)
+Toutes les actions de correction, en attente ou terminées, sont suivis dans le centre [de correction.](auto-investigation-action-center.md) Si nécessaire, votre équipe des opérations de sécurité peut annuler une action de correction. Pour plus d’informations, voir [Examiner et approuver les actions de correction à la suite d’un examen automatisé.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
 > [!TIP]
 > Consultez la nouvelle page d’examen unifié dans le Centre de sécurité Microsoft 365. Pour en savoir plus, [voir (NOUVEAU!) Page d’examen unifié](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
@@ -94,10 +94,10 @@ Actuellement, AIR prend uniquement en charge les versions de système d’exploi
 
 - [En savoir plus sur les niveaux d’automatisation](automation-levels.md)
 - [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
-- [Configurer des fonctionnalités automatisées d’examen et de correction dans Microsoft Defender pour endpoint](configure-automated-investigations-remediation.md)
+- [Configurer les fonctionnalités automatisées d’examen et de correction dans Microsoft Defender pour le point de terminaison](configure-automated-investigations-remediation.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Protection PUA](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Examen et réponse automatisés dans Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-air)
+- [Examen et réponse automatisés dans Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
 - [Examen et réponse automatisés dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
