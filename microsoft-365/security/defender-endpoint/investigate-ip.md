@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: ca7f5e9126ffd57f7e858210e006bc05459d567b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 003abd854e34bb5a9a05f675313ba6c4f6ce1d71
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062606"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186040"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner une adresse IP associée à une alerte Microsoft Defender pour le point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "51062606"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -42,7 +42,7 @@ Examinez les communications possibles entre vos appareils et les adresses IP ext
 
 L’identification de tous les appareils de l’organisation ayant communiqué avec une adresse IP malveillante suspectée ou connue, telle que les serveurs de commande et de contrôle (C2), permet de déterminer l’étendue potentielle de la violation, des fichiers associés et des appareils infectés.
 
-Vous trouverez des informations dans les sections suivantes dans l’affichage des adresses IP :
+Vous trouverez des informations dans les sections suivantes dans l’affichage d’adresse IP :
 
 - IP dans le monde entier
 - Noms DNS inversés
@@ -56,7 +56,7 @@ La section Détails de l’adresse IP affiche les attributs de l’adresse IP, t
 
 ## <a name="alerts-related-to-this-ip"></a>Alertes associées à cette adresse IP
 
-Les **alertes associées à cette** section IP fournissent une liste des alertes associées à l’adresse IP.
+Les **alertes associées à cette** section IP fournissent une liste d’alertes associées à l’adresse IP.
 
 ## <a name="ip-in-organization"></a>IP dans l’organisation
 
@@ -87,7 +87,7 @@ En cliquant sur l’un des noms d’appareils, vous pouvez continuer à examiner
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Afficher et organiser la file d’attente des alertes de Microsoft Defender pour les points de terminaison](alerts-queue.md)
+- [Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)
 - [Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison](investigate-files.md)

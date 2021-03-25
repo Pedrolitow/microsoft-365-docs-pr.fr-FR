@@ -18,19 +18,19 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ddbbe73008e3168a82de02d39e9a7079f5c74da
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e4e10ba82ec344449b003c0a9cc9d27d99047005
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060944"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186244"
 ---
 # <a name="overview-of-attack-surface-reduction"></a>Vue d’ensemble de la réduction de la surface d’attaque
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -52,4 +52,4 @@ Article | Description
 [Protection web](./web-protection-overview.md) | Sécurisation de vos appareils contre les menaces web et régularisation du contenu indésirable.
 [Accès contrôlé aux dossiers](./controlled-folders.md) | Empêcher les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système clés (nécessite l’Antivirus Microsoft Defender)
 [Pare-feu réseau](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security.md) | Empêcher le trafic non autorisé de circuler vers ou depuis les appareils de votre organisation avec le filtrage du trafic réseau double.
-[FAQ sur la réduction de la surface d’attaque](./attack-surface-reduction-faq.md) | Questions fréquemment posées sur les règles de réduction de la surface d’attaque, les licences, etc.
+[FAQ sur la réduction de la surface d’attaque](./attack-surface-reduction-faq.md) | Questions fréquemment posées sur les règles de réduction de la surface d’attaque, la gestion des licences, etc.

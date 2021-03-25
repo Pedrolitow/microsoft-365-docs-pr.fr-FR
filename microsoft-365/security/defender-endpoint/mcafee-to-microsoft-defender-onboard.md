@@ -22,17 +22,17 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 54130848867c4fa6830f475712a08e226add9361
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 77ce0edc5b81bd54653c2aea0a32f4e358e75ebe
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068537"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185622"
 ---
 # <a name="migrate-from-mcafee---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Migrer à partir de Mc Antivirus - Phase 3 : intégration à Microsoft Defender pour le point de terminaison
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -71,12 +71,12 @@ Les méthodes de déploiement varient en fonction du système d’exploitation s
 
 ## <a name="run-a-detection-test"></a>Exécuter un test de détection
 
-Pour vérifier que vos appareils intégrés sont correctement connectés à Microsoft Defender pour le point de terminaison, vous pouvez exécuter un test de détection.
+Pour vérifier que vos appareils intégrés sont correctement connectés à Microsoft Defender pour endpoint, vous pouvez exécuter un test de détection.
 
 
 |Système d’exploitation  |Aide  |
 |---------|---------|
-|- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, version 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |Voir [Exécuter un test de détection.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test) <br/><br/>Visitez le site des scénarios de démonstration de Microsoft Defender for Endpoint () et [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) essayez un ou plusieurs des scénarios. Par exemple, essayez le scénario de démonstration **de la protection** cloud.         |
+|- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, version 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |Voir [Exécuter un test de détection.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test) <br/><br/>Visitez le site des scénarios de démonstration de Microsoft Defender for Endpoint () et [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) essayez un ou plusieurs des scénarios. Par exemple, essayez le scénario de démonstration **de la protection** livrée par le cloud.         |
 |macOS<br/>- 10.15 (Caserline)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Téléchargez et utilisez l’application CASER sur [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <br/><br/>Pour plus d’informations, [voir Microsoft Defender ATP pour Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)        |
 |Linux :<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS ou un LTS supérieur<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Exécutez la commande suivante et recherchez le résultat **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Ouvrez une fenêtre Terminal et exécutez la commande suivante : <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Exécutez la commande suivante pour lister les menaces détectées : <br/>`mdatp threat list`. <br/><br/>Pour plus d’informations, [voir Microsoft Defender ATP pour Linux.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux) |
 
@@ -88,7 +88,7 @@ Pour obtenir de l’aide sur cette étape, go to your Mc Antivirus ServicePortal
 
 ## <a name="make-sure-microsoft-defender-for-endpoint-is-in-active-mode"></a>Assurez-vous que Microsoft Defender pour le point de terminaison est en mode actif
 
-Maintenant que vous avez désinstallé Mc Antivirus, l’étape suivante consiste à vous assurer que l’Antivirus Microsoft Defender et la détection et la réponse des points de terminaison sont activés et en mode actif.
+Maintenant que vous avez désinstallé Mc Antivirus, l’étape suivante consiste à vous assurer que la détection et la réponse de l’Antivirus Microsoft Defender et du point de terminaison sont activées et en mode actif.
 
 Pour ce faire, visitez le site de démonstration de Microsoft Defender for Endpoint ( [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) ). Essayez un ou plusieurs scénarios de démonstration sur cette page, y compris au moins les scénarios suivants :
 - Protection cloud

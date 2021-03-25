@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ce7b15a727ddfa9b0d2bc68b7901f2e79aaf0721
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 84d85b723d4dcbdfc07a074c40241242c57bc390
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064961"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185586"
 ---
 # <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender pour point de terminaison pour Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -43,7 +43,7 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>Comment installer Microsoft Defender pour endpoint pour Linux
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>Conditions préalables
 
 - Accès au portail Centre de sécurité Microsoft Defender
 - Distribution Linux à l’aide [du gestionnaire système](https://systemd.io/)
@@ -83,7 +83,7 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
   > L’exécution de Defender pour Endpoint pour Linux côte à côte avec d’autres solutions de sécurité basées sur `fanotify` n’est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris l’arrêt du système d’exploitation.
 
 - Espace disque : 1 Go
-- La solution fournit actuellement une protection en temps réel pour les types de système de fichiers suivants :
+- La solution offre actuellement une protection en temps réel pour les types de système de fichiers suivants :
 
   - `btrfs`
   - `ecryptfs`

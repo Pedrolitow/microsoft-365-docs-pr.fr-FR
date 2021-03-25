@@ -1,6 +1,6 @@
 ---
 title: Basculer vers Microsoft Defender pour le point de terminaison - Préparer
-description: Il s’agit de la phase 1, Préparer, pour la migration vers Microsoft Defender pour point de terminaison.
+description: Il s’agit de la phase 1, Préparer, pour la migration vers Microsoft Defender pour endpoint.
 keywords: migration, protection avancée contre les menaces Windows Defender, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,17 +21,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: faaf8aefca7cb3b2e0583ed080e66f5129488d37
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d5339ce795bff1451d6f4caaf37de39f996890be
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066817"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185526"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 1 : Préparer
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 | ![Phase 1 : Préparer](images/phase-diagrams/prepare.png)<br/>Phase 1 : Préparer | [![Phase 2 : Configurer](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2 : Configurer](switch-to-microsoft-defender-setup.md) | [![Phase 3 : Intégration](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3 : Intégration](switch-to-microsoft-defender-onboard.md) |
@@ -60,7 +60,7 @@ Vous avez besoin d’aide ? Consultez la documentation de votre fournisseur de 
 
 Vous avez besoin d’aide pour mettre à jour les appareils de votre organisation ? Consultez les ressources suivantes :
 
-|SYSTÈME D’EXPLOITATION | Resource |
+|SYSTÈME D’EXPLOITATION | Ressource |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Comment mettre à jour le logiciel sur votre Mac](https://support.apple.com/HT201541)|
@@ -74,7 +74,7 @@ Maintenant que vous avez mis à jour les appareils de votre organisation, l’é
 
 1. Achetez ou essayez Microsoft Defender pour Endpoint dès aujourd’hui. [Démarrez une version d’essai gratuite ou demandez un devis.](https://aka.ms/mdatp) 
 2. Vérifiez que vos licences sont correctement provisionées. [Vérifiez l’état de votre licence.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#check-license-state)
-3. En tant qu’administrateur général ou administrateur de sécurité, vous pouvez configurer votre instance cloud dédiée de Microsoft Defender pour Endpoint. Voir [Configuration de Microsoft Defender pour endpoint : configuration du client.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#tenant-configuration)
+3. En tant qu’administrateur général ou administrateur de sécurité, vous pouvez configurer votre instance cloud dédiée de Microsoft Defender for Endpoint. Voir [Configuration de Microsoft Defender pour endpoint : configuration du client.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#tenant-configuration)
 4. Si les points de terminaison (tels que les appareils) de votre organisation utilisent un proxy pour accéder à Internet, voir Microsoft Defender pour l’installation du point de [terminaison](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#network-configuration): configuration réseau .
  
 À ce stade, vous êtes prêt à accorder l’accès à vos administrateurs de sécurité et opérateurs de sécurité qui utiliseront le Centre de sécurité Microsoft Defender ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ). 
@@ -84,7 +84,7 @@ Maintenant que vous avez mis à jour les appareils de votre organisation, l’é
 
 ## <a name="grant-access-to-the-microsoft-defender-security-center"></a>Accorder l’accès au Centre de sécurité Microsoft Defender
 
-Le Centre de sécurité Microsoft Defender ( ) est l’endroit où vous accédez et configurez les fonctionnalités de [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Microsoft Defender pour le point de terminaison. Pour plus d’informations, voir [Vue d’ensemble du Centre de sécurité Microsoft Defender.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)
+Le Centre de sécurité Microsoft Defender ( ) est l’endroit où vous accédez et configurez les fonctionnalités et fonctionnalités de [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Microsoft Defender pour point de terminaison. Pour plus d’informations, voir [Vue d’ensemble du Centre de sécurité Microsoft Defender.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)
 
 Les autorisations sur le Centre de sécurité Microsoft Defender peuvent être accordées à l’aide d’autorisations de base ou d’un contrôle d’accès basé sur un rôle (RBAC). Nous vous recommandons d’utiliser RBAC afin de contrôler plus granulairement les autorisations.
 

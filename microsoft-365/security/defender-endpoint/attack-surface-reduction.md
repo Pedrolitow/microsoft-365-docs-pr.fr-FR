@@ -1,6 +1,6 @@
 ---
 title: Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
-description: Les règles de réduction de la surface d’attaque peuvent empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
+description: Les règles de réduction de la surface d’attaque peuvent aider à empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
 keywords: Règles de réduction de la surface d’attaque, asr, hips, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, Microsoft Defender pour point de terminaison, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 2bd8442dd8e119a57c490773b6e01a7c5f7adcac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62f1f5f2d47482f642f00c870b3e0f3112f5f639
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067382"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185766"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
 
@@ -40,7 +40,7 @@ Les règles de réduction de la surface d’attaque ciblent certains comportemen
 
 - lancement de fichiers exécutables et de scripts qui tentent de télécharger ou d’exécuter des fichiers ;
 - Exécution de scripts obscurcis ou suspects ; et 
-- Comportement d’une application qui n’est généralement pas initiée pendant le travail quotidien normal.
+- Des comportements que les applications n’initient généralement pas pendant le travail quotidien normal.
 
 De tels comportements logiciels sont parfois observés dans les applications légitimes ; Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment abusés par des personnes malveillantes par le biais de programmes malveillants. Les règles de réduction de la surface d’attaque peuvent limiter les comportements à risque et contribuer à la sécurité de votre organisation.
 
@@ -76,7 +76,7 @@ En outre, assurez-vous que les mises à jour de l’Antivirus Microsoft Defender
 - Conditions minimales requises pour la publication de la plateforme : `4.18.2008.9`  
 - Conditions minimales requises pour la publication du moteur : `1.1.17400.5`
 
-Pour plus d’informations et pour obtenir vos mises à jour, voir Mise à jour [pour la plateforme anti-programme](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)malveillant Microsoft Defender.
+Pour plus d’informations et pour obtenir vos mises à jour, voir Mise à jour [pour la plateforme de logiciel anti-programme malveillant Microsoft Defender.](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Cas où le mode d’avertissement n’est pas pris en charge
 
@@ -112,7 +112,7 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 - Windows Server, [version 1803 (canal semi-annuel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l’analyse et les flux de travail disponibles dans [Defender pour](microsoft-defender-advanced-threat-protection.md)le point de terminaison, ainsi que les fonctionnalités de rapport et de configuration dans le Centre de sécurité [Microsoft 365](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center). Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3 . toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux de l’Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
+Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l’analyse et les flux de travail disponibles dans [Defender pour](microsoft-defender-endpoint.md)le point de terminaison, ainsi que les fonctionnalités de rapport et de configuration dans le Centre de sécurité [Microsoft 365](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center). Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3 ; toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux de l’Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Passer en revue les événements de réduction de la surface d’attaque dans le Centre de sécurité Microsoft Defender
 
@@ -251,7 +251,7 @@ GUID : `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 > La règle Bloquer **le contenu exécutable à** partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
 > - Intune (Profils de configuration) : exécution du contenu exécutable (exe, dll, ps, js, vbs, etc.) supprimé de la messagerie électronique (webmail/client de messagerie) (aucune exception).
 > - Gestionnaire de point de terminaison : bloquez le téléchargement de contenu exécutable à partir des clients de messagerie et de messagerie web.
-> - Stratégie de groupe : bloquer le contenu exécutable du client de messagerie et de la messagerie web.
+> - Stratégie de groupe : bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance
 
@@ -358,7 +358,7 @@ GUID : `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 Cette règle empêche Outlook de créer des processus enfants, tout en permettant des fonctions Outlook légitimes.
 
-Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les attaques par formulaires et règles Outlook que les [attaquants](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
+Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les attaques par formulaire et les règles Outlook que les [attaquants](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
 
 > [!NOTE]
 > Cette règle s’applique à Outlook et Outlook.com uniquement.

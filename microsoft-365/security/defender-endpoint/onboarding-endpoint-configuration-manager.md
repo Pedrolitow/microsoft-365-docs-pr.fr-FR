@@ -18,19 +18,19 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e6f3cfbf471e7b99e2ce5215491e32c955e3833
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 31c946ccad84aca3b2fc86c95655cea9e66e182f
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061047"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186400"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l’aide de Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -68,7 +68,7 @@ Pour intégrer des appareils Windows 10 avec Microsoft Endpoint Configuration Ma
 
 L’intégration à l’aide d’outils tels que la stratégie de groupe ou la méthode manuelle n’installe aucun agent sur le système. 
 
-Dans la console Microsoft Endpoint Configuration Manager, le processus d’intégration sera configuré dans le cadre des paramètres de conformité au sein de la console.
+Dans la console Microsoft Endpoint Configuration Manager, le processus d’intégration est configuré dans le cadre des paramètres de conformité au sein de la console.
 
 Tout système qui reçoit cette configuration requise conserve cette configuration tant que le client Configuration Manager continue de recevoir cette stratégie à partir du point de gestion. 
 
@@ -90,7 +90,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
     ![Image de l’Assistant Microsoft Endpoint Configuration Manager4](images/configmgr-query-rule.png)
 
-5.  Cliquez **sur Suivant** dans **l’Assistant Adhésion** directe et cliquez sur Modifier **l’instruction de requête.**
+5.  Cliquez **sur Suivant** dans **l’Assistant Adhésion directe** et cliquez sur Modifier **l’instruction de requête.**
 
      ![Image de l’Assistant Microsoft Endpoint Configuration Manager5](images/configmgr-direct-membership.png)
 
@@ -145,7 +145,7 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
     ![Image de l’Assistant Microsoft Endpoint Configuration Manager12](images/configmgr-create-policy.png)
 
-7. Entrez le nom et la description, vérifiez que **l’intégration** est sélectionnée, puis sélectionnez **Suivant**.
+7. Entrez le nom et la description, vérifiez **que l’intégration** est sélectionnée, puis sélectionnez **Suivant**.
 
     ![Image de l’Assistant Microsoft Endpoint Configuration Manager13](images/configmgr-policy-name.png)
 
@@ -163,7 +163,7 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
     ![Image des paramètres de configuration2](images/configmgr-telemetry.png)
 
-14. Vérifiez la configuration, puis cliquez sur **Suivant**.
+14. Vérifiez la configuration, puis cliquez sur **Suivant.**
 
      ![Image des paramètres de configuration3](images/configmgr-verify-configuration.png)
 
@@ -194,7 +194,7 @@ Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defen
 
     -   SSO serveur : Windows Server 2008 SP1 ou plus nouveau
 
-    -   SSK client : Windows 7 SP1 et ultérieur
+    -   SSO client : Windows 7 SP1 et ultérieur
 
     L’agent MMA doit être installé sur les appareils Windows. Pour installer l’agent, certains systèmes doivent télécharger la mise à jour pour l’expérience client et la [télémétrie](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) de diagnostic afin de collecter les données avec MMA. Ces versions système incluent, sans s’y limiter, les éléments suivants :
 
@@ -240,7 +240,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
   
     ![Image du volet de protection nouvelle génération2](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
-    ![Image du volet de protection nouvelle génération 3](images/36c7c2ed737f2f4b54918a4f20791d4b.png)
+    ![Image du volet de protection nouvelle génération3](images/36c7c2ed737f2f4b54918a4f20791d4b.png)
 
     ![Image du volet de protection nouvelle génération 4](images/a28afc02c1940d5220b233640364970c.png)
 
@@ -320,14 +320,14 @@ Vous trouverez ci-dessous des étapes supplémentaires pour vérifier si les rè
 
     ![Capture d’écran des règles de réduction de la surface d’attaque reports1](images/f91f406e6e0aae197a947d3b0e8b2d0d.png)
 
-5. Cliquez sur chaque appareil pour obtenir les détails de configuration des règles de la asr.
+5. Cliquez sur chaque appareil pour obtenir les détails de configuration des règles asr.
 
     ![Capture d’écran des règles de réduction de la surface d’attaque rapports2](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
-Pour [plus d’informations, voir](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   Optimiser le déploiement et les détections de règles asr.  
+Pour [plus d’informations, voir Optimiser](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   le déploiement et les détections de règles asr.  
 
 
-#### <a name="set-network-protection-rules-in-audit-mode"></a>Définir des règles de protection du réseau en mode audit :
+#### <a name="set-network-protection-rules-in-audit-mode"></a>Définissez des règles de protection réseau en mode audit :
 1. Dans la console Microsoft Endpoint Configuration Manager, accédez à **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** et choisissez Créer une stratégie Exploit **Guard.**
 
     ![Capture d’écran de System Center Configuration Manager1](images/728c10ef26042bbdbcd270b6343f1a8a.png)

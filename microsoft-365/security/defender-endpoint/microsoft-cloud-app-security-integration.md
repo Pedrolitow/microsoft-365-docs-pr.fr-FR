@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: 6ea885c17cf506ef6f9a4a7138630aed671f0ce8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d756c738f9f61638a9e7424aa3fdf639f8f02f2a
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066289"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185598"
 ---
 # <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Vue d’ensemble de Microsoft Cloud App Security dans Defender for Endpoint
 
@@ -32,13 +32,13 @@ ms.locfileid: "51066289"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Cloud App Security (Cloud App Security) est une solution complète qui offre une visibilité sur les applications et services cloud en vous permettant de contrôler et de limiter l’accès aux applications cloud, tout en appliquant des exigences de conformité sur les données stockées dans le cloud. Pour plus d’informations, voir [Cloud App Security.](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+Microsoft Cloud App Security (Cloud App Security) est une solution complète qui offre une visibilité sur les applications et services cloud en vous permettant de contrôler et de limiter l’accès aux applications cloud, tout en appliquant des exigences de conformité sur les données stockées dans le cloud. Pour plus d’informations, [voir Cloud App Security.](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
 >[!NOTE]
 >Cette fonctionnalité est disponible avec une licence E5 pour [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) sur les appareils exécutant Windows 10 version 1809 ou ultérieure.
@@ -58,7 +58,7 @@ L’intégration apporte les améliorations majeures suivantes à la découverte
 
 - Contexte de périphérique : les journaux de trafic cloud n’ont pas de contexte de périphérique. L’activité réseau de Defender for Endpoint est signalée avec le contexte de périphérique (quel appareil a accédé à l’application cloud), afin que vous compreniez exactement où (appareil) l’activité réseau a eu lieu, en plus de qui (utilisateur) l’a effectuée. 
 
-Pour plus d’informations sur la découverte cloud, voir [Working with discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).
+Pour plus d’informations sur la découverte dans le cloud, voir [Working with discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).
 
 ## <a name="related-topic"></a>Rubrique connexe
 

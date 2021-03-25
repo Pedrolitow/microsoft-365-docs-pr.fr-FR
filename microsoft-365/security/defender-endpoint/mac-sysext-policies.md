@@ -1,7 +1,7 @@
 ---
 title: Nouveaux profils de configuration pour macOS Et les versions plus récentes de macOS
 description: Cette rubrique décrit les modifications qui doivent être apportées pour bénéficier des extensions système, qui remplacent les extensions de noyau sur macOS Contrôlez et les versions plus récentes de macOS.
-keywords: microsoft, defender, atp, mac, noyau, système, extensions, contrôle
+keywords: microsoft, defender, atp, mac, kernel, system, extensions, contrôle
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,26 +19,26 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: c46ae6e690f0127a7ae412101f5183d0fe8c183e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a4c92d27d45208634f99f9bfb2f756cfc5792fac
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066382"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186652"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nouveaux profils de configuration pour macOS Et les versions plus récentes de macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 En adéquation avec l’évolution de macOS, nous préparons une mise à jour de Microsoft Defender pour Endpoint pour Mac qui tire parti des extensions système au lieu des extensions de noyau. Cette mise à jour s’applique uniquement à macOS Fonctionnalité (10.15.4) et aux versions plus récentes de macOS.
 
-Si vous avez déployé Microsoft Defender pour Endpoint pour Mac dans un environnement géré (via JAMF, Intune ou une autre solution MDM), vous devez déployer de nouveaux profils de configuration. Si vous n’exécutez pas ces étapes, les utilisateurs auront accès à des invites d’approbation pour exécuter ces nouveaux composants.
+Si vous avez déployé Microsoft Defender pour endpoint pour Mac dans un environnement géré (via JAMF, Intune ou une autre solution MDM), vous devez déployer de nouveaux profils de configuration. Si vous n’exécutez pas ces étapes, les utilisateurs auront accès à des invites d’approbation pour exécuter ces nouveaux composants.
 
 ## <a name="jamf"></a>JAMF
 
@@ -190,7 +190,7 @@ Pour approuver les extensions système :
 
     ![Capture d’écran des profils de configuration système](images/mac-system-extension-intune2.png)
 
-5. Dans `Assignments` l’onglet, affectez ce profil à **tous les utilisateurs & tous les appareils.**
+5. Dans `Assignments` l’onglet, affectez ce profil à tous les **utilisateurs & tous les appareils.**
 6. Examinez et créez ce profil de configuration.
 
 ### <a name="create-and-deploy-the-custom-configuration-profile"></a>Créer et déployer le profil de configuration personnalisé

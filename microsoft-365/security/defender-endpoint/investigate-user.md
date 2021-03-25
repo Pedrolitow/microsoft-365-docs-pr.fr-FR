@@ -19,27 +19,27 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e994069220d8f88f1b8910413ad86da399c4a8f3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e79e558a7d256c46178e91b89bff27bfa6893ce9
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064294"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186712"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
 
 ## <a name="investigate-user-account-entities"></a>Examiner les entités de compte d’utilisateur
 
-Identifiez les comptes d’utilisateurs avec les alertes les plus actives (affichées sur le tableau de bord sous la forme « Utilisateurs à risque ») et examinez les cas d’informations d’identification potentiellement compromises, ou faites pivoter le compte d’utilisateur associé lors de l’examen d’une alerte ou d’un appareil afin d’identifier les éventuels mouvements latérals entre les appareils avec ce compte d’utilisateur.
+Identifiez les comptes d’utilisateurs avec les alertes les plus actives (affichées dans le tableau de bord sous la forme « Utilisateurs à risque ») et examinez les cas d’informations d’identification potentiellement compromises, ou pivotez sur le compte d’utilisateur associé lors de l’examen d’une alerte ou d’un appareil afin d’identifier les éventuels mouvements latérals entre les appareils avec ce compte d’utilisateur.
 
 Les informations de compte d’utilisateur sont disponibles dans les affichages suivants :
 
@@ -83,7 +83,7 @@ La sélection d’un élément dans le tableau Observé dans l’organisation d�
 
 ## <a name="search-for-specific-user-accounts"></a>Rechercher des comptes d’utilisateurs spécifiques
 
-1. Sélectionnez **Utilisateur** dans le menu déroulant **de la** barre de recherche.
+1. Sélectionnez **Utilisateur** dans le menu déroulant **de** la barre de recherche.
 2. Entrez le compte d’utilisateur dans le **champ** Recherche.
 3. Cliquez sur l’icône de recherche ou appuyez sur **Entrée.**
 

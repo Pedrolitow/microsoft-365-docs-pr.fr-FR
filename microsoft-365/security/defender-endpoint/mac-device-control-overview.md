@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f2429002a10fd2d033530d75f261ffd04459c64f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 098eb30764870e69c5b1b6c2cec3cf8e5cb11691
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062406"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186568"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d’appareil pour macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -47,7 +47,7 @@ Le contrôle d’appareil pour macOS présente les conditions préalables suivan
 > - Version minimale du produit : 101.24.59
 > - Votre appareil doit être en cours d’exécution avec des extensions système (il s’agit de la valeur par défaut sur macOS 11 Big Sur). 
 > 
->   Vous pouvez vérifier si votre appareil s’exécute sur des extensions système en exécutant la commande suivante et vérifier qu’il est en cours d’impression `endpoint_security_extension` sur la console : 
+>   Vous pouvez vérifier si votre appareil est en cours d’exécution sur les extensions système en exécutant la commande suivante et vérifier qu’il est en cours d’impression `endpoint_security_extension` sur la console : 
 > 
 >   ```bash
 >   mdatp health --field real_time_protection_subsystem 
@@ -60,7 +60,7 @@ Le contrôle d’appareil pour macOS présente les conditions préalables suivan
 >    mdatp health --field release_ring 
 >    ```
 >
->    Si la commande ci-dessus n’imprime pas l’une ou l’autre des commandes `Beta` `InsiderFast` ci-dessus, exécutez la commande suivante à partir du Terminal. La mise à jour du canal prend effet lors du prochain démarrage du produit (lors de l’installation de la prochaine mise à jour du produit ou du redémarrage de l’appareil). 
+>    Si la commande ci-dessus n’imprime pas l’une ou l’autre des commandes, exécutez `Beta` la commande suivante à partir du `InsiderFast` Terminal. La mise à jour du canal prend effet lors du prochain démarrage du produit (lors de l’installation de la prochaine mise à jour du produit ou du redémarrage de l’appareil). 
 > 
 >    ```bash
 >    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
@@ -105,7 +105,7 @@ Lorsque les utilisateurs finaux cliquent sur cette notification, une page web s�
 
 ### <a name="allow-or-block-removable-devices"></a>Autoriser ou bloquer les appareils amovibles
 
-La section média amovible de la stratégie de contrôle d’appareil est utilisée pour restreindre l’accès aux médias amovibles. 
+La section multimédia amovible de la stratégie de contrôle d’appareil est utilisée pour restreindre l’accès aux médias amovibles. 
 
 > [!NOTE]
 > Les types de média amovible suivants sont actuellement pris en charge et peuvent être inclus dans la stratégie : les périphériques de stockage USB.
@@ -152,7 +152,7 @@ Sous la section Média amovible, il existe une option pour définir le niveau d�
 
 #### <a name="default-permission-level"></a>Niveau d’autorisation par défaut
 
-Au niveau supérieur de la section média amovible, vous pouvez configurer le niveau d’autorisation par défaut pour les appareils qui ne correspondent à rien d’autre dans la stratégie.
+Au niveau supérieur de la section Média amovible, vous pouvez configurer le niveau d’autorisation par défaut pour les appareils qui ne correspondent à rien d’autre dans la stratégie.
 
 Ce paramètre peut être définie sur :
 
@@ -196,9 +196,9 @@ Pour chaque fournisseur, vous pouvez spécifier le niveau d’autorisation souha
 | **Domaine** | `com.microsoft.wdav` |
 | **Clé** | autorisation |
 | **Type de données** | Tableau de chaînes |
-| **Valeurs possibles** | Identique au [niveau d’autorisation par défaut](#default-permission-level) |
+| **Valeurs possibles** | Identique au [niveau d’autorisation Par défaut](#default-permission-level) |
 
-En outre, vous pouvez éventuellement spécifier l’ensemble des produits appartenant à ce fournisseur pour lesquels des autorisations plus granulaires sont définies. Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `products` identifiée par l’ID de produit. 
+En outre, vous pouvez éventuellement spécifier l’ensemble des produits appartenant à ce fournisseur pour lesquels des autorisations plus granulaires sont définies. Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par `products` l’ID de produit. 
 
 |||
 |:---|:---|
@@ -213,11 +213,11 @@ Pour chaque produit, vous pouvez spécifier le niveau d’autorisation souhaité
 | **Domaine** | `com.microsoft.wdav` |
 | **Clé** | autorisation |
 | **Type de données** | Tableau de chaînes |
-| **Valeurs possibles** | Identique au [niveau d’autorisation par défaut](#default-permission-level) |
+| **Valeurs possibles** | Identique au [niveau d’autorisation Par défaut](#default-permission-level) |
 
 En outre, vous pouvez spécifier un ensemble facultatif de numéros de série pour lesquels des autorisations plus granulaires sont définies.
 
-Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `serialNumbers` identifiée par le numéro de série.
+Le `serialNumbers` dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par le numéro de série.
 
 |||
 |:---|:---|
@@ -232,7 +232,7 @@ Pour chaque numéro de série, vous pouvez spécifier le niveau d’autorisation
 | **Domaine** | `com.microsoft.wdav` |
 | **Clé** | autorisation |
 | **Type de données** | Tableau de chaînes |
-| **Valeurs possibles** | Identique au [niveau d’autorisation par défaut](#default-permission-level) |
+| **Valeurs possibles** | Identique au [niveau d’autorisation Par défaut](#default-permission-level) |
 
 #### <a name="example-device-control-policy"></a>Exemple de stratégie de contrôle d’appareil
 
@@ -322,7 +322,7 @@ Pour rechercher l’ID du fournisseur, l’ID de produit et le numéro de série
 
     ![Détails d’un périphérique USB](images/mac-device-control-lookup-4.png)
 
-1. L’ID de fournisseur, l’ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l’ID fournisseur et l’ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x` . Par exemple, dans l’image ci-dessous, l’ID du fournisseur `1000` est et l’ID de produit est `090c` .
+1. L’ID du fournisseur, l’ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l’ID fournisseur et l’ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x` . Par exemple, dans l’image ci-dessous, l’ID du fournisseur `1000` est et l’ID de produit est `090c` .
 
 #### <a name="discover-usb-devices-in-your-organization"></a>Découvrir les périphériques USB de votre organisation
 

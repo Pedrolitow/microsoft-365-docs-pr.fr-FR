@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c61fcdfb452fb075498dcc2858bb7a9b4b81a2f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 466e67bb4649f8cf87e4152a07122d57c5071b79
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165944"
+ms.locfileid: "51185574"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -45,7 +45,7 @@ Ce service de recherche de menace gérée fournit des informations et des donné
 > [!NOTE]
 > Discutez des conditions d’éligibilité avec votre fournisseur de services techniques Microsoft et votre équipe de compte avant de vous appliquer au service de recherche de menaces gérées.
 
-Si vous êtes un client Microsoft Defender pour points de terminaison, vous devez demander des experts microsoft en matière de **menaces - Notifications** d’attaque ciblées pour obtenir des informations et une analyse spéciales qui vous aident à identifier les menaces les plus critiques dans votre environnement afin de pouvoir y répondre rapidement.
+Si vous êtes un client Microsoft Defender pour point de terminaison, vous devez demander des experts microsoft en matière de **menaces - Notifications** d’attaque ciblées pour obtenir des informations et une analyse spéciales qui vous aident à identifier les menaces les plus critiques dans votre environnement afin de pouvoir y répondre rapidement.
 
 Pour vous inscrire à Microsoft Threat Experts - Avantages des notifications d’attaques **ciblées,** voir Paramètres généraux Avancés fonctionnalités  >    >    >  **Microsoft Threat Experts - Notifications** d’attaque ciblée à appliquer. Une fois accepté, vous bénéficiez des avantages des notifications d’attaque ciblée.
 
@@ -54,7 +54,7 @@ Contactez votre équipe de compte ou votre représentant Microsoft pour vous abo
 Pour plus [d’informations, voir](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) Configurer les fonctionnalités des experts microsoft en matière de menaces. 
 
 ## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Spécialistes des menaces Microsoft - Notification d’attaque ciblée 
-Experts microsoft en matière de menaces : la notification d’attaque ciblée permet de cibler de manière proactive les menaces les plus importantes pour votre réseau, notamment les intrusions de l’adversaire humain, les attaques par clavier ou les attaques avancées telles que le cyber-espionnage. Ces notifications s’affiche sous la forme d’une nouvelle alerte. Le service de recherche géré inclut :  
+Spécialistes des menaces Microsoft : la notification d’attaques ciblées permet de cibler de manière proactive les menaces les plus importantes pour votre réseau, notamment les intrusions de l’adversaire humain, les attaques par clavier ou les attaques avancées telles que le cyber-espionnage. Ces notifications s’affiche sous la forme d’une nouvelle alerte. Le service de recherche géré inclut :  
 - Analyse et analyse des menaces, ce qui réduit le temps d’activité et les risques pour l’entreprise 
 - Intelligence artificielle entraînée pour découvrir et hiérarchiser les attaques connues et inconnues  
 - Identification des risques les plus importants, aider les SOC à optimiser le temps et l’énergie 
@@ -71,11 +71,11 @@ L’option de **consulter un expert en** menaces est disponible à plusieurs end
 - <i>**Menu Aide et support**</i><BR>
 ![Capture d’écran de l’option de menu MTE-EOD](images/mte-eod-menu.png)
 
-- <i>**Menu Actions de page d’appareil**</i><BR>
+- <i>**Menu Actions de la page d’appareil**</i><BR>
 ![Capture d’écran de l’option de menu Action de page d’appareil MTE-EOD](images/mte-eod-machines.png)
 
 - <i>**Menu Actions de la page Alertes**</i><BR>
-![Capture d’écran de l’option de menu Action de la page d’alerte MTE-EOD](images/mte-eod-alerts.png)
+![Capture d’écran de l’option de menu d’action de page d’alerte MTE-EOD](images/mte-eod-alerts.png)
 
 - <i>**Menu Actions de la page de fichiers**</i><BR>
 ![Capture d’écran de l’option de menu Action de la page de fichiers MTE-EOD](images/mte-eod-file.png)

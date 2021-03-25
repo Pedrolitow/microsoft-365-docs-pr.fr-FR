@@ -16,25 +16,25 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d992d98b916f5b59b67706b310edefdb37f157b4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 784e73467efc114f05ebdfca9bc4034e2d75f6c6
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062425"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185706"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-La réponse en direct permet aux équipes d’opérations de sécurité d’accéder instantanément à un appareil (également appelé ordinateur) à l’aide d’une connexion Shell distante. Vous avez ainsi la puissance d’un travail d’examen approfondi et d’actions de réponse immédiates pour contenir rapidement des menaces identifiées, en temps réel. 
+La réponse en direct permet aux équipes d’opérations de sécurité d’accéder instantanément à un appareil (également appelé ordinateur) à l’aide d’une connexion Shell distante. Cela vous donne la puissance d’un travail d’examen approfondi et de prendre des mesures de réponse immédiates pour contenir rapidement des menaces identifiées, en temps réel. 
 
 La réponse dynamique est conçue pour améliorer les enquêtes en permettant à votre équipe des opérations de sécurité de collecter des données d’investigation, d’exécuter des scripts, d’envoyer des entités suspectes pour analyse, de corriger les menaces et de chercher de manière proactive les menaces émergentes.<br/><br/>
 
@@ -77,13 +77,13 @@ Vous devez activer la fonctionnalité de réponse en direct dans la page [Param�
     >Seuls les utilisateurs ayant des rôles d’administrateur global ou de sécurité peuvent modifier ces paramètres.
     
 - **Assurez-vous que le niveau de correction Automation** est affecté à l’appareil.<br>
-Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne pourrez pas établir une session Live Response à un membre de ce groupe.
+Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne pourrez pas établir de session Live Response à un membre de ce groupe.
 
     Vous recevrez l’erreur suivante :
 
     ![Image du message d’erreur](images/live-response-error.png)
 
-- **Activer l’exécution de script non signé de réponse en** direct (facultatif). <br>
+- **Activer l’exécution de scripts non signés de** réponse en direct (facultatif). <br>
 
     >[!WARNING]
     >Autoriser l’utilisation de scripts non signés peut augmenter votre exposition aux menaces.
@@ -94,7 +94,7 @@ Vous devez activer, au moins, le niveau de correction minimal pour un groupe d�
     Seuls les utilisateurs qui ont été mis en service avec les autorisations appropriées peuvent lancer une session. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md) 
 
     > [!IMPORTANT]
-    > L’option de téléchargement d’un fichier dans la bibliothèque est disponible uniquement pour les personnes ayant les autorisations RBAC appropriées. Le bouton est grisé pour les utilisateurs ayant uniquement des autorisations déléguées.
+    > L’option de téléchargement d’un fichier dans la bibliothèque est disponible uniquement pour les personnes ayant les autorisations RBAC appropriées. Le bouton est grisé pour les utilisateurs qui n’ont que des autorisations déléguées.
 
     Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Les autorisations des utilisateurs sont contrôlées par le rôle personnalisé RBAC. 
 
@@ -109,7 +109,7 @@ Le tableau de bord vous donne également accès à :
 - Inscription de l’application dans Azure Active Directory
 - Télécharger des fichiers dans la bibliothèque 
 - Console de commande
-- Journal des commandes
+- Journal de commandes
 
 
 ## <a name="initiate-a-live-response-session-on-a-device"></a>Lancer une session de réponse en direct sur un appareil 
@@ -118,11 +118,11 @@ Le tableau de bord vous donne également accès à :
 
 2. Accédez à la page de liste des appareils et sélectionnez un appareil à examiner. La page appareils s’ouvre.
 
-3. Lancez la session de réponse en direct en sélectionnant **Lancer la session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
+3. Lancez la session de réponse en direct en sélectionnant **Lancer une session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
 
 4. Utilisez les commandes intégrées pour faire des enquêtes. Pour plus d’informations, voir [commandes de réponse en direct.](#live-response-commands)
 
-5. Après avoir terminé votre enquête, sélectionnez **Déconnecter la session,** puis sélectionnez **Confirmer**.
+5. Une fois l’examen terminé, sélectionnez **Déconnecter la session,** puis **confirmez.**
 
 ## <a name="live-response-commands"></a>Commandes de réponse en direct
 
@@ -147,7 +147,7 @@ Les commandes suivantes sont disponibles pour les rôles  d’utilisateur qui on
 drivers |  Affiche tous les pilotes installés sur l’appareil. |
 |`fg <command ID>` | Renvoie un téléchargement de fichier au premier plan. |
 |`fileinfo` | Récupération d’informations sur un fichier. |
-|`findfile` | Localise les fichiers sous un nom donné sur l’appareil. |
+|`findfile` | Localise les fichiers d’un nom donné sur l’appareil. |
 |`help` | Fournit des informations d’aide pour les commandes de réponse en direct. |
 |`persistence` | Affiche toutes les méthodes de persistance connues sur l’appareil. |
 |`processes` | Affiche tous les processus en cours d’exécution sur l’appareil. |
@@ -162,11 +162,11 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 | Command | Description |
 |---|---|
 | `analyze` | Analyse l’entité avec différents moteurs d’incrimination pour parvenir à un verdict. |
-| `getfile` | Obtient un fichier de l’appareil. <br> REMARQUE : cette commande est une commande prérequise. Vous pouvez utiliser la commande conjointement pour exécuter automatiquement la `-auto` `getfile` commande prérequise. |
+| `getfile` | Obtient un fichier de l’appareil. <br> REMARQUE : cette commande est une commande prérequise. Vous pouvez utiliser la `-auto` commande conjointement pour `getfile` exécuter automatiquement la commande prérequise. |
 | `run` | Exécute un script PowerShell à partir de la bibliothèque sur l’appareil. |
 | `library` | Répertorie les fichiers qui ont été chargés dans la bibliothèque de réponses en direct. |
 | `putfile` | Place un fichier de la bibliothèque sur l’appareil. Les fichiers sont enregistrés dans un dossier de travail et supprimés lorsque l’appareil redémarre par défaut. |
-| `remediate` | Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité :<br>- Fichier : supprimer<br>- Processus : arrêter, supprimer un fichier image<br>- Service : arrêter, supprimer un fichier image<br>- Entrée de Registre : supprimer<br>- Tâche programmée : supprimer<br>- Élément de dossier de démarrage : supprimer un fichier <br> REMARQUE : cette commande est une commande prérequise. Vous pouvez utiliser la commande conjointement pour exécuter automatiquement la `-auto` `remediate` commande prérequise. 
+| `remediate` | Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité :<br>- Fichier : supprimer<br>- Processus : arrêter, supprimer un fichier image<br>- Service : arrêter, supprimer un fichier image<br>- Entrée de Registre : supprimer<br>- Tâche programmée : supprimer<br>- Élément de dossier de démarrage : supprimer un fichier <br> REMARQUE : cette commande est une commande prérequise. Vous pouvez utiliser la `-auto` commande conjointement pour `remediate` exécuter automatiquement la commande prérequise. 
 |`undo` | Restaure une entité qui a été corrigé. |
 
 
@@ -250,7 +250,7 @@ Avant de pouvoir exécuter un script PowerShell, vous devez d’abord le téléc
 
 Après avoir téléchargé le script dans la bibliothèque, utilisez `run` la commande pour exécuter le script.
 
-Si vous prévoyez d’utiliser un script non signé dans la session, vous devez activer le paramètre dans la page Paramètres des [fonctionnalités avancées.](advanced-features.md)
+Si vous envisagez d’utiliser un script non signé dans la session, vous devez activer le paramètre dans la page Paramètres des [fonctionnalités avancées.](advanced-features.md)
 
 >[!WARNING]
 >Autoriser l’utilisation de scripts non signés peut augmenter votre exposition aux menaces.

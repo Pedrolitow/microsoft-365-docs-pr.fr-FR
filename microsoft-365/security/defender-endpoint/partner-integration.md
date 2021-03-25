@@ -17,23 +17,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7907f66bb633f22e83e165d3e3f20369f4c0f07f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1db82afa06fd0b6b3d7228aaf3020c5496ed69e7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063913"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186892"
 ---
 # <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Scénarios et opportunités de partenaires Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 Les partenaires peuvent facilement étendre leurs offres de sécurité existantes en plus de l’infrastructure ouverte et d’un ensemble complet et complet d’API pour créer des extensions et des intégrations avec Defender for Endpoint. 
@@ -44,9 +44,9 @@ Les API couvrent des domaines fonctionnels, notamment la détection, la gestion,
 ## <a name="scenario-1-external-alert-correlation-and-automated-investigation-and-remediation"></a>Scénario 1 : corrélation d’alertes externes et examen et correction automatisés
 Defender pour le point de terminaison offre des fonctionnalités d’investigation et de correction automatisées uniques pour stimuler la réponse aux incidents à grande échelle. 
 
-L’intégration de la fonctionnalité d’examen et de réponse automatisée à d’autres solutions telles que des produits de sécurité réseau ou d’autres produits de sécurité de point de terminaison permettra de résoudre les alertes. L’intégration réduit également les complexités qui entourent la corrélation de signal réseau et de périphérique, rationalisant efficacement les actions d’examen et de correction des menaces sur les appareils.
+L’intégration de la fonctionnalité d’examen et de réponse automatisée à d’autres solutions telles que des produits de sécurité réseau ou d’autres produits de sécurité de point de terminaison permettra de résoudre les alertes. L’intégration réduit également les complexités autour de la corrélation de signal réseau et de périphérique, rationalisant efficacement les actions d’examen et de correction des menaces sur les appareils.
 
-Defender pour le point de terminaison ajoute la prise en charge de ce scénario sous les formes suivantes :
+Defender for Endpoint ajoute la prise en charge de ce scénario sous les formes suivantes :
 
 - Les alertes externes peuvent être poussées dans Defender pour point de terminaison et présentées côte à côte avec des alertes supplémentaires basées sur l’appareil de Defender pour le point de terminaison. Cette vue fournit le contexte complet de l’alerte, avec le processus réel et l’article complet de l’attaque.
 

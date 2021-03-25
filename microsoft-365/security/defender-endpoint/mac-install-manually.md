@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 382abd78ffa5e30c79804f9eaed211dffba7589c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b2629eb3d13e6eb908644dfcade46a7ac2768637
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062289"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187444"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>Déploiement manuel de Microsoft Defender pour endpoint pour macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -50,7 +50,7 @@ Avant de commencer, consultez la page principale de Microsoft Defender pour poin
 Téléchargez les packages d’installation et d’intégration à partir du Centre de sécurité Microsoft Defender :
 
 1. Dans le Centre de sécurité Microsoft Defender, go to **Settings > Device Management > Onboarding**.
-2. Dans la section 1 de la page, définissez le système d’exploitation sur **macOS** et la méthode deployment sur **le script local.**
+2. Dans la section 1 de la page, définissez le système d’exploitation sur **macOS** et la méthode de déploiement sur **le script local.**
 3. Dans la section 2 de la page, sélectionnez **Télécharger le package d’installation.** Enregistrez-le sous wdav.pkg dans un répertoire local.
 4. Dans la section 2 de la page, **sélectionnez Télécharger le package d’intégration.** Enregistrez-le WindowsDefenderATPOnboardingPackage.zip dans le même répertoire.
 
@@ -64,7 +64,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
 1. Accédez au wdav.pkg téléchargé dans Finder et ouvrez-le.
 
-    ![Installation de l’application capture d’écran1](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall)
+    ![Capture d’écran de l’installation de l’application1](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall)
 
 2. Sélectionnez **Continuer,** acceptez les termes du contrat de licence, puis entrez le mot de passe lorsque vous y invitez.
 
@@ -82,10 +82,10 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
    L’installation se poursuit.
 
    > [!CAUTION]
-   > Si vous ne sélectionnez pas **Autoriser,** l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations sur](mac-support-kext.md) la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
+   > Si vous ne sélectionnez pas **Autoriser,** l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations](mac-support-kext.md) sur la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
 
 > [!NOTE]
-> MacOS peut demander à redémarrer l’appareil lors de la première installation de Microsoft Defender pour Endpoint. La protection en temps réel ne sera pas disponible tant que l’appareil n’aura pas redémarrage.
+> MacOS peut demander à redémarrer l’appareil lors de la première installation de Microsoft Defender pour Endpoint. La protection en temps réel n’est pas disponible tant que l’appareil n’est pas redémarrage.
 
 ## <a name="application-installation-macos-11-and-newer-versions"></a>Installation d’applications (macOS 11 et versions plus récentes)
 

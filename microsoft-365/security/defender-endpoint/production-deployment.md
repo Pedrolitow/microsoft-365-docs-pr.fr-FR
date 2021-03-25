@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e5430d409f1f8212491657b0e4ff7ec52622576
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4af84c21977e4b90c8b6d9ec4c785339ff229e7d
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063897"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186148"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "51063897"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -52,17 +52,17 @@ Dans ce scénario de déploiement, vous serez guidé dans les étapes suivantes 
 
 
 >[!NOTE]
->Pour vous guider tout au long d’un déploiement classique, ce scénario couvre uniquement l’utilisation de Microsoft Endpoint Configuration Manager. Defender pour le point de terminaison prend en charge l’utilisation d’autres outils d’intégration, mais ne couvre pas ces scénarios dans le guide de déploiement. Pour plus d’informations, [voir Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
+>Pour vous guider tout au long d’un déploiement classique, ce scénario couvre uniquement l’utilisation de Microsoft Endpoint Configuration Manager. Defender pour le point de terminaison prend en charge l’utilisation d’autres outils d’intégration, mais ne couvre pas ces scénarios dans le guide de déploiement. Pour plus d’informations, [voir Appareils intégrés à Microsoft Defender pour le point de terminaison.](onboard-configure.md)
 
 ## <a name="check-license-state"></a>Vérifier l’état de la licence
 
-La vérification de l’état de la licence et si elle a été correctement mise en service peut être effectuée via le Centre d’administration ou via le portail **Microsoft Azure.**
+La vérification de l’état de la licence et si elle a été correctement mise en service peut être effectuée via le Centre d’administration ou via le portail **Microsoft Azure**.
 
 1. Pour afficher vos licences, accédez au portail **Microsoft Azure** et accédez à la section licence du portail [Microsoft Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
    ![Image de la page de gestion des licences Azure](images/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder aux abonnements de facturation dans le Centre  >  **d’administration.**
+1. Vous pouvez également accéder au Centre d’administration pour accéder **aux**  >  **abonnements de facturation.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 
@@ -124,7 +124,7 @@ Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windo
 
 -   WPAD (Web Proxy Autodiscovery Protocol)
 
-Si un proxy transparent ou un WPAD a été implémenté dans la topologie réseau, il n’est pas nécessaire de définir des paramètres de configuration spéciaux. Pour plus d’informations sur les exclusions d’URL de point de terminaison Microsoft Defender dans le proxy, consultez la section Annexe de ce document pour obtenir la liste des URL permises ou des documents [Microsoft.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Si un proxy transparent ou un WPAD a été implémenté dans la topologie réseau, il n’est pas nécessaire de définir des paramètres de configuration spéciaux. Pour plus d’informations sur les exclusions d’URL de point de terminaison Microsoft Defender dans le proxy, consultez la section Annexe de ce document pour la liste des URL permises ou sur [Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
 
 > [!NOTE]
 > Pour obtenir la liste détaillée des URL qui doivent être autorisées, consultez [cet article.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
@@ -137,14 +137,14 @@ Si un proxy transparent ou un WPAD a été implémenté dans la topologie résea
 
 ### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurer le serveur proxy manuellement en utilisant un proxy statique basé sur le registre
 
-Configurez un proxy statique basé sur le Registre pour autoriser uniquement le capteur Microsoft Defender for Endpoint à signaler les données de diagnostic et à communiquer avec Microsoft Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet. Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
+Configurez un proxy statique basé sur le Registre pour autoriser uniquement le capteur Microsoft Defender for Endpoint à signaler les données de diagnostic et à communiquer avec Microsoft Defender pour les services endpoint si un ordinateur n’est pas autorisé à se connecter à Internet. Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
 
- - Modèles d’administration - Collecte de données et builds d’aperçu des \> composants Windows \> \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service
+ - Modèles d’administration - Collecte de données et builds d’aperçu des composants Windows Configurez l’utilisation du proxy authentifié pour le service Expérience des utilisateurs connectés et \> \> \> télémétrie
      - Définissez-le **sur Activé et** sélectionnez Désactiver **l’utilisation du proxy authentifié**
 
 1. Ouvrez la console de gestion Stratégie de groupe.
-2. Créez une stratégie ou modifiez une stratégie existante en fonction des pratiques organisationnelles.
-3. Modifiez la stratégie de groupe et accédez à Modèles d’administration Collecte de données des composants Windows et Builds d’aperçu Configurer l’utilisation du proxy authentifié pour le service Expérience des **\> utilisateurs connectés et \> \> télémétrie.** 
+2. Créez une stratégie ou modifiez une stratégie existante basée sur les pratiques organisationnelles.
+3. Modifiez la stratégie de groupe et accédez à La collecte de données des composants Windows des modèles d’administration et les builds d’aperçu Configurez l’utilisation du proxy authentifié pour l’expérience utilisateur connectée et le **\> service de \> \> télémétrie.** 
     ![Image de la configuration de la stratégie de groupe](images/atp-gpo-proxy1.png)
 
 4. Sélectionnez **Activé**.
@@ -173,7 +173,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
 > [!NOTE]
 > - Cela affectera toutes les applications, y compris les services Windows qui utilisent WinHTTP avec un proxy par défaut.</br>
-> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionnent pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
+> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionneront pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
 
 1. Ouvrez une ligne de commande avec élévation de élévation de niveau :
 
@@ -190,9 +190,9 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
    Par exemple : netsh winhttp initialiser proxy 10.0.0.6:8080
 
 
-###  <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de bas niveau
+###  <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de niveau inférieur
 
-Down-Level incluent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows Server CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’Agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
+Down-Level incluent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows Server CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
 
 ### <a name="proxy-service-urls"></a>URL de service proxy
 Les URL qui incluent v20 sont nécessaires uniquement si vous avez windows 10, version 1803 ou ultérieure. Par exemple, n’est nécessaire que si l’appareil est sur ```us-v20.events.data.microsoft.com``` Windows 10, version 1803 ou ultérieure.

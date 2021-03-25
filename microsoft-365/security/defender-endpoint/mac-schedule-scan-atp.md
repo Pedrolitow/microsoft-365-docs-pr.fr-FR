@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4151513874d295e3033b1ed365f10fb576c4ac18
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4694ff0c0d0892b9261e61683654dfb58dfd724b
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066433"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187396"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-for-mac"></a>Planifier des analyses avec Microsoft Defender pour Endpoint pour Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -102,6 +102,6 @@ Vous pouvez créer une planification d’analyse à l’aide du *daemon* lancé 
 
 ## <a name="schedule-a-scan-with-intune"></a>Planifier une analyse avec Intune
 
-Vous pouvez également planifier des analyses avec Microsoft Intune. Le [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible dans [scripts pour Microsoft Defender pour le](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) point de terminaison est persistant lorsque l’appareil reprend du mode veille. 
+Vous pouvez également planifier des analyses avec Microsoft Intune. Le [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible dans [scripts pour Microsoft Defender pour](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) le point de terminaison est persistant lorsque l’appareil reprend le mode veille. 
 
 Voir Utiliser des scripts shell sur les appareils macOS dans [Intune](https://docs.microsoft.com/mem/intune/apps/macos-shell-scripts) pour obtenir des instructions plus détaillées sur l’utilisation de ce script dans votre entreprise.

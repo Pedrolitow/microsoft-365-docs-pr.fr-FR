@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f8986b3cb6b6fd846febefe8a64ab4099348f5b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5a74da55d733d690cb218c78b87b67d6eba6b9d2
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064318"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186052"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Examiner les incidents dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -58,7 +58,7 @@ Vous pouvez examiner les alertes et voir comment elles ont été liées dans un 
 - Même fichier : les fichiers associés à l’alerte sont exactement les mêmes
 - MÊME URL : l’URL qui a déclenché l’alerte est exactement la même
 
-![Image de l’onglet Alertes avec page détails de l’incident indiquant les raisons pour lesquelles les alertes ont été liées dans cet incident](images/atp-incidents-alerts-reason.png)
+![Image de l’onglet Alertes avec la page détails de l’incident indiquant les raisons pour lesquelles les alertes ont été liées dans cet incident](images/atp-incidents-alerts-reason.png)
 
 Vous pouvez également gérer une alerte et voir les métadonnées d’alerte ainsi que d’autres informations. Pour plus d’informations, voir [Examiner les alertes.](investigate-alerts.md) 
 
@@ -80,7 +80,7 @@ Chacune des entités analysées sera marquée comme infectée, corrigé ou suspe
 ![Image de l’onglet Preuve dans la page détails de l’incident](images/atp-incident-evidence-tab.png)
 
 ## <a name="visualizing-associated-cybersecurity-threats"></a>Visualisation des menaces de cybersécurité associées 
-Microsoft Defender pour le point de terminaison regroupe les informations sur les menaces dans un incident afin que vous pouvez voir les modèles et corrélations provenant de différents points de données. Vous pouvez afficher cette corrélation via le graphique d’incident.
+Microsoft Defender pour point de terminaison regroupe les informations sur les menaces dans un incident afin que vous pouvez voir les modèles et corrélations provenant de différents points de données. Vous pouvez afficher cette corrélation via le graphique d’incident.
 
 ### <a name="incident-graph"></a>Graphique de l’incident
 Graph **présente** l’histoire des attaques de cybersécurité. Par exemple, il vous montre quel était le point d’entrée, quel indicateur de compromission ou d’activité a été observé sur quel appareil. etc.

@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7163220809acbff934a4142ee8f4422ca5b66578
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f1cd2221ab07caeab341447ebd19824d7476fb52
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064065"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187372"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Nouveautés de Microsoft Defender pour Endpoint pour Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -60,13 +60,13 @@ ms.locfileid: "51064065"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0)
 
 - Amélioration de la fiabilité de l’agent lors de l’exécution sur macOS 11 Big Sur
-- Ajout d’un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions av lors `--ignore-exclusions` des analyses personnalisées ( `mdatp scan custom` )
+- Ajout d’un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions antivirus lors des `--ignore-exclusions` analyses personnalisées ( `mdatp scan custom` )
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
 
 - Conditions supprimées lorsque Microsoft Defender pour le point de terminaison déclenchant un bogue macOS 11 (Big Sur) qui se manifeste en noyau
-- Correction d’une fuite de mémoire dans l’extension système de sécurité des points de terminaison lors de l’exécution sur mac 11 (Big Sur)
+- Correction d’une fuite de mémoire dans l’extension du système de sécurité des points de terminaison lors de l’exécution sur mac 11 (Big Sur)
 - Résolutions de bogues
 
 ## <a name="1011072"></a>101.10.72
@@ -110,7 +110,7 @@ ms.locfileid: "51064065"
 
 ## <a name="1010663"></a>101.06.63
 
-- Nous avons résolu une régression des performances introduite dans la `101.05.17` version. La régression a été introduite avec le correctif pour éliminer les noyaux observés par certains clients lors de l’accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d’examiner d’autres façons d’éliminer les noyaux.
+- Nous avons résolu une régression des performances introduite dans la version `101.05.17` . La régression a été introduite avec le correctif pour éliminer les noyaux observés par certains clients lors de l’accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d’examiner d’autres façons d’éliminer les noyaux.
 
 ## <a name="1010517"></a>101.05.17
 
@@ -135,7 +135,7 @@ ms.locfileid: "51064065"
 ## <a name="1010154"></a>101.01.54
 
 - Améliorations en matière de compatibilité avec Time Machine
-- Améliorations de l’accessibilité
+- Améliorations en matière d’accessibilité
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1010031"></a>101.00.31
@@ -148,7 +148,7 @@ ms.locfileid: "51064065"
 
 ## <a name="1009027"></a>100.90.27
 
-- Vous pouvez désormais [définir un canal de mise](mac-updates.md#set-the-channel-name) à jour pour Microsoft Defender pour Point de terminaison pour Mac différent du canal de mise à jour à l’échelle du système
+- Vous pouvez désormais [définir un canal](mac-updates.md#set-the-channel-name) de mise à jour pour Microsoft Defender pour Point de terminaison pour Mac différent du canal de mise à jour à l’échelle du système
 - Icône Nouveau produit
 - Autres améliorations de l’expérience utilisateur
 - Résolutions de bogues
@@ -163,7 +163,7 @@ ms.locfileid: "51064065"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> Pour garantir la protection la plus complète pour vos appareils macOS et en adéquation avec l’arrêt par Apple des mises à jour de sécurité natives macOS aux versions de système d’exploitation antérieures à [actuel – 2], le déploiement et les mises à jour MDATP pour Mac ne seront plus pris en charge sur macOS Sierra [10.12]. Les mises à jour et améliorations de MDATP pour Mac seront apportées aux appareils exécutant les versions Derline [10.15], Mojave [10.14] et High Sierra [10.13]. 
+> Pour garantir la protection la plus complète pour vos appareils macOS et en adéquation avec l’arrêt par Apple de la distribution de mises à jour de sécurité natives macOS aux versions de système d’exploitation antérieures à [actuel – 2], le déploiement et les mises à jour MDATP pour Mac ne seront plus pris en charge sur macOS Sierra [10.12]. Les mises à jour et améliorations de MDATP pour Mac seront apportées aux appareils exécutant les versions Derline [10.15], Mojave [10.14] et High Sierra [10.13]. 
 >
 > Si vous avez déjà déployé MDATP pour Mac sur vos appareils Sierra [10.12], veuillez mettre à niveau vers la dernière version de macOS afin d’éliminer les risques de perte de protection.
 
@@ -203,7 +203,7 @@ ms.locfileid: "51064065"
 
 ## <a name="1006899"></a>100.68.99
 
-- Ajout de la possibilité de configurer la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif](mac-preferences.md#enable--disable-passive-mode)
+- Ajout de la possibilité de configurer la fonctionnalité antivirus pour qu’elle s’exécute [en mode passif](mac-preferences.md#enable--disable-passive-mode)
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1006528"></a>100.65.28

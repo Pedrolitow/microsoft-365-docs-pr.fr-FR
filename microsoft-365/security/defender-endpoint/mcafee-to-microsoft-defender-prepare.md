@@ -22,17 +22,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: c87ed20dd1d0c959a9af52fd766d0a34232747b2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: adc8c1259be1e226bf1c2592090cf6008c976cf8
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061633"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186628"
 ---
 # <a name="migrate-from-mcafee---phase-1-prepare-for-your-migration"></a>Migrer à partir de Mc Antivirus - Phase 1 : Préparer votre migration
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |![Phase 1 : Préparer](images/phase-diagrams/prepare.png)<br/>Phase 1 : Préparer |[![Phase 2 : Configurer](images/phase-diagrams/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Phase 2 : Configurer](mcafee-to-microsoft-defender-setup.md) |[![Phase 3 : Intégration](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Phase 3 : Intégration](mcafee-to-microsoft-defender-onboard.md) |
@@ -50,7 +50,7 @@ Cette phase de migration comprend les étapes suivantes :
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Obtenir et déployer des mises à jour sur les appareils de votre organisation
 
-Il est préférable de maintenir à jour les appareils et points de terminaison de votre organisation. Assurez-vous que votre solution Mc Antivirus Endpoint Security (Mc Antivirus) est à jour et que les systèmes d’exploitation et les applications de votre organisation ont également les dernières mises à jour. Cette action permet d’éviter les problèmes ultérieurement lors de la migration vers Microsoft Defender pour Endpoint et l’Antivirus Microsoft Defender.
+En tant que meilleure pratique, maintenez à jour les appareils et points de terminaison de votre organisation. Assurez-vous que votre solution Mc Antivirus Endpoint Security (Mc Antivirus) est à jour et que les systèmes d’exploitation et les applications de votre organisation ont également les dernières mises à jour. Cette action permet d’éviter les problèmes ultérieurement lors de la migration vers Microsoft Defender pour Endpoint et l’Antivirus Microsoft Defender.
 
 ### <a name="make-sure-your-mcafee-solution-is-up-to-date"></a>Assurez-vous que votre solution Mc Antivirus est à jour
 
@@ -68,7 +68,7 @@ Maintenez Mc Antivirus à jour et assurez-vous que les appareils de votre organi
 
 Vous avez besoin d’aide pour mettre à jour les appareils de votre organisation ? Consultez les ressources suivantes :
 
-|SYSTÈME D’EXPLOITATION | Resource |
+|SYSTÈME D’EXPLOITATION | Ressource |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Comment mettre à jour le logiciel sur votre Mac](https://support.apple.com/HT201541)|
@@ -120,7 +120,7 @@ Pour activer la communication entre vos appareils et Microsoft Defender pour le 
 |EDR |- [Windows Server 2016](https://docs.microsoft.com/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>- [Windows Server 2012 R2](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows 8.1](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows 7 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configurer les paramètres de proxy et de connectivité Internet](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel#configure-proxy-and-internet-connectivity-settings) |
 |EDR  |macOS : <br/>- 10.15 (Caserline)<br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra)  |[Microsoft Defender pour point de terminaison pour Mac : connexions réseau](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
 |[Antivirus Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 ou une ultérieure](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) <br/>- [Windows Server 2016](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-2016) |[Configurer et valider les connexions réseau à un antivirus Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)<br/> |
-|Antivirus |macOS : <br/>- 10.15 (Caserline)<br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra) |[Microsoft Defender pour point de terminaison pour Mac : connexions réseau](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
+|Antivirus |macOS : <br/>- 10.15 (Îles)<br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra) |[Microsoft Defender pour point de terminaison pour Mac : connexions réseau](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
 |Antivirus |Linux : <br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS ou un LTS supérieur<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Microsoft Defender pour point de terminaison pour Linux : connexions réseau](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux#network-connections) 
 
 ## <a name="next-step"></a>Étape suivante

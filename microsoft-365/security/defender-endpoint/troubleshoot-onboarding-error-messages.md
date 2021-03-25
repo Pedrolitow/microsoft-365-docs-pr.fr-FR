@@ -1,6 +1,6 @@
 ---
 title: Résoudre les problèmes d’intégration et les messages d’erreur
-description: Résoudre les problèmes d’intégration et le message d’erreur lors de la configuration de Microsoft Defender pour le point de terminaison.
+description: Résoudre les problèmes d’intégration et le message d’erreur lors de la configuration de Microsoft Defender pour endpoint.
 keywords: résolution des problèmes, dépannage, Azure Active Directory, intégration, message d’erreur, messages d’erreur, microsoft defender pour le point de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 63981d985140858cbbda54a10dc94b30f28131e5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b769c1b3e4201802ea6150358568bf57894d305
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064854"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185805"
 ---
-# <a name="troubleshoot-subscription-and-portal-access-issues"></a>Résoudre les problèmes d’abonnement et d’accès au portail
+# <a name="troubleshoot-subscription-and-portal-access-issues"></a>Résoudre les problèmes d’accès au portail et aux abonnements
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
@@ -47,7 +47,7 @@ Raisons potentielles :
     - Il peut s’agit d’un problème de mise en service de licence.
     - Il se peut que vous avez mis en service par inadvertance la licence sur un microsoft Azure AD différent de celui utilisé pour l’authentification dans le service.
 
-Dans les deux cas, vous devez contacter le support Microsoft à l’aide du support [général de Microsoft Defender pour](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) les points de terminaison ou du support de licence en [volume.](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)
+Dans les deux cas, vous devez contacter le support Microsoft à l’aide du support [général de Microsoft Defender pour](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) les points de terminaison ou de la prise en charge des [licences en volume.](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)
 
 ![Image d’aucun abonnement trouvé](images/atp-no-subscriptions-found.png)
 
@@ -55,10 +55,10 @@ Dans les deux cas, vous devez contacter le support Microsoft à l’aide du supp
 
 Si, lors de l’accès au Centre de sécurité Microsoft Defender, vous obtenez un **message** votre abonnement a expiré, votre abonnement de service en ligne a expiré. L’abonnement Microsoft Defender pour les points de terminaison, comme tout autre abonnement de service en ligne, a une date d’expiration. 
 
-Vous pouvez choisir de renouveler ou de prolonger la licence à tout moment. Lorsque vous accédez au portail après la date d’expiration, un **message** votre abonnement a expiré se présente avec une option pour télécharger le package de la sortie de l’appareil, si vous choisissez de ne pas renouveler la licence.
+Vous pouvez choisir de renouveler ou de prolonger la licence à tout moment. Lorsque vous accédez au portail après la date d’expiration d’un **message** de votre abonnement, une option vous permet de télécharger le package de sortie de l’appareil, si vous choisissez de ne pas renouveler la licence.
 
 > [!NOTE]
-> Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
+> Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
 ![Image de l’abonnement expiré](images/atp-subscription-expired.png)
 

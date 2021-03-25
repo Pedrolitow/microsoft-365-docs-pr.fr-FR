@@ -16,12 +16,12 @@ ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: ae50d53fbc9bf01d4cd16b939461eecc9ec1a568
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cd662dc130adc37b3bf8bd06839242ccc9a49f8e
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165176"
+ms.locfileid: "51185968"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec un accès contrôlé aux dossiers
 
@@ -40,7 +40,7 @@ L’accès contrôlé aux dossiers permet de protéger vos données précieuses 
 > [!NOTE]
 > Les moteurs de script ne sont pas fiables et vous ne pouvez pas leur autoriser l’accès aux dossiers protégés contrôlés.  Par exemple, PowerShell n’est pas approuvé par l’accès contrôlé aux [dossiers,](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates)même si vous l’autorisez avec des indicateurs de certificat et de fichier. 
 
-L’accès contrôlé aux dossiers fonctionne mieux avec [Microsoft Defender pour point](microsoft-defender-advanced-threat-protection.md)de terminaison, qui vous fournit des rapports détaillés sur les événements et les blocs d’accès contrôlé aux dossiers dans le cadre des scénarios d’investigation d’alerte [habituels.](investigate-alerts.md)
+L’accès contrôlé aux dossiers fonctionne mieux avec [Microsoft Defender pour point](microsoft-defender-endpoint.md)de terminaison, qui vous fournit des rapports détaillés sur les événements et les blocs d’accès contrôlé aux dossiers dans le cadre des scénarios d’investigation d’alerte [habituels.](investigate-alerts.md)
 
 > [!TIP]
 > Les blocs d’accès contrôlé aux dossiers ne génèrent pas d’alertes dans la file [d’attente des alertes.](alerts-queue.md) Toutefois, vous pouvez afficher des informations [](investigate-machines.md)sur les blocs d’accès contrôlés aux dossiers dans l’affichage chronologie de l’appareil, lors de l’utilisation d’un repérage avancé [ou](advanced-hunting-overview.md)avec des règles de [détection personnalisées.](custom-detection-rules.md)

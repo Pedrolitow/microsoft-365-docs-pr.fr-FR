@@ -16,21 +16,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6e2c18bd3710e659b5f9887844bc92528da4607
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6b080c209292c8cac1aa64d748926734f4be964c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062102"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185466"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Techniques dans la chronologie de l’appareil
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-Vous pouvez obtenir plus d’informations dans une enquête en analysant les événements qui se sont produit sur un appareil spécifique. Tout d’abord, sélectionnez l’appareil qui vous intéresse dans la [liste Appareils.](machines-view-overview.md) Dans la page Appareil, vous pouvez sélectionner l’onglet **Chronologie** pour afficher tous les événements qui se sont produits sur l’appareil.
+Vous pouvez obtenir plus d’informations dans une enquête en analysant les événements qui se sont produit sur un appareil spécifique. Tout d’abord, sélectionnez l’appareil qui vous intéresse dans la [liste Appareils.](machines-view-overview.md) Dans la page Appareil,  vous pouvez sélectionner l’onglet Chronologie pour afficher tous les événements qui se sont produits sur l’appareil.
 
 ## <a name="understand-techniques-in-the-timeline"></a>Comprendre les techniques dans la chronologie
 
@@ -51,11 +51,11 @@ Les options de recherche et d’exportation sont également disponibles pour les
 
 ## <a name="investigate-using-the-side-pane"></a>Examiner l’utilisation du volet latéral
 
-Sélectionnez une technique pour ouvrir son volet latéral correspondant. Vous y verrez des informations et des informations supplémentaires, telles que des techniques, des tactiques et des descriptions att&CK associées. 
+Sélectionnez une technique pour ouvrir son volet latéral correspondant. Vous pouvez y voir des informations et des informations supplémentaires, telles que des techniques, des tactiques et des descriptions att&CK associées. 
 
 Sélectionnez la *technique d’attaque* spécifique pour ouvrir la page de technique att&CK associée dans laquelle vous trouverez plus d’informations à ce sujet.
 
-Vous pouvez copier les détails d’une entité lorsque vous voyez une icône bleue à droite. Par exemple, pour copier le sha1 d’un fichier associé, sélectionnez l’icône de page bleue.
+Vous pouvez copier les détails d’une entité lorsque vous voyez une icône bleue sur la droite. Par exemple, pour copier le sha1 d’un fichier associé, sélectionnez l’icône de page bleue.
 
 ![Copier les détails de l’entité](images/techniques-side-pane-clickable.png)
 
@@ -91,13 +91,13 @@ Vous pouvez choisir les colonnes à exposer dans la chronologie en sélectionnan
 
 Pour afficher uniquement les événements ou les techniques, sélectionnez **Filtres** dans la chronologie de l’appareil et choisissez votre type de données préféré à afficher.
 
-![Capture d’écran des filtres](images/device-timeline-filters.png)
+![Capture d’écran filtres](images/device-timeline-filters.png)
 
 
 
 ## <a name="see-also"></a>Voir aussi
 - [Afficher et organiser la liste Appareils](machines-view-overview.md)
-- [Indicateurs d’événement de chronologie d’appareil Microsoft Defender pour point de terminaison](device-timeline-event-flag.md) 
+- [Indicateurs d’événement de chronologie de l’appareil microsoft Defender pour point de terminaison](device-timeline-event-flag.md) 
 
 
  

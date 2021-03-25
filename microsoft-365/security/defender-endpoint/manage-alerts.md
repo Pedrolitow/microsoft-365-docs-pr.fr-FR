@@ -1,7 +1,7 @@
 ---
 title: Gérer les alertes microsoft Defender pour les points de terminaison
 description: Modifiez l’état des alertes, créez des règles de suppression pour masquer les alertes, envoyez des commentaires et examinez l’historique des changements pour les alertes individuelles à l’intérieur du menu Gérer les alertes.
-keywords: gérer les alertes, gérer, alertes, état, nouveau, en cours, résolu, résoudre les alertes, supprimer, suppression, règles, contexte, historique, commentaires, modifications
+keywords: gérer les alertes, gérer, alertes, état, nouveau, en cours, résolu, résoudre les alertes, supprimer, supprimer, règles, contexte, historique, commentaires, modifications
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5acec4e9b43c8af7f85fadd31caefbb15e227029
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f03c2209b369e6fb9e001452c53073daeb5fe1c6
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062214"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187000"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Gérer les alertes microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -38,7 +38,7 @@ Defender pour le point de terminaison vous avertit des événements malveillants
 
 Vous pouvez gérer les alertes en sélectionnant une alerte dans la file d’attente des **alertes** ou l’onglet **Alertes** de la page Appareil pour un appareil individuel.
 
-La sélection d’une alerte à l’un de ces endroits fait monter le volet **de gestion des alertes.**
+La sélection d’une alerte dans l’un de ces lieux fait monter le volet **de gestion des alertes.**
 
 ![Image du volet de gestion des alertes et de la file d’attente des alertes](images/atp-alerts-selected.png)
 
@@ -81,7 +81,7 @@ Créez des règles personnalisées pour contrôler quand les alertes sont suppri
     
     * Fichier SHA1
     * Nom de fichier : caractère générique pris en charge
-    * Chemin d’accès au dossier - caractère générique pris en charge
+    * Chemin d’accès du dossier - caractère générique pris en charge
     * Adresse IP
     * URL : caractère générique pris en charge
     * Ligne de commande : caractère générique pris en charge

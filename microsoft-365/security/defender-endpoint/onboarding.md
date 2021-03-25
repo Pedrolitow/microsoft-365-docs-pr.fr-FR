@@ -1,5 +1,5 @@
 ---
-title: Intégrer au service Microsoft Defender ATP
+title: Intégration au service Microsoft Defender ATP
 description: Découvrez comment intégrer des points de terminaison au service Microsoft Defender ATP
 keywords: ''
 search.product: eADQiWindows 10XVcnh
@@ -18,19 +18,19 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2b3ce535ba5abddbf1175e568638f7ee186e093d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 56645553c43289995012d53d7caf879874e65c8a
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068486"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186928"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Intégration au service Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -85,7 +85,7 @@ Après avoir intégré les points de terminaison, vous allez configurer les diff
 ## <a name="example-deployments"></a>Exemples de déploiements
 Dans ce guide de déploiement, nous allons vous guider tout au long de l’utilisation de deux outils de déploiement pour intégrer des points de terminaison et configurer des fonctionnalités.
 
-Les outils de l’exemple de déploiement sont :
+Les outils de l’exemple de déploiement sont les :
 - [Intégration à l’aide de Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Intégration à l’aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 

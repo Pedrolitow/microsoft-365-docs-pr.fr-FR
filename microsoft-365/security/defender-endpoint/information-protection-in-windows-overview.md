@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d8f76786d4ee0bb96221d765bc1c3de0523c391
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 733f86ed48b9cc7a68fb0cd346c7b15fdcc3ce65
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065817"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187504"
 ---
 # <a name="information-protection-in-windows-overview"></a>Vue d’ensemble de la protection des informations dans Windows
 
@@ -29,10 +29,10 @@ ms.locfileid: "51065817"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -53,7 +53,7 @@ Defender pour le point de terminaison applique les méthodes suivantes pour déc
 
 Defender pour le point de terminaison découvre automatiquement les fichiers avec des étiquettes de sensibilité et les fichiers qui contiennent des types d’informations sensibles.
 
-Les étiquettes de sensibilité classent et aident à protéger le contenu sensible.
+Les étiquettes de sensibilité classifient et aident à protéger le contenu sensible.
 
 Les types d’informations sensibles dans l’implémentation de la protection contre la perte de données Office 365 relèvent de deux catégories :
 
@@ -76,7 +76,7 @@ Les signaux signalés peuvent être vus dans le tableau de bord Azure Informatio
 
 Ce tableau de bord présente une synthèse des informations de découverte des données découvertes par Defender pour Endpoint et Azure Information Protection. Les données de Defender pour le point de terminaison sont marquées avec type d’emplacement - Point de terminaison.
 
-![Image d’Azure Information Protection - Découverte des données](images/azure-data-discovery.png)
+![Image d’Azure Information Protection - Découverte de données](images/azure-data-discovery.png)
 
 Notez que la colonne Risque de l’appareil sur la droite, ce risque d’appareil est dérivé directement de Defender pour point de terminaison, indiquant le niveau de risque du périphérique de sécurité où le fichier a été découvert, en fonction des menaces de sécurité actives détectées par Defender pour le point de terminaison.
 
@@ -93,7 +93,7 @@ Pour plus d’informations sur l’analyse d’Azure Information Protection, voi
 
 Ouvrez Azure Log Analytics dans le portail Azure et ouvrez un générateur de requêtes (standard ou classique).
 
-Pour afficher les données de Defender for Endpoint, effectuez une requête qui contient :
+Pour afficher les données defender pour point de terminaison, exécutez une requête qui contient :
 
 ```
 InformationProtectionLogs_CL

@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3376308988213b84bc7badb96ebacdf706d1ca5f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7754fa586b24fdedaa9691b45f5da4654c882a5b
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063633"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185980"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Protéger votre organisation contre les menaces web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
@@ -38,8 +38,8 @@ La protection contre les menaces web fait partie de [la protection Web](web-prot
 >[!Note]
 >La réception de nouveaux indicateurs client sur les appareils peut prendre jusqu’à une heure.
 
-## <a name="prerequisites"></a>Prerequisites
-La protection web utilise la protection réseau pour assurer la sécurité de la navigation web sur Microsoft Edge et les navigateurs web tiers.
+## <a name="prerequisites"></a>Conditions préalables
+La protection web utilise la protection réseau pour assurer la sécurité de navigation web sur Microsoft Edge et les navigateurs web tiers.
 
 Pour activer la protection réseau sur vos appareils :
 - Modifiez la ligne de base de sécurité Defender for Endpoint sous **Web & Network Protection** pour activer la protection réseau avant de la déployer ou de la redéployer. [En savoir plus sur l’examen et l’affectation de la ligne de base de sécurité defender pour point de terminaison](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)

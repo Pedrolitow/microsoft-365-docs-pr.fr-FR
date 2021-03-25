@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 09d5ba98e69e61ce13e5a076938f21047ddb0e64
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 16b238a1d38e1aad70a4286d4ce8ecae1aae9a21
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061382"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186604"
 ---
 # <a name="supported-managed-security-service-providers"></a>Fournisseurs de services de sécurité gérés pris en charge
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -38,20 +38,20 @@ Logo |Nom du partenaire   | Description
 :---|:---|:---
 ![Image du logo numérique BDO](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | La défense gérée de BDO Digital tire parti des outils de meilleures pratiques, de l’IA et des experts en matière de sécurité interne pour la protection des identités 24/7/365
 ![Image du logo BlueVoyant](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MdR pour Microsoft Defender for Endpoint prend en charge la surveillance, l’analyse et la réduction des attaques avancées sur les points de terminaison
-![Image du logo du Centre de sécurité cloud](images/cloudsecuritycenter-logo.png)| [Centre de sécurité cloud](https://go.microsoft.com/fwlink/?linkid=2099315) | Le Centre de sécurité cloud d’InSpark est un service géré 24 heures sur 24 et 7 jours sur 7 qui offre des fonctionnalités de protection et & de réponse
+![Image du logo du Centre de sécurité cloud](images/cloudsecuritycenter-logo.png)| [Centre de sécurité cloud](https://go.microsoft.com/fwlink/?linkid=2099315) | Le Centre de sécurité cloud d’InSpark est un service géré 24 heures sur 24 et 7 jours sur 7 qui offre des fonctionnalités de protection, de détection & de réponse
 ![Image du logo SOC cloud](images/cloudsoc-logo.png)| [Cloud SOC](https://go.microsoft.com/fwlink/?linkid=2104265) | La soc cloud fournit des services de surveillance de la sécurité 24 h/24 et 7 j/7 basés sur le cloud Microsoft et vous aide à améliorer en permanence votre posture de sécurité
 ![Image du logo de réponse & de détection gérée CSIS](images/csis-logo.png)| [Réponse & de détection gérée CSIS](https://go.microsoft.com/fwlink/?linkid=2091005) | Surveillance et analyse 24 h/24 et 7 j/7 des alertes de sécurité qui donnent aux entreprises des informations sur ce qui, quand et comment les incidents de sécurité ont eu lieu
 ![Image du logo Dell Technologies - Protection avancée contre les menaces](images/dell-logo.png)| [Dell Technologies - Protection avancée contre les menaces](https://go.microsoft.com/fwlink/?linkid=2091004) | Service de surveillance professionnel pour les comportements malveillants et les anomalies avec fonctionnalité 24 h/24 et 7 j/7
 ![Image du logo DXC-Managed détection et réponse des menaces de point de terminaison](images/dxc-logo.png)| [Détection et réponse aux menaces de point de terminaison géré par DXC](https://go.microsoft.com/fwlink/?linkid=2090395) | Identifier les menaces de point de terminaison qui évitent les défenses de sécurité traditionnelles et les contenir en heures ou minutes, et non en jours
-![Image du journal eSentire](images/esentire-logo.png) | [eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | Examens et réponses aux menaces 24 heures sur 24 et 7 jours sur 7 via Microsoft Defender pour le point de terminaison.
+![Image du journal eSentire](images/esentire-logo.png) | [eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | Enquêtes sur les menaces et réponse 24 heures sur 24 et 7 jours sur 7 via Microsoft Defender for Endpoint.
 ![Image du logo de sécurité NTT](images/ntt-logo.png)| [Sécurité NTT](https://go.microsoft.com/fwlink/?linkid=2095320) | Le service EDR de NTT fournit une surveillance de la sécurité 24 heures sur 24 & sur votre point de terminaison et votre réseau
 ![Image du logo OneVinn](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| Détection et réponse gérées 24/7, conçues sur Microsoft Defender et Azure Sentinel, enrichies de l’intelligence contre les menaces de Onevinn.
-![Image du logo Quorum Cyber](images/quorum-logo.png) | [Quorum Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| Un service d’ingénierie de sécurité de pointe & de recherche de menaces.
-![Image du logo canary rouge](images/redcanary-logo.png)| [Canary rouge](https://go.microsoft.com/fwlink/?linkid=2103852) | Red Canary est un partenaire des opérations de sécurité pour les équipes modernes, mdr déployé en minutes
+![Image du logo Quorum Cyber](images/quorum-logo.png) | [Quorum Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| Un service d’ingénierie de sécurité et de & de recherche de menaces de pointe.
+![Image du logo rouge canary](images/redcanary-logo.png)| [Canary rouge](https://go.microsoft.com/fwlink/?linkid=2103852) | Red Canary est un partenaire des opérations de sécurité pour les équipes modernes, mdr déployé en minutes
 ![Image du logo SecureWorks Managed Detection and Response Powered by Red Caption](images/secureworks-logo.png)| [Détection et réponse gérées SecureWorks optimisées par l’environnement rouge](https://go.microsoft.com/fwlink/?linkid=2133634) | Secureworks combine l’intelligence des menaces et plus de 20 ans d’expérience dans SaaS et les solutions de sécurité gérées
 ![Image du logo sepagoSOC](images/sepago-logo.png)| [sepagoSOC](https://go.microsoft.com/fwlink/?linkid=2090491) | Garantir une sécurité globale par le biais de flux de travail automatisés sophistiqués dans votre environnement de confiance zéro
 ![Image du logo Response Services de détection des menaces & Trustwave](images/trustwave-logo.png)| [Trustwave Threat Detection & Response Services](https://go.microsoft.com/fwlink/?linkid=2127542) | Services de détection et de réponse aux menaces pour Azure tirant parti des intégrations avec Sentinel et Defender pour point de terminaison
-![Image des services de sécurité gérés de White Managed Security](images/white-shark.png)| [White Shark Managed Security Services](https://go.microsoft.com/fwlink/?linkid=2154210) |Véritable approche experte de la cybersécurité avec une tarification transparente sur chaque plateforme, mobile inclus.
+![Image des services de sécurité gérés whites](images/white-shark.png)| [Services de sécurité gérés whites](https://go.microsoft.com/fwlink/?linkid=2154210) |Véritable approche experte de la cybersécurité avec une tarification transparente sur chaque plateforme, mobile inclus.
 ![Image du logo SOC cloud deTelltell](images/wortell-logo.png)| [SOC cloud deTell](https://go.microsoft.com/fwlink/?linkid=2108415) | Service Defender pour point de terminaison géré 24 h/24 et 7 j/7 pour la surveillance & réponse
 ![Image du logo ZTAP (Zero Trust Analytics Platform)](images/ztap-logo.png)| [Plateforme d’analyse de confiance zéro (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | Réduisez vos alertes de 99 % et accédez à une gamme complète de fonctionnalités de sécurité à partir d’appareils mobiles
 

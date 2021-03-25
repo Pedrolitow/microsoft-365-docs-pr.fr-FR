@@ -1,7 +1,7 @@
 ---
 title: Afficher et organiser la liste des appareils Microsoft Defender ATP
 description: Découvrez les fonctionnalités disponibles que vous pouvez utiliser dans la liste Appareils, telles que le tri, le filtrage et l’exportation de la liste pour améliorer les examens.
-keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
+keywords: trier, filtrer, exporter, csv, nom de l’appareil, domaine, dernière vue, IP interne, état d’état, alertes actives, détections de programmes malveillants actifs, catégorie de menace, passer en revue les alertes, réseau, connexion, programme malveillant, type, programme malveillant, programme malveillant, ransomware, attaque, menace, programme malveillant général, logiciel indésirable
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 01ad9f92299cd9d1b4a723bdec54f86f32ca8274
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9068983b5f61305b1f3da4d076e99e71974e8df4
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068545"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185670"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Afficher et organiser la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -29,7 +29,7 @@ ms.locfileid: "51068545"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
@@ -68,7 +68,7 @@ Le niveau d’exposition reflète l’exposition actuelle de l’appareil en fon
 Si le niveau d’exposition indique « Aucune donnée disponible », il existe plusieurs raisons pour lesquelles cela peut être le cas :
 
 - L’appareil a cessé de signaler pendant plus de 30 jours. Dans ce cas, il est considéré comme inactif et l’exposition n’est pas calculée
-- Le système d’exploitation de l’appareil n’est [pas pris en charge : voir les conditions minimales requises pour Microsoft Defender pour endpoint](minimum-requirements.md)
+- Le système d’exploitation de l’appareil n’est [pas pris en charge : voir la conditions minimales requises pour Microsoft Defender pour endpoint](minimum-requirements.md)
 - Appareil avec agent obsolète (très peu probable)
 
 ### <a name="os-platform"></a>Plateforme du système d’exploitation
@@ -89,7 +89,7 @@ Filtrez selon les états d’état d’état d’appareil suivants :
 
 ### <a name="antivirus-status"></a>État de l’antivirus
 
-Filtrer les appareils par état antivirus. S’applique uniquement aux appareils Windows 10 actifs.
+Filtrez les appareils par état antivirus. S’applique uniquement aux appareils Windows 10 actifs.
 
 - **Désactivé :** la protection contre & virus est désactivée.
 - **Not reporting** : la protection contre & contre les virus n’est pas un rapport.

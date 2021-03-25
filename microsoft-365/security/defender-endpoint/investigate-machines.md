@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8873177f13ebe8d60533877fa9b8dc0be96a66f9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8f5415b6337d21b780a75a192a565078a6cacc06
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066942"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185730"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -31,10 +31,10 @@ ms.locfileid: "51066942"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 Examinez les détails d’une alerte sur un appareil spécifique pour identifier d’autres comportements ou événements qui peuvent être liés à l’alerte ou à l’étendue potentielle de la violation.
 
@@ -77,7 +77,7 @@ Les actions de réponse s’exécutent le long de la partie supérieure d’une 
 - Consulter un expert en menaces
 - Centre de notifications
 
-Vous pouvez prendre des mesures de réponse dans le centre de réponse, dans une page d’appareil spécifique ou dans une page de fichier spécifique.
+Vous pouvez prendre des mesures de réponse dans le centre de réponse, dans une page d’appareil spécifique ou dans une page de fichiers spécifique.
 
 Pour plus d’informations sur la façon d’agir sur un appareil, voir [Prendre une action de réponse sur un appareil.](respond-machine-alerts.md)
 
@@ -106,13 +106,13 @@ Pour afficher une vue de page complète d’une alerte, y compris le graphique d
 
 **L’onglet** Chronologie fournit une vue chronologique des événements et des alertes associées qui ont été observés sur l’appareil. Cela peut vous aider à corréler tous les événements, fichiers et adresses IP par rapport à l’appareil.
 
-La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil sur une période sélectionnée. Pour contrôler davantage votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
+La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil pendant une période sélectionnée. Pour contrôler davantage votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
 
 >[!NOTE]
 > Pour afficher les événements de pare-feu, vous devez activer la stratégie d’audit, voir Connexion à la plateforme de filtrage [d’audit.](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 >Le pare-feu couvre les événements suivants
 >
->- [5025](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) : service de pare-feu arrêté
+>- [5025](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) - Service de pare-feu arrêté
 >- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) : application bloquée pour accepter les connexions entrantes sur le réseau
 >- [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) : connexion bloquée
 
@@ -124,7 +124,7 @@ Voici quelques-unes des fonctionnalités :
   - Utilisez la barre de recherche pour rechercher des événements de chronologie spécifiques.
 - Filtrer les événements à partir d’une date spécifique
   - Sélectionnez l’icône de calendrier dans le coin supérieur gauche du tableau pour afficher les événements du dernier jour, semaine, 30 jours ou plage personnalisée. Par défaut, la chronologie de l’appareil est définie pour afficher les événements des 30 derniers jours.
-  - Utilisez la chronologie pour passer à un moment spécifique dans le temps en mettant en surbrillance la section. Les flèches de la chronologie recherchent des investigations automatisées
+  - Utilisez la chronologie pour passer à un moment spécifique dans le temps en mettant en surbrillance la section. Les flèches sur la chronologie recherchent des investigations automatisées
 - Exporter des événements de chronologie détaillés de l’appareil
   - Exportez la chronologie de l’appareil pour la date actuelle ou une plage de dates spécifiée jusqu’à sept jours.
 
@@ -136,10 +136,10 @@ Des informations supplémentaires sur certains événements sont fournies dans l
 - Correction réussie : la menace détectée a été arrêtée et nettoyée
 - Avertissement contourné par l’utilisateur : l’avertissement Windows Defender SmartScreen a été rejeté et contourné par un utilisateur
 - Script suspect détecté : un script potentiellement malveillant a été détecté en cours d’exécution
-- Catégorie d’alerte : si l’événement a entraîné la génération d’une alerte, la catégorie d’alerte ( « Mouvement latéral », par exemple) est fournie.
+- Catégorie d’alerte : si l’événement a conduit à la génération d’une alerte, la catégorie d’alerte ( « Mouvement latéral », par exemple) est fournie.
 
 #### <a name="event-details"></a>Détails de l'événement
-Sélectionnez un événement pour afficher les détails pertinents sur cet événement. Un panneau s’affiche pour afficher des informations générales sur les événements. Le cas échéant et lorsque des données sont disponibles, un graphique montrant les entités associées et leurs relations est également affiché.
+Sélectionnez un événement pour afficher les détails pertinents sur cet événement. Un panneau s’affiche pour afficher des informations générales sur les événements. Le cas échéant et si des données sont disponibles, un graphique montrant les entités associées et leurs relations est également affiché.
 
 Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) et les événements connexes, vous pouvez rapidement exécuter une requête de recherche avancée en sélectionnant **Hunt pour les événements connexes.** La requête retourne l’événement sélectionné et la liste des autres événements qui se sont produits au même moment sur le même point de terminaison.
 
@@ -147,7 +147,7 @@ Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) 
 
 ### <a name="security-recommendations"></a>Recommandations de sécurité
 
-**Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité gestion des menaces [& des vulnérabilités](tvm-dashboard-insights.md) du point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
+**Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité de gestion des menaces [& vulnérabilités du](tvm-dashboard-insights.md) point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
 
 ![Image de l’onglet Recommandations de sécurité](images/security-recommendations-device.png)
 
@@ -193,7 +193,7 @@ La **carte d’évaluation de** la sécurité indique le niveau d’exposition g
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison](alerts-queue.md)
+- [Afficher et organiser la file d’attente des alertes de Microsoft Defender pour les points de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)
 - [Examiner un fichier associé à une alerte Defender for Endpoint](investigate-files.md)

@@ -19,19 +19,19 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: a801b6153cf3f273290721756440cfe974103e92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b509ab6d0c3e5183b99173e950198bad0ccd8ee0
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064569"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186064"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -90,7 +90,7 @@ La carte de prévalence du fichier indique où le fichier a été vu sur les app
 L’onglet Observé **dans l’organisation** vous permet de spécifier une plage de dates pour voir quels appareils ont été observés avec le fichier.
 
 >[!NOTE]
->Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet dans un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
+>Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet vers un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
 
 ![Image de l’appareil observé le plus récent avec le fichier](images/atp-observed-machines.png)
 
@@ -98,7 +98,7 @@ Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une pé
 
 ## <a name="deep-analysis"></a>Analyse approfondie
 
-**L’onglet** Analyse approfondie vous permet d’envoyer le fichier pour analyse [approfondie,](respond-file-alerts.md#deep-analysis)de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois le fichier soumis, le rapport d’analyse approfondie s’affiche dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
+**L’onglet** Analyse approfondie vous permet d’envoyer le fichier pour analyse [approfondie,](respond-file-alerts.md#deep-analysis)de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois que vous avez soumis le fichier, le rapport d’analyse approfondie apparaît dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
 
 ![Image de l’onglet Analyse approfondie](images/submit-file.png)
 

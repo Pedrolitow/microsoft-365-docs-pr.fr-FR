@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de205e78ce36790f5290f2716a44048da732f00e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: aa7f2df1f0164f24c7f4698e8aa0b699f4884c09
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066281"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186220"
 ---
 # <a name="microsoft-defender-security-center-portal-overview"></a>Vue d’ensemble du portail Centre de sécurité Microsoft Defender
 
@@ -29,7 +29,7 @@ ms.locfileid: "51066281"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -69,9 +69,9 @@ Domaine | Description
 **Rapports** | Affichez des graphiques détaillant la protection contre les menaces, l’état et la conformité des appareils, la protection web et la vulnérabilité.
 **API & partenaires** | Afficher les connexions partenaires prise en charge, ce qui améliore les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme. Vous pouvez également afficher les applications connectées, l’explorateur d’API, la vue d’ensemble de l’utilisation de l’API et les paramètres d’exportation des données.
 **Gestion des & menaces** | Affichez votre score de sécurité Microsoft pour les appareils, le score d’exposition, les appareils exposés, les logiciels vulnérables et prenez des mesures sur les recommandations de sécurité les plus importantes.
-**Évaluation et didacticiels** | Gérer les périphériques de test, les simulations d’attaques et les rapports. Découvrez et découvrez les fonctionnalités de Defender for Endpoint par le biais d’une procédure pas à pas dans un environnement d’évaluation.
+**Évaluation et didacticiels** | Gérer les périphériques de test, les simulations d’attaques et les rapports. Découvrez et découvrez les fonctionnalités de Defender for Endpoint par le biais d’une procédure pas à pas guidée dans un environnement d’évaluation.
 **État des services** | Fournit des informations sur l’état actuel du service Defender for Endpoint. Vous serez en mesure de vérifier que l’état du service est sain ou s’il existe des problèmes actuels.
-**Gestion de la configuration** | Affiche les appareils connectés, la ligne de base de sécurité de votre organisation, l’analyse prédictive, la couverture de la protection web et vous permet d’effectuer la gestion de la surface d’attaque sur vos appareils.
+**Gestion de la configuration** | Affiche les appareils sur site, la ligne de base de sécurité de votre organisation, l’analyse prédictive, la couverture de la protection web et vous permet d’effectuer la gestion de la surface d’attaque sur vos appareils.
 **Settings** | Affiche les paramètres que vous avez sélectionnés lors de l’intégration et vous permet de mettre à jour vos préférences du secteur et la période de stratégie de rétention. Vous pouvez également définir d’autres paramètres de configuration tels que les autorisations, les API, les règles, la gestion des appareils, la gestion des services informatiques et les évaluations réseau.
 **(2) Recherche, Centre communautaire, Localisation, Aide et support, Commentaires** | **Recherche** : recherche par appareil, fichier, utilisateur, URL, ADRESSE IP, vulnérabilité, logiciel et recommandation. </br></br> **Centre communautaire** : accédez au Centre communautaire pour découvrir, collaborer et partager des expériences sur le produit. </br></br>  **Localisation :** définir des fuseaux horaires. </br></br>  Aide **et support** : accédez au guide Defender pour point de terminaison, au support Microsoft et Microsoft Premier, aux informations de licence, aux simulations & didacticiels, au laboratoire d’évaluation de Defender for Endpoint, consultez un expert en menaces.</br></br> **Commentaires** : fournissez des commentaires sur ce que vous aimez ou ce que nous pouvons faire de mieux.
 
@@ -90,7 +90,7 @@ Icône | Description
 ![Icône Menace active](images/active-threat-icon.png)| Menace active : menaces qui s’exécutent activement au moment de la détection.
 ![Icône1 corrigé](images/remediated-icon.png)| Corrigé : menace supprimée de l’appareil.
 ![Icône Non corrigé](images/not-remediated-icon.png)| Non corrigé : menace non supprimée de l’appareil.
-![Icône Thunderbolt](images/atp-thunderbolt-icon.png)| Indique les événements qui ont déclenché une alerte dans **l’arborescence du processus d’alerte.**
+![Icône Thunderbolt](images/atp-thunderbolt-icon.png)| Indique les événements qui ont déclenché une alerte dans l’arborescence **du processus d’alerte.**
 ![Icône d’appareil](images/atp-machine-icon.png)| Icône d’appareil
 ![Icône événements de l’Antivirus Microsoft Defender](images/atp-windows-defender-av-events-icon.png)| Événements de l’Antivirus Microsoft Defender
 ![Icône d’événements Application Guard](images/atp-Application-Guard-events-icon.png)| Windows Defender événements Application Guard
@@ -106,11 +106,11 @@ Icône | Description
 ![Icône Événements DLL de chargement de module](images/atp-module-load-icon.png)| Charger les événements DLL
 ![Icône Autres événements](images/atp-Other-events-icon.png)| Autres événements
 ![Icône de modification du jeton d’accès](images/atp-access-token-modification-icon.png)| Modification du jeton d’accès
-![Icône de création de fichier](images/atp-file-creation-icon.png)| Création de fichier
+![Icône de création de fichier](images/atp-file-creation-icon.png)| Création de fichiers
 ![Icône Signataire](images/atp-signer-icon.png)| Signataire
 ![Icône Chemin d’accès au fichier](images/atp-File-path-icon.png)| File path
 ![Icône de ligne de commande](images/atp-command-line-icon.png)| Ligne de commande
-![Icône Fichier non signé](images/atp-unsigned-file-icon.png)| Fichier non signé
+![Icône de fichier non signé](images/atp-unsigned-file-icon.png)| Fichier non signé
 ![Icône d’arborescence de processus](images/atp-process-tree.png)| Arborescence de processus
 ![Icône Allocation de mémoire](images/atp-memory-allocation-icon.png)| Allocation de mémoire
 ![Icône d’injection de processus](images/atp-process-injection.png)| Injection de processus

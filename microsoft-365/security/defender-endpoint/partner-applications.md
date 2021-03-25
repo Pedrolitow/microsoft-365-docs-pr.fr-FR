@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f7b2157fe710df2226fa8e57020dab8f51f1a544
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 79db436c2017c00e1b5d669797c5fb025f651a8a
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063950"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186232"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applications partenaires dans Microsoft Defender pour point de terminaison 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -40,7 +40,7 @@ Defender pour le point de terminaison prend en charge des applications tierces p
 
 La prise en charge de solutions tierces permet de rationaliser, d’intégrer et d’orchestrer davantage les défenses d’autres fournisseurs avec Microsoft Defender for Endpoint ; permettre aux équipes de sécurité de répondre efficacement mieux aux menaces modernes.
 
-Microsoft Defender pour point de terminaison s’intègre de façon transparente aux solutions de sécurité existantes. L’intégration offre une intégration avec les solutions suivantes, telles que :
+Microsoft Defender for Endpoint s’intègre de façon transparente aux solutions de sécurité existantes. L’intégration offre une intégration avec les solutions suivantes, telles que :
 
 - SIEM
 - Solutions de gestion des tickets et des services it
@@ -57,7 +57,7 @@ Microsoft Defender pour point de terminaison s’intègre de façon transparente
 Logo |Nom du partenaire   | Description 
 :---|:---|:---
 ![Image du logo AttackIQ](images/attackiq-logo.png)| [Plateforme AttackIQ](https://go.microsoft.com/fwlink/?linkid=2103502) | La plateforme AttackIQ valide que Defender pour endpoint est configuré correctement en lançant des attaques continues en toute sécurité sur les ressources de production
-![Image du logo Azure Sentinel](images/sentinel-logo.png)| [AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705) | Diffuser des alertes de Microsoft Defender pour point de terminaison dans Azure Sentinel 
+![Image du logo Azure Sentinel](images/sentinel-logo.png)| [AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705) | Diffuser des alertes à partir de Microsoft Defender pour point de terminaison dans Azure Sentinel 
 ![Image du logo Cymulate](images/cymulate-logo.png) | [Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)| Corréler les résultats de Defender pour les points de terminaison avec des attaques simulées pour valider la détection précise et les actions de réponse efficaces
 ![Image du logo de sécurité élastique](images/elastic-security-logo.png) | [Sécurité élastique](https://go.microsoft.com/fwlink/?linkid=2139303) | La sécurité élastique est une solution gratuite et ouverte pour la prévention, la détection et la réponse aux menaces
 ![Image du logo IBM QRadar](images/ibm-qradar-logo.png) | [IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903) | Configurer IBM QRadar pour collecter les détections à partir de Defender for Endpoint 
@@ -107,7 +107,7 @@ Logo |Nom du partenaire   | Description
 ![Image du logo Bitdefender](images/bitdefender-logo.png)| [Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)| Bitdefender GravityZone est une plateforme de protection de point de terminaison nouvelle génération en couches offrant une protection complète contre la gamme complète des cybermenaces sophistiquées
 ![Image du logo Better Mobile](images/bettermobile-logo.png) | [Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)| Solution MTD basée sur l’IA pour arrêter les menaces mobiles & hameçonnage. Navigation internet privée pour protéger la confidentialité des utilisateurs 
 ![Image du logo Corrata](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | Solution mobile : protéger vos appareils mobiles avec une visibilité et un contrôle granulaires de Corrata 
-![Image du logo De la recherche](images/lookout-logo.png)| [Point d’observation](https://go.microsoft.com/fwlink/?linkid=866935)| Obtenir la télémétrie Protection mobile contre les menaces de recherche pour les appareils mobiles Android et iOS
+![Image du logo De Point de garde](images/lookout-logo.png)| [Point d’observation](https://go.microsoft.com/fwlink/?linkid=866935)| Obtenir la télémétrie Protection mobile contre les menaces de recherche pour les appareils mobiles Android et iOS
 ![Image du logo Symantec Endpoint Protection Mobile](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP Mobile permet aux entreprises de prévoir, détecter et prévenir les menaces et vulnérabilités de sécurité sur les appareils mobiles 
 ![Image du logo Zimperium](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Étendre votre defender pour point de terminaison à iOS et Android avec la protection contre les menaces mobiles basée sur l’apprentissage automatique
 
@@ -125,7 +125,7 @@ Logo |Nom du partenaire   | Description
 
 
 ## <a name="siem-integration"></a>Intégration SIEM
-Defender pour point de terminaison prend en charge l’intégration SIEM par le biais de différentes méthodes. Cela peut inclure une interface système SIEM spécialisée avec des connecteurs standard, une API d’alerte générique activant des implémentations personnalisées et une API d’action activant la gestion de l’état des alertes.  Pour plus d’informations, voir [Activer l’intégration SIEM.](enable-siem-integration.md)
+Defender pour le point de terminaison prend en charge l’intégration SIEM par le biais de différentes méthodes. Cela peut inclure une interface système SIEM spécialisée avec des connecteurs standard, une API d’alerte générique activant des implémentations personnalisées et une API d’action activant la gestion de l’état des alertes.  Pour plus d’informations, voir [Activer l’intégration SIEM.](enable-siem-integration.md)
 
 
 ## <a name="ticketing-and-it-service-management"></a>Gestion des tickets et du service it 

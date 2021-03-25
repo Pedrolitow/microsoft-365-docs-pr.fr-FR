@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 38d6d4f3ce1fd6a6ba51b2ac0802892c036f3e50
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 599eab29628d11d67843f89a0eb59bb4db1e66ad
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068465"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185454"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>Comprendre le rapport d’analyste dans l’analyse des menaces
 
@@ -30,7 +30,7 @@ ms.locfileid: "51068465"
 
 **S’applique à :**
 - [Microsoft Defender – Protection avancée contre les menaces (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,9 +49,9 @@ Chaque section du rapport d’analyste est conçue pour fournir des informations
 | Résumé exécutif | Vue d’ensemble de la menace, y compris la première fois qu’elle a été vue, ses motivations, les événements notables, les cibles principales et des outils et techniques distincts. Vous pouvez utiliser ces informations pour évaluer plus en détail comment hiérarchiser la menace dans le contexte de votre secteur d’activité, de votre emplacement géographique et de votre réseau. |
 | Analyse | Informations techniques sur les menaces, y compris les détails d’une attaque et la façon dont les attaquants peuvent utiliser une nouvelle technique ou une nouvelle surface d’attaque | 
 | Techniques MITRE ATT&CK observées | Comment les techniques observées sont m maprées à l’infrastructure d&[ATT MITRE](https://attack.mitre.org/) | 
-| [Atténuations](#apply-additional-mitigations) | Recommandations qui peuvent s’arrêter ou réduire l’impact de la menace. Cette section inclut également les atténuations qui ne sont pas suivis dynamiquement dans le cadre du rapport d’analyse des menaces. |
+| [Atténuations](#apply-additional-mitigations) | Recommandations qui peuvent arrêter ou réduire l’impact de la menace. Cette section inclut également les atténuations qui ne sont pas suivis dynamiquement dans le cadre du rapport d’analyse des menaces. |
 | [Détails de la détection](#understand-how-each-threat-can-be-detected) | Détections spécifiques et génériques fournies par les solutions de sécurité Microsoft qui peuvent faire surface de l’activité ou des composants associés à la menace. | 
-| [Repérage avancé](#find-subtle-threat-artifacts-using-advanced-hunting) | [Requêtes de recherche avancées pour](advanced-hunting-overview.md) identifier de manière proactive l’activité potentielle des menaces. La plupart des requêtes sont fournies pour compléter les détections, en particulier pour localiser des composants ou des comportements potentiellement malveillants qui n’ont pas pu être évalués dynamiquement comme malveillants. | 
+| [Repérage avancé](#find-subtle-threat-artifacts-using-advanced-hunting) | [Requêtes de recherche avancées pour](advanced-hunting-overview.md) identifier de manière proactive l’activité potentielle de menace. La plupart des requêtes sont fournies pour compléter les détections, en particulier pour localiser des composants ou des comportements potentiellement malveillants qui n’ont pas pu être évalués dynamiquement comme malveillants. | 
 | Références | Publications Microsoft et tierces référencés par les analystes lors de la création du rapport. Le contenu de l’analyse des menaces est basé sur des données validées par des chercheurs Microsoft. Les informations provenant de sources tierces accessibles au public sont clairement identifiées en tant que telles. | 
 | Journal des modifications | L’heure de publication du rapport et les modifications importantes apportées au rapport. |
 
@@ -77,11 +77,11 @@ Ces détections sont disponibles sur les appareils où [l’Antivirus Microsoft 
 >Le rapport d’analyste répertorie également les **détections génériques** qui peuvent identifier un large éventail de menaces, en plus des composants ou comportements spécifiques à la menace de suivi. Ces détections génériques ne sont pas reflétées dans les graphiques.
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Alertes de détection et de réponse des points de terminaison (EDR)
-Les alertes EDR sont élevées pour les [appareils intégrés à Microsoft Defender pour le point de terminaison.](onboard-configure.md) Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender for Endpoint et d’autres fonctionnalités de point de terminaison telles que l’antivirus, la protection réseau, la protection contre la falsification, qui servent de sources de signal puissantes.
+Les alertes EDR sont élevées pour les [appareils intégrés à Microsoft Defender pour le point de terminaison.](onboard-configure.md) Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender for Endpoint et d’autres fonctionnalités de point de terminaison, telles que les antivirus, la protection réseau, la protection contre la falsification, qui servent de sources de signal puissantes.
 
 À l’exemple de la liste des détections antivirus, certaines alertes EDR sont conçues pour indicateur générique d’un comportement suspect qui n’est peut-être pas associé à la menace détectée. Dans ce cas, le rapport identifie clairement l’alerte comme « générique » et n’influence aucun graphique du rapport.
 
-## <a name="find-subtle-threat-artifacts-using-advanced-hunting"></a>Rechercher des artefacts de menace discrets à l’aide de la recherche avancée
+## <a name="find-subtle-threat-artifacts-using-advanced-hunting"></a>Rechercher des artefacts de menace discrets à l’aide d’un chasse avancée
 Bien que les détections vous permettent d’identifier et d’arrêter automatiquement la menace de suivi, de nombreuses activités d’attaque laissent des traces subtiles qui nécessitent une inspection supplémentaire. Certaines activités d’attaque présentent des comportements qui peuvent également être normaux, de sorte que leur détection dynamique peut entraîner un bruit opérationnel, voire des faux positifs.
 
 [Le repérage avancé](advanced-hunting-overview.md) fournit une interface de requête basée sur le langage de requête Kusto qui simplifie la recherche d’indicateurs discrets de l’activité des menaces. Il vous permet également d’surfacer des informations contextuelles et de vérifier si les indicateurs sont connectés à une menace.

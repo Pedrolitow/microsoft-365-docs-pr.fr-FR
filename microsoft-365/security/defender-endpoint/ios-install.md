@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c7f60df38ce9f34fecae975be40206d7270b0863
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7887f26cb8ca7e0e769249a10f008308149aaa42
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062534"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186688"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>Déployer Microsoft Defender pour le point de terminaison pour iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -42,7 +42,7 @@ Cette rubrique décrit le déploiement de Defender pour endpoint pour iOS sur le
 
 - Assurez-vous que vous avez accès au [Centre d’administration Microsoft Endpoint Manager.](https://go.microsoft.com/fwlink/?linkid=2109431)
 
-- Assurez-vous que l’inscription iOS est effectuée pour vos utilisateurs. Une licence Defender pour point de terminaison doit être attribuée aux utilisateurs pour pouvoir utiliser Defender pour Endpoint pour iOS. Reportez-vous [à Attribuer des licences aux](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) utilisateurs pour obtenir des instructions sur la façon d’attribuer des licences.
+- Assurez-vous que l’inscription iOS est effectuée pour vos utilisateurs. Une licence Defender pour point de terminaison doit être attribuée aux utilisateurs pour pouvoir utiliser Defender pour endpoint pour iOS. Reportez-vous [à Attribuer des licences aux](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) utilisateurs pour obtenir des instructions sur la façon d’attribuer des licences.
 
 > [!NOTE]
 > Microsoft Defender ATP (Microsoft Defender for Endpoint) pour iOS est désormais disponible dans [l’App Store d’Apple.](https://aka.ms/mdatpiosappstore)
@@ -83,7 +83,7 @@ Déployez Defender pour le point de terminaison pour iOS via le portail d’entr
 
     ![Capture d’écran d’une description de smartphone générée automatiquement](images/41627a709700c324849bf7e13510c516.png)
 
-2. Appuyez sur l’icône de l’application Defender for Endpoint et suivez les instructions à l’écran pour effectuer les étapes d’intégration. Les détails incluent l’acceptation par l’utilisateur final des autorisations iOS requises par Defender pour Endpoint pour iOS.
+2. Appuyez sur l’icône de l’application Defender for Endpoint et suivez les instructions à l’écran pour effectuer les étapes d’intégration. Les détails incluent l’acceptation par l’utilisateur final des autorisations iOS requises par Defender pour endpoint pour iOS.
 
 3. Une fois l’intégration réussie, l’appareil commence à s’afficher dans la liste Appareils dans le Centre de sécurité Microsoft Defender.
 

@@ -18,19 +18,19 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4028fbaedd4e0b89b37a774b79ac5302d899ec3c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9edcceca2f6cc7c2377eb388d7394a23dfbae99d
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060997"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186256"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Intégration à l’aide de Microsoft Endpoint Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -51,7 +51,7 @@ Bien que Defender pour point de terminaison prend en charge l’intégration de 
 
 Cette rubrique guide les utilisateurs dans :
 - Étape 1 : intégration d’appareils au service en créant un groupe dans Microsoft Endpoint Manager (MEM) pour affecter des configurations sur
-- Étape 2 : Configuration de Defender pour les fonctionnalités de point de terminaison à l’aide de Microsoft Endpoint Manager
+- Étape 2 : Configuration des fonctionnalités de Defender pour les points de terminaison à l’aide de Microsoft Endpoint Manager
 
 Ces instructions d’intégration vous guident tout au long des étapes de base suivantes que vous devez suivre lors de l’utilisation de Microsoft Endpoint Manager :
 
@@ -79,7 +79,7 @@ Voici les liens dont vous aurez besoin pour le reste du processus :
 -   [Bases de référence de sécurité Intune](https://docs.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 Pour plus d’informations sur Microsoft Endpoint Manager, consultez les ressources ci-après :
-- [Page Gestionnaire de points de terminaison Microsoft](https://docs.microsoft.com/mem/)
+- [Page Microsoft Endpoint Manager](https://docs.microsoft.com/mem/)
 - [Billet de blog sur la convergence d’Intune et configMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [Vidéo d’introduction sur MEM](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -152,9 +152,9 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > ![Image de Microsoft Endpoint Manager portal6](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > Dans cette instance, ce système a été rempli automatiquement, car Defender pour le point de terminaison a déjà été intégré à Intune. Pour plus d’informations sur l’intégration, voir [Activer Microsoft Defender pour le point de terminaison dans Intune.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
+    > Dans cette instance, cela a été automatiquement rempli comme Defender pour point de terminaison a déjà été intégré à Intune. Pour plus d’informations sur l’intégration, voir [Activer Microsoft Defender pour le point de terminaison dans Intune.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
     > 
-    > L’image suivante est un exemple de ce que vous verrez lorsque Microsoft Defender pour le point de terminaison n’est PAS intégré à Intune :
+    > L’image suivante illustre ce que vous voyez lorsque Microsoft Defender pour le point de terminaison n’est PAS intégré à Intune :
     >
     > ![Image de Microsoft Endpoint Manager portal7](images/2466460812371ffae2d19a10c347d6f4.png)
 
@@ -163,7 +163,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal8](images/ef844f52ec2c0d737ce793f68b5e8408.png)
 
-7.  Ajoutez un groupe de test en cliquant sur **Sélectionner les groupes à inclure** et choisissez votre groupe, puis sélectionnez  **Suivant**.
+7.  Ajoutez un groupe de test en cliquant sur **Sélectionner les groupes à inclure** et choisissez votre groupe, puis sélectionnez **Suivant.**
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal9](images/fc3525e20752da026ec9f46ab4fec64f.png)
@@ -237,7 +237,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal20](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
 
-6.  Dans la **page Paramètres de configuration**: définissez les configurations dont vous avez besoin pour les règles de réduction de la surface d’attaque, puis sélectionnez  **Suivant**.
+6.  Dans la **page Paramètres de configuration**: définissez les configurations dont vous avez besoin pour les règles de réduction de la surface d’attaque, puis sélectionnez **Suivant.**
 
     > [!NOTE]
     > Nous allons configurer toutes les règles de réduction de la surface d’attaque sur Audit.
@@ -298,7 +298,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
 7.  Ajoutez **des balises d’étendue comme > suivant**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image du portail Microsoft Endpoint Manager29](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
+    > ![Image de Microsoft Endpoint Manager portal29](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
 
 8.  Sélectionnez **Affecter au groupe de test > suivant**.
 
@@ -321,7 +321,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
 ### <a name="confirm-policies-have-been-applied"></a>Confirmer que les stratégies ont été appliquées
 
 
-Une fois la stratégie de configuration affectée, l’application prend un certain temps.
+Une fois que la stratégie de configuration a été affectée, l’application prend un certain temps.
 
 Pour plus d’informations sur le minutage, consultez [les informations de configuration d’Intune.](https://docs.microsoft.com/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
 

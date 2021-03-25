@@ -19,19 +19,19 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8b3697d09989f9e9a583f8bea63e375dea06681c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2704aefb3f15cc3244de6580137fa12204bfc3ce
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064953"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187468"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Préparer Microsoft Defender pour le déploiement de point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -97,11 +97,11 @@ Microsoft recommande d’utiliser le concept de privilèges minimum. Defender fo
 
 Microsoft recommande d’utiliser [Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) pour gérer vos rôles afin de fournir un audit, un contrôle et une révision d’accès supplémentaires pour les utilisateurs ayant des autorisations d’annuaire.
 
-Defender pour le point de terminaison prend en charge deux façons de gérer les autorisations :
+Defender pour le point de terminaison prend en charge deux méthodes de gestion des autorisations :
 
 -   **Gestion des autorisations de base**: définissez les autorisations en accès total ou en lecture seule. Dans le cas de la gestion des autorisations de base, les utilisateurs ayant le rôle Administrateur général ou Administrateur de la sécurité dans Azure Active Directory disposent d’un accès total, tandis que le rôle lecteur Sécurité dispose d’un accès en lecture seule.
 
--   Contrôle d’accès basé sur un rôle **(RBAC)**: définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations. voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle.](rbac.md)
+-   Contrôle d’accès basé sur les rôles **:** définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations. voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle.](rbac.md)
 
 Microsoft recommande d’utiliser le RBAC pour s’assurer que seuls les utilisateurs qui ont une justification professionnelle peuvent accéder à Defender for Endpoint.
 
@@ -113,7 +113,7 @@ Le tableau d’exemple suivant sert à identifier la structure du Centre des op�
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | Niveau 1 | **Équipe locale des opérations de sécurité/équipe informatique**<br>Cette équipe trie et examine généralement les alertes contenues dans leur géolocalisation et atteint le niveau 2 dans les cas où une correction active est nécessaire.                                              |                     |
 | Niveau 2 | **Équipe des opérations de sécurité régionale**<br>Cette équipe peut voir tous les appareils pour leur région et effectuer des actions de correction.                                                                                                                        |        Afficher les données               |
-| Niveau 3 | **Équipe des opérations de sécurité globale**<br>Cette équipe est constituée d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail. | Afficher les données <br>  Alertes examen Actions de correction actives <br> Alertes examen Actions de correction actives <br> Gérer les paramètres système du portail <br> Gérer les paramètres de sécurité |
+| Niveau 3 | **Équipe des opérations de sécurité globale**<br>Cette équipe est constituée d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail. | Afficher les données <br>  Alertes examen Actions de correction actives <br> Examen des alertes Actions de correction actives <br> Gérer les paramètres système du portail <br> Gérer les paramètres de sécurité |
 
 
 

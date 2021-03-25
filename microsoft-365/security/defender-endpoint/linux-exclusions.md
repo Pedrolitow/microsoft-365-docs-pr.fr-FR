@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fa2d643936b8358649bf59eec3ab9570cb561419
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 484869535c466435ab997f32bf858dd1ad52c841
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064262"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187492"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-linux"></a>Configurer et valider des exclusions pour Microsoft Defender pour endpoint pour Linux
 
@@ -31,10 +31,10 @@ ms.locfileid: "51064262"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article fournit des informations sur la définition d’exclusions qui s’appliquent aux analyses à la demande, ainsi que sur la protection et la surveillance en temps réel.
 
@@ -55,7 +55,7 @@ Le tableau suivant indique les types d’exclusion pris en charge par Defender p
 Exclusion | Définition | Exemples
 ---|---|---
 Extension de fichier | Tous les fichiers avec l’extension, n’importe où sur l’appareil | `.test`
-File | Un fichier spécifique identifié par le chemin d’accès complet | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Fichier | Un fichier spécifique identifié par le chemin d’accès complet | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Folder | Tous les fichiers sous le dossier spécifié (de manière récursive) | `/var/log/`<br/>`/var/*/`
 Processus | Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci | `/bin/cat`<br/>`cat`<br/>`c?t`
 
@@ -122,7 +122,7 @@ Exemples :
     ```
 
     > [!NOTE]
-    > Cela exclut uniquement les chemins d’accès d’un niveau inférieur *à /var/*, mais pas les dossiers imbrmbrés plus profondément ; par exemple, */var/this-subfolder/but-not-this-subfolder*.
+    > Cela exclut uniquement les chemins d’accès d’un niveau inférieur *à /var/*, mais pas les dossiers qui sont imbrmbrés plus profondément ; par exemple, */var/this-subfolder/but-not-this-subfolder*.
     
     ```bash
     mdatp exclusion folder add --path "/var/"
@@ -161,7 +161,7 @@ Si vous n’avez pas accès à Internet, vous pouvez créer votre propre fichier
 echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > test.txt
 ```
 
-Vous pouvez également copier la chaîne dans un fichier texte vide et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
+Vous pouvez également copier la chaîne dans un fichier texte vierge et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
 
 ## <a name="allow-threats"></a>Autoriser les menaces
 

@@ -1,7 +1,7 @@
 ---
 title: Informations de confidentialité - Microsoft Defender pour point de terminaison pour iOS
 ms.reviewer: ''
-description: Décrit les informations de confidentialité de Microsoft Defender pour Endpoint pour iOS
+description: Décrit les informations de confidentialité de Microsoft Defender pour endpoint pour iOS
 keywords: microsoft, defender, atp, ios, stratégie, vue d’ensemble
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,20 +19,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 52694322c7f084df777a8e97fe5b84cc3cb4e6d1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f3851d9ecc0a40a9fa52702ee187fb8a94a740c3
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064270"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186676"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-for-ios"></a>Informations de confidentialité - Microsoft Defender pour point de terminaison pour iOS
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
 > Defender pour le point de terminaison pour iOS utilise un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local ou en boucle autonome qui ne prend pas le trafic en dehors de l’appareil. **Microsoft ou votre organisation ne voit pas votre activité de navigation.**
@@ -53,7 +53,7 @@ Voici la liste des types de données collectées :
 
 ### <a name="device-and-account-information"></a>Informations sur l’appareil et le compte 
 
-- Informations sur l’appareil telles que l'& date, la version d’iOS, les informations sur le processeur et l’identificateur de l’appareil, où l’identificateur d’appareil est l’un des éléments suivants : 
+- Informations sur l’appareil telles que l'& date, la version d’iOS, les informations sur l’UC et l’identificateur de l’appareil, où l’identificateur d’appareil est l’un des éléments suivants : 
 
     - Wi-Fi'adaptateur MAC 
 
@@ -87,7 +87,7 @@ Les données facultatives incluent les données de diagnostic et les données de
 
 Les données de diagnostic facultatives incluent : 
 
-- Utilisation de l’application, de l’UC et du réseau pour Defender pour endpoint. 
+- Utilisation de l’application, du processeur et du réseau pour Defender pour endpoint. 
 
 - Fonctionnalités configurées par l’administrateur de Defender pour le point de terminaison. 
 
@@ -97,6 +97,6 @@ Les données de commentaires sont collectées par le biais de commentaires dans 
 
 - Type de commentaires (souris, frown, idée) et tous les commentaires envoyés par l’utilisateur. 
 
-Pour plus d’informations, [voir Plus d’informations sur la confidentialité.](https://aka.ms/mdatpiosprivacystatement)
+Pour plus d’informations, [voir plus d’informations sur la confidentialité.](https://aka.ms/mdatpiosprivacystatement)
 
 

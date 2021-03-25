@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 841e5d5169469edb804514458760c5f52e66edaa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 461c728f6b61aa407d76e3674ba3339027c21a25
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065718"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187456"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-for-linux-for-static-proxy-discovery"></a>Configurer Microsoft Defender pour endpoint pour Linux pour la découverte de proxy statique
 
@@ -32,10 +32,10 @@ ms.locfileid: "51065718"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft Defender ATP peut découvrir un serveur proxy à l’aide de la ```HTTPS_PROXY``` variable d’environnement. Ce paramètre doit être configuré **à** la fois au moment de l’installation et après l’installation du produit.
 
@@ -69,7 +69,7 @@ Lors de l’installation, ```HTTPS_PROXY``` la variable d’environnement doit �
 
 La `HTTPS_PROXY` variable d’environnement peut être définie de la même manière lors de la désinstallation.
 
-Notez que l’installation et la désinstallation ne échouent pas nécessairement si un proxy est requis mais n’est pas configuré. Toutefois, la télémétrie n’est pas envoyée et l’opération peut prendre beaucoup plus de temps en raison de délai d’accès réseau.
+Notez que l’installation et la désinstallation ne échouent pas nécessairement si un proxy est requis mais non configuré. Toutefois, la télémétrie n’est pas envoyée et l’opération peut prendre beaucoup plus de temps en raison de délai d’accès réseau.
 
 ## <a name="post-installation-configuration"></a>Configuration post-installation
   
