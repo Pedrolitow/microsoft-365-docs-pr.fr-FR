@@ -21,12 +21,12 @@ description: 'Centre d’administration Microsoft 365 : découvrez les fonctionn
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 833f782e071e06d837ca5eacfcb72e2d6e16c8fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b670c6a333485bc3a19ae14b8e7c71f08181cac5
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913933"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215575"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d’administration Microsoft 365
 
@@ -48,6 +48,7 @@ Et si vous souhaitez savoir quelles sont les nouveautés des autres services clo
 - [Nouveautés de Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [Nouveautés du Centre d’administration SharePoint](/sharepoint/what-s-new-in-admin-center)
 - [Mises à jour Office](/OfficeUpdates/)
+- [Comment vérifier l’état de publication de Windows](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
 ## <a name="ignite-2021-march"></a>Ignite 2021 (mars)
 
@@ -57,7 +58,7 @@ Bienvenue dans Microsoft Ignite. Nous espérons que vous avez pu participer à c
 
 ### <a name="message-center"></a>Centre de messages
 
-Nous avons repensé le centre de messages pour vous aider à découvrir les messages pertinents et ajouté une expérience de lecture plus flexible. Nous avons ajouté une nouvelle colonne **Service** pour vous aider à analyser le service auquel s’applique un message et à filtrer les messages par service et d’autres métadonnées. Vous pouvez mettre un message en favori pour le marquer pour le suivi, choisir les colonnes qui apparaissent dans la liste des messages et naviguer entre les messages avec les boutons Retour et Suivant. Nous avons également amélioré le processus pour faciliter les commentaires sur les billets du centre de messages.
+Nous avons repensé le centre de messages pour vous aider à découvrir les messages pertinents et ajouté une expérience de lecture plus flexible. Nous avons ajouté une nouvelle colonne **Service** pour vous aider à analyser le service auquel s’applique un message et à filtrer les messages par service et d’autres métadonnées. Vous pouvez mettre un message en favori pour le marquer pour le suivi, choisir les colonnes qui apparaissent dans la liste des messages et naviguer entre les messages avec les boutons Retour et Suivant. Nous avons également amélioré le processus pour faciliter l’avis sur les publications du centre de messages.
 
 :::image type="content" source="../media/message-center.png" alt-text="Capture d’écran : page d’accueil du centre de messages affichant la boîte de réception et les messages":::
 
@@ -86,11 +87,11 @@ Nous avons développé un ensemble de fonctionnalités pour les administrateurs 
 - **Les migrations** de boîtes aux lettres entre clients sont un nouveau service, désormais en prévisualisation publique, qui vous permet de déplacer des boîtes aux lettres entre des clients sans avoir à retenter les boîtes aux lettres, puis à les intégrer. 
 - **Partage de domaine entre** locataires : bientôt, vous pouvez rejoindre un aperçu privé pour les fonctionnalités qui vous permettent de partager un domaine entre plusieurs locataires. Par exemple, si Contoso acquiert Wingtip Toys, Contoso peut partager le domaine avec Wingtip Toys afin que les personnes des deux locataires peuvent utiliser « contoso.com » comme adresses de messagerie.
 
-![Page État du service pour plusieurs locataires avec un incident sélectionné et onglet Clients affectés ouvert. Le menu de navigation présente l’état de tous les clients, du programme d’installation et du service comme seules options.](../media/MAC-WN-MTinServiceHealth.png)
+![Page État du service pour plusieurs clients avec un incident sélectionné et l’onglet Clients affectés ouvert. Le menu de navigation présente l’état de tous les clients, du programme d’installation et du service comme seules options.](../media/MAC-WN-MTinServiceHealth.png)
 
 ### <a name="monitor-your-most-important-accounts"></a>Surveiller vos comptes les plus importants
 
-Vous pouvez surveiller et suivre les messages électroniques ayant échoué ou différés envoyés à vos utilisateurs qui ont un impact important sur l’entreprise, comme votre PDG. Vous pouvez suivre les comptes prioritaires en ajoutant des utilisateurs à votre liste de comptes prioritaires dans le Centre d’administration Microsoft 365. Ajoutez des cadres, des responsables, des responsables ou d’autres utilisateurs ayant accès à des informations sensibles ou prioritaires.
+Vous pouvez surveiller et suivre les messages électroniques ayant échoué ou différés envoyés à vos utilisateurs ayant un impact important sur l’entreprise, comme votre PDG. Vous pouvez suivre les comptes prioritaires en ajoutant des utilisateurs à votre liste de comptes prioritaires dans le Centre d’administration Microsoft 365. Ajoutez des cadres, des responsables, des responsables ou d’autres utilisateurs ayant accès à des informations sensibles ou prioritaires.
 
 Les comptes de priorité sont disponibles uniquement pour les organisations qui répondent aux deux exigences suivantes :
 
@@ -120,7 +121,7 @@ Nous avons commencé à déployer une nouvelle expérience de recherche pour le 
   - **Paramètres :** recherchez tous les paramètres liés à votre organisation, les services à qui vous vous abonnez, ainsi que les paramètres de sécurité et de confidentialité. 
   - **Domaines :** vous pouvez trouver des liens rapides vers vos domaines, puis le lien vous permet d’obtenir la page vue d’ensemble et d’état de ce domaine.
   - **Documentation**: si nous ne pouvons pas trouver de résultat pour vous, nous allons essayer de trouver de la documentation pour vous aider. Il faut un peu plus de temps pour que la liste organisée d’articles trouve une correspondance, donc patientez une seconde pour que la recherche trouve les résultats. 
-  - **Commentaires**: Vous n’avez pas trouvé ce que vous recherchiez ? Envoyez-nous des commentaires à partir de la recherche. Nous allons ajouter des fonctionnalités de recherche pour d’autres pages et d’autres fonctionnalités dans le Centre d’administration.
+  - **Commentaires**: Vous n’avez pas trouvé ce que vous recherchiez ? Envoyez-nous des commentaires à partir de la recherche. Nous allons ajouter des fonctionnalités de recherche pour plus de pages et d’autres fonctionnalités dans le Centre d’administration.
 
 ### <a name="microsoft-365-admin-mobile-app"></a>Application mobile d’administration Microsoft 365
 
@@ -128,7 +129,7 @@ L’application mobile d’administration [Microsoft 365,](https://www.microsoft
 
 - Prise en charge des stratégies de gestion des applications mobiles et d’accès conditionnel de **Microsoft Intune**: vous pouvez désormais utiliser votre appareil personnel pour gérer Microsoft 365, même si votre organisation a désactivé les stratégies de gestion des applications mobiles et d’accès conditionnel d’Intune.
 - **Notifications du centre de messages**: activer les notifications du centre de messages sur les notifications de paramètres si vous souhaitez être averti des nouveaux **billets** du centre  >   de messages. Par le biais de notifications, nous voulons vous assurer que vous restez informé des informations et des événements importants au sein de votre client.
-- **Alertes de facturation**: vous pouvez également activer les notifications de facturation à l’adresse **Settings** Notifications si vous souhaitez obtenir des notifications de facturation sur votre appareil si un abonnement est sur le point d’expirer.  >  
+- **Alertes de facturation**: vous pouvez également activer les notifications de facturation sur les **notifications** de paramètres si vous souhaitez obtenir des notifications de facturation sur votre appareil si un abonnement est sur le point d’expirer.  >  
 - **Mode sombre**: bienvenue sur le côté sombre de l’application mobile. Il s’agissait de l’une de nos fonctionnalités les plus demandées. Go to **Settings**  >  **Themes** to turn it on.
 - **Signalez un problème**: vous pouvez maintenant signaler un problème dans l’application ou afficher les problèmes signalés par d’autres administrateurs. Consultez **l’état du** service pour l’consulter.
 
@@ -177,7 +178,7 @@ Pour en savoir plus à ce sujet, consultez cet article et cette vidéo pour voir
 
 ### <a name="getting-ready-for-ignite-2020"></a>Préparation pour Ignite 2020
 
-Dans la mesure où nous allons passer à la période Ignite chez Microsoft, nous ne publions pas autant de fonctionnalités que nous avons beaucoup à discuter au cours de nos sessions.
+Dans la mesure où nous allons passer à la période Ignite chez Microsoft, nous ne publions pas autant de fonctionnalités que nous avons beaucoup de choses à parler au cours de nos sessions.
 
 La prochaine mise à jour de cet article aura lieu le jour d’ouverture de notre premier ignite en ligne uniquement. Et cette année, il est gratuit ! Check it out, get signed up: [Microsoft Ignite 2020](https://www.microsoft.com/ignite).
 
@@ -276,7 +277,7 @@ Le Centre d’administration Teams, le Centre de sécurité et le Centre de conf
 
 Nos agents de support technique travaillent à domicile tout en prenant en charge les cas clients et les limitations de bande passante Internet pendant qu’ils travaillent à domicile peuvent avoir un impact sur la qualité des appels des clients. Pour continuer à vous aider, nous avons lancé l’option de support de conversation en direct pour les clients commerciaux dans le Centre d’administration Microsoft 365.
 
-Lors de la création d’une demande de service, vous verrez désormais la conversation en tant qu’option, en plus du téléphone et de la messagerie. Sélectionnez la conversation comme canal de communication préféré et créez la demande. Une fois que vous avez créé la demande, vous pouvez démarrer la conversation lorsque vous êtes prêt à discuter avec des agents Microsoft.
+Lors de la création d’une demande de service, vous verrez désormais la conversation en tant qu’option, en plus du téléphone et de la messagerie. Sélectionnez la conversation comme canal de communication favori et créez la demande. Une fois que vous avez créé la demande, vous pouvez démarrer la conversation lorsque vous êtes prêt à discuter avec des agents Microsoft.
 
 ### <a name="teams-updates"></a>Mises à jour teams
 
@@ -292,7 +293,7 @@ Avec l’utilisation accrue de Teams, nous avons ajouté quelques fonctionnalit�
 Le Score de productivité fournit des informations sur la façon dont les utilisateurs utilisent les services cloud de Microsoft et les expériences technologiques qui les supportent. Le score reflète les performances de votre organisation par rapport aux mesures de l’expérience des employés et des technologies et compare votre score avec les organisations comme les vôtres. Ce mois-ci, nous présentons les nouveaux concepts suivants à l’expérience d’aperçu :
 
 - Vue de tendance des informations principales sur la page d’accueil et les pages de détails de catégorie - Catégories d’analyse de point de terminaison et de connectivité réseau ajoutées à l’expérience technologique
-- Informations pertinentes sur l’expérience technologique indiquées dans les catégories Expérience des employés
+- Informations pertinentes sur l’expérience technologique présentées dans les catégories Expérience des employés
 - Nouvelle catégorie communications dans le cadre de l’expérience des employés
 - Détails utilisateur avec les métadonnées organisationnelles dans les catégories Expérience utilisateur
 
@@ -362,7 +363,7 @@ Les nouveaux noms de produits entrent en vigueur le 21 avril 2020. Il s’agit d
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Applications Microsoft 365 pour les entreprises       |
+|Office 365 Business     |    Microsoft 365 Apps for business       |
 |Office 365 ProPlus    |   Applications Microsoft 365 pour les entreprises      |
 
 ### <a name="videos-training-and-docs"></a>Vidéos, formation et documents
@@ -413,7 +414,7 @@ Lorsque nous avons déployé le mode sombre pour la première fois, il était di
 
 ### <a name="office-whats-new-management"></a>Gestion des nouveautés d’Office
 
-Les administrateurs souhaitent contrôler la façon dont Microsoft communique « Nouveautés » à leurs utilisateurs dans les applications Office. Vous avez maintenant ce contrôle. Go to **Settings** \> **Office What’s New management Preview**. Sélectionnez une fonctionnalité pour afficher ses détails, puis sélectionnez le bouton Masquer des utilisateurs si vous ne souhaitez pas que vos utilisateurs voient un message spécifique « Nouveautés ».  Par exemple, votre organisation peut attendre d’en savoir plus sur une fonctionnalité jusqu’à ce que tous les membres de votre organisation y soient formés.
+Les administrateurs souhaitent contrôler la façon dont Microsoft communique « Nouveautés » à leurs utilisateurs dans les applications Office. Vous avez maintenant ce contrôle. Go to **Settings** \> **Office What’s New management Preview**. Sélectionnez une fonctionnalité pour afficher ses détails, puis vous pouvez sélectionner le bouton Masquer des utilisateurs si vous ne souhaitez pas que vos utilisateurs voient un message particulier « Nouveautés ».  Par exemple, votre organisation peut attendre d’en savoir plus sur une fonctionnalité jusqu’à ce que tous les membres de votre organisation y soient formés.
 
 ![Capture d’écran de l’aperçu des nouveautés d’Office avec le volet d’informations d’une fonctionnalité ouvert.](../media/whatsnew-officemgmt-preview.png)
 

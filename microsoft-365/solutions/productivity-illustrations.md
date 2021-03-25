@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 423840ae62d0531da76044238bbeef05078a82c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc526371fdf12314f762c885ba1775fcf3f00d00
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907987"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215551"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -33,7 +33,7 @@ L’architecture logique de services de productivité dans Microsoft 365, foncti
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Groupes dans Microsoft 365 pour les architectes informatique
-Quels sont les besoins des architectes informatique concernant les groupes dans Microsoft 365
+Cette illustration inclut des informations pour les architectes en technologies de l’information sur les groupes Microsoft 365. Pour en savoir plus sur la configuration et l’administration des groupes et équipes Microsoft 365 pour la collaboration dans votre organisation, voir Configurer la collaboration sécurisée avec [Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) et qu’est-ce que la gouvernance de [la collaboration ?](/microsoft-365/solutions/collaboration-governance-overview)
 
 | Item | Description |
 |:-----|:-----|
@@ -41,7 +41,7 @@ Quels sont les besoins des architectes informatique concernant les groupes dans 
 
 ### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Fonctionnalités de protection et de conformité des informations Microsoft 365
 
-Microsoft 365 inclut un large éventail de fonctionnalités de protection et de conformité des informations. Avec les outils de productivité de Microsoft, ces fonctionnalités sont conçues pour aider les organisations à collaborer en temps réel tout en respectant les cadres stricts de conformité réglementaire. 
+Microsoft 365 inclut un large éventail de fonctionnalités de protection et de conformité des informations. Avec les outils de productivité de Microsoft, ces fonctionnalités sont conçues pour aider les organisations à collaborer en temps réel tout en respectant des cadres stricts de conformité réglementaire. 
 
 Cet ensemble d’illustrations utilise l’un des secteurs les plus réglementés, les services financiers, pour montrer comment ces fonctionnalités peuvent être appliquées pour répondre aux exigences réglementaires courantes. N’hésitez pas à les adapter à votre usage personnel. 
 
@@ -52,7 +52,7 @@ Cet ensemble d’illustrations utilise l’un des secteurs les plus réglementé
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Sécurité et protection des informations pour les organisations multi-régions
-Sécurité et protection des informations pour les organisations multi-régions à l’aide d’un seul client Microsoft 365
+Protection de la sécurité et des informations pour les organisations multi-régions avec un seul client Microsoft 365
 
 | Item | Description |
 |:-----|:-----|
