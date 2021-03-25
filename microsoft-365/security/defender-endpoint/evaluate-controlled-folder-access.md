@@ -13,12 +13,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e5da8ec3e4555af062aad1a4ebfa96d972bee23b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065873"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218747"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Évaluer l’accès contrôlé aux dossiers
 
@@ -76,5 +76,5 @@ Voir [Protéger les dossiers](controlled-folders.md) importants avec un accès c
 ## <a name="see-also"></a>Voir aussi
 
 * [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md)
-* [Évaluer Microsoft Defender pour le point de terminaison](evaluate-atp.md)
+* [Évaluer Microsoft Defender pour le point de terminaison](evaluate-mde.md)
 * [Utiliser le mode audit](audit-windows-defender.md)

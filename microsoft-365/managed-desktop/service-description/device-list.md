@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b0aa619f09f2d6b32289e037283a0dc6578d0150
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920503"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218663"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau géré Microsoft 
 
-Bureau géré Microsoft évalue régulièrement les appareils à inclure dans le service. Cet article répertorie les appareils spécifiques actuellement pris en charge. Pour obtenir une déclaration plus générale des conditions requises pour l’appareil, [consultez La demande de l’appareil.](device-requirements.md)
+Bureau géré Microsoft évalue régulièrement les appareils à inclure dans le service. Cet article répertorie les appareils spécifiques actuellement pris en charge. Pour obtenir une déclaration plus générale des exigences relatives aux appareils, consultez [La demande d’appareil.](device-requirements.md)
 
 Pour plus d’informations sur bureau géré Microsoft, voir la documentation et les ressources [de Bureau géré Microsoft.](../index.yml) 
 
@@ -37,17 +37,17 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Latitude 5310 / 5310 2-en-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 28 avril 2022  | 28 avril 2025 |
+| **\*[Dell Latitude 5320 / 5320 2-en-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5320-laptop-or-2-in-1/spd/latitude-13-5320-2-in-1-laptop?)** | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 22 janvier 2023  | 22 janvier 2026 |
 | [Dell Latitude 3510](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-3510-business-laptop/spd/latitude-15-3510-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 28 avril 2022 | 28 avril 2025  |
-| [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 28 avril 2022 | 28 avril 2025  |
+| **\*[Dell Latitude 5420](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5420-laptop/spd/latitude-5420-laptop?)** | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 02 janvier 2023 | 02 janvier 2026  |
 | [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 28 avril 2022 | 28 avril 2025 |
 | [Dell Latitude 7310 / 7310 2-en-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 4 mai 2022  | 4 mai 2025  |
 | **\*[Dell Latitude 7420 / 7420 2-en-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-7420-business-laptop-or-2-in-1/spd/latitude-14-7420-2-in-1-laptop)** | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 22 mars 2023  | 22 mars 2026  |
-| [Dell Latitude 9410 2-en-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 5 mai 2022  | 5 mai 2025  |
+| **\*[Dell Latitude 9420 2-en-1](https://www.dell.com/en-us/work/shop/scc/sr/laptops/latitude-laptops?~ck=mn)** | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | Avr 2023  | Avr 2026  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 5 mai 2022  | 5 mai 2025  |
-| [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 Go / Intel i3 / 8 Go de RAM | Aucun | 27 mai 2022  | 27 mai 2025  |
-| [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 Go / Intel i3 / 8 Go de RAM | Aucun | 15 mai 2022  | 15 mai 2025  |
-| [Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Aucun | 27 mai 2022  | 27 mai 2025  |
+| [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 Go / Intel i3 / 8 Go de RAM | Aucune | 27 mai 2022  | 27 mai 2025  |
+| [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 Go / Intel i3 / 8 Go de RAM | Aucune | 15 mai 2022  | 15 mai 2025  |
+| [Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Aucune | 27 mai 2022  | 27 mai 2025  |
 
 ### <a name="hp"></a>HP
 
@@ -67,12 +67,12 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 Go / Intel i5 / 8 Go de RAM | Aucun | 21 mai 2022 | 21 mai 2027 |
-| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 Go / Intel Core M3 / 8 Go de RAM | Aucun | 21 mai 2022 | 21 mai 2027 |
-| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 12 octobre 2022 | 12 octobre 2025 |
-| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
-| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
-| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 15 janvier 2022 | 15 janvier 2025 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 Go / Intel i5 / 8 Go de RAM | Aucune | 21 mai 2022 | 21 mai 2027 |
+| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 Go / Intel Core M3 / 8 Go de RAM | Aucune | 21 mai 2022 | 21 mai 2027 |
+| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 12 octobre 2022 | 12 octobre 2025 |
+| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 22 octobre 2021 | 22 octobre 2024 |
+| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 22 octobre 2021 | 22 octobre 2024 |
+| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 15 janvier 2022 | 15 janvier 2025 |
 
 En outre, l’appareil doit également répondre aux critères suivants :     
 

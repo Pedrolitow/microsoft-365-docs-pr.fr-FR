@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: 0f9508038dd49e6c2d14d8e33a4fd40dfdfe83cb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c191e2006f42eda215508ba961dcbeb1ea282078
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198650"
+ms.locfileid: "51218627"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Passer à Microsoft Defender pour endpoint et Antivirus Microsoft Defender
 
@@ -41,16 +41,16 @@ Si vous envisagez de passer d’une solution de protection contre les menaces no
 |Scénario |Aide |
 |:--|:--|
 |Vous n’avez pas encore de solution de protection de point de terminaison et vous souhaitez en savoir plus sur le fonctionnement de Microsoft Defender for Endpoint & l’Antivirus Microsoft Defender.  |[Laboratoire d’évaluation de Microsoft Defender for Endpoint](evaluation-lab.md)   |
-|Microsoft Defender for Endpoint & Antivirus Microsoft Defender et vous avez besoin d’aide pour tout configurer et configurer.  |[Guide de déploiement de Microsoft Defender for Endpoint](deployment-phases.md)  |
-|Vous envisagez de migrer de Mc Antivirus Microsoft Defender Endpoint Security (Mc Antivirus) vers Microsoft Defender pour endpoint & Microsoft Defender. |[Passer de Mc Antivirus à Microsoft Defender pour le point de terminaison](mcafee-to-microsoft-defender-migration.md) |
-|Vous envisagez de migrer de Symantec Endpoint Protection (Symantec) vers Microsoft Defender pour endpoint & Antivirus Microsoft Defender. |[Passer de Symantec à Microsoft Defender pour le point de terminaison](symantec-to-microsoft-defender-atp-migration.md) |
-|Vous envisagez de migrer d’une solution de protection de point de terminaison non Microsoft (autre que Mc Symantec ou Mc Symantec) vers Microsoft Defender pour endpoint & Antivirus Microsoft Defender. |[Passer à Microsoft Defender pour le point de terminaison](switch-to-microsoft-defender-migration.md)   |
+|Vous avez Microsoft Defender pour point de terminaison & Antivirus Microsoft Defender et avez besoin d’aide pour tout configurer et configurer.  |[Guide de déploiement de Microsoft Defender for Endpoint](deployment-phases.md)  |
+|Vous prévoyez de migrer de Mc Antivirus Microsoft Defender Endpoint Security (Mc Antivirus) vers Microsoft Defender pour endpoint & Microsoft Defender. |[Passer de Mc Antivirus à Microsoft Defender pour le point de terminaison](mcafee-to-microsoft-defender-migration.md) |
+|Vous envisagez de migrer de Symantec Endpoint Protection (Symantec) vers Microsoft Defender pour endpoint & Antivirus Microsoft Defender. |[Passer de Symantec à Microsoft Defender pour le point de terminaison](symantec-to-microsoft-defender-endpoint-migration.md) |
+|Vous envisagez de migrer d’une solution de protection de point de terminaison non-Microsoft (autre que Mc Symantec ou Mc Symantec) vers Microsoft Defender pour endpoint & Antivirus Microsoft Defender. |[Passer à Microsoft Defender pour le point de terminaison](switch-to-microsoft-defender-migration.md)   |
 |Vous avez migré vers Microsoft Defender pour endpoint & Antivirus Microsoft Defender et vous avez besoin d’aide pour les étapes suivantes, telles que la configuration de fonctionnalités supplémentaires ou l’ajustement de vos paramètres de sécurité. | [Gérer Microsoft Defender pour le point de terminaison, après la migration](manage-atp-post-migration.md) |
 
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
-Dites-nous ce que vous en pensez ! Envoyez vos commentaires au bas de la page. Nous prenons vos commentaires en compte à mesure que nous continuerons d’améliorer et d’ajouter nos conseils de migration.
+Dites-nous ce que vous en pensez ! Envoyez vos commentaires en bas de la page. Nous prenons vos commentaires en compte à mesure que nous continuerons d’améliorer et d’ajouter nos conseils de migration.
 
 ## <a name="see-also"></a>Voir aussi
 
