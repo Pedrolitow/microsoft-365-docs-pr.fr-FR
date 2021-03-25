@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez quel abonnement Microsoft 365 est le bon pour votre organisation.
-ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19da01142bfe0abf2ad02c3a0ccab4ef25e09df4
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913753"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164644"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Choisir un abonnement Microsoft 365
 
@@ -50,11 +50,10 @@ Il est essentiel de choisir l’abonnement Microsoft 365 qui vous sera le plus �
 | **Applications Office** | Installer Office sur jusqu’à 5 PC/Mac + 5 smartphones par utilisateur (Word, Excel, PowerPoint, OneNote, Access), Office Online | Professionnel | Professionnel | ProPlus |
 | **Calendrier de &amp; messagerie** | Outlook, Exchange Online | 50 Go | 50 Go | 100 Go |
 | **Hub pour le travail d’équipe** | Espace de travail basé sur la conversation, réunions en ligne et bien plus encore dans Microsoft Teams | Oui | Oui | Oui |
-| **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
+| **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
 | **Réseaux sociaux, vidéo, sites** | Stream, Yammer, Planner, SharePoint \* Online, PowerApps, \* Microsoft Flow\* | Oui | Oui | Oui |
 | **Applications professionnelles** | Planification d’applications - Réservations\*\* | Oui | Oui | Oui |
 |
- | Applications professionnelles - MileIQ\*\* | Oui | Oui | Non |
 | **Protection contre les menaces** | Office 365 – Protection avancée contre les menaces | Non | Oui | Non |
  | Application de Windows Exploit Guard | Non | Oui | Non |
 | **Gestion des identités** | Réinitialisation du mot de passe en libre-service pour les comptes Azure Active Directory hybrides | Non | Oui | Non |

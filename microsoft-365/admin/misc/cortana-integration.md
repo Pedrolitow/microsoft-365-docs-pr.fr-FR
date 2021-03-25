@@ -13,25 +13,24 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Lorsqu’ils sont signés avec des comptes professionnels ou scolaires valides, les utilisateurs peuvent obtenir des services d’assistance en nuage avec Cortana dans les expériences Microsoft 365 qui répondent aux promesses de confidentialité, de sécurité et de conformité au niveau de l’entreprise d’Office 365.
-ms.openlocfilehash: 00702724a44cd75bc68e9f7adac7170d81c080fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a45f23c022474ff39eca891eec03139dda936027
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914797"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164668"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 
 Cortana, votre assistant de productivité personnelle, offre des expériences optimisées par l’IA pour gagner du temps et attirer l’attention sur ce qui est le plus important. Cortana permet à vos utilisateurs d’augmenter leur productivité personnelle pendant toute leur journée de travail et de vie. Lorsqu’ils sont signés avec des comptes professionnels ou scolaires valides, les utilisateurs peuvent obtenir des services d’assistance en nuage avec Cortana dans les expériences Microsoft 365 qui répondent aux promesses de confidentialité, de sécurité et de conformité au niveau de l’entreprise d’Office 365 ( « Services d’entreprise Cortana »). 
 
-En tant qu’assistant de productivité personnelle, Cortana est conçue pour fournir des fonctionnalités qui, en toute sécurité, traiter et raisonner les données Office 365 telles que les e-mails, les fichiers, les conversations, etc., pour gagner du temps, accroître l’efficacité et améliorer la productivité de vos utilisateurs.
+En tant qu’assistant de productivité personnelle, Cortana est conçue pour fournir des fonctionnalités qui, en toute sécurité, sont traitées et raisonn es sur les données Office 365 telles que les e-mails, les fichiers, les conversations, etc., pour gagner du temps, accroître l’efficacité et améliorer la productivité de vos utilisateurs.
 
 À l’avenir, nous concentrons Cortana sur la productivité de l’entreprise.
 
@@ -39,9 +38,9 @@ En tant qu’assistant de productivité personnelle, Cortana est conçue pour fo
 
 - Les nouvelles expériences Microsoft 365, telles que les e-mails Briefing et Lire mes e-mails, seront activées à l’aide des services d’entreprise de Cortana et seront entièrement conformes à ces promesses. Ces fonctionnalités sont actuellement disponibles dans le monde entier (client multi-locataire standard). Pour plus d’informations sur la recherche de l’emplacement d’utilisation, consultez [afficher des valeurs de](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts)propriétés supplémentaires pour les comptes.
 
-- Les utilisateurs peuvent se connecter aux services d’entreprise Cortana décrits ici via Cortana dans Windows 10 (version 2004 et ultérieure), ainsi qu’aux applications clientes, telles qu’Outlook pour iOS et Android, sous réserve de termes de licence distincts. 
+- Les utilisateurs peuvent se connecter aux services d’entreprise Cortana décrits ici via Cortana dans Windows 10 (version 2004 et ultérieures), ainsi qu’aux applications clientes, telles qu’Outlook pour iOS et Android, sous réserve de termes de licence distincts. 
 
-- Les expériences utilisateur existantes, notamment Cortana dans Windows 10 (version 1909 et versions antérieures) et l’application Cortana sur iOS et Android, sont régies par le contrat de [services Microsoft](https://www.microsoft.com/licensing/product-licensing/products) et la déclaration de confidentialité [Microsoft](https://privacy.microsoft.com/privacystatement) (voir la section « Services existants pour les consommateurs » ci-dessous). Ces conditions régiront également les services d’entreprise de Cortana fournis à l’utilisateur lorsqu’il se sera inscrit avec ses informations d’identification de consommateur.
+- Les expériences utilisateur existantes, y compris Cortana dans Windows 10 (version 1909 et versions antérieures) et l’application Cortana sur iOS et Android, sont régies par le contrat de [services Microsoft](https://www.microsoft.com/licensing/product-licensing/products) et la déclaration de confidentialité [Microsoft](https://privacy.microsoft.com/privacystatement) (voir la section « Services existants pour les consommateurs » ci-dessous). Ces conditions régiront également les services d’entreprise de Cortana fournis à l’utilisateur lorsqu’il se sera inscrit avec ses informations d’identification de consommateur.
 
 ## <a name="what-data-is-processed-by-cortana-enterprise-services"></a>Quelles données sont traitées par les services d’entreprise Cortana ? 
 
@@ -57,11 +56,11 @@ Le tableau ci-dessous décrit la gestion des données pour les services d’entr
 
 | Nom | Description |
 |:-----|:-----|
-|**Stockage**  <br/> |Les données client sont stockées sur des serveurs Microsoft dans le cloud Office 365. Vos données font partie de votre client. <br/><br/>L’audio de reconnaissance vocale n’est pas conservé.  <br/> |
+|**Stockage**  <br/> |Les données client sont stockées sur des serveurs Microsoft dans le cloud Office 365. Vos données font partie de votre client. <br/><br/>La reconnaissance vocale n’est pas conservée.  <br/> |
 |**Reste en géo**  <br/> |Les données client sont stockées sur des serveurs Microsoft à l’intérieur du cloud Office 365 en géo. Vos données font partie de votre client.  <br/> |
-|**Retention**  <br/> |Les données client sont supprimées lorsque le compte est fermé par l’administrateur client ou lorsqu’une demande de suppression des droits des personnes soumises aux données R GDPR est faite. <br/><br/>L’audio de reconnaissance vocale n’est pas conservé.  <br/> |
+|**Retention**  <br/> |Les données client sont supprimées lorsque le compte est fermé par l’administrateur client ou lorsqu’une demande de suppression des droits des personnes soumises aux données R GDPR est faite. <br/><br/>La reconnaissance vocale n’est pas conservée.  <br/> |
 |**Traitement et confidentialité**  <br/> |Le personnel impliqué dans le traitement des données client et des données personnelles (i) traitera ces données uniquement sur instructions du client, et (ii) sera obligé de maintenir la confidentialité et la sécurité de ces données même après la fin de leur engagement.  <br/> |
-|**Utilisation**  <br/> |Microsoft utilise les données client uniquement pour fournir les services convenus et à des fins compatibles avec ces services. L’apprentissage automatique pour développer et améliorer des modèles est l’un de ces objectifs. L’apprentissage automatique s’fait dans le cloud Office 365 et il n’y a pas d’affichage, de révision ou d’étiquetage humain de vos données client. <br/><br/>Vos données ne sont pas utilisées pour cibler des publicités.  <br/> |
+|**Utilisation**  <br/> |Microsoft utilise les données client uniquement pour fournir les services convenus et à des fins compatibles avec ces services. L’apprentissage automatique pour développer et améliorer des modèles est l’un de ces objectifs. L’apprentissage automatique s’fait dans le cloud Office 365 et il n’y a pas d’affichage, de révision ou d’étiquetage humain de vos données client. <br/><br/>Vos données ne sont pas utilisées pour cibler les publicités.  <br/> |
 
 ## <a name="cortana-enterprise-services-in-microsoft-365-experiences"></a>Services d’entreprise Cortana dans les expériences Microsoft 365
 
@@ -87,19 +86,19 @@ L’assistance vocale de Cortana dans l’application mobile Teams et sur les ap
 
 **Contrôle d’administration**
 
-L’assistance vocale de Cortana est activée par défaut pour les locataires. Les administrateurs peuvent contrôler qui, dans leur client, peut utiliser l’assistance vocale Cortana dans Teams via une stratégie (TeamsCortanaPolicy). Cette stratégie peut être définie au niveau du compte d’utilisateur ou du client. Les administrateurs peuvent également utiliser le champ CortanaVoiceInvocationMode au sein de ce contrôle de stratégie pour déterminer si Cortana est désactivée, activée avec l’appel de bouton push uniquement ou activée avec l’appel de mot de veille également (applicable aux appareils qui la supportent, comme l’affichage De Microsoft Teams). Notez qu’au moment de la publication initiale pour les utilisateurs de Microsoft 365 Entreprise aux États-Unis en anglais, l’application mobile Teams ne prendra pas en charge l’activation du mot de veille, mais elle sera prise en charge à l’avenir.
+L’assistance vocale de Cortana est activée par défaut pour les locataires. Les administrateurs peuvent contrôler qui, dans leur client, peut utiliser l’assistance vocale Cortana dans Teams via une stratégie (TeamsCortanaPolicy). Cette stratégie peut être définie au niveau du compte d’utilisateur ou du client. Les administrateurs peuvent également utiliser le champ CortanaVoiceInvocationMode au sein de ce contrôle de stratégie pour déterminer si Cortana est désactivée, activée avec l’appel de bouton push uniquement ou activée avec l’appel de mot de veille également (applicable aux appareils qui la supportent, comme l’affichage Microsoft Teams). Notez qu’au moment de la publication initiale pour les utilisateurs de Microsoft 365 Entreprise aux États-Unis en anglais, l’application mobile Teams ne prendra pas en charge l’activation du mot de veille, mais elle sera prise en charge à l’avenir.
 
 **Contrôle utilisateur**
 
 Les utilisateurs individuels peuvent essayer l’assistance vocale Cortana dans l’application mobile Teams en cliquant sur le bouton de micro. Ils peuvent tester l’assistance vocale de Cortana sur les appareils d’affichage Microsoft Teams en disant simplement &#8220;Cortana.&#8221; Ils peuvent également contrôler si Cortana dans Teams est activée pour leur appareil via un paramètre dans l’application mobile Teams ou sur l’écran Microsoft Teams : 
 
-1. Ouvrez l’application mobile Teams ou allez à l’écran ambiant (d’accueil) de l’écran Microsoft Teams.
+1. Ouvrez l’application mobile Teams ou ouvrez l’écran ambiant (d’accueil) de l’écran Microsoft Teams.
 
-2. Dans l’application mobile Teams, allez à **Paramètres.** Dans l’affichage De Microsoft Teams, sélectionnez l’avatar de l’utilisateur, puis sélectionnez Paramètres. Si Cortana est activée, par &#8220;Cortana, allez sur Settings.&#8221;
+2. Dans l’application mobile Teams, allez à **Paramètres.** Dans l’affichage Microsoft Teams, sélectionnez l’avatar de l’utilisateur, puis sélectionnez Paramètres. Si Cortana est activée, par &#8220;Cortana, allez sur Settings.&#8221;
 
 3. Sélectionnez **Cortana.**
 
-4. Déplacez le basculement sur **Activé** ou **Éteint,** selon que vous souhaitez ou non l’assistance vocale de Cortana sur l’appareil.
+4. Déplacez le basculement sur **Activé** ou **Éteint,** selon que vous souhaitez ou non une assistance vocale de Cortana sur l’appareil.
 
 [En savoir plus sur l’assistance vocale de Cortana dans Teams](/microsoftteams/cortana-in-teams)
 
@@ -109,7 +108,7 @@ Dans Outlook pour iOS, l’expérience d’IA de conversation vocale de Cortana 
 
 À l’aide du langage naturel, de la reconnaissance vocale, de l’apprentissage automatique et de la linguistique basés sur la technologie Microsoft AI, Cortana apprend à connaître votre contexte pour vous aider à rester organisé, à vous connecter aux personnes et aux éléments qui vous sont importants et à contrôler votre journée.
 
-Il vous suffit d’utiliser le bouton microphone pour demander à Cortana d’ajouter des destinataires de réunion ou de modifier les dates, heures ou emplacements. Vous pouvez également demander à Cortana de rechercher des événements spécifiques. Enfin, vous pouvez demander à Cortana de composer des e-mails rapides, de forwarder des messages ou de répondre à des threads. Le micro de Cortana peut également vous aider à démarrer Lire mes e-mails dans Outlook pour iOS, afin que vous pouvez écouter votre boîte de réception mains libres.
+Il vous suffit d’utiliser le bouton microphone pour demander à Cortana d’ajouter des destinataires de réunion ou de modifier les dates, heures ou emplacements. Vous pouvez également demander à Cortana de rechercher des événements spécifiques. Enfin, vous pouvez demander à Cortana de composer des e-mails rapides, de forwarder des messages ou de répondre à des threads. Le micro de Cortana peut également vous aider à démarrer Lire mes e-mails dans Outlook pour iOS, afin de pouvoir écouter votre boîte de réception mains libres.
 
 Initialement, cette nouvelle fonctionnalité d’IA de conversation avec Cortana sera disponible en anglais pour les clients aux États-Unis qui utilisent Outlook pour iOS avec un compte de travail Microsoft 365. Pour en savoir plus, allez à démarrer une conversation avec votre [assistant de productivité personnel dans Outlook avec Cortana.](https://techcommunity.microsoft.com/t5/outlook-blog/start-a-conversation-with-your-personal-productivity-assistant/ba-p/2071416#:~:text=Conversational%20AI%20allows%20you%20to,time%2C%20all%20with%20your%20voice)
 
@@ -119,9 +118,9 @@ Les utilisateurs individuels sont invités à opter pour l’expérience d’IA 
 
 ### <a name="play-my-emails"></a>Lire mes e-mails
 
-Lire mes e-mails (comme connecté via Outlook Mobile) est une expérience vocale et mains libres qui permet aux utilisateurs d’écouter de nouveaux messages dans leur boîte de réception Focused et d’apporter des modifications à leur journée via les haut-parleurs de leur téléphone, casque ou périphérique audio connecté. Les utilisateurs peuvent demander à Cortana de lire leurs e-mails récents à haute voix et de demander à Cortana d’agir comme indicateur, archiver, supprimer et ignorer des messages. Cette fonctionnalité est particulièrement utile pour le rattrapage de vos e-mails lors de vos déplacements, multitâches ou en déplacement. Lorsque l’utilisateur parle à Cortana dans Lire mes e-mails, la demande audio vocale est directement redécuté aux services d’entreprise de Cortana. Une lecture de texte par reconnaissance vocale du courrier électronique de l’utilisateur est traitée dans le cloud Office 365. Au cours de ce processus, aucune donnée Office 365 n’est traitée sur l’appareil mobile de l’utilisateur et aucune donnée de courrier n’est enregistrée. Une transcription des commandes vocales (c’est-à-dire « marquer comme lu », « suivant », « indicateur », etc.) peut être conservée conformément aux conditions de protection des données dans les conditions d’utilisation de Microsoft [Online Services](https://www.microsoft.com/licensing/product-licensing/products).
+Lire mes e-mails (comme connecté via Outlook Mobile) est une expérience vocale et mains libres qui permet aux utilisateurs d’écouter de nouveaux messages dans leur boîte de réception Focused et d’apporter des modifications à leur journée via les haut-parleurs de leur téléphone, casque ou périphérique audio connecté. Les utilisateurs peuvent demander à Cortana de lire leurs e-mails récents à haute voix, et demander à Cortana d’agir comme indicateur, archiver, supprimer et ignorer des messages. Cette fonctionnalité est particulièrement utile pour le rattrapage de vos e-mails lors de vos déplacements, multitâches ou en déplacement. Lorsque l’utilisateur parle à Cortana dans Lire mes e-mails, la demande audio vocale est directement redécuté aux services d’entreprise de Cortana. Une lecture de texte par reconnaissance vocale du courrier électronique de l’utilisateur est traitée dans le cloud Office 365. Au cours de ce processus, aucune donnée Office 365 n’est traitée sur l’appareil mobile de l’utilisateur et aucune donnée de courrier n’est enregistrée. Une transcription des commandes vocales (c’est-à-dire « marquer comme lu », « suivant », « indicateur », etc.) peut être conservée conformément aux conditions de protection des données dans les conditions d’utilisation de Microsoft [Online Services](https://www.microsoft.com/licensing/product-licensing/products).
 
-Cortana appelle lorsqu’un e-mail est protégé et s’interrompt brièvement avant de lire le message pour donner aux utilisateurs suffisamment de temps pour suspendre la lecture ou passer au message suivant. Comme pour un appel téléphonique privé, les utilisateurs doivent faire preuve de prudence lors du début de la lecture dans des emplacements où les informations confidentielles peuvent potentiellement être écoutées. Dans ces cas-là, il est recommandé que les employés de votre organisation portent un casque dans les environnements appropriés lors de l’utilisation de Play My Emails dans Outlook Mobile.
+Cortana appelle lorsqu’un e-mail est protégé et s’interrompt brièvement avant de lire le message pour donner aux utilisateurs suffisamment de temps pour suspendre la lecture ou passer au message suivant. Comme pour un appel téléphonique privé, les utilisateurs doivent faire preuve de prudence lors du début de la lecture dans des emplacements où des informations confidentielles peuvent être écoutées. Dans ces cas-là, il est recommandé que les employés de votre organisation portent un casque dans les environnements appropriés lors de l’utilisation de Play My Emails dans Outlook Mobile.
 
 
 ### <a name="opt-out-of-play-my-emails"></a>Dés optez pour Lire mes e-mails
@@ -160,7 +159,7 @@ Voici les deux façons de réfléchir au fonctionnement de Cortana dans votre en
 
 1. Il s’agit d’un nouveau service qui est abordé ici dans ce document.
 
-2. Pour les services soumis aux conditions d’utilisation des services en ligne, Microsoft est un processeur de données : Microsoft collecte et utilise les données client des clients uniquement pour fournir les services en ligne demandés par nos clients et aux fins demandées par nos clients. Dans le cadre du Règlement général sur la protection des données (R GDPR) de l’UE, le client est le contrôleur de données de ses données. Consultez les [conditions d’utilisation des services](https://www.microsoft.com/licensing/product-licensing/products) en ligne et introduisez plus de transparence de la confidentialité pour nos clients cloud [commerciaux.](https://blogs.microsoft.com/eupolicy/2019/11/18/introducing-privacy-transparency-commercial-cloud-customers/)
+2. Pour les services soumis aux conditions d’utilisation des services en ligne, Microsoft est un processeur de données : Microsoft collecte et utilise les données client des clients uniquement pour fournir les services en ligne demandés par nos clients et aux fins demandées par nos clients. Dans le cadre du Règlement général sur la protection des données (R GDPR) de l’UE, le client est le contrôleur de données de ses données. Consultez les [conditions d’utilisation des services en](https://www.microsoft.com/licensing/product-licensing/products) ligne et introduit plus de transparence de la confidentialité pour nos clients cloud [commerciaux.](https://blogs.microsoft.com/eupolicy/2019/11/18/introducing-privacy-transparency-commercial-cloud-customers/)
 
 3. Par exemple, Lire mes e-mails est un service Cortana à qui vos utilisateurs peuvent se connecter via Outlook pour iOS et utilise les services d’entreprise de Cortana. 
 

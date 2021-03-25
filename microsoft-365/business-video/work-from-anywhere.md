@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de la façon dont Microsoft 365 vous aide à travailler n’importe où.
-ms.openlocfilehash: 7c3a0ee4b69f7fa4e07064f0adc108afe70bd54d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: f68c2f4b05437dd5cb29a3588a4878f464c5566a
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421680"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164560"
 ---
 # <a name="work-from-anywhere---overview"></a>Travailler n’importe où : vue d’ensemble
 
@@ -33,7 +33,11 @@ Absent(s) de votre bureau ? Plus de batterie d’ordinateur portable ? Pas de pr
 
 **Conseil professionnel :** Maintenez votre équilibre entre vie professionnelle et vie privée en tenez compte des notifications pour vos applications de travail sur vos appareils personnels.
 
-Utilisez les quatre conseils ci-dessous pour travailler où que vous soyez : Téléchargez une infographie pour obtenir des conseils pour travailler depuis n’importe où : [PDF,](https://go.microsoft.com/fwlink/?linkid=2079451) [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
+Utilisez les quatre conseils ci-dessous pour travailler où que vous vous trouvez.
+
+Téléchargez une infographie pour obtenir des conseils pour travailler n’importe où : 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079451)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
 **Vous envisagez de travailler régulièrement à domicile ?**
 

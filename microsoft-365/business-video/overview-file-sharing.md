@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble du partage de vos fichiers métiers.
-ms.openlocfilehash: b481e7564625fcd019a53ba9116acdb724b4af61
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6066bb2b1f1ea4fb4fac6a2d9d08dbd19d6cb7b0
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422362"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164596"
 ---
 # <a name="overview-of-sharing-business-files"></a>Vue d’ensemble du partage de fichiers métiers
 
@@ -33,6 +33,10 @@ Vous devez partager des fichiers avec des clients, des clients, des partenaires,
 
 |![Partage sécurisé](../media/securely-share-file.png)<br/>[Partager un fichier avec une personne extérieure à votre entreprise](#share-a-file-with-someone-outside-of-your-company)|![Collaborer avec un client](../media/share-and-collab-with-partner.png) <br/>[Partager et collaborer avec un client ou un partenaire commercial](#share-and-collaborate-with-a-client-or-business-partner) | ![Partager au sein de votre organisation](../media/share-inside-your-org.png) <br/>[Partager au sein de votre entreprise](#share-inside-your-business) |
 |--|--|--|
+
+Téléchargez une infographie pour obtenir une vue d’ensemble rapide des méthodes de partage de vos fichiers métiers. 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)
 
 ## <a name="share-a-file-with-someone-outside-of-your-company"></a>Partager un fichier avec une personne extérieure à votre entreprise
 
@@ -68,7 +72,3 @@ Vous avez besoin d’aide ? Découvrez comment :
 - [Partager des fichiers et des dossiers avec OneDrive](https://support.microsoft.com/en-us/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
 - [Créer une équipe à l’échelle de l’entreprise](https://support.microsoft.com/en-us/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
 - [Ajouter des invités à une équipe](https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
-
-Téléchargez une infographie pour obtenir une vue d’ensemble rapide des méthodes de partage de vos fichiers métiers. 
-
-[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)

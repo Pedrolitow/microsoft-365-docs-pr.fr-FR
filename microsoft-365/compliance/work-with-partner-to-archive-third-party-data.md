@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer un connecteur personnalisé pour importer des données tierces à partir de sources de données telles que Salesforce Messenger, Yahoo Messenger ou Yammer.
-ms.openlocfilehash: adf6583f397296361e8f0cb6f12e7054436fa34f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e93ff765129296f62b43c93937701169bbf4b03
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928378"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164939"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire pour archiver des données tierces
 
@@ -56,7 +56,7 @@ L’illustration et la description suivantes expliquent le fonctionnement du pro
     
 4. Les éléments sont importés dans la boîte aux lettres d’un utilisateur spécifique ou dans une boîte aux lettres « fourre-tout » destinée aux données tierces. L’importation d’un élément dans la boîte aux lettres d’un utilisateur spécifique ou dans la boîte aux lettres de données tierces repose sur les critères suivants :
     
-   1. **Éléments dont l’ID d’utilisateur correspond à un compte d’utilisateur :** Si le connecteur partenaire peut ma cartographier l’ID utilisateur de l’élément de la source de données tierces sur un ID utilisateur spécifique dans Microsoft 365, l’élément est copié dans le dossier **Purges** du dossier Éléments récupérables de l’utilisateur. Les utilisateurs ne peuvent pas accéder aux éléments du dossier Purges. Toutefois, vous pouvez utiliser les outils eDiscovery pour rechercher des éléments dans le dossier Purges.
+   1. **Éléments dont l’ID d’utilisateur correspond à un compte d’utilisateur :** Si le connecteur partenaire peut maté l’ID utilisateur de l’élément dans la source de données tierce à un ID d’utilisateur spécifique dans Microsoft 365, l’élément est copié dans le dossier **Purges** dans le dossier Éléments récupérables de l’utilisateur. Les utilisateurs ne peuvent pas accéder aux éléments du dossier Purges. Toutefois, vous pouvez utiliser les outils eDiscovery pour rechercher des éléments dans le dossier Purges.
     
    1. **Éléments qui n’ont pas d’ID d’utilisateur correspondant à un compte d’utilisateur :** Si le connecteur partenaire ne peut pas macher l’ID d’utilisateur d’un  élément sur un ID d’utilisateur spécifique, l’élément est copié dans le dossier Boîte de réception de la boîte aux lettres de données tierce. L’importation d’éléments dans la boîte de réception permet à un membre de votre organisation ou à vous-même de vous connecter à la boîte aux lettres tierce pour visualiser et gérer ces éléments, et de voir si des ajustements doivent être effectués dans la configuration du connecteur partenaire.
  
@@ -70,7 +70,7 @@ Les sections suivantes indiquent les partenaires Microsoft (et les sources de do
   
 [ArchiveSocial](#archivesocial)
   
-[Globanet](#globanet)
+[Veritas](#veritas)
   
 [OpenText](#opentext)
   
@@ -142,9 +142,9 @@ Les sections suivantes indiquent les partenaires Microsoft (et les sources de do
     
 - Vimeo
   
-### <a name="globanet"></a>Globanet
+### <a name="veritas"></a>Veritas
 
-[Globanet prend](https://www.globanet.com) en charge les sources de données tierces suivantes : 
+[Veritas prend](https://www.globanet.com) en charge les sources de données tierces suivantes : 
   
 - AOL avec client Pivot  
     
@@ -548,7 +548,7 @@ Voici les étapes à suivre pour accéder à la demande d’inscription du conne
 
 2. Cliquez sur **Accept (Accepter)**.
 
-Une fois la demande acceptée, le [portail Azure](https://portal.azure.com) s’affiche. Pour afficher la liste des applications de votre organisation, cliquez sur **Applications Azure Active Directory**  >  **Entreprise.** Le connecteur de données tiers Microsoft 365 est répertorié dans le blade **des applications d’entreprise.**
+Une fois la demande acceptée, le [portail Azure](https://portal.azure.com) s’affiche. Pour afficher la liste des applications pour votre organisation, cliquez sur **Applications Azure Active Directory**  >  **Entreprise.** Le connecteur de données tiers Microsoft 365 est répertorié dans le blade **des applications d’entreprise.**
 
 > [!IMPORTANT]
 > Après le 30 septembre 2018, les données tierces ne seront plus importées dans les boîtes aux lettres de votre organisation si vous n’enregistrez pas de connecteur de données tiers dans Azure Active Directory. Notez que les connecteurs de données tiers existants (ceux créés avant le 30 septembre 2018) doivent également être enregistrés dans Azure Active Directory en suivant la procédure de l’étape 5.
@@ -565,7 +565,7 @@ Pour révoquer le consentement d’un connecteur de données tiers, vous pouvez 
     
     |**Propriété de message**|**Obligatoire ?**|**Description**|**Exemple de valeur**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |Oui  <br/> |Utilisateur qui a initialement créé ou envoyé l’élément dans la source de données tierces. Le connecteur partenaire tente de ma cartographier l’ID utilisateur de l’élément source (par exemple, un handle Twitter) à un compte d’utilisateur pour tous les participants (utilisateurs dans les champs FROM et TO). Une copie du message sera importée dans la boîte aux lettres de chaque participant. Si aucun des participants de l’élément ne peut être mappé à un compte d’utilisateur, l’élément est importé dans la boîte aux lettres d’archivage tierce dans Microsoft 365.  <br/> <br/> Le participant identifié comme expéditeur de l’élément doit avoir une boîte aux lettres active dans l’organisation dans qui l’élément est importé. Si l’expéditeur ne dispose pas d’une boîte aux lettres active, l’erreur suivante est renvoyée :<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |Oui  <br/> |Utilisateur qui a initialement créé ou envoyé l’élément dans la source de données tierces. Le connecteur partenaire tente de ma cartographier l’ID utilisateur de l’élément source (par exemple, un handle Twitter) à un compte d’utilisateur pour tous les participants (utilisateurs dans les champs FROM et TO). Une copie du message sera importée dans la boîte aux lettres de chaque participant. Si aucun des participants de l’élément ne peut être mappé sur un compte d’utilisateur, l’élément est importé dans la boîte aux lettres d’archivage tierce dans Microsoft 365.  <br/> <br/> Le participant identifié comme expéditeur de l’élément doit avoir une boîte aux lettres active dans l’organisation dans qui l’élément est importé. Si l’expéditeur ne dispose pas d’une boîte aux lettres active, l’erreur suivante est renvoyée :<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |Oui  <br/> |Utilisateur qui a reçu un élément, le cas échéant, pour un élément dans la source de données.  <br/> | `bob@contoso.com` <br/> |
     |**Objet** <br/> |Non  <br/> |Objet de l’élément source.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
     |**DATE** <br/> |Oui  <br/> |Date à laquelle l’élément a été initialement créé ou publié dans la source de données client. Par exemple, date à laquelle un message Twitter a été tweeté.  <br/> | `01 NOV 2015` <br/> |
@@ -587,9 +587,9 @@ Pour révoquer le consentement d’un connecteur de données tiers, vous pouvez 
 
 - Vous pouvez utiliser l’outil de recherche de contenu dans le centre de sécurité et conformité pour rechercher des éléments qui ont été importés dans des boîtes aux lettres à partir d’une source de données tierce. Pour rechercher spécifiquement ces éléments importés, vous pouvez utiliser les paires propriété-valeur de message suivantes dans la zone de mot clé pour une recherche de contenu.
     
-  - **`kind:externaldata`**: utilisez cette paire propriété-valeur pour rechercher tous les types de données tiers. Par exemple, pour rechercher des éléments qui ont été importés à partir d’une source de données tierce et qui contenaient le mot « contoso » dans la propriété Subject de l’élément importé, utilisez la requête de mot clé  `kind:externaldata AND subject:contoso` .
+  - **`kind:externaldata`**: Utilisez cette paire propriété-valeur pour rechercher tous les types de données tiers. Par exemple, pour rechercher des éléments qui ont été importés à partir d’une source de données tierce et qui contenaient le mot « contoso » dans la propriété Subject de l’élément importé, utilisez la requête de mot clé  `kind:externaldata AND subject:contoso` .
     
-  - **`itemclass:ipm.externaldata.<third-party data type>`**: Utilisez cette paire propriété-valeur pour rechercher uniquement un type de données tierces spécifié. Par exemple, pour rechercher uniquement les données Facebook qui contiennent le mot « contoso » dans la propriété Subject, utilisez la requête de mot  `itemclass:ipm.externaldata.Facebook* AND subject:contoso` clé. 
+  - **`itemclass:ipm.externaldata.<third-party data type>`**: utilisez cette paire propriété-valeur pour rechercher uniquement un type de données tierces spécifié. Par exemple, pour rechercher uniquement des données Facebook contenant le mot « contoso » dans la propriété Subject, utilisez la requête de mot  `itemclass:ipm.externaldata.Facebook* AND subject:contoso` clé. 
 
   Pour obtenir la liste complète des valeurs à utiliser pour les types de données tiers pour la propriété, voir Utiliser la recherche de contenu pour rechercher des données tierces importées dans `itemclass` [Microsoft 365.](use-content-search-to-search-third-party-data-that-was-imported.md)
     

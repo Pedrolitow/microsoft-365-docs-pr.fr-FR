@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez comment mettre à niveau vers un autre plan.
-ms.openlocfilehash: 62d6da5713a7785fde9e795bc22956d73616c3c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924313"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164448"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent
 
@@ -36,7 +36,7 @@ ms.locfileid: "50924313"
 
 ::: moniker-end
 
-Lorsque votre entreprise change ou que vous avez besoin de fonctionnalités supplémentaires, vous pouvez mettre à niveau les plans. Le moyen le plus simple de  le faire consiste à utiliser l’onglet Mise à niveau dans le Centre d’administration. Toutefois, l’utilisation **de l’onglet** Mise à niveau n’est pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez modifier les plans manuellement.
+Lorsque votre entreprise change ou que vous avez besoin de fonctionnalités supplémentaires, vous pouvez mettre à niveau les plans. Le moyen le plus simple de le faire consiste à utiliser l’onglet **Mise** à niveau dans le Centre d’administration. Toutefois, l’utilisation **de l’onglet** Mise à niveau n’est pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez modifier les plans manuellement.
 
 > [!NOTE]
 > Cet article s’applique au nouveau centre d’administration. Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil. Pour afficher l’article sur l’ancien centre d’administration, voir Basculer vers une autre offre [Microsoft 365 pour les entreprises.](switch-to-a-different-plan.md)
@@ -45,11 +45,11 @@ Lorsque votre entreprise change ou que vous avez besoin de fonctionnalités supp
 
 Lorsque vous  utilisez l’onglet Mise à niveau, vous êtes dirigé tout au long du processus d’achat d’une nouvelle offre. Des licences sont automatiquement attribuées à tous les utilisateurs dans la nouvelle plan, et votre ancienne plan est annulée pour vous.
 
-1. Dans le Centre d’administration, allez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
+1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturation de vos produits.</a>
 
 2. Sélectionnez l’abonnement à mettre à niveau.
 
-3. Dans la page des détails de l’abonnement, sélectionnez **Mettre à niveau.**
+3. Dans la page détails de l’abonnement, sélectionnez **Mettre à niveau.**
 
 4. Recherchez le plan vers lequel vous souhaitez mettre à niveau, puis sélectionnez le bouton **Mettre à** niveau.
 
@@ -92,11 +92,11 @@ Si vous ne voyez aucun  plan sous l’onglet Mise à niveau, cela signifie que v
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Vous ne pouvez pas mettre à niveau les abonnements maintenant, car vous avez plus d’utilisateurs que de licences.
 
-Pour mettre à niveau les plans automatiquement, des licences valides doivent être attribuées à tous vos utilisateurs. Si vous avez attribué un nombre de licences supérieur à celui acheté, une alerte indiquant un conflit de licence devant être résolu s'affichera sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a>. [Découvrez comment résoudre les conflits de licence.](../../admin/manage/resolve-license-conflicts.md) Une fois que vous avez résolu les conflits de licence, vous devriez voir les plans répertoriés sous l’onglet Mise **à** niveau. Si ce n’est pas le cas, [vous pouvez modifier les plans manuellement](change-plans-manually.md)ou appeler le support [technique.](../../admin/contact-support-for-business-products.md)
+Pour mettre à niveau les plans automatiquement, des licences valides doivent être attribuées à tous vos utilisateurs. Si vous avez attribué un nombre de licences supérieur à celui acheté, une alerte indiquant un conflit de licence devant être résolu s'affichera sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a>. [Découvrez comment résoudre les conflits de licence.](../../commerce/licenses/buy-licenses.md) Une fois que vous avez résolu les conflits de licence, vous devriez voir les plans répertoriés sous l’onglet Mise **à** niveau. Si ce n’est pas le cas, [vous pouvez modifier les plans manuellement](change-plans-manually.md)ou appeler le support [technique.](../../admin/contact-support-for-business-products.md)
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Vous ne pouvez pas mettre à niveau les abonnements pour le moment, car cet abonnement n’est pas entièrement installé ou le service n’est pas disponible.
 
-Par exemple, si l’un des services a un incident, vous ne pourrez pas mettre à niveau tant que tous les services ne seront pas en bon état. Pour voir s’il existe des problèmes d’approvisionnement ou  d’état du service, dans le centre d’administration, rendez-vous sur la page d’état du \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">service de santé.</a>
+Par exemple, si l’un des services a un incident, vous ne pourrez pas mettre à niveau tant que tous les services ne seront pas en bon état. Pour voir s’il existe des problèmes d’approvisionnement ou d’état du service, dans le centre d’administration, rendez-vous sur **la** page d’état du \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">service de santé.</a>
 
 Si vous découvrez qu'un service n'est pas entièrement configuré ou si vous rencontrez un problème d'état du service, attendez quelques heures que votre service redevienne disponible et réessayez. Si vous avez encore un problème, contactez [le support technique.](../../admin/contact-support-for-business-products.md)
 
@@ -112,7 +112,7 @@ Vous pouvez modifier [les plans manuellement ou](change-plans-manually.md) appel
 
 Vous pouvez modifier [les plans manuellement ou](change-plans-manually.md) appeler le support [technique.](../../admin/contact-support-for-business-products.md)
 
-### <a name="additional-reasons-you-cant-upgrade"></a>Autres raisons pour lesquelles vous ne pouvez pas mettre à niveau
+### <a name="additional-reasons-you-cant-upgrade"></a>Raisons supplémentaires pour lesquelles vous ne pouvez pas mettre à niveau
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>Vous avez au moins deux plans pour le même produit
 
@@ -136,7 +136,7 @@ Vous ne verrez peut-être aucun plan sous **l’onglet** Mise à niveau, car le 
 
 Lorsque vous planifiez une mise à niveau, les plans disponibles pour la mise à niveau s’affichent en fonction des services de votre plan actuel. Vous pouvez uniquement mettre à niveau vers un plan qui possède les mêmes services liés aux données, tels qu’Exchange Online ou SharePoint Online, ou vers une version supérieure de ces services. Cela garantit que les utilisateurs ne perdent pas les données \' liées à ces services pendant la mise à niveau.
 
-Si votre plan n’est pas éligible à la mise à niveau automatique des plans, vous pouvez peut-être modifier les [plans](change-plans-manually.md)manuellement, à la place. Vous pouvez également appeler [le support technique](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
+Si votre plan n’est pas éligible à la mise à niveau automatique, vous pouvez peut-être modifier les [plans](change-plans-manually.md)manuellement, à la place. Vous pouvez également appeler [le support technique](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
 
 #### <a name="your-subscription-has-an-add-on"></a>Votre abonnement dispose d’un module add-on
 

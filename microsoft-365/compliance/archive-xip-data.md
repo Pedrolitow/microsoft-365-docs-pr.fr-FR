@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données sources XIP de Globanet vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: d3e249c94ad68dbc2e0be51617807b1e48251fa6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données sources XIP de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
+ms.openlocfilehash: dd0881260b278819d9a2a86d2d43cb22c3b2420a
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922884"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163797"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>Configurer un connecteur pour archiver les données sources XIP
 
-Utilisez un connecteur Globanet dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme source XIP vers les boîtes aux lettres utilisateur de votre organisation Microsoft 365. Globanet fournit un [connecteur XIP](https://globanet.com/xip/) qui permet à l’aide d’un fichier XIP d’importer des éléments dans Microsoft 365. Un fichier XIP est similaire à un fichier ZIP, mais permet l’utilisation d’une signature numérique. La signature numérique est vérifiée par globanet Merge 1 avant l’extraction du fichier source XIP. Le connecteur convertit le contenu du fichier source XIP au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme source XIP vers les boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un [connecteur XIP](https://globanet.com/xip/) qui permet à l’aide d’un fichier XIP d’importer des éléments dans Microsoft 365. Un fichier XIP est similaire à un fichier ZIP, mais permet l’utilisation d’une signature numérique. La signature numérique est vérifiée par veritas Merge 1 avant l’extraction du fichier source XIP. Le connecteur convertit le contenu du fichier source XIP au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
 Une fois les données sources XIP stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur XIP pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
@@ -33,15 +33,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec la source XIP pour configurer et configurer un site XIP.
 
-2. Toutes les 24 heures, les éléments sources XIP sont copiés sur le site Globanet Merge1. Le connecteur convertit également le contenu au format de message électronique.
+2. Toutes les 24 heures, les éléments sources XIP sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu au format de message électronique.
 
-3. Le connecteur XIP que vous créez dans le Centre de conformité Microsoft 365 se connecte au site Globanet Merge1 tous les jours et transfère les messages vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur XIP que vous créez dans le Centre de conformité Microsoft 365 se connecte au site Veritas Merge1 tous les jours et transfère les messages vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Le connecteur importe les éléments de message convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à l’étape [3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier du dossier Boîte de réception nommé **XIP** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email.* Chaque élément source contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Créez un compte Globanet Merge1 pour les connecteurs Microsoft. Pour créer un compte, contactez le support [technique Globanet.](https://globanet.com/contact-us/) Vous devez vous inscrire à ce compte lorsque vous créez le connecteur à l’étape 1.
+- Créez un compte Veritas Merge1 pour les connecteurs Microsoft. Pour créer un compte, contactez le support [technique Veritas.](https://www.veritas.com/content/support/) Vous devez vous inscrire à ce compte lorsque vous créez le connecteur à l’étape 1.
 
 - L’utilisateur qui crée le connecteur XIP à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page Connecteurs de données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
@@ -59,7 +59,7 @@ La première étape consiste à accéder à la page **Connecteurs** de données 
 
 5. Connectez-vous à votre compte Merge1 pour configurer le connecteur.
 
-## <a name="step-2-configure-the-xip-connector-on-the-globanet-merge1-site"></a>Étape 2 : Configurer le connecteur XIP sur le site Globanet Merge1
+## <a name="step-2-configure-the-xip-connector-on-the-veritas-merge1-site"></a>Étape 2 : Configurer le connecteur XIP sur le site Veritas Merge1
 
 La deuxième étape consiste à configurer le connecteur XIP sur le site Merge1. Pour plus d’informations sur la configuration du connecteur XIP, voir [merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XIP%20User%20Guide%20.pdf).
 

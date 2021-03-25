@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Globanet Zoom Meetings dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: a8f6ab0a629054457a3a0dc7cbbe74c051820058
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Veritas Zoom Meetings dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
+ms.openlocfilehash: b67098f3ddb1149927f4b82270c8fa4f14bbe558
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923360"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163726"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configurer un connecteur pour archiver les données de Zoom Meetings
 
-Utilisez un connecteur Globanet dans le Centre de conformité Microsoft 365 pour importer et archiver des données de Réunions Zoom vers les boîtes aux lettres des utilisateurs de votre organisation Microsoft 365. Globanet fournit un connecteur [Zoom Meetings](https://globanet.com/zoom/) qui est configuré pour capturer des éléments à partir de la source de données tierce (régulièrement) et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu des réunions (y compris les conversations, les fichiers enregistrés et les métadonnées) du compte Zoom Meetings au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données de Réunions Zoom vers les boîtes aux lettres des utilisateurs de votre organisation Microsoft 365. Veritas fournit un connecteur [Zoom Meetings](https://globanet.com/zoom/) qui est configuré pour capturer des éléments à partir de la source de données tierce (régulièrement) et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu des réunions (y compris les conversations, les fichiers enregistrés et les métadonnées) du compte Zoom Meetings au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
 
 Une fois que les données Zoom Meetings sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Zoom Meetings pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
@@ -33,15 +33,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec Zoom Meetings pour configurer un site Zoom Meetings.
 
-2. Une fois toutes les 24 heures, les éléments de réunion de Zoom Meetings sont copiés sur le site Globanet Merge1. Le connecteur convertit également le contenu des réunions au format de message électronique.
+2. Une fois toutes les 24 heures, les éléments de réunion de Zoom Meetings sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu des réunions au format de message électronique.
 
-3. Le connecteur Zoom Meetings que vous créez dans le Centre de conformité Microsoft 365, se connecte à Globanet Merge1 tous les jours et transfère les messages de réunion vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Zoom Meetings que vous créez dans le Centre de conformité Microsoft 365, se connecte à Veritas Merge1 tous les jours et transfère les messages de réunion vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Le connecteur importe les éléments de réunion convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* et du mappage automatique des utilisateurs, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier Boîte de réception nommé Réunions avec zoom est créé dans les boîtes aux lettres des **utilisateurs** et les éléments de réunion sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque élément de réunion contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de la réunion.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Créez un compte Globanet Merge1 pour les connecteurs Microsoft. Pour créer ce compte, contactez le support [technique Globanet.](https://globanet.com/ms-connectors-contact) Vous vous connectez à ce compte lorsque vous créez le connecteur à l’étape 1.
+- Créez un compte Veritas Merge1 pour les connecteurs Microsoft. Pour créer ce compte, contactez le support [technique Veritas.](https://globanet.com/ms-connectors-contact) Vous vous connectez à ce compte lorsque vous créez le connecteur à l’étape 1.
 
 - Obtenez le nom d’utilisateur et le mot de passe du compte Zoom Entreprise ou Zoom Entreprise de votre organisation. Vous devez vous inscrire à ce compte à l’étape 2 lorsque vous configurez le connecteur Zoom Meetings.
 
@@ -73,13 +73,13 @@ La première étape consiste à accéder aux **connecteurs** de données dans le
 
 ## <a name="step-2-configure-the-zoom-meetings-connector"></a>Étape 2 : Configurer le connecteur Zoom Meetings
 
-La deuxième étape consiste à configurer le connecteur Zoom Meetings sur le site Merge1. Pour plus d’informations sur la configuration du connecteur Zoom Meetings sur le site Globanet Merge1, voir [merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur Zoom Meetings sur le site Merge1. Pour plus d’informations sur la configuration du connecteur Zoom Meetings sur le site Veritas Merge1, voir [merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
 Une fois que vous avez **cliqué sur Enregistrer & terminé,** la **page** Mappage de l’utilisateur dans l’Assistant Connecteur dans le Centre de conformité Microsoft 365 s’affiche.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : Masons les utilisateurs et terminez la configuration du connecteur
 
-1. Dans la page Ma mappage des utilisateurs externes aux utilisateurs **de Microsoft 365,** activez le mappage automatique des utilisateurs.
+1. Dans la page Ma mappage des utilisateurs externes aux utilisateurs **De Microsoft 365,** activez le mappage automatique des utilisateurs.
 
    Les éléments Zoom Meetings incluent une propriété appelée *Email* qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 

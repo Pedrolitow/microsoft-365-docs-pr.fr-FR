@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données Salesforce Chatter de Globanet vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: 14f1f190acef1036ebe29e43a7df4005242f8c23
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données Salesforce Chatter de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
+ms.openlocfilehash: c04dc3026eaa5abb23b332dbae826c052344da31
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925116"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164056"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Configurer un connecteur pour archiver les données salesforce
 
-Utilisez un connecteur Globanet dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme SalesforceCourir vers les boîtes aux lettres utilisateur de votre organisation Microsoft 365. Globanet fournit un [connecteur Salesforce Connector](http://globanet.com/chatter/) qui capture des éléments à partir de la source de données tierce et importe ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les conversations, les pièces jointes et les publications de Salesforce Convert au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme SalesforceCourir vers les boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un [connecteur Salesforce Connector](http://globanet.com/chatter/) qui capture des éléments à partir de la source de données tierce et importe ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les conversations, les pièces jointes et les publications de Salesforce Convert au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
 Une fois que les données salesforces sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur Salesforce Connector pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
@@ -29,23 +29,23 @@ Une fois que les données salesforces sont stockées dans les boîtes aux lettre
 
 La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données Salesforce Chatter dans Microsoft 365.
 
-![Flux de travail d’archivage pour les données salesforce](../media/SalesforceChatterConnectorWorkflow.png)
+![Flux de travail d’archivage pour les données Salesforce Workflow](../media/SalesforceChatterConnectorWorkflow.png)
 
 1. Votre organisation collabore avec Salesforce Configure pour configurer un site Salesforce Chatter.
 
-2. Une fois toutes les 24 heures, les éléments Salesforce Merge sont copiés sur le site Globanet Merge1. Le connecteur insérable également les éléments Salesforce Mails dans un format de message électronique.
+2. Toutes les 24 heures, les éléments Salesforce Merge sont copiés sur le site Veritas Merge1. Le connecteur insérable également les éléments Salesforce Mails dans un format de message électronique.
 
-3. Le connecteur Salesforce Connector que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Globanet Merge1 tous les jours et transfère le contenu De Las Computing vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Salesforce Connector que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère le contenu De Las Computing vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à l’étape [3.](#step-3-map-users-and-complete-the-connector-setup) Un sous-dossier du dossier Boîte de réception nommé **Salesforce Chatter** est créé dans les boîtes aux lettres de l’utilisateur et les éléments sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email.* Chaque élément Dent contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
+4. Le connecteur importe les éléments convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à l’étape [3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier du dossier Boîte de réception nommé **Salesforce Chatter** est créé dans les boîtes aux lettres de l’utilisateur et les éléments sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email.* Chaque élément DeNter contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Créez un compte Merge1 pour les connecteurs Microsoft. Pour créer un compte, contactez le support [technique Globanet.](https://globanet.com/contact-us/) Vous devez vous inscrire à ce compte lorsque vous créez le connecteur à l’étape 1.
+- Créez un compte Merge1 pour les connecteurs Microsoft. Pour créer un compte, contactez le support [technique Veritas.](https://www.veritas.com/content/support/) Vous devez vous inscrire à ce compte lorsque vous créez le connecteur à l’étape 1.
 
 - Créer une application Salesforce et acquérir un jeton sur [https://salesforce.com](https://salesforce.com) . Vous devez vous connecter au compte Salesforce en tant qu’administrateur et obtenir un jeton personnel d’utilisateur pour importer des données. En outre, les déclencheurs doivent être publiés sur le site DeLice pour capturer les mises à jour, les suppressions et les modifications. Ces déclencheurs créent un billet sur un canal et Merge1 capture les informations à partir du canal. Pour obtenir des instructions détaillées sur la création de l’application et l’acquisition du jeton, voir le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
 
-- L’utilisateur qui crée le connecteur Salesforce Connector à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- L’utilisateur qui crée le connecteur Salesforce Connector à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
 
 ## <a name="step-1-set-up-the-salesforce-chatter-connector"></a>Étape 1 : Configurer le connecteur Salesforce Connector
 
@@ -61,9 +61,9 @@ La première étape consiste à accéder à la page **Connecteurs** de données 
 
 5. Connectez-vous à votre compte Merge1 pour configurer le connecteur.
 
-## <a name="step-2-configure-the-salesforce-chatter-on-the-globanet-merge1-site"></a>Étape 2 : Configurer salesforce Merge sur le site Globanet Merge1
+## <a name="step-2-configure-the-salesforce-chatter-on-the-veritas-merge1-site"></a>Étape 2 : Configurer salesforce Merge sur le site Veritas Merge1
 
-La deuxième étape consiste à configurer le connecteur Salesforce Connector sur le site Globanet Merge1. Pour plus d’informations sur la configuration du connecteur Salesforce Connector, voir [merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur Salesforce Connector sur le site Veritas Merge1. Pour plus d’informations sur la configuration du connecteur Salesforce Connector, voir [merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
 
 Une fois que vous avez **cliqué sur Enregistrer & terminé,** la **page** Mappage de l’utilisateur dans l’Assistant Connecteur dans le Centre de conformité Microsoft 365 s’affiche.
 

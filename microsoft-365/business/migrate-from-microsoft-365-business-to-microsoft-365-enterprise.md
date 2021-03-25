@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment déplacer votre entreprise de Microsoft 365 Business Premium vers Microsoft 365 E3.
-ms.openlocfilehash: 019a422bb879389f42a32cf30f9a8094f776078a
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 10630671f3deb7eff0ad0f601d301b90743ee35f
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126198"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164510"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migration de Microsoft 365 Business Premium vers Microsoft 365 E3
 
@@ -51,16 +51,15 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Mi
 |:-------|:-----|:-----|
 | **Sur site**        | | | 
 | Windows 10    | Windows 10 Business  |     Windows 10 Entreprise E3| 
-| Applications Office*    | [Applications Microsoft 365 pour les entreprises](#office-365-business)    | Applications Microsoft 365 for entreprise | 
+| Applications Office*    | [Microsoft 365 Apps for business](#office-365-business)    | Applications Microsoft 365 pour les grandes entreprises | 
 | **Applications de productivité cloud**        | | | 
 | Exchange Online et Outlook    | Limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | Limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
 | Teams    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
-| OneDrive Entreprise    | Limite de stockage de 1 To par utilisateur    | Illimité | 
+| OneDrive Entreprise    | Limite de stockage de 1 To par utilisateur    | Illimité | 
 | Yammer, SharePoint Online, Planificateur, Stream    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
-| MileIQ    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Protection contre les menaces**        | | | 
 | Fonctionnalités de réduction de la surface d’attaque    | [Voir cette liste](#threat-protection) | Gestion d’entreprise de l’isolation matérielle pour Microsoft Edge | 
-| Defender pour Office 365 Plan 1 | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
+| Microsoft Defender pour Office 365 Plan 1 | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
 | **Gestion des identités**        | | | 
 | Réinitialisation du mot de passe en libre-service pour les comptes Azure Active Directory (Azure AD) hybrides, authentification multifacteur Azure AD (MFA), accès conditionnel, écriture d’écriture de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | Découverte d’applications cloud, Azure AD Connect Health    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
@@ -85,11 +84,11 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Mi
 | Gestion des enregistrements de messagerie, balises de rétention et stratégies de rétention    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 ||||
 
-\* Les utilisateurs qui se sont vus attribuer l’accès aux applications SaaS peuvent accéder à 10 applications au plus. Les administrateurs peuvent configurer l' utilisateur unique et modifier l’accès des utilisateurs à différentes applications SaaS, mais l’accès à l' utilisateur unique n’est autorisé que pour 10 applications par utilisateur à la fois. Toutes les applications Office 365 sont comptabilisées comme une seule application.
+\* Les utilisateurs qui se sont vus attribuer l’accès aux applications SaaS peuvent obtenir un accès sso jusqu’à 10 applications. Les administrateurs peuvent configurer l' utilisateur unique et modifier l’accès des utilisateurs à différentes applications SaaS, mais l’accès à l' utilisateur unique n’est autorisé que pour 10 applications par utilisateur à la fois. Toutes les applications Office 365 sont comptabilisées comme une seule application.
 
 ## <a name="migration"></a>Migration
 
-Pour migrer, travaillez avec votre partenaire pour déplacer votre abonnement et vos licences Microsoft 365 Business Premium vers un abonnement Microsoft 365 E3 approprié avec ses licences.
+Pour migrer, travaillez avec votre partenaire pour déplacer votre abonnement Et vos licences Microsoft 365 Business Premium vers un abonnement Microsoft 365 E3 approprié avec ses licences.
 
 Les sections suivantes décrivent les modifications que vous devez apporter, le cas nécessaire, et ce que vous pouvez faire après la migration.
 
@@ -104,10 +103,6 @@ Vous n’avez pas besoin d’apporter des modifications à votre abonnement ou d
 Vos utilisateurs peuvent désormais bénéficier d’un espace de stockage illimité dans les boîtes aux lettres Exchange Online et les dossiers OneDrive Entreprise.
 
 Vous pouvez commencer à utiliser la découverte d’applications cloud, Azure AD Connect Health et l' sso pour plus de 10 applications.
-
->[!Note]
->Les utilisateurs migrés vers Microsoft 365 E3 ne peuvent plus utiliser MileIQ.
->
 
 <a name="threat-protection"></a>
 ### <a name="threat-protection"></a>Protection contre les menaces
@@ -141,11 +136,11 @@ Vous n’avez pas besoin d’apporter de modifications à votre configuration In
 Microsoft 365 Business Premium inclut Windows 10 Business, que vous pouvez installer avec Windows AutoPilot. Lorsque vous migrez vers Microsoft 365 E3, chaque licence utilisateur inclut Windows 10 Entreprise E3, que vous pouvez également installer avec Windows Autopilot.
 
 <a name="office-365-business"></a>
-###  <a name="microsoft-365-apps-for-business"></a>Applications Microsoft 365 pour les entreprises
+###  <a name="microsoft-365-apps-for-business"></a>Microsoft 365 Apps for business
 
 Votre client Microsoft 365 Apps for business installé sur vos appareils commencera automatiquement à utiliser les fonctionnalités de Microsoft 365 Apps for enterprise. Après la migration, vous pouvez désormais utiliser :
 
  - Prise en charge des stratégies de groupe
- - Comparaison et analyse de feuilles de calcul
+ - Comparer et interroger une feuille de calcul
  - Aide à la décision
 

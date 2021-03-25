@@ -22,14 +22,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment déplacer votre entreprise vers Microsoft 365 Business Premium à partir d’Office 365 E3.
-ms.openlocfilehash: f655037891bf8ec42e7b927256025c89c9354e98
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912939"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164530"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration d’Office 365 E3 vers Microsoft 365 Business Premium 
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration d’Office 365 E3 vers Microsoft 365 Business Premium
 
 Microsoft 365 Business Premium offre tout ce dont vous avez besoin pour votre petite entreprise, en combinant les applications de productivité basées sur le cloud les plus classes avec une gestion et une sécurité des appareils simples. Si vous disposez actuellement d’un abonnement Office 365 E3, mais que vous n’avez pas plus de 300 employés, envisagez de passer à Microsoft 365 Business Premium pour ajouter des fonctionnalités de sécurité.
 
@@ -42,14 +42,14 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 | Fonctionnalité    | Prise en charge dans Microsoft 365 Business Premium    | Prise en charge dans Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Sur site**        | | | 
-| Applications Office<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Applications Microsoft 365 pour les grandes entreprises | 
+| Applications Office<sup>1</sup>    | Microsoft 365 Apps for business    | Applications Microsoft 365 pour les grandes entreprises | 
 | **Applications de productivité cloud**        | | | 
 | Exchange Online et Outlook    | Limite de stockage de 50 Go par boîte aux lettres et nombre Archivage Exchange Online    | Limite de stockage de 100 Go par boîte aux lettres et nombre Archivage Exchange Online | 
 | Teams    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
-| OneDrive Entreprise    | Limite de stockage de 1 To par utilisateur    | Illimité | 
+| OneDrive Entreprise    | Limite de stockage de 1 To par utilisateur    | Illimité | 
 | Yammer, SharePoint Online, Planificateur, Stream    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
-| Gestionnaire client Outlook, MileIQ    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | | 
+| Outlook Customer Manager    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Protection contre les menaces**        | | | 
 | Microsoft Defender pour Office 365 Plan 1 | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
 | **Gestion des identités**        | | | 
@@ -122,7 +122,7 @@ Microsoft 365 Business Premium a une limite de stockage de 50 Go car il utilise 
 
 ### <a name="threat-protection"></a>Protection contre les menaces
 
-Après avoir migré vers Microsoft 365 Business Premium, vous avez Defender pour Office 365. Consultez [Microsoft Defender pour Office 365](../security/office-365-security/office-365-atp.md) pour obtenir une vue d’ensemble. Pour configurer, voir [configurer](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)des liens sécurisés, configurer des pièces [jointes sécurisées](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)et configurer l’anti-hameçonnage dans [Defender pour Office 365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)
+Après avoir migré vers Microsoft 365 Business Premium, vous avez Defender pour Office 365. Consultez [Microsoft Defender pour Office 365](../security/defender-365-security/defender-for-office-365.md) pour obtenir une vue d’ensemble. Pour configurer, voir [configurer](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)des liens sécurisés, configurer des pièces [jointes sécurisées](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)et configurer l’anti-hameçonnage dans [Defender pour Office 365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 

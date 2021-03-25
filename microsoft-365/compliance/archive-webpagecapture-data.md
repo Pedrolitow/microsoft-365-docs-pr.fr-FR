@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de capture de pages Web à partir de Globanet dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: de1e181670f1efc2e758b666dc3a26337a294ee2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données de capture de page web à partir de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
+ms.openlocfilehash: d37ed5fdb6995fa9333181d254b1fccd2b08b43b
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920798"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163847"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Configurer un connecteur pour archiver des données de page web
 
-Utilisez un connecteur Globanet dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de pages web vers des boîtes aux lettres utilisateur dans votre organisation Microsoft 365. Globanet fournit un [connecteur de capture](https://globanet.com/webpage-capture) de pages Web qui capture des pages web spécifiques (et tous les liens sur ces pages) dans un site web spécifique ou un domaine entier. Le connecteur convertit le contenu de la page web au format PDF, PNG ou personnalisé, puis joint les fichiers convertis à un message électronique, puis importe ces éléments de courrier dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de pages web vers des boîtes aux lettres utilisateur dans votre organisation Microsoft 365. Veritas fournit un connecteur de [capture de](https://globanet.com/webpage-capture) page web qui capture des pages web spécifiques (et tous les liens sur ces pages) dans un site web spécifique ou un domaine entier. Le connecteur convertit le contenu de la page web au format PDF, PNG ou personnalisé, puis joint les fichiers convertis à un message électronique, puis importe ces éléments de courrier dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
 
 Une fois que le contenu de la page web est stocké dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery et les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur de capture de pages Web pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
@@ -33,19 +33,19 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec la source de la page web pour configurer un site de capture de pages Web.
 
-2. Une fois toutes les 24 heures, les éléments sources de la page web sont copiés sur le site Globanet Merge1. Le connecteur convertit et joint également le contenu d’une page web à un message électronique.
+2. Toutes les 24 heures, les éléments sources de la page web sont copiés sur le site Veritas Merge1. Le connecteur convertit et joint également le contenu d’une page web à un message électronique.
 
-3. Le connecteur de capture de page web que vous créez dans le Centre de conformité Microsoft 365 se connecte au site Globanet Merge1 tous les jours et transfère les éléments de page web vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur de capture de page web que vous créez dans le Centre de conformité Microsoft 365 se connecte au site Veritas Merge1 tous les jours et transfère les éléments de page web vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments de page web convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage utilisateur automatique, comme décrit à l’étape [3.](#step-3-map-users-and-complete-the-connector-setup) Un sous-dossier du dossier Boîte de réception nommé Capture de page **web** est créé dans les boîtes aux lettres de l’utilisateur et les éléments de page web sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque élément de page web contient cette propriété, qui est remplie avec les adresses de messagerie fournies lorsque vous configurez le connecteur de capture de page web à [l’étape 2](#step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site).
+4. Le connecteur importe les éléments de page web convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage utilisateur automatique, comme décrit à l’étape [3.](#step-3-map-users-and-complete-the-connector-setup) Un sous-dossier du dossier Boîte de réception nommé Capture de page **web** est créé dans les boîtes aux lettres de l’utilisateur et les éléments de page web sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque élément de page web contient cette propriété, qui est remplie avec les adresses de messagerie fournies lorsque vous configurez le connecteur de capture de page web à [l’étape 2](#step-2-configure-the-webpage-capture-connector-on-the-veritas-merge1-site).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Créez un compte Globanet Merge1 pour les connecteurs Microsoft. Pour créer ce compte, contactez le support [technique Globanet.](https://globanet.com/ms-connectors-contact/) Vous vous connectez à ce compte lorsque vous créez le connecteur à l’étape 1.
+- Créez un compte Veritas Merge1 pour les connecteurs Microsoft. Pour créer ce compte, contactez le support [technique Veritas.](https://www.veritas.com/content/support/) Vous vous connectez à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- Vous devez travailler avec la prise en charge globanet pour configurer un format de fichier personnalisé pour convertir les éléments de page web. Pour plus d’informations, consultez le guide utilisateur Merge1 Third-Party Connectors dans 
+- Vous devez travailler avec la prise en charge de Veritas pour configurer un format de fichier personnalisé pour convertir les éléments de page web. Pour plus d’informations, voir le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
 
-- L’utilisateur qui crée le connecteur de capture de page web à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- L’utilisateur qui crée le connecteur de capture de page web à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) [Créer](/Exchange/permissions-exo/role-groups#create-role-groups) des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
 
 ## <a name="step-1-set-up-the-webpage-capture-connector"></a>Étape 1 : Configurer le connecteur de capture de page web
 
@@ -61,9 +61,9 @@ La première étape consiste à accéder aux **connecteurs** de données et à c
 
 5. Connectez-vous à votre compte Merge1 pour configurer le connecteur.
 
-## <a name="step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site"></a>Étape 2 : Configurer le connecteur de capture de pages web sur le site Globanet Merge1
+## <a name="step-2-configure-the-webpage-capture-connector-on-the-veritas-merge1-site"></a>Étape 2 : Configurer le connecteur de capture de page web sur le site Veritas Merge1
 
-La deuxième étape consiste à configurer le connecteur de capture de pages web sur le site Globanet Merge1. Pour plus d’informations sur la configuration du connecteur de capture de pages web, voir le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur de capture de page web sur le site Veritas Merge1. Pour plus d’informations sur la configuration du connecteur de capture de pages web, voir le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
 
 Une fois que vous avez **cliqué sur Enregistrer & terminé,** la **page** Mappage de l’utilisateur dans l’Assistant Connecteur dans le Centre de conformité Microsoft 365 s’affiche.
 
@@ -71,7 +71,7 @@ Une fois que vous avez **cliqué sur Enregistrer & terminé,** la **page** Mappa
 
 Pour ma cartographier les utilisateurs et terminer la configuration du connecteur dans le Centre de conformité Microsoft 365, suivez les étapes ci-dessous :
 
-1. Dans la page **Mappage Capture users to Microsoft 365 users** page, enable automatic user mapping. Les éléments de capture de page Web incluent une propriété appelée *Courrier* électronique, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la page Mappage De capture d’utilisateurs vers des utilisateurs **Microsoft 365,** activez le mappage utilisateur automatique. Les éléments de capture de page Web incluent une propriété appelée *Courrier* électronique, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez **sur** Suivant, examinez vos paramètres et allez à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
 

@@ -14,14 +14,14 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 36af6e0f882c87d05c5f397982533fb48875b0da
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: 23c870826261a85aee23af82bb177825f55f4eb2
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994605"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165392"
 ---
-# <a name="edit-an-existing-topic"></a>Modifier une rubrique existante 
+# <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Modifier une rubrique existante dans les rubriques microsoft 
 
 </br>
 
@@ -32,13 +32,13 @@ ms.locfileid: "50994605"
 Dans Rubriques de Rubriques, vous pouvez modifier une rubrique existante. Vous devrez peut-être le faire si vous souhaitez corriger ou ajouter des informations supplémentaires à une page de rubriques existante. 
 
 > [!Note] 
-> Alors que les informations d’une rubrique qui sont rassemblées par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations de personnes que vous ajoutez manuellement lors de la modification d’une rubrique existante sont visibles pour tous les utilisateurs qui sont autorisés à afficher des rubriques. 
+> Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations de personnes que vous ajoutez manuellement lors de la modification d’une rubrique existante sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher les rubriques. 
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour modifier une rubrique existante, vous devez :
 - Vous avez une licence Topics.
-- Avoir des autorisations [**sur qui peut créer ou modifier des rubriques**](./topic-experiences-user-permissions.md). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres des rubriques Topics. 
+- Avoir des autorisations [**sur Qui peut créer ou modifier des rubriques**](./topic-experiences-user-permissions.md). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres d’autorisations de la rubrique Rubriques. 
 
 > [!Note] 
 > Les utilisateurs qui sont autorisés à gérer des rubriques dans le centre de rubriques (gestionnaires de connaissances) sont déjà autorisés à créer et modifier des rubriques.
@@ -60,7 +60,7 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
    ![Contrôle d’édition](../media/knowledge-management/topic-page-edit.png) </br>  
 
 
-2. Dans la section <b>Autres noms,</b> tapez tous les autres noms que la rubrique peut faire référence. 
+2. Dans la section <b>Autres noms,</b> tapez les autres noms que la rubrique peut faire référence. 
 
     ![Autres noms](../media/knowledge-management/alt-names.png) </br> 
 3. Dans la section <b>Description,</b> tapez quelques phrases qui décrivent la rubrique. Ou si une description existe déjà, mettez-la à jour si nécessaire.
@@ -92,11 +92,11 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
 
     Vous pouvez modifier un fichier ou une page suggéré en fichier ou page épinglé en sélectionnant l’icône épinglée.
 
-7.  La section <b>Sites associés</b> présente les sites qui ont des informations sur la rubrique. 
+7.  La section <b>Sites associés</b> présente les sites qui ont des informations sur cette rubrique. 
 
     ![Section Sites associés](../media/knowledge-management/related-sites.png)</br>
 
-    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site, ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
+    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
     
     ![Sélection d’un site](../media/knowledge-management/sites.png)</br>
 

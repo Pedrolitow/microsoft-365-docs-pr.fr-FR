@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données XSLT/XML à partir de Globanet dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 097b523b6a1909f3f9575302fe11ad61a7558472
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données XSLT/XML à partir de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
+ms.openlocfilehash: 51b05f83c51626bc60dc19b5ec9a63750903281c
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921724"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163756"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configurer un connecteur pour archiver les données XSLT/XML
 
-Utilisez un connecteur Globanet dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la source de page Web vers les boîtes aux lettres des utilisateurs de votre organisation Microsoft 365. Globanet vous fournit un connecteur [XSLT/XML](https://globanet.com/xslt-xml) qui permet le développement rapide de fichiers créés à l’aide de XSLT (Extensible Style sheet Language Transformations) pour transformer des fichiers XML dans d’autres formats de fichiers (tels que html ou texte) qui peuvent être importés dans Microsoft 365. Le connecteur convertit le contenu d’un élément de la source XSLT/XML au format de message électronique, puis importe l’élément converti dans les boîtes aux lettres Microsoft 365.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la source de page Web vers les boîtes aux lettres des utilisateurs de votre organisation Microsoft 365. Veritas vous fournit un connecteur [XSLT/XML](https://globanet.com/xslt-xml) qui permet le développement rapide de fichiers créés à l’aide de XSLT (Extensible Style sheet Language Transformations) pour transformer des fichiers XML dans d’autres formats de fichiers (tels que html ou texte) qui peuvent être importés dans Microsoft 365. Le connecteur convertit le contenu d’un élément de la source XSLT/XML au format de message électronique, puis importe l’élément converti dans les boîtes aux lettres Microsoft 365.
 
 Une fois que les données XSLT/XML sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, ainsi que des stratégies et des étiquettes de rétention. L’utilisation d’un connecteur XSLT/XML pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
@@ -33,15 +33,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec la source XSLT/XML pour configurer un site XSLT/XML.
 
-2. Une fois toutes les 24 heures, les messages de conversation de la source XSLT/XML sont copiés sur le site Globanet Merge1. Le connecteur convertit également le contenu au format de message électronique.
+2. Toutes les 24 heures, les messages de conversation provenant de la source XSLT/XML sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu au format de message électronique.
 
-3. Le connecteur XSLT/XML que vous créez dans le Centre de conformité Microsoft 365 se connecte au site Globanet Merge1 tous les jours et transfère les messages vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur XSLT/XML que vous créez dans le Centre de conformité Microsoft 365 se connecte au site Veritas Merge1 tous les jours et transfère les messages vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments de message convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier Boîte de réception nommé **XSLT/XML** est créé dans les boîtes aux lettres utilisateur et les éléments de message sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque message contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message.
+4. Le connecteur importe les éléments de message convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier boîte de réception nommé **XSLT/XML** est créé dans les boîtes aux lettres utilisateur et les éléments de message sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque message contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Créez un compte Globanet Merge1 pour les connecteurs Microsoft. Pour créer ce compte, contactez le support [technique Globanet.](https://globanet.com/contact-us/) Vous vous connectez à ce compte lorsque vous créez le connecteur à l’étape 1.
+- Créez un compte Veritas Merge1 pour les connecteurs Microsoft. Pour créer ce compte, contactez le support [technique Veritas.](https://www.veritas.com/content/support/) Vous vous connectez à ce compte lorsque vous créez le connecteur à l’étape 1.
 
 - L’utilisateur qui crée le connecteur XSLT/XML à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de** données dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
@@ -61,7 +61,7 @@ La première étape consiste à accéder aux **connecteurs** de données dans le
 
 ## <a name="step-2-configure-an-xsltxml-connector"></a>Étape 2 : Configurer un connecteur XSLT/XML
 
-La deuxième étape consiste à configurer le connecteur XSLT/XML sur le site Merge1. Pour plus d’informations sur la configuration du connecteur XSLT/XML sur le site Globanet Merge1, voir [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XSLT-XML%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur XSLT/XML sur le site Merge1. Pour plus d’informations sur la configuration du connecteur XSLT/XML sur le site Veritas Merge1, voir [merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XSLT-XML%20User%20Guide%20.pdf).
 
 Une fois que vous avez **cliqué sur Enregistrer & terminé,** la **page** Mappage de l’utilisateur dans l’Assistant Connecteur dans le Centre de conformité Microsoft 365 s’affiche.
 
@@ -85,4 +85,4 @@ Après avoir créé le connecteur XSLT/XML, vous pouvez afficher l’état du co
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

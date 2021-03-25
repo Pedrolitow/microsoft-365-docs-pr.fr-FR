@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents dans des boîtes aux lettres Microsoft 365.
-ms.openlocfilehash: 18fb9c757652cbebb456da18285444272766167f
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 83ba81907a9db8dd1f4e95e5df3306366838c1ba
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722857"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163649"
 ---
 # <a name="archive-third-party-data"></a>Archiver des données tierces
 
@@ -35,10 +35,10 @@ Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de donnée
 
 ## <a name="third-party-data-connectors"></a>Connecteurs de données tiers
 
-Le tableau suivant répertorie les connecteurs de données tiers disponibles dans le Centre de conformité Microsoft 365. Le tableau récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après l’importation et l’archivage dans Microsoft 365. Consultez [la section suivante](#overview-of-compliance-solutions-that-support-third-party-data) pour obtenir une description plus détaillée de chaque solution de conformité et de la façon dont elle peut bénéficier de données tierces.
+Le tableau suivant répertorie les connecteurs de données tiers disponibles dans le Centre de conformité Microsoft 365. Le tableau récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après l’importation et l’archivage dans Microsoft 365. Consultez [la section suivante](#overview-of-compliance-solutions-that-support-third-party-data) pour obtenir une description plus détaillée de chaque solution de conformité et pour savoir comment elle peut bénéficier de données tierces.
 
 > [!TIP]
-> Cliquez sur le lien dans la colonne **de** données tierces pour suivre les instructions détaillées de création d’un connecteur pour ce type de données.
+> Cliquez sur le lien dans **la** colonne de données tierces pour suivre les instructions pas à pas pour créer un connecteur pour ce type de données.
 
 |Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -84,9 +84,9 @@ Le tableau suivant répertorie les connecteurs de données tiers disponibles dan
 ||||||||
 
 > [!NOTE]
-> <sup>1 Connecteur</sup> de données fourni par TeleMessage. Avant de pouvoir archiver des données dans Microsoft 365, vous devez utiliser TeleMessage pour configurer son service d’archivage pour votre organisation. Pour plus d’informations, consultez la section des conditions préalables dans les instructions pas à pas pour ce type de données.<br/><br/><sup>2 Connecteur</sup> de données fourni par Globanet. Avant de pouvoir archiver des données dans Microsoft 365, vous devez travailler avec Globanet pour configurer son service d’archivage pour votre organisation. Pour plus d’informations, consultez la section des conditions préalables dans les instructions pas à pas pour ce type de données.
+> <sup>1 Connecteur</sup> de données fourni par TeleMessage. Avant de pouvoir archiver des données dans Microsoft 365, vous devez utiliser TeleMessage pour configurer son service d’archivage pour votre organisation. Pour plus d’informations, consultez la section des conditions préalables dans les instructions pas à pas pour ce type de données.<br/><br/><sup>2 Connecteur</sup> de données fourni par Veritas. Avant de pouvoir archiver des données dans Microsoft 365, vous devez travailler avec Veritas pour configurer son service d’archivage pour votre organisation. Pour plus d’informations, consultez la section des conditions préalables dans les instructions pas à pas pour ce type de données.
 
-Les données tierces répertoriées dans le tableau précédent (à l’exception des données RH et des données de mauvaise utilisation physique) sont importées dans les boîtes aux lettres des utilisateurs. Les solutions de conformité correspondantes qui permettent de prendre en charge des données tierces sont appliquées à la boîte aux lettres de l’utilisateur dans laquelle les données sont stockées.
+Les données tierces répertoriées dans le tableau précédent (à l’exception des données RH et des données de mauvaise gestion physique) sont importées dans les boîtes aux lettres des utilisateurs. Les solutions de conformité correspondantes qui permettent de prendre en charge des données tierces sont appliquées à la boîte aux lettres de l’utilisateur dans laquelle les données sont stockées.
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Vue d’ensemble des solutions de conformité qui permettent la prise en charge des données tierces
 
@@ -126,6 +126,6 @@ Les signaux provenant de données tierces, tels que les données RH sélectives,
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire Microsoft pour archiver des données tierces
 
-Pour importer et archiver des données tierces, votre organisation peut également travailler avec un partenaire Microsoft. Si un type de données tiers n’est pas pris en charge par les connecteurs de données disponibles dans le Centre de conformité Microsoft, vous pouvez travailler avec un partenaire qui peut fournir un connecteur personnalisé qui sera configuré pour extraire des éléments de la source de données tierces régulièrement, puis vous connecter au cloud Microsoft par une API tierce et importer ces éléments dans Microsoft 365. Le connecteur partenaire convertit également le contenu d’un élément de la source de données tierce en message électronique, puis l’importe dans une boîte aux lettres dans Microsoft 365.
+Pour importer et archiver des données tierces, votre organisation peut également travailler avec un partenaire Microsoft. Si un type de données tiers n’est pas pris en charge par les connecteurs de données disponibles dans le Centre de conformité Microsoft, vous pouvez travailler avec un partenaire qui peut fournir un connecteur personnalisé qui sera configuré pour extraire régulièrement des éléments de la source de données tierces, puis vous connecter au cloud Microsoft par une API tierce et importer ces éléments dans Microsoft 365. Le connecteur partenaire convertit également le contenu d’un élément de la source de données tierce en message électronique, puis l’importe dans une boîte aux lettres dans Microsoft 365.
 
 Pour obtenir la liste des partenaires avec qui vous pouvez travailler et le processus pas à pas pour cette méthode, voir Travailler avec un partenaire pour archiver des données tierces dans [Microsoft 365.](work-with-partner-to-archive-third-party-data.md)

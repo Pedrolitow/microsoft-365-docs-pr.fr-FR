@@ -18,22 +18,22 @@ ms.collection:
 - M365-security-compliance
 description: Que vous ajoutiez de nouvelles solutions au Centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au fait du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ed29ad5186972f56609a596d88a48c7c460f295f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c695bc2632e766eb6f14c4e9f7eabbbddff66fd2
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905856"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164973"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
-Que ce soit en ajoutant de nouvelles solutions au Centre de conformité [Microsoft 365,](microsoft-365-compliance-center.md)en mettant à jour les fonctionnalités existantes en fonction de vos commentaires ou en mettant en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 aujourd’hui.
+Que vous ajoutiez de nouvelles solutions au Centre de conformité [Microsoft 365,](microsoft-365-compliance-center.md)mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 aujourd’hui.
 
 > [!NOTE]
-> Certaines fonctionnalités de conformité sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](/office365/admin/manage/release-options-in-office-365)
+> Certaines fonctionnalités de conformité sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](/office365/admin/manage/release-options-in-office-365)
 
 > [!TIP]
-> Vous êtes intéressé par ce qui se passe dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du Centre d’administration Microsoft 365](/office365/admin/whats-new-in-preview)<br>[Nouveautés du Centre d’administration SharePoint](/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de Microsoft 365 Defender](../security/mtp/whats-new.md)<br><br>
+> Vous êtes intéressé par ce qui se passe dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du Centre d’administration Microsoft 365](/office365/admin/whats-new-in-preview)<br>[Nouveautés du Centre d’administration SharePoint](/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
 Consultez la feuille de route [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités de Microsoft 365 qui ont été lancées, sont en cours de déploiement, sont en cours de développement, ont été annulées ou publiées précédemment.
 
 ## <a name="january-2021"></a>Janvier 2021
@@ -48,7 +48,7 @@ Les solutions de conformité Microsoft 365 [](/microsoftteams/platform/task-modu
 
 ### <a name="information-governance-and-records-management"></a>Gouvernance des informations et gestion des enregistrements
 
-[Nouvelle évaluation à prendre](retention-regulatory-requirements.md#new-zealand-public-records-act) en compte dans le cadre de l’utilisation de la gouvernance des informations et de la gestion des enregistrements pour répondre aux obligations de conformité de la Loi sur les enregistrements publics en Nouvelle-Zélande.
+[Nouvelle évaluation de l’utilisation](retention-regulatory-requirements.md#new-zealand-public-records-act) de la gouvernance des informations et de la gestion des enregistrements pour répondre aux obligations de conformité de la Loi sur les enregistrements publics en Nouvelle-Zélande.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -74,11 +74,11 @@ D’autres documents sur les solutions de contenu seront bientôt disponible !
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-Amélioration du flux de travail et des fonctionnalités d’ajout de dépositaires et [de sources](non-custodial-data-sources.md) de données non privatives à un cas Advanced eDiscovery. [](add-custodians-to-case.md)
+Amélioration du flux de travail et des fonctionnalités pour l’ajout de [dépositaires](add-custodians-to-case.md) et [de sources](non-custodial-data-sources.md) de données non privatives à un cas Advanced eDiscovery.
 
 ### <a name="data-connectors"></a>Connecteurs de données
 
-[Quatre nouveaux connecteurs Globanet publiés](archiving-third-party-data.md#third-party-data-connectors): Redtail Speak, Salesforce Queue, ServiceNow et Yieldbroker.
+[Quatre nouveaux connecteurs Veritas publiés](archiving-third-party-data.md#third-party-data-connectors): Redtail Speak, Salesforce Queue, ServiceNow et Yieldbroker.
 
 ### <a name="encryption"></a>Chiffrement
 
@@ -117,12 +117,12 @@ Pour faciliter la gestion du contenu chiffré dans le flux de travail eDiscovery
 ### <a name="compliance-manager"></a>Gestionnaire de conformité
 
 - [Prise en charge des abonnements Microsoft 365 Pour le gouvernement.](compliance-manager.md) Le Gestionnaire de conformité est désormais disponible pour les clients modérés et élevés de la communauté du gouvernement américain (GCC).
-- [Analyseur de configuration de la conformité Microsoft pour le Gestionnaire de conformité.](compliance-manager-mcca.md) Nouvel outil Basé sur PowerShell qui vous aide à démarrer avec le Gestionnaire de conformité en analysant les configurations actuelles de votre organisation et en les validant par rapport aux meilleures pratiques recommandées par Microsoft 365.
+- [Analyseur de configuration de conformité Microsoft pour le Gestionnaire de conformité.](compliance-manager-mcca.md) Nouvel outil Basé sur PowerShell qui vous aide à démarrer avec le Gestionnaire de conformité en analysant les configurations actuelles de votre organisation et en les validant par rapport aux meilleures pratiques recommandées par Microsoft 365.
 - [Nouveaux modèles](compliance-manager-templates-list.md). Ajout de 56 nouveaux modèles, ce qui porte le nombre total de modèles du Gestionnaire de conformité à plus de 230.
 
 ### <a name="data-connectors"></a>Connecteurs de données
 
-[Cinq nouveaux connecteurs Globanet en prévisualisation.](archiving-third-party-data.md#third-party-data-connectors) Les nouveaux connecteurs incluent Reuters Dealing, Reuters FX, CellTrust, XIP, generic MS SQL Database.
+[Cinq nouveaux connecteurs Veritas en prévisualisation.](archiving-third-party-data.md#third-party-data-connectors) Les nouveaux connecteurs incluent Reuters Dealing, Reuters FX, CellTrust, XIP, generic MS SQL Database.
 
 ### <a name="retention-labels-disposition-review"></a>Étiquettes de rétention (révision de la disposition)
 
@@ -137,7 +137,7 @@ Pour afficher les éléments lors d’une révision de disposition, les utilisat
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-[Prise en charge des languesJCK.](ediscovery-cjk-support.md) Advanced eDiscovery prend désormais en charge les langues de jeu de caractères sur deux caractères, appelées collectivement langues DUK (y compris le chinois simplifié, le chinois traditionnel, le japonais et le coréen). Ceux-ci peuvent être utilisés dans plusieurs scénarios d’ensembles de révision avancés.
+[Prise en charge des languesJCK.](ediscovery-cjk-support.md) Advanced eDiscovery prend désormais en charge les langues de jeu de caractères sur deux caractères, appelées collectivement languesJCK (y compris le chinois simplifié, le chinois traditionnel, le japonais et le coréen). Ceux-ci peuvent être utilisés dans plusieurs scénarios d’ensembles de révision avancés.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -165,11 +165,11 @@ Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conform
 - [Groupes de rôles mis à jour.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) Les groupes de rôles de conformité des communications correspondent désormais à la structure de groupe de rôles disponible pour la solution de gestion des risques internes.
 - [Tableau de bord rapports](communication-compliance-feature-reference.md#reports). Votre emplacement central pour afficher tous les rapports de conformité des communications. Les widgets de rapport fournissent un aperçu rapide des informations les plus couramment nécessaires pour une évaluation globale de l’état des activités de conformité des communications.
 - [Flux Power Automate](communication-compliance-feature-reference.md#power-automate-flows). Configurer des flux pour automatiser les tâches pour les alertes et les utilisateurs, avertir les responsables lorsque les utilisateurs déclenchent une alerte, et bien plus encore.
-- [Action de correction « Améliorer la classification](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)». Les alertes contenant des éléments qui correspondent à des classifieurs entra ners peuvent tirer parti des commentaires pour réduire les faux positifs dans votre organisation. **L’option Améliorer la classification** vous permet de fournir des commentaires si les éléments détectés correspondent au classifieur configuré dans la stratégie de conformité des communications associée. Vous pouvez même suggérer d’autres classifieurs à associer à l’élément pour améliorer la précision des correspondances pour les alertes futures.
+- [Action de correction « Améliorer la classification](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)». Les alertes contenant des éléments qui correspondent à des classifieurs entra mentables peuvent tirer parti des commentaires pour réduire les faux positifs dans votre organisation. **L’option Améliorer la classification** vous permet de fournir des commentaires si les éléments détectés correspondent au classifieur configuré dans la stratégie de conformité des communications associée. Vous pouvez même suggérer d’autres classifieurs à associer à l’élément pour améliorer la précision des correspondances pour les alertes futures.
 
 ### <a name="data-connectors"></a>Connecteurs de données
 
-- [Nouveaux connecteurs de données tiers.](archiving-third-party-data.md#third-party-data-connectors) 25 nouveaux connecteurs de données, dont 14 connecteurs globanet et 8 connecteurs de télémessage.
+- [Nouveaux connecteurs de données tiers.](archiving-third-party-data.md#third-party-data-connectors) 25 nouveaux connecteurs de données, dont 14 connecteurs de Veritas et 8 de Telemessage.
 - [Connecteur de badging physique](import-physical-badging-data.md). Importez les données de mauvaise gestion physiques, telles que les événements d’accès physique bruts de l’employé ou les alarmes d’accès physique générées par le système de mauvaise gestion de votre organisation. Par exemple, les entrées des bâtiments, des salles de serveurs ou des centres de données. Les données de mauvais traitement physique peuvent être utilisées par la solution de gestion des risques internes pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation.
 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
@@ -198,7 +198,7 @@ De nouvelles fonctionnalités de formation et de commentaires permettent d’am�
 Cette nouvelle fonctionnalité est incluse dans les fonctionnalités suivantes :
 
 > [!NOTE]
-> Pour toutes les fonctionnalités, si vous fournissez au moins 30 réponses de commentaires, nous allons créer une version retrainée de ce classificateur que vous pouvez consulter. En cas d’amélioration, vous pouvez republier le classifieur.
+> Pour toutes les fonctionnalités, si vous fournissez au moins 30 réponses de commentaires, nous allons créer une version retrainée de ce classificateur que vous pouvez examiner. En cas d’amélioration, vous pouvez republier le classifieur.
 
 - [Classifieurs avec capacité d’apprentissage](classifier-learn-about.md#retraining-classifiers). Pour améliorer la précision de vos classifieurs publiés, vous pouvez fournir des commentaires sur la correspondance des éléments détectés avec le classifieur.
 - [Conformité des communications.](classifier-how-to-retrain-comms-compliance.md) La nouvelle action **de correction** améliorer la classification vous permet de fournir des commentaires si un élément d’une alerte de conformité des communications correspond au classificateur configuré dans la stratégie de conformité des communications.
