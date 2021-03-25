@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Dans cet article, vous allez découvrir les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
-ms.openlocfilehash: af0cc59813c76e4ed6a3c0e50140e7fa26c91080
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: acc825a8fc445d224fbc91dd12dace2a5e1b25c8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051065"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199524"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
@@ -140,7 +140,7 @@ Activer les pièces jointes fiables
 
 4. Vous pouvez également activer les Documents sécurisés, puis cliquer sur **Enregistrer**
 
-Pour obtenir plus d’informations, voir [ATP pour SharePoint, OneDrive et Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md) et [Activer ATP pour SharePoint, OneDrive et Microsoft Teams](../security/defender-365-security/turn-on-mdo-for-spo-odb-and-teams.md) .
+Pour obtenir plus d’informations, voir [ATP pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) et [Activer ATP pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md) .
 
 ## <a name="add-copyright-information-to-your-files"></a>Ajouter des informations de copyright à vos fichiers
 

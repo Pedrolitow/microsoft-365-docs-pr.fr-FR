@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 6a40b80faef124a3a03e84a749b901a01791f6fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 85afc0dedd4fea9ea11c378ca35523d668acc84c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165080"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199182"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender pour Office 365 dans le centre de sécurité Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165080"
 **S’applique à :**
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender pour Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 Le [Centre de sécurité Microsoft 365](./overview-security-center.md) amélioré à [https://security.microsoft.com](https://security.microsoft.com) combine les fonctionnalités de sécurité des portails de sécurité Microsoft existants, notamment le centre de sécurité Microsoft Defender et le centre de sécurité et conformité Office 365. Ce centre amélioré aide les équipes de sécurité à protéger leur organisation contre les menaces de façon plus pratique et efficace.
 
@@ -49,18 +49,18 @@ Ce tableau est une référence rapide des domaines d’e-mail et de collaboratio
 
 |**Catégorie**  |**Description de la modification**  |
 |---------|---------|
-| [Page de l’entité d’e-mail](../defender-365-security/mdo-email-entity-page.md) | Cette page **unifie** des informations d’e-mail qui étaient disséminées dans différentes pages ou affichages dans le passé. L’étude de l’e-mail en matière de menaces et de tendances est *centralisée*. Les informations d’en-tête et l’aperçu d’e-mail sont accessibles via la même page e-mail, ainsi que d’autres informations utiles liées à l’e-mail. De même, vous pouvez trouver l’état de détonation des pièces jointes ou URL de fichiers malveillants dans un onglet de la même page. La page Entité d’e-mail permet aux administrateurs et aux équipes des opérations de sécurité de comprendre une menace d’e-mail et son état, rapidement, puis d’agir rapidement pour déterminer la gestion.  |
-| [Enquête](../defender-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | Regroupe les fonctionnalités ERA dans [Defender pour Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365) et [Defender pour les points de terminaison](../defender-endpoint/automated-investigations.md). Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.  | 
+| [Page de l’entité d’e-mail](../office-365-security/mdo-email-entity-page.md) | Cette page **unifie** des informations d’e-mail qui étaient disséminées dans différentes pages ou affichages dans le passé. L’étude de l’e-mail en matière de menaces et de tendances est *centralisée*. Les informations d’en-tête et l’aperçu d’e-mail sont accessibles via la même page e-mail, ainsi que d’autres informations utiles liées à l’e-mail. De même, vous pouvez trouver l’état de détonation des pièces jointes ou URL de fichiers malveillants dans un onglet de la même page. La page Entité d’e-mail permet aux administrateurs et aux équipes des opérations de sécurité de comprendre une menace d’e-mail et son état, rapidement, puis d’agir rapidement pour déterminer la gestion.  |
+| [Enquête](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | Regroupe les fonctionnalités ERA dans [Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) et [Defender pour les points de terminaison](../defender-endpoint/automated-investigations.md). Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.  | 
 | [Affichage d’alerte](../../compliance/alert-policies.md) | Le volet **Affichage des alertes** le centre de sécurité et conformité Office inclut désormais des liens vers le centre de sécurité Microsoft 365. Cliquez sur le lien **Ouvrir une page d’alerte** pour ouvrir le centre de sécurité Microsoft 365. Vous pouvez accéder à la page **Affichage des alertes** en cliquant sur une alerte Office 365 dans la file d’attente Alertes. |
-| [Formation par simulation d’attaque](../defender-365-security/attack-simulation-training-insights.md)   | Utilisez la formation par simulation d’attaque pour exécuter des scénarios d’attaque réaliste dans votre organisation. Ces attaques simulées peuvent aider à former vos employés avant qu’une attaque réelle n’impacte votre organisation. La formation par simulation d’attaque inclut d’autres options supplémentaires, des rapports améliorés et des flux de formation améliorés pour faciliter l’exécution et la gestion des scénarios de simulation d’attaque et de formation.  |
+| [Formation par simulation d’attaque](../office-365-security/attack-simulation-training-insights.md)   | Utilisez la formation par simulation d’attaque pour exécuter des scénarios d’attaque réaliste dans votre organisation. Ces attaques simulées peuvent aider à former vos employés avant qu’une attaque réelle n’impacte votre organisation. La formation par simulation d’attaque inclut d’autres options supplémentaires, des rapports améliorés et des flux de formation améliorés pour faciliter l’exécution et la gestion des scénarios de simulation d’attaque et de formation.  |
 
 Aucune modification apportée à ces zones :
-- [Explorer](../defender-365-security/threat-explorer.md)
+- [Explorer](../office-365-security/threat-explorer.md)
 - [Stratégies et règles](../../compliance/alert-policies.md)
-- [Campagne](../defender-365-security/campaigns.md)
-- [Soumissions](../defender-365-security/admin-submission.md)
+- [Campagne](../office-365-security/campaigns.md)
+- [Soumissions](../office-365-security/admin-submission.md)
 - [Révision](./m365d-action-center.md)
-- [Suivi des menaces](../defender-365-security/threat-trackers.md)
+- [Suivi des menaces](../office-365-security/threat-trackers.md)
 
 Consultez également la section **Informations connexes** au bas de cet article.
 
@@ -135,7 +135,7 @@ Afficher des rapports, modifier vos paramètres, et modifier les rôles d’un u
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Exemple de repérage avancé pour Microsoft Defender pour Office 365
 Souhaitez-vous commencer à rechercher des menaces d’e-mail à l’aide de la fonctionnalité de repérage avancé ? Essayez ceci :
 
-La section [Prise en main](/microsoft-365/security/defender-365-security/defender-for-office-365.md#getting-started) de [l’article Microsoft Defender pour Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365) présente des blocs de configuration initiale logiques qui ressemblent à ceci :
+La section [Prise en main](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) de [l’article Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) présente des blocs de configuration initiale logiques qui ressemblent à ceci :
 
 1. Configurez tous les éléments en utilisant « anti » dans le nom.
 - anti-programme malveillant
@@ -147,7 +147,7 @@ La section [Prise en main](/microsoft-365/security/defender-365-security/defende
 3. Protégez les charges de travail (par exemple, SharePoint Online, OneDrive et Teams)
 4. Protéger avec la purge automatique Zero-Hour
 
-Vous pouvez également utiliser un [Lien](../defender-365-security/protect-against-threats.md) pour vous aider à vous lancer directement dans la configuration dès le premier jour.
+Vous pouvez également utiliser un [Lien](../office-365-security/protect-against-threats.md) pour vous aider à vous lancer directement dans la configuration dès le premier jour.
 
 La dernière étape de la **Prise en main** consiste à protéger les utilisateurs grâce à la **Purge automatique à zéro heure**, également appelée ZAP. Le fait de savoir si la purge automatique zéro heure d’un courrier malveillant, après la remise, est effective peut être très important.
 
@@ -182,4 +182,4 @@ Les données de cette requête s’affichent dans le panneau de résultats sous 
 - [Alertes d’e-mail et collaboration](../../compliance/alert-policies.md#default-alert-policies)
 - [Repérer des menaces sur les appareils, les e-mails, les applications, et les identités](./advanced-hunting-query-emails-devices.md)
 - [Règles de détection personnalisée](/microsoft-365/security/defender-endpoint/custom-detection-rules)
-- [Créer une simulation d’attaque par hameçonnage](../defender-365-security/attack-simulation-training.md) et [Créer une charge utile pour former vos contacts](../defender-365-security/attack-simulation-training-payloads.md)
+- [Créer une simulation d’attaque par hameçonnage](../office-365-security/attack-simulation-training.md) et [Créer une charge utile pour former vos contacts](../office-365-security/attack-simulation-training-payloads.md)

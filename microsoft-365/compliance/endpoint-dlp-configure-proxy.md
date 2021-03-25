@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Apprenez comment configurer les paramètres de proxy et de connexion Internet du dispositif pour le DLP Endpoint.
-ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907004"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199273"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurer le proxy du dispositif et les paramètres de connexion à Internet pour le DLP du point de terminaison
 
@@ -76,7 +76,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 > [!NOTE]
 > Cela affectera toutes les applications, y compris les services Windows qui utilisent WinHTTP avec un proxy par défaut. - Les ordinateurs portables qui changent de topologie (par exemple : du bureau à la maison) fonctionneront mal avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
 
-1. Ouvrir une ligne de commandes avec élévation de privilèges :
+1. Ouvrez une invite de commandes avec élévation de privilèges :
     1. Accéder à **Démarrer** et taper **cmd**
     1. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 2.  Entrez la commande suivante et appuyez sur **Entrée** :
@@ -96,7 +96,7 @@ Pour plus d’informations, voir [la syntaxe, les contextes et le formatage de l
 
 Si un proxy ou un pare-feu bloque tout le trafic par défaut et n'autorise le passage que de domaines spécifiques, ajoutez les domaines énumérés dans la feuille téléchargeable à la liste des domaines autorisés.
 
-Cette [de calcul téléchargeable](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) énumère les services et leurs URL associés auxquels votre réseau doit pouvoir se connecter. Vous devez vous assurer qu'il n'y a pas de pare-feu ou de règles de filtrage du réseau qui refuseraient l'accès à ces URL, ou vous pouvez avoir besoin de créer une règle d'autorisation spécifique pour eux.
+Cette [de calcul téléchargeable](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) énumère les services et leurs URL associés auxquels votre réseau doit pouvoir se connecter. Vous devez vous assurer qu'il n'y a pas de pare-feu ou de règles de filtrage du réseau qui refuseraient l'accès à ces URL, ou vous pouvez avoir besoin de créer une règle d'autorisation spécifique pour eux.
 
 Si l’analyse HTTPS (inspection SSL) est activée pour un proxy ou un pare-feu, excluez les domaines répertoriés dans le tableau ci-dessus de l’analyse HTTPS.
 Si un proxy ou un pare-feu bloque le trafic anonyme, étant donné que le point de terminaison DLP se connecte à partir du contexte système, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées précédemment.
@@ -107,7 +107,7 @@ Vérifier que la configuration du proxy a été effectuée avec succès, que Win
 
 1. Téléchargez l’ [outil Analyseur de client MDATP](https://aka.ms/mdatpanalyzer) sur le PC sur lequel la DLP de point de terminaison est en cours d’exécution.
 2. Extraire le contenu de MDATPClientAnalyzer.zip sur l’appareil.
-3. Ouvrir une ligne de commandes avec élévation de privilèges :
+3. Ouvrez une invite de commandes avec élévation de privilèges :
     1. Accéder à **Démarrer** et taper **cmd**.
     1. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 4.  Entrez la commande suivante et appuyez sur **Entrée** :
@@ -123,7 +123,7 @@ Remplacez la *HardDrivePath* par le chemin d’accès dans lequel l’outil MDAT
 
 6.  Open **MDATPClientAnalyzerResult.txt** et vérifiez que vous avez effectué les étapes de configuration du proxy pour permettre la découverte du serveur et l'accès aux URL des services.  L'outil vérifie la connectivité des URL du service Defender for Endpoint avec lesquelles le client Defender for Endpoint est configuré pour interagir. Il imprime ensuite les résultats dans le fichier **MDATPClientAnalyzerResult.txt** pour chaque URL pouvant être utilisée pour communiquer avec Defender pour les services Endpoint. Par exemple :
 
-    **URL de test : https://xxx.microsoft.com/xxx </br> 1 – Proxy par défaut : Réussite (200) </br> 2 – Découverte automatique du proxy (WPAD) : Réussite (200)</br> 3 – Proxy désactivé : Réussite (200)</br> 4 – Proxy nommé : n’existe pas</br> 5 – Proxy ligne de commande : n’existe pas**</br>
+    **URL de test : https://xxx.microsoft.com/xxx </br> 1 – Proxy par défaut : Réussite (200) </br> 2 – Découverte automatique du proxy (WPAD) : Réussite (200)</br> 3 – Proxy désactivé : Réussite (200)</br> 4 – Proxy nommé : n’existe pas</br> 5 – Proxy ligne de commande : n’existe pas**</br>
 
 
 Si au moins une des options de connectivité renvoie un état (200), le client Defender pour le point de terminaison peut communiquer avec l’URL testée correctement à l’aide de cette méthode de connectivité. 

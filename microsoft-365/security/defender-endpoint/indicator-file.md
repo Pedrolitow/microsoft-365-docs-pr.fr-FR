@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d78f90e78a50d5902070f441a1d60693a5f531c8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35a0b66a4cdc4cf39c15329eda2e0aafced79f34
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185718"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199608"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -35,7 +35,8 @@ ms.locfileid: "51185718"
 
 
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Vous pouvez empêcher toute propagation supplémentaire d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects. Si vous connaissez un fichier exécutable portable (PE) potentiellement malveillant, vous pouvez le bloquer. Cette opération l’empêche d’être lue, écrite ou exécutée sur des ordinateurs de votre organisation.
 
@@ -49,22 +50,22 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 - Cette fonctionnalité est disponible si votre organisation utilise Windows Defender antivirus et la protection basée sur le cloud est activée. Pour plus d’informations, voir Utiliser les technologies de nouvelle génération dans [l’Antivirus Microsoft Defender via](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)la protection livrée par le cloud.
 - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure.
 - Pris en charge sur les ordinateurs sur Windows 10, version 1703 ou ultérieure, Windows Server 2016 et 2019.
-- Pour commencer à bloquer des fichiers, vous devez d’abord activer la fonctionnalité Bloquer ou [autoriser dans  ](advanced-features.md) paramètres.
+- Pour commencer à bloquer les fichiers, vous devez d’abord activer la fonctionnalité Bloquer ou [autoriser dans  ](advanced-features.md) paramètres.
 - Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables (PE), y compris les fichiers _.exe_ et _.dll._ La couverture sera étendue au fil du temps.
 
->[!IMPORTANT]
->- La fonction autoriser ou bloquer ne peut pas être effectuée sur les fichiers si la classification du fichier existe sur le cache de l’appareil avant l’action autoriser ou bloquer 
->- Les fichiers signés fiables seront traités différemment. Defender for Endpoint est optimisé pour gérer les fichiers malveillants. Dans certains cas, la tentative de blocage des fichiers signés de confiance peut avoir des conséquences sur les performances.
+Les performances peuvent être affectées si vous copiez des fichiers de grande taille à partir d’un partage réseau sur votre appareil local, en particulier sur une connexion VPN. 
 
- 
->[!NOTE]
->En règle générale, les blocs de fichiers sont appliqués en quelques minutes, mais peuvent prendre jusqu’à 30 minutes.
+> [!IMPORTANT]
+> - La fonction autoriser ou bloquer ne peut pas être effectuée sur les fichiers si la classification du fichier existe sur le cache de l’appareil avant l’action autoriser ou bloquer 
+> - Les fichiers signés fiables seront traités différemment. Defender for Endpoint est optimisé pour gérer les fichiers malveillants. Dans certains cas, la tentative de blocage des fichiers signés de confiance peut avoir des conséquences sur les performances.
+> - En règle générale, les blocs de fichiers sont appliqués en quelques minutes, mais peuvent prendre jusqu’à 30 minutes.
+> - S’il existe des stratégies d’indicateur de fichier en conflit, la stratégie d’application de la stratégie la plus sécurisée est appliquée. Par exemple, une stratégie d’indicateur de hachage de fichier SHA-256 est prioritaire sur une stratégie d’indicateur de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
 
 ### <a name="create-an-indicator-for-files-from-the-settings-page"></a>Créer un indicateur pour les fichiers à partir de la page paramètres
 
 1. Dans le volet de navigation, sélectionnez **Indicateurs**  >  **de paramètres.**  
 
-2. Sélectionnez **l’onglet De hachage de** fichier.
+2. Sélectionnez **l’onglet hachage fichier.**
 
 3. Sélectionnez **Ajouter un indicateur**.
 

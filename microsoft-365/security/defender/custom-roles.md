@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 17d55a434cc0499b9b24039f19ec7ed3c94310e8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6582e4e940dc9910e7d341c92b525379b924f35b
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056634"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199956"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Rôles personnalisés dans le contrôle d’accès basé sur les rôles pour Microsoft 365 Defender
 
@@ -45,7 +45,7 @@ L’accès à Microsoft 365 Defender peut être géré collectivement à l’aid
 
 Si vous avez besoin de plus de flexibilité et de contrôle sur l’accès à des données de produit spécifiques, l’accès à Microsoft 365 Defender peut également être géré avec la création de rôles personnalisés via chaque portail de sécurité respectif.  
 
-Par exemple, un rôle personnalisé créé via Microsoft Defender pour point de terminaison autoriserait l’accès aux données de produit pertinentes, y compris aux données de point de terminaison dans le Centre de sécurité Microsoft 365. De même, un rôle personnalisé créé par le biais de Microsoft Defender pour Office 365 autoriserait l’accès aux données de produit pertinentes, y compris aux données de collaboration des & de messagerie dans le Centre de sécurité Microsoft 365.
+Par exemple, un rôle personnalisé créé via Microsoft Defender pour point de terminaison autoriserait l’accès aux données de produit pertinentes, y compris les données de point de terminaison dans le Centre de sécurité Microsoft 365. De même, un rôle personnalisé créé par le biais de Microsoft Defender pour Office 365 autoriserait l’accès aux données de produit pertinentes, notamment aux données de collaboration des & de messagerie dans le Centre de sécurité Microsoft 365.
 
 Les utilisateurs ayant des rôles personnalisés existants peuvent accéder aux données du Centre de sécurité Microsoft 365 en fonction de leurs autorisations de charge de travail existantes, sans configuration supplémentaire requise.
 
@@ -53,7 +53,7 @@ Les utilisateurs ayant des rôles personnalisés existants peuvent accéder aux 
 Les rôles et autorisations personnalisés peuvent être créés et gérés individuellement via chacun des portails de sécurité suivants : 
 
 - Microsoft Defender pour le point de terminaison : [modifier les rôles dans Microsoft Defender pour le point de terminaison](../defender-endpoint/user-roles.md)
-- Microsoft Defender pour Office 365 : [autorisations](../defender-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide) dans le Centre de sécurité & conformité
+- Microsoft Defender pour Office 365 : [autorisations](../office-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide) dans le Centre de sécurité & conformité
 - Microsoft Cloud App Security : gérer [l’accès administrateur](/cloud-app-security/manage-admins)
 
 Chaque rôle personnalisé créé via un portail individuel permet d’accéder aux données du portail produit approprié. Par exemple, un rôle personnalisé créé via Microsoft Defender pour le point de terminaison autorise uniquement l’accès à Defender pour les données de point de terminaison.
@@ -76,12 +76,12 @@ Les autorisations et les rôles peuvent également être gérés dans le Centre 
 
 
 ## <a name="required-roles-and-permissions"></a>Rôles et des autorisations requis
-Le tableau suivant décrit les rôles et les autorisations requis pour accéder à chaque expérience unifiée dans chaque charge de travail. Les rôles définis dans le tableau ci-dessous font référence à des rôles personnalisés dans des portails individuels et ne sont pas connectés à des rôles globaux dans Azure AD, même s’ils sont nommés de la même manière.
+Le tableau suivant décrit les rôles et autorisations requis pour accéder à chaque expérience unifiée dans chaque charge de travail. Les rôles définis dans le tableau ci-dessous font référence à des rôles personnalisés dans des portails individuels et ne sont pas connectés à des rôles globaux dans Azure AD, même s’ils sont nommés de la même manière.
 
 > [!NOTE]
 > La gestion des incidents nécessite des autorisations de gestion pour tous les produits qui font partie de l’incident.
  
-| **L’un des rôles suivants est requis pour Microsoft 365 Defender**  | **L’un des rôles suivants est requis pour Defender for Endpoint**  | **L’un des rôles suivants est requis pour Defender pour Office 365** | **L’un des rôles suivants est requis pour Cloud App Security** | 
+| **L’un des rôles suivants est requis pour Microsoft 365 Defender**  | **L’un des rôles suivants est requis pour Defender pour endpoint**  | **L’un des rôles suivants est requis pour Defender pour Office 365** | **L’un des rôles suivants est requis pour Cloud App Security** | 
 |---------|---------|---------|---------|
 | Affichage des données d’examen : <ul><li>Page d’alerte</li> <li>File d’attente des alertes</li> <li>Incidents</li>  <li>File d’attente des incidents</li> <li>Centre de notifications</li></ul>| Afficher les opérations de sécurité des données | <ul><li>Gérer les alertes en affichage seul </li> <li>Configuration de l'organisation</li><li>Journaux d'audit</li> <li>Afficher uniquement les journaux d’audit</li> <li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li></ul>  | <ul><li>Administrateur global</li> <li>Administrateur de la sécurité</li> <li>Administrateur de mise en conformité</li> <li>Opérateur de sécurité</li> <li>Lecteur Sécurité</li> <li>Lecteur général</li></ul> |
 | Affichage des données de recherche | Afficher les opérations de sécurité des données | <ul><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li> <li>Destinataires en affichage seul</li> | <ul><li>Administrateur global</li> <li>Administrateur de la sécurité</li> <li>Administrateur de mise en conformité</li> <li>Opérateur de sécurité</li> <li>Lecteur Sécurité</li> <li>Lecteur général</li></ul> |

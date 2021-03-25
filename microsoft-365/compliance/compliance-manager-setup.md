@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft et configurez des tests automatisés des actions. Gérer l’historique des utilisateurs et filtrer l’affichage de votre tableau de bord.
-ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052132"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199217"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -39,7 +39,7 @@ L’administrateur général Microsoft 365 de votre organisation sera probableme
 ## <a name="sign-in"></a>Se connecter
 
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and sign **in** with your Microsoft 365 global administrator account.
-2. Sélectionnez **Gestionnaire de conformité** dans le volet de navigation de gauche. Vous arrivez à votre tableau de [bord du Gestionnaire de conformité.](#understand-the-compliance-manager-dashboard)
+2. Sélectionnez **gestionnaire de conformité** dans le volet de navigation de gauche. Vous arrivez à votre tableau de [bord du Gestionnaire de conformité.](#understand-the-compliance-manager-dashboard)
 
 Le lien direct vers le Gestionnaire de conformité est [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) .
 
@@ -72,13 +72,13 @@ Pour définir des autorisations et attribuer des rôles dans le Centre de sécur
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>En savoir plus sur le Centre de conformité et sécurité Office 365 &
 
-En savoir plus sur les autorisations dans le Centre de sécurité [& conformité Office 365.](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)
+En savoir plus sur les autorisations dans le Centre de sécurité [& conformité Office 365.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
 Si vous n’avez pas accès au Centre de sécurité et conformité Office 365, ou si vous avez besoin d’accéder à la version classique du Gestionnaire de conformité dans le portail d’confiance des services Microsoft, les paramètres d’administration dans le portail d’confiance des services offrent une autre façon d’attribuer des rôles (afficher les[instructions).](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users) N’ignorez pas que ces rôles sont plus limités dans leurs fonctionnalités.
 
 ##### <a name="more-about-azure-ad"></a>En savoir plus sur Azure AD
 
-Pour attribuer des rôles et définir des autorisations dans Azure AD, voir Attribuer des rôles d’administrateur et non administrateur aux utilisateurs avec [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)
+Pour attribuer des rôles et définir des autorisations dans Azure AD, voir Attribuer des rôles d’administrateur et non administrateur aux utilisateurs avec [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 Les utilisateurs avec des identités Azure AD qui n’ont pas d’abonnement Office 365 ou Microsoft 365 ne pourront pas accéder au Gestionnaire de conformité dans le Centre de conformité Microsoft 365. Pour obtenir de l’aide pour accéder au Gestionnaire de conformité, contactez [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
@@ -89,7 +89,7 @@ Le tableau ci-dessous présente les fonctions autorisées par chaque rôle dans 
 
 | L’utilisateur peut : | Rôle du Gestionnaire de conformité | Rôle Azure AD | 
 | :------------- | :-------------: | :------------: |
-| **Lire mais pas modifier les données**| Gestionnaire de conformité - Lecteur  | Lecteur global Azure AD, lecteur Sécurité | 
+| **Lire, mais pas modifier les données**| Gestionnaire de conformité - Lecteur  | Lecteur global Azure AD, lecteur Sécurité | 
 | **Modifier des données**| Contribution du Gestionnaire de conformité | Administrateur de conformité | 
 | **Modifier les résultats des tests**| Évaluation du Gestionnaire de conformité | Administrateur de conformité | 
 | **Gérer les évaluations, ainsi que les données de modèle et de client**| Administration du Gestionnaire de conformité | Administrateur de conformité, administrateur de données de conformité, administrateur de sécurité  | 
@@ -100,13 +100,13 @@ Le tableau ci-dessous présente les fonctions autorisées par chaque rôle dans 
 Les paramètres du Gestionnaire de conformité du Centre de conformité Microsoft 365 vous permettent d’activer et de désactiver le test automatique des actions d’amélioration. Les paramètres vous permettent également de gérer les données des utilisateurs associés aux actions d’amélioration, y compris la possibilité de réaffecter des actions d’amélioration à un autre utilisateur.  Seules les personnes ayant un rôle d’administrateur général ou d’administrateur du Gestionnaire de conformité peuvent accéder aux paramètres du Gestionnaire de conformité.
 
 > [!NOTE]
-> La fonctionnalité de test automatisée n’est pas disponible pour les clients dans les environnements GCC High, car le niveau de sécurité n’est pas disponible dans ces environnements. Les clients GCC High devront implémenter et tester manuellement leurs actions d’amélioration.
+> La fonctionnalité de test automatisé n’est pas disponible pour les clients dans les environnements GCC High, car le Niveau de sécurité n’est pas disponible dans ces environnements. Les clients GCC High devront implémenter et tester manuellement leurs actions d’amélioration.
 
 ### <a name="set-up-automated-testing"></a>Configurer des tests automatisés
 
 Certaines actions d’amélioration dans le Gestionnaire de conformité sont également surveillées par [le Score de sécurité Microsoft.](../security/defender/microsoft-secure-score.md) Vous pouvez configurer des tests automatisés des actions qui sont surveillées conjointement, ce qui signifie que lorsqu’une action est testée et mise à jour dans le Score de sécurité, ces résultats sont synchronisés avec les mêmes actions dans le Gestionnaire de conformité et comptent dans votre score de conformité.
 
-Les tests automatiques sont désactivés par défaut pour les organisations qui ont été nouvelles dans le Gestionnaire de conformité. Lorsque vous déployez Microsoft 365 ou Office 365 pour la première fois, le score de sécurité met environ sept jours à collecter entièrement les données et à les prendre en compte dans votre score de conformité.  Lorsque le test automatisé est allumé, la date de test de l’action n’est pas mise à jour, mais son état de test est mis à jour. Lorsque de nouvelles évaluations sont créées, les scores incluent automatiquement les scores de contrôle Microsoft et l’intégration du Score de sécurisation.
+Les tests automatiques sont désactivés par défaut pour les organisations qui ont été nouvelles dans le Gestionnaire de conformité. Lorsque vous déployez Microsoft 365 ou Office 365 pour la première fois, le score de sécurité met environ sept jours à collecter entièrement les données et à les prendre en compte dans votre score de conformité.  Lorsque le test automatisé est allumé, la date de test de l’action n’est pas mise à jour, mais son état de test est mis à jour. Lorsque de nouvelles évaluations sont créées, les scores incluent automatiquement les scores de contrôle Microsoft et l’intégration du score de sécurité.
 
 L’administrateur général de votre organisation peut modifier les paramètres des tests automatisés à tout moment. Vous pouvez désactiver le test automatisé pour les actions d’amélioration courantes ou l’activer pour des actions individuelles. Suivez les instructions ci-dessous pour modifier vos paramètres de test automatisés.
 
@@ -134,7 +134,7 @@ Les paramètres de l’historique utilisateur vous permettent également de réa
 
 **Pour rechercher les paramètres de l’historique utilisateur :**
 
-1. Sélectionnez paramètres sur le navigation de gauche, où que vous soyez dans le Centre de conformité [Microsoft 365.](https://compliance.microsoft.com/)
+1. Sélectionnez paramètres sur le navigation gauche de n’importe où dans le Centre de conformité [Microsoft 365](https://compliance.microsoft.com/).
 
 2. Dans la page paramètres, sélectionnez **Gestionnaire de conformité.**
 
@@ -170,7 +170,7 @@ Vous pouvez réaffecter des actions d’amélioration d’un utilisateur à un a
 
 **Suivez les étapes ci-dessous pour réaffecter des actions d’amélioration à un autre utilisateur :**
 
-1. Sélectionnez **paramètres** sur le navigation de gauche, où que vous soyez dans le Centre de conformité [Microsoft 365.](https://compliance.microsoft.com/)
+1. Sélectionnez **paramètres** sur le navigation gauche de n’importe où dans le Centre de conformité [Microsoft 365](https://compliance.microsoft.com/).
 
 2. Dans la page paramètres, sélectionnez **Gestionnaire de conformité.**
 
@@ -182,14 +182,14 @@ Vous pouvez réaffecter des actions d’amélioration d’un utilisateur à un a
 
 6. Dans le **champ Utilisateurs de** la recherche, entrez le nom ou l’adresse e-mail de l’utilisateur à qui vous souhaitez attribuer les actions *d’amélioration.*
 
-7. Lorsque vous voyez le nom de l’utilisateur prévu sous **Les actions** d’amélioration seront affectés, sélectionnez l’utilisateur, puis **sélectionnez Affecter des actions**.
+7. Lorsque vous voyez le nom de l’utilisateur prévu sous **Les actions** d’amélioration seront affectés à , sélectionnez l’utilisateur, puis **sélectionnez Affecter des actions**.
 
 8. Une fois la réaffectation terminée, vous verrez un message de confirmation dans le volet volant confirmant que toutes les actions d’amélioration de l’utilisateur précédent ont été réaffectés au nouvel utilisateur. Si vous recevez un avis d’échec de réaffectation, fermez la fenêtre et réessayez. Pour fermer le volet volant, sélectionnez **Terminé.**
 
-La nouvelle personne affectée reçoit un e-mail qui lui a été affecté à une action d’amélioration. Le courrier électronique contient un lien direct vers la page de détails de l’action d’amélioration.
+La nouvelle personne affectée reçoit un e-mail qui lui a été affecté à une action d’amélioration. L’e-mail contient un lien direct vers la page de détails de l’action d’amélioration.
  
  > [!NOTE]
-> Si vous réaffectez une action qui a une mise à jour en attente, le lien direct vers l’action dans l’e-mail de réaffectation s' pause si la mise à jour est acceptée après la réaffectation. Vous pouvez résoudre ce problème en ré assignant l’action à l’utilisateur une fois la mise à jour acceptée. En savoir plus sur les [mises à jour des actions d’amélioration.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
+> Si vous réaffectez une action qui a une mise à jour en attente, le lien direct vers l’action dans l’e-mail de réaffectation s’romprea si la mise à jour est acceptée après la réaffectation. Vous pouvez résoudre ce problème en ré assignant l’action à l’utilisateur une fois la mise à jour acceptée. En savoir plus sur les [mises à jour des actions d’amélioration.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
 
 #### <a name="delete-user-history"></a>Supprimer l’historique des utilisateurs
 
@@ -203,7 +203,7 @@ Pour supprimer l’historique d’un utilisateur, suivez les étapes ci-dessous 
 
 3. Sélectionnez **Gérer l’historique des** utilisateurs à partir de la navigation à gauche.
 
-4. Recherchez un utilisateur en recherchant les adresses de messagerie de la liste ou en sélectionnant **Rechercher** et en entrant l’adresse e-mail de cet utilisateur.
+4. Recherchez un utilisateur en recherchant les adresses e-mail de la liste ou en sélectionnant **Rechercher** et en entrant l’adresse e-mail de cet utilisateur.
 
 5. Dans le menu **déroulant Sélectionner,** choisissez **Supprimer l’historique.**
 
@@ -215,13 +215,13 @@ Pour supprimer l’historique d’un utilisateur, suivez les étapes ci-dessous 
 
 Le tableau de bord du Gestionnaire de conformité est conçu pour vous fournir une vue d’un coup d’œil de votre posture de conformité actuelle.
 
-![Gestionnaire de conformité - tableau de bord](../media/compliance-manager-dashboard.png "Tableau de bord du Gestionnaire de conformité")
+![Gestionnaire de conformité - Tableau de bord](../media/compliance-manager-dashboard.png "Tableau de bord du Gestionnaire de conformité")
 
 ### <a name="overall-compliance-score"></a>Score de conformité global
 
 Votre score de conformité est mis en évidence en haut. Il présente un pourcentage basé sur des points réalisables pour effectuer des actions d’amélioration qui s’adressent aux principales normes et réglementations en matière de protection des données. Les points des [actions Microsoft,](compliance-manager-assessments.md#microsoft-actions-tab)qui sont gérés par Microsoft, comptent également dans votre score de conformité.
 
-Lorsque vous arrivez au Gestionnaire de conformité pour la première fois, votre score initial est basé sur la ligne de base de protection des données [Microsoft 365.](compliance-manager-assessments.md#data-protection-baseline-default-assessment) Cette évaluation de référence, qui est disponible pour toutes les organisations, est un ensemble de contrôles qui inclut les réglementations et normes courantes du secteur. Le Gestionnaire de conformité analyse vos solutions Microsoft 365 existantes et vous fournit une évaluation initiale basée sur vos paramètres de confidentialité et de sécurité actuels. Lorsque vous ajoutez des évaluations pertinentes pour votre organisation, votre score devient plus significatif pour vous.
+Lorsque vous arrivez au Gestionnaire de conformité pour la première fois, votre score initial est basé sur la ligne de base de protection des données [Microsoft 365.](compliance-manager-assessments.md#data-protection-baseline-default-assessment) Cette évaluation de référence, disponible pour toutes les organisations, est un ensemble de contrôles qui inclut des normes et réglementations courantes du secteur. Le Gestionnaire de conformité analyse vos solutions Microsoft 365 existantes et vous fournit une évaluation initiale en fonction de vos paramètres de confidentialité et de sécurité actuels. Lorsque vous ajoutez des évaluations pertinentes pour votre organisation, votre score devient plus significatif pour vous.
 
 **En savoir plus : comprendre** comment votre score de conformité est [calculé.](compliance-score-calculation.md)
 
@@ -237,7 +237,7 @@ Cette section présente les solutions contenant des actions d’amélioration qu
 
 Cette section vous donne une vue plus détaillée de votre score de deux manières différentes :
 
-- **Catégories :** indique le pourcentage de votre score global au sein des catégories de protection des données, telles que « protéger les informations » ou « gérer les appareils ».
+- **Catégories :** affiche le pourcentage de votre score global au sein des catégories de protection des données, telles que « protéger les informations » ou « gérer les appareils ».
 - **Évaluations**: indique le pourcentage de vos progrès dans la gestion des évaluations pour des normes, réglementations ou lois particulières en matière de conformité et de protection des données, telles que le R GDPR ou le NIST 800-53.
 
 ### <a name="filtering-your-dashboard-view"></a>Filtrage de l’affichage de votre tableau de bord
@@ -262,7 +262,7 @@ Pour supprimer des filtres :
 
 ### <a name="view-your-improvement-actions"></a>Afficher vos actions d’amélioration
 
-Le tableau de bord du Gestionnaire de conformité présente vos **principales actions d’amélioration.** Pour afficher toutes vos actions d’amélioration, sélectionnez l’onglet Actions d’amélioration de votre tableau de bord, qui vous permet d’afficher votre page d’actions d’amélioration. Vous pouvez également sélectionner Afficher toutes les actions d’amélioration sous la liste des actions d’amélioration clés de votre tableau de bord pour obtenir votre page d’actions d’amélioration.
+Le tableau de bord du Gestionnaire de conformité présente vos **principales actions d’amélioration.** Pour afficher toutes vos actions d’amélioration, sélectionnez l’onglet Actions d’amélioration de votre tableau de bord, qui vous permet d’afficher la page des actions d’amélioration. Vous pouvez également sélectionner Afficher toutes les actions d’amélioration sous la liste des actions d’amélioration clés de votre tableau de bord pour obtenir votre page d’actions d’amélioration.
 
 La page Actions d’amélioration affiche toutes les actions d’amélioration qui sont gérées par votre organisation. Les actions gérées par Microsoft peuvent être vues dans chaque évaluation (en savoir plus sur les [actions De Microsoft).](compliance-manager-assessments.md#microsoft-actions-tab)
 
@@ -294,7 +294,7 @@ La page Actions d’amélioration affiche les points de données suivants pour c
 
 ## <a name="solutions-page"></a>Page Solutions
 
-La page des solutions affiche le partage des points gagnés et potentiels, tel qu’organisé par solution. L’affichage des points restants et des actions d’amélioration à partir de cet affichage vous permet de comprendre les solutions qui ont besoin d’une attention plus immédiate.
+La page des solutions affiche le partage des points gagnés et potentiels, tel qu’organisé par solution. L’affichage des points restants et des actions d’amélioration à partir de cet affichage vous permet de comprendre les solutions qui doivent être plus immédiatement prises en compte.
 
 Recherchez la page solutions en sélectionnant **l’onglet Solutions** dans votre tableau de bord du Gestionnaire de conformité. Vous pouvez également sélectionner **Afficher toutes les solutions** sous Solutions qui affectent votre **score** dans la section supérieure droite de votre tableau de bord.
 
@@ -304,7 +304,7 @@ Pour filtrer votre vue des solutions :
 
 1. Sélectionnez **Filtre** dans le coin supérieur gauche de votre liste d’évaluations.
 2. Dans le volet volant **Filtres,** placez une vérification en regard des critères souhaités (normes et réglementations, solution, type d’action, groupe Gestionnaire de conformité, catégorie).
-3. Sélectionnez le **bouton** Appliquer. Le volet filtre se ferme et votre affichage filtré s’affiche.
+3. Sélectionnez le **bouton** Appliquer. Le volet de filtre se ferme et votre affichage filtré s’affiche.
 
 Vous pouvez également modifier votre affichage pour afficher les évaluations par groupe, produit  ou réglementation en sélectionnant le type de regroupement dans le menu déroulant Groupe au-dessus de votre liste d’évaluations.
 
@@ -320,13 +320,13 @@ Il existe deux façons d’agir à partir de cet écran :
 
 ## <a name="assessments-page"></a>Page Évaluations
 
-La page évaluations répertorie toutes les [évaluations](compliance-manager-assessments.md) que vous avez définies pour votre organisation. Votre dénominateur de score de conformité est déterminé par toutes vos évaluations. À mesure que vous ajoutez d’autres évaluations, vous verrez d’autres actions d’amélioration répertoriées sur votre page d’actions d’amélioration, et le dénominateur de votre score de conformité augmente.
+La page Évaluations répertorie toutes les [évaluations](compliance-manager-assessments.md) que vous avez définies pour votre organisation. Votre dénominateur de score de conformité est déterminé par toutes vos évaluations. À mesure que vous ajoutez d’autres évaluations, vous verrez d’autres actions d’amélioration répertoriées sur votre page d’actions d’amélioration et le dénominateur de votre score de conformité augmente.
 
-Le compteur de **modèles activés** situé en haut de la page indique le nombre de modèles d’évaluation actifs actuellement utilisés par rapport au nombre total de modèles disponibles pour votre organisation. Pour [plus d’informations,](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) voir Type de modèle.
+Le compteur de **modèles activés** en haut de la page indique le nombre de modèles d’évaluation actifs actuellement utilisés par rapport au nombre total de modèles disponibles pour votre organisation. Pour [plus d’informations,](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) voir Type de modèle.
 
 La page Évaluations récapitule les informations clés sur chaque évaluation :
 
-- **Évaluation :** nom de l’évaluation
+- **Évaluation**: nom de l’évaluation
 - **État**:
     - **Complète** : tous les contrôles ont l’état « transmis » ou au moins un est passé et les autres sont « hors de portée »
     - **Incomplet** : au moins un contrôle a l’état « échec »
@@ -357,7 +357,7 @@ Par défaut, vous verrez l’évaluation de base de [la protection](compliance-m
 
 Un modèle est une infrastructure permettant de créer une évaluation dans le Gestionnaire de conformité. La page modèles d’évaluation affiche une liste de modèles et de détails clés. La liste inclut les modèles fournis par le Gestionnaire de conformité, ainsi que tous les modèles que votre organisation a modifiés ou créés. Vous pouvez appliquer des filtres pour rechercher un modèle basé sur la certification, l’étendue du produit, le pays, l’industrie et qui l’a créé.
 
-Le compteur de **modèles activés** situé en haut de la page indique le nombre de modèles d’évaluation actifs actuellement utilisés par rapport au nombre total de modèles disponibles pour votre organisation. Pour [plus d’informations,](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) voir Type de modèle.
+Le compteur de **modèles activés** en haut de la page indique le nombre de modèles d’évaluation actifs actuellement utilisés par rapport au nombre total de modèles disponibles pour votre organisation. Pour [plus d’informations,](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) voir Type de modèle.
 
 Sélectionnez un modèle dans sa ligne pour faire monter sa page de détails, qui contient une description du modèle et des informations supplémentaires sur la certification, l’étendue et les détails des contrôles. À partir de cette page, vous pouvez sélectionner les boutons appropriés pour créer une évaluation, exporter les données du modèle dans Excel ou modifier le modèle.
 

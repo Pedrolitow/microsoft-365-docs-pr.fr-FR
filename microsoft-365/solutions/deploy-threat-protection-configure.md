@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a5ff570439dfecd287a5a5975358262af71d8025
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bd7c98f5888f8dc93a8aa341b186ea744d5b2882
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051017"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199932"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurer les fonctionnalités de protection contre les menaces dans Microsoft 365
 
@@ -30,25 +30,25 @@ Suivez ces étapes pour configurer la protection contre les menaces dans Microso
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>Étape 1 : Configurer l’authentification multifacteur et les stratégies d’accès conditionnel
 
-[L’authentification multifacteur](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) oblige les utilisateurs à vérifier leur identité avec un appel téléphonique ou une application d’authentification. [Les stratégies d’accès](/azure/active-directory/conditional-access/overview) conditionnel définissent certaines exigences qui doivent être remplies pour que les utilisateurs accèdent aux applications et aux données dans Microsoft 365. Les stratégies mfa et d’accès conditionnel fonctionnent ensemble pour protéger votre organisation. Par exemple, si quelqu’un tente de se connecte à partir d’un appareil mobile à l’aide d’un compte qui n’est pas activé pour l' usage de l’ateur de base de données et qu’une stratégie d’accès conditionnel exige que l' usage de l' usage de l’mf soit en vigueur, l’utilisateur ne pourra pas se connecter.  
+[L’authentification multifacteur](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) oblige les utilisateurs à vérifier leur identité avec un appel téléphonique ou une application d’authentification. [Les stratégies d’accès](/azure/active-directory/conditional-access/overview) conditionnel définissent certaines exigences qui doivent être remplies pour que les utilisateurs accèdent aux applications et aux données dans Microsoft 365. Les stratégies mfa et d’accès conditionnel fonctionnent ensemble pour protéger votre organisation. Par exemple, si quelqu’un tente de se connecter à partir d’un appareil mobile à l’aide d’un compte qui n’est pas activé pour l' usage de l’mf et qu’une stratégie d’accès conditionnel exige que l' usage de l’mf soit en vigueur, cet utilisateur ne pourra pas se connecter.  
 
 Microsoft a testé et recommandé un ensemble spécifique d’accès conditionnel et de stratégies associées pour protéger l’accès à toutes vos applications SaaS, en particulier Microsoft 365. Les stratégies sont recommandées pour la protection de base, sensible et hautement réglementée. Commencez par implémenter les stratégies pour la protection de référence. 
 
 
-[ ![ Stratégies courantes pour la configuration de l’identité et de l’accès aux](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)appareils 
- [Voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[ ![ Stratégies courantes pour la configuration de l’identité et de l’accès aux appareils](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)Voir une version plus grande de cette 
+ [image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>Pour implémenter la protection de référence pour Microsoft 365
 
 ![Processus de déploiement de la protection de référence](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Configurez les conditions préalables, y compris Azure AD Identity Protection.](../security/defender-365-security/identity-access-prerequisites.md)
-2. [Configurez des stratégies communes d’accès aux identités](../security/defender-365-security/identity-access-policies.md) et aux appareils pour la protection de référence.
-3. Configurez des stratégies pour [les utilisateurs invités,](../security/defender-365-security/identity-access-policies-guest-access.md) [Microsoft Teams,](../security/defender-365-security/teams-access-policies.md) [Exchange Online](../security/defender-365-security/secure-email-recommended-policies.md)et [SharePoint Online et OneDrive.](../security/defender-365-security/sharepoint-file-access-policies.md)
+1. [Configurez les conditions préalables, y compris Azure AD Identity Protection.](../security/office-365-security/identity-access-prerequisites.md)
+2. [Configurez des stratégies communes d’accès aux identités](../security/office-365-security/identity-access-policies.md) et appareils pour la protection de référence.
+3. Configurez des stratégies pour [les utilisateurs invités,](../security/office-365-security/identity-access-policies-guest-access.md) [Microsoft Teams,](../security/office-365-security/teams-access-policies.md) [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)et [SharePoint Online et OneDrive.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 ### <a name="more-information-about-protecting-identities"></a>Plus d’informations sur la protection des identités
 
-- [Configurations des identités et de l’accès aux appareils](../security/defender-365-security/microsoft-365-policies-configurations.md)
+- [Configurations des identités et de l’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Conseils de sécurité pour Azure MFA](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>Étape 2 : Configurer Microsoft Defender pour l’identité
@@ -96,11 +96,11 @@ Microsoft 365 Defender unifie les alertes, les incidents, les enquêtes et répo
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>Étape 4 : Configurer Microsoft Defender pour Office 365
 
-[Microsoft Defender pour Office 365](../security/defender-365-security/defender-for-office-365.md) protège votre organisation contre les menaces malveillantes dans les messages électroniques (pièces jointes et URL), les documents Office et les outils de collaboration. Le tableau suivant répertorie les fonctionnalités et fonctionnalités de Microsoft Defender pour Office 365 incluses dans Microsoft 365 E5 :
+[Microsoft Defender pour Office 365](../security/office-365-security/defender-for-office-365.md) protège votre organisation contre les menaces malveillantes dans les messages électroniques (pièces jointes et URL), les documents Office et les outils de collaboration. Le tableau suivant répertorie les fonctionnalités et fonctionnalités de Microsoft Defender pour Office 365 incluses dans Microsoft 365 E5 :
 
 |Fonctionnalités de configuration, de protection et de détection|Fonctionnalités d’automatisation, d’examen, de correction et d’éducation|
 |---|---|
-|[Pièces jointes fiables](../security/defender-365-security/safe-attachments.md)<br/>[Liens fiables](../security/defender-365-security/safe-links.md)<br/>[Documents sécurisés](../security/defender-365-security/safe-docs.md)<br/>[ATP pour SharePoint, OneDrive et Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Anti-hameçonnage dans la protection de Defender pour Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[Suivi des menaces](../security/defender-365-security/threat-trackers.md)<br/>[Threat Explorer](../security/defender-365-security/threat-explorer.md)<br/>[Examen et réponse automatisés](../security/defender-365-security/office-365-air.md)<br/>[Simulateur d’attaques](../security/defender-365-security/attack-simulator.md)|
+|[Pièces jointes fiables](../security/office-365-security/safe-attachments.md)<br/>[Liens fiables](../security/office-365-security/safe-links.md)<br/>[Documents sécurisés](../security/office-365-security/safe-docs.md)<br/>[ATP pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Anti-hameçonnage dans la protection de Defender pour Office 365](../security/office-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[Suivi des menaces](../security/office-365-security/threat-trackers.md)<br/>[Threat Explorer](../security/office-365-security/threat-explorer.md)<br/>[Examen et réponse automatisés](../security/office-365-security/office-365-air.md)<br/>[Simulateur d’attaques](../security/office-365-security/attack-simulator.md)|
 |
 
 Avec Microsoft Defender pour Office 365, les membres de votre organisation peuvent communiquer et collaborer plus en toute sécurité, avec une protection contre les menaces pour leur contenu de courrier électronique et leurs documents Office.
@@ -109,14 +109,14 @@ Avec Microsoft Defender pour Office 365, les membres de votre organisation peuve
 
 ![Processus de déploiement de Microsoft Defender pour Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
-1. [Configurez et configurez vos stratégies Microsoft Defender pour Office 365.](../security/defender-365-security/protect-against-threats.md)
-2. [Affichez et utilisez vos rapports Microsoft Defender pour Office 365.](../security/defender-365-security/view-reports-for-mdo.md)
-3. [Utiliser les fonctionnalités d’examen et de réponse aux menaces.](../security/defender-365-security/office-365-ti.md)
+1. [Configurez et configurez vos stratégies Microsoft Defender pour Office 365.](../security/office-365-security/protect-against-threats.md)
+2. [Affichez et utilisez vos rapports Microsoft Defender pour Office 365.](../security/office-365-security/view-reports-for-mdo.md)
+3. [Utiliser les fonctionnalités d’examen et de réponse aux menaces.](../security/office-365-security/office-365-ti.md)
 
 ### <a name="more-information-about-microsoft-defender-for-office-365"></a>Plus d’informations sur Microsoft Defender pour Office 365
 
-- [Présentation de Microsoft Defender pour Office 365](../security/defender-365-security/defender-for-office-365.md)
-- [Nouveautés de Microsoft Defender pour Office 365](../security/defender-365-security/whats-new-in-defender-for-office-365.md)
+- [Présentation de Microsoft Defender pour Office 365](../security/office-365-security/defender-for-office-365.md)
+- [Nouveautés de Microsoft Defender pour Office 365](../security/office-365-security/whats-new-in-defender-for-office-365.md)
 
 ## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>Étape 5 : Configurer Microsoft Defender pour le point de terminaison
 
@@ -135,7 +135,7 @@ Avec Microsoft Defender pour Office 365, les membres de votre organisation peuve
 ### <a name="more-information-about-microsoft-defender-for-endpoint"></a>Plus d’informations sur Microsoft Defender pour le point de terminaison
 
 - [En savoir plus sur Microsoft Defender pour point de terminaison.](/windows/security/threat-protection)
-- [Essayez le laboratoire d’évaluation de Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab)
+- [Essayez le laboratoire d’évaluation de Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab).
 
 ## <a name="step-6-configure-microsoft-cloud-app-security"></a>Étape 6 : Configurer Microsoft Cloud App Security
 
@@ -145,15 +145,15 @@ Avec Microsoft Defender pour Office 365, les membres de votre organisation peuve
 
 ![Processus de déploiement de Microsoft Cloud App Security](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
-1. [Configurer le portail et d’autres exigences de base.](/cloud-app-security/general-setup)
+1. [Configurer le portail et d’autres conditions de base.](/cloud-app-security/general-setup)
 2. [Configurer la découverte cloud et](/cloud-app-security/set-up-cloud-discovery) connecter des [applications.](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
 3. [Déployer le contrôle d’application d’accès conditionnel pour les applications disponibles.](/cloud-app-security/proxy-deployment-aad)
 4. [Utilisez les outils d’examen et les tableaux de bord.](/cloud-app-security/investigate)
 
 ### <a name="more-information-about-microsoft-cloud-app-security"></a>Rubrique relative aux informations supplémentaires concernant Microsoft Cloud App Security
 
-- [Passer en revue les nouvelles fonctionnalités.](/cloud-app-security/release-notes)
-- [En savoir plus sur Microsoft Cloud App Security.](/cloud-app-security/what-is-cloud-app-security)
+- [Passer en revue les nouvelles fonctionnalités et fonctionnalités.](/cloud-app-security/release-notes)
+- [En savoir plus sur Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
 ## <a name="step-7-monitor-status-and-take-actions"></a>Étape 7 : Surveiller l’état et prendre des mesures
 
@@ -178,9 +178,9 @@ Le Centre de sécurité Microsoft 365 est spécifiquement destiné aux administr
 
 ## <a name="step-8-train-users"></a>Étape 8 : Former les utilisateurs
 
-La formation des utilisateurs peut faire gagner beaucoup de temps et de frustration à vos utilisateurs et à votre équipe en matière d’opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et ils sont plus susceptibles d’éviter les sites web suspects. 
+La formation des utilisateurs peut faire gagner beaucoup de temps et de frustration à vos utilisateurs et à votre équipe en matière d’opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et sont plus susceptibles d’éviter les sites web suspects. 
 
-Le manuel de campagne de [cyber-sécurité](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) de l’établissement d’un établissement scolaire de contrôle de la sécurité fournit d’excellents conseils sur l’établissement d’une culture forte de sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage. 
+Le manuel de campagne de [cyber-sécurité](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) de l’établissement de Contrôles School fournit d’excellents conseils sur l’établissement d’une culture forte de sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage. 
 
 Microsoft 365 fournit les ressources suivantes pour aider à informer les utilisateurs de votre organisation :
 

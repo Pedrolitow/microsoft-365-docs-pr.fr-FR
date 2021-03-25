@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 399da6fd54145f73ac72fdac04e8d25148f76507
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 18564b2a5a47b2cf4a8bbd94a3e3a315c8f269ec
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186748"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200256"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activer Microsoft 365 Defender
 
@@ -51,7 +51,7 @@ Vous devez être administrateur **général ou** **administrateur** de sécurit�
 
 ## <a name="supported-services"></a>Services pris en charge
 
-Microsoft 365 Defender regroupe les données des différents services pris en charge que vous avez déjà déployés. Il traitera et stockera les données de manière centralisée pour identifier les nouvelles informations et rendre les flux de travail de réponse centralisés possibles. Il le fait sans affecter les déploiements, paramètres ou données existants associés aux services intégrés.
+Microsoft 365 Defender regroupe les données des différents services pris en charge que vous avez déjà déployés. Il traitera et stockera les données de manière centralisée pour identifier les nouvelles informations et rendre possibles des flux de travail de réponse centralisés. Il le fait sans affecter les déploiements, paramètres ou données existants associés aux services intégrés.
 
 Pour obtenir la meilleure protection et optimiser Microsoft 365 Defender, nous vous recommandons de déployer tous les services pris en charge applicables sur votre réseau. Pour plus d’informations, [voir sur le déploiement des services pris en charge.](deploy-supported-services.md)
 
@@ -60,7 +60,7 @@ L’intégration à Microsoft 365 Defender est simple. Dans le menu de navigatio
 
 ### <a name="data-center-location"></a>Emplacement du centre de données
 
-Microsoft 365 Defender stockera et traitera les données au même emplacement que celui utilisé par [Microsoft Defender pour endpoint.](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy) Si vous n’avez pas Microsoft Defender pour point de terminaison, un nouvel emplacement de centre de données est automatiquement sélectionné en fonction de l’emplacement des services de sécurité Microsoft 365 actifs. L’emplacement du centre de données sélectionné est affiché à l’écran.
+Microsoft 365 Defender stockera et traitera les données au même emplacement que celui utilisé par [Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy) Si vous n’avez pas Microsoft Defender pour point de terminaison, un nouvel emplacement de centre de données est automatiquement sélectionné en fonction de l’emplacement des services de sécurité Microsoft 365 actifs. L’emplacement du centre de données sélectionné est affiché à l’écran.
 
 Sélectionnez **Besoin d’aide ?** dans le Centre de sécurité Microsoft 365 pour contacter le support Microsoft concernant la mise en service de Microsoft 365 Defender dans un autre emplacement de centre de données.
 
@@ -77,7 +77,7 @@ Une fois le service configuré, il ajoute :
 - [Fonctionnalités de recherche](advanced-hunting-overview.md) avancées
 - Analyses de menaces
 
-![Image du volet de navigation du Centre de sécurité Microsoft 365 avec Microsoft 365 Defender avec le Centre de sécurité Microsoft 365 avec la gestion des incidents et d’autres fonctionnalités de ](../../media/mtp-enable/mtp-on.png)
+![Image du volet de navigation du Centre de sécurité Microsoft 365 avec Microsoft 365 Defender qui propose le Centre de sécurité Microsoft 365 avec la gestion des incidents et d’autres fonctionnalités de ](../../media/mtp-enable/mtp-on.png)
  *Microsoft 365 Defender*
 
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Obtention de données Microsoft Defender pour l’identité 
@@ -94,9 +94,9 @@ Le personnel du support microsoft peut vous aider à fournir ou à désapprovisi
 - [Forum aux questions](m365d-enable-faq.md)
 - [Conditions requises et autres conditions préalables relatives aux licences](prerequisites.md)
 - [Déployer les services pris en charge](deploy-supported-services.md)
-- [Présentation de Microsoft 365 Defender](microsoft-365-defender.md)
+- [Vue d’ensemble de Microsoft 365 Defender](microsoft-365-defender.md)
 - [Vue d’ensemble de Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Vue d’ensemble de Defender pour Office 365](../defender-365-security/defender-for-office-365.md)
+- [Vue d’ensemble de Defender pour Office 365](../office-365-security/defender-for-office-365.md)
 - [Vue d’ensemble de Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
 - [Vue d’ensemble de Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)
 - [Microsoft Defender pour le stockage des données de point de terminaison](../defender-endpoint/data-storage-privacy.md)

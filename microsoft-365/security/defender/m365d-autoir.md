@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: c12937c016875c26a7212117e41aac4349cb540d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065902"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199632"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Examen et réponse automatisés dans Microsoft 365 Defender
 
@@ -51,7 +51,7 @@ Regardez la vidéo suivante pour voir comment fonctionne la auto-ressource : <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-Dans Microsoft 365 Defender, l’examen et la réponse automatisés grâce à des fonctionnalités de auto-ressource fonctionnent sur vos appareils, vos & de messagerie et vos identités.
+Dans Microsoft 365 Defender, l’examen et la réponse automatisés avec des fonctionnalités de auto-ressourcement fonctionnent sur vos appareils, vos & de messagerie et vos identités.
  
 > [!TIP]
 > Cet article décrit le fonctionnement de l’examen et de la réponse automatisés. Pour configurer ces fonctionnalités, voir Configurer les fonctionnalités d’investigation et de réponse [automatisées dans Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md)
@@ -90,7 +90,7 @@ Dans Microsoft 365 Defender, chaque enquête automatisée met en corrélation le
 |Entités |Services de protection contre les menaces  |
 |:---------|:---------|
 |Appareils (également appelés points de terminaison et parfois appelés ordinateurs)     |[Microsoft Defender pour point de terminaison](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender pour Identity](/azure-advanced-threat-protection/what-is-atp) |      
-|Contenu du courrier électronique (messages électroniques qui peuvent contenir des fichiers et des URL)     |[Microsoft Defender pour Office 365](../defender-365-security/defender-for-office-365.md)         |
+|Contenu du courrier électronique (messages électroniques qui peuvent contenir des fichiers et des URL)     |[Microsoft Defender pour Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
 > Toutes les alertes ne déclenchent pas une enquête automatisée, et toutes les enquêtes n’entraînent pas des actions de correction automatisées ; Cela dépend de la façon dont l’examen et la réponse automatisés sont configurés pour votre organisation. Voir Configurer les fonctionnalités d’investigation et de réponse [automatisées dans Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md)
