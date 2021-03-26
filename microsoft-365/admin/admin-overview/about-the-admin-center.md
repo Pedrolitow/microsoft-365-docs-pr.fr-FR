@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Le centre d'administration vous permet de configurer votre organisation dans le cloud et gérer les utilisateurs et les abonnements. Tout d’abord, connectez-vous au compte avec des autorisations d’administrateur.
-ms.openlocfilehash: 7d326629de4859819784af015292f99b044658d0
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: ef606565d7cad94bc0c7ff81630ef6c2fe8a6fc4
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215491"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222086"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
@@ -71,7 +71,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 ## <a name="admin-center-features-and-settings"></a>Fonctionnalités et paramètres du centre d’administration
 
-Les fonctionnalités et paramètres suivants sont disponibles dans la barre de navigation gauche du centre d'administration. En savoir plus sur les tâches d'administration dans l’[aide pour les administrateurs](./admin-overview.md).
+Les fonctionnalités et paramètres suivants sont disponibles dans la barre de navigation gauche du centre d'administration. En savoir plus sur les tâches d'administration dans l’[aide pour les administrateurs](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
   
 |**Menu**|**Objet**|
 |-----|-----|
@@ -84,12 +84,12 @@ Les fonctionnalités et paramètres suivants sont disponibles dans la barre de n
 |**Settings** <br/> |Gérer les paramètres globaux des applications telles que la messagerie, les sites et la suite Office. Modifier la stratégie de mot de passe et la date d’expiration. Ajouter et mettre à jour des noms de domaine (par exemple, contoso.com). Modifier le profil de votre organisation et vos préférences de publication. Choisir si les partenaires peuvent accéder à votre centre d'administration.  <br/> |
 |**Configuration** <br/> |Gérer les domaines existants, activer et gérer l’authentification multifacteur, gérer l’accès administrateur, migrer les boîtes aux lettres d’utilisateurs vers Office 365, gérer les mises à jour de fonctionnalités et aider les utilisateurs à installer leurs applications Office. |
 |**Rapports** <br/> |Découvrez en un clin d’œil comment votre organisation utilise Microsoft 365 avec des rapports détaillés sur l’utilisation du courrier électronique, les activations d’Office, etc. Découvrez comment utiliser les nouveaux [rapports d'activité](../activity-reports/activity-reports.md).  <br/> |
-|**État d'intégrité** <br/> |Affichez l’état d’un coup d’œil. Vous pouvez également consulter plus de détails et l’historique d’état. Pour [plus d’informations,](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health) voir Comment vérifier l’état du service et Comment vérifier l’état de publication de [Windows.](https://docs.microsoft.com/windows/deployment/update/check-release-health)  <br/><br/>Utilisez le Centre de messages pour suivre les modifications à venir des fonctionnalités et services. Nous y publions des annonces contenant des informations qui vous aideront à planifier les changements et à comprendre comment ceux-ci peuvent affecter les utilisateurs. Obtenir plus de détails dans le [centre de messages.](../manage/message-center.md) <br/> |
+|**État d'intégrité** <br/> |Affichez l’état d’un coup d’œil. Vous pouvez également consulter plus de détails et l’historique d’état. Pour plus [d’informations,](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health) voir Comment vérifier l’état du service et Comment vérifier l’état de publication [de Windows.](https://docs.microsoft.com/windows/deployment/update/check-release-health)  <br/><br/>Utilisez le Centre de messages pour suivre les modifications à venir des fonctionnalités et services. Nous y publions des annonces contenant des informations qui vous aideront à planifier les changements et à comprendre comment ceux-ci peuvent affecter les utilisateurs. Obtenez plus de détails dans le [centre de messages.](../manage/message-center.md) <br/> |
 |**Centres d’administration** <br/> |Ouvrez des centres d'administration distincts pour Exchange, Skype Entreprise, SharePoint, Yammer et Azure AD. Chaque centre d’administration inclut tous les paramètres disponibles pour le service concerné.  <br/> Par exemple, dans le Centre d’administration Exchange, configurez et gérez le courrier électronique, les calendriers, les groupes de distribution, etc. Dans le Centre d’administration SharePoint, créez et gérez les collections de sites, les paramètres de site et OneDrive Entreprise. Dans le Centre d’administration Skype Entreprise, configurez les notifications de messagerie instantanée, la conférence rendez-vous et la présence en ligne.  <br/> En savoir plus sur le [Centre d'administration Exchange](/exchange/exchange-admin-center) et le [Centre d'administration SharePoint](/sharepoint/sharepoint-online).<br/> **Remarque :** les centres d'administration disponibles dépendent de votre plan et de votre région.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Tâches courantes dans le Centre d’administration
 
-- Gérer les utilisateurs : ajouter des utilisateurs et attribuer des licences en même temps, [supprimer](../add-users/delete-a-user.md)ou restaurer des [utilisateurs](../add-users/add-users.md)ou réinitialiser le mot de passe [d’un utilisateur.](../add-users/reset-passwords.md)
+- Gérer les utilisateurs [: ajouter des utilisateurs](../add-users/add-users.md)et attribuer des licences en même temps, supprimer ou restaurer des utilisateurs ou réinitialiser le mot de passe [d’un utilisateur.](../add-users/reset-passwords.md) [](../add-users/delete-a-user.md)
 
 - Accéder à l’aide concernant la facturation : [Facturation](../../commerce/index.yml)
 

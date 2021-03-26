@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Examinez les réponses aux questions fréquentes sur le déploiement centralisé à partir du Centre d’administration Microsoft 365.
-ms.openlocfilehash: 9f4841508701d4dd5878e99fcc51a436bc5824e2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06e3b7973a209cdf40446c5a9511713d779373b8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915469"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221834"
 ---
 # <a name="centralized-deployment-faq"></a>Forum aux questions sur le déploiement centralisé
 
@@ -48,7 +48,7 @@ Pour plus d’informations, voir [Affectations d’utilisateurs et de groupes.](
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>Combien de temps faut-il pour que les modules s’afficheront pour tous les utilisateurs ?  
 
-L’exposition d’un add-in pour tous les utilisateurs peut prendre jusqu’à 24 heures. Les mises à jour de modules, les modifications apportées à l’aide de l’activer ou de la désactiver, ou les suppressions de ces derniers peuvent prendre autant de temps. 
+L’exposition d’un add-in pour tous les utilisateurs peut prendre jusqu’à 24 heures. Les mises à jour de l’un ou l’autre des modules peuvent prendre autant de temps que pour les mises à jour, les modifications apportées à partir de l’activer ou de la désactiver, ou les suppressions de ces derniers. 
   
 ## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>En tant qu’administrateur, comment puis-je gérer l’accès des utilisateurs aux add-ins pour mon organisation ?
 
@@ -60,7 +60,7 @@ Pour plus d’informations sur la gestion de l’accès des utilisateurs, voir :
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>Le déploiement centralisé fournira-t-il aux administrateurs la possibilité de choisir la méthode de déploiement pour les add-ins Outlook ?  
 
-Oui. Le déploiement centralisé offre aux administrateurs la possibilité de choisir l’une des trois méthodes de déploiement pour les add-ins Outlook pendant le déploiement de ces derniers :
+Oui. Le déploiement centralisé offre aux administrateurs la possibilité de choisir l’une des trois méthodes de déploiement pour les add-ins Outlook lors du déploiement de ces derniers :
 
 **Fixe (valeur par défaut)**   Le add-in est déployé automatiquement pour les utilisateurs affectés et ils ne peuvent pas le supprimer.  
  
@@ -70,9 +70,9 @@ Oui. Le déploiement centralisé offre aux administrateurs la possibilité de ch
     
 ## <a name="can-admins-update-line-of-business-lob-add-ins"></a>Les administrateurs peuvent-ils mettre à jour des add-ins métier ?  
 
-Oui. Les administrateurs peuvent télécharger un nouveau fichier manifeste pour prendre en charge les modifications apportées aux métadonnées pour les add-ins LOB déployés par l’administrateur. Le add-in est mis à jour lors du prochain démarrage des applications Office. L'application web peut changer à tout moment.  
+Oui. Les administrateurs peuvent télécharger un nouveau fichier manifeste pour prendre en charge les modifications apportées aux métadonnées pour les add-ins LOB déployés par l’administrateur. Le add-in est mis à jour au prochain démarrage des applications Office. L'application web peut changer à tout moment.  
  
-Pour plus d’informations, voir le [add-in métier.](./manage-addins-in-the-admin-center.md#more-about-office-add-ins-security)  
+Pour plus d’informations, voir le [add-in métier.](./manage-addins-in-the-admin-center.md)  
 
 ## <a name="can-admins-turn-off-add-ins"></a>Les administrateurs peuvent-ils désactiver les modules ?  
 
@@ -96,6 +96,6 @@ Nous vous suggérons d’atteindre le développeur de logiciels indépendants po
 
 L’administrateur général est le rôle recommandé avec un accès complet au cycle de vie de gestion des applications. Les autres rôles d’administrateur ont un accès limité au cycle de vie du déploiement des applications. Si vous êtes la personne qui a acheté votre abonnement Microsoft 365 pour les entreprises, vous êtes l’administrateur global. 
  
-Votre abonnement est livré avec un ensemble de rôles d’administrateur que vous pouvez attribuer à d’autres utilisateurs de votre organisation. Chaque rôle d’administrateur est mapé à des fonctions professionnelles courantes et donne aux membres de votre organisation des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration Microsoft 365.  
+Votre abonnement est livré avec un ensemble de rôles d’administrateur que vous pouvez attribuer à d’autres utilisateurs de votre organisation. Chaque rôle d’administrateur est map pour les fonctions professionnelles courantes et donne aux membres de votre organisation des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration Microsoft 365.  
  
 Pour plus d’informations, voir [Attribuer des rôles d’administrateur.](../add-users/assign-admin-roles.md?view=o365-worldwide) 

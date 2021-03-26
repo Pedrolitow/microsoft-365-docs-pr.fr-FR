@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Découvrez comment définir des mots de passe utilisateur individuels pour qu’ils n’expirent jamais, à l’aide Windows PowerShell.
-ms.openlocfilehash: 564ea3338fcb11d699d385a40c9594f34964edf7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c70fce1c3ea9cb1dea66982a27ddb24e2b2de255
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903639"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222062"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais
 
@@ -35,7 +35,7 @@ Cet article explique comment définir un mot de passe pour qu’un utilisateur i
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../admin-overview/admin-overview.md) 
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) 
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 
@@ -84,7 +84,7 @@ Exécutez une des commandes suivantes :
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```  
 
-- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires dans CSV sur le bureau de l’utilisateur actuel avec le nom **ReportPasswordNeverExpires.csv**
+- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires dans CSV sur le bureau de l’utilisateur actuel avec le **nomReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -114,7 +114,7 @@ Run one of the following commands:
 
 Exécutez une des commandes suivantes :
 
-- Pour définir le mot de passe d’un utilisateur afin qu’il expire, exécutez la cmdlet suivante à l’aide de l’UPN ou de l’ID utilisateur de l’utilisateur :
+- Pour définir le mot de passe d’un utilisateur afin qu’il expire, exécutez l’cmdlet suivante à l’aide de l’UPN ou de l’ID utilisateur de l’utilisateur :
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies None

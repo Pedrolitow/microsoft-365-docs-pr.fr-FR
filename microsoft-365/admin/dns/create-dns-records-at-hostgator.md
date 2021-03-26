@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services chez Hostgator pour Microsoft.
-ms.openlocfilehash: 790a7d77c9dbab37b87f8e7533515e75d2018e92
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7f12b407254ff4146f77090da07d98db63e47305
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910197"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221882"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>Créer des enregistrements DNS chez Hostgator pour Microsoft
 
@@ -60,7 +60,7 @@ Suivez ces étapes pour associer votre domaine et vos comptes d'hébergement.
   
 4. Dans le menu déroulant à gauche, sélectionnez **Serveurs de noms.**
   
-5. Dans la page **Serveurs** de noms  de votre domaine, dans la liste de listes de listes des comptes d’hébergement automatiquement, sélectionnez le compte d’hébergement associé à votre domaine. 
+5. Dans la page **Serveurs** de noms  de votre domaine, dans la liste de listes des comptes d’hébergement automatiquement, sélectionnez le compte d’hébergement associé à votre domaine. 
   
 6. Sélectionnez **Enregistrer les serveurs de noms.**
     
@@ -142,7 +142,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 6. Sélectionnez **Ajouter un nouvel enregistrement.**
    
  
-7. S’il existe d’autres enregistrements MX dans la section **Enregistrements MX,** supprimez chacun d’eux. 
+7. S’il existe d’autres enregistrements MX dans la section **MX Records,** supprimez chacun d’eux. 
 
     
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Ajouter les six enregistrements CNAME requis pour Microsoft
@@ -179,7 +179,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 
 5. Ajoutez successivement les 5 autres enregistrements CNAME.
     
-    Dans la section **Ajouter** un enregistrement, créez un enregistrement en utilisant les valeurs de la ligne suivante du tableau, puis sélectionnez de nouveau **Ajouter** un enregistrement pour terminer cet enregistrement. 
+    Dans la section **Ajouter** un enregistrement, créez un enregistrement en utilisant les  valeurs de la ligne suivante du tableau, puis sélectionnez de nouveau Ajouter un enregistrement pour terminer cet enregistrement. 
     
     Répétez cette procédure jusqu'à avoir créé les 6 enregistrements CNAME.
     
@@ -187,7 +187,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir qu’un seul enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](../../enterprise/external-domain-name-system-records.md#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir qu’un seul enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
   
 > [!IMPORTANT]
 > Avant d'effectuer cette procédure, vous devez suivre celle décrite dans la première section de cet article ([Faire pointer votre domaine vers votre compte d'hébergement](#point-your-domain-to-your-hosting-account)). 
@@ -244,7 +244,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 5. Ajoutez l’autre enregistrement SRV.
     
-    Dans la section **Ajouter** un enregistrement, créez un enregistrement en utilisant les valeurs de la ligne suivante du tableau, puis sélectionnez de nouveau **Ajouter** un enregistrement pour terminer cet enregistrement. 
+    Dans la section **Ajouter** un enregistrement, créez un enregistrement en utilisant les  valeurs de la ligne suivante du tableau, puis sélectionnez de nouveau Ajouter un enregistrement pour terminer cet enregistrement. 
     
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).

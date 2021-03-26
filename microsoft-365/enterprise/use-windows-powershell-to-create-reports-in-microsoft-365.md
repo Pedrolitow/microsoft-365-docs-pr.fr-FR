@@ -16,24 +16,24 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour créer des rapports que vous ne pouvez pas produire dans le Centre d’administration Microsoft 365.'
-ms.openlocfilehash: 12cba74d114ea03804741335bd34ece403926033
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dc183ae8a315bf788befc85474d0647802ac91ee
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924695"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222778"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Utilisation de PowerShell pour créer des rapports pour Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-De nombreux rapports différents sont disponibles dans le Centre d’administration Microsoft 365. Toutefois, ces rapports fournissent uniquement une telle quantité d’informations, et vous en avez parfois besoin de plus. C’est à ce moment que vous avez besoin de PowerShell pour Microsoft 365.
+De nombreux rapports différents sont disponibles dans le Centre d’administration Microsoft 365. Toutefois, ces rapports fournissent uniquement une telle quantité d’informations, et vous avez parfois besoin de plus. C’est à ce moment que vous avez besoin de PowerShell pour Microsoft 365.
   
 Ces articles décrivent comment utiliser PowerShell pour Microsoft 365 afin d’obtenir des informations auprès de votre client Microsoft 365 :
   
 - Commencer à faire des rapports à l’aide de PowerShell pour Microsoft 365 :
     
-  - [Pourquoi utiliser PowerShell pour Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md#reveal)
+  - [Pourquoi utiliser PowerShell pour Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
 - Rapports pour les comptes d’utilisateurs et les licences :

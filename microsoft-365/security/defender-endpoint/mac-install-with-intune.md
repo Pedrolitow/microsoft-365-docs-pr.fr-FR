@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 08cb16f6ae6e259d1bc92e7d2bed96f093a435f0
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199536"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222512"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Déploiement basé sur Intune pour Microsoft Defender pour Endpoint pour Mac
 
@@ -50,7 +50,7 @@ Cette rubrique décrit comment déployer Microsoft Defender pour Endpoint pour M
 
 Avant de commencer, consultez la page principale de [Microsoft Defender pour Endpoint pour Mac](microsoft-defender-endpoint-mac.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
-## <a name="overview"></a>Présentation
+## <a name="overview"></a>Vue d’ensemble
 
 Le tableau suivant récapitule les étapes à suivre pour déployer et gérer Microsoft Defender pour Endpoint pour Mac, via Intune. Des étapes plus détaillées sont disponibles ci-dessous.
 
@@ -71,7 +71,7 @@ Téléchargez les packages d’installation et d’intégration à partir du Cen
 
 1. Dans le Centre de sécurité Microsoft Defender, go to **Settings**  >  **Device Management**  >  **Onboarding**.
 
-2. Définissez le système d’exploitation sur **macOS** et la méthode de déploiement sur Gestion des appareils **mobiles /Microsoft Intune**.
+2. Définissez le système d’exploitation **sur macOS** et la méthode de déploiement sur Gestion des périphériques **mobiles /Microsoft Intune**.
 
     ![Capture d’écran des paramètres d’intégration](images/atp-mac-install.png)
 
@@ -137,8 +137,6 @@ Vous n’avez pas besoin d’une mise en service spéciale pour un appareil Mac 
 
 1. Confirmez la gestion des appareils.
 
-    ![Confirmer la capture d’écran de la gestion des appareils](./images/mdatp-3-confirmdevicemgmt.png)
-
     Sélectionnez **Ouvrir les préférences système,** recherchez **Profil** de gestion dans la liste, puis sélectionnez **Approuver...**. Votre profil de gestion s’affiche comme **vérifié**:
 
     ![Capture d’écran du profil de gestion](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-4-managementprofile)
@@ -197,7 +195,7 @@ Pour approuver les extensions système :
 8. Téléchargez **fulldisk.mobileconfig à partir** de notre référentiel [GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) et enregistrez-le sous **tcc.xml**. Créez un autre profil, nommez-le et téléchargez-le dans celui-ci.<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
 
    > [!CAUTION]
-   > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
+   > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
    >
    > Ce profil de configuration accorde un accès disque total à Microsoft Defender pour le point de terminaison. Si vous avez précédemment configuré Microsoft Defender pour endpoint via Intune, nous vous recommandons de mettre à jour le déploiement avec ce profil de configuration.
 
@@ -227,7 +225,7 @@ Une fois que les modifications Intune sont propagées aux appareils inscrits, vo
 6. Définissez *Ignorer la version de l’application* sur **Oui.** D’autres paramètres peuvent être n’importe quelle valeur arbitraire.
 
     > [!CAUTION]
-    > La définition *de la version Ignorer la version* de l’application sur Non a une incidence sur la capacité de l’application à recevoir des mises à jour via La mise à jour automatique Microsoft.  Pour [plus d’informations](mac-updates.md) sur la façon dont le produit est mis à jour, voir Déployer les mises à jour de Microsoft Defender pour Endpoint pour Mac.
+    > La définition *de l’paramètre Ignorer la version* de l’application sur Non a une incidence sur la capacité de l’application à recevoir des mises à jour via La mise à jour automatique Microsoft.  Pour [plus d’informations](mac-updates.md) sur la façon dont le produit est mis à jour, voir Déployer les mises à jour de Microsoft Defender pour Endpoint pour Mac.
     >
     > Si la version téléchargée par Intune est inférieure à la version sur l’appareil, la version inférieure est installée, ce qui a pour effet de dégrader Microsoft Defender pour Endpoint. Cela peut entraîner le non-fonctionnement d’une application. Pour [plus d’informations](mac-updates.md) sur la façon dont le produit est mis à jour, voir Déployer les mises à jour de Microsoft Defender pour Endpoint pour Mac. Si vous avez déployé Microsoft Defender pour le point de terminaison avec ignorer *la version de* l’application définie sur **Non,** changez-la en **Oui.** Si Microsoft Defender pour le point de terminaison ne peut toujours pas être installé sur un appareil client, désinstallez Microsoft Defender pour le point de terminaison et appuyez sur la stratégie mise à jour.
      
@@ -251,7 +249,7 @@ Une fois que les modifications Intune sont propagées aux appareils inscrits, vo
     > [!div class="mx-imgBorder"]
     > ![Capture d’écran des informations sur les affectations Intune](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-11-assignments)
 
-11. Après un certain temps, l’application sera publiée sur tous les appareils inscrits. Vous pouvez le voir dans surveiller l’appareil,  >  sous État **de l’installation de l’appareil**:
+11. Après un certain temps, l’application sera publiée sur tous les appareils inscrits. Vous pouvez le voir dans surveiller  >  **l’appareil,** sous **État de l’installation de l’appareil**:
 
     > [!div class="mx-imgBorder"]
     > ![Capture d’écran de l’état de l’appareil Intune](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-12-deviceinstall)

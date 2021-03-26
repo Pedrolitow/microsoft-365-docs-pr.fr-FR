@@ -22,18 +22,19 @@ description: Comprendre ce qu’est un domaine et comment vous pouvez acheter un
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 9afc38aeda32870a248212f7b67f2fb4af8fd960
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 2527389634cda9912f45ecdcd3213f7d987b7bb8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658074"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221870"
 ---
 # <a name="what-is-a-domain"></a>Qu’est-ce qu’un domaine ?
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-[] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Il prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que *votre entreprise. <span> com* ou *stateuniversity. <span> edu*. 
+[] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Elle prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que *votre entreprise. <span> com* ou *stateuniversity. <span> edu*. 
   
 Utilisation d’un domaine personnalisé comme *rob@contoso. <span> Com* avec Microsoft 365 peut vous aider à renforcer la créativité et la reconnaissance de votre marque. 
   
@@ -52,7 +53,7 @@ Si vous possédez déjà un domaine comme  *you@yourcompany. <span> com,*  vous 
   
  **Utiliser temporairement un domaine par défaut :**
   
-Vous pouvez utiliser un domaine par défaut comme  *yourcompany.onmicrosoft. <span> com*  pour se connecter pour le moment et ajouter un domaine personnalisé ultérieurement. Étant donné que vous ne pouvez pas modifier ou renommer votre domaine par défaut, assurez-vous de choisir le bon ! 
+Vous pouvez utiliser un domaine par défaut comme  *yourcompany.onmicrosoft. <span> com*  pour se connecter pour l’instant et ajouter un domaine personnalisé ultérieurement. Étant donné que vous ne pouvez pas modifier ou renommer votre domaine par défaut, assurez-vous de choisir le bon ! 
   
 ## <a name="feeling-stuck"></a>Vous êtes bloqué ?
 

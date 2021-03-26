@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Découvrez comment utiliser le réseau de distribution de contenu (CDN) Office 365 pour accélérer la livraison de vos ressources SharePoint Online.
-ms.openlocfilehash: 6b740fc1429613627e0597dc6ecf2e150c015989
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17c80b8718ea46c9dfba9f803093974e8ce3e706
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924815"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222682"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
 
@@ -39,12 +39,12 @@ Le réseau de distribution de contenu Office 365 est composé de plusieurs rés
 
 ![Diagramme conceptuel du CDN Office 365](../media/O365-CDN/o365-cdn-flow-transparent.svg "Diagramme conceptuel du CDN Office 365")
 
-Si vous connaissez déjà le mode de travail des CDN, vous ne devez effectuer que quelques étapes pour activer le CDN Office 365 pour votre client. Cette rubrique décrit comment. Lisez la suite pour plus d’informations sur la façon de commencer à héberger vos ressources statiques.
+Si vous connaissez déjà le mode de travail des CDN, vous ne devez effectuer que quelques étapes pour activer le CDN Office 365 pour votre client. Cette rubrique décrit comment. Lisez la suite pour savoir comment commencer à héberger vos ressources statiques.
 
 > [!TIP]
 > Il existe d’autres CDN hébergés par Microsoft qui peuvent être utilisés avec Office 365 pour des scénarios d’utilisation spécialisés, mais qui ne sont pas abordés dans cette rubrique, car ils n’entrent pas dans le cadre du CDN Office 365. Pour plus d’informations, [voir autres CDN Microsoft.](content-delivery-networks.md#other-microsoft-cdns)
 
- **Revenir à [la planification réseau et à l’optimisation des performances pour Office 365.](./network-planning-and-performance.md)**
+ **Revenir à [la planification réseau et au réglage des performances pour Office 365.](./network-planning-and-performance.md)**
 
 ## <a name="overview-of-working-with-the-office-365-cdn-in-sharepoint-online"></a>Vue d’ensemble de l’utilisation du CDN Office 365 dans SharePoint Online
 
@@ -69,7 +69,7 @@ Pour configurer le CDN Office 365 pour votre organisation, suivez les étapes de
 
 Une fois l’installation terminée, vous pouvez gérer le [CDN Office 365](use-microsoft-365-cdn-with-spo.md#CDNManage) au fil du temps en :
   
-+ Ajout, mise à jour et suppression d’éléments
++ Ajout, mise à jour et suppression de biens
 + Ajout et suppression d’origines
 + Configuration des stratégies cdN
 + Si nécessaire, désactivation du CDN
@@ -93,7 +93,7 @@ En règle générale, les CDN sont plus efficaces pour héberger des ressources 
 
 + Fichiers statiques incorporés dans une page (tels que des scripts et des images) qui peuvent avoir un impact incrémentielle significatif sur les temps de chargement des pages
 + Fichiers de grande taille tels que les fichiers exécutables et d’installation
-+ Bibliothèques de ressources qui la prise en charge du code côté client
++ Bibliothèques de ressources qui supportent le code côté client
 
 Par exemple, les petits fichiers qui sont demandés à plusieurs reprises comme des images de site et des scripts peuvent améliorer considérablement les performances de rendu du site et réduire de manière incrémentielle la charge sur vos sites SharePoint Online lorsque vous les ajoutez à une origine CDN. Les fichiers plus volumineux, tels que les fichiers exécutables d’installation, peuvent être téléchargés à partir du CDN, ce qui a un impact positif sur les performances et réduit la charge sur votre site SharePoint Online, même s’ils ne sont pas accessibles aussi souvent.
 
@@ -104,18 +104,18 @@ L’amélioration des performances par fichier dépend de nombreux facteurs, not
 
 Le CDN récupère vos ressources à partir d’un emplacement appelé _origine._ Une origine peut être un site SharePoint, une bibliothèque de documents ou un dossier accessible par une URL. Vous avez une grande flexibilité lorsque vous spécifiez des origines pour votre organisation. Par exemple, vous pouvez spécifier plusieurs origines ou une origine unique dans laquelle vous souhaitez placer toutes vos ressources CDN. Vous pouvez choisir d’avoir des origines publiques ou privées pour votre organisation. La plupart des organisations choisiront d’implémenter une combinaison des deux.
 
-Vous pouvez créer un conteneur pour vos origines, telles que des dossiers ou des bibliothèques de documents, et ajouter des fichiers que vous souhaitez rendre disponibles à partir du CDN. Il s’agit d’une bonne approche si vous avez un ensemble spécifique de ressources que vous souhaitez être disponible à partir du CDN et que vous souhaitez limiter l’ensemble des ressources CDN uniquement à ces fichiers dans le conteneur.
+Vous pouvez créer un conteneur pour vos origines, telles que des dossiers ou des bibliothèques de documents, et ajouter des fichiers que vous souhaitez rendre disponibles à partir du CDN. Il s’agit d’une bonne approche si vous avez un ensemble spécifique de ressources que vous souhaitez être disponible à partir du CDN et que vous souhaitez limiter l’ensemble des ressources cdN uniquement à ces fichiers dans le conteneur.
 
 Vous pouvez également configurer une collection de sites, un site, une bibliothèque ou un dossier existant en tant qu’origine, ce qui rend tous les biens éligibles dans le conteneur disponibles à partir du CDN. Avant d’ajouter un conteneur existant en tant qu’origine, il est important de vous assurer de connaître son contenu et ses autorisations afin de ne pas exposer par inadvertance des biens à un accès anonyme ou à des utilisateurs non autorisés.
 
-Vous pouvez définir des _stratégies CDN pour_ exclure du CDN le contenu de vos origines. Les stratégies CDN excluent les biens des origines publiques ou privées par des attributs tels que le _type_ de fichier et la classification de _site_ et sont appliquées à toutes les origines du CdnType (privé ou public) que vous spécifiez dans la stratégie. Par exemple, si vous ajoutez une origine privée constituée d’un site qui contient plusieurs  sous-sites, vous pouvez définir une stratégie pour exclure les sites marqués comme confidentiels afin que le contenu des sites avec cette classification ne soit pas servi à partir du CDN. La stratégie s’applique au contenu de _toutes les origines_ privées que vous avez ajoutées au CDN.
+Vous pouvez définir des _stratégies de CDN pour_ exclure du CDN le contenu de vos origines. Les stratégies CDN excluent les biens des origines publiques ou privées par des attributs tels que le _type_ de fichier et la classification de _site_ et sont appliquées à toutes les origines du CdnType (privé ou public) que vous spécifiez dans la stratégie. Par exemple, si vous ajoutez une origine privée constituée d’un site qui contient plusieurs  sous-sites, vous pouvez définir une stratégie pour exclure les sites marqués comme confidentiels afin que le contenu des sites avec cette classification ne soit pas servi à partir du CDN. La stratégie s’applique au contenu de _toutes les origines_ privées que vous avez ajoutées au CDN.
   
 N’oubliez pas que plus le nombre d’origines est élevé, plus l’impact sur le temps qu’il faut au service CDN pour traiter les demandes est important. Nous vous recommandons de limiter autant que possible le nombre d’origines.
   
 <a name="CDNOriginChoosePublicPrivate"> </a>
 ### <a name="choose-whether-each-origin-should-be-public-or-private"></a>Choisir si chaque origine doit être publique ou privée
 
-Lorsque vous identifiez une origine, vous spécifiez si elle doit être _rendue publique_ ou _privée._ L’accès aux ressources CDN dans les origines publiques est anonyme et le contenu CDN dans les origines privées est sécurisé par des jetons générés dynamiquement pour une sécurité accrue. Quelle que soit l’option que vous choisissez, Microsoft s’charge de toutes les opérations importantes pour vous en ce qui concerne l’administration du CDN lui-même. En outre, vous pouvez changer d’avis ultérieurement, après avoir défini le CDN et identifié vos origines.
+Lorsque vous identifiez une origine, vous spécifiez si elle doit être _rendue publique_ ou _privée._ L’accès aux ressources CDN dans les origines publiques est anonyme et le contenu CDN dans les origines privées est sécurisé par des jetons générés dynamiquement pour une sécurité accrue. Quelle que soit l’option que vous choisissez, Microsoft s’charge de toutes les opérations importantes pour vous en ce qui concerne l’administration du CDN lui-même. Vous pouvez également changer d’avis ultérieurement, après avoir défini le CDN et identifié vos origines.
 
 Les options publiques et privées offrent des gains de performances similaires, mais chacune possède des attributs et des avantages uniques.
 
@@ -141,7 +141,7 @@ Vous pouvez en savoir plus sur le fonctionnement de l’accès CDN aux ressource
 + Les origines privées ne peuvent être utilisées que pour les ressources SharePoint Online.
 + Les utilisateurs ne peuvent accéder aux biens qu’à partir d’une origine privée s’ils sont autorisés à accéder au conteneur. Vous êtes protégé contre l’accès anonyme à ces ressources.
 + Les biens d’origine privée doivent être référents à partir du client SharePoint Online. L’accès direct aux ressources du CDN privé ne fonctionne pas.
-+ Si vous supprimez un bien de l’origine privée, il se peut qu’il reste disponible pendant une heure à partir du cache . toutefois, nous invalidons les liens vers la bien dans le CDN dans les 15 minutes suivant sa suppression.
++ Si vous supprimez un bien de l’origine privée, il se peut qu’il reste disponible jusqu’à une heure à partir du cache . toutefois, nous invalidons les liens vers la bien dans le CDN dans les 15 minutes suivant sa suppression.
 + Les types de fichier par défaut inclus pour les origines privées sont les suivants : .gif, .ico, .jpeg, .jpg, .js et .png. Vous pouvez spécifier des types de fichiers supplémentaires.
 + Comme pour les origines publiques, vous pouvez configurer une stratégie pour exclure les biens qui ont été identifiés par des classifications de site que vous spécifiez, même si vous utilisez des caractères génériques pour inclure tous les biens dans un dossier ou une bibliothèque de documents.
 
@@ -231,7 +231,7 @@ Pour plus d’informations sur cette cmdlet, voir [Set-SPOTenantCdnEnabled](/pow
 ### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Modifier la liste des types de fichiers à inclure dans le CDN Office 365 (facultatif)
 
 > [!TIP]
-> Lorsque vous définissez des types de fichiers à l’aide de la **cmdlet Set-SPOTenantCdnPolicy,** vous devez supprimer la liste actuellement définie. Si vous souhaitez ajouter des types de fichiers supplémentaires à la liste, utilisez d’abord la cmdlet pour connaître les types de fichiers qui sont déjà autorisés et les inclure dans la liste avec vos nouveaux.
+> Lorsque vous définissez des types de fichiers à l’aide de la **cmdlet Set-SPOTenantCdnPolicy,** vous devez supprimer la liste actuellement définie. Si vous souhaitez ajouter des types de fichiers supplémentaires à la liste, utilisez d’abord la cmdlet pour connaître les types de fichiers déjà autorisés et les inclure dans la liste avec vos nouveaux.
   
 La cmdlet **Set-SPOTenantCdnPolicy** permet de définir des types de fichiers statiques qui peuvent être hébergés par des origines publiques et privées dans le CDN. Par défaut, les types de ressources courants sont autorisés, par exemple .css, .gif, .jpg et .js.
 
@@ -362,7 +362,7 @@ Pour plus d’informations sur cette commande et sa syntaxe, voir [Add-SPOTenant
 Une fois que vous avez exécuté la commande, le système synchronise la configuration dans le centre de données. Cela peut prendre jusqu’à 15 minutes.
 
 <a name="ExamplePrivateOrigin"> </a>
-### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>Exemple : Configurer une origine privée pour vos ressources de site, pages de site et images de publication pour SharePoint Online
+### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>Exemple : Configurer une origine privée pour les ressources de votre site, les pages de site et les images de publication pour SharePoint Online
 
 + Utilisez la cmdlet **Add-SPOTenantCdnOrigin** pour définir le dossier des ressources du site en tant qu’origine privée.
 
@@ -474,7 +474,7 @@ Get-PnPTenantCdnEnabled -CdnType <Public | Private>
 
 L’état du CDN pour le CdnType spécifié est produit à l’écran.
 
-La cmdlet **Set-PnPTenantCdnEnabled** permet à votre organisation d’utiliser le CDN Office 365. Vous pouvez permettre à votre organisation d’utiliser les origines publiques, les origines privées ou les deux en même temps. Vous pouvez également configurer le CDN pour ignorer la configuration des origines par défaut lorsque vous l’activez. Vous pouvez toujours ajouter ces origines ultérieurement, comme décrit dans cette rubrique.
+La cmdlet **Set-PnPTenantCdnEnabled** permet à votre organisation d’utiliser le CDN Office 365. Vous pouvez permettre à votre organisation d’utiliser des origines publiques, des origines privées ou les deux en même temps. Vous pouvez également configurer le CDN pour ignorer la configuration des origines par défaut lorsque vous l’activez. Vous pouvez toujours ajouter ces origines ultérieurement, comme décrit dans cette rubrique.
   
 Dans PowerShell PnP :
 
@@ -645,7 +645,7 @@ Pour plus d’informations sur cette commande et sa syntaxe, voir [Add-PnPTenant
 Une fois que vous avez exécuté la commande, le système synchronise la configuration dans le centre de données. Cela peut prendre jusqu’à 15 minutes.
 
 <a name="ExamplePrivateOriginPnPPosh"> </a>
-### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>Exemple : Configurer une origine privée pour vos ressources de site, pages de site et images de publication pour SharePoint Online
+### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>Exemple : Configurer une origine privée pour les ressources de votre site, les pages de site et les images de publication pour SharePoint Online
 
 + La cmdlet **Add-PnPTenantCdnOrigin** permet de définir le dossier des ressources du site comme une origine privée.
 
@@ -653,7 +653,7 @@ Une fois que vous avez exécuté la commande, le système synchronise la configu
   Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
   ```
 
-+ Utilisez la cmdlet **Add-PnPTenantCdnOrigin** pour définir le dossier des pages de site comme une origine privée.
++ Utilisez la cmdlet **Add-PnPTenantCdnOrigin** pour définir le dossier des pages de site en tant qu’origine privée.
 
 ``` powershell
   Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
@@ -692,7 +692,7 @@ Une fois que vous avez installé le CDN, vous pouvez apporter des modifications 
 
 Une fois que vous avez terminé les étapes de configuration, vous pouvez ajouter de nouvelles ressources et mettre à jour ou supprimer des biens existants lorsque vous le souhaitez. Il vous suffit d’apporter vos modifications aux biens du dossier ou de la bibliothèque SharePoint que vous avez identifiés comme origine. Si vous ajoutez une nouvelle valeur, elle est immédiatement disponible via le CDN. Toutefois, si vous mettez à jour le bien, la propagation de la nouvelle copie et sa mise à disposition dans le CDN prennent jusqu’à 15 minutes.
   
-Si vous devez récupérer l’emplacement de l’origine, vous pouvez utiliser l’cmdlet **Get-PnPTenantCdnOrigin.** Pour plus d’informations sur l’utilisation de cette cmdlet, voir [Get-PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/get-pnptenantcdnorigin).
+Si vous avez besoin de récupérer l’emplacement de l’origine, vous pouvez utiliser l’cmdlet **Get-PnPTenantCdnOrigin.** Pour plus d’informations sur l’utilisation de cette cmdlet, voir [Get-PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/get-pnptenantcdnorigin).
 
 <a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Supprimer une origine du CDN Office 365
@@ -713,7 +713,7 @@ Vous ne pouvez pas modifier une origine que vous avez créée. Supprimez plutôt
 <a name="Office365CDNforSPODisable"> </a>
 #### <a name="disable-the-office-365-cdn"></a>Désactiver le CDN Office 365
 
-Utilisez la cmdlet **Set-PnPTenantCdnEnabled** pour désactiver le CDN pour votre organisation. Si les origines publique et privée sont activées pour le CDN, vous devez exécuter l’cmdlet deux fois comme indiqué dans les exemples suivants.
+Utilisez la cmdlet **Set-PnPTenantCdnEnabled** pour désactiver le CDN pour votre organisation. Si les origines publique et privée sont activées pour le CDN, vous devez exécuter la cmdlet deux fois, comme indiqué dans les exemples suivants.
   
 Pour désactiver l’utilisation des origines publiques dans le CDN, entrez la commande suivante :
 
@@ -888,7 +888,7 @@ Si vous souhaitez utiliser l’URL complète de la bien au lieu d’un chemin d�
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> En règle générale, vous ne devez pas coder en dur les URL directement dans les ressources du CDN. Toutefois, vous pouvez créer manuellement des URL pour les ressources dans les origines publiques si nécessaire. Pour plus d’informations, voir URL CDN de codage [en dur pour les ressources publiques.](use-microsoft-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets)
+> En règle générale, vous ne devez pas coder en dur les URL directement dans les ressources du CDN. Toutefois, vous pouvez créer manuellement des URL pour les ressources dans les origines publiques si nécessaire. Pour plus d’informations, voir URL CDN de codage [en dur pour les biens publics.](use-microsoft-365-cdn-with-spo.md)
 
 Pour savoir comment vérifier que les biens sont servis à partir du CDN, voir Comment puis-je confirmer que les biens sont servis par le [CDN ?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) dans la section Dépannage du [CDN Office 365.](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)
 
@@ -910,7 +910,7 @@ Voici un aperçu des liens qui sont réécrits automatiquement par la fonctionna
 
 Le diagramme suivant illustre le flux de travail lorsque SharePoint reçoit une demande pour une page contenant des biens d’une origine publique.
 
-![Diagramme de flux de travail : récupération des ressources cdN Office 365 à partir d’une origine publique](../media/O365-CDN/o365-cdn-public-steps-transparent.svg "Flux de travail : récupération des ressources cdN Office 365 à partir d’une origine publique")
+![Diagramme de flux de travail : récupération des ressources cdN Office 365 à partir d’une origine publique](../media/O365-CDN/o365-cdn-public-steps-transparent.svg "Flux de travail : récupération des ressources CDN Office 365 à partir d’une origine publique")
 
 > [!TIP]
 > Si vous souhaitez désactiver la réécriture automatique pour des URL spécifiques sur une page, vous pouvez consulter la page et ajouter le paramètre de chaîne de requête **? NoAutoReWrites=true** à la fin de chaque lien à désactiver.
@@ -934,7 +934,7 @@ Remplacez **TenantHostName par** le nom de votre client. Exemple :
 https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library/asset.png
 ```
 > [!NOTE]
-> La propriété de contexte de page doit être utilisée pour construire le préfixe au lieu de coder en dur « https://publiccdn.sharepointonline.com ». L’URL est sujette à modification et ne doit pas être codée en dur. Si vous utilisez des modèles d’affichage avec SharePoint Online classique, vous pouvez utiliser la propriété « window._spPageContextInfo.publicCdnBaseUrl » dans votre modèle d’affichage pour le préfixe de l’URL. Si vous êtes des composants Web Parts SPFx pour SharePoint moderne et classique, vous pouvez utiliser la propriété « this.context.pageContext.legacyPageContext.publicCdnBaseUrl ». Cela fournit le préfixe afin que, s’il est modifié, votre implémentation soit mise à jour avec lui. Par exemple, pour SPFx, l’URL peut être construite à l’aide de la propriété " this.context.pageContext.legacyPageContext.publicCdnBaseUrl » + « / » + « host » + « / » + « relativeURL for the item ». Consultez [l’utilisation du CDN dans](https://youtu.be/IH1RbQlbhIA) le code côté client, qui fait partie de la série de performances [de la campagne 1](https://aka.ms/sppnp-perfvideos)
+> La propriété de contexte de page doit être utilisée pour construire le préfixe au lieu de coder en dur « https://publiccdn.sharepointonline.com ». L’URL est sujette à modification et ne doit pas être codée en dur. Si vous utilisez des modèles d’affichage avec SharePoint Online classique, vous pouvez utiliser la propriété « window._spPageContextInfo.publicCdnBaseUrl » dans votre modèle d’affichage pour le préfixe de l’URL. Si vous êtes des composants Web Parts SPFx pour SharePoint moderne et classique, vous pouvez utiliser la propriété « this.context.pageContext.legacyPageContext.publicCdnBaseUrl ». Cela fournit le préfixe de sorte que s’il est modifié, votre implémentation sera mise à jour avec lui. Par exemple, pour SPFx, l’URL peut être construite à l’aide de la propriété " this.context.pageContext.legacyPageContext.publicCdnBaseUrl » + « / » + « host » + « / » + « relativeURL for the item ». Veuillez consulter [l’utilisation du CDN dans](https://youtu.be/IH1RbQlbhIA) le code côté client, qui fait partie de la série de performances [de la première année](https://aka.ms/sppnp-perfvideos)
 
 
 ### <a name="using-assets-in-private-origins"></a>Utilisation de biens dans des origines privées
@@ -949,9 +949,9 @@ Le diagramme suivant illustre le flux de travail lorsque SharePoint reçoit une 
 
 #### <a name="token-based-authorization-in-private-origins"></a>Autorisation basée sur un jeton dans les origines privées
 
-L’accès aux biens dans des origines privées dans le CDN Office 365 est accordé par des jetons générés par SharePoint Online. Les utilisateurs qui ont déjà l’autorisation d’accéder au dossier ou à la bibliothèque désigné par l’origine se voir automatiquement accorder des jetons qui permettent à l’utilisateur d’accéder au fichier en fonction de son niveau d’autorisation. Ces jetons d’accès sont valides pendant 30 à 90 minutes après qu’ils ont été générés pour empêcher les attaques de relecture de jeton.
+L’accès aux biens dans des origines privées dans le CDN Office 365 est accordé par des jetons générés par SharePoint Online. Les utilisateurs qui ont déjà l’autorisation d’accéder au dossier ou à la bibliothèque désigné par l’origine se sont automatiquement vus accorder des jetons qui permettent à l’utilisateur d’accéder au fichier en fonction de son niveau d’autorisation. Ces jetons d’accès sont valides pendant 30 à 90 minutes après qu’ils ont été générés pour empêcher les attaques de relecture de jeton.
 
-Une fois le jeton d’accès généré, SharePoint Online renvoie un URI personnalisé au client contenant deux _paramètres_ d’autorisation (jeton d’autorisation Edge) et un secret _(jeton_ d’autorisation d’origine). La structure de chaque _jeton est<'expiration au format d’heure Époque >__<'heure de_ la signature sécurisée >. Par exemple :
+Une fois le jeton d’accès généré, SharePoint Online renvoie un URI personnalisé au client contenant deux _paramètres_ d’autorisation (jeton d’autorisation Edge) et un secret _(jeton_ d’autorisation d’origine). La structure de chaque _jeton est<'expiration au format d’heure Époque >__<'>_. Par exemple :
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -991,7 +991,7 @@ Pour plus d’informations sur l’utilisation des outils de développement dans
 Pour regarder une courte vidéo hébergée dans la chaîne [YouTube Modèles](https://aka.ms/sppnp-videos) et pratiques de développement SharePoint montrant comment vérifier que votre CDN fonctionne, voir Vérifier votre utilisation [du CDN](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5)et garantir une connectivité réseau optimale.
 
 ### <a name="why-are-assets-from-a-new-origin-unavailable"></a>Pourquoi les ressources d’une nouvelle origine ne sont-elles pas disponibles ?
-Les ressources dans les nouvelles origines ne seront pas immédiatement disponibles pour une utilisation, car l’inscription prend du temps pour se propager via le CDN et pour que les ressources soient téléchargées à partir de l’origine vers le stockage CDN. Le temps nécessaire à la mise à disposition des ressources dans le CDN dépend du nombre de ressources et de la taille des fichiers.
+Les ressources des nouvelles origines ne seront pas immédiatement disponibles pour une utilisation, car il faut du temps pour que l’inscription se propage dans le CDN et pour que les ressources soient téléchargées à partir de l’origine vers le stockage CDN. Le temps nécessaire à la mise à disposition des ressources dans le CDN dépend du nombre de ressources et de la taille des fichiers.
 
 ### <a name="my-client-side-web-part-or-sharepoint-framework-solution-isnt-working"></a>Mon élément Web Part côté client ou ma solution SharePoint Framework ne fonctionne pas
 

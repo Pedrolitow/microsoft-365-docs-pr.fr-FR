@@ -1,5 +1,5 @@
 ---
-title: Tirer les détections vers vos outils SIEM à partir de Microsoft Defender for Endpoint
+title: Pull detections to your SIEM tools from Microsoft Defender for Endpoint
 description: Découvrez comment utiliser l’API REST et configurer les outils de gestion des événements et des informations de sécurité pris en charge pour recevoir et tirer des détections.
 keywords: configurer siem, outils de gestion des informations de sécurité et des événements, splunk, arcsight, indicateurs personnalisés, api rest, définitions d’alerte, indicateurs de compromis
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b9ce376736e5f00ee0f6a4f308d783e75052357
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 97a64c8537ff2a6f9948ed6ed056b8aa7379ce69
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163295"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222334"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>Tirer les détections vers vos outils SIEM
 
@@ -36,7 +36,7 @@ ms.locfileid: "51163295"
 ## <a name="pull-detections-using-security-information-and-events-management-siem-tools"></a>Détections de pull à l’aide des outils de gestion des événements et des informations de sécurité (SIEM)
 
 >[!NOTE]
->- [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) se compose d’une ou de plusieurs détections.
+>- [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) est composé d’une ou plusieurs détections.
 >- [Microsoft Defender pour la détection des points](api-portal-mapping.md) de terminaison est composé de l’événement suspect qui s’est produit sur l’appareil et de ses détails d’alerte associés.
 >-The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. Pour plus d’informations, voir [Méthodes et propriétés d’alerte et](alerts.md) Liste des [alertes.](get-alerts.md)
 
@@ -53,7 +53,7 @@ Pour utiliser l’un de ces outils SIEM pris en charge, vous devez :
 
 - [Activer l’intégration SIEM dans Defender for Endpoint](enable-siem-integration.md)
 - Configurez l’outil SIEM pris en charge :
-     - [Configurer HP ArcSight pour tirer Defender pour les détections de points de terminaison](configure-arcsight.md)
+     - [Configurer Micro Focus ArcSight pour tirer Defender pour les détections de points de terminaison](configure-arcsight.md)
      - Configurez IBM QRadar pour tirer Defender pour les détections de points de terminaison Pour plus d’informations, voir [le Centre de connaissances IBM.](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)
 
-Pour plus d’informations sur la liste des champs exposés dans l’API de détection, consultez les champs [Defender for Endpoint Detection](api-portal-mapping.md).
+Pour plus d’informations sur la liste des champs exposés dans l’API de détection, voir Defender pour les champs de détection [de point de terminaison.](api-portal-mapping.md)

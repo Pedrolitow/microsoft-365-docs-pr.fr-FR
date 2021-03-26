@@ -21,12 +21,12 @@ description: 'Centre d’administration Microsoft 365 : découvrez les fonctionn
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b670c6a333485bc3a19ae14b8e7c71f08181cac5
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7b802556e051200bf39bc4bd9b97974d4d2d4c47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215575"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222002"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d’administration Microsoft 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "51215575"
 
 ::: moniker-end
 
-Nous ajoutons en permanence de nouvelles fonctionnalités au Centre d’administration [Microsoft 365,](microsoft-365-admin-center-preview.md)corrigeons les problèmes que nous avons appris et apportant des modifications en fonction de vos commentaires. Consultez la vidéo ci-dessous pour voir ce qui est disponible pour vous aujourd’hui. Certaines fonctionnalités sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous [ajouter à la version ciblée.](manage/release-options-in-office-365.md)
+Nous ajoutons en permanence de nouvelles fonctionnalités au Centre d’administration [Microsoft 365,](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)corrigeons les problèmes que nous avons appris et apportant des modifications en fonction de vos commentaires. Consultez la vidéo ci-dessous pour voir ce qui est disponible pour vous aujourd’hui. Certaines fonctionnalités sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous [ajouter à la version ciblée.](manage/release-options-in-office-365.md)
 
 Et si vous souhaitez savoir quelles sont les nouveautés des autres services cloud de Microsoft :
 

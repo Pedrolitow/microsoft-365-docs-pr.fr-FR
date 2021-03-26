@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 370048586c5ddfa6fa9ea265e929608357adf5df
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4aab7f12b250c1415ad65a9e706edf6b68050b2f
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186880"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222650"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
@@ -40,9 +40,6 @@ ms.locfileid: "51186880"
 
 
 Le service Defender for Endpoint est constamment mis à jour pour inclure de nouvelles améliorations et fonctionnalités.
-
-> [!TIP]
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink)
 
 Découvrez les nouvelles fonctionnalités de la version d’évaluation de Defender for Endpoint et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
 
@@ -68,15 +65,6 @@ Les fonctionnalités suivantes sont incluses dans la version préliminaire :
 - [Filtrage de contenu Web](web-content-filtering.md) <br> Le filtrage de contenu Web fait partie des fonctionnalités de protection web de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 - [Rapport sur l’état et la conformité de l’appareil](machine-reports.md) <br/> Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
-
-- [Protection des informations](information-protection-in-windows-overview.md)<BR>
-La protection des informations fait partie intégrante de la suite Microsoft 365 Entreprise, offrant une protection intelligente pour garantir la sécurité des données sensibles tout en permettant la productivité sur le lieu de travail. Microsoft Defender pour point de terminaison est intégré en toute transparence à la Protection Microsoft contre les menaces pour fournir une solution complète et complète de protection contre la perte de données (DLP) pour les appareils Windows.
-
-    >[!NOTE]
-    >Partiellement disponible à partir de Windows 10, version 1809.
-
-- [Intégration de Windows Server 2019](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-version-1803-and-windows-server-2019) <BR> Microsoft Defender pour le point de terminaison ajoute désormais la prise en charge de Windows Server 2019. Vous pourrez intégrer Windows Server 2019 dans la même méthode que pour les appareils clients Windows 10.
-
 
 > [!TIP] 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

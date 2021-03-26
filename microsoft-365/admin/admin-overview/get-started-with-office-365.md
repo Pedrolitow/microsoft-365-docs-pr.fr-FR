@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Découvrez comment configurer et utiliser Microsoft 365 sur votre ordinateur, téléphone et tablette.
-ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74821886832e699a90d9a54a9b8c7ce9a8cfab75
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906287"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222026"
 ---
 # <a name="get-started"></a>Prise en main
 
@@ -48,7 +48,7 @@ Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l�
     
 - [Centre de formation Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [Où se connectez-vous](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [Où se connectez-vous ?](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
 - [Installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     
@@ -60,7 +60,7 @@ Voici quelques ressources pour vous aider à commencer.
   
 - [Formation pour les administrateurs](../index.yml): obtenir des liens vers des cours en ligne gratuits pour les administrateurs.
     
-- [Aide de l’administrateur](./admin-overview.md): obtenez des informations sur les tâches principales, la mise en place des outils d’administration et la résolution des problèmes.
+- [Aide de l’administrateur](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview): obtenez des informations sur les tâches principales, la mise en place des outils d’administration et la résolution des problèmes.
     
 - [Contacter le support - Aide de l’administrateur](../contact-support-for-business-products.md) : appelez-nous, ouvrez une demande en ligne ou laissez la communauté vous aider. 
     

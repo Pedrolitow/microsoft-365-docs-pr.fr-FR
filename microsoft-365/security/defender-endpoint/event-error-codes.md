@@ -1,7 +1,7 @@
 ---
 title: Passer en revue les événements et les erreurs à l’aide de l’Observateur d’événements
 description: Obtenez des descriptions et d’autres étapes de dépannage (si nécessaire) pour tous les événements signalés par le service Microsoft Defender for Endpoint.
-keywords: résolution des problèmes, observateur d’événements, résumé du journal, code d’échec, échec, service Microsoft Defender pour point de terminaison, impossible de démarrer, rompu, ne peut pas démarrer
+keywords: résoudre les problèmes, observateur d’événements, résumé du journal, code d’échec, échec, service Microsoft Defender pour point de terminaison, ne peut pas démarrer, rompu, ne peut pas démarrer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 98c0f790c228989b261b95f3b87cdc9d18e4fa76
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068582"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222651"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Passer en revue les événements et les erreurs à l’aide de l’Observateur d’événements
 
@@ -46,10 +46,10 @@ Par exemple, si les appareils n’apparaissent pas dans la liste **Appareils,** 
 
 2. Dans la liste des journaux, sous **Résumé des journaux,** faites défiler jusqu’à ce que vous voyez **Microsoft-Windows-SENSE/Opérationnel**. Double-cliquez sur l’élément pour ouvrir le journal.
 
-   a.  Vous pouvez également accéder au journal en expandant **Applications et services Journaux**  >  **Microsoft**  >  **Windows**  >  **SENSE** et en cliquant sur **Opérationnel.**
+   a.  Vous pouvez également accéder au journal en expandant **Applications et services Journaux**  >  **Microsoft**  >  **Windows**  >  **SENSE** et en cliquant sur **Opérationnel**.
 
    > [!NOTE]
-   > SENSE est le nom interne utilisé pour faire référence au capteur comportemental qui alimente Microsoft Defender pour le point de terminaison.
+   > SENSE est le nom interne utilisé pour faire référence au capteur comportemental qui alimente Microsoft Defender pour endpoint.
 
 3. Les événements enregistrés par le service apparaissent dans le journal. Consultez le tableau suivant pour obtenir la liste des événements enregistrés par le service.
 
@@ -63,13 +63,13 @@ Par exemple, si les appareils n’apparaissent pas dans la liste **Appareils,** 
 </tr>
 <tr>
 <td>1</td>
-<td>Service Microsoft Defender pour point de terminaison démarré (version <code>variable</code> ).</td>
-<td>Se produit lors du démarrage, de l’arrêt et de l’onbboarding du système.</td>
+<td>Service Microsoft Defender pour point de terminaison démarré <code>variable</code> (version).</td>
+<td>Se produit lors du démarrage, de l’arrêt et de l’intégration du système.</td>
 <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Arrêt du service Microsoft Defender for Endpoint.</td>
+<td>Arrêt du service Microsoft Defender pour point de terminaison.</td>
 <td>Se produit lorsque l’appareil est arrêté ou déboardé.</td>
 <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
@@ -96,16 +96,16 @@ Le service n’a pas pu contacter les serveurs de traitement externes à cette U
 <tr>
 <td>6 </td>
 <td>Le service Microsoft Defender for Endpoint n’est pas intégré et aucun paramètre d’intégration n’a été trouvé.</td>
-<td>L’appareil ne s’est pas correctement intégré et ne sera pas signalé au portail.</td>
+<td>L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.</td>
 <td>L’intégration doit être exécuté avant de démarrer le service.<br>
-Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>7 </td>
 <td>Le service Microsoft Defender for Endpoint n’a pas réussi à lire les paramètres d’intégration. Échec : <code>variable</code> .</td>
-<td>Variable = description détaillée de l’erreur. L’appareil ne s’est pas correctement intégré et ne sera pas signalé au portail.</td>
-<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Variable = description détaillée de l’erreur. L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.</td>
+<td>Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
@@ -119,15 +119,15 @@ Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 <tr>
 <td>9 </td>
 <td>Le service Microsoft Defender for Endpoint n’a pas réussi à modifier son type de démarrage. Code d’échec <code>variable</code> : .</td>
-<td><b>Lors de l’intégration :</b> L’appareil ne s’est pas correctement intégré et ne sera pas signalé au portail. <br><br><b>Lors de laboarding :</b> Échec de la modification du type de démarrage du service. Le processus deboarding se poursuit. </td>
-<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td><b>Lors de l’intégration :</b> L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail. <br><br><b>Lors de laboarding :</b> Échec de la modification du type de démarrage du service. Le processus deboarding se poursuit. </td>
+<td>Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>10 </td>
 <td>Le service Microsoft Defender for Endpoint n’a pas réussi à rendre persistantes les informations d’intégration. Code d’échec <code>variable</code> : .</td>
-<td>L’appareil ne s’est pas correctement intégré et ne sera pas signalé au portail.</td>
-<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.</td>
+<td>Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
@@ -139,7 +139,7 @@ L’apparition de l’appareil sur le portail peut prendre plusieurs heures.</td
 </tr>
 <tr>
 <td>12 </td>
-<td>Microsoft Defender pour le point de terminaison n’a pas réussi à appliquer la configuration par défaut.</td>
+<td>Microsoft Defender for Endpoint n’a pas réussi à appliquer la configuration par défaut.</td>
 <td>Le service n’a pas pu appliquer la configuration par défaut.</td>
 <td>Cette erreur doit être résolue après un court moment.</td>
 </tr>
@@ -161,7 +161,7 @@ Le service n’a pas pu contacter les serveurs de traitement externes à cette U
 <td>Le service Microsoft Defender for Endpoint n’a pas réussi à modifier l’emplacement du service Expériences des utilisateurs connectés et télémétrie. Code d’échec <code>variable</code> : .</td>
 <td>Une erreur s’est produite avec le service de télémétrie Windows.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Assurez-vous que le service de données de diagnostic est activé.</a><br>
-Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
@@ -181,29 +181,29 @@ Si cette erreur persiste après un redémarrage du système, assurez-vous que to
 <td>20</td>
 <td>Impossible d’attendre la fin de la OOBE (Bienvenue dans Windows). Code d’échec <code>variable</code> : .</td>
 <td>Erreur interne.</td>
-<td>Si cette erreur persiste après un redémarrage du système, assurez-vous que toutes les mises à jour Windows sont installées.</td>
+<td>Si cette erreur persiste après un redémarrage du système, assurez-vous que toutes les mises à jour Windows sont entièrement installées.</td>
 </tr>
 <tr>
 <td>25</td>
 <td>Le service Microsoft Defender for Endpoint n’a pas réussi à réinitialiser l’état d’état d’état dans le Registre. Code d’échec <code>variable</code> : .</td>
-<td>L’appareil ne s’est pas correctement intégré.
+<td>L’appareil n’a pas été correctement intégré.
 Il signale au portail, mais le service peut ne pas apparaître comme inscrit dans SCCM ou le Registre.</td>
-<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>26</td>
 <td>Le service Microsoft Defender for Endpoint n’a pas réussi à définir l’état d’intégration dans le Registre. Code d’échec <code>variable</code> : .</td>
-<td>L’appareil ne s’est pas correctement intégré.<br>
+<td>L’appareil n’a pas été correctement intégré.<br>
 Il signale au portail, mais le service peut ne pas apparaître comme inscrit dans SCCM ou le Registre.</td>
-<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>27</td>
 <td>Le service Microsoft Defender pour points de terminaison n’a pas réussi à activer le mode sensible SENSE dans l’Antivirus Microsoft Defender. Échec du processus d’intégration. Code d’échec <code>variable</code> : .</td>
 <td>Normalement, l’Antivirus Microsoft Defender passe à un état passif spécial si un autre produit anti-programme malveillant en temps réel s’exécute correctement sur l’appareil, et que l’appareil fait des rapports à Defender pour le point de terminaison.</td>
-<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a><br>
 Assurez-vous que la protection contre les programmes malveillants en temps réel s’exécute correctement.</td>
 </tr>
@@ -212,7 +212,7 @@ Assurez-vous que la protection contre les programmes malveillants en temps réel
 <td>Échec de l’inscription au service Expériences des utilisateurs connectés et télémétrie de Microsoft Defender for Endpoint. Code d’échec <code>variable</code> : .</td>
 <td>Une erreur s’est produite avec le service de télémétrie Windows.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Assurez-vous que le service de données de diagnostic est activé.</a><br>
-Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
@@ -225,7 +225,7 @@ Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 <td>30</td>
 <td>Le service Microsoft Defender pour points de terminaison n’a pas réussi à désactiver le mode sensible SENSE dans l’Antivirus Microsoft Defender. Code d’échec <code>variable</code> : .</td>
 <td>Normalement, l’Antivirus Microsoft Defender passe à un état passif spécial si un autre produit anti-programme malveillant en temps réel s’exécute correctement sur l’appareil, et que l’appareil fait des rapports à Defender pour le point de terminaison.</td>
-<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés</a><br>
 Assurez-vous que la protection contre les programmes malveillants en temps réel s’exécute correctement.</td>
 </tr>
@@ -238,13 +238,13 @@ Assurez-vous que la protection contre les programmes malveillants en temps réel
 <tr>
 <td>32</td>
 <td>Le service Microsoft Defender for Endpoint n’a pas réussi à demander à s’arrêter après le processus deboarding. Code d’échec : %1</td>
-<td>Une erreur s’est produite lors de la procédure deboardage.</td>
+<td>Une erreur s’est produite lors de la procédure deboarding.</td>
 <td>Redémarrez l’appareil.</td>
 </tr>
 <tr>
 <td>33</td>
 <td>Le service Microsoft Defender for Endpoint n’a pas réussi à rendre persistant le GUID SENSE. Code d’échec <code>variable</code> : .</td>
-<td>Un identificateur unique est utilisé pour représenter chaque appareil signalant au portail.<br>
+<td>Un identificateur unique est utilisé pour représenter chaque appareil qui rapporte au portail.<br>
 Si l’identificateur ne persiste pas, le même appareil peut apparaître deux fois dans le portail.</td>
 <td>Vérifiez les autorisations du Registre sur l’appareil pour vous assurer que le service peut mettre à jour le Registre.</td>
 </tr>
@@ -253,12 +253,12 @@ Si l’identificateur ne persiste pas, le même appareil peut apparaître deux f
 <td>Le service Microsoft Defender pour points de terminaison n’a pas réussi à s’ajouter en tant que dépendance au service Expériences des utilisateurs connectés et télémétrie, ce qui a provoqué l’échec du processus d’intégration. Code d’échec <code>variable</code> : .</td>
 <td>Une erreur s’est produite avec le service de télémétrie Windows.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Assurez-vous que le service de données de diagnostic est activé.</a><br>
-Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>35</td>
-<td>Le service Microsoft Defender pour points de terminaison n’a pas réussi à se supprimer en tant que dépendance au service Expériences des utilisateurs connectés et télémétrie. Code d’échec <code>variable</code> : .</td>
+<td>Le service Microsoft Defender pour points de terminaison n’a pas réussi à se supprimer en tant que dépendance du service Expériences des utilisateurs connectés et télémétrie. Code d’échec <code>variable</code> : .</td>
 <td>Une erreur s’est produite avec le service de télémétrie Windows lors de la déboarding. Le processus deboarding se poursuit.
 </td>
 <td>Recherchez les erreurs avec le service de données de diagnostic Windows.</td>
@@ -331,7 +331,7 @@ Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 </tr>
 <tr>
 <td>47</td>
-<td>Session de suivi d’événements correctement inscrite et démarrée : récupérée après des tentatives qui ont échoué précédemment.</td>
+<td>Session de suivi d’événements correctement inscrite et démarrée : récupérée après les tentatives précédentes qui ont échoué.</td>
 <td>Cet événement suit l’événement précédent après le démarrage réussi de la session ETW.</td>
 <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
@@ -341,6 +341,270 @@ Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 <td>Échec de l’ajout d’un fournisseur à la session ETW. Par conséquent, les événements du fournisseur ne sont pas signalés.</td>
 <td>Vérifiez le code d’erreur. Si l’erreur persiste, contactez le support technique.</td>
 </tr>
+</tr>
+<tr>
+   <td>49</td>
+   <td>Commande de configuration cloud non valide reçue et ignorée. Version : %1, état : %2, code d’erreur : %3, message : %4</td>
+   <td>Le service cloud a reçu un fichier de configuration non valide qui a été ignoré.</td>
+   <td>Si cette erreur persiste, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>50</td>
+   <td>Nouvelle configuration cloud appliquée avec succès. Version : %1.</td>
+   <td>Application réussie d’une nouvelle configuration à partir du service cloud.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>51</td>
+   <td>La nouvelle configuration cloud n’a pas réussi à s’appliquer, version : %1. Application réussie de la dernière bonne configuration connue, version %2.</td>
+   <td>Le service cloud a reçu un fichier de configuration non bon. La dernière bonne configuration connue a été appliquée avec succès.</td>
+   <td>Si cette erreur persiste, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>52</td>
+   <td>La nouvelle configuration cloud n’a pas réussi à s’appliquer, version : %1. Échec également de l’application de la dernière bonne configuration connue, version %2. La configuration par défaut a été correctement appliquée.</td>
+   <td>Le service cloud a reçu un fichier de configuration non bon. Échec de l’application de la dernière bonne configuration connue et la configuration par défaut a été appliquée.</td>
+   <td>Le service tentera de télécharger un nouveau fichier de configuration dans un délai de 5 minutes. Si l’événement n’est pas #50 - contactez le support technique.</td>
+</tr>
+<tr>
+   <td>53</td>
+   <td>Configuration cloud chargée à partir du stockage persistant, version : %1.</td>
+   <td>La configuration a été chargée à partir d’un stockage persistant au démarrage du service.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>55</td>
+   <td>Échec de la création dulogger automatique ETW sécurisé. Code d’échec : %1</td>
+   <td>Échec de la création de l’enregistreur de journaux ETW sécurisé.</td>
+   <td>Redémarrez l’appareil. Si cette erreur persiste, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>56</td>
+   <td>Échec de la suppression dulogger automatique ETW sécurisé. Code d’échec : %1</td>
+   <td>Échec de la suppression de la session ETW sécurisée lors du déboardage.</td>
+   <td>Contactez le support technique.</td>
+</tr>
+<tr>
+   <td>57</td>
+   <td>Capture d’un instantané de l’ordinateur à des fins de dépannage.</td>
+   <td>Un package d’enquête, également appelé package d’investigation, est en cours de collecte.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>59</td>
+   <td>Commande de démarrage : %1</td>
+   <td>Démarrage de l’exécution de la commande de réponse.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>60</td>
+   <td>Échec d’exécuter la commande %1, erreur : %2.</td>
+   <td>Échec de l’exécution de la commande de réponse.</td>
+   <td>Si cette erreur persiste, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>61</td>
+   <td>Les paramètres de commande de collecte de données ne sont pas valides : SasUri : %1, compressionLevel : %2.</td>
+   <td>Échec de la lecture ou de l’analyse des arguments de commande de collecte de données (arguments non valides).</td>
+   <td>Si cette erreur persiste, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>62</td>
+   <td>Échec du démarrage du service Expériences des utilisateurs connectés et télémétrie. Code d’échec : %1</td>
+   <td>Le service Expériences des utilisateurs connectés et télémétrie (diagtrack) n’a pas réussi à démarrer. La télémétrie de point de terminaison autre que Microsoft Defender ne sera pas envoyée à partir de cet ordinateur.</td>
+   <td>Recherchez d’autres conseils de dépannage dans le journal des événements : Microsoft-Windows-UniversalTelemetryClient/Operational.</td>
+</tr>
+<tr>
+   <td>63</td>
+   <td>Mise à jour du type de démarrage du service externe. Nom : %1, type de démarrage réel : %2, type de démarrage attendu : %3, code de sortie : %4</td>
+   <td>Type de démarrage mis à jour du service externe.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>64</td>
+   <td>Démarrage du service externe arrêté. Nom : %1, code de sortie : %2</td>
+   <td>Démarrage d’un service externe.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>65</td>
+   <td>Échec du chargement du pilote minifilter du composant Événements de sécurité Microsoft. Code d’échec : %1</td>
+   <td>Échec du chargement du MsSecFlt.sys du système de fichiers.</td>
+   <td>Redémarrez l’appareil. Si cette erreur persiste, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>66</td>
+   <td>Mise à jour de stratégie : mode latence - %1</td>
+   <td>La stratégie C# de connexion C a été mise à jour.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>68</td>
+   <td>Le type de démarrage du service est inattendu. Nom du service : %1, type de démarrage réel : %2, type de démarrage attendu : %3</td>
+   <td>Type de démarrage de service externe inattendu.</td>
+   <td>Corriger le type de démarrage du service externe.</td>
+</tr>
+<tr>
+   <td>69</td>
+   <td>Le service est arrêté. Nom du service : %1</td>
+   <td>Le service externe est arrêté.</td>
+   <td>Démarrez le service externe.</td>
+</tr>
+<tr>
+   <td>70</td>
+   <td>Mise à jour de stratégie : autoriser la collecte d’exemples - %1</td>
+   <td>L’exemple de stratégie de collecte a été mis à jour.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>71</td>
+   <td>Réussi à exécuter la commande : %1</td>
+   <td>La commande a été exécutée avec succès.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>72</td>
+   <td>Nous avons essayé d’envoyer le premier rapport de profil d’ordinateur complet. Code de résultat : %1</td>
+   <td>Informations uniquement.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>73</td>
+   <td>Sense starting for platform: %1</td>
+   <td>Informations uniquement.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>74</td>
+   <td>La balise d’appareil dans le Registre dépasse la limite de longueur. Nom de la balise : %2. Limite de longueur : %1.</td>
+   <td>La balise d’appareil dépasse la limite de longueur.</td>
+   <td>Utilisez une balise d’appareil plus courte.</td>
+</tr>
+<tr>
+   <td>81</td>
+   <td>Échec de la création Windows Defender de l’auto-gger ETW de la Protection avancée contre les menaces. Code d’échec : %1</td>
+   <td>Échec de la création de la session ETW.</td>
+   <td>Redémarrez l’appareil. Si cette erreur persiste, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>82</td>
+   <td>Échec de la suppression Windows Defender de l’auto-gger ETW de la Protection avancée contre les menaces. Code d’échec : %1</td>
+   <td>Échec de la suppression de la session ETW.</td>
+   <td>Contactez le support technique.</td>
+</tr>
+<tr>
+   <td>84</td>
+   <td>Définissez Windows Defender’antivirus en cours d’exécution. Forcer le mode passif : %1, code de résultat : %2.</td>
+   <td>Définir le mode d’exécution de Defender (actif ou passif).</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>85</td>
+   <td>Échec du déclenchement du Windows Defender protection avancée contre les menaces. Code d’échec : %1</td>
+   <td>Échec de l’exécution de SenseIR.</td>
+   <td>Redémarrez l’appareil. Si cette erreur persiste, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>86</td>
+   <td>Le démarrage a arrêté à nouveau le service externe qui devrait être en service. Nom : %1, code de sortie : %2</td>
+   <td>Recommencez le service externe.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>87</td>
+   <td>Impossible de démarrer le service externe. Nom : %1</td>
+   <td>Échec du démarrage du service externe.</td>
+   <td>Contactez le support technique.</td>
+</tr>
+<tr>
+   <td>88</td>
+   <td>Mise à jour à nouveau du type de démarrage du service externe. Nom : %1, type de démarrage réel : %2, type de démarrage attendu : %3, code de sortie : %4</td>
+   <td>Mise à jour du type de démarrage du service externe.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>89</td>
+   <td>Impossible de mettre à jour le type de démarrage du service externe. Nom : %1, type de début réel : %2, type de début attendu : %3</td>
+   <td>Ne peut pas mettre à jour le type de démarrage du service externe.</td>
+   <td>Contactez le support technique.</td>
+</tr>
+<tr>
+   <td>90</td>
+   <td>Échec de la configuration de System Guard Runtime Monitor pour la connexion au service cloud dans la région géographique %1. Code d’échec : %2</td>
+   <td>System Guard Runtime Monitor n’envoie pas de données d’attestation au service cloud.</td>
+   <td>Vérifiez les autorisations sur le chemin d’accès d’inscription : « HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm ». Si aucun problème n’est détecté, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>91</td>
+   <td>Échec de la suppression des informations de région de System Guard Runtime Monitor. Code d’échec : %1</td>
+   <td>System Guard Runtime Monitor n’envoie pas de données d’attestation au service cloud.</td>
+   <td>Vérifiez les autorisations sur le chemin d’accès d’inscription : « HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm ». Si aucun problème n’est détecté, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>92</td>
+   <td>Arrêt du quota de cyber-données du capteur car le quota de données est dépassé. Reprendra l’envoi une fois la période de quotas franchie. Masque d’état : %1</td>
+   <td>Dépassez la limite de limitation.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>93</td>
+   <td>Reprise de l’envoi des données cyber du capteur. Masque d’état : %1</td>
+   <td>Reprendre l’envoi de cyber-données.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>94</td>
+   <td>Windows Defender l’exécutable Protection avancée contre les menaces a démarré</td>
+   <td>L’exécutable SenseCE a démarré.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>95</td>
+   <td>Windows Defender l’exécutable Protection avancée contre les menaces a pris fin</td>
+   <td>L’exécutable SenseCE a pris fin.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>96</td>
+   <td>Windows Defender Init de la Protection avancée contre les menaces a appelé. Code de résultat : %2</td>
+   <td>L’exécutable SenseCE a appelé l’initialisation MCE.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>97</td>
+   <td>Il existe des problèmes de connectivité au cloud pour le scénario DLP</td>
+   <td>Certains problèmes de connectivité réseau affectent le flux de classification DLP.</td>
+   <td>Vérifiez la connectivité réseau.</td>
+</tr>
+<tr>
+   <td>98</td>
+   <td>La connectivité au cloud pour le scénario DLP a été restaurée</td>
+   <td>La connectivité au réseau a été restaurée et le flux de classification DLP peut continuer.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>99</td>
+   <td>Sense a rencontré l’erreur suivante lors de la communication avec le serveur : (%1). Résultat : (%2)</td>
+   <td>Une erreur de communication s’est produite.</td>
+   <td>Pour plus d’informations, consultez les événements suivants dans le journal des événements.</td>
+</tr>
+<tr>
+   <td>100</td>
+   <td>Windows Defender l’exécutable Protection avancée contre les menaces n’a pas réussi à démarrer. Code d’échec : %1</td>
+   <td>L’exécutable SenseCE n’a pas réussi à démarrer.</td>
+   <td>Redémarrez l’appareil. Si cette erreur persiste, contactez le support technique.</td>
+</tr>
+<tr>
+   <td>102</td>
+   <td>Windows Defender l’exécutable Détection et réponse du réseau protection avancée contre les menaces a démarré</td>
+   <td>L’exécutable SenseNdr a démarré.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
+</tr>
+<tr>
+   <td>103</td>
+   <td>Windows Defender l’exécutable Détection et réponse du réseau Protection avancée contre les menaces a pris fin</td>
+   <td>L’exécutable SenseNdr a pris fin.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
 </tbody>
 </table>

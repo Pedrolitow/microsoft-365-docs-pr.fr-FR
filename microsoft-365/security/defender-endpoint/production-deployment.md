@@ -1,6 +1,6 @@
 ---
-title: Configurer le déploiement de Microsoft Defender ATP
-description: Découvrez comment configurer le déploiement de Microsoft Defender ATP
+title: Configurer Microsoft Defender pour le déploiement de point de terminaison
+description: Découvrez comment configurer le déploiement de Microsoft Defender pour Endpoint
 keywords: déployer, configuration, validation de licence, configuration du client, configuration réseau
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4af84c21977e4b90c8b6d9ec4c785339ff229e7d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186148"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222440"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -56,7 +56,7 @@ Dans ce scénario de déploiement, vous serez guidé dans les étapes suivantes 
 
 ## <a name="check-license-state"></a>Vérifier l’état de la licence
 
-La vérification de l’état de la licence et si elle a été correctement mise en service peut être effectuée via le Centre d’administration ou via le portail **Microsoft Azure**.
+La vérification de l’état de la licence et si elle a été correctement mise en service peut être effectuée via le Centre d’administration ou via le portail **Microsoft Azure.**
 
 1. Pour afficher vos licences, accédez au portail **Microsoft Azure** et accédez à la section licence du portail [Microsoft Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
@@ -124,20 +124,17 @@ Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windo
 
 -   WPAD (Web Proxy Autodiscovery Protocol)
 
-Si un proxy transparent ou un WPAD a été implémenté dans la topologie réseau, il n’est pas nécessaire de définir des paramètres de configuration spéciaux. Pour plus d’informations sur les exclusions d’URL de point de terminaison Microsoft Defender dans le proxy, consultez la section Annexe de ce document pour la liste des URL permises ou sur [Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
-
-> [!NOTE]
-> Pour obtenir la liste détaillée des URL qui doivent être autorisées, consultez [cet article.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+Si un proxy transparent ou un WPAD a été implémenté dans la topologie réseau, il n’est pas nécessaire de définir des paramètres de configuration spéciaux. Pour plus d’informations sur les exclusions d’URL de point de terminaison Microsoft Defender dans le proxy, consultez la section URL du [service](production-deployment.md#proxy-service-urls) proxy dans ce document pour la liste des URL allowlist ou sur configurer les [paramètres](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)de connectivité Internet et proxy de périphérique.
 
 **Configuration manuelle du proxy statique :**
 
--   Configuration basée sur le Registre
+-   Configuration basée sur le registre
 
 -   WinHTTP configuré à l’aide de la commande netsh <br> Convient uniquement aux ordinateurs de bureau dans une topologie stable (par exemple : un bureau dans un réseau d’entreprise derrière le même proxy)
 
 ### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurer le serveur proxy manuellement en utilisant un proxy statique basé sur le registre
 
-Configurez un proxy statique basé sur le Registre pour autoriser uniquement le capteur Microsoft Defender for Endpoint à signaler les données de diagnostic et à communiquer avec Microsoft Defender pour les services endpoint si un ordinateur n’est pas autorisé à se connecter à Internet. Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
+Configurez un proxy statique basé sur le Registre pour autoriser uniquement le capteur Microsoft Defender for Endpoint à signaler les données de diagnostic et à communiquer avec Microsoft Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet. Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
 
  - Modèles d’administration - Collecte de données et builds d’aperçu des composants Windows Configurez l’utilisation du proxy authentifié pour le service Expérience des utilisateurs connectés et \> \> \> télémétrie
      - Définissez-le **sur Activé et** sélectionnez Désactiver **l’utilisation du proxy authentifié**
@@ -173,9 +170,9 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
 > [!NOTE]
 > - Cela affectera toutes les applications, y compris les services Windows qui utilisent WinHTTP avec un proxy par défaut.</br>
-> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionneront pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
+> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionnent pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
 
-1. Ouvrez une ligne de commande avec élévation de élévation de niveau :
+1. Ouvrez une invite de commandes avec élévation de privilèges :
 
     1. Accéder à **Démarrer** et taper **cmd**.
 
@@ -190,7 +187,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
    Par exemple : netsh winhttp initialiser proxy 10.0.0.6:8080
 
 
-###  <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de niveau inférieur
+###  <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de bas niveau
 
 Down-Level incluent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows Server CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
 
@@ -200,31 +197,34 @@ Les URL qui incluent v20 sont nécessaires uniquement si vous avez windows 10, v
 
 Si un proxy ou un pare-feu bloque le trafic anonyme, comme le capteur Microsoft Defender pour point de terminaison se connecte à partir du contexte système, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées.
 
-La feuille de calcul téléchargeable suivante répertorie les services et les URL associées à qui votre réseau doit pouvoir se connecter. Assurez-vous qu’il n’existe aucune règle de pare-feu ou de filtrage  réseau qui refuserait l’accès à ces URL, ou que vous devrez peut-être créer une règle d’autoriser spécifiquement pour eux.
+La feuille de calcul téléchargeable suivante répertorie les services et les URL associées à qui votre réseau doit pouvoir se connecter. Assurez-vous qu’il n’existe aucune règle de pare-feu ou de  filtrage réseau qui refuserait l’accès à ces URL, ou vous devrez peut-être créer une règle d’autoriser spécifiquement pour eux.
 
 |**Liste de feuilles de calcul de domaines**|**Description**|
 |:-----|:-----|
 |![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison](images/mdatp-urls.png)<br/>  | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <br><br>[Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
-###  <a name="microsoft-defender-for-endpoint-service-backend-ip-range"></a>Plage d’adresses IP principal du service Microsoft Defender for Endpoint
+###  <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Plages d’adresses IP de système d’extrémité du service Microsoft Defender pour point de terminaison
 
-Si vous n’utilisez pas les URL répertoriées dans la section précédente, vous pouvez utiliser les informations suivantes.
+Si vos périphériques réseau ne supportent pas les règles DNS, utilisez plutôt des plages IP.
 
-Defender pour le point de terminaison repose sur le cloud Azure, déployé dans les régions suivantes :
+Defender pour le point de terminaison est intégré au cloud Azure, déployé dans les régions suivantes :
 
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
+- AzureCloud.eastus
+- AzureCloud.eastus2
+- AzureCloud.westcentralus
+- AzureCloud.northpé
+- AzureCloud.westpét
+- AzureCloud.uksouth
+- AzureCloud.ukwest
 
-Vous pouvez trouver la plage d’adresses IP Azure sur [les plages d’adresses IP](https://www.microsoft.com/en-us/download/details.aspx?id=41653)du centre de données Microsoft Azure.
+Vous pouvez trouver les plages IP Azure dans [les plages IP azure](https://www.microsoft.com/download/details.aspx?id=56519)et les balises de service – Cloud public .
 
 > [!NOTE]
-> En tant que solution informatique, la plage d’adresses IP peut changer. Il est recommandé de passer au paramètre de résolution DNS.
+> En tant que solution informatique, les plages d’adresses IP peuvent changer. Il est recommandé de passer aux règles DNS.
+
+> [!NOTE]
+> Si vous êtes un client du gouvernement américain, consultez la section correspondante dans la page [Defender for Endpoint for US Government.](gov.md#service-backend-ip-ranges)
 
 ## <a name="next-step"></a>Étape suivante
 

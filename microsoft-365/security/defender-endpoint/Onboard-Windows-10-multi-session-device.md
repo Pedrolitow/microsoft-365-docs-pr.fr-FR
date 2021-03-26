@@ -16,37 +16,35 @@ ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 30e664aed74ed01944c67b139e6268fc3340ada4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061822"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222610"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Intégrer des appareils Windows 10 multisesses dans Windows Virtual Desktop 
 6 minutes de lecture 
 
 S’applique à : 
 - Windows 10 multisesse en cours d’exécution sur Windows Virtual Desktop (WVD) 
-> [!IMPORTANT]
-> Bienvenue dans Microsoft Defender pour le point de terminaison, le nouveau nom de Microsoft Defender pour le point de terminaison. Pour en savoir plus sur ce sujet et d'autres mises à jour ici. Nous mettrons à jour les noms dans les produits et dans les documents dans un avenir proche.
 
 > [!WARNING]
 > La prise en charge de Microsoft Defender pour les points de terminaison pour les scénarios multisessage Windows Virtual Desktop est actuellement en prévisualisation et limitée à 25 sessions simultanées par hôte/ordinateur virtuel. Toutefois, les scénarios de session unique sur Windows Virtual Desktop sont entièrement pris en charge.
 
-Microsoft Defender pour le point de terminaison prend en charge la surveillance des sessions VDI et Windows Virtual Desktop. Selon les besoins de votre organisation, vous devrez peut-être implémenter des sessions VDI ou Windows Virtual Desktop pour aider vos employés à accéder aux données et applications d’entreprise à partir d’un appareil nonmanaté, d’un emplacement distant ou d’un scénario similaire. Avec Microsoft Defender pour le point de terminaison, vous pouvez surveiller ces machines virtuelles afin de vérifier les activités anormales.
+Microsoft Defender pour point de terminaison prend en charge la surveillance des sessions VDI et Windows Virtual Desktop. Selon les besoins de votre organisation, vous devrez peut-être implémenter des sessions VDI ou Windows Virtual Desktop pour aider vos employés à accéder aux données et applications d’entreprise à partir d’un appareil nonmanaté, d’un emplacement distant ou d’un scénario similaire. Avec Microsoft Defender pour le point de terminaison, vous pouvez surveiller ces machines virtuelles afin de vérifier les activités anormales.
 
  ## <a name="before-you-begin"></a>Avant de commencer
-Familiarisez-vous avec les considérations pour [les VDI non persistants.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Bien que [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) ne propose pas d’options de non-persistance, il offre des moyens d’utiliser une image Windows de premier choix qui peut être utilisée pour mettre en service de nouveaux hôtes et redéployer des ordinateurs. Cela augmente la sécurité dans l’environnement et a un impact sur les entrées créées et conservées dans le portail Microsoft Defender pour points de terminaison, ce qui réduit potentiellement la visibilité de vos analystes de sécurité.
+Familiarisez-vous avec [les considérations pour les VDI non persistants.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Bien que [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) ne propose pas d’options de non-persistance, il offre des moyens d’utiliser une image Windows de premier choix qui peut être utilisée pour mettre en service de nouveaux hôtes et redéployer des ordinateurs. Cela augmente la sécurité dans l’environnement et a un impact sur les entrées créées et conservées dans le portail Microsoft Defender pour points de terminaison, ce qui réduit potentiellement la visibilité de vos analystes de sécurité.
 
 > [!NOTE]
 > En fonction de votre choix de méthode d’intégration, les appareils peuvent apparaître dans le portail Microsoft Defender pour Endpoint comme : 
 > - Entrée unique pour chaque bureau virtuel 
 > - Plusieurs entrées pour chaque bureau virtuel 
 
-Microsoft recommande l’intégration de Windows Virtual Desktop en tant qu’entrée unique par bureau virtuel. Cela garantit que l’expérience d’examen dans le portail Microsoft Defender Endpoint se trouve dans le contexte d’un appareil basé sur le nom de l’ordinateur. Les organisations qui suppriment et déploient fréquemment des hôtes WVD doivent envisager vivement d’utiliser cette méthode, car elle empêche la création de plusieurs objets pour le même ordinateur dans le portail Microsoft Defender for Endpoint. Cela peut semer la confusion lors de l’enquête sur les incidents. Pour les environnements de test ou non volatiles, vous pouvez choisir différemment. 
+Microsoft recommande l’intégration de Windows Virtual Desktop en tant qu’entrée unique par bureau virtuel. Cela garantit que l’expérience d’examen dans le portail Microsoft Defender Endpoint est dans le contexte d’un appareil basé sur le nom de l’ordinateur. Les organisations qui suppriment et redéploient fréquemment des hôtes WVD doivent envisager fortement d’utiliser cette méthode, car elle empêche la création de plusieurs objets pour le même ordinateur dans le portail Microsoft Defender pour Endpoint. Cela peut semer la confusion lors de l’enquête sur les incidents. Pour les environnements de test ou non volatiles, vous pouvez choisir différemment. 
 
-Microsoft recommande d’ajouter le script d’intégration Microsoft Defender for Endpoint à l’image de qualité WVD. De cette façon, vous pouvez vous assurer que ce script d’intégration s’exécute immédiatement au premier démarrage. Il est exécuté en tant que script de démarrage lors du premier démarrage sur tous les ordinateurs WVD qui sont mis en service à partir de l’image WVD de premier niveau. Toutefois, si vous utilisez l’une des images de la galerie sans modification, placez le script dans un emplacement partagé et appelez-le à partir d’une stratégie de groupe locale ou de domaine. 
+Microsoft recommande d’ajouter le script d’intégration Microsoft Defender for Endpoint à l’image de qualité WVD. De cette façon, vous pouvez vous assurer que ce script d’intégration s’exécute immédiatement au premier démarrage. Il est exécuté en tant que script de démarrage au premier démarrage sur tous les ordinateurs WVD qui sont mis en service à partir de l’image WVD de premier niveau. Toutefois, si vous utilisez l’une des images de la galerie sans modification, placez le script dans un emplacement partagé et appelez-le à partir d’une stratégie de groupe locale ou de domaine. 
 
 > [!NOTE]
 > Le placement et la configuration du script de démarrage d’intégration VDI sur l’image de base WVD le configurent en tant que script de démarrage qui s’exécute au démarrage du WVD. Il n’est PAS recommandé d’intégrer l’image de qualité WVD réelle. Une autre considération est la méthode utilisée pour exécuter le script. Il doit s’exécuter aussi tôt que possible dans le processus de démarrage/approvisionnement pour réduire le temps entre la mise à disposition de l’ordinateur pour la réception des sessions et l’intégration de l’appareil au service. Les scénarios ci-dessous 1 & 2 prennent cela en compte.
@@ -67,20 +65,20 @@ Suivez les instructions pour une entrée unique pour chaque appareil.
 #### <a name="scenario-2-using-domain-group-policy"></a>*Scénario 2 : utilisation de la stratégie de groupe de domaine*
 Ce scénario utilise un script central et l’exécute à l’aide d’une stratégie de groupe basée sur un domaine. Vous pouvez également placer le script dans l’image d’or et l’exécuter de la même manière.
 
-**Télécharger le fichier WindowsDefenderATPOnboardingPackage.zip à partir du Centre de Windows Defender de sécurité**
+**Télécharger le fichier WindowsDefenderATPOnboardingPackage.zip à partir du Centre Windows Defender sécurité**
 1. Ouvrez le fichier .zip du package de configuration VDI (WindowsDefenderATPOnboardingPackage.zip)  
     - Dans le volet de navigation du Centre de sécurité Microsoft Defender, sélectionnez **Intégration** des  >  **paramètres.** 
     - Sélectionnez Windows 10 comme système d’exploitation. 
     - Dans le **champ Méthode de** déploiement, sélectionnez les scripts d’intégration VDI pour les points de terminaison non persistants. 
     - Cliquez **sur Télécharger le package** et enregistrez le fichier .zip. 
-2. Extrayez le contenu du fichier .zip dans un emplacement partagé en lecture seule accessible par l’appareil. Vous devez avoir un dossier appelé **OptionalParamsPolicy** et les fichiers **WindowsDefenderATPOnboardingScript.cmd** **etOnboard-NonPersistentMachine.ps1**.
+2. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par l’appareil. Vous devez avoir un dossier appelé **OptionalParamsPolicy** et les fichiers **WindowsDefenderATPOnboardingScript.cmd** **etOnboard-NonPersistentMachine.ps1**.
 
 **Utiliser la console de gestion des stratégies de groupe pour exécuter le script au démarrage de la machine virtuelle**
 1. Ouvrez la Console de gestion des stratégies de groupe (GPMC), cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 1. Dans l’Éditeur de gestion des stratégies de groupe, go to **Computer configuration** \> **Preferences** \> **Control panel settings**. 
 1. Cliquez avec le bouton droit **sur Tâches programmées,** cliquez sur **Nouveau,** puis sur **Tâche immédiate** (Au moins Windows 7). 
-1. Dans la fenêtre Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou le groupe,** puis tapez SYSTEM. Cliquez **sur Vérifier les noms,** puis sur OK. NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera. 
-1. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.** 
+1. Dans la fenêtre Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou le** groupe, puis tapez SYSTEM. Cliquez **sur Vérifier les noms,** puis sur OK. NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera. 
+1. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.** 
 1. Go to the **Actions** tab and click **New**. **Assurez-vous que démarrer un programme** est sélectionné dans le champ Action. Entrez les informations suivantes : 
 
 > Action = « Démarrer un programme » <br>
@@ -103,7 +101,7 @@ Pour plus d’informations, voir : [Intégrer des appareils Windows 10 à l’ai
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>Marquage de vos ordinateurs lors de la création de votre image de qualité 
 
-Dans le cadre de votre intégration, vous pouvez envisager de définir une balise d’ordinateur pour être en mesure de différencier plus facilement les ordinateurs WVD dans le Centre de sécurité Microsoft. Pour plus d’informations, voir [Ajouter des balises de périphérique en définition d’une valeur de clé de Registre.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
+Dans le cadre de votre intégration, vous pouvez envisager de définir une balise d’ordinateur pour différencier plus facilement les ordinateurs WVD dans le Centre de sécurité Microsoft. Pour plus d’informations, voir [Ajouter des balises de périphérique en définition d’une valeur de clé de Registre.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
 
 #### <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés 
 
@@ -123,7 +121,7 @@ En outre, si vous utilisez des profils utilisateur FSlogix, nous vous recommando
 > \\storageaccount.file.core.windows.net\partage \* \* . VHD <br>
 > \\storageaccount.file.core.windows.net\partage \* \* . VHDX <br>
 
-**Exclure les processus :**
+**Exclure des processus :**
 
 > %ProgramFiles%\FSLogix\Apps\frxccd.exe <br>
 > %ProgramFiles%\FSLogix\Apps\frxccds.exe <br>

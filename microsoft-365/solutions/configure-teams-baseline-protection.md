@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: cd5a88069b9947bd4dcb01f6ca76620bb8ed9a52
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200292"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222742"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -39,7 +39,7 @@ Nous vous recommandons également d’activer les fonctionnalités de base de De
 |:------|:-----------|
 |Pièces jointes fiables pour SPO, OneDrive et Teams|[Pièces jointes fiables](../security/office-365-security/safe-attachments.md)<br>[Defender pour Office 365 – SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md).|
 |Documents sécurisés|[Documents sécurisés dans Microsoft Defender pour Office 365](../security/office-365-security/safe-docs.md)|
-|Liens fiables pour Teams|[Liens fiables Office 365 dans Teams](../security/office-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Liens fiables](../security/office-365-security/safe-links.md)|
+|Liens fiables pour Teams|[Liens fiables Office 365 dans Teams](../security/office-365-security/safe-links.md)<br>[Liens fiables](../security/office-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Partage d'invités Teams
 
