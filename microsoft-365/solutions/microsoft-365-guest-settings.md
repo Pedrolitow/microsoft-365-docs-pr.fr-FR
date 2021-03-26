@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: c87f1d0ea8a35d7685f91c1b20a709c58ec4d040
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bdb86dd7545c00f0ed24552b22062a983e450b47
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920215"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215563"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -35,7 +35,7 @@ Cet article fournit des informations de référence sur les différents paramèt
 Azure Active Directory est le service d’annuaire utilisé par Microsoft 365. Les paramètres de relations organisationnelles Azure Active Directory affectent directement le partage dans Teams, Groupes Microsoft 365, SharePoint et OneDrive.
 
 > [!NOTE]
-> Ces paramètres n’affectent SharePoint que lorsque [l’intégration de SharePoint et OneDrive avec Azure AD B2B (préversion)](/sharepoint/sharepoint-azureb2b-integration-preview) a été configurée. Le tableau ci-dessous part du principe que cette intégration a été configuré.
+> Ces paramètres n’affectent SharePoint que lorsque [l’intégration de SharePoint et OneDrive avec Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) a été configurée. Le tableau ci-dessous part du principe que cette intégration a été configuré.
 
 ### <a name="organizational-relationships-settings"></a>Paramètres de relations organisationnelles
 
@@ -43,7 +43,7 @@ Azure Active Directory est le service d’annuaire utilisé par Microsoft 365. 
 
 ![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Les autorisations des utilisateurs invités sont limitées|Oui|Ce paramètre affecte les tâches d’annuaire qu’un invité peut effectuer.|
 |Les administrateurs et les utilisateurs membres du rôle Inviteur d’invités peuvent envoyer des invitations|Oui|Lorsque ce paramètre est défini sur **Oui**, les administrateurs peuvent inviter des invités via Azure AD et via des expériences de partage Microsoft 365 telles que Teams et SharePoint. Quand il est défini sur **Non**, ils ne le peuvent pas.|
@@ -66,7 +66,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau o
 
 ![Capture d’écran des paramètres de sécurité et de confidentialité pour le partage d’invités dans le Centre d’administration Microsoft 365](../media/sharepoint-security-privacy-sharing-setting.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Autoriser les utilisateurs à ajouter de nouveaux invités à l’organisation|Activé|Lorsque ce paramètre est défini sur **Oui**, les membres Azure AD peuvent inviter des invités via Azure AD. Quand il est défini sur **Non**, ils ne le peuvent pas. Lorsqu’il est défini sur **Oui**, les membres de Groupes Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire. Quand il est défini sur **Non**, les membres de Groupes Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire, à la condition que celui-ci soit administrateur global. <br><br>Notez que l’option **Les membres peuvent inviter** fait référence aux membres d’Azure AD (par opposition aux invités), non à des membres de site ou de groupe dans Microsoft 365. <br><br>Il produit le même effet que le paramètre **Les membres peuvent inviter** dans les paramètres de relations organisationnelles Azure Active Directory.|
 
@@ -76,7 +76,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau o
 
 ![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Permettre aux membres du groupe extérieurs à votre organisation d’accéder au contenu du groupe|Activé|Lorsque ce paramètre est défini sur **Activé**, les invités peuvent accéder au contenu des groupes. Quand il est défini sur **Désactivé**, ils ne le peuvent pas. Ce paramètre doit être **activé** pour tout scénario dans lequel des invités interagissent avec Groupes Microsoft 365 ou Teams.|
 |Permettre aux propriétaires de groupe d’ajouter des personnes en dehors de votre organisation aux groupes|Activé|Lorsque ce paramètre est **Activé**, les propriétaires de Groupes Microsoft 365 ou d’équipes Teams peuvent inviter de nouveaux invités à rejoindre le groupe. Quand il est **Désactivé**, les propriétaires peuvent inviter que des invités figurant déjà dans l’annuaire.|
@@ -95,7 +95,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ![Capture d’écran du commutateur Accès invité dans Teams](../media/teams-guest-access-toggle.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Autoriser l’accès invité dans Teams|Désactivé|Active ou désactive l’accès invité dans Teams. Une fois ce paramètre modifié, la prise d’effet de la modification peut prendre jusqu’à 24 heures .|
 
@@ -105,7 +105,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ![Capture d’écran des options d’appel d’invité dans Teams](../media/teams-guest-calling-setting.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Passer des appels privés|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent passer des appels de poste à poste dans Teams. Quand il est **Désactivé**, ils ne le peuvent pas.|
 
@@ -115,7 +115,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ![Capture d’écran des paramètres de réunion d’invité dans Teams](../media/teams-guest-meeting-settings.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Autoriser la vidéo sur IP|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent utiliser la vidéo pour leurs appels et réunions. Quand il est **Désactivé**, ils ne le peuvent pas.|
 |Mode de partage d’écran|Écran entier|Lorsque ce paramètre est **Désactivé**, les invités ne peuvent pas partager leur écran dans Teams. Quand il est défini sur **Application unique**, les invités ne peuvent partager qu’une seule application sur leur écran. Quand il est défini sur **Écran entier**, les invités peuvent choisir de partager une application ou leur écran entier.|
@@ -127,7 +127,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ![Capture d’écran des paramètres de messagerie d’invité dans Teams](../media/teams-guest-messaging-settings.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Modifier des messages envoyés|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent modifier des messages qu’ils ont envoyés. Quand il est **Désactivé**, ils ne le peuvent pas.|
 |Supprimer des messages envoyés|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent supprimer des messages qu’ils ont envoyés. Quand il est **Désactivé**, ils ne le peuvent pas.|
@@ -152,7 +152,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 ![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation](../media/sharepoint-organization-external-sharing-controls.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |SharePoint|Tout le monde|Spécifie les autorisations de partage les plus permissives accordées pour les sites SharePoint.|
 |OneDrive|Tout le monde|Spécifie les autorisations de partage les plus permissives accordées pour les sites OneDrive. Ce paramètre ne peut pas être plus permissif que le paramètre SharePoint.|
@@ -163,7 +163,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 ![Capture d’écran des paramètres de partage supplémentaires au niveau de l’organisation dans SharePoint](../media/sharepoint-organization-advanced-sharing-settings.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Limiter le partage externe par domaine|Désactivé|Ce paramètre vous permet de spécifier une liste de domaines dont le partage est autorisé ou bloqué. Lorsque des domaines autorisés sont spécifiés, des invitations de partage ne peuvent être envoyées qu’à ces domaines. Lorsque des domaines refusés sont spécifiés, des invitations de partage ne peuvent pas être envoyées à ces domaines.<br><br> Ce paramètre affecte tous les sites SharePoint et OneDrive au sein de l’organisation.|
 |Les invités doivent se connecter à l’aide du compte auquel les invitations de partage ont été envoyées|Désactivé|Empêche les invités d’utiliser des invitations de partage de sites à l’aide d’une envoyer un e-mail différente de celle à laquelle l’invitation a été envoyée.<br><br>L’[intégration de SharePoint et de OneDrive avec Azure AD B2B (préversion)](/sharepoint/sharepoint-azureb2b-integration-preview) n’utilise pas ce paramètre parce que tous les invités sont ajoutés à l’annuaire en fonction de l’adresse e-mail à laquelle l’invitation a été envoyée. D’autres adresses e-mail ne peuvent pas être utilisées pour accéder au site.|
@@ -177,7 +177,7 @@ Lorsque des fichiers et dossiers sont partagés sur SharePoint et OneDrive, les 
 
 ![Capture d’écran des paramètres de partage de fichiers et dossiers au niveau de l’organisation dans SharePoint](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Liens de fichiers et dossiers|Toute personne disposant du lien|Spécifie le lien de partage affiché par défaut quand un utilisateur partage un fichier ou dossier. Les utilisateurs peuvent modifier l’option avant de partager s’ils le souhaitent. Si le paramètre par défaut est **Toute personne disposant du lien** et que le mode de partage *Tout le monde* n’est pas autorisé pour un site donné, l’option par défaut **Uniquement les membres de votre organisation** est affichée pour ce site.|
 |Ces liens doivent expirer dans le nombre de jours suivant|Désactivé (pas d’expiration)|Spécifie le nombre de jours à l’issue desquels un lien *Tout le monde* expire après sa création. Il n’est pas possible de renouveler des liens qui ont expiré. Si vous devez continuer à partager après l’expiration du lien, créez un nouveau lien.|
@@ -192,7 +192,7 @@ Si vous souhaitez limiter le nombre de personnes pouvant partager avec des invit
 
 ![Capture d’écran des paramètres de groupe de sécurité pour le partage SharePoint au niveau de l’organisation](../media/sharepoint-organization-external-sharing-security-groups.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Autoriser uniquement les membres des groupes de sécurité sélectionnés à partager du contenu avec des utilisateurs externes authentifiés|Désactivé|Lorsque le paramètre est **activé**, seules les personnes appartenant aux groupes de sécurité spécifiés peuvent partager avec des personnes extérieures à l’organisation. Seuls des liens *Personnes spécifiques* sont disponibles. Le partage avec *Tout le monde* est désactivé sauf si le paramètre **Autoriser uniquement les membres des groupes de sécurité sélectionnés à partager du contenu avec des utilisateurs externes authentifiés ou disposant de liens anonymes** est également **Activé**.|
 |Autoriser uniquement les membres des groupes de sécurité sélectionnés à partager du contenu avec des utilisateurs externes authentifiés ou disposant de liens anonymes|Désactivé|Lorsque le paramètre est **Activé**, seules les personnes appartenant aux groupes de sécurité spécifiés peuvent partager avec des invités. Les liens *Tout le monde* et *Personnes spécifiques* sont disponibles.|
@@ -215,7 +215,7 @@ Si une étiquette de confidentialité est appliquée au site, celle-ci peut cont
 
 ![Capture d’écran des paramètres de partage externe de site SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Le contenu du site peut être partagé avec|Varie en fonction du type de site (voir le tableau ci-dessous)|Indique le type de partage externe autorisé pour ce site. Les options disponibles dépendent des paramètres de partage au niveau de l’organisation pour SharePoint.|
 
@@ -227,7 +227,7 @@ Vous pouvez définir les valeurs par défaut pour le type de lien et les autoris
 
 ![Capture d’écran des paramètres de partage SharePoint au niveau du site](../media/sharepoint-site-link-sharing-settings.png)
 
-|**Paramètre**|**Par défaut**|**Description**|
+| Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Limiter le partage par domaine|Désactivé|Ce paramètre vous permet de spécifier une liste de domaines dont le partage est autorisé ou bloqué. Lorsque des domaines autorisés sont spécifiés, des invitations de partage ne peuvent être envoyées qu’à ces domaines. Lorsque des domaines refusés sont spécifiés, des invitations de partage ne peuvent pas être envoyées à ces domaines.<br><br> Ce paramètre ne peut pas être utilisé pour remplacer les restrictions de domaine définies au niveau de l’organisation ou de Azure AD.|
 |Type de lien de partage par défaut|Identique au paramètre au niveau de l’organisation|Ce paramètre vous permet de spécifier le lien de partage par défaut présenté aux utilisateurs de ce site. L’option *Identique au paramètre de niveau organisation* est définie par une combinaison de paramètres de partage organisation et site.|
@@ -238,7 +238,7 @@ Vous pouvez définir les valeurs par défaut pour le type de lien et les autoris
 
 Le tableau ci-dessous présente le paramètre de partage par défaut pour chaque type de site.
 
-|**Type de site**|**Paramètre de partage par défaut**|
+| Type de site | Paramètre de partage par défaut |
 |:-----|:-----|
 |Classique|**Uniquement les membres de votre organisation**|
 |OneDrive|**Tout le monde**|

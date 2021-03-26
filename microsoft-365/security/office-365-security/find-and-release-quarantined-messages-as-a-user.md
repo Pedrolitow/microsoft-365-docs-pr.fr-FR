@@ -20,12 +20,12 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 961912427f9c343f8235f0ed8e990431669ff9e5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: cc904132bc12f068571cfd86d9f5eb629d7f53f2
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204283"
+ms.locfileid: "51215515"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -155,6 +155,8 @@ Après avoir sélectionné un message, vous pouvez effectuer les actions suivant
   - **Mode texte** : affiche le corps du message au format texte brut.
 
 - **Supprimer de la quarantaine** : Le message est supprimé dès que vous cliquez sur **Oui** dans le message d’avertissement qui s’affiche.
+
+- **Bloquer l’expéditeur** : cette option empêche l’expéditeur de vous envoyer des messages.
 
 Lorsque vous avez terminé, cliquez sur **Fermer**.
 
