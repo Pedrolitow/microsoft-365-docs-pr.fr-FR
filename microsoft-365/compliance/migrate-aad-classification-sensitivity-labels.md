@@ -10,18 +10,18 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Cet article traite des étiquettes de sensibilité et de classification Azure Active Directory classiques.
-ms.openlocfilehash: 1be7e31ee4091e561f7eedb34b41958efc69a339
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 07bc09afb3e490961a8cc5a88857ec49dd962856
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926332"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221749"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Étiquettes de classification et de sensibilité Azure Active Directory pour les groupes Microsoft 365
 
 Cet article traite des étiquettes de sensibilité et de classification Azure Active Directory classiques.
 
-Les étiquettes de sensibilité sont pris en charge [par ces services.](./sensitivity-labels-teams-groups-sites.md#support-for-the-sensitivity-labels)
+Les étiquettes de sensibilité sont pris en charge [par ces services.](./sensitivity-labels-teams-groups-sites.md)
 
 Pour obtenir des informations complètes sur les étiquettes de sensibilité, voir [En savoir plus sur les étiquettes de sensibilité.](sensitivity-labels.md)
 
@@ -56,7 +56,7 @@ Tableau 1. Comportement des charges de travail compatibles et non compatibles :
 
 ## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Scénario 2 : le client utilise déjà des classifications AAD [classiques](../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
-### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>Cas A : le client n’a jamais utilisé d’étiquettes de sensibilité pour les documents et les e-mails
+### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>Cas A : le client n’a jamais utilisé d’étiquettes de niveau de sensibilité pour les documents et les e-mails
 
 1. Dans le Centre de conformité [Microsoft 365,](https://compliance.microsoft.com)nous vous recommandons de créer des étiquettes de sensibilité avec le même nom que les étiquettes Azure AD classiques existantes.
 2. Utilisez l’cmdlet PowerShell pour appliquer ces étiquettes de sensibilité aux groupes Microsoft 365 existants et aux sites SharePoint à l’aide du mappage de noms.
