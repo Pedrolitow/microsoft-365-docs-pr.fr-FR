@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7196053ffef3dffc3c737d0df26a5d12bdfe8a4c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ab5400a197a1f0ac61c8b298a06165d217f44fd1
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187756"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394733"
 ---
 # <a name="resources"></a>Ressources
 
@@ -74,7 +74,7 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
    Log level configured successfully
    ```
 
-## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
+## <a name="log-installation-issues"></a>Journal des problèmes d’installation
 
 Si une erreur se produit pendant l’installation, le programme d’installation signale uniquement un échec général.
 
@@ -105,6 +105,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Group                 |Scénario                                                |Commande                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Configuration         |Activer/désactiver la protection en temps réel                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|Configuration         |Activer/désactiver la surveillance du comportement                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
 |Configuration         |Activer/désactiver la protection cloud                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |Configuration         |Activer/désactiver les diagnostics de produit                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |Configuration         |Activer/désactiver l’envoi automatique d’échantillons                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
@@ -116,7 +117,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Configuration         |Liste de toutes les exclusions antivirus                           |`mdatp exclusion list`                                                 |
 |Configuration         |Ajouter un nom de menace à la liste autorisée                   |`mdatp threat allowed add --name [threat-name]`                        |
 |Configuration         |Supprimer un nom de menace de la liste autorisée              |`mdatp threat allowed remove --name [threat-name]`                     |
-|Configuration         |Liste de tous les noms de menaces autorisés                           |`mdatp threat allowed list`                                            |
+|Configuration         |Liste de tous les noms de menace autorisés                           |`mdatp threat allowed list`                                            |
 |Configuration         |Activer la protection PUA                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
 |Configuration         |Désactiver la protection PUA                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |Configuration         |Activer le mode audit pour la protection PUA                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
@@ -163,7 +164,7 @@ Dans le portail Defender pour points de terminaison, deux catégories d’inform
 
 ### <a name="known-issues"></a>Problèmes connus
 
-- Vous pouvez voir « Aucune donnée de capteur, communications altérées » dans la page d’informations de l’ordinateur du portail centre de sécurité Microsoft Defender, même si le produit fonctionne comme prévu. Nous travaillons à la résoudre.
+- Vous pouvez voir « Aucune donnée de capteur, communications altérées » dans la page d’informations de l’ordinateur du portail centre de sécurité Microsoft Defender, même si le produit fonctionne comme prévu. Nous travaillons à résoudre ce problème.
 - Les utilisateurs connectés n’apparaissent pas dans le portail centre de sécurité Microsoft Defender.
 - Dans les distributions SUSE, si l’installation de *libatomic1* échoue, vous devez vérifier que votre système d’exploitation est enregistré :
 

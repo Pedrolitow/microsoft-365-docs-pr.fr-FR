@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 83a56a74ff949b23843417942923d2b4b810b4ee
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1386809778edeb92521a8656e9ece78591a682a4
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185925"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382900"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>Confidentialité pour Microsoft Defender pour point de terminaison pour Mac
 
@@ -98,12 +98,12 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 | app_version             | Version de l’application Microsoft Defender pour Point de terminaison pour Mac. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
 | sig_version             | Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’elle puisse être correctement hiérarchisées. |
 | supported_compressions  | Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application. |
-| release_ring            | Sonnerie à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé. |
+| release_ring            | Sonner à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé. |
 
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
 
-**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la performance de Microsoft Defender for Endpoint sur l’appareil sur laquelle il est installé.
+**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la mise à jour de Microsoft Defender for Endpoint sur l’appareil sur laquelle il est installé.
 
 Les données de diagnostic requises permettent d’identifier les problèmes avec Microsoft Defender pour point de terminaison qui peuvent être liés à une configuration d’appareil ou de logiciel. Par exemple, il peut aider à déterminer si une fonctionnalité De Microsoft Defender pour point de terminaison se crashe plus fréquemment sur une version de système d’exploitation particulière, avec les fonctionnalités nouvellement introduites ou lorsque certaines fonctionnalités de Microsoft Defender pour le point de terminaison sont désactivées. Les données de diagnostic requises aident Microsoft à détecter, diagnostiquer et résoudre ces problèmes plus rapidement afin de réduire l’impact sur les utilisateurs ou les organisations.
 
@@ -130,7 +130,7 @@ Les champs suivants sont collectés :
 | antivirus_engine.enable_real_time_protection        | Si la protection en temps réel est activée sur l’appareil ou non. |
 | antivirus_engine.passive_mode                       | Si le mode passif est activé sur l’appareil ou non. |
 | cloud_service.enabled                               | Si la protection cloud est activée sur l’appareil ou non. |
-| cloud_service.timeout                               | Délai d’arrêt lorsque l’application communique avec microsoft Defender pour le cloud de point de terminaison. |
+| cloud_service.timeout                               | Délai d’arrêt lorsque l’application communique avec Microsoft Defender pour le cloud de point de terminaison. |
 | cloud_service.heartbeat_interval                    | Intervalle entre les pulsations consécutives envoyées par le produit au cloud. |
 | cloud_service.service_uri                           | URI utilisé pour communiquer avec le cloud. |
 | cloud_service.diagnostic_level                      | Niveau de diagnostic de l’appareil (obligatoire, facultatif). |
@@ -156,6 +156,18 @@ Les champs suivants sont collectés :
 | reason (Raison)           | Message d’erreur si la mise à jour a été classée. |
 
 #### <a name="product-and-service-performance-data-events"></a>Evénements des données de performance de produit et service
+
+**Sortie inattendue de l’application (blocage)**
+
+Collecte les informations système et l’état d’une application lorsqu’une application se quitte de façon inattendue.
+
+Les champs suivants sont collectés :
+
+| Champ                          | Description |
+| ------------------------------ | ----------- |
+| v1_crash_count                 | Nombre de pannes du processus du moteur V1 toutes les heures sur l’ordinateur client  |
+| v2_crash_count                 | Nombre de pannes du processus du moteur V2 toutes les heures sur l’ordinateur client  |
+| EDR_crash_count                | Nombre de pannes du processus EDR toutes les heures sur l’ordinateur client        |
 
 **Statistiques d’extension du noyau**
 
@@ -199,7 +211,7 @@ Les champs suivants sont collectés :
 
 | Champ                                              | Description |
 | -------------------------------------------------- | ----------- |
-| connection_retry_timeout                           | Délai d’délai de nouvelle tentative de connexion lors de la communication avec le cloud. |
+| connection_retry_timeout                           | Délai de nouvelle tentative de connexion lors de la communication avec le cloud. |
 | file_hash_cache_maximum                            | Taille du cache du produit. |
 | crash_upload_daily_limit                           | Limite des journaux d’incident téléchargés quotidiennement. |
 | antivirus_engine.exclusions[].is_directory         | Si l’exclusion de l’analyse est un répertoire ou non. |
@@ -220,7 +232,7 @@ Les champs suivants sont collectés :
 
 | Champ                       | Description |
 | --------------------------- | ----------- |
-| how_to_check                | Détermine la façon dont les mises à jour du produit sont vérifiées (par exemple, automatiques ou manuelles). |
+| how_to_check                | Détermine la façon dont les mises à jour des produits sont vérifiées (par exemple, automatiques ou manuelles). |
 | channel_name                | Canal de mise à jour associé à l’appareil. |
 | manifest_server             | Serveur utilisé pour télécharger les mises à jour. |
 | update_cache                | Emplacement du cache utilisé pour stocker les mises à jour. |

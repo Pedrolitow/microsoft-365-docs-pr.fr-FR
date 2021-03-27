@@ -1,6 +1,6 @@
 ---
-title: Résoudre les problèmes de performances pour Microsoft Defender ATP pour Mac
-description: Résolution des problèmes de performances dans Microsoft Defender ATP pour Mac.
+title: Résoudre les problèmes de performances pour Microsoft Defender pour Endpoint pour Mac
+description: Résolution des problèmes de performances dans Microsoft Defender pour Point de terminaison pour Mac.
 keywords: microsoft, defender, atp, mac, performances
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f6dd5681dfafd069a4c52f72e1dc1733584283a2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 87190d9e0bb62d42642374bd7c9f6f3acad3c80a
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185908"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379382"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Résoudre les problèmes de performances pour Microsoft Defender pour Endpoint pour Mac
 
@@ -52,7 +52,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
 
     - À partir de l’interface utilisateur. Ouvrez Microsoft Defender pour le point de terminaison pour Mac et accédez **à Gérer les paramètres.**
 
-      ![Capture d’écran gérer la protection en temps réel](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-36-rtp)
+      ![Capture d’écran gérer la protection en temps réel](images/mdatp-36-rtp.png)
 
     - À partir du terminal. Pour des raisons de sécurité, cette opération nécessite une élévation.
 

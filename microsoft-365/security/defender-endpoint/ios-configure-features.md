@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 90e65c57321fa05a62bc94f4f56d92062d0826a1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 18fbc13614753ae57856a124d76bbad682ab88e5
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186700"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379354"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-for-ios-features"></a>Configurer Microsoft Defender pour le point de terminaison pour les fonctionnalités iOS
 
@@ -39,7 +39,7 @@ ms.locfileid: "51186700"
 > Defender pour le point de terminaison pour iOS utiliserait un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
 
 ## <a name="conditional-access-with-defender-for-endpoint-for-ios"></a>Accès conditionnel avec Defender pour point de terminaison pour iOS  
-Microsoft Defender pour le point de terminaison pour iOS, ainsi que Microsoft Intune et Azure Active Directory permettent d’appliquer des stratégies de conformité des appareils et d’accès conditionnel en fonction des niveaux de risque des appareils. Defender pour point de terminaison est une solution de défense contre les menaces mobiles (MTD) que vous pouvez déployer pour tirer parti de cette fonctionnalité via Intune.
+Microsoft Defender pour le point de terminaison pour iOS, ainsi que Microsoft Intune et Azure Active Directory permettent d’appliquer des stratégies de conformité et d’accès conditionnel aux appareils en fonction des niveaux de risque de l’appareil. Defender pour point de terminaison est une solution de défense contre les menaces mobiles (MTD) que vous pouvez déployer pour tirer parti de cette fonctionnalité via Intune.
 
 Pour plus d’informations sur la façon de configurer l’accès conditionnel avec Defender pour Endpoint pour iOS, voir [Defender pour Endpoint et Intune.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)
 
@@ -61,7 +61,7 @@ Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certain
 
 ## <a name="co-existence-of-multiple-vpn-profiles"></a>Coexistence de plusieurs profils VPN
 
-Apple iOS ne prend pas en charge plusieurs VPN à l’échelle de l’appareil pour être actifs simultanément. Alors que plusieurs profils VPN peuvent exister sur l’appareil, un seul VPN peut être actif à la fois.
+Apple iOS ne prend pas en charge plusieurs VPN à l’échelle de l’appareil pour être actifs simultanément. Même si plusieurs profils VPN peuvent exister sur l’appareil, un seul VPN peut être actif à la fois.
 
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Configurer la stratégie de conformité contre les appareils jailbreakés
@@ -73,7 +73,7 @@ Pour protéger les données d’entreprise contre l’accès sur les appareils i
 
 Suivez les étapes ci-dessous pour créer une stratégie de conformité contre les appareils jailbreakés.
 
-1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez **aux** stratégies de conformité  ->  **des appareils**  ->  **Créer une stratégie.** Sélectionnez « iOS/iPadOS » comme plateforme, puis cliquez sur **Créer.**
+1. Dans le [Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)go to **Devices**  ->  **Compliance policies** Create  ->  **Policy**. Sélectionnez « iOS/iPadOS » comme plateforme, puis cliquez sur **Créer.**
 
     > [!div class="mx-imgBorder"]
     > ![Créer une stratégie](images/ios-jb-policy.png)
@@ -102,3 +102,9 @@ Defender pour le point de terminaison pour iOS permet aux administrateurs de con
 ## <a name="report-unsafe-site"></a>Signaler un site non sécurisé
 
 Les sites web de hameçonnage usurpent l’identité de sites web dignes de confiance dans le but d’obtenir vos informations personnelles ou financières. Consultez la page [Fournir des commentaires sur la protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) du réseau si vous souhaitez signaler un site web qui pourrait être un site de hameçonnage.
+
+## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>Problèmes de consommation de batterie sur iOS lors de l’installation de Microsoft Defender for Endpoint
+
+L’utilisation de la batterie par une application est calculée par Apple en fonction d’une multitude de facteurs, notamment l’utilisation du processeur et du réseau. Microsoft Defender pour le point de terminaison utilise un VPN local/loop-back en arrière-plan pour vérifier le trafic web des sites web ou connexions malveillants. Les paquets réseau de n’importe quelle application sont vérifiés et l’utilisation de la batterie de Microsoft Defender for Endpoint est calculée de manière incorrecte. Cela donne une fausse impression à l’utilisateur. La consommation réelle de batterie de Microsoft Defender pour le point de terminaison est inférieure à ce qui est indiqué dans la page Paramètres de la batterie sur l’appareil. Cette opération est basée sur des tests effectués sur l’application Microsoft Defender for Endpoint pour comprendre la consommation de batterie.
+
+En outre, le VPN utilisé est un VPN local et contrairement aux VPN traditionnels, le trafic réseau n’est pas envoyé en dehors de l’appareil.

@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: fc4c15d2e391176ed0b4420c13fb865674da0361
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 48b1f1bf9506acc8491887fca49295d5e4ccbd69
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163586"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382708"
 ---
 # <a name="create-custom-detection-rules"></a>Créer des règles de détection personnalisées
 
@@ -33,11 +33,11 @@ ms.locfileid: "51163586"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Les règles de [](advanced-hunting-overview.md) détection personnalisées conçues à partir de requêtes de repérage avancées vous permet de surveiller de manière proactive différents événements et états système, y compris les activités suspectées de violation et les appareils mal configurés. Vous pouvez les configurer pour qu’ils s’exécutent à intervalles réguliers, générant des alertes et prenant des mesures de réponse chaque fois qu’il existe des correspondances.
 
-Lisez cet article pour découvrir comment créer des règles de détection personnalisées. Vous pouvez [également consulter l’affichage et la gestion des règles existantes.](custom-detections-manage.md)
+Lisez cet article pour apprendre à créer des règles de détection personnalisées. Vous pouvez [également consulter l’affichage et la gestion des règles existantes.](custom-detections-manage.md)
 
 > [!NOTE]
 > Pour créer ou gérer des détections personnalisées, [votre rôle](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) doit avoir l’autorisation gérer les **paramètres de** sécurité.
@@ -57,11 +57,11 @@ Pour utiliser une requête pour une règle de détection personnalisée, la requ
 - `DeviceId`
 - `ReportId`
 
-Les requêtes simples, telles que celles qui n’utilisent pas l’opérateur ou l’opérateur pour personnaliser ou agréger les résultats, retournent généralement `project` `summarize` ces colonnes courantes.
+Les requêtes simples, telles que celles qui n’utilisent pas l’opérateur ou l’opérateur pour personnaliser ou agréger des résultats, retournent généralement `project` `summarize` ces colonnes courantes.
 
 Il existe plusieurs façons de s’assurer que les requêtes plus complexes retournent ces colonnes. Par exemple, si vous préférez agréger et compter par , vous pouvez toujours retourner et en les obtenant à partir de l’événement le plus récent `DeviceId` `Timestamp` impliquant chaque `ReportId` appareil.
 
-L’exemple de requête ci-dessous compte le nombre d’appareils uniques ( ) avec détections antivirus et utilise cette méthode pour rechercher uniquement les appareils ayant plus de `DeviceId` cinq détections. Pour renvoyer la dernière `Timestamp` et la `ReportId` correspondante, elle utilise `summarize` l’opérateur avec la `arg_max` fonction.
+L’exemple de requête ci-dessous compte le nombre d’appareils uniques ( ) avec détections antivirus et l’utilise pour rechercher uniquement les appareils avec plus de `DeviceId` cinq détections. Pour renvoyer la dernière `Timestamp` et la `ReportId` correspondante, elle utilise l’opérateur `summarize` avec la `arg_max` fonction.
 
 ```kusto
 DeviceEvents
@@ -82,24 +82,24 @@ Avec la requête dans l’éditeur  de requête, sélectionnez Créer une règle
 - **Fréquence**: intervalle d’exécution de la requête et d’action. [Voir les conseils supplémentaires ci-dessous](#rule-frequency)
 - **Titre de l’alerte**: titre affiché avec les alertes déclenchées par la règle
 - **Gravité :** risque potentiel du composant ou de l’activité identifié par la règle. [En savoir plus sur les gravités des alertes](alerts-queue.md#severity)
-- **Catégorie :** type de composant ou d’activité de menace, le cas caser. [En savoir plus sur les catégories d’alertes](alerts-queue.md#understanding-alert-categories)
-- **MITRE ATT&techniques CK**: une ou plusieurs techniques d’attaque identifiées par la règle, telles que documentées dans l’infrastructure MITRE ATT&CK. Cette section n’est pas disponible avec certaines catégories d’alertes, telles que les programmes malveillants, les ransomware, les activités suspectes et les logiciels indésirables
-- **Description :** plus d’informations sur le composant ou l’activité identifié par la règle 
+- **Catégorie**: type de composant ou d’activité de menace, le cas caser. [En savoir plus sur les catégories d’alerte](alerts-queue.md#understanding-alert-categories)
+- **MITRE ATT&techniques CK**: une ou plusieurs techniques d’attaque identifiées par la règle, comme documenté dans l’infrastructure MITRE ATT&CK. Cette section n’est pas disponible avec certaines catégories d’alertes, telles que les programmes malveillants, les ransomware, les activités suspectes et les logiciels indésirables
+- **Description**: plus d’informations sur le composant ou l’activité identifié par la règle 
 - **Actions recommandées**: actions supplémentaires que les répondeurs peuvent prendre en réponse à une alerte
 
-Pour plus d’informations sur l’affichage des détails des alertes, consultez [la file d’attente des alertes.](alerts-queue.md)
+Pour plus d’informations sur l’affichage des détails de l’alerte, consultez [la file d’attente des alertes.](alerts-queue.md)
 
 ### <a name="rule-frequency"></a>Fréquence des règles
 
-Une fois enregistrée, une nouvelle règle de détection personnalisée s’exécute immédiatement et recherche les correspondances des 30 derniers jours de données. La règle s’exécute à nouveau à intervalles fixes et durées de recherche en fonction de la fréquence que vous choisissez :
+Une fois enregistrée, une nouvelle règle de détection personnalisée s’exécute immédiatement et recherche les correspondances des 30 derniers jours de données. La règle s’exécute ensuite à intervalles fixes et durées de recherche en fonction de la fréquence que vous choisissez :
 
 - **Toutes les 24 heures**: s’exécute toutes les 24 heures, en vérifiant les données des 30 derniers jours
 - **Toutes les 12 heures**: s’exécute toutes les 12 heures, en vérifiant les données des dernières 24 heures
 - **Toutes les 3 heures :** s’exécute toutes les 3 heures, en vérifiant les données des 6 dernières heures
 - **Toutes les heures**: s’exécute toutes les heures, en vérifiant les données des dernières 2 heures
 
-> [!IMPORTANT]
-> Lors de la modification d’une requête déjà programmée en tant que détection personnalisée, l’exécution immédiate suivante aura une fenêtre de recherche de 30 jours, exactement comme si une nouvelle requête avait été créée. Les modifications apportées à un grand nombre de requêtes, et avec des filtres de temps supérieurs à la durée de recherche par défaut pour la fréquence sélectionnée, peuvent avoir un impact sur la consommation globale du quota de recherche avancée et entraîner l’épuisement du quota quotidien.
+Lorsque vous modifiez une règle, elle s’exécute avec les modifications appliquées lors de la prochaine utilisation prévue en fonction de la fréquence que vous avez définie.
+
 
 > [!TIP]
 > Faire correspondre les filtres d’heure de votre requête à la durée de la recherche. Les résultats en dehors de la durée de la recherche sont ignorés.
@@ -108,13 +108,13 @@ Sélectionnez la fréquence qui correspond à la fréquence à laquelle vous sou
 
 ## <a name="3-choose-the-impacted-entities"></a>3. Choisissez les entités impactées.
 
-Identifiez les colonnes dans les résultats de votre requête où vous vous attendez à trouver l’entité principale affectée ou concernée. Par exemple, une requête peut renvoyer des ID d’appareil et d’utilisateur. L’identification de l’entité principale concernée par l’identification de ces colonnes permet au service d’agréger les alertes pertinentes, de corréler les incidents et les actions de réponse cible.
+Identifiez les colonnes dans les résultats de votre requête où vous vous attendez à trouver l’entité principale affectée ou concernée. Par exemple, une requête peut renvoyer des ID d’appareil et d’utilisateur. L’identification de l’une de ces colonnes représentant la principale entité concernée permet au service d’agréger les alertes pertinentes, de corréler les incidents et les actions de réponse cible.
 
 Vous ne pouvez sélectionner qu’une seule colonne pour chaque type d’entité. Les colonnes qui ne sont pas renvoyées par votre requête ne peuvent pas être sélectionnées.
 
 ## <a name="4-specify-actions"></a>4. Spécifiez les actions.
 
-Votre règle de détection personnalisée peut prendre automatiquement des mesures sur des fichiers ou des appareils renvoyés par la requête.
+Votre règle de détection personnalisée peut automatiquement prendre des mesures sur des fichiers ou des appareils renvoyés par la requête.
 
 ### <a name="actions-on-devices"></a>Actions sur les appareils
 
@@ -130,7 +130,7 @@ Ces actions sont appliquées aux appareils dans la `DeviceId` colonne des résul
 
 Ces actions sont appliquées aux fichiers dans la ou `SHA1` la colonne des résultats de la requête `InitiatingProcessSHA1` :
 
-- **Autoriser/Bloquer**: ajoute automatiquement le [](manage-indicators.md) fichier à votre liste d’indicateurs personnalisés afin qu’il soit toujours autorisé à s’exécuter ou bloqué. Vous pouvez définir l’étendue de cette action afin qu’elle soit prise uniquement sur les groupes d’appareils sélectionnés. Cette étendue est indépendante de l’étendue de la règle.
+- **Autoriser/Bloquer**: ajoute automatiquement le [](manage-indicators.md) fichier à votre liste d’indicateurs personnalisés afin qu’il soit toujours autorisé à s’exécuter ou qu’il ne soit pas autorisé à s’exécuter. Vous pouvez définir l’étendue de cette action afin qu’elle soit prise uniquement sur les groupes d’appareils sélectionnés. Cette étendue est indépendante de l’étendue de la règle.
 - **Fichier de mise en** quarantaine : supprime le fichier de son emplacement actuel et place une copie en quarantaine
 
 ### <a name="actions-on-users"></a>Actions sur les utilisateurs
@@ -150,7 +150,7 @@ Seules les données des appareils dans l’étendue seront interrogés. En outre
 
 Après avoir passé en revue la règle, **sélectionnez Créer** pour l’enregistrer. La règle de détection personnalisée s’exécute immédiatement. Il s’exécute à nouveau en fonction de la fréquence configurée pour vérifier les correspondances, générer des alertes et prendre des mesures de réponse.
 
-Vous pouvez [afficher et gérer des règles de détection personnalisées,](custom-detections-manage.md)vérifier leurs précédentes séries et passer en revue les alertes qu’elles ont déclenchées. Vous pouvez également exécuter une règle à la demande et la modifier.
+Vous pouvez [afficher et gérer des règles de détection](custom-detections-manage.md)personnalisées, vérifier leurs précédentes séries et passer en revue les alertes qu’elles ont déclenchées. Vous pouvez également exécuter une règle à la demande et la modifier.
 
 ## <a name="related-topics"></a>Voir aussi
 

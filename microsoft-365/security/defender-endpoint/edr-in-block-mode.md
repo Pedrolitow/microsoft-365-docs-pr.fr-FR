@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b31e7aeb9178cb6021434319e55ddef927d7c263
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7bee6c99d2c1c5ad3cec8f2e317b729a0a4e1f8b
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165872"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379477"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse des points de terminaison (EDR) en mode blocage
 
@@ -39,9 +39,9 @@ ms.locfileid: "51165872"
 
 ## <a name="what-is-edr-in-block-mode"></a>Qu’est-ce que l’EDR en mode bloc ?
 
-[La détection et la réponse](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) des points de terminaison (EDR) en mode blocage offrent une protection contre les artefacts malveillants, même lorsque l’Antivirus Microsoft Defender s’exécute en mode passif. Lorsqu’elle est allumée, l’EDR en mode blocage bloque les artefacts ou comportements malveillants détectés sur un appareil. L’EDR en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après une violation. 
+[La détection et la réponse](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) des points de terminaison (EDR) en mode bloc offrent une protection contre les artefacts malveillants, même lorsque l’Antivirus Microsoft Defender s’exécute en mode passif. Lorsqu’elle est désactivée, l’EDR en mode blocage bloque les artefacts ou comportements malveillants détectés sur un appareil. L’EDR en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après une violation. 
 
-L’EDR en mode bloc est également intégrée à la gestion des [menaces & vulnérabilité.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) L’équipe de sécurité de [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) votre organisation reçoit une recommandation de sécurité pour activer EDR en mode blocage s’il n’est pas déjà activé. 
+L’EDR en mode blocage est également intégrée à la gestion des [menaces & vulnérabilité.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) L’équipe de sécurité de [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) votre organisation reçoit une recommandation de sécurité pour activer EDR en mode blocage s’il n’est pas déjà activé. 
 
 :::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommandation pour activer EDR en mode blocage":::
 
@@ -50,14 +50,14 @@ L’EDR en mode bloc est également intégrée à la gestion des [menaces & vuln
 
 ## <a name="what-happens-when-something-is-detected"></a>Que se passe-t-il lorsqu’un quelque chose est détecté ?
 
-Lorsque l’EDR en mode bloc est allumé et qu’un artefact malveillant est détecté, Microsoft Defender pour le point de terminaison bloque et remédie cet artefact. Vous verrez l’état de détection **bloqué** ou interdit **en** tant qu’actions terminées dans le centre [de actions.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#check-activity-details-in-action-center)
+Lorsque l’EDR en mode bloc est allumé et qu’un artefact malveillant est détecté, Microsoft Defender pour le point de terminaison bloque et remédie à cet artefact. Vous verrez l’état de détection **bloqué** ou interdit **en tant** qu’actions terminées dans le centre [de l’action.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#check-activity-details-in-action-center)
 
 L’image suivante montre une instance de logiciel indésirable détectée et bloquée via EDR en mode blocage :
 
 :::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="L’EDR en mode bloc a détecté quelque chose":::
 
 
-## <a name="enable-edr-in-block-mode"></a>Activer EDR en mode blocage
+## <a name="enable-edr-in-block-mode"></a>Activer EDR en mode bloc
 
 > [!IMPORTANT]
 > Assurez-vous que [les conditions requises](#requirements-for-edr-in-block-mode) sont remplies avant d’allumer EDR en mode bloc.
@@ -79,22 +79,22 @@ L’image suivante montre une instance de logiciel indésirable détectée et bl
 |Système d’exploitation     |L’une des versions suivantes : <br/>- Windows 10 (toutes les publication) <br/>- Windows Server, version 1803 ou plus récente <br/>- Windows Server 2019         |
 |Inscription à Windows E5     |Windows E5 est inclus dans les abonnements suivants : <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 avec l’offre Protection contre les menaces & identité <br/><br/>Voir [Composants,](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components) [fonctionnalités et fonctionnalités pour chaque plan.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)       |
 |Antivirus Microsoft Defender  |L’Antivirus Microsoft Defender doit être installé et s’exécute en mode actif ou passif. (Vous pouvez utiliser l’Antivirus Microsoft Defender avec une solution antivirus non-Microsoft.) [Confirmez que l’Antivirus Microsoft Defender est en mode actif ou passif.](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode) |
-|Protection cloud |Assurez-vous que l’Antivirus Microsoft Defender est configuré de telle sorte que la protection livrée par le [cloud soit activée.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) |
+|Protection cloud |Assurez-vous que l’Antivirus Microsoft Defender est configuré de telle sorte que la protection livrée par [le cloud soit activée.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) |
 |Client antivirus Microsoft Defender anti-programme malveillant |Assurez-vous que votre client est à jour. À l’aide de PowerShell, exécutez la cmdlet [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) en tant qu’administrateur. Dans la **ligne AMProductVersion,** vous devriez voir **4.18.2001.10** ou version supérieure. |
 |Moteur antivirus Microsoft Defender |Assurez-vous que votre moteur est à jour. À l’aide de PowerShell, exécutez la cmdlet [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) en tant qu’administrateur. Dans la **ligne AMEngineVersion,** vous devriez voir **1.1.16700.2** ou version supérieure. |
 
 > [!IMPORTANT]
 > Pour obtenir la meilleure valeur de protection, assurez-vous que votre solution antivirus est configurée pour recevoir des mises à jour régulières et des fonctionnalités essentielles, et que vos [exclusions sont configurées.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) L’EDR en mode bloc respecte les exclusions définies pour l’Antivirus Microsoft Defender.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées 
+## <a name="frequently-asked-questions"></a>Foire aux questions 
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-even-when-i-have-microsoft-defender-antivirus-running-on-devices"></a>Ai-je besoin d’activer EDR en mode blocage, même lorsque l’Antivirus Microsoft Defender est en cours d’exécution sur les appareils ?
 
 Nous vous recommandons de maintenir EDR en mode blocage, que l’Antivirus Microsoft Defender s’exécute en mode passif ou en mode actif. L’EDR en mode bloc fournit une autre couche de défense avec Microsoft Defender pour endpoint. Il permet à Defender for Endpoint d’prendre des mesures en fonction des détections EDR comportementales post-violation. 
 
-### <a name="will-edr-in-block-mode-have-any-impact-on-a-users-antivirus-protection"></a>L’EDR en mode blocage aura-t-il un impact sur la protection antivirus d’un utilisateur ? 
+### <a name="will-edr-in-block-mode-have-any-impact-on-a-users-antivirus-protection"></a>EDR en mode blocage aura-t-il un impact sur la protection antivirus d’un utilisateur ? 
 
-L’EDR en mode blocage n’affecte pas la protection antivirus tierce en cours d’exécution sur les appareils des utilisateurs. L’EDR en mode blocage fonctionne si la solution antivirus principale manque quelque chose ou s’il existe une détection post-violation. L’EDR en mode blocage fonctionne comme l’Antivirus Microsoft Defender en [mode passif,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)sauf qu’il bloque et remédie également aux artefacts ou comportements malveillants détectés. 
+L’EDR en mode blocage n’affecte pas la protection antivirus tierce en cours d’exécution sur les appareils des utilisateurs. L’EDR en mode blocage fonctionne si la solution antivirus principale manque quelque chose ou s’il existe une détection post-violation. EDR en mode blocage fonctionne comme l’Antivirus Microsoft Defender en [mode passif,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)sauf qu’il bloque et remédie également aux artefacts ou comportements malveillants détectés. 
 
 ### <a name="why-do-i-need-to-keep-microsoft-defender-antivirus-up-to-date"></a>Pourquoi dois-je maintenir l’Antivirus Microsoft Defender à jour ? 
 
@@ -102,7 +102,7 @@ L’EDR en mode blocage n’affecte pas la protection antivirus tierce en cours 
 
 ### <a name="why-do-we-need-cloud-protection-on"></a>Pourquoi avons-nous besoin de la protection cloud ? 
 
-La protection cloud est nécessaire pour activer la fonctionnalité sur l’appareil. La protection cloud permet à [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) de fournir la dernière et la plus grande protection en fonction de notre étendue et de notre profondeur d’intelligence de la sécurité, ainsi que des modèles d’apprentissage comportementaux et des appareils.
+La protection cloud est nécessaire pour activer la fonctionnalité sur l’appareil. La protection cloud permet à [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) de fournir la dernière et la plus grande protection en fonction de notre étendue et de notre profondeur d’intelligence de la sécurité, ainsi que des modèles d’apprentissage du comportement et des appareils.
 
 ### <a name="how-do-i-set-microsoft-defender-antivirus-to-passive-mode"></a>Comment définir l’Antivirus Microsoft Defender en mode passif ?
 
@@ -132,6 +132,9 @@ Pour plus d’informations, [voir Get-MpComputerStatus](https://docs.microsoft.c
 2. Tapez `sc query windefend`.
 
 3. Dans la liste des résultats, dans la **ligne STATE,** confirmez que le service est en cours d’exécution.
+
+### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Combien de temps faut-il pour désactiver l’EDR en mode bloc ?
+Si vous avez choisi de désactiver l’EDR en mode blocage, cela peut prendre jusqu’à 30 minutes pour que le système désactive cette fonctionnalité.
 
 ## <a name="see-also"></a>Voir aussi
 

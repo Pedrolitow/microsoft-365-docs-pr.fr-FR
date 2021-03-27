@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c6afa48fcee80c0b8fb7ed0563264932566b6321
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185790"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379489"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -31,19 +31,17 @@ ms.locfileid: "51185790"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 Certaines conditions minimales sont requises pour l’intégration d’appareils au service. Découvrez les licences, la configuration matérielle et logicielle requise et d’autres paramètres de configuration pour intégrer des appareils au service.
-
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 > [!TIP]
 > - Découvrez les dernières améliorations apportées à Defender for Endpoint : [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender pour le point de terminaison a démontré les fonctionnalités d’optique et de détection de pointe du secteur dans l’évaluation MITRE récente. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## <a name="licensing-requirements"></a>Critères de licence
-Microsoft Defender for Endpoint nécessite l’une des offres de licence en volume Microsoft suivantes :
+Microsoft Defender pour le point de terminaison nécessite l’une des offres de licence en volume Microsoft suivantes :
 
 - Windows 10 Entreprise E5
 - Windows 10 Éducation A5
@@ -55,7 +53,7 @@ Microsoft Defender for Endpoint nécessite l’une des offres de licence en volu
 
 > [!NOTE]
 > Les utilisateurs titulaires d’une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus.
-> Microsoft Defender for Endpoint est également disponible à l’achat auprès d’un fournisseur de solutions Cloud (CSP).
+> Microsoft Defender pour le point de terminaison est également disponible à l’achat auprès d’un fournisseur de solutions Cloud (CSP).
 
 Microsoft Defender pour le point de terminaison pour les serveurs nécessite l’une des options de licence suivantes :
 
@@ -74,13 +72,12 @@ Pour obtenir des informations détaillées sur les licences, consultez le [site]
 
 Pour plus d’informations sur le tableau des fonctionnalités des éditions de Windows 10, voir [Comparer les éditions de Windows 10.](https://www.microsoft.com/windowsforbusiness/compare)
 
-Pour obtenir un tableau de comparaison détaillé de la comparaison des éditions commerciales de Windows 10, consultez la comparaison [PDF](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf).
+Pour obtenir un tableau de comparaison détaillé de la comparaison des éditions commerciales de Windows 10, voir la comparaison [PDF](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf).
 
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
 L’accès à Defender pour le point de terminaison s’fait par le biais d’un navigateur, qui permet de prendre en charge les navigateurs suivants :
 
 - Microsoft Edge
-- Internet Explorer version 11
 - Google Chrome
 
 > [!NOTE]
@@ -90,7 +87,7 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 ## <a name="hardware-and-software-requirements"></a>Configuration matérielle et logicielle requise
 
 ### <a name="supported-windows-versions"></a>Versions de Windows prise en charge
-- Windows 7 SP1 Entreprise ([Nécessite ESU pour la prise en charge](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
+- Windows 7 SP1 Entreprise ([Requiert ESU pour la prise en charge](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - Windows 7 SP1 Professionnel ([Nécessite ESU pour la prise en charge](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - Windows 8.1 Entreprise
 - Windows 8.1 Professionnel
@@ -99,7 +96,7 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 10 Éducation
 - Windows 10 Professionnel
 - Windows 10 Professionnel Éducation
-- Serveur Windows
+- Windows Server
   - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
@@ -114,33 +111,34 @@ La configuration matérielle requise pour Defender pour Endpoint sur les apparei
 > [!NOTE]
 > Les ordinateurs exécutant des versions mobiles de Windows (comme Windows CE et Windows 10 Mobile) ne sont pas pris en charge.
 >
-> Les ordinateurs virtuels exécutant Windows 10 Entreprise 2016 LTSB peuvent rencontrer des problèmes de performances s’ils sont exécutés sur des plateformes de virtualisation autres que Microsoft.
+> Les machines virtuelles exécutant Windows 10 Entreprise 2016 LTSB peuvent rencontrer des problèmes de performances si elles sont exécutés sur des plateformes de virtualisation autres que Microsoft.
 >
 > Pour les environnements virtuels, nous vous recommandons d’utiliser Windows 10 Entreprise LTSC 2019 ou une édition ultérieure.
 
 
 ### <a name="other-supported-operating-systems"></a>Autres systèmes d’exploitation pris en charge
 - Android
+- iOS
 - Linux
 - macOS
 
 > [!NOTE]
-> Vous devez connaître les distributions linux exactes et les versions d’Android et de macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne.
+> Vous devez vérifier les distributions linux et les versions d’Android, iOS et macOS que vous avez compatibles avec Defender for Endpoint pour que l’intégration fonctionne.
 
 
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>Configuration requise pour le stockage réseau et les données
-Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vous devez choisir l’endroit où sont stockées vos informations relatives au point de terminaison Microsoft Defender : dans l’Union européenne, le Royaume-Uni ou le centre de données des États-Unis.
+Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vous devez choisir l’endroit où sont stockées vos informations relatives aux points de terminaison Microsoft Defender : dans l’Union européenne, le Royaume-Uni ou le centre de données des États-Unis.
 
 > [!NOTE]
 > - Vous ne pouvez pas modifier votre emplacement de stockage de données après la première installation.
 > - Pour plus d’informations sur l’endroit et la façon dont Microsoft stocke vos données, voir Microsoft Defender for [Endpoint data storage and privacy.](data-storage-privacy.md)
 
 
-### <a name="diagnostic-data-settings"></a>Paramètres des données de diagnostic
+### <a name="diagnostic-data-settings"></a>Paramètres de données de diagnostic
 
 > [!NOTE]
-> Microsoft Defender pour le point de terminaison ne requiert aucun niveau de diagnostic spécifique tant qu’il est activé.
+> Microsoft Defender pour point de terminaison ne nécessite aucun niveau de diagnostic spécifique tant qu’il est activé.
 
 Assurez-vous que le service de données de diagnostic est activé sur tous les appareils de votre organisation.
 Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez des données de capteur à partir de ces données.
@@ -164,7 +162,7 @@ Utilisez la ligne de commande pour vérifier le type de démarrage du service de
    ![Résultat de la commande de requête sc pour diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 
-Vous devez configurer le service pour qu’il démarre automatiquement si la START_TYPE **n’est** pas définie sur **AUTO_START**.
+Vous devez configurer le service pour qu’il démarre automatiquement si la START_TYPE n’est pas définie sur **AUTO_START**. 
 
 
 **Utilisez la ligne de commande pour configurer le service de données de diagnostic Windows 10 pour démarrer automatiquement :**
@@ -193,7 +191,7 @@ La connectivité Internet sur les appareils est requise directement ou par proxy
 
 Le capteur Defender pour point de terminaison peut utiliser une bande passante moyenne quotidienne de 5 Mo pour communiquer avec le service cloud Defender for Endpoint et signaler les cyber-données. Les activités non limitées, telles que les téléchargements de fichiers et la collecte de packages d’enquête, ne sont pas incluses dans cette bande passante moyenne quotidienne.
 
-Pour plus d’informations sur les paramètres de configuration de proxy supplémentaires, voir Configurer les [paramètres de proxy d’appareil](configure-proxy-internet.md)et de connectivité Internet.
+Pour plus d’informations sur les paramètres de configuration proxy supplémentaires, voir Configurer les [paramètres de proxy d’appareil](configure-proxy-internet.md)et de connectivité Internet.
 
 Avant d’intégrer des appareils, le service de données de diagnostic doit être activé. Le service est activé par défaut dans Windows 10.
 
@@ -203,14 +201,14 @@ L’agent Defender for Endpoint dépend de la capacité de l’Antivirus Microso
 
 Configurez les mises à jour d’intelligence de sécurité sur les appareils Defender for Endpoint, que l’Antivirus Microsoft Defender soit ou non le logiciel anti-programme malveillant actif. Pour plus d’informations, voir Gérer les mises à [jour de l’Antivirus Microsoft Defender et appliquer les lignes de base.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)
 
-Lorsque l’Antivirus Microsoft Defender n’est pas le logiciel anti-programme malveillant actif dans votre organisation et que vous utilisez le service Defender pour point de terminaison, l’Antivirus Microsoft Defender passe en mode passif.
+Lorsque l’Antivirus Microsoft Defender n’est pas le logiciel anti-programme malveillant actif dans votre organisation et que vous utilisez le service Defender pour point de terminaison, l’antivirus Microsoft Defender passe en mode passif.
 
 Si votre organisation a désactivé l’Antivirus Microsoft Defender par le biais d’une stratégie de groupe ou d’autres méthodes, les appareils intégrés doivent être exclus de cette stratégie de groupe.
 
 Si vous intégrer des serveurs et que l’Antivirus Microsoft Defender n’est pas le logiciel anti-programme malveillant actif sur vos serveurs, l’Antivirus Microsoft Defender doit être configuré pour passer en mode passif ou désinstallé. La configuration dépend de la version du serveur. Pour plus d’informations, [voir Compatibilité de l’Antivirus Microsoft Defender.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)
 
 > [!NOTE]
-> Votre stratégie de groupe normale ne s’applique pas à la Protection contre les falsifications et les modifications apportées aux paramètres de l’Antivirus Microsoft Defender sont ignorées lorsque la protection contre la falsification est en cours.
+> Votre stratégie de groupe normale ne s’applique pas à la Protection contre les falsifications et les modifications apportées aux paramètres de l’Antivirus Microsoft Defender sont ignorées lorsque la protection contre les falsifications est en cours.
 
 
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Le pilote ELAM (Logiciel anti-programme malveillant à lancement rapide) de l’Antivirus Microsoft Defender est activé

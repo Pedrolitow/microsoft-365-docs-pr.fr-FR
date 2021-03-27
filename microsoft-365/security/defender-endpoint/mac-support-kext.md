@@ -1,6 +1,6 @@
 ---
-title: Résoudre les problèmes d’extension du noyau dans Microsoft Defender ATP pour Mac
-description: Résoudre les problèmes liés à l’extension du noyau dans Microsoft Defender ATP pour Mac.
+title: Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour Endpoint pour Mac
+description: Résoudre les problèmes liés à l’extension du noyau dans Microsoft Defender pour Endpoint pour Mac.
 keywords: microsoft, defender, atp, mac, noyau, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bdd5c6309a19863339b00e846c1c2670fc4f261b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187600"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379507"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour Endpoint pour Mac
 
@@ -44,7 +44,7 @@ Cet article fournit des informations sur la résolution des problèmes avec l’
 
 Si vous n’avez pas approuvé l’extension du noyau pendant le déploiement/l’installation de Microsoft Defender pour Endpoint pour Mac, l’application affiche une bannière vous invite à l’activer :
 
-   ![Capture d’écran rtp désactivée](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-32-main-app-fix)
+   ![Capture d’écran rtp désactivée](images/mdatp-32-main-app-fix.png)
 
 Vous pouvez également exécuter ```mdatp health``` . Il indique si la protection en temps réel est activée mais non disponible. Cela indique que l’extension du noyau n’est pas approuvée pour s’exécuter sur votre appareil.
 
@@ -71,9 +71,9 @@ Consultez les instructions correspondant à l’outil de gestion que vous avez u
 
 Si moins de 30 minutes se sont écoulées depuis l’installation du produit, accédez à La sécurité des préférences système & Confidentialité , où vous devez autoriser les **logiciels** système des développeurs  >  « Microsoft Corporation ». 
 
-Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus se sont écoulées et que l’extension de noyau n’a toujours pas été approuvée pour s’exécuter sur votre appareil :
+Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus se sont écoulées et que l’extension du noyau n’a toujours pas été approuvée pour s’exécuter sur votre appareil :
 
-![Fenêtre de sécurité et de confidentialité après l’expiration de l’invite](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-33-securityprivacysettings-noprompt)
+![Fenêtre de sécurité et de confidentialité après la capture d’écran de l’invite expirée](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouveau le flux d’approbation.
 

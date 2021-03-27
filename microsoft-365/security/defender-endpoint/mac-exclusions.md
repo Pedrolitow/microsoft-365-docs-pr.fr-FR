@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ce77d55ece955fbf97b5c9f32859514b55acb5a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb0cffb9716b2d0940e816dc69217486fd51a21d
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187648"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379332"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-mac"></a>Configurer et valider des exclusions pour Microsoft Defender pour Endpoint pour Mac
 
@@ -34,7 +34,7 @@ ms.locfileid: "51187648"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article fournit des informations sur la définition d’exclusions qui s’appliquent aux analyses à la demande, ainsi que sur la protection et la surveillance en temps réel.
 
@@ -79,13 +79,13 @@ Pour plus d’informations sur la configuration des exclusions à partir de JAMF
 
 Ouvrez l’application Defender for Endpoint et accédez à Gérer les **paramètres** Ajouter ou supprimer une exclusion... , comme illustré  >  dans la capture d’écran suivante :
 
-![Capture d’écran gérer les exclusions](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-37-exclusions)
+![Capture d’écran Gérer les exclusions](images/mdatp-37-exclusions.png)
 
 Sélectionnez le type d’exclusion que vous souhaitez ajouter et suivez les invites.
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d’exclusions avec le fichier de test EICAR
 
-Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide `curl` du téléchargement d’un fichier de test.
+Vous pouvez vérifier que vos listes d’exclusions fonctionnent en téléchargeant `curl` un fichier de test.
 
 Dans l’extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter la commande dans ce chemin d’accès.
 
@@ -101,7 +101,7 @@ Si vous n’avez pas accès à Internet, vous pouvez créer votre propre fichier
 echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > test.txt
 ```
 
-Vous pouvez également copier la chaîne dans un fichier texte vide et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
+Vous pouvez également copier la chaîne dans un fichier texte vierge et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
 
 ## <a name="allow-threats"></a>Autoriser les menaces
 

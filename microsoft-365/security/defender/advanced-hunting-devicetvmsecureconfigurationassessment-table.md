@@ -1,6 +1,6 @@
 ---
 title: Table DeviceTvmSecureConfigurationAssessment dans le schéma de repérage avancé
-description: Découvrez les événements d’évaluation de la sécurité dans la table DeviceTvmSecureConfigurationAssessment du schéma de recherche avancé. Ces événements de gestion & des vulnérabilités fournissent des informations sur l’appareil, ainsi que des informations sur la configuration de la sécurité, l’impact et la conformité.
+description: Découvrez les événements d’évaluation de la sécurité dans la table DeviceTvmSecureConfigurationAssessment du schéma de recherche avancé. Ces événements de gestion & des vulnérabilités fournissent des informations sur l’appareil, ainsi que des détails sur la configuration de la sécurité, l’impact et les informations de conformité.
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cf37fe2aeac193c6b45f55fd5f5c850470ba6da4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3d991bc5e78fc7b33e20df1f86471a0969b7345f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063462"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382594"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -54,7 +54,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `IsCompliant` | booléen | Indique si la configuration ou la stratégie est correctement configurée. |
 | `IsApplicable` | booléen | Indique si la configuration ou la stratégie s’applique à l’appareil |
 | `Context` | string | Informations contextuelles supplémentaires sur la configuration ou la stratégie |
-| `IsExpectedUserImpactCompliant` | booléen | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée |
+| `IsExpectedUserImpact` | booléen | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée |
 
 ## <a name="related-topics"></a>Sujets associés
 

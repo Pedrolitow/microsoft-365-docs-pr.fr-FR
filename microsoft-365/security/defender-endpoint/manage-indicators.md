@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a04f3be1f13fb57cd76cda7115d014f2ba3aa8d6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 670c6449c1121bc329b1dfb37cd1d9948c99a3f8
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198824"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379297"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 
@@ -46,7 +46,7 @@ Les sources actuellement pris en charge sont le moteur de détection cloud de De
 Le moteur de détection cloud de Defender for Endpoint analyse régulièrement les données collectées et tente de correspondre aux indicateurs que vous avez définies. En cas de correspondance, une action est prise en fonction des paramètres que vous avez spécifiés pour l’IoC.
 
 **Moteur de prévention des points de terminaison**<br>
-La même liste d’indicateurs est honorée par l’agent de prévention. Autrement dit, si Microsoft Defender AV est le principal antivirus configuré, les indicateurs de correspondance seront traités en fonction des paramètres. Par exemple, si l’action est « Alerte et bloquer », Microsoft Defender AV empêche les exécutions de fichiers (bloquer et corriger) et une alerte correspondante est élevée. En revanche, si l’action est définie sur « Autoriser », l’Antivirus Microsoft Defender ne détecte pas et ne bloque pas l’exécuter.
+La même liste d’indicateurs est honorée par l’agent de prévention. Autrement dit, si Microsoft Defender AV est le principal antivirus configuré, les indicateurs de correspondance seront traités en fonction des paramètres. Par exemple, si l’action est « Alerte et bloquer », l’Antivirus Microsoft Defender empêche les exécutions de fichiers (bloquer et corriger) et une alerte correspondante est élevée. En revanche, si l’action est définie sur « Autoriser », l’Antivirus Microsoft Defender ne détecte pas et ne bloque pas l’exécuter.
 
 **Moteur d’examen et de correction automatisé**<BR>
 L’examen et la correction automatisés se comportent de la même manière. Si un indicateur est définie sur « Autoriser », l’examen et la correction automatisés ignorent un verdict « mauvais » pour lui. S’il est définie sur « Bloquer », les examens et corrections automatisés le traitent comme « mauvais ».
@@ -65,7 +65,7 @@ Vous pouvez créer un indicateur pour :
 
 
 > [!NOTE]
-> Il existe une limite de 15 000 indicateurs par client. Les indicateurs de fichier et de certificat ne bloquent pas les [exclusions définies pour l’Antivirus Microsoft Defender.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) Les indicateurs ne sont pas pris en charge dans l’Antivirus Microsoft Defender en mode passif. 
+> Il existe une limite de 15 000 indicateurs par client. Les indicateurs de fichier et de certificat ne bloquent pas [les exclusions définies pour l’Antivirus Microsoft Defender.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) Les indicateurs ne sont pas pris en charge dans l’Antivirus Microsoft Defender lorsqu’il est en mode passif. 
 
 
 ## <a name="related-topics"></a>Voir aussi

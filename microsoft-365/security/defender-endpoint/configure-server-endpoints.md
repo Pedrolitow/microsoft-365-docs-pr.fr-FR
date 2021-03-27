@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd92b44892b49a007316acb97296a44514db0578
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061702"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379348"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender for Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "51061702"
 - Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server (SAC) version 1803 et ultérieures
+- Windows Server (SAC) version 1803 et ultérieure
 - Windows Server 2019 et les ultérieures
 - Édition principale de Windows Server 2019
 
@@ -57,7 +57,7 @@ Vous pouvez intégrer Windows Server 2008 R2 SP1, Windows Server 2012 R2 et Wind
 - **Option 3 :** [intégration via Microsoft Endpoint Manager version 2002 et ultérieure](#option-3-onboard-windows-servers-through-microsoft-endpoint-manager-version-2002-and-later)
 
 
-Après avoir effectué les étapes d’intégration à l’aide de l’une des options fournies, vous devez configurer et mettre à jour les [clients System Center Endpoint Protection](#configure-and-update-system-center-endpoint-protection-clients).
+Après avoir effectué les étapes d’intégration à l’aide de l’une des options fournies, vous devez configurer et mettre à jour [les clients System Center Endpoint Protection](#configure-and-update-system-center-endpoint-protection-clients).
 
 
 > [!NOTE]
@@ -89,8 +89,11 @@ Pour répondre aux exigences d’intégration, effectuez les étapes suivantes :
  - En outre, pour Windows Server 2008 R2 SP1, assurez-vous que vous remplissez les conditions suivantes :
     - Installer le rapport de [mise à jour mensuelle de février](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
     - Installer [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (ou ultérieur) ou [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
-
- - Pour Windows Server 2008 R2 SP1 et Windows Server 2012 R2 : configurez et mettez à jour [les clients System Center Endpoint Protection.](#configure-and-update-system-center-endpoint-protection-clients)
+   
+   > [!NOTE]
+    > Si vous gérez votre Windows Server 2008 R2 SP1 avec SCCM, l’agent client SCCM installe .Net Framework 4.5.2. Vous n’avez donc pas besoin d’installer .NET Framework 4.5 (ou une ultérieure).
+   
+ - Pour Windows Server 2008 R2 SP1 et Windows Server 2012 R2 : configurez et mettez à jour [les clients System Center Endpoint Protection](#configure-and-update-system-center-endpoint-protection-clients).
 
     > [!NOTE]
     > Cette étape est requise uniquement si votre organisation utilise System Center Endpoint Protection (SCEP) et que vous intégrerEz Windows Server 2008 R2 SP1 et Windows Server 2012 R2.
@@ -100,11 +103,11 @@ Pour répondre aux exigences d’intégration, effectuez les étapes suivantes :
 
 ### <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>Installer et configurer l’Agent de surveillance Microsoft (MMA) pour signaler les données de capteur à Microsoft Defender pour le point de terminaison
 
-1. Téléchargez le fichier de configuration de [l’agent : Agent Windows 64 bits.](https://go.microsoft.com/fwlink/?LinkId=828603)
+1. Téléchargez le fichier d’installation de [l’agent : Agent Windows 64 bits.](https://go.microsoft.com/fwlink/?LinkId=828603)
 
 2. À l’aide de l’ID d’espace de travail et de la clé d’espace de travail obtenus dans la procédure précédente, choisissez l’une des méthodes d’installation suivantes pour installer l’agent sur le serveur Windows :
     - [Installez manuellement l’agent à l’aide du programme d’installation.](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) <br>
-    Dans la page **Options de configuration** de l’agent, **sélectionnez Connecter l’agent à Azure Log Analytics (OMS).**
+    Dans la page **Options de configuration de** l’agent, **sélectionnez Connecter l’agent à Azure Log Analytics (OMS).**
     - [Installez l’agent à l’aide de la ligne de commande.](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)
     - [Configurez l’agent à l’aide d’un script.](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)
 
@@ -127,13 +130,13 @@ Si un proxy ou un pare-feu est en cours d’utilisation, assurez-vous que les se
 Une fois terminé, vous devriez voir les serveurs Windows intégrés dans le portail dans un délai d’une heure.
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>Option 2 : intégrer des serveurs Windows via le Centre de sécurité Azure
-1. Dans le volet de navigation du Centre de sécurité Microsoft Defender, sélectionnez **Paramètres** Intégration de  >  **la gestion des**  >  **appareils.**
+1. Dans le volet de navigation du Centre de sécurité Microsoft Defender, sélectionnez **Paramètres** Intégration de  >  **la gestion**  >  **des appareils.**
 
 2. Sélectionnez **Windows Server 2008 R2 SP1, 2012 R2 et 2016** comme système d’exploitation.
 
 3. Cliquez **sur Serveurs intégrés dans le Centre de sécurité Azure.**
 
-4. Suivez les instructions d’intégration [dans Microsoft Defender pour point de](https://docs.microsoft.com/azure/security-center/security-center-wdatp)terminaison avec Azure Security Center .
+4. Suivez les instructions d’intégration dans [Microsoft Defender pour point de](https://docs.microsoft.com/azure/security-center/security-center-wdatp)terminaison avec Azure Security Center .
 
 Après avoir effectué les étapes d’intégration, vous devez configurer et mettre à jour [les clients System Center Endpoint Protection.](#configure-and-update-system-center-endpoint-protection-clients)
 
@@ -150,12 +153,12 @@ Après avoir effectué les étapes d’intégration, vous devez configurer et me
 <br>
 
 ## <a name="windows-server-sac-version-1803-windows-server-2019-and-windows-server-2019-core-edition"></a>Windows Server (SAC) version 1803, Windows Server 2019 et Windows Server 2019 Core edition
-Vous pouvez intégrer Windows Server (SAC) version 1803, Windows Server 2019 ou Windows Server 2019 Core edition à l’aide des méthodes de déploiement suivantes :
+Vous pouvez intégrer Windows Server (SAC) version 1803, Windows Server 2019 ou Windows Server 2019 Core edition en utilisant les méthodes de déploiement suivantes :
 
 - [Script local](configure-endpoints-script.md) 
 - [Stratégie de groupe](configure-endpoints-gp.md)
 - [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [System Center Configuration Manager 2012 / 2012 R2 1511 / 1602](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)
+- [System Center Configuration Manager 2012 /2012 R2 1511 / 1602](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)
 - [Scripts d’intégration VDI pour les appareils non persistants](configure-endpoints-vdi.md)
 
 > [!NOTE]
@@ -194,7 +197,7 @@ La prise en charge de Windows Server fournit des informations plus approfondies 
 
 <br>
 
-## <a name="integration-with-azure-security-center"></a>Intégration à Azure Security Center
+## <a name="integration-with-azure-security-center"></a>Intégration au Centre de sécurité Azure
 Defender pour le point de terminaison peut s’intégrer au Centre de sécurité Azure pour fournir une solution complète de protection de serveur Windows. Avec cette intégration, Azure Security Center peut utiliser la puissance de Defender for Endpoint pour fournir une détection améliorée des menaces pour les serveurs Windows.
 
 Les fonctionnalités suivantes sont incluses dans cette intégration :
@@ -203,12 +206,12 @@ Les fonctionnalités suivantes sont incluses dans cette intégration :
     > [!NOTE]
     > L’intégration automatisée s’applique uniquement à Windows Server 2008 R2 SP1, Windows Server 2012 R2 et Windows Server 2016.
 
-- Les serveurs Windows surveillés par le Centre de sécurité Azure seront également disponibles dans Defender pour le point de terminaison - Azure Security Center se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs.  En outre, les alertes Defender pour le point de terminaison seront disponibles dans la console Azure Security Center.
+- Les serveurs Windows surveillés par le Centre de sécurité Azure seront également disponibles dans Defender for Endpoint - Azure Security Center se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs.  En outre, les alertes Defender pour le point de terminaison seront disponibles dans la console Azure Security Center.
 - Enquête sur le serveur : les clients du Centre de sécurité Azure peuvent accéder au Centre de sécurité Microsoft Defender pour effectuer une enquête détaillée afin de découvrir l’étendue d’une violation potentielle.
 
 > [!IMPORTANT]
 > - Lorsque vous utilisez le Centre de sécurité Azure pour surveiller les serveurs, un client Defender for Endpoint est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l’UE pour les utilisateurs européens et anglais).<br>
-Les données collectées par Defender pour le point de terminaison sont stockées dans l’emplacement géographique du client, comme identifié lors de l’approvisionnement.
+Les données collectées par Defender pour endpoint sont stockées dans l’emplacement géographique du client, comme identifié lors de l’approvisionnement.
 > - Si vous utilisez Defender pour endpoint avant d’utiliser Azure Security Center, vos données seront stockées à l’emplacement que vous avez spécifié lors de la création de votre client, même si vous intégrez le Centre de sécurité Azure ultérieurement.
 > - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter le Support Microsoft pour réinitialiser le client. <br>
 La surveillance des points de terminaison du serveur utilisant cette intégration a été désactivée pour les clients Office 365 GCC.
@@ -229,7 +232,7 @@ Les étapes suivantes sont nécessaires pour activer cette intégration :
 ## <a name="offboard-windows-servers"></a>Offboard Windows servers
 Vous pouvez désinserrez Windows Server (SAC), Windows Server 2019 et Windows Server 2019 Core edition dans la même méthode disponible pour les appareils clients Windows 10.
 
-Pour les autres versions de Windows Server, vous avez deux options pour mettre hors service les serveurs Windows :
+Pour les autres versions de serveur Windows, vous avez deux options pour hors-service les serveurs Windows :
 - Désinstaller l’agent MMA
 - Supprimer la configuration de l’espace de travail Defender pour le point de terminaison
 
