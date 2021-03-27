@@ -2,10 +2,10 @@
 title: Configurez l’authentification multifacteur.
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer l’authentification multifacteur.
-ms.openlocfilehash: 35f96bc41eba9a903bdb3d377a523e2b82e8c428
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 2a0c8b8fb8451d3d8868c493ad5e1f65adc30b6c
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044431"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398204"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multifacteur.
 

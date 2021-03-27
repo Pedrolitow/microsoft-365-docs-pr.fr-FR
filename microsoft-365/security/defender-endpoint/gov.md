@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 089614fab57950af5f60181ce7ed2116046ad347
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 320913058f1d3cab36b3a279996443c2e4ef117f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379369"
+ms.locfileid: "51382912"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
@@ -100,7 +100,7 @@ iOS | ![Non](images/svg/check-no.svg) On engineering backlog | ![Non](images/svg
 > Vous essayez d’intégrer des appareils Windows plus anciens que Windows 10 ou Windows Server 2019 à l’aide de [l’Agent de surveillance Microsoft](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? Vous devez choisir « Azure US Government » sous « Azure Cloud » [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) si vous utilisez l’Assistant Installation [ou](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si vous utilisez une ligne de commande ou un [script,](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1.
 
 > [!NOTE]
-> Vous aurez besoin de la version 101.25.72 et supérieure pour Linux et de la version 101.25.69 et versions supérieures pour macOS. Pendant que nous sommes en prévisualisation, ces versions sont disponibles uniquement dans le canal « Insider Fast ». Pour [obtenir des](linux-install-manually.md#configure-the-linux-software-repository) instructions, voir Configurer le référentiel de logiciels Linux ou Définir le nom du canal [(macOS).](mac-updates.md#set-the-channel-name)
+> Vous aurez besoin de la version 101.25.72 et supérieure pour Linux et de la version 101.25.69 et versions supérieures pour macOS. Pendant la prévisualisation, ces versions sont disponibles uniquement dans le canal « Insider Fast ». Pour [obtenir des](linux-install-manually.md#configure-the-linux-software-repository) instructions, voir Configurer le référentiel de logiciels Linux ou Définir le nom du canal [(macOS).](mac-updates.md#set-the-channel-name)
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versions du système d’exploitation lors de l’utilisation d’Azure Defender pour les serveurs
 Les versions de système d’exploitation suivantes sont pris en charge lors de [l’utilisation d’Azure Defender pour les serveurs](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
@@ -168,7 +168,7 @@ Examen et correction automatisés : réponse aux alertes Office 365 | ![Non](ima
 Notifications par e-mail | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Laboratoire d’évaluation | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Gestion et API : rapport sur l’état et la conformité des appareils | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
-Gestion et API : intégration avec des produits tiers | ![Non](images/svg/check-no.svg) En cours de déploiement | ![Non](images/svg/check-no.svg) En cours de déploiement | ![Non](images/svg/check-no.svg) En cours de déploiement
+Gestion et API : intégration avec des produits tiers | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Gestion et API : API de diffusion en continu | ![Oui](images/svg/check-yes.svg) | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement
 Gestion et API : rapport sur la protection contre les menaces | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Gestion des & menaces | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)

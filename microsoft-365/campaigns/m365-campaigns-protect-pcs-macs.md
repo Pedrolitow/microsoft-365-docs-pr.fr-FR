@@ -2,10 +2,10 @@
 title: Protéger les PC Windows 10 et les Mac non gérés
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez les appareils BYOD (ByOD) non utilisés ou apportez-les avec Microsoft 365.
-ms.openlocfilehash: 5c27b29b5bb4fb445655e671d8c654ad8e9abc6b
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 430f5446f86c26cb1f0fd1c7f34613cddec473b2
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044383"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398252"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Protéger les PC Windows 10 et les Mac non gérés
 
@@ -64,7 +64,7 @@ Windows Update télécharge automatiquement les mises à jour de sécurité Win
 Si vous avez une version antérieure de Windows et que vous utilisez Microsoft Security Essentials, il est bon de passer à la sécurité Windows. Pour plus d’informations, [voir l’aide pour protéger mon appareil avec la sécurité Windows.](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)
 
 **Activer le Pare-feu Windows**<p>
-Vous devez toujours exécuter le Pare-feu Windows même si un autre pare-feu est allumé. La dés off windows Firewall peut rendre votre appareil (et votre réseau, si vous en avez un) plus vulnérable aux accès non autorisés. Voir [Activer ou désactiver le Pare-feu Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) pour obtenir des instructions
+Vous devez toujours exécuter le Pare-feu Windows même si un autre pare-feu est allumé. La dés off de Pare-feu Windows peut rendre votre appareil (et votre réseau, si vous en avez un) plus vulnérable aux accès non autorisés. Pour obtenir [des instructions, voir](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) Activer ou désactiver le Pare-feu Windows.
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 
@@ -74,7 +74,7 @@ Le chiffrement de disque protège les données en cas de perte ou de vol d’app
 **Protéger votre mac contre les programmes malveillants**<p>
 Microsoft vous recommande d’installer et d’utiliser des logiciels antivirus fiables sur votre Mac. Consultez l’article suivant pour obtenir la liste des choix : [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
-Vous pouvez également réduire le risque de programmes malveillants en utilisant des logiciels uniquement à partir de sources fiables. Les paramètres des préférences de confidentialité & sécurité vous permettent de spécifier les sources de logiciels installées sur votre Mac. Pour plus d’informations, [voir protéger votre Mac contre les programmes malveillants.](https://support.apple.com/kb/PH25087)
+Vous pouvez également réduire le risque de programmes malveillants en utilisant des logiciels provenant uniquement de sources fiables. Les paramètres des préférences de confidentialité & sécurité vous permettent de spécifier les sources de logiciels installées sur votre Mac. Pour plus d’informations, [voir protéger votre Mac contre les programmes malveillants.](https://support.apple.com/kb/PH25087)
 
 **Activer la protection contre le pare-feu**<p>
 Utilisez les paramètres de pare-feu pour protéger votre Mac contre les contacts indésirables initiés par d’autres ordinateurs lorsque vous êtes connecté à Internet ou à un réseau. Sans cette protection, votre Mac peut être plus vulnérable aux accès non autorisés. Pour obtenir des instructions, voir le [pare-feu](https://support.apple.com/HT201642) de l’application.

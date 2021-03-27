@@ -1,11 +1,11 @@
 ---
-title: Qu’est-ce que l’accès conditionnel ?
+title: Activer les paramètres de sécurité par défaut
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,62 +23,65 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment exiger une mf et configurer des stratégies d’accès conditionnel pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Découvrez comment les paramètres de sécurité par défaut peuvent aider à protéger votre organisation contre les attaques liées aux identités en fournissant des paramètres de sécurité préconfigurés.
+ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912185"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398290"
 ---
-# <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Exiger une authentification multifacteur et configurer des stratégies d’accès conditionnel
+# <a name="turn-on-security-defaults"></a>Activer les paramètres de sécurité par défaut
 
-Vous protégez l’accès à vos données à l’aide de stratégies d’authentification multifacteur et d’accès conditionnel. Celles-ci ajoutent une sécurité supplémentaire substantielle. Microsoft fournit un ensemble de stratégies d’accès conditionnel de base recommandées pour tous les clients. Les stratégies de base sont un ensemble de stratégies prédéfines qui aident à protéger les organisations contre de nombreuses attaques courantes. Ces attaques courantes peuvent inclure la pulvérisation de mot de passe, la relecture et le hameçonnage.
+Les paramètres de sécurité par défaut contribuent à protéger votre organisation contre les attaques liées aux identités en fournissant des paramètres de sécurité préconfigurés que Microsoft gère au nom de votre organisation. Ces paramètres incluent l’activation de l’authentification multifacteur (MFA) pour tous les administrateurs et comptes d’utilisateurs. Pour la plupart des organisations, les paramètres de sécurité par défaut offrent un bon niveau de sécurité de la signature supplémentaire.
 
-Ces stratégies exigent que les administrateurs et les utilisateurs entrent dans un second formulaire d’authentification (appelé authentification multifacteur, ou authentification multifacteur) dans certaines conditions. Par exemple, si un utilisateur de votre organisation tente de se connecter à Microsoft 365 à partir d’un autre pays ou d’un appareil inconnu, la sign-in peut être considérée comme risquée. L’utilisateur doit fournir une forme supplémentaire d’authentification (par exemple, une empreinte digitale ou un code) pour prouver son identité.
+Pour plus d’informations sur les paramètres de sécurité par défaut et les stratégies qu’ils appliquent, voir [Quelles sont les valeurs par défaut de sécurité ?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-Actuellement, les stratégies de référence incluent les stratégies suivantes :
+Si votre abonnement a été créé le 22 octobre 2019 ou après, les paramètres de sécurité par défaut ont peut-être été automatiquement activés pour vous, vous devez vérifier vos paramètres pour &mdash; vérifier.
 
-- Configurer dans le Centre d’administration Microsoft 365 :
-  - **Exiger l’authentification multifacteur pour** les administrateurs : nécessite une authentification multifacteur pour les rôles d’administrateur les plus privilégiés, y compris l’administrateur général.
-  - **Protection de l’utilisateur final**: nécessite une authentification multifacteur pour les utilisateurs uniquement lorsqu’une authentification est risquée. 
-- Configurer dans le portail Azure Active Directory :
-  - **Bloquer l’authentification** héritée : les applications clientes plus anciennes et certaines nouvelles applications n’utilisent pas de protocoles d’authentification plus anciens, plus sécurisés. Ces anciennes applications peuvent contourner les stratégies d’accès conditionnel et obtenir un accès non autorisé à votre environnement. Cette stratégie bloque l’accès des clients qui ne la prisent pas en charge de l’accès conditionnel. 
-  - **Exiger l’authentification** multifacteur pour la gestion des services : nécessite une authentification multifacteur pour l’accès aux outils de gestion, y compris au portail Azure (où vous configurez les stratégies de référence).
+Pour activer les paramètres de sécurité par défaut dans azure Active Directory (Azure AD) ou pour vérifier s’ils sont déjà activés :
 
-Nous vous recommandons d’activer toutes ces stratégies de référence. Une fois ces stratégies activées, les administrateurs et les utilisateurs sont invités à s’inscrire à l’authentification multifacteur Azure AD.
+1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> avec les informations d’identification d’administrateur global.
 
-Pour plus d’informations sur ces stratégies, voir [Quelles sont les stratégies de base](/azure/active-directory/conditional-access/concept-baseline-protection)?
+2. Dans le volet gauche, sélectionnez **Afficher tout,** puis sous Centres d’administration,  **sélectionnez Azure Active Directory.**
 
-## <a name="require-mfa"></a>Exiger une authentification multifacteur
+3. Dans le volet gauche du Centre d’administration **Azure Active Directory,** sélectionnez **Azure Active Directory.**
 
-Pour exiger que tous les utilisateurs se connectent avec un deuxième formulaire d’ID :
+4. Dans le menu gauche du tableau de bord, dans la section **Gérer,** sélectionnez **Propriétés.**
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and choose **Setup**.
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Capture d’écran du Centre d’administration Azure Active Directory affichant l’emplacement de l’élément de menu Propriétés.":::
 
-2. Dans la page Installation, **sélectionnez Afficher** dans la carte **de configuration plus** sécurisée.
+5. En bas de la page **Propriétés,** **sélectionnez Gérer les paramètres de sécurité par défaut.**
 
-    ![Rendre la carte de se connectez plus sécurisée.](../media/setupmfa.png)
-3. On the Make sign-in more secure page, choose **Get started**.
-
-4. Dans le volet Renforcer la sécurité de la signature, cochez les cases en regard de Exiger une authentification **multifacteur** pour les administrateurs et demander aux utilisateurs de s’inscrire à l’authentification **multifacteur** et de bloquer l’accès si des risques sont détectés.
-    N’oubliez [](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) pas d’exclure le compte d’administrateur d’urgence ou de « pause-arrêt » de l’exigence de l’mf dans la zone Rechercher **des utilisateurs.**
-
-    ![Renforcer la page de sécurité du sing-in.](../media/requiremfa.png)
-
-5. Choisissez **Créer une stratégie** en bas de la page.
-
-## <a name="set-up-baseline-policies"></a>Configurer des stratégies de référence
-
-1. Accédez au [portail Azure,](https://portal.azure.com)puis accédez à **l’accès** conditionnel de sécurité Azure Active Directory \>  \>  pour créer **une stratégie.**
-
-Consultez les instructions spécifiques suivantes pour chaque stratégie : <br>
-    - [Exiger l’mf pour les administrateurs](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [Exiger l’mf pour les utilisateurs](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [Bloquer l’authentification héritée](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [Exiger l’mf pour la gestion des services](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+6. Dans le volet droit, vous verrez le paramètre **Activer les paramètres de sécurité par défaut.** Si **Oui** est sélectionné, les paramètres de sécurité par défaut sont déjà activés et aucune action supplémentaire n’est requise. Si les paramètres de sécurité par défaut ne sont pas activés actuellement, sélectionnez **Oui** pour les activer, puis sélectionnez **Enregistrer.**
 
 > [!NOTE]
-> Les stratégies d’aperçu n’existent plus et les utilisateurs doivent créer leurs propres stratégies.
+> Si vous utilisez des stratégies d’accès conditionnel, vous devez les désactiver avant d’utiliser les paramètres de sécurité par défaut.
+>
+> Vous pouvez utiliser les paramètres de sécurité par défaut ou les stratégies d’accès conditionnel, mais vous ne pouvez pas utiliser les deux en même temps.
 
-Vous pouvez configurer des stratégies supplémentaires, telles que l’obligation d’applications clientes approuvées. Pour plus d’informations, voir la [documentation relative à l’accès conditionnel.](/azure/active-directory/conditional-access/)
+## <a name="consider-using-conditional-access"></a>Envisager d’utiliser l’accès conditionnel
+
+Si votre organisation a des exigences de sécurité complexes ou si vous avez besoin d’un contrôle plus granulaire sur vos stratégies de sécurité, vous devez envisager d’utiliser l’accès conditionnel au lieu des paramètres de sécurité par défaut pour obtenir une posture de sécurité similaire ou supérieure. 
+
+L’accès conditionnel vous permet de créer et de définir des stratégies qui réagissent aux événements de connectez-vous et de demander des actions supplémentaires avant qu’un utilisateur ne soit autorisé à accéder à une application ou un service. Les stratégies d’accès conditionnel peuvent être granulaires et spécifiques, permettant aux utilisateurs d’être productifs où et quand, mais aussi de protéger votre organisation.
+
+Les paramètres de sécurité par défaut sont disponibles pour tous les clients, tandis que l’accès conditionnel nécessite une licence pour l’un des plans suivants :
+
+- Azure Active Directory Premium P1 ou P2
+- Microsoft 365 Business Premium
+- Microsoft 365 E3 ou E5
+- Enterprise Mobility & Security E3 ou E5
+
+Si vous souhaitez utiliser l’accès conditionnel pour configurer des stratégies équivalentes à celles activées par défaut de sécurité, consultez les guides pas à pas suivants :
+
+- [Exiger l’authentification multifacteur pour les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [Exiger l’mf pour la gestion Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+- [Bloquer l’authentification héritée](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [Exiger l’inscription Azure AD MFA](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - Nécessite Azure AD Identity Protection, qui fait partie d’Azure Active Directory Premium P2
+
+Pour en savoir plus sur l’accès conditionnel, voir [qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview) Pour plus d’informations sur la création de stratégies d’accès conditionnel, voir [Créer une stratégie d’accès conditionnel.](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)
+
+> [!NOTE]
+> Si vous disposez d’un plan ou d’une licence qui fournit l’accès conditionnel, mais que vous n’avez pas encore créé de stratégies d’accès conditionnel, vous pouvez utiliser les paramètres de sécurité par défaut. Toutefois, vous devez désactiver les paramètres de sécurité par défaut avant de pouvoir utiliser des stratégies d’accès conditionnel.

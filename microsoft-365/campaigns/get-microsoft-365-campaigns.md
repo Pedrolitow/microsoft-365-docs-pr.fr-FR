@@ -2,10 +2,10 @@
 title: Obtenir Microsoft 365 pour les campagnes
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,22 +24,22 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenez Microsoft 365 pour les campagnes pour protéger votre campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
-ms.openlocfilehash: 5a7c0e0a31d6a456d405093f8da32ae557563d1f
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 3d70fef721417dd823dc272bbb7b08c04c037f98
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044641"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398312"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Obtenir Microsoft 365 pour les campagnes
 
-Toute personne avec Microsoft 365 Business Premium peut utiliser ces conseils pour configurer une sécurité supplémentaire pour le courrier électronique et la collaboration. Toutefois, les campagnes et les parties politiques aux États-Unis sont éligibles à des tarifs spéciaux pour Microsoft 365. Actuellement, cette tarification spéciale est disponible pour :
+Toute personne avec Microsoft 365 Business Premium peut utiliser ces conseils pour configurer une sécurité supplémentaire pour le courrier électronique et la collaboration. Toutefois, les campagnes et les parties politiques aux États-Unis sont éligibles à une tarification spéciale pour Microsoft 365. Actuellement, cette tarification spéciale est disponible pour :
 
 - Les parties politiques au niveau national aux États-Unis, au Canada et en Nouvelle-Zélande
 - Campagnes électorales nationales ou fédérales aux États-Unis et en Nouvelle-Zélande
-- Campagnes électorales à l’échelle de l’État des États-Unis (par exemple: campagnes de recherche de poste pour le gouverneur, le siège d’un État ou le avocat général)*
+- Campagnes électorales à l’échelle de l’État américain (par exemple: campagnes de recherche d’un poste pour le gouverneur, le siège d’un État ou un avocat général)*
 
-    *En raison des réglementations locales, nous ne pouvons pas proposer M365 pour les campagnes dans les états suivants pour le moment : CO, DE, IL, OK, WI & WY. Nous encourageons les campagnes dans ces états à explorer d’autres offres chez [Microsoft 365 pour les entreprises.](https://www.office.com/business)
+    *En raison des réglementations locales, nous ne pouvons pas proposer Microsoft 365 pour les campagnes dans les états suivants pour le moment : CO, DE, IL, OK, WI & WY. Nous encourageons les campagnes dans ces états à explorer d’autres offres chez [Microsoft 365 pour les entreprises.](https://www.office.com/business)
 
 - Les parties politiques au niveau de l’état aux États-Unis
 

@@ -2,10 +2,10 @@
 title: Connectez-vous à Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Connectez-vous à Microsoft 365. Protégez votre entreprise, pratique ou campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
-ms.openlocfilehash: e115ec9fab8270f1b9dddcc33b2d20a5554e4f2e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: eff81da84853130da2f2dcc0aaaf2a9834477a85
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912149"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398161"
 ---
 # <a name="sign-in-to-microsoft-365"></a>Connectez-vous à Microsoft 365
 
@@ -43,5 +43,5 @@ Si vous vous êtes inscrit à Microsoft 365, vous êtes l’administrateur Micro
 
 ## <a name="for-staff"></a>Pour le personnel
 
-Configurer le personnel comme décrit dans [Ajouter](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) des utilisateurs Vous pouvez également réinitialiser et renvoyer des mots de passe sur la page Ajouter **des** utilisateurs.
+Configurer le personnel comme décrit dans [Ajouter](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) des utilisateurs Vous pouvez également réinitialiser et renvoyer des mots de passe sur la page Ajouter **des utilisateurs.**
 Tous les membres du personnel peuvent se connecter à <a href="https://office.com" target="_blank">https://Office.com</a> l':.

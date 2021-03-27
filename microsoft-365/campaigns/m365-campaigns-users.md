@@ -2,10 +2,10 @@
 title: Impact de ces recommandations de sécurité sur vos utilisateurs
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment ces recommandations de sécurité pour Microsoft 365 Business Premium affectent vos utilisateurs et protègent vos données.
-ms.openlocfilehash: 91f6b1fb9ddd5938eb8a788ce7594ec8ab9908c3
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: b8464396887daa408e94cfb6c151d998dd8b1ae2
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044231"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398228"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Impact de ces recommandations de sécurité sur vos utilisateurs
 
@@ -39,7 +39,7 @@ Les recommandations de sécurité pour Microsoft 365 dans cette solution compliq
 
 ## <a name="use-secure-email-practices"></a>Utiliser des pratiques de messagerie sécurisée
 
-Tous les utilisateurs doivent connaître et utiliser ces pratiques de messagerie pour sécuriser leur messagerie :
+Tous les utilisateurs doivent connaître ces pratiques de messagerie et les utiliser pour sécuriser leur messagerie :
 
 - Configurer le courrier électronique pour utiliser l’authentification multifacteur avec l’application d’authentification.
 - Vérifiez les e-mails légitimes et recherchez les conseils de sécurité du hameçonnage avancé dans Defender pour Office 365 Protection.
