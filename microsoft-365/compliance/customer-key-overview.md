@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir le fonctionnement du chiffrement de service avec la clé client dans Microsoft 365.
-ms.openlocfilehash: 9ed4b523c77cf1fa80d23e8fbe5c93e938f222a2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 21291dc45cd634cd5b6a88c4e58972c17486724f
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916886"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394722"
 ---
 # <a name="service-encryption-with-customer-key"></a>Chiffrement du service avec la clé client
 
@@ -37,7 +37,7 @@ La clé client améliore la capacité de votre organisation à répondre aux exi
 
 ## <a name="customer-key-encrypts-data-at-rest-in-office-365"></a>La clé client chiffre les données au repos dans Office 365
 
-À l’aide des clés que vous fournissez, la clé client chiffre :
+À l’aide des clés que vous fournissez, la clé client au niveau de l’application chiffre :
 
 - Fichiers SharePoint Online, OneDrive Entreprise et Teams.
 - Fichiers téléchargés vers OneDrive Entreprise.
@@ -54,9 +54,9 @@ La clé client chiffre uniquement les données au repos dans le cloud. La clé c
 
 Une stratégie de chiffrement de données définit la hiérarchie de chiffrement pour chiffrer les données à l’aide de chacune des clés que vous fournissez, ainsi que de la clé de disponibilité protégée par Microsoft. Vous créez des PDP à l’aide d’cmdlets PowerShell, qui sont différentes pour chaque service, et vous affectez ces dep pour chiffrer les données d’application. Par exemple :
 
-**Exchange Online et Skype Entreprise** Vous pouvez créer jusqu’à 50 DEP par client. Vous associez des dep à vos clés client dans Azure Key Vault, puis vous affectez des dep à des boîtes aux lettres individuelles. Lorsque vous affectez un deP à une boîte aux lettres :
+**Exchange Online et Skype Entreprise** Vous pouvez créer jusqu’à 50 DEP par client. Vous associez des dep à vos clés client dans Azure Key Vault, puis vous affectez des DPS à des boîtes aux lettres individuelles. Lorsque vous affectez un deP à une boîte aux lettres :
 
-- la boîte aux lettres est marquée pour un déplacement de boîte aux lettres. Basé sur les priorités dans Microsoft 365 comme décrit ici Déplacer [les demandes dans le service Microsoft 365](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service).
+- la boîte aux lettres est marquée pour un déplacement de boîte aux lettres. Basé sur les priorités dans Microsoft 365 comme décrit ici Déplacer [des demandes dans le service Microsoft 365](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service).
 
 - Le chiffrement a lieu pendant le déplacement de la boîte aux lettres. Autorisez 72 heures pour que la boîte aux lettres soit chiffrée avec le nouveau PED. Si les boîtes aux lettres ne sont pas chiffrées après avoir attendu 72 heures à partir du moment où vous avez affecté le PED, contactez Microsoft.
 
@@ -65,11 +65,11 @@ Par la suite, vous pouvez actualiser le deP ou affecter un autre deP à la boît
 > [!NOTE]
 > Le PD DEP peut être appliqué à une boîte aux lettres partagée, une boîte aux lettres de dossiers publics et une boîte aux lettres de groupe Microsoft 365 pour les clients qui répondent aux exigences de licence pour les boîtes aux lettres utilisateur, même si certains de ces types de boîtes aux lettres ne peuvent pas être une licence attribuée (boîte aux lettres de dossiers publics et boîte aux lettres de groupe Microsoft 365) ou avoir besoin d’une licence pour augmenter le stockage (boîte aux lettres partagée).
 
-**Fichiers SharePoint Online, OneDrive Entreprise et Teams** Si vous utilisez la fonctionnalité multigéogé, vous pouvez créer jusqu’à un dep par géo pour votre organisation. Vous pouvez utiliser différentes clés client pour chaque géo. Si vous n’utilisez pas la fonctionnalité multigéogé, vous ne pouvez créer qu’un seul dep par client. Lorsque vous affectez le deP, le chiffrement commence automatiquement, mais peut prendre un certain temps. Reportez-vous aux détails dans [Configurer la clé client.](customer-key-set-up.md)
+**Fichiers SharePoint Online, OneDrive Entreprise et Teams** Si vous utilisez la fonctionnalité multigéogé, vous pouvez créer jusqu’à un dep par géo pour votre organisation. Vous pouvez utiliser différentes clés client pour chaque géo. Si vous n’utilisez pas la fonctionnalité multigéogé, vous ne pouvez créer qu’une seule PD DEP par client. Lorsque vous affectez le dep, le chiffrement commence automatiquement, mais peut prendre un certain temps. Reportez-vous aux détails dans [Configurer la clé client.](customer-key-set-up.md)
 
 ## <a name="leaving-the-service"></a>Quitter le service
 
-La clé client vous aide à respecter les obligations de conformité en vous permettant de révoquer vos clés lorsque vous quittez le service Microsoft 365. Lorsque vous révoquez vos clés dans le cadre de la sortie du service, la clé de disponibilité est supprimée, ce qui entraîne la suppression de vos données par chiffrement. La suppression cryptographique atténue le risque de rémanence des données, ce qui est important pour respecter les obligations de sécurité et de conformité. Pour plus d’informations sur le processus de purge des données et la révocation de clés, voir Révoquer vos clés et démarrer le processus de purge [des données.](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)
+La clé client vous aide à respecter les obligations de conformité en vous permettant de révoquer vos clés lorsque vous quittez le service Microsoft 365. Lorsque vous révoquez vos clés dans le cadre de la sortie du service, la clé de disponibilité est supprimée, ce qui entraîne la suppression de vos données par chiffrement. La suppression de chiffrement atténue le risque de rémanence des données, ce qui est important pour respecter les obligations de sécurité et de conformité. Pour plus d’informations sur le processus de purge des données et la révocation de clés, voir Révoquer vos clés et démarrer le processus de chemin d’accès [de la purge des données.](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)
 
 ### <a name="encryption-ciphers-used-by-customer-key"></a>Chiffrements de chiffrement utilisés par la clé client
 
