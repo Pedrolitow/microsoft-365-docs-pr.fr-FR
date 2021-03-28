@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implémentez Microsoft Information Protection (MIP) pour vous permettre de protéger les informations sensibles où qu’elles se trouvent.
-ms.openlocfilehash: 285b5885f56151bcbd877eb6ede04447c7a405dc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e8487bf443592fa45b887929f947b701406dba55
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927038"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394692"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection dans Microsoft 365.
 
@@ -47,8 +47,8 @@ Si vous souhaitez en savoir plus sur la gestion de vos données, consultez l’a
 Pour comprendre votre paysage de données, puis identifier les données importantes dans votre environnement hybride, utilisez les fonctionnalités suivantes :
  
 |Fonctionnalité|Utilité|Prise en main|
-|:------|:------------|:--------------------|:-----------------------------|
-|[Types d’informations sensibles](sensitive-information-type-entity-definitions.md)| Identifie les données sensibles à l’aide d’expressions régulières intégrées ou personnalisées, ou à l’aide d'une fonction. Les preuves corroborantes comprennent des mots clés, des niveaux de confiance et la proximité.| [Personnaliser un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md)|
+|:------|:------------|:--------------------|
+|[Types d’informations sensibles](sensitive-information-type-learn-about.md)| Identifie les données sensibles à l’aide d’expressions régulières intégrées ou personnalisées, ou à l’aide d'une fonction. Les preuves corroborantes comprennent des mots clés, des niveaux de confiance et la proximité.| [Personnaliser un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md)|
 |[Classifieurs avec capacité d’apprentissage](classifier-learn-about.md)| Identifie les données sensibles à l’aide d’exemples de données qui vous intéressent au lieu d’identifier les éléments dans l’élément (mise en correspondance des modèles). Vous pouvez utiliser des classifieurs intégrés ou former un classifieur avec votre propre contenu.| [Prise en main des classifieurs présentant une capacité d’apprentissage](classifier-get-started-with.md) |
 |[Classification des données](data-classification-overview.md) | Identification graphique d’éléments de votre organisation qui ont une étiquette de niveau de fidélité, une étiquette de rétention ou qui ont été classés. Vous pouvez également utiliser ces informations pour en savoir plus sur les actions effectuées par vos utilisateurs sur ces éléments. | [Prise en main de l’explorateur de contenu](data-classification-content-explorer.md)<br /><br /> [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md) |
 
@@ -57,7 +57,7 @@ Pour comprendre votre paysage de données, puis identifier les données importan
 Pour appliquer des actions de protection flexibles qui incluent le chiffrement, les restrictions d’accès et les marquages visuelles, utilisez les fonctionnalités suivantes :
 
 |Fonctionnalité|Utilité|Prise en main|
-|:------|:------------|---------------------|:----------------------------|
+|:------|:------------|---------------------|
 |[Étiquettes de confidentialité](sensitivity-labels.md)| Une solution unique pour les applications, les services et les appareils qui permet d’étiqueter, puis de protéger vos données lors de leur déplacement à l’intérieur et à l’extérieur de votre organisation. <br /><br />Exemples de scénarios : <br /> [Gérer les étiquettes de confidentialité pour les applications Office](sensitivity-labels-office-apps.md)<br /> [Chiffrer des documents et des e-mails](encryption-sensitivity-labels.md )<br /> [Appliquer et afficher des étiquettes dans Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> Si vous souhaitez obtenir la liste complète des scénarios d’étiquettes de niveau de niveau de vie, veuillez consulter la documentation Prise en main.|[Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) |
 |[Client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2)| Étend les étiquettes de confidentialité pour des fonctionnalités supplémentaires, qui incluent l’étiquetage et la protection de tous les types de fichiers depuis l’Explorateur de fichiers et PowerShell, pour les ordinateurs Windows<br /><br /> Exemples de fonctionnalités supplémentaires : [configurations personnalisées pour le client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guide de l’utilisateur pour l’étiquetage unifié d’Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Chiffrement à double clé](double-key-encryption.md)| Dans tous les cas, seule votre organisation déchiffrer le contenu protégé. Pour respecter les obligations réglementaires, vous devez conserver les clés de chiffrement dans la limite géographique définie. | [Déployer le chiffrement à double clé](double-key-encryption.md#deploy-dke)|
@@ -76,6 +76,9 @@ Pour éviter le partage excessif accidentel d’informations sensibles, utilisez
 
 
 |Fonctionnalité|Utilité|Prise en main|
-|:------|:------------|:---------------------|:-----------------------------|
-|[Protection contre la perte de données (DLP)](data-loss-prevention-policies.md)| Permet d’empêcher le partage involontaire d’éléments sensibles. <br /><br />Exemple de scénario : [protéger les informations sensibles dans les messages de conversation et de canal de Microsoft Teams](dlp-microsoft-teams.md) | [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)|
+|:------|:------------|:---------------------|
+|[Protection contre la perte de données (DLP)](data-loss-prevention-policies.md)| Permet d’empêcher le partage involontaire d’éléments sensibles. | [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)|
 |[Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)| Étend les fonctionnalités DLP aux éléments utilisés et partagés sur les ordinateurs Windows 10. | [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)|
+|[En savoir plus sur l’extension de la conformité Microsoft (préversion).](dlp-chrome-learn-about.md) | Étend les fonctionnalités de protection contre la perte de données au navigateur Chrome | [Prise en main de l’extension de conformité Microsoft (préversion)](dlp-chrome-get-started.md)|
+|[En savoir plus sur le scanneur local de protection contre la perte de données Microsoft 365 (préversion)](dlp-on-premises-scanner-learn.md)|Étend la surveillance de la protection contre la perte de données des activités sur fichier et des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint.|[Prise en main du scanner local de protection contre la perte de données Microsoft 365 (préversion)](dlp-on-premises-scanner-get-started.md)|
+|[Protéger les informations sensibles dans les messages de conversation et de canal de Microsoft Teams](dlp-microsoft-teams.md) | Étend certaines fonctionnalités de protection contre la perte de données aux messages de canal et aux conversations Teams. | [En savoir plus sur la stratégie de protection par défaut contre la perte de données dans Microsoft Teams (préversion)](dlp-teams-default-policy.md)| 
