@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf903bd1b09370dd7de2706b078778137ea029fb
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 98b568206d4263a574c8de653fe5345dd344ba43
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187816"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408546"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison pour Linux manuellement
 
@@ -49,7 +49,7 @@ Cet article explique comment déployer Microsoft Defender pour Endpoint pour Lin
   - [Télécharger le package d’intégration](#download-the-onboarding-package)
   - [Configuration du client](#client-configuration)
   - [Script du programme d’installation](#installer-script)
-  - [Journaux des problèmes d’installation](#log-installation-issues)
+  - [Journal des problèmes d’installation](#log-installation-issues)
   - [Mises à niveau du système d’exploitation](#operating-system-upgrades)
   - [Désinstallation](#uninstallation)
 
@@ -87,7 +87,7 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Par exemple, si vous exécutez CentOS 7 et que vous souhaitez déployer MDE pour Linux à partir du *canal prod* :
+    Par exemple, si vous exécutez CentOS 7 et que vous souhaitez déployer Defender pour Endpoint pour Linux à partir du *canal prod* :
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -312,7 +312,7 @@ Téléchargez le package d’intégration à partir du Centre de sécurité Micr
     python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-3. Vérifiez que l’appareil est maintenant associé à votre organisation et signale un identificateur d’organisation valide :
+3. Vérifiez que l’appareil est désormais associé à votre organisation et signale un identificateur d’organisation valide :
 
     ```bash
     mdatp health --field org_id
@@ -345,7 +345,7 @@ Téléchargez le package d’intégration à partir du Centre de sécurité Micr
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - Le fichier doit avoir été mis en quarantaine par Defender pour Endpoint pour Linux. Utilisez la commande suivante pour lister toutes les menaces détectées :
+    - Le fichier doit avoir été mis en quarantaine par Defender for Endpoint pour Linux. Utilisez la commande suivante pour lister toutes les menaces détectées :
 
         ```bash
         mdatp threat list
@@ -353,7 +353,7 @@ Téléchargez le package d’intégration à partir du Centre de sécurité Micr
 
 ## <a name="installer-script"></a>Script du programme d’installation
 
-Vous pouvez également utiliser un script d’installation [bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
+Vous pouvez également utiliser un script bash de [programme](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) d’installation automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
 Le script identifie la distribution et la version, et définit l’appareil pour qu’il tire le dernier package et l’installe.
 Vous pouvez également intégrer un script fourni.
 
@@ -376,13 +376,34 @@ Options:
 
 En savoir plus [ici.](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)
 
-## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
+## <a name="log-installation-issues"></a>Journal des problèmes d’installation
 
 Pour [plus d’informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir problèmes d’installation des journaux.
 
 ## <a name="operating-system-upgrades"></a>Mises à niveau du système d’exploitation
 
 Lors de la mise à niveau de votre système d’exploitation vers une nouvelle version majeure, vous devez d’abord désinstaller Defender pour Endpoint pour Linux, installer la mise à niveau, puis reconfigurer Defender pour Endpoint pour Linux sur votre appareil.
+
+## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Comment migrer de Insiders-Fast canal de production
+
+1. Désinstallez la version « Insiders-Fast channel » de MDE pour macOS.
+
+    ``
+    sudo yum remove mdatp
+    ``
+
+1. Désactiver le MDE pour le Insiders-Fast Linux  ``
+    sudo yum repolist
+    ``
+
+    > [!NOTE]
+    > La sortie doit afficher « packages-microsoft-com-fast-prod ».
+
+    ``
+    sudo yum-config-manager --disable packages-microsoft-com-fast-prod
+    ``
+1. Redéployer MDE pour Linux à l’aide du « canal de production ».
+
 
 ## <a name="uninstallation"></a>Désinstallation
 

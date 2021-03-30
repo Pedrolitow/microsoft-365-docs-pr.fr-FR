@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: Découvrez comment déplacer des utilisateurs entre des abonnements.
 ms.date: 07/01/2020
-ms.openlocfilehash: 7eb07bda4fd1a558a8126f11ef3a1fbc4ceb0389
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 31deb1b81e1f9605210b50036441f98dc3b6a811
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907879"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408302"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, voir Vue d’ensemble du Centre d’administration [Microsoft 365.](../../business-video/admin-center-overview.md)
 
 ::: moniker-end
 
@@ -46,24 +46,32 @@ Vous devez être un administrateur général, une licence ou un administrateur d
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+
 2. Sélectionnez les cercles en côté des noms des utilisateurs pour qui vous souhaitez remplacer les licences existantes.
-3. Dans la partie supérieure, sélectionnez **Plus d'options (...)**, puis choisissez **Gérer les licences de produits**.
-4. Dans le volet **Gérer des licences de produits**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
-5. Basculez vers la position **Sur** pour les licences que vous souhaitez attribuer à ces utilisateurs.\
-    Vous pouvez limiter les services mis à disposition des utilisateurs. Positionnez le bouton bascule sur **Désactiver** pour les services que vous ne souhaitez pas attribuer à ces utilisateurs. Les attributions de licences précédentes sont alors supprimées pour les utilisateurs sélectionnés.
-6. En bas du volet **Remplacer les produits existants**, sélectionnez **Remplacer** \> **Fermer**.
+
+3. En haut, sélectionnez **Gérer les licences de produits.**
+
+4. Dans le **volet Gérer les licences de** produits, sélectionnez Remplacer et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs. 
+
+5. At the bottom, select **Save Changes** \> **Close**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+
 2. Cochez les cases en regard des noms des utilisateurs pour lesquels vous souhaitez remplacer les licences existantes.
+
 3. Dans le volet **Actions en bloc**, sélectionnez **Modifier les licences de produits**.
+
 4. Dans le volet **Attribuer des produits**, sélectionnez **Remplacer des attributions de licence de produit existantes** \> **Suivant**.
-5. Basculez vers la position **Sur** pour les licences que vous souhaitez attribuer à ces utilisateurs.\
+
+5. Positionnez le bouton bascule sur **Activer** pour les licences que vous voulez attribuer à ces utilisateurs.
+
     Vous pouvez limiter les services mis à disposition des utilisateurs. Positionnez le bouton bascule sur **Inactif** pour les services que vous ne souhaitez pas attribuer à ces utilisateurs. Les attributions de licences précédentes sont alors supprimées pour les utilisateurs sélectionnés.
+
 6. Au bas du volet **Remplacer les produits existants**, sélectionnez **Remplacer** \> **Fermer** \> **Fermer**.
 
 ::: moniker-end
@@ -71,11 +79,17 @@ Vous devez être un administrateur général, une licence ou un administrateur d
 ::: moniker range="o365-21vianet"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+
 2. Cochez les cases en regard des noms des utilisateurs pour lesquels vous souhaitez remplacer les licences existantes.
+
 3. Dans le volet **Actions en bloc**, sélectionnez **Modifier les licences de produits**.
+
 4. Dans le volet **Attribuer des produits**, sélectionnez **Remplacer des attributions de licence de produit existantes** \> **Suivant**.
-5. Basculez vers la position **Sur** pour les licences que vous souhaitez attribuer à ces utilisateurs.\
+
+5. Positionnez le bouton bascule sur **Activer** pour les licences que vous voulez attribuer à ces utilisateurs.
+
     Vous pouvez limiter les services mis à disposition des utilisateurs. Positionnez le bouton bascule sur **Inactif** pour les services que vous ne souhaitez pas attribuer à ces utilisateurs. Les attributions de licences précédentes sont alors supprimées pour les utilisateurs sélectionnés.
+
 6. Au bas du volet **Remplacer les produits existants**, sélectionnez **Remplacer** \> **Fermer** \> **Fermer**.
 
 ::: moniker-end
@@ -91,3 +105,4 @@ Si vous ne comptez pas réattribuer les licences inutilisées à d’autres [uti
 [Modifier les plans manuellement](change-plans-manually.md) (article)\
 [Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises](../licenses/subscriptions-and-licenses.md) (article)\
 [Acheter un autre abonnement Microsoft 365 pour les entreprises](../try-or-buy-microsoft-365.md) (article)
+

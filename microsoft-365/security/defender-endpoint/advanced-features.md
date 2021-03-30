@@ -1,6 +1,6 @@
 ---
 title: Configurer des fonctionnalités avancées dans Microsoft Defender pour le point de terminaison
-description: Activer les fonctionnalités avancées telles que bloquer un fichier dans Microsoft Defender pour le point de terminaison.
+description: Activer des fonctionnalités avancées telles que bloquer un fichier dans Microsoft Defender pour le point de terminaison.
 keywords: fonctionnalités avancées, paramètres, bloquer un fichier, examen automatisé, résolution automatique, skype, microsoft defender pour l’identité, office 365, azure information protection, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394745"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418115"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurer des fonctionnalités avancées dans Defender pour le point de terminaison
 
@@ -39,10 +39,10 @@ Selon les produits de sécurité Microsoft que vous utilisez, certaines fonction
 ## <a name="enable-advanced-features"></a>Activer les fonctionnalités avancées
 
 1. Dans le volet de navigation, sélectionnez **Préférences configurer les**  >  **fonctionnalités avancées.**
-2. Sélectionnez la fonctionnalité avancée que vous souhaitez configurer et basculez le paramètre entre **« On** » et **« Off**».
+2. Sélectionnez la fonctionnalité avancée que vous souhaitez configurer et basculez le paramètre entre **Le** et **Le.**
 3. Cliquez **sur Enregistrer les préférences.**
 
-Utilisez les fonctionnalités avancées suivantes pour être mieux protégés contre les fichiers potentiellement malveillants et obtenir une meilleure compréhension lors des enquêtes de sécurité.
+Utilisez les fonctionnalités avancées suivantes pour être mieux protégés contre les fichiers potentiellement malveillants et obtenir de meilleures informations pendant les enquêtes de sécurité.
 
 ## <a name="automated-investigation"></a>Examen automatisé
 
@@ -72,6 +72,9 @@ Lorsque ce paramètre est allumé, les alertes sont corrélées en incidents dis
 >La modification de ce paramètre a un impact sur les corrélations d’alertes futures uniquement.
 
 
+## <a name="enable-edr-in-block-mode"></a>Activer EDR en mode bloc
+La détection et la réponse des points de terminaison (EDR) en mode bloc offrent une protection contre les artefacts malveillants, même lorsque l’Antivirus Microsoft Defender s’exécute en mode passif. Lorsqu’elle est allumée, l’EDR en mode blocage bloque les artefacts ou comportements malveillants détectés sur un appareil. L’EDR en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après une violation.
+
 ## <a name="autoresolve-remediated-alerts"></a>Correction automatique des alertes
 
 Pour les locataires créés sur Ou après Windows 10, version 1809, la fonctionnalité d’examen et de correction automatisée est configurée par défaut pour résoudre les alertes où l’état des résultats de l’analyse automatisée est « Aucune menace trouvée » ou « Corrigé ».  Si vous ne souhaitez pas que les alertes se résolvent automatiquement, vous devez désactiver manuellement la fonctionnalité.
@@ -82,11 +85,11 @@ Pour les locataires créés sur Ou après Windows 10, version 1809, la fonctionn
 > [!NOTE]
 >
 > - Le résultat de l’action de résolution automatique peut influencer le calcul du niveau de risque de l’appareil, qui est basé sur les alertes actives trouvées sur un appareil.
-> - Si un analyste d’opérations de sécurité définit manuellement l’état d’une alerte sur « En cours » ou « Résolu », la fonctionnalité de résolution automatique ne l’est pas.
+> - Si un analyste des opérations de sécurité définit manuellement l’état d’une alerte sur « En cours » ou « Résolu », la fonctionnalité de résolution automatique ne l’est pas.
 
 ## <a name="allow-or-block-file"></a>Autoriser ou bloquer un fichier
 
-Le blocage n’est disponible que si votre organisation remplit les conditions ci-après :
+Le blocage n’est disponible que si votre organisation répond aux exigences ci-après :
 
 - Utilise l’Antivirus Microsoft Defender comme solution anti-programme malveillant active et,
 - La fonctionnalité de protection basée sur le cloud est activée
@@ -114,7 +117,15 @@ Pour utiliser cette fonctionnalité, les appareils doivent utiliser Windows 10 v
 Pour plus d’informations, [voir Gérer les indicateurs.](manage-indicators.md)
 
 > [!NOTE]
-> La protection du réseau tire parti des services de réputation qui traiter les demandes à des emplacements qui peuvent se trouve en dehors de l’emplacement que vous avez sélectionné pour vos données Defender pour le point de terminaison.
+> La protection du réseau tire parti des services de réputation qui traiter les demandes dans des emplacements qui peuvent se trouve en dehors de l’emplacement que vous avez sélectionné pour vos données Defender pour le point de terminaison.
+
+
+## <a name="tamper-protection"></a>Protection contre la falsification
+Pendant certains types de cyberattaques, les acteurs malveillants tentent de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos ordinateurs. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils.
+
+La protection contre la falsification verrouille essentiellement l’Antivirus Microsoft Defender et empêche vos paramètres de sécurité d’être modifiés par le biais d’applications et de méthodes.
+
+Maintenez la protection contre la falsification allumée pour empêcher les modifications indésirables apportées à votre solution de sécurité et à ses fonctionnalités essentielles.
 
 ## <a name="show-user-details"></a>Afficher les détails de l’utilisateur
 
@@ -131,7 +142,7 @@ Pour plus d’informations, voir [Examiner un compte d’utilisateur.](investiga
 L’activation de l’intégration de Skype Entreprise vous permet de communiquer avec des utilisateurs à l’aide de Skype Entreprise, du courrier électronique ou du téléphone. Cela peut être pratique lorsque vous avez besoin de communiquer avec l’utilisateur et d’atténuer les risques.
 
 > [!NOTE]
-> Lorsqu’un appareil est isolé du réseau, vous pouvez choisir d’activer les communications Outlook et Skype dans une fenêtre pop-up qui permet d’utiliser les communications avec l’utilisateur pendant qu’il est déconnecté du réseau. Ce paramètre s’applique aux communications Skype et Outlook lorsque les appareils sont en mode d’isolation.
+> Lorsqu’un appareil est isolé du réseau, vous pouvez choisir d’activer les communications Outlook et Skype dans une fenêtre pop-up, ce qui permet de communications à l’utilisateur pendant qu’il est déconnecté du réseau. Ce paramètre s’applique aux communications Skype et Outlook lorsque les appareils sont en mode d’isolation.
 
 ## <a name="azure-advanced-threat-protection-integration"></a>Intégration d’Azure Advanced Threat Protection
 
@@ -149,7 +160,7 @@ Lorsque vous activerez cette fonctionnalité, vous serez en mesure d’incorpore
 > [!NOTE]
 > Vous devez avoir la licence appropriée pour activer cette fonctionnalité.
 
-Pour recevoir l’intégration d’appareils contextuels dans Office 365 Threat Intelligence, vous devez activer les paramètres Defender pour le point de terminaison dans le tableau de bord sécurité & conformité. Pour plus d’informations, voir [Examen des menaces et réponse.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)
+Pour recevoir l’intégration d’appareils contextuels dans Office 365 Threat Intelligence, vous devez activer les paramètres Defender pour le point de terminaison dans le tableau de bord sécurité & conformité. Pour plus d’informations, voir [Examen et réponse aux menaces.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)
 
 ## <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
@@ -171,7 +182,7 @@ L’turning on this setting allows signals to be forwarded to Azure Information 
 
 ## <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
-Envoie les signaux Microsoft Defender for Endpoint au Niveau de sécurité Microsoft dans le Centre de sécurité Microsoft 365. L’exploitation de cette fonctionnalité permet à Microsoft Secure Score de visibilité sur la posture de sécurité de l’appareil. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
+Envoie les signaux De Microsoft Defender pour point de terminaison au Score de sécurité Microsoft dans le Centre de sécurité Microsoft 365. L’exploitation de cette fonctionnalité permet à Microsoft Secure Score de visibilité sur la posture de sécurité de l’appareil. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Activer l’intégration de Microsoft Defender pour les points de terminaison à partir du portail Microsoft Defender pour l’identité
 
@@ -190,7 +201,7 @@ Après avoir effectué les étapes d’intégration sur les deux portails, vous 
 Defender pour le point de terminaison peut être intégré [à Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) pour activer l’accès conditionnel basé sur les risques de [l’appareil.](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) Lorsque vous [activerez cette fonctionnalité,](configure-conditional-access.md)vous serez en mesure de partager des informations sur l’appareil Defender for Endpoint avec Intune, ce qui améliore l’application de la stratégie.
 
 > [!IMPORTANT]
-> Vous devez activer l’intégration sur Intune et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Pour plus d’informations sur les étapes spécifiques, voir [Configurer l’accès conditionnel dans Defender pour endpoint.](configure-conditional-access.md)
+> Vous devez activer l’intégration sur Intune et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Pour plus d’informations sur les étapes spécifiques, voir [Configurer l’accès conditionnel dans Defender pour le point de terminaison.](configure-conditional-access.md)
 
 Cette fonctionnalité est disponible uniquement si vous disposez des fonctionnalités suivantes :
 
@@ -219,4 +230,4 @@ Après avoir configuré les indicateurs de violation de la stratégie de sécuri
 ## <a name="related-topics"></a>Voir aussi
 
 - [Mettre à jour les paramètres de rétention des données](data-retention-settings.md)
-- [Configurer les notifications d’alerte](configure-email-notifications.md)
+- [Configurer des notifications d’alerte](configure-email-notifications.md)

@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84d85b723d4dcbdfc07a074c40241242c57bc390
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185586"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408336"
 ---
-# <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender pour point de terminaison pour Linux
+# <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender pour point de terminaison Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -80,10 +80,15 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
 - Version minimale du noyau 3.10.0-327
 - `fanotify`L’option noyau doit être activée
   > [!CAUTION]
-  > L’exécution de Defender pour Endpoint pour Linux côte à côte avec d’autres solutions de sécurité basées sur `fanotify` n’est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris l’arrêt du système d’exploitation.
+  > L’exécution de Defender pour Endpoint pour Linux côte à côte avec d’autres solutions de sécurité basées sur la sécurité `fanotify` n’est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris la suspension du système d’exploitation.
 
 - Espace disque : 1 Go
-- La solution offre actuellement une protection en temps réel pour les types de système de fichiers suivants :
+- /opt/microsoft/mdatp/sbin/wdavdaemon requiert une autorisation exécutable. Pour plus d’informations, voir « S’assurer que le daemon dispose de l’autorisation exécutable » dans Résoudre les problèmes d’installation de [Microsoft Defender ATP pour Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
+- Mémoire : 1 Go
+    > [!NOTE]
+    > Assurez-vous que vous avez de l’espace disque libre dans /var.
+
+- La solution fournit actuellement une protection en temps réel pour les types de système de fichiers suivants :
 
   - `btrfs`
   - `ecryptfs`
@@ -126,7 +131,7 @@ Defender pour le point de terminaison peut découvrir un serveur proxy à l’ai
 Si un proxy ou un pare-feu bloque le trafic anonyme, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées précédemment. Pour les proxies transparents, aucune configuration supplémentaire n’est nécessaire pour Defender for Endpoint. Pour le proxy statique, suivez les étapes de [la configuration manuelle du proxy statique.](linux-static-proxy-configuration.md)
 
 > [!WARNING]
-> Pac, WPAD et les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seul un proxy statique ou transparent est utilisé.
+> Les pacs, WPAD et les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seul un proxy statique ou transparent est utilisé.
 >
 > L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy pour transmettre directement les données de Defender for Endpoint for Linux aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
 
