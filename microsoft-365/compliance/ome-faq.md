@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 589a28690d1654576ace45edd482b8d67161d616
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394682"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408589"
 ---
 # <a name="message-encryption-faq"></a>FAQ sur le chiffrement des messages
 
@@ -118,7 +118,7 @@ Si un format de fichier est pris en charge, tel qu’un fichier Word, Excel ou P
   
 ## <a name="are-pdf-file-attachments-supported"></a>Les pièces jointes pdf sont-elles pris en charge ?
 
-La réponse courte est oui ! Le chiffrement PDF vous permet de protéger les documents PDF sensibles par le biais d’une communication sécurisée ou d’une collaboration sécurisée. Lorsque vous envoyez un courrier électronique, le service Office 365 chiffre les pièces jointes au format PDF et non le client Outlook.
+La réponse courte est oui ! S’il est activé, le chiffrement PDF vous permet de protéger les documents PDF sensibles par le biais d’une communication sécurisée ou d’une collaboration sécurisée. Lorsque vous envoyez un courrier électronique, le service Office 365 chiffre les pièces jointes au fichier PDF. Le client Outlook ne chiffre pas les pièces jointes au fichier PDF.
 
 Pour Outlook sur le web, Outlook pour iOS et Outlook pour Android, vous pouvez chiffrer les fichiers PDF que vous envoyez sans aucune étape. Ces clients supportent en natif le chiffrement PDF.
 

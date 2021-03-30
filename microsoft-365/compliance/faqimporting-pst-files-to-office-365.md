@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
 description: Cet article contient des réponses aux questions fréquemment posées aux administrateurs sur l’importation de fichiers PST dans Microsoft 365 à l’aide du service d’importation Office 365.
-ms.openlocfilehash: adcc84df7aed25f0d51c8fb6a1899bfa56453854
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d775e7cadb71e47cc916a064386971ecd3d08afc
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906788"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408633"
 ---
 # <a name="faq-about-importing-pst-files"></a>FAQ sur l’importation de fichiers PST
 
-**Cet article est pour les administrateurs. Voulez-vous importer des fichiers PST dans votre propre boîte aux lettres ? Voir [Importer le courrier électronique, les contacts et le calendrier à partir d’un fichier .pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
-   
+**Cet article est réservé aux administrateurs. Voulez-vous importer des fichiers PST dans votre propre boîte aux lettres ? Voir [Importer le courrier électronique, les contacts et le calendrier à partir d’un fichier .pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+
 Voici quelques questions fréquemment posées sur l’utilisation du service d’importation Office 365 pour importer en bloc des fichiers PST dans des boîtes aux lettres Microsoft 365. Pour plus d’informations sur l’importation de fichiers PST, voir Vue d’ensemble de l’importation de fichiers [PST dans Office 365.](./importing-pst-files-to-office-365.md)
   
 ## <a name="using-network-upload-to-import-pst-files"></a>Utilisation du chargement réseau pour importer des fichiers PST
@@ -83,7 +83,7 @@ Par défaut, le processus d’importation PST vérifie s’il existe des éléme
 
  **Y a-t-il une limite de taille applicable aux messages lors de l’importation de fichiers PST ?**
   
-Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément sera ignoré lors du processus d’importation.
+Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément est ignoré et n’est pas importé pendant le processus d’importation. Les éléments dont la taille est supérieure à 150 Mo ne sont pas importés, car la taille limite des messages est de 150 Mo dans Exchange Online. Pour plus d’informations, voir [Limites des messages dans Exchange Online.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
   
  **Les propriétés des messages, comme la date d’envoi ou de réception, la liste de destinataires, etc., sont-elles conservées après l’importation de fichiers PST dans une boîte aux lettres Microsoft 365 ?**
   
@@ -156,7 +156,7 @@ Cela dépend de plusieurs facteurs, comme votre proximité par rapport au centre
   
  **Une fois mon disque dur arrivé au centre de données de Microsoft, combien de temps faut-il pour charger mon fichiers PST dans Azure ?**
   
-Une fois votre disque dur reçu dans le centre de données Microsoft, le chargement des fichiers PST dans l’espace de stockage Azure de votre organisation prendra entre 7 et 10 jours ou jours. Les fichiers PST seront chargés dans un conteneur blob Azure nommé `ingestiondata`. 
+Une fois votre disque dur reçu dans le centre de données Microsoft, le chargement des fichiers PST dans l’espace de stockage Azure de votre organisation prendra entre 7 et 10 jours. Les fichiers PST seront chargés dans un conteneur blob Azure nommé `ingestiondata`.
   
  **Combien de temps faut-il compter avant qu’un fichier PST soit importé dans une boîte aux lettres ?**
   
@@ -178,12 +178,12 @@ Par ailleurs, les fichiers PST issus d’Outlook version 2007 et ultérieures p
   
  **Y a-t-il une limite de taille applicable aux messages lors de l’importation de fichiers PST ?**
   
-Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément sera ignoré lors du processus d’importation.
+Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément est ignoré et n’est pas importé pendant le processus d’importation. Les éléments dont la taille est supérieure à 150 Mo ne sont pas importés, car la taille limite des messages est de 150 Mo dans Exchange Online. Pour plus d’informations, voir [Limites des messages dans Exchange Online.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
   
   **Comment le processus d’importation PST traite-t-il les éléments de courrier en double ?**
 
 Par défaut, le processus d’importation PST vérifie s’il existe des éléments dupliqués et ne copie pas les données d’un fichier PST dans la boîte aux lettres ou l’archive si un élément correspondant existe au sein du dossier cible dans la boîte aux lettres cible ou l’archive cible. Si vous réimportez le même fichier PST et spécifiez un autre dossier cible (à l’aide de la propriété TargetRootFolder dans le fichier de mappage d’importation PST) que celui spécifié dans une tâche d’importation précédente, tous les éléments du fichier PST sont réimportés.
- 
+
  **Les propriétés des messages, comme la date d’envoi ou de réception, la liste de destinataires, etc., sont-elles conservées après l’importation de fichiers PST dans une boîte aux lettres Microsoft 365 ?**
   
 Oui. Les métadonnées du message d’origine sont inchangées pendant l’importation
@@ -224,6 +224,6 @@ Les frais d’expédition de retour varient en fonction de votre proximité par 
   
 Oui.
   
- **Y a-t-il des formalités particulières à effectuer pour expédier un disque dur à l’étranger ?**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-Le disque dur que vous expédiez à Microsoft va peut-être devoir franchir des frontières internationales. Si c’est le cas, il vous appartient de vérifier que le disque dur et les données qu’il contient sont importés et/ou exportés conformément à la législation en vigueur. Avant d’expédier un disque dur, vérifiez auprès de vos conseillers si, du point de vue légal, le disque et les données peuvent être expédiés au centre de données Microsoft spécifié. Vous aurez ainsi la garantie qu’il parviendra à Microsoft dans un délai raisonnable.
+The hard drive that you ship to Microsoft might have to cross international borders. Si c’est le cas, vous devez vous assurer que le disque dur et les données qu’il contient sont importés et/ou exportés conformément aux lois applicables. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

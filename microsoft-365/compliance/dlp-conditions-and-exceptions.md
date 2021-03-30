@@ -1,5 +1,5 @@
 ---
-title: Conditions, exceptions et actions de stratégie DLP (aperçu)
+title: Conditions, exceptions et actions de stratégie DLP
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,22 +14,22 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les conditions et les exceptions de stratégie dlp
-ms.openlocfilehash: 02880a89bf580d94bad4a5dbdce5027b0a194487
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf9bc4ea220c319233a5eaec09352045190883e2
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918010"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418020"
 ---
-# <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>Conditions, exceptions et actions de stratégie DLP (aperçu)
+# <a name="dlp-policy-conditions-exceptions-and-actions"></a>Conditions, exceptions et actions de stratégie DLP
 
-Les conditions et les exceptions dans les stratégies DLP identifient les éléments sensibles à appliquer à la stratégie. Les actions définissent ce qui se produit suite à la définition d’une condition d’exception.
+Les conditions et les exceptions des stratégies DLP identifient les éléments sensibles à appliquer à la stratégie. Les actions définissent ce qui se produit suite à la définition d’une condition d’exception.
 
 - Les conditions définissent ce qu’il faut inclure
 - Les exceptions définissent ce qu’il faut exclure.
 - Les actions définissent ce qui se produit en conséquence de la condition ou de l’exception remplie
  
-La plupart des conditions et des exceptions ont une propriété qui prend en charge une ou plusieurs valeurs. Par exemple, si la stratégie DLP est appliquée  aux e-mails Exchange, la condition « L’expéditeur est » requiert l’expéditeur du message. Certaines conditions ont deux propriétés. Par exemple, la condition **Un en-tête de message inclut n'importe lequel de ces mots** requiert une propriété pour spécifier le champ d'en-tête du message et une deuxième pour spécifier le texte à rechercher dans le champ d'en-tête. Certaines conditions ou exceptions n’ont pas de propriétés. Par exemple, la condition de pièce **jointe protégée** par mot de passe recherche simplement les pièces jointes dans les messages protégés par mot de passe.
+La plupart des conditions et des exceptions ont une propriété qui prend en charge une ou plusieurs valeurs. Par exemple, si la stratégie DLP est appliquée  aux e-mails Exchange, l’expéditeur est une condition qui requiert l’expéditeur du message. Certaines conditions ont deux propriétés. Par exemple, la condition **Un en-tête de message inclut n'importe lequel de ces mots** requiert une propriété pour spécifier le champ d'en-tête du message et une deuxième pour spécifier le texte à rechercher dans le champ d'en-tête. Certaines conditions ou exceptions n’ont pas de propriétés. Par exemple, la condition de pièce **jointe protégée** par mot de passe recherche simplement les pièces jointes dans les messages protégés par mot de passe.
 
 Les actions nécessitent généralement des propriétés supplémentaires. Par exemple, lorsque la règle de stratégie DLP redirige un message, vous devez spécifier l’endroit vers lequel le message est redirigé. 
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
@@ -56,13 +56,15 @@ Les tableaux des sections suivantes décrivent les conditions et les exceptions 
 | L’adresse de l’expéditeur correspond aux modèles    | condition : *FromAddressMatchesPatterns* <br/> exception : *ExceptFromAddressMatchesPatterns*       |      Modèles   |  Messages dans lesquels l'adresse de messagerie de l'expéditeur contient des modèles de texte qui correspondent aux expressions régulières spécifiées.  |
 |Le domaine de l’expéditeur est  |  condition : *SenderDomainIs* <br/> exception : *ExceptIfSenderDomainIs*       |DomainName         |     Messages dans lesquels le domaine de l'adresse de messagerie de l'expéditeur correspond à la valeur spécifiée. Si vous devez rechercher des  domaines d’expéditeur qui contiennent le domaine spécifié (par exemple, n’importe quel sous-domaine d’un domaine), utilisez la condition « The **sender address matches**(*FromAddressMatchesPatterns*) et spécifiez le domaine à l’aide de la syntaxe : ' \. domain \. com$'.    |
 |Étendue de l’expéditeur    | condition : *FromScope* <br/> exception : *ExceptIfFromScope*    | UserScopeFrom    |    Messages envoyés par des expéditeurs internes ou externes.    |
+|Les propriétés spécifiées de l'expéditeur contiennent l'un de ces mots|condition : *SenderADAttributeContainsWords* <br/> exception : *ExceptIfSenderADAttributeContainsWords*|Première propriété : `ADAttribute` <p> Deuxième propriété : `Words`|Messages dans lesquels l'attribut Active Directory spécifié de l'expéditeur contient l'un des mots spécifiés.|
+|Les propriétés spécifiées de l'expéditeur correspondent à ces modèles de texte|condition : *SenderADAttributeMatchesPatterns* <br/> exception : *ExceptIfSenderADAttributeMatchesPatterns*|Première propriété : `ADAttribute` <p> Deuxième propriété : `Patterns`|Messages dans lesquels l'attribut Active Directory spécifié de l'expéditeur contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
 
 ### <a name="recipients"></a>Destinataires
 
 |**condition ou exception dans DLP**| **paramètres condition/exception dans Microsoft 365 PowerShell** |    **type de propriété** | **description**|
 |---------|---------|---------|---------|
 |Le destinataire est|  condition : *SentTo* <br/> exception : *ExceptIfSentTo* | Adresses | Messages dans lequel l’un des destinataires est la boîte aux lettres, l’utilisateur de messagerie ou le contact de messagerie spécifié dans l’organisation. Les destinataires peuvent se trouver dans les champs **À,** **Cc** ou **Cci** du message.|
-|Le domaine du destinataire est|   condition : *RecipientDomainIs* <br/> exception : *ExceptIfRecipientDomainIs* |   DomainName |    Messages dans lesquels le domaine de l'adresse de messagerie de l'expéditeur correspond à la valeur spécifiée.|
+|Le domaine du destinataire est|   condition : *RecipientDomainIs* <br/> exception : *ExceptIfRecipientDomainIs* |   DomainName |    Messages dans lequel le domaine de l’adresse e-mail du destinataire correspond à la valeur spécifiée.|
 |L’adresse du destinataire contient des mots|  condition : *AnyOfRecipientAddressContainsWords* <br/> exception : *ExceptIfAnyOfRecipientAddressContainsWords*|  Mots|  Messages contenant les mots spécifiés dans l'adresse du destinataire. <br/>**Remarque** : cette condition ne tient pas compte des messages qui sont envoyés aux adresses proxy du destinataire. Elle correspond uniquement aux messages qui sont envoyés à l’adresse de messagerie principale du destinataire.|
 |L’adresse du destinataire correspond aux modèles| condition : *AnyOfRecipientAddressMatchesPatterns* <br/> exception : *ExceptIfAnyOfRecipientAddressMatchesPatterns*| Modèles    |Messages dans lesquels l'adresse de messagerie du destinataire contient des modèles de texte qui correspondent aux expressions régulières spécifiées. <br/> **Remarque** : cette condition ne tient pas compte des messages qui sont envoyés aux adresses proxy du destinataire. Elle correspond uniquement aux messages qui sont envoyés à l’adresse de messagerie principale du destinataire.|
 |Envoyé au membre de| condition : *SentToMemberOf* <br/> exception : *ExceptIfSentToMemberOf*|  Adresses|  Messages contenant des destinataires qui sont membres du groupe de distribution spécifié, du groupe de sécurité à messagerie ou du groupe Microsoft 365. Le groupe peut se trouver dans les champs **To**, **Cc** ou **Bcc** du message.|
@@ -90,6 +92,8 @@ Les tableaux des sections suivantes décrivent les conditions et les exceptions 
 |Le nom du document correspond aux modèles|condition : *DocumentNameMatchesPatterns* <br/> exception : *ExceptIfDocumentNameMatchesPatterns*|    Modèles    |Messages dans lesquels le nom de fichier d'une pièce jointe contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
 |La propriété du document est|condition : *ContentPropertyContainsWords* <br/> exception : *ExceptIfContentPropertyContainsWords* |Mots| Messages ou documents dans lequel l’extension de fichier d’une pièce jointe correspond à l’un des mots spécifiés.|
 |La taille du document est égale ou supérieure à| condition : *DocumentSizeOver* <br/> exception : *ExceptIfDocumentSizeOver*|    Size    |Messages dans lesquels toutes les pièces jointes sont supérieures ou égales à la valeur spécifiée.|
+|Un contenu de pièce jointe, quel qu’il soit, comprend l’un de ces mots| condition : *DocumentContainsWords* <br/> exception : *ExceptIfDocumentContainsWords* |`Words`|Messages dans lesquels une pièce jointe contient les mots spécifiés.|
+|Le contenu des pièces jointes correspond à ces modèles de texte|condition : *DocumentMatchesPatterns* <br/> exception : *ExceptIfDocumentMatchesPatterns* |`Patterns`|Messages dans lesquels une pièce jointe contient des modèles de texte qui correspondent aux expressions régulières spécifiées. |
 
 ### <a name="message-headers"></a>En-têtes de message
 
@@ -102,11 +106,11 @@ Les tableaux des sections suivantes décrivent les conditions et les exceptions 
 
 |**condition ou exception dans DLP**| **paramètres condition/exception dans Microsoft 365 PowerShell**| **type de propriété**   |**description**|
 |---------|---------|---------|---------|
-|Taille du message plus|condition : *MessageSizeOver* <br/> exception : *ExceptIfMessageSizeOver*| Size    |Messages dans lesquels la taille totale (message plus pièces jointes) est supérieure ou égale à la valeur spécifiée. <br/>**Remarque**: Les limites de taille des messages dans les boîtes aux lettres sont évaluées avant les règles de flux de messagerie. Si un message est trop volumineux pour une boîte aux lettres, il est refusé avant qu'une règle avec cette condition puisse agir sur le message.  |
 | Avec importance    | condition : *WithImportance* <br/> exception : *ExceptIfWithImportance*    | Importance    | Messages marqués avec le niveau d’importance spécifié.    |
 | Le jeu de caractères de contenu contient des mots    | condition : *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Messages qui contiennent l'un des noms de jeux de caractères spécifiés.    |
 | A le remplacement de l’expéditeur    | condition : *HasSenderOverride* <br/> exception : *ExceptIfHasSenderOverride*    | s/o    | Messages dans lesquels l'expéditeur a choisi de remplacer une stratégie de protection contre la perte de données (DLP). Pour plus d’informations sur les stratégies DLP, voir [Protection contre la perte de données.](./data-loss-prevention-policies.md)   |
 | Correspondances de type de message    | condition : *MessageTypeMatches* <br/> exception : *ExceptIfMessageTypeMatches*    | MessageType    | Messages du type spécifié.    |
+|La taille du message est supérieure ou égale à| condition : *MessageSizeOver* <br/> exception : *ExceptIfMessageSizeOver* |`Size`|Messages dans lesquels la taille totale (message plus pièces jointes) est supérieure ou égale à la valeur spécifiée. **Remarque**: Les limites de taille des messages dans les boîtes aux lettres sont évaluées avant les règles de flux de messagerie. Si un message est trop volumineux pour une boîte aux lettres, il est refusé avant qu'une règle avec cette condition puisse agir sur le message.|
 
 ## <a name="actions-for-dlp-policies"></a>Actions pour les stratégies DLP
 
@@ -122,5 +126,6 @@ Ce tableau décrit les actions disponibles dans DLP.
 |Transmettre le message pour approbation à des approuveurs spécifiques| Modéré|Première propriété : *ModerateMessageByUser*</br>Deuxième propriété : *Addresses*|Le paramètre Moderate spécifie une action pour la règle DLP qui envoie le message électronique à un modérateur. Ce paramètre utilise la syntaxe : @{ ModerateMessageByUser = @(« emailaddress1 »,"emailaddress2 »,..."emailaddressN »)}|
 |Ajouter un destinataire|AddRecipients|Première propriété : *Field*</br>Deuxième propriété : *Addresses*| Ajoute un ou plusieurs destinataires au champ À/Cc/Cci du message. Ce paramètre utilise la syntaxe : @{<AddToRecipients \| CopyTo \| BlindCopyTo> = « emailaddress"}|
 |Ajouter le responsable de l’expéditeur en tant que destinataire|AddRecipients | Première propriété : *AddedManagerAction*</br>Deuxième propriété : *Field* | Ajoute le responsable de l'expéditeur au message en tant que type de destinataire spécifié ( To, Cc, Bcc ) ou redirige vers le responsable de l'expéditeur sans notification à l'expéditeur ou au destinataire. Cette action fonctionne uniquement si l'attribut Manager de l'expéditeur est défini dans Active Directory. Ce paramètre utilise la syntaxe : @{AddManagerAsRecipientType = « <To \| Cc \| Bcc>"}|    
-Prédépender l’objet    |PrependSubject    |String    |Ajoute le texte spécifié au début du champ Subject du message. Envisagez d'utiliser un espace ou un signe deux-points (:) comme dernier caractère du texte spécifié pour le différencier du texte de l'objet d'origine.</br>Pour empêcher l’ajout de la même chaîne aux messages qui contiennent déjà le texte dans l’objet (par exemple, les réponses), ajoutez l’exception « L’objet contient des mots » (ExceptIfSubjectContainsWords) à la règle.    |
-Appliquer une clause d’exclusion de responsabilité HTML    |ApplyHtmlDisclaimer    |Première propriété : *Text*</br>Deuxième propriété : *Location*</br>Troisième propriété : *action de retour*    |Applique la clause d’exclusion de responsabilité HTML spécifiée à l’emplacement requis du message.</br>Ce paramètre utilise la syntaxe : @{ Text = " ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }
+Prédépender l’objet    |PrependSubject    |String    |Ajoute le texte spécifié au début du champ Subject du message. Envisagez d'utiliser un espace ou un signe deux-points (:) comme dernier caractère du texte spécifié pour le différencier du texte de l'objet d'origine.</br>Pour empêcher l’ajout de la même chaîne aux messages qui contiennent déjà le texte dans l’objet (par exemple, les réponses), ajoutez l’exception « L’objet contient des mots » (ExceptIfSubjectContainsWords) à la règle.    
+|Appliquer une clause d’exclusion de responsabilité HTML    |ApplyHtmlDisclaimer    |Première propriété : *Text*</br>Deuxième propriété : *Location*</br>Troisième propriété : *action de retour*    |Applique la clause d’exclusion de responsabilité HTML spécifiée à l’emplacement requis du message.</br>Ce paramètre utilise la syntaxe : @{ Text = " ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }
+|Supprimer le chiffrement de messages Office 365 et la protection des droits    | RemoveRMSTemplate | s/o| Supprime le chiffrement Office 365 appliqué à un e-mail|
