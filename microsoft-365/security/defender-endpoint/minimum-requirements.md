@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1b203a29083aaa4a1f86abcd7e2c7b24bd63f186
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379489"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445743"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -54,6 +54,7 @@ Microsoft Defender pour le point de terminaison nécessite l’une des offres de
 > [!NOTE]
 > Les utilisateurs titulaires d’une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus.
 > Microsoft Defender pour le point de terminaison est également disponible à l’achat auprès d’un fournisseur de solutions Cloud (CSP).
+> Les VM RDSH ne nécessitent pas de licence Defender for Endpoint distincte.
 
 Microsoft Defender pour le point de terminaison pour les serveurs nécessite l’une des options de licence suivantes :
 

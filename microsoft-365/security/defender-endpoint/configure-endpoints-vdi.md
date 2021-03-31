@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 167db9b5da841528e95f167b3af6a840b6c71eb4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165560"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445285"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
@@ -34,28 +34,31 @@ ms.locfileid: "51165560"
 - Périphériques VDI (Virtual Desktop Infrastructure)
 - Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
 Defender pour le point de terminaison prend en charge l’intégration de session VDI non persistante. 
 
 
-Il peut y avoir des difficultés associées lors de l’intégration des VDIs. Voici quelques défis classiques pour ce scénario :
+Il peut y avoir des difficultés associées lors de l’intégration des VDIs. Les défis classiques de ce scénario sont les suivants :
 
 - Intégration anticipée instantanée d’une session à durée de vie courte, qui doit être intégré à Defender for Endpoint avant la mise en service réelle.
 - Le nom de l’appareil est généralement réutilisé pour les nouvelles sessions.
 
 Les appareils VDI peuvent apparaître dans le portail Defender for Endpoint sous la forme :
 
-- Entrée unique pour chaque appareil.  
-Notez que dans  ce cas, le même nom d’appareil doit être configuré lors de la création de la session, par exemple à l’aide d’un fichier de réponses sans surveillance.
+- Entrée unique pour chaque appareil.
+
+  > [!NOTE]
+  > Dans ce cas, le *même* nom d’appareil doit être configuré lors de la création de la session, par exemple à l’aide d’un fichier de réponses sans surveillance.
+
 - Plusieurs entrées pour chaque appareil - une pour chaque session.
 
 Les étapes suivantes vous guident tout au long de l’intégration des appareils VDI et mettent en évidence les étapes pour les entrées simples et multiples.
 
 >[!WARNING]
-> Pour les environnements où il existe des configurations de ressources faibles, la procédure de démarrage VDI peut ralentir l’intégration du capteur Defender for Endpoint. 
+> Pour les environnements dans lequel il existe des configurations de ressources faibles, la procédure de démarrage VDI peut ralentir l’intégration du capteur Defender for Endpoint. 
 
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>Pour Windows 10 ou Windows Server 2019
@@ -84,31 +87,39 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
    > [!NOTE]
    > La stratégie de groupe de domaine peut également être utilisée pour l’intégration d’appareils VDI non persistants.
 
-4. Selon la méthode que vous souhaitez implémenter, suivez les étapes appropriées : <br>
-   **Pour une entrée unique pour chaque appareil**:<br>
+4. Selon la méthode que vous souhaitez implémenter, suivez les étapes appropriées :
+
+   - Pour une entrée unique pour chaque appareil :
    
-   Sélectionnez **l’onglet Scripts PowerShell,** puis cliquez sur Ajouter (l’Explorateur Windows s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment).  Accédez au script PowerShell `Onboard-NonPersistentMachine.ps1` d’intégration.
+     Sélectionnez **l’onglet Scripts PowerShell,** puis cliquez sur Ajouter (l’Explorateur Windows s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment).  Accédez au script PowerShell `Onboard-NonPersistentMachine.ps1` d’intégration. Il n’est pas nécessaire de spécifier l’autre fichier, car il sera déclenché automatiquement.
    
-   **Pour plusieurs entrées pour chaque appareil**:
+   - Pour plusieurs entrées pour chaque appareil :
    
-   Sélectionnez **l’onglet Scripts,** puis cliquez sur Ajouter (l’Explorateur Windows s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment).  Accédez au script Bash `WindowsDefenderATPOnboardingScript.cmd` d’intégration.
+     Sélectionnez **l’onglet Scripts,** puis cliquez sur Ajouter (l’Explorateur Windows s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment).  Accédez au script Bash `WindowsDefenderATPOnboardingScript.cmd` d’intégration.
 
 5. Testez votre solution :
 
    1. Créez un pool avec un seul appareil.
       
-   1. Se logo à l’appareil.
+   1. Logon à l’appareil.
       
    1. Ffage de la logo à partir de l’appareil.
 
    1. Se rendre sur l’appareil avec un autre utilisateur.
       
-   1. **Pour une entrée unique pour chaque appareil :** vérifiez une seule entrée dans le Centre de sécurité Microsoft Defender.<br>
-      **Pour plusieurs entrées pour chaque appareil :** vérifiez plusieurs entrées dans le Centre de sécurité Microsoft Defender.
+   1. Selon la méthode que vous souhaitez implémenter, suivez les étapes appropriées :
+   
+      - Pour une entrée unique pour chaque appareil : 
+    
+        Vérifiez une seule entrée dans le Centre de sécurité Microsoft Defender.
+
+      - Pour plusieurs entrées pour chaque appareil : 
+       
+        Vérifiez plusieurs entrées dans le Centre de sécurité Microsoft Defender.
 
 6. Cliquez **sur La liste Appareils** dans le volet de navigation.
 
-7. Utilisez la fonction de recherche en entrant le nom de l’appareil et sélectionnez **Appareil** comme type de recherche.
+7. Utilisez la fonction de recherche en entrant le nom de l’appareil et **sélectionnez Appareil** comme type de recherche.
 
 
 ## <a name="for-downlevel-skus"></a>Pour les SSO de niveau bas
@@ -118,14 +129,14 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 1. Définissez la valeur de Registre sur :
 
-    ```reg
+    ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
     ```
 
     ou à l’aide de la ligne de commande :
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 
@@ -133,7 +144,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images DDI (Virtual Desktop Infrastructure) non persistantes
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images VDI (Virtual Desktop Infrastructure) non persistantes
 En tant que meilleure pratique, nous vous recommandons d’utiliser des outils de maintenance hors connexion pour mettre à jour les images de base/de base.<br>
 Par exemple, vous pouvez utiliser les commandes ci-dessous pour installer une mise à jour pendant que l’image reste hors connexion :
 

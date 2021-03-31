@@ -1,6 +1,6 @@
 ---
-title: Régions et langues prises en charge
-description: Régions et langues pris en charge par Bureau géré Microsoft
+title: Régions pris en charge
+description: Régions pris en charge par Bureau géré Microsoft
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -12,25 +12,22 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 5fbf18247626bdfcfe5dcb04c8ba892ffa7a140f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 99f44398bc95958ca890ddcd4203b50ff95034b4
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163470"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445309"
 ---
-# <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Régions et langues de Bureau géré Microsoft pris en charge
+# <a name="microsoft-managed-desktop-supported-regions"></a>Régions de bureau géré Microsoft pris en charge
 
-Cet article fournit des détails sur les régions et les langues pris en charge par Bureau géré Microsoft et sur les régions où vous pouvez l’utiliser.
+Cet article fournit des détails sur les régions où vous pouvez utiliser Bureau géré Microsoft et où il est pris en charge. Pour plus d’informations sur les langues gérées par Microsoft Managed Desktop pour l’expérience utilisateur, voir [Localize devices for users](../get-started/localization.md).
 
-## <a name="supported-languages"></a>Langues prises en charge
+Vous pouvez toujours utiliser des appareils gérés en dehors de ces régions sans interruption du service Bureau géré Microsoft. Par exemple, un employé basé au Royaume-Uni peut travailler en toute sécurité et recevoir des mises à jour sur son appareil géré lors de ses déplacements en Asie, en Europe ou en Amérique du Sud.
 
-L’anglais est la seule langue disponible pour les utilisateurs de Bureau géré Microsoft. Cette stratégie inclut toutes les interfaces utilisateur pour les utilisateurs et les administrateurs, ainsi que toutes les interactions avec le support de l’administrateur [et](../working-with-managed-desktop/admin-support.md) le [support utilisateur.](../working-with-managed-desktop/end-user-support.md)
+Pour plus d’informations sur les langues pris en charge par le Bureau géré Microsoft pour les expériences utilisateur et d’administration, voir [Localize the user experience](../get-started/localization.md).
 
-
-Vous pouvez toujours utiliser des appareils gérés en dehors des régions de langue anglaise sans interruption du service Bureau géré Microsoft. Par exemple, un employé basé au Royaume-Uni peut travailler en toute sécurité et recevoir des mises à jour sur son appareil géré lors de ses déplacements en Asie, en Europe ou en Amérique du Sud. 
-
-Pour plus d’informations sur la prise en charge par les utilisateurs avec Bureau géré Microsoft, voir [Support for Microsoft Managed Desktop](./support.md).
+Pour plus d’informations sur la prise en charge par les utilisateurs avec Bureau géré Microsoft, voir [Support for Microsoft Managed Desktop](support.md).
 
 ## <a name="availability-of-the-service"></a>Disponibilité du service
 
@@ -51,4 +48,3 @@ Les organisations des pays suivants peuvent s’abonner au Bureau géré Microso
 - Australie
 - Nouvelle-Zélande
 
-Les utilisateurs et les administrateurs de ces régions doivent utiliser l’anglais pour leurs appareils et outils de gestion.

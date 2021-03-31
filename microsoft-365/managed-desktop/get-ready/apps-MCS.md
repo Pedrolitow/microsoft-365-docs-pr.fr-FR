@@ -1,20 +1,23 @@
 ---
 title: Utilisation de Microsoft Consulting Services
-description: préparation et étapes à suivre pour travailler avec MCS afin de mettre en package vos applications
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation, applications, MCS, empaquetage
+description: Préparation et étapes à suivre pour travailler avec MCS afin de mettre en package vos applications
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04b0c7905c83be2afa46abcfb2d4bb5cd9735e06
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 1441ca3305a5f3e5a83ddd5e1547812f08d7d96b
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909225"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445695"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Utilisation de Microsoft Consulting Services
 
@@ -25,13 +28,13 @@ Vous pouvez utiliser Microsoft Consulting Services (MCS) pour obtenir vos applic
 Pour travailler avec l’empaquetage d’application MCS, **vous devez fournir les éléments ci-après**:
 
 - Fichiers du programme d’installation source (par exemple, setup.exe ou .msi).
-- Instructions d’installation, spécifiant des détails sur l’apparence de l’installation finale. Par exemple, doit-il y avoir un raccourci bureau vers l’application ? Quelle doit être la visibilité de l’application ? L’application doit-elle se connecter à un serveur et, si c’est le cas, laquelle ? Pour plus d’informations, voir le modèle de demande [d’empaquetage d’application.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)
+- Instructions d’installation spécifiant l’apparence de l’installation finale. Par exemple, doit-il y avoir un raccourci bureau vers l’application ? Quelle doit être la visibilité de l’application ? L’application doit-elle se connecter à un serveur et, si c’est le cas, laquelle ? Pour plus d’informations, voir le modèle de demande [d’empaquetage d’application.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)
 - Vous devez effectuer vos propres tests d’acceptation pour vérifier que l’application fonctionne comme vous le souhaitez dans votre environnement.
 
 **MCS s’occupe des actions ci-après :**
 
 - Vérification de l’interdiction ou de la restriction de l’application dans l’environnement Bureau géré Microsoft.
-- Test de l’installation, du démarrage et de la désinstallation de l’application pour garantir la compatibilité avec Windows 10. Si MCS découvre un problème de compatibilité, il va remettre l’application au programme [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) pour correction.
+- Test de l’installation, du démarrage et de la désinstallation de l’application pour garantir la compatibilité avec Windows 10. Si MCS découvre un problème de compatibilité, il va remettre l’application au programme [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) pour correction.
 - Empaquetage de l’application selon vos spécifications, puis test du déploiement de l’application à l’aide de Microsoft Intune.
 
 ## <a name="app-delivery-schedule"></a>Planification de remise des applications
@@ -46,12 +49,12 @@ Une fois l’application livrée, vous en serez informé. À ce stade, vous avez
 
 Pour que l’équipe de packaging termine la migration vers Microsoft Intune, nous vous recommandons de fournir certaines autorisations :
  
--   Accès aux fonctionnalités de déploiement d’applications de Microsoft Intune pour que le package ajoute et affecte l’application 
--   Tester les groupes, les comptes d’utilisateur et les licences pour que les packageurs puissent tester les applications
+-   Accès aux fonctionnalités de déploiement d’application de Microsoft Intune pour le packager afin d’ajouter et d’affecter l’application 
+-   Tester les groupes, les comptes d’utilisateur et les licences des packageurs pour pouvoir tester les applications
 
 MCS utilisera ces autorisations pour effectuer les actions suivantes :
  
 -   S’assurer que l’application fonctionne sur une machine virtuelle configurée pour le Bureau géré Microsoft
 -   Téléchargement de l’application vers Microsoft Intune pour le déploiement vers vos utilisateurs
 
-Sans ces autorisations, mcS peut avancer, mais il ne pourra pas télécharger les applications dans votre environnement.
+Sans ces autorisations, mcS peut avancer, mais il ne pourra pas télécharger les applications vers votre environnement.

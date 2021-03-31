@@ -1,27 +1,32 @@
 ---
 title: Inscrivez vous-même les appareils existant
 description: Inscrire les appareils réutilisés que vous avez peut-être déjà vous-même afin qu’ils soient gérés par Bureau géré Microsoft
-ms.prod: w10
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: medium
-ms.openlocfilehash: c2ba687b38f1de4d2ed09b0bd690e02b43f15f8d
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
+ms.openlocfilehash: 1703e4ed4ea0f3306edf6fdf07ab9c97a9266d4f
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840514"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445565"
 ---
 # <a name="register-existing-devices-yourself"></a>Inscrivez vous-même les appareils existant
 
 >[!NOTE]
->Cette rubrique décrit les étapes à suivre pour réutiliser les appareils que vous avez déjà et les inscrire dans Bureau géré Microsoft. Si vous travaillez avec de nouveaux appareils, suivez les étapes de l’inscription des nouveaux appareils dans Bureau géré [Microsoft](register-devices-self.md) vous-même.
+>Cette rubrique décrit les étapes à suivre pour réutiliser les appareils que vous avez déjà et les inscrire dans Bureau géré Microsoft. Si vous travaillez avec de nouveaux appareils, suivez plutôt les étapes de l’enregistrement des nouveaux appareils dans Bureau géré [Microsoft.](register-devices-self.md)
 
 Le processus pour les partenaires est documenté dans la procédure [d’inscription](register-devices-partner.md)des appareils par les partenaires.
 
-Bureau géré Microsoft peut fonctionner avec de nouveaux appareils ou vous pouvez réutiliser les appareils que vous avez peut-être déjà (ce qui nécessite de les réimager). Vous pouvez inscrire des appareils avec Bureau géré Microsoft dans le portail Microsoft Endpoint Manager.
+Bureau géré Microsoft peut fonctionner avec de nouveaux appareils ou vous pouvez réutiliser les appareils que vous avez peut-être déjà (ce qui nécessitera de les réimager). Vous pouvez inscrire des appareils avec Bureau géré Microsoft dans le portail Microsoft Endpoint Manager.
 
 ## <a name="prepare-to-register-existing-devices"></a>Préparer l’inscription des appareils existants
 
@@ -64,7 +69,7 @@ Pour plus [d’informations, voir Inscrire](#register-devices-by-using-the-admin
 
 #### <a name="active-directory-powershell-script-method"></a>Méthode de script PowerShell Active Directory
 
-Dans un environnement Active Directory, vous pouvez utiliser l’applet de commande PowerShell pour collecter à distance les informations des appareils des groupes Active Directory à l’aide de `Get-WindowsAutoPilotInfo` WinRM. Vous pouvez également utiliser la cmdlet et obtenir des résultats filtrés pour un nom de modèle matériel spécifique `Get-AD Computer` inclus dans le catalogue. Avant de continuer, confirmez d’abord ces conditions préalables, puis procédez comme il se peut :
+Dans un environnement Active Directory, vous pouvez utiliser l’applet de commande PowerShell pour collecter à distance les informations des appareils des groupes Active Directory à l’aide de `Get-WindowsAutoPilotInfo` WinRM. Vous pouvez également utiliser la cmdlet et obtenir des résultats filtrés pour un nom de modèle matériel spécifique `Get-AD Computer` inclus dans le catalogue. Avant de poursuivre, confirmez d’abord ces conditions préalables, puis procédez comme vous le souhaitez :
 
 - WinRM est activé.
 - Les appareils que vous souhaitez inscrire sont actifs sur le réseau (c’est-à-dire qu’ils ne sont pas déconnectés ou désactivés).
@@ -77,7 +82,7 @@ Dans un environnement Active Directory, vous pouvez utiliser l’applet de comma
 
 1.  Ouvrez une invite PowerShell avec des droits d’administration.
 
-2.  Exécutez *l’un* des scripts suivants :
+2.  Exécutez *l’un* de ces scripts :
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -94,7 +99,7 @@ Dans un environnement Active Directory, vous pouvez utiliser l’applet de comma
 
 4. Accéder aux services de gestion où il peut y avoir des entrées pour les appareils. Supprimez les entrées de chaque appareil de tous les services de gestion, y compris Microsoft Endpoint Configuration Manager, Microsoft Intune et Windows Autopilot.  N’ignorez pas que le processus de suppression peut prendre quelques heures.
 
-Vous pouvez maintenant enregistrer [des appareils.](#register-devices-by-using-the-admin-portal)
+Vous pouvez désormais inscrire [des appareils.](#register-devices-by-using-the-admin-portal)
 
 #### <a name="manual-powershell-script-method"></a>Méthode de script PowerShell manuelle
 
@@ -108,7 +113,7 @@ Vous pouvez maintenant enregistrer [des appareils.](#register-devices-by-using-t
 1. Sur un appareil autre que celui que vous inscrivez, insérez un lecteur USB.
 2. Ouvrez une invite PowerShell avec des droits d’administration.
 3. Exécuter `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience d’installation.* Si vous démarrez accidentellement l’expérience d’installation, vous devez réinitialiser ou réinitialiser l’appareil.
+4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience de configuration.* Si vous démarrez accidentellement l’installation, vous devez réinitialiser ou réinitialiser l’appareil.
 5. Insérez le lecteur USB, puis appuyez sur Shift + F10.
 6. Ouvrez une invite PowerShell avec des droits d’administration, puis exécutez `cd <pathToUsb>` .
 7. Exécuter `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
@@ -146,7 +151,7 @@ Procédez comme suit :
 
 1. Dans **le chargement de** fichier, fournissez un chemin d’accès au fichier CSV que vous avez créé précédemment.
 
-1. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur le blade **Devices**, marqué comme **étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et en attente qu’un utilisateur commence à l’utiliser. 
+1. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur le blade **Devices**, marqué comme **Étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et attend qu’un utilisateur commence à l’utiliser. 
 
 
 Vous pouvez surveiller la progression de l’inscription de l’appareil sur la page principale. Les états possibles signalés sont les suivants :
@@ -155,7 +160,7 @@ Vous pouvez surveiller la progression de l’inscription de l’appareil sur la 
 |---------------|-------------|
 | Inscription en attente | L’inscription n’est pas encore terminée. Revenir plus tard. |
 | Échec de l’inscription | L’inscription n’a pas pu être terminée. Pour plus [d’informations, voir](#troubleshooting-device-registration) Résolution des problèmes d’inscription de l’appareil. |
-| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Le Bureau géré Microsoft les guide tout au long de leur première mise en place. Vous n’avez donc pas besoin d’autres préparations. |
+| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Le Bureau géré Microsoft les guide tout au long de la première phase de mise en place, il n’est donc pas nécessaire d’y faire d’autres préparations. |
 | Actif | L’appareil a été remis à l’utilisateur et il s’est inscrit auprès de votre client. Cela indique également qu’ils utilisent régulièrement l’appareil. |
 | Inactif | L’appareil a été remis à l’utilisateur et il s’est inscrit auprès de votre client. Toutefois, ils n’ont pas utilisé l’appareil récemment (au cours des 7 derniers jours).  | 
 
@@ -173,7 +178,7 @@ Vous pouvez surveiller la progression de l’inscription de l’appareil sur la 
 
 Si votre appareil est issu d’un fournisseur de partenaire Bureau géré Microsoft, l’image doit être correcte.
 
-Vous pouvez également appliquer l’image vous-même si vous le souhaitez. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
+Vous pouvez également appliquer l’image vous-même si vous préférez. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
 
 ### <a name="deliver-the-device"></a>Remettre l’appareil
 

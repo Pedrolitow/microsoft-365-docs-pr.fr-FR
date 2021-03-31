@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: overview
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.IngestionHelp
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser le Service d’importation dans le Centre de sécurité et de conformité pour importer en bloc des données de courrier (fichiers PST) vers des boîtes aux lettres d’utilisateurs.
-ms.openlocfilehash: 6d0bca6d76a0eccb9bc8181e73f2c36c51acaf77
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c645228598eb9cf0e6edca7104b8977e7eaf72f7
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911318"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408535"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Vue d’ensemble de l’importation des fichiers PST de votre organisation
 
@@ -66,7 +66,7 @@ Voici une illustration et une description du processus d’importation de fichie
     
 4. **Créer une tâche d’importation de fichiers PST :** l’étape suivante consiste à créer une tâche d’importation de fichiers PST sur la page **Importer des fichiers PST** dans le Centre de sécurité et de conformité et à envoyer le fichier de mappage d’importation PST créé à l’étape précédente. Pour le chargement réseau (étant donné que les fichiers PST ont été chargés sur Azure), Microsoft 365 analyse les données contenues dans les fichiers PST, puis vous permet de définir des filtres qui contrôlent les données réellement importées dans les boîtes aux lettres spécifiées dans le fichier de mappage d’importation de fichiers PST. 
     
-    Pour l’expédition de disque, quelques opérations supplémentaires se produisent à ce stade du processus.
+    Pour une expédition de disque, quelques opérations supplémentaires se produisent à ce stade du processus.
     
     - Vous expédiez physiquement le disque dur à un centre de données Microsoft (l’adresse d’expédition du centre de données Microsoft s’affiche lorsque la tâche d’importation est créée).
     
@@ -178,7 +178,7 @@ Par défaut, le processus d’importation PST vérifie s’il existe des éléme
  
  **Y a-t-il une limite de taille applicable aux messages lors de l’importation de fichiers PST ?**
   
-Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément sera ignoré lors du processus d’importation.
+Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément sera ignoré lors du processus d’importation. Les éléments de plus de 150 Mo ne sont pas importés, car 150 Mo est la limite de taille des messages dans Exchange Online. Pour plus d'informations, consultez [Limites de messages dans Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
  **Les propriétés des messages, comme la date d’envoi ou de réception, la liste de destinataires, etc., sont-elles conservées après l’importation de fichiers PST dans une boîte aux lettres Microsoft 365 ?**
   
@@ -271,7 +271,7 @@ Par ailleurs, les fichiers PST issus d’Outlook version 2007 et ultérieures p
   
  **Y a-t-il une limite de taille applicable aux messages lors de l’importation de fichiers PST ?**
   
-Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément sera ignoré lors du processus d’importation.
+Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément sera ignoré lors du processus d’importation. Les éléments de plus de 150 Mo ne sont pas importés, car 150 Mo est la limite de taille des messages dans Exchange Online. Pour plus d'informations, consultez [Limites de messages dans Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
   **Comment le processus d’importation PST traite-t-il les éléments de courrier en double ?**
 
@@ -317,6 +317,6 @@ Les frais d’expédition de retour varient en fonction de votre proximité par 
   
 Oui.
   
- **Y a-t-il des formalités particulières à effectuer pour expédier un disque dur à l’étranger ?**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-Le disque dur que vous expédiez à Microsoft va peut-être devoir franchir des frontières internationales. Si c’est le cas, il vous appartient de vérifier que le disque dur et les données qu’il contient sont importés et/ou exportés conformément à la législation en vigueur. Avant d’expédier un disque dur, vérifiez auprès de vos conseillers si, du point de vue légal, le disque et les données peuvent être expédiés au centre de données Microsoft spécifié. Vous aurez ainsi la garantie qu’il parviendra à Microsoft dans un délai raisonnable.
+The hard drive that you ship to Microsoft might have to cross international borders. Dans ce cas, vous avez la responsabilité de l’importation et ou de l’exportation du disque dur et des données qu’il contient, conformément à la législation en vigueur. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

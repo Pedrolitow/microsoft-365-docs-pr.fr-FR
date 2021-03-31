@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder aux ressources locales telles que les applications métier, les partages de fichiers et les imprimantes à partir d’un appareil Windows 10 joint à Azure Active Directory.
-ms.openlocfilehash: b78509d72cbd9b3c121039c4965625bf5c21c7e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1bca0beb3ccc78e670ad33ce446b9b3f7c372ba7
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913519"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445345"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources sur site à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 
@@ -61,6 +61,10 @@ Si l’appareil Windows que vous avez joint à Azure-AD était précédemment jo
 
 - Si l’appareil utilise des objets de stratégie de groupe (GPO), certains objets de stratégie de groupe peuvent ne pas avoir de fournisseur de services de [configuration](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) comparable dans Intune. Exécutez [l’outil MMAT](https://www.microsoft.com/download/details.aspx?id=45520) pour rechercher des CSP comparables pour les GME existants.
 
-- Les utilisateurs peuvent ne pas être en mesure de s’authentifier aux applications qui dépendent de l’authentification Active Directory. Évaluez l’application héritée et envisagez la mise à jour vers une application qui utilise l’th moderne, si possible.
+- Les utilisateurs peuvent ne pas être en mesure de s’authentifier aux applications qui dépendent de l’authentification Active Directory. Évaluez l’application héritée et envisagez de la mettre à jour vers une application qui utilise l’th moderne, si possible.
 
 - La découverte d’imprimantes Active Directory ne fonctionne pas. Vous pouvez fournir des chemins d’impression directs pour tous les utilisateurs ou utiliser [l’impression universelle.](/universal-print/)
+
+### <a name="related-articles"></a>Articles connexes
+
+[Conditions préalables pour Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)

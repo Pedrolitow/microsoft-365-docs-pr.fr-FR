@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56645553c43289995012d53d7caf879874e65c8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 56a62ca4ebbd140f507d1735c663924014ca4771
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186928"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445731"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Intégration au service Microsoft Defender for Endpoint
 
@@ -40,7 +40,7 @@ Découvrez les différentes phases du déploiement de Microsoft Defender pour En
 
 Le déploiement de Defender pour endpoint est un processus en trois phases :
 
-| [![phase de déploiement : préparer](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1 : Préparer](prepare-deployment.md) | [![phase de déploiement : configuration](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2 : Installation](production-deployment.md) | ![phase de déploiement : intégration](images/phase-diagrams/onboard.png)<br>Phase 3 : Intégration |
+| [![phase de déploiement : préparer](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1 : préparation](prepare-deployment.md) | [![phase de déploiement : configuration](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2 : configuration](production-deployment.md) | ![phase de déploiement : intégration](images/phase-diagrams/onboard.png)<br>Phase 3 : intégration |
 | ----- | ----- | ----- |
 | | |*Vous êtes là !*|
 
@@ -86,8 +86,8 @@ Après avoir intégré les points de terminaison, vous allez configurer les diff
 Dans ce guide de déploiement, nous allons vous guider tout au long de l’utilisation de deux outils de déploiement pour intégrer des points de terminaison et configurer des fonctionnalités.
 
 Les outils de l’exemple de déploiement sont les :
-- [Intégration à l’aide de Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
-- [Intégration à l’aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Intégration à l'aide de Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
+- [Intégration à l'aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 À l’aide des outils de déploiement mentionnés ci-dessus, vous serez guidé dans la configuration des fonctionnalités defender pour point de terminaison suivantes :
 - Détection de point de terminaison et configuration de la réponse
@@ -95,5 +95,6 @@ Les outils de l’exemple de déploiement sont les :
 - Configuration de la réduction de la surface d’attaque
 
 ## <a name="related-topics"></a>Voir aussi
-- [Intégration à l’aide de Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
-- [Intégration à l’aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Intégration à l'aide de Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
+- [Intégration à l'aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Documents sécurisés dans Microsoft 365 E5](../office-365-security/safe-docs.md)

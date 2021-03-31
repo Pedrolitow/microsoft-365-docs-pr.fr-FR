@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a540529c174cc12b0e037be4af4e08c29e3835ea
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919590"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408599"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -49,9 +49,9 @@ Exemple illustrant les étiquettes de confidentialité disponibles dans Excel à
 Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent être connectés avec leur compte Microsoft 365 professionnel ou scolaire.
 
 > [!NOTE]
-> Les étiquettes de confidentialité sont nouvellement pris en charge pour les clients du gouvernement américain (GCC et GCC-H). Pour plus d’informations, consultez les notes de publication pour Microsoft 365 Apps for enterprise, [Version 2101 : 26 janvier](/officeupdates/current-channel#version-2101-january-26).
+> Pour les clients du secteur public américain, les étiquettes de niveau de confidentialité sont [désormais prises en charge pour les environnements du cloud de la communauté du secteur public et le cloud de la communauté du secteur public de haut niveau](/officeupdates/current-channel#version-2101-january-26) et actuellement en cours de déploiement pour les environnements DoD.
 >
-> Pour le client d’étiquettes et le scanneur Azure Information Protection unifiés, consultez la [Description du service public premium Azure Information Protection](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+> Si vous utilisez le client d’étiquettes et le scanneur unifiés de Azure Information Protection, consultez la [Description du service public premium Azure Information Protection](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suivantes :
   

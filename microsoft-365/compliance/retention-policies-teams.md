@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 985131900a5e07188c0af641fb86f794d558f80b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc17f89da743afce0d64b45f96493c050e61e343
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919780"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408359"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -43,33 +43,33 @@ Pour les autres charges de travail, consultez:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
-Les éléments suivants de Teams peuvent être conservés et supprimés en utilisant les politiques de conservation pour les Teams : Messages de chat et messages de canal, y compris les images intégrées, les tableaux, les liens hypertextes et les liens vers d'autres messages et fichiers des équipes, et le [contenu des cartes](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
+Les messages de conversation et de canal Teams peuvent être supprimés à l’aide de stratégies de rétention de Teams. En plus du texte contenu dans les messages, ces éléments peuvent être conservés pour des raisons de conformité : images incorporées, tableaux, liens hypertexte et liens vers d’autres messages et fichiers Teams, et [Contenu de carte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
 
 > [!NOTE]
 > L'inclusion du contenu des cartes est un ajout récent et est maintenant entièrement déployé pour les locataires. Pour plus d'informations, voir [les capacités de conformité de Microsoft 365 pour le contenu des cartes adaptatives par le biais d'applications dans Teams maintenant disponibles](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Actuellement, nous ne prenons pas en charge les messages Teams dans les canaux privés pour les stratégies de rétention. L’utilisation de stratégies de rétention pour Teams n’inclut pas les extraits de code, les mémos vocaux enregistrés depuis le client mobile Teams, les miniatures, les images d’annonce et les réactions des autres utilisateurs sous la forme d’émoticônes.
+Actuellement, nous ne prenons pas en charge les messages Teams dans les canaux privés pour les stratégies de rétention. L’utilisation de stratégies de rétention pour Teams n’inclut pas les extraits de code, les mémos vocaux enregistrés depuis le client mobile Teams, les miniatures, les images d’annonce, et les réactions des autres utilisateurs sous la forme d’émoticônes.
 
 Les messages électroniques et les fichiers que vous utilisez avec Teams ne sont pas inclus dans les stratégies de rétention Teams. Ces éléments ont leurs propres stratégies de rétention.
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Fonctionnement de la rétention avec Microsoft Teams
 
-Vous pouvez utiliser une stratégie de rétention pour conserver les données de conversations et de messages de canaux dans Teams. En arrière-plan, les boîtes aux lettres Exchange sont utilisées pour stocker ces messages. Les données des conversations Teams sont stockées dans un dossier masqué dans la boîte aux lettres des utilisateurs inclus dans la conversation. Un dossier masqué similaire dans une boîte aux lettres de groupe est utilisé pour les messages de canaux Teams.
+Vous pouvez utiliser une stratégie de rétention pour conserver les données de conversations et de messages de canaux dans Teams, puis les supprimer. En arrière-plan, les boîtes aux lettres Exchange sont utilisées pour stocker les données de ces messages. Les données des conversations Teams sont stockées dans un dossier masqué dans la boîte aux lettres des utilisateurs inclus dans la conversation. Un dossier masqué similaire dans une boîte aux lettres de groupe est utilisé pour les messages de canaux Teams.
 
 Ces boîtes aux lettres apparaissent dans la liste en fonction de leur attribut RecipientTypeDetails :
 
-- **MailUser**: ces boîtes aux lettres stockent des messages des utilisateurs cloud de Teams.
-- **UserMailbox** : ces boîtes aux lettres stockent des [ messages des utilisateurs de Teams locale](search-cloud-based-mailboxes-for-on-premises-users.md).
-- **GroupMailbox** : ces boîtes aux lettres stockent des messages pour les canaux Teams.
+- **MailUser** : ces boîtes aux lettres stockent des données de messages des utilisateurs cloud de cloud Teams.
+- **UserMailbox** : ces boîtes aux lettres stockent des données pour [des utilisateurs de Teams locale](search-cloud-based-mailboxes-for-on-premises-users.md).
+- **GroupMailbox** : ces boîtes aux lettres stockent des données de canaux Teams.
 
 Nous ne prenons pas en charge les autres types de boîtes aux lettres, tels que la boîte aux lettre RoomMailbox utilisée pour les salles de conférence Teams, dans le cadre des stratégies de rétention Teams.
 
-Il est important de comprendre que Teams utilise un service de conversation Azure qui stocke également ces données. Par défaut, ce service stocke les données sans limite de durée. Pour cette raison, si vous devez supprimer des messages Teams pour des raisons de conformité, nous vous recommandons d’utiliser des stratégies de rétention pour Teams qui peuvent supprimer définitivement ces données des boîtes aux lettres Exchange et du service de conversation sous-jacent Azure. Pour plus d’informations sur l’architecture sous-jacente, voir [Sécurité et conformité dans Microsoft Teams](/MicrosoftTeams/security-compliance-overview) et plus précisément, la section [Architecture de protection des informations](/MicrosoftTeams/security-compliance-overview#information-protection-architecture) .
+Il est important de comprendre que Teams utilise un service de conversation fourni par Azure comme espace de stockage principal pour tous les messages (conversations et messages de canaux), et par défaut, ce service stocke les données indéfiniment. Pour cette raison, si vous devez supprimer des messages Teams pour des raisons de conformité, nous vous recommandons d’utiliser des stratégies de rétention Teams qui peuvent supprimer des messages après une période spécifique, en fonction de leur moment de création. Les messages sont ensuite supprimés définitivement des boîtes aux lettres Exchange et du service de conversation sous-jacent fourni par Azure. Pour plus d’informations sur l’architecture sous-jacente, voir [Sécurité et conformité dans Microsoft Teams](/MicrosoftTeams/security-compliance-overview) et plus précisément, la section [Architecture de protection des informations](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Même si les conversations et les messages de canal Teams sont stockés dans Exchange, ces données Teams sont incluses uniquement dans une stratégie de rétention configurée pour les **messages de canaux Teams** et les emplacements des **conversations Teams**. Les conversations et les messages de canal Teams ne sont pas affectés par les stratégies de rétention configurées pour les boîtes aux lettres des utilisateurs et des groupes.
+Même si les données des conversations et des messages de canal Teams sont stockées dans des boîtes aux lettres, ces données Teams sont incluses uniquement dans une stratégie de rétention configurée pour les **Messages de canaux Teams** et les emplacements de **Conversations Teams**. Les conversations et les messages de canal Teams ne sont pas affectés par les stratégies de rétention configurées pour les boîtes aux lettres des utilisateurs et des groupes.
 
 > [!NOTE]
-> Si un utilisateur est inclus dans une stratégie de rétention active qui conserve les données Teams et que vous supprimez une boîte aux lettres d’un utilisateur inclus dans cette stratégie, la boîte aux lettres est convertie en [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Teams. Si vous n’avez pas besoin de conserver ces données Teams pour l’utilisateur, excluez son compte de la stratégie de rétention avant de supprimer sa boîte aux lettres.
+> Si un utilisateur est inclus dans une stratégie de rétention active qui conserve des messages Teams et que vous supprimez sa boîte aux lettres, la boîte aux lettres est convertie en [Boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Teams. Si vous n’avez pas besoin de conserver ces données Teams pour l’utilisateur, excluez son compte de la stratégie de rétention avant de supprimer sa boîte aux lettres.
 
 Une fois qu'une politique de rétention est configurée pour les messages de conversation et de canal, une tâche de temporisation du service Exchange évalue périodiquement les éléments du dossier caché où sont stockés ces messages des Teams. Le travail de chronométrage prend jusqu'à sept jours. Lorsque ces éléments ont expiré leur période de rétention, ils sont déplacés vers le dossier SubstrateHolds - un autre dossier caché qui se trouve dans la boîte aux lettres de chaque utilisateur ou groupe pour stocker les éléments « à suppression douce » avant qu'ils ne soient définitivement supprimés.
 

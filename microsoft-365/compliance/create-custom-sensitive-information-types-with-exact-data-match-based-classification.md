@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 583419f6808d5b3d54d1f48d380e5b4110898ded
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908348"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408643"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
+
+
 
 [Les types d’informations sensibles personnalisés](sensitive-information-type-learn-about.md) sont utilisés pour vous aider à identifier les éléments sensibles afin de pouvoir empêcher leur partage par inadvertance. Vous pouvez définir un type d’informations sensibles personnalisé sur la base des éléments suivants :
 
@@ -35,7 +37,7 @@ ms.locfileid: "50908348"
 
  De tels types d’informations sensibles personnalisés répondent aux besoins métier de nombreuses organisations.
 
-Mais que se passe-t-il si vous voulez utiliser un type d’informations sensibles personnalisé qui utilise des valeurs de données exactes au lieu d’établir des concordances avec des modèles génériques ? Une classification Exact Data Match (EDM) vous permet de créer un type d’informations sensibles personnalisé conçu pour :
+Mais que se passe-t-il si vous voulez utiliser un type d’informations sensibles personnalisé qui utilise des valeurs de données exactes, au lieu d’un type qui établissait des correspondances avec des modèles génériques ? Une classification Exact Data Match (EDM) vous permet de créer un type d’informations sensibles personnalisé conçu pour :
 
 - être dynamique et actualisé facilement ;
 - être plus évolutif ;
@@ -56,6 +58,7 @@ La classification EDM vous permet de créer des types d’informations sensibles
 > - Japanese
 > 
 > Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
+ 
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
@@ -369,7 +372,10 @@ Si vous voulez hacher et charger à partir d’un ordinateur, vous devez le fair
 Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte clair, vous pouvez le hacher sur un ordinateur dans un emplacement sécurisé, puis copier le fichier de hachage et le fichier salt sur un ordinateur qui peut se connecter directement à votre client Microsoft 365 pour le chargement. Dans ce scénario, vous aurez besoin d’EDMUploadAgent sur les deux ordinateurs.
 
 > [!IMPORTANT]
-> Si vous avez utilisé l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles pour créer vos fichiers de schéma et de modèle, vous ***devez** télécharger le schéma pour cette procédure.
+> Si vous utilisiez l’assistant du schéma de correspondance des données exacte et du type d’informations sensibles pour créer vos fichiers de schéma et de modèle, vous ***devez*** télécharger le schéma pour cette procédure.
+
+> [!NOTE]
+> Si votre organisation a configuré une [Clé client pour Microsoft 365 au niveau du client (préversion publique)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la correspondance exacte des données utilisera automatiquement sa fonctionnalité de chiffrement. Cette offre est disponible uniquement pour les clients sous licence E5 dans le cloud commercial.
 
 #### <a name="prerequisites"></a>Configuration requise
 
