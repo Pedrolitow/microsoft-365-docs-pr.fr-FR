@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez l’archivage à extension automatique, qui fournit un stockage d’archivage illimité pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: 9692ba27c64f41ac584bb4008a8b860daab031f5
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: d61d3649ed65a93298928cced21180bbeca6aa95
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029430"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476265"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Vue d’ensemble de l’archivage illimité
 
@@ -33,7 +33,7 @@ La fonctionnalité d’archivage illimité dans Microsoft 365 (appelée archivag
 Pour obtenir des instructions pas à pas pour activer l’archivage à extension automatique, voir [Activer l’archivage illimité.](enable-unlimited-archiving.md)
 
 > [!NOTE]
-> L’archivage à extension automatique prend aussi en charge les boîtes aux lettres partagées. Pour activer l’archive d’une boîte aux lettres partagée, une licence Exchange Online Plan 2 ou une licence Exchange Online Plan 1 avec une licence Archivage Exchange Online est requise.
+> L’archivage à extension automatique prend aussi en charge les boîtes aux lettres partagées. Pour activer l’archive d’une boîte aux lettres partagée, une licence Exchange Online Plan 2 ou Une licence Exchange Online Plan 1 avec une licence Archivage Exchange Online est requise.
 
 ## <a name="how-auto-expanding-archiving-works"></a>Fonctionnement de l’archivage à extension automatique
 
@@ -57,7 +57,7 @@ Voici une vue d’ensemble rapide du processus.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Qu’est-ce qui est déplacé vers l’espace de stockage d’archivage supplémentaire ?
 
-Pour utiliser efficacement le stockage d’archives à extension automatique, les dossiers peuvent être déplacés. Microsoft 365 détermine quels dossiers sont déplacés lorsque du stockage supplémentaire est ajouté à l’archive. Parfois, lorsqu’un dossier est déplacé, un ou plusieurs sous-dossiers sont automatiquement créés et les éléments du dossier d’origine sont distribués dans ces dossiers pour faciliter le processus de déplacement. Lorsque vous affichez la partie archive de la liste des dossiers dans Outlook, ces sous-dossiers sont affichés sous le dossier d’origine.  La convention d’attribution de noms que Microsoft 365 utilise pour nommer ces sous-_yyyy (créé sur **\<folder name\> mmm dd, a h_mm)**, où :
+Pour utiliser efficacement le stockage d’archives à extension automatique, les dossiers peuvent être déplacés. Microsoft 365 détermine quels dossiers sont déplacés lorsque du stockage supplémentaire est ajouté à l’archive. Parfois, lorsqu’un dossier est déplacé, un ou plusieurs sous-dossiers sont automatiquement créés et les éléments du dossier d’origine sont distribués dans ces dossiers pour faciliter le processus de déplacement. Lorsque vous affichez la partie archive de la liste des dossiers dans Outlook, ces sous-dossiers sont affichés sous le dossier d’origine.  La convention d’attribution de noms que Microsoft 365 utilise pour nommer ces sous-_yyyy (créé sur **\<folder name\> mmm dd, aaa h_mm)**, où :
 
 - **yyyy est l’année** de réception des messages dans le dossier.
 
@@ -74,7 +74,7 @@ Les captures d’écran suivantes montrent une liste de dossiers avant et après
 ![Liste de dossiers de boîte aux lettres d’archivage après la mise en service de l’archive à extension automatique](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
-> Comme décrit précédemment, Microsoft 365 déplace les éléments vers des sous-documents (et les nomme à l’aide de la convention d’attribution de noms décrite ci-dessus) pour faciliter la distribution du contenu dans une archive auxiliaire. Toutefois, le déplacement d’éléments vers des sous-dossiers peut ne pas toujours être le cas. Parfois, un dossier entier peut être déplacé vers une archive auxiliaire. Dans ce cas, le dossier conserve son nom d’origine.  Il n’apparaît pas dans la liste des dossiers dans Outlook que le dossier a été déplacé vers une archive auxiliaire.
+> Comme décrit précédemment, Microsoft 365 déplace les éléments vers des sous-documents (et les nomme à l’aide de la convention d’attribution de noms décrite ci-dessus) pour aider à distribuer le contenu à une archive auxiliaire. Toutefois, le déplacement d’éléments vers des sous-dossiers peut ne pas toujours être le cas. Parfois, un dossier entier peut être déplacé vers une archive auxiliaire. Dans ce cas, le dossier conserve son nom d’origine.  Il n’apparaît pas dans la liste des dossiers dans Outlook que le dossier a été déplacé vers une archive auxiliaire.
 
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Conditions requises pour Outlook pour accéder aux éléments d’une archive à extension automatique
 
@@ -90,8 +90,9 @@ Voici quelques éléments à prendre en compte lors de l’utilisation d’Outlo
 
 - Vous pouvez accéder à n’importe quel dossier de votre boîte aux lettres d’archivage, y compris ceux qui ont été déplacés vers la zone de stockage à extension automatique.
 
-- La recherche d’archivage à extension automatique est disponible dans Outlook pour le web. Comme pour l’archive en ligne, vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire uniquement en recherchant le dossier actuel lui-même. Cela signifie que vous devez sélectionner le dossier d’archivage dans la liste des dossiers, puis sélectionner un dossier unique comme étendue de recherche. De même, si un dossier dans une zone de stockage à extension automatique contient des sous-dossiers, vous devez rechercher chaque sous-dossier séparément.
-- La recherche d’archives à extension automatique est disponible dans le Bureau Outlook dans le canal actuel (prévisualisation). Dans cet aperçu, l’étendue Boîte aux lettres actuelle est disponible, ce qui vous permet d’effectuer des recherches dans l’archive à extension automatique. Pour plus d’informations à ce sujet et sur d’autres [fonctionnalités](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)de support de Recherche Microsoft, voir Comment Outlook pour Windows connecté à Exchange Online utilise Microsoft Search . 
+- La recherche d’archivage à extension automatique est disponible dans Outlook pour le web (OWA). À l’exemple de l’archive en ligne, vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire. Lorsque l’archive est sélectionnée en tant qu’étendue de recherche dans OWA, toutes les archives (y compris les archives à extension automatique) et leurs sous-documents correspondants sont recherchés.
+
+- La recherche d’archives à extension automatique est disponible dans le bureau Outlook dans le canal actuel (prévisualisation). Dans cet aperçu, l’étendue Boîte aux lettres actuelle est disponible, ce qui vous permet d’effectuer des recherches dans l’archive à extension automatique. Pour plus d’informations à ce sujet et sur d’autres [fonctionnalités](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)de support de Recherche Microsoft, voir Comment Outlook pour Windows connecté à Exchange Online utilise Microsoft Search . 
 
 - Le nombre d’éléments dans Outlook et le nombre de lecture/non lus (dans Outlook et Outlook sur le web) dans une archive à extension automatique peuvent ne pas être exacts.
 
@@ -111,6 +112,6 @@ Cette section explique la fonctionnalité entre l’archivage à extension autom
 
 - **Service d’importation :** Vous pouvez utiliser le service d’importation Office 365 pour importer des fichiers PST dans l’archive à extension automatique d’un utilisateur. Vous pouvez importer jusqu’à 100 Go de données à partir de fichiers PST dans la boîte aux lettres d’archivage de l’utilisateur.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
-Pour plus d’informations techniques sur l’archivage à extension automatique, voir [Microsoft 365](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784): FAQ sur l’extension automatique des archives.
+Pour plus d’informations techniques sur l’archivage à extension automatique, voir [Microsoft 365 :](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)FAQ sur l’extension automatique des archives.

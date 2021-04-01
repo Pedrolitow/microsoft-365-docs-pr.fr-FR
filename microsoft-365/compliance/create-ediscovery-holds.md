@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez créer une conservation associée à un cas core eDiscovery pour conserver le contenu qui peut être pertinent pour un examen.
-ms.openlocfilehash: c84d0be5a4a659ff9b64af14052bcf4033e2ed24
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 1026de3b5357c3417a00a69b4ae6890e8036c091
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470475"
+ms.locfileid: "51488243"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
@@ -131,8 +131,8 @@ Les conversations qui font partie d’un canal Microsoft Teams sont stockées da
 
 Sinon, les conversations qui font partie de la liste de conversation dans Teams (appelées conversations *1:1* ou conversations de groupe *1:N)* sont stockées dans les boîtes aux lettres des utilisateurs qui participent à la conversation. Les fichiers que les utilisateurs partagent dans les conversations sont stockés dans le compte OneDrive de l’utilisateur qui partage le fichier. Par conséquent, vous devez ajouter les boîtes aux lettres utilisateur individuelles et les comptes OneDrive à une conservation eDiscovery pour conserver les conversations et les fichiers dans la liste de conversation. Il est bon de mettre en attente les boîtes aux lettres des membres d’une équipe Microsoft en plus de placer la boîte aux lettres et le site d’équipe en attente.
 
-> [!IMPORTANT]
-> Dans une organisation en nuage, les utilisateurs qui participent à des conversations qui font partie de la liste de conversations dans Teams doivent avoir une boîte aux lettres Exchange Online afin de conserver les conversations lorsque la boîte aux lettres est placée en attente eDiscovery. Cela est dû au fait que les conversations qui font partie de la liste de conversation sont stockées dans les boîtes aux lettres en nuage des participants de la conversation. Si un participant de conversation n’a pas de boîte aux lettres Exchange Online, vous ne pourrez pas conserver ces conversations. Par exemple, dans un déploiement Exchange hybride, les utilisateurs ayant une boîte aux lettres sur site peuvent participer à des conversations qui font partie de la liste de conversations dans Teams. Mais dans ce cas, le contenu de ces conversations ne peut pas être conservé, car ces utilisateurs n’ont pas de boîtes aux lettres en nuage qui peuvent être placées en conservation.
+> [!NOTE]
+> Si votre organisation dispose d’un déploiement Hybride Exchange (ou si votre organisation synchronise une organisation Exchange sur site avec Office 365) et a activé Microsoft Teams, les utilisateurs locaux peuvent utiliser l’application de conversation Teams et participer à des conversations 1:1 et des conversations de groupe 1:N. Ces conversations sont stockées dans un stockage en nuage associé à un utilisateur local. Si un utilisateur local est placé en conservation eDiscovery, le contenu de conversation Teams dans le stockage en nuage est conservé. Pour plus d'informations, voir [Recherche de données de conversation des équipes pour les utilisateurs sur site](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Pour plus d’informations sur la conservation du contenu Teams, voir Placer un utilisateur ou une équipe [Microsoft Teams en conservation légale.](/MicrosoftTeams/legal-hold)
 
