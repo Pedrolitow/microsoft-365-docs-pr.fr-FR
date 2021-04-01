@@ -1,6 +1,6 @@
 ---
 title: Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données
-description: Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour le point de terminaison
+description: Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour endpoint
 keywords: données, stockage, paramètres, rétention, mise à jour
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c0e8adde9b1ed66e401348d998ae5c1ad8a7442
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b83e6682ce0c11d076e0bbef60fdef365c9be564
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166004"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471100"
 ---
-# <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour le point de terminaison
+# <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51166004"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
 Pendant le processus d’intégration, un Assistant vous fait passer par les paramètres de stockage et de rétention des données de Defender for Endpoint. 
 
@@ -45,6 +45,8 @@ Pendant la [phase de mise en place,](production-deployment.md)vous avez sélecti
 Vous pouvez vérifier l’emplacement des données en naviguant vers la rétention **des données** de  >  **paramètres.**
 
 ## <a name="update-data-retention-settings"></a>Mettre à jour les paramètres de rétention des données
+
+Vous pouvez mettre à jour les paramètres de rétention des données. Par défaut, la période de rétention est de 180 jours. 
 
 1. Dans le volet de navigation, sélectionnez Rétention des données de   >  **paramètres.**
 

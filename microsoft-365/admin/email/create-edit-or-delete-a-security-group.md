@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Apprenez à créer, modifier ou supprimer un groupe de sécurité.
-ms.openlocfilehash: d2cc749acaf7b2e23674156f6ad9a200ec7b386d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4ea97683e47f7f0ef8f196db32df8e22f9b1a0b9
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915817"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470976"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Créer, modifier ou supprimer un groupe de sécurité dans le Centre d’administration Microsoft 365
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Dans la **page** Groupes Microsoft 365, vous pouvez créer des groupes de comptes d’utilisateurs que vous pouvez utiliser pour attribuer les mêmes autorisations dans SharePoint Online et CRM Online. Par exemple, un administrateur peut créer un groupe de sécurité pour accorder à un certain groupe de personnes l’accès à un site SharePoint. Seuls les administrateurs globaux et de gestion des utilisateurs sont autorisés à créer, modifier ou supprimer des groupes de sécurité . Pour plus d’informations sur les rôles d’administrateur, voir [Attribuer des rôles d’administrateur.](../add-users/assign-admin-roles.md) 
   
@@ -69,7 +62,7 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
 
 ::: moniker range="o365-germany"
 
-1. Sélectionnez le nom du groupe de sécurité dans la page **Groupes,** puis **sélectionnez Modifier** en côté de **Membres.** 
+1. Sélectionnez le nom du groupe de sécurité dans la page **Groupes,** puis sélectionnez **Modifier en** côté de **Membres.** 
     
 2. Dans le volet de  groupe, sélectionnez Ajouter des membres et choisissez la personne dans  la liste ou tapez le nom de la personne que vous souhaitez ajouter dans la zone de recherche, puis sélectionnez **Enregistrer.**
     
@@ -80,7 +73,7 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
 ::: moniker range="o365-21vianet"
 
 
-1. Sélectionnez le nom du groupe de sécurité dans la page **Groupes,** puis **sélectionnez Modifier** en côté de **Membres.** 
+1. Sélectionnez le nom du groupe de sécurité dans la page **Groupes,** puis sélectionnez **Modifier en** côté de **Membres.** 
     
 2. Dans le volet de  groupe, sélectionnez Ajouter des membres et choisissez la personne dans  la liste ou tapez le nom de la personne que vous souhaitez ajouter dans la zone de recherche, puis sélectionnez **Enregistrer.**
     
@@ -157,6 +150,6 @@ Les groupes de sécurité peuvent être utilisés avec SharePoint, Exchange, MDM
 
 Non. Il s’agit simplement d’un moyen de plus pour gérer la sécurité de votre organisation. Vous pouvez toujours accorder des autorisations utilisateur et l’accès aux sites individuellement. Toutefois, avec les groupes de sécurité, vous pouvez facilement gérer des groupes d’utilisateurs plus importants.
   
-## <a name="can-i-send-email-to-a-security-group"></a>Puis-je envoyer un courrier électronique à un groupe de sécurité ?
+## <a name="can-i-send-email-to-a-security-group"></a>Puis-je envoyer des courriers électroniques à un groupe de sécurité ?
 
 Oui. Toutefois, si vous souhaitez utiliser des groupes pour la messagerie et la collaboration, nous vous recommandons plutôt de créer un groupe [Microsoft 365.](../create-groups/create-groups.md) 

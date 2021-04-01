@@ -22,21 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de publication pour les nouvelles mises à jour de produits et de fonctionnalités dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: e909cdf35ba9dd8282540783f7c362e5ae49212e
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 6c5d505f0ece47b0a47df8b7ed1dc015afe93e82
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034078"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470570"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de publication standard ou ciblée
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 > [!IMPORTANT]
 > Les mises à jour Microsoft 365 décrites dans cet article s’appliquent à Microsoft 365, SharePoint Online et Exchange Online. Ces options de publication sont des méthodes ciblées et efficaces pour publier les modifications apportées à Microsoft 365, mais ne peuvent pas être garanties en permanence ou pour toutes les mises à jour. Elles ne s’appliquent pas aux applications Microsoft 365, Skype Entreprise, Microsoft Teams et aux services associés. Pour plus d’informations sur les options de publication de Microsoft 365 Apps, voir Vue d’ensemble des canaux de mise à jour [pour Les applications Microsoft 365.](/deployoffice/overview-update-channels)
@@ -45,9 +38,9 @@ Avec Microsoft 365, vous recevez de nouvelles mises à jour et fonctionnalités 
 
 ## <a name="how-it-works---release-validation"></a>Mode de fonctionnement - Validation de publication
 
-Toute nouvelle version est d’abord testée et validée par l’équipe de fonctionnalités, puis par l’ensemble de l’équipe de fonctionnalités De Microsoft 365, puis par l’ensemble de Microsoft. Un fois les tests et la validation internes accomplis, l'étape suivante consiste en une **publication ciblée** (anciennement nommée First Release) à destination des clients inscrits. À chaque cycle de publication, Microsoft recueille des commentaires, puis valide davantage la qualité en surveillant des métriques d'utilisation clés. Cette validation progressive est en place pour s'assurer que la publication à l'échelle mondiale est aussi robuste que possible. Les publications sont illustrées dans la figure suivante. 
+Toute nouvelle version est d’abord testée et validée par l’équipe de fonctionnalités, puis par l’ensemble de l’équipe de fonctionnalités Microsoft 365, puis par l’ensemble de Microsoft. Un fois les tests et la validation internes accomplis, l'étape suivante consiste en une **publication ciblée** (anciennement nommée First Release) à destination des clients inscrits. À chaque cycle de publication, Microsoft recueille des commentaires, puis valide davantage la qualité en surveillant des métriques d'utilisation clés. Cette validation progressive est en place pour s'assurer que la publication à l'échelle mondiale est aussi robuste que possible. Les publications sont illustrées dans la figure suivante. 
   
-![Anneaux de validation de publication pour Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Libérer des anneaux de validation pour Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 Pour les mises à jour importantes, les clients sont initialement avertis par la feuille [de route Microsoft 365.](https://products.office.com/business/office-365-roadmap) À mesure qu’une mise à jour approche du déploiement, elle est communiquée par le biais de votre centre de messages [Microsoft 365.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
 
@@ -95,7 +88,7 @@ La publication ciblée permet aux administrateurs, aux responsables des modifica
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>Configurer l’option de publication dans le Centre d’administration
 
-Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour Microsoft 365 en suivant ces étapes. Vous devez être administrateur global dans Microsoft 365 pour vous y rendre.
+Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour Microsoft 365 en suivant ces étapes. Vous devez être un administrateur global dans Microsoft 365 pour vous y rendre.
   
 > [!IMPORTANT]
 > L’application des modifications ci-dessous dans Microsoft 365 peut prendre jusqu’à 24 heures. Si vous décidez de ne plus participer au programme de publication ciblée après l'avoir activé, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication planifiée. 
@@ -108,7 +101,7 @@ Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour
     
 7. Pour activer la publication ciblée pour certaines personnes de votre organisation, sélectionnez **Publication** ciblée pour les utilisateurs sélectionnés, puis **sélectionnez Enregistrer les modifications.** 
     
-8. Sélectionnez **Sélectionner des utilisateurs** pour ajouter des utilisateurs un par un ou Charger des utilisateurs **pour** les ajouter en bloc.
+8. Sélectionnez **Sélectionner des utilisateurs** pour ajouter des utilisateurs un par un ou Télécharger des utilisateurs **pour** les ajouter en bloc.
     
 9. Lorsque vous avez terminé d’ajouter des utilisateurs, **sélectionnez Enregistrer les modifications.**
 

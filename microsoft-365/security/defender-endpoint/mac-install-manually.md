@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: a9e75441a8c4a336e8c657d27330c118fcac4788
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379445"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476304"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>Déploiement manuel de Microsoft Defender pour point de terminaison pour macOS
 
@@ -119,7 +119,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
 1. Copiez wdav.pkg et MicrosoftDefenderATPOnboardingMacOs.py sur l’appareil où vous déployez Microsoft Defender pour endpoint pour macOS.
 
-    L’appareil client n’est pas associé à orgId. Notez que *l’attribut orgId* est vide.
+    L’appareil client n’est pas associé à org_id. Notez que *l’org_id* est vide.
 
     ```bash
     mdatp health --field org_id
@@ -131,23 +131,96 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
     /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     ```
 
-3. Vérifiez que l’appareil est désormais associé à votre organisation et signale un *orgId valide*:
+3. Vérifiez que l’appareil est désormais associé à votre organisation et signale un ID d’organisation valide :
 
     ```bash
     mdatp health --field org_id
     ```
 
-Après l’installation, vous verrez l’icône Microsoft Defender dans la barre d’état macOS dans le coin supérieur droit.
+    Après l’installation, vous verrez l’icône Microsoft Defender dans la barre d’état macOS dans le coin supérieur droit.
+    
+    > [!div class="mx-imgBorder"]
+    > ![Icône Microsoft Defender dans la capture d’écran de la barre d’état](images/mdatp-icon-bar.png)
 
-   ![Icône Microsoft Defender dans la capture d’écran de la barre d’état](images/mdatp-icon-bar.png)
-   
 
 ## <a name="how-to-allow-full-disk-access"></a>Comment autoriser l’accès disque total
 
 > [!CAUTION]
 > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
 
-Pour accorder le consentement, ouvrez Préférences système -> sécurité & confidentialité -> confidentialité -> accès disque total. Cliquez sur l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue). Sélectionnez Microsoft Defender pour le point de terminaison.
+1. Pour accorder le consentement, **ouvrez La** sécurité des préférences système  >  **&**  >  **confidentialité** confidentialité accès disque  >  **total**. Cliquez sur l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue). Sélectionnez Microsoft Defender pour le point de terminaison.
+
+2. Exécutez un test de détection antivirus pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
+
+    1. Assurez-vous que la protection en temps réel est activée (notée par un résultat de 1 à partir de l’exécution de la commande suivante) :
+
+        ```bash
+        mdatp health --field real_time_protection_enabled
+        ```
+
+    1. Ouvrez une fenêtre Terminal. Copiez et exécutez la commande suivante :
+
+        ```bash
+        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        ```
+
+    1. Le fichier doit avoir été mis en quarantaine par Defender pour Endpoint pour Mac. Utilisez la commande suivante pour lister toutes les menaces détectées :
+
+        ```bash
+        mdatp threat list
+        ```
+
+3. Exécutez un test de détection EDR pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
+
+   1. Dans votre navigateur, tel que Microsoft Edge pour Mac ou Safari.
+
+   1. Téléchargez les fichiers MacOS MDATP DIY.zip https://aka.ms/mdatpmacosdiy et extrayez.
+
+      Vous pouvez être invité à :
+
+      > Voulez-vous autoriser les téléchargements sur « mdatpclientanalyzer.blob.core.windows.net » ?<br/>
+      > Vous pouvez modifier les sites web qui peuvent télécharger des fichiers dans Préférences de sites Web.
+
+4. Cliquez sur **Autoriser**.
+
+5. Open **Downloads**.
+
+6. Vous devriez voir **MDATP MacOS 2013.**
+
+   > [!TIP]
+   > Si vous double-cliquez, vous recevez le message suivant :
+   > 
+   > > **« MDATP MacOS VERIFIE » ne peut pas être ouvert, car le développeur ne peut pas être vérifié.**<br/>
+   > > MacOS ne peut pas vérifier que cette application est exempt de programmes malveillants.<br/>
+   > > **\[ Déplacer vers \] annuler la corbeille** **\[ \]** 
+  
+7. Cliquez sur **Annuler**.
+
+8. Cliquez avec le bouton **droit de la souris sur MDATP MacOS(2013),** puis cliquez sur **Ouvrir**. 
+
+    Le système doit afficher le message suivant :
+
+    > **macOS ne peut pas vérifier le développeur de **MDATP MacOSMUT .** Voulez-vous vraiment l’ouvrir ?**<br/>
+    > En ouvrant cette application, vous allez remplacement de la sécurité système qui peut exposer votre ordinateur et vos informations personnelles à des programmes malveillants qui peuvent endommager votre Mac ou compromettre votre confidentialité.
+
+10. Cliquez sur **Ouvrir**. 
+
+    Le système doit afficher le message suivant :
+
+    > Microsoft Defender ATP - fichier test MACOS EDR PDF<br/>
+    > L’alerte correspondante sera disponible dans le portail MDATP.
+
+11. Cliquez sur **Ouvrir**. 
+
+    Dans quelques minutes, une alerte nommée « alerte de test macOS EDR » doit être appelée.
+
+12. Go to Microsoft Defender Security Center ( https://SecurityCenter.microsoft.com) .
+
+13. Go to the Alert Queue.
+
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Exemple d’alerte de test macOS EDR qui affiche la gravité, la catégorie, la source de détection et un menu d’actions réduire.":::
+    
+    Regardez les détails de l’alerte et la chronologie de l’appareil, puis effectuez les étapes d’examen normales.
 
 ## <a name="logging-installation-issues"></a>Journalisation des problèmes d’installation
 

@@ -16,14 +16,14 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: Utilisez l’outil recherche de contenu dans le centre de conformité et de sécurité pour rechercher et exporter des données de conversation Teams pour les utilisateurs locaux dans un déploiement hybride Exchange.
+description: Utilisez les outils eDiscovery dans Microsoft 365 pour rechercher et exporter des données de conversation Teams des utilisateurs locaux dans un déploiement Exchange hybride.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39951ce125f86748beab12cf1998075e26ad734b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a5053eb54b59d55c428290987bcc8b2a8ce26b5b
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917186"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471023"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Recherche de données de conversations Teams pour les utilisateurs locaux
 
@@ -44,20 +44,19 @@ Voici la configuration requise et les limitations applicables à l’activation 
   
 ## <a name="how-it-works"></a>Mode de fonctionnement
 
-Si un utilisateur Microsoft Teams a une boîte aux lettres locale et que son compte d’utilisateur/son identité est synchronisé avec le cloud, Microsoft crée un stockage dans le cloud pour l’associer aux données de conversations Teams 1xN de l’utilisateur local. Les données de conversations Teams pour les utilisateurs locaux sont indexées pour la recherche. Cela vous permet d’utiliser la recherche de contenu (et les recherches associées à des cas Core et Advanced eDiscovery) pour rechercher, afficher un aperçu et exporter des données de conversation Teams pour les utilisateurs locaux. Vous pouvez également utiliser les applets de commande **\*ComplianceSearch** dans le centre de conformité et de sécurité PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
+Si un utilisateur Microsoft Teams a une boîte aux lettres locale et que son compte d’utilisateur/son identité est synchronisé avec le cloud, Microsoft crée un stockage dans le cloud pour l’associer aux données de conversations Teams 1xN de l’utilisateur local. Les données de conversations Teams pour les utilisateurs locaux sont indexées pour la recherche. Cela vous permet d’utiliser la recherche de contenu (et les recherches associées à des cas Core et Advanced eDiscovery) pour rechercher, afficher un aperçu, et exporter des données de conversation Teams des utilisateurs locaux. Vous pouvez également utiliser les applets de commande **\*ComplianceSearch** dans le centre de conformité et de sécurité PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
   
 Le graphique suivant montre comment Teams peut consulter les données de conversation pour les utilisateurs locaux pour pouvoir effectuer des recherches, des aperçus et des exportations.
   
 ![Stockage sur le cloud pour les utilisateurs locaux de Microsoft Teams](../media/EHAMShard1.png)
   
-En plus de cette nouvelle fonctionnalité, vous pouvez encore utiliser la recherche de contenu pour rechercher, afficher un aperçu et exporter du contenu d’équipes sur le site SharePoint dans le cloud et sur la boîte aux lettres Exchange associée à chaque Microsoft Teams et 1xN Teams discutent des données dans la boîte aux lettres Exchange Online pour utilisateurs dans le cloud.
+En plus de cette fonctionnalité, vous pouvez également utiliser les outils eDiscovery pour rechercher, afficher un aperçu, et exporter du contenu Teams sur le site SharePoint utilisant le cloud et sur la boîte aux lettres Exchange associée à chaque donnée de conversation Microsoft Teams et 1xN Teams dans la boîte aux lettres Exchange Online pour les utilisateurs du cloud.
 
+### <a name="how-this-feature-is-supported-in-content-search-and-core-ediscovery-search-tools"></a>Prise en charge de cette fonctionnalité dans les outils de Recherche de contenu et Core eDiscovery
 
-### <a name="what-happens-after-this-feature-is-enabled"></a>Que se passe-t-il si cette fonctionnalité est activée ?
-
-Une fois cette fonctionnalité déployée dans votre organisation, les modifications suivantes sont apportées dans la recherche de contenu et dans les recherches associées à un cas de découverte électronique dans le centre de sécurité et conformité :
+Ces éléments d’interface utilisateur de la recherche de contenu et de l’outil de recherche associés aux cas Core eDiscovery principaux dans le Centre de conformité Microsoft 365 :
   
-- La case à cocher **Ajouter du contenu d’application Office pour les utilisateurs locaux** est ajoutée aux **Emplacements** dans la recherche de contenu.
+- La case à cocher **Ajouter du contenu d’application Office pour des utilisateurs locaux** est affichée sous **Emplacements** dans la recherche de contenu. Cochez cette case pour inclure le stockage basé sur le cloud pour les utilisateurs locaux dans une recherche de contenu.
 
     ![La case à cocher « Ajouter du contenu d’application Office pour les utilisateurs locaux » est ajoutée à l’interface de recherche de contenu.](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
@@ -65,18 +64,18 @@ Une fois cette fonctionnalité déployée dans votre organisation, les modificat
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Recherche du contenu de conversations Teams pour des utilisateurs locaux
 
-Une fois la fonctionnalité activée, vous pouvez utiliser la recherche de contenu dans le centre de conformité et sécurité pour rechercher des données de conversation Teams pour les utilisateurs locaux.
+Voici comment utiliser la recherche de contenu dans le Centre de conformité Microsoft 365 pour rechercher des données de conversation de Teams des utilisateurs locaux.
   
-1. Dans le Centre de sécurité et conformité, accédez à **Rechercher** \> **Recherche de contenu**
+1. Dans le centre de conformité Microsoft 365, accédez à **Recherche de contenu**.
 
-2. Sur la page de **recherche**, cliquez sur ![Ajouter une icône](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nouvelle recherche**.
+2. Sur l’onglet **Recherche**, cliquez sur ![Ajouter une icône](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nouvelle recherche**.
 
     Comme indiqué précédemment, la case à cocher **Ajouter du contenu d’application Office pour les utilisateurs locaux** s’affiche sous **Emplacements**. Elle est sélectionnée par défaut.
 
 3. Créez la requête de mot clé et ajoutez des conditions à la requête de recherche, le cas échéant. Pour rechercher uniquement les données de conversations Teams, vous pouvez ajouter la requête suivante dans la zone **Mots clés** :
 
     ```text
-    kind:im
+    kind:im AND kind:microsoftteams
     ```
 
 4. À ce stade, vous pouvez choisir l’une des options suivantes sous **Emplacements**:
@@ -129,26 +128,26 @@ Pour plus d’informations sur l’utilisation de ces applets de commande, consu
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
+**Dois-je soumettre une demande de support pour rechercher des messages de conversation d’utilisateurs locaux ?**
+
+Non. Cette fonctionnalité est activée par défaut pour toutes les organisations. À un moment, vous deviez contacter le support Microsoft, mais ce n’est plus le cas.
+  
+ **Les outils eDiscovery peuvent-ils rechercher des anciennes données de conversation Teams d’utilisateurs locaux datant de la période antérieure à l’activation par défaut de cette fonctionnalité pour toutes les organisations ?**
+  
+Microsoft a commencé à stocker des données de conversations Teams pour les utilisateurs locaux le 31 janvier 2018. Par conséquent, si l’identité d’un utilisateur Teams local a été synchronisée entre Active Directory locale et Azure Active Directory dans Microsoft 365 depuis cette date, ses données de conversation Teams sont stockées dans le cloud et peuvent faire l’objet d’une recherche à l’aide des outils eDiscovery.
+
+ **Les utilisateurs locaux ont-ils besoin d’une licence pour stocker leurs données de conversations Teams dans le cloud ?**
+  
+Oui. Pour stocker les données de conversations Teams pour un utilisateur local dans un stockage basé sur le cloud, l’utilisateur doit avoir une licence Microsoft Teams et une licence Exchange Online plan dans Office 365 (ou Microsoft 365).
+
 **Où se trouve le stockage cloud pour les utilisateurs locaux ?**
   
 Les données de conversation de Teams sont stockées dans le site PDL (Preferred Data Location) d’un utilisateur local. Le PDL est respecté à la fois dans les environnements Mono-Géo et Multi-Géo. Pour en savoir plus, consultez [Microsoft 365 Multigéographie](../enterprise/microsoft-365-multi-geo.md).
-  
- **Y a-t-il d’autres programmes requis que l’envoi d’une demande de support ?**
-  
-Comme indiqué précédemment, les identités des utilisateurs disposant de boîtes aux lettres local doivent être synchronisées avec votre organisation cloud de sorte qu’un compte d’utilisateur de courrier correspondant soit créé pour chaque compte d’utilisateur local dans Office 365. Votre organisation doit également disposer d’un abonnement Office 365 Enterprise, tel qu’un abonnement Office 365 Entreprise E1, E3 ou E5.
-  
- **Y a-t-il un risque de perdre les données de conversation Teams si la boîte aux lettres locale de l’utilisateur est déplacée vers le cloud ?**
+
+**Y a-t-il un risque de perdre les données de conversation Teams si la boîte aux lettres locale de l’utilisateur est déplacée vers le cloud ?**
   
 Non. Lorsque vous migrez la boîte aux lettres principale d’un utilisateur local vers le cloud, les informations de conversation associées à cet utilisateur sont déplacées vers leur nouvelle boîte aux lettres principale basée sur le cloud.
   
  **Puis-je appliquer une conservation eDiscovery ou des stratégies de rétention à des utilisateurs locaux ?**
   
-Oui. Vous pouvez appliquer des conservations eDiscovery ou des stratégies de rétention pour les conversations Teams et les messages de canaux pour les utilisateurs locaux.
-  
- **La recherche de contenu peut-elle trouver des données de conversations plus anciennes Teams pour les utilisateurs locaux avant que mon organisation ait soumis la demande d’activation de cette fonctionnalité ?**
-  
-Microsoft a commencé à stocker des données de conversations Teams pour les utilisateurs locaux le 31 janvier 2018. Par conséquent, si l’identité d’un utilisateur Teams locale a été synchronisée entre Active Directory et Azure Active Directory depuis cette date, ses données de conversation Teams sont stockées sur le cloud et peut faire l’objet d’une recherche à l’aide de la recherche de contenu. Microsoft travaille également au stockage des données de conversation Teams antérieures au 31 janvier 2018 dans le stockage sur le cloud pour les utilisateurs locaux. Des informations supplémentaires seront disponibles prochainement.
-
- **Les utilisateurs locaux ont-ils besoin d’une licence pour stocker leurs données de conversations Teams dans le cloud ?**
-  
-Oui. Pour stocker les données de conversations Teams pour un utilisateur local dans un stockage basé sur le cloud, l’utilisateur doit avoir une licence Microsoft Teams et une licence Exchange Online plan dans Office 365 (ou Microsoft 365).
+Oui. Vous pouvez appliquer des conservations eDiscovery ou des stratégies de rétention pour les conversations Teams et les messages de canaux pour les utilisateurs locaux. Toutefois, pour préserver ou conserver le contenu Teams des utilisateurs locaux, une licence Exchange Online Plan 2 doit leur être attribuée.

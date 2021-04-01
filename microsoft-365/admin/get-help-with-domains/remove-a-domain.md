@@ -22,21 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine de Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
-ms.openlocfilehash: f4281eb793e6a832e3bd7f31484a97ccd5065bf5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 916730975e9e17c42b01d9fa0ff55b3cb7078f66
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915613"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470964"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
   
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -54,7 +47,7 @@ Supprimez-vous votre domaine car vous souhaitez l’ajouter à un autre plan d�
 
 3. Sélectionnez les cases en de côté des noms de tous les utilisateurs que vous souhaitez déplacer.
 
-4. Sélectionnez **Plus d’options** (**...**), en haut de la page, puis choisissez Modifier **les domaines.**
+4. Sélectionnez **plus d’options** (**...**), en haut de la page, puis choisissez Modifier **les domaines.**
 
 5. Dans le **volet Modifier les domaines,** sélectionnez un autre domaine.
 
@@ -104,7 +97,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 3. Sous **l’onglet** Compte, **sélectionnez Gérer** le nom d’utilisateur, puis choisissez un autre domaine.
   
-4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
+4. En haut, sélectionnez le nom de votre compte, puis **connectez-vous.**
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -118,9 +111,9 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 2. Dans la section **Nom d’utilisateur/Courrier** électronique, **sélectionnez Modifier,** puis choisissez un autre domaine.
 
-3. Select **Set as primary** > **Save** > **Close**.
+3. Sélectionnez **Définir comme principal** > **Save** > **Close**.
   
-4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
+4. En haut, sélectionnez le nom de votre compte, puis **connectez-vous.**
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -134,9 +127,9 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 2. Dans la section **Nom d’utilisateur/Courrier** électronique, **sélectionnez Modifier,** puis choisissez un autre domaine.
 
-3. Select **Set as primary** > **Save** > **Close**.
+3. Sélectionnez **Définir comme principal** > **Save** > **Close**.
   
-4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
+4. En haut, sélectionnez le nom de votre compte, puis **connectez-vous.**
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 

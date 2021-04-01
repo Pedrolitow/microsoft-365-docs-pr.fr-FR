@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Pré-travail lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445601"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476348"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Pré-travail pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -102,12 +102,13 @@ Lire et appliquer les [étapes de migration ADFS](ms-cloud-germany-transition-ad
 
 <!-- before phase 5 -->
 
-**S’applique à**: clients Exchange Online qui ont activé le partage du calendrier et de l’espace d’adressal de disponibilité<br>
+**S’applique à**: clients Exchange Online<br>
 **Appliqué :** Tout moment avant la fin de la phase 9
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Informez les partenaires externes de la transition à venir vers les services Office 365. | Les configurations d’espace d’adressare de disponibilité permettent le partage d’informations de disponibilité avec Office 365. | Si vous ne le faites pas, le service ou le client échouera lors d’une phase ultérieure de la migration des clients. |
+| Informez les partenaires externes de la transition à venir vers les services Office 365. |  Les clients doivent informer leurs partenaires avec lesquels ils ont activé le partage de la configuration de l’espace d’adressace de disponibilité et du calendrier (autoriser le partage d’informations de disponibilité avec Office 365). La configuration de la disponibilité doit être effectuée pour utiliser les points de terminaison [Office 365 dans](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) le monde une fois la migration d’Exchange Online terminée. | Si vous ne le faites pas, le service ou le client échouera lors d’une phase ultérieure de la migration des clients. |
+| Informez les utilisateurs des modifications de client IMAP4/POP3/SMTP requises. | Les utilisateurs qui ont des connexions d’appareil aux points de terminaison Microsoft Cloud Deutschland pour les protocoles clients IMAP4, POP3, SMTP sont tenus de mettre à jour manuellement leurs appareils clients pour basculer vers les points de terminaison [office 365 dans](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)le monde. | Communiquez préalablement cette dépendance aux utilisateurs de ces protocoles et assurez-vous qu’ils basculent vers Outlook Mobile ou Outlook sur le web pendant cette migration. L’échec de la mise à jour des points de terminaison clients entraîne des échecs de connexion client par rapport à Microsoft Cloud Deutschland lors de la migration des boîtes aux lettres utilisateur. |
 ||||
 
 ### <a name="exchange-online-hybrid-configuration"></a>Configuration hybride d’Exchange Online

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1757160b37500e97586fbb6dfb16d81303bc54e4
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379348"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476480"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender for Endpoint
 
@@ -204,7 +204,7 @@ Les fonctionnalités suivantes sont incluses dans cette intégration :
 - Intégration automatisée : le capteur Defender for Endpoint est automatiquement activé sur les serveurs Windows intégrés au Centre de sécurité Azure. Pour plus d’informations sur l’intégration du Centre de sécurité Azure, voir Intégration à [Azure Security Center Standard pour une sécurité renforcée.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
 
     > [!NOTE]
-    > L’intégration automatisée s’applique uniquement à Windows Server 2008 R2 SP1, Windows Server 2012 R2 et Windows Server 2016.
+    > L’intégration entre Azure Defender pour serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Les serveurs Windows surveillés par le Centre de sécurité Azure seront également disponibles dans Defender for Endpoint - Azure Security Center se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs.  En outre, les alertes Defender pour le point de terminaison seront disponibles dans la console Azure Security Center.
 - Enquête sur le serveur : les clients du Centre de sécurité Azure peuvent accéder au Centre de sécurité Microsoft Defender pour effectuer une enquête détaillée afin de découvrir l’étendue d’une violation potentielle.
@@ -283,8 +283,8 @@ Pour mettre hors service le serveur Windows, vous pouvez utiliser l’une des m�
 <br>
 
 ## <a name="related-topics"></a>Voir aussi
-- [Intégrer des appareils Windows 10](configure-endpoints.md)
-- [Intégrer des appareils autres que Windows](configure-endpoints-non-windows.md)
+- [Intégrer des appareils Windows 10](configure-endpoints.md)
+- [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)
 - [Configurer les paramètres de proxy et de connectivité Internet](configure-proxy-internet.md)
 - [Exécuter un test de détection sur un appareil Defender pour point de terminaison nouvellement intégré](run-detection-test.md)
 - [Résolution des problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

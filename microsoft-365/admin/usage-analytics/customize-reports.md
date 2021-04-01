@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Apprenez à personnaliser les rapports dans le navigateur et Power BI Desktop.
-ms.openlocfilehash: 18b4352d3aaa2fd16b74f78e1f80da3ee98367a6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d36e07a19b0ebda0d154b11723630e38b746eb8d
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914005"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471088"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personnaliser les rapports dans l’analyse de l’utilisation de Microsoft 365
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 L’analyse de l’utilisation de Microsoft 365 fournit un tableau de bord dans Power BI qui fournit des informations sur la façon dont les utilisateurs adoptent et utilisent Microsoft 365. Le tableau de bord n'est qu'un point de départ pour interagir avec les données d'utilisation. Les rapports peuvent être personnalisés pour fournir des informations plus pertinentes.
   
@@ -78,9 +71,9 @@ L'exemple suivant montre comment créer un élément visuel pour assurer le suiv
 
     ![Sélectionner un graphique à barres](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
-5. Sélectionnez la partie inférieure droite de cette visualisation et faites-la glisser pour la rendre plus grande.
+5. Sélectionnez le bas à droite de cette visualisation et faites glisser pour l’agrandir.
 
-6. Dans la **zone Champs** à droite, **développez** la table Calendrier.
+6. Dans la **zone Champs** à droite, développez **la** table Calendrier.
 
 7. Faites glisser **MonthName** vers la zone Champs, juste en-dessous du titre **Axe** de la zone **Visualisations**.
  
@@ -122,7 +115,7 @@ Vous pouvez commencer par vous connecter directement aux API de rapports ODATA �
   
     ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
-3. Entrez vos informations d’identification d’administrateur Microsoft 365 (organisation ou école) pour vous authentifier à Microsoft 365 lorsque vous y être invité.
+3. Entrez vos informations d’identification d’administrateur Microsoft 365 (organisation ou établissement scolaire) pour vous authentifier à Microsoft 365 lorsque vous y être invité.
     
     Consultez la [FAQ](usage-analytics.md#faq) pour plus d’informations sur les personnes autorisées à accéder aux rapports d’application du modèle Adoption de Microsoft 365. 
     

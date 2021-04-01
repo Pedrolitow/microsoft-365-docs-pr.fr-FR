@@ -21,17 +21,14 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: Découvrez comment envoyer votre demande Fapiao au système de gestion Fapiao 21Vianet après avoir effectué un paiement dans Office 365 géré par 21Vianet en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 681d2d79c510c773d7597c62811256458e3d166d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d9f75dfd00bb547e9d2e0f53826e5bc50926de39
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914473"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470952"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Demander un fapiao pour Office 365 géré par 21Vianet
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 Vous pouvez envoyer votre demande Fapiao au système de gestion Fapiao 21Vianet environ trois jours après avoir payé. Une fois que vous avez soumis votre demande Fapiao, elle sera traitée dans deux jours.
   
@@ -41,7 +38,7 @@ Vous pouvez envoyer votre demande Fapiao au système de gestion Fapiao 21Vianet 
 
 Il existe deux façons d’appliquer un Fapiao :
   
-1. Après avoir effectué un paiement sur le site web Office 365 géré par 21Vianet, vous recevrez un e-mail de confirmation de commande contenant votre numéro de commande et un lien vers le système de gestion Fapiao. Vous pouvez utiliser le lien dans l’e-mail pour créer un compte dans le système de gestion des informations <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">de 21Vianet Fapiao.</a>
+1. Après avoir effectué un paiement sur le site web Office 365 géré par 21Vianet, vous recevrez un e-mail de confirmation de commande contenant votre numéro de commande et un lien vers le système de gestion Fapiao. Vous pouvez utiliser le lien dans l’e-mail pour créer un compte dans le système de gestion des informations <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao.</a>
 
     Ou
 
@@ -60,9 +57,9 @@ Il existe deux façons d’appliquer un Fapiao :
 
     ![Page d’inscription du système de gestion 21Vianet Fapioa.](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
-3. Une fois votre inscription terminée, le système envoie un message électronique d’activation à votre adresse e-mail. Ouvrez le message électronique et sélectionnez le lien pour activer votre compte.
+3. Une fois votre inscription terminée, le système envoie un message électronique d’activation à votre adresse de messagerie. Ouvrez le message électronique et sélectionnez le lien pour activer votre compte.
 
-## <a name="step-3-submit-your-bill-for-a-fapiao"></a>Étape 3 : Soumettre votre facture pour un Fapiao
+## <a name="step-3-submit-your-bill-for-a-fapiao"></a>Étape 3 : Soumettre votre facture pour un fapiao
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">système de gestion Fapiao.</a>
 
@@ -89,7 +86,7 @@ Il existe deux façons d’appliquer un Fapiao :
   
     **Adresse de la succursale de 21Vianet à Shanghai :**
 
-    Chang, Puou new area keyuan road no. 88, Centre allemand, bâtiment 3, 657
+    Shanghai, Puouz- New Area Keyuan Road No. 88, Centre allemand, bâtiment 3, 657
 
     **Informations de contact :**
 
@@ -111,7 +108,7 @@ Lorsque Fapiao est hors d’utilisation, le système affiche un avis et indique 
   
 ![Message d’erreur affiché lorsque le système de gestion 21Vianet Fapiao est hors d’utilisation.](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
-## <a name="faqs"></a>Foire aux questions
+## <a name="faqs"></a>Foires aux questions
 
 ### <a name="what-services-can-i-get-from-online-support"></a>Quels services puis-je obtenir du support en ligne ?
 
@@ -119,7 +116,7 @@ Vous pouvez vérifier la progression de votre demande Fapiao et savoir pourquoi 
   
 Si vous souhaitez modifier le titre Fapiao, veuillez nous renvoyer fapiao et nous allons lui renvoyer le fapiao. Vous pouvez envoyer la demande par le biais du <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">Centre d’administration.</a>
   
-![Formulaire de support du Centre d’administration utilisé pour renvoyer un Fapiao pour demander un changement de titre.](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
+![Formulaire de support du Centre d’administration utilisé pour renvoyer un fapiao pour demander une modification de titre.](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
   
 ### <a name="how-do-i-change-my-login-email-address-and-password"></a>Comment modifier mon adresse e-mail et mon mot de passe de connexion ?
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 670c6449c1121bc329b1dfb37cd1d9948c99a3f8
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379297"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470892"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 
@@ -50,6 +50,9 @@ La même liste d’indicateurs est honorée par l’agent de prévention. Autrem
 
 **Moteur d’examen et de correction automatisé**<BR>
 L’examen et la correction automatisés se comportent de la même manière. Si un indicateur est définie sur « Autoriser », l’examen et la correction automatisés ignorent un verdict « mauvais » pour lui. S’il est définie sur « Bloquer », les examens et corrections automatisés le traitent comme « mauvais ».
+
+> [!NOTE]
+> Le paramètre EnableFileHashComputation calcule le hachage de fichier pour le cert et l’IoC de fichier pendant les analyses de fichiers. Il prend en charge l’application IoC des haps et des certs appartenant à des applications fiables. Elle sera activée et désactivée simultanément avec le paramètre autoriser ou bloquer le fichier. EnableFileHashComputation est activé manuellement par le biais de la stratégie de groupe et est désactivé par défaut.
 
 
 Les actions actuellement prises en charge sont :

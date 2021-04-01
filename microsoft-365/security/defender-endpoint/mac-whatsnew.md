@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be906baca3a54183e22fa3b4ee424a9d8fc6957a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198692"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476624"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Nouveautés de Microsoft Defender pour Endpoint pour Mac
 
@@ -39,7 +39,12 @@ ms.locfileid: "51198692"
 > Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur [cette page.](mac-sysext-policies.md)
 
 > [!IMPORTANT]
-> La prise en charge de macOS 10.13 (High Sierra) ne sera plus prise en charge le 15 février 2021.
+> La prise en charge de macOS 10.13 (High Sierra) a été interrompue le 15 février 2021.
+
+## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
+
+- Ajout d’une nouvelle option à l’outil en ligne de commande pour afficher les informations sur la dernière analyse à la demande. Pour afficher des informations sur la dernière analyse à la demande, exécutez `mdatp health --details antivirus`
+- Améliorations des performances & résolutions de bogues
 
 ## <a name="1012279-20121012122790"></a>101.22.79 (20.121012.12279.0)
 
@@ -54,7 +59,7 @@ ms.locfileid: "51198692"
 > [!NOTE]
 > L’ancienne syntaxe de l’outil de ligne de commande a été dépréciée avec cette version. Pour plus d’informations sur la nouvelle syntaxe, voir [Resources](mac-resources.md#configuring-from-the-command-line).
 
-- Ajout d’un nouveau commutateur de ligne de commande pour désactiver l’extension réseau : `mdatp system-extension network-filter disable` . Cette commande peut être utile pour résoudre les problèmes réseau qui peuvent être liés à Microsoft Defender pour Endpoint pour Mac
+- Ajout d’un nouveau commutateur de ligne de commande pour désactiver l’extension réseau : `mdatp system-extension network-filter disable` . Cette commande peut être utile pour résoudre les problèmes réseau qui peuvent être liés à Microsoft Defender pour Point de terminaison pour Mac
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0)
@@ -114,14 +119,14 @@ ms.locfileid: "51198692"
 
 ## <a name="1010663"></a>101.06.63
 
-- Nous avons résolu une régression des performances introduite dans la version `101.05.17` . La régression a été introduite avec le correctif pour éliminer les noyaux observés par certains clients lors de l’accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d’examiner d’autres façons d’éliminer les noyaux.
+- Nous avons résolu une régression des performances introduite dans la `101.05.17` version. La régression a été introduite avec le correctif pour éliminer les noyaux que certains clients ont observés lors de l’accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d’examiner d’autres façons d’éliminer les noyaux.
 
 ## <a name="1010517"></a>101.05.17
 
 > [!IMPORTANT]
 > Nous travaillons sur une syntaxe nouvelle et améliorée pour `mdatp` l’outil en ligne de commande. La nouvelle syntaxe est actuellement la valeur par défaut dans les canaux de mise à jour Insider Fast et Insider Slow. Nous vous encourageons à vous familiariser avec cette nouvelle syntaxe.
 > 
-> Nous continuerons à la prise en charge de l’ancienne syntaxe parallèlement à la nouvelle syntaxe et nous fournirons une meilleure communication autour du plan de désaprétation de l’ancienne syntaxe dans les mois à venir.
+> Nous continuerons à assurer la prise en charge de l’ancienne syntaxe parallèlement à la nouvelle syntaxe et nous fournirons davantage de communication autour du plan de désaprétation de l’ancienne syntaxe dans les mois à venir.
 
 - Nous avons résolu un problème de noyau qui se produisait parfois lors de l’accès aux partages de fichiers SMB
 - Améliorations des performances & résolutions de bogues
@@ -146,13 +151,13 @@ ms.locfileid: "51198692"
 
 - Amélioration de [l’expérience d’intégration de produit pour les utilisateurs d’Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
 - Les [exclusions antivirus désormais prise en charge les caractères génériques](mac-exclusions.md#supported-exclusion-types)
-- Ajout de la possibilité de déclencher des analyses antivirus à partir du menu contextuel macOS. Vous pouvez maintenant cliquer avec le bouton droit sur un fichier ou un dossier dans finder et sélectionner Analyser **avec Microsoft Defender pour le point de terminaison**
+- Ajout de la possibilité de déclencher des analyses antivirus à partir du menu contextuel macOS. Vous pouvez maintenant cliquer avec le bouton droit sur un fichier ou un dossier dans finder et sélectionner **Analyser avec Microsoft Defender pour le point de terminaison**
 - Les rétrogradations de produits sur place sont désormais explicitement interdits par le programme d’installation. Si vous devez rétrograder, désinstallez d’abord la version existante et reconfigurez votre appareil.
 - Autres améliorations en matière de performances & résolutions de bogues
 
 ## <a name="1009027"></a>100.90.27
 
-- Vous pouvez désormais [définir un canal](mac-updates.md#set-the-channel-name) de mise à jour pour Microsoft Defender pour Point de terminaison pour Mac différent du canal de mise à jour à l’échelle du système
+- Vous pouvez désormais [définir un canal de mise](mac-updates.md#set-the-channel-name) à jour pour Microsoft Defender pour Point de terminaison pour Mac différent du canal de mise à jour à l’échelle du système
 - Icône Nouveau produit
 - Autres améliorations de l’expérience utilisateur
 - Résolutions de bogues
@@ -189,7 +194,7 @@ ms.locfileid: "51198692"
 
 ## <a name="1007942"></a>100.79.42
 
-- Correction d’un problème dans lequel Microsoft Defender pour Point de terminaison pour Mac interfère parfois avec Time Machine
+- Correction d’un problème dans lequel Microsoft Defender pour point de terminaison pour Mac interfère parfois avec Time Machine
 - Ajout d’un nouveau commutateur à l’utilitaire de ligne de commande pour tester la connectivité avec le service back-end
   ```bash
   mdatp connectivity test
@@ -203,11 +208,11 @@ ms.locfileid: "51198692"
 
 ## <a name="1007099"></a>100.70.99
 
-- Nous avons résolu un problème qui a une incidence sur la capacité de certains utilisateurs à mettre à niveau vers macOS Ils sont activés lorsque la protection en temps réel est activée. Ce problème ponctuel a été provoqué par microsoft Defender pour le verrouillage des fichiers de point de terminaison dans le package de mise à niveau De base lors de l’analyse des menaces, ce qui a entraîné des échecs dans la séquence de mise à niveau.
+- Nous avons résolu un problème qui a un impact sur la capacité de certains utilisateurs à mettre à niveau vers macOS Ils sont activés lorsque la protection en temps réel est activée. Ce problème ponctuel a été provoqué par microsoft Defender pour le verrouillage des fichiers de point de terminaison dans le package de mise à niveau De base lors de l’analyse des menaces, ce qui a entraîné des échecs dans la séquence de mise à niveau.
 
 ## <a name="1006899"></a>100.68.99
 
-- Ajout de la possibilité de configurer la fonctionnalité antivirus pour qu’elle s’exécute [en mode passif](mac-preferences.md#enable--disable-passive-mode)
+- Ajout de la possibilité de configurer la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif](mac-preferences.md#enable--disable-passive-mode)
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1006528"></a>100.65.28
@@ -215,7 +220,7 @@ ms.locfileid: "51198692"
 - Prise en charge supplémentaire de macOS
 
   > [!CAUTION]
-  > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
+  > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
   >
   > Le mécanisme d’octroi de ce consentement dépend de la façon dont vous avez déployé Microsoft Defender pour endpoint :
   >

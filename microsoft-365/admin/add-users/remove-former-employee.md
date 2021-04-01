@@ -25,22 +25,15 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Suivez cette liste de vérification pour supprimer un employé de Microsoft 365 et sécuriser les données. '
-ms.openlocfilehash: 2372056cd6bee2387842c74dc2a35d71b88fae9e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d67ac65f4f3e6600b942b4f7d56826da35735b5c
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904395"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470868"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>Supprimer ou supprimer un ancien employé
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
-  
 ## <a name="sign-out-now"></a>Déconnectez maintenant !
 
 ::: moniker range="o365-worldwide"
@@ -53,7 +46,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 Pour empêcher un employé de se connecter :
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez la case à côté du nom de l’utilisateur, puis sélectionnez **Réinitialiser le mot de passe.**
 3. Entrez un nouveau mot de passe, puis sélectionnez **Réinitialiser.** (Ne leur envoyez pas de message.)
 4. Sélectionnez le nom de l’utilisateur pour aller  dans le volet de propriétés, puis sous l’onglet Compte, sélectionnez Lancer **la signature.**
@@ -62,7 +55,7 @@ Pour empêcher un employé de se connecter :
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’utilisateur, puis **réinitialisez le mot de passe.**
 
@@ -74,7 +67,7 @@ Pour empêcher un employé de se connecter :
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’utilisateur, puis **réinitialisez le mot de passe.**
 
@@ -90,7 +83,7 @@ Pour empêcher un employé de se connecter :
 Dans un délai d’une heure (ou après avoir quitté la page Microsoft 365 actuelle), ils sont invités à se ré-inscrire. Un jeton d’accès est bon pendant une heure, donc la chronologie dépend du temps qui reste sur ce jeton et de la façon dont il quitte la page web actuelle.
   
 > [!IMPORTANT]
-> Si l’utilisateur se trouve dans Outlook sur le web, il se peut qu’il ne soit pas immédiatement mis hors de l’application en cliquant dans sa boîte aux lettres. Dès qu’ils sélectionnent une autre vignette, telle que OneDrive, ou actualisent leur navigateur, la signature est lancée.
+> Si l’utilisateur est dans Outlook sur le web, il se peut qu’il ne soit pas immédiatement mis hors de la boîte aux lettres en cliquant dessus. Dès qu’ils sélectionnent une autre vignette, telle que OneDrive, ou actualisent leur navigateur, la signature est lancée.
   
 Pour utiliser PowerShell afin de déconnecter un utilisateur immédiatement, voir l'applet de commande [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken).
   
@@ -146,7 +139,7 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sélectionnez **l’onglet** Courrier.
 3. Under **Email Forwarding**, select **Manage email forwarding**.
 4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans la **zone d’adresse de** forwarding, tapez l’adresse e-mail de l’employé actuel qui va obtenir le courrier électronique.
@@ -157,7 +150,7 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous souhaitez bloquer et développez **Paramètres de messagerie.**
 
@@ -173,7 +166,7 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous souhaitez bloquer et développez **Paramètres de messagerie.**
 
@@ -194,7 +187,7 @@ Si votre ancien employé avait un téléphone d’organisation, vous pouvez util
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 2. Dans le Centre d'administration Exchange, accédez à **Destinataires** \> **Boîtes aux lettres**.
 3. Sélectionnez l’utilisateur, puis sous **Appareils mobiles,** **sélectionnez Afficher les détails.**
-4. Dans la page **Détails de l’appareil** mobile, sous **Appareils** mobiles, sélectionnez l’appareil mobile, sélectionnez Effacer le périphérique de effacement ![ des données, puis ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) bloquer . 
+4. Dans la page **Détails de** l’appareil mobile, sous **Appareils** mobiles, sélectionnez l’appareil mobile, sélectionnez Effacer le périphérique de effacement des données, puis ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) sélectionnez **Bloquer**.
 5. Sélectionnez **Enregistrer**.
    > [!TIP]
    > Assurez-vous de supprimer ou de désactiver l’utilisateur de votre service Blackberry Enterprise Local. Vous devez également désactiver les appareils Blackberry de l'utilisateur. Reportez-vous au guide d'administration des services Blackberry Business Cloud Services pour consulter les étapes spécifiques relatives à la désactivation de l'utilisateur.
@@ -206,15 +199,15 @@ Si votre ancien employé avait un téléphone d’organisation, vous pouvez util
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole Bloquer **cet utilisateur.**
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole bloquer **cet utilisateur.**
 3. Sélectionnez **Bloquer la signature de l’utilisateur,** puis sélectionnez **Enregistrer.**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous souhaitez bloquer, puis sélectionnez Bloquer **la signature.**
 
@@ -224,7 +217,7 @@ Si votre ancien employé avait un téléphone d’organisation, vous pouvez util
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous souhaitez bloquer, puis sélectionnez Bloquer **la signature.**
 
@@ -238,7 +231,7 @@ Si vous avez du courrier électronique dans le cadre de votre abonnement Microso
   
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 2. Dans le Centre d'administration Exchange, accédez à **Destinataires** \> **Boîtes aux lettres**.
-3. Double-cliquez sur l’utilisateur et consultez la page **Fonctionnalités de boîte aux lettres.** Sous **Appareils mobiles,** sélectionnez Désactiver Exchange ActiveSync et Désactiver OWA pour les   **appareils,** puis répondez Oui aux deux lorsque vous y avez été invité.
+3. Double-cliquez sur l’utilisateur et consultez la page **Fonctionnalités de boîte aux lettres.** Sous **Appareils mobiles,** sélectionnez Désactiver Exchange ActiveSync et Désactiver OWA pour les   **appareils,** puis répondez Oui aux deux lorsque vous y répondrez.
 4. Sous **Connectivité de messagerie,** **sélectionnez Désactiver et** **répondez Oui** à l’invite.
 
 ## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Supprimer et supprimer la licence Microsoft 365 d’un ancien employé
@@ -249,7 +242,7 @@ Lorsque vous effectuez cette opération, toutes les données de cet utilisateur 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sélectionnez l’onglet **Licences et** applications.
 3. Clear the check boxes for the license(s) you want to remove, and then select **Save changes**.
 
@@ -257,7 +250,7 @@ Lorsque vous effectuez cette opération, toutes les données de cet utilisateur 
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous souhaitez bloquer, puis en côté des **licences de produit,** sélectionnez **Modifier**.
 
@@ -267,7 +260,7 @@ Lorsque vous effectuez cette opération, toutes les données de cet utilisateur 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous souhaitez bloquer, puis en côté des **licences de produit,** sélectionnez **Modifier**.
 
@@ -317,7 +310,7 @@ Ne supprimez pas le compte si vous avez configuré le transfert de courrier ou s
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez le nom de l’employé à supprimer.
 3. Sous le nom de l’utilisateur, sélectionnez le symbole **Supprimer l’utilisateur.** Choisissez les options que vous souhaitez pour cet utilisateur, puis sélectionnez **Supprimer l’utilisateur.**
 
@@ -325,7 +318,7 @@ Ne supprimez pas le compte si vous avez configuré le transfert de courrier ou s
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé à supprimer.
 
@@ -335,7 +328,7 @@ Ne supprimez pas le compte si vous avez configuré le transfert de courrier ou s
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé à supprimer.
 

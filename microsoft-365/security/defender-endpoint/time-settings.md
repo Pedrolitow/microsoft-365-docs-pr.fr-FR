@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c6338155aae3605ac5721958363b8c2d86618d9b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: e395420b92c29977f1c802d1c10683492c1aba10
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183848"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470464"
 ---
 # <a name="microsoft-defender-security-center-time-zone-settings"></a>Paramètres de fuseau horaire du Centre de sécurité Microsoft Defender
 
@@ -29,9 +29,6 @@ ms.locfileid: "51183848"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-
 
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-settings-abovefoldlink)
@@ -57,7 +54,7 @@ La définition du fuseau horaire De Microsoft Defender pour le point de terminai
 ### <a name="local-time-zone"></a>Fuseau horaire local
 Vous pouvez choisir que Microsoft Defender pour le point de terminaison utilise les paramètres de fuseau horaire local. Toutes les alertes et événements s’affichent à l’aide de votre fuseau horaire local.
 
-Le fuseau horaire local est pris à partir des paramètres régionaux de votre appareil. Si vous modifiez vos paramètres régionaux, le fuseau horaire de Microsoft Defender for Endpoint change également. Le choix de ce paramètre signifie que les timestamps affichés dans Microsoft Defender pour Endpoint seront alignés sur l’heure locale pour tous les utilisateurs de Microsoft Defender pour endpoint. Les analystes situés dans différents emplacements globaux voient désormais les alertes De Microsoft Defender pour point de terminaison en fonction de leurs paramètres régionaux.
+Le fuseau horaire local est pris à partir des paramètres régionaux de votre appareil. Si vous modifiez vos paramètres régionaux, le fuseau horaire de Microsoft Defender for Endpoint change également. Le choix de ce paramètre signifie que les timestamps affichés dans Microsoft Defender pour Endpoint seront alignés sur l’heure locale pour tous les utilisateurs de Microsoft Defender pour Endpoint. Les analystes situés dans différents emplacements globaux voient désormais les alertes De Microsoft Defender pour point de terminaison en fonction de leurs paramètres régionaux.
 
 Choisir d’utiliser l’heure locale peut être utile si les analystes se trouvent dans un emplacement unique. Dans ce cas, il peut être plus facile de corréler les événements à l’heure locale, par exemple, lorsqu’un utilisateur local a cliqué sur un lien de courrier suspect.
 
@@ -90,7 +87,7 @@ Les formats de date et d’heure suivants sont pris en charge :
 - Format d’heure hh:mm:ss (format 12 heures)
 
 Les formats de date et d’heure suivants ne sont actuellement pas pris en charge :
-- Format de date aay-MM-j j j
+- Format de date aay-MM-j j j j
 - Date format dd-MMM-yy
 - Format de date j/MM/aa
 - Format de date MM/j/j/aa

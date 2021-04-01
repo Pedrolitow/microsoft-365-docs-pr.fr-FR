@@ -23,21 +23,14 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Découvrez comment restaurer les comptes d’utilisateur supprimés et toutes les données associées.
-ms.openlocfilehash: f3986ed1ba007dcac87bdfb9322ba5c5bf081b35
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 75e664c68dec13b857e4bd308d49e5b58d5edfc8
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903711"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471012"
 ---
 # <a name="restore-a-user"></a>Restaurer un utilisateur
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
    
 Lorsque vous restaurez un compte d'utilisateur dans les 30 jours après sa suppression, celui-ci et toutes les données associées sont restaurés. L'utilisateur peut se connecter avec le même compte professionnel ou scolaire. Sa boîte aux lettres est entièrement restaurée. Pour déterminer le temps restant avant qu'un compte d'utilisateur spécifique ne puisse plus être restauré, [contactez-nous](../contact-support-for-business-products.md).
   
@@ -60,13 +53,13 @@ Vous devez être administrateur global Microsoft 365 ou administrateur de gestio
 
 ::: moniker range="o365-germany"
 
-1. Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.
+1. Go to the [admin center,](https://go.microsoft.com/fwlink/p/?linkid=848041)and then select **Users** \> **Deleted users**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.
+1. Go to the [admin center,](https://go.microsoft.com/fwlink/p/?linkid=850627)and then select **Users** \> **Deleted users**.
 
 ::: moniker-end
 
@@ -89,13 +82,13 @@ Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
+1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.
+1. Go to the [admin center,](https://go.microsoft.com/fwlink/p/?linkid=848041)and then select **Users** \> **Deleted users**.
 
 ::: moniker-end
 
@@ -130,13 +123,13 @@ Pour ce [faire, vous devez](about-admin-roles.md) avoir des autorisations d’ad
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
+1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.
+Go to the [admin center,](https://go.microsoft.com/fwlink/p/?linkid=848041)and then select **Users** \> **Deleted users**.
 
 ::: moniker-end
 
