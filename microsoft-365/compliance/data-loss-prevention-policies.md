@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier, surveiller et protéger automatiquement les informations sensibles de votre organisation dans Office 365.
-ms.openlocfilehash: 9ef369786aa4b79dbdec551c9750500f9c092906
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 737e556972ca8ab0f82e1c4fe9e8602f09e91fc8
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052072"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445428"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -86,7 +86,7 @@ Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la 
 Les stratégies DLP s’appliquent aux éléments sensibles dans les emplacements Microsoft 365. Vous pouvez les étendre comme détaillé dans le tableau suivant.
 
 
-|emplacement | Inclure/exclure par|
+|Emplacement | Inclure/exclure par|
 |---------|---------|
 |e-mail Exchange| groupes de distribution|
 |sites SharePoint |sites |
@@ -96,9 +96,14 @@ Les stratégies DLP s’appliquent aux éléments sensibles dans les emplacement
 |Microsoft Cloud App Security |instance |
 
 
- Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
+Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
 
-Si vous optez pour l’inclusion ou l’exclusion de sites SharePoint ou de comptes OneDrive spécifiques, notez qu’une stratégie DLP ne peut pas contenir plus de 100 inclusions et exclusions. Vous pouvez néanmoins contourner cette limite en appliquant une stratégie mise en place à l’échelle de l’organisation ou une stratégie qui s’applique aux emplacements entiers.
+Si vous optez pour l’inclusion ou l’exclusion de sites SharePoint spécifiques, la stratégie DLP ne peut pas contenir plus de 100 inclusions et exclusions. Vous pouvez néanmoins contourner cette limite en appliquant une stratégie mise en place à l’échelle de l’organisation ou une stratégie qui s’applique aux emplacements entiers.
+
+Si vous choisissez d’inclure ou d’exclure des comptes ou groupes OneDrive spécifiques, une stratégie DLP peut contenir au plus 100 comptes d’utilisateurs ou 50 groupes pour l’inclusion ou l’exclusion.
+
+> [!NOTE]
+> L’élaboration de l’étendue de la stratégie OneDrive Entreprise à l’aide de comptes ou de groupes est en préversion publique. Au cours de cette phase, vous pouvez inclure ou exclure des comptes d’utilisateurs et des groupes dans le cadre d’une stratégie DLP. Les inclusions et exclusions dans le cadre de la même stratégie ne sont pas prises en charge.
   
 ### <a name="rules"></a>Règles
 
@@ -201,8 +206,9 @@ Dans un compte OneDrive Entreprise, un conseil de stratégie se présente comme 
 Lorsqu’une règle est satisfaite, vous pouvez envoyer un e-mail d’alerte contenant les détails de celle-ci à votre responsable de la conformité (ou toute autre personne de votre choix). Ce message d’alerte comporte un lien vers le [Tableau de bord de gestion des alertes DLP](dlp-configure-view-alerts-policies.md) auquel le responsable de la conformité peut accéder pour afficher les détails des alertes et des événements. Le tableau de bord contient les détails de l’événement ayant déclenché l’alerte, ainsi que les détails de la stratégie DLP correspondante et le contenu sensible détecté.
 
 En outre, vous pouvez également envoyer un rapport d’incident incluant les détails de l’événement. Ce rapport comprend des informations sur l’élément qui a fait l’objet d’une correspondance, le contenu qui a satisfait à la règle ainsi que le nom de la personne qui a modifié le contenu en dernier. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
-  
-![Page de configuration de rapports d’incident](../media/Alerts-and-incident-report.png)
+
+> [!div class="mx-imgBorder"]
+> ![Page de configuration de rapports d’incident](../media/Alerts-and-incident-report.png)
 
 DLP n’analyse pas les messages électronique de la même façon que les éléments dans SharePoint Online ou OneDrive Entreprise. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident et d’alerte chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux e-mails, puis génère un rapport en cas de correspondance de stratégie. DLP ***ne peut pas*** analyser ou mettre en correspondance les éléments de messagerie existants qui sont stockés dans une boîte aux lettres ou une archive.
   
@@ -252,13 +258,15 @@ Par exemple, le type d’informations sensibles intégrées pour la réglementat
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>La priorité de traitement des règles
 
-Lorsque vous créez des règles dans une stratégie, chaque règle se voit attribuer une priorité en fonction de son ordre de création. Cela signifie que la première règle créée a priorité sur la deuxième et ainsi de suite. 
-  
-![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
+Lorsque vous créez des règles dans une stratégie, chaque règle se voit attribuer une priorité en fonction de son ordre de création. Cela signifie que la première règle créée a priorité sur la deuxième et ainsi de suite.
+
+> [!div class="mx-imgBorder"]
+> ![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
   
 Une fois que vous avez configuré plusieurs stratégies DLP, vous pouvez modifier la priorité d’une ou plusieurs stratégies. Pour ce faire, sélectionnez une stratégie, sélectionnez **Modifier la stratégie**, puis utilisez la liste **Priorité** pour préciser sa priorité.
 
-![Définition d’une priorité pour une stratégie](../media/dlp-set-policy-priority.png)
+> [!div class="mx-imgBorder"]
+> ![Définition d’une priorité pour une stratégie](../media/dlp-set-policy-priority.png)
 
 Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’ordre de priorité. Si le contenu correspond à plusieurs règles, celles-ci sont traitées dans l’ordre de priorité et l’action la plus restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 3 est appliquée, car c’est celle qui a la priorité la plus élevée et est la plus restrictive :
   
@@ -295,8 +303,9 @@ Pour résoudre ces problèmes, vous pouvez optimiser vos règles en ajustant le 
 ### <a name="instance-count"></a>Nombre d’instances
 
 Le nombre d’instances indique simplement combien d’occurrences d’un type spécifique d’informations sensibles doivent être présentes pour que le contenu corresponde à la règle. Par exemple, le contenu correspond à la règle illustrée ci-dessous si les valeurs entre 1 et 9 sont uniques dans un pays donné. les numéros de passeport sont identifiés.
-  
-Notez que le nombre d’instances inclut uniquement le nombre de correspondances **uniques** avec des mots clés et des types d’informations sensibles. Par exemple, si un courrier contient 10 occurrences du même numéro de carte de paiement, ces 10 occurrences comptent pour une seule instance d’un numéro de carte de paiement. 
+
+> [!NOTE]
+> Le nombre d’instances inclut uniquement le nombre de correspondances **Uniques** avec des types d’informations confidentielles et des mots clés. Par exemple, si un courrier contient 10 occurrences du même numéro de carte de paiement, ces 10 occurrences comptent pour une seule instance d’un numéro de carte de paiement.
   
 L’optimisation des règles à l’aide du nombre d’instances est simple :
   
@@ -393,7 +402,7 @@ Lorsque vous créez une stratégie DLP, vous devez choisir entre les paramètres
     
 - Les **paramètres avancés** utilisent l’éditeur de règles pour vous donner un contrôle total sur chaque paramètre de votre stratégie DLP. 
     
-Soyez rassuré, en réalité, les paramètres simples et avancés fonctionnent de la même manière : ils appliquent des règles composées de conditions et d’actions. La seule différence est que l’éditeur de règles n’apparaît pas avec les paramètres simples. C’est un moyen rapide de créer une stratégie DLP.
+Soyez rassuré, en réalité, les paramètres simples et avancés fonctionnent de la même manière, en appliquant des règles composées de conditions et d’actions, uniquement avec les paramètres simples, vous ne pouvez pas afficher l’éditeur de règle. C’est un moyen rapide de créer une stratégie DLP.
   
 ### <a name="simple-settings"></a>Paramètres simples
 
@@ -443,7 +452,8 @@ Si vous créez des stratégies DLP susceptibles d’avoir un impact important, n
 
     Vous pouvez également modifier la priorité de plusieurs règles dans une stratégie. Pour ce faire, ouvrez une stratégie pour modification. Dans une ligne de règle, sélectionnez les points de suspension (**...**), puis choisissez une option, comme, par exemple, **Descendre** ou **Mettre à la fin**.
 
-    ![Définition d’une priorité de règle](../media/dlp-set-rule-priority.png)
+    > [!div class="mx-imgBorder"]
+    > ![Définition d’une priorité de règle](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>Rapports DLP
 
@@ -534,7 +544,7 @@ Les membres de votre équipe de mise en conformité qui créeront des stratégie
 
 Vous pouvez également créer un groupe de rôles avec des privilèges en affichage seul vers les stratégies DLP et les rapports DLP en accordant au rôle **Gestion de la conformité DLP en affichage seul**.
 
-Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Ces autorisations sont requises uniquement pour créer et appliquer une stratégie DLP. L’application d’une stratégie ne nécessite pas d’accès au contenu.
   

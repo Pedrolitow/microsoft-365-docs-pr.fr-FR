@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: d4a3fef03322912bf169cd195984a17d8dfe3b17
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5aaed57574f1ecabdf28442b30dcd42677243df1
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907048"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445274"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -36,7 +36,7 @@ Vous pouvez utiliser la protection contre la perte de données (DLP) de Microsof
 
 Les points de terminaison Microsoft DLP vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les appareils exécutant Windows 10. 
 
-|activité |description  | auditable/restreint|
+|Activité |Description  | Auditable/restreint|
 |---------|---------|---------|
 |téléchargement vers un service en ligne, ou accès par des navigateurs non autorisés    | Détecte lorsqu'un utilisateur tente de télécharger un article dans un domaine de service restreint ou d'accéder à un article par le biais d'un navigateur.  S'ils utilisent un navigateur qui est répertorié dans DLP comme étant un navigateur non autorisé, l'activité de téléchargement sera bloquée et l'utilisateur sera redirigé pour utiliser Edge Chromium. Edge Chromium autorisera ou bloquera alors le téléchargement ou l'accès en fonction de la configuration de la politique DLP         |auditable et restreint|
 |copie vers une autre application    |Détecte lorsqu'un utilisateur tente de copier des informations d'un élément protégé et de les coller ensuite dans une autre application, un autre processus ou un autre élément. Copier et coller des informations dans la même application, le même processus ou le même élément n'est pas détecté par cette activité.         | auditable et restreint|
@@ -67,7 +67,7 @@ La DLP de point du terminaison prend en charge la surveillance de ces types de f
 - fichiers h
 - fichiers Java
  
-Par défaut, la DLP du point de terminaison audite les activités de ces types de fichiers, même s’il n’existe pas de correspondance de stratégie. Si vous souhaitez surveiller les données des correspondances de stratégie uniquement, vous pouvez désactiver l'option **Toujours auditer l’activité du fichier pour les appareils** dans les paramètres globaux DLP du point de terminaison. Quoi qu’il en soit, les activités sur les fichiers Word, PowerPoint, Excel, PDF et .csv sont toujours auditées.
+Par défaut, la DLP du point de terminaison audite les activités de ces types de fichiers, même s’il n’existe pas de correspondance de stratégie. Si vous souhaitez surveiller les données des correspondances de stratégie uniquement, vous pouvez désactiver l'option **Toujours auditer l’activité du fichier pour les appareils** dans les paramètres globaux DLP du point de terminaison. Si ce paramètre est utilisé, les activités sur les fichiers Word, PowerPoint, Excel, PDF, et .csv sont toujours auditées, même si l’appareil n’est ciblé par aucune stratégie.
 
 Le DLP du point de terminaison contrôle l’activité basée sur le type MIME, de sorte que les activités sont capturées même si l’extension de fichier est modifiée. 
 
@@ -102,15 +102,15 @@ Si vous avez des appareils intégrés via [Microsoft Defender pour point de term
 
 ### <a name="viewing-endpoint-dlp-data"></a>Affichage des données DLP de point de terminaison
 
-
-
 Vous pouvez afficher les alertes liées aux stratégies DLP appliquées sur les appareils de point de terminaison en accédant au [Tableau de bord de Gestion des Alertes DLP.](dlp-configure-view-alerts-policies.md)
 
-![Information d’alerte](../media/Alert-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![Information d’alerte](../media/Alert-info-1.png)
 
 Vous pouvez également afficher les détails de l’événement associé avec des métadonnées complètes dans le même tableau de bord
 
-![Informations sur l’événement](../media/Event-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![Informations sur un événement](../media/Event-info-1.png)
 
 Une fois qu’un appareil est intégré, les informations relatives aux activités auditées sont transmises dans l’Explorateur d’activités, même avant de configurer et déployer des stratégies DLP qui ont des périphériques comme emplacement.
 
