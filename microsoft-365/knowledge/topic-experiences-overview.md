@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Présentation de Rubriques Viva.
-ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917379"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488156"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
@@ -99,7 +99,7 @@ Pour plus d’information, consultez [Gérer les rubriques dans le centre théma
 
 ## <a name="admin-controls"></a>Contrôles d’administration
 
-Les contrôles d’administration du Centre d’administration Microsoft 365 vous permettent de gérer votre réseau de connaissances. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
+Les contrôles d’administration dans le Centre d’administration Microsoft 365 vous permettent de gérer Des rubriques. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
 
 - Contrôler quels utilisateurs de votre organisation sont autorisés à consulter les rubriques dans les pages modernes de SharePoint ou dans les résultats de recherche SharePoint.
 - Contrôler les sites SharePoint qui seront analyser pour identifier les rubriques.

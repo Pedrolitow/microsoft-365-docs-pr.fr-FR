@@ -1,5 +1,5 @@
 ---
-title: Filtrage de contenu Web
+title: Filtrage du contenu web
 description: Utilisez le filtrage de contenu web dans Microsoft Defender ATP pour suivre et contrôler l’accès aux sites web en fonction de leurs catégories de contenu.
 keywords: protection web, protection contre les menaces web, navigation web, surveillance, rapports, cartes, liste de domaines, sécurité, hameçonnage, programme malveillant, attaque, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a8ab1ba1f0dc1bb629e438380b7b77e1ed221f08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 16f0d96b75ec7035ca133f75a83df1f284ee5c4b
+ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186028"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51484743"
 ---
-# <a name="web-content-filtering"></a>Filtrage de contenu Web
+# <a name="web-content-filtering"></a>Filtrage du contenu web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,12 +33,12 @@ ms.locfileid: "51186028"
 
 > [!IMPORTANT]
 > **Le filtrage de contenu Web est actuellement en prévisualisation publique**<br>
-> Cette version d’aperçu est fournie sans contrat de niveau de service et n’est pas recommandée pour les charges de travail de production. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
+> Cette version préliminaire est fournie sans contrat de niveau de service et n’est pas recommandée pour les charges de travail de production. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
 > Pour plus d’informations, [voir Microsoft Defender pour les fonctionnalités d’aperçu de point de terminaison.](preview.md)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Le filtrage de contenu Web fait partie des fonctionnalités [de protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+Le filtrage de contenu Web fait partie des fonctionnalités [de protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 Configurez des stratégies sur vos groupes d’appareils pour bloquer certaines catégories. Le blocage d’une catégorie empêche les utilisateurs au sein de groupes d’appareils spécifiés d’accéder aux URL associées à la catégorie. Pour toute catégorie qui n’est pas bloquée, les URL sont automatiquement auditées. Vos utilisateurs peuvent accéder aux URL sans interruption, et vous allez collecter des statistiques d’accès pour vous aider à créer une décision de stratégie plus personnalisée. Vos utilisateurs voient une notification de blocage si un élément de la page qu’ils voient appelle une ressource bloquée.
 
@@ -56,11 +56,11 @@ L’expérience de blocage pour les navigateurs tiers pris en charge est fournie
 
 Pour une expérience plus conviviale dans le navigateur, envisagez d’utiliser Microsoft Edge.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des conditions suivantes :
 
-- Licence Windows 10 Entreprise E5 OU module de sécurité Microsoft 365 E3 + Microsoft 365 E5.
+- Windows 10 Entreprise E5, Microsoft 365 E5, Sécurité Microsoft 365 E5, module de sécurité Microsoft 365 E3 + Microsoft 365 E5 Security ou licence autonome Microsoft Defender pour endpoint. 
 - Accès au portail Centre de sécurité Microsoft Defender
 - Appareils exécutant la mise à jour anniversaire Windows 10 (version 1607) ou version ultérieure avec la dernière mise à jour MoCAMP.
 
@@ -84,7 +84,7 @@ Utilisez le filtre pour localiser les stratégies qui contiennent certaines cat�
 
 Pour ajouter une nouvelle stratégie :
 
-1. Sélectionnez **Ajouter une** stratégie sur la page **de filtrage de** contenu Web **dans Paramètres.**
+1. Sélectionnez **Ajouter une** stratégie sur la page **de filtrage de** contenu Web dans **Paramètres.**
 2. Spécifiez un nom.
 3. Sélectionnez les catégories à bloquer. Utilisez l’icône développer pour développer entièrement chaque catégorie parent et sélectionner des catégories de contenu web spécifiques.
 4. Spécifiez l’étendue de la stratégie. Sélectionnez les groupes d’appareils pour spécifier où appliquer la stratégie. Seuls les appareils des groupes d’appareils sélectionnés ne pourront pas accéder aux sites web dans les catégories sélectionnées.
@@ -110,7 +110,7 @@ Il est possible de remplacer la catégorie bloquée dans le filtrage de contenu 
 
 Si vous rencontrez un domaine qui a été classé de manière incorrecte, vous pouvez signaler des inexactitudes directement à partir de la page rapports de filtrage de contenu Web. Cette fonctionnalité est disponible uniquement dans le nouveau Centre de sécurité Microsoft 365 (security.microsoft.com).
 
-Pour signaler une imprécision, accédez à Reports **> Web Protection > Web Content Filtering Details > Domains**. Sous l’onglet Domaines de nos rapports de filtrage de contenu Web, vous verrez des ellipses à côté de chacun des domaines. Pointez sur ces ellipses et **sélectionnez Report Inaccuracy**.
+Pour signaler une imprécision, accédez à Rapports > **Protection Web > détails** du filtrage de contenu Web > domaines. Sous l’onglet Domaines de nos rapports de filtrage de contenu Web, vous verrez des ellipses à côté de chacun des domaines. Pointez sur ces ellipses et **sélectionnez Report Inaccuracy**.
 
 Un panneau s’ouvre où vous pouvez sélectionner la priorité et ajouter des détails supplémentaires, tels que la catégorie suggérée pour la recatégorisation. Une fois que vous avez terminé le formulaire, sélectionnez **Envoyer.** Notre équipe examine la demande dans un jour ou deux. Pour un déblocage immédiat, créez un [indicateur d’autoriser personnalisé.](indicator-ip-domain.md)
 
@@ -126,7 +126,7 @@ Au cours des 30 premiers jours d’utilisation de cette fonctionnalité, il se p
 
 ![Image de l’activité web par carte de catégorie](images/web-activity-by-category600.png)
 
-### <a name="web-content-filtering--summary-card"></a>Fiche récapitulatif du filtrage du contenu Web
+### <a name="web-content-filtering--summary-card"></a>Carte récapitulatif du filtrage du contenu Web
 
 Cette carte affiche la distribution des tentatives d’accès bloqué entre les différentes catégories de contenu web parent. Sélectionnez l’une des barres de couleur pour afficher plus d’informations sur une catégorie web parente spécifique.
 
@@ -144,7 +144,7 @@ Vous pouvez accéder aux **détails du rapport** pour chaque carte en sélection
 
 ![Image des détails du rapport de protection web](images/web-protection-report-details.png)
 
-- **Catégories Web :** répertorie les catégories de contenu web qui ont connu des tentatives d’accès dans votre organisation. Sélectionnez une catégorie spécifique pour ouvrir un volant de synthèse.
+- **Catégories Web :** répertorie les catégories de contenu web qui ont connu des tentatives d’accès dans votre organisation. Sélectionnez une catégorie spécifique pour ouvrir un résumé volant.
 
 - **Domaines :** répertorie les domaines web qui ont été accédés ou bloqués dans votre organisation. Sélectionnez un domaine spécifique pour afficher des informations détaillées sur ce domaine.
 
@@ -158,11 +158,13 @@ Utilisez le filtre de plage de temps en haut à gauche de la page pour sélectio
 
 - Seul Microsoft Edge est pris en charge si la configuration du système d’exploitation de votre appareil est Server (cmd > Systeminfo > OS Configuration). La protection du réseau est uniquement prise en charge en mode Inspect sur les appareils serveur, qui est responsable de la sécurisation du trafic sur les navigateurs tiers pris en charge.
 
-- Les appareils non signés auront des données incorrectes affichées dans le rapport. Dans les détails du rapport > tableau croisé dynamique des groupes d’appareils, vous pouvez voir une ligne avec un champ Groupe de périphériques vide. Ce groupe contient vos appareils non signés avant qu’ils ne sont placés dans votre groupe spécifié. Le rapport de cette ligne peut ne pas contenir un nombre précis d’appareils ou de nombres d’accès.
+- Les appareils non signés auront des données incorrectes affichées dans le rapport. Dans les détails du rapport > tableau croisé dynamique des groupes d’appareils, vous pouvez voir une ligne avec un champ Groupe d’appareils vide. Ce groupe contient vos appareils non signés avant qu’ils ne sont placés dans votre groupe spécifié. Le rapport de cette ligne peut ne pas contenir un nombre précis d’appareils ou de nombres d’accès.
+
+- Les rapports de filtrage de contenu Web sont actuellement limités à l’affichage des 5 000 premiers enregistrements. Par exemple, le rapport « Domaines » affiche uniquement un maximum des 5 000 principaux domaines pour une requête de filtre donnée, le cas échéant. 
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Vue d’ensemble de la protection Web](web-protection-overview.md)
+- [Vue d’ensemble de la protection web](web-protection-overview.md)
 - [Protection contre les menaces web](web-threat-protection.md)
 - [Surveiller la sécurité web](web-protection-monitoring.md)
 - [Répondre aux menaces web](web-protection-response.md)

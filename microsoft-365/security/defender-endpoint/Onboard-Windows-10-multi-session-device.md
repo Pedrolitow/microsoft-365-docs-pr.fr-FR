@@ -1,5 +1,5 @@
 ---
-title: Intégrer des appareils Windows 10 multisesses dans Windows Virtual Desktop
+title: Intégrer des appareils Windows 10 à sessions multiples dans Windows Virtual Desktop
 description: En savoir plus dans cet article sur l’intégration d’appareils Windows 10 multisesses dans Windows Virtual Desktop
 keywords: Windows Virtual Desktop, WVD, microsoft defender, point de terminaison, intégration
 search.product: eADQiWindows 10XVcnh
@@ -13,24 +13,20 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222610"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488144"
 ---
-# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Intégrer des appareils Windows 10 multisesses dans Windows Virtual Desktop 
+# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Intégrer des appareils Windows 10 à sessions multiples dans Windows Virtual Desktop 
 6 minutes de lecture 
 
 S’applique à : 
 - Windows 10 multisesse en cours d’exécution sur Windows Virtual Desktop (WVD) 
-
-> [!WARNING]
-> La prise en charge de Microsoft Defender pour les points de terminaison pour les scénarios multisessage Windows Virtual Desktop est actuellement en prévisualisation et limitée à 25 sessions simultanées par hôte/ordinateur virtuel. Toutefois, les scénarios de session unique sur Windows Virtual Desktop sont entièrement pris en charge.
 
 Microsoft Defender pour point de terminaison prend en charge la surveillance des sessions VDI et Windows Virtual Desktop. Selon les besoins de votre organisation, vous devrez peut-être implémenter des sessions VDI ou Windows Virtual Desktop pour aider vos employés à accéder aux données et applications d’entreprise à partir d’un appareil nonmanaté, d’un emplacement distant ou d’un scénario similaire. Avec Microsoft Defender pour le point de terminaison, vous pouvez surveiller ces machines virtuelles afin de vérifier les activités anormales.
 
@@ -44,7 +40,7 @@ Familiarisez-vous avec [les considérations pour les VDI non persistants.](https
 
 Microsoft recommande l’intégration de Windows Virtual Desktop en tant qu’entrée unique par bureau virtuel. Cela garantit que l’expérience d’examen dans le portail Microsoft Defender Endpoint est dans le contexte d’un appareil basé sur le nom de l’ordinateur. Les organisations qui suppriment et redéploient fréquemment des hôtes WVD doivent envisager fortement d’utiliser cette méthode, car elle empêche la création de plusieurs objets pour le même ordinateur dans le portail Microsoft Defender pour Endpoint. Cela peut semer la confusion lors de l’enquête sur les incidents. Pour les environnements de test ou non volatiles, vous pouvez choisir différemment. 
 
-Microsoft recommande d’ajouter le script d’intégration Microsoft Defender for Endpoint à l’image de qualité WVD. De cette façon, vous pouvez vous assurer que ce script d’intégration s’exécute immédiatement au premier démarrage. Il est exécuté en tant que script de démarrage au premier démarrage sur tous les ordinateurs WVD qui sont mis en service à partir de l’image WVD de premier niveau. Toutefois, si vous utilisez l’une des images de la galerie sans modification, placez le script dans un emplacement partagé et appelez-le à partir d’une stratégie de groupe locale ou de domaine. 
+Microsoft recommande d’ajouter le script d’intégration De Microsoft Defender pour point de terminaison à l’image wvd de l’or. De cette façon, vous pouvez vous assurer que ce script d’intégration s’exécute immédiatement au premier démarrage. Il est exécuté en tant que script de démarrage lors du premier démarrage sur tous les ordinateurs WVD qui sont mis en service à partir de l’image de premier niveau WVD. Toutefois, si vous utilisez l’une des images de la galerie sans modification, placez le script dans un emplacement partagé et appelez-le à partir d’une stratégie de groupe locale ou de domaine. 
 
 > [!NOTE]
 > Le placement et la configuration du script de démarrage d’intégration VDI sur l’image de base WVD le configurent en tant que script de démarrage qui s’exécute au démarrage du WVD. Il n’est PAS recommandé d’intégrer l’image de qualité WVD réelle. Une autre considération est la méthode utilisée pour exécuter le script. Il doit s’exécuter aussi tôt que possible dans le processus de démarrage/approvisionnement pour réduire le temps entre la mise à disposition de l’ordinateur pour la réception des sessions et l’intégration de l’appareil au service. Les scénarios ci-dessous 1 & 2 prennent cela en compte.
@@ -76,7 +72,7 @@ Ce scénario utilise un script central et l’exécute à l’aide d’une strat
 **Utiliser la console de gestion des stratégies de groupe pour exécuter le script au démarrage de la machine virtuelle**
 1. Ouvrez la Console de gestion des stratégies de groupe (GPMC), cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 1. Dans l’Éditeur de gestion des stratégies de groupe, go to **Computer configuration** \> **Preferences** \> **Control panel settings**. 
-1. Cliquez avec le bouton droit **sur Tâches programmées,** cliquez sur **Nouveau,** puis sur **Tâche immédiate** (Au moins Windows 7). 
+1. Cliquez avec le bouton droit **sur Tâches programmées,** cliquez sur **Nouveau,** puis cliquez sur **Tâche immédiate** (Au moins Windows 7). 
 1. Dans la fenêtre Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou le** groupe, puis tapez SYSTEM. Cliquez **sur Vérifier les noms,** puis sur OK. NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera. 
 1. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.** 
 1. Go to the **Actions** tab and click **New**. **Assurez-vous que démarrer un programme** est sélectionné dans le champ Action. Entrez les informations suivantes : 
@@ -94,7 +90,7 @@ Si vous envisagez de gérer vos ordinateurs à l’aide d’un outil de gestion,
 Pour plus d’informations, voir : [Intégrer des appareils Windows 10 à l’aide de Configuration Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
 
 > [!WARNING]
-> Si vous envisagez d’utiliser les règles de réduction de la [surface](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)d’attaque, notez que la règle « Bloquer les créations de processus provenant de commandes[PSExec](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)et WMI » ne doit pas être utilisée car elle est incompatible avec la gestion via Microsoft Endpoint Configuration Manager, car cette règle bloque les commandes WMI utilisées par le client Configuration Manager pour fonctionner correctement. 
+> Si vous envisagez d’utiliser les règles de réduction de la [surface](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)d’attaque, notez que la règle « Bloquer les créations de processus provenant des commandes[PSExec](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)et WMI » ne doit pas être utilisée car elle est incompatible avec la gestion via Microsoft Endpoint Configuration Manager, car cette règle bloque les commandes WMI utilisées par le client Configuration Manager pour fonctionner correctement. 
 
 > [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier que l’appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test) 
@@ -129,4 +125,4 @@ En outre, si vous utilisez des profils utilisateur FSlogix, nous vous recommando
 
 #### <a name="licensing-requirements"></a>Critères de licence 
 
-Windows 10 Multi-session est un système d’exploitation client. Les conditions de licence pour Microsoft Defender pour le point de terminaison se trouvent dans : [Exigences de licence.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+Windows 10 Multi-session est un système d’exploitation client. Les conditions de licence pour Microsoft Defender pour le point de terminaison se trouvent dans : [Conditions de licence.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
