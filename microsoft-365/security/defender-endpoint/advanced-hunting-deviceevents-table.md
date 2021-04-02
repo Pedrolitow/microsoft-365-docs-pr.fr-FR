@@ -1,27 +1,27 @@
 ---
 title: Table DeviceEvents dans le schéma de recherche avancé
-description: En savoir plus sur l’antivirus, le pare-feu et d’autres types d’événements dans le tableau Divers événements de périphérique (DeviceEvents) du schéma de recherche avancée
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, MiscEvents
+description: En savoir plus sur l’antivirus, le pare-feu et d’autres types d’événements dans la table Divers événements de périphérique (DeviceEvents) du schéma de recherche avancée
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schemetry, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, MiscEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49a0b608caa6d759f58889e6f831f84d2b4b90d3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1e67da3a5d93c5e8c86afd755c882f3f0459aab0
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064385"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499199"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -31,11 +31,11 @@ ms.locfileid: "51064385"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-Le tableau ou les événements divers de périphérique dans le schéma de recherche avancée contient des informations sur différents types d’événements, y compris les événements déclenchés par des contrôles de sécurité, tels que l’Antivirus Microsoft Defender et `DeviceEvents` Exploit Protection. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
+Le tableau ou les événements divers de périphérique dans le schéma de recherche avancé contient des informations sur différents types d’événements, y compris les événements déclenchés par des contrôles de sécurité, tels que l’Antivirus Microsoft Defender et `DeviceEvents` Exploit Protection. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 
-Pour plus d’informations sur les autres tableaux du schéma de chasse avancé, voir la référence de schéma [de chasse avancée.](advanced-hunting-schema-reference.md)
+Pour plus d’informations sur les autres tableaux du schéma de chasse avancé, voir [la référence du schéma de chasse avancé.](advanced-hunting-schema-reference.md)
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
@@ -58,7 +58,7 @@ Pour plus d’informations sur les autres tableaux du schéma de chasse avancé,
 | `ProcessCreationTime` | DateHeure | Date et heure de création du processus |
 | `ProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus nouvellement créé |
 | `LogonId` | string | Identificateur d’une session d’ouverture de session. Cet identificateur est unique sur le même appareil uniquement entre les redémarrages |
-| `RegistryKey` | string | Clé de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryKey` | string | Clé de Registre à l’application de l’action enregistrée |
 | `RegistryValueName` | string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueData` | string | Données de la valeur de Registre à l’application de l’action enregistrée |
 | `RemoteIP` | string | Adresse IP à laquelle la connexion était en cours |
@@ -79,9 +79,9 @@ Pour plus d’informations sur les autres tableaux du schéma de chasse avancé,
 | `InitiatingProcessParentFileName` | string | Nom du processus parent qui a généré le processus responsable de l’événement |
 | `InitiatingProcessParentCreationTime` | DateHeure | Date et heure de début du parent du processus responsable de l’événement |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessLogonId` | string | Identificateur d’une session d’ouverture de session du processus à l’origine de l’événement. Cet identificateur est unique sur le même appareil uniquement entre les redémarrages |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les `DeviceName` colonnes et les `Timestamp` événements |
 | `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |

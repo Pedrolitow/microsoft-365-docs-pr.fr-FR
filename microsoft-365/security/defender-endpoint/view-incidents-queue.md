@@ -1,5 +1,5 @@
 ---
-title: Afficher et organiser la file d’attente Incidents
+title: Afficher et organiser la file d’attente des incidents
 ms.reviewer: ''
 description: Consultez la liste des incidents et découvrez comment appliquer des filtres pour limiter la liste et obtenir une vue plus centrée.
 keywords: afficher, organiser, incidents, agrégation, enquêtes, file d’attente, ttp
@@ -9,20 +9,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f25189ac6550d9c3349e08f7e7ac685d4b8031fc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 93aa685f12e0241758bf86d3aa956717db052e5f
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063734"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499937"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Afficher et organiser la file d’attente Microsoft Defender pour les incidents de point de terminaison
 
@@ -32,19 +32,19 @@ ms.locfileid: "51063734"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 La **file d’attente Incidents** affiche un ensemble d’incidents qui ont été signalés à partir d’appareils de votre réseau. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité.
 
-Par défaut, la file d’attente affiche les incidents observés au cours des 30 derniers jours, le plus récent s’affichant en haut de la liste, ce qui vous aide à voir les incidents les plus récents en premier.
+Par défaut, la file d’attente affiche les incidents observés au cours des 30 derniers jours, avec l’incident le plus récent affiché en haut de la liste, ce qui vous aide à voir les incidents les plus récents en premier.
 
-Vous pouvez choisir parmi plusieurs options pour personnaliser l’affichage de file d’attente Incidents. 
+Plusieurs options s’offrent à vous pour personnaliser l’affichage de file d’attente Incidents. 
 
 Dans la barre de navigation supérieure, vous pouvez :
 - Personnaliser des colonnes pour ajouter ou supprimer des colonnes 
 - Modifier le nombre d’éléments à afficher par page
 - Sélectionner les éléments à afficher par page
-- Sélectionner par lot les incidents à affecter 
+- Sélectionner par lots les incidents à affecter 
 - Naviguer entre les pages
 - Appliquer des filtres
 
@@ -66,7 +66,7 @@ Informationnel </br>(Gris) | Les incidents d’information peuvent ne pas être 
 Vous pouvez choisir de filtrer la liste en sélectionnant ceux qui vous sont affectés ou ceux qui vous sont affectés.
 
 ### <a name="category"></a>Catégorie
-Les incidents sont classés en fonction de la description de l’étape à laquelle se trouve la chaîne de fin de la cybersécurité. Cette vue permet à l’analyste de menaces de déterminer la priorité, l’urgence et la stratégie de réponse correspondante à déployer en fonction du contexte.
+Les incidents sont classés en fonction de la description de l’étape à laquelle se trouve la chaîne de mise à jour de la cybersécurité. Cette vue permet à l’analyste de menaces de déterminer la priorité, l’urgence et la stratégie de réponse correspondante à déployer en fonction du contexte.
 
 ### <a name="status"></a>Statut
 Vous pouvez choisir de limiter la liste des incidents affichés en fonction de leur état pour identifier ceux qui sont actifs ou résolus.
@@ -78,7 +78,7 @@ Utilisez ce filtre pour afficher les incidents qui contiennent des étiquettes d
 
 Pour comprendre l’étendue de l’incident en un coup d’œil, les noms des incidents sont générés automatiquement en fonction des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories.
 
-Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
+Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
 
 > [!NOTE]
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents conserveront leur nom.
@@ -86,6 +86,6 @@ Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison
 
 ## <a name="see-also"></a>Voir aussi
 - [File d’attente des incidents](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [Gérer les incidents](manage-incidents.md)
-- [Enquêter sur des incidents](investigate-incidents.md)
+- [Gérer des incidents](manage-incidents.md)
+- [Examiner des incidents](investigate-incidents.md)
 

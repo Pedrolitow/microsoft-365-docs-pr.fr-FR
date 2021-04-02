@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6259ac1c5804b244c825a1bb54401640fdefaf34
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b65adbc968e095a6845f27ae1ae859830e4065c4
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064393"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499259"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -75,7 +75,7 @@ Pour créer des requêtes plus durables à l’aide de lignes de commande, appli
 
 - Identifiez les processus connus (par exemple, *net.exe* ou *psexec.exe*) en faisant correspondre les champs de nom de fichier, au lieu de filtrer sur le champ de ligne de commande.
 - Lors de l’interrogation des arguments de la ligne de commande, ne recherchez pas une correspondance exacte de plusieurs arguments non liés dans un certain ordre. Au lieu de cela, vous devez utiliser des expressions régulières ou utiliser plusieurs opérateurs de contenu séparés..
-- Utilisez des correspondances non respectées de casse. Par exemple, utilisez `=~` , et non , `in~` `contains` `==` `in` et `contains_cs`
+- Utilisez des correspondances non respectées de casse. Par exemple, utilisez `=~` , et au lieu de , `in~` `contains` `==` `in` et `contains_cs`
 - Pour atténuer les techniques d’obscurcissement de lignes de commande, vous pouvez supprimer les guillemets, remplacer les virgules par des espaces et remplacer plusieurs espaces consécutifs par un seul espace. Notez qu'il existe des techniques d'obscurcissement DOS plus complexes qui nécessitent d'autres approches, mais celles-ci peuvent aider à résoudre les problèmes les plus fréquents.
 
 Les exemples suivants illustrent différentes manières de créer une requête qui recherche le fichier *net.exe* pour arrêter le service Pare-feu Windows Defender :
@@ -104,5 +104,5 @@ DeviceProcessEvents
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-reference.md)
-- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
+- [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Vue d’ensemble des détections personnalisées](overview-custom-detections.md)

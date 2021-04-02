@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f48716ebd9e25d1f8b24d9276aaa5890a335a808
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ab6ce0e8572fc20d3e5dd9f36e84ce9894280fe2
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056625"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498191"
 ---
 # <a name="investigate-users-in-microsoft-365-security-center"></a>Examiner les utilisateurs dans le Centre de sécurité Microsoft 365
 
@@ -38,10 +38,10 @@ ms.locfileid: "51056625"
 
 Dans le cadre de votre enquête, vous pouvez découvrir qu’un utilisateur a été compromis.
 
-La page utilisateur du Centre de sécurité Microsoft 365 combine les informations de Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité et Microsoft Cloud App Security (en fonction des licences dont vous avez la licence). Cette page est le point de départ idéal pour examiner les utilisateurs et les incidents potentiels.
+La page utilisateur du Centre de sécurité Microsoft 365 combine les informations de Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité et Microsoft Cloud App Security (en fonction des licences que vous avez). Cette page est le point de départ idéal pour examiner les utilisateurs et les incidents potentiels.
 ![Page utilisateur](../../media/m3d-userpage.png)
 
-Cette page affiche des informations spécifiques au risque de sécurité d’un utilisateur. Cela inclut un score qui permet d’évaluer les risques, les événements récents et les alertes qui ont contribué au risque global de l’utilisateur, et bien plus encore.
+Cette page affiche des informations spécifiques aux risques de sécurité d’un utilisateur. Cela inclut un score qui permet d’évaluer les risques, les événements récents et les alertes qui ont contribué au risque global de l’utilisateur, et bien plus encore.
 
 Vous pouvez accéder à cette page à partir de plusieurs zones du Centre de sécurité Microsoft 365. Vous pouvez accéder à cette page à partir d’un incident spécifique dans **l’onglet Utilisateurs.** Certaines alertes peuvent inclure des utilisateurs en tant que ressources affectées spécifiques. Vous pouvez également rechercher des utilisateurs.  
 

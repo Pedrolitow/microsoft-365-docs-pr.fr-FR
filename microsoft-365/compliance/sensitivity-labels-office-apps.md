@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72b5422de2ee4b01e3209ec78ea0c10f1285d682
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034193"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498826"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -119,7 +119,7 @@ Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide 
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Client d’étiquetage intégré à Office et client Azure Information Protection
 
-Si les utilisateurs ont installé un des clients Azure Information Protection ([client d’étiquetage unifié](/azure/information-protection/rms-client/aip-clientv2) ou [client classique](/azure/information-protection/rms-client/aip-client)), par défaut, le client d’étiquetage intégré est désactivé dans leurs applications Office. 
+Si les clients ont [Azure Information Protection installé](/azure/information-protection/rms-client/aip-clientv2), par défaut, le client d’étiquetage intégré est désactivé dans leurs applications Office. 
 
 Pour utiliser l’étiquetage intégrée plutôt que le client Azure Information Protection pour les applications Office, nous vous recommandons d’utiliser le paramètre de stratégie de groupe **Liste des compléments gérés** telle que documentée dans [Aucun complément chargé en raison des paramètres de stratégie de groupe pour les programmes Office 2013 et Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 

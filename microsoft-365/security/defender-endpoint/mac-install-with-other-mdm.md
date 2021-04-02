@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3a20f0a356a32eddc05b3792c0c04c23197a7b0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185694"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498966"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint pour Mac
 
@@ -34,7 +34,7 @@ ms.locfileid: "51185694"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
@@ -43,11 +43,11 @@ Avant de commencer, consultez la page principale de [Microsoft Defender pour End
 ## <a name="approach"></a>Approche
 
 > [!CAUTION]
-> Actuellement, Microsoft prend uniquement en charge Intune et JAMF pour le déploiement et la gestion de Microsoft Defender pour Endpoint pour Mac. Microsoft n’offre aucune garantie, expressément ou implicite, en ce qui concerne les informations fournies ci-dessous.
+> Actuellement, Microsoft prend officiellement en charge uniquement Intune et JAMF pour le déploiement et la gestion de Microsoft Defender pour Endpoint pour Mac. Microsoft n’offre aucune garantie, expressément ou implicite, en ce qui concerne les informations fournies ci-dessous.
 
 Si votre organisation utilise une solution de gestion des périphériques mobiles (MDM) qui n’est pas officiellement prise en charge, cela ne signifie pas que vous ne pouvez pas déployer ou exécuter Microsoft Defender pour Endpoint pour Mac.
 
-Microsoft Defender pour point de terminaison pour Mac ne dépend d’aucune fonctionnalité propre au fournisseur. Il peut être utilisé avec n’importe quelle solution MDM qui prend en charge les fonctionnalités suivantes :
+Microsoft Defender pour point de terminaison pour Mac ne dépend d’aucune fonctionnalité propre au fournisseur. Il peut être utilisé avec n’importe quelle solution DE GESTION DES SOLUTIONS QUI prend en charge les fonctionnalités suivantes :
 
 - Déployez un .pkg macOS sur des appareils gérés.
 - Déployez les profils de configuration système macOS sur les appareils gérés.
@@ -84,6 +84,10 @@ GDM l’utilise pour déployer le fichier de paramètres dans **/Library/Managed
 ### <a name="kernel-extension-policy"></a>Stratégie d’extension du noyau
 
 Configurer une stratégie KEXT ou d’extension de noyau. Utilisez **l’identificateur d’équipe UBF8T346G9** pour autoriser les extensions de noyau fournies par Microsoft.
+
+> [!CAUTION]
+> Si votre environnement se compose d’appareils Apple Silicon (M1), ces ordinateurs ne doivent pas recevoir de profils de configuration avec les stratégies KEXT.
+> Apple ne prend pas en charge KEXT sur ces ordinateurs, le déploiement de ce profil échouerait sur les ordinateurs M1.
 
 ### <a name="system-extension-policy"></a>Stratégie d’extension système
 

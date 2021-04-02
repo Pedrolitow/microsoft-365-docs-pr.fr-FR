@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le Centre de sécurité & conformité pour soumettre des messages suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des fichiers à Microsoft pour analyse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dd566de3ba4b4281b19c423b8623f081c378bca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204794"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499330"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
@@ -59,7 +59,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
   - **Gestion de l’organisation** [dans Exchange Online.](/Exchange/permissions-exo/permissions-exo#role-groups)
 
-    Notez que l’appartenance à ce groupe de rôles est requise pour afficher les [envois](#view-user-submissions-to-the-custom-mailbox) d’utilisateurs à la boîte aux lettres personnalisée, comme décrit plus loin dans cet article.
+    Notez que l’appartenance à ce groupe de rôles est nécessaire pour afficher les [soumissions](#view-user-submissions-to-the-custom-mailbox) d’utilisateurs à la boîte aux lettres personnalisée, comme décrit plus loin dans cet article.
 
 - Pour plus d’informations sur la façon dont les utilisateurs peuvent envoyer des messages et des fichiers à Microsoft, voir Signaler des messages et [des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
@@ -100,7 +100,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
    - **Ne doit pas avoir été bloqué**
 
-   - **Auraient dû être bloqués**: sélectionnez **Hameçonnage** ou **Programme malveillant.**
+   - **Doit avoir été bloqué :** sélectionnez **Hameçonnage** ou **Programme malveillant.**
 
 3. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
@@ -122,9 +122,9 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
    ![Exemple d’envoi de pièce jointe](../../media/submission-file-flyout.PNG)
 
-## <a name="view-admin-submissions"></a>Afficher les soumissions d’administrateur
+## <a name="view-items-submitted-for-analysis"></a>Afficher les éléments envoyés pour analyse
 
-Dans le Centre de sécurité &  conformité, allez à Soumissions de gestion des menaces, vérifiez que vous êtes sous \> l’onglet **Soumissions** d’administrateur, puis cliquez sur **Nouvelle soumission.**
+Dans le Centre de sécurité &  conformité, allez aux soumissions de gestion des \> **menaces,** vérifiez que vous êtes sous l’onglet Soumis **pour analyse**
 
 Dans la partie supérieure de la page, vous pouvez entrer une date de début, une date de fin et (par défaut) vous pouvez filtrer par **ID** de soumission (une valeur GUID affectée à chaque soumission) en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Vous pouvez entrer plusieurs valeurs séparées par des virgules.
 
@@ -140,7 +140,7 @@ Pour modifier les critères de filtre, cliquez sur le bouton **ID** de soumissio
 
 Pour exporter les résultats, cliquez sur **Exporter** en haut de la page et sélectionnez **Données du graphique** ou **Tableau.** Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
 
-Sous le graphique, il y a trois onglets : **e-mail** (par défaut), **URL** et **pièce jointe**.
+Sous le graphique, il y a trois onglets : **e-mail** (par défaut), **URL** et **pièce jointe.**
 
 ### <a name="view-admin-email-submissions"></a>Afficher les envois de courriers électroniques d’administrateur
 
@@ -220,7 +220,7 @@ Vous pouvez cliquer sur le **bouton Options** de colonne en bas de la page pour 
 
 <sup>\*</sup> Si vous cliquez sur cette valeur, des informations détaillées s’affichent dans un volant.
 
-En haut de la page, vous pouvez entrer une date de début, une  date de fin et (par défaut) vous pouvez filtrer par expéditeur en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Vous pouvez entrer plusieurs valeurs séparées par des virgules.
+Dans la zone supérieure de la page, vous pouvez entrer une date de  début, une date de fin et (par défaut) vous pouvez filtrer par expéditeur en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Vous pouvez entrer plusieurs valeurs séparées par des virgules.
 
 Pour modifier les critères de filtre, cliquez sur le bouton **Expéditeur** et choisissez l’une des valeurs suivantes :
 
@@ -255,9 +255,12 @@ Dans la zone supérieure de la page, vous pouvez entrer une  date de début, une
 
 Pour exporter les résultats, cliquez sur **Exporter** en haut de la page et sélectionnez **Données du graphique** ou **Tableau.** Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
 
+> [!NOTE]
+> Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour réascaner et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
+
 ## <a name="undo-user-submissions"></a>Annuler les soumissions d’utilisateurs
 
-Lorsqu’un utilisateur envoie un message suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler la soumission. Si l’utilisateur souhaite récupérer le courrier électronique, il sera disponible pour la récupération dans les dossiers Éléments supprimés ou Courrier indésirable.
+Lorsqu’un utilisateur envoie un message suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler la soumission. Si l’utilisateur souhaite récupérer le courrier électronique, il pourra être récupéré dans les dossiers Éléments supprimés ou Courrier indésirable.
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Envoyer des messages à Microsoft à partir de la boîte aux lettres personnalisée
 

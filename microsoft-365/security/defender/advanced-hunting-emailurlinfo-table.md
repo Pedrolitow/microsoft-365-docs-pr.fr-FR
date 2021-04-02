@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0d592bcd4d4dfa766816798ecf8418c146d48839
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 323ec9292115cf810bca7bf5de03b09cb35bceb1
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065910"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498859"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -35,7 +35,7 @@ ms.locfileid: "51065910"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Le tableau du schéma de recherche avancée contient des informations sur les URL des e-mails et des pièces `EmailUrlInfo` jointes traitées par Microsoft Defender pour Office 365. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table. 
+Le tableau du schéma de recherche avancée contient des informations sur les URL des messages électroniques et des pièces `EmailUrlInfo` jointes traitées par Microsoft Defender pour Office 365. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table. 
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 

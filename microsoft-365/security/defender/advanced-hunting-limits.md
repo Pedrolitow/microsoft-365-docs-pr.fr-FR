@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 19606b06ff1a1369614bab533a949bc383c90ad3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ca79abfa95feb65f98ec32ae8dbc0093e34d58e6
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064734"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498428"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Quotas de recherche avancés et paramètres d’utilisation
 
@@ -35,7 +35,7 @@ ms.locfileid: "51064734"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Pour que le service reste performant et réactif, le service de recherche avancée définit différents quotas et paramètres d’utilisation (également appelés « limites de service »). Ces quotas et paramètres s’appliquent aux requêtes qui s’exécutent manuellement et par des [règles de détection personnalisées.](custom-detection-rules.md) Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la consommation et appliquer les meilleures [pratiques](advanced-hunting-best-practices.md) d’optimisation pour minimiser les interruptions.
+Pour que le service reste performant et réactif, le service de recherche avancée définit différents quotas et paramètres d’utilisation (également appelés « limites de service »). Ces quotas et paramètres s’appliquent aux requêtes qui s’exécutent manuellement et par des [règles de détection personnalisées.](custom-detection-rules.md) Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la consommation et appliquer les meilleures [pratiques d’optimisation](advanced-hunting-best-practices.md) pour minimiser les perturbations.
 
 Reportez-vous au tableau suivant pour comprendre les quotas et paramètres d’utilisation existants.
 
@@ -44,7 +44,7 @@ Reportez-vous au tableau suivant pour comprendre les quotas et paramètres d’u
 | Plage de données | 30 jours | Chaque requête | Chaque requête peut rechercher des données depuis les 30 derniers jours. |
 | Jeu de résultats | 10 000 lignes | Chaque requête | Chaque requête peut renvoyer jusqu’à 10 000 enregistrements. |
 | Timeout | 10 minutes | Chaque requête | Chaque requête peut s’exécuter pendant 10 minutes. S’il ne se termine pas dans les 10 minutes, le service affiche une erreur.
-| Ressources processeur | En fonction de la taille du client | - À l’heure, puis toutes les 15 minutes<br>- Tous les jours à minuit | Le service applique le quota quotidien et le quota de 15 minutes séparément. Pour chaque quota, [le](advanced-hunting-errors.md) portail affiche une erreur chaque fois qu’une requête s’exécute et que le client a consommé plus de 10 % des ressources allouées. Les requêtes sont bloquées si le client a atteint 100 % jusqu’au terme du cycle quotidien suivant ou de 15 minutes. |
+| Ressources processeur | En fonction de la taille du client | - À l’heure, puis toutes les 15 minutes<br>- Tous les jours à minuit | Le service applique le quota quotidien et le quota de 15 minutes séparément. Pour chaque quota, [le](advanced-hunting-errors.md) portail affiche une erreur chaque fois qu’une requête s’exécute et que le client a consommé plus de 10 % des ressources allouées. Les requêtes sont bloquées si le client a atteint 100 % jusqu’au prochain cycle quotidien ou de 15 minutes. |
 
 >[!NOTE] 
 >Un ensemble distinct de quotas et de paramètres s’applique aux requêtes de recherche avancées effectuées via l’API. [En savoir plus sur les API de recherche avancée](./api-advanced-hunting.md)

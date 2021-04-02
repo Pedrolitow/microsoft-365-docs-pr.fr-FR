@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059f960bae8a5a00f678bb6f52ef217b4f8ed7d6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4c04ce3479ac995e59c3bdfa9a2bdcca87eca17b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185992"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499917"
 ---
 # <a name="web-protection"></a>Protection web
 
@@ -34,7 +34,7 @@ ms.locfileid: "51185992"
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-La protection web dans Microsoft Defender pour le point de terminaison est une fonctionnalité de [protection contre](web-threat-protection.md) les menaces Web et de filtrage de [contenu Web.](web-content-filtering.md) La protection web vous permet de sécuriser vos appareils contre les menaces web et de contrôler le contenu indésirable. Vous pouvez trouver des rapports de protection Web dans le Centre de sécurité Microsoft Defender en allant à **Rapports > Protection Web.**
+La protection web dans Microsoft Defender pour le point de terminaison est une fonctionnalité de [protection contre](web-threat-protection.md) les menaces Web et de filtrage de [contenu Web.](web-content-filtering.md) La protection Web vous permet de sécuriser vos appareils contre les menaces web et de contrôler le contenu indésirable. Vous pouvez trouver des rapports de protection Web dans le Centre de sécurité Microsoft Defender en allant à **Rapports > Protection Web.**
 
 ![Image de toutes les cartes de protection web](images/web-protection.png)
 
@@ -45,9 +45,9 @@ Les cartes qui font la protection contre les menaces web sont les détections de
 La protection contre les menaces web inclut :
 - Visibilité complète des menaces web affectant votre organisation
 - Fonctionnalités d’investigation sur l’activité des menaces liées au web par le biais d’alertes et de profils complets d’URL et des appareils qui accèdent à ces URL
-- Un ensemble complet de fonctionnalités de sécurité qui s’inséront dans le suivi des tendances générales d’accès aux sites web malveillants et indésirables
+- Un ensemble complet de fonctionnalités de sécurité qui s’y rapportent pour suivre les tendances générales d’accès aux sites web malveillants et indésirables
 
-## <a name="web-content-filtering"></a>Filtrage de contenu Web
+## <a name="web-content-filtering"></a>Filtrage du contenu web
 
 Les cartes qui composent le filtrage de contenu web sont l’activité **Web** par catégorie, le résumé du filtrage de contenu **Web** et le résumé des **activités Web.**
 
@@ -61,4 +61,4 @@ Le filtrage de contenu Web inclut :
 Rubrique | Description
 :---|:---
 [Protection contre les menaces web](web-threat-protection.md) | Arrêtez l’accès aux sites d’hameçonnage, aux vecteurs de programmes malveillants, aux sites d’exploitation, aux sites nontrus ou à faible réputation, ainsi qu’aux sites que vous avez bloqués.
-[Filtrage de contenu Web](web-content-filtering.md) | Suivre et contrôler l’accès aux sites web en fonction de leurs catégories de contenu.
+[Filtrage du contenu web](web-content-filtering.md) | Suivre et contrôler l’accès aux sites web en fonction de leurs catégories de contenu.

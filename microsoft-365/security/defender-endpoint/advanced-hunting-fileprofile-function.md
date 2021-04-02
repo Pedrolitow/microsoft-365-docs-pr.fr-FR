@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,19 +17,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: 668b3fe503268c46e4a1313f0c4cfb8a6a3dd602
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6c828418d27db24cbd6e87f040486b3abc45e6c6
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067969"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499551"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-La fonction est une fonction d’enrichissement dans le recherche avancée qui ajoute les données suivantes aux `FileProfile()` fichiers trouvés par la requête. [](advanced-hunting-overview.md)
+La fonction est une fonction d’enrichissement dans le recherche avancée qui ajoute les données suivantes `FileProfile()` aux fichiers trouvés par la requête. [](advanced-hunting-overview.md)
 
 Column | Type de données | Description
 -|-|-
@@ -45,7 +45,7 @@ Issuer | string | Informations sur l’autorité de certification émettrice
 SignerHash | string | Valeur de hachage unique identifiant le signataire
 IsCertificateValid | booléen | Si le certificat utilisé pour signer le fichier est valide
 IsRootSignerMicrosoft | booléen | Indique si le signataire du certificat racine est Microsoft
-IsExecutable | booléen | Si le fichier est un fichier Exécutable portable (PE)
+IsExecutable | booléen | Si le fichier est un fichier PE (Portable Executable)
 ThreatName | string | Nom de détection des programmes malveillants ou autres menaces détectés
 Éditeur | string | Nom de l’organisation qui a publié le fichier
 SoftwareName | string | Nom du produit logiciel
@@ -58,7 +58,7 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Arguments
 
-- **x** — colonne d’ID de fichier à utiliser : `SHA1` , ou ; fonction utilise si non `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` spécifié
+- **x** — colonne d’ID de fichier à utiliser `SHA1` : , ou ; fonction utilise si non `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` spécifié
 - **y** — limite au nombre d’enregistrements à enrichir, de 1 à 1 000 ; utilise 100 si non spécifié
 
 ## <a name="examples"></a>Exemples
@@ -73,7 +73,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et lister les fichiers à faible prévalence
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et lister les fichiers de faible prévalence
 
 ```kusto
 DeviceFileEvents

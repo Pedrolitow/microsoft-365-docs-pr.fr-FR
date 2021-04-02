@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les enregistrements pour vous aider à implémenter une solution de gestion des enregistrements dans Microsoft 365.
-ms.openlocfilehash: 52ca56436686faac1d414dac47e2e9e16c36fa90
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 5c828f06f2ce9e2bd18869f897f1f372c1a62f21
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408557"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471123"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive
 
@@ -45,7 +45,7 @@ Vous pouvez effectuer les actions suivantes :
 
   - **Tenez à jour un document évolutif contenant toutes les versions.** Par défaut, un historique des versions est disponible dans le menu élément pour chaque document SharePoint et OneDrive. Dans cet historique des versions, vous pouvez facilement identifier quelles versions sont des enregistrements et afficher ces documents.
 
-> [!NOTE]
+> [!TIP]
 > Lorsque vous utilisez le contrôle de version d’enregistrement avec une étiquette de rétention ayant une action de suppression, nous vous recommandons de configurer également le paramètre de rétention **Démarrer la période de rétention sur la base de :** sur **Quand des éléments ont été étiquetés**. Avec ce paramètre d’étiquette, le début de la période de rétention est réinitialisé pour chaque nouvelle version d’enregistrement, ce qui garantit que les versions antérieures seront supprimées avant les versions plus récentes.
 
 Le contrôle de version d’enregistrement est disponible automatiquement pour tout document comportant une étiquette de rétention qui marque l’élément comme enregistrement. Lorsqu’un utilisateur affiche les propriétés du document à l’aide du volet Détails, il peut basculer le **Statut de l’enregistrement** de **Verrouillé** vers **Déverrouillé**. Cette action crée un enregistrement dans le dossier Enregistrements de la bibliothèque de conservation et de préservation, où il résidera jusqu’à la fin de la période de rétention. 

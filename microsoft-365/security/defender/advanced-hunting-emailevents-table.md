@@ -1,7 +1,7 @@
 ---
 title: Tableau EmailEvents dans le schéma de repérage avancé
 description: En savoir plus sur les événements associés aux e-mails Microsoft 365 dans la table EmailEvents du schéma de recherche avancé
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailEvents, network message id, sender, recipient, attachment id, attachment id, attachment name, malware verdict, phishing verdict, attachment count, link count, url count
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailEvents, network message id, sender, recipient, attachment id, attachment name, malware verdict, phishing verdict, attachment count, link count, url count
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 086d3ef8777685d17fdcdfdcd937cb120810c78a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 460668c281dff378867a721f4e3635a36cb590e2
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065918"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498906"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -76,7 +76,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `OrgLevelAction` | string | Action entreprise sur le courrier électronique en réponse à des correspondances à une stratégie définie au niveau de l’organisation |
 | `OrgLevelPolicy` | string | Stratégie organisationnelle qui a déclenché l’action entreprise sur le courrier électronique |
 | `UserLevelAction` | string | Action prise sur le courrier électronique en réponse à des correspondances à une stratégie de boîte aux lettres définie par le destinataire |
-| `UserLevelPolicy` | string | Stratégie de boîte aux lettres d’utilisateur final qui a déclenché l’action sur le courrier électronique |
+| `UserLevelPolicy` | string | Stratégie de boîte aux lettres de l’utilisateur final qui a déclenché l’action sur le courrier électronique |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
 
 ## <a name="related-topics"></a>Voir aussi

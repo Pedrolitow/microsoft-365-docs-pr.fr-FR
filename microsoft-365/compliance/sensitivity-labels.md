@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a540529c174cc12b0e037be4af4e08c29e3835ea
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 467960f2faf6c6262083ff238ee3b085e0e99129
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408599"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499678"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -229,20 +229,7 @@ Si vous utilisez des étiquettes de rétention en plus des étiquettes de confid
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Étiquettes de niveau de confidentialité et étiquettes Azure Information Protection
 
-Si vous avez déployé des étiquettes à l’aide d’Azure Information Protection, consultez les sections suivantes pour obtenir de l'aide avant de commencer à utiliser les étiquettes de confidentialité.
-
-### <a name="azure-information-protection-labels"></a>Étiquettes Azure Information Protection
-
-> [!NOTE]
-> La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le Portail Microsoft Azure fera l’objet d’un retrait le **31 mars 2021**. Pour plus d’informations, consultez l’[avis de dépréciation](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) officiel.
-
-Si vous utilisez des étiquettes Azure Information Protection car votre client n’est pas encore sur la [plateforme d’étiquetage unifié](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), nous vous recommandons d’éviter la création d'étiquettes de confidentialité tant que l’étiquetage unifié n’est pas activé. Dans ce scénario, les étiquettes que vous voyez dans le portail Microsoft Azure sont les étiquettes Azure Information Protection au lieu des étiquettes de confidentialité. Ces étiquettes peuvent être utilisées par le client Azure Information Protection (classique) sur des ordinateurs Windows, mais ne peuvent pas être utilisées par des appareils exécutant macOS, iOS ou Android. Pour résoudre ce problème, [migrez ces étiquettes](/azure/information-protection/configure-policy-migrate-labels) vers les étiquettes de confidentialité. 
-
-Les métadonnées appliquées par ces jeux d’étiquettes sont compatibles. Vous ne devez donc pas attribuer de nouveau libellé aux documents et courriers électroniques lorsque la migration est terminée.
-
-### <a name="azure-information-protection-clients"></a>Clients Azure Information Protection
-
-Lorsque vous utilisez des étiquettes de confidentialité dans les Applications Microsoft 365 pour les entreprises sur des ordinateurs Windows, vous avez le choix entre utiliser un client Azure Information Protection ou utiliser l'étiquetage intégré à Office.
+Lorsque vous utilisez des étiquettes de confidentialité dans les applications Microsoft 365 sur les ordinateurs Windows, vous avez le choix entre l’utilisation d’étiquettes intégrées aux applications Office ou au client Azure Information Protection.
 
 L’étiquetage intégré est désactivé par défaut dans ces applications lorsque le client Azure Information Protection est installé. Pour plus d'informations, y compris sur la façon de modifier de comportement par défaut, voir [Client d’étiquetage intégré Office et client Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
 
@@ -258,21 +245,16 @@ Même lorsque vous utilisez l'étiquetage intégré dans les applications Office
 
 Si vous débutez sur Azure Information Protection, ou si vous êtes un client Azure Information Protection existant et que vous venez de migrer vos étiquettes, consultez [Choisir la solution d’étiquetage Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) dans la documentation Azure Information Protection.
 
-## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>Étiquettes de confidentialité et Microsoft Cloud App Security
+### <a name="azure-information-protection-labels"></a>Étiquettes Azure Information Protection
 
-Grâce à l'utilisation de Cloud App Security (CAS), vous pouvez explorer, classifier, étiqueter et protéger le contenu dans des applications et services tiers, tels que SalesForce, Box ou Dropbox. 
+> [!NOTE]
+> La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le portail Azure a été retiré le **31 mars 2021**. Pour plus d’informations, consultez l’[avis de retrait](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) officiel.
 
-Cloud App Security fonctionne avec les étiquettes de confidentialité et les étiquettes d’Azure Information Protection :
+Si votre client n’est pas encore sur la [plateforme d’étiquetage unifié](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), vous devez d’abord activer l’étiquette unifiée avant d’utiliser des étiquettes de confidentialité. Pour voir les instructions, consultez [Migration des étiquettes Azure Information Protection vers des étiquettes de confidentialité unifiées](/azure/information-protection/configure-policy-migrate-labels). 
 
-- Si les centres d’administration de l'étiquetage ont une ou plusieurs étiquettes de confidentialité [publiées](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) vers au moins un utilisateur : les étiquettes de confidentialité sont utilisées.
+## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Les étiquettes de confidentialité et SDK Microsoft Information Protection
 
-- Si les étiquettes de confidentialité des centres d’administration de l'étiquetage ne sont pas publiées : les étiquettes Azure Information Protection sont utilisées.
-
-Pour obtenir des instructions sur l’utilisation de Cloud App Security avec ces étiquettes, voir [Intégration d'Azure Information Protection](/cloud-app-security/azip-integration).
-
-## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Les étiquettes de confidentialité et Microsoft Information Protection SDK
-
-Une étiquette de confidentialité étant stockée sous forme de texte clair dans les métadonnées d’un document, les applications et services tiers peuvent lire et écrire dans ces métadonnées d'étiquetage pour compléter votre déploiement d’étiquetage. Par ailleurs, les développeurs de logiciels peuvent utiliser le kit de développement logiciel (SDK) [Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk) pour prendre en charge les fonctionnalités d’étiquetage et de chiffrement sur plusieurs plateformes. Pour en savoir plus, voir [l'annonce de la disponibilité générale sur le blog de la Communauté technique](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
+Une étiquette de confidentialité étant stockée dans les métadonnées d’un document, les applications et services tiers peuvent lire et écrire dans ces métadonnées d'étiquetage pour compléter votre déploiement d’étiquetage. Par ailleurs, les développeurs de logiciels peuvent utiliser le kit de développement logiciel (SDK) [Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk) pour prendre en charge les fonctionnalités d’étiquetage et de chiffrement sur plusieurs plateformes. Pour en savoir plus, voir [l'annonce de la disponibilité générale sur le blog de la Communauté technique](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
 
 Vous pouvez également en savoir plus sur les [solutions de partenaires intégrées à Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 

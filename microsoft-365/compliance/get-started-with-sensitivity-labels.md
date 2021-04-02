@@ -18,13 +18,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Vous êtes prêt à instaurer la mise en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: a6b04bcce7d0fe505173a807fbc2d4105831419c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
+ms.openlocfilehash: d685b050d32ea7bf482a39ad8d72abe3ee74567d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051886"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499683"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -32,9 +32,7 @@ ms.locfileid: "51051886"
 
 Pour en savoir plus sur les étiquettes de confidentialité et la façon dont elles peuvent vous aider à protéger les données de votre organisation, voir [Plus d'informations sur les étiquettes de confidentialité](sensitivity-labels.md).
 
-Si vous disposez d'[Azure Information Protection](/azure/information-protection/what-is-information-protection), déterminez si vous devez migrer des étiquettes vers la plateforme d’étiquetage unifiée et le type de client d’étiquetage à utiliser :
-- [Comment puis-je savoir si mon client utilise la plateforme d’étiquetage unifiée ?](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Choisir votre solution d’étiquetage Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
+Si vous avez [Azure Information Protection](/azure/information-protection/what-is-information-protection) et que vous utilisez toujours des étiquettes Azure Information Protection qui ont été gérées à partir du portail Azure, vous devez les migrer vers la [plateforme d’étiquetage unifié](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). Pour les ordinateurs Windows, vous pouvez ensuite [choisir quel client d'étiquetage utiliser](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) pour vos étiquettes de confidentialité publiées.
 
 Lorsque vous êtes prêt à protéger les données de votre organisation en utilisant des étiquettes de confidentialité :
 
@@ -64,7 +62,7 @@ Par défaut, les administrateurs généraux de votre client ont accès à ces ce
 
 Au lieu d'utiliser les rôles par défaut, vous pouvez créer un groupe de rôles, puis ajouter les rôles **Administrateur des étiquettes de confidentialité** ou **Configuration d'organisation** à ce groupe. Pour un rôle en lecture seule, utilisez le **Lecteur d’étiquettes de confidentialité**. 
 
-Pour obtenir des instructions sur l’ajout d’utilisateurs aux rôles par défaut ou sur la création de vos propres groupes de rôles, veuillez consulter la page [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour obtenir des instructions sur l’ajout d’utilisateurs aux rôles par défaut ou sur la création de vos propres groupes de rôles, veuillez consulter la page [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Ces autorisations sont seulement nécessaires pour créer et configurer des étiquettes de confidentialité et leurs stratégies d’étiquette. Elles ne sont pas requises pour l'application d'étiquettes dans des applications ou des services. Si d’autres autorisations sont nécessaires pour des configurations spécifiques liées aux étiquettes de confidentialité, celles-ci sont répertoriées dans les instructions de documentation qui leur sont propres.
 

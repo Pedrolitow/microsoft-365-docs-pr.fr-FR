@@ -3,18 +3,19 @@ title: Microsoft Managed Desktop est-il fait pour vous ?
 description: Orientation du service et raccourcis vers les articles pour les différents publics
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
+audience: ITpro
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 07d3d50f012b2d93e9f7a75f47b0c35514b51350
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 73ce64bd83b475cc7cc0f78b6ac4a06683264144
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920619"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445553"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
 
@@ -57,18 +58,21 @@ Les administrateurs informatiques bénéficient des fonctionnalités suivantes 
 Bureau géré Microsoft prend en charge la gestion des appareils enregistrés et des logiciels Microsoft utilisés.
 
 - **Matériel :** au lieu de faire rechercher et tester les appareils (et leurs pilotes) par votre service informatique, des appareils spécifiques sont soigneusement testés par Bureau géré Microsoft, ce qui permet d'établir une [liste d'appareils](../service-description/device-list.md) organisée répondant aux exigences de performance à l'échelle de l'entreprise et garantissant leur fonctionnement avec le service. Vous pouvez soit vous procurer les appareils vous-même (ou travailler avec un partenaire), soit réutiliser les appareils que vous avez déjà, à condition qu'ils figurent sur la liste approuvée. L'inscription des appareils est simple et facile, et avant leur déploiement, vous pouvez également [personnaliser](../working-with-managed-desktop/config-setting-overview.md) certains aspects de l'expérience des appareils pour vos utilisateurs.
+
 - **Mises à jour :** Bureau géré Microsoft configure et gère tous les aspects des [groupes de déploiement](../service-description/updates.md) pour les mises à jour de qualité et de fonctionnalités de Windows 10, les pilotes, les micrologiciels, les définitions des anti-virus et les mises à jour de Microsoft 365 Apps for enterprise. Cela comprend des tests et des vérifications approfondies de toutes les mises à jour, afin de s'assurer que les appareils enregistrés sont toujours à jour et de minimiser les perturbations, libérant ainsi votre département informatique de cette tâche permanente.
-- **Applications :** dans le cadre de Microsoft 365 Entreprise, Microsoft fournit (et gère) plusieurs applications Microsoft clés pour vous. Vous avez probablement aussi d'autres applications dont vous avez besoin pour votre entreprise. Au lieu de faire tester, conditionner et déployer ces applications par votre département informatique, Microsoft vous aide à les déployer et peut vous assister avec [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) si nécessaire. Pour en savoir plus, consultez la rubrique [Applications dans Bureau géré Microsoft](../get-ready/apps.md).
+
+- **Applications :** dans le cadre de Microsoft 365 Entreprise, Microsoft fournit (et gère) plusieurs applications Microsoft clés pour vous. Vous avez probablement aussi d'autres applications dont vous avez besoin pour votre entreprise. Au lieu de faire tester, conditionner et déployer ces applications par votre département informatique, Microsoft vous aide à les déployer via le programme [FastTrack](https://www.microsoft.com/FastTrack). Par ailleurs, le programme [Soutien aux applications](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) de Microsoft peut vous aider à résoudre les problèmes de compatibilité qui surviennent lors de la migration vers les dernières versions de nos produits. Pour en savoir plus, consultez la rubrique [Applications dans Bureau géré Microsoft](../get-ready/apps.md).
 
 
 ## <a name="device-monitoring"></a>Surveillance des appareils
 
 Nous vous aidons à maintenir la sécurité de vos appareils grâce à un centre d'opérations de sécurité dédié qui surveille vos appareils et utilise les données des menaces uniques que Microsoft analyse chaque mois. Ces fonctionnalités de sécurité sont intégrées au lieu d'être ajoutées ultérieurement.
 
-Nous surveillons également l'intégrité des appareils et vous fournissons des informations sur leurs performances. Pour en savoir plus, consultez la rubrique [Opérations et analyse de Bureau géré Microsoft](../service-description/operations-and-monitoring.md)
+Nous surveillons également l'intégrité des appareils et vous fournissons des informations sur leurs performances. Pour en savoir plus, consultez la rubrique [Opérations et analyse de Bureau géré Microsoft](../service-description/operations-and-monitoring.md).
 
 
 ## <a name="need-more-details"></a>Vous avez besoin d’informations complémentaires ?
+
 Pour en savoir plus sur la valeur de Bureau géré Microsoft, y compris les témoignages de clients, consultez la rubrique [Bureau géré Microsoft](https://aka.ms/mmd). La [feuille de route](https://aka.ms/AA6jiam) est une [enquête de cas d’impact économique Total](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)et une [synthèse d’une seule page](https://aka.ms/AA6ob3h), et téléchargeable un résumé de la page. Vous pouvez trouver les dernières informations sur le [blog](https://aka.ms/AA6l2dd) Bureau géré Microsoft.
 
 Si Microsoft Managed Desktop semble convenir à votre organisation, vous pouvez consulter des documents supplémentaires qui fournissent plus de détails sur le service, la manière de préparer votre organisation à l'adhésion, la manière de démarrer le service et les opérations en cours par la suite, y compris la manière dont vous et vos utilisateurs pouvez facilement obtenir de l'aide si nécessaire. Dès que vous êtes prêt à embarquer, commencez par contacter votre [équipe de compte locale](https://pages.email.office.com/contactmmd/).

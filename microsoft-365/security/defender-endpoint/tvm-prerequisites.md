@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ca095a7a65a114182d736176840fdd4e651a8646
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1d9c3233f72541ccd0463eefef93bde5e7d9900f
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066806"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499960"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Conditions préalables & autorisations : gestion des menaces et des vulnérabilités
 
@@ -41,7 +41,7 @@ Assurez-vous que vos appareils :
 - Exécuter les [systèmes d’exploitation et les plateformes pris en charge](tvm-supported-os.md)
 - Installez et déployez les mises à jour obligatoires suivantes dans votre réseau pour augmenter les taux de détection de l’évaluation des vulnérabilités :
 
-> Débloquer | Numéro et lien de la mise à jour de sécurité de la KB
+> Version | Numéro et lien de la mise à jour de sécurité de la KB
 > :---|:---
 > Windows 10 version 1709 | [KB4493441 et](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 > Windows 10 version 1803 | [KB4493464 et](https://support.microsoft.com/help/4493464) [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
@@ -76,7 +76,7 @@ Pour plus d’informations, voir [les options d’autorisation RBAC](user-roles.
 ## <a name="related-articles"></a>Articles connexes
 
 - [Vue d’ensemble de la gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Systèmes d’exploitation et plateformes pris en charge](tvm-supported-os.md)
-- [Affecter la valeur de l’appareil](tvm-assign-device-value.md)
+- [Plateformes et systèmes d’exploitation pris en charge](tvm-supported-os.md)
+- [Affecter une valeur aux appareils](tvm-assign-device-value.md)
 - [Tableau de bord de gestion des menaces et des vulnérabilités](tvm-dashboard-insights.md)
 

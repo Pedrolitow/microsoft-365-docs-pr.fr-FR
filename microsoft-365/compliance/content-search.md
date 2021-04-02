@@ -21,12 +21,12 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez l'outil de recherche de contenu dans le centre de conformité Microsoft pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: 2e9dcde65a4f2728782fd300f962dfb3e80ed3c9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f648d0d0a68db4db32297a407fb944571f702b8e
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908626"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470656"
 ---
 # <a name="content-search"></a>Recherche de contenu
 
@@ -66,18 +66,18 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
     
     ![Spécifier les mots clés, les conditions et les emplacements à rechercher](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-   - **Mots clés à Rechercher :** tapez une requête de recherche dans la zone **Mots clés**. Vous pouvez spécifier des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (des numéros de sécurité sociale, par exemple) dans des documents ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone du mot clé vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche.
+   1. **Mots clés à Rechercher :** tapez une requête de recherche dans la zone **Mots clés**. Vous pouvez spécifier des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (des numéros de sécurité sociale, par exemple) dans des documents ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone du mot clé vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche.
 
       Vous pouvez également cliquer sur la case à cocher **Afficher la liste de mots clés** puis taper un mot clé dans chaque ligne. Si vous procédez ainsi, les mots clés sur chaque ligne sont connectés à l’aide d'un opérateur logique (**c:s**) qui présente les mêmes fonctionnalités que l’opérateur **OU** de la requête de recherche créée. 
     
       Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments qui correspondent à chaque mot clé. Cela peut vous aider à identifier rapidement les mots clés les plus importants (et les moins). Vous pouvez également utiliser une expression de mot clé (entre parenthèses) dans une ligne. Pour plus d’informations sur les statistiques de recherche, voir [afficher les statistiques des mots clés pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md).
 
-     > [!NOTE]
-     > Pour réduire les problèmes liés aux longues listes de mots clés, vous êtes désormais limité à 20 lignes au maximum dans la liste de mots clés.
+      > [!NOTE]
+      > Pour réduire les problèmes liés aux longues listes de mots clés, vous êtes désormais limité à 20 lignes au maximum dans la liste de mots clés.
     
-    - **Conditions :** vous pouvez ajouter des conditions dans une requête de recherche pour affiner une recherche et obtenir un ensemble de résultats plus précis. Chaque condition ajoute une clause à la requête de recherche qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est connectée à la requête de mot-clé (spécifiée dans la zone de mot-clé) sur le plan logique par l’opérateur logique (**c:c**), qui est similaire dans son fonctionnement à l’opérateur **ET**. Cela signifie que les éléments doivent satisfaire la requête de mot-clé et une ou plusieurs conditions pour être inclus dans les résultats. C’est ainsi que les conditions contribuent à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, voir la section «conditions de recherche» dans les [requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#search-conditions).
+    2. **Conditions :** vous pouvez ajouter des conditions dans une requête de recherche pour affiner une recherche et obtenir un ensemble de résultats plus précis. Chaque condition ajoute une clause à la requête de recherche qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est connectée à la requête de mot-clé (spécifiée dans la zone de mot-clé) sur le plan logique par l’opérateur logique (**c:c**), qui est similaire dans son fonctionnement à l’opérateur **ET**. Cela signifie que les éléments doivent satisfaire la requête de mot-clé et une ou plusieurs conditions pour être inclus dans les résultats. C’est ainsi que les conditions contribuent à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, voir la section «conditions de recherche» dans les [requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#search-conditions).
     
-       - **Emplacements :** choisissez les emplacements de contenu à rechercher.
+    3. **Emplacements :** choisissez les emplacements de contenu à rechercher.
     
       - **Tous les emplacements :** utilisez cette option pour rechercher tous les emplacements de contenu au sein de votre organisation. Il s’agit du courrier dans toutes les boîtes aux lettres Exchange (y compris toutes les boîtes aux lettres inactives et les boîtes aux lettres de Microsoft Teams, Groupes Yammer, et Groupes Microsoft 365), toutes les conversations Skype Entreprise, l’ensemble des sites SharePoint et OneDrive Entreprise (y compris les sites pour Microsoft Teams, les Groupes Yammer et les Groupes Microsoft 365) et les éléments dans tous les dossiers publics Exchange.
     
@@ -87,9 +87,11 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
   
          Vous pouvez également ajouter des groupes de distribution à la liste des boîtes aux lettres Exchange dans laquelle effectuer la recherche. Pour les groupes de distribution, la recherche porte sur les boîtes aux lettres des membres du groupe. L’utilisation de groupes de distribution dynamique n’est pas prise en charge.
     
-       > [!NOTE]
-       > Lorsque vous effectuez une recherche dans tous les emplacements de boîtes aux lettres ou uniquement des boîtes aux lettres spécifiques, les données d’autres applications Office 365 qui sont enregistrées dans les boîtes aux lettres d’utilisateur sont incluses lorsque vous exportez les résultats d’une recherche de contenu. Ces données ne sont pas incluses dans les résultats de recherche estimés et ne sont pas disponibles pour en aperçu. Elles sont incluses lorsque vous exportez et téléchargez les résultats de recherche. Pour plus d'informations, consultez la rubrique [Contenu stocké dans les boîtes aux lettres Exchange Online](what-is-stored-in-exo-mailbox.md).
-   
+        > [!NOTE]
+        > Lorsque vous effectuez une recherche dans tous les emplacements de boîtes aux lettres ou uniquement des boîtes aux lettres spécifiques, les données d’autres applications Office 365 qui sont enregistrées dans les boîtes aux lettres d’utilisateur sont incluses lorsque vous exportez les résultats d’une recherche de contenu. Ces données ne sont pas incluses dans les résultats de recherche estimés et ne sont pas disponibles pour en aperçu. Elles sont incluses lorsque vous exportez et téléchargez les résultats de recherche. Pour plus d'informations, consultez la rubrique [Contenu stocké dans les boîtes aux lettres Exchange Online](what-is-stored-in-exo-mailbox.md).
+
+   4. **Ajouter un contenu d’application pour des utilisateurs locaux :** sélectionnez cette case à cocher pour inclure un contenu Teams d’utilisateurs locaux dans la recherche. Par exemple, si vous recherchez toutes les boîtes aux lettres Exchange au niveau de l’organisation et que vous sélectionnez également cette case à cocher, le stockage cloud utilisé pour stocker les données de conversation Teams des utilisateurs locaux sera inclus dans l’étendue de la recherche. Pour plus d'informations, voir [Recherche de données de conversation des équipes pour les utilisateurs sur site](search-cloud-based-mailboxes-for-on-premises-users.md).
+
 5. Une fois que vous avez configuré votre requête de recherche, cliquez sur **enregistrer & exécuter**.
     
 6. Dans la page **enregistrer la recherche**, tapez un nom pour la recherche, puis une description facultative qui vous permet d’identifier la recherche. Le nom de la recherche doit être unique dans toute votre organisation. 

@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e3e5410c868336308b1ecb34ba4326bf2dc5796f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d7e1ad4d10c3b71a04421d92304dc2bfcb6147da
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064737"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498203"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -35,7 +35,7 @@ ms.locfileid: "51064737"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Le tableau du schéma de recherche avancée contient des informations sur les comptes d’utilisateurs obtenus à partir de différents services, y compris `IdentityInfo` Azure Active [](advanced-hunting-overview.md) Directory. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur les comptes d’utilisateurs obtenus à partir de `IdentityInfo` différents services, y compris Azure Active [](advanced-hunting-overview.md) Directory. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!NOTE]
 >Cette table a été renommée à partir `AccountInfo` de . Pendant les changements de nom, toutes les requêtes enregistrées dans le portail sont automatiquement mises à jour. Vérifiez les requêtes que vous avez enregistrées ailleurs.

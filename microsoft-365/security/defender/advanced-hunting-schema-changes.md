@@ -1,6 +1,6 @@
 ---
-title: Changements d’appellation dans le schéma de recherche avancée Microsoft 365 Defender
-description: Suivre et passer en revue les tables et les colonnes des modifications d’attribution de noms dans le schéma de recherche avancé
+title: Changements de nommage dans le schéma de recherche avancée Microsoft 365 Defender
+description: Suivre et passer en revue les tables et colonnes de modifications d’attribution de noms dans le schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: acb259088717b2772ec9798027545f2ff6dbc5e0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ab6bdefb457fb31df98d829ee801b72f4c8ae70a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068670"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499698"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de recherche avancé : modifications d’attribution de noms
 
@@ -86,7 +86,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inclure d’autres types de menaces |
 
 
-2. Dans les `EmailAttachmentInfo` `EmailEvents` tableaux et les tableaux, la colonne a été ajoutée pour fournir plus `ThreatNames` d’informations sur la menace de messagerie. Cette colonne contient des valeurs telles que courrier indésirable ou hameçonnage.
+2. Dans les `EmailAttachmentInfo` `EmailEvents` tableaux et les tableaux, la colonne a été ajoutée pour fournir plus `ThreatNames` d’informations sur la menace de courrier électronique. Cette colonne contient des valeurs telles que le courrier indésirable ou le hameçonnage.
 
 3. Dans la table [DeviceInfo,](advanced-hunting-deviceinfo-table.md) la colonne a été remplacée par la colonne en fonction `DeviceObjectId` des commentaires des `AadDeviceId` clients.
 

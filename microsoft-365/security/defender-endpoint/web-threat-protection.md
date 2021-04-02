@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7754fa586b24fdedaa9691b45f5da4654c882a5b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185980"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499898"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Protéger votre organisation contre les menaces web
 
@@ -36,7 +36,7 @@ ms.locfileid: "51185980"
 La protection contre les menaces web fait partie de [la protection Web](web-protection-overview.md) dans Defender for Endpoint. Il utilise la [protection réseau](network-protection.md) pour sécuriser vos appareils contre les menaces web. Grâce à l’intégration à Microsoft Edge et aux navigateurs tiers populaires tels que Chrome et Firefox, la protection contre les menaces web arrête les menaces web sans proxy web et peut protéger les appareils lorsqu’ils sont absents ou locaux. La protection contre les menaces web arrête l’accès aux sites de hameçonnage, aux vecteurs de programmes malveillants, aux sites d’exploitation, aux sites non fiables ou à faible réputation, ainsi qu’aux sites que vous avez bloqués dans votre liste d’indicateurs [personnalisés.](manage-indicators.md)
 
 >[!Note]
->La réception de nouveaux indicateurs client sur les appareils peut prendre jusqu’à une heure.
+>La réception de nouveaux indicateurs personnalisés peut prendre jusqu’à une heure.
 
 ## <a name="prerequisites"></a>Conditions préalables
 La protection web utilise la protection réseau pour assurer la sécurité de navigation web sur Microsoft Edge et les navigateurs web tiers.
@@ -50,7 +50,7 @@ Pour activer la protection réseau sur vos appareils :
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Vue d’ensemble de la protection Web](web-protection-overview.md)
+- [Vue d’ensemble de la protection web](web-protection-overview.md)
 - [Protection contre les menaces web](web-threat-protection.md)
 - [Surveiller la sécurité web](web-protection-monitoring.md)
 - [Répondre aux menaces web](web-protection-response.md)

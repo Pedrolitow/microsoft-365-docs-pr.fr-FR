@@ -1,6 +1,6 @@
 ---
 title: Table DeviceFileCertificateInfo dans le schéma de recherche avancé
-description: En savoir plus sur les informations de signature de fichier dans la table DeviceFileCertificateInfo du schéma de recherche avancé
+description: En savoir plus sur les informations de signature de fichiers dans la table DeviceFileCertificateInfo du schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, digital signature, certificate, file signing, DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 00e10c84c4bcb20f2e018bf05033b5b2235fd9ae
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: eafe84e2d08ce15fe2c3a7cbfafb0822a2f38666
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063537"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498630"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -56,7 +56,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `CertificateCreationTime` | DateHeure | Date et heure de création du certificat |
 | `CertificateExpirationTime` | DateHeure | Date et heure d’expiration du certificat |
 | `CertificateCountersignatureTime` | DateHeure | Date et heure de contre-signature du certificat |
-| `IsTrusted` | booléen | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui recherche des informations de certificat racine inconnues, des signatures non valides, des certificats révoqués et d’autres attributs douteux |
+| `IsTrusted` | booléen | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui recherche des informations de certificat racine inconnues, des signatures non valides, des certificats révoqués et d’autres attributs discutables |
 | `IsRootSignerMicrosoft` | booléen | Indique si le signataire du certificat racine est Microsoft |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. | 
 

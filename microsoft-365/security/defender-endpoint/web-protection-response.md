@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9f3873db4f85cec3f5f1a400dcfb7930c6a4faa
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b0e6bb0d71c14bf7742f8d6508fbb95b76b10a34
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187540"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498354"
 ---
 # <a name="respond-to-web-threats"></a>Répondre aux menaces web
 
@@ -33,9 +33,9 @@ ms.locfileid: "51187540"
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-La protection web dans Microsoft Defender pour le point de terminaison vous permet d’examiner et de répondre efficacement aux alertes liées aux sites web malveillants et aux sites web dans votre liste d’indicateurs personnalisés.
+La protection web dans Microsoft Defender pour point de terminaison vous permet d’examiner et de répondre efficacement aux alertes liées aux sites web et sites web malveillants dans votre liste d’indicateurs personnalisés.
 
-## <a name="view-web-threat-alerts"></a>Afficher les alertes de menaces web
+## <a name="view-web-threat-alerts"></a>Afficher les alertes contre les menaces web
 Microsoft Defender pour le point de terminaison génère les [alertes suivantes](manage-alerts.md) pour les activités web malveillantes ou suspectes :
 - **Connexion suspecte bloquée** par la protection réseau : cette alerte est générée lorsqu’une  tentative d’accès à un site web malveillant ou à un site web dans votre liste d’indicateurs personnalisés est arrêtée par la protection réseau en *mode* blocage
 - **Connexion suspecte** détectée par la protection réseau : cette alerte est générée lorsqu’une tentative d’accès à un site web malveillant ou à un site web dans votre liste d’indicateurs personnalisés est détectée par la protection réseau en mode *audit* uniquement
@@ -57,7 +57,7 @@ Vous pouvez approfondir l’analyse en sélectionnant l’URL ou le domaine du s
 - Incidents et alertes liés au site web
 - Fréquence d’utilisation du site web dans les événements de votre organisation
 
-    ![Image de la page de détails d’entité de domaine ou d’URL](images/wtp-website-details.png)
+    ![Image de la page de détails de l’entité de domaine ou d’URL](images/wtp-website-details.png)
 
 [En savoir plus sur les pages d’URL ou d’entité de domaine](investigate-domain.md)
 
@@ -77,7 +77,7 @@ Avec la protection web dans Microsoft Defender pour point de terminaison, vos ut
  *bloquée sur Chrome*
 
 ## <a name="related-topics"></a>Voir aussi
-- [Vue d’ensemble de la protection Web](web-protection-overview.md)
-- [Filtrage de contenu Web](web-content-filtering.md)
+- [Vue d’ensemble de la protection web](web-protection-overview.md)
+- [Filtrage du contenu web](web-content-filtering.md)
 - [Protection contre les menaces web](web-threat-protection.md)
 - [Surveiller la sécurité web](web-protection-monitoring.md)

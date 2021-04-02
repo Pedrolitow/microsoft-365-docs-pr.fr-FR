@@ -1,6 +1,6 @@
 ---
 title: Table DeviceRegistryEvents dans le schéma de recherche avancé
-description: En savoir plus sur les événements de Registre que vous pouvez interroger à partir de la table DeviceRegistryEvents du schéma de recherche avancé
+description: En savoir plus sur les événements de Registre que vous pouvez interroger à partir de la table DeviceRegistryEvents du schéma de recherche avancée
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, deviceregistryevents, registry, key, subkey, value, RegistryEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 39ea04e2faa43d230ecdc281967b6a9e8f8c9abe
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 31fe2bb882bc59eb516773c0c319b1f25f56a95e
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067014"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498766"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -31,11 +31,11 @@ ms.locfileid: "51067014"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-Le tableau du schéma de recherche avancée contient des informations sur la création et `DeviceRegistryEvents` la modification d’entrées de Registre. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
+Le tableau du schéma de recherche avancée contient des informations sur la création et la modification des `DeviceRegistryEvents` entrées de [](advanced-hunting-overview.md) Registre. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 
-Pour plus d’informations sur les autres tableaux du schéma de chasse avancé, voir la référence de schéma [de chasse avancée.](advanced-hunting-schema-reference.md)
+Pour plus d’informations sur les autres tableaux du schéma de chasse avancé, voir [la référence du schéma de chasse avancé.](advanced-hunting-schema-reference.md)
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
@@ -43,7 +43,7 @@ Pour plus d’informations sur les autres tableaux du schéma de chasse avancé,
 | `DeviceId` | string | Identificateur unique de l’appareil dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de l’appareil |
 | `ActionType` | string | Type d’activité qui a déclenché l’événement |
-| `RegistryKey` | string | Clé de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryKey` | string | Clé de Registre à l’application de l’action enregistrée |
 | `RegistryValueType` | string | Type de données, tel que binaire ou chaîne, de la valeur de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueName` | string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueData` | string | Données de la valeur de Registre à l’application de l’action enregistrée |

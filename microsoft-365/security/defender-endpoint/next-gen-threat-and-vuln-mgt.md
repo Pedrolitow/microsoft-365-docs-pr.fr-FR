@@ -1,6 +1,6 @@
 ---
 title: La gestion des menaces et des vulnérabilités
-description: Cette nouvelle fonctionnalité utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiér doncisation et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
+description: Cette nouvelle fonctionnalité utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiérquage et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
 keywords: gestion des vulnérabilités & menace, gestion des menaces et des vulnérabilités, MDATP TVM, MDATP-TVM, gestion des vulnérabilités, évaluation des vulnérabilités, analyse des menaces et vulnérabilités, évaluation de la configuration sécurisée, microsoft defender atp, microsoft defender atp, vulnérabilités de point de terminaison, nouvelle génération
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: d1402d8486725559335a5edc5ee13c78a0125932
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186424"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499066"
 ---
 # <a name="threat-and-vulnerability-management"></a>La gestion des menaces et des vulnérabilités
 
@@ -64,7 +64,7 @@ Il fournit également :
 La gestion des menaces et des vulnérabilités permet aux clients de hiérarchiser et de se concentrer sur les faiblesses qui posent les risques les plus urgents et les plus élevés pour l’organisation. Il associe les recommandations de sécurité avec les menaces dynamiques et le contexte métier :
 
 - **Exposition des attaques émergentes dans l’environnement** : aligne dynamiquement la hiér donc sur les recommandations de sécurité. La gestion des menaces et des vulnérabilités se concentre sur les vulnérabilités actuellement exploitées dans les menaces émergentes et les menaces potentielles qui présentent le risque le plus élevé.
-- **Localisation des violations actives** : met en corrélation la gestion des menaces et des vulnérabilités et les informations EDR pour hiérarchiser les vulnérabilités exploitées dans une violation active au sein de l’organisation.
+- **Mise en évidence des violations actives** : met en corrélation la gestion des menaces et des vulnérabilités et les informations EDR pour hiérarchiser les vulnérabilités exploitées dans une violation active au sein de l’organisation.
 - **Protection des biens à** valeur élevée : identifiez les appareils exposés avec des applications critiques pour l’entreprise, des données confidentielles ou des utilisateurs à valeur élevée.
 
 ### <a name="seamless-remediation"></a>Correction transparente
@@ -86,7 +86,7 @@ Regardez cette vidéo pour une présentation complète de la gestion des menaces
 Domaine | Description
 :---|:---
 **Tableau de bord**   | Obtenez une vue d’ensemble du score d’exposition de l’organisation, du Degré de sécurisation Microsoft pour les appareils, de la distribution de l’exposition des appareils, des principales recommandations en matière de sécurité, des logiciels les plus vulnérables, des principales activités de correction et des données d’appareils les plus exposées.
-[**Recommandations de sécurité**](tvm-security-recommendation.md) | Consultez la liste des recommandations de sécurité et des informations sur les menaces associées. Lorsque vous sélectionnez un élément dans la liste, un panneau volant s’ouvre avec des détails sur la vulnérabilité, un lien pour ouvrir la page logicielle, ainsi que des options de correction et d’exception. Vous pouvez également ouvrir un ticket dans Intune si vos appareils sont joints via Azure Active Directory et que vous avez activé vos connexions Intune dans Defender pour endpoint.
+[**Recommandations de sécurité**](tvm-security-recommendation.md) | Consultez la liste des recommandations de sécurité et des informations sur les menaces associées. Lorsque vous sélectionnez un élément dans la liste, un panneau volant s’ouvre avec des détails sur la vulnérabilité, un lien pour ouvrir la page logicielle, ainsi que des options de correction et d’exception. Vous pouvez également ouvrir un ticket dans Intune si vos appareils sont joints via Azure Active Directory et que vous avez activé vos connexions Intune dans Defender for Endpoint.
 [**Correction**](tvm-remediation.md) | Consultez les activités de correction que vous avez créées et les exceptions de recommandation.
 [**Inventaire des logiciels**](tvm-software-inventory.md) | Consultez la liste des logiciels vulnérables de votre organisation, ainsi que les informations sur les faiblesses et les menaces.
 [**Faiblesses**](tvm-weaknesses.md) | Consultez la liste des vulnérabilités et des exposition courantes dans votre organisation.
@@ -98,16 +98,16 @@ Exécutez des appels d’API liés à la gestion des menaces et des vulnérabili
 
 Consultez les articles suivants pour les API associées :
 
-- [API Microsoft Defender pour point de terminaison prise en charge](exposed-apis-list.md)
+- [API prises en charge Microsoft Defender pour point de terminaison](exposed-apis-list.md).
 - [API de l’ordinateur](machine.md)
 - [API de recommandation](vulnerability.md)
 - [API de score](score.md)
 - [API logicielles](software.md)
 - [API de vulnérabilité](vulnerability.md)
-- [Liste des vulnérabilités par ordinateur et par logiciel](get-all-vulnerabilities-by-machines.md)
+- [Répertorier les vulnérabilités par ordinateur et logiciel](get-all-vulnerabilities-by-machines.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Systèmes d’exploitation et plateformes pris en charge](tvm-supported-os.md)
+- [Plateformes et systèmes d’exploitation pris en charge](tvm-supported-os.md)
 - [Tableau de bord de gestion des menaces et des vulnérabilités](tvm-dashboard-insights.md)
 - [BLOG : La gestion des menaces & vulnérabilités de Microsoft permet désormais à des milliers de clients de découvrir, hiérarchiser et corriger les vulnérabilités en temps réel](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)

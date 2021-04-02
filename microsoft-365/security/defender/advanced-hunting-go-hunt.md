@@ -1,6 +1,6 @@
 ---
 title: Obtenir des informations pertinentes sur une entité avec go hunt
-description: Découvrez comment utiliser l’outil de recherche pour rapidement interroger des informations pertinentes sur une entité ou un événement à l’aide d’un recherche avancée.
+description: Découvrez comment utiliser l’outil de recherche pour rapidement interroger des informations pertinentes sur une entité ou un événement à l’aide d’une recherche avancée.
 keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 242c15bdd2f28f7277b93781d521c5414b9e90cf
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 392db06aa517e3e970f85ccc971c3a6a6bc6e548
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068329"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498286"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Recherche rapide des informations sur l’entité ou les événements avec la recherche de go
 
@@ -43,7 +43,7 @@ Avec *l’action de recherche* go, vous pouvez rapidement examiner les événeme
 
     ![Image montrant les détails de la boîte aux lettres avec l’option aller à la recherche](../../media/mtp-ah/go-hunt-email.png)
 
-- Dans la page incident, vous pouvez également accéder à une liste d’entités sous l’onglet Preuve. La sélection de l’une de ces entités permet de trouver rapidement des informations sur cette entité.
+- Dans la page Incident, vous pouvez également accéder à une liste d’entités sous l’onglet Preuve. La sélection de l’une de ces entités permet de trouver rapidement des informations sur cette entité.
 
     ![Image montrant le fichier sélectionné avec l’option Aller à la recherche dans l’onglet Preuves](../../media/mtp-ah/go-hunt-evidence-file.png)
 
@@ -97,7 +97,7 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 ```
 
 ## <a name="adjust-the-query"></a>Ajuster la requête
-Avec une certaine connaissance du langage [de requête,](advanced-hunting-query-language.md)vous pouvez ajuster la requête à votre préférence. Par exemple, vous pouvez ajuster cette ligne, qui détermine la taille de la fenêtre de temps :
+Avec une certaine connaissance du langage [de requête,](advanced-hunting-query-language.md)vous pouvez ajuster la requête à vos préférences. Par exemple, vous pouvez ajuster cette ligne, qui détermine la taille de la fenêtre de temps :
 
 ```kusto
 Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
@@ -110,5 +110,5 @@ En plus de modifier la requête pour obtenir des résultats plus pertinents, vou
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
-- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
+- [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Règles de détection personnalisée](custom-detection-rules.md)

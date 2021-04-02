@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a0f70d81c3060f14f917cac49851af2e9dae210
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4ffa89fd7162ac90e0cbbb029b1adbefa2ffd520
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068686"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499990"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Corriger les vulnérabilités avec la gestion des menaces et des vulnérabilités
 
@@ -38,7 +38,7 @@ ms.locfileid: "51068686"
 
 ## <a name="request-remediation"></a>Demander la correction
 
-La fonctionnalité de gestion des menaces et des vulnérabilités dans Microsoft Defender pour point de terminaison fait le lien entre la sécurité et les administrateurs informatiques via le flux de travail de demande de correction. Les administrateurs de sécurité comme vous pouvez demander à l’administrateur informatique de corriger une vulnérabilité à partir des **pages** de recommandations de sécurité vers Intune.
+La fonctionnalité de gestion des menaces et des vulnérabilités dans Microsoft Defender pour point de terminaison permet de combler le vide entre les administrateurs de sécurité et les administrateurs informatiques via le flux de travail de demande de correction. Les administrateurs de sécurité comme vous pouvez demander à l’administrateur informatique de corriger une vulnérabilité à partir des **pages** de recommandations de sécurité vers Intune.
 
 ### <a name="enable-microsoft-intune-connection"></a>Activer la connexion Microsoft Intune
 
@@ -52,7 +52,7 @@ Pour [plus d’informations, voir Utiliser Intune](https://docs.microsoft.com/in
 
 1. Go to the threat and vulnerability management navigation menu in the Microsoft Defender Security Center, and select [**Security recommendations**](tvm-security-recommendation.md).
 
-2. Sélectionnez une recommandation de sécurité pour la demande de correction, puis sélectionnez **Options de correction.**
+2. Sélectionnez une recommandation de sécurité pour qui vous souhaitez demander des corrections, puis sélectionnez **Options de correction.**
 
 3. Remplissez le formulaire, y compris ce pour quoi vous demandez des corrections, les groupes d’appareils applicables, la priorité, la date d’échéance et les notes facultatives.
     1. Si vous choisissez l’option de correction « Attention requise », la sélection d’une date d’échéance n’est pas disponible, car il n’existe aucune action spécifique.
@@ -66,7 +66,7 @@ Pour [plus d’informations, voir Utiliser Intune](https://docs.microsoft.com/in
 Si vous souhaitez vérifier la façon dont le ticket s’affiche dans Intune, voir Utiliser [Intune](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) pour corriger les vulnérabilités identifiées par Microsoft Defender pour endpoint pour plus d’informations.
 
 >[!NOTE]
->Si votre demande implique de corriger plus de 10 000 appareils, nous ne pouvons envoyer que 10 000 appareils pour correction à Intune.
+>Si votre demande implique la correction de plus de 10 000 appareils, nous ne pouvons envoyer que 10 000 appareils pour correction à Intune.
 
 Une fois les faiblesses de cybersécurité de votre organisation identifiées et mappées aux [recommandations](tvm-security-recommendation.md)de sécurité actionnables, commencez à créer des tâches de sécurité. Vous pouvez créer des tâches via l’intégration avec Microsoft Intune où des tickets de correction sont créés.
 
@@ -74,7 +74,7 @@ Diminuez l’exposition de votre organisation contre les vulnérabilités et aug
 
 ## <a name="view-your-remediation-activities"></a>Afficher vos activités de correction
 
-Lorsque vous envoyez une demande de correction à partir de la page Recommandations en matière de sécurité, une activité de correction démarre. Une tâche de sécurité est créée et peut être suivi dans la **page** de correction de la gestion des menaces et des vulnérabilités, et un ticket de correction est créé dans Microsoft Intune.
+Lorsque vous envoyez une demande de correction à partir de la page Recommandations en matière de sécurité, une activité de correction est lancé. Une tâche de sécurité est créée et peut être suivi dans la **page** de correction de la gestion des menaces et des vulnérabilités, et un ticket de correction est créé dans Microsoft Intune.
 
 Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller.
 

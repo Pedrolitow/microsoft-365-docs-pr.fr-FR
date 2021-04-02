@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3e4a8c9bffd285d45c7a4002b1ecd96e6dda40b9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7b1f581e1cfc8345df6e7b8053621cf46110c355
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063609"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499889"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -69,7 +69,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Application` | string | Application qui a effectué l’action enregistrée |
 | `ProcessCommandLine` | string | Ligne de commande utilisée pour créer le nouveau processus |
 | `AdditionalFields` | string | Informations supplémentaires sur l’événement au format de tableau JSON |
-| `RegistryKey` |string | Clé de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryKey` |string | Clé de Registre à l’application de l’action enregistrée |
 | `RegistryValueName` |string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueData` |string | Données de la valeur de Registre à l’application de l’action enregistrée |
 

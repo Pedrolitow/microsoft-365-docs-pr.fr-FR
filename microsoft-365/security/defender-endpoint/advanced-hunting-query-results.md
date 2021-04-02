@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8876eea8f8b1111a2039328296fbd7c2d50022cb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4abec618a79704804b5e3349f5c4c5a4827d35ef
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067454"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499441"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Travailler avec des résultats de requête de recherche avancés
 
@@ -30,9 +30,9 @@ ms.locfileid: "51067454"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
-Bien que vous [](advanced-hunting-overview.md) pouvez construire vos requêtes de recherche avancées pour renvoyer des informations très précises, vous pouvez également travailler avec les résultats de la requête pour obtenir des informations supplémentaires et examiner des activités et des indicateurs spécifiques. Vous pouvez prendre les mesures suivantes sur les résultats de votre requête :
+Bien que vous [](advanced-hunting-overview.md) pouvez construire vos requêtes de recherche avancées pour renvoyer des informations très précises, vous pouvez également travailler avec les résultats de la requête pour obtenir des informations plus précises et examiner des activités et des indicateurs spécifiques. Vous pouvez prendre les mesures suivantes sur les résultats de votre requête :
 
 - Afficher les résultats sous la mesure d’un tableau ou d’un graphique
 - Exporter des tableaux et des graphiques
@@ -69,9 +69,9 @@ Lors de l’affichage des résultats, un graphique en colonnes affiche chaque va
  *d’un graphique en colonnes*
 
 #### <a name="alert-severity-by-operating-system"></a>Gravité des alertes par système d’exploitation
-Vous pouvez également utiliser l’opérateur pour préparer les résultats pour la graphique `summarize` des valeurs de plusieurs champs. Par exemple, vous souhaitez peut-être comprendre comment les gravités des alertes sont distribuées entre les systèmes d’exploitation. 
+Vous pouvez également utiliser `summarize` l’opérateur pour préparer les résultats pour la graphique des valeurs de plusieurs champs. Par exemple, vous souhaitez peut-être comprendre comment les gravités des alertes sont distribuées entre les systèmes d’exploitation. 
 
-La requête ci-dessous utilise un opérateur pour tirer les informations du système d’exploitation du tableau, puis pour compter les valeurs dans les colonnes `join` `DeviceInfo` et les `summarize` `OSPlatform` `Severity` colonnes :
+La requête ci-dessous utilise un opérateur pour tirer les informations du système d’exploitation à partir du tableau, puis pour compter les valeurs à la fois dans `join` `DeviceInfo` les `summarize` `OSPlatform` colonnes et dans les `Severity` colonnes :
 
 ```kusto
 DeviceAlertEvents
@@ -80,7 +80,7 @@ DeviceAlertEvents
 ```
 Ces résultats sont mieux visualisés à l’aide d’un graphique en colonnes empilées :
 
-![Image des résultats de requête de recherche avancée affichés sous la mesure de résultats de requête de graphique empilé pour les alertes par système d’exploitation et la gravité affichées sous la mesure ](images/advanced-hunting-stacked-chart.jpg)
+![Image des résultats de requête de recherche avancée affichés sous la mesure d’un graphique empilé Résultats de requête pour les alertes par système d’exploitation et gravité affichées sous la mesure ](images/advanced-hunting-stacked-chart.jpg)
  *d’un graphique empilé*
 
 #### <a name="top-ten-device-groups-with-alerts"></a>Dix principaux groupes d’appareils avec alertes
@@ -92,9 +92,9 @@ DeviceAlertEvents
 | summarize Count = count() by MachineGroup
 | top 10 by Count
 ```
-Utilisez l’affichage graphique en secteurs pour afficher efficacement la distribution dans les groupes supérieurs :
+Utilisez l’affichage graphique en secteurs pour afficher efficacement la distribution dans les groupes principaux :
 
-![Image des résultats de requête de recherche avancée affichés sous la la mesure d’un graphique en secteurs de graphique en secteurs montrant la distribution des ](images/advanced-hunting-pie-chart.jpg)
+![Image des résultats de requête de recherche avancée affichés sous la la figure d’un graphique en secteurs de graphique en secteurs montrant la distribution des ](images/advanced-hunting-pie-chart.jpg)
  *alertes entre les groupes d’appareils*
 
 #### <a name="malware-detections-over-time"></a>Détections de programmes malveillants au fil du temps
@@ -108,7 +108,7 @@ DeviceEvents
 ```
 Le graphique en lignes ci-dessous met clairement en évidence les périodes avec davantage de détections de programmes malveillants de test : 
 
-![Image des résultats avancés d’une requête de repérage affiché sous la mesure d’un graphique en lignes affichant le nombre de détections d’un programme malveillant ](images/advanced-hunting-line-chart.jpg)
+![Image des résultats de requête de repérage avancé affichés sous la mesure d’un graphique en lignes affichant le nombre de détections d’un programme malveillant ](images/advanced-hunting-line-chart.jpg)
  *de test au fil du temps*
 
 
@@ -134,7 +134,7 @@ Cliquez avec le bouton droit de la souris sur une valeur du jeu de résultats po
 - Exclure la valeur sélectionnée de la requête (`!=`)
 - Obtenez des opérateurs plus avancés pour ajouter la valeur à votre requête (par exemple, `contains`, `starts with` et `ends with`) 
 
-![Image du jeu de résultats de recherche avancé](images/advanced-hunting-results-filter.png)
+![Image du jeu de résultats de recherche avancée](images/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>Filtrer les résultats de la requête
 Les filtres affichés dans le volet droit fournissent un résumé du jeu de résultats. Chaque colonne possède sa propre section dans le volet, chacune répertoriant les valeurs trouvées dans cette colonne et le nombre d’instances.

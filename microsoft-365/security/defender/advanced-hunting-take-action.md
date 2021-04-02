@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4c90441bb7a492ac38c5fcb560d9246b3a0005b0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ee35bcc29ef8a283b6b04cb34ab97705d5dd15f4
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064726"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498223"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Prendre des mesures sur les résultats de requête de recherche avancée
 
@@ -53,8 +53,8 @@ Vous pouvez prendre les mesures suivantes sur les appareils identifiés par la `
 - Isoler les appareils affectés pour contenir une infection ou empêcher les attaques de se déplacer ultérieurement
 - Collecter un package d’enquête pour obtenir plus d’informations d’investigation
 - Exécuter une analyse antivirus pour rechercher et supprimer les menaces à l’aide des dernières mises à jour de l’intelligence de la sécurité
-- Lancer un examen automatisé pour vérifier et corriger les menaces sur l’appareil et éventuellement sur d’autres appareils concernés
-- Restreindre l’exécution de l’application uniquement aux fichiers exécutables signés par Microsoft, ce qui empêche toute activité de menace ultérieure par le biais de programmes malveillants ou d’autres fichiers exécutables non signés
+- Lancer une enquête automatisée pour vérifier et corriger les menaces sur l’appareil et éventuellement sur d’autres appareils concernés
+- Limiter l’exécution de l’application aux fichiers exécutables signés par Microsoft uniquement, ce qui empêche toute activité de menace ultérieure par le biais de programmes malveillants ou d’autres fichiers exécutables non signés
 
 Pour en savoir plus sur la façon dont ces actions de réponse sont effectuées via Microsoft Defender pour le point de terminaison, consultez les actions de [réponse sur les appareils.](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
    
@@ -62,11 +62,11 @@ Pour en savoir plus sur la façon dont ces actions de réponse sont effectuées 
 Vous pouvez déployer l’action *de* mise en quarantaine sur les fichiers afin qu’ils soient automatiquement mis en quarantaine lorsqu’ils sont rencontrés. Lorsque vous sélectionnez cette action, vous pouvez choisir entre les colonnes suivantes pour identifier les fichiers de votre requête qui sont mis en quarantaine :
 
 - `SHA1` — Dans la plupart des tables de recherche avancées, il s’agit du SHA-1 du fichier affecté par l’action enregistrée. Par exemple, si un fichier a été copié, il s’agit du fichier copié.
-- `InitiatingProcessSHA1` — Dans la plupart des tables de recherche avancées, il s’agit du fichier responsable de l’initiative de l’action enregistrée. Par exemple, si un processus enfant a été lancé, il s’agit du processus parent. 
+- `InitiatingProcessSHA1` — Dans la plupart des tables de recherche avancées, il s’agit du fichier responsable du début de l’action enregistrée. Par exemple, si un processus enfant a été lancé, il s’agit du processus parent. 
 - `SHA256` — Il s’agit de l’équivalent SHA-256 du fichier identifié par la `SHA1` colonne.
 - `InitiatingProcessSHA256` — Il s’agit de l’équivalent SHA-256 du fichier identifié par la `InitiatingProcessSHA1` colonne.
 
-Pour en savoir plus sur la façon dont les actions de mise en quarantaine sont prises et sur la façon dont les fichiers peuvent être restaurés, consultez les actions de [réponse sur les fichiers.](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)
+Pour en savoir plus sur la façon dont les actions de mise en quarantaine sont prises et comment les fichiers peuvent être restaurés, consultez les [actions de réponse sur les fichiers.](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)
 
 >[!NOTE]
 >Pour localiser des fichiers et les mettre en quarantaine, les résultats de la requête doivent également inclure des valeurs en tant `DeviceId` qu’identificateurs d’appareil.  
@@ -82,6 +82,6 @@ Chaque action est enregistrée individuellement dans le centre de [l’action](m
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
-- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
+- [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Vue d’ensemble du centre de données](m365d-action-center.md)

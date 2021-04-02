@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 0eaf89b3f49d8b69cb7b36e4e25df90946c19e32
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dbb294cdb865fb01f931e2e9c3bc4f6afb3f1e09
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917206"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471033"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -36,27 +36,29 @@ ms.locfileid: "50917206"
 > Les informations sur cette page sont pour les administrateurs informatiques qui peuvent créer des stratégies de rétention et des étiquettes de rétention pour des raisons de conformité.
 
 Le volume et la complexité des données e-mails, documents, messages instantanés et autres de la majorité des organisations augmentent quotidiennement. Il est important de gérer et de gouverner efficacement ces informations, car vous devez :
-  
-- **respecter de façon proactive les réglementations du secteur et les stratégies internes** qui vous obligent à conserver du contenu pendant une période minimale. Par exemple, la loi Sarbanes-Oxley vous oblige à conserver certains types de contenu pendant sept ans. 
 
-- **réduire les risques en cas de litige ou de violation de la sécurité** en supprimant définitivement le contenu ancien qu’il n’est plus obligatoire de conserver ; 
-    
-- **aider votre organisation à partager efficacement les connaissances et à être plus agile** en vérifiant que vos utilisateurs traitent uniquement le contenu actuel et pertinent pour eux. 
-    
-La configuration des paramètres de rétention peut vous aider à atteindre tous ces objectifs. La gestion du contenu nécessite généralement deux actions :
-  
-- **Conservation** du contenu afin que celui-ci ne puisse pas être supprimé définitivement avant la fin de la période de rétention. 
-    
-- **Suppression** définitive du contenu à la fin de la période de rétention. 
-    
+- **respecter de façon proactive les réglementations du secteur et les stratégies internes** qui vous obligent à conserver du contenu pendant une période minimale. Par exemple, la loi Sarbanes-Oxley vous oblige à conserver certains types de contenu pendant sept ans.
+
+- **réduire les risques en cas de litige ou de violation de la sécurité** en supprimant définitivement le contenu ancien qu’il n’est plus obligatoire de conserver ;
+
+- **aider votre organisation à partager efficacement les connaissances et à être plus agile** en vérifiant que vos utilisateurs traitent uniquement le contenu actuel et pertinent pour eux.
+
+La configuration des paramètres de rétention peut vous aider à atteindre ces objectifs. La gestion du contenu nécessite généralement deux actions :
+
+| Action| Objectif |
+|:-----|:-----|
+|Conserver un contenu. | Empêcher la suppression définitive et rester disponible pour eDiscovery |
+|Supprimer un contenu | Supprimer définitivement un contenu de votre organisation|
 
 Avec ces deux actions de rétention, vous pouvez configurer les paramètres de rétention pour les résultats suivants :
 
 - Conservation uniquement : conserver le contenu définitivement ou pour une période spécifiée.
-- Suppression uniquement : supprimez le contenu après une période spécifiée.
-- Conservation puis suppression : conserver le contenu pendant une période spécifiée, puis le supprimer.
+- Suppression uniquement : supprimez un contenu après une période spécifiée.
+- Conservation puis suppression : conserver un contenu pendant une période spécifiée, puis le supprimer définitivement.
 
 Ces paramètres de rétention fonctionnent avec du contenu en place, ce qui vous permet d’éviter les charges liées à la création et à la configuration d’un espace de stockage supplémentaire pour conserver du contenu pour des raisons de conformité. Vous n’avez plus besoin non plus d’implémenter des processus personnalisés pour copier et synchroniser ces données.
+
+Utilisez ces sections pour en savoir plus sur le fonctionnement des stratégies de rétention et des étiquettes de rétention, le moment de leur utilisation, et comment elles se complètent. Mais si vous êtes prêt à commencer et à déployer des paramètres de rétention pour des scénarios courants, consultez [Prendre en main les stratégies de rétention et les étiquettes de rétention](get-started-with-retention.md).
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Fonctionnement des paramètres de rétention avec le contenu en place
 

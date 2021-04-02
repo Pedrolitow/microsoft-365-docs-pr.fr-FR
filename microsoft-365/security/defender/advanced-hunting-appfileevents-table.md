@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f25570916692c4568a6d09d92faaf57b0c155029
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b8b3b34e1b8535772d19f8ddd9f52c5c0a89292b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063601"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499348"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "51063601"
 Le tableau du schéma de recherche avancée contient des informations sur les activités liées aux fichiers dans les applications et services cloud surveillés par `AppFileEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!WARNING]
->Cette table sera bientôt retirée. Depuis le 7 mars 2021, la table ne `AppFileEvents` journalisation plus les enregistrements. Les utilisateurs qui recherchent des activités liées aux fichiers dans les services cloud à la date et au-delà de cette date doivent utiliser la table [CloudAppEvents](advanced-hunting-cloudappevents-table.md) à la place. <br><br>Veillez à rechercher les requêtes et les règles de détection personnalisées qui utilisent toujours le tableau et à les `AppFileEvents` modifier pour utiliser le `CloudAppEvents` tableau. Pour plus d’informations sur la conversion des requêtes affectées, voir La recherche dans les activités d’application cloud avec la recherche avancée [Microsoft 365 Defender.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
+>Cette table sera bientôt retirée. Depuis le 7 mars 2021, la table ne `AppFileEvents` journalisation plus les enregistrements. Les utilisateurs qui recherchent des activités liées aux fichiers dans les services cloud à la date et au-delà de cette date doivent utiliser la table [CloudAppEvents](advanced-hunting-cloudappevents-table.md) à la place. <br><br>Veillez à rechercher des requêtes et des règles de détection personnalisées qui utilisent toujours la table et modifiez-les `AppFileEvents` pour utiliser le `CloudAppEvents` tableau. Pour plus d’informations sur la conversion des requêtes affectées, voir La recherche dans les activités d’application cloud avec la recherche avancée [Microsoft 365 Defender.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
 
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
@@ -63,9 +63,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceType` | string | Type d’appareil | 
 | `OSPlatform` | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. |
 | `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
-| `Port` | string | Port TCP utilisé lors de la communication  |
+| `Port` | string | Port TCP utilisé pendant la communication  |
 | `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
-| `DestinationIPAddress` | string | Adresse IP du périphérique exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
 | `DestinationPort` | string | Port de destination des communications réseau associées |
 | `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
 | `Isp` | string | Fournisseur de services Internet (ISP) associé à l’adresse IP du point de terminaison |

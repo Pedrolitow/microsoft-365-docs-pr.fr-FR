@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 326e508fbf5a0e968e890f5727a6ae542de437c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 629e18c7387f6063254f3482f93a5e17023c7316
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186004"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499944"
 ---
 # <a name="monitor-web-browsing-security"></a>Surveiller la sécurité de navigation web
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186004"
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-La protection Web vous permet de surveiller la sécurité de navigation web de votre organisation via des rapports sous Rapports > **protection Web** dans le Centre de sécurité Microsoft Defender. Le rapport contient des cartes qui fournissent des statistiques sur la détection des menaces web.
+La protection Web vous permet de surveiller la sécurité de navigation web de votre organisation via des rapports sous Rapports **> protection Web** dans le Centre de sécurité Microsoft Defender. Le rapport contient des cartes qui fournissent des statistiques sur la détection des menaces web.
 
 - Détections de protection contre les **menaces web** au fil du temps : cette carte tendance affiche le nombre de menaces web détectées par type au cours de la période sélectionnée (30 derniers jours, 3 derniers mois, 6 derniers mois)
  
@@ -68,7 +68,7 @@ Sélectionnez un domaine pour afficher la liste des périphériques qui ont tent
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Vue d’ensemble de la protection Web](web-protection-overview.md)
-- [Filtrage de contenu Web](web-content-filtering.md)
+- [Vue d’ensemble de la protection web](web-protection-overview.md)
+- [Filtrage du contenu web](web-content-filtering.md)
 - [Protection contre les menaces web](web-threat-protection.md)
 - [Répondre aux menaces web](web-protection-response.md)

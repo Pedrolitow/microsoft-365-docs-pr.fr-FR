@@ -9,20 +9,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 599eab29628d11d67843f89a0eb59bb4db1e66ad
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 2ebc826e21246381d3220855f7e8cb01741f12e9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185454"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499373"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>Comprendre le rapport d’analyste dans l’analyse des menaces
 
@@ -46,7 +46,7 @@ Chaque section du rapport d’analyste est conçue pour fournir des informations
 
 | Section Rapport | Description |
 |--|--|
-| Résumé exécutif | Vue d’ensemble de la menace, y compris la première fois qu’elle a été vue, ses motivations, les événements notables, les cibles principales et des outils et techniques distincts. Vous pouvez utiliser ces informations pour évaluer plus en détail comment hiérarchiser la menace dans le contexte de votre secteur d’activité, de votre emplacement géographique et de votre réseau. |
+| Résumé exécutif | Vue d’ensemble de la menace, y compris la première fois qu’elle a été vue, ses motivations, les événements notables, les cibles principales et des outils et techniques distincts. Vous pouvez utiliser ces informations pour évaluer plus en détail comment hiérarchiser la menace dans le contexte de votre secteur, de votre emplacement géographique et de votre réseau. |
 | Analyse | Informations techniques sur les menaces, y compris les détails d’une attaque et la façon dont les attaquants peuvent utiliser une nouvelle technique ou une nouvelle surface d’attaque | 
 | Techniques MITRE ATT&CK observées | Comment les techniques observées sont m maprées à l’infrastructure d&[ATT MITRE](https://attack.mitre.org/) | 
 | [Atténuations](#apply-additional-mitigations) | Recommandations qui peuvent arrêter ou réduire l’impact de la menace. Cette section inclut également les atténuations qui ne sont pas suivis dynamiquement dans le cadre du rapport d’analyse des menaces. |
