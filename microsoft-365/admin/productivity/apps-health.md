@@ -2,8 +2,8 @@
 title: Score de productivité Microsoft - Santé des applications Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Détails de l’état d’état de Microsoft 365 Apps : la technologie connaît le score de productivité.'
-ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562942"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580869"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Intégrité de Microsoft 365 Apps – expériences technologiques
 
@@ -74,7 +74,7 @@ Nous fournissons également des informations de prise en charge qui vous permett
 :::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Graphique montrant le nombre d’appareils dans le canal actuel pris en charge.":::
 
 1. **En-tête :**  Met en évidence le pourcentage d’appareils sur le canal actuel qui exécutent des versions de Microsoft 365 Apps pris en charge
-1. **Corps :**  Fournit des informations sur la valeur des appareils exécutant les applications Microsoft 365 sur le canal recommandé.
+1. **Corps :**  Fournit des informations sur la valeur des appareils exécutant des applications Microsoft 365 sur le canal recommandé.
 1. **Visualisation :**  La répartition dans la visualisation représente le pourcentage d’appareils sur les versions les plus récentes et les versions prise en charge des applications Microsoft 365 sur différents canaux), comme suit :
     - **Versions pris en charge :** La barre bleue représente le pourcentage d’appareils s’exécutant sur la version prise en charge des applications Microsoft 365.
     - **Dernières mises à jour :** La barre de couleurs sarcelles représente le pourcentage d’appareils sur les dernières mises à jour.
@@ -82,13 +82,13 @@ Nous fournissons également des informations de prise en charge qui vous permett
 
 ### <a name="devices-running-latest-and-supported-versions"></a>Appareils exécutant les versions les plus récentes et les plus récentes
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Graphique montrant le nombre d’appareils exécutant les versions les plus récentes et les plus récentes des applications.":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="Graphique montrant le nombre d’appareils exécutant les versions les plus récentes et les plus pris en charge des applications.":::
 
 1. **En-tête :**  Met en évidence le pourcentage d’appareils exécutant des versions et des appareils pris en charge exécutant les versions les plus récentes.
 1. **Corps :**  Fournit des informations sur la valeur d’exécution des appareils sur les canaux recommandés et sur les versions les plus récentes/pris en charge.
-1. **Visualisation :** La répartition dans la visualisation est destinée à représenter l’étendue du nombre d’appareils exécutant les versions prise en charge et les versions les plus récentes des applications Microsoft 365) :
+1. **Visualisation :** La répartition de la visualisation est destinée à représenter l’étendue du nombre d’appareils exécutant des versions prise en charge et des versions les plus récentes des applications Microsoft 365) :
     - **Versions pris en charge :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage d’appareils exécutant la version prise en charge des applications Microsoft 365.
-        - Numérateur : nombre d’appareils sur les versions prise en charge des applications Microsoft 365 au cours des 28 derniers jours
+        - Numérateur : nombre d’appareils sur les versions des applications Microsoft 365 prise en charge au cours des 28 derniers jours
         - Dénominateur : nombre d’appareils utilisant les applications Microsoft 365 au cours des 28 derniers jours
     - **Versions les plus récentes :** La partie sarcelle (couleur) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage d’appareils exécutant des versions récentes des applications Microsoft 365.
         - Numérateur : nombre d’appareils sur les versions récentes des applications Microsoft 365 au cours des 28 derniers jours
@@ -103,7 +103,7 @@ Ce graphique montre la courbe de tendance des appareils exécutant les versions 
 
 ## <a name="devices-in-your-organization"></a>Appareils de votre organisation
 
-Cette section vous aide à agir sur les mesures sur qui vous souhaitez vous concentrer en fournissant des informations pertinentes à toutes les mesures d’état des applications Microsoft 365 : expériences technologiques.
+Cette section vous aide à prendre en compte les mesures sur qui vous souhaitez vous concentrer en fournissant des informations pertinentes à toutes les mesures d’état des applications Microsoft 365 : expériences technologiques.
 
 Les colonnes suivantes sont présentées dans le tableau au niveau canal/version :
 

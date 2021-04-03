@@ -2,8 +2,8 @@
 title: Configurer Outlook pour lire les e-mails
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Découvrez comment configurer un compte de messagerie dans Outlook pour Windows et Mac, et comment installer des applications Office et accéder aux e-mails en ligne.
-ms.openlocfilehash: e17e532afca0a552b7e0e2565cd34e9dda256421
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: c4c0f845fcdba1011e0c025ff0e29a98ba7046d5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779988"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580893"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurer Outlook pour lire les e-mails
 
@@ -33,7 +33,7 @@ Votre abonnement Microsoft 365 est livré avec un outlook basé sur le web, mais
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Configurer un compte de messagerie dans Outlook
 
-La première fois que vous ouvrez Outlook, un Assistant Compte automatique s’ouvre. Si ce n’est pas **le cas, choisissez Fichier,** **puis Ajoutez un compte.**
+La première fois que vous ouvrez Outlook, un Assistant Compte automatique s’ouvre. Si ce n’est pas le **cas, choisissez Fichier,** **puis Ajoutez un compte.**
   
 1. On the **E-mail Accounts** page, choose **Next** \> **Add Account**.
     
@@ -71,7 +71,7 @@ Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applic
   
 ## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>Comment savoir si mon abonnement inclut des applications Office ?
 
-Microsoft 365 Business Standard et Microsoft 365 Apps for business incluent des applications Office. Pour plus d’informations, [voir les plans Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=723731)pour les entreprises ou Office [365 Entreprise.](https://go.microsoft.com/fwlink/p/?LinkId=800029)
+Microsoft 365 Business Standard et Microsoft 365 Apps for business incluent les applications Office. Pour plus d’informations, [voir les plans Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=723731)pour les entreprises ou Office [365 Entreprise.](https://go.microsoft.com/fwlink/p/?LinkId=800029)
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>Comment déterminer l’abonnement dont je suis abonné ?
 

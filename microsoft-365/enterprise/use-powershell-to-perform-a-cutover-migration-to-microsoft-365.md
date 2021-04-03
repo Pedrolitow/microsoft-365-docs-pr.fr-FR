@@ -1,7 +1,7 @@
 ---
 title: Utilisation de PowerShell pour effectuer une migration à basculement vers Microsoft 365
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Découvrez comment utiliser PowerShell pour déplacer le contenu d’un système de courrier source en une seule fois en faisant une migration à cutover vers Microsoft 365.
-ms.openlocfilehash: 60bd3cb246e04aba37be06f7a951abbf25708412
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e59ac4d590208e0faed22e94cabe05601b17f18
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924803"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581057"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration à basculement vers Microsoft 365
 
@@ -95,7 +95,7 @@ Pour la liste complète des commandes de migration, voir [Cmdlets de déplacemen
 
 - **Désactivez la messagerie unifiée.** Si les boîtes aux lettres locales que vous migrez sont activées pour la messagerie unifiée, vous devez désactiver cette dernière avant de procéder à la migration. Une fois la migration terminée, vous pouvez activer la messagerie unifiée sur les boîtes aux lettres.
 
-- **Groupes de sécurité et délégués** Le service de migration de messagerie ne peut pas détecter si les groupes Active Directory locaux sont des groupes de sécurité ou non, il ne peut donc pas fournir de groupes migrés en tant que groupes de sécurité dans Microsoft 365. Si vous souhaitez avoir des groupes de sécurité dans votre client Microsoft 365, vous devez d’abord mettre en service un groupe de sécurité à messagerie vide dans votre client Microsoft 365 avant de commencer la migration àover. En outre, cette méthode de migration déplace uniquement les boîtes aux lettres, les utilisateurs de messagerie, les contacts de messagerie et les groupes à extension messagerie. Si un autre objet Active Directory, tel que l’utilisateur qui n’est pas migré vers Microsoft 365, est affecté en tant que responsable ou délégué à un objet en cours de migration, il doit être supprimé de l’objet avant la migration.
+- **Groupes de sécurité et délégués** Le service de migration de messagerie ne peut pas détecter si les groupes Active Directory locaux sont des groupes de sécurité ou non, il ne peut donc pas fournir de groupes migrés en tant que groupes de sécurité dans Microsoft 365. Si vous souhaitez avoir des groupes de sécurité dans votre client Microsoft 365, vous devez d’abord mettre en service un groupe de sécurité à messagerie vide dans votre client Microsoft 365 avant de commencer la migration à cutover. En outre, cette méthode de migration déplace uniquement les boîtes aux lettres, les utilisateurs de messagerie, les contacts de messagerie et les groupes à extension messagerie. Si un autre objet Active Directory, tel que l’utilisateur qui n’est pas migré vers Microsoft 365, est affecté en tant que responsable ou délégué à un objet en cours de migration, il doit être supprimé de l’objet avant la migration.
 
 ### <a name="step-2-create-a-migration-endpoint"></a>Étape 2 : Créez un point de terminaison de migration
 <a name="BK_Step2"> </a>
@@ -219,7 +219,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 
     Pour plus d’informations, voir [Ajouter des enregistrements DNS pour connecter votre domaine.](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
-- **Désactivez des serveurs Exchange locaux.** Une fois que vous avez vérifié que tous les messages électroniques sont acheminés directement vers les boîtes aux lettres Microsoft 365 et que vous n’avez plus besoin de gérer votre organisation de messagerie sur site ou que vous ne prévoyez pas d’implémenter une solution DSO (Single Sign-On), vous pouvez désinstaller Exchange de vos serveurs et supprimer votre organisation Exchange sur site.
+- **Désactivez des serveurs Exchange locaux.** Une fois que vous avez vérifié que tous les messages électroniques sont acheminés directement vers les boîtes aux lettres Microsoft 365 et que vous n’avez plus besoin de gérer votre organisation de messagerie sur site ou que vous ne prévoyez pas d’implémenter une solution DSO (Single Sign-on), vous pouvez désinstaller Exchange de vos serveurs et supprimer votre organisation Exchange sur site.
 
     Pour plus d’informations, voir les commandes suivantes :
 

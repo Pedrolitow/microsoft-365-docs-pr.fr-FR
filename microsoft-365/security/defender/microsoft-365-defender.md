@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f789053e0922ee81155a243bbaa7b3ab5b0f6d87
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064657"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581081"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "51064657"
 **S’applique à :**
 - Microsoft 365 Defender
 
-> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou exécuter votre projet pilote en [production.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Microsoft 365 Defender est une suite de défense d’entreprise pré-et post-violation unifiée qui coordonne en natif la détection, la prévention, les examens et la réponse sur les points de terminaison, les identités, les messages électroniques et les applications pour fournir une protection intégrée contre les attaques sophistiquées.
@@ -44,7 +44,7 @@ Avec la solution Microsoft 365 Defender intégrée, les professionnels de la sé
 
 
 <center><h2>Services Microsoft 365 Defender</center></h2>
-<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender pour point de terminaison</b></center></a></td>
+<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender pour le point de terminaison</b></center></a></td>
 <td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Microsoft Defender pour Office 365</b></center></a></td>
 <td><center><b><a href="/azure-advanced-threat-protection/"><b>Microsoft Defender pour l’identité</b></a></center></td>
 <td><center><b><a href="/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
@@ -54,9 +54,9 @@ Avec la solution Microsoft 365 Defender intégrée, les professionnels de la sé
 
 ## <a name="microsoft-365-defender-interactive-guide"></a>Guide interactif de Microsoft 365 Defender
 
-Dans ce guide interactif, vous allez découvrir comment protéger votre organisation avec Microsoft 365 Defender. Vous verrez comment Microsoft 365 Defender peut vous aider à détecter les risques de sécurité, à examiner les attaques à votre organisation et à prévenir automatiquement les activités dangereuses.
+Dans ce guide interactif, vous allez découvrir comment protéger votre organisation avec Microsoft 365 Defender. Vous verrez comment Microsoft 365 Defender peut vous aider à détecter les risques de sécurité, à examiner les attaques à votre organisation et à empêcher automatiquement les activités dangereuses.
 
-> [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
+[Consultez le guide interactif](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 
@@ -71,8 +71,8 @@ La suite Microsoft 365 Defender protège :
 La couche unique entre produits de Microsoft 365 Defender complète les composants de suite individuels pour :
 - Protéger contre les attaques et coordonner les réponses coordonnées dans la suite par le biais du partage de signal et des actions automatisées
 - Narratez l’intégralité de l’attaque sur les alertes, les comportements et le contexte des produits pour les équipes de sécurité en joignant les données sur les alertes, les événements suspects et les ressources impactées aux « incidents »
-- Automatiser la réponse à la compromission en déclenchant une réparation automatique des biens touchés par le biais de corrections automatisées
-- Permettre aux équipes de sécurité d’effectuer une recherche détaillée et efficace des menaces sur les points de terminaison et les données Office
+- Automatiser la réponse à la compromission en déclenchant la réparation automatique des biens touchés via une correction automatisée
+- Permettre aux équipes de sécurité d’effectuer un recherche de menaces détaillée et efficace sur les données du point de terminaison et d’Office
 
 ![Image de la page vue d’ensemble de l’incident](../../media/overview-incident.png) <br>
 Incident entre produits (vue d’ensemble)
@@ -95,4 +95,4 @@ Les fonctionnalités de produits croisés Microsoft 365 Defender sont les suivan
 ## <a name="get-started"></a>Prise en main
 Les conditions de licence de Microsoft 365 Defender doivent être remplies pour que vous pouvez activer le service dans le Centre de sécurité Microsoft 365 [sur security.microsoft.com](https://security.microsoft.com). Pour plus d’informations, voir :
 - [Conditions de licence](prerequisites.md#licensing-requirements)
-- [Activer Microsoft 365 Defender](m365d-enable.md)
+- [Activer Microsoft 365 Defender](m365d-enable.md)

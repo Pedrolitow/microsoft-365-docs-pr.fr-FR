@@ -2,8 +2,8 @@
 title: Trouver votre partenaire ou revendeur
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Découvrez comment trouver un nouveau partenaire Microsoft 365 ou obtenir des informations de contact pour un partenaire avec qui vous avez travaillé dans le passé. '
-ms.openlocfilehash: fad16990df7783908f59a6e3dd59cb0a1a13572e
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 189eda83f3eca957e6f9fa720e2f6ccdd07db171
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780108"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580941"
 ---
 # <a name="find-your-partner-or-reseller"></a>Trouver votre partenaire ou revendeur
 
@@ -55,7 +55,7 @@ Si vous êtes prêt à acheter ou renouveler Microsoft 365 via le programme de l
   
 2. Si vous avez un partenaire, son nom et sa relation avec votre organisation sont répertoriés ici. Pour afficher les informations de contact du partenaire (numéro de téléphone et adresse e-mail), sélectionnez le nom du partenaire.
     
-## <a name="more-resources"></a>Autres ressources
+## <a name="more-resources"></a>Plus de ressources
 
 [Ressources et formation sur le Centre de gestion des licences en volume Microsoft](https://go.microsoft.com/fwlink/?LinkId=613306)
   

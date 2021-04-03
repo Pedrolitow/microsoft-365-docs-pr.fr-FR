@@ -2,8 +2,8 @@
 title: Score de productivité Microsoft - Mobilité
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,13 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: 'Détails de la mobilité : le niveau de productivité des utilisateurs.'
-ms.openlocfilehash: e632bb4960ef36acf2c81373f34947ababc8b903
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+description: 'Détails de la mobilité : le score de productivité des utilisateurs.'
+ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712566"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580845"
 ---
 # <a name="mobility--people-experiences"></a>Mobilité : expériences de personnes
 
@@ -47,15 +47,15 @@ Une fois que les utilisateurs ont été actifs dans les produits ci-dessus au mo
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Importance du score&#39;mobilité de votre organisation
 
-L’un des piliers fondamentaux de la productivité organisationnelle est la capacité des personnes à travailler de façon flexible où qu’elles soient. Avec Microsoft 365, les personnes peuvent rester connectées à Outlook, Microsoft Teams et Yammer. Les utilisateurs peuvent également collaborer en toute transparence sur du contenu à l’aide de Word, Excel, PowerPoint et OneNote à partir de n’importe quel emplacement et plateforme.
+L’un des piliers fondamentaux de la productivité organisationnelle est la capacité des personnes à travailler de manière flexible où qu’elles soient. Avec Microsoft 365, les personnes peuvent rester en contact avec Outlook, Microsoft Teams et Yammer. Les utilisateurs peuvent également collaborer en toute transparence sur du contenu à l’aide de Word, Excel, PowerPoint et OneNote à partir de n’importe quel emplacement et plateforme.
 
 ## <a name="how-we-calculate-the-score"></a>Comment calculer le score
 
-Nous fournissons un aperçu principal de l’expérience qui contient les mesures clés pour cette catégorie. Ensuite, une infrastructure de notation détaillée ci-dessous est utilisée pour ces mesures afin de calculer le score de votre organisation.
+Nous fournissons un aperçu principal de l’expérience qui contient les mesures clés pour cette catégorie. Ensuite, une infrastructure de notation détaillée ci-dessous est utilisée pour calculer le score de votre organisation.
 
 ### <a name="primary-insight"></a>Informations principales
 
-Microsoft 365 permet aux utilisateurs de travailler avec souplesse dans les applications, notamment Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Yammer et Skype Entreprise. Les utilisateurs peuvent également travailler n’importe où à l’aide d’une expérience transparente sur les plateformes de bureau, web et mobiles. L’aperçu principal examine les produits activés pour les membres de votre organisation et le nombre de ces personnes actives sur au moins deux plateformes.
+Microsoft 365 permet aux utilisateurs de travailler avec souplesse entre les applications, notamment Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Yammer et Skype Entreprise. Les utilisateurs peuvent également travailler n’importe où à l’aide d’une expérience transparente sur les plateformes de bureau, web et mobiles. Le principal aperçu porte sur les produits activés pour les membres de votre organisation et sur le nombre de ces personnes actives sur au moins deux plateformes.
 
 :::image type="content" source="../../media/primary-mobility.png" alt-text="Graphique présentant des informations principales sur la mobilité : le score de productivité des utilisateurs.":::
 
@@ -81,7 +81,7 @@ Le score de mobilité de votre organisation mesure au niveau de l’organisation
 
 Les scores ne sont pas fournis au niveau de l’utilisateur individuel.
 
-## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Découvrir le fonctionnement de votre organisation sur les plateformes et les emplacements
+## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Explorer le fonctionnement de votre organisation sur les plateformes et les emplacements
 
 Nous vous fournissons également des informations qui vous permettent de mieux comprendre le fonctionnement des membres de votre organisation sur plusieurs plateformes. Ces mesures supplémentaires ne contribuent pas directement à votre score de productivité, mais vous aident à créer un plan d’action dans le cadre de votre transformation numérique.  
 
@@ -93,7 +93,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 2. **Corps :** Fournit des informations sur la valeur de l’utilisation d’Outlook sur les appareils mobiles pour vous aider à rester connecté à partir de n’importe où sur le courrier électronique.
 3. **Visualisation :** Indique le pourcentage de personnes actives sur Outlook et qui utilisent une ou plusieurs plateformes :
       - **Plusieurs plateformes :**
-        - Numérateur : nombre de personnes qui ont utilisé Outlook sur au moins deux plateformes de bureau, mobiles ou web au cours des 28 derniers jours.
+        - Numérateur : nombre de personnes ayant utilisé Outlook sur au moins deux plateformes de bureau, mobiles ou web au cours des 28 derniers jours.
         - Dénominateur : nombre de personnes qui ont utilisé Outlook au moins une fois au cours des 28 derniers jours.
       - **Bureau uniquement :**
         - Numérateur : nombre de personnes qui ont utilisé Outlook uniquement sur une plateforme de bureau au cours des 28 derniers jours.
@@ -116,7 +116,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
         - Numérateur : nombre de personnes qui ont utilisé Teams au cours des 28 derniers jours sur au moins 2 des plateformes suivantes : bureau, mobile ou web.
         - Dénominateur : nombre de personnes qui ont utilisé Microsoft Teams au moins une fois au cours des 28 derniers jours.
     - **Bureau uniquement :**
-        - Numérateur : nombre de personnes ayant utilisé Microsoft Teams uniquement sur une plateforme de bureau au cours des 28 derniers jours
+        - Numérateur : nombre de personnes qui ont utilisé Microsoft Teams uniquement sur une plateforme de bureau au cours des 28 derniers jours
         - Dénominateur : nombre de personnes ayant utilisé Teams au moins une fois au cours des 28 derniers jours
     - **Web uniquement :**
         - Numérateur : nombre de personnes ayant utilisé Microsoft Teams uniquement sur une plateforme web au cours des 28 derniers jours
@@ -125,7 +125,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
         - Numérateur : nombre de personnes ayant utilisé Microsoft Teams uniquement sur une plateforme mobile au cours des 28 derniers jours
         - Dénominateur : nombre de personnes ayant utilisé Teams au moins une fois au cours des 28 derniers jours
 
-### <a name="use-of-microsoft-365-apps-across-platforms"></a>Utilisation des applications Microsoft 365 sur plusieurs plateformes
+### <a name="use-of-microsoft-365-apps-across-platforms"></a>Utilisation des applications Microsoft 365 sur les plateformes
 
 :::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Graphique shows number of people who use Microsoft 365 apps on multiple or single platforms.":::
 
@@ -143,7 +143,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 
 1. **En-tête :** Indique le pourcentage de personnes travaillant uniquement à domicile ou à l’extérieur du réseau de leur entreprise.
 2. **Corps :** Met en évidence l’importance de faciliter le travail à distance pour les personnes qui n’ont pas accès aux bureaux physiques de votre organisation.
-3. **Visualisation :** Affiche une courbe de tendance pour le pourcentage quotidien de personnes qui travaillent uniquement à distance, ainsi que pour le pourcentage quotidien de personnes qui travaillent également sur site. Les utilisateurs sont considérés sur site s’ils effectuent au moins trois heures d’activité dans microsoft 365 Apps dans une journée.
+3. **Visualisation :** Affiche une courbe de tendance pour le pourcentage quotidien de personnes qui travaillent uniquement à distance, ainsi que pour le pourcentage quotidien de personnes qui travaillent également sur site. Les utilisateurs sont considérés sur site s’ils effectuent au moins trois heures d’activité dans Microsoft 365 Apps dans une journée.
 
 ## <a name="related-content"></a>Contenu connexe
 

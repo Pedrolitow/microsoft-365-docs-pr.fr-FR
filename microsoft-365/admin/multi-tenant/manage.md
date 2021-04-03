@@ -2,8 +2,8 @@
 title: Gérer plusieurs clients
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser le s switcher client et les affichages multi-locataires.
-ms.openlocfilehash: 0b73665159fbc6ce2d1aa99ba1518dc257d88ec8
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 21b51a5e0c79496bf73e60c04aea68def3cf8ad6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790137"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580881"
 ---
 # <a name="multi-tenant-management"></a>Gestion multi-locataires
 
@@ -55,11 +55,11 @@ La gestion multi-client offre une forme unifiée de gestion qui permet aux admin
   - Vous pouvez également épingler votre client le plus souvent visité en haut de la liste.
 
 
-Si vous avez marqué un client comme favori, il est automatiquement développé afin que vous pouvez immédiatement afficher les détails de l’état.
+Si vous avez marqué un client comme favori, il est automatiquement développé afin de pouvoir afficher immédiatement les détails de l’état.
 
 ## <a name="view-service-health-for-all-accounts"></a>Afficher l’état du service pour tous les comptes
 
-L’affichage d’état du service vous indique si des incidents ou des conseils affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés.
+L’affichage d’état du service vous indique si des incidents ou des avis affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés.
 
 1. Dans le Centre d’administration Microsoft 365, dans l’affichage multi-clients, sélectionnez **État du service.**
 2. Dans l’affichage agrégé de la **page** État du service, vous pouvez également voir le nombre total d’incidents, le nombre total d’avis affectant l’un des clients gérés et le nombre de services avec des incidents actifs. Vous pouvez également voir combien de vos locataires sont affectés par les incidents et les avis.
@@ -69,7 +69,7 @@ L’affichage d’état du service vous indique si des incidents ou des conseils
     - Vous pouvez passer en revue les problèmes sous **tous les services** ou tous les **onglets** problèmes.
 
     :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Page d’état du service multi-client.":::
-1. Sélectionnez un incident sous  l’onglet Tous les **services** ou Tous les problèmes pour obtenir plus d’informations sur tout incident sous l’onglet **Vue d’ensemble.** Sélectionnez **l’onglet Locataires affectés** pour obtenir la liste des locataires concernés.
+1. Sélectionnez un incident sous l’onglet Tous les **services** ou Tous **les** problèmes pour obtenir plus d’informations sur tout incident sous l’onglet **Vue d’ensemble.** Sélectionnez **l’onglet Locataires affectés** pour obtenir la liste des locataires concernés.
 
     :::image type="content" source="../../media/tenantsaffected.png" alt-text="Liste des clients affectés par un problème d’état du service.":::
 

@@ -2,8 +2,8 @@
 title: Mineurs et acquisition de modules dans le Store
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez les réglementations du Règlement général sur la protection des données (R GDPR) qui régissent les données personnelles des mineurs.
-ms.openlocfilehash: c49ea719bc85166cc8082200eb833273b0ab5835
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e7f53a5a6b64f29f5029f0080fef44439c926edb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915253"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580917"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>Mineurs et acquisition de modules dans le Store
 
@@ -48,7 +48,7 @@ Pour être conforme au R GDPR pour les mineurs, vous devez vous assurer que l’
 |Office 2016 pour Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 pour Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 pour Mac  <br/> |16.11.18020200  <br/> |
-|Office pour le web  <br/> |N/A  <br/> |
+|Office pour le web  <br/> |S/O  <br/> |
    
  **Pour Outlook**: 
   
@@ -59,7 +59,7 @@ Pour être conforme au R GDPR pour les mineurs, vous devez vous assurer que l’
 |Office 2016 pour Mac  <br/> |16.0.9318.1000  <br/> |
 |Outlook Mobile pour iOS  <br/> |2.75.0  <br/> |
 |Outlook Mobile pour Android  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |N/A  <br/> |
+|Outlook.com  <br/> |S/O  <br/> |
 
  **Conditions requises pour Office 2013**
   

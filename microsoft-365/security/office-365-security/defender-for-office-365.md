@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec60fc7063bdd4a2656385ed86098d6ae2b4abc0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dad2722a1f9e99fad53c83348d049fa9a60f8b62
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204406"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580989"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
@@ -52,7 +52,7 @@ Microsoft Defender pour Office 365 protège votre organisation contre les mena
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Guide interactif pour Microsoft Defender pour Office 365
 Dans ce guide interactif, vous découvrirez comment protéger votre organisation à l’aide de Microsoft Defender pour Office 365. Vous découvrirez comment Defender pour Office 365 peut vous aider à définir les stratégies de protection, analyser les menaces pour votre organisation et répondre aux attaques.
 
-> [!VIDEO https://aka.ms/MSDO-IG]
+[Consulter le guide interactif](https://aka.ms/MSDO-IG)
 
 ## <a name="getting-started"></a>Prise en main
 
@@ -97,6 +97,8 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurer les stratégies de Microsoft Defender pour Office 365
 
 Avec Microsoft Defender pour Office 365 – Protection avancée contre les menaces, l’équipe de sécurité de votre organisation peut configurer la protection en définissant des stratégies dans le Centre de sécurité et de conformité (se référer à la <https://protection.office.com> \> **gestion des menaces** \> **dans la stratégie**).
+
+Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=vivvTmWJ_3c). 
 
 > [!TIP]
 > Consultez [Se protéger contre les menaces](protect-against-threats.md) pour définir une brève liste de stratégies.

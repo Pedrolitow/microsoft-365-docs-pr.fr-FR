@@ -2,8 +2,8 @@
 title: Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin de pouvoir utiliser le déploiement centralisé pour déployer des add-ins Office.
-ms.openlocfilehash: c9f2879e989085042758cc1c5385bea45427e7ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1516a10932158ba137f58900e0c19c5fea3bd119
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915457"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580953"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -35,7 +35,7 @@ Une déploiement centralisé offre les avantages suivants :
   
 - Un administrateur général peut affecter un add-in directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation.
     
-- Au démarrage de l’application Office concernée, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de l’application, celui-ci apparaît automatiquement dans le ruban dans l’application Office.
+- Lorsque l’application Office concernée démarre, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de l’application, celui-ci apparaît automatiquement dans le ruban dans l’application Office.
     
 - Les add-ins n’apparaissent plus pour les utilisateurs si l’administrateur le met hors service ou le supprime, ou si l’utilisateur est supprimé d’Azure Active Directory ou d’un groupe à qui le module est affecté.
 
@@ -43,7 +43,7 @@ Le déploiement centralisé prend en charge trois plateformes de bureau pour les
 
 L’ouverture d’un client pour tous les utilisateurs peut prendre jusqu’à 24 heures.
   
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent les références (SSO) Microsoft 365 Entreprise : E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium (et sont signés dans Office à l’aide de leur ID d’organisation) et qu’ils ont des boîtes aux lettres Exchange Online et Exchange Online actives. Votre annuaire d’abonnement doit être dans Azure Active Directory ou fédéré.
 Vous pouvez afficher les exigences spécifiques d’Office et d’Exchange ci-dessous, ou utiliser le contrôle de compatibilité du déploiement [centralisé.](#centralized-deployment-compatibility-checker)
@@ -88,7 +88,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
   
 #### <a name="run-the-compatibility-checker"></a>Exécuter le contrôle de compatibilité
   
-1. Démarrez une fenêtre avec PowerShell.exe élevée.
+1. Démarrez une fenêtre PowerShell.exe avec élévation de PowerShell.exe.
     
 2. Exécutez la commande suivante :
 
@@ -101,7 +101,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   Cette commande vous demande  *_TenantDomain_* (par exemple, *TailspinToysIncorporated.onmicrosoft). </span> com*) et  *_les informations d’identification TenantAdmin_* (utilisez vos informations d’identification d’administrateur global), puis demande le consentement.
+   Cette commande vous demande  *_TenantDomain_* (par exemple, *TailspinToysIncorporated.onmicrosoft). </span> com*) et  *_Les informations d’identification TenantAdmin_* (utilisez vos informations d’identification d’administrateur global), puis demande le consentement.
     
    > [!NOTE]
    > Selon le nombre d'utilisateurs dans votre client, l'exécution du vérificateur peut prendre quelques minutes ou plusieurs heures. 
@@ -151,7 +151,7 @@ Vous pouvez également utiliser l'API Graph Azure Active Directory pour exécute
   
 ### <a name="contacting-microsoft-for-support"></a>Contacter Microsoft pour obtenir une assistance
 
-Si vous ou vos utilisateurs rencontrez des problèmes de chargement du add-in lors de l’utilisation des applications Office pour le web (Word, Excel, etc.), qui ont été déployées de manière centralisée, vous devrez peut-être contacter le support Microsoft[(](../contact-support-for-business-products.md)découvrez comment ). Fournissez les informations suivantes sur votre environnement Microsoft 365 dans le ticket de support.
+Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-in lors de l’utilisation des applications Office pour le web (Word, Excel, etc.), qui ont été déployées de manière centralisée, vous devrez peut-être contacter le support Microsoft[(](../contact-support-for-business-products.md)découvrez comment ). Fournissez les informations suivantes sur votre environnement Microsoft 365 dans le ticket de support.
   
 |**Plateforme**|**Informations de débogage**|
 |:-----|:-----|
