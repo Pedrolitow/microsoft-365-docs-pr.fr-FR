@@ -2,8 +2,8 @@
 title: Gérer les stratégies d’appareil Windows 10 Professionnel avec Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment gérer les stratégies d’appareil Windows 10 Professionnel avec Microsoft 365 Business Premium.
-ms.openlocfilehash: 8d3e5107c0b2dfe3a84f31b98d9bd3ff8f7c5e4f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0f7cfff227e1ab4ea992414b513e341adbd9ef22
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422122"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578686"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>Gérer les stratégies d’appareil Windows 10 Professionnel
 
@@ -38,11 +38,11 @@ Vous pouvez utiliser Microsoft 365 Business pour vous assurer que l’antivirus 
 
 1. Connectez-vous au Centre d’administration Microsoft 365.
 1. Sous **Stratégies,** choisissez Ajouter une stratégie.
-1. Dans le **volet Ajouter une** stratégie, entrez un nom sous nom de stratégie, puis sélectionnez Configuration de l’appareil Windows **10** sous **Type de stratégie.** 
+1. Dans le volet Ajouter **une** stratégie, entrez un nom sous nom de **stratégie,** puis sélectionnez Configuration de l’appareil **Windows 10** sous **Type de stratégie.**
 1. Sélectionnez **Sécuriser les appareils Windows 10** pour voir les sous-paramètres.
 1. Veillez à protéger les PC contre les virus et autres menaces à l’aide de **l’antivirus Windows Defender** et que les appareils **Windows 10** sont automatiquement mis à jour.
 1. Sous **Qui obtenira ces paramètres ?**, tous les utilisateurs sont sélectionnés par défaut, mais vous pouvez choisir Modifier pour sélectionner les groupes de sécurité que vous avez créés. 
-1. Pour terminer la création de la stratégie, choisissez **Ajouter**.
+1. Pour terminer la création de la stratégie, choisissez **Ajouter.**
 1. Dans la page **Ajouter une stratégie,** choisissez **Fermer.**
 1. Dans la page d’accueil du Centre d’administration,  confirmez que votre nouvelle stratégie a été ajoutée en choisissant Stratégies et en l’avisant sur la page **Stratégies.**
 1. Pour vérifier que la stratégie a pris effet, sur l’appareil Windows 10 d’un utilisateur, sélectionnez Windows Update, choisissez **Options** avancées et vérifiez que les paramètres sont grisés.

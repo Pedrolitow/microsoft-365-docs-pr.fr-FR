@@ -2,8 +2,8 @@
 title: Planifier un événement avec le Planificateur Microsoft
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment planifier un événement avec le planificateur Microsoft.
-ms.openlocfilehash: 11453ae83f636e20cd67cc7a4202e8d6995e09a1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a1fe282b7edc9d52db643b47a5dc15a214588e10
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422302"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578722"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Utiliser le Planificateur Microsoft pour planifier un événement
 
@@ -33,7 +33,7 @@ ms.locfileid: "50422302"
 
 ## <a name="try-it"></a>Essayez !
 
-Utilisez le Planificateur Microsoft pour planifier un événement, tel que le suivi d’un lancement de produit.
+Utilisez le Planificateur Microsoft pour planifier un événement, comme le suivi d’un lancement de produit.
 
 ### <a name="work-with-buckets"></a>Travailler avec des compartiments
 
@@ -61,7 +61,7 @@ Publiez un commentaire pour discuter d’une tâche avec les personnes à qui el
 
 Utilisez  **l’affichage**  **Graphiques**  et Tableau pour surveiller l’avancement de chaque membre de l’équipe et du projet global, ou pour trier et organiser les tâches.
 
-- Sélectionnez  **Graphiques,** **puis Regroupement par** et enfin Date **d’échéance**  pour voir quelle tâche est due à la suite.
-- Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression pour**  trier les tâches par progression.
+- Sélectionnez  **Graphiques,** **puis Groupez par** et enfin **date d’échéance**  pour voir quelle tâche arrive à échéance.
+- Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression**  pour trier les tâches par progression.
 
-**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  pour vous faire savoir quand vous êtes prêt à lancer votre produit.
+**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  afin de savoir quand vous êtes prêt à lancer votre produit.

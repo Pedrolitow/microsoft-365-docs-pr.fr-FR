@@ -23,21 +23,14 @@ search.appverid:
 - MET150
 description: Découvrez comment ajouter et réduire le stockage de fichiers dans votre abonnement Microsoft 365. Avec un espace de stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
 ms.date: ''
-ms.openlocfilehash: b170924f40d517cb6bbdf8635ad3e163eadc8643
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d65677b9c078026343410b53acd48932258cb4b1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911925"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576960"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Ajouter de l’espace de stockage pour votre abonnement
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Si vous commencez à manquer d’espace de stockage pour vos collections de sites SharePoint Online et si votre plan est éligible, vous pouvez en ajouter à votre abonnement.  Si le stockage de fichiers supplémentaire **Office 365** ne figure pas dans la liste des modules supplémentaires disponibles, cela signifie que votre plan n’est pas éligible. Pour plus d’informations, voir [Mon plan est-il éligible ?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
@@ -46,7 +39,7 @@ Si vous commencez à manquer d’espace de stockage pour vos collections de site
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global ou SharePoint pour effectuer les tâches de cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur global ou SharePoint pour effectuer les tâches de cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Afficher le stockage disponible
 
@@ -59,7 +52,7 @@ Vous devez être un administrateur global ou SharePoint pour effectuer les tâch
    > [!NOTE]
    > L’espace de stockage utilisé n’inclut pas les modifications apportées au cours des 24 à 48 dernières heures.
 
-Après avoir déterminez la quantité de stockage que vous utilisez, vous pouvez ajouter ou supprimer de l’espace de stockage pour votre abonnement. Pour connaître le coût d’ajout d’espace de stockage, suivez les étapes de cet article et examinez les informations tarifaires avant d’acheter davantage.
+Après avoir déterminez la quantité de stockage que vous utilisez, vous pouvez ajouter ou supprimer de l’espace de stockage pour votre abonnement. Pour connaître le coût d’ajout d’espace de stockage, suivez les étapes de cet article et examinez les informations de tarification avant d’acheter davantage.
   
 Pour plus d’informations sur la définition des limites de stockage des collections de sites, voir [Gérer les limites de stockage des collections de sites.](/sharepoint/manage-site-collection-storage-limits)
   
@@ -98,7 +91,7 @@ Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnement
 - Office pour le web avec SharePoint Plan 1
 - Office pour le web avec SharePoint Plan 2
 - SharePoint Online (plan 1)
-- SharePoint Online (plan 2)
+- SharePoint Online (offre 2)
 - Microsoft 365 Business Basic
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
@@ -111,5 +104,5 @@ Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnement
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Gérer les limites de stockage de](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) site (article)\
+[Gérer les limites de stockage de](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) site (article)\
 [Définir l’espace de stockage par défaut pour les utilisateurs de OneDrive](/onedrive/set-default-storage-space)(article)

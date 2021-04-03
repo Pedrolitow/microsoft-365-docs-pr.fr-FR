@@ -20,21 +20,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez comment les profils de facturation supportent les factures.
-ms.openlocfilehash: 2f56b9a3edbbbe14927df64bed8b699a68826c9e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7f4c0aed1bccd0e5df5b09e15e6201933e937993
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911865"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576948"
 ---
 # <a name="understand-billing-profiles"></a>Comprendre les profils de facturation
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Pour les clients commerciaux qui achètent des produits et services auprès de Microsoft, les profils de facturation vous permet de personnaliser les éléments inclus sur votre facture et la façon dont vous payez vos factures.
 
@@ -48,7 +41,7 @@ Les profils de facturation incluent les informations suivantes :
 
 Utilisez les profils de facturation pour contrôler vos achats et personnaliser votre facture. Une facture mensuelle est générée pour les produits achetés avec le profil de facturation. Vous pouvez personnaliser la facture, par exemple mettre à jour le numéro de bon de commande et la préférence de facture par courrier électronique.
 
-Un profil de facturation est automatiquement créé pour votre compte de facturation lors de votre premier achat. Vous pouvez créer des profils de facturation sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Profils de facturation</a> pour configurer d’autres factures. Par exemple, vous pouvez utiliser différents profils de facturation lorsque vous faites des achats pour chaque service de votre organisation. À la date de facturation suivante, vous recevrez une facture pour chaque profil de facturation.
+Un profil de facturation est automatiquement créé pour votre compte de facturation lors de votre premier achat. Vous pouvez créer des profils de facturation sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Profils de facturation</a> pour configurer d’autres factures. Par exemple, vous pouvez utiliser différents profils de facturation lorsque vous faites des achats pour chaque service de votre organisation. À la prochaine date de facturation, vous recevrez une facture pour chaque profil de facturation.
 
 ## <a name="billing-profile-roles"></a>Rôles de profil de facturation
 

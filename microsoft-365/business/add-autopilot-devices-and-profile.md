@@ -2,8 +2,8 @@
 title: Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Découvrez comment utiliser Windows AutoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise afin qu’ils sont prêts à être utilisés par les employés.
-ms.openlocfilehash: 75cc51b889f8673de8dba2357c777de47fd0d296
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cd8777e6ae2e395506d2bf308c99309de1e24805
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913499"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578524"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot
 
@@ -73,7 +73,7 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     Pour plus d'informations, voir [Fichier CSV de liste d'appareils](../admin/misc/device-list.md). Vous pouvez également télécharger un exemple de fichier sur la page **Charger un fichier .csv avec la liste des appareils**. 
     
 > [!NOTE]
-> Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client enregistre un appareil auprès de Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit Windows (PKID), car cela n’est pas obligatoire pour inscrire un appareil et la valeur PKID null dans le fichier CSV de sortie est parfaitement correct. Seuls le numéro de série et le hachage matériel seront remplis.
+> Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client enregistre un appareil avec Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit Windows (PKID), car cela n’est pas obligatoire pour inscrire un appareil et la valeur PKID étant NULL dans le fichier CSV de sortie est parfaitement correct. Seuls le numéro de série et le hachage matériel seront remplis.
     
 4. Dans la page **Attribuer un profil,** vous pouvez choisir un profil existant ou en créer un nouveau. Si vous n’en avez pas encore, vous serez invité à en créer un. 
     

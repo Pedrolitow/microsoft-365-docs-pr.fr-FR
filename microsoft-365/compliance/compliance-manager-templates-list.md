@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft fournit des modèles pour la création d’évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et industrielles.
-ms.openlocfilehash: b83ad63de34217ac7c469dc784ca85644f6a5e3d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8cdeb6da09a42ad0331690b843ab4f039a5c2bf6
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922818"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570566"
 ---
 # <a name="compliance-manager-templates-list"></a>Liste des modèles de Gestionnaire de conformité
 
@@ -28,7 +28,7 @@ ms.locfileid: "50922818"
 > [!IMPORTANT]
 > Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Examinez les détails.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
 [Le Gestionnaire de conformité Microsoft](compliance-manager.md) fournit un ensemble complet de modèles pour la création d’évaluations. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
 
@@ -60,7 +60,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - NIST 800-53 Rev.4
 
 > [!NOTE]
-> Pour les clients modérés et GCC High de la communauté du gouvernement américain, les modèles de certification du modèle de maturité de cybersécurité (CMMC) de niveau 1 à 5 sont inclus, en plus des modèles répertoriés ci-dessus.
+> Pour les clients modérés, GCC High et Department of Defense (DoD) de la Communauté du gouvernement américain (GCC) : les modèles de certification du modèle de maturité de cybersécurité (CMMC) de niveau 1 à 5 sont inclus, en plus des modèles répertoriés ci-dessus.
 
 ## <a name="premium-templates"></a>Modèles Premium
 
@@ -79,7 +79,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Australie - Spam Act 2003 (Microsoft 365)
 - Australia Privacy (Credit Reporting) Code 2014 (Version 2.1)
 - AESCSF (Australian Energy Sector Cyber Security Framework) (Microsoft 365)
-- Programme australien d’évaluation de la sécurité des informations [(IRAP) version 2](/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365)
+- Programme australien d’évaluation de la sécurité des informations [(IRAP) Version 2](/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365)
 - [Autorité de réglementation prudentielle](/compliance/regulatory/offering-apra-australia) australien CPS (Microsoft 365)
 - Telecommunications Act 2003 (Microsoft 365)
 - Bahamas - Data Protection Act (Microsoft 365)
@@ -94,7 +94,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Californie - Section 1798 sur le code civile
 - Californie - Database Breach Act (California SB 1386)
 - Californie - Education Code-EDC, Titre 3, Division 14, Partie 65, chapitre 2.5 - Confidentialité des réseaux sociaux
-- Californie - SB-327 Confidentialité des informations : appareils connectés (Microsoft 365)
+- Californie - Confidentialité des informations SB-327 : appareils connectés (Microsoft 365)
 - California Consumer Credit Reporting Agencies Act (Microsoft 365)
 - [California Consumer Privacy Act (CCPA)](/compliance/regulatory/offering-ccpa) (Microsoft 365)
 - Canada - Réglementations en matière de protection de la sécurité (Microsoft 365)
@@ -110,7 +110,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Normes anti-normes de dispositif de contrôle d’exploitation (CFATS) (Microsoft 365)
 - Règle de protection de la confidentialité en ligne des enfants (COPPA) (Microsoft 365)
 - Chine - Spécification de sécurité des informations personnelles (Microsoft 365)
-- [Groupe d’implémentation CIS 1, Groupe 2, Groupe 3](/compliance/regulatory/offering-cis-benchmark)
+- [CiS Implementation Group 1, Group 2, Group 3](/compliance/regulatory/offering-cis-benchmark)
 - [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM)](/compliance/regulatory/offering-csa-star-attestation)
 - CmMC Niveau 1, Niveau 2, Niveau 3, Niveau 4, Niveau 5 (Microsoft 365)
 - COBIT 5 (Microsoft 365)
@@ -123,7 +123,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Lois générales - Dispositions générales pour les sous-traitants de l’État qui reçoivent des informations confidentielles (Microsoft 365)
 - Loi de l’État Du Monde : violation de la sécurité des données re computerisées contenant des informations personnelles (Microsoft 365)
 - Consumer Personal Information Security Breach Notification Act (Microsoft 365)
-- Stratégie de sécurité des services d’information sur la justice [pénale (CJIS)](/compliance/regulatory/offering-cjis) (Microsoft 365)
+- Stratégie de sécurité des services d’information sur la justice pénale [(CJIS)](/compliance/regulatory/offering-cjis) (Microsoft 365)
 - Croatie - Loi sur la protection des données personnelles (Microsoft 365)
 - Loi sur la cybersécurité de la République populaire de Chine (Microsoft 365)
 - Chypre - Traitement de la loi sur les données personnelles (Microsoft 365)
@@ -131,7 +131,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Tchèque - Sur la cybersécurité et la modification des actes connexes (agir sur la cybersécurité) - Agir non. 181 (Microsoft 365)
 - Violations de sécurité de l’ordinateur - Commerce et commerce Sous-titre II - 12B-100 à 12B-104
 - Danemark - Loi sur la protection des données
-- Danemark - Ordre exécutif sur les informations et le consentement requis en cas de stockage et d’accès aux informations dans End-User Terminal Equipment
+- Danemark - Ordre exécutif sur les informations et le consentement requis en cas de stockage et d’accès aux informations dans End-User terminal
 - [DFARS](/compliance/regulatory/offering-dfars) (Microsoft 365)
 - Directive 2013/40/UE du citoyen européen et du Conseil (Microsoft 365)
 - – Règlement sur la protection des données relatives à la santé (Microsoft 365)
@@ -142,10 +142,10 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Estonie - Loi sur la protection des données personnelles (Microsoft 365)
 - Estonie : système de mesures de sécurité pour les systèmes d’information (Microsoft 365)
 - UE - Directive ePrivacy 2002 58 EC (Microsoft 365)
-- UE - EudraLex Volume 4 — Instructions GMP, Annexe 11
+- EU - EudraLex Volume 4 — Instructions GMP, Annexe 11
 - Directive de l’UE 2006/24/CE
 - Règles de confidentialité FDIC (Microsoft 365)
-- [Conseil d’examen des institutions financières fédérales (FFIEC) -](/compliance/regulatory/offering-ffiec-us) Livret de sécurité des informations (Microsoft 365, Intune)
+- [Conseil d’examen des institutions financières fédérales (FFIEC) Livret](/compliance/regulatory/offering-ffiec-us) sur la sécurité des informations (Microsoft 365, Intune)
 - [FedRamp High Security Controls](/compliance/regulatory/offering-fedramp) (Office 365)
 - [FedRamp High Security Controls_NIST 800-53](/compliance/regulatory/offering-fedramp) (Microsoft 365)
 - [Modéré FedRAMP](/compliance/regulatory/offering-fedramp)
@@ -168,7 +168,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Inde : loi it de 2000 (Microsoft 365)
 - Règles relatives aux technologies de l’information en Inde (pratiques et procédures de sécurité raisonnables et données personnelles ou informations sensibles)
 - Indonésie - Loi 11/2008 (Microsoft 365)
-- Indonésie - Peraturan Pemerinprotect n.82 Tahou 2012 - Réglementation gouvernementale - Règlement sur la protection des données (Microsoft 365)
+- Indonésie - Peraturan Pemerinivo n.82 Taoun 2012 - Réglementation gouvernementale - Règlement sur la protection des données (Microsoft 365)
 - IRAP v3
 - [IRS-P1075](/compliance/regulatory/offering-irs-1075) (Microsoft 365)
 - IRS - Procédure de chiffre d’affaires 98-25 enregistrements automatisés
@@ -178,7 +178,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - [ISO 27017:2015](/compliance/regulatory/offering-iso-27017) (Microsoft 365)
 - Iso 27799 Informations sur l’état de l’information – Gestion de la sécurité des informations en matière d’état à l’aide de la norme ISO/IEC 27002 (Microsoft 365)
 - ISO 31000:2018 (Microsoft 365)
-- APPLICATION ISO 80001-1 de la gestion des risques pour les réseaux informatiques incorporant des appareils médicaux (Microsoft 365)
+- Iso 80001-1 Application de gestion des risques pour les réseaux informatiques qui incorporent des appareils médicaux (Microsoft 365)
 - [ISO/IEC 27018:2014](/compliance/regulatory/offering-iso-27018)
 - [ISO/IEC 27701:2019](/compliance/regulatory/offering-iso-27701) (Microsoft 365)
 - Israël - Réglementations en matière de protection de la vie privée (transfert de données vers les bases de données) (Microsoft 365)
@@ -195,17 +195,17 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Loi coréenne sur la protection des informations personnelles (Microsoft 365)
 - Koweït - CSF (Microsoft 365)
 - Loi Luxembourg (Microsoft 365)
-- Magasins : agir pour protéger la confidentialité des informations du consommateur en ligne
+- Numéro - Agir pour protéger la confidentialité des informations du consommateur en ligne
 - Notice of Risk to Personal Data (Microsoft 365)
 - Malaisie - Loi sur la protection des données personnelles (PDPA) (Microsoft 365)
-- Malaisie - Gestion des risques en technologie (RMiT) (Microsoft 365)
+- Malaysia Risk Management in Technology (RMiT) (Microsoft 365)
 - Massachusetts - 201 CMR 17.00 : normes pour la protection des informations personnelles des résidents du Monde (Microsoft 365)
 - Loi 2004 sur la protection des données mauricienne (Microsoft 365)
 - Mexique - Loi fédérale sur la protection des consommateurs (Microsoft 365)
 - Loi américaine sur la protection des données (Microsoft 365)
 - Normes de risque acceptable minimales pour les échanges (MARS-E) 2.0 (Microsoft 365)
 - Meilleures pratiques en matière de sécurité du contenu de l’association de motion picture [(MPA)](/compliance/regulatory/offering-mpaa) (Microsoft 365)
-- Myanmar : loi protégeant la confidentialité et la sécurité des citoyens
+- Myanmar - Loi protégeant la confidentialité et la sécurité des citoyens
 - NAIC - Normes pour la protection du règlement sur le modèle d’information client MDL-673 (Microsoft 365)
 - Népal - Loi sur le droit à l’information
 - [NERC CIP](/compliance/regulatory/offering-nerc-cip) (Microsoft 365)
@@ -237,8 +237,8 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Législation en vigueur : loi 29733 sur la protection de la confidentialité des données
 - Directives de gestion de la sécurité des informations du BSP Philippines (Microsoft 365)
 - Philippines Data Privacy Act de 2012 (Microsoft 365)
-- Règlement sur la confidentialité des informations financières et de santé des consommateurs, LOI MDL-672, T2 2017 (Microsoft 365)
-- Porto Rico : informations des citoyens sur la loi de sécurité des banques de données (Microsoft 365)
+- Règlement sur la confidentialité des informations financières et de santé du consommateur, NAIC MDL-672, T2 2017 (Microsoft 365)
+- Porto Rico - Informations des citoyens sur la loi de sécurité des banques de données (Microsoft 365)
 - Stratégie de sécurité cloud du Qatar
 - Politique d’externalisation RBNZ BS11 (Microsoft 365)
 - Loi de La République de Moldavie sur la protection des données personnelles (Microsoft 365)
@@ -262,14 +262,14 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - South Africa Consumer Protection ACT 68 2008 (Microsoft 365)
 - South Africa Consumer Protection ACT 68 2008 (Microsoft 365)
 - South Africa Electronic Communications and Transactions Act, 2002 (Microsoft 365)
-- POPIA (Afrique du Sud) (Microsoft 365)
+- POPIA Sud-Afrique (Microsoft 365)
 - Espagne - Infrastructure de sécurité nationale (Microsoft 365)
 - Contrôles de sécurité client SWIFT (Microsoft 365)
 - Suisse - Loi fédérale sur la protection des données (FADP) (Microsoft 365)
 - Taïwan - Règles de mise en œuvre pour l’audit interne et le système de contrôle interne des institutions de paiement électronique - 2015 (Microsoft 365)
 - Taïwan : réglementations régissant l’approbation et l’administration des entreprises de services d’information financières qui s’engagent dans le transfert et le règlement de fonds interbancaires (Microsoft 365)
 - Taïwan : réglementations régissant les normes pour le système d’information et la gestion de la sécurité des institutions de paiement électronique (Microsoft 365)
-- Taïwan - Règles de mise en œuvre de l’audit interne et du système de contrôle interne des sociétés de portefeuilles financiers et des secteurs bancaires (Microsoft 365)
+- Taïwan - Règles de mise en œuvre de l’audit interne et du système de contrôle interne des sociétés financières et des secteurs bancaires (Microsoft 365)
 - Taiwan Personal Data Protection Act (PDPA) (Microsoft 365)
 - Texas - Identity Theft Enforcement and Protection Act (Microsoft 365)
 - Thaïlande PDPA (Microsoft 365)
@@ -277,7 +277,7 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - Protection des données de Trinité-et-Tobago (loi 13 de 2011) (Microsoft 365)
 - [Exchange d’évaluation de la sécurité des informations de confiance](/compliance/regulatory/offering-tisax-germany)
 - Turquie - Protection KVKK des données personnelles 6698 (Microsoft 365)
-- ÉMIRAT - Loi fédérale n 2 de 2019 sur l’utilisation des technologies de l’information et de la communication (TIC) dans les champs de santé
+- Émirats arabes unis - Loi fédérale n 2 de 2019 sur l’utilisation des technologies de l’information et de la communication (TIC) dans les champs de santé
 - Royaume-Uni - Réglementations sur les activités de l’île d’Allemagne / 2011 (Microsoft 365)
 - [Cyber Essentials au Royaume-Uni](/compliance/regulatory/offering-cyber-essentials-plus-uk) (Microsoft 365)
 - Royaume-Uni - Norme de cybersécurité pour les fournisseurs de défense (Microsoft 365)
@@ -287,9 +287,9 @@ En savoir plus [sur la façon d’afficher et de gérer vos modèles.](complianc
 - États-Unis - Federal Information Security Modernization Act de 2014 (FISMA) (Microsoft 365)
 - [US FERPA](/compliance/regulatory/offering-ferpa) (Microsoft 365)
 - US-Cloud Act (Microsoft 365)
-- Loi sur la protection du crédit à la consommation (Microsoft 365)
+- Loi sur la protection du crédit pour les consommateurs (Microsoft 365)
 - Loi ouzbékistan sur les données personnelles
-- Normes de sécurité des données de protection renforcée v2.0 (VPDSS 2.0) (Microsoft 365)
+- Normes de sécurité des données de protection des navigateurs v2.0 (VPDSS 2.0) (Microsoft 365)
 - Vietnam - Loi sur la protection des droits des consommateurs (Microsoft 365)
 - Vietnam - Loi de cybersécurité (Microsoft 365)
 - Vietnam - Loi de sécurité des informations réseau

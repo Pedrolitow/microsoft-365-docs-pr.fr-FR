@@ -2,8 +2,8 @@
 title: Vue d’ensemble de Microsoft 365 Business Premium Security
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les fonctionnalités de sécurité incluses dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: e21dc1a9f27f9b5896ace2f09ebb936b8189fdd3
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5274d54fb39cfbeee8ce9abd7fb738543aaacc53
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422326"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578734"
 ---
 # <a name="overview-of-security"></a>Vue d’ensemble de la sécurité
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422326"
 
 Microsoft 365 Business Premium offre des fonctionnalités de protection contre les menaces, de protection des données et de gestion des appareils pour vous aider à protéger votre entreprise contre les menaces en ligne et les accès non autorisés, ainsi que protéger et gérer les données d’entreprise sur vos téléphones, tablettes et ordinateurs.
 
-|![Protection contre les menaces](../media/m365-business-security-threat-protection.png)<br/>[Protection contre les menaces](#threat-protection)|![Collaborer avec un client](../media/m365-business-security-data-protection.png) <br/>[Protection des données](#data-protection) | ![Gestion des appareils](../media/m365-business-security-device-management.png) <br/>[Gestion des périphériques](#device-management) |
+|![Protection contre les menaces](../media/m365-business-security-threat-protection.png)<br/>[Protection contre les menaces](#threat-protection)|![Collaborer avec un client](../media/m365-business-security-data-protection.png) <br/>[Protection des données](#data-protection) | ![Gestion des appareils](../media/m365-business-security-device-management.png) <br/>[Gestion des appareils](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>Protection contre les menaces
@@ -49,19 +49,19 @@ Windows Defender offre une protection complète pour votre système, vos fichier
 
 Les fonctionnalités de protection des données de Microsoft 365 Business Premium permettent de s’assurer que les données importantes restent sécurisées et que seules les personnes autorisées y ont accès.
 
-Vous pouvez utiliser des stratégies de protection contre la perte de données (DLP) pour identifier et gérer des informations sensibles, telles que des numéros de sécurité sociale ou de carte de crédit, afin qu’elles ne sont pas partagées par erreur. 
+Vous pouvez utiliser des stratégies de protection contre la perte de données (DLP) pour identifier et gérer des informations sensibles, telles que des numéros de sécurité sociale ou de carte de crédit, afin de ne pas les partager par erreur. 
 
 Le chiffrement de messages Office 365 combine les fonctionnalités de chiffrement et de droits d’accès pour garantir que seuls les destinataires prévus peuvent afficher le contenu des messages. Le chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo!, Gmail et d’autres services de messagerie.
 
 Archivage Exchange Online est une solution d’archivage informatique qui fonctionne avec Microsoft Exchange ou Exchange Online pour fournir des fonctionnalités d’archivage avancées, notamment des archives et la redondance des données. Vous pouvez utiliser des stratégies de rétention pour aider votre organisation à réduire les responsabilités associées à la messagerie électronique et à d’autres communications. Si votre entreprise est tenue de conserver les communications liées à un litige, vous pouvez utiliser les conservations In-Place et les conservations pour litige pour conserver les e-mails associés.
 
-## <a name="device-management"></a>Gestion des périphériques
+## <a name="device-management"></a>Gestion des appareils
 
 Les fonctionnalités avancées de gestion des appareils Microsoft 365 Business Premium vous permet de surveiller et de contrôler ce que les utilisateurs peuvent faire avec les appareils inscrits. Ces fonctionnalités incluent l’accès conditionnel, la gestion des périphériques mobiles (MDM), BitLocker et les mises à jour automatiques.
 
 Vous pouvez utiliser des stratégies d’accès conditionnel pour exiger des mesures de sécurité supplémentaires pour certains utilisateurs et tâches. Par exemple, vous pouvez exiger l’authentification multifacteur (MFA) ou bloquer les clients qui ne prenons pas en charge l’accès conditionnel.
 
-Avec la gestion des appareils mobiles, vous pouvez sécuriser et gérer les appareils mobiles de vos utilisateurs, tels que les iPhone, les iPad, les android et les téléphones Windows. Vous pouvez créer et gérer des stratégies de sécurité d’appareil, réinitialiser à distance un appareil pour supprimer toutes les données d’entreprise, réinitialiser un appareil aux paramètres d’usine et afficher des rapports détaillés sur les appareils. 
+Avec la gestion des périphériques mobiles, vous pouvez sécuriser et gérer les appareils mobiles de vos utilisateurs, tels que les iPhone, les iPad, les android et les téléphones Windows. Vous pouvez créer et gérer des stratégies de sécurité d’appareil, réinitialiser à distance un appareil pour supprimer toutes les données d’entreprise, réinitialiser un appareil aux paramètres d’usine et afficher des rapports détaillés sur les appareils. 
 
 Vous pouvez activer le chiffrement BitLocker pour protéger les données en cas de perte ou de vol d’un appareil, et permettre à Windows Exploit Guard de fournir une protection avancée contre les ransomware.
 

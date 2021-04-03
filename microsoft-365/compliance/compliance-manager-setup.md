@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft et configurez des tests automatisés des actions. Gérer l’historique des utilisateurs et filtrer l’affichage de votre tableau de bord.
-ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499033"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570556"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -30,7 +30,7 @@ ms.locfileid: "51499033"
 
 ## <a name="who-can-access-compliance-manager"></a>Qui peut accéder au Gestionnaire de conformité
 
-Le Gestionnaire de conformité est disponible pour les organisations titulaires de licences Office 365 et Microsoft 365, ainsi que pour les clients modérés et GCC High du cloud communautaire du gouvernement des États-Unis. La disponibilité de l’évaluation et les fonctionnalités de gestion dépendent de votre contrat de licence.  [Afficher les détails de description du service.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+Le Gestionnaire de conformité est disponible pour les organisations titulaires de licences Office 365 et Microsoft 365, ainsi que pour les clients du Cloud communautaire du gouvernement américain (GCC), modéré, GCC High et department of Defense (DoD). La disponibilité de l’évaluation et les fonctionnalités de gestion dépendent de votre contrat de licence.  [Afficher les détails de description du service.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -52,7 +52,7 @@ Le Gestionnaire de conformité utilise un modèle d’autorisation de contrôle 
 La personne détenant le rôle d’administrateur général de votre organisation peut définir des autorisations utilisateur pour le Gestionnaire de conformité. Les autorisations peuvent être définies dans le Centre de sécurité et conformité Office 365 & ainsi que dans Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Les clients des environnements GCC (Us Government Community) High peuvent uniquement définir des autorisations utilisateur et des rôles pour le Gestionnaire de conformité dans Azure AD. Voir ci-dessous pour obtenir des instructions Azure AD et des définitions de type de rôle.
+> Les clients des environnements GCC (Us Government Community) High et Department of Defense (DoD) peuvent uniquement définir des autorisations utilisateur et des rôles pour le Gestionnaire de conformité dans Azure AD. Voir ci-dessous pour obtenir des instructions Azure AD et des définitions de type de rôle.
 
 Pour définir des autorisations et attribuer des rôles dans le Centre de sécurité & conformité Office 365, suivez les étapes ci-dessous :
 
@@ -100,7 +100,7 @@ Le tableau ci-dessous présente les fonctions autorisées par chaque rôle dans 
 Les paramètres du Gestionnaire de conformité du Centre de conformité Microsoft 365 vous permettent d’activer et de désactiver le test automatique des actions d’amélioration. Les paramètres vous permettent également de gérer les données des utilisateurs associés aux actions d’amélioration, y compris la possibilité de réaffecter des actions d’amélioration à un autre utilisateur.  Seules les personnes ayant un rôle d’administrateur général ou d’administrateur du Gestionnaire de conformité peuvent accéder aux paramètres du Gestionnaire de conformité.
 
 > [!NOTE]
-> La fonctionnalité de test automatisée n’est pas disponible pour les clients dans les environnements GCC High, car le niveau de sécurité n’est pas disponible dans ces environnements. Les clients GCC High devront implémenter et tester manuellement leurs actions d’amélioration.
+> La fonctionnalité de test automatisée n’est pas disponible pour les clients dans les environnements GCC High et DoD, car le Niveau de sécurité n’est pas disponible dans ces environnements. Les clients GCC High et DoD doivent implémenter et tester manuellement leurs actions d’amélioration.
 
 ### <a name="set-up-automated-testing"></a>Configurer des tests automatisés
 

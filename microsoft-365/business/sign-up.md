@@ -2,8 +2,8 @@
 title: S’inscrire à Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,20 +26,20 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez ce que Microsoft 365 Business Premium inclut et obtenez des instructions pas à pas pour vous inscrire à Microsoft 365 Business Premium.
-ms.openlocfilehash: 54a8e92ccced24f446e73a96f75e4aa1531a95aa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4aa1ae9ea48863434c960da69e41ffb2d3a0a89
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912507"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578104"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>S’inscrire à Microsoft 365 Business Premium
 
 Pour découvrir ce que Microsoft 365 Business Premium inclut, regardez une [courte vidéo](../business-video/what-is-microsoft-365.md) et consultez la [vue d’ensemble.](microsoft-365-business-overview.md)
 
 Il existe trois façons d’obtenir Microsoft 365 Business Premium :
-- **Achetez Microsoft 365 Business Premium** et terminez votre propre configuration : Pour acheter Microsoft 365 Business Premium en ligne, suivez les étapes [ci-dessous.](#sign-up-steps)
-- **Pour les partenaires Microsoft**: si vous êtes un partenaire, voir [Obtenir Microsoft 365 Business Premium à partir de l’Centre partenaires Microsoft.](get-microsoft-365-business.md)
+- **Achetez Microsoft 365 Business Premium** et terminez votre propre configuration : Pour acheter Microsoft 365 Business Premium en ligne, suivez les étapes ci-dessous. [](#sign-up-steps)
+- **Pour les partenaires Microsoft**: si vous êtes un partenaire, voir [Obtenir Microsoft 365 Business Premium à partir de l’Partner Center Microsoft.](get-microsoft-365-business.md)
 - **Obtenir de l’aide dans un Microsoft Store**: rendez-vous sur un Microsoft [Store.](https://go.microsoft.com/fwlink/?linkid=2109652) Les magasins Microsoft peuvent vous aider à répondre à vos questions sur les plans, à acheter un plan adapté aux besoins de votre entreprise et à effectuer votre configuration.
 
 **Vous avez besoin d’un autre modèle ?** Vous pouvez :
@@ -60,7 +60,7 @@ Pour vous inscrire et acheter Microsoft 365 pour votre entreprise, complétez le
 
 1. Dans la [page Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2109654)pour les entreprises, sélectionnez Voir les plans & **tarifs.** 
 2. Sur la page suivante, découvrez le coût mensuel, puis faites défiler la page vers le bas pour en savoir plus sur ce qui est inclus dans Microsoft 365. Sous Microsoft 365 Business Premium, **sélectionnez Acheter maintenant.**
-3. Sur la page **Merci d’avoir choisi Microsoft 365 Business Premium,** entrez vos informations pour commencer.
+3. Dans la page **Merci d’avoir choisi Microsoft 365 Business Premium,** entrez vos informations pour commencer.
 4. À **l’étape 1,** entrez une adresse de messagerie que vous utilisez déjà. Il peut s’tr de votre adresse e-mail de travail actuelle ou de toute adresse que Microsoft doit utiliser pour communiquer avec vous lors de l’installation. Il s’agit également de l’adresse à laquelle nous vous envoyons des informations sur votre facture et vos renouvellements. Sélectionnez ensuite, **Configurer le compte.**
 5. À **l’étape 2,** entrez votre nom, votre numéro de téléphone d’entreprise, le nom de la société et votre emplacement. Votre pays ou région détermine les services exacts que vous recevez de Microsoft et ne peut pas être modifié une fois cette étape terminée. Sélectionnez **Suivant**.
     > [!NOTE]
@@ -77,21 +77,21 @@ Pour vous inscrire et acheter Microsoft 365 pour votre entreprise, complétez le
             > [!TIP]
             > si vous ne savez pas quelle extension de domaine choisir pour votre nouveau domaine (par exemple, .com ou .org), voir [Acheter un nom de domaine](../admin/get-help-with-domains/buy-a-domain-name.md)
         
-        - **Je ne sais pas, ou je possède déjà un nom de domaine** 
+        - **Je ne sais pas, ou je possède déjà un nom de domaine.** 
         
              Choose **Get a Microsoft domain for now**. Cela ne coûte rien, et par la suite, vous pouvez obtenir un nom personnalisé pour votre entreprise ou vous connecter à un nom que vous possédez déjà. Nous allons vous montrer comment.
 
     3. Sélectionnez **Suivant** pour créer votre ID d’utilisateur et votre adresse de messagerie professionnelle. Entrez le nom (également appelé alias) que vous souhaitez utiliser. Par exemple, Robert Young peut utiliser RobY ou RobYoung comme alias de travail. Ajoutez un mot de passe et **sélectionnez S’inscrire.** Notez votre mot de passe. Nous vous enverrons un e-mail à l’adresse que vous avez entrée à l’étape 1 pour vous rappeler votre ID d’utilisateur.
 7. À **l’étape 4**: 
 
-    1. Déterminez le nombre de personnes de votre entreprise qui  ont besoin d’une licence Microsoft 365 ou laissez le nombre d’utilisateurs sur 1 pour le moment et ajoutez d’autres personnes ultérieurement. 
+    1. Déterminez le nombre de personnes de votre entreprise qui  ont besoin d’une licence Microsoft 365, ou laissez le nombre d’utilisateurs sur 1 pour le moment et ajoutez d’autres personnes ultérieurement. 
     2. Sélectionnez facturation mensuelle ou annuelle, vérifiez le coût total, puis sélectionnez **Suivant**. 
     3. Ajoutez les détails de votre carte de crédit. Si l’adresse de votre entreprise ne correspond pas à votre adresse de carte de crédit, nous avons également besoin de l’adresse de votre société. L’adresse de votre entreprise détermine les taxes que vous payez et les services disponibles. Pour plus d’informations sur les taxes, voir [quelles taxes seront facturées ?](../commerce/billing-and-payments/tax-information.md)
     4. Select **Place order**. Microsoft met un peu de temps à terminer la configuration d’une nouvelle offre.
 
 ## <a name="whats-next"></a>Étape suivante
 
-Sélectionnez **Aller au programme d’installation** pour effectuer d’autres étapes telles que l’ajout d’une sécurité renforcée pour protéger votre entreprise et le téléchargement d’applications Office telles que Word et Excel.
+Sélectionnez **Go to setup** to complete other steps such as adding more security to protect your business, and downloading Office apps like Word and Excel.
 
 Pour obtenir de l’aide sur la configuration, voir [configurer.](set-up.md)
 

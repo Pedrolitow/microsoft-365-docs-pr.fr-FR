@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur le Gestionnaire de conformité Microsoft, qui permet aux organisations de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: a6ce93a39e242d5edf4806ad974296c8c007561e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efa9de8506c088ceae64de26d32efe8553d0b574
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922828"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570393"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>Questions fréquemment posées par le Gestionnaire de conformité
 
@@ -73,7 +73,7 @@ Le Gestionnaire de conformité est une solution de bout en bout dans le Centre d
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>Existe-t-il des exigences de licence pour l’utilisation du Gestionnaire de conformité ?
 
-Oui. La version GA du Gestionnaire de conformité contient de nouveaux termes de licence. Toutes les organisations titulaires de licences Office 365 et Microsoft 365, ainsi que les clients modérés et GCC High de la Communauté du gouvernement des États-Unis, ont accès au Gestionnaire de conformité. Toutefois, les évaluations disponibles pour votre organisation et la façon dont vous gérez les modèles d’évaluation dépendent de votre contrat de licence. Pour plus [d’informations, consultez](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) les conseils de gestion des licences Microsoft 365 pour la sécurité et la conformité.
+Oui. La version GA du Gestionnaire de conformité contient de nouveaux termes de licence. Toutes les organisations titulaires de licences Office 365 et Microsoft 365, ainsi que les clients modérés, GCC High et Department of Defense (DoD) de la Communauté du gouvernement américain (GCC) ont accès au Gestionnaire de conformité. Toutefois, les évaluations disponibles pour votre organisation et la façon dont vous gérez les modèles d’évaluation dépendent de votre contrat de licence. Pour plus [d’informations, consultez](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) les conseils de gestion des licences Microsoft 365 pour la sécurité et la conformité.
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Si j’ai un score élevé, cela signifie-t-il que je suis entièrement conforme ?
 

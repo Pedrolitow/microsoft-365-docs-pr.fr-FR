@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment utiliser l’Analyseur de configuration de conformité Microsoft pour être rapidement opérationnel avec le Gestionnaire de conformité Microsoft.
-ms.openlocfilehash: a77f38dcc0c0215e539c868e47135f5d7194f4b6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b91ac274d7270f5be9530742cf711a3918b287d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906036"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570373"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analyseur de configuration de la conformité Microsoft pour le Gestionnaire de conformité (prévisualisation)
 
@@ -27,17 +27,17 @@ ms.locfileid: "50906036"
 
 ## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Présentation de l’Analyseur de configuration de la conformité Microsoft (MCCA) (prévisualisation)
 
-L’Analyseur de configuration de la conformité Microsoft (MCCA) est un outil de prévisualisation qui peut vous aider à démarrer avec le Gestionnaire de [conformité Microsoft.](compliance-manager.md) MCCA est un utilitaire basé sur PowerShell qui récupère les configurations actuelles de votre organisation et les valide par rapport aux meilleures pratiques recommandées de Microsoft 365. Ces meilleures pratiques sont basées sur un ensemble de contrôles qui incluent des réglementations et des normes clés pour la protection des données et la gouvernance des données.
+L’Analyseur de configuration de la conformité Microsoft (MCCA) est un outil de prévisualisation qui peut vous aider à démarrer avec le Gestionnaire de [conformité Microsoft.](compliance-manager.md) MCCA est un utilitaire basé sur PowerShell qui récupère les configurations actuelles de votre organisation et les valide par rapport aux meilleures pratiques recommandées de Microsoft 365. Ces meilleures pratiques sont basées sur un ensemble de contrôles qui incluent des réglementations clés et des normes pour la protection des données et la gouvernance des données.
 
 MCCA peut vous aider à voir rapidement quelles actions d’amélioration du Gestionnaire de conformité s’appliquent à votre environnement Microsoft 365 actuel. Chaque action identifiée par MCCA vous donne des recommandations pour l’implémentation, avec des liens directs vers le Gestionnaire de conformité et la solution applicable pour commencer à prendre des mesures correctives.
 
 Une ressource supplémentaire pour comprendre MCCA consiste à consulter les [instructions README sur GitHub.](https://github.com/OfficeDev/MCCA#overview) Cette page fournit des informations détaillées sur les conditions préalables et fournit des instructions d’installation complètes. Vous n’avez pas besoin d’un compte GitHub pour accéder à cette page.
 
-Disponibilité : MCCA est disponible pour toutes les organisations titulaires de licences Office 365 et Microsoft 365, ainsi que pour les clients modérés et GCC High de la Communauté du gouvernement des États-Unis, avec des plans en cours d’extension du service pour les clients DOD.
+Disponibilité : MCCA est disponible pour toutes les organisations titulaires de licences Office 365 et Microsoft 365, ainsi que pour les clients modérés, GCC High et Department of Defense (DoD) de la Communauté du gouvernement américain (GCC).
 
 ## <a name="install-mcca-and-run-a-report"></a>Installer MCCA et exécuter un rapport
 
-Vous pouvez installer l’outil MCCA à l’aide Windows PowerShell. Une fois que vous avez téléchargé et installé l’outil, vous n’avez pas besoin de répéter ces étapes pour exécuter des rapports. Chaque fois que vous ouvrez MCCA, elle vous demande vos informations d’identification de connexion et génère un nouveau rapport mis à jour.
+Vous pouvez installer l’outil MCCA à l’aide Windows PowerShell. Une fois que vous avez téléchargé et installé l’outil, vous n’avez pas besoin de répéter ces étapes pour exécuter des rapports. Chaque fois que vous ouvrez MCCA, il vous demande vos informations d’identification de connexion et génère un nouveau rapport mis à jour.
 
 #### <a name="step-1-install-windows-powershell"></a>Étape 1 : Installer Windows PowerShell
 Pour commencer, vous aurez besoin du module Exchange Online PowerShell (version 2.0.3 ou supérieure) disponible dans la galerie PowerShell. [Obtenir des instructions d’installation.](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3)
@@ -94,7 +94,7 @@ Pour modifier les informations d’emplacement de votre rapport, vous devez four
 Suivez ces instructions pour exécuter un rapport basé sur un emplacement spécifique :
 
 1. Ouvrir PowerShell
-2. Pour spécifier une région, vous devez exécuter une cmdlet à l’aide des numéros du tableau ci-dessous qui correspondent au pays ou à la région. Entrez plusieurs nombres en les séparant par une virgule. Par exemple, l’cmdlet ci-dessous exécute un rapport personnalisé pour Asia-Pacific et le Japon :
+2. Pour spécifier une région, vous devez exécuter une cmdlet à l’aide des numéros du tableau ci-dessous qui correspondent au pays ou à la région. Entrez plusieurs nombres en les séparant par une virgule. Par exemple, la cmdlet ci-dessous exécute un rapport personnalisé pour Asia-Pacific et le Japon :
 
     ```powershell
     Get-MCCAReport -Geo @(1,7)
@@ -113,7 +113,7 @@ Suivez ces instructions pour exécuter un rapport basé sur un emplacement spéc
   | 10  | Amérique du Sud |
   | 11 | Afrique du Sud |
   | 12  | Suisse |
-  | 13  | Émirats arabes unis |
+  | 13 | Émirats arabes unis |
   | 14  | Royaume-Uni |
 
 
@@ -129,11 +129,11 @@ Le tableau ci-dessous indique les rôles qui ont accès aux sections du rapport.
 ![MCCA : rôles](../media/compliance-manager-mcca-roles.png "Rôles MCCA")
 
 Exceptions :
-1. L’utilisateur ne peut pas générer de rapport pour l’adresse IP en dehors de la section « Utiliser IRM pour Exchange Online ».
-2. L’utilisateur peut générer un rapport pour l’adresse IP en dehors de la section « Utiliser IRM pour Exchange Online ».
-3. L’utilisateur pourra générer un rapport pour l’adresse IP en dehors de la section « Activer la conformité des communications dans O365 ».
-4. L’utilisateur ne pourra pas générer de rapport pour l’adresse IP à part la section « Activer l’audit dans Office 365 ».
-5. L’utilisateur peut générer un rapport pour l’adresse IP en dehors de la section « Activer l’audit dans Office 365 ».
+1. Les utilisateurs ne pourront pas générer de rapport pour l’adresse IP en dehors de la section « Utiliser IRM pour Exchange Online ».
+2. Les utilisateurs pourront générer un rapport pour l’adresse IP à part à partir de la section « Utiliser IRM pour Exchange Online ».
+3. Les utilisateurs pourront générer un rapport pour l’adresse IP en dehors de la section « Activer la conformité des communications dans O365 ».
+4. Les utilisateurs ne pourront pas générer de rapport pour l’adresse IP en dehors de la section « Activer l’audit dans Office 365 ».
+5. Les utilisateurs pourront générer un rapport pour l’adresse IP en dehors de la section « Activer l’audit dans Office 365 ».
 
 #### <a name="solutions-summary-section"></a>Section Résumé des solutions
 
@@ -145,9 +145,9 @@ MCCA évalue vos configurations actuelles par rapport aux actions d’améliorat
 
 En plus de chaque solution Microsoft, des zones codées en couleur indiquent le nombre d’éléments qui correspondent aux actions d’amélioration dans le Gestionnaire de conformité. Les actions sont décomposées en trois états d’état :
 
-- **OK**: actions qui répondent aux conditions recommandées et qui n’ont pas besoin d’être attentives pour le moment
+- **OK**: actions qui répondent aux conditions recommandées et qui n’ont pas besoin d’attention pour le moment
 - **Amélioration :** actions qui ont besoin d’attention
-- **Recommandation**: actions qui n’ont pas besoin d’attention, mais pour lesquelles nous vous recommandons les meilleures pratiques
+- **Recommandation**: actions qui n’ont pas besoin d’attention, mais pour lesquelles nous recommandons les meilleures pratiques
  
 Sélectionnez une zone pour afficher les améliorations et les recommandations.
 
@@ -167,4 +167,4 @@ Sélectionnez la dropdown en face de **l’étiquette Recommandation** à droite
 
 Pour plus d’informations sur l’installation, la configuration et l’utilisation de MCCA, voir les [instructions README](https://github.com/OfficeDev/MCCA#overview) sur GitHub (aucun compte GitHub requis).
 
-Pour plus d’informations Windows PowerShell, commencez par utiliser [la documentation PowerShell.](/powershell/scripting/how-to-use-docs?view=powershell-7) Voir aussi [Démarrage Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
+Pour plus d’informations Windows PowerShell, commencez par [utiliser la documentation PowerShell.](/powershell/scripting/how-to-use-docs?view=powershell-7) Voir aussi [Démarrage Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).

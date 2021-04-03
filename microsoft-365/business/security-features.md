@@ -2,8 +2,8 @@
 title: Fonctionnalités de sécurité et de conformité de Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: reference
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité qui sont disponibles avec Microsoft 365 Business Premium pour protéger vos données sur les PC, téléphones et tablettes.
-ms.openlocfilehash: f04a998c74128edac306167617e073c412fce2ea
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bca20a7a03a93f7ac2bf8752476046f0db43cc70
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198408"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578144"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business Premium
 
@@ -111,13 +111,13 @@ Votre abonnement Microsoft 365 Business Premium inclut des fonctionnalités qui 
 Vous pouvez gérer ces fonctionnalités dans le Centre de conformité de la sécurité et le &amp; Centre d’administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au Centre d’administration Microsoft 365.
   
     
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Forum aux questions
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>Ces fonctionnalités de sécurité sont-elles disponibles sur tous les marchés ?
   
 Oui, ces fonctionnalités sont disponibles dans tous les marchés où Microsoft 365 Business Premium est vendu.
   
-### <a name="how-do-i-find-the-security-amp-compliance-center"></a>Comment trouver le Centre de &amp; conformité de la sécurité ?
+### <a name="how-do-i-find-the-security-amp-compliance-center"></a>Comment trouver le Centre de conformité &amp; de la sécurité ?
   
 1. [Connectez-vous à Microsoft 365 Business Premium](https://portal.microsoft.com/) à l’aide de vos informations d’identification d’administrateur. 
     

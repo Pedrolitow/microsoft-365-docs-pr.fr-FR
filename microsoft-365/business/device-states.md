@@ -2,8 +2,8 @@
 title: États des appareils
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Découvrez les différents états de l’appareil dans la liste Actions de l’appareil dans la page Accueil de l’administrateur dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 64138e2b6ae73c067709cde1912a96615d08ebf1
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: e6f1b428413d094e0a1ce3afb026528074038736
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471176"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578464"
 ---
 # <a name="device-states"></a>États des appareils
 

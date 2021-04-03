@@ -21,21 +21,14 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 44cb7b09c76ee5e49d2f556df104e55150212f30
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 582ecb0f9b46d877c30aa29334b30b9209c93993
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911781"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576936"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Les cartes de débit, de crédit et les informations bancaires sont acceptées pour régler votre abonnement. Dans certains cas, vous pouvez régler votre facture par chèque ou transfert électronique de fonds (TEF). Si vous disposez d’un profil de facturation, vous avez des options légèrement différentes. Pour plus d’informations, consultez la rubrique [Comment régler un abonnement avec un profil de facturation](pay-for-subscription-billing-profile.md). Si vous ne savez pas si votre compte dispose d’un profil de facturation, consultez la rubrique [Comprendre les profils de facturation](manage-billing-profiles.md).
 

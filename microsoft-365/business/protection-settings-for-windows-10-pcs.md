@@ -2,8 +2,8 @@
 title: Modifier ou créer des paramètres de protection des appareils pour les PC Windows 10
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Découvrez les paramètres disponibles dans Microsoft 365 pour les entreprises pour sécuriser les appareils Windows 10.
-ms.openlocfilehash: db310731ef996500de61535b5b9f99e240ec75ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912799"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578224"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modifier ou créer des paramètres de protection des appareils pour les PC Windows 10
 
 Cet article s’applique à Microsoft 365 Business Premium.
 
-Après avoir configuré les paramètres de protection Windows par défaut sur la page d’installation, vous pouvez en ajouter de nouveaux qui s’appliquent à tous les utilisateurs ou à un ensemble d’utilisateurs. Vous pouvez également modifier les modifications que vous avez créées.
+Une fois que vous avez configuré les paramètres de protection Windows par défaut sur la page d’installation, vous pouvez en ajouter de nouveaux qui s’appliquent à tous les utilisateurs ou à un ensemble d’utilisateurs. Vous pouvez également modifier les modifications que vous avez créées.
 
 ## <a name="create-protection-settings-for-windows-10-devices"></a>Créer des paramètres de protection pour les appareils Windows 10
 
@@ -70,12 +70,12 @@ Pour plus d’informations, voir Comment faire pour que les fonctionnalités de 
   
 |||
 |:-----|:-----|
-|Setting  <br/> |Description  <br/> |
+|Paramètre  <br/> |Description  <br/> |
 |Protéger les ordinateurs des virus et d'autres menaces à l'aide de l'antivirus Windows Defender  <br/> |L'antivirus Windows Defender doit être activé pour protéger les ordinateurs contre les risques liés à la connexion à internet.  <br/> |
 |Protéger les ordinateurs contre les menaces web dans Microsoft Edge  <br/> |Active les paramètres Microsoft Edge qui protègent les utilisateurs contre les sites et téléchargements malveillants.  <br/> |
 |Utiliser des règles qui réduisent la surface d'attaque des appareils  <br/> |Quand elle est activée, la réduction de la surface d'attaque aide à bloquer les actions et applications que les logiciels malveillants utilisent généralement pour contaminer des appareils. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour en savoir plus, voir [Réduire les surfaces d'attaque](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |
-|Protéger les dossiers contre des menaces telles que des rançongiciels  <br/> |Ce paramètre utilise l'Accès contrôlé aux dossiers pour protéger les données de l'entreprise contre l'apport de modifications par des applications suspectes ou malveillantes, telles que les rançongiciels. L'apport de modifications aux dossiers protégés par des applications de ces types est bloqué. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour plus [d’informations, voir](/mem/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) Protéger les dossiers avec accès contrôlé aux dossiers.  <br/> |
-|Empêcher l'accès réseau à du contenu potentiellement malveillant sur Internet  <br/> |Utilisez ce paramètre pour bloquer les connexions des utilisateurs sortants à des emplacements Internet de faible réputation qui peuvent héberger des tentatives d’hameçonnage, des attaques ou d’autres contenus malveillants. Ce paramètre n’est disponible que si Windows Defender antivirus est sur **Le**. Pour plus d’informations, [voir Protéger votre réseau.](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)  <br/> |
+|Protéger les dossiers contre des menaces telles que des rançongiciels  <br/> |Ce paramètre utilise l'Accès contrôlé aux dossiers pour protéger les données de l'entreprise contre l'apport de modifications par des applications suspectes ou malveillantes, telles que les rançongiciels. L'apport de modifications aux dossiers protégés par des applications de ces types est bloqué. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour en [savoir plus, consultez](/mem/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) Protéger les dossiers avec accès contrôlé aux dossiers.  <br/> |
+|Empêcher l'accès réseau à du contenu potentiellement malveillant sur Internet  <br/> |Utilisez ce paramètre pour bloquer les connexions des utilisateurs sortants à des emplacements Internet de faible réputation qui peuvent héberger des tentatives d’hameçonnage, des attaques ou d’autres contenus malveillants. Ce paramètre n’est disponible que si Windows Defender antivirus est sur **Le .** Pour plus d’informations, [voir Protéger votre réseau.](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)  <br/> |
 |Protéger les fichiers et dossiers sur PC contre un accès non autorisé avec BitLocker  <br/> |Bitlocker protège les données en chiffrant les disques durs de l'ordinateur, et protège contre l'exposition des données en cas de perte ou de vol. Pour plus d’informations, consultez la FAQ [sur Bitlocker.](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)  <br/> |
 |Autoriser les utilisateurs à télécharger des applications à partir du Microsoft Store  <br/> |Permet aux utilisateurs de télécharger et d'installer des applications à partir du Microsoft Store. Il peut s'agir de jeux ou d'outils de productivité, c'est pourquoi nous laissons ce paramètre **activé**, mais vous pouvez le désactiver pour plus de sécurité.  <br/> |
 |Autoriser les utilisateurs à accéder à Cortana  <br/> |Cortana peut être très utile ! Cortana peut activer ou désactiver les paramètres pour vous, donner des instructions et vous assurer que vous êtes à l’heure pour les rendez-vous, donc nous tenez ce paramètre activé **par** défaut.  <br/> |

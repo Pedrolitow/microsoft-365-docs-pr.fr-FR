@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: dbb294cdb865fb01f931e2e9c3bc4f6afb3f1e09
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 42fe70d1360f45deb6f98f41c0ffec97de7e00a9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471033"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498351"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -259,7 +259,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Déclaration d’un élément comme enregistrement| Non | Oui |
 |Démarrage de la période de rétention à la date d’étiquetage ou en fonction d’un événement | Non | Oui |
 |Révisions avant élimination | Non| Oui |
-|Preuve de la destruction pendant 7 ans | Non |Oui, lorsque l’élément est déclaré comme enregistrement|
+|Preuve de la destruction pendant 7 ans | Non |Oui, lorsque vous utilisez la révision avant destruction ou que l’élément est marqué comme enregistrement|
 |Audit des activités administratives| Oui | Oui|
 |Identification des éléments soumis à une stratégie de rétention : <br /> - Recherche de contenu <br /> - Page classification des données, explorateur de contenu, explorateur d’activité | <br /> Non <br /> Non | <br /> Oui <br /> Oui|
 

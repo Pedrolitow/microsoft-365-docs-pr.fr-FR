@@ -2,8 +2,8 @@
 title: Valider les paramètres de protection des applications sur les appareils Android ou iOS
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Découvrez comment valider les paramètres de protection des applications Microsoft 365 Business Premium sur vos appareils Android ou iOS.
-ms.openlocfilehash: d4b8ec3ff3a15c25133b20d437249611530977a5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a0a4a6e6cff59f66a506929e97c99d361472a68b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403367"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578064"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Valider les paramètres de protection des applications sur les appareils Android ou iOS
 
@@ -66,7 +66,7 @@ In the **Edit policy** pane, choose **Edit** next to Office documents **access c
   
 1. Sur l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur.
     
-2. Entrez un code confidentiel incorrect autant de fois que le spécifie la stratégie. Vous verrez une invite qui indique que la limite de tentative de code confidentiel est **atteinte** pour réinitialiser le code confidentiel. 
+2. Entrez un code confidentiel incorrect autant de fois que le spécifie la stratégie. Vous verrez une invite qui indique que la limite de tentative de code confidentiel **est atteinte** pour réinitialiser le code confidentiel. 
     
     ![After too many incorrect PIN attempts, you need to reset your PIN.](../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
@@ -155,7 +155,7 @@ In the **Edit policy** pane, choose **Edit** next to Office documents **access c
   
 1. Sur l’appareil iOS de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur.
     
-2. Entrez un code confidentiel incorrect autant de fois que le spécifie la stratégie. Vous verrez une invite qui indique que la limite de tentative de code confidentiel est **atteinte** pour réinitialiser le code confidentiel. 
+2. Entrez un code confidentiel incorrect autant de fois que le spécifie la stratégie. Vous verrez une invite qui indique que la limite de tentative de code confidentiel **est atteinte** pour réinitialiser le code confidentiel. 
     
     ![After too many incorrect PIN attempts, you need to reset your PIN.](../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   

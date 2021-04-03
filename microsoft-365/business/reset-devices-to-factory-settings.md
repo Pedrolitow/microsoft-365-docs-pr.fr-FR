@@ -2,8 +2,8 @@
 title: Rétablir les paramètres par défaut des appareils Windows 10
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Découvrez comment utiliser Microsoft 365 pour les entreprises pour réinitialiser aux paramètres d’usine les appareils Windows 10 que vous gérez, en rétablissant leurs paramètres d’origine à l’achat.
-ms.openlocfilehash: 6b82f502f8fdcbbd2338b2a0e2ad69d230a693cb
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 29d5b8758ef7d86c7ac283460d0a1a87bffaf5f3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470804"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578204"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Rétablir les paramètres par défaut des appareils Windows 10
 

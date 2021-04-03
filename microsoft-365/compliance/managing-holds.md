@@ -1,5 +1,5 @@
 ---
-title: Gérer les prises en charge dans Advanced eDiscovery
+title: Gérer les holds dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,20 +19,20 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment placer des conservations sur les dépositaires et leurs sources de données pour conserver le contenu pertinent pour votre cas Advanced eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926372"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570588"
 ---
-# <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les prises en charge dans Advanced eDiscovery
+# <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les holds dans Advanced eDiscovery
 
 Vous pouvez utiliser un cas Advanced eDiscovery pour créer des conservations afin de conserver le contenu qui peut être pertinent pour votre cas. À l’aide des fonctionnalités de conservation eDiscovery avancée, vous pouvez placer des conservations sur les dépositaires et leurs sources de données. En outre, vous pouvez placer des boîtes aux lettres et des sites OneDrive Entreprise en attente non verrouillées. Vous pouvez également placer en attente la boîte aux lettres de groupe, le site SharePoint et le site OneDrive Entreprise d’un groupe Microsoft 365. De même, vous pouvez placer en attente la boîte aux lettres et le site associés à Microsoft Teams. Lorsque vous placez des emplacements de contenu en conservation, le contenu est mis en attente jusqu’à ce que vous ôtiez le dépositaire, que vous supprimiez un emplacement de données spécifique ou que vous supprimiez entièrement la stratégie de conservation.
 
 ## <a name="manage-custodian-based-holds"></a>Gérer les conservations basées sur les dépositaires
 
-Dans certains cas, vous pouvez avoir un ensemble de dépositaires que vous avez identifiés et que vous avez décidé de conserver leurs données pendant le cas. Dans Advanced eDiscovery, lorsque ces dépositaires sont placés en conservation, l’utilisateur et les sources de données sélectionnées sont automatiquement ajoutés à une stratégie de conservation des dépositaires.
+Dans certains cas, vous pouvez avoir un ensemble de dépositaires que vous avez identifiés et que vous avez décidé de conserver leurs données pendant le cas. Dans Advanced eDiscovery, lorsque ces dépositaires sont mis en attente, l’utilisateur et les sources de données sélectionnées sont automatiquement ajoutés à une stratégie de conservation des dépositaires.
 
 Pour afficher la stratégie de conservation des dépositaires :
 
@@ -70,17 +70,15 @@ Pour créer une mise en attente non privative pour un cas Advanced eDiscovery :
   
 8. Choisissez les emplacements de contenu que vous souhaitez placer en attente. Vous pouvez placer des boîtes aux lettres, des sites et des dossiers publics en attente.
 
-   1. **Messagerie Exchange** : cliquez sur Choisir des utilisateurs, des groupes ou des équipes, puis cliquez à nouveau sur Choisir des utilisateurs, des groupes ou des équipes pour spécifier les boîtes aux lettres à placer en attente.   Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer en attente les boîtes aux lettres des membres du groupe) à placer en attente. Vous pouvez également placer la boîte aux lettres associée en attente pour un groupe Microsoft 365 ou une équipe Microsoft. Sélectionnez la case à cocher Utilisateur, Groupe, Équipe, Cliquez sur **Choisir,** puis cliquez sur **Terminé**.
+   1. **Messagerie Exchange** : cliquez sur Choisir des utilisateurs, des groupes ou des équipes, puis cliquez à nouveau sur Choisir des utilisateurs, des **groupes** ou des équipes pour spécifier les boîtes aux lettres à placer en attente.  Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer en attente les boîtes aux lettres des membres du groupe) à placer en attente. Vous pouvez également placer la boîte aux lettres associée en attente pour un groupe Microsoft 365 ou une équipe Microsoft. Sélectionnez la case à cocher Utilisateur, Groupe, Équipe, Cliquez sur **Choisir,** puis cliquez sur **Terminé**.
  
       > [!NOTE]
       > Lorsque vous cliquez **sur Choisir des utilisateurs,** des groupes ou des équipes pour spécifier les boîtes aux lettres à placer en attente, le soche de boîte aux lettres qui s’affiche est vide. Il s’agit d’une conception pour améliorer les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche.
 
    1. **Sites SharePoint** : cliquez **sur Choisir des sites,** puis cliquez à nouveau sur Choisir **des sites** pour spécifier les sites SharePoint et OneDrive Entreprise à placer en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Microsoft 365 ou une équipe Microsoft. Cliquez **sur Choisir,** puis sur **Terminé.**
-    
-      Consultez la section **FAQ** pour obtenir des conseils sur la mise en attente des groupes Microsoft 365 et de Microsoft Teams.
 
       > [!NOTE]
-      > L’URL du compte OneDrive d’un utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où l’UPN d’une personne est modifié, son URL OneDrive change également pour incorporer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une mise en attente non privative et que son UPN est modifié, vous devez mettre à jour la mise en attente et pointer vers la nouvelle URL OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
+      > L’URL du compte OneDrive d’un utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où le nom d’upn d’une personne est modifié, son URL OneDrive change également pour incorporer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une mise en attente non privative et que son UPN est modifié, vous devez mettre à jour la mise en attente et pointer vers la nouvelle URL OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
 
    1. **Dossiers publics Exchange** : déplacez le bouton bascule vers la position Tout pour placer tous les dossiers publics de votre organisation Exchange Online en attente. Notez que vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le bouton bascule sur **Aucun** si vous ne souhaitez pas placer de mise en attente sur les dossiers publics.
 
@@ -94,9 +92,9 @@ Pour créer une mise en attente non privative pour un cas Advanced eDiscovery :
 
      Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](/office365/SecurityCompliance/keyword-queries-and-search-conditions)
 
-11. Après avoir configuré une attente basée sur une requête, cliquez sur **Suivant**.
+11. Après avoir configuré une attente basée sur une requête, cliquez sur **Suivant.**
 
-12. Examinez vos paramètres, puis cliquez **sur Créer cette mise en attente.**
+12. Examinez vos paramètres, puis cliquez sur **Créer cette mise en attente.**
 
 ## <a name="view-hold-statistics"></a>Afficher les statistiques de la attente
 
@@ -114,11 +112,11 @@ Gardez les points suivants à l’esprit concernant les statistiques de la atten
 
 - Il est normal que le nombre d’éléments en attente augmente au fil du temps, car les utilisateurs dont la boîte aux lettres ou le site est en attente envoient ou reçoivent généralement de nouveaux messages électroniques et créent des documents SharePoint et OneDrive Entreprise.
 
-- Si un site SharePoint ou un compte OneDrive est déplacé vers une autre région dans un environnement multigéogé, les statistiques de ce site ne seront pas incluses dans les statistiques de la recherche. Toutefois, le contenu du site est toujours en attente. En outre, si un site est déplacé vers une autre région, l’URL affichée dans la mise en attente ne sera pas mise à jour. Vous devez modifier la mise en attente et mettre à jour l’URL.
+- Si un site SharePoint ou un compte OneDrive est déplacé vers une autre région dans un environnement multigéogé, les statistiques de ce site ne seront pas incluses dans les statistiques de la recherche. Toutefois, le contenu du site sera toujours en attente. En outre, si un site est déplacé vers une autre région, l’URL affichée dans la mise en attente ne sera pas mise à jour. Vous devez modifier la mise en attente et mettre à jour l’URL.
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Mettre en attente Microsoft Teams et les groupes Office 365
 
-Microsoft Teams repose sur des groupes Office 365. Par conséquent, les placer en attente dans Advanced eDiscovery est très similaire. 
+Microsoft Teams repose sur les groupes Office 365. Par conséquent, les placer en attente dans Advanced eDiscovery est très similaire.
 
 - **Comment puis-je ma cartographier un site microsoft 365 ou un site Microsoft Teams supplémentaire à un dépositaire ? Et qu’en est-il du placement d’une mise en attente non privative sur les groupes Microsoft 365 et Microsoft Teams ?** Microsoft Teams repose sur les groupes Microsoft 365. Par conséquent, les placer en attente dans un cas eDiscovery est très similaire. Gardez les points suivants à l’esprit lorsque vous placez les groupes Microsoft 365 et Microsoft Teams en attente.
   - Pour placer le contenu situé dans les Groupes Microsoft 365 et Microsoft Teams en attente, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou une équipe.
@@ -152,7 +150,7 @@ Microsoft Teams repose sur des groupes Office 365. Par conséquent, les placer e
   
 - Sinon, les conversations qui font partie de la liste De conversation dans Microsoft Teams sont stockées dans la boîte aux lettres de l’utilisateur qui participe à la conversation.  Les fichiers qu’un utilisateur partage dans les conversations de conversation sont stockés dans le site OneDrive Entreprise de l’utilisateur qui partage le fichier. Par conséquent, vous devez placer les boîtes aux lettres utilisateur individuelles et les sites OneDrive Entreprise en attente pour conserver les conversations et les fichiers dans la liste de conversation. 
   
-- Chaque équipe Ou canal d’équipe Microsoft contient un Wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez mettre en attente le contenu du Wiki en mettant le site SharePoint de l’équipe en attente.
+- Chaque équipe Microsoft ou canal d’équipe contient un Wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez mettre en attente le contenu du Wiki en mettant le site SharePoint de l’équipe en attente.
 
   > [!NOTE]
   > La possibilité de conserver le contenu Wiki pour une équipe Microsoft ou un canal d’équipe (lorsque vous placez le site SharePoint de l’équipe en attente) a été publiée le 22 juin 2017. Si un site d’équipe est en attente, le contenu wiki est conservé à partir de cette date. Toutefois, si un site d’équipe est en attente et que le contenu wiki a été supprimé avant le 22 juin 2017, le contenu wiki n’a pas été conservé.

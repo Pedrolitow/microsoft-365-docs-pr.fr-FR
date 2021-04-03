@@ -2,8 +2,8 @@
 title: 'Travailler n’importe où : vue d’ensemble'
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,28 +20,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de la façon dont Microsoft 365 vous aide à travailler n’importe où.
-ms.openlocfilehash: f68c2f4b05437dd5cb29a3588a4878f464c5566a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 94033282edd980b022898da80b298a22c228e586
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164560"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578542"
 ---
 # <a name="work-from-anywhere---overview"></a>Travailler n’importe où : vue d’ensemble
 
-Absent(s) de votre bureau ? Plus de batterie d’ordinateur portable ? Pas de problème! Gérer votre travail n’importe où avec Office sur votre téléphone ou tablette.
+Vous n’avez pas de bureau ? Plus de batterie d’ordinateur portable ? Pas de problème! Gérer votre travail n’importe où avec Office sur votre téléphone ou tablette.
 
-**Conseil professionnel :** Maintenez votre équilibre entre vie professionnelle et vie privée en tenez compte des notifications pour vos applications de travail sur vos appareils personnels.
+**Conseil professionnel :** Maintenez votre équilibre entre vie professionnelle et vie privée en cocher les notifications pour vos applications de travail sur vos appareils personnels.
 
-Utilisez les quatre conseils ci-dessous pour travailler où que vous vous trouvez.
+Utilisez les quatre conseils ci-dessous pour travailler où que vous vous trouveriez.
 
-Téléchargez une infographie pour obtenir des conseils pour travailler n’importe où : 
+Téléchargez une infographie pour obtenir des conseils pour travailler où que vous soyez : 
 
 [PDF](https://go.microsoft.com/fwlink/?linkid=2079451)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
 **Vous envisagez de travailler régulièrement à domicile ?**
 
-Utilisez ce modèle pour analyser vos habitudes et la façon dont vous souhaitez travailler pour créer un plan qui fonctionne lorsque vous faites la transition vers un bureau à domicile. Collectez le matériel et les fournitures pour optimiser votre espace et vous assurer une efficacité et une utilisation efficace. [Télécharger le modèle](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
+Utilisez ce modèle pour analyser vos habitudes et la façon dont vous souhaitez travailler pour créer un plan qui fonctionne lorsque vous faites la transition vers un bureau à domicile. Collectez le matériel et les fournitures pour optimiser votre espace et vous maintenir efficace et en déplacement. [Télécharger le modèle](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
 
 ## <a name="install-outlook-and-keep-in-touch"></a>Installer Outlook et rester en contact
 
@@ -71,7 +71,7 @@ Vous avez besoin d’aide ? Obtenez des conseils [sur l’endroit où](https://s
 
 ### <a name="work-on-your-phone-or-tablet"></a>Travailler sur votre téléphone ou tablette
 
-Installez les applications Office sur un téléphone ou une tablette et travaillez où que vous se trouvez. Téléchargez les applications, lancez-les, connectez-vous et définissez votre compte.
+Installez les applications Office sur un téléphone ou une tablette et travaillez où que vous se trouvez. Téléchargez les applications, puis lancez,connectez-vous et définissez votre compte.
 
 En savoir plus sur l’installation de l’application Office sur : [Android](https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236)  |  [iOS.](https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343)
 

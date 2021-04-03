@@ -2,8 +2,8 @@
 title: Mise à niveau vers Microsoft 365 Business Premium à partir de Microsoft 365 Business Standard
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez la différence entre Microsoft 365 Business Standard et Microsoft 365 Business Premium et la façon dont vous pouvez mettre à niveau vers Microsoft 365 Business Premium.
-ms.openlocfilehash: ef3d929164f83d4e48157065eb1ae1d2a1a9452e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1f38270c9acb6b803d16bb842140cc6df9cee768
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912919"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578304"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Mise à niveau vers Microsoft 365 Business Premium à partir de Microsoft 365 Business Standard
 
@@ -63,7 +63,7 @@ Nous avons ajouté une comparaison côte à côte de ces deux plans à la descri
 3. Sur la page suivante, sélectionnez **Mettre à niveau.**
 
   > [!NOTE]
-  > Si vous voyez un message qui indique que la mise à niveau de votre abonnement n’est pas prise en charge avec la gestion des licences basée sur les groupes dans **Azure Active Directory,** vous pouvez l’ignorer en toute sécurité, sauf si vous avez une organisation très importante. Les organisations qui ont sélectionné cette option savent qu’elles utilisent des licences basées sur des groupes.
+  > Si un message vous indique que la mise à niveau de votre abonnement n’est pas prise en charge avec les licences basées sur des groupes dans **Azure Active Directory,** vous pouvez ignorer cela en toute sécurité, sauf si vous avez une organisation très importante. Les organisations qui ont sélectionné cette option savent qu’elles utilisent des licences basées sur des groupes.
 
 4. Ensuite, vous pouvez afficher la liste des plans vers qui vous pouvez mettre à niveau. Dans ce cas, recherchez l’offre Microsoft 365 Business Premium. Vous pouvez faire défiler vers le bas si vous souhaitez voir toutes les applications et services inclus dans ce plan. Sous **Microsoft 365 Business Premium, sélectionnez** **Mettre** à niveau pour ajouter Microsoft 365 Business Premium à votre panier.
 
@@ -88,7 +88,7 @@ Maintenant que des licences Microsoft 365 Business Premium ont été attribuées
   
 1. Dans le centre d’administration, dans le volet de navigation, allez à **Stratégies des** \> **appareils.**
 
-2. Dans la page **Stratégies d’appareil,** **sélectionnez Ajouter.**
+2. Dans la page **Stratégies d’appareil,** sélectionnez **Ajouter.**
 
 3. Dans le **volet Ajouter** une stratégie, nommez la stratégie (par exemple, Protéger les fichiers de travail), puis choisissez un **type** de stratégie dans la liste liste liste.
 
@@ -106,4 +106,4 @@ Maintenant que des licences Microsoft 365 Business Premium ont été attribuées
 
     - Voir [Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md) pour obtenir la procédure à suivre pour les appareils Windows.
 
-    - Voir Configurer des appareils mobiles pour les utilisateurs [de Microsoft 365 Business Premium](set-up-mobile-devices.md) pour obtenir la procédure pour les téléphones et iPhone Android.
+    - Voir Configurer des appareils mobiles pour [les utilisateurs de Microsoft 365 Business Premium](set-up-mobile-devices.md) pour obtenir la procédure pour les téléphones et iPhone Android.

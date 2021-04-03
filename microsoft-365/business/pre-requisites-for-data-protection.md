@@ -2,8 +2,8 @@
 title: Conditions préalables à la protection des données sur les appareils avec Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: Découvrez les conditions requises pour la configuration de votre organisation avec Microsoft 365 pour les entreprises et la protection des données de travail sur les appareils de vos utilisateurs.
-ms.openlocfilehash: c0fca0e038d15b19cb2a37eb5705296ed3da3746
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 73e5ebf61ca828ff79b0688ce7dcd374b77daf16
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912899"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578284"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Conditions préalables à la protection des données sur les appareils avec Microsoft 365 pour les entreprises
 

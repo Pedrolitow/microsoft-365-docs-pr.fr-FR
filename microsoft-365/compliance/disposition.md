@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression de contenu, que vous utilisiez une révision de destruction ou que le contenu soit automatiquement supprimé selon les paramètres que vous avez configurés.
-ms.openlocfilehash: d9786b5e93801153e168784d51e37a00ee1822bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051926"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488167"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -44,7 +44,7 @@ Pour accorder aux utilisateurs uniquement les autorisations dont ils ont besoin 
 
 De plus, pour afficher le contenu des éléments pendant le processus de destruction, ajoutez des utilisateurs aux deux groupes de rôles suivants : **la visionneuse de contenu de l’Explorateur de contenu** et **visionneuse de liste de l’Explorateur de contenu**. Si les utilisateurs n’ont pas les autorisations de ces groupes de rôles, ils peuvent toujours sélectionner une action de révision de destruction pour achever la révision de destruction, mais vous devez le faire sans avoir la possibilité d’afficher le contenu de l’élément à partir du centre de conformité.
 
-Pour obtenir des instructions pour configurer ces autorisations, reportez-vous à la rubrique [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour obtenir des instructions pour configurer ces autorisations, reportez-vous à la rubrique [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Activer l’audit
 
@@ -124,16 +124,21 @@ Le contenu en attente de révision de destruction est supprimé uniquement lorsq
 
 ## <a name="disposition-of-records"></a>Destruction des enregistrements
 
-Utilisez l’onglet **Destruction** à partir de la page **Gestion des enregistrements** pour identifier les enregistrements qui sont désormais supprimés, soit automatiquement, soit après une révision de suppression. Ces éléments affichent **Enregistrements supprimés** dans la colonne **Type**. Par exemple :
+Utilisez l’onglet **Destruction** à partir de la page **Gestion des enregistrements** pour identifier :
+
+- Éléments supprimés suite à une révision avant destruction.
+- Les éléments marqués comme enregistrement ou enregistrement réglementaire qui ont été automatiquement supprimés à la fin de leur période de rétention.
+
+Ces éléments affichent **Enregistrements supprimés** dans la colonne **Type**. Par exemple :
 
 ![Éléments supprimés sans révision avant destruction](../media/records-disposed2.png)
 
-Les éléments qui apparaissent dans la **Éléments supprimés** pour les étiquettes d’enregistrement sont conservés pendant sept ans après la suppression de l’élément, avec une limite de 1 million éléments par enregistrement pour cette période. Si vous voyez le nombre de **Count** approcher cette limite d'un million, et que vous avez besoin d'une preuve de destruction pour vos enregistrements, contactez le [Support Microsoft](/office365/admin/contact-support-for-business-products).
+Les éléments qui s’affichent dans l’onglet **Éléments supprimés** sont conservés pendant sept ans après la suppression de l’élément, avec une limite d’un million d’éléments par enregistrement pour cette période. Si vous voyez le nombre de **Count** approcher cette limite d'un million, et que vous avez besoin d'une preuve de destruction pour vos enregistrements, contactez le [Support Microsoft](/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
-> Cette fonctionnalité est basée sur les informations du [journal d’audit unifié](search-the-audit-log-in-security-and-compliance.md) et nécessite par conséquent que l’audit soit [activé et puisse faire l’objet d’une recherche](turn-audit-log-search-on-or-off.md) de sorte que les événements correspondants soient capturés.
+> Cette fonctionnalité est basée sur les informations du [Journal d’audit unifié](search-the-audit-log-in-security-and-compliance.md) et nécessite par conséquent que l’audit soit [Activé et accessible à la recherche](turn-audit-log-search-on-or-off.md) pour la capture des événements correspondants.
 
-Pour l’audit, recherchez **fichier supprimé marqué comme enregistrement** dans la catégorie **activités de fichier et de page** . Cet événement d’audit est applicable aux documents et messages électroniques.
+Pour auditer les éléments supprimés marqués comme enregistrements ou enregistrements réglementaires, recherchez **Fichier supprimé marqué comme enregistrement** dans la catégorie **Activités des fichiers et pages**. Cet événement d’audit est applicable aux documents et messages électroniques.
 
 ## <a name="filter-and-export-the-views"></a>Filtrer et exporter les affichages
 

@@ -2,8 +2,8 @@
 title: Passer de Google Workspace à Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -15,19 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment déplacer vos données et utilisateurs de Google Workspace vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 49fc163821f74ca42a07353e59ed4439b6d52023
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 57a360a070dd5a0ceba79829c2487a2bfc73868b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49924989"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578758"
 ---
 # <a name="switch-from-google-workspace---overview"></a>Basculer à partir de Google Workspace - Vue d’ensemble
 

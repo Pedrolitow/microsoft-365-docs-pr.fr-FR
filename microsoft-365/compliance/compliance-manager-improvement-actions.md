@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment effectuer l’implémentation et les tests sur les contrôles dans le Gestionnaire de conformité Microsoft. Affecter des rapports de travail, stocker de la documentation et exporter des rapports.
-ms.openlocfilehash: c465a574ed9c1a8ad8ef9e2bfc7f864545ae28d9
-ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
+ms.openlocfilehash: e761d8d4410f1c52bb79d4a225eec407f1fd6a6e
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49849591"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570383"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Affecter et effectuer des actions d’amélioration dans le Gestionnaire de conformité
 
-**Dans cet article :** Cet article explique comment gérer votre flux **de travail de conformité** avec des actions d’amélioration. Découvrez comment affecter des **actions d’amélioration pour** l’implémentation et le test, gérer les **mises à jour** et exporter des **rapports.**
+**Dans cet article :** Cet article explique comment gérer votre flux **de travail** de conformité avec des actions d’amélioration. Découvrez comment affecter des **actions d’amélioration pour** l’implémentation et le test, gérer les **mises à jour** et exporter des **rapports.**
 
 ## <a name="manage-compliance-workflows-with-improvement-actions"></a>Gérer les flux de travail de conformité avec des actions d’amélioration
 
@@ -56,7 +56,9 @@ Une fois que vous avez identifié la personne appropriée, assurez-vous qu’ell
 
 2. Dans le volet volant Modifier l’état, sélectionnez  la zone Affecté à pour afficher une liste de personnes suggérées d’utilisateurs.  Vous pouvez sélectionner l’utilisateur dans la liste ou taper l’adresse de messagerie de la personne à qui vous souhaitez l’affecter.
 
-3. Sélectionnez **Enregistrer et fermer.** L’utilisateur affecté reçoit un e-mail expliquant que l’action d’amélioration lui a été affectée, avec un lien direct vers l’action d’amélioration. (Remarque : GCC (US Government Community) Les clients élevés ne reçoivent pas de courrier électronique lorsque des actions leur sont affectées.)
+3. Sélectionnez **Enregistrer et fermer.** L’utilisateur affecté reçoit un e-mail expliquant que l’action d’amélioration lui a été affectée, avec un lien direct vers l’action d’amélioration. 
+> [!NOTE]
+> Les clients de la communauté GCC (Government Community) et du département de la Défense (DoD) des États-Unis ne reçoivent pas de courrier électronique lorsque des actions d’amélioration leur sont affectées.
 
 L’utilisateur affecté peut ensuite effectuer les actions recommandées.
 
@@ -73,7 +75,7 @@ Vous pouvez affecter plusieurs actions d’amélioration à un utilisateur en su
 
 ## <a name="perform-work-and-store-documentation"></a>Effectuer des travaux et stocker de la documentation
 
-Vous pouvez télécharger des fichiers et des notes relatifs à l’implémentation et au test de travail directement dans la section **Notes et documentation.** Cet environnement est un référentiel sécurisé et centralisé pour vous aider à démontrer la satisfaction des contrôles pour répondre aux normes et réglementations de conformité. Tout utilisateur ayant un accès en lecture seule peut lire le contenu de cette section. Seuls les utilisateurs ayant des droits d’édition peuvent télécharger des fichiers et entrer ou modifier des notes.
+Vous pouvez charger des fichiers et des notes relatifs à l’implémentation et au test de travail directement dans la section **Notes et documentation.** Cet environnement est un référentiel sécurisé et centralisé pour vous aider à démontrer la satisfaction des contrôles pour répondre aux normes et réglementations de conformité. Tout utilisateur ayant un accès en lecture seule peut lire le contenu de cette section. Seuls les utilisateurs ayant des droits d’édition peuvent télécharger des fichiers et entrer ou modifier des notes.
 
 La section **Notes et documentation** contient des champs pour les documents téléchargés, les notes d’implémentation, les notes de test et les notes supplémentaires.
 
@@ -86,7 +88,7 @@ La section **Notes et documentation** contient des champs pour les documents té
     - Vidéo (.mkv)
     - Fichiers compressés (.zip, .rar)
 - Une fois votre fichier résolu dans le volet, sélectionnez **Fermer,** qui enregistre automatiquement la pièce jointe du fichier. Vous verrez ensuite le fichier répertorié sous **les documents téléchargés.**
-- Pour télécharger ou supprimer le document, sélectionnez Gérer les **documents** sous la liste des documents. Dans le volet volant, sélectionnez la ligne du document pour la mettre en surbrillon, puis sélectionnez **Télécharger** ou **Supprimer.**
+- Pour télécharger ou supprimer le document, sélectionnez **Gérer les documents** sous la liste des documents. Dans le volet volant, sélectionnez la ligne du document pour la mettre en surbrillon, puis sélectionnez **Télécharger** ou **Supprimer.**
 
 #### <a name="implementation-notes-test-notes-and-additional-notes"></a>Notes d’implémentation, notes de test et notes supplémentaires
 

@@ -2,8 +2,8 @@
 title: Configurer la sign-in multi-facteur sur votre téléphone
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer l’authentification multifacteur sur votre téléphone.
-ms.openlocfilehash: a41f8b99dfbfc25af0815450b42cb83884e3246e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4a4041777b055b03e2ab5efede72eca56afdf589
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422050"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578662"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>Configurer l’authentification multifacteur sur votre téléphone
 
@@ -49,4 +49,4 @@ L’authentification multifacteur offre une sécurité renforcée pour votre ent
 1. Une fois que le compte a été ajouté, sélectionnez **Got It**.
 1. Sur votre ordinateur, choisissez **Suivant,** puis choisissez **à nouveau Suivant.**
 1. Notez le code qui apparaît sur votre appareil mobile, entrez le code sur votre ordinateur dans la zone sous Étape **2,** puis choisissez **Vérifier**.
-1. Dans les zones sous **Étape 3,** entrez un numéro de téléphone de sauvegarde, tel que votre numéro de bureau, choisissez **Suivant,** puis choisissez **Terminé.**
+1. Dans les zones de **l’étape 3,** entrez un numéro de téléphone de sauvegarde, tel que votre numéro de bureau, choisissez **Suivant,** puis choisissez **Terminé.**

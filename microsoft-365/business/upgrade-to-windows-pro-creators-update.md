@@ -2,8 +2,8 @@
 title: Mettre à niveau les appareils Windows vers Windows 10 Professionnel
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Découvrez comment mettre à niveau vos appareils Windows vers Windows 10 Professionnel pour utiliser des fonctionnalités de mise en réseau professionnelle et de sécurité plus avancées.
-ms.openlocfilehash: 24ef1f1547ed8873ed1fa18120eef6275f53c7dc
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: ffcdff540da18a2ecc0578e8015424a2435de6a8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785527"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578044"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Mettre à niveau les appareils Windows vers Windows 10 Professionnel
 
@@ -47,7 +47,7 @@ Pour mettre à niveau vers Windows 10 Professionnel, vous avez plusieurs options
     
 - Installez la mise à niveau à partir du site de téléchargement de [logiciels Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951 ) Sélectionnez cette option si l’appareil que vous êtes connecté se trouve sur le même appareil que celui que vous &ndash; souhaitez mettre à jour. 
 
-    - Sur le site de téléchargement de logiciels, cliquez sur **Mettre** à jour maintenant pour commencer la mise à niveau de l’appareil vers Windows 10 Professionnel Creators Update. 
+    - Sur le site de téléchargement de logiciels, cliquez sur Mettre à jour **maintenant** pour commencer la mise à niveau de l’appareil vers Windows 10 Professionnel Creators Update. 
     
 - Créez un support [](https://go.microsoft.com/fwlink/?LinkID=836960) d’installation à l’aide de l’outil de création de médias Sélectionnez cette option pour créer un support &ndash; d’installation Windows 10 Professionnel Creators Update (disque mémoire USB ou fichier ISO) pour installer Windows 10 sur un PC différent de celui que vous utilisez.
 

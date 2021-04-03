@@ -1,7 +1,7 @@
 ---
 title: Préparer les lecteurs mappés pour le Bureau géré Microsoft
-description: Étapes importantes pour s’assurer
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+description: Étapes importantes pour s’assurer que les utilisateurs peuvent accéder aux données sur des lecteurs mappés
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cd45d6155fc0e01f6a285f6182aa051281d160e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: f770f5083fe9193660b03e7971b09a127f2dae16
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922907"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574558"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Préparer les lecteurs mappés pour le Bureau géré Microsoft
 
@@ -32,7 +33,7 @@ Si vous ne pouvez pas supprimer ou remplacer des lecteurs mappés pour certains 
     
 Pour ce type de demande, vous devez fournir les détails suivants dans la demande de support : 
 
-- Tous les chemins d’accès UNC aux emplacements de partage de fichiers qui devront être mappés pour les appareils bureau géré Microsoft 
+- Tous les chemins UNC vers les emplacements de partage de fichiers qui devront être mappés pour les appareils bureau géré Microsoft 
 - Groupes d’utilisateurs qui nécessitent l’accès à ces emplacements de partage de fichiers 
 - Toute lettre de lecteur spécifique à attribuer (si nécessaire)
 
@@ -46,10 +47,22 @@ Il est entièrement de votre responsabilité de vous assurer que les utilisateur
 
 ### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>Pour que les lecteurs mappés sont déployés dans Le Bureau géré Microsoft
  
-Assurez-vous que les lecteurs mappés ne peuvent pas être évités et que vous avez soigneusement examiné les conditions requises avant d’envoyer une demande de service. Ensuite, suivez les étapes suivantes :
+Assurez-vous que les lecteurs mappés ne peuvent pas être évités et que vous avez attentivement examiné les conditions requises avant d’envoyer une demande de service. Ensuite, suivez les étapes suivantes :
 
 1. Accédez [à Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et sélectionnez « Résolution des problèmes + prise en charge », puis recherchez « Demandes de service » dans la section Bureau géré Microsoft.  
 2. Envoyez une demande de support intitulée « Déploiement de lecteurs mappés » et fournissez tous les détails requis du partage de fichiers.  
 3. Les opérations informatiques du bureau géré Microsoft vous conseillent, à l’aide des mises à jour des demandes de support, une fois la demande terminée. Initialement, cette configuration sera déployée uniquement sur les appareils du groupe de déploiement Test.  
 4. Vous devez tester et vérifier si la configuration déployée par les opérations informatiques du bureau géré Microsoft fonctionne comme prévu. Répondez à l’aide de l’onglet Discussion dans les détails de la même demande de support pour avertir les opérations informatiques du bureau géré Microsoft une fois que vous avez terminé vos tests.  
-5. L’équipe des opérations informatiques du bureau géré Microsoft déploie ensuite la configuration sur les autres groupes de déploiement.
+5. L’équipe des opérations informatiques du bureau géré Microsoft déploiera ensuite la configuration sur les autres groupes de déploiement. 
+
+## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
+
+1. Passer en [revue les conditions préalables pour le Bureau géré Microsoft.](prerequisites.md)
+2. [Utiliser les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
+3. [Conditions préalables pour les comptes invité](guest-accounts.md)
+4. [Configuration du réseau pour Bureau géré Microsoft](network.md)
+5. [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
+6. [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](authentication.md)
+7. [Applications dans le Bureau géré Microsoft](apps.md)
+8. [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md) (cet article)
+9. [Préparer des ressources d’impression pour le Bureau géré Microsoft](printing.md)

@@ -2,8 +2,8 @@
 title: Configurer des appareils mobiles pour les utilisateurs de Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installez Office sur un iPhone ou un téléphone Android, et vos fichiers de travail dans les applications Office seront protégés par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: ef18fcce851b8fa1573fd5134bd25fb7d4a3d8f9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: fefec17344d199ced230907fbaa85d98198cfb94
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928741"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578164"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour les utilisateurs de Microsoft 365 pour les entreprises
 
@@ -81,7 +81,7 @@ Regardez une vidéo sur l’installation d’Outlook et d’Office sur des appar
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Pour commencer l’installation sur votre téléphone Android, allez dans le Play Store.
+Pour commencer l’installation sur votre téléphone Android, go to the Play Store.
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
