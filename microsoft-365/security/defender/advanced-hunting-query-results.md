@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dd25d021d04dc5e8a831e327fedb16d28e32b32a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7086108febc25c4ecaaa3015c1d9a49f9d8ee642
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068270"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500915"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Travailler avec des résultats de requête de recherche avancés
 
@@ -74,7 +74,7 @@ Lors de l’affichage des résultats, un graphique en colonnes affiche chaque va
  *d’un graphique en colonnes*
 
 #### <a name="alert-severity-by-operating-system"></a>Gravité des alertes par système d’exploitation
-Vous pouvez également utiliser l’opérateur pour préparer les résultats pour la graphique `summarize` des valeurs de plusieurs champs. Par exemple, vous souhaitez peut-être comprendre comment les gravités des alertes sont distribuées entre les systèmes d’exploitation. 
+Vous pouvez également utiliser `summarize` l’opérateur pour préparer les résultats pour la graphique des valeurs de plusieurs champs. Par exemple, vous souhaitez peut-être comprendre comment les gravités des alertes sont distribuées entre les systèmes d’exploitation. 
 
 La requête ci-dessous utilise un opérateur pour tirer les informations du système d’exploitation à partir du tableau, puis pour compter les valeurs à la fois dans `join` `DeviceInfo` les `summarize` `OSPlatform` colonnes et dans les `Severity` colonnes :
 
@@ -86,10 +86,10 @@ AlertInfo
 ```
 Ces résultats sont mieux visualisés à l’aide d’un graphique en colonnes empilées :
 
-![Image des résultats de requête de recherche avancée affichés sous la mesure de résultats de requête de graphique empilé pour les alertes par système d’exploitation et la gravité affichées sous la mesure ](../../media/advanced-hunting-stacked-chart.jpg)
+![Image des résultats de requête de recherche avancée affichés sous la mesure d’un graphique empilé Résultats de requête pour les alertes par système d’exploitation et gravité affichées sous la mesure ](../../media/advanced-hunting-stacked-chart.jpg)
  *d’un graphique empilé*
 
-#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage parmi les dix principaux domaines d’expéditeurs
+#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage sur les dix principaux domaines d’expéditeurs
 Si vous avez affaire à une liste de valeurs qui n’est pas finie, vous pouvez utiliser l’opérateur pour graphiquer uniquement les valeurs avec le plus grand nombre `Top` d’instances. Par exemple, pour obtenir les dix principaux domaines d’expéditeurs avec le plus de messages de hameçonnage, utilisez la requête ci-dessous :
 
 ```kusto
@@ -112,7 +112,7 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-Le graphique en lignes ci-dessous met clairement en évidence les périodes avec une activité plus importante impliquant `invoice.doc` : 
+Le graphique en lignes ci-dessous met clairement en évidence les périodes avec plus d’activité impliquant `invoice.doc` : 
 
 ![Image des résultats de requête de recherche avancée affichés sous la la mesure d’un graphique en lignes montrant le nombre d’événements impliquant ](../../media/advanced-hunting-line-chart.jpg)
  *un fichier au fil du temps*
@@ -142,7 +142,7 @@ Cliquez avec le bouton droit de la souris sur une valeur du jeu de résultats po
 - Exclure la valeur sélectionnée de la requête (`!=`)
 - Obtenez des opérateurs plus avancés pour ajouter la valeur à votre requête (par exemple, `contains`, `starts with` et `ends with`) 
 
-![Image du jeu de résultats de recherche avancé](../../media/advanced-hunting-results-filter.png)
+![Image du jeu de résultats de recherche avancée](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>Filtrer les résultats de la requête
 Les filtres de droite fournissent un résumé du jeu de résultats. Chaque colonne possède sa propre section qui répertorie les valeurs distinctes trouvées pour cette colonne et le nombre d’instances.

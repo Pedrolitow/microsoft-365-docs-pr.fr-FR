@@ -1,5 +1,5 @@
 ---
-title: Obtenir le score d’exposition
+title: Obtenir un score d'exposition
 description: Récupère le score d’exposition de l’organisation.
 keywords: api, api de graphique, api pris en charge, obtenir, score d’exposition, score d’exposition de l’organisation
 search.product: eADQiWindows 10XVcnh
@@ -7,22 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e7037e49a7f750597af15cfb16e1552aeb98859a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c6b3f965c7abb1cb9208f0bfa157c1fd8aa3f891
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166569"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500711"
 ---
-# <a name="get-exposure-score"></a>Obtenir le score d’exposition
+# <a name="get-exposure-score"></a>Obtenir un score d'exposition
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -99,4 +99,4 @@ Voici un exemple de réponse.
 ## <a name="see-also"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Score d& exposition des menaces et des vulnérabilités](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Niveau d’exposition & vulnérabilité des menaces](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score)

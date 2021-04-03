@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7fc2d6ecda35535f6af67aaaf90036ee44b9b79b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4795809b7b24f09e52cb2c48a035dd7925fa136f
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067049"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500722"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -31,11 +31,11 @@ ms.locfileid: "51067049"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-Le tableau du schéma de recherche avancée contient des informations `DeviceProcessEvents` sur la création de processus et les événements connexes. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
+Le tableau du schéma de recherche avancée contient des informations sur `DeviceProcessEvents` la création de processus et les événements connexes. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 
-Pour plus d’informations sur les autres tableaux du schéma de chasse avancé, voir la référence de schéma [de chasse avancée.](advanced-hunting-schema-reference.md)
+Pour plus d’informations sur les autres tableaux du schéma de chasse avancé, voir [la référence du schéma de chasse avancé.](advanced-hunting-schema-reference.md)
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
@@ -50,14 +50,14 @@ Pour plus d’informations sur les autres tableaux du schéma de chasse avancé,
 | `MD5` | string | Hachage MD5 du fichier à l’application de l’action enregistrée |
 | `ProcessId` | entier | ID de processus (PID) du processus nouvellement créé |
 | `ProcessCommandLine` | string | Ligne de commande utilisée pour créer le nouveau processus |
-| `ProcessIntegrityLevel` | string | Niveau d’intégrité du processus nouvellement créé. Windows affecte des niveaux d’intégrité à des processus en fonction de certaines caractéristiques, par exemple, si elles ont été lancées à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
+| `ProcessIntegrityLevel` | string | Niveau d’intégrité du processus nouvellement créé. Windows affecte des niveaux d’intégrité aux processus en fonction de certaines caractéristiques, par exemple s’ils ont été lancés à partir d’un téléchargement Sur Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
 | `ProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus nouvellement créé |
 | `ProcessCreationTime` | DateHeure | Date et heure de création du processus |
 | `AccountDomain` | string | Domaine du compte |
 | `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountSid` | string | Identificateur de sécurité (SID) du compte |
 | `LogonId` | string | Identificateur d’une session d’ouverture de session. Cet identificateur est unique sur le même appareil uniquement entre les redémarrages |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessLogonId` | string | Identificateur d’une session d’ouverture de session du processus à l’origine de l’événement. Cet identificateur est unique sur le même appareil uniquement entre les redémarrages. |

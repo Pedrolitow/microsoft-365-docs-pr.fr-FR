@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b2092f24e4ee3e35918fbdc54b68570ef29fd08e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 941e4989dcb91ff9240131f5980d0e1eced2b21d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068409"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501226"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Atténuer les vulnérabilités du jour zéro : gestion des menaces et des vulnérabilités
 
@@ -67,7 +67,7 @@ Recherchez la vulnérabilité nommée « zero-day » ainsi qu’une description 
 
 ### <a name="software-inventory-page"></a>Page Inventaire logiciel
 
-Recherchez les logiciels avec la balise « zero-day ». Filtrez par la balise « zero day » pour voir uniquement les logiciels avec des vulnérabilités zero-day.
+Recherchez des logiciels avec la balise « zero-day ». Filtrez par la balise « zero day » pour voir uniquement les logiciels avec des vulnérabilités zero-day.
 
 ![Exemple zero day de Windows Server 2016 dans la page d’inventaire logiciel.](images/tvm-zero-day-software-inventory.png)
 
@@ -83,7 +83,7 @@ Affichez des suggestions claires sur les options de correction et d’atténuati
 
 S’il existe un logiciel avec une vulnérabilité zéro jour et des vulnérabilités supplémentaires à résoudre, vous recevrez une recommandation sur toutes les vulnérabilités.
 
-![Exemple de jour zéro de Windows Server 2016 dans la page recommandations de sécurité.](images/tvm-zero-day-security-recommendation.png)
+![Exemple zero day de Windows Server 2016 dans la page recommandations de sécurité.](images/tvm-zero-day-security-recommendation.png)
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>Résoudre les vulnérabilités du jour zéro
 
@@ -97,7 +97,7 @@ Ouvrez les options de correction et choisissez le type d’attention. Une option
 
 ## <a name="track-zero-day-remediation-activities"></a>Suivre les activités de correction du jour zéro
 
-Go to the threat and vulnerability management [Remediation](tvm-remediation.md) page to view the remediation activity item. Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller. Vous pouvez filtrer par type de correction, tel que « mise à jour logicielle » ou « attention requise », pour voir tous les éléments d’activité dans la même catégorie.
+Go to the threat and vulnerability management [Remediation](tvm-remediation.md) page to view the remediation activity item. Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller. Vous pouvez filtrer par type de correction, par exemple « mise à jour logicielle » ou « attention requise », pour voir tous les éléments d’activité dans la même catégorie.
 
 ## <a name="patching-zero-day-vulnerabilities"></a>Correction des vulnérabilités du jour zéro
 
@@ -111,4 +111,4 @@ Lorsqu’un correctif est publié pour le jour zéro, la recommandation est modi
 - [Tableau de bord](tvm-dashboard-insights.md)
 - [Recommandations de sécurité](tvm-security-recommendation.md)
 - [Inventaire des logiciels](tvm-software-inventory.md)
-- [Vulnérabilités dans mon organisation](tvm-weaknesses.md)
+- [Les vulnérabilités dans mon organisation](tvm-weaknesses.md)

@@ -1,5 +1,5 @@
 ---
-title: Obtenir le score de sécurité de l’appareil
+title: Obtenir un score sécurisé d’appareil
 description: Récupère le score de sécurité de l’appareil de l’organisation.
 keywords: api, api de graphique, api pris en charge, obtenir, alertes, récent
 search.product: eADQiWindows 10XVcnh
@@ -7,22 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 921334c937e3f211b032a5d24d4244d9a6fb3d61
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: db4682d0d2fccd7504eb46d9099a9783408cfb73
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166581"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570935"
 ---
-# <a name="get-device-secure-score"></a>Obtenir le score de sécurité de l’appareil
+# <a name="get-device-secure-score"></a>Obtenir un score sécurisé d’appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51166581"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Récupère votre [score de sécurité Microsoft pour les appareils.](tvm-microsoft-secure-score-devices.md) Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. 
+Récupère votre score [de sécurité Microsoft pour les appareils.](tvm-microsoft-secure-score-devices.md) Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. 
 
 ## <a name="permissions"></a>Autorisations
 
@@ -60,7 +60,7 @@ GET /api/configurationScore
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -68,7 +68,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK, avec les données de score sécurisé de l’appareil dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 200 OK, avec les données de score de sécurité de l’appareil dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

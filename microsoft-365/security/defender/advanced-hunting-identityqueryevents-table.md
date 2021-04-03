@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f663a9dcc5bebd3a7fd124bbd0c0fece5dbb62e4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 40383524ffe26326800369570856499d149e31c3
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068318"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500393"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -59,7 +59,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
 | `DeviceName` | string | Nom de domaine complet (FQDN) du point de terminaison |
 | `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
-| `Port` | string | Port TCP utilisé lors de la communication |
+| `Port` | string | Port TCP utilisé pendant la communication |
 | `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
 | `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
 | `DestinationPort` | string | Port de destination des communications réseau associées |

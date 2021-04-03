@@ -4,8 +4,8 @@ description: Defender pour Office 365 en mode d’évaluation crée des stratég
 keywords: évaluer Office 365, Microsoft Defender pour Office 365, évaluation d’Office 365, essayer Office 365, Microsoft Defender, ATP
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e97e510cbc3188f8cc6117c5d7bd1e1d23897eb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0b6166d22930119949faf99334416b85fdb64da0
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204387"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500269"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Évaluer Microsoft Defender pour Office 365
 
@@ -59,14 +59,14 @@ Grâce à l’expérience de mise en place simplifiée, vous pouvez vous concent
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-### <a name="licensing"></a>Licences
+### <a name="licensing"></a>Licence
 
 Pour accéder à l’évaluation, vous devez respecter les exigences de licence. L’une des licences suivantes fonctionne :
 
 - Microsoft Defender pour Office 365 Plan 1
 - Microsoft Defender pour Office 365 Plan 2
 - Microsoft 365 E5, Sécurité Microsoft 365 E5
-- Office 365 E5
+- Office 365 E5
 
 Si vous n’avez pas l’une de ces licences, vous devez obtenir une licence d’essai.
 
@@ -89,10 +89,10 @@ Les rôles suivants sont nécessaires :
 
 |Tâche|Rôle (dans Exchange Online)|
 |---|---|
-|Obtenir un essai gratuit ou acheter Microsoft Defender pour Office 365 (Plan 2)|Rôle d’administrateur de facturation OU rôle d’administrateur global|
-|Créer une stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité|
-|Modifier la stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité|
-|Supprimer la stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité |
+|Obtenir une version d’essai gratuite ou acheter Microsoft Defender pour Office 365 (Plan 2)|Rôle d’administrateur de facturation OU rôle d’administrateur global|
+|Créer une stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité|
+|Modifier la stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité|
+|Supprimer la stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité |
 |Afficher le rapport d’évaluation|Rôle d’administrateur de sécurité OU rôle lecteur sécurité|
 |
 
@@ -110,14 +110,14 @@ Les liens d’URL dans les corps des messages électroniques ne seront pas encap
 
 ### <a name="email-routing"></a>Routage du courrier électronique
 
-Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement acheminé, y compris le nom du connecteur entrant qui a acheminé vos messages. Si vous utilisez simplement Exchange Online Protection, vous n’avez pas de connecteur.  [En savoir plus sur le flux de messagerie et le routage du courrier électronique](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement acheminé, y compris le nom du connecteur entrant qui a acheminé votre courrier électronique. Si vous utilisez simplement Exchange Online Protection, vous n’avez pas de connecteur.  [En savoir plus sur le flux de messagerie et le routage du courrier électronique](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Les scénarios de routage de courrier pris en charge sont les suivants :
 
 - Partenaire tiers **et/ou** fournisseur de services local : le connecteur entrant que vous souhaitez évaluer utilise un fournisseur tiers et/ou vous utilisez une solution pour la sécurité du courrier électronique en local.
 - **Microsoft Exchange Online protection** uniquement : le client que vous souhaitez évaluer utilise Office 365 pour la sécurité du courrier électronique et l’enregistrement MX pointe vers Microsoft.
 
-### <a name="email-security-gateway"></a>Passerelle de sécurité de messagerie
+### <a name="email-security-gateway"></a>Passerelle de sécurité du courrier électronique
 
 Si vous utilisez une passerelle de sécurité de messagerie (ESG) tierce, vous devez connaître le nom du fournisseur. Si vous utilisez un fournisseur ESG local ou non pris en charge, vous devez connaître les adresses IP publiques des appareils.
 

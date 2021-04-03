@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ba63bdeb215c24e68d0e507d99e026c5b2695cb0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 73018bb65c011d10234ec9c02fc61bfb93fa125a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068326"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501130"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -51,7 +51,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `TargetAccountDisplayName` | string | Nom complet du compte à qui l’action enregistrée a été appliquée |
 | `TargetDeviceName` | string | Nom de domaine complet (FQDN) de l’appareil à qui l’action enregistrée a été appliquée |
 | `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
-| `DestinationIPAddress` | string | Adresse IP du périphérique exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
 | `DestinationPort` | string | Port de destination de l’activité |
 | `Protocol` | string | Protocole utilisé pendant la communication |
 | `AccountName` | string | Nom d’utilisateur du compte |
@@ -62,7 +62,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de l’appareil |
 | `IPAddress` | string | Adresse IP attribuée à l’appareil lors de la communication |
-| `Port` | string | Port TCP utilisé lors de la communication |
+| `Port` | string | Port TCP utilisé pendant la communication |
 | `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
 | `ISP` | string | Fournisseur de services Internet associé à l’adresse IP |
 | `ReportId` | long | Identificateur unique de l’événement |

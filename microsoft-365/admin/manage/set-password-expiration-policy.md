@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Découvrez comment configurer une stratégie d'expiration des mots de passe pour votre organisation dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 74b23b4a1b67ecd5c9199388985e8e38c3231239
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0280f4fd43034f9ffb70104771fa4a099943af2d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221822"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500236"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
@@ -43,16 +43,15 @@ ms.locfileid: "51221822"
 
 Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
 
+En tant qu'administrateur, vous pouvez faire en sorte qu'ils expirent après un certain nombre de jours ou qu'ils n'expirent jamais. Par défaut, les mots de passe sont définies pour qu’ils n’expirent jamais pour votre organisation.
+
+Des recherches actuelles indiquent sans équivoque que les changements de mot de passe imposés ne sont pas forcément bénéfiques. Ils poussent les utilisateurs à choisir des mots de passe peu fiables, à réutiliser des mots de passe ou à mettre à jour d'anciens mots de passe de façon qu'ils sont facilement devinables de la part des pirates. Nous vous recommandons d’activer [Authentification multifacteur](../security-and-compliance/set-up-multi-factor-authentication.md).
+
 Vous devez être un [Administrateur général](../add-users/about-admin-roles.md) pour procéder à ces étapes.
 
 Si vous êtes un utilisateur, vous ne disposez pas de l'autorisation pour paramétrer votre mot de passe afin qu'il reste valide dans le temps. Demandez au support technique de votre bureau ou de votre école d’effectuer les opérations indiquées dans cet article pour vous.
 
-En tant qu'administrateur, vous pouvez faire en sorte qu'ils expirent après un certain nombre de jours ou qu'ils n'expirent jamais.
-
 ## <a name="set-password-expiration-policy"></a>Définir la stratégie d’expiration de mot de passe
-
-> [!Tip]
-> Par défaut, les mots de passe sont définis pour expirer après 90 jours. Des recherches actuelles indiquent sans équivoque que les changements de mot de passe imposés ne sont pas forcément bénéfiques. Ils poussent les utilisateurs à choisir des mots de passe peu fiables, à réutiliser des mots de passe ou à mettre à jour d'anciens mots de passe de façon qu'ils sont facilement devinables de la part des pirates. Si le mot de passe est paramétré de façon à ce qu'il n’expire jamais, nous vous recommandons d’activer [l'authentification multifacteur](../security-and-compliance/set-up-multi-factor-authentication.md)d’authentification.
 
 Si vous voulez que les mots de passe utilisateur expirent après un certain temps, suivez la procédure ci-dessous.
 

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ef05609da50bc73fa59fb582b77faa5d87b9ece3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6dd13c5f83d05be3c77e5f84608fb6aa5172d9a4
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056630"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500922"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Vue d’ensemble des incidents dans Microsoft 365 Defender
 
@@ -37,18 +37,18 @@ ms.locfileid: "51056630"
 **S’applique à :**
 - Microsoft 365 Defender
 
-> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou exécuter votre projet pilote en [production.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 
 Les incidents sont basés sur des alertes connexes. Elles sont créées lorsqu’un événement ou une activité malveillante est détecté sur votre réseau. Les alertes individuelles fournissent des indices précieux sur une attaque en cours. Toutefois, les attaques utilisent généralement différents vecteurs et techniques pour effectuer une violation. Rassembler des indices individuels peut être difficile et chronophage.
 
-Cette courte vidéo donne une vue d’ensemble des incidents dans Microsoft 365 Defender.
+Cette courte vidéo offre une vue d’ensemble des incidents dans Microsoft 365 Defender.
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Un incident est un ensemble d’alertes corrélées qui constitue l’histoire d’une attaque. Les événements malveillants et suspects qui se trouvent dans différentes entités d’appareil, d’utilisateur et de boîte aux lettres dans le réseau sont automatiquement regroupés par Microsoft 365 Defender. Le regroupement d’alertes associées dans un incident offre aux défenseurs de la sécurité une vue complète d’une attaque. 
+Un incident est un ensemble d’alertes corrélées qui font l’histoire d’une attaque. Les événements malveillants et suspects qui se trouvent dans différentes entités d’appareil, d’utilisateur et de boîte aux lettres dans le réseau sont automatiquement regroupés par Microsoft 365 Defender. Le regroupement d’alertes associées dans un incident offre aux défenseurs de la sécurité une vue complète d’une attaque. 
 
 Par exemple, les défenseurs de la sécurité peuvent voir où l’attaque a commencé, quelles tactiques ont été utilisées et jusqu’où l’attaque est passée dans le réseau. Ils peuvent également voir l’étendue de l’attaque, telle que le nombre d’appareils, d’utilisateurs et de boîtes aux lettres concernés, la portée de l’impact et d’autres détails sur les entités affectées.
 

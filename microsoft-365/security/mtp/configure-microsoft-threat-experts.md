@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: e1ccd4404eb94193695239def7f26ba64e70d51d
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 93e900423fcef1fd357ca50db70e250ef6082dc7
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476538"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570577"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurer et gérer les fonctionnalités des experts microsoft en matière de menaces via Microsoft 365 Defender
 
@@ -28,7 +28,7 @@ ms.locfileid: "51476538"
 **S’applique à :**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
@@ -168,4 +168,4 @@ Si un expert demande plus d’informations ou d’exemples de fichiers, il est e
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble des experts microsoft en matière de menaces](microsoft-threat-experts.md)
+- [Vue d’ensemble de Spécialistes des menaces Microsoft](microsoft-threat-experts.md)

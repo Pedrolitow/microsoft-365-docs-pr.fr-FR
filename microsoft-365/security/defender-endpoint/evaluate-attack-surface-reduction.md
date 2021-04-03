@@ -8,17 +8,17 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 13b1ac5f71f2bc24ad6f52af6722e12fab935270
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 07573fd92643ce5fdf3e9140031bf5f15ae8f7aa
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067793"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570338"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Évaluer les règles de réduction de la surface d’attaque
 
@@ -62,7 +62,7 @@ Pour activer toutes les règles de réduction de la surface d’attaque ajoutée
 ```
 
 > [!TIP]
-> Si vous souhaitez auditer entièrement le fonctionnement des règles de réduction de la surface d’attaque dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
+> Si vous souhaitez auditer complètement le fonctionnement des règles de réduction de la surface d’attaque dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
 
 Vous pouvez également utiliser une stratégie de groupe, Intune ou des fournisseurs de services de configuration (CSP) de gestion des périphériques mobiles (CSP) pour configurer et déployer le paramètre. En savoir plus dans l’article principal des règles de [réduction de la surface d’attaque.](attack-surface-reduction.md)
 
@@ -80,10 +80,10 @@ ID de l'événement | Description
 
 Au cours de votre évaluation, vous pouvez configurer chaque règle individuellement ou exclure certains fichiers et processus de l’évaluation par la fonctionnalité.
 
-Voir [Personnaliser les règles de réduction de la surface](customize-attack-surface-reduction.md) d’attaque pour plus d’informations sur la configuration de la fonctionnalité à l’aide des outils de gestion, y compris la stratégie de groupe et les stratégies CSP mdM.
+Voir [Personnaliser les règles de réduction de la surface](customize-attack-surface-reduction.md) d’attaque pour plus d’informations sur la configuration de la fonctionnalité avec les outils de gestion, y compris la stratégie de groupe et les stratégies CSP mdM.
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 * [Utiliser le mode audit pour évaluer les Windows Defender](audit-windows-defender.md)
-* [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)
+* [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md).

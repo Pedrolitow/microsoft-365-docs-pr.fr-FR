@@ -11,8 +11,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3f7f1453e840d3c709bcabdb67d7d2dc048ea443
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b87d1963b8ffa3751c13cea532c8d6436f69fbb9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068246"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501215"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Suivre les menaces émergentes et y répondre avec l’analyse des menaces 
 
@@ -35,7 +35,7 @@ ms.locfileid: "51068246"
 **S’applique à :**
 - Microsoft 365 Defender
 
-> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou exécuter votre projet pilote en [production.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -61,7 +61,7 @@ _Où accéder à l’analyse des menaces_
 
 Avec des adversaires plus sophistiqués et de nouvelles menaces émergentes fréquemment et répandues, il est essentiel de pouvoir rapidement :
 
-- Identifier les menaces émergentes et y réagir 
+- Identifier et réagir aux menaces émergentes 
 - Découvrez si vous êtes actuellement en cours d’attaque
 - Évaluer l’impact de la menace sur vos ressources
 - Examiner votre résilience par rapport aux menaces ou leur exposition
@@ -116,7 +116,7 @@ Chaque rapport inclut des graphiques qui fournissent une vue d’ensemble de la 
 - **État de configuration** sécurisé : indique le nombre d’appareils avec des paramètres de sécurité mal configurés. Appliquez les paramètres de sécurité recommandés pour atténuer la menace. Les appareils sont considérés **comme sécurisés** s’ils ont _appliqué tous_ les paramètres suivis.
 - **État de correction des vulnérabilités**: indique le nombre d’appareils vulnérables. Appliquer des mises à jour de sécurité ou des correctifs pour résoudre les vulnérabilités exploitées par la menace.
 
-### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en matière de sécurité Microsoft
+### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en sécurité Microsoft
 Dans la section **Rapport d’analyste,** lisez l’écriture détaillée de l’expert. La plupart des rapports fournissent des descriptions détaillées des chaînes d’attaques, notamment des tactiques et des [](advanced-hunting-overview.md) techniques mappées à l’infrastructure CK MITRE ATT&, des listes exhaustives de recommandations et de puissants conseils de recherche de menaces.
 
 [En savoir plus sur le rapport d’analyste](threat-analytics-analyst-reports.md)
@@ -129,7 +129,7 @@ Dans la section **Rapport d’analyste,** lisez l’écriture détaillée de l�
 _Section Incidents connexes d’un rapport d’analyse des menaces_
 
 ### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>Ressources impactées : obtenir la liste des appareils et boîtes aux lettres touchés
-Un bien est considéré comme affecté s’il est affecté par une alerte active non résolue. **L’onglet Ressources impactées** répertorie les types suivants de biens touchés :
+Un bien est considéré comme affecté s’il est affecté par une alerte active et non résolue. **L’onglet Ressources impactées** répertorie les types suivants de biens touchés :
 - **Appareils touchés**: points de terminaison qui ont des alertes Microsoft Defender pour point de terminaison non résolues. Ces alertes se firent généralement lors de la recherche d’indicateurs et d’activités de menace connus.
 - **Boîtes aux lettres impactées :** boîtes aux lettres qui ont reçu des messages électroniques qui ont déclenché des alertes Microsoft Defender pour Office 365. Alors que la plupart des messages qui déclenchent des alertes sont généralement bloqués, les stratégies au niveau de l’utilisateur ou de l’organisation peuvent remplacer les filtres.
 
@@ -142,7 +142,7 @@ Microsoft Defender pour Office 365 bloque généralement les e-mails avec des in
 
 **L’onglet Tentatives** de courrier indésirable répertorie tous les e-mails qui ont été bloqués avant leur remise ou envoyés au dossier courrier indésirable par Microsoft Defender pour Office 365. 
 
-![Image de la section tentatives d’e-mail empêchées d’un rapport d’analyse des menaces](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
+![Image de la section tentatives de courrier empêchée d’un rapport d’analyse des menaces](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
 _Section Tentatives de courriers électroniques empêchées d’un rapport d’analyse des menaces_
 
@@ -165,10 +165,10 @@ _Section Atténuations d’un rapport d’analyse des menaces_
 ## <a name="additional-report-details-and-limitations"></a>Détails et limitations supplémentaires du rapport
 >[!NOTE]
 >Dans le cadre de l’expérience de sécurité unifiée, l’analyse des menaces est désormais disponible non seulement pour Microsoft Defender pour endpoint, mais également pour les titulaires de licence Microsoft Defender pour Office E5.
->Si vous n’utilisez pas le portail de sécurité Microsoft 365 (Microsoft 365 Defender), vous pouvez également voir les détails du rapport (sans les données De Microsoft Defender pour Office) dans le portail Centre de sécurité Microsoft Defender (Microsoft Defender pour point de terminaison). 
+>Si vous n’utilisez pas le portail de sécurité Microsoft 365 (Microsoft 365 Defender), vous pouvez également voir les détails du rapport (sans les données De Microsoft Defender pour Office) dans le portail Centre de sécurité Microsoft Defender (Microsoft Defender pour Point de terminaison). 
 
 Pour accéder au rapport d’analyse des menaces, vous avez besoin de certains rôles et autorisations. Pour plus d’informations, voir Rôles personnalisés dans le contrôle d’accès basé sur les rôles pour [Microsoft 365 Defender.](custom-roles.md)
-  - Pour afficher les alertes, les incidents ou les données des biens touchés, vous devez avoir des autorisations sur les données d’alertes Microsoft Defender pour Office ou Microsoft Defender pour les points de terminaison, ou les deux.
+  - Pour afficher les alertes, les incidents ou les données des biens touchés, vous devez avoir des autorisations sur les données des alertes Microsoft Defender pour Office ou Microsoft Defender pour les points de terminaison, ou les deux.
   - Pour afficher les tentatives de courrier électronique empêchées, vous devez avoir des autorisations pour les données de recherche Microsoft Defender pour Office. 
   - Pour afficher les atténuations, vous devez avoir des autorisations pour les données de gestion des menaces et des vulnérabilités dans Microsoft Defender for Endpoint.
 

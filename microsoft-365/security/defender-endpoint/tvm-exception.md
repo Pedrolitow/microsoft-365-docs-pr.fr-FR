@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c8ad69930ce4faecbffbc6d2fab59bbe2cac06fa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 13ac09b1ad918ed945edec6167fd57ea02b616ea
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063766"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500182"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Créer et afficher des exceptions pour les recommandations de sécurité : gestion des menaces et des vulnérabilités
 
@@ -78,7 +78,7 @@ Si votre organisation compte plus de 20 groupes d’appareils, sélectionnez **M
 
 ![Montrant comment modifier un grand nombre de groupes.](images/tvm-exception-edit-groups.png)
 
-Un volant s’affiche où vous pouvez rechercher et choisir les groupes d’appareils que vous souhaitez inclure. Sélectionnez l’icône de coche sous Recherche pour vérifier/décocher tout.
+Un volant s’affiche où vous pouvez rechercher et choisir les groupes d’appareils que vous souhaitez inclure. Sélectionnez l’icône de coche sous Recherche pour tout vérifier/décocher.
 
 ![Affichage du volant de groupe d’appareils de grande taille.](images/tvm-exception-device-group-flyout-400.png)
 
@@ -99,8 +99,8 @@ Sélectionnez votre justification pour l’exception que vous devez déposer au 
 
 La liste suivante détaille les justifications des options d’exception :
 
-- **Contrôle tiers** - Un produit ou un logiciel tiers répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre score de sécurité car votre risque est réduit
-- **Atténuation de remplacement** : un outil interne répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre score de sécurité car votre risque est réduit
+- **Contrôle tiers** : un produit ou un logiciel tiers répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre niveau de sécurité, car votre risque est réduit
+- **Atténuation de** remplacement : un outil interne répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre score de sécurité car votre risque est réduit
 - **Risque accepté :** pose un risque faible et/ou l’implémentation de la recommandation est trop coûteuse
 - **Correction planifiée (grâce)** : déjà planifiée mais en attente d’exécution ou d’autorisation
 
@@ -141,7 +141,7 @@ L’impact (après les exceptions) indique l’impact restant sur le score d’e
 ## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble de la gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Corriger les vulnérabilités](tvm-remediation.md)
+- [Corriger des vulnérabilités](tvm-remediation.md)
 - [Recommandations de sécurité](tvm-security-recommendation.md)
-- [Score d’exposition](tvm-exposure-score.md)
-- [Score de sécurité Microsoft pour les appareils](tvm-microsoft-secure-score-devices.md)
+- [Score d'exposition](tvm-exposure-score.md)
+- [Niveau de sécurité Microsoft pour les appareils](tvm-microsoft-secure-score-devices.md)

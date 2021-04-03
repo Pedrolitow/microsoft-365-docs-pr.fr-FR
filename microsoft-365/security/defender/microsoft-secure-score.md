@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 98f335a38b2e4f581d4b08def39353e53e1bafd4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064609"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570462"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 
@@ -67,11 +67,11 @@ Votre score est mis à jour en temps réel pour refléter les informations prés
 - [Afficher les actions d’amélioration et décider d’un plan d’action](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
 - [Lancer des flux de travail pour examiner ou implémenter](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
 
-### <a name="how-improvement-actions-are-scored"></a>Comment les actions d’amélioration sont note es
+### <a name="how-improvement-actions-are-scored"></a>Comment les actions d’amélioration sont-elles note es ?
 
 Chaque action d’amélioration vaut 10 points ou moins, et la plupart d’entre eux sont marqués de manière binaire. Si vous implémentez l’action d’amélioration, comme créer une stratégie ou activer un paramètre spécifique, vous obtenez 100 % des points. Pour les autres actions d’amélioration, les points sont donnés sous forme de pourcentage de la configuration totale.
 
-Par exemple, une action d’amélioration indique que vous obtenez 10 points en protégeant tous vos utilisateurs avec l’authentification multifacteur. Vous n’avez que 50 utilisateurs sur 100 au total protégés. Vous obtenez donc un score partiel de 5 points (50 protégé / 100 au total * 10 pts max = 5 pts).
+Par exemple, une action d’amélioration indique que vous obtenez 10 points en protégeant tous vos utilisateurs avec l’authentification multifacteur. Vous n’avez que 50 utilisateurs sur 100 au total protégés, donc vous obtenez un score partiel de 5 points (50 protégé / 100 au total * 10 pts max = 5 pts).
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans secure score
 
@@ -82,9 +82,9 @@ Il existe actuellement des recommandations pour les produits suivants :
 - Microsoft Defender pour point de terminaison
 - Microsoft Defender pour l’identité
 - Cloud App Security
-- Microsoft Teams
+- Microsoft Teams
 
-Des recommandations pour d’autres produits de sécurité seront bientôt ajoutées. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont une bonne base de référence. Vous pouvez également marquer les actions d’amélioration comme couvertes par une solution tierce ou autre.
+Des recommandations pour d’autres produits de sécurité seront bientôt ajoutées. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont une bonne base de référence. Vous pouvez également marquer les actions d’amélioration comme couvertes par un tiers ou d’autres mesures de prévention.
 
 ### <a name="security-defaults"></a>Paramètres de sécurité par défaut
 
@@ -101,7 +101,7 @@ Si vous allumez les paramètres de sécurité par défaut, des points complets v
 
 ## <a name="required-permissions"></a>Autorisations requises
 
-Pour avoir l’autorisation d’accéder au service Score de sécurité Microsoft, vous devez avoir l’un des rôles suivants dans Azure Active Directory.
+Pour avoir l’autorisation d’accéder à La Sécurisation Microsoft, vous devez avoir l’un des rôles suivants dans Azure Active Directory.
 
 ### <a name="read-and-write-roles"></a>Lire et écrire des rôles
 
@@ -126,7 +126,7 @@ Avec l’accès en lecture seule, vous ne pouvez pas modifier l’état ou les n
 
 ## <a name="risk-awareness"></a>Sensibilisation aux risques
 
-Le score de sécurité Microsoft est un résumé numérique de votre posture de sécurité en fonction des configurations système, du comportement des utilisateurs et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue du risque de violation de votre système ou de vos données. Au lieu de cela, il représente la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft qui peuvent vous aider à compenser le risque de violation. Aucun service en ligne n’est contre les violations de sécurité et le score sécurisé ne doit pas être interprété comme une garantie contre les violations de sécurité.
+Le Score de sécurité Microsoft est un résumé numérique de votre posture de sécurité en fonction des configurations système, du comportement de l’utilisateur et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue de la probable violation de votre système ou de vos données. Au lieu de cela, il représente la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft qui peuvent vous aider à compenser le risque de violation. Aucun service en ligne n’est contre les violations de sécurité et le score de sécurité ne doit pas être interprété comme une garantie contre les violations de sécurité.
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 
@@ -134,7 +134,7 @@ Si vous avez des problèmes, faites-le nous savoir en publiant dans la communaut
 
 ## <a name="related-resources"></a>Ressources connexes
 
-- [Évaluez votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
-- [Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
+- [Évaluer votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
+- [Suivre votre historique du Score de sécurisation Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
 - [Nouveautés](microsoft-secure-score-whats-coming.md)
 - [Nouveautés](microsoft-secure-score-whats-new.md)

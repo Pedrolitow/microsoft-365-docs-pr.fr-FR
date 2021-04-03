@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: be578158e18d55bb25d450749c3fb4373854456b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3cecee8b80f179f67cb48f62e1d9238a51825bfd
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065998"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500215"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Attribuer une valeur d’appareil : gestion des menaces et des vulnérabilités
 
@@ -39,7 +39,7 @@ ms.locfileid: "51065998"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-La définition de la valeur d’un appareil vous permet de différencier les priorités des biens. La valeur de l’appareil est utilisée pour incorporer le risque d’exposition d’un bien individuel dans le calcul du score d’exposition de la gestion des menaces et des vulnérabilités. Les appareils affectés en tant que « valeur élevée » recevront plus de poids.
+La définition de la valeur d’un appareil vous permet de différencier les priorités des ressources. La valeur de l’appareil est utilisée pour incorporer le risque d’exposition d’un bien individuel dans le calcul du score d’exposition de la gestion des menaces et des vulnérabilités. Les appareils affectés en tant que « valeur élevée » recevront plus de poids.
 
 Vous pouvez également utiliser [l’API définir la valeur de l’appareil.](set-device-value.md)
 
@@ -58,7 +58,7 @@ Exemples d’appareils à attribuer à une valeur élevée :
 
 ## <a name="choose-device-value"></a>Choisir la valeur de l’appareil
 
-1. Accédez à n’importe quelle page d’appareil. L’endroit le plus simple est l’inventaire des appareils.
+1. Accédez à n’importe quelle page d’appareil. L’endroit le plus simple est de consulter l’inventaire des appareils.
 
 2. Sélectionnez **la valeur de** l’appareil à trois points près de la barre d’actions en haut de la page.
 

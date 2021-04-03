@@ -1,5 +1,5 @@
 ---
-title: Méthodes et propriétés de score
+title: Méthodes et propriétés du score
 description: Récupère le score d’exposition de votre organisation, le score de sécurisation de l’appareil et le score d’exposition par groupe d’appareils
 keywords: api, api de graphique, api pris en charge, score, score d’exposition, score de sécurité de l’appareil, score d’exposition par groupe d’appareils
 search.product: eADQiWindows 10XVcnh
@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72dacca8529b54b082590d911f03aaa86bfe9097
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1c287a72318cfb2e6e4e3860ac90a90e561040fe
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200160"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500954"
 ---
 # <a name="score-resource-type"></a>Type de ressource Score
 
@@ -44,8 +44,8 @@ ms.locfileid: "51200160"
 
 Méthode |Type renvoyé |Description
 :---|:---|:---
-[Obtenir le score d’exposition](get-exposure-score.md) | [Score](score.md) | Obtenir le score d’exposition de l’organisation.
-[Obtenir le score de sécurité de l’appareil](get-device-secure-score.md) | [Score](score.md) | Obtenez le score de sécurité de l’appareil de l’organisation.
+[Obtenir un score d'exposition](get-exposure-score.md) | [Score](score.md) | Obtenir le score d’exposition de l’organisation.
+[Obtenir un score sécurisé d’appareil](get-device-secure-score.md) | [Score](score.md) | Obtenez le score de sécurité de l’appareil de l’organisation.
 [Liste du score d’exposition par groupe d’appareils](get-machine-group-exposure-score.md)| [Score](score.md) | Liste des scores par groupe d’appareils.
 
 ## <a name="properties"></a>Propriétés

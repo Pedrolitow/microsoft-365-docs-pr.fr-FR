@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/10/2020
 ms.technology: mde
-ms.openlocfilehash: 60e8710415e328d06fac4c02e428094e5e4bcc92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ea2524cb214d3cf7c784162a472722727cf0d57c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067462"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500614"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Étendre la couverture de recherche avancée avec les bons paramètres
 
@@ -39,7 +39,7 @@ Activer ces paramètres d’audit avancés pour vous assurer que vous obtenez de
 
 Data | Description | Table schema | Procédure de configuration
 -|-|-|-
-Gestion des comptes | Événements capturés en tant que différentes valeurs indiquant la création, la suppression et d’autres activités liées `ActionType` au compte | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Déployer une stratégie d’audit de sécurité avancée : [auditer la gestion des comptes d’utilisateurs](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [En savoir plus sur les stratégies d’audit de sécurité avancées](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing)
+Gestion des comptes | Événements capturés en tant que différentes valeurs indiquant la création, la suppression et d’autres activités liées `ActionType` au compte local | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Déployer une stratégie d’audit de sécurité avancée : [auditer la gestion des comptes d’utilisateurs](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [En savoir plus sur les stratégies d’audit de sécurité avancées](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing)
 Gestion des groupes de sécurité | Événements capturés en tant que différentes valeurs indiquant la création d’un groupe de `ActionType` sécurité local et d’autres activités de gestion des groupes locaux | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Déployer une stratégie d’audit de sécurité avancée : [auditer la gestion des groupes de sécurité](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [En savoir plus sur les stratégies d’audit de sécurité avancées](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing)
 Installation du service | Événements capturés `ActionType` avec la valeur , indiquant `ServiceInstalled` qu’un service a été créé | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Déployer une stratégie d’audit de sécurité avancée : [auditer l’extension du système de sécurité](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-system-extension)<br> - [En savoir plus sur les stratégies d’audit de sécurité avancées](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing)
 
@@ -48,6 +48,6 @@ Installation du service | Événements capturés `ActionType` avec la valeur , i
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-reference.md)
-- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
+- [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
 - [Vue d’ensemble des détections personnalisées](overview-custom-detections.md)

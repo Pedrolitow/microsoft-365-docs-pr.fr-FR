@@ -1,14 +1,14 @@
 ---
 title: Évaluer votre posture de sécurité via le Score de sécurité Microsoft
 description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le Centre de sécurité Microsoft 365.
-keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
+keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2b211eb0f55a9fa9faad1290443d62ac406f8360
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0b2b9f1f01a583a96e0ae663e3f78cb0a7d846fc
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064638"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570599"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
@@ -41,7 +41,7 @@ Pour vous aider à trouver les informations dont vous avez besoin plus rapidemen
 * Application (applications de messagerie et cloud, notamment Office 365 et Microsoft Cloud App Security)
 
 >[!NOTE]
->Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié, ce qui a rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
+>Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié, ce qui rend le Score de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
 
 Dans la page vue d’ensemble du score de sécurité Microsoft, affichez la répartition des points entre ces groupes et les points disponibles. Vous pouvez également obtenir une vue globale du score total, de la tendance historique de votre score sécurisé avec des comparaisons de critères et des actions d’amélioration hiérarchisées qui peuvent être prises pour améliorer votre score.
 
@@ -51,11 +51,11 @@ Dans la page vue d’ensemble du score de sécurité Microsoft, affichez la rép
 
 Pour vérifier votre score actuel, consultez la page vue d’ensemble du niveau de sécurisation Microsoft et recherchez la vignette qui indique **Votre score de sécurité.** Votre score s’affiche sous la mesure d’un pourcentage, ainsi que le nombre de points que vous avez obtenus sur le nombre total de points possibles.
 
-En outre, si vous sélectionnez le bouton **Inclure** en regard de votre score, vous pouvez choisir différentes vues de votre score. Ces différentes vues de score s’affichent dans le graphique sur la vignette de score et le graphique de répartition des points.
+En outre, si vous sélectionnez le bouton **Inclure** en regard de votre score, vous pouvez choisir différents affichages de votre score. Ces différentes vues de score s’affichent dans le graphique sur la vignette de score et le graphique de répartition des points.
 
 Voici les scores que vous pouvez ajouter à votre vue de votre score global pour vous donner une image plus complète de votre score global :
 
-- **Score planifié :** afficher le score projeté lorsque les actions planifiées sont terminées
+- **Score planifié**: afficher le score projeté lorsque les actions planifiées sont terminées
 - **Score de licence actuel**: afficher le score qui peut être obtenu avec votre licence Microsoft actuelle
 - **Score réalisable :** afficher le score qui peut être obtenu avec vos licences Microsoft et l’acceptation actuelle des risques
 
@@ -81,7 +81,7 @@ Pour effectuer l’action, vous avez plusieurs options :
 
 - Sélectionnez **Gérer** pour passer à l’écran de configuration et apporter les changements. Vous gagnerez ensuite les points que l’action vaut, visibles dans le volant. La mise à jour des points prend généralement environ 24 heures.
 
-- Sélectionnez **Partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme pour partager le lien, telle que la messagerie, Microsoft Teams, Le Planificateur Microsoft ou ServiceNow. La sélection de ServiceNow vous permet de créer un ticket de modification qui sera visible dans ServiceNow et la page d’accueil du Centre de sécurité Microsoft 365. Pour en savoir plus, consultez Le Centre de [sécurité Microsoft 365 et l’intégration de ServiceNow.](./tickets.md)
+- Sélectionnez **Partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme pour partager le lien, telle que la messagerie, Microsoft Teams, Le Planificateur Microsoft ou ServiceNow. La sélection de ServiceNow vous permet de créer un ticket de modification qui sera visible dans ServiceNow et le centre de sécurité Microsoft 365. Pour en savoir plus, consultez le Centre de sécurité [Microsoft 365 et l’intégration de ServiceNow.](./tickets.md)
 
 Ajoutez **des notes** pour suivre la progression ou tout autre commentaire que vous souhaitez commenter. Si vous ajoutez vos propres **balises à** l’action d’amélioration, vous pouvez filtrer par ces balises.
 
@@ -94,7 +94,7 @@ Choisissez les états et les notes d’enregistrement spécifiques à l’action
 - **Risque accepté :** la sécurité doit toujours être équilibrée avec la convivialité, et toutes les recommandations ne fonctionnent pas pour votre environnement. Lorsque c’est le cas, vous pouvez choisir d’accepter le risque, ou le risque restant, et de ne pas adopter l’action d’amélioration. Aucun point ne vous sera attribué, mais l’action ne sera plus visible dans la liste des actions d’amélioration. Vous pouvez afficher cette action dans l’historique ou l’annuler à tout moment.
 - **Résolu par le**  biais d’un tiers et résolu par le biais d’une atténuation alternative : l’action d’amélioration a déjà été traitée par une application ou un logiciel tiers, ou par un outil interne. Vous gagnerez les points que l’action vaut, afin que votre score reflète mieux votre posture de sécurité globale. Si un outil tiers ou interne ne couvre plus le contrôle, vous pouvez choisir un autre état. N’oubliez pas que Microsoft n’aura aucune visibilité sur l’intégralité de l’implémentation si l’action d’amélioration est marquée comme l’un de ces états.
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>Actions d’amélioration & la gestion des menaces et des vulnérabilités
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Actions d’amélioration & la gestion des vulnérabilités des menaces
 
 Pour les actions d’amélioration dans la catégorie « Appareil », vous ne pouvez pas choisir les états. Au lieu de cela, vous [](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) serez dirigé vers la recommandation de sécurité associée à la gestion des menaces et des vulnérabilités dans le Centre de sécurité [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/use) pour prendre des mesures. L’exception que vous choisissez et la justification que vous écrivez sera spécifique à ce portail. Il ne sera pas présent dans le portail Score de sécurité Microsoft.
 
@@ -112,7 +112,7 @@ La section appelée **En un coup d’œil** vous indique la catégorie, les atta
 
 La  section Implémentation présente les conditions préalables, les étapes suivantes pas à pas pour effectuer l’action d’amélioration, l’état d’implémentation actuel de l’action d’amélioration et les liens supplémentaires.
 
-Les conditions préalables incluent les licences nécessaires ou les actions à prendre avant que l’action d’amélioration soit traitée. Assurez-vous que vous avez suffisamment de sièges dans votre licence pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
+Les conditions préalables incluent les licences nécessaires ou les actions à prendre avant que l’action d’amélioration ne soit traitée. Assurez-vous que vous avez suffisamment de sièges dans votre licence pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

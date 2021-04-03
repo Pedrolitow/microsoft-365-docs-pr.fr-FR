@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 10fa2765a4fe5bd256e0588af0db51f5a22339a2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f6b085f200d3b0c71bb3608f8e5ba9ed85632676
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062014"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500327"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ Examinez les alertes qui affectent votre réseau, déterminez leur signification
 
     ![Image du volet latéral de l’incident](../../media/incident-side-panel.png)
 
-2. Sélectionnez **Ouvrir la page incident**. <BR> Cette action ouvre la page incident dans laquelle vous trouverez plus d’informations sur les incidents, les commentaires et les actions, les onglets (vue d’ensemble, alertes, appareils, utilisateurs, enquêtes, preuves).
+2. Sélectionnez **Ouvrir la page incident**. <BR> Cette action ouvre la page d’incident dans laquelle vous trouverez plus d’informations sur les incidents, les commentaires et les actions, les onglets (vue d’ensemble, alertes, appareils, utilisateurs, enquêtes, preuves).
 
 3. Examinez les alertes, les appareils, les utilisateurs et les autres entités impliquées dans l’incident.
 
@@ -58,7 +58,7 @@ La page de présentation vous permet d’accéder à un instantané de l’évé
 
 ![Image de la page de présentation des incidents](../../media/incidents-overview.png)
 
-Les catégories d’attaques vous donnent une vue visuelle et numérique de l’avancement de l’attaque par rapport à la chaîne d’attaque. Comme avec d’autres produits de sécurité Microsoft, Microsoft 365 Defender est aligné sur l’infrastructure [MITRE ATT&&trade; CK.](https://attack.mitre.org/)
+Les catégories d’attaque vous donnent une vue visuelle et numérique de l’avancement de l’attaque par rapport à la chaîne d’attaque. Comme avec d’autres produits de sécurité Microsoft, Microsoft 365 Defender est aligné sur l’infrastructure [MITRE ATT&&trade; CK.](https://attack.mitre.org/)
 
 La section l'étendue fournit la liste des principales ressources affectées à cet incident. S’il existe des informations spécifiques sur cet élément (par exemple, niveau de risque, priorité d’examen, et balisage sur les éléments) qui s’affichent également dans cette section.
 
@@ -70,11 +70,11 @@ Cette vue d’ensemble peut vous aider à procéder au triage initial de l’inc
 
 ## <a name="alerts"></a>Alertes
 
-Vous pouvez afficher toutes les alertes liées à l’incident et d’autres informations les concernant, telles que la gravité, les entités impliquées dans l’alerte, la source des alertes (Microsoft Defender pour l’identité, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365) et la raison pour laquelle elles ont été liées.
+Vous pouvez afficher toutes les alertes liées à l’incident et d’autres informations les concernant, telles que la gravité, les entités impliquées dans l’alerte, la source des alertes (Microsoft Defender pour l’identité, Microsoft Defender pour endpoint, Microsoft Defender pour Office 365) et la raison pour laquelle elles ont été liées.
 
 ![Image de la page alertes d’incident](../../media/incident-alerts.png)
 
-Par défaut, les alertes sont classées par ordre chronologique, pour vous permettre de consulter d’abord l’attaque au fil du temps. Cliquez sur chaque alerte pour vous diriger vers la page d’alerte pertinente où vous pouvez effectuer un examen approfondi de cette alerte. Découvrez comment utiliser les pages d’alerte et la file d’attente d’alertes unifiée dans [Examiner les alertes](investigate-alerts.md)
+Par défaut, les alertes sont classées par ordre chronologique, pour vous permettre de consulter d’abord l’attaque au fil du temps. Cliquez sur chaque alerte pour vous diriger vers la page d’alerte pertinente dans laquelle vous pouvez effectuer un examen approfondi de cette alerte. Découvrez comment utiliser les pages d’alerte et la file d’attente d’alerte unifiée dans [Examiner les alertes](investigate-alerts.md)
 
 ## <a name="devices"></a>Appareils
 
@@ -96,13 +96,13 @@ En cliquant sur le nom d'utilisateur, vous accédez à la page Cloud App Securit
 
 ## <a name="mailboxes"></a>Boîtes aux lettres
 
-Examinez les boîtes aux lettres qui ont été identifiés comme faisant partie d'un incident ou y étant liés. Pour poursuivre l’examen, la sélection de l’alerte liée à la messagerie ouvre Microsoft Defender pour Office 365 où vous pouvez prendre des mesures correctives.
+Examinez les boîtes aux lettres qui ont été identifiés comme faisant partie d'un incident ou y étant liés. Pour poursuivre le travail d’investigation, la sélection de l’alerte liée à la messagerie ouvre Microsoft Defender pour Office 365 où vous pouvez prendre des mesures correctives.
 
 ![Image de l’onglet boîte aux lettres d’un incident](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>Examens
 
-Sélectionnez **Examens** pour voir toutes les enquêtes automatisées déclenchées par des alertes dans cet incident. Les enquêtes effectueront des actions de correction ou attendront l’approbation par un analyste des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Microsoft Defender pour Endpoint et Defender pour Office 365.
+Sélectionnez **Examens** pour voir toutes les enquêtes automatisées déclenchées par des alertes dans cet incident. Les enquêtes effectuent des actions de correction ou attendent l’approbation par les analystes des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Microsoft Defender pour Endpoint et Defender pour Office 365.
 
 ![Image de l’onglet examens d’un incident](../../media/incident-investigations.png)
 

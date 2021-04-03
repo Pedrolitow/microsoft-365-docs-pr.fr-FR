@@ -9,8 +9,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f532d20e4fb7cfa101eb6b96a89a4dbc4e658956
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 853a862556825e714bb06e51839f9c026e0cc0e0
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068822"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501186"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Suivre les menaces émergentes et y répondre avec l’analyse des menaces 
 
@@ -50,7 +50,7 @@ L’analyse des menaces est un ensemble de rapports d’experts en matière de s
 - Surfaces d’attaque courantes
 - Programmes malveillants répandus
 
-Chaque rapport fournit une analyse détaillée d’une menace et des instructions complètes sur la façon de se défendre contre cette menace. Il incorpore également les données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
+Chaque rapport fournit une analyse détaillée d’une menace et des instructions complètes sur la façon de se défendre contre cette menace. Il intègre également des données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
 
 Regardez cette courte vidéo pour en savoir plus sur la façon dont l’analyse des menaces peut vous aider à suivre les dernières menaces et à les arrêter.
 <p></p>
@@ -61,8 +61,8 @@ Regardez cette courte vidéo pour en savoir plus sur la façon dont l’analyse 
 
 Le tableau de bord d’analyse des menaces constitue un excellent point de départ pour obtenir les rapports les plus pertinents pour votre organisation. Il récapitule les menaces dans les sections suivantes :
 
-- **Menaces les** plus récentes : répertorie les derniers rapports sur les menaces publiés, ainsi que le nombre d’appareils avec des alertes actives et résolues.
-- **Menaces à fort impact**: répertorie les menaces qui ont eu l’impact le plus élevé sur l’organisation. Cette section classe les menaces selon le nombre d’appareils qui ont des alertes actives.
+- **Menaces les** plus récentes : répertorie les derniers rapports publiés sur les menaces, ainsi que le nombre d’appareils avec des alertes actives et résolues.
+- **Menaces à fort impact**: répertorie les menaces qui ont eu l’impact le plus élevé sur l’organisation. Cette section classe les menaces par le nombre d’appareils qui ont des alertes actives.
 - **Résumé des menaces**: affiche l’impact global du suivi des menaces en affichant le nombre de menaces avec des alertes actives et résolues.
 
 Sélectionnez une menace dans le tableau de bord pour afficher le rapport de cette menace.
@@ -87,10 +87,10 @@ Chaque rapport inclut des graphiques conçus pour fournir des informations sur l
 
 #### <a name="review-security-resilience-and-posture"></a>Passer en revue la résilience et la posture de sécurité
 Chaque rapport inclut des graphiques qui fournissent une vue d’ensemble de la résilience de votre organisation face à une menace donnée :
-- **État de la configuration** de la sécurité : indique le nombre d’appareils qui ont appliqué les paramètres de sécurité recommandés qui peuvent aider à atténuer la menace. Les appareils sont considérés **comme sécurisés** s’ils ont _appliqué tous_ les paramètres suivis.
+- **État de la configuration** de la sécurité : indique le nombre d’appareils qui ont appliqué les paramètres de sécurité recommandés pour atténuer la menace. Les appareils sont considérés **comme sécurisés** s’ils ont _appliqué tous_ les paramètres suivis.
 - **État de correction des** vulnérabilités : indique le nombre d’appareils qui ont appliqué des mises à jour de sécurité ou des correctifs qui adressent les vulnérabilités exploitées par la menace.
 
-### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en matière de sécurité Microsoft
+### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en sécurité Microsoft
 Go to the **Analyst report** section to read through the detailed expert write-up. La plupart des rapports fournissent des descriptions détaillées des chaînes d’attaques, notamment des tactiques et des [](advanced-hunting-overview.md) techniques mappées à l’infrastructure CK MITRE ATT&, des listes exhaustives de recommandations et de puissants conseils de recherche de menaces.
 
 [En savoir plus sur le rapport d’analyste](threat-analytics-analyst-reports.md)

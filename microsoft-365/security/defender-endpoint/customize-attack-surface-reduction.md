@@ -1,6 +1,6 @@
 ---
 title: Personnaliser les règles de réduction de la surface d’attaque
-description: Définir individuellement des règles dans les modes audit, bloquer ou désactivé, et ajouter des fichiers et des dossiers qui doivent être exclus des règles de réduction de la surface d’attaque
+description: Définissez individuellement des règles dans les modes audit, blocage ou désactivé, et ajoutez des fichiers et des dossiers qui doivent être exclus des règles de réduction de la surface d’attaque
 keywords: Réduction de la surface d’attaque, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, personnaliser, configurer, exclure
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -8,17 +8,17 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 99a88a869c8a79f79cbc3a16fc73bf556416c51a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 52a51b1035f1aa0fb152cf17dc9561cce378d59d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163294"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570350"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personnaliser les règles de réduction de la surface d’attaque
 
@@ -34,7 +34,7 @@ ms.locfileid: "51163294"
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-[Les règles de réduction de la surface](enable-attack-surface-reduction.md) d’attaque permettent d’éviter les comportements logiciels qui sont souvent mal pris en charge pour compromettre votre appareil ou votre réseau. Par exemple, un attaquant peut essayer d’exécuter un script non signé à partir d’un lecteur USB ou faire en sorte qu’une macro dans un document Office appelle directement l’API Win32. Les règles de réduction de la surface d’attaque peuvent limiter ces types de comportements risqués et améliorer la posture de défense de votre organisation.
+[Les règles de réduction de la surface](enable-attack-surface-reduction.md) d’attaque permettent d’éviter les comportements logiciels qui sont souvent mal pris en compte pour compromettre votre appareil ou votre réseau. Par exemple, un attaquant peut essayer d’exécuter un script non signé à partir d’un lecteur USB ou faire en sorte qu’une macro dans un document Office appelle directement l’API Win32. Les règles de réduction de la surface d’attaque peuvent limiter ces types de comportements risqués et améliorer la posture de défense de votre organisation.
 
 Découvrez comment personnaliser les règles de réduction de la surface d’attaque en excluant des fichiers et des [dossiers](#exclude-files-and-folders) ou en ajoutant du texte personnalisé à l’alerte de [notification](#customize-the-notification) qui apparaît sur l’ordinateur d’un utilisateur.
 
@@ -78,11 +78,11 @@ Bloquer la persistance via un abonnement à des événements WMI | e6db77e5-3df2
 
 Consultez la rubrique [réduction de la surface](attack-surface-reduction.md) d’attaque pour plus d’informations sur chaque règle.
 
-### <a name="use-group-policy-to-exclude-files-and-folders"></a>Utiliser une stratégie de groupe pour exclure des fichiers et des dossiers
+### <a name="use-group-policy-to-exclude-files-and-folders"></a>Utiliser la stratégie de groupe pour exclure des fichiers et des dossiers
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](https://technet.microsoft.com/library/cc731212.aspx)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer et sélectionnez **Modifier.**
 
-2. Dans **l’Éditeur de gestion des stratégies de** groupe, cliquez sur **Configuration** ordinateur et cliquez **sur Modèles d’administration.**
+2. Dans **l’Éditeur de gestion des stratégies de** groupe, allez à **Configuration** ordinateur et cliquez sur **Modèles d’administration.**
 
 3. Développez l’arborescence **des composants Windows** de l’Antivirus  >  **Microsoft Defender** Windows Defender réduction de la surface  >    >  **d’attaque** Exploit Guard.
 
@@ -100,7 +100,7 @@ Consultez la rubrique [réduction de la surface](attack-surface-reduction.md) d�
     Add-MpPreference -AttackSurfaceReductionOnlyExclusions "<fully qualified path or resource>"
     ```
 
-Continuez à `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` l’utiliser pour ajouter d’autres dossiers à la liste.
+Continuez à `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` utiliser pour ajouter d’autres dossiers à la liste.
 
 > [!IMPORTANT]
 > Permet `Add-MpPreference` d’ajouter ou d’ajouter des applications à la liste. `Set-MpPreference`L’utilisation de la cmdlet va supprimer la liste existante.
@@ -111,11 +111,11 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ## <a name="customize-the-notification"></a>Personnaliser la notification
 
-Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier. Consultez [l’article sécurité Windows.](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)
+Vous pouvez personnaliser la notification pour le déclenchement d’une règle et bloquer une application ou un fichier. Consultez [l’article Sécurité Windows.](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)
 
 ## <a name="related-topics"></a>Voir aussi
 
 * [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 * [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
 * [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
-* [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)
+* [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md).

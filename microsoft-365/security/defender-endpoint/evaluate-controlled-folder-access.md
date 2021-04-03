@@ -8,17 +8,17 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218747"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569904"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Évaluer l’accès contrôlé aux dossiers
 
@@ -71,10 +71,10 @@ ID de l'événement | Description
 
 Au cours de votre évaluation, vous pouvez ajouter des fichiers à la liste des dossiers protégés ou autoriser certaines applications à modifier des fichiers.
 
-Voir [Protéger les dossiers](controlled-folders.md) importants avec un accès contrôlé aux dossiers pour configurer la fonctionnalité à l’aide des outils de gestion, notamment la stratégie de groupe, PowerShell et les fournisseurs de services de configuration (CSP) DE GESTION.
+Voir [Protéger les dossiers](controlled-folders.md) importants avec accès contrôlé aux dossiers pour configurer la fonctionnalité à l’aide d’outils de gestion, y compris la stratégie de groupe, PowerShell et les fournisseurs de services de configuration (CSP) DE GESTION.
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md)
-* [Évaluer Microsoft Defender pour le point de terminaison](evaluate-mde.md)
-* [Utiliser le mode audit](audit-windows-defender.md)
+* [Évaluer Microsoft Defender pour point de terminaison](evaluate-mde.md)
+* [Utiliser le mode Audit](audit-windows-defender.md)

@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3760ff84e6abfbe05d9e4605d64087d0077300e3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: be638141e205946be18d6a718470e7b92b18b1e7
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063598"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500420"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -35,7 +35,7 @@ ms.locfileid: "51063598"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement les dernières `AssignedIPAddresses()` adresses IP attribuées à [](advanced-hunting-overview.md) un appareil. Si vous spécifiez un argument d’timestamp, cette fonction obtient les adresses IP les plus récentes à l’heure spécifiée. 
+Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement les dernières adresses IP qui ont été `AssignedIPAddresses()` attribuées à un appareil. [](advanced-hunting-overview.md) Si vous spécifiez un argument d’timestamp, cette fonction obtient les adresses IP les plus récentes à l’heure spécifiée. 
 
 Cette fonction renvoie un tableau avec les colonnes suivantes :
 
@@ -45,7 +45,7 @@ Cette fonction renvoie un tableau avec les colonnes suivantes :
 | `IPAddress` | string | Adresse IP utilisée par l’appareil |
 | `IPType` | string | Indique si l’adresse IP est une adresse publique ou privée |
 | `NetworkAdapterType` | entier | Type de carte réseau utilisé par l’appareil à qui l’adresse IP a été attribuée. Pour les valeurs possibles, reportez-vous [à cette éumération](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `ConnectedNetworks` | entier | Réseaux à qui l’adaptateur avec l’adresse IP affectée est connectée. Chaque tableau JSON contient le nom du réseau, la catégorie (public, privé ou domaine), une description et un indicateur indiquant s’il est connecté publiquement à Internet |
+| `ConnectedNetworks` | entier | Réseaux à qui la carte avec l’adresse IP affectée est connectée. Chaque tableau JSON contient le nom du réseau, la catégorie (public, privé ou domaine), une description et un indicateur indiquant s’il est connecté publiquement à Internet |
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -56,7 +56,7 @@ AssignedIPAddresses(x, y)
 ## <a name="arguments"></a>Arguments
 
 - **x** ou `DeviceId` valeur identifiant `DeviceName` l’appareil
-- **y**— valeur (datetime) qui indique à la fonction d’obtenir les adresses IP attribuées les plus `Timestamp` récentes à partir d’une heure spécifique. Si elle n’est pas spécifiée, la fonction renvoie les dernières adresses IP.
+- **y**— valeur (date/heure) qui indique à la fonction d’obtenir les adresses IP attribuées les plus `Timestamp` récentes à partir d’une heure spécifique. Si elle n’est pas spécifiée, la fonction renvoie les dernières adresses IP.
 
 ## <a name="examples"></a>Exemples
 

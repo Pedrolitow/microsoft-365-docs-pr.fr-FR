@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218759"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571007"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -29,7 +29,7 @@ ms.locfileid: "51218759"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [L’accès contrôlé aux dossiers](controlled-folders.md) vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers est inclus dans Windows 10 et Windows Server 2019.
 
@@ -93,13 +93,13 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 2. Sélectionnez **Home**  >  **Create Exploit Guard Policy**.
 
-3. Entrez un nom et une description, sélectionnez **Accès contrôlé aux** dossiers, puis sélectionnez **Suivant**.
+3. Entrez un nom et une description, sélectionnez **Accès contrôlé aux** dossiers, puis **sélectionnez Suivant**.
 
 4. Choisissez si bloquer ou auditer les modifications, autoriser d’autres applications ou ajouter d’autres dossiers, puis sélectionnez **Suivant**.
    > [!NOTE]
    > Wilcard est pris en charge pour les applications, mais pas pour les dossiers. Les sous-foldeurs ne sont pas protégés. Les applications autorisées continueront à déclencher des événements jusqu’à leur redémarrage.
 
-5. Examinez les paramètres et **sélectionnez Suivant** pour créer la stratégie.
+5. Examinez les paramètres et sélectionnez **Suivant** pour créer la stratégie.
 
 6. Une fois la stratégie créée, **fermez**.
 
@@ -113,7 +113,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 4. Double-cliquez sur **le paramètre Configurer l’accès contrôlé aux** dossiers et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
     * **Activer** : les applications malveillantes et suspectes ne seront pas autorisées à apporter des modifications aux fichiers des dossiers protégés. Une notification sera fournie dans le journal des événements Windows.
-    * **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers dans les dossiers protégés.
+    * **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers des dossiers protégés.
     * **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal des événements Windows où vous pourrez évaluer l’impact sur votre organisation.
     * **Bloquer la modification du disque uniquement** : les tentatives d’écriture dans les secteurs de disque par des applications nontrues seront enregistrées dans le journal des événements Windows. Ces journaux se trouvent dans les Journaux des applications et des **services** > Microsoft > Windows > Windows Defender > Operational > ID 1123.
     * **Auditer** la modification du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés seront **enregistrées** dans le journal des événements Windows (sous Journaux des applications et des services  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >  **Operational**  >  **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
@@ -141,4 +141,4 @@ Permet `Disabled` de désactiver la fonctionnalité.
 
 * [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md)
 * [Personnaliser l’accès contrôlé aux dossiers](customize-controlled-folders.md)
-* [Évaluer Microsoft Defender pour le point de terminaison](evaluate-mde.md)
+* [Évaluer Microsoft Defender pour point de terminaison](evaluate-mde.md)

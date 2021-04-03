@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: 79d720a8b996f826548b79834e5d5c2048e28c2b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d1dbe226cef5e94b36fcd6c35b839118b200f85e
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067414"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500535"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Prendre des mesures sur les résultats de requête de recherche avancée
 
@@ -50,7 +50,7 @@ Vous pouvez prendre les mesures suivantes sur les appareils identifiés par la `
 - Collecter un package d’enquête pour obtenir plus d’informations d’investigation
 - Exécuter une analyse antivirus pour rechercher et supprimer les menaces à l’aide des dernières mises à jour de l’intelligence de la sécurité
 - Lancer une enquête automatisée pour vérifier et corriger les menaces sur l’appareil et éventuellement sur d’autres appareils concernés
-- Restreindre l’exécution de l’application uniquement aux fichiers exécutables signés par Microsoft, ce qui empêche toute activité de menace ultérieure par le biais de programmes malveillants ou d’autres fichiers exécutables non signés
+- Limiter l’exécution de l’application aux fichiers exécutables signés par Microsoft uniquement, ce qui empêche toute activité de menace ultérieure par le biais de programmes malveillants ou d’autres fichiers exécutables non signés
 
 Pour en savoir plus sur la façon dont ces actions de réponse sont effectuées via Defender pour le point de terminaison, lisez la suite sur les actions de [réponse sur les appareils.](respond-machine-alerts.md)
 
@@ -59,11 +59,11 @@ Pour en savoir plus sur la façon dont ces actions de réponse sont effectuées 
 Vous pouvez déployer l’action *de* mise en quarantaine sur les fichiers afin qu’ils soient automatiquement mis en quarantaine lorsqu’ils sont rencontrés. Lorsque vous sélectionnez cette action, vous pouvez choisir entre les colonnes suivantes pour identifier les fichiers de votre requête qui sont mis en quarantaine :
 
 - `SHA1` — Dans la plupart des tables de recherche avancées, il s’agit du SHA-1 du fichier affecté par l’action enregistrée. Par exemple, si un fichier a été copié, il s’agit du fichier copié.
-- `InitiatingProcessSHA1` — Dans la plupart des tables de recherche avancées, il s’agit du fichier responsable de l’initiative de l’action enregistrée. Par exemple, si un processus enfant a été lancé, il s’agit du processus parent. 
+- `InitiatingProcessSHA1` — Dans la plupart des tables de recherche avancées, il s’agit du fichier responsable du début de l’action enregistrée. Par exemple, si un processus enfant a été lancé, il s’agit du processus parent. 
 - `SHA256` — Il s’agit de l’équivalent SHA-256 du fichier identifié par la `SHA1` colonne.
 - `InitiatingProcessSHA256` — Il s’agit de l’équivalent SHA-256 du fichier identifié par la `InitiatingProcessSHA1` colonne.
 
-Pour en savoir plus sur la façon dont les actions de mise en quarantaine sont prises et sur la façon dont les fichiers peuvent être restaurés, consultez les actions de [réponse sur les fichiers.](respond-file-alerts.md)
+Pour en savoir plus sur la façon dont les actions de mise en quarantaine sont prises et comment les fichiers peuvent être restaurés, consultez les [actions de réponse sur les fichiers.](respond-file-alerts.md)
 
 >[!NOTE]
 >Pour localiser des fichiers et les mettre en quarantaine, les résultats de la requête doivent également inclure des valeurs en tant `DeviceId` qu’identificateurs d’appareil.  
@@ -83,6 +83,6 @@ Chaque action est enregistrée individuellement dans le centre de actions, sous 
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-reference.md)
-- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
+- [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
 - [Vue d’ensemble des détections personnalisées](overview-custom-detections.md)

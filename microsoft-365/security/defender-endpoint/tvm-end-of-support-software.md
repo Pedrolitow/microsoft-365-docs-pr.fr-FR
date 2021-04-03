@@ -1,15 +1,15 @@
 ---
 title: Planifier les versions logicielles et logicielles de fin de prise en charge
 description: Découvrez et planifiez les versions logicielles et logicielles qui ne sont plus pris en charge et qui ne reçoivent pas de mises à jour de sécurité.
-keywords: gestion des menaces et des vulnérabilités, recommandation en matière de sécurité tvm mdatp, recommandation en matière de cybersécurité, recommandation de sécurité actionnable
+keywords: gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm mdatp, recommandation en matière de cybersécurité, recommandation de sécurité actionnable
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7a1ee326540ec4baab19a266a4e570fd6a364306
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 29adf8a542d97a981a07dac167343f3774aa5af4
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068702"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500151"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planifier les versions logicielles et logicielles de fin de prise en charge avec la gestion des menaces et des vulnérabilités
 
@@ -54,13 +54,13 @@ Il est essentiel que les administrateurs informatiques et de sécurité travaill
 
 ## <a name="list-of-versions-and-dates"></a>Liste des versions et des dates
 
-Pour afficher la liste des versions qui ont atteint la fin de la prise en charge, ou la fin ou la prise en charge prochainement, et ces dates, suivez les étapes ci-dessous :
+Pour afficher la liste des versions qui ont atteint la fin de la prise en charge, ou qui ont pris fin ou bientôt prise en charge, ainsi que ces dates, suivez les étapes ci-dessous :
 
 1. Un message s’affiche dans le volant de recommandations de sécurité pour les logiciels dont les versions ont atteint la fin de la prise en charge ou qui arriveront bientôt à la fin du support.
 
     ![Capture d’écran du lien de distribution de version.](images/eos-upcoming-eos.png)
 
-2. Sélectionnez le **lien de distribution** de version pour aller à la page d’accès au logiciel. Vous pouvez y voir une liste filtrée de versions avec des balises les identifiant comme fin de support ou fin de support à venir.
+2. Sélectionnez **le lien de distribution** de version pour aller à la page d’accès au logiciel. Vous pouvez y voir une liste filtrée de versions avec des balises les identifiant comme fin de support ou fin de support à venir.
 
     ![Capture d’écran de la page d’drilldown logicielle avec le logiciel de fin de support.](images/software-drilldown-eos.png)
 

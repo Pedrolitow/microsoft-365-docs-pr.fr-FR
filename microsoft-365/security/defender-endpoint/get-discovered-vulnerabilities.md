@@ -1,26 +1,26 @@
 ---
 title: Obtenir les vulnérabilités découvertes
 description: Récupère une collection de vulnérabilités découvertes liées à un ID d’appareil donné.
-keywords: api, api de graphique, api pris en charge, get, list, file, information, discovered vulnerabilities, threat & vulnerability management api, mdatp tvm api
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, vulnérabilités découvertes, api de gestion des & menace, api tvm mdatp
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08fa910c8d4c7130fdb3ed564a97cdbd2f31d233
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 73b8fe5140ff635791e7d42358024bb7fb4ee926
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166575"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570326"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Obtenir les vulnérabilités découvertes
 
@@ -61,7 +61,7 @@ GET /api/machines/{machineId}/vulnerabilities
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -110,4 +110,4 @@ Voici un exemple de réponse.
 ## <a name="see-also"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnérabilités de votre organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Vulnérabilités dans votre organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

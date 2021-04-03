@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b42e25c409ba19639e77e95fafc3d939514511ea
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 775592cd2ed9c29df79b04e07cb53efb7bea82d6
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068446"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501242"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : gestion des menaces et des vulnérabilités
 
@@ -44,7 +44,7 @@ La page **Faiblesses** répertorie les vulnérabilités logicielles que vos appa
 >Si aucun ID CVE officiel n’est affecté à une vulnérabilité, le nom de la vulnérabilité est attribué par la gestion des menaces et des vulnérabilités.
 
 >[!TIP]
->Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
+>Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-weaknesses-page"></a>Accéder à la page Faiblesses
 
@@ -79,8 +79,8 @@ Affichez les informations sur les violations et menaces associées dans la colon
  >[!NOTE]
  > Toujours hiérarchiser les recommandations associées aux menaces en cours. Ces recommandations sont marquées avec l’icône d’informations sur les menaces ![ Simple dessin d’un bogue rouge.](images/tvm_bug_icon.png) et l’icône d’informations sur la violation, dessin ![ simple d’une flèche qui atteint une cible. ](images/tvm_alert_icon.png) .  
 
-L’icône Informations sur les violations est mise en surbrillant si une vulnérabilité est trouvée dans votre organisation.
-![Exemple de texte d’informations sur la violation qui peut s’afficher lorsque vous placez le pointage sur l’icône. Celle-ci indique « une alerte active possible est associée à cette recommandation.](images/tvm-breach-insights.png)
+L’icône Informations sur les violations est mise en surbrill valeur si une vulnérabilité est trouvée dans votre organisation.
+![Exemple de texte d’informations sur la violation qui pourrait s’afficher lorsque vous placez le pointage sur l’icône. Celle-ci indique « une alerte active possible est associée à cette recommandation.](images/tvm-breach-insights.png)
 
 L’icône Informations sur les menaces est mise en évidence si la vulnérabilité trouvée dans votre organisation est associée à des exploits. Le pointage sur l’icône indique si la menace fait partie d’un kit d’exploitation ou est connectée à des campagnes avancées persistantes ou à des groupes d’activités spécifiques. Lorsqu’il est disponible, il existe un lien vers un rapport d’analyse des menaces avec les actualités sur l’exploitation zéro jour, les divulgations ou les conseils de sécurité associés.  
 
@@ -88,7 +88,7 @@ L’icône Informations sur les menaces est mise en évidence si la vulnérabili
 
 ### <a name="gain-vulnerability-insights"></a>Obtenir des informations sur les vulnérabilités
 
-Si vous sélectionnez une CVE, un panneau volant s’ouvre avec plus d’informations telles que la description de la vulnérabilité, les détails, les informations sur les menaces et les appareils exposés.
+Si vous sélectionnez un contrôle CVE, un panneau volant s’ouvre avec plus d’informations, telles que la description de la vulnérabilité, les détails, les informations sur les menaces et les appareils exposés.
 
 - La catégorie « Fonctionnalité du système d’exploitation » est affichée dans les scénarios pertinents
 - Vous pouvez passer à la recommandation de sécurité associée pour chaque CVE avec appareil exposé
@@ -97,7 +97,7 @@ Si vous sélectionnez une CVE, un panneau volant s’ouvre avec plus d’informa
 
 ### <a name="software-that-isnt-supported"></a>Logiciel non pris en charge
 
-Les VC pour les logiciels qui ne sont actuellement pas pris en charge par la gestion des menaces & des vulnérabilités sont toujours présents dans la page Faiblesses. Étant donné que le logiciel n’est pas pris en charge, seules des données limitées seront disponibles.
+Les VC pour les logiciels qui ne sont actuellement pas pris en charge par les menaces & gestion des vulnérabilités sont toujours présents dans la page Faiblesses. Étant donné que le logiciel n’est pas pris en charge, seules des données limitées seront disponibles.
 
 Les informations sur l’appareil exposé ne seront pas disponibles pour les VC avec des logiciels non pris en cas de non-gestion. Filtrez en sélectionnant l’option « Non disponible » dans la section « Appareils exposés ».
 
@@ -141,12 +141,12 @@ La catégorie « Fonctionnalité du système d’exploitation » est également 
 
 ![Exemple de logique de détection qui répertorie les logiciels détectés sur l’appareil et les ko.](images/tvm-cve-detection-logic.png)
 
-## <a name="report-inaccuracy"></a>Inaccuracy de rapport
+## <a name="report-inaccuracy"></a>Report inaccuracy
 
 Signalez un faux positif lorsque vous voyez des informations vagues, inexactes ou incomplètes. Vous pouvez également signaler les recommandations de sécurité qui ont déjà été corrigés.
 
 1. Ouvrez la CVE sur la page Faiblesses.
-2. Select **Report inaccuracy** and a flyout pane will open.
+2. Sélectionnez **l’imprécision du rapport** et un volet volant s’ouvre.
 3. Sélectionnez la catégorie d’imprécision dans le menu déroulant et remplissez votre adresse e-mail et les détails d’imprécision.
 4. Sélectionnez **Envoyer**. Vos commentaires sont immédiatement envoyés aux experts en gestion des menaces et des vulnérabilités.
 
@@ -155,5 +155,5 @@ Signalez un faux positif lorsque vous voyez des informations vagues, inexactes o
 - [Vue d’ensemble de la gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Recommandations de sécurité](tvm-security-recommendation.md)
 - [Inventaire des logiciels](tvm-software-inventory.md)
-- [Informations sur le tableau de bord](tvm-dashboard-insights.md)
+- [Tableau de bord des informations](tvm-dashboard-insights.md)
 - [Afficher et organiser la liste Microsoft Defender pour les appareils de point de terminaison](machines-view-overview.md)

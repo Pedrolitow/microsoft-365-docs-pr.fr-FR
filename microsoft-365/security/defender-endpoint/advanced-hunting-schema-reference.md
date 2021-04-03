@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 7516744b72bc86bbf8f776adde690d75f057efd5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ce87b6e9e462ba5bd1bab1542c41ac72092dabd4
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065113"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500591"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
@@ -31,11 +31,11 @@ ms.locfileid: "51065113"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Le [schéma de recherche](advanced-hunting-overview.md) avancée est composé de plusieurs tables qui fournissent des informations sur les événements ou des informations sur les appareils et d’autres entités. Pour créer des requêtes qui couvrent efficacement sur plusieurs tableaux, vous devez comprendre les tableaux et les colonnes du schéma de repérage avancé.
+Le [schéma de recherche](advanced-hunting-overview.md) avancé est composé de plusieurs tables qui fournissent des informations sur les événements ou sur les appareils et d’autres entités. Pour créer des requêtes qui couvrent efficacement sur plusieurs tableaux, vous devez comprendre les tableaux et les colonnes du schéma de repérage avancé.
 
 ## <a name="get-schema-information-in-the-security-center"></a>Obtenir des informations de schéma dans le centre de sécurité
 Lors de la construction de requêtes, utilisez la référence de schéma intégrée pour obtenir rapidement les informations suivantes sur chaque table du schéma :
@@ -79,7 +79,7 @@ Les noms de table et de colonne sont également répertoriés dans le Centre de 
 ## <a name="related-topics"></a>Sujets associés
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
-- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
+- [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
 - [Vue d’ensemble des détections personnalisées](overview-custom-detections.md)
 - [Modifications avancées apportées au schéma de données de recherche](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/advanced-hunting-data-schema-changes/ba-p/1043914)

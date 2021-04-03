@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d3f2640752f2dae152ef4be8b9ac2d2996c802a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d86c79f0f0ab74d1dfbb88e7803f4ee4d691ea73
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204439"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501181"
 ---
 # <a name="user-submissions-policy"></a>Stratégie de soumissions d’utilisateurs
 
@@ -46,7 +46,7 @@ Dans les organisations Microsoft 365 avec boîtes aux lettres Exchange Online, v
   > [!NOTE]
   > Si la création de rapports a été désactivée dans Outlook sur le [web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)l’activation des soumissions d’utilisateurs ici remplace ce paramètre et permet aux utilisateurs de signaler à nouveau les messages dans Outlook sur le web.
 
-Vous pouvez également configurer des outils de rapport de messages tiers pour transmettre des messages à la boîte aux lettres que vous spécifiez.
+Vous pouvez également configurer des outils de rapports de messages tiers pour transmettre des messages à la boîte aux lettres que vous spécifiez.
 
 La livraison des messages signalés par l’utilisateur à une boîte aux lettres personnalisée au lieu de directement à Microsoft permet à vos administrateurs de signaler de manière sélective et manuelle des messages à Microsoft à l’aide de la soumission [d’administrateur.](admin-submission.md)
 
@@ -56,7 +56,7 @@ Utilisez les articles suivants pour configurer les conditions préalables requis
 
 - Ignorez le filtrage du courrier indésirable sur la boîte aux lettres personnalisée en créant une règle de flux de messagerie Exchange pour définir le niveau de confiance du courrier indésirable. Voir [Utiliser le EAC](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) pour créer une règle de flux de messagerie qui définit le SCL d’un message pour définir le SCL sur **-1**.
 
-- Désactiver l’analyse des pièces jointes pour les programmes malveillants dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de pièces jointes sécurisées dans Defender pour [Office 365](set-up-safe-attachments-policies.md) pour créer une stratégie de pièces jointes sécurisées avec le paramètre **Off** pour les pièces **jointes sécurisées réponse anti-programme** malveillant inconnue.
+- Désactiver l’analyse des pièces jointes pour les programmes malveillants dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de pièces jointes sécurisées dans Defender pour [Office 365](set-up-safe-attachments-policies.md) pour créer une stratégie de pièces jointes sécurisées avec le paramètre **Off** for **Safe Attachments unknown malware response**.
 
 - Désactiver l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de liens sûrs dans Defender pour [Office 365](set-up-safe-links-policies.md) pour créer une stratégie de liens sécurisés avec le paramètre **Off** pour sélectionner l’action pour les URL potentiellement malveillantes inconnues dans les **messages.**
 
@@ -120,6 +120,9 @@ Sous **Options pour afficher le moment où les messages sont** signalés, sélec
         > [!NOTE]
         > Les organisations gouvernementales américaines (GCC, GCC-H et DoD) peuvent uniquement configurer une boîte **aux lettres personnalisée.** Les deux autres options sont désactivées.
 
+        > [!NOTE]
+        > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour réascaner et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
+
       Lorsque vous avez terminé, cliquez sur **Confirmer.**
 
       > [!CAUTION]
@@ -142,7 +145,7 @@ où SafetyAPIAction est l’une des valeurs d’un nombre integer suivantes :
 
 - 1 : Courrier indésirable
 - 2 : ne pas être indésirable
-- 3 : hameçonnage
+- 3 : Hameçonnage
 
 Dans l’exemple suivant :
 
@@ -154,4 +157,4 @@ Dans l’exemple suivant :
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
-Les messages qui ne suivent pas ce format ne s’affichent pas correctement dans le portail Soumissions.
+Les messages qui ne suivent pas ce format ne s’afficheront pas correctement dans le portail soumissions.

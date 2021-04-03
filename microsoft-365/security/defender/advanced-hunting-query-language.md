@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7ce3053fbc05f7340eea8dff08c9f7aaaeb9d7c0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b22badcb9c099679e3d785e407f83d2121a84901
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068265"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500362"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -75,8 +75,8 @@ La requête elle-même commence généralement par un nom de table suivi de plus
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
-### <a name="set-the-time-range"></a>Définir l’plage de temps
-Le premier élément canal est un filtre de temps dont l’étendue est limitée aux sept jours précédents. La limitation de la plage de temps permet de s’assurer que les requêtes s’exécutent bien, retournent des résultats gérables et n’arrivent pas à terme.
+### <a name="set-the-time-range"></a>Définir la plage de temps
+Le premier élément canal est un filtre de temps dont l’étendue est limitée aux sept jours précédents. La limitation de la plage de temps permet de s’assurer que les requêtes s’exécutent bien, retournent des résultats gérables et n’ont pas de délai d’délai.
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -147,7 +147,7 @@ Le recherche avancée prend en charge les types de données Kusto, y compris les
 | Type de données | Description et implications dans les requêtes |
 |--|--|
 | `datetime` | Les données et les informations d’heure représentent généralement des timestamps d’événement. [Voir les formats de date/heure pris en charge](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
-| `string` | Chaîne de caractères en UTF-8 entre guillemets simples ( ) ou `'` guillemets doubles ( `"` ). [En savoir plus sur les chaînes](/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `string` | Chaîne de caractères en UTF-8 entre guillemets simples ( `'` ) ou guillemets doubles ( `"` ). [En savoir plus sur les chaînes](/azure/data-explorer/kusto/query/scalar-data-types/string) |
 | `bool` | Ce type de données prend en charge `true` ou `false` indique. [Voir les opérateurs et les littéraux pris en charge](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
 | `int` | Integer 32 bits  |
 | `long` | Integer 64 bits |
@@ -156,7 +156,7 @@ Pour en savoir plus sur ces types de données, consultez les types de données [
 
 ## <a name="get-help-as-you-write-queries"></a>Obtenez de l’aide lorsque vous rédigez des requêtes
 Tirez parti des fonctionnalités suivantes pour rédiger des requêtes plus rapidement :
-- **Suggestion automatique : lorsque** vous écrivez des requêtes, la recherche avancée fournit des suggestions de IntelliSense. 
+- **Suggestion automatique : lorsque** vous écrivez des requêtes, le recherche avancée fournit des suggestions de IntelliSense. 
 - **Arborescence de schéma**: une représentation de schéma qui inclut la liste des tableaux et leurs colonnes est fournie en de côté de votre zone de travail. Si vous souhaitez en savoir plus, veuillez placer le pointeur sur un élément. Double-cliquez sur un élément pour l’insérer dans l’éditeur de requête.
 - **[Référence de schéma :](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** référence dans le portail avec des descriptions de tableau et de colonne, ainsi que des types d’événements pris en charge (valeurs) et `ActionType` des exemples de requêtes
 
@@ -183,7 +183,7 @@ Pour plus d’informations sur le langage de requête Kusto et les opérateurs p
 
 ## <a name="related-topics"></a>Sujets associés
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
-- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
+- [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Repérer des menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

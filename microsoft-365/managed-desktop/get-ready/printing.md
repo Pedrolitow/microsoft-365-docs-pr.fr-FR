@@ -1,7 +1,7 @@
 ---
 title: Préparer des ressources d’impression pour le Bureau géré Microsoft
 description: Étapes importantes pour s’assurer que l’impression fonctionne correctement
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3decc7d67decc5557e7921e68108e2ddb447f0fd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 971644aafabda733bf745fae278bdfeeed3282e3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924551"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574546"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Préparer des ressources d’impression pour le Bureau géré Microsoft
 
@@ -22,7 +23,7 @@ Lorsque vous êtes prêt à vous inscrire au Bureau géré Microsoft, vous devez
  
 - Déployez la solution d’impression universelle Microsoft pour faciliter la découverte des imprimantes pour les appareils Bureau géré Microsoft. Pour plus d’informations, voir [Qu’est-ce que l’impression universelle](/universal-print/fundamentals/universal-print-whatis).
 - Déployez les imprimantes directement à l’aide d’un script PowerShell personnalisé. Suivez les étapes de la section Configurer [les imprimantes locales.](#set-up-local-printers)
-- Utilisez une solution d’impression cloud non Microsoft compatible avec les appareils Windows 10 joints à un domaine Azure Active Directory. La solution doit répondre aux exigences logicielles du Bureau géré Microsoft. Pour plus d’informations, consultez [la version requise de l’application Bureau géré Microsoft.](../service-description/mmd-app-requirements.md)
+- Utilisez une solution d’impression cloud non Microsoft compatible avec les appareils Windows 10 joints à un domaine Azure Active Directory. La solution doit répondre aux exigences logicielles du Bureau géré Microsoft. Pour plus d’informations, consultez [les exigences de l’application Bureau géré Microsoft.](../service-description/mmd-app-requirements.md)
  
 Dans tous les cas, si les pilotes d’imprimante ne sont pas disponibles à partir de Microsoft Update ou du Microsoft Store, vous devez les obtenir vous-même et les empaquetés pour le déploiement sur vos appareils de bureau géré Microsoft avec Microsoft Intune. Pour plus d’informations, [voir Intune Autonome - Gestion des applications Win32](/mem/intune/apps/apps-win32-app-management)
 
@@ -37,3 +38,15 @@ Si vous avez décidé de déployer des imprimantes à l’aide d’un script Pow
 3.  À l’aide du portail d’administration, nous allons vous faire savoir que la demande est terminée. Initialement, nous allons uniquement déployer la configuration sur les appareils du groupe de déploiement Test.
 4.  Vous devez tester et vérifier si la configuration fonctionne comme prévu. Répondez à **l’aide de l’onglet Discussion** dans la demande de support pour nous faire savoir quand vous avez terminé vos tests.
 5.  Nous allons ensuite déployer la configuration sur les autres groupes de déploiement.
+
+## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
+
+1. Passer en [revue les conditions préalables pour le Bureau géré Microsoft.](prerequisites.md)
+2. Utiliser [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
+3. [Conditions préalables pour les comptes invité](guest-accounts.md)
+4. [Configuration du réseau pour Bureau géré Microsoft](network.md)
+5. [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
+6. [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](authentication.md)
+7. [Applications dans le Bureau géré Microsoft](apps.md)
+8. [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md)
+9. [Préparer les ressources d’impression pour le Bureau géré Microsoft](printing.md) (cet article)

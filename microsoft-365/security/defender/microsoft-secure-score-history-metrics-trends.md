@@ -1,5 +1,5 @@
 ---
-title: Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs
+title: Suivre votre historique du Score de sécurisation Microsoft et atteindre les objectifs
 description: Obtenir des informations sur l’activité qui a affecté votre score de sécurité Microsoft. Découvrez les tendances et définissez des objectifs.
 keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,14 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 70b20755de836d3fce2469da00bd41520e70ca57
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e97ec0c970ed767edd30419c14db8b1073da64c8
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064633"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571031"
 ---
-# <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs
+# <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivre votre historique du Score de sécurisation Microsoft et atteindre les objectifs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -52,7 +52,7 @@ Pour afficher tout l’historique de cette action d’amélioration spécifique,
 
 Dans **l’onglet & des** tendances, il existe plusieurs graphiques et graphiques pour vous donner plus de visibilité sur les tendances et définir des objectifs. Vous pouvez définir la plage de dates pour la page entière des visualisations. Les visualisations sont les suivantes :
 
-* **Votre zone Score de** sécurité : personnalisée en fonction des objectifs et des définitions de plages de scores bonnes, acceptables et mauvaises de votre organisation.
+* **Votre zone De score de** sécurité : personnalisée en fonction des objectifs et des définitions de plages de scores bonnes, acceptables et mauvaises de votre organisation.
 * **Tendance de régression :** chronologie des points qui ont régressé en raison de modifications de configuration, d’utilisateur ou d’appareil.  
 * **Tendance de comparaison** : comparaison du score de sécurité de votre organisation avec les autres au fil du temps. Cet affichage peut inclure des lignes représentant la moyenne de score des organisations dont le nombre de sièges est similaire et un affichage de comparaison personnalisé que vous pouvez définir.
 * **Tendance d’acceptation des risques** : chronologie des actions d’amélioration marquées comme « risques acceptés ».
@@ -98,6 +98,6 @@ Si vous avez des problèmes, faites-le nous savoir en publiant dans la communaut
 ## <a name="related-resources"></a>Ressources connexes
 
 - [Vue d’ensemble du score de sécurisation Microsoft](microsoft-secure-score.md)
-- [Évaluez votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
+- [Évaluer votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
 - [Nouveautés](microsoft-secure-score-whats-coming.md)
 - [Nouveautés](microsoft-secure-score-whats-new.md)

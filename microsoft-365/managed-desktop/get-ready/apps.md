@@ -1,7 +1,7 @@
 ---
 title: Applications dans le Bureau géré Microsoft
 description: Explique comment les applications sont gérées, notamment comment les packager, les déployer et les prendre en charge.
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ea0990e5f30aa45ec48bb2e6a7c957c187c74ebb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: d970ac1a28c62703f648e4fbf6f66e2f825a6188
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922943"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574618"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le Bureau géré Microsoft
 
@@ -31,7 +32,7 @@ Vous pouvez également déployer d’autres applications non Microsoft pour vos 
 
 ## <a name="apps-provided-by-microsoft"></a>Applications fournies par Microsoft
 
-Les versions 64 bits des applications de la suite Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Entreprise et OneNote) sont incluses dans votre licence Bureau géré Microsoft. Les versions « Exécuter en un clic  » de Microsoft Project et Visio ne sont pas incluses par défaut, mais vous pouvez les demander à être ajoutées. Pour plus d’informations sur ces applications, voir Installer Microsoft Project ou [Microsoft Visio sur les appareils de bureau géré Microsoft.](../get-started/project-visio.md)
+Les versions 64 bits des applications de la suite Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Entreprise et OneNote) sont incluses dans votre licence Bureau géré Microsoft. Les versions « Exécuter en un clic  » de Microsoft Project et De Visio ne sont pas incluses par défaut, mais vous pouvez les demander à être ajoutées. Pour plus d’informations sur ces applications, voir Installer Microsoft Project ou [Microsoft Visio sur les appareils de bureau géré Microsoft.](../get-started/project-visio.md)
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Ce que Microsoft fait pour prendre en charge les applications que nous fournissons
 
@@ -75,3 +76,16 @@ Il existe trois options pour empaquetér vos applications :
 ## <a name="deploying-apps"></a>Déploiement d’applications
 
 Quelle que soit la méthode que vous utilisez pour empaqueté des applications, une fois que vous avez terminé, vous êtes prêt à suivre les étapes de déploiement des applications sur les appareils de bureau géré [Microsoft.](../get-started/deploy-apps.md)
+
+
+## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
+
+1. Passer en [revue les conditions préalables pour le Bureau géré Microsoft.](prerequisites.md)
+2. Utiliser [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
+3. [Conditions préalables pour les comptes invité](guest-accounts.md)
+4. [Configuration du réseau pour Bureau géré Microsoft](network.md)
+5. [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
+6. [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](authentication.md)
+7. [Applications dans le Bureau géré Microsoft](apps.md) (cet article)
+8. [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md)
+9. [Préparer des ressources d’impression pour le Bureau géré Microsoft](printing.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP pour Linux
+title: Microsoft Defender pour point de terminaison Linux
 ms.reviewer: ''
 description: Décrit comment installer et utiliser Microsoft Defender ATP pour Linux.
 keywords: microsoft, defender, atp, linux, installation, déployer, désinstallation, casque, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: cc2f5be700395f6d88c05481d74501f4d9d92b76
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408336"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500675"
 ---
 # <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -39,7 +39,7 @@ ms.locfileid: "51408336"
 Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint pour Linux.
 
 > [!CAUTION]
-> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint pour Linux est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
+> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint pour Linux est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti de defender pour point de terminaison pour la fonctionnalité EDR Linux après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif.](linux-preferences.md#enable--disable-passive-mode)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>Comment installer Microsoft Defender pour endpoint pour Linux
 
@@ -64,7 +64,7 @@ En règle générale, vous devez suivre les étapes suivantes :
     - [Déployer à l’aide de l’outil de gestion de la configuration de l’ordinateur](linux-install-with-puppet.md)
     - [Déployer à l’aide de l’outil de gestion de la configuration Ansible](linux-install-with-ansible.md)
 
-Si vous avez des échecs d’installation, reportez-vous à Résolution des problèmes d’installation dans [Microsoft Defender pour Endpoint pour Linux.](linux-support-install.md)
+Si vous découvrez des échecs d’installation, reportez-vous à La résolution des problèmes d’installation dans [Microsoft Defender pour Endpoint pour Linux.](linux-support-install.md)
 
 ### <a name="system-requirements"></a>Configuration requise
 
@@ -83,12 +83,12 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
   > L’exécution de Defender pour Endpoint pour Linux côte à côte avec d’autres solutions de sécurité basées sur la sécurité `fanotify` n’est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris la suspension du système d’exploitation.
 
 - Espace disque : 1 Go
-- /opt/microsoft/mdatp/sbin/wdavdaemon requiert une autorisation exécutable. Pour plus d’informations, voir « S’assurer que le daemon dispose de l’autorisation exécutable » dans Résoudre les problèmes d’installation de [Microsoft Defender ATP pour Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
+- /opt/microsoft/mdatp/sbin/wdavdaemon requiert une autorisation exécutable. Pour plus d’informations, voir « S’assurer que le daemon dispose de l’autorisation exécutable » dans Résolution des problèmes d’installation de [Microsoft Defender ATP pour Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
 - Mémoire : 1 Go
     > [!NOTE]
     > Assurez-vous que vous avez de l’espace disque libre dans /var.
 
-- La solution fournit actuellement une protection en temps réel pour les types de système de fichiers suivants :
+- La solution offre actuellement une protection en temps réel pour les types de système de fichiers suivants :
 
   - `btrfs`
   - `ecryptfs`
@@ -110,8 +110,8 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions sortantes entre celui-ci et vos points de terminaison.
 
 - L’infrastructure `auditd` d’audit ( ) doit être activée.
-  >[!NOTE]
-  > Les événements système capturés par les règles ajoutées aux journaux d’audit s’ajoutent aux journaux d’audit et peuvent affecter l’audit de l’hôte `audit.logs` et la collecte en amont. Les événements ajoutés par Microsoft Defender pour Endopoint pour Linux sont marqués avec une `mdatp` clé.
+  > [!NOTE]
+  > Les événements système capturés par les règles ajoutées à s’ajoutent à (s) et peuvent affecter l’audit de l’hôte `/etc/audit/rules.d/` et la collecte en `audit.log` amont. Les événements ajoutés par Microsoft Defender pour Endpoint pour Linux sont marqués avec une `mdatp` clé.
 
 ### <a name="network-connections"></a>Connexions réseau
 
@@ -131,7 +131,7 @@ Defender pour le point de terminaison peut découvrir un serveur proxy à l’ai
 Si un proxy ou un pare-feu bloque le trafic anonyme, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées précédemment. Pour les proxies transparents, aucune configuration supplémentaire n’est nécessaire pour Defender for Endpoint. Pour le proxy statique, suivez les étapes de [la configuration manuelle du proxy statique.](linux-static-proxy-configuration.md)
 
 > [!WARNING]
-> Les pacs, WPAD et les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seul un proxy statique ou transparent est utilisé.
+> Pac, WPAD et les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seul un proxy statique ou transparent est utilisé.
 >
 > L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy pour transmettre directement les données de Defender for Endpoint for Linux aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
 

@@ -1,5 +1,5 @@
 ---
-title: Afficher les événements de réduction de la surface d’attaque
+title: Afficher les événements de la réduction de la surface d’attaque
 description: Importer des affichages personnalisés pour voir les événements de réduction de la surface d’attaque.
 keywords: affichage des événements, Exploit Guard, audit, révision, événements
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: de605a667284c1218a3efe6e388d99b26b42e333
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068577"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569742"
 ---
-# <a name="view-attack-surface-reduction-events"></a>Afficher les événements de réduction de la surface d’attaque
+# <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,21 +42,21 @@ Obtenez des rapports détaillés sur les événements et les blocs dans le cadre
 
 Créez des affichages personnalisés dans l’Observateur d’événements Windows pour voir uniquement les événements pour des fonctionnalités et des paramètres spécifiques. Le moyen le plus simple consiste à importer un affichage personnalisé en tant que fichier XML. Vous pouvez copier le XML directement à partir de cette page.
 
-Vous pouvez également accéder manuellement à la zone d’événement qui correspond à la fonctionnalité.
+Vous pouvez également accéder manuellement à la zone d’événement correspondant à la fonctionnalité.
 
-### <a name="import-an-existing-xml-custom-view"></a>Importer un affichage personnalisé XML existant
+### <a name="import-an-existing-xml-custom-view"></a>Importer une vue personnalisée XML existante
 
-1. Créez un fichier .txt vide et copiez le XML de l’affichage personnalisé que vous souhaitez utiliser dans le fichier .txt. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
+1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans le fichier .txt. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
     - Vue personnalisée des événements Exploit Protection *:ep-events.xml*
-    - Affichage personnalisé des événements de réduction de la surface *d’attaque :asr-events.xml*
+    - Vue personnalisée des événements de réduction de la surface *d’attaque :asr-events.xml*
     - Affichage personnalisé des événements réseau/protection *:np-events.xml*
 
-2. Tapez **observateur d’événements** dans le menu Démarrer et ouvrez **l’Observateur d’événements.**
+2. Tapez **l’Observateur** d’événements dans le menu Démarrer et ouvrez **l’Observateur d’événements.**
 
 3. Sélectionner **l’affichage**  >  **personnalisé d’importation d’action...**
 
-    ![Animation mettant en surbrillance l’importation d’un affichage personnalisé à gauche de la fenêtre visionneuse even](/windows/security/threat-protection/images/events-import)
+    ![Animation mettant en surbrillance l’importation d’une vue personnalisée à gauche de la fenêtre visionneuse even](/windows/security/threat-protection/images/events-import)
 
 4. Accédez à l’endroit où vous avez extrait le fichier XML pour l’affichage personnalisé que vous souhaitez, puis sélectionnez-le.
 
@@ -64,7 +64,7 @@ Vous pouvez également accéder manuellement à la zone d’événement qui corr
 
 6. Il crée un affichage personnalisé qui filtre pour afficher uniquement les événements liés à cette fonctionnalité.
 
-### <a name="copy-the-xml-directly"></a>Copier le XML directement
+### <a name="copy-the-xml-directly"></a>Copier directement le XML
 
 1. Tapez **l’Observateur** d’événements dans le menu Démarrer et ouvrez l’Observateur **d’événements** Windows.
 
@@ -172,15 +172,15 @@ Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 22 | R
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 23 | Audit SimExec ROP
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 24 | Appliquer SimExec ROP
 Exploit Protection | WER-Diagnostics | 5  | Bloc CFG
-Exploit Protection | Win32K (opérationnel) | 260 | Police nontrus
+Exploit Protection | Win32K (opérationnel) | 260 | Police nontrusted
 Protection du réseau | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
-Protection du réseau | Windows Defender (opérationnel) | 1125 | Événement lorsque la protection du réseau se déclenche en mode audit
+Protection du réseau | Windows Defender (opérationnel) | 1125 | Événement lorsque la protection du réseau se déclenche en mode Audit
 Protection du réseau | Windows Defender (opérationnel) | 1126 | Événement lorsque la protection du réseau se déclenche en mode blocage
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1124 | Événement d’accès contrôlé aux dossiers audité
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1123 | Événement d’accès contrôlé aux dossiers bloqué
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1127 | Événement bloqué de bloc d’écriture de secteur d’accès contrôlé aux dossiers
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1128 | Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers audité
-Réduction de la surface d’attaque | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
-Réduction de la surface d’attaque | Windows Defender (opérationnel) | 1122 | Événement lorsque la règle se déclenche en mode audit
-Réduction de la surface d’attaque | Windows Defender (opérationnel) | 1121 | Événement lorsque la règle se déclenche en mode blocage
+Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1127 | Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers bloqué
+Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1128 | Événement de bloc d’écriture de secteur d’accès contrôlé aux dossiers audité
+Réduction de la surface d'attaque | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
+Réduction de la surface d'attaque | Windows Defender (opérationnel) | 1122 | Événement lorsque la règle se déclenche en mode audit
+Réduction de la surface d'attaque | Windows Defender (opérationnel) | 1121 | Événement lorsque la règle se déclenche en mode blocage
