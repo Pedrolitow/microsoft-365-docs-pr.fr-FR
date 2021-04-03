@@ -2,8 +2,8 @@
 title: Activer la gestion des appareils Windows 10 joints à un domaine par Microsoft 365 pour les entreprises
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment activer Microsoft 365 pour protéger les appareils Windows 10 locaux joints à Active Directory en quelques étapes.
-ms.openlocfilehash: 82d4ac3f1d6aba9489f9ea153de3a3d2083b47ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8a45c6959bee368491c5c6424e3713300c443779
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913191"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580131"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Activer la gestion des appareils Windows 10 joints à un domaine par Microsoft 365 Business Premium
 
@@ -52,29 +52,29 @@ Pour obtenir la procédure [à suivre, consultez](manage-domain-users.md) Synchr
 
 Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) and on the Microsoft Intune page, select **Device enrollment**, then on the **Overview** page, make sure **MDM authority** is **Intune**.
 
-- Si **l’autorité MDM** est **Aucune,** cliquez sur l’autorité **DE GESTION** pour la définir sur **Intune**.
-- Si  l’autorité de gestion des périphériques mobiles est Microsoft Office **365**, allez sur Périphériques Inscrire des appareils et utilisez la boîte de dialogue Ajouter une autorité de gestion des appareils mobiles sur le droit pour ajouter l’autorité de gestion des appareils mobiles  >   **Intune** (la boîte de dialogue Ajouter une autorité **MDM** est disponible uniquement si l’autorité **mdm** est définie sur Microsoft Office 365). 
+- Si **l’autorité MDM est** **Aucune,** cliquez sur l’autorité **DE GESTION** pour la définir sur **Intune**.
+- Si  l’autorité de gestion des périphériques mobiles est Microsoft Office **365**, go to **Devices**  >  **Enroll devices** and use the **Add MDM authority** dialog on the right to add **Intune MDM** authority (the **Add MDM Authority** dialog is only available if the **MDM Authority** is set to Microsoft Office 365).
 
 ## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. Vérifiez qu’Azure AD est activé pour joindre des ordinateurs
 
 - Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select Azure Active **Directory** (select Show all if Azure Active Directory is not visible) in the **Admin centers** list. 
 - Dans le **Centre d’administration Azure Active Directory,** allez à **Azure Active Directory,** choisissez Appareils, puis **Paramètres de l’appareil.** 
 - Vérifier **que les utilisateurs peuvent joindre des appareils à Azure AD** est activé 
-    1. Pour activer tous les utilisateurs, définissez-le sur **Tous.**
+    1. Pour activer tous les utilisateurs, définissez-le **sur Tous.**
     2. Pour activer des utilisateurs spécifiques, **définissez-le sur Sélectionné** pour activer un groupe spécifique d’utilisateurs.
         - Ajoutez les utilisateurs de domaine souhaités synchronisés dans Azure AD à un [groupe de sécurité.](../admin/create-groups/create-groups.md)
-        - Sélectionnez **Sélectionner des groupes** pour activer l’étendue de l’utilisateur MDM pour ce groupe de sécurité.
+        - Choisissez **Sélectionner des groupes** pour activer l’étendue de l’utilisateur MDM pour ce groupe de sécurité.
 
 ## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. Vérifier qu’Azure AD est activé pour la gestion des données de gestion des données
 
 - Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select **select Endpoint Managemen** t (select **Show all** if **Endpoint Manager** is not visible)
 - Dans le Centre **d’administration Microsoft Endpoint Manager,** allez sur **Appareils**  >    >  **Windows Inscription** automatique  >  .
-- Vérifiez que l’étendue de l’utilisateur mdm est activée.
+- Vérifiez que l’étendue utilisateur DE LAM est activée.
 
     1. Pour inscrire tous les  ordinateurs, définissez-le sur Tous pour inscrire automatiquement tous les ordinateurs utilisateur qui sont joints à Azure AD et les nouveaux ordinateurs lorsque les utilisateurs ajoutent un compte de travail à Windows.
     2. Définir sur **Some pour** inscrire les ordinateurs d’un groupe spécifique d’utilisateurs.
         -  Ajoutez les utilisateurs de domaine souhaités synchronisés dans Azure AD à un [groupe de sécurité.](../admin/create-groups/create-groups.md)
-        -  Sélectionnez **Sélectionner des groupes** pour activer l’étendue de l’utilisateur MDM pour ce groupe de sécurité.
+        -  Choisissez **Sélectionner des groupes** pour activer l’étendue de l’utilisateur MDM pour ce groupe de sécurité.
 
 ## <a name="4-create-the-required-resources"></a>4. Créer les ressources requises 
 
@@ -112,7 +112,7 @@ Si vous ne voyez pas la stratégie Activer l’inscription mdm automatique à l�
 3.  Accédez, en fonction de la version des modèles d’administration, au dossier **: C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
 4.  Renommons le **dossier Définitions de stratégie dans** le chemin d’accès ci-dessus à **PolicyDefinitions**.
 5.  Copiez **le dossier PolicyDefinitions** dans votre partage SYSVOL, par défaut situé dans **C:\Windows\SYSVOL\domain\Policies**. 
-    -   Si vous envisagez d’utiliser un magasin central de stratégies pour l’ensemble de votre domaine, ajoutez-y le contenu de PolicyDefinitions.
+    -   Si vous envisagez d’utiliser un magasin central de stratégies pour l’ensemble de votre domaine, ajoutez le contenu de PolicyDefinitions à cet élément.
 6.  Si vous avez plusieurs contrôleurs de domaine, attendez que SYSVOL réplique pour que les stratégies soient disponibles. Cette procédure fonctionne également pour n’importe quelle version future des modèles d’administration.
 
 À ce stade, vous devriez être en mesure de voir la stratégie Activer l’inscription mdm automatique à l’aide des informations d’identification **Azure AD par défaut** disponibles.

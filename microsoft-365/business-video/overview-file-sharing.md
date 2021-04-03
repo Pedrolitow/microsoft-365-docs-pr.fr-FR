@@ -2,8 +2,8 @@
 title: 'Partager vos fichiers d’entreprise : vue d’ensemble'
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble du partage de vos fichiers métiers.
-ms.openlocfilehash: 6066bb2b1f1ea4fb4fac6a2d9d08dbd19d6cb7b0
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: a28830b9dc863c38ff45e2d6a140ab764ae66b06
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164596"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580521"
 ---
 # <a name="overview-of-sharing-business-files"></a>Vue d’ensemble du partage de fichiers métiers
 
@@ -47,7 +47,7 @@ En savoir plus sur le partage de [fichiers en dehors](securely-share-files-exter
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Partager et collaborer avec un client ou un partenaire commercial
 
-Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un endroit permanent pour partager et collaborer. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires restent au même niveau.
+Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un lieu continu de partage et de collaboration. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires continuent de s’en sortir.
 
 1. Créez l’équipe.
 1. Chargez vos fichiers.

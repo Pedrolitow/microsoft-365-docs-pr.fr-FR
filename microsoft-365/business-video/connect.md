@@ -2,8 +2,8 @@
 title: Connecter des PC à Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment connecter votre PC à Microsoft 365 Business.
-ms.openlocfilehash: d1c53feb0940e3ec8fcd040bb119ec3d285a615f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 7afbf3a1a515b1f023d660e72a77144b93d66a89
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422794"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580653"
 ---
 # <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Connecter votre PC à Microsoft 365 Business Premium
 
@@ -41,7 +41,7 @@ Tout d’abord, vérifiez que Windows 10 Professionnel est installé :
 
 Ensuite, connectez-vous à Microsoft 365 Business :
 
-1. Sélectionnez **Démarrer,** puis **l’icône Paramètres.**
+1. **Sélectionnez** Démarrer, puis **l’icône Paramètres.**
 2. Select **Accounts**  >   **Access work or school**   >   **Connect**.
 3. Sélectionnez **Joindre cet appareil à Azure Active Directory.**
 4. Entrez l’adresse e-mail de votre compte Microsoft 365, puis sélectionnez  **Suivant**.

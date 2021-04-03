@@ -2,8 +2,8 @@
 title: Mise en place de Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -28,18 +28,18 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez Microsoft 365 pour les entreprises, comment le configurer et comment préparer les appareils et PC de vos utilisateurs afin de s’assurer qu’ils sont protégés par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 9430dc7aa637be3fdb833150b83e96caacc82170
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 83bd2ff87683c1ad810d20658ba20f3229408968
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912959"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580091"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Mise en place de Microsoft 365 pour les entreprises
 
 ## <a name="what-is-microsoft-365-for-business"></a>Qu’est-ce que Microsoft 365 pour les entreprises ?
 
-Microsoft 365 pour les entreprises est un ensemble complet d’outils de productivité et de collaboration d’entreprise, tels qu’Outlook, Word, Excel et d’autres produits Office, qui sont toujours à jour. Vous pouvez protéger vos fichiers de travail sur tous vos appareils iOS, Android et Windows 10 avec une sécurité de qualité entreprise facile à gérer.
+Microsoft 365 pour les entreprises est un ensemble complet d’outils de productivité et de collaboration, tels qu’Outlook, Word, Excel et d’autres produits Office, qui sont toujours à jour. Vous pouvez protéger vos fichiers de travail sur tous vos appareils iOS, Android et Windows 10 avec une sécurité de qualité entreprise facile à gérer.
 
 Regardez cette vidéo pour obtenir une vue d’ensemble rapide de Microsoft 365 pour les entreprises.<br><br>
 
@@ -49,7 +49,7 @@ Microsoft 365 pour les entreprises est destiné à 300 licences au plus. Si vous
   
 ## <a name="get-microsoft-365-for-business"></a>Obtenir Microsoft 365 pour les entreprises
 
-- Si vous avez un partenaire, il reçoit Microsoft 365 pour les entreprises : obtenez [Microsoft 365](get-microsoft-365-business.md)pour les entreprises à partir de l’Centre de partenaires Microsoft.
+- Si vous avez un partenaire, il reçoit Microsoft 365 pour les entreprises : obtenez Microsoft 365 pour les entreprises à partir de [l’Partner Center Microsoft.](get-microsoft-365-business.md)
     
 - Si vous n’avez pas de partenaire et que vous souhaitez obtenir Microsoft 365 pour les entreprises, vous pouvez [l’acheter ici.](https://www.microsoft.com/microsoft-365/business)
     
@@ -94,7 +94,7 @@ Suivez les étapes de l’étape Configurer les appareils mobiles pour que les u
 
 Les administrateurs peuvent pré-sélectionner les paramètres des nouveaux PC Windows 10 à l’aide [de Windows AutoPilot](add-autopilot-devices-and-profile.md). Les utilisateurs peuvent configurer leurs appareils Windows 10 existants ou nouveaux en suivant les étapes de cette rubrique : Configurer des PC Windows pour les utilisateurs [de Microsoft 365 pour les entreprises.](set-up-windows-devices.md) Pour les appareils existants, les utilisateurs peuvent **éventuellement** déplacer des fichiers [vers OneDrive Entreprise.](move-files-to-onedrive.md) Ils peuvent également utiliser des outils tiers pour déplacer des fichiers associés au profil Windows vers OneDrive.
   
-Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 pour les entreprises pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de l’étape Activer les appareils Windows 10 joints à un domaine à gérer par [Microsoft 365](manage-windows-devices.md) pour les entreprises pour configurer cette procédure. Cette méthode est préférée et les appareils dans cet état sont appelés appareils joints **à Azure AD hybride.** 
+Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 pour les entreprises pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de l’étape Activer les appareils Windows 10 joints à un domaine pour qu’ils soient gérés par [Microsoft 365](manage-windows-devices.md) pour les entreprises pour le configurer. Cette méthode est préférée et les appareils dans cet état sont appelés appareils joints **à Azure AD hybride.** 
   
 Si vous conservez un Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes **ci-après** : Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans [Microsoft 365](access-resources.md)pour les entreprises.
   
@@ -111,6 +111,6 @@ Si vous conservez un Active Directory local qui contient certaines ressources lo
 
 [Documentation et ressources microsoft 365 pour les entreprises](./index.yml)
   
-[Gérer Microsoft 365 pour les entreprises](manage.md)[Migrer vers Microsoft 365 pour les entreprises](migrate-to-microsoft-365-business.md)
+[Gérer Microsoft 365](manage.md)pour les entreprises[Migrer vers Microsoft 365 pour les entreprises](migrate-to-microsoft-365-business.md)
 
 [Vidéos de formation Microsoft 365 Entreprise](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

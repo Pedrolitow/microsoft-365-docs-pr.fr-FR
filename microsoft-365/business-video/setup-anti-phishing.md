@@ -2,8 +2,8 @@
 title: Configurer la protection anti-hameçonnage
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer la protection anti-hameçonnage.
-ms.openlocfilehash: 8cef8f916a8a3e2b27dd7f76ddecd921d59ca0c4
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 32494eda4496d99e5e5f4def213ba7876f6c3183
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422002"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580413"
 ---
 # <a name="set-up-anti-phishing"></a>Configurer les stratégies d’anti-hameçonnage et d’anti-hameçonnage
 
@@ -42,10 +42,10 @@ Le hameçonnage est une attaque malveillante dans laquelle un e-mail semble avoi
 1. Go to **Add domains to protect** and select the toggle to automatically include the domains you own.
 1. Go to **Actions**, open the drop-down **If email is sent by an impersonated user**, and choose the action you want.
 
-    Ouvrez la liste liste si **le courrier électronique** est envoyé par un domaine dont l’identité a été usurpée et choisissez l’action de votre choix.
+    Ouvrez la liste drop-down **Si le courrier électronique** est envoyé par un domaine dont l’identité a été usurpée et choisissez l’action de votre choix.
 1. Sélectionnez **Activer les conseils de sécurité pour l’emprunt d’identité.** Choisissez si des conseils doivent être fournis aux utilisateurs lorsque le système détecte des utilisateurs usurpés d’identité, des domaines ou des caractères inhabituels. Sélectionnez **Enregistrer**.
 1. Sélectionnez **l’intelligence de** boîte aux lettres et vérifiez qu’elle est allumée. Cela permet à votre courrier électronique d’être plus efficace en apprendant les modèles d’utilisation.
 1. Choose **Add trusted senders and domains**. Ici, vous pouvez ajouter des adresses e-mail ou des domaines qui ne doivent pas être classés comme emprunt d’identité.
-1. Sélectionnez **Passer en revue vos paramètres,** assurez-vous que tout est correct, **sélectionnez Enregistrer,** puis **Fermer**.
+1. Sélectionnez **Passer en revue vos paramètres,** assurez-vous que tout est correct, **sélectionnez Enregistrer,** puis **Fermer.**
 
     Votre organisation dispose désormais d’une meilleure protection contre les menaces de hameçonnage.

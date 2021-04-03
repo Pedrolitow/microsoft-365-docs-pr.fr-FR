@@ -2,8 +2,8 @@
 title: Renforcer la protection contre les menaces pour Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurer des fonctionnalités de conformité pour éviter la perte de données et sécuriser les informations sensibles de vos clients et de vos clients.
-ms.openlocfilehash: e210787718025c5df29af8d4a2283291dcecc2a8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c0accc37d3dcda9ba75813f01a98a3233c5a8369
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912527"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579951"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 
-Votre Abonnement Microsoft 365 Business Premium comprend des fonctionnalités pour protéger vos données et appareils et vous aider à sécuriser les informations sensibles de vos clients et de vos clients.
+Votre Microsoft 365 Business Premium int mente des fonctionnalités pour protéger vos données et appareils, et vous aider à sécuriser vos informations sensibles et vos clients.
 
 ## <a name="set-up-dlp-features"></a>Configurer les fonctionnalités DLP
 
@@ -39,21 +39,21 @@ Voir [Créer une stratégie DLP à partir](../compliance/create-a-dlp-policy-fro
   
 DLP est livré avec de nombreux modèles de stratégie prêts à l’emploi pour de nombreux paramètres régionaux différents. Par exemple, les données financières en Australie, la Loi canadienne sur les informations personnelles, les données financières américaines, etc. Voir [ce que les modèles](../compliance/what-the-dlp-policy-templates-include.md) de stratégie DLP incluent pour obtenir une liste complète. Tous ces modèles peuvent être activés de la même façon que l’exemple de modèle PII. 
   
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurer la rétention du courrier électronique à l’Archivage Exchange Online
+## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurer la rétention du courrier électronique avec Archivage Exchange Online
 
- **Archivage Exchange Online** licences permettent de maintenir les normes réglementaires et de conformité en conservant le contenu du courrier électronique pour eDiscovery. Cela permet également de réduire vos risques en cas de poursuites judiciaires et permet de récupérer des données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
+ **Archivage Exchange Online** licences permettent de maintenir les normes réglementaires et de conformité en conservant le contenu du courrier électronique pour eDiscovery. Cela permet également de réduire les risques en cas de poursuites judiciaires et permet de récupérer des données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
   
 **Attente pour litige :** Vous pouvez conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés, en mettant la boîte aux lettres entière d’un utilisateur en attente pour litige. 
     
 Pour placer une boîte aux lettres en attente pour litige, dans le Centre d’administration :
     
-1. Dans le navigation de gauche, allez à **Utilisateurs** \> **actifs.**
+1. Dans le navigation gauche, allez à **Utilisateurs** \> **actifs.**
     
 2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en attente pour litige. Dans le volet utilisateur, développez **Paramètres de messagerie,** puis en plus des **paramètres,** choisissez **Modifier les propriétés Exchange**.
     
 3. Dans la page de boîte aux lettres de l’utilisateur, choisissez ** fonctionnalités de boîte aux lettres ** dans le navigation gauche, puis choisissez le lien Activer sous Attente pour **litige.** 
     
-4. Dans la boîte **de dialogue De attente** pour litige, vous pouvez spécifier la durée de la durée de la attente pour litige dans le champ Durée de la durée de la attente **pour** litige. Laissez le champ vide si vous souhaitez placer une attente infinie. Vous pouvez également ajouter des notes et diriger le propriétaire de la boîte aux lettres vers un site web dont vous pourriez avoir besoin pour en savoir plus sur la mise en attente pour litige. \>**Enregistrer**.
+4. Dans la boîte **de dialogue De attente** pour litige, vous pouvez spécifier la durée de la durée de la attente pour litige dans le champ Durée de la durée de la période de attente **pour** litige. Laissez le champ vide si vous souhaitez placer une attente infinie. Vous pouvez également ajouter des notes et diriger le propriétaire de la boîte aux lettres vers un site web dont vous pourriez avoir besoin pour en savoir plus sur la mise en attente pour litige. \>**Enregistrer**.
     
 **Rétention :** Vous pouvez activer des stratégies de rétention personnalisées, par exemple, pour conserver un certain temps ou supprimer définitivement du contenu à la fin de la période de rétention. Pour plus d’informations, voir [Vue d’ensemble des stratégies de rétention.](../compliance/retention.md)
 
@@ -74,4 +74,4 @@ Pour installer manuellement le client AIP :
 2. Pour vérifier que l’installation a fonctionné, affichez  un document Word et assurez-vous que l’option Sensibilité est disponible sous l’onglet **Accueil.**
 <br/>![Onglet Protection dans un document Word.](../media/word-sensitivity.png)
 
-Pour plus d’informations, voir [Installer le client.](/azure/information-protection/infoprotect-tutorial-step3)
+Pour plus d’informations, [voir Installer le client.](/azure/information-protection/infoprotect-tutorial-step3)

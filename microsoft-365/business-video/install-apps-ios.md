@@ -2,8 +2,8 @@
 title: Installer des applications sur iOS
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment installer des applications Office sur des appareils iOS.
-ms.openlocfilehash: 2a7e69767eee6506a0c1685c2d679fc5ce743c3d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0cb7cae3a4569d83a1b2e6b27ca42de2142f30e5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422518"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580557"
 ---
 # <a name="install-outlook-and-office-apps-on-ios-devices"></a>Installer des applications Outlook et Office sur des appareils iOS
 
@@ -38,7 +38,7 @@ Une fois&#39;avez installé Microsoft 365 Business Premium, vous pouvez installe
 1. Sur votre iPhone, ouvrez l’App Store.
 2. Sélectionnez  **Rechercher,**  **tapez Outlook** dans la barre de recherche, puis choisissez-le.
 3. Choose **Get**   >   **Install**.
-4. Entrez votre mot de passe d’ID Apple, **sélectionnez Ouvrir la**  >   **signature.**
+4. Entrez votre mot de passe d’ID Apple, **sélectionnez Ouvrir**  >   **la signature.**
 5. Entrez votre adresse e-mail de travail.
 6. Sélectionnez **Ajouter un** compte, entrez votre mot de passe, puis choisissez **Se connectez.**
 7. (Facultatif), sélectionnez **Nous allons le faire ** pour ajouter d’autres comptes, ou sélectionnez  **Peut-être**  plus tard pour ignorer cette étape.
@@ -48,6 +48,6 @@ Une fois&#39;avez installé Microsoft 365 Business Premium, vous pouvez installe
 11. Sélectionnez  **Activer pour**  activer les notifications par courrier électronique.
 12. Sélectionnez  **Autoriser** pour activer les notifications Push.
 
-Vous pouvez désormais utiliser Outlook sur votre iPhone pour vérifier votre courrier électronique, votre calendrier et vos contacts.
+Vous pouvez désormais utiliser Outlook sur votre iPhone pour vérifier vos e-mails, votre calendrier et vos contacts.
 
 Vous pouvez installer le reste des applications Office de la même manière et les données de ces applications seront protégées par Microsoft 365 Business Premium.

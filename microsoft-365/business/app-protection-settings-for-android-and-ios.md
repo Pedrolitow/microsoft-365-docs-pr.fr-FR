@@ -2,8 +2,8 @@
 title: Définir les paramètres de protection des applications pour les appareils Android ou iOS
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Découvrez comment créer, modifier ou supprimer une stratégie de gestion des applications et protéger les fichiers de travail sur les appareils Android ou iOS.
-ms.openlocfilehash: 67e7aaec5ff5a28f1e2d489913246c1c15c2f7b6
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 2e157737990c7aca6e87a676e90f62f0d40ad372
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471196"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580291"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Définir les paramètres de protection des applications pour les appareils Android ou iOS
 
@@ -76,7 +76,7 @@ Cet article s’applique à Microsoft 365 Business Premium.
 
 Les tableaux suivants donnent des informations détaillées sur les paramètres disponibles pour protéger les fichiers professionnels sur les appareils et sur les paramètres qui contrôlent la façon dont les utilisateurs accèdent aux fichiers Office à partir de leurs appareils mobiles.
   
- Pour plus d’informations, voir Comment les fonctionnalités de protection de [Microsoft 365 Business Premium sont m mappés aux paramètres Intune](map-protection-features-to-intune-settings.md). 
+ Pour plus d’informations, voir Comment faire pour que les fonctionnalités de protection de [Microsoft 365 Business Premium m’indiquent les paramètres Intune](map-protection-features-to-intune-settings.md). 
   
 ### <a name="settings-that-protect-work-files"></a>Paramètres de protection des fichiers professionnels
 
@@ -84,7 +84,7 @@ Les paramètres suivants sont disponibles pour protéger les fichiers profession
   
 |||
 |:-----|:-----|
-|Setting  <br/> |Description  <br/> |
+|Paramètre  <br/> |Description  <br/> |
 |Supprimer les fichiers professionnels d'un appareil inactif après tant de jours  <br/> |Si un appareil n’est pas utilisé pendant le nombre de jours que vous spécifiez ici, tous les fichiers de travail stockés sur l’appareil sont supprimés automatiquement.  <br/> |
 |Obliger les utilisateurs à enregistrer tous les fichiers de travail dans OneDrive Entreprise  <br/> |Si ce paramètre est **sur ,** le seul emplacement d’enregistrer disponible pour les fichiers de travail est OneDrive Entreprise.  <br/> |
 |Chiffrer les fichiers professionnels  <br/> |Laissez ce paramètre **activé** afin que les fichiers professionnels soient protégés par chiffrement. Même si l’appareil est perdu ou volé, personne ne peut lire les données de votre entreprise.  <br/> |
@@ -95,7 +95,7 @@ Les paramètres suivants sont disponibles pour gérer la manière dont les utili
   
 |||
 |:-----|:-----|
-|Setting  <br/> |Description  <br/> |
+|Paramètre  <br/> |Description  <br/> |
 |Exiger un code confidentiel ou une empreinte pour accéder aux applications Office  <br/> |Si ce paramètre est **Sur,** les utilisateurs doivent fournir une autre forme d’authentification, en plus de leur nom d’utilisateur et mot de passe, pour pouvoir utiliser les applications Office sur leurs appareils mobiles.<br/> |
 |Réinitialiser le code confidentiel en cas d'échecs successifs de la connexion  <br/> |Afin d'empêcher un utilisateur non autorisé de deviner un code confidentiel de façon aléatoire, le code confidentiel est réinitialisé après le nombre d'entrées incorrectes que vous spécifiez.  <br/> |
 |Demander aux utilisateurs de se reconnecter à l'issue d'une période d'inactivité des applications Office  <br/> |Ce paramètre détermine la durée pendant combien de temps un utilisateur peut être inactif avant d’être invité à se ré-inscrire.  <br/> |

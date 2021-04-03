@@ -2,8 +2,8 @@
 title: Aider vos utilisateurs à installer Office sur des appareils Windows 10
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Aidez vos utilisateurs à installer des applications Office sur des appareils Windows 10 et à installer facilement Office sur des PC Windows 10 à partir du Centre d’administration Microsoft 365.
-ms.openlocfilehash: 5337c8ef008c1af79490eb6b6705d450055d24fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 35588589cf0b816bcbd686c69684d82b62383f17
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913343"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580211"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aider vos utilisateurs à installer Office sur des appareils Windows 10
 
@@ -58,9 +58,9 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
   
 3. Sur **l’aide que les utilisateurs installent leur carte d’applications Office,** choisissez **Afficher,** puis **commencer.**
     
-4. Dans le **panneau Utilisateurs de messagerie,** sélectionnez les utilisateurs que vous souhaitez envoyer par courrier électronique, puis envoyez un courrier électronique aux **utilisateurs sélectionnés.**
+4. Dans le **panneau Utilisateurs de messagerie,** sélectionnez les utilisateurs que vous souhaitez envoyer par courrier électronique, puis envoyez un e-mail aux **utilisateurs sélectionnés.**
 
-   ![Sélectionnez des utilisateurs pour envoyer des courriers électroniques avec le lien de téléchargement Office.](../media/sendemailtousers.png)
+   ![Sélectionnez les utilisateurs pour envoyer des courriers électroniques avec le lien de téléchargement Office.](../media/sendemailtousers.png)
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Pour plus d’informations sur la configuration et l’utilisation de Microsoft 365 Business Premium
 

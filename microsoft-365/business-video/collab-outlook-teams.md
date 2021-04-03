@@ -2,8 +2,8 @@
 title: Collaborer à l’aide d’Outlook et de Teams
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser Outlook et Microsoft Teams pour collaborer.
-ms.openlocfilehash: dd1030833a10678b4630d9e86905c98d30ac15fe
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dc0eaf1b47796becf62222fb93ccd071cc197a1c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913657"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580665"
 ---
 # <a name="use-outlook-and-teams-together"></a>Utiliser conjointement Outlook et Teams
 
-Lorsque vous communiquez avec vos employés, partenaires, clients et autres membres de votre petite entreprise, utilisez Outlook et Teams dans Microsoft 365. Dans Outlook, vous trouverez le courrier électronique, les calendriers, les contacts et les tâches, tandis que dans Teams, vous trouverez des conversations, des fichiers, des réunions et un accès rapide à Microsoft et à des applications tierces. Voici un résumé de la façon dont vous pouvez utiliser chacun d’eux dans votre entreprise.
+Lorsque vous communiquez avec vos employés, partenaires, clients et autres membres de votre petite entreprise, utilisez Outlook et Teams dans Microsoft 365. Dans Outlook, vous trouverez la messagerie, les calendriers, les contacts et les tâches, tandis que dans Teams, vous trouverez des conversations, des fichiers, des réunions et un accès rapide à Microsoft et à des applications tierces. Voici un résumé de la façon dont vous pouvez utiliser chacun d’eux dans votre entreprise.
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
@@ -40,7 +40,7 @@ Lorsque vous communiquez avec vos employés, partenaires, clients et autres memb
 
 :::image type="content" source="../media/outlook-model.png" alt-text="Image stylisée de la page d’accueil d’Outlook.":::
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 - Avoir des conversations enrichies en temps réel avec votre équipe et inviter des clients ou des invités à la conversation.
 - Avoir des conversations ou des appels privés et partager votre écran les uns avec les autres.

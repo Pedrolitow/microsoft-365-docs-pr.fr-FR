@@ -2,8 +2,8 @@
 title: Laisser les utilisateurs réinitialiser leur mot de passe
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment laisser les utilisateurs réinitialiser leur mot de passe dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 42b4c70b5cfc17b0315a6c2ac8d509aeece8e458
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 3ba46529dcbb8d5af7343aafbb9e5a5863b9139f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422026"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580425"
 ---
 # <a name="set-up-self-service-password-reset"></a>Utiliser la réinitialisation de mot de passe en libre-service
 
@@ -41,4 +41,4 @@ Pour laisser vos utilisateurs réinitialiser leur mot de passe sans avoir à vou
 1. Dans le volet de navigation de gauche, sélectionnez Utilisateurs, puis sur la page Utilisateurs **-** Tous les utilisateurs, sélectionnez Réinitialiser le mot **de passe.**
 1. Sélectionnez **Tout** pour activer la réinitialisation du mot de passe libre-service, puis sélectionnez **Enregistrer.**
 
-La prochaine fois qu’un utilisateur se signe à son compte, il est invité à lui demander son ID d’utilisateur et son mot de passe. Ils **sélectionnent Suivant,** puis décident s’il faut s’authentifier avec leur téléphone, leur messagerie électronique ou les deux. Ils entrent le code qu’ils reçoivent, **sélectionnent Vérifier,** puis **terminent.** Lorsqu’ils ont terminé, ils peuvent réinitialiser leur mot de passe.
+La prochaine fois qu’un utilisateur se signe à son compte, son ID d’utilisateur et son mot de passe lui sont demandés. Ils **sélectionnent Suivant,** puis choisissent s’il faut s’authentifier avec leur téléphone, leur courrier électronique ou les deux. Ils entrent le code qu’ils reçoivent, **sélectionnent Vérifier,** puis **terminer.** Lorsqu’ils ont terminé, ils peuvent réinitialiser leur mot de passe.

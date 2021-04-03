@@ -2,8 +2,8 @@
 title: Résolution des problèmes d’analyse de l’utilisation de Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Découvrez comment résoudre les problèmes avec l’application modèle Analyse de l’utilisation de Microsoft 365.
-ms.openlocfilehash: bf8e4ece7b1e310d91f418f5388cae9aa27f2aa7
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: bc7f1f7188a209188f1a67a20bf79477c6e1d4a0
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841434"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580737"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Résolution des problèmes d’analyse de l’utilisation de Microsoft 365
 
@@ -40,7 +40,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
   
  **Cause :** Avant de vous connecter à l’application, vous devez vous abonner aux données du Centre d’administration Microsoft 365. Si cette étape n’est pas effectuée en premier, vous ne pourrez pas vous connecter à l’application de modèle, même si vous fournissez votre ID de client Microsoft 365. 
   
- **Pour corriger cette erreur :** Pour vous abonner aux données, go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. Sélectionnez **le** bouton Démarrer,  puis dans le volet Rapports qui s’ouvre, ouvrez le paramètre Rendre les données disponibles pour l’analyse de l’utilisation de **Microsoft 365** pour power BI et **enregistrez.**
+ **Pour corriger cette erreur :** Pour vous abonner aux données, go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. Sélectionnez **le** bouton Commencer,  puis dans le volet Rapports qui s’ouvre, ouvrez le paramètre Rendre les données disponibles pour l’analyse de l’utilisation de **Microsoft 365** pour power BI et **enregistrez.**
   
 ## <a name="we-are-processing-your-data"></a>Vos données sont en cours de traitement
 
@@ -48,7 +48,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
   
  **Cause :** Lorsque [vous](enable-usage-analytics.md) choisissez de voir les données dans l’application modèle à partir du Centre d’administration Microsoft 365, le système Microsoft 365 commence à générer des données d’utilisation historiques pour votre organisation. En fonction de la taille de votre locataire, cette étape peut prendre 2 à 48 heures. 
   
- **Pour résoudre ce problème :** Soyez patient, mais si le message  ne change pas à Vos données, vous êtes prêt après 3 jours, contactez le support [Microsoft 365 pour les entreprises.](../contact-support-for-business-products.md)
+ **Pour résoudre ce problème :** Soyez patient, mais si le message  n’est pas ajouté à Vos données, vous êtes prêt au bout de 3 jours, contactez le support [Microsoft 365 pour les entreprises.](../contact-support-for-business-products.md)
   
 ## <a name="we-are-unable-to-process-your-request-at-this-time-we-are-still-preparing-the-data-for-your-organization"></a>Nous ne sommes pas en mesure de traiter votre demande pour le moment. Les données relatives à votre organisation sont en cours de préparation
 
@@ -58,7 +58,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
   
  **Cause :** Lorsque vous [choisissez de](enable-usage-analytics.md) voir les données dans le modèle d’application à partir du Centre d’administration, le système Microsoft 365 commence à générer des données d’utilisation historiques pour votre organisation. Selon la taille de votre client, cette étape peut prendre entre deux et 48 heures. 
   
- **Pour résoudre ce problème :** Soyez patient, mais si le message  n’est pas ajouté à Vos données, même 3 jours après l’initiation, contactez le support [Microsoft 365 pour les entreprises.](../contact-support-for-business-products.md)
+ **Pour résoudre ce problème :** Soyez patient, mais si le message  ne change pas sur Vos données, même 3 jours après l’initiation, contactez le support [Microsoft 365 pour les entreprises.](../contact-support-for-business-products.md)
   
 ## <a name="the-tenant-id-you-provided-is-not-in-the-correct-format"></a>Le format de l'ID de locataire que vous avez fourni est incorrect
 
@@ -76,7 +76,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
   
  **Où vous verrez ce message :** Dans Power BI, lorsque vous vous connectez à l’application modèle Analyse de l’utilisation de Microsoft 365 ou lorsque vous appelez directement les API de rapports Microsoft 365. 
   
- **Cause :** L’ID de locataire que vous avez fourni n’est pas valide ou n’existe pas. 
+ **Cause :** L’ID de client que vous avez fourni n’est pas valide ou n’existe pas. 
   
  **Pour corriger cette erreur :** Go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. L’ID de client est répertorié sur la vignette. Vous pouvez le copier à partir d’ici et le coller dans la boîte de dialogue pour vous connecter à l’application de modèle. 
   
@@ -104,7 +104,7 @@ Code d'erreur : 302
 
  **Où ce message s'affichera-t-il ?** E-mail de Power BI ou état d'échec dans l'historique d'actualisation. 
   
- **Cause :** Parfois, les informations d’identification de l’utilisateur qui s’est connecté à l’application de modèle sont réinitialisées et ne sont pas mises à jour dans les paramètres de connexion de l’application de modèle, ce qui provoque des erreurs d’échec d’actualisation de l’utilisateur. 
+ **Cause :** Parfois, les informations d’identification de l’utilisateur qui s’est connecté à l’application de modèle sont réinitialisées et ne sont pas mises à jour dans les paramètres de connexion de l’application de modèle, ce qui provoque des erreurs d’échec d’actualisation. 
   
  **Pour corriger cette erreur :** Dans Power BI, recherchez le jeu de données correspondant à  l’application modèle Analyse de l’utilisation de Microsoft 365, sélectionnez planifier l’actualisation et fournissez vos informations d’identification d’administrateur. 
   

@@ -2,8 +2,8 @@
 title: Configurer Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: a06fb48ef5e1386a5c7b4df08500125f37943df6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c8e2ca94f4947d4f9c69915d2fef410a6075bfed
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198429"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579911"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer Microsoft 365 Business Premium dans l’Assistant Installation
 
@@ -83,7 +83,7 @@ Les utilisateurs que vous ajoutez dans l’Assistant obtiennent automatiquement 
 
 ![Capture d’écran de la page Ajouter de nouveaux utilisateurs dans l’Assistant](../media/addnewuserspage.png)
 
-1. Si votre abonnement Microsoft 365 Business Premium dispose d’utilisateurs existants (par exemple, si vous avez utilisé Azure AD Connect), vous avez la possibilité de leur attribuer des licences maintenant. Poursuivez et ajoutez des licences pour eux aussi.
+1. Si votre abonnement Microsoft 365 Business Premium a des utilisateurs existants (par exemple, si vous avez utilisé Azure AD Connect), vous avez la possibilité de leur attribuer des licences maintenant. Poursuivez et ajoutez des licences pour eux aussi.
 
 2. Une fois que vous avez ajouté les utilisateurs, vous avez également la possibilité de partager des informations d’identification avec les nouveaux utilisateurs que vous ajoutez. Vous pouvez choisir de les imprimer, de les envoyer par e-mail ou de les télécharger.
 
@@ -107,7 +107,7 @@ Pour configurer des services, vous devez mettre à jour des enregistrements au n
 
 Les stratégies que vous avez définies dans l’Assistant sont appliquées automatiquement à un groupe [de sécurité](/office365/admin/create-groups/compare-groups#security-groups) appelé Tous *les utilisateurs.* Vous pouvez également créer des groupes supplémentaires pour attribuer des stratégies dans le Centre d’administration.
 
-1. Dans l’option Augmenter la **protection** contre les cybermenaces avancées, il est recommandé d’accepter les valeurs par défaut pour laisser [Office 365 Advance Threat Protection](../security/office-365-security/defender-for-office-365.md) analyser les fichiers et les liens dans les applications Office.
+1. Dans l’option Augmenter la **protection** contre les cybermenaces avancées, il est recommandé d’accepter les valeurs par défaut pour laisser [Office 365 -](../security/office-365-security/defender-for-office-365.md) Protection avancée contre les menaces analyser les fichiers et les liens dans les applications Office.
 
     ![Capture d’écran de la page Augmenter la protection.](../media/increasetreatprotection.png)
 

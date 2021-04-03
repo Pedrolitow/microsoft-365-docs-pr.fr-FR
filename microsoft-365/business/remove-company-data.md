@@ -2,8 +2,8 @@
 title: Supprimer des données d'entreprise sur des appareils
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Découvrez comment utiliser Microsoft 365 pour les entreprises pour supprimer les données d’entreprise dont vos utilisateurs ont sur leurs appareils ou PC Windows.
-ms.openlocfilehash: 3a2faf0c5617b5d1e6beccf1e457f8b483820604
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 2e1af384d83937d65fd5c8ae655d228df48422cd
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470824"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579991"
 ---
 # <a name="remove-company-data-from-devices"></a>Supprimer des données d'entreprise sur des appareils
 
@@ -37,19 +37,19 @@ Cet article s’applique à Microsoft 365 Business Premium.
 
 ## <a name="remove-company-data"></a>Supprimer les données de l’entreprise
 
-Vous pouvez utiliser Microsoft 365 pour les entreprises pour [](app-protection-settings-for-android-and-ios.md) supprimer les données d’entreprise dont vos utilisateurs ont sur leurs appareils ou PC [Windows](protection-settings-for-windows-10-devices.md) protégés par Microsoft 365. **Si vous supprimez des données d'entreprise d'un appareil, vous ne pourrez pas les restaurer**. 
+Vous pouvez utiliser Microsoft 365 pour les entreprises pour [](app-protection-settings-for-android-and-ios.md) supprimer les données d’entreprise dont vos utilisateurs ont sur leurs appareils ou pc [Windows](protection-settings-for-windows-10-devices.md) qui sont protégés par Microsoft 365. **Si vous supprimez des données d'entreprise d'un appareil, vous ne pourrez pas les restaurer**. 
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
 2. Dans le navigation  de gauche, sélectionnez \> **Gérer les appareils.**  
   
-3. Dans la page **Gérer,** sélectionnez ou recherchez les données d’un utilisateur que vous souhaitez supprimer, puis choisissez le nom. 
+3. Dans la page **Gérer,** choisissez ou recherchez les données d’un utilisateur que vous souhaitez supprimer, puis choisissez le nom. 
     
-4. Dans le volet suivant, sélectionnez le ou les appareils dans la liste **Appareils.** Dans le volet d’appareil qui s’ouvre, vous pouvez choisir de réinitialiser l’appareil aux paramètres d’usine ou de supprimer les données d’entreprise, en fonction du type d’appareil. 
+4. Dans le volet suivant, sélectionnez le ou les périphériques dans la liste **Appareils.** Dans le volet d’appareil qui s’ouvre, vous pouvez choisir de réinitialiser l’appareil aux paramètres d’usine ou de supprimer les données d’entreprise, en fonction du type d’appareil. 
     
     ![Dans le volet Supprimer les données de l’entreprise, sélectionnez l’appareil à partir duquel vous souhaitez supprimer les données.](../media/resetorremove.png)
   
-5. Dans le volet de confirmation, choisissez **Confirmer** \> **la fermeture.**
+5. Dans le volet de confirmation, sélectionnez **Confirmer** \> **la fermeture.**
     
 
 

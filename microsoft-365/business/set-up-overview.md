@@ -2,8 +2,8 @@
 title: Vue d’ensemble de la configuration
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, de l’abonnement, à l’ajout d’un domaine et des utilisateurs, à la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 9d92aefb3b5666bb7c2fd2e13c9a00f074f107a7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 749acbfdbde92ad97b09dc720c85dd850b76c9cf
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912487"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579931"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
 
@@ -56,7 +56,7 @@ La plupart des étapes de configuration peuvent être réalisées dans l’insta
 
   - Utilisez la [configuration guidée pour](set-up.md#protect-your-organization) configurer les stratégies d’appareil. 
   - Vous pouvez également en ajouter ou les modifier ultérieurement dans le Centre d’administration [et](view-policies-and-devices.md) dans le [portail Intune.](/intune/tutorial-walkthrough-intune-portal)
-  - L’Assistant Installation configurera également les paramètres de protection contre les menaces de base et de protection contre la perte de données.
+  - L’Assistant Installation configurera également des paramètres de protection contre les menaces de base et de protection contre la perte de données.
   
   Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez renforcer votre sécurité en ajoutant les paramètres suivants :
 
@@ -67,7 +67,7 @@ La plupart des étapes de configuration peuvent être réalisées dans l’insta
 
 Pour commencer, voir augmenter la [protection contre les menaces](increase-threat-protection.md) [et configurer les fonctionnalités de conformité.](set-up-compliance.md)
 
-Consultez également les 10 principales façons de sécuriser [votre Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data) pour obtenir une feuille de route des meilleures pratiques en matière de sécurité.
+Découvrez également les 10 principales façons de sécuriser [votre Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data) pour obtenir un plan des meilleures pratiques en matière de sécurité.
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Étape 3 : Configurer et gérer les appareils Windows 10
 
@@ -91,7 +91,7 @@ Lorsque vous joignez un appareil Windows 10 à Azure AD, les stratégies que vou
 
      - Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 Business Premium pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de l’étape Activer les appareils Windows 10 joints à un domaine pour qu’ils soient gérés par [Microsoft 365 Business Premium](manage-windows-devices.md) pour le configurer. Il s’agit de la méthode préférée, et les appareils dans cet état sont appelés appareils joints à Azure AD hybride.
 
-    - Si votre entreprise possède un Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez accorder à vos appareils joints à Azure AD un accès à ces ressources en suivant les étapes ci-après : Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans [Microsoft 365 Business Premium](access-resources.md).
+    - Si votre entreprise possède un Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes ci-après : Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans [Microsoft 365 Business Premium](access-resources.md).
 
 ## <a name="see-also"></a>Voir aussi
 

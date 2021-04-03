@@ -2,8 +2,8 @@
 title: Modifier le nom ou l’adresse e-mail d’un utilisateur
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment modifier le nom ou l’adresse e-mail d’un utilisateur.
-ms.openlocfilehash: f45f0bb2f2243a6105f6b5f3de89dd4693acbe17
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6c08110e8725645f2e1d0deffcadd9f34354e1f9
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422950"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580677"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Modifier le nom ou l’adresse e-mail d’un utilisateur
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
-Parfois, vous devrez peut-être modifier le nom ou l’adresse e-mail d’un utilisateur. Vous pouvez le faire en modifiant leur nom d’affichage, leur alias ou leur adresse e-mail. 
+Parfois, vous devrez peut-être modifier le nom ou l’adresse e-mail d’un utilisateur. Vous pouvez le faire en modifiant leur nom d’affichage, leur alias ou leur adresse de messagerie. 
 
 ## <a name="try-it"></a>Essayez !
 

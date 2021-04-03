@@ -2,8 +2,8 @@
 title: Installer Office sur les appareils Windows 10 lors de l'installation
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Découvrez comment, avec Microsoft 365 Business Premium, vous pouvez automatiquement vous assurer que les utilisateurs ont la dernière version d’Office sur tous leurs appareils Windows 10.
-ms.openlocfilehash: 1ca386f75743178aebaf0bfabbabcb74f4813685
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d3c62eb42ea73c7af6df6012dbc9488828cd1ba8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400835"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580171"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installer Office sur les appareils Windows 10 lors de l'installation
 

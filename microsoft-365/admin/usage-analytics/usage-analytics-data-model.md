@@ -2,8 +2,8 @@
 title: Modèle de données d'analyse de l'utilisation de Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Découvrez comment l’analyse de l’utilisation se connecte à une API et fournit une tendance mensuelle de l’utilisation de différents services Microsoft 365.  '
-ms.openlocfilehash: 1975fc0bdba279b281fb45c8aec22255579ef414
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 877ad005e3ff7f7537247963fafcab5fb1ff6c74
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913849"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580749"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modèle de données d'analyse de l'utilisation de Microsoft 365
 
@@ -125,7 +125,7 @@ Cette table contient des données sur l'activité effectuée par chaque utilisat
 |SPO_OtherAccessedByOthers  <br/> |Nombre de sites avec qui l’utilisateur a interagi et qui résident sur un autre site qu’un autre utilisateur possède.  <br/> |
 |SPO_TeamFileViewedModified  <br/> |Nombre de fichiers avec lesquels l'utilisateur a interagi, tous sites d'équipe confondus.  <br/> |
 |SPO_TeamFileSynched  <br/> |Nombre de fichiers synchronisés par l'utilisateur, tous sites d'équipe confondus.  <br/> |
-|SPO_TeamFileSharedInternally  <br/> |Nombre de fichiers partagés par cet utilisateur en interne à partir d’un site d’équipe ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
+|SPO_TeamFileSharedInternally  <br/> |Nombre de fichiers partagés en interne par cet utilisateur à partir d’un site d’équipe ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
 |SPO_TeamFileSharedExternally  <br/> |Nombre de fichiers partagés en externe par l'utilisateur, tous sites d'équipe confondus.  <br/> |
 |SPO_TeamAccessByOwner  <br/> |Nombre de fichiers résidant sur un site d'équipe appartenant à l'utilisateur et avec lesquels il a interagi.  <br/> |
 |SPO_TeamAccessByOthers  <br/> |Nombre de fichiers résidant sur un site d'équipe appartenant à un tiers et avec lesquels l'utilisateur a interagi.  <br/> |
@@ -152,7 +152,7 @@ Ce tableau fournit des données d’adoption mensuelles en termes d’utilisateu
 |:-----|:-----|
 |Product  <br/> |Nom des produits pour lesquels les informations d'utilisation sont synthétisées. La valeur Microsoft 365 dans la colonne produit représente l’activité sur l’un des produits  <br/> |
 |Timeframe  <br/> |Mois. La colonne contient une ligne par produit et par mois pour les 12 derniers mois, mois en cours compris.  <br/> |
-|EnabledUsers  <br/> |Nombre d’utilisateurs activés pour utiliser le produit pour la valeur de l’heure, si un utilisateur a été activé pour une partie du mois, ils sont toujours comptés.  <br/> |
+|EnabledUsers  <br/> |Nombre d’utilisateurs activés pour utiliser le produit pour la valeur de période, si un utilisateur a été activé pour une partie du mois, ils sont toujours comptés.  <br/> |
 |ActiveUsers  <br/> |Nombre d’utilisateurs ayant effectué une activité intentionnelle dans le produit pour la valeur de l’heure.  <br/> Un utilisateur est comptabilisé comme actif au cours d'un mois donné s'il a effectué une des activités clés à l'aide du produit. Les activités clés sont disponibles dans la table **Activité produit des locataires**.  <br/> |
 |CumulativeActiveUsers  <br/> |Nombre d'utilisateurs activés pour utiliser un produit et ayant utilisé ce produit jusqu'au mois pris en compte au moins une fois depuis le début de la collecte des données dans le nouveau système d'utilisation.  <br/> |
 |MoMReturningUsers  <br/> |Nombre d'utilisateurs ayant été actifs au cours du mois pris en compte et qui étaient également actifs au cours du mois précédent.  <br/> |
@@ -175,7 +175,7 @@ Ce tableau fournit les totaux mensuels de l’activité et le nombre d’utilisa
    
 ### <a name="data-table---tenant-mailbox-usage"></a>Table de données - Utilisation des boîtes aux lettres par les locataires
 
-Ce tableau se compose de données récapitulatifs pour tous les utilisateurs d’Exchange Online sous licence qui ont une boîte aux lettres utilisateur. Elle contient un état de fin de mois englobant toutes les boîtes aux lettres utilisateur. Les données de cette table ne s'additionnent pas au fil des mois. Dans cette table, les données du mois précédent représentent l'état le plus récent.
+Ce tableau se compose de données récapitulatifs pour tous les utilisateurs d’Exchange Online sous licence qui ont une boîte aux lettres d’utilisateur. Elle contient un état de fin de mois englobant toutes les boîtes aux lettres utilisateur. Les données de cette table ne s'additionnent pas au fil des mois. Dans cette table, les données du mois précédent représentent l'état le plus récent.
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|
@@ -206,7 +206,7 @@ Ce tableau fournit des données récapitulatifs mensuelles sur les clients que l
    
 ### <a name="data-table---tenant-sharepoint-online-usage"></a>Table de données - Utilisation de SharePoint Online par les locataires
 
-Ce tableau se compose de données récapitulatifs mois par mois sur l’utilisation ou l’activité des sites SharePoint Online. Cela concerne uniquement les sites d’équipe et les sites de groupe. L’état de fin de mois des sites SharePoint Online est représenté dans cette colonne, par exemple, si un utilisateur a créé cinq documents et utilisé 10 Mo pour le stockage total, puis supprimé certains fichiers, puis ajouté d’autres fichiers afin qu’à l’état de fin de mois pour les fichiers soit sept au total qui utilisent cinq Mo de stockage, la valeur représentée dans cette table est l’état de fin de mois. Cette table est masquée pour éviter le nombre de doublons d’agrégations et est utilisée comme source pour créer deux tables de référence.
+Ce tableau se compose de données récapitulatifs mois par mois sur l’utilisation ou l’activité des sites SharePoint Online. Cela concerne uniquement les sites d’équipe et les sites de groupe. L’état de fin de mois des sites SharePoint Online est représenté dans cette colonne, par exemple, si un utilisateur a créé cinq documents et utilisé 10 Mo pour le stockage total, puis supprimé certains fichiers, puis ajouté d’autres fichiers afin qu’à l’état de fin de mois pour les fichiers soit sept au total qui utilisent cinq Mo de stockage, la valeur représentée dans cette table est l’état de fin de mois. Cette table est masquée pour éviter le nombre d’agrégations en double et est utilisée comme source pour créer deux tables de référence.
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|
@@ -223,7 +223,7 @@ Ce tableau se compose de données récapitulatifs mois par mois sur l’utilisat
    
 ### <a name="data-table---tenant-onedrive-usage"></a>Table de données - Utilisation de OneDrive par le client
 
-Cette table contient des données sur les comptes OneDrive, comme le nombre de comptes, le nombre de documents stockés sur les différents comptes OneDrive, l'espace de stockage utilisé et le nombre de fichiers par type d'activité. L'état de fin de mois des comptes OneDrive Entreprise y est représenté. Par exemple, si un utilisateur a créé cinq documents qui ont utilisé 10 Mo de stockage, puis en a supprimés quelques-uns et ajouté d’autres fichiers de sorte qu’à la fin du mois, ils ont sept fichiers qui utilisent cinq Mo de stockage, alors la valeur de fin du mois est représentée dans ce tableau à la fin du mois.
+Cette table contient des données sur les comptes OneDrive, comme le nombre de comptes, le nombre de documents stockés sur les différents comptes OneDrive, l'espace de stockage utilisé et le nombre de fichiers par type d'activité. L'état de fin de mois des comptes OneDrive Entreprise y est représenté. Par exemple, si un utilisateur a créé cinq documents qui ont utilisé 10 Mo de stockage, puis en a supprimés quelques-uns et ajouté d’autres fichiers de sorte qu’à la fin du mois, ils ont sept fichiers qui utilisent cinq Mo de stockage, alors la valeur de fin de mois est représentée dans ce tableau à la fin du mois.
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|
@@ -277,11 +277,11 @@ Ce tableau fournit des données sur la façon dont les groupes Microsoft 365 son
 |YAM_TotalActivities  <br/> |Nombre d Yammer activités.  <br/> |
 |YAM_LikedActivities  <br/> |Nombre d’Yammer activités telles que.  <br/> |
 |YAM_PostedActivties  <br/> |Nombre d Yammer activités de publication.  <br/> |
-|YAM_ReadActivites  <br/> |Nombre d Yammer activités de lecture.  <br/> |
+|YAM_ReadActivites  <br/> |Nombre d’Yammer activités de lecture.  <br/> |
    
 ### <a name="data-table---tenant-office-activation"></a>Table de données - Activation d'Office par les locataires
 
-Le tableau fournit des données sur le nombre d’activations d’abonnement Office dans les plans de service, par exemple, Microsoft 365 Apps pour entreprises, Visio, Project. Elle fournit également des données sur le nombre d'activations par appareil (Android/iOS/Mac/PC).
+Le tableau fournit des données sur le nombre d’activations d’abonnement Office dans les plans de service, par exemple, Microsoft 365 Apps for enterprises, Visio, Project. Elle fournit également des données sur le nombre d'activations par appareil (Android/iOS/Mac/PC).
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|

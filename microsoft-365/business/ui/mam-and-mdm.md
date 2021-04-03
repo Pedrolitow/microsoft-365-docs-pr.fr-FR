@@ -2,8 +2,8 @@
 title: Quelle est la différence entre la gestion des appareils et des applications ?
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les différences entre la gestion des appareils mobiles et la gestion des applications mobiles, ou mdm et MAM.
-ms.openlocfilehash: ecb06ffc23823df72f9254d881f6b1dc1b781f59
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 44ac5ebf66f4d4e0b057692902f9bc3804aa2e03
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635027"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579879"
 ---
 # <a name="difference-between-mdm-and-mam"></a>Différence entre LAM et MAM
 
@@ -38,6 +38,6 @@ Microsoft 365 Business Premium offre plusieurs façons de protéger vos données
 
 Microsoft 365 Business Premium vous permet de configurer des stratégies qui protègent les données sur vos appareils Windows 10. Lorsqu’un appareil est sous gestion des appareils mobiles, vous contrôlez l’intégralité de l’appareil, vous pouvez effacer les données de celui-ci et les réinitialiser aux paramètres d’usine. Pour plus d’informations, voir [Définir les paramètres de protection des appareils pour les PC Windows 10.](../protection-settings-for-windows-10-pcs.md)
 
-## <a name="mobile-application-management-or-mam"></a>Gestion des applications mobiles ou gestion des applications mobiles
+## <a name="mobile-application-management-or-mam"></a>Gestion des applications mobiles ou GESTION DES APPLICATIONS MOBILES
 
-La gestion des applications mobiles vous permet de contrôler vos données métiers sur les appareils personnels de vos utilisateurs, tels que les iPhone et android, et leurs ordinateurs Win 10 personnels. Vous pouvez utiliser des stratégies de gestion des applications pour empêcher vos utilisateurs de copier des données métiers à partir d’applications Office vers leurs applications personnelles. Vous pouvez également supprimer toutes les données des applications Office sur leurs appareils personnels. Pour plus d’informations, voir Définir les [paramètres de protection](../app-protection-settings-for-android-and-ios.md) des applications pour les appareils Android ou iOS et Définir les paramètres de protection des applications pour [les appareils Windows 10.](../protection-settings-for-windows-10-devices.md)
+La gestion des applications mobiles vous permet de contrôler vos données métiers sur les appareils personnels de vos utilisateurs, tels que les iPhone et android, ainsi que sur leurs ordinateurs Win 10 personnels. Vous pouvez utiliser des stratégies de gestion des applications pour empêcher vos utilisateurs de copier des données métiers à partir d’applications Office vers leurs applications personnelles. Vous pouvez également supprimer toutes les données des applications Office sur leurs appareils personnels. Pour plus d’informations, voir Définir les [paramètres de protection](../app-protection-settings-for-android-and-ios.md) des applications pour les appareils Android ou iOS et Définir les paramètres de protection des applications pour [les appareils Windows 10.](../protection-settings-for-windows-10-devices.md)

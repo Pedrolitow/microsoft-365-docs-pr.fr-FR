@@ -2,8 +2,8 @@
 title: Modifier ou définir les paramètres de protection des applications pour les appareils Windows 10
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Découvrez comment créer ou modifier des stratégies de gestion des applications et protéger les fichiers de travail sur les appareils Windows 10 personnels de vos utilisateurs.
-ms.openlocfilehash: 64c6aa620171a373cd7564c7de3abbf4a4546c4e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aa270c563e6bdce6fd48f8713d7db3ce23921925
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912819"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580011"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Définir ou modifier les paramètres de protection des applications pour les appareils Windows 10
 
@@ -55,10 +55,10 @@ Si vos utilisateurs disposent d'appareils Windows 10 sur lesquels ils effectuent
 2. Dans le navigation de gauche, choisissez **Ajouter des** \> **stratégies** \> **d’appareils.**
 3. Dans le volet **Ajouter une stratégie**, entrez un nom unique pour cette stratégie. 
 4. Sous **Type de stratégie**, sélectionnez **Gestion des applications pour Windows 10**.
-5. Sous **Type d’appareil**, choisissez **Personnel** ou **Entreprise.**
+5. Under **Device type**, choose either **Personal** or **Company Owned**.
 6. L'option **Chiffrer les fichiers de travail** est activée automatiquement. 
 7. Définissez **Empêcher les utilisateurs de copier des données d'entreprise dans leurs fichiers personnels et les obliger à enregistrer les fichiers professionnels dans OneDrive Entreprise** sur **Activé** si vous ne souhaitez pas que les utilisateurs enregistrent des fichiers professionnels sur leur PC. 
-9. Développez **récupérer des données sur les appareils Windows.** Nous vous recommandons de **l’activer.**
+9. Développez **Récupérer des données sur les appareils Windows.** Nous vous recommandons de **l’activer.**
     Avant de pouvoir accéder à l'emplacement du certificat de l'agent de récupération de données, vous devez d'abord créer un tel certificat. Pour obtenir des instructions, voir Créer et vérifier un certificat d’agent de récupération de données de système de fichiers [EFS ( Encrypting File System).](/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate)
     
     Par défaut, les fichiers de travail sont chiffrés à l'aide d'une clé secrète qui est stockée sur l'appareil associé au profil de l'utilisateur. Seul l'utilisateur peut ouvrir et déchiffrer le fichier. Toutefois, si un périphérique est perdu ou si un utilisateur est supprimé, un fichier peut rester bloqué à l'état chiffré. Un administrateur peut utiliser le certificat d’agent de récupération de données (DRA) pour déchiffrer le fichier.

@@ -2,8 +2,8 @@
 title: Réinitialiser les mots de passe des utilisateurs
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment réinitialiser les mots de passe utilisateur dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 897ee87149c779d3de6d2175993d17e88dfc270f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 42832bd48f637589687b75c4995ae58154b62226
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422266"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580485"
 ---
 # <a name="reset-passwords-for-your-users"></a>Réinitialiser les mots de passe de vos utilisateurs
 
@@ -36,12 +36,12 @@ Dans Microsoft 365 pour les entreprises, vous pouvez réinitialiser les mots de 
 
 ## <a name="try-it"></a>Essayez !
 
-1. Lorsqu’un utilisateur demande un nouveau mot de passe, vous recevez une demande de réinitialisation de mot de passe par courrier électronique. Pour réinitialiser le mot de passe, ouvrez le lanceur d’applications et sélectionnez **Admin**.
+1. Lorsqu’un utilisateur demande un nouveau mot de passe, vous recevez une demande de réinitialisation de mot de passe par courrier électronique. Pour réinitialiser le mot de passe, ouvrez le lanceur d’applications et sélectionnez **Administrateur.**
 1. Dans le Centre d’administration Microsoft 365, sélectionnez Utilisateurs, Utilisateurs **actifs,** puis sélectionnez l’icône de clé en face de l’utilisateur qui a demandé la réinitialisation.
 1. Sélectionnez **Générer automatiquement le mot de passe** pour qu’un mot de passe aléatoire soit créé automatiquement.
 1. Sélectionnez **Réinitialiser.**
 1. Cochez la **case Envoyer le mot** de passe.
-1. Votre adresse de messagerie s’insérez dans la zone Envoyer le nouveau mot de **passe aux destinataires suivants.** Ajoutez l’adresse e-mail de remplacement de l’utilisateur ou n’importe quelle adresse de votre choix.
+1. Votre adresse de messagerie s’insérez dans la zone Envoyer le nouveau mot de **passe aux destinataires suivants.** Ajoutez l’adresse de messagerie de remplacement de l’utilisateur ou n’importe quelle adresse de votre choix.
 1. Choose **Send email and close**.
 
-    L’utilisateur reçoit un e-mail avec les instructions de réinitialisation du mot de passe.
+    L’utilisateur reçoit un courrier électronique avec les instructions de réinitialisation du mot de passe.
