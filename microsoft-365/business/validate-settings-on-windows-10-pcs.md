@@ -2,8 +2,8 @@
 title: Valider les paramètres de protection des applications sur les PC Windows 10
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Découvrez comment vérifier que les paramètres de protection des applications Microsoft 365 pour les entreprises ont pris effet sur les appareils Windows 10 de vos utilisateurs.
-ms.openlocfilehash: ff99b3a4fce49aebdb5c72f51e46678a7821e186
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fcb463fd98f692f7d4802689e0c03fe4e3e648a1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912411"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579839"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Valider les paramètres de protection des appareils sur les PC Windows 10
 
@@ -53,13 +53,13 @@ Une fois [les stratégies d’appareils](protection-settings-for-windows-10-pcs.
     
     ![Choisissez la manière dont les mises à jour sont remis page indique que les paramètres sont masqués ou gérés par votre organisation.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. Pour ouvrir le Centre de sécurité Windows Defender, consultez **paramètres** De sécurité mise à jour Windows Defender cliquez sur Ouvrir Windows Defender Paramètres de protection contre les virus contre les menaces du Centre de \> **&amp;** \>  \>  \> **&amp;** \> **&amp; sécurité.** 
+4. Pour ouvrir le Centre de sécurité Windows Defender, consultez **paramètres** De sécurité mise à jour Windows Defender cliquez sur Ouvrir Windows Defender Paramètres de protection antivirus du centre de sécurité contre les \> **&amp;** \>  \>  \> **&amp;** \> **&amp; menaces.** 
     
 5. Vérifiez que toutes les options sont grisées. 
     
     ![Les paramètres de protection contre les virus et les menaces sont grisés.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Documentation et ressources microsoft 365 pour les entreprises](./index.yml)
   

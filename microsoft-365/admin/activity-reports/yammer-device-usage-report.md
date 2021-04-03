@@ -1,7 +1,7 @@
 ---
 title: Rapports Microsoft 365 dans le Centre d’administration - Rapport Yammer’utilisation des appareils
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b793ffdd-effa-43d0-849a-b1ca2e899f38
-description: 'Obtenez le rapport Yammer’utilisation de l’appareil pour connaître les appareils sur lesquels vos utilisateurs Yammer. '
-ms.openlocfilehash: 17fcf6c7d46988f0783b5097d3381b9bc08cbbe7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 'Obtenez le rapport Yammer’utilisation des appareils pour connaître les appareils sur lesquels vos utilisateurs Yammer. '
+ms.openlocfilehash: 17d4055d800922f021bdac4d8a9df3a02077d948
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387452"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579457"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Rapports Microsoft 365 dans le Centre d’administration - Rapport Yammer’utilisation des appareils
 
@@ -47,7 +47,7 @@ Les graphiques **Utilisateurs** et **Distribution** donnent un aperçu de l'util
   
 Le rapport d'utilisation sur les appareils contient les informations suivantes.
   
-- Utilisez les onglets jour pour afficher les tendances du rapport **d’activité** Yammer’utilisation des appareils au cours des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date du jour (et non la date à laquelle le rapport a été généré). 
+- Utilisez les onglets jour pour afficher les tendances du rapport **d’activité** Yammer’utilisation des appareils au cours des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré). 
     
 - Chaque rapport mentionne la date à laquelle il a été généré. Les rapports reflètent généralement une latence de 24 à 48 heures par rapport à l'heure de l'activité rapportée.
     

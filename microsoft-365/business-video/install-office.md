@@ -2,8 +2,8 @@
 title: Installer des applications Microsoft Office
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment installer Microsoft Office applications.
-ms.openlocfilehash: c4df808f366095c5e0d21d177bb40bcff56488cd
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4970fa2698c413aad24aa94c16031823a16e9001
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422506"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578866"
 ---
 # <a name="install-office-apps"></a>Installer les applications Office 
 
@@ -41,4 +41,4 @@ Microsoft Office applications sont disponibles dans votre menu **Démarrer.** Si
 4. Pour installer Microsoft Teams, go to the office.com page, and choose  **Teams**.
 5. Obtenez l’application Windows, puis sélectionnez **Exécuter.** Teams affiche une invite lorsque l’installation est terminée.
 
-Les applications Office que vous avez installées apparaissent maintenant dans  **votre** menu Démarrer.
+Les applications Office que vous avez installées apparaissent désormais  **dans** votre menu Démarrer.

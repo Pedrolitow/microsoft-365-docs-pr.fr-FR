@@ -15,21 +15,14 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez comment travailler avec des fournisseurs de solutions (partenaires) certifiés par Microsoft pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire.
-ms.openlocfilehash: 3297b2322983eabb793116a450a618b3a62a5a9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911397"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579733"
 ---
 # <a name="manage-partner-relationships"></a>Gérer les relations de partenariat
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Vous pouvez travailler avec des fournisseurs de solutions (partenaires) certifiés par Microsoft pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire. Plusieurs étapes sont nécessaires à la mise en place des éléments.
 
@@ -39,7 +32,7 @@ Vous pouvez travailler avec des fournisseurs de solutions (partenaires) certifi�
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être administrateur global ou administrateur de facturation pour suivre ces étapes. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous devez être administrateur global ou administrateur de facturation pour suivre ces étapes. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Que peut faire un partenaire pour mon organisation ou mon établissement scolaire ?
 
@@ -48,7 +41,7 @@ Un partenaire peut travailler avec vous de plusieurs façons. En fonction des be
 | Type de partenaire | Description |
 | ------ | ------------------- |
 | Revendeur | Partenaires qui vendent des produits Microsoft à votre organisation ou à votre établissement scolaire. |
-| Administrateur délégué | Partenaires qui gèrent les produits et services pour votre organisation ou votre établissement scolaire. Dans Azure Active Directory (AD), le partenaire est administrateur général de votre client. Ce rôle leur permet de gérer des services tels que la création de comptes d’utilisateurs, l’attribution et la gestion des licences, ainsi que les réinitialisations de mot de passe. |
+| Administrateur délégué | Partenaires qui gèrent les produits et services pour votre organisation ou votre établissement scolaire. Dans Azure Active Directory (AD), le partenaire est administrateur général de votre client. Ce rôle leur permet de gérer des services tels que la création de comptes d’utilisateurs, l’attribution et la gestion de licences et la réinitialisation des mots de passe. |
 | Administrateur délégué & revendeur | Partenaires qui vendent et gèrent des produits et services Microsoft à votre organisation ou à votre établissement scolaire. |
 | Partenaire | Vous donnez à votre partenaire un compte d’utilisateur dans votre client et ils travaillent avec d’autres services Microsoft en votre nom. |
 | Advisor | Les partenaires peuvent réinitialiser les mots de passe et gérer les incidents de support pour vous. |

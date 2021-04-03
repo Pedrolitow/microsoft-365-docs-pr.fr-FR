@@ -19,21 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 750420b6fac8fff16130710ef96a9ceb6345a87a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: be89c2d355202dd8ca8698ac735cbb384bb8ef06
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911829"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579769"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Comment payer votre abonnement avec un profil de facturation
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Lorsque vous achetez un abonnement, vous le payez avec un profil de facturation. Le profil de facturation est lié à un mode de paiement spécifique et peut être une carte de crédit ou de débit, ou une facture, mais pas un compte bancaire.
 
@@ -47,7 +40,7 @@ Si la facturation périodique est désactivée pour  un profil de facturation, v
 
 ## <a name="paying-by-invoice"></a>Payer par facture
 
-Si vous avez un profil de facturation qui est prêt à être payé par facture, vous pouvez régler votre abonnement avec un chèque ou un eft. Vous pouvez également utiliser une carte de crédit pour effectuer un paiement en ligne à l’aide du bouton Payer **maintenant** sur votre facture.
+Si vous avez un profil de facturation qui est prêt à être payé par facture, vous pouvez payer votre abonnement avec un chèque ou un eft. Vous pouvez également utiliser une carte de crédit pour effectuer un paiement en ligne à l’aide du bouton Payer **maintenant** sur votre facture.
 
 Pour disposer de cette option, vous devez :
 

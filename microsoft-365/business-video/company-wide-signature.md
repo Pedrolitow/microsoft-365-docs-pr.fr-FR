@@ -2,8 +2,8 @@
 title: Créer une signature pour toute l’entreprise
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer une signature électronique à l’échelle de l’entreprise.
-ms.openlocfilehash: 22676ef6464e15e63efbe77d6dd6e88b4e494896
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a1a85826be2a799b56cf3d06b6416778470a116f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422806"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578950"
 ---
 # <a name="create-a-company-wide-email-signature"></a>Créer une signature électronique à l’échelle de l’entreprise
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 
-Une signature électronique à l’échelle de l’entreprise apparaît sur chaque courrier électronique envoyé par des personnes de votre organisation. Vous pouvez l’utiliser pour afficher des détails importants, tels que les informations de contact de votre entreprise ou une clause d’exclusion de responsabilité légale. 
+Une signature électronique à l’échelle de l’entreprise apparaît sur chaque message électronique envoyé par des personnes de votre organisation. Vous pouvez l’utiliser pour afficher des détails importants, tels que les informations de contact de votre entreprise ou une clause d’exclusion de responsabilité légale. 
 
 ## <a name="try-it"></a>Essayez !
 
@@ -41,8 +41,8 @@ Une signature électronique à l’échelle de l’entreprise apparaît sur chaq
 1. Sélectionnez **Ajouter +**, puis appliquer **les clauses d’exclusion de responsabilité.**
 1. Dans la page **Nouvelle règle** :
     1. Entrez un nom pour la règle.
-    1. Dans la **liste de listes** de listes listes , sélectionnez **Appliquer à tous les messages.**
-    1. Dans la **liste de** listes listes suivantes, vérifiez que la clause d’exclusion de responsabilité s’affiche. 
+    1. Dans la **liste de listes** de listes générales Appliquer à cette règle, **sélectionnez Appliquer à tous les messages.**
+    1. Dans la **liste de** listes suivantes, vérifiez que la clause d’exclusion de responsabilité s’affiche. 
     1. Sur le côté droit de la page, sélectionnez Entrer du **texte,** puis entrez le texte de votre signature électronique dans la zone de texte Spécifier la clause **d’exclusion** de responsabilité. Vous pouvez améliorer l’apparence de votre signature en formatant le texte au format HTML.
     1. Si vous souhaitez qu’une image apparaisse dans votre signature, vous devez utiliser une URL disponible publiquement pour cette image. Accédez à l’image sur le web, cliquez dessus avec le bouton droit, puis sélectionnez **Copier l’adresse de l’image.** Collez l’adresse dans la **zone de texte Spécifier** la clause d’exclusion de responsabilité. Sélectionnez **OK,** puis faites défiler vers le bas.
     1. Pour vous assurer que la signature fonctionne avec les e-mails chiffrés, ajoutez une option de retour. On the right of the page, choose **Select one**, choose **Wrap,** and then select **OK**.

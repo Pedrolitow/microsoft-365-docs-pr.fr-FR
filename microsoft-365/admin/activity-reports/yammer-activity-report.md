@@ -2,8 +2,8 @@
 title: Rapports Microsoft 365 dans le Centre d’administration - Rapport Yammer activité
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Obtenez le Yammer d’activité et en savoir plus sur le nombre d’utilisateurs qui utilisent Yammer pour publier, aimer ou lire un message.
-ms.openlocfilehash: 2bf02c0599f999b0eebb52d119096567bb09508b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5ebf180189b2785070c269ef15b6a6c6c9f7f61a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387464"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579481"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Rapports Microsoft 365 dans le Centre d’administration - Rapport Yammer activité
 
@@ -49,7 +49,7 @@ Vous pouvez visualiser l'activité Yammer d'un utilisateur en examinant les grap
   
 Le rapport d'activité contient les informations suivantes.
   
-- Utilisez les onglets de jour pour afficher les tendances du rapport **Activité Yammer** sur les 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date du jour (et non la date à laquelle le rapport a été généré). 
+- Utilisez les onglets de jour pour afficher les tendances du rapport **Activité Yammer** sur les 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré). 
     
 - Chaque rapport mentionne la date à laquelle il a été généré. Les rapports reflètent généralement une latence de 24 à 48 heures par rapport à l'heure de l'activité rapportée.
     

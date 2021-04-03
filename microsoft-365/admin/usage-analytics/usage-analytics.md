@@ -2,8 +2,8 @@
 title: Analyse de l'utilisation de Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenez une vue d’ensemble de la façon dont votre organisation adopte les services Microsoft 365 pour communiquer et collaborer.
-ms.openlocfilehash: 5120e487604fbaf4421c1b2f814cd57e79d5f9dc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a88fb5f6381079644c7b2615432bcbc625b820ad
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913813"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579036"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 
@@ -82,7 +82,7 @@ Ce rapport contient un rapport distinct pour chaque service Microsoft 365, y com
 
 Les rapports d’activité des utilisateurs sont disponibles pour certains services individuels. Ces rapports fournissent des données d’utilisation détaillées au niveau de l’utilisateur jointes à des attributs Active Directory. En outre, le rapport Adoption du service vous permet de découper par attributs Active Directory afin de pouvoir voir les utilisateurs actifs dans tous les services individuels. Toutes les mesures sont agrégées pour le dernier mois complet.
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Forum aux questions
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>Cette application de modèle sera-t-elle disponible à l’achat ou sera-t-elle gratuite ?
 
@@ -108,7 +108,7 @@ Vous pouvez accéder au fichier pbit à partir du Centre [de téléchargement Mi
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>Qui peut afficher les tableaux de bord et les rapports ?
 
-Si vous vous êtes connecté à l’application de modèle, vous pouvez la partager avec n’importe qui à l’aide de la fonctionnalité [de partage.](/power-bi/collaborate-share/service-share-dashboards) La gestion des licences Power BI exige que l’utilisateur qui partage un tableau de bord et celui avec lequel un tableau de bord est partagé doivent avoir Power BI Pro ou Power BI Premium.
+Si vous vous êtes connecté à l’application de modèle, vous pouvez la partager avec toute personne à l’aide de la fonctionnalité [de partage.](/power-bi/collaborate-share/service-share-dashboards) La gestion des licences Power BI exige que l’utilisateur qui partage un tableau de bord et celui avec lequel un tableau de bord est partagé doivent avoir Power BI Pro ou Power BI Premium.
 
 ### <a name="can-anyone-share-the-dashboard-or-does-it-have-to-be-the-person-who-connected-to-the-dashboard"></a>N'importe qui peut-il partager le tableau de bord ou doit-il s'agir obligatoirement de la personne qui s'est connectée au tableau de bord ?
 
@@ -138,7 +138,7 @@ Les [rapports d’activité](../activity-reports/activity-reports.md)  sont un b
 
 ### <a name="how-often-is-the-data-refreshed"></a>À quelle fréquence les données sont-elles actualisées ? 
 
-Lorsque vous vous connectez à l’application de modèle pour la première fois, elle se remplit automatiquement avec vos données pour les 12 mois précédents. Après cela, les données du modèle d’application sont actualisées toutes les semaines. Les clients peuvent choisir de modifier la planification d’actualisation si leur utilisation de ces données exige un rythme de mise à jour différent.
+Lorsque vous vous connectez à l’application de modèle pour la première fois, elle se remplit automatiquement avec vos données pour les 12 mois précédents. Après cela, les données de l’application de modèle seront actualisées toutes les semaines. Les clients peuvent choisir de modifier la planification d’actualisation si leur utilisation de ces données exige un rythme de mise à jour différent.
 
 Le service Microsoft 365 back end actualisera les données quotidiennement et fournit des données qui sont entre 5 et 8 jours latentes à partir de la date actuelle.
 
@@ -204,7 +204,7 @@ Vous pouvez utiliser le bouton commentaires dans la page de [](../contact-suppor
 
 ### <a name="how-can-partners-access-the-data"></a>Comment des partenaires peuvent-ils accéder aux données ?
 
-Si un partenaire dispose de droits d’administrateur délégués, il peut se connecter à l’application modèle au nom de son client.
+Si un partenaire dispose de droits d’administrateur délégués, il peut se connecter à l’application modèle pour le compte de son client.
 
 ### <a name="can-i-hide-identifiable-information-such-as-user-group-and-site-names-in-reports"></a>Puis-je masquer des informations d'identification personnelle telles que l'utilisateur, les groupes et les noms de site dans des rapports ?
 

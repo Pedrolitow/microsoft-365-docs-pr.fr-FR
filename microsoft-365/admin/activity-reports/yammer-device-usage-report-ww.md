@@ -2,8 +2,8 @@
 title: Rapports Microsoft 365 dans le Centre d’administration - Rapport Yammer’utilisation des appareils
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,13 +20,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenez le rapport Yammer’utilisation de l’appareil pour connaître les appareils sur lesquels vos utilisateurs Yammer.
-ms.openlocfilehash: fae76e9ef769248217140c059004efc7ad330928
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+description: Obtenez le rapport Yammer’utilisation des appareils pour connaître les appareils sur lesquels vos utilisateurs Yammer.
+ms.openlocfilehash: 01749c21dd0f8355556718ee9179244fb250c97a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779330"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579469"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Rapports Microsoft 365 dans le Centre d’administration - Rapport Yammer’utilisation des appareils
 
@@ -46,11 +46,11 @@ Les rapports d'utilisation de Yammer sur les appareils vous donnent des informat
 
 Vous pouvez afficher l’utilisation dans le rapport OneDrive en choisissant l’onglet **Utilisation de l’appareil.**<br/>![Rapports Microsoft 365 - Rapport d’utilisation Yammer microsoft.](../../media/e21af4c0-0ad2-4485-8ab1-2f82d7dfa90e.png)
 
-Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’utilisation de l’appareil : choisir des colonnes](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer’utilisation de l’appareil : choisir des colonnes](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
 
-Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme. Cette grille affiche les utilisateurs qui se sont connectés Yammer à l’aide du compte Microsoft 365 ou qui se sont connectés au réseau à l’aide de l' sign-on unique. <br/> |

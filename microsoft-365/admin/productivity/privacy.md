@@ -2,8 +2,8 @@
 title: Score de productivité Microsoft - Confidentialité
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protection de la confidentialité par le score de productivité.
-ms.openlocfilehash: b522c40cba746f3a4ede2404cf671607d62a3282
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 5b5997532ddcd1fdf43b4124f8e2d8183bb3d89e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406559"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579169"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Contrôles de confidentialité pour le score de productivité
 
@@ -32,7 +32,7 @@ Le Score de productivité fournit des informations sur la transformation numéri
 
 Votre confidentialité est importante pour Microsoft. Pour découvrir comment nous protégeons votre confidentialité, consultez [la déclaration de confidentialité de Microsoft.](https://privacy.microsoft.com/privacystatement) Le Score de productivité vous permet, en tant qu’administrateur informatique de votre organisation, d’accéder aux paramètres de confidentialité pour vous aider à vous assurer que les informations du Score de productivité que vous visualisez sont actionnables, sans compromettre la confiance que votre organisation place dans Microsoft.
 
-Dans le domaine des expériences des personnes, les mesures sont disponibles au niveau de l’organisation uniquement. Ce domaine examine la façon dont les utilisateurs utilisent Microsoft 365 en regardant les catégories de collaboration, mobilité, réunions, travail d’équipe et communication de contenu. Nous vous permettons d’avoir plusieurs niveaux de contrôles pour vous aider à répondre à vos besoins en matière de politique de confidentialité interne.
+Dans le domaine des expériences des personnes, les mesures sont disponibles au niveau de l’organisation uniquement. Cette rubrique examine la façon dont les utilisateurs utilisent Microsoft 365 en regardant les catégories de collaboration de contenu, de mobilité, de réunions, de travail d’équipe et de communication. Nous vous permettons d’avoir plusieurs niveaux de contrôles pour vous aider à répondre à vos besoins en matière de politique de confidentialité interne.
 Les contrôles vous donnent :
 
 - Rôles d’administrateur flexibles pour contrôler qui peut voir les informations dans le Score de productivité.
@@ -51,7 +51,7 @@ Pour afficher l’intégralité du score de productivité, vous devez être l’
 - Lecteur de rapports
 - Lecteur Rapports de synthèse de l’utilisation
 
-Attribuez le rôle Lecteur de rapports ou Rapport de synthèse de l’utilisation à toute personne responsable de la gestion et de l’adoption des changements, mais pas nécessairement un administrateur informatique. Ce rôle leur donne accès à l’expérience de score de productivité complète dans le Centre d’administration Microsoft 365.
+Attribuez le rôle lecteur de rapports ou De synthèse de l’utilisation à toute personne responsable de la gestion et de l’adoption des changements, mais pas nécessairement un administrateur informatique. Ce rôle leur donne accès à l’expérience de score de productivité complète dans le Centre d’administration Microsoft 365.
 
 Le rôle lecteur rapports de synthèse de l’utilisation devra être attribué par le biais des cmdlets PowerShell jusqu’à ce qu’il soit affecté à partir du Centre d’administration Microsoft 365 plus tard en 2020.
 
@@ -77,7 +77,7 @@ Vous pouvez également refuser le domaine expériences des personnes du Score de
 
 Pour refuser :
 
-1. Dans le Centre d’administration, go to **Settings**   >   **Org Settings**  >  **Productivity Score**.
+1. Dans le Centre d’administration, allez à **Paramètres**   >   **Org Paramètres**  >  **Score de productivité**.
 2. Désochez la case qui indique Autoriser l’utilisation des données d’utilisation de  **Microsoft 365 pour** les informations sur les expériences utilisateur. Pour comprendre comment modifier les paramètres de partage de données pour Endpoint Analytics dans le Gestionnaire de configuration Intune, sélectionnez **En savoir plus.**
 3. Sélectionnez **Enregistrer.**
 

@@ -2,8 +2,8 @@
 title: Mettre à niveau les listes de distribution vers les groupes Microsoft 365 dans Outlook
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers groupes Microsoft 365 dans Outlook et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: 7fd6090e00e9099feb93685a276b5e207bd05419
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ab7c2ff68b1f16915d65fff0d7292e3b3ad72d02
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915001"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579241"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Mettre à niveau les listes de distribution vers les groupes Microsoft 365 dans Outlook
 
-Vous pouvez mettre à niveau les listes de distribution vers groupes Microsoft 365 avec Outlook. C’est un excellent moyen d’offrir aux listes de distribution de votre organisation toutes les fonctionnalités des Groupes Microsoft 365. [Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+Vous pouvez mettre à niveau les listes de distribution vers Groupes Microsoft 365 avec Outlook. C’est un excellent moyen d’offrir aux listes de distribution de votre organisation toutes les fonctionnalités des Groupes Microsoft 365. [Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 Vous pouvez mettre à niveau les DL une par une ou plusieurs en même temps.
 
 ## <a name="upgrade-one-or-many-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Mettre à niveau une ou plusieurs listes de distribution vers groupes Microsoft 365 dans Outlook
 
-Vous devez être un administrateur global ou un administrateur Exchange pour mettre à niveau une liste de distribution. Pour passer à Groupes Microsoft 365, un groupe de distribution doit avoir un propriétaire avec une boîte aux lettres.
+Vous devez être un administrateur global ou un administrateur Exchange pour mettre à niveau une liste de distribution. Pour mettre à niveau vers Groupes Microsoft 365, un groupe de distribution doit avoir un propriétaire avec une boîte aux lettres.
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
@@ -43,11 +43,11 @@ Vous devez être un administrateur global ou un administrateur Exchange pour met
 
 3. Sélectionnez une ou plusieurs listes de distribution (également appelées groupe de **distribution)** dans la page **des groupes.**<br/>![Sélectionner un groupe de distribution](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. Sélectionnez l’icône de mise à niveau.<br/>![Icône Mettre à niveau vers Groupes Microsoft 365](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. Sélectionnez l’icône de mise à niveau.<br/>![Icône Mise à niveau vers Groupes Microsoft 365](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. Dans la boîte de dialogue d’informations, **sélectionnez Oui** pour confirmer la mise à niveau. Le processus commence immédiatement. Selon la taille et le nombre de DLs que vous êtes en train de mettre à niveau, le processus peut prendre des minutes ou des heures.<br/>Si la liste de distribution ne peut pas être mise à niveau, une boîte de dialogue s’affiche. Voir [quelles listes de distribution ne peuvent pas être mises à niveau ?](#which-distribution-lists-cant-be-upgraded).
 
-6. Si vous êtes en train de mettre à niveau plusieurs listes de distribution, utilisez la liste de listes listes pour filtrer les listes de distribution qui ont été mises à niveau. Si la liste n’est pas terminée, patientez un peu plus longtemps, puis sélectionnez **Actualiser** pour voir ce qui a été correctement mis à niveau.<br/>Aucun avis ne vous indique à quel moment le processus de mise à niveau est terminé pour toutes les DL que vous avez sélectionnées. Vous pouvez le comprendre en cherchant à voir ce qui est répertorié sous **Disponible** pour la mise à niveau ou les **DL mises à niveau.**
+6. Si vous êtes en train de mettre à niveau plusieurs listes de distribution, utilisez la liste de listes listes pour filtrer les listes de distribution qui ont été mises à niveau. Si la liste n’est pas terminée, patientez un peu plus longtemps, puis sélectionnez **Actualiser** pour voir ce qui a été correctement mis à niveau.<br/>Aucun avis ne vous indique à quel moment le processus de mise à niveau est terminé pour toutes les DL que vous avez sélectionnées. Vous pouvez le comprendre en cherchant à voir ce qui est répertorié sous **Disponible** pour la mise à niveau ou les **DLs mises à niveau.**
 
 7. Si vous avez sélectionné une DL pour la mise à niveau, mais qu’elle apparaît toujours sur la page comme disponible pour la mise à niveau, elle n’a pas réussi à mettre à niveau. Voir [que faire si la mise à niveau ne fonctionne pas](#what-to-do-if-the-upgrade-doesnt-work).
 
@@ -96,12 +96,12 @@ Par exemple, si vous souhaitez mettre à niveau cinq DLs avec l’adresse SMTP `
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
-### <a name="upgrade-all-eligible-dls"></a>Mettre à niveau toutes les DLs éligibles
+### <a name="upgrade-all-eligible-dls"></a>Mettre à niveau toutes les DL éligibles
 
 Il existe deux façons de mettre à niveau toutes les DL éligibles.
 
 > [!NOTE]
-> La cmdlet Upgrade-DistributionGroup ne reçoit pas de données du pipeline, c’est pourquoi il est nécessaire d’utiliser l’opérateur « foreach-object » pour s’exécuter {} correctement.
+> La cmdlet Upgrade-DistributionGroup ne reçoit pas de données du pipeline, pour cette raison, il est nécessaire d’utiliser l’opérateur « foreach-object » pour s’exécuter {} correctement.
 
 1. Obtenez les DL éligibles dans le client et faites-les mettre à niveau à l’aide de la commande de mise à niveau :
 
@@ -123,12 +123,12 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="which-distribution-lists-cant-be-upgraded"></a>Quelles listes de distribution ne peuvent pas être mises à niveau ?
 
-Vous pouvez uniquement mettre à niveau des listes de distribution non imbrique, simples et gérées dans le cloud. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent** pas être mises à niveau.
+Vous pouvez uniquement mettre à niveau des listes de distribution gérées dans le cloud, simples et non imbrmbrées. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent** pas être mises à niveau.
 
 |**Propriété**|**Éligible ?**|
 |:-----|:-----|
 |Liste de distribution gérée sur site.  <br/> |Non  <br/> |
-|Listes de distribution imbrmbrées. La liste de distribution a des groupes enfants ou est membre d’un autre groupe.  <br/> |Non  <br/> |
+|Listes de distribution imbrmbrées. La liste de distribution possède des groupes enfants ou est membre d’un autre groupe.  <br/> |Non  <br/> |
 |Listes de distribution dont le **membre RecipientTypeDetails** est autre que **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |Non  <br/> |
 |Liste de distribution qui compte plus de 100 propriétaires  <br/> |Non  <br/> |
 |Liste de distribution qui ne possède que des membres mais pas de propriétaire  <br/> |Non  <br/> |

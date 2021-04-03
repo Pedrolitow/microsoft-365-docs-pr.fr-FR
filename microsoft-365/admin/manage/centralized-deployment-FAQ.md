@@ -2,8 +2,8 @@
 title: Forum aux questions sur le déploiement centralisé
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Examinez les réponses aux questions fréquentes sur le déploiement centralisé à partir du Centre d’administration Microsoft 365.
-ms.openlocfilehash: 06e3b7973a209cdf40446c5a9511713d779373b8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 60d7a91da738803976b6823009450124d7b57814
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221834"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579301"
 ---
 # <a name="centralized-deployment-faq"></a>Forum aux questions sur le déploiement centralisé
 
@@ -48,7 +48,7 @@ Pour plus d’informations, voir [Affectations d’utilisateurs et de groupes.](
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>Combien de temps faut-il pour que les modules s’afficheront pour tous les utilisateurs ?  
 
-L’exposition d’un add-in pour tous les utilisateurs peut prendre jusqu’à 24 heures. Les mises à jour de l’un ou l’autre des modules peuvent prendre autant de temps que pour les mises à jour, les modifications apportées à partir de l’activer ou de la désactiver, ou les suppressions de ces derniers. 
+L’exposition d’un add-in pour tous les utilisateurs peut prendre jusqu’à 24 heures. Les mises à jour de modules, les modifications apportées à l’aide de l’activer ou de la désactiver, ou les suppressions de ces derniers peuvent prendre autant de temps. 
   
 ## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>En tant qu’administrateur, comment puis-je gérer l’accès des utilisateurs aux add-ins pour mon organisation ?
 
@@ -58,19 +58,19 @@ Pour plus d’informations sur la gestion de l’accès des utilisateurs, voir :
  - [Empêcher les téléchargements de modules de l’Office Store sur tous les clients (à l’exception d’Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
  - [Désignation des administrateurs et utilisateurs qui peuvent installer et gérer des compléments pour Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
-## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>Le déploiement centralisé fournira-t-il aux administrateurs la possibilité de choisir la méthode de déploiement pour les add-ins Outlook ?  
+## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>Le déploiement centralisé fournira-t-il aux administrateurs la flexibilité nécessaire pour choisir la méthode de déploiement pour les add-ins Outlook ?  
 
-Oui. Le déploiement centralisé offre aux administrateurs la possibilité de choisir l’une des trois méthodes de déploiement pour les add-ins Outlook lors du déploiement de ces derniers :
+Oui. Le déploiement centralisé offre aux administrateurs la possibilité de choisir l’une des trois méthodes de déploiement pour les add-ins Outlook pendant le déploiement de ces derniers :
 
 **Fixe (valeur par défaut)**   Le add-in est déployé automatiquement pour les utilisateurs affectés et ils ne peuvent pas le supprimer.  
  
-**Disponible** Les utilisateurs peuvent installer le add-in dans Outlook en choisissant **Home > Get More add-ins > admin-managed**.
+**Disponible** Les utilisateurs peuvent installer le add-in dans Outlook en choisissant **Home > Get More add-ins > Admin-managed**.
  
 **Facultatif** Le add-in est déployé automatiquement pour les utilisateurs affectés, mais ils peuvent choisir de le supprimer.  
     
 ## <a name="can-admins-update-line-of-business-lob-add-ins"></a>Les administrateurs peuvent-ils mettre à jour des add-ins métier ?  
 
-Oui. Les administrateurs peuvent télécharger un nouveau fichier manifeste pour prendre en charge les modifications apportées aux métadonnées pour les add-ins LOB déployés par l’administrateur. Le add-in est mis à jour au prochain démarrage des applications Office. L'application web peut changer à tout moment.  
+Oui. Les administrateurs peuvent télécharger un nouveau fichier manifeste pour prendre en charge les modifications apportées aux métadonnées pour les add-ins LOB déployés par l’administrateur. Le add-in est mis à jour lors du prochain démarrage des applications Office. L'application web peut changer à tout moment.  
  
 Pour plus d’informations, voir le [add-in métier.](./manage-addins-in-the-admin-center.md)  
 
@@ -86,7 +86,7 @@ Oui. Les administrateurs peuvent supprimer des modules qu’ils ont déployés p
 
 Pour plus d’informations, [voir Supprimer un module complémentaire.](./manage-addins-in-the-admin-center.md#delete-an-add-in) 
   
-## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>Les administrateurs peuvent-ils déployer des add-ins payants à partir de l’Office Store à l’aide d’un déploiement centralisé ? 
+## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>Les administrateurs peuvent-ils déployer des add-ins payants à partir de l’Office Store à l’aide du déploiement centralisé ? 
 
 Non. Vous ne pouvez pas déployer de add-ins payants à partir de l’Office Store à l’aide du déploiement centralisé pour le moment.  
  

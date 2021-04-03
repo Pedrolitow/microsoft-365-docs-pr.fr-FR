@@ -1,7 +1,7 @@
 ---
 title: Rapports Microsoft 365 dans le Centre d’administration - Activité Voix Client Dynamics 365
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’activité Microsoft Dynamics 365 Customer Voice à l’aide du tableau de bord Rapports Microsoft 365 dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: de03067197c80634f02318b35a79eb84e33c4b86
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 26d376602caebcb5276b77a3d2c962a14e5fead5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988551"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579649"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité Voix Client Dynamics 365
 
@@ -39,15 +39,15 @@ Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulair
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
     
-2. Dans la **drop-down Sélectionner un** rapport, sélectionnez Activité Dynamics **365 Customer Voice** \> .
+2. Dans la **drop-down Sélectionner un rapport,** sélectionnez **Activité Dynamics 365 Customer Voice** \> .
 
 ## <a name="interpret-the-dynamics-365-customer-voice-activity-report"></a>Interpréter le rapport d’activité de Dynamics 365 Customer Voice
 
-Vous pouvez obtenir une vue de l’activité Voix client Dynamics 365 de votre utilisateur en regardant les graphiques Activité **et** **Utilisateurs.** 
+Vous pouvez obtenir une vue de l’activité de Dynamics 365 Customer Voice de vos utilisateurs en regardant les graphiques Activité **et** **Utilisateurs.** 
 
 ![Rapport d’activité des formulaires](../../media/formsproactivity.png)
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |1.  <br/> |Le rapport d’activité de **Dynamics 365 Customer Voice** permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).   <br/> |
 |2.  <br/> |Les données de chaque rapport sont généralement aussi récentes que les dernières 48 heures.  <br/> |
@@ -57,4 +57,4 @@ Vous pouvez obtenir une vue de l’activité Voix client Dynamics 365 de votre u
 |6.<br/>|Vous pouvez filtrer les séries que vous voyez sur le graphique en sélectionnant un élément dans la légende. Par exemple, dans le graphique Utilisateurs, sélectionnez les concepteurs, les répondeurs ou le nombre total d’utilisateurs pour voir uniquement les informations relatives à chacun d’eux. La modification de cette sélection ne modifie pas les informations du tableau de grille en dessous.|
 |7.<br/>|Le tableau présente une répartition des activités au niveau de chaque utilisateur. Les légendes sont les suivantes :<br/><br/>**Le nom** d’utilisateur est l’adresse e-mail de l’utilisateur qui a effectué l’activité sur Microsoft Forms.<br/>**La date de la dernière activité (UTC)** est la date la plus récente à laquelle une activité de formulaire a été effectuée par l’utilisateur pour la plage de dates sélectionnée. Pour voir l'activité qui s'est produite à une date spécifique, sélectionnez celle-ci directement dans le graphique.<br/>Cela permet de filtrer le tableau pour afficher les données d’activité des fichiers uniquement pour les utilisateurs qui ont effectué l’activité ce jour-là.<br/><br/>**Le nombre d’enquêtes** créées est le nombre d’enquêtes créées par l’utilisateur.<br/> **Le nombre de réponses d’enquête** est le nombre de réponses des répondeurs auxquels l’enquête a été distribuée.|
 |8.<br/>|Sélectionnez **l’icône Gérer les** colonnes pour ajouter ou supprimer des colonnes dans le rapport.|
-|9.<br/>|Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant **le** lien Exporter. Cela exporte les données pour tous les utilisateurs et vous permet d’obtenir une agrégation, un tri et un filtrage simples pour une analyse plus approfondie. Si vous avez moins de 100 utilisateurs, vous pouvez trier et filtrer dans le tableau du rapport lui-même. Si vous avez plus de 100 utilisateurs, pour filtrer et trier, vous devez exporter les données.|
+|9.<br/>|Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela exporte les données pour tous les utilisateurs et vous permet d’obtenir une agrégation, un tri et un filtrage simples pour une analyse plus approfondie. Si vous avez moins de 100 utilisateurs, vous pouvez trier et filtrer dans le tableau dans le rapport lui-même. Si vous avez plus de 100 utilisateurs, pour filtrer et trier, vous devez exporter les données.|

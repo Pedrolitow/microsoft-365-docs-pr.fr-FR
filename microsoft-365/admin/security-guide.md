@@ -2,8 +2,8 @@
 title: Guide de sécurité pour les petites entreprises
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -16,13 +16,13 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Découvrez les menaces de sécurité qui pèsent sur votre entreprise et les moyens simples dont vous et vos employés pouvez protéger vos données, vos comptes et vos appareils.
-ms.openlocfilehash: a3c22f5644322beec942b8ba656a718317fc0940
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Découvrez les menaces de sécurité qui pèsent sur votre entreprise et les moyens faciles dont vous et vos employés pouvez protéger vos données, vos comptes et vos appareils.
+ms.openlocfilehash: 383b7245dc0cf2df713d4aa282a80b7481e7dd81
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399109"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579133"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>Graphique d’informations de sécurité pour les petites entreprises
 

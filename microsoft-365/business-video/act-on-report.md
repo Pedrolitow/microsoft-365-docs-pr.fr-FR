@@ -1,9 +1,9 @@
 ---
-title: Examiner les rapports d’utilisation
+title: Passer en revue les rapports d’utilisation
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser les informations des rapports d’utilisation.
-ms.openlocfilehash: 579d47515f57dfc3211a6e76a6d791999f6b5efc
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 1c499b62f14aeec392d15939c8e6d70c9bad7ced
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423188"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579012"
 ---
-# <a name="review-usage-reports-in-microsoft-365"></a>Passer en revue les rapports d’utilisation dans Microsoft 365
+# <a name="review-usage-reports-in-microsoft-365"></a>Consulter les rapports d’utilisation dans Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
 
@@ -40,7 +40,7 @@ Dans le [Centre d’administration,](https://admin.microsoft.com)vous pouvez voi
 
 1. Go to **Reports,** and then **Usage**. Recherchez des détails pour n’importe quel rapport en en sélectionnant un. Le rapport Utilisateurs actifs indique les services les plus utilisés par les membres de votre entreprise.
 1. Par exemple, examinons le rapport OneDrive. Ici, nous pouvons voir combien de personnes ont un compte, vous pouvez également afficher le nombre total de fichiers et de fichiers actifs, ainsi que le stockage utilisé. Pour voir tous les autres rapports, consultez le menu déroulant.
-1. Ici, nous pouvons consulter le rapport d’utilisation de l’application de messagerie et voir quelles méthodes vos employés utilisent le plus pour accéder à leur courrier électronique. Vous pouvez également afficher des informations spécifiques à un individu, mais les détails sont masqués par défaut. Pour afficher les détails des utilisateurs individuels, revenir aux **paramètres,** puis aux & **des services.**
+1. Ici, nous pouvons examiner le rapport d’utilisation de l’application de messagerie et voir quelles méthodes vos employés utilisent le plus pour accéder à leur courrier électronique. Vous pouvez également afficher des informations spécifiques à un individu, mais les détails sont masqués par défaut. Pour afficher les détails individuels de l’utilisateur, revenir aux **paramètres,** puis aux & **de service.**
 1. Dans le panneau de rapport, nous pouvons activer l’identificateur anonyme. Maintenant, nous allons fermer le panneau et revenir à **l’activité Rapports,** **Utilisation** et **Courrier électronique.** Ici, nous pouvons voir des informations spécifiques à un individu.
 
     N’oubliez pas que si vous êtes bloqué, vous pouvez toujours revenir à l’aide qui vous donne des informations sur le rapport spécifique que vous affichez.

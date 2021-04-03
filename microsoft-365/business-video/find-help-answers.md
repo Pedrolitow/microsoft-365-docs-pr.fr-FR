@@ -2,8 +2,8 @@
 title: Trouver des réponses et de l’aide
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment trouver de l’aide pour les administrateurs pour Microsoft 365 Business Premium.
-ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d16f3ece9782a33c3377e4a6bc2a93b29d54c1a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913633"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578902"
 ---
 # <a name="find-answers-and-help-for-admins"></a>Rechercher des réponses et de l’aide pour les administrateurs
 
@@ -37,10 +37,10 @@ Si vous avez une question ou si vous avez besoin d’aide avec Microsoft 365 Bus
 ## <a name="try-it"></a>Essayez !
 
 1. Connectez-vous [office.com](https://office.com) avec vos informations d’identification professionnelles et sélectionnez **Administrateur.**
-1. Dans la page d’accueil du Centre d’administration, sélectionnez Formation pour les **administrateurs** pour voir les options de formation disponibles.
-1. Choisissez **les propriétaires et les administrateurs d’entreprise** pour la formation pour les petites et moyennes entreprises.
+1. Dans la page d’accueil du Centre d’administration, sélectionnez Formation pour les **administrateurs** afin de voir les options de formation disponibles.
+1. Choisissez **les propriétaires d’entreprise et les administrateurs** pour la formation pour les petites et moyennes entreprises.
 1. Choisissez **Les professionnels de l’informatique d’entreprise** pour les entreprises plus grandes ou plus complexes.
-1. Revenir au Centre d’administration et, cette **fois,** choisissez conseils d’installation personnalisés pour voir un certain nombre de guides qui vous guident à travers des tâches d’installation spécifiques.
+1. Revenir au Centre d’administration et, cette fois, choisissez des instructions d’installation personnalisées pour voir un certain nombre de guides qui vous guident à travers des tâches d’installation spécifiques. 
 1. Revenir à la page  d’accueil du Centre d’administration et choisissez Formation pour que les utilisateurs obtiennent de l’aide sur des applications spécifiques et découvrez comment tirer le meilleur profit des fonctionnalités que vous utilisez chaque jour.
 1. Revenir au Centre d’administration et choisissez **Besoin d’aide** pour ouvrir l’Assistant Support. Tapez votre question ou la rubrique avec qui vous souhaitez de l’aide, puis **sélectionnez Envoyer.** Choisissez le lien dans le Centre d’administration ou l’article qui répond à votre question.
 1. Si vous ne trouvez pas de réponse à votre question, vous pouvez toujours contacter le support technique et un technicien du support technique vous répondra prochainement.

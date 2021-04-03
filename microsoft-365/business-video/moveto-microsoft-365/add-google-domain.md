@@ -2,8 +2,8 @@
 title: Ajouter votre domaine Google Workspace
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -15,19 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment déplacer votre domaine de Google Workspace vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 23ca451cfdcb67898a10935101efedcdf360ef91
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 814e714527467bb6e7008ea141989f3117ddcdd8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925001"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578770"
 ---
 # <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Ajouter votre domaine Google Workspace à Microsoft 365
 
@@ -47,7 +46,7 @@ Ajoutez votre domaine Google Workspace à Microsoft 365 pour les entreprises afi
     La mise à jour prend généralement quelques minutes, mais peut prendre jusqu’à 48 heures. 
 1. Revenir au Centre d’administration Microsoft 365, **sélectionnez Vérifier,** puis **Fermez.** 
 1. Pour définir votre domaine comme courrier électronique principal pour vos utilisateurs, dans le navigation de gauche, sélectionnez **Utilisateurs**  >  **actifs.** 
-1. Choisissez un utilisateur, sélectionnez Gérer le nom **d’utilisateur** et le courrier électronique, **Modifier,** sélectionner votre domaine dans la liste modifiable, puis sélectionner Terminé **et** enregistrer **les modifications.** 
+1. Choisissez un utilisateur, sélectionnez Gérer le nom **d’utilisateur** et le courrier électronique, **Modifier,** sélectionner votre domaine dans la liste modifiable, puis sélectionnez Terminé **et** Enregistrer **les modifications.** 
 1. Répétez ce processus pour chaque utilisateur. 
 
-    Lorsque vous avez terminé, vous serez prêt à installer les applications Office et à migrer vos éléments de courrier électronique et de calendrier vers Microsoft 365. 
+    Lorsque vous avez terminé, vous êtes prêt à installer les applications Office et à migrer vos éléments de courrier et de calendrier vers Microsoft 365. 

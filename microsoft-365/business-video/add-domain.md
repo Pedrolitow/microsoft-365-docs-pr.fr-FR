@@ -2,8 +2,8 @@
 title: Ajouter un domaine
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,22 +21,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment ajouter un autre domaine à votre abonnement.
-ms.openlocfilehash: fef3dc06f270b79cc7f9e729b39727c9116b923d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8899cb9667ffa080746ca9173b61897f9c5db399
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423082"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579000"
 ---
 # <a name="add-another-domain"></a>Ajouter un autre domaine
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
-Votre entreprise peut avoir besoin de plusieurs noms de domaine à des fins différentes. Par exemple, vous souhaitez peut-être ajouter une orthographe différente du nom de votre société, car les clients l’utilisent déjà et leurs communications n’ont pas pu vous joindre.
+Votre entreprise peut avoir besoin de plusieurs noms de domaine à des fins différentes. Par exemple, vous pouvez ajouter une orthographe différente du nom de votre société, car les clients l’utilisent déjà et leurs communications n’ont pas pu vous joindre.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le Centre d’administration Microsoft 365, choisissez **Installation.**
+1. In the Microsoft 365 admin center, choose **Setup**.
 1. Sous **Obtenir votre domaine personnalisé, sélectionnez** **Afficher.**
 1. Sélectionnez **Gérer,** puis **Ajouter un domaine.**
 1. Entrez le nouveau nom de domaine à ajouter, puis sélectionnez **Suivant.**

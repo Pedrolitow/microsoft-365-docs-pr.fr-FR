@@ -2,8 +2,8 @@
 title: Utilisation de l’appareil Microsoft Teams
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
 description: Obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft Teams à partir de Rapports Microsoft 365.
-ms.openlocfilehash: 9c96f4fce962b49081cc93ff802b1e2bc250ec98
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 453b5767a6da1361ba8121fa2d49d9db8224aa68
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949107"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579625"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation des appareils Microsoft Teams
 
@@ -48,10 +48,10 @@ Les graphiques **Utilisateurs** et **Distribution** donnent un aperçu de l'util
   
 ![Rapports Microsoft 365 - Utilisation des applications Microsoft Teams](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |1.  <br/> |Le rapport **Utilisation de Microsoft Teams sur des appareils** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).  <br/> |
-|2.  <br/> |Les données de chaque rapport couvrent généralement jusqu’aux 24 à 48 dernières heures.  <br/> |
+|2.  <br/> |Les données de chaque rapport couvrent généralement jusqu’aux dernières 24 à 48 heures.  <br/> |
 |3.  <br/> |L'affichage **Utilisateurs** indique le nombre d'utilisateurs uniques quotidiens par application.  <br/> |
 |4.  <br/> |L'affichage **Distribution** indique le nombre d'utilisateurs uniques par application sur la période sélectionnée.  <br/> |
 |5.  <br/> | Dans le graphique **Utilisateurs**, l'axe Y indique le nombre d'utilisateurs par application.  <br/>  Dans le graphique **Distribution**, l'axe Y indique le nombre d'utilisateurs de l'application spécifiée.  <br/>  L'axe X représente la plage de dates sélectionnée pour ce rapport particulier.  <br/> |

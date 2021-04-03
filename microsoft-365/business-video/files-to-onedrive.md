@@ -2,8 +2,8 @@
 title: Déplacer vos fichiers sur OneDrive
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer vos fichiers vers OneDrive.
-ms.openlocfilehash: f5795ba907e2ac88136887410b5b713bd7d56d81
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b955895d48853e73a5f2f73e6c6f49d8806e735f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422722"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578914"
 ---
 # <a name="move-files-to-onedrive"></a>Déplacer des fichiers vers OneDrive
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 
-Une fois que vous êtes abonné à Microsoft 365 Business Premium, vous&#39;copier vos fichiers de travail existants dans OneDrive Entreprise. OneDrive est un bon endroit pour stocker des fichiers de travail personnels ou des fichiers d’entreprise sensibles à qui vous souhaitez contrôler l’accès.
+Une fois que vous êtes abonné à Microsoft 365 Business Premium, vous&#39;copier vos fichiers de travail existants dans OneDrive Entreprise. OneDrive est un bon endroit pour stocker des fichiers de travail personnels ou des fichiers métier sensibles à qui vous souhaitez contrôler l’accès.
 
 ## <a name="try-it"></a>Essayez !
 

@@ -2,8 +2,8 @@
 title: Créer et utiliser un modèle pour ajouter des utilisateurs
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les paramètres lorsque vous ajoutez plusieurs utilisateurs.
-ms.openlocfilehash: aef5085da603c38b37544b76c5336c9bfe4edd24
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123416"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579385"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Créer et utiliser un modèle pour ajouter des utilisateurs
 
@@ -33,18 +33,18 @@ Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les
 
 ## <a name="create-a-template"></a>Créer un modèle
 
-Les modèles sont faciles à créer. Vous pouvez sélectionner des &mdash;   >    >  **modèles Utilisateurs actifs utilisateurs,**  puis ajouter un modèle dans la liste de listes. Vous pouvez également ajouter un nouvel utilisateur et, lorsque vous avez terminé, vous avez la possibilité d’enregistrer l’entrée en tant que modèle.
+Les modèles sont faciles à créer. Vous pouvez sélectionner les modèles Utilisateurs actifs utilisateur, puis ajouter un modèle dans la liste de listes. Vous pouvez également ajouter un nouvel utilisateur et, lorsque vous avez terminé, vous avez la possibilité d’enregistrer l’entrée en tant que &mdash;   >    >  modèle. 
 
 Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs que vous choisissez pour les paramètres suivants sont enregistrées dans le modèle :
 
 - Nom du domaine
 - Choix des paramètres de mot de passe : vous pouvez choisir de créer des mots de passe ou de les faire générer automatiquement
-- Choix de mot de passe unique : vous pouvez demander à l’utilisateur de créer un mot de passe après la première signature
+- Choix d’un mot de passe unique : vous pouvez demander à l’utilisateur de créer un mot de passe après la première signature
 - Emplacement de la licence
 - Choix de licence
 - Choix de l’application
 - Role
-- La plupart des informations de profil, telles que profil **de** travail, **service,** **bureau,** **téléphone office** et adresse **de rue** 
+- La plupart des informations de profil, telles que profil **de travail,** **service,** **bureau,** **téléphone office** et adresse **de rue** 
 
 Les informations suivantes sont propres à l’utilisateur et ne sont pas enregistrées dans le modèle :
 
@@ -54,7 +54,7 @@ Les informations suivantes sont propres à l’utilisateur et ne sont pas enregi
 - Choix d’envoyer le mot de passe par courrier électronique et à qui le message électronique de mot de passe est envoyé
 - Numéro de téléphone mobile
 
-Si vous choisissez de ne pas entrer d’informations pour un paramètre dans une section, cette valeur sera vide et ce paramètre ne s’affichera pas dans le modèle. Par exemple, si vous laissez la **fonction** vide, lorsque vous examinez votre modèle et que vous l’utilisez,  la fonction n’apparaît pas du tout. Si vous laissez tous les paramètres **de** section Profil vides, la section **Profil** affiche **Aucun** fourni dans votre modèle final.
+Si vous choisissez de ne pas entrer d’informations pour un paramètre dans une section, cette valeur sera vide et ce paramètre ne s’affichera pas dans le modèle. Par exemple, si vous laissez la **fonction** vide, lorsque vous examinez votre modèle et que vous l’utilisez,  la fonction n’apparaît pas du tout. Si vous laissez tous les paramètres **de** section Profil vides, la section **Profil** n’affichera aucun paramètre fourni **dans** votre modèle final.
 
 Lorsque vous créez un modèle en sélectionnant **l’option** Ajouter un modèle, vous pouvez choisir les valeurs à compléter. Tout ce qui reste vide s’affiche comme **aucun fourni** dans le modèle.
 
@@ -67,7 +67,7 @@ Pour utiliser un modèle existant afin d’ajouter un utilisateur :
 2. Sélectionnez **les modèles utilisateur,** puis sélectionnez un modèle dans la liste de listes. (La liste contient uniquement les modèles que vous avez créés, et non ceux créés par d’autres administrateurs.)
 
    > [!NOTE]
-   > Vous pouvez également utiliser un modèle pour ajouter un utilisateur en sélectionnant **Modèles** utilisateur Gérer les  >  **modèles,** sélection d’un modèle, puis utilisation **du modèle.**
+   > Vous pouvez également utiliser un modèle pour ajouter un utilisateur en sélectionnant **Modèles** utilisateur Gérer les  >  **modèles,** sélectionner un modèle, puis Utiliser **le modèle**.
 
 3. Suivez les étapes pour créer un utilisateur à partir du modèle que vous avez sélectionné.
 
@@ -84,12 +84,12 @@ Vous pouvez uniquement supprimer des modèles dont vous n’avez plus besoin et 
 
 3. Une liste de modèles s’affiche. Vous pouvez supprimer un modèle en faisant l’une des choses suivantes :
     - Sélectionnez un ou plusieurs modèles, puis sélectionnez **Supprimer.** 
-    - Sélectionnez les trois points à droite du nom du modèle, puis sélectionnez **Supprimer.**
+    - Sélectionnez les trois points à droite du nom du modèle, puis sélectionnez **Supprimer**.
     - Sélectionnez le nom du modèle. Lorsque les détails du modèle apparaissent sur le côté droit de votre écran, sélectionnez **Supprimer le modèle.**
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Ajouter des utilisateurs et attribuer des licences en même temps](add-users.md)
+[Ajouter des utilisateurs et attribuer des licences simultanément](add-users.md)
 
 [Supprimer un ancien employé de Microsoft 365](remove-former-employee.md)
   

@@ -2,8 +2,8 @@
 title: Différence entre l’Assistant Installation et la page Installation
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez la différence entre l’Assistant Installation et la page Installation.
-ms.openlocfilehash: dd04920c1c686cd0082b0d3c11cc7869e5d3f4eb
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: 5e081df7800b5e1f3400f1525afddf2c230a13e4
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245924"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579109"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Différence entre l’Assistant Installation et la page Installation
 
@@ -38,9 +38,9 @@ L’Assistant Installation fournit une walkthrough guidée pour la configuration
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Utiliser l’Assistant Installation pour effectuer les tâches d’installation initiales
 
-Pour configurer votre compte, allez dans  le Centre d’administration, sélectionnez  Le programme d’installation dans le volet de navigation de gauche, puis sélectionnez Configuration guidée sur la page **d’installation.** [](https://go.microsoft.com/fwlink/p/?linkid=2024339)
+Pour configurer votre compte, allez dans  le Centre d’administration, sélectionnez  Programme d’installation dans le volet de navigation de gauche, puis sélectionnez Configuration guidée sur la page **d’installation.** [](https://go.microsoft.com/fwlink/p/?linkid=2024339)
 
-![Démarrer l’Assistant Configuration des Applications Microsoft 365 pour les entreprises](../../media/o365b-guided-setup.png)
+![Démarrer l’Assistant Configuration de Microsoft 365 Apps for business](../../media/o365b-guided-setup.png)
 
 L’Assistant Installation vous guide tout au long des étapes suivantes :
 
@@ -58,11 +58,11 @@ Pour accéder à la page **d’installation** dans le Centre [d’administration
 
 Vous verrez la liste complète des tâches d’installation organisées en catégories logiques, y compris celles que vous avez terminées dans l’Assistant Installation.
 
-![Page de configuration de Microsoft 365 pour les entreprises](../../media/o365b-setup-page.png)
+![Page d’installation de Microsoft 365 pour les entreprises](../../media/o365b-setup-page.png)
 
 Choisissez  Afficher pour toute tâche afin d’obtenir des informations rapides, telles que la description de la tâche, l’impact sur l’utilisateur, les conditions préalables, l’effort à implémenter et les statistiques de sécurité et d’adoption pour vous aider à comprendre les conséquences et l’impact avant de poursuivre.
 
-Vous verrez également l’état de la tâche (**démarrée,** pas **encore** démarrée ou **terminée).** Si vous travaillez à plusieurs tâches, que vous travaillez sur des tâches sur plusieurs jours ou si plusieurs administrateurs travaillent sur des tâches, vous pouvez effectuer le suivi en un coup d’œil des tâches qui ont été effectuées et de ceux qui nécessitent encore une attention particulière. 
+Vous verrez également l’état de la tâche (**démarrée,** pas **encore** démarrée ou **terminée).** Si vous travaillez sur plusieurs tâches, si vous travaillez sur des tâches sur plusieurs jours ou si plusieurs administrateurs travaillent sur des tâches, vous pouvez effectuer le suivi en un coup d’œil des tâches qui ont été achevées et de ceux qui nécessitent encore une attention particulière. 
 
 Pour accéder à des articles complets sur les fonctionnalités que vous êtes en train de définir, sélectionnez l’un des liens En **savoir plus.** La collection de tâches est toujours là, afin que vous pouvez revenir à la page **d’installation** à tout moment pour explorer davantage les ressources.
 

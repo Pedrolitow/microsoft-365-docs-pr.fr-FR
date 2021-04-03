@@ -2,8 +2,8 @@
 title: Rapports Microsoft 365 dans le Centre d’administration - Utilisation de OneDrive Entreprise
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Obtenez le rapport d’utilisation de OneDrive Entreprise pour connaître le nombre total de fichiers et de stockage utilisés au sein de votre organisation. '
-ms.openlocfilehash: 3855c7d06d202ee4d0590fcf5b8ca758d8120133
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 54a3b1e041ee6155b5ce89d6cd5bc73233d1f69b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649806"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579541"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation de OneDrive Entreprise
 
@@ -50,7 +50,7 @@ Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes da
 
 Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |URL  <br/> |Adresse web du OneDrive de l’utilisateur. <br/> |

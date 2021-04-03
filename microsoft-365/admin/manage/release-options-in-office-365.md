@@ -2,8 +2,8 @@
 title: Configurer les options de publication standard ou ciblée
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de publication pour les nouvelles mises à jour de produits et de fonctionnalités dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 6c5d505f0ece47b0a47df8b7ed1dc015afe93e82
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: d3692f2e1cca58fec81f2ad492b9232d5576f99b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470570"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579253"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de publication standard ou ciblée
 
@@ -107,7 +107,7 @@ Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour
 
 
   
-## <a name="learn-more"></a>Si vous souhaitez en savoir plus
+## <a name="learn-more"></a>En savoir plus
 
 Découvrez comment gérer [les messages](/office365/admin/manage/message-center) dans votre centre de messages [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) pour recevoir des notifications sur les mises à jour et les mises à jour Microsoft 365 à venir.
 

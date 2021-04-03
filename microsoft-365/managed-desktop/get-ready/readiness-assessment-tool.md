@@ -1,7 +1,7 @@
 ---
 title: Outils d’évaluation de la préparation
 description: Explique les deux outils, les vérifications qu’ils exécutent et la signification des résultats
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0311450386f3b7c9f950276340901daacc06b2a8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+audience: Admin
+ms.openlocfilehash: caf9274284548a179e088131930ae832c098b521
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453934"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579397"
 ---
 # <a name="readiness-assessment-tools"></a>Outils d’évaluation de la préparation
 
@@ -26,7 +27,7 @@ Pour plus d’informations sur l’utilisation de l’outil de vérification de 
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Outil d’évaluation de la préparation en ligne pour les paramètres de gestion
 
-L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec bureau géré Microsoft. [](https://aka.ms/mmdart) Bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Au bout de 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
+L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec bureau géré Microsoft. [](https://aka.ms/mmdart) Bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Après 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
 
 Toute personne ayant au moins le rôle Lecteur global ou Administrateur Intune pourra exécuter cet outil, mais deux des vérifications[(](readiness-assessment-fix.md#conditional-access-policies) les stratégies d’accès conditionnel et l’authentification [multifacteur](readiness-assessment-fix.md#multifactor-authentication) nécessitent des autorisations supplémentaires.
  
@@ -82,10 +83,22 @@ Pour chaque vérification, l’outil signalera l’un des quatre résultats poss
 |Résultat  |Signification  |
 |---------|---------|
 |Prêt     | Aucune action n’est requise avant de terminer l’inscription.        |
-|Avis    | Suivez les étapes de l’outil pour une expérience de l’inscription et pour les utilisateurs. Vous *pouvez terminer* l’inscription, mais vous devez résoudre ces problèmes avant de déployer votre premier appareil.        |
+|Avertissement    | Suivez les étapes de l’outil pour une expérience de l’inscription et pour les utilisateurs. Vous *pouvez terminer* l’inscription, mais vous devez résoudre ces problèmes avant de déployer votre premier appareil.        |
 |Non prêt | *L’inscription échoue* si vous ne corrigez pas ces problèmes. Suivez les étapes de l’outil pour les résoudre.        |
 |Erreur | Le rôle Azure Active Director (AD) que vous utilisez ne peut pas exécuter cette vérification. |
 
 ## <a name="after-enrollment"></a>Après l’inscription
 
 Une fois que vous avez terminé l’inscription au Bureau géré Microsoft, n’oubliez pas de revenir en arrière et d’ajuster certains paramètres Intune et Azure AD. Pour plus d’informations, voir [Ajuster les paramètres après l’inscription.](../get-started/conditional-access.md)
+
+## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
+
+1. Passer en [revue les conditions préalables pour le Bureau géré Microsoft.](prerequisites.md)
+2. Utiliser les [outils d’évaluation de la préparation.](readiness-assessment-tool.md) (Cet article)
+3. [Conditions préalables pour les comptes invité](guest-accounts.md)
+4. [Configuration du réseau pour Bureau géré Microsoft](network.md)
+5. [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
+6. [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](authentication.md)
+7. [Applications dans le Bureau géré Microsoft](apps.md)
+8. [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md)
+9. [Préparer des ressources d’impression pour le Bureau géré Microsoft](printing.md)

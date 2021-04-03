@@ -17,21 +17,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez comment fermer votre compte auprès de Microsoft.
-ms.openlocfilehash: 19e9a92a90f7c88cc150844ab451bc71d63e4c4a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0ee0a649a9adb93ecdbb1cd9dbedbc04dfb46ba0
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911661"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579745"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Lorsque vous fermez votre compte auprès de Microsoft, toutes les informations relatives à votre compte sont supprimées. Ces informations incluent les abonnements, les licences, les modes de paiement, les utilisateurs et les données utilisateur.
 
@@ -39,15 +32,15 @@ Lorsque vous fermez votre compte auprès de Microsoft, toutes les informations r
 
 Avant de commencer ce processus, veillez à sauvegarder les données que vous voulez conserver.
 
-Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="step-1-delete-users"></a>Étape 1 : Supprimer des utilisateurs
 
-Supprimez tous les utilisateurs à l’exception d’un administrateur général. L’administrateur général termine la procédure de fermeture du compte. Avant de pouvoir supprimer l’annuaire à la fin de ce processus, vous devez supprimer tous les autres utilisateurs.
+Supprimez tous les utilisateurs à l’exception d’un administrateur général. L’administrateur général termine les étapes de fermeture du compte. Avant de pouvoir supprimer l’annuaire à la fin de ce processus, vous devez supprimer tous les autres utilisateurs.
 
 Si les utilisateurs sont synchronisés en local, désynchronisé, supprimez les utilisateurs dans l’annuaire cloud à l’aide du portail Azure ou des cmdlets Azure PowerShell.
 
-Pour supprimer des utilisateurs, voir Administrateur de gestion des <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">utilisateurs : Supprimer un ou plusieurs utilisateurs.</a>
+Pour supprimer des utilisateurs, <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">consultez l’administrateur de gestion des utilisateurs : supprimez un ou plusieurs utilisateurs.</a>
 
 Vous pouvez également utiliser <a href="https://go.microsoft.com/fwlink/?linkid=842230">l’cmdlet Remove-MsolUser</a> PowerShell pour supprimer des utilisateurs en bloc.
 

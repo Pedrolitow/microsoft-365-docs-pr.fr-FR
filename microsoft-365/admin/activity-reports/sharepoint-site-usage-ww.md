@@ -2,8 +2,8 @@
 title: Rapports Microsoft 365 dans le Centre d’administration - Utilisation du site SharePoint
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le rapport d’utilisation du site SharePoint pour connaître le nombre de fichiers stockés par les utilisateurs dans les sites SharePoint, le nombre d’utilisations actives et le stockage total utilisé.
-ms.openlocfilehash: 403ebfd75fca5ba5777832140155bb09734db3c7
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: cfae7e1fc02d769328af46f75fdafc143467630b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233507"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579505"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation du site SharePoint
 
@@ -49,7 +49,7 @@ Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes da
 
 Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |URL du site  <br/> |URL complète du site. <br/> |
@@ -65,7 +65,7 @@ Vous pouvez également exporter les données du rapport dans un fichier .csv Exc
 |Fichiers actifs  <br/> | Nombre de fichiers actifs sur le site.<br/> REMARQUE : si des fichiers ont été supprimés pendant la période spécifiée pour le rapport, le nombre de fichiers actifs affichés dans le rapport peut être supérieur au nombre actuel de fichiers sur le site.  <br/> |
 |Stockage utilisé (Mo)  <br/> |Quantité de stockage actuellement utilisée sur le site.  <br/>|
 |Stockage alloué (Mo)  <br/> |Quantité maximale de stockage allouée au site.  <br/>|
-|Vues de page  <br/> |Nombre de fois où des pages ont été vues sur le site.  <br/>|
+|Vues de page  <br/> |Nombre de fois que des pages ont été vues sur le site.  <br/>|
 |Pages visitées  <br/> |Nombre de pages uniques visitées sur le site.  <br/>|
 |Nombre de liens anonymes  <br/> |Nombre de fois que des documents ou des dossiers sont partagés à l’aide de « Tout le monde avec le lien » sur le site.  <br/>|
 |Nombre de liens d’entreprise  <br/> |Nombre de fois que des documents ou des dossiers sont partagés à l’aide de « Personnes de l’organisation avec le lien » sur le site.  <br/>|

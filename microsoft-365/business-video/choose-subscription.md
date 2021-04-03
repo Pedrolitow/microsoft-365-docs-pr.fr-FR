@@ -2,8 +2,8 @@
 title: Choisir un abonnement Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez quel abonnement Microsoft 365 est le bon pour votre organisation.
-ms.openlocfilehash: 19da01142bfe0abf2ad02c3a0ccab4ef25e09df4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d04d505edc8494112095246a8aaede57f0795b98
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164644"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578962"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Choisir un abonnement Microsoft 365
 
@@ -50,7 +50,7 @@ Il est essentiel de choisir l’abonnement Microsoft 365 qui vous sera le plus �
 | **Applications Office** | Installer Office sur jusqu’à 5 PC/Mac + 5 smartphones par utilisateur (Word, Excel, PowerPoint, OneNote, Access), Office Online | Professionnel | Professionnel | ProPlus |
 | **Calendrier de &amp; messagerie** | Outlook, Exchange Online | 50 Go | 50 Go | 100 Go |
 | **Hub pour le travail d’équipe** | Espace de travail basé sur la conversation, réunions en ligne et bien plus encore dans Microsoft Teams | Oui | Oui | Oui |
-| **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
+| **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
 | **Réseaux sociaux, vidéo, sites** | Stream, Yammer, Planner, SharePoint \* Online, PowerApps, \* Microsoft Flow\* | Oui | Oui | Oui |
 | **Applications professionnelles** | Planification d’applications - Réservations\*\* | Oui | Oui | Oui |
 |

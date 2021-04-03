@@ -2,8 +2,8 @@
 title: Rapports Microsoft 365 dans le Centre d’administration - Rapport Yammer activité
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le Yammer d’activité et en savoir plus sur le nombre d’utilisateurs qui utilisent Yammer pour publier, aimer ou lire un message.
-ms.openlocfilehash: fc6bf252892cc9b3f30cdcf464cd44cfc83c4f75
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 636e5fae9a71fc819a032743e06127dace25f0a4
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779324"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579493"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Rapports Microsoft 365 dans le Centre d’administration - Rapport Yammer activité
 
@@ -45,11 +45,11 @@ En tant qu’administrateur Microsoft 365, le tableau de bord **Rapports** vous 
 
 Vous pouvez afficher les activités dans le rapport Yammer en choisissant **l’onglet** Activité.<br/>![Rapports Microsoft 365 - Rapport d’Yammer microsoft.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
 
-Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité de l’entreprise : choisir des colonnes](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité de l’entreprise : choisir des colonnes](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
 Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme. Cette grille affiche les utilisateurs qui se sont connectés Yammer à l’aide du compte Microsoft 365 ou qui se sont connectés au réseau à l’aide de l' sign-on unique. <br/> |

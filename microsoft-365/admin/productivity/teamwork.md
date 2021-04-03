@@ -2,8 +2,8 @@
 title: Score de productivité Microsoft - Travail d’équipe
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Détails du travail d’équipe : les utilisateurs ont un score de productivité.'
-ms.openlocfilehash: f64f60a6c9717d3d55ee2ac5cc6f507d4927fe18
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: 0924114a73a9bcf55a74744ee371de8c2d326d1c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712554"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579157"
 ---
 # <a name="teamwork--people-experiences"></a>Travail d’équipe : expériences de personnes
 
@@ -44,7 +44,7 @@ Une fois que les utilisateurs ont été actifs dans les produits ci-dessus au mo
 
 ## <a name="why-your-orgs-teamwork-score-matters"></a>Importance du score de travail d’équipe de votre organisation
 
-L’un des piliers fondamentaux de la productivité organisationnelle est lorsqu’un groupe de personnes ayant un objectif commun travaille ensemble et avec des ressources communes pour la réussite collective. La recherche indique que lorsque des personnes partagent des informations et collaborent dans des espaces de travail partagés, elles économisent jusqu’à 4 heures par semaine. Ils peuvent rechercher des documents connexes, trouver du contexte pour les discussions précédentes et atteindre des objectifs partagés. Voir[les](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf) preuves
+L’un des piliers fondamentaux de la productivité organisationnelle est lorsqu’un groupe de personnes ayant un objectif commun travaille ensemble et avec des ressources communes pour la réussite collective. La recherche indique que lorsque des personnes partagent des informations et collaborent dans des espaces de travail partagés, elles économisent jusqu’à 4 heures par semaine. Ils peuvent trouver des documents connexes, trouver du contexte pour les discussions précédentes et atteindre des objectifs partagés. Voir[les](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf) preuves
 
 ## <a name="how-we-calculate-the-teamwork-score"></a>Calcul du score de travail d’équipe
 
@@ -52,7 +52,7 @@ Nous fournissons un aperçu principal de l’expérience qui contient les mesure
 
 ### <a name="primary-insight"></a>Informations principales
 
-L’aperçu principal examine toutes les personnes qui communiquent à l’aide de messages électroniques et de messages sur Microsoft Teams, et qui interagissent avec du contenu sur le cloud dans des espaces de travail partagés. Dans Microsoft 365, les groupes Microsoft 365 sont la base pour que les utilisateurs se rassemblent dans un espace de travail partagé avec la possibilité d’envoyer des courriers électroniques à la boîte aux lettres de groupe, de partager des fichiers sur le site d’équipe SharePoint et d’envoyer des messages de canal via Microsoft Teams.
+L’aperçu principal examine toutes les personnes qui communiquent à l’aide de courriers électroniques et de messages sur Microsoft Teams, et qui interagissent avec du contenu sur le cloud dans des espaces de travail partagés. Dans Microsoft 365, les groupes Microsoft 365 sont la base pour que les utilisateurs se rassemblent dans un espace de travail partagé avec la possibilité d’envoyer des courriers électroniques à la boîte aux lettres de groupe, de partager des fichiers sur le site d’équipe SharePoint et d’envoyer des messages de canal via Microsoft Teams.
 
 :::image type="content" source="../../media/teamwork-score.png" alt-text="Graphique présentant des informations principales sur le score du travail d’équipe.":::
 
@@ -72,20 +72,20 @@ L’aperçu principal examine toutes les personnes qui communiquent à l’aide 
 2. **Visualisation (état actuel) :**
       - Barre horizontale où la partie bleue représente le pourcentage exprimé dans l’en-tête
       - Met en évidence la fraction (numérateur/dénominateur) utilisée pour calculer le pourcentage affiché dans l’en-tête
-        - Numérateur : nombre de personnes de votre organisation qui envoient des messages électroniques à une boîte aux lettres de groupe via Exchange, OU qui envoient des messages de canal via Teams, OU qui lisent et créent du contenu dans les sites d’équipe SharePoint.
+        - Numérateur : nombre de personnes de votre organisation qui envoient du courrier électronique à une boîte aux lettres de groupe via Exchange, OU qui envoient des messages de canal via Teams, OU qui lisent et créent du contenu dans les sites d’équipe SharePoint.
         - Dénominateur : nombre de personnes de votre organisation qui envoient des messages électroniques via Exchange, OU qui envoient des messages (messages de conversation ou de canal) sur Microsoft Teams, OU lisent et créent du contenu sur OneDrive ou SharePoint, ET ont accès à au moins l’un des services suivants : Exchange, Microsoft Teams ou SharePoint.
    - La valeur de référence homologue de la mesure clé est également affichée sous la mesure d’un pourcentage.
 3. **Afficher les ressources sur le travail d’équipe :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>Visualisation de la tendance de l’aperçu principal
 
-Le graphique suivant indique la tendance du numérateur et le dénominateur de la mesure clé dans l’aperçu principal. Il indique le nombre de personnes engagées dans des espaces de travail partagés et le nombre de personnes qui communiquent ou interagissent avec du contenu au cours des 180 derniers jours. Chaque point de données du graphique en lignes est un agrégat de l’activité des 28 derniers jours.
+Le graphique suivant fournit la tendance du numérateur et le dénominateur de la mesure clé dans l’aperçu principal. Il indique le nombre de personnes engagées dans des espaces de travail partagés et le nombre de personnes qui communiquent ou interagissent avec du contenu au cours des 180 derniers jours. Chaque point de données du graphique en lignes est un agrégat de l’activité des 28 derniers jours.
 
 :::image type="content" source="../../media/trend-peopleiinsharedworkspaces.png" alt-text="Graphique shows number of people engaged in shared workspaces.":::
 
 ### <a name="scoring-framework"></a>Infrastructure de notation
 
-Le score de travail d’équipe de votre organisation mesure au niveau de l’agrégation (organisationnelle) si les utilisateurs communiquent de façon cohérente ou s’engagent dans l’activité des fichiers dans les espaces de travail partagés au cours des 28 derniers jours.
+Le score de travail d’équipe de votre organisation mesure au niveau de l’agrégation (organisationnelle) si les utilisateurs communiquent de manière cohérente ou s’engagent dans l’activité des fichiers dans les espaces de travail partagés au cours des 28 derniers jours.
 
 Les scores ne sont pas fournis au niveau de l’utilisateur individuel.
 
@@ -103,7 +103,7 @@ Nous fournissons également des informations supplémentaires sur la façon dont
       - **Envoi de messages** électroniques : la partie colorée et la fraction représentent le pourcentage de personnes envoyant des messages électroniques à des boîtes aux lettres de groupe. La fraction est composée des composants :
         - Numérateur : personnes envoyant des courriers électroniques à des boîtes aux lettres de groupe au cours des 28 derniers jours.
         - Dénominateur : personnes envoyant des courriers électroniques au cours des 28 derniers jours. Il s’agit du même groupe de personnes marquées comme envoyant des courriers électroniques dans le principal aperçu du score de productivité des communications.
-      - **Envoi de messages**: la partie colorée et la fraction représentent le pourcentage de personnes envoyant des messages dans les canaux dans Microsoft Teams. La fraction se compose de :
+      - **Envoi de messages**: la partie colorée et la fraction représentent le pourcentage de personnes envoyant des messages dans les canaux dans Microsoft Teams. La fraction est composée des composants :
         - Numérateur : personnes envoyant des messages de canal au cours des 28 derniers jours.
         - Dénominateur : personnes envoyant des messages de conversation ou de canal au cours des 28 derniers jours. Il s’agit du même groupe de personnes qui sont marquées comme envoyant des messages dans Microsoft Teams dans l’aperçu principal de la catégorie de communication dans score de productivité.
     - **Création de contenu**: la partie colorée et la fraction représentent le pourcentage de personnes lisant ou créant du contenu sur des sites d’équipe SharePoint Microsoft 365.
@@ -122,7 +122,7 @@ Nous fournissons également des informations supplémentaires sur la façon dont
       - **Taille de l’espace de travail :** Les espaces de travail sont divisés en trois catégories en fonction du nombre de membres : 2 à 10 personnes, 11 à 100 personnes et plus de 100 personnes. La &quot; catégorie &quot; Tout inclut toutes les catégories de taille.
       - **Âge de l’espace de travail :** Les espaces de travail sont classés par nombre de mois depuis la création de l’espace de travail. La &quot; catégorie &quot; Tout inclut toutes les catégories d’âge.
 
-        Chaque cellule du graphique possède un nombre et une couleur basés sur le pourcentage d’espaces de travail impliqués appartenant à cette catégorie. Les catégories d’espace de travail sont basées sur l’âge et la taille affichés dans l’intersection de cette cellule. Par exemple, si la cellule à l’intersection de 11 à 100 personnes et de 4 à 12 mois a une valeur de 52 %, cela signifie que 52 % des espaces de travail de 11 à 100 membres de 4 à 12 mois ont une forme d’engagement. Le pourcentage est calculé comme :
+        Chaque cellule du graphique possède un nombre et une couleur basés sur le pourcentage d’espaces de travail impliqués appartenant à cette catégorie. Les catégories d’espace de travail sont basées sur l’âge et la taille affichés dans l’intersection de cette cellule. Par exemple, si la cellule à l’intersection de 11 à 100 personnes et de 4 à 12 mois a une valeur de 52 %, cela signifie que 52 % des espaces de travail de 11 à 100 membres qui ont entre 4 et 12 mois ont une forme d’engagement. Le pourcentage est calculé comme :
 
         - **Numérateur :** Espaces de travail qui ont un engagement sous forme de communication (messages électroniques et de canal) ou d’interaction de contenu au cours des 28 derniers jours
         - **Dénominateur : tous les** espaces de travail disponibles dans votre organisation au cours des 28 derniers jours
@@ -131,7 +131,7 @@ Nous fournissons également des informations supplémentaires sur la façon dont
 
 ### <a name="breakdown-of-workspaces-by-level-of-engagement"></a>Répartition des espaces de travail par niveau d’engagement
 
-:::image type="content" source="../../media/workspace-by-engagement.png" alt-text="Graphique qui affiche la répartition des espaces de travail par engagement par groupes.":::
+:::image type="content" source="../../media/workspace-by-engagement.png" alt-text="Graphique shows the breakdown of workspaces by engagement by groups.":::
 
 1. **En-tête :** Fournit une répartition des espaces de travail décomposés par niveau d’engagement, à l’aide de la messagerie de groupe, des messages de canal et de l’interaction de contenu.
 2. **Corps :** Fournit des informations sur la valeur d’un engagement cohérent dans les espaces de travail partagés pour les aider à améliorer leur efficacité lors du travail d’équipe.
@@ -146,7 +146,7 @@ Nous fournissons également des informations supplémentaires sur la façon dont
 :::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Graphique qui indique le nombre d’espaces de travail partagés utilisés par Microsoft Teams.":::
 
 1. **En-tête :** Indique le nombre d’espaces de travail partagés associés à une équipe Microsoft Teams.
-2. **Corps :** Fournit des informations sur l’intérêt de l’attachement d’une équipe Microsoft Teams aux espaces de travail partagés, pour aider à améliorer l’efficacité des personnes associées au travail d’équipe.
+2. **Corps :** Fournit des informations sur la valeur de l’attachement d’une équipe Microsoft Teams aux espaces de travail partagés, pour aider à améliorer l’efficacité des personnes associées au travail d’équipe.
 3. **Visualisation :** La partie colorée du graphique de donut reflète le pourcentage d’espaces de travail associés à une équipe Microsoft Teams. Le pourcentage est calculé comme suit :
 
       - Numérateur : nombre d’espaces de travail partagés dans votre organisation qui étaient associés à une équipe Microsoft Teams au cours des 28 derniers jours
@@ -161,5 +161,5 @@ Nous fournissons également des informations supplémentaires sur la façon dont
 [Communication – Expériences des personnes](communication.md) (article)\
 [Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\
 [Réunions : expériences de personnes](meetings.md) (article)\
-[Mobilité : expériences de](mobility.md) personnes (article)\
+[Mobilité : expériences utilisateur](mobility.md) (article)\
 [Contrôles de confidentialité pour le Score de productivité](privacy.md) (article)

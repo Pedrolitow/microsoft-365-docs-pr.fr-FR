@@ -1,7 +1,7 @@
 ---
 title: Utilisateur actif dans les rapports d’utilisation de Microsoft 365
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Découvrez un utilisateur actif de l’analyse de l’utilisation de Microsoft 365, des rapports d’activité et des mesures d’adoption.
-ms.openlocfilehash: 7b8d15a88568c9af8b11a157dad2ec5f76ace6d3
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 21663722d1a3850389db2ad79321daf363d314c6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603971"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579073"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Utilisateur actif dans les rapports d’utilisation de Microsoft 365
 
@@ -40,7 +40,7 @@ Un utilisateur actif des produits Microsoft 365 pour l’analyse de l’utilisat
 |Skype Entreprise  <br/> |Tout utilisateur ayant participé à une session P2P (messages instantanés, appels audio et vidéo, partage d'application, transferts de fichiers, etc.) ou ayant organisé ou participé à une conférence.  <br/> ||
 |Office  <br/> |Tout utilisateur ayant activé son abonnement Microsoft 365 Pro Plus, Visio Pro ou Project Pro sur au moins un appareil.  <br/> ||
 |Groupes Microsoft 365  <br/> |Tout membre d'un groupe présentant une activité de boîte aux lettres (si un message a été envoyé au groupe)  <br/> |Cette définition sera améliorée avec l’activité de fichier de site de groupe et l’activité de groupe Yammer (activité de fichier sur le site de groupe et message publié dans Yammer groupe associé au groupe.) Ces données ne sont actuellement pas disponibles dans l’application modèle Analyse de l’utilisation de Microsoft 365  <br/> |
-|Microsoft Teams  <br/> |Tout utilisateur ayant participé à des messages de conversation, des messages de conversation privée, des appels, des réunions ou toute autre activité. D’autres activités sont définies comme le nombre d’autres activités d’équipe par l’utilisateur, dont certaines incluent, sans s’y limiter, : aimer des messages, des applications, travailler sur des fichiers, rechercher, suivre les équipes et le canal et les favoritiser.  <br/> ||
+|Microsoft Teams  <br/> |Tout utilisateur ayant participé à des messages de conversation, des messages de conversation privée, des appels, des réunions ou toute autre activité. D’autres activités sont définies comme le nombre d’autres activités d’équipe par l’utilisateur, dont certaines incluent, sans s’y limiter, : aimer des messages, des applications, travailler sur des fichiers, rechercher, suivre les équipes et le canal et les favoritiser.  <br/> ||
    
 ## <a name="adoption-metrics"></a>Mesures d’adoption
 

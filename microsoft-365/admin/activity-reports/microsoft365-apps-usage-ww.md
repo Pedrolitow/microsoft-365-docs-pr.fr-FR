@@ -1,7 +1,7 @@
 ---
 title: Rapports Microsoft 365 dans le Centre d’administration - Utilisation des applications Microsoft 365
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport Microsoft 365 Apps for usage à l’aide du tableau de bord Rapports Microsoft 365 dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 0c30cee0c1abd76553d3adfebebb8fe38e92c56a
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 88ef5e1291c35bbac050609e26e2ac5adef9d981
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611886"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579589"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation des applications Microsoft 365
 
@@ -46,7 +46,7 @@ Vous pouvez obtenir une vue de l’activité des applications Microsoft  365 de 
 
 ![Rapport d’utilisation des applications Microsoft 365](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
-|Item|Description|
+|Élément|Description|
  |:-----|:-----|
  |1. <br/> |Le rapport d’utilisation de **Microsoft 365 Apps** permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré). <br/> |
  |2. <br/> |Les données de chaque rapport couvrent généralement jusqu’aux sept derniers jours. <br/> |
@@ -56,4 +56,4 @@ Vous pouvez obtenir une vue de l’activité des applications Microsoft  365 de 
  6.<br/>|Vous pouvez filtrer les séries que vous voyez sur le graphique en sélectionnant un élément dans la légende. Par exemple, dans le graphique **Utilisateurs,** sélectionnez Outlook, Word, Excel, PowerPoint, OneDrive ou Teams pour voir uniquement les informations relatives à chacun d’eux. La modification de cette sélection ne modifie pas les informations du tableau de grille en dessous.|
  |7.<br/>|Le tableau présente une répartition des données au niveau utilisateur. Vous pouvez ajouter ou supprimer des colonnes. <br/><br/>**Le nom** d’utilisateur est l’adresse e-mail de l’utilisateur qui a effectué l’activité sur Microsoft Apps.<br><br/>**La date de dernière activation (UTC)** est la date la plus récente à laquelle l’utilisateur a activé son abonnement Microsoft 365 Apps.<br/><br/>**La date de la dernière activité (UTC)** est la date la plus récente à laquelle une activité intentionnelle a été effectuée par l’utilisateur. Pour voir l'activité qui s'est produite à une date spécifique, sélectionnez celle-ci directement dans le graphique.<br/><br/>Les autres colonnes déterminent si l’utilisateur était actif sur cette plateforme pour cette application (dans Microsoft 365 Apps) pendant la période sélectionnée. |
  |8.<br/>|Sélectionnez **l’icône** Choisir des colonnes pour ajouter ou supprimer des colonnes dans le rapport.|
- |9.<br/>|Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela exporte les données pour tous les utilisateurs et vous permet d’obtenir une agrégation, un tri et un filtrage simples pour une analyse plus approfondie. Si vous avez moins de 100 utilisateurs, vous pouvez trier et filtrer dans le tableau du rapport lui-même. Si vous avez plus de 100 utilisateurs, pour filtrer et trier, vous devez exporter les données.|
+ |9.<br/>|Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela exporte les données pour tous les utilisateurs et vous permet d’obtenir une agrégation, un tri et un filtrage simples pour une analyse plus approfondie. Si vous avez moins de 100 utilisateurs, vous pouvez trier et filtrer dans le tableau dans le rapport lui-même. Si vous avez plus de 100 utilisateurs, pour filtrer et trier, vous devez exporter les données.|

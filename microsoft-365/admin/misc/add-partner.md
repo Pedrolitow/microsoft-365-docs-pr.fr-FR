@@ -2,8 +2,8 @@
 title: Ajouter, modifier ou supprimer un partenaire conseiller en abonnement
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Découvrez comment ajouter un partenaire conseiller en abonnement en tant que partenaire de registre au moment de l’achat de Microsoft 365, modifier le partenaire ou supprimer un partenaire d’un abonnement.
-ms.openlocfilehash: 9734ee5f23af24ec701b8ae1fbd448d6bedb63fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914929"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579229"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Ajouter, modifier ou supprimer un partenaire conseiller en abonnement
 
@@ -39,7 +39,7 @@ ms.locfileid: "50914929"
 
 ::: moniker range="o365-worldwide"
 
-[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que partenaire de registre lorsque vous achetez Microsoft 365 ou à un autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web De Microsoft Pinpoint.](https://pinpoint.microsoft.com)
+[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que partenaire de registre lorsque vous achetez Microsoft 365 ou à un autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web de Microsoft Pinpoint.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
 
@@ -198,7 +198,7 @@ Pour accepter cette offre
 
 Vous ne pouvez pas supprimer une relation de revendeur vous-même.
   
-Si vous supprimez une relation  de revendeur, l’option Supprimer est grisée et vous devez demander à votre partenaire revendeur de suivre les instructions suivantes : Supprimer une relation de revendeur avec le [partenaire.](/partner-center/remove-a-relationship)
+Si vous supprimez une relation  de revendeur, l’option Supprimer est grisée et vous devez demander à votre partenaire revendeur de suivre les instructions suivantes : Supprimez une relation de revendeur avec le [partenaire.](/partner-center/remove-a-relationship)
 
 ::: moniker-end
 
@@ -206,7 +206,7 @@ Si vous supprimez une relation  de revendeur, l’option Supprimer est grisée e
 
 Vous ne pouvez pas supprimer une relation de revendeur vous-même.
   
-Si vous supprimez une relation  de revendeur, l’option Supprimer est grisée et vous devez demander à votre partenaire revendeur de suivre les instructions suivantes : Supprimez une relation de revendeur avec le [partenaire.](/partner-center/remove-a-relationship)
+Si vous supprimez une relation  de revendeur, l’option Supprimer est grisée et vous devez demander à votre partenaire revendeur de suivre les instructions suivantes : Supprimer une relation de revendeur avec le [partenaire.](/partner-center/remove-a-relationship)
   
 ::: moniker-end
 

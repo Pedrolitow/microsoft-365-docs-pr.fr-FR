@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 description: Actions détaillées à prendre pour chaque problème trouvé par l’outil
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 75c2967037ae83abca2aaa3cd02d1f6b2ae14caa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 5a22996ce9e39dc16191ddddc6aa9393de557bbc
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925915"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579409"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 
@@ -35,7 +36,7 @@ Pour chaque vérification, l’outil signalera l’un des quatre résultats poss
 
 Vous pouvez accéder aux paramètres Intune dans le Centre d’administration Microsoft Endpoint [Manager.](https://endpoint.microsoft.com)
 
-### <a name="autopilot-deployment-profile"></a>Profil Autopilot Deployment
+### <a name="autopilot-deployment-profile"></a>Profil autopilot deployment
 
 Vous ne devez pas avoir de profils Autopilot existants qui ciblent des groupes affectés ou dynamiques avec des appareils Bureau géré Microsoft. Bureau géré Microsoft utilise Autopilot pour mettre en service de nouveaux appareils.
 
@@ -78,7 +79,7 @@ Vous avez au moins une stratégie d’accès conditionnel qui cible tous les uti
 
 Vous avez des stratégies d’accès conditionnel qui pourraient empêcher Bureau géré Microsoft de gérer le service Bureau géré Microsoft. Lors de l’inscription, nous allons exclure les comptes du service Bureau géré Microsoft des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
-**Error**
+**Erreur**
 
 Le rôle d’administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
 
@@ -113,7 +114,7 @@ Vous avez au moins un profil de configuration qui cible tous les utilisateurs, t
 
 **Avertissement**
 
-Assurez-vous que les stratégies de configuration dont vous avez besoin n’incluent pas d’appareils ou d’utilisateurs de bureau géré Microsoft. Pour connaître la procédure à [suivre, voir Créer un profil avec des paramètres personnalisés dans Microsoft Intune.](/mem/intune/configuration/custom-settings-configure)
+Assurez-vous que les stratégies de configuration que vous avez n’incluent pas d’appareils ou d’utilisateurs de bureau géré Microsoft. Pour connaître la procédure à [suivre, voir Créer un profil avec des paramètres personnalisés dans Microsoft Intune.](/mem/intune/configuration/custom-settings-configure)
 
 
 
@@ -132,7 +133,7 @@ La page d’état d’inscription (ESP) est actuellement activée. Si vous avez 
 
 **Non prêt**
 
-Vous avez le profil esp par défaut définie sur **Afficher l’avancement de la configuration de l’application et du profil.** Désactivez ce paramètre ou assurez-vous que les affectations à un groupe Azure AD n’incluent pas d’appareils de bureau géré Microsoft en suivant les étapes de la page Configurer l’état [d’inscription.](/mem/intune/enrollment/windows-enrollment-status)
+Vous avez le profil esp par défaut définie sur **Afficher l’avancement de la configuration de l’application et du profil.** Désactivez ce paramètre ou assurez-vous que les affectations à un groupe Azure AD n’incluent pas les appareils de bureau géré Microsoft en suivant les étapes de la page Configurer l’état [d’inscription.](/mem/intune/enrollment/windows-enrollment-status)
 
 **Avertissement**
 
@@ -148,7 +149,7 @@ Microsoft Store pour Entreprises n’est pas activé ou n’est pas synchronisé
 
 ### <a name="multifactor-authentication"></a>Authentification multifacteur
 
-L’authentification multifacteur ne doit pas empêcher Le Bureau géré Microsoft de gérer votre organisation Azure AD (client) dans Intune et Azure AD.
+L’authentification multifacteur ne doit pas empêcher le Bureau géré Microsoft de gérer votre organisation Azure AD (client) dans Intune et Azure AD.
 
 
 **Non prêt**
@@ -159,7 +160,7 @@ Certaines stratégies d’authentification  multifacteur sont définies comme re
 
 Vous avez besoin d’une authentification multifacteur sur les stratégies d’accès conditionnel qui pourraient empêcher Microsoft Managed Desktop de gérer le service Bureau géré Microsoft. Lors de l’inscription, nous allons exclure les comptes du service Bureau géré Microsoft des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
-**Error**
+**Erreur**
 
 Le rôle d’administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
 
@@ -210,7 +211,7 @@ Examinez les applications que vous souhaitez que vos utilisateurs de bureau gér
 
 **Avertissement**
 
-Vous devez préparer un inventaire des applications que vous souhaitez que vos utilisateurs de bureau géré Microsoft utilisent. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’utiliser le portail d’entreprise (voir Installer le portail d’entreprise [Intune](../get-started/company-portal.md) sur les appareils et la page État de l’inscription (ESP) pour distribuer des applications à vos utilisateurs. Pour plus d’informations, voir [Applications dans Bureau](apps.md) géré Microsoft et Expérience de première utilisation avec Autopilot et la page État de [l’inscription.](../get-started/esp-first-run.md)
+Vous devez préparer un inventaire des applications que vous souhaitez que vos utilisateurs de bureau géré Microsoft utilisent. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’utiliser le portail d’entreprise (voir Installer le portail d’entreprise [Intune](../get-started/company-portal.md) sur les appareils et la page État de l’inscription (ESP) pour distribuer des applications à vos utilisateurs. Pour plus d’informations, voir [Applications dans bureau](apps.md) géré Microsoft et expérience de première utilisation avec Autopilot et la page État de [l’inscription.](../get-started/esp-first-run.md)
 
 Vous pouvez demander à votre représentant de compte Microsoft une requête dans Microsoft Endpoint Configuration Manager pour identifier les applications qui sont prêtes à migrer vers Intune ou qui ont besoin d’ajustement.
 
@@ -251,7 +252,7 @@ Les appareils Windows 10 de votre organisation Azure AD doivent pouvoir s’insc
 
 **Avertissement**
 
-Assurez-vous que **l’étendue utilisateur de la** gestion des données est définie sur **Tout** ou **partie,** et non **sur Aucune.** Si vous **en** choisissez un, revenir après l’inscription et  sélectionner le groupe Espace de travail moderne **-Tout** Azure AD pour les groupes ou un groupe équivalent ciblant tous vos utilisateurs de bureau géré Microsoft.  Voir [Configurer l’inscription pour les appareils Windows à l’aide de Microsoft Intune.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+Assurez-vous que **l’étendue utilisateur de la** gestion des données est définie sur **Tout** ou **partie,** et non **sur Aucune.** Si vous choisissez **Certains,** revenir après l’inscription et sélectionner  le groupe Espace de travail moderne **-Tous** les groupes Azure AD pour les groupes ou un groupe équivalent ciblant tous vos utilisateurs de bureau géré Microsoft.  Voir [Configurer l’inscription pour les appareils Windows à l’aide de Microsoft Intune.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 
 ### <a name="ad-hoc-subscriptions"></a>Abonnements ad hoc
@@ -269,7 +270,7 @@ L’itinérance de l’état d’entreprise doit être activée.
 
 **Avertissement**
 
-Assurez-vous que l’itinérance de l’état d’entreprise est activée pour **Tous** ou pour **les groupes sélectionnés.** Pour plus d’informations, voir [Activer l’itinérance de l’état d’entreprise dans Azure Active Directory.](/azure/active-directory/devices/enterprise-state-roaming-enable)
+Assurez-vous que l’itinérance d’état d’entreprise est activée pour **tous** ou pour **les groupes sélectionnés.** Pour plus d’informations, voir [Activer l’itinérance de l’état d’entreprise dans Azure Active Directory.](/azure/active-directory/devices/enterprise-state-roaming-enable)
 
 ### <a name="licenses"></a>Licences
 
@@ -322,13 +323,13 @@ Assurez-vous que le  paramètre SSPR sélectionné inclut les utilisateurs de bu
 
 ### <a name="standard-user-role"></a>Rôle d’utilisateur standard
 
-À part les utilisateurs qui se voit attribuer des rôles Azure AD d’administrateur général et d’administrateur d’appareil, les utilisateurs du Bureau géré Microsoft sont des utilisateurs standard sans privilèges d’administrateur local. Un rôle d’utilisateur standard est attribué à tous les autres utilisateurs lorsqu’ils démarrent leur appareil Bureau géré Microsoft.
+À part les utilisateurs qui se voit attribuer des rôles Azure AD d’administrateur général et d’administrateur d’appareil, les utilisateurs du Bureau géré Microsoft sont des utilisateurs standard sans privilèges d’administrateur local. Tous les autres utilisateurs se voit attribuer un rôle d’utilisateur standard lorsqu’ils démarrent leur appareil Bureau géré Microsoft.
 
 **Avertissement**
 
 Les utilisateurs du Bureau géré Microsoft ne pourront pas avoir de privilèges d’administrateur local sur leurs appareils de bureau géré Microsoft après s’être inscrits.
 
-## <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 pour les grandes entreprises
+## <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
 ### <a name="onedrive"></a>OneDrive
 

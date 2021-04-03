@@ -1,7 +1,7 @@
 ---
 title: Rapports Microsoft 365 dans le Centre d’administration - Activité des formulaires
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide du tableau de bord Rapports Microsoft 365 dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 843548e77067c7598cfa78ba6fac985237f6f62c
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: ce1109c6d6d626079794085b4dc742829841d06e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841112"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579673"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité des formulaires
 
@@ -34,7 +34,7 @@ Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulair
 > [!NOTE]
 > Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, Teams Service, Teams Communications ou Skype Entreprise pour voir les rapports. 
 
-## <a name="how-to-get-to-the-forms-activity-report"></a>Comment obtenir le rapport d’activité Formulaires
+## <a name="how-to-get-to-the-forms-activity-report"></a>Comment obtenir le rapport d’activité Forms
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
@@ -47,13 +47,13 @@ Vous pouvez obtenir une vue de l’activité de formulaires de votre utilisateur
 
 ![Rapport d’activité des formulaires](../../media/adminformsactivity.png)
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |1.  <br/> |Le **rapport d’activité** forms permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement jusqu’aux dernières 24 à 48 heures.  <br/> |
 |3.  <br/> |**L’affichage** Utilisateurs vous permet de comprendre la tendance du nombre d’utilisateurs de formulaires actifs. Un utilisateur est considéré comme actif s’il a exécuté une activité autour d’un formulaire (créer, modifier, afficher, etc.) ou a répondu à un formulaire au cours de la période spécifique.  <br/> |
 |4.  <br/> |**L’affichage** Activité vous permet de comprendre la tendance du nombre d’utilisateurs actifs. Un utilisateur est considéré comme actif s'il a eu une activité de fichier (enregistrer, synchroniser, modifier ou partager) ou consulté une page au cours de la période spécifiée.<br/> REMARQUE : une activité peut se produire plusieurs fois pour un seul formulaire, mais ne compte qu’en tant que formulaire actif. Par exemple, vous pouvez créer un formulaire et continuer à modifier le même formulaire plusieurs fois sur une période spécifiée, mais il ne compte qu’en tant que formulaire unique. Toutefois, si un utilisateur a envoyé plusieurs réponses pour le même formulaire, chaque réponse reste une réponse individuelle et est donc comptabilisée plusieurs fois. <br/> |
-|5.<br/>|Dans le **graphique Utilisateurs,** l’axe Y indique le nombre d’utilisateurs uniques. L’axe X est la date à laquelle les utilisateurs uniques sont actifs. Les légendes sont les suivantes :<br/><br/>**Les concepteurs** signifient que l’utilisateur a créé ou modifié un formulaire.<br/>**Les répondeurs** signifient que l’utilisateur a envoyé des réponses à un formulaire.<br/> **Le nombre total** d’utilisateurs signifie toute personne de l’entreprise qui a été concepteur ou répondeur.<br/><br/> Dans le **graphique d’activité,** l’axe Y est le nombre de formulaires ou de réponses uniques. L’axe X est la date à laquelle l’activité de formulaire ou de réponse s’est produite. Les légendes sont les suivantes :<br/><br/>**Les formulaires** créés sont le nombre de formulaires uniques créés par les utilisateurs.<br/> **Réponses signées le** nombre de réponses signées reçues par les utilisateurs de l’organisation.<br/> **Les réponses anonymes** sont le nombre de réponses anonymes reçues par les utilisateurs de l’organisation.<br/><br/>|
+|5.<br/>|Dans le **graphique Utilisateurs,** l’axe Y indique le nombre d’utilisateurs uniques. L’axe X est la date à laquelle les utilisateurs uniques sont actifs. Les légendes sont les suivantes :<br/><br/>**Les concepteurs** signifient que l’utilisateur a créé ou modifié un formulaire.<br/>**Les répondeurs** signifient que l’utilisateur a envoyé des réponses à un formulaire.<br/> **Le nombre total** d’utilisateurs signifie toute personne de l’entreprise qui a été concepteur ou répondeur.<br/><br/> Sur le **graphique d’activité,** l’axe Y est le nombre de formulaires ou de réponses uniques. L’axe X est la date à laquelle l’activité de formulaire ou de réponse s’est produite. Les légendes sont les suivantes :<br/><br/>**Les formulaires** créés sont le nombre de formulaires uniques créés par les utilisateurs.<br/> **Réponses signées le** nombre de réponses signées reçues par les utilisateurs de l’organisation.<br/> **Les réponses anonymes** sont le nombre de réponses anonymes reçues par les utilisateurs de l’organisation.<br/><br/>|
 |6.<br/>|Vous pouvez filtrer les séries que vous voyez sur le graphique en sélectionnant un élément dans la légende. Par exemple, dans le graphique Utilisateurs, sélectionnez les concepteurs, les répondeurs ou le nombre total d’utilisateurs pour voir uniquement les informations relatives à chacun d’eux. La modification de cette sélection ne modifie pas les informations du tableau de grille en dessous.|
 |7.<br/>|Le tableau présente une répartition des activités au niveau de chaque utilisateur. Les légendes sont les suivantes :<br/><br/>**Le nom** d’utilisateur est l’adresse e-mail de l’utilisateur qui a effectué l’activité sur Microsoft Forms.<br/>**La date de la dernière activité (UTC)** est la date la plus récente à laquelle une activité de formulaire a été effectuée par l’utilisateur pour la plage de dates sélectionnée. Pour voir l'activité qui s'est produite à une date spécifique, sélectionnez celle-ci directement dans le graphique.<br/><br/>Cela permet de filtrer le tableau pour afficher les données d’activité des fichiers uniquement pour les utilisateurs qui ont effectué l’activité ce jour-là.<br/><br/>**Le nombre de formulaires** créés est le nombre de formulaires créés par l’utilisateur.<br/> **Le nombre de formulaires répondus** est le nombre de formulaires à qui l’utilisateur a envoyé des réponses.|
 |8.<br/>|Sélectionnez **l’icône Gérer les** colonnes pour ajouter ou supprimer des colonnes dans le rapport.|
