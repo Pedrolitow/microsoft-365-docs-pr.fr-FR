@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ce8599556b1d0c8efbd020d525b30ed2cedaa9cb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b529b1c7fa5c4f9f81cb6bfbb5f1a6bd7823a9ad
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165464"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587598"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy d’appareil et de connectivité Internet
 
@@ -62,7 +61,7 @@ Configurez un proxy statique basé sur le Registre pour autoriser uniquement le 
 Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
 
 - Modèles d’administration > composants Windows > collecte de données et builds d’aperçu > Configurer l’utilisation du proxy authentifié pour le service Expériences des utilisateurs connectés et télémétrie
-  - Définissez-le **sur Activé et** sélectionnez Désactiver **l’utilisation** du proxy authentifié : Image du paramètre de stratégie ![ de groupe1](images/atp-gpo-proxy1.png)
+  - Définissez-le **sur Activé et** sélectionnez Désactiver **l’utilisation** du proxy authentifié : ![ Image du paramètre de stratégie de groupe1](images/atp-gpo-proxy1.png)
 - **Modèles d’administration > composants Windows >** collecte de données et builds d’aperçu > configurer les expériences utilisateur connectées et la télémétrie :
   - Configurez le proxy :<br>
     ![Image du paramètre de stratégie de groupe2](images/atp-gpo-proxy2.png)
@@ -85,7 +84,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
 > [!NOTE]
 > - Cela affectera toutes les applications, y compris les services Windows qui utilisent WinHTTP avec un proxy par défaut.</br>
-> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionnent pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
+> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionneront pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
 
 1. Ouvrir une ligne de commandes avec élévation de privilèges :
 
@@ -138,7 +137,7 @@ Si un proxy ou un pare-feu bloque le trafic anonyme, comme le capteur Defender f
 
 ### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Agent de surveillance Microsoft (MMA) : exigences relatives au proxy et au pare-feu pour les versions antérieures du client Windows ou de Windows Server
 
-Les informations ci-dessous réentrepent les informations de configuration du proxy et du pare-feu requises pour communiquer avec l’agent d’analyse des journaux (souvent appelé Agent de surveillance Microsoft) pour les versions précédentes de Windows, telles que Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 et Windows Server 2016.
+Les informations ci-dessous répentent les informations de configuration du proxy et du pare-feu requises pour communiquer avec l’agent d’analyse des journaux (souvent appelé Agent de surveillance Microsoft) pour les versions précédentes de Windows, telles que Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 et Windows Server 2016.
 
 |Ressource agent|Ports |Direction |Contourner l’inspection HTTPS|
 |------|---------|--------|--------|   
@@ -161,11 +160,11 @@ Consultez les instructions suivantes pour éliminer les caractères génériques
 
 3.  Exécutez l’outil TestCloudConnection.exe à partir de « C:\Program Files\Microsoft Monitoring Agent\Agent » pour valider la connectivité et voir les URL requises pour votre espace de travail spécifique.
 
-4.  Consultez la liste des URL des points de terminaison De Microsoft Defender pour obtenir la liste complète des conditions requises pour votre région (reportez-vous à la feuille de calcul URL [de](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)service).
+4.  Consultez la liste des URL de point de terminaison Microsoft Defender pour obtenir la liste complète des conditions requises pour votre région (reportez-vous à la feuille de calcul URL [de](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)service).
 
 ![Image de l’administrateur dans Windows PowerShell](images/admin-powershell.png)
 
-Les caractères génériques (*) utilisés dans les points de terminaison d’URL *.ods.opinsights.azure.com, *.oms.opinsights.azure.com et *.agentsvc.azure-automation.net peuvent être remplacés par votre ID d’espace de travail spécifique. L’ID d’espace de travail est spécifique à votre environnement et espace de travail et se trouve dans la section Intégration de votre client dans le portail centre de sécurité Microsoft Defender.
+Les caractères génériques (*) utilisés dans les points de terminaison d’URL *.ods.opinsights.azure.com, *.oms.opinsights.azure.com et *.agentsvc.azure-automation.net peuvent être remplacés par votre ID d’espace de travail spécifique. L’ID d’espace de travail est spécifique à votre environnement et à votre espace de travail et se trouve dans la section Intégration de votre client dans le portail centre de sécurité Microsoft Defender.
 
 Le point de terminaison d’URL *.blob.core.windows.net peut être remplacé par les URL affichées dans la section « Règle de pare-feu : *.blob.core.windows.net » des résultats du test. 
 
@@ -225,5 +224,5 @@ Toutefois, si les résultats du contrôle de la connectivité indiquent un éche
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Intégrer des appareils Windows 10](configure-endpoints.md)
+- [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

@@ -1,5 +1,5 @@
 ---
-title: Déployer Microsoft Defender ATP pour Linux manuellement
+title: Déployer Microsoft Defender pour le point de terminaison pour Linux manuellement
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender ATP pour Linux manuellement à partir de la ligne de commande.
 keywords: microsoft, defender, atp, linux, installation, déployer, désinstallation, casque, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 98b568206d4263a574c8de653fe5345dd344ba43
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 91dda662b12893fb010e8bb46541a87ea4a8cd27
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408546"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587670"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison pour Linux manuellement
 
@@ -35,7 +34,7 @@ ms.locfileid: "51408546"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article explique comment déployer Microsoft Defender pour Endpoint pour Linux manuellement. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
@@ -49,7 +48,7 @@ Cet article explique comment déployer Microsoft Defender pour Endpoint pour Lin
   - [Télécharger le package d’intégration](#download-the-onboarding-package)
   - [Configuration du client](#client-configuration)
   - [Script du programme d’installation](#installer-script)
-  - [Journal des problèmes d’installation](#log-installation-issues)
+  - [Journaux des problèmes d’installation](#log-installation-issues)
   - [Mises à niveau du système d’exploitation](#operating-system-upgrades)
   - [Désinstallation](#uninstallation)
 
@@ -345,7 +344,7 @@ Téléchargez le package d’intégration à partir du Centre de sécurité Micr
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - Le fichier doit avoir été mis en quarantaine par Defender for Endpoint pour Linux. Utilisez la commande suivante pour lister toutes les menaces détectées :
+    - Le fichier doit avoir été mis en quarantaine par Defender pour Endpoint pour Linux. Utilisez la commande suivante pour lister toutes les menaces détectées :
 
         ```bash
         mdatp threat list
@@ -376,7 +375,7 @@ Options:
 
 En savoir plus [ici.](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)
 
-## <a name="log-installation-issues"></a>Journal des problèmes d’installation
+## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
 
 Pour [plus d’informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir problèmes d’installation des journaux.
 

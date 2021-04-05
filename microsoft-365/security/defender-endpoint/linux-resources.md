@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ab5400a197a1f0ac61c8b298a06165d217f44fd1
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: a4f2324bc47bdee38e1cdeed1e21b5f9063e9a5c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394733"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587063"
 ---
 # <a name="resources"></a>Ressources
 
@@ -53,7 +52,7 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
 
 2. Reproduisez le problème.
 
-3. Exécutez la commande suivante pour enregistrer Defender pour les journaux du point de terminaison. Les fichiers sont stockés dans une archive .zip.
+3. Exécutez la commande suivante pour back up Defender for Endpoint’s logs. Les fichiers sont stockés dans une archive .zip.
 
    ```bash
    sudo mdatp diagnostic create
@@ -74,9 +73,9 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
    Log level configured successfully
    ```
 
-## <a name="log-installation-issues"></a>Journal des problèmes d’installation
+## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
 
-Si une erreur se produit pendant l’installation, le programme d’installation signale uniquement un échec général.
+Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
 
 Le journal détaillé sera enregistré dans `/var/log/microsoft/mdatp_install.log` . Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
 
@@ -87,7 +86,7 @@ Il existe plusieurs façons de désinstaller Defender pour Endpoint pour Linux. 
 ### <a name="manual-uninstallation"></a>Désinstallation manuelle
 
 - `sudo yum remove mdatp` pour RHEL et ses variantes (CentOS et Oracle Linux).
-- `sudo zypper remove mdatp` pour SLES et variantes.
+- `sudo zypper remove mdatp` pour SLES et les variantes.
 - `sudo apt-get purge mdatp` pour les systèmes Ubuntu et Debian.
 
 ## <a name="configure-from-the-command-line"></a>Configurer à partir de la ligne de commande
@@ -164,7 +163,7 @@ Dans le portail Defender pour points de terminaison, deux catégories d’inform
 
 ### <a name="known-issues"></a>Problèmes connus
 
-- Vous pouvez voir « Aucune donnée de capteur, communications altérées » dans la page d’informations de l’ordinateur du portail centre de sécurité Microsoft Defender, même si le produit fonctionne comme prévu. Nous travaillons à résoudre ce problème.
+- Vous pouvez voir « Aucune donnée de capteur, communications altérées » dans la page d’informations de l’ordinateur du portail centre de sécurité Microsoft Defender, même si le produit fonctionne comme prévu. Nous travaillons à la résoudre.
 - Les utilisateurs connectés n’apparaissent pas dans le portail centre de sécurité Microsoft Defender.
 - Dans les distributions SUSE, si l’installation de *libatomic1* échoue, vous devez vérifier que votre système d’exploitation est enregistré :
 

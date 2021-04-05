@@ -1,6 +1,6 @@
 ---
-title: Blocage du comportement client
-description: Le blocage du comportement client fait partie des fonctionnalités de blocage et de blocage du comportement dans Microsoft Defender ATP
+title: Blocage comportemental du client
+description: Le blocage du comportement client fait partie des fonctionnalités de blocage et de blocage du comportement dans Microsoft Defender pour point de terminaison
 keywords: blocage comportemental, protection rapide, comportement du client, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c37a1180f9def51daa4229418b05abe7cf787aa3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 9fcff96b2583c6ef6bec05429ec50a71f3872e43
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165260"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587106"
 ---
-# <a name="client-behavioral-blocking"></a>Blocage du comportement client
+# <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51165260"
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Le blocage du comportement client est un composant des fonctionnalités de blocage du comportement et de blocage [de](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) contenu dans Defender for Endpoint. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement. 
+Le blocage du comportement client est un composant [des](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) fonctionnalités de blocage et de blocage du comportement dans Defender pour point de terminaison. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement. 
 
 :::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Protection du cloud et du client":::
 
@@ -54,7 +54,7 @@ Le blocage du comportement client est efficace, car il permet non seulement d’
 
 ## <a name="behavior-based-detections"></a>Détections basées sur le comportement
 
-Les détections basées sur le comportement sont nommées en fonction de la matrice [CK&MITRE ATT pour Entreprise.](https://attack.mitre.org/matrices/enterprise) La convention d’attribution de noms permet d’identifier la phase d’attaque où le comportement malveillant a été observé :
+Les détections basées sur le comportement sont nommées en fonction de la matrice CK&[MITRE ATT pour Entreprise.](https://attack.mitre.org/matrices/enterprise) La convention d’attribution de noms permet d’identifier la phase d’attaque où le comportement malveillant a été observé :
 
 
 |Tactique |   Nom de la menace de détection |
@@ -85,7 +85,7 @@ Si votre organisation utilise Defender pour endpoint, le blocage du comportement
 
 - [Appareils intégrés à Defender pour le point de terminaison](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure)
 
-- [EDR en mode bloc](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
+- [PEPT en mode blocage](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 
 - [Réduction de la surface d’attaque](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
@@ -93,7 +93,7 @@ Si votre organisation utilise Defender pour endpoint, le blocage du comportement
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Blocage et contenu comportementaux](behavioral-blocking-containment.md)
+- [Blocage et confinement comportementaux](behavioral-blocking-containment.md)
 
 - [Blocage de la boucle de commentaires](feedback-loop-blocking.md)
 

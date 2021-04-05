@@ -1,7 +1,7 @@
 ---
 title: Informations de confidentialité - Microsoft Defender pour point de terminaison pour iOS
 ms.reviewer: ''
-description: Décrit les informations de confidentialité de Microsoft Defender pour endpoint pour iOS
+description: Décrit les informations de confidentialité de Microsoft Defender pour Endpoint pour iOS
 keywords: microsoft, defender, atp, ios, stratégie, vue d’ensemble
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f3851d9ecc0a40a9fa52702ee187fb8a94a740c3
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 97d22cd8ff1c651bdab5c3613567b2a4778ec9d6
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186676"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587574"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-for-ios"></a>Informations de confidentialité - Microsoft Defender pour point de terminaison pour iOS
 
@@ -87,7 +86,7 @@ Les données facultatives incluent les données de diagnostic et les données de
 
 Les données de diagnostic facultatives incluent : 
 
-- Utilisation de l’application, du processeur et du réseau pour Defender pour endpoint. 
+- Utilisation de l’application, de l’UC et du réseau pour Defender pour endpoint. 
 
 - Fonctionnalités configurées par l’administrateur de Defender pour le point de terminaison. 
 

@@ -1,7 +1,7 @@
 ---
-title: Résoudre les problèmes sur Microsoft Defender ATP pour Android
-description: Résoudre les problèmes de Microsoft Defender ATP pour Android
-keywords: microsoft, defender, atp, android, cloud, connectivité, communication
+title: Résoudre les problèmes sur Microsoft Defender pour le point de terminaison pour Android
+description: Résoudre les problèmes de Microsoft Defender pour le point de terminaison pour Android
+keywords: microsoft, defender, atp, mde, android, cloud, connectivité, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 444541c85f8f4416288dcebf4bbee2c65a33d3d2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5fabcb3156a54d4aa8a4671d7561a8deca16fe1f
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164868"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587646"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-for-android"></a>Résolution des problèmes sur Microsoft Defender pour le point de terminaison pour Android
 
@@ -35,14 +34,14 @@ ms.locfileid: "51164868"
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Lors de l’intégration d’un appareil, vous pouvez voir des problèmes de sign in après l’installation de l’application.
+Lors de l’intégration d’un appareil, vous pouvez voir des problèmes de connectez-vous après l’installation de l’application.
 
 Lors de l’intégration, vous pouvez rencontrer des problèmes de connectez-vous après l’installation de l’application sur votre appareil.
 
 Cet article fournit des solutions pour vous aider à résoudre les problèmes d' sign-on.  
 
 ## <a name="sign-in-failed---unexpected-error"></a>Échec de la signature : erreur inattendue
-**Échec de la signature : erreur** *inattendue, essayez plus tard*
+**Échec de la signature : erreur** *inattendue, essayez ultérieurement*
 
 ![Image de l’erreur d’échec de la signature - Erreur inattendue](images/f9c3bad127d636c1f150d79814f35d4c.png)
 
@@ -62,7 +61,7 @@ Installer la dernière version et [Microsoft Authenticator](https://play.google.
 
 **Échec de la signature : licence** non *valide, contactez l’administrateur*
 
-![Image de l’échec de la connectez-vous. Contactez l’administrateur](images/920e433f440fa1d3d298e6a2a43d4811.png)
+![Image de l’échec de la signature: contactez l’administrateur](images/920e433f440fa1d3d298e6a2a43d4811.png)
 
 **Message : licence** *non valide, contactez l’administrateur*
 
@@ -89,12 +88,12 @@ L’hameçonnage et les menaces web dangereuses détectées par Defender pour En
 
 Les appareils Demi incluent un nouveau modèle d’autorisation. Cela empêche Defender pour point de terminaison pour Android d’afficher des fenêtres pop-up alors qu’elle s’exécute en arrière-plan.
 
-Autorisation des appareils Demi : « Afficher les fenêtres pop-up en cours d’exécution en arrière-plan ».
+Autorisation d’appareils : « Afficher les fenêtres pop-up en cours d’exécution en arrière-plan ».
 
 ![Image du paramètre de fenêtre pop-up](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
 
 **Solution :**
 
-Activez l’autorisation requise sur les appareils Androidmi.
+Activez l’autorisation requise sur les appareils DeMi.
 
 - Afficher les fenêtres pop-up en cours d’exécution en arrière-plan.

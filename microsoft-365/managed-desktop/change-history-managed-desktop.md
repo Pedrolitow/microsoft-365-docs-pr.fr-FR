@@ -13,16 +13,38 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9176bfbbd015243266ba1c8cbad9d04787f6a6cc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5e57f21690372b16c86a65fcfe4d00cb5c907391
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909249"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587526"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cet article répertorie les articles nouveaux et mis à jour de la documentation du Bureau géré [Microsoft.](index.yml) Les articles « mis à jour » ont subi des ajouts matériels ou des corrections . Des correctifs mineurs tels que la correction de fautes de frappe, de style ou de mise en forme ne sont pas répertoriés. Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails des modifications) en visitant le [référentiel sur GitHub.](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+
+## <a name="march-2021"></a>9 mars 2021
+Article nouveau ou modifié | Description
+--- | ---
+[Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
+[Expérience de première exécution avec le pilote automatique et la page état d’inscription](get-started/esp-first-run.md) | Article mis à jour
+[Service d’emplacement Windows 10](get-started/device-location.md) | Nouvel article
+[Images d’un appareil](service-description/device-images.md) | Nouvel article
+[Régions de bureau géré Microsoft pris en charge](service-description/regions-languages.md) | Article mis à jour
+[Localiser l’expérience utilisateur](get-started/localization.md) | Nouvel article
+
+## <a name="february-2021"></a>Février 2021
+Article nouveau ou modifié | Description
+--- | ---
+[Accéder au portail d’administration](get-started/access-admin-portal.md) | Article mis à jour
+[Technologies associées de Bureau géré Microsoft](intro/technologies.md) | Article mis à jour
+[Configuration requise de l’appareil](service-description/device-requirements.md) | Article mis à jour
+[Résoudre les problèmes détectés par l’outil de préparation et d’évaluation](get-ready/readiness-assessment-fix.md) | Article mis à jour
+[Microsoft OneDrive](get-started/onedrive.md) | Nouvel article
+[Conformité](intro/compliance.md) | Mis à jour
+[Applications Microsoft 365 pour les entreprises](get-started/m365-apps.md) | Article mis à jour
+[Outils d’évaluation de la préparation](get-ready/readiness-assessment-tool.md) | Article mis à jour
 
 ## <a name="january-2021"></a>Janvier 2021
 Article nouveau ou modifié | Description
@@ -259,7 +281,7 @@ Article nouveau ou modifié | Description
 [Appareils archivés bureau géré Microsoft](service-description/archived-device-list.md) | Nouvel article
 [Préparer les lecteurs mappés pour le Bureau géré Microsoft](get-ready/mapped-drives.md) | Nouvel article
 [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Nouvel article
-[Commander des appareils Bureau géré Microsoft](get-started/devices.md) | Article mis à jour
+[Commander des appareils bureau géré Microsoft](get-started/devices.md) | Article mis à jour
 [Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md) | Nouvel article
 
 ## <a name="april-2019"></a>Avril 2019
@@ -270,7 +292,7 @@ Article nouveau ou modifié | Description
 [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](get-ready/authentication.md) | Nouvel article
 [Inscrire des appareils dans Le Bureau géré Microsoft](get-started/register-devices-self.md) | Nouvel article
 [Inscrire des appareils dans Bureau géré Microsoft pour les partenaires](get-started/register-devices-partner.md) | Nouvel article
-[Déployer des applications sur des appareils bureau géré Microsoft](get-started/deploy-apps.md) | Article mis à jour
+[Déployer des applications sur des appareils de bureau géré Microsoft](get-started/deploy-apps.md) | Article mis à jour
 
 ## <a name="march-2019"></a>Mars 2019
 Article nouveau ou modifié | Description

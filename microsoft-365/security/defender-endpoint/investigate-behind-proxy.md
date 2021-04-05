@@ -1,6 +1,6 @@
 ---
-title: Examiner les événements de connexion qui se produisent derrière des proxies avant
-description: Découvrez comment utiliser la surveillance avancée au niveau HTTP via la protection réseau dans Microsoft Defender ATP, qui fait face à une cible réelle, au lieu d’un proxy.
+title: Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys
+description: Découvrez comment utiliser la surveillance avancée au niveau HTTP par le biais de la protection réseau dans Microsoft Defender ATP, qui utilise une cible réelle, au lieu d’un proxy.
 keywords: proxy, protection réseau, proxy avant, événements réseau, audit, bloc, noms de domaine, domaine
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7eaa4bb76d7607f0b55c87482d1104a0897c9d36
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 28d8a113ed77e9624bd914571b1af4a7ece2aa5c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186088"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587562"
 ---
-# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Examiner les événements de connexion qui se produisent derrière des proxies avant
+# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +34,7 @@ ms.locfileid: "51186088"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
-Defender pour le point de terminaison prend en charge la surveillance des connexions réseau à partir de différents niveaux de la pile réseau. Un cas difficile est que le réseau utilise un proxy avant comme passerelle vers Internet.
+Defender pour le point de terminaison prend en charge la surveillance des connexions réseau à partir de différents niveaux de la pile réseau. Un cas difficile est celui où le réseau utilise un proxy avant comme passerelle vers Internet.
 
 Le proxy agit comme s’il s’agissait du point de terminaison cible.  Dans ce cas, les moniteurs de connexion réseau simples auditent les connexions avec le proxy, ce qui est correct mais qui a une valeur d’investigation inférieure. 
 

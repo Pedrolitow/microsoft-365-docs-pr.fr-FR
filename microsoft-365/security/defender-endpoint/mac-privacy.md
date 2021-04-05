@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1386809778edeb92521a8656e9ece78591a682a4
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: d1d4aa871438e10aed86ddd436757072fb6b5cc4
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382900"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587502"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>Confidentialité pour Microsoft Defender pour point de terminaison pour Mac
 
@@ -96,9 +95,9 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 | hostname                | Nom de l’appareil local (sans suffixe DNS). Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés. |
 | product_guid            | Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes gammes du produit. |
 | app_version             | Version de l’application Microsoft Defender pour Point de terminaison pour Mac. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
-| sig_version             | Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’elle puisse être correctement hiérarchisées. |
+| sig_version             | Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’il puisse être correctement hiérarchisé. |
 | supported_compressions  | Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application. |
-| release_ring            | Sonner à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé. |
+| release_ring            | Sonnerie à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé. |
 
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
@@ -130,7 +129,7 @@ Les champs suivants sont collectés :
 | antivirus_engine.enable_real_time_protection        | Si la protection en temps réel est activée sur l’appareil ou non. |
 | antivirus_engine.passive_mode                       | Si le mode passif est activé sur l’appareil ou non. |
 | cloud_service.enabled                               | Si la protection cloud est activée sur l’appareil ou non. |
-| cloud_service.timeout                               | Délai d’arrêt lorsque l’application communique avec Microsoft Defender pour le cloud de point de terminaison. |
+| cloud_service.timeout                               | Délai d’arrêt lorsque l’application communique avec microsoft Defender pour le cloud de point de terminaison. |
 | cloud_service.heartbeat_interval                    | Intervalle entre les pulsations consécutives envoyées par le produit au cloud. |
 | cloud_service.service_uri                           | URI utilisé pour communiquer avec le cloud. |
 | cloud_service.diagnostic_level                      | Niveau de diagnostic de l’appareil (obligatoire, facultatif). |
@@ -142,7 +141,7 @@ Les champs suivants sont collectés :
 
 #### <a name="product-and-service-usage-data-events"></a>Événements de données liés à l'utilisation des produits et services
 
-**Rapport de mise à jour des informations de sécurité**
+**Rapport de mise à jour de l’intelligence de la sécurité**
 
 Les champs suivants sont collectés :
 
@@ -211,7 +210,7 @@ Les champs suivants sont collectés :
 
 | Champ                                              | Description |
 | -------------------------------------------------- | ----------- |
-| connection_retry_timeout                           | Délai de nouvelle tentative de connexion lors de la communication avec le cloud. |
+| connection_retry_timeout                           | Délai d’délai de nouvelle tentative de connexion lors de la communication avec le cloud. |
 | file_hash_cache_maximum                            | Taille du cache du produit. |
 | crash_upload_daily_limit                           | Limite des journaux d’incident téléchargés quotidiennement. |
 | antivirus_engine.exclusions[].is_directory         | Si l’exclusion de l’analyse est un répertoire ou non. |
@@ -232,7 +231,7 @@ Les champs suivants sont collectés :
 
 | Champ                       | Description |
 | --------------------------- | ----------- |
-| how_to_check                | Détermine la façon dont les mises à jour des produits sont vérifiées (par exemple, automatiques ou manuelles). |
+| how_to_check                | Détermine la façon dont les mises à jour du produit sont vérifiées (par exemple, automatiques ou manuelles). |
 | channel_name                | Canal de mise à jour associé à l’appareil. |
 | manifest_server             | Serveur utilisé pour télécharger les mises à jour. |
 | update_cache                | Emplacement du cache utilisé pour stocker les mises à jour. |

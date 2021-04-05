@@ -1,6 +1,6 @@
 ---
 title: Type de ressource Investigation
-description: Entité Microsoft Defender ATP Investigation.
+description: Entité Microsoft Defender for Endpoint Investigation.
 keywords: api, api de graphique, api pris en charge, obtenir, alertes, enquêtes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 36adf0fa5c0de79fe0616f1216118a98ba2005a4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 3872976717a5b472ab8d471db7eff9975dbc2258
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187247"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587682"
 ---
 # <a name="investigation-resource-type"></a>Type de ressource Investigation
 
@@ -56,7 +56,7 @@ id | Chaîne | Identité de l’entité d’investigation.
 startTime | DateTime Nullable | Date et heure de création de l’enquête. 
 endTime | DateTime Nullable | Date et heure de fin de l’enquête. 
 cancelledBy | Chaîne | ID de l’utilisateur/de l’application qui a annulé cet examen. 
-investigationState | Énum | État actuel de l’enquête. Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyExploigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
+investigationState | Énum | État actuel de l’enquête. Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallySystemigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 statusDetails | Chaîne | Informations supplémentaires sur l’état de l’enquête.
 machineId | Chaîne | ID de l’appareil sur lequel l’enquête est exécutée.
 computerDnsName | Chaîne | Nom de l’appareil sur lequel l’enquête est exécutée.

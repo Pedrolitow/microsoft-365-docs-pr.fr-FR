@@ -1,7 +1,7 @@
 ---
-title: Configurer les fonctionnalités de Microsoft Defender ATP pour Android
-description: Décrit comment configurer Microsoft Defender ATP pour Android
-keywords: microsoft, defender, atp, android, configuration
+title: Configurer Microsoft Defender pour point de terminaison pour des fonctionnalités Android
+description: Décrit comment configurer Microsoft Defender pour endpoint pour Android
+keywords: microsoft, defender, atp, mde, android, configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4325020e653f14898ece4192e03cbf8b90131136
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c395aafc8a468cfdeaea973ab02421212870192a
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163446"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587214"
 ---
 # <a name="configure-defender-for-endpoint-for-android-features"></a>Configurer Defender pour les fonctionnalités Endpoint pour Android
 
@@ -52,5 +51,5 @@ Defender pour le point de terminaison pour Android permet aux administrateurs in
 > Defender pour le point de terminaison pour Android utiliserait un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil. Pour plus d’informations, voir [Configurer la protection web sur les appareils qui exécutent Android.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android)
 
 ## <a name="related-topics"></a>Voir aussi
-- [Vue d’ensemble de Microsoft Defender pour point de terminaison pour Android](microsoft-defender-endpoint-android.md)
-- [Déployer Microsoft Defender pour endpoint pour Android avec Microsoft Intune](android-intune.md)
+- [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
+- [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)

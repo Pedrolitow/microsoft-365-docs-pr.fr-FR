@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c076a64b1e35978f09999b288b6849580df24972
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c94c6839c17b3bbb432cef12fe58723d0cc2ecff
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579697"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587238"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>Déployer Microsoft Defender pour le point de terminaison pour iOS
 
@@ -42,7 +41,7 @@ Cette rubrique décrit le déploiement de Defender pour endpoint pour iOS sur le
 
 - Assurez-vous que vous avez accès au [Centre d’administration Microsoft Endpoint Manager.](https://go.microsoft.com/fwlink/?linkid=2109431)
 
-- Assurez-vous que l’inscription iOS est effectuée pour vos utilisateurs. Une licence Defender pour point de terminaison doit être attribuée aux utilisateurs pour pouvoir utiliser Defender pour Endpoint pour iOS. Reportez-vous [à Attribuer des licences aux](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) utilisateurs pour obtenir des instructions sur la façon d’attribuer des licences.
+- Assurez-vous que l’inscription iOS est effectuée pour vos utilisateurs. Une licence Defender pour point de terminaison doit être attribuée aux utilisateurs pour pouvoir utiliser Defender pour endpoint pour iOS. Reportez-vous [à Attribuer des licences aux](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) utilisateurs pour obtenir des instructions sur la façon d’attribuer des licences.
 
 > [!NOTE]
 > Microsoft Defender ATP (Microsoft Defender for Endpoint) pour iOS est désormais disponible dans [l’App Store d’Apple.](https://aka.ms/mdatpiosappstore)
@@ -53,10 +52,10 @@ Déployez Defender pour le point de terminaison pour iOS via le portail d’entr
 
 ### <a name="add-ios-store-app"></a>Ajouter une application du Store iOS
 
-1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez sur **Applications**  ->  **iOS/iPadOS** Ajouter une application de la Boutique  ->    ->  **d’applications iOS,** puis cliquez sur **Sélectionner.**
+1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à **Apps**  ->  **iOS/iPadOS** Ajouter une application de magasin  ->    ->  **iOS,** puis cliquez sur **Sélectionner.**
 
     > [!div class="mx-imgBorder"]
-    > ![Image du Centre d’administration Microsoft Endpoint Manager1](images/ios-deploy-1.png)
+    > ![Image de Microsoft Endpoint Manager Admin Center1](images/ios-deploy-1.png)
 
 1. Dans la page Ajouter une application, cliquez sur Rechercher dans **l’App Store** et tapez **Microsoft Defender Endpoint** dans la barre de recherche. Dans la section des résultats de la recherche, cliquez sur Le point de terminaison *Microsoft Defender* et cliquez sur **Sélectionner.**
 
@@ -83,7 +82,7 @@ Déployez Defender pour le point de terminaison pour iOS via le portail d’entr
 
     ![Capture d’écran d’une description de smartphone générée automatiquement](images/41627a709700c324849bf7e13510c516.png)
 
-2. Appuyez sur l’icône de l’application Defender for Endpoint et suivez les instructions à l’écran pour effectuer les étapes d’intégration. Les détails incluent l’acceptation par l’utilisateur final des autorisations iOS requises par Defender pour Endpoint pour iOS.
+2. Appuyez sur l’icône de l’application Defender for Endpoint et suivez les instructions à l’écran pour effectuer les étapes d’intégration. Les détails incluent l’acceptation par l’utilisateur final des autorisations iOS requises par Defender pour endpoint pour iOS.
 
 3. Une fois l’intégration réussie, l’appareil commence à s’afficher dans la liste Appareils dans le Centre de sécurité Microsoft Defender.
 
@@ -139,7 +138,7 @@ Intune vous permet de configurer l’application Defender pour iOS via une strat
     > [!div class="mx-imgBorder"]
     > ![Image du Centre d’administration Microsoft Endpoint Manager7](images/ios-deploy-7.png)
 
-    - Fournissez le nom du profil. Lorsque vous y invitez l’importation d’un fichier de profil de configuration, sélectionnez celui téléchargé ci-dessus.
+    - Fournissez le nom du profil. Lorsque vous avez été invité à importer un fichier de profil de configuration, sélectionnez celui téléchargé ci-dessus.
     - Dans la section **Affectation,** sélectionnez le groupe d’appareils auquel vous souhaitez appliquer ce profil. Il est préférable de l’appliquer à tous les appareils iOS gérés. Cliquez sur **Suivant**.
     - On the **Review + create** page, when you’re done, choose **Create**. Le nouveau profil s’affiche dans la liste des profils de configuration.
 

@@ -1,7 +1,7 @@
 ---
 title: Détection et réponse des points de terminaison en mode blocage
 description: En savoir plus sur la détection et la réponse des points de terminaison en mode blocage
-keywords: Microsoft Defender ATP, EDR en mode blocage, blocage du mode passif
+keywords: Microsoft Defender ATP, mde, EDR en mode blocage, blocage du mode passif
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 7bee6c99d2c1c5ad3cec8f2e317b729a0a4e1f8b
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379477"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587202"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse des points de terminaison (EDR) en mode blocage
 
@@ -39,7 +39,7 @@ ms.locfileid: "51379477"
 
 ## <a name="what-is-edr-in-block-mode"></a>Qu’est-ce que l’EDR en mode bloc ?
 
-[La détection et la réponse](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) des points de terminaison (EDR) en mode bloc offrent une protection contre les artefacts malveillants, même lorsque l’Antivirus Microsoft Defender s’exécute en mode passif. Lorsqu’elle est désactivée, l’EDR en mode blocage bloque les artefacts ou comportements malveillants détectés sur un appareil. L’EDR en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après une violation. 
+[La détection et la réponse](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) des points de terminaison (EDR) en mode blocage offrent une protection contre les artefacts malveillants, même lorsque l’Antivirus Microsoft Defender s’exécute en mode passif. Lorsqu’elle est désactivée, l’EDR en mode blocage bloque les artefacts ou comportements malveillants détectés sur un appareil. L’EDR en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après une violation. 
 
 L’EDR en mode blocage est également intégrée à la gestion des [menaces & vulnérabilité.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) L’équipe de sécurité de [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) votre organisation reçoit une recommandation de sécurité pour activer EDR en mode blocage s’il n’est pas déjà activé. 
 
@@ -50,7 +50,7 @@ L’EDR en mode blocage est également intégrée à la gestion des [menaces & v
 
 ## <a name="what-happens-when-something-is-detected"></a>Que se passe-t-il lorsqu’un quelque chose est détecté ?
 
-Lorsque l’EDR en mode bloc est allumé et qu’un artefact malveillant est détecté, Microsoft Defender pour le point de terminaison bloque et remédie à cet artefact. Vous verrez l’état de détection **bloqué** ou interdit **en tant** qu’actions terminées dans le centre [de l’action.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#check-activity-details-in-action-center)
+Lorsque l’EDR en mode bloc est allumé et qu’un artefact malveillant est détecté, Microsoft Defender pour le point de terminaison bloque et remédie cet artefact. Vous verrez l’état de détection **bloqué** ou interdit **en** tant qu’actions terminées dans le centre [de actions.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#check-activity-details-in-action-center)
 
 L’image suivante montre une instance de logiciel indésirable détectée et bloquée via EDR en mode blocage :
 
@@ -102,7 +102,7 @@ L’EDR en mode blocage n’affecte pas la protection antivirus tierce en cours 
 
 ### <a name="why-do-we-need-cloud-protection-on"></a>Pourquoi avons-nous besoin de la protection cloud ? 
 
-La protection cloud est nécessaire pour activer la fonctionnalité sur l’appareil. La protection cloud permet à [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) de fournir la dernière et la plus grande protection en fonction de notre étendue et de notre profondeur d’intelligence de la sécurité, ainsi que des modèles d’apprentissage du comportement et des appareils.
+La protection cloud est nécessaire pour activer la fonctionnalité sur l’appareil. La protection cloud permet à [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) de fournir la dernière et la plus grande protection en fonction de notre étendue et de notre profondeur d’intelligence de la sécurité, ainsi que des modèles d’apprentissage comportementaux et des appareils.
 
 ### <a name="how-do-i-set-microsoft-defender-antivirus-to-passive-mode"></a>Comment définir l’Antivirus Microsoft Defender en mode passif ?
 
@@ -133,12 +133,12 @@ Pour plus d’informations, [voir Get-MpComputerStatus](https://docs.microsoft.c
 
 3. Dans la liste des résultats, dans la **ligne STATE,** confirmez que le service est en cours d’exécution.
 
-### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Combien de temps faut-il pour désactiver l’EDR en mode bloc ?
+### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Combien de temps faut-il pour que l’EDR en mode bloc soit désactivé ?
 Si vous avez choisi de désactiver l’EDR en mode blocage, cela peut prendre jusqu’à 30 minutes pour que le système désactive cette fonctionnalité.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Blog de la communauté technique : Présentation d’EDR en mode blocage : arrêt des attaques dans leurs pistes](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
-- [Blocage et contenu comportementaux](behavioral-blocking-containment.md)
+- [Blocage et confinement comportementaux](behavioral-blocking-containment.md)
 - [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

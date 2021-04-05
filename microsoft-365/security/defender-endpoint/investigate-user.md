@@ -1,6 +1,6 @@
 ---
-title: Examiner un compte d’utilisateur dans Microsoft Defender ATP
-description: Examiner un compte d’utilisateur à la recherche d’informations d’identification potentiellement compromises ou pivoter sur le compte d’utilisateur associé au cours d’une enquête.
+title: Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
+description: Examiner un compte d’utilisateur à la recherche d’informations d’identification compromises ou pivoter sur le compte d’utilisateur associé au cours d’une enquête.
 keywords: examiner, compte, utilisateur, entité utilisateur, alerte, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e79e558a7d256c46178e91b89bff27bfa6893ce9
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 672867d107d005004201caab7d6497ceb048ac97
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186712"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587706"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
 
@@ -39,7 +39,7 @@ ms.locfileid: "51186712"
 
 ## <a name="investigate-user-account-entities"></a>Examiner les entités de compte d’utilisateur
 
-Identifiez les comptes d’utilisateurs avec les alertes les plus actives (affichées dans le tableau de bord sous la forme « Utilisateurs à risque ») et examinez les cas d’informations d’identification potentiellement compromises, ou pivotez sur le compte d’utilisateur associé lors de l’examen d’une alerte ou d’un appareil afin d’identifier les éventuels mouvements latérals entre les appareils avec ce compte d’utilisateur.
+Identifiez les comptes d’utilisateurs avec les alertes les plus actives (affichées sur le tableau de bord sous la forme « Utilisateurs à risque ») et examinez les cas d’informations d’identification potentiellement compromises, ou faites pivoter le compte d’utilisateur associé lors de l’examen d’une alerte ou d’un appareil afin d’identifier les éventuels mouvements latérals entre les appareils avec ce compte d’utilisateur.
 
 Les informations de compte d’utilisateur sont disponibles dans les affichages suivants :
 
@@ -79,7 +79,7 @@ La vue d’ensemble, les alertes et les observations dans l’organisation sont 
 
 L’onglet Observé dans l’organisation vous permet de spécifier une plage de dates pour voir la liste des appareils sur lequel cet utilisateur a été connecté, le compte d’utilisateur connecté le plus fréquent et le moins fréquent pour chacun de ces appareils et le nombre total d’utilisateurs observés sur chaque appareil. 
 
-La sélection d’un élément dans le tableau Observé dans l’organisation développera l’élément, révélant plus de détails sur l’appareil. La sélection directe d’un lien au sein d’un élément vous enverra à la page correspondante.
+La sélection d’un élément dans le tableau Observé dans l’organisation développera l’élément, révélant plus de détails sur l’appareil. La sélection directe d’un lien dans un élément vous enverra à la page correspondante.
 
 ## <a name="search-for-specific-user-accounts"></a>Rechercher des comptes d’utilisateurs spécifiques
 

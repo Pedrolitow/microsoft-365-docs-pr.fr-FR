@@ -1,5 +1,5 @@
 ---
-title: Gérer vos autoriser et bloquer dans la liste d’autoriser/bloquer des locataires
+title: Gérer vos autoriser et bloquer dans la liste d’autoriser/bloquer le client
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des autoriser et des blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55116ddac8fa25b63e50b7fba73f668855e2858d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 103ddc9aa0858f9203582ac07a655fd7f5506cf3
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204617"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587586"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -33,9 +33,6 @@ ms.locfileid: "51204617"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
->
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et ne sont pas disponibles dans toutes les organisations.
->
 > Vous ne pouvez pas **configurer les éléments** autorisés dans la liste des locataires autorisés/bloqués pour le moment.
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous pouvez ne pas être d’accord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message erroné peut être autorisé (faux négatif).
@@ -46,7 +43,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page Liste **d’accueil/de** blocage du client, utilisez <https://protection.office.com/tenantAllowBlockList> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **Autoriser/Bloquer la liste des** locataires, utilisez <https://protection.office.com/tenantAllowBlockList> .
 
 - Vous spécifiez des fichiers à l’aide de la valeur de hachage SHA256 du fichier. Pour rechercher la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes :
 
@@ -140,7 +137,7 @@ Cliquez sur les en-tête de colonne suivants pour trier par ordre croissant ou d
 - **Date d’expiration**
 - **Remarque**
 
-Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur **Effacer l’icône** ![ de recherche Effacer la ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) recherche.
+Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur **Effacer l’icône** ![ effacer la ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) recherche.
 
 Cliquez sur **Filtrer.** Dans le **volant de** filtre qui s’affiche, configurez l’un des paramètres suivants :
 
@@ -152,7 +149,7 @@ Cliquez sur **Filtrer.** Dans le **volant de** filtre qui s’affiche, configure
 
 Lorsque vous avez terminé, cliquez sur **Appliquer.**
 
-Pour effacer les filtres existants,  cliquez sur **Filtrer** et, dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
+Pour effacer les filtres existants,  cliquez sur **Filtrer** et dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
 
 ## <a name="use-the-security--compliance-center-to-modify-block-entries-in-the-tenant-allowblock-list"></a>Utiliser le Centre de sécurité & conformité pour modifier les entrées de blocage dans la liste d’attente des locataires
 
@@ -204,7 +201,7 @@ Cet exemple ajoute une entrée d’URL de bloc pour contoso.com et tous les sous
 New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 ```
 
-Cet exemple ajoute une entrée de fichier de blocage pour les fichiers spécifiés qui n’expire jamais.
+Cet exemple ajoute une entrée de bloc de fichiers pour les fichiers spécifiés qui n’expire jamais.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
@@ -212,7 +209,7 @@ New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695e
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher les entrées dans la liste d’attente du client
+### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher les entrées dans la liste d’attente des locataires
 
 Pour afficher les entrées de la liste d’inscriptions client autoriser/bloquer, utilisez la syntaxe suivante :
 
@@ -232,7 +229,7 @@ Cet exemple renvoie des informations pour la valeur de hachage de fichier spéci
 Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
 ### <a name="use-powershell-to-modify-block-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour modifier les entrées de bloc dans la liste d’accès au client
 
@@ -478,7 +475,7 @@ Les entrées suivantes ne sont pas valides :
   - \*.com
   - \*.pdf
 
-- **Caractère générique sur du texte ou sans espacement :**
+- **Caractère générique sur du texte ou sans espacement**:
 
   - \*contoso.com
   - contoso.com\*

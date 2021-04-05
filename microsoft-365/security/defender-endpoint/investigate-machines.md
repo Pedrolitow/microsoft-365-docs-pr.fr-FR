@@ -1,5 +1,5 @@
 ---
-title: Examiner les appareils dans la liste Des appareils Defender pour Endpoint Defender ATP
+title: Examiner les appareils dans la liste Defender pour les appareils de point de terminaison
 description: Examinez les appareils concernés en consultant les alertes, les informations de connexion réseau, l’ajout de balises et de groupes d’appareils et la vérification de l’état du service.
 keywords: devices, tags, groups, endpoint, alerts queue, alerts, device name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service health
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f5415b6337d21b780a75a192a565078a6cacc06
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185730"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587718"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -67,14 +67,14 @@ La section Détails de l’appareil fournit des informations telles que le domai
 
 Les actions de réponse s’exécutent le long de la partie supérieure d’une page d’appareil spécifique et incluent :
 
-- Gérer les balises
+- Gérer des balises
 - Isoler l’appareil
-- Restreindre l’exécution de l’application
+- Restreindre l’exécution des applications
 - Exécuter une analyse antivirus
-- Collecter le package d’examen
+- Collecter un package d’examen
 - Lancer une session de réponse en direct
 - Lancer une enquête automatisée
-- Consulter un expert en menaces
+- Consulter un spécialiste des menaces
 - Centre de notifications
 
 Vous pouvez prendre des mesures de réponse dans le centre de réponse, dans une page d’appareil spécifique ou dans une page de fichiers spécifique.
@@ -83,7 +83,7 @@ Pour plus d’informations sur la façon d’agir sur un appareil, voir [Prendre
 
 Pour plus d’informations, voir [Examiner les entités utilisateur.](investigate-user.md)
 
-## <a name="tabs"></a>Tabulation
+## <a name="tabs"></a>Onglets
 
 Les onglets fournissent des informations pertinentes sur la sécurité et la prévention des menaces relatives à l’appareil. Dans chaque onglet, vous pouvez personnaliser les  colonnes affichées en sélectionnant Personnaliser les colonnes dans la barre au-dessus des en-têtes de colonne.
 
@@ -106,13 +106,13 @@ Pour afficher une vue de page complète d’une alerte, y compris le graphique d
 
 **L’onglet** Chronologie fournit une vue chronologique des événements et des alertes associées qui ont été observés sur l’appareil. Cela peut vous aider à corréler tous les événements, fichiers et adresses IP par rapport à l’appareil.
 
-La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil pendant une période sélectionnée. Pour contrôler davantage votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
+La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil sur une période sélectionnée. Pour contrôler davantage votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
 
 >[!NOTE]
 > Pour afficher les événements de pare-feu, vous devez activer la stratégie d’audit, voir Connexion à la plateforme de filtrage [d’audit.](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 >Le pare-feu couvre les événements suivants
 >
->- [5025](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) - Service de pare-feu arrêté
+>- [5025](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) : service de pare-feu arrêté
 >- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) : application bloquée pour accepter les connexions entrantes sur le réseau
 >- [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) : connexion bloquée
 
@@ -124,17 +124,17 @@ Voici quelques-unes des fonctionnalités :
   - Utilisez la barre de recherche pour rechercher des événements de chronologie spécifiques.
 - Filtrer les événements à partir d’une date spécifique
   - Sélectionnez l’icône de calendrier dans le coin supérieur gauche du tableau pour afficher les événements du dernier jour, semaine, 30 jours ou plage personnalisée. Par défaut, la chronologie de l’appareil est définie pour afficher les événements des 30 derniers jours.
-  - Utilisez la chronologie pour passer à un moment spécifique dans le temps en mettant en surbrillance la section. Les flèches sur la chronologie recherchent des investigations automatisées
+  - Utilisez la chronologie pour passer à un moment spécifique dans le temps en mettant en surbrillance la section. Les flèches de la chronologie recherchent des investigations automatisées
 - Exporter des événements de chronologie détaillés de l’appareil
   - Exportez la chronologie de l’appareil pour la date actuelle ou une plage de dates spécifiée jusqu’à sept jours.
 
-Des informations supplémentaires sur certains événements sont fournies dans la section **Informations** supplémentaires. Ces détails varient en fonction du type d’événement, par exemple : 
+Des informations supplémentaires sur certains événements sont fournies dans la section **Informations supplémentaires.** Ces détails varient en fonction du type d’événement, par exemple : 
 
 - Contenu par Application Guard : l’événement de navigateur web a été limité par un conteneur isolé
 - Menace active détectée : la détection des menaces s’est produite pendant l’exécution de la menace
 - Correction infructueuse : une tentative de correction de la menace détectée a été invoquée mais a échoué
 - Correction réussie : la menace détectée a été arrêtée et nettoyée
-- Avertissement contourné par l’utilisateur : l’avertissement Windows Defender SmartScreen a été rejeté et contourné par un utilisateur
+- Avertissement contourné par l’utilisateur : l’avertissement Windows Defender SmartScreen a été rejeté et a été contourné par un utilisateur
 - Script suspect détecté : un script potentiellement malveillant a été détecté en cours d’exécution
 - Catégorie d’alerte : si l’événement a conduit à la génération d’une alerte, la catégorie d’alerte ( « Mouvement latéral », par exemple) est fournie.
 
@@ -147,13 +147,13 @@ Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) 
 
 ### <a name="security-recommendations"></a>Recommandations de sécurité
 
-**Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité de gestion des menaces [& vulnérabilités du](tvm-dashboard-insights.md) point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
+**Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité gestion des menaces [& des vulnérabilités](tvm-dashboard-insights.md) du point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
 
 ![Image de l’onglet Recommandations de sécurité](images/security-recommendations-device.png)
 
 ### <a name="software-inventory"></a>Inventaire des logiciels
 
-**L’onglet Inventaire** logiciel vous permet d’afficher le logiciel sur l’appareil, ainsi que les faiblesses ou menaces. La sélection du nom du logiciel vous permet d’afficher les recommandations de sécurité, les vulnérabilités découvertes, les appareils installés et la distribution des versions sur la page des détails du logiciel. Voir [l’inventaire logiciel](tvm-software-inventory.md) pour plus d’informations
+**L’onglet Inventaire** logiciel vous permet d’afficher le logiciel sur l’appareil, ainsi que les faiblesses ou menaces. La sélection du nom du logiciel vous permet d’afficher les recommandations de sécurité, les vulnérabilités découvertes, les appareils installés et la distribution des versions sur la page de détails du logiciel. Voir [l’inventaire logiciel](tvm-software-inventory.md) pour plus d’informations
 
 ![Image de l’onglet Inventaire logiciel](images/software-inventory-device.png)
 
@@ -193,7 +193,7 @@ La **carte d’évaluation de** la sécurité indique le niveau d’exposition g
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Afficher et organiser la file d’attente des alertes de Microsoft Defender pour les points de terminaison](alerts-queue.md)
+- [Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)
 - [Examiner un fichier associé à une alerte Defender for Endpoint](investigate-files.md)

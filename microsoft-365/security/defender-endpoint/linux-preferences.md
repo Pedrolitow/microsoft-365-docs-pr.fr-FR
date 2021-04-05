@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8595bae216911350d3f18fcceef729ef020a424
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 5aedf841ddfc5a592fe4afd2f13d6470e24c438c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408164"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587514"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison pour Linux
 
@@ -35,12 +34,12 @@ ms.locfileid: "51408164"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 >[!IMPORTANT]
 >Cette rubrique contient des instructions sur la façon de définir des préférences pour Defender pour Endpoint pour Linux dans les environnements d’entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources.](linux-resources.md#configure-from-the-command-line)
 
-Dans les environnements d’entreprise, Defender pour Point de terminaison pour Linux peut être géré via un profil de configuration. Ce profil est déployé à partir de l’outil de gestion de votre choix. Les préférences gérées par l’entreprise prévalent sur les préférences définies localement sur l’appareil. En d’autres termes, les utilisateurs de votre entreprise ne peuvent pas modifier les préférences définies par le biais de ce profil de configuration.
+Dans les environnements d’entreprise, Defender pour Endpoint pour Linux peut être géré via un profil de configuration. Ce profil est déployé à partir de l’outil de gestion de votre choix. Les préférences gérées par l’entreprise prévalent sur les préférences définies localement sur l’appareil. En d’autres termes, les utilisateurs de votre entreprise ne peuvent pas modifier les préférences définies par le biais de ce profil de configuration.
 
 Cet article décrit la structure de ce profil (y compris un profil recommandé que vous pouvez utiliser pour commencer) et des instructions sur la façon de déployer le profil.
 
@@ -264,7 +263,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |:---|:---|
 | **Clé** | scanHistoryMaximumItems |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments. |
+| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments. |
 | **Comments** | Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure. |
 |||
 
@@ -290,7 +289,7 @@ Détermine si la protection cloud est activée ou non sur l’appareil. Pour am�
 | **Valeurs possibles** | true (par défaut) <br/> false |
 |||
 
-#### <a name="diagnostic-collection-level"></a>Niveau de collection de diagnostics
+#### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
 
@@ -335,7 +334,7 @@ Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA) sont** bloquées
+  - **Les applications potentiellement indésirables (PUA)** sont bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques des informations de sécurité
 - Activer la protection cloud

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
-ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fdef06918ec2c35547c084e5f431aa7bef8d6a8c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052301"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587622"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
 
@@ -38,7 +38,7 @@ Les groupes qui sont activement utilisés sont renouvelés automatiquement. L’
 - Outlook : rejoindre un groupe, lire ou écrire un message de groupe à partir du groupe, et comme un message (Outlook sur le web).
 - Teams : visite d’un canal teams.
 
-Notez que la seule activité Yammer qui déclenchera le renouvellement automatique d’un groupe est le téléchargement d’un document vers SharePoint au sein de la communauté.
+Notez que la seule activité Yammer qui déclenchera un renouvellement automatique de groupe est le téléchargement d’un document vers SharePoint au sein de la communauté.
 
 > [!IMPORTANT]
 > Lorsque vous modifiez la stratégie d’expiration, le service recalcule la date d’expiration de chaque groupe. Il commence toujours à compter de la date de création du groupe, puis applique la nouvelle stratégie d’expiration.
@@ -63,25 +63,25 @@ La durée de vie du groupe est spécifiée en jours et peut être définie sur 1
 
 Si le groupe n’a pas de propriétaire, les e-mails d’expiration sont envoyés à l’administrateur spécifié.
 
-Vous pouvez définir la stratégie pour tous vos groupes, uniquement les groupes sélectionnés, ou la désactiver complètement en sélectionnant **Aucun**. Notez qu’il n’est actuellement pas possible d’avoir des stratégies différentes pour différents groupes.
+Vous pouvez définir la stratégie pour tous vos groupes, uniquement les groupes sélectionnés (jusqu’à 500), ou la désactiver complètement en sélectionnant **Aucun**. Notez qu’il n’est actuellement pas possible d’avoir des stratégies différentes pour différents groupes.
 
 ![Capture d’écran des paramètres d’expiration des groupes dans Azure Active Directory](../media/azure-groups-expiration-settings.png)
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>Fonctionnement de l’expiration avec la stratégie de rétention
 
-Si vous avez mis en place une stratégie de rétention pour les groupes dans le Centre de sécurité et conformité, la stratégie d’expiration fonctionne de manière transparente avec la stratégie de rétention. Lorsqu’un groupe expire, les conversations et les fichiers de boîte aux lettres du groupe dans le site de groupe sont conservés dans le conteneur de rétention pendant le nombre de jours défini dans la stratégie de rétention. Toutefois, les utilisateurs ne voient pas le groupe, ni son contenu, après expiration.
+Si vous avez mis en place une stratégie de rétention pour les groupes dans le Centre de sécurité et conformité, la stratégie d’expiration fonctionne en toute transparence avec la stratégie de rétention. Lorsqu’un groupe expire, les conversations et les fichiers de boîte aux lettres du groupe dans le site de groupe sont conservés dans le conteneur de rétention pendant le nombre de jours défini dans la stratégie de rétention. Toutefois, les utilisateurs ne voient pas le groupe, ni son contenu, après expiration.
 
 ## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>Comment et quand un propriétaire de groupe apprend si ses groupes vont expirer
 
 Les propriétaires de groupe ne seront avertis que par courrier électronique. Si le groupe a été créé via le Planificateur, SharePoint ou toute autre application, les notifications d’expiration sont toujours envoyés par courrier électronique. Si le groupe a été créé via Teams, le propriétaire du groupe reçoit une notification de renouvellement via la section activité. Il n’est pas recommandé d’activer l’expiration sur un groupe si le propriétaire de votre groupe n’a pas d’adresse de messagerie valide.
 
-Trente jours avant l’expiration du groupe, les propriétaires du groupe (ou les adresses de messagerie que vous avez spécifiées pour les groupes qui n’ont pas de propriétaire) recevront un courrier électronique leur permettant de renouveler facilement le groupe. S’il ne le renouvelle pas, il reçoit un autre e-mail de renouvellement 15 jours avant l’expiration. S’ils ne l’ont toujours pas renouvelé, ils recevront une notification par courrier électronique le jour avant l’expiration.
+Trente jours avant l’expiration du groupe, les propriétaires du groupe (ou les adresses de messagerie que vous avez spécifiées pour les groupes qui n’ont pas de propriétaire) recevront un e-mail leur permettant de renouveler facilement le groupe. S’ils ne le renouvellent pas, ils recevront un autre e-mail de renouvellement 15 jours avant l’expiration. S’ils ne l’ont toujours pas renouvelé, ils recevront une notification par courrier électronique le jour avant l’expiration.
 
 Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne renouvelle le groupe avant son expiration, l’administrateur peut toujours restaurer le groupe jusqu’à 30 jours après l’expiration. Pour plus d’informations, [voir : Restaurer un groupe Microsoft 365 supprimé.](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)
 
 ## <a name="archiving-group-contents"></a>Contenu du groupe d’archivage
 
-Si vous avez un groupe que vous ne prévoyez plus d’utiliser, mais que vous souhaitez conserver son contenu, voir Groupes d’archivage, équipes et [Yammer](end-life-cycle-groups-teams-sites-yammer.md) pour plus d’informations sur l’exportation d’informations à partir des différents services de groupes.
+Si vous avez un groupe que vous ne prévoyez plus d’utiliser, mais que vous souhaitez conserver son contenu, voir Groupes d’archivage, équipes et [Yammer](end-life-cycle-groups-teams-sites-yammer.md) pour plus d’informations sur la façon d’exporter des informations à partir des différents services de groupes.
 
 ## <a name="related-topics"></a>Voir aussi
 

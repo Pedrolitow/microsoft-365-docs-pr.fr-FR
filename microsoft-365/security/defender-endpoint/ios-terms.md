@@ -16,18 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 177367da49ab741ee6544b6cfefe63898005d009
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ba39eea9730b38b7666fe53c0c128fc53cae3a78
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064265"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587190"
 ---
-# <a name="microsoft-defender-for-endpoint-for-ios-application-license-terms"></a>Termes du contrat de licence d’application Microsoft Defender pour point de terminaison pour iOS
+# <a name="microsoft-defender-for-endpoint-for-ios-application-license-terms"></a>Termes du contrat de licence d’application Microsoft Defender pour endpoint pour iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -48,7 +47,7 @@ pour cette application, sauf si d’autres termes accompagnent ces éléments. S
 
 **À L’AIDE DE L’APPLICATION, VOUS ACCEPTEZ CES TERMES. SI VOUS NE LES ACCEPTEZ PAS, N’UTILISEZ PAS L’APPLICATION.**
 
-**Si vous vous conformez aux conditions suivantes, vous avez les droits perpétuelles ci-dessous.**
+**Si vous respectez ces Conditions, vous avez les droits perpétuelles ci-dessous.**
 
 1.  **INSTALLATION AND USE RIGHTS.**
 
@@ -58,7 +57,7 @@ pour cette application, sauf si d’autres termes accompagnent ces éléments. S
 
     3.  **Programmes tiers.** L’application peut inclure des programmes tiers que Microsoft, et non le tiers, vous propose sous licence dans le cadre du contrat. Les notifications, le cas cas, pour le programme tiers sont incluses pour vos informations uniquement.
 
-2.  **L’ACCÈS À INTERNET PEUT ÊTRE REQUIS.** Vous pouvez engager des frais liés à l’accès à Internet, au transfert de données et à d’autres services selon les conditions du plan de service de données et tout autre contrat que vous avez conclu avec votre opérateur réseau en raison de l’utilisation de l’application. Vous êtes le seul responsable des frais d’opérateur réseau.
+2.  **L’ACCÈS À INTERNET PEUT ÊTRE REQUIS.** Vous pouvez facturer des frais liés à l’accès à Internet, au transfert de données et à d’autres services en respectant les conditions du plan de service de données et tout autre contrat que vous avez conclu avec votre opérateur réseau en raison de l’utilisation de l’application. Vous êtes le seul responsable des frais d’opérateur réseau.
 
 3.  **SERVICES INTERNET.** Microsoft fournit des services Internet avec l’application. Il peut les modifier ou les annuler à tout moment.
 
@@ -77,7 +76,7 @@ pour cette application, sauf si d’autres termes accompagnent ces éléments. S
 
     -   contourner les limitations techniques dans l’application ;
 
-    -   ingénieur inverse, décompiler ou désassembler l’application, sauf et uniquement dans la mesure où la loi applicable le permet expressément, malgré cette limitation ;
+    -   reverse engineer, decompile or disassemble the application, except and only to the extent that applicable law expressly permits, despite this limitation;
 
     -   effectuer plus de copies de l’application que ce qui est spécifié dans le contrat ou autorisé par la loi applicable, malgré cette limitation ;
 
@@ -99,7 +98,7 @@ pour cette application, sauf si d’autres termes accompagnent ces éléments. S
 
     2.  Le fournisseur de magasin d’applications respectif et ses filiales sont des bénéficiaires tiers des conditions d’utilisation, et dès que vous acceptez ces Conditions, les fournisseurs de magasins d’applications ont le droit d’appliquer et de s’appuyer directement sur toute disposition de ces Conditions qui leur accorde un avantage ou des droits.
 
-9.  **AVIS DE MARQUE.** Microsoft, Microsoft Defender pour le point de terminaison et Microsoft 365 sont des marques déposées ou de droit commun de Microsoft Corporation aux États-Unis et/ou dans d’autres pays.
+9.  **AVIS DE MARQUE.** Microsoft, Microsoft Defender pour point de terminaison et Microsoft 365 sont des marques déposées ou de droit commun de Microsoft Corporation aux États-Unis et/ou dans d’autres pays.
 
 10. **ENTIRE AGREEMENT.** Ce contrat et les conditions pour les suppléments, les mises à jour, les services Internet et les services de support que vous utilisez sont l’intégralité du contrat pour les services d’application et de support.
 
@@ -121,7 +120,7 @@ Cette limitation s’applique à :
 
 -   tout ce qui est lié à l’application, aux services, au contenu (y compris le code) sur des sites Internet tiers ou des programmes tiers ; et
 
--   réclamations pour violation de contrat, de garantie, de garantie ou de condition ; protection des consommateurs ; ; concurrence inalt; responsabilité stricte, négligence, mauvaise représentation, omission, infraction ou autre délit ; violation de lois ou de réglementations ; ou enrichissement enrichi ; dans la mesure autorisée par la loi applicable.
+-   réclamations pour violation de contrat, de garantie, de garantie ou de condition ; protection des consommateurs ; ; concurrence de l’autorité de concurrence ; responsabilité stricte, négligence, mauvaise représentation, omission, infraction ou autre délit ; violation de lois ou de réglementations ; ou enrichissement enrichi ; dans la mesure autorisée par la loi applicable.
 
 Elle s’applique également même si :
 
