@@ -19,17 +19,17 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : '
-ms.openlocfilehash: 190b020ac683bcb97317a281c520b7f1ac92c721
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b99238b588363203f7aac07b3fb056d7a37e19f
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910917"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592071"
 ---
-# <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Comment opter pour la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centres de données allemandes
+# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Comment opter pour une nouvelle migration de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centres de données allemandes
 
->[!Note]
->Cet article s’applique uniquement aux clients Microsoft Cloud Allemagne (Microsoft Cloud Deutschland).
+> [!NOTE]
+> Cet article s’applique uniquement aux clients Microsoft Cloud Allemagne (Microsoft Cloud Deutschland).
 >
 
 ## <a name="how-to-request-migration"></a>Comment demander une migration
@@ -54,21 +54,21 @@ Une fois que vous avez choisi de vous rendre au nom de votre client, tous les ad
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>Que se passe-t-il après la migration ?
 
-Les migrations commenceront au début de 2021 pour les organisations qui optent pour l’approche pilotée par Microsoft et seront terminées avant la date de retrait de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) le 29 octobre 2021.  Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.  Microsoft publiera des mises à jour tout au long du processus de migration dans le centre de messages. Consultez [ces articles](#more-information) pour en savoir plus.
+Les migrations commenceront au début de 2021 pour les organisations qui optent pour l’approche pilotée par Microsoft et seront terminées avant la date de retrait de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) le 29 octobre 2021.  Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.  Microsoft publiera des mises à jour tout au long du processus de migration dans le Centre de messages. Consultez [ces articles](#more-information) pour en savoir plus.
 
 ## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Que se passe-t-il si vous n’optez pas pour la migration dans le Centre d’administration ?
 
 Les conditions des services en ligne ont été modifiées pour inclure les termes qui permettront à Microsoft de migrer vos données et abonnements Microsoft 365, Dynamics 365 et Power BI de Microsoft Cloud Deutschland vers un nouveau centre de données. Ces conditions prennent effet sur tout abonnement Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) renouvelé depuis le 1er mai 2020. 
 
-L’administrateur client du client reçoit une notification par courrier électronique et le Centre de messages vous informant que l’opt-in pour la migration aura lieu automatiquement pour une migration assisté par Microsoft. Cet avis sera envoyé au moins 30 jours avant l’autorisation automatique. Après l’option de migration, toutes les communications et mises à jour d’état sont envoyées aux administrateurs du client client dans le centre de messages.
+L’administrateur client recevra une notification par courrier électronique et le Centre de messages vous informant que l’option d’opter pour la migration aura lieu automatiquement pour une migration assisté par Microsoft. Cet avis sera envoyé au moins 30 jours avant l’autorisation automatique. Après l’option de migration, toutes les communications et mises à jour d’état sont envoyées aux administrateurs du client client dans le centre de messages.
 
-Les administrateurs client et client partenaire sont encouragés à opter pour la migration dans le Centre d’administration Microsoft 365 afin que le processus de migration puisse commencer dès que possible.
+Les administrateurs client et client sont encouragés à opter pour la migration dans le Centre d’administration Microsoft 365 afin que le processus de migration puisse commencer dès que possible.
 
 ## <a name="next-step"></a>Étape suivante
 
 [Comprendre l’expérience client pendant la migration](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Mise en place :
 

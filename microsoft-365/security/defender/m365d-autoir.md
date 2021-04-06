@@ -1,7 +1,7 @@
 ---
 title: Examen et réponse automatisés dans Microsoft 365 Defender
 description: Obtenir une vue d’ensemble des fonctionnalités d’examen et de réponse automatisées, également appelées auto-ressource, dans Microsoft 365 Defender
-keywords: automatisé, examen, alerte, déclencheur, action, correction, auto-réparation
+keywords: automatisé, examen, alerte, déclencheur, action, correction, réparation automatique
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,15 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: be0423b0af8251347420d9e970dcfe10db0bb72b
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199632"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591922"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Examen et réponse automatisés dans Microsoft 365 Defender
 
@@ -41,7 +40,7 @@ Si votre organisation utilise [Microsoft 365 Defender,](microsoft-365-defender.m
 Cet article fournit une vue d’ensemble d’AIR et inclut des liens vers les étapes suivantes et des ressources supplémentaires.
 
 > [!TIP]
-> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou exécuter votre projet pilote en [production.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>Fonctionnement de l’examen automatisé et de la auto-ressource
 
@@ -51,7 +50,7 @@ Regardez la vidéo suivante pour voir comment fonctionne la auto-ressource : <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-Dans Microsoft 365 Defender, l’examen et la réponse automatisés avec des fonctionnalités de auto-ressourcement fonctionnent sur vos appareils, vos & de messagerie et vos identités.
+Dans Microsoft 365 Defender, l’examen et la réponse automatisés grâce à des fonctionnalités de auto-ressource fonctionnent sur vos appareils, vos & de messagerie et vos identités.
  
 > [!TIP]
 > Cet article décrit le fonctionnement de l’examen et de la réponse automatisés. Pour configurer ces fonctionnalités, voir Configurer les fonctionnalités d’investigation et de réponse [automatisées dans Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md)
@@ -93,7 +92,12 @@ Dans Microsoft 365 Defender, chaque enquête automatisée met en corrélation le
 |Contenu du courrier électronique (messages électroniques qui peuvent contenir des fichiers et des URL)     |[Microsoft Defender pour Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
-> Toutes les alertes ne déclenchent pas une enquête automatisée, et toutes les enquêtes n’entraînent pas des actions de correction automatisées ; Cela dépend de la façon dont l’examen et la réponse automatisés sont configurés pour votre organisation. Voir Configurer les fonctionnalités d’investigation et de réponse [automatisées dans Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md)
+> Toutes les alertes ne déclenchent pas une enquête automatisée, et toutes les enquêtes n’entraînent pas des actions de correction automatisées ; Cela dépend de la façon dont l’examen et la réponse automatisés sont configurés pour votre organisation. Voir Configurer les fonctionnalités d’examen et de réponse [automatisées dans Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md)
+
+## <a name="viewing-a-list-of-investigations"></a>Affichage d’une liste d’enquêtes
+
+Pour afficher les enquêtes, consultez la page **Incidents.** Sélectionnez un incident, puis l’onglet **Enquêtes.** Pour en savoir plus, consultez [les détails et les résultats d’une enquête automatisée.](m365d-autoir-results.md)
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -1,6 +1,6 @@
 ---
 title: Détails et résultats d’une enquête automatisée
-description: Pendant et après un examen automatisé, vous pouvez afficher les résultats et les principales conclusions
+description: Afficher les résultats et les principales conclusions de l’examen automatisé dans Microsoft 365 Defender
 keywords: automatisé, examen, résultats, analyse, détails, correction, autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/08/2021
-ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ca023ea49a8d92123467be640a097a72233d3198
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198968"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592119"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
@@ -44,7 +43,7 @@ Avec Microsoft 365 Defender, lorsqu’une enquête automatisée s’exécute, de
 
 La page d’examen a récemment été mise à jour pour inclure des informations sur vos appareils, votre courrier électronique et le contenu de collaboration. La nouvelle page d’enquête unifiée définit un langage commun et fournit une expérience unifiée pour les enquêtes automatiques dans [Microsoft Defender pour Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) et [Microsoft Defender pour Office 365.](../office-365-security/defender-for-office-365.md) Pour accéder à la page d’enquête unifiée, sélectionnez le lien dans la bannière jaune qui s’affiche :
 - N’importe quelle page d’enquête dans le Centre de sécurité et & conformité Office 365 ( [https://protection.office.com](https://protection.office.com) )
-- N’importe quelle page d’investigation dans le Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
+- N’importe quelle page d’examen dans le Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
 - Toute expérience d’incident ou de centre de travail dans le Centre de sécurité Microsoft 365 amélioré ( [https://security.microsoft.com](https://security.microsoft.com) )
 
 ## <a name="open-the-investigation-details-view"></a>Ouvrir la vue Détails de l’examen
@@ -61,13 +60,16 @@ Le centre de [mesures](m365d-action-center.md) amélioré regroupe les actions d
 > Vous devez avoir [certaines autorisations pour](m365d-action-center.md#required-permissions-for-action-center-tasks) approuver, rejeter ou annuler des actions.
 
 1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
+
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
+
 3. Sous l’onglet **En attente** ou **Historique**, sélectionnez un élément. Son volet volant s’ouvre.
+
 4. Examinez les informations dans le volet volant, puis prenez l’une des étapes suivantes :
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
    - Sélectionnez **Approuver** pour lancer une action en attente.
    - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
-   - Sélectionnez **Go hunt** (Aller à la recherche) pour aller [dans le recherche avancée](advanced-hunting-overview.md).
+   - Sélectionnez **Go hunt** (Aller à la recherche) pour passer [à la recherche avancée](advanced-hunting-overview.md).
 
 ### <a name="open-an-investigation-from-an-incident-details-page"></a>Ouvrez un examen dans une page de détails d’incident
 
@@ -76,9 +78,13 @@ La page Détails de l’incident permet d’afficher des informations détaillé
 ![Détails de l’incident](../../media/mtp-incidentdetails-tabs.png)
 
 1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
+
 2. Dans le volet de navigation, sélectionnez **Incidents &**  >  **alertes Incidents**. 
+
 3. Sélectionnez un élément dans la liste, puis choisissez **Ouvrir la page Incident.**
+
 4. Sélectionnez **l’onglet** Examens, puis un examen dans la liste. Son volet volant s’ouvre.
+
 5. Sélectionnez **Ouvrir la page Examen.** 
 
 ## <a name="investigation-details"></a>Détails de l’examen

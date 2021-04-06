@@ -12,17 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.date: 02/08/2021
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: afdf4b4ec8824fa49843074880bcd6f4f1857cca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 164d4f52f5769d48249c1f4afcdf4be624f6aef7
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200268"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592047"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer des fonctionnalités automatisées d’examen et de réponse dans Microsoft 365 Defender
 
@@ -37,7 +36,7 @@ Pour configurer des fonctionnalités d’examen et de réponse automatisées, su
 3. [Examinez vos stratégies de sécurité et d’alerte dans Office 365.](#review-your-security-and-alert-policies-in-office-365)
 4. [Assurez-vous que Microsoft 365 Defender est allumé.](#make-sure-microsoft-365-defender-is-turned-on)
 
-Ensuite, une fois que vous avez tous été mis en place, affichez et gérez les [actions dans le centre de gestion de l’action.](m365d-autoir-actions.md)
+Ensuite, une fois toutes les actions définies, affichez et gérez [les actions dans le centre de gestion des actions.](m365d-autoir-actions.md)
 
 ## <a name="prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender"></a>Conditions préalables à l’examen et à la réponse automatisés dans Microsoft 365 Defender
 
@@ -47,7 +46,7 @@ Ensuite, une fois que vous avez tous été mis en place, affichez et gérez les 
 |Configuration réseau requise |- [Microsoft Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp) activé<br/>- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configuré<br/>- [Intégration de Microsoft Defender pour l’identité](/cloud-app-security/mdi-integration) |
 |Configuration requise pour ordinateur Windows |-Windows 10, version 1709 ou version ultérieure (Consulter [Informations sur la publication de Windows 10](/windows/release-information/)) <br/>- Les services de protection contre les menaces suivants sont configurés :<br/>- [Microsoft Defender pour point de terminaison](../defender-endpoint/configure-endpoints.md)<br/>- [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
 |Protection du contenu du courrier électronique et des fichiers Office |[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configuré |
-|Autorisations | Pour configurer des fonctionnalités d’investigation et de réponse automatisées, vous devez avoir le rôle Administrateur général ou Administrateur de la sécurité attribué dans Azure Active Directory ( ) ou dans le Centre d’administration [https://portal.azure.com](https://portal.azure.com) Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<p>Pour obtenir les autorisations nécessaires pour travailler avec des fonctionnalités d’examen et de réponse automatisées, telles que la révision, l’approbation ou le rejet des actions en attente, voir [Autorisations requises](m365d-action-center.md#required-permissions-for-action-center-tasks)pour les tâches du centre de gestion des actions. |
+|Autorisations | Pour configurer des fonctionnalités d’examen et de réponse automatisées, vous devez avoir le rôle Administrateur général ou Administrateur de la sécurité attribué dans Azure Active Directory ( ) ou dans le Centre d’administration [https://portal.azure.com](https://portal.azure.com) Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<p>Pour obtenir les autorisations nécessaires pour travailler avec des fonctionnalités d’examen et de réponse automatisées, telles que la révision, l’approbation ou le rejet des actions en attente, voir [Autorisations requises](m365d-action-center.md#required-permissions-for-action-center-tasks)pour les tâches du centre de gestion des actions. |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>Examiner ou modifier le niveau d’automatisation pour les groupes d’appareils
 
@@ -85,7 +84,7 @@ Les paramètres de sécurité dans Office 365 contribuent à protéger le courri
 1. Go to the Microsoft 365 security center ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
 2. Dans le volet de navigation, recherchez **Incidents,** Centre de action et **Recherche,** comme illustré dans l’image précédente.
    - Si vous voyez **incidents,** **centre de action** et de recherche , Microsoft 365 Defender est allumé.  Consultez la procédure, [examinez ou modifiez le niveau d’automatisation pour les groupes d’appareils](#review-or-change-the-automation-level-for-device-groups) (dans cet article).
-   - Si vous ne *voyez pas* **incidents,** centre de l’action ou de **recherche,** Microsoft 365 Defender n’est peut-être pas allumé.  Dans ce cas, consultez [le centre de travail.](m365d-action-center.md)
+   - Si vous ne *voyez pas* **incidents,** centre **de** action ou de **recherche,** Microsoft 365 Defender n’est peut-être pas allumé. Dans ce cas, consultez [le centre de l’action.](m365d-action-center.md)
 3. Dans le volet de navigation, choisissez **Paramètres**  >  **Microsoft 365 Defender**. Confirmez que Microsoft 365 Defender est allumé. 
 
 > [!TIP]

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f6b085f200d3b0c71bb3608f8e5ba9ed85632676
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a6c7e7e920d18d9d8bf29d71d317008ea0c37bbf
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500327"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592095"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ Examinez les alertes qui affectent votre réseau, déterminez leur signification
 
     ![Image du volet latéral de l’incident](../../media/incident-side-panel.png)
 
-2. Sélectionnez **Ouvrir la page incident**. <BR> Cette action ouvre la page d’incident dans laquelle vous trouverez plus d’informations sur les incidents, les commentaires et les actions, les onglets (vue d’ensemble, alertes, appareils, utilisateurs, enquêtes, preuves).
+2. Sélectionnez **Ouvrir la page incident**. <BR> Cette action ouvre la page incident dans laquelle vous trouverez plus d’informations sur les incidents, les commentaires et les actions, les onglets (vue d’ensemble, alertes, appareils, utilisateurs, enquêtes, preuves).
 
 3. Examinez les alertes, les appareils, les utilisateurs et les autres entités impliquées dans l’incident.
 
@@ -74,7 +74,7 @@ Vous pouvez afficher toutes les alertes liées à l’incident et d’autres inf
 
 ![Image de la page alertes d’incident](../../media/incident-alerts.png)
 
-Par défaut, les alertes sont classées par ordre chronologique, pour vous permettre de consulter d’abord l’attaque au fil du temps. Cliquez sur chaque alerte pour vous diriger vers la page d’alerte pertinente dans laquelle vous pouvez effectuer un examen approfondi de cette alerte. Découvrez comment utiliser les pages d’alerte et la file d’attente d’alerte unifiée dans [Examiner les alertes](investigate-alerts.md)
+Par défaut, les alertes sont classées par ordre chronologique, pour vous permettre de consulter d’abord l’attaque au fil du temps. Cliquez sur chaque alerte pour vous diriger vers la page d’alerte pertinente où vous pouvez effectuer un examen approfondi de cette alerte. Découvrez comment utiliser les pages d’alerte et la file d’attente d’alertes unifiée dans [Examiner les alertes](investigate-alerts.md)
 
 ## <a name="devices"></a>Appareils
 
@@ -86,6 +86,10 @@ En cliquant sur le nom de l’ordinateur sur lequel l’attaque a eu lieu, vous 
 
 La sélection de l’onglet chronologie vous permet de faire défiler la chronologie de l’ordinateur et d’afficher tous les événements et comportements observés sur l’ordinateur dans l’ordre chronologique, accompagnés des alertes générées.
 
+> [!TIP]
+> Vous pouvez faire des analyses à la demande sur une page d’appareil. Dans le Centre de sécurité Microsoft 365, choisissez **Inventaire des appareils.** Sélectionnez un appareil qui a des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivis et sont visibles sur la page **d’inventaire des** appareils. Pour en savoir plus, [consultez l’analyse de l’Antivirus Microsoft Defender sur les appareils.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
+
+
 ## <a name="users"></a>Utilisateurs
 
 Consultez la liste des utilisateurs qui ont été identifiés comme faisant partie d'un incident donné ou y étant liés.
@@ -96,7 +100,7 @@ En cliquant sur le nom d'utilisateur, vous accédez à la page Cloud App Securit
 
 ## <a name="mailboxes"></a>Boîtes aux lettres
 
-Examinez les boîtes aux lettres qui ont été identifiés comme faisant partie d'un incident ou y étant liés. Pour poursuivre le travail d’investigation, la sélection de l’alerte liée à la messagerie ouvre Microsoft Defender pour Office 365 où vous pouvez prendre des mesures correctives.
+Examinez les boîtes aux lettres qui ont été identifiés comme faisant partie d'un incident ou y étant liés. Pour poursuivre l’examen, la sélection de l’alerte liée à la messagerie ouvre Microsoft Defender pour Office 365 où vous pouvez prendre des mesures correctives.
 
 ![Image de l’onglet boîte aux lettres d’un incident](../../media/incident-mailboxes.png)
 

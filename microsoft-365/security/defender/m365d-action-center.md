@@ -20,13 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/01/2021
-ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199596"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592083"
 ---
 # <a name="the-action-center"></a>Le Centre de notifications
 
@@ -72,7 +71,7 @@ Vous pouvez utiliser le centre de l’action unifiée si vous avez les autorisat
 1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-Lorsque vous visitez le centre de l’action, vous voyez deux onglets : Actions en attente et Historique. Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
+Lorsque vous visitez le centre de actions, vous voyez deux onglets : Actions en attente et Historique. Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
 
 |Tab  |Description  |
 |---------|---------|
@@ -81,7 +80,7 @@ Lorsque vous visitez le centre de l’action, vous voyez deux onglets : Actions 
 
 Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centre de gestion de l’action.
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Le centre de l’action vous permet de trier, de filtrer et de personnaliser votre liste d’actions":::
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Le centre de actions vous permet de trier, de filtrer et de personnaliser votre liste d’actions":::
 
 - Sélectionnez un en-tête de colonne pour trier les éléments par ordre croissant ou décroit.
 - Utilisez le filtre de période pour afficher les données du jour, de la semaine, des 30 ou 6 derniers mois.
@@ -94,25 +93,25 @@ Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centr
 
 Toutes les actions, qu’elles soient en attente d’approbation ou qu’elles ont déjà été prises, sont suivis dans le centre de l’action. Les actions disponibles sont les suivantes :
 
-- Collecter le package d’examen 
+- Collecter un package d’examen 
 - Isoler l’appareil (cette action peut être annulée) 
-- Appareil hors-carte 
+- Retirer un ordinateur 
 - Exécution du code de publication 
 - Libérer de la quarantaine 
-- Exemple de demande 
+- Exemple de requête 
 - Restreindre l’exécution du code (cette action peut être annulée) 
 - Exécuter une analyse antivirus 
 - Arrêter et mettre en quarantaine 
 
-En plus des actions de correction qui [](m365d-autoir.md)sont prises automatiquement à la suite d’enquêtes automatisées, le centre de sécurité suit également les actions que votre équipe de sécurité a prises pour traiter les menaces détectées et les actions qui ont été prises à la suite des fonctionnalités de protection contre les menaces dans Microsoft 365 Defender. Pour plus d’informations sur les actions de correction automatiques et manuelles, voir [Actions de correction.](m365d-remediation-actions.md)
+En plus des actions de correction qui [](m365d-autoir.md)sont prises automatiquement à la suite d’enquêtes automatisées, le centre de sécurité effectue également le suivi des actions que votre équipe de sécurité a prises pour traiter les menaces détectées et des actions qui ont été prises à la suite des fonctionnalités de protection contre les menaces dans Microsoft 365 Defender. Pour plus d’informations sur les actions de correction automatiques et manuelles, voir [Actions de correction.](m365d-remediation-actions.md)
 
 ## <a name="viewing-action-source-details"></a>Affichage des détails de la source de l’action
 
 (**NOUVEAU !**) Le centre de l’action amélioré inclut désormais une colonne **source Action** qui vous indique d’où chaque action vient. Le tableau suivant décrit les valeurs possibles de **la source d’action** :
 
-| Valeur de la source d’action | Description |
+| Valeur de la source de l’action | Description |
 |:-----|:---|
-| **Action manuelle de l’appareil** | Action manuelle sur un appareil. Par exemple, [l’isolation de l’appareil ou](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) [la mise en quarantaine du fichier](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files). |
+| **Action manuelle de l’appareil** | Action manuelle sur un appareil. Par exemple, [l’isolation de l’appareil](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) ou [la mise en quarantaine des fichiers.](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files) |
 | **Action de messagerie manuelle** | Action manuelle sur le courrier électronique. Un exemple inclut la suppression (ou la correction) d’un message [électronique.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
 | **Action automatisée sur l’appareil** | Action automatisée entreprise sur une entité, telle qu’un fichier ou un processus. L’envoi d’un fichier en quarantaine, l’arrêt d’un processus et la suppression d’une clé de Registre sont des exemples d’actions automatisées. (Voir [les actions de correction dans Microsoft Defender pour le point de terminaison.)](../defender-endpoint/manage-auto-investigation.md#remediation-actions) |
 | **Action de messagerie automatisée** | Action automatisée sur le contenu du courrier électronique, telle qu’un message électronique, une pièce jointe ou une URL. Parmi les exemples d’actions automatisées, citons la suppression (à l’aide de logiciels) des messages électroniques, le blocage des URL et la désinstruction du forwarding de courrier externe. (Voir [les actions de correction dans Microsoft Defender pour Office 365.)](../office-365-security/air-remediation-actions.md) |
@@ -131,7 +130,7 @@ Pour effectuer des tâches, telles que l’approbation ou le rejet des actions e
 |Correction de Microsoft Defender pour Office 365 (contenu et courrier Office)  |Rôle **Administrateur de la sécurité** attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>**Rôle rechercher et vider** attribué au Centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANT :** si  le rôle Administrateur de la sécurité est attribué uniquement dans le Centre de sécurité & conformité Office 365 ( ), vous ne pourrez pas accéder au Centre de sécurité ou aux fonctionnalités de [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. Vous devez avoir le **rôle Administrateur de la** sécurité attribué dans Azure Active Directory ou le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
-> Les utilisateurs qui ont le rôle **Administrateur général** attribué dans Azure Active Directory peuvent approuver ou rejeter toute action en attente dans le centre de notifications. Toutefois, en tant que meilleure pratique, votre organisation  doit limiter le nombre de personnes à qui le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les **rôles Administrateur** de la sécurité, **Actions** de correction actives et Recherche et **Purge** répertoriés dans le tableau précédent pour les autorisations du centre de gestion des actions.
+> Les utilisateurs qui ont le rôle **Administrateur général** attribué dans Azure Active Directory peuvent approuver ou rejeter toute action en attente dans le centre de notifications. Toutefois, en tant que meilleure pratique, votre organisation  doit limiter le nombre de personnes à qui le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les **rôles Administrateur** de la sécurité, **Actions** de correction actives et Recherche et **Purge** répertoriés dans le tableau précédent pour les autorisations du Centre de sécurité.
 
 ## <a name="next-step"></a>Étape suivante 
 

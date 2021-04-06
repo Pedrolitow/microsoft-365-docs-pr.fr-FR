@@ -1,5 +1,5 @@
 ---
-title: Actions et impacts des phases de migration pour la migration à partir de Microsoft Cloud Deutschland (général)
+title: Actions et impacts des phases de migration pour la migration à partir de Microsoft Cloud Deutschland)
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -18,14 +18,14 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Comprendre les actions et les impacts des phases de migration du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: ca24fff5e8b18128c55288352e65aa3cecfe3d81
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 0cf1358b4170b69d3506062c336a1cf67a2da2de
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476612"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591731"
 ---
-# <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Actions et impacts des phases de migration pour la migration à partir de Microsoft Cloud Deutschland (général)
+# <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Actions et impacts des phases de migration pour la migration à partir de Microsoft Cloud Deutschland
 
 Les migrations de clients de Microsoft Cloud Deutschland (MCD) vers la région « Allemagne » des services globaux Office 365 de Microsoft sont exécutées en tant qu’ensemble de phases et leurs actions configurées pour chaque charge de travail. Cette figure montre les dix phases de migration vers les nouveaux centres de données allemands.
 
@@ -45,8 +45,8 @@ Le processus de migration s’achèvera sur plusieurs semaines en fonction de la
 |Sécurité et conformité|1 à 2 jours|Microsoft|Transition de la sécurité & stratégies de conformité et du contenu.|
 |Skype Entreprise|1 à 2 jours|Microsoft|Transition de Skype Entreprise vers Microsoft Teams.|
 |Power BI & Dynamics 365|15+ jours|Microsoft|Migrez le contenu Power BI et Dynamics 365.|
-|Finaliser Azure AD|1 à 2 jours|Microsoft|Effectuer un cutover client dans le monde entier.|
-|Clean-Up|1 à 2 jours|Client|Nettoyez les connexions héritées à Microsoft Cloud Deutschland, telles que l’confiance de partie de confiance AD FS (Active Directory Federation Services), Azure AD Connect et les redémarrages du client Office.|
+|Finaliser Azure AD|1 à 2 jours|Microsoft|Le client est entièrement à l’échelle du monde.|
+|Clean-Up|1 à 2 jours|Client|Nettoyez les connexions héritées à Microsoft Cloud Deutschland, telles que l’confiance de partie de confiance des services AD FS (Active Directory Federation Services), Azure AD Connect et les redémarrages du client Office.|
 |Points de terminaison désactivés|30 jours|Microsoft|30 jours après la finalisation d’Azure AD, le service Microsoft Cloud Deutschland Azure AD arrêtera l’accès au point de terminaison pour l’organisation en transition. Les demandes de point de terminaison telles que l’authentification échoueront à partir de là par rapport au service Microsoft Cloud Deutschland. |
 
 
@@ -54,36 +54,54 @@ Les phases et leurs actions garantissent que les données et expériences critiq
 
 Les sections suivantes contiennent des actions et des effets pour les charges de travail au fil de différentes phases de la migration. Examinez les tableaux et déterminez les actions ou effets applicables à votre organisation. Assurez-vous que vous êtes prêt à exécuter les étapes des phases respectives, le cas échéant. L’échec des étapes nécessaires peut entraîner une panne du service et retarder l’achèvement de la migration vers les services Office 365.
 
-## <a name="opt-in"></a>Opt-In
+## <a name="phase-opt-in"></a>Phase : Opt-In
 
-**S’applique** à : Tous les clients avec un client Office 365 hébergé dans Microsoft Cloud Deutschland (MCD)
+S’applique à **:** tous les clients avec un client Office 365 hébergé dans Microsoft Cloud Deutschland (MCD) Microsoft ne peuvent pas migrer les clients Office 365 hébergés dans mcd sans le consentement.
 
 | Étapes | Description | Impact |
 |:-------|:-----|:-------|
-| Nous ne pouvons pas migrer des locataires Office 365 hébergés dans le MCD sans le consentement. | Microsoft obtient le droit de migrer de deux manières, ce qui permet à Microsoft d’orchestrer la transition des données et des services vers l’instance des services globaux Office 365. <ol><li>L’administrateur client Office 365 choisit la migration pilotée par Microsoft. </li><li> Les clients renouvellent tous les abonnements dans leur client McD Office 365 après le 1er mai 2020. Nous informerons ces clients du droit de migration chaque mois, attendrons 30 jours pour donner aux clients la possibilité d’annuler, puis nous les choisirons directement.</li></ol> | <ul><li>Le client est marqué comme étant accepté pour la migration et le Centre d’administration affiche la confirmation. </li><li>L’accusé de réception est publié dans le centre de messages du client Office 365. La configuration du service se poursuit à partir des points de terminaison Microsoft Cloud Deutschland. </li><li>L’administrateur client doit surveiller le Centre de messages Office 365 pour les mises à jour sur l’état de la phase de migration. </li></ul>|
+|**Tâche du client**: accorder le consentement pour la migration| Le client donne son consentement pour la migration afin que Microsoft obtient le droit de migrer et d’orchestrer la transition des données et des services vers l’instance des services globaux Office 365. Il existe deux façons <ol><li>L’administrateur client Office 365 choisit la migration pilotée par Microsoft. </li><li> Les clients ont renouvelé tous les abonnements dans leur client McD Office 365 après le 1er mai 2020. Microsoft informe ces clients du droit de migration chaque mois, attend 30 jours pour donner aux clients la possibilité d’annuler, puis de s’y résilier directement.</li></ol> | <ul><li>Le client est marqué comme étant accepté pour la migration et le Centre d’administration affiche la confirmation. </li><li>L’accusé de réception est publié dans le centre de messages du client Office 365. La configuration du service se poursuit à partir des points de terminaison Microsoft Cloud Deutschland. </li><li> </li></ul>
+|**Administrateur client :** surveiller les messages|L’administrateur client doit surveiller le Centre de messages Office 365 pour les mises à jour sur l’état de la phase de migration à partir de cette heure.|Le client peut exécuter les tâches nécessaires dans le temps.
+||||
 
-## <a name="before-the-migration-starts"></a>Avant le début de la migration
+## <a name="phase-1-before-the-migration-starts"></a>Phase 1 : Avant le début de la migration
 
 Assurez-vous que vous êtes familiarisé avec les étapes de préparation de [la migration qui s’appliquent à tous les clients.](ms-cloud-germany-transition-add-pre-work.md)
 
-Si vous avez définie un DNS CNAME appelé _msoid_ dans un ou plusieurs espaces de noms DNS que vous possédez, vous devez supprimer le CNAME jusqu’à la fin de la phase 8 au plus tard. Vous pouvez supprimer le _msoid_ CNAME à tout moment avant la fin de la phase 8. Consultez [les prétravails pour DNS.](ms-cloud-germany-transition-add-pre-work.md#dns)
+Si vous avez définie un DNS CNAME appelé _msoid_ dans un ou plusieurs espaces de noms DNS que vous possédez, vous devez supprimer le CNAME jusqu’à la fin de la phase 8 au plus tard. Vous pouvez supprimer le _msoid_ CNAME à tout moment avant la fin de la phase 8. Consultez [les prétravails pour DNS.](ms-cloud-germany-transition-add-pre-work.md#dns-entries-for-custom-domains)
 
 Si vous utilisez l' sign on unique pour Office 365 et Azure dans l’instance Microsoft Cloud Deutschland, vous devez préparer et planifier votre migration d’abonnement Azure en conséquence. Assurez-vous de bien comprendre [les prétravails de Microsoft Azure.](ms-cloud-germany-transition-add-pre-work.md#microsoft-azure)
 
-## <a name="before-phase-2-starts"></a>Avant le démarrage de la phase 2
+### <a name="azure-ad-connect-with-ad-fs-federation"></a>Azure AD Connect avec la fédération AD FS
+**S’applique** à : Clients avec fédération AD FS
 
-Si vous utilisez ADFS, veillez à la back up de votre [configuration ADFS](ms-cloud-germany-transition-azure-ad.md) avant et après l’ajout de l’confiance de partie de confiance pour le service global Office 365.
+**Lorsqu’elle est** appliquée : avant le démarrage de la phase 2
 
-## <a name="subscription-transfer-phase-3"></a>Transfert d’abonnement (phase 3)
+Si vous utilisez les services AD FS (Active Directory Federation Services), veillez à la back up votre [configuration ADFS](ms-cloud-germany-transition-azure-ad.md) avant et après l’ajout de l’confiance de partie de confiance pour le **service** global Office 365 avant le début de la phase 2.
+
+## <a name="phase-2-azure-ad-migration"></a>Phase 2 : Migration Azure AD
+Au cours de cette phase, Azure Active Directory sera migré vers la nouvelle région de centres de données et deviendra actif. Les anciens points de terminaison Azure AD seront toujours disponibles.
+
+## <a name="phase-3-subscription-transfer"></a>Phase 3 : Transfert d’abonnement
 
 **S’applique** à : Tous les clients avec un client Office 365 hébergé dans Microsoft Cloud Deutschland (MCD)
 
+Les clients Microsoft Cloud Deutschland partenaires ne seront pas migrés. Les clients CSP seront migrés vers les services Office 365 sous le nouveau client de services Office 365 du même partenaire. Après la migration du client, le partenaire peut gérer ce client uniquement à partir du client des services Office 365.
+
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Les abonnements sont transférés et les licences sont réassignées. | Les abonnements aux services globaux Office 365 correspondants sont achetés dans l’instance globale d’Office 365 pour les abonnements Microsoft Cloud Deutschland transférés. Les utilisateurs ayant des licences Microsoft Cloud Deutschland se voit attribuer des licences dans l’instance globale d’Office 365. Les abonnements Microsoft Cloud Deutschland hérités sont supprimés du client de services Office 365 à la fin.| <ul><li>Les modifications apportées aux abonnements existants seront bloquées (par exemple, aucun nouvel achat d’abonnement ou changement de nombre de sièges) au cours de cette phase.</li><li>Les modifications d’attribution de licence seront bloquées.</li><li>L’abonnement Microsoft Cloud Deutschland sera migré vers l’abonnement aux services globaux Office 365 correspondant. L’offre de services globale Office 365 de cet abonnement est définie par Microsoft (également appelée _mappage des offres)._</li><li>Le nombre de fonctionnalités (plans de service) proposées par les services Office 365 peut être supérieur à celui de l’offre Microsoft Cloud Deutschland d’origine. Les licences utilisateur dans les services Office 365 seront affectées de manière équivalente à des fonctionnalités Microsoft Cloud Deutschland similaires (plans de service). Les licences utilisateur de tous les utilisateurs seront automatiquement attribuées aux nouvelles fonctionnalités. L’administrateur doit prendre une action explicite pour désactiver ces licences, si nécessaire. </li><li>Lorsque la migration des abonnements est terminée, les services Office 365 et les abonnements Microsoft Cloud Deutschland sont visibles dans le portail d’administration Office 365, avec l’état des abonnements Microsoft Cloud Deutschland comme étant supprimés. </li><li>Les utilisateurs seront réassignés avec des licences liées aux nouveaux abonnements aux services Office 365. Les processus clients qui ont des dépendances sur les abonnements Microsoft Cloud Deutschland ou les GUID SKU sont rompus et doivent être révisés avec l’offre de services Office 365. </li><li>Les nouveaux abonnements dans les services Office 365 seront achetés avec la nouvelle période (mensuelle/trimestrielle/année), et le client recevra un remboursement au pro total pour le solde inutilisé de l’abonnement Microsoft Cloud Deutschland. </li><li>Les clients Microsoft Cloud Deutschland partenaires ne seront pas migrés. Les clients CSP seront migrés vers les services Office 365 sous le nouveau client de services Office 365 du même partenaire. Après la migration des clients, le partenaire peut gérer ce client uniquement à partir du client des services Office 365. </li><li>Des fonctionnalités supplémentaires sont disponibles (par exemple, Microsoft Planner et Microsoft Flow), sauf si elles sont désactivées par l’administrateur client. Pour plus d’informations sur la désactivation des plans de service affectés aux licences des utilisateurs, voir Désactiver l’accès aux [services Microsoft 365](disable-access-to-services-while-assigning-user-licenses.md)tout en attribuant des licences utilisateur.</li></ul> |
+| Les abonnements sont transférés| L’abonnement Microsoft Cloud Deutschland sera migré vers l’abonnement aux services globaux Office 365 correspondant. <ul><li>L’offre de services globale Office 365 de cet abonnement est définie par Microsoft (également appelée _mappage des offres)._</li><li> Les abonnements aux services globaux Office 365 correspondants sont achetés dans l’instance globale d’Office 365 pour les abonnements Microsoft Cloud Deutschland transférés.</li><li>Les abonnements Microsoft Cloud Deutschland hérités sont supprimés du client de services Office 365 à la fin.</li></ul>| <ul><li>Les modifications apportées aux abonnements existants seront bloquées (par exemple, aucun nouvel achat d’abonnement ou changement de nombre de sièges) au cours de cette phase.</li><li>Les modifications d’attribution de licence seront bloquées.</li><li>Lorsque la migration des abonnements est terminée, les services Office 365 et les abonnements Microsoft Cloud Deutschland sont visibles dans le portail d’administration Office 365, avec l’état des abonnements Microsoft Cloud Deutschland comme étant supprimés. </li><li>Tous les processus clients qui ont des dépendances sur les abonnements Microsoft Cloud Deutschland ou les GUID SKU sont rompus et doivent être révisés avec l’offre de services Office 365. </li><li>Les nouveaux abonnements dans les services Office 365 seront achetés avec la nouvelle période (mensuelle/trimestrielle/année), et le client recevra un remboursement au pro total pour le solde inutilisé de l’abonnement Microsoft Cloud Deutschland. </li></ul> |
+|Les licences sont réassignés|Les utilisateurs ayant des licences Microsoft Cloud Deutschland se voit attribuer des licences dans l’instance globale d’Office 365.|<ul><li>Les utilisateurs seront réassignés avec des licences liées aux nouveaux abonnements aux services Office 365. Les licences utilisateur de tous les utilisateurs sont automatiquement attribuées aux nouvelles fonctionnalités.</li><li>Le nombre de fonctionnalités (plans de service) proposées par les services Office 365 peut être supérieur à celui de l’offre Microsoft Cloud Deutschland d’origine. Les licences utilisateur dans les services Office 365 seront affectées de manière équivalente à des fonctionnalités Microsoft Cloud Deutschland similaires (plans de service). </li></ul> 
+|**Tâche d’administration** Désactiver les fonctionnalités|L’administrateur doit prendre une action explicite pour désactiver ces fonctionnalités, si nécessaire. |<ul><li>Les utilisateurs voient de nouveaux services inconnus dans le portail</li><li>Des fonctionnalités supplémentaires sont disponibles (par exemple, Microsoft Planner et Microsoft Flow), sauf si elles sont désactivées par l’administrateur client. Pour plus d’informations sur la désactivation des plans de service affectés aux licences des utilisateurs, voir Désactiver l’accès aux [services Microsoft 365](disable-access-to-services-while-assigning-user-licenses.md)tout en attribuant des licences utilisateur.</li></ul>
+|**Tâche d’administration**|Réviser les processus clients qui ont des dépendances sur les abonnements Microsoft Cloud Deutschland ou les GUID SKU avec l’offre de services Office 365|Les processus clients continuent de fonctionner.
 ||||
 
-## <a name="sharepoint-online-phase-4"></a>SharePoint Online (phase 4)
+**S’applique** à : Partenaires Microsoft qui utilisent le portail partenaires Office 365
+
+Entre les phases 2 et 3, le Portail partenaires n’est peut-être pas accessible. Pendant ce temps, il se peut que le partenaire ne puisse pas accéder aux informations du client sur le portail partenaire. Étant donné que chaque migration est différente, la durée de l’accessibilité peut être en heures.
+
+
+## <a name="phase-4-sharepoint-online"></a>Phase 4 : SharePoint Online
 
 **S’applique à**: Tous les clients utilisant SharePoint Online
 
@@ -91,21 +109,22 @@ Si vous utilisez toujours des flux de travail SharePoint 2013, limitez l’utili
 
 | Étapes | Description | Impact |
 |:-------|:-----|:-------|
-| SharePoint et OneDrive sont transitionn s | SharePoint Online et OneDrive Entreprise sont migrés de Microsoft Cloud Deutschland vers les services globaux Office 365 au cours de cette phase.<br><ul><li>Les URL Microsoft Cloud Deutschland existantes sont conservées (par exemple, `contoso.sharepoint.de` ).</li><li>Les sites existants sont conservés.</li><li>Les jetons d’authentification côté client qui ont été émis par le service d’émission de jeton de sécurité (STS) dans l’instance des services globaux Microsoft Cloud Deutschland ou Office 365 sont valides pendant la transition.</li></ul>|<ul><li>Le contenu sera en lecture seule pendant deux brèves périodes pendant la migration. Pendant ce temps, attendez-vous à une bannière « Vous ne pouvez pas modifier le contenu » dans SharePoint.</li><li>L’index de recherche ne sera pas conservé et peut prendre jusqu’à 10 jours pour être reconstruit.</li><li>Le contenu SharePoint Online et OneDrive Entreprise sera en lecture seule pendant deux brèves périodes pendant la migration. Les utilisateurs voient une bannière « Vous ne pouvez pas modifier le contenu » brièvement pendant cette période.</li><li>À la fin de la migration SharePoint Online, les résultats de recherche pour le contenu SharePoint Online et OneDrive Entreprise peuvent être indisponibles pendant la reconstruction de l’index. Pendant cette période, les requêtes de recherche peuvent ne pas renvoyer de résultats complets. Les fonctionnalités qui dépendent d’index de recherche, telles que SharePoint Online News, peuvent être affectées lorsque la réindexation est terminée.</li><li>Les flux de travail SharePoint 2013 seront rompus lors de la migration et doivent être republiés après la migration.</li></ul>|
+| SharePoint et OneDrive sont transitionn s | SharePoint Online et OneDrive Entreprise sont migrés de Microsoft Cloud Deutschland vers les services globaux Office 365 au cours de cette phase.<br><ul><li>Les URL Microsoft Cloud Deutschland existantes sont conservées (par exemple, `contoso.sharepoint.de` ).</li><li>Les sites existants sont conservés.</li><li>Les jetons d’authentification côté client qui ont été émis par le service d’émission de jeton de sécurité (STS) dans l’instance des services globaux Microsoft Cloud Deutschland ou Office 365 sont valides pendant la transition.</li></ul>|<ul><li>Le contenu sera en lecture seule pendant deux brèves périodes pendant la migration. Pendant ce temps, attendez-vous à une bannière « Vous ne pouvez pas modifier le contenu » dans SharePoint.</li><li>L’index de recherche ne sera pas conservé et peut prendre jusqu’à 10 jours pour être reconstruit.</li><li>Le contenu SharePoint Online et OneDrive Entreprise sera en lecture seule pendant deux brèves périodes pendant la migration. Les utilisateurs voient une bannière « Vous ne pouvez pas modifier le contenu » brièvement pendant cette période.</li><li>À la fin de la migration SharePoint Online, les résultats de recherche pour le contenu SharePoint Online et OneDrive Entreprise peuvent être indisponibles pendant la reconstruction de l’index. Pendant cette période, les requêtes de recherche peuvent ne pas renvoyer de résultats complets. Les fonctionnalités qui dépendent d’index de recherche, telles que SharePoint Online News, peuvent être affectées lorsque la réindexation est terminée.</li><li>Les flux de travail SharePoint 2013 seront rompus lors de la migration et doivent être republiés après la migration.</li></ul>
+|**Administrateur SPO :** republier les flux de travail SharePoint 2013| Un administrateur SharePoint Online republiera les flux de travail SharePoint 2013 après la migration.|Les flux de travail SharePoint 2013 sont disponibles.
+|**Utilisateur PowerShell :** mise à jour vers le nouveau module| Tous les utilisateurs du module SharePoint Online Powershell doivent mettre à jour le module/Microsoft.SharePointOnline.CSOM vers la version 16.0.20717.12000 ou supérieure une fois la migration SharePoint Online terminée. L’achèvement est communiqué dans le centre de messages.| SharePoint Online via PowerShell ou le modèle objet côté client n’échoue plus.
 ||||
 
 Considérations supplémentaires :
 
 - Si votre organisation utilise toujours des flux de travail SharePoint 2010, ils ne fonctionneront plus après le 31 décembre 2021. Les flux de travail SharePoint 2013 restent pris en charge, bien qu’ils restent désactivés par défaut pour les nouveaux locataires à compter du 1er novembre 2020. Une fois la migration vers le service SharePoint Online terminée, nous vous recommandons de passer à Power Automate ou à d’autres solutions pris en charge.
 
-- Les clients Microsoft Cloud Deutschland dont l’instance SharePoint Online n’est pas encore migre doivent rester sur le module SharePoint Online PowerShell/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 ou une version inférieure. Dans le cas contraire, les connexions à SharePoint Online via PowerShell ou le modèle objet côté client échoueront.
+- Les clients Microsoft Cloud Deutschland dont l’instance SharePoint Online n’a pas encore migré doivent rester sur le module SharePoint Online PowerShell/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 ou une version inférieure. Dans le cas contraire, les connexions à SharePoint Online via PowerShell ou le modèle objet côté client échoueront.
 
-- Les clients Microsoft Cloud Deutschland dont l’instance SharePoint Online est migre doivent mettre à jour le module SharePoint Online PowerShell/Microsoft.SharePointOnline.CSOM vers la version 16.0.20717.12000 ou supérieure. Dans le cas contraire, les connexions à SharePoint Online via PowerShell ou le modèle objet côté client échoueront.
 
 > [!NOTE]
-> Dans le cas où vous utilisez eDiscovery, assurez-vous de connaître l’expérience de [migration eDiscovery.](ms-cloud-germany-transition-add-experience.md#ediscovery-phase-4-to-the-end-of-phase-9)
+> Si vous utilisez eDiscovery, assurez-vous de connaître l’expérience de [migration eDiscovery.](ms-cloud-germany-transition-add-experience.md)
 
-## <a name="exchange-online-phase-5"></a>Exchange Online (phase 5)
+## <a name="phase-5-exchange-online"></a>Phase 5 : Exchange Online 
 
 **S’applique à :** Tous les clients utilisant Exchange Online
 
@@ -113,41 +132,50 @@ Si vous utilisez Exchange Online hybride : les administrateurs hybrides Exchange
 
 À la fin de la **phase de migration 9** (lorsque l’avis du Centre de messages est publié), vous devez exécuter à nouveau le HCW à l’aide des paramètres d’Office 365 dans le monde entier pour faire pointer vos systèmes locaux vers les services globaux Office 365.
 
-Si vous souhaitez modifier les photos de l’utilisateur au cours de la phase 5, consultez [Exchange Online Set-UserPhoto phase 5](ms-cloud-germany-transition-add-experience.md#exchange-online-set-userphoto-during-phase-5)
+Si vous souhaitez modifier les photos de l’utilisateur au cours de la phase 5, consultez [Exchange Online Set-UserPhoto phase 5](#exchange-online-powershell)
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-|Arrêtez ou supprimez les déplacements de boîtes aux lettres d’intégration ou de suppression, à savoir ne pas déplacer de boîtes aux lettres entre Exchange local et Exchange Online.  | Cela permet de s’assurer que les demandes de déplacement de boîte aux lettres n’échouent pas avec une erreur. | Si vous ne le faites pas, le service ou les clients Office risquent d’échouer. |
-| Les boîtes aux lettres Exchange Online sont déplacées de Microsoft Cloud Deutschland vers les services globaux Office 365.| La configuration d’Exchange Online ajoute la nouvelle région allemande locale à l’organisation en transition. La région des services globaux Office 365 est définie par défaut, ce qui permet au service d’équilibrage de charge interne de redistribuer les boîtes aux lettres vers la région par défaut appropriée dans les services Office 365. Dans cette transition, les utilisateurs des deux côtés (MCD ou services globaux) sont dans la même organisation et peuvent utiliser l’un ou l’autre point de terminaison d’URL. |<ul><li>Transition d’utilisateurs et de services à partir de vos URL MCD héritées (outlook.office.de) vers les nouvelles URL de services Office 365 ( `https://outlook.office365.com` ).</li><li>Les utilisateurs peuvent continuer à accéder au service via les URL MCD héritées pendant la migration, mais ils doivent arrêter d’utiliser les URL héritées à la fin de la migration.</li><li>Les utilisateurs doivent passer à l’utilisation du portail Office mondial pour les fonctionnalités Office Online (Calendrier, Courrier, Personnes). La navigation vers les services qui ne sont pas encore migrés vers les services Office 365 ne fonctionne pas tant qu’ils ne sont pas migrés. </li><li>Outlook Web App ne fournit pas l’expérience de dossier public pendant la migration. </li></ul>|
-| Mettre à jour les paramètres DNS personnalisés pour la découverte automatique| Les paramètres DNS gérés par le client pour la découverte automatique qui pointent actuellement vers Microsoft Cloud Deutschland doivent être mis à jour pour faire référence au point de terminaison global Office 365 à la fin de la phase Exchange Online (phase 5). <br> Les entrées DNS existantes avec CNAME pointant vers autodiscover-outlook.office.de doivent être mises à jour pour pointer vers autodiscover.outlook.com. |  Les demandes de disponibilité et les appels de découverte de service via le point de découverte automatique pointent directement vers les services Office 365. Les clients qui n’effectuent pas ces mises à jour DNS peuvent être face à des problèmes de service de découverte automatique lors de la finalisation de la migration. |
-| Les utilisateurs doivent mettre à jour la configuration du client POP3, IMAP4, SMTP. | Les utilisateurs qui ont des connexions d’appareil aux points de terminaison Microsoft Cloud Deutschland pour les protocoles clients POP3, IMAP4, SMTP doivent mettre à jour manuellement leurs appareils clients pour basculer vers les points de terminaison [Office 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) dans le monde en même temps que leur migration de boîtes aux lettres vers la région Office 365 Germany. <br> smtp.office365.com : SMTP (TCP:587), outlook.office365.com : IMAP4 (TCP:993), POP3 (TCP:995)| Les utilisateurs de ces protocoles doivent basculer pour utiliser Outlook Mobile ou Outlook sur le web pendant que leur boîte aux lettres est transionée et mettre à jour les paramètres IMAP4, POP3, SMTP sur les appareils clients vers les nouveaux points de terminaison à la fin. L’échec de la mise à jour des points de terminaison clients entraîne des échecs de connexion client par rapport à Microsoft Cloud Deutschland lors de la migration des boîtes aux lettres utilisateur. |
+|**Administrateur :** arrêter les déplacements de boîtes aux lettres|Arrêtez ou supprimez les déplacements de boîtes aux lettres d’intégration ou de suppression, à savoir ne pas déplacer de boîtes aux lettres entre Exchange local et Exchange Online.  | Cela permet de s’assurer que les demandes de déplacement de boîte aux lettres n’échouent pas avec une erreur. Si vous ne le faites pas, le service ou les clients Office risquent d’échouer. |
+| La nouvelle région « Allemagne » est ajoutée à la configuration de l’organisation. | La configuration d’Exchange Online ajoute la nouvelle région allemande locale à l’organisation en transition. | |
+| Les boîtes aux lettres Exchange Online sont déplacées de Microsoft Cloud Deutschland vers les services globaux Office 365.| La région des services globaux Office 365 est définie par défaut, ce qui permet au service d’équilibrage de charge interne de redistribuer les boîtes aux lettres vers la région par défaut appropriée dans les services Office 365. Dans cette transition, les utilisateurs des deux côtés (MCD ou services globaux) sont dans la même organisation et peuvent utiliser l’un ou l’autre point de terminaison d’URL. |<ul><li>Transition d’utilisateurs et de services à partir de vos URL MCD héritées (outlook.office.de) vers les nouvelles URL de services Office 365 ( `https://outlook.office365.com` ).</li><li>Les utilisateurs peuvent continuer à accéder au service via les URL MCD héritées pendant la migration, mais ils doivent arrêter d’utiliser les URL héritées à la fin de la migration.</li><li>Les utilisateurs doivent passer à l’utilisation du portail Office mondial pour les fonctionnalités Office Online (Calendrier, Courrier, Personnes). La navigation vers les services qui ne sont pas encore migrés vers les services Office 365 ne fonctionne pas tant qu’ils ne sont pas migrés. </li><li>Outlook Web App ne fournit pas l’expérience de dossier public pendant la migration. </li></ul>|
+| **Admin**: mettre à jour les paramètres DNS personnalisés pour la découverte automatique| Les paramètres DNS gérés par le client pour la découverte automatique qui pointent actuellement vers Microsoft Cloud Deutschland doivent être mis à jour pour faire référence au point de terminaison global Office 365 à la fin de la phase Exchange Online (phase 5). <br> Les entrées DNS existantes avec CNAME pointant vers autodiscover-outlook.office.de doivent être mises à jour pour pointer vers autodiscover.outlook.com. |  Les demandes de disponibilité et les appels de découverte de service via le point de découverte automatique pointent directement vers les services Office 365. Les clients qui n’effectuent pas ces mises à jour DNS peuvent être face à des problèmes de service de découverte automatique lors de la finalisation de la migration. |
 ||||
 
-Considérations supplémentaires :
-<!--
-    The statement below is not clear. What does myaccount.microsoft.com mean?
--->
+### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
+**S’applique à :** Administrateurs Exchange Online utilisant Exchange Online PowerShell
 
-- `myaccount.microsoft.com` fonctionne uniquement après le passage à la phase 9 du client. Les liens produisent des messages d’erreur « Un problème s’est produit » jusqu’à ce moment-là.
-
-- Les utilisateurs d’Outlook Web App qui accèdent à une boîte aux lettres partagée dans l’autre environnement (par exemple, un utilisateur de l’environnement MCD accède à une boîte aux lettres partagée dans l’environnement global) seront invités à s’authentifier une deuxième fois. L’utilisateur doit d’abord s’authentifier et accéder à sa boîte aux lettres dans, puis ouvrir la boîte aux lettres `outlook.office.de` partagée qui se trouve dans `outlook.office365.com` . Ils devront s’authentifier une deuxième fois lors de l’accès aux ressources partagées hébergées dans l’autre service.
-
-- Pour les clients Microsoft Cloud Deutschland existants ou ceux en transition, lorsqu’une boîte aux lettres partagée est ajoutée à Outlook à l’aide de File **> Info > Add Account**, l’affichage des autorisations de calendrier peut échouer (le client Outlook tente d’utiliser l’API `https://outlook.office.de/api/v2.0/Me/Calendars` Rest). Les clients qui souhaitent ajouter un compte pour afficher les autorisations de calendrier peuvent ajouter la clé de Registre comme décrit dans les modifications de l’expérience utilisateur pour le partage d’un calendrier dans [Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) afin de garantir la réussite de cette action. Cette clé de Registre peut être déployée à l’échelle de l’organisation à l’aide de la stratégie de groupe.
-
-- Pendant la phase de migration, l’utilisation des cmdlets **PowerShell New-migrationEndpoint,** **Set-MigrationEndpoint** et **Test-MigrationsServerAvailability** peut entraîner des erreurs (erreur sur le proxy). Cela se produit lorsque la boîte aux lettres d’arbitrage a migré vers le monde entier, mais pas la boîte aux lettres d’administration, et inversement. Pour résoudre ce problème, lors de la création de la session PowerShell du client, utilisez la boîte aux lettres d’arbitrage comme conseil de routage dans **connectionUri**. Par exemple :
+Pendant la phase de migration, l’utilisation des cmdlets **PowerShell New-MigrationEndpoint,** **Set-MigrationEndpoint** et **Test-MigrationsServerAvailability** peut entraîner des erreurs (erreur sur le proxy). Cela se produit lorsque la boîte aux lettres d’arbitrage a migré vers le monde entier, mais pas la boîte aux lettres d’administration, et inversement. Pour résoudre ce problème, lors de la création de la session PowerShell du client, utilisez la boîte aux lettres d’arbitrage comme conseil de routage dans **connectionUri**. Par exemple :
 
 ```powershell
 New-PSSession 
     -ConfigurationName Microsoft.Exchange 
-    -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de"
+    -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@<tenant>.onmicrosoft.de"
     -Credential $UserCredential
     -Authentication Basic
     -AllowRedirection
 ```
+L’utilisation de la cmdlet PowerShell **Set-UserPhoto** entraîne une erreur si une boîte aux lettres utilisateur a été miggrée, mais pas une boîte aux lettres d’administrateur, ou inversement. Dans ce cas, un administrateur doit transmettre l’ID de messagerie de l’utilisateur dont la photo doit être modifiée lors de la création de la `ConnectionUri` session PowerShell du client : 
+```powershell
+-ConnectionUri "https://outlook.office.de/powershell-liveid?email=<user_email>" 
+```
+ où `<user_email>` se trouve l’espace réservé pour l’ID de messagerie de la boîte aux lettres de l’utilisateur. 
+
+Considérations supplémentaires :
+<!--
+    The statement below is not clear. What does myaccount.microsoft.com mean?
+
+
+- `myaccount.microsoft.com` will only work after the tenant cutover in phase 9. Links will produce "something went wrong" error messages until that time.
+-->
+- Les utilisateurs d’Outlook Web App qui accèdent à une boîte aux lettres partagée dans l’autre environnement (par exemple, un utilisateur de l’environnement MCD accède à une boîte aux lettres partagée dans l’environnement global) seront invités à s’authentifier une deuxième fois. L’utilisateur doit d’abord s’authentifier et accéder à sa boîte aux lettres dans, puis ouvrir la boîte aux lettres `outlook.office.de` partagée qui se trouve dans `outlook.office365.com` . Ils devront s’authentifier une deuxième fois lors de l’accès aux ressources partagées hébergées dans l’autre service.
+
+- Pour les clients Microsoft Cloud Deutschland existants ou ceux en transition, lorsqu’une boîte aux lettres partagée est ajoutée à Outlook à l’aide de File **> Info > Add Account**, l’affichage des autorisations de calendrier peut échouer (le client Outlook tente d’utiliser l’API `https://outlook.office.de/api/v2.0/Me/Calendars` Rest). Les clients qui souhaitent ajouter un compte pour afficher les autorisations de calendrier peuvent ajouter la clé de Registre comme décrit dans les modifications de l’expérience utilisateur pour le partage d’un calendrier dans [Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) afin de garantir la réussite de cette action. Cette clé de Registre peut être déployée à l’échelle de l’organisation à l’aide de la stratégie de groupe.
 
 Pour en savoir plus sur les différences entre les organisations lors de la migration et après la migration des ressources Exchange Online, examinez les informations relatives à l’expérience client pendant la migration vers les [services Office 365](ms-cloud-germany-transition-experience.md)dans les nouvelles régions de centres de données allemandes.
 
-## <a name="exchange-online-protection--security-and-compliance-phase-6"></a>Exchange Online Protection/ Security and Compliance (Phase 6)
+
+## <a name="phase-6-exchange-online-protection--security-and-compliance"></a>Phase 6 : Exchange Online Protection / Sécurité et conformité
 
 **S’applique à :** Tous les clients utilisant Exchange Online<br>
 
@@ -155,10 +183,10 @@ Les fonctionnalités d’Exchange Online Protection (EOP) principales sont copi�
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Migration du routage Exchange Online et historique des détails des messages. | Exchange Online permet le routage des hôtes externes vers Office 365. Les enregistrements MX externes sont acheminés vers le service EOP. La configuration du client et les détails historiques sont migrés. |<ul><li>Les entrées DNS gérées par Microsoft sont mises à jour depuis Office 365 Germany EOP vers les services Office 365.</li><li>Les clients doivent attendre 30 jours après la double écriture EOP pour la migration EOP. Dans le cas contraire, il peut y avoir une perte de données.</li></ul>|
+| Migration du routage Exchange Online et historique des détails des messages. | Exchange Online permet le routage d’hôtes externes vers Office 365. Les enregistrements MX externes sont acheminés vers le service EOP. La configuration du client et les détails historiques sont migrés. |<ul><li>Les entrées DNS gérées par Microsoft sont mises à jour depuis Office 365 Germany EOP vers les services Office 365.</li><li>Les clients doivent attendre 30 jours après la double écriture EOP pour la migration EOP. Dans le cas contraire, il peut y avoir une perte de données.</li></ul>|
 ||||
 
-## <a name="skype-for-business-online-phase-7"></a>Skype Entreprise Online (phase 7)
+## <a name="phase-7-skype-for-business-online"></a>Phase 7 : Skype Entreprise Online
 
 **S’applique à :** Tous les clients utilisant Skype Entreprise Online
 
@@ -182,7 +210,7 @@ $userCredential = Get-Credential
 Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https://admin4E.online.lync.com/OcsPowershellOAuth"
 ```
 
-## <a name="dynamics-365-phase-8"></a>Dynamics 365 (phase 8)
+## <a name="phase-8-dynamics-365"></a>Phase 8 : Dynamics 365
 
 **S’applique à :** Tous les clients utilisant Microsoft Dynamics 365
 
@@ -197,18 +225,18 @@ Les clients avec Dynamics 365 ont besoin d’un engagement supplémentaire pour 
 
 \* (i) Les clients avec Microsoft Dynamics 365 doivent prendre des mesures dans ce scénario de migration, comme défini par le processus de migration fourni. (ii) Si le client ne parvient pas à prendre des mesures, Microsoft ne pourra pas terminer la migration. (iii) Lorsque Microsoft ne parvient pas à terminer la migration en raison de l’inaction du client, l’abonnement du client expirera le 29 octobre 2021.
 
-## <a name="power-bi-phase-8"></a>Power BI (phase 8)
+## <a name="phase-8-power-bi"></a>Phase 8 : Power BI
 
 **S’applique à :** Tous les clients utilisant Microsoft Power BI (PBI)
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Migration des ressources Power BI | Les clients avec Microsoft Power BI (PBI) seront engagés par Microsoft Engineering ou Microsoft FastTrack après avoir déclenché manuellement un outil de migration PBI existant pour migrer Power BI vers l’instance des services globaux Office 365.\*\* |<ul><li>Les éléments Power BI suivants _ne_ seront pas transitionn et devront être re-créés : <</li><li>Jeux de données en temps réel (par exemple, jeux de données de diffusion en continu ou push). </li><li>Configuration et source de données de la passerelle de données power BI sur site. </li><li>Les rapports créés en plus des jeux de données en temps réel ne seront pas disponibles après la migration et doivent être recréés. </li><li>Les services Power BI ne seront pas disponibles pour les utilisateurs pendant la transition. L’indisponibilité du service ne doit pas être plus de 24 heures.</li><li>Les utilisateurs doivent reconfigurer les sources de données et leurs passerelles de données locales avec le service Power BI après la migration.  Tant qu’ils ne le feront pas, les utilisateurs ne pourront pas utiliser ces sources de données pour effectuer une actualisation programmée et/ou des requêtes directes sur ces sources de données. </li><li>Les capacités et les espaces de travail premium ne peuvent pas être migrés. Les clients doivent supprimer toutes les capacités avant la migration et les re-créer après la migration. Déplacez les espaces de travail vers les capacités comme vous le souhaitez.</li></ul>  |
+| Migration des ressources Power BI | Les clients avec Microsoft Power BI (PBI) seront engagés par Microsoft Engineering ou Microsoft FastTrack après avoir déclenché manuellement un outil de migration PBI existant pour migrer Power BI vers l’instance des services globaux Office 365.\*\* |<ul><li>Les éléments Power BI suivants _ne_ seront pas transitionn et devront être re-créés : <</li><li>Jeux de données en temps réel (par exemple, jeux de données de diffusion en continu ou push). </li><li>Configuration et source de données de la passerelle de données power BI sur site. </li><li>Les rapports créés en plus des jeux de données en temps réel ne seront pas disponibles après la migration et doivent être recréés. </li><li>Les services Power BI ne seront pas disponibles pour les utilisateurs pendant la transition. L’indisponibilité du service ne doit pas être plus de 24 heures.</li><li>Les utilisateurs doivent reconfigurer les sources de données et leurs passerelles de données locales avec le service Power BI après la migration.  Tant qu’ils ne le font pas, les utilisateurs ne pourront pas utiliser ces sources de données pour effectuer une actualisation programmée et/ou des requêtes directes sur ces sources de données. </li><li>Les capacités et les espaces de travail premium ne peuvent pas être migrés. Les clients doivent supprimer toutes les capacités avant la migration et les re-créer après la migration. Déplacez les espaces de travail vers les capacités souhaitées.</li></ul>  |
 ||||
 
 \*\* (i) Les clients avec Microsoft Power BI doivent prendre des mesures dans ce scénario de migration, comme défini par le processus de migration fourni. (ii) Si le client ne parvient pas à prendre des mesures, Microsoft ne pourra pas terminer la migration. (iii) Lorsque Microsoft ne parvient pas à terminer la migration en raison de l’inaction du client, l’abonnement du client expirera le 29 octobre 2021.
 
-## <a name="azure-ad-finalization-phase-9-10"></a>Finalisation d’Azure AD (phase 9, 10)
+## <a name="phase-9--10-azure-ad-finalization"></a>Phase 9 & 10 : Finalisation d’Azure AD
 
 **S’applique à :** Tous les clients
 
@@ -224,43 +252,19 @@ Lorsque le client Office 365 termine l’étape finale de la migration [Finalisa
 
 **S’applique à :** Tous les clients utilisant des applications de bureau Office (Word, Excel, PowerPoint, Outlook, ...)
 
-Les clients Office 365 qui migrent vers la région « Allemagne » exigent que tous les utilisateurs se ferment, se connectent à Office 365 et se connectent de nouveau à toutes les applications de bureau Office (Word, Excel, PowerPoint, Outlook, etc.) et au client OneDrive Entreprise une fois que la migration du client a atteint la phase 9. La dédauthentification permet aux services Office d’obtenir de nouveaux jetons d’authentification à partir du service Azure AD global.
+Les clients Office 365 qui migrent vers la région « Allemagne » exigent que tous les utilisateurs se ferment, se connectent à Office 365 et se connectent à toutes les applications de bureau Office (Word, Excel, PowerPoint, Outlook, etc.) et au client OneDrive Entreprise une fois que la migration du client a atteint la phase 9. La dédauthentification permet aux services Office d’obtenir de nouveaux jetons d’authentification à partir du service Azure AD global.
 
 Assurez-vous que vous avez terminé la [procédure de prétravail pour les appareils](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) mobiles.
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Clients, Office Online pendant le cutover client Office, Azure AD finalise l’étendue du client pour pointer vers les services Office 365. | Cette modification de configuration permet aux clients Office de mettre à jour et de pointer vers les points de terminaison des services Office 365. | <ul><li>Avertissez les utilisateurs de fermer toutes les applications _Office,_ puis connectez-vous (ou forcez les clients à redémarrer et les utilisateurs à se connecter) pour permettre aux clients Office de récupérer la modification. </li><li>Informez les utilisateurs  et le personnel du service d’aide que les utilisateurs peuvent voir une bannière Office qui les invite à réactiver les applications Office dans les 72 heures qui s’ernt après le passage à la ligne. </li><li>Toutes les applications Office sur des ordinateurs personnels doivent être fermées, et les utilisateurs doivent se fermer, puis se connectent à nouveau. Dans la barre d’activation jaune, connectez-vous pour vous réactiver aux services Office 365.</li><li>Les ordinateurs partagés nécessitent des actions similaires à des ordinateurs personnels et ne nécessitent pas de procédure spéciale. </li><li>Sur les appareils mobiles, les utilisateurs doivent se fermer des applications, les fermer, puis se connecter à nouveau.</li></ul>|
+| Clients, Office Online pendant le cutover client Office, Azure AD finalise l’étendue du client pour pointer vers les services Office 365. | Cette modification de configuration permet aux clients Office de mettre à jour et de pointer vers les points de terminaison des services Office 365. | <ul><li>Avertissez les utilisateurs de fermer toutes les applications _Office,_ puis de se ré-inscrire (ou de forcer les clients à redémarrer et les utilisateurs à se connecter) pour permettre aux clients Office de récupérer la modification. </li><li>Informez les utilisateurs  et le personnel du service d’aide que les utilisateurs peuvent voir une bannière Office les invite à réactiver les applications Office dans les 72 heures qui s s’ernt après le passage à la ligne. </li><li>Toutes les applications Office sur des ordinateurs personnels doivent être fermées, et les utilisateurs doivent se fermer, puis se connectent à nouveau. Dans la barre d’activation jaune, connectez-vous pour vous réactiver aux services Office 365.</li><li>Les ordinateurs partagés nécessitent des actions similaires à des ordinateurs personnels et ne nécessitent pas de procédure spéciale. </li><li>Sur les appareils mobiles, les utilisateurs doivent se fermer des applications, les fermer, puis se connecter à nouveau.</li></ul>|
 ||||
 
-## <a name="line-of-business-apps"></a>Applications métier
+## <a name="phase-9-line-of-business-apps"></a>Phase 9 : Applications métier
 
 Si vous avez des applications métier, [assurez-vous](ms-cloud-germany-transition-add-pre-work.md#line-of-business-apps) que vous avez terminé la procédure de prétravail pour les applications métier.
 
-## <a name="office-services"></a>Office Services
-
-Le dernier service utilisé dans Office est un passage de Microsoft Cloud Deutschland aux services globaux Office 365, et non une migration. Seuls les liens de LRU du côté des services globaux Office 365 seront visibles après la migration à partir du portail Office.com client. Les liens de MRU provenant de Microsoft Cloud Deutschland ne sont pas visibles en tant que liens de MRU dans les services globaux Office 365. Dans les services globaux Office 365, les liaisons de gestion des données sont accessibles uniquement une fois que la migration du client a atteint la phase 9.
-
 ## <a name="post-migration"></a>Après la migration
 
-Veillez à lire l’article sur les activités [post-migration](ms-cloud-germany-transition-add-experience.md#post-migration) et à les exécuter en conséquence.
-
-## <a name="more-information"></a>Plus d’informations
-
-Mise en place :
-
-- [Migration de Microsoft Cloud Deutschland vers les services Office 365 dans les nouvelles régions de centres de données allemandes](ms-cloud-germany-transition.md)
-- [Aide à la migration de Microsoft Cloud Deutschland : ](https://aka.ms/germanymigrateassist)
-- [Comment opter pour une migration](ms-cloud-germany-migration-opt-in.md)
-- [Expérience client pendant la migration](ms-cloud-germany-transition-experience.md)
-
-Transition :
-
-- [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
-- Informations supplémentaires pour [Azure AD,](ms-cloud-germany-transition-azure-ad.md) [les appareils,](ms-cloud-germany-transition-add-devices.md) [les expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
-
-Applications cloud :
-
-- [Informations sur le programme de migration Dynamics 365](/dynamics365/get-started/migrate-data-german-region)
-- [Informations sur le programme de migration Power BI](/power-bi/admin/service-admin-migrate-data-germany)
-- [Prise en main de votre mise à niveau vers Microsoft Teams](/microsoftteams/upgrade-start-here)
+Veillez à lire l’article sur les activités [post-migration](ms-cloud-germany-transition-add-experience.md) et à les exécuter en conséquence.

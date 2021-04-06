@@ -16,18 +16,16 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Découvrez comment configurer la collaboration de contenu sécurisée dans Teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: 88cb3557f1c150a9c9fd68ba362fcc9c424aa73a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 804307b3035f0d2246dc0ac541cce2d63506c351
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906467"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591909"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
+# <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Configurer une collaboration sécurisée avec Microsoft 365 et Microsoft Teams
 
 La possibilité de partager facilement des informations avec les bonnes personnes tout en empêchant le partage de partage est essentielle au succès d’une organisation. Cela inclut la possibilité de partager des données sensibles en toute sécurité avec uniquement ceux qui doivent y avoir accès. Selon le projet, cela peut inclure le partage de données sensibles avec des personnes extérieures à votre organisation.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Ces conseils de solution de collaboration incluent deux composants pour vous aider :
 - Déployer Microsoft Teams avec le niveau de protection le plus élevé pour chaque projet
@@ -36,6 +34,8 @@ Ces conseils de solution de collaboration incluent deux composants pour vous aid
 ![Déployer Teams avec une protection appropriée et configurer le partage externe avec les paramètres de sécurité appropriés](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 Si les outils de collaboration de contenu souples et faciles à utiliser ne sont pas disponibles, les utilisateurs collaborent souvent par e-mail de documents. Il s’agit d’une méthode de collaboration fastidieuse et sujette aux erreurs, qui peut augmenter le risque de partage inapproprié d’informations. Si les personnes trouvent le partage d’informations trop difficile, elles peuvent revenir à l’utilisation de produits grand public qui ne sont pas régis par le secteur de l’information. Cela peut présenter un risque encore plus élevé.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Avec Microsoft 365, vous pouvez déployer Teams avec une variété de configurations qui vous aident :
 
@@ -50,11 +50,11 @@ La plupart des organisations ont une variété d’informations, avec différent
 - Personnes spécifiques au sein de l’organisation
 - Des personnes spécifiques à l’intérieur et à l’extérieur de l’organisation
 
-Les informations telles que les brochures marketing sont destinées à un partage à l’extérieur de l’organisation. Les informations telles que les menus de menu de menu ne sont pas destinées au partage externe, mais n’auraient aucun impact sur l’entreprise si elles étaient partagées en externe. Ces types d’informations ont peu ou pas besoin d’une protection.
+Les informations telles que les brochures marketing sont destinées à un partage à l’extérieur de l’organisation. Les informations telles que les menus de menu de menu ne sont pas destinées au partage externe, mais n’auraient aucun impact sur l’entreprise si elles étaient partagées en externe. Ces types d’informations n’ont besoin que de peu ou pas de protection.
 
 Ces mêmes brochures marketing, en cours de développement, peuvent uniquement être partagées au sein de l’organisation. Dans ce cas, les paramètres de partage par défaut dans Teams peuvent être suffisants.
 
-Les informations sur un nouveau produit en cours de développement peuvent être considérées comme sensibles, même au sein de l’organisation. Un degré de protection plus élevé peut être approprié dans ce cas. Vous pouvez restreindre l’accès à ces informations aux membres d’une équipe spécifique, par exemple. Selon le projet, vous devrez peut-être collaborer avec des personnes extérieures à votre organisation, telles qu’un fournisseur ou une organisation partenaire.
+Les informations sur un nouveau produit en cours de développement peuvent être considérées comme sensibles, même au sein de l’organisation. Un niveau de protection plus élevé peut être approprié dans ce cas. Vous pouvez restreindre l’accès à ces informations aux membres d’une équipe spécifique, par exemple. Selon le projet, vous devrez peut-être collaborer avec des personnes extérieures à votre organisation, telles qu’un fournisseur ou une organisation partenaire.
 
 Les informations qui sont essentielles au succès de votre organisation ou qui ont des exigences strictes en matière de sécurité ou de conformité peuvent nécessiter des niveaux de protection encore plus élevés.
 
@@ -68,7 +68,7 @@ Pour configurer la collaboration sécurisée, vous utilisez ces fonctionnalités
 |:-------|:-----|:-------|
 | Microsoft Defender pour Office 365 | Pièces jointes sécurisées pour SPO, OneDrive et Teams ; Documents sécurisés ; Liens sécurisés pour Teams    | Microsoft 365 E1, E3 et E5 |
 | SharePoint    | Stratégies de partage de sites et de fichiers, autorisations de partage de site, liens de partage, demandes d’accès, paramètres de partage invité de site | Microsoft 365 E1, E3 et E5 |
-| Microsoft Teams   | Accès invité, équipes privées, canaux privés | Microsoft 365 E1, E3 et E5 |
+| Microsoft Teams   | Accès invité, équipes privées, canaux privés | Microsoft 365 E1, E3 et E5 |
 | Conformité Microsoft 365  | Étiquettes de confidentialité    | Microsoft 365 E3 et E5 |
 
 ### <a name="collaboration-governance"></a>Gouvernance de la collaboration
@@ -164,7 +164,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 
 |Formation :|Protégez les identités et l’accès avec Azure Active Directory|
 |:---|:---|
-|![Icône De formation identité et accès](../media/protect-identity-and-access-with-microsoft-365.svg)|Le parcours d’apprentissage Identité et accès aborde les dernières technologies de gestion des identités et accès, ainsi que les outils de renforcement de l’authentification, et donne des conseils sur la protection des identités au sein de votre organisation. Les technologies de gestion des identités et accès de Microsoft vous permettent de sécuriser l’identité de votre organisation (locale ou dans le cloud) et permettent à vos utilisateurs de travailler en toute sécurité où qu’ils se trouvent. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>2 h 52 min - Parcours d’apprentissage - 6 modules|
+|![Icône de formation sur les identités et l’accès](../media/protect-identity-and-access-with-microsoft-365.svg)|Le parcours d’apprentissage Identité et accès aborde les dernières technologies de gestion des identités et accès, ainsi que les outils de renforcement de l’authentification, et donne des conseils sur la protection des identités au sein de votre organisation. Les technologies de gestion des identités et accès de Microsoft vous permettent de sécuriser l’identité de votre organisation (locale ou dans le cloud) et permettent à vos utilisateurs de travailler en toute sécurité où qu’ils se trouvent. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>2 h 52 min - Parcours d’apprentissage - 6 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-identity-overview/introduction/)
@@ -201,7 +201,7 @@ L’architecture logique de services de productivité dans Microsoft 365, foncti
 
 Lorsque vous êtes prêt à déployer cette solution, poursuivez les étapes suivantes :
 1. Configurez les [trois différents niveaux de protection pour Teams.](configure-teams-three-tiers-protection.md)
-2. Configurez les paramètres pour [le partage d’informations sensibles avec des personnes extérieures à votre organisation.](collaborate-with-people-outside-your-organization.md)
+2. Configurez les paramètres pour [le partage d’informations de toute sensibilité avec des personnes extérieures à votre organisation.](collaborate-with-people-outside-your-organization.md)
 
 ## <a name="see-also"></a>Voir aussi
 
