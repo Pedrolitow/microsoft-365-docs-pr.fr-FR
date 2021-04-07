@@ -15,12 +15,12 @@ ms.custom:
 description: Les administrateurs d’organisations Exchange Online Protection (EOP) autonomes peuvent apprendre à créer, modifier et supprimer des groupes de distribution et des groupes de sécurité à messagerie dans le Centre d’administration Exchange (CAE) et dans Exchange Online Protection (EOP) autonome PowerShell.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b97e3fac0840753edada964252875a6e3a4fa04
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b9d83f2fb59ee8f8d2d3035045ed438d5ba45851
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203992"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599568"
 ---
 # <a name="manage-groups-in-eop"></a>Gestion des groupes dans Exchange Online Protection (EOP)
 
@@ -51,7 +51,7 @@ Vous pouvez gérer des groupes dans le Centre d’administration Exchange (CAE) 
 
 - Lorsque vous gérez des groupes dans EOP PowerShell autonome, vous pouvez rencontrer une limitation. Les procédures PowerShell de cet article utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes ne soient visibles.
 
-- Des autorisations doivent vous être attribuées dans Exchange Online Protection avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle  Groupes de  **distribution,** qui est attribué par défaut aux groupes de rôles Gestion de l’organisation et Gestion des destinataires. Pour plus d’informations, voir [Autorisations](feature-permissions-in-eop.md) dans EOP autonome et utiliser le CAE pour modifier la liste des membres des groupes [de rôles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Des autorisations doivent vous être attribuées dans Exchange Online Protection avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle  Groupes de **distribution,** qui est attribué aux groupes de rôles Gestion de l’organisation et **Gestion** des destinataires par défaut. Pour plus d’informations, voir Autorisations dans [EOP](feature-permissions-in-eop.md) autonome et utiliser le CAE pour modifier la liste des membres des [groupes de rôles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cet article, voir raccourcis clavier pour le Centre d’administration [Exchange dans Exchange Online.](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
@@ -70,13 +70,13 @@ Vous pouvez gérer des groupes dans le Centre d’administration Exchange (CAE) 
 
    - **Groupe de sécurité à extension messagerie**
 
-3. Dans la page de nouveau groupe qui s’ouvre, configurez les paramètres suivants. Les paramètres marqués par un <sup>\*</sup> paramètre sont obligatoires.
+3. Dans la page de nouveau groupe qui s’ouvre, configurez les paramètres suivants. Les paramètres marqués avec <sup>\*</sup> un paramètre sont obligatoires.
 
    - <sup>\*</sup>**Nom d’affichage**: ce nom apparaît dans le carnet d’adresses de votre organisation, sur la ligne À : lorsque le courrier électronique est envoyé à ce groupe, et dans la liste Groupes dans leAC.  Le nom d’affichage est obligatoire, doit être unique et convivial afin que les utilisateurs reconnaissent ce qu’il est.
 
    - <sup>\*</sup>**Alias**: utilisez cette zone pour taper le nom de l’alias du groupe. L’alias ne peut pas dépasser 64 caractères et doit être unique. Lorsqu’un utilisateur tape l’alias dans la ligne À d’un message électronique, il est résolu en nom complet du groupe.
 
-   - <sup>\*</sup>**Adresse de messagerie**: l’adresse de messagerie se compose de l’alias sur le côté gauche du symbole (@) et d’un domaine sur le côté droit. Par défaut, la valeur **d’Alias** est utilisée pour la valeur d’alias, mais vous pouvez la modifier. Pour la valeur du domaine, cliquez sur le nom de domaine et sélectionnez le domaine accepté dans votre organisation.
+   - <sup>\*</sup>**Adresse de messagerie**: l’adresse de messagerie se compose de l’alias sur le côté gauche du symbole (@) et d’un domaine sur le côté droit. Par défaut, la valeur **d’Alias** est utilisée pour la valeur d’alias, mais vous pouvez la modifier. Pour la valeur du domaine, cliquez sur la drop down et sélectionnez et acceptez le domaine dans votre organisation.
 
    - **Description**: cette description apparaît dans le carnet d’adresses et dans le volet Détails du EAC.
 
@@ -114,7 +114,7 @@ Utilisez cet onglet pour afficher ou modifier les informations de base relatives
 
 - **Alias**: il s’agit de la partie de l’adresse de messagerie qui apparaît à gauche du symbole @. Si vous modifiez l'alias, l'adresse SMTP principale du groupe est également modifiée et contient le nouvel alias. De plus, l'adresse de messagerie électronique qui comprend l'alias précédent est gardée en tant qu'adresse de proxy du groupe.
 
-- **Adresse de messagerie**: l’adresse de messagerie se compose de l’alias sur le côté gauche du symbole @, et d’un domaine sur le côté droit. Par défaut, la valeur **d’Alias** est utilisée pour la valeur d’alias, mais vous pouvez la modifier. Pour la valeur du domaine, cliquez sur le nom de domaine et sélectionnez le domaine accepté dans votre organisation.
+- **Adresse de messagerie**: l’adresse de messagerie se compose de l’alias sur le côté gauche du symbole @, et d’un domaine sur le côté droit. Par défaut, la valeur **d’Alias** est utilisée pour la valeur d’alias, mais vous pouvez la modifier. Pour la valeur du domaine, cliquez sur la drop down et sélectionnez et acceptez le domaine dans votre organisation.
 
 - **Description**: cette description apparaît dans le carnet d’adresses et dans le volet Détails du EAC.
 
@@ -122,7 +122,7 @@ Utilisez cet onglet pour afficher ou modifier les informations de base relatives
 
 Utilisez cet onglet pour attribuer des propriétaires de groupe. Un propriétaire de groupe peut gérer l’appartenance au groupe. Par défaut, la personne qui crée un groupe en est le propriétaire. Tous les groupes doivent avoir au moins un propriétaire.
 
-Pour ajouter des propriétaires, cliquez **sur Ajouter** une ![ icône ](../../media/ITPro-EAC-AddIcon.png) . Dans la boîte de dialogue qui s’affiche, recherchez et sélectionnez un destinataire, puis cliquez sur **Ajouter ->**. Répétez cette étape autant de fois que nécessaire. Lorsque vous avez terminé, cliquez sur **OK**.
+Pour ajouter des propriétaires, cliquez **sur Ajouter** une ![ icône ](../../media/ITPro-EAC-AddIcon.png) . Dans la boîte de dialogue qui s’affiche, recherchez et sélectionnez un destinataire, puis cliquez sur **ajouter ->**. Répétez cette étape autant de fois que nécessaire. Lorsque vous avez terminé, cliquez sur **OK**.
 
 Pour supprimer un propriétaire, sélectionnez-le, puis cliquez sur **Supprimer** ![ l’icône ](../../media/ITPro-EAC-RemoveIcon.gif) Supprimer.
 
@@ -207,7 +207,7 @@ Cet exemple remplace les membres actuels du groupe d’équipe de sécurité par
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members @("Kitty Petersen","Tyson Fawcett")
 ```
 
-Cet exemple ajoute un nouvel utilisateur nommé « Named Agitcett » au groupe nommé « Security Team » tout en conservant les membres actuels du groupe.
+Cet exemple ajoute un nouvel utilisateur nommé « Agitassett » au groupe nommé « Security Team » tout en conservant les membres actuels du groupe.
 
 ```powershell
 $CurrentMemberObjects = Get-DistributionGroupMember "Security Team"
@@ -216,7 +216,7 @@ $CurrentMemberNames += "Tyson Fawcett"
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-eopdistributiongroup) et [Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/update-eopdistributiongroupmember).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-EOPDistributionGroup](/powershell/module/exchange/set-eopdistributiongroup) et [Update-EOPDistributionGroupMember](/powershell/module/exchange/update-eopdistributiongroupmember).
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>Supprimer un groupe à l’aide d’Windows PowerShell
 
@@ -226,7 +226,7 @@ Cet exemple utilise la suppression du groupe de distribution nommé Administrate
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/remove-eopdistributiongroup).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-EOPDistributionGroup](/powershell/module/exchange/remove-eopdistributiongroup).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 

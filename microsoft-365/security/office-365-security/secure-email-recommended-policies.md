@@ -20,19 +20,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 5a705444c81d884c10b99e5f0d2bfbb9e4f057e2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c5f5837f4e4069a67bc080178fefd10bd2a08629
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204683"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599850"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-
 
 Cet article explique comment implémenter les stratégies recommandées d’accès aux identités et appareils pour protéger les clients de messagerie et de messagerie de l’organisation qui la prise en charge de l’authentification moderne et de l’accès conditionnel. Ces instructions s’appuient sur les [stratégies](identity-access-policies.md) communes d’accès aux appareils et aux identités et incluent également quelques recommandations supplémentaires.
 
@@ -52,7 +51,7 @@ Si vous avez inclus Exchange Online et Outlook dans l’étendue des stratégies
 
 |Niveau de protection|Stratégies|Plus d’informations|
 |---|---|---|
-|**Baseline**|[Exiger l’mf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’attribution des applications cloud|
+|**Baseline**|[Exiger une mfmf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’attribution des applications cloud|
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Inclure Exchange Online dans l’attribution des applications cloud|
 ||[Appliquer des stratégies de protection des données APP](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous qu’Outlook est inclus dans la liste des applications. Assurez-vous de mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
 ||[Exiger des applications approuvées et la protection des applications](identity-access-policies.md#require-approved-apps-and-app-protection)|Inclure Exchange Online dans la liste des applications cloud|
@@ -79,7 +78,7 @@ Voici les étapes à effectuer :
 
 1. [Connectez-vous à une session Exchange Online Remote PowerShell.](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 2. Si vous n’avez pas encore OWA stratégie de boîte aux lettres, créez-en une avec la cmdlet [New-OwaMailboxPolicy.](/powershell/module/exchange/new-owamailboxpolicy)
-3. Si vous souhaitez autoriser l’affichage des pièces jointes sans téléchargement, utilisez la commande ci-après :
+3. Si vous souhaitez autoriser l’affichage des pièces jointes, mais aucun téléchargement, utilisez la commande ci-après :
 
    ```powershell
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnly
@@ -103,7 +102,7 @@ Voici les étapes à effectuer :
 
 Pour vous assurer que les utilisateurs d’appareils iOS et Android peuvent uniquement accéder au contenu scolaire ou scolaire à l’aide d’Outlook pour iOS et Android, vous avez besoin d’une stratégie d’accès conditionnel qui cible ces utilisateurs potentiels.
 
-Consultez les étapes de configuration de cette stratégie dans Gérer l’accès à la collaboration de messagerie à l’aide [d’Outlook pour iOS et Android.]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
+Consultez les étapes de configuration de cette stratégie dans Gérer l’accès à la collaboration de messagerie à l’aide [d’Outlook pour iOS et Android.](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
 
 ## <a name="set-up-message-encryption"></a>Configurer le chiffrement des messages
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent découvrir comment la formation sur la simulation d’attaques dans le Centre de sécurité Microsoft 365 affecte les employés et peut obtenir des informations sur les résultats de la simulation et de la formation.
 ms.technology: mdo
-ms.openlocfilehash: 93d8829f9fbc4271d33e3208e5564529b4022fc3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204076"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51600006"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Découvrez les formations à la simulation d’attaque
 
@@ -31,10 +31,10 @@ Sous **l’onglet Vue d’ensemble** de la formation sur la simulation d’attaq
 
 Dans le graphique, vous pouvez voir :
 
-- **Taux de compromission** prévu qui reflète le taux moyen de compromission pour les simulations utilisant le même type de charge utile pour d’autres clients Microsoft 365 qui utilisent la formation sur la simulation d’attaques.
-- **Le taux de compromission** réel reflète le pourcentage d’employés qui ont été perdus pour la simulation.
+- **Taux de compromission** prévu qui reflète le taux moyen de compromission pour les simulations utilisant le même type de charge utile pour d’autres clients Microsoft 365 qui utilisent la formation à la simulation d’attaques.
+- **Le taux de compromission** réel reflète le pourcentage d’employés qui ont diminué pour la simulation.
 
-En outre, reflète la différence entre le nombre réel d’employés compromis par l’attaque et le `<number> less susceptible to phishing` taux de compromission prévu. Ce nombre d’employés est moins susceptible d’être compromis par des attaques similaires à l’avenir, tout en indique la façon dont les employés ont globalement fait, contrairement au taux de `<percent%> better than predicted rate` compromission prévu.
+En outre, reflète la différence entre le nombre réel d’employés compromis par l’attaque et le `<number> less susceptible to phishing` taux de compromission prévu. Ce nombre d’employés est moins susceptible d’être compromis par des attaques similaires à l’avenir, tout en indique la façon dont les employés ont globalement fait, contrairement au taux de `<percent%> better than predicted rate` compromis prévu.
 
 > [!div class="mx-imgBorder"]
 > ![Vue d’ensemble de la carte d’impact sur le comportement sur la formation de simulation d’attaque](../../media/attack-sim-preview-behavior-impact-card.png)
@@ -45,7 +45,7 @@ Pour afficher un rapport plus détaillé, cliquez sur **Afficher les simulations
 
 Sous [ **l’onglet Simulations,**](https://security.microsoft.com/attacksimulator?viewid=simulations)la sélection d’une simulation vous permet d’obtenir les détails de la simulation, où se trouve la section **Actions recommandées.**
 
-La section Actions recommandées détaille les recommandations telles que disponibles dans [Le Score de sécurité Microsoft.](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) Ces recommandations sont basées sur la charge utile utilisée dans la simulation et vous aideront à protéger vos employés et votre environnement. Le fait de cliquer sur chaque action d’amélioration vous permet d’obtenir ses détails.
+La section Actions recommandées détaille les recommandations telles que disponibles dans [Le Score de sécurité Microsoft.](../defender/microsoft-secure-score.md) Ces recommandations sont basées sur la charge utile utilisée dans la simulation et vous aideront à protéger vos employés et votre environnement. Le fait de cliquer sur chaque action d’amélioration vous permet d’obtenir ses détails.
 
 > [!div class="mx-imgBorder"]
 > ![Section Actions de recommandation sur la formation à la simulation d’attaque](../../media/attack-sim-preview-recommended-actions.png)
@@ -56,4 +56,4 @@ La section Actions recommandées détaille les recommandations telles que dispon
 
 [Créer une simulation d’attaque par hameçonnage](attack-simulation-training.md)
 
-[créer une charge utile pour former vos personnes](attack-simulation-training-payloads.md)
+[créer une charge utile pour former vos employés](attack-simulation-training-payloads.md)

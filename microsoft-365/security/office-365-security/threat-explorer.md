@@ -19,12 +19,12 @@ description: Utilisez les détections de l’Explorateur et en temps réel dans 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570983"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599886"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Détections en temps réel et de l’Explorateur de menaces
 
@@ -113,7 +113,7 @@ Les informations sur les balises sont également affichées dans le volant des c
 > [!div class="mx-imgBorder"]
 > ![Balises d’URL](../../media/tags-urls.png)
 > 
-Pour en savoir plus, regardez [cette vidéo.](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4) 
+Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Améliorations apportées à l’expérience de recherche de menaces (à venir)
 
@@ -520,7 +520,7 @@ Outre les scénarios décrits dans cet article, de nombreuses autres options de 
 - [Afficher les fichiers malveillants détectés dans SharePoint Online, OneDrive et Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Obtenir une vue d’ensemble des affichages dans l’Explorateur de menaces (et détections en temps réel)](threat-explorer-views.md)
 - [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
-- [Examen et réponses automatisés dans Protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Examen et réponses automatisés dans Protection Microsoft contre les menaces](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 

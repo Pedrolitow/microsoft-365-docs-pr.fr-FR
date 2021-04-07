@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: Liste des types de fichiers pris en charge dans Microsoft 365 Advanced eDiscovery, y compris les types de fichiers image pris en charge par la fonctionnalité OCR dans Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a552e6cf0d32e77c2a21bc959ae313e6fc53d4eb
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 719a0474d45825114cf4ea3fbd19082bb8df7622
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817127"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599829"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Types de fichiers pris en charge dans Advanced eDiscovery
 
-Advanced eDiscovery prend en charge de nombreux types de fichiers à de nombreux niveaux différents. Les types de fichiers de support sont décrits dans les tableaux suivants de cet article. Cette liste n’est pas finalisée et nous ajouterons de nouveaux types de fichiers à mesure que nous continuerons nos tests de validation. Ces tableaux indiquent si un type de fichier est pris en charge pour l’extraction de texte (et la reconnaissance optique de caractères ou l’extraction de texte OCR pour les fichiers image), consultable dans la visionneuse native et également pris en charge dans la visionneuse d’annotages dans Advanced eDiscovery.
+Advanced eDiscovery prend en charge de nombreux types de fichiers à de nombreux niveaux différents. Les types de fichiers de support sont décrits dans les tableaux suivants de cet article. Cette liste n’est pas finalisée et nous ajouterons de nouveaux types de fichiers à mesure que nous continuerons nos tests de validation. Ces tableaux indiquent si un type de fichier est pris en charge pour l’extraction de texte (et la reconnaissance optique de caractères ou l’extraction de texte OCR pour les fichiers image), consultable dans la visionneuse native et également pris en charge dans la visionneuse Annotate dans Advanced eDiscovery.
 
 ## <a name="archive--container"></a>Archive/Conteneur
 
@@ -97,7 +97,7 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à de nombreux
 |image/wmf | Oui | Oui | Oui | Oui | Oui | .wmf |
 ||||||||
 
-## <a name="microsoft-excel"></a>Microsoft Excel
+## <a name="microsoft-excel"></a>Microsoft Excel
 
 | Type Mime | Identification de fichier | Extraction des métadonnées | Extraction de texte | Visionneuse native | Annoter la visionneuse | Extensions possibles |
 |:------| :------| :------| :------| :------| :------| :------|
@@ -113,7 +113,7 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à de nombreux
 
 | Type Mime | Identification de fichier | Extraction des métadonnées | Extraction de texte | Visionneuse native | Annoter la visionneuse | Extensions possibles |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/onenote | Oui | Oui | Oui | Oui | Non | .one |
+|application/onenote | Oui | Oui | Oui | Non | Non | .one |
 ||||||||
 
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
@@ -175,7 +175,7 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à de nombreux
 |application/vnd.oasis.opendocument.text | Oui | Oui | Oui | Oui | Oui | .odt |
 ||||||||
 
-## <a name="other"></a>Autre
+## <a name="other"></a>Autres
 
 | Type Mime | Identification de fichier | Extraction des métadonnées | Extraction de texte | Visionneuse native | Annoter la visionneuse | Extensions possibles |
 |:------| :------| :------| :------| :------| :------| :------|

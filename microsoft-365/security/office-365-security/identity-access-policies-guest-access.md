@@ -5,6 +5,7 @@ ms.prod: m365-security
 ms.topic: article
 ms.author: josephd
 author: JoeDavies-MSFT
+audience: Admin
 manager: Laurawi
 f1.keywords:
 - NOCSH
@@ -18,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 9d3a47752efc86c8ced32905bda851b7d8157f82
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0baefab441b17aa4a9527536cead181bae8f8948
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204175"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599994"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Stratégies d’accès invité et d’accès des utilisateurs externes B2B
 
-Cet article traite de l’ajustement des stratégies d’accès aux appareils et aux identités recommandées pour autoriser l’accès aux invités et aux utilisateurs externes qui ont un compte Azure Active Directory (Azure AD) Business-to-Business (B2B). Ces instructions s’appuient sur les stratégies [d’accès aux appareils et aux identités courantes.](identity-access-policies.md)
+Cet article traite de l’ajustement des stratégies d’accès aux appareils et aux identités recommandées pour autoriser l’accès aux invités et aux utilisateurs externes qui ont un compte Azure Active Directory (Azure AD) Business-to-Business (B2B). Ces instructions s’appuient sur les stratégies [communes d’accès aux identités et aux appareils.](identity-access-policies.md)
 
-Ces recommandations sont conçues pour s’appliquer au **niveau de** protection de référence. Mais vous pouvez également ajuster les recommandations  en fonction de vos besoins spécifiques en matière de protection sensible et **hautement réglementée.**
+Ces recommandations sont conçues pour s’appliquer au **niveau de** protection de référence. Toutefois, vous pouvez également ajuster les  recommandations en fonction de vos besoins spécifiques en matière de protection sensible et **hautement réglementée.**
 
 Le fait de fournir un chemin d’accès aux comptes B2B pour s’authentifier auprès de votre client Azure AD ne permet pas à ces comptes d’accéder à l’ensemble de votre environnement. Les utilisateurs B2B et leurs comptes ont accès à des services et des ressources, tels que des fichiers, partagés avec eux par la stratégie d’accès conditionnel.
 
@@ -47,7 +48,7 @@ Le tableau suivant répertorie les stratégies que vous devez créer et mettre �
 ||[Exiger une mfmf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifiez cette stratégie pour exclure les invités et les utilisateurs externes.|
 ||[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modifiez cette stratégie pour exclure les invités et les utilisateurs externes.|
 
-Pour inclure ou exclure des invités et des utilisateurs externes dans les stratégies d’accès conditionnel, pour affectations > Utilisateurs et groupes > Inclure ou exclure, vérifier tous les **utilisateurs invités** et  **externes.**
+Pour inclure ou exclure des invités et des utilisateurs externes dans les stratégies d’accès conditionnel, pour affectations > Utilisateurs et groupes > Inclure ou exclure, vérifier tous les **utilisateurs invités** et **externes.**
 
 ![capture d’écran des contrôles pour l’exclusion des invités et des utilisateurs externes](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
@@ -71,7 +72,7 @@ Cette stratégie invite les invités à s’inscrire à l’mf auprès de votre 
 
 ### <a name="excluding-guests-and-external-users-from-risk-based-mfa"></a>Exclusion des invités et des utilisateurs externes de l’fa MFA basée sur les risques
 
-Bien que les organisations peuvent appliquer des stratégies basées sur les risques pour les utilisateurs B2B à l’aide d’Azure AD Identity Protection, il existe des limitations dans l’implémentation d’Azure AD Identity Protection pour les utilisateurs de collaboration B2B dans un répertoire de ressources en raison de leur identité existante dans leur annuaire d’accueil. En raison de ces limitations, Microsoft vous recommande d’exclure les invités des stratégies mfa basées sur les risques et d’exiger que ces utilisateurs utilisent toujours l’mffa.
+Bien que les organisations peuvent appliquer des stratégies basées sur les risques pour les utilisateurs B2B à l’aide d’Azure AD Identity Protection, il existe des limitations dans l’implémentation d’Azure AD Identity Protection pour les utilisateurs de collaboration B2B dans un répertoire de ressources en raison de leur identité existante dans leur annuaire d’accueil. En raison de ces limitations, Microsoft vous recommande d’exclure les invités des stratégies DFA basées sur les risques et d’exiger que ces utilisateurs utilisent toujours l’mffa.
 
 Pour plus d’informations, voir [Limitations of Identity Protection for B2B collaboration users](/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users).
 

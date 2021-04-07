@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caf7a1bacfd726c560356d542bec3cf56c6b39d4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 40487143ff18cedb76c9f3f33c52cab24687c282
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200196"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604368"
 ---
 # <a name="advanced-hunting-api"></a>API de recherche avancée
 
@@ -37,15 +37,21 @@ ms.locfileid: "51200196"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="limitations"></a>Limites
+
 1. Vous pouvez uniquement exécuter une requête sur les données des 30 derniers jours.
+
 2. Les résultats incluent un maximum de 100 000 lignes.
+
 3. Le nombre d’exécutions est limité par client :
-   - Appels d’API : jusqu’à 45 appels par minute.
+   - Appels d’API : jusqu’à 45 appels par minute, jusqu’à 1 500 appels par heure.
    - Durée d’exécution : 10 minutes d’exécution toutes les heures et 3 heures d’exécution par jour.
+
 4. La durée d’exécution maximale d’une seule demande est de 10 minutes.
-5. La réponse 429 représente l’atteinte de la limite de quota soit par nombre de demandes, soit par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte. 
+
+5. La réponse 429 représente l’atteinte de la limite de quota par nombre de demandes ou par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte. 
 
 ## <a name="permissions"></a>Autorisations
+
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
 Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
@@ -59,7 +65,8 @@ Déléguée (compte professionnel ou scolaire) | AdvancedQuery.Read | « Exécut
 >- L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 ```
 
@@ -71,6 +78,7 @@ Autorisation | Porteur {token}. **Obligatoire**.
 Content-Type    | application/json
 
 ## <a name="request-body"></a>Corps de la demande
+
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
 Paramètre | Type    | Description
@@ -78,12 +86,13 @@ Paramètre | Type    | Description
 Requête | Texte |  Requête à exécuter. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
+
 Si elle réussit, cette méthode renvoie 200 OK et l’objet _QueryResponse_ dans le corps de la réponse.
 
 
 ## <a name="example"></a>Exemple
 
-Demande
+##### <a name="request"></a>Demande
 
 Voici un exemple de demande.
 
@@ -101,7 +110,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-Réponse
+##### <a name="response"></a>Réponse
 
 Voici un exemple de réponse.
 
@@ -145,7 +154,8 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topic"></a>Rubrique connexe
+## <a name="related-topics"></a>Voir aussi
+
 - [Présentation des API Microsoft Defender pour les points de terminaison](apis-intro.md)
 - [Recherche avancée à partir du portail](advanced-hunting-query-language.md)
-- [Recherche avancée à l’aide de PowerShell](run-advanced-query-sample-powershell.md)
+- [Repérage avancé à l’aide de PowerShell](run-advanced-query-sample-powershell.md)

@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender pour Office 365
-ms.openlocfilehash: c2c1e44741a8604ce60586a85a28d32851285403
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1a86a73dbdb8f2549fb5dc03ece56497c5ff0b1e
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204797"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599794"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de la version d’essai de Microsoft Defender pour Office 365
 
@@ -41,7 +41,7 @@ Une version d’essai de Microsoft Defender pour Office 365 est le moyen le plus
 
 ## <a name="terms-and-conditions"></a>Conditions générales
 
-La version d’essai de Defender pour Office 365 est disponible pendant 90 jours et peut être lancée pour tous vos utilisateurs. Pour plus d’informations, consultez les conditions d’essai de [Microsoft Defender pour Office 365 & conditions générales.](defender-for-office-365-trial-terms-and-conditions.md)
+La version d’essai de Defender pour Office 365 est disponible pendant 90 jours et peut être lancée pour tous vos utilisateurs. Pour plus d’informations, consultez les conditions d'& de Microsoft Defender pour [Office 365.](defender-for-office-365-trial-terms-and-conditions.md)
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Configurer une version d’essai de Defender pour Office 365
 
@@ -98,7 +98,7 @@ Les expériences puissantes permettent d’identifier, de hiérarchiser et d’e
 - [Détections en temps réel et de l’Explorateur de menaces](threat-explorer.md)
 - [Rapports en temps réel dans Defender pour Office 365](view-reports-for-mdo.md)
 - [Suivis des menaces : nouveautés et remarques](threat-trackers.md)
-- Intégration à [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- Intégration à [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ### <a name="response-and-remediation"></a>Réponse et correction
 

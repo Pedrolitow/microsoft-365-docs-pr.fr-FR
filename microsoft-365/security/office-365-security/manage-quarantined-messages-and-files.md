@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215535"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599534"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -59,10 +59,10 @@ Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécur
 
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
-  - <sup>\*</sup>Les membres du **groupe** de rôles Administrateur  de mise en quarantaine doivent également être membres du groupe de rôles Gestion de l’hygiène dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) pour pouvoir mettre en quarantaine les procédures dans Exchange Online PowerShell.
+  - <sup>\*</sup>Les membres du **groupe** de rôles Administrateur  de quarantaine doivent également être membres du groupe de rôles Gestion de l’hygiène dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) pour pouvoir mettre en quarantaine les procédures dans Exchange Online PowerShell.
 
 - Les messages mis en quarantaine sont conservés pendant une période par défaut avant d’être automatiquement supprimés :
-  - 30 jours pour les messages mis en quarantaine par des stratégies anti-courrier indésirable (courrier indésirable, hameçonnage et courrier électronique en masse). Il s’agit de la valeur par défaut et de la valeur maximale. Pour configurer (plus bas) cette valeur, voir [Configurer des stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)
+  - 30 jours pour les messages mis en quarantaine par les stratégies anti-courrier indésirable (courrier indésirable, hameçonnage et courrier électronique en masse). Il s’agit de la valeur par défaut et de la valeur maximale. Pour configurer (plus bas) cette valeur, voir [Configurer des stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)
   - 15 jours pour les messages contenant des programmes malveillants.
   - 15 jours pour les fichiers mis en quarantaine par pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams dans Defender pour Office 365.
 
@@ -168,7 +168,7 @@ Lorsque vous sélectionnez un message électronique dans la liste, les détails 
 
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
 
-Une fois que vous avez sélectionné un message, plusieurs options s’offrent à vous pour savoir comment les faire dans le volet volant **Détails** :
+Une fois que vous avez sélectionné un message, plusieurs options s’offrent à vous pour ce qu’il faut faire avec les messages dans le volet volant **Détails** :
 
 - **Message de publication**: dans le volet volant qui s’affiche, choisissez les options suivantes :
 
@@ -189,7 +189,6 @@ Une fois que vous avez sélectionné un message, plusieurs options s’offrent �
 - **Afficher l’en-tête du message** : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser en profondeur les champs d'en-tête et les valeurs, copiez le texte d’en-tête du message dans le presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft** pour accéder à l’analyseur de connectivité à distance (Faites un clic droit et sélectionnez **Ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Microsoft 365 accomplir cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes** :
 
 - **Prévisualiser le message** : dans le volet déroulant qui apparaît, choisissez l’une des options suivantes :
-
   - **Mode Source** : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
   - **Mode texte** : affiche le corps du message au format texte brut.
 
@@ -197,13 +196,13 @@ Une fois que vous avez sélectionné un message, plusieurs options s’offrent �
 
 - **Télécharger le message** : dans le volet déroulant qui s’affiche, sélectionnez **Je comprends les risques liés au téléchargement de ce message** pour enregistrer une copie locale du message au format .eml.
 
-- **Bloquer l’expéditeur**: cela empêche l’expéditeur d’envoyer des courriers électroniques à la boîte aux lettres du destinataire de l’administrateur.
+- **Bloquer l’expéditeur**: empêche l’expéditeur d’envoyer des messages à des destinataires de l’organisation.
 
 - **Envoyer un message**: dans le volet volant qui s’affiche, choisissez les options suivantes :
 
   - **Type d’objet**: **e-mail** (par défaut), **URL** ou **pièce jointe**.
 
-  - **Format de** soumission : **ID de message** réseau (par défaut, avec la valeur correspondante dans la zone **ID** de message réseau) ou fichier **(accédez** à un fichier .eml ou .msg local). Notez que si vous **sélectionnez Fichier,** puis **ID de message** réseau, la valeur initiale a disparu.
+  - **Format de** soumission : **ID de message** réseau (par défaut, avec la valeur correspondante dans la zone **ID** de message réseau) ou fichier **(accédez** à un fichier .eml ou .msg local). Notez que si vous sélectionnez **Fichier,** puis **ID de message** réseau, la valeur initiale a disparu.
 
   - **Destinataires :** tapez au moment du bail un destinataire d’origine du message, ou cliquez sur **Sélectionner** tout pour identifier tous les destinataires. Vous pouvez également cliquer sur **Sélectionner tout,** puis supprimer de manière sélective des destinataires individuels.
 
@@ -237,7 +236,7 @@ Dans les organisations avec Defender pour Office 365, les administrateurs peuven
 
 1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Examiner** \> **Quarantaine**.
 
-2. Modifier **l’affichage mis en quarantaine** dans les fichiers de **valeurs.** Vous pouvez trier un champ en cliquant sur un en-tête de colonne disponible.
+2. Modifier **l’affichage mis en** quarantaine dans les fichiers de **valeurs.** Vous pouvez trier un champ en cliquant sur un en-tête de colonne disponible.
 
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les colonnes par défaut sont marquées d’un astérisque ( <sup>\*</sup> :
 
@@ -262,7 +261,7 @@ Dans les organisations avec Defender pour Office 365, les administrateurs peuven
    - **Raison de la mise** en quarantaine : la seule valeur disponible est **Programme malveillant.**
    - **Type de stratégie**
 
-Une fois que vous avez trouvé un fichier mis en quarantaine spécifique, sélectionnez-le pour afficher les détails à son sujet et pour prendre des mesures (par exemple, afficher, libérer, télécharger ou supprimer le message).
+Une fois que vous avez trouvé un fichier spécifique mis en quarantaine, sélectionnez-le pour afficher les détails à son sujet et pour agir dessus (par exemple, afficher, libérer, télécharger ou supprimer le message).
 
 #### <a name="view-quarantined-file-details"></a>Afficher les détails du fichier mis en quarantaine
 

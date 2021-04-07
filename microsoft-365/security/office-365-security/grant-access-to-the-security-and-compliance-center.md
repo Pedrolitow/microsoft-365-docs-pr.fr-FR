@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Des autorisations doivent être attribuées aux utilisateurs dans le Centre de sécurité et conformité Microsoft 365 & avant de pouvoir gérer l’une de ses fonctionnalités de sécurité ou de conformité.
+description: Des autorisations doivent être attribuées aux utilisateurs dans le Centre de conformité et sécurité Microsoft 365 & avant de pouvoir gérer l’une de ses fonctionnalités de sécurité ou de conformité.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 16dbbe81d1131821dfdbf75caff5b5121f8cc45b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7cd36ac0dec20851a423acd58e5ad7d38cb65d93
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204536"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599922"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
 
@@ -38,7 +38,7 @@ ms.locfileid: "51204536"
 
 Des autorisations doivent être attribuées aux utilisateurs dans le Centre de sécurité & conformité avant de pouvoir gérer l’une de ses fonctionnalités de sécurité ou de conformité. En tant qu’administrateur global ou membre du groupe de rôles OrganizationManagement dans le Centre de sécurité & conformité, vous pouvez accorder ces autorisations aux utilisateurs. Ceux-ci pourront uniquement gérer les fonctionnalités de sécurité ou de conformité auxquelles vous leur donnez accès.
 
-Pour plus d’informations sur les différentes autorisations que vous pouvez accorder aux utilisateurs dans le Centre de sécurité & conformité, consultez Autorisations dans le Centre de sécurité [& conformité.](permissions-in-the-security-and-compliance-center.md)
+Pour plus d’informations sur les différentes autorisations que vous pouvez accorder aux utilisateurs dans le Centre de sécurité & conformité, consultez [Autorisations](permissions-in-the-security-and-compliance-center.md)dans le Centre de sécurité & conformité.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -52,7 +52,7 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 ## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utiliser le Centre de sécurité & conformité pour accorder à un autre utilisateur l’accès au Centre de sécurité & conformité
 
-1. Ouvrez le Centre de sécurité & conformité <https://protection.office.com> à l’accueil, puis allez à **Autorisations.** Pour aller directement à **l’onglet Autorisations,** ouvrez <https://protection.office.com/permissions> .
+1. Ouvrez le Centre de sécurité & conformité, puis <https://protection.office.com> allez à **Autorisations.** Pour aller directement à **l’onglet Autorisations,** ouvrez <https://protection.office.com/permissions> .
 
 2. Dans la liste des groupes de rôles,  choisissez le groupe de rôles, puis cliquez sur Modifier ![ l’icône ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) Modifier.
 
@@ -80,7 +80,7 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-Pour des problèmes de syntaxe et de paramètres détaillés, voir [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
+Pour des problèmes de syntaxe et de paramètres détaillés, voir [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
@@ -94,4 +94,4 @@ Pour vérifier que vous avez bien accordé l’accès au Centre de sécurité & 
   Get-RoleGroupMember -Identity "<RoleGroupName>"
   ```
 
-  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-RoleGroupMember.](/powershell/module/exchange/Get-RoleGroupMember)
+  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-RoleGroupMember](/powershell/module/exchange/Get-RoleGroupMember).

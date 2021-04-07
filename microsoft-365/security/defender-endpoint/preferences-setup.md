@@ -16,22 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1526190116c55ba6916b690583f224ee1e86fd8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5869e8406158eb6d6b2f48b3083cb9011bb3951d
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186160"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604344"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>Configurer les paramètres du Centre de sécurité Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 >Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
@@ -46,3 +44,4 @@ Autorisations | Gérer l’accès au portail à l’aide de RBAC ainsi que des g
 API | Activez l’intégration intel contre les menaces et SIEM.
 Règles | Configurez les règles de suppression et les paramètres d’automatisation.
 Gestion des périphériques | Appareils intégrés et hors-carte.
+Évaluations réseau | Choisissez les appareils à scanner régulièrement et ajoutés à l’inventaire des appareils.

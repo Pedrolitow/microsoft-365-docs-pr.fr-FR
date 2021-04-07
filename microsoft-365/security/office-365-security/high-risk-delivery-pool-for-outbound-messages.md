@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment les pools de remise sont utilisés pour protéger la réputation des serveurs de messagerie dans les centres de données Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 461b5f9aa0407c5115ab84a075c793139a8b4305
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204196"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599910"
 ---
 # <a name="outbound-delivery-pools"></a>Pools de livraison sortante
 
@@ -35,14 +35,14 @@ ms.locfileid: "51204196"
 
 Les serveurs de messagerie dans les centres de données Microsoft 365 peuvent ne pas pouvoir envoyer de courrier indésirable temporairement. Par exemple, une attaque de programme malveillant ou de courrier indésirable dans une organisation de messagerie sur site qui envoie du courrier sortant via Microsoft 365 ou des comptes Microsoft 365 compromis. Les attaquants tentent également d’éviter la détection en relayant des messages via le forwarding Microsoft 365.
 
-Ces scénarios peuvent entraîner l’apparition de l’adresse IP des serveurs de centre de données Microsoft 365 affectés sur des listes d’adresses IP tierces. Les organisations de messagerie de destination qui utilisent ces listes d’adresses bloqués rejetteront les messages provenant de ces sources de messages.
+Ces scénarios peuvent entraîner l’apparition de l’adresse IP des serveurs de centre de données Microsoft 365 affectés sur des listes de blocage tierces. Les organisations de messagerie de destination qui utilisent ces listes de blocage rejetteront les messages provenant de ces sources de messages.
 
 ## <a name="high-risk-delivery-pool"></a>Pool de remise à risque élevé
 Pour éviter cela, tous les messages sortants provenant de serveurs de centre de données Microsoft 365 [](configure-the-outbound-spam-policy.md) qui sont déterminés comme courrier indésirable ou qui dépassent les limites d’envoi du [service](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) ou des stratégies de courrier indésirable sortant sont envoyés via le _pool_ de remise à risque élevé.
 
 Le pool de remise à risque élevé est un pool d’adresses IP distinct pour les messages sortants qui est uniquement utilisé pour envoyer des messages de « faible qualité » (par exemple, courrier indésirable et [backscatter).](backscatter-messages-and-eop.md) L’utilisation du pool de remise à risque élevé permet d’empêcher le pool d’adresses IP normal pour le courrier sortant d’envoyer du courrier indésirable. Le pool d’adresses IP normal pour le courrier sortant conserve la réputation d’envoi de messages de « haute qualité », ce qui réduit la probabilité que ces adresses IP apparaissent sur les listes d’adresses IP bloqués.
 
-La possibilité très réelle que les adresses IP du pool de remise à risque élevé soient placées sur des listes d’adresses IP bloqués demeure, mais cela est tout à fait possible. La remise aux destinataires prévus n’est pas garantie, car de nombreuses organisations de messagerie n’acceptent pas les messages provenant du pool de remise à risque élevé.
+La possibilité réelle que les adresses IP du pool de remise à risque élevé soient placées sur des listes d’adresses IP bloqués demeure, mais cela est tout à fait possible. La remise aux destinataires prévus n’est pas garantie, car de nombreuses organisations de messagerie n’acceptent pas les messages provenant du pool de remise à risque élevé.
 
 Pour plus d’informations, voir [Contrôler le courrier indésirable sortant.](outbound-spam-controls.md)
 
@@ -61,9 +61,3 @@ Les causes possibles d’une augmentation des NDR sont les suivantes :
 - Un serveur de messagerie non fiable.
 
 Tous ces problèmes peuvent entraîner une augmentation soudaine du nombre de NDR traitées par le service. De nombreuses fois, ces NDR semblent être du courrier indésirable pour d’autres serveurs et services de messagerie (également appelé _[backscatter).](backscatter-messages-and-eop.md)_
-
-## <a name="relay-pool"></a>Pool de relais
-
-Les messages qui sont transmis ou relayés à partir de Microsoft 365 sont envoyés à l’aide d’un pool de relais spécial, car la destination finale ne doit pas considérer Microsoft 365 comme l’expéditeur réel. Il est également important pour nous d’isoler ce trafic, car il existe des scénarios légitimes et non valides pour laforwarding automatique ou le relais du courrier électronique à partir de Microsoft 365. Comme pour le pool de remise à risque élevé, un pool d’adresses IP distinct est utilisé pour le courrier relayé. Ce pool d’adresses n’est pas publié, car il peut changer souvent.
-
-Microsoft 365 doit vérifier que l’expéditeur d’origine est légitime afin de pouvoir remettre en toute confiance le message transmis. Pour ce faire, l’authentification de messagerie (SPF, DKIM et DMARC) doit passer lorsque le message nous est envoyé. Dans les cas où nous pouvons authentifier l’expéditeur, nous utilisons la réécriture de l’expéditeur pour aider le destinataire à savoir que le message transmis est issu d’une source fiable. Vous pouvez en savoir plus sur le fonctionnement et ce que vous pouvez faire pour vous assurer que le domaine d’envoi passe l’authentification dans le schéma de réécriture de l’expéditeur [(SRS).](/office365/troubleshoot/antispam/sender-rewriting-scheme)

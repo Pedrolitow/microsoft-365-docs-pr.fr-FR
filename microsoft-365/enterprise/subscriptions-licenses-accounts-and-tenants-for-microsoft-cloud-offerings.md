@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Comprendre les relations des organisations, des abonnements, des licences, des comptes d’utilisateur et des clients dans les offres cloud Microsoft.
-ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 34e920e6b5a48adaffcc31150090e96f9c8d8b0e
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909513"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604320"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, comptes et clients des offres de cloud de Microsoft
 
@@ -88,7 +88,7 @@ La Figure 3 illustre un exemple de plusieurs abonnements d’une organisation à
   
 ### <a name="tenants"></a>Clients
 
-Pour les offres SaaS cloud, le client est l’emplacement régional qui héberge les serveurs fournissant des services de cloud. Par exemple, la société Contoso a choisi la région Europe pour héberger ses clients Microsoft 365, EMS et Dynamics 365 pour les 15 000 travailleurs de son siège social à Paris.
+Pour les offres SaaS cloud, le client est l’emplacement régional qui héberge les serveurs fournissant des services de cloud. Par exemple, la société Contoso a choisi la région Europe pour héberger ses abonnements Microsoft 365, EMS et Dynamics 365 pour les 15 000 travailleurs de son siège social à Paris.
   
 Les services PaaS Azure et les charges de travail basées sur une machine virtuelle hébergés dans IaaS Azure peuvent avoir une location dans n’importe quel centre de données Azure dans le monde entier. Vous spécifiez le centre de données Azure, appelé emplacement, lorsque vous créez l’application ou le service PaaS Azure, ou l’élément d’une charge de travail IaaS.
   

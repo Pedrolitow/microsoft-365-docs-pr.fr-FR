@@ -19,12 +19,12 @@ ms.custom:
 description: Découvrez comment mettre à jour un enregistrement DNS (service de nom de domaine) afin que vous puissiez utiliser SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aff62792be86b9c77430777c23edc655fe3bb9b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0a2c400e77c83fa61e276dee1d870835d466b5af
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204112"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599546"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurer SPF pour empêcher l’usurpation
 
@@ -137,6 +137,6 @@ Pour obtenir des exemples avancés, des informations plus détaillées sur la sy
 
  SPF est conçu pour lutter contre l’usurpation, mais il existe des techniques d’usurpation contre lesquelles SPF ne peut rien faire. Pour vous protéger contre ces techniques, une fois que vous avez configuré SPF, vous devez également configurer DKIM et DMARC pour Office 365.
 
-L’objectif de l’authentification de messagerie [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide) est de prouver que le contenu du courrier n’a pas été falsifié.
+L’objectif de l’authentification de messagerie [DKIM](use-dkim-to-validate-outbound-email.md) est de prouver que le contenu du courrier n’a pas été falsifié.
 
-L’objectif de l’authentification de messagerie [DMARC](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide) est de s’assurer que les informations SPF et DKIM correspondent à l’adresse de l’expéditeur.
+L’objectif de l’authentification de messagerie [DMARC](use-dmarc-to-validate-email.md) est de s’assurer que les informations SPF et DKIM correspondent à l’adresse de l’expéditeur.
