@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs à l’aide de balises utilisateur dans Microsoft Defender pour Office 365 Plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les enquêtes dans Microsoft Defender pour Office 365 pour identifier rapidement les utilisateurs marqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f98dcfe3e8c44e852134e7a12def4ff78c1bcdd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4c439dcb91831475bc10da4a01d0fa29e7aae359
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204515"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632201"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -34,6 +34,9 @@ Les balises utilisateur sont des identificateurs pour des groupes spécifiques d
 - **Balises personnalisées**: vous créez ces balises utilisateur vous-même.
 
 Si votre organisation dispose de Defender pour Office 365 Plan 2 (inclus dans votre abonnement ou en tant qu’complément), vous pouvez créer des balises utilisateur personnalisées en plus de l’utilisation de la balise de comptes prioritaires.
+
+> [!NOTE]
+> Actuellement, vous pouvez uniquement appliquer des balises utilisateur aux utilisateurs de boîtes aux lettres.
 
 Après avoir appliqué des balises système ou des balises personnalisées aux utilisateurs, vous pouvez les utiliser comme filtres dans les alertes, les rapports et les enquêtes :
 
@@ -52,9 +55,9 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **des balises utilisateur,** ouvrez <https://protection.office.com/userTags> .
 
 - Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
-  - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
+  - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité.
   - Pour ajouter et supprimer des membres de balises utilisateur existantes, vous devez  être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Opérateur de sécurité
-  - Pour accéder en lecture seule aux balises utilisateur,  vous devez être membre des groupes de rôles Lecteur global ou **Lecteur** de sécurité.
+  - Pour accéder en lecture seule aux balises utilisateur,  vous devez être membre des groupes de rôles Lecteur global ou **Lecteur de** sécurité.
 
   Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
@@ -64,6 +67,8 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
   - La gestion des balises utilisateur est contrôlée par les **rôles Lecteur de balises** et **Gestionnaire de balises.**
 
 - Vous pouvez également gérer et surveiller les comptes prioritaires dans le Centre d’administration Microsoft 365. Pour obtenir des instructions, voir [Gérer et surveiller les comptes prioritaires.](../../admin/setup/priority-accounts.md)
+
+- Pour plus d’informations _sur la sécurisation des_ comptes privilégiés (comptes d’administrateur), consultez cette [rubrique.](/azure/architecture/framework/security/critical-impact-accounts)
 
 ## <a name="use-the-security--compliance-center-to-create-user-tags"></a>Utiliser le Centre de sécurité & conformité pour créer des balises utilisateur
 
@@ -79,11 +84,11 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 4. Dans la page **Affecter des** utilisateurs, faites l’une des étapes suivantes :
 
-   - Cliquez **sur Ajouter des utilisateurs.** Dans le volant qui s’affiche, faites l’une des étapes suivantes pour ajouter des utilisateurs individuels ou des groupes :
+   - Cliquez sur **Ajouter des utilisateurs.** Dans le volant qui s’affiche, faites l’une des étapes suivantes pour ajouter des utilisateurs individuels ou des groupes :
      - Cliquez dans la zone et faites défiler la liste pour sélectionner un utilisateur ou un groupe.
      - Cliquez dans la zone et commencez à taper pour filtrer la liste et sélectionner un utilisateur ou un groupe.
      - Pour ajouter des valeurs supplémentaires, cliquez dans une zone vide dans la zone.
-     - Pour supprimer des entrées individuelles de la zone, cliquez sur **Supprimer** l’icône sur l’utilisateur ou ![ le groupe dans la ](../../media/scc-remove-icon.png) zone.
+     - Pour supprimer des entrées  individuelles de la zone, cliquez sur Supprimer l’icône sur l’utilisateur ou ![ le groupe dans la ](../../media/scc-remove-icon.png) zone.
      - Pour supprimer des entrées existantes de la liste sous la zone, cliquez sur **Supprimer** ![ l’icône ](../../media/scc-remove-icon.png) Supprimer l’entrée.
 
      Lorsque vous avez terminé, cliquez sur **Ajouter**.
@@ -92,7 +97,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. Dans la page **De révision,** examinez vos paramètres. Vous pouvez cliquer **sur Modifier** dans la section spécifique pour apporter des modifications.
+5. Dans la page **de balise Révision,** examinez vos paramètres. Vous pouvez cliquer **sur Modifier** dans la section spécifique pour apporter des modifications.
 
    Lorsque vous avez terminé, cliquez sur **Envoyer.**
 

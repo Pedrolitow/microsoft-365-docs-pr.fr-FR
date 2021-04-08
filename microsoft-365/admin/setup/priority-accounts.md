@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Surveiller les messages électroniques ayant échoué et retardés envoyés vers ou depuis des comptes ayant un impact important sur l’entreprise.
-ms.openlocfilehash: 0bba1f87f80de9fea249ce2604e83ceeadfb79ee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f67b9c6f0eaa229b650026670cf1b2adf88ab3c0
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050641"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632179"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Gérer et surveiller les comptes de priorité
 
@@ -26,10 +26,16 @@ Dans chaque organisation Microsoft 365, il existe des personnes essentielles, te
 
 Pour aider votre organisation à protéger ces comptes, vous pouvez désormais désigner des utilisateurs spécifiques en tant que comptes prioritaires et tirer parti des fonctionnalités propres à l’application qui leur offrent une protection supplémentaire. À l’avenir, d’autres applications et fonctionnalités ront en charge les comptes prioritaires et, pour commencer, nous avons annoncé deux fonctionnalités : la **protection** de compte prioritaire et la surveillance du flux de messagerie **premium.**
 
-- Protection des comptes prioritaires **:** Microsoft Defender pour Office 365 (anciennement Office 365 - Protection avancée contre les menaces) prend en charge les comptes prioritaires en tant que balises qui peuvent être utilisées dans les filtres dans les alertes, les rapports et les enquêtes. Pour plus d’informations, consultez [balises utilisateur dans Microsoft Defender pour Office 365.](../../security/defender-365-security/user-tags.md)
+- Protection des comptes prioritaires **:** Microsoft Defender pour Office 365 (anciennement Office 365 - Protection avancée contre les menaces) prend en charge les comptes prioritaires en tant que balises qui peuvent être utilisées dans les filtres dans les alertes, les rapports et les enquêtes. Pour plus d’informations, consultez [balises utilisateur dans Microsoft Defender pour Office 365.](../../security/office-365-security/user-tags.md)
+
+  Une question naturelle est la suivante : « Tous les utilisateurs ne sont-ils pas prioritaires ? Pourquoi ne pas désigner tous les utilisateurs comme comptes prioritaires ? Oui, tous les utilisateurs sont une priorité, mais la protection de compte de priorité offre les avantages supplémentaires suivants :
+
+  - **Heuristiques** supplémentaires : notre analyse du flux de messagerie dans les centres de données Microsoft indique que les modèles de flux de messagerie pour les cadres de l’entreprise sont différents de l’employé moyen. La protection des comptes prioritaires offre des heuristiques supplémentaires spécifiquement adaptées aux cadres de l’entreprise qui ne profitent pas à un employé ordinaire.
+  - **Visibilité supplémentaire dans les** rapports : en effet, les informations de tous les utilisateurs (ou de tous les utilisateurs affectés) sont déjà disponibles dans les alertes, les rapports et les enquêtes. La balise de comptes prioritaires en tant que filtre vous permet de cibler spécifiquement vos enquêtes.
+
 - **Surveillance du flux de messagerie premium** : un flux de messagerie sain peut être essentiel au succès de l’entreprise, et les retards ou défaillances de remise peuvent avoir un impact négatif sur l’entreprise. Vous pouvez choisir un seuil pour les e-mails en échec ou différés, recevoir des alertes lorsque ce seuil est dépassé et afficher un rapport des problèmes de messagerie pour les comptes prioritaires. Pour plus d’informations, consultez le rapport Problèmes de messagerie pour les comptes de priorité dans [le CE moderne](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-Pour obtenir les meilleures pratiques en matière de sécurité pour les comptes prioritaires, voir Recommandations en matière de [sécurité pour les comptes prioritaires.](../../security/defender-365-security/security-recommendations-for-priority-accounts.md)
+Pour obtenir les meilleures pratiques en matière de sécurité pour les comptes prioritaires, voir Recommandations en matière de [sécurité pour les comptes prioritaires.](../../security/office-365-security/security-recommendations-for-priority-accounts.md)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -44,6 +50,8 @@ La **fonctionnalité De surveillance du flux** de messagerie Premium décrite da
 
 > [!NOTE]
 > Vous pouvez surveiller jusqu’à 250 comptes prioritaires.
+
+Lorsque vous appliquez une protection de compte prioritaire à une boîte aux lettres, vous devez également appliquer une protection de compte prioritaire aux utilisateurs qui ont accès à la boîte aux lettres (par exemple, le PDG et l’assistant exécutif du PDG qui gère le calendrier du PDG).
 
 ### <a name="add-priority-accounts-from-the-setup-page"></a>Ajouter des comptes de priorité à partir de la page d’installation
 
