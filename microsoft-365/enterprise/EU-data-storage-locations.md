@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans l’Union européenne
-ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19df44a702d842d4171d867946fb818d3f36fd80
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905679"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615230"
 ---
 # <a name="data-locations-for-the-european-union"></a>Emplacements de données pour l’Union européenne
 
@@ -92,7 +92,7 @@ Microsoft sécurise vos données en utilisant plusieurs couches de sécurité et
 
 Par défaut, les clés gérées par Microsoft protègent vos données client. Les données qui persistent sur un média physique sont toujours chiffrées à l’aide de protocoles de chiffrement conformes au mode FIPS 140-2. Vous pouvez également utiliser des clés gérées par le client (CMK) [le chiffrement double](../compliance/double-key-encryption.md) et/ou des modules de sécurité matérielle (HSM) pour renforcer la protection des données.
 
-L’ensemble du trafic de données circulant entre les centres de données est également protégé à l’aide des standards de sécurité IEEE 802.1 AE MAC, empêchant des attaques physiques par un intercepteur.
+Par ailleurs, Microsoft utilise par défaut le protocole [TLS (Transport Layer Security)](https://wikipedia.org/wiki/Transport_Layer_Security) pour chiffrer les données lorsqu’il se déplace entre les services cloud et les clients. Les services Microsoft négocient une connexion TLS avec les systèmes clients qui se connectent aux services Microsoft 365. 
 
 Pour empêcher tout accès physique non autorisé aux centres de données, nous utilisons des contrôles et processus opérationnels rigoureux qui incluent une surveillance vidéo 24h/24, 7j/7, des processus et un personnel de sécurité formé, et des contrôles d’accès multifacteur biométriques ou par carte à puce. En fin de vie, les disques de données sont broyés et détruits. Si un lecteur de disque utilisé pour le stockage subit une défaillance matérielle ou atteint la fin de son cycle de vie, celui-ci est effacé ou détruit en toute sécurité. Les données du lecteur sont entièrement écrasées pour s’assurer que les données ne peuvent pas être récupérées par quelque moyen que ce soit. Lorsque de tels appareils sont mis hors service, ils sont broyés et détruits conformément à la norme NIST SP 800-88 R1 sur les Directives d’assainissement des fichiers multimédias. Les registres de la destruction sont conservés et examinés dans le cadre du processus de conformité et d’audit de Microsoft. Tous les services Microsoft 365 utilisent des services approuvés de stockage et de gestion de l’élimination des fichiers multimédias.
 

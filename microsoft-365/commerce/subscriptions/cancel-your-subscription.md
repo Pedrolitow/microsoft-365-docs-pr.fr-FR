@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: Découvrez comment annuler un abonnement payant ou une version d’évaluation de Microsoft 365 for business.
 ms.date: ''
-ms.openlocfilehash: 7a2de2a261baeb4e64e12742810635f352217933
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916875"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615386"
 ---
 # <a name="cancel-your-subscription"></a>Annuler un abonnement
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 *Conditions :* Si vous disposez de moins de 25 licences attribuées à vos utilisateurs, vous pouvez à tout moment annuler votre abonnement payant ou version d’évaluation de Microsoft 365 dans le centre d’administration Microsoft 365. Si vous disposez de plus de 25 licences attribuées à vos utilisateurs, réduisez ce nombre à moins de 25 ou bien [appelez le service clientèle pour annuler votre abonnement](../../admin/contact-support-for-business-products.md).
 
@@ -53,46 +46,26 @@ Si vous avez ajouté votre propre nom de domaine pour l’utiliser avec votre ab
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>, puis sélectionnez l’onglet **Produits**.
-2. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
-3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
-4. Sélectionnez **Enregistrer**.
-
-Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md)
-
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-2. Sur la page **Abonnements**, sélectionnez un abonnement.
-
-3. Dans le menu **Autres actions**, sélectionnez **Annuler l’abonnement**.
-
-    ![Gros plan sur le menu Autres actions.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. Passez en revue les dates importantes, indiquez des commentaires sur la raison de votre annulation, puis sélectionnez **Annuler l’abonnement**.
-
-    Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md)
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
-
-2. Sur la page **Abonnements**, sélectionnez un abonnement.
-
-3. Dans le menu **Autres actions**, sélectionnez **Annuler l’abonnement**.
-
-    ![Gros plan sur le menu Autres actions.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. Passez en revue les dates importantes, indiquez des commentaires sur la raison de votre annulation, puis sélectionnez **Annuler l’abonnement**.
-
-    Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md)
-
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
+
+2. Sélectionnez l’onglet **Produits**.
+3. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
+4. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
+5. Sélectionnez **Enregistrer**.
+
+Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md).
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>Que se passe-t-il lorsqu’un abonnement est annulé ?
 

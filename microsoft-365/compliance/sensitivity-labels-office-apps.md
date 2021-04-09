@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3aa5c8065b882dff670d6b829141955bf615d933
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498826"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599839"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -85,18 +85,20 @@ Les nombres répertoriés sont la version minimale de l’application Office req
 |[Demander une justification pour la modification d'étiquette.](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Fournir un lien d’aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Marquer le contenu](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
-|[Marquages dynamiques avec des variables](#dynamic-markings-with-variables).                                              | En cours de révision                     | En cours de révision                 | En cours de révision         | En cours de révision           | En cours de révision               |
+|[Marquage dynamique avec variables ](#dynamic-markings-with-variables)<sup>1 </sup>                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Ne pas transférer](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Chiffrer uniquement](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | En cours de révision | En cours de révision  | En cours de révision | En cours de déploiement |
-|[Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | En cours de déploiement : 2101+                        | 16.43+ <sup>\*</sup>                    | En cours de révision            | En cours de révision                | Oui                |
+|[Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | En cours de déploiement : 2101+                        | 16.43+ <sup>2</sup>                    | En cours de révision            | En cours de révision                | Oui                |
 |[Audit de l’activité des utilisateurs liée à une étiquette](data-classification-activity-explorer.md) | 2011+ | En cours de révision | En cours de révision           | En cours de révision               | En cours de révision |
-|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | En cours de révision           | En cours de révision               | Oui |
+|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>2</sup>                    | En cours de révision           | En cours de révision               | Oui |
 |
 
-**Note de bas de page :**
+**Notes de bas de page :**
 
-<sup>\*</sup> Nécessite le [nouveau Outlook pour Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+<sup>1</sup> Actuellement, seules les variables [Item.Label et If.App](#dynamic-markings-with-variables) sont prises en charge.
+<br />
+<sup>2</sup>nécessite le [nouveau Outlook pour Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Client d’étiquetage intégré à Office et autres solutions d’étiquetage
@@ -293,18 +295,18 @@ Dans ces scénarios, à l’aide de leurs applications Office, un utilisateur av
 > [!IMPORTANT]
 > Actuellement, toutes les applications, sur toutes les plateformes, ne prennent pas en charge les marquages de contenu dynamiques que vous pouvez spécifier pour vos en-têtes, pieds de page et filigranes. Pour les applications qui ne prennent pas en charge cette fonctionnalité, elles appliquent les marquages comme le texte original spécifié dans la configuration de l'étiquette, plutôt que de résoudre les variables.
 > 
-> Le client d'étiquetage unifié Azure Information Protection prend en charge les marquages dynamiques. Pour obtenir des étiquetages intégrés à Office, consultez les tableaux de la section [fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) section sur cette page.
+> Le client d'étiquetage unifié Azure Information Protection prend en charge les marquages dynamiques et toutes les variables répertoriées. Pour l'étiquetage intégré à Office, consultez les tableaux de la section [capacités](#support-for-sensitivity-label-capabilities-in-apps) de cette page pour connaître les versions minimales, puis le tableau suivant pour identifier les variables prises en charge.
 
 Lorsque vous configurez une étiquette de confidentialité pour le marquage du contenu, vous pouvez utiliser les variables suivantes dans la chaîne de texte pour votre en-tête, pied de page ou filigrane :
 
 | Variable | Description | Exemple lors de l’application d’une étiquette |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Nom complet de l’étiquette appliquée| **Général**|
-| `${Item.Name}` | Nom de fichier ou objet du courrier électronique du contenu étiqueté | **Sales.docx** |
-| `${Item.Location}` | Chemin d’accès et nom de fichier du document étiqueté, ou objet du courrier électronique étiqueté | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Nom d’affichage de l’utilisateur appliquant l’étiquette| **Richard Simone** |
-| `${User.PrincipalName}` | Nom d’utilisateur principal Azure AD de l’utilisateur appliquant l’étiquette | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Date et heure d’étiquette du contenu, dans le fuseau horaire local de l’utilisateur appliquant l’étiquette | **10/08/2020 13:30** |
+| `${Item.Label}` | Nom complet de l’étiquette appliquée <br /><br> Étiquetage intégré : Prise en charge par Word, Excel, PowerPoint et Outlook | **Général**|
+| `${Item.Name}` | Nom de fichier ou objet du courrier électronique du contenu étiqueté <br /><br> Étiquetage intégré : Prise en charge par Word, Excel, PowerPoint | **Sales.docx** |
+| `${Item.Location}` | Chemin d’accès et nom de fichier du document étiqueté, ou objet du courrier électronique étiqueté <br /><br> Étiquetage intégré : Prise en charge par Word, Excel, PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Nom d’affichage de l’utilisateur appliquant l’étiquette <br /><br> Étiquetage intégré : Prise en charge par Word, Excel, PowerPoint | **Richard Simone** |
+| `${User.PrincipalName}` | Nom d’utilisateur principal Azure AD de l’utilisateur appliquant l’étiquette <br /><br> Étiquetage intégré : Prise en charge par Word, Excel, PowerPoint  | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Date et heure d’étiquette du contenu, dans le fuseau horaire local de l’utilisateur appliquant l’étiquette <br /><br> Étiquetage intégré : Prise en charge par Word, Excel, PowerPoint  | **10/08/2020 13:30** |
 
 > [!NOTE]
 > La syntaxe de ces variables respecte la casse.
@@ -312,9 +314,6 @@ Lorsque vous configurez une étiquette de confidentialité pour le marquage du c
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Définition de différents marquages visuels pour Word, Excel, PowerPoint et Outlook
 
 En tant que variable supplémentaire, vous pouvez configurer des marquages visuels par type d’application Office à l’aide d’une instruction de variable « If.App » dans la chaîne de texte et identifier le type d’application à l’aide des valeurs **Word**, **Excel**, **PowerPoint** ou **Outlook**. Vous pouvez également abréger ces valeurs, ce qui est nécessaire si vous souhaitez en spécifier plusieurs dans la même instruction If.App.
-
-> [!NOTE]
-> Pour l’intégralité, des instructions sont incluses pour Outlook, bien qu’actuellement uniquement pris en charge par le client d’étiquetage unifié Azure Information Protection.
 
 Utilisez la syntaxe suivante :
 

@@ -1,7 +1,7 @@
 ---
-title: Détection de périphériques réseau et gestion des vulnérabilités
+title: Gestion des vulnérabilités et de la découverte de périphériques réseau
 description: Les recommandations de sécurité et la détection des vulnérabilités sont désormais disponibles pour les systèmes d’exploitation des commutateurs, routeurs, contrôleurs WLAN et pare-feu.
-keywords: périphériques réseau, détection des vulnérabilités des périphériques réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
+keywords: périphériques réseau, détection de vulnérabilité des périphériques réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06b52e937dd0260a50883c45c36389a6a955ad0e
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604508"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657040"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Gestion des vulnérabilités et de la découverte de périphériques réseau
 
@@ -44,9 +44,9 @@ ms.locfileid: "51604508"
 
 Les fonctionnalités de découverte de réseau sont disponibles dans la **section** Inventaire des appareils du Centre de sécurité Microsoft 365 et des consoles du Centre de sécurité Microsoft Defender.  
 
-Un appareil Microsoft Defender for Endpoint désigné sera utilisé sur chaque segment réseau pour effectuer des analyses authentifiées périodiques des périphériques réseau préconfigurés. Une fois découvertes, les fonctionnalités de gestion des menaces et des vulnérabilités de Defender for Endpoint fournissent des flux de travail intégrés pour sécuriser les commutateurs, routeurs, contrôleurs WLAN, pare-feu et passerelles VPN détectés.  
+Un appareil Microsoft Defender for Endpoint désigné sera utilisé sur chaque segment réseau pour effectuer des analyses authentifiées périodiques des périphériques réseau préconfigurés. Une fois découvertes, les fonctionnalités de gestion des menaces et des vulnérabilités de Defender for Endpoint fournissent des flux de travail intégrés pour sécuriser les commutateurs découverts, les routeurs, les contrôleurs WLAN, les pare-feu et les passerelles VPN.  
 
-Une fois que les périphériques réseau ont été découverts et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes pour les périphériques réseau déployés au sein de leur organisation.
+Une fois que les périphériques réseau ont été découverts et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
 
 ## <a name="approach"></a>Approche
 
@@ -59,7 +59,7 @@ Il y aura deux types d’appareils à garder à l’esprit :
 
 ### <a name="vulnerability-management-for-network-devices"></a>Gestion des vulnérabilités pour les périphériques réseau 
 
-Une fois les périphériques réseau détectés et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.  
+Une fois que les périphériques réseau ont été découverts et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.  
 
 ## <a name="operating-systems-that-are-supported"></a>Systèmes d’exploitation pris en charge
 
@@ -95,9 +95,9 @@ La première étape consiste à sélectionner un appareil qui effectuera les ana
     - login.windows.net  
     - *.securitycenter.windows.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/*
+    - *.blob.core.windows.net/networkscannerstable/ *
 
-    Remarque : ces URL ne sont pas spécifiées dans la liste documentée defender pour point de terminaison de collecte de données autorisée.
+    Remarque : toutes les URL ne sont pas spécifiées dans la liste de collecte de données autorisées de Defender for Endpoint.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -123,7 +123,7 @@ Pour terminer le processus d’inscription du scanneur réseau :
 
 2. Entrez le code et connectez-vous à l’aide d’un compte Microsoft qui dispose de l’autorisation Defender pour le point de terminaison appelée « Gérer les paramètres de sécurité dans le Centre de sécurité ».
 
-3. Lorsque vous avez terminé, vous devriez voir un message vous confirmant que vous vous êtes déjà inscrit.
+3. Lorsque vous avez terminé, vous devez voir un message vous confirmant que vous êtes bien inscrit.
 
 ## <a name="configure-a-new-assessment-job"></a>Configurer un nouveau travail d’évaluation  
 
@@ -167,7 +167,7 @@ Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans vos p
 
 ### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>La page Microsoft.com/devicelogin web de l’application n’a pas été
 
-Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans votre pare-feu. Assurez-vous également que les paramètres proxy sont configurés comme décrit dans Configurer les [paramètres de proxy](configure-proxy-internet.md)d’appareil et de connectivité Internet.
+Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans votre pare-feu. Assurez-vous également que les paramètres de proxy sont configurés comme décrit dans Configurer les [paramètres de proxy](configure-proxy-internet.md)d’appareil et de connectivité Internet.
 
 ### <a name="network-devices-are-not-shown-in-the-device-inventory-after-several-hours"></a>Les périphériques réseau ne sont pas affichés dans l’inventaire des appareils après plusieurs heures
 

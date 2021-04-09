@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Découvrez comment contrôler les utilisateurs qui peuvent créer des groupes Microsoft 365.
-ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 092ff821911ef0af2b7867e1b870b68b1b6355b3
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929155"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656984"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Gérer les personnes autorisées à créer des groupes Microsoft 365
 
@@ -43,7 +43,7 @@ Lorsque vous limitez les personnes autorisées à créer un groupe, cela affecte
 - Power BI (classique)
 - Projet pour le web / Feuille de route
 
-Les étapes de cet article n’empêchent pas les membres de certains rôles de créer des groupes. Les administrateurs globaux Office 365 peuvent créer des groupes par n’importe quel moyen, comme le Centre d’administration Microsoft 365, le Planificateur, Teams, Exchange et SharePoint Online. D’autres rôles peuvent créer des groupes via des moyens limités, répertoriés ci-dessous.
+Les étapes de cet article n’empêchent pas les membres de certains rôles de créer des groupes. Les administrateurs globaux Office 365 peuvent créer des groupes via le Centre d’administration Microsoft 365, le Planificateur, Exchange et SharePoint Online. D’autres rôles peuvent créer des groupes via des moyens limités, répertoriés ci-dessous.
 
 - Administrateur Exchange : Centre d’administration Exchange, Azure AD
 - Support partenaire de niveau 1 : Centre d’administration Microsoft 365, Centre d’administration Exchange, Azure AD
@@ -95,7 +95,7 @@ Vous devez utiliser la version d’aperçu [d’Azure Active Directory PowerShel
 
 - Si vous avez déjà installé lapréversion, exécutez `Install-Module AzureADPreview` pour vous assurer qu’il s’agit de la dernière version de ce module.
 
-Copiez le script ci-dessous dans un éditeur de texte, tel que le Bloc-notes ou [le Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
+Copiez le script ci-dessous dans un éditeur de texte, tel que le Bloc-notes, [ou le Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
 Remplacez *\<GroupName\>* par le nom du groupe que vous avez créé. Par exemple :
 
@@ -151,7 +151,7 @@ Si vous souhaitez désactiver la restriction de création de groupe et autoriser
 
 ## <a name="step-3-verify-that-it-works"></a>Étape 3 : vérifier le bon fonctionnement
 
-L’application des modifications peut prendre 30 minutes ou plus. Vous pouvez vérifier les nouveaux paramètres en suivant les règles suivantes :
+L’application des modifications peut prendre trente minutes ou plus. Vous pouvez vérifier les nouveaux paramètres en suivant les règles suivantes :
 
 1. Connectez-vous à Microsoft 365 avec un compte d’utilisateur d’une personne qui ne doit PAS avoir la possibilité de créer des groupes. Autrement dit, ils ne sont pas membres du groupe que vous avez créé ou administrateur.
 
@@ -161,12 +161,12 @@ L’application des modifications peut prendre 30 minutes ou plus. Vous pouvez v
 
 4. Vous devez obtenir un message vous messageant que la création de groupe et de plan est désactivée.
 
-Essayez à nouveau la même procédure avec un membre du groupe.
+Recommencez la même procédure avec un membre du groupe.
 
 > [!NOTE]
 > Si les membres du groupe ne sont pas en mesure de créer des groupes, vérifiez qu’ils ne sont pas bloqués par le biais de [leur stratégie OWA boîte aux lettres.](/powershell/module/exchange/set-owamailboxpolicy)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

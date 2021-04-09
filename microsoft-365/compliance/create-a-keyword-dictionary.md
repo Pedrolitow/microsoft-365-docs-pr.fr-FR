@@ -18,28 +18,56 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les étapes principales de la création d’un dictionnaire de mots clés dans le Centre de sécurité et conformité Office 365.
-ms.openlocfilehash: ff96eda71857b4b0f802462da96e4f4abbaf05f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b70deed531204f2ffe85253bd9ae2073dad291ec
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908388"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632190"
 ---
 # <a name="create-a-keyword-dictionary"></a>Créer un dictionnaire de mots clés
 
 La protection contre la perte de données (DLP) peut identifier, surveiller et protéger vos éléments sensibles. L’identification des éléments sensibles nécessite parfois la recherche de mots clés, en particulier lors de l’identification d’un contenu générique (comme une communication liée à la santé) ou d’un langage inapproprié ou explicite. Bien que vous puissiez créer des listes de mots clés dans des types d’informations sensibles, ces listes sont de taille limitée et nécessitent la modification du XML pour les créer ou les modifier. Les dictionnaires de mots clés facilitent la gestion des mots clés à une échelle beaucoup plus grande, en prenant en charge jusqu’à 1Mo de termes (après la compression) dans le dictionnaire. Et ils prennent en charge toutes les langues. La limite du client est également de 1Mo après la compression. 1Mo de limite après la compression signifie que tous les dictionnaires combinés dans un client peuvent avoir près 1 million de caractères.
-  
-> [!NOTE]
-> Il existe une limite de 50 types d’informations sensibles basés sur un dictionnaire de mots clés qui peuvent être créés par client.
 
-> [!NOTE]
-> Microsoft 365 Information Protection prend désormais en charge, en préversion, les langues de jeu de caractères à double octets pour :
-> - Chinois (simplifié)
-> - Chinois (traditionnel)
-> - Korean
-> - Japanese
->
->Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
+## <a name="keyword-dictionary-limits"></a>Limites du dictionnaire de mots clés
+
+Il existe une limite de 50 types d’informations sensibles basés sur un dictionnaire de mots clés que vous pouvez créer par client. Pour connaître le nombre de dictionnaires de mots clés de votre client, vous pouvez exécuter ce script PowerShell sur votre client.
+
+```powershell
+$rawFile = $env:TEMP + "\rule.xml"
+
+$kd = Get-DlpKeywordDictionary
+$ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
+Set-Content -path $rawFile -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+$UnicodeEncoding = New-Object System.Text.UnicodeEncoding
+$FileContent = [System.IO.File]::ReadAllText((Resolve-Path $rawFile), $unicodeEncoding)
+
+if($kd.Count -gt 0)
+{
+$count = 0
+$entities = $FileContent -split "Entity id"
+for($j=1;$j -lt $entities.Count;$j++)
+{
+for($i=0;$i -lt $kd.Count;$i++)
+{
+$Matches = Select-String -InputObject $entities[$j] -Pattern $kd[$i].Identity -AllMatches
+$count = $Matches.Matches.Count + $count
+if($Matches.Matches.Count -gt 0) {break}
+}
+}
+
+Write-Output "Total Keyword Dictionary SIT:"
+$count
+}
+else
+{
+$Matches = Select-String -InputObject $FileContent -Pattern $kd.Identity -AllMatches
+Write-Output "Total Keyword Dictionary SIT:"
+$Matches.Matches.Count
+}
+
+Remove-Item $rawFile
+```
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Étapes de base de la création d’un dictionnaire de mots clés
 
@@ -237,3 +265,12 @@ Collez l’identité dans le code XML de votre type personnalisé d’informati
       </Resource>
     </LocalizedStrings>
 ```
+
+> [!NOTE]
+> Microsoft 365 Information Protection prend désormais en charge, en préversion, les langues de jeu de caractères à double octets pour :
+> - Chinois (simplifié)
+> - Chinois (traditionnel)
+> - Korean
+> - Japanese
+>
+>Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).

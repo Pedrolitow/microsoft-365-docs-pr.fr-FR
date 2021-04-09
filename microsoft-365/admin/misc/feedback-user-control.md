@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les commentaires que vos utilisateurs peuvent envoyer à Microsoft concernant les produits Microsoft.
-ms.openlocfilehash: 0a6c895eacd7a1cf8077141c6a848236a53818e7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644814"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650060"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>En savoir plus sur les commentaires de Microsoft pour votre organisation
 
@@ -49,9 +49,9 @@ Si vos utilisateurs utilisent l’une des applications de Microsoft et souhaiten
 
 Les utilisateurs peuvent également évaluer leur expérience et fournir des informations supplémentaires sur leur expérience via des invites d’enquête initiées par le système. Ces invites se produisent dans les produits Microsoft 365 de temps à autre. Lorsque vous y êtes invité, les utilisateurs peuvent choisir s’ils souhaitent fournir des commentaires. Les invites d’enquête apparaissent généralement en bas à droite de l’application. Si l’utilisateur décide de fournir des commentaires, d’ignorer l’invite ou de laisser l’invite disparaître d’elle-même, cet utilisateur ne verra plus l’enquête pendant un certain temps. Microsoft tire également parti d’un processus de gouvernance pour limiter le nombre de ces enquêtes initiées par le système.  L’objectif de la gouvernance est de s’assurer que les utilisateurs ne sont pas submergés par le nombre d’invites d’enquête.
 
-:::image type="content" source="../../media/feedback-outlook-example.png" alt-text="Capture d’écran : exemple de commentaires dans le produit pour Outlook":::
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: How likely are you to recommend Microsoft 365 survey":::
-:::image type="content" source="../../media/feedback-in-product1.png" alt-text="Capture d’écran : Exemples de pages de commentaires dans le produit":::
+:::image type="content" source="../../media/feedback-love.png" alt-text="Capture d’écran : exemple de demande de commentaires dans le produit":::
+
+:::image type="content" source="../../media/feedback-excel.png" alt-text="Capture d’écran : exemple de demande de commentaires dans le produit":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>Quel type de commentaires est le meilleur ?
 
@@ -90,3 +90,7 @@ Nous travaillons pour gagner la confiance en nous assurant que nous nous concent
 Nous nous assurerons que les commentaires que nous recevons sont stockés et gérés sous les règles de gouvernance Microsoft et qu’ils sont accessibles uniquement pour les utilisations approuvées.
 
 Nous vous mettons en contrôle sur votre confidentialité à l’aide d’outils faciles à utiliser et de choix clairs. Nous sommes transparents sur la façon dont nous collectons et utilisons les données, afin que vous pouvez prendre des décisions éclairées sur ce que vous souhaitez partager. Nous protégeons les données que vous nous faites confiance avec une sécurité et un chiffrement forts. Nous respectons les lois locales sur la protection de la vie privée et travaillons à la protection juridique de votre vie privée en tant que droit humain. Nous n’utilisons pas votre courrier électronique, votre conversation, vos fichiers ou tout autre contenu personnel pour vous cibler des publicités. Lorsque nous collectons des données, nous les utilisons pour améliorer vos expériences. En savoir plus sur l’approche de Confidentialité de Microsoft [ici.](https://privacy.microsoft.com/) En savoir plus sur notre [vue d’ensemble de la confidentialité.](/compliance/assurance/assurance-privacy)
+
+## <a name="how-can-i-see-my-users-feedback"></a>Comment puis-je voir les commentaires de mon utilisateur ?
+
+Bientôt, nous vous partagerons les données de commentaires collectées pour les produits Microsoft. Nous travaillons sur une nouvelle expérience dans le Centre d’administration Microsoft 365 qui vous permet d’afficher, de supprimer et d’exporter les données de commentaires pour votre organisation. Cela vous donne une transparence directe et des informations utiles sur les expériences de vos utilisateurs avec les produits Microsoft 365.

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service peut ouvrir les tickets de support via le centre d’administration.
-ms.openlocfilehash: 8092d199dc6ecfda5d76c9198ba44a72ec7b4d71
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e0155ee9e263d4b62dced0e2bd943781ccf93a4c
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197684"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644254"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -80,7 +80,7 @@ Vous devrez probablement attribuer les rôles suivants au sein de votre organisa
 |Administrateur de licences    |   Affectez le rôle d’administrateur de licences aux utilisateurs qui doivent attribuer et supprimer des licences d’utilisateurs et modifier leur localisation d’utilisation. <br/><br/> Les administrateurs de licences peuvent également : <br> – Retraiter les affectations de licences pour les licences basées sur des groupes <br> – Affecter des licences produit aux groupes pour les licences basées sur des groupes  |
 |Administrateur d'applications Office    |   Attribuez le rôle d’administrateur d'applications Office aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Utiliser le service de stratégie cloud Office pour créer et gérer des stratégies basées sur le cloud pour Office <br> – Créer et gérer des demandes de service <br> – Gérer le contenu des nouveautés que les utilisateurs peuvent afficher dans les applications Office   <br> – Surveiller l’état d’intégrité des services  |
 |Administrateur de mots de passe  |   Affectez le rôle d'administrateur de mots de passe à un utilisateur qui doit réinitialiser des mots de passe pour les non administrateurs et les administrateurs de mots de passe.   |
-|Administrateur de support de service   |   Affectez le rôle d’administrateur de support de service en tant que rôle supplémentaire aux administrateurs ou aux utilisateurs qui doivent effectuer ce qui suit en complément de leur rôle d’administrateur habituel : <br> – Ouvrir et gérer des demandes de service <br> – Afficher et partager des billets du centre de messages   |
+|Administrateur de support de service   |   Affectez le rôle d’administrateur de support de service en tant que rôle supplémentaire aux administrateurs ou aux utilisateurs qui doivent effectuer ce qui suit en complément de leur rôle d’administrateur habituel : <br> – Ouvrir et gérer des demandes de service <br> – Afficher et partager des billets du centre de messages <br> – Surveiller l’état d’intégrité des services   |
 |Administrateur SharePoint    |   Attribuez le rôle d’administrateur SharePoint aux utilisateurs qui doivent accéder et gérer le centre d’administration SharePoint Online. <br><br>Les administrateurs SharePoint peuvent également : <br> – Créer et supprimer des sites <br> – Gérer les collections de sites et les paramètres globaux de SharePoint   |
 |Administrateur du service Teams    |   Attribuez le rôle d’administrateur du service Teams aux utilisateurs qui doivent accéder et gérer le centre d’administration Teams. <br><br>Les administrateurs du service Teams peuvent également : <br> – Gérer des réunions <br> – Gérer les ponts de conférence <br> – Gérer tous les paramètres à l’échelle de l’organisation, notamment la fédération, la mise à jour de Teams et les paramètres du client Teams   |
 |Administrateur d’utilisateurs     |    Attribuez le rôle d’administrateur d'utilisateurs aux ceux qui doivent effectuer les opérations suivantes pour l'ensemble des utilisateurs : <br> – Ajouter des utilisateurs et des groupes <br> – Attribuer des licences <br> – Gérer la plupart des propriétés des utilisateurs <br> – Créer et gérer les affichages utilisateur <br> – Mettre à jour les stratégies d’expiration des mots de passe <br> – Gérer des demandes de service <br> – Surveiller l’état d’intégrité des services <br><br>  L’administrateur d’utilisateurs peut également effectuer les actions suivantes pour les utilisateurs qui ne sont pas administrateurs et pour ceux auxquels les rôles suivants sont attribués : lecteur de répertoire, inviteur d'invités, administrateur du support technique, lecteur du centre de messages, lecteur de rapports : <br> – Gérer les noms d’utilisateur<br> – Supprimer et restaurer des d’utilisateurs<br> – Réinitialiser des mots de passe <br> – Forcer les utilisateurs à se déconnecter <br> – Mettre à jour les clés d'appareils (FIDO)   |

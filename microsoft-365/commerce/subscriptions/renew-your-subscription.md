@@ -21,21 +21,14 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: Découvrez comment renouveler votre Microsoft 365 en activant ou en désactivant la facturation récurrente.
-ms.openlocfilehash: 8b38336ccb7a0a29b5782e55117389f6a19a0d80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 76be85fe3cbeafb275478e6236e051b6a252c099
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903523"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615170"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Cet article s'applique uniquement à la plupart des abonnements Microsoft 365 pour les entreprises payants.
   
@@ -53,6 +46,19 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+::: moniker-end
+
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
 3. Sur la page Détails de l’abonnement, sous **Paramètres d’abonnement et de paiement**, sélectionnez **Modifier la facturation récurrente**.
 4. Dans le volet **Modifier les paramètres de facturation récurrente** , sélectionnez **Activer**, **Activer, mais procédez au renouvellement une fois**, ou **Désactiver**.
@@ -63,46 +69,6 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
     > - Lorsque la **Facturation récurrente** est désactivée, l’abonnement n’est pas annulé. Si vous voulez conserver l’abonnement actif, vous devez payer la facture manuellement.
     > - Si vous désactivez la **Facturation récurrente**, l’abonnement reste actif jusqu’à son expiration. Vous pouvez afficher la date d’expiration sur la page Détails de l’abonnement dans la section **Abonnement et paramètres de paiement** .
     > - Pour découvrir comment annuler l’abonnement directement, voir [Annuler votre abonnement](cancel-your-subscription.md).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-  
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
-
-3. Pour activer **Facturation périodique**, basculez le bouton sur **Activer**.
-
-    ![Gros plan d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    Vous pouvez désactiver la **Facturation périodique** en basculant le bouton sur **Désactiver**.
-
-    > [!NOTE]
-    > - Vous ne pouvez modifier le paramètre de **Facturation périodique** que pour les abonnements actifs. Si votre abonnement a déjà expiré ou s’il est désactivé, vous devez [le réactiver](reactivate-your-subscription.md) avant de pouvoir activer ou désactiver le **Facturation périodique**.
-    > - Lorsque l **Facturation périodique** est désactivé, l’abonnement n’est pas annulé immédiatement. Il reste actif jusqu’à son expiration. Vous pouvez afficher la date d’expiration sur la carte d’abonnement
-    > - Pour découvrir comment annuler l’abonnement directement, voir [Annuler votre abonnement](cancel-your-subscription.md).
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-  
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
-
-2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
-
-3. Pour activer **Facturation périodique**, basculez le bouton sur **Activer**.
-
-    ![Gros plan d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    Vous pouvez désactiver la **Facturation périodique** en basculant le bouton sur **Désactiver**.
-
-    > [!NOTE]
-    > - Vous ne pouvez modifier le paramètre de **Facturation périodique** que pour les abonnements actifs. Si votre abonnement a déjà expiré ou s’il est désactivé, vous devez [le réactiver](reactivate-your-subscription.md) avant de pouvoir activer ou désactiver le **Facturation périodique**.
-    > - Lorsque l **Facturation périodique** est désactivé, l’abonnement n’est pas annulé immédiatement. Il reste actif jusqu’à son expiration. Vous pouvez afficher la date d’expiration sur la carte d’abonnement.
-    > - Pour découvrir comment annuler l’abonnement directement, voir [Annuler votre abonnement](cancel-your-subscription.md).
-
-::: moniker-end
 
 ## <a name="related-articles"></a>Articles connexes
 
