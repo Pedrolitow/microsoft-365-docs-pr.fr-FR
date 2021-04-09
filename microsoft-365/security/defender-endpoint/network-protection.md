@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.date: 03/08/2021
 ms.topic: how-to
-ms.openlocfilehash: be98bf810d00b6e39ba9d2674604a9fd2128a8cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ef3fbeec65be512dfe07f1d533df4d8e9b31532
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198651"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644499"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -38,20 +38,20 @@ La protection réseau permet de réduire la surface d’attaque de vos appareils
 
 La protection réseau est prise en charge sur Windows, à partir de Windows 10, version 1709. 
 
-Pour plus d’informations sur la façon d’activer la protection réseau, voir [Activer la protection réseau.](enable-network-protection.md) Utilisez une stratégie de groupe, PowerShell ou des CSP de gestion des stratégies de groupe pour activer et gérer la protection réseau dans votre réseau.
+Pour plus d’informations sur la façon d’activer la protection réseau, voir [Activer la protection réseau.](enable-network-protection.md) Utilisez la stratégie de groupe, PowerShell ou les CSP mdM pour activer et gérer la protection réseau dans votre réseau.
 
 > [!TIP]
 > Consultez le site testground de Microsoft Defender ATP [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionne la protection réseau.
 
-La protection du réseau fonctionne mieux avec [Microsoft Defender pour point](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)de terminaison, qui vous fournit des rapports détaillés sur les événements et les blocs Exploit Protection dans le cadre de scénarios d’investigation [d’alerte.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-alerts)
+La protection réseau fonctionne mieux avec [Microsoft Defender pour point](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)de terminaison, qui vous fournit des rapports détaillés sur les événements et les blocs Exploit Protection dans le cadre de scénarios d’investigation [d’alerte.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-alerts)
 
 Lorsque la protection réseau bloque une connexion, une notification s’affiche à partir du centre de notifications. Votre équipe des opérations de sécurité [peut personnaliser la notification](customize-attack-surface-reduction.md#customize-the-notification) avec les détails et les informations de contact de votre organisation. En outre, les règles de réduction de la surface d’attaque individuelles peuvent être activées et personnalisées en fonction de certaines techniques à surveiller.
 
 Vous pouvez également utiliser le [mode audit](audit-windows-defender.md) pour évaluer l’impact de la protection réseau sur votre organisation si elle était activée.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
-La protection du réseau nécessite Windows 10 Professionnel ou Entreprise et la protection en temps réel de l’Antivirus Microsoft Defender.
+La protection réseau nécessite windows 10 Professionnel ou Entreprise, ainsi que la protection en temps réel de l’Antivirus Microsoft Defender.
 
 | Version de Windows | Antivirus Microsoft Defender |
 |:---|:---|
@@ -90,6 +90,16 @@ Cette procédure crée un affichage personnalisé qui filtre pour afficher uniqu
 | 5007 | Événement lorsque les paramètres sont modifiés |
 | 1125 | Événement lorsque la protection du réseau se déclenche en mode audit |
 | 1126 | Événement lorsque la protection réseau se déclenche en mode blocage |
+
+## <a name="network-protection-troubleshooting"></a>Résolution des problèmes de protection du réseau
+
+En raison de l’environnement dans lequel la Protection du réseau s’exécute, Microsoft peut ne pas être en mesure de détecter les paramètres proxy du système d’exploitation. Dans certains cas, les clients de protection du réseau ne peuvent pas accéder au service Cloud. Pour résoudre le problème de connectivité, les clients titulaires d’une licence E5 doivent configurer l’une des clés de Registre Defender suivantes :
+
+```console
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+
+```
 
 ## <a name="related-articles"></a>Articles connexes
 

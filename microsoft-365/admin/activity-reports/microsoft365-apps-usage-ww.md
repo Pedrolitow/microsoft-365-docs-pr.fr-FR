@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport Microsoft 365 Apps for usage à l’aide du tableau de bord Rapports Microsoft 365 dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 88ef5e1291c35bbac050609e26e2ac5adef9d981
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579589"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644266"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation des applications Microsoft 365
 
@@ -33,7 +33,7 @@ Le tableau de  bord Rapports Microsoft 365 vous présente la vue d’ensemble de
 
 
  > [!NOTE]
- > Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint ou Skype Entreprise pour consulter les rapports.
+ > Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint ou Skype Entreprise pour consulter les rapports. Les activations d’ordinateurs partagés ne sont pas pris en charge dans ce rapport.
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>Comment obtenir le rapport d’utilisation de Microsoft 365 Apps
 
@@ -44,7 +44,8 @@ Le tableau de  bord Rapports Microsoft 365 vous présente la vue d’ensemble de
 
 Vous pouvez obtenir une vue de l’activité des applications Microsoft  365 de votre utilisateur en regardant les graphiques Utilisateurs **et plateforme.**
 
-![Rapport d’utilisation des applications Microsoft 365](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
+> [!div class="mx-imgBorder"]
+> ![Rapport d’utilisation des applications Microsoft 365](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
 |Élément|Description|
  |:-----|:-----|

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 86bc6ef03438b637f62cf0e2a46e418dbea7a3c1
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581081"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650277"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Avec la solution Microsoft 365 Defender intégrée, les professionnels de la sé
 
 Dans ce guide interactif, vous allez découvrir comment protéger votre organisation avec Microsoft 365 Defender. Vous verrez comment Microsoft 365 Defender peut vous aider à détecter les risques de sécurité, à examiner les attaques à votre organisation et à empêcher automatiquement les activités dangereuses.
 
-[Consultez le guide interactif](https://aka.ms/M365Defender-InteractiveGuide)
+[Consulter le guide interactif](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 
@@ -96,3 +96,7 @@ Les fonctionnalités de produits croisés Microsoft 365 Defender sont les suivan
 Les conditions de licence de Microsoft 365 Defender doivent être remplies pour que vous pouvez activer le service dans le Centre de sécurité Microsoft 365 [sur security.microsoft.com](https://security.microsoft.com). Pour plus d’informations, voir :
 - [Conditions de licence](prerequisites.md#licensing-requirements)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
+
+
+## <a name="see-also"></a>Voir aussi
+- [Déployer des fonctionnalités de protection contre les menaces dans Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)

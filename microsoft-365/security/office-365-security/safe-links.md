@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, les administrateurs peuvent en savoir plus sur la protection contre les liens sécurisés dans Defender pour Office 365 afin de protéger leur organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06ec3ab1a255e9eaa8c190ed5c248c9587273e03
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204689"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644775"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens sécurisés dans Microsoft Defender pour Office 365
 
@@ -57,11 +57,11 @@ La protection des liens sécurisés est disponible aux emplacements suivants :
 
   Pour plus d’informations sur la protection des liens sécurisés dans Teams, consultez la section Paramètres de liens [sécurisés](#safe-links-settings-for-microsoft-teams) pour Microsoft Teams plus loin dans cet article.
 
-- **Applications Office 365**: la protection contre les liens sécurisés pour les applications Office 365 est disponible dans les api de bureau, mobiles et web pris en charge. Vous **configurez la** protection des liens sécurisés pour les applications Office 365 dans le paramètre global qui se place en dehors des **stratégies** de liens sécurisés. Pour obtenir des instructions, voir Configurer les paramètres globaux des paramètres de liens [sécurisés dans Microsoft Defender pour Office 365.](configure-global-settings-for-safe-links.md)
+- **Applications Office 365**: la protection contre les liens sécurisés pour les applications Office 365 est disponible dans les api de bureau, mobiles et web pris en charge. Vous **configurez la** protection des liens sécurisés pour les applications Office 365 dans le paramètre global qui se place en dehors des **stratégies** de liens sécurisés. Pour obtenir des instructions, voir Configurer les paramètres globaux pour les paramètres de liens [sécurisés dans Microsoft Defender pour Office 365.](configure-global-settings-for-safe-links.md)
 
   Toutefois, la protection contre les liens  sécurisés pour les applications Office 365 est appliquée uniquement aux utilisateurs qui sont inclus dans les stratégies de liens sécurisés actives. Si un utilisateur n’est pas inclus dans une stratégie de liens sécurisés active, il ne reçoit pas de protection contre les liens sécurisés dans les applications Office 365 pris en charge.
 
-  Pour plus d’informations sur la protection des liens sécurisés dans les applications Office 365, consultez la section Paramètres de liens sécurisés pour les applications [Office 365](#safe-links-settings-for-office-365-apps) plus loin dans cet article.
+  Pour plus d’informations sur la protection des liens sécurisés dans les applications Office 365, consultez la section Des paramètres de liens sécurisés pour les applications [Office 365](#safe-links-settings-for-office-365-apps) plus loin dans cet article.
 
 Cet article contient des descriptions détaillées des types de paramètres de liens sécurisés suivants :
 
@@ -92,11 +92,11 @@ Le tableau suivant décrit les scénarios de liens sécurisés dans les organisa
 
 La liens sécurisés analyse le courrier électronique entrant pour les liens hypertexte malveillants connus. Les URL analysées sont réécrites à l’aide du préfixe d’URL standard Microsoft : `https://nam01.safelinks.protection.outlook.com` . Une fois le lien réécrit, il est analysé pour le contenu potentiellement malveillant.
 
-Une fois que les liens sécurisés ont réécrit une  URL, l’URL reste réécrite, même si le message est transmis ou répondu manuellement (à la fois aux destinataires internes et externes). Les liens supplémentaires qui sont ajoutés au message transmis ou à qui une réponse a été répondue ne sont pas réécrits. Toutefois, dans  le cas du forwarding automatique par les règles de boîte de réception ou le transport  SMTP, l’URL ne sera pas réécrite dans le message destiné au destinataire final, sauf si ce destinataire est également protégé par des liens sécurisés ou si l’URL a déjà été réécrite dans une communication précédente. 
+Une fois que les liens sécurisés ont réécrit une  URL, l’URL reste réécrite, même si le message est transmis ou répondu manuellement (à la fois aux destinataires internes et externes). Les liens supplémentaires qui sont ajoutés au message transmis ou à qui une réponse a été répondue ne sont pas réécrits. Toutefois, dans  le cas d’un forwarding automatique par des règles de boîte de réception ou de  transport SMTP, l’URL ne sera pas réécrite dans le message destiné au destinataire final, sauf si ce destinataire est également protégé par des liens sécurisés ou si l’URL a déjà été réécrite dans une communication précédente. 
 
 Les paramètres des stratégies de liens sécurisés qui s’appliquent aux messages électroniques sont décrits dans la liste suivante :
 
-- **Sélectionnez l’action pour les** URL potentiellement malveillantes inconnues dans les messages : active ou désactive l’analyse des liens sûrs dans les messages électroniques. La valeur recommandée est **Sur**. L’turning on this setting results in the following actions.
+- **Sélectionnez l’action pour les URL potentiellement malveillantes inconnues** dans les messages : active ou désactive l’analyse des liens sécurisés dans les messages électroniques. La valeur recommandée est **Sur**. L’turning on this setting results in the following actions.
 
   - L’analyse des liens sécurisés est activée dans Outlook (C2R) sur Windows.
   - Les URL sont réécrites et les utilisateurs sont acheminés via la protection de liens sécurisés lorsqu’ils cliquent sur les URL des messages.
@@ -118,11 +118,11 @@ Les paramètres des stratégies de liens sécurisés qui s’appliquent aux mess
 
 - **N’autorisez pas les utilisateurs** à cliquer sur l’URL d’origine : autorise ou empêche les utilisateurs de cliquer sur la [page](#warning-pages-from-safe-links) d’avertissement vers l’URL d’origine. La valeur recommandée est activée.
 
-- **Afficher la marque de l’organisation sur les pages de notification** et d’avertissement : cette option affiche la marque de votre organisation sur les pages d’avertissement. La branding permet aux utilisateurs d’identifier les avertissements légitimes, car les pages d’avertissement Microsoft par défaut sont souvent utilisées par les attaquants. Pour plus d’informations sur la personnalisation, voir Ajouter une personnalisation à la page de personnalisation [Azure Active Directory](/azure/active-directory/fundamentals/customize-branding)de votre organisation.
+- **Afficher la marque de l’organisation sur les pages de notification** et d’avertissement : cette option affiche la marque de votre organisation sur les pages d’avertissement. La branding permet aux utilisateurs d’identifier les avertissements légitimes, car les pages d’avertissement Microsoft par défaut sont souvent utilisées par les attaquants. Pour plus d’informations sur la personnalisation, voir Personnaliser le thème [Microsoft 365 pour votre organisation.](../../admin/setup/customize-your-organization-theme.md)
 
-- **Ne réécrivez pas les URL suivantes :** Laisse les URL telles qu’elles sont. Conserve une liste personnalisée d’URL sécurisées qui n’ont pas besoin d’être scanées. La liste est unique pour chaque stratégie de liens sécurisés. Pour plus d’informations sur la liste Ne pas réécrire les URL **suivantes,** voir les listes « Ne pas réécrire les URL suivantes » dans la section Stratégies de liens [sécurisés](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) plus loin dans cet article.
+- **Ne réécrivez pas les URL suivantes :** Laisse les URL telles qu’elles sont. Conserve une liste personnalisée d’URL sécurisées qui n’ont pas besoin d’analyse. La liste est unique pour chaque stratégie de liens sécurisés. Pour plus d’informations sur la liste Ne pas réécrire les URL **suivantes,** voir les listes « Ne pas réécrire les URL suivantes » dans la section Stratégies de liens [sécurisés](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) plus loin dans cet article.
 
-Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Strict pour les stratégies de liens sécurisés, voir Paramètres de [stratégie de liens sécurisés.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
+  Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Strict pour les stratégies de liens sécurisés, voir Paramètres de [stratégie de liens sécurisés.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
 - **Filtres de** destinataires : vous devez spécifier les conditions de destinataire et les exceptions qui déterminent à qui s’applique la stratégie. Vous pouvez utiliser ces propriétés pour les conditions et les exceptions :
 
@@ -140,7 +140,7 @@ Pour plus d’informations sur les valeurs recommandées pour les paramètres de
 
 À un niveau élevé, voici comment fonctionne la protection contre les liens sécurisés sur les URL des messages électroniques :
 
-1. Tous les messages électroniques sont envoyés via EOP, où les filtres de protocole Internet (IP) et d’enveloppe, la protection contre les programmes malveillants basés sur les signatures, le courrier indésirable et le logiciel anti-programme malveillant sont filtrants avant que le message ne soit remis à la boîte aux lettres du destinataire.
+1. Tous les messages électroniques sont envoyés via EOP, où les filtres de protocole Internet (IP) et d’enveloppe, la protection anti-programme malveillant basée sur les signatures, le courrier indésirable et le logiciel anti-programme malveillant filtrent avant que le message ne soit remis à la boîte aux lettres du destinataire.
 
 2. L’utilisateur ouvre le message dans sa boîte aux lettres et clique sur une URL dans le message.
 
@@ -157,9 +157,9 @@ Pour plus d’informations sur les valeurs recommandées pour les paramètres de
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Paramètres de liens sécurisés pour Microsoft Teams
 
 > [!IMPORTANT]
-> À partir de mars 2020, cette fonctionnalité est disponible en prévisualisation et est disponible uniquement pour les membres du programme d’adoption de technologie (TAP) de Microsoft Teams. Pour plus d’informations sur la planification de publication, consultez la feuille [de route Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams)
+> À partir de mars 2020, cette fonctionnalité est disponible en prévisualisation et est disponible uniquement pour les membres du programme d’adoption de technologie Microsoft Teams (TAP). Pour plus d’informations sur la planification de publication, consultez la feuille [de route Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams)
 
-Vous activez ou désactivez la protection contre les liens sécurisés pour Microsoft Teams dans les stratégies de liens sécurisés. Plus précisément, vous utilisez l’action Sélectionner pour les URL inconnues ou **potentiellement malveillantes** dans le paramètre Microsoft Teams. La valeur recommandée est **Sur**.
+Vous activez ou désactivez la protection contre les liens sécurisés pour Microsoft Teams dans les stratégies de liens sécurisés. Plus précisément, vous utilisez l’action Sélectionner pour les URL inconnues ou potentiellement malveillantes dans **le paramètre Microsoft Teams.** La valeur recommandée est **Sur**.
 
 Les paramètres suivants dans les stratégies de liens sécurisés qui s’appliquent aux liens dans les messages électroniques s’appliquent également aux liens dans Teams :
 
@@ -167,13 +167,13 @@ Les paramètres suivants dans les stratégies de liens sécurisés qui s’appli
 - **Ne pas suivre les clics de l’utilisateur**
 - **Ne pas autoriser les utilisateurs à accéder à l’URL d’origine**
 
-Ces paramètres sont expliqués dans la section Précédente des paramètres de liens [sécurisés pour les messages électroniques.](#safe-links-settings-for-email-messages)
+Ces paramètres sont expliqués précédemment dans les paramètres de liens [sécurisés pour les messages électroniques.](#safe-links-settings-for-email-messages)
 
 Une fois que vous avez activer la protection contre les liens sécurisés pour Microsoft Teams, les URL de Teams sont vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur protégé clique sur le lien (protection au moment du clic). Les URL ne sont pas réécrites. Si un lien est jugé malveillant, les utilisateurs auront les expériences suivantes :
 
 - Si vous avez cliqué sur le lien dans une conversation Teams, une conversation de groupe ou à partir de canaux, la page d’avertissement, comme illustré dans la capture d’écran ci-dessous, s’affiche dans le navigateur web par défaut.
 - Si vous avez cliqué sur le lien à partir d’un onglet épinglé, la page d’avertissement s’affiche dans l’interface Teams de cet onglet. L’option d’ouverture du lien dans un navigateur web est désactivée pour des raisons de sécurité.
-- Selon la configuration du paramètre Ne pas autoriser les utilisateurs à accéder à **l’URL** d’origine de la stratégie, l’utilisateur est autorisé ou non à accéder à l’URL d’origine (continuer quand même **(non recommandé)** dans la capture d’écran). Nous vous recommandons d’activer le paramètre Ne pas autoriser les utilisateurs à accéder au paramètre **d’URL** d’origine afin que les utilisateurs ne peuvent pas accéder à l’URL d’origine.
+- Selon la configuration du paramètre Ne pas autoriser les utilisateurs à accéder à **l’URL** d’origine de la stratégie, l’utilisateur est autorisé ou non à accéder à l’URL d’origine (continuer quand même **(non recommandé)** dans la capture d’écran). Nous vous recommandons d’activer le paramètre Ne pas autoriser les utilisateurs à cliquer sur le paramètre **d’URL** d’origine afin que les utilisateurs ne peuvent pas accéder à l’URL d’origine.
 
 Si l’utilisateur qui a envoyé le lien n’est pas inclus dans une stratégie de liens sécurisés dans laquelle la protection Teams est activée, l’utilisateur est libre de cliquer sur l’URL d’origine sur son ordinateur ou son appareil.
 
@@ -256,22 +256,22 @@ Lorsqu’un utilisateur d’une stratégie de liens sécurisés active clique su
 
 Vous configurez la liste des URL dans les paramètres globaux des liens sécurisés. Pour obtenir des instructions, voir Configurer la liste [« Bloquer les URL suivantes](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)».
 
-**Remarques** :
-
-- Pour obtenir une liste véritablement universelle des URL bloquées partout, voir Gérer la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)
-
-- Limites :
-  - Le nombre maximal d’entrées est de 500.
-  - La longueur maximale d’une entrée est de 128 caractères.
-  - Toutes les entrées ne peuvent pas dépasser 10 000 caractères.
-
-- N’incluez pas de barre oblique `/` () à la fin de l’URL. Par exemple, utilisez `https://www.contoso.com` , et non `https://www.contoso.com/` .
-
-- Une URL de domaine uniquement (par exemple ou ) bloque toute `contoso.com` `tailspintoys.com` URL contenant le domaine.
-
-- Vous pouvez bloquer un sous-domaine sans bloquer le domaine complet. Par exemple, bloque toute URL qui contient le sous-domaine, mais il ne bloque pas les URL qui contiennent `toys.contoso.com*` le domaine complet `contoso.com` .
-
-- Vous pouvez inclure jusqu’à trois caractères génériques `*` () par entrée d’URL.
+> [!NOTE]
+> 
+> - Pour obtenir une liste véritablement universelle des URL bloquées partout, voir Gérer la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)
+> 
+> - Limites :
+>   - Le nombre maximal d’entrées est de 500.
+>   - La longueur maximale d’une entrée est de 128 caractères.
+>   - Toutes les entrées ne peuvent pas dépasser 10 000 caractères.
+> 
+> - N’incluez pas de barre oblique `/` () à la fin de l’URL. Par exemple, utilisez `https://www.contoso.com` , et non `https://www.contoso.com/` .
+> 
+> - Une URL de domaine uniquement (par exemple ou ) bloque toute `contoso.com` `tailspintoys.com` URL contenant le domaine.
+> 
+> - Vous pouvez bloquer un sous-domaine sans bloquer le domaine complet. Par exemple, bloque toute URL qui contient le sous-domaine, mais il ne bloque pas les URL qui contiennent `toys.contoso.com*` le domaine complet `contoso.com` .
+> 
+> - Vous pouvez inclure jusqu’à trois caractères génériques `*` () par entrée d’URL.
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Syntaxe d’entrée pour la liste « Bloquer les URL suivantes »
 
@@ -284,7 +284,7 @@ Le tableau suivant décrit des exemples de valeurs que vous pouvez entrer et leu
 |`contoso.com` <p> ou <p> `*contoso.com*`|Bloque le domaine, les sous-domaines et les chemins d’accès. Par exemple, `https://www.contoso.com` et `https://sub.contoso.com` sont `https://contoso.com/abc` bloqués.|
 |`https://contoso.com/a`|Bloque, `https://contoso.com/a` mais pas les sous-chemins supplémentaires comme `https://contoso.com/a/b` .|
 |`https://contoso.com/a*`|Blocs `https://contoso.com/a` et sous-chemins supplémentaires tels que `https://contoso.com/a/b` .|
-|`https://toys.contoso.com*`|Bloque un sous-domaine (dans cet exemple), mais autorise les clics vers d’autres `toys` URL de domaine (comme ou `https://contoso.com` `https://home.contoso.com` ).|
+|`https://toys.contoso.com*`|Bloque un sous-domaine (dans cet exemple), mais autorise les clics vers d’autres URL de `toys` domaine (comme `https://contoso.com` ou `https://home.contoso.com` ).|
 |
 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>« Ne pas réécrire les URL suivantes » dans les stratégies de liens sécurisés
@@ -296,20 +296,20 @@ Chaque stratégie de liens sécurisés contient une liste Ne pas réécrire les 
 
 Pour ajouter des entrées à la liste dans les stratégies de liens sécurisés nouvelles ou existantes, voir [Créer](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) des stratégies de liens sécurisés ou [Modifier des stratégies de liens sécurisés.](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
 
-**Remarques** :
-
-- Les clients suivants ne reconnaissent pas la liste Ne pas réécrire les URL suivantes dans les **stratégies** de liens sécurisés. Les utilisateurs inclus dans les polices peuvent être bloqués pour accéder aux URL en fonction des résultats de l’analyse des liens sécurisés dans ces clients :
-
-  - Microsoft Teams
-  - Applications web Office
-
-  Pour obtenir une liste véritablement universelle d’URL autorisées partout, voir Gérer la liste d’adresses client [autorisées/bloqués.](tenant-allow-block-list.md)
-
-- Envisagez d’ajouter des URL internes couramment utilisées à la liste pour améliorer l’expérience utilisateur. Par exemple, si vous avez des services locaux, tels que Skype Entreprise ou SharePoint, vous pouvez ajouter ces URL pour les exclure de l’analyse.
-
-- Si vous n’avez pas encore réécrit les **entrées d’URL suivantes** dans vos stratégies de liens sécurisés, n’oubliez pas de passer en revue les listes et d’ajouter des caractères génériques si nécessaire. Par exemple, votre liste a une entrée comme celle-ci et vous décidez ultérieurement `https://contoso.com/a` d’inclure des sous-chemins comme `https://contoso.com/a/b` . Au lieu d’ajouter une nouvelle entrée, ajoutez un caractère générique à l’entrée existante afin qu’elle devienne `https://contoso.com/a/*` .
-
-- Vous pouvez inclure jusqu’à trois caractères génériques `*` () par entrée d’URL. Les caractères génériques incluent explicitement des préfixes ou des sous-domaine. Par exemple, l’entrée n’est pas la même que , car elle permet aux utilisateurs de visiter des sous-domaines et des chemins d’accès `contoso.com` `*.contoso.com/*` dans le domaine `*.contoso.com/*` spécifié.
+> [!NOTE]
+> 
+> - Les clients suivants ne reconnaissent pas la liste Ne pas réécrire les URL suivantes dans les **stratégies** de liens sécurisés. Les utilisateurs inclus dans les polices peuvent être bloqués pour accéder aux URL en fonction des résultats de l’analyse des liens sécurisés dans ces clients :
+> 
+>   - Microsoft Teams
+>   - Applications web Office
+> 
+>   Pour obtenir une liste véritablement universelle d’URL autorisées partout, voir Gérer la liste d’adresses client [autorisées/bloqués.](tenant-allow-block-list.md)
+> 
+> - Envisagez d’ajouter des URL internes couramment utilisées à la liste pour améliorer l’expérience utilisateur. Par exemple, si vous avez des services locaux, tels que Skype Entreprise ou SharePoint, vous pouvez ajouter ces URL pour les exclure de l’analyse.
+> 
+> - Si vous n’avez pas encore réécrit les **entrées d’URL suivantes** dans vos stratégies de liens sécurisés, n’oubliez pas de passer en revue les listes et d’ajouter des caractères génériques si nécessaire. Par exemple, votre liste a une entrée comme celle-ci et vous décidez ultérieurement `https://contoso.com/a` d’inclure des sous-chemins comme `https://contoso.com/a/b` . Au lieu d’ajouter une nouvelle entrée, ajoutez un caractère générique à l’entrée existante afin qu’elle devienne `https://contoso.com/a/*` .
+> 
+> - Vous pouvez inclure jusqu’à trois caractères génériques `*` () par entrée d’URL. Les caractères génériques incluent explicitement des préfixes ou des sous-domaine. Par exemple, l’entrée n’est pas la même que , car elle permet aux utilisateurs de visiter des sous-domaines et des chemins d’accès `contoso.com` `*.contoso.com/*` dans le domaine `*.contoso.com/*` spécifié.
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Syntaxe d’entrée pour la liste « Ne pas réécrire les URL suivantes »
 
@@ -373,7 +373,7 @@ Il existe plusieurs raisons pour lesquelles un administrateur bloque manuellemen
 
 La page d’avertissement d’origine ressemble à ceci :
 
-![Avertissement « Ce site web a été bloqué par la stratégie d’URL de votre organisation »](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+![Avertissement d’origine « Ce site web a été bloqué par la stratégie d’URL de votre organisation »](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
 
 ### <a name="error-warning"></a>Avertissement d’erreur
 

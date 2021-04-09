@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d86c79f0f0ab74d1dfbb88e7803f4ee4d691ea73
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 321e27f22295a4da17d0eb37b477a1dc7b779d38
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501181"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644763"
 ---
 # <a name="user-submissions-policy"></a>Stratégie de soumissions d’utilisateurs
 
@@ -98,30 +98,36 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
         - **Avant** l’envoi  : dans les zones de message Titre et **Confirmation,** entrez le texte descriptif que les utilisateurs voient avant de signaler un message à l’aide du module de signalement du message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi (courrier indésirable, non indésirable, hameçonnage, etc.).
 
-            Comme indiqué, si vous sélectionnez une option qui envoie les messages signalés à Microsoft, le texte suivant est également ajouté à la notification :
+          Comme indiqué, si vous sélectionnez une option qui envoie les messages signalés à Microsoft, le texte suivant est également ajouté à la notification :
 
-        > Votre courrier électronique sera envoyé tel qu’il est à Microsoft pour analyse. Certains e-mails peuvent contenir des informations personnelles ou sensibles.
+          > Votre courrier électronique sera envoyé tel qu’il est à Microsoft pour analyse. Certains e-mails peuvent contenir des informations personnelles ou sensibles.
 
         - **Après l’envoi**: cliquez ![ sur Développer ](../../media/scc-expand-icon.png) l’icône . Dans **les** zones De titre et de **confirmation,** entrez le texte descriptif que les utilisateurs voient après qu’ils ont publié un message à l’aide du module de signalement du message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi.
 
       Lorsque vous avez terminé, cliquez sur **Enregistrer**. Pour effacer ces valeurs, cliquez sur **Restaurer** sur la page **Soumissions de l’utilisateur.**
     
     - **Personnalisez les options de rapport de l’utilisateur final**: cliquez sur ce lien. Dans le volant **Personnaliser les options de rapport** de l’utilisateur final qui s’affiche, entrez le texte descriptif des options de signalement du courrier indésirable. 
-Sous **Options pour afficher le moment où les messages sont** signalés, sélectionnez au moins une des options suivantes :
+    
+      Sous **Options pour afficher le moment où les messages sont** signalés, sélectionnez au moins une des options suivantes :
         - **Demandez-moi avant d’envoyer un rapport**
         - **Envoyer automatiquement des rapports**
-        -  **Ne jamais envoyer de rapports** \
-   Lorsque vous avez terminé, cliquez sur **Enregistrer**.
-              - **Envoyez les messages signalés à**: Effectuer l’une des sélections suivantes :
-              - **Microsoft (recommandé)**: la boîte aux lettres d’envoi de l’utilisateur n’est pas utilisée (tous les messages signalés sont envoyés à Microsoft).
-              - **Microsoft et une boîte aux lettres personnalisée**: dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Les envois d’utilisateurs sont ensuite soumis à Microsoft pour analyse et à la boîte aux lettres personnalisée que votre équipe d’administration ou d’opérations de sécurité doit analyser.
-              - **Boîte aux lettres personnalisée uniquement**: dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Utilisez cette option si vous souhaitez que le message ne soit envoyé qu’à un administrateur ou à l’équipe des opérations de sécurité pour analyse en premier. Les messages ne sont pas envoyés à Microsoft, sauf si l’administrateur les a transmis eux-mêmes.
+        - **Ne jamais envoyer de rapports**
+       
+      Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-        > [!NOTE]
-        > Les organisations gouvernementales américaines (GCC, GCC-H et DoD) peuvent uniquement configurer une boîte **aux lettres personnalisée.** Les deux autres options sont désactivées.
+        - **Envoyez les messages signalés à**: Effectuer l’une des sélections suivantes :
 
-        > [!NOTE]
-        > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour réascaner et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
+        - **Microsoft (recommandé)**: la boîte aux lettres d’envoi de l’utilisateur n’est pas utilisée (tous les messages signalés sont envoyés à Microsoft).
+
+        - **Microsoft et une boîte aux lettres personnalisée**: dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Les envois d’utilisateurs sont ensuite soumis à Microsoft pour analyse et à la boîte aux lettres personnalisée que votre équipe d’administration ou d’opérations de sécurité doit analyser.
+
+        - **Boîte aux lettres personnalisée uniquement**: dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Utilisez cette option si vous souhaitez que le message ne soit envoyé qu’à un administrateur ou à l’équipe des opérations de sécurité pour analyse en premier. Les messages ne sont pas envoyés à Microsoft, sauf si l’administrateur les a transmis eux-mêmes.
+
+          > [!NOTE]
+          > Les organisations gouvernementales américaines (GCC, GCC-H et DoD) peuvent uniquement configurer une boîte **aux lettres personnalisée.** Les deux autres options sont désactivées.
+
+          > [!NOTE]
+          > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour réascaner et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
 
       Lorsque vous avez terminé, cliquez sur **Confirmer.**
 
@@ -129,11 +135,11 @@ Sous **Options pour afficher le moment où les messages sont** signalés, sélec
       > Si vous avez désactivé la création de rapports de courrier indésirable dans [Outlook sur](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) le web à l’aide des stratégies de boîte aux lettres Outlook sur le web, mais que vous configurez l’un des paramètres précédents pour signaler des messages à Microsoft, les utilisateurs pourront signaler des messages à Microsoft dans Outlook sur le web à l’aide du add-in Report Message ou du module de signalement du hameçonnage.
 
 
-    1. Désactivez la fonctionnalité Message de rapport pour **Outlook**: sélectionnez cette option si vous utilisez des outils de création de rapports tiers à la place du module de rapport de message, du module de signalement du hameçonnage ou de la création de rapports intégrée dans Outlook sur le web, puis configurez les paramètres suivants :
+    2. Désactivez la fonctionnalité Message de rapport pour **Outlook**: sélectionnez cette option si vous utilisez des outils de création de rapports tiers à la place du module de rapport de message, du module de signalement du hameçonnage ou de la création de rapports intégrée dans Outlook sur le web, puis configurez les paramètres suivants :
 
-          Sélectionnez **Utiliser cette boîte aux lettres personnalisée pour recevoir les soumissions signalées par l’utilisateur.** Dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres existante qui se trouve déjà dans Office 365. Il doit s’agit d’une boîte aux lettres existante dans Exchange Online qui peut recevoir des messages électroniques.
+       Sélectionnez **Utiliser cette boîte aux lettres personnalisée pour recevoir les soumissions signalées par l’utilisateur.** Dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres existante qui se trouve déjà dans Office 365. Il doit s’agit d’une boîte aux lettres existante dans Exchange Online qui peut recevoir des messages électroniques.
 
-          Lorsque vous avez terminé, cliquez sur **Confirmer.**
+       Lorsque vous avez terminé, cliquez sur **Confirmer.**
 
 ## <a name="message-submission-format"></a>Format de dépôt des messages
 

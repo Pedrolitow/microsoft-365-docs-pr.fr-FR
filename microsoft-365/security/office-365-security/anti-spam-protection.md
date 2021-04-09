@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les paramètres et filtres anti-courrier indésirable qui contribuent à empêcher le courrier indésirable dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f19330d7af9c4a6601baa9562766eb5a6e7052a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204872"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650265"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protection contre le courrier indésirable dans EOP
 
@@ -91,7 +91,7 @@ Voici quelques meilleures pratiques qui s’appliquent à l’un ou l’autre de
 
   - **DMARC**: l’authentification, la signalement et la conformité des messages basés sur un domaine aident les systèmes de messagerie de destination à déterminer ce qu’ils doivent faire avec les messages qui échouent aux vérifications SPF ou DKIM et offrent un autre niveau de confiance à vos partenaires de messagerie. Pour plus d’informations, [voir Utiliser DMARC pour valider le courrier électronique dans Microsoft 365.](use-dmarc-to-validate-email.md)
 
-- Vérifiez vos **paramètres** de courrier en nombre : le seuil de conformité en bloc (BCL) que vous configurez dans les stratégies anti-courrier indésirable détermine si les messages électroniques en nombre (également appelés messages _gris)_ sont marqués comme courrier indésirable. Le paramètre PowerShell uniquement _MarkAsSpamBulkMail_ qui est sur par défaut contribue également aux résultats. Pour plus d’informations, voir [Configurer des stratégies anti-courrier indésirable dans Microsoft 365.](configure-your-spam-filter-policies.md)
+- Vérifiez vos **paramètres** de courrier en nombre : le seuil BCL (Bulk Complaint Level) que vous configurez dans les stratégies anti-courrier indésirable détermine si les messages électroniques en nombre (également appelés messages _gris)_ sont marqués comme courrier indésirable. Le paramètre PowerShell uniquement _MarkAsSpamBulkMail_ qui est sur par défaut contribue également aux résultats. Pour plus d’informations, voir [Configurer des stratégies anti-courrier indésirable dans Microsoft 365.](configure-your-spam-filter-policies.md)
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Empêcher la remise de courrier indésirable à la boîte de réception
 
@@ -101,7 +101,7 @@ Voici quelques meilleures pratiques qui s’appliquent à l’un ou l’autre de
 
 - **Utilisez les listes d’expéditeurs bloqués disponibles**: pour plus d’informations, voir Créer des [listes d’expéditeurs bloqués.](create-block-sender-lists-in-office-365.md)
 
-- **Se désabonner du courrier électronique en masse** Si l’utilisateur s’est inscrit au message (bulletins d’informations, annonces de produits, etc.) et qu’il contient un lien de désabonnement provenant d’une source digne de confiance, demandez-lui simplement de se désabonner.
+- **Se désabonner de la messagerie en bloc** Si l’utilisateur s’est inscrit au message (bulletins d’informations, annonces de produits, etc.) et qu’il contient un lien de désabonnement provenant d’une source digne de confiance, demandez-lui simplement de se désabonner.
 
 - EOP autonome : créez des règles de flux de messagerie dans Exchange local pour les verdicts de filtrage du courrier indésirable EOP : dans les **environnements** EOP autonomes où EOP protège les boîtes aux lettres Exchange sur site, vous devez configurer des règles de flux de messagerie (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage du courrier indésirable EOP afin que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer une protection Exchange Online (EOP) autonome pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
@@ -113,7 +113,7 @@ Voici quelques étapes que vous pouvez suivre pour éviter les faux positifs :
 
   - **Vérifiez** que le filtre de courrier indésirable Outlook est désactivé : lorsque le filtre de courrier indésirable Outlook est définie sur la valeur par défaut Aucun filtrage **automatique,** Outlook ne tente pas de classer les courriers indésirables comme courrier indésirable.  Lorsqu’il est réglé sur **Faible** ou **Élevé,** le filtre de courrier indésirable Outlook utilise sa propre technologie de filtrage SmartScreen pour identifier et déplacer le courrier indésirable vers le dossier Courrier indésirable, ce qui vous permet d’obtenir des faux positifs. Notez que Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook en novembre 2016. Les définitions de courrier indésirable SmartScreen existantes ont été laissées en place, mais leur efficacité se dégradera probablement au fil du temps.
 
-  - Vérifiez que le paramètre « Listes sécurisées uniquement » **d’Outlook** est désactivé : lorsque ce paramètre est activé, seuls les messages provenant d’expéditeurs de la liste des expéditeurs sûrs ou de la liste des destinataires sûrs de l’utilisateur sont remis dans la boîte de réception . Les messages provenant de tous les autres utilisateurs sont automatiquement déplacés vers le dossier Courrier indésirable.
+  - Vérifiez que le paramètre « Listes sécurisées uniquement » **d’Outlook** est désactivé : lorsque ce paramètre est activé, seuls les messages provenant d’expéditeurs de la liste des expéditeurs sûrs ou de la liste des destinataires sûrs de l’utilisateur sont remis à la boîte de réception . Les messages provenant de tous les autres utilisateurs sont automatiquement déplacés vers le dossier Courrier indésirable.
 
   Pour plus d’informations sur ces paramètres, voir Configurer les paramètres de courrier indésirable sur les boîtes aux lettres [Exchange Online dans Microsoft 365.](configure-junk-email-settings-on-exo-mailboxes.md)
 

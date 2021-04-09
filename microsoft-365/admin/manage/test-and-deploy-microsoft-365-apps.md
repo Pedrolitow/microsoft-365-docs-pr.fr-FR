@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Recherchez, testez et déployez des applications partenaires Microsoft et Microsoft pour les utilisateurs et les groupes de votre organisation à partir du portail Applications intégrées dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: f806d48e0ed582b1b5c1ee262058ce987125bd99
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: da67cbe5f8b6e5f2da42e1f4b57a55d7d4a768fb
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488288"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644475"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Tester et déployer microsoft 365 Apps par des partenaires dans le portail Applications intégrées
 
@@ -29,7 +29,7 @@ Pour plus d’informations sur l’achat et la gestion des licences d’applicat
 
 Pour plus d’informations sur la façon dont les partenaires créent ces applications, voir Comment planifier une offre [SaaS pour le marché commercial](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-Le portail des applications intégrées est uniquement accessible aux administrateurs globaux et disponible uniquement pour les clients WorldWide. Cette fonctionnalité n’est pas disponible dans les clouds souverains et du gouvernement.
+Le portail des applications intégrées est uniquement accessible aux administrateurs globaux et accessible aux clients du monde entier uniquement. Cette fonctionnalité n’est pas disponible dans les clouds souverains et du gouvernement.
 
 Le portail Applications intégrées affiche une liste d’applications, qui inclut des applications individuelles et des applications Microsoft 365 provenant de partenaires déployés dans votre organisation. Seules les applications web, les applications SPFx, les applications Office et les applications Teams sont répertoriées. Pour les applications web, nous pouvons voir 2 types d’applications.
 

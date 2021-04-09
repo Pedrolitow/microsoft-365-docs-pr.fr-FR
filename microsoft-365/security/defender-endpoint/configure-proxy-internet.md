@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b529b1c7fa5c4f9f81cb6bfbb5f1a6bd7823a9ad
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587598"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644703"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy d’appareil et de connectivité Internet
 
@@ -41,7 +41,7 @@ Le capteur Defender for Endpoint incorporé s’exécute dans le contexte systè
 >[!TIP]
 >Pour les organisations qui utilisent des proxies de transfert comme passerelle vers l'Internet, vous pouvez utiliser la protection du réseau pour enquêter derrière un proxy. Pour plus d'informations, voir [Enquêter sur les événements de connexion qui se produisent derrière les procurations](investigate-behind-proxy.md).
 
-Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows Internet (WinINet) et ne peut découvrir un serveur proxy qu’à l’aide des méthodes de découverte suivantes :
+Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows Internet (WinINet) et peut uniquement découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
 
 - Méthodes de découverte automatique :
   - Proxy transparent
@@ -57,6 +57,13 @@ Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurer le serveur proxy manuellement en utilisant un proxy statique basé sur le registre
 
 Configurez un proxy statique basé sur le Registre pour autoriser uniquement le capteur Defender for Endpoint à signaler les données de diagnostic et à communiquer avec Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet.
+
+> [!NOTE]
+> - Lorsque vous utilisez cette option sur Windows 10 ou Windows Server 2019, il est recommandé d’avoir la version suivante (ou version ultérieure) et le cumul des mises à jour cumulatives :</br>
+> Windows 10, version 1909 - https://support.microsoft.com/kb/4601380</br>
+> Windows 10, version 2004 - https://support.microsoft.com/kb/4601382</br>
+> Windows 10, version 20H2 - https://support.microsoft.com/kb/4601382</br>
+> Ces mises à jour améliorent la connectivité et la fiabilité du canal CnC (Commande et contrôle).</br>
 
 Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
 
@@ -100,7 +107,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
    Par exemple : netsh winhttp initialiser proxy 10.0.0.6:8080
 
-Pour réinitialiser le proxy winhttp, entrez la commande suivante et appuyez sur **Entrée**
+Pour réinitialiser le proxy winhttp, entrez la commande suivante et appuyez sur **Entrée.**
 
 ```PowerShell
 netsh winhttp reset proxy
@@ -139,7 +146,7 @@ Si un proxy ou un pare-feu bloque le trafic anonyme, comme le capteur Defender f
 
 Les informations ci-dessous répentent les informations de configuration du proxy et du pare-feu requises pour communiquer avec l’agent d’analyse des journaux (souvent appelé Agent de surveillance Microsoft) pour les versions précédentes de Windows, telles que Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 et Windows Server 2016.
 
-|Ressource agent|Ports |Direction |Contourner l’inspection HTTPS|
+|Ressource Agent|Ports |Direction |Contourner l’inspection HTTPS|
 |------|---------|--------|--------|   
 |*.ods.opinsights.azure.com |Port 443 |Sortant|Oui |  
 |*.oms.opinsights.azure.com |Port 443 |Sortant|Oui |  
@@ -154,7 +161,7 @@ Les informations ci-dessous répentent les informations de configuration du prox
 
 Consultez les instructions suivantes pour éliminer les caractères génériques (*) requis pour votre environnement spécifique lors de l’utilisation de l’agent de surveillance Microsoft (MMA) pour les versions précédentes de Windows.
 
-1.  Intégrer un système d’exploitation précédent avec l’agent de surveillance Microsoft (MMA) dans Defender pour endpoint (pour plus d’informations, voir Intégrer les versions précédentes de Windows on Defender pour [endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) et les serveurs [Windows intégrés.](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)
+1.  Intégrer un système d’exploitation précédent avec l’agent de surveillance Microsoft (MMA) dans Defender pour endpoint (pour plus d’informations, voir Intégrer les versions précédentes de [Windows on Defender pour endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) et les serveurs Windows [intégrés.](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)
 
 2.  Assurez-vous que l’ordinateur est correctement signalé dans le portail centre de sécurité Microsoft Defender.
 

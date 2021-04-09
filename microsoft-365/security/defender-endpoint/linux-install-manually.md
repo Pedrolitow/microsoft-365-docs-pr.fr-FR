@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 91dda662b12893fb010e8bb46541a87ea4a8cd27
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c695eb0d786e73da5adb95bbca5c1747243d6203
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587670"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644739"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison pour Linux manuellement
 
@@ -48,17 +48,17 @@ Cet article explique comment déployer Microsoft Defender pour Endpoint pour Lin
   - [Télécharger le package d’intégration](#download-the-onboarding-package)
   - [Configuration du client](#client-configuration)
   - [Script du programme d’installation](#installer-script)
-  - [Journaux des problèmes d’installation](#log-installation-issues)
+  - [Journal des problèmes d’installation](#log-installation-issues)
   - [Mises à niveau du système d’exploitation](#operating-system-upgrades)
   - [Désinstallation](#uninstallation)
 
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
-Avant de commencer, consultez [Microsoft Defender pour Endpoint pour Linux](microsoft-defender-endpoint-linux.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
+Avant de commencer, consultez [Microsoft Defender pour Endpoint pour Linux](microsoft-defender-endpoint-linux.md) pour obtenir une description des conditions préalables et de la système requise pour la version logicielle actuelle.
 
 ## <a name="configure-the-linux-software-repository"></a>Configurer le référentiel de logiciels Linux
 
-Defender pour le point de terminaison pour Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
+Defender pour le point de terminaison pour Linux peut être déployé à partir de l’un des canaux suivants (indiqué ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
@@ -317,7 +317,7 @@ Téléchargez le package d’intégration à partir du Centre de sécurité Micr
     mdatp health --field org_id
     ```
 
-4. Quelques minutes après avoir terminé l’installation, vous pouvez voir l’état en exécutant la commande suivante. Une valeur de retour indique que le `1` produit fonctionne comme prévu :
+4. Quelques minutes après avoir terminé l’installation, vous pouvez voir l’état en exécutant la commande suivante. Une valeur de retour `1` de indique que le produit fonctionne comme prévu :
 
     ```bash
     mdatp health --field healthy
@@ -375,7 +375,7 @@ Options:
 
 En savoir plus [ici.](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)
 
-## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
+## <a name="log-installation-issues"></a>Journal des problèmes d’installation
 
 Pour [plus d’informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir problèmes d’installation des journaux.
 
@@ -385,7 +385,7 @@ Lors de la mise à niveau de votre système d’exploitation vers une nouvelle v
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Comment migrer de Insiders-Fast canal de production
 
-1. Désinstallez la version « Insiders-Fast channel » de MDE pour macOS.
+1. Désinstallez la version « Insiders-Fast channel » de MDE pour Linux.
 
     ``
     sudo yum remove mdatp

@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les attaques par consen
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a9b3ff11acb32a4b3038cc18922f8e22fda0b4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204402"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644679"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et corriger les octrois de consentement illicites
 
@@ -37,7 +37,7 @@ ms.locfileid: "51204402"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Qu’est-ce que l’attaque par consentement illicite dans Office 365 ?
 
-Dans le cas d’une attaque par consentement illicite, l’attaquant crée une application enregistrée par Azure qui demande l’accès à des données telles que des informations de contact, des e-mails ou des documents. L’attaquant astuce ensuite un utilisateur final pour accorder à cette application son consentement pour accéder à ses données via une attaque par hameçonnage ou en injectant du code illicite dans un site web approuvé. Une fois l’application illicite accordée, elle dispose d’un accès aux données au niveau du compte sans avoir besoin d’un compte d’organisation. Les étapes de correction normales, telles que la réinitialisation des mots de passe pour les comptes en violation ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces externes à l’organisation.
+Dans le cas d’une attaque par consentement illicite, l’attaquant crée une application enregistrée par Azure qui demande l’accès à des données telles que des informations de contact, des e-mails ou des documents. L’attaquant astuces ensuite un utilisateur final pour accorder à cette application l’autorisation d’accéder à ses données par le biais d’une attaque par hameçonnage ou en injectant du code illicite dans un site web approuvé. Une fois l’application illicite accordée, elle dispose d’un accès aux données au niveau du compte sans avoir besoin d’un compte d’organisation. Les étapes de correction normales, telles que la réinitialisation des mots de passe pour les comptes en violation ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces externes à l’organisation.
 
 Ces attaques tirent parti d’un modèle d’interaction qui suppose que l’entité qui appelle les informations est une automatisation et non une personne.
 
@@ -128,7 +128,7 @@ Le moyen le plus simple de vérifier l’attaque par octroi de consentement illi
 5. Exécutez cette commande PowerShell :
 
    ```powershell
-   Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
+   .\Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
 Le script produit un fichier nommé Permissions.csv. Pour rechercher des autorisations d’application illicites, suivez les étapes suivantes :

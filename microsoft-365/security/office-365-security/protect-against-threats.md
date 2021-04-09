@@ -20,12 +20,12 @@ description: Les administrateurs peuvent en savoir plus sur la protection contre
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 189325dab37a548c717cd554ecd1d37c19ae57ea
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2df88df9f1f0e2c14c0adcf0d5772189a1276e9d
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204351"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650229"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -41,11 +41,11 @@ Voici un guide de démarrage rapide qui décompose la configuration de Defender 
 > [!IMPORTANT]
 > **Les paramètres recommandés** initiaux sont inclus pour chaque type de stratégie ; toutefois, de nombreuses options sont disponibles et vous pouvez ajuster vos paramètres pour répondre aux besoins spécifiques de votre organisation. Laissez environ 30 minutes à vos stratégies ou modifications pour qu’elles fonctionnent dans votre centre de données.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 ### <a name="subscriptions"></a>Abonnements
 
-Les fonctionnalités de protection contre les menaces *sont incluses dans tous* les abonnements Microsoft ou Office 365 . toutefois, certains abonnements disposent de fonctionnalités avancées. Le tableau ci-dessous répertorie les fonctionnalités de protection incluses dans cet article, ainsi que les exigences minimales d’abonnement.
+Les fonctionnalités de protection contre les menaces *sont incluses dans tous* les abonnements Microsoft ou Office 365 ; toutefois, certains abonnements disposent de fonctionnalités avancées. Le tableau ci-dessous répertorie les fonctionnalités de protection incluses dans cet article, ainsi que les exigences minimales d’abonnement.
 
 > [!TIP]
 > Notez qu’au-delà des instructions  pour activer l’audit, les étapes de démarrage de la protection anti-programme malveillant, anti-hameçonnage et anti-courrier indésirable, qui sont marquées dans le cadre d’Office 365 Exchange Online Protection **(EOP).** Cela peut sembler étrange dans un article defender pour Office 365, jusqu’à ce que vous vous rappeliez ( Defender pour **Office 365**) contient et s’appuie sur EOP.
@@ -58,14 +58,14 @@ Les fonctionnalités de protection contre les menaces *sont incluses dans tous* 
 |Protection anti-programme malveillant|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Protection anti-hameçonnage|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection anti-courrier indésirable|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Purge automatique zéro heure (pour le courrier électronique)|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
+|Purge automatique de zéro heure (pour le courrier électronique)|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection contre les URL et fichiers malveillants dans les e-mails et les documents Office (liens sécurisés et pièces jointes sécurisées)|[Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Activer les pièces jointes sécurisées pour les charges de travail SharePoint, OneDrive et Microsoft Teams|[Defender pour Office 365 ](turn-on-mdo-for-spo-odb-and-teams.md)|
+|Activer les pièces jointes sécurisées pour les charges de travail SharePoint, OneDrive et Microsoft Teams|[Defender pour Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
 |Protection avancée contre le hameçonnage|[Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Rôles et autorisations
 
-Pour configurer des stratégies Defender pour Office 365, vous devez avoir un rôle approprié dans le Centre de sécurité [& conformité.](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) Jetez un coup d’œil au tableau ci-dessous pour les rôles qui peuvent faire ces actions.
+Pour configurer des stratégies Defender pour Office 365, vous devez avoir un rôle approprié dans le Centre de sécurité [& conformité.](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) Voir le tableau ci-dessous pour les rôles qui peuvent faire ces actions.
 
 ****
 
@@ -78,7 +78,7 @@ Pour configurer des stratégies Defender pour Office 365, vous devez avoir un r�
 
 Pour plus d’informations, voir Autorisations dans le [Centre de sécurité & conformité.](permissions-in-the-security-and-compliance-center.md)
 
-## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Avant de commencer, activer la journalisation d’audit pour les rapports et les enquêtes
+## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Avant de commencer, activer la journalisation d’audit pour les rapports et les examens
 
 Démarrez votre journalisation d’audit tôt. L’audit doit être **en cours pour** certaines des étapes suivantes. La journalisation d’audit est disponible dans les abonnements qui incluent [Exchange Online.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) Pour afficher les données dans les rapports de [](view-email-security-reports.md)protection contre les menaces, tels que le tableau de bord de [sécurité,](security-dashboard.md)les rapports de sécurité du courrier électronique et [l’Explorateur,](threat-explorer.md)la journalisation d’audit doit être *sur .* Pour en savoir plus, voir Activer ou désactiver la [recherche dans le journal d’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
 
@@ -118,7 +118,7 @@ La procédure suivante décrit comment configurer une stratégie anti-hameçonna
 
    - Sous **l’onglet Actions,** sélectionnez  **Mettre le message** en quarantaine pour les options utilisateur dont l’identité est usurpée et domaine dont l’identité a **été usurpée.** En outre, activer les conseils de sécurité pour l’emprunt d’identité.
 
-   - Sous l’onglet **Veille sur la** boîte aux lettres, assurez-vous que l’intelligence de boîte aux lettres est allumée et activer la protection contre l’usurpation d’identité basée sur l’intelligence des boîtes aux lettres. In the **If email is sent by an impersonated user** list, choose Quarantine the **message**.
+   - Sous **l’onglet Renseignements** sur les boîtes aux lettres, assurez-vous que l’intelligence des boîtes aux lettres est allumée et activer la protection contre l’usurpation d’identité basée sur l’intelligence des boîtes aux lettres. In the **If email is sent by an impersonated user** list, choose Quarantine the **message**.
 
    - Sous **l’onglet Ajouter des expéditeurs** et des domaines de confiance, spécifiez les expéditeurs ou domaines de confiance que vous souhaitez ajouter.
 
@@ -126,7 +126,7 @@ La procédure suivante décrit comment configurer une stratégie anti-hameçonna
 
 4. Dans la section **Usurpation** d’informations, cliquez sur **Modifier,** puis spécifiez les paramètres suivants :
 
-   - Sous **l’onglet Paramètres** du filtre d’usurpation d’usurpation, assurez-vous que la protection contre l’usurpation d’usurpation d’usurpation est bien allumée.
+   - Sous **l’onglet Paramètres** du filtre d’usurpation d’usurpation, assurez-vous que la protection contre l’usurpation d’usurpation est allumée.
 
    - Sous **l’onglet Actions,** sélectionnez **Mettre le message en quarantaine.**
 
@@ -162,7 +162,7 @@ La protection au moment du clic contre les URL et les fichiers malveillants est 
 
 Pour configurer les [pièces jointes sécurisées,](safe-attachments.md)créez au moins une stratégie de liens sécurisés.
 
-1. Dans le [Centre de sécurité & conformité,](https://protection.office.com)sélectionnez Stratégie de gestion des  \>  \> **menaces ATP Pièces jointes sécurisées,** puis cliquez sur **Créer**.
+1. In the [Security & Compliance Center,](https://protection.office.com)choose **Threat management** \> **Policy** \> **ATP Safe Attachments,** and then click **Create**.
 
 2. Dans **l’Assistant Nouvelle stratégie de pièces jointes sécurisées** qui s’affiche, configurez les paramètres suivants :
 
@@ -180,7 +180,7 @@ Pour configurer les [pièces jointes sécurisées,](safe-attachments.md)créez a
 
 ### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Stratégies de liens sécurisés dans Microsoft Defender pour Office 365
 
-Pour configurer les [liens sécurisés,](safe-links.md)examinez et modifiez vos paramètres globaux pour les liens sécurisés et créez au moins une stratégie de liens sécurisés.
+Pour configurer des [liens sécurisés,](safe-links.md)examiner et modifier vos paramètres globaux pour les liens sécurisés et créer au moins une stratégie de liens sécurisés.
 
 1. Dans le [Centre de sécurité & conformité,](https://protection.office.com)sélectionnez Stratégie de gestion des menaces - Liens  \>  \> sécurisés **ATP,** cliquez sur **Paramètres** globaux, puis configurez les paramètres suivants :
 
@@ -217,13 +217,13 @@ Pour plus d’informations, reportez-vous à [Configurer les stratégies de lien
 Les charges de travail telles que SharePoint, OneDrive et Teams sont conçues pour la collaboration. L’utilisation de Defender pour Office 365 permet de bloquer et de détecter les fichiers identifiés comme malveillants dans les sites d’équipe et les bibliothèques de documents. Vous pouvez en savoir plus sur le fonctionnement [ici.](mdo-for-spo-odb-and-teams.md)
 
 > [!IMPORTANT]
-> Avant de commencer cette procédure, assurez-vous que la journalisation d’audit est déjà allumée pour votre **environnement Microsoft 365.** Cette tâche est généralement effectuée par une personne à qui le rôle Journaux d’audit est attribué dans Exchange Online. Pour plus d’informations, voir Activer ou désactiver la recherche dans le journal [d’audit](../../compliance/turn-audit-log-search-on-or-off.md)!
+> Avant de commencer cette procédure, assurez-vous que la journalisation d’audit est déjà allumée pour votre **environnement Microsoft 365.** Cette tâche est généralement effectuée par une personne à qui le rôle Journaux d’audit est attribué dans Exchange Online. Pour plus d’informations, voir Activer ou désactiver la [recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md)!
 
 1. Dans le [Centre de sécurité & conformité,](https://protection.office.com)sélectionnez Stratégie de gestion des menaces pièces  \>  \> **jointes sécurisées ATP,** puis cliquez sur **Paramètres globaux.**
 
 2. Vérifiez que le bouton bascule Activer Defender pour **Office 365 pour SharePoint, OneDrive** et Microsoft Teams est à droite : activer, puis cliquez sur ![ ](../../media/scc-toggle-on.png) **Enregistrer.**
 
-3. Examinez (et, le cas échéant, modifiez) les stratégies de pièces [jointes sécurisées](set-up-safe-attachments-policies.md) et les stratégies [de liens sécurisés de votre organisation.](set-up-safe-links-policies.md)
+3. Examinez (et, le cas échéant, modifiez) les stratégies de pièces [jointes sécurisées et](set-up-safe-attachments-policies.md) les stratégies [de liens sécurisés de votre organisation.](set-up-safe-links-policies.md)
 
 4. (Recommandé) En tant qu’administrateur général ou administrateur SharePoint Online, exécutez la cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** avec le paramètre _DisallowInfectedFileDownload_ définie sur `$true` .
 
@@ -235,7 +235,7 @@ Les charges de travail telles que SharePoint, OneDrive et Teams sont conçues po
 
 5. Laissez jusqu’à 30 minutes pour que vos modifications se propagent à tous les centres de données Microsoft 365.
 
-### <a name="now-set-up-alerts-for-detected-files"></a>Maintenant, configurer des alertes pour les fichiers détectés
+### <a name="now-set-up-alerts-for-detected-files"></a>À présent, configurer des alertes pour les fichiers détectés
 
 Pour recevoir une notification lorsqu’un fichier dans SharePoint Online, OneDrive Entreprise ou Microsoft Teams a été identifié comme malveillant, vous pouvez configurer une alerte.
 
@@ -269,7 +269,7 @@ Pour en savoir plus sur les alertes, voir Créer des alertes d’activité dans 
 
 ## <a name="part-6---additional-settings-to-configure"></a>Partie 6 : paramètres supplémentaires à configurer
 
-Outre la configuration de la protection contre les programmes malveillants, les URL et les fichiers malveillants, le hameçonnage et le courrier indésirable, nous vous recommandons de configurer la purge automatique sans heure.
+Outre la configuration de la protection contre les programmes malveillants, les URL et les fichiers malveillants, le hameçonnage et le courrier indésirable, nous vous recommandons de configurer la purge automatique d’heure zéro.
 
 ### <a name="zero-hour-auto-purge-for-email-in-eop"></a>Purge automatique zéro heure pour le courrier électronique dans EOP
 
@@ -283,7 +283,7 @@ Pour en savoir plus, [consultez Purge automatique heure zéro - Protection contr
 
 ## <a name="post-setup-tasks-and-next-steps"></a>Tâches post-installation et étapes suivantes
 
-Après avoir configuré les fonctionnalités de protection contre les menaces, veillez à surveiller leur fonctionnement ! Examinez et révisez vos stratégies afin qu’elles s’en sortent comme vous le souhaitez. Observez également les nouvelles fonctionnalités et les mises à jour de service qui peuvent ajouter de la valeur.
+Après avoir configuré les fonctionnalités de protection contre les menaces, veillez à surveiller leur fonctionnement ! Examinez et révisez vos stratégies afin qu’elles s’en sortent comme vous le souhaitez. Observez également les nouvelles fonctionnalités et mises à jour de service qui peuvent ajouter de la valeur.
 
 ****
 
@@ -292,4 +292,4 @@ Après avoir configuré les fonctionnalités de protection contre les menaces, v
 |Découvrez comment fonctionnent les fonctionnalités de protection contre les menaces pour votre organisation en visualxant des rapports|[Tableau de bord de sécurité](security-dashboard.md) <p> [Rapports de sécurité de messagerie](view-email-security-reports.md) <p> [Rapports pour Microsoft Defender pour Office 365](view-reports-for-mdo.md) <p> [Threat Explorer](threat-explorer.md)|
 |Examiner et réviser régulièrement vos stratégies de protection contre les menaces selon vos besoins|[Degré de sécurisation](../defender/microsoft-secure-score.md) <p> [Rapports intelligents et informations](reports-and-insights-in-security-and-compliance.md) <p> [Fonctionnalités d’examen et de réponse aux menaces Microsoft 365](./office-365-ti.md)|
 |Surveiller les nouvelles fonctionnalités et les mises à jour de service|[Options de publication standard et ciblée](../../admin/manage/release-options-in-office-365.md) <p> [Centre de messages](../../admin/manage/message-center.md) <p> [Feuille de route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|En savoir plus sur les configurations de sécurité standard et stricte recommandées pour EOP et Defender pour Office 365|[Paramètres recommandés pour EOP et Microsoft Defender pour la sécurité Office 365](recommended-settings-for-eop-and-office365.md)|
+|En savoir plus sur les configurations de sécurité standard et stricte recommandées pour EOP et Defender pour Office 365|[Paramètres recommandés pour la sécurité d’EOP et de Microsoft Defender pour Office 365](recommended-settings-for-eop-and-office365.md)|

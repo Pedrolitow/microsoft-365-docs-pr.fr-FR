@@ -1,6 +1,6 @@
 ---
 title: Configurer des fonctionnalités avancées dans Microsoft Defender pour le point de terminaison
-description: Activer des fonctionnalités avancées telles que bloquer un fichier dans Microsoft Defender pour le point de terminaison.
+description: Activer les fonctionnalités avancées telles que bloquer un fichier dans Microsoft Defender pour le point de terminaison.
 keywords: fonctionnalités avancées, paramètres, bloquer un fichier, examen automatisé, résolution automatique, skype, microsoft defender pour l’identité, office 365, azure information protection, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
-ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
+ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51418115"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650289"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurer des fonctionnalités avancées dans Defender pour le point de terminaison
 
@@ -39,10 +39,10 @@ Selon les produits de sécurité Microsoft que vous utilisez, certaines fonction
 ## <a name="enable-advanced-features"></a>Activer les fonctionnalités avancées
 
 1. Dans le volet de navigation, sélectionnez **Préférences configurer les**  >  **fonctionnalités avancées.**
-2. Sélectionnez la fonctionnalité avancée que vous souhaitez configurer et basculez le paramètre entre **Le** et **Le.**
+2. Sélectionnez la fonctionnalité avancée que vous souhaitez configurer et basculez le paramètre entre **« On** » et **« Off**».
 3. Cliquez **sur Enregistrer les préférences.**
 
-Utilisez les fonctionnalités avancées suivantes pour être mieux protégés contre les fichiers potentiellement malveillants et obtenir de meilleures informations pendant les enquêtes de sécurité.
+Utilisez les fonctionnalités avancées suivantes pour être mieux protégés contre les fichiers potentiellement malveillants et obtenir une meilleure compréhension lors des enquêtes de sécurité.
 
 ## <a name="automated-investigation"></a>Examen automatisé
 
@@ -64,6 +64,11 @@ Pour plus d’informations sur les attributions de rôles, voir [Créer et gére
 
 L’activation de cette fonctionnalité vous permet d’exécuter des scripts non signés dans une session de réponse en direct.
 
+## <a name="always-remediate-pua"></a>Toujours corriger puA
+Les applications potentiellement indésirables (PUA) sont une catégorie de logiciels qui peut ralentir votre ordinateur, afficher des publicités inattendues ou, au pire, installer d’autres logiciels qui peuvent être inattendus ou indésirables. 
+
+Activer cette fonctionnalité afin que les applications potentiellement indésirables (PUA) soient corrigés sur tous les appareils de votre client, même si la protection PUA n’est pas configurée sur les appareils. Cela permet de protéger les utilisateurs contre l’installation accidentelle d’applications indésirables sur leur appareil. Lorsqu’elle est désactivée, la correction dépend de la configuration de l’appareil. 
+
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Limiter la corrélation aux groupes d’appareils dans l’étendue
 Lorsque ce paramètre est allumé, les alertes sont corrélées en incidents distincts en fonction de leur groupe d’appareils. Par défaut, la corrélation d’incidents se produit sur l’ensemble de l’étendue client.
@@ -71,9 +76,9 @@ Lorsque ce paramètre est allumé, les alertes sont corrélées en incidents dis
 >[!NOTE]
 >La modification de ce paramètre a un impact sur les corrélations d’alertes futures uniquement.
 
-
 ## <a name="enable-edr-in-block-mode"></a>Activer EDR en mode bloc
-La détection et la réponse des points de terminaison (EDR) en mode bloc offrent une protection contre les artefacts malveillants, même lorsque l’Antivirus Microsoft Defender s’exécute en mode passif. Lorsqu’elle est allumée, l’EDR en mode blocage bloque les artefacts ou comportements malveillants détectés sur un appareil. L’EDR en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après une violation.
+La détection et la réponse des points de terminaison (EDR) en mode bloc offrent une protection contre les artefacts malveillants, même lorsque l’Antivirus Microsoft Defender s’exécute en mode passif. Lorsqu’elle est désactivée, l’EDR en mode blocage bloque les artefacts ou comportements malveillants détectés sur un appareil. L’EDR en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après une violation.
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Correction automatique des alertes
 
@@ -85,11 +90,11 @@ Pour les locataires créés sur Ou après Windows 10, version 1809, la fonctionn
 > [!NOTE]
 >
 > - Le résultat de l’action de résolution automatique peut influencer le calcul du niveau de risque de l’appareil, qui est basé sur les alertes actives trouvées sur un appareil.
-> - Si un analyste des opérations de sécurité définit manuellement l’état d’une alerte sur « En cours » ou « Résolu », la fonctionnalité de résolution automatique ne l’est pas.
+> - Si un analyste d’opérations de sécurité définit manuellement l’état d’une alerte sur « En cours » ou « Résolu », la fonctionnalité de résolution automatique ne l’est pas.
 
 ## <a name="allow-or-block-file"></a>Autoriser ou bloquer un fichier
 
-Le blocage n’est disponible que si votre organisation répond aux exigences ci-après :
+Le blocage n’est disponible que si votre organisation remplit les conditions ci-après :
 
 - Utilise l’Antivirus Microsoft Defender comme solution anti-programme malveillant active et,
 - La fonctionnalité de protection basée sur le cloud est activée
@@ -117,8 +122,7 @@ Pour utiliser cette fonctionnalité, les appareils doivent utiliser Windows 10 v
 Pour plus d’informations, [voir Gérer les indicateurs.](manage-indicators.md)
 
 > [!NOTE]
-> La protection du réseau tire parti des services de réputation qui traiter les demandes dans des emplacements qui peuvent se trouve en dehors de l’emplacement que vous avez sélectionné pour vos données Defender pour le point de terminaison.
-
+> La protection du réseau tire parti des services de réputation qui traiter les demandes à des emplacements qui peuvent se trouve en dehors de l’emplacement que vous avez sélectionné pour vos données Defender pour le point de terminaison.
 
 ## <a name="tamper-protection"></a>Protection contre la falsification
 Pendant certains types de cyberattaques, les acteurs malveillants tentent de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos ordinateurs. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils.
@@ -126,6 +130,7 @@ Pendant certains types de cyberattaques, les acteurs malveillants tentent de dé
 La protection contre la falsification verrouille essentiellement l’Antivirus Microsoft Defender et empêche vos paramètres de sécurité d’être modifiés par le biais d’applications et de méthodes.
 
 Maintenez la protection contre la falsification allumée pour empêcher les modifications indésirables apportées à votre solution de sécurité et à ses fonctionnalités essentielles.
+
 
 ## <a name="show-user-details"></a>Afficher les détails de l’utilisateur
 
@@ -137,14 +142,15 @@ Activez cette fonctionnalité pour que vous pouvez voir les détails de l’util
 
 Pour plus d’informations, voir [Examiner un compte d’utilisateur.](investigate-user.md)
 
+
 ## <a name="skype-for-business-integration"></a>Intégration de Skype Entreprise
 
 L’activation de l’intégration de Skype Entreprise vous permet de communiquer avec des utilisateurs à l’aide de Skype Entreprise, du courrier électronique ou du téléphone. Cela peut être pratique lorsque vous avez besoin de communiquer avec l’utilisateur et d’atténuer les risques.
 
 > [!NOTE]
-> Lorsqu’un appareil est isolé du réseau, vous pouvez choisir d’activer les communications Outlook et Skype dans une fenêtre pop-up, ce qui permet de communications à l’utilisateur pendant qu’il est déconnecté du réseau. Ce paramètre s’applique aux communications Skype et Outlook lorsque les appareils sont en mode d’isolation.
+> Lorsqu’un appareil est isolé du réseau, vous pouvez choisir d’activer les communications Outlook et Skype dans une fenêtre pop-up qui permet d’utiliser les communications avec l’utilisateur pendant qu’il est déconnecté du réseau. Ce paramètre s’applique aux communications Skype et Outlook lorsque les appareils sont en mode d’isolation.
 
-## <a name="azure-advanced-threat-protection-integration"></a>Intégration d’Azure Advanced Threat Protection
+## <a name="microsoft-defender-for-identity-integration"></a>Intégration de Microsoft Defender pour l’identité
 
 L’intégration à Azure Advanced Threat Protection vous permet de pivoter directement dans un autre produit de sécurité Microsoft Identity. Azure Advanced Threat Protection complète une enquête avec des informations supplémentaires sur un compte suspecté d’être compromis et les ressources associées. En activant cette fonctionnalité, vous enrichirez la fonctionnalité d’examen basé sur l’appareil en pivotant sur le réseau d’un point de vue d’identification.
 
@@ -160,29 +166,25 @@ Lorsque vous activerez cette fonctionnalité, vous serez en mesure d’incorpore
 > [!NOTE]
 > Vous devez avoir la licence appropriée pour activer cette fonctionnalité.
 
-Pour recevoir l’intégration d’appareils contextuels dans Office 365 Threat Intelligence, vous devez activer les paramètres Defender pour le point de terminaison dans le tableau de bord sécurité & conformité. Pour plus d’informations, voir [Examen et réponse aux menaces.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)
+Pour recevoir l’intégration d’appareils contextuels dans Office 365 Threat Intelligence, vous devez activer les paramètres Defender pour le point de terminaison dans le tableau de bord sécurité & conformité. Pour plus d’informations, voir [Examen des menaces et réponse.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)
 
-## <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
+## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Spécialistes des menaces Microsoft : notifications d’attaques ciblées
 
 Sur les deux composants De l’Expert en menaces Microsoft, la notification d’attaque ciblée est disponible en général. La fonctionnalité Experts à la demande est toujours en prévisualisation. Vous ne pouvez utiliser la fonctionnalité d’experts à la demande que si vous avez appliqué la prévisualisation et que votre application a été approuvée. Vous pouvez recevoir des notifications d’attaque ciblées d’experts microsoft en matière de menaces via le tableau de bord des alertes de votre portail Defender for Endpoint et par courrier électronique si vous le configurez.
 
 > [!NOTE]
 > La fonctionnalité Experts microsoft en matière de menaces dans Defender pour point de terminaison est disponible avec une licence E5 pour [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
-
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 L’activation de ce paramètre a pour effet de faire suivre les signaux de Defender for Endpoint à Microsoft Cloud App Security pour fournir une visibilité plus approfondie de l’utilisation des applications cloud. Les données forwarded sont stockées et traitées au même emplacement que vos données Cloud App Security.
 
 > [!NOTE]
 > Cette fonctionnalité sera disponible avec une licence E5 pour [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) sur les appareils exécutant Windows 10, version 1709 (os Build 16299.1085 avec [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (os build 17134.704 avec [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (os build 17763.379 avec [KB4489899](https://support.microsoft.com/help/4489899)) ou versions ultérieures de Windows 10.
 
-## <a name="azure-information-protection"></a>Azure Information Protection
-
-L’turning on this setting allows signals to be forwarded to Azure Information Protection. Il offre aux propriétaires et aux administrateurs de données une visibilité sur les données protégées sur les appareils intégrés et les évaluations des risques des appareils.
-
 ## <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
-Envoie les signaux De Microsoft Defender pour point de terminaison au Score de sécurité Microsoft dans le Centre de sécurité Microsoft 365. L’exploitation de cette fonctionnalité permet à Microsoft Secure Score de visibilité sur la posture de sécurité de l’appareil. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
+Envoie les signaux Microsoft Defender for Endpoint au Niveau de sécurité Microsoft dans le Centre de sécurité Microsoft 365. L’exploitation de cette fonctionnalité permet à Microsoft Secure Score de visibilité sur la posture de sécurité de l’appareil. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
+
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Activer l’intégration de Microsoft Defender pour les points de terminaison à partir du portail Microsoft Defender pour l’identité
 
@@ -196,17 +198,29 @@ Pour recevoir l’intégration d’appareils contextuels dans Microsoft Defender
 
 Après avoir effectué les étapes d’intégration sur les deux portails, vous pourrez voir les alertes pertinentes dans la page Détails de l’appareil ou Détails de l’utilisateur.
 
+## <a name="web-content-filtering"></a>Filtrage du contenu web
+Bloquer l’accès aux sites web contenant du contenu indésirable et suivre l’activité web sur tous les domaines. Pour spécifier les catégories de contenu web que vous souhaitez bloquer, créez une stratégie de [filtrage de contenu web.](https://security.microsoft.com/preferences2/web_content_filtering_policy) Assurez-vous que vous avez une protection réseau en mode blocage lors du déploiement de la ligne de base de sécurité [microsoft Defender pour les points de terminaison.](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)
+
+
+## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Partager des alertes de point de terminaison avec le Centre de conformité Microsoft
+Permet de remettre les alertes de sécurité des points de terminaison et leur état de triage au Centre de conformité Microsoft, ce qui vous permet d’améliorer les stratégies de gestion des risques internes avec des alertes et de corriger les risques internes avant qu’ils ne causent des dommages. Les données forwardées sont traitées et stockées au même emplacement que vos données Office 365.
+
+Après avoir configuré les indicateurs de violation de la stratégie de sécurité dans les [paramètres](/microsoft-365/compliance/insider-risk-management-settings#indicators) de gestion des risques internes, les alertes Defender for Endpoint sont partagées avec la gestion des risques internes pour les utilisateurs applicables.
+
+
+
 ## <a name="microsoft-intune-connection"></a>Connexion Microsoft Intune
 
 Defender pour le point de terminaison peut être intégré [à Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) pour activer l’accès conditionnel basé sur les risques de [l’appareil.](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) Lorsque vous [activerez cette fonctionnalité,](configure-conditional-access.md)vous serez en mesure de partager des informations sur l’appareil Defender for Endpoint avec Intune, ce qui améliore l’application de la stratégie.
 
 > [!IMPORTANT]
-> Vous devez activer l’intégration sur Intune et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Pour plus d’informations sur les étapes spécifiques, voir [Configurer l’accès conditionnel dans Defender pour le point de terminaison.](configure-conditional-access.md)
+> Vous devez activer l’intégration sur Intune et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Pour plus d’informations sur les étapes spécifiques, voir [Configurer l’accès conditionnel dans Defender pour endpoint.](configure-conditional-access.md)
 
 Cette fonctionnalité est disponible uniquement si vous disposez des fonctionnalités suivantes :
 
 - Un client sous licence pour Enterprise Mobility + Security E3 et Windows E5 (ou Microsoft 365 Entreprise E5)
 - Un environnement Microsoft Intune actif, avec des appareils Windows 10 gérés par Intune joints [à Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)
+
 
 ### <a name="conditional-access-policy"></a>Stratégie d’accès conditionnel
 
@@ -221,11 +235,8 @@ Découvrez les nouvelles fonctionnalités de la version d’évaluation de Defen
 
 Vous aurez accès aux fonctionnalités à venir, sur lesquelles vous pourrez nous faire part de vos commentaires afin d’améliorer l’expérience globale avant que les fonctionnalités ne soient généralement disponibles.
 
-## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Partager des alertes de point de terminaison avec le Centre de conformité Microsoft
 
-Permet de remettre les alertes de sécurité des points de terminaison et leur état de triage au Centre de conformité Microsoft, ce qui vous permet d’améliorer les stratégies de gestion des risques internes avec des alertes et de corriger les risques internes avant qu’ils ne causent des dommages. Les données forwardées sont traitées et stockées au même emplacement que vos données Office 365.
 
-Après avoir configuré les indicateurs de violation de la stratégie de sécurité dans les [paramètres](/microsoft-365/compliance/insider-risk-management-settings#indicators) de gestion des risques internes, les alertes Defender for Endpoint sont partagées avec la gestion des risques internes pour les utilisateurs applicables.
 
 ## <a name="related-topics"></a>Voir aussi
 
