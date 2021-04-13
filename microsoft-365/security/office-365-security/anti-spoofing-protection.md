@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 746b00c7fbf1a90f8bda56c1ba031777f6dee409
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 54b94e2d2cc0395ce7a9785887c253df3addf7fa
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408610"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688776"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -122,7 +122,8 @@ Microsoft distingue deux types de messages usurpant une identité :
 
   - SFTY est le niveau de sécurité du message. 9 indique un hameçonnage, .22 indique une usurpation inter-domaines.
 
-Si vous souhaitez en savoir plus sur les valeurs de la Catégorie et de l’authentification composite (compauth) relatives à l’usurpation d’identité, consultez la page [En-têtes de messages anti-courrier indésirable dans Microsoft 365](anti-spam-message-headers.md).
+> [!NOTE]
+> Si vous avez reçu un message du type ***compauth=fail reason=###** _ et que vous souhaitez en savoir plus sur l'authentification composite (compauth) et les valeurs liées à l'usurpation, consultez la section [_En-têtes de message anti-spam dans Microsoft 365* ](anti-spam-message-headers.md). Ou accédez directement aux codes [*raison*](anti-spam-message-headers.md).
 
 Si vous souhaitez en savoir plus sur DMARC, consultez la page [Utiliser DMARC pour valider les messages électroniques dans Microsoft 365](use-dmarc-to-validate-email.md).
 
