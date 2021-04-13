@@ -14,26 +14,26 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: c1f7b67bb49aff8d6656798d80636d9de5858877
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7d1dc1af6e845ccfe2fb0e8f5701a2cd3018c308
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165836"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687530"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Créer une rubrique dans rubriques microsoft
 
-Dans Rubriques de Topics, vous pouvez créer une rubrique si une rubrique n’est pas découverte par le biais de l’indexation ou si la technologie d’IA n’a pas trouvé suffisamment de preuves pour l’établir en tant que rubrique.
+Dans Rubriques de Topics, vous pouvez créer une rubrique si aucune rubrique n'est découverte via l'indexation ou si la technologie d'IA n'a pas trouvé suffisamment de preuves pour l'établir en tant que sujet.
 
 > [!Note] 
-> Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations sur les personnes dans une rubrique créée manuellement sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher la rubrique. 
+> Bien que les informations d'une rubrique recueillies par l'IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations sur les personnes dans une rubrique créée manuellement sont visibles pour tous les utilisateurs qui ont l'autorisation d'afficher la rubrique. 
 
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour créer une rubrique, vous devez :
 - Vous avez une licence Topics.
-- Avoir des autorisations [**sur qui peut créer ou modifier des rubriques**](./topic-experiences-user-permissions.md). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres des rubriques Topics. 
+- Avoir des autorisations [**sur Qui peut créer ou modifier des rubriques**](./topic-experiences-user-permissions.md). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres d'autorisations de la rubrique Rubriques. 
 
 > [!Note] 
 > Les utilisateurs qui sont autorisés à gérer des rubriques dans le centre de rubriques (gestionnaires de connaissances) sont déjà autorisés à créer et modifier des rubriques.
@@ -42,86 +42,81 @@ Pour créer une rubrique, vous devez :
 
 Vous pouvez créer une rubrique à partir de deux emplacements :
 
-- Page d’accueil du centre de rubriques : tout utilisateur titulaire d’une licence avec l’autorisation Qui peut créer ou modifier des **rubriques** (collaborateurs) peut créer une rubrique à partir du centre de rubriques en sélectionnant le <b>menu</b> Nouveau et la <b>page</b>Rubrique.</br> 
+- Page d'accueil du centre de rubriques : tout utilisateur titulaire d'une licence avec l'autorisation Qui peut créer ou modifier des **rubriques** (collaborateurs) peut créer une rubrique à partir du centre de rubriques en sélectionnant le **menu** Nouveau et la **page** Rubrique. 
 
-    ![Nouvelle rubrique du centre de rubriques](../media/knowledge-management/new-topic.png) </br> 
+    ![Nouvelle rubrique du centre de rubriques](../media/knowledge-management/new-topic.png)  
 
-- Page Gérer les rubriques : tout utilisateur titulaire d’une licence qui dispose de l’autorisation Qui peut gérer les **rubriques** (gestionnaires de connaissances) peut créer une rubrique à partir de la page Gérer les rubriques dans le Centre de rubriques en sélectionnant La page Nouvelle <b>rubrique.</b></br> 
+- Page Gérer les rubriques : tout utilisateur titulaire d'une licence qui dispose de l'autorisation Qui peut gérer les **rubriques** (gestionnaires de connaissances) peut créer une rubrique à partir de la page Gérer les rubriques dans le Centre de rubriques en sélectionnant La page Nouvelle **rubrique.** 
 
-    ![Nouvelle rubrique de gestion des rubriques](../media/knowledge-management/new-topic-topic-center.png) </br> 
+    ![Nouvelle rubrique de gestion des rubriques](../media/knowledge-management/new-topic-topic-center.png)  
 
 ### <a name="to-create-a-new-topic"></a>Pour créer une rubrique :
 
-1. Sélectionnez l’option de création d’une page de rubriques à partir du ruban de la page Gérer les rubriques.
+1. Sélectionnez l'option de création d'une page de rubriques à partir du ruban de la page Gérer les rubriques.
 
-2.   Dans la section **Nom de cette** rubrique, tapez le nom de la nouvelle rubrique.
+2.  Dans la section **Nom de cette** rubrique, tapez le nom de la nouvelle rubrique.
 
-    ![Nommez cette rubrique](../media/knowledge-management/k-new-topic-page.png) </br> 
+    ![Nommez cette rubrique](../media/knowledge-management/k-new-topic-page.png)  
 
+3. Dans la section **Autres noms,** tapez les autres noms que la rubrique peut faire référence. 
 
-3. Dans la section <b>Autres noms,</b> tapez tous les autres noms que la rubrique peut faire référence. 
+    ![Autres noms](../media/knowledge-management/alt-names.png)  
 
-    ![Autres noms](../media/knowledge-management/alt-names.png) </br> 
-4. Dans la section <b>Description,</b> tapez quelques phrases qui décrivent la rubrique. 
+4. Dans la section **Description,** tapez quelques phrases qui décrivent la rubrique. 
 
-    ![Description de la rubrique](../media/knowledge-management/description.png)</br>
+    ![Description de la rubrique](../media/knowledge-management/description.png)
 
-4. Dans <b>la</b> section Personnes épinglées, vous pouvez « épingler » une personne pour l’afficher comme ayant une connexion à la rubrique (par exemple, un propriétaire d’une ressource connectée). Commencez par taper son nom ou <b></b> son adresse de messagerie dans la zone Ajouter un nouvel utilisateur, puis sélectionnez l’utilisateur à ajouter dans les résultats de la recherche. Vous pouvez également les « désépiner » en sélectionnant l’icône Supprimer <b>de</b> la liste sur la carte utilisateur. Vous pouvez également faire glisser la personne pour modifier l’ordre d’apparition de la liste de personnes.
+4. Dans **la** section Personnes épinglées, vous pouvez « épingler » une personne pour l'afficher comme ayant une connexion à la rubrique (par exemple, un propriétaire d'une ressource connectée). Commencez par taper son nom ou  son adresse de messagerie dans la zone Ajouter un nouvel utilisateur, puis sélectionnez l'utilisateur à ajouter dans les résultats de la recherche. Vous pouvez également les « désépiner » en sélectionnant l'icône Supprimer **de** la liste sur la carte utilisateur. Vous pouvez également faire glisser la personne vers un autre endroit de la liste.
  
-    ![Personnes épinglées](../media/knowledge-management/pinned-people.png)</br>
+    ![Personnes épinglées](../media/knowledge-management/pinned-people.png)
 
+5. Dans la section Des fichiers **et des pages** épinglés, vous pouvez ajouter ou « épingler » un fichier ou une page de site SharePoint associé à la rubrique.
 
-5. Dans la section Des fichiers <b>et des pages</b> épinglés, vous pouvez ajouter ou « épingler » un fichier ou une page de site SharePoint associé à la rubrique.
-
-   ![Fichiers et pages épinglés](../media/knowledge-management/pinned-files-and-pages.png)</br>
+   ![Fichiers et pages épinglés](../media/knowledge-management/pinned-files-and-pages.png)
  
-    Pour ajouter un nouveau fichier, sélectionnez <b>Ajouter,</b>sélectionnez le site SharePoint à partir de vos sites fréquents ou suivis, puis sélectionnez le fichier dans la bibliothèque de documents du site.
+    Pour ajouter un nouveau fichier, sélectionnez **Ajouter,** sélectionnez le site SharePoint à partir de vos sites fréquents ou suivis, puis sélectionnez le fichier dans la bibliothèque de documents du site.
 
-    Vous pouvez également utiliser l’option De <b>un</b> lien pour ajouter un fichier ou une page en fournissant l’URL. 
+    Vous pouvez également utiliser l'option De **un** lien pour ajouter un fichier ou une page en fournissant l'URL. 
 
     > [!Note] 
-    > Les fichiers et les pages que vous ajoutez doivent se trouver dans le même client Microsoft 365. Si vous souhaitez ajouter un lien vers une ressource externe dans la rubrique, vous pouvez l’ajouter via l’icône de zone de dessin à l’étape 8.
+    > Les fichiers et les pages que vous ajoutez doivent se trouver dans le même client Microsoft 365. Si vous souhaitez ajouter un lien vers une ressource externe dans la rubrique, vous pouvez l'ajouter via l'icône de zone de dessin à l'étape 8.
 
 
-6.  La section <b>Sites associés</b> présente les sites qui ont des informations sur la rubrique. 
+6.  La section **Sites associés** présente les sites qui ont des informations sur cette rubrique. 
 
-    ![Section Sites associés](../media/knowledge-management/related-sites.png)</br>
+    ![Section Sites associés](../media/knowledge-management/related-sites.png)
 
-    Vous pouvez ajouter un site <b></b> associé en sélectionnant Ajouter, puis en recherchant le site, ou en le sélectionnant dans votre liste de sites fréquents ou récents.</br>
+    Vous pouvez ajouter un site  associé en sélectionnant Ajouter, puis en recherchant le site, ou en le sélectionnant dans votre liste de sites fréquents ou récents.
     
-    ![Sélectionner un site](../media/knowledge-management/sites.png)</br>
+    ![Sélectionner un site](../media/knowledge-management/sites.png)
 
-7. La <b>section Rubriques connexes</b> présente les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une <b></b> autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
+7. La **section Rubriques connexes** montre les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une  autre rubrique en sélectionnant le bouton Se connecter à une rubrique associée, puis en tapant le nom de la rubrique associée et en la sélectionnant dans les résultats de la recherche. 
 
-   ![Voir aussi](../media/knowledge-management/related-topic.png)</br>  
+   ![Voir aussi](../media/knowledge-management/related-topic.png)  
 
-    Vous pouvez ensuite donner une description de la façon dont les rubriques sont liées, puis sélectionner <b>Mettre à jour.</b></br>
+    Vous pouvez ensuite donner une description de la façon dont les rubriques sont liées, puis sélectionner **Mettre à jour.**
 
-   ![Description des rubriques connexes](../media/knowledge-management/related-topics-update.png)</br> 
+   ![Description des rubriques connexes](../media/knowledge-management/related-topics-update.png) 
 
-   La rubrique connexe que vous avez ajoutée s’affichera en tant que rubrique connectée.
+   La rubrique connexe que vous avez ajoutée s'affichera en tant que rubrique connectée.
 
-   ![Rubriques connexes connectées](../media/knowledge-management/related-topics-final.png)</br> 
+   ![Rubriques connexes connectées](../media/knowledge-management/related-topics-final.png) 
 
-   Pour supprimer une rubrique associée, sélectionnez la rubrique à supprimer, puis sélectionnez l’icône Supprimer <b>la rubrique.</b></br>
+   Pour supprimer une rubrique associée, sélectionnez la rubrique à supprimer, puis sélectionnez l'icône Supprimer **la rubrique.**
  
-   ![Supprimer une rubrique connexe](../media/knowledge-management/remove-related.png)</br>  
+   ![Supprimer une rubrique connexe](../media/knowledge-management/remove-related.png)  
 
-   Ensuite, <b>sélectionnez Supprimer.</b></br>
+   Ensuite, **sélectionnez Supprimer.**
 
-   ![Confirmer la suppression](../media/knowledge-management/remove-related-confirm.png)</br> 
-     
- 
+   ![Confirmer la suppression](../media/knowledge-management/remove-related-confirm.png) 
 
+8. Vous pouvez également ajouter des éléments statiques à la page (texte, images ou liens, par exemple) en sélectionnant l'icône de zone de dessin, que vous trouverez sous la brève description. Sa sélection ouvre la boîte à outils SharePoint à partir de laquelle vous pouvez choisir l'élément que vous souhaitez ajouter à la page.
 
-8. Vous pouvez également ajouter des éléments statiques à la page (texte, images ou liens, par exemple) en sélectionnant l’icône de zone de dessin, que vous trouverez sous la brève description. Sa sélection ouvre la boîte à outils SharePoint à partir de laquelle vous pouvez choisir l’élément que vous souhaitez ajouter à la page.
-
-   ![Icône Canvas](../media/knowledge-management/webpart-library.png)</br> 
-
+   ![Icône Canvas](../media/knowledge-management/webpart-library.png) 
 
 9. Sélectionnez **Publier** pour enregistrer vos modifications. 
 
-Une fois que vous avez publié la page, le nom de la rubrique, l’autre nom, la description et les personnes épinglées s’affichent à tous les utilisateurs sous licence qui affichent la rubrique. Des fichiers, des pages et des sites spécifiques apparaissent uniquement sur la page de rubrique si la visionneuse dispose d’autorisations Office 365 sur l’élément. 
+Une fois que vous avez publié la page, le nom de la rubrique, l'autre nom, la description et les personnes épinglées s'affichent à tous les utilisateurs sous licence qui affichent la rubrique. Des fichiers, des pages et des sites spécifiques apparaissent uniquement sur la page de rubrique si la visionneuse dispose d'autorisations Office 365 sur l'élément. 
 
 
 

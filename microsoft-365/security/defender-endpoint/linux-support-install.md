@@ -1,7 +1,7 @@
 ---
-title: Résoudre les problèmes d’installation de Microsoft Defender ATP pour Linux
+title: Résoudre les problèmes d'installation de Microsoft Defender ATP pour Linux
 ms.reviewer: ''
-description: Résoudre les problèmes d’installation de Microsoft Defender ATP pour Linux
+description: Résoudre les problèmes d'installation de Microsoft Defender ATP pour Linux
 keywords: microsoft, defender, atp, linux, installation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4486b8e9d3fb84c272343ca344a47e49663bb80d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 347528def6929dde200249cd9710f7ce33484c7f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187744"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688812"
 ---
-# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-for-linux"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint pour Linux
+# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d'installation de Microsoft Defender pour endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,11 +34,11 @@ ms.locfileid: "51187744"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-## <a name="verify-if-installation-succeeded"></a>Vérifier si l’installation a réussi
+## <a name="verify-if-installation-succeeded"></a>Vérifier si l'installation a réussi
 
-Une erreur d’installation peut ou non entraîner un message d’erreur significatif de la part du gestionnaire de package. Pour vérifier si l’installation a réussi, obtenez et vérifiez les journaux d’installation en utilisant :
+Une erreur d'installation peut ou non entraîner un message d'erreur significatif de la part du gestionnaire de package. Pour vérifier si l'installation a réussi, obtenez et vérifiez les journaux d'installation en utilisant :
 
  ```bash
  sudo journalctl | grep 'microsoft-mdatp'  > installation.log
@@ -52,13 +52,13 @@ Une erreur d’installation peut ou non entraîner un message d’erreur signifi
  microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
  ```
 
-Une sortie de la commande précédente avec la date et l’heure correctes de l’installation indique la réussite.
+Une sortie de la commande précédente avec la date et l'heure correctes de l'installation indique la réussite.
 
-Vérifiez également la [configuration du client](linux-install-manually.md#client-configuration) pour vérifier l’état du produit et détecter le fichier texte EICAR.
+Vérifiez également la [configuration du client](linux-install-manually.md#client-configuration) pour vérifier l'état du produit et détecter le fichier texte EICAR.
 
 ## <a name="make-sure-you-have-the-correct-package"></a>Assurez-vous que vous avez le package correct
 
-N’oubliez pas que le package que vous installez correspond à la distribution et à la version de l’hôte.
+N'oubliez pas que le package que vous installez correspond à la distribution et à la version de l'hôte.
 
 | package                       | distribution                             |
 |-------------------------------|------------------------------------------|
@@ -70,9 +70,9 @@ N’oubliez pas que le package que vous installez correspond à la distribution 
 
 Pour [un déploiement](linux-install-manually.md)manuel, assurez-vous que la version et la version correctes ont été choisies.
 
-## <a name="installation-failed"></a>Échec de l’installation
+## <a name="installation-failed"></a>Échec de l'installation
 
-Vérifiez si le service mdatp est en cours d’exécution :
+Vérifiez si le service mdatp est en cours d'exécution :
 
 ```bash
 systemctl status mdatp
@@ -89,21 +89,21 @@ systemctl status mdatp
            └─1968 /opt/microsoft/mdatp/sbin/wdavdaemon
  ```
 
-## <a name="steps-to-troubleshoot-if-mdatp-service-isnt-running"></a>Étapes à suivre pour résoudre les problèmes si le service mdatp n’est pas en cours d’exécution
+## <a name="steps-to-troubleshoot-if-mdatp-service-isnt-running"></a>Étapes à suivre pour résoudre les problèmes si le service mdatp n'est pas en cours d'exécution
 
-1. Vérifiez si l’utilisateur « mdatp » existe :
+1. Vérifiez si l'utilisateur « mdatp » existe :
 
     ```bash
     id "mdatp"
     ```
 
-    S’il n’y a pas de sortie, exécutez
+    S'il n'y a pas de sortie, exécutez
 
     ```bash
     sudo useradd --system --no-create-home --user-group --shell /usr/sbin/nologin mdatp
     ```
 
-2. Essayez d’activer et de redémarrer le service à l’aide de :
+2. Essayez d'activer et de redémarrer le service à l'aide de :
 
     ```bash
     sudo systemctl enable mdatp
@@ -113,21 +113,21 @@ systemctl status mdatp
     sudo systemctl restart mdatp
     ```
 
-3. Si mdatp.service n’est pas trouvé lors de l’exécution de la commande précédente, exécutez :
+3. Si mdatp.service n'est pas trouvé lors de l'exécution de la commande précédente, exécutez :
 
     ```bash
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
     ```
 
     où ```<systemd_path>``` est pour les distributions Ubuntu et Debian et pour ```/lib/systemd/system``` ```/usr/lib/systemd/system``` Rhel, CentOS, Oracle et SLES.
-   Réexécutez ensuite l’étape 2.
+   Réexécutez ensuite l'étape 2.
 
-4. Si les étapes ci-dessus ne fonctionnent pas, vérifiez si SELinux est installé et en mode d’application. Si c’est le cas, essayez de le définir sur le mode permissif (de préférence) ou désactivé. Pour ce faire, vous pouvez définir le paramètre sur « permissif » ou « désactivé » dans le fichier, puis par `SELINUX` `/etc/selinux/config` redémarrage. Pour plus d’informations, consultez la page d’homme du sélinux.
-Essayez maintenant de redémarrer le service mdatp à l’aide de l’étape 2. Revert the configuration change immediately though for security reasons after trying it andboot.
+4. Si les étapes ci-dessus ne fonctionnent pas, vérifiez si SELinux est installé et en mode d'application. Si c'est le cas, essayez de le définir sur le mode permissif (de préférence) ou désactivé. Pour ce faire, vous pouvez définir le paramètre sur « permissif » ou « désactivé » dans le fichier, puis par `SELINUX` `/etc/selinux/config` redémarrage. Pour plus d'informations, consultez la page de l'homme du sélinux.
+Essayez maintenant de redémarrer le service mdatp à l'aide de l'étape 2. Revert the configuration change immediately though for security reasons after trying it andboot.
 
 5. Si `/opt` le répertoire est un lien symbolique, créez un montage de liaison pour `/opt/microsoft` .
 
-6. Assurez-vous que le daemon dispose de l’autorisation exécutable.
+6. Assurez-vous que le daemon dispose de l'autorisation exécutable.
 
     ```bash
     ls -l /opt/microsoft/mdatp/sbin/wdavdaemon
@@ -137,29 +137,29 @@ Essayez maintenant de redémarrer le service mdatp à l’aide de l’étape 2. 
     -rwxr-xr-x 2 root root 15502160 Mar  3 04:47 /opt/microsoft/mdatp/sbin/wdavdaemon
     ```
 
-    Si le daemon n’a pas d’autorisations exécutables, rendez-le exécutable à l’aide de :
+    Si le daemon n'a pas d'autorisations exécutables, rendez-le exécutable à l'aide de :
 
     ```bash
     sudo chmod 0755 /opt/microsoft/mdatp/sbin/wdavdaemon
     ```
 
-    et réessayez d’exécution de l’étape 2.
+    et réessayez d'exécution de l'étape 2.
 
-7. Assurez-vous que le système de fichiers contenant wdavdaemon n’est pas monté avec « noexec ».
+7. Assurez-vous que le système de fichiers contenant wdavdaemon n'est pas monté avec « noexec ».
 
-## <a name="if-mdatp-service-is-running-but-eicar-text-file-detection-doesnt-work"></a>Si le service mdatp est en cours d’exécution, mais que la détection de fichier texte EICAR ne fonctionne pas
+## <a name="if-mdatp-service-is-running-but-eicar-text-file-detection-doesnt-work"></a>Si le service mdatp est en cours d'exécution, mais que la détection de fichier texte EICAR ne fonctionne pas
 
-1. Vérifiez le type de système de fichiers à l’aide des :
+1. Vérifiez le type de système de fichiers à l'aide des :
 
     ```bash
     findmnt -T <path_of_EICAR_file>
     ```
 
-    Les systèmes de fichiers actuellement pris en charge pour l’activité d’accès sont répertoriés [ici.](microsoft-defender-endpoint-linux.md#system-requirements) Les fichiers en dehors de ces systèmes de fichiers ne seront pas analysés.
+    Les systèmes de fichiers actuellement pris en charge pour l'activité d'accès sont répertoriés [ici.](microsoft-defender-endpoint-linux.md#system-requirements) Les fichiers en dehors de ces systèmes de fichiers ne seront pas analysés.
 
-## <a name="command-line-tool-mdatp-isnt-working"></a>L’outil de ligne de commande « mdatp » ne fonctionne pas
+## <a name="command-line-tool-mdatp-isnt-working"></a>L'outil de ligne de commande « mdatp » ne fonctionne pas
 
-1. Si l’exécution de l’outil en ligne de `mdatp` commande donne une `command not found` erreur, exécutez la commande suivante :
+1. Si l'exécution de l'outil en ligne de `mdatp` commande donne une `command not found` erreur, exécutez la commande suivante :
 
     ```bash
     sudo ln -sf /opt/microsoft/mdatp/sbin/wdavdaemonclient /usr/bin/mdatp
@@ -177,4 +177,4 @@ Essayez maintenant de redémarrer le service mdatp à l’aide de l’étape 2. 
     Diagnostic file created: <path to file>
     ```
 
-    Le chemin d’accès à un fichier zip qui contient les journaux s’affiche en tant que sortie. Connectez-vous à notre support client à l’aide de ces journaux.
+    Le chemin d'accès à un fichier zip qui contient les journaux s'affiche en tant que sortie. Connectez-vous à notre support client à l'aide de ces journaux.

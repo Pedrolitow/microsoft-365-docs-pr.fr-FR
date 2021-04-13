@@ -1,6 +1,6 @@
 ---
-title: Surveillance de la sécurité de navigation web dans Microsoft Defender ATP
-description: Utiliser la protection web dans Microsoft Defender ATP pour surveiller la sécurité de navigation web
+title: Surveillance de la sécurité de navigation web dans Microsoft Defender pour le point de terminaison
+description: Utiliser la protection web dans Microsoft Defender pour le point de terminaison pour surveiller la sécurité de navigation web
 keywords: protection web, protection contre les menaces web, navigation web, surveillance, rapports, cartes, liste de domaines, sécurité, hameçonnage, programme malveillant, attaque, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 629e18c7387f6063254f3482f93a5e17023c7316
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: ee6388c779d2c5bc09a82f5e9064d1b981e885cb
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499944"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687422"
 ---
 # <a name="monitor-web-browsing-security"></a>Surveiller la sécurité de navigation web
 
@@ -39,32 +39,32 @@ La protection Web vous permet de surveiller la sécurité de navigation web de v
  
     ![Image de la carte montrant les détections de protection contre les menaces web au fil du temps](images/wtp-blocks-over-time.png)
 
-- **Résumé de la protection** contre les menaces web : cette carte affiche le nombre total de détections de menaces web au cours des 30 derniers jours, montrant la répartition entre les différents types de menaces web. La sélection d’une tranche ouvre la liste des domaines qui ont été trouvés avec des sites web malveillants ou indésirables.
+- **Résumé de la protection** contre les menaces web : cette carte affiche le nombre total de détections de menaces web au cours des 30 derniers jours, montrant la répartition entre les différents types de menaces web. La sélection d'une tranche ouvre la liste des domaines qui ont été trouvés avec des sites web malveillants ou indésirables.
 
     ![Image de la carte montrant le résumé de la protection contre les menaces web](images/wtp-summary.png)
 
 >[!Note]
->La réflexion d’un bloc dans les cartes ou la liste de domaines peut prendre jusqu’à 12 heures.
+>La réflexion d'un bloc dans les cartes ou la liste de domaines peut prendre jusqu'à 12 heures.
 
 ## <a name="types-of-web-threats"></a>Types de menaces web
 
 La protection web classe les sites web malveillants et indésirables comme :
 
-- **Hameçonnage :** sites web qui contiennent des formulaires web usurpés et d’autres mécanismes de hameçonnage conçus pour leurre les utilisateurs à divulguer des informations d’identification et d’autres informations sensibles
-- **Malveillant :** sites web hébergeant des programmes malveillants et du code d’exploitation
-- **Indicateur personnalisé** : sites web dont vous avez ajouté les URL ou les domaines à votre liste d’indicateurs personnalisés [pour](manage-indicators.md) le blocage
+- **Hameçonnage :** sites web qui contiennent des formulaires web usurpés et d'autres mécanismes de hameçonnage conçus pour leurre les utilisateurs à divulguer des informations d'identification et d'autres informations sensibles
+- **Malveillant :** sites web hébergeant des programmes malveillants et du code d'exploitation
+- **Indicateur personnalisé** : sites web dont vous avez ajouté les URL ou les domaines à votre liste d'indicateurs personnalisés [pour](manage-indicators.md) le blocage
 
 ## <a name="view-the-domain-list"></a>Afficher la liste des domaines
 
 Sélectionnez une catégorie de menaces web spécifique dans la carte **récapitulative de la protection web** contre les menaces pour ouvrir la page **Domaines.** Cette page affiche la liste des domaines de cette catégorie de menaces. La page fournit les informations suivantes pour chaque domaine :
 
-- **Nombre d’accès** : nombre de demandes d’URL dans le domaine
+- **Nombre d'accès** : nombre de demandes d'URL dans le domaine
 - **Blocs :** nombre de fois que les demandes ont été bloquées
-- **Tendance d’accès** : changement du nombre de tentatives d’accès
+- **Tendance d'accès** : changement du nombre de tentatives d'accès
 - **Catégorie de menace** : type de menace web
-- **Appareils** : nombre d’appareils avec tentatives d’accès
+- **Appareils** : nombre d'appareils avec tentatives d'accès
 
-Sélectionnez un domaine pour afficher la liste des périphériques qui ont tenté d’accéder aux URL de ce domaine et la liste des URL.
+Sélectionnez un domaine pour afficher la liste des périphériques qui ont tenté d'accéder aux URL de ce domaine et la liste des URL.
 
 ## <a name="related-topics"></a>Voir aussi
 

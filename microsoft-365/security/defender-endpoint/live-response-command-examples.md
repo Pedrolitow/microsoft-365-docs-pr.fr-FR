@@ -1,5 +1,5 @@
 ---
-title: Exemples de commandes de réponse en direct
+title: Exemples de commande Live response
 description: Apprenez à exécuter des commandes de réponse en direct de base ou avancées pour Microsoft Defender pour endpoint et consultez des exemples sur son utilisation.
 keywords: exemple, commande, cli, distant, shell, connexion, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e00464b5d5dcf348fcc76a3f093ac8bac373627
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f08f20753a1f0926abbbce01fe97f20ef1c07f2c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187708"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689088"
 ---
-# <a name="live-response-command-examples"></a>Exemples de commandes de réponse en direct
+# <a name="live-response-command-examples"></a>Exemples de commande Live response
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,11 +32,11 @@ ms.locfileid: "51187708"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Découvrez les commandes courantes utilisées dans la réponse en direct et consultez des exemples sur la façon dont elles sont généralement utilisées.
 
-Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Pour plus d’informations sur les commandes de base et avancées, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct.](live-response.md)
+Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Pour plus d'informations sur les commandes de base et avancées, voir [Examiner les entités sur les appareils à l'aide de la réponse en direct.](live-response.md)
 
 
 ## <a name="analyze"></a>analyser 
@@ -108,7 +108,7 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 >[!NOTE]
 >
-> Les types de fichiers **suivants ne peuvent** pas être téléchargés à l’aide de cette commande à partir de Live Response :
+> Les types de fichiers **suivants ne peuvent** pas être téléchargés à l'aide de cette commande à partir de Live Response :
 >
 > * [Reparse point files](/windows/desktop/fileio/reparse-points/)
 > * [Fichiers dispersés](/windows/desktop/fileio/sparse-files/)
@@ -117,7 +117,7 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > Ces types de **fichiers sont pris** en charge par [PowerShell.](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)
 >
-> Utilisez PowerShell comme alternative si vous avez des problèmes à l’aide de cette commande à partir de Live Response.
+> Utilisez PowerShell comme alternative si vous avez des problèmes à l'aide de cette commande à partir de Live Response.
 
 ## <a name="processes"></a>Processus
 ```
@@ -198,7 +198,11 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
-
+>[!NOTE]
+>
+> Pour les commandes de longue durée telles que «**exécuter**» ou «**getfile**» , vous pouvez utiliser le symbole ' ' à la fin de la commande pour effectuer cette action en arrière-plan. **&**
+> Cela vous permettra de continuer à examiner l'ordinateur et de revenir à la commande en arrière-plan lorsque vous avez terminé à l'aide de la commande de base «**fg** [».](live-response.md#basic-commands)
+>
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```
@@ -217,7 +221,7 @@ scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Eva
 ```
 
 
-## <a name="undo"></a>annuler
+## <a name="undo"></a>undo
 
 ```
 # Restore remediated registry

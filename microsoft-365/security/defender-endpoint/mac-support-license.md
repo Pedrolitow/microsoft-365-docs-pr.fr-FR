@@ -18,41 +18,41 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 645c3657bdd1540ac95b68460b4dff6d25627c2c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 69dd85394837bb7f37e7d277110c8a5dbf7b6506
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185924"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689112"
 ---
-# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Résoudre les problèmes de licence pour Microsoft Defender pour Endpoint pour Mac
+# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de licence pour Microsoft Defender pour le point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison pour Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Pendant que vous êtes en cours d’utilisation de [Microsoft Defender pour Endpoint pour Mac](microsoft-defender-endpoint-mac.md) et de tests de déploiement manuel ou d’une preuve de concept, vous pouvez obtenir l’erreur suivante : [](mac-install-manually.md)
+Pendant que vous êtes en cours d'utilisation de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) et les tests de déploiement manuel ou d'une preuve de concept, vous pouvez obtenir l'erreur suivante : [](mac-install-manually.md)
 
-![Image de l’erreur de licence](images/no-license-found.png)
+![Image de l'erreur de licence](images/no-license-found.png)
 
 **Message:** 
 
 Aucune licence trouvée
 
-Il semble que votre organisation n’a pas de licence pour l’abonnement Microsoft 365 Entreprise.
+Il semble que votre organisation n'a pas de licence pour l'abonnement Microsoft 365 Entreprise.
 
 Contactez votre administrateur pour obtenir de l'aide.
 
 **Cause :** 
 
-Vous avez déployé et/ou installé le package Microsoft Defender for Endpoint pour macOS (« Télécharger le package d’installation ») mais vous avez peut-être exécuté le script de configuration (« Télécharger le package d’intégration »).
+Vous avez déployé et/ou installé microsoft Defender pour le point de terminaison sur le package macOS (« Télécharger le package d'installation ») mais vous avez peut-être exécuté le script de configuration (« Télécharger le package d'intégration »).
 
 **Solution :**
 

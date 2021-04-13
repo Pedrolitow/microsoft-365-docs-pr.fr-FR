@@ -1,6 +1,6 @@
 ---
-title: Nouveautés de Microsoft Defender pour endpoint pour iOS
-description: Découvrez les principales modifications apportées aux versions précédentes de Microsoft Defender pour Endpoint pour iOS.
+title: Nouveautés de Microsoft Defender pour Endpoint sur iOS
+description: Découvrez les principales modifications apportées aux versions précédentes de Microsoft Defender pour Endpoint sur iOS.
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1ef486dd369ed35d7c42e342a264ca88c64c02e6
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 632cb054bb12ab52fe41f8fc974beca05631c1b6
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632213"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688908"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-for-ios"></a>Nouveautés de Microsoft Defender pour endpoint pour iOS
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour Endpoint sur iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

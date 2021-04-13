@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77ab7bbbb156165f26538cf3d14eae1e5e76d92c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: d698eb78f354d624d9ab115a8ecd2e0862e607e3
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587538"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688860"
 ---
-# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-for-linux"></a>Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour Endpoint pour Linux
+# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51587538"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="run-the-connectivity-test"></a>Exécuter le test de connectivité
 
@@ -62,13 +62,13 @@ Testing connection with https://uk-v20.events.data.microsoft.com/ping ... [OK]
 Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 ```
 
-Si le test de connectivité échoue, vérifiez si [](microsoft-defender-endpoint-linux.md#network-connections) l’appareil dispose d’un accès à Internet et si l’un des points de terminaison requis par le produit est bloqué par un proxy ou un pare-feu.
+Si le test de connectivité échoue, vérifiez si [](microsoft-defender-endpoint-linux.md#network-connections) l'appareil dispose d'un accès à Internet et si l'un des points de terminaison requis par le produit est bloqué par un proxy ou un pare-feu.
 
-Les échecs avec erreur d’erreur 35 ou 60 indiquent le rejet de l’épinglage du certificat. Vérifiez si la connexion est sous inspection SSL ou HTTPS. Si c’est le cas, ajoutez Microsoft Defender pour le point de terminaison à la liste d’accès.
+Les échecs avec erreur d'erreur 35 ou 60 indiquent le rejet de l'épinglage du certificat. Vérifiez si la connexion est sous inspection SSL ou HTTPS. Si c'est le cas, ajoutez Microsoft Defender pour le point de terminaison à la liste d'accès.
 
-## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>Étapes de résolution des problèmes pour les environnements sans proxy ou avec proxy transparent
+## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>Étapes de dépannage pour les environnements sans proxy ou avec proxy transparent
 
-Pour vérifier qu’une connexion n’est pas bloquée dans un environnement sans proxy ou avec un proxy transparent, exécutez la commande suivante dans le terminal :
+Pour vérifier qu'une connexion n'est pas bloquée dans un environnement sans proxy ou avec un proxy transparent, exécutez la commande suivante dans le terminal :
 
 ```bash
 curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
@@ -84,20 +84,20 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 ## <a name="troubleshooting-steps-for-environments-with-static-proxy"></a>Étapes de résolution des problèmes pour les environnements avec proxy statique
 
 > [!WARNING]
-> Pac, WPAD et les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seul un proxy statique ou transparent est utilisé.
+> Les pacs, WPAD et les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seul un proxy statique ou transparent est utilisé.
 >
-> L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy pour transmettre directement les données de Defender for Endpoint for Linux aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
+> L'inspection et l'interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l'inspection SSL et votre serveur proxy pour transmettre directement les données de Defender for Endpoint for Linux aux URL pertinentes sans interception. L'ajout de votre certificat d'interception au magasin global n'autorise pas l'interception.
 
-Si un proxy statique est requis, ajoutez un paramètre de proxy à la commande ci-dessus, où correspond à l’adresse `proxy_address:port` proxy et au port :
+Si un proxy statique est requis, ajoutez un paramètre proxy à la commande ci-dessus, où correspond à l'adresse `proxy_address:port` proxy et au port :
 
 ```bash
 curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
-Veillez à utiliser les mêmes adresse et port proxy que celui configuré dans le `/lib/system/system/mdatp.service` fichier. Vérifiez la configuration de votre proxy en cas d’erreurs provenant des commandes ci-dessus.
+Veillez à utiliser les mêmes adresse et port proxy que celui configuré dans le `/lib/system/system/mdatp.service` fichier. Vérifiez la configuration de votre proxy en cas d'erreurs provenant des commandes ci-dessus.
 
 > [!WARNING]
-> Le proxy statique ne peut pas être configuré via une variable d’environnement `HTTPS_PROXY` à l’échelle du système. Au lieu de cela, `HTTPS_PROXY` assurez-vous qu’elle est correctement définie dans le `/lib/system/system/mdatp.service` fichier.
+> Le proxy statique ne peut pas être configuré via une variable d'environnement `HTTPS_PROXY` à l'échelle du système. Au lieu de cela, `HTTPS_PROXY` assurez-vous qu'elle est correctement définie dans le `/lib/system/system/mdatp.service` fichier.
 
 Pour utiliser un proxy statique, le `mdatp.service` fichier doit être modifié. Assurez-vous `#` que le début est supprimé pour supprimer lescommant de la ligne suivante `/lib/systemd/system/mdatp.service` :
 
@@ -105,9 +105,9 @@ Pour utiliser un proxy statique, le `mdatp.service` fichier doit être modifié.
 #Environment="HTTPS_PROXY=http://address:port"
 ```
 
-Assurez-vous également que l’adresse proxy statique correcte est remplie pour remplacer `address:port` .
+Assurez-vous également que l'adresse proxy statique correcte est remplie pour remplacer `address:port` .
 
-Si ce fichier est correct, essayez d’exécutez la commande suivante dans le terminal pour recharger Defender pour endpoint pour Linux et propager le paramètre :
+Si ce fichier est correct, essayez d'exécutez la commande suivante dans le terminal pour recharger Defender pour endpoint pour Linux et propager le paramètre :
 
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp
@@ -123,4 +123,4 @@ Si le problème persiste, contactez le support technique.
 
 ## <a name="resources"></a>Ressources
 
-- Pour plus d’informations sur la configuration du produit afin qu’il utilise un proxy statique, voir [Configurer Microsoft Defender pour endpoint](linux-static-proxy-configuration.md)pour la découverte de proxy statique.
+- Pour plus d'informations sur la configuration du produit afin qu'il utilise un proxy statique, voir [Configurer Microsoft Defender pour endpoint pour](linux-static-proxy-configuration.md)la découverte de proxy statique.

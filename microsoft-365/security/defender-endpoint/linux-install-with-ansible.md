@@ -1,7 +1,7 @@
 ---
 title: Déployer Microsoft Defender ATP pour Linux avec Ansible
 ms.reviewer: ''
-description: Décrit comment déployer Microsoft Defender ATP pour Linux à l’aide d’Ansible.
+description: Décrit comment déployer Microsoft Defender ATP pour Linux à l'aide d'Ansible.
 keywords: microsoft, defender, atp, linux, installation, déployer, désinstallation, casque, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a4dd551da8fcb38559360307a878edde3b3a1ba
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 48c34f2a8fb65cb0fc8ecbb616b9d041f61ae044
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587634"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688128"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-with-ansible"></a>Déployer Microsoft Defender pour endpoint pour Linux avec Ansible
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,11 +34,11 @@ ms.locfileid: "51587634"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Cet article explique comment déployer Defender pour endpoint pour Linux à l’aide d’Ansible. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
+Cet article explique comment déployer Defender pour endpoint pour Linux à l'aide d'Ansible. Un déploiement réussi nécessite l'exécution de toutes les tâches suivantes :
 
-- [Télécharger le package d’intégration](#download-the-onboarding-package)
+- [Télécharger le package d'intégration](#download-the-onboarding-package)
 - [Créer des fichiers YAML ansibles](#create-ansible-yaml-files)
 - [Déploiement](#deployment)
 - [References](#references)
@@ -47,10 +47,10 @@ Cet article explique comment déployer Defender pour endpoint pour Linux à l’
 
 Avant de commencer, consultez la page principale de [Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
-En outre, pour le déploiement Ansible, vous devez être familiarisé avec les tâches d’administration Ansible, configurer Ansible et savoir déployer des playbooks et des tâches. Ansible dispose de nombreuses façons d’effectuer la même tâche. Ces instructions supposent la disponibilité des modules Ansible pris en charge, tels que *apt* et *unarchive* pour vous aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d’informations, voir la [documentation Ansible.](https://docs.ansible.com/)
+En outre, pour le déploiement Ansible, vous devez être familiarisé avec les tâches d'administration Ansible, configurer Ansible et savoir déployer des playbooks et des tâches. Ansible dispose de nombreuses façons d'effectuer la même tâche. Ces instructions supposent la disponibilité des modules Ansible pris en charge, tels que *apt* et *unarchive* pour vous aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d'informations, voir la [documentation Ansible.](https://docs.ansible.com/)
 
-- Ansible doit être installé sur au moins un ordinateur (nous l’appeller l’ordinateur principal).
-- SSH doit être configuré pour un compte d’administrateur entre l’ordinateur principal et tous les clients, et il est recommandé d’utiliser l’authentification à clé publique.
+- Ansible doit être installé sur au moins un ordinateur (nous l'appeller l'ordinateur principal).
+- SSH doit être configuré pour un compte d'administrateur entre l'ordinateur principal et tous les clients, et il est recommandé d'utiliser l'authentification à clé publique.
 - Les logiciels suivants doivent être installés sur tous les clients :
   - sous-président
   - python-apt
@@ -69,17 +69,17 @@ En outre, pour le déploiement Ansible, vous devez être familiarisé avec les t
     ansible -m ping all
     ```
 
-## <a name="download-the-onboarding-package"></a>Télécharger le package d’intégration
+## <a name="download-the-onboarding-package"></a>Télécharger le package d'intégration
 
-Téléchargez le package d’intégration à partir du Centre de sécurité Microsoft Defender :
+Téléchargez le package d'intégration à partir du Centre de sécurité Microsoft Defender :
 
 1. Dans le Centre de sécurité Microsoft Defender, go to **Settings > Device Management > Onboarding**.
-2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
-3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
+2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d'exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
+3. Sélectionnez **Télécharger le package d'intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Capture d’écran du Centre de sécurité Microsoft Defender](images/atp-portal-onboarding-linux-2.png)
+    ![Capture d'écran du Centre de sécurité Microsoft Defender](images/atp-portal-onboarding-linux-2.png)
 
-4. À partir d’une invite de commandes, vérifiez que vous avez le fichier. Extrayons le contenu de l’archive :
+4. À partir d'une invite de commandes, vérifiez que vous avez le fichier. Extrayons le contenu de l'archive :
 
     ```bash
     ls -l
@@ -100,7 +100,7 @@ Téléchargez le package d’intégration à partir du Centre de sécurité Micr
 
 Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou une tâche.
 
-- Créez la tâche d’intégration : `onboarding_setup.yml`
+- Créez la tâche d'intégration : `onboarding_setup.yml`
 
     ```bash
     - name: Create MDATP directories
@@ -129,21 +129,21 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
 
 - Ajoutez le référentiel et la clé Defender for Endpoint.
 
-    Defender pour le point de terminaison pour Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
+    Defender pour le point de terminaison pour Linux peut être déployé à partir de l'un des canaux suivants (indiqué ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
 
     Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
-    Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise pour utiliser les *insiders-fast* ou *insider-slow*.
+    Afin d'afficher un aperçu des nouvelles fonctionnalités et de fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise pour utiliser les *insiders-fast* ou *insider-slow*.
 
     > [!WARNING]
-    > Le basculement du canal après l’installation initiale nécessite la réinstallation du produit. Pour basculer le canal de produit : désinstallez le package existant, configurez de nouveau votre appareil pour utiliser le nouveau canal et suivez les étapes de ce document pour installer le package à partir du nouvel emplacement.
+    > Le basculement du canal après l'installation initiale nécessite la réinstallation du produit. Pour basculer le canal de produit : désinstallez le package existant, configurez de nouveau votre appareil pour utiliser le nouveau canal et suivez les étapes de ce document pour installer le package à partir du nouvel emplacement.
 
-    Notez votre distribution et version et identifiez l’entrée la plus proche sous `https://packages.microsoft.com/config/` .
+    Notez votre distribution et version et identifiez l'entrée la plus proche sous `https://packages.microsoft.com/config/` .
 
     Dans les commandes suivantes, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées.
 
     > [!NOTE]
-    > Dans le cas d’Oracle Linux, *remplacez [distro]* par « rhel ».
+    > Dans le cas d'Oracle Linux, *remplacez [distro]* par « rhel ».
 
   ```bash
   - name: Add Microsoft APT key
@@ -174,10 +174,10 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
       baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
       gpgcheck: yes
       enabled: Yes
-  when: ansible_os_family == "RedHat"
+    when: ansible_os_family == "RedHat"
   ```
 
-- Créez les fichiers YAML d’installation et de désinstallation Ansible.
+- Créez les fichiers YAML d'installation et de désinstallation Ansible.
 
     - Pour les distributions basées sur apt, utilisez le fichier YAML suivant :
 
@@ -189,7 +189,8 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
           tasks:
             - include: ../roles/onboarding_setup.yml
             - include: ../roles/add_apt_repo.yml
-            - apt:
+            - name: Install MDATP
+              apt:
                 name: mdatp
                 state: latest
                 update_cache: yes
@@ -200,36 +201,39 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
         ```
         ```Output
         - hosts: servers
-        tasks:
-            - apt:
+          tasks:
+            - name: Uninstall MDATP
+              apt:
                 name: mdatp
                 state: absent
         ```
 
-    - Pour les distributions basées sur les yum, utilisez le fichier YAML suivant :
+    - Pour les distributions basées sur dnf, utilisez le fichier YAML suivant :
 
         ```bash
-        cat install_mdatp_yum.yml
+        cat install_mdatp_dnf.yml
         ```
         ```Output
         - hosts: servers
           tasks:
             - include: ../roles/onboarding_setup.yml
             - include: ../roles/add_yum_repo.yml
-            - yum:
-              name: mdatp
-              state: latest
-              enablerepo: packages-microsoft-com-prod-[channel]
+            - name: Install MDATP
+              dnf:
+                name: mdatp
+                state: latest
+                enablerepo: packages-microsoft-com-prod-[channel]
         ```
 
         ```bash
-        cat uninstall_mdatp_yum.yml
+        cat uninstall_mdatp_dnf.yml
         ```
         ```Output
         - hosts: servers
-        tasks:
-            - yum:
-               name: mdatp
+          tasks:
+            - name: Uninstall MDATP
+              dnf:
+                name: mdatp
                 state: absent
         ```
 
@@ -244,7 +248,7 @@ Exécutez maintenant les fichiers de tâches sous `/etc/ansible/playbooks/` ou d
     ```
 
 > [!IMPORTANT]
-> Lorsque le produit démarre pour la première fois, il télécharge les dernières définitions de logiciel anti-programme malveillant. Selon votre connexion Internet, cela peut prendre jusqu’à quelques minutes.
+> Lorsque le produit démarre pour la première fois, il télécharge les dernières définitions de logiciel anti-programme malveillant. Selon votre connexion Internet, cela peut prendre jusqu'à quelques minutes.
 
 - Validation/configuration :
 
@@ -261,20 +265,20 @@ Exécutez maintenant les fichiers de tâches sous `/etc/ansible/playbooks/` ou d
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
+## <a name="log-installation-issues"></a>Journaux des problèmes d'installation
 
-Pour [plus d’informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir problèmes d’installation des journaux.
+Pour [plus d'informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d'installation en cas d'erreur, voir problèmes d'installation des journaux.
 
-## <a name="operating-system-upgrades"></a>Mises à niveau du système d’exploitation
+## <a name="operating-system-upgrades"></a>Mises à niveau du système d'exploitation
 
-Lors de la mise à niveau de votre système d’exploitation vers une nouvelle version majeure, vous devez d’abord désinstaller Defender pour Endpoint pour Linux, installer la mise à niveau, puis reconfigurer Defender pour Endpoint pour Linux sur votre appareil.
+Lors de la mise à niveau de votre système d'exploitation vers une nouvelle version majeure, vous devez d'abord désinstaller Defender pour Endpoint pour Linux, installer la mise à niveau, puis reconfigurer Defender pour Endpoint pour Linux sur votre appareil.
 
 ## <a name="references"></a>Références
 
-- [Ajouter ou supprimer des référentiels YUM](https://docs.ansible.com/ansible/2.3/yum_repository_module.html)
+- [Ajouter ou supprimer des référentiels YUM](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 
-- [Gérer les packages avec le gestionnaire de package yum](https://docs.ansible.com/ansible/latest/modules/yum_module.html)
+- [Gérer les packages avec le gestionnaire de package dnf](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html)
 
-- [Ajouter et supprimer des référentiels APT](https://docs.ansible.com/ansible/latest/modules/apt_repository_module.html)
+- [Ajouter et supprimer des référentiels APT](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
-- [Gérer les packages apt](https://docs.ansible.com/ansible/latest/modules/apt_module.html)
+- [Gérer les packages apt](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
