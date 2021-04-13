@@ -1,7 +1,7 @@
 ---
 title: Inscrire Microsoft Defender ATP pour les appareils macOS dans Jamf Pro
 description: Inscrire Microsoft Defender ATP pour les appareils macOS dans Jamf Pro
-keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamfpro, macos,pépé, mojave, high sierra
+keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamfpro, macos,pérable, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ef6e387d4e945afb71f1fa6ecef9d78ba2d74a55
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ea71875dedf7e8706c9022420abd63bc5eb20c69
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185682"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689724"
 ---
-# <a name="enroll-microsoft-defender-for-endpoint-for-macos-devices-into-jamf-pro"></a>Inscrire Microsoft Defender pour endpoint pour les appareils macOS dans Jamf Pro 
+# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Inscrire Microsoft Defender pour le point de terminaison sur les appareils macOS dans Jamf Pro 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51185682"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="enroll-macos-devices"></a>Inscrire des appareils macOS
 
@@ -42,21 +42,21 @@ Il existe plusieurs méthodes pour être inscrit à JamF.
 
 Cet article vous guide sur deux méthodes :
 
-- [Méthode 1 : Invitations à l’inscription](#enrollment-method-1-enrollment-invitations)
-- [Méthode 2 : pré-étape des inscriptions](#enrollment-method-2-prestage-enrollments)
+- [Méthode 1 : Invitations à l'inscription](#enrollment-method-1-enrollment-invitations)
+- [Méthode 2 : Pré-étape des inscriptions](#enrollment-method-2-prestage-enrollments)
 
-Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordinateur.](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)
+Pour obtenir la liste complète, voir [à propos de l'inscription de l'ordinateur.](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)
 
 
-## <a name="enrollment-method-1-enrollment-invitations"></a>Méthode d’inscription 1 : invitations à l’inscription
+## <a name="enrollment-method-1-enrollment-invitations"></a>Méthode d'inscription 1 : invitations à l'inscription
 
-1. Dans le tableau de bord Jamf Pro, accédez aux **invitations d’inscription.**
+1. Dans le tableau de bord Jamf Pro, accédez aux **invitations d'inscription.**
 
     ![Image des paramètres de configuration1](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
 2. Sélectionnez **+ Nouveau**.
 
-    ![Fermeture d’une description de logo générée automatiquement](images/b6c7ad56d50f497c38fc14c1e315456c.png)
+    ![Fermeture d'une description de logo générée automatiquement](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
 3. Dans **Spécifier les destinataires de l'>** sous Adresses de messagerie, entrez les **adresses** de messagerie des destinataires.
 
@@ -68,7 +68,7 @@ Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordin
 
     ![Image des paramètres de configuration4](images/4922c0fcdde4c7f73242b13bf5e35c19.png)
 
-4. Configurez le message pour l’invitation.
+4. Configurez le message pour l'invitation.
 
     ![Image des paramètres de configuration5](images/ce580aec080512d44a37ff8e82e5c2ac.png)
 
@@ -78,9 +78,9 @@ Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordin
 
     ![Image des paramètres de configuration8](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
 
-## <a name="enrollment-method-2-prestage-enrollments"></a>Enrollment Method 2: Prestage Enrollments
+## <a name="enrollment-method-2-prestage-enrollments"></a>Méthode d'inscription 2 : pré-étape des inscriptions
 
-1. Dans le tableau de bord Jamf Pro, accédez à **la préparation des inscriptions.**
+1. Dans le tableau de bord Jamf Pro, accédez à **pré-étape des inscriptions.**
 
     ![Image des paramètres de configuration9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
@@ -88,11 +88,11 @@ Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordin
 
 ## <a name="enroll-macos-device"></a>Inscrire un appareil macOS
 
-1. Sélectionnez **Continuer** et installez le certificat d’ac à partir d’une **fenêtre Préférences système.**
+1. Sélectionnez **Continuer** et installez le certificat d'ac à partir d'une **fenêtre Préférences système.**
 
     ![Image de Jamf Pro enrollment1](images/jamfpro-ca-certificate.png)
 
-2. Une fois le certificat d’ac installé, revenir à la fenêtre du navigateur, puis **sélectionnez Continuer** et installer le profil MDM. 
+2. Une fois le certificat d'ac installé, revenir à la fenêtre du navigateur, puis **sélectionnez Continuer** et installer le profil MDM. 
 
     ![Image de Jamf Pro enrollment2](images/jamfpro-install-mdm-profile.png)
 
@@ -100,7 +100,7 @@ Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordin
 
     ![Image de Jamf Pro enrollment3](images/jamfpro-download.png)
 
-4. Sélectionnez **Continuer** pour poursuivre l’installation du profil MDM. 
+4. Sélectionnez **Continuer** pour poursuivre l'installation du profil MDM. 
 
     ![Image de Jamf Pro enrollment4](images/jamfpro-install-mdm.png)
 
