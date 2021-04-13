@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6bf9691f390173ec86dcadd19707c980aa66336f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1f20a81f5205c5734387214822fa87ac5cf9a09c
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687768"
+ms.locfileid: "51698207"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender pour point de terminaison sur iOS
 
@@ -39,7 +39,7 @@ ms.locfileid: "51687768"
 **Microsoft Defender pour le point de terminaison sur iOS** offre une protection contre le hameçonnage et les connexions réseau non sécurisées à partir de sites web, de courriers électroniques et d'applications. Toutes les alertes seront disponibles via un seul volet de verre dans le Centre de sécurité Microsoft Defender. Le portail offre aux équipes de sécurité une vue centralisée des menaces sur les appareils iOS, ainsi que d'autres plateformes.
 
 > [!CAUTION]
-> L'exécution d'autres produits de protection de point de terminaison tiers avec Defender for Endpoint pour iOS est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
+> L'exécution d'autres produits de protection des points de terminaison tiers avec Defender for Endpoint sur iOS est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
 
 ## <a name="pre-requisites"></a>Conditions préalables
 
@@ -58,7 +58,7 @@ ms.locfileid: "51687768"
 - Accès au portail Centre de sécurité Microsoft Defender.
 
     > [!NOTE]
-    > Microsoft Intune est la seule solution de gestion des périphériques mobiles (MDM) prise en charge pour le déploiement de Microsoft Defender pour Endpoint sur iOS. Actuellement, seuls les appareils inscrits sont pris en charge pour l'application de Defender for Endpoint pour les stratégies de conformité des appareils liées à iOS dans Intune.
+    > Microsoft Intune est la seule solution de gestion des périphériques mobiles (MDM) prise en charge pour le déploiement de Microsoft Defender pour Endpoint sur iOS. Actuellement, seuls les appareils inscrits sont pris en charge pour l'application de Defender for Endpoint sur les stratégies de conformité des appareils liées à iOS dans Intune.
 
 - Accès au [Centre d'administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), pour déployer l'application pour les groupes d'utilisateurs inscrits dans votre organisation.
 
@@ -69,7 +69,7 @@ ms.locfileid: "51687768"
 - L'appareil est inscrit avec [l'application Portail d'entreprise Intune.](https://apps.apple.com/us/app/intune-company-portal/id719171358)
 
 > [!NOTE]
-> **Microsoft Defender ATP (Microsoft Defender for Endpoint) pour iOS est désormais disponible sur [l'App Store d'Apple.](https://aka.ms/mdatpiosappstore)**
+> **Microsoft Defender ATP (Microsoft Defender for Endpoint) sur iOS est désormais disponible sur [l'App Store d'Apple.](https://aka.ms/mdatpiosappstore)**
 
 ## <a name="installation-instructions"></a>Instructions d'installation
 
@@ -85,4 +85,4 @@ Pour plus d'informations, [voir Déployer Microsoft Defender pour endpoint sur i
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Déployer Microsoft Defender pour le point de terminaison sur iOS](ios-install.md)
-- [Configurer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+- [Configurer Microsoft Defender pour endpoint sur les fonctionnalités iOS](ios-configure-features.md)

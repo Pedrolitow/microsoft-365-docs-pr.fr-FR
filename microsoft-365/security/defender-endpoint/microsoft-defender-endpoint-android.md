@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32c42691b3a2b43f9740da26084bf45af0ee80f5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8311cb703bc5232e1421d19892fec9cdbc94b052
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687780"
+ms.locfileid: "51698189"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison sur Android
 
@@ -36,10 +36,10 @@ ms.locfileid: "51687780"
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Defender pour Endpoint pour Android.
+Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Defender pour Endpoint sur Android.
 
 > [!CAUTION]
-> L'exécution d'autres produits de protection de point de terminaison tiers avec Defender pour Endpoint pour Android est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
+> L'exécution d'autres produits de protection des points de terminaison tiers avec Defender for Endpoint sur Android est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
 
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>Comment installer Microsoft Defender pour le point de terminaison sur Android
@@ -85,7 +85,7 @@ Pour plus d'informations, voir [Déployer Microsoft Defender pour endpoint sur A
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>Comment configurer Microsoft Defender pour endpoint sur Android
 
-Des instructions sur la configuration de Microsoft Defender pour endpoint sur les fonctionnalités Android sont disponibles dans [Configurer Microsoft Defender pour endpoint sur les fonctionnalités Android.](android-configure.md)
+Des instructions sur la configuration de Microsoft Defender pour le point de terminaison sur les fonctionnalités Android sont disponibles dans Configurer Microsoft Defender pour le point de terminaison [sur les fonctionnalités Android.](android-configure.md)
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Symantec vers Microsoft Defender pour le point de terminaison - Phase 1, Préparation
-description: Il s'agit de la phase 1, Préparation, de la migration de Symantec vers Microsoft Defender pour Endpoint.
+description: Il s'agit de la phase 1, Préparation, de la migration de Symantec vers Microsoft Defender pour endpoint.
 keywords: migration, protection avancée contre les menaces Windows Defender, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 4cf22ff668859757d3a3ccf21d81751f526b97f7
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8c8f91448415bc1e9490706ee23bd8cae7f51a63
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687636"
+ms.locfileid: "51698243"
 ---
 # <a name="migrate-from-symantec---phase-1-prepare-for-your-migration"></a>Migrer à partir de Symantec - Phase 1 : Préparer votre migration
 
@@ -39,12 +39,12 @@ ms.locfileid: "51687636"
 |*Vous êtes là !*| | |
 
 
-**Bienvenue dans la phase de préparation [de la migration de Symantec vers Microsoft Defender pour point de terminaison.](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)** 
+**Bienvenue dans la phase de préparation [de la migration de Symantec vers Microsoft Defender pour le point de terminaison.](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)** 
 
 Cette phase de migration comprend les étapes suivantes :
 1. [Obtenir Microsoft Defender pour le point de terminaison.](#get-microsoft-defender-for-endpoint)
 2. [Accorder l'accès au Centre de sécurité Microsoft Defender.](#grant-access-to-the-microsoft-defender-security-center)
-3. [Configurez les paramètres de proxy et de connectivité Internet de l'appareil.](#configure-device-proxy-and-internet-connectivity-settings)
+3. [Configurer les paramètres de proxy et de connectivité Internet de l'appareil.](#configure-device-proxy-and-internet-connectivity-settings)
 
 ## <a name="get-microsoft-defender-for-endpoint"></a>Obtenir Microsoft Defender pour le point de terminaison
 
@@ -62,7 +62,7 @@ Pour commencer, vous devez avoir Microsoft Defender pour point de terminaison, a
 
 ## <a name="grant-access-to-the-microsoft-defender-security-center"></a>Accorder l'accès au Centre de sécurité Microsoft Defender
 
-Le Centre de sécurité Microsoft Defender ( ) est l'endroit où vous accédez et configurez les fonctionnalités et fonctionnalités de [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Microsoft Defender pour point de terminaison. Pour plus d'informations, voir [Vue d'ensemble du Centre de sécurité Microsoft Defender.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)
+Le Centre de sécurité Microsoft Defender ( ) est l'endroit où vous accédez et configurez les fonctionnalités de [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Microsoft Defender pour le point de terminaison. Pour plus d'informations, voir [Vue d'ensemble du Centre de sécurité Microsoft Defender.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)
 
 Les autorisations sur le Centre de sécurité Microsoft Defender peuvent être accordées à l'aide d'autorisations de base ou d'un contrôle d'accès basé sur un rôle (RBAC). Nous vous recommandons d'utiliser RBAC afin de contrôler plus granulairement les autorisations.
 
@@ -80,11 +80,11 @@ Pour activer la communication entre vos appareils et Microsoft Defender pour le 
 
 |Fonctionnalités  | Système d’exploitation | Ressources |
 |:----|:----|:---|
-|[Détection et réponse des points de terminaison](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information/) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 ou une ultérieure](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)  |[Configurer les paramètres de connectivité Internet et proxy de l'ordinateur](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet) |
+|[Détection et réponse des points de terminaison](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information/) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 ou une ultérieure](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)  |[Configurer les paramètres de proxy et de connectivité Internet de l'ordinateur](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet) |
 |EDR |- [Windows Server 2016](https://docs.microsoft.com/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>- [Windows Server 2012 R2](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows 8.1](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows 7 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configurer les paramètres de proxy et de connectivité Internet](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |macOS : <br/>- 10.15 (Caserline)<br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra)  |[Microsoft Defender pour point de terminaison sur macOS : connexions réseau](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
+|EDR  |macOS : <br/>- 10.15 (Îles)<br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra)  |[Microsoft Defender pour point de terminaison sur macOS : connexions réseau](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
 |[Antivirus Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information/) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 ou une ultérieure](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) <br/>- [Windows Server 2016](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-2016) |[Configurer et valider les connexions réseau à un antivirus Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)<br/> |
-|Antivirus |macOS : <br/>- 10.15 (Îles)<br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra) |[Microsoft -Defender pour point de terminaison pour Mac : connexions réseau](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
+|Antivirus |macOS : <br/>- 10.15 (Îles)<br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra) |[Microsoft Defender pour point de terminaison sur Mac : connexions réseau](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
 |Antivirus |Linux : <br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS ou un LTS supérieur<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Microsoft Defender pour point de terminaison sur Linux : connexions réseau](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux#network-connections)  |
 
 ## <a name="next-step"></a>Étape suivante
