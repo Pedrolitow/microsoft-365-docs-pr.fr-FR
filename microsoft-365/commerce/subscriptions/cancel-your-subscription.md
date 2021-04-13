@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Découvrez comment annuler un abonnement payant ou une version d’évaluation de Microsoft 365 for business.
 ms.date: ''
-ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615386"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644643"
 ---
 # <a name="cancel-your-subscription"></a>Annuler un abonnement
 
@@ -47,6 +47,15 @@ Si vous avez ajouté votre propre nom de domaine pour l’utiliser avec votre ab
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+2. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
+3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
+4. Sélectionnez **Enregistrer**.
+
+Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md)
+
+> [!NOTE]
+> Si vous supprimez explicitement un abonnement, cela ignore les étapes Expiré et Désactivé, et les données et le contenu SharePoint Online, dont OneDrive, sont supprimés immédiatement.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"

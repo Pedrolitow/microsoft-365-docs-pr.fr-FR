@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: "Découvrez la configuration d'une boîte de réception prioritaire pour tout ou partie des utilisateurs de votre organisation. "
-ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914281"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644511"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurez la boîte de réception Prioritaire pour tous les membres de votre organisation
 
-  Si vous êtes responsable de la configuration de messagerie pour TOUS LES UTILISATEURS de votre entreprise, cet article s’adresse à vous ! Il explique comment la personnaliser ou la désactiver pour votre entreprise et apporte des réponses aux [questions fréquemment posées](#faq-for-focused-inbox).  <br/> Si vous voulez désactiver la boîte de réception Prioritaire uniquement pour vous, consultez l’article [Désactiver la boîte de réception Prioritaire](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
+Si vous êtes responsable de la configuration de messagerie pour TOUS LES UTILISATEURS de votre entreprise, cet article s’adresse à vous ! Il explique comment la personnaliser ou la désactiver pour votre entreprise et apporte des réponses aux [questions fréquemment posées](#faq-for-focused-inbox).
+
+Si vous voulez désactiver la boîte de réception Prioritaire uniquement pour vous, consultez l’article [Désactiver la boîte de réception Prioritaire](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
 
 Si vous souhaitez que vos utilisateurs reçoivent les e-mails spécifiques à l’entreprise, comme les e-mails des services Ressources humaines et Paie, vous pouvez configurer la boîte de réception Prioritaire pour que ceux-ci apparaissent dans l’affichage Prioritaire. Vous pouvez également faire apparaître la boîte de réception Prioritaire dans les boîtes aux lettres des utilisateurs de votre organisation.
   
@@ -37,7 +39,7 @@ Si vous souhaitez que vos utilisateurs reçoivent les e-mails spécifiques à l�
 
 Pour activer ou désactiver la boîte de réception Prioritaire pour tous les utilisateurs de votre organisation, vous devez utiliser PowerShell. Vous souhaitez effectuer cette opération dans le Centre d'administration Microsoft 365 ? Informez-en notre équipe Ingénierie. **[Votez ici !](https://go.microsoft.com/fwlink/?linkid=862489)**
   
- **Pour désactiver la boîte de réception Prioritaire :**
+**Pour désactiver la boîte de réception Prioritaire :**
   
 L’exemple PowerShell suivant **désactive** la boîte de réception Prioritaire au sein de votre organisation. Mais cela n’empêche pas vos utilisateurs d’y accéder. S’ils le souhaitent, ils peuvent toujours réactiver la boîte de réception Prioritaire sur chacun de leurs clients.  
   
@@ -47,9 +49,9 @@ L’exemple PowerShell suivant **désactive** la boîte de réception Prioritair
 
 3. Exécutez l’applet de commande **Get-OrganizationConfig**. 
 
- ``` PowerShell
-Get-OrganizationConfig
- ```
+    ```powershell
+    Get-OrganizationConfig
+    ```
 
 4. Recherchez **FocusedInboxOn** pour afficher son paramètre actuel : 
 
@@ -57,20 +59,20 @@ Get-OrganizationConfig
   
 5. Exécutez l'applet de commande suivante pour désactiver la boîte de réception Prioritaire.
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-OrganizationConfig -FocusedInboxOn $false
+    ```
 
 6. Exécutez de nouveau l’applet de commande **Get-OrganizationConfig** et vous verrez que FocusedInboxOn est défini sur $false, ce qui signifie qu’elle a été désactivée. 
 
- **Pour activer la boîte de réception Prioritaire :**
+**Pour activer la boîte de réception Prioritaire :**
   
 - À l’étape 5 ci-dessus, exécutez l’applet de commande suivante pour activer la boîte de réception Prioritaire.
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $true
- ```
-
+  ```powershell
+  Set-OrganizationConfig -FocusedInboxOn $true
+  ```
+    
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>Que voient les utilisateurs une fois la boîte de réception Prioritaire activée ? 
 
 Vos utilisateurs ne verront l’affichage Prioritaire qu’après avoir fermé et redémarré Outlook. Un conseil leur donnant la possibilité d’utiliser la nouvelle boîte de réception Prioritaire apparaît alors dans l’interface utilisateur d’Outlook.
@@ -85,7 +87,7 @@ Lorsqu’un utilisateur décide d’utiliser la boîte de réception Prioritaire
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>Activer ou désactiver la boîte de réception Prioritaire pour des utilisateurs spécifiques
 
-Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews, de l’organisation Contoso. Mais cela ne l’empêche pas d’y accéder. S’il le souhaite, il peut toujours réactiver la boîte de réception Prioritaire sur chacun de ses clients. 
+Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews, de l'organisation Contoso. Mais cela ne l'empêche pas d'y accéder. S'il le souhaite, il peut toujours réactiver la boîte de réception Prioritaire sur chacun de ses clients. 
   
 1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -93,9 +95,9 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
 
 3. Exécutez l’applet de commande **Get-FocusedInbox**, par exemple : 
 
- ``` PowerShell
- Get-FocusedInbox -Identity <tim@contoso.com>
- ```
+    ```powershell
+    Get-FocusedInbox -Identity <tim@contoso.com>
+    ```
 
 4. Recherchez FocusedInboxOn pour afficher son paramètre actuel :
 
@@ -103,15 +105,15 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
   
 5. Exécutez l'applet de commande suivante pour désactiver la boîte de réception Prioritaire :
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
+    ```
 
-6. OU, exécutez l’applet de commande suivante pour l’activer :
+    OU, exécutez l’applet de commande suivante pour l’activer :
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
+    ```
 
 ## <a name="use-the-ui-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Utilisez l’interface utilisateur pour créer une règle de transport permettant de diriger les messages e-mail vers l’affichage Prioritaire pour tous vos utilisateurs
 
@@ -125,8 +127,8 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
 
     ![paie focusedinbox](../../media/focusedinbox-transport-rule.PNG)
 
-> [!NOTE]
-> Dans cet exemple, le texte de la valeur de l’en-tête du message est **X-MS-Exchange-Organization-BypassFocusedInbox**.
+    > [!NOTE]
+    > Dans cet exemple, le texte de la valeur de l’en-tête du message est **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Utilisez PowerShell pour créer une règle de transport permettant de diriger les messages e-mail vers l’affichage Prioritaire pour tous vos utilisateurs
 
@@ -136,9 +138,9 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
 
 3. Exécutez la commande suivante pour remettre tous les messages du « Service Paie », par exemple, à la boîte de réception Prioritaire.
 
- ``` PowerShell
- New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
- ```
+    ```powershell
+    New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
+    ```
 
 > [!IMPORTANT]
 > Dans cet exemple, « X-MS-Exchange-Organization-BypassFocusedInbox » et « true » sont sensibles à la casse.
@@ -147,6 +149,10 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
 Vérifiez les en-têtes des messages e-mail pour déterminer si les messages sont acheminés vers la boîte de réception suite au contournement de la règle de transport Boîte de réception Prioritaire. Sélectionnez un e-mail dans une boîte aux lettres de votre organisation sur laquelle la règle de transport Boîte de réception Prioritaire est appliquée. Examinez les en-têtes du message. L’en-tête suivant doit y figurer : **X-MS-Exchange-Organization-BypassFocusedInbox: true**. Cela signifie que le contournement fonctionne. Consultez l'article [Afficher les informations d'en-tête Internet des messages électroniques](https://go.microsoft.com/fwlink/p/?LinkId=822530) pour plus d'informations sur la façon de rechercher des informations d'en-tête.
+
+### <a name="what-will-the-user-see"></a>Que verra l’utilisateur ?
+
+Si une règle de transport est en place, une notification s’affichera pour le remplacement. Outlook sur le web désactivera l’option « Toujours déplacer vers Autres » et affichera une info-bulle. Les clients Outlook sur la version de bureau autoriseront la sélection de l’option « Toujours déplacer vers Autres » et afficheront une zone de dialogue.
 
 ## <a name="turn-onoff-clutter"></a>Activer/désactiver la fonctionnalité Courrier pêle-mêle
 
@@ -201,3 +207,4 @@ Deux applets de commande permettent de contrôler la boîte de réception Priori
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>Puis-je exécuter un script pour voir qui a activé la boîte de réception Prioritaire ?
 
 Non et c’est tout à fait normal. L’activation de la boîte de réception Prioritaire est en effet un paramètre côté client. De ce fait, tout ce que l’applet de commande peut faire, c’est vous indiquer si la boîte aux lettres de l’utilisateur est éligible pour l’expérience client. Il est possible qu’elle soit simultanément activée dans certains clients et désactivée dans d’autres, par exemple, activée dans les applications Outlook et Outlook Mobile, mais désactivée dans Outlook sur le web.
+

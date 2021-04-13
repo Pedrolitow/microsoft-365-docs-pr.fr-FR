@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérez les commentaires que vos utilisateurs peuvent envoyer à Microsoft concernant les produits Microsoft.
-ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650015"
+ms.locfileid: "51657006"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Gérer les commentaires Microsoft pour votre organisation
 
-En tant qu’administrateur d’une organisation Microsoft 365, il existe désormais plusieurs stratégies pour vous aider à gérer la collection de commentaires et l’expérience d’engagement des clients de vos utilisateurs lors de l’utilisation des applications Microsoft 365. Vous pouvez créer et utiliser des groupes Azure Active Directory existants dans votre organisation pour chacune de ces stratégies. Grâce à ces politiques, vous pouvez contrôler la façon dont les différents services de votre organisation peuvent envoyer des commentaires à Microsoft. Microsoft examine tous les commentaires envoyés par les clients et utilise ces commentaires pour améliorer le produit. La conservation des expériences **de** commentaires vous permet de voir ce que vos utilisateurs pensent des produits Microsoft qu’ils utilisent. Les commentaires que nous collectons auprès de vos utilisateurs seront bientôt disponibles dans le Centre d’administration Microsoft 365. »
+En tant qu’administrateur d’une organisation Microsoft 365, il existe désormais plusieurs stratégies pour vous aider à gérer la collection de commentaires et l’expérience d’engagement des clients de vos utilisateurs lors de l’utilisation des applications Microsoft 365. Vous pouvez créer et utiliser des groupes Azure Active Directory existants dans votre organisation pour chacune de ces stratégies. Grâce à ces politiques, vous pouvez contrôler la façon dont les différents services de votre organisation peuvent envoyer des commentaires à Microsoft. Microsoft examine tous les commentaires envoyés par les clients et utilise ces commentaires pour améliorer le produit. La conservation des expériences **de** commentaires vous permet de voir ce que vos utilisateurs pensent des produits Microsoft qu’ils utilisent. Les commentaires que nous collectons auprès de vos utilisateurs seront bientôt disponibles dans le Centre d’administration Microsoft 365.
 
 Pour en savoir plus sur les types de commentaires et sur la façon dont Microsoft utilise les commentaires des utilisateurs, voir En savoir plus sur les commentaires [de Microsoft pour votre organisation.](../misc/feedback-user-control.md)
 
