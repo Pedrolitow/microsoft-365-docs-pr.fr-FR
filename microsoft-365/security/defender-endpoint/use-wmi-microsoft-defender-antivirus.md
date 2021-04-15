@@ -15,12 +15,14 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 8d24a08ae3b8db710ca1727821690e5c87f056c3
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 3a47a71c1d8ce416e2eacc9ca3aa47ef6c4bb499
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690531"
+ms.locfileid: "51749841"
 ---
 # <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser Windows Management Instrumentation (WMI) pour configurer et gérer l'Antivirus Microsoft Defender
 
@@ -33,7 +35,7 @@ ms.locfileid: "51690531"
 
 Windows Management Instrumentation (WMI) est une interface de script qui vous permet de récupérer, modifier et mettre à jour les paramètres.
 
-Pour en savoir plus sur WMI, consultez la bibliothèque [Microsoft Developer Network System Administration.](/windows/win32/wmisdk/wmi-start-page)
+Pour en savoir plus sur WMI, consultez la bibliothèque [d'administration du](/windows/win32/wmisdk/wmi-start-page)système réseau de développement Microsoft.
 
 L'Antivirus Microsoft Defender possède un certain nombre de classes WMI spécifiques qui peuvent être utilisées pour effectuer la plupart des mêmes fonctions que la stratégie de groupe et d'autres outils de gestion. La plupart des classes sont analogues aux [cmdlets Defender PowerShell.](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 

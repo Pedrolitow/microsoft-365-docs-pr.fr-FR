@@ -15,12 +15,14 @@ ms.date: 10/26/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 16cd8492ceedaba200dea70a29c83401467ae8ee
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 647bda97cfbec5e1583ef66ebd3e9d445371d540
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690538"
+ms.locfileid: "51749865"
 ---
 # <a name="use-microsoft-endpoint-manager-and-microsoft-intune-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser Microsoft Endpoint Manager et Microsoft Intune pour configurer et gérer l'Antivirus Microsoft Defender
 
@@ -33,15 +35,15 @@ ms.locfileid: "51690538"
 
 Si vous utilisiez Microsoft Endpoint Manager ou Microsoft Intune pour gérer les points de terminaison sur votre réseau, vous pouvez désormais utiliser Microsoft Endpoint Manager pour gérer les analyses de l'Antivirus Microsoft Defender.
 
-1. Dans le Centre d'administration Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), accédez **à Sécurité des points de terminaison.**
+1. Dans le Centre d'administration Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), accédez à **Sécurité des points de terminaison.**
 
 2. Under **Manage**, choose **Antivirus**.
 
-3. Sélectionnez votre stratégie Antivirus Microsoft Defender. 
+3. Sélectionnez votre stratégie antivirus Microsoft Defender. 
 
 4. Under **Manage**, choose **Properties**.
 
-5. En de **côté des paramètres de configuration,** choisissez **Modifier.**
+5. En de côté **des paramètres de configuration,** choisissez **Modifier.**
 
 6. Développez  la section Analyse, puis examinez ou modifiez vos paramètres d'analyse.
 

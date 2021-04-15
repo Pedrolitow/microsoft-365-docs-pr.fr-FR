@@ -7,18 +7,18 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3415d0caf0192b202cc4f471d5a9bf9051c3878d
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d9452b6d2eeaad3880894b9ec66c8bc71797b429
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690399"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764602"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus Microsoft Defender sur Windows Server
 
@@ -35,7 +35,7 @@ L'Antivirus Microsoft Defender est disponible sur les éditions/versions suivant
 
 Dans certains cas, l'Antivirus Microsoft Defender est appelé *Endpoint Protection*; toutefois, le moteur de protection est le même. Bien que les fonctionnalités, la configuration et la gestion soient en grande partie identiques pour l'Antivirus Microsoft Defender sur [Windows 10,](microsoft-defender-antivirus-in-windows-10.md)il existe quelques différences clés sur Windows Server :
 
-- Dans Windows Server, [les exclusions automatiques](configure-server-exclusions-microsoft-defender-antivirus.md) sont appliquées en fonction de votre rôle serveur défini.
+- Dans Windows Server, les [exclusions automatiques](configure-server-exclusions-microsoft-defender-antivirus.md) sont appliquées en fonction de votre rôle serveur défini.
 - Dans Windows Server, l'Antivirus Microsoft Defender ne se désactive pas automatiquement si vous exécutez un autre produit antivirus.
 
 ## <a name="the-process-at-a-glance"></a>Le processus en un clin d’œil
@@ -47,7 +47,7 @@ Le processus de configuration et d'exécution de l'Antivirus Microsoft Defender 
 3. [Vérifiez que l'Antivirus Microsoft Defender est en cours d'exécution.](#verify-microsoft-defender-antivirus-is-running)
 4. [Mettez à jour votre intelligence de sécurité anti-programme malveillant.](#update-antimalware-security-intelligence)
 5. (Selon les besoins) [Envoyer des exemples.](#submit-samples)
-6. (Selon les besoins) [Configurez les exclusions automatiques.](#configure-automatic-exclusions)
+6. (Selon les besoins) [Configurer les exclusions automatiques.](#configure-automatic-exclusions)
 7. (Uniquement si nécessaire) [Définissez l'Antivirus Microsoft Defender sur le mode passif.](#need-to-set-microsoft-defender-antivirus-to-passive-mode)
 
 ## <a name="enable-the-user-interface-on-windows-server"></a>Activer l'interface utilisateur sur Windows Server
@@ -121,7 +121,7 @@ La `sc query` commande retourne des informations sur le service Antivirus Micros
 
 Pour obtenir des informations de sécurité contre les programmes malveillants mises à jour, le service Windows Update doit être en cours d'exécution. Si vous utilisez un service de gestion des mises à jour, tel que Windows Server Update Services (WSUS), assurez-vous que les mises à jour de l'intelligence de sécurité antivirus Microsoft Defender sont approuvées pour les ordinateurs que vous gérez.
 
-Par défaut, Windows Update ne télécharge pas et n'installe pas automatiquement les mises à jour sur Windows Server 2019 ou Windows Server 2016. Vous pouvez modifier cette configuration à l'aide de l'une des méthodes suivantes :
+Par défaut, Windows Update ne télécharge et n'installe pas automatiquement les mises à jour sur Windows Server 2019 ou Windows Server 2016. Vous pouvez modifier cette configuration à l'aide de l'une des méthodes suivantes :
 
 
 |Méthode  |Description  |
@@ -153,7 +153,7 @@ La soumission d'exemples permet à Microsoft de collecter des exemples de logici
 
 1. Examinez le [guide de soumission.](/windows/security/threat-protection/intelligence/submission-guide)
 
-2. Visitez [l'exemple de portail de soumission](https://www.microsoft.com/wdsi/filesubmission)et soumettez votre fichier.
+2. Visitez le [portail de soumission d'exemples](https://www.microsoft.com/wdsi/filesubmission)et envoyez votre fichier.
 
 
 ### <a name="enable-automatic-sample-submission"></a>Activer l'envoi automatique d'échantillons
@@ -179,7 +179,7 @@ Si vous utilisez un produit antivirus non Microsoft comme solution antivirus pri
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>Définir l'Antivirus Microsoft Defender en mode passif à l'aide d'une clé de Registre
 
-Si vous utilisez Windows Server, version 1803 ou Windows Server 2019, vous pouvez définir l'Antivirus Microsoft Defender sur le mode passif en fixant la clé de Registre suivante :
+Si vous utilisez Windows Server, version 1803 ou Windows Server 2019, vous pouvez définir l'Antivirus Microsoft Defender sur le mode passif en réglant la clé de Registre suivante :
 - Chemin d'accès : `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Nom : `ForcePassiveMode`
 - Type : `REG_DWORD`
@@ -193,7 +193,7 @@ Si vous utilisez Windows Server, version 1803 ou Windows Server 2019, vous pouve
 
     Si vous supprimez **Windows Defender** vous-même sous la section **Fonctionnalités Windows Defender,** vous serez invité à supprimer l'interface utilisateur graphique de l'option d'interface **Windows Defender**. 
     
-    L'Antivirus Microsoft Defender s'exécute toujours **normalement** sans l'interface utilisateur, mais l'interface utilisateur ne peut pas être activée si vous désactivez la fonctionnalité d'Windows Defender principale.
+    L'Antivirus Microsoft Defender s'exécute toujours **normalement** sans l'interface utilisateur, mais l'interface utilisateur ne peut pas être activée si vous désactivez la fonctionnalité Windows Defender principal.
 
 ### <a name="turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell"></a>Désactiver l'interface utilisateur de l'Antivirus Microsoft Defender à l'aide de PowerShell
 
@@ -205,7 +205,7 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 ### <a name="are-you-using-windows-server-2016"></a>Utilisez-vous Windows Server 2016 ?
 
-Si vous utilisez Windows Server 2016 et un logiciel anti-programme malveillant/antivirus tiers qui n'est pas proposé ou développé par Microsoft, vous devez désactiver/désinstaller l'Antivirus Microsoft Defender. 
+Si vous utilisez Windows Server 2016 et un produit antivirus/anti-programme malveillant tiers qui n'est pas proposé ou développé par Microsoft, vous devez désactiver/désinstaller l'Antivirus Microsoft Defender. 
 
 > [!NOTE]
 > Vous ne pouvez pas désinstaller l'application Sécurité Windows, mais vous pouvez désactiver l'interface avec ces instructions.

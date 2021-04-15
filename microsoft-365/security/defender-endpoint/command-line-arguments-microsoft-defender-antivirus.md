@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,12 +14,12 @@ ms.reviewer: ksarens
 manager: dansimp
 ms.date: 03/19/2021
 ms.technology: mde
-ms.openlocfilehash: 2b20227ac27b90d142d263dfa4522aa41319b9d5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1b357f7c1e02211f3949383a380666cb7444f814
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690467"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764626"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer l'Antivirus Microsoft Defender à l'aide de lmpcmdrun.exe de ligne de commande Microsoft Defender
 
@@ -70,7 +70,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |Message d’erreur | Raison possible
 |:----|:----|
-| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | Le service Antivirus Microsoft Defender est désactivé. Activez le service et essayez à nouveau. <br>   **Remarque :**  Dans Windows 10 1909 ou une ancienne, et Windows Server 2019 ou une ancienne, le service était appelé « service antivirus Windows Defender ».|
+| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | Le service Antivirus Microsoft Defender est désactivé. Activez le service et essayez à nouveau. <br>   **Remarque :**  Dans Windows 10 1909 ou une ancienne, et Windows Server 2019 ou une ancienne, le service était appelé service « antivirus Windows Defender ».|
 | `0x80070667` | Vous exécutez la commande à partir d'un ordinateur qui est `-ValidateMapsConnection` Windows 10 version 1607 ou antérieure, ou Windows Server 2016 ou une version antérieure. Exécutez la commande à partir d'un ordinateur windows 10 version 1703 ou plus récente, ou windows Server 2019 ou version plus récente.|
 | `'MpCmdRun' is not recognized as an internal or external command, operable program or batch file.` | L'outil doit être exécuté à partir de : ou (où peut différer étant donné que les mises à jour de plateforme `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` sont `2012.4-0` mensuelles à l'exception de mars)|
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)` | Privilèges insuffisants. Utilisez l'invite de commandes (cmd.exe) en tant qu'administrateur.|

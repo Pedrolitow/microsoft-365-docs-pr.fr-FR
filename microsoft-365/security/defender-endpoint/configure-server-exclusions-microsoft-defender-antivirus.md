@@ -9,18 +9,18 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 02/10/2021
-ms.openlocfilehash: 555daac32b202b0b9f46c4f19fa6e4b04bcadda3
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 507edb980f671b2f39403cc41e540150f5e82891
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690316"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764340"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer les exclusions de l'Antivirus Microsoft Defender sur Windows Server
 
@@ -43,14 +43,14 @@ Outre les exclusions automatiques définies par le rôle serveur, vous pouvez aj
 
 Gardez les points importants suivants à l'esprit :
 
-- Les exclusions personnalisées prévalent sur les exclusions automatiques.
+- Les exclusions personnalisées sont prioritaires sur les exclusions automatiques.
 - Les exclusions automatiques s'appliquent uniquement à l'analyse de la protection en temps réel (RTP). Les exclusions automatiques ne sont pas honorées lors d'une analyse complète/rapide ou à la demande.
 - Les exclusions personnalisées et dupliquées ne sont pas en conflit avec les exclusions automatiques.
 - L'Antivirus Microsoft Defender utilise les outils gestion et maintenance des images de déploiement (DISM) pour déterminer les rôles installés sur votre ordinateur.
 
 ## <a name="opt-out-of-automatic-exclusions"></a>Refuser les exclusions automatiques
 
-Dans Windows Server 2016 et Windows Server 2019, les exclusions prédéfines délivrées par les mises à jour de l'intelligence de sécurité excluent uniquement les chemins d'accès par défaut pour un rôle ou une fonctionnalité. Si vous avez installé un rôle ou une fonctionnalité dans un chemin d'accès personnalisé, ou si vous souhaitez contrôler manuellement l'ensemble des exclusions, veillez à refuser les exclusions automatiques délivrées dans les mises à jour de l'intelligence de sécurité. Mais n'oubliez pas que les exclusions qui sont automatiquement livrées sont optimisées pour les rôles Windows Server 2016 et 2019. Voir [Recommandations pour définir des exclusions avant](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) de définir vos listes d'exclusions.
+Dans Windows Server 2016 et Windows Server 2019, les exclusions prédéfines livrées par les mises à jour de l'intelligence de sécurité excluent uniquement les chemins d'accès par défaut pour un rôle ou une fonctionnalité. Si vous avez installé un rôle ou une fonctionnalité dans un chemin d'accès personnalisé, ou si vous souhaitez contrôler manuellement l'ensemble des exclusions, veillez à refuser les exclusions automatiques délivrées dans les mises à jour de l'intelligence de sécurité. Mais n'oubliez pas que les exclusions qui sont automatiquement livrées sont optimisées pour les rôles Windows Server 2016 et 2019. Voir [Recommandations pour définir des exclusions avant](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) de définir vos listes d'exclusions.
 
 > [!WARNING]
 > Le fait de refuser les exclusions automatiques peut avoir un impact négatif sur les performances ou entraîner une altération des données. Les exclusions qui sont livrées automatiquement sont optimisées pour les rôles Windows Server 2016 et Windows Server 2019.
@@ -202,7 +202,7 @@ Le tableau suivant répertorie les exclusions de types de fichiers, les exclusio
 
 ### <a name="active-directory-exclusions"></a>Exclusions Active Directory
 
-Cette section répertorie les exclusions qui sont automatiquement livrées lorsque vous installez les services de domaine Active Directory.
+Cette section répertorie les exclusions qui sont livrées automatiquement lorsque vous installez les services de domaine Active Directory.
 
 #### <a name="ntds-database-files"></a>Fichiers de base de données NTDS
 

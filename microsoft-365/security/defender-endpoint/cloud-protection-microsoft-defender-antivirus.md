@@ -6,19 +6,19 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: shwjha
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: f69c66652d86977e5731a61014d5d37377779efd
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e967cb9efe03fc180bda531f192f3143c311796d
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690498"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764758"
 ---
 # <a name="use-next-generation-technologies-in-microsoft-defender-antivirus-through-cloud-delivered-protection"></a>Utiliser les technologies de nouvelle génération dans l'Antivirus Microsoft Defender par le biais d'une protection cloud
 
@@ -38,7 +38,7 @@ L'Antivirus Microsoft Defender utilise plusieurs technologies de détection et d
 Pour tirer parti de la puissance et de la vitesse de ces technologies de nouvelle génération, l'Antivirus Microsoft Defender fonctionne en toute transparence avec les services cloud de Microsoft. Ces services de protection cloud, également appelés Microsoft Advanced Protection Service (MAPS), améliorent la protection en temps réel standard, offrant sans doute la meilleure défense antivirus. 
 
 >[!NOTE]
->Le service cloud de l'Antivirus Microsoft Defender est un mécanisme permettant de fournir une protection mise à jour à votre réseau et points de terminaison. Bien qu'il soit appelé service cloud, il ne s'agit pas simplement de la protection des fichiers stockés dans le cloud, mais plutôt de l'utilisation de ressources distribuées et d'apprentissage automatique pour fournir une protection à vos points de terminaison à une vitesse beaucoup plus rapide que les mises à jour d'informations de sécurité traditionnelles.
+>Le service cloud de l'Antivirus Microsoft Defender est un mécanisme permettant de fournir une protection mise à jour à votre réseau et points de terminaison. Bien qu'il soit appelé service cloud, il ne s'agit pas simplement de la protection des fichiers stockés dans le cloud, mais plutôt de l'utilisation de ressources distribuées et d'apprentissage automatique pour fournir une protection à vos points de terminaison à une vitesse beaucoup plus rapide que les mises à jour d'intelligence de sécurité traditionnelles.
 
 Grâce à la protection fournie par le cloud, les technologies de nouvelle génération permettent d'identifier rapidement les nouvelles menaces, parfois même avant l'infection d'un seul ordinateur. Regardez la vidéo suivante sur Microsoft AI et l'Antivirus Microsoft Defender en action : 
  
@@ -65,7 +65,7 @@ La protection cloud est activée par défaut. Toutefois, vous devrez peut-être 
 Les organisations exécutant Windows 10 E5 peuvent également tirer parti des mises à jour dynamiques d'urgence de l'intelligence, qui offrent une protection quasi en temps réel contre les menaces émergentes. Lorsque vous mettez en place la protection cloud, les correctifs aux problèmes de programmes malveillants peuvent être remis via le cloud en quelques minutes, au lieu d'attendre la prochaine mise à jour.
 
 >[!TIP]
->Vous pouvez également visiter le site Windows Defender Testground sur [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
+>Vous pouvez également consulter le site web Windows Defender Testground sur [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
 
 Le tableau suivant décrit les différences entre les versions récentes de Windows et Configuration Manager en matière de protection dans le cloud.
 
@@ -89,6 +89,6 @@ Vous pouvez également [configurer l'Antivirus Microsoft Defender](manage-event-
 
 - [Configurez et validez les connexions réseau pour l'Antivirus Microsoft Defender.](configure-network-connections-microsoft-defender-antivirus.md) Votre réseau et vos points de terminaison doivent pouvoir se connecter à certaines URL Microsoft pour que la protection cloud fonctionne efficacement. Cet article répertorie les URL qui doivent être autorisées via le pare-feu ou les règles de filtrage réseau, et des instructions pour vérifier que votre réseau est correctement inscrit dans la protection cloud.
 
-- [Configurez la fonctionnalité bloquer à la première vue.](configure-block-at-first-sight-microsoft-defender-antivirus.md) La fonctionnalité « Bloquer à la première vue » peut bloquer les nouveaux programmes malveillants en quelques secondes, sans avoir à attendre les heures d'attente des renseignements de sécurité traditionnels. Vous pouvez l'activer et le configurer avec le Gestionnaire de point de terminaison Microsoft et la stratégie de groupe.
+- [Configurez la fonctionnalité Bloquer à la première vue.](configure-block-at-first-sight-microsoft-defender-antivirus.md) La fonctionnalité « Bloquer à la première vue » peut bloquer les nouveaux programmes malveillants en quelques secondes, sans avoir à attendre les heures d'attente des renseignements de sécurité traditionnels. Vous pouvez l'activer et le configurer avec le Gestionnaire de points de terminaison Microsoft et la stratégie de groupe.
 
 - [Configurez le délai d'attente du blocage du cloud.](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) L'Antivirus Microsoft Defender peut bloquer l'exécution de fichiers suspects pendant qu'il interroge notre service de protection livré par le cloud. Vous pouvez configurer la durée d'exécution du fichier avec le Gestionnaire de point de terminaison Microsoft et la stratégie de groupe.

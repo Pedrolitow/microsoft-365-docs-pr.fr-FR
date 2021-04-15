@@ -1,5 +1,5 @@
 ---
-title: Collecter des données de diagnostic pour la conformité des mises à jour et Windows Defender Antivirus Microsoft Defender
+title: Collecter des données de diagnostic pour mettre à jour la conformité et Windows Defender Antivirus Microsoft Defender
 description: Utiliser un outil pour collecter des données afin de résoudre les problèmes de conformité des mises à jour lors de l'utilisation de l'évaluation antivirus Microsoft Defender
 keywords: résoudre les problèmes, erreur, corriger, mettre à jour la conformité, oms, surveiller, signaler, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3975a18c2986ac7766664194a6d4b80ee1a503b1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f2b3060d7f0d9daf0f923c674f2fe45ba976fdfc
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690483"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764734"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a>Collecter les données de diagnostic de conformité des mises à jour pour l'évaluation de Microsoft Defender AV
 

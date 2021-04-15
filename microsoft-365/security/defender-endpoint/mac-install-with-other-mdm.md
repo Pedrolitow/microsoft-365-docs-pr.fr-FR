@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 58e3b14dcb80db961f01b92f038ce4d32da7e2e8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3343eb433a6ae5c708651abf298bd4f061817543
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689701"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764132"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur macOS
 
@@ -34,23 +34,25 @@ ms.locfileid: "51689701"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
 Avant de commencer, consultez la page principale de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
+
 ## <a name="approach"></a>Approche
 
 > [!CAUTION]
+
 > Actuellement, Microsoft prend officiellement en charge uniquement Intune et JAMF pour le déploiement et la gestion de Microsoft Defender pour Endpoint sur macOS. Microsoft n'offre aucune garantie, expressément ou implicite, en ce qui concerne les informations fournies ci-dessous.
 
 Si votre organisation utilise une solution de gestion des périphériques mobiles (MDM) qui n'est pas officiellement prise en charge, cela ne signifie pas que vous ne pouvez pas déployer ou exécuter Microsoft Defender pour endpoint sur macOS.
 
-Microsoft Defender pour le point de terminaison sur macOS ne dépend d'aucune fonctionnalité propre au fournisseur. Il peut être utilisé avec n'importe quelle solution MDM qui prend en charge les fonctionnalités suivantes :
+Microsoft Defender pour le point de terminaison sur macOS ne dépend d'aucune fonctionnalité propre au fournisseur. Il peut être utilisé avec n'importe quelle solution DE GESTION DES SOLUTIONS QUI prend en charge les fonctionnalités suivantes :
 
 - Déployez un .pkg macOS sur des appareils gérés.
-- Déployer des profils de configuration système macOS sur des appareils gérés.
+- Déployez les profils de configuration système macOS sur les appareils gérés.
 - Exécutez un outil/script arbitraire configuré par l'administrateur sur des appareils gérés.
 
 La plupart des solutions mdm modernes incluent ces fonctionnalités, mais elles peuvent les appeler différemment.
@@ -72,7 +74,9 @@ Pour déployer le package dans votre entreprise, utilisez les instructions assoc
 
 ### <a name="license-settings"></a>Paramètres de licence
 
-Configurer un [profil de configuration système.](mac-install-with-jamf.md) Votre solution MDM peut l'appeler « Profil de paramètres personnalisés », car Microsoft Defender pour point de terminaison sur macOS ne fait pas partie de macOS.
+Configurer un [profil de configuration système.](mac-install-with-jamf.md) 
+
+Votre solution MDM peut l'appeler « Profil de paramètres personnalisés », car Microsoft Defender pour point de terminaison sur macOS ne fait pas partie de macOS.
 
 Utilisez la liste des propriétés, jamf/WindowsDefenderATPOnboarding.plist, qui peut être extraite d'un package d'intégration téléchargé à partir du Centre de sécurité [Microsoft Defender.](mac-install-with-jamf.md)
 Votre système peut prendre en charge une liste de propriétés arbitraire au format XML. Vous pouvez télécharger le fichier jamf/WindowsDefenderATPOnboarding.plist tel qu'il est dans ce cas.

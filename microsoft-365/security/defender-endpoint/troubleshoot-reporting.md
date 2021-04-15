@@ -7,19 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3b1a1c807c86aa95148300298484319001b59963
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 50136c620450861c41513650f27bf24fc782e968
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690771"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764530"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Résoudre les problèmes de rapport de l'Antivirus Microsoft Defender dans Update Compliance
 
@@ -31,7 +31,7 @@ ms.locfileid: "51690771"
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Le 31 mars 2020, la fonctionnalité de rapport de l'Antivirus Microsoft Defender de la conformité des mises à jour sera supprimée. Vous pouvez continuer à définir et à passer en revue les stratégies de conformité de sécurité à l'aide de [Microsoft Endpoint Manager,](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)ce qui permet un contrôle plus fin sur les fonctionnalités de sécurité et les mises à jour.
+> Le 31 mars 2020, la fonctionnalité de rapport de l'Antivirus Microsoft Defender de la conformité des mises à jour sera supprimée. Vous pouvez continuer à définir et examiner les stratégies de conformité de sécurité à l'aide de [Microsoft Endpoint Manager,](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)ce qui permet un contrôle plus fin sur les fonctionnalités de sécurité et les mises à jour.
 
 Vous pouvez utiliser l'Antivirus Microsoft Defender avec update compliance. Vous verrez l'état des licences E3, B, F1, VL et Pro. Toutefois, pour les licences E5, vous devez utiliser le [portail Microsoft Defender pour points de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) Pour en savoir plus sur les options de licence, voir les options de licence de produit [Windows 10.](https://www.microsoft.com/licensing/product-licensing/windows10.aspx)
 
@@ -40,7 +40,7 @@ Lorsque vous utilisez la conformité des mises à jour [Windows Analytics](/wind
 En règle générale, les indicateurs les plus courants d'un problème sont :
 - Vous ne voyez qu'un petit nombre ou un sous-ensemble de tous les appareils que vous attendiez à voir
 - Vous ne voyez aucun appareil
-- Les rapports et informations que vous voyez sont obsolètes (plus de quelques jours)
+- Les rapports et les informations que vous voyez sont obsolètes (plus de quelques jours)
 
 Pour obtenir des codes d'erreur courants et des ID d'événement liés au service Antivirus Microsoft Defender qui ne sont pas liés à update compliance, consultez les événements de [l'Antivirus Microsoft Defender.](troubleshoot-microsoft-defender-antivirus.md) 
 
@@ -70,7 +70,7 @@ Pour que les appareils s'affichent correctement dans Update Compliance, vous dev
 Si les conditions préalables ci-dessus ont toutes été remplies, vous devrez peut-être passer à l'étape suivante pour collecter des informations de diagnostic et nous les envoyer.
 
 > [!div class="nextstepaction"]
-> [Collecter des données de diagnostic pour le dépannage de la conformité des mises à jour](collect-diagnostic-data.md)  
+> [Collecter des données de diagnostic pour la résolution des problèmes de conformité des mises à jour](collect-diagnostic-data.md)  
 
 ## <a name="related-topics"></a>Voir aussi
 

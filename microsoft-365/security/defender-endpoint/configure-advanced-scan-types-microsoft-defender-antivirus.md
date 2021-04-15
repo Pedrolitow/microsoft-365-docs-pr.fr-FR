@@ -7,19 +7,19 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 625c84e79efe53cae2bc8f511726ad3f384ea505
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 72d5024446e56cc7fa1d94a7b9402cbe898db2a8
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690458"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764854"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d'analyse de l'Antivirus Microsoft Defender
 
@@ -60,7 +60,7 @@ Analyser les fichiers sur le réseau | Analyser les > fichiers réseau | Désact
 Analyser les exécutables packés | Analyser > les exécutables packés d'analyse | Activé | Non disponible
 Analyser les lecteurs amovibles uniquement pendant les analyses complètes | Analyser > analyser les lecteurs amovibles | Désactivé | `-DisableRemovableDriveScanning`
 Spécifier le niveau de sous-dossiers dans un dossier d'archivage à analyser | Analyser > spécifier la profondeur maximale pour analyser les fichiers archivés | 0 | Non disponible
- Spécifiez la charge processeur maximale (en pourcentage) au cours d'une analyse. Remarque : il ne s'agit pas d'une limite difficile, mais plutôt d'une recommandation pour que le moteur d'analyse ne dépasse pas ce maximum en moyenne. | Analyser > spécifier le pourcentage maximal d'utilisation du processeur au cours d'une analyse | 50 |  `-ScanAvgCPULoadFactor`
+ Spécifiez la charge processeur maximale (en pourcentage) pendant une analyse. Remarque : il ne s'agit pas d'une limite difficile, mais plutôt d'une recommandation pour que le moteur d'analyse ne dépasse pas ce maximum en moyenne. | Analyser > spécifier le pourcentage maximal d'utilisation du processeur au cours d'une analyse | 50 |  `-ScanAvgCPULoadFactor`
  Spécifiez la taille maximale (en kilo-octets) des fichiers d'archivage qui doivent être analysés. La valeur par défaut, **0**, ne s'applique pas à la limite | Analyser > spécifier la taille maximale des fichiers d'archivage à analyser | Sans limite | Non disponible
  Configurer une faible priorité du processeur pour les analyses programmées | Analyser > configurer une faible priorité du processeur pour les analyses programmées | Désactivé | Non disponible
  

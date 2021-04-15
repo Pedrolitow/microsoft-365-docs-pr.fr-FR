@@ -6,19 +6,21 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: ksarens
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 47db9b4451a885c92ca4fda0f87f0150415d3338
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 08f7f9d4a6e9e70d3ef071f30712b2ae53f4ea52
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690729"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764662"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurer et valider des exclusions pour les analyses de l'Antivirus Microsoft Defender
 
@@ -40,10 +42,11 @@ Pour configurer et valider des exclusions, consultez les procédures suivantes :
 - [Configurez et validez les exclusions pour les fichiers ouverts par des processus.](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) Cela vous permet d'exclure des fichiers des analyses qui ont été ouvertes par un processus spécifique.
 
 ## <a name="recommendations-for-defining-exclusions"></a>Recommandations pour définir des exclusions
-
+[!IMPORTANT]
+L'Antivirus Microsoft Defender inclut de nombreuses exclusions automatiques basées sur les comportements connus du système d'exploitation et les fichiers de gestion classiques, tels que ceux utilisés dans la gestion d'entreprise, la gestion de bases de données et d'autres scénarios et situations d'entreprise.  
 La définition d'exclusions réduit la protection offerte par l'Antivirus Microsoft Defender. Vous devez toujours évaluer les risques associés à l'implémentation d'exclusions, et vous devez exclure uniquement les fichiers dont vous êtes certain qu'ils ne sont pas malveillants.
 
-Voici une liste de recommandations que vous devez garder à l'esprit lors de la définition d'exclusions :  
+Voici une liste de recommandations que vous devez garder à l'esprit lors de la définition des exclusions :  
 
 - Les exclusions sont techniquement un écart de protection ; envisagez toujours d'autres atténuations lors de la définition d'exclusions. Des atténuations supplémentaires peuvent être aussi simples que de s'assurer que l'emplacement exclu dispose des listes de contrôle d'accès (ACA) appropriées, de la stratégie d'audit, est traitée par un logiciel à jour, etc.
 

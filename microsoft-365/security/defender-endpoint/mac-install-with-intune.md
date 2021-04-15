@@ -1,7 +1,7 @@
 ---
 title: Déploiement basé sur Intune pour Microsoft Defender pour Endpoint sur macOS
 description: Installez Microsoft Defender pour endpoint sur macOS, à l'aide de Microsoft Intune.
-keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamf, macos,pépé, mojave, high sierra
+keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamf, macos, magasin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,27 +18,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7486bde0886506a5966a95cdb0b85fc009858801
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: dbb4e3a558256f19594ab0aa4efbd2c9eed6b7f8
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689748"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764214"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement basé sur Intune pour Microsoft Defender pour Endpoint sur macOS
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 > [!NOTE]
 > Cette documentation explique la méthode héritée pour déployer et configurer Microsoft Defender pour endpoint sur les appareils macOS. L'expérience native est désormais disponible dans la console MEM. La version de l'interface utilisateur native dans la console MEM offre aux administrateurs un moyen beaucoup plus simple de configurer et de déployer l'application et de l'envoyer aux appareils macOS. <br> <br>
->Le billet de blog mem simplifie le déploiement [de Microsoft Defender pour endpoint pour macOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) explique les nouvelles fonctionnalités. Pour configurer l'application, go to [Settings for Microsoft Defender for Endpoint on macOS in Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos). Pour déployer l'application, go to [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos).
+>Le billet de blog MEM simplifie le déploiement [de Microsoft Defender pour Endpoint pour macOS,](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) qui explique les nouvelles fonctionnalités. Pour configurer l'application, go to [Settings for Microsoft Defender for Endpoint on macOS in Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos). Pour déployer l'application, go to [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos).
 
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md)
 
-Cette rubrique décrit comment déployer Microsoft Defender pour Endpoint sur macOS via Intune. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
+Cette rubrique décrit comment déployer Microsoft Defender pour endpoint sur macOS via Intune. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
 
 1. [Télécharger les packages d'installation et d'intégration](#download-installation-and-onboarding-packages)
 1. [Configuration de l'appareil client](#client-device-setup)
@@ -50,15 +51,16 @@ Cette rubrique décrit comment déployer Microsoft Defender pour Endpoint sur ma
 
 Avant de commencer, consultez la page principale de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
-## <a name="overview"></a>Vue d’ensemble
 
-Le tableau suivant récapitule les étapes à suivre pour déployer et gérer Microsoft Defender pour Endpoint pour Mac, via Intune. Des étapes plus détaillées sont disponibles ci-dessous.
+## <a name="overview"></a>Vue d'ensemble
+
+Le tableau suivant récapitule les étapes à suivre pour déployer et gérer Microsoft Defender pour endpoint sur Mac, via Intune. Des étapes plus détaillées sont disponibles ci-dessous.
 
 | Étape | Exemples de noms de fichiers | BundleIdentifier |
 |-|-|-|
 | [Télécharger les packages d'installation et d'intégration](#download-installation-and-onboarding-packages) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
 | [Approuver l'extension système pour Microsoft Defender pour le point de terminaison](#approve-system-extensions) | MDATP_SysExt.xml | S/O |
-| [Approuver l'extension de noyau pour Microsoft Defender pour le point de terminaison](#download-installation-and-onboarding-packages) | MDATP_KExt.xml | S/O |
+| [Approuver l'extension du noyau pour Microsoft Defender pour le point de terminaison](#download-installation-and-onboarding-packages) | MDATP_KExt.xml | S/O |
 | [Accorder un accès disque complet à Microsoft Defender pour le point de terminaison](#create-system-configuration-profiles-step-8) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
 | [Stratégie d'extension réseau](#create-system-configuration-profiles-step-9) | MDATP_NetExt.xml | S/O |
 | [Configurer la mise à jour automatique Microsoft (AutoUpdate)](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-updates#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
@@ -71,7 +73,7 @@ Téléchargez les packages d'installation et d'intégration à partir du Centre 
 
 1. Dans le Centre de sécurité Microsoft Defender, go to **Settings**  >  **Device Management**  >  **Onboarding**.
 
-2. Définissez le système d'exploitation sur **macOS** et la méthode de déploiement sur Gestion des appareils **mobiles /Microsoft Intune**.
+2. Définissez le système d'exploitation **sur macOS** et la méthode de déploiement sur Gestion des périphériques **mobiles /Microsoft Intune**.
 
     ![Capture d'écran des paramètres d'intégration](images/atp-mac-install.png)
 
@@ -160,7 +162,7 @@ Pour approuver les extensions système :
 
 2. Choisissez un nom pour le profil. Change **Platform=macOS** to **Profile type=Extensions**. Sélectionnez **Créer**.
 
-3. Dans **l'onglet Éléments de** base, nommez ce nouveau profil.
+3. Dans **l'onglet Basics,** nommez ce nouveau profil.
 
 4. Dans **l'onglet Paramètres de configuration,** ajoutez les entrées suivantes dans la section **Extensions système autorisées** :
 
@@ -170,7 +172,7 @@ Pour approuver les extensions système :
     com.microsoft.wdav.netext | UBF8T346G9
 
     > [!div class="mx-imgBorder"]
-    > ![Capture d'écran des paramètres d'extension dans les paramètres de configuration sous l'onglet Éléments de base](images/mac-system-extension-intune2.png)
+    > ![Capture d'écran des paramètres d'extension dans paramètres de configuration sous l'onglet Éléments de base](images/mac-system-extension-intune2.png)
 
 5. Dans **l'onglet Affectations,** affectez ce profil à tous les **utilisateurs & tous les appareils.**
 
@@ -197,13 +199,13 @@ Pour approuver les extensions système :
 8. Téléchargez **fulldisk.mobileconfig à partir** de notre référentiel [GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) et enregistrez-le sous **tcc.xml**. Créez un autre profil, nommez-le et téléchargez-le dans celui-ci.<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
 
    > [!CAUTION]
-   > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l'absence de ce consentement, Microsoft Defender pour le point de terminaison n'est pas en mesure de protéger entièrement votre appareil.
+   > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l'absence de ce consentement, Microsoft Defender pour le point de terminaison n'est pas en mesure de protéger entièrement votre appareil.
    >
    > Ce profil de configuration accorde un accès disque total à Microsoft Defender pour le point de terminaison. Si vous avez précédemment configuré Microsoft Defender pour endpoint via Intune, nous vous recommandons de mettre à jour le déploiement avec ce profil de configuration.
 
 9. Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender for Endpoint sur macOS inspecte le trafic de socket et signale ces informations au portail centre de sécurité Microsoft Defender. La stratégie suivante permet à l'extension réseau d'effectuer cette fonctionnalité. Téléchargez **netfilter.mobileconfig** à partir de notre référentiel [GitHub,](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)enregistrez-le sous netext.xml et déployez-le en utilisant les mêmes étapes que dans les sections précédentes. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
-10. Pour permettre à Microsoft Defender pour point de terminaison sur macOS et Microsoft Auto Update d'afficher des notifications dans l'interface utilisateur sur macOS 10.15 (Île), téléchargez-le à partir de notre référentiel GitHub et importez-le en tant que charge utile `notif.mobileconfig` personnalisée. [](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
+10. Pour permettre à Microsoft Defender pour le point de terminaison sur macOS et Microsoft Auto Update d'afficher des notifications dans l'interface utilisateur sur macOS 10.15 (Île), téléchargez-le à partir de notre référentiel GitHub et importez-le en tant que charge utile `notif.mobileconfig` personnalisée. [](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
 11. Sélectionnez **Gérer > affectations.**  Dans **l'onglet** Inclure, sélectionnez Affecter à tous **les utilisateurs & tous les appareils.**
 
@@ -251,7 +253,7 @@ Une fois que les modifications Intune sont propagées aux appareils inscrits, vo
     > [!div class="mx-imgBorder"]
     > ![Capture d'écran des informations sur les affectations Intune](images/mdatp-11-assignments.png)
 
-11. Après un certain temps, l'application sera publiée sur tous les appareils inscrits. Vous pouvez le voir dans surveiller l'appareil,  >  sous État **de l'installation de l'appareil**:
+11. Après un certain temps, l'application sera publiée sur tous les appareils inscrits. Vous pouvez le voir dans surveiller  >  **l'appareil,** sous **État de l'installation de l'appareil**:
 
     > [!div class="mx-imgBorder"]
     > ![Capture d'écran de l'état de l'appareil Intune](images/mdatp-12-deviceinstall.png)
@@ -278,7 +280,7 @@ Solution : suivez les étapes ci-dessus pour créer un profil d'appareil à l'ai
 
 ## <a name="logging-installation-issues"></a>Journalisation des problèmes d'installation
 
-Pour plus d'informations sur la recherche du journal généré automatiquement créé par le programme d'installation lorsqu'une erreur se produit, voir [Problèmes d'installation de journalisation.](mac-resources.md#logging-installation-issues)
+Pour plus d'informations sur la recherche du journal généré automatiquement par le programme d'installation en cas d'erreur, voir [Problèmes d'installation de journalisation.](mac-resources.md#logging-installation-issues)
 
 ## <a name="uninstallation"></a>Désinstallation
 

@@ -1,13 +1,13 @@
 ---
 title: 'Mieux ensemble - Antivirus Microsoft Defender et Office 365 (y compris OneDrive) : meilleure protection contre les ransomware et les cybermenaces'
-description: Office 365, qui inclut OneDrive, s'utilise de façon très commune avec l'Antivirus Microsoft Defender. Pour en savoir plus, lisez cet article.
+description: Office 365, qui inclut OneDrive, est très bien adapté à l'Antivirus Microsoft Defender. Pour en savoir plus, lisez cet article.
 keywords: windows defender, antivirus, office 365, onedrive, restaurer, ransomware
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4a0d3493d7fbff2c737eae61c0f40154bf29731a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 41f22375aa117ba617eae59d4b8e9f8bb15ad4f0
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690579"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764098"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mieux ensemble : Antivirus Microsoft Defender et Office 365
 
@@ -37,7 +37,7 @@ Vous savez peut-être déjà que :
 
 - L'Antivirus Microsoft Defender protège votre appareil Windows 10 contre les menaces logicielles, telles que les virus, les programmes **malveillants et les logiciels espions.** L'Antivirus Microsoft Defender est votre protection complète et continue, intégrée à Windows 10 et prête à l'emploi. [L'Antivirus Microsoft Defender est votre nouvelle génération de protection.](./microsoft-defender-antivirus-in-windows-10.md) 
 
-- **Office 365 inclut la protection anti-programme malveillant, anti-programme** malveillant et anti-programme malveillant. Avec votre abonnement Office 365, vous obtenez des courriers électroniques et des calendriers premium, des applications Office, 1 To de stockage cloud (via OneDrive) et une sécurité avancée sur tous vos appareils. Cela est vrai pour les utilisateurs famille et professionnels. Et si vous êtes un utilisateur commercial et que votre organisation utilise Office 365 E5, vous obtenez encore plus de protection via Microsoft Defender pour Office 365 Protection contre les menaces avec [Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
+- **Office 365 inclut la protection anti-programme malveillant,** anti-programme malveillant et anti-programme malveillant. Avec votre abonnement Office 365, vous obtenez des courriers électroniques et des calendriers premium, des applications Office, 1 To de stockage cloud (via OneDrive) et une sécurité avancée sur tous vos appareils. Cela est vrai pour les utilisateurs famille et professionnels. Et si vous êtes un utilisateur commercial et que votre organisation utilise Office 365 E5, vous obtenez encore plus de protection via Microsoft Defender pour Office 365 Protection contre les menaces avec [Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
 
 - **OneDrive, inclus dans Office 365,** vous permet de stocker vos fichiers et dossiers en ligne et de les partager comme vous le souhaitez. Vous pouvez collaborer avec des personnes (pour le travail ou pour le plaisir) et co-auteur des fichiers stockés dans OneDrive. Vous pouvez également accéder à vos fichiers sur tous vos appareils (pc, téléphone et tablette). [Gérer le partage dans OneDrive.](/OneDrive/manage-sharing)
 
@@ -57,7 +57,7 @@ Lorsque vous enregistrez vos fichiers dans [OneDrive](/onedrive)et que [l'Antivi
 
 2. **L'Antivirus Microsoft Defender vous aide (et l'équipe** de sécurité de votre organisation) à supprimer le ransomware de vos appareils. (Si votre organisation utilise Microsoft Defender pour le point de terminaison, votre équipe des opérations de sécurité peut déterminer si d'autres appareils sont infectés et prendre les mesures appropriées également.)
 
-3. **Vous avez la possibilité de récupérer vos fichiers dans OneDrive.** Grâce à la fonctionnalité de restauration de fichiers OneDrive, vous pouvez récupérer vos fichiers dans OneDrive à l'état où ils se sont produits avant l'attaque par ransomware. Voir [détection de ransomware et récupération de vos fichiers](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f).
+3. **Vous avez la possibilité de récupérer vos fichiers dans OneDrive.** Grâce à la fonctionnalité de restauration de fichiers OneDrive, vous pouvez récupérer vos fichiers dans OneDrive à l'état où ils se sont produits avant que l'attaque par ransomware ne se soit produite. Voir [détection de ransomware et récupération de vos fichiers](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f).
 
 Pensez au temps et à la difficulté que cela peut faire gagner. 
 

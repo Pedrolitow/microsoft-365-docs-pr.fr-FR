@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,12 @@ ms.date: 06/29/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3b7c07bace86a2a4651e5c951c6e0b7d954f0982
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d74a8921af677f6ed66580bd00830440d59cf1aa
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690475"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764722"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Collecter les données de diagnostic de l'Antivirus Microsoft Defender
 
@@ -42,14 +42,14 @@ Sur au moins deux appareils qui rencontrent le même problème, obtenez le fichi
 
     a. Ouvrez **le** menu Démarrer.
 
-    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l'invite de commandes,** puis cliquez **sur Exécuter en tant qu'administrateur.**
+    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l'invite de** commandes, puis cliquez **sur Exécuter en tant qu'administrateur.**
 
     c. Entrez les informations d'identification de l'administrateur ou approuvez l'invite.
 
 2. Accédez au répertoire Microsoft Defender. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
 
 > [!NOTE]
-> Si vous exécutez une version mise à jour de la plateforme [Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)exécutez-la à `MpCmdRun` partir de l'emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
+> Si vous exécutez une version mise à jour de [la plateforme Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)exécutez-la à `MpCmdRun` partir de l'emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
 
 3. Tapez la commande suivante, puis appuyez sur **Entrée**  
 

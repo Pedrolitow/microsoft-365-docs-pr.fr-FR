@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,12 +14,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 64b65363ff53773f73cbbdc33b05a0a1beaf7f92
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 82c4bc1feec1556dc864558a843ed5e911c3ef3d
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690602"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764482"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Utiliser une analyse périodique limitée dans l'Antivirus Microsoft Defender
 
@@ -38,7 +38,7 @@ Il ne peut être activé que dans certaines situations. Pour plus d'informations
 
 ## <a name="how-to-enable-limited-periodic-scanning"></a>Comment activer l'analyse périodique limitée
 
-Par défaut, l'Antivirus Microsoft Defender s'active sur un appareil Windows 10 si aucun autre produit antivirus n'est installé, ou si l'autre produit est périmé, a expiré ou ne fonctionne pas correctement.
+Par défaut, l'Antivirus Microsoft Defender s'active sur un appareil Windows 10 si aucun autre produit antivirus n'est installé, ou si l'autre produit est périmé, expiré ou ne fonctionne pas correctement.
 
 Si l'Antivirus Microsoft Defender est activé, les options habituelles s'affichent pour le configurer sur cet appareil :
 
@@ -48,7 +48,7 @@ Si un autre produit antivirus est installé et fonctionne correctement, l'Antivi
 
 Sous les produits antivirus tiers, un nouveau lien s'affiche en tant qu'options de **l'Antivirus Microsoft Defender.** Cliquez sur ce lien pour afficher le bouton bascule qui permet une analyse périodique limitée. Notez que l'option périodique limitée est un basculement permettant d'activer ou de désactiver l'analyse périodique. 
 
-Le fait de faire glisser le commutateur sur **On** affiche les options standard de l'Antivirus Microsoft Defender sous le produit antivirus tiers. L'option d'analyse périodique limitée apparaît en bas de la page.
+Le fait de faire glisser le commutateur sur **On** affiche les options standard de l'Antivirus Microsoft Defender sous le produit antivirus tiers. L'option d'analyse périodique limitée s'affiche en bas de la page.
 
 ## <a name="related-articles"></a>Articles connexes
 

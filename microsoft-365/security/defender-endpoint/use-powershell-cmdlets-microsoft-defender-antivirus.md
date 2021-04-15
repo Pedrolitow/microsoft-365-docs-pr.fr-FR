@@ -15,12 +15,14 @@ ms.date: 07/23/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 912136a7229ec55b7f1644aebc946f63acb68040
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 0fd1e6b2eec1be722af58e0753e158c050b56c6b
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690620"
+ms.locfileid: "51749875"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les cmdlets PowerShell pour configurer et gérer l'Antivirus Microsoft Defender
 
@@ -53,7 +55,7 @@ PowerShell est généralement installé sous le `%SystemRoot%\system32\WindowsPo
 3. Entrez la commande PowerShell et tous les paramètres.
 
 > [!NOTE]
-> Vous devrez peut-être ouvrir PowerShell en mode administrateur. Cliquez avec le bouton droit sur l'élément dans le menu Démarrer, cliquez sur Exécuter **en tant** qu'administrateur et cliquez sur **Oui** à l'invite d'autorisations.
+> Vous devrez peut-être ouvrir PowerShell en mode administrateur. Cliquez avec le bouton droit sur l'élément dans le menu Démarrer, cliquez sur Exécuter **en** tant qu'administrateur et cliquez sur **Oui** à l'invite d'autorisations.
 
 Pour ouvrir l'aide en ligne pour l'une des cmdlets, tapez ce qui suit :
 
@@ -67,4 +69,4 @@ Omettez le `-online` paramètre pour obtenir de l'aide mise en cache localement.
 
 - [Rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Cmdlets de l'Antivirus Microsoft Defender](/powershell/module/defender/?view=win10-ps)
+- [Cmdlets de l'Antivirus Microsoft Defender](/powershell/module/defender)

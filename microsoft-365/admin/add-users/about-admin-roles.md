@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service peut ouvrir les tickets de support via le centre d’administration.
-ms.openlocfilehash: e0155ee9e263d4b62dced0e2bd943781ccf93a4c
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644254"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755617"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -61,11 +61,7 @@ Si vous recevez un message dans le centre d’administration vous indiquant que 
 
 ## <a name="commonly-used-microsoft-365-admin-center-roles"></a>Rôles communément utilisés dans le centre d’administration 365 Microsoft
 
-::: moniker range="o365-worldwide"
-
 Dans le Centre d’administration Microsoft 365, vous pouvez accéder à **Rôles**, puis sélectionner un rôle pour ouvrir le volet Détails. Sélectionnez l’onglet **Autorisations** pour afficher la liste détaillée des autorisations attribuées à ce rôle d'administrateur. Sélectionnez l’onglet **Attribué** ou **Administrateurs affectés** pour ajouter des utilisateurs aux rôles.
-
-::: moniker-end
 
 Vous devrez probablement attribuer les rôles suivants au sein de votre organisation. Par défaut, les rôles les plus utilisés par les organisations s'affichent en premier. Si le rôle recherché est introuvable, accédez au bas de la liste et sélectionnez **Afficher tout par catégorie**. (pour plus d’informations, notamment sur les applets de commande associées à un rôle, voir les [Autorisations de rôle d'administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)).
 

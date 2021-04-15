@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Gérer ces rôles d’administrateur Azure dans le Centre d’administration Microsoft 365
-ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72835a0f9fdf9a15fc3ffa07c0fab6ca6f0260cb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904491"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759941"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Rôles Azure Active Directory dans le Centre d’administration Microsoft 365
 
@@ -29,15 +29,11 @@ Le Centre d’administration Microsoft 365 vous permet de gérer plus de 30 r�
 
 Un utilisateur doté d’un rôle d’administrateur disposera du même niveau d'accès vers les services cloud auxquels votre organisation est abonnée, que vous lui ayez attribué le rôle dans le Centre d’administration Microsoft 365 ou le portail Azure, ou à l’aide du module Azure AD pour Windows PowerShell.
 
-::: moniker range="o365-worldwide"
-
 Dans le Centre d’administration Microsoft 365, vous pouvez accéder à **Rôles**, puis sélectionner un rôle pour ouvrir le volet Détails. Sélectionnez l’onglet **Autorisations** pour afficher la liste détaillée des autorisations attribuées à ce rôle d'administrateur. Sélectionnez l’onglet **Attribué** ou **Administrateurs affectés** pour ajouter des utilisateurs aux rôles. Si vous souhaitez en savoir plus sur l’attribution de rôles dans le Centre d’administration Microsoft 365, consultez la page [Attribuer des rôles d’administrateur](assign-admin-roles.md).
-
-::: moniker-end
 
 ## <a name="all-azure-ad-roles"></a>Tous les rôles Azure AD
 
-Voici la liste de tous les rôles d'administrateur disponibles dans le Centre d’administration Microsoft 365. Vous recherchez des descriptions de rôles détaillées des rôles d’administrateur Microsoft 365 ? Consultez [À propos des rôles d’administrateur](./about-admin-roles.md?view=o365-worldwide).
+Voici la liste de tous les rôles d'administrateur disponibles dans le Centre d’administration Microsoft 365. Vous recherchez des descriptions de rôles détaillées des rôles d’administrateur Microsoft 365 ? Consultez [À propos des rôles d’administrateur](./about-admin-roles.md).
 
 |Rôle d’administrateur     |Description  |
 |---------|---------|

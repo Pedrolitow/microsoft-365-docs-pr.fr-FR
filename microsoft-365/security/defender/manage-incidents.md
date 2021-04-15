@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72d368cd92739e191dcb292000b8429a472aa981
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498450"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760063"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
@@ -37,49 +37,63 @@ ms.locfileid: "51498450"
 **S’applique à :**
 - Microsoft 365 Defender
 
+La gestion des incidents est essentielle pour s'assurer que les menaces sont contenues et traitées.
 
+Vous gérez les incidents à partir **d'incidents & alertes** > Incidents dans le lancement rapide du Centre de sécurité Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
 
-La gestion des incidents est essentielle pour s’assurer que les menaces sont contenues et traitées. Dans Microsoft 365 Defender, vous avez accès à la gestion des incidents sur les appareils, les utilisateurs et les boîtes aux lettres. 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d'attente d'incident":::
 
+Voici comment gérer vos incidents :
 
-Vous pouvez gérer les incidents en sélectionnant un incident dans la **file d’attente d’incidents**. 
+- Modifier le nom de l'incident
+- Ajoutez des balises d'incident.
+- Affecter l'incident à un compte d'utilisateur
+- Résoudre les problèmes 
+- Définir sa classification et sa détermination
+- Ajoutez des commentaires.
 
-Vous pouvez modifier le nom d’un incident, le résoudre, déterminer sa classification et sa détermination. Vous pouvez également attribuer l’incident à vous-même, ajouter des balises d’incident et des commentaires.
+Vous pouvez gérer les incidents à partir du volet Gérer **les incidents** pour un incident. Voici un exemple.
 
-Si, lors d’une investigation, vous devez déplacer des alertes d’un incident à un autre, vous pouvez également le faire à partir de l’onglet Alertes, ce qui permet de créer un incident plus important ou plus petit qui inclut toutes les alertes appropriées.
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Exemple du volet Gérer les incidents d'un incident":::
 
-## <a name="edit-incident-name"></a>Modifier le nom de l’incident
-Un nom est automatiquement attribué aux incidents en fonction des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
+Vous pouvez afficher ce volet à partir du lien **Gérer l'incident** sur :
 
-Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
+- Volet des propriétés d'un incident dans la file d'attente des incidents.
+- **Page récapitulatif** d'un incident.
 
-Vous pouvez modifier le nom de l’incident afin de mieux l’aligner avec votre convention d’affectation de noms préférée.
+Dans les cas où, lors de l'enquête, vous souhaitez déplacer des alertes d'un incident à un autre, vous pouvez également le faire à partir de l'onglet **Alertes,** créant ainsi un incident plus ou moins volumineux qui inclut toutes les alertes pertinentes.
+
+## <a name="edit-the-incident-name"></a>Modifier le nom de l'incident
+
+Un nom est automatiquement attribué aux incidents en fonction des attributs d'alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l'étendue de l'incident. Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
+
+Vous pouvez modifier le nom de l'incident à partir du **champ Nom de l'incident** dans le volet Gérer **l'incident.**
 
 > [!NOTE]
 > Les incidents qui existaient avant le déploiement de la fonctionnalité de nommage automatique des incidents conserveront leur nom.
 
+## <a name="add-incident-tags"></a>Ajouter des balises d’incident
 
+Vous pouvez ajouter des balises personnalisées à un incident, par exemple pour baliser un groupe d'incidents avec une caractéristique commune. Vous pouvez ensuite filtrer la file d'attente des incidents pour tous les incidents qui contiennent une balise spécifique.
+
+Lorsque vous commencez à taper, vous avez la possibilité de sélectionner des balises dans une liste de balises sélectionnées.
 
 ## <a name="assign-incidents"></a>Attribuer des incidents
-Si aucun incident n’a encore été affecté, vous pouvez sélectionner **À moi-même** pour vous l’attribuer. Cette action suppose l’appropriation non seulement de l’incident, mais aussi de toutes les alertes associées.
 
-## <a name="set-status-and-classification"></a>Définir l’état et la classification
-### <a name="incident-status"></a>État de l’incident
-Vous pouvez classer les incidents (comme **actifs** ou **résolus**) en modifiant leur état au fur et à mesure de l’avancement de votre enquête. Cela vous permet d’organiser et de gérer la manière dont votre équipe peut réagir aux incidents.
+Si aucun incident n'a encore été affecté, vous pouvez sélectionner **Affecter** à et spécifier le compte d'utilisateur. Cette action affecte la propriété de l'incident et toutes les alertes qui lui sont associées.
 
-Par exemple, votre analyste SOC peut passer en revue les incidents **actifs** urgents pour la journée et décider de se les attribuer pour enquête.
+## <a name="resolve-incident"></a>Résoudre l'incident
 
-Sinon, il est possible que votre analyste SOC configure l’incident comme **résolu** si l’incident a été corrigé. La résolution d’un incident ferme automatiquement toutes les alertes toujours ouvertes faisant partie de l’incident. 
+Si l'incident a été corrigé, sélectionnez **Résoudre l'incident** pour déplacer le basculement vers la droite. Notez que la résolution d'un incident résout également toutes les alertes liées et actives liées à l'incident.
 
-### <a name="classification-and-determination"></a>Classification et détermination
-Vous pouvez choisir de ne pas définir de classification ou décider de spécifier si un incident est vrai ou faux. Cette opération permet à l’équipe de voir les modèles et d’en apprendre davantage. 
+Un incident qui n'est pas résolu s'affiche comme **étant actif.**
+
+## <a name="set-the-classification-and-determination"></a>Définir la classification et la détermination
+
+La classification des incidents est de savoir s'il s'agit d'une alerte vraie ou d'une fausse alerte, que vous configurez à partir du champ **Classification.** 
+
+S'il s'agissait d'une alerte réelle, vous devez également spécifier le type de menace qu'il s'agissait du **champ Détermination.** La spécification du type de menace permet à votre équipe de sécurité de voir les modèles de menace et d'agir pour défendre votre organisation contre ces modèles. 
 
 ## <a name="add-comments"></a>Ajouter des commentaires
-Vous pouvez ajouter des commentaires et afficher les événements historiques relatifs à un incident afin de voir les modifications précédentes apportées à ce dernier.
 
-Chaque fois qu’une modification ou un commentaire est apporté à une alerte, cet élément est enregistré dans la section Commentaires et historique.
-
-Les commentaires ajoutés apparaissent instantanément dans le volet.
-
-## <a name="add-incident-tags"></a>Ajouter des balises d’incident
-Vous pouvez ajouter des balises personnalisées à un incident, par exemple pour baliser un groupe d’incidents avec une caractéristique commune. Vous pouvez filtrer ultérieurement la file d’attente des incidents pour afficher tous ceux qui contiennent une balise spécifique.
+Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ** Commentaire. Chaque commentaire est ajouté aux événements historiques de l'incident. Vous pouvez voir les commentaires et l'historique d'un incident à partir du lien Commentaires et historique dans la page **Résumé.** 

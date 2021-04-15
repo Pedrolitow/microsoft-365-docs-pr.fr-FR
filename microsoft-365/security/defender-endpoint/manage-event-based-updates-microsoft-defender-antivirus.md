@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,12 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b9f09878c645d54aadca21fe01749a0e73939c5f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 78a04105fce0a3a1f9f7ea3f9ee993dd53750f3f
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690435"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764554"
 ---
 # <a name="manage-event-based-forced-updates"></a>Gérer les mises à jour forcées basées sur des événements
 
@@ -107,7 +107,7 @@ Vous pouvez également utiliser la stratégie de groupe, PowerShell ou WMI pour 
 
 3. Cliquez **sur Stratégies** **puis Modèles d'administration.**
 
-4. Développez l'arborescence **des composants Windows**  >  **microsoft Defender Antivirus** Security Intelligence  >  **Updates.**
+4. Développez l'arborescence des **composants Windows**  >  **microsoft Defender Antivirus** Security Intelligence  >  **Updates.**
 
 5. Double-cliquez sur **Lancer la mise à jour de l'intelligence** de sécurité au démarrage et définissez l'option sur **Activé.**
 
@@ -149,11 +149,11 @@ Si vous avez activé la protection cloud, l'Antivirus Microsoft Defender envoie 
 
 3. Cliquez **sur Stratégies** **puis Modèles d'administration.**
 
-4. Développez l'arborescence **des composants Windows**  >  **microsoft Defender Antivirus** Security Intelligence  >  **Updates.**
+4. Développez l'arborescence des **composants Windows**  >  **microsoft Defender Antivirus** Security Intelligence  >  **Updates.**
 
 5. Double-cliquez sur Autoriser les mises à jour d'informations de sécurité en temps réel **basées** sur les rapports de Microsoft MAPS et définissez l'option **sur Activé.** Cliquez ensuite sur **OK**.
 
-6. **Autoriser les notifications à désactiver les rapports** basés sur des définitions pour Microsoft MAPS et définir l'option sur **Activé**. Cliquez ensuite sur **OK**.
+6. **Autoriser les notifications pour désactiver les rapports** basés sur des définitions pour Microsoft MAPS et définir l'option sur **Activé**. Cliquez ensuite sur **OK**.
     
 > [!NOTE]
 > **Autoriser les notifications à désactiver les** rapports basés sur des définitions permet à Microsoft MAPS de désactiver ces définitions connues pour provoquer des rapports faux positifs. Vous devez configurer votre ordinateur pour qu'il rejoigne Microsoft MAPS pour que cette fonction fonctionne.

@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
@@ -14,12 +14,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 2ca486b86c24e18ae08753b5e88f2eb42986dddf
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3fcc79e767edb533a20402a2f92ba4abc7d8386a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690657"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764590"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre les problèmes de l'Antivirus Microsoft Defender lors de la migration à partir d'une solution tierce
 
@@ -51,7 +51,7 @@ Ce problème peut se manifester sous la forme de plusieurs ID d'événement diff
  ID de l'événement | Nom du journal | Description | Source
 -|-|-|-
 15  | Application | Mise à jour Windows Defender statut de l'SECURITY_PRODUCT_STATE_OFF. | Centre de sécurité
-5007 | Microsoft-Windows-Windows Defender/Opérationnel | Windows Defender'antivirus a changé.  S'il s'agit d'un événement inattendu, vous devez passer en revue les paramètres, car cela peut être le résultat d'un programme malveillant.<br /><br />**Ancienne valeur :** Default\IsServiceRunning = 0x0<br />**Nouvelle valeur :** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1 | Windows Defender
+5007 | Microsoft-Windows-Windows Defender/Opérationnel | Windows Defender antivirus a changé.  S'il s'agit d'un événement inattendu, vous devez passer en revue les paramètres, car cela peut être le résultat d'un programme malveillant.<br /><br />**Ancienne valeur :** Default\IsServiceRunning = 0x0<br />**Nouvelle valeur :** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1 | Windows Defender
 5010 | Microsoft-Windows-Windows Defender/Opérationnel | Windows Defender antivirus pour les logiciels espions et autres logiciels potentiellement indésirables est désactivé. | Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>Comment savoir si l'Antivirus Microsoft Defender ne démarre pas car un antivirus tiers est installé
@@ -59,7 +59,7 @@ Ce problème peut se manifester sous la forme de plusieurs ID d'événement diff
 Sur un appareil Windows 10, si vous n'utilisez pas Microsoft Defender pour Endpoint et qu'un antivirus tiers est installé, l'Antivirus Microsoft Defender est automatiquement désactivé. Si vous utilisez Microsoft Defender pour Endpoint avec un antivirus tiers installé, l'Antivirus Microsoft Defender démarre en mode passif, avec des fonctionnalités réduites.
 
 > [!TIP]
-> Le scénario décrit s'applique uniquement à Windows 10. D'autres versions de Windows [ont des réponses différentes à](microsoft-defender-antivirus-compatibility.md) l'Antivirus Microsoft Defender en cours d'utilisation avec un logiciel de sécurité tiers.
+> Le scénario décrit s'applique uniquement à Windows 10. D'autres versions de Windows [ont des réponses différentes à](microsoft-defender-antivirus-compatibility.md) l'antivirus Microsoft Defender en cours d'utilisation avec un logiciel de sécurité tiers.
 
 #### <a name="use-services-app-to-check-if-microsoft-defender-antivirus-is-turned-off"></a>Utiliser l'application Services pour vérifier si l'Antivirus Microsoft Defender est désactivé
 
@@ -85,7 +85,7 @@ Cela génère un rapport situé sur *./gpresult.html*. Ouvrez ce fichier et vous
 
 ##### <a name="if-security-settings-are-implemented-via-group-policy-gpo-at-the-domain-or-local-level-or-though-system-center-configuration-manager-sccm"></a>Si les paramètres de sécurité sont implémentés via la stratégie de groupe (GPO) au niveau du domaine ou au niveau local, ou via System Center Configuration Manager (SCCM)
 
-Dans le rapport GPResults, sous le titre *Composants Windows/Antivirus Windows Defender*, vous pouvez voir quelque chose comme l'entrée suivante, indiquant que l'Antivirus Microsoft Defender est désactivé.
+Dans le rapport GPResults, sous le titre *Composants Windows/antivirus Windows Defender*, vous pouvez voir quelque chose comme l'entrée suivante, indiquant que l'Antivirus Microsoft Defender est désactivé.
 
 Stratégie | Paramètre | GPO qui a été gagné
 -|-|-
@@ -93,7 +93,7 @@ Désactiver l'antivirus Windows Defender | Activé | Win10-Workstations
 
 ###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>Si les paramètres de sécurité sont implémentés via la stratégie de groupe de préférence (GPP)
 
-Sous l'en-tête, élément de Registre (chemin d'accès clé : HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender, Nom de la valeur : *DisableAntiSpyware)*, vous pouvez voir quelque chose comme l'entrée suivante, indiquant que l'Antivirus Microsoft Defender est désactivé.
+Sous le titre, élément de Registre (chemin d'accès clé : HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender, Nom de la valeur : *DisableAntiSpyware)*, vous pouvez voir quelque chose comme l'entrée suivante, indiquant que l'Antivirus Microsoft Defender est désactivé.
 
 DisableAntiSpyware | -
 -|-
@@ -125,7 +125,7 @@ Votre administrateur imaginant peut avoir définie la stratégie de **[sécurit�
 L'Antivirus Microsoft Defender s'active automatiquement si aucun autre antivirus n'est actif. Vous devez désactiver complètement l'antivirus tiers pour vous assurer que l'Antivirus Microsoft Defender peut s'exécuter avec toutes les fonctionnalités.
 
 > [!WARNING]
-> Les solutions qui vous suggèrent de modifier les valeurs de début *Windows Defender* pour *wdboot,* *wdfilter,* *wdnisdrv*, *wdnissvc* et *windefend* dans HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services ne sont pas pris en compte et peuvent vous obliger à ré-imager votre système.
+> Les solutions qui vous suggèrent de modifier les valeurs de début *Windows Defender* pour *wdboot,* *wdfilter,* *wdnisdrv,* *wdnissvc* et *windefend* dans HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services ne sont pas pris en compte et peuvent vous obliger à ré-imager votre système.
 
 Le mode passif est disponible si vous commencez à utiliser Microsoft Defender pour Endpoint et un antivirus tiers avec l'Antivirus Microsoft Defender. Le mode passif permet à Microsoft Defender d'analyser les fichiers et de se mettre à jour lui-même, mais il ne remédie pas aux menaces. En outre, la surveillance du comportement via [la Protection](configure-real-time-protection-microsoft-defender-antivirus.md) en temps réel n'est pas disponible en mode passif, sauf si la protection contre la perte de données de point de terminaison [(DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) est déployée.
 

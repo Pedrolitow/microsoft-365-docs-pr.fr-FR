@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2aa592e70bce7bb469f851bedc542ee58cac0037
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 83b9eec37648ba48aa8e6931e836e8a5e22458c8
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498674"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51760025"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -37,10 +37,10 @@ ms.locfileid: "51498674"
 
 
 
-Le tableau du schéma de recherche avancée contient des informations sur les activités dans différentes applications et services cloud couverts par Microsoft Cloud App Security, en particulier `CloudAppEvents` Dropbox, [](advanced-hunting-overview.md) Exchange Online, OneDrive, Microsoft Teams et SharePoint. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur les activités dans différentes applications et services cloud couverts par `CloudAppEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Pour obtenir la liste complète, voir [Applications et services couverts.](#apps-and-services-covered) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table. 
 
 >[!IMPORTANT]
->Ce tableau inclut des informations qui étaient disponibles dans le `AppFileEvents` tableau. À compter du 7 mars 2021, les utilisateurs qui recherchent des activités liées aux fichiers dans les services cloud et au-delà de cette date doivent utiliser le `CloudAppEvents` tableau à la place. <br><br>Veillez à rechercher des requêtes et des règles de détection personnalisées qui utilisent toujours la table et modifiez-les `AppFileEvents` pour utiliser le `CloudAppEvents` tableau. Pour plus d’informations sur la conversion des requêtes affectées, voir La recherche dans les activités d’application cloud avec la recherche avancée [Microsoft 365 Defender.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
+>Ce tableau inclut des informations qui étaient disponibles dans le `AppFileEvents` tableau. À compter du 7 mars 2021, les utilisateurs qui recherchent des activités liées aux fichiers dans les services cloud et au-delà de cette date doivent utiliser le `CloudAppEvents` tableau à la place. <br><br>Veillez à rechercher des requêtes et des règles de détection personnalisées qui utilisent toujours la table et modifiez-les `AppFileEvents` pour utiliser le `CloudAppEvents` tableau. Pour plus d'informations sur la conversion des requêtes affectées, voir La recherche dans les activités d'application cloud avec la recherche avancée [Microsoft 365 Defender.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
 
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
@@ -48,14 +48,14 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `ActionType` | string | Type d’activité qui a déclenché l’événement |
-| `Application` | string | Application qui a effectué l’action enregistrée |
-| `ApplicationId` | string | Identificateur unique de l’application |
+| `ActionType` | string | Type d'activité qui a déclenché l'événement |
+| `Application` | string | Application qui a effectué l'action enregistrée |
+| `ApplicationId` | string | Identificateur unique de l'application |
 | `AccountObjectId` | string | Identificateur unique du compte dans Azure Active Directory |
-| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
-| `IsAdminOperation` | string | Indique si l’activité a été effectuée par un administrateur |
-| `DeviceType` | string | Type d’appareil en fonction de l’objectif et des fonctionnalités, tels que « Périphérique réseau », « Station de travail », « Serveur », « Mobile », « Console de jeu » ou « Imprimante » | 
-| `OSPlatform` | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cette colonne indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 10 et Windows 7. |
+| `AccountDisplayName` | string | Nom de l'utilisateur du compte affiché dans le carnet d'adresses. En règle générale, une combinaison d'un prénom ou d'un prénom donné, d'une initiation intermédiaire et d'un nom ou d'un nom de famille. |
+| `IsAdminOperation` | string | Indique si l'activité a été effectuée par un administrateur |
+| `DeviceType` | string | Type d'appareil en fonction de l'objectif et des fonctionnalités, tels que « Périphérique réseau », « Station de travail », « Serveur », « Mobile », « Console de jeu » ou « Imprimante » | 
+| `OSPlatform` | string | Plateforme du système d'exploitation en cours d'exécution sur l'appareil. Cette colonne indique des systèmes d'exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 10 et Windows 7. |
 | `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
 | `IsAnonymousProxy` | string | Indique si l’adresse IP appartient à un proxy anonyme connu |
 | `CountryCode` | string | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé |
@@ -71,6 +71,19 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `RawEventData` | string | Informations d’événement brutes de l’application ou du service source au format JSON |
 | `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
+## <a name="apps-and-services-covered"></a>Applications et services couverts
+
+- Dropbox
+- Dynamics 365
+- Exchange Online
+- Microsoft Teams
+- OneDrive Entreprise
+- Power Automate
+- Power BI
+- SharePoint Online
+- Skype Entreprise
+- Office 365
+- Yammer 
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

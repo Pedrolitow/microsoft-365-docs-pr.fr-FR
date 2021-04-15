@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: 9b58c6fa51fbca5d78680b4b13cbbc2129d9c393
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903723"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755583"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -42,7 +42,6 @@ Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
-
 
 ::: moniker-end
 
@@ -143,66 +142,26 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 - [Activité de participation à des conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
   
 - [Activité P2P Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
-  
-::: moniker range="o365-worldwide"
 
 - [Activité sur Yammer](yammer-activity-report-ww.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [Activité sur Yammer pour le gouvernement américain](yammer-activity-report.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 - [Utilisation de Yammer sur des appareils](yammer-device-usage-report-ww.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [Utilisation des appareils Yammer pour le gouvernement américain](yammer-device-usage-report.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 - [Rapport d’activité des groupes Yammer](yammer-groups-activity-report-ww.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [Rapport d’activité des groupes Yammer pour le gouvernement américain](yammer-groups-activity-report.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 - [Activité des utilisateurs de Microsoft Teams](microsoft-teams-user-activity-preview.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [Activité des utilisateurs de Microsoft Teams pour la communauté du secteur public des États-Unis](microsoft-teams-user-activity.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 - [Utilisation des appareils Microsoft Teams](microsoft-teams-device-usage-preview.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [Utilisation des appareils Microsoft Teams pour la communauté du secteur public des États-Unis](microsoft-teams-device-usage.md)
-
-::: moniker-end
 
 ## <a name="how-to-view-licensing-information"></a>Afficher les informations de licence
 

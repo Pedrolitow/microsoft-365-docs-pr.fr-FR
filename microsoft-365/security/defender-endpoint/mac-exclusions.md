@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1282543a68ce4cb5c322423656d33c5db12b97b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2281fccfb97d38dbdc218799b087290433deff30
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688584"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764156"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurer et valider des exclusions pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -39,18 +39,18 @@ ms.locfileid: "51688584"
 Cet article fournit des informations sur la définition d'exclusions qui s'appliquent aux analyses à la demande, ainsi que sur la protection et la surveillance en temps réel.
 
 >[!IMPORTANT]
->Les exclusions décrites dans cet article ne s'appliquent pas aux autres fonctionnalités de Defender pour Endpoint pour Mac, y compris la détection et la réponse des points de terminaison (EDR). Les fichiers que vous excluez à l'aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes EDR et d'autres détections.
+>Les exclusions décrites dans cet article ne s'appliquent pas aux autres fonctionnalités de Defender for Endpoint sur Mac, y compris la détection et la réponse des points de terminaison (EDR). Les fichiers que vous excluez à l'aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes EDR et d'autres détections.
 
-Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par processus de Defender pour endpoint pour Mac.
+Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par processus de Defender pour endpoint sur Mac.
 
-Les exclusions peuvent être utiles pour éviter les détections incorrectes sur les fichiers ou les logiciels qui sont uniques ou personnalisés pour votre organisation. Ils peuvent également être utiles pour atténuer les problèmes de performances causés par Defender pour Endpoint pour Mac.
+Les exclusions peuvent être utiles pour éviter les détections incorrectes sur les fichiers ou les logiciels qui sont uniques ou personnalisés pour votre organisation. Ils peuvent également être utiles pour atténuer les problèmes de performances causés par Defender pour Endpoint sur Mac.
 
 >[!WARNING]
->La définition d'exclusions réduit la protection offerte par Defender pour Endpoint pour Mac. Vous devez toujours évaluer les risques associés à l'implémentation d'exclusions, et vous devez exclure uniquement les fichiers dont vous êtes certain qu'ils ne sont pas malveillants.
+>La définition d'exclusions réduit la protection offerte par Defender pour Endpoint sur Mac. Vous devez toujours évaluer les risques associés à l'implémentation d'exclusions, et vous devez exclure uniquement les fichiers dont vous êtes certain qu'ils ne sont pas malveillants.
 
 ## <a name="supported-exclusion-types"></a>Types d'exclusion pris en charge
 
-Le tableau suivant indique les types d'exclusion pris en charge par Defender pour Endpoint pour Mac.
+Le tableau suivant indique les types d'exclusion pris en charge par Defender pour Endpoint sur Mac.
 
 Exclusion | Définition | Exemples
 ---|---|---
@@ -73,13 +73,13 @@ Caractère générique | Description | Exemple | Correspondances | Ne correspond
 
 ### <a name="from-the-management-console"></a>À partir de la console de gestion
 
-Pour plus d'informations sur la configuration des exclusions à partir de JAMF, Intune ou une autre console de gestion, voir Définir les préférences de [Defender pour Endpoint pour Mac.](mac-preferences.md)
+Pour plus d'informations sur la configuration des exclusions à partir de JAMF, Intune ou une autre console de gestion, voir Définir les préférences de [Defender pour Endpoint sur Mac.](mac-preferences.md)
 
 ### <a name="from-the-user-interface"></a>À partir de l'interface utilisateur
 
 Ouvrez l'application Defender for Endpoint et accédez à Gérer les **paramètres** Ajouter ou supprimer une exclusion... , comme illustré  >  dans la capture d'écran suivante :
 
-![Capture d'écran gérer les exclusions](images/mdatp-37-exclusions.png)
+![Capture d'écran Gérer les exclusions](images/mdatp-37-exclusions.png)
 
 Sélectionnez le type d'exclusion que vous souhaitez ajouter et suivez les invites.
 
@@ -93,7 +93,7 @@ Dans l'extrait de code Bash suivant, remplacez-le par un fichier conforme `test.
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Si Defender pour point de terminaison pour Mac signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n'est détecté et que le fichier téléchargé existe, l'exclusion fonctionne. Vous pouvez ouvrir le fichier pour vérifier que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
+Si Defender pour point de terminaison sur Mac signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n'est détecté et que le fichier téléchargé existe, l'exclusion fonctionne. Vous pouvez ouvrir le fichier pour vérifier que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
 
 Si vous n'avez pas accès à Internet, vous pouvez créer votre propre fichier de test EICAR. Écrivez la chaîne EICAR dans un nouveau fichier texte avec la commande Bash suivante :
 

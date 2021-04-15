@@ -23,28 +23,21 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Découvrez comment configurer et utiliser Microsoft 365 sur votre ordinateur, téléphone et tablette.
-ms.openlocfilehash: 74821886832e699a90d9a54a9b8c7ce9a8cfab75
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0bc2478375cdec231a00bade933680cb69578126
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222026"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755641"
 ---
 # <a name="get-started"></a>Prise en main
 
-Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l’utiliser pour pouvoir commencer à lire des e-mails, à partager des documents, etc. Découvrez comment configurer et utiliser Microsoft 365 sur votre ordinateur, téléphone et tablette.
-  
-::: moniker range="o365-worldwide"
-
-****
-
-
-::: moniker-end
+Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l'utiliser pour pouvoir commencer à lire des e-mails, à partager des documents, etc. Découvrez comment configurer et utiliser Microsoft 365 sur votre ordinateur, téléphone et tablette.
 
 ## <a name="training-resources-for-your-users"></a>Ressources de formation pour vos utilisateurs
 
 
-- [Démarrage rapide de l’employé](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
+- [Démarrage rapide de l'employé](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
     
 - [Centre de formation Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
@@ -60,10 +53,10 @@ Voici quelques ressources pour vous aider à commencer.
   
 - [Formation pour les administrateurs](../index.yml): obtenir des liens vers des cours en ligne gratuits pour les administrateurs.
     
-- [Aide de l’administrateur](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview): obtenez des informations sur les tâches principales, la mise en place des outils d’administration et la résolution des problèmes.
+- [Aide de l'administrateur](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview): obtenez des informations sur les tâches principales, la mise en place des outils d'administration et la résolution des problèmes.
     
-- [Contacter le support - Aide de l’administrateur](../contact-support-for-business-products.md) : appelez-nous, ouvrez une demande en ligne ou laissez la communauté vous aider. 
+- [Contacter le support - Aide de l'administrateur](../contact-support-for-business-products.md) : appelez-nous, ouvrez une demande en ligne ou laissez la communauté vous aider. 
     
 ## <a name="related-articles"></a>Articles connexes
 
-[Configurer Microsoft 365 pour les entreprises - Aide de l’administrateur](../setup/setup.md)
+[Configurer Microsoft 365 pour les entreprises - Aide de l'administrateur](../setup/setup.md)
