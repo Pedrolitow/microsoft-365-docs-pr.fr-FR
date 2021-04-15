@@ -7,19 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f67330e1ccd7361c3982b76a6ab8754db23bd110
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 826e1456de2aadf4031a91e30925a1e771d44f70
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690394"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765586"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Gérer les mises à jour pour les périphériques mobiles et les machines virtuelles
 
@@ -39,7 +39,7 @@ Deux paramètres sont utiles pour ces appareils :
 
 Les articles suivants peuvent également être utiles dans les situations suivantes :
 - [Configuration des analyses de rattrapage et de planification](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Guide de déploiement de l'Antivirus Microsoft Defender dans un environnement d'infrastructure de bureau virtuel (VDI)](deployment-vdi-microsoft-defender-antivirus.md)
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Opter pour Microsoft Update sur des ordinateurs mobiles sans connexion WSUS
@@ -83,9 +83,9 @@ Vous pouvez choisir Microsoft Update sur l'appareil mobile de l'une des manière
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Empêcher les mises à jour des informations de sécurité lors de l'exécution sur batterie
 
-Vous pouvez configurer l'Antivirus Microsoft Defender pour télécharger les mises à jour de protection uniquement lorsque le PC est connecté à une source d'alimentation câblé. 
+Vous pouvez configurer l'Antivirus Microsoft Defender pour télécharger uniquement les mises à jour de protection lorsque le PC est connecté à une source d'alimentation câblé. 
 
-### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Utiliser une stratégie de groupe pour empêcher les mises à jour des informations de sécurité sur l'alimentation de la batterie
+### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Utiliser la stratégie de groupe pour empêcher les mises à jour des informations de sécurité sur l'alimentation de la batterie
 
 1.  Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, choisissez l'objet de stratégie de groupe que vous souhaitez configurer et ouvrez-le pour modification.
 
@@ -93,7 +93,7 @@ Vous pouvez configurer l'Antivirus Microsoft Defender pour télécharger les mis
 
 3.  Sélectionnez **stratégies** **puis modèles d'administration.**
 
-4.  Développez l'arborescence des **composants Windows** Mises à jour des signatures de l'antivirus  >  **Microsoft Defender,** puis définissez Autoriser les mises à jour de  >   **l'intelligence** de sécurité lorsque vous exécutez sur batterie sur **Désactivé.** Puis sélectionnez **OK**. 
+4.  Développez l'arborescence des **composants Windows** Mises à jour des signatures de l'antivirus  >  **Microsoft Defender,** puis définissez Autoriser les mises à jour de l'intelligence de sécurité lorsque vous exécutez l'alimentation sur batterie  >  sur **Désactivé.**  Puis sélectionnez **OK**. 
 
 Cette action empêche le téléchargement des mises à jour de protection lorsque le PC est sur batterie.
 

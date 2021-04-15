@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: high
+localization_priority: priority
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: ''
@@ -14,12 +14,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.date: 10/22/2020
 ms.technology: mde
-ms.openlocfilehash: 837b7899368e69b274323125c97169bbe4f823b7
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1baa770da677ec755bd56db9b92c071680efae7b
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690759"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765754"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer bloquer à la première vue
 
@@ -30,9 +30,9 @@ ms.locfileid: "51690759"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Bloquer à la première vue permet de détecter et de bloquer les nouveaux programmes malveillants en quelques secondes. Cette protection est activée par défaut lorsque certains paramètres prérequis sont activés. Ces paramètres incluent la protection de cloud, un délai d'envoi d'exemple spécifié (par exemple, 50 secondes) et un niveau de blocage de fichiers élevé. Dans la plupart des organisations, ces paramètres sont activés par défaut avec les déploiements de l'Antivirus Microsoft Defender. 
+Bloquer à la première vue permet de détecter et de bloquer de nouveaux programmes malveillants en quelques secondes. Cette protection est activée par défaut lorsque certains paramètres prérequis sont activés. Ces paramètres incluent la protection de cloud, un délai d'envoi d'exemple spécifié (par exemple, 50 secondes) et un niveau de blocage de fichiers élevé. Dans la plupart des organisations, ces paramètres sont activés par défaut avec les déploiements de l'Antivirus Microsoft Defender. 
 
-Vous pouvez [spécifier la durée](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) d'empêchement de l'exécution d'un fichier pendant que le service de protection informatique analyse le fichier. De plus, vous pouvez personnaliser le message affiché sur le bureau des [utilisateurs](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) lorsqu'un fichier est bloqué. Vous pouvez modifier le nom de la société, les informations de contact et l'URL du message.
+Vous pouvez [spécifier la durée d'exécution](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) d'un fichier pendant que le service de protection informatique analyse le fichier. De plus, vous pouvez personnaliser le message affiché sur le bureau des [utilisateurs](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) lorsqu'un fichier est bloqué. Vous pouvez modifier le nom de la société, les informations de contact et l'URL du message.
 
 >[!TIP]
 >Visitez le site web de démonstration Microsoft Defender for Endpoint [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités fonctionnent et voir comment elles fonctionnent.
@@ -57,7 +57,7 @@ Dans de nombreux cas, ce processus peut réduire le temps de réponse des nouvea
 > [!TIP]
 > Microsoft Intune fait désormais partie de Microsoft Endpoint Manager.
 
-1. Dans le Centre d'administration Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), accédez aux **profils**  >  **de configuration des appareils.**
+1. Dans le Centre d'administration Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), accédez aux profils   >  **de configuration des appareils.**
 
 2. Sélectionnez ou créez un profil à l'aide du type de profil **Restrictions d'appareil.**
 
@@ -126,7 +126,7 @@ Bloquer à la première vue est automatiquement activé tant  que la protection 
 
    ![Capture d'écran de l'étiquette & protection contre les virus dans l'application Sécurité Windows](images/defender/wdav-protection-settings-wdsc.png)
 
-3. Confirmez **que la protection du cloud et** l'envoi automatique **d'échantillons** sont tous deux allumés.
+3. Confirmez **que la protection livrée par** le cloud et **l'envoi** automatique d'échantillons sont tous deux allumés.
 
 > [!NOTE]
 > - Si les paramètres prérequis sont configurés et déployés à l'aide de la stratégie de groupe, les paramètres décrits dans cette section sont grisés et ne peuvent pas être utilisés sur des points de terminaison individuels. 
@@ -151,7 +151,7 @@ Vous pouvez choisir de désactiver bloquer à la première vue si vous souhaitez
 
 3. Under **Manage**, choose **Properties**.
 
-4. En de **côté des paramètres de configuration,** choisissez **Modifier.**
+4. En de côté **des paramètres de configuration,** choisissez **Modifier.**
 
 5. Modifiez un ou plusieurs des paramètres suivants :
 

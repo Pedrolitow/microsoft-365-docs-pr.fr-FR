@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7165d943fd39e298894531f1dabdec408144898d
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698437"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764998"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Questions fréquemment posées sur la découverte d'appareils
 
@@ -46,10 +46,10 @@ Ce mode permet à chaque appareil intégré à Microsoft Defender for Endpoint d
 Vous avez la possibilité de désactiver la découverte d'appareils via la page [Fonctionnalités avancées.](advanced-features.md) Toutefois, vous perdrez la visibilité sur les appareils non utilisés dans votre réseau. 
 
 ## <a name="what-is-standard-discovery-mode"></a>Qu'est-ce que le mode de découverte standard ?
- Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour point de terminaison peuvent sonder activement les appareils observés dans le réseau pour enrichir les données collectées (avec une quantité négligeable de trafic réseau). Ce mode est vivement recommandé pour créer un inventaire fiable et cohérent des appareils. Si vous choisissez de désactiver ce mode et de sélectionner le mode de découverte de base, vous n'aurez probablement qu'une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
+ Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour le point de terminaison peuvent sonder activement les appareils observés dans le réseau pour enrichir les données collectées (avec une quantité négligeable de trafic réseau). Ce mode est vivement recommandé pour créer un inventaire fiable et cohérent des appareils. Si vous choisissez de désactiver ce mode et de sélectionner le mode de découverte de base, vous n'aurez probablement qu'une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Puis-je contrôler quels appareils effectuent la découverte standard ?
- Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement les appareils Windows 10 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte d’appareils.
+ Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement les appareils Windows 10 uniquement) ou sélectionner un sous-ensemble ou sous-ensemble de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte d’appareils.
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>Quels appareils intégrés peuvent effectuer la découverte ?
  Les appareils intégrés exécutés sur Windows 10 version 1809 ou ultérieure peuvent effectuer une découverte.
@@ -70,7 +70,7 @@ Vous avez la possibilité de désactiver la découverte d'appareils via la page 
  Comme la découverte d'appareils utilise des méthodes passives pour découvrir les appareils du réseau, tout appareil qui communique avec vos appareils intégrés dans le réseau d'entreprise peut être découvert et répertorié dans l'inventaire. Vous pouvez exclure les appareils de l'analyse active uniquement.
 
 ## <a name="how-frequent-is-the-active-probing"></a>Quelle est la fréquence de l'analyse active ?
- Les appareils sont activement sondés lorsque des modifications des caractéristiques de l'appareil sont observées et une fois par semaine pour s'assurer que les informations existantes sont à jour.
+ Les appareils sont activement sondés lorsque des modifications des caractéristiques de l'appareil sont observées (toutes les 1 à 3 semaines) pour s'assurer que les informations existantes sont à jour.
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Mon outil de sécurité a déclenché une alerte UnicastScanner.ps1 l'activité d'analyse des ports initiée par elle, que dois-je faire ?
  Les scripts d'analyse actifs sont signés par Microsoft et sont sécurisés. Vous pouvez ajouter le chemin d'accès suivant à votre liste d'exclusions : `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`

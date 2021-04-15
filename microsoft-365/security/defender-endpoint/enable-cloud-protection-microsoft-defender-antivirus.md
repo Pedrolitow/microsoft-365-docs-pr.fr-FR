@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 11/13/2020
@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: cfaf4563e96568ae26bd990678462836b9202656
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9f949a4cb54ca5dd64a2648bb05a5cb9ad50e44d
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690716"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764962"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>Activer la protection cloud
 
@@ -44,12 +44,12 @@ Vous pouvez activer ou désactiver la protection de l'Antivirus Microsoft Defend
 
  Vous pouvez également l'activer ou le désactiver dans des clients individuels avec l'application Sécurité Windows.
 
-Pour [obtenir une](cloud-protection-microsoft-defender-antivirus.md) vue d'ensemble de la protection de l'antivirus Microsoft Defender, voir Utiliser la protection microsoft cloud.
+Pour obtenir une vue d'ensemble de la protection de l'antivirus Microsoft Defender, voir Utiliser la protection cloud de [Microsoft.](cloud-protection-microsoft-defender-antivirus.md)
 
 Pour plus d'informations sur les exigences de connectivité réseau spécifiques pour vous assurer que vos points de terminaison peuvent se connecter au service de protection livré par le cloud, voir Configurer et valider les [connexions réseau.](configure-network-connections-microsoft-defender-antivirus.md)
 
 > [!NOTE]
-> Dans Windows 10, il n'existe  aucune différence entre les options de rapports de base et avancées décrites dans cette rubrique.  Il s'agit d'une distinction héritée et le choix de l'un ou l'autre des paramètres entraîne le même niveau de protection cloud. Il n'existe aucune différence dans le type ou la quantité d'informations partagées. Pour plus d'informations sur ce que nous collectons, voir la déclaration [de confidentialité de Microsoft.](https://go.microsoft.com/fwlink/?linkid=521839)
+> Dans Windows 10, il n'existe  aucune différence entre les options de rapports de base et avancées décrites dans cette rubrique.  Il s'agit d'une distinction héritée et le choix de l'un ou l'autre des paramètres entraîne le même niveau de protection cloud. Il n'existe aucune différence dans le type ou la quantité d'informations partagées. Pour plus d'informations sur ce que nous collectons, consultez la déclaration [de confidentialité de Microsoft.](https://go.microsoft.com/fwlink/?linkid=521839)
 
 ## <a name="use-intune-to-turn-on-cloud-delivered-protection"></a>Utiliser Intune pour activer la protection cloud
 
@@ -68,15 +68,15 @@ Pour plus d'informations sur les profils d'appareil Intune, notamment sur la cr�
 2. Choisissez **l'Antivirus de sécurité des points de**  >  **terminaison.**
 3. Sélectionnez un profil antivirus. (Si vous n'en avez pas encore, ou si vous souhaitez créer un profil, voir Configurer les paramètres de [restriction d'appareil dans Microsoft Intune](/intune/device-restrictions-configure).
 4. Sélectionnez **propriétés**. Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
-5. Développez **la protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l'une des listes suivantes :
-    1. **Élevé**: applique un niveau élevé de détection.
+5. Développez **La protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l'une des listes suivantes :
+    1. **Élevé**: applique un niveau de détection élevé.
     2. **Plus élevé**: utilise le **niveau élevé** et applique des mesures de protection supplémentaires (peut avoir un impact sur les performances du client).
     3. **Tolérance zéro :** bloque tous les exécutables inconnus.
 6. Sélectionnez **Révision + Enregistrer,** puis **sélectionnez Enregistrer.**
 
 Pour plus d'informations sur la configuration de Microsoft Endpoint Configuration Manager, voir Comment créer et déployer des stratégies [anti-programme](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)malveillant : service de protection cloud.
 
-## <a name="use-group-policy-to-turn-on-cloud-delivered-protection"></a>Utiliser une stratégie de groupe pour activer la protection cloud
+## <a name="use-group-policy-to-turn-on-cloud-delivered-protection"></a>Utiliser la stratégie de groupe pour activer la protection cloud
 
 1. Sur votre appareil de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, cliquez avec le bouton droit sur l'objet de stratégie de groupe que vous souhaitez configurer et sélectionnez **Modifier.**
 
@@ -84,7 +84,7 @@ Pour plus d'informations sur la configuration de Microsoft Endpoint Configuratio
 
 3. Sélectionnez **modèles d'administration.**
 
-4. Développez l'arborescence **des composants Windows >'antivirus Microsoft Defender > MAPS**
+4. Développez l'arborescence **des composants Windows > l'Antivirus Microsoft Defender > MAPS**
 
 5. Double-cliquez sur **Rejoindre Microsoft MAPS.** Assurez-vous que l'option est allumée et définie sur **Maps de base** ou Cartes **avancées.** Sélectionnez **OK**.
 
@@ -116,7 +116,7 @@ Pour plus d'informations sur l'utilisation de PowerShell avec l'Antivirus Micros
 > Vous pouvez également définir **-SubmitSamplesConsent** sur (paramètre par `SendSafeSamples` défaut), `NeverSend` ou `AlwaysPrompt` . Le `SendSafeSamples` paramètre signifie que la plupart des échantillons seront envoyés automatiquement. Les fichiers susceptibles de contenir des informations personnelles seront toujours invités et nécessitent une confirmation supplémentaire.
 
 >[!WARNING]
-> Setting **-SubmitSamplesConsent** to `NeverSend` or will lower the protection level of the `AlwaysPrompt` device. En outre, sa définition signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de `NeverSend` terminaison ne fonctionne pas. [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+> Paramètre **-SubmitSamplesConsent** pour `NeverSend` ou réduit le niveau de protection de `AlwaysPrompt` l'appareil. En outre, sa définition signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de `NeverSend` terminaison ne fonctionne pas. [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
 ## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-delivered-protection"></a>Utiliser Windows Management Instruction (WMI) pour activer la protection cloud
 
@@ -140,7 +140,7 @@ Pour plus d'informations sur les paramètres autorisés, [voir Windows Defender 
 
     ![Capture d'écran de l'étiquette & protection contre les virus dans l'application Sécurité Windows](images/defender/wdav-protection-settings-wdsc.png)
 
-3. Confirmez que **la protection basée sur le cloud et** **l'envoi** automatique d'échantillons sont **activés.**
+3. Confirmez que **la protection basée sur le cloud** et **l'envoi automatique** d'échantillons sont **activés.**
 
 > [!NOTE]
 > Si l'envoi automatique d'échantillons a été configuré avec la stratégie de groupe, le paramètre est grisé et indisponible.

@@ -7,19 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 042bb67c223631ae1759b62a32c2f5713b4d62e8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 7635209c03dfc0367df16bfb650a4e52d2b2b3f8
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690358"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765322"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l'application Sécurité Windows
 
@@ -32,12 +32,12 @@ ms.locfileid: "51690358"
 
 Dans Windows 10, version 1703 et ultérieure, l'application Windows Defender fait partie de la sécurité Windows.
 
-Les paramètres qui faisaient auparavant partie du client Windows Defender et des principaux paramètres Windows ont été combinés et déplacés vers la nouvelle application, qui est installée par défaut dans le cadre de Windows 10, version 1703.
+Les paramètres qui faisaient auparavant partie du client Windows Defender et des principaux paramètres Windows ont été combinés et déplacés vers la nouvelle application, installée par défaut dans le cadre de Windows 10, version 1703.
 
 > [!IMPORTANT]
 > La désactivation du service Centre de sécurité Windows ne désactive pas l'Antivirus Microsoft Defender [ou Windows Defender pare-feu.](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) Ceux-ci sont désactivés automatiquement lorsqu'un antivirus tiers ou un produit de pare-feu est installé et maintenu à jour.
 >
-> Si vous désactivez le service Centre de sécurité Windows ou configurez ses paramètres de stratégie de groupe associés pour empêcher son démarrage ou son exécution, l'application sécurité Windows peut afficher des informations obsolètes ou inexactes sur les produits antivirus ou pare-feu que vous avez installés sur l'appareil.
+> Si vous désactivez le service Centre de sécurité Windows ou si vous configurez ses paramètres de stratégie de groupe associés pour empêcher son démarrage ou son exécution, l'application Sécurité Windows peut afficher des informations obsolètes ou inexactes sur les produits antivirus ou pare-feu que vous avez installés sur l'appareil.
 > Il peut également empêcher l'Antivirus Microsoft Defender de s'activer si vous avez un antivirus tiers ancien ou obsolète, ou si vous désinstallez des produits antivirus tiers que vous avez peut-être précédemment installés.
 > Cela réduit considérablement la protection de votre appareil et peut entraîner une infection par des programmes malveillants.
 
@@ -98,7 +98,7 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l'icône de bouclier dans la barre de menus de gauche).
 
-3. Sous les **paramètres Gérer,** sélectionnez **Paramètres de protection contre & virus.**
+3. Sous les **paramètres Gérer,** sélectionnez Paramètres de protection contre & virus et **menaces.**
 
 4. Sous le **paramètre Exclusions,** **sélectionnez Ajouter ou supprimer des exclusions.** 
 

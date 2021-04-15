@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2e58b6048f9d815d759cd78ceb3316eb2ed6f66d
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: c549d5d2a7c30892a9272b4ac3e03cb8979bc1a5
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698443"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764986"
 ---
 # <a name="device-discovery-overview"></a>Vue d'ensemble de la découverte d'appareils
 
@@ -66,7 +66,7 @@ Il existe deux modes de découverte :
 
 ### <a name="basic-discovery"></a>Découverte de base 
 
-Dans ce mode, les points de terminaison collectent passivement des événements dans votre réseau et en extraient les informations de l'appareil. La découverte de base utilise SenseNDR.exe binaire pour la collecte de données réseau passives et aucun trafic réseau n'est initié. Les points de terminaison extraient simplement les données de chaque trafic réseau visible par un appareil intégré. 
+Dans ce mode, les points de terminaison collectent passivement des événements dans votre réseau et extraient les informations de l'appareil. La découverte de base utilise SenseNDR.exe binaire pour la collecte de données réseau passives et aucun trafic réseau n'est initié. Les points de terminaison extraient simplement les données de chaque trafic réseau visible par un appareil intégré. 
 
 ### <a name="standard-discovery"></a>Découverte standard 
 
@@ -76,7 +76,7 @@ Lorsque le mode Standard est activé, une activité réseau minime et négligeab
 
  Si vous choisissez de ne pas activer ce mode, vous n'aurez qu'une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
 
-La découverte standard utilise divers scripts PowerShell pour sonder activement des périphériques dans le réseau. Ces scripts PowerShell sont signés par Microsoft et sont exécutés à partir de l'emplacement suivant `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` : Par exemple, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
+La découverte standard utilise divers scripts PowerShell pour sonder activement les périphériques du réseau. Ces scripts PowerShell sont signés par Microsoft et sont exécutés à partir de l'emplacement suivant `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` : Par exemple, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
 Vous pouvez modifier et personnaliser vos paramètres de découverte, pour plus d'informations, voir [Configurer la découverte d'appareils.](configure-device-discovery.md)
 

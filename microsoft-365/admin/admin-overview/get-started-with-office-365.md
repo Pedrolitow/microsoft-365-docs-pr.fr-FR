@@ -28,9 +28,9 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755641"
+ms.locfileid: "51759881"
 ---
-# <a name="get-started"></a>Prise en main
+# <a name="get-started"></a>Démarrer
 
 Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l'utiliser pour pouvoir commencer à lire des e-mails, à partager des documents, etc. Découvrez comment configurer et utiliser Microsoft 365 sur votre ordinateur, téléphone et tablette.
 
@@ -41,7 +41,7 @@ Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l'u
     
 - [Centre de formation Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [Où se connectez-vous ?](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [Où se connectez-vous](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
 - [Installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     
@@ -51,7 +51,7 @@ Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l'u
 
 Voici quelques ressources pour vous aider à commencer.
   
-- [Formation pour les administrateurs](../index.yml): obtenir des liens vers des cours en ligne gratuits pour les administrateurs.
+- [Formation pour les administrateurs](../index.yml): obtenez des liens vers des cours en ligne gratuits pour les administrateurs.
     
 - [Aide de l'administrateur](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview): obtenez des informations sur les tâches principales, la mise en place des outils d'administration et la résolution des problèmes.
     

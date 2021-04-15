@@ -25,7 +25,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755583"
+ms.locfileid: "51759809"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 

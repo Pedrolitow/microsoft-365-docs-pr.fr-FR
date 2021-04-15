@@ -20,7 +20,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755551"
+ms.locfileid: "51759965"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d'un hips tiers vers des règles asr
 
@@ -43,15 +43,15 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **Opération**: modifications du Registre
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services** -  *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **Règles de réduction de la surface d'attaque**: les règles de réduction de la surface d'attaque bloquent les techniques d'attaque et non les indicateurs de compromis (IOC). Le blocage d'une extension de fichier spécifique n'est pas toujours utile, car cela n'empêche pas un appareil d'être compromis. Elle ne déjoue que partiellement une attaque jusqu'à ce que les attaquants créent un nouveau type d'extension pour la charge utile.
-- **Autres fonctionnalités recommandées**: l'antivirus Microsoft Defender activé, ainsi que l'analyse du comportement et de la protection cloud sont vivement recommandés. Nous vous recommandons d'utiliser une prévention supplémentaire, telle que la règle asr « Utiliser une protection avancée contre les ransomware ». Cela offre un niveau de protection plus élevé contre les attaques par ransomware. En outre, plusieurs de ces clés de Registre sont surveillées par Microsoft Defender pour le point de terminaison, telles que les techniques ASEP, qui déclenchent des alertes spécifiques. En outre, les clés de Registre utilisées nécessitent un minimum de privilèges d'administrateur local ou de programme d'installation approuvé qui peuvent être modifiés. L'utilisation d'un environnement verrouillé, avec des comptes ou des droits d'administration minimaux, est recommandée. D'autres configurations système peuvent être activées, notamment « Désactiver SeDebug pour les rôles non requis » qui font partie de nos recommandations de sécurité plus larges.
+- **Autres fonctionnalités recommandées**: l'antivirus Microsoft Defender activé, ainsi que l'analyse du comportement et de la protection cloud sont vivement recommandés. Nous vous recommandons d'utiliser une prévention supplémentaire, telle que la règle asr « Utiliser une protection avancée contre les ransomware ». Cela offre un niveau de protection plus élevé contre les attaques par ransomware. En outre, plusieurs de ces clés de Registre sont surveillées par Microsoft Defender pour endpoint, telles que les techniques ASEP, qui déclenchent des alertes spécifiques. En outre, les clés de Registre utilisées nécessitent un minimum de privilèges d'administrateur local ou de programme d'installation approuvé qui peuvent être modifiés. L'utilisation d'un environnement verrouillé, avec des comptes ou des droits d'administration minimaux, est recommandée. D'autres configurations système peuvent être activées, notamment « Désactiver SeDebug pour les rôles non requis » qui font partie de nos recommandations de sécurité plus larges.
 
-### <a name="block-untrusted-programs-from-running-from-removable-drives"></a>Empêcher l'exécution de programmes non confiance à partir de lecteurs amovibles
+### <a name="block-untrusted-programs-from-running-from-removable-drives"></a>Empêcher l'exécution de programmes nontrus à partir de lecteurs amovibles
 
 - **S'applique** à - Programmes nontrus à partir du port USB
 - **Processus**- *
 - **Operation**- Process Execution
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services :-*
-- Règles de réduction de la **surface** d'attaque : les règles de réduction de la surface d'attaque ont une règle intégrée pour empêcher le lancement de programmes non signés et non signés à partir de lecteurs amovibles : « Bloquer les processus nontrus et non signés qui s'exécutent à partir d'une clé USB », GUID « b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 ».
+- Règles de réduction de la **surface** d'attaque : les règles de réduction de la surface d'attaque ont une règle intégrée pour empêcher le lancement de programmes non signés et non signés à partir de lecteurs amovibles : « Bloquer les processus nontrus et non signés qui s'exécutent à partir de USB », GUID « b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 ».
 - Autres fonctionnalités recommandées : explorez les contrôles supplémentaires pour les périphériques USB et autres supports amovibles à l'aide de Microsoft Defender pour le point de terminaison : comment contrôler les périphériques USB et autres supports amovibles à l'aide de[Microsoft Defender pour endpoint](/windows/security/threat-protection/device-control/control-usb-devices-using-intune).
 
 ### <a name="block-mshta-from-launching-certain-child-processes"></a>Empêcher Mshta de lancer certains processus enfants
@@ -61,7 +61,7 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **Operation**- Process Execution
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services**- powershell.exe, cmd.exe, regsvr32.exe
 - **Règles de réduction de** la surface d'attaque : les règles de réduction de la surface d'attaque ne contiennent aucune règle spécifique pour empêcher les processus enfants de « mshta.exe ». Ce contrôle est dans le cadre des missions d'Exploit Protection Windows Defender Application Control.
-- **Autres fonctionnalités recommandées**: activez Windows Defender contrôle d'application pour empêcher mshta.exe'exécution. Si votre organisation a besoin d'« mshta.exe » pour les applications métier, configurez une règle Windows Defender Exploit Protection spécifique, afin d'empêcher mshta.exe de lancer des processus enfants.
+- **Autres fonctionnalités recommandées**: activez Windows Defender contrôle d'application pour empêcher mshta.exe'exécution. Si votre organisation a besoin de « mshta.exe » pour les applications métier, configurez une règle Windows Defender Exploit Protection spécifique, afin d'empêcher mshta.exe de lancer des processus enfants.
 
 ### <a name="block-outlook-from-launching-child-processes"></a>Empêcher Outlook de lancer des processus enfants
 
@@ -137,7 +137,7 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **Règles de réduction de la surface d'attaque**: globalement, les règles de réduction de la surface d'attaque ne sont pas conçues pour fonctionner en tant que gestionnaire d'applications.
 - **Autres fonctionnalités recommandées**: pour empêcher les utilisateurs de lancer des processus ou des programmes spécifiques, il est recommandé d'utiliser Windows Defender Contrôle d'application. Les indicateurs Microsoft Defender for Endpoint File et Cert peuvent être utilisés dans un scénario de réponse aux incidents (ne doivent pas être considérés comme un mécanisme de contrôle d'application).
     
-### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>Bloquer les modifications non autorisées apportées aux configurations de l'antivirus MDATP
+### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>Bloquer les modifications non autorisées apportées aux configurations av MDATP
 
 - **S'applique** à - Tous les processus
 - **Processus**- *

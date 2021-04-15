@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 726a85969dab715a1b6244f14d1bf0259cf301e8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 4c44e2c73eabcb89c178235bc3ce6738d2322dfa
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163374"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768985"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter microsoft Defender pour le support du point de terminaison
+# <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter le support Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,33 +32,33 @@ ms.locfileid: "51163374"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender pour le point de terminaison a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
+Defender for Endpoint a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
 
 Le nouveau widget permet aux clients de :
 - Trouver des solutions aux problèmes courants
-- Soumettre un dossier de support à l’équipe de support Microsoft
+- Soumettre un dossier de support à l'équipe de support Technique Microsoft
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables
 Il est important de connaître les rôles spécifiques qui sont autorisés à ouvrir des cas de support.
 
-Au minimum, vous devez avoir un rôle d’administrateur du support technique **ou** d’administrateur du support technique.
+Au minimum, vous devez avoir un rôle d'administrateur du support technique **OU** d'administrateur du support technique.
 
 
-Pour plus d’informations sur les rôles qui ont des autorisations, consultez les [autorisations d’administrateur de sécurité.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Les rôles qui incluent l’action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
+Pour plus d'informations sur les rôles qui ont des autorisations, voir les [autorisations d'administrateur de sécurité.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Les rôles qui incluent l'action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
 
-Pour obtenir des informations générales sur les rôles d’administrateur, voir [à propos des rôles d’administrateur.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
+Pour obtenir des informations générales sur les rôles d'administrateur, voir [à propos des rôles d'administrateur.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
 
 
 ## <a name="access-the-widget"></a>Accéder au widget
-L’accès au nouveau widget de support peut être effectué de deux manières :
+L'accès au nouveau widget de support peut être effectué de deux manières :
 
-1.  Cliquez sur le point d’interrogation en haut à droite du portail, puis sur « Support Microsoft » :
+1.  Cliquez sur le point d'interrogation en haut à droite du portail, puis sur « Support Microsoft » :
 
-    ![Image du widget lorsque le point d’interrogation est sélectionné](images/support-widget.png)
+    ![Image du widget lorsque le point d'interrogation est sélectionné](images/support-widget.png)
 
-2. Vous avez besoin **d’aide en cliquant sur ?**  dans le coin inférieur droit du Centre de sécurité Microsoft Defender :
+2. Vous avez besoin **d'aide en cliquant sur ?**  dans le coin inférieur droit du Centre de sécurité Microsoft Defender :
 
 
     ![Image du bouton d’aide nécessaire](images/need-help.png)
@@ -77,10 +77,10 @@ Si les articles suggérés ne sont pas suffisants, vous pouvez ouvrir une demand
 
 ## <a name="open-a-service-request"></a>Ouvrir une demande de service
 
-Découvrez comment ouvrir des tickets de support en contactant Defender pour le support technique Endpoint. 
+Découvrez comment ouvrir des tickets de support en contactant le support de Defender pour Endpoint. 
 
-
-
+> [!Note]
+> Si vous avez un contrat de support permier avec Microsoft, vous verrez la balise premier sur le widget. Si ce n’est pas le cas, contactez votre gestionnaire de comptes Microsoft.
 
 ### <a name="contact-support"></a>Contacter l’assistance
 Cette option est disponible en cliquant sur l’icône qui ressemble à un casque. Vous recevez ensuite la page suivante pour soumettre votre dossier de support :
@@ -91,9 +91,9 @@ Cette option est disponible en cliquant sur l’icône qui ressemble à un casqu
 
 2. (Facultatif) Inclure jusqu’à cinq pièces jointes pertinentes pour le problème afin de fournir un contexte supplémentaire pour le cas de support. 
 
-3. Sélectionnez votre fuseau horaire et une autre langue, le cas échéant. La demande est envoyée à l’équipe de support Technique Microsoft. L’équipe répondra prochainement à votre demande de service.
+3. Sélectionnez votre fuseau horaire et une autre langue, le cas échéant. La demande est envoyée à l’équipe de support technique Microsoft. L’équipe répondra prochainement à votre demande de service.
 
 
 ## <a name="related-topics"></a>Voir aussi
-- [Résoudre les problèmes de service](troubleshoot-mdatp.md)
-- [Vérifier l’état du service](service-status.md)
+- [Résoudre des problèmes de service](troubleshoot-mdatp.md)
+- [Vérifier l’état du service](service-status.md).

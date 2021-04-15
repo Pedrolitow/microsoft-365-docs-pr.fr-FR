@@ -21,21 +21,14 @@ search.appverid:
 - MET150
 description: Découvrez comment ajouter des utilisateurs et attribuer des licences Microsoft 365 simultanément.
 ms.date: 07/01/2020
-ms.openlocfilehash: 3c752bd12c0aeb3806ad7d5d90373aad13730944
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7c5fcf1a129a1d434b6e641688ce4c5d234817d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906299"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760001"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Les membres de votre équipe doivent disposer d'un compte d'utilisateur pour se connecter et accéder à [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business). La façon la plus simple d'ajouter des comptes d'utilisateurs consiste à les ajouter individuellement dans le centre d'administration Microsoft 365. Une fois cette étape effectuée, les utilisateurs disposeront de licences Microsoft 365, d’informations d'identification et de boîtes aux lettres Microsoft 365.
 
@@ -52,10 +45,25 @@ Vous devez être un administrateur général, de licences ou d’utilisateurs po
 
 ## <a name="add-users-one-at-a-time"></a>Ajouter des utilisateurs un par un
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. Accédez au centre d’administration sur <https://admin.microsoft.com>.
-2. Accédez à **Utilisateurs** > **Utilisateurs actifs** puis sélectionnez **Ajouter un utilisateur**.
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
+2. Accédez à **Utilisateurs**  >  **Utilisateurs actifs** puis sélectionnez **Ajouter un utilisateur**.
 3. Dans le volet **Configurer les informations de base**, renseignez les informations de base de l’utilisateur, puis sélectionnez **Suivant**.
     - **Nom** Renseignez le nom complet, le nom d'affichage et le nom d'utilisateur.
     - **Domaine** Choisissez le domaine pour le compte de l’utilisateur. Par exemple, pour un nom d'utilisateur Jérôme et un domaine contoso.com, l’utilisateur pourra se connecter en utilisant jerome@contoso.com.
@@ -65,36 +73,6 @@ Vous devez être un administrateur général, de licences ou d’utilisateurs po
 4. Dans le volet **Attribuer des licences de produits**, sélectionnez l’emplacement et la licence adaptée à l’utilisateur. Si vous n’avez pas de licence disponible, vous pouvez toujours ajouter un utilisateur et acheter des licences supplémentaires. Développez l’onglet **Applications** et sélectionnez ou désélectionnez les applications pour lesquelles attribuer les licences à l’utilisateur. Sélectionnez **Suivant**.
 5. Dans le volet **Paramètres facultatifs**, développez l’onglet **Rôles** et promouvez cet utilisateur au rôle d’administrateur. Développez l’onglet **Informations du profil** pour ajouter plus d’informations sur l’utilisateur.
 6. Sélectionnez **Suivant**, passez en revue les paramètres du nouvel utilisateur, effectuez les changements que vous souhaitez, puis sélectionnez **Finaliser l’ajout**, puis **Fermer**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Accédez au centre d’administration sur <https://portal.office.de/adminportal>.
-2. Accédez à **Utilisateurs** > **Utilisateurs actifs** puis sélectionnez **Ajouter un utilisateur**.
-3. Dans le volet **Nouvel utilisateur**, complétez les informations suivantes : Lorsque vous avez terminé, sélectionnez **Ajouter**.
-    - **Nom** Renseignez le nom complet, le nom d’affichage et le nom d’utilisateur.
-    - **Domaine** Par exemple, pour un nom d'utilisateur Jérôme et un domaine contoso.com, l’utilisateur pourra se connecter en utilisant jerome@contoso.com.
-    - **Informations de contact** Développez pour renseigner un numéro de téléphone mobile, une adresse, etc.
-    - **Mot de passe** Utilisez le mot de passe généré automatiquement ou développez pour définir un mot de passe fort pour l'utilisateur. L’utilisateur devra modifier son mot de passe après 90 jours. Vous pouvez aussi choisir de **Demander à cet utilisateur de modifier son mot de passe lors de sa première connexion**.
-    - **Rôles** Développez si vous devez faire de cet utilisateur un administrateur.
-    - **Licences de produits** Développez cette section, puis sélectionnez la licence appropriée. Si vous n'avez pas de licences disponibles, vous pouvez toujours ajouter un utilisateur et acheter des licences supplémentaires.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Accédez au centre d’administration sur<https://portal.partner.microsoftonline.cn>.
-2. Accédez à **Utilisateurs** > **Utilisateurs actifs** puis sélectionnez **Ajouter un utilisateur**.
-3. Dans le volet **Nouvel utilisateur**, complétez les informations suivantes : Lorsque vous avez terminé, sélectionnez **Ajouter**.
-    - **Nom** Renseignez le nom complet, le nom d’affichage et le nom d’utilisateur.
-    - **Domaine** Par exemple, pour un nom d'utilisateur Jérôme et un domaine contoso.com, l’utilisateur pourra se connecter en utilisant jerome@contoso.com.
-    - **Informations de contact** Développez pour renseigner un numéro de téléphone mobile, une adresse, etc.
-    - **Mot de passe** Utilisez le mot de passe généré automatiquement ou développez pour définir un mot de passe fort pour l'utilisateur. L’utilisateur devra modifier son mot de passe après 90 jours. Vous pouvez aussi choisir de **Demander à cet utilisateur de modifier son mot de passe lors de sa première connexion**.
-    - **Rôles** Développez si vous devez faire de cet utilisateur un administrateur.
-    - **Licences de produits** Développez cette section, puis sélectionnez la licence appropriée. Si vous n'avez pas de licences disponibles, vous pouvez toujours ajouter un utilisateur et acheter des licences supplémentaires.
-
-::: moniker-end
 
 ## <a name="add-multiple-users-at-the-same-time"></a>Ajouter plusieurs utilisateurs simultanément
 

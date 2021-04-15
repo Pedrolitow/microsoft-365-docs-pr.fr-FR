@@ -4,12 +4,12 @@ ms.author: dansimp
 author: dansimp
 ms.prod: m365-security
 ms.topic: include
-ms.openlocfilehash: 22dbe3619bd9298b7ef05601ffbabdfbe2d49ad8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: abe8af8fa8239cc09127daf7ae1f48ff3b4afdd1
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042697"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755301"
 ---
 > [!IMPORTANT]
-> Le [Centre de sécurité Microsoft 365](https://security.microsoft.com) est à présent disponible en préversion publique. Cette nouvelle expérience introduit Defender pour point de terminaison, Defender pour Office 365, Microsoft 365 Defender, et bien plus encore dans le centre de sécurité Microsoft 365. Les équipes de sécurité peuvent désormais gérer tous les points de terminaison, les e-mails et les enquêtes entre produits, la configuration et la correction, sans avoir à accéder à des portails de produit distincts. [Découvrez les modifications](../defender/overview-security-center.md).
+> Le [Centre de sécurité Microsoft 365](https://security.microsoft.com) est à présent disponible. Cette nouvelle expérience introduit Defender pour point de terminaison, Defender pour Office 365, Microsoft 365 Defender et bien plus encore dans le Centre de sécurité Microsoft 365. [Découvrir les nouveautés](/microsoft-365/security/mtp/overview-security-center).

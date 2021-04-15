@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: Découvrez comment utiliser des filtres pour créer, modifier ou supprimer un affichage utilisateur personnalisé dans Microsoft 365.
+description: Apprenez à utiliser des filtres pour créer, modifier ou supprimer un affichage utilisateur personnalisé dans Microsoft 365.
 ms.openlocfilehash: 4bd4ea351612c2ae5175cd27fa7a689d671a8b62
 ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755571"
+ms.locfileid: "51759929"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Créer, modifier ou supprimer une vue utilisateur personnalisée
 
@@ -56,7 +56,7 @@ Vous pouvez créer et modifier vos affichages personnalisés dans le **volet** F
   
  **D - Licence de produit attribuée** Choisissez dans une liste des licences disponibles au niveau de votre organisation. Utilisez ce filtre pour afficher les utilisateurs qui ont la licence que vous avez sélectionnée. Les utilisateurs peuvent également avoir des licences supplémentaires. 
   
-Vous pouvez également filtrer en fonction des informations de profil utilisateur supplémentaires utilisées dans votre organisation, telles que le service, la ville, l'état ou la province, le pays ou la région, ou la fonction.
+Vous pouvez également filtrer en fonction des détails de profil utilisateur supplémentaires utilisés dans votre organisation, tels que le service, la ville, l'État ou la province, le pays ou la région, ou la fonction.
   
  **Autres conditions :**
   
@@ -66,7 +66,7 @@ Vous pouvez également filtrer en fonction des informations de profil utilisateu
     
 - **Utilisateurs sans permis** Sélectionnez cette case pour rechercher tous les utilisateurs qui n'ont pas reçu de licence. Les résultats de cette vue peuvent également inclure les utilisateurs qui ont une boîte aux lettres Exchange mais n'ont pas de licence. Pour suivre ces utilisateurs spécifiquement, utilisez le filtre Utilisateurs sans permis avec des boîtes aux lettres **ou des archives Exchange.** Les résultats de cette vue peuvent également inclure les utilisateurs qui ont une archive Exchange, mais n'ont pas de licence.
     
-- **Utilisateurs sans permis avec des boîtes aux lettres ou des archives Exchange** Sélectionnez cette case pour afficher les comptes d'utilisateur qui ont été créés dans Exchange Online et qui ont une boîte aux lettres Exchange, mais qui n'ont pas obtenu de licence Microsoft 365. Les résultats de ce filtre incluent les utilisateurs qui ont ou qui ont été affectés à une archive Exchange. 
+- **Utilisateurs sans permis avec des boîtes aux lettres ou des archives Exchange** Sélectionnez cette case pour afficher les comptes d'utilisateur qui ont été créés dans Exchange Online et qui ont une boîte aux lettres Exchange, mais qui n'ont pas été affectés à une licence Microsoft 365. Les résultats de ce filtre incluent les utilisateurs qui ont ou qui ont été affectés à une archive Exchange. 
 
 > [!NOTE]
 > Le **filtre Utilisateurs sans** permis avec boîtes aux lettres Exchange fonctionne dans les cas ci-après :
@@ -96,7 +96,7 @@ Vous pouvez également filtrer en fonction des informations de profil utilisateu
 
 2. Dans la page **Utilisateurs** actifs, sélectionnez **Affichages** et **Ajouter un affichage personnalisé.**
   
-3. Dans la page **Affichage personnalisé,** entrez le nom de votre filtre, choisissez les conditions de votre filtre personnalisé, puis sélectionnez **Ajouter**. Votre affichage personnalisé est désormais inclus dans la liste liste de filtres.
+3. Dans la page **Affichage** personnalisé, entrez le nom de votre filtre, choisissez les conditions de votre filtre personnalisé, puis sélectionnez **Ajouter**. Votre affichage personnalisé est désormais inclus dans la liste de listes de filtres.
 
 ::: moniker-end
 
@@ -107,7 +107,7 @@ Vous pouvez également filtrer en fonction des informations de profil utilisateu
 
 2. Dans la page **Utilisateurs** actifs, sélectionnez **Affichages** et **Ajouter un affichage personnalisé.**
   
-3. Dans la page **Affichage personnalisé,** entrez le nom de votre filtre, choisissez les conditions de votre filtre personnalisé, puis sélectionnez **Ajouter**. Votre affichage personnalisé est désormais inclus dans la liste liste de filtres.
+3. Dans la page **Affichage** personnalisé, entrez le nom de votre filtre, choisissez les conditions de votre filtre personnalisé, puis sélectionnez **Ajouter**. Votre affichage personnalisé est désormais inclus dans la liste de listes de filtres.
 
 ::: moniker-end
     
@@ -136,7 +136,7 @@ Vous pouvez également filtrer en fonction des informations de profil utilisateu
     > [!TIP]
     > Vous pouvez modifier uniquement les affichages personnalisés. 
   
-3. Dans la page **Affichage personnalisé,** modifiez les informations selon vos besoins, puis sélectionnez **Enregistrer.** Ou, pour supprimer le filtre, en bas de la page, sélectionnez **Supprimer l'affichage personnalisé.** 
+3. Dans la page **Affichage personnalisé,** modifiez les informations selon vos besoins, puis sélectionnez **Enregistrer.** Ou, pour supprimer le filtre, en bas de la page, sélectionnez **Supprimer l'affichage personnalisé**. 
 
 ::: moniker-end
 

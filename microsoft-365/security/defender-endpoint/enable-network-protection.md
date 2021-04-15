@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a513013c4b5f41cf95b876648882cb56ba818b32
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570995"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768997"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -28,20 +28,24 @@ ms.locfileid: "51570995"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[La protection du](network-protection.md) réseau permet d’empêcher les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux qui peuvent héberger des tentatives d’hameçonnage, des attaques et d’autres contenus malveillants sur Internet. Vous pouvez [auditer la protection réseau](evaluate-network-protection.md) dans un environnement de test pour afficher les applications qui seraient bloquées avant de l’activer.
+[La protection du](network-protection.md) réseau permet d'empêcher les employés d'utiliser n'importe quelle application pour accéder à des domaines dangereux qui peuvent héberger des tentatives d'hameçonnage, des attaques et d'autres contenus malveillants sur Internet. Vous pouvez [auditer la protection réseau](evaluate-network-protection.md) dans un environnement de test pour afficher les applications qui seraient bloquées avant de l'activer.
 
-[En savoir plus sur les options de configuration du filtrage réseau](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[En savoir plus sur les options de configuration du filtrage réseau](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## <a name="check-if-network-protection-is-enabled"></a>Vérifier si la protection réseau est activée
 
-Vérifiez si la protection réseau a été activée sur un appareil local à l’aide de l’éditeur du Registre.
+Vérifiez si la protection réseau a été activée sur un appareil local à l'aide de l'éditeur du Registre.
 
-1. Sélectionnez **le bouton** Démarrer dans la barre des tâches et tapez **regedit** pour ouvrir l’Éditeur du Registre
-1. Choisir **HKEY_LOCAL_MACHINE** dans le menu latéral
-1. Naviguer dans les menus imbrmbrés pour accéder aux stratégies **LOGICIELLEs**  >    >  **Microsoft**  >    >  **Windows Defender Windows Defender Exploit Guard** Network  >  **Protection**
-1. Sélectionnez **EnableNetworkProtection pour** voir l’état actuel de la protection réseau sur l’appareil
+1. Sélectionnez **le bouton** Démarrer dans la barre des tâches et tapez **regedit** pour ouvrir l'Éditeur du Registre
+
+2. Choisir **HKEY_LOCAL_MACHINE** dans le menu latéral
+
+3. Naviguer dans les menus imbrmbrés pour accéder aux stratégies **LOGICIELLEs**  >    >  **Microsoft**  >    >  **Windows Defender Windows Defender Exploit Guard** Network  >  **Protection**
+
+4. Sélectionnez **EnableNetworkProtection pour** voir l'état actuel de la protection réseau sur l'appareil
 
     * 0 ou **Off**
     * 1 ou **Sur**
@@ -51,7 +55,7 @@ Vérifiez si la protection réseau a été activée sur un appareil local à l�
 
 ## <a name="enable-network-protection"></a>Activer la protection réseau
 
-Activez la protection réseau à l’aide de l’une des méthodes ci-après :
+Activez la protection réseau à l'aide de l'une des méthodes ci-après :
 
 * [PowerShell](#powershell)
 * [Gestion des périphériques mobiles (MDM)](#mobile-device-management-mdm)
@@ -60,14 +64,14 @@ Activez la protection réseau à l’aide de l’une des méthodes ci-après :
 
 ### <a name="powershell"></a>PowerShell
 
-1. Tapez **powershell** dans le menu Démarrer, cliquez avec le **bouton droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur**
-2. Entrez l’cmdlet suivante :
+1. Tapez **powershell** dans le menu Démarrer, cliquez avec le **bouton droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu'administrateur**
+2. Entrez l'cmdlet suivante :
 
     ```PowerShell
     Set-MpPreference -EnableNetworkProtection Enabled
     ```
 
-3. Facultatif : activez la fonctionnalité en mode audit à l’aide de l’cmdlet suivante :
+3. Facultatif : activez la fonctionnalité en mode audit à l'aide de l'cmdlet suivante :
 
     ```PowerShell
     Set-MpPreference -EnableNetworkProtection AuditMode
@@ -81,11 +85,11 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (anciennement Intune)
 
-1. Connectez-vous au Centre d’administration Microsoft Endpoint Manager (https://endpoint.microsoft.com)
+1. Connectez-vous au Centre d'administration Microsoft Endpoint Manager (https://endpoint.microsoft.com)
 
-2. Créer ou modifier un profil [de configuration de la protection des points de terminaison](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
+2. Créer ou modifier un profil [de configuration de la protection des points de terminaison](/mem/intune/protect/endpoint-protection-configure)
 
-3. Sous « Paramètres de configuration » dans le flux de profil, allez à **Microsoft Defender Exploit Guard** Network  >  **filtering Network**  >  **protection**  >  **Enable** or **Audit only**
+3. Sous **Paramètres de configuration dans** le flux de profil, go to Microsoft Defender Exploit **Guard**  >  **Network filtering Network**  >  **protection**  >  **Enable** or **Audit only**
 
 ### <a name="group-policy"></a>Stratégie de groupe
 
@@ -95,28 +99,28 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
 
     *-Or-*
 
-    Sur un ordinateur de gestion de stratégie de groupe joint à un domaine, ouvrez la [Console](https://technet.microsoft.com/library/cc731212.aspx)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer et sélectionnez **Modifier.**
+    Sur un ordinateur de gestion de stratégie de groupe joint à un domaine, ouvrez la [Console](https://technet.microsoft.com/library/cc731212.aspx)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l'objet de stratégie de groupe que vous souhaitez configurer et sélectionnez **Modifier.**
 
-2. Dans **l’Éditeur de gestion des stratégies de** groupe, sélectionnez **Configuration** ordinateur et sélectionnez **Modèles d’administration.**
+2. Dans **l'Éditeur de gestion des stratégies de** groupe, sélectionnez **Configuration** ordinateur et sélectionnez **Modèles d'administration.**
 
-3. Développez l’arborescence **des composants Windows** de  >  **l’Antivirus Microsoft Defender** Windows Defender Exploit  >  **Guard** Network  >  **Protection.**
+3. Développez l'arborescence **des composants Windows** de  >  **l'Antivirus Microsoft Defender** Windows Defender Exploit  >  **Guard** Network  >  **Protection.**
 
 > [!NOTE]
-> Sur les versions antérieures de Windows, le chemin d’accès de la stratégie de groupe peut dire « antivirus Windows Defender » au lieu de « Antivirus Microsoft Defender ».
+> Sur les versions antérieures de Windows, le chemin d'accès de la stratégie de groupe peut dire « antivirus Windows Defender » au lieu de « Antivirus Microsoft Defender ».
 
-4. Double-cliquez sur le paramètre Empêcher les utilisateurs **et les applications d’accéder** au paramètre sites web dangereux et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
+4. Double-cliquez sur le paramètre Empêcher les utilisateurs **et les applications d'accéder** au paramètre sites web dangereux et définissez l'option sur **Activé.** Dans la section Options, vous devez spécifier l'une des options suivantes :
     * **Bloquer** : les utilisateurs ne peuvent pas accéder aux domaines et aux adresses IP malveillants
     * **Désactiver (par défaut)** : la fonctionnalité de protection réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants
-    * **Mode Audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal des événements Windows. Toutefois, l’utilisateur ne sera pas empêché de visiter l’adresse.
+    * **Mode Audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal des événements Windows. Toutefois, l'utilisateur ne sera pas empêché de visiter l'adresse.
 
 > [!IMPORTANT]
-> Pour activer entièrement la protection réseau,  vous devez définir  l’option stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
+> Pour activer entièrement la protection réseau,  vous devez définir  l'option stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
 
-Confirmez que la protection réseau est activée sur un ordinateur local à l’aide de l’éditeur du Registre :
+Confirmez que la protection réseau est activée sur un ordinateur local à l'aide de l'éditeur du Registre :
 
-1. Sélectionnez **Démarrer** et tapez **regedit** pour ouvrir **l’Éditeur du Registre.**
+1. Sélectionnez **Démarrer** et tapez **regedit** pour ouvrir **l'Éditeur du Registre.**
 
-2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection**
+2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
 
 3. Sélectionnez **EnableNetworkProtection et** confirmez la valeur :
    * 0=Off

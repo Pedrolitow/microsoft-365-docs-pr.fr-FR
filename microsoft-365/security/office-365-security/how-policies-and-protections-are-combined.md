@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur l'ordre d'application des protections dans Exchange Online Protection (EOP) et sur la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3419cba5781e7ab1042f7312c721069d88fb8767
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b36e66f095ff81f551a55d2dc2af0693f8b3455a
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687648"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769009"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 
@@ -41,6 +41,8 @@ Deux facteurs majeurs déterminent la stratégie appliquée à un message :
 
 - **La priorité du type de protection de** la messagerie électronique : cette commande n'est pas configurable et est décrite dans le tableau suivant :
 
+  <br>
+
   ****
 
   |Priorité|Protection de la messagerie|Catégorie|Où gérer|
@@ -57,19 +59,21 @@ Deux facteurs majeurs déterminent la stratégie appliquée à un message :
 
   <sup>\*</sup> Ces fonctionnalités sont disponibles uniquement dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.
 
-- Priorité de la stratégie : pour chaque type de protection (anti-courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc.), il existe une stratégie par défaut qui s'applique à tout le monde, mais vous pouvez créer des stratégies personnalisées qui s'appliquent à des utilisateurs spécifiques. Chaque stratégie personnalisée a une valeur de priorité qui détermine l'ordre d'application des stratégies. La stratégie par défaut est toujours appliquée en dernier.
+- Priorité de la stratégie : pour chaque type de stratégie (anti-courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc.), il existe une stratégie par défaut qui s'applique à tout le monde, mais vous pouvez créer des stratégies personnalisées qui s'appliquent à des utilisateurs spécifiques. Chaque stratégie personnalisée a une valeur de priorité qui détermine l'ordre d'application des stratégies. La stratégie par défaut est toujours appliquée en dernier.
 
   Si un utilisateur est défini dans plusieurs stratégies du même type, seule la stratégie ayant la priorité la plus élevée lui est appliquée. Les stratégies restantes de ce type ne sont pas évaluées pour l'utilisateur (y compris la stratégie par défaut).
 
 Par exemple, prenons les stratégies anti-hameçonnage suivantes dans Microsoft Defender pour Office 365 qui s'appliquent aux mêmes utilisateurs et un message identifié comme usurpant l'identité et l'usurpation d'identité d'utilisateur :
 
-  ****
+<br>
 
-  |Nom de la stratégie|Priorité|Emprunt d’identité de l’utilisateur|Détection d’usurpation d’identité|
-  |---|---|---|---|
-  |Stratégie A|1|Activé|Désactivé|
-  |Stratégie B|2|Désactivé|Activé|
-  |
+****
+
+|Nom de la stratégie|Priorité|Emprunt d’identité de l’utilisateur|Détection d’usurpation d’identité|
+|---|---|---|---|
+|Stratégie A|1|Activé|Désactivé|
+|Stratégie B|2|Désactivé|Activé|
+|
 
 1. Le message est marqué et traité comme une usurpation d’identité, car l’usurpation d’identité a une priorité plus élevée (4) que l’emprunt d’identité de l’utilisateur (5).
 2. La stratégie A est appliquée aux utilisateurs, car elle a une priorité plus élevée que la stratégie B.

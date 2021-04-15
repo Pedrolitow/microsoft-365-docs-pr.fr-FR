@@ -7,19 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 77f3c4f478e2124010445bacfe2c10c5810ed480
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9b1c9bc8c86c5b348e3c4d2a51e0bfafaf3e7174
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690400"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765466"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 
@@ -33,11 +33,11 @@ ms.locfileid: "51690400"
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
 
-Il est essentiel de maintenir la protection antivirus à jour. Il existe deux composants pour gérer les mises à jour de protection de l'Antivirus Microsoft Defender : 
+Il est essentiel de maintenir la protection antivirus à jour. Il existe deux composants pour la gestion des mises à jour de protection pour l'Antivirus Microsoft Defender : 
 - *l'endroit* à partir de laquelle les mises à jour sont téléchargées ; et 
 - *Lorsque les* mises à jour sont téléchargées et appliquées. 
 
-Cet article explique comment spécifier l'endroit où les mises à jour doivent être téléchargées (c'est également ce qu'on appelle l'ordre de retour). Voir Gérer les mises à jour de [l'Antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md) et appliquer les lignes de base pour une vue d'ensemble sur le fonctionnement des mises à jour et la configuration d'autres aspects des mises à jour (par exemple, la planification des mises à jour).
+Cet article explique comment spécifier l'endroit où les mises à jour doivent être téléchargées (c'est également ce qu'on appelle l'ordre de retour). Consultez la rubrique Gérer les mises à jour de [l'Antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md) et appliquez les lignes de base pour obtenir une vue d'ensemble sur le fonctionnement des mises à jour et la configuration d'autres aspects des mises à jour (telles que la planification des mises à jour).
 
 > [!IMPORTANT]
 > Les mises à jour de l'Intelligence de sécurité de l'Antivirus Microsoft Defender sont mises à jour via Windows Update et, à compter du lundi 21 octobre 2019, toutes les mises à jour de l'intelligence de sécurité seront signées exclusivement par SHA-2. Vos appareils doivent être mis à jour pour prendre en charge SHA-2 afin de mettre à jour vos informations de sécurité. Pour plus d'informations, voir [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).  
@@ -68,7 +68,7 @@ Pour garantir le meilleur niveau de protection, Microsoft Update permet des mise
 > [!IMPORTANT]
 > Si vous avez définie les mises à jour de [la page](https://www.microsoft.com/security/portal/definitions/adl.aspx) d'aide à la sécurité Microsoft comme source de récupération après Windows Server Update Service ou Microsoft Update, les mises à jour ne sont téléchargées qu'à partir des mises à jour de l'intelligence de sécurité lorsque la mise à jour actuelle est considérée comme étant hors date. (Par défaut, cela fait sept jours consécutifs que vous ne pouvez pas appliquer les mises à jour à partir du service Windows Server Update ou des services Microsoft Update).
 > Toutefois, vous pouvez définir le nombre de jours avant que la protection ne soit signalée comme [étant hors date.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)<p>
-> À compter du lundi 21 octobre 2019, les mises à jour de l'intelligence de sécurité seront signées exclusivement par SHA-2. Les appareils doivent être mis à jour pour prendre en charge SHA-2 afin d'obtenir les dernières mises à jour de l'intelligence de sécurité. Pour plus d'informations, voir [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
+> À compter du lundi 21 octobre 2019, les mises à jour des informations de sécurité seront exclusivement signées SHA-2. Les appareils doivent être mis à jour pour prendre en charge SHA-2 afin d'obtenir les dernières mises à jour de l'intelligence de sécurité. Pour plus d'informations, voir [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 Chaque source présente des scénarios classiques qui dépendent de la façon dont votre réseau est configuré, en plus de la fréquence de publication des mises à jour, comme décrit dans le tableau suivant :
 
@@ -78,7 +78,7 @@ Chaque source présente des scénarios classiques qui dépendent de la façon do
 |Microsoft Update | Vous souhaitez que vos points de terminaison se connectent directement à Microsoft Update. Cela peut être utile pour les points de terminaison qui se connectent de manière irrégulière à votre réseau d'entreprise, ou si vous n'utilisez pas Windows Server Update Service pour gérer vos mises à jour.|
 |Partage de fichiers | Vous avez des appareils non connectés à Internet (tels que des VM). Vous pouvez utiliser votre hôte de vm connecté à Internet pour télécharger les mises à jour sur un partage réseau, à partir duquel les VM peuvent obtenir les mises à jour. Consultez le [guide de déploiement VDI](deployment-vdi-microsoft-defender-antivirus.md) pour savoir comment les partages de fichiers peuvent être utilisés dans les environnements d'infrastructure de bureau virtuel (VDI).|
 |Microsoft Endpoint Manager | Vous utilisez Microsoft Endpoint Manager pour mettre à jour vos points de terminaison.|
-|Mises à jour de l'intelligence de sécurité pour l'Antivirus Microsoft Defender et d'autres logiciels anti-programme malveillant Microsoft (anciennement appelés MMPC) |[Assurez-vous que vos appareils sont mis à jour pour prendre en charge SHA-2.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) Les mises à jour de l'intelligence de sécurité de l'antivirus Microsoft Defender sont mises à jour via Windows Update et, à compter du lundi 21 octobre 2019, les mises à jour de l'intelligence de sécurité seront signées exclusivement par SHA-2. <br/>Téléchargez les dernières mises à jour de protection en raison d'une infection récente ou pour mettre en service une image de base forte pour le [déploiement VDI.](deployment-vdi-microsoft-defender-antivirus.md) Cette option doit généralement être utilisée uniquement comme source de retour final, et non comme source principale. Elle sera utilisée uniquement si les mises à jour ne peuvent pas être téléchargées à partir de Windows Server Update Service ou de Microsoft Update pendant un [nombre de jours spécifié.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
+|Mises à jour des informations de sécurité pour l'Antivirus Microsoft Defender et d'autres logiciels anti-programme malveillant Microsoft (anciennement appelés MMPC) |[Assurez-vous que vos appareils sont mis à jour pour prendre en charge SHA-2.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) Les mises à jour de l'intelligence de sécurité de l'antivirus Microsoft Defender sont mises à jour via Windows Update et, à compter du lundi 21 octobre 2019, les mises à jour de l'intelligence de sécurité seront signées exclusivement par SHA-2. <br/>Téléchargez les dernières mises à jour de protection en raison d'une infection récente ou pour mettre en service une image de base forte pour le [déploiement VDI.](deployment-vdi-microsoft-defender-antivirus.md) Cette option doit généralement être utilisée uniquement comme source de retour final, et non comme source principale. Elle sera utilisée uniquement si les mises à jour ne peuvent pas être téléchargées à partir de Windows Server Update Service ou de Microsoft Update pendant un [nombre de jours spécifié.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
 
 Vous pouvez gérer l'ordre dans lequel les sources de mise à jour sont utilisées avec la stratégie de groupe, Microsoft Endpoint Configuration Manager, les cmdlets PowerShell et WMI.
 
@@ -99,7 +99,7 @@ Les procédures de cet article décrivent d'abord comment définir  la commande,
 
    1.  Double-cliquez sur **le paramètre Définir l'ordre** des sources de téléchargement des mises à jour d'informations de sécurité et définissez l'option sur **Activé.**
 
-   2.  Entrez l'ordre des sources, séparés par un seul canal, par exemple : , comme `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC` illustré dans la capture d'écran suivante.
+   2.  Entrez l'ordre des sources, séparés par un seul canal, par exemple : `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC` , comme illustré dans la capture d'écran suivante.
 
    ![Capture d'écran du paramètre de stratégie de groupe répertoriant l'ordre des sources](images/defender/wdav-order-update-sources.png)
 
@@ -255,13 +255,13 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
 11. Définissez l'emplacement du partage dans la stratégie sur le partage.
 
     > [!NOTE]
-    > N'ajoutez pas le dossier x64 (ou x86) dans le chemin d'accès. Le mpcmdrun.exe processus de création de projet l'ajoute automatiquement.
+    > N'ajoutez pas le dossier x64 (ou x86) dans le chemin d'accès. Le processus mpcmdrun.exe l'ajoute automatiquement.
 
 ## <a name="related-articles"></a>Articles connexes
 
 - [Déployer l'Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour de l'Antivirus Microsoft Defender et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour forcées basées sur des événements](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les appareils mobiles et les VM](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

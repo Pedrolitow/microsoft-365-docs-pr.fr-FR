@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3f56c18b66a27adfb1384f5c3f5e6c06034247d4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 81c7fb2bb7cd20fea3f343097811078ed744c3eb
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690434"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765370"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Gérer les mises à jour et les analyses de l'Antivirus Microsoft Defender pour les points de terminaison qui ne sont plus à jour
 
@@ -64,7 +64,7 @@ Si l'Antivirus Microsoft Defender n'a pas téléchargé les mises à jour de pro
 
 4. Développez l'arborescence **des composants Windows > l'Antivirus Microsoft Defender > mises à jour des signatures.**
 
-5. Double-cliquez sur **le** paramètre Définir le nombre de jours après lequel une mise à jour de l'intelligence de sécurité de rattrapage est requise et définissez l'option **sur Activé.** Entrez le nombre de jours après lesquels vous souhaitez que Microsoft Defender AV vérifie et télécharge la dernière mise à jour de la protection.
+5. Double-cliquez sur **définir** le nombre de jours après lequel une mise à jour de l'intelligence de sécurité de rattrapage est requise et définissez l'option **sur Activé.** Entrez le nombre de jours après lesquels vous souhaitez que Microsoft Defender AV vérifie et télécharge la dernière mise à jour de la protection.
 
 6. Cliquez sur **OK**.
 
@@ -76,7 +76,7 @@ Utilisez les cmdlets suivantes :
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-Pour [plus d'informations](use-powershell-cmdlets-microsoft-defender-antivirus.md)  sur l'utilisation de PowerShell avec l'Antivirus Microsoft Defender, voir les cmdlets Utiliser PowerShell pour configurer et exécuter les [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
+Pour [plus d'informations](use-powershell-cmdlets-microsoft-defender-antivirus.md)  sur l'utilisation de PowerShell avec l'Antivirus Microsoft Defender, voir les [cmdlets](/powershell/module/defender/) Utiliser PowerShell pour configurer et exécuter l'Antivirus Microsoft Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>Utiliser Windows Management Instruction (WMI) pour configurer des mises à jour de protection de rattrapage
 
@@ -92,7 +92,7 @@ Pour plus d'informations et les paramètres autorisés, voir les informations su
 
 ## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>Définir le nombre de jours avant que la protection ne soit signalée comme non à jour
 
-Vous pouvez également spécifier le nombre de jours après lesquels la protection de l'Antivirus Microsoft Defender est considérée comme ancienne ou non à jour. Après le nombre de jours spécifié, le client se signale comme étant hors date et affiche une erreur à l'utilisateur du PC. L'Antivirus Microsoft Defender peut également tenter de télécharger une mise à jour à partir d'autres sources (en fonction de l'ordre de [source](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)de base défini), par exemple lors de l'utilisation de MMPC comme source secondaire après avoir défini WSUS ou Microsoft Update comme première source.
+Vous pouvez également spécifier le nombre de jours après lesquels la protection de l'Antivirus Microsoft Defender est considérée comme ancienne ou non à jour. Après le nombre de jours spécifié, le client se signale comme étant hors date et affiche une erreur à l'utilisateur du PC. L'Antivirus Microsoft Defender peut également tenter de télécharger une mise à jour à partir d'autres sources (en fonction de l'ordre de [source](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)de base défini), par exemple lorsque vous utilisez MMPC comme source secondaire après avoir défini WSUS ou Microsoft Update comme première source.
 
 ### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Utiliser la stratégie de groupe pour spécifier le nombre de jours avant que la protection ne soit considérée comme non à jour
 
@@ -108,7 +108,7 @@ Vous pouvez également spécifier le nombre de jours après lesquels la protecti
 
     2. Cliquez sur **OK**.
 
-    3.  Double-cliquez sur Définir le nombre de jours avant que les **définitions de virus** ne soient considérées comme étant à jour et définissez l'option **sur Activé.** Entrez le nombre de jours après lesquels vous souhaitez que l'Antivirus Microsoft Defender considère l'intelligence de sécurité antivirus comme étant à jour.
+    3.  Double-cliquez sur Définir le nombre de jours avant que les **définitions** de virus ne soient considérées comme étant à jour et définissez l'option **sur Activé.** Entrez le nombre de jours après lesquels vous souhaitez que l'Antivirus Microsoft Defender considère l'intelligence de sécurité antivirus comme étant à jour.
 
     4. Cliquez sur **OK**.
 
@@ -119,7 +119,7 @@ Vous pouvez définir le nombre d'analyses programmées consécutives qui peuvent
 
 Le processus d'activation de cette fonctionnalité est :
 
-1. Configurer au moins une analyse programmée (voir la rubrique Planifier [les analyses).](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+1. Configurer au moins une analyse programmée (voir la rubrique Planification [des analyses).](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 2. Activez la fonctionnalité d'analyse de rattrapage.
 3. Définissez le nombre d'analyses qui peuvent être ignorées avant qu'une analyse de rattrapage ne se produise.
 
@@ -155,7 +155,7 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-Pour plus d'informations sur l'utilisation de PowerShell avec l'Antivirus Microsoft Defender, consultez les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)  pour gérer l'Antivirus Microsoft Defender et les [cmdlets](/powershell/module/defender/) Defender.
+Pour plus d'informations sur l'utilisation de PowerShell avec l'Antivirus Microsoft Defender, consultez les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)  pour gérer les [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>Utiliser Windows Management Instruction (WMI) pour configurer des analyses de rattrapage
 
@@ -184,7 +184,7 @@ Pour plus d'informations et les paramètres autorisés, voir les informations su
 
 - [Déployer l'Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour de l'Antivirus Microsoft Defender et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Gérer le moment où les mises à jour de la protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+- [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour forcées basées sur des événements](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les périphériques mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -7,19 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4a117d2743436381029d047693f81303e5908b2b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 94375bc843c6512616d49345bcc9e7f63899a708
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690339"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765082"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurer des exclusions pour les fichiers ouverts par des processus
 
@@ -47,7 +47,7 @@ Lorsque vous ajoutez un processus à la liste d'exclusions de processus, l'Antiv
 
 Les exclusions s'appliquent uniquement à la protection et à la surveillance en temps [réel toujours en temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Elles ne s'appliquent pas aux analyses programmées ou à la demande.
 
-Les modifications apportées avec  la stratégie de groupe aux listes d'exclusions s'afficheront dans les listes de l'application [Sécurité Windows.](microsoft-defender-security-center-antivirus.md) Toutefois, les modifications apportées dans l'application Sécurité Windows **ne s'afficheront pas** dans les listes de stratégie de groupe.
+Les modifications apportées avec la stratégie de groupe aux **listes** d'exclusions s'afficheront dans les listes de [l'application Sécurité Windows.](microsoft-defender-security-center-antivirus.md) Toutefois, les modifications apportées dans l'application Sécurité Windows **ne s'afficheront pas** dans les listes de stratégie de groupe.
 
 Vous pouvez ajouter, supprimer et consulter les listes pour les exclusions dans la stratégie de groupe, Microsoft Endpoint Configuration Manager, Microsoft Intune et avec l'application sécurité Windows, et vous pouvez utiliser des caractères génériques pour personnaliser davantage les listes.
 
@@ -73,7 +73,7 @@ Découvrez [comment créer et déployer des stratégies anti-programme](/configm
 
 2. Dans **l'Éditeur de gestion des stratégies de** groupe, cliquez sur **Configuration** ordinateur et cliquez **sur Modèles d'administration.**
 
-3. Développez l'arborescence **des composants Windows > Exclusions**> Antivirus Microsoft Defender.
+3. Développez l'arborescence **des composants Windows > exclusions > antivirus Microsoft Defender.**
 
 4. Double-cliquez sur **Exclusions de processus** et ajoutez les exclusions :
 
@@ -126,7 +126,7 @@ Pour plus d'informations et les paramètres autorisés,  [voir Windows Defender 
 
 ### <a name="use-the-windows-security-app-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Utiliser l'application Sécurité Windows pour exclure des analyses les fichiers qui ont été ouverts par des processus spécifiés
 
-Voir [Ajouter des exclusions dans l'application Sécurité Windows](microsoft-defender-security-center-antivirus.md) pour obtenir des instructions.
+Pour [obtenir des instructions, voir](microsoft-defender-security-center-antivirus.md) Ajouter des exclusions dans l'application Sécurité Windows.
 
 ## <a name="use-wildcards-in-the-process-exclusion-list"></a>Utiliser des caractères génériques dans la liste d'exclusions de processus
 
@@ -152,7 +152,7 @@ Si vous utilisez PowerShell, vous pouvez récupérer la liste de deux manières 
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Valider la liste d'exclusions à l'aide de MpCmdRun
 
-Pour vérifier les exclusions avec l'outil en ligne de commande [mpcmdrun.exe, ](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)utilisez la commande suivante :
+Pour vérifier les exclusions avec l'outil de ligne de commande [dédié mpcmdrun.exe, ](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)utilisez la commande suivante :
 
 ```DOS
 MpCmdRun.exe -CheckExclusion -path <path>
@@ -164,7 +164,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Passer en revue la liste des exclusions avec toutes les autres préférences de l'Antivirus Microsoft Defender à l'aide de PowerShell
 
-Utilisez l'cmdlet suivante :
+Utilisez la cmdlet suivante :
 
 ```PowerShell
 Get-MpPreference

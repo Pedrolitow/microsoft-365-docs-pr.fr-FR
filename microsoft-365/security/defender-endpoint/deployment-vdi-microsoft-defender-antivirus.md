@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,12 +14,12 @@ ms.date: 12/28/2020
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b81addbcaabb1c5ea0d344dbaab9d76a8b100c2b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: fed66586dc0607989e407ecd790d2af8c40e2939
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690722"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765730"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l'Antivirus Microsoft Defender dans un environnement d'infrastructure de bureau virtuel (VDI)
 
@@ -34,7 +34,7 @@ Outre les configurations matérielles ou locales standard, vous pouvez égalemen
 
 Pour [plus d'informations](/azure/virtual-desktop) sur les services Bureau à distance Microsoft et la prise en charge VDI, voir la documentation de Windows Virtual Desktop.
 
-Pour les machines virtuelles azure, voir [Installer Endpoint Protection dans Azure Defender.](/azure/security-center/security-center-install-endpoint-protection)
+Pour les machines virtuelles Azure, voir [Installer Endpoint Protection dans Azure Defender.](/azure/security-center/security-center-install-endpoint-protection)
 
 Avec la possibilité de déployer facilement des mises à jour sur des ordinateurs VM en cours d'exécution dans des VDIs, nous avons raccourci ce guide pour vous concentrer sur la façon dont vous pouvez obtenir des mises à jour sur vos ordinateurs rapidement et facilement. Vous n'avez plus besoin de créer et de sceller régulièrement des images d'or, car les mises à jour sont étendues dans leurs bits de composant sur le serveur hôte, puis téléchargées directement sur la VM lorsqu'elle est allumée.
 
@@ -59,7 +59,7 @@ Dans Windows 10, version 1903, nous avons introduit la fonctionnalité d'intelli
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>Utilisez la stratégie de groupe pour activer la fonctionnalité d'intelligence de sécurité partagée :
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la Console de gestion des stratégies de groupe, cliquez avec le bouton droit sur l'objet de stratégie de groupe à configurer, puis cliquez sur **Modifier**.
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la Console de gestion des stratégies de groupe, cliquez avec le bouton droit sur l'objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 
 2. Dans **l'Éditeur de gestion des stratégies de** groupe, allez à **Configuration ordinateur.**
 
@@ -110,7 +110,7 @@ Les packages d'informations de sécurité sont généralement publiés toutes le
 
 1. Sur l'ordinateur de gestion, ouvrez le menu Démarrer et tapez **Planification des tâches.** Ouvrez-le et **sélectionnez Créer une tâche...** sur le panneau latéral.
 
-2. Entrez le nom en **tant que décompresseur security intelligence**. Go to the **Trigger** tab. Sélectionnez **Nouveau...** > **Tous** les jours, puis sélectionnez **OK**.
+2. Entrez le nom en **tant que décompresseur security intelligence**. Go to the **Trigger** tab. Sélectionnez **Nouveau...** > **Tous les** jours, puis sélectionnez **OK.**
 
 3. Go to the **Actions** tab. Sélectionnez **Nouveau...** Entrez **PowerShell dans** le **champ Programme/Script.** Entrez `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` le champ Ajouter des **arguments.** Sélectionnez **OK**.
 
@@ -144,7 +144,7 @@ Voici un exemple : `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
 Les analyses programmées s'exécutent en plus de la protection et de [l'analyse en temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md)
 
-L'heure de début de l'analyse elle-même est toujours basée sur la stratégie d'analyse programmée (**ScheduleDay**, **ScheduleTime** et **ScheduleQuickScanTime**). La randomisation entraîne le démarrage par l'Antivirus Microsoft Defender d'une analyse sur chaque ordinateur dans une fenêtre de 4 heures à partir de l'heure définie pour l'analyse programmée.
+L'heure de début de l'analyse elle-même est toujours basée sur la stratégie d'analyse programmée (**ScheduleDay**, **ScheduleTime** et **ScheduleQuickScanTime**). La randomisation entraîne le démarrage par l'Antivirus Microsoft Defender d'une analyse sur chaque ordinateur dans une fenêtre de 4 heures à partir de la période définie pour l'analyse programmée.
 
 Voir [Analyses de planification pour](scheduled-catch-up-scans-microsoft-defender-antivirus.md) les autres options de configuration disponibles pour les analyses programmées.
 
@@ -152,7 +152,7 @@ Voir [Analyses de planification pour](scheduled-catch-up-scans-microsoft-defende
 
 Vous pouvez spécifier le type d'analyse à effectuer lors d'une analyse programmée. Les analyses rapides sont l'approche préférée, car elles sont conçues pour rechercher tous les endroits où les programmes malveillants doivent résider pour être actifs. La procédure suivante décrit comment configurer des analyses rapides à l'aide de la stratégie de groupe.
 
-1. Dans votre Éditeur de stratégie de groupe, allez aux **modèles d'administration**  >  **composants Windows**  >  **Analyse antivirus Microsoft Defender**  >  .
+1. Dans votre Éditeur de stratégie de groupe, allez aux **modèles d'administration**  >  **composants Windows** Analyse antivirus Microsoft  >  **Defender**  >  .
 
 2. Sélectionnez **Spécifier le type d'analyse à utiliser pour une analyse** programmée, puis modifiez le paramètre de stratégie.
 
@@ -178,7 +178,7 @@ La suppression des notifications empêche l'affichage des notifications de l'Ant
 
 > [!TIP]
 > Pour ouvrir le Centre de actions sur Windows 10, prenez l'une des étapes suivantes :
-> - À l'extrémité droite de la barre des tâches, sélectionnez l'icône Centre de tâches.
+> - À l'extrémité droite de la barre des tâches, sélectionnez l'icône centre de travail.
 > - Appuyez sur le bouton de la touche du logo Windows + A.
 > - Sur un appareil tactile, effectuez un balayage à partir du bord droit de l'écran.
 
@@ -187,7 +187,7 @@ La suppression des notifications empêche l'affichage des notifications de l'Ant
 La désactivation d'une analyse après une mise à jour empêche l'analyse de se produire après la réception d'une mise à jour. Vous pouvez appliquer ce paramètre lors de la création de l'image de base si vous avez également exécuté une analyse rapide. De cette façon, vous pouvez empêcher la nouvelle mise à jour de la VM d'effectuer à nouveau une analyse (comme vous l'avez déjà analysé lors de la création de l'image de base).
 
 > [!IMPORTANT]
-> L'exécution d'analyses après une mise à jour permet de s'assurer que vos VM sont protégées avec les dernières mises à jour d'informations de sécurité. La désactivation de cette option réduit le niveau de protection de vos VM et ne doit être utilisée que lors de la création ou du déploiement de l'image de base.
+> L'exécution d'analyses après une mise à jour permet de s'assurer que vos VM sont protégées avec les dernières mises à jour d'intelligence de sécurité. La désactivation de cette option réduit le niveau de protection de vos VM et ne doit être utilisée que lors de la création ou du déploiement de l'image de base.
 
 1. Dans votre Éditeur de stratégie de groupe, allez aux **composants Windows**  >  **Microsoft Defender Antivirus** Security Intelligence  >  **Updates**.
 
@@ -217,9 +217,9 @@ Cette stratégie force une analyse si la VM a manqué au moins deux analyses pro
 
 ## <a name="enable-headless-ui-mode"></a>Activer le mode d'interface utilisateur sans en-tête
 
-1. Dans votre Éditeur de stratégie de groupe, allez à **l'interface** client de l'antivirus Microsoft Defender pour les composants  >  **Windows.**  >  
+1. Dans votre Éditeur de stratégie de groupe, allez à l'interface client de l'Antivirus Microsoft Defender pour les **composants**  >  **Windows.**  >  
 
-2. Sélectionnez **Activer le mode d'interface utilisateur** sans tête et modifiez la stratégie.
+2. Sélectionnez **Activer le mode d'interface utilisateur sans tête** et modifiez la stratégie.
 
 3. Définissez la stratégie **sur Activé.**
 
@@ -233,7 +233,7 @@ Cette stratégie masque toute l'interface utilisateur de l'Antivirus Microsoft D
 
 Les exclusions peuvent être ajoutées, supprimées ou personnalisées en fonction de vos besoins.
 
-Pour plus d'informations, voir [Configurer les exclusions de l'Antivirus Microsoft Defender sur Windows Server.](configure-exclusions-microsoft-defender-antivirus.md)
+Pour plus d'informations, voir Configurer les exclusions de [l'Antivirus Microsoft Defender sur Windows Server.](configure-exclusions-microsoft-defender-antivirus.md)
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

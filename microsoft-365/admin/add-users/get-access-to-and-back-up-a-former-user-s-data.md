@@ -28,7 +28,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755605"
+ms.locfileid: "51759989"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Accéder aux données d'un ancien utilisateur et les sauvegarder
 
@@ -70,7 +70,7 @@ Pour conserver les fichiers OneDrive d'un ancien utilisateur, donnez-vous d'abor
 > Vous pouvez déplacer ou copier jusqu'à 500 Mo de fichiers et de dossiers à la fois.<br/>
 > Lorsque vous déplacez ou copiez des documents qui ont un historique des versions, seule la dernière version est déplacée.  
 
-## <a name="revoke-admin-access-to-a-users-onedrive"></a>Révoquer l'accès administrateur au OneDrive d'un utilisateur
+## <a name="revoke-admin-access-to-a-users-onedrive"></a>Révoquer l'accès administrateur à OneDrive d'un utilisateur
 
 En tant qu'administrateur global, vous pouvez vous accorder l'accès au contenu dans OneDrive d'un utilisateur, mais vous pouvez supprimer votre accès lorsque vous n'en avez plus besoin. 
 
@@ -94,7 +94,7 @@ En tant qu'administrateur global, vous pouvez vous accorder l'accès au contenu 
 
 2. Dans le volet gauche, sélectionnez **Centres d'administration** \> **SharePoint**. (Vous devrez peut-être sélectionner **Afficher tout** pour afficher la liste des centres d’administration.)
 
-3. Si le Centre d'administration SharePoint classique apparaît, sélectionnez **Ouvrir** maintenant en haut de la page pour ouvrir le Centre d'administration SharePoint.
+3. Si le Centre d'administration  SharePoint classique apparaît, sélectionnez Ouvrir maintenant en haut de la page pour ouvrir le Centre d'administration SharePoint.
 
 4. Dans le volet gauche, sélectionnez **Autres fonctionnalités.**
 
@@ -134,7 +134,7 @@ Pour enregistrer les messages électroniques, le calendrier, les tâches et les 
     > [!NOTE]
     > Vous pouvez exporter un compte à la fois. Si vous souhaitez exporter plusieurs comptes, une fois qu'un compte est exporté, répétez ces étapes. 
   
-    ![Boîte de dialogue Exporter le fichier de données Outlook avec le dossier supérieur sélectionné et inclure les sous-dossiers sélectionnés](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![Boîte de dialogue Exporter le fichier de données Outlook avec le dossier supérieur sélectionné et inclure les sous-dossiers cochés](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. Sélectionnez **Suivant**.
     

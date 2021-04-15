@@ -6,19 +6,19 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 74732c033ee1a8d45fe6f9a44bf641a3a9adbc13
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 338dc249bcd4e092f5a2be39e3d045d094ed957a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690292"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765214"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l'extension de fichier et de l'emplacement du dossier
 
@@ -168,7 +168,7 @@ Pour plus d'informations, [voir Windows Defender API WMIv2.](/previous-versions/
 
 ### <a name="use-the-windows-security-app-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser l'application Sécurité Windows pour configurer les exclusions de nom de fichier, de dossier ou d'extension de fichier
 
-Voir [Ajouter des exclusions dans l'application Sécurité Windows](microsoft-defender-security-center-antivirus.md) pour obtenir des instructions.
+Pour [obtenir des instructions, voir](microsoft-defender-security-center-antivirus.md) Ajouter des exclusions dans l'application Sécurité Windows.
 
 <a id="wildcards"></a>
 
@@ -193,7 +193,7 @@ Le tableau suivant décrit comment les caractères génériques peuvent être ut
         
 
 > [!IMPORTANT]
-> Si vous mélangez un argument d'exclusion de fichier avec un argument d'exclusion de dossier, les règles s'arrêtent à la correspondance de l'argument de fichier dans le dossier de correspondance et ne recherchent aucune correspondance de fichier dans les sous-dossiers.
+> Si vous mélangez un argument d'exclusion de fichier avec un argument d'exclusion de dossier, les règles s'arrêteront à la correspondance d'argument de fichier dans le dossier de correspondance et ne rechercheront pas de correspondances de fichiers dans les sous-dossiers.
 > Par exemple, vous pouvez exclure tous les fichiers qui commencent par « date » dans les dossiers et à l'aide de `c:\data\final\marked` `c:\data\review\marked` l'argument de règle `c:\data\*\marked\date*` .
 > Toutefois, cet argument ne correspond à aucun fichier des sous-dossiers sous `c:\data\final\marked` ou `c:\data\review\marked` .
 
@@ -324,7 +324,7 @@ $WDAVprefs.ExclusionExtension
 $WDAVprefs.ExclusionPath
 ```
 
-Dans l'exemple suivant, la liste est divisée en nouvelles lignes pour chaque utilisation de `Add-MpPreference` l'cmdlet :
+Dans l'exemple suivant, la liste est divisée en nouvelles lignes pour chaque utilisation de la `Add-MpPreference` cmdlet :
 
 ![Sortie PowerShell affichant uniquement les entrées de la liste d'exclusions](images/defender/wdav-powershell-get-exclusions-variable.png)
 

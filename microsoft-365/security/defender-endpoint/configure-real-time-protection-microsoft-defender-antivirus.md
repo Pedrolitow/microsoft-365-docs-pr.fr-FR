@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 12/16/2019
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 7fa4f90282bf87c1def1917037e090b213cad3db
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 807348fcbf3ad4ef9698b11b194d752d8038b4c9
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690327"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765106"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Activer et configurer la protection toujours active de l'Antivirus Microsoft Defender dans la stratégie de groupe
 
@@ -33,7 +33,7 @@ ms.locfileid: "51690327"
 
 La protection toujours en cours se compose d'une protection en temps réel, d'une surveillance du comportement et d'une heuristique pour identifier les programmes malveillants en fonction d'activités suspectes et malveillantes connues.
 
-Ces activités incluent des événements, tels que des processus qui modifient inhabituellement des fichiers existants, modifient ou créent des clés de Registre de démarrage automatique et des emplacements de démarrage (également appelés points d'extensibilité de démarrage automatique, ou ASEP), et d'autres modifications apportées au système de fichiers ou à la structure de fichiers.
+Ces activités incluent des événements, tels que des processus qui modifient inhabituellement des fichiers existants, modifient ou créent des clés de Registre de démarrage automatique et des emplacements de démarrage (également appelés points d'extensibilité de démarrage automatique, ou ASEP), et d'autres modifications apportées au système de fichiers ou à la structure des fichiers.
 
 ## <a name="enable-and-configure-always-on-protection-in-group-policy"></a>Activer et configurer la protection toujours active dans la stratégie de groupe
 
@@ -49,7 +49,7 @@ Pour activer et configurer la protection toujours active :
     
        ![Résultat de recherche de la barre des tâches GPEdit](images/gpedit-search.png)
 
-2. Dans le volet gauche de l'Éditeur de stratégie de groupe **local,** développez l'arborescence Modèles d'administration de **configuration** ordinateur  >    >  **Composants**  >  **Microsoft Defender Antivirus .** 
+2. Dans le volet gauche de l'Éditeur de stratégie de groupe **local,** développez l'arborescence Modèles d'administration de **configuration** ordinateur  >    >  **Composants**  >  **Windows Antivirus Microsoft Defender.** 
 
 3. Configurez les paramètres de stratégie du service anti-programme malveillant de l'Antivirus Microsoft Defender. Pour ce faire :  
 
@@ -58,7 +58,7 @@ Pour activer et configurer la protection toujours active :
        | Paramètre | Description | Valeur par défaut |
        |-----------------------------|------------------------|-------------------------------|
        | Autoriser le démarrage du service anti-programme malveillant avec une priorité normale | Vous pouvez réduire la priorité du moteur antivirus Microsoft Defender, ce qui peut être utile dans les déploiements légers dans lesquels vous souhaitez avoir un processus de démarrage aussi léger que possible. Cela peut avoir un impact sur la protection sur le point de terminaison. | Activé
-       | Autoriser le service anti-programme malveillant à rester toujours en cours d'exécution | Si les mises à jour de la protection ont été désactivées, vous pouvez configurer l'Antivirus Microsoft Defender pour qu'il s'exécute toujours. Cela réduit la protection sur le point de terminaison. | Désactivé |
+       | Autoriser le service anti-programme malveillant à rester en cours d'exécution | Si les mises à jour de protection ont été désactivées, vous pouvez configurer l'Antivirus Microsoft Defender pour qu'il s'exécute toujours. Cela réduit la protection sur le point de terminaison. | Désactivé |
     
     1. Configurez le paramètre selon le cas, puis cliquez sur **OK.**
     
@@ -78,14 +78,14 @@ Pour activer et configurer la protection toujours active :
        | Activer les notifications d'écriture de volume brut | Les informations sur les écritures de volume brutes seront analysées par la surveillance du comportement. | Activé |
        | Activer l'analyse des processus chaque fois que la protection en temps réel est activée | Vous pouvez activer indépendamment le moteur antivirus Microsoft Defender pour analyser les processus en cours d’exécution pour y trouver des modifications ou des comportements suspects. Cela est utile si vous avez temporairement désactivé la protection en temps réel et que vous souhaitez analyser automatiquement les processus démarrés alors qu’il était désactivé. | Activé |
        | Définir la taille maximale des fichiers et pièces jointes téléchargés à scanner | Vous pouvez définir la taille en kilo-octets. | Activé |
-       | Configurer le remplacement de paramètre local pour activer l’analyse du comportement | Configurez une substitution locale pour la configuration de la surveillance du comportement. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local.| Activé |
-       | Configurer le remplacement de paramètre local pour l’analyse de tous les fichiers et pièces jointes téléchargés | Configurez une substitution locale pour la configuration de l’analyse de tous les fichiers et pièces jointes téléchargés. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local.| Activé |
-       | Configurer le remplacement des paramètres locaux pour surveiller l’activité des fichiers et des programmes sur votre ordinateur | Configurez une substitution locale pour la configuration de la surveillance de l’activité des fichiers et des programmes sur votre ordinateur. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local.| Activé |
-       | Configurer le remplacement de paramètre local pour activer la protection en temps réel | Configurez une substitution locale pour la configuration afin d'activer la protection en temps réel. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local.| Activé |
+       | Configurer le remplacement de paramètre local pour activer l’analyse du comportement | Configurez une substitution locale pour la configuration de la surveillance du comportement. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale.| Activé |
+       | Configurer le remplacement de paramètre local pour l’analyse de tous les fichiers et pièces jointes téléchargés | Configurez une substitution locale pour la configuration de l’analyse de tous les fichiers et pièces jointes téléchargés. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale.| Activé |
+       | Configurer le remplacement des paramètres locaux pour surveiller l’activité des fichiers et des programmes sur votre ordinateur | Configurez une substitution locale pour la configuration de la surveillance de l’activité des fichiers et des programmes sur votre ordinateur. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale.| Activé |
+       | Configurer le remplacement de paramètre local pour activer la protection en temps réel | Configurez une substitution locale pour la configuration afin d'activer la protection en temps réel. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale.| Activé |
        | Configurer le remplacement de paramètre local pour la surveillance de l'activité des fichiers entrants et sortants | Configurez une substitution locale pour la configuration de la surveillance de l'activité des fichiers entrants et sortants. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale. | Activé |
-       | Configurer la surveillance de l'activité des fichiers et des programmes entrants et sortants | Spécifiez si la surveillance doit se produire sur les directions entrantes, sortantes, à la fois ou non. Cela est pertinent pour les installations De Windows Server où vous avez défini des serveurs ou des rôles serveur spécifiques qui voient de grandes quantités de modifications de fichiers dans un seul sens et que vous souhaitez améliorer les performances du réseau. Les points de terminaison (et serveurs) entièrement mis à jour sur un réseau n'auront que peu d'impact sur les performances, quel que soit le nombre ou la direction des modifications de fichier. | Activé (dans les deux directions) |
+       | Configurer la surveillance pour l'activité des fichiers et des programmes entrants et sortants | Spécifiez si la surveillance doit se produire sur les directions entrantes, sortantes, à la fois ou non. Cela est pertinent pour les installations De Windows Server où vous avez défini des serveurs ou des rôles serveur spécifiques qui voient de grandes quantités de modifications de fichiers dans un seul sens et que vous souhaitez améliorer les performances du réseau. Les points de terminaison (et serveurs) entièrement mis à jour sur un réseau ne voient que peu d'impact sur les performances, quel que soit le nombre ou la direction des modifications apportées aux fichiers. | Activé (dans les deux directions) |
 
-    1. Configurez le paramètre comme il convient, puis cliquez sur **OK**.
+    1. Configurez le paramètre selon le cas, puis cliquez sur **OK.**
     
     1. Répétez les étapes précédentes pour chaque paramètre du tableau.
 
@@ -111,7 +111,7 @@ Pour activer et configurer la protection toujours active :
 > [!WARNING]
 > La désactivation de la protection en temps réel réduit considérablement la protection sur vos points de terminaison et n'est pas recommandée.
 
-La fonctionnalité de protection en temps réel principale est activée par défaut, mais vous pouvez la désactiver à l'aide de l'Éditeur de stratégie de groupe **local.**
+La fonctionnalité de protection en temps réel principale est activée par défaut, mais vous pouvez la désactiver à l'aide de l'Éditeur de stratégie de **groupe local.**
 
 Pour désactiver la protection en temps réel dans la stratégie de groupe :
 

@@ -1,25 +1,25 @@
 ---
 title: Protection de nouvelle génération
-description: Découvrez comment gérer, configurer et utiliser l'Antivirus Microsoft Defender, la protection anti-programme malveillant et antivirus intégrée.
+description: Découvrez comment gérer, configurer et utiliser l'Antivirus Microsoft Defender, les logiciels anti-programme malveillant intégrés et la protection antivirus.
 keywords: Antivirus Microsoft Defender, windows defender, anti-programme malveillant, scep, system center endpoint protection, system center configuration manager, virus, programmes malveillants, menace, détection, protection, sécurité
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+localization_priority: priority
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 9d8ab5be45e671fb07df0d9d1f46eb626d9dd149
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
-ms.translationtype: MT
+ms.openlocfilehash: eb7e0253b3761d05d112500c0410fffa58548221
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690382"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765418"
 ---
 # <a name="next-generation-protection"></a>Protection de nouvelle génération
 
@@ -46,7 +46,7 @@ Visitez le site web de démonstration [Microsoft Defender pour Endpoint](https:/
 
 ## <a name="minimum-system-requirements"></a>Exigences système minimales
 
-L'Antivirus Microsoft Defender présente la même configuration matérielle requise qu'avec Windows 10. Pour plus d’informations, consultez les ressources suivantes :
+L'Antivirus Microsoft Defender a la même configuration matérielle requise qu'avec Windows 10. Pour plus d’informations, consultez les ressources suivantes :
 
 - [Configuration matérielle minimale requise](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 - [Recommandations en matière de composants matériels](/windows-hardware/design/component-guidelines/components)
