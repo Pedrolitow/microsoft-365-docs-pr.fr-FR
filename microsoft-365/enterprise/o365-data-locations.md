@@ -16,24 +16,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: a93f83e7efafa06aa65675342471c26f1b197864
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c55010508f2b5bde1641b9b7552e4acb95a12d3
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920787"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760235"
 ---
-<!--
-Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
--->
-
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 
 Les tableaux ci-dessous indiquent le lieu de stockage de données client au repos pour les services Microsoft 365 de tous les emplacements cloud généraux de Microsoft. Développez l’emplacement de votre pays d’adresse de facturation pour connaître l’emplacement de stockage des données client de chaque service.
 
 Si votre entreprise se situe au sein de l’Union européenne, consultez [Emplacements des données pour l’Union européenne](EU-data-storage-locations.md) pour plus d’informations. 
 
-Les clients peuvent consulter les informations relatives à l’emplacement des données propres aux locataires dans **Paramètres | Paramètres de l’organisation | Profil de l’organisation | Emplacement des données** du Centre d'administration Microsoft 365.
+Les clients peuvent consulter les informations relatives à l’emplacement des données propres aux locataires dans **Paramètres | Paramètres de l’organisation | Profil de l’organisation | Emplacement des données** du Centre d'administration Microsoft 365. Si vous avez [demandé le déplacement vers un nouvel emplacement géographique](request-your-data-move.md), les informations de localisation des données dans le Centre d’administration Microsoft 365 peuvent afficher votre nouvel emplacement géographique uniquement, même lorsque des données peuvent être stockées temporairement dans votre précédente localisation géographique au cours de la transition. 
 
 Les nouveaux locataires Microsoft 365 sont configurés géographiquement par défaut en fonction du pays de la transaction associée à l'abonnement initial de ce client.
 
@@ -151,7 +147,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -166,7 +162,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="aland-islands"></a>Îles Åland
@@ -175,7 +171,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -199,7 +195,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -223,7 +219,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -238,7 +234,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="american-samoa"></a>Samoa américaines
@@ -247,7 +243,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -262,7 +258,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="andorra"></a>Andorre
@@ -271,7 +267,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -295,7 +291,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -310,7 +306,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="anguilla"></a>Anguilla
@@ -334,7 +330,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="antarctica"></a>Antarctique
@@ -358,7 +354,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="antigua-and-barbuda"></a>Antigua-et-Barbuda
@@ -382,7 +378,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="argentina"></a>Argentine
@@ -406,7 +402,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="armenia"></a>Arménie
@@ -415,7 +411,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -454,7 +450,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="australia"></a>Australie
@@ -478,7 +474,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Australie |
 | Tableau blanc | Australie |
 | Forms | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="austria"></a>Autriche
@@ -511,7 +507,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -550,7 +546,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="bahrain"></a>Bahreïn
@@ -559,7 +555,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -583,7 +579,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -598,7 +594,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="barbados"></a>Barbade
@@ -622,7 +618,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="belarus"></a>Bélarus
@@ -631,7 +627,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -694,7 +690,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="benin"></a>Bénin
@@ -703,7 +699,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -718,7 +714,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="bermuda"></a>Bermudes
@@ -742,7 +738,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="bhutan"></a>Bhoutan
@@ -751,7 +747,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -766,7 +762,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="bolivia"></a>Bolivie
@@ -790,7 +786,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="bonaire"></a>Bonaire
@@ -814,7 +810,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="bosnia"></a>Bosnie
@@ -823,7 +819,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -847,7 +843,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -862,7 +858,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="bouvet-island"></a>Île Bouvet
@@ -886,7 +882,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="brazil"></a>Brésil
@@ -910,7 +906,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="british-indian-ocean-territory"></a>Territoire britannique de l’Océan Indien
@@ -919,7 +915,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -934,7 +930,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="british-virgin-islands"></a>Îles Vierges britanniques
@@ -958,7 +954,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="brunei"></a>Brunei
@@ -967,7 +963,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -982,7 +978,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="bulgaria"></a>Bulgarie
@@ -1015,7 +1011,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1030,7 +1026,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="burundi"></a>Burundi
@@ -1039,7 +1035,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1054,7 +1050,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="cambodia"></a>Cambodge
@@ -1063,7 +1059,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1078,7 +1074,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="cameroon"></a>Cameroun
@@ -1087,7 +1083,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1102,7 +1098,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="canada"></a>Canada
@@ -1126,7 +1122,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Canada |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="cape-verde"></a>Cap-Vert
@@ -1135,7 +1131,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1150,7 +1146,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="cayman-islands"></a>Îles Cayman
@@ -1174,7 +1170,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="central-african-republic"></a>République centrafricaine
@@ -1183,7 +1179,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1198,7 +1194,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="chad"></a>Tchad
@@ -1207,7 +1203,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1222,7 +1218,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="chile"></a>Chili
@@ -1246,7 +1242,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="china"></a>Chine
@@ -1255,7 +1251,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1270,7 +1266,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="christmas-island"></a>Île Christmas
@@ -1279,7 +1275,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1294,7 +1290,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="cocos-keeling-islands"></a>Île Cocos (Keeling)
@@ -1303,7 +1299,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1318,7 +1314,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="colombia"></a>Colombie
@@ -1342,7 +1338,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="comoros"></a>Comores
@@ -1351,7 +1347,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1366,7 +1362,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="congo-brazzaville"></a>République du Congo (Brazzaville)
@@ -1375,7 +1371,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1390,7 +1386,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="congo-kinshasa"></a>République démocratique du Congo (Kinshasa)
@@ -1399,7 +1395,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1414,7 +1410,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="cook-islands"></a>Îles Cook
@@ -1423,7 +1419,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1438,7 +1434,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="costa-rica"></a>Costa Rica
@@ -1462,7 +1458,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="cote-divoire"></a>Côte d’Ivoire
@@ -1471,7 +1467,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1486,7 +1482,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="croatia"></a>Croatie
@@ -1534,7 +1530,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="cyprus"></a>Chypre
@@ -1615,7 +1611,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1630,7 +1626,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="dominica"></a>Dominique
@@ -1654,7 +1650,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="dominican-republic"></a>République dominicaine
@@ -1678,7 +1674,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="ecuador"></a>Équateur
@@ -1702,7 +1698,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="egypt"></a>Égypte
@@ -1711,7 +1707,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1726,7 +1722,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="el-salvador"></a>Salvador
@@ -1750,7 +1746,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="equatorial-guinea"></a>Guinée Équatoriale
@@ -1759,7 +1755,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1774,7 +1770,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="eritrea"></a>Érythrée
@@ -1783,7 +1779,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1798,7 +1794,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="estonia"></a>Estonie
@@ -1831,7 +1827,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1846,7 +1842,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="falkland-islands-malvinas"></a>Îles Malouines (Malvinas)
@@ -1870,7 +1866,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="faroe-islands"></a>Îles Féroé
@@ -1879,7 +1875,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1903,7 +1899,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1918,7 +1914,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="fiji"></a>Fidji
@@ -1942,7 +1938,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Australie |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="finland"></a>Finlande
@@ -2014,7 +2010,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="french-polynesia"></a>Polynésie française
@@ -2023,7 +2019,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2038,7 +2034,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="french-southern-territories"></a>Territoires français du Sud
@@ -2062,7 +2058,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="gabon"></a>Gabon
@@ -2071,7 +2067,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2086,7 +2082,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="gambia"></a>Gambie
@@ -2095,7 +2091,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2110,7 +2106,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="georgia"></a>Géorgie
@@ -2119,7 +2115,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2167,7 +2163,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2182,7 +2178,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="gibraltar"></a>Gibraltar
@@ -2191,7 +2187,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2254,7 +2250,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="grenada"></a>Grenade
@@ -2278,7 +2274,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="guadeloupe"></a>Guadeloupe
@@ -2302,7 +2298,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="guam"></a>Guam
@@ -2311,7 +2307,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2326,7 +2322,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="guatemala"></a>Guatemala
@@ -2350,7 +2346,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="guernsey"></a>Guernesey
@@ -2359,7 +2355,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2383,7 +2379,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2398,7 +2394,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="guinea-bissau"></a>Guinée-Bissau
@@ -2407,7 +2403,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2422,7 +2418,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="guyana"></a>Guyane
@@ -2446,7 +2442,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="haiti"></a>Haïti
@@ -2470,7 +2466,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="heard-and-mcdonald-islands"></a>Îles Heard-et-MacDonald
@@ -2494,7 +2490,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="herzegovina"></a>Bosnie-Herzégovine
@@ -2503,7 +2499,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2527,7 +2523,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2566,7 +2562,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="hong-kong-sar"></a>Hong Kong (SAR)
@@ -2575,7 +2571,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2590,7 +2586,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="hungary"></a>Hongrie
@@ -2623,7 +2619,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2662,7 +2658,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Inde |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="indonesia"></a>Indonésie
@@ -2671,7 +2667,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2686,7 +2682,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="iraq"></a>Irak
@@ -2695,7 +2691,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2743,7 +2739,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2767,7 +2763,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2830,7 +2826,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="japan"></a>Japon
@@ -2854,7 +2850,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Japon |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="jersey"></a>Jersey
@@ -2863,7 +2859,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2887,7 +2883,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2911,7 +2907,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2935,7 +2931,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2950,7 +2946,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="kiribati"></a>Kiribati
@@ -2959,7 +2955,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2974,7 +2970,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="south-korea"></a>Corée du Sud
@@ -2998,7 +2994,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="kosovo"></a>Kosovo
@@ -3007,7 +3003,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3031,7 +3027,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3055,7 +3051,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3079,7 +3075,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3094,7 +3090,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="latvia"></a>Lettonie
@@ -3127,7 +3123,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3151,7 +3147,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3166,7 +3162,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="liberia"></a>Libéria
@@ -3175,7 +3171,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3190,7 +3186,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="libya"></a>Libye
@@ -3199,7 +3195,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3214,7 +3210,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="liechtenstein"></a>Liechtenstein
@@ -3295,7 +3291,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3310,7 +3306,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="malawi"></a>Malawi
@@ -3319,7 +3315,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3334,7 +3330,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="malaysia"></a>Malaisie
@@ -3343,7 +3339,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3358,7 +3354,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="maldives"></a>Maldives
@@ -3367,7 +3363,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3382,7 +3378,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="mali"></a>Mali
@@ -3391,7 +3387,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3406,7 +3402,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="malta"></a>Malte
@@ -3439,7 +3435,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3454,7 +3450,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="martinique"></a>Martinique
@@ -3478,7 +3474,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="mauritania"></a>Mauritanie
@@ -3487,7 +3483,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3502,7 +3498,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="mauritius"></a>Île Maurice
@@ -3511,7 +3507,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3526,7 +3522,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="mayotte"></a>Mayotte
@@ -3535,7 +3531,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3550,7 +3546,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="mexico"></a>Mexique
@@ -3574,7 +3570,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="moldova"></a>Moldavie
@@ -3583,7 +3579,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3607,7 +3603,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3631,7 +3627,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3646,7 +3642,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="montenegro"></a>Monténégro
@@ -3655,7 +3651,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3694,7 +3690,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="morocco"></a>Maroc
@@ -3703,7 +3699,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3718,7 +3714,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="mozambique"></a>Mozambique
@@ -3727,7 +3723,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3742,7 +3738,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="myanmar"></a>Birmanie
@@ -3751,7 +3747,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3766,7 +3762,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="namibia"></a>Namibie
@@ -3775,7 +3771,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3790,7 +3786,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="nauru"></a>Nauru
@@ -3799,7 +3795,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3814,7 +3810,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="nepal"></a>Népal
@@ -3823,7 +3819,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3838,7 +3834,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="netherlands"></a>Pays-Bas
@@ -3886,7 +3882,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="new-caledonia"></a>Nouvelle-Calédonie
@@ -3895,7 +3891,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3910,7 +3906,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="new-zealand"></a>Nouvelle-Zélande
@@ -3934,7 +3930,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Australie |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="nicaragua"></a>Nicaragua
@@ -3958,7 +3954,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="niger"></a>Niger
@@ -3967,7 +3963,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3991,7 +3987,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4015,7 +4011,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4030,7 +4026,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="norfolk-island"></a>Île Norfolk
@@ -4039,7 +4035,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4054,7 +4050,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="northern-mariana-islands"></a>Îles Mariannes du Nord
@@ -4063,7 +4059,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4078,7 +4074,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="norway"></a>Norvège
@@ -4111,7 +4107,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4135,7 +4131,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4159,7 +4155,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4174,7 +4170,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="palestinian-authority"></a>Autorité palestinienne
@@ -4183,7 +4179,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4198,7 +4194,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="panama"></a>Panama
@@ -4222,7 +4218,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="papua-new-guinea"></a>Papouasie-Nouvelle-Guinée
@@ -4231,7 +4227,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4246,7 +4242,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="paraguay"></a>Paraguay
@@ -4270,7 +4266,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="peru"></a>Pérou
@@ -4294,7 +4290,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="philippines"></a>Philippines
@@ -4303,7 +4299,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4318,7 +4314,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="pitcairn"></a>Île Pitcairn
@@ -4327,7 +4323,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4342,7 +4338,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="poland"></a>Pologne
@@ -4414,7 +4410,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="qatar"></a>Qatar
@@ -4423,7 +4419,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4447,7 +4443,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4471,7 +4467,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4486,7 +4482,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="romania"></a>Roumanie
@@ -4519,7 +4515,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4543,7 +4539,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4558,7 +4554,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="saint-helena"></a>Sainte-Hélène, Ascension et Tristan da Cunha
@@ -4567,7 +4563,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4582,7 +4578,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="saint-kitts-and-nevis"></a>Saint-Christophe-et-Niévès
@@ -4606,7 +4602,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="saint-lucia"></a>Sainte-Lucie
@@ -4630,7 +4626,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="saint-martin"></a>Saint-Martin
@@ -4654,7 +4650,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="saint-pierre-and-miquelon"></a>Saint-Pierre-et-Miquelon
@@ -4678,7 +4674,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="saint-vincent-and-the-grenadines"></a>Saint-Vincent-et-les-Grenadines
@@ -4702,7 +4698,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="saint-barthlemy"></a>Saint-Barthélemy
@@ -4726,7 +4722,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="samoa"></a>État indépendant des Samoa
@@ -4735,7 +4731,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4750,7 +4746,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="san-marino"></a>Saint-Marin
@@ -4759,7 +4755,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4783,7 +4779,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4798,7 +4794,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="saudi-arabia"></a>Arabie Saoudite
@@ -4807,7 +4803,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4831,7 +4827,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4855,7 +4851,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4879,7 +4875,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4894,7 +4890,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="sierra-leone"></a>Sierra Leone
@@ -4903,7 +4899,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4918,7 +4914,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="singapore"></a>Singapour
@@ -4927,7 +4923,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4942,7 +4938,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="sint-maarten"></a>Saint-Martin (néerlandais)
@@ -4966,7 +4962,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="slovakia"></a>Slovaquie
@@ -5023,7 +5019,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5038,7 +5034,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="somalia"></a>Somalie
@@ -5047,7 +5043,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5062,7 +5058,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="south-africa"></a>Afrique du Sud
@@ -5086,7 +5082,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>Géorgie du Sud-et-les Îles Sandwich du Sud
@@ -5110,7 +5106,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="spain"></a>Espagne
@@ -5143,7 +5139,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5158,7 +5154,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="suriname"></a>Suriname
@@ -5182,7 +5178,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="svalbard-and-jan-mayen-islands"></a>Svalbard et les Îles Jan Mayen
@@ -5191,7 +5187,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5215,7 +5211,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5230,7 +5226,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="sweden"></a>Suède
@@ -5287,7 +5283,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5302,7 +5298,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="tajikistan"></a>Tadjikistan
@@ -5311,7 +5307,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5335,7 +5331,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5350,7 +5346,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="thailand"></a>Thaïlande
@@ -5359,7 +5355,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5374,7 +5370,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="timor-leste"></a>Timor-Leste
@@ -5383,7 +5379,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5398,7 +5394,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="togo"></a>Togo
@@ -5407,7 +5403,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5422,7 +5418,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="tokelau"></a>Tokelau
@@ -5431,7 +5427,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5446,7 +5442,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="tonga"></a>Tonga
@@ -5455,7 +5451,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5470,7 +5466,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="trinidad-and-tobago"></a>Trinité-et-Tobago
@@ -5494,7 +5490,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="tunisia"></a>Tunisie
@@ -5503,7 +5499,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5518,7 +5514,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="turkey"></a>Turquie
@@ -5527,7 +5523,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5551,7 +5547,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5590,7 +5586,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="tuvalu"></a>Tuvalu
@@ -5599,7 +5595,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5614,7 +5610,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="us-virgin-islands"></a>Îles Vierges des États-Unis
@@ -5638,7 +5634,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="uganda"></a>Ouganda
@@ -5647,7 +5643,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5662,7 +5658,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="ukraine"></a>Ukraine
@@ -5671,7 +5667,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5758,7 +5754,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="uruguay"></a>Uruguay
@@ -5782,7 +5778,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="us-minor-outlying-islands"></a>Îles mineures éloignées des États-Unis
@@ -5791,7 +5787,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5806,7 +5802,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="uzbekistan"></a>Ouzbékistan
@@ -5815,7 +5811,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5839,7 +5835,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5854,7 +5850,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="venezuela"></a>Venezuela
@@ -5878,7 +5874,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="vietnam"></a>Vietnam
@@ -5887,7 +5883,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5902,7 +5898,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="wallis-and-futuna-islands"></a>Wallis et Futuna
@@ -5911,7 +5907,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5926,7 +5922,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="western-sahara"></a>Sahara occidental
@@ -5935,7 +5931,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5950,7 +5946,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="yemen"></a>Yémen
@@ -5959,7 +5955,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5983,7 +5979,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5998,7 +5994,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>
 
 ## <a name="zimbabwe"></a>Zimbabwe
@@ -6007,7 +6003,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -6022,5 +6018,5 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Analyse du temps de travail | États-Unis |
+| Workplace Analytics | États-Unis |
 </p></details>

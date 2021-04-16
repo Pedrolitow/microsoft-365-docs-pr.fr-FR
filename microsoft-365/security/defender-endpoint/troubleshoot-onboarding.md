@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4f3b2b54370e3481699a540dd8fd2acc30be7514
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760163"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768877"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Résoudre les problèmes d'intégration de Microsoft Defender pour les points de terminaison
 
@@ -302,8 +302,8 @@ Si la vérification échoue et que votre environnement utilise un proxy pour se 
 
 Si vous rencontrez des problèmes lors de l'intégration d'un serveur, vous devez suivre les étapes de vérification suivantes pour résoudre les problèmes possibles.
 
-- [Vérifier que l'Agent de surveillance Microsoft (MMA) est installé et configuré pour signaler les données de capteur au service](configure-server-endpoints.md#server-mma)
-- [S'assurer que les paramètres de proxy serveur et de connectivité Internet sont correctement configurés](configure-server-endpoints.md#server-proxy)
+- [Vérifier que l'Agent de surveillance Microsoft (MMA) est installé et configuré pour signaler les données de capteur au service](configure-server-endpoints.md)
+- [S'assurer que les paramètres de proxy serveur et de connectivité Internet sont correctement configurés](configure-server-endpoints.md)
 
 Vous devrez peut-être également vérifier les choses suivantes :
 
