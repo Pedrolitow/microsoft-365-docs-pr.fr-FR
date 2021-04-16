@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f4d65c1f730bfa8c1611f3f85da4b5c0e49312e5
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e47631682b5620a3f42746c3e3848a8bc3ee1f76
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764518"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861790"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour Endpoint sur iOS
 
@@ -34,6 +34,12 @@ ms.locfileid: "51764518"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1115140101"></a>1.1.15140101
+
+- Le nom du produit Microsoft Defender ATP a été mis à jour vers Microsoft Defender pour le point de terminaison dans l'App Store.
+- Amélioration de l'expérience de la signature.
+- Corrections de bogues.
 
 ## <a name="1115010101"></a>1.1.15010101
 

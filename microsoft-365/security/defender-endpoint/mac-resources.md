@@ -1,7 +1,7 @@
 ---
-title: Ressources pour Microsoft Defender ATP pour Mac
-description: Ressources pour Microsoft Defender ATP pour Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
-keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamf, macos,pépé, mojave, high sierra
+title: Ressources pour Microsoft Defender pour point de terminaison pour Mac
+description: Ressources pour Microsoft Defender pour point de terminaison pour Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
+keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamf, macos, magasin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 71ebe48fdbb8f9995ef2f3429cb8a824ed76f244
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 98e123ac4775096c968bc831965a562481c848b6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689640"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862174"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -74,7 +74,7 @@ Si vous pouvez reproduire un problème, augmentez le niveau de journalisation, e
 
 ## <a name="logging-installation-issues"></a>Journalisation des problèmes d'installation
 
-Si une erreur se produit lors de l'installation, le programme d'installation signale uniquement un échec général.
+Si une erreur se produit pendant l'installation, le programme d'installation signale uniquement un échec général.
 
 Le journal détaillé sera enregistré dans `/Library/Logs/Microsoft/mdatp/install.log` . Si vous avez des problèmes lors de l'installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
 
@@ -84,7 +84,7 @@ Il existe plusieurs façons de désinstaller Microsoft Defender pour Endpoint su
 
 ### <a name="interactive-uninstallation"></a>Désinstallation interactive
 
-- Ouvrez **Finder > Applications.** Cliquez avec le bouton **droit sur Microsoft Defender ATP > déplacer vers la corbeille.**
+- Ouvrez **Finder > Applications.** Cliquez avec le bouton **droit sur Microsoft Defender pour le point de terminaison > déplacer vers la corbeille.**
 
 ### <a name="from-the-command-line"></a>À partir de la ligne de commande
 
@@ -116,7 +116,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Protection   |Faire une analyse rapide                            |`mdatp scan quick`                                                                |
 |Protection   |Faire une analyse complète                             |`mdatp scan full`                                                                 |
 |Protection   |Annuler une analyse à la demande en cours           |`mdatp scan cancel`                                                               |
-|Protection   |Demander une mise à jour des informations de sécurité     |`mdatp definitions update`                                                        |
+|Protection   |Demander une mise à jour de l'intelligence de la sécurité     |`mdatp definitions update`                                                        |
 |EDR          |Ajouter une balise de groupe à l'appareil. Les balises EDR sont utilisées pour gérer les groupes d'appareils. Pour plus d'informations, visitez https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |Supprimer une balise de groupe de l'appareil               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |Ajouter un ID de groupe                               |`mdatp edr group-ids --group-id [group]`                                          |
@@ -152,7 +152,7 @@ Pour activer lacompletion automatique dans zsh :
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
-## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender pour point de terminaison
+## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender for Endpoint
 
 `/Library/Application Support/Microsoft/Defender/quarantine/` contient les fichiers mis en quarantaine par `mdatp` . Les fichiers sont nommés d'après l'threat trackingId. Le trackingIds actuel est affiché avec `mdatp threat list` .
 

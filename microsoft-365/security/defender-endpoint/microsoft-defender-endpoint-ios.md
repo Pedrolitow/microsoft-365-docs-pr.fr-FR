@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP sur iOS
+title: Microsoft Defender pour point de terminaison iOS
 ms.reviewer: ''
-description: Décrit comment installer et utiliser Microsoft Defender ATP pour iOS
+description: Décrit comment installer et utiliser Microsoft Defender pour endpoint pour iOS
 keywords: microsoft, defender, atp, ios, vue d'ensemble, installation, déployer, désinstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bc28c40443a6cae2815ad97126073df4579c494c
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a04d939d5c25341f07090ac896cfb80b43ab1a1c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768781"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861382"
 ---
-# <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender pour point de terminaison sur iOS
+# <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender pour point de terminaison iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -73,7 +73,7 @@ ms.locfileid: "51768781"
 
 ## <a name="installation-instructions"></a>Instructions d'installation
 
-Le déploiement de Microsoft Defender pour Endpoint sur iOS est réalisé via Microsoft Intune (MDM) et les appareils supervisés et non pris en charge sont pris en charge.
+Le déploiement de Microsoft Defender pour Endpoint sur iOS s'effectue via Microsoft Intune (MDM) et les appareils supervisés et non pris en charge sont pris en charge.
 Pour plus d'informations, [voir Déployer Microsoft Defender pour endpoint sur iOS.](ios-install.md)
 
 ## <a name="resources"></a>Ressources
@@ -85,4 +85,4 @@ Pour plus d'informations, [voir Déployer Microsoft Defender pour endpoint sur i
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Déployer Microsoft Defender pour le point de terminaison sur iOS](ios-install.md)
-- [Configurer Microsoft Defender pour endpoint sur les fonctionnalités iOS](ios-configure-features.md)
+- [Configurer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

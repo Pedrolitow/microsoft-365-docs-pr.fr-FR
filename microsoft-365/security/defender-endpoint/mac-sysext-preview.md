@@ -1,6 +1,6 @@
 ---
-title: 'Microsoft Defender ATP pour Mac : extensions système (prévisualisation)'
-description: Cet article contient des instructions pour essayer la fonctionnalité d'extensions système de Microsoft Defender ATP pour Mac. Cette fonctionnalité est actuellement en prévisualisation publique.
+title: 'Microsoft Defender pour point de terminaison pour Mac : extensions système (prévisualisation)'
+description: Cet article contient des instructions pour essayer la fonctionnalité d'extensions système de Microsoft Defender pour Endpoint pour Mac. Cette fonctionnalité est actuellement en prévisualisation publique.
 keywords: microsoft, defender, atp, mac, noyau, système, extensions, contrôle
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0e89977c10de04d8c3331733cd1432525ac3196d
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0b593aa0046a28e558523c2f3ebc7da9976f62d3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689064"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860326"
 ---
 # <a name="microsoft-defender-for-endpoint-on-macos---system-extensions-public-preview"></a>Microsoft Defender pour point de terminaison sur macOS : version d'évaluation publique des extensions système)
 
@@ -62,7 +62,7 @@ Ces étapes supposent que Defender for Endpoint est déjà en cours d'exécution
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  Par ailleurs, si vous êtes dans un environnement géré (JAMF ou Intune), vous pouvez configurer le canal de mise à jour à distance. Pour plus d'informations, voir [Déployer les mises à jour de Microsoft Defender ATP pour Mac : définissez le nom du canal.](mac-updates.md#set-the-channel-name)
+  Par ailleurs, si vous êtes dans un environnement géré (JAMF ou Intune), vous pouvez configurer le canal de mise à jour à distance. Pour plus d'informations, voir [Déployer les mises à jour de Microsoft Defender pour Endpoint pour Mac : définissez le nom du canal.](mac-updates.md#set-the-channel-name)
 
 ## <a name="deployment-steps"></a>Étapes de déploiement
 
@@ -82,7 +82,7 @@ Suivez les étapes de déploiement qui correspondent à votre environnement et �
    > Vous devez fermer et rouvrir la **fenêtre** Sécurité des préférences système  >  **& confidentialité** entre les approbations suivantes. Dans le cas contraire, macOS n'affichera pas l'approbation suivante.
 
    > [!IMPORTANT]
-   > Il y a un délai d'une minute avant que le produit ne revenir à l'extension du noyau. Cela garantit que l'appareil est protégé.
+   > Il y a un délai d'une minute avant le retour du produit à l'extension du noyau. Cela garantit que l'appareil est protégé.
    >
    > Si plus d'une minute s'écoule, redémarrez le daemon en redémarré l'appareil ou en utilisant pour déclencher à nouveau le flux `sudo killall -9 wdavdaemon` d'approbation.
 
@@ -90,7 +90,7 @@ Suivez les étapes de déploiement qui correspondent à votre environnement et �
 
    ![Fenêtre d'approbation de l'extension système](images/mac-system-extension-pref.png)
 
-1. Une fois les extensions système approuvées, macOS demande une approbation pour autoriser le filtrage du trafic réseau. Cliquez sur **Autoriser**.
+1. Une fois les extensions système approuvées, macOS demande une approbation pour autoriser le filtrage du trafic réseau. Cliquez sur **Autoriser.**
 
    ![Fenêtre fenêtre fenêtre d'approbation de l'extension réseau](images/mac-system-extension-filter.png)
 
@@ -116,7 +116,7 @@ La sortie `endpoint_security_extension` terminal indique que le produit utilise 
 
 ### <a name="managed-deployment"></a>Déploiement géré
 
-Reportez-vous aux nouveaux profils de [configuration pour macOS Fonctionnalité et](mac-sysext-policies.md#jamf) versions plus récentes de macOS : JAMF pour les nouveaux profils de configuration que vous devez déployer pour cette nouvelle fonctionnalité.
+Reportez-vous aux nouveaux profils de [configuration pour macOS Genre et](mac-sysext-policies.md#jamf) les versions plus récentes de macOS : JAMF pour les nouveaux profils de configuration que vous devez déployer pour cette nouvelle fonctionnalité.
 
 En plus de ces profils, veillez à configurer les appareils cibles pour qu'ils soient dans le canal insider de mise à jour rapide, comme décrit dans les conditions [préalables au déploiement.](#deployment-prerequisites)
 

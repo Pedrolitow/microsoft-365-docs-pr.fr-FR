@@ -1,7 +1,7 @@
 ---
-title: Déployer les mises à jour de Microsoft Defender ATP pour Linux
+title: Déployer les mises à jour de Microsoft Defender pour endpoint pour Linux
 ms.reviewer: ''
-description: Décrit comment déployer des mises à jour pour Microsoft Defender ATP pour Linux dans les environnements d'entreprise.
+description: Décrit comment déployer des mises à jour pour Microsoft Defender pour Endpoint pour Linux dans les environnements d'entreprise.
 keywords: microsoft, defender, atp, linux, mises à jour, déployer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2e4ea4942446317aef90288da9fb181935503fa9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 77b428e359596e73e08dc04f15190ecf68db29be
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687465"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861146"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Déployer les mises à jour de Microsoft Defender pour Endpoint sur Linux
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Déployer des mises à jour pour Microsoft Defender pour endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,7 +45,7 @@ Microsoft publie régulièrement des mises à jour logicielles pour améliorer l
 > mdatp health --field product_expiration
 > ```
 
-Pour mettre à jour Defender pour Endpoint pour Linux manuellement, exécutez l'une des commandes suivantes :
+Pour mettre à jour Defender pour endpoint pour Linux manuellement, exécutez l'une des commandes suivantes :
 
 ## <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL et variantes (CentOS et Oracle Linux)
 

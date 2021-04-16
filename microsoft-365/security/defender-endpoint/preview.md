@@ -1,5 +1,5 @@
 ---
-title: Fonctionnalités d'aperçu de Microsoft Defender ATP
+title: Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 description: Découvrez comment accéder aux fonctionnalités d'aperçu de Microsoft Defender for Endpoint.
 keywords: aperçu, expérience d'aperçu, Microsoft Defender pour point de terminaison, fonctionnalités, mises à jour
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a91fa3c8ff55f46619c7b49eaf973ad94f60bfe
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698186"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861058"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
@@ -46,7 +46,7 @@ Découvrez les nouvelles fonctionnalités de la version d'évaluation de Defende
 >[!TIP]
 >Recevez une notification lorsque cette page est mise à jour en copiant et en coller l'URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+preview+features%22&locale=en-us`
 
-Pour plus d'informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Point de terminaison.](whats-new-in-microsoft-defender-atp.md)
+Pour plus d'informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Endpoint.](whats-new-in-microsoft-defender-atp.md)
 
 ## <a name="turn-on-preview-features"></a>Activer les fonctionnalités d’aperçu
 
@@ -62,7 +62,7 @@ Activez le paramètre d’expérience de préversion pour être parmi les premie
 
 Les fonctionnalités suivantes sont incluses dans la version préliminaire :
 
-- [Découverte d'appareils](device-discovery.md) <br> Vous permet de trouver des appareils non utilisés connectés à votre réseau d'entreprise sans avoir besoin d'appliances supplémentaires ou de modifications de processus fastidieuses. À l'aide d'appareils intégrés, vous pouvez rechercher des appareils non utilisés dans votre réseau et évaluer les vulnérabilités et les risques. Vous pouvez ensuite intégrer des appareils découverts afin de réduire les risques associés à l'affichage de points de terminaison non pris en compte dans votre réseau.
+- [Découverte d’appareils](device-discovery.md) <br> Vous permet de trouver des appareils non utilisés connectés à votre réseau d'entreprise sans avoir besoin d'appliances supplémentaires ou de modifications de processus fastidieuses. À l'aide d'appareils intégrés, vous pouvez rechercher des appareils non utilisés dans votre réseau et évaluer les vulnérabilités et les risques. Vous pouvez ensuite intégrer des appareils découverts afin de réduire les risques associés à l'affichage de points de terminaison non utilisés dans votre réseau.
 
    > [!IMPORTANT]
    > La découverte standard sera le mode par défaut pour tous les clients de prévisualisation à compter du 10 mai 2021. Vous pouvez choisir de conserver le mode de base via la page paramètres. 

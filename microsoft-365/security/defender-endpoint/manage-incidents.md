@@ -1,6 +1,6 @@
 ---
-title: Gérer les incidents Microsoft Defender ATP
-description: Gérez les incidents en l’attribuant, en mettant à jour son état ou en attribuant sa classification.
+title: Gérer Microsoft Defender pour les incidents de point de terminaison
+description: Gérez les incidents en l'attribuant, en mettant à jour son état ou en attribuant sa classification.
 keywords: incidents, gérer, affecter, état, classification, alerte vraie, alerte false
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8b5e806d09f08a12c090a1055f2c165f25b7ea1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: abb538972b48f8790286c0a546eecdd69fc83fb5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185808"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862138"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Gérer Microsoft Defender pour les incidents de point de terminaison
 
@@ -36,29 +36,29 @@ ms.locfileid: "51185808"
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-La gestion des incidents est une partie importante de chaque opération de cybersécurité. Vous pouvez gérer les incidents en sélectionnant un incident dans la file **d’attente Incidents** ou dans le volet de **gestion Incidents.** 
+La gestion des incidents est une partie importante de chaque opération de cybersécurité. Vous pouvez gérer les incidents en sélectionnant un incident dans la file **d'attente Incidents** ou dans le volet de **gestion Incidents.** 
 
 
-La sélection d’un incident dans la  file **d’attente Incidents** ouvre le volet Gestion des incidents dans lequel vous pouvez ouvrir la page incident pour plus d’informations.
+La sélection d'un incident dans la  file **d'attente Incidents** ouvre le volet Gestion des incidents dans lequel vous pouvez ouvrir la page incident pour plus d'informations.
 
 
 ![Image du volet de gestion des incidents](images/atp-incidents-mgt-pane-updated.png)
 
-Vous pouvez affecter des incidents à vous-même, modifier l’état et la classification, les renommer ou commenter pour suivre leur progression.
+Vous pouvez affecter des incidents à vous-même, modifier l'état et la classification, les renommer ou commenter pour suivre leur progression.
 
 > [!TIP]
-> Pour une visibilité supplémentaire en un coup d’œil, les noms des incidents sont générés automatiquement en fonction des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
+> Pour une visibilité supplémentaire en un coup d'œil, les noms des incidents sont générés automatiquement en fonction des attributs d'alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l'étendue de l'incident.
 >
-> Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
+> Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
 >
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents conserveront leurs noms.
 >
 
 
-![Image de la page de détails de l’incident](images/atp-incident-details-updated.png)
+![Image de la page de détails de l'incident](images/atp-incident-details-updated.png)
 
 ## <a name="assign-incidents"></a>Attribuer des incidents
-Si aucun incident n’a encore  été affecté, vous pouvez sélectionner Affecter à moi pour vous attribuer l’incident. Cette action suppose l’appropriation non seulement de l’incident, mais aussi de toutes les alertes associées.
+Si aucun incident n'a encore  été affecté, vous pouvez sélectionner Affecter à moi pour vous attribuer l'incident. Cette action suppose l’appropriation non seulement de l’incident, mais aussi de toutes les alertes associées.
 
 ## <a name="set-status-and-classification"></a>Définir l’état et la classification
 ### <a name="incident-status"></a>État de l’incident
@@ -66,7 +66,7 @@ Vous pouvez classer les incidents (comme **actifs** ou **résolus**) en modifian
 
 Par exemple, votre analyste SoC peut examiner les incidents **actifs** urgents de la journée et décider de les affecter à lui-même pour examen.
 
-Sinon, votre analyste SoC peut  définir l’incident comme résolu si l’incident a été corrigé. 
+Sinon, votre analyste SoC peut  définir l'incident comme résolu si l'incident a été corrigé. 
 
 ### <a name="classification"></a>Classification
 Vous pouvez choisir de ne pas définir de classification ou décider de spécifier si un incident est vrai ou faux. Cette opération permet à l’équipe de voir les modèles et d’en apprendre davantage.
@@ -82,5 +82,5 @@ Les commentaires ajoutés apparaissent instantanément dans le volet.
 
 ## <a name="related-topics"></a>Voir aussi
 - [File d’attente des incidents](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [Afficher et organiser la file d’attente Incidents](view-incidents-queue.md)
-- [Enquêter sur des incidents](investigate-incidents.md)
+- [Afficher et organiser la file d’attente des incidents](view-incidents-queue.md)
+- [Examiner des incidents](investigate-incidents.md)

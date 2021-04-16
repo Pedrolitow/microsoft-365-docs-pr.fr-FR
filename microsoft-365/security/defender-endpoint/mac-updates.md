@@ -1,6 +1,6 @@
 ---
-title: Déployer les mises à jour de Microsoft Defender ATP pour Mac
-description: Contrôler les mises à jour de Microsoft Defender ATP pour Mac dans les environnements d'entreprise.
+title: Déployer les mises à jour de Microsoft Defender pour Endpoint pour Mac
+description: Contrôler les mises à jour de Microsoft Defender pour Endpoint pour Mac dans les environnements d'entreprise.
 keywords: microsoft, defender, atp, mac, mises à jour, déployer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3321c1bd181b89c53e2618fc20fa7f733a20cfc1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9d373594771efe4eb647c007db3a26efe83e330e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689052"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860314"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Déployer les mises à jour de Microsoft Defender pour endpoint sur macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689052"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,17 +40,17 @@ ms.locfileid: "51689052"
 
 Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités.
 
-Pour mettre à jour Microsoft Defender pour endpoint sur macOS, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Par défaut, MAU recherche automatiquement les mises à jour quotidiennes, mais vous pouvez la modifier en une fois par semaine, par mois ou manuellement.
+Pour mettre à jour Microsoft Defender pour endpoint sur macOS, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Par défaut, MAU recherche automatiquement les mises à jour quotidiennes, mais vous pouvez la modifier de manière hebdomadaire, mensuelle ou manuelle.
 
 ![Capture d'écran MAU](images/MDATP-34-MAU.png)
 
-Si vous décidez de déployer des mises à jour à l'aide de vos outils de distribution de logiciels, vous devez configurer MAU pour vérifier manuellement les mises à jour logicielles. Vous pouvez déployer des préférences pour configurer comment et quand MAU recherche les mises à jour pour les Mac de votre organisation.
+Si vous décidez de déployer des mises à jour à l'aide de vos outils de distribution de logiciels, vous devez configurer MAU pour vérifier manuellement les mises à jour logicielles. Vous pouvez déployer des préférences pour configurer comment et quand MAU recherche les mises à jour pour les Mac dans votre organisation.
 
 ## <a name="use-msupdate"></a>Utiliser msupdate
 
 MAU inclut un outil en ligne de commande, appelé *msupdate,* conçu pour les administrateurs informatiques afin qu'ils contrôlent plus précisément le moment où les mises à jour sont appliquées. Vous pouvez trouver des instructions sur l'utilisation de cet outil dans La mise à [jour d'Office pour Mac à l'aide de msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
 
-Dans MAU, l'identificateur d'application pour Microsoft Defender pour le point de terminaison sur macOS est *WDAV00*. Pour télécharger et installer les dernières mises à jour de Microsoft Defender pour Endpoint sur macOS, exécutez la commande suivante à partir d'une fenêtre Terminal :
+Dans MAU, l'identificateur d'application pour Microsoft Defender pour endpoint sur macOS est *WDAV00*. Pour télécharger et installer les dernières mises à jour de Microsoft Defender pour Endpoint sur macOS, exécutez la commande suivante à partir d'une fenêtre Terminal :
 
 ```
 ./msupdate --install --apps wdav00
@@ -78,7 +78,7 @@ Le `Current` canal contient la version la plus stable du produit.
 
 |Section|Valeur|
 |:--|:--|
-| **Domaine** | com.microsoft.autoupdate2 |
+| **Domaine** | `com.microsoft.autoupdate2` |
 | **Key** | ChannelName |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | Bêta <br/> Aperçu <br/> Current |
@@ -96,11 +96,11 @@ Modifier la fréquence à la recherche de mises à jour par MAU.
 
 |Section|Valeur|
 |:--|:--|
-| **Domaine** | com.microsoft.autoupdate2 |
+| **Domaine** | `com.microsoft.autoupdate2` |
 | **Key** | UpdateCheckFrequency |
 | **Type de données** | Entier |
 | **Valeur par défaut** | 720 (minutes) |
-| **Comment** | Cette valeur est définie en minutes. |
+| **Commentaire** | Cette valeur est définie en minutes. |
 
 
 ### <a name="change-how-mau-interacts-with-updates"></a>Modifier la façon dont MAU interagit avec les mises à jour
@@ -109,11 +109,11 @@ Modifier la façon dont MAU recherche les mises à jour.
 
 |Section|Valeur|
 |:--|:--|
-| **Domaine** | com.microsoft.autoupdate2 |
+| **Domaine** | `com.microsoft.autoupdate2` |
 | **Key** | HowToCheck |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | Manuel <br/> AutomaticCheck <br/> AutomaticDownload |
-| **Comment** |  Notez que AutomaticDownload est téléchargé et installé en mode silencieux si possible. |
+| **Commentaire** |  Notez que AutomaticDownload télécharge et installe en mode silencieux si possible. |
 
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Indique si le bouton « Vérifier les mises à jour » est activé.
@@ -122,7 +122,7 @@ Indiquez si les utilisateurs locaux pourront cliquer sur l’option « Vérifier
 
 |Section|Valeur|
 |:--|:--|
-| **Domaine** | com.microsoft.autoupdate2 |
+| **Domaine** | `com.microsoft.autoupdate2` |
 | **Key** | EnableCheckForUpdatesButton |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | True (par défaut) <br/> Faux |
@@ -130,14 +130,14 @@ Indiquez si les utilisateurs locaux pourront cliquer sur l’option « Vérifier
 
 ### <a name="disable-insider-checkbox"></a>Désactiver la case à cocher Insider
 
-Définissez la valeur sur True pour que le programme « Rejoignez le programme Office Insider... » case à cocher non disponible/grisée pour les utilisateurs.
+Définissez la valeur sur true pour que le programme « Rejoignez le programme Office Insider... » case à cocher non disponible/grisée pour les utilisateurs.
 
 |Section|Valeur|
 |:--|:--|
-| **Domaine** | com.microsoft.autoupdate2 |
+| **Domaine** | `com.microsoft.autoupdate2` |
 | **Key** | DisableInsiderCheckbox |
 | **Type de données** | Valeur booléenne |
-| **Valeurs possibles** | False (valeur par défaut) <br/> Vrai |
+| **Valeurs possibles** | False (par défaut) <br/> Vrai |
 
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Limiter la télémétrie envoyée à partir de MAU
@@ -146,7 +146,7 @@ Définissez ce dernier sur False pour envoyer un minimum de données de pulsatio
 
 |Section|Valeur|
 |:--|:--|
-| **Domaine** | com.microsoft.autoupdate2 |
+| **Domaine** | `com.microsoft.autoupdate2` |
 | **Key** | SendAllTelemetryEnabled |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | True (par défaut) <br/> Faux |
@@ -155,10 +155,10 @@ Définissez ce dernier sur False pour envoyer un minimum de données de pulsatio
 ## <a name="example-configuration-profile"></a>Exemple de profil de configuration
 
 Le profil de configuration suivant est utilisé pour :
-- Placer l'appareil dans le canal bêta
+- Placer l’appareil dans le canal bêta
 - Télécharger et installer automatiquement les mises à jour
-- Activer le bouton « Vérifier les mises à jour » dans l'interface utilisateur
-- Autoriser les utilisateurs de l'appareil à s'inscrire aux canaux Insider
+- Activer le bouton « Vérifier les mises à jour » dans l’interface utilisateur
+- Autoriser les utilisateurs de l’appareil à s’inscrire aux canaux Insider
 
 ### <a name="jamf"></a>JAMF
 

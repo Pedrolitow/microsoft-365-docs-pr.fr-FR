@@ -1,6 +1,6 @@
 ---
 title: Comment planifier des analyses avec MDATP pour macOS
-description: Découvrez comment planifier un temps d'analyse automatique pour Microsoft Defender ATP dans macOS afin de mieux protéger les ressources de votre organisation.
+description: Découvrez comment planifier un temps d'analyse automatique pour Microsoft Defender for Endpoint dans macOS afin de mieux protéger les ressources de votre organisation.
 keywords: microsoft, defender, atp, mac, analyses, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ecfae62bdc092a0b2544bf6f6a76dad1e86b8ab4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 71576c777f58aa193f2a73db7edea832d29a97c6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689592"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860930"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Planifier des analyses avec Microsoft Defender pour endpoint sur macOS
 
@@ -83,7 +83,7 @@ Vous pouvez créer une planification d'analyse à l'aide du *daemon* lancé sur 
     > [!TIP]
     > Pour exécuter une analyse complète au lieu d'une analyse rapide, modifiez la ligne 12, pour utiliser l'option au lieu (c'est-à-dire) et enregistrez le fichier sous le nom `<string>/usr/local/bin/mdatp scan quick</string>` `full` `quick` `<string>/usr/local/bin/mdatp scan full</string>` *com.microsoft.wdav.sched **full** scan.plist* au lieu de *com.microsoft.wdav.sched **quick** scan.plist*.
 
-3. Ouvrez **terminal**.
+3. Ouvrez **Terminal**.
 4. Entrez les commandes suivantes pour charger votre fichier :
 
     ```bash
@@ -93,7 +93,7 @@ Vous pouvez créer une planification d'analyse à l'aide du *daemon* lancé sur 
 
 5. Votre analyse programmée s'exécutera à la date, à l'heure et à la fréquence que vous avez définies dans votre liste P. Dans l'exemple, l'analyse s'exécute à 02:00 tous les vendredis. 
 
-    La `Weekday` valeur de utilise un nombre nombre `StartCalendarInterval` integer pour indiquer le cinquième jour de la semaine ou le vendredi.
+    La `Weekday` valeur `StartCalendarInterval` d'utilise un nombre integer pour indiquer le cinquième jour de la semaine ou le vendredi.
 
  > [!IMPORTANT]
  > Les agents exécutés *avec lancement* ne s'exécutent pas à l'heure prévue pendant que l'appareil est en veille. Ils s'exécutent à la place une fois que l'appareil reprend en mode veille.

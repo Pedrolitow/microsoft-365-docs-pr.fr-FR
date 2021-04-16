@@ -1,6 +1,6 @@
 ---
-title: Déploiement de Microsoft Defender ATP pour macOS avec Jamf Pro
-description: Déploiement de Microsoft Defender ATP pour macOS avec Jamf Pro
+title: Déploiement de Microsoft Defender pour endpoint pour macOS avec Jamf Pro
+description: Déploiement de Microsoft Defender pour endpoint pour macOS avec Jamf Pro
 keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamfpro, macos,pérable, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8015221f26250451a6cbcab8e66f35aafdc0767
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e49a56b138e792f06229345d19a5867c9f6438af
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689709"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862258"
 ---
 # <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Déploiement de Microsoft Defender pour endpoint sur macOS avec Jamf Pro
 
@@ -34,7 +34,7 @@ ms.locfileid: "51689709"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Découvrez comment déployer Microsoft Defender pour Endpoint sur macOS avec Jamf Pro.
 

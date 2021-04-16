@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768913"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861154"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -39,20 +39,20 @@ La protection réseau est prise en charge sur Windows, à partir de Windows 10, 
 
 La protection du réseau étend la protection dans [la protection Web](web-protection-overview.md) au niveau du système d'exploitation. Il fournit des fonctionnalités de protection web dans Edge à d'autres navigateurs et applications non-navigateur pris en charge. En outre, la protection réseau offre une visibilité et un blocage des indicateurs de compromission (IOCs) lorsqu'elle est utilisée avec la détection et la réponse des [points de terminaison.](overview-endpoint-detection-response.md) Par exemple, la protection du réseau fonctionne avec vos [indicateurs personnalisés.](manage-indicators.md)
 
-Pour plus d'informations sur la façon d'activer la protection réseau, voir [Activer la protection réseau.](enable-network-protection.md) Utilisez la stratégie de groupe, PowerShell ou les CSP mdM pour activer et gérer la protection réseau dans votre réseau.
+Pour plus d'informations sur la façon d'activer la protection réseau, voir [Activer la protection réseau.](enable-network-protection.md) Utilisez une stratégie de groupe, PowerShell ou des CSP de gestion des stratégies de groupe pour activer et gérer la protection réseau dans votre réseau.
 
 > [!TIP]
-> Consultez le site testground de Microsoft Defender ATP [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionne la protection réseau.
+> Consultez le site testground de Microsoft Defender for Endpoint [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionne la protection réseau.
 
 La protection réseau fonctionne mieux avec [Microsoft Defender pour point](microsoft-defender-endpoint.md)de terminaison, qui vous fournit des rapports détaillés sur les événements et les blocs Exploit Protection dans le cadre de scénarios d'investigation [d'alerte.](investigate-alerts.md)
 
 Lorsque la protection réseau bloque une connexion, une notification s'affiche à partir du centre de notifications. Votre équipe des opérations de sécurité [peut personnaliser la notification](customize-attack-surface-reduction.md#customize-the-notification) avec les détails et les informations de contact de votre organisation. En outre, les règles de réduction de la surface d'attaque individuelles peuvent être activées et personnalisées en fonction de certaines techniques à surveiller.
 
-Vous pouvez également utiliser le [mode audit](audit-windows-defender.md) pour évaluer l'impact de la protection réseau sur votre organisation si elle était activée.
+Vous pouvez également utiliser le [mode audit pour](audit-windows-defender.md) évaluer l'impact de la protection réseau sur votre organisation si elle était activée.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
-La protection réseau nécessite windows 10 Professionnel ou Entreprise, ainsi que la protection en temps réel de l'Antivirus Microsoft Defender.
+La protection du réseau nécessite Windows 10 Professionnel ou Entreprise et la protection en temps réel de l'Antivirus Microsoft Defender.
 
 | Version de Windows | Antivirus Microsoft Defender |
 |:---|:---|
@@ -67,7 +67,7 @@ Après avoir activé les services, vous devrez peut-être configurer votre rése
 
 Microsoft Defender pour le point de terminaison fournit des rapports détaillés sur les événements et les blocages dans le cadre de ses [scénarios d'investigation d'alerte.](investigate-alerts.md)
 
-Vous pouvez interroger Microsoft Defender pour obtenir des données de point de terminaison à l'aide de [la recherche avancée.](advanced-hunting-overview.md) Si vous utilisez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour voir comment les paramètres de protection réseau affecteraient votre environnement s'ils étaient activés.
+Vous pouvez interroger Microsoft Defender pour obtenir des données de point de terminaison à l'aide de [la recherche avancée.](advanced-hunting-overview.md) Si vous utilisez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour voir l'impact des paramètres de protection réseau sur votre environnement s'ils étaient activés.
 
 Voici un exemple de requête
 
@@ -96,7 +96,7 @@ Cette procédure crée un affichage personnalisé qui filtre pour afficher uniqu
 
 En raison de la nature multi-utilisateur de Windows 10 Entreprise, gardez les points suivants à l'esprit :
 
-1. La protection réseau est une fonctionnalité à l'échelle de l'appareil qui ne peut pas être ciblée sur des sessions utilisateur spécifiques.
+1. La protection réseau est une fonctionnalité à l'échelle de l'appareil et ne peut pas être ciblée sur des sessions utilisateur spécifiques.
 
 2. Les stratégies de filtrage de contenu Web sont également à l'échelle de l'appareil.
 
@@ -108,7 +108,7 @@ En raison de la nature multi-utilisateur de Windows 10 Entreprise, gardez les po
 
 ### <a name="alternative-option-for-network-protection"></a>Autre option pour la protection du réseau
 
-Pour Windows 10 Entreprise Multi-Session 1909 et version précédente, utilisé dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l'aide de la méthode suivante :
+Pour Windows 10 Entreprise Multisession 1909 et version précédente, utilisé dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l'aide de la méthode suivante :
 
 1. Utilisez [Activer la protection réseau et](enable-network-protection.md) suivez les instructions pour appliquer votre stratégie.
 
@@ -128,4 +128,4 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 - [Évaluer les niveaux de protection](evaluate-network-protection.md) | Entreprendre un scénario rapide qui illustre le fonctionnement de la fonctionnalité et les événements qui seraient généralement créés.
 
-- [Activer la protection réseau](enable-network-protection.md) | Utilisez la stratégie de groupe, PowerShell ou les CSP mdM pour activer et gérer la protection réseau dans votre réseau.
+- [Activer la protection réseau](enable-network-protection.md) | Utilisez une stratégie de groupe, PowerShell ou des CSP de gestion des stratégies de groupe pour activer et gérer la protection réseau dans votre réseau.

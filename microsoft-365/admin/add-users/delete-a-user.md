@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Découvrez comment supprimer un compte d'utilisateur. Décidez de l'utilisation du courrier électronique de l'utilisateur et du contenu OneDrive. Et décidez s'il faut conserver la licence de produit ou arrêter de payer pour elle.
-ms.openlocfilehash: 0069577b83c318fa57eaceddccc93b5832e634e0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: d40f70534499b08073278ffc2bed2b098ae1c4da
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759917"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860736"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Supprimer un utilisateur de votre organisation
   
-**Vous cherchez à supprimer votre *propre compte* d'utilisateur Microsoft 365 que vous utilisez au travail ou à l'école ? Contactez le support technique de votre entreprise ou de votre université pour suivre ces étapes à votre place.**
+**Vous cherchez à supprimer votre *propre compte* d'utilisateur Microsoft 365 que vous utilisez au travail ou à l'école ? Contactez le support technique de votre entreprise ou université pour suivre ces étapes à votre place.**
 
 ## <a name="what-you-need-to-know-about-deleting-users"></a>Ce que vous devez savoir sur la suppression des utilisateurs
 
@@ -47,14 +47,14 @@ Si vous êtes un administrateur général, lorsque vous supprimez un utilisateur
 
 Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier électronique de l'utilisateur et le contenu OneDrive, et si vous souhaitez conserver la licence ou arrêter de payer pour celle-ci.
   
-|Élément | Description |
+|Item | Description |
 |:-----|:-----|
-|Licences de produits  <br/> |Vous pouvez supprimer la licence de l'utilisateur et la supprimer de vos abonnements pour arrêter de payer pour cette licence. Si vous sélectionnez cette option, la licence sera automatiquement supprimée de vos abonnements.  <br/><br/> **Vous ne pouvez pas supprimer la licence si** vous l'avez achetée via un partenaire ou une licence en volume. Si vous payez pour une offre annuelle ou si vous êtes au milieu d'un cycle de facturation, vous ne pourrez pas supprimer la licence de votre abonnement tant que votre engagement n'est pas terminé.  <br/> |
+|Licences de produit  <br/> |Vous pouvez supprimer la licence de l'utilisateur et la supprimer de vos abonnements pour arrêter de payer pour cette licence. Si vous sélectionnez cette option, la licence sera automatiquement supprimée de vos abonnements.  <br/><br/> **Vous ne pouvez pas supprimer la licence si** vous l'avez achetée via un partenaire ou une licence en volume. Si vous payez pour une offre annuelle ou si vous êtes au milieu d'un cycle de facturation, vous ne pourrez pas supprimer la licence de votre abonnement tant que votre engagement n'est pas terminé.  <br/> |
 |Contenu OneDrive  <br/> |Si l'utilisateur a enregistré ses fichiers dans OneDrive, vous pouvez accorder à un autre utilisateur l'accès à ces fichiers.  <br/><br/> Vous devez déplacer les fichiers que vous souhaitez conserver pendant la période de rétention définie pour les fichiers OneDrive. **Par défaut, la période de rétention est de 30 jours.** Si vous ne déplacez pas les fichiers au cours de la période de rétention après la suppression de l'utilisateur, le contenu OneDrive est supprimé définitivement. Pour augmenter le nombre de jours de conservation des fichiers OneDrive pour les comptes supprimés, voir Définir la rétention OneDrive pour [les utilisateurs supprimés.](/onedrive/set-retention)  <br/><br/> **Important !** Si l'utilisateur supprimé a utilisé un ordinateur personnel pour télécharger des fichiers à partir de SharePoint et OneDrive, vous ne pouvez pas effacer les fichiers qu'il a stockés sur son ordinateur. Ils continueront d'avoir accès à tous les fichiers qui ont été synchronisés à partir de OneDrive.           |
-|E-mail  <br/> | Donner à un autre utilisateur l'accès au courrier électronique de l'utilisateur supprimé convertira la boîte aux lettres de l'utilisateur supprimé en boîte aux lettres partagée. Le nouveau propriétaire de la boîte aux lettres peut ensuite accéder à la boîte aux lettres et surveiller les nouveaux messages électroniques. Vous avez également les options suivantes :  <br/>  <br/>Modifier le nom complet : nous vous recommandons de modifier le nom d'affichage afin qu'il soit facile d'identifier la boîte aux lettres partagée dans la **liste** des utilisateurs actifs.  <br/>  Activer les réponses automatiques : nous avons déjà écrit une réponse automatique polie pour vous. Vous pouvez envoyer différentes réponses automatiques à des personnes au sein de votre organisation et à des personnes extérieures à votre organisation.  <br/> <br/> Nettoyer les alias : les alias sont des adresses de messagerie supplémentaires pour les utilisateurs. Certaines organisations ne les utilisent pas, donc si vous n'en avez pas, vous n'avez rien d'autre à faire ici. Si l'utilisateur a des alias, nous vous recommandons de les supprimer afin de pouvoir réutiliser ces adresses e-mail. Sinon, vous ne pouvez pas réutiliser ces adresses de messagerie tant que la période de rétention des boîtes aux lettres supprimées n'est pas écoulée. Par défaut, une boîte aux lettres supprimée est récupérable pendant 30 jours. Pour plus d'informations, voir [Supprimer ou restaurer des boîtes aux lettres utilisateur dans Exchange Online.](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox) <br/> |
+|E-mail  <br/> | Donner à un autre utilisateur l'accès au courrier de l'utilisateur supprimé convertira la boîte aux lettres de l'utilisateur supprimé en boîte aux lettres partagée. Le nouveau propriétaire de la boîte aux lettres peut ensuite accéder à la boîte aux lettres et surveiller les nouveaux messages électroniques. Vous avez également les options suivantes :  <br/>  <br/>Modifier le nom complet : nous vous recommandons de modifier le nom d'affichage afin qu'il soit facile d'identifier la boîte aux lettres partagée dans la **liste** des utilisateurs actifs.  <br/>  Activer les réponses automatiques : nous avons déjà écrit une réponse automatique polie pour vous. Vous pouvez envoyer différentes réponses automatiques à des personnes au sein de votre organisation et à des personnes extérieures à votre organisation.  <br/> <br/> Nettoyer les alias : les alias sont des adresses de messagerie supplémentaires pour les utilisateurs. Certaines organisations ne les utilisent pas, donc si vous n'en avez pas, vous n'avez rien d'autre à faire ici. Si l'utilisateur a des alias, nous vous recommandons de les supprimer afin de pouvoir réutiliser ces adresses e-mail. Sinon, vous ne pouvez pas réutiliser ces adresses de messagerie tant que la période de rétention des boîtes aux lettres supprimées n'est pas écoulée. Par défaut, une boîte aux lettres supprimée est récupérable pendant 30 jours. Pour plus d'informations, voir [Supprimer ou restaurer des boîtes aux lettres utilisateur dans Exchange Online.](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox) <br/> |
 |Active Directory  <br/> |Si votre entreprise utilise **Active Directory** qui se synchronise avec Azure Active Directory, vous devez supprimer le compte d'utilisateur d'Active Directory. Vous ne pouvez pas le faire via Office 365. Pour obtenir des instructions, [voir Supprimer un compte d'utilisateur.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))  <br/> |
 
-### <a name="get-started"></a>Démarrer
+### <a name="get-started"></a>Prise en main
 
 Étant donné que l'expérience guidée parcourt les étapes de suppression d'un utilisateur, voici comment commencer.
 
@@ -155,7 +155,7 @@ Plus tard, lorsque vous suivrez les étapes pour ajouter une autre personne à v
 
 ## <a name="delete-many-users-at-the-same-time"></a>Supprimer plusieurs utilisateurs en même temps
 
-Voir [l'cmdlet Remove-MsolUser](https://go.microsoft.com/fwlink/p/?linkid=842230) PowerShell.
+Voir [l'cmdlet Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) PowerShell.
 
 ## <a name="fix-issues-with-deleting-a-user"></a>Résoudre les problèmes de suppression d'un utilisateur
 

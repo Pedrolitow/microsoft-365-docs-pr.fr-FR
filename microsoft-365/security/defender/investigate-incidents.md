@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5fe594dca935b7377a385b487f1464c3f0a91151
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760296"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861874"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
@@ -38,23 +38,23 @@ ms.locfileid: "51760296"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender regroupe toutes les alertes, biens, enquêtes et preuves connexes sur vos appareils, utilisateurs et boîtes aux lettres dans un incident pour vous donner une vue d'ensemble complète d'une attaque.
+Microsoft 365 Defender regroupe toutes les alertes, biens, enquêtes et preuves associés sur vos appareils, utilisateurs et boîtes aux lettres dans un incident pour vous donner une vue d'ensemble complète d'une attaque.
 
 Au sein d'un incident, vous examinez les alertes qui affectent votre réseau, comprenez ce qu'elles signifient et rassemblez les preuves afin de pouvoir mettre au point un plan de correction efficace.
 
 ## <a name="initial-investigation"></a>Examen initial
 
-Avant de vous plonger dans les détails, jetez un œil aux propriétés et à la synthèse de l'incident.
+Avant de vous plonger dans les détails, jetez un œil aux propriétés et au résumé de l'incident.
 
 Vous pouvez commencer par sélectionner l'incident dans la colonne de coche. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Exemple de sélection d'un incident dans la colonne de coche":::
 
-Lorsque vous le faites, un volet récapitulatif s'ouvre avec des informations clés sur l'incident, telles que la gravité, à qui il est affecté et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l'incident. Voici un exemple.
+Lorsque vous le faites, un volet de synthèse s'ouvre avec des informations clés sur l'incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l'incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Exemple de volet récapitulatif pour un incident":::
 
-À partir de là, vous pouvez sélectionner **Ouvrir la page Incident.** Cela ouvre la page principale de l'incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les périphériques, les utilisateurs, les enquêtes et les preuves.
+À partir de là, vous pouvez sélectionner **Ouvrir la page Incident.** Cela ouvre la page principale de l'incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les appareils, les utilisateurs, les enquêtes et les preuves.
 
 Vous pouvez également ouvrir la page principale d'un incident en sélectionnant le nom de l'incident dans la file d'attente des incidents.
 
@@ -70,7 +70,7 @@ La section l'étendue fournit la liste des principales ressources affectées à 
 
 La chronologie des alertes fournit un aperçu de l'ordre chronologique dans lequel les alertes se sont produites, ainsi que les raisons pour lesquelles ces alertes sont liées à cet incident.
 
-Enfin, la section preuves fournit un résumé du nombre d’artefacts différents qui ont été inclus dans l’incident et de leur état de correction, pour que vous puissiez identifier immédiatement toute action nécessaire à la fin de l’opération.
+Enfin, la section preuve fournit un résumé du nombre d'artefacts différents inclus dans l'incident et de leur état de correction, afin que vous pouvez immédiatement identifier si vous avez besoin d'une action.
 
 Cette vue d'ensemble peut vous aider dans le tri initial de l'incident en fournissant des informations sur les principales caractéristiques de l'incident que vous devez connaître.
 
@@ -108,7 +108,7 @@ Dans la page appareil, vous pouvez collecter des informations supplémentaires s
 
 ## <a name="users"></a>Utilisateurs
 
-**L'onglet** Utilisateurs répertorie tous les utilisateurs qui ont été identifiés comme faisant partie ou associés à l'incident. Voici un exemple.
+**L'onglet** Utilisateurs répertorie tous les utilisateurs identifiés comme faisant partie ou associés à l'incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident":::
 
@@ -136,7 +136,7 @@ Sélectionnez un examen pour accéder à la page Détails de l’examen pour obt
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Exemple de page Preuve et réponse pour un incident":::
 
-Microsoft 365 Defender examine automatiquement tous les événements pris en charge par les incidents et les entités suspectes dans les alertes, en vous fournissant des informations sur les messages électroniques, fichiers, processus, services, adresses IP et bien plus encore. Cela vous permet de détecter et de bloquer rapidement les menaces potentielles dans l'incident.
+Microsoft 365 Defender examine automatiquement tous les événements pris en charge par les incidents et les entités suspectes dans les alertes, en vous fournissant des informations sur les messages électroniques, fichiers, processus, services, adresses IP et bien plus encore. Cela vous permet de détecter et de bloquer rapidement les menaces potentielles dans l’incident.
 
 Chacune des entités analysées est marquée avec un verdict (malveillant, suspect, propre) et un état de correction. Cela vous permet de comprendre l’état de correction de l’intégralité de l’incident et les étapes suivantes qui peuvent être prises.
 

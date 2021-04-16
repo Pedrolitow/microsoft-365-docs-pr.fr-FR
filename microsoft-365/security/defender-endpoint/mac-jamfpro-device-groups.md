@@ -1,6 +1,6 @@
 ---
 title: Configurer des groupes d'appareils dans Jamf Pro
-description: Découvrez comment configurer des groupes d'appareils dans Jamf Pro pour Microsoft Defender ATP pour macOS
+description: Découvrez comment configurer des groupes d'appareils dans Jamf Pro pour Microsoft Defender pour Endpoint pour macOS
 keywords: device, group, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos,pépé, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c1d6ae5d4635186bf0a1cbb55c7f906e8584f01
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 80dcb4ff73edd5e95603b15e097232a43dc0e05e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689688"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861610"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Configurer Microsoft Defender pour le point de terminaison sur les groupes d'appareils macOS dans Jamf Pro
 

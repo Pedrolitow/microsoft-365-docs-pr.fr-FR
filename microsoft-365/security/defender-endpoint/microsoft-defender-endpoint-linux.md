@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender pour point de terminaison sur Linux
+title: Microsoft Defender pour point de terminaison Linux
 ms.reviewer: ''
-description: Décrit comment installer et utiliser Microsoft Defender ATP pour Linux.
+description: Décrit comment installer et utiliser Microsoft Defender pour endpoint pour Linux.
 keywords: microsoft, defender, atp, linux, installation, déployer, désinstallation, casque, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0fea9d4dd46be2a77ea27728787a43b5273f92f5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687756"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861394"
 ---
-# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison sur Linux
+# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,11 +39,11 @@ ms.locfileid: "51687756"
 Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur Linux.
 
 > [!CAUTION]
-> L'exécution d'autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Linux est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti de defender pour point de terminaison pour la fonctionnalité EDR Linux après avoir configuré la fonctionnalité antivirus pour qu'elle s'exécute en [mode passif.](linux-preferences.md#enable--disable-passive-mode)
+> L'exécution d'autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Linux est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de defender pour point de terminaison pour la fonctionnalité EDR Linux après avoir configuré la fonctionnalité antivirus pour qu'elle s'exécute en [mode passif.](linux-preferences.md#enable--disable-passive-mode)
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Comment installer Microsoft Defender pour point de terminaison sur Linux
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Comment installer Microsoft Defender pour endpoint sur Linux
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Configuration requise
 
 - Accès au portail Centre de sécurité Microsoft Defender
 - Distribution Linux à l'aide [du gestionnaire système](https://systemd.io/)
@@ -80,15 +80,15 @@ Si vous avez des échecs d'installation, reportez-vous à Résolution des probl�
 - Version minimale du noyau 3.10.0-327
 - `fanotify`L'option noyau doit être activée
   > [!CAUTION]
-  > L'exécution de Defender pour Endpoint pour Linux côte à côte avec d'autres solutions de sécurité basées sur `fanotify` n'est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris l'arrêt du système d'exploitation.
+  > L'exécution de Defender pour Endpoint pour Linux côte à côte avec d'autres solutions de sécurité basées sur la sécurité `fanotify` n'est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris la suspension du système d'exploitation.
 
 - Espace disque : 1 Go
-- /opt/microsoft/mdatp/sbin/wdavdaemon requiert une autorisation exécutable. Pour plus d'informations, voir « S'assurer que le daemon dispose de l'autorisation exécutable » dans Résolution des problèmes d'installation de [Microsoft Defender ATP pour Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
+- /opt/microsoft/mdatp/sbin/wdavdaemon requiert une autorisation exécutable. Pour plus d'informations, voir « S'assurer que le daemon dispose de l'autorisation exécutable » dans Résoudre les problèmes d'installation de [Microsoft Defender pour Endpoint pour Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
 - Mémoire : 1 Go
     > [!NOTE]
     > Assurez-vous que vous avez de l'espace disque libre dans /var.
 
-- La solution offre actuellement une protection en temps réel pour les types de système de fichiers suivants :
+- La solution fournit actuellement une protection en temps réel pour les types de système de fichiers suivants :
 
   - `btrfs`
   - `ecryptfs`
@@ -143,7 +143,7 @@ Microsoft publie régulièrement des mises à jour logicielles pour améliorer l
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>Comment configurer Microsoft Defender pour endpoint sur Linux
 
-Des instructions sur la configuration du produit dans les environnements d'entreprise sont disponibles dans Définir les préférences de [Microsoft Defender pour Endpoint sur Linux.](linux-preferences.md)
+Des instructions sur la configuration du produit dans les environnements d'entreprise sont disponibles dans Définir les préférences [de Microsoft Defender pour Endpoint sur Linux.](linux-preferences.md)
 
 ## <a name="resources"></a>Ressources
 

@@ -1,7 +1,7 @@
 ---
-title: Gestion des vulnérabilités et de la découverte de périphériques réseau
+title: Détection de périphériques réseau et gestion des vulnérabilités
 description: Les recommandations de sécurité et la détection des vulnérabilités sont désormais disponibles pour les systèmes d'exploitation des commutateurs, routeurs, contrôleurs WLAN et pare-feu.
-keywords: périphériques réseau, détection des vulnérabilités des périphériques réseau, systèmes d'exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
+keywords: périphériques réseau, détection de vulnérabilité des périphériques réseau, systèmes d'exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43ade52e18ffc8e5db890cb0776090e9b32419e2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687672"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862066"
 ---
-# <a name="network-device-discovery-and-vulnerability-management"></a>Gestion des vulnérabilités et de la découverte de périphériques réseau
+# <a name="network-device-discovery-and-vulnerability-management"></a>Détection de périphériques réseau et gestion des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,16 +37,19 @@ ms.locfileid: "51687672"
 
 > [!IMPORTANT]
 > **L'analyse et la gestion des périphériques réseau sont actuellement en prévisualisation publique**<br>
-> Cette version préliminaire est fournie sans contrat de niveau de service et n'est pas recommandée pour les charges de travail de production. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
+> Cette version d'aperçu est fournie sans contrat de niveau de service et n'est pas recommandée pour les charges de travail de production. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
 > Pour plus d'informations, [voir Microsoft Defender pour les fonctionnalités d'aperçu de point de terminaison.](preview.md)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
+> [!NOTE]  
+> Le [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) blog sur les évaluations de la vulnérabilité et de la détection des périphériques réseau publié le \( 13/04/2021 fournit des informations sur les nouvelles fonctionnalités de découverte de périphériques réseau dans Defender pour le point de \) terminaison.  Cet article fournit une vue  d'ensemble du défi que la découverte de périphériques réseau est conçue pour répondre, ainsi que des informations détaillées sur la façon de commencer à utiliser ces nouvelles fonctionnalités.
+
 Les fonctionnalités de découverte de réseau sont disponibles dans la **section** Inventaire des appareils du Centre de sécurité Microsoft 365 et des consoles du Centre de sécurité Microsoft Defender.  
 
-Un appareil Microsoft Defender for Endpoint désigné sera utilisé sur chaque segment réseau pour effectuer des analyses authentifiées périodiques des périphériques réseau préconfigurés. Une fois découvertes, les fonctionnalités de gestion des menaces et des vulnérabilités de Defender for Endpoint fournissent des flux de travail intégrés pour sécuriser les commutateurs découverts, les routeurs, les contrôleurs WLAN, les pare-feu et les passerelles VPN.  
+Un appareil Microsoft Defender for Endpoint désigné sera utilisé sur chaque segment réseau pour effectuer des analyses authentifiées périodiques des périphériques réseau préconfigurés. Une fois découvertes, les fonctionnalités de gestion des menaces et des vulnérabilités de Defender for Endpoint fournissent des flux de travail intégrés pour sécuriser les commutateurs, routeurs, contrôleurs WLAN, pare-feu et passerelles VPN détectés.  
 
-Une fois que les périphériques réseau ont été découverts et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
+Une fois les périphériques réseau détectés et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
 
 ## <a name="approach"></a>Approche
 
@@ -97,20 +100,22 @@ La première étape consiste à sélectionner un appareil qui effectuera les ana
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
-    Remarque : toutes les URL ne sont pas spécifiées dans la liste de collecte de données autorisées de Defender for Endpoint.
+    > [!NOTE]
+    > Toutes les URL ne sont pas spécifiées dans la liste de collecte de données autorisées de Defender for Endpoint.
 
 ## <a name="permissions"></a>Autorisations
 
-Pour configurer les travaux d'évaluation, l'option d'autorisation utilisateur suivante est requise : Gérer les **paramètres de sécurité dans le Centre de sécurité.** Vous pouvez trouver l'autorisation en allant à **Paramètres**  >  **Rôles**. Pour plus d'informations, voir [Créer et gérer des rôles pour le contrôle d'accès basé sur les rôles](user-roles.md)
+Pour configurer les travaux d'évaluation, l'option d'autorisation utilisateur suivante est requise : Gérer les **paramètres de sécurité dans le Centre de sécurité.** Vous pouvez trouver l'autorisation en allant à **Paramètres**  >  **Rôles**. Pour plus d'informations, voir [Créer et gérer des rôles pour le contrôle d'accès basé sur les rôles.](user-roles.md)
 
 ## <a name="install-the-network-scanner"></a>Installer le scanneur réseau
 
-1. Go to **Microsoft 365 security**  >  **Settings**  >  **Endpoints** Assessment  >  **jobs** (under 'Network assessments').
+1. Go to **Microsoft 365 security**  >  **Settings**  >  **Endpoints** Assessment  >  **jobs** (under **Network assessments**).
     1. Dans le Centre de sécurité Microsoft Defender, go to Settings > Assessment jobs page.
 
 2. Téléchargez le scanneur réseau et installez-le sur le périphérique d'évaluation Defender for Endpoint désigné.
 
-![Bouton Télécharger le scanneur](images/assessment-jobs-download-scanner.png)
+    > [!div class="mx-imgBorder"]
+    > ![Bouton Télécharger le scanneur](images/assessment-jobs-download-scanner.png)
 
 ## <a name="network-scanner-installation--registration"></a>Inscription de l'installation du scanneur & réseau
 
@@ -119,11 +124,13 @@ Le processus de signature peut être effectué sur l'appareil d'évaluation dés
 Pour terminer le processus d'inscription du scanneur réseau :
 
 1. Copiez et suivez l'URL qui apparaît sur la ligne de commande et utilisez le code d'installation fourni pour terminer le processus d'inscription.
-    - Remarque : vous devrez peut-être modifier les paramètres de l'invite de commandes pour pouvoir copier l'URL.
+
+    > [!NOTE]
+    > Vous devrez peut-être modifier les paramètres d'invite de commandes pour pouvoir copier l'URL.
 
 2. Entrez le code et connectez-vous à l'aide d'un compte Microsoft qui dispose de l'autorisation Defender pour le point de terminaison appelée « Gérer les paramètres de sécurité dans le Centre de sécurité ».
 
-3. Lorsque vous avez terminé, vous devez voir un message vous confirmant que vous êtes bien inscrit.
+3. Lorsque vous avez terminé, vous devriez voir un message vous confirmant que vous vous êtes déjà inscrit.
 
 ## <a name="configure-a-new-assessment-job"></a>Configurer un nouveau travail d'évaluation  
 
@@ -131,13 +138,17 @@ Dans la page Travaux d'évaluation dans **Paramètres,** **sélectionnez Ajouter
 
 Pour éviter la duplication des appareils dans l'inventaire des périphériques réseau, assurez-vous que chaque adresse IP n'est configurée qu'une seule fois sur plusieurs périphériques d'évaluation.
 
-![Bouton Ajouter un travail d'évaluation réseau](images/assessment-jobs-add.png)
+> [!div class="mx-imgBorder"]
+> ![Bouton Ajouter un travail d'évaluation réseau](images/assessment-jobs-add.png)
 
 Ajout des étapes d'un travail d'évaluation réseau :
 
-1. Choisissez un nom de « travail d'évaluation » et le « périphérique d'évaluation » sur lequel le scanneur réseau a été installé. Cet appareil effectue les analyses authentifiées périodiques. 
+1. Choisissez un nom de « travail d'évaluation » et le « périphérique d'évaluation » sur lequel le scanneur réseau a été installé. Cet appareil effectue les analyses authentifiées périodiques.
+
 2. Ajoutez les adresses IP des périphériques réseau cibles à scanner (ou les sous-réseaux où ces périphériques sont déployés). 
+
 3. Ajoutez les informations d'identification SNMP requises des périphériques réseau cibles. 
+
 4. Enregistrez le travail d'évaluation réseau nouvellement configuré pour démarrer l'analyse réseau périodique. 
 
 ### <a name="scan-and-add-network-devices"></a>Analyser et ajouter des périphériques réseau
@@ -157,13 +168,14 @@ Une fois les résultats obtenus, vous pouvez choisir les appareils qui seront in
 
 Les appareils nouvellement découverts s'afficheront sous le nouvel onglet **Périphériques** réseau dans la page **Inventaire des** appareils. L'ajout d'un travail d'évaluation peut prendre jusqu'à deux heures jusqu'à ce que les appareils soient mis à jour.
 
-![Section Périphériques réseau dans l'inventaire des appareils](images/assessment-jobs-device-inventory.png)
+> [!div class="mx-imgBorder"]
+> ![Section Périphériques réseau dans l'inventaire des appareils](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
 ### <a name="network-scanner-installation-has-failed"></a>Échec de l'installation du scanneur réseau
 
-Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans vos paramètres de pare-feu. Assurez-vous également que les paramètres proxy sont configurés comme décrit dans Configurer les [paramètres de proxy](configure-proxy-internet.md) d'appareil et de connectivité Internet
+Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans vos paramètres de pare-feu. Assurez-vous également que les paramètres de proxy sont configurés comme décrit dans Configurer les [paramètres de proxy](configure-proxy-internet.md)d'appareil et de connectivité Internet.
 
 ### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>La page Microsoft.com/devicelogin web de l'application n'a pas été
 

@@ -1,6 +1,6 @@
 ---
 title: Examiner les alertes dans Microsoft 365 Defender
-description: Examinez les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
+description: Examiner les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
 keywords: incidents, alertes, enquêter, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte de réception, e-mail, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 601a8674327c424592c65014793599dc19b2bcd3
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51759431"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861992"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -38,74 +38,106 @@ ms.locfileid: "51759431"
 
 Les alertes sont la base de tous les incidents et indiquent l'occurrence d'événements malveillants ou suspects dans votre environnement. Les alertes font généralement partie d'une attaque plus large et fournissent des indices sur un incident.
 
-Dans Microsoft 365 Defender, les alertes associées sont regroupées pour former des incidents. Les incidents fournissent toujours le contexte plus large d'une attaque, mais l'analyse des alertes peut être utile lorsque des analyses plus approfondies sont nécessaires. 
+Dans Microsoft 365 Defender, les alertes associées sont regroupées pour former des [incidents.](incidents-overview.md) Les incidents fournissent toujours le contexte plus large d'une attaque, mais l'analyse des alertes peut être utile lorsque des analyses plus approfondies sont nécessaires. 
 
+La **file d'attente Alertes** affiche l'ensemble actuel des alertes. Vous arrivez à la file d'attente des alertes à partir **d'incidents & alertes > alertes** sur le lancement rapide du Centre de sécurité Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)).
 
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d'attente des alertes":::
 
-## <a name="using-alert-pages-in-investigations"></a>Utilisation de pages d'alerte dans les enquêtes
+Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour endpoint, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
-À partir de l'onglet Alertes d'une page d'incident, la sélection d'une alerte vous amène aux pages d'alerte individuelles. Une page d'alerte se compose de trois sections : ressources affectées, article d'alerte et volet d'informations.
+Par défaut, la file d'attente des alertes dans le Centre de sécurité Microsoft 365 affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L'alerte la plus récente se trouve en haut de la liste pour que vous la voyez en premier. 
 
-![Image d'exemple de page d'alerte](../../media/new-alert-page2.png)
+Dans la file d'attente des alertes par défaut, vous pouvez sélectionner **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
-Tout au long d'une page d'alerte, vous pouvez sélectionner l'icône à trois points (**...**) en regard de n'importe quelle entité afin de voir les actions disponibles, telles que l'ouverture de la page de biens spécifiques ou l'application d'étapes de correction spécifiques.
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet de filtres pour la file d'attente d'alertes":::
 
-### <a name="analyze-affected-assets"></a>Analyser les ressources affectées
-La section Ressources affectées répertorie les boîtes aux lettres, les appareils et les utilisateurs concernés par cette alerte. La sélection de l'une des cartes de biens remplit le volet latéral détails avec des informations, y compris d'autres alertes impliquant les biens, le cas caser.
-
-
-### <a name="trace-an-alerts-role-in-the-alert-story"></a>Suivre le rôle d'une alerte dans l'article d'alerte
-L'article d'alerte affiche toutes les ressources ou entités associées à l'alerte dans une arborescence de processus. L'alerte dans le titre est celle qui est sélectionnée lorsque vous vous pointez pour la première fois sur la page de votre alerte sélectionnée. Les ressources de l'article d'alerte sont ex expandables et peuvent être cliquées. Ils fournissent des informations supplémentaires et accélèrent la réponse en vous permettant d'agir directement dans le contexte de la page d'alerte. 
-
-> [!NOTE]
-> La section de l'article sur l'alerte peut contenir plusieurs alertes, avec des alertes supplémentaires liées à la même arborescence d'exécution apparaissant avant ou après l'alerte que vous avez sélectionnée.
-
-### <a name="view-more-alert-information-in-the-details-pane"></a>Afficher plus d'informations sur les alertes dans le volet d'informations
-
-Le volet d'informations affiche d'abord les détails de l'alerte sélectionnée, ainsi que les détails et les actions qui y sont associés. Si vous sélectionnez l'une des ressources ou entités concernées dans l'article d'alerte, le volet d'informations change pour fournir des informations contextuelles et des actions pour l'objet sélectionné.
-
-Une fois que vous avez sélectionné une entité d'intérêt, le volet d'informations change pour afficher les informations sur le type d'entité sélectionné, les informations historiques lorsqu'elle est disponible et les options d'action sur cette entité directement à partir de la page d'alerte.
-
-### <a name="manage-alerts"></a>Gérer des alertes
-
-Une fois que vous avez terminé d'examiner les alertes, vous pouvez revenir à l'alerte que vous avez démarrée, marquer l'état de l'alerte comme résolu et le classer comme alerte False ou Alerte True. La classification des alertes permet d'affiner votre produit pour fournir plus d'alertes vraies et moins de fausses alertes.
-
-> [!NOTE]
-> Une façon de gérer les alertes via l'utilisation de balises. La fonctionnalité de marquage de Microsoft Defender pour Office 365 est déployée de manière incrémentielle et est actuellement en prévisualisation. <br>
-> Actuellement, les noms de balise modifiés sont appliqués uniquement aux alertes créées *après la* mise à jour. Les alertes qui ont été générées avant la modification ne reflètent pas le nom de balise mis à jour. 
-
-
-## <a name="manage-the-unified-alert-queue"></a>Gérer la file d'attente d'alerte unifiée
-
-La sélection des alertes sous Incidents & alertes dans le volet de navigation du Centre de sécurité Microsoft 365 vous amène à la file d'attente d'alertes unifiée. Les alertes de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent dans cette section. 
-
-![Image de l'exemple de page d'alerte](../../media/unified-alert-queue.png)
-
-La file d'attente Alertes affiche la liste des alertes qui ont été signalées dans votre réseau. Par défaut, la file d'attente affiche les alertes visibles au cours des 30 derniers jours. Les alertes les plus récentes sont affichées en haut de la liste pour vous aider à voir les alertes les plus récentes en premier.
-
-> [!NOTE]
-> Au moment du lancement, la file d'attente des alertes unifiées ne dispose que de 7 jours d'alertes Microsoft Defender pour Office 365 disponibles. La file d'attente continuera à se développer au fil du temps. Si vous devez trier les alertes avant le lancement de la file d'attente d'alertes unifiée, utilisez la file d'attente des alertes dans le Centre de sécurité [et conformité.](https://protection.office.com/viewalerts)
-
-
-Sur la barre de navigation supérieure, vous pouvez :
-
-- Appliquer des filtres
-- Personnaliser des colonnes pour ajouter ou supprimer des colonnes
-- Exporter des données
-
-Vous pouvez également filtrer les alertes en fonction de différents critères :
+Vous pouvez filtrer les alertes en fonction de ces critères :
 
 - Severity
 - Statut
 - Catégorie
 - Source de détection
+- Balises
 - Stratégie
 - Ressources impactées
-- Première activité
-- Dernière activité
 
+## <a name="analyze-an-alert"></a>Analyser une alerte
 
-Pour démarrer une enquête sur un incident, [lisez Examiner les incidents dans Microsoft 365 Defender](investigate-incidents.md)
+Pour voir la page principale de l'alerte, sélectionnez le nom de l'alerte. Voici un exemple.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exemple de page de détails d'une alerte dans le Centre de sécurité Microsoft 365":::
+
+Vous pouvez également sélectionner l'action Ouvrir la **page d'alerte** principale dans le volet Gérer **les** alertes.
+
+Une page d'alerte se compose des sections suivantes : 
+
+- Article sur l'alerte
+- Actions entreprises (y compris les biens touchés)
+- Événements connexes
+- Détails récapitulatifs
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exemple de page de détails d'une alerte dans le Centre de sécurité Microsoft 365":::
+
+Tout au long d'une page d'alerte, vous pouvez sélectionner les ellipses (**...**) en regard de n'importe quelle entité pour voir les actions disponibles, telles que l'ouverture de la page de biens spécifique ou la prise d'étapes de correction spécifiques.
+
+### <a name="analyze-affected-assets"></a>Analyser les ressources affectées
+
+La section **Actions entreprises** contient une liste des biens concernés, tels que les boîtes aux lettres, les appareils et les utilisateurs affectés par cette alerte. 
+
+Vous pouvez également sélectionner Afficher dans  le centre  de **l'action** pour afficher l'onglet Historique du centre de travail dans le Centre de sécurité Microsoft 365. 
+
+### <a name="trace-an-alerts-role-in-the-alert-story"></a>Suivre le rôle d'une alerte dans l'article d'alerte
+
+L'article d'alerte affiche toutes les ressources ou entités associées à l'alerte dans une arborescence de processus. L'alerte dans le titre est celle qui est sélectionnée lorsque vous vous pointez pour la première fois sur la page de votre alerte sélectionnée. Les ressources de l'article d'alerte sont ex expandables et peuvent être cliquées. Ils fournissent des informations supplémentaires et accélèrent votre réponse en vous permettant d'agir directement dans le contexte de la page d'alerte. 
+
+> [!NOTE]
+> La section de l'article sur l'alerte peut contenir plusieurs alertes, avec des alertes supplémentaires liées à la même arborescence d'exécution apparaissant avant ou après l'alerte que vous avez sélectionnée.
+
+### <a name="view-more-alert-information-on-the-details-page"></a>Afficher plus d'informations sur les alertes sur la page de détails
+
+La page de détails affiche les détails de l'alerte sélectionnée, ainsi que les détails et les actions qui y sont associés. Si vous sélectionnez l'une des ressources ou entités affectées dans l'article d'alerte, la page de détails change pour fournir des informations contextuelles et des actions pour l'objet sélectionné.
+
+Une fois que vous avez sélectionné une entité d'intérêt, la page de détails change pour afficher les informations sur le type d'entité sélectionné, les informations historiques lorsqu'elle est disponible et les options d'action sur cette entité directement à partir de la page d'alerte.
+
+## <a name="manage-alerts"></a>Gérer des alertes
+
+Pour gérer une alerte, sélectionnez l'alerte dans la file d'attente des alertes sur sa ligne pour voir un volet Gérer **les** alertes. Voici un exemple.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Exemple du volet récapitulatif d'une alerte":::
+
+Le **volet Gérer les** alertes vous permet de spécifier :
+
+- État de l'alerte (Nouveau, Résolu, En cours).
+- Classification de l'alerte (non définie, alerte true, fausse alerte).
+- Pour la classification en tant qu'alerte réelle, le type de menace pour l'alerte dans le **champ Détermination.**
+- Commentaire de l'alerte.
+
+> [!NOTE]
+> Une façon de gérer les alertes via l'utilisation de balises. La fonctionnalité de marquage de Microsoft Defender pour Office 365 est déployée de manière incrémentielle et est actuellement en prévisualisation. <br>
+> Actuellement, les noms de balise modifiés sont appliqués uniquement aux alertes créées *après la* mise à jour. Les alertes qui ont été générées avant la modification ne reflètent pas le nom de balise mis à jour. 
+
+À partir de ce volet, vous pouvez également effectuer les actions supplémentaires ci-après : 
+
+- Ouvrir la page principale d'alerte
+- Consulter un expert en menaces Microsoft
+- Afficher l'envoi
+- Lien vers un autre incident
+- Voir l'alerte dans une chronologie
+- Créer une règle de suppression
+
+Voici un exemple.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Exemple d'actions sur une alerte dans le Centre de sécurité Microsoft 365":::
+
+La liste des actions supplémentaires dépend du type d'alerte.
+
+## <a name="resolve-an-alert"></a>Résoudre une alerte
+
+Une fois que vous avez terminé d'examiner une alerte  et qu'elle peut être résolue,  allez dans le volet Gérer l'alerte et marquez son état comme Résolu et classez-le en tant qu'alerte **False** ou Alerte **True.** Pour les alertes vraies, spécifiez le type de menace de l'alerte dans le **champ Détermination.**
+
+La classification des alertes et la spécification de leur détermination permettent à Microsoft 365 Defender de fournir plus d'alertes vraies et moins de fausses alertes.
+
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des incidents](incidents-overview.md)

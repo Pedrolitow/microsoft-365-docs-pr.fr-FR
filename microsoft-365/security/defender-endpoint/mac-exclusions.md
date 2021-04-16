@@ -1,6 +1,6 @@
 ---
-title: Configurer et valider des exclusions pour Microsoft Defender ATP pour Mac
-description: Fournir et valider des exclusions pour Microsoft Defender ATP pour Mac. Les exclusions peuvent être définies pour les fichiers, dossiers et processus.
+title: Configurer et valider des exclusions pour Microsoft Defender pour Endpoint pour Mac
+description: Fournir et valider des exclusions pour Microsoft Defender pour endpoint pour Mac. Les exclusions peuvent être définies pour les fichiers, dossiers et processus.
 keywords: microsoft, defender, atp, mac, exclusions, analyses, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2281fccfb97d38dbdc218799b087290433deff30
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 7b5254e9b4289219a08730d736c8f9738e7a65f0
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764156"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861586"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurer et valider des exclusions pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "51764156"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article fournit des informations sur la définition d'exclusions qui s'appliquent aux analyses à la demande, ainsi que sur la protection et la surveillance en temps réel.
 
@@ -55,7 +55,7 @@ Le tableau suivant indique les types d'exclusion pris en charge par Defender pou
 Exclusion | Définition | Exemples
 ---|---|---
 Extension de fichier | Tous les fichiers avec l'extension, n'importe où sur l'ordinateur | `.test`
-Fichier | Un fichier spécifique identifié par le chemin d'accès complet | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+File | Un fichier spécifique identifié par le chemin d'accès complet | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Folder | Tous les fichiers sous le dossier spécifié (de manière récursive) | `/var/log/`<br/>`/var/*/`
 Processus | Un processus spécifique (spécifié par le chemin d'accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci | `/bin/cat`<br/>`cat`<br/>`c?t`
 
@@ -79,13 +79,13 @@ Pour plus d'informations sur la configuration des exclusions à partir de JAMF, 
 
 Ouvrez l'application Defender for Endpoint et accédez à Gérer les **paramètres** Ajouter ou supprimer une exclusion... , comme illustré  >  dans la capture d'écran suivante :
 
-![Capture d'écran Gérer les exclusions](images/mdatp-37-exclusions.png)
+![Capture d'écran gérer les exclusions](images/mdatp-37-exclusions.png)
 
 Sélectionnez le type d'exclusion que vous souhaitez ajouter et suivez les invites.
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d'exclusions avec le fichier de test EICAR
 
-Vous pouvez vérifier que vos listes d'exclusions fonctionnent en téléchargeant `curl` un fichier de test.
+Vous pouvez vérifier que vos listes d'exclusions fonctionnent à l'aide `curl` du téléchargement d'un fichier de test.
 
 Dans l'extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d'exclusion. Par exemple, si vous avez exclu `.testing` l'extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d'accès, veillez à exécuter la commande dans ce chemin d'accès.
 
@@ -93,7 +93,7 @@ Dans l'extrait de code Bash suivant, remplacez-le par un fichier conforme `test.
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Si Defender pour point de terminaison sur Mac signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n'est détecté et que le fichier téléchargé existe, l'exclusion fonctionne. Vous pouvez ouvrir le fichier pour vérifier que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
+Si Defender pour point de terminaison sur Mac signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n'est détecté et que le fichier téléchargé existe, l'exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
 
 Si vous n'avez pas accès à Internet, vous pouvez créer votre propre fichier de test EICAR. Écrivez la chaîne EICAR dans un nouveau fichier texte avec la commande Bash suivante :
 
@@ -101,7 +101,7 @@ Si vous n'avez pas accès à Internet, vous pouvez créer votre propre fichier d
 echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > test.txt
 ```
 
-Vous pouvez également copier la chaîne dans un fichier texte vierge et essayer de l'enregistrer avec le nom de fichier ou dans le dossier que vous tentez d'exclure.
+Vous pouvez également copier la chaîne dans un fichier texte vide et essayer de l'enregistrer avec le nom de fichier ou dans le dossier que vous tentez d'exclure.
 
 ## <a name="allow-threats"></a>Autoriser les menaces
 

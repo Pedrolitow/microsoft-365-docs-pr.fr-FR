@@ -1,6 +1,6 @@
 ---
-title: Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender ATP pour Mac
-description: Détecter et bloquer les applications potentiellement indésirables (PUA) à l'aide de Microsoft Defender ATP pour Mac.
+title: Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour Endpoint pour Mac
+description: Détecter et bloquer les applications potentiellement indésirables (PUA) à l'aide de Microsoft Defender pour Endpoint pour Mac.
 keywords: microsoft, defender, atp, mac, pua, pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf61c6a501a53ac03d3c4cc28068f7af4c0f88d6
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 93462b37c9150f1e38239a0ca70b96ad8d07830f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688104"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862222"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour endpoint sur macOS
 
@@ -71,7 +71,7 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>Utilisez la console de gestion pour configurer la protection PUA :
 
-Dans votre entreprise, vous pouvez configurer la protection PUA à partir d'une console de gestion, telle que JAMF ou Intune, de la même façon que les autres paramètres de produit sont configurés. Pour plus d'informations, voir la section [Paramètres](mac-preferences.md#threat-type-settings) du type de menace de la rubrique Définir les préférences de [Microsoft Defender pour Endpoint sur macOS.](mac-preferences.md)
+Dans votre entreprise, vous pouvez configurer la protection PUA à partir d'une console de gestion, telle que JAMF ou Intune, de la même manière que les autres paramètres de produit sont configurés. Pour plus d'informations, consultez la section [Paramètres](mac-preferences.md#threat-type-settings) du type de menace de la rubrique Définir les préférences de Microsoft Defender pour le point de terminaison [sur macOS.](mac-preferences.md)
 
 ## <a name="related-topics"></a>Voir aussi
 

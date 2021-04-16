@@ -1,6 +1,6 @@
 ---
-title: Résoudre les problèmes d'installation de Microsoft Defender ATP pour Mac
-description: Résoudre les problèmes d'installation dans Microsoft Defender ATP pour Mac.
+title: Résoudre les problèmes d'installation de Microsoft Defender pour Endpoint pour Mac
+description: Résolution des problèmes d'installation dans Microsoft Defender pour Point de terminaison pour Mac.
 keywords: microsoft, defender, atp, mac, install
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 754f389f37bce3be1c5a636f1911b5d0fb3fd29c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d2ad3160c9f36a27dc98f44365433de5f8b26bb2
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689616"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861430"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d'installation de Microsoft Defender pour endpoint sur macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689616"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -61,7 +61,7 @@ L'installation a échoué car une mise à niveau vers une version antérieure en
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>Journal d'installation MDATP manquant ou non mis à jour
 
 Dans de rares cas, l'installation ne laisse aucune trace dans le fichier /Library/Logs/Microsoft/mdatp/install.log de MDATP.
-Vous pouvez vérifier qu'une installation s'est produite et analyser les erreurs possibles en interrogeant les journaux macOS (cela est utile dans le déploiement mdm, lorsqu'il n'y a pas d'interface utilisateur client). Nous vous recommandons d’utiliser une fenêtre de temps étroite pour exécuter une requête et de filtrer par nom de processus de journalisation, car il y aura une quantité considérable d’informations.
+Vous pouvez vérifier qu'une installation s'est produite et analyser les erreurs possibles en interrogeant les journaux macOS (cela est utile dans le déploiement mdm, lorsqu'il n'y a pas d'interface utilisateur client). Nous vous recommandons d'utiliser une fenêtre de temps étroite pour exécuter une requête et de filtrer par nom de processus de journalisation, car il y aura une quantité considérable d'informations.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

@@ -1,6 +1,6 @@
 ---
 title: Mc Antivirus vers Microsoft Defender pour le point de terminaison - Préparer
-description: Il s'agit de la phase 1, Préparer, pour la migration de Mc Antivirus vers Microsoft Defender ATP.
+description: Il s'agit de la phase 1, Prepare, pour la migration de Mc Antivirus vers Microsoft Defender pour Endpoint.
 keywords: migration, protection avancée contre les menaces Windows Defender, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,12 +22,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 049539cc5c19d3c6683815d0da949c2a3de10f93
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 45b22d0066496e40bb8f2e17d9f82de860d73ea4
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687792"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861422"
 ---
 # <a name="migrate-from-mcafee---phase-1-prepare-for-your-migration"></a>Migrer à partir de Mc Antivirus - Phase 1 : Préparer votre migration
 
@@ -46,11 +46,11 @@ Cette phase de migration comprend les étapes suivantes :
 1. [Obtenir et déployer des mises à jour sur les appareils de votre organisation](#get-and-deploy-updates-across-your-organizations-devices)
 2. [Obtenir Microsoft Defender pour le point de terminaison.](#get-microsoft-defender-for-endpoint)
 3. [Accorder l'accès au Centre de sécurité Microsoft Defender.](#grant-access-to-the-microsoft-defender-security-center)
-4. [Configurer les paramètres de proxy et de connectivité Internet de l'appareil.](#configure-device-proxy-and-internet-connectivity-settings)
+4. [Configurez les paramètres de proxy et de connectivité Internet de l'appareil.](#configure-device-proxy-and-internet-connectivity-settings)
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Obtenir et déployer des mises à jour sur les appareils de votre organisation
 
-En tant que meilleure pratique, maintenez à jour les appareils et points de terminaison de votre organisation. Assurez-vous que votre solution Mc Antivirus Endpoint Security (Mc Antivirus) est à jour et que les systèmes d'exploitation et les applications de votre organisation ont également les dernières mises à jour. Cette action permet d'éviter les problèmes ultérieurement lors de la migration vers Microsoft Defender pour Endpoint et l'Antivirus Microsoft Defender.
+Il est préférable de maintenir à jour les appareils et points de terminaison de votre organisation. Assurez-vous que votre solution Mc Antivirus Endpoint Security (Mc Antivirus) est à jour et que les systèmes d'exploitation et les applications de votre organisation ont également les dernières mises à jour. Cette action permet d'éviter les problèmes ultérieurement lors de la migration vers Microsoft Defender pour Endpoint et l'Antivirus Microsoft Defender.
 
 ### <a name="make-sure-your-mcafee-solution-is-up-to-date"></a>Assurez-vous que votre solution Mc Antivirus est à jour
 
@@ -68,7 +68,7 @@ Maintenez Mc Antivirus à jour et assurez-vous que les appareils de votre organi
 
 Vous avez besoin d'aide pour mettre à jour les appareils de votre organisation ? Consultez les ressources suivantes :
 
-|SYSTÈME D'EXPLOITATION | Ressource |
+|SYSTÈME D'EXPLOITATION | Resource |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Comment mettre à jour le logiciel sur votre Mac](https://support.apple.com/HT201541)|
@@ -84,7 +84,7 @@ Maintenant que vous avez mis à jour les appareils de votre organisation, l'éta
 
 2. Vérifiez que vos licences sont correctement provisionées. [Vérifiez l'état de votre licence.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#check-license-state)
 
-3. En tant qu'administrateur général ou administrateur de sécurité, vous pouvez configurer votre instance cloud dédiée de Microsoft Defender pour Endpoint. Voir [Configuration de Microsoft Defender pour endpoint : configuration du client.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#tenant-configuration)
+3. En tant qu'administrateur général ou administrateur de sécurité, vous pouvez configurer votre instance cloud dédiée de Microsoft Defender for Endpoint. Voir [Configuration de Microsoft Defender pour endpoint : configuration du client.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#tenant-configuration)
 
 4. Si les points de terminaison (tels que les appareils) de votre organisation utilisent un proxy pour accéder à Internet, voir Microsoft Defender pour l'installation du point de [terminaison](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#network-configuration): configuration réseau .
  
@@ -116,7 +116,7 @@ Pour activer la communication entre vos appareils et Microsoft Defender pour le 
 
 |Fonctionnalités  | Système d’exploitation | Ressources |
 |--|--|--|
-|[Détection et réponse des points de terminaison](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 ou une ultérieure](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)  |[Configurer les paramètres de connectivité Internet et proxy de l'ordinateur](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet) |
+|[Détection et réponse des points de terminaison](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 ou une ultérieure](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)  |[Configurer les paramètres de proxy et de connectivité Internet de l'ordinateur](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet) |
 |EDR |- [Windows Server 2016](https://docs.microsoft.com/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>- [Windows Server 2012 R2](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows 8.1](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows 7 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configurer les paramètres de proxy et de connectivité Internet](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel#configure-proxy-and-internet-connectivity-settings) |
 |EDR  |macOS : <br/>- 10.15 (Caserline)<br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra)  |[Microsoft Defender pour point de terminaison sur macOS : connexions réseau](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
 |[Antivirus Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 ou une ultérieure](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) <br/>- [Windows Server 2016](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-2016) |[Configurer et valider les connexions réseau à un antivirus Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)<br/> |
