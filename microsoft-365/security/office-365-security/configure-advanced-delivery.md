@@ -18,12 +18,12 @@ description: Les administrateurs peuvent apprendre à utiliser la stratégie de 
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX
-ms.openlocfilehash: 09e07d8406b470fd3dac25944d013b997f2f90c1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9d737472be5da2af0a0a36beb4b7914b8bfe3a10
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760430"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876064"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760430"
 > [!NOTE]
 > La fonctionnalité décrite dans cet article est en prévisualisation, n'est pas disponible pour tout le monde et peut faire l'objet de changements.
 
-Nous voulons sécuriser votre organisation par [défaut,](secure-by-default.md)afin qu'Exchange Online Protection (EOP) n'autorise pas les listes sécurisées ou le contournement de filtrage pour les messages qui entraînent des programmes malveillants ou des verdicts de hameçonnage à haut niveau de confiance. Toutefois, nous savons qu'il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
+Pour assurer la sécurité de votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n'autorise pas les listes sécurisées ou le contournement de filtrage pour les messages qui entraînent des programmes malveillants ou des verdicts de hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
 
 - **Simulations de hameçonnage tierces**: les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu'une attaque réelle n'impacte votre organisation.
 - Boîtes aux lettres d'opérations de sécurité **(SecOps)**: boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bonnes et mauvaises).
@@ -44,11 +44,11 @@ Vous utilisez la _stratégie de remise_ avancée dans Microsoft 365 pour empêch
 
 - Les filtres dans EOP et Microsoft Defender pour Office 365 ne prennent aucune mesure sur ces messages.<sup>\*</sup>
 - [La purge sans heure (ZAP)](zero-hour-auto-purge.md) pour le courrier indésirable et le hameçonnage n'a aucune action sur ces messages.<sup>\*</sup>
-- [Les alertes système par défaut](alerts.md) ne sont pas déclenchées pour ces scénarios.
+- [Les alertes système par](alerts.md) défaut ne sont pas déclenchées pour ces scénarios.
 - [Air and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Plus spécifiquement pour les simulations de hameçonnage tierces :
-  - [Les soumissions d'administrateur](admin-submission.md) génèrent une réponse automatique indiquant que le message fait partie d'une campagne de simulation de hameçonnage et n'est pas une menace réelle. Les alertes et air ne sont pas déclenchés.
-  - [La fonction Liens sécurisés dans Defender pour Office 365 ne](safe-links.md) bloque pas ou ne désalise pas les URL spécifiquement identifiées dans ces messages.
+  - [Les soumissions d'administrateur](admin-submission.md) génèrent une réponse automatique qui dit que le message fait partie d'une campagne de simulation de hameçonnage et qu'il ne constitue pas une menace réelle. Les alertes et AIR ne sont pas déclenchées.
+  - La fonction Liens sécurisés dans Defender pour [Office 365](safe-links.md) ne bloque pas ou ne détone pas les URL spécifiquement identifiées dans ces messages.
   - [Les pièces jointes sécurisées dans Defender pour Office 365](safe-attachments.md) ne désaxiquent pas les pièces jointes dans ces messages.
 
 <sup>\*</sup> Vous ne pouvez pas contourner le filtrage des programmes malveillants ou zap pour les programmes malveillants.
@@ -67,7 +67,7 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
 - Des autorisations doivent vous être attribuées avant de pouvoir suivre les procédures de cet article :
   - Pour créer, modifier ou supprimer des paramètres configurés dans la stratégie  de remise avancée, vous devez être membre du groupe  de rôles Administrateur de la sécurité dans le Centre de sécurité **&** conformité et membre du groupe de rôles Gestion de l'organisation dans **Exchange Online.**  
-  - Pour un accès en lecture seule à la stratégie de  remise  avancée, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
+  - Pour accéder en lecture seule à la stratégie de remise  avancée,  vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
 
   Pour plus d'informations, [voir Autorisations](permissions-in-the-security-and-compliance-center.md) dans le Centre de sécurité & conformité et [autorisations dans Exchange Online.](/exchange/permissions-exo/permissions-exo)
 
@@ -106,8 +106,8 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées sont affich
 
 Outre les deux scénarios que la stratégie de remise avancée peut vous aider, il existe d'autres scénarios qui peuvent nécessiter que vous contourniez le filtrage :
 
-- **Filtres** tiers : si l'enregistrement MX de votre domaine ne pointe pas vers Office 365 (les messages sont d'abord acheminés [ailleurs),](secure-by-default.md) la sécurité par défaut n'est pas disponible.
+- **Filtres tiers**: si l'enregistrement MX de votre domaine ne pointe pas vers Office 365 (les messages sont d'abord acheminés [ailleurs),](secure-by-default.md) la sécurité par défaut *n'est* *pas disponible.*
 
   Pour contourner le filtrage Microsoft pour les messages qui ont déjà été évalués par un filtrage tiers, utilisez des règles de flux de messagerie (également appelées règles de transport), voir Utiliser des règles de flux de messagerie pour définir le SCL dans les [messages.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-- **Faux positifs** en cours d'examen : vous souhaitez peut-être autoriser temporairement certains messages en cours d'analyse par Microsoft via des [envois](admin-submission.md) d'administrateur à signaler les messages de bonne qualité connus qui sont marqués à tort comme incorrects pour Microsoft (faux positifs). Comme pour toutes les substitutions, il est vivement recommandé que ces allocations soient temporaires.
+- **Faux positifs** en cours d'examen : vous souhaitez peut-être autoriser temporairement certains messages en cours d'analyse par Microsoft via des [envois](admin-submission.md) d'administrateur à signaler les messages de bonne qualité connus qui sont marqués à tort comme incorrects pour Microsoft (faux positifs). Comme pour toutes les substitutions, il est vivement recommandé **_d'annuler_** temporairement ces allocations.
