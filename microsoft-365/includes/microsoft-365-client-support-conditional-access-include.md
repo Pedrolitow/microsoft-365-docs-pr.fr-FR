@@ -6,7 +6,6 @@
 |PORTAIL D’ENTREPRISE|Planifié|Planifié|Planifié|S/O|Planifié|
 |CORTANA|N/A|N/A|N/A|N/A|Planifié|
 |DELVE|✔|✔|N/A|N/A|N/A|
-|EDGE|Planifié|Planifié|S/O|Planifié|S/O|
 |EXCEL|✔|Planifié|Planifié|Planifié|S/O|
 |ADMINISTRATEUR EXCHANGE|N/A|N/A|N/A|✔|S/O|
 |FORMULAIRES|N/A|N/A|N/A|N/A|N/A|
