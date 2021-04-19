@@ -3,7 +3,7 @@ title: Points de terminaison supplémentaires non inclus dans le service web po
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/29/2020
+ms.date: 04/19/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Le nouveau service web de point de terminaison n’inclut pas certains points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: e9c9f28749691a8a2585c0865895718ea86d7141
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6c545b6060b44ebe234baaebd3ae1eb2fdb0fb89
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927005"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887208"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365
 
@@ -46,7 +46,7 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
 | Ligne | Objectif | Destination | Type |
 |:-----|:-----|:-----|:-----|
 | 1  | [Importer un service](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) pour l’ingestion de fichier et de fichiers PST | Reportez-vous au [service d’importation](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) pour obtenir les exigences supplémentaires. | Scénario sortant rare |
-| 2  | [Assistant Support et récupération de Microsoft pour Office 365](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Trafic serveur sortant |
+| 2  | [Assistant Support et récupération de Microsoft pour Office 365](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Trafic serveur sortant |
 | 3  | Azure AD Connect (avec option d’authentification unique) - WinRM et PowerShell distant | Environnement STS client (serveur AD FS et proxy AD FS) \| Ports TCP 80 et 443 | Trafic serveur entrant |
 | 4   | STS, comme des serveurs proxy AD FS (pour les clients fédérés uniquement) | STS client (comme un proxy AD FS) \| Ports TCP 443 ou TCP 49443 avec ClientTLS | Trafic serveur entrant |
 | 5   | [Intégration de la messagerie unifiée Exchange Online/SBC](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers) | Bidirectionnel entre le contrôleur de bordure de session local et *.um.outlook.com | Trafic serveur sortant uniquement |
@@ -57,7 +57,7 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
 | 10   | Le service de détection automatique est utilisé dans des scénarios [Exchange hybride](/exchange/exchange-deployment-assistant) avec [l’authentification moderne hybride avec Outlook pour iOS et Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Serveur Exchange client local sur TCP 443 | Trafic serveur entrant |
 | 11  | Authentification Azure AD hybride Exchange | *.msappproxy.net | Trafic du serveur sortant TCP uniquement |
 | 12   | Skype Entreprise dans Office 2016 inclut un partage d’écran vidéo qui utilise des ports UDP. Les clients Skype Entreprise précédents dans Office 2013 et versions antérieures ont utilisé RDP sur le port TCP 443. | Port TCP 443 s’ouvrant sur 52.112.0.0/14 | Versions de clients plus anciens Skype Entreprise dans Office 2013 et versions antérieures |
-| 13   | Connectivité de serveur local hybride Skype Entreprise à Skype Entreprise Online | 13.107.64.0/18, 52.112.0.0/14  <BR> Ports UDP 50,000-59,999 <BR>  Ports TCP 50,000-59,999 ; 5061 | Connectivité sortante de serveur local Skype Entreprise |
+| 13  | Connectivité de serveur local hybride Skype Entreprise à Skype Entreprise Online | 13.107.64.0/18, 52.112.0.0/14  <BR> Ports UDP 50,000-59,999 <BR>  Ports TCP 50,000-59,999 ; 5061 | Connectivité sortante de serveur local Skype Entreprise |
 | 14   | Le RTC sur le cloud avec une connectivité hybride locale nécessite une connectivité réseau ouverte aux hôtes locaux. Pour plus d’informations sur les configurations hybrides pour Skype Entreprise Online  | Consultez la rubrique [Planification de la connectivité hybride entre Skype Entreprise Server et Office 365](/skypeforbusiness/hybrid/plan-hybrid-connectivity). | Entrée hybride locale pour Skype Entreprise |
 | 15   | **Noms de domaine complets d’authentification et d’identité** <br> Le nom de domaine complet ```secure.aadcdn.microsoftonline-p.com``` doit apparaître dans la zone de sites Internet Explorer ou Edge approuvés de votre client pour fonctionner. |  | Sites de confiance |
 | 16   |  **Noms de domaine complets Microsoft Teams** <br> Si vous utilisez Internet Explorer ou Microsoft Edge, vous devez activer les cookies propriétaires et tiers, et ajouter les noms de domaine complets des équipes à vos sites de confiance. Cela s’ajoute aux noms de domaine complets, aux CDN et à la télémétrie répertoriés à la ligne 14. Reportez-vous à la rubrique [Problèmes connus pour Microsoft Teams](/microsoftteams/known-issues) pour plus d’informations. |  | Sites de confiance |
@@ -74,7 +74,7 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
 
 [Gestion des points de terminaison Office 365](managing-office-365-endpoints.md)
   
-[Surveiller la connectivité Microsoft 365](./monitor-connectivity.md?view=o365-worldwide)
+[Surveiller la connectivité Microsoft 365](./monitor-connectivity.md)
   
 [Connectivité des clients](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
   
@@ -82,7 +82,7 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
   
 [Plages IP azure et balises de service – Cloud public](https://www.microsoft.com/download/details.aspx?id=56519)
 
-[Plages d’adresses IP et balises de service Azure – Cloud pour le gouvernement des États-Unis](https://www.microsoft.com/download/details.aspx?id=57063)
+[Plages d'adresses IP et balises de service Azure – Cloud pour le gouvernement des États-Unis](https://www.microsoft.com/download/details.aspx?id=57063)
 
 [Plages IP Azure et balises de service – Cloud allemagne](https://www.microsoft.com/download/details.aspx?id=57064)
 
