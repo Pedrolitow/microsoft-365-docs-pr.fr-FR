@@ -1,6 +1,6 @@
 ---
 title: Outils et méthodes d’intégration pour les appareils Windows 10.
-description: Intégrer des appareils Windows 10 afin qu'ils peuvent envoyer des données de capteur au capteur Microsoft Defender ATP
+description: Intégrer des appareils Windows 10 afin qu'ils peuvent envoyer des données de capteur au capteur Microsoft Defender for Endpoint
 keywords: Intégrer des appareils Windows 10, stratégie de groupe, gestionnaire de configuration de point de terminaison, gestion des appareils mobiles, script local, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77b843f9526d8b100845403bc8d2df4bf3259471
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: f1ef2670a1ca749e0a2f1ebc96300d4eca043bf8
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760211"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892828"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Outils et méthodes d’intégration pour les appareils Windows 10.
 
@@ -33,7 +33,7 @@ ms.locfileid: "51760211"
 - [Protection contre la perte de données de point de terminaison Microsoft 365 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [Gestion des risques internes microsoft 365](/microsoft-365/compliance/insider-risk-management)
 
->Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Les appareils de votre organisation doivent être configurés pour que le service Defender for Endpoint puisse obtenir des données de capteur de leur part. Il existe différentes méthodes et outils de déploiement que vous pouvez utiliser pour configurer les appareils de votre organisation.
 
@@ -54,4 +54,4 @@ Rubrique | Description
 [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md) | Découvrez comment utiliser le package de configuration pour configurer des appareils VDI.
 
 
->Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)
+>Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)

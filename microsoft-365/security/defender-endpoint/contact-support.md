@@ -1,6 +1,6 @@
 ---
-title: Contacter le support Microsoft Defender ATP
-description: Découvrez comment contacter le support Microsoft Defender ATP
+title: Contacter le support Microsoft Defender pour point de terminaison
+description: Découvrez comment contacter le support microsoft Defender pour le point de terminaison
 keywords: support, contact, support premier, solutions, problèmes, cas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c44e2c73eabcb89c178235bc3ce6738d2322dfa
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: eaf26c566b54b21e63af5ecbfe3603f2b1389208
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768985"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892840"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter le support Microsoft Defender pour point de terminaison
 
@@ -32,9 +32,9 @@ ms.locfileid: "51768985"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender for Endpoint a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
+Defender pour le point de terminaison a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
 
 Le nouveau widget permet aux clients de :
 - Trouver des solutions aux problèmes courants
@@ -61,7 +61,7 @@ L'accès au nouveau widget de support peut être effectué de deux manières :
 2. Vous avez besoin **d'aide en cliquant sur ?**  dans le coin inférieur droit du Centre de sécurité Microsoft Defender :
 
 
-    ![Image du bouton d’aide nécessaire](images/need-help.png)
+    ![Image du bouton d'aide nécessaire](images/need-help.png)
 
 Deux options s’offrent à vous dans le widget :
 
@@ -91,7 +91,7 @@ Cette option est disponible en cliquant sur l’icône qui ressemble à un casqu
 
 2. (Facultatif) Inclure jusqu’à cinq pièces jointes pertinentes pour le problème afin de fournir un contexte supplémentaire pour le cas de support. 
 
-3. Sélectionnez votre fuseau horaire et une autre langue, le cas échéant. La demande est envoyée à l’équipe de support technique Microsoft. L’équipe répondra prochainement à votre demande de service.
+3. Sélectionnez votre fuseau horaire et une autre langue, le cas échéant. La demande est envoyée à l’équipe de support Technique Microsoft. L’équipe répondra prochainement à votre demande de service.
 
 
 ## <a name="related-topics"></a>Voir aussi

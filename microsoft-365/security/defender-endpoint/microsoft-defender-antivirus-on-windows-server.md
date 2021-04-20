@@ -1,5 +1,5 @@
 ---
-title: Antivirus Microsoft Defender sur Windows Server
+title: Antivirus Microsoft Defender sur Windows Server
 description: Découvrez comment activer et configurer l'Antivirus Microsoft Defender sur Windows Server 2016 et Windows Server 2019.
 keywords: windows defender, serveur, scep, system center endpoint protection, server 2016, current branch, server 2012
 search.product: eADQiWindows 10XVcnh
@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d9452b6d2eeaad3880894b9ec66c8bc71797b429
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 50e6f9b16dbc633e75e86acdc54ac43580107ae3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764602"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893376"
 ---
-# <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus Microsoft Defender sur Windows Server
+# <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus Microsoft Defender sur Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -64,7 +64,7 @@ Par défaut, l'Antivirus Microsoft Defender est installé et fonctionnel sur Win
 
    ![Assistant Ajout de rôles et de fonctionnalités affichant l'interface graphique graphique Windows Defender'option](images/server-add-gui.png)
 
-   Dans Windows Server 2019, l'Assistant Ajout de **rôles** et de fonctionnalités est similaire.
+   Dans Windows Server 2019, l'Assistant Ajout de rôles et de **fonctionnalités** est similaire.
 
 ### <a name="turn-on-the-gui-using-powershell"></a>Activer l'interface graphique graphique à l'aide de PowerShell
 
@@ -80,7 +80,7 @@ Vous pouvez utiliser l'Assistant Ajout de **rôles et** de fonctionnalités ou P
 
 ### <a name="use-the-add-roles-and-features-wizard"></a>Utiliser l'Assistant Ajout de rôles et de fonctionnalités
 
-1. Reportez-vous [à cet article](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard)et utilisez l'Assistant Ajout de **rôles et de fonctionnalités.**
+1. [Reportez-vous à cet article](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard)et utilisez l'Assistant Ajout **de rôles et de fonctionnalités.**
 
 2. Lorsque vous arrivez à l'étape **Fonctionnalités** de l'Assistant, sélectionnez l'option Antivirus Microsoft Defender. Sélectionnez également **l'interface graphique graphique Windows Defender** option.
 
@@ -130,24 +130,24 @@ Par défaut, Windows Update ne télécharge et n'installe pas automatiquement le
 |**Stratégie de groupe**     | Vous pouvez configurer et gérer Windows Update à l'aide des paramètres disponibles dans la stratégie de groupe, dans le chemin d'accès suivant : **Modèles d'administration\Composants Windows\Windows Update\Configurer** les mises à jour automatiques         |
 |Clé de Registre **AUOptions**     |Les deux valeurs suivantes permettent à Windows Update de télécharger et d'installer automatiquement les mises à jour d'informations de sécurité : <br/>- **4**  -  **Installez automatiquement les mises à jour.** Cette valeur entraîne l'installation automatique de toutes les mises à jour, y Windows Defender mises à jour d'informations de sécurité. <br/>- **3**  -  **Téléchargez les mises à jour, mais laissez-moi choisir s'il faut les installer.**  Cette valeur permet Windows Defender télécharger et installer automatiquement les mises à jour security intelligence, mais les autres mises à jour ne sont pas installées automatiquement.         |
 
-Pour vous assurer que la protection contre les programmes malveillants est maintenue, nous vous recommandons d'activer les services suivants :
+Pour vous assurer que la protection contre les programmes malveillants est maintenue, nous vous recommandons d’activer les services suivants :
 
-- Service de rapport d'erreurs Windows
+- Service de rapport d’erreurs Windows
 
 - Service Windows Update
 
-Le tableau suivant répertorie les services pour l'Antivirus Microsoft Defender et les services dépendants.
+Le tableau suivant répertorie les services pour l’Antivirus Microsoft Defender et les services dépendants.
 
 |Nom du service|Emplacement du fichier|Description|
 |--------|---------|--------|
-|Windows Defender Service (WinDefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|Il s'agit du service antivirus Microsoft Defender principal qui doit être en cours d'exécution en permanence.|
-|Service de rapport d'erreurs Windows (Wersvc)|`C:\WINDOWS\System32\svchost.exe -k WerSvcGroup`|Ce service renvoie des rapports d'erreur à Microsoft.|
+|Windows Defender Service (WinDefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|Il s’agit du service antivirus Microsoft Defender principal qui doit être en cours d’exécution en permanence.|
+|Service de rapport d’erreurs Windows (Wersvc)|`C:\WINDOWS\System32\svchost.exe -k WerSvcGroup`|Ce service renvoie des rapports d’erreur à Microsoft.|
 |Windows Defender Pare-feu (MpsSvc)|`C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork`|Nous vous recommandons de laisser le service Windows Defender pare-feu activé.|
-|Windows Update (Wuauserv)|`C:\WINDOWS\system32\svchost.exe -k netsvcs`|Windows Update est nécessaire pour obtenir des mises à jour de l'intelligence de sécurité et des mises à jour du moteur anti-programme malveillant|
+|Windows Update (Wuauserv)|`C:\WINDOWS\system32\svchost.exe -k netsvcs`|Windows Update est nécessaire pour obtenir des mises à jour de l’intelligence de sécurité et des mises à jour du moteur anti-programme malveillant|
 
 ## <a name="submit-samples"></a>Envoyer des exemples
 
-La soumission d'exemples permet à Microsoft de collecter des exemples de logiciels potentiellement malveillants. Pour assurer une protection continue et à jour, les chercheurs De Microsoft utilisent ces exemples pour analyser les activités suspectes et produire des informations de sécurité anti-programme malveillant mises à jour. Nous collectons les fichiers exécutables du programme, tels que les fichiers .exe et .dll. Nous ne collectons pas les fichiers qui contiennent des données personnelles, comme les documents Microsoft Word et les fichiers PDF.
+La soumission d’exemples permet à Microsoft de collecter des exemples de logiciels potentiellement malveillants. Pour assurer une protection continue et à jour, les chercheurs De Microsoft utilisent ces exemples pour analyser les activités suspectes et produire des informations de sécurité contre les programmes malveillants mises à jour. Nous collectons les fichiers exécutables du programme, tels que les fichiers .exe et .dll. Nous ne collectons pas les fichiers qui contiennent des données personnelles, comme les documents Microsoft Word et les fichiers PDF.
 
 ### <a name="submit-a-file"></a>Envoyer un fichier
 
@@ -160,7 +160,7 @@ La soumission d'exemples permet à Microsoft de collecter des exemples de logici
 
 Pour activer l'envoi automatique d'échantillons, démarrez une console Windows PowerShell en tant qu'administrateur et définissez les données de valeur **SubmitSamplesConsent** en fonction de l'un des paramètres suivants :
 
-|Paramètre  |Description  |
+|Setting  |Description  |
 |---------|---------|
 |**0**  -  **Toujours invite**     |Le service Antivirus Microsoft Defender vous invite à confirmer l'envoi de tous les fichiers requis. Il s'agit du paramètre par défaut de l'Antivirus Microsoft Defender, mais il n'est pas recommandé pour les installations sur Windows Server 2016 ou 2019 sans interface utilisateur graphique.         |
 |**1**   -  **Envoyer automatiquement des échantillons sécurisés**     |Le service Antivirus Microsoft Defender envoie tous les fichiers marqués comme « sûrs » et demande le reste des fichiers.         |
@@ -173,15 +173,15 @@ Pour garantir la sécurité et les performances, certaines exclusions sont autom
 
 Voir [Configurer les exclusions dans l'Antivirus Microsoft Defender sur Windows Server.](configure-server-exclusions-microsoft-defender-antivirus.md) 
 
-## <a name="need-to-set-microsoft-defender-antivirus-to-passive-mode"></a>Vous devez définir l'Antivirus Microsoft Defender en mode passif ?
+## <a name="need-to-set-microsoft-defender-antivirus-to-passive-mode"></a>Vous devez définir l'Antivirus Microsoft Defender sur le mode passif ?
 
 Si vous utilisez un produit antivirus non Microsoft comme solution antivirus principale, définissez l'Antivirus Microsoft Defender sur le mode passif.  
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>Définir l'Antivirus Microsoft Defender en mode passif à l'aide d'une clé de Registre
 
-Si vous utilisez Windows Server, version 1803 ou Windows Server 2019, vous pouvez définir l'Antivirus Microsoft Defender sur le mode passif en réglant la clé de Registre suivante :
+Si vous utilisez Windows Server, version 1803 ou Windows Server 2019, vous pouvez définir l'Antivirus Microsoft Defender sur le mode passif en fixant la clé de Registre suivante :
 - Chemin d'accès : `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Nom : `ForcePassiveMode`
+- Nom : `ForceDefenderPassiveMode`
 - Type : `REG_DWORD`
 - Valeur : `1`
 

@@ -1,7 +1,7 @@
 ---
 title: Configurer les notifications d'alerte dans Microsoft Defender pour le point de terminaison
 description: Vous pouvez utiliser Microsoft Defender pour le point de terminaison pour configurer les paramètres de notification par courrier électronique pour les alertes de sécurité, en fonction de la gravité et d'autres critères.
-keywords: notifications par courrier électronique, configurer les notifications d'alerte, notifications microsoft defender atp, alertes microsoft defender atp, Windows 10 Entreprise, Windows 10 Éducation
+keywords: notifications par courrier électronique, configurer les notifications d'alerte, microsoft defender pour le point de terminaison, microsoft defender pour les notifications de point de terminaison, microsoft defender pour les alertes de point de terminaison, Windows 10 Entreprise, Windows 10 Éducation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b629d6a90931026ce28ce241e74d490ce67c6962
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687888"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893627"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurer les notifications d'alerte dans Microsoft Defender pour le point de terminaison
 
@@ -31,7 +31,7 @@ ms.locfileid: "51687888"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 Vous pouvez configurer Defender pour le point de terminaison pour envoyer des notifications par courrier électronique aux destinataires spécifiés pour les nouvelles alertes. Cette fonctionnalité vous permet d'identifier un groupe de personnes qui seront immédiatement informées et qui pourront agir sur les alertes en fonction de leur gravité.
 
@@ -69,9 +69,9 @@ Vous pouvez créer des règles qui déterminent les appareils et les gravités d
 
 4. Cliquez sur **Suivant**.
     
-5. Entrez l'adresse e-mail du destinataire, puis cliquez **sur Ajouter un destinataire.** Vous pouvez ajouter plusieurs adresses de messagerie.
+5. Entrez l'adresse e-mail du destinataire, puis cliquez **sur Ajouter un destinataire.** Vous pouvez ajouter plusieurs adresses e-mail.
 
-6. Vérifiez que les destinataires de courrier électronique peuvent recevoir les notifications par courrier électronique en sélectionnant **Envoyer un courrier électronique de test.**
+6. Vérifiez que les destinataires du courrier électronique peuvent recevoir les notifications par courrier électronique en sélectionnant **Envoyer un message électronique de test.**
 
 7. Cliquez **sur Enregistrer la règle de notification.**
 
@@ -93,7 +93,7 @@ Vous pouvez créer des règles qui déterminent les appareils et les gravités d
 ## <a name="troubleshoot-email-notifications-for-alerts"></a>Résoudre les problèmes de notifications par courrier électronique pour les alertes
 Cette section répertorie les différents problèmes que vous pouvez rencontrer lors de l'utilisation de notifications par courrier électronique pour les alertes.
 
-**Problème :** Les destinataires visés signalent qu'ils n'ont pas reçu les notifications.
+**Problème :** Les destinataires prévus signalent qu'ils n'ont pas reçu les notifications.
 
 **Solution :** Assurez-vous que les notifications ne sont pas bloquées par des filtres de courrier électronique :
 
