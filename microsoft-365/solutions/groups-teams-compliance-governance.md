@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Découvrez les options de conformité pour les groupes Microsoft 365, Teams et la collaboration SharePoint.
-ms.openlocfilehash: 88083d88b274e750e0fc6f1907268c996312163c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920891"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899351"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Options de conformité pour les groupes Microsoft 365, Teams et la collaboration SharePoint
 
@@ -31,11 +31,11 @@ Le tableau suivant fournit une référence rapide pour les contrôles de conform
 |Catégorie|Description|Référence|
 |:-------|:----------|:--------|
 |Rétention des informations|||
-||Conserver la messagerie et le contenu SharePoint des groupes|[En savoir plus sur les stratégies de rétention dans SharePoint et OneDrive](../compliance/retention-policies-sharepoint.md)|
+||Conserver la messagerie des groupes et le contenu SharePoint|[En savoir plus sur les stratégies de rétention dans SharePoint et OneDrive](../compliance/retention-policies-sharepoint.md)|
 ||Conserver la conversation et les messages|[En savoir plus sur les stratégies de rétention dans Microsoft Teams](../compliance/retention-policies-teams.md)|
 |Classification des informations|||
 ||Classifier les groupes et les équipes|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||Classifier automatiquement le contenu sensible|[Appliquer automatiquement une étiquette de confidentialité au contenu](../compliance/apply-sensitivity-label-automatically.md)|
+||Classifier automatiquement le contenu sensible|[Appliquer automatiquement une étiquette de confidentialité à du contenu](../compliance/apply-sensitivity-label-automatically.md)|
 ||Chiffrer le contenu sensible|[Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité](../compliance/encryption-sensitivity-labels.md)|
 |Protection des informations|||
 ||Empêcher la perte d’informations sensibles|[Vue d’ensemble de la protection contre la perte de données](../compliance/data-loss-prevention-policies.md)|
@@ -46,21 +46,21 @@ Le tableau suivant fournit une référence rapide pour les contrôles de conform
 
 ## <a name="information-retention"></a>Rétention des informations
 
-Les stratégies de rétention sont disponibles pour conserver ou supprimer des éléments utilisés pour la collaboration dans des groupes et des équipes, notamment des fichiers, des messages et des messages électroniques. Les stratégies peuvent être définies pour conserver et supprimer, conserver uniquement ou supprimer uniquement. Les informations couvertes par une stratégie de rétention sont protégées en cas d’expiration ou de suppression du groupe ou de l’équipe.
+Les stratégies de rétention sont disponibles pour conserver ou supprimer des éléments utilisés pour la collaboration dans des groupes et des équipes, notamment des fichiers, des messages et des messages électroniques. Les stratégies peuvent être définies pour conserver et supprimer, conserver uniquement ou supprimer uniquement. Les informations couvertes par une stratégie de rétention sont protégées en cas d'expiration ou de suppression du groupe ou de l'équipe.
 
-La configuration d’une stratégie de rétention pour les groupes Microsoft 365 couvre la boîte aux lettres de groupe et le site et les fichiers SharePoint associés.
+La configuration d'une stratégie de rétention pour les groupes Microsoft 365 couvre la boîte aux lettres de groupe et le site et les fichiers SharePoint associés.
 
 - [En savoir plus sur les stratégies de rétention dans SharePoint et OneDrive](../compliance/retention-policies-sharepoint.md)
 
-Les stratégies de rétention pour Teams conservent les messages de conversation et de canal. Bien que les messages de conversation et de canal soient stockés dans des boîtes aux lettres Exchange, ils ne sont pas affectés par les stratégies de rétention Exchange. Vous devez définir vos stratégies de rétention pour qu’ils s’appliquent aux conversations teams et aux messages de canal Teams. 
+Les stratégies de rétention pour Teams conservent les messages de conversation et de canal. Bien que les messages de conversation et de canal soient stockés dans des boîtes aux lettres Exchange, ils ne sont pas affectés par les stratégies de rétention Exchange. Vous devez définir vos stratégies de rétention pour qu'ils s'appliquent aux conversations teams et aux messages de canal Teams. 
 
-Les conversations utilisateur sont conservées indéfiniment, même si un compte d’utilisateur est supprimé. Si vous ne souhaitez pas conserver ces données indéfiniment, envisagez d’utiliser une stratégie de rétention pour supprimer les conversations utilisateur après une période spécifiée ou incluez cette suppression dans votre processus de suppression d’utilisateur.
+Les conversations utilisateur sont conservées indéfiniment, même si un compte d'utilisateur est supprimé. Si vous ne souhaitez pas conserver ces données indéfiniment, envisagez d'utiliser une stratégie de rétention pour supprimer les conversations utilisateur après une période spécifiée ou incluez cette suppression dans votre processus de suppression d'utilisateur.
 
 - [En savoir plus sur les stratégies de rétention dans Microsoft Teams](../compliance/retention-policies-teams.md)
 
 - [Stratégies de rétention dans Microsoft Teams](/microsoftteams/retention-policies)
 
-Une stratégie de rétention unique peut être définie pour s’appliquer aux groupes Microsoft 365, aux messages de conversation Teams et aux messages de canal Teams. 
+Une stratégie de rétention unique peut être définie pour s'appliquer aux messages de conversation et de canal Teams. 
 
 Ressources supplémentaires :
 
@@ -70,13 +70,13 @@ Ressources supplémentaires :
 
 ## <a name="information-classification"></a>Classification des informations
 
-Vous pouvez utiliser des étiquettes de confidentialité pour régir l’accès invité, la confidentialité des groupes et des équipes, et l’accès par des appareils nonmanagés pour les groupes et les équipes. En appliquant l’étiquette, ces paramètres sont automatiquement configurés comme spécifié par les paramètres d’étiquette.
+Vous pouvez utiliser des étiquettes de confidentialité pour régir l'accès invité, la confidentialité des groupes et des équipes, et l'accès par des appareils nonmanagés pour les groupes et les équipes. En appliquant l'étiquette, ces paramètres sont automatiquement configurés comme spécifié par les paramètres d'étiquette.
 
 - [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
 
-Vous pouvez configurer Microsoft 365 pour appliquer automatiquement des étiquettes de sensibilité aux fichiers et aux e-mails en fonction des critères que vous spécifiez, y compris la détection des types d’informations sensibles ou de la correspondance de modèles avec des classifieurs entraisables.
+Vous pouvez configurer Microsoft 365 pour appliquer automatiquement des étiquettes de sensibilité aux fichiers et aux e-mails en fonction des critères que vous spécifiez, y compris la détection de types d'informations sensibles ou la correspondance de modèles avec des classifieurs entraidables.
 
-- [Appliquer automatiquement une étiquette de confidentialité au contenu](../compliance/apply-sensitivity-label-automatically.md)
+- [Appliquer automatiquement une étiquette de confidentialité à du contenu](../compliance/apply-sensitivity-label-automatically.md)
 
 Vous pouvez utiliser des étiquettes de niveau de sensibilité pour chiffrer des fichiers, en permettant uniquement à ceux qui ont des autorisations de les déchiffrer et de les lire.
 
@@ -91,7 +91,7 @@ Ressources supplémentaires :
 
 ## <a name="information-protection"></a>Protection des informations
 
-Les stratégies DLP peuvent empêcher le partage accidentel d’informations sensibles entre SharePoint, Exchange et Teams. Vous pouvez créer des stratégies qui spécifient les actions à prendre (par exemple, le blocage d’accès) en fonction d’un ensemble de règles.
+Les stratégies DLP peuvent empêcher le partage accidentel d'informations sensibles entre SharePoint, Exchange et Teams. Vous pouvez créer des stratégies qui spécifient les actions à prendre (par exemple, le blocage d'accès) en fonction d'un ensemble de règles.
 
 - [Vue d’ensemble de la protection contre la perte de données](../compliance/data-loss-prevention-policies.md)
 
@@ -99,13 +99,13 @@ DLP dans Teams peut aider à protéger les informations sensibles dans les messa
 
 - [Prévention des pertes de données et Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
-Si vous avez des informations sensibles propres à votre organisation, telles que des noms de code de projet, vous pouvez créer vos propres types d’informations sensibles et les appliquer aux stratégies DLP pour protéger le contenu dans les groupes, les équipes et SharePoint.
+Si vous avez des informations sensibles propres à votre organisation, telles que des noms de code de projet, vous pouvez créer vos propres types d'informations sensibles et les appliquer aux stratégies DLP pour protéger le contenu dans les groupes, les équipes et SharePoint.
 
 - [Types d’informations sensibles personnalisés](../compliance/sensitive-information-type-learn-about.md)
 
 ## <a name="user-segmentation"></a>Segmentation des utilisateurs
 
-Avec les obstacles à l’information, vous pouvez segmenter vos données et vos utilisateurs pour limiter la communication et la collaboration indésirables entre les groupes et éviter les conflits d’intérêt au niveau de votre organisation. Les obstacles à l’information vous permettent de créer des stratégies pour autoriser ou empêcher la collaboration sur des fichiers, des conversations, des appels ou des invitations à des réunions entre des groupes de personnes de votre organisation.
+Avec les obstacles à l'information, vous pouvez segmenter vos données et vos utilisateurs pour limiter la communication et la collaboration indésirables entre les groupes et éviter les conflits d'intérêt au niveau de votre organisation. Les obstacles à l'information vous permettent de créer des stratégies pour autoriser ou empêcher la collaboration sur des fichiers, des conversations, des appels ou des invitations à des réunions entre des groupes de personnes de votre organisation.
 
 - [Obstacles aux informations](../compliance/information-barriers.md)
 
@@ -113,7 +113,7 @@ Avec les obstacles à l’information, vous pouvez segmenter vos données et vos
 
 - [Utiliser les obstacles aux informations avec SharePoint](/sharepoint/information-barriers)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
