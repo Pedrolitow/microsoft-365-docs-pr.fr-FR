@@ -1,6 +1,6 @@
 ---
-title: Résoudre les problèmes de performances pour Microsoft Defender pour endpoint pour Linux
-description: Résolution des problèmes de performances dans le point de terminaison Microsoft Defender pour Linux.
+title: Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
+description: Résolution des problèmes de performances dans le point de terminaison Microsoft Defender sur Linux.
 keywords: microsoft, defender, atp, linux, performances
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb43fd383606ab26ba2688ad5704bb7653e82a7f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860338"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903985"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -32,7 +32,7 @@ ms.locfileid: "51860338"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article fournit quelques étapes générales qui peuvent être utilisées pour affiner les problèmes de performances liés à Defender pour Endpoint pour Linux.
 
@@ -145,6 +145,6 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     >[!NOTE]
     > L'application stocke les statistiques en mémoire et suit uniquement l'activité des fichiers depuis son début et que la protection en temps réel a été activée. Les processus qui ont été lancés avant ou pendant les périodes où la protection en temps réel était hors programme ne sont pas comptabilisés. En outre, seuls les événements qui ont déclenché des analyses sont comptés.
 
-5. Configurez Microsoft Defender ATP pour Linux avec des exclusions pour les processus ou les emplacements de disque qui contribuent aux problèmes de performances et activez à nouveau la protection en temps réel.
+5. Configurez le point de terminaison Microsoft Defender sur Linux avec des exclusions pour les processus ou les emplacements de disque qui contribuent aux problèmes de performances et activez à nouveau la protection en temps réel.
 
-    Pour plus d'informations, voir Configurer et valider des [exclusions pour Microsoft Defender ATP pour Linux.](linux-exclusions.md)
+    Pour plus d'informations, voir Configurer et valider des [exclusions pour Microsoft Defender pour Endpoint pour Linux.](linux-exclusions.md)

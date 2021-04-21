@@ -1,7 +1,7 @@
 ---
-title: Résoudre les problèmes d'installation de Microsoft Defender ATP pour Linux
+title: Résoudre les problèmes d'installation de Microsoft Defender pour endpoint sur Linux
 ms.reviewer: ''
-description: Résoudre les problèmes d'installation de Microsoft Defender ATP pour Linux
+description: Résoudre les problèmes d'installation de Microsoft Defender pour endpoint sur Linux
 keywords: microsoft, defender, atp, linux, installation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 347528def6929dde200249cd9710f7ce33484c7f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 270ad1145308aaa2af703cda84307a4a96097a53
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688812"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903129"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d'installation de Microsoft Defender pour endpoint sur Linux
 
@@ -149,7 +149,7 @@ Essayez maintenant de redémarrer le service mdatp à l'aide de l'étape 2. Reve
 
 ## <a name="if-mdatp-service-is-running-but-eicar-text-file-detection-doesnt-work"></a>Si le service mdatp est en cours d'exécution, mais que la détection de fichier texte EICAR ne fonctionne pas
 
-1. Vérifiez le type de système de fichiers à l'aide des :
+1. Vérifiez le type de système de fichiers en utilisant :
 
     ```bash
     findmnt -T <path_of_EICAR_file>

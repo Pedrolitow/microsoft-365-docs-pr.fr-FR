@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b191c4a24ce170d23fc3d9e43293cc7bbe59e80
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: dfdfcdcfb8d76f95e3b866f5f95af7efd94ed59e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892816"
+ms.locfileid: "51904127"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender pour le stockage et la confidentialité des données des points de terminaison
 
@@ -70,17 +70,17 @@ Les données client sous forme pseudonyme peuvent également être stockées dan
 Une fois configuré, vous ne pouvez pas modifier l'emplacement où vos données sont stockées. Cela permet de réduire au minimum les risques de conformité en sélectionnant activement les emplacements géographiques où vos données résideront. 
 
 ## <a name="is-my-data-isolated-from-other-customer-data"></a>Mes données sont-elles isolées des autres données client ?
-Oui, vos données sont isolées par le biais de l'authentification d'accès et de la séparation logique basée sur l'identificateur client. Chaque client peut uniquement accéder aux données collectées à partir de sa propre organisation et aux données génériques que Microsoft fournit.
+Oui, vos données sont isolées par l'authentification d'accès et la séparation logique basée sur l'identificateur client. Chaque client peut uniquement accéder aux données collectées à partir de sa propre organisation et aux données génériques que Microsoft fournit.
 
 ## <a name="how-does-microsoft-prevent-malicious-insider-activities-and-abuse-of-high-privilege-roles"></a>Comment Microsoft empêche-t-il les activités malveillantes internes et les abus des rôles à privilège élevé ?
 
-Les développeurs et les administrateurs Microsoft ont, par conception, reçu des privilèges suffisants pour exécuter leurs tâches affectées afin d'exploiter et de faire évoluer le service. Microsoft déploie des combinaisons de contrôles de prévention, de surveillance et réactifs, y compris les mécanismes suivants pour vous protéger contre les activités non autorisées des développeurs et/ou des administrations :
+Les développeurs et les administrateurs Microsoft ont, par conception, reçu des privilèges suffisants pour exécuter leurs tâches affectées afin d'exploiter et de faire évoluer le service. Microsoft déploie des combinaisons de contrôles de prévention, de surveillance et de réaction, y compris les mécanismes suivants pour vous protéger contre les activités non autorisées des développeurs et/ou des administrations :
 
 - Contrôle d'accès étroit aux données sensibles
 - Combinaisons de contrôles qui améliorent grandement la détection indépendante des activités malveillantes
 - Plusieurs niveaux de surveillance, de journalisation et de rapport
 
-En outre, Microsoft effectue des vérifications en arrière-plan de certains membres du personnel opérationnel et limite l'accès aux applications, aux systèmes et à l'infrastructure réseau en proportion du niveau de vérification en arrière-plan. Le personnel opérationnel suit un processus formel lorsqu'il est requis d'accéder au compte d'un client ou à des informations connexes dans l'exécution de ses tâches.
+En outre, Microsoft effectue des vérifications d'arrière-plan de certains membres du personnel opérationnel et limite l'accès aux applications, aux systèmes et à l'infrastructure réseau en proportion du niveau de vérification en arrière-plan. Le personnel opérationnel suit un processus formel lorsqu'il est requis d'accéder au compte d'un client ou à des informations connexes dans l'exécution de ses tâches.
 
 L'accès aux données pour les services déployés dans les centres de données Microsoft Azure Government est accordé uniquement au personnel opérationnel qui a été filtrer et approuvé pour gérer les données soumises à certaines réglementations et exigences gouvernementales, telles que FedRAMP, NIST 800.171 (DIB), ITAR, IRS 1075, DoD L4 et CJIS.
 
@@ -89,8 +89,8 @@ L'accès aux données pour les services déployés dans les centres de données 
 Non. Les données client sont isolées des autres clients et ne sont pas partagées. Toutefois, les informations sur les données résultant du traitement par Microsoft et qui ne contiennent pas de données spécifiques au client peuvent être partagées avec d'autres clients. Chaque client peut uniquement accéder aux données collectées à partir de sa propre organisation et aux données génériques que Microsoft fournit.
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Combien de temps Microsoft stockera-t-il mes données ? Qu'est-ce que la stratégie de rétention des données de Microsoft ?
-**Intégration au service**<br>
-Vous pouvez choisir la stratégie de rétention des données pour vos données. Cela détermine la durée pendant combien de temps Window Defender pour Endpoint stockera vos données. Vous avez la possibilité de choisir entre un mois et six mois pour répondre aux besoins de conformité réglementaire de votre entreprise.
+**Lors de l'intégration de service**<br>
+Par défaut, les données sont conservées pendant 180 jours . toutefois, vous pouvez spécifier la stratégie de rétention des données pour vos données. Cela détermine la durée pendant combien de temps Window Defender pour Endpoint stockera vos données. Vous avez la possibilité de choisir entre un mois et six mois pour répondre aux besoins de conformité réglementaire de votre entreprise.
 
 **À la résiliation ou à l'expiration du contrat**<br>
 Vos données seront conservées et disponibles pendant la période de grâce ou le mode suspendu de la licence. À la fin de cette période, ces données seront effacées des systèmes de Microsoft pour les rendre irrécables, au plus tard 180 jours après la résiliation ou l'expiration du contrat.

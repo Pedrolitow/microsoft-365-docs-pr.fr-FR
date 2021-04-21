@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 406a0e699ea563670f41355d122aa54ba8667a0e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 705b1fffbc38282441f66e0dc411cf09699cb3f9
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687744"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903765"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -54,7 +54,7 @@ Pour obtenir les dernières fonctionnalités, y compris les fonctionnalités de 
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour endpoint sur Mac
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Configuration requise
 
 - Abonnement a Defender for Endpoint et accès au portail Centre de sécurité Microsoft Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH
@@ -77,7 +77,7 @@ Vous pouvez utiliser plusieurs méthodes et outils de déploiement pour installe
 Les trois plus récentes publication majeures de macOS sont pris en charge.
 
 > [!IMPORTANT]
-> Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
+> Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés dans les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
 
 > [!IMPORTANT]
 > La prise en charge de macOS 10.13 (High Sierra) n'est plus prise en charge depuis le 15 février 2021.
@@ -86,6 +86,8 @@ Les trois plus récentes publication majeures de macOS sont pris en charge.
 - Espace disque : 1 Go
 
 Les versions bêta de macOS ne sont pas pris en charge.
+
+Les appareils macOS avec processeurs M1 ne sont pas pris en charge.
 
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions sortantes entre celui-ci et vos points de terminaison.
 
@@ -99,7 +101,7 @@ Microsoft Defender pour endpoint sur Mac nécessite l'une des offres de licence 
 
 > [!NOTE]
 > Les utilisateurs titulaires d'une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus.
-> Microsoft Defender for Endpoint est également disponible à l'achat auprès d'un fournisseur de solutions Cloud (CSP). Lorsqu'elle est achetée via un programme CSP, elle ne nécessite pas d'offres de licence en volume Microsoft répertoriées.
+> Microsoft Defender pour le point de terminaison est également disponible à l'achat auprès d'un fournisseur de solutions Cloud (CSP). Lorsqu'elle est achetée via un programme CSP, elle ne nécessite pas d'offres de licence en volume Microsoft répertoriées.
 
 ### <a name="network-connections"></a>Connexions réseau
 

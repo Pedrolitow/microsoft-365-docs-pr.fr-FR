@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer un calendrier partagé.
-ms.openlocfilehash: 8877cce7234890dca5cd83a74c69b93d3b1dcd04
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 684122bcbccd7e8a419cc98eb0d0028c6218141a
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580389"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903693"
 ---
 # <a name="create-a-shared-calendar"></a>Créer un calendrier partagé
 
@@ -33,10 +33,14 @@ ms.locfileid: "51580389"
 
 ## <a name="try-it"></a>Essayez !
 
-Un calendrier partagé peut vous aider à voir rapidement quand des personnes sont disponibles pour des réunions ou d’autres événements.
+Un calendrier partagé peut vous aider à voir rapidement quand des personnes sont disponibles pour les réunions ou d'autres événements.
 
-1. Dans Outlook, sélectionnez l’icône calendrier.
-1. Sous **l’onglet** Accueil, choisissez **Ajouter un calendrier,** puis **à partir du carnet d’adresses.**
+1. Dans Outlook, sélectionnez l'icône calendrier.
+1. Sous **l'onglet** Accueil, choisissez **Ajouter un calendrier,** puis **à partir du carnet d'adresses.**
 1. Ajoutez des utilisateurs au calendrier partagé en entrant leur nom ou en sélectionnant leur nom dans la liste, puis choisissez **OK**.
 1. Vous pouvez désormais afficher votre calendrier et les calendriers des personnes que vous avez ajoutées.
-1. Pour vérifier la disponibilité de votre groupe, choisissez **l’affichage** Jour.
+1. Pour vérifier la disponibilité de votre groupe, choisissez **l'affichage** Jour.
+
+## <a name="related-content"></a>Contenu connexe
+
+[Gérer votre calendrier et vos contacts dans Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (article) [Collaboration](https://docs.microsoft.com/microsoft-365/admin/email/email-collaboration) par courrier électronique (article) Vue d'ensemble du Centre d'administration [Microsoft 365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (article)

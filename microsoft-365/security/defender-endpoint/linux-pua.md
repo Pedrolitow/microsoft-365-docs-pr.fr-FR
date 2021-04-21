@@ -1,6 +1,6 @@
 ---
-title: Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender ATP pour Linux
-description: Détecter et bloquer les applications potentiellement indésirables (PUA) à l'aide de Microsoft Defender ATP pour Linux.
+title: Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour Endpoint sur Linux
+description: Détecter et bloquer les applications potentiellement indésirables (PUA) à l'aide de Microsoft Defender pour endpoint sur Linux.
 keywords: microsoft, defender, atp, linux, pua, pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7ac620896bad9adb73308223e28976e219d36d0
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9631fc2eb1cb791f48f107482474d1bb8e2fd62b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687864"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903857"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour Endpoint sur Linux
 
@@ -33,7 +33,7 @@ ms.locfileid: "51687864"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 La fonctionnalité de protection des applications potentiellement indésirables (PUA) dans Defender for Endpoint for Linux peut détecter et bloquer les fichiers PUA sur les points de terminaison de votre réseau.
 
@@ -49,7 +49,7 @@ Lorsqu'une PUA est détectée sur un point de terminaison, Defender pour Endpoin
 
 ## <a name="configure-pua-protection"></a>Configurer la protection PUA
 
-La protection PUA dans Defender pour endpoint pour Linux peut être configurée de l'une des manières suivantes :
+La protection PUA dans Defender for Endpoint pour Linux peut être configurée de l'une des manières suivantes :
 
 - **Désactivé**: la protection PUA est désactivée.
 - **Audit**: les fichiers PUA sont signalés dans les journaux du produit, mais pas dans le Centre de sécurité Microsoft Defender. Aucun enregistrement de l'infection n'est stocké dans l'historique des menaces et aucune action n'est prise par le produit.

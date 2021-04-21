@@ -1,6 +1,6 @@
 ---
 title: Nouveautés de Microsoft Defender pour Endpoint sur Linux
-description: Liste des principales modifications apportées à Microsoft Defender ATP sur Linux.
+description: Liste des principales modifications apportées à Microsoft Defender pour Endpoint sur Linux.
 keywords: microsoft, defender, atp, linux, whatsnew, release
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2866cd0c9ee9b40aa9c08c4ff7dce64f745d3d03
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 999463f92c014e061bc4e2fdc22eedcd8f680a72
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688632"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903813"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour Endpoint sur Linux
 
@@ -32,7 +32,7 @@ ms.locfileid: "51688632"
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)
 
 - Microsoft Defender pour endpoint sur Linux est désormais disponible en prévisualisation pour les clients du gouvernement des États-Unis. Pour plus d'informations, [voir Microsoft Defender for Endpoint for US Government customers](gov.md).
-- Nous avons résolu un problème dans lequel l'utilisation de Microsoft Defender pour endpoint sur Linux sur des systèmes avec des systèmes de fichiers LINUX a conduit à un arrêt du système d'exploitation
+- Nous avons résolu un problème dans lequel l'utilisation de Microsoft Defender pour endpoint sur Linux sur des systèmes avec des systèmes de fichiers LINUX a conduit au se bloquer du système d'exploitation
 - Améliorations des performances & d'autres résolutions de bogues
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0)
@@ -72,13 +72,13 @@ ms.locfileid: "51688632"
 ## <a name="1010075"></a>101.00.75
 
 - Prise en charge supplémentaire pour les types de système de fichiers suivants `ecryptfs` : , , , , , , , `fuse` `fuseblk` `jfs` `nfs` `overlay` `ramfs` `reiserfs` `udf` et `vfat`
-- Nouvelle syntaxe de [l'outil en ligne de commande.](linux-resources.md#configure-from-the-command-line)
+- Nouvelle syntaxe pour [l'outil en ligne de commande.](linux-resources.md#configure-from-the-command-line)
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1009070"></a>100.90.70
 
 > [!WARNING]
-> Lors de la mise à niveau du package installé à partir d'une version de produit antérieure à la version 100.90.70, la mise à jour peut échouer sur les distributions Basées sur Red Hat et SLES. Cela est dû à un changement majeur dans le chemin d'accès d'un fichier. Une solution temporaire consiste à supprimer l'ancien package, puis à installer le nouveau. Ce problème n'existe pas dans les versions plus récentes.
+> Lors de la mise à niveau du package installé à partir d'une version antérieure à la version 100.90.70, la mise à jour peut échouer sur les distributions Basées sur Red Hat et SLES. Cela est dû à un changement majeur dans le chemin d'accès d'un fichier. Une solution temporaire consiste à supprimer l'ancien package, puis à installer le nouveau. Ce problème n'existe pas dans les versions plus récentes.
 
 - Les [exclusions antivirus désormais prise en charge les caractères génériques](linux-exclusions.md#supported-exclusion-types)
 - Ajout de la possibilité de résoudre [les problèmes](linux-support-perf.md) de performances via l'outil en ligne `mdatp` de commande

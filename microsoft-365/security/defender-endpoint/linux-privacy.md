@@ -1,6 +1,6 @@
 ---
-title: Confidentialité pour Microsoft Defender ATP pour Linux
-description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender ATP pour Linux.
+title: Confidentialité pour Microsoft Defender pour point de terminaison sur Linux
+description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour Endpoint sur Linux.
 keywords: microsoft, defender, atp, linux, confidentialité, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaf537c84adaba3d632367567cc569069650d21a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688356"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903249"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -37,7 +37,7 @@ Microsoft s'engage à vous fournir les informations et les contrôles dont vous 
 
 Cette rubrique décrit les contrôles de confidentialité disponibles dans le produit, comment gérer ces contrôles avec des paramètres de stratégie et plus d'informations sur les événements de données collectés.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d'ensemble des contrôles de confidentialité dans Microsoft Defender pour Endpoint sur Linux
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d'ensemble des contrôles de confidentialité dans Microsoft Defender pour Point de terminaison sur Linux
 
 Cette section décrit les contrôles de confidentialité pour les différents types de données collectées par Defender pour Endpoint pour Linux.
 
@@ -99,11 +99,11 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 | app_version             | Version du defender pour point de terminaison pour l'application Linux. Permet à Microsoft d'identifier les versions du produit qui affichent un problème afin qu'il puisse être correctement hiérarchisé.|
 | sig_version             | Version de la base de données d'informations de sécurité. Permet à Microsoft d'identifier les versions de l'intelligence de sécurité qui affichent un problème afin qu'elle puisse être correctement hiérarchisées. |
 | supported_compressions  | Liste des algorithmes de compression pris en charge par l'application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu'il communique avec l'application. |
-| release_ring            | Sonner à l'appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d'identifier l'anneau de publication sur lequel un problème peut se produire afin qu'il puisse être correctement hiérarchisé. |
+| release_ring            | Sonnerie à l'appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d'identifier l'anneau de publication sur lequel un problème peut se produire afin qu'il puisse être correctement hiérarchisé. |
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
 
-**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la mise à jour de Defender for Endpoint sur l'appareil sur laquelle il est installé.
+**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et les résultats attendus de Defender for Endpoint sur l'appareil sur qui il est installé.
 
 Les données de diagnostic requises permettent d'identifier les problèmes avec Microsoft Defender pour point de terminaison qui peuvent être liés à une configuration d'appareil ou de logiciel. Par exemple, il peut aider à déterminer si une fonctionnalité De Defender pour point de terminaison se crashe plus fréquemment sur une version de système d'exploitation particulière, avec les fonctionnalités nouvellement introduites ou lorsque certaines fonctionnalités de Defender pour le point de terminaison sont désactivées. Les données de diagnostic requises aident Microsoft à détecter, diagnostiquer et résoudre ces problèmes plus rapidement afin de réduire l'impact sur les utilisateurs ou les organisations.
 
@@ -142,7 +142,7 @@ Les champs suivants sont collectés :
 
 #### <a name="product-and-service-usage-data-events"></a>Événements de données liés à l'utilisation des produits et services
 
-**Rapport de mise à jour de l'intelligence de la sécurité**
+**Rapport de mise à jour des informations de sécurité**
 
 Les champs suivants sont collectés :
 
@@ -178,7 +178,7 @@ Les champs suivants sont collectés :
 Les journaux de diagnostic sont collectés uniquement avec le consentement de l'utilisateur dans le cadre de la fonctionnalité de soumission de commentaires. Les fichiers suivants sont collectés dans le cadre des journaux de support :
 
 - Tous les fichiers *sous /var/log/microsoft/mdatp*
-- Sous-ensemble de fichiers sous */etc/opt/microsoft/mdatp* créés et utilisés par Defender pour Endpoint pour Linux
+- Sous-ensemble de fichiers sous */etc/opt/microsoft/mdatp* créés et utilisés par Defender pour endpoint pour Linux
 - Journaux d'installation et de désinstallation du produit sous */var/log/microsoft_mdatp_ \* .log*
 
 ### <a name="optional-diagnostic-data"></a>Données de diagnostic facultatives
@@ -218,7 +218,7 @@ Les champs suivants sont collectés :
 
 | Champ                       | Description |
 | --------------------------- | ----------- |
-| how_to_check                | Détermine la façon dont les mises à jour des produits sont vérifiées (par exemple, automatiques ou manuelles). |
+| how_to_check                | Détermine la façon dont les mises à jour du produit sont vérifiées (par exemple, automatiques ou manuelles). |
 | channel_name                | Canal de mise à jour associé à l'appareil. |
 | manifest_server             | Serveur utilisé pour télécharger les mises à jour. |
 | update_cache                | Emplacement du cache utilisé pour stocker les mises à jour. |

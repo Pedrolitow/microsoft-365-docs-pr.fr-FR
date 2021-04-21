@@ -1,6 +1,6 @@
 ---
-title: Configurer Microsoft Defender pour endpoint sur les fonctionnalités iOS
-description: Décrit comment déployer Microsoft Defender ATP pour les fonctionnalités iOS
+title: Configurer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS
+description: Décrit comment déployer Microsoft Defender pour endpoint sur les fonctionnalités iOS
 keywords: microsoft, defender, atp, ios, configurer, fonctionnalités, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e351f6500d5076e724653d0fde1940592dd1ae5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f5f7345f92b3ac76aa647a9caed63e5684be9c30
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687484"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903309"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS
+# <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurer Microsoft Defender pour endpoint sur les fonctionnalités iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,12 +44,12 @@ Pour plus d'informations sur la façon de configurer l'accès conditionnel avec 
 
 ## <a name="web-protection-and-vpn"></a>Protection web et VPN
 
-Par défaut, Defender pour le point de terminaison pour iOS inclut et active la fonctionnalité de protection web. [La protection web permet](web-protection-overview.md) de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Defender pour le point de terminaison pour iOS utilise un VPN pour fournir cette protection. Notez qu'il s'agit d'un VPN local et, contrairement au VPN traditionnel, le trafic réseau n'est pas envoyé en dehors de l'appareil.
+Par défaut, Defender pour le point de terminaison pour iOS inclut et active la fonctionnalité de protection web. [La protection web permet](web-protection-overview.md) de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Defender pour le point de terminaison pour iOS utilise un VPN pour fournir cette protection. Notez qu'il s'agit d'un VPN local et, contrairement au VPN traditionnel, le trafic réseau n'est pas envoyé à l'extérieur de l'appareil.
 
 Bien qu'il soit activé par défaut, il se peut que vous de soyez dans certains cas dans l'obligation de désactiver le VPN. Par exemple, vous souhaitez exécuter certaines applications qui ne fonctionnent pas lorsqu'un VPN est configuré. Dans ce cas, vous pouvez choisir de désactiver le VPN de l'application sur l'appareil en suivant les étapes ci-dessous :
 
 1. Sur votre appareil iOS, ouvrez l'application **Paramètres,** cliquez ou appuyez sur **Général,** puis **sur VPN.**
-1. Cliquez ou appuyez sur le bouton « i » de Microsoft Defender ATP.
+1. Cliquez ou appuyez sur le bouton « i » de Microsoft Defender pour le point de terminaison.
 1. Désactivez la connexion **à la demande** pour désactiver le VPN.
 
     > [!div class="mx-imgBorder"]
@@ -72,7 +72,7 @@ Pour protéger les données d'entreprise contre l'accès sur les appareils iOS j
 
 Suivez les étapes ci-dessous pour créer une stratégie de conformité contre les appareils jailbreakés.
 
-1. Dans le [Centre d'administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)go to **Devices**  ->  **Compliance policies** Create  ->  **Policy**. Sélectionnez « iOS/iPadOS » comme plateforme, puis cliquez sur **Créer.**
+1. Dans [le Centre d'administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez **aux** stratégies de conformité  ->  **des appareils**  ->  **Créer une stratégie.** Sélectionnez « iOS/iPadOS » comme plateforme, puis cliquez sur **Créer.**
 
     > [!div class="mx-imgBorder"]
     > ![Créer une stratégie](images/ios-jb-policy.png)
@@ -104,6 +104,6 @@ Les sites web de hameçonnage usurpent l'identité de sites web dignes de confia
 
 ## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>Problèmes de consommation de batterie sur iOS lors de l'installation de Microsoft Defender for Endpoint
 
-L'utilisation de la batterie par une application est calculée par Apple en fonction d'une multitude de facteurs, notamment l'utilisation du processeur et du réseau. Microsoft Defender pour le point de terminaison utilise un VPN local/de bouc-back en arrière-plan pour vérifier le trafic web des sites web ou connexions malveillants. Les paquets réseau de n'importe quelle application sont vérifiés et l'utilisation de la batterie de Microsoft Defender for Endpoint est calculée de manière incorrecte. Cela donne une fausse impression à l'utilisateur. La consommation réelle de batterie de Microsoft Defender pour le point de terminaison est inférieure à ce qui est affiché dans la page Paramètres de la batterie sur l'appareil. Cette opération est basée sur des tests effectués sur l'application Microsoft Defender for Endpoint pour comprendre la consommation de batterie.
+L'utilisation de la batterie par une application est calculée par Apple en fonction d'une multitude de facteurs, notamment l'utilisation du processeur et du réseau. Microsoft Defender pour le point de terminaison utilise un VPN local/loop-back en arrière-plan pour vérifier le trafic web des sites web ou connexions malveillants. Les paquets réseau de n'importe quelle application sont vérifiés et l'utilisation de la batterie de Microsoft Defender for Endpoint est calculée de manière incorrecte. Cela donne une fausse impression à l'utilisateur. La consommation réelle de batterie de Microsoft Defender pour le point de terminaison est inférieure à ce qui est affiché dans la page Paramètres de la batterie sur l'appareil. Cette opération est basée sur des tests effectués sur l'application Microsoft Defender for Endpoint pour comprendre la consommation de batterie.
 
 En outre, le VPN utilisé est un VPN local et contrairement aux VPN traditionnels, le trafic réseau n'est pas envoyé en dehors de l'appareil.

@@ -1,7 +1,7 @@
 ---
-title: Termes du contrat de licence d'application Microsoft Defender ATP pour iOS
+title: Microsoft Defender for Endpoint sur les termes du contrat de licence d'application iOS
 ms.reviewer: ''
-description: Décrit les termes du contrat de licence Microsoft Defender ATP pour iOS
+description: Décrit microsoft Defender pour point de terminaison sur les termes du contrat de licence iOS
 keywords: microsoft, defender, atp, iOS, licence, termes, application, utilisation, installation, service, commentaires, étendue,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 75bcf13120c05990abf2b20cd68f460219b73cd6
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e2f2abbb27d1040f0fa9bcd1134103d54372b25b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688932"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903961"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios-application-license-terms"></a>Microsoft Defender for Endpoint sur les termes du contrat de licence d'application iOS
 
@@ -55,9 +55,9 @@ pour cette application, sauf si d'autres termes accompagnent ces éléments. Si 
 
     2.  **Mises à jour.** Des mises à jour ou des mises à niveau vers Microsoft Defender pour le point de terminaison peuvent être nécessaires pour une fonctionnalité complète. Certaines fonctionnalités peuvent ne pas être disponibles dans tous les pays.
 
-    3.  **Programmes tiers.** L'application peut inclure des programmes tiers que Microsoft, et non le tiers, vous a sous licence dans le cadre du contrat. Les notifications, le cas cas, pour le programme tiers sont incluses pour vos informations uniquement.
+    3.  **Programmes tiers.** L'application peut inclure des programmes tiers que Microsoft, et non le tiers, vous propose sous licence dans le cadre du contrat. Les notifications, le cas cas, pour le programme tiers sont incluses pour vos informations uniquement.
 
-2.  **L'ACCÈS À INTERNET PEUT ÊTRE REQUIS.** Vous pouvez facturer des frais liés à l'accès à Internet, au transfert de données et à d'autres services en respectant les conditions du plan de service de données et tout autre contrat que vous avez conclu avec votre opérateur réseau en raison de l'utilisation de l'application. Vous êtes le seul responsable des frais d'opérateur réseau.
+2.  **L'ACCÈS À INTERNET PEUT ÊTRE REQUIS.** Vous pouvez engager des frais liés à l'accès à Internet, au transfert de données et à d'autres services selon les conditions du plan de service de données et tout autre contrat que vous avez conclu avec votre opérateur réseau en raison de l'utilisation de l'application. Vous êtes le seul responsable des frais d'opérateur réseau.
 
 3.  **SERVICES INTERNET.** Microsoft fournit des services Internet avec l'application. Il peut les modifier ou les annuler à tout moment.
 
@@ -72,7 +72,7 @@ pour cette application, sauf si d'autres termes accompagnent ces éléments. Si 
 
 4.  **FEEDBACK.** Si vous faites part de vos commentaires sur l'application à Microsoft, vous accordez à Microsoft, sans frais, le droit d'utiliser, de partager et de commercialiser vos commentaires d'une manière ou d'une autre. Vous accordez également à des tiers, sans frais, les droits de brevet nécessaires pour que leurs produits, technologies et services utilisent ou s'interfacent avec des parties spécifiques d'un logiciel ou d'un service Microsoft qui inclut les commentaires. Vous ne donnerez aucun commentaire faisant l’objet d’une licence qui obligerait Microsoft à émettre une licence pour son logiciel ou sa documentation envers des tiers du fait d’y inclure votre commentaire. These rights survive this agreement.
 
-5.  **SCOPE OF LICENSE.** L'application est sous licence, et non vendue. Ce contrat vous donne uniquement certains droits d'utilisation de l'application. Microsoft reserves all other rights. Sauf si la loi applicable vous donne davantage de droits malgré cette limitation, vous pouvez utiliser l'application uniquement comme expressément autorisé dans le cadre du contrat. Ce faisant, vous devez vous conformer aux limitations techniques de l'application qui vous permettent uniquement de l'utiliser de certaines manières. Vous n'êtes pas autorisé à :
+5.  **SCOPE OF LICENSE.** L'application est sous licence, et non vendue. Ce contrat vous donne uniquement certains droits d'utilisation de l'application. Microsoft reserves all other rights. Sauf si la loi applicable vous donne davantage de droits malgré cette limitation, vous pouvez utiliser l'application uniquement comme expressément autorisé dans le cadre du contrat. Ce faisant, vous devez vous conformer à toutes les limitations techniques dans l'application qui vous permettent uniquement de l'utiliser d'une certaine manière. Vous n'êtes pas autorisé à :
 
     -   contourner les limitations techniques dans l'application ;
 
@@ -88,7 +88,7 @@ pour cette application, sauf si d'autres termes accompagnent ces éléments. Si 
 
 6.  **EXPORT RESTRICTIONS.** L'application est soumise aux lois et réglementations américaines en matière d'exportation. Vous devez vous conformer à toutes les lois et réglementations nationales et internationales en matière d'exportation qui s'appliquent à l'application. Ces réglementations comprennent des restrictions sur les pays destinataires, les utilisateurs finals et les utilisations finales. Pour plus d'informations, [voir www.microsoft.com/exporting](https://www.microsoft.com/exporting).
 
-7.  **SUPPORT SERVICES.** Étant donné que cette application est « telle qu'elle est », il est possible que nous ne fournissions pas de services de support pour celle-ci. Si vous avez des problèmes ou des questions concernant votre utilisation de cette application, y compris des questions sur la politique de confidentialité de votre entreprise, contactez l'administrateur de votre entreprise. Ne contactez pas le magasin d'applications, votre opérateur réseau, le fabricant de l'appareil ou Microsoft.
+7.  **SUPPORT SERVICES.** Étant donné que cette application est « telle qu'elle est », il est possible que nous ne fournissions pas de services de support pour celle-ci. Si vous avez des problèmes ou des questions sur votre utilisation de cette application, y compris des questions sur la politique de confidentialité de votre entreprise, contactez l'administrateur de votre entreprise. Ne contactez pas le magasin d'applications, votre opérateur réseau, le fabricant de l'appareil ou Microsoft.
     Le fournisseur du magasin d'applications n'a aucune obligation de fournir une assistance ou une maintenance par rapport à l'application.
 
 8.  **MAGASIN D'APPLICATIONS.**
@@ -120,7 +120,7 @@ Cette limitation s'applique à :
 
 -   tout ce qui est lié à l'application, aux services, au contenu (y compris le code) sur des sites Internet tiers ou des programmes tiers ; et
 
--   réclamations pour violation de contrat, de garantie, de garantie ou de condition ; protection des consommateurs ; ; concurrence de l'autorité de concurrence ; responsabilité stricte, négligence, mauvaise représentation, omission, infraction ou autre délit ; violation de lois ou de réglementations ; ou enrichissement enrichi ; dans la mesure autorisée par la loi applicable.
+-   réclamations pour violation de contrat, de garantie, de garantie ou de condition ; protection des consommateurs ; ; concurrence inalt; responsabilité stricte, négligence, mauvaise représentation, omission, infraction ou autre délit ; violation de lois ou de réglementations ; ou enrichissement enrichi ; dans la mesure autorisée par la loi applicable.
 
 Elle s'applique également même si :
 

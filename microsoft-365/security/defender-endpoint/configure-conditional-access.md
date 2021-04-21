@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 482f86d4a0a181b72a0a33eeb1a857dce0664584
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893648"
+ms.locfileid: "51903777"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurer l'accès conditionnel dans Microsoft Defender pour le point de terminaison
 
@@ -31,7 +31,7 @@ ms.locfileid: "51893648"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Cette section vous guide à travers toutes les étapes à suivre pour implémenter correctement l'accès conditionnel.
 
@@ -83,29 +83,29 @@ Pour activer l'accès conditionnel, prenez les mesures suivantes :
 
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>Étape 3 : Créer la stratégie de conformité dans Intune
-1. Dans le [portail Azure,](https://portal.azure.com) **sélectionnez Tous les services,** filtrez **sur Intune,** puis **sélectionnez Microsoft Intune.**
+1. Dans le [portail Azure,](https://portal.azure.com) **sélectionnez Tous les services,** filtrez **sur Intune** et **sélectionnez Microsoft Intune.**
 2. Sélectionnez **Stratégies de conformité**  >  **des appareils** Créer une  >  **stratégie.**
 3. Entrez un **nom et** une **description.**
 4. Dans **Plateforme,** **sélectionnez Windows 10 et les ultérieures.**
 5. Dans les paramètres **d'état** de l'appareil, définissez Exiger que l'appareil soit à ou sous le niveau de menace de l'appareil **à** votre niveau préféré :
 
    - **Sécurisé :** ce niveau est le plus sécurisé. L'appareil ne peut pas avoir de menaces existantes et accéder aux ressources de l'entreprise. Si des menaces sont trouvées, l'appareil est évalué comme non conforme.
-   - **Faible**: l'appareil est conforme si seules les menaces de bas niveau existent. Les appareils avec des niveaux de menace moyennes ou élevées ne sont pas conformes.
+   - **Faible**: l'appareil est conforme si seules les menaces de bas niveau existent. Les appareils avec des niveaux de menace moyen ou élevé ne sont pas conformes.
    - **Moyen**: l'appareil est conforme si les menaces trouvées sur l'appareil sont faibles ou moyennes. Si des menaces de haut niveau sont détectées, l'appareil est déterminé comme non conforme.
    - **Élevé**: ce niveau est le moins sécurisé et autorise tous les niveaux de menace. Ainsi, les appareils dont les niveaux de menace sont élevés, moyens ou faibles sont considérés comme conformes.
 
 6. Sélectionnez **OK,** **puis créez pour** enregistrer vos modifications (et créez la stratégie).
 
 ### <a name="step-4-assign-the-policy"></a>Étape 4 : Attribuer la stratégie
-1. Dans le [portail Azure,](https://portal.azure.com) **sélectionnez Tous les services,** filtrez **sur Intune** et **sélectionnez Microsoft Intune.**
-2. Sélectionnez   >  **stratégies de** conformité des> sélectionnez votre stratégie de conformité Microsoft Defender ATP.
+1. Dans le [portail Azure,](https://portal.azure.com) **sélectionnez Tous les services,** filtrez **sur Intune,** puis **sélectionnez Microsoft Intune.**
+2. Sélectionnez   >  **stratégies de** conformité des> sélectionnez votre stratégie de conformité Microsoft Defender pour les points de terminaison.
 3. Sélectionnez **Devoirs**.
 4. Incluez ou excluez vos groupes Azure AD pour leur attribuer la stratégie.
 5. Pour déployer la stratégie sur les groupes, sélectionnez **Enregistrer.** Les appareils utilisateur ciblés par la stratégie sont évalués pour la conformité.
 
 ### <a name="step-5-create-an-azure-ad-conditional-access-policy"></a>Étape 5 : Créer une stratégie d'accès conditionnel Azure AD
 1. Dans le [portail Azure,](https://portal.azure.com)ouvrez la nouvelle stratégie d'accès conditionnel **Azure Active**  >    >  **Directory.**
-2. Entrez un nom **de stratégie,** puis sélectionnez **Utilisateurs et groupes.** Utilisez les options Inclure ou Exclure pour ajouter vos groupes pour la stratégie, puis sélectionnez **Terminé.**
+2. Entrez un nom **de stratégie,** puis sélectionnez **Utilisateurs et groupes.** Utilisez les options Inclure ou Exclure pour ajouter vos groupes pour la stratégie, puis sélectionnez **Terminé**.
 3. Sélectionnez **les applications cloud** et choisissez les applications à protéger. Par exemple, **sélectionnez Sélectionner des applications,** puis **Sélectionnez Office 365 SharePoint Online** et **Office 365 Exchange Online.** Sélectionnez **OK** pour enregistrer vos modifications.
 
 4. Sélectionnez **Conditions**  >  **Applications clientes** pour appliquer la stratégie aux applications et aux navigateurs. Par exemple, sélectionnez **Oui,** puis **activez** les applications mobiles **et de navigateur, ainsi que les clients de bureau.** Sélectionnez **OK** pour enregistrer vos modifications.
@@ -114,6 +114,6 @@ Pour activer l'accès conditionnel, prenez les mesures suivantes :
 
 6. Sélectionnez **Activer la** stratégie, puis **Créez pour** enregistrer vos modifications.
 
-Pour plus d'informations, voir [Activer Microsoft Defender ATP avec accès conditionnel dans Intune.](https://docs.microsoft.com/intune/advanced-threat-protection)
+Pour plus d'informations, voir [Enforce compliance for Microsoft Defender for Endpoint with Conditional Access in Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
 >Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

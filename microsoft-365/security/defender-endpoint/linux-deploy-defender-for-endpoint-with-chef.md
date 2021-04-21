@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 362222e4737b1a8dd6b8a0a284bf3bfb1903c288
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: aa699aae24b1e6383f5a2afbe7fce31e0f53805c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861445"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903927"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Déployer Defender pour endpoint sur Linux avec Chef
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Microsoft Defender pour point de terminaison Linux
 
 Avant de commencer :
 
@@ -110,8 +110,8 @@ end
 
 Veillez à mettre à jour le nom du chemin d'accès à l'emplacement du fichier d'intégration.
 Pour tester son déploiement sur la station de travail Chef, exécutez simplement ``sudo chef-client -z -o mdatp`` .
-Après votre déploiement, vous devez envisager de créer et de déployer un fichier de configuration sur les serveurs en fonction des préférences définies pour Microsoft Defender ATP pour Linux - Sécurité  [Windows | Microsoft Docs](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences).  
-Une fois que vous avez créé et testé votre fichier de configuration, vous pouvez le placer dans le dossier de guide/mdatp/fichiers où vous avez également placé le package d'intégration.  Vous pouvez ensuite créer un fichier settings_mdatp.rb dans le dossier mdatp/recipies et ajouter ce texte :
+Après votre déploiement, vous devez envisager de créer et de déployer un fichier de configuration sur les serveurs en fonction des préférences définies pour [Microsoft Defender pour Endpoint sur Linux.](/linux-preferences.md)  
+Une fois que vous avez créé et testé votre fichier de configuration, vous pouvez le placer dans le dossier de guide/mdatp/fichiers où vous avez également placé le package d'intégration.  Vous pouvez ensuite créer un settings_mdatp.rb dans le dossier mdatp/recipies et ajouter ce texte :
 
 ```powershell
 #Copy the configuration file

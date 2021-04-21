@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 01b3310f5f822f3f6f38bf4d9e727d41fe2b179b
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760109"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904069"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Vue d'ensemble du centre de rubriques dans les rubriques microsoft
 
@@ -28,11 +28,11 @@ Dans Rubriques microsoft, le centre de rubriques est un site SharePoint moderne 
 
 Le centre de rubriques possède une page d'accueil par défaut avec le volet Web Rubriques dans laquelle tous les **utilisateurs** sous licence peuvent voir les rubriques à laquelle ils ont une connexion. 
 
-Bien que tous les utilisateurs sous licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent également gérer les rubriques via la page **Gérer les rubriques.** **L'onglet Gérer les rubriques** s'affiche uniquement pour les utilisateurs qui ont les autorisations Gérer les rubriques. 
+Bien que tous les utilisateurs titulaires d'une licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent également gérer les rubriques via la page **Gérer les rubriques.** **L'onglet Gérer les rubriques** s'affiche uniquement pour les utilisateurs qui ont les autorisations Gérer les rubriques. 
 
 ## <a name="where-is-my-topic-center"></a>Où se trouve mon centre de rubriques
 
-Le centre de rubriques est créé lors de la configuration de Topics. Une fois l'installation terminée, un administrateur peut trouver l'URL sur la page de gestion [du centre de rubriques.](./topic-experiences-administration.md#to-access-topics-management-settings)
+Le centre de rubriques est créé lors de l'installation de Topics. Une fois l'installation terminée, un administrateur peut trouver l'URL sur la page de gestion [du centre de rubriques.](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
 1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres,** puis sélectionnez **Paramètres de l'organisation.**
@@ -57,7 +57,7 @@ Le centre de rubriques est créé lors de la configuration de Topics. Une fois l
 
 Dans la page d'accueil du centre de rubriques, vous pouvez voir les rubriques de votre organisation avec lesquelles vous êtes en relation.
 
-- Connexions suggérées : vous verrez les rubriques répertoriées sous Nous vous avons **répertoriés dans ces rubriques. Avons-nous bien fait ?**. Voici des rubriques dans lesquelles votre connexion à la rubrique a été suggérée par le biais de l'IA. Par exemple, vous pouvez être l'auteur d'un fichier ou d'un site associé. Vous êtes invité à confirmer que vous devez rester répertorié en tant que personne associée pour la rubrique.
+- Connexions suggérées : vous verrez les rubriques répertoriées sous Nous vous avons **répertoriés dans ces rubriques. Avons-nous bien fait ?**. Voici des rubriques dans lesquelles votre connexion à cette rubrique a été suggérée par le biais de l'IA. Par exemple, vous pouvez être l'auteur d'un fichier ou d'un site associé. Vous êtes invité à confirmer que vous devez rester répertorié en tant que personne associée pour la rubrique.
 
    ![Connexions suggérées](../media/knowledge-management/my-topics.png) </br>
  
@@ -70,12 +70,12 @@ Une fois qu'un utilisateur a confirmé sa connexion à une rubrique, il peut app
 
 ## <a name="manage-topics-page"></a>Page Gérer les rubriques
 
-Pour travailler dans la section Gérer les rubriques du centre de **rubriques,** vous devez avoir les autorisations gérer les rubriques requises pour le rôle de gestionnaire de connaissances. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la gestion des [connaissances,](set-up-topic-experiences.md)ou les nouveaux utilisateurs peuvent être [ajoutés](topic-experiences-knowledge-rules.md) par la suite par un administrateur via le Centre d'administration Microsoft 365.
+Pour travailler dans la section Gérer les rubriques du centre de **rubriques,** vous devez avoir les autorisations Gérer les rubriques requises pour le rôle de gestionnaire de connaissances. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la gestion des [connaissances,](set-up-topic-experiences.md)ou les nouveaux utilisateurs peuvent être [ajoutés](topic-experiences-knowledge-rules.md) par la suite par un administrateur via le Centre d'administration Microsoft 365.
 
 Dans la page Gérer les rubriques, le tableau de bord de rubrique affiche toutes les rubriques, à qui vous avez accès, qui ont été identifiées à partir de vos emplacements source spécifiés. Chaque rubrique affiche la date à laquelle la rubrique a été découverte. Un utilisateur qui a reçu les autorisations Gérer les rubriques peut passer en revue les rubriques non confirmées et choisir d'utiliser :
-- Confirmez la rubrique : met en évidence la rubrique pour les utilisateurs qui ont accès aux fichiers et aux pages associés à la rubrique, et leur permet de voir la carte de sujet et la page de rubrique associées.
+- Confirmez la rubrique : indique aux utilisateurs qu'une rubrique suggérée par l'IA a été validée par un organisateur humain. 
 - Publiez la rubrique : modifiez les informations de la rubrique pour améliorer la qualité de la rubrique initialement identifiée et présente la rubrique à tous les utilisateurs qui ont accès aux rubriques. 
-- Rejet de la rubrique : rend la rubrique non disponible pour les utilisateurs. La rubrique est déplacée vers **l'onglet Rejeté** et peut être confirmée ultérieurement si nécessaire. 
+- Rejetez la rubrique : rend la rubrique introuvable pour les utilisateurs finaux. La rubrique est déplacée vers **l'onglet Rejeté** et peut être confirmée ultérieurement si nécessaire. 
 
 > [!Note] 
 > Pour [plus d'informations](manage-topics.md) sur la gestion des rubriques, voir Gérer les rubriques dans la page Gérer les rubriques.
@@ -88,7 +88,7 @@ Si vous avez des autorisations créer et modifier des rubriques, vous pouvez :
 - [Créez de nouvelles rubriques](create-a-topic.md): vous pouvez créer de nouvelles rubriques pour les rubriques qui n'ont pas été trouvées lors de la découverte, ou si les outils d'IA n'ont pas trouvé suffisamment de preuves pour créer une rubrique.
 
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Articles associés
 
 [Gérer les sujets dans le centre de rubriques](manage-topics.md)
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment laisser les utilisateurs réinitialiser leur mot de passe dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 3ba46529dcbb8d5af7343aafbb9e5a5863b9139f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 62f82f106327c5378310bac0d41fde8462449329
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580425"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903705"
 ---
 # <a name="set-up-self-service-password-reset"></a>Utiliser la réinitialisation de mot de passe en libre-service
 
@@ -36,9 +36,13 @@ Pour laisser vos utilisateurs réinitialiser leur mot de passe sans avoir à vou
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation de gauche, sélectionnez **Paramètres,** puis Sécurité **& confidentialité.**
-1. Sous **Laisser vos utilisateurs réinitialiser leur mot de passe,** sélectionnez **Centre d’administration Azure AD.**
+1. Dans le Centre d'administration Microsoft 365, dans le volet de navigation de gauche, sélectionnez **Paramètres,** puis Sécurité **& confidentialité.**
+1. Sous **Laisser vos utilisateurs réinitialiser leur mot de passe,** sélectionnez **Centre d'administration Azure AD.**
 1. Dans le volet de navigation de gauche, sélectionnez Utilisateurs, puis sur la page Utilisateurs **-** Tous les utilisateurs, sélectionnez Réinitialiser le mot **de passe.**
 1. Sélectionnez **Tout** pour activer la réinitialisation du mot de passe libre-service, puis sélectionnez **Enregistrer.**
 
-La prochaine fois qu’un utilisateur se signe à son compte, son ID d’utilisateur et son mot de passe lui sont demandés. Ils **sélectionnent Suivant,** puis choisissent s’il faut s’authentifier avec leur téléphone, leur courrier électronique ou les deux. Ils entrent le code qu’ils reçoivent, **sélectionnent Vérifier,** puis **terminer.** Lorsqu’ils ont terminé, ils peuvent réinitialiser leur mot de passe.
+La prochaine fois qu'un utilisateur se signe à son compte, il est invité à lui demander son ID d'utilisateur et son mot de passe. Ils **sélectionnent Suivant,** puis choisissent s'il faut s'authentifier avec leur téléphone, leur courrier électronique ou les deux. Ils entrent le code qu'ils reçoivent, **sélectionnent Vérifier,** puis **terminer.** Lorsqu'ils ont terminé, ils peuvent réinitialiser leur mot de passe.
+
+## <a name="related-content"></a>Contenu connexe 
+
+[Définir la stratégie d'expiration](https://docs.microsoft.com/microsoft-365/admin/manage/set-password-expiration-policy) de mot de passe pour votre organisation (article) Définir le mot de passe d'un utilisateur individuel pour [qu'il n'expire](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire) jamais [(article)](https://docs.microsoft.com/microsoft-365/admin/add-users/strong-password) Désactiver les exigences de mot de passe strictes pour les utilisateurs (article)

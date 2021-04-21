@@ -1,5 +1,5 @@
 ---
-title: Modifier le nom ou l’adresse e-mail d’un utilisateur
+title: Modifier le nom ou l'adresse e-mail d'un utilisateur
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,43 +20,47 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment modifier le nom ou l’adresse e-mail d’un utilisateur.
-ms.openlocfilehash: 6c08110e8725645f2e1d0deffcadd9f34354e1f9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment modifier le nom ou l'adresse e-mail d'un utilisateur.
+ms.openlocfilehash: 0f2a378cccf2def9cd951483b23a11c2a414607d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580677"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903729"
 ---
-# <a name="change-a-users-name-or-email-address"></a>Modifier le nom ou l’adresse e-mail d’un utilisateur
+# <a name="change-a-users-name-or-email-address"></a>Modifier le nom ou l'adresse e-mail d'un utilisateur
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
-Parfois, vous devrez peut-être modifier le nom ou l’adresse e-mail d’un utilisateur. Vous pouvez le faire en modifiant leur nom d’affichage, leur alias ou leur adresse de messagerie. 
+Parfois, vous devrez peut-être modifier le nom ou l'adresse e-mail d'un utilisateur. Vous pouvez le faire en modifiant leur nom d'affichage, leur alias ou leur adresse e-mail. 
 
 ## <a name="try-it"></a>Essayez !
 
 ### <a name="change-a-users-display-name"></a>Modifier le nom d’affichage d’un utilisateur
 
-1. Dans le Centre d’administration Microsoft 365, **sélectionnez** Utilisateurs, puis **Utilisateurs actifs.**
-1. Sélectionnez l’utilisateur dans la liste des utilisateurs actifs.
+1. Dans le Centre d'administration Microsoft 365, **sélectionnez** Utilisateurs, puis **Utilisateurs actifs.**
+1. Sélectionnez l'utilisateur dans la liste des utilisateurs actifs.
 1. Sélectionnez **Gérer les informations de contact.**
 1. Modifiez le nom complet, puis sélectionnez **Enregistrer les modifications.**
 
-    Le nouveau nom s’affiche désormais dans Outlook et dans d’autres applications Microsoft 365.
+    Le nouveau nom s'affiche désormais dans Outlook et dans d'autres applications Microsoft 365.
 
 ### <a name="add-an-email-alias"></a>Ajouter un alias de messagerie
 
-1. Dans le Centre d’administration Microsoft 365, **sélectionnez** Utilisateurs, puis **Utilisateurs actifs.**
-1. Sélectionnez l’utilisateur dans la liste des utilisateurs actifs.
+1. Dans le Centre d'administration Microsoft 365, **sélectionnez** Utilisateurs, puis **Utilisateurs actifs.**
+1. Sélectionnez l'utilisateur dans la liste des utilisateurs actifs.
 1. Sélectionnez **Gérer les alias de messagerie.**
 1. Entrez le nouvel alias, vérifiez le domaine, puis sélectionnez **Enregistrer les modifications.**
 
-### <a name="change-a-username"></a>Modifier un nom d’utilisateur
+### <a name="change-a-username"></a>Modifier un nom d'utilisateur
 
-1. Dans le Centre d’administration Microsoft 365, **sélectionnez** Utilisateurs, puis **Utilisateurs actifs.**
-1. Sélectionnez l’utilisateur dans la liste des utilisateurs actifs.
-1. Sélectionnez **Gérer le nom d’utilisateur.**
-1. Entrez le nouveau nom d’utilisateur, vérifiez le domaine, puis sélectionnez **Enregistrer les modifications.**
+1. Dans le Centre d'administration Microsoft 365, **sélectionnez** Utilisateurs, puis **Utilisateurs actifs.**
+1. Sélectionnez l'utilisateur dans la liste des utilisateurs actifs.
+1. Sélectionnez **Gérer le nom d'utilisateur.**
+1. Entrez le nouveau nom d'utilisateur, vérifiez le domaine, puis sélectionnez **Enregistrer les modifications.**
 
-    Suite à cette modification, l’utilisateur devra se connecter à Microsoft 365 avec ce nouveau nom d’utilisateur et ajouter le nouveau compte de messagerie à Outlook.
+    Suite à cette modification, l'utilisateur devra se connecter à Microsoft 365 avec ce nouveau nom d'utilisateur et ajouter le nouveau compte de messagerie à Outlook.
+
+## <a name="related-content"></a>Contenu connexe
+
+[Accorder des autorisations de](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) boîte aux lettres à un autre utilisateur (article) [](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée (article) [Paramètres](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) de messagerie de l'utilisateur (article)

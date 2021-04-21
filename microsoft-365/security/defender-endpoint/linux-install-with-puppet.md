@@ -1,7 +1,7 @@
 ---
-title: Déployer Microsoft Defender ATP pour Linux avec Sons
+title: Déployer Microsoft Defender pour le point de terminaison sur Linux avec l'ment
 ms.reviewer: ''
-description: Décrit comment déployer Microsoft Defender ATP pour Linux à l'aide de L'Atelier.
+description: Décrit comment déployer Microsoft Defender pour le point de terminaison sur Linux à l'aide de L'Atelier.
 keywords: microsoft, defender, atp, linux, installation, déployer, désinstallation, casque, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 562433ee52b2e39716e933c67c706f030195bd2f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 413f8113d2f782c0a57d648a6db8178f2e522270
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688416"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903881"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux avec l'ment
 
@@ -34,7 +34,7 @@ ms.locfileid: "51688416"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article explique comment déployer Defender pour endpoint pour Linux à l'aide de Latra. Un déploiement réussi nécessite l'exécution de toutes les tâches suivantes :
 
@@ -45,9 +45,9 @@ Cet article explique comment déployer Defender pour endpoint pour Linux à l'ai
 
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
- Pour obtenir une description des conditions préalables et de la condition système requise pour la version logicielle actuelle, consultez la page principale de [Defender for Endpoint for Linux.](microsoft-defender-endpoint-linux.md)
+ Pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle, voir la page principale de [Defender for Endpoint for Linux.](microsoft-defender-endpoint-linux.md)
 
-En outre, pour le déploiement de Manière générale, vous devez être familiarisé avec les tâches d'administration de la charge de travail, configurer Configure et savoir comment déployer des packages. Il existe de nombreuses façons d'effectuer la même tâche. Ces instructions supposent la disponibilité des modules De jeu pris en charge, par exemple *pour* vous aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d'informations, [reportez-vous](https://puppet.com/docs) à la documentation de Documentation.
+En outre, pour le déploiement de Manière générale, vous devez être familiarisé avec les tâches d'administration de l'équipe de sécurité, configurer la configuration de l'appareil et savoir comment déployer des packages. Il existe de nombreuses façons d'effectuer la même tâche. Ces instructions supposent la disponibilité des modules De jeu pris en charge, par exemple pour *vous* aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d'informations, [reportez-vous](https://puppet.com/docs) à la documentation de Documentation.
 
 ## <a name="download-the-onboarding-package"></a>Télécharger le package d'intégration
 
@@ -81,7 +81,7 @@ Téléchargez le package d'intégration à partir du Centre de sécurité Micros
 
 Vous devez créer un manifeste Pour déployer Defender pour Point de terminaison pour Linux sur des appareils gérés par un serveur Deas. Cet exemple utilise les modules *apt* et *yumrepo* disponibles à partir delabs, et part du principe que les modules ont été installés sur votre serveur Dupont.
 
-Créez les dossiers *install_mdatp/fichiers* et *install_mdatp/manifestes* sous le dossier modules de votre installation de Latre. Ce dossier se trouve généralement dans */etc/spamlabs/code/environments/production/modules* sur votre serveur Der. Copiez le mdatp_onboard.jssur le fichier créé ci-dessus dans *le dossier install_mdatp/fichiers.* Créer *un init.pp* qui contient les instructions de déploiement :
+Créez les dossiers *install_mdatp/fichiers* et *install_mdatp/manifestes* sous le dossier modules de votre installation de Latre. Ce dossier se trouve généralement dans */etc/spamlabs/code/environnements/production/modules* sur votre serveur Der. Copiez le mdatp_onboard.jssur le fichier créé ci-dessus dans *le dossier install_mdatp/fichiers.* Créer *un init.pp* qui contient les instructions de déploiement :
 
 ```bash
 pwd
@@ -120,7 +120,7 @@ Dans les commandes ci-dessous, *remplacez [distro]* et *[version]* par les infor
 > Dans le cas de RedHat, Oracle EL et CentOS 8, *remplacez [distro]* par « rhel ».
 
 ```puppet
-# Puppet manifest to install Microsoft Defender ATP.
+# Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
 # @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL, and CentOS 8, the distro variable should be 'rhel'.
 # @param version The Linux distribution release number, e.g. 7.4.
@@ -232,7 +232,7 @@ Si le produit n'est pas sain, le code de sortie (qui peut être `echo $?` vérif
 - 1 si l'appareil n'est pas encore intégré.
 - 3 si la connexion au daemon ne peut pas être établie.
 
-## <a name="log-installation-issues"></a>Journaux des problèmes d'installation
+## <a name="log-installation-issues"></a>Journal des problèmes d'installation
 
  Pour plus d'informations sur la recherche du journal généré automatiquement créé par le programme d'installation lorsqu'une erreur se produit, voir Problèmes [d'installation du journal.](linux-resources.md#log-installation-issues)
 

@@ -1,7 +1,7 @@
 ---
-title: Définir des préférences pour Microsoft Defender ATP pour Linux
+title: Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 ms.reviewer: ''
-description: Décrit comment configurer Microsoft Defender ATP pour Linux dans les entreprises.
+description: Décrit comment configurer Microsoft Defender pour endpoint sur Linux dans les entreprises.
 keywords: microsoft, defender, atp, linux, installation, déployer, désinstallation, casque, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ca6b3dd41b867145bfc4af331fb742be469d2a9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2c162d652656afb61f1d74bad9ec963825d25a14
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688392"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903869"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -39,7 +39,7 @@ ms.locfileid: "51688392"
 >[!IMPORTANT]
 >Cette rubrique contient des instructions sur la façon de définir des préférences pour Defender pour Endpoint pour Linux dans les environnements d'entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources.](linux-resources.md#configure-from-the-command-line)
 
-Dans les environnements d'entreprise, Defender pour Endpoint pour Linux peut être géré via un profil de configuration. Ce profil est déployé à partir de l'outil de gestion de votre choix. Les préférences gérées par l'entreprise prévalent sur les préférences définies localement sur l'appareil. En d'autres termes, les utilisateurs de votre entreprise ne peuvent pas modifier les préférences définies par le biais de ce profil de configuration.
+Dans les environnements d'entreprise, Defender pour Point de terminaison pour Linux peut être géré via un profil de configuration. Ce profil est déployé à partir de l'outil de gestion de votre choix. Les préférences gérées par l'entreprise prévalent sur les préférences définies localement sur l'appareil. En d'autres termes, les utilisateurs de votre entreprise ne peuvent pas modifier les préférences définies par le biais de ce profil de configuration.
 
 Cet article décrit la structure de ce profil (y compris un profil recommandé que vous pouvez utiliser pour commencer) et des instructions sur la façon de déployer le profil.
 
@@ -90,7 +90,7 @@ Détermine si le moteur antivirus s'exécute en mode passif ou non. En mode pass
 | **Commentaires** | Disponible dans Defender pour Endpoint version 100.67.60 ou supérieure. |
 |||
 
-#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d'exclusion
+#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d'exclusions
 
 Spécifie la stratégie de fusion pour les exclusions. Il peut s'agit d'une combinaison d'exclusions définies par l'administrateur et d'exclusions définies par l'utilisateur ( ) ou uniquement `merge` d'exclusions définies par l'administrateur ( `admin_only` ). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
 
@@ -166,7 +166,7 @@ Spécifie un processus pour lequel toute l'activité de fichier est exclue de l'
 
 |||
 |:---|:---|
-| **Key** | nom |
+| **Key** | name |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | n'importe quelle chaîne |
 | **Commentaires** | Applicable uniquement *si $type* est *excluFileName* |
@@ -221,7 +221,7 @@ Type de menace pour lequel le comportement est configuré.
 Action à prendre en cas de menace du type spécifié dans la section précédente. Peut être :
 
 - **Audit**: l'appareil n'est pas protégé contre ce type de menace, mais une entrée sur la menace est enregistrée.
-- **Bloquer**: l'appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
+- **Bloc**: l'appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
 - **Off**: l'appareil n'est pas protégé contre ce type de menace et rien n'est enregistré.
 
 |||
@@ -239,7 +239,7 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 |:---|:---|
 | **Key** | threatTypeSettingsMergePolicy |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | merge (valeur par défaut) <br/> admin_only |
+| **Valeurs possibles** | merge (par défaut) <br/> admin_only |
 | **Commentaires** | Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure. |
 |||
 
@@ -289,7 +289,7 @@ Détermine si la protection cloud est activée ou non sur l'appareil. Pour amél
 | **Valeurs possibles** | true (par défaut) <br/> false |
 |||
 
-#### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
+#### <a name="diagnostic-collection-level"></a>Niveau de collection de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
 
@@ -334,7 +334,7 @@ Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA) sont** bloquées
+  - **Les applications potentiellement indésirables (PUA)** sont bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques des informations de sécurité
 - Activer la protection cloud
@@ -450,4 +450,4 @@ Pour vérifier que votre /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfoncti
 
 ## <a name="configuration-profile-deployment"></a>Déploiement de profil de configuration
 
-Une fois que vous avez créé le profil de configuration pour votre entreprise, vous pouvez le déployer via l'outil de gestion que votre entreprise utilise. Defender for Endpoint for Linux lit la configuration gérée à partir du *fichier /etc/opt/microsoft/mdatp/managed/mdatp_managed.json.*
+Une fois que vous avez créé le profil de configuration pour votre entreprise, vous pouvez le déployer via l'outil de gestion que votre entreprise utilise. Defender pour le point de terminaison pour Linux lit la configuration gérée à partir du *fichier /etc/opt/microsoft/mdatp/managed/mdatp_managed.json.*

@@ -1,7 +1,7 @@
 ---
-title: Résoudre les problèmes de connectivité cloud pour Microsoft Defender ATP pour Linux
+title: Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur Linux
 ms.reviewer: ''
-description: Résoudre les problèmes de connectivité cloud pour Microsoft Defender ATP pour Linux
+description: Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur Linux
 keywords: microsoft, defender, atp, linux, cloud, connectivité, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d698eb78f354d624d9ab115a8ecd2e0862e607e3
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 985e4c39c60600da892c010b6ee26e9c98bb0611
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688860"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903165"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur Linux
 
@@ -66,7 +66,7 @@ Si le test de connectivité échoue, vérifiez si [](microsoft-defender-endpoint
 
 Les échecs avec erreur d'erreur 35 ou 60 indiquent le rejet de l'épinglage du certificat. Vérifiez si la connexion est sous inspection SSL ou HTTPS. Si c'est le cas, ajoutez Microsoft Defender pour le point de terminaison à la liste d'accès.
 
-## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>Étapes de dépannage pour les environnements sans proxy ou avec proxy transparent
+## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>Étapes de résolution des problèmes pour les environnements sans proxy ou avec proxy transparent
 
 Pour vérifier qu'une connexion n'est pas bloquée dans un environnement sans proxy ou avec un proxy transparent, exécutez la commande suivante dans le terminal :
 

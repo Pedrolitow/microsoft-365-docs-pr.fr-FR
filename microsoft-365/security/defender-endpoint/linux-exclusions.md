@@ -1,6 +1,6 @@
 ---
-title: Configurer et valider des exclusions pour Microsoft Defender ATP pour Linux
-description: Fournir et valider des exclusions pour Microsoft Defender ATP pour Linux. Les exclusions peuvent être définies pour les fichiers, dossiers et processus.
+title: Configurer et valider des exclusions pour Microsoft Defender pour endpoint sur Linux
+description: Fournir et valider des exclusions pour Microsoft Defender pour endpoint sur Linux. Les exclusions peuvent être définies pour les fichiers, dossiers et processus.
 keywords: microsoft, defender, atp, linux, exclusions, analyses, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fbc8fe7ef6f9af86debdeb0826865c88e86b2c6a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 56fe152532b77f7f04c9edd52998fea83493adfe
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688188"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903939"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Configurer et valider des exclusions pour Microsoft Defender pour endpoint sur Linux
 
@@ -54,7 +54,7 @@ Le tableau suivant indique les types d'exclusion pris en charge par Defender pou
 Exclusion | Définition | Exemples
 ---|---|---
 Extension de fichier | Tous les fichiers avec l'extension, n'importe où sur l'appareil | `.test`
-Fichier | Un fichier spécifique identifié par le chemin d'accès complet | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+File | Un fichier spécifique identifié par le chemin d'accès complet | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Folder | Tous les fichiers sous le dossier spécifié (de manière récursive) | `/var/log/`<br/>`/var/*/`
 Processus | Un processus spécifique (spécifié par le chemin d'accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci | `/bin/cat`<br/>`cat`<br/>`c?t`
 
@@ -144,7 +144,7 @@ Exemples :
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d'exclusions avec le fichier de test EICAR
 
-Vous pouvez vérifier que vos listes d'exclusions fonctionnent en téléchargeant `curl` un fichier de test.
+Vous pouvez vérifier que vos listes d'exclusions fonctionnent à l'aide `curl` du téléchargement d'un fichier de test.
 
 Dans l'extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d'exclusion. Par exemple, si vous avez exclu `.testing` l'extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d'accès, veillez à exécuter la commande dans ce chemin d'accès.
 
