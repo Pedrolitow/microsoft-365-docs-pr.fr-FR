@@ -1,7 +1,7 @@
 ---
 title: Hiérarchiser les incidents dans Microsoft 365 Defender
 description: Découvrez comment filtrer les incidents à partir de la file d'attente des incidents dans Microsoft 365 Defender
-keywords: incident, file d’attente, vue d’ensemble, appareils, identités, utilisateurs, boîte aux lettres, e-mail, incidents
+keywords: incident, file d'attente, vue d'ensemble, appareils, identités, utilisateurs, boîte aux lettres, courrier électronique, incidents, analyse, réponse
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887256"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939705"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchiser les incidents dans Microsoft 365 Defender
 
@@ -36,9 +36,9 @@ ms.locfileid: "51887256"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender applique l'analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout de Microsoft 365 Defender sur l'ensemble de la suite de produits. Cette vue offre à vos analystes de sécurité un niveau d'attaque plus large, qui les aide à mieux comprendre et traiter les menaces complexes au sein de votre organisation.
+Microsoft 365 Defender applique l'analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout de Microsoft 365 Defender sur l'ensemble de la suite de produits. Cette vue donne à vos analystes de sécurité un niveau d'attaque plus large, qui les aide à mieux comprendre et traiter les menaces complexes au sein de votre organisation.
 
-La **file d'attente Incident** affiche un ensemble d'incidents qui ont été créés sur des appareils, des utilisateurs et des boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité. 
+La **file d'attente Incident** affiche un ensemble d'incidents qui ont été créés sur plusieurs appareils, utilisateurs et boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité. 
 
 Vous pouvez vous rendre dans la file d'attente des incidents à partir d'incidents **& alertes** > Incidents dans le lancement rapide du Centre de sécurité Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)).
 
@@ -50,7 +50,7 @@ La file d'attente des incidents possède des colonnes personnalisables (sélecti
 
 Pour une visibilité supplémentaire en un coup d'œil, l'appellation automatique des incidents génère des noms d'incident basés sur des attributs d'alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l'étendue de l'incident.
 
-Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
+Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
 
 > [!NOTE]
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents ne seront pas modifiés.
@@ -61,7 +61,7 @@ La file d'attente des incidents expose également plusieurs options de filtrage 
 
 Dans la file d'attente des incidents par défaut, vous pouvez sélectionner **Filtres** pour afficher un volet Filtres, à partir duquel vous pouvez afficher un ensemble filtré d'incidents. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet filtres de la file d'attente des incidents":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet Filtres de la file d'attente des incidents":::
 
 Ce tableau répertorie les noms de filtres disponibles.
 
@@ -69,7 +69,7 @@ Ce tableau répertorie les noms de filtres disponibles.
 |:-------|:-----|
 | Affectée à | Vous pouvez choisir d'afficher les alertes qui vous sont affectées ou celles gérées par l'automatisation. |
 | Catégories | Choisissez des catégories pour vous concentrer sur des tactiques, des techniques ou des composants d'attaque spécifiques. |
-| Classification | Filtrer les incidents en fonction des classifications définies des alertes associées. Les valeurs incluent des alertes vraies, des alertes fausses ou non définies. |
+| Classification | Filtrez les incidents en fonction des classifications définies des alertes associées. Les valeurs incluent des alertes vraies, des alertes fausses ou non définies. |
 | Confidentialité des données | Certaines attaques se concentrent sur le ciblage de données sensibles ou précieuses. En appliquant un filtre pour déterminer si des données confidentielles sont impliquées dans l’incident, vous pouvez rapidement déterminer si des informations sensibles ont été compromises et hiérarchiser les problèmes. <br><br> Applicable uniquement si la protection des informations Microsoft est activée.|
 | Groupe d'appareils | Filtrer par groupes d'appareils définis. |
 | État de l'examen | Filtrer les incidents selon l'état de l'examen automatisé.  |
@@ -81,45 +81,11 @@ Ce tableau répertorie les noms de filtres disponibles.
 | Statut | Vous pouvez choisir de limiter la liste des incidents affichés en fonction de leur état pour identifier ceux qui sont actifs ou résolus. |
 |||
 
-## <a name="incident-response-workflow"></a>Flux de travail de réponse aux incidents
-
-Voici le flux de travail classique pour répondre aux incidents :
-
-1. Identifier et trier les incidents les plus prioritaires pour l'examen et la résolution.
-2. Pour chaque incident prioritaire, lancez une [enquête](investigate-incidents.md):
-
-   a. Affichez le résumé de l'incident pour comprendre sa portée et sa gravité, ainsi que les entités concernées (onglet **Résumé).**
-
-   b. Commencez à regarder les alertes pour comprendre leur origine, leur étendue et leur gravité (onglet **Alertes).**
-
-   c. Si nécessaire, rassemblez des informations sur les appareils, les utilisateurs et les boîtes aux lettres touchés (onglets **Appareils,** Utilisateurs et Boîtes **aux lettres).**
-
-   d. Découvrez comment Microsoft 365 Defender a résolu automatiquement certaines alertes (onglet **Enquêtes).**
-   
-   e. Si nécessaire, utilisez les informations du jeu de données pour l'incident pour plus d'informations (onglet Preuve **et** réponse).
-
-   À mesure que vous examinez, vous devez être concerné par :
-
-   - Containment : réduction de tout impact supplémentaire sur votre client.
-   - Éradication : suppression de la menace de sécurité.
-   - Récupération : restauration des ressources de votre client à l'état dans celui où elles se sont trouver avant l'incident.
-
-3. Après avoir résolu l'incident, prenez le temps de :
-
-   - Comprendre le type de l'attaque et son impact.
-   - Recherchez une tendance d'attaques de sécurité dans la communauté de la sécurité.
-   - Rappelez-vous du flux de travail que vous avez utilisé pour résoudre l'incident et mettre à jour vos flux de travail et playbooks standard selon vos besoins.
-   - Déterminez si des modifications de votre posture de sécurité sont nécessaires et prenez les mesures nécessaires pour les implémenter.
-
-Voici un résumé du processus de base.
-
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="Processus de base pour l'examen des incidents":::
-
 ## <a name="next-step"></a>Étape suivante
 
-Une fois que vous avez déterminé quel incident nécessite la priorité la plus élevée, sélectionnez-le et commencez votre [enquête.](investigate-incidents.md)
+Une fois que vous avez déterminé quel incident nécessite la priorité la plus élevée, sélectionnez-le et commencez votre [analyse.](investigate-incidents.md)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Articles associés
 - [Vue d’ensemble des incidents](incidents-overview.md)
-- [Enquêter sur des incidents](investigate-incidents.md)
+- [Analyser les incidents](investigate-incidents.md)
 - [Gérer les incidents](manage-incidents.md)

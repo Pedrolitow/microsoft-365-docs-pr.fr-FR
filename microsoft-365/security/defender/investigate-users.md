@@ -1,7 +1,7 @@
 ---
-title: Examiner les utilisateurs dans le Centre de sécurité Microsoft 365
-description: examiner les utilisateurs dans le Centre de sécurité Microsoft 365
-keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, surveiller, signaler, identités, données, appareils, applications
+title: Analyser les utilisateurs dans le Centre de sécurité Microsoft 365
+description: Analyser les utilisateurs dans le Centre de sécurité Microsoft 365
+keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, surveiller, signaler, identités, données, appareils, applications, incident, analyser, réponse
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 68fc924ee14932ebdf92ef76306ba00e352b6030
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861259"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939729"
 ---
-# <a name="investigate-users-in-microsoft-365-security-center"></a>Examiner les utilisateurs dans le Centre de sécurité Microsoft 365
+# <a name="analyze-users-in-microsoft-365-security-center"></a>Analyser les utilisateurs dans le Centre de sécurité Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51861259"
 
 - Microsoft 365 Defender
 
-Une partie de votre enquête sur les incidents peut inclure des comptes d'utilisateur. Commencez par **l'onglet Utilisateurs** pour un incident à partir d'incidents **& alertes >** incident *>* **utilisateurs.** 
+Une partie de votre analyse des incidents peut inclure des comptes d'utilisateur. Commencez par **l'onglet Utilisateurs** pour un incident à partir d'incidents **& alertes >** incident *>* **utilisateurs.** 
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident":::
 
@@ -48,7 +48,7 @@ Pour obtenir un résumé rapide d'un compte d'utilisateur pour l'incident, coche
 
 Vous pouvez également voir cette page en sélectionnant le nom du compte d'utilisateur dans la liste de la page **Utilisateurs.**
 
-La page utilisateur du Centre de sécurité Microsoft 365 combine les informations de Microsoft Defender pour le point de terminaison, Microsoft Defender pour l'identité et Microsoft Cloud App Security (en fonction des licences dont vous avez la licence). 
+La page utilisateur du Centre de sécurité Microsoft 365 combine les informations de Microsoft Defender pour le point de terminaison, Microsoft Defender pour l'identité et Microsoft Cloud App Security (en fonction des licences que vous avez). 
 
 Cette page affiche des informations spécifiques au risque de sécurité d'un compte d'utilisateur. Cela inclut un score qui permet d'évaluer les risques et les événements et alertes récents qui ont contribué au risque global de l'utilisateur.
 

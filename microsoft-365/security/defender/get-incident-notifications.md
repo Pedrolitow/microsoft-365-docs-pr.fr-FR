@@ -1,7 +1,7 @@
 ---
-title: Obtenir des notifications d'incident dans Microsoft 365 Defender
+title: Obtenir des notifications d'incident par courrier électronique dans Microsoft 365 Defender
 description: Découvrez comment créer des règles pour obtenir des notifications par courrier électronique pour les incidents dans Microsoft 365 Defender
-keywords: incident, e-mail, notfications de courrier électronique, configurer, utilisateurs, boîte aux lettres, courrier électronique, incidents
+keywords: incident, e-mail, notfications de courrier électronique, configurer, utilisateurs, boîte aux lettres, courrier électronique, incidents, analyser, réponse
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72a1f8fe71efcfa7f4f73671611576a454b508e6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861312"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939717"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtenir des notifications d'incident par courrier électronique
 
@@ -43,7 +43,7 @@ Vous pouvez configurer Microsoft 365 Defender pour informer votre personnel par 
 - Groupe d'appareils.
 - Uniquement sur la première mise à jour par incident.
 
-La notification par courrier électronique contient des détails importants sur l'incident, tels que le nom de l'incident, sa gravité et ses catégories, entre autres. Vous pouvez également passer directement à l'incident et commencer immédiatement votre enquête. Pour plus d'informations, voir [Examiner les incidents.](investigate-incidents.md)
+La notification par courrier électronique contient des détails importants sur l'incident, tels que le nom de l'incident, sa gravité et ses catégories, entre autres. Vous pouvez également passer directement à l'incident et démarrer votre analyse immédiatement. Pour plus d'informations, voir [Analyser les incidents.](investigate-incidents.md)
 
 Vous pouvez ajouter ou supprimer des destinataires dans les notifications par courrier électronique. Les nouveaux destinataires sont avertis des incidents après leur ajout. 
 
@@ -57,11 +57,11 @@ Suivez ces étapes pour créer une règle et personnaliser les paramètres de no
 
 1. Dans le volet de navigation, sélectionnez Paramètres > notifications d'incident microsoft **365 Defender > incident.**
 2. Sélectionnez **Ajouter un élément.**
-3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant**.
+3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant.**
 4. Dans la **page Paramètres de** notification, configurez :
     - **Gravité de l'alerte** : choisissez les gravités d'alerte qui déclencheront une notification d'incident. Par exemple, si vous souhaitez uniquement être informé des incidents de gravité élevée, sélectionnez **Élevé**.
     - **Étendue du groupe d'appareils** : vous pouvez spécifier tous les groupes d'appareils ou sélectionner dans la liste des groupes d'appareils de votre client.
-    - **Notifier uniquement lors de la** première occurrence par incident : sélectionnez si vous souhaitez une notification uniquement sur la première alerte qui correspond à vos autres sélections. Les mises à jour ou alertes ultérieures liées à l'incident n'envoient pas de notifications supplémentaires.
+    - **Notifier uniquement lors de la** première occurrence par incident : sélectionnez si vous souhaitez recevoir une notification uniquement sur la première alerte qui correspond à vos autres sélections. Les mises à jour ou alertes ultérieures liées à l'incident n'envoient pas de notifications supplémentaires.
     - **Inclure le nom de l'organisation dans l'e-mail** : sélectionnez si vous souhaitez que le nom de votre organisation apparaisse dans la notification par courrier électronique.
     - **Inclure un** lien portail propre au client : sélectionnez si vous souhaitez ajouter un lien avec l'ID de client dans la notification par courrier électronique pour accéder à un client Microsoft 365 spécifique.
 
@@ -74,7 +74,7 @@ Pour modifier une règle existante, sélectionnez-la dans la liste des règles. 
 
 Pour modifier une règle existante, sélectionnez-la dans la liste des règles. Dans le volet avec le nom de la règle, sélectionnez **Supprimer.**
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Articles associés
 - [Vue d’ensemble des incidents](incidents-overview.md)
 - [Hiérarchiser les incidents](incident-queue.md)
-- [Enquêter sur des incidents](investigate-incidents.md)
+- [Analyser les incidents](investigate-incidents.md)

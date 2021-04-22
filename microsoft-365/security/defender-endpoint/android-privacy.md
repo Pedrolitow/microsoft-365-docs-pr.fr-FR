@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 415a1f555e1a33c103894221086b783aa754cf32
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930136"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939623"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender pour point de terminaison Android : informations sur la confidentialité
 
@@ -70,7 +70,7 @@ Informations sur **les** packages d'application Android malveillants (APK) sur l
 
     -   ID client Azure : GUID qui identifie votre organisation dans Azure Active Directory
 
-    -   ID d'organisation Microsoft Defender ATP : identificateur unique associé à l'entreprise à qui appartient l'appareil. Permet à Microsoft d'identifier si les problèmes ont un impact sur un ensemble d'entreprises sélectionné et le nombre d'entreprises qui en sont touchées 
+    -   ID d'organisation Microsoft Defender pour point de terminaison : identificateur unique associé à l'entreprise à qui appartient l'appareil. Permet à Microsoft d'identifier si les problèmes ont un impact sur un ensemble d'entreprises sélectionné et le nombre d'entreprises qui en sont touchées 
 
     -   Nom d'utilisateur principal – ID de messagerie de l'utilisateur
 

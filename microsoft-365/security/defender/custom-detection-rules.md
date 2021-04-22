@@ -1,7 +1,7 @@
 ---
 title: Créer et gérer des règles de détection personnalisées dans Microsoft 365 Defender
 description: Découvrez comment créer et gérer des règles de détection personnalisées basées sur des requêtes de repérage avancé
-keywords: repérage avancé, repérage de menace, repérage de cybermenace, protection microsoft contre les menaces, microsoft 365, mtp, m365, recherche, requête, télémétrie, détections personnalisées, règles, schéma, kusto, microsoft 365, Protection Microsoft contre les menaces, RBAC, autorisations, Microsoft Defender ATP
+keywords: repérage avancé, repérage de menace, repérage de cybermenace, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, détections personnalisées, règles, schéma, kusto, RBAC, autorisations, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bfc8724f8dc27aa2475c293e7370488b2ea392b8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903753"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935712"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -89,7 +89,7 @@ Les requêtes simples, telles que celles qui n'utilisent pas l'opérateur ou l'o
 
 Il existe plusieurs façons de s'assurer que les requêtes plus complexes retournent ces colonnes. Par exemple, si vous préférez agréger et compter par entité sous une colonne telle que , vous pouvez toujours renvoyer et en l'obtenant à partir de l'événement le plus récent impliquant `DeviceId` `Timestamp` chaque unique `ReportId` `DeviceId` .
 
-L'exemple de requête ci-dessous compte le nombre d'appareils uniques ( ) avec détections antivirus et utilise ce nombre pour rechercher uniquement les appareils avec plus de `DeviceId` cinq détections. Pour renvoyer la dernière `Timestamp` et la `ReportId` correspondante, elle utilise `summarize` l'opérateur avec la `arg_max` fonction.
+L'exemple de requête ci-dessous compte le nombre d'appareils uniques ( ) avec détections antivirus et utilise ce nombre pour rechercher uniquement les appareils avec plus de `DeviceId` cinq détections. Pour renvoyer la dernière `Timestamp` et la `ReportId` correspondante, elle utilise l'opérateur `summarize` avec la `arg_max` fonction.
 
 ```kusto
 DeviceEvents
@@ -133,7 +133,7 @@ Lorsque vous modifiez une règle, elle s'exécute avec les modifications appliqu
 Sélectionnez la fréquence qui correspond à la fréquence à laquelle vous souhaitez surveiller les détections. Prenez en compte la capacité de votre organisation à répondre aux alertes.
 
 ### <a name="3-choose-the-impacted-entities"></a>3. Choisissez les entités impactées.
-Identifiez les colonnes dans les résultats de votre requête où vous vous attendez à trouver l'entité principale affectée ou concernée. Par exemple, une requête peut renvoyer des adresses d'expéditeur ( ou ) et de `SenderFromAddress` `SenderMailFromAddress` destinataire ( `RecipientEmailAddress` ). L'identification de l'entité principale concernée par l'identification de ces colonnes permet au service d'agréger les alertes pertinentes, de corréler les incidents et les actions de réponse cible.
+Identifiez les colonnes dans les résultats de votre requête où vous vous attendez à trouver l'entité principale affectée ou concernée. Par exemple, une requête peut renvoyer des adresses d'expéditeur ( ou ) et de `SenderFromAddress` `SenderMailFromAddress` destinataire ( `RecipientEmailAddress` ). L'identification de l'une de ces colonnes représentant la principale entité concernée permet au service d'agréger les alertes pertinentes, de corréler les incidents et les actions de réponse cible.
 
 Vous ne pouvez sélectionner qu'une seule colonne pour chaque type d'entité (boîte aux lettres, utilisateur ou appareil). Les colonnes qui ne sont pas renvoyées par votre requête ne peuvent pas être sélectionnées.
 
@@ -172,7 +172,7 @@ Après avoir passé en revue la règle, **sélectionnez Créer** pour l'enregist
 
 
 >[!Important] 
->Les détections personnalisées doivent être régulièrement examinées pour plus d'efficacité. Pour vous assurer que vous créez des détections qui déclenchent de vraies alertes, prenez le temps de passer en revue vos détections personnalisées existantes en suivant les étapes de gestion des règles de [détection personnalisées existantes.](#manage-existing-custom-detection-rules) <br>  
+>Les détections personnalisées doivent être régulièrement examinées pour plus d'efficacité. Pour vous assurer que vous créez des détections qui déclenchent de vraies alertes, prenez le temps de passer en revue vos détections personnalisées existantes en suivant les étapes de la procédure De gestion des règles de [détection personnalisées existantes.](#manage-existing-custom-detection-rules) <br>  
 Vous conservez le contrôle sur l'étendue ou la spécificité de vos détections personnalisées afin que les fausses alertes générées par les détections personnalisées indiquent la nécessité de modifier certains paramètres des règles.
 
 
@@ -184,7 +184,7 @@ Vous pouvez afficher la liste des règles de détection personnalisées existant
 
 ### <a name="view-existing-rules"></a>Afficher les règles existantes
 
-Pour afficher toutes les règles de détection personnalisées existantes, **accédez à Repérage**  >  **de détections personnalisées.** La page répertorie toutes les règles avec les informations d'exécuter suivantes :
+Pour afficher toutes les règles de détection personnalisées existantes, **accédez à**  >  **Détections personnalisées de repérage.** La page répertorie toutes les règles avec les informations d'exécuter suivantes :
 
 - **Dernière série**: lorsqu'une règle a été exécuté pour la dernière fois pour vérifier les correspondances de requête et générer des alertes
 - **État de la dernière fois**: si une règle s'est correctement exécuté
@@ -200,7 +200,7 @@ Pour afficher des informations complètes sur une règle de détection personnal
 
 Vous pouvez également prendre les mesures suivantes sur la règle à partir de cette page :
 
-- **Exécuter**: exécutez la règle immédiatement. Cela réinitialise également l'intervalle pour la prochaine suite.
+- **Exécutez** la règle immédiatement. Cela réinitialise également l'intervalle pour la prochaine suite.
 - **Modifier**— modifier la règle sans modifier la requête
 - **Modifier la requête —** modifier la requête dans le recherche avancée
 - **Activer**  /  **Désactiver :** activer la règle ou l'arrêter d'être en cours d'exécution
@@ -208,14 +208,14 @@ Vous pouvez également prendre les mesures suivantes sur la règle à partir de 
 
 ### <a name="view-and-manage-triggered-alerts"></a>Afficher et gérer les alertes déclenchées
 
-Dans l'écran des détails de la règle (**Détections** personnalisées de repérage [nom de la règle] ), allez à  >    >   **Alertes déclenchées**, qui répertorie les alertes générées par des correspondances à la règle. Sélectionnez une alerte pour afficher des informations détaillées à son sujet et prendre les mesures suivantes :
+Dans l'écran des détails de la règle (**Détections** personnalisées de repérage [nom de la règle] ), allez à  >    >   **Alertes déclenchées**, qui répertorie les alertes générées par des correspondances à la règle. Sélectionnez une alerte pour afficher des informations détaillées à son sujet et prenez les mesures suivantes :
 
 - Gérer l'alerte en setting its status and classification (true or false alert)
 - Lier l'alerte à un incident
 - Exécuter la requête qui a déclenché l'alerte sur le hunting avancé
 
 ### <a name="review-actions"></a>Examiner les actions
-Dans l'écran détails de la règle (**Détections** personnalisées de repérage [nom de la règle] ), allez à Actions déclenchées , qui répertorie les actions entreprises en fonction des  >    >  correspondances à la règle. 
+Dans l'écran détails de la règle (**Détections** personnalisées de repérage [nom de la  >    >  **règle]**), allez à **Actions** déclenchées , qui répertorie les actions entreprises en fonction des correspondances à la règle.
 
 >[!TIP]
 >Pour afficher rapidement des informations et agir sur un élément d'un tableau, utilisez la colonne de sélection [&#10003;] à gauche du tableau.

@@ -1,7 +1,7 @@
 ---
 title: Gérer les incidents dans Microsoft 365 Defender
 description: Découvrez comment attribuer, mettre à jour l’état,
-keywords: incident, incidents, alertes, alertes corrélées, attribuer, mettre à jour, état, gérer, classification, microsoft, 365, m365
+keywords: incident, incidents, analyse, réponse, alertes, alertes corrélées, affecter, mettre à jour, état, gérer, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861730"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939753"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "51861730"
 
 La gestion des incidents est essentielle pour s'assurer que les menaces sont contenues et traitées.
 
-Vous gérez les incidents à partir **d'incidents & alertes** > incidents dans le lancement rapide du Centre de sécurité Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
+Vous gérez les incidents à partir **d'incidents & alertes** > Incidents dans le lancement rapide du Centre de sécurité Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d'attente d'incident":::
 
@@ -52,7 +52,7 @@ Voici comment gérer vos incidents :
 - Définir sa classification et sa détermination
 - Ajoutez des commentaires.
 
-Vous pouvez gérer les incidents à partir du **volet Gérer les incidents** pour un incident. Voici un exemple.
+Vous pouvez gérer les incidents à partir du volet Gérer **les incidents** pour un incident. Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Exemple du volet Gérer les incidents d'un incident":::
 
@@ -61,11 +61,11 @@ Vous pouvez afficher ce volet à partir du lien **Gérer l'incident** sur :
 - Volet des propriétés d'un incident dans la file d'attente des incidents.
 - **Page récapitulatif** d'un incident.
 
-Dans les cas où, lors de l'enquête, vous souhaitez déplacer des alertes d'un incident à un autre, vous pouvez également le faire à partir de l'onglet **Alertes,** créant ainsi un incident plus ou moins volumineux qui inclut toutes les alertes pertinentes.
+Dans les cas où, lors de l'analyse, vous souhaitez déplacer des alertes d'un incident à un autre, vous pouvez également le faire à partir de l'onglet **Alertes,** créant ainsi un incident plus ou moins volumineux qui inclut toutes les alertes pertinentes.
 
 ## <a name="edit-the-incident-name"></a>Modifier le nom de l'incident
 
-Microsoft 365 Defender attribue automatiquement un nom basé sur les attributs d'alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l'étendue de l'incident. Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
+Microsoft 365 Defender attribue automatiquement un nom basé sur les attributs d'alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l'étendue de l'incident. Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
 
 Vous pouvez modifier le nom de l'incident à partir du **champ Nom de l'incident** dans le volet Gérer **l'incident.**
 
@@ -90,16 +90,16 @@ Un incident qui n'est pas résolu s'affiche comme **étant actif.**
 
 ## <a name="set-the-classification-and-determination"></a>Définir la classification et la détermination
 
-La classification des incidents est la question de savoir s'il s'agit d'une alerte vraie ou d'une fausse alerte, que vous configurez à partir du champ **Classification.** 
+La classification des incidents est de savoir s'il s'agit d'une alerte vraie ou d'une fausse alerte, que vous configurez à partir du champ **Classification.** 
 
-S'il s'agissait d'une alerte réelle, vous devez également spécifier le type de menace qu'il s'agissait avec le **champ Détermination.** La spécification du type de menace permet à votre équipe de sécurité de voir les modèles de menace et d'agir pour défendre votre organisation contre ces modèles. 
+S'il s'agissait d'une alerte réelle, vous devez également spécifier le type de menace qu'il s'agissait du **champ Détermination.** La spécification du type de menace permet à votre équipe de sécurité de voir les modèles de menace et d'agir pour défendre votre organisation contre ces modèles. 
 
 ## <a name="add-comments"></a>Ajouter des commentaires
 
-Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ Commentaire.** Chaque commentaire est ajouté aux événements historiques de l'incident. Vous pouvez voir les commentaires et l'historique d'un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
+Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ** Commentaire. Chaque commentaire est ajouté aux événements historiques de l'incident. Vous pouvez voir les commentaires et l'historique d'un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
 
 ## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble des incidents](incidents-overview.md)
 - [Hiérarchiser les incidents](incident-queue.md)
-- [Enquêter sur des incidents](investigate-incidents.md)
+- [Analyser les incidents](investigate-incidents.md)

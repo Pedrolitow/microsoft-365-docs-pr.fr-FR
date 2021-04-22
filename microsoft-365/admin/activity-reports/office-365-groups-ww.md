@@ -1,5 +1,5 @@
 ---
-title: Rapports Microsoft 365 dans le Centre d’administration - Groupes Microsoft 365
+title: Rapports Microsoft 365 dans le Centre d'administration - Groupes Microsoft 365
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenez un rapport de groupes Microsoft 365 pour connaître les groupes et leurs activités.
-ms.openlocfilehash: fd3aa664b5a40bb5fffe0ed23e07ba6f1a5907c2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579565"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939229"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Rapports Microsoft 365 dans le Centre d’administration - Groupes Microsoft 365
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Rapports Microsoft 365 dans le Centre d'administration - Groupes Microsoft 365
 
-Le tableau de  bord Rapports Microsoft 365 vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport des groupes Microsoft 365, vous pouvez obtenir des informations sur l’activité des groupes dans votre organisation et voir combien de groupes sont créés et utilisés.
+Le tableau de  bord Rapports Microsoft 365 vous présente la vue d'ensemble de l'activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport des groupes Microsoft 365, vous pouvez obtenir des informations sur l'activité des groupes dans votre organisation et voir combien de groupes sont créés et utilisés.
   
 > [!NOTE]
 > Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, Teams Service, Teams Communications ou Skype Entreprise pour voir les rapports.  
@@ -36,17 +36,17 @@ Le tableau de  bord Rapports Microsoft 365 vous présente la vue d’ensemble de
 ## <a name="how-to-get-to-the-groups-report"></a>Comment obtenir le rapport des groupes
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
-2. Dans la page d’accueil  du tableau de bord, cliquez sur le bouton Afficher plus sur les utilisateurs actifs - Applications Microsoft 365 ou utilisateurs actifs - Carte Services Microsoft 365 pour obtenir la page de rapport Office 365.
+2. Dans la page d'accueil  du tableau de bord, cliquez sur le bouton Afficher plus sur les utilisateurs actifs - Applications Microsoft 365 ou utilisateurs actifs - Carte Services Microsoft 365 pour obtenir la page de rapport Office 365.
   
 ## <a name="interpret-the-groups-report"></a>Interpréter le rapport des groupes
 
-Vous pouvez afficher les activations dans le rapport Office 365 en choisissant l’onglet **Activité groupes.**<br/>![Rapports Microsoft 365 : Microsoft Office 365 groupes.](../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png)
+Vous pouvez afficher les activations dans le rapport Office 365 en choisissant l'onglet **Activité groupes.**<br/>![Rapports Microsoft 365 : Microsoft Office 365 groupes.](../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’activité des groupes Office 365 : choisir les colonnes](../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d'activité des groupes Office 365 : choisir les colonnes](../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png)
 
 Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
-|Élément|Description|
+|Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom du groupe  <br/> |Nom du groupe.  <br/> |
@@ -64,5 +64,10 @@ Vous pouvez également exporter les données du rapport dans un fichier .csv Exc
 |Messages dans Yammer (lecture)  <br/> |Nombre de conversations lues dans le groupe Yammer au cours de la période de rapport.  <br/> |
 |Messages en Yammer (aimé)  <br/> |Nombre de messages aimés dans le groupe Yammer au cours de la période de rapport.  <br/> |
 |Members  <br/> |Nombre de membres du groupe.  <br/> |
-|Membres externes |Nombre d’utilisateurs externes dans le groupe.|
+|Membres externes |Nombre d'utilisateurs externes dans le groupe.|
 |||
+
+## <a name="related-content"></a>Contenu connexe
+
+Rapports [Microsoft 365](activity-reports.md) dans le Centre d'administration (article) Rapports dans le Centre de sécurité [&](../../compliance/reports-in-security-and-compliance.md) conformité (article) Rapports [Microsoft 365](../../admin/activity-reports/active-users-ww.md) dans le Centre d'administration - Utilisateurs actifs (article)
+

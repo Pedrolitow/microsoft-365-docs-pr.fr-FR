@@ -1,7 +1,7 @@
 ---
-title: Examiner les incidents dans Microsoft 365 Defender
+title: Analyser les incidents dans Microsoft 365 Defender
 description: Analyser les incidents liés aux appareils, aux utilisateurs et aux boîtes aux lettres.
-keywords: incident, incidents, ordinateurs, appareils, utilisateurs, identités, courrier, courrier électronique, boîte aux lettres, investigation, graphique, preuves
+keywords: incident, incidents, analyse, réponse, ordinateurs, appareils, utilisateurs, identités, courrier électronique, boîte aux lettres, enquête, graphique, preuve
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,39 +22,38 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861874"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939741"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
+# <a name="analyze-incidents-in-microsoft-365-defender"></a>Analyser les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **S’applique à :**
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender regroupe toutes les alertes, biens, enquêtes et preuves associés sur vos appareils, utilisateurs et boîtes aux lettres dans un incident pour vous donner une vue d'ensemble complète d'une attaque.
+Microsoft 365 Defender regroupe toutes les alertes, biens, enquêtes et preuves connexes de vos appareils, utilisateurs et boîtes aux lettres dans un incident pour vous donner une vue d'ensemble complète d'une attaque.
 
-Au sein d'un incident, vous examinez les alertes qui affectent votre réseau, comprenez ce qu'elles signifient et rassemblez les preuves afin de pouvoir mettre au point un plan de correction efficace.
+Au sein d'un incident, vous analysez les alertes qui affectent votre réseau, comprenez ce qu'elles signifient et rassemblez les preuves afin de pouvoir mettre au point un plan de correction efficace.
 
-## <a name="initial-investigation"></a>Examen initial
+## <a name="initial-analysis"></a>Analyse initiale
 
-Avant de vous plonger dans les détails, jetez un œil aux propriétés et au résumé de l'incident.
+Avant de vous plonger dans les détails, jetez un œil aux propriétés et à la synthèse de l'incident.
 
 Vous pouvez commencer par sélectionner l'incident dans la colonne de coche. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Exemple de sélection d'un incident dans la colonne de coche":::
 
-Lorsque vous le faites, un volet de synthèse s'ouvre avec des informations clés sur l'incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l'incident. Voici un exemple.
+Lorsque vous le faites, un volet récapitulatif s'ouvre avec des informations clés sur l'incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l'incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Exemple de volet récapitulatif pour un incident":::
 
-À partir de là, vous pouvez sélectionner **Ouvrir la page Incident.** Cela ouvre la page principale de l'incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les appareils, les utilisateurs, les enquêtes et les preuves.
+À partir de là, vous pouvez sélectionner **Ouvrir la page Incident.** Cela ouvre la page principale de l'incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les périphériques, les utilisateurs, les enquêtes et les preuves.
 
 Vous pouvez également ouvrir la page principale d'un incident en sélectionnant le nom de l'incident dans la file d'attente des incidents.
 
@@ -87,9 +86,9 @@ Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Exemple de page Alertes pour un incident":::
 
-Par défaut, les alertes sont classés dans l'ordre chronologique pour vous permettre de voir comment l'incident s'est produit au fil du temps. La sélection de chaque alerte vous conduit à la page principale de l'alerte, où vous pouvez effectuer un examen approfondi de cette alerte. 
+Par défaut, les alertes sont classés dans l'ordre chronologique pour vous permettre de voir comment l'incident s'est produit au fil du temps. La sélection de chaque alerte vous conduit à la page principale de l'alerte où vous pouvez effectuer une analyse approfondie de cette alerte. 
 
-Découvrez comment utiliser la file d'attente d'alertes et les pages d'alerte dans [Examiner les alertes](investigate-alerts.md)
+Découvrez comment utiliser la file d'attente d'alertes et les pages d'alerte [dans l'analyse des alertes](investigate-alerts.md)
 
 ## <a name="devices"></a>Appareils
 
@@ -108,7 +107,7 @@ Dans la page appareil, vous pouvez collecter des informations supplémentaires s
 
 ## <a name="users"></a>Utilisateurs
 
-**L'onglet** Utilisateurs répertorie tous les utilisateurs identifiés comme faisant partie ou associés à l'incident. Voici un exemple.
+**L'onglet** Utilisateurs répertorie tous les utilisateurs qui ont été identifiés comme faisant partie ou associés à l'incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident":::
 
@@ -136,9 +135,9 @@ Sélectionnez un examen pour accéder à la page Détails de l’examen pour obt
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Exemple de page Preuve et réponse pour un incident":::
 
-Microsoft 365 Defender examine automatiquement tous les événements pris en charge par les incidents et les entités suspectes dans les alertes, en vous fournissant des informations sur les messages électroniques, fichiers, processus, services, adresses IP et bien plus encore. Cela vous permet de détecter et de bloquer rapidement les menaces potentielles dans l’incident.
+Microsoft 365 Defender examine automatiquement tous les événements pris en charge par les incidents et les entités suspectes dans les alertes, en vous fournissant des informations sur les messages électroniques, fichiers, processus, services, adresses IP et bien plus encore. Cela vous permet de détecter et de bloquer rapidement les menaces potentielles dans l'incident.
 
-Chacune des entités analysées est marquée avec un verdict (malveillant, suspect, propre) et un état de correction. Cela vous permet de comprendre l’état de correction de l’intégralité de l’incident et les étapes suivantes qui peuvent être prises.
+Chacune des entités analysées est marquée avec un verdict (malveillant, suspect, propre) et un état de correction. Cela vous permet de comprendre l'état de correction de l'intégralité de l'incident et les étapes suivantes qui peuvent être prises.
 
 ## <a name="related-topics"></a>Sujets associés
 

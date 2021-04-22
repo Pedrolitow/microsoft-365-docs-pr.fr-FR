@@ -2,7 +2,7 @@
 title: Hello World pour l'API Microsoft Defender pour point de terminaison
 ms.reviewer: ''
 description: Créez un appel d'API pratique de type « Hello World » à l'API Microsoft Defender for Endpoint.
-keywords: api, api pris en charge, recherche avancée, requête
+keywords: api, api pris en charge, recherche avancée, requête, microsoft defender atp, microsoft defender pour le point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f4571607181fc96d87934ff60801643f5969e7e9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 08188acf1209ea2247a0eb09d722ce74c4540254
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929250"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939611"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API Microsoft Defender pour point de terminaison - Hello World 
 

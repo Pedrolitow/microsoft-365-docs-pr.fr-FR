@@ -1,7 +1,7 @@
 ---
 title: Obtenir des informations pertinentes sur une entité avec go hunt
 description: Découvrez comment utiliser l'outil de recherche pour rapidement interroger des informations pertinentes sur une entité ou un événement à l'aide d'une recherche avancée.
-keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
+keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0f09f74a1cefad5a9b6b438752ebe57e583397c7
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 51d33ea9a372b5bfe017f4c3544e0d6413d53001
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759977"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935832"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Recherche rapide des informations sur l'entité ou les événements avec la recherche de go
 
@@ -73,7 +73,7 @@ and DeviceName == deviceName
 ### <a name="supported-entity-types"></a>Types d'entités pris en charge
 Vous pouvez utiliser *la recherche après* avoir sélectionné l'un des types d'entités ci-après :
 
-- Files
+- Fichiers
 - Messages électroniques
 - Clusters de messagerie
 - Boîtes aux lettres

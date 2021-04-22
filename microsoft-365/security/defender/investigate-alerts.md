@@ -1,7 +1,7 @@
 ---
-title: Examiner les alertes dans Microsoft 365 Defender
-description: Examiner les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
-keywords: incidents, alertes, enquêter, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte de réception, e-mail, 365, microsoft, m365
+title: Analyser les alertes dans Microsoft 365 Defender
+description: Analysez les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
+keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 18b4df6a2dbb22235d6781f1430f7a75e319fbcf
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861992"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939541"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
+# <a name="analyze-alerts-in-microsoft-365-defender"></a>Analyser les alertes dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -46,11 +46,11 @@ La **file d'attente Alertes** affiche l'ensemble actuel des alertes. Vous arrive
 
 Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour endpoint, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
-Par défaut, la file d'attente des alertes dans le Centre de sécurité Microsoft 365 affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L'alerte la plus récente se trouve en haut de la liste pour que vous la voyez en premier. 
+Par défaut, la file d'attente des alertes dans le Centre de sécurité Microsoft 365 affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L'alerte la plus récente se trouve en haut de la liste, ce qui vous permet de la voir en premier. 
 
 Dans la file d'attente des alertes par défaut, vous pouvez sélectionner **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet de filtres pour la file d'attente d'alertes":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet filtres pour la file d'attente d'alertes":::
 
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
@@ -109,7 +109,7 @@ Pour gérer une alerte, sélectionnez l'alerte dans la file d'attente des alerte
 Le **volet Gérer les** alertes vous permet de spécifier :
 
 - État de l'alerte (Nouveau, Résolu, En cours).
-- Classification de l'alerte (non définie, alerte true, fausse alerte).
+- Classification de l'alerte (non définie, alerte True, Fausse alerte).
 - Pour la classification en tant qu'alerte réelle, le type de menace pour l'alerte dans le **champ Détermination.**
 - Commentaire de l'alerte.
 
@@ -134,12 +134,12 @@ La liste des actions supplémentaires dépend du type d'alerte.
 
 ## <a name="resolve-an-alert"></a>Résoudre une alerte
 
-Une fois que vous avez terminé d'examiner une alerte  et qu'elle peut être résolue,  allez dans le volet Gérer l'alerte et marquez son état comme Résolu et classez-le en tant qu'alerte **False** ou Alerte **True.** Pour les alertes vraies, spécifiez le type de menace de l'alerte dans le **champ Détermination.**
+Une fois que vous avez terminé l'analyse d'une  alerte et qu'elle peut être  résolue, allez dans le volet Gérer l'alerte et marquez l'état de l'alerte comme Résolu et classez-la en tant qu'alerte **False** ou Alerte **True.** Pour les alertes vraies, spécifiez le type de menace de l'alerte dans le **champ Détermination.**
 
 La classification des alertes et la spécification de leur détermination permettent à Microsoft 365 Defender de fournir plus d'alertes vraies et moins de fausses alertes.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Articles associés
 
 - [Vue d’ensemble des incidents](incidents-overview.md)
-- [Enquêter sur des incidents](investigate-incidents.md)
-- [Gérer les incidents](manage-incidents.md)
+- [Gérer des incidents](manage-incidents.md)
+- [Analyser les incidents](investigate-incidents.md)

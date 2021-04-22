@@ -2,7 +2,7 @@
 title: Accéder aux API Microsoft Defender pour point de terminaison.
 ms.reviewer: ''
 description: Découvrez comment vous pouvez utiliser les API pour automatiser les flux de travail et innover en fonction des fonctionnalités de Microsoft Defender for Endpoint
-keywords: api, api, Microsoft Defender pour point de terminaison, api d'ouverture, api Microsoft Defender pour le point de terminaison, api publique, api prise en charge, alertes, appareil, utilisateur, domaine, ip, fichier, recherche avancée, requête
+keywords: api, api, wdatp, api d'ouverture, microsoft defender pour l'api de point de terminaison, microsoft defender atp, api publique, api pris en charge, alertes, appareil, utilisateur, domaine, ip, fichier, recherche avancée, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87dce8ff4fde505eb8d4e458c8d9fb56556f4d78
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 843bd953b97f29a5b9c80fc44a9b19fae60a6fa7
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935104"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939765"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Accéder aux API Microsoft Defender pour point de terminaison. 
 

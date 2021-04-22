@@ -1,7 +1,7 @@
 ---
 title: Vue d'ensemble du chasse avancée dans Microsoft Defender pour point de terminaison
 description: Utiliser les fonctionnalités de recherche de menaces dans Microsoft Defender pour point de terminaison pour créer des requêtes qui trouvent des menaces et des faiblesses dans votre réseau
-keywords: repérage avancé, repérage de menace, repérage de cybermenace, Microsoft Defender pour point de terminaison, recherche, requête, télémétrie, détections personnalisées, schéma, kusto, fuseau horaire, UTC
+keywords: repérage avancé, repérage de menace, repérage de cybermenace, mdatp, microsoft defender atp, microsoft defender pour le point de terminaison, wdatp, recherche, requête, télémétrie, détections personnalisées, schéma, kusto, fuseau horaire, UTC
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 114c0192f77411016fcb13ec2b912f4440ffa6e0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 906ae4bdebcc46e210fa9c5dcb5387c880fdbb38
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934356"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939659"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Recherche proactive des menaces avec le chasse avancée
 
